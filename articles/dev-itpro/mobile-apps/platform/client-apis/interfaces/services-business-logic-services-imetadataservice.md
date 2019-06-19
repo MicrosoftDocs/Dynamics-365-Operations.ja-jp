@@ -1,747 +1,383 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="services-business-logic-services-imetadataservice.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>services-business-logic-services-imetadataservice.1b730d.abda342ecfec227b7349e4216ea82df3d652cf0c.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>abda342ecfec227b7349e4216ea82df3d652cf0c</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\mobile-apps\platform\client-apis\interfaces\services-business-logic-services-imetadataservice.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>MetadataService type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MetadataService タイプ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>Provides ability to access and configure various metadata elements under the application workspace.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション ワークスペースでさまざまなメタデータ要素にアクセスして構成する機能を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>MetadataService type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MetadataService タイプ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Provides ability to access and configure various metadata elements under the application workspace.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション ワークスペースでさまざまなメタデータ要素にアクセスして構成する機能を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Hierarchy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">階層</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>MetadataService</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MetadataService</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Index</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Properties</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">[</bpt>version<ept id="p1">](services-business-logic-services-imetadataservice.md#version)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>バージョン<ept id="p1">](services-business-logic-services-imetadataservice.md#version)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><bpt id="p1">[</bpt>addControl<ept id="p1">](services-business-logic-services-imetadataservice.md#addcontrol)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>addControl<ept id="p1">](services-business-logic-services-imetadataservice.md#addcontrol)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt>compareVersion<ept id="p1">](services-business-logic-services-imetadataservice.md#compareversion)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>compareVersion<ept id="p1">](services-business-logic-services-imetadataservice.md#compareversion)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source><bpt id="p1">[</bpt>configureAction<ept id="p1">](services-business-logic-services-imetadataservice.md#configureaction)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>configureAction<ept id="p1">](services-business-logic-services-imetadataservice.md#configureaction)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">[</bpt>configureControl<ept id="p1">](services-business-logic-services-imetadataservice.md#configurecontrol)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>configureControl<ept id="p1">](services-business-logic-services-imetadataservice.md#configurecontrol)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">[</bpt>configureEntity<ept id="p1">](services-business-logic-services-imetadataservice.md#configureentity)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>configureEntity<ept id="p1">](services-business-logic-services-imetadataservice.md#configureentity)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">[</bpt>configureLookup<ept id="p1">](services-business-logic-services-imetadataservice.md#configurelookup)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>configureLookup<ept id="p1">](services-business-logic-services-imetadataservice.md#configurelookup)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">[</bpt>configurePage<ept id="p1">](services-business-logic-services-imetadataservice.md#configurepage)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>configurePage<ept id="p1">](services-business-logic-services-imetadataservice.md#configurepage)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source><bpt id="p1">[</bpt>configureWorkspace<ept id="p1">](services-business-logic-services-imetadataservice.md#configureworkspace)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>configureWorkspace<ept id="p1">](services-business-logic-services-imetadataservice.md#configureworkspace)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source><bpt id="p1">[</bpt>findAction<ept id="p1">](services-business-logic-services-imetadataservice.md#findaction)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>findAction<ept id="p1">](services-business-logic-services-imetadataservice.md#findaction)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">[</bpt>findControl<ept id="p1">](services-business-logic-services-imetadataservice.md#findcontrol)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>findControl<ept id="p1">](services-business-logic-services-imetadataservice.md#findcontrol)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source><bpt id="p1">[</bpt>findPage<ept id="p1">](services-business-logic-services-imetadataservice.md#findpage)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>findPage<ept id="p1">](services-business-logic-services-imetadataservice.md#findpage)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">[</bpt>getFilterExpression<ept id="p1">](services-business-logic-services-imetadataservice.md#getfilterexpression)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getFilterExpression<ept id="p1">](services-business-logic-services-imetadataservice.md#getfilterexpression)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source><bpt id="p1">[</bpt>getFormReference<ept id="p1">](services-business-logic-services-imetadataservice.md#getformreference)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getFormReference<ept id="p1">](services-business-logic-services-imetadataservice.md#getformreference)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source><bpt id="p1">[</bpt>hideNavigation<ept id="p1">](services-business-logic-services-imetadataservice.md#hidenavigation)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>hideNavigation<ept id="p1">](services-business-logic-services-imetadataservice.md#hidenavigation)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Properties</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>version</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">のバージョン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>version: string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">version: string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>(Read-only) Gets the version of the platform currently running.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(読み取り専用) 現在実行中のプラットフォームのバージョンを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>addControl</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">addControl</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>addControl(componentName: string, controlName: string, controlType: <bpt id="p1">[</bpt>ControlType<ept id="p1">](../modules/view-model-control-basecontrol-icontrol.md#controltype)</ept>, parentContainerName?: string, options?: <bpt id="p2">[</bpt>ControlMetadata<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>): any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">addControl(componentName: string, controlName: string, controlType: <bpt id="p1">[</bpt>ControlType<ept id="p1">](../modules/view-model-control-basecontrol-icontrol.md#controltype)</ept>, parentContainerName?: string, options?: <bpt id="p2">[</bpt>ControlMetadata<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>): any</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>componentName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">componentName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>controlName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">controlName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>controlType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">controlType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source><bpt id="p1">[</bpt>ControlType<ept id="p1">](../modules/view-model-control-basecontrol-icontrol.md#controltype)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlType<ept id="p1">](../modules/view-model-control-basecontrol-icontrol.md#controltype)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>parentContainerName?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">parentContainerName?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>options?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">options?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Returns any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>compareVersion</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">compareVersion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>compareVersion(versionToCompare: string): 1 &amp;#124; -1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">compareVersion(versionToCompare: string): 1 &amp;#124; -1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Compares the current platform version with a reference version.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のプラットフォームのバージョンと参照バージョンを比較します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>versionToCompare</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">versionToCompare</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>The reference version to compare with</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">比較する参照バージョン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Returns 1 &amp;#124; -1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 &amp;#124; -1 を返す</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>1 to indicate the platform version is older than the reference version, -1 to indicate that the platform version is newer or same as the reference version</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 はプラットフォーム バージョンが参照バージョンより古いことを示し、-1 はプラットフォーム バージョンが参照バージョンより新しいか、または同じであることを示す</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>configureAction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configureAction</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>configureAction(actionName: string, options: <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept>): any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configureAction(actionName: string, options: <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept>): any</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Configuring an action allows specifying or overriding certain behaviors specific to actions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクションをコンフィギュレーションすると、そのアクションに固有の特定の動作を指定または上書きできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例 :</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>actionName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">actionName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>The action whose behavior is to be changed</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動作が変更されるアクション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source><bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>The property bag containing the properties to set on the action</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクションに設定するプロパティを含むプロパティ バッグ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Returns any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>configureControl</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configureControl</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>configureControl(componentName: string, controlName: string, options: <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>): any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configureControl(componentName: string, controlName: string, options: <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>): any</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Configuring a control allows specifying or overriding certain behaviors specific to the control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールをコンフィギュレーションすると、そのコントロールに固有の特定の動作を指定または上書きできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Note that the available behaviors vary by control type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用可能な動作はコントロール タイプで異なることに注意してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例 :</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>componentName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">componentName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>A page or action that contains the control</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールを含むページまたはアクション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>controlName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">controlName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>The control whose behavior is to be changed</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動作を変更するコントロール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>The property bag containing the properties to set on the control</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールに設定するプロパティを含むプロパティ バッグ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Returns any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>configureEntity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configureEntity</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>configureEntity(entityName: string, options: any): any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configureEntity(entityName: string, options: any): any</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Configuring an entity allows specifying or overriding certain behaviors specific to the entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティをコンフィギュレーションすると、そのエンティティに固有の特定の動作を指定または上書きできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例 :</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>entityName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">entityName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>An entity name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>The property bag containing the properties to set on the entity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティに設定するプロパティを含むプロパティ バッグ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Returns any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>configureLookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configureLookup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>configureLookup(taskName: string, lookupControlName: string, options: <bpt id="p1">[</bpt>LookupMetadata<ept id="p1">](view-model-control-lookup-ilookup-ilookupmetadata.md)</ept>): any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configureLookup(taskName: string, lookupControlName: string, options: <bpt id="p1">[</bpt>LookupMetadata<ept id="p1">](view-model-control-lookup-ilookup-ilookupmetadata.md)</ept>): any</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Configures a field on an action to behave as a lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクションのフィールドをルックアップとして動作するようにコンフィギュレーションします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Requires using an existing page which contains a list control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト コントロールを含む既存のページを使用する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例 :</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>taskName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">taskName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Action name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクション名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>lookupControlName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">lookupControlName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>The control name of the field to be given lookup behavior</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップの動作を指定するフィールドのコントロール名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source><bpt id="p1">[</bpt>LookupMetadata<ept id="p1">](view-model-control-lookup-ilookup-ilookupmetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>LookupMetadata<ept id="p1">](view-model-control-lookup-ilookup-ilookupmetadata.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Lookup configuration object</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップ コンフィギュレーション オブジェクト</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Returns any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>configurePage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configurePage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>configurePage(pageName: string, options: <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept>): any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configurePage(pageName: string, options: <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept>): any</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Configuring a Page allows specifying or overriding certain behaviors specific to the Page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページをコンフィギュレーションすると、そのページに固有の特定の動作を指定または上書きできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例 :</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>pageName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">pageName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>The page that contains the control</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールを含むページ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source><bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>The property bag containing the properties to set on the page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページに設定するプロパティを含むプロパティ バッグ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Returns any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>configureWorkspace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configureWorkspace</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>configureWorkspace(options: <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept>): any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">configureWorkspace(options: <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept>): any</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Configuring a workspace allows specifying or overriding certain behaviors specific to the workspace.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペースをコンフィギュレーションすると、そのワークスペースに固有の特定の動作を指定または上書きできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例 :</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source><bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>The property bag containing the properties to set on the workspace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペースに設定するプロパティを含むプロパティ バッグ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Returns any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>findAction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">findAction</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>findAction(actionName: string): <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">findAction(actionName: string): <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Gets a copy of the current metadata instance of a specified Action, for the purpose of inspecting the metadata (not to be used for changing the metadata).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メタデータ (メタデータを変更するために使用されない) を検査するため、指定されたアクションの現在のメタデータ インスタンスのコピーを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Note: Since metadata can be changed at any time by business logic, you must be mindful of when you use this API to get a copy as it will reflect the state of the metadata at the time the call is made.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注記: メタデータはビジネス ロジックによっていつでも変更でき、呼び出された時点でメタデータの状態を反映するため、この API を使用してコピーを取得するタイミングに注意する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>Example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例 :</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>actionName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">actionName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>An action name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクション名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Returns <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept> を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>findControl</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">findControl</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>findControl(componentMetadata: any, controlName: string): <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">findControl(componentMetadata: any, controlName: string): <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Gets a copy of the current metadata instance of a specified control, for the purpose of inspecting the metadata (not to be used for changing the metadata).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メタデータ (メタデータを変更するために使用されない) を検査するため、指定されたコントロールの現在のメタデータ インスタンスのコピーを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Note: Since metadata can be changed at any time by business logic, you must be mindful of when you use this API to get a copy as it will reflect the state of the metadata at the time the call is made.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注記: メタデータはビジネス ロジックによっていつでも変更でき、呼び出された時点でメタデータの状態を反映するため、この API を使用してコピーを取得するタイミングに注意する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例 :</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>componentMetadata</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">componentMetadata</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>A metadata instance of the page or action</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページまたはアクションのメタデータ インスタンス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>controlName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">controlName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>A control name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Returns <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept> を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>findPage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">findPage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>findPage(pageName: string): <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">findPage(pageName: string): <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Gets a copy of the current metadata instance of a specified page, for the purpose of inspecting the metadata (not to be used for changing the metadata).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メタデータ (メタデータを変更するために使用されない) を検査するため、指定されたページの現在のメタデータ インスタンスのコピーを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Note: Since metadata can be changed at any time by business logic, you must be mindful of when you use this API to get a copy as it will reflect the state of the metadata at the time the call is made.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注記: メタデータはビジネス ロジックによっていつでも変更でき、呼び出された時点でメタデータの状態を反映するため、この API を使用してコピーを取得するタイミングに注意する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>Example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例 :</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>pageName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">pageName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>A page name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページ名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>Returns <bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>PageMetadata<ept id="p1">](view-model-ipage-ipagemetadata.md)</ept> を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>getFilterExpression</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getFilterExpression</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>getFilterExpression(pageName: string, listControlName: string, controlName: string, operator: <bpt id="p1">[</bpt>ExpressionOperator<ept id="p1">](../modules/services-business-logic-services.md#expressionoperator)</ept>, value: string): DataFilter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getFilterExpression(pageName: string, listControlName: string, controlName: string, operator: <bpt id="p1">[</bpt>ExpressionOperator<ept id="p1">](../modules/services-business-logic-services.md#expressionoperator)</ept>, value: string): DataFilter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>Create a DataFilter object for a list control based on the provided options.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたオプションに基づいてリスト コントロール用の DataFilter オブジェクトを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>Example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例 :</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>pageName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">pageName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>listControlName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">listControlName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>controlName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">controlName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>operator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">演算子</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source><bpt id="p1">[</bpt>ExpressionOperator<ept id="p1">](../modules/services-business-logic-services.md#expressionoperator)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ExpressionOperator<ept id="p1">](../modules/services-business-logic-services.md#expressionoperator)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>Returns DataFilter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DataFilter を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>getFormReference</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getFormReference</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>getFormReference(componentName: string, filterContext: DataFilter, excludeContext: boolean, filterLocalOnly?: boolean): <bpt id="p1">[</bpt>NavigationArgs<ept id="p1">](view-model-ipage-inavigationargs.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getFormReference(componentName: string, filterContext: DataFilter, excludeContext: boolean, filterLocalOnly?: boolean): <bpt id="p1">[</bpt>NavigationArgs<ept id="p1">](view-model-ipage-inavigationargs.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>Create an INavigationArgs object for a specific page/action to be used with a navigation control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ナビゲーション コントロールで使用する特定のページ/アクションに対し INavigationArgs オブジェクトを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>componentName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">componentName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>string</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>Name of the action/page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクション/ページの名前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>filterContext</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">filterContext</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>DataFilter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DataFilter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>excludeContext</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">excludeContext</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>boolean</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブール値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source>filterLocalOnly?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">filterLocalOnly?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>boolean</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブール値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source>Returns <bpt id="p1">[</bpt>NavigationArgs<ept id="p1">](view-model-ipage-inavigationargs.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>NavigationArgs<ept id="p1">](view-model-ipage-inavigationargs.md)</ept> を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>hideNavigation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hideNavigation</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source>hideNavigation(pageNamesToHide: string [ ]): any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hideNavigation(pageNamesToHide: string [ ]): any</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>Hides the specified page(s) from the default landing page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定のランディング ページから指定されたページを非表示にします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source>Example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例 :</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>pageNamesToHide</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">pageNamesToHide</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>string [ ]</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string [ ]</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source>Page name(s)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページ名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>Returns any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: MetadataService タイプ
+description: アプリケーション ワークスペースでさまざまなメタデータ要素にアクセスして構成する機能を提供します。
+author: shadykdc
+manager: AnnBe
+ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: ''
+ms.search.region: Global
+ms.author: kashea
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: abda342ecfec227b7349e4216ea82df3d652cf0c
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554375"
+---
+# <a name="metadataservice-type"></a><span data-ttu-id="0d2ae-103">MetadataService タイプ</span><span class="sxs-lookup"><span data-stu-id="0d2ae-103">MetadataService type</span></span>
+
+[!include [banner](../../../../includes/banner.md)]
+
+<span data-ttu-id="0d2ae-104">アプリケーション ワークスペースでさまざまなメタデータ要素にアクセスして構成する機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-104">Provides ability to access and configure various metadata elements under the application workspace.</span></span>
+
+### <a name="hierarchy"></a><span data-ttu-id="0d2ae-105">階層</span><span class="sxs-lookup"><span data-stu-id="0d2ae-105">Hierarchy</span></span>
+
+<span data-ttu-id="0d2ae-106">MetadataService</span><span class="sxs-lookup"><span data-stu-id="0d2ae-106">MetadataService</span></span> <br>
+
+## <a name="index"></a><span data-ttu-id="0d2ae-107">指数</span><span class="sxs-lookup"><span data-stu-id="0d2ae-107">Index</span></span>
+
+### <a name="properties"></a><span data-ttu-id="0d2ae-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d2ae-108">Properties</span></span>
+
+* [<span data-ttu-id="0d2ae-109">バージョン</span><span class="sxs-lookup"><span data-stu-id="0d2ae-109">version</span></span>](services-business-logic-services-imetadataservice.md#version)
+
+### <a name="methods"></a><span data-ttu-id="0d2ae-110">メソッド</span><span class="sxs-lookup"><span data-stu-id="0d2ae-110">Methods</span></span>
+
+* [<span data-ttu-id="0d2ae-111">addControl</span><span class="sxs-lookup"><span data-stu-id="0d2ae-111">addControl</span></span>](services-business-logic-services-imetadataservice.md#addcontrol)
+* [<span data-ttu-id="0d2ae-112">compareVersion</span><span class="sxs-lookup"><span data-stu-id="0d2ae-112">compareVersion</span></span>](services-business-logic-services-imetadataservice.md#compareversion)
+* [<span data-ttu-id="0d2ae-113">configureAction</span><span class="sxs-lookup"><span data-stu-id="0d2ae-113">configureAction</span></span>](services-business-logic-services-imetadataservice.md#configureaction)
+* [<span data-ttu-id="0d2ae-114">configureControl</span><span class="sxs-lookup"><span data-stu-id="0d2ae-114">configureControl</span></span>](services-business-logic-services-imetadataservice.md#configurecontrol)
+* [<span data-ttu-id="0d2ae-115">configureEntity</span><span class="sxs-lookup"><span data-stu-id="0d2ae-115">configureEntity</span></span>](services-business-logic-services-imetadataservice.md#configureentity)
+* [<span data-ttu-id="0d2ae-116">configureLookup</span><span class="sxs-lookup"><span data-stu-id="0d2ae-116">configureLookup</span></span>](services-business-logic-services-imetadataservice.md#configurelookup)
+* [<span data-ttu-id="0d2ae-117">configurePage</span><span class="sxs-lookup"><span data-stu-id="0d2ae-117">configurePage</span></span>](services-business-logic-services-imetadataservice.md#configurepage)
+* [<span data-ttu-id="0d2ae-118">configureWorkspace</span><span class="sxs-lookup"><span data-stu-id="0d2ae-118">configureWorkspace</span></span>](services-business-logic-services-imetadataservice.md#configureworkspace)
+* [<span data-ttu-id="0d2ae-119">findAction</span><span class="sxs-lookup"><span data-stu-id="0d2ae-119">findAction</span></span>](services-business-logic-services-imetadataservice.md#findaction)
+* [<span data-ttu-id="0d2ae-120">findControl</span><span class="sxs-lookup"><span data-stu-id="0d2ae-120">findControl</span></span>](services-business-logic-services-imetadataservice.md#findcontrol)
+* [<span data-ttu-id="0d2ae-121">findPage</span><span class="sxs-lookup"><span data-stu-id="0d2ae-121">findPage</span></span>](services-business-logic-services-imetadataservice.md#findpage)
+* [<span data-ttu-id="0d2ae-122">getFilterExpression</span><span class="sxs-lookup"><span data-stu-id="0d2ae-122">getFilterExpression</span></span>](services-business-logic-services-imetadataservice.md#getfilterexpression)
+* [<span data-ttu-id="0d2ae-123">getFormReference</span><span class="sxs-lookup"><span data-stu-id="0d2ae-123">getFormReference</span></span>](services-business-logic-services-imetadataservice.md#getformreference)
+* [<span data-ttu-id="0d2ae-124">hideNavigation</span><span class="sxs-lookup"><span data-stu-id="0d2ae-124">hideNavigation</span></span>](services-business-logic-services-imetadataservice.md#hidenavigation)
+
+## <a name="properties"></a><span data-ttu-id="0d2ae-125">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d2ae-125">Properties</span></span>
+
+### <a name="version"></a><span data-ttu-id="0d2ae-126">のバージョン</span><span class="sxs-lookup"><span data-stu-id="0d2ae-126">version</span></span>
+
+<span data-ttu-id="0d2ae-127">version: string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-127">version: string</span></span>
+
+<span data-ttu-id="0d2ae-128">(読み取り専用) 現在実行中のプラットフォームのバージョンを取得します。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-128">(Read-only) Gets the version of the platform currently running.</span></span>
+
+
+## <a name="methods"></a><span data-ttu-id="0d2ae-129">メソッド</span><span class="sxs-lookup"><span data-stu-id="0d2ae-129">Methods</span></span>
+
+### <a name="addcontrol"></a><span data-ttu-id="0d2ae-130">addControl</span><span class="sxs-lookup"><span data-stu-id="0d2ae-130">addControl</span></span>
+
+
+<span data-ttu-id="0d2ae-131">addControl(componentName: string, controlName: string, controlType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype), parentContainerName?: string, options?: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)): any</span><span class="sxs-lookup"><span data-stu-id="0d2ae-131">addControl(componentName: string, controlName: string, controlType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype), parentContainerName?: string, options?: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)): any</span></span>
+
+
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-132">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-132">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-133">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-133">Name</span></span> | <span data-ttu-id="0d2ae-134">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-134">Type</span></span> | <span data-ttu-id="0d2ae-135">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-135">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-136">componentName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-136">componentName</span></span>|<span data-ttu-id="0d2ae-137">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-137">string</span></span>||
+| <span data-ttu-id="0d2ae-138">controlName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-138">controlName</span></span>|<span data-ttu-id="0d2ae-139">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-139">string</span></span>||
+| <span data-ttu-id="0d2ae-140">controlType</span><span class="sxs-lookup"><span data-stu-id="0d2ae-140">controlType</span></span>|[<span data-ttu-id="0d2ae-141">ControlType</span><span class="sxs-lookup"><span data-stu-id="0d2ae-141">ControlType</span></span>](../modules/view-model-control-basecontrol-icontrol.md#controltype)||
+| <span data-ttu-id="0d2ae-142">parentContainerName?</span><span class="sxs-lookup"><span data-stu-id="0d2ae-142">parentContainerName?</span></span>|<span data-ttu-id="0d2ae-143">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-143">string</span></span>||
+| <span data-ttu-id="0d2ae-144">options?</span><span class="sxs-lookup"><span data-stu-id="0d2ae-144">options?</span></span>|[<span data-ttu-id="0d2ae-145">ControlMetadata</span><span class="sxs-lookup"><span data-stu-id="0d2ae-145">ControlMetadata</span></span>](view-model-control-basecontrol-icontrol-icontrolmetadata.md)||
+
+#### <a name="returns-any"></a><span data-ttu-id="0d2ae-146">any を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-146">Returns any</span></span>
+
+### <a name="compareversion"></a><span data-ttu-id="0d2ae-147">compareVersion</span><span class="sxs-lookup"><span data-stu-id="0d2ae-147">compareVersion</span></span>
+
+
+<span data-ttu-id="0d2ae-148">compareVersion(versionToCompare: string): 1 &#124; -1</span><span class="sxs-lookup"><span data-stu-id="0d2ae-148">compareVersion(versionToCompare: string): 1 &#124; -1</span></span>
+
+<span data-ttu-id="0d2ae-149">現在のプラットフォームのバージョンと参照バージョンを比較します。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-149">Compares the current platform version with a reference version.</span></span>
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-150">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-150">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-151">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-151">Name</span></span> | <span data-ttu-id="0d2ae-152">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-152">Type</span></span> | <span data-ttu-id="0d2ae-153">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-153">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-154">versionToCompare</span><span class="sxs-lookup"><span data-stu-id="0d2ae-154">versionToCompare</span></span>|<span data-ttu-id="0d2ae-155">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-155">string</span></span>|<span data-ttu-id="0d2ae-156">比較する参照バージョン</span><span class="sxs-lookup"><span data-stu-id="0d2ae-156">The reference version to compare with</span></span>|
+
+#### <a name="returns-1-124--1"></a><span data-ttu-id="0d2ae-157">1 &#124; -1 を返す</span><span class="sxs-lookup"><span data-stu-id="0d2ae-157">Returns 1 &#124; -1</span></span>
+<span data-ttu-id="0d2ae-158">1 はプラットフォーム バージョンが参照バージョンより古いことを示し、-1 はプラットフォーム バージョンが参照バージョンより新しいか、または同じであることを示す</span><span class="sxs-lookup"><span data-stu-id="0d2ae-158">1 to indicate the platform version is older than the reference version, -1 to indicate that the platform version is newer or same as the reference version</span></span>
+
+### <a name="configureaction"></a><span data-ttu-id="0d2ae-159">configureAction</span><span class="sxs-lookup"><span data-stu-id="0d2ae-159">configureAction</span></span>
+
+
+<span data-ttu-id="0d2ae-160">configureAction(actionName: string, options: [PageMetadata](view-model-ipage-ipagemetadata.md)): any</span><span class="sxs-lookup"><span data-stu-id="0d2ae-160">configureAction(actionName: string, options: [PageMetadata](view-model-ipage-ipagemetadata.md)): any</span></span>
+
+<span data-ttu-id="0d2ae-161">アクションをコンフィギュレーションすると、そのアクションに固有の特定の動作を指定または上書きできます。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-161">Configuring an action allows specifying or overriding certain behaviors specific to actions.</span></span>
+<span data-ttu-id="0d2ae-162">例 :</span><span class="sxs-lookup"><span data-stu-id="0d2ae-162">Example:</span></span>
+
+```javascript
+metadataService.configureAction('Edit-Reservation', { properties-to-set });
+```
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-163">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-163">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-164">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-164">Name</span></span> | <span data-ttu-id="0d2ae-165">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-165">Type</span></span> | <span data-ttu-id="0d2ae-166">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-166">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-167">actionName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-167">actionName</span></span>|<span data-ttu-id="0d2ae-168">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-168">string</span></span>|<span data-ttu-id="0d2ae-169">動作が変更されるアクション</span><span class="sxs-lookup"><span data-stu-id="0d2ae-169">The action whose behavior is to be changed</span></span>|
+| <span data-ttu-id="0d2ae-170">オプション</span><span class="sxs-lookup"><span data-stu-id="0d2ae-170">options</span></span>|[<span data-ttu-id="0d2ae-171">PageMetadata</span><span class="sxs-lookup"><span data-stu-id="0d2ae-171">PageMetadata</span></span>](view-model-ipage-ipagemetadata.md)|<span data-ttu-id="0d2ae-172">アクションに設定するプロパティを含むプロパティ バッグ</span><span class="sxs-lookup"><span data-stu-id="0d2ae-172">The property bag containing the properties to set on the action</span></span>|
+
+#### <a name="returns-any"></a><span data-ttu-id="0d2ae-173">any を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-173">Returns any</span></span>
+
+### <a name="configurecontrol"></a><span data-ttu-id="0d2ae-174">configureControl</span><span class="sxs-lookup"><span data-stu-id="0d2ae-174">configureControl</span></span>
+
+
+<span data-ttu-id="0d2ae-175">configureControl(componentName: string, controlName: string, options: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)): any</span><span class="sxs-lookup"><span data-stu-id="0d2ae-175">configureControl(componentName: string, controlName: string, options: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)): any</span></span>
+
+<span data-ttu-id="0d2ae-176">コントロールをコンフィギュレーションすると、そのコントロールに固有の特定の動作を指定または上書きできます。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-176">Configuring a control allows specifying or overriding certain behaviors specific to the control.</span></span> <span data-ttu-id="0d2ae-177">使用可能な動作はコントロール タイプで異なることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-177">Note that the available behaviors vary by control type.</span></span>
+<span data-ttu-id="0d2ae-178">例 :</span><span class="sxs-lookup"><span data-stu-id="0d2ae-178">Example:</span></span>
+
+```javascript
+metadataService.configureControl('All-Customers', 'FMCustomer_RecId', { properties-to-set });
+```
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-179">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-179">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-180">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-180">Name</span></span> | <span data-ttu-id="0d2ae-181">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-181">Type</span></span> | <span data-ttu-id="0d2ae-182">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-182">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-183">componentName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-183">componentName</span></span>|<span data-ttu-id="0d2ae-184">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-184">string</span></span>|<span data-ttu-id="0d2ae-185">コントロールを含むページまたはアクション</span><span class="sxs-lookup"><span data-stu-id="0d2ae-185">A page or action that contains the control</span></span>|
+| <span data-ttu-id="0d2ae-186">controlName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-186">controlName</span></span>|<span data-ttu-id="0d2ae-187">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-187">string</span></span>|<span data-ttu-id="0d2ae-188">動作を変更するコントロール</span><span class="sxs-lookup"><span data-stu-id="0d2ae-188">The control whose behavior is to be changed</span></span>|
+| <span data-ttu-id="0d2ae-189">オプション</span><span class="sxs-lookup"><span data-stu-id="0d2ae-189">options</span></span>|[<span data-ttu-id="0d2ae-190">ControlMetadata</span><span class="sxs-lookup"><span data-stu-id="0d2ae-190">ControlMetadata</span></span>](view-model-control-basecontrol-icontrol-icontrolmetadata.md)|<span data-ttu-id="0d2ae-191">コントロールに設定するプロパティを含むプロパティ バッグ</span><span class="sxs-lookup"><span data-stu-id="0d2ae-191">The property bag containing the properties to set on the control</span></span>|
+
+#### <a name="returns-any"></a><span data-ttu-id="0d2ae-192">any を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-192">Returns any</span></span>
+
+### <a name="configureentity"></a><span data-ttu-id="0d2ae-193">configureEntity</span><span class="sxs-lookup"><span data-stu-id="0d2ae-193">configureEntity</span></span>
+
+
+<span data-ttu-id="0d2ae-194">configureEntity(entityName: string, options: any): any</span><span class="sxs-lookup"><span data-stu-id="0d2ae-194">configureEntity(entityName: string, options: any): any</span></span>
+
+<span data-ttu-id="0d2ae-195">エンティティをコンフィギュレーションすると、そのエンティティに固有の特定の動作を指定または上書きできます。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-195">Configuring an entity allows specifying or overriding certain behaviors specific to the entity.</span></span>
+<span data-ttu-id="0d2ae-196">例 :</span><span class="sxs-lookup"><span data-stu-id="0d2ae-196">Example:</span></span>
+
+```javascript
+metadataService.configureEntity("FMCustomer", { properties-to-set });
+```
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-197">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-197">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-198">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-198">Name</span></span> | <span data-ttu-id="0d2ae-199">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-199">Type</span></span> | <span data-ttu-id="0d2ae-200">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-200">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-201">entityName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-201">entityName</span></span>|<span data-ttu-id="0d2ae-202">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-202">string</span></span>|<span data-ttu-id="0d2ae-203">エンティティ名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-203">An entity name</span></span>|
+| <span data-ttu-id="0d2ae-204">オプション</span><span class="sxs-lookup"><span data-stu-id="0d2ae-204">options</span></span>|<span data-ttu-id="0d2ae-205">any</span><span class="sxs-lookup"><span data-stu-id="0d2ae-205">any</span></span>|<span data-ttu-id="0d2ae-206">エンティティに設定するプロパティを含むプロパティ バッグ</span><span class="sxs-lookup"><span data-stu-id="0d2ae-206">The property bag containing the properties to set on the entity</span></span>|
+
+#### <a name="returns-any"></a><span data-ttu-id="0d2ae-207">any を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-207">Returns any</span></span>
+
+### <a name="configurelookup"></a><span data-ttu-id="0d2ae-208">configureLookup</span><span class="sxs-lookup"><span data-stu-id="0d2ae-208">configureLookup</span></span>
+
+
+<span data-ttu-id="0d2ae-209">configureLookup(taskName: string, lookupControlName: string, options: [LookupMetadata](view-model-control-lookup-ilookup-ilookupmetadata.md)): any</span><span class="sxs-lookup"><span data-stu-id="0d2ae-209">configureLookup(taskName: string, lookupControlName: string, options: [LookupMetadata](view-model-control-lookup-ilookup-ilookupmetadata.md)): any</span></span>
+
+<span data-ttu-id="0d2ae-210">アクションのフィールドをルックアップとして動作するようにコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-210">Configures a field on an action to behave as a lookup.</span></span> <span data-ttu-id="0d2ae-211">リスト コントロールを含む既存のページを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-211">Requires using an existing page which contains a list control.</span></span>
+<span data-ttu-id="0d2ae-212">例 :</span><span class="sxs-lookup"><span data-stu-id="0d2ae-212">Example:</span></span>
+
+```javascript
+metadataService.configureLookup('Add-Reservation', 'FMRental_Customer', { lookupPage: 'All-Customers', valueField: 'FMCustomer_RecId', displayField: 'FMCustomer_FullName'});
+```
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-213">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-213">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-214">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-214">Name</span></span> | <span data-ttu-id="0d2ae-215">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-215">Type</span></span> | <span data-ttu-id="0d2ae-216">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-216">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-217">taskName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-217">taskName</span></span>|<span data-ttu-id="0d2ae-218">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-218">string</span></span>|<span data-ttu-id="0d2ae-219">アクション名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-219">Action name</span></span>|
+| <span data-ttu-id="0d2ae-220">lookupControlName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-220">lookupControlName</span></span>|<span data-ttu-id="0d2ae-221">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-221">string</span></span>|<span data-ttu-id="0d2ae-222">ルックアップの動作を指定するフィールドのコントロール名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-222">The control name of the field to be given lookup behavior</span></span>|
+| <span data-ttu-id="0d2ae-223">オプション</span><span class="sxs-lookup"><span data-stu-id="0d2ae-223">options</span></span>|[<span data-ttu-id="0d2ae-224">LookupMetadata</span><span class="sxs-lookup"><span data-stu-id="0d2ae-224">LookupMetadata</span></span>](view-model-control-lookup-ilookup-ilookupmetadata.md)|<span data-ttu-id="0d2ae-225">ルックアップ コンフィギュレーション オブジェクト</span><span class="sxs-lookup"><span data-stu-id="0d2ae-225">Lookup configuration object</span></span>|
+
+#### <a name="returns-any"></a><span data-ttu-id="0d2ae-226">any を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-226">Returns any</span></span>
+
+### <a name="configurepage"></a><span data-ttu-id="0d2ae-227">configurePage</span><span class="sxs-lookup"><span data-stu-id="0d2ae-227">configurePage</span></span>
+
+
+<span data-ttu-id="0d2ae-228">configurePage(pageName: string, options: [PageMetadata](view-model-ipage-ipagemetadata.md)): any</span><span class="sxs-lookup"><span data-stu-id="0d2ae-228">configurePage(pageName: string, options: [PageMetadata](view-model-ipage-ipagemetadata.md)): any</span></span>
+
+<span data-ttu-id="0d2ae-229">ページをコンフィギュレーションすると、そのページに固有の特定の動作を指定または上書きできます。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-229">Configuring a Page allows specifying or overriding certain behaviors specific to the Page.</span></span>
+<span data-ttu-id="0d2ae-230">例 :</span><span class="sxs-lookup"><span data-stu-id="0d2ae-230">Example:</span></span>
+
+```javascript
+metadataService.configurePage('Reservation-details', { properties-to-set });
+```
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-231">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-231">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-232">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-232">Name</span></span> | <span data-ttu-id="0d2ae-233">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-233">Type</span></span> | <span data-ttu-id="0d2ae-234">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-234">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-235">pageName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-235">pageName</span></span>|<span data-ttu-id="0d2ae-236">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-236">string</span></span>|<span data-ttu-id="0d2ae-237">コントロールを含むページ</span><span class="sxs-lookup"><span data-stu-id="0d2ae-237">The page that contains the control</span></span>|
+| <span data-ttu-id="0d2ae-238">オプション</span><span class="sxs-lookup"><span data-stu-id="0d2ae-238">options</span></span>|[<span data-ttu-id="0d2ae-239">PageMetadata</span><span class="sxs-lookup"><span data-stu-id="0d2ae-239">PageMetadata</span></span>](view-model-ipage-ipagemetadata.md)|<span data-ttu-id="0d2ae-240">ページに設定するプロパティを含むプロパティ バッグ</span><span class="sxs-lookup"><span data-stu-id="0d2ae-240">The property bag containing the properties to set on the page</span></span>|
+
+#### <a name="returns-any"></a><span data-ttu-id="0d2ae-241">any を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-241">Returns any</span></span>
+
+### <a name="configureworkspace"></a><span data-ttu-id="0d2ae-242">configureWorkspace</span><span class="sxs-lookup"><span data-stu-id="0d2ae-242">configureWorkspace</span></span>
+
+
+<span data-ttu-id="0d2ae-243">configureWorkspace(options: [PageMetadata](view-model-ipage-ipagemetadata.md)): any</span><span class="sxs-lookup"><span data-stu-id="0d2ae-243">configureWorkspace(options: [PageMetadata](view-model-ipage-ipagemetadata.md)): any</span></span>
+
+<span data-ttu-id="0d2ae-244">ワークスペースをコンフィギュレーションすると、そのワークスペースに固有の特定の動作を指定または上書きできます。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-244">Configuring a workspace allows specifying or overriding certain behaviors specific to the workspace.</span></span>
+<span data-ttu-id="0d2ae-245">例 :</span><span class="sxs-lookup"><span data-stu-id="0d2ae-245">Example:</span></span>
+
+```javascript
+metadataService.configureWorkspace({ properties-to-set });
+```
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-246">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-246">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-247">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-247">Name</span></span> | <span data-ttu-id="0d2ae-248">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-248">Type</span></span> | <span data-ttu-id="0d2ae-249">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-249">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-250">オプション</span><span class="sxs-lookup"><span data-stu-id="0d2ae-250">options</span></span>|[<span data-ttu-id="0d2ae-251">PageMetadata</span><span class="sxs-lookup"><span data-stu-id="0d2ae-251">PageMetadata</span></span>](view-model-ipage-ipagemetadata.md)|<span data-ttu-id="0d2ae-252">ワークスペースに設定するプロパティを含むプロパティ バッグ</span><span class="sxs-lookup"><span data-stu-id="0d2ae-252">The property bag containing the properties to set on the workspace</span></span>|
+
+#### <a name="returns-any"></a><span data-ttu-id="0d2ae-253">any を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-253">Returns any</span></span>
+
+### <a name="findaction"></a><span data-ttu-id="0d2ae-254">findAction</span><span class="sxs-lookup"><span data-stu-id="0d2ae-254">findAction</span></span>
+
+
+<span data-ttu-id="0d2ae-255">findAction(actionName: string): [PageMetadata](view-model-ipage-ipagemetadata.md)</span><span class="sxs-lookup"><span data-stu-id="0d2ae-255">findAction(actionName: string): [PageMetadata](view-model-ipage-ipagemetadata.md)</span></span>
+
+<span data-ttu-id="0d2ae-256">メタデータ (メタデータを変更するために使用されない) を検査するため、指定されたアクションの現在のメタデータ インスタンスのコピーを取得します。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-256">Gets a copy of the current metadata instance of a specified Action, for the purpose of inspecting the metadata (not to be used for changing the metadata).</span></span>
+<span data-ttu-id="0d2ae-257">注記: メタデータはビジネス ロジックによっていつでも変更でき、呼び出された時点でメタデータの状態を反映するため、この API を使用してコピーを取得するタイミングに注意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-257">Note: Since metadata can be changed at any time by business logic, you must be mindful of when you use this API to get a copy as it will reflect the state of the metadata at the time the call is made.</span></span>
+
+<span data-ttu-id="0d2ae-258">例 :</span><span class="sxs-lookup"><span data-stu-id="0d2ae-258">Example:</span></span>
+
+```javascript
+var newCustomerTaskMetadata = metadataService.findTask("New-customer");
+```
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-259">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-259">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-260">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-260">Name</span></span> | <span data-ttu-id="0d2ae-261">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-261">Type</span></span> | <span data-ttu-id="0d2ae-262">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-262">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-263">actionName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-263">actionName</span></span>|<span data-ttu-id="0d2ae-264">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-264">string</span></span>|<span data-ttu-id="0d2ae-265">アクション名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-265">An action name</span></span>|
+
+#### <a name="returns-pagemetadataview-model-ipage-ipagemetadatamd"></a><span data-ttu-id="0d2ae-266">[PageMetadata](view-model-ipage-ipagemetadata.md) を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-266">Returns [PageMetadata](view-model-ipage-ipagemetadata.md)</span></span>
+
+
+
+### <a name="findcontrol"></a><span data-ttu-id="0d2ae-267">findControl</span><span class="sxs-lookup"><span data-stu-id="0d2ae-267">findControl</span></span>
+
+
+<span data-ttu-id="0d2ae-268">findControl(componentMetadata: any, controlName: string): [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</span><span class="sxs-lookup"><span data-stu-id="0d2ae-268">findControl(componentMetadata: any, controlName: string): [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</span></span>
+
+<span data-ttu-id="0d2ae-269">メタデータ (メタデータを変更するために使用されない) を検査するため、指定されたコントロールの現在のメタデータ インスタンスのコピーを取得します。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-269">Gets a copy of the current metadata instance of a specified control, for the purpose of inspecting the metadata (not to be used for changing the metadata).</span></span>
+<span data-ttu-id="0d2ae-270">注記: メタデータはビジネス ロジックによっていつでも変更でき、呼び出された時点でメタデータの状態を反映するため、この API を使用してコピーを取得するタイミングに注意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-270">Note: Since metadata can be changed at any time by business logic, you must be mindful of when you use this API to get a copy as it will reflect the state of the metadata at the time the call is made.</span></span>
+
+<span data-ttu-id="0d2ae-271">例 :</span><span class="sxs-lookup"><span data-stu-id="0d2ae-271">Example:</span></span>
+
+```javascript
+var firstNameControl = metadataService.findControl(newCustomerTaskMetadata, 'FMCustomer_FirstName');
+```
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-272">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-272">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-273">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-273">Name</span></span> | <span data-ttu-id="0d2ae-274">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-274">Type</span></span> | <span data-ttu-id="0d2ae-275">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-275">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-276">componentMetadata</span><span class="sxs-lookup"><span data-stu-id="0d2ae-276">componentMetadata</span></span>|<span data-ttu-id="0d2ae-277">any</span><span class="sxs-lookup"><span data-stu-id="0d2ae-277">any</span></span>|<span data-ttu-id="0d2ae-278">ページまたはアクションのメタデータ インスタンス</span><span class="sxs-lookup"><span data-stu-id="0d2ae-278">A metadata instance of the page or action</span></span>|
+| <span data-ttu-id="0d2ae-279">controlName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-279">controlName</span></span>|<span data-ttu-id="0d2ae-280">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-280">string</span></span>|<span data-ttu-id="0d2ae-281">コントロール名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-281">A control name</span></span>|
+
+#### <a name="returns-controlmetadataview-model-control-basecontrol-icontrol-icontrolmetadatamd"></a><span data-ttu-id="0d2ae-282">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-282">Returns [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</span></span>
+
+
+
+### <a name="findpage"></a><span data-ttu-id="0d2ae-283">findPage</span><span class="sxs-lookup"><span data-stu-id="0d2ae-283">findPage</span></span>
+
+
+<span data-ttu-id="0d2ae-284">findPage(pageName: string): [PageMetadata](view-model-ipage-ipagemetadata.md)</span><span class="sxs-lookup"><span data-stu-id="0d2ae-284">findPage(pageName: string): [PageMetadata](view-model-ipage-ipagemetadata.md)</span></span>
+
+<span data-ttu-id="0d2ae-285">メタデータ (メタデータを変更するために使用されない) を検査するため、指定されたページの現在のメタデータ インスタンスのコピーを取得します。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-285">Gets a copy of the current metadata instance of a specified page, for the purpose of inspecting the metadata (not to be used for changing the metadata).</span></span>
+<span data-ttu-id="0d2ae-286">注記: メタデータはビジネス ロジックによっていつでも変更でき、呼び出された時点でメタデータの状態を反映するため、この API を使用してコピーを取得するタイミングに注意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-286">Note: Since metadata can be changed at any time by business logic, you must be mindful of when you use this API to get a copy as it will reflect the state of the metadata at the time the call is made.</span></span>
+
+<span data-ttu-id="0d2ae-287">例 :</span><span class="sxs-lookup"><span data-stu-id="0d2ae-287">Example:</span></span>
+
+```javascript
+var reservationDetailsMetadata = metadataService.findPage("Reservation-details");
+```
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-288">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-288">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-289">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-289">Name</span></span> | <span data-ttu-id="0d2ae-290">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-290">Type</span></span> | <span data-ttu-id="0d2ae-291">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-291">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-292">pageName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-292">pageName</span></span>|<span data-ttu-id="0d2ae-293">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-293">string</span></span>|<span data-ttu-id="0d2ae-294">ページ名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-294">A page name</span></span>|
+
+#### <a name="returns-pagemetadataview-model-ipage-ipagemetadatamd"></a><span data-ttu-id="0d2ae-295">[PageMetadata](view-model-ipage-ipagemetadata.md) を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-295">Returns [PageMetadata](view-model-ipage-ipagemetadata.md)</span></span>
+
+
+
+### <a name="getfilterexpression"></a><span data-ttu-id="0d2ae-296">getFilterExpression</span><span class="sxs-lookup"><span data-stu-id="0d2ae-296">getFilterExpression</span></span>
+
+
+<span data-ttu-id="0d2ae-297">getFilterExpression(pageName: string, listControlName: string, controlName: string, operator: [ExpressionOperator](../modules/services-business-logic-services.md#expressionoperator), value: string): DataFilter</span><span class="sxs-lookup"><span data-stu-id="0d2ae-297">getFilterExpression(pageName: string, listControlName: string, controlName: string, operator: [ExpressionOperator](../modules/services-business-logic-services.md#expressionoperator), value: string): DataFilter</span></span>
+
+<span data-ttu-id="0d2ae-298">指定されたオプションに基づいてリスト コントロール用の DataFilter オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-298">Create a DataFilter object for a list control based on the provided options.</span></span>
+<span data-ttu-id="0d2ae-299">例 :</span><span class="sxs-lookup"><span data-stu-id="0d2ae-299">Example:</span></span>
+```javascript
+var filter = metadataService.getFilterExpression(
+ pageNames.AllCustomers, controlNames.CustomerList, controlNames.CustomerFullName, "Is", firstCustomerName),
+```
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-300">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-300">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-301">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-301">Name</span></span> | <span data-ttu-id="0d2ae-302">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-302">Type</span></span> | <span data-ttu-id="0d2ae-303">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-303">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-304">pageName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-304">pageName</span></span>|<span data-ttu-id="0d2ae-305">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-305">string</span></span>||
+| <span data-ttu-id="0d2ae-306">listControlName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-306">listControlName</span></span>|<span data-ttu-id="0d2ae-307">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-307">string</span></span>||
+| <span data-ttu-id="0d2ae-308">controlName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-308">controlName</span></span>|<span data-ttu-id="0d2ae-309">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-309">string</span></span>||
+| <span data-ttu-id="0d2ae-310">演算子</span><span class="sxs-lookup"><span data-stu-id="0d2ae-310">operator</span></span>|[<span data-ttu-id="0d2ae-311">ExpressionOperator</span><span class="sxs-lookup"><span data-stu-id="0d2ae-311">ExpressionOperator</span></span>](../modules/services-business-logic-services.md#expressionoperator)||
+| <span data-ttu-id="0d2ae-312">値</span><span class="sxs-lookup"><span data-stu-id="0d2ae-312">value</span></span>|<span data-ttu-id="0d2ae-313">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-313">string</span></span>||
+
+#### <a name="returns-datafilter"></a><span data-ttu-id="0d2ae-314">DataFilter を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-314">Returns DataFilter</span></span>
+
+
+
+### <a name="getformreference"></a><span data-ttu-id="0d2ae-315">getFormReference</span><span class="sxs-lookup"><span data-stu-id="0d2ae-315">getFormReference</span></span>
+
+
+<span data-ttu-id="0d2ae-316">getFormReference(componentName: string, filterContext: DataFilter, excludeContext: boolean, filterLocalOnly?: boolean): [NavigationArgs](view-model-ipage-inavigationargs.md)</span><span class="sxs-lookup"><span data-stu-id="0d2ae-316">getFormReference(componentName: string, filterContext: DataFilter, excludeContext: boolean, filterLocalOnly?: boolean): [NavigationArgs](view-model-ipage-inavigationargs.md)</span></span>
+
+<span data-ttu-id="0d2ae-317">ナビゲーション コントロールで使用する特定のページ/アクションに対し INavigationArgs オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-317">Create an INavigationArgs object for a specific page/action to be used with a navigation control.</span></span>
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-318">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-318">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-319">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-319">Name</span></span> | <span data-ttu-id="0d2ae-320">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-320">Type</span></span> | <span data-ttu-id="0d2ae-321">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-321">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-322">componentName</span><span class="sxs-lookup"><span data-stu-id="0d2ae-322">componentName</span></span>|<span data-ttu-id="0d2ae-323">string</span><span class="sxs-lookup"><span data-stu-id="0d2ae-323">string</span></span>|<span data-ttu-id="0d2ae-324">アクション/ページの名前</span><span class="sxs-lookup"><span data-stu-id="0d2ae-324">Name of the action/page</span></span>|
+| <span data-ttu-id="0d2ae-325">filterContext</span><span class="sxs-lookup"><span data-stu-id="0d2ae-325">filterContext</span></span>|<span data-ttu-id="0d2ae-326">DataFilter</span><span class="sxs-lookup"><span data-stu-id="0d2ae-326">DataFilter</span></span>||
+| <span data-ttu-id="0d2ae-327">excludeContext</span><span class="sxs-lookup"><span data-stu-id="0d2ae-327">excludeContext</span></span>|<span data-ttu-id="0d2ae-328">ブール値</span><span class="sxs-lookup"><span data-stu-id="0d2ae-328">boolean</span></span>||
+| <span data-ttu-id="0d2ae-329">filterLocalOnly?</span><span class="sxs-lookup"><span data-stu-id="0d2ae-329">filterLocalOnly?</span></span>|<span data-ttu-id="0d2ae-330">ブール値</span><span class="sxs-lookup"><span data-stu-id="0d2ae-330">boolean</span></span>||
+
+#### <a name="returns-navigationargsview-model-ipage-inavigationargsmd"></a><span data-ttu-id="0d2ae-331">[NavigationArgs](view-model-ipage-inavigationargs.md) を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-331">Returns [NavigationArgs](view-model-ipage-inavigationargs.md)</span></span>
+
+
+
+### <a name="hidenavigation"></a><span data-ttu-id="0d2ae-332">hideNavigation</span><span class="sxs-lookup"><span data-stu-id="0d2ae-332">hideNavigation</span></span>
+
+
+<span data-ttu-id="0d2ae-333">hideNavigation(pageNamesToHide: string [ ]): any</span><span class="sxs-lookup"><span data-stu-id="0d2ae-333">hideNavigation(pageNamesToHide: string [ ]): any</span></span>
+
+<span data-ttu-id="0d2ae-334">既定のランディング ページから指定されたページを非表示にします。</span><span class="sxs-lookup"><span data-stu-id="0d2ae-334">Hides the specified page(s) from the default landing page.</span></span>
+<span data-ttu-id="0d2ae-335">例 :</span><span class="sxs-lookup"><span data-stu-id="0d2ae-335">Example:</span></span>
+
+```javascript
+metadataService.hideNavigation('Select-a-customer', 'Select-a-vehicle');
+```
+
+
+#### <a name="parameters"></a><span data-ttu-id="0d2ae-336">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d2ae-336">Parameters</span></span>
+
+| <span data-ttu-id="0d2ae-337">氏名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-337">Name</span></span> | <span data-ttu-id="0d2ae-338">種類</span><span class="sxs-lookup"><span data-stu-id="0d2ae-338">Type</span></span> | <span data-ttu-id="0d2ae-339">説明</span><span class="sxs-lookup"><span data-stu-id="0d2ae-339">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="0d2ae-340">pageNamesToHide</span><span class="sxs-lookup"><span data-stu-id="0d2ae-340">pageNamesToHide</span></span>|<span data-ttu-id="0d2ae-341">string [ ]</span><span class="sxs-lookup"><span data-stu-id="0d2ae-341">string [ ]</span></span>|<span data-ttu-id="0d2ae-342">ページ名</span><span class="sxs-lookup"><span data-stu-id="0d2ae-342">Page name(s)</span></span>|
+
+#### <a name="returns-any"></a><span data-ttu-id="0d2ae-343">any を返します</span><span class="sxs-lookup"><span data-stu-id="0d2ae-343">Returns any</span></span>
+

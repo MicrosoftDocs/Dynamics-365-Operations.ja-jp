@@ -44,7 +44,7 @@ ms.locfileid: "1548557"
 
 <span data-ttu-id="e2f5f-118">POS でタスク記録を有効化するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e2f5f-118">To enable task recording in POS, follow these steps.</span></span>
 
-1. <span data-ttu-id="e2f5f-119"> *\*小売** &gt; *\*チャネル設定** &gt; *\*POS 設定** &gt; *\*レジスター** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2f5f-119">Click **Retail** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.</span></span>
+1. <span data-ttu-id="e2f5f-119"> **小売** &gt; **チャネル設定** &gt; **POS 設定** &gt; **レジスター** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2f5f-119">Click **Retail** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.</span></span>
 2. <span data-ttu-id="e2f5f-120">レジスターをクリックしてタスクの記録を有効にします。</span><span class="sxs-lookup"><span data-stu-id="e2f5f-120">Click the register to enable task recording on.</span></span>
 3. <span data-ttu-id="e2f5f-121">**登録** タブの **全般** クイック タブで、**タスク記録の有効化** オプションを **はい** に設定します。</span><span class="sxs-lookup"><span data-stu-id="e2f5f-121">On the **Register** tab, on the **General** FastTab, set the **Enable task recording** option to **Yes**.</span></span>
 4. <span data-ttu-id="e2f5f-122">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e2f5f-122">Click **Save**.</span></span>

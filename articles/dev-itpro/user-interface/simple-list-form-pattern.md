@@ -1,216 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="simple-list-form-pattern.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>simple-list-form-pattern.84a58c.24b1065af3910f79ae6864e95d9175f72ecb2240.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>24b1065af3910f79ae6864e95d9175f72ecb2240</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\user-interface\simple-list-form-pattern.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Simple List form pattern</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">簡易リストのフォーム パターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This article provides information about the Simple List form pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、簡易リストのフォームのパターンに関する情報を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>This pattern is used to maintain data for simple entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このパターンは、単純なエンティティのデータを維持するために使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Simple List form pattern</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">簡易リストのフォーム パターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This article provides information about the Simple List form pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、簡易リストのフォームのパターンに関する情報を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>This pattern is used to maintain data for simple entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このパターンは、単純なエンティティのデータを維持するために使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">用途</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>The Simple List pattern is used to maintain data for simple entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">簡易リスト パターンは簡易エンティティのデータを管理するために使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Simple entities are entities that have six or fewer fields and no parent/child relationships.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">簡易エンティティは、フィールドが 6 つ以下で、親/子関係のないエンティティです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>There are some exceptions where entities that have up to 15 fields are still considered simple entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">依然として最大 15 フィールドのエンティティが単純なエンティティと見なされている場合、いくつかの例外があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Wireframe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワイヤーフレーム</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Wireframe<ept id="p1">](./media/simplelist1-1024x578.png)](./media/simplelist1.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>ワイヤーフレーム<ept id="p1">](./media/simplelist1-1024x578.png)](./media/simplelist1.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Pattern changes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パターンの変更</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>The top ActionPane strip control has been converted to a standard ActionPane.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">上部の ActionPane ストリップ コントロールが標準の ActionPane に変換されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">**</bpt>New<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> buttons are provided by the framework.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新規<ept id="p1">**</ept>、<bpt id="p2">**</bpt>削除<ept id="p2">**</ept>、および<bpt id="p3">**</bpt>編集<ept id="p3">**</ept>ボタンは、フレームワークによって提供されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>View mode is used by default.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示モードが既定で使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>A Quick Filter has been added above the grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッドの上にクイック フィルターが追加されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>When the form is used as a dependent form, the parent form record context is automatically shown above the form caption.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームが依存関係があるフォームとして使用されているとき、親フォームのレコード コンテキストがフォーム キャプションの上に自動的に表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>The page title group for dependent form usage was removed, because it will be provided by the framework.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">依存関係があるフォームを使用するためのページ タイトル グループは、フレームワークを提供するため削除されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The pattern allows for multiple selections in the grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このパターンでは、グリッド内での複数選択が可能です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Model</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>High-level structure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高レベル構造体</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Design</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>ActionPane (ActionPane)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ActionPane (ActionPane)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Custom Filter (Group)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム フィルター (グループ)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Quick Filter (Quick Filter)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クイック フィルター (クイック フィルター)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source><bpt id="p1">*</bpt>OtherFilters ($Field) <ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>OtherFilters ($ フィールド)<ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>TabularGrid (Grid)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TabularGrid (グリッド)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">*</bpt>Footer (Group) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>フッター (グループ) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Core components</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コア コンポーネント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Apply the SimpleList pattern on <bpt id="p1">**</bpt>Form.Design<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Form.Design<ept id="p1">**</ept> に SimpleList パターンを適用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Address BP Warnings:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BP 警告に対処します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source><bpt id="p1">**</bpt>Design.Caption<ept id="p1">**</ept> isn't empty.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Design.Caption<ept id="p1">**</ept> は空ではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source><bpt id="p1">**</bpt>Design.DataSource<ept id="p1">**</ept> isn't empty.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Design.DataSource<ept id="p1">**</ept> は空ではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">**</bpt>Grid.Datasource<ept id="p1">**</ept> must be set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Grid.Datasource<ept id="p1">**</ept> を設定する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>The form must be referenced by at least one menu item.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフォームは少なくとも 1 つのメニュー項目で参照される必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source><bpt id="p1">**</bpt>Design.Datasource<ept id="p1">**</ept> is set the same as <bpt id="p2">**</bpt>Grid.Datasource<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Design.Datasource<ept id="p1">**</ept> は <bpt id="p2">**</bpt>Grid.Datasource<ept id="p2">**</ept> と同じに設定されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>The primary key field of the primary data source’s table has <bpt id="p1">**</bpt>IgnoreEDTRelation<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プライマリ データ ソースのテーブルの主キー フィールドには、<bpt id="p1">**</bpt>IgnoreEDTRelation<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>はい<ept id="p2">**</ept> が含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>The grid must not contain more than 15 fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッドには 15 個以上のフィールドが含めることはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Commonly used subpatterns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般的に使用されるサブパターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source><bpt id="p1">[</bpt>Custom Filter Group<ept id="p1">](custom-filter-group-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>カスタム フィルター グループ<ept id="p1">](custom-filter-group-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>UX guidelines</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UX ガイドライン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Open the form in the browser, and walk through these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザーでフォームを開いて、これらの手順を確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source><bpt id="p1">**</bpt>Standard form guidelines:<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>標準フォーム ガイドライン:<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Standard form guidelines have been consolidated into the Microsoft Dynamics AX <bpt id="p1">[</bpt>General Form Guidelines<ept id="p1">](general-form-guidelines.md)</ept> document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準フォーム ガイドラインは、Microsoft Dynamics AX <bpt id="p1">[</bpt>全般的なガイドライン<ept id="p1">](general-form-guidelines.md)</ept> ドキュメントに統合されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source><bpt id="p1">**</bpt>Simple list guidelines:<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>簡易リスト ガイドライン:<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>By default, the Quick Filter should use the name or description column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、クイック フィルターは名前または説明列を使用する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The list can display up to 15 columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストには最大 15 の列を表示できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This guideline has been relaxed from AX 2012.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> このガイドラインは AX 2012 から緩和されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>There should not be any duplicate <bpt id="p1">**</bpt>New<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> buttons.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新規<ept id="p1">**</ept> ボタンまたは <bpt id="p2">**</bpt>削除<ept id="p2">**</ept> ボタンは重複してはいけません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>The page title should be in a plural form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページ タイトルは、複数フォームの形式にする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>When there is no data, the grid should not automatically add a new record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データが存在しないとき、グリッドは新しいレコードを自動的に追加できません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Form: <bpt id="p1">**</bpt>CustGroup<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: <bpt id="p1">**</bpt>CustGroup<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Simple List example<ept id="p1">](./media/simplelist2-1024x524.png)](./media/simplelist2.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>簡易リストの例<ept id="p1">](./media/simplelist2-1024x524.png)](./media/simplelist2.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> We plan to extend the grid lines to the right and bottom edges in a future client deliverable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> 将来のクライアントの成果物では、グリッド線を右端と下端に延長する予定です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Appendix</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">付録</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Frequently asked questions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">よく寄せられる質問</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>This section will have answers to frequently asked questions that are related to this guideline/pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Open issues</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">未処理の問題</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>None at this time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この時点ではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>AX 2012 content</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 コンテンツ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX 2012 example<ept id="p1">](./media/simplelist3.png)](./media/simplelist3.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX 2012 の例<ept id="p1">](./media/simplelist3.png)](./media/simplelist3.png)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: 簡易リストのフォーム パターン
+description: この記事では、簡易リストのフォームのパターンに関する情報を提供します。 このパターンは、単純なエンティティのデータを維持するために使用されます。
+author: jasongre
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 16261
+ms.assetid: 47f02822-51d5-4db2-8d99-2706548301e5
+ms.search.region: Global
+ms.author: jasongre
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 24b1065af3910f79ae6864e95d9175f72ecb2240
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1569691"
+---
+# <a name="simple-list-form-pattern"></a><span data-ttu-id="595e5-104">簡易リストのフォーム パターン</span><span class="sxs-lookup"><span data-stu-id="595e5-104">Simple List form pattern</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="595e5-105">この記事では、簡易リストのフォームのパターンに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="595e5-105">This article provides information about the Simple List form pattern.</span></span> <span data-ttu-id="595e5-106">このパターンは、単純なエンティティのデータを維持するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="595e5-106">This pattern is used to maintain data for simple entities.</span></span>
+
+<a name="usage"></a><span data-ttu-id="595e5-107">用途</span><span class="sxs-lookup"><span data-stu-id="595e5-107">Usage</span></span>
+-----
+
+<span data-ttu-id="595e5-108">簡易リスト パターンは簡易エンティティのデータを管理するために使用します。</span><span class="sxs-lookup"><span data-stu-id="595e5-108">The Simple List pattern is used to maintain data for simple entities.</span></span> <span data-ttu-id="595e5-109">簡易エンティティは、フィールドが 6 つ以下で、親/子関係のないエンティティです。</span><span class="sxs-lookup"><span data-stu-id="595e5-109">Simple entities are entities that have six or fewer fields and no parent/child relationships.</span></span> <span data-ttu-id="595e5-110">依然として最大 15 フィールドのエンティティが単純なエンティティと見なされている場合、いくつかの例外があります。</span><span class="sxs-lookup"><span data-stu-id="595e5-110">There are some exceptions where entities that have up to 15 fields are still considered simple entities.</span></span>
+
+## <a name="wireframe"></a><span data-ttu-id="595e5-111">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="595e5-111">Wireframe</span></span>
+
+<span data-ttu-id="595e5-112">[![ワイヤーフレーム](./media/simplelist1-1024x578.png)](./media/simplelist1.png)</span><span class="sxs-lookup"><span data-stu-id="595e5-112">[![Wireframe](./media/simplelist1-1024x578.png)](./media/simplelist1.png)</span></span>
+
+## <a name="pattern-changes"></a><span data-ttu-id="595e5-113">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="595e5-113">Pattern changes</span></span>
+<span data-ttu-id="595e5-114">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</span><span class="sxs-lookup"><span data-stu-id="595e5-114">Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</span></span>
+
+-   <span data-ttu-id="595e5-115">上部の ActionPane ストリップ コントロールが標準の ActionPane に変換されました。</span><span class="sxs-lookup"><span data-stu-id="595e5-115">The top ActionPane strip control has been converted to a standard ActionPane.</span></span>
+-   <span data-ttu-id="595e5-116">**新規**、**削除**、および**編集**ボタンは、フレームワークによって提供されます。</span><span class="sxs-lookup"><span data-stu-id="595e5-116">**New**, **Delete**, and **Edit** buttons are provided by the framework.</span></span>
+-   <span data-ttu-id="595e5-117">表示モードが既定で使用されます。</span><span class="sxs-lookup"><span data-stu-id="595e5-117">View mode is used by default.</span></span>
+-   <span data-ttu-id="595e5-118">グリッドの上にクイック フィルターが追加されました。</span><span class="sxs-lookup"><span data-stu-id="595e5-118">A Quick Filter has been added above the grid.</span></span>
+-   <span data-ttu-id="595e5-119">フォームが依存関係があるフォームとして使用されているとき、親フォームのレコード コンテキストがフォーム キャプションの上に自動的に表示されます。</span><span class="sxs-lookup"><span data-stu-id="595e5-119">When the form is used as a dependent form, the parent form record context is automatically shown above the form caption.</span></span>
+    -   <span data-ttu-id="595e5-120">依存関係があるフォームを使用するためのページ タイトル グループは、フレームワークを提供するため削除されました。</span><span class="sxs-lookup"><span data-stu-id="595e5-120">The page title group for dependent form usage was removed, because it will be provided by the framework.</span></span>
+-   <span data-ttu-id="595e5-121">このパターンでは、グリッド内での複数選択が可能です。</span><span class="sxs-lookup"><span data-stu-id="595e5-121">The pattern allows for multiple selections in the grid.</span></span>
+
+## <a name="model"></a><span data-ttu-id="595e5-122">モデル</span><span class="sxs-lookup"><span data-stu-id="595e5-122">Model</span></span>
+### <a name="high-level-structure"></a><span data-ttu-id="595e5-123">高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="595e5-123">High-level structure</span></span>
+
+- <span data-ttu-id="595e5-124">デザイン</span><span class="sxs-lookup"><span data-stu-id="595e5-124">Design</span></span>
+
+    - <span data-ttu-id="595e5-125">ActionPane (ActionPane)</span><span class="sxs-lookup"><span data-stu-id="595e5-125">ActionPane (ActionPane)</span></span>
+    - <span data-ttu-id="595e5-126">カスタム フィルター (グループ)</span><span class="sxs-lookup"><span data-stu-id="595e5-126">Custom Filter (Group)</span></span>
+
+        - <span data-ttu-id="595e5-127">クイック フィルター (クイック フィルター)</span><span class="sxs-lookup"><span data-stu-id="595e5-127">Quick Filter (Quick Filter)</span></span>
+        - <span data-ttu-id="595e5-128">*OtherFilters ($ フィールド)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="595e5-128">*OtherFilters ($Field) \[0..N\]*</span></span>
+
+    - <span data-ttu-id="595e5-129">TabularGrid (グリッド)</span><span class="sxs-lookup"><span data-stu-id="595e5-129">TabularGrid (Grid)</span></span>
+    - <span data-ttu-id="595e5-130">*フッター (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="595e5-130">*Footer (Group) \[Optional\]*</span></span>
+
+### <a name="core-components"></a><span data-ttu-id="595e5-131">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="595e5-131">Core components</span></span>
+
+1.  <span data-ttu-id="595e5-132">**Form.Design** に SimpleList パターンを適用します。</span><span class="sxs-lookup"><span data-stu-id="595e5-132">Apply the SimpleList pattern on **Form.Design**.</span></span>
+2.  <span data-ttu-id="595e5-133">BP 警告に対処します。</span><span class="sxs-lookup"><span data-stu-id="595e5-133">Address BP Warnings:</span></span>
+    1.  <span data-ttu-id="595e5-134">**Design.Caption** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="595e5-134">**Design.Caption** isn't empty.</span></span>
+    2.  <span data-ttu-id="595e5-135">**Design.DataSource** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="595e5-135">**Design.DataSource** isn't empty.</span></span>
+    3.  <span data-ttu-id="595e5-136">**Grid.Datasource** を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="595e5-136">**Grid.Datasource** must be set.</span></span>
+    4.  <span data-ttu-id="595e5-137">このフォームは少なくとも 1 つのメニュー項目で参照される必要があります。</span><span class="sxs-lookup"><span data-stu-id="595e5-137">The form must be referenced by at least one menu item.</span></span>
+    5.  <span data-ttu-id="595e5-138">**Design.Datasource** は **Grid.Datasource** と同じに設定されます。</span><span class="sxs-lookup"><span data-stu-id="595e5-138">**Design.Datasource** is set the same as **Grid.Datasource**.</span></span>
+    6.  <span data-ttu-id="595e5-139">プライマリ データ ソースのテーブルの主キー フィールドには、**IgnoreEDTRelation**=**はい** が含まれています。</span><span class="sxs-lookup"><span data-stu-id="595e5-139">The primary key field of the primary data source’s table has **IgnoreEDTRelation**=**Yes**.</span></span>
+    7.  <span data-ttu-id="595e5-140">グリッドには 15 個以上のフィールドが含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="595e5-140">The grid must not contain more than 15 fields.</span></span>
+
+### <a name="commonly-used-subpatterns"></a><span data-ttu-id="595e5-141">一般的に使用されるサブパターン</span><span class="sxs-lookup"><span data-stu-id="595e5-141">Commonly used subpatterns</span></span>
+
+-   [<span data-ttu-id="595e5-142">カスタム フィルター グループ</span><span class="sxs-lookup"><span data-stu-id="595e5-142">Custom Filter Group</span></span>](custom-filter-group-subpattern.md)
+
+## <a name="ux-guidelines"></a><span data-ttu-id="595e5-143">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="595e5-143">UX guidelines</span></span>
+<span data-ttu-id="595e5-144">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="595e5-144">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="595e5-145">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="595e5-145">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="595e5-146">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="595e5-146">Open the form in the browser, and walk through these steps.</span></span> 
+
+<span data-ttu-id="595e5-147">**標準フォーム ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="595e5-147">**Standard form guidelines:**</span></span>
+
+-   <span data-ttu-id="595e5-148">標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="595e5-148">Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.</span></span>
+
+<span data-ttu-id="595e5-149">**簡易リスト ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="595e5-149">**Simple list guidelines:**</span></span>
+
+-   <span data-ttu-id="595e5-150">既定では、クイック フィルターは名前または説明列を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="595e5-150">By default, the Quick Filter should use the name or description column.</span></span>
+-   <span data-ttu-id="595e5-151">リストには最大 15 の列を表示できます。</span><span class="sxs-lookup"><span data-stu-id="595e5-151">The list can display up to 15 columns.</span></span>
+
+    <span data-ttu-id="595e5-152">**注記:** このガイドラインは AX 2012 から緩和されています。</span><span class="sxs-lookup"><span data-stu-id="595e5-152">**Note:** This guideline has been relaxed from AX 2012.</span></span>
+
+-   <span data-ttu-id="595e5-153">**新規** ボタンまたは **削除** ボタンは重複してはいけません。</span><span class="sxs-lookup"><span data-stu-id="595e5-153">There should not be any duplicate **New** or **Delete** buttons.</span></span>
+-   <span data-ttu-id="595e5-154">ページ タイトルは、複数フォームの形式にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="595e5-154">The page title should be in a plural form.</span></span>
+-   <span data-ttu-id="595e5-155">データが存在しないとき、グリッドは新しいレコードを自動的に追加できません。</span><span class="sxs-lookup"><span data-stu-id="595e5-155">When there is no data, the grid should not automatically add a new record.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="595e5-156">例</span><span class="sxs-lookup"><span data-stu-id="595e5-156">Examples</span></span>
+<span data-ttu-id="595e5-157">フォーム: **CustGroup**</span><span class="sxs-lookup"><span data-stu-id="595e5-157">Form: **CustGroup**</span></span> 
+
+<span data-ttu-id="595e5-158">[![簡易リストの例](./media/simplelist2-1024x524.png)](./media/simplelist2.png)</span><span class="sxs-lookup"><span data-stu-id="595e5-158">[![Simple List example](./media/simplelist2-1024x524.png)](./media/simplelist2.png)</span></span> 
+
+<span data-ttu-id="595e5-159">**注記:** 将来のクライアントの成果物では、グリッド線を右端と下端に延長する予定です。</span><span class="sxs-lookup"><span data-stu-id="595e5-159">**Note:** We plan to extend the grid lines to the right and bottom edges in a future client deliverable.</span></span>
+
+## <a name="appendix"></a><span data-ttu-id="595e5-160">付録</span><span class="sxs-lookup"><span data-stu-id="595e5-160">Appendix</span></span>
+### <a name="frequently-asked-questions"></a><span data-ttu-id="595e5-161">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="595e5-161">Frequently asked questions</span></span>
+
+<span data-ttu-id="595e5-162">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="595e5-162">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
+
+### <a name="open-issues"></a><span data-ttu-id="595e5-163">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="595e5-163">Open issues</span></span>
+
+<span data-ttu-id="595e5-164">この時点ではありません。</span><span class="sxs-lookup"><span data-stu-id="595e5-164">None at this time.</span></span>
+
+### <a name="ax-2012-content"></a><span data-ttu-id="595e5-165">AX 2012 コンテンツ</span><span class="sxs-lookup"><span data-stu-id="595e5-165">AX 2012 content</span></span>
+
+<span data-ttu-id="595e5-166">[![AX 2012 の例](./media/simplelist3.png)](./media/simplelist3.png)</span><span class="sxs-lookup"><span data-stu-id="595e5-166">[![AX 2012 example](./media/simplelist3.png)](./media/simplelist3.png)</span></span>

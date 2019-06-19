@@ -1,576 +1,309 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="pos-handler.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>pos-handler.96ac3b.88fc67499f14dd34cc23b47b837fe875821e4d09.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>88fc67499f14dd34cc23b47b837fe875821e4d09</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>33e5f728a70d0546975f91010148dc4c57bf3af3</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/24/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\dev-itpro\pos-handler.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Override POS request handler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS 要求ハンドラーのオーバーライド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>Real-time service enables retail clients to interact with retail functionality in real time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リアルタイム サービスは、Retail クライアントがリアルタイムで小売機能を操作できるようします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Override POS request handler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS 要求ハンドラーのオーバーライド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This topic explains how to override POS request handler.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、POS 要求ハンドラーをオーバーライドする方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>We've introduced an extension pattern for overriding the POS business logic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS ビジネス ロジックをオーバーライドするための拡張パターンを導入しました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>If you have a scenario where you want to modify/add some business logic to the core POS business flow, then you can follow this pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コア POS ビジネス フローにビジネス ロジックを変更/追加するシナリオがある場合、このパターンに従うことができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>For example, when you sell a serial item, POS will display a dialog box where you can enter the serial number for that item after the scan.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、シリアル品目を販売する場合、スキャン後、POS にはその品目のシリアル番号を入力するダイアログ ボックスが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>If you want to automate the serial number process by entering the serial number through code, then you can override this serial number request handler and use custom business logic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コードを使用してシリアル番号を入力することでシリアル番号プロセスを自動化する場合、このシリアル番号要求ハンドラーをオーバーライドしてカスタム ビジネス ロジックを使用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Most of the business logic in POS is implemented in request handler, however, you can override the relevant request handler and return the response according to your business flow.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS のビジネス ロジックのほとんどは、要求ハンドラーで実装されます。ただし、関連する要求ハンドラーをオーバーライドして、ビジネス フローに従って応答を返すことができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Not all request handler logic is exposed for customization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての要求ハンドラー ロジックがカスタマイズ用に公開されるわけではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>If you want to customize any business logic and if that request handler is not overridable, then create a support ticket or log a request in the LCS extensibility tool.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビジネス ロジックをカスタマイズする場合で、その要求ハンドラーがオーバーライド可能でない場合、サポート チケットを作成するか、LCS 機能拡張ツールでリクエストを登録します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>** POS request handler logic exposed for overriding **</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">**オーバーライドするために公開される POS 要求ハンドラー ロジック**</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>This is list is based on <bpt id="p1">[</bpt>Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5.<ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&amp;bugId=235124&amp;qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、<bpt id="p1">[</bpt>Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.5<ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&amp;bugId=235124&amp;qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1)</ept> の一覧に基づいています</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>In each monthly update we will be adding additional extension points, so check the Pos.api.d.ts file in the Retail SDK for the full list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">毎月の更新プログラムのたびに、拡張ポイントが追加されるため、完全な一覧については Retail SDK で Pos.api.d.ts ファイルをチェックしてください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">**</bpt>Cart extension handlers<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>買い物カゴ拡張ハンドラー<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">**</bpt>Request name<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>要求名<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>説明<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>AddTenderLineToCartClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AddTenderLineToCartClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>This handler is executed when you add tender (payment) line to cart.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このハンドラーは、カートに支払/入金方法 (支払) 明細行を追加するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>GetKeyedInPriceClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetKeyedInPriceClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>This handler is executed when you add an item that has a configuration key in price during sale.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このハンドラーは、販売時に、価格内にコンフィギュレーション キーを持つ品目を追加するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>GetPickupDateClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetPickupDateClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Executed when you select a pickup date during a customer order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客注文時に集荷日を選択するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>GetShippingDateClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetShippingDateClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Executed when you select a shipping date during a customer order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客注文時に出荷日を選択するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>ShowChangeDueClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShowChangeDueClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Executed when the change due dialog box is shown at the end of transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの終了時に期日の変更ダイアログ ボックスが表示されるときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>GetReceiptEmailAddressClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetReceiptEmailAddressClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Executed when you get a receipt email address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">受信者のメール アドレスを取得するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>DepositOverrideOperationRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DepositOverrideOperationRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Executed when you override a deposit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">預金をオーバーライドするときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>GetShippingChargeClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetShippingChargeClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Executed when get shipping charge workflow initiated during customer order flow.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客注文フロー中に開始された出荷費用ワークフローを取得するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source><bpt id="p1">**</bpt>Payment extension handler:<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>支払拡張機能ハンドラー<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">**</bpt>Request name<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>要求名<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>説明<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>GetGiftCardByIdServiceRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetGiftCardByIdServiceRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>This handler is executed when you receive the gift card ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このハンドラーは、ギフト カード ID を受け取ると実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>GetPaymentCardTypeByBinRangeClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetPaymentCardTypeByBinRangeClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>This handler is executed when POS gets the card type, such as Visa or Master Card.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このハンドラーは、Visa や Master Card などのカード タイプを POS が取得するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>This is based on the HQ configuration during the card tender line processing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、カード支払/入金の明細行の処理中の HQ コンフィギュレーションに基づきます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">**</bpt>Peripherals request handler<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>周辺機器要求ハンドラー<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Request name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>CardPaymentAuthorizePaymentRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CardPaymentAuthorizePaymentRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Executed when a card payment is authorized.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カード支払が承認されたときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>CardPaymentCapturePaymentRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CardPaymentCapturePaymentRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Executed when a card payment is captured.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カード支払が取得されたときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>CardPaymentExecuteTaskRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CardPaymentExecuteTaskRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Used to execute any custom task.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム タスクを実行するために使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>This handler is mainly for extensions for custom functionality with payment connector, which is not supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このハンドラーは、主に、サポートされていない支払コネクタを使用するカスタム機能の拡張機能用です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>CardPaymentRefundPaymentRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CardPaymentRefundPaymentRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Executed when a card payment is refunded.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カード支払が払戻しされたときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>CardPaymentVoidPaymentRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CardPaymentVoidPaymentRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Executed when a card payment is voided.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カード支払が無効化されたときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>CardPaymentBeginTransactionRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CardPaymentBeginTransactionRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Executed when a card payment is initiated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カード支払が開始されたときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>CardPaymentEndTransactionRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CardPaymentEndTransactionRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Executed when a card payment is ended.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カード支払が終了したときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>CardPaymentEnquireGiftCardBalancePeripheralRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CardPaymentEnquireGiftCardBalancePeripheralRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Executed when a gift card balance inquiry is made.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ギフト カードの残高照会が行われるときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>PaymentTerminalAuthorizePaymentActivityRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalAuthorizePaymentActivityRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Executed when a card payment is authorized using a payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払ターミナル/デバイスを使用してカード支払が承認されたときに実行</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>terminal/device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>PaymentTerminalAuthorizePaymentRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalAuthorizePaymentRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Executed when a card payment is authorized using a payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払ターミナル/デバイスを使用してカード支払が承認されたときに実行</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>terminal/device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>PaymentTerminalEnquireGiftCardBalancePeripheralRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalEnquireGiftCardBalancePeripheralRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Executed when a gift card balance inquiry is made using a payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払ターミナル/デバイスを使用してギフト カードの残高照会が行われるときに実行</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>terminal/device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>PaymentTerminalExecuteTaskRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalExecuteTaskRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Used to execute any custom task.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム タスクを実行するために使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>This handler is mainly for extensions for custom functionality with payment terminal/device, which is not supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このハンドラーは、主に、サポートされていない支払ターミナル/デバイスを使用するカスタム機能の拡張機能用です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>PaymentTerminalRefundPaymentRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalRefundPaymentRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Executed when a card payment is refunded using a payment terminal/device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払ターミナル/デバイスを使用してカード支払が払戻しされたときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>PaymentTerminalUpdateLinesRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalUpdateLinesRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Executed when POS sends line item details to a payment device for display purposes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS が表示目的で明細行品目の詳細を支払デバイスに送信するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>PaymentTerminalVoidPaymentRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalVoidPaymentRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Executed when a card payment is voided using a payment terminal/device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払ターミナル/デバイスを使用してカード支払が無効化されたときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>PaymentTerminalBeginTransactionRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalBeginTransactionRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Executed when a card payment is initiated using a payment terminal/device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払ターミナル/デバイスを使用してカード支払が開始されたときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>PaymentTerminalCancelOperationRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalCancelOperationRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Executed when a card payment is cancelled using a payment terminal/device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払ターミナル/デバイスを使用してカード支払がキャンセルされたときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>PaymentTerminalEndTransactionRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalEndTransactionRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Executed when a card payment is ended using a payment terminal/device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払ターミナル/デバイスを使用してカード支払が終了したときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>CashDrawerOpenRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CashDrawerOpenRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Executed when a cash drawer open request is initiated by POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャッシュ ドロワー オープン要求が POS によって開始されるときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>PaymentTerminalActivateGiftCardPeripheralRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalActivateGiftCardPeripheralRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Executed when activate gift card request is initiated by POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS により開始されたギフト カード要求をアクティブにしたときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>PaymentTerminalAddBalanceToGiftCardPeripheralRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentTerminalAddBalanceToGiftCardPeripheralRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Executed when add balance to gift card request is initiated by POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS により開始されたギフト カード要求に残高を追加したときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source><bpt id="p1">**</bpt>Scan request handler<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>スキャン要求ハンドラー<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Request name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>GetScanResultClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetScanResultClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Executed when you scan or key in a POS transaction screen Numpad.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スキャンするか、POS トランザクション画面テンキーで入力するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source><bpt id="p1">**</bpt>Store fulfillment request handler<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>店舗フルフィルメント要求ハンドラー<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Request name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>PrintPackingSlipClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PrintPackingSlipClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Executed when you print a packing slip from the store fulfillment view.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">店舗フルフィルメント ビューから梱包明細を印刷するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>MarkAsPickedServiceRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MarkAsPickedServiceRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Executed when you mark a sales line as picked from the store fulfillment view.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">店舗フルフィルメント ビューからピッキングされた販売注文明細行をマークするときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source><bpt id="p1">**</bpt>Store operations request handler<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>店舗運営要求ハンドラー<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Request name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>CreateTenderRemovalTransactionClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CreateTenderRemovalTransactionClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Executed when you do a tender removal operation in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS で支払/入金の削除操作を行うときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>CreateFloatEntryTransactionClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CreateFloatEntryTransactionClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Executed when you do a float entry operation in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS で釣銭入力操作を行うときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>SelectZipCodeInfoClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SelectZipCodeInfoClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Executed when you key in zip code in address add/edit view in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS で住所の追加/編集ビューで郵便番号を入力するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>CreateStartingAmountTransactionClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CreateStartingAmountTransactionClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Executed when you do a start amount declaration in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS で開始金額申告を行うときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>LoyaltyCardPointsBalanceOperationRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LoyaltyCardPointsBalanceOperationRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Executed when you do a loyalty card balance operation in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS でロイヤルティ カード残高操作を行うときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>GetReportParametersClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetReportParametersClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Executed when you do a report parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポート パラメーターを行うときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>If your POS report need input parameter this dialog will get executed to capture the parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS レポートに入力パラメーターが必要な場合は、このダイアログが実行されてパラメーターを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source><bpt id="p1">**</bpt>Tender counting request handler<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>支払/入金計算要求ハンドラー<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Request name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>CreateSafeDropTransactionClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CreateSafeDropTransactionClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Executed when you do a safe drop operation in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS で金庫保管操作を行うときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>GetTenderDetailsClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetTenderDetailsClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Executed when you get tender declaration details in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS で支払/入金申告の詳細を取得するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>CreateBankDropTransactionClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CreateBankDropTransactionClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Executed when you do a bank drop operation in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS で銀行入金操作を行うときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>CreateTenderDeclarationTransactionClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CreateTenderDeclarationTransactionClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Executed when you do a tender declaration operation in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS で支払/入金申告操作を行うときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>GetCountedTenderDetailAmountClientRequestHandler</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">GetCountedTenderDetailAmountClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Executed when you do a tendercount detail in POS.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">POS で入札件数の詳細を行うときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>CreateBankDropTransactionClientRequestHandler</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">CreateBankDropTransactionClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Executed when you do a bank drop operation in POS.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">POS で銀行入金操作を行うときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source><bpt id="p1">**</bpt>Sales orders request handlers<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>販売注文の要求ハンドラー<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Request name</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">要求名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>GetGiftReceiptsClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetGiftReceiptsClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>Executed when you print a gift receipt in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS でギフト レシートを印刷するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>SelectCustomerOrderTypeClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SelectCustomerOrderTypeClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Executed when you get a dialog box with options to choose between customer order or quote.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客注文または見積のどちらかを選択するオプションがあるダイアログ ボックスを取得するときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>GetCancellationChargeClientRequestHandler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetCancellationChargeClientRequestHandler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Executed when you get a dialog box to enter the cancellation shipping charge during the customer order workflow.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客注文ワークフロー中にキャンセル出荷費用を入力するダイアログ ボックスが表示されたときに実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source><bpt id="p1">**</bpt>How to override a handler in POS<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>POS でハンドラーをオーバーライドする方法<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>If you want to override any of the above POS request handler logic, you to need to use the following steps:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">上記の POS 要求ハンドラー ロジックのいずれかをオーバーライドすると、次の手順を使用する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Create a new class and extend it from the corresponding handler class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいクラスを作成し、対応するハンドラー クラスから拡張します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>For example, if you are overriding GetSerialNumberClientRequestHandler, then extend your class from GetSerialNumberClientRequestHandler.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、GetSerialNumberClientRequestHandler をオーバーライドする場合、クラスを GetSerialNumberClientRequestHandler から拡張します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>Implement the executeAsync method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">executeAsync メソッドを実装します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Either call the default handler or do your custom logic inside the executeAsync method and return the response.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定のハンドラーを呼び出すか、executeAsync メソッド内でカスタム ロジックを実行して、応答を返します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source><bpt id="p1">**</bpt>Step by step instructions<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ステップ バイ ステップの手順<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>The following example shows how to override the GetSerialNumberClientRequestHandler to automate the serial number entry in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、GetSerialNumberClientRequestHandler をオーバーライドして POS でシリアル番号の入力を自動化する方法を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>By default, POS will display a dialog box to enter the serial number if the item is configured to ask for serial number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、POS には、シリアル番号を要求するよう品目がコンフィギュレーションされている場合は、シリアル番号を入力するダイアログ ボックスが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>We want to avoid showing this dialog box and enter serial number through code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このダイアログ ボックスが表示されないようにし、コードを使用してシリアル番号を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Open Visual Studio 2015 in administrator mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理者モードで Visual Studio 2015 を開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Open ModernPOS solution from …<ph id="ph1">\\</ph>RetailSDK<ph id="ph2">\\</ph>POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ModernPOS ソリューションを …<ph id="ph1">\\</ph>RetailSDK<ph id="ph2">\\</ph>POS から開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Under the POS.Extensions project, create a new folder called POSRequestHandlerExtension.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS.Extensions プロジェクトで、POSRequestHandlerExtension という名前の新しいフォルダーを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>Under the POSRequestHandlerExtension folder, create new folder called Handlers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POSRequestHandlerExtension フォルダーに、Handlers という名前の新しいフォルダーを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>In the Handlers folder, add a new .ts (typescript) file and name it GetSerialNumberClientRequestHandlerExt.ts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Handlers フォルダーに、新しい .ts (typescript) ファイルを追加し、GetSerialNumberClientRequestHandlerExt.ts と名前を付けます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Add the following import statement to import the relevant entities and context in the GetSerialNumberClientRequestHandlerExt.ts file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の import ステートメントを追加して、GetSerialNumberClientRequestHandlerExt.ts ファイルに関連するエンティティおよびコンテキストをインポートします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>In the GetSerialNumberClientRequestHandlerExt.ts file, create a new class called GetSerialNumberClientRequestHandlerExtend and extend it from GetSerialNumberClientRequestHandler.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetSerialNumberClientRequestHandlerExt.ts ファイルで、GetSerialNumberClientRequestHandlerExtend という新しいクラスを作成し、GetSerialNumberClientRequestHandler から拡張します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler { }</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler { }</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Implement the executeAsync method inside the GetSerialNumberClientRequestHandlerExt class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetSerialNumberClientRequestHandlerExt クラス内に executeAsync メソッドを実装します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>In the executeAsync method, you can write your custom logic and return the response or call the default handler.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">executeAsync メソッドでは、カスタム ロジックを書き込んで、応答を返すか、既定のハンドラーを呼び出すことができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>When POS sells the serial item, it will look for executeAsync to execute the logic for the serial number, however because we are overriding it, POS will now execute this overridden executeAsync method instead of the standard method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS は、シリアル品目を販売するとき、シリアル番号のロジックを実行する executeAsync を探しますが、オーバーライドされるため、POS は標準メソッドの代わりにこのオーバーライドされた executeAsync メソッドを実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source><bpt id="p1">**</bpt>Sample implementation of how to override the executeAsync method<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>executeAsync メソッドをオーバーライドする方法のサンプル実装<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Full sample code:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完全なサンプル コード:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Create a new json file under the POSRequestHandlerExtension folder.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POSRequestHandlerExtension フォルダーの下に新しい json ファイルを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Name it manifest.json.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">manifest.json という名前を付けます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>In the manifest.json file, copy and paste the following code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">manifest.json ファイルに、次のコードをコピーして貼り付けます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Be sure to delete the default generated code before copying this code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコードをコピーする前に、既定で生成されたコードを削除してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Open the extensions.json file under the POS.Extensions project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS.Extensions プロジェクトにある extensions.json ファイルを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>Update it with POSRequestHandlerExtension samples, so that POS during runtime will include this extension.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実行時の POS にこの拡張が含まれるように、POSRequestHandlerExtension サンプルで更新します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>The extension.json file should always contain two extensions folder names, so be sure to keep the SampleExtensions folder name or your custom extension folder name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">extension.json ファイルには、常に 2 つの拡張フォルダー名が含まれている必要があるため、必ず SampleExtensions フォルダー名またはカスタム拡張フォルダー名を保持してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>For production, don’t use the sample extensions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">生産には、サンプル拡張を使用しないでください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>You should add your own extension folders and remove all the samples.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">独自の拡張フォルダーを追加し、すべてのサンプルを削除する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Open the tsconfig.json file to comment out the extension package folders from the exclude list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tsconfig.json ファイルを開いて、拡張パッケージ フォルダーを除外リストからコメント アウトします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>POS will use this file to include or exclude the extension for compilation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS では、このファイルを使用して、コンパイル用に拡張機能を追加または除外します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>By default, the list contains all the excluded extensions list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、リストに除外されたすべての拡張リストが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>If you want to compile any extension part of the POS, then you need to add the extension folder name and comment the extension from the extension list, as shown below.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS の拡張部分をコンパイルする場合は、拡張フォルダー名を追加し、以下のように拡張リストから拡張をコメント アウトする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Compile and rebuild the project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトをコンパイル、およびリビルドします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source><bpt id="p1">**</bpt>How to test your extension<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>拡張機能をテストする方法<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Press F5 and deploy the POS to test your customization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">F5 キーを押し、POS を展開してカスタマイズをテストします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>After POS launches, sign in to POS and add a serial item to a transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS が開始されたら、POS にサインインし、トランザクションへシリアル品目を追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Place a break point in the extension code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張コードにブレークポイントを配置します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>When you add the serial item you should be able to debug the extension code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シリアル品目を追加するとき、拡張コードをデバッグできるはずです。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: POS 要求ハンドラーのオーバーライド
+description: このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。 リアルタイム サービスは、Retail クライアントがリアルタイムで小売機能を操作できるようします。
+author: mugunthanm
+manager: AnnBe
+ms.date: 05/24/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations, Retail
+ms.custom: 68673
+ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
+ms.search.region: Global
+ms.author: mumani
+ms.search.validFrom: 209/07/2018
+ms.dyn365.ops.version: AX 7.3.5
+ms.openlocfilehash: 88fc67499f14dd34cc23b47b837fe875821e4d09
+ms.sourcegitcommit: 33e5f728a70d0546975f91010148dc4c57bf3af3
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "1606547"
+---
+# <a name="override-pos-request-handler"></a><span data-ttu-id="8b88e-104">POS 要求ハンドラーのオーバーライド</span><span class="sxs-lookup"><span data-stu-id="8b88e-104">Override POS request handler</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="8b88e-105">このトピックでは、POS 要求ハンドラーをオーバーライドする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-105">This topic explains how to override POS request handler.</span></span> <span data-ttu-id="8b88e-106">POS ビジネス ロジックをオーバーライドするための拡張パターンを導入しました。</span><span class="sxs-lookup"><span data-stu-id="8b88e-106">We've introduced an extension pattern for overriding the POS business logic.</span></span> <span data-ttu-id="8b88e-107">コア POS ビジネス フローにビジネス ロジックを変更/追加するシナリオがある場合、このパターンに従うことができます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-107">If you have a scenario where you want to modify/add some business logic to the core POS business flow, then you can follow this pattern.</span></span>
+
+<span data-ttu-id="8b88e-108">たとえば、シリアル品目を販売する場合、スキャン後、POS にはその品目のシリアル番号を入力するダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-108">For example, when you sell a serial item, POS will display a dialog box where you can enter the serial number for that item after the scan.</span></span> <span data-ttu-id="8b88e-109">コードを使用してシリアル番号を入力することでシリアル番号プロセスを自動化する場合、このシリアル番号要求ハンドラーをオーバーライドしてカスタム ビジネス ロジックを使用できます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-109">If you want to automate the serial number process by entering the serial number through code, then you can override this serial number request handler and use custom business logic.</span></span> <span data-ttu-id="8b88e-110">POS のビジネス ロジックのほとんどは、要求ハンドラーで実装されます。ただし、関連する要求ハンドラーをオーバーライドして、ビジネス フローに従って応答を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-110">Most of the business logic in POS is implemented in request handler, however, you can override the relevant request handler and return the response according to your business flow.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="8b88e-111">すべての要求ハンドラー ロジックがカスタマイズ用に公開されるわけではありません。</span><span class="sxs-lookup"><span data-stu-id="8b88e-111">Not all request handler logic is exposed for customization.</span></span> <span data-ttu-id="8b88e-112">ビジネス ロジックをカスタマイズする場合で、その要求ハンドラーがオーバーライド可能でない場合、サポート チケットを作成するか、LCS 機能拡張ツールでリクエストを登録します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-112">If you want to customize any business logic and if that request handler is not overridable, then create a support ticket or log a request in the LCS extensibility tool.</span></span>
+
+<span data-ttu-id="8b88e-113">**オーバーライドするために公開される POS 要求ハンドラー ロジック**</span><span class="sxs-lookup"><span data-stu-id="8b88e-113">\*\* POS request handler logic exposed for overriding \*\*</span></span>
+
+<span data-ttu-id="8b88e-114">これは、[Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.5](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1) の一覧に基づいています</span><span class="sxs-lookup"><span data-stu-id="8b88e-114">This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5.](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1)</span></span> <span data-ttu-id="8b88e-115">毎月の更新プログラムのたびに、拡張ポイントが追加されるため、完全な一覧については Retail SDK で Pos.api.d.ts ファイルをチェックしてください。</span><span class="sxs-lookup"><span data-stu-id="8b88e-115">In each monthly update we will be adding additional extension points, so check the Pos.api.d.ts file in the Retail SDK for the full list.</span></span> 
+
+<span data-ttu-id="8b88e-116">**買い物カゴ拡張ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="8b88e-116">**Cart extension handlers**</span></span>
+
+| <span data-ttu-id="8b88e-117">**要求名**</span><span class="sxs-lookup"><span data-stu-id="8b88e-117">**Request name**</span></span>                           | <span data-ttu-id="8b88e-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="8b88e-118">**Description**</span></span>                                                                              |
+|--------------------------------------------|----------------------------------------------------------------------------------------------|
+| <span data-ttu-id="8b88e-119">AddTenderLineToCartClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-119">AddTenderLineToCartClientRequestHandler</span></span>    | <span data-ttu-id="8b88e-120">このハンドラーは、カートに支払/入金方法 (支払) 明細行を追加するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-120">This handler is executed when you add tender (payment) line to cart.</span></span>                          |
+| <span data-ttu-id="8b88e-121">GetKeyedInPriceClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-121">GetKeyedInPriceClientRequestHandler</span></span>        | <span data-ttu-id="8b88e-122">このハンドラーは、販売時に、価格内にコンフィギュレーション キーを持つ品目を追加するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-122">This handler is executed when you add an item that has a configuration key in price during sale.</span></span> |
+| <span data-ttu-id="8b88e-123">GetPickupDateClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-123">GetPickupDateClientRequestHandler</span></span>          | <span data-ttu-id="8b88e-124">顧客注文時に集荷日を選択するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-124">Executed when you select a pickup date during a customer order.</span></span>                                  |
+| <span data-ttu-id="8b88e-125">GetShippingDateClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-125">GetShippingDateClientRequestHandler</span></span>        | <span data-ttu-id="8b88e-126">顧客注文時に出荷日を選択するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-126">Executed when you select a shipping date during a customer order.</span></span>                                |
+| <span data-ttu-id="8b88e-127">ShowChangeDueClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-127">ShowChangeDueClientRequestHandler</span></span>          | <span data-ttu-id="8b88e-128">トランザクションの終了時に期日の変更ダイアログ ボックスが表示されるときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-128">Executed when the change due dialog box is shown at the end of transaction.</span></span>                             |
+| <span data-ttu-id="8b88e-129">GetReceiptEmailAddressClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-129">GetReceiptEmailAddressClientRequestHandler</span></span> | <span data-ttu-id="8b88e-130">受信者のメール アドレスを取得するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-130">Executed when you get a receipt email address.</span></span>                                                 |
+| <span data-ttu-id="8b88e-131">DepositOverrideOperationRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-131">DepositOverrideOperationRequestHandler</span></span>     | <span data-ttu-id="8b88e-132">預金をオーバーライドするときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-132">Executed when you override a deposit.</span></span>                                                          |
+| <span data-ttu-id="8b88e-133">GetShippingChargeClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-133">GetShippingChargeClientRequestHandler</span></span>      | <span data-ttu-id="8b88e-134">顧客注文フロー中に開始された出荷費用ワークフローを取得するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-134">Executed when get shipping charge workflow initiated during customer order flow.</span></span>                                                             |
+
+<span data-ttu-id="8b88e-135">**支払拡張機能ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="8b88e-135">**Payment extension handler:**</span></span>
+
+| <span data-ttu-id="8b88e-136">**要求名**</span><span class="sxs-lookup"><span data-stu-id="8b88e-136">**Request name**</span></span>                                 | <span data-ttu-id="8b88e-137">**説明**</span><span class="sxs-lookup"><span data-stu-id="8b88e-137">**Description**</span></span>                                                                                                                                   |
+|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="8b88e-138">GetGiftCardByIdServiceRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-138">GetGiftCardByIdServiceRequestHandler</span></span>             | <span data-ttu-id="8b88e-139">このハンドラーは、ギフト カード ID を受け取ると実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-139">This handler is executed when you receive the gift card ID.</span></span>                                                                                           |
+| <span data-ttu-id="8b88e-140">GetPaymentCardTypeByBinRangeClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-140">GetPaymentCardTypeByBinRangeClientRequestHandler</span></span> | <span data-ttu-id="8b88e-141">このハンドラーは、Visa や Master Card などのカード タイプを POS が取得するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-141">This handler is executed when POS gets the card type, such as Visa or Master Card.</span></span> <span data-ttu-id="8b88e-142">これは、カード支払/入金の明細行の処理中の HQ コンフィギュレーションに基づきます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-142">This is based on the HQ configuration during the card tender line processing.</span></span> |
+
+<span data-ttu-id="8b88e-143">**周辺機器要求ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="8b88e-143">**Peripherals request handler**</span></span>
+
+| <span data-ttu-id="8b88e-144">要求名</span><span class="sxs-lookup"><span data-stu-id="8b88e-144">Request name</span></span>                                                  | <span data-ttu-id="8b88e-145">説明</span><span class="sxs-lookup"><span data-stu-id="8b88e-145">Description</span></span>                                                                                                                                                     |
+|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="8b88e-146">CardPaymentAuthorizePaymentRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-146">CardPaymentAuthorizePaymentRequestHandler</span></span>                     | <span data-ttu-id="8b88e-147">カード支払が承認されたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-147">Executed when a card payment is authorized.</span></span>                                                                                                                       |
+| <span data-ttu-id="8b88e-148">CardPaymentCapturePaymentRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-148">CardPaymentCapturePaymentRequestHandler</span></span>                       | <span data-ttu-id="8b88e-149">カード支払が取得されたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-149">Executed when a card payment is captured.</span></span>                                                                                                                         |
+| <span data-ttu-id="8b88e-150">CardPaymentExecuteTaskRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-150">CardPaymentExecuteTaskRequestHandler</span></span>                          | <span data-ttu-id="8b88e-151">カスタム タスクを実行するために使用します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-151">Used to execute any custom task.</span></span> <span data-ttu-id="8b88e-152">このハンドラーは、主に、サポートされていない支払コネクタを使用するカスタム機能の拡張機能用です。</span><span class="sxs-lookup"><span data-stu-id="8b88e-152">This handler is mainly for extensions for custom functionality with payment connector, which is not supported.</span></span>       |
+| <span data-ttu-id="8b88e-153">CardPaymentRefundPaymentRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-153">CardPaymentRefundPaymentRequestHandler</span></span>                        | <span data-ttu-id="8b88e-154">カード支払が払戻しされたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-154">Executed when a card payment is refunded.</span></span>                                                                                                                         |
+| <span data-ttu-id="8b88e-155">CardPaymentVoidPaymentRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-155">CardPaymentVoidPaymentRequestHandler</span></span>                          | <span data-ttu-id="8b88e-156">カード支払が無効化されたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-156">Executed when a card payment is voided.</span></span>                                                                                                                           |
+| <span data-ttu-id="8b88e-157">CardPaymentBeginTransactionRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-157">CardPaymentBeginTransactionRequestHandler</span></span>                     | <span data-ttu-id="8b88e-158">カード支払が開始されたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-158">Executed when a card payment is initiated.</span></span>                                                                                                                        |
+| <span data-ttu-id="8b88e-159">CardPaymentEndTransactionRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-159">CardPaymentEndTransactionRequestHandler</span></span>                       | <span data-ttu-id="8b88e-160">カード支払が終了したときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-160">Executed when a card payment is ended.</span></span>                                                                                                                            |
+| <span data-ttu-id="8b88e-161">CardPaymentEnquireGiftCardBalancePeripheralRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-161">CardPaymentEnquireGiftCardBalancePeripheralRequestHandler</span></span>     | <span data-ttu-id="8b88e-162">ギフト カードの残高照会が行われるときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-162">Executed when a gift card balance inquiry is made.</span></span>                                                                                                                |
+| <span data-ttu-id="8b88e-163">PaymentTerminalAuthorizePaymentActivityRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-163">PaymentTerminalAuthorizePaymentActivityRequestHandler</span></span>         | <span data-ttu-id="8b88e-164">支払ターミナル/デバイスを使用してカード支払が承認されたときに実行</span><span class="sxs-lookup"><span data-stu-id="8b88e-164">Executed when a card payment is authorized using a payment.</span></span> <span data-ttu-id="8b88e-165">されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-165">terminal/device.</span></span>                                                                                         |
+| <span data-ttu-id="8b88e-166">PaymentTerminalAuthorizePaymentRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-166">PaymentTerminalAuthorizePaymentRequestHandler</span></span>                 | <span data-ttu-id="8b88e-167">支払ターミナル/デバイスを使用してカード支払が承認されたときに実行</span><span class="sxs-lookup"><span data-stu-id="8b88e-167">Executed when a card payment is authorized using a payment.</span></span> <span data-ttu-id="8b88e-168">されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-168">terminal/device.</span></span>                                                                                         |
+| <span data-ttu-id="8b88e-169">PaymentTerminalEnquireGiftCardBalancePeripheralRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-169">PaymentTerminalEnquireGiftCardBalancePeripheralRequestHandler</span></span> | <span data-ttu-id="8b88e-170">支払ターミナル/デバイスを使用してギフト カードの残高照会が行われるときに実行</span><span class="sxs-lookup"><span data-stu-id="8b88e-170">Executed when a gift card balance inquiry is made using a payment.</span></span> <span data-ttu-id="8b88e-171">されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-171">terminal/device.</span></span>                                                                                  |
+| <span data-ttu-id="8b88e-172">PaymentTerminalExecuteTaskRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-172">PaymentTerminalExecuteTaskRequestHandler</span></span>                      | <span data-ttu-id="8b88e-173">カスタム タスクを実行するために使用します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-173">Used to execute any custom task.</span></span> <span data-ttu-id="8b88e-174">このハンドラーは、主に、サポートされていない支払ターミナル/デバイスを使用するカスタム機能の拡張機能用です。</span><span class="sxs-lookup"><span data-stu-id="8b88e-174">This handler is mainly for extensions for custom functionality with payment terminal/device, which is not supported.</span></span> |
+| <span data-ttu-id="8b88e-175">PaymentTerminalRefundPaymentRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-175">PaymentTerminalRefundPaymentRequestHandler</span></span>                    | <span data-ttu-id="8b88e-176">支払ターミナル/デバイスを使用してカード支払が払戻しされたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-176">Executed when a card payment is refunded using a payment terminal/device.</span></span>                                                                                           |
+| <span data-ttu-id="8b88e-177">PaymentTerminalUpdateLinesRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-177">PaymentTerminalUpdateLinesRequestHandler</span></span>                      | <span data-ttu-id="8b88e-178">POS が表示目的で明細行品目の詳細を支払デバイスに送信するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-178">Executed when POS sends line item details to a payment device for display purposes.</span></span>                                                                                 |
+| <span data-ttu-id="8b88e-179">PaymentTerminalVoidPaymentRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-179">PaymentTerminalVoidPaymentRequestHandler</span></span>                      | <span data-ttu-id="8b88e-180">支払ターミナル/デバイスを使用してカード支払が無効化されたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-180">Executed when a card payment is voided using a payment terminal/device.</span></span>                                                                                             |
+| <span data-ttu-id="8b88e-181">PaymentTerminalBeginTransactionRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-181">PaymentTerminalBeginTransactionRequestHandler</span></span>                 | <span data-ttu-id="8b88e-182">支払ターミナル/デバイスを使用してカード支払が開始されたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-182">Executed when a card payment is initiated using a payment terminal/device.</span></span>                                                                                          |
+| <span data-ttu-id="8b88e-183">PaymentTerminalCancelOperationRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-183">PaymentTerminalCancelOperationRequestHandler</span></span>                  | <span data-ttu-id="8b88e-184">支払ターミナル/デバイスを使用してカード支払がキャンセルされたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-184">Executed when a card payment is cancelled using a payment terminal/device.</span></span>                                                                                          |
+| <span data-ttu-id="8b88e-185">PaymentTerminalEndTransactionRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-185">PaymentTerminalEndTransactionRequestHandler</span></span>                   | <span data-ttu-id="8b88e-186">支払ターミナル/デバイスを使用してカード支払が終了したときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-186">Executed when a card payment is ended using a payment terminal/device.</span></span>                                                                                              |
+| <span data-ttu-id="8b88e-187">CashDrawerOpenRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-187">CashDrawerOpenRequestHandler</span></span>                                  | <span data-ttu-id="8b88e-188">キャッシュ ドロワー オープン要求が POS によって開始されるときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-188">Executed when a cash drawer open request is initiated by POS.</span></span>                                                                                                     |
+| <span data-ttu-id="8b88e-189">PaymentTerminalActivateGiftCardPeripheralRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-189">PaymentTerminalActivateGiftCardPeripheralRequestHandler</span></span>       | <span data-ttu-id="8b88e-190">POS により開始されたギフト カード要求をアクティブにしたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-190">Executed when activate gift card request is initiated by POS.</span></span>                                                                                                     |
+| <span data-ttu-id="8b88e-191">PaymentTerminalAddBalanceToGiftCardPeripheralRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-191">PaymentTerminalAddBalanceToGiftCardPeripheralRequestHandler</span></span>   | <span data-ttu-id="8b88e-192">POS により開始されたギフト カード要求に残高を追加したときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-192">Executed when add balance to gift card request is initiated by POS.</span></span>                                                                                                     |
+ 
+ 
+
+<span data-ttu-id="8b88e-193">**スキャン要求ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="8b88e-193">**Scan request handler**</span></span>
+
+| <span data-ttu-id="8b88e-194">要求名</span><span class="sxs-lookup"><span data-stu-id="8b88e-194">Request name</span></span>                      | <span data-ttu-id="8b88e-195">説明</span><span class="sxs-lookup"><span data-stu-id="8b88e-195">Description</span></span>                                                    |
+|-----------------------------------|----------------------------------------------------------------|
+| <span data-ttu-id="8b88e-196">GetScanResultClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-196">GetScanResultClientRequestHandler</span></span> | <span data-ttu-id="8b88e-197">スキャンするか、POS トランザクション画面テンキーで入力するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-197">Executed when you scan or key in a POS transaction screen Numpad.</span></span> |
+
+<span data-ttu-id="8b88e-198">**店舗フルフィルメント要求ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="8b88e-198">**Store fulfillment request handler**</span></span>
+
+| <span data-ttu-id="8b88e-199">要求名</span><span class="sxs-lookup"><span data-stu-id="8b88e-199">Request name</span></span>                         | <span data-ttu-id="8b88e-200">説明</span><span class="sxs-lookup"><span data-stu-id="8b88e-200">Description</span></span>                                                          |
+|--------------------------------------|----------------------------------------------------------------------|
+| <span data-ttu-id="8b88e-201">PrintPackingSlipClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-201">PrintPackingSlipClientRequestHandler</span></span> | <span data-ttu-id="8b88e-202">店舗フルフィルメント ビューから梱包明細を印刷するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-202">Executed when you print a packing slip from the store fulfillment view.</span></span> |
+| <span data-ttu-id="8b88e-203">MarkAsPickedServiceRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-203">MarkAsPickedServiceRequestHandler</span></span>    | <span data-ttu-id="8b88e-204">店舗フルフィルメント ビューからピッキングされた販売注文明細行をマークするときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-204">Executed when you mark a sales line as picked from the store fulfillment view.</span></span> |
+
+
+<span data-ttu-id="8b88e-205">**店舗運営要求ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="8b88e-205">**Store operations request handler**</span></span>
+
+| <span data-ttu-id="8b88e-206">要求名</span><span class="sxs-lookup"><span data-stu-id="8b88e-206">Request name</span></span>                                        | <span data-ttu-id="8b88e-207">説明</span><span class="sxs-lookup"><span data-stu-id="8b88e-207">Description</span></span>                                                        |
+|---------------------------------------------------- |--------------------------------------------------------------------|
+| <span data-ttu-id="8b88e-208">CreateTenderRemovalTransactionClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-208">CreateTenderRemovalTransactionClientRequestHandler</span></span>  | <span data-ttu-id="8b88e-209">POS で支払/入金の削除操作を行うときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-209">Executed when you do a tender removal operation in POS.</span></span>              |
+| <span data-ttu-id="8b88e-210">CreateFloatEntryTransactionClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-210">CreateFloatEntryTransactionClientRequestHandler</span></span>     | <span data-ttu-id="8b88e-211">POS で釣銭入力操作を行うときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-211">Executed when you do a float entry operation in POS.</span></span>                 |
+| <span data-ttu-id="8b88e-212">SelectZipCodeInfoClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-212">SelectZipCodeInfoClientRequestHandler</span></span>               | <span data-ttu-id="8b88e-213">POS で住所の追加/編集ビューで郵便番号を入力するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-213">Executed when you key in zip code in address add/edit view in POS.</span></span> |
+| <span data-ttu-id="8b88e-214">CreateStartingAmountTransactionClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-214">CreateStartingAmountTransactionClientRequestHandler</span></span> | <span data-ttu-id="8b88e-215">POS で開始金額申告を行うときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-215">Executed when you do a start amount declaration in POS.</span></span> |
+| <span data-ttu-id="8b88e-216">LoyaltyCardPointsBalanceOperationRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-216">LoyaltyCardPointsBalanceOperationRequestHandler</span></span>     | <span data-ttu-id="8b88e-217">POS でロイヤルティ カード残高操作を行うときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-217">Executed when you do a loyalty card balance operation in POS.</span></span> |
+| <span data-ttu-id="8b88e-218">GetReportParametersClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-218">GetReportParametersClientRequestHandler</span></span>             | <span data-ttu-id="8b88e-219">レポート パラメーターを行うときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-219">Executed when you do a report parameter.</span></span> <span data-ttu-id="8b88e-220">POS レポートに入力パラメーターが必要な場合は、このダイアログが実行されてパラメーターを取得します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-220">If your POS report need input parameter this dialog will get executed to capture the parameters.</span></span> | 
+
+
+<span data-ttu-id="8b88e-221">**支払/入金計算要求ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="8b88e-221">**Tender counting request handler**</span></span>
+
+| <span data-ttu-id="8b88e-222">要求名</span><span class="sxs-lookup"><span data-stu-id="8b88e-222">Request name</span></span>                                           | <span data-ttu-id="8b88e-223">説明</span><span class="sxs-lookup"><span data-stu-id="8b88e-223">Description</span></span>                                               |
+|--------------------------------------------------------|-----------------------------------------------------------|
+| <span data-ttu-id="8b88e-224">CreateSafeDropTransactionClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-224">CreateSafeDropTransactionClientRequestHandler</span></span>          | <span data-ttu-id="8b88e-225">POS で金庫保管操作を行うときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-225">Executed when you do a safe drop operation in POS.</span></span>          |
+| <span data-ttu-id="8b88e-226">GetTenderDetailsClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-226">GetTenderDetailsClientRequestHandler</span></span>                   | <span data-ttu-id="8b88e-227">POS で支払/入金申告の詳細を取得するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-227">Executed when you get tender declaration details in POS.</span></span>  |
+| <span data-ttu-id="8b88e-228">CreateBankDropTransactionClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-228">CreateBankDropTransactionClientRequestHandler</span></span>          | <span data-ttu-id="8b88e-229">POS で銀行入金操作を行うときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-229">Executed when you do a bank drop operation in POS.</span></span>          |
+| <span data-ttu-id="8b88e-230">CreateTenderDeclarationTransactionClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-230">CreateTenderDeclarationTransactionClientRequestHandler</span></span> | <span data-ttu-id="8b88e-231">POS で支払/入金申告操作を行うときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-231">Executed when you do a tender declaration operation in POS.</span></span> |
+| <span data-ttu-id="8b88e-232">GetCountedTenderDetailAmountClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-232">GetCountedTenderDetailAmountClientRequestHandler</span></span>   | <span data-ttu-id="8b88e-233">POS で入札件数の詳細を行うときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-233">Executed when you do a tendercount detail in POS.</span></span> |
+| <span data-ttu-id="8b88e-234">CreateBankDropTransactionClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-234">CreateBankDropTransactionClientRequestHandler</span></span>      | <span data-ttu-id="8b88e-235">POS で銀行入金操作を行うときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-235">Executed when you do a bank drop operation in POS.</span></span> |
+
+
+<span data-ttu-id="8b88e-236">**販売注文の要求ハンドラー**</span><span class="sxs-lookup"><span data-stu-id="8b88e-236">**Sales orders request handlers**</span></span>
+
+| <span data-ttu-id="8b88e-237">要求名</span><span class="sxs-lookup"><span data-stu-id="8b88e-237">Request name</span></span>                                           | <span data-ttu-id="8b88e-238">説明</span><span class="sxs-lookup"><span data-stu-id="8b88e-238">Description</span></span>                                               |
+|--------------------------------------------------------|-----------------------------------------------------------|
+| <span data-ttu-id="8b88e-239">GetGiftReceiptsClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-239">GetGiftReceiptsClientRequestHandler</span></span>                | <span data-ttu-id="8b88e-240">POS でギフト レシートを印刷するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-240">Executed when you print a gift receipt in POS.</span></span>          |
+| <span data-ttu-id="8b88e-241">SelectCustomerOrderTypeClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-241">SelectCustomerOrderTypeClientRequestHandler</span></span>        | <span data-ttu-id="8b88e-242">顧客注文または見積のどちらかを選択するオプションがあるダイアログ ボックスを取得するときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-242">Executed when you get a dialog box with options to choose between customer order or quote.</span></span>          |
+| <span data-ttu-id="8b88e-243">GetCancellationChargeClientRequestHandler</span><span class="sxs-lookup"><span data-stu-id="8b88e-243">GetCancellationChargeClientRequestHandler</span></span>      | <span data-ttu-id="8b88e-244">顧客注文ワークフロー中にキャンセル出荷費用を入力するダイアログ ボックスが表示されたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-244">Executed when you get a dialog box to enter the cancellation shipping charge during the customer order workflow.</span></span>          |
+
+
+
+<span data-ttu-id="8b88e-245">**POS でハンドラーをオーバーライドする方法**</span><span class="sxs-lookup"><span data-stu-id="8b88e-245">**How to override a handler in POS**</span></span>
+
+<span data-ttu-id="8b88e-246">上記の POS 要求ハンドラー ロジックのいずれかをオーバーライドすると、次の手順を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b88e-246">If you want to override any of the above POS request handler logic, you to need to use the following steps:</span></span>
+
+1.  <span data-ttu-id="8b88e-247">新しいクラスを作成し、対応するハンドラー クラスから拡張します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-247">Create a new class and extend it from the corresponding handler class.</span></span> <span data-ttu-id="8b88e-248">たとえば、GetSerialNumberClientRequestHandler をオーバーライドする場合、クラスを GetSerialNumberClientRequestHandler から拡張します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-248">For example, if you are overriding GetSerialNumberClientRequestHandler, then extend your class from GetSerialNumberClientRequestHandler.</span></span>
+
+2.  <span data-ttu-id="8b88e-249">executeAsync メソッドを実装します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-249">Implement the executeAsync method.</span></span>
+
+3.  <span data-ttu-id="8b88e-250">既定のハンドラーを呼び出すか、executeAsync メソッド内でカスタム ロジックを実行して、応答を返します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-250">Either call the default handler or do your custom logic inside the executeAsync method and return the response.</span></span>
+
+<span data-ttu-id="8b88e-251">**ステップ バイ ステップの手順**</span><span class="sxs-lookup"><span data-stu-id="8b88e-251">**Step by step instructions**</span></span>
+
+<span data-ttu-id="8b88e-252">次の例では、GetSerialNumberClientRequestHandler をオーバーライドして POS でシリアル番号の入力を自動化する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-252">The following example shows how to override the GetSerialNumberClientRequestHandler to automate the serial number entry in POS.</span></span> <span data-ttu-id="8b88e-253">既定では、POS には、シリアル番号を要求するよう品目がコンフィギュレーションされている場合は、シリアル番号を入力するダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-253">By default, POS will display a dialog box to enter the serial number if the item is configured to ask for serial number.</span></span> <span data-ttu-id="8b88e-254">このダイアログ ボックスが表示されないようにし、コードを使用してシリアル番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-254">We want to avoid showing this dialog box and enter serial number through code.</span></span>
+
+1.  <span data-ttu-id="8b88e-255">管理者モードで Visual Studio 2015 を開きます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-255">Open Visual Studio 2015 in administrator mode.</span></span>
+
+2.  <span data-ttu-id="8b88e-256">ModernPOS ソリューションを …\\RetailSDK\\POS から開きます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-256">Open ModernPOS solution from …\\RetailSDK\\POS.</span></span>
+
+3.  <span data-ttu-id="8b88e-257">POS.Extensions プロジェクトで、POSRequestHandlerExtension という名前の新しいフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-257">Under the POS.Extensions project, create a new folder called POSRequestHandlerExtension.</span></span>
+
+4.  <span data-ttu-id="8b88e-258">POSRequestHandlerExtension フォルダーに、Handlers という名前の新しいフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-258">Under the POSRequestHandlerExtension folder, create new folder called Handlers.</span></span>
+
+5.  <span data-ttu-id="8b88e-259">Handlers フォルダーに、新しい .ts (typescript) ファイルを追加し、GetSerialNumberClientRequestHandlerExt.ts と名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-259">In the Handlers folder, add a new .ts (typescript) file and name it GetSerialNumberClientRequestHandlerExt.ts.</span></span>
+
+6.  <span data-ttu-id="8b88e-260">次の import ステートメントを追加して、GetSerialNumberClientRequestHandlerExt.ts ファイルに関連するエンティティおよびコンテキストをインポートします。</span><span class="sxs-lookup"><span data-stu-id="8b88e-260">Add the following import statement to import the relevant entities and context in the GetSerialNumberClientRequestHandlerExt.ts file.</span></span>
+
+ ```Typescrip 
+ import { GetSerialNumberClientRequestHandler } from "PosApi/Extend/RequestHandlers/ProductsRequestHandlers";
+ import { GetSerialNumberClientRequest, GetSerialNumberClientResponse } from "PosApi/Consume/Products";
+ import { ClientEntities } from "PosApi/Entities";
+```
+7.  <span data-ttu-id="8b88e-261">GetSerialNumberClientRequestHandlerExt.ts ファイルで、GetSerialNumberClientRequestHandlerExtend という新しいクラスを作成し、GetSerialNumberClientRequestHandler から拡張します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-261">In the GetSerialNumberClientRequestHandlerExt.ts file, create a new class called GetSerialNumberClientRequestHandlerExtend and extend it from GetSerialNumberClientRequestHandler.</span></span>
+
+    <span data-ttu-id="8b88e-262">export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler { }</span><span class="sxs-lookup"><span data-stu-id="8b88e-262">export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler { }</span></span>
+
+8.  <span data-ttu-id="8b88e-263">GetSerialNumberClientRequestHandlerExt クラス内に executeAsync メソッドを実装します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-263">Implement the executeAsync method inside the GetSerialNumberClientRequestHandlerExt class.</span></span> <span data-ttu-id="8b88e-264">executeAsync メソッドでは、カスタム ロジックを書き込んで、応答を返すか、既定のハンドラーを呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-264">In the executeAsync method, you can write your custom logic and return the response or call the default handler.</span></span> <span data-ttu-id="8b88e-265">POS は、シリアル品目を販売するとき、シリアル番号のロジックを実行する executeAsync を探しますが、オーバーライドされるため、POS は標準メソッドの代わりにこのオーバーライドされた executeAsync メソッドを実行します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-265">When POS sells the serial item, it will look for executeAsync to execute the logic for the serial number, however because we are overriding it, POS will now execute this overridden executeAsync method instead of the standard method.</span></span>
+
+ <span data-ttu-id="8b88e-266">**executeAsync メソッドをオーバーライドする方法のサンプル実装**</span><span class="sxs-lookup"><span data-stu-id="8b88e-266">**Sample implementation of how to override the executeAsync method**</span></span>
+
+ ```Typescrip
+ public executeAsync(request: GetSerialNumberClientRequest<GetSerialNumberClientResponse>):
+     Promise<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>> {
+
+ // User could implement new business logic here to process the serial number.
+ // The following example sets serial number "112233" for product 82001.
+
+ if (request.product.ItemId === "82001") {
+ let response: GetSerialNumberClientResponse = new GetSerialNumberClientResponse("112233");
+ return Promise.resolve(<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>>{
+
+ canceled: false,
+ data: response
+
+ });
+
+ }
+
+ // If you don’t want to execute custom logic on some conditions, and you just want to call the standard logic, you can call the default request, as shown below.
+
+ return this.defaultExecuteAsync(request);
+
+ }
+```
+<span data-ttu-id="8b88e-267">完全なサンプル コード:</span><span class="sxs-lookup"><span data-stu-id="8b88e-267">Full sample code:</span></span>
+
+ ```Typescrip
+ /**
+ * SAMPLE CODE NOTICE
+ *
+ * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+ * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+ * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+ * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+ */
+
+ import { GetSerialNumberClientRequestHandler } from "PosApi/Extend/RequestHandlers/ProductsRequestHandlers";
+ import { GetSerialNumberClientRequest, GetSerialNumberClientResponse } from "PosApi/Consume/Products";
+ import { ClientEntities } from "PosApi/Entities";
+
+ /**
+ * Override request handler class for getting serial number request.
+ */
+
+ export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler {
+
+ /**
+ * Executes the request handler asynchronously.
+ * @param {GetSerialNumberClientRequest<GetSerialNumberClientResponse>} request The request containing the response.
+ * @return {Promise<ICancelableDataResult<GetSerialNumberClientResponse>>} The cancelable promise containing the response.
+ */
+
+ public executeAsync(request: GetSerialNumberClientRequest<GetSerialNumberClientResponse>):
+    Promise<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>> {
+
+ // User could implement new business logic here to process the serial number.
+ // The following example sets serial number "112233" for product 82001.
+
+ if (request.product.ItemId === "82001") {
+ let response: GetSerialNumberClientResponse = new GetSerialNumberClientResponse("112233");
+ return Promise.resolve(<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>>{
+ canceled: false,
+ data: response
+ });
+
+ }
+ return this.defaultExecuteAsync(request);
+ }
+ }
+
+```
+9.  <span data-ttu-id="8b88e-268">POSRequestHandlerExtension フォルダーの下に新しい json ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-268">Create a new json file under the POSRequestHandlerExtension folder.</span></span> <span data-ttu-id="8b88e-269">manifest.json という名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-269">Name it manifest.json.</span></span>
+
+10.  <span data-ttu-id="8b88e-270">manifest.json ファイルに、次のコードをコピーして貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-270">In the manifest.json file, copy and paste the following code.</span></span> <span data-ttu-id="8b88e-271">このコードをコピーする前に、既定で生成されたコードを削除してください。</span><span class="sxs-lookup"><span data-stu-id="8b88e-271">Be sure to delete the default generated code before copying this code.</span></span>
+
+ ```Typescrip
+ {
+ "$schema": "../manifestSchema.json",
+ "name": "Pos_Extensibility_Samples",
+ "publisher": "Microsoft",
+ "version": "7.3.5.0",
+ "minimumPosVersion": "7.3.5.0",
+ "components": {
+ "extend": {
+ "requestHandlers": [
+ {
+ "modulePath": "Handlers/GetSerialNumberClientRequestHandlerExt"
+ }
+ ]
+ }
+ }
+}
+```
+11.  <span data-ttu-id="8b88e-272">POS.Extensions プロジェクトにある extensions.json ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="8b88e-272">Open the extensions.json file under the POS.Extensions project.</span></span> <span data-ttu-id="8b88e-273">実行時の POS にこの拡張が含まれるように、POSRequestHandlerExtension サンプルで更新します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-273">Update it with POSRequestHandlerExtension samples, so that POS during runtime will include this extension.</span></span>
+ 
+```Typescrip
+ {
+ "extensionPackages": [
+    { 
+       "baseUrl": "SampleExtensions2" 
+     }, 
+     { 
+       "baseUrl": " SampleExtensions" 
+     }, 
+     {
+      "baseUrl": "POSRequestHandlerExtension"
+ }
+ ]
+}
+```
+> [!NOTE]
+> <span data-ttu-id="8b88e-274">extension.json ファイルには、常に 2 つの拡張フォルダー名が含まれている必要があるため、必ず SampleExtensions フォルダー名またはカスタム拡張フォルダー名を保持してください。</span><span class="sxs-lookup"><span data-stu-id="8b88e-274">The extension.json file should always contain two extensions folder names, so be sure to keep the SampleExtensions folder name or your custom extension folder name.</span></span> <span data-ttu-id="8b88e-275">生産には、サンプル拡張を使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="8b88e-275">For production, don’t use the sample extensions.</span></span> <span data-ttu-id="8b88e-276">独自の拡張フォルダーを追加し、すべてのサンプルを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b88e-276">You should add your own extension folders and remove all the samples.</span></span>
+
+12.  <span data-ttu-id="8b88e-277">tsconfig.json ファイルを開いて、拡張パッケージ フォルダーを除外リストからコメント アウトします。</span><span class="sxs-lookup"><span data-stu-id="8b88e-277">Open the tsconfig.json file to comment out the extension package folders from the exclude list.</span></span> <span data-ttu-id="8b88e-278">POS では、このファイルを使用して、コンパイル用に拡張機能を追加または除外します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-278">POS will use this file to include or exclude the extension for compilation.</span></span> <span data-ttu-id="8b88e-279">既定では、リストに除外されたすべての拡張リストが含まれています。</span><span class="sxs-lookup"><span data-stu-id="8b88e-279">By default, the list contains all the excluded extensions list.</span></span> <span data-ttu-id="8b88e-280">POS の拡張部分をコンパイルする場合は、拡張フォルダー名を追加し、以下のように拡張リストから拡張をコメント アウトする必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b88e-280">If you want to compile any extension part of the POS, then you need to add the extension folder name and comment the extension from the extension list, as shown below.</span></span>
+
+ ```Typescrip
+ "exclude": [
+
+ // "SampleExtensions",
+ //"SampleExtensions2",
+ //"POSRequestHandlerExtension"
+
+],
+```
+13.  <span data-ttu-id="8b88e-281">プロジェクトをコンパイル、およびリビルドします。</span><span class="sxs-lookup"><span data-stu-id="8b88e-281">Compile and rebuild the project.</span></span>
+
+<span data-ttu-id="8b88e-282">**拡張機能をテストする方法**</span><span class="sxs-lookup"><span data-stu-id="8b88e-282">**How to test your extension**</span></span>
+
+1.  <span data-ttu-id="8b88e-283">F5 キーを押し、POS を展開してカスタマイズをテストします。</span><span class="sxs-lookup"><span data-stu-id="8b88e-283">Press F5 and deploy the POS to test your customization.</span></span>
+
+2.  <span data-ttu-id="8b88e-284">POS が開始されたら、POS にサインインし、トランザクションへシリアル品目を追加します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-284">After POS launches, sign in to POS and add a serial item to a transaction.</span></span>
+
+3.  <span data-ttu-id="8b88e-285">拡張コードにブレークポイントを配置します。</span><span class="sxs-lookup"><span data-stu-id="8b88e-285">Place a break point in the extension code.</span></span> <span data-ttu-id="8b88e-286">シリアル品目を追加するとき、拡張コードをデバッグできるはずです。</span><span class="sxs-lookup"><span data-stu-id="8b88e-286">When you add the serial item you should be able to debug the extension code.</span></span>

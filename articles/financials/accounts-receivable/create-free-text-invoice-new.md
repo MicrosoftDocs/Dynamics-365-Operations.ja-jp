@@ -60,7 +60,7 @@ ms.locfileid: "1559437"
 
     <span data-ttu-id="dfef5-130">このページで売上税金額を確認するか、**調整**タブで金額を上書きすることができます。</span><span class="sxs-lookup"><span data-stu-id="dfef5-130">You can view the sales tax amounts on this page, or you can override the amounts on the **Adjustment** tab.</span></span>
 
-11. <span data-ttu-id="dfef5-131"> *\*OK*\*を選択します。</span><span class="sxs-lookup"><span data-stu-id="dfef5-131">Select **OK**.</span></span>
+11. <span data-ttu-id="dfef5-131"> **OK**を選択します。</span><span class="sxs-lookup"><span data-stu-id="dfef5-131">Select **OK**.</span></span>
 12. <span data-ttu-id="dfef5-132">**手数料**を選択して、請求書に手数料を追加します。</span><span class="sxs-lookup"><span data-stu-id="dfef5-132">Select **Charges** to add a charge to the invoice.</span></span>
 13. <span data-ttu-id="dfef5-133">**諸費用コード**フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="dfef5-133">In the **Charges code** field, enter a value.</span></span>
 14. <span data-ttu-id="dfef5-134">**諸費用金額**フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="dfef5-134">In the **Charges value** field, enter a number.</span></span>
@@ -74,7 +74,7 @@ ms.locfileid: "1559437"
     * <span data-ttu-id="dfef5-144">請求書を印刷するには、オプションを**はい**に設定します。</span><span class="sxs-lookup"><span data-stu-id="dfef5-144">To print the invoice, set the option to **Yes**.</span></span>
     * <span data-ttu-id="dfef5-145">請求書を転記するには、オプションを**はい**に設定します。</span><span class="sxs-lookup"><span data-stu-id="dfef5-145">To post the invoice, set the option to **Yes**.</span></span> <span data-ttu-id="dfef5-146">転記せずに請求書を印刷することもできます。</span><span class="sxs-lookup"><span data-stu-id="dfef5-146">You can print the invoice without posting it.</span></span>
 
-19. <span data-ttu-id="dfef5-147"> *\*OK*\*を選択します。</span><span class="sxs-lookup"><span data-stu-id="dfef5-147">Select **OK**.</span></span>
+19. <span data-ttu-id="dfef5-147"> **OK**を選択します。</span><span class="sxs-lookup"><span data-stu-id="dfef5-147">Select **OK**.</span></span>
 
 ## <a name="copy-lines"></a><span data-ttu-id="dfef5-148">行のコピー</span><span class="sxs-lookup"><span data-stu-id="dfef5-148">Copy lines</span></span>
 <span data-ttu-id="dfef5-149">自由書式の請求書の明細行をコピーするには、1 つ以上の明細行を選択し、**選択した明細行のコピー**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dfef5-149">To copy lines on a free text invoice, select one or more lines, and then select **Copy selected lines**.</span></span> <span data-ttu-id="dfef5-150">必要なコピーの数を指定することができ、メモおよび添付ファイルもコピーできます。</span><span class="sxs-lookup"><span data-stu-id="dfef5-150">You can specify the number of copies to make, and you can also copy notes and attachments.</span></span> <span data-ttu-id="dfef5-151">配分のコピー、または転記時の再作成ができます。</span><span class="sxs-lookup"><span data-stu-id="dfef5-151">You can either copy the distributions or let them be re-created when you post.</span></span>

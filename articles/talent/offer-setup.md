@@ -108,7 +108,7 @@ ms.locfileid: "1518453"
 >[!NOTE]
 > - <span data-ttu-id="5a00b-162">各プレース ホルダーは、それが依存している一意の列セットを 1 つしか持てません。</span><span class="sxs-lookup"><span data-stu-id="5a00b-162">Each placeholder can only have one unique set of columns that it is dependent on.</span></span> <span data-ttu-id="5a00b-163">たとえば、**年間給与**が**勤務地**および**レベル**に依存している場合、**年間給与**が別の列セットに依存しているルール セットをアップロードすることはできません。</span><span class="sxs-lookup"><span data-stu-id="5a00b-163">For example, if **Annual Salary** is dependent on **Job Location** and **Level**, you can't upload another rule set where **Annual Salary** is dependent on a different set of columns.</span></span>
 
-> - <span data-ttu-id="5a00b-164"> *\*オファー データ ルール** ページの*\*サンプル** タブに、サンプル オファー ルール セットをダウンロードすることができます。</span><span class="sxs-lookup"><span data-stu-id="5a00b-164">You can download sample offer data rule sets on the **Samples** tab on the **Offer data rules** page.</span></span>
+> - <span data-ttu-id="5a00b-164"> **オファー データ ルール** ページの**サンプル** タブに、サンプル オファー ルール セットをダウンロードすることができます。</span><span class="sxs-lookup"><span data-stu-id="5a00b-164">You can download sample offer data rule sets on the **Samples** tab on the **Offer data rules** page.</span></span>
 
 > - <span data-ttu-id="5a00b-165">オファー作成者がオファー データ ルールで推奨される値を上書きすると、オファーは非標準としてフラグが設定され、オファーの承認ワークフローが必須になります。</span><span class="sxs-lookup"><span data-stu-id="5a00b-165">When an offer creator overrides the values that are recommended by the offer data rules, the offer is flagged as non-standard and offer approval workflow will be mandated.</span></span>
 

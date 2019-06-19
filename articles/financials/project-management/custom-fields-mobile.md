@@ -1,591 +1,435 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="custom-fields-mobile.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>custom-fields-mobile.2a9e5e.4343c875da05641c57b7784bf52f1c814dd26d20.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>4343c875da05641c57b7784bf52f1c814dd26d20</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>19859d8566a8c7840066b2c10c6b08b67f1b83f4</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/04/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\project-management\custom-fields-mobile.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile app on iOS and Android</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">iOS および Android 用 Microsoft Dynamics 365 Project Timesheet モバイル アプリのカスタム フィールドの実装</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides common patterns for using extensions to implement custom fields.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">このトピックでは、拡張機能を使用してカスタム フィールドを実装するための共通のパターンを示します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile app on iOS and Android</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">iOS および Android 用 Microsoft Dynamics 365 Project Timesheet モバイル アプリのカスタム フィールドの実装</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic provides common patterns for using extensions to implement custom fields.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited">このトピックでは、拡張機能を使用してカスタム フィールドを実装するための共通のパターンを示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The following topics are covered:</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">トピックの対象は次のとおりです。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>The various data types that the custom field framework supports</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">カスタム フィールド フレームワークでサポートされるさまざまなデータ型</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>How to show read-only or editable fields on timesheet entries, and save user-provided values back to the database</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">タイムシート エントリに読み取り専用または編集可能なフィールドを表示し、ユーザーが入力した値をデータベースに再保存する方法</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>How to show read-only fields on the timesheet header</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">タイムシート ヘッダーに読み取り専用フィールドを表示する方法</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>How to integrate other custom business logic to enter default values in fields and do additional validation</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">他のカスタム ビジネス ロジックを統合して、フィールドに既定値を入力し、追加の検証を行う方法</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Audience</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">対象者</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>This topic is intended for developers who are integrating their custom fields into the Microsoft Dynamics 365 Project Timesheet mobile application that is available for Apple iOS and Google Android.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このトピックは、Apple iOS および Google Android で利用可能な Microsoft Dynamics 365 Project Timesheet モバイル アプリケーションにカスタムフィールドを統合する開発者を対象としています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>The assumption is that readers are familiar with X++ development and project timesheet functionality.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">読者が X++ 開発とプロジェクト タイムシート機能をよく使用していることを前提としています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Data contract – TSTimesheetCustomField X++ class</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">データ契約 – TSTimesheetCustomField X++ クラス</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>The <bpt id="p1">**</bpt>TSTimesheetCustomField<ept id="p1">**</ept> class is the X++ data contract class that represents information about a custom field for timesheet functionality.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSTimesheetCustomField<ept id="p1">**</ept> クラスは、X++ データ契約クラスで、タイムシート機能のカスタム フィールドに関する情報を表します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Lists of the custom field objects are passed on both the TSTimesheetDetails data contract and the TSTimesheetEntry data contract to show custom fields in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">モバイル アプリにカスタム フィールドを表示するために、TSTimesheetDetails データ契約と TSTimesheetEntry データ契約の両方にカスタム フィールド オブジェクトのリストが渡されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">**</bpt>TSTimesheetDetails<ept id="p1">**</ept> - The timesheet header contract.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSTimesheetDetails<ept id="p1">**</ept> - タイムシートのヘッダー契約。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">**</bpt>TSTimesheetEntry<ept id="p1">**</ept> - The timesheet transaction contract.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSTimesheetEntry<ept id="p1">**</ept> - タイムシートのトランザクション契約。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Groups of these objects that have the same project information and <bpt id="p1">**</bpt>timesheetLineRecId<ept id="p1">**</ept> value constitute a line.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">同じプロジェクト情報と <bpt id="p1">**</bpt>timesheetLineRecId<ept id="p1">**</ept> 値を持つオブジェクトのグループが 1 つの明細行を構成します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>fieldBaseType (Types)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">fieldBaseType (タイプ)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>The <bpt id="p1">**</bpt>FieldBaseType<ept id="p1">**</ept> property on the <bpt id="p2">**</bpt>TsTimesheetCustom<ept id="p2">**</ept> object determines the type of the field that appears in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p2">**</bpt>TsTimesheetCustom<ept id="p2">**</ept> オブジェクトの <bpt id="p1">**</bpt>FieldBaseType<ept id="p1">**</ept> プロパティによって、アプリに表示されるフィールドのタイプが決定されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The following <bpt id="p1">**</bpt>Types<ept id="p1">**</ept> values that are supported.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">次の<bpt id="p1">**</bpt>タイプ<ept id="p1">**</ept>の値がサポートされます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Types value</source><target logoport:matchpercent="81" state="translated" state-qualifier="fuzzy-match">タイプの値</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Type</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">型</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Notes</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">摘要</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>0</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>String (and Enum)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">文字列 (および列挙)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The field appears as a text field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このフィールドは、テキスト フィールドとして表示されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>1</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Integer</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">整数</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>The value is shown as a number without decimal places.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">この値は、小数点以下を含まない数字として表示されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>2</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Real</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">実績</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>The value is shown as a number that has decimal places.</source><target logoport:matchpercent="84" state="translated" state-qualifier="fuzzy-match">この値は、小数点以下を含む数字として表示されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>To show the real value as a currency in the app, use the <bpt id="p1">**</bpt>fieldExtenededType<ept id="p1">**</ept> property.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">アプリで通貨として実数値を表示するには、<bpt id="p1">**</bpt>fieldExtenededType<ept id="p1">**</ept> プロパティを使用します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>You can use the <bpt id="p1">**</bpt>numberOfDecimals<ept id="p1">**</ept> property to set the number of decimal places that are shown.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>numberOfDecimals<ept id="p1">**</ept> プロパティを使用し、表示される小数点以下の桁数を設定することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>3</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Date</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Date formats are determined by the user's <bpt id="p1">**</bpt>Date, times, and number format<ept id="p1">**</ept> setting that is specified under <bpt id="p2">**</bpt>Language and country/region preference<ept id="p2">**</ept> in <bpt id="p3">**</bpt>User options<ept id="p3">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">日付の形式は、<bpt id="p3">**</bpt>ユーザー オプション<ept id="p3">**</ept>の<bpt id="p2">**</bpt>言語と国/地域の基本設定<ept id="p2">**</ept>の下で指定される、ユーザーの<bpt id="p1">**</bpt>日付、時刻、および数字の形式<ept id="p1">**</ept>の設定によって決定されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>4</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Boolean</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">ブール型</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>15</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">15</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>GUID</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">GUID</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>16</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">16</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Int64</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Int64</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>If the <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> property isn't provided on the <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept> object, a free-text field is provided to the user.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> プロパティが <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept> オブジェクトで指定されていない場合、自由書式のフィールドがユーザーに提供されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>The <bpt id="p1">**</bpt>stringLength<ept id="p1">**</ept> property can be used to set the maximum string length that users can enter.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>stringLength<ept id="p1">**</ept> プロパティを使用し、ユーザーが入力できる最大文字列長を設定することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>If the <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> property is provided on the <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept> object, those list elements are the only values that users can select by using option buttons (radio buttons).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> プロパティが <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept> オブジェクトで指定された場合、これらのリスト要素が、ユーザーがオプション ボタン (ラジオ ボタン) を使用して選択できる唯一の値になります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>In this case, the string field can act as an enum value for the purpose of user entry.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">この場合、文字列フィールドは、ユーザーの入力を目的とする列挙値として機能します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>To save the value to the database as an enum, manually map the string value back to the enum value before you save to the database by using chain of command (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">データベースに値を列挙として保存するには、コマンド チェーンを使用してデータベースに保存する前に、手動で文字列値を列挙値にマップします (このトピックで後述する「TSTimesheetEntryService クラスでコマンド チェーンを使用し、アプリからデータベースにタイムシート エントリを再保存する」のセクションの例を参照してください)。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>fieldExtendedType (TSCustomFieldExtendedType)</source><target logoport:matchpercent="0" state="translated">fieldExtendedType (TSCustomFieldExtendedType)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>You can use this property to format real values as currency.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このプロパティを使用して、通貨として実数値の書式設定をすることができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>This approach is applicable only when the <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> value is <bpt id="p2">**</bpt>Real<ept id="p2">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">この方法は、<bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> の値が<bpt id="p2">**</bpt>実数<ept id="p2">**</ept>である場合にのみ適用されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source><bpt id="p1">**</bpt>TSCustomFieldExtendedType:None<ept id="p1">**</ept> – No formatting is applied.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSCustomFieldExtendedType:None<ept id="p1">**</ept> – 書式設定は適用されません。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">**</bpt>TSCustomFieldExtendedType::Currency<ept id="p1">**</ept> – Format the value as currency.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSCustomFieldExtendedType::Currency<ept id="p1">**</ept> – 通貨として値の書式設定します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>When currency formatting is active, the <bpt id="p1">**</bpt>stringValue<ept id="p1">**</ept> field can be used pass the currency code that should be shown in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">通貨の書式設定が有効な場合、<bpt id="p1">**</bpt>stringValue<ept id="p1">**</ept> フィールドを使用してアプリに表示する通貨コードを渡すことができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>The value is a read-only value.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">値は読み取り専用です。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>The <bpt id="p1">**</bpt>realValue<ept id="p1">**</ept> field contains the money amount that should be saved to the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>realValue<ept id="p1">**</ept> フィールドには、データベースに保存する必要のある金額が含まれています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>fieldSection (TSCustomFieldSection)</source><target logoport:matchpercent="0" state="translated">fieldSection (TSCustomFieldSection)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>You can use this property specify where the custom field should appear in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このプロパティを使用して、カスタム フィールドを必要のあるアプリ内の場所を指定することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source><bpt id="p1">**</bpt>TSCustomFieldSection::Header<ept id="p1">**</ept> – The field will appear in the <bpt id="p2">**</bpt>View more details<ept id="p2">**</ept> section in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSCustomFieldSection::Header<ept id="p1">**</ept> – このフィールドはアプリの<bpt id="p2">**</bpt>詳細を表示<ept id="p2">**</ept>セクションに表示されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>These fields are always read-only.</source><target logoport:matchpercent="83" state="translated" state-qualifier="fuzzy-match">これらのフィールドは、常に読み取り専用です。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source><bpt id="p1">**</bpt>TSCustomFieldSection::Line<ept id="p1">**</ept> – The field will appear after all the out-of-box line fields on timesheet entries.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSCustomFieldSection::Line<ept id="p1">**</ept> – このフィールドはタイムシート エントリで最初から用意されている明細行フィールドすべての後に表示されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>These fields can be either editable or read-only.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">これらのフィールドは、編集可能または読み取り専用のいずれかになります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>fieldName (FieldNameShort)</source><target logoport:matchpercent="0" state="translated">fieldName (FieldNameShort)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>This property identifies the field when values that the app provides are saved back to the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このプロパティにより、アプリによって指定される値がデータベースに再保存される時にフィールドを識別します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>tableName (TableNameShort)</source><target logoport:matchpercent="0" state="translated">tableName (TableNameShort)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>This property identifies the field when values that the app provides are saved back to the database.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">このプロパティにより、アプリによって指定される値がデータベースに再保存される時にフィールドを識別します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>isEditable (NoYes)</source><target logoport:matchpercent="0" state="translated">isEditable (NoYes)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Set this property to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to specify that the field in the timesheet entry section should be editable by users.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このプロパティを<bpt id="p1">**</bpt>はい<ept id="p1">**</ept>に設定し、ユーザーが編集可能なタイムシート エントリ セクションのフィールドを指定することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Set the property to <bpt id="p1">**</bpt>No<ept id="p1">**</ept> to make the field read-only.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このプロパティを<bpt id="p1">**</bpt>いいえ<ept id="p1">**</ept>に設定し、フィールドを読み取り専用にすることができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>isMandatory (NoYes)</source><target logoport:matchpercent="0" state="translated">isMandatory (NoYes)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Set this property to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to specify that the field in the timesheet entry section should be mandatory.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">このプロパティを<bpt id="p1">**</bpt>はい<ept id="p1">**</ept>に設定し、タイムシート エントリ セクションの必須のフィールドを指定することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>label (str)</source><target logoport:matchpercent="0" state="translated">label (str)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>This property specifies the label that is shown next the field in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このプロパティにより、アプリのフィールドの次に表示されるラベルを指定します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>stringOptions (List of Strings)</source><target logoport:matchpercent="0" state="translated">stringOptions (文字列のリスト)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>This property is applicable only when <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>String<ept id="p2">**</ept>.</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">このプロパティは、<bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> が<bpt id="p2">**</bpt>文字列<ept id="p2">**</ept>に設定されている場合にのみ適用されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>If <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> is set, the string values that are available for selection via option buttons (radio buttons) are specified by the strings in the list.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> が設定されている場合、オプション ボタン (ラジオ ボタン) により選択可能な文字列値は、リストの文字列によって指定されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>If no strings are provided, free-text entry in the string field is allowed (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">文字列が指定されなかった場合、文字列フィールドの自由書式のテキストが許可されます (このトピックで後述する「TSTimesheetEntryService クラスでコマンド チェーンを使用し、アプリからデータベースにタイムシート エントリを再保存する」のセクションの例を参照してください)。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>stringLength (int)</source><target logoport:matchpercent="0" state="translated">stringLength (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>This property specifies the maximum length for a string field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このプロパティにより、文字列フィールドの長さの最大値を指定します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>It's applicable only when <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>String<ept id="p2">**</ept>.</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> が<bpt id="p2">**</bpt>文字列<ept id="p2">**</ept>に設定されている場合にのみ適用されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>numberOfDecimals (int)</source><target logoport:matchpercent="0" state="translated">numberOfDecimals (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>This property specifies the number of decimal places that are shown for a real field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このプロパティにより、実数フィールドに表示される小数点以下の桁数を指定します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>It's applicable only when <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>Real<ept id="p2">**</ept>.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> が<bpt id="p2">**</bpt>実数<ept id="p2">**</ept>に設定されている場合にのみ適用されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>orderSequence (int)</source><target logoport:matchpercent="0" state="translated">orderSequence (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>This property controls the order in which the custom fields are shown in the app when more than one custom field is specified.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このプロパティにより、複数のカスタム フィールドが指定された場合に、カスタム フィールドがアプリに表示される順序を制御します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Fields that have lower numbers are shown first.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">番号が小さいフィールドが最初に表示されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>booleanValue (boolean)</source><target logoport:matchpercent="0" state="translated">booleanValue (ブール型)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>For fields of the <bpt id="p1">**</bpt>Boolean<ept id="p1">**</ept> type, this property passes the Boolean value of the field between the server and the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>ブール型<ept id="p1">**</ept>のタイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドのブール値を渡します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>guidValue (guid)</source><target logoport:matchpercent="0" state="translated">guidValue (guid)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>For fields of the <bpt id="p1">**</bpt>GUID<ept id="p1">**</ept> type, this property passes the globally unique identifier (GUID) value of the field between the server and the app.</source><target logoport:matchpercent="81" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>GUID<ept id="p1">**</ept> のタイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドのグローバル一意識別子 (GUID) を渡します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>int64Value (int64)</source><target logoport:matchpercent="0" state="translated">int64Value (int64)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>For fields of the <bpt id="p1">**</bpt>Int64<ept id="p1">**</ept> type, this property passes the int64 value of the field between the server and the app.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Int64<ept id="p1">**</ept> タイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドの int64 値を渡します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>intValue (int)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">intValue (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>For fields of the <bpt id="p1">**</bpt>Int<ept id="p1">**</ept> type, this property passes the int value of the field between the server and the app.</source><target logoport:matchpercent="92" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Int<ept id="p1">**</ept> タイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドの int 値を渡します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>realValue (real)</source><target logoport:matchpercent="0" state="translated">realValue (実数)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>For fields of the <bpt id="p1">**</bpt>Real<ept id="p1">**</ept> type, this property passes the real value of the field between the server and the app .</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>実数<ept id="p1">**</ept>タイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドの実数値を渡します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>stringValue (str)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">stringValue (str)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>For fields of the <bpt id="p1">**</bpt>String<ept id="p1">**</ept> type, this property passes the string value of the field between the server and the app.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>文字列<ept id="p1">**</ept>タイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドの文字列値を渡します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>It's also used for fields of the <bpt id="p1">**</bpt>Real<ept id="p1">**</ept> type that are formatted as currency.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">通貨として書式設定された<bpt id="p1">**</bpt>実数<ept id="p1">**</ept>タイプのフィールドにも使用されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>For those fields, the property is used to pass the currency code to the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">これらのフィールドについて、このプロパティはアプリに通貨コードを渡すために使用されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>dateValue (date)</source><target logoport:matchpercent="0" state="translated">dateValue (日付)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>For fields of the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> type, this property passes the date value of the field between the server and the app.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>日付<ept id="p1">**</ept>タイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドの日付値を渡します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Show and save a custom field in the timesheet entry section</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">タイムシート エントリ セクションのカスタム フィールドの表示および保存</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Below is a screenshot from the mobile app of a timesheet entry creation.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">タイムシート エントリを作成するモバイル アプリのスクリーンショットを次に示します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>It shows the out-of-box fields and a custom field in the "Time entry" section called "Test string" with an enum value of "Second option" already set.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">「テスト文字列」と呼ばれる「時間エントリ」に最初から用意されているフィールドとカスタム フィールドが、すでに設定されている「2 番目のオプション」の列挙値と共に表示されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Test string custom field in the app</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">アプリのテスト文字列のカスタム フィールド</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Below is a screenshot from the mobile app of the user selecting one of the enum options available for the "Test string" custom field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">「テスト文字列」のカスタム フィールドで使用可能な列挙オプションのいずれかを選択しているユーザーのモバイル アプリのスクリーンショットは次のとおりです。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>The two options are "First option" and "Second option" shown as radio buttons.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">ラジオ ボタンとして表示されている「1 番目のオプション」と「2 番目のオプション」の 2 つのオプションがあります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>The second option is currently selected.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">現在、2 番目のオプションが選択されています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Option buttons (radio buttons) for the Test string custom field</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">テスト文字列のカスタム フィールドのオプション ボタン (ラジオ ボタン)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Extend the TSTimesheetLine table so that it has a custom field</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">カスタム フィールドが含まれるように TSTimesheetLine テーブルを拡張します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>In typical scenarios, it's likely that the data for a custom field in the timesheet entry section will be saved to the TSTimesheetLine table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">一般的なシナリオでは、タイムシート エントリ セクションのカスタム フィールドのデータが TSTimesheetLine テーブルに保存されることがあります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>However, other tables can be used if the data can be retrieved based on a TSTimesheetTrans record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">ただし、他のテーブルは、指定された TSTimesheetTrans レコードに基づいてデータが取得された場合、またはTSTimesheetTransレコードに基づいてデータを取得できる場合、または固有のレコード コンテキストを持たない場合に使用されます (たとえば、プロジェクト パラメーターでフィールドが読み取り専用として設定されている場合です)。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Note that custom fields don't have to have any backing database records.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">カスタム フィールドには、バッキングのデータベース レコードを持つ必要がないことに注意してください。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>They can be dynamically generated based on X++ logic.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">X++ ロジックに基づいて動的に生成することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>This approach can be useful in read-only scenarios (see the “Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to fill in timesheet details” section for an example of dynamically generated custom field values.)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">この方法は読み取り専用のシナリオで役に立ちます (動的に生成されたカスタム フィールド値の例については、「TSTimesheetDetails クラスでコマンド チェーンを使用し、buildCustomFieldListForHeader メソッドによりタイムシートの詳細を入力する」のセクションを参照してください。)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Below is a screenshot from Visual Studio of the Application Object Tree.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">アプリケーション オブジェクト ツリーの Visual Studio のスクリーンショットを次に示します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>It shows an extension of the TSTimesheetLine table with the TestLineString field added as a custom field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">TSTimesheetLine テーブルの拡張機能とカスタム フィールドとして追加された TestLineString フィールドを表示します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Line string</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">行文字列</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the timesheet entry section</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">TSTimesheetSettings クラスの buildCustomFieldList メソッドのコマンド チェーンを使用して、タイムシート エントリ セクションにフィールドを表示します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>This code controls the display settings for the field in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このコードにより、アプリのフィールドの表示設定を制御します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">たとえば、フィールドのタイプ、ラベル、フィールドが必須であるかどうか、またフィールドが表示されるセクションを制御します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>The following example shows a string field on time entries.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">次の例は、時間入力の文字列フィールドを示します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>This field has two options, <bpt id="p1">**</bpt>First option<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Second option<ept id="p2">**</ept>, that are available via option buttons (radio buttons).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このフィールドには、<bpt id="p1">**</bpt>1 番目のオプション<ept id="p1">**</ept>と<bpt id="p2">**</bpt>2 番目のオプション<ept id="p2">**</ept>の 2 つのオプションがあり、オプション ボタン (ラジオ ボタン) を介して使用可能です。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>The field in the app is associated with the <bpt id="p1">**</bpt>TestLineString<ept id="p1">**</ept> field that is added to the TSTimesheetLine table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">アプリのフィールドは、TSTimesheetLine テーブルに追加される <bpt id="p1">**</bpt>TestLineString<ept id="p1">**</ept> フィールドに関連付けられています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Note the use of the <bpt id="p1">**</bpt>TSTimesheetCustomField::newFromMetatdata()<ept id="p1">**</ept> method to simplify the initialization of the custom field properties: <bpt id="p2">**</bpt>fieldBaseType<ept id="p2">**</ept>, <bpt id="p3">**</bpt>tableName<ept id="p3">**</ept>, <bpt id="p4">**</bpt>fieldname<ept id="p4">**</ept>, <bpt id="p5">**</bpt>label<ept id="p5">**</ept>, <bpt id="p6">**</bpt>isEditable<ept id="p6">**</ept>, <bpt id="p7">**</bpt>isMandatory<ept id="p7">**</ept>, <bpt id="p8">**</bpt>stringLength<ept id="p8">**</ept>, and <bpt id="p9">**</bpt>numberOfDecimals<ept id="p9">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSTimesheetCustomField::newFromMetatdata()<ept id="p1">**</ept> メソッドを使用して、<bpt id="p2">**</bpt>fieldBaseType<ept id="p2">**</ept>、<bpt id="p3">**</bpt>tableName<ept id="p3">**</ept>、<bpt id="p4">**</bpt>fieldname<ept id="p4">**</ept>、<bpt id="p5">**</bpt>label<ept id="p5">**</ept>、<bpt id="p6">**</bpt>isEditable<ept id="p6">**</ept>、<bpt id="p7">**</bpt>isMandatory<ept id="p7">**</ept>、<bpt id="p8">**</bpt>stringLength<ept id="p8">**</ept>、および <bpt id="p9">**</bpt>numberOfDecimals<ept id="p9">**</ept> のカスタム フィールド プロパティの初期化を簡略化することに注意してください。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>You can also set these parameters manually, as you prefer.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">これらのパラメーターは、必要に応じて手動で設定することもできます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Use chain of command on the buildCustomFieldListForEntry method of the TSTimesheetEntry class to enter values in a timesheet entry</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">TSTimesheetEntry クラスの buildCustomFieldListForEntry メソッドのコマンド チェーンを使用して、タイムシート エントリに値を入力します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>The <bpt id="p1">**</bpt>buildCustomFieldListForEntry<ept id="p1">**</ept> method is used to enter values on the saved timesheet lines in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>buildCustomFieldListForEntry<ept id="p1">**</ept> メソッドは、モバイル アプリの保存されたタイムシートの明細行に値を入力するために使用されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>It takes a TSTimesheetTrans record as a parameter.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">TSTimesheetTrans レコードをパラメーターとして使用します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Fields from that record can be used to fill in the custom field value in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">レコードのフィールドを使用して、アプリのカスタム フィールドの値を入力することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">TSTimesheetEntryService クラスのコマンド チェーンを使用して、アプリからデータベースにタイムシートのエントリを再保存します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>To save a custom field back to the database in typical usage, you must extend multiple methods:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">通常の方法でデータベースにカスタム フィールドを再保存するには、複数のメソッドを拡張する必要があります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>The <bpt id="p1">**</bpt>timesheetLineNeedsUpdating<ept id="p1">**</ept> method is used to determine whether the line record has been changed by the user in the app and must be saved to the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>timesheetLineNeedsUpdating<ept id="p1">**</ept> メソッドを使用して、明細行レコードがアプリでユーザーによって変更されたかどうか、およびデータベースに保存する必要があるかどうかを特定します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>If performance isn't a concern, this method can be simplified so that it always returns <bpt id="p1">**</bpt>true<ept id="p1">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">パフォーマンスが問題にならない場合は、このメソッドを簡略化し、常に <bpt id="p1">**</bpt>True<ept id="p1">**</ept> を返すようにすることができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>The <bpt id="p1">**</bpt>populateTimesheetLineFromEntryDuringCreate<ept id="p1">**</ept> and <bpt id="p2">**</bpt>populateTimesheetLineFromEntryDuringUpdate<ept id="p2">**</ept> methods can be extended so that they enter values in the TSTimesheetLine database record from the TSTimesheetEntry data contract record that is provided.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>populateTimesheetLineFromEntryDuringCreate<ept id="p1">**</ept> および <bpt id="p2">**</bpt>populateTimesheetLineFromEntryDuringUpdate<ept id="p2">**</ept> メソッドを拡張し、指定された TSTimesheetEntry データ コントラクト レコードから TSTimesheetLine データベース レコードに値を入力できるようにすることができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>In the example that follows, notice how the mapping between the database field and the entry field is manually done via X++ code.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">次の例では、データベース フィールドと入力フィールドの間のマッピングが X++ コードを介して手動で行われる方法に注意してください。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>The <bpt id="p1">**</bpt>populateTimesheetWeekFromEntry<ept id="p1">**</ept> method can also be extended if the custom field that is mapped to the <bpt id="p2">**</bpt>TSTimesheetEntry<ept id="p2">**</ept> object must write back to the TSTimesheetLineweek database table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p2">**</bpt>TSTimesheetEntry<ept id="p2">**</ept> オブジェクトにマップされているカスタム フィールドを TSTimesheetLineweek データベース テーブル に再書き込みする必要がある場合、<bpt id="p1">**</bpt>populateTimesheetWeekFromEntry<ept id="p1">**</ept> メソッドは拡張することもできます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>The following example saves the <bpt id="p1">**</bpt>firstOption<ept id="p1">**</ept> or <bpt id="p2">**</bpt>secondOption<ept id="p2">**</ept> value that the user selects to the database as a raw string value.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">次の例では、ユーザーが未加工の文字列値としてデータベースに選択した <bpt id="p1">**</bpt>firstOption<ept id="p1">**</ept> または <bpt id="p2">**</bpt>secondOption<ept id="p2">**</ept> の値を保存します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>If the database field is a field of the <bpt id="p1">**</bpt>Enum<ept id="p1">**</ept> type, those values can be manually mapped to an enum value and then saved to an enum field on the database table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">データベース フィールドが<bpt id="p1">**</bpt>列挙<ept id="p1">**</ept>タイプのフィールドである場合、これらの値を手動で列挙値にマップし、データベース テーブルの列挙フィールドに保存することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Show a custom field in the timesheet header section</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">タイムシート ヘッダー セクションのカスタム フィールドの表示</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Below is a screenshot from the mobile app of a user viewing a timesheet.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">ユーザーがタイムシートを表示しているモバイル アプリのスクリーンショットを次に示します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>The "More information" button has been selected in the upper-right corner to show the "View more details" option.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">「詳細を表示」オプションを表示するために、右上隅にある「詳細情報」ボタンが選択されています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>View more details command</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">詳細なコマンドを表示</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Below is a screenshot from the mobile app showing the “More” section of a timesheet.</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">タイムシートの「詳細」セクションを表示しているモバイル アプリのスクリーンショットを次に示します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">「このタイムシートの稼動率 (計算されたカスタム フィールド)」と呼ばれるカスタム フィールドがタイムシートのヘッダー セクションに追加されました。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>A read-only value of "0.667" is set on the custom field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">「0.667」の読み取り専用値がカスタム フィールドに設定されています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>More section</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match">詳細セクション</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Extend the TSTimesheetTable table so that it has a custom field</source><target logoport:matchpercent="90" state="translated" state-qualifier="fuzzy-match">カスタム フィールドが含まれるように TSTimesheetTable テーブルを拡張します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>In typical scenarios, it's likely that the data for a custom field in the header section will be pulled from the TSTimesheetHeader table.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">一般的なシナリオでは、ヘッダー セクションのカスタム フィールドのデータが TSTimesheetHeader テーブルから引き出されることがあります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>However, other tables can be used if the data can be retrieved based on a TSTimesheetTable record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</source><target logoport:matchpercent="97" state="translated" state-qualifier="fuzzy-match">ただし、他のテーブルは、指定された TSTimesheetTable のレコードに基づいてデータが取得された場合、またはTSTimesheetTransレコードに基づいてデータを取得できる場合、または固有のレコード コンテキストを持たない場合に使用されます (たとえば、プロジェクト パラメーターでフィールドが読み取り専用として設定されている場合です)。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Note that custom fields don't have to have any backing database records.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">カスタム フィールドには、バッキングのデータベース レコードを持つ必要がないことに注意してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>They can be dynamically generated based on X++ logic.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">X++ ロジックに基づいて動的に生成することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>The example that follows shows this approach.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">次の例はこの方法を示しています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Fields in the header section are always read-only in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">ヘッダー セクションのフィールドは、アプリでは常に読み取り専用です。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the header section</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">TSTimesheetSettings クラスの buildCustomFieldList メソッドのコマンド チェーンを使用して、ヘッダー セクションにフィールドを表示します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>This code controls the display settings for the field in the app.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">このコードにより、アプリのフィールドの表示設定を制御します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">たとえば、フィールドのタイプ、ラベル、フィールドが必須であるかどうか、またフィールドが表示されるセクションを制御します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>The following example shows a computed value in the header section in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">次の例では、アプリのヘッダー セクションに計算された値を表示します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Use chain of command on the buildCustomFieldListForHeader method of the TSTimesheetDetails class to fill in timesheet details</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">TSTimesheetDetails クラスの buildCustomFieldListForHeader メソッドのコマンド チェーンを使用して、タイムシートの詳細を記入します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>The <bpt id="p1">**</bpt>buildCustomFieldListForHeader<ept id="p1">**</ept> method is used to fill in the timesheet header details in the mobile app.</source><target logoport:matchpercent="71" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>buildCustomFieldListForHeader<ept id="p1">**</ept> メソッドは、モバイル アプリのタイムシート ヘッダーの詳細を記入するために使用されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>It takes a TSTimesheetTable record as a parameter.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">TSTimesheetTable レコードをパラメーターとして使用します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Fields from that record can be used to fill in the custom field value in the app.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">レコードのフィールドを使用して、アプリのカスタム フィールドの値を入力することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>The following example doesn't read any values from the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">次の例では、データベースから値を読み取ることができません。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Instead, it uses X++ logic to generate a computed value that is then shown in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">代わりに、X++ ロジックを使用して、アプリに表示される計算値を生成します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Other configurability/extensibility opportunities</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">他のコンフィギュレーションの可能性または機能拡張の機会</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Adding additional validation for the app</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">アプリへの追加検証の追加</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Existing logic for timesheet functionality at the database level will still work as expected.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">タイムシート機能に対するデータベース レベルでの既存のロジックは、期待どおりに動作します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>To interrupt the completion of save or submit operations and show a specific error message, you can add <bpt id="p1">**</bpt>throw error("message to user")<ept id="p1">**</ept> to the code via a chain of command extension.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">保存または送信操作の完了を中断して特定のエラー メッセージを表示するために、コマンド チェーン拡張機能を介してコードに<bpt id="p1">**</bpt>エラーをスロー (「ユーザーへのメッセージ」)<ept id="p1">**</ept> を追加することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Here are three examples of useful extensible methods:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">便利で拡張可能なメソッドの 3 つの例を示します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>If <bpt id="p1">**</bpt>validateWrite<ept id="p1">**</ept> on the TSTimesheetLine table returns <bpt id="p2">**</bpt>false<ept id="p2">**</ept> during a save operation for a timesheet line, an error message is shown in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">タイムシートの明細行に対する保存操作中に TSTimesheetLine テーブルの <bpt id="p1">**</bpt>validateWrite<ept id="p1">**</ept> が <bpt id="p2">**</bpt>False<ept id="p2">**</ept> を返す場合、エラー メッセージがモバイル アプリに表示されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>If <bpt id="p1">**</bpt>validateSubmit<ept id="p1">**</ept> on the TSTimesheetTable table returns <bpt id="p2">**</bpt>false<ept id="p2">**</ept> during timesheet submission in the app, an error message is shown to the user.</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">アプリでタイムシートの送信中に TSTimesheetTable テーブルの <bpt id="p1">**</bpt>validateSubmit<ept id="p1">**</ept> が <bpt id="p2">**</bpt>False<ept id="p2">**</ept> を返す場合、エラー メッセージがユーザーに表示されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Logic that fills in fields (for example, <bpt id="p1">**</bpt>Line Property<ept id="p1">**</ept>) during the <bpt id="p2">**</bpt>insert<ept id="p2">**</ept> method on the TSTimesheetLine table will still run.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">TSTimesheetLine テーブルの<bpt id="p2">**</bpt>挿入<ept id="p2">**</ept>メソッドの実行中にフィールドを入力するロジック (たとえば、<bpt id="p1">**</bpt>明細行プロパティ<ept id="p1">**</ept>) も実行されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Hiding and marking out-of-box fields as read-only via configuration</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">コンフィギュレーションにより、最初から用意されているフィールドを非表示また読み取り専用としてマーキング</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>From the project parameters, you can make out-of-box fields read-only or hidden in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">プロジェクト パラメーターから、最初から用意されているフィールドをモバイル アプリで読み取り専用または非表示にすることができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Set the options in the <bpt id="p1">**</bpt>Mobile timesheets<ept id="p1">**</ept> section on the <bpt id="p2">**</bpt>Timesheet<ept id="p2">**</ept> tab of the <bpt id="p3">**</bpt>Project management and accounting parameters<ept id="p3">**</ept> page.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p3">**</bpt>プロジェクト管理と会計パラメーター<ept id="p3">**</ept> ページの<bpt id="p2">**</bpt>タイムシート<ept id="p2">**</ept> タブで、<bpt id="p1">**</bpt>モバイル タイムシート<ept id="p1">**</ept> セクションのオプションを設定します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Project parameters</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">プロジェクト パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Changing the activities that are available for selection via extensions</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">拡張機能を介して選択可能な活動の変更</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>The activities that are available for selection for a project are filled in via the <bpt id="p1">**</bpt>getActivitiesForProject()<ept id="p1">**</ept> and <bpt id="p2">**</bpt>getActivityQuery()<ept id="p2">**</ept> methods in the <bpt id="p3">**</bpt>TsTimesheetProjectService<ept id="p3">**</ept> class.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">プロジェクトに対して選択可能な活動は、<bpt id="p3">**</bpt>TsTimesheetProjectService<ept id="p3">**</ept> クラスの <bpt id="p1">**</bpt>getActivitiesForProject()<ept id="p1">**</ept> および <bpt id="p2">**</bpt>getActivityQuery()<ept id="p2">**</ept> メソッドを介して入力されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>You can use chain of command to change this behavior to match your business scenario for the activities that are available for selection for a specific project.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">コマンド チェーンを使用してこの動作を変更し、特定のプロジェクトに対して選択可能な活動のビジネス シナリオに一致させることができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Entering a default project category on timesheet entries</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">タイムシート エントリに既定のプロジェクト カテゴリを入力する</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Entry of a default project category on timesheet entries occurs at three levels.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">タイムシート エントリの既定のプロジェクト カテゴリの入力は、3 つのレベルで発生します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>You can use chain of command to extend the behavior at any or all of these levels to achieve the desired behavior.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">コマンド チェーンを使用してこれらのレベルのいずれかまたはすべてにおける動作を拡張することにより、目的の動作を実現することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>The following hierarchy is used:</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">次の階層が使用されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>The app tries to put the default category from the project resource.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">アプリは、プロジェクト リソースからの既定のカテゴリの配置を試みます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>This default category is set in the <bpt id="p1">**</bpt>getCurrentUserResource<ept id="p1">**</ept> and <bpt id="p2">**</bpt>getDelegatedResourcesForCurrentUser<ept id="p2">**</ept> methods in the <bpt id="p3">**</bpt>TSTimesheetSettingsService<ept id="p3">**</ept> class.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">この既定のカテゴリは、<bpt id="p3">**</bpt>TSTimesheetSettingsService<ept id="p3">**</ept> クラスの <bpt id="p1">**</bpt>getCurrentUserResource<ept id="p1">**</ept> および <bpt id="p2">**</bpt>getDelegatedResourcesForCurrentUser<ept id="p2">**</ept> メソッドで設定されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>If the default category isn't provided at the project resource level, the app tries to pull it from the project activity.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">プロジェクト リソース レベルで既定のカテゴリが指定されていない場合、アプリはプロジェクト活動からの取得を試みます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>This default category is set in the <bpt id="p1">**</bpt>getActivitiesForProject<ept id="p1">**</ept> method in the <bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept> class.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">この既定のカテゴリは、<bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept> クラスの <bpt id="p1">**</bpt>getActivitiesForProject<ept id="p1">**</ept> メソッドで設定されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>If the default category isn't provided at the project activity level, the default category it taken from the project parameters.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">プロジェクト活動レベルで既定のカテゴリが指定されていない場合、既定のカテゴリはプロジェクトのパラメーターから取得されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>This default category is set in the <bpt id="p1">**</bpt>getProjectDetailsbyRule<ept id="p1">**</ept> method in the <bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept> class.</source><target logoport:matchpercent="91" state="translated" state-qualifier="fuzzy-match">この既定のカテゴリは、<bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept> クラスの <bpt id="p1">**</bpt>getProjectDetailsbyRule<ept id="p1">**</ept> メソッドで設定されます。</target>
-        </trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: iOS および Android 用 Microsoft Dynamics 365 Project Timesheet モバイル アプリのカスタム フィールドの実装
+description: このトピックでは、拡張機能を使用してカスタム フィールドを実装するための共通のパターンを示します。
+author: KimANelson
+manager: AnnBe
+ms.date: 05/29/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.search.industry: Service industries
+ms.author: knelson
+ms.dyn365.ops.version: 10.0.3
+ms.search.validFrom: 2019-05-29
+ms.openlocfilehash: 4343c875da05641c57b7784bf52f1c814dd26d20
+ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1617999"
+---
+# <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a><span data-ttu-id="a4b28-103">iOS および Android 用 Microsoft Dynamics 365 Project Timesheet モバイル アプリのカスタム フィールドの実装</span><span class="sxs-lookup"><span data-stu-id="a4b28-103">Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile app on iOS and Android</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="a4b28-104">このトピックでは、拡張機能を使用してカスタム フィールドを実装するための共通のパターンを示します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-104">This topic provides common patterns for using extensions to implement custom fields.</span></span> <span data-ttu-id="a4b28-105">トピックの対象は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="a4b28-105">The following topics are covered:</span></span>
+
+- <span data-ttu-id="a4b28-106">カスタム フィールド フレームワークでサポートされるさまざまなデータ型</span><span class="sxs-lookup"><span data-stu-id="a4b28-106">The various data types that the custom field framework supports</span></span>
+- <span data-ttu-id="a4b28-107">タイムシート エントリに読み取り専用または編集可能なフィールドを表示し、ユーザーが入力した値をデータベースに再保存する方法</span><span class="sxs-lookup"><span data-stu-id="a4b28-107">How to show read-only or editable fields on timesheet entries, and save user-provided values back to the database</span></span>
+- <span data-ttu-id="a4b28-108">タイムシート ヘッダーに読み取り専用フィールドを表示する方法</span><span class="sxs-lookup"><span data-stu-id="a4b28-108">How to show read-only fields on the timesheet header</span></span>
+- <span data-ttu-id="a4b28-109">他のカスタム ビジネス ロジックを統合して、フィールドに既定値を入力し、追加の検証を行う方法</span><span class="sxs-lookup"><span data-stu-id="a4b28-109">How to integrate other custom business logic to enter default values in fields and do additional validation</span></span>
+
+## <a name="audience"></a><span data-ttu-id="a4b28-110">対象者</span><span class="sxs-lookup"><span data-stu-id="a4b28-110">Audience</span></span>
+
+<span data-ttu-id="a4b28-111">このトピックは、Apple iOS および Google Android で利用可能な Microsoft Dynamics 365 Project Timesheet モバイル アプリケーションにカスタムフィールドを統合する開発者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="a4b28-111">This topic is intended for developers who are integrating their custom fields into the Microsoft Dynamics 365 Project Timesheet mobile application that is available for Apple iOS and Google Android.</span></span> <span data-ttu-id="a4b28-112">読者が X++ 開発とプロジェクト タイムシート機能をよく使用していることを前提としています。</span><span class="sxs-lookup"><span data-stu-id="a4b28-112">The assumption is that readers are familiar with X++ development and project timesheet functionality.</span></span>
+
+## <a name="data-contract--tstimesheetcustomfield-x-class"></a><span data-ttu-id="a4b28-113">データ契約 – TSTimesheetCustomField X++ クラス</span><span class="sxs-lookup"><span data-stu-id="a4b28-113">Data contract – TSTimesheetCustomField X++ class</span></span>
+
+<span data-ttu-id="a4b28-114">**TSTimesheetCustomField** クラスは、X++ データ契約クラスで、タイムシート機能のカスタム フィールドに関する情報を表します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-114">The **TSTimesheetCustomField** class is the X++ data contract class that represents information about a custom field for timesheet functionality.</span></span> <span data-ttu-id="a4b28-115">モバイル アプリにカスタム フィールドを表示するために、TSTimesheetDetails データ契約と TSTimesheetEntry データ契約の両方にカスタム フィールド オブジェクトのリストが渡されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-115">Lists of the custom field objects are passed on both the TSTimesheetDetails data contract and the TSTimesheetEntry data contract to show custom fields in the mobile app.</span></span>
+
+- <span data-ttu-id="a4b28-116">**TSTimesheetDetails** - タイムシートのヘッダー契約。</span><span class="sxs-lookup"><span data-stu-id="a4b28-116">**TSTimesheetDetails** - The timesheet header contract.</span></span>
+- <span data-ttu-id="a4b28-117">**TSTimesheetEntry** - タイムシートのトランザクション契約。</span><span class="sxs-lookup"><span data-stu-id="a4b28-117">**TSTimesheetEntry** - The timesheet transaction contract.</span></span> <span data-ttu-id="a4b28-118">同じプロジェクト情報と **timesheetLineRecId** 値を持つオブジェクトのグループが 1 つの明細行を構成します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-118">Groups of these objects that have the same project information and **timesheetLineRecId** value constitute a line.</span></span>
+
+### <a name="fieldbasetype-types"></a><span data-ttu-id="a4b28-119">fieldBaseType (タイプ)</span><span class="sxs-lookup"><span data-stu-id="a4b28-119">fieldBaseType (Types)</span></span>
+
+<span data-ttu-id="a4b28-120">**TsTimesheetCustom** オブジェクトの **FieldBaseType** プロパティによって、アプリに表示されるフィールドのタイプが決定されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-120">The **FieldBaseType** property on the **TsTimesheetCustom** object determines the type of the field that appears in the app.</span></span> <span data-ttu-id="a4b28-121">次の**タイプ**の値がサポートされます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-121">The following **Types** values that are supported.</span></span>
+
+| <span data-ttu-id="a4b28-122">タイプの値</span><span class="sxs-lookup"><span data-stu-id="a4b28-122">Types value</span></span> | <span data-ttu-id="a4b28-123">型</span><span class="sxs-lookup"><span data-stu-id="a4b28-123">Type</span></span>              | <span data-ttu-id="a4b28-124">摘要</span><span class="sxs-lookup"><span data-stu-id="a4b28-124">Notes</span></span> |
+|-------------|-------------------|-------|
+| <span data-ttu-id="a4b28-125">0</span><span class="sxs-lookup"><span data-stu-id="a4b28-125">0</span></span>           | <span data-ttu-id="a4b28-126">文字列 (および列挙)</span><span class="sxs-lookup"><span data-stu-id="a4b28-126">String (and Enum)</span></span> | <span data-ttu-id="a4b28-127">このフィールドは、テキスト フィールドとして表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-127">The field appears as a text field.</span></span> |
+| <span data-ttu-id="a4b28-128">1</span><span class="sxs-lookup"><span data-stu-id="a4b28-128">1</span></span>           | <span data-ttu-id="a4b28-129">整数</span><span class="sxs-lookup"><span data-stu-id="a4b28-129">Integer</span></span>           | <span data-ttu-id="a4b28-130">この値は、小数点以下を含まない数字として表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-130">The value is shown as a number without decimal places.</span></span> |
+| <span data-ttu-id="a4b28-131">2</span><span class="sxs-lookup"><span data-stu-id="a4b28-131">2</span></span>           | <span data-ttu-id="a4b28-132">実績</span><span class="sxs-lookup"><span data-stu-id="a4b28-132">Real</span></span>              | <span data-ttu-id="a4b28-133">この値は、小数点以下を含む数字として表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-133">The value is shown as a number that has decimal places.</span></span><p><span data-ttu-id="a4b28-134">アプリで通貨として実数値を表示するには、**fieldExtenededType** プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-134">To show the real value as a currency in the app, use the **fieldExtenededType** property.</span></span> <span data-ttu-id="a4b28-135">**numberOfDecimals** プロパティを使用し、表示される小数点以下の桁数を設定することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-135">You can use the **numberOfDecimals** property to set the number of decimal places that are shown.</span></span></p> |
+| <span data-ttu-id="a4b28-136">3</span><span class="sxs-lookup"><span data-stu-id="a4b28-136">3</span></span>           | <span data-ttu-id="a4b28-137">日</span><span class="sxs-lookup"><span data-stu-id="a4b28-137">Date</span></span>              | <span data-ttu-id="a4b28-138">日付の形式は、**ユーザー オプション**の**言語と国/地域の基本設定**の下で指定される、ユーザーの**日付、時刻、および数字の形式**の設定によって決定されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-138">Date formats are determined by the user's **Date, times, and number format** setting that is specified under **Language and country/region preference** in **User options**.</span></span> |
+| <span data-ttu-id="a4b28-139">4</span><span class="sxs-lookup"><span data-stu-id="a4b28-139">4</span></span>           | <span data-ttu-id="a4b28-140">ブール型</span><span class="sxs-lookup"><span data-stu-id="a4b28-140">Boolean</span></span>           | |
+| <span data-ttu-id="a4b28-141">15</span><span class="sxs-lookup"><span data-stu-id="a4b28-141">15</span></span>          | <span data-ttu-id="a4b28-142">GUID</span><span class="sxs-lookup"><span data-stu-id="a4b28-142">GUID</span></span>              | |
+| <span data-ttu-id="a4b28-143">16</span><span class="sxs-lookup"><span data-stu-id="a4b28-143">16</span></span>          | <span data-ttu-id="a4b28-144">Int64</span><span class="sxs-lookup"><span data-stu-id="a4b28-144">Int64</span></span>             | |
+
+- <span data-ttu-id="a4b28-145">**stringOptions** プロパティが **TSTimesheetCustomField** オブジェクトで指定されていない場合、自由書式のフィールドがユーザーに提供されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-145">If the **stringOptions** property isn't provided on the **TSTimesheetCustomField** object, a free-text field is provided to the user.</span></span>
+
+    <span data-ttu-id="a4b28-146">**stringLength** プロパティを使用し、ユーザーが入力できる最大文字列長を設定することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-146">The **stringLength** property can be used to set the maximum string length that users can enter.</span></span>
+
+- <span data-ttu-id="a4b28-147">**stringOptions** プロパティが **TSTimesheetCustomField** オブジェクトで指定された場合、これらのリスト要素が、ユーザーがオプション ボタン (ラジオ ボタン) を使用して選択できる唯一の値になります。</span><span class="sxs-lookup"><span data-stu-id="a4b28-147">If the **stringOptions** property is provided on the **TSTimesheetCustomField** object, those list elements are the only values that users can select by using option buttons (radio buttons).</span></span>
+
+    <span data-ttu-id="a4b28-148">この場合、文字列フィールドは、ユーザーの入力を目的とする列挙値として機能します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-148">In this case, the string field can act as an enum value for the purpose of user entry.</span></span> <span data-ttu-id="a4b28-149">データベースに値を列挙として保存するには、コマンド チェーンを使用してデータベースに保存する前に、手動で文字列値を列挙値にマップします (このトピックで後述する「TSTimesheetEntryService クラスでコマンド チェーンを使用し、アプリからデータベースにタイムシート エントリを再保存する」のセクションの例を参照してください)。</span><span class="sxs-lookup"><span data-stu-id="a4b28-149">To save the value to the database as an enum, manually map the string value back to the enum value before you save to the database by using chain of command (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</span></span>
+
+### <a name="fieldextendedtype-tscustomfieldextendedtype"></a><span data-ttu-id="a4b28-150">fieldExtendedType (TSCustomFieldExtendedType)</span><span class="sxs-lookup"><span data-stu-id="a4b28-150">fieldExtendedType (TSCustomFieldExtendedType)</span></span>
+
+<span data-ttu-id="a4b28-151">このプロパティを使用して、通貨として実数値の書式設定をすることができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-151">You can use this property to format real values as currency.</span></span> <span data-ttu-id="a4b28-152">この方法は、**fieldBaseType** の値が**実数**である場合にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-152">This approach is applicable only when the **fieldBaseType** value is **Real**.</span></span>
+
+- <span data-ttu-id="a4b28-153">**TSCustomFieldExtendedType:None** – 書式設定は適用されません。</span><span class="sxs-lookup"><span data-stu-id="a4b28-153">**TSCustomFieldExtendedType:None** – No formatting is applied.</span></span>
+- <span data-ttu-id="a4b28-154">**TSCustomFieldExtendedType::Currency** – 通貨として値の書式設定します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-154">**TSCustomFieldExtendedType::Currency** – Format the value as currency.</span></span>
+
+    <span data-ttu-id="a4b28-155">通貨の書式設定が有効な場合、**stringValue** フィールドを使用してアプリに表示する通貨コードを渡すことができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-155">When currency formatting is active, the **stringValue** field can be used pass the currency code that should be shown in the app.</span></span> <span data-ttu-id="a4b28-156">値は読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a4b28-156">The value is a read-only value.</span></span>
+
+    <span data-ttu-id="a4b28-157">**realValue** フィールドには、データベースに保存する必要のある金額が含まれています。</span><span class="sxs-lookup"><span data-stu-id="a4b28-157">The **realValue** field contains the money amount that should be saved to the database.</span></span>
+
+### <a name="fieldsection-tscustomfieldsection"></a><span data-ttu-id="a4b28-158">fieldSection (TSCustomFieldSection)</span><span class="sxs-lookup"><span data-stu-id="a4b28-158">fieldSection (TSCustomFieldSection)</span></span>
+
+<span data-ttu-id="a4b28-159">このプロパティを使用して、カスタム フィールドを必要のあるアプリ内の場所を指定することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-159">You can use this property specify where the custom field should appear in the app.</span></span>
+
+- <span data-ttu-id="a4b28-160">**TSCustomFieldSection::Header** – このフィールドはアプリの**詳細を表示**セクションに表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-160">**TSCustomFieldSection::Header** – The field will appear in the **View more details** section in the app.</span></span> <span data-ttu-id="a4b28-161">これらのフィールドは、常に読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a4b28-161">These fields are always read-only.</span></span>
+- <span data-ttu-id="a4b28-162">**TSCustomFieldSection::Line** – このフィールドはタイムシート エントリで最初から用意されている明細行フィールドすべての後に表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-162">**TSCustomFieldSection::Line** – The field will appear after all the out-of-box line fields on timesheet entries.</span></span> <span data-ttu-id="a4b28-163">これらのフィールドは、編集可能または読み取り専用のいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="a4b28-163">These fields can be either editable or read-only.</span></span>
+
+### <a name="fieldname-fieldnameshort"></a><span data-ttu-id="a4b28-164">fieldName (FieldNameShort)</span><span class="sxs-lookup"><span data-stu-id="a4b28-164">fieldName (FieldNameShort)</span></span>
+
+<span data-ttu-id="a4b28-165">このプロパティにより、アプリによって指定される値がデータベースに再保存される時にフィールドを識別します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-165">This property identifies the field when values that the app provides are saved back to the database.</span></span>
+
+### <a name="tablename-tablenameshort"></a><span data-ttu-id="a4b28-166">tableName (TableNameShort)</span><span class="sxs-lookup"><span data-stu-id="a4b28-166">tableName (TableNameShort)</span></span>
+
+<span data-ttu-id="a4b28-167">このプロパティにより、アプリによって指定される値がデータベースに再保存される時にフィールドを識別します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-167">This property identifies the field when values that the app provides are saved back to the database.</span></span>
+
+### <a name="iseditable-noyes"></a><span data-ttu-id="a4b28-168">isEditable (NoYes)</span><span class="sxs-lookup"><span data-stu-id="a4b28-168">isEditable (NoYes)</span></span>
+
+<span data-ttu-id="a4b28-169">このプロパティを**はい**に設定し、ユーザーが編集可能なタイムシート エントリ セクションのフィールドを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-169">Set this property to **Yes** to specify that the field in the timesheet entry section should be editable by users.</span></span> <span data-ttu-id="a4b28-170">このプロパティを**いいえ**に設定し、フィールドを読み取り専用にすることができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-170">Set the property to **No** to make the field read-only.</span></span>
+
+### <a name="ismandatory-noyes"></a><span data-ttu-id="a4b28-171">isMandatory (NoYes)</span><span class="sxs-lookup"><span data-stu-id="a4b28-171">isMandatory (NoYes)</span></span>
+
+<span data-ttu-id="a4b28-172">このプロパティを**はい**に設定し、タイムシート エントリ セクションの必須のフィールドを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-172">Set this property to **Yes** to specify that the field in the timesheet entry section should be mandatory.</span></span>
+
+### <a name="label-str"></a><span data-ttu-id="a4b28-173">label (str)</span><span class="sxs-lookup"><span data-stu-id="a4b28-173">label (str)</span></span>
+
+<span data-ttu-id="a4b28-174">このプロパティにより、アプリのフィールドの次に表示されるラベルを指定します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-174">This property specifies the label that is shown next the field in the app.</span></span>
+
+### <a name="stringoptions-list-of-strings"></a><span data-ttu-id="a4b28-175">stringOptions (文字列のリスト)</span><span class="sxs-lookup"><span data-stu-id="a4b28-175">stringOptions (List of Strings)</span></span>
+
+<span data-ttu-id="a4b28-176">このプロパティは、**fieldBaseType** が**文字列**に設定されている場合にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-176">This property is applicable only when **fieldBaseType** is set to **String**.</span></span> <span data-ttu-id="a4b28-177">**stringOptions** が設定されている場合、オプション ボタン (ラジオ ボタン) により選択可能な文字列値は、リストの文字列によって指定されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-177">If **stringOptions** is set, the string values that are available for selection via option buttons (radio buttons) are specified by the strings in the list.</span></span> <span data-ttu-id="a4b28-178">文字列が指定されなかった場合、文字列フィールドの自由書式のテキストが許可されます (このトピックで後述する「TSTimesheetEntryService クラスでコマンド チェーンを使用し、アプリからデータベースにタイムシート エントリを再保存する」のセクションの例を参照してください)。</span><span class="sxs-lookup"><span data-stu-id="a4b28-178">If no strings are provided, free-text entry in the string field is allowed (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</span></span>
+
+### <a name="stringlength-int"></a><span data-ttu-id="a4b28-179">stringLength (int)</span><span class="sxs-lookup"><span data-stu-id="a4b28-179">stringLength (int)</span></span>
+
+<span data-ttu-id="a4b28-180">このプロパティにより、文字列フィールドの長さの最大値を指定します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-180">This property specifies the maximum length for a string field.</span></span> <span data-ttu-id="a4b28-181">**fieldBaseType** が**文字列**に設定されている場合にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-181">It's applicable only when **fieldBaseType** is set to **String**.</span></span>
+
+### <a name="numberofdecimals-int"></a><span data-ttu-id="a4b28-182">numberOfDecimals (int)</span><span class="sxs-lookup"><span data-stu-id="a4b28-182">numberOfDecimals (int)</span></span>
+
+<span data-ttu-id="a4b28-183">このプロパティにより、実数フィールドに表示される小数点以下の桁数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-183">This property specifies the number of decimal places that are shown for a real field.</span></span> <span data-ttu-id="a4b28-184">**fieldBaseType** が**実数**に設定されている場合にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-184">It's applicable only when **fieldBaseType** is set to **Real**.</span></span>
+
+### <a name="ordersequence-int"></a><span data-ttu-id="a4b28-185">orderSequence (int)</span><span class="sxs-lookup"><span data-stu-id="a4b28-185">orderSequence (int)</span></span>
+
+<span data-ttu-id="a4b28-186">このプロパティにより、複数のカスタム フィールドが指定された場合に、カスタム フィールドがアプリに表示される順序を制御します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-186">This property controls the order in which the custom fields are shown in the app when more than one custom field is specified.</span></span> <span data-ttu-id="a4b28-187">番号が小さいフィールドが最初に表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-187">Fields that have lower numbers are shown first.</span></span>
+
+### <a name="booleanvalue-boolean"></a><span data-ttu-id="a4b28-188">booleanValue (ブール型)</span><span class="sxs-lookup"><span data-stu-id="a4b28-188">booleanValue (boolean)</span></span>
+
+<span data-ttu-id="a4b28-189">**ブール型**のタイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドのブール値を渡します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-189">For fields of the **Boolean** type, this property passes the Boolean value of the field between the server and the app.</span></span>
+
+### <a name="guidvalue-guid"></a><span data-ttu-id="a4b28-190">guidValue (guid)</span><span class="sxs-lookup"><span data-stu-id="a4b28-190">guidValue (guid)</span></span>
+
+<span data-ttu-id="a4b28-191">**GUID** のタイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドのグローバル一意識別子 (GUID) を渡します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-191">For fields of the **GUID** type, this property passes the globally unique identifier (GUID) value of the field between the server and the app.</span></span>
+
+### <a name="int64value-int64"></a><span data-ttu-id="a4b28-192">int64Value (int64)</span><span class="sxs-lookup"><span data-stu-id="a4b28-192">int64Value (int64)</span></span>
+
+<span data-ttu-id="a4b28-193">**Int64** タイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドの int64 値を渡します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-193">For fields of the **Int64** type, this property passes the int64 value of the field between the server and the app.</span></span>
+
+### <a name="intvalue-int"></a><span data-ttu-id="a4b28-194">intValue (int)</span><span class="sxs-lookup"><span data-stu-id="a4b28-194">intValue (int)</span></span>
+
+<span data-ttu-id="a4b28-195">**Int** タイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドの int 値を渡します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-195">For fields of the **Int** type, this property passes the int value of the field between the server and the app.</span></span>
+
+### <a name="realvalue-real"></a><span data-ttu-id="a4b28-196">realValue (実数)</span><span class="sxs-lookup"><span data-stu-id="a4b28-196">realValue (real)</span></span>
+
+<span data-ttu-id="a4b28-197">**実数**タイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドの実数値を渡します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-197">For fields of the **Real** type, this property passes the real value of the field between the server and the app .</span></span>
+
+### <a name="stringvalue-str"></a><span data-ttu-id="a4b28-198">stringValue (str)</span><span class="sxs-lookup"><span data-stu-id="a4b28-198">stringValue (str)</span></span>
+
+<span data-ttu-id="a4b28-199">**文字列**タイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドの文字列値を渡します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-199">For fields of the **String** type, this property passes the string value of the field between the server and the app.</span></span> <span data-ttu-id="a4b28-200">通貨として書式設定された**実数**タイプのフィールドにも使用されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-200">It's also used for fields of the **Real** type that are formatted as currency.</span></span> <span data-ttu-id="a4b28-201">これらのフィールドについて、このプロパティはアプリに通貨コードを渡すために使用されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-201">For those fields, the property is used to pass the currency code to the app.</span></span>
+
+### <a name="datevalue-date"></a><span data-ttu-id="a4b28-202">dateValue (日付)</span><span class="sxs-lookup"><span data-stu-id="a4b28-202">dateValue (date)</span></span>
+
+<span data-ttu-id="a4b28-203">**日付**タイプのフィールドの場合、このプロパティはサーバーとアプリの間でフィールドの日付値を渡します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-203">For fields of the **Date** type, this property passes the date value of the field between the server and the app.</span></span>
+
+## <a name="show-and-save-a-custom-field-in-the-timesheet-entry-section"></a><span data-ttu-id="a4b28-204">タイムシート エントリ セクションのカスタム フィールドの表示および保存</span><span class="sxs-lookup"><span data-stu-id="a4b28-204">Show and save a custom field in the timesheet entry section</span></span>
+
+<span data-ttu-id="a4b28-205">タイムシート エントリを作成するモバイル アプリのスクリーンショットを次に示します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-205">Below is a screenshot from the mobile app of a timesheet entry creation.</span></span> <span data-ttu-id="a4b28-206">「テスト文字列」と呼ばれる「時間エントリ」に最初から用意されているフィールドとカスタム フィールドが、すでに設定されている「2 番目のオプション」の列挙値と共に表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-206">It shows the out-of-box fields and a custom field in the "Time entry" section called "Test string" with an enum value of "Second option" already set.</span></span>
+
+![アプリのテスト文字列のカスタム フィールド](media/timesheet-entry.jpg)
+
+
+
+<span data-ttu-id="a4b28-208">「テスト文字列」のカスタム フィールドで使用可能な列挙オプションのいずれかを選択しているユーザーのモバイル アプリのスクリーンショットは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="a4b28-208">Below is a screenshot from the mobile app of the user selecting one of the enum options available for the "Test string" custom field.</span></span>  <span data-ttu-id="a4b28-209">ラジオ ボタンとして表示されている「1 番目のオプション」と「2 番目のオプション」の 2 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="a4b28-209">The two options are "First option" and "Second option" shown as radio buttons.</span></span> <span data-ttu-id="a4b28-210">現在、2 番目のオプションが選択されています。</span><span class="sxs-lookup"><span data-stu-id="a4b28-210">The second option is currently selected.</span></span>
+
+![テスト文字列のカスタム フィールドのオプション ボタン (ラジオ ボタン)](media/enum-option.jpg)
+
+
+
+### <a name="extend-the-tstimesheetline-table-so-that-it-has-a-custom-field"></a><span data-ttu-id="a4b28-212">カスタム フィールドが含まれるように TSTimesheetLine テーブルを拡張します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-212">Extend the TSTimesheetLine table so that it has a custom field</span></span>
+
+<span data-ttu-id="a4b28-213">一般的なシナリオでは、タイムシート エントリ セクションのカスタム フィールドのデータが TSTimesheetLine テーブルに保存されることがあります。</span><span class="sxs-lookup"><span data-stu-id="a4b28-213">In typical scenarios, it's likely that the data for a custom field in the timesheet entry section will be saved to the TSTimesheetLine table.</span></span> <span data-ttu-id="a4b28-214">ただし、他のテーブルは、指定された TSTimesheetTrans レコードに基づいてデータが取得された場合、またはTSTimesheetTransレコードに基づいてデータを取得できる場合、または固有のレコード コンテキストを持たない場合に使用されます (たとえば、プロジェクト パラメーターでフィールドが読み取り専用として設定されている場合です)。</span><span class="sxs-lookup"><span data-stu-id="a4b28-214">However, other tables can be used if the data can be retrieved based on a TSTimesheetTrans record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</span></span>
+
+<span data-ttu-id="a4b28-215">カスタム フィールドには、バッキングのデータベース レコードを持つ必要がないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a4b28-215">Note that custom fields don't have to have any backing database records.</span></span> <span data-ttu-id="a4b28-216">X++ ロジックに基づいて動的に生成することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-216">They can be dynamically generated based on X++ logic.</span></span> <span data-ttu-id="a4b28-217">この方法は読み取り専用のシナリオで役に立ちます (動的に生成されたカスタム フィールド値の例については、「TSTimesheetDetails クラスでコマンド チェーンを使用し、buildCustomFieldListForHeader メソッドによりタイムシートの詳細を入力する」のセクションを参照してください。)</span><span class="sxs-lookup"><span data-stu-id="a4b28-217">This approach can be useful in read-only scenarios (see the “Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to fill in timesheet details” section for an example of dynamically generated custom field values.)</span></span>
+
+<span data-ttu-id="a4b28-218">アプリケーション オブジェクト ツリーの Visual Studio のスクリーンショットを次に示します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-218">Below is a screenshot from Visual Studio of the Application Object Tree.</span></span> <span data-ttu-id="a4b28-219">TSTimesheetLine テーブルの拡張機能とカスタム フィールドとして追加された TestLineString フィールドを表示します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-219">It shows an extension of the TSTimesheetLine table with the TestLineString field added as a custom field.</span></span>
+
+![行文字列](media/b6756b4a3fc5298093327a088a7710fd.png)
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlist-method-of-the-tstimesheetsettings-class-to-show-a-field-in-the-timesheet-entry-section"></a><span data-ttu-id="a4b28-221">TSTimesheetSettings クラスの buildCustomFieldList メソッドのコマンド チェーンを使用して、タイムシート エントリ セクションにフィールドを表示します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-221">Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the timesheet entry section</span></span>
+
+<span data-ttu-id="a4b28-222">このコードにより、アプリのフィールドの表示設定を制御します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-222">This code controls the display settings for the field in the app.</span></span> <span data-ttu-id="a4b28-223">たとえば、フィールドのタイプ、ラベル、フィールドが必須であるかどうか、またフィールドが表示されるセクションを制御します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-223">For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</span></span>
+
+<span data-ttu-id="a4b28-224">次の例は、時間入力の文字列フィールドを示します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-224">The following example shows a string field on time entries.</span></span> <span data-ttu-id="a4b28-225">このフィールドには、**1 番目のオプション**と**2 番目のオプション**の 2 つのオプションがあり、オプション ボタン (ラジオ ボタン) を介して使用可能です。</span><span class="sxs-lookup"><span data-stu-id="a4b28-225">This field has two options, **First option** and **Second option**, that are available via option buttons (radio buttons).</span></span> <span data-ttu-id="a4b28-226">アプリのフィールドは、TSTimesheetLine テーブルに追加される **TestLineString** フィールドに関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="a4b28-226">The field in the app is associated with the **TestLineString** field that is added to the TSTimesheetLine table.</span></span>
+
+<span data-ttu-id="a4b28-227">**TSTimesheetCustomField::newFromMetatdata()** メソッドを使用して、**fieldBaseType**、**tableName**、**fieldname**、**label**、**isEditable**、**isMandatory**、**stringLength**、および **numberOfDecimals** のカスタム フィールド プロパティの初期化を簡略化することに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a4b28-227">Note the use of the **TSTimesheetCustomField::newFromMetatdata()** method to simplify the initialization of the custom field properties: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength**, and **numberOfDecimals**.</span></span> <span data-ttu-id="a4b28-228">これらのパラメーターは、必要に応じて手動で設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-228">You can also set these parameters manually, as you prefer.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TsTimesheetSettings))]
+final class TSTimesheetSettings_Extension
+{
+    protected List buildCustomFieldList()
+    {
+        List customFieldList = next buildCustomFieldList();
+        TSTimesheetCustomField tsTimesheetCustomField;
+        tsTimesheetCustomField =
+        TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
+        fieldNum(TSTimesheetLine, TestLineString));
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
+        tsTimesheetCustomField.parmOrderSequence(1);
+        List stringOptions = new List(Types::String);
+        stringOptions.addEnd('First option');
+        stringOptions.addEnd('Second option');
+        tsTimesheetCustomField.parmStringOptions(stringOptions);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlistforentry-method-of-the-tstimesheetentry-class-to-enter-values-in-a-timesheet-entry"></a><span data-ttu-id="a4b28-229">TSTimesheetEntry クラスの buildCustomFieldListForEntry メソッドのコマンド チェーンを使用して、タイムシート エントリに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-229">Use chain of command on the buildCustomFieldListForEntry method of the TSTimesheetEntry class to enter values in a timesheet entry</span></span>
+
+<span data-ttu-id="a4b28-230">**buildCustomFieldListForEntry** メソッドは、モバイル アプリの保存されたタイムシートの明細行に値を入力するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-230">The **buildCustomFieldListForEntry** method is used to enter values on the saved timesheet lines in the mobile app.</span></span> <span data-ttu-id="a4b28-231">TSTimesheetTrans レコードをパラメーターとして使用します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-231">It takes a TSTimesheetTrans record as a parameter.</span></span> <span data-ttu-id="a4b28-232">レコードのフィールドを使用して、アプリのカスタム フィールドの値を入力することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-232">Fields from that record can be used to fill in the custom field value in the app.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TsTimesheetEntry))]
+final class TsTimesheetEntry_Extension
+{
+    protected List buildCustomFieldListForEntry(TSTimesheetTrans _tsTimesheetTrans)
+    {
+        List customFieldList = next buildCustomFieldListForEntry(_tsTimesheetTrans);
+        TSTimesheetLine tsTimesheetLine = _tsTimesheetTrans.timesheetLine();
+        TSTimesheetCustomField tsTimesheetCustomField;
+        tsTimesheetCustomField =
+        TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
+        fieldNum(TSTimesheetLine, TestLineString));
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
+        tsTimesheetCustomField.parmOrderSequence(1);
+        tsTimesheetCustomField.parmStringValue(tsTimesheetLine.TestLineString);
+        List stringOptions = new List(Types::String);
+        stringOptions.addEnd('First option');
+        stringOptions.addEnd('second option;);
+        tsTimesheetCustomField.parmStringOptions(stringOptions);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+### <a name="use-chain-of-command-on-the-tstimesheetentryservice-class-to-save-a-timesheet-entry-from-the-app-back-to-the-database"></a><span data-ttu-id="a4b28-233">TSTimesheetEntryService クラスのコマンド チェーンを使用して、アプリからデータベースにタイムシートのエントリを再保存します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-233">Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database</span></span>
+
+<span data-ttu-id="a4b28-234">通常の方法でデータベースにカスタム フィールドを再保存するには、複数のメソッドを拡張する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a4b28-234">To save a custom field back to the database in typical usage, you must extend multiple methods:</span></span>
+
+- <span data-ttu-id="a4b28-235">**timesheetLineNeedsUpdating** メソッドを使用して、明細行レコードがアプリでユーザーによって変更されたかどうか、およびデータベースに保存する必要があるかどうかを特定します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-235">The **timesheetLineNeedsUpdating** method is used to determine whether the line record has been changed by the user in the app and must be saved to the database.</span></span> <span data-ttu-id="a4b28-236">パフォーマンスが問題にならない場合は、このメソッドを簡略化し、常に **True** を返すようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-236">If performance isn't a concern, this method can be simplified so that it always returns **true**.</span></span>
+- <span data-ttu-id="a4b28-237">**populateTimesheetLineFromEntryDuringCreate** および **populateTimesheetLineFromEntryDuringUpdate** メソッドを拡張し、指定された TSTimesheetEntry データ コントラクト レコードから TSTimesheetLine データベース レコードに値を入力できるようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-237">The **populateTimesheetLineFromEntryDuringCreate** and **populateTimesheetLineFromEntryDuringUpdate** methods can be extended so that they enter values in the TSTimesheetLine database record from the TSTimesheetEntry data contract record that is provided.</span></span> <span data-ttu-id="a4b28-238">次の例では、データベース フィールドと入力フィールドの間のマッピングが X++ コードを介して手動で行われる方法に注意してください。</span><span class="sxs-lookup"><span data-stu-id="a4b28-238">In the example that follows, notice how the mapping between the database field and the entry field is manually done via X++ code.</span></span>
+- <span data-ttu-id="a4b28-239">**TSTimesheetEntry** オブジェクトにマップされているカスタム フィールドを TSTimesheetLineweek データベース テーブル に再書き込みする必要がある場合、**populateTimesheetWeekFromEntry** メソッドは拡張することもできます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-239">The **populateTimesheetWeekFromEntry** method can also be extended if the custom field that is mapped to the **TSTimesheetEntry** object must write back to the TSTimesheetLineweek database table.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="a4b28-240">次の例では、ユーザーが未加工の文字列値としてデータベースに選択した **firstOption** または **secondOption** の値を保存します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-240">The following example saves the **firstOption** or **secondOption** value that the user selects to the database as a raw string value.</span></span> <span data-ttu-id="a4b28-241">データベース フィールドが**列挙**タイプのフィールドである場合、これらの値を手動で列挙値にマップし、データベース テーブルの列挙フィールドに保存することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-241">If the database field is a field of the **Enum** type, those values can be manually mapped to an enum value and then saved to an enum field on the database table.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TSTimesheetEntryService))]
+final class TSTimesheetEntryService_Extension
+{
+    protected boolean timesheetLineNeedsUpdating(TSTimesheetLine _tsTimesheetLine,
+    TsTimesheetEntry _tsTimesheetEntry)
+    {
+        boolean ret = next timesheetLineNeedsUpdating(_tsTimesheetLine,
+        _tsTimesheetEntry);
+        if (!ret)
+        {
+            */ Loop through custom fields to see if value needs updating*/
+            ListEnumerator enumerator =  _tsTimesheetEntry.parmCustomFields().getEnumerator();
+            while (enumerator.moveNext())
+            {
+                TSTimesheetCustomField customField = enumerator.current();
+                if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
+                fieldNum(TSTimesheetLine, TestLineString)))
+                {
+                    */ If Custom field value for TestLineString field has changed, We need to update the timesheet line.*/
+                    if (_tsTimesheetLine.TestLineString != customField.parmStringValue())
+                    {
+                        ret = true;
+                    }
+                }
+            }
+        }
+        return ret;
+    }
+    protected void populateTimesheetLineFromEntryDuringCreate(TSTimesheetLine
+    _tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
+    {
+        next populateTimesheetLineFromEntryDuringCreate(_tsTimesheetLine,
+        _tsTimesheetEntry);
+        this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
+        _tsTimesheetEntry);
+        }
+        protected void populateTimesheetLineFromEntryDuringUpdate(TSTimesheetLine
+        \_tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
+        {
+            next populateTimesheetLineFromEntryDuringUpdate(_tsTimesheetLine,
+            _tsTimesheetEntry);
+            this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
+            _tsTimesheetEntry);
+        }
+        private void populateTimesheetLineFromCustomFields(TSTimesheetLine
+        _tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
+        {
+            ListEnumerator enumerator =
+            _tsTimesheetEntry.parmCustomFields().getEnumerator();
+            while (enumerator.moveNext())
+            {
+                TSTimesheetCustomField customField = enumerator.current();
+                if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
+                fieldNum(TSTimesheetLine, TestLineString)))
+                {
+                    _tsTimesheetLine.TestLineString = customField.parmStringValue();
+                }
+            }
+        }
+    }
+...
+```
+
+## <a name="show-a-custom-field-in-the-timesheet-header-section"></a><span data-ttu-id="a4b28-242">タイムシート ヘッダー セクションのカスタム フィールドの表示</span><span class="sxs-lookup"><span data-stu-id="a4b28-242">Show a custom field in the timesheet header section</span></span>
+
+<span data-ttu-id="a4b28-243">ユーザーがタイムシートを表示しているモバイル アプリのスクリーンショットを次に示します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-243">Below is a screenshot from the mobile app of a user viewing a timesheet.</span></span> <span data-ttu-id="a4b28-244">「詳細を表示」オプションを表示するために、右上隅にある「詳細情報」ボタンが選択されています。</span><span class="sxs-lookup"><span data-stu-id="a4b28-244">The "More information" button has been selected in the upper-right corner to show the "View more details" option.</span></span>  
+
+![詳細なコマンドを表示](media/show-more.png)
+
+
+
+<span data-ttu-id="a4b28-246">タイムシートの「詳細」セクションを表示しているモバイル アプリのスクリーンショットを次に示します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-246">Below is a screenshot from the mobile app showing the “More” section of a timesheet.</span></span> <span data-ttu-id="a4b28-247">「このタイムシートの稼動率 (計算されたカスタム フィールド)」と呼ばれるカスタム フィールドがタイムシートのヘッダー セクションに追加されました。</span><span class="sxs-lookup"><span data-stu-id="a4b28-247">A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section.</span></span> <span data-ttu-id="a4b28-248">「0.667」の読み取り専用値がカスタム フィールドに設定されています。</span><span class="sxs-lookup"><span data-stu-id="a4b28-248">A read-only value of "0.667" is set on the custom field.</span></span>
+
+![詳細セクション](media/more-section.jpg)
+
+
+
+### <a name="extend-the-tstimesheettable-table-so-that-it-has-a-custom-field"></a><span data-ttu-id="a4b28-250">カスタム フィールドが含まれるように TSTimesheetTable テーブルを拡張します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-250">Extend the TSTimesheetTable table so that it has a custom field</span></span>
+
+<span data-ttu-id="a4b28-251">一般的なシナリオでは、ヘッダー セクションのカスタム フィールドのデータが TSTimesheetHeader テーブルから引き出されることがあります。</span><span class="sxs-lookup"><span data-stu-id="a4b28-251">In typical scenarios, it's likely that the data for a custom field in the header section will be pulled from the TSTimesheetHeader table.</span></span> <span data-ttu-id="a4b28-252">ただし、他のテーブルは、指定された TSTimesheetTable のレコードに基づいてデータが取得された場合、またはTSTimesheetTransレコードに基づいてデータを取得できる場合、または固有のレコード コンテキストを持たない場合に使用されます (たとえば、プロジェクト パラメーターでフィールドが読み取り専用として設定されている場合です)。</span><span class="sxs-lookup"><span data-stu-id="a4b28-252">However, other tables can be used if the data can be retrieved based on a TSTimesheetTable record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</span></span>
+
+<span data-ttu-id="a4b28-253">カスタム フィールドには、バッキングのデータベース レコードを持つ必要がないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a4b28-253">Note that custom fields don't have to have any backing database records.</span></span> <span data-ttu-id="a4b28-254">X++ ロジックに基づいて動的に生成することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-254">They can be dynamically generated based on X++ logic.</span></span> <span data-ttu-id="a4b28-255">次の例はこの方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="a4b28-255">The example that follows shows this approach.</span></span>
+
+<span data-ttu-id="a4b28-256">ヘッダー セクションのフィールドは、アプリでは常に読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a4b28-256">Fields in the header section are always read-only in the app.</span></span>
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlist-method-of-the-tstimesheetsettings-class-to-show-a-field-in-the-header-section"></a><span data-ttu-id="a4b28-257">TSTimesheetSettings クラスの buildCustomFieldList メソッドのコマンド チェーンを使用して、ヘッダー セクションにフィールドを表示します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-257">Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the header section</span></span>
+
+<span data-ttu-id="a4b28-258">このコードにより、アプリのフィールドの表示設定を制御します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-258">This code controls the display settings for the field in the app.</span></span> <span data-ttu-id="a4b28-259">たとえば、フィールドのタイプ、ラベル、フィールドが必須であるかどうか、またフィールドが表示されるセクションを制御します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-259">For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</span></span>
+
+<span data-ttu-id="a4b28-260">次の例では、アプリのヘッダー セクションに計算された値を表示します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-260">The following example shows a computed value in the header section in the app.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TsTimesheetSettings))]
+final class TSTimesheetSettings_Extension
+{
+    protected List buildCustomFieldList()
+    {
+        List customFieldList = next buildCustomFieldList();
+        TSTimesheetCustomField tsTimesheetCustomField;
+
+        */ Computed utilization rate*/
+        tsTimesheetCustomField = new TSTimesheetCustomField();
+        tsTimesheetCustomField.parmFieldBaseType(Types::Real);
+        tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
+        custom field)");
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
+        tsTimesheetCustomField.parmOrderSequence(2);
+        tsTimesheetCustomField.parmNumberOfDecimals(3);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlistforheader-method-of-the-tstimesheetdetails-class-to-fill-in-timesheet-details"></a><span data-ttu-id="a4b28-261">TSTimesheetDetails クラスの buildCustomFieldListForHeader メソッドのコマンド チェーンを使用して、タイムシートの詳細を記入します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-261">Use chain of command on the buildCustomFieldListForHeader method of the TSTimesheetDetails class to fill in timesheet details</span></span>
+
+<span data-ttu-id="a4b28-262">**buildCustomFieldListForHeader** メソッドは、モバイル アプリのタイムシート ヘッダーの詳細を記入するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-262">The **buildCustomFieldListForHeader** method is used to fill in the timesheet header details in the mobile app.</span></span> <span data-ttu-id="a4b28-263">TSTimesheetTable レコードをパラメーターとして使用します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-263">It takes a TSTimesheetTable record as a parameter.</span></span> <span data-ttu-id="a4b28-264">レコードのフィールドを使用して、アプリのカスタム フィールドの値を入力することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-264">Fields from that record can be used to fill in the custom field value in the app.</span></span> <span data-ttu-id="a4b28-265">次の例では、データベースから値を読み取ることができません。</span><span class="sxs-lookup"><span data-stu-id="a4b28-265">The following example doesn't read any values from the database.</span></span> <span data-ttu-id="a4b28-266">代わりに、X++ ロジックを使用して、アプリに表示される計算値を生成します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-266">Instead, it uses X++ logic to generate a computed value that is then shown in the app.</span></span>
+
+
+```
+...
+[ExtensionOf(classStr(TSTimesheetDetails))]
+final class TSTimesheetDetails_Extension
+{
+    protected List buildCustomFieldListForHeader(TSTimesheetTable
+    _tsTimesheetTable)
+    {
+        List customFieldList = next buildCustomFieldListForHeader(_tsTimesheetTable);
+        TSTimesheetCustomField tsTimesheetCustomField;
+
+        */ Computed utilization rate*/
+        tsTimesheetCustomField = new TSTimesheetCustomField();
+        tsTimesheetCustomField.parmFieldBaseType(Types::Real);
+        tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
+        custom field)");
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
+        tsTimesheetCustomField.parmOrderSequence(2);
+        tsTimesheetCustomField.parmNumberOfDecimals(3);
+        real utilizationRate = 0;
+        if (_tsTimesheetTable.totalHours() != 0)
+        {
+            utilizationRate = _tsTimesheetTable.totalHoursBillable() /
+            _tsTimesheetTable.totalHours();
+        }
+        tsTimesheetCustomField.parmRealValue(utilizationRate);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+## <a name="other-configurabilityextensibility-opportunities"></a><span data-ttu-id="a4b28-267">他のコンフィギュレーションの可能性または機能拡張の機会</span><span class="sxs-lookup"><span data-stu-id="a4b28-267">Other configurability/extensibility opportunities</span></span>
+
+### <a name="adding-additional-validation-for-the-app"></a><span data-ttu-id="a4b28-268">アプリへの追加検証の追加</span><span class="sxs-lookup"><span data-stu-id="a4b28-268">Adding additional validation for the app</span></span>
+
+<span data-ttu-id="a4b28-269">タイムシート機能に対するデータベース レベルでの既存のロジックは、期待どおりに動作します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-269">Existing logic for timesheet functionality at the database level will still work as expected.</span></span> <span data-ttu-id="a4b28-270">保存または送信操作の完了を中断して特定のエラー メッセージを表示するために、コマンド チェーン拡張機能を介してコードに**エラーをスロー (「ユーザーへのメッセージ」)** を追加することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-270">To interrupt the completion of save or submit operations and show a specific error message, you can add **throw error("message to user")** to the code via a chain of command extension.</span></span> <span data-ttu-id="a4b28-271">便利で拡張可能なメソッドの 3 つの例を示します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-271">Here are three examples of useful extensible methods:</span></span>
+
+- <span data-ttu-id="a4b28-272">タイムシートの明細行に対する保存操作中に TSTimesheetLine テーブルの **validateWrite** が **False** を返す場合、エラー メッセージがモバイル アプリに表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-272">If **validateWrite** on the TSTimesheetLine table returns **false** during a save operation for a timesheet line, an error message is shown in the mobile app.</span></span>
+- <span data-ttu-id="a4b28-273">アプリでタイムシートの送信中に TSTimesheetTable テーブルの **validateSubmit** が **False** を返す場合、エラー メッセージがユーザーに表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-273">If **validateSubmit** on the TSTimesheetTable table returns **false** during timesheet submission in the app, an error message is shown to the user.</span></span>
+- <span data-ttu-id="a4b28-274">TSTimesheetLine テーブルの**挿入**メソッドの実行中にフィールドを入力するロジック (たとえば、**明細行プロパティ**) も実行されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-274">Logic that fills in fields (for example, **Line Property**) during the **insert** method on the TSTimesheetLine table will still run.</span></span>
+
+### <a name="hiding-and-marking-out-of-box-fields-as-read-only-via-configuration"></a><span data-ttu-id="a4b28-275">コンフィギュレーションにより、最初から用意されているフィールドを非表示また読み取り専用としてマーキング</span><span class="sxs-lookup"><span data-stu-id="a4b28-275">Hiding and marking out-of-box fields as read-only via configuration</span></span>
+
+<span data-ttu-id="a4b28-276">プロジェクト パラメーターから、最初から用意されているフィールドをモバイル アプリで読み取り専用または非表示にすることができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-276">From the project parameters, you can make out-of-box fields read-only or hidden in the mobile app.</span></span> <span data-ttu-id="a4b28-277">**プロジェクト管理と会計パラメーター** ページの**タイムシート** タブで、**モバイル タイムシート** セクションのオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-277">Set the options in the **Mobile timesheets** section on the **Timesheet** tab of the **Project management and accounting parameters** page.</span></span>
+
+![プロジェクト パラメーター](media/5753b8ecccd1d8bb2b002dd538b3f762.png)
+
+### <a name="changing-the-activities-that-are-available-for-selection-via-extensions"></a><span data-ttu-id="a4b28-279">拡張機能を介して選択可能な活動の変更</span><span class="sxs-lookup"><span data-stu-id="a4b28-279">Changing the activities that are available for selection via extensions</span></span>
+
+<span data-ttu-id="a4b28-280">プロジェクトに対して選択可能な活動は、**TsTimesheetProjectService** クラスの **getActivitiesForProject()** および **getActivityQuery()** メソッドを介して入力されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-280">The activities that are available for selection for a project are filled in via the **getActivitiesForProject()** and **getActivityQuery()** methods in the **TsTimesheetProjectService** class.</span></span> <span data-ttu-id="a4b28-281">コマンド チェーンを使用してこの動作を変更し、特定のプロジェクトに対して選択可能な活動のビジネス シナリオに一致させることができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-281">You can use chain of command to change this behavior to match your business scenario for the activities that are available for selection for a specific project.</span></span>
+
+### <a name="entering-a-default-project-category-on-timesheet-entries"></a><span data-ttu-id="a4b28-282">タイムシート エントリに既定のプロジェクト カテゴリを入力する</span><span class="sxs-lookup"><span data-stu-id="a4b28-282">Entering a default project category on timesheet entries</span></span>
+
+<span data-ttu-id="a4b28-283">タイムシート エントリの既定のプロジェクト カテゴリの入力は、3 つのレベルで発生します。</span><span class="sxs-lookup"><span data-stu-id="a4b28-283">Entry of a default project category on timesheet entries occurs at three levels.</span></span> <span data-ttu-id="a4b28-284">コマンド チェーンを使用してこれらのレベルのいずれかまたはすべてにおける動作を拡張することにより、目的の動作を実現することができます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-284">You can use chain of command to extend the behavior at any or all of these levels to achieve the desired behavior.</span></span> <span data-ttu-id="a4b28-285">次の階層が使用されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-285">The following hierarchy is used:</span></span>
+
+1. <span data-ttu-id="a4b28-286">アプリは、プロジェクト リソースからの既定のカテゴリの配置を試みます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-286">The app tries to put the default category from the project resource.</span></span> <span data-ttu-id="a4b28-287">この既定のカテゴリは、**TSTimesheetSettingsService** クラスの **getCurrentUserResource** および **getDelegatedResourcesForCurrentUser** メソッドで設定されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-287">This default category is set in the **getCurrentUserResource** and **getDelegatedResourcesForCurrentUser** methods in the **TSTimesheetSettingsService** class.</span></span>
+2. <span data-ttu-id="a4b28-288">プロジェクト リソース レベルで既定のカテゴリが指定されていない場合、アプリはプロジェクト活動からの取得を試みます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-288">If the default category isn't provided at the project resource level, the app tries to pull it from the project activity.</span></span> <span data-ttu-id="a4b28-289">この既定のカテゴリは、**TSTimesheetProjectService** クラスの **getActivitiesForProject** メソッドで設定されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-289">This default category is set in the **getActivitiesForProject** method in the **TSTimesheetProjectService** class.</span></span>
+3. <span data-ttu-id="a4b28-290">プロジェクト活動レベルで既定のカテゴリが指定されていない場合、既定のカテゴリはプロジェクトのパラメーターから取得されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-290">If the default category isn't provided at the project activity level, the default category it taken from the project parameters.</span></span> <span data-ttu-id="a4b28-291">この既定のカテゴリは、**TSTimesheetProjectService** クラスの **getProjectDetailsbyRule** メソッドで設定されます。</span><span class="sxs-lookup"><span data-stu-id="a4b28-291">This default category is set in the **getProjectDetailsbyRule** method in the **TSTimesheetProjectService** class.</span></span>

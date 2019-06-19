@@ -1,144 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="customization-analysis-lcs.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>customization-analysis-lcs.4e07b4.9bd15953d0f024a8df5959837ff3b39534eba1a9.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>9bd15953d0f024a8df5959837ff3b39534eba1a9</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\lifecycle-services\ax-2012\customization-analysis-lcs.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Customization analysis in Lifecycle Services (LCS)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lifecycle Services (LCS) 内のカスタマイズ分析</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>In Microsoft Dynamics Lifecycle Services, Customization analysis offers Microsoft Dynamics AX 2012 customers an automated tool that validates the customer’s model files against Microsoft Dynamics AX best-practice rules for tables, classes, forms, and enums.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics Lifecycle Services では、カスタマイズ分析がテーブル、クラス、フォーム、および列挙の Microsoft Dynamics AX のベスト プラクティス ルールに対して顧客のモデル ファイルを検証する自動ツールを Microsoft Dynamics AX 2012 の顧客に提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>It then generates reports, including a summary report display on the site, a detailed Microsoft Excel report that lists all issues, and a developer report that the developer can load in the Microsoft Dynamics AX development environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後、サイトでの概要レポートの表示、すべての問題を一覧表示する詳細な Microsoft Excel レポート、開発者が Microsoft Dynamics AX の開発環境で読み込むことができる開発者レポートを含んだレポートを生成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Customization analysis in Lifecycle Services (LCS)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lifecycle Services (LCS) 内のカスタマイズ分析</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>In Microsoft Dynamics Lifecycle Services, Customization analysis offers Microsoft Dynamics AX 2012 customers an automated tool that validates the customer’s model files against Microsoft Dynamics AX best-practice rules for tables, classes, forms, and enums.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics Lifecycle Services では、カスタマイズ分析がテーブル、クラス、フォーム、および列挙の Microsoft Dynamics AX のベスト プラクティス ルールに対して顧客のモデル ファイルを検証する自動ツールを Microsoft Dynamics AX 2012 の顧客に提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>It then generates reports, including a summary report display on the site, a detailed Microsoft Excel report that lists all issues, and a developer report that the developer can load in the Microsoft Dynamics AX development environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後、サイトでの概要レポートの表示、すべての問題を一覧表示する詳細な Microsoft Excel レポート、開発者が Microsoft Dynamics AX の開発環境で読み込むことができる開発者レポートを含んだレポートを生成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Prerequisites</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>You must have Microsoft Dynamics AX 2012 model files to be analyzed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 モデル ファイルの分析を行う必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>For more information about model files, see <bpt id="p1">[</bpt>How to: Export and Import a Model<ept id="p1">](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル ファイルの詳細については、「<bpt id="p1">[</bpt>方法: モデルのエクスポートおよびインポート<ept id="p1">](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx)</ept>」を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Getting started</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">はじめに</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>To use Customization analysis, you must upload model files and then evaluate the reports to determine what changes you want to make.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズ分析を使用するには、モデル ファイルをアップロードし、レポートを評価して、どのように変更するかを判断する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Upload model files</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル ファイルのアップロード</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source><bpt id="p1">[</bpt>Go to Lifecycle Services<ept id="p1">](https://lcs.dynamics.com)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Lifecycle Services に移動<ept id="p1">](https://lcs.dynamics.com)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Open a project, and then click the <bpt id="p1">**</bpt>Customization analysis<ept id="p1">**</ept> tile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトを開いて、<bpt id="p1">**</bpt>カスタマイズ分析<ept id="p1">**</ept>タイルをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and then, on the <bpt id="p2">**</bpt>Customization analysis: Create job<ept id="p2">**</ept> page, enter a name, the appropriate version of Microsoft Dynamics AX, and the appropriate build.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>追加<ept id="p1">**</ept>をクリックし、<bpt id="p2">**</bpt>カスタマイズ分析: ジョブを作成<ept id="p2">**</ept>ページで、名前、適切なバージョンの Microsoft Dynamics AX、および適切なビルドを入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>作成<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Click <bpt id="p1">**</bpt>Add files<ept id="p1">**</ept>, browse to the model that you want to analyze, and click <bpt id="p2">**</bpt>Upload<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ファイルの追加<ept id="p1">**</ept>をクリックして分析するモデルを参照し、<bpt id="p2">**</bpt>アップロード<ept id="p2">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>You can upload multiple model files to analyze.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析のために複数のモデル ファイルをアップロードすることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Click <bpt id="p1">**</bpt>Analyze Code<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>コードの分析<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>The site processes the files, and then generates reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サイトがファイルを処理し、レポートを生成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>During processing, status indicators update.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">処理中に、ステータス インジケーターは更新します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can leave the page while processing continues.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> 処理が続行されている間、ページを離れることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Processing may take 10 minutes or longer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">処理には 10 分以上かかることがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Evaluate reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートの評価</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Customization analysis checks your model files against the Microsoft Dynamics AX best-practice rules for tables, classes, forms, and enums.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズ分析は、テーブル、クラス、フォーム、および列挙の Microsoft Dynamics AX のベスト プラクティス ルールに照らして、モデル ファイルを検証します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>It then generates detailed reports of instances where your code deviates from those rules.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後、コードがこれらのルールから逸脱するインスタンスの詳細なレポートを生成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>After processing is complete, you can select the reports that you would like to review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">処理が完了したら、レビューするレポートを選択できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Customization analysis provides the following types of reports:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズの分析には、次のレポート タイプが用意されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>An HTML Customization Analysis report that you can view in a browser.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザー内で表示できる HTML カスタマイズ分析のレポートです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>An Excel file that you can use to review the errors that are generated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Excel ファイルを使用して生成されたエラーを確認できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>To view this report, click <bpt id="p1">**</bpt>View<ept id="p1">**</ept>, and then open the file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このレポートを表示するには、<bpt id="p1">**</bpt>表示<ept id="p1">**</ept> をクリックし、ファイルを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>An HTML developer report that you can open in a Microsoft Dynamics AX developer environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HTML 開発者レポート。Microsoft Dynamics AX の開発者環境で開くことができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>To view this report in the Microsoft Dynamics AX development environment, perform the following steps:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 開発環境でこのレポートを表示するには、次の手順を実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Click <bpt id="p1">**</bpt>View<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>表示<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>The file will open in a browser window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルはブラウザー ウィンドウで開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Save the report to a computer in your development environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発環境のコンピューターにレポートを保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>In the <bpt id="p1">**</bpt>Compiler output<ept id="p1">**</ept> window, click <bpt id="p2">**</bpt>Import<ept id="p2">**</ept>, and select the file to open it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>コンパイラ出力<ept id="p1">**</ept>ウィンドウで、<bpt id="p2">**</bpt>インポート<ept id="p2">**</ept>をクリックし、ファイルを選択して開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>You can double-click any line within the report to open the object and line with the reported issue.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポート内で任意の行をダブルクリックして、報告された問題を含むオブジェクトおよび行を開くことができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Remove a customization job</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズ ジョブの削除</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>To remove a job from the list of customizations for a project, hover over the job name, then click the box to the left, and click the <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept> button.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトのカスタマイズ一覧からジョブを削除するには、ジョブ名の上にカーソルを置き、左側のボックスをクリックして <bpt id="p1">**</bpt>削除<ept id="p1">**</ept> ボタンをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加リソース</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source><bpt id="p1">[</bpt>Best Practices for Microsoft Dynamics AX Development<ept id="p1">](http://msdn.microsoft.com/library/833e44ff-d89a-459a-84be-0cc5da57ee90(AX.60).aspx)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics AX 開発のベスト プラクティス<ept id="p1">](http://msdn.microsoft.com/library/833e44ff-d89a-459a-84be-0cc5da57ee90(AX.60).aspx)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Lifecycle Services (LCS) 内のカスタマイズ分析
+description: Microsoft Dynamics Lifecycle Services では、カスタマイズ分析がテーブル、クラス、フォーム、および列挙の Microsoft Dynamics AX のベスト プラクティス ルールに対して顧客のモデル ファイルを検証する自動ツールを Microsoft Dynamics AX 2012 の顧客に提供します。 その後、サイトでの概要レポートの表示、すべての問題を一覧表示する詳細な Microsoft Excel レポート、開発者が Microsoft Dynamics AX の開発環境で読み込むことができる開発者レポートを含んだレポートを生成します。
+author: RobinARH
+manager: AnnBe
+ms.date: 11/13/2017
+ms.topic: article
+ms.prod: dynamics-ax-2012
+ms.service: ''
+ms.technology: ''
+audience: Developer, IT Pro
+ms.reviewer: kfend
+ms.search.scope: AX 2012
+ms.custom: 19021
+ms.assetid: 409386b2-98c8-44a7-be6f-252f8a21f819
+ms.search.region: Global
+ms.author: robadawy
+ms.search.validFrom: ''
+ms.dyn365.ops.version: 2012
+ms.openlocfilehash: 9bd15953d0f024a8df5959837ff3b39534eba1a9
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544088"
+---
+# <a name="customization-analysis-in-lifecycle-services-lcs"></a><span data-ttu-id="d9a6d-104">Lifecycle Services (LCS) 内のカスタマイズ分析</span><span class="sxs-lookup"><span data-stu-id="d9a6d-104">Customization analysis in Lifecycle Services (LCS)</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="d9a6d-105">Microsoft Dynamics Lifecycle Services では、カスタマイズ分析がテーブル、クラス、フォーム、および列挙の Microsoft Dynamics AX のベスト プラクティス ルールに対して顧客のモデル ファイルを検証する自動ツールを Microsoft Dynamics AX 2012 の顧客に提供します。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-105">In Microsoft Dynamics Lifecycle Services, Customization analysis offers Microsoft Dynamics AX 2012 customers an automated tool that validates the customer’s model files against Microsoft Dynamics AX best-practice rules for tables, classes, forms, and enums.</span></span> <span data-ttu-id="d9a6d-106">その後、サイトでの概要レポートの表示、すべての問題を一覧表示する詳細な Microsoft Excel レポート、開発者が Microsoft Dynamics AX の開発環境で読み込むことができる開発者レポートを含んだレポートを生成します。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-106">It then generates reports, including a summary report display on the site, a detailed Microsoft Excel report that lists all issues, and a developer report that the developer can load in the Microsoft Dynamics AX development environment.</span></span> 
+
+<a name="prerequisites"></a><span data-ttu-id="d9a6d-107">必要条件</span><span class="sxs-lookup"><span data-stu-id="d9a6d-107">Prerequisites</span></span>
+-------------
+
+<span data-ttu-id="d9a6d-108">Microsoft Dynamics AX 2012 モデル ファイルの分析を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-108">You must have Microsoft Dynamics AX 2012 model files to be analyzed.</span></span> <span data-ttu-id="d9a6d-109">モデル ファイルの詳細については、「[方法: モデルのエクスポートおよびインポート](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-109">For more information about model files, see [How to: Export and Import a Model](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx).</span></span>
+
+## <a name="getting-started"></a><span data-ttu-id="d9a6d-110">はじめに</span><span class="sxs-lookup"><span data-stu-id="d9a6d-110">Getting started</span></span>
+<span data-ttu-id="d9a6d-111">カスタマイズ分析を使用するには、モデル ファイルをアップロードし、レポートを評価して、どのように変更するかを判断する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-111">To use Customization analysis, you must upload model files and then evaluate the reports to determine what changes you want to make.</span></span>
+
+### <a name="upload-model-files"></a><span data-ttu-id="d9a6d-112">モデル ファイルのアップロード</span><span class="sxs-lookup"><span data-stu-id="d9a6d-112">Upload model files</span></span>
+
+1.  <span data-ttu-id="d9a6d-113">[Lifecycle Services に移動](https://lcs.dynamics.com).</span><span class="sxs-lookup"><span data-stu-id="d9a6d-113">[Go to Lifecycle Services](https://lcs.dynamics.com).</span></span>
+2.  <span data-ttu-id="d9a6d-114">プロジェクトを開いて、**カスタマイズ分析**タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-114">Open a project, and then click the **Customization analysis** tile.</span></span>
+3.  <span data-ttu-id="d9a6d-115">**追加**をクリックし、**カスタマイズ分析: ジョブを作成**ページで、名前、適切なバージョンの Microsoft Dynamics AX、および適切なビルドを入力します。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-115">Click **Add**, and then, on the **Customization analysis: Create job** page, enter a name, the appropriate version of Microsoft Dynamics AX, and the appropriate build.</span></span>
+4.  <span data-ttu-id="d9a6d-116">**作成** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-116">Click **Create**.</span></span>
+5.  <span data-ttu-id="d9a6d-117">**ファイルの追加**をクリックして分析するモデルを参照し、**アップロード**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-117">Click **Add files**, browse to the model that you want to analyze, and click **Upload**.</span></span> <span data-ttu-id="d9a6d-118">分析のために複数のモデル ファイルをアップロードすることができます。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-118">You can upload multiple model files to analyze.</span></span>
+6.  <span data-ttu-id="d9a6d-119">**コードの分析**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-119">Click **Analyze Code**.</span></span> <span data-ttu-id="d9a6d-120">サイトがファイルを処理し、レポートを生成します。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-120">The site processes the files, and then generates reports.</span></span> <span data-ttu-id="d9a6d-121">処理中に、ステータス インジケーターは更新します。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-121">During processing, status indicators update.</span></span> <span data-ttu-id="d9a6d-122">**注記:** 処理が続行されている間、ページを離れることができます。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-122">**Note:** You can leave the page while processing continues.</span></span> <span data-ttu-id="d9a6d-123">処理には 10 分以上かかることがあります。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-123">Processing may take 10 minutes or longer.</span></span>
+
+### <a name="evaluate-reports"></a><span data-ttu-id="d9a6d-124">レポートの評価</span><span class="sxs-lookup"><span data-stu-id="d9a6d-124">Evaluate reports</span></span>
+
+<span data-ttu-id="d9a6d-125">カスタマイズ分析は、テーブル、クラス、フォーム、および列挙の Microsoft Dynamics AX のベスト プラクティス ルールに照らして、モデル ファイルを検証します。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-125">Customization analysis checks your model files against the Microsoft Dynamics AX best-practice rules for tables, classes, forms, and enums.</span></span> <span data-ttu-id="d9a6d-126">その後、コードがこれらのルールから逸脱するインスタンスの詳細なレポートを生成します。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-126">It then generates detailed reports of instances where your code deviates from those rules.</span></span> <span data-ttu-id="d9a6d-127">処理が完了したら、レビューするレポートを選択できます。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-127">After processing is complete, you can select the reports that you would like to review.</span></span> <span data-ttu-id="d9a6d-128">カスタマイズの分析には、次のレポート タイプが用意されています。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-128">Customization analysis provides the following types of reports:</span></span>
+
+1.  <span data-ttu-id="d9a6d-129">ブラウザー内で表示できる HTML カスタマイズ分析のレポートです。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-129">An HTML Customization Analysis report that you can view in a browser.</span></span>
+2.  <span data-ttu-id="d9a6d-130">Excel ファイルを使用して生成されたエラーを確認できます。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-130">An Excel file that you can use to review the errors that are generated.</span></span> <span data-ttu-id="d9a6d-131">このレポートを表示するには、**表示** をクリックし、ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-131">To view this report, click **View**, and then open the file.</span></span>
+3.  <span data-ttu-id="d9a6d-132">HTML 開発者レポート。Microsoft Dynamics AX の開発者環境で開くことができます。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-132">An HTML developer report that you can open in a Microsoft Dynamics AX developer environment.</span></span> <span data-ttu-id="d9a6d-133">Microsoft Dynamics AX 開発環境でこのレポートを表示するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-133">To view this report in the Microsoft Dynamics AX development environment, perform the following steps:</span></span>
+    1.  <span data-ttu-id="d9a6d-134">**表示**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-134">Click **View**.</span></span> <span data-ttu-id="d9a6d-135">ファイルはブラウザー ウィンドウで開きます。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-135">The file will open in a browser window.</span></span>
+    2.  <span data-ttu-id="d9a6d-136">開発環境のコンピューターにレポートを保存します。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-136">Save the report to a computer in your development environment.</span></span>
+    3.  <span data-ttu-id="d9a6d-137">**コンパイラ出力**ウィンドウで、**インポート**をクリックし、ファイルを選択して開きます。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-137">In the **Compiler output** window, click **Import**, and select the file to open it.</span></span>
+    4.  <span data-ttu-id="d9a6d-138">レポート内で任意の行をダブルクリックして、報告された問題を含むオブジェクトおよび行を開くことができます。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-138">You can double-click any line within the report to open the object and line with the reported issue.</span></span>
+
+### <a name="remove-a-customization-job"></a><span data-ttu-id="d9a6d-139">カスタマイズ ジョブの削除</span><span class="sxs-lookup"><span data-stu-id="d9a6d-139">Remove a customization job</span></span>
+
+<span data-ttu-id="d9a6d-140">プロジェクトのカスタマイズ一覧からジョブを削除するには、ジョブ名の上にカーソルを置き、左側のボックスをクリックして **削除** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d9a6d-140">To remove a job from the list of customizations for a project, hover over the job name, then click the box to the left, and click the **Remove** button.</span></span>
+
+<a name="additional-resources"></a><span data-ttu-id="d9a6d-141">追加リソース</span><span class="sxs-lookup"><span data-stu-id="d9a6d-141">Additional resources</span></span>
+--------
+
+<span data-ttu-id="d9a6d-142">[Microsoft Dynamics AX 開発のベスト プラクティス](http://msdn.microsoft.com/library/833e44ff-d89a-459a-84be-0cc5da57ee90(AX.60).aspx)</span><span class="sxs-lookup"><span data-stu-id="d9a6d-142">[Best Practices for Microsoft Dynamics AX Development](http://msdn.microsoft.com/library/833e44ff-d89a-459a-84be-0cc5da57ee90(AX.60).aspx)</span></span>
+
+
+

@@ -1,6084 +1,4173 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="i-classes.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>i-classes.ae674f.f06f3929aad48c39dc87b18eba406d0521323b71.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>f06f3929aad48c39dc87b18eba406d0521323b71</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-ref\i-classes.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>I classes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I クラス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>System API classes that start with the letter I.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 I で始まるシステム API クラス。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>I classes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I クラス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>System API classes that start with the letter I.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 I で始まるシステム API クラス。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Class IDispatcherProxy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IDispatcherProxy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>public AnyType invoke(str methodName, VarArg )</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public AnyType invoke(str methodName, VarArg )</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>public void refresh()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void refresh()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Method invoke</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド invoke</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>methodName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">methodName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Method refresh</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド refresh</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Class IISApplicationObject</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISApplicationObject</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>The IISApplicationObject class wraps the Application object that is offered by Internet Information Services (IIS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISApplicationObject クラスは、インターネット インフォメーション サービス (IIS) によって提供されるアプリケーション オブジェクトをラップします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>There is a one-to-one connection between the methods of the IISApplicationObject class and the methods of the Application object that is offered by IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISApplicationObject クラスのメソッドと、IIS によって提供される Application オブジェクトのメソッドとの間には、1 対 1 の接続があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Therefore, for more information about the methods of the IISApplicationObject class, see the Microsoft documentation for IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、IISApplicationObject クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Use of the IISApplicationObject class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISApplicationObject クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>public IISVariantDictionary contents()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISVariantDictionary contents()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>public ComInterface interface()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface interface()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>public IISVariantDictionary staticObjects()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISVariantDictionary staticObjects()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>public COMVariant value(str value, <ph id="ph1">\[</ph>COMVariant var<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMVariant value(str value, <ph id="ph1">\[</ph>COMVariant var<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>public str valueTxt(str value, <ph id="ph1">\[</ph>str var<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str valueTxt(str value, <ph id="ph1">\[</ph>str var<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Initializes a new instance of the IISApplicationObject class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISApplicationObject クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>public void lock()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void lock()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>public void unLock()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void unLock()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Method contents</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド contents</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Method interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interface</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Method staticObjects</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド staticObjects</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Method value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>var</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">var</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Method valueTxt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド valueTxt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>var</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">var</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Initializes a new instance of the IISApplicationObject class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISApplicationObject クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Method lock</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lock</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Method unLock</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unLock</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Class IISContextObject</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISContextObject</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>public ComInterface interface()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface interface()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>public boolean isTraceEnabled()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isTraceEnabled()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>public IISVariantDictionary items()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISVariantDictionary items()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>public int traceMode(int mode)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int traceMode(int mode)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>public COMVariant value(str value, <ph id="ph1">\[</ph>COMVariant var<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMVariant value(str value, <ph id="ph1">\[</ph>COMVariant var<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>public str valueTxt(str value, <ph id="ph1">\[</ph>str var<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str valueTxt(str value, <ph id="ph1">\[</ph>str var<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>public void traceWrite(str category, str message)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void traceWrite(str category, str message)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>public void traceWarn(str category, str message)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void traceWarn(str category, str message)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Initializes a new instance of the IISContextObject class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISContextObject クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Method interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interface</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Method isTraceEnabled</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isTraceEnabled</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Method items</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド items</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Method traceMode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド traceMode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>mode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モード</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Method value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>var</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">var</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Method valueTxt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド valueTxt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>var</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">var</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Method traceWrite</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド traceWrite</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>category</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カテゴリ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>message</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メッセージ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Method traceWarn</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド traceWarn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>category</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カテゴリ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>message</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メッセージ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Initializes a new instance of the IISContextObject class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISContextObject クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Class IISPostedFile</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISPostedFile</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>public int contentLength()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int contentLength()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>public str contentType()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str contentType()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>public str fileName()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str fileName()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>public container read(int countToRead)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container read(int countToRead)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Initializes a new instance of the IISPostedFile class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISPostedFile クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Method contentLength</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド contentLength</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Method contentType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド contentType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Method fileName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fileName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Method read</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド read</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>countToRead</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">countToRead</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Initializes a new instance of the IISPostedFile class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISPostedFile クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Class IISReadCookie</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISReadCookie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>The IISReadCookie class wraps the ReadCookie object that is offered by Internet Information Services (IIS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISReadCookie クラスは、インターネット インフォメーション サービス (IIS) によって提供される ReadCookie オブジェクトをラップします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>There is a one-to-one connection between the methods of the IISReadCookie class and the methods of the ReadCookie object that is offered by IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISReadCookie クラスのメソッドと、IIS によって提供される ReadCookie オブジェクトのメソッドとの間には、1 対 1 の接続があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Therefore, for more information about the methods of the IISReadCookie class, see the Microsoft documentation for IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、IISReadCookie クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Use of the IISReadCookie class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISReadCookie クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>public int count()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int count()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>public COMEnum2Variant getEnum()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMEnum2Variant getEnum()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>public boolean hasKeys()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean hasKeys()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>public ComInterface interface()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface interface()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>public str item(<ph id="ph1">\[</ph>str item<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str item(<ph id="ph1">\[</ph>str item<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>public str key(str key)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str key(str key)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>public void new(COM readCookie)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(COM readCookie)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Method count</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド count</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Method getEnum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getEnum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Method hasKeys</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド hasKeys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>Method interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interface</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Method item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド item</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Method key</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド key</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>key</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>readCookie</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">readCookie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>Class IISRequest</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISRequest</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>The IISRequest class wraps the Request object that is offered by Internet Information Services (IIS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISRequest クラスは、インターネット インフォメーション サービス (IIS) によって提供される Request オブジェクトをラップします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>There is a one-to-one connection between the methods of the IISRequest class and the methods of the Request object that is offered by IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISRequest クラスのメソッドと、IIS によって提供される Request オブジェクトのメソッドとの間には、1 対 1 の接続があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Therefore, for more information about the methods of the IISRequest class, see the Microsoft documentation for IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、IISRequest クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Use of the IISRequest class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISRequest クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>public COMVariant binaryRead(COMVariant countToRead)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMVariant binaryRead(COMVariant countToRead)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>public IISRequestDictionary clientCertificate()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISRequestDictionary clientCertificate()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>public IISRequestDictionary cookies()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISRequestDictionary cookies()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>public IISPostedFile file(COMVariant index)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISPostedFile file(COMVariant index)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>public int fileCount()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int fileCount()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>public IISRequestDictionary form()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISRequestDictionary form()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>public ComInterface interface()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface interface()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>public str item(str item)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str item(str item)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>public IISRequestDictionary queryString()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISRequestDictionary queryString()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>public IISRequestDictionary serverVariables()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISRequestDictionary serverVariables()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>public int totalBytes()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int totalBytes()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>Initializes a new instance of the IISRequest class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISRequest クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>Method binaryRead</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド binaryRead</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>countToRead</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">countToRead</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Method clientCertificate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clientCertificate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Method cookies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド cookies</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>Method file</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド file</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>index</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>Method fileCount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fileCount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Method form</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド form</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Method interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interface</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>Method item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド item</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Method queryString</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド queryString</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>Method serverVariables</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド serverVariables</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>Method totalBytes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド totalBytes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>Initializes a new instance of the IISRequest class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISRequest クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>Class IISRequestDictionary</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISRequestDictionary</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source>The IISRequestDictionary class wraps the RequestDictionary object that is offered by Internet Information Services (IIS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISRequestDictionary クラスは、インターネット インフォメーション サービス (IIS) によって提供される RequestDictionary オブジェクトをラップします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source>There is a one-to-one relationship between the methods of the IISRequestDictionary class and the methods of the RequestDictionary object that is offered by IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISRequestDictionary クラスのメソッドと、IIS によって提供される RequestDictionary オブジェクトのメソッドとの間には、1 対 1 のリレーションシップがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>Therefore, for more information about the methods of the IISRequestDictionary class, see the Microsoft documentation for IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、IISRequestDictionary クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source>Use of the IISRequestDictionary class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISRequestDictionary クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>public int count()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int count()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>public COMEnum2Variant getEnum()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMEnum2Variant getEnum()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>public ComInterface interface()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface interface()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>public COMVariant item(COMVariant item)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMVariant item(COMVariant item)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source>public IISReadCookie itemReadCookie(<ph id="ph1">\[</ph>str item<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISReadCookie itemReadCookie(<ph id="ph1">\[</ph>str item<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>public IISStringList itemStringList(<ph id="ph1">\[</ph>str item<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISStringList itemStringList(<ph id="ph1">\[</ph>str item<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source>public str itemTxt(str item)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str itemTxt(str item)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>public IISWriteCookie itemWriteCookie(<ph id="ph1">\[</ph>str item<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISWriteCookie itemWriteCookie(<ph id="ph1">\[</ph>str item<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source>public str key(str key)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str key(str key)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source>public void new(COM requestDictionary)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(COM requestDictionary)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source>Method count</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド count</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>Method getEnum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getEnum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>Method interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interface</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>Method item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド item</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="360">
-          <source>Method itemReadCookie</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド itemReadCookie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="361">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="362">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="363">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="364">
-          <source>Method itemStringList</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド itemStringList</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="365">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="366">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="367">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="368">
-          <source>Method itemTxt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド itemTxt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="369">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="370">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="371">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="372">
-          <source>Method itemWriteCookie</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド itemWriteCookie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="373">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="374">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="375">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="376">
-          <source>Method key</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド key</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="377">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="378">
-          <source>key</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="379">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="380">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="381">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="382">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="383">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="384">
-          <source>requestDictionary</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">requestDictionary</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="385">
-          <source>Class IISResponse</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISResponse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="386">
-          <source>The IISResponse class wraps the Response object that is offered by Internet Information Services (IIS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISResponse クラスは、インターネット インフォメーション サービス (IIS) によって提供される Response オブジェクトをラップします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="387">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="388">
-          <source>There is a one-to-one relationship between the methods of the IISResponse class and the methods of the Response object that is offered by IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISResponse クラスのメソッドと、IIS によって提供される Response オブジェクトのメソッドとの間には、1 対 1 のリレーションシップがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="389">
-          <source>Therefore, for more information about the methods of the IISResponse class, see the Microsoft documentation for IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、IISResponse クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="390">
-          <source>Use of the IISResponse class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISResponse クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="391">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="392">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="393">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="394">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="395">
-          <source>public boolean buffer(<ph id="ph1">\[</ph>boolean isBuffering<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean buffer(<ph id="ph1">\[</ph>boolean isBuffering<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="396">
-          <source>public str cacheControl(<ph id="ph1">\[</ph>str cacheControl<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str cacheControl(<ph id="ph1">\[</ph>str cacheControl<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="397">
-          <source>public boolean cacheWrite(<ph id="ph1">\[</ph>boolean cache<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean cacheWrite(<ph id="ph1">\[</ph>boolean cache<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="398">
-          <source>public str charSet(<ph id="ph1">\[</ph>str charSet<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str charSet(<ph id="ph1">\[</ph>str charSet<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="399">
-          <source>public str contentType(<ph id="ph1">\[</ph>str contentType<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str contentType(<ph id="ph1">\[</ph>str contentType<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="400">
-          <source>public IISRequestDictionary cookies()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISRequestDictionary cookies()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="401">
-          <source>public int expires(<ph id="ph1">\[</ph>int expiresMinutes<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int expires(<ph id="ph1">\[</ph>int expiresMinutes<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="402">
-          <source>public COMVariant expiresAbsolute(<ph id="ph1">\[</ph>COMVariant expires<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMVariant expiresAbsolute(<ph id="ph1">\[</ph>COMVariant expires<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="403">
-          <source>public ComInterface interface()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface interface()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="404">
-          <source>public boolean isClientConnected()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isClientConnected()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="405">
-          <source>public str status(<ph id="ph1">\[</ph>str status<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str status(<ph id="ph1">\[</ph>str status<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="406">
-          <source>Gets or sets the status of an object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの状態を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="407">
-          <source>public void addHeader(str headerName, str headerValue)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void addHeader(str headerName, str headerValue)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="408">
-          <source>public void writeTxt(str text)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void writeTxt(str text)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="409">
-          <source>public void write(COMVariant text)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void write(COMVariant text)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="410">
-          <source>public void clear()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clear()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="411">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="412">
-          <source>public void binaryWrite(COMVariant input)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void binaryWrite(COMVariant input)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="413">
-          <source>public void appendToLog(str logEntry)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void appendToLog(str logEntry)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="414">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="415">
-          <source>Initializes a new instance of the IISResponse class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISResponse クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="416">
-          <source>public void redirect(str url)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void redirect(str url)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="417">
-          <source>public void flush()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void flush()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="418">
-          <source>public void pics(str headerValue)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void pics(str headerValue)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="419">
-          <source>public void end()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void end()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="420">
-          <source>Method buffer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド buffer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="421">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="422">
-          <source>isBuffering</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">isBuffering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="423">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="424">
-          <source>Method cacheControl</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド cacheControl</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="425">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="426">
-          <source>cacheControl</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">cacheControl</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="427">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="428">
-          <source>Method cacheWrite</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド cacheWrite</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="429">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="430">
-          <source>cache</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">cache</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="431">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="432">
-          <source>Method charSet</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド charSet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="433">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="434">
-          <source>charSet</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">charSet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="435">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="436">
-          <source>Method contentType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド contentType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="437">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="438">
-          <source>contentType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">contentType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="439">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="440">
-          <source>Method cookies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド cookies</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="441">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="442">
-          <source>Method expires</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド expires</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="443">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="444">
-          <source>expiresMinutes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">expiresMinutes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="445">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="446">
-          <source>Method expiresAbsolute</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド expiresAbsolute</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="447">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="448">
-          <source>expires</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">expires</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="449">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="450">
-          <source>Method interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interface</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="451">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="452">
-          <source>Method isClientConnected</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isClientConnected</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="453">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="454">
-          <source>Method status</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド status</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="455">
-          <source>Gets or sets the status of an object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの状態を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="456">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="457">
-          <source>status</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ステータス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="458">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="459">
-          <source>The current value of the status of the object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトのステータスの現在の値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="460">
-          <source>Method addHeader</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addHeader</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="461">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="462">
-          <source>headerName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">headerName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="463">
-          <source>headerValue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">headerValue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="464">
-          <source>Method writeTxt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド writeTxt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="465">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="466">
-          <source>text</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テキスト</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="467">
-          <source>Method write</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド write</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="468">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="469">
-          <source>text</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テキスト</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="470">
-          <source>Method clear</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clear</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="471">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="472">
-          <source>Method binaryWrite</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド binaryWrite</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="473">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="474">
-          <source>input</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">input</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="475">
-          <source>Method appendToLog</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド appendToLog</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="476">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="477">
-          <source>logEntry</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">logEntry</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="478">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="479">
-          <source>Initializes a new instance of the IISResponse class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISResponse クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="480">
-          <source>Method redirect</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド redirect</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="481">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="482">
-          <source>url</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">URL</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="483">
-          <source>Method flush</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド flush</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="484">
-          <source>Method pics</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド pics</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="485">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="486">
-          <source>headerValue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">headerValue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="487">
-          <source>Method end</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド end</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="488">
-          <source>Class IISServer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISServer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="489">
-          <source>The IISServer class wraps the Server object that is offered by Internet Information Services (IIS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISServer クラスは、インターネット インフォメーション サービス (IIS) によって提供される Server オブジェクトをラップします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="490">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="491">
-          <source>There is a one-to-one connection between the methods of the IISServer class and the methods of the Server object that is offered by IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISServer クラスのメソッドと、IIS によって提供される Server オブジェクトのメソッドとの間には、1 対 1 の接続があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="492">
-          <source>Therefore, for more information about the methods of the IISServer class, see the Microsoft documentation for IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、IISServer クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="493">
-          <source>Use of the IISServer class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISServer クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="494">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="495">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="496">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="497">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="498">
-          <source>public COM createObject(str progID)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COM createObject(str progID)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="499">
-          <source>public str htmlEncode(str txt)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str htmlEncode(str txt)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="500">
-          <source>public ComInterface interface()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface interface()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="501">
-          <source>public str mapPath(str logicalPath)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str mapPath(str logicalPath)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="502">
-          <source>public int scriptTimeout(<ph id="ph1">\[</ph>int timeoutSeconds<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int scriptTimeout(<ph id="ph1">\[</ph>int timeoutSeconds<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="503">
-          <source>public str urlEncode(str txt)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str urlEncode(str txt)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="504">
-          <source>public str urlPathEncode(str txt)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str urlPathEncode(str txt)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="505">
-          <source>public void execute(str logicalPath)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void execute(str logicalPath)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="506">
-          <source>public void transfer(str logicalPath)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void transfer(str logicalPath)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="507">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="508">
-          <source>Initializes a new instance of the IISServer class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISServer クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="509">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="510">
-          <source>Method createObject</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createObject</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="511">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="512">
-          <source>progID</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">progID</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="513">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="514">
-          <source>Method htmlEncode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド htmlEncode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="515">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="516">
-          <source>txt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">txt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="517">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="518">
-          <source>Method interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interface</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="519">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="520">
-          <source>Method mapPath</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド mapPath</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="521">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="522">
-          <source>logicalPath</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">logicalPath</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="523">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="524">
-          <source>Method scriptTimeout</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド scriptTimeout</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="525">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="526">
-          <source>timeoutSeconds</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">timeoutSeconds</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="527">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="528">
-          <source>Method urlEncode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド urlEncode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="529">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="530">
-          <source>txt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">txt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="531">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="532">
-          <source>Method urlPathEncode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド urlPathEncode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="533">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="534">
-          <source>txt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">txt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="535">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="536">
-          <source>Method execute</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド execute</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="537">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="538">
-          <source>logicalPath</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">logicalPath</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="539">
-          <source>Method transfer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド transfer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="540">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="541">
-          <source>logicalPath</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">logicalPath</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="542">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="543">
-          <source>Initializes a new instance of the IISServer class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISServer クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="544">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="545">
-          <source>Class IISSessionObject</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISSessionObject</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="546">
-          <source>The IISSessionObject class wraps the Session object that is offered by Internet Information Services (IIS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISSessionObject クラスは、インターネット インフォメーション サービス (IIS) によって提供される Session オブジェクトをラップします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="547">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="548">
-          <source>There is a one-to-one connection between the methods of the IISSessionObject class and the methods of the Session object that is offered by IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISSessionObject クラスのメソッドと、IIS によって提供される Session オブジェクトのメソッドとの間には、1 対 1 の接続があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="549">
-          <source>Therefore, for more information about the methods of the IISSessionObject class, see the Microsoft documentation for IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、IISSessionObject クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="550">
-          <source>Use of the IISSessionObject class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISSessionObject クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="551">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="552">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="553">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="554">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="555">
-          <source>public int codePage(<ph id="ph1">\[</ph>int codePage<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int codePage(<ph id="ph1">\[</ph>int codePage<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="556">
-          <source>public IISVariantDictionary contents()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISVariantDictionary contents()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="557">
-          <source>public str getSessionID()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str getSessionID()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="558">
-          <source>public ComInterface interface()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface interface()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="559">
-          <source>public int lcid(<ph id="ph1">\[</ph>int lcid<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int lcid(<ph id="ph1">\[</ph>int lcid<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="560">
-          <source>public IISVariantDictionary staticObjects()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IISVariantDictionary staticObjects()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="561">
-          <source>public int timeout(<ph id="ph1">\[</ph>int timeout<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int timeout(<ph id="ph1">\[</ph>int timeout<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="562">
-          <source>public COMVariant value(str value, <ph id="ph1">\[</ph>COMVariant var<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMVariant value(str value, <ph id="ph1">\[</ph>COMVariant var<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="563">
-          <source>public str valueTxt(str value, <ph id="ph1">\[</ph>str var<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str valueTxt(str value, <ph id="ph1">\[</ph>str var<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="564">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="565">
-          <source>Initializes a new instance of the IISSessionObject class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISSessionObject クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="566">
-          <source>public void abandon()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void abandon()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="567">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="568">
-          <source>Method codePage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド codePage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="569">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="570">
-          <source>codePage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">codePage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="571">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="572">
-          <source>Method contents</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド contents</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="573">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="574">
-          <source>Method getSessionID</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getSessionID</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="575">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="576">
-          <source>Method interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interface</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="577">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="578">
-          <source>Method lcid</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lcid</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="579">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="580">
-          <source>lcid</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">lcid</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="581">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="582">
-          <source>Method staticObjects</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド staticObjects</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="583">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="584">
-          <source>Method timeout</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド timeout</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="585">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="586">
-          <source>timeout</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">timeout</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="587">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="588">
-          <source>Method value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="589">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="590">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="591">
-          <source>var</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">var</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="592">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="593">
-          <source>Method valueTxt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド valueTxt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="594">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="595">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="596">
-          <source>var</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">var</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="597">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="598">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="599">
-          <source>Initializes a new instance of the IISSessionObject class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISSessionObject クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="600">
-          <source>Method abandon</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド abandon</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="601">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="602">
-          <source>Class IISStringList</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISStringList</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="603">
-          <source>The IISStringList class wraps the StringList object that is offered by Internet Information Services (IIS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISStringList クラスは、インターネット インフォメーション サービス (IIS) によって提供される StringList オブジェクトをラップします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="604">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="605">
-          <source>There is a one-to-one connection between the methods of the IISStringList class and the methods of the StringList object that is offered by IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISStringList クラスのメソッドと、IIS によって提供される StringList オブジェクトのメソッドとの間には、1 対 1 の接続があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="606">
-          <source>Therefore, for more information about the methods of the IISStringList class, see the Microsoft documentation for IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、IISStringList クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="607">
-          <source>Use of the IISStringList class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISStringList クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="608">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="609">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="610">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="611">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="612">
-          <source>public int count()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int count()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="613">
-          <source>public COMEnum2Variant getEnum()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMEnum2Variant getEnum()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="614">
-          <source>public ComInterface interface()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface interface()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="615">
-          <source>public str item(<ph id="ph1">\[</ph>str item<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str item(<ph id="ph1">\[</ph>str item<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="616">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="617">
-          <source>public void new(COM stringList)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(COM stringList)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="618">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="619">
-          <source>Method count</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド count</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="620">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="621">
-          <source>Method getEnum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getEnum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="622">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="623">
-          <source>Method interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interface</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="624">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="625">
-          <source>Method item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド item</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="626">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="627">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="628">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="629">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="630">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="631">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="632">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="633">
-          <source>stringList</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">stringList</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="634">
-          <source>Class IISVariantDictionary</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISVariantDictionary</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="635">
-          <source>The IISVariantDictionary class wraps the VariantDictionary object that is offered by Internet Information Services (IIS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISVariantDictionary クラスは、インターネット インフォメーション サービス (IIS) によって提供される VariantDictionary オブジェクトをラップします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="636">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="637">
-          <source>There is a one-to-one connection between the methods of the IISVariantDictionary class and the methods of the VariantDictionary object that is offered by IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISVariantDictionary クラスのメソッドと、IIS によって提供される VariantDictionary オブジェクトのメソッドとの間には、1 対 1 の接続があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="638">
-          <source>Therefore, for more information about the methods of the IISVariantDictionary class, see the Microsoft documentation for IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、IISVariantDictionary クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="639">
-          <source>Use of the IISVariantDictionary class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISVariantDictionary クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="640">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="641">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="642">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="643">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="644">
-          <source>public int count()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int count()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="645">
-          <source>public COMEnum2Variant getEnum()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMEnum2Variant getEnum()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="646">
-          <source>public ComInterface interface()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface interface()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="647">
-          <source>public COMVariant item(COMVariant item, <ph id="ph1">\[</ph>COMVariant var<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMVariant item(COMVariant item, <ph id="ph1">\[</ph>COMVariant var<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="648">
-          <source>public COM itemObj(str item, <ph id="ph1">\[</ph>COM var<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COM itemObj(str item, <ph id="ph1">\[</ph>COM var<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="649">
-          <source>public str itemTxt(str item, <ph id="ph1">\[</ph>str var<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str itemTxt(str item, <ph id="ph1">\[</ph>str var<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="650">
-          <source>public str key(str key)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str key(str key)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="651">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="652">
-          <source>public void remove(str key)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void remove(str key)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="653">
-          <source>public void removeAll()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void removeAll()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="654">
-          <source>public void new(COM variantDictionary)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(COM variantDictionary)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="655">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="656">
-          <source>Method count</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド count</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="657">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="658">
-          <source>Method getEnum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getEnum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="659">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="660">
-          <source>Method interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interface</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="661">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="662">
-          <source>Method item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド item</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="663">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="664">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="665">
-          <source>var</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">var</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="666">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="667">
-          <source>Method itemObj</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド itemObj</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="668">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="669">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="670">
-          <source>var</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">var</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="671">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="672">
-          <source>Method itemTxt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド itemTxt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="673">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="674">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="675">
-          <source>var</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">var</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="676">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="677">
-          <source>Method key</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド key</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="678">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="679">
-          <source>key</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="680">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="681">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="682">
-          <source>Method remove</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド remove</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="683">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="684">
-          <source>key</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="685">
-          <source>Method removeAll</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド removeAll</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="686">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="687">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="688">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="689">
-          <source>variantDictionary</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">variantDictionary</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="690">
-          <source>Class IISViewState</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISViewState</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="691">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="692">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="693">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="694">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="695">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="696">
-          <source>public boolean viewStateContains(str key)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean viewStateContains(str key)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="697">
-          <source>public str viewStateItem(str key, <ph id="ph1">\[</ph>str val<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str viewStateItem(str key, <ph id="ph1">\[</ph>str val<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="698">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="699">
-          <source>public void viewStateDelete(str key)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void viewStateDelete(str key)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="700">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="701">
-          <source>Initializes a new instance of the IISViewState class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISViewState クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="702">
-          <source>Method viewStateContains</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド viewStateContains</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="703">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="704">
-          <source>key</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="705">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="706">
-          <source>Method viewStateItem</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド viewStateItem</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="707">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="708">
-          <source>key</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="709">
-          <source>val</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">val</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="710">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="711">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="712">
-          <source>Method viewStateDelete</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド viewStateDelete</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="713">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="714">
-          <source>key</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="715">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="716">
-          <source>Initializes a new instance of the IISViewState class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISViewState クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="717">
-          <source>Class IISWriteCookie</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス IISWriteCookie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="718">
-          <source>The IISWriteCookie class wraps the WriteCookie object that is offered by Internet Information Services (IIS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISWriteCookie クラスは、インターネット インフォメーション サービス (IIS) によって提供される WriteCookie オブジェクトをラップします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="719">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="720">
-          <source>There is a one-to-one connection between the methods of the IISWriteCookie class and the methods of the WriteCookie object that is offered by IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISWriteCookie クラスのメソッドと、IIS によって提供される WriteCookie オブジェクトのメソッドとの間には、1 対 1 の接続があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="721">
-          <source>Therefore, for more information about the methods of the IISWriteCookie class, see the Microsoft documentation for IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、IISWriteCookie クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="722">
-          <source>Use of the IISWriteCookie class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IISWriteCookie クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="723">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="724">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="725">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="726">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="727">
-          <source>public COMEnum2Variant getEnum()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMEnum2Variant getEnum()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="728">
-          <source>public boolean hasKeys()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean hasKeys()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="729">
-          <source>public ComInterface interface()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface interface()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="730">
-          <source>public void new(COM writeCookie)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(COM writeCookie)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="731">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="732">
-          <source>public void secure(boolean secure)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void secure(boolean secure)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="733">
-          <source>public void path(str path)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void path(str path)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="734">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="735">
-          <source>public void domain(str domain)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void domain(str domain)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="736">
-          <source>public void expires(COMVariant expires)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void expires(COMVariant expires)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="737">
-          <source>public void item(str item, str value)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void item(str item, str value)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="738">
-          <source>Method getEnum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getEnum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="739">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="740">
-          <source>Method hasKeys</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド hasKeys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="741">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="742">
-          <source>Method interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interface</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="743">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="744">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="745">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="746">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="747">
-          <source>writeCookie</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">writeCookie</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="748">
-          <source>Method secure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド secure</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="749">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="750">
-          <source>secure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">secure</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="751">
-          <source>Method path</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド path</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="752">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="753">
-          <source>path</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">path</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="754">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="755">
-          <source>Method domain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド domain</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="756">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="757">
-          <source>domain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">domain</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="758">
-          <source>Method expires</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド expires</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="759">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="760">
-          <source>expires</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">expires</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="761">
-          <source>Method item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド item</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="762">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="763">
-          <source>item</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="764">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="765">
-          <source>Class Image</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス イメージ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="766">
-          <source>Provides methods for loading, saving, and manipulating images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">読み込み、保存、および画像を操作するためのメソッドを提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="767">
-          <source>If you want to manipulate several images at the same time, use the Imagelist Class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数のイメージを同時に操作する場合は、Imagelist クラスを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="768">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="769">
-          <source>You can construct Image objects from the following file types:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のファイル タイプからイメージ オブジェクトを作成することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="770">
-          <source>Raster (bitmap) formats - .bmp, .gif, .jpg, .png, .tiff, and .exif</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラスター (ビットマップ) 形式 - .bmp、.gif、.jpg、.png、.tiff、.exif</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="771">
-          <source>Vector formats - .emf and .wmf</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ベクター形式 - .emf および .wmf</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="772">
-          <source>If you want to work with several images at the same time, use the Imagelist class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数のイメージを同時に操作する場合は、Imagelist クラスを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="773">
-          <source>You can construct the Image objects from the following file types:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のファイル タイプからイメージ オブジェクトを作成することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="774">
-          <source>Raster, which is a bitmap, formats - .bmp, .gif, .jpg, .png, .tiff, and .exif</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラスター (ビットマップである) 形式 - .bmp、.gif、.jpg、.png、.tiff、.exif</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="775">
-          <source>Vector formats - .emf and .wmf</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ベクター形式 - .emf および .wmf</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="776">
-          <source>In Finance and Operations, the Image class is bound to the client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations では、イメージ クラスはクライアントにバインドされています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="777">
-          <source>The class can no longer be run from the server because of the security risks that are associated with file handling.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル操作に伴うセキュリティ上のリスクのため、クラスをサーバーから実行できなくなりました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="778">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="779">
-          <source>The following example prints the height of Picture.jpg in pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、Picture.jpg の高さをピクセル単位で出力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="780">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="781">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="782">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="783">
-          <source>public int captureScreen(int left, int top, int right, int bottom)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int captureScreen(int left, int top, int right, int bottom)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="784">
-          <source>Captures an image from the screen by using the coordinates that are supplied in the parameter list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメータ リストで指定された座標を使用して、スクリーンからイメージをキャプチャします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="785">
-          <source>public int captureWindow(int hWnd)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int captureWindow(int hWnd)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="786">
-          <source>Captures a window as an image, using the handle that is supplied as a parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメータとして指定されたハンドルを使用して、ウィンドウをイメージとしてキャプチャします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="787">
-          <source>public int clipboardCopy()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int clipboardCopy()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="788">
-          <source>Copies an image to the clipboard.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージをクリップボードにコピーします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="789">
-          <source>public int clipboardPaste()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int clipboardPaste()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="790">
-          <source>Overwrites an existing image with the content of the system clipboard.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システムのクリップボードの内容で既存のイメージを上書きします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="791">
-          <source>public int copyImage(Image image)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int copyImage(Image image)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="792">
-          <source>Copies the current image object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のイメージ オブジェクトをコピーします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="793">
-          <source>public int createImage(int Width, int Height, int BitsPerPixel)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int createImage(int Width, int Height, int BitsPerPixel)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="794">
-          <source>Creates an empty bitmap image with the width, height, and color depth as specified by the parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーターで指定された幅、高さ、および色深度を持つ空のビットマップ画像を作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="795">
-          <source>public int crop(int x, int y, int w, int h)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int crop(int x, int y, int w, int h)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="796">
-          <source>Crops the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像をトリミングします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="797">
-          <source>public int displayImage(Int64 HDC, <ph id="ph1">\[</ph>int Mode<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int Xpos<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int Ypos<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>int Width<ph id="ph8">\]</ph>, <ph id="ph9">\[</ph>int Height<ph id="ph10">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int displayImage(Int64 HDC, <ph id="ph1">\[</ph>int Mode<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int Xpos<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int Ypos<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>int Width<ph id="ph8">\]</ph>, <ph id="ph9">\[</ph>int Height<ph id="ph10">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="798">
-          <source>Draws an image with the device context specified by the HDC parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HDC パラメーターで指定されたデバイス コンテキストに画像を描画します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="799">
-          <source>public Int64 exportBitmap()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Int64 exportBitmap()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="800">
-          <source>Gets a handle for the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像のハンドルを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="801">
-          <source>public int flip(FlipType FlipType)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int flip(FlipType FlipType)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="802">
-          <source>Rotates the image 180 degrees in a vertical or horizontal direction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像を垂直または水平方向に 180 度回転します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="803">
-          <source>public container getImageDimensionUnits()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container getImageDimensionUnits()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="804">
-          <source>public int getPixel(int x, int y)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int getPixel(int x, int y)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="805">
-          <source>Retrieves the ARGB color value of the pixel at the point that is specified by the parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーターで指定されたポイントで、ピクセルの ARGB カラーの値を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="806">
-          <source>public int height()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int height()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="807">
-          <source>Retrieves the height of the image in pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ピクセル単位の画像の高さを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="808">
-          <source>public container imageInfo()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container imageInfo()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="809">
-          <source>Retrieves the width, height, and color depth of the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の幅、高さ、色深度を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="810">
-          <source>public int imageSpotlight(int x, int y, int radius, int smoothing, int intensity)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int imageSpotlight(int x, int y, int radius, int smoothing, int intensity)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="811">
-          <source>Produces a spotlight effect within the circle that is defined by radius with center coordinates x and y.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">センター座標 x および y で半径により定義された円内のスポットライト効果を生成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="812">
-          <source>public int importBitmap(Int64 hBitmap)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int importBitmap(Int64 hBitmap)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="813">
-          <source>Clones a bitmap from the image that is specified by the hBitmap parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hBitmap パラメータで指定されたイメージからビットマップをクローンします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="814">
-          <source>public int importFileIcon(str fileName)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int importFileIcon(str fileName)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="815">
-          <source>Creates an icon from the file specified by the fileName parameter by copying the icon that is used for the file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルに使用されているアイコンをコピーすることにより、fileName パラメーターで指定されたファイルからアイコンを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="816">
-          <source>public int importIcon(str fileName, int iconIdx)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int importIcon(str fileName, int iconIdx)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="817">
-          <source>Retrieves a handle to an icon from an executable file in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations の実行可能ファイルからアイコンへのハンドルを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="818">
-          <source>The icon is specified by the fileName and iconIdx parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このアイコンは、fileName および iconIdx パラメーターで指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="819">
-          <source>public int loadImage(str fileName)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int loadImage(str fileName)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="820">
-          <source>Loads an image from the file specified by the fileName parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName パラメーターで指定されたファイルからイメージを読み込みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="821">
-          <source>public int loadResource(int id)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int loadResource(int id)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="822">
-          <source>Loads a resource from Ax32.exe.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ax32.exe からリソースを読み込みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="823">
-          <source>public int promoteColor(int noOfColorBits)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int promoteColor(int noOfColorBits)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="824">
-          <source>Increases the color depth of the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の色深度を向上させます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="825">
-          <source>public int reduceColorOctree(int maxColors)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int reduceColorOctree(int maxColors)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="826">
-          <source>Reduces the color depth of an image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の色深度を減少させます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="827">
-          <source>public int removeImage()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int removeImage()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="828">
-          <source>Removes the data about an image; the object still exists, but has no data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像に関するデータを削除します。オブジェクトはまだ存在しますが、データを持ちません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="829">
-          <source>public int resize(int newWidth, int newHeight, InterpolationMode InterpolationMode)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int resize(int newWidth, int newHeight, InterpolationMode InterpolationMode)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="830">
-          <source>Resizes the image to the size that is specified by the newWidth and newHeight parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">newWidth および newHeight パラメーターにより指定されたサイズに画像をサイズ変更します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="831">
-          <source>public int rotate(RotateType RotateType)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int rotate(RotateType RotateType)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="832">
-          <source>Rotates the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像を回転します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="833">
-          <source>public int saveImage(str fileName, <ph id="ph1">\[</ph>ImageSaveType Type<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int saveImage(str fileName, <ph id="ph1">\[</ph>ImageSaveType Type<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="834">
-          <source>Saves the image to the specified file name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたファイル名に画像を保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="835">
-          <source>public ImageSaveType saveType(<ph id="ph1">\[</ph>ImageSaveType Type<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ImageSaveType saveType(<ph id="ph1">\[</ph>ImageSaveType Type<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="836">
-          <source>Gets or sets the image decoder.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ デコーダを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="837">
-          <source>public int setPixel(int x, int y, int pixel)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int setPixel(int x, int y, int pixel)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="838">
-          <source>Sets the color for the pixel that is specified by the x and y parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x と y パラメーターで指定されているピクセルの色を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="839">
-          <source>public int transparent(<ph id="ph1">\[</ph>boolean Set<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int RValue<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int GValue<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>int BValue<ph id="ph8">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int transparent(<ph id="ph1">\[</ph>boolean Set<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int RValue<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int GValue<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>int BValue<ph id="ph8">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="840">
-          <source>Sets the transparent color for the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の透明な色を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="841">
-          <source>public int width()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int width()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="842">
-          <source>Retrieves the width of the image in pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ピクセル単位の画像の幅を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="843">
-          <source>::public static int canLoad(str filename)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static int canLoad(str filename)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="844">
-          <source>Determines whether an image file exists and can be opened.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像ファイルが存在し、開くことができるかどうかを決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="845">
-          <source>::public static container loadExt(int idx)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static container loadExt(int idx)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="846">
-          <source>Retrieves a list of the extensions of the file formats that are supported by the Image class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Image クラスでサポートされているファイル形式の拡張機能の一覧を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="847">
-          <source>::public static int resourceType(int resourceIdx)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static int resourceType(int resourceIdx)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="848">
-          <source>Determines whether a particular resource is a bitmap or an icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定のリソースがビットマップかアイコンかを判別します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="849">
-          <source>::public static int rgb(int R, int G, int B)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static int rgb(int R, int G, int B)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="850">
-          <source>Converts an RGB value to an ARGB value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RGB 値を ARGB 値に変換します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="851">
-          <source>::public static int validResource(int id)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static int validResource(int id)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="852">
-          <source>Determines whether the resource specified by the id parameter is valid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">id パラメータで指定されたリソースが有効かどうかを判定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="853">
-          <source>public void new(<ph id="ph1">\[</ph>AnyType image<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int width<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int height<ph id="ph6">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(<ph id="ph1">\[</ph>AnyType image<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int width<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int height<ph id="ph6">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="854">
-          <source>Creates a new image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい画像を作成します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="855">
-          <source>public void displayOrign(int Xpos, int Ypos)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void displayOrign(int Xpos, int Ypos)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="856">
-          <source>Enables you to specify an offset (X, Y) from the original origin (0, 0).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オリジナルの発注元 (0, 0) から、オフセット (X, Y) を指定できるようにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="857">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="858">
-          <source>Method captureScreen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド captureScreen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="859">
-          <source>Captures an image from the screen by using the coordinates that are supplied in the parameter list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメータ リストで指定された座標を使用して、スクリーンからイメージをキャプチャします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="860">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="861">
-          <source>left</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">left</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="862">
-          <source>Y coordinate of the lower-right corner of the part of the screen that you want to capture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャプチャする画面の右下隅部分の Y 座標です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="863">
-          <source>top</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻る</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="864">
-          <source>Y coordinate of the lower-right corner of the part of the screen that you want to capture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャプチャする画面の右下隅部分の Y 座標です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="865">
-          <source>right</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">権限</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="866">
-          <source>Y coordinate of the lower-right corner of the part of the screen that you want to capture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャプチャする画面の右下隅部分の Y 座標です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="867">
-          <source>bottom</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">bottom</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="868">
-          <source>Y coordinate of the lower-right corner of the part of the screen that you want to capture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャプチャする画面の右下隅部分の Y 座標です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="869">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="870">
-          <source>0 indicates success.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="871">
-          <source>Other values indicate failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他の値はエラーを示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="872">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="873">
-          <source>The following example captures a part of the screen and saves it to a file that is named test.bmp.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、画面の一部をキャプチャし、test.bmp という名前のファイルに保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="874">
-          <source>Method captureWindow</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド captureWindow</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="875">
-          <source>Captures a window as an image, using the handle that is supplied as a parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメータとして指定されたハンドルを使用して、ウィンドウをイメージとしてキャプチャします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="876">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="877">
-          <source>hWnd</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hWnd</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="878">
-          <source>The handle to the window that you want to capture which must be supplied as an integer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャプチャするウィンドウのハンドル。整数として指定する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="879">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="880">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="881">
-          <source>Method clipboardCopy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clipboardCopy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="882">
-          <source>Copies an image to the clipboard.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージをクリップボードにコピーします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="883">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="884">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="885">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="886">
-          <source>The following example copies the content from a file that is named Test.bmp.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、Test.bmp という名前のファイルからコンテンツをコピーします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="887">
-          <source>Method clipboardPaste</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clipboardPaste</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="888">
-          <source>Overwrites an existing image with the content of the system clipboard.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システムのクリップボードの内容で既存のイメージを上書きします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="889">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="890">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="891">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="892">
-          <source>For the method to be used successfully, the clipboard must have content.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">正常に使用されるメソッドについては、クリップボードにコンテンツが必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="893">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="894">
-          <source>The following example creates a new image file by using contents previously copied to the clipboard.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、以前にクリップボードにコピーされたコンテンツを使用して新しいイメージ ファイルを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="895">
-          <source>Method copyImage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド copyImage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="896">
-          <source>Copies the current image object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のイメージ オブジェクトをコピーします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="897">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="898">
-          <source>image</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">image</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="899">
-          <source>The image to be copied.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コピーする画像。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="900">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="901">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="902">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="903">
-          <source>The following example creates two new images and then overwrites the contents of one image with the contents of the other.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、2 つの新しいイメージを作成し、1 つのイメージの内容をもう一方のイメージの内容で上書きします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="904">
-          <source>Method createImage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createImage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="905">
-          <source>Creates an empty bitmap image with the width, height, and color depth as specified by the parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーターで指定された幅、高さ、および色深度を持つ空のビットマップ画像を作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="906">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="907">
-          <source>Width</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">幅</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="908">
-          <source>The color depth of the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の色深度。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="909">
-          <source>Possible values are 1, 4, 8, 16, 24, and 32.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効値は 1、4、8、16、24、32 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="910">
-          <source>Height</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高さ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="911">
-          <source>The color depth of the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の色深度。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="912">
-          <source>Possible values are 1, 4, 8, 16, 24, and 32.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効値は 1、4、8、16、24、32 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="913">
-          <source>BitsPerPixel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BitsPerPixel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="914">
-          <source>The color depth of the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の色深度。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="915">
-          <source>Possible values are 1, 4, 8, 16, 24, and 32.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効値は 1、4、8、16、24、32 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="916">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="917">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="918">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="919">
-          <source>The following example creates an image with a height and width of 16 pixels, and a color depth of 32 bits per pixel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、高さと幅が 16 ピクセル、色深度がピクセルあたり 32 ビットのイメージを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="920">
-          <source>Method crop</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド crop</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="921">
-          <source>Crops the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像をトリミングします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="922">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="923">
-          <source>x</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="924">
-          <source>The height of the region that you want to crop from the point (x, y).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">点 (x、y) からトリミングする領域の高さ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="925">
-          <source>y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="926">
-          <source>The height of the region that you want to crop from the point (x, y).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">点 (x、y) からトリミングする領域の高さ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="927">
-          <source>w</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">w</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="928">
-          <source>The height of the region that you want to crop from the point (x, y).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">点 (x、y) からトリミングする領域の高さ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="929">
-          <source>h</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">h</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="930">
-          <source>The height of the region that you want to crop from the point (x, y).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">点 (x、y) からトリミングする領域の高さ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="931">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="932">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="933">
-          <source>Method displayImage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド displayImage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="934">
-          <source>Draws an image with the device context specified by the HDC parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HDC パラメーターで指定されたデバイス コンテキストに画像を描画します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="935">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="936">
-          <source>HDC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HDC</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="937">
-          <source>Optional parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプションのパラメーター。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="938">
-          <source>Mode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モード</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="939">
-          <source>Optional parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプションのパラメーター。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="940">
-          <source>Xpos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Xpos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="941">
-          <source>Optional parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプションのパラメーター。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="942">
-          <source>Ypos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ypos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="943">
-          <source>Optional parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプションのパラメーター。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="944">
-          <source>Width</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">幅</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="945">
-          <source>Optional parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプションのパラメーター。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="946">
-          <source>Height</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高さ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="947">
-          <source>Optional parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプションのパラメーター。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="948">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="949">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="950">
-          <source>Method exportBitmap</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド exportBitmap</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="951">
-          <source>Gets a handle for the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像のハンドルを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="952">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="953">
-          <source>An integer that represents the handle for the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像のハンドル を表す整数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="954">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="955">
-          <source>The following example retrieves the handle for an image and then uses the handle to clone the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージのハンドルを取得し、ハンドルを使用してイメージを複製します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="956">
-          <source>Method flip</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド flip</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="957">
-          <source>Rotates the image 180 degrees in a vertical or horizontal direction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像を垂直または水平方向に 180 度回転します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="958">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="959">
-          <source>FlipType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FlipType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="960">
-          <source>A FlipType enumeration that determines the way in which the image is flipped.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージを反転させる方法を決定する FlipType 列挙。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="961">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="962">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="963">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="964">
-          <source>The possible values for the FlipType parameter are those available in the FlipType system enum:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FlipType パラメーターの使用可能な値は FlipType システム列挙で使用可能な次の値です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="965">
-          <source>0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="966">
-          <source>RotateNoneFlipNone</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RotateNoneFlipNone</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="967">
-          <source>No flip</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">反転なし</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="968">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="969">
-          <source>RotateNoneFlipX</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RotateNoneFlipX</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="970">
-          <source>Rotates the image 180 degrees in a horizontal direction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像を水平方向に 180 度回転します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="971">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="972">
-          <source>RotateNoneFlipY</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RotateNoneFlipX</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="973">
-          <source>Rotates the image 180 degrees in a vertical direction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像を垂直方向に 180 度回転します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="974">
-          <source>Method getImageDimensionUnits</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getImageDimensionUnits</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="975">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="976">
-          <source>Method getPixel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getPixel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="977">
-          <source>Retrieves the ARGB color value of the pixel at the point that is specified by the parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーターで指定されたポイントで、ピクセルの ARGB カラーの値を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="978">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="979">
-          <source>x</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="980">
-          <source>The vertical coordinate of the pixel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ピクセルの垂直座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="981">
-          <source>y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="982">
-          <source>The vertical coordinate of the pixel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ピクセルの垂直座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="983">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="984">
-          <source>An integer that is the ARGB value of the pixel (a 32-bit representation of an RGB color).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ピクセルの ARGB 値である整数 (RGB カラーの 32 ビット表示) 。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="985">
-          <source>Method height</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド height</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="986">
-          <source>Retrieves the height of the image in pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ピクセル単位の画像の高さを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="987">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="988">
-          <source>An integer that represents the height of the image in pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の高さをピクセル単位で表す整数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="989">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="990">
-          <source>The following example prints out the height of the image that is contained in test.bmp.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、test.bmp に含まれるイメージの高さを出力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="991">
-          <source>Method imageInfo</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド imageInfo</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="992">
-          <source>Retrieves the width, height, and color depth of the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の幅、高さ、色深度を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="993">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="994">
-          <source>A container that holds values that specify the width of the image, the height of the image, and the number of bits per pixel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の幅、画像の高さ、およびピクセルあたりのビット数を指定する値を保持するコンテナーです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="995">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="996">
-          <source>The following example prints out the width and height of the image test.bmp, and specifies the color depth in bits per pixel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージ test.bmp の幅と高さを出力し、ピクセルあたりのビット数で色深度を指定しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="997">
-          <source>Method imageSpotlight</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド imageSpotlight</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="998">
-          <source>Produces a spotlight effect within the circle that is defined by radius with center coordinates x and y.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">センター座標 x および y で半径により定義された円内のスポットライト効果を生成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="999">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1000">
-          <source>x</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1001">
-          <source>The intensity of the surrounding pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">周辺のピクセルの強度。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1002">
-          <source>The possible values are between 0 and 100 (%).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">可能な値は 0 ～ 100 (%) までです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1003">
-          <source>y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1004">
-          <source>The intensity of the surrounding pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">周辺のピクセルの強度。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1005">
-          <source>The possible values are between 0 and 100 (%).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">可能な値は 0 ～ 100 (%) までです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1006">
-          <source>radius</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">radius</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1007">
-          <source>The intensity of the surrounding pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">周辺のピクセルの強度。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1008">
-          <source>The possible values are between 0 and 100 (%).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">可能な値は 0 ～ 100 (%) までです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1009">
-          <source>smoothing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">平滑化</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1010">
-          <source>The intensity of the surrounding pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">周辺のピクセルの強度。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1011">
-          <source>The possible values are between 0 and 100 (%).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">可能な値は 0 ～ 100 (%) までです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1012">
-          <source>intensity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">intensity</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1013">
-          <source>The intensity of the surrounding pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">周辺のピクセルの強度。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1014">
-          <source>The possible values are between 0 and 100 (%).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">可能な値は 0 ～ 100 (%) までです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1015">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1016">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1017">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1018">
-          <source>The pixels within the circle are unchanged, but the other pixels in the image are darkened by reducing their intensity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">円内のピクセルは変更されませんが、イメージ内の他のピクセルはその明度を減らすことで暗くなります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1019">
-          <source>Method importBitmap</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド importBitmap</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1020">
-          <source>Clones a bitmap from the image that is specified by the hBitmap parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hBitmap パラメータで指定されたイメージからビットマップをクローンします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1021">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1022">
-          <source>hBitmap</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hBitmap</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1023">
-          <source>The handle to the image that you clone.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複製する画像のハンドルです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1024">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1025">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1026">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1027">
-          <source>The following example retrieves the handle for an image and then uses the importBitmap method to clone the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージのハンドルを取得してから、importBitmap メソッドを使用してイメージを複製します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1028">
-          <source>Method importFileIcon</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド importFileIcon</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1029">
-          <source>Creates an icon from the file specified by the fileName parameter by copying the icon that is used for the file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルに使用されているアイコンをコピーすることにより、fileName パラメーターで指定されたファイルからアイコンを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1030">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1031">
-          <source>fileName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1032">
-          <source>The name and the path of the file from which you create an icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アイコンを作成するファイルの名前とパス。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1033">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1034">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1035">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1036">
-          <source>The following example copies the icon that is used for the file test.bmp.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、ファイル test.bmp に使用されているアイコンをコピーします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1037">
-          <source>Method importIcon</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド importIcon</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1038">
-          <source>Retrieves a handle to an icon from an executable file in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations の実行可能ファイルからアイコンへのハンドルを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1039">
-          <source>The icon is specified by the fileName and iconIdx parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このアイコンは、fileName および iconIdx パラメーターで指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1040">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1041">
-          <source>fileName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1042">
-          <source>The resource within the specified file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定したファイル内のリソース。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1043">
-          <source>iconIdx</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">iconIdx</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1044">
-          <source>The resource within the specified file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定したファイル内のリソース。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1045">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1046">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1047">
-          <source>Method loadImage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド loadImage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1048">
-          <source>Loads an image from the file specified by the fileName parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName パラメーターで指定されたファイルからイメージを読み込みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1049">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1050">
-          <source>fileName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1051">
-          <source>The resource from which you want to load the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像を読み込む元となるリソース。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1052">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1053">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1054">
-          <source>Method loadResource</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド loadResource</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1055">
-          <source>Loads a resource from Ax32.exe.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ax32.exe からリソースを読み込みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1056">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1057">
-          <source>id</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">id</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1058">
-          <source>The ID of the resource that you want to load.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">読み込むリソースの ID。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1059">
-          <source>Values of resources can be found in the Resources macro.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソースの値は、Resources マクロにあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1060">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1061">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1062">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1063">
-          <source>The following example adds two resources to an image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージ リストに 2つ のリソースを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1064">
-          <source>Method promoteColor</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド promoteColor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1065">
-          <source>Increases the color depth of the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の色深度を向上させます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1066">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1067">
-          <source>noOfColorBits</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">noOfColorBits</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1068">
-          <source>The number of bits that you want to promote the image to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージのレベルを上げるビット数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1069">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1070">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1071">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1072">
-          <source>The method promotes:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは次を推進します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1073">
-          <source>8-bit images to 24 or 32 bits.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8 ビット画像を 24、32 ビットに。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1074">
-          <source>4-bit images to 8, 24, or 32 bits.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4 ビット画像を 8、24、32 ビットに。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1075">
-          <source>1-bit images to 4, 8, 24, or 32 bits.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 ビット画像を 4、8、24、32 ビットに。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1076">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1077">
-          <source>The following example increases the color depth of an image to 8 bits per pixel, unless it is already 8 or more.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージの色深度が 8 ビット以上でない場合は、ピクセルあたり 8 ビットに増やしています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1078">
-          <source>Method reduceColorOctree</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド reduceColorOctree</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1079">
-          <source>Reduces the color depth of an image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の色深度を減少させます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1080">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1081">
-          <source>maxColors</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">maxColors</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1082">
-          <source>The maximum number of colors.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最大色数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1083">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1084">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1085">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1086">
-          <source>The method reduces a 24-bit image to 8 bits, or an 8-bit image to 4 bits, unless other instructions are specified in the maxColors parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、他の指示が maxColors パラメーターで指定されていない限り、24 ビット イメージを 8 ビットに、または 8 ビット イメージを 4 ビットに縮小します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1087">
-          <source>If the maxColors parameter is less than or equal to 16, a 4-bit image is produced.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MaxColors パラメーターが 16 以下の場合は、4 ビット イメージが生成されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1088">
-          <source>If maxColors is more than 16, an 8-bit image is produced.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MaxColors が 16 を超える場合は、8 ビット画像が生成されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1089">
-          <source>Method removeImage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド removeImage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1090">
-          <source>Removes the data about an image; the object still exists, but has no data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像に関するデータを削除します。オブジェクトはまだ存在しますが、データを持ちません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1091">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1092">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1093">
-          <source>Method resize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド resize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1094">
-          <source>Resizes the image to the size that is specified by the newWidth and newHeight parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">newWidth および newHeight パラメーターにより指定されたサイズに画像をサイズ変更します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1095">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1096">
-          <source>newWidth</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">newWidth</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1097">
-          <source>The resizing method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">resizing メソッド。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1098">
-          <source>newHeight</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">newHeight</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1099">
-          <source>The resizing method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">resizing メソッド。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1100">
-          <source>InterpolationMode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InterpolationMode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1101">
-          <source>The resizing method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">resizing メソッド。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1102">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1103">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1104">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1105">
-          <source>The possible values for the InterpolationMode parameter are those available in the InterpolationMode system enum:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InterpolationMode パラメーターの使用可能な値は InterpolationMode システム列挙で使用可能な次の値です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1106">
-          <source>0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1107">
-          <source>InterpolationModeDefault</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InterpolationModeDefault</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1108">
-          <source>Specifies the default interpolation mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の補間モードを指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1109">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1110">
-          <source>InterpolationModeLowQuality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InterpolationModeLowQuality</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1111">
-          <source>Specifies a low-quality mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">低品質モードを指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1112">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1113">
-          <source>InterpolationModeHighQuality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InterpolationModeHighQuality</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1114">
-          <source>Specifies a high-quality mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高品質モードを指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1115">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1116">
-          <source>InterpolationModeBilinear</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InterpolationModeBilinear</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1117">
-          <source>Specifies bilinear interpolation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">線状補間を指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1118">
-          <source>No pre-filtering is done.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">事前フィルター処理は行われません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1119">
-          <source>This method is not suitable for shrinking an image below 50% of its original size.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、画像を元のサイズの 50％ 以下に縮小するのには適していません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1120">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1121">
-          <source>InterpolationModeBicubic</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InterpolationModeBicubic</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1122">
-          <source>Specifies bicubic interpolation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バイキュービック補間を指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1123">
-          <source>No pre-filtering is done.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">事前フィルター処理は行われません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1124">
-          <source>This method is not suitable for shrinking an image below 25% of its original size.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、画像を元のサイズの 25％ 以下に縮小するのには適していません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1125">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1126">
-          <source>InterpolationModeNearestNeighbor</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InterpolationModeNearestNeighbor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1127">
-          <source>Specifies nearest-neighbor interpolation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ニアレストネイバー補間を指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1128">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1129">
-          <source>InterpolationModeHighQualityBilinear</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InterpolationModeHighQualityBilinear</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1130">
-          <source>Specifies high-quality, bilinear interpolation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高品質な線状補間を指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1131">
-          <source>Pre-filtering is performed to ensure high-quality shrinking.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高品質圧縮を確実に行うため、事前フィルター処理が実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1132">
-          <source>7</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1133">
-          <source>InterpolationModeHighQualityBicubic</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InterpolationModeHighQualityBicubic</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1134">
-          <source>Specifies high-quality, bicubic interpolation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高品質なバイキュービック補間を指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1135">
-          <source>Pre-filtering is performed to ensure high-quality shrinking.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高品質圧縮を確実に行うため、事前フィルター処理が実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1136">
-          <source>This mode produces the highest quality transformed images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このモードでは、最高品質の変換画像が生成されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1137">
-          <source>Method rotate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rotate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1138">
-          <source>Rotates the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像を回転します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1139">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1140">
-          <source>RotateType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RotateType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1141">
-          <source>The amount to rotate the image by.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージを回転する量。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1142">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1143">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1144">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1145">
-          <source>The possible values for the RotateType parameter are those available in the RotateType system enum:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RotateType パラメーターの使用可能な値は RotateType システム列挙で使用可能な次の値です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1146">
-          <source>0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1147">
-          <source>RotateNoneFlipNone</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RotateNoneFlipNone</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1148">
-          <source>No rotation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">回転なし。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1149">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1150">
-          <source>Rotate90FlipNone</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rotate90FlipNone</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1151">
-          <source>Rotation by 90 degrees.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">90 度回転します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1152">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1153">
-          <source>Rotate180FlipNone</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rotate180FlipNone</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1154">
-          <source>Rotation by 180 degrees.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">180 度回転します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1155">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1156">
-          <source>Rotate270FlipNone</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rotate270FlipNone</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1157">
-          <source>Rotation by 270 degrees.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">270 度回転します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1158">
-          <source>Method saveImage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド saveImage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1159">
-          <source>Saves the image to the specified file name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたファイル名に画像を保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1160">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1161">
-          <source>fileName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1162">
-          <source>An ImageSaveType that enables you to specify that the file should be saved as a different format from that specified by the file extension; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル拡張子で指定された形式とは異なる形式でファイルを保存するように指定できる ImageSaveType (オプション)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1163">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1164">
-          <source>An ImageSaveType that enables you to specify that the file should be saved as a different format from that specified by the file extension; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル拡張子で指定された形式とは異なる形式でファイルを保存するように指定できる ImageSaveType (オプション)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1165">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1166">
-          <source>0 if the method was successful.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合、0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1167">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1168">
-          <source>The possible values for the Type parameter are those available in the ImageSaveType system enum.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Type パラメーターの使用可能な値は ImageSaveType システム列挙で使用可能な値です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1169">
-          <source>For example, you could save test.bmp as a .jpg file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、.jpg ファイルとして test.bmp を保存することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1170">
-          <source>0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1171">
-          <source>Use<ph id="ph1">\_</ph>Extension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\_</ph>エクステンションの使用</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1172">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1173">
-          <source>BMP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BMP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1174">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1175">
-          <source>GIF</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GIF</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1176">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1177">
-          <source>JPG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JPG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1178">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1179">
-          <source>PNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1180">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1181">
-          <source>TIFF</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TIFF</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1182">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1183">
-          <source>BMP<ph id="ph1">\_</ph>UNCOMP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BMP<ph id="ph1">\_</ph>UNCOMP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1184">
-          <source>7</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1185">
-          <source>TIF<ph id="ph1">\_</ph>UNCOMP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TIF<ph id="ph1">\_</ph>UNCOMP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1186">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1187">
-          <source>The following example captures part of the screen to a file, and then loads that image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、画面の一部をファイルにキャプチャし、その画像をロードします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1188">
-          <source>Method saveType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド saveType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1189">
-          <source>Gets or sets the image decoder.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ デコーダを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1190">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1191">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1192">
-          <source>The type of decoder that you want to set; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">設定するデコーダのタイプ (オプション)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1193">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1194">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1195">
-          <source>The possible values for the Type parameter are those available in the ImageSaveType system enum:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Type パラメーターの使用可能な値は ImageSaveType システム列挙で使用可能な次の値です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1196">
-          <source>0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1197">
-          <source>Use<ph id="ph1">\_</ph>Extension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\_</ph>エクステンションの使用</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1198">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1199">
-          <source>BMP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BMP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1200">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1201">
-          <source>GIF</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GIF</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1202">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1203">
-          <source>JPG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JPG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1204">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1205">
-          <source>PNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1206">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1207">
-          <source>TIFF</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TIFF</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1208">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1209">
-          <source>BMP<ph id="ph1">\_</ph>UNCOMP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BMP<ph id="ph1">\_</ph>UNCOMP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1210">
-          <source>7</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1211">
-          <source>TIF<ph id="ph1">\_</ph>UNCOMP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TIF<ph id="ph1">\_</ph>UNCOMP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1212">
-          <source>Method setPixel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setPixel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1213">
-          <source>Sets the color for the pixel that is specified by the x and y parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x と y パラメーターで指定されているピクセルの色を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1214">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1215">
-          <source>x</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1216">
-          <source>The ARGB value of the color that you want to use.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用する色の ARGB 値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1217">
-          <source>y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1218">
-          <source>The ARGB value of the color that you want to use.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用する色の ARGB 値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1219">
-          <source>pixel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">pixel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1220">
-          <source>The ARGB value of the color that you want to use.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用する色の ARGB 値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1221">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1222">
-          <source>0 indicates success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1223">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1224">
-          <source>To convert an RGB color value to an ARGB value, use the Image::rgb Method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RGB カラー値を ARGB 値に変換するには、Image::rgb メソッドを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1225">
-          <source>Method transparent</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド transparent</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1226">
-          <source>Sets the transparent color for the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の透明な色を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1227">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1228">
-          <source>Set</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セット</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1229">
-          <source>Blue value of the color that you want to set; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">設定する色の青の値; オプション。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1230">
-          <source>RValue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RValue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1231">
-          <source>Blue value of the color that you want to set; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">設定する色の青の値; オプション。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1232">
-          <source>GValue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GValue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1233">
-          <source>Blue value of the color that you want to set; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">設定する色の青の値; オプション。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1234">
-          <source>BValue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BValue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1235">
-          <source>Blue value of the color that you want to set; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">設定する色の青の値; オプション。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1236">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1237">
-          <source>0 to indicate success; otherwise, failure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 は、成功を示し、それ以外の場合は、失敗を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1238">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1239">
-          <source>If any of the input parameters are missing, the color at the point (0,0) in the image is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">入力パラメーターのいずれかがない場合は、画像内の位置 (0, 0) での色が使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1240">
-          <source>If you want to specify a color, this is expressed as an RGB color by using parameters 2 to 4.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">色を指定する場合、パラメーター 2 から 4 を使用すると、RGB カラーとして表記されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1241">
-          <source>Method width</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド width</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1242">
-          <source>Retrieves the width of the image in pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ピクセル単位の画像の幅を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1243">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1244">
-          <source>An integer that represents the width of the image in pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の幅をピクセル単位で表す整数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1245">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1246">
-          <source>The following example prints out the width of the image in the test.bmp file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、test.bmp ファイル内のイメージの幅を出力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1247">
-          <source>Method canLoad</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド canLoad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1248">
-          <source>Determines whether an image file exists and can be opened.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像ファイルが存在し、開くことができるかどうかを決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1249">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1250">
-          <source>filename</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">filename</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1251">
-          <source>The name and path of the file to check.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">確認するファイルの名前とパス。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1252">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1253">
-          <source>1 if the image is found and can be opened; otherwise, 0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像が検索され、開くことができる場合は 1、それ以外の場合、0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1254">
-          <source>Method loadExt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド loadExt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1255">
-          <source>Retrieves a list of the extensions of the file formats that are supported by the Image class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Image クラスでサポートされているファイル形式の拡張機能の一覧を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1256">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1257">
-          <source>idx</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">idx</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1258">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1259">
-          <source>A container that holds a list of the supported file formats.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サポートされているファイル形式の一覧を保持するコンテナーです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1260">
-          <source>Method resourceType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド resourceType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1261">
-          <source>Determines whether a particular resource is a bitmap or an icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定のリソースがビットマップかアイコンかを判別します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1262">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1263">
-          <source>resourceIdx</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">resourceIdx</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1264">
-          <source>The ID of the resource that you want to load.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">読み込むリソースの ID。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1265">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1266">
-          <source>0 if the image is a bitmap; 1 if it is an icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像がビットマップの場合は 0、アイコンの場合は 1 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1267">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1268">
-          <source>The values of resources can be found in the Resources macro.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソースの値は、Resources マクロにあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1269">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1270">
-          <source>The following example tests whether resource 3020 is an icon or a bitmap.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、リソース 3020 がアイコンかビットマップかどうかをテストします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1271">
-          <source>Method rgb</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rgb</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1272">
-          <source>Converts an RGB value to an ARGB value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RGB 値を ARGB 値に変換します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1273">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1274">
-          <source>R</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">R</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1275">
-          <source>The blue value of the color.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">色の青の値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1276">
-          <source>G</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">G</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1277">
-          <source>The blue value of the color.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">色の青の値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1278">
-          <source>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1279">
-          <source>The blue value of the color.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">色の青の値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1280">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1281">
-          <source>An integer that represents the ARGB value of the color that is specified by the parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーターで指定された色の ARGB 値を表す整数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1282">
-          <source>Method validResource</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド validResource</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1283">
-          <source>Determines whether the resource specified by the id parameter is valid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">id パラメータで指定されたリソースが有効かどうかを判定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1284">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1285">
-          <source>id</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">id</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1286">
-          <source>The ID of the resource that you want to check.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チェックするリソースの ID。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1287">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1288">
-          <source>0 if the ID is valid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ID が有効な場合、0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1289">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1290">
-          <source>Creates a new image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい画像を作成します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1291">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1292">
-          <source>image</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">image</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1293">
-          <source>The height of the image in pixels; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ピクセル単位の画像の高さ (オプション)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1294">
-          <source>width</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">width</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1295">
-          <source>The height of the image in pixels; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ピクセル単位の画像の高さ (オプション)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1296">
-          <source>height</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">height</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1297">
-          <source>The height of the image in pixels; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ピクセル単位の画像の高さ (オプション)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1298">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1299">
-          <source>You do not need to specify any parameters, but it is possible to specify the image contents and size.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーターを指定する必要はありませんが、イメージの内容とサイズを指定することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1300">
-          <source>For the image parameter, you can specify a file name and location, a resource, a particular image in an array, or another Image object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像パラメーターについては、ファイル名および場所、リソース、配列での特定の画像、または別の画像オブジェクトを指定できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1301">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1302">
-          <source>The following examples illustrate how you can optionally specify the existing content for the new image object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、新しいイメージ オブジェクトの既存のコンテンツをオプションで指定する方法を示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1303">
-          <source>Method displayOrign</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド displayOrign</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1304">
-          <source>Enables you to specify an offset (X, Y) from the original origin (0, 0).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オリジナルの発注元 (0, 0) から、オフセット (X, Y) を指定できるようにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1305">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1306">
-          <source>Xpos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Xpos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1307">
-          <source>New Y (vertical) coordinate for the origin.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">原点に対する新しい Y (垂直) 座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1308">
-          <source>Ypos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ypos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1309">
-          <source>New Y (vertical) coordinate for the origin.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">原点に対する新しい Y (垂直) 座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1310">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1311">
-          <source>Class Imagelist</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス Imagelist</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1312">
-          <source>The Imagelist class lets you work with a list of images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Imagelist クラスを使用すると、イメージの一覧を操作できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1313">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1314">
-          <source>To work with a single image, use the Image class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つの画像を操作するには、イメージ クラスを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1315">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1316">
-          <source>The following example creates an image list and adds the icons in the Shell32.dll file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージ リストを作成し、Shell32.dll ファイルにアイコンを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1317">
-          <source>It then deletes the fourth member of the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一覧の 4 番目のメンバーを削除します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1318">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1319">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1320">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1321">
-          <source>public int add(Image image)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int add(Image image)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1322">
-          <source>Adds a new image to the image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リストに新しい画像を追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1323">
-          <source>public boolean autoResize(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean autoResize(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1324">
-          <source>Sets the Boolean autoResize flag, which determines whether new images are automatically resized.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいイメージを自動的にサイズ変更するかどうかを決定するブール値の autoResize フラグを設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1325">
-          <source>public int clear()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int clear()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1326">
-          <source>Removes all images from the image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リストからすべての画像を削除します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1327">
-          <source>public int count()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int count()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1328">
-          <source>Retrieves the number of images in an image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像リスト内のイメージの数を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1329">
-          <source>public boolean dragBegin(int imageIdx, int hotSpotX, int hotSpotY)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean dragBegin(int imageIdx, int hotSpotX, int hotSpotY)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1330">
-          <source>Begins dragging an image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージのドラッグを開始します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1331">
-          <source>public boolean dragEnd()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean dragEnd()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1332">
-          <source>Ends a drag operation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドラッグ操作を終了します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1333">
-          <source>public boolean dragEnter(int hWnd, int x, int y)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean dragEnter(int hWnd, int x, int y)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1334">
-          <source>Locks updates to the specified window during a drag operation and displays the drag image at the specified position in the window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドラッグ操作中に指定されたウィンドウの更新をロックし、ウィンドウの指定された位置にドラッグ イメージを表示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1335">
-          <source>public boolean dragLeave(int hWnd)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean dragLeave(int hWnd)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1336">
-          <source>Unlocks the specified window and hides the drag image, so that the window to be updated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定したウィンドウのロックを解除し、ドラッグ イメージを非表示にして、ウィンドウを更新します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1337">
-          <source>public boolean dragMove(int x, int y)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean dragMove(int x, int y)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1338">
-          <source>Moves the image that is being dragged during a drag-and-drop operation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドラッグ アンド ドロップ操作中にドラッグされているイメージを移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1339">
-          <source>public boolean dragShowImage(boolean show)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean dragShowImage(boolean show)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1340">
-          <source>Shows or hides the image that is being dragged.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドラッグされている画像の表示と非表示を切り替えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1341">
-          <source>public int height()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int height()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1342">
-          <source>Retrieves the height, in pixels, of the images in the image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リスト内のイメージの高さ (ピクセル単位) を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1343">
-          <source>public int loadIcons(str moduleName)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int loadIcons(str moduleName)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1344">
-          <source>Loads icons from the specified resource into the image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リストに、指定されたリソースからアイコンを読み込みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1345">
-          <source>public int remove(int imageIdx)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int remove(int imageIdx)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1346">
-          <source>Removes an image from an image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リストから画像を削除します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1347">
-          <source>public int replace(int imageIdx, Image image)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int replace(int imageIdx, Image image)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1348">
-          <source>Replaces an existing image in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト内の既存の画像を置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1349">
-          <source>public boolean setOverlayImage(int imageIdx, int overlayIdx)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean setOverlayImage(int imageIdx, int overlayIdx)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1350">
-          <source>Adds an image to the list of images to use as overlay masks.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーバーレイ マスクとして使用する画像の一覧に、画像を追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1351">
-          <source>public int width()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int width()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1352">
-          <source>Retrieves the width, in pixels, of the images in the image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リスト内のイメージの幅 (ピクセル単位) を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1353">
-          <source>::public static int iconHeight()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static int iconHeight()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1354">
-          <source>Retrieves the system metrics for the height of a standard icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準アイコンの高さのシステム メトリックを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1355">
-          <source>::public static int iconWidth()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static int iconWidth()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1356">
-          <source>Retrieves the system metrics for the width of a standard icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準アイコンの幅のシステム メトリックを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1357">
-          <source>::public static int smallIconHeight()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static int smallIconHeight()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1358">
-          <source>Retrieves the system metrics for the height of a small icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小さなアイコンの高さのシステム メトリックを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1359">
-          <source>::public static int smallIconWidth()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static int smallIconWidth()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1360">
-          <source>Retrieves the system metrics for the width of a small icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小さなアイコンの幅のシステム メトリックを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1361">
-          <source>public void maskColor(int Color)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void maskColor(int Color)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1362">
-          <source>Sets the masking color.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マスキング色を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1363">
-          <source>public void draw(int HDC, int imageIdx, int x, int y, <ph id="ph1">\[</ph>boolean transparent<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void draw(int HDC, int imageIdx, int x, int y, <ph id="ph1">\[</ph>boolean transparent<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1364">
-          <source>Draws an image list item in the specified device context.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたデバイス コンテキストで画像リスト項目を描画します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1365">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1366">
-          <source>public void new(int cx, int cy, <ph id="ph1">\[</ph>boolean transparent<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(int cx, int cy, <ph id="ph1">\[</ph>boolean transparent<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1367">
-          <source>Creates a new empty list to hold images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像を保持する新しい空のリストを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1368">
-          <source>Method add</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド add</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1369">
-          <source>Adds a new image to the image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リストに新しい画像を追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1370">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1371">
-          <source>image</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">image</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1372">
-          <source>The new image to add to the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストに追加する新しい画像。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1373">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1374">
-          <source>0 if the method is successful.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合、0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1375">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1376">
-          <source>You can use the autoResize method to automatically resize images when you add them to the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">autoResize メソッドを使用すると、リストに追加するときにイメージのサイズを自動的に変更することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1377">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1378">
-          <source>The following example creates a new image list and adds three images to it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、新しいイメージ リストを作成し、3 つのイメージを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1379">
-          <source>Method autoResize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoResize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1380">
-          <source>Sets the Boolean autoResize flag, which determines whether new images are automatically resized.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいイメージを自動的にサイズ変更するかどうかを決定するブール値の autoResize フラグを設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1381">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1382">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1383">
-          <source>A Boolean value that determines whether the autoResize flag is set; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">autoResize フラグが設定されているかどうかを示すブール値; オプション。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1384">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1385">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1386">
-          <source>If the autoResize flag is set to true, any image that you add to the list is automatically resized to the dimensions that were specified when you created the image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">autoResize フラッグが true に設定されている場合、リストに追加する任意の画像サイズは、画像リストの作成時に指定された分析コードに自動的に再調整されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1387">
-          <source>Method clear</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clear</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1388">
-          <source>Removes all images from the image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リストからすべての画像を削除します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1389">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1390">
-          <source>0 if the method is successful.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合、0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1391">
-          <source>Method count</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド count</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1392">
-          <source>Retrieves the number of images in an image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像リスト内のイメージの数を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1393">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1394">
-          <source>An integer that represents the number of images in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト内の画像の数を表す整数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1395">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1396">
-          <source>The following example creates an image list, loads icons from the shell.dll file, and then prints the number of images in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージ リストを作成し、shell.dll ファイルからアイコンを読み込み、リスト内のイメージの数を出力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1397">
-          <source>Method dragBegin</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dragBegin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1398">
-          <source>Begins dragging an image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージのドラッグを開始します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1399">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1400">
-          <source>imageIdx</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">imageIdx</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1401">
-          <source>The Y-coordinate of the drag position, relative to the upper-left corner of the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の左上隅を基準とした、ドラッグ位置の Y 座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1402">
-          <source>hotSpotX</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hotSpotX</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1403">
-          <source>The Y-coordinate of the drag position, relative to the upper-left corner of the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の左上隅を基準とした、ドラッグ位置の Y 座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1404">
-          <source>hotSpotY</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hotSpotY</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1405">
-          <source>The Y-coordinate of the drag position, relative to the upper-left corner of the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の左上隅を基準とした、ドラッグ位置の Y 座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1406">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1407">
-          <source>1 if the method is successful.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合は 1 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1408">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1409">
-          <source>The rest of the drag operation is specified by the dragEnter, dragMove, dragLeave, and dragEnd methods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">残りのドラッグ操作は、dragEnter、dragMove、dragLeave、dragEnd の各メソッドで指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1410">
-          <source>Method dragEnd</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dragEnd</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1411">
-          <source>Ends a drag operation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドラッグ操作を終了します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1412">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1413">
-          <source>1 if the method is successful; otherwise, 0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合は 1、それ以外の場合は 0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1414">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1415">
-          <source>The rest of the drag operation is specified by the dragBegin, dragEnter, dragMove, and dragLeave methods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">残りのドラッグ操作は、dragBegin、dragEnter、dragMove、dragLeave の各メソッドで指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1416">
-          <source>Method dragEnter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dragEnter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1417">
-          <source>Locks updates to the specified window during a drag operation and displays the drag image at the specified position in the window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドラッグ操作中に指定されたウィンドウの更新をロックし、ウィンドウの指定された位置にドラッグ イメージを表示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1418">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1419">
-          <source>hWnd</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hWnd</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1420">
-          <source>The Y-coordinate at which to display the drag icon, relative to the upper-left corner of the window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウの左上隅を基準とした、ドラッグ アイコンの表示位置の Y 座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1421">
-          <source>x</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1422">
-          <source>The Y-coordinate at which to display the drag icon, relative to the upper-left corner of the window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウの左上隅を基準とした、ドラッグ アイコンの表示位置の Y 座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1423">
-          <source>y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1424">
-          <source>The Y-coordinate at which to display the drag icon, relative to the upper-left corner of the window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウの左上隅を基準とした、ドラッグ アイコンの表示位置の Y 座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1425">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1426">
-          <source>1 if the method is successful; otherwise, 0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合は 1、それ以外の場合は 0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1427">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1428">
-          <source>To start the drag operation, call the dragBegin method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドラッグ操作を開始するには、dragBegin メソッドを呼び出します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1429">
-          <source>The rest of the drag operation is specified by the dragMove, dragLeave, and dragEnd methods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">残りのドラッグ操作は、dragMove、dragLeave、dragEnd の各メソッドで指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1430">
-          <source>Method dragLeave</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dragLeave</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1431">
-          <source>Unlocks the specified window and hides the drag image, so that the window to be updated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定したウィンドウのロックを解除し、ドラッグ イメージを非表示にして、ウィンドウを更新します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1432">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1433">
-          <source>hWnd</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hWnd</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1434">
-          <source>The handle to the window that owns the drag image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドラッグ イメージを所有するウィンドウのハンドルです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1435">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1436">
-          <source>1 if the method is successful; otherwise, 0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合は 1、それ以外の場合は 0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1437">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1438">
-          <source>The rest of the drag operation is specified by the dragBegin, dragEnter, dragMove, and dragEnd methods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">残りのドラッグ操作は、dragBegin、dragEnter、dragMove、dragEnd の各メソッドで指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1439">
-          <source>Method dragMove</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dragMove</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1440">
-          <source>Moves the image that is being dragged during a drag-and-drop operation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドラッグ アンド ドロップ操作中にドラッグされているイメージを移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1441">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1442">
-          <source>x</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1443">
-          <source>The Y-coordinate at which to display the drag icon, relative to the upper-left corner of the window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウの左上隅を基準とした、ドラッグ アイコンの表示位置の Y 座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1444">
-          <source>y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1445">
-          <source>The Y-coordinate at which to display the drag icon, relative to the upper-left corner of the window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウの左上隅を基準とした、ドラッグ アイコンの表示位置の Y 座標。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1446">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1447">
-          <source>1 if the method is successful; otherwise, 0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合は 1、それ以外の場合は 0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1448">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1449">
-          <source>To start the drag operation, call the dragBegin method and then the dragEnter method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドラッグ操作を開始するには、dragBegin メソッドを呼び出してから dragEnter メソッドを呼び出します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1450">
-          <source>The rest of the drag operation is specified by the dragLeave and dragEnd methods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">残りのドラッグ操作は、dragLeave メソッドおよび dragEnd メソッドで指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1451">
-          <source>Method dragShowImage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dragShowImage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1452">
-          <source>Shows or hides the image that is being dragged.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドラッグされている画像の表示と非表示を切り替えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1453">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1454">
-          <source>show</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">show</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1455">
-          <source>A value that specifies whether to show the image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像を表示するかどうかを指定する値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1456">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1457">
-          <source>Method height</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド height</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1458">
-          <source>Retrieves the height, in pixels, of the images in the image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リスト内のイメージの高さ (ピクセル単位) を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1459">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1460">
-          <source>An integer that represents the height of the images in pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の高さをピクセル単位で表す整数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1461">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1462">
-          <source>The height of the images in the list is set when you instantiate the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト内の画像の高さは、リストをインスタンス化するときに設定されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1463">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1464">
-          <source>The following example creates an image list, and sets the height and width of the images to the dimensions that are specified by the iconWidth and iconHeight methods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージ リストを作成し、イメージの高さと幅を iconWidth メソッドと iconHeight メソッドで指定された寸法に設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1465">
-          <source>It then prints the height of images in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一覧内のイメージの高さを出力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1466">
-          <source>Method loadIcons</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド loadIcons</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1467">
-          <source>Loads icons from the specified resource into the image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リストに、指定されたリソースからアイコンを読み込みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1468">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1469">
-          <source>moduleName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">moduleName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1470">
-          <source>The name of the file from which to load images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージの読み込み元ファイルの名前。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1471">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1472">
-          <source>0 if the method is successful.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合、0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1473">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1474">
-          <source>The following example creates a list of images and then loads the images that are contained in the shell32.dll file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージのリストを作成し、shell32.dll ファイルに含まれるイメージをロードします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1475">
-          <source>Method remove</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド remove</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1476">
-          <source>Removes an image from an image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リストから画像を削除します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1477">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1478">
-          <source>imageIdx</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">imageIdx</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1479">
-          <source>The position of the image to remove from the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一覧から削除する画像の位置。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1480">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1481">
-          <source>0 if the method is successful.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合、0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1482">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1483">
-          <source>The following example creates an image list, adds the icons in shell32.dll file, and then deletes the fourth member of the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージ リストを作成し、アイコンを shell32.dll ファイルに追加して、リストの 4 番目のメンバーを削除します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1484">
-          <source>Method replace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド replace</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1485">
-          <source>Replaces an existing image in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト内の既存の画像を置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1486">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1487">
-          <source>imageIdx</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">imageIdx</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1488">
-          <source>The image to use to replace the existing image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既存のイメージを置き換えるために使用するイメージ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1489">
-          <source>image</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">image</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1490">
-          <source>The image to use to replace the existing image.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既存のイメージを置き換えるために使用するイメージ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1491">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1492">
-          <source>0 if the method is successful.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合、0 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1493">
-          <source>Method setOverlayImage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setOverlayImage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1494">
-          <source>Adds an image to the list of images to use as overlay masks.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーバーレイ マスクとして使用する画像の一覧に、画像を追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1495">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1496">
-          <source>imageIdx</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">imageIdx</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1497">
-          <source>The one-based index of the overlay mask.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーバーレイ マスクの 1 から始まるインデックス。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1498">
-          <source>overlayIdx</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">overlayIdx</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1499">
-          <source>The one-based index of the overlay mask.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーバーレイ マスクの 1 から始まるインデックス。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1500">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1501">
-          <source>1 if the method is successful.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが成功した場合は 1 です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1502">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1503">
-          <source>The following example creates an image list that has three images and then sets the last image as an overlay mask.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、3 つのイメージを持つイメージ リストを作成し、最後のイメージをオーバーレイ マスクとして設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1504">
-          <source>Method width</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド width</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1505">
-          <source>Retrieves the width, in pixels, of the images in the image list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ リスト内のイメージの幅 (ピクセル単位) を取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1506">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1507">
-          <source>An integer that represents the width of the images in pixels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像の幅をピクセル単位で表す整数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1508">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1509">
-          <source>The width of the images in the list is set when you instantiate the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト内の画像の幅は、リストをインスタンス化するときに設定されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1510">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1511">
-          <source>The following example creates an image list that has the standard height and width for icons, and then prints the width of images in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、アイコンの標準的な高さと幅を持つイメージ リストを作成し、イメージの幅をリストに出力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1512">
-          <source>Method iconHeight</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド iconHeight</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1513">
-          <source>Retrieves the system metrics for the height of a standard icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準アイコンの高さのシステム メトリックを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1514">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1515">
-          <source>An integer that represents the height of a standard icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準アイコンの高さを表す整数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1516">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1517">
-          <source>The following example creates a list of images, and then sets them to the standard icon width and height.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージのリストを作成し、標準のアイコンの幅と高さに設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1518">
-          <source>Method iconWidth</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド iconWidth</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1519">
-          <source>Retrieves the system metrics for the width of a standard icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準アイコンの幅のシステム メトリックを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1520">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1521">
-          <source>An integer that represents the width of a standard icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準アイコンの幅を表す整数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1522">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1523">
-          <source>The following example creates a list of images, and then sets them to the standard icon width and height.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、イメージのリストを作成し、標準のアイコンの幅と高さに設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1524">
-          <source>Method smallIconHeight</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド smallIconHeight</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1525">
-          <source>Retrieves the system metrics for the height of a small icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小さなアイコンの高さのシステム メトリックを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1526">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1527">
-          <source>An integer that represents the height of a small icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小さなアイコンの高さを表す整数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1528">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1529">
-          <source>The following example creates an image list that has the standard height and width for small icons, and then prints the height of images in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、小さなアイコンの標準的な高さと幅を持つイメージ リストを作成し、イメージの高さをリストに出力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1530">
-          <source>Method smallIconWidth</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド smallIconWidth</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1531">
-          <source>Retrieves the system metrics for the width of a small icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小さなアイコンの幅のシステム メトリックを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1532">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1533">
-          <source>An integer that represents the width of a small icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小さなアイコンの幅を表す整数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1534">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1535">
-          <source>The following example creates an image list that has the standard height and width for small icons, and then prints the width of images in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、小さなアイコンの標準的な高さと幅を持つイメージ リストを作成し、イメージの幅をリストに出力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1536">
-          <source>Method maskColor</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド maskColor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1537">
-          <source>Sets the masking color.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マスキング色を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1538">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1539">
-          <source>Color</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">色</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1540">
-          <source>The color as an ARGB value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ARGB 値としての色。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1541">
-          <source>Method draw</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド draw</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1542">
-          <source>Draws an image list item in the specified device context.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたデバイス コンテキストで画像リスト項目を描画します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1543">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1544">
-          <source>HDC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HDC</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1545">
-          <source>A Boolean value that indicates whether the image is drawn transparently by using the mask, regardless of background color; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">背景の色に関係なく、マスクを使用して、画像が透過的に描画されているかどうかを示すブール値; オプション。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1546">
-          <source>imageIdx</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">imageIdx</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1547">
-          <source>A Boolean value that indicates whether the image is drawn transparently by using the mask, regardless of background color; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">背景の色に関係なく、マスクを使用して、画像が透過的に描画されているかどうかを示すブール値; オプション。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1548">
-          <source>x</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1549">
-          <source>A Boolean value that indicates whether the image is drawn transparently by using the mask, regardless of background color; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">背景の色に関係なく、マスクを使用して、画像が透過的に描画されているかどうかを示すブール値; オプション。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1550">
-          <source>y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1551">
-          <source>A Boolean value that indicates whether the image is drawn transparently by using the mask, regardless of background color; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">背景の色に関係なく、マスクを使用して、画像が透過的に描画されているかどうかを示すブール値; オプション。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1552">
-          <source>transparent</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">透明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1553">
-          <source>A Boolean value that indicates whether the image is drawn transparently by using the mask, regardless of background color; optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">背景の色に関係なく、マスクを使用して、画像が透過的に描画されているかどうかを示すブール値; オプション。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1554">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1555">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1556">
-          <source>Creates a new empty list to hold images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像を保持する新しい空のリストを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1557">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1558">
-          <source>cx</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">cx</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1559">
-          <source>cy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">cy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1560">
-          <source>transparent</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">透明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1561">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1562">
-          <source>You can use the autoResize method to automatically resize images when you add them to the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">autoResize メソッドを使用すると、リストに追加するときにイメージのサイズを自動的に変更することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1563">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1564">
-          <source>The following example creates an image list to hold items of the standard icon width and height.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、標準アイコンの幅と高さの項目を保持するイメージ リストを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1565">
-          <source>Class ImportTableDataInfo</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ImportTableDataInfo</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1566">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1567">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1568">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1569">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1570">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1571">
-          <source>public int addColumnData(str szColName, AnyType colVal)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int addColumnData(str szColName, AnyType colVal)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1572">
-          <source>public int copyDataRow()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int copyDataRow()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1573">
-          <source>public void new(int usTableId)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(int usTableId)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1574">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1575">
-          <source>Method addColumnData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addColumnData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1576">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1577">
-          <source>szColName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">szColName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1578">
-          <source>colVal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">colVal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1579">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1580">
-          <source>Method copyDataRow</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド copyDataRow</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1581">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1582">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1583">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1584">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1585">
-          <source>usTableId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">usTableId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1586">
-          <source>Class ImportTableSchemaInfo</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ImportTableSchemaInfo</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1587">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1588">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1589">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1590">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1591">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1592">
-          <source>public int addColumnInfo(str szColName, Types eColType, int eColRole, int lColOrd)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int addColumnInfo(str szColName, Types eColType, int eColRole, int lColOrd)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1593">
-          <source>public int addColumnMapping(str szRefRecIdColName, str szRefTableIdColName)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int addColumnMapping(str szRefRecIdColName, str szRefTableIdColName)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1594">
-          <source>public int hasEqualityCriteria(boolean fHasEqualityCriteria)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int hasEqualityCriteria(boolean fHasEqualityCriteria)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1595">
-          <source>public int shreddedMetadataTable(boolean fIsShreddedMetadataTable)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int shreddedMetadataTable(boolean fIsShreddedMetadataTable)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1596">
-          <source>public void new(int usTableId)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(int usTableId)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1597">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1598">
-          <source>Method addColumnInfo</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addColumnInfo</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1599">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1600">
-          <source>szColName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">szColName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1601">
-          <source>eColType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">eColType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1602">
-          <source>eColRole</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">eColRole</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1603">
-          <source>lColOrd</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">lColOrd</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1604">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1605">
-          <source>Method addColumnMapping</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addColumnMapping</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1606">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1607">
-          <source>szRefRecIdColName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">szRefRecIdColName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1608">
-          <source>szRefTableIdColName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">szRefTableIdColName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1609">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1610">
-          <source>Method hasEqualityCriteria</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド hasEqualityCriteria</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1611">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1612">
-          <source>fHasEqualityCriteria</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fHasEqualityCriteria</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1613">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1614">
-          <source>Method shreddedMetadataTable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド shreddedMetadataTable</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1615">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1616">
-          <source>fIsShreddedMetadataTable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fIsShreddedMetadataTable</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1617">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1618">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1619">
-          <source>Initializes a new instance of the Object class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1620">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1621">
-          <source>usTableId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">usTableId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1622">
-          <source>Class InfoPart</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス InfoPart</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1623">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1624">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1625">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1626">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1627">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1628">
-          <source>public str caption(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str caption(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1629">
-          <source>Gets or set the caption of the control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのキャプションを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1630">
-          <source>public str changedBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str changedBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1631">
-          <source>Gets or sets the name of the user who last changed the application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1632">
-          <source>public Date changedDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Date changedDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1633">
-          <source>Gets or sets the date an application object was last changed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1634">
-          <source>public str changedTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str changedTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1635">
-          <source>Gets or sets the time an application object was last changed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1636">
-          <source>public str createdBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str createdBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1637">
-          <source>Gets or sets the name of the user who created the application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1638">
-          <source>public Date creationDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Date creationDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1639">
-          <source>Gets or sets the date an application object was created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1640">
-          <source>public str creationTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str creationTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1641">
-          <source>public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1642">
-          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1643">
-          <source>public Guid origin(<ph id="ph1">\[</ph>Guid value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Guid origin(<ph id="ph1">\[</ph>Guid value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1644">
-          <source>public str query(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str query(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1645">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1646">
-          <source>Initializes a new instance of the InfoPart class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPart クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1647">
-          <source>Method caption</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド caption</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1648">
-          <source>Gets or set the caption of the control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのキャプションを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1649">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1650">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1651">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1652">
-          <source>The string that is used as the caption of the control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのキャプションとして使用される文字列。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1653">
-          <source>Method changedBy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedBy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1654">
-          <source>Gets or sets the name of the user who last changed the application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1655">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1656">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1657">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1658">
-          <source>The name of the user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーの名前。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1659">
-          <source>Method changedDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1660">
-          <source>Gets or sets the date an application object was last changed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1661">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1662">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1663">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1664">
-          <source>The date an application object was last changed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1665">
-          <source>Method changedTime</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedTime</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1666">
-          <source>Gets or sets the time an application object was last changed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1667">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1668">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1669">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1670">
-          <source>The time an application object was last changed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時間。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1671">
-          <source>Method createdBy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createdBy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1672">
-          <source>Gets or sets the name of the user who created the application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1673">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1674">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1675">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1676">
-          <source>The name of the user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーの名前。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1677">
-          <source>Method creationDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド creationDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1678">
-          <source>Gets or sets the date an application object was created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1679">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1680">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1681">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1682">
-          <source>The date an application object was created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1683">
-          <source>Method creationTime</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド creationTime</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1684">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1685">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1686">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1687">
-          <source>Method name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1688">
-          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1689">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1690">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1691">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1692">
-          <source>The name that is used in code to identify an application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを識別するためにコードで使用される名前。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1693">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1694">
-          <source>The name property value of an object must meet the following criteria to avoid code conflicts:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1695">
-          <source>Begins with a letter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字で始めます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1696">
-          <source>Doesn't exceed 250 characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">250 文字を超えないでください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1697">
-          <source>Can include numbers and underscore characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">数字とアンダースコア文字を含めることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1698">
-          <source>Cannot include punctuation or spaces.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">句読点やスペースを含めることはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1699">
-          <source>Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1700">
-          <source>Method origin</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド origin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1701">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1702">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1703">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1704">
-          <source>Method query</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド query</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1705">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1706">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1707">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1708">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1709">
-          <source>Initializes a new instance of the InfoPart class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPart クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1710">
-          <source>Class InfoPartField</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス InfoPartField</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1711">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1712">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1713">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1714">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1715">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1716">
-          <source>public str dataField(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str dataField(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1717">
-          <source>public str dataMethod(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str dataMethod(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1718">
-          <source>public str dataSource(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str dataSource(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1719">
-          <source>Gets or sets a data source that will be used by the control or the form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールまたはフォームで使用されるデータ ソースを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1720">
-          <source>public str label(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str label(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1721">
-          <source>Gets or sets the label for a control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのラベルを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1722">
-          <source>public boolean manualRetrieval(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean manualRetrieval(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1723">
-          <source>public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1724">
-          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1725">
-          <source>public int style(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int style(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1726">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1727">
-          <source>Initializes a new instance of the InfoPartField class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPartField クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1728">
-          <source>Method dataField</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataField</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1729">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1730">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1731">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1732">
-          <source>Method dataMethod</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataMethod</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1733">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1734">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1735">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1736">
-          <source>Method dataSource</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSource</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1737">
-          <source>Gets or sets a data source that will be used by the control or the form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールまたはフォームで使用されるデータ ソースを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1738">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1739">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1740">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1741">
-          <source>The identifier of the data source that will be used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用されるデータ ソースの ID。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1742">
-          <source>Method label</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド label</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1743">
-          <source>Gets or sets the label for a control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのラベルを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1744">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1745">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1746">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1747">
-          <source>The current value of the label string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベル文字列の現在の値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1748">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1749">
-          <source>The label determines which text is displayed in the control or adjacent to it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベルは、コントロール内に表示されているテキストまたはそれに隣接するテキストを指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1750">
-          <source>The label property value cannot exceed 250 characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベルのプロパティ値は 250 文字を超えることはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1751">
-          <source>Method manualRetrieval</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド manualRetrieval</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1752">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1753">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1754">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1755">
-          <source>Method name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1756">
-          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1757">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1758">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1759">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1760">
-          <source>The name that is used in code to identify an application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを識別するためにコードで使用される名前。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1761">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1762">
-          <source>The name property value of an object must meet the following criteria to avoid code conflicts:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1763">
-          <source>Begins with a letter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字で始めます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1764">
-          <source>Doesn't exceed 250 characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">250 文字を超えないでください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1765">
-          <source>Can include numbers and underscore characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">数字とアンダースコア文字を含めることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1766">
-          <source>Cannot include punctuation or spaces.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">句読点やスペースを含めることはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1767">
-          <source>Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1768">
-          <source>Method style</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド style</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1769">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1770">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1771">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1772">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1773">
-          <source>Initializes a new instance of the InfoPartField class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPartField クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1774">
-          <source>Class InfoPartGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス InfoPartGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1775">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1776">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1777">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1778">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1779">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1780">
-          <source>public str caption(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str caption(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1781">
-          <source>Gets or sets the caption of the control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのキャプションを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1782">
-          <source>public str dataGroup(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str dataGroup(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1783">
-          <source>public str dataSource(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str dataSource(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1784">
-          <source>Gets or sets a data source that will be used by the control or the form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールまたはフォームで使用されるデータ ソースを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1785">
-          <source>public int labelPosition(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int labelPosition(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1786">
-          <source>public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1787">
-          <source>Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1788">
-          <source>public boolean repeating(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean repeating(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1789">
-          <source>public int rowCountWhenSmall(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>AutoMode mode<ph id="ph4">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int rowCountWhenSmall(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>AutoMode mode<ph id="ph4">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1790">
-          <source>public AutoMode rowCountWhenSmallMode(<ph id="ph1">\[</ph>AutoMode mode<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public AutoMode rowCountWhenSmallMode(<ph id="ph1">\[</ph>AutoMode mode<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1791">
-          <source>public int rowCountWhenSmallValue(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int rowCountWhenSmallValue(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1792">
-          <source>public boolean showCaption(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean showCaption(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1793">
-          <source>public boolean showLabels(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean showLabels(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1794">
-          <source>public int showWhenPartSize(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int showWhenPartSize(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1795">
-          <source>public boolean verticalSpacing(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean verticalSpacing(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1796">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1797">
-          <source>Initializes a new instance of the InfoPartGroup class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPartGroup クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1798">
-          <source>Method caption</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド caption</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1799">
-          <source>Gets or sets the caption of the control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのキャプションを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1800">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1801">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1802">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1803">
-          <source>The string that is used as the caption of the control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのキャプションとして使用される文字列。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1804">
-          <source>Method dataGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1805">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1806">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1807">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1808">
-          <source>Method dataSource</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSource</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1809">
-          <source>Gets or sets a data source that will be used by the control or the form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールまたはフォームで使用されるデータ ソースを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1810">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1811">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1812">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1813">
-          <source>The identifier of the data source that will be used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用されるデータ ソースの ID。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1814">
-          <source>Method labelPosition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド labelPosition</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1815">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1816">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1817">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1818">
-          <source>Method name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1819">
-          <source>Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1820">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1821">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1822">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1823">
-          <source>The name that is used in the code to identify an application object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを識別するためにコードで使用される名前。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1824">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1825">
-          <source>The name property value of an object must meet the following criteria to avoid code conflicts:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1826">
-          <source>Begins with a letter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字で始めます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1827">
-          <source>Doesn't exceed 250 characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">250 文字を超えないでください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1828">
-          <source>Can include numbers and underscore characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">数字とアンダースコア文字を含めることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1829">
-          <source>Cannot include punctuation or spaces.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">句読点やスペースを含めることはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1830">
-          <source>Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1831">
-          <source>Method repeating</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド repeating</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1832">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1833">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1834">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1835">
-          <source>Method rowCountWhenSmall</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rowCountWhenSmall</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1836">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1837">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1838">
-          <source>mode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モード</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1839">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1840">
-          <source>Method rowCountWhenSmallMode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rowCountWhenSmallMode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1841">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1842">
-          <source>mode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モード</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1843">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1844">
-          <source>Method rowCountWhenSmallValue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rowCountWhenSmallValue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1845">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1846">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1847">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1848">
-          <source>Method showCaption</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド showCaption</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1849">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1850">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1851">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1852">
-          <source>Method showLabels</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド showLabels</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1853">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1854">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1855">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1856">
-          <source>Method showWhenPartSize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド showWhenPartSize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1857">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1858">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1859">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1860">
-          <source>Method verticalSpacing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド verticalSpacing</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1861">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1862">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1863">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1864">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1865">
-          <source>Initializes a new instance of the InfoPartGroup class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPartGroup クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1866">
-          <source>Class InfoPartLayout</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス InfoPartLayout</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1867">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1868">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1869">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1870">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1871">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1872">
-          <source>public boolean showMore(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean showMore(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1873">
-          <source>public str showMoreDataSource(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str showMoreDataSource(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1874">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1875">
-          <source>Initializes a new instance of the InfoPartLayout class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPartLayout クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1876">
-          <source>Method showMore</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド showMore</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1877">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1878">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1879">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1880">
-          <source>Method showMoreDataSource</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド showMoreDataSource</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1881">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1882">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1883">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1884">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1885">
-          <source>Initializes a new instance of the InfoPartLayout class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPartLayout クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1886">
-          <source>Class InitialQueryParameter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス InitialQueryParameter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1887">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1888">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1889">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1890">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1891">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1892">
-          <source>public boolean applyQuery(FormDataSource datasource)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean applyQuery(FormDataSource datasource)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1893">
-          <source>public str dataSourceName(<ph id="ph1">\[</ph>str dataSourceName<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str dataSourceName(<ph id="ph1">\[</ph>str dataSourceName<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1894">
-          <source>public str modeledQueryName(<ph id="ph1">\[</ph>str modeledQueryName<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str modeledQueryName(<ph id="ph1">\[</ph>str modeledQueryName<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1895">
-          <source>public Query query(<ph id="ph1">\[</ph>Query query<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Query query(<ph id="ph1">\[</ph>Query query<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1896">
-          <source>::public static InitialQueryParameter createByModeledQueryName(str modeledQueryName, <ph id="ph1">\[</ph>str dataSourceName<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static InitialQueryParameter createByModeledQueryName(str modeledQueryName, <ph id="ph1">\[</ph>str dataSourceName<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1897">
-          <source>::public static InitialQueryParameter createByQuery(Query query, <ph id="ph1">\[</ph>str dataSourceName<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static InitialQueryParameter createByQuery(Query query, <ph id="ph1">\[</ph>str dataSourceName<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1898">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1899">
-          <source>public void new()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1900">
-          <source>Initializes a new instance of the InitialQueryParameter class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InitialQueryParameter クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1901">
-          <source>Method applyQuery</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド applyQuery</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1902">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1903">
-          <source>datasource</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">datasource</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1904">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1905">
-          <source>Method dataSourceName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSourceName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1906">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1907">
-          <source>dataSourceName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSourceName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1908">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1909">
-          <source>Method modeledQueryName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド modeledQueryName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1910">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1911">
-          <source>modeledQueryName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">modeledQueryName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1912">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1913">
-          <source>Method query</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド query</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1914">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1915">
-          <source>query</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1916">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1917">
-          <source>Method createByModeledQueryName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createByModeledQueryName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1918">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1919">
-          <source>modeledQueryName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">modeledQueryName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1920">
-          <source>dataSourceName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSourceName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1921">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1922">
-          <source>Method createByQuery</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createByQuery</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1923">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1924">
-          <source>query</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1925">
-          <source>dataSourceName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSourceName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1926">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1927">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1928">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1929">
-          <source>Initializes a new instance of the InitialQueryParameter class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InitialQueryParameter クラスの新しいインスタンスを初期化します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1930">
-          <source>Class InteropPermission</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス InteropPermission</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1931">
-          <source>The InteropPermission class controls the ability to call unmanaged and managed code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InteropPermission クラスは、アンマネージド コードとマネージド コードを呼び出す機能を制御します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1932">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1933">
-          <source>The InteropPermission class is designed to check permissions for specific APIs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InteropPermission クラスは、特定の API のアクセス許可をチェックするように設計されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1934">
-          <source>For a list of all APIs that are protected by permissions, see Secured APIs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクセス許可によって保護されているすべての API のリストについては、「セキュリティで保護された API」を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1935">
-          <source>Before the protected API is run, you must call the assert method on the same tier (usually the server tier) that the corresponding CodeAccessPermission::demand method is called on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">保護された API を実行する前に、対応する CodeAccessPermission::demand メソッドが呼び出されている同じ層 (通常はサーバー層) で assert メソッドを呼び出す必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1936">
-          <source>Call a method on the server tier from one of the following methods:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のいずれかの方法でサーバー層のメソッドを呼び出します:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1937">
-          <source>A server static method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サーバー静的メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1938">
-          <source>A class instance method that is set to run on the server by using the RunOn class property.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RunOn クラス プロパティを使用して、サーバーで実行するように設定されているクラス インスタンス メソッド。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1939">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1940">
-          <source>The following code example shows a new instance of the InteropPermission class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコード例は、InteropPermission クラスの新しいインスタンスを示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1941">
-          <source>The assert method is called to declare that the code can then instantiate the DLL class that provides the ability to communicate with a Microsoft Windows dynamic-link library (DLL).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">assert メソッドが呼び出され、コードが、Microsoft Windows ダイナミックリンク ライブラリ (DLL) と通信する機能を提供する DLL クラスをインスタンス化できることが宣言されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1942">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1943">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1944">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1945">
-          <source>public CodeAccessPermission copy()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public CodeAccessPermission copy()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1946">
-          <source>Creates and returns a copy of the current permission class object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1947">
-          <source>public boolean isSubsetOf(CodeAccessPermission target)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isSubsetOf(CodeAccessPermission target)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1948">
-          <source>Determines whether the current permission is a subset of the specified permission.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可が指定のアクセス許可のサブセットかどうかを決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1949">
-          <source>public void new(InteropKind kind)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(InteropKind kind)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1950">
-          <source>Creates a new instance of the InteropPermission class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InteropPermission クラスの新しいインスタンスを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1951">
-          <source>Method copy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド copy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1952">
-          <source>Creates and returns a copy of the current permission class object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1953">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1954">
-          <source>A copy of the current permission object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可オブジェクトのコピーです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1955">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1956">
-          <source>You override this method when you derive a class from the CodeAccessPermission class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1957">
-          <source>For more information, see the copy method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、「メソッドのコピー」を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1958">
-          <source>Method isSubsetOf</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isSubsetOf</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1959">
-          <source>Determines whether the current permission is a subset of the specified permission.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可が指定のアクセス許可のサブセットかどうかを決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1960">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1961">
-          <source>target</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">target</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1962">
-          <source>A CodeAccessPermission class object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CodeAccessPermission クラス オブジェクト。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1963">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1964">
-          <source>true if the current permission is a subset of the specified permission; otherwise, false.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は、false。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1965">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1966">
-          <source>You override this method when you derive a class from the CodeAccessPermission class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1967">
-          <source>For more information, see the isSubsetOf method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、「isSubsetOf メソッド」を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1968">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1969">
-          <source>Creates a new instance of the InteropPermission class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InteropPermission クラスの新しいインスタンスを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1970">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1971">
-          <source>kind</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">kind</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1972">
-          <source>An InteropKind system enumeration value that specifies access to managed or unmanaged code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マネージドまたはアンマネージド コードへのアクセスを指定する InteropKind システム列挙値です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1973">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1974">
-          <source>The following code example shows a new instance of the InteropPermission class that specifies access to Win32 DLLs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコード例は、Win32 DLL へのアクセス許可を指定する InteropPermission クラスの新しいインスタンスを示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1975">
-          <source>Class Io</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス入出力</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1976">
-          <source>The Io class serves as the base class for the format-specific Io classes, which are used to access external files.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Io クラスは、外部ファイルにアクセスするための、ファイル固有の Io クラスの基本クラスとして機能します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1977">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1978">
-          <source>The basic Io class features no actual data I/O but works as base class for the format-specific Io classes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">基本的な Io クラスには、実際のデータ入出力機能はありませんが、形式固有の Io クラスの基本クラスとして動作します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1979">
-          <source>The methods that are common to all Io classes are described here.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ここでは、すべての Io クラスに共通するメソッドについて説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1980">
-          <source>For format-specific features and behavior of the member functions, refer to the documentation for each of the I/O classes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">形式固有の機能およびメンバー機能の動作については、各 I/O クラスのドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1981">
-          <source>To support reading and writing of different formats of external files, MorphX features a range of different Io classes for comma-separated files, for comma-separated 7 bit files, for binary files, and for plain-text files.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">異なるフォーマットの外部ファイルの読み書きをサポートするため、MorphX はコンマで区切られたファイル、コンマで区切られた 7 ビット ファイル、バイナリ ファイル、およびプレーン テキスト ファイルのためのさまざまな Io クラスを備えています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1982">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1983">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1984">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1985">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1986">
-          <source>public str inFieldDelimiter(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str inFieldDelimiter(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1987">
-          <source>Determines the delimiter used to separate fields in records accessed by the <ph id="ph1">\*</ph>Io classes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>Io によってアクセスされるレコード内のフィールドを区切るために使用される区切り文字を決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1988">
-          <source>public str inRecordDelimiter(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str inRecordDelimiter(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1989">
-          <source>Determines to the <ph id="ph1">\*</ph>Io classes what character or characters to search for to determine whether a full record has been read.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完全なレコードが読み込まれたかどうかを判断するために、<ph id="ph1">\*</ph>Io クラスに検索する文字を決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1990">
-          <source>public int inRecordLength(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int inRecordLength(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1991">
-          <source>Gets or sets the number of characters to read for each record in a file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル内の各レコードを読み取る文字数を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1992">
-          <source>public str outFieldDelimiter(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str outFieldDelimiter(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1993">
-          <source>Gets or sets the sequence of characters that are written to a file that is used to separate the fields of a record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコードのフィールドを区切るために使用されるファイルに書き込まれる文字のシーケンスを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1994">
-          <source>public str outRecordDelimiter(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str outRecordDelimiter(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1995">
-          <source>Gets or sets the sequence of characters that is written to the output files, which separate the records in the output files.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出力ファイルでレコードを区切る出力ファイルに書き込まれる文字のシーケンスを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1996">
-          <source>public container read()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container read()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1997">
-          <source>Reads the next full record from the Io object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Io オブジェクトから次の完全なレコードを読み取ります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1998">
-          <source>public IO<ph id="ph1">\_</ph>Status status()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IO<ph id="ph1">\_</ph>Status status()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1999">
-          <source>Retrieves the status of the last operation performed on the Io object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Io オブジェクトで実行された最後の操作のステータスを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2000">
-          <source>public boolean write(VarArg values)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean write(VarArg values)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2001">
-          <source>Writes values of a simple type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">単純型の値を記述します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2002">
-          <source>public boolean writeExp(container data)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean writeExp(container data)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2003">
-          <source>Writes the content of a container to the file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンテナのコンテンツをそのファイルに記述します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2004">
-          <source>public void finalize()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2005">
-          <source>Closes the file and, if data was written, flushes the file buffers to disk.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルを閉じ、データが書き込まれている場合、ファイル バッファーをディスクにフラッシュします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2006">
-          <source>public void new(str filename, str mode)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(str filename, str mode)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2007">
-          <source>Creates a new instance of the Io class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Io クラスの新しいインスタンスを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2008">
-          <source>Method inFieldDelimiter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド inFieldDelimiter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2009">
-          <source>Determines the delimiter used to separate fields in records accessed by the <ph id="ph1">\*</ph>Io classes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>Io によってアクセスされるレコード内のフィールドを区切るために使用される区切り文字を決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2010">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2011">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2012">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2013">
-          <source>The delimiter used to separate fields in records accessed by the <ph id="ph1">\*</ph>Io classes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>Io によってアクセスされるレコード内のフィールドを区切るために使用される区切り文字。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2014">
-          <source>Method inRecordDelimiter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド inRecordDelimiter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2015">
-          <source>Determines to the <ph id="ph1">\*</ph>Io classes what character or characters to search for to determine whether a full record has been read.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完全なレコードが読み込まれたかどうかを判断するために、<ph id="ph1">\*</ph>Io クラスに検索する文字を決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2016">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2017">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2018">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2019">
-          <source>The character or characters that indicate whether a full record has been read.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完全なレコードが読み込まれたかどうかを示す文字。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2020">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2021">
-          <source>For standard text, the delimiter is a newline character.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準的なテキストについては、区切り記号は改行文字です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2022">
-          <source>Method inRecordLength</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド inRecordLength</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2023">
-          <source>Gets or sets the number of characters to read for each record in a file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル内の各レコードを読み取る文字数を取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2024">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2025">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2026">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2027">
-          <source>The number of characters to read for each record in the file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル内の各レコードを読み取る文字数。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2028">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2029">
-          <source>For files that have a fixed-length format, use the inRecordLength property to guarantee that no more than the specified number of characters are read for each record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">固定長形式になっているファイルについては、inRecordLength プロパティを使用して、各レコードに対して指定された文字数以上が読み取られていないことを保証します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2030">
-          <source>If the record format is overruled by a specified inRecordDelimiter property value , that is the inRecordDelimiter value is met before the fixed length is read, the record is accepted, and no additional data is read.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコード フォーマットが指定された inRecordDelimiter プロパティ値で上書きされた場合、つまり、固定長が読み込まれる前に inRecordDelimiter 値が満たされている場合)、レコードは受け入れられ、追加のデータは読み込まれません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2031">
-          <source>To guarantee that a fixed number of characters are read, set the inRecordDelimiter property value to an empty string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">固定数の文字を確実に読み取るには、inRecordDelimiter プロパティ値を空の文字列に設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2032">
-          <source>When no inRecordDelimiter property value is found, the inRecordDelimiter property value is the maximum limit of characters to read.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">inRecordDelimiter プロパティ値が見つからない場合、inRecordDelimiter プロパティ値は読み取れる最大文字数になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2033">
-          <source>Set the inRecordDelimiter property value to zero to disable the record length check.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコードの長さチェックを無効にするには、inRecordDelimiter プロパティ値をゼロに設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2034">
-          <source>Method outFieldDelimiter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド outFieldDelimiter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2035">
-          <source>Gets or sets the sequence of characters that are written to a file that is used to separate the fields of a record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコードのフィールドを区切るために使用されるファイルに書き込まれる文字のシーケンスを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2036">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2037">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2038">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2039">
-          <source>The sequence of characters that are written to a file that is used to separate the fields of a record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコードのフィールドを区切るために使用されるファイルに書き込まれる文字のシーケンス。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2040">
-          <source>Method outRecordDelimiter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド outRecordDelimiter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2041">
-          <source>Gets or sets the sequence of characters that is written to the output files, which separate the records in the output files.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出力ファイルでレコードを区切る出力ファイルに書き込まれる文字のシーケンスを取得または設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2042">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2043">
-          <source>value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2044">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2045">
-          <source>The sequence of characters that is written to the output files.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出力ファイルに書き込まれる文字のシーケンス。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2046">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2047">
-          <source>For standard text files, the delimiter is a newline character.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準的なテキスト ファイルについては、区切り記号は改行文字です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2048">
-          <source>Method read</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド read</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2049">
-          <source>Reads the next full record from the Io object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Io オブジェクトから次の完全なレコードを読み取ります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2050">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2051">
-          <source>A container that holds the next full record from the Io object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">入出力オブジェクトから次の完全なレコードを保持するコンテナーです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2052">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2053">
-          <source>The definition of the next full record is controlled by the inFieldDelimiter, inRecordDelimiter, and inRecordLength method properties.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の完全なレコードの定義は、次のプロパティ、inFieldDelimiter、inRecordDelimiter、および inRecordLength メソッド プロパティによって制御されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2054">
-          <source>The record is returned as a container.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコードはコンテナーとして返されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2055">
-          <source>Each entry in the container equals one field in the record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンテナー内の各エントリは、レコードの 1 つのフィールドと同じです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2056">
-          <source>Each of the specialized Io classes has default settings for inFieldDelimiter, inRecordDelimiter, and inRecordLength enabling input and output of the most common formats.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それぞれの特殊な Io クラスは、inFieldDelimiter、inRecordDelimiter、および inRecordLength のデフォルト設定を使用し、最も一般的な形式の入出力を可能にします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2057">
-          <source>You might have to adjust these to support the wanted format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">目的の形式をサポートするために、これらの設定の調整が生じる場合があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2058">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2059">
-          <source>This method demonstrates the use of the run method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、run メソッドの使用方法を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2060">
-          <source>However, the following example will not compile in a job as it must be run in the context of a class, form, or other object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、次の例は、クラス、フォーム、またはその他のオブジェクトのコンテキストで実行される必要があるため、ジョブはコンパイルされません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2061">
-          <source>Method status</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド status</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2062">
-          <source>Retrieves the status of the last operation performed on the Io object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Io オブジェクトで実行された最後の操作のステータスを取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2063">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2064">
-          <source>The status of the last operation, as an IO<ph id="ph1">\_</ph>Status system enumeration value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IO<ph id="ph1">\_</ph>Status システム列挙値としての最後の操作の状態。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2065">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2066">
-          <source>The range of possible IO<ph id="ph1">\_</ph>Status values returned varies among Io Classes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">返される可能性のある IO<ph id="ph1">\_</ph>Status 値の範囲はクラスによって異なります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2067">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2068">
-          <source>Method write</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド write</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2069">
-          <source>Writes values of a simple type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">単純型の値を記述します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2070">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2071">
-          <source>values</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2072">
-          <source>The simple types are string, integer, real, enum, and date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">単純型は、文字列、整数、実数、列挙型、日付です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2073">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2074">
-          <source>true if the write operation succeeds; otherwise false.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">書き込み操作が成功する場合は true。それ以外の場合は false。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2075">
-          <source>If the write failed, the status method could be checked for the cause.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">書き込みが失敗した場合は、ステータス メソッドがその原因を調べることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2076">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2077">
-          <source>The method accepts a variable number of arguments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、可変数の引数を受け入れます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2078">
-          <source>Each value specified is put into the output record as a field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定された各値は、フィールドとして出力レコードに配置されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2079">
-          <source>The first argument as the first field, the second argument as the second field, and so on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初のフィールドとしての最初の引数、2 番目のフィールドとしての 2 番目の引数など。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2080">
-          <source>The fields are separated with the field delimiter that is specified in the outFieldDelimiter method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールドは、outFieldDelimiter メソッドで指定されたフィールド区切り記号で区切られます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2081">
-          <source>Each record is separated by the outRecordDelimiter method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各レコードは、outRecordDelimiter 方法で区切られます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2082">
-          <source>To write complete containers, use the writeExp method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完全なコンテナーを書き込むには、writeExp メソッドを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2083">
-          <source>Method writeExp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド writeExp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2084">
-          <source>Writes the content of a container to the file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンテナのコンテンツをそのファイルに記述します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2085">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2086">
-          <source>data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2087">
-          <source>The container with data for the record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコードのデータを含むコンテナー。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2088">
-          <source>Return Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2089">
-          <source>true if the operation succeeded; otherwise false.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">操作が成功した場合は true。それ以外の場合は false。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2090">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2091">
-          <source>If this method returns false, check the status method for the cause.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドが false を返す場合、ステータス メソッドで原因を確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2092">
-          <source>The entries in the container are treated as fields, and the container is treated as a full record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンテナー内のエントリはフィールドとして扱われ、コンテナーは完全なレコードとして扱われます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2093">
-          <source>The field separator is defined in the outFieldDelimiter method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド区切り記号は、outFieldDelimiter メソッドで定義されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2094">
-          <source>The record separator is defined in the outRecordDelimiter method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコード区切りは outRecordDelimiter メソッドで定義されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2095">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2096">
-          <source>Method finalize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2097">
-          <source>Closes the file and, if data was written, flushes the file buffers to disk.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルを閉じ、データが書き込まれている場合、ファイル バッファーをディスクにフラッシュします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2098">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2099">
-          <source>The object is typically finalized by leaving the scope, so finalize is typically not called directly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトは、通常、スコープから離れることによって確定されるため、確定は通常は直接呼び出されません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2100">
-          <source>Written output will not be valid before the object is finalized.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">記述された出力はオブジェクトの終了前は無効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2101">
-          <source>Method new</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2102">
-          <source>Creates a new instance of the Io class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Io クラスの新しいインスタンスを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2103">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2104">
-          <source>filename</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">filename</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2105">
-          <source>The mode in which the file should be opened.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルを開く必要があるモード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2106">
-          <source>mode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モード</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2107">
-          <source>The mode in which the file should be opened.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルを開く必要があるモード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2108">
-          <source>Remarks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2109">
-          <source>The mode parameter can be one of the following modes:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">mode パラメーターは、次のモードのいずれかになります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2110">
-          <source>R – read</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">R – 読み取り</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2111">
-          <source>W – write</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">W – 書き込み</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2112">
-          <source>A – append (implies W)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A – 追加 (意味 W)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2113">
-          <source>T – translate (text)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">T – 翻訳 (テキスト)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2114">
-          <source>B – binary</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">B – バイナリ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2115">
-          <source>A run-time error occurs if the file is accessed with a method that does not correspond to the current opened mode (for example, if an attempt is made to write to a read-mode file).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ランタイム エラーは、現在開いているモードに対応しないメソッドでファイルにアクセスすると発生します (たとえば、読み取りモード ファイルに書き込もうとした場合など)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2116">
-          <source>If an attacker can control input to the new method, a security risk exists.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">攻撃者が新しいメソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2117">
-          <source>Therefore, this method runs under Code Access Security.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、このメソッドは、コード アクセス セキュリティで実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2118">
-          <source>Calls to this method on the server require permission.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サーバー上でこのメソッドを呼び出すには、アクセス許可が必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2119">
-          <source>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2120">
-          <source>Ensure that the user has development privileges by setting the security key to SysDevelopment on the control that calls this method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限があることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2121">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="2122">
-          <source>This example uses the Io class to write to ExampleFile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この例では、Io クラスを使用して ExampleFile に書き込みます。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: I クラス
+description: 文字 I で始まるシステム API クラス。
+author: RobinARH
+manager: AnnBe
+ms.date: 11/07/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 52171
+ms.assetid: bd6df991-7b90-40f0-b342-025ab000c24c
+ms.search.region: Global
+ms.author: robinr
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f06f3929aad48c39dc87b18eba406d0521323b71
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544207"
+---
+# <a name="i-classes"></a><span data-ttu-id="ff680-103">I クラス</span><span class="sxs-lookup"><span data-stu-id="ff680-103">I classes</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="ff680-104">文字 I で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="ff680-104">System API classes that start with the letter I.</span></span>
+
+<a name="class-idispatcherproxy"></a><span data-ttu-id="ff680-105">クラス IDispatcherProxy</span><span class="sxs-lookup"><span data-stu-id="ff680-105">Class IDispatcherProxy</span></span>
+----------------------
+
+    class IDispatcherProxy
+
+### <a name="remarks"></a><span data-ttu-id="ff680-106">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-106">Remarks</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-107">例</span><span class="sxs-lookup"><span data-stu-id="ff680-107">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-108">Methods</span></span>
+
+| <span data-ttu-id="ff680-109">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-109">Method</span></span>                                         | <span data-ttu-id="ff680-110">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-110">Description</span></span> |
+|------------------------------------------------|-------------|
+| <span data-ttu-id="ff680-111">public AnyType invoke(str methodName, VarArg )</span><span class="sxs-lookup"><span data-stu-id="ff680-111">public AnyType invoke(str methodName, VarArg )</span></span> |             |
+| <span data-ttu-id="ff680-112">public void refresh()</span><span class="sxs-lookup"><span data-stu-id="ff680-112">public void refresh()</span></span>                          |             |
+
+### <a name="method-invoke"></a><span data-ttu-id="ff680-113">メソッド invoke</span><span class="sxs-lookup"><span data-stu-id="ff680-113">Method invoke</span></span>
+
+    public AnyType invoke(str methodName, VarArg )
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-114">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-114">Parameters</span></span>
+
+<span data-ttu-id="ff680-115">methodName</span><span class="sxs-lookup"><span data-stu-id="ff680-115">methodName</span></span>  
+
+<!-- -->
+
+
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-116">Return Value</span></span>
+
+### <a name="method-refresh"></a><span data-ttu-id="ff680-117">メソッド refresh</span><span class="sxs-lookup"><span data-stu-id="ff680-117">Method refresh</span></span>
+
+    public void refresh()
+
+## <a name="class-iisapplicationobject"></a><span data-ttu-id="ff680-118">クラス IISApplicationObject</span><span class="sxs-lookup"><span data-stu-id="ff680-118">Class IISApplicationObject</span></span>
+    class IISApplicationObject extends Object
+
+<span data-ttu-id="ff680-119">IISApplicationObject クラスは、インターネット インフォメーション サービス (IIS) によって提供されるアプリケーション オブジェクトをラップします。</span><span class="sxs-lookup"><span data-stu-id="ff680-119">The IISApplicationObject class wraps the Application object that is offered by Internet Information Services (IIS).</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-120">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-120">Remarks</span></span>
+
+<span data-ttu-id="ff680-121">IISApplicationObject クラスのメソッドと、IIS によって提供される Application オブジェクトのメソッドとの間には、1 対 1 の接続があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-121">There is a one-to-one connection between the methods of the IISApplicationObject class and the methods of the Application object that is offered by IIS.</span></span> <span data-ttu-id="ff680-122">したがって、IISApplicationObject クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-122">Therefore, for more information about the methods of the IISApplicationObject class, see the Microsoft documentation for IIS.</span></span> <span data-ttu-id="ff680-123">IISApplicationObject クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="ff680-123">Use of the IISApplicationObject class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-124">例</span><span class="sxs-lookup"><span data-stu-id="ff680-124">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-125">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-125">Methods</span></span>
+
+| <span data-ttu-id="ff680-126">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-126">Method</span></span>                                                 | <span data-ttu-id="ff680-127">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-127">Description</span></span>                                                   |
+|--------------------------------------------------------|---------------------------------------------------------------|
+| <span data-ttu-id="ff680-128">public IISVariantDictionary contents()</span><span class="sxs-lookup"><span data-stu-id="ff680-128">public IISVariantDictionary contents()</span></span>                 |                                                               |
+| <span data-ttu-id="ff680-129">public ComInterface interface()</span><span class="sxs-lookup"><span data-stu-id="ff680-129">public ComInterface interface()</span></span>                        |                                                               |
+| <span data-ttu-id="ff680-130">public IISVariantDictionary staticObjects()</span><span class="sxs-lookup"><span data-stu-id="ff680-130">public IISVariantDictionary staticObjects()</span></span>            |                                                               |
+| <span data-ttu-id="ff680-131">public COMVariant value(str value, \[COMVariant var\])</span><span class="sxs-lookup"><span data-stu-id="ff680-131">public COMVariant value(str value, \[COMVariant var\])</span></span> |                                                               |
+| <span data-ttu-id="ff680-132">public str valueTxt(str value, \[str var\])</span><span class="sxs-lookup"><span data-stu-id="ff680-132">public str valueTxt(str value, \[str var\])</span></span>            |                                                               |
+| <span data-ttu-id="ff680-133">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-133">public void new()</span></span>                                      | <span data-ttu-id="ff680-134">IISApplicationObject クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-134">Initializes a new instance of the IISApplicationObject class.</span></span> |
+| <span data-ttu-id="ff680-135">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-135">public void finalize()</span></span>                                 |                                                               |
+| <span data-ttu-id="ff680-136">public void lock()</span><span class="sxs-lookup"><span data-stu-id="ff680-136">public void lock()</span></span>                                     |                                                               |
+| <span data-ttu-id="ff680-137">public void unLock()</span><span class="sxs-lookup"><span data-stu-id="ff680-137">public void unLock()</span></span>                                   |                                                               |
+
+### <a name="method-contents"></a><span data-ttu-id="ff680-138">メソッド contents</span><span class="sxs-lookup"><span data-stu-id="ff680-138">Method contents</span></span>
+
+    public IISVariantDictionary contents()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-139">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-139">Return Value</span></span>
+
+### <a name="method-interface"></a><span data-ttu-id="ff680-140">メソッド interface</span><span class="sxs-lookup"><span data-stu-id="ff680-140">Method interface</span></span>
+
+    public ComInterface interface()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-141">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-141">Return Value</span></span>
+
+### <a name="method-staticobjects"></a><span data-ttu-id="ff680-142">メソッド staticObjects</span><span class="sxs-lookup"><span data-stu-id="ff680-142">Method staticObjects</span></span>
+
+    public IISVariantDictionary staticObjects()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-143">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-143">Return Value</span></span>
+
+### <a name="method-value"></a><span data-ttu-id="ff680-144">メソッド value</span><span class="sxs-lookup"><span data-stu-id="ff680-144">Method value</span></span>
+
+    public COMVariant value(str value, [COMVariant var])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-145">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-145">Parameters</span></span>
+
+<span data-ttu-id="ff680-146">値</span><span class="sxs-lookup"><span data-stu-id="ff680-146">value</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-147">var</span><span class="sxs-lookup"><span data-stu-id="ff680-147">var</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-148">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-148">Return Value</span></span>
+
+### <a name="method-valuetxt"></a><span data-ttu-id="ff680-149">メソッド valueTxt</span><span class="sxs-lookup"><span data-stu-id="ff680-149">Method valueTxt</span></span>
+
+    public str valueTxt(str value, [str var])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-150">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-150">Parameters</span></span>
+
+<span data-ttu-id="ff680-151">値</span><span class="sxs-lookup"><span data-stu-id="ff680-151">value</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-152">var</span><span class="sxs-lookup"><span data-stu-id="ff680-152">var</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-153">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-153">Return Value</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-154">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-154">Method new</span></span>
+
+<span data-ttu-id="ff680-155">IISApplicationObject クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-155">Initializes a new instance of the IISApplicationObject class.</span></span>
+
+    public void new()
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-156">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-156">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-lock"></a><span data-ttu-id="ff680-157">メソッド lock</span><span class="sxs-lookup"><span data-stu-id="ff680-157">Method lock</span></span>
+
+    public void lock()
+
+### <a name="method-unlock"></a><span data-ttu-id="ff680-158">メソッド unLock</span><span class="sxs-lookup"><span data-stu-id="ff680-158">Method unLock</span></span>
+
+    public void unLock()
+
+## <a name="class-iiscontextobject"></a><span data-ttu-id="ff680-159">クラス IISContextObject</span><span class="sxs-lookup"><span data-stu-id="ff680-159">Class IISContextObject</span></span>
+    class IISContextObject extends Object
+
+### <a name="remarks"></a><span data-ttu-id="ff680-160">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-160">Remarks</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-161">例</span><span class="sxs-lookup"><span data-stu-id="ff680-161">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-162">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-162">Methods</span></span>
+
+| <span data-ttu-id="ff680-163">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-163">Method</span></span>                                                 | <span data-ttu-id="ff680-164">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-164">Description</span></span>                                               |
+|--------------------------------------------------------|-----------------------------------------------------------|
+| <span data-ttu-id="ff680-165">public ComInterface interface()</span><span class="sxs-lookup"><span data-stu-id="ff680-165">public ComInterface interface()</span></span>                        |                                                           |
+| <span data-ttu-id="ff680-166">public boolean isTraceEnabled()</span><span class="sxs-lookup"><span data-stu-id="ff680-166">public boolean isTraceEnabled()</span></span>                        |                                                           |
+| <span data-ttu-id="ff680-167">public IISVariantDictionary items()</span><span class="sxs-lookup"><span data-stu-id="ff680-167">public IISVariantDictionary items()</span></span>                    |                                                           |
+| <span data-ttu-id="ff680-168">public int traceMode(int mode)</span><span class="sxs-lookup"><span data-stu-id="ff680-168">public int traceMode(int mode)</span></span>                         |                                                           |
+| <span data-ttu-id="ff680-169">public COMVariant value(str value, \[COMVariant var\])</span><span class="sxs-lookup"><span data-stu-id="ff680-169">public COMVariant value(str value, \[COMVariant var\])</span></span> |                                                           |
+| <span data-ttu-id="ff680-170">public str valueTxt(str value, \[str var\])</span><span class="sxs-lookup"><span data-stu-id="ff680-170">public str valueTxt(str value, \[str var\])</span></span>            |                                                           |
+| <span data-ttu-id="ff680-171">public void traceWrite(str category, str message)</span><span class="sxs-lookup"><span data-stu-id="ff680-171">public void traceWrite(str category, str message)</span></span>      |                                                           |
+| <span data-ttu-id="ff680-172">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-172">public void finalize()</span></span>                                 |                                                           |
+| <span data-ttu-id="ff680-173">public void traceWarn(str category, str message)</span><span class="sxs-lookup"><span data-stu-id="ff680-173">public void traceWarn(str category, str message)</span></span>       |                                                           |
+| <span data-ttu-id="ff680-174">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-174">public void new()</span></span>                                      | <span data-ttu-id="ff680-175">IISContextObject クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-175">Initializes a new instance of the IISContextObject class.</span></span> |
+
+### <a name="method-interface"></a><span data-ttu-id="ff680-176">メソッド interface</span><span class="sxs-lookup"><span data-stu-id="ff680-176">Method interface</span></span>
+
+    public ComInterface interface()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-177">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-177">Return Value</span></span>
+
+### <a name="method-istraceenabled"></a><span data-ttu-id="ff680-178">メソッド isTraceEnabled</span><span class="sxs-lookup"><span data-stu-id="ff680-178">Method isTraceEnabled</span></span>
+
+    public boolean isTraceEnabled()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-179">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-179">Return Value</span></span>
+
+### <a name="method-items"></a><span data-ttu-id="ff680-180">メソッド items</span><span class="sxs-lookup"><span data-stu-id="ff680-180">Method items</span></span>
+
+    public IISVariantDictionary items()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-181">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-181">Return Value</span></span>
+
+### <a name="method-tracemode"></a><span data-ttu-id="ff680-182">メソッド traceMode</span><span class="sxs-lookup"><span data-stu-id="ff680-182">Method traceMode</span></span>
+
+    public int traceMode(int mode)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-183">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-183">Parameters</span></span>
+
+<span data-ttu-id="ff680-184">モード</span><span class="sxs-lookup"><span data-stu-id="ff680-184">mode</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-185">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-185">Return Value</span></span>
+
+### <a name="method-value"></a><span data-ttu-id="ff680-186">メソッド value</span><span class="sxs-lookup"><span data-stu-id="ff680-186">Method value</span></span>
+
+    public COMVariant value(str value, [COMVariant var])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-187">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-187">Parameters</span></span>
+
+<span data-ttu-id="ff680-188">値</span><span class="sxs-lookup"><span data-stu-id="ff680-188">value</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-189">var</span><span class="sxs-lookup"><span data-stu-id="ff680-189">var</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-190">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-190">Return Value</span></span>
+
+### <a name="method-valuetxt"></a><span data-ttu-id="ff680-191">メソッド valueTxt</span><span class="sxs-lookup"><span data-stu-id="ff680-191">Method valueTxt</span></span>
+
+    public str valueTxt(str value, [str var])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-192">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-192">Parameters</span></span>
+
+<span data-ttu-id="ff680-193">値</span><span class="sxs-lookup"><span data-stu-id="ff680-193">value</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-194">var</span><span class="sxs-lookup"><span data-stu-id="ff680-194">var</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-195">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-195">Return Value</span></span>
+
+### <a name="method-tracewrite"></a><span data-ttu-id="ff680-196">メソッド traceWrite</span><span class="sxs-lookup"><span data-stu-id="ff680-196">Method traceWrite</span></span>
+
+    public void traceWrite(str category, str message)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-197">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-197">Parameters</span></span>
+
+<span data-ttu-id="ff680-198">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="ff680-198">category</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-199">メッセージ</span><span class="sxs-lookup"><span data-stu-id="ff680-199">message</span></span>  
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-200">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-200">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-tracewarn"></a><span data-ttu-id="ff680-201">メソッド traceWarn</span><span class="sxs-lookup"><span data-stu-id="ff680-201">Method traceWarn</span></span>
+
+    public void traceWarn(str category, str message)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-202">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-202">Parameters</span></span>
+
+<span data-ttu-id="ff680-203">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="ff680-203">category</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-204">メッセージ</span><span class="sxs-lookup"><span data-stu-id="ff680-204">message</span></span>  
+
+### <a name="method-new"></a><span data-ttu-id="ff680-205">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-205">Method new</span></span>
+
+<span data-ttu-id="ff680-206">IISContextObject クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-206">Initializes a new instance of the IISContextObject class.</span></span>
+
+    public void new()
+
+## <a name="class-iispostedfile"></a><span data-ttu-id="ff680-207">クラス IISPostedFile</span><span class="sxs-lookup"><span data-stu-id="ff680-207">Class IISPostedFile</span></span>
+    class IISPostedFile extends Object
+
+### <a name="remarks"></a><span data-ttu-id="ff680-208">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-208">Remarks</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-209">例</span><span class="sxs-lookup"><span data-stu-id="ff680-209">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-210">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-210">Methods</span></span>
+
+| <span data-ttu-id="ff680-211">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-211">Method</span></span>                                 | <span data-ttu-id="ff680-212">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-212">Description</span></span>                                            |
+|----------------------------------------|--------------------------------------------------------|
+| <span data-ttu-id="ff680-213">public int contentLength()</span><span class="sxs-lookup"><span data-stu-id="ff680-213">public int contentLength()</span></span>             |                                                        |
+| <span data-ttu-id="ff680-214">public str contentType()</span><span class="sxs-lookup"><span data-stu-id="ff680-214">public str contentType()</span></span>               |                                                        |
+| <span data-ttu-id="ff680-215">public str fileName()</span><span class="sxs-lookup"><span data-stu-id="ff680-215">public str fileName()</span></span>                  |                                                        |
+| <span data-ttu-id="ff680-216">public container read(int countToRead)</span><span class="sxs-lookup"><span data-stu-id="ff680-216">public container read(int countToRead)</span></span> |                                                        |
+| <span data-ttu-id="ff680-217">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-217">public void finalize()</span></span>                 |                                                        |
+| <span data-ttu-id="ff680-218">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-218">public void new()</span></span>                      | <span data-ttu-id="ff680-219">IISPostedFile クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-219">Initializes a new instance of the IISPostedFile class.</span></span> |
+
+### <a name="method-contentlength"></a><span data-ttu-id="ff680-220">メソッド contentLength</span><span class="sxs-lookup"><span data-stu-id="ff680-220">Method contentLength</span></span>
+
+    public int contentLength()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-221">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-221">Return Value</span></span>
+
+### <a name="method-contenttype"></a><span data-ttu-id="ff680-222">メソッド contentType</span><span class="sxs-lookup"><span data-stu-id="ff680-222">Method contentType</span></span>
+
+    public str contentType()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-223">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-223">Return Value</span></span>
+
+### <a name="method-filename"></a><span data-ttu-id="ff680-224">メソッド fileName</span><span class="sxs-lookup"><span data-stu-id="ff680-224">Method fileName</span></span>
+
+    public str fileName()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-225">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-225">Return Value</span></span>
+
+### <a name="method-read"></a><span data-ttu-id="ff680-226">メソッド read</span><span class="sxs-lookup"><span data-stu-id="ff680-226">Method read</span></span>
+
+    public container read(int countToRead)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-227">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-227">Parameters</span></span>
+
+<span data-ttu-id="ff680-228">countToRead</span><span class="sxs-lookup"><span data-stu-id="ff680-228">countToRead</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-229">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-229">Return Value</span></span>
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-230">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-230">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-new"></a><span data-ttu-id="ff680-231">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-231">Method new</span></span>
+
+<span data-ttu-id="ff680-232">IISPostedFile クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-232">Initializes a new instance of the IISPostedFile class.</span></span>
+
+    public void new()
+
+## <a name="class-iisreadcookie"></a><span data-ttu-id="ff680-233">クラス IISReadCookie</span><span class="sxs-lookup"><span data-stu-id="ff680-233">Class IISReadCookie</span></span>
+    class IISReadCookie extends Object
+
+<span data-ttu-id="ff680-234">IISReadCookie クラスは、インターネット インフォメーション サービス (IIS) によって提供される ReadCookie オブジェクトをラップします。</span><span class="sxs-lookup"><span data-stu-id="ff680-234">The IISReadCookie class wraps the ReadCookie object that is offered by Internet Information Services (IIS).</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-235">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-235">Remarks</span></span>
+
+<span data-ttu-id="ff680-236">IISReadCookie クラスのメソッドと、IIS によって提供される ReadCookie オブジェクトのメソッドとの間には、1 対 1 の接続があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-236">There is a one-to-one connection between the methods of the IISReadCookie class and the methods of the ReadCookie object that is offered by IIS.</span></span> <span data-ttu-id="ff680-237">したがって、IISReadCookie クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-237">Therefore, for more information about the methods of the IISReadCookie class, see the Microsoft documentation for IIS.</span></span> <span data-ttu-id="ff680-238">IISReadCookie クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="ff680-238">Use of the IISReadCookie class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-239">例</span><span class="sxs-lookup"><span data-stu-id="ff680-239">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-240">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-240">Methods</span></span>
+
+| <span data-ttu-id="ff680-241">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-241">Method</span></span>                           | <span data-ttu-id="ff680-242">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-242">Description</span></span>                                     |
+|----------------------------------|-------------------------------------------------|
+| <span data-ttu-id="ff680-243">public int count()</span><span class="sxs-lookup"><span data-stu-id="ff680-243">public int count()</span></span>               |                                                 |
+| <span data-ttu-id="ff680-244">public COMEnum2Variant getEnum()</span><span class="sxs-lookup"><span data-stu-id="ff680-244">public COMEnum2Variant getEnum()</span></span> |                                                 |
+| <span data-ttu-id="ff680-245">public boolean hasKeys()</span><span class="sxs-lookup"><span data-stu-id="ff680-245">public boolean hasKeys()</span></span>         |                                                 |
+| <span data-ttu-id="ff680-246">public ComInterface interface()</span><span class="sxs-lookup"><span data-stu-id="ff680-246">public ComInterface interface()</span></span>  |                                                 |
+| <span data-ttu-id="ff680-247">public str item(\[str item\])</span><span class="sxs-lookup"><span data-stu-id="ff680-247">public str item(\[str item\])</span></span>    |                                                 |
+| <span data-ttu-id="ff680-248">public str key(str key)</span><span class="sxs-lookup"><span data-stu-id="ff680-248">public str key(str key)</span></span>          |                                                 |
+| <span data-ttu-id="ff680-249">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-249">public void finalize()</span></span>           |                                                 |
+| <span data-ttu-id="ff680-250">public void new(COM readCookie)</span><span class="sxs-lookup"><span data-stu-id="ff680-250">public void new(COM readCookie)</span></span>  | <span data-ttu-id="ff680-251">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-251">Initializes a new instance of the Object class.</span></span> |
+
+### <a name="method-count"></a><span data-ttu-id="ff680-252">メソッド count</span><span class="sxs-lookup"><span data-stu-id="ff680-252">Method count</span></span>
+
+    public int count()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-253">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-253">Return Value</span></span>
+
+### <a name="method-getenum"></a><span data-ttu-id="ff680-254">メソッド getEnum</span><span class="sxs-lookup"><span data-stu-id="ff680-254">Method getEnum</span></span>
+
+    public COMEnum2Variant getEnum()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-255">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-255">Return Value</span></span>
+
+### <a name="method-haskeys"></a><span data-ttu-id="ff680-256">メソッド hasKeys</span><span class="sxs-lookup"><span data-stu-id="ff680-256">Method hasKeys</span></span>
+
+    public boolean hasKeys()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-257">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-257">Return Value</span></span>
+
+### <a name="method-interface"></a><span data-ttu-id="ff680-258">メソッド interface</span><span class="sxs-lookup"><span data-stu-id="ff680-258">Method interface</span></span>
+
+    public ComInterface interface()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-259">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-259">Return Value</span></span>
+
+### <a name="method-item"></a><span data-ttu-id="ff680-260">メソッド item</span><span class="sxs-lookup"><span data-stu-id="ff680-260">Method item</span></span>
+
+    public str item([str item])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-261">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-261">Parameters</span></span>
+
+<span data-ttu-id="ff680-262">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-262">item</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-263">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-263">Return Value</span></span>
+
+### <a name="method-key"></a><span data-ttu-id="ff680-264">メソッド key</span><span class="sxs-lookup"><span data-stu-id="ff680-264">Method key</span></span>
+
+    public str key(str key)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-265">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-265">Parameters</span></span>
+
+<span data-ttu-id="ff680-266">キー</span><span class="sxs-lookup"><span data-stu-id="ff680-266">key</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-267">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-267">Return Value</span></span>
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-268">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-268">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-new"></a><span data-ttu-id="ff680-269">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-269">Method new</span></span>
+
+<span data-ttu-id="ff680-270">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-270">Initializes a new instance of the Object class.</span></span>
+
+    public void new(COM readCookie)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-271">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-271">Parameters</span></span>
+
+<span data-ttu-id="ff680-272">readCookie</span><span class="sxs-lookup"><span data-stu-id="ff680-272">readCookie</span></span>  
+
+## <a name="class-iisrequest"></a><span data-ttu-id="ff680-273">クラス IISRequest</span><span class="sxs-lookup"><span data-stu-id="ff680-273">Class IISRequest</span></span>
+    class IISRequest extends Object
+
+<span data-ttu-id="ff680-274">IISRequest クラスは、インターネット インフォメーション サービス (IIS) によって提供される Request オブジェクトをラップします。</span><span class="sxs-lookup"><span data-stu-id="ff680-274">The IISRequest class wraps the Request object that is offered by Internet Information Services (IIS).</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-275">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-275">Remarks</span></span>
+
+<span data-ttu-id="ff680-276">IISRequest クラスのメソッドと、IIS によって提供される Request オブジェクトのメソッドとの間には、1 対 1 の接続があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-276">There is a one-to-one connection between the methods of the IISRequest class and the methods of the Request object that is offered by IIS.</span></span> <span data-ttu-id="ff680-277">したがって、IISRequest クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-277">Therefore, for more information about the methods of the IISRequest class, see the Microsoft documentation for IIS.</span></span> <span data-ttu-id="ff680-278">IISRequest クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="ff680-278">Use of the IISRequest class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-279">例</span><span class="sxs-lookup"><span data-stu-id="ff680-279">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-280">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-280">Methods</span></span>
+
+| <span data-ttu-id="ff680-281">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-281">Method</span></span>                                               | <span data-ttu-id="ff680-282">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-282">Description</span></span>                                         |
+|------------------------------------------------------|-----------------------------------------------------|
+| <span data-ttu-id="ff680-283">public COMVariant binaryRead(COMVariant countToRead)</span><span class="sxs-lookup"><span data-stu-id="ff680-283">public COMVariant binaryRead(COMVariant countToRead)</span></span> |                                                     |
+| <span data-ttu-id="ff680-284">public IISRequestDictionary clientCertificate()</span><span class="sxs-lookup"><span data-stu-id="ff680-284">public IISRequestDictionary clientCertificate()</span></span>      |                                                     |
+| <span data-ttu-id="ff680-285">public IISRequestDictionary cookies()</span><span class="sxs-lookup"><span data-stu-id="ff680-285">public IISRequestDictionary cookies()</span></span>                |                                                     |
+| <span data-ttu-id="ff680-286">public IISPostedFile file(COMVariant index)</span><span class="sxs-lookup"><span data-stu-id="ff680-286">public IISPostedFile file(COMVariant index)</span></span>          |                                                     |
+| <span data-ttu-id="ff680-287">public int fileCount()</span><span class="sxs-lookup"><span data-stu-id="ff680-287">public int fileCount()</span></span>                               |                                                     |
+| <span data-ttu-id="ff680-288">public IISRequestDictionary form()</span><span class="sxs-lookup"><span data-stu-id="ff680-288">public IISRequestDictionary form()</span></span>                   |                                                     |
+| <span data-ttu-id="ff680-289">public ComInterface interface()</span><span class="sxs-lookup"><span data-stu-id="ff680-289">public ComInterface interface()</span></span>                      |                                                     |
+| <span data-ttu-id="ff680-290">public str item(str item)</span><span class="sxs-lookup"><span data-stu-id="ff680-290">public str item(str item)</span></span>                            |                                                     |
+| <span data-ttu-id="ff680-291">public IISRequestDictionary queryString()</span><span class="sxs-lookup"><span data-stu-id="ff680-291">public IISRequestDictionary queryString()</span></span>            |                                                     |
+| <span data-ttu-id="ff680-292">public IISRequestDictionary serverVariables()</span><span class="sxs-lookup"><span data-stu-id="ff680-292">public IISRequestDictionary serverVariables()</span></span>        |                                                     |
+| <span data-ttu-id="ff680-293">public int totalBytes()</span><span class="sxs-lookup"><span data-stu-id="ff680-293">public int totalBytes()</span></span>                              |                                                     |
+| <span data-ttu-id="ff680-294">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-294">public void finalize()</span></span>                               |                                                     |
+| <span data-ttu-id="ff680-295">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-295">public void new()</span></span>                                    | <span data-ttu-id="ff680-296">IISRequest クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-296">Initializes a new instance of the IISRequest class.</span></span> |
+
+### <a name="method-binaryread"></a><span data-ttu-id="ff680-297">メソッド binaryRead</span><span class="sxs-lookup"><span data-stu-id="ff680-297">Method binaryRead</span></span>
+
+    public COMVariant binaryRead(COMVariant countToRead)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-298">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-298">Parameters</span></span>
+
+<span data-ttu-id="ff680-299">countToRead</span><span class="sxs-lookup"><span data-stu-id="ff680-299">countToRead</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-300">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-300">Return Value</span></span>
+
+### <a name="method-clientcertificate"></a><span data-ttu-id="ff680-301">メソッド clientCertificate</span><span class="sxs-lookup"><span data-stu-id="ff680-301">Method clientCertificate</span></span>
+
+    public IISRequestDictionary clientCertificate()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-302">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-302">Return Value</span></span>
+
+### <a name="method-cookies"></a><span data-ttu-id="ff680-303">メソッド cookies</span><span class="sxs-lookup"><span data-stu-id="ff680-303">Method cookies</span></span>
+
+    public IISRequestDictionary cookies()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-304">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-304">Return Value</span></span>
+
+### <a name="method-file"></a><span data-ttu-id="ff680-305">メソッド file</span><span class="sxs-lookup"><span data-stu-id="ff680-305">Method file</span></span>
+
+    public IISPostedFile file(COMVariant index)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-306">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-306">Parameters</span></span>
+
+<span data-ttu-id="ff680-307">指数</span><span class="sxs-lookup"><span data-stu-id="ff680-307">index</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-308">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-308">Return Value</span></span>
+
+### <a name="method-filecount"></a><span data-ttu-id="ff680-309">メソッド fileCount</span><span class="sxs-lookup"><span data-stu-id="ff680-309">Method fileCount</span></span>
+
+    public int fileCount()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-310">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-310">Return Value</span></span>
+
+### <a name="method-form"></a><span data-ttu-id="ff680-311">メソッド form</span><span class="sxs-lookup"><span data-stu-id="ff680-311">Method form</span></span>
+
+    public IISRequestDictionary form()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-312">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-312">Return Value</span></span>
+
+### <a name="method-interface"></a><span data-ttu-id="ff680-313">メソッド interface</span><span class="sxs-lookup"><span data-stu-id="ff680-313">Method interface</span></span>
+
+    public ComInterface interface()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-314">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-314">Return Value</span></span>
+
+### <a name="method-item"></a><span data-ttu-id="ff680-315">メソッド item</span><span class="sxs-lookup"><span data-stu-id="ff680-315">Method item</span></span>
+
+    public str item(str item)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-316">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-316">Parameters</span></span>
+
+<span data-ttu-id="ff680-317">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-317">item</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-318">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-318">Return Value</span></span>
+
+### <a name="method-querystring"></a><span data-ttu-id="ff680-319">メソッド queryString</span><span class="sxs-lookup"><span data-stu-id="ff680-319">Method queryString</span></span>
+
+    public IISRequestDictionary queryString()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-320">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-320">Return Value</span></span>
+
+### <a name="method-servervariables"></a><span data-ttu-id="ff680-321">メソッド serverVariables</span><span class="sxs-lookup"><span data-stu-id="ff680-321">Method serverVariables</span></span>
+
+    public IISRequestDictionary serverVariables()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-322">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-322">Return Value</span></span>
+
+### <a name="method-totalbytes"></a><span data-ttu-id="ff680-323">メソッド totalBytes</span><span class="sxs-lookup"><span data-stu-id="ff680-323">Method totalBytes</span></span>
+
+    public int totalBytes()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-324">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-324">Return Value</span></span>
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-325">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-325">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-new"></a><span data-ttu-id="ff680-326">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-326">Method new</span></span>
+
+<span data-ttu-id="ff680-327">IISRequest クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-327">Initializes a new instance of the IISRequest class.</span></span>
+
+    public void new()
+
+## <a name="class-iisrequestdictionary"></a><span data-ttu-id="ff680-328">クラス IISRequestDictionary</span><span class="sxs-lookup"><span data-stu-id="ff680-328">Class IISRequestDictionary</span></span>
+    class IISRequestDictionary extends Object
+
+<span data-ttu-id="ff680-329">IISRequestDictionary クラスは、インターネット インフォメーション サービス (IIS) によって提供される RequestDictionary オブジェクトをラップします。</span><span class="sxs-lookup"><span data-stu-id="ff680-329">The IISRequestDictionary class wraps the RequestDictionary object that is offered by Internet Information Services (IIS).</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-330">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-330">Remarks</span></span>
+
+<span data-ttu-id="ff680-331">IISRequestDictionary クラスのメソッドと、IIS によって提供される RequestDictionary オブジェクトのメソッドとの間には、1 対 1 のリレーションシップがあります。</span><span class="sxs-lookup"><span data-stu-id="ff680-331">There is a one-to-one relationship between the methods of the IISRequestDictionary class and the methods of the RequestDictionary object that is offered by IIS.</span></span> <span data-ttu-id="ff680-332">したがって、IISRequestDictionary クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-332">Therefore, for more information about the methods of the IISRequestDictionary class, see the Microsoft documentation for IIS.</span></span> <span data-ttu-id="ff680-333">IISRequestDictionary クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="ff680-333">Use of the IISRequestDictionary class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-334">例</span><span class="sxs-lookup"><span data-stu-id="ff680-334">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-335">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-335">Methods</span></span>
+
+| <span data-ttu-id="ff680-336">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-336">Method</span></span>                                              | <span data-ttu-id="ff680-337">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-337">Description</span></span>                                     |
+|-----------------------------------------------------|-------------------------------------------------|
+| <span data-ttu-id="ff680-338">public int count()</span><span class="sxs-lookup"><span data-stu-id="ff680-338">public int count()</span></span>                                  |                                                 |
+| <span data-ttu-id="ff680-339">public COMEnum2Variant getEnum()</span><span class="sxs-lookup"><span data-stu-id="ff680-339">public COMEnum2Variant getEnum()</span></span>                    |                                                 |
+| <span data-ttu-id="ff680-340">public ComInterface interface()</span><span class="sxs-lookup"><span data-stu-id="ff680-340">public ComInterface interface()</span></span>                     |                                                 |
+| <span data-ttu-id="ff680-341">public COMVariant item(COMVariant item)</span><span class="sxs-lookup"><span data-stu-id="ff680-341">public COMVariant item(COMVariant item)</span></span>             |                                                 |
+| <span data-ttu-id="ff680-342">public IISReadCookie itemReadCookie(\[str item\])</span><span class="sxs-lookup"><span data-stu-id="ff680-342">public IISReadCookie itemReadCookie(\[str item\])</span></span>   |                                                 |
+| <span data-ttu-id="ff680-343">public IISStringList itemStringList(\[str item\])</span><span class="sxs-lookup"><span data-stu-id="ff680-343">public IISStringList itemStringList(\[str item\])</span></span>   |                                                 |
+| <span data-ttu-id="ff680-344">public str itemTxt(str item)</span><span class="sxs-lookup"><span data-stu-id="ff680-344">public str itemTxt(str item)</span></span>                        |                                                 |
+| <span data-ttu-id="ff680-345">public IISWriteCookie itemWriteCookie(\[str item\])</span><span class="sxs-lookup"><span data-stu-id="ff680-345">public IISWriteCookie itemWriteCookie(\[str item\])</span></span> |                                                 |
+| <span data-ttu-id="ff680-346">public str key(str key)</span><span class="sxs-lookup"><span data-stu-id="ff680-346">public str key(str key)</span></span>                             |                                                 |
+| <span data-ttu-id="ff680-347">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-347">public void finalize()</span></span>                              |                                                 |
+| <span data-ttu-id="ff680-348">public void new(COM requestDictionary)</span><span class="sxs-lookup"><span data-stu-id="ff680-348">public void new(COM requestDictionary)</span></span>              | <span data-ttu-id="ff680-349">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-349">Initializes a new instance of the Object class.</span></span> |
+
+### <a name="method-count"></a><span data-ttu-id="ff680-350">メソッド count</span><span class="sxs-lookup"><span data-stu-id="ff680-350">Method count</span></span>
+
+    public int count()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-351">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-351">Return Value</span></span>
+
+### <a name="method-getenum"></a><span data-ttu-id="ff680-352">メソッド getEnum</span><span class="sxs-lookup"><span data-stu-id="ff680-352">Method getEnum</span></span>
+
+    public COMEnum2Variant getEnum()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-353">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-353">Return Value</span></span>
+
+### <a name="method-interface"></a><span data-ttu-id="ff680-354">メソッド interface</span><span class="sxs-lookup"><span data-stu-id="ff680-354">Method interface</span></span>
+
+    public ComInterface interface()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-355">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-355">Return Value</span></span>
+
+### <a name="method-item"></a><span data-ttu-id="ff680-356">メソッド item</span><span class="sxs-lookup"><span data-stu-id="ff680-356">Method item</span></span>
+
+    public COMVariant item(COMVariant item)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-357">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-357">Parameters</span></span>
+
+<span data-ttu-id="ff680-358">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-358">item</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-359">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-359">Return Value</span></span>
+
+### <a name="method-itemreadcookie"></a><span data-ttu-id="ff680-360">メソッド itemReadCookie</span><span class="sxs-lookup"><span data-stu-id="ff680-360">Method itemReadCookie</span></span>
+
+    public IISReadCookie itemReadCookie([str item])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-361">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-361">Parameters</span></span>
+
+<span data-ttu-id="ff680-362">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-362">item</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-363">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-363">Return Value</span></span>
+
+### <a name="method-itemstringlist"></a><span data-ttu-id="ff680-364">メソッド itemStringList</span><span class="sxs-lookup"><span data-stu-id="ff680-364">Method itemStringList</span></span>
+
+    public IISStringList itemStringList([str item])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-365">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-365">Parameters</span></span>
+
+<span data-ttu-id="ff680-366">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-366">item</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-367">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-367">Return Value</span></span>
+
+### <a name="method-itemtxt"></a><span data-ttu-id="ff680-368">メソッド itemTxt</span><span class="sxs-lookup"><span data-stu-id="ff680-368">Method itemTxt</span></span>
+
+    public str itemTxt(str item)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-369">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-369">Parameters</span></span>
+
+<span data-ttu-id="ff680-370">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-370">item</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-371">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-371">Return Value</span></span>
+
+### <a name="method-itemwritecookie"></a><span data-ttu-id="ff680-372">メソッド itemWriteCookie</span><span class="sxs-lookup"><span data-stu-id="ff680-372">Method itemWriteCookie</span></span>
+
+    public IISWriteCookie itemWriteCookie([str item])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-373">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-373">Parameters</span></span>
+
+<span data-ttu-id="ff680-374">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-374">item</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-375">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-375">Return Value</span></span>
+
+### <a name="method-key"></a><span data-ttu-id="ff680-376">メソッド key</span><span class="sxs-lookup"><span data-stu-id="ff680-376">Method key</span></span>
+
+    public str key(str key)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-377">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-377">Parameters</span></span>
+
+<span data-ttu-id="ff680-378">キー</span><span class="sxs-lookup"><span data-stu-id="ff680-378">key</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-379">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-379">Return Value</span></span>
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-380">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-380">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-new"></a><span data-ttu-id="ff680-381">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-381">Method new</span></span>
+
+<span data-ttu-id="ff680-382">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-382">Initializes a new instance of the Object class.</span></span>
+
+    public void new(COM requestDictionary)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-383">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-383">Parameters</span></span>
+
+<span data-ttu-id="ff680-384">requestDictionary</span><span class="sxs-lookup"><span data-stu-id="ff680-384">requestDictionary</span></span>  
+
+## <a name="class-iisresponse"></a><span data-ttu-id="ff680-385">クラス IISResponse</span><span class="sxs-lookup"><span data-stu-id="ff680-385">Class IISResponse</span></span>
+    class IISResponse extends Object
+
+<span data-ttu-id="ff680-386">IISResponse クラスは、インターネット インフォメーション サービス (IIS) によって提供される Response オブジェクトをラップします。</span><span class="sxs-lookup"><span data-stu-id="ff680-386">The IISResponse class wraps the Response object that is offered by Internet Information Services (IIS).</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-387">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-387">Remarks</span></span>
+
+<span data-ttu-id="ff680-388">IISResponse クラスのメソッドと、IIS によって提供される Response オブジェクトのメソッドとの間には、1 対 1 のリレーションシップがあります。</span><span class="sxs-lookup"><span data-stu-id="ff680-388">There is a one-to-one relationship between the methods of the IISResponse class and the methods of the Response object that is offered by IIS.</span></span> <span data-ttu-id="ff680-389">したがって、IISResponse クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-389">Therefore, for more information about the methods of the IISResponse class, see the Microsoft documentation for IIS.</span></span> <span data-ttu-id="ff680-390">IISResponse クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="ff680-390">Use of the IISResponse class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-391">例</span><span class="sxs-lookup"><span data-stu-id="ff680-391">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-392">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-392">Methods</span></span>
+
+| <span data-ttu-id="ff680-393">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-393">Method</span></span>                                                    | <span data-ttu-id="ff680-394">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-394">Description</span></span>                                          |
+|-----------------------------------------------------------|------------------------------------------------------|
+| <span data-ttu-id="ff680-395">public boolean buffer(\[boolean isBuffering\])</span><span class="sxs-lookup"><span data-stu-id="ff680-395">public boolean buffer(\[boolean isBuffering\])</span></span>            |                                                      |
+| <span data-ttu-id="ff680-396">public str cacheControl(\[str cacheControl\])</span><span class="sxs-lookup"><span data-stu-id="ff680-396">public str cacheControl(\[str cacheControl\])</span></span>             |                                                      |
+| <span data-ttu-id="ff680-397">public boolean cacheWrite(\[boolean cache\])</span><span class="sxs-lookup"><span data-stu-id="ff680-397">public boolean cacheWrite(\[boolean cache\])</span></span>              |                                                      |
+| <span data-ttu-id="ff680-398">public str charSet(\[str charSet\])</span><span class="sxs-lookup"><span data-stu-id="ff680-398">public str charSet(\[str charSet\])</span></span>                       |                                                      |
+| <span data-ttu-id="ff680-399">public str contentType(\[str contentType\])</span><span class="sxs-lookup"><span data-stu-id="ff680-399">public str contentType(\[str contentType\])</span></span>               |                                                      |
+| <span data-ttu-id="ff680-400">public IISRequestDictionary cookies()</span><span class="sxs-lookup"><span data-stu-id="ff680-400">public IISRequestDictionary cookies()</span></span>                     |                                                      |
+| <span data-ttu-id="ff680-401">public int expires(\[int expiresMinutes\])</span><span class="sxs-lookup"><span data-stu-id="ff680-401">public int expires(\[int expiresMinutes\])</span></span>                |                                                      |
+| <span data-ttu-id="ff680-402">public COMVariant expiresAbsolute(\[COMVariant expires\])</span><span class="sxs-lookup"><span data-stu-id="ff680-402">public COMVariant expiresAbsolute(\[COMVariant expires\])</span></span> |                                                      |
+| <span data-ttu-id="ff680-403">public ComInterface interface()</span><span class="sxs-lookup"><span data-stu-id="ff680-403">public ComInterface interface()</span></span>                           |                                                      |
+| <span data-ttu-id="ff680-404">public boolean isClientConnected()</span><span class="sxs-lookup"><span data-stu-id="ff680-404">public boolean isClientConnected()</span></span>                        |                                                      |
+| <span data-ttu-id="ff680-405">public str status(\[str status\])</span><span class="sxs-lookup"><span data-stu-id="ff680-405">public str status(\[str status\])</span></span>                         | <span data-ttu-id="ff680-406">オブジェクトの状態を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-406">Gets or sets the status of an object.</span></span>                |
+| <span data-ttu-id="ff680-407">public void addHeader(str headerName, str headerValue)</span><span class="sxs-lookup"><span data-stu-id="ff680-407">public void addHeader(str headerName, str headerValue)</span></span>    |                                                      |
+| <span data-ttu-id="ff680-408">public void writeTxt(str text)</span><span class="sxs-lookup"><span data-stu-id="ff680-408">public void writeTxt(str text)</span></span>                            |                                                      |
+| <span data-ttu-id="ff680-409">public void write(COMVariant text)</span><span class="sxs-lookup"><span data-stu-id="ff680-409">public void write(COMVariant text)</span></span>                        |                                                      |
+| <span data-ttu-id="ff680-410">public void clear()</span><span class="sxs-lookup"><span data-stu-id="ff680-410">public void clear()</span></span>                                       |                                                      |
+| <span data-ttu-id="ff680-411">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-411">public void finalize()</span></span>                                    |                                                      |
+| <span data-ttu-id="ff680-412">public void binaryWrite(COMVariant input)</span><span class="sxs-lookup"><span data-stu-id="ff680-412">public void binaryWrite(COMVariant input)</span></span>                 |                                                      |
+| <span data-ttu-id="ff680-413">public void appendToLog(str logEntry)</span><span class="sxs-lookup"><span data-stu-id="ff680-413">public void appendToLog(str logEntry)</span></span>                     |                                                      |
+| <span data-ttu-id="ff680-414">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-414">public void new()</span></span>                                         | <span data-ttu-id="ff680-415">IISResponse クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-415">Initializes a new instance of the IISResponse class.</span></span> |
+| <span data-ttu-id="ff680-416">public void redirect(str url)</span><span class="sxs-lookup"><span data-stu-id="ff680-416">public void redirect(str url)</span></span>                             |                                                      |
+| <span data-ttu-id="ff680-417">public void flush()</span><span class="sxs-lookup"><span data-stu-id="ff680-417">public void flush()</span></span>                                       |                                                      |
+| <span data-ttu-id="ff680-418">public void pics(str headerValue)</span><span class="sxs-lookup"><span data-stu-id="ff680-418">public void pics(str headerValue)</span></span>                         |                                                      |
+| <span data-ttu-id="ff680-419">public void end()</span><span class="sxs-lookup"><span data-stu-id="ff680-419">public void end()</span></span>                                         |                                                      |
+
+### <a name="method-buffer"></a><span data-ttu-id="ff680-420">メソッド buffer</span><span class="sxs-lookup"><span data-stu-id="ff680-420">Method buffer</span></span>
+
+    public boolean buffer([boolean isBuffering])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-421">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-421">Parameters</span></span>
+
+<span data-ttu-id="ff680-422">isBuffering</span><span class="sxs-lookup"><span data-stu-id="ff680-422">isBuffering</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-423">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-423">Return Value</span></span>
+
+### <a name="method-cachecontrol"></a><span data-ttu-id="ff680-424">メソッド cacheControl</span><span class="sxs-lookup"><span data-stu-id="ff680-424">Method cacheControl</span></span>
+
+    public str cacheControl([str cacheControl])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-425">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-425">Parameters</span></span>
+
+<span data-ttu-id="ff680-426">cacheControl</span><span class="sxs-lookup"><span data-stu-id="ff680-426">cacheControl</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-427">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-427">Return Value</span></span>
+
+### <a name="method-cachewrite"></a><span data-ttu-id="ff680-428">メソッド cacheWrite</span><span class="sxs-lookup"><span data-stu-id="ff680-428">Method cacheWrite</span></span>
+
+    public boolean cacheWrite([boolean cache])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-429">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-429">Parameters</span></span>
+
+<span data-ttu-id="ff680-430">cache</span><span class="sxs-lookup"><span data-stu-id="ff680-430">cache</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-431">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-431">Return Value</span></span>
+
+### <a name="method-charset"></a><span data-ttu-id="ff680-432">メソッド charSet</span><span class="sxs-lookup"><span data-stu-id="ff680-432">Method charSet</span></span>
+
+    public str charSet([str charSet])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-433">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-433">Parameters</span></span>
+
+<span data-ttu-id="ff680-434">charSet</span><span class="sxs-lookup"><span data-stu-id="ff680-434">charSet</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-435">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-435">Return Value</span></span>
+
+### <a name="method-contenttype"></a><span data-ttu-id="ff680-436">メソッド contentType</span><span class="sxs-lookup"><span data-stu-id="ff680-436">Method contentType</span></span>
+
+    public str contentType([str contentType])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-437">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-437">Parameters</span></span>
+
+<span data-ttu-id="ff680-438">contentType</span><span class="sxs-lookup"><span data-stu-id="ff680-438">contentType</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-439">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-439">Return Value</span></span>
+
+### <a name="method-cookies"></a><span data-ttu-id="ff680-440">メソッド cookies</span><span class="sxs-lookup"><span data-stu-id="ff680-440">Method cookies</span></span>
+
+    public IISRequestDictionary cookies()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-441">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-441">Return Value</span></span>
+
+### <a name="method-expires"></a><span data-ttu-id="ff680-442">メソッド expires</span><span class="sxs-lookup"><span data-stu-id="ff680-442">Method expires</span></span>
+
+    public int expires([int expiresMinutes])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-443">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-443">Parameters</span></span>
+
+<span data-ttu-id="ff680-444">expiresMinutes</span><span class="sxs-lookup"><span data-stu-id="ff680-444">expiresMinutes</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-445">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-445">Return Value</span></span>
+
+### <a name="method-expiresabsolute"></a><span data-ttu-id="ff680-446">メソッド expiresAbsolute</span><span class="sxs-lookup"><span data-stu-id="ff680-446">Method expiresAbsolute</span></span>
+
+    public COMVariant expiresAbsolute([COMVariant expires])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-447">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-447">Parameters</span></span>
+
+<span data-ttu-id="ff680-448">expires</span><span class="sxs-lookup"><span data-stu-id="ff680-448">expires</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-449">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-449">Return Value</span></span>
+
+### <a name="method-interface"></a><span data-ttu-id="ff680-450">メソッド interface</span><span class="sxs-lookup"><span data-stu-id="ff680-450">Method interface</span></span>
+
+    public ComInterface interface()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-451">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-451">Return Value</span></span>
+
+### <a name="method-isclientconnected"></a><span data-ttu-id="ff680-452">メソッド isClientConnected</span><span class="sxs-lookup"><span data-stu-id="ff680-452">Method isClientConnected</span></span>
+
+    public boolean isClientConnected()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-453">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-453">Return Value</span></span>
+
+### <a name="method-status"></a><span data-ttu-id="ff680-454">メソッド status</span><span class="sxs-lookup"><span data-stu-id="ff680-454">Method status</span></span>
+
+<span data-ttu-id="ff680-455">オブジェクトの状態を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-455">Gets or sets the status of an object.</span></span>
+
+    public str status([str status])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-456">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-456">Parameters</span></span>
+
+<span data-ttu-id="ff680-457">ステータス</span><span class="sxs-lookup"><span data-stu-id="ff680-457">status</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-458">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-458">Return Value</span></span>
+
+<span data-ttu-id="ff680-459">オブジェクトのステータスの現在の値。</span><span class="sxs-lookup"><span data-stu-id="ff680-459">The current value of the status of the object.</span></span>
+
+### <a name="method-addheader"></a><span data-ttu-id="ff680-460">メソッド addHeader</span><span class="sxs-lookup"><span data-stu-id="ff680-460">Method addHeader</span></span>
+
+    public void addHeader(str headerName, str headerValue)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-461">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-461">Parameters</span></span>
+
+<span data-ttu-id="ff680-462">headerName</span><span class="sxs-lookup"><span data-stu-id="ff680-462">headerName</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-463">headerValue</span><span class="sxs-lookup"><span data-stu-id="ff680-463">headerValue</span></span>  
+
+### <a name="method-writetxt"></a><span data-ttu-id="ff680-464">メソッド writeTxt</span><span class="sxs-lookup"><span data-stu-id="ff680-464">Method writeTxt</span></span>
+
+    public void writeTxt(str text)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-465">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-465">Parameters</span></span>
+
+<span data-ttu-id="ff680-466">テキスト</span><span class="sxs-lookup"><span data-stu-id="ff680-466">text</span></span>  
+
+### <a name="method-write"></a><span data-ttu-id="ff680-467">メソッド write</span><span class="sxs-lookup"><span data-stu-id="ff680-467">Method write</span></span>
+
+    public void write(COMVariant text)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-468">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-468">Parameters</span></span>
+
+<span data-ttu-id="ff680-469">テキスト</span><span class="sxs-lookup"><span data-stu-id="ff680-469">text</span></span>  
+
+### <a name="method-clear"></a><span data-ttu-id="ff680-470">メソッド clear</span><span class="sxs-lookup"><span data-stu-id="ff680-470">Method clear</span></span>
+
+    public void clear()
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-471">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-471">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-binarywrite"></a><span data-ttu-id="ff680-472">メソッド binaryWrite</span><span class="sxs-lookup"><span data-stu-id="ff680-472">Method binaryWrite</span></span>
+
+    public void binaryWrite(COMVariant input)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-473">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-473">Parameters</span></span>
+
+<span data-ttu-id="ff680-474">input</span><span class="sxs-lookup"><span data-stu-id="ff680-474">input</span></span>  
+
+### <a name="method-appendtolog"></a><span data-ttu-id="ff680-475">メソッド appendToLog</span><span class="sxs-lookup"><span data-stu-id="ff680-475">Method appendToLog</span></span>
+
+    public void appendToLog(str logEntry)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-476">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-476">Parameters</span></span>
+
+<span data-ttu-id="ff680-477">logEntry</span><span class="sxs-lookup"><span data-stu-id="ff680-477">logEntry</span></span>  
+
+### <a name="method-new"></a><span data-ttu-id="ff680-478">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-478">Method new</span></span>
+
+<span data-ttu-id="ff680-479">IISResponse クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-479">Initializes a new instance of the IISResponse class.</span></span>
+
+    public void new()
+
+### <a name="method-redirect"></a><span data-ttu-id="ff680-480">メソッド redirect</span><span class="sxs-lookup"><span data-stu-id="ff680-480">Method redirect</span></span>
+
+    public void redirect(str url)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-481">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-481">Parameters</span></span>
+
+<span data-ttu-id="ff680-482">URL</span><span class="sxs-lookup"><span data-stu-id="ff680-482">url</span></span>  
+
+### <a name="method-flush"></a><span data-ttu-id="ff680-483">メソッド flush</span><span class="sxs-lookup"><span data-stu-id="ff680-483">Method flush</span></span>
+
+    public void flush()
+
+### <a name="method-pics"></a><span data-ttu-id="ff680-484">メソッド pics</span><span class="sxs-lookup"><span data-stu-id="ff680-484">Method pics</span></span>
+
+    public void pics(str headerValue)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-485">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-485">Parameters</span></span>
+
+<span data-ttu-id="ff680-486">headerValue</span><span class="sxs-lookup"><span data-stu-id="ff680-486">headerValue</span></span>  
+
+### <a name="method-end"></a><span data-ttu-id="ff680-487">メソッド end</span><span class="sxs-lookup"><span data-stu-id="ff680-487">Method end</span></span>
+
+    public void end()
+
+## <a name="class-iisserver"></a><span data-ttu-id="ff680-488">クラス IISServer</span><span class="sxs-lookup"><span data-stu-id="ff680-488">Class IISServer</span></span>
+    class IISServer extends Object
+
+<span data-ttu-id="ff680-489">IISServer クラスは、インターネット インフォメーション サービス (IIS) によって提供される Server オブジェクトをラップします。</span><span class="sxs-lookup"><span data-stu-id="ff680-489">The IISServer class wraps the Server object that is offered by Internet Information Services (IIS).</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-490">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-490">Remarks</span></span>
+
+<span data-ttu-id="ff680-491">IISServer クラスのメソッドと、IIS によって提供される Server オブジェクトのメソッドとの間には、1 対 1 の接続があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-491">There is a one-to-one connection between the methods of the IISServer class and the methods of the Server object that is offered by IIS.</span></span> <span data-ttu-id="ff680-492">したがって、IISServer クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-492">Therefore, for more information about the methods of the IISServer class, see the Microsoft documentation for IIS.</span></span> <span data-ttu-id="ff680-493">IISServer クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="ff680-493">Use of the IISServer class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-494">例</span><span class="sxs-lookup"><span data-stu-id="ff680-494">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-495">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-495">Methods</span></span>
+
+| <span data-ttu-id="ff680-496">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-496">Method</span></span>                                           | <span data-ttu-id="ff680-497">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-497">Description</span></span>                                        |
+|--------------------------------------------------|----------------------------------------------------|
+| <span data-ttu-id="ff680-498">public COM createObject(str progID)</span><span class="sxs-lookup"><span data-stu-id="ff680-498">public COM createObject(str progID)</span></span>              |                                                    |
+| <span data-ttu-id="ff680-499">public str htmlEncode(str txt)</span><span class="sxs-lookup"><span data-stu-id="ff680-499">public str htmlEncode(str txt)</span></span>                   |                                                    |
+| <span data-ttu-id="ff680-500">public ComInterface interface()</span><span class="sxs-lookup"><span data-stu-id="ff680-500">public ComInterface interface()</span></span>                  |                                                    |
+| <span data-ttu-id="ff680-501">public str mapPath(str logicalPath)</span><span class="sxs-lookup"><span data-stu-id="ff680-501">public str mapPath(str logicalPath)</span></span>              |                                                    |
+| <span data-ttu-id="ff680-502">public int scriptTimeout(\[int timeoutSeconds\])</span><span class="sxs-lookup"><span data-stu-id="ff680-502">public int scriptTimeout(\[int timeoutSeconds\])</span></span> |                                                    |
+| <span data-ttu-id="ff680-503">public str urlEncode(str txt)</span><span class="sxs-lookup"><span data-stu-id="ff680-503">public str urlEncode(str txt)</span></span>                    |                                                    |
+| <span data-ttu-id="ff680-504">public str urlPathEncode(str txt)</span><span class="sxs-lookup"><span data-stu-id="ff680-504">public str urlPathEncode(str txt)</span></span>                |                                                    |
+| <span data-ttu-id="ff680-505">public void execute(str logicalPath)</span><span class="sxs-lookup"><span data-stu-id="ff680-505">public void execute(str logicalPath)</span></span>             |                                                    |
+| <span data-ttu-id="ff680-506">public void transfer(str logicalPath)</span><span class="sxs-lookup"><span data-stu-id="ff680-506">public void transfer(str logicalPath)</span></span>            |                                                    |
+| <span data-ttu-id="ff680-507">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-507">public void new()</span></span>                                | <span data-ttu-id="ff680-508">IISServer クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-508">Initializes a new instance of the IISServer class.</span></span> |
+| <span data-ttu-id="ff680-509">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-509">public void finalize()</span></span>                           |                                                    |
+
+### <a name="method-createobject"></a><span data-ttu-id="ff680-510">メソッド createObject</span><span class="sxs-lookup"><span data-stu-id="ff680-510">Method createObject</span></span>
+
+    public COM createObject(str progID)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-511">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-511">Parameters</span></span>
+
+<span data-ttu-id="ff680-512">progID</span><span class="sxs-lookup"><span data-stu-id="ff680-512">progID</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-513">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-513">Return Value</span></span>
+
+### <a name="method-htmlencode"></a><span data-ttu-id="ff680-514">メソッド htmlEncode</span><span class="sxs-lookup"><span data-stu-id="ff680-514">Method htmlEncode</span></span>
+
+    public str htmlEncode(str txt)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-515">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-515">Parameters</span></span>
+
+<span data-ttu-id="ff680-516">txt</span><span class="sxs-lookup"><span data-stu-id="ff680-516">txt</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-517">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-517">Return Value</span></span>
+
+### <a name="method-interface"></a><span data-ttu-id="ff680-518">メソッド interface</span><span class="sxs-lookup"><span data-stu-id="ff680-518">Method interface</span></span>
+
+    public ComInterface interface()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-519">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-519">Return Value</span></span>
+
+### <a name="method-mappath"></a><span data-ttu-id="ff680-520">メソッド mapPath</span><span class="sxs-lookup"><span data-stu-id="ff680-520">Method mapPath</span></span>
+
+    public str mapPath(str logicalPath)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-521">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-521">Parameters</span></span>
+
+<span data-ttu-id="ff680-522">logicalPath</span><span class="sxs-lookup"><span data-stu-id="ff680-522">logicalPath</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-523">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-523">Return Value</span></span>
+
+### <a name="method-scripttimeout"></a><span data-ttu-id="ff680-524">メソッド scriptTimeout</span><span class="sxs-lookup"><span data-stu-id="ff680-524">Method scriptTimeout</span></span>
+
+    public int scriptTimeout([int timeoutSeconds])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-525">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-525">Parameters</span></span>
+
+<span data-ttu-id="ff680-526">timeoutSeconds</span><span class="sxs-lookup"><span data-stu-id="ff680-526">timeoutSeconds</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-527">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-527">Return Value</span></span>
+
+### <a name="method-urlencode"></a><span data-ttu-id="ff680-528">メソッド urlEncode</span><span class="sxs-lookup"><span data-stu-id="ff680-528">Method urlEncode</span></span>
+
+    public str urlEncode(str txt)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-529">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-529">Parameters</span></span>
+
+<span data-ttu-id="ff680-530">txt</span><span class="sxs-lookup"><span data-stu-id="ff680-530">txt</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-531">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-531">Return Value</span></span>
+
+### <a name="method-urlpathencode"></a><span data-ttu-id="ff680-532">メソッド urlPathEncode</span><span class="sxs-lookup"><span data-stu-id="ff680-532">Method urlPathEncode</span></span>
+
+    public str urlPathEncode(str txt)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-533">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-533">Parameters</span></span>
+
+<span data-ttu-id="ff680-534">txt</span><span class="sxs-lookup"><span data-stu-id="ff680-534">txt</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-535">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-535">Return Value</span></span>
+
+### <a name="method-execute"></a><span data-ttu-id="ff680-536">メソッド execute</span><span class="sxs-lookup"><span data-stu-id="ff680-536">Method execute</span></span>
+
+    public void execute(str logicalPath)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-537">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-537">Parameters</span></span>
+
+<span data-ttu-id="ff680-538">logicalPath</span><span class="sxs-lookup"><span data-stu-id="ff680-538">logicalPath</span></span>  
+
+### <a name="method-transfer"></a><span data-ttu-id="ff680-539">メソッド transfer</span><span class="sxs-lookup"><span data-stu-id="ff680-539">Method transfer</span></span>
+
+    public void transfer(str logicalPath)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-540">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-540">Parameters</span></span>
+
+<span data-ttu-id="ff680-541">logicalPath</span><span class="sxs-lookup"><span data-stu-id="ff680-541">logicalPath</span></span>  
+
+### <a name="method-new"></a><span data-ttu-id="ff680-542">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-542">Method new</span></span>
+
+<span data-ttu-id="ff680-543">IISServer クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-543">Initializes a new instance of the IISServer class.</span></span>
+
+    public void new()
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-544">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-544">Method finalize</span></span>
+
+    public void finalize()
+
+## <a name="class-iissessionobject"></a><span data-ttu-id="ff680-545">クラス IISSessionObject</span><span class="sxs-lookup"><span data-stu-id="ff680-545">Class IISSessionObject</span></span>
+    class IISSessionObject extends Object
+
+<span data-ttu-id="ff680-546">IISSessionObject クラスは、インターネット インフォメーション サービス (IIS) によって提供される Session オブジェクトをラップします。</span><span class="sxs-lookup"><span data-stu-id="ff680-546">The IISSessionObject class wraps the Session object that is offered by Internet Information Services (IIS).</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-547">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-547">Remarks</span></span>
+
+<span data-ttu-id="ff680-548">IISSessionObject クラスのメソッドと、IIS によって提供される Session オブジェクトのメソッドとの間には、1 対 1 の接続があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-548">There is a one-to-one connection between the methods of the IISSessionObject class and the methods of the Session object that is offered by IIS.</span></span> <span data-ttu-id="ff680-549">したがって、IISSessionObject クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-549">Therefore, for more information about the methods of the IISSessionObject class, see the Microsoft documentation for IIS.</span></span> <span data-ttu-id="ff680-550">IISSessionObject クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="ff680-550">Use of the IISSessionObject class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-551">例</span><span class="sxs-lookup"><span data-stu-id="ff680-551">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-552">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-552">Methods</span></span>
+
+| <span data-ttu-id="ff680-553">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-553">Method</span></span>                                                 | <span data-ttu-id="ff680-554">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-554">Description</span></span>                                               |
+|--------------------------------------------------------|-----------------------------------------------------------|
+| <span data-ttu-id="ff680-555">public int codePage(\[int codePage\])</span><span class="sxs-lookup"><span data-stu-id="ff680-555">public int codePage(\[int codePage\])</span></span>                  |                                                           |
+| <span data-ttu-id="ff680-556">public IISVariantDictionary contents()</span><span class="sxs-lookup"><span data-stu-id="ff680-556">public IISVariantDictionary contents()</span></span>                 |                                                           |
+| <span data-ttu-id="ff680-557">public str getSessionID()</span><span class="sxs-lookup"><span data-stu-id="ff680-557">public str getSessionID()</span></span>                              |                                                           |
+| <span data-ttu-id="ff680-558">public ComInterface interface()</span><span class="sxs-lookup"><span data-stu-id="ff680-558">public ComInterface interface()</span></span>                        |                                                           |
+| <span data-ttu-id="ff680-559">public int lcid(\[int lcid\])</span><span class="sxs-lookup"><span data-stu-id="ff680-559">public int lcid(\[int lcid\])</span></span>                          |                                                           |
+| <span data-ttu-id="ff680-560">public IISVariantDictionary staticObjects()</span><span class="sxs-lookup"><span data-stu-id="ff680-560">public IISVariantDictionary staticObjects()</span></span>            |                                                           |
+| <span data-ttu-id="ff680-561">public int timeout(\[int timeout\])</span><span class="sxs-lookup"><span data-stu-id="ff680-561">public int timeout(\[int timeout\])</span></span>                    |                                                           |
+| <span data-ttu-id="ff680-562">public COMVariant value(str value, \[COMVariant var\])</span><span class="sxs-lookup"><span data-stu-id="ff680-562">public COMVariant value(str value, \[COMVariant var\])</span></span> |                                                           |
+| <span data-ttu-id="ff680-563">public str valueTxt(str value, \[str var\])</span><span class="sxs-lookup"><span data-stu-id="ff680-563">public str valueTxt(str value, \[str var\])</span></span>            |                                                           |
+| <span data-ttu-id="ff680-564">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-564">public void new()</span></span>                                      | <span data-ttu-id="ff680-565">IISSessionObject クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-565">Initializes a new instance of the IISSessionObject class.</span></span> |
+| <span data-ttu-id="ff680-566">public void abandon()</span><span class="sxs-lookup"><span data-stu-id="ff680-566">public void abandon()</span></span>                                  |                                                           |
+| <span data-ttu-id="ff680-567">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-567">public void finalize()</span></span>                                 |                                                           |
+
+### <a name="method-codepage"></a><span data-ttu-id="ff680-568">メソッド codePage</span><span class="sxs-lookup"><span data-stu-id="ff680-568">Method codePage</span></span>
+
+    public int codePage([int codePage])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-569">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-569">Parameters</span></span>
+
+<span data-ttu-id="ff680-570">codePage</span><span class="sxs-lookup"><span data-stu-id="ff680-570">codePage</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-571">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-571">Return Value</span></span>
+
+### <a name="method-contents"></a><span data-ttu-id="ff680-572">メソッド contents</span><span class="sxs-lookup"><span data-stu-id="ff680-572">Method contents</span></span>
+
+    public IISVariantDictionary contents()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-573">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-573">Return Value</span></span>
+
+### <a name="method-getsessionid"></a><span data-ttu-id="ff680-574">メソッド getSessionID</span><span class="sxs-lookup"><span data-stu-id="ff680-574">Method getSessionID</span></span>
+
+    public str getSessionID()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-575">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-575">Return Value</span></span>
+
+### <a name="method-interface"></a><span data-ttu-id="ff680-576">メソッド interface</span><span class="sxs-lookup"><span data-stu-id="ff680-576">Method interface</span></span>
+
+    public ComInterface interface()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-577">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-577">Return Value</span></span>
+
+### <a name="method-lcid"></a><span data-ttu-id="ff680-578">メソッド lcid</span><span class="sxs-lookup"><span data-stu-id="ff680-578">Method lcid</span></span>
+
+    public int lcid([int lcid])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-579">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-579">Parameters</span></span>
+
+<span data-ttu-id="ff680-580">lcid</span><span class="sxs-lookup"><span data-stu-id="ff680-580">lcid</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-581">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-581">Return Value</span></span>
+
+### <a name="method-staticobjects"></a><span data-ttu-id="ff680-582">メソッド staticObjects</span><span class="sxs-lookup"><span data-stu-id="ff680-582">Method staticObjects</span></span>
+
+    public IISVariantDictionary staticObjects()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-583">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-583">Return Value</span></span>
+
+### <a name="method-timeout"></a><span data-ttu-id="ff680-584">メソッド timeout</span><span class="sxs-lookup"><span data-stu-id="ff680-584">Method timeout</span></span>
+
+    public int timeout([int timeout])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-585">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-585">Parameters</span></span>
+
+<span data-ttu-id="ff680-586">timeout</span><span class="sxs-lookup"><span data-stu-id="ff680-586">timeout</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-587">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-587">Return Value</span></span>
+
+### <a name="method-value"></a><span data-ttu-id="ff680-588">メソッド value</span><span class="sxs-lookup"><span data-stu-id="ff680-588">Method value</span></span>
+
+    public COMVariant value(str value, [COMVariant var])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-589">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-589">Parameters</span></span>
+
+<span data-ttu-id="ff680-590">値</span><span class="sxs-lookup"><span data-stu-id="ff680-590">value</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-591">var</span><span class="sxs-lookup"><span data-stu-id="ff680-591">var</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-592">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-592">Return Value</span></span>
+
+### <a name="method-valuetxt"></a><span data-ttu-id="ff680-593">メソッド valueTxt</span><span class="sxs-lookup"><span data-stu-id="ff680-593">Method valueTxt</span></span>
+
+    public str valueTxt(str value, [str var])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-594">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-594">Parameters</span></span>
+
+<span data-ttu-id="ff680-595">値</span><span class="sxs-lookup"><span data-stu-id="ff680-595">value</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-596">var</span><span class="sxs-lookup"><span data-stu-id="ff680-596">var</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-597">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-597">Return Value</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-598">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-598">Method new</span></span>
+
+<span data-ttu-id="ff680-599">IISSessionObject クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-599">Initializes a new instance of the IISSessionObject class.</span></span>
+
+    public void new()
+
+### <a name="method-abandon"></a><span data-ttu-id="ff680-600">メソッド abandon</span><span class="sxs-lookup"><span data-stu-id="ff680-600">Method abandon</span></span>
+
+    public void abandon()
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-601">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-601">Method finalize</span></span>
+
+    public void finalize()
+
+## <a name="class-iisstringlist"></a><span data-ttu-id="ff680-602">クラス IISStringList</span><span class="sxs-lookup"><span data-stu-id="ff680-602">Class IISStringList</span></span>
+    class IISStringList extends Object
+
+<span data-ttu-id="ff680-603">IISStringList クラスは、インターネット インフォメーション サービス (IIS) によって提供される StringList オブジェクトをラップします。</span><span class="sxs-lookup"><span data-stu-id="ff680-603">The IISStringList class wraps the StringList object that is offered by Internet Information Services (IIS).</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-604">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-604">Remarks</span></span>
+
+<span data-ttu-id="ff680-605">IISStringList クラスのメソッドと、IIS によって提供される StringList オブジェクトのメソッドとの間には、1 対 1 の接続があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-605">There is a one-to-one connection between the methods of the IISStringList class and the methods of the StringList object that is offered by IIS.</span></span> <span data-ttu-id="ff680-606">したがって、IISStringList クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-606">Therefore, for more information about the methods of the IISStringList class, see the Microsoft documentation for IIS.</span></span> <span data-ttu-id="ff680-607">IISStringList クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="ff680-607">Use of the IISStringList class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-608">例</span><span class="sxs-lookup"><span data-stu-id="ff680-608">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-609">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-609">Methods</span></span>
+
+| <span data-ttu-id="ff680-610">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-610">Method</span></span>                           | <span data-ttu-id="ff680-611">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-611">Description</span></span>                                     |
+|----------------------------------|-------------------------------------------------|
+| <span data-ttu-id="ff680-612">public int count()</span><span class="sxs-lookup"><span data-stu-id="ff680-612">public int count()</span></span>               |                                                 |
+| <span data-ttu-id="ff680-613">public COMEnum2Variant getEnum()</span><span class="sxs-lookup"><span data-stu-id="ff680-613">public COMEnum2Variant getEnum()</span></span> |                                                 |
+| <span data-ttu-id="ff680-614">public ComInterface interface()</span><span class="sxs-lookup"><span data-stu-id="ff680-614">public ComInterface interface()</span></span>  |                                                 |
+| <span data-ttu-id="ff680-615">public str item(\[str item\])</span><span class="sxs-lookup"><span data-stu-id="ff680-615">public str item(\[str item\])</span></span>    |                                                 |
+| <span data-ttu-id="ff680-616">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-616">public void finalize()</span></span>           |                                                 |
+| <span data-ttu-id="ff680-617">public void new(COM stringList)</span><span class="sxs-lookup"><span data-stu-id="ff680-617">public void new(COM stringList)</span></span>  | <span data-ttu-id="ff680-618">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-618">Initializes a new instance of the Object class.</span></span> |
+
+### <a name="method-count"></a><span data-ttu-id="ff680-619">メソッド count</span><span class="sxs-lookup"><span data-stu-id="ff680-619">Method count</span></span>
+
+    public int count()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-620">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-620">Return Value</span></span>
+
+### <a name="method-getenum"></a><span data-ttu-id="ff680-621">メソッド getEnum</span><span class="sxs-lookup"><span data-stu-id="ff680-621">Method getEnum</span></span>
+
+    public COMEnum2Variant getEnum()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-622">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-622">Return Value</span></span>
+
+### <a name="method-interface"></a><span data-ttu-id="ff680-623">メソッド interface</span><span class="sxs-lookup"><span data-stu-id="ff680-623">Method interface</span></span>
+
+    public ComInterface interface()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-624">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-624">Return Value</span></span>
+
+### <a name="method-item"></a><span data-ttu-id="ff680-625">メソッド item</span><span class="sxs-lookup"><span data-stu-id="ff680-625">Method item</span></span>
+
+    public str item([str item])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-626">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-626">Parameters</span></span>
+
+<span data-ttu-id="ff680-627">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-627">item</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-628">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-628">Return Value</span></span>
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-629">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-629">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-new"></a><span data-ttu-id="ff680-630">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-630">Method new</span></span>
+
+<span data-ttu-id="ff680-631">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-631">Initializes a new instance of the Object class.</span></span>
+
+    public void new(COM stringList)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-632">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-632">Parameters</span></span>
+
+<span data-ttu-id="ff680-633">stringList</span><span class="sxs-lookup"><span data-stu-id="ff680-633">stringList</span></span>  
+
+## <a name="class-iisvariantdictionary"></a><span data-ttu-id="ff680-634">クラス IISVariantDictionary</span><span class="sxs-lookup"><span data-stu-id="ff680-634">Class IISVariantDictionary</span></span>
+    class IISVariantDictionary extends Object
+
+<span data-ttu-id="ff680-635">IISVariantDictionary クラスは、インターネット インフォメーション サービス (IIS) によって提供される VariantDictionary オブジェクトをラップします。</span><span class="sxs-lookup"><span data-stu-id="ff680-635">The IISVariantDictionary class wraps the VariantDictionary object that is offered by Internet Information Services (IIS).</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-636">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-636">Remarks</span></span>
+
+<span data-ttu-id="ff680-637">IISVariantDictionary クラスのメソッドと、IIS によって提供される VariantDictionary オブジェクトのメソッドとの間には、1 対 1 の接続があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-637">There is a one-to-one connection between the methods of the IISVariantDictionary class and the methods of the VariantDictionary object that is offered by IIS.</span></span> <span data-ttu-id="ff680-638">したがって、IISVariantDictionary クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-638">Therefore, for more information about the methods of the IISVariantDictionary class, see the Microsoft documentation for IIS.</span></span> <span data-ttu-id="ff680-639">IISVariantDictionary クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="ff680-639">Use of the IISVariantDictionary class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-640">例</span><span class="sxs-lookup"><span data-stu-id="ff680-640">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-641">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-641">Methods</span></span>
+
+| <span data-ttu-id="ff680-642">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-642">Method</span></span>                                                      | <span data-ttu-id="ff680-643">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-643">Description</span></span>                                     |
+|-------------------------------------------------------------|-------------------------------------------------|
+| <span data-ttu-id="ff680-644">public int count()</span><span class="sxs-lookup"><span data-stu-id="ff680-644">public int count()</span></span>                                          |                                                 |
+| <span data-ttu-id="ff680-645">public COMEnum2Variant getEnum()</span><span class="sxs-lookup"><span data-stu-id="ff680-645">public COMEnum2Variant getEnum()</span></span>                            |                                                 |
+| <span data-ttu-id="ff680-646">public ComInterface interface()</span><span class="sxs-lookup"><span data-stu-id="ff680-646">public ComInterface interface()</span></span>                             |                                                 |
+| <span data-ttu-id="ff680-647">public COMVariant item(COMVariant item, \[COMVariant var\])</span><span class="sxs-lookup"><span data-stu-id="ff680-647">public COMVariant item(COMVariant item, \[COMVariant var\])</span></span> |                                                 |
+| <span data-ttu-id="ff680-648">public COM itemObj(str item, \[COM var\])</span><span class="sxs-lookup"><span data-stu-id="ff680-648">public COM itemObj(str item, \[COM var\])</span></span>                   |                                                 |
+| <span data-ttu-id="ff680-649">public str itemTxt(str item, \[str var\])</span><span class="sxs-lookup"><span data-stu-id="ff680-649">public str itemTxt(str item, \[str var\])</span></span>                   |                                                 |
+| <span data-ttu-id="ff680-650">public str key(str key)</span><span class="sxs-lookup"><span data-stu-id="ff680-650">public str key(str key)</span></span>                                     |                                                 |
+| <span data-ttu-id="ff680-651">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-651">public void finalize()</span></span>                                      |                                                 |
+| <span data-ttu-id="ff680-652">public void remove(str key)</span><span class="sxs-lookup"><span data-stu-id="ff680-652">public void remove(str key)</span></span>                                 |                                                 |
+| <span data-ttu-id="ff680-653">public void removeAll()</span><span class="sxs-lookup"><span data-stu-id="ff680-653">public void removeAll()</span></span>                                     |                                                 |
+| <span data-ttu-id="ff680-654">public void new(COM variantDictionary)</span><span class="sxs-lookup"><span data-stu-id="ff680-654">public void new(COM variantDictionary)</span></span>                      | <span data-ttu-id="ff680-655">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-655">Initializes a new instance of the Object class.</span></span> |
+
+### <a name="method-count"></a><span data-ttu-id="ff680-656">メソッド count</span><span class="sxs-lookup"><span data-stu-id="ff680-656">Method count</span></span>
+
+    public int count()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-657">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-657">Return Value</span></span>
+
+### <a name="method-getenum"></a><span data-ttu-id="ff680-658">メソッド getEnum</span><span class="sxs-lookup"><span data-stu-id="ff680-658">Method getEnum</span></span>
+
+    public COMEnum2Variant getEnum()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-659">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-659">Return Value</span></span>
+
+### <a name="method-interface"></a><span data-ttu-id="ff680-660">メソッド interface</span><span class="sxs-lookup"><span data-stu-id="ff680-660">Method interface</span></span>
+
+    public ComInterface interface()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-661">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-661">Return Value</span></span>
+
+### <a name="method-item"></a><span data-ttu-id="ff680-662">メソッド item</span><span class="sxs-lookup"><span data-stu-id="ff680-662">Method item</span></span>
+
+    public COMVariant item(COMVariant item, [COMVariant var])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-663">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-663">Parameters</span></span>
+
+<span data-ttu-id="ff680-664">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-664">item</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-665">var</span><span class="sxs-lookup"><span data-stu-id="ff680-665">var</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-666">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-666">Return Value</span></span>
+
+### <a name="method-itemobj"></a><span data-ttu-id="ff680-667">メソッド itemObj</span><span class="sxs-lookup"><span data-stu-id="ff680-667">Method itemObj</span></span>
+
+    public COM itemObj(str item, [COM var])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-668">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-668">Parameters</span></span>
+
+<span data-ttu-id="ff680-669">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-669">item</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-670">var</span><span class="sxs-lookup"><span data-stu-id="ff680-670">var</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-671">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-671">Return Value</span></span>
+
+### <a name="method-itemtxt"></a><span data-ttu-id="ff680-672">メソッド itemTxt</span><span class="sxs-lookup"><span data-stu-id="ff680-672">Method itemTxt</span></span>
+
+    public str itemTxt(str item, [str var])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-673">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-673">Parameters</span></span>
+
+<span data-ttu-id="ff680-674">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-674">item</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-675">var</span><span class="sxs-lookup"><span data-stu-id="ff680-675">var</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-676">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-676">Return Value</span></span>
+
+### <a name="method-key"></a><span data-ttu-id="ff680-677">メソッド key</span><span class="sxs-lookup"><span data-stu-id="ff680-677">Method key</span></span>
+
+    public str key(str key)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-678">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-678">Parameters</span></span>
+
+<span data-ttu-id="ff680-679">キー</span><span class="sxs-lookup"><span data-stu-id="ff680-679">key</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-680">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-680">Return Value</span></span>
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-681">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-681">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-remove"></a><span data-ttu-id="ff680-682">メソッド remove</span><span class="sxs-lookup"><span data-stu-id="ff680-682">Method remove</span></span>
+
+    public void remove(str key)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-683">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-683">Parameters</span></span>
+
+<span data-ttu-id="ff680-684">キー</span><span class="sxs-lookup"><span data-stu-id="ff680-684">key</span></span>  
+
+### <a name="method-removeall"></a><span data-ttu-id="ff680-685">メソッド removeAll</span><span class="sxs-lookup"><span data-stu-id="ff680-685">Method removeAll</span></span>
+
+    public void removeAll()
+
+### <a name="method-new"></a><span data-ttu-id="ff680-686">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-686">Method new</span></span>
+
+<span data-ttu-id="ff680-687">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-687">Initializes a new instance of the Object class.</span></span>
+
+    public void new(COM variantDictionary)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-688">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-688">Parameters</span></span>
+
+<span data-ttu-id="ff680-689">variantDictionary</span><span class="sxs-lookup"><span data-stu-id="ff680-689">variantDictionary</span></span>  
+
+## <a name="class-iisviewstate"></a><span data-ttu-id="ff680-690">クラス IISViewState</span><span class="sxs-lookup"><span data-stu-id="ff680-690">Class IISViewState</span></span>
+    class IISViewState extends Object
+
+### <a name="remarks"></a><span data-ttu-id="ff680-691">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-691">Remarks</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-692">例</span><span class="sxs-lookup"><span data-stu-id="ff680-692">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-693">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-693">Methods</span></span>
+
+| <span data-ttu-id="ff680-694">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-694">Method</span></span>                                         | <span data-ttu-id="ff680-695">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-695">Description</span></span>                                           |
+|------------------------------------------------|-------------------------------------------------------|
+| <span data-ttu-id="ff680-696">public boolean viewStateContains(str key)</span><span class="sxs-lookup"><span data-stu-id="ff680-696">public boolean viewStateContains(str key)</span></span>      |                                                       |
+| <span data-ttu-id="ff680-697">public str viewStateItem(str key, \[str val\])</span><span class="sxs-lookup"><span data-stu-id="ff680-697">public str viewStateItem(str key, \[str val\])</span></span> |                                                       |
+| <span data-ttu-id="ff680-698">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-698">public void finalize()</span></span>                         |                                                       |
+| <span data-ttu-id="ff680-699">public void viewStateDelete(str key)</span><span class="sxs-lookup"><span data-stu-id="ff680-699">public void viewStateDelete(str key)</span></span>           |                                                       |
+| <span data-ttu-id="ff680-700">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-700">public void new()</span></span>                              | <span data-ttu-id="ff680-701">IISViewState クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-701">Initializes a new instance of the IISViewState class.</span></span> |
+
+### <a name="method-viewstatecontains"></a><span data-ttu-id="ff680-702">メソッド viewStateContains</span><span class="sxs-lookup"><span data-stu-id="ff680-702">Method viewStateContains</span></span>
+
+    public boolean viewStateContains(str key)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-703">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-703">Parameters</span></span>
+
+<span data-ttu-id="ff680-704">キー</span><span class="sxs-lookup"><span data-stu-id="ff680-704">key</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-705">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-705">Return Value</span></span>
+
+### <a name="method-viewstateitem"></a><span data-ttu-id="ff680-706">メソッド viewStateItem</span><span class="sxs-lookup"><span data-stu-id="ff680-706">Method viewStateItem</span></span>
+
+    public str viewStateItem(str key, [str val])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-707">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-707">Parameters</span></span>
+
+<span data-ttu-id="ff680-708">キー</span><span class="sxs-lookup"><span data-stu-id="ff680-708">key</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-709">val</span><span class="sxs-lookup"><span data-stu-id="ff680-709">val</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-710">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-710">Return Value</span></span>
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-711">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-711">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-viewstatedelete"></a><span data-ttu-id="ff680-712">メソッド viewStateDelete</span><span class="sxs-lookup"><span data-stu-id="ff680-712">Method viewStateDelete</span></span>
+
+    public void viewStateDelete(str key)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-713">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-713">Parameters</span></span>
+
+<span data-ttu-id="ff680-714">キー</span><span class="sxs-lookup"><span data-stu-id="ff680-714">key</span></span>  
+
+### <a name="method-new"></a><span data-ttu-id="ff680-715">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-715">Method new</span></span>
+
+<span data-ttu-id="ff680-716">IISViewState クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-716">Initializes a new instance of the IISViewState class.</span></span>
+
+    public void new()
+
+## <a name="class-iiswritecookie"></a><span data-ttu-id="ff680-717">クラス IISWriteCookie</span><span class="sxs-lookup"><span data-stu-id="ff680-717">Class IISWriteCookie</span></span>
+    class IISWriteCookie extends Object
+
+<span data-ttu-id="ff680-718">IISWriteCookie クラスは、インターネット インフォメーション サービス (IIS) によって提供される WriteCookie オブジェクトをラップします。</span><span class="sxs-lookup"><span data-stu-id="ff680-718">The IISWriteCookie class wraps the WriteCookie object that is offered by Internet Information Services (IIS).</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-719">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-719">Remarks</span></span>
+
+<span data-ttu-id="ff680-720">IISWriteCookie クラスのメソッドと、IIS によって提供される WriteCookie オブジェクトのメソッドとの間には、1 対 1 の接続があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-720">There is a one-to-one connection between the methods of the IISWriteCookie class and the methods of the WriteCookie object that is offered by IIS.</span></span> <span data-ttu-id="ff680-721">したがって、IISWriteCookie クラスのメソッドの詳細については、IIS の Microsoft ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-721">Therefore, for more information about the methods of the IISWriteCookie class, see the Microsoft documentation for IIS.</span></span> <span data-ttu-id="ff680-722">IISWriteCookie クラスの使用は、IIS が Finance and Operations インターネット コネクタによって実行されている場合にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="ff680-722">Use of the IISWriteCookie class is valid only when code is run by the Finance and Operations Internet Connector under IIS.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-723">例</span><span class="sxs-lookup"><span data-stu-id="ff680-723">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-724">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-724">Methods</span></span>
+
+| <span data-ttu-id="ff680-725">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-725">Method</span></span>                                  | <span data-ttu-id="ff680-726">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-726">Description</span></span>                                     |
+|-----------------------------------------|-------------------------------------------------|
+| <span data-ttu-id="ff680-727">public COMEnum2Variant getEnum()</span><span class="sxs-lookup"><span data-stu-id="ff680-727">public COMEnum2Variant getEnum()</span></span>        |                                                 |
+| <span data-ttu-id="ff680-728">public boolean hasKeys()</span><span class="sxs-lookup"><span data-stu-id="ff680-728">public boolean hasKeys()</span></span>                |                                                 |
+| <span data-ttu-id="ff680-729">public ComInterface interface()</span><span class="sxs-lookup"><span data-stu-id="ff680-729">public ComInterface interface()</span></span>         |                                                 |
+| <span data-ttu-id="ff680-730">public void new(COM writeCookie)</span><span class="sxs-lookup"><span data-stu-id="ff680-730">public void new(COM writeCookie)</span></span>        | <span data-ttu-id="ff680-731">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-731">Initializes a new instance of the Object class.</span></span> |
+| <span data-ttu-id="ff680-732">public void secure(boolean secure)</span><span class="sxs-lookup"><span data-stu-id="ff680-732">public void secure(boolean secure)</span></span>      |                                                 |
+| <span data-ttu-id="ff680-733">public void path(str path)</span><span class="sxs-lookup"><span data-stu-id="ff680-733">public void path(str path)</span></span>              |                                                 |
+| <span data-ttu-id="ff680-734">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-734">public void finalize()</span></span>                  |                                                 |
+| <span data-ttu-id="ff680-735">public void domain(str domain)</span><span class="sxs-lookup"><span data-stu-id="ff680-735">public void domain(str domain)</span></span>          |                                                 |
+| <span data-ttu-id="ff680-736">public void expires(COMVariant expires)</span><span class="sxs-lookup"><span data-stu-id="ff680-736">public void expires(COMVariant expires)</span></span> |                                                 |
+| <span data-ttu-id="ff680-737">public void item(str item, str value)</span><span class="sxs-lookup"><span data-stu-id="ff680-737">public void item(str item, str value)</span></span>   |                                                 |
+
+### <a name="method-getenum"></a><span data-ttu-id="ff680-738">メソッド getEnum</span><span class="sxs-lookup"><span data-stu-id="ff680-738">Method getEnum</span></span>
+
+    public COMEnum2Variant getEnum()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-739">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-739">Return Value</span></span>
+
+### <a name="method-haskeys"></a><span data-ttu-id="ff680-740">メソッド hasKeys</span><span class="sxs-lookup"><span data-stu-id="ff680-740">Method hasKeys</span></span>
+
+    public boolean hasKeys()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-741">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-741">Return Value</span></span>
+
+### <a name="method-interface"></a><span data-ttu-id="ff680-742">メソッド interface</span><span class="sxs-lookup"><span data-stu-id="ff680-742">Method interface</span></span>
+
+    public ComInterface interface()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-743">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-743">Return Value</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-744">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-744">Method new</span></span>
+
+<span data-ttu-id="ff680-745">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-745">Initializes a new instance of the Object class.</span></span>
+
+    public void new(COM writeCookie)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-746">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-746">Parameters</span></span>
+
+<span data-ttu-id="ff680-747">writeCookie</span><span class="sxs-lookup"><span data-stu-id="ff680-747">writeCookie</span></span>  
+
+### <a name="method-secure"></a><span data-ttu-id="ff680-748">メソッド secure</span><span class="sxs-lookup"><span data-stu-id="ff680-748">Method secure</span></span>
+
+    public void secure(boolean secure)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-749">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-749">Parameters</span></span>
+
+<span data-ttu-id="ff680-750">secure</span><span class="sxs-lookup"><span data-stu-id="ff680-750">secure</span></span>  
+
+### <a name="method-path"></a><span data-ttu-id="ff680-751">メソッド path</span><span class="sxs-lookup"><span data-stu-id="ff680-751">Method path</span></span>
+
+    public void path(str path)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-752">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-752">Parameters</span></span>
+
+<span data-ttu-id="ff680-753">path</span><span class="sxs-lookup"><span data-stu-id="ff680-753">path</span></span>  
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-754">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-754">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-domain"></a><span data-ttu-id="ff680-755">メソッド domain</span><span class="sxs-lookup"><span data-stu-id="ff680-755">Method domain</span></span>
+
+    public void domain(str domain)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-756">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-756">Parameters</span></span>
+
+<span data-ttu-id="ff680-757">domain</span><span class="sxs-lookup"><span data-stu-id="ff680-757">domain</span></span>  
+
+### <a name="method-expires"></a><span data-ttu-id="ff680-758">メソッド expires</span><span class="sxs-lookup"><span data-stu-id="ff680-758">Method expires</span></span>
+
+    public void expires(COMVariant expires)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-759">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-759">Parameters</span></span>
+
+<span data-ttu-id="ff680-760">expires</span><span class="sxs-lookup"><span data-stu-id="ff680-760">expires</span></span>  
+
+### <a name="method-item"></a><span data-ttu-id="ff680-761">メソッド item</span><span class="sxs-lookup"><span data-stu-id="ff680-761">Method item</span></span>
+
+    public void item(str item, str value)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-762">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-762">Parameters</span></span>
+
+<span data-ttu-id="ff680-763">項目</span><span class="sxs-lookup"><span data-stu-id="ff680-763">item</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-764">値</span><span class="sxs-lookup"><span data-stu-id="ff680-764">value</span></span>  
+
+## <a name="class-image"></a><span data-ttu-id="ff680-765">クラス イメージ</span><span class="sxs-lookup"><span data-stu-id="ff680-765">Class Image</span></span>
+    class Image extends BinData
+
+<span data-ttu-id="ff680-766">読み込み、保存、および画像を操作するためのメソッドを提供します。</span><span class="sxs-lookup"><span data-stu-id="ff680-766">Provides methods for loading, saving, and manipulating images.</span></span> <span data-ttu-id="ff680-767">複数のイメージを同時に操作する場合は、Imagelist クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="ff680-767">If you want to manipulate several images at the same time, use the Imagelist Class.</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-768">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-768">Remarks</span></span>
+
+<span data-ttu-id="ff680-769">次のファイル タイプからイメージ オブジェクトを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="ff680-769">You can construct Image objects from the following file types:</span></span>
+
+-   <span data-ttu-id="ff680-770">ラスター (ビットマップ) 形式 - .bmp、.gif、.jpg、.png、.tiff、.exif</span><span class="sxs-lookup"><span data-stu-id="ff680-770">Raster (bitmap) formats - .bmp, .gif, .jpg, .png, .tiff, and .exif</span></span>
+-   <span data-ttu-id="ff680-771">ベクター形式 - .emf および .wmf</span><span class="sxs-lookup"><span data-stu-id="ff680-771">Vector formats - .emf and .wmf</span></span>
+
+<span data-ttu-id="ff680-772">複数のイメージを同時に操作する場合は、Imagelist クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="ff680-772">If you want to work with several images at the same time, use the Imagelist class.</span></span> <span data-ttu-id="ff680-773">次のファイル タイプからイメージ オブジェクトを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="ff680-773">You can construct the Image objects from the following file types:</span></span>
+
+-   <span data-ttu-id="ff680-774">ラスター (ビットマップである) 形式 - .bmp、.gif、.jpg、.png、.tiff、.exif</span><span class="sxs-lookup"><span data-stu-id="ff680-774">Raster, which is a bitmap, formats - .bmp, .gif, .jpg, .png, .tiff, and .exif</span></span>
+-   <span data-ttu-id="ff680-775">ベクター形式 - .emf および .wmf</span><span class="sxs-lookup"><span data-stu-id="ff680-775">Vector formats - .emf and .wmf</span></span>
+
+<span data-ttu-id="ff680-776">Finance and Operations では、イメージ クラスはクライアントにバインドされています。</span><span class="sxs-lookup"><span data-stu-id="ff680-776">In Finance and Operations, the Image class is bound to the client.</span></span> <span data-ttu-id="ff680-777">ファイル操作に伴うセキュリティ上のリスクのため、クラスをサーバーから実行できなくなりました。</span><span class="sxs-lookup"><span data-stu-id="ff680-777">The class can no longer be run from the server because of the security risks that are associated with file handling.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-778">例</span><span class="sxs-lookup"><span data-stu-id="ff680-778">Examples</span></span>
+
+<span data-ttu-id="ff680-779">次の例では、Picture.jpg の高さをピクセル単位で出力します。</span><span class="sxs-lookup"><span data-stu-id="ff680-779">The following example prints the height of Picture.jpg in pixels.</span></span>
+
+    Image img = new  Image(); 
+    img.loadFile(@'C:\MyPictures\Picture.jpg'); 
+    print img.height(); 
+    pause;
+
+### <a name="methods"></a><span data-ttu-id="ff680-780">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-780">Methods</span></span>
+
+| <span data-ttu-id="ff680-781">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-781">Method</span></span>                                                                                                      | <span data-ttu-id="ff680-782">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-782">Description</span></span>                                                                                                                                   |
+|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="ff680-783">public int captureScreen(int left, int top, int right, int bottom)</span><span class="sxs-lookup"><span data-stu-id="ff680-783">public int captureScreen(int left, int top, int right, int bottom)</span></span>                                          | <span data-ttu-id="ff680-784">パラメータ リストで指定された座標を使用して、スクリーンからイメージをキャプチャします。</span><span class="sxs-lookup"><span data-stu-id="ff680-784">Captures an image from the screen by using the coordinates that are supplied in the parameter list.</span></span>                                           |
+| <span data-ttu-id="ff680-785">public int captureWindow(int hWnd)</span><span class="sxs-lookup"><span data-stu-id="ff680-785">public int captureWindow(int hWnd)</span></span>                                                                          | <span data-ttu-id="ff680-786">パラメータとして指定されたハンドルを使用して、ウィンドウをイメージとしてキャプチャします。</span><span class="sxs-lookup"><span data-stu-id="ff680-786">Captures a window as an image, using the handle that is supplied as a parameter.</span></span>                                                              |
+| <span data-ttu-id="ff680-787">public int clipboardCopy()</span><span class="sxs-lookup"><span data-stu-id="ff680-787">public int clipboardCopy()</span></span>                                                                                  | <span data-ttu-id="ff680-788">イメージをクリップボードにコピーします。</span><span class="sxs-lookup"><span data-stu-id="ff680-788">Copies an image to the clipboard.</span></span>                                                                                                             |
+| <span data-ttu-id="ff680-789">public int clipboardPaste()</span><span class="sxs-lookup"><span data-stu-id="ff680-789">public int clipboardPaste()</span></span>                                                                                 | <span data-ttu-id="ff680-790">システムのクリップボードの内容で既存のイメージを上書きします。</span><span class="sxs-lookup"><span data-stu-id="ff680-790">Overwrites an existing image with the content of the system clipboard.</span></span>                                                                        |
+| <span data-ttu-id="ff680-791">public int copyImage(Image image)</span><span class="sxs-lookup"><span data-stu-id="ff680-791">public int copyImage(Image image)</span></span>                                                                           | <span data-ttu-id="ff680-792">現在のイメージ オブジェクトをコピーします。</span><span class="sxs-lookup"><span data-stu-id="ff680-792">Copies the current image object.</span></span>                                                                                                              |
+| <span data-ttu-id="ff680-793">public int createImage(int Width, int Height, int BitsPerPixel)</span><span class="sxs-lookup"><span data-stu-id="ff680-793">public int createImage(int Width, int Height, int BitsPerPixel)</span></span>                                             | <span data-ttu-id="ff680-794">パラメーターで指定された幅、高さ、および色深度を持つ空のビットマップ画像を作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-794">Creates an empty bitmap image with the width, height, and color depth as specified by the parameters.</span></span>                                         |
+| <span data-ttu-id="ff680-795">public int crop(int x, int y, int w, int h)</span><span class="sxs-lookup"><span data-stu-id="ff680-795">public int crop(int x, int y, int w, int h)</span></span>                                                                 | <span data-ttu-id="ff680-796">画像をトリミングします。</span><span class="sxs-lookup"><span data-stu-id="ff680-796">Crops the image.</span></span>                                                                                                                              |
+| <span data-ttu-id="ff680-797">public int displayImage(Int64 HDC, \[int Mode\], \[int Xpos\], \[int Ypos\], \[int Width\], \[int Height\])</span><span class="sxs-lookup"><span data-stu-id="ff680-797">public int displayImage(Int64 HDC, \[int Mode\], \[int Xpos\], \[int Ypos\], \[int Width\], \[int Height\])</span></span> | <span data-ttu-id="ff680-798">HDC パラメーターで指定されたデバイス コンテキストに画像を描画します。</span><span class="sxs-lookup"><span data-stu-id="ff680-798">Draws an image with the device context specified by the HDC parameter.</span></span>                                                                        |
+| <span data-ttu-id="ff680-799">public Int64 exportBitmap()</span><span class="sxs-lookup"><span data-stu-id="ff680-799">public Int64 exportBitmap()</span></span>                                                                                 | <span data-ttu-id="ff680-800">画像のハンドルを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-800">Gets a handle for the image.</span></span>                                                                                                                  |
+| <span data-ttu-id="ff680-801">public int flip(FlipType FlipType)</span><span class="sxs-lookup"><span data-stu-id="ff680-801">public int flip(FlipType FlipType)</span></span>                                                                          | <span data-ttu-id="ff680-802">画像を垂直または水平方向に 180 度回転します。</span><span class="sxs-lookup"><span data-stu-id="ff680-802">Rotates the image 180 degrees in a vertical or horizontal direction.</span></span>                                                                          |
+| <span data-ttu-id="ff680-803">public container getImageDimensionUnits()</span><span class="sxs-lookup"><span data-stu-id="ff680-803">public container getImageDimensionUnits()</span></span>                                                                   |                                                                                                                                               |
+| <span data-ttu-id="ff680-804">public int getPixel(int x, int y)</span><span class="sxs-lookup"><span data-stu-id="ff680-804">public int getPixel(int x, int y)</span></span>                                                                           | <span data-ttu-id="ff680-805">パラメーターで指定されたポイントで、ピクセルの ARGB カラーの値を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-805">Retrieves the ARGB color value of the pixel at the point that is specified by the parameters.</span></span>                                                 |
+| <span data-ttu-id="ff680-806">public int height()</span><span class="sxs-lookup"><span data-stu-id="ff680-806">public int height()</span></span>                                                                                         | <span data-ttu-id="ff680-807">ピクセル単位の画像の高さを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-807">Retrieves the height of the image in pixels.</span></span>                                                                                                  |
+| <span data-ttu-id="ff680-808">public container imageInfo()</span><span class="sxs-lookup"><span data-stu-id="ff680-808">public container imageInfo()</span></span>                                                                                | <span data-ttu-id="ff680-809">画像の幅、高さ、色深度を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-809">Retrieves the width, height, and color depth of the image.</span></span>                                                                                    |
+| <span data-ttu-id="ff680-810">public int imageSpotlight(int x, int y, int radius, int smoothing, int intensity)</span><span class="sxs-lookup"><span data-stu-id="ff680-810">public int imageSpotlight(int x, int y, int radius, int smoothing, int intensity)</span></span>                           | <span data-ttu-id="ff680-811">センター座標 x および y で半径により定義された円内のスポットライト効果を生成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-811">Produces a spotlight effect within the circle that is defined by radius with center coordinates x and y.</span></span>                                      |
+| <span data-ttu-id="ff680-812">public int importBitmap(Int64 hBitmap)</span><span class="sxs-lookup"><span data-stu-id="ff680-812">public int importBitmap(Int64 hBitmap)</span></span>                                                                      | <span data-ttu-id="ff680-813">hBitmap パラメータで指定されたイメージからビットマップをクローンします。</span><span class="sxs-lookup"><span data-stu-id="ff680-813">Clones a bitmap from the image that is specified by the hBitmap parameter.</span></span>                                                                    |
+| <span data-ttu-id="ff680-814">public int importFileIcon(str fileName)</span><span class="sxs-lookup"><span data-stu-id="ff680-814">public int importFileIcon(str fileName)</span></span>                                                                     | <span data-ttu-id="ff680-815">ファイルに使用されているアイコンをコピーすることにより、fileName パラメーターで指定されたファイルからアイコンを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-815">Creates an icon from the file specified by the fileName parameter by copying the icon that is used for the file.</span></span>                              |
+| <span data-ttu-id="ff680-816">public int importIcon(str fileName, int iconIdx)</span><span class="sxs-lookup"><span data-stu-id="ff680-816">public int importIcon(str fileName, int iconIdx)</span></span>                                                            | <span data-ttu-id="ff680-817">Finance and Operations の実行可能ファイルからアイコンへのハンドルを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-817">Retrieves a handle to an icon from an executable file in Finance and Operations.</span></span> <span data-ttu-id="ff680-818">このアイコンは、fileName および iconIdx パラメーターで指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-818">The icon is specified by the fileName and iconIdx parameters.</span></span> |
+| <span data-ttu-id="ff680-819">public int loadImage(str fileName)</span><span class="sxs-lookup"><span data-stu-id="ff680-819">public int loadImage(str fileName)</span></span>                                                                          | <span data-ttu-id="ff680-820">fileName パラメーターで指定されたファイルからイメージを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="ff680-820">Loads an image from the file specified by the fileName parameter.</span></span>                                                                             |
+| <span data-ttu-id="ff680-821">public int loadResource(int id)</span><span class="sxs-lookup"><span data-stu-id="ff680-821">public int loadResource(int id)</span></span>                                                                             | <span data-ttu-id="ff680-822">Ax32.exe からリソースを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="ff680-822">Loads a resource from Ax32.exe.</span></span>                                                                                                               |
+| <span data-ttu-id="ff680-823">public int promoteColor(int noOfColorBits)</span><span class="sxs-lookup"><span data-stu-id="ff680-823">public int promoteColor(int noOfColorBits)</span></span>                                                                  | <span data-ttu-id="ff680-824">画像の色深度を向上させます。</span><span class="sxs-lookup"><span data-stu-id="ff680-824">Increases the color depth of the image.</span></span>                                                                                                       |
+| <span data-ttu-id="ff680-825">public int reduceColorOctree(int maxColors)</span><span class="sxs-lookup"><span data-stu-id="ff680-825">public int reduceColorOctree(int maxColors)</span></span>                                                                 | <span data-ttu-id="ff680-826">画像の色深度を減少させます。</span><span class="sxs-lookup"><span data-stu-id="ff680-826">Reduces the color depth of an image.</span></span>                                                                                                          |
+| <span data-ttu-id="ff680-827">public int removeImage()</span><span class="sxs-lookup"><span data-stu-id="ff680-827">public int removeImage()</span></span>                                                                                    | <span data-ttu-id="ff680-828">画像に関するデータを削除します。オブジェクトはまだ存在しますが、データを持ちません。</span><span class="sxs-lookup"><span data-stu-id="ff680-828">Removes the data about an image; the object still exists, but has no data.</span></span>                                                                    |
+| <span data-ttu-id="ff680-829">public int resize(int newWidth, int newHeight, InterpolationMode InterpolationMode)</span><span class="sxs-lookup"><span data-stu-id="ff680-829">public int resize(int newWidth, int newHeight, InterpolationMode InterpolationMode)</span></span>                         | <span data-ttu-id="ff680-830">newWidth および newHeight パラメーターにより指定されたサイズに画像をサイズ変更します。</span><span class="sxs-lookup"><span data-stu-id="ff680-830">Resizes the image to the size that is specified by the newWidth and newHeight parameters.</span></span>                                                     |
+| <span data-ttu-id="ff680-831">public int rotate(RotateType RotateType)</span><span class="sxs-lookup"><span data-stu-id="ff680-831">public int rotate(RotateType RotateType)</span></span>                                                                    | <span data-ttu-id="ff680-832">画像を回転します。</span><span class="sxs-lookup"><span data-stu-id="ff680-832">Rotates the image.</span></span>                                                                                                                            |
+| <span data-ttu-id="ff680-833">public int saveImage(str fileName, \[ImageSaveType Type\])</span><span class="sxs-lookup"><span data-stu-id="ff680-833">public int saveImage(str fileName, \[ImageSaveType Type\])</span></span>                                                  | <span data-ttu-id="ff680-834">指定されたファイル名に画像を保存します。</span><span class="sxs-lookup"><span data-stu-id="ff680-834">Saves the image to the specified file name.</span></span>                                                                                                   |
+| <span data-ttu-id="ff680-835">public ImageSaveType saveType(\[ImageSaveType Type\])</span><span class="sxs-lookup"><span data-stu-id="ff680-835">public ImageSaveType saveType(\[ImageSaveType Type\])</span></span>                                                       | <span data-ttu-id="ff680-836">イメージ デコーダを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-836">Gets or sets the image decoder.</span></span>                                                                                                               |
+| <span data-ttu-id="ff680-837">public int setPixel(int x, int y, int pixel)</span><span class="sxs-lookup"><span data-stu-id="ff680-837">public int setPixel(int x, int y, int pixel)</span></span>                                                                | <span data-ttu-id="ff680-838">x と y パラメーターで指定されているピクセルの色を設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-838">Sets the color for the pixel that is specified by the x and y parameters.</span></span>                                                                     |
+| <span data-ttu-id="ff680-839">public int transparent(\[boolean Set\], \[int RValue\], \[int GValue\], \[int BValue\])</span><span class="sxs-lookup"><span data-stu-id="ff680-839">public int transparent(\[boolean Set\], \[int RValue\], \[int GValue\], \[int BValue\])</span></span>                     | <span data-ttu-id="ff680-840">画像の透明な色を設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-840">Sets the transparent color for the image.</span></span>                                                                                                     |
+| <span data-ttu-id="ff680-841">public int width()</span><span class="sxs-lookup"><span data-stu-id="ff680-841">public int width()</span></span>                                                                                          | <span data-ttu-id="ff680-842">ピクセル単位の画像の幅を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-842">Retrieves the width of the image in pixels.</span></span>                                                                                                   |
+| <span data-ttu-id="ff680-843">::public static int canLoad(str filename)</span><span class="sxs-lookup"><span data-stu-id="ff680-843">::public static int canLoad(str filename)</span></span>                                                                   | <span data-ttu-id="ff680-844">画像ファイルが存在し、開くことができるかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-844">Determines whether an image file exists and can be opened.</span></span>                                                                                    |
+| <span data-ttu-id="ff680-845">::public static container loadExt(int idx)</span><span class="sxs-lookup"><span data-stu-id="ff680-845">::public static container loadExt(int idx)</span></span>                                                                  | <span data-ttu-id="ff680-846">Image クラスでサポートされているファイル形式の拡張機能の一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-846">Retrieves a list of the extensions of the file formats that are supported by the Image class.</span></span>                                                 |
+| <span data-ttu-id="ff680-847">::public static int resourceType(int resourceIdx)</span><span class="sxs-lookup"><span data-stu-id="ff680-847">::public static int resourceType(int resourceIdx)</span></span>                                                           | <span data-ttu-id="ff680-848">特定のリソースがビットマップかアイコンかを判別します。</span><span class="sxs-lookup"><span data-stu-id="ff680-848">Determines whether a particular resource is a bitmap or an icon.</span></span>                                                                              |
+| <span data-ttu-id="ff680-849">::public static int rgb(int R, int G, int B)</span><span class="sxs-lookup"><span data-stu-id="ff680-849">::public static int rgb(int R, int G, int B)</span></span>                                                                | <span data-ttu-id="ff680-850">RGB 値を ARGB 値に変換します。</span><span class="sxs-lookup"><span data-stu-id="ff680-850">Converts an RGB value to an ARGB value.</span></span>                                                                                                       |
+| <span data-ttu-id="ff680-851">::public static int validResource(int id)</span><span class="sxs-lookup"><span data-stu-id="ff680-851">::public static int validResource(int id)</span></span>                                                                   | <span data-ttu-id="ff680-852">id パラメータで指定されたリソースが有効かどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-852">Determines whether the resource specified by the id parameter is valid.</span></span>                                                                       |
+| <span data-ttu-id="ff680-853">public void new(\[AnyType image\], \[int width\], \[int height\])</span><span class="sxs-lookup"><span data-stu-id="ff680-853">public void new(\[AnyType image\], \[int width\], \[int height\])</span></span>                                           | <span data-ttu-id="ff680-854">新しい画像を作成します</span><span class="sxs-lookup"><span data-stu-id="ff680-854">Creates a new image.</span></span>                                                                                                                          |
+| <span data-ttu-id="ff680-855">public void displayOrign(int Xpos, int Ypos)</span><span class="sxs-lookup"><span data-stu-id="ff680-855">public void displayOrign(int Xpos, int Ypos)</span></span>                                                                | <span data-ttu-id="ff680-856">オリジナルの発注元 (0, 0) から、オフセット (X, Y) を指定できるようにします。</span><span class="sxs-lookup"><span data-stu-id="ff680-856">Enables you to specify an offset (X, Y) from the original origin (0, 0).</span></span>                                                                      |
+| <span data-ttu-id="ff680-857">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-857">public void finalize()</span></span>                                                                                      |                                                                                                                                               |
+
+### <a name="method-capturescreen"></a><span data-ttu-id="ff680-858">メソッド captureScreen</span><span class="sxs-lookup"><span data-stu-id="ff680-858">Method captureScreen</span></span>
+
+<span data-ttu-id="ff680-859">パラメータ リストで指定された座標を使用して、スクリーンからイメージをキャプチャします。</span><span class="sxs-lookup"><span data-stu-id="ff680-859">Captures an image from the screen by using the coordinates that are supplied in the parameter list.</span></span>
+
+    public int captureScreen(int left, int top, int right, int bottom)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-860">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-860">Parameters</span></span>
+
+<span data-ttu-id="ff680-861">left</span><span class="sxs-lookup"><span data-stu-id="ff680-861">left</span></span>  
+<span data-ttu-id="ff680-862">キャプチャする画面の右下隅部分の Y 座標です。</span><span class="sxs-lookup"><span data-stu-id="ff680-862">Y coordinate of the lower-right corner of the part of the screen that you want to capture.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-863">戻る</span><span class="sxs-lookup"><span data-stu-id="ff680-863">top</span></span>  
+<span data-ttu-id="ff680-864">キャプチャする画面の右下隅部分の Y 座標です。</span><span class="sxs-lookup"><span data-stu-id="ff680-864">Y coordinate of the lower-right corner of the part of the screen that you want to capture.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-865">権限</span><span class="sxs-lookup"><span data-stu-id="ff680-865">right</span></span>  
+<span data-ttu-id="ff680-866">キャプチャする画面の右下隅部分の Y 座標です。</span><span class="sxs-lookup"><span data-stu-id="ff680-866">Y coordinate of the lower-right corner of the part of the screen that you want to capture.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-867">bottom</span><span class="sxs-lookup"><span data-stu-id="ff680-867">bottom</span></span>  
+<span data-ttu-id="ff680-868">キャプチャする画面の右下隅部分の Y 座標です。</span><span class="sxs-lookup"><span data-stu-id="ff680-868">Y coordinate of the lower-right corner of the part of the screen that you want to capture.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-869">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-869">Return Value</span></span>
+
+<span data-ttu-id="ff680-870">0 は、成功を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-870">0 indicates success.</span></span> <span data-ttu-id="ff680-871">その他の値はエラーを示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-871">Other values indicate failure.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-872">例</span><span class="sxs-lookup"><span data-stu-id="ff680-872">Examples</span></span>
+
+<span data-ttu-id="ff680-873">次の例では、画面の一部をキャプチャし、test.bmp という名前のファイルに保存します。</span><span class="sxs-lookup"><span data-stu-id="ff680-873">The following example captures a part of the screen and saves it to a file that is named test.bmp.</span></span>
+
+    Image img = new Image(); 
+    img.captureScreen(0, 0, 100, 100); 
+    img.saveFile(@'C:\test.bmp');
+
+### <a name="method-capturewindow"></a><span data-ttu-id="ff680-874">メソッド captureWindow</span><span class="sxs-lookup"><span data-stu-id="ff680-874">Method captureWindow</span></span>
+
+<span data-ttu-id="ff680-875">パラメータとして指定されたハンドルを使用して、ウィンドウをイメージとしてキャプチャします。</span><span class="sxs-lookup"><span data-stu-id="ff680-875">Captures a window as an image, using the handle that is supplied as a parameter.</span></span>
+
+    public int captureWindow(int hWnd)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-876">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-876">Parameters</span></span>
+
+<span data-ttu-id="ff680-877">hWnd</span><span class="sxs-lookup"><span data-stu-id="ff680-877">hWnd</span></span>  
+<span data-ttu-id="ff680-878">キャプチャするウィンドウのハンドル。整数として指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-878">The handle to the window that you want to capture which must be supplied as an integer.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-879">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-879">Return Value</span></span>
+
+<span data-ttu-id="ff680-880">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-880">0 indicates success; otherwise, failure.</span></span>
+
+### <a name="method-clipboardcopy"></a><span data-ttu-id="ff680-881">メソッド clipboardCopy</span><span class="sxs-lookup"><span data-stu-id="ff680-881">Method clipboardCopy</span></span>
+
+<span data-ttu-id="ff680-882">イメージをクリップボードにコピーします。</span><span class="sxs-lookup"><span data-stu-id="ff680-882">Copies an image to the clipboard.</span></span>
+
+    public int clipboardCopy()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-883">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-883">Return Value</span></span>
+
+<span data-ttu-id="ff680-884">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-884">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-885">例</span><span class="sxs-lookup"><span data-stu-id="ff680-885">Examples</span></span>
+
+<span data-ttu-id="ff680-886">次の例では、Test.bmp という名前のファイルからコンテンツをコピーします。</span><span class="sxs-lookup"><span data-stu-id="ff680-886">The following example copies the content from a file that is named Test.bmp.</span></span>
+
+    Image img = new Image(); 
+    img.loadFile(@'C:\Test.bmp'); 
+    img.clipboardCopy(); 
+    // Image can now be pasted into an application.
+
+### <a name="method-clipboardpaste"></a><span data-ttu-id="ff680-887">メソッド clipboardPaste</span><span class="sxs-lookup"><span data-stu-id="ff680-887">Method clipboardPaste</span></span>
+
+<span data-ttu-id="ff680-888">システムのクリップボードの内容で既存のイメージを上書きします。</span><span class="sxs-lookup"><span data-stu-id="ff680-888">Overwrites an existing image with the content of the system clipboard.</span></span>
+
+    public int clipboardPaste()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-889">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-889">Return Value</span></span>
+
+<span data-ttu-id="ff680-890">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-890">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-891">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-891">Remarks</span></span>
+
+<span data-ttu-id="ff680-892">正常に使用されるメソッドについては、クリップボードにコンテンツが必要です。</span><span class="sxs-lookup"><span data-stu-id="ff680-892">For the method to be used successfully, the clipboard must have content.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-893">例</span><span class="sxs-lookup"><span data-stu-id="ff680-893">Examples</span></span>
+
+<span data-ttu-id="ff680-894">次の例では、以前にクリップボードにコピーされたコンテンツを使用して新しいイメージ ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-894">The following example creates a new image file by using contents previously copied to the clipboard.</span></span>
+
+    Image img = new Image();
+    // Copy an image to the clipboard before this test 
+    img.clipboardPaste(); 
+    img.saveFile(@'C:\test.jpg');
+
+### <a name="method-copyimage"></a><span data-ttu-id="ff680-895">メソッド copyImage</span><span class="sxs-lookup"><span data-stu-id="ff680-895">Method copyImage</span></span>
+
+<span data-ttu-id="ff680-896">現在のイメージ オブジェクトをコピーします。</span><span class="sxs-lookup"><span data-stu-id="ff680-896">Copies the current image object.</span></span>
+
+    public int copyImage(Image image)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-897">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-897">Parameters</span></span>
+
+<span data-ttu-id="ff680-898">image</span><span class="sxs-lookup"><span data-stu-id="ff680-898">image</span></span>  
+<span data-ttu-id="ff680-899">コピーする画像。</span><span class="sxs-lookup"><span data-stu-id="ff680-899">The image to be copied.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-900">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-900">Return Value</span></span>
+
+<span data-ttu-id="ff680-901">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-901">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-902">例</span><span class="sxs-lookup"><span data-stu-id="ff680-902">Examples</span></span>
+
+<span data-ttu-id="ff680-903">次の例では、2 つの新しいイメージを作成し、1 つのイメージの内容をもう一方のイメージの内容で上書きします。</span><span class="sxs-lookup"><span data-stu-id="ff680-903">The following example creates two new images and then overwrites the contents of one image with the contents of the other.</span></span>
+
+    Image img =  new Image(); 
+    Image img2 = new Image(); 
+    img.loadFile(@'C:\test.bmp'); 
+    img2.loadFile(@'C:\test2.bmp'); 
+    img2.copyImage(img); //img2 now the same as img
+
+### <a name="method-createimage"></a><span data-ttu-id="ff680-904">メソッド createImage</span><span class="sxs-lookup"><span data-stu-id="ff680-904">Method createImage</span></span>
+
+<span data-ttu-id="ff680-905">パラメーターで指定された幅、高さ、および色深度を持つ空のビットマップ画像を作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-905">Creates an empty bitmap image with the width, height, and color depth as specified by the parameters.</span></span>
+
+    public int createImage(int Width, int Height, int BitsPerPixel)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-906">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-906">Parameters</span></span>
+
+<span data-ttu-id="ff680-907">幅</span><span class="sxs-lookup"><span data-stu-id="ff680-907">Width</span></span>  
+<span data-ttu-id="ff680-908">画像の色深度。</span><span class="sxs-lookup"><span data-stu-id="ff680-908">The color depth of the image.</span></span> <span data-ttu-id="ff680-909">有効値は 1、4、8、16、24、32 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-909">Possible values are 1, 4, 8, 16, 24, and 32.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-910">高さ</span><span class="sxs-lookup"><span data-stu-id="ff680-910">Height</span></span>  
+<span data-ttu-id="ff680-911">画像の色深度。</span><span class="sxs-lookup"><span data-stu-id="ff680-911">The color depth of the image.</span></span> <span data-ttu-id="ff680-912">有効値は 1、4、8、16、24、32 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-912">Possible values are 1, 4, 8, 16, 24, and 32.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-913">BitsPerPixel</span><span class="sxs-lookup"><span data-stu-id="ff680-913">BitsPerPixel</span></span>  
+<span data-ttu-id="ff680-914">画像の色深度。</span><span class="sxs-lookup"><span data-stu-id="ff680-914">The color depth of the image.</span></span> <span data-ttu-id="ff680-915">有効値は 1、4、8、16、24、32 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-915">Possible values are 1, 4, 8, 16, 24, and 32.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-916">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-916">Return Value</span></span>
+
+<span data-ttu-id="ff680-917">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-917">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-918">例</span><span class="sxs-lookup"><span data-stu-id="ff680-918">Examples</span></span>
+
+<span data-ttu-id="ff680-919">次の例では、高さと幅が 16 ピクセル、色深度がピクセルあたり 32 ビットのイメージを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-919">The following example creates an image with a height and width of 16 pixels, and a color depth of 32 bits per pixel.</span></span>
+
+    int i;
+    int j;
+    Image image;
+    image.createImage(
+        Imagelist::smallIconWidth(),
+        Imagelist::smallIconHeight(),
+        32);
+    for (i=0; i < Imagelist::smallIconWidth(); i++)
+    {
+        for (j=0; j < Imagelist::smallIconHeight(); j++)
+        {
+            if (i >= Imagelist::smallIconWidth()-2)
+            {
+                image.setPixel(i, j, WinAPI::RGB2int(0, 255, 255));
+            }
+            else
+            {
+                image.setPixel(i, j, WinAPI::imageTransparentColor());
+            }
+        }
+    }
+
+### <a name="method-crop"></a><span data-ttu-id="ff680-920">メソッド crop</span><span class="sxs-lookup"><span data-stu-id="ff680-920">Method crop</span></span>
+
+<span data-ttu-id="ff680-921">画像をトリミングします。</span><span class="sxs-lookup"><span data-stu-id="ff680-921">Crops the image.</span></span>
+
+    public int crop(int x, int y, int w, int h)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-922">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-922">Parameters</span></span>
+
+<span data-ttu-id="ff680-923">x</span><span class="sxs-lookup"><span data-stu-id="ff680-923">x</span></span>  
+<span data-ttu-id="ff680-924">点 (x、y) からトリミングする領域の高さ。</span><span class="sxs-lookup"><span data-stu-id="ff680-924">The height of the region that you want to crop from the point (x, y).</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-925">y</span><span class="sxs-lookup"><span data-stu-id="ff680-925">y</span></span>  
+<span data-ttu-id="ff680-926">点 (x、y) からトリミングする領域の高さ。</span><span class="sxs-lookup"><span data-stu-id="ff680-926">The height of the region that you want to crop from the point (x, y).</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-927">w</span><span class="sxs-lookup"><span data-stu-id="ff680-927">w</span></span>  
+<span data-ttu-id="ff680-928">点 (x、y) からトリミングする領域の高さ。</span><span class="sxs-lookup"><span data-stu-id="ff680-928">The height of the region that you want to crop from the point (x, y).</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-929">h</span><span class="sxs-lookup"><span data-stu-id="ff680-929">h</span></span>  
+<span data-ttu-id="ff680-930">点 (x、y) からトリミングする領域の高さ。</span><span class="sxs-lookup"><span data-stu-id="ff680-930">The height of the region that you want to crop from the point (x, y).</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-931">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-931">Return Value</span></span>
+
+<span data-ttu-id="ff680-932">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-932">0 indicates success; otherwise, failure.</span></span>
+
+### <a name="method-displayimage"></a><span data-ttu-id="ff680-933">メソッド displayImage</span><span class="sxs-lookup"><span data-stu-id="ff680-933">Method displayImage</span></span>
+
+<span data-ttu-id="ff680-934">HDC パラメーターで指定されたデバイス コンテキストに画像を描画します。</span><span class="sxs-lookup"><span data-stu-id="ff680-934">Draws an image with the device context specified by the HDC parameter.</span></span>
+
+    public int displayImage(Int64 HDC, [int Mode], [int Xpos], [int Ypos], [int Width], [int Height])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-935">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-935">Parameters</span></span>
+
+<span data-ttu-id="ff680-936">HDC</span><span class="sxs-lookup"><span data-stu-id="ff680-936">HDC</span></span>  
+<span data-ttu-id="ff680-937">オプションのパラメーター。</span><span class="sxs-lookup"><span data-stu-id="ff680-937">Optional parameter.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-938">モード</span><span class="sxs-lookup"><span data-stu-id="ff680-938">Mode</span></span>  
+<span data-ttu-id="ff680-939">オプションのパラメーター。</span><span class="sxs-lookup"><span data-stu-id="ff680-939">Optional parameter.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-940">Xpos</span><span class="sxs-lookup"><span data-stu-id="ff680-940">Xpos</span></span>  
+<span data-ttu-id="ff680-941">オプションのパラメーター。</span><span class="sxs-lookup"><span data-stu-id="ff680-941">Optional parameter.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-942">Ypos</span><span class="sxs-lookup"><span data-stu-id="ff680-942">Ypos</span></span>  
+<span data-ttu-id="ff680-943">オプションのパラメーター。</span><span class="sxs-lookup"><span data-stu-id="ff680-943">Optional parameter.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-944">幅</span><span class="sxs-lookup"><span data-stu-id="ff680-944">Width</span></span>  
+<span data-ttu-id="ff680-945">オプションのパラメーター。</span><span class="sxs-lookup"><span data-stu-id="ff680-945">Optional parameter.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-946">高さ</span><span class="sxs-lookup"><span data-stu-id="ff680-946">Height</span></span>  
+<span data-ttu-id="ff680-947">オプションのパラメーター。</span><span class="sxs-lookup"><span data-stu-id="ff680-947">Optional parameter.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-948">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-948">Return Value</span></span>
+
+<span data-ttu-id="ff680-949">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-949">0 indicates success; otherwise, failure.</span></span>
+
+### <a name="method-exportbitmap"></a><span data-ttu-id="ff680-950">メソッド exportBitmap</span><span class="sxs-lookup"><span data-stu-id="ff680-950">Method exportBitmap</span></span>
+
+<span data-ttu-id="ff680-951">画像のハンドルを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-951">Gets a handle for the image.</span></span>
+
+    public Int64 exportBitmap()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-952">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-952">Return Value</span></span>
+
+<span data-ttu-id="ff680-953">画像のハンドル を表す整数。</span><span class="sxs-lookup"><span data-stu-id="ff680-953">An integer that represents the handle for the image.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-954">例</span><span class="sxs-lookup"><span data-stu-id="ff680-954">Examples</span></span>
+
+<span data-ttu-id="ff680-955">次の例では、イメージのハンドルを取得し、ハンドルを使用してイメージを複製します。</span><span class="sxs-lookup"><span data-stu-id="ff680-955">The following example retrieves the handle for an image and then uses the handle to clone the image.</span></span>
+
+    { 
+        int hdlBitmap; 
+        Image img = new Image(); 
+        Image img2 = new Image(); 
+        img.loadImage(@'C:\MyImage.bmp'); 
+        //Set hdlBitmap to handle for MyImage.bmp 
+        hdlBitmap = img.exportBitmap(); 
+        //Load MyImage.bmp to img2 using image handle 
+        if (hdlBitmap) 
+        { 
+            img2.importBitmap(hdlBitmap); 
+        } 
+    }
+
+### <a name="method-flip"></a><span data-ttu-id="ff680-956">メソッド flip</span><span class="sxs-lookup"><span data-stu-id="ff680-956">Method flip</span></span>
+
+<span data-ttu-id="ff680-957">画像を垂直または水平方向に 180 度回転します。</span><span class="sxs-lookup"><span data-stu-id="ff680-957">Rotates the image 180 degrees in a vertical or horizontal direction.</span></span>
+
+    public int flip(FlipType FlipType)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-958">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-958">Parameters</span></span>
+
+<span data-ttu-id="ff680-959">FlipType</span><span class="sxs-lookup"><span data-stu-id="ff680-959">FlipType</span></span>  
+<span data-ttu-id="ff680-960">イメージを反転させる方法を決定する FlipType 列挙。</span><span class="sxs-lookup"><span data-stu-id="ff680-960">A FlipType enumeration that determines the way in which the image is flipped.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-961">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-961">Return Value</span></span>
+
+<span data-ttu-id="ff680-962">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-962">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-963">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-963">Remarks</span></span>
+
+<span data-ttu-id="ff680-964">FlipType パラメーターの使用可能な値は FlipType システム列挙で使用可能な次の値です。</span><span class="sxs-lookup"><span data-stu-id="ff680-964">The possible values for the FlipType parameter are those available in the FlipType system enum:</span></span>
+
+|     |                    |                                                          |
+|-----|--------------------|----------------------------------------------------------|
+| <span data-ttu-id="ff680-965">0</span><span class="sxs-lookup"><span data-stu-id="ff680-965">0</span></span>   | <span data-ttu-id="ff680-966">RotateNoneFlipNone</span><span class="sxs-lookup"><span data-stu-id="ff680-966">RotateNoneFlipNone</span></span> | <span data-ttu-id="ff680-967">反転なし</span><span class="sxs-lookup"><span data-stu-id="ff680-967">No flip</span></span>                                                  |
+| <span data-ttu-id="ff680-968">1</span><span class="sxs-lookup"><span data-stu-id="ff680-968">1</span></span>   | <span data-ttu-id="ff680-969">RotateNoneFlipX</span><span class="sxs-lookup"><span data-stu-id="ff680-969">RotateNoneFlipX</span></span>    | <span data-ttu-id="ff680-970">画像を水平方向に 180 度回転します。</span><span class="sxs-lookup"><span data-stu-id="ff680-970">Rotates the image 180 degrees in a horizontal direction.</span></span> |
+| <span data-ttu-id="ff680-971">2</span><span class="sxs-lookup"><span data-stu-id="ff680-971">2</span></span>   | <span data-ttu-id="ff680-972">RotateNoneFlipX</span><span class="sxs-lookup"><span data-stu-id="ff680-972">RotateNoneFlipY</span></span>    | <span data-ttu-id="ff680-973">画像を垂直方向に 180 度回転します。</span><span class="sxs-lookup"><span data-stu-id="ff680-973">Rotates the image 180 degrees in a vertical direction.</span></span>   |
+
+### <a name="method-getimagedimensionunits"></a><span data-ttu-id="ff680-974">メソッド getImageDimensionUnits</span><span class="sxs-lookup"><span data-stu-id="ff680-974">Method getImageDimensionUnits</span></span>
+
+    public container getImageDimensionUnits()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-975">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-975">Return Value</span></span>
+
+### <a name="method-getpixel"></a><span data-ttu-id="ff680-976">メソッド getPixel</span><span class="sxs-lookup"><span data-stu-id="ff680-976">Method getPixel</span></span>
+
+<span data-ttu-id="ff680-977">パラメーターで指定されたポイントで、ピクセルの ARGB カラーの値を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-977">Retrieves the ARGB color value of the pixel at the point that is specified by the parameters.</span></span>
+
+    public int getPixel(int x, int y)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-978">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-978">Parameters</span></span>
+
+<span data-ttu-id="ff680-979">x</span><span class="sxs-lookup"><span data-stu-id="ff680-979">x</span></span>  
+<span data-ttu-id="ff680-980">ピクセルの垂直座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-980">The vertical coordinate of the pixel.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-981">y</span><span class="sxs-lookup"><span data-stu-id="ff680-981">y</span></span>  
+<span data-ttu-id="ff680-982">ピクセルの垂直座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-982">The vertical coordinate of the pixel.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-983">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-983">Return Value</span></span>
+
+<span data-ttu-id="ff680-984">ピクセルの ARGB 値である整数 (RGB カラーの 32 ビット表示) 。</span><span class="sxs-lookup"><span data-stu-id="ff680-984">An integer that is the ARGB value of the pixel (a 32-bit representation of an RGB color).</span></span>
+
+### <a name="method-height"></a><span data-ttu-id="ff680-985">メソッド height</span><span class="sxs-lookup"><span data-stu-id="ff680-985">Method height</span></span>
+
+<span data-ttu-id="ff680-986">ピクセル単位の画像の高さを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-986">Retrieves the height of the image in pixels.</span></span>
+
+    public int height()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-987">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-987">Return Value</span></span>
+
+<span data-ttu-id="ff680-988">画像の高さをピクセル単位で表す整数。</span><span class="sxs-lookup"><span data-stu-id="ff680-988">An integer that represents the height of the image in pixels.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-989">例</span><span class="sxs-lookup"><span data-stu-id="ff680-989">Examples</span></span>
+
+<span data-ttu-id="ff680-990">次の例では、test.bmp に含まれるイメージの高さを出力します。</span><span class="sxs-lookup"><span data-stu-id="ff680-990">The following example prints out the height of the image that is contained in test.bmp.</span></span>
+
+    Image img = new Image(); 
+    img.loadFile(@'C:\test.bmp'); 
+    print img.height(); 
+    pause;
+
+### <a name="method-imageinfo"></a><span data-ttu-id="ff680-991">メソッド imageInfo</span><span class="sxs-lookup"><span data-stu-id="ff680-991">Method imageInfo</span></span>
+
+<span data-ttu-id="ff680-992">画像の幅、高さ、色深度を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-992">Retrieves the width, height, and color depth of the image.</span></span>
+
+    public container imageInfo()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-993">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-993">Return Value</span></span>
+
+<span data-ttu-id="ff680-994">画像の幅、画像の高さ、およびピクセルあたりのビット数を指定する値を保持するコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="ff680-994">A container that holds values that specify the width of the image, the height of the image, and the number of bits per pixel.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-995">例</span><span class="sxs-lookup"><span data-stu-id="ff680-995">Examples</span></span>
+
+<span data-ttu-id="ff680-996">次の例では、イメージ test.bmp の幅と高さを出力し、ピクセルあたりのビット数で色深度を指定しています。</span><span class="sxs-lookup"><span data-stu-id="ff680-996">The following example prints out the width and height of the image test.bmp, and specifies the color depth in bits per pixel.</span></span>
+
+    Image img = new Image(); 
+    container c; 
+    img.loadFile(@'C:\Test.bmp'); 
+    c = img.imageInfo(); 
+    print con2str(c); 
+    pause;
+
+### <a name="method-imagespotlight"></a><span data-ttu-id="ff680-997">メソッド imageSpotlight</span><span class="sxs-lookup"><span data-stu-id="ff680-997">Method imageSpotlight</span></span>
+
+<span data-ttu-id="ff680-998">センター座標 x および y で半径により定義された円内のスポットライト効果を生成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-998">Produces a spotlight effect within the circle that is defined by radius with center coordinates x and y.</span></span>
+
+    public int imageSpotlight(int x, int y, int radius, int smoothing, int intensity)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-999">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-999">Parameters</span></span>
+
+<span data-ttu-id="ff680-1000">x</span><span class="sxs-lookup"><span data-stu-id="ff680-1000">x</span></span>  
+<span data-ttu-id="ff680-1001">周辺のピクセルの強度。</span><span class="sxs-lookup"><span data-stu-id="ff680-1001">The intensity of the surrounding pixels.</span></span> <span data-ttu-id="ff680-1002">可能な値は 0 ～ 100 (%) までです。</span><span class="sxs-lookup"><span data-stu-id="ff680-1002">The possible values are between 0 and 100 (%).</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1003">y</span><span class="sxs-lookup"><span data-stu-id="ff680-1003">y</span></span>  
+<span data-ttu-id="ff680-1004">周辺のピクセルの強度。</span><span class="sxs-lookup"><span data-stu-id="ff680-1004">The intensity of the surrounding pixels.</span></span> <span data-ttu-id="ff680-1005">可能な値は 0 ～ 100 (%) までです。</span><span class="sxs-lookup"><span data-stu-id="ff680-1005">The possible values are between 0 and 100 (%).</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1006">radius</span><span class="sxs-lookup"><span data-stu-id="ff680-1006">radius</span></span>  
+<span data-ttu-id="ff680-1007">周辺のピクセルの強度。</span><span class="sxs-lookup"><span data-stu-id="ff680-1007">The intensity of the surrounding pixels.</span></span> <span data-ttu-id="ff680-1008">可能な値は 0 ～ 100 (%) までです。</span><span class="sxs-lookup"><span data-stu-id="ff680-1008">The possible values are between 0 and 100 (%).</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1009">平滑化</span><span class="sxs-lookup"><span data-stu-id="ff680-1009">smoothing</span></span>  
+<span data-ttu-id="ff680-1010">周辺のピクセルの強度。</span><span class="sxs-lookup"><span data-stu-id="ff680-1010">The intensity of the surrounding pixels.</span></span> <span data-ttu-id="ff680-1011">可能な値は 0 ～ 100 (%) までです。</span><span class="sxs-lookup"><span data-stu-id="ff680-1011">The possible values are between 0 and 100 (%).</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1012">intensity</span><span class="sxs-lookup"><span data-stu-id="ff680-1012">intensity</span></span>  
+<span data-ttu-id="ff680-1013">周辺のピクセルの強度。</span><span class="sxs-lookup"><span data-stu-id="ff680-1013">The intensity of the surrounding pixels.</span></span> <span data-ttu-id="ff680-1014">可能な値は 0 ～ 100 (%) までです。</span><span class="sxs-lookup"><span data-stu-id="ff680-1014">The possible values are between 0 and 100 (%).</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1015">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1015">Return Value</span></span>
+
+<span data-ttu-id="ff680-1016">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1016">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1017">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1017">Remarks</span></span>
+
+<span data-ttu-id="ff680-1018">円内のピクセルは変更されませんが、イメージ内の他のピクセルはその明度を減らすことで暗くなります。</span><span class="sxs-lookup"><span data-stu-id="ff680-1018">The pixels within the circle are unchanged, but the other pixels in the image are darkened by reducing their intensity.</span></span>
+
+### <a name="method-importbitmap"></a><span data-ttu-id="ff680-1019">メソッド importBitmap</span><span class="sxs-lookup"><span data-stu-id="ff680-1019">Method importBitmap</span></span>
+
+<span data-ttu-id="ff680-1020">hBitmap パラメータで指定されたイメージからビットマップをクローンします。</span><span class="sxs-lookup"><span data-stu-id="ff680-1020">Clones a bitmap from the image that is specified by the hBitmap parameter.</span></span>
+
+    public int importBitmap(Int64 hBitmap)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1021">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1021">Parameters</span></span>
+
+<span data-ttu-id="ff680-1022">hBitmap</span><span class="sxs-lookup"><span data-stu-id="ff680-1022">hBitmap</span></span>  
+<span data-ttu-id="ff680-1023">複製する画像のハンドルです。</span><span class="sxs-lookup"><span data-stu-id="ff680-1023">The handle to the image that you clone.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1024">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1024">Return Value</span></span>
+
+<span data-ttu-id="ff680-1025">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1025">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1026">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1026">Examples</span></span>
+
+<span data-ttu-id="ff680-1027">次の例では、イメージのハンドルを取得してから、importBitmap メソッドを使用してイメージを複製します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1027">The following example retrieves the handle for an image and then uses the importBitmap method to clone the image.</span></span>
+
+    { 
+        int hdlBitmap; 
+        Image img = new Image(); 
+        Image img2 = new Image(); 
+        img.loadImage(@'C:\MyImage.bmp'); 
+        //Set hdlBitmap to handle for MyImage.bmp 
+        hdlBitmap = img.exportBitmap(); 
+        //Load MyImage.bmp to img2 using image handle 
+        if (hdlBitmap) 
+        { 
+            img2.importBitmap(hdlBitmap); 
+        } 
+    }
+
+### <a name="method-importfileicon"></a><span data-ttu-id="ff680-1028">メソッド importFileIcon</span><span class="sxs-lookup"><span data-stu-id="ff680-1028">Method importFileIcon</span></span>
+
+<span data-ttu-id="ff680-1029">ファイルに使用されているアイコンをコピーすることにより、fileName パラメーターで指定されたファイルからアイコンを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1029">Creates an icon from the file specified by the fileName parameter by copying the icon that is used for the file.</span></span>
+
+    public int importFileIcon(str fileName)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1030">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1030">Parameters</span></span>
+
+<span data-ttu-id="ff680-1031">fileName</span><span class="sxs-lookup"><span data-stu-id="ff680-1031">fileName</span></span>  
+<span data-ttu-id="ff680-1032">アイコンを作成するファイルの名前とパス。</span><span class="sxs-lookup"><span data-stu-id="ff680-1032">The name and the path of the file from which you create an icon.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1033">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1033">Return Value</span></span>
+
+<span data-ttu-id="ff680-1034">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1034">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1035">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1035">Examples</span></span>
+
+<span data-ttu-id="ff680-1036">次の例では、ファイル test.bmp に使用されているアイコンをコピーします。</span><span class="sxs-lookup"><span data-stu-id="ff680-1036">The following example copies the icon that is used for the file test.bmp.</span></span>
+
+    Image img = new Image(); 
+    img.importFileIcon(@'C:\test.bmp'); 
+    img.clipboardCopy(); 
+    // Icon used for test.bmp can now be pasted into an application.
+
+### <a name="method-importicon"></a><span data-ttu-id="ff680-1037">メソッド importIcon</span><span class="sxs-lookup"><span data-stu-id="ff680-1037">Method importIcon</span></span>
+
+<span data-ttu-id="ff680-1038">Finance and Operations の実行可能ファイルからアイコンへのハンドルを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1038">Retrieves a handle to an icon from an executable file in Finance and Operations.</span></span> <span data-ttu-id="ff680-1039">このアイコンは、fileName および iconIdx パラメーターで指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1039">The icon is specified by the fileName and iconIdx parameters.</span></span>
+
+    public int importIcon(str fileName, int iconIdx)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1040">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1040">Parameters</span></span>
+
+<span data-ttu-id="ff680-1041">fileName</span><span class="sxs-lookup"><span data-stu-id="ff680-1041">fileName</span></span>  
+<span data-ttu-id="ff680-1042">指定したファイル内のリソース。</span><span class="sxs-lookup"><span data-stu-id="ff680-1042">The resource within the specified file.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1043">iconIdx</span><span class="sxs-lookup"><span data-stu-id="ff680-1043">iconIdx</span></span>  
+<span data-ttu-id="ff680-1044">指定したファイル内のリソース。</span><span class="sxs-lookup"><span data-stu-id="ff680-1044">The resource within the specified file.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1045">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1045">Return Value</span></span>
+
+<span data-ttu-id="ff680-1046">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1046">0 indicates success; otherwise, failure.</span></span>
+
+### <a name="method-loadimage"></a><span data-ttu-id="ff680-1047">メソッド loadImage</span><span class="sxs-lookup"><span data-stu-id="ff680-1047">Method loadImage</span></span>
+
+<span data-ttu-id="ff680-1048">fileName パラメーターで指定されたファイルからイメージを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1048">Loads an image from the file specified by the fileName parameter.</span></span>
+
+    public int loadImage(str fileName)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1049">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1049">Parameters</span></span>
+
+<span data-ttu-id="ff680-1050">fileName</span><span class="sxs-lookup"><span data-stu-id="ff680-1050">fileName</span></span>  
+<span data-ttu-id="ff680-1051">画像を読み込む元となるリソース。</span><span class="sxs-lookup"><span data-stu-id="ff680-1051">The resource from which you want to load the image.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1052">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1052">Return Value</span></span>
+
+<span data-ttu-id="ff680-1053">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1053">0 indicates success; otherwise, failure.</span></span>
+
+### <a name="method-loadresource"></a><span data-ttu-id="ff680-1054">メソッド loadResource</span><span class="sxs-lookup"><span data-stu-id="ff680-1054">Method loadResource</span></span>
+
+<span data-ttu-id="ff680-1055">Ax32.exe からリソースを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1055">Loads a resource from Ax32.exe.</span></span>
+
+    public int loadResource(int id)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1056">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1056">Parameters</span></span>
+
+<span data-ttu-id="ff680-1057">id</span><span class="sxs-lookup"><span data-stu-id="ff680-1057">id</span></span>  
+<span data-ttu-id="ff680-1058">読み込むリソースの ID。</span><span class="sxs-lookup"><span data-stu-id="ff680-1058">The ID of the resource that you want to load.</span></span> <span data-ttu-id="ff680-1059">リソースの値は、Resources マクロにあります。</span><span class="sxs-lookup"><span data-stu-id="ff680-1059">Values of resources can be found in the Resources macro.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1060">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1060">Return Value</span></span>
+
+<span data-ttu-id="ff680-1061">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1061">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1062">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1062">Examples</span></span>
+
+<span data-ttu-id="ff680-1063">次の例では、イメージ リストに 2つ のリソースを追加します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1063">The following example adds two resources to an image list.</span></span>
+
+    #Resource 
+    Image img; 
+    ImageList imageList; 
+    imageList = new Imagelist( 
+        Imagelist::smallIconWidth(), 
+        Imagelist::smallIconHeight()); 
+    img = new Image(); 
+    img.loadResource(#RES_NODE_CLOSED); 
+    imageList.add(img); 
+    img = new Image(); 
+    img.loadResource(#RES_NODE_OPEN); 
+    imageList.add(img);
+
+### <a name="method-promotecolor"></a><span data-ttu-id="ff680-1064">メソッド promoteColor</span><span class="sxs-lookup"><span data-stu-id="ff680-1064">Method promoteColor</span></span>
+
+<span data-ttu-id="ff680-1065">画像の色深度を向上させます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1065">Increases the color depth of the image.</span></span>
+
+    public int promoteColor(int noOfColorBits)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1066">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1066">Parameters</span></span>
+
+<span data-ttu-id="ff680-1067">noOfColorBits</span><span class="sxs-lookup"><span data-stu-id="ff680-1067">noOfColorBits</span></span>  
+<span data-ttu-id="ff680-1068">イメージのレベルを上げるビット数。</span><span class="sxs-lookup"><span data-stu-id="ff680-1068">The number of bits that you want to promote the image to.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1069">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1069">Return Value</span></span>
+
+<span data-ttu-id="ff680-1070">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1070">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1071">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1071">Remarks</span></span>
+
+<span data-ttu-id="ff680-1072">このメソッドは次を推進します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1072">The method promotes:</span></span>
+
+-   <span data-ttu-id="ff680-1073">8 ビット画像を 24、32 ビットに。</span><span class="sxs-lookup"><span data-stu-id="ff680-1073">8-bit images to 24 or 32 bits.</span></span>
+-   <span data-ttu-id="ff680-1074">4 ビット画像を 8、24、32 ビットに。</span><span class="sxs-lookup"><span data-stu-id="ff680-1074">4-bit images to 8, 24, or 32 bits.</span></span>
+-   <span data-ttu-id="ff680-1075">1 ビット画像を 4、8、24、32 ビットに。</span><span class="sxs-lookup"><span data-stu-id="ff680-1075">1-bit images to 4, 8, 24, or 32 bits.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1076">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1076">Examples</span></span>
+
+<span data-ttu-id="ff680-1077">次の例では、イメージの色深度が 8 ビット以上でない場合は、ピクセルあたり 8 ビットに増やしています。</span><span class="sxs-lookup"><span data-stu-id="ff680-1077">The following example increases the color depth of an image to 8 bits per pixel, unless it is already 8 or more.</span></span>
+
+    Image img = new Image(); 
+    img.loadFile(@'C:\test.bmp'); 
+    if (conpeek(img.imageInfo(),3) <8) 
+    { 
+        img.promoteColor(8); 
+    }
+
+### <a name="method-reducecoloroctree"></a><span data-ttu-id="ff680-1078">メソッド reduceColorOctree</span><span class="sxs-lookup"><span data-stu-id="ff680-1078">Method reduceColorOctree</span></span>
+
+<span data-ttu-id="ff680-1079">画像の色深度を減少させます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1079">Reduces the color depth of an image.</span></span>
+
+    public int reduceColorOctree(int maxColors)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1080">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1080">Parameters</span></span>
+
+<span data-ttu-id="ff680-1081">maxColors</span><span class="sxs-lookup"><span data-stu-id="ff680-1081">maxColors</span></span>  
+<span data-ttu-id="ff680-1082">最大色数。</span><span class="sxs-lookup"><span data-stu-id="ff680-1082">The maximum number of colors.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1083">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1083">Return Value</span></span>
+
+<span data-ttu-id="ff680-1084">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1084">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1085">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1085">Remarks</span></span>
+
+<span data-ttu-id="ff680-1086">このメソッドは、他の指示が maxColors パラメーターで指定されていない限り、24 ビット イメージを 8 ビットに、または 8 ビット イメージを 4 ビットに縮小します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1086">The method reduces a 24-bit image to 8 bits, or an 8-bit image to 4 bits, unless other instructions are specified in the maxColors parameter.</span></span> <span data-ttu-id="ff680-1087">MaxColors パラメーターが 16 以下の場合は、4 ビット イメージが生成されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1087">If the maxColors parameter is less than or equal to 16, a 4-bit image is produced.</span></span> <span data-ttu-id="ff680-1088">MaxColors が 16 を超える場合は、8 ビット画像が生成されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1088">If maxColors is more than 16, an 8-bit image is produced.</span></span>
+
+### <a name="method-removeimage"></a><span data-ttu-id="ff680-1089">メソッド removeImage</span><span class="sxs-lookup"><span data-stu-id="ff680-1089">Method removeImage</span></span>
+
+<span data-ttu-id="ff680-1090">画像に関するデータを削除します。オブジェクトはまだ存在しますが、データを持ちません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1090">Removes the data about an image; the object still exists, but has no data.</span></span>
+
+    public int removeImage()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1091">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1091">Return Value</span></span>
+
+<span data-ttu-id="ff680-1092">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1092">0 indicates success; otherwise, failure.</span></span>
+
+### <a name="method-resize"></a><span data-ttu-id="ff680-1093">メソッド resize</span><span class="sxs-lookup"><span data-stu-id="ff680-1093">Method resize</span></span>
+
+<span data-ttu-id="ff680-1094">newWidth および newHeight パラメーターにより指定されたサイズに画像をサイズ変更します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1094">Resizes the image to the size that is specified by the newWidth and newHeight parameters.</span></span>
+
+    public int resize(int newWidth, int newHeight, InterpolationMode InterpolationMode)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1095">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1095">Parameters</span></span>
+
+<span data-ttu-id="ff680-1096">newWidth</span><span class="sxs-lookup"><span data-stu-id="ff680-1096">newWidth</span></span>  
+<span data-ttu-id="ff680-1097">resizing メソッド。</span><span class="sxs-lookup"><span data-stu-id="ff680-1097">The resizing method.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1098">newHeight</span><span class="sxs-lookup"><span data-stu-id="ff680-1098">newHeight</span></span>  
+<span data-ttu-id="ff680-1099">resizing メソッド。</span><span class="sxs-lookup"><span data-stu-id="ff680-1099">The resizing method.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1100">InterpolationMode</span><span class="sxs-lookup"><span data-stu-id="ff680-1100">InterpolationMode</span></span>  
+<span data-ttu-id="ff680-1101">resizing メソッド。</span><span class="sxs-lookup"><span data-stu-id="ff680-1101">The resizing method.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1102">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1102">Return Value</span></span>
+
+<span data-ttu-id="ff680-1103">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1103">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1104">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1104">Remarks</span></span>
+
+<span data-ttu-id="ff680-1105">InterpolationMode パラメーターの使用可能な値は InterpolationMode システム列挙で使用可能な次の値です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1105">The possible values for the InterpolationMode parameter are those available in the InterpolationMode system enum:</span></span>
+
+|     |                                      |                                                                                                                                                                        |
+|-----|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="ff680-1106">0</span><span class="sxs-lookup"><span data-stu-id="ff680-1106">0</span></span>   | <span data-ttu-id="ff680-1107">InterpolationModeDefault</span><span class="sxs-lookup"><span data-stu-id="ff680-1107">InterpolationModeDefault</span></span>             | <span data-ttu-id="ff680-1108">既定の補間モードを指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1108">Specifies the default interpolation mode.</span></span>                                                                                                                              |
+| <span data-ttu-id="ff680-1109">1</span><span class="sxs-lookup"><span data-stu-id="ff680-1109">1</span></span>   | <span data-ttu-id="ff680-1110">InterpolationModeLowQuality</span><span class="sxs-lookup"><span data-stu-id="ff680-1110">InterpolationModeLowQuality</span></span>          | <span data-ttu-id="ff680-1111">低品質モードを指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1111">Specifies a low-quality mode.</span></span>                                                                                                                                          |
+| <span data-ttu-id="ff680-1112">2</span><span class="sxs-lookup"><span data-stu-id="ff680-1112">2</span></span>   | <span data-ttu-id="ff680-1113">InterpolationModeHighQuality</span><span class="sxs-lookup"><span data-stu-id="ff680-1113">InterpolationModeHighQuality</span></span>         | <span data-ttu-id="ff680-1114">高品質モードを指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1114">Specifies a high-quality mode.</span></span>                                                                                                                                         |
+| <span data-ttu-id="ff680-1115">3</span><span class="sxs-lookup"><span data-stu-id="ff680-1115">3</span></span>   | <span data-ttu-id="ff680-1116">InterpolationModeBilinear</span><span class="sxs-lookup"><span data-stu-id="ff680-1116">InterpolationModeBilinear</span></span>            | <span data-ttu-id="ff680-1117">線状補間を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1117">Specifies bilinear interpolation.</span></span> <span data-ttu-id="ff680-1118">事前フィルター処理は行われません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1118">No pre-filtering is done.</span></span> <span data-ttu-id="ff680-1119">このメソッドは、画像を元のサイズの 50％ 以下に縮小するのには適していません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1119">This method is not suitable for shrinking an image below 50% of its original size.</span></span>                         |
+| <span data-ttu-id="ff680-1120">4</span><span class="sxs-lookup"><span data-stu-id="ff680-1120">4</span></span>   | <span data-ttu-id="ff680-1121">InterpolationModeBicubic</span><span class="sxs-lookup"><span data-stu-id="ff680-1121">InterpolationModeBicubic</span></span>             | <span data-ttu-id="ff680-1122">バイキュービック補間を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1122">Specifies bicubic interpolation.</span></span> <span data-ttu-id="ff680-1123">事前フィルター処理は行われません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1123">No pre-filtering is done.</span></span> <span data-ttu-id="ff680-1124">このメソッドは、画像を元のサイズの 25％ 以下に縮小するのには適していません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1124">This method is not suitable for shrinking an image below 25% of its original size.</span></span>                          |
+| <span data-ttu-id="ff680-1125">5</span><span class="sxs-lookup"><span data-stu-id="ff680-1125">5</span></span>   | <span data-ttu-id="ff680-1126">InterpolationModeNearestNeighbor</span><span class="sxs-lookup"><span data-stu-id="ff680-1126">InterpolationModeNearestNeighbor</span></span>     | <span data-ttu-id="ff680-1127">ニアレストネイバー補間を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1127">Specifies nearest-neighbor interpolation.</span></span>                                                                                                                              |
+| <span data-ttu-id="ff680-1128">6</span><span class="sxs-lookup"><span data-stu-id="ff680-1128">6</span></span>   | <span data-ttu-id="ff680-1129">InterpolationModeHighQualityBilinear</span><span class="sxs-lookup"><span data-stu-id="ff680-1129">InterpolationModeHighQualityBilinear</span></span> | <span data-ttu-id="ff680-1130">高品質な線状補間を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1130">Specifies high-quality, bilinear interpolation.</span></span> <span data-ttu-id="ff680-1131">高品質圧縮を確実に行うため、事前フィルター処理が実行されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1131">Pre-filtering is performed to ensure high-quality shrinking.</span></span>                                                           |
+| <span data-ttu-id="ff680-1132">7</span><span class="sxs-lookup"><span data-stu-id="ff680-1132">7</span></span>   | <span data-ttu-id="ff680-1133">InterpolationModeHighQualityBicubic</span><span class="sxs-lookup"><span data-stu-id="ff680-1133">InterpolationModeHighQualityBicubic</span></span>  | <span data-ttu-id="ff680-1134">高品質なバイキュービック補間を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1134">Specifies high-quality, bicubic interpolation.</span></span> <span data-ttu-id="ff680-1135">高品質圧縮を確実に行うため、事前フィルター処理が実行されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1135">Pre-filtering is performed to ensure high-quality shrinking.</span></span> <span data-ttu-id="ff680-1136">このモードでは、最高品質の変換画像が生成されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1136">This mode produces the highest quality transformed images.</span></span> |
+
+### <a name="method-rotate"></a><span data-ttu-id="ff680-1137">メソッド rotate</span><span class="sxs-lookup"><span data-stu-id="ff680-1137">Method rotate</span></span>
+
+<span data-ttu-id="ff680-1138">画像を回転します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1138">Rotates the image.</span></span>
+
+    public int rotate(RotateType RotateType)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1139">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1139">Parameters</span></span>
+
+<span data-ttu-id="ff680-1140">RotateType</span><span class="sxs-lookup"><span data-stu-id="ff680-1140">RotateType</span></span>  
+<span data-ttu-id="ff680-1141">イメージを回転する量。</span><span class="sxs-lookup"><span data-stu-id="ff680-1141">The amount to rotate the image by.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1142">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1142">Return Value</span></span>
+
+<span data-ttu-id="ff680-1143">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1143">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1144">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1144">Remarks</span></span>
+
+<span data-ttu-id="ff680-1145">RotateType パラメーターの使用可能な値は RotateType システム列挙で使用可能な次の値です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1145">The possible values for the RotateType parameter are those available in the RotateType system enum:</span></span>
+
+|     |                    |                          |
+|-----|--------------------|--------------------------|
+| <span data-ttu-id="ff680-1146">0</span><span class="sxs-lookup"><span data-stu-id="ff680-1146">0</span></span>   | <span data-ttu-id="ff680-1147">RotateNoneFlipNone</span><span class="sxs-lookup"><span data-stu-id="ff680-1147">RotateNoneFlipNone</span></span> | <span data-ttu-id="ff680-1148">回転なし。</span><span class="sxs-lookup"><span data-stu-id="ff680-1148">No rotation.</span></span>             |
+| <span data-ttu-id="ff680-1149">1</span><span class="sxs-lookup"><span data-stu-id="ff680-1149">1</span></span>   | <span data-ttu-id="ff680-1150">Rotate90FlipNone</span><span class="sxs-lookup"><span data-stu-id="ff680-1150">Rotate90FlipNone</span></span>   | <span data-ttu-id="ff680-1151">90 度回転します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1151">Rotation by 90 degrees.</span></span>  |
+| <span data-ttu-id="ff680-1152">2</span><span class="sxs-lookup"><span data-stu-id="ff680-1152">2</span></span>   | <span data-ttu-id="ff680-1153">Rotate180FlipNone</span><span class="sxs-lookup"><span data-stu-id="ff680-1153">Rotate180FlipNone</span></span>  | <span data-ttu-id="ff680-1154">180 度回転します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1154">Rotation by 180 degrees.</span></span> |
+| <span data-ttu-id="ff680-1155">3</span><span class="sxs-lookup"><span data-stu-id="ff680-1155">3</span></span>   | <span data-ttu-id="ff680-1156">Rotate270FlipNone</span><span class="sxs-lookup"><span data-stu-id="ff680-1156">Rotate270FlipNone</span></span>  | <span data-ttu-id="ff680-1157">270 度回転します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1157">Rotation by 270 degrees.</span></span> |
+
+### <a name="method-saveimage"></a><span data-ttu-id="ff680-1158">メソッド saveImage</span><span class="sxs-lookup"><span data-stu-id="ff680-1158">Method saveImage</span></span>
+
+<span data-ttu-id="ff680-1159">指定されたファイル名に画像を保存します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1159">Saves the image to the specified file name.</span></span>
+
+    public int saveImage(str fileName, [ImageSaveType Type])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1160">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1160">Parameters</span></span>
+
+<span data-ttu-id="ff680-1161">fileName</span><span class="sxs-lookup"><span data-stu-id="ff680-1161">fileName</span></span>  
+<span data-ttu-id="ff680-1162">ファイル拡張子で指定された形式とは異なる形式でファイルを保存するように指定できる ImageSaveType (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ff680-1162">An ImageSaveType that enables you to specify that the file should be saved as a different format from that specified by the file extension; optional.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1163">種類</span><span class="sxs-lookup"><span data-stu-id="ff680-1163">Type</span></span>  
+<span data-ttu-id="ff680-1164">ファイル拡張子で指定された形式とは異なる形式でファイルを保存するように指定できる ImageSaveType (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ff680-1164">An ImageSaveType that enables you to specify that the file should be saved as a different format from that specified by the file extension; optional.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1165">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1165">Return Value</span></span>
+
+<span data-ttu-id="ff680-1166">メソッドが成功した場合、0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1166">0 if the method was successful.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1167">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1167">Remarks</span></span>
+
+<span data-ttu-id="ff680-1168">Type パラメーターの使用可能な値は ImageSaveType システム列挙で使用可能な値です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1168">The possible values for the Type parameter are those available in the ImageSaveType system enum.</span></span> <span data-ttu-id="ff680-1169">たとえば、.jpg ファイルとして test.bmp を保存することができます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1169">For example, you could save test.bmp as a .jpg file.</span></span>
+
+|     |                |
+|-----|----------------|
+| <span data-ttu-id="ff680-1170">0</span><span class="sxs-lookup"><span data-stu-id="ff680-1170">0</span></span>   | <span data-ttu-id="ff680-1171">\_エクステンションの使用</span><span class="sxs-lookup"><span data-stu-id="ff680-1171">Use\_Extension</span></span> |
+| <span data-ttu-id="ff680-1172">1</span><span class="sxs-lookup"><span data-stu-id="ff680-1172">1</span></span>   | <span data-ttu-id="ff680-1173">BMP</span><span class="sxs-lookup"><span data-stu-id="ff680-1173">BMP</span></span>            |
+| <span data-ttu-id="ff680-1174">2</span><span class="sxs-lookup"><span data-stu-id="ff680-1174">2</span></span>   | <span data-ttu-id="ff680-1175">GIF</span><span class="sxs-lookup"><span data-stu-id="ff680-1175">GIF</span></span>            |
+| <span data-ttu-id="ff680-1176">3</span><span class="sxs-lookup"><span data-stu-id="ff680-1176">3</span></span>   | <span data-ttu-id="ff680-1177">JPG</span><span class="sxs-lookup"><span data-stu-id="ff680-1177">JPG</span></span>            |
+| <span data-ttu-id="ff680-1178">4</span><span class="sxs-lookup"><span data-stu-id="ff680-1178">4</span></span>   | <span data-ttu-id="ff680-1179">PNG</span><span class="sxs-lookup"><span data-stu-id="ff680-1179">PNG</span></span>            |
+| <span data-ttu-id="ff680-1180">5</span><span class="sxs-lookup"><span data-stu-id="ff680-1180">5</span></span>   | <span data-ttu-id="ff680-1181">TIFF</span><span class="sxs-lookup"><span data-stu-id="ff680-1181">TIFF</span></span>           |
+| <span data-ttu-id="ff680-1182">6</span><span class="sxs-lookup"><span data-stu-id="ff680-1182">6</span></span>   | <span data-ttu-id="ff680-1183">BMP\_UNCOMP</span><span class="sxs-lookup"><span data-stu-id="ff680-1183">BMP\_UNCOMP</span></span>    |
+| <span data-ttu-id="ff680-1184">7</span><span class="sxs-lookup"><span data-stu-id="ff680-1184">7</span></span>   | <span data-ttu-id="ff680-1185">TIF\_UNCOMP</span><span class="sxs-lookup"><span data-stu-id="ff680-1185">TIF\_UNCOMP</span></span>    |
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1186">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1186">Examples</span></span>
+
+<span data-ttu-id="ff680-1187">次の例では、画面の一部をファイルにキャプチャし、その画像をロードします。</span><span class="sxs-lookup"><span data-stu-id="ff680-1187">The following example captures part of the screen to a file, and then loads that image.</span></span>
+
+    Image img = new Image(); 
+    img.captureScreen(0, 0, 100, 100); 
+    img.saveImage(@'C:\test.bmp'); 
+    img.loadFile(@'C:\test.bmp');
+
+### <a name="method-savetype"></a><span data-ttu-id="ff680-1188">メソッド saveType</span><span class="sxs-lookup"><span data-stu-id="ff680-1188">Method saveType</span></span>
+
+<span data-ttu-id="ff680-1189">イメージ デコーダを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1189">Gets or sets the image decoder.</span></span>
+
+    public ImageSaveType saveType([ImageSaveType Type])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1190">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1190">Parameters</span></span>
+
+<span data-ttu-id="ff680-1191">種類</span><span class="sxs-lookup"><span data-stu-id="ff680-1191">Type</span></span>  
+<span data-ttu-id="ff680-1192">設定するデコーダのタイプ (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ff680-1192">The type of decoder that you want to set; optional.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1193">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1193">Return Value</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1194">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1194">Remarks</span></span>
+
+<span data-ttu-id="ff680-1195">Type パラメーターの使用可能な値は ImageSaveType システム列挙で使用可能な次の値です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1195">The possible values for the Type parameter are those available in the ImageSaveType system enum:</span></span>
+
+|     |                |
+|-----|----------------|
+| <span data-ttu-id="ff680-1196">0</span><span class="sxs-lookup"><span data-stu-id="ff680-1196">0</span></span>   | <span data-ttu-id="ff680-1197">\_エクステンションの使用</span><span class="sxs-lookup"><span data-stu-id="ff680-1197">Use\_Extension</span></span> |
+| <span data-ttu-id="ff680-1198">1</span><span class="sxs-lookup"><span data-stu-id="ff680-1198">1</span></span>   | <span data-ttu-id="ff680-1199">BMP</span><span class="sxs-lookup"><span data-stu-id="ff680-1199">BMP</span></span>            |
+| <span data-ttu-id="ff680-1200">2</span><span class="sxs-lookup"><span data-stu-id="ff680-1200">2</span></span>   | <span data-ttu-id="ff680-1201">GIF</span><span class="sxs-lookup"><span data-stu-id="ff680-1201">GIF</span></span>            |
+| <span data-ttu-id="ff680-1202">3</span><span class="sxs-lookup"><span data-stu-id="ff680-1202">3</span></span>   | <span data-ttu-id="ff680-1203">JPG</span><span class="sxs-lookup"><span data-stu-id="ff680-1203">JPG</span></span>            |
+| <span data-ttu-id="ff680-1204">4</span><span class="sxs-lookup"><span data-stu-id="ff680-1204">4</span></span>   | <span data-ttu-id="ff680-1205">PNG</span><span class="sxs-lookup"><span data-stu-id="ff680-1205">PNG</span></span>            |
+| <span data-ttu-id="ff680-1206">5</span><span class="sxs-lookup"><span data-stu-id="ff680-1206">5</span></span>   | <span data-ttu-id="ff680-1207">TIFF</span><span class="sxs-lookup"><span data-stu-id="ff680-1207">TIFF</span></span>           |
+| <span data-ttu-id="ff680-1208">6</span><span class="sxs-lookup"><span data-stu-id="ff680-1208">6</span></span>   | <span data-ttu-id="ff680-1209">BMP\_UNCOMP</span><span class="sxs-lookup"><span data-stu-id="ff680-1209">BMP\_UNCOMP</span></span>    |
+| <span data-ttu-id="ff680-1210">7</span><span class="sxs-lookup"><span data-stu-id="ff680-1210">7</span></span>   | <span data-ttu-id="ff680-1211">TIF\_UNCOMP</span><span class="sxs-lookup"><span data-stu-id="ff680-1211">TIF\_UNCOMP</span></span>    |
+
+### <a name="method-setpixel"></a><span data-ttu-id="ff680-1212">メソッド setPixel</span><span class="sxs-lookup"><span data-stu-id="ff680-1212">Method setPixel</span></span>
+
+<span data-ttu-id="ff680-1213">x と y パラメーターで指定されているピクセルの色を設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1213">Sets the color for the pixel that is specified by the x and y parameters.</span></span>
+
+    public int setPixel(int x, int y, int pixel)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1214">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1214">Parameters</span></span>
+
+<span data-ttu-id="ff680-1215">x</span><span class="sxs-lookup"><span data-stu-id="ff680-1215">x</span></span>  
+<span data-ttu-id="ff680-1216">使用する色の ARGB 値。</span><span class="sxs-lookup"><span data-stu-id="ff680-1216">The ARGB value of the color that you want to use.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1217">y</span><span class="sxs-lookup"><span data-stu-id="ff680-1217">y</span></span>  
+<span data-ttu-id="ff680-1218">使用する色の ARGB 値。</span><span class="sxs-lookup"><span data-stu-id="ff680-1218">The ARGB value of the color that you want to use.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1219">pixel</span><span class="sxs-lookup"><span data-stu-id="ff680-1219">pixel</span></span>  
+<span data-ttu-id="ff680-1220">使用する色の ARGB 値。</span><span class="sxs-lookup"><span data-stu-id="ff680-1220">The ARGB value of the color that you want to use.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1221">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1221">Return Value</span></span>
+
+<span data-ttu-id="ff680-1222">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1222">0 indicates success; otherwise, failure.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1223">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1223">Remarks</span></span>
+
+<span data-ttu-id="ff680-1224">RGB カラー値を ARGB 値に変換するには、Image::rgb メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1224">To convert an RGB color value to an ARGB value, use the Image::rgb Method.</span></span>
+
+### <a name="method-transparent"></a><span data-ttu-id="ff680-1225">メソッド transparent</span><span class="sxs-lookup"><span data-stu-id="ff680-1225">Method transparent</span></span>
+
+<span data-ttu-id="ff680-1226">画像の透明な色を設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1226">Sets the transparent color for the image.</span></span>
+
+    public int transparent([boolean Set], [int RValue], [int GValue], [int BValue])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1227">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1227">Parameters</span></span>
+
+<span data-ttu-id="ff680-1228">セット</span><span class="sxs-lookup"><span data-stu-id="ff680-1228">Set</span></span>  
+<span data-ttu-id="ff680-1229">設定する色の青の値; オプション。</span><span class="sxs-lookup"><span data-stu-id="ff680-1229">Blue value of the color that you want to set; optional.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1230">RValue</span><span class="sxs-lookup"><span data-stu-id="ff680-1230">RValue</span></span>  
+<span data-ttu-id="ff680-1231">設定する色の青の値; オプション。</span><span class="sxs-lookup"><span data-stu-id="ff680-1231">Blue value of the color that you want to set; optional.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1232">GValue</span><span class="sxs-lookup"><span data-stu-id="ff680-1232">GValue</span></span>  
+<span data-ttu-id="ff680-1233">設定する色の青の値; オプション。</span><span class="sxs-lookup"><span data-stu-id="ff680-1233">Blue value of the color that you want to set; optional.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1234">BValue</span><span class="sxs-lookup"><span data-stu-id="ff680-1234">BValue</span></span>  
+<span data-ttu-id="ff680-1235">設定する色の青の値; オプション。</span><span class="sxs-lookup"><span data-stu-id="ff680-1235">Blue value of the color that you want to set; optional.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1236">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1236">Return Value</span></span>
+
+<span data-ttu-id="ff680-1237">0 は、成功を示し、それ以外の場合は、失敗を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1237">0 to indicate success; otherwise, failure.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1238">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1238">Remarks</span></span>
+
+<span data-ttu-id="ff680-1239">入力パラメーターのいずれかがない場合は、画像内の位置 (0, 0) での色が使用されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1239">If any of the input parameters are missing, the color at the point (0,0) in the image is used.</span></span> <span data-ttu-id="ff680-1240">色を指定する場合、パラメーター 2 から 4 を使用すると、RGB カラーとして表記されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1240">If you want to specify a color, this is expressed as an RGB color by using parameters 2 to 4.</span></span>
+
+### <a name="method-width"></a><span data-ttu-id="ff680-1241">メソッド width</span><span class="sxs-lookup"><span data-stu-id="ff680-1241">Method width</span></span>
+
+<span data-ttu-id="ff680-1242">ピクセル単位の画像の幅を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1242">Retrieves the width of the image in pixels.</span></span>
+
+    public int width()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1243">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1243">Return Value</span></span>
+
+<span data-ttu-id="ff680-1244">画像の幅をピクセル単位で表す整数。</span><span class="sxs-lookup"><span data-stu-id="ff680-1244">An integer that represents the width of the image in pixels.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1245">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1245">Examples</span></span>
+
+<span data-ttu-id="ff680-1246">次の例では、test.bmp ファイル内のイメージの幅を出力します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1246">The following example prints out the width of the image in the test.bmp file.</span></span>
+
+    Image img = new Image(); 
+    img.loadFile(@'C:\test.bmp'); 
+    print img.width(); 
+    pause;
+
+### <a name="method-canload"></a><span data-ttu-id="ff680-1247">メソッド canLoad</span><span class="sxs-lookup"><span data-stu-id="ff680-1247">Method canLoad</span></span>
+
+<span data-ttu-id="ff680-1248">画像ファイルが存在し、開くことができるかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1248">Determines whether an image file exists and can be opened.</span></span>
+
+    public static int canLoad(str filename)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1249">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1249">Parameters</span></span>
+
+<span data-ttu-id="ff680-1250">filename</span><span class="sxs-lookup"><span data-stu-id="ff680-1250">filename</span></span>  
+<span data-ttu-id="ff680-1251">確認するファイルの名前とパス。</span><span class="sxs-lookup"><span data-stu-id="ff680-1251">The name and path of the file to check.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1252">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1252">Return Value</span></span>
+
+<span data-ttu-id="ff680-1253">画像が検索され、開くことができる場合は 1、それ以外の場合、0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1253">1 if the image is found and can be opened; otherwise, 0.</span></span>
+
+### <a name="method-loadext"></a><span data-ttu-id="ff680-1254">メソッド loadExt</span><span class="sxs-lookup"><span data-stu-id="ff680-1254">Method loadExt</span></span>
+
+<span data-ttu-id="ff680-1255">Image クラスでサポートされているファイル形式の拡張機能の一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1255">Retrieves a list of the extensions of the file formats that are supported by the Image class.</span></span>
+
+    public static container loadExt(int idx)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1256">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1256">Parameters</span></span>
+
+<span data-ttu-id="ff680-1257">idx</span><span class="sxs-lookup"><span data-stu-id="ff680-1257">idx</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1258">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1258">Return Value</span></span>
+
+<span data-ttu-id="ff680-1259">サポートされているファイル形式の一覧を保持するコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="ff680-1259">A container that holds a list of the supported file formats.</span></span>
+
+### <a name="method-resourcetype"></a><span data-ttu-id="ff680-1260">メソッド resourceType</span><span class="sxs-lookup"><span data-stu-id="ff680-1260">Method resourceType</span></span>
+
+<span data-ttu-id="ff680-1261">特定のリソースがビットマップかアイコンかを判別します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1261">Determines whether a particular resource is a bitmap or an icon.</span></span>
+
+    public static int resourceType(int resourceIdx)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1262">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1262">Parameters</span></span>
+
+<span data-ttu-id="ff680-1263">resourceIdx</span><span class="sxs-lookup"><span data-stu-id="ff680-1263">resourceIdx</span></span>  
+<span data-ttu-id="ff680-1264">読み込むリソースの ID。</span><span class="sxs-lookup"><span data-stu-id="ff680-1264">The ID of the resource that you want to load.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1265">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1265">Return Value</span></span>
+
+<span data-ttu-id="ff680-1266">画像がビットマップの場合は 0、アイコンの場合は 1 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1266">0 if the image is a bitmap; 1 if it is an icon.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1267">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1267">Remarks</span></span>
+
+<span data-ttu-id="ff680-1268">リソースの値は、Resources マクロにあります。</span><span class="sxs-lookup"><span data-stu-id="ff680-1268">The values of resources can be found in the Resources macro.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1269">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1269">Examples</span></span>
+
+<span data-ttu-id="ff680-1270">次の例では、リソース 3020 がアイコンかビットマップかどうかをテストします。</span><span class="sxs-lookup"><span data-stu-id="ff680-1270">The following example tests whether resource 3020 is an icon or a bitmap.</span></span>
+
+    #Resource 
+    print Image::resourceType(3020); 
+    pause;
+
+### <a name="method-rgb"></a><span data-ttu-id="ff680-1271">メソッド rgb</span><span class="sxs-lookup"><span data-stu-id="ff680-1271">Method rgb</span></span>
+
+<span data-ttu-id="ff680-1272">RGB 値を ARGB 値に変換します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1272">Converts an RGB value to an ARGB value.</span></span>
+
+    public static int rgb(int R, int G, int B)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1273">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1273">Parameters</span></span>
+
+<span data-ttu-id="ff680-1274">R</span><span class="sxs-lookup"><span data-stu-id="ff680-1274">R</span></span>  
+<span data-ttu-id="ff680-1275">色の青の値。</span><span class="sxs-lookup"><span data-stu-id="ff680-1275">The blue value of the color.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1276">G</span><span class="sxs-lookup"><span data-stu-id="ff680-1276">G</span></span>  
+<span data-ttu-id="ff680-1277">色の青の値。</span><span class="sxs-lookup"><span data-stu-id="ff680-1277">The blue value of the color.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1278">B</span><span class="sxs-lookup"><span data-stu-id="ff680-1278">B</span></span>  
+<span data-ttu-id="ff680-1279">色の青の値。</span><span class="sxs-lookup"><span data-stu-id="ff680-1279">The blue value of the color.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1280">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1280">Return Value</span></span>
+
+<span data-ttu-id="ff680-1281">パラメーターで指定された色の ARGB 値を表す整数。</span><span class="sxs-lookup"><span data-stu-id="ff680-1281">An integer that represents the ARGB value of the color that is specified by the parameters.</span></span>
+
+### <a name="method-validresource"></a><span data-ttu-id="ff680-1282">メソッド validResource</span><span class="sxs-lookup"><span data-stu-id="ff680-1282">Method validResource</span></span>
+
+<span data-ttu-id="ff680-1283">id パラメータで指定されたリソースが有効かどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1283">Determines whether the resource specified by the id parameter is valid.</span></span>
+
+    public static int validResource(int id)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1284">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1284">Parameters</span></span>
+
+<span data-ttu-id="ff680-1285">id</span><span class="sxs-lookup"><span data-stu-id="ff680-1285">id</span></span>  
+<span data-ttu-id="ff680-1286">チェックするリソースの ID。</span><span class="sxs-lookup"><span data-stu-id="ff680-1286">The ID of the resource that you want to check.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1287">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1287">Return Value</span></span>
+
+<span data-ttu-id="ff680-1288">ID が有効な場合、0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1288">0 if the ID is valid.</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-1289">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-1289">Method new</span></span>
+
+<span data-ttu-id="ff680-1290">新しい画像を作成します</span><span class="sxs-lookup"><span data-stu-id="ff680-1290">Creates a new image.</span></span>
+
+    public void new([AnyType image], [int width], [int height])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1291">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1291">Parameters</span></span>
+
+<span data-ttu-id="ff680-1292">image</span><span class="sxs-lookup"><span data-stu-id="ff680-1292">image</span></span>  
+<span data-ttu-id="ff680-1293">ピクセル単位の画像の高さ (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ff680-1293">The height of the image in pixels; optional.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1294">width</span><span class="sxs-lookup"><span data-stu-id="ff680-1294">width</span></span>  
+<span data-ttu-id="ff680-1295">ピクセル単位の画像の高さ (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ff680-1295">The height of the image in pixels; optional.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1296">height</span><span class="sxs-lookup"><span data-stu-id="ff680-1296">height</span></span>  
+<span data-ttu-id="ff680-1297">ピクセル単位の画像の高さ (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ff680-1297">The height of the image in pixels; optional.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1298">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1298">Remarks</span></span>
+
+<span data-ttu-id="ff680-1299">パラメーターを指定する必要はありませんが、イメージの内容とサイズを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1299">You do not need to specify any parameters, but it is possible to specify the image contents and size.</span></span> <span data-ttu-id="ff680-1300">画像パラメーターについては、ファイル名および場所、リソース、配列での特定の画像、または別の画像オブジェクトを指定できます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1300">For the image parameter, you can specify a file name and location, a resource, a particular image in an array, or another Image object.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1301">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1301">Examples</span></span>
+
+<span data-ttu-id="ff680-1302">次の例は、新しいイメージ オブジェクトの既存のコンテンツをオプションで指定する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="ff680-1302">The following examples illustrate how you can optionally specify the existing content for the new image object.</span></span>
+
+    Image img1 = new Image(@"C:\MyPicture.jpg", 100, 100); 
+    Image img2 = new Image(121,100, 100); // Uses resource 121 in Ax32.exe 
+    Image img4 = new Image(img1, 200, 200);
+
+### <a name="method-displayorign"></a><span data-ttu-id="ff680-1303">メソッド displayOrign</span><span class="sxs-lookup"><span data-stu-id="ff680-1303">Method displayOrign</span></span>
+
+<span data-ttu-id="ff680-1304">オリジナルの発注元 (0, 0) から、オフセット (X, Y) を指定できるようにします。</span><span class="sxs-lookup"><span data-stu-id="ff680-1304">Enables you to specify an offset (X, Y) from the original origin (0, 0).</span></span>
+
+    public void displayOrign(int Xpos, int Ypos)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1305">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1305">Parameters</span></span>
+
+<span data-ttu-id="ff680-1306">Xpos</span><span class="sxs-lookup"><span data-stu-id="ff680-1306">Xpos</span></span>  
+<span data-ttu-id="ff680-1307">原点に対する新しい Y (垂直) 座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-1307">New Y (vertical) coordinate for the origin.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1308">Ypos</span><span class="sxs-lookup"><span data-stu-id="ff680-1308">Ypos</span></span>  
+<span data-ttu-id="ff680-1309">原点に対する新しい Y (垂直) 座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-1309">New Y (vertical) coordinate for the origin.</span></span>
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-1310">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-1310">Method finalize</span></span>
+
+    public void finalize()
+
+## <a name="class-imagelist"></a><span data-ttu-id="ff680-1311">クラス Imagelist</span><span class="sxs-lookup"><span data-stu-id="ff680-1311">Class Imagelist</span></span>
+    class Imagelist extends BinData
+
+<span data-ttu-id="ff680-1312">Imagelist クラスを使用すると、イメージの一覧を操作できます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1312">The Imagelist class lets you work with a list of images.</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-1313">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1313">Remarks</span></span>
+
+<span data-ttu-id="ff680-1314">1 つの画像を操作するには、イメージ クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1314">To work with a single image, use the Image class.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-1315">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1315">Examples</span></span>
+
+<span data-ttu-id="ff680-1316">次の例では、イメージ リストを作成し、Shell32.dll ファイルにアイコンを追加します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1316">The following example creates an image list and adds the icons in the Shell32.dll file.</span></span> <span data-ttu-id="ff680-1317">一覧の 4 番目のメンバーを削除します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1317">It then deletes the fourth member of the list.</span></span>
+
+    Imagelist list = new Imagelist( 
+        Imagelist::iconWidth(), 
+        Imagelist::iconHeight() ); 
+    list.loadIcons('shell32.dll'); 
+    print list.count(); 
+    list.remove(4); 
+    print list.count(); 
+    pause;
+
+### <a name="methods"></a><span data-ttu-id="ff680-1318">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-1318">Methods</span></span>
+
+| <span data-ttu-id="ff680-1319">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-1319">Method</span></span>                                                                         | <span data-ttu-id="ff680-1320">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-1320">Description</span></span>                                                                                                                        |
+|--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="ff680-1321">public int add(Image image)</span><span class="sxs-lookup"><span data-stu-id="ff680-1321">public int add(Image image)</span></span>                                                    | <span data-ttu-id="ff680-1322">イメージ リストに新しい画像を追加します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1322">Adds a new image to the image list.</span></span>                                                                                                |
+| <span data-ttu-id="ff680-1323">public boolean autoResize(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1323">public boolean autoResize(\[boolean value\])</span></span>                                   | <span data-ttu-id="ff680-1324">新しいイメージを自動的にサイズ変更するかどうかを決定するブール値の autoResize フラグを設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1324">Sets the Boolean autoResize flag, which determines whether new images are automatically resized.</span></span>                                   |
+| <span data-ttu-id="ff680-1325">public int clear()</span><span class="sxs-lookup"><span data-stu-id="ff680-1325">public int clear()</span></span>                                                             | <span data-ttu-id="ff680-1326">イメージ リストからすべての画像を削除します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1326">Removes all images from the image list.</span></span>                                                                                            |
+| <span data-ttu-id="ff680-1327">public int count()</span><span class="sxs-lookup"><span data-stu-id="ff680-1327">public int count()</span></span>                                                             | <span data-ttu-id="ff680-1328">画像リスト内のイメージの数を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1328">Retrieves the number of images in an image list.</span></span>                                                                                   |
+| <span data-ttu-id="ff680-1329">public boolean dragBegin(int imageIdx, int hotSpotX, int hotSpotY)</span><span class="sxs-lookup"><span data-stu-id="ff680-1329">public boolean dragBegin(int imageIdx, int hotSpotX, int hotSpotY)</span></span>             | <span data-ttu-id="ff680-1330">イメージのドラッグを開始します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1330">Begins dragging an image.</span></span>                                                                                                          |
+| <span data-ttu-id="ff680-1331">public boolean dragEnd()</span><span class="sxs-lookup"><span data-stu-id="ff680-1331">public boolean dragEnd()</span></span>                                                       | <span data-ttu-id="ff680-1332">ドラッグ操作を終了します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1332">Ends a drag operation.</span></span>                                                                                                             |
+| <span data-ttu-id="ff680-1333">public boolean dragEnter(int hWnd, int x, int y)</span><span class="sxs-lookup"><span data-stu-id="ff680-1333">public boolean dragEnter(int hWnd, int x, int y)</span></span>                               | <span data-ttu-id="ff680-1334">ドラッグ操作中に指定されたウィンドウの更新をロックし、ウィンドウの指定された位置にドラッグ イメージを表示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1334">Locks updates to the specified window during a drag operation and displays the drag image at the specified position in the window.</span></span> |
+| <span data-ttu-id="ff680-1335">public boolean dragLeave(int hWnd)</span><span class="sxs-lookup"><span data-stu-id="ff680-1335">public boolean dragLeave(int hWnd)</span></span>                                             | <span data-ttu-id="ff680-1336">指定したウィンドウのロックを解除し、ドラッグ イメージを非表示にして、ウィンドウを更新します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1336">Unlocks the specified window and hides the drag image, so that the window to be updated.</span></span>                                           |
+| <span data-ttu-id="ff680-1337">public boolean dragMove(int x, int y)</span><span class="sxs-lookup"><span data-stu-id="ff680-1337">public boolean dragMove(int x, int y)</span></span>                                          | <span data-ttu-id="ff680-1338">ドラッグ アンド ドロップ操作中にドラッグされているイメージを移動します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1338">Moves the image that is being dragged during a drag-and-drop operation.</span></span>                                                            |
+| <span data-ttu-id="ff680-1339">public boolean dragShowImage(boolean show)</span><span class="sxs-lookup"><span data-stu-id="ff680-1339">public boolean dragShowImage(boolean show)</span></span>                                     | <span data-ttu-id="ff680-1340">ドラッグされている画像の表示と非表示を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1340">Shows or hides the image that is being dragged.</span></span>                                                                                    |
+| <span data-ttu-id="ff680-1341">public int height()</span><span class="sxs-lookup"><span data-stu-id="ff680-1341">public int height()</span></span>                                                            | <span data-ttu-id="ff680-1342">イメージ リスト内のイメージの高さ (ピクセル単位) を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1342">Retrieves the height, in pixels, of the images in the image list.</span></span>                                                                  |
+| <span data-ttu-id="ff680-1343">public int loadIcons(str moduleName)</span><span class="sxs-lookup"><span data-stu-id="ff680-1343">public int loadIcons(str moduleName)</span></span>                                           | <span data-ttu-id="ff680-1344">イメージ リストに、指定されたリソースからアイコンを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1344">Loads icons from the specified resource into the image list.</span></span>                                                                       |
+| <span data-ttu-id="ff680-1345">public int remove(int imageIdx)</span><span class="sxs-lookup"><span data-stu-id="ff680-1345">public int remove(int imageIdx)</span></span>                                                | <span data-ttu-id="ff680-1346">イメージ リストから画像を削除します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1346">Removes an image from an image list.</span></span>                                                                                               |
+| <span data-ttu-id="ff680-1347">public int replace(int imageIdx, Image image)</span><span class="sxs-lookup"><span data-stu-id="ff680-1347">public int replace(int imageIdx, Image image)</span></span>                                  | <span data-ttu-id="ff680-1348">リスト内の既存の画像を置き換えます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1348">Replaces an existing image in the list.</span></span>                                                                                            |
+| <span data-ttu-id="ff680-1349">public boolean setOverlayImage(int imageIdx, int overlayIdx)</span><span class="sxs-lookup"><span data-stu-id="ff680-1349">public boolean setOverlayImage(int imageIdx, int overlayIdx)</span></span>                   | <span data-ttu-id="ff680-1350">オーバーレイ マスクとして使用する画像の一覧に、画像を追加します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1350">Adds an image to the list of images to use as overlay masks.</span></span>                                                                       |
+| <span data-ttu-id="ff680-1351">public int width()</span><span class="sxs-lookup"><span data-stu-id="ff680-1351">public int width()</span></span>                                                             | <span data-ttu-id="ff680-1352">イメージ リスト内のイメージの幅 (ピクセル単位) を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1352">Retrieves the width, in pixels, of the images in the image list.</span></span>                                                                   |
+| <span data-ttu-id="ff680-1353">::public static int iconHeight()</span><span class="sxs-lookup"><span data-stu-id="ff680-1353">::public static int iconHeight()</span></span>                                               | <span data-ttu-id="ff680-1354">標準アイコンの高さのシステム メトリックを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1354">Retrieves the system metrics for the height of a standard icon.</span></span>                                                                    |
+| <span data-ttu-id="ff680-1355">::public static int iconWidth()</span><span class="sxs-lookup"><span data-stu-id="ff680-1355">::public static int iconWidth()</span></span>                                                | <span data-ttu-id="ff680-1356">標準アイコンの幅のシステム メトリックを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1356">Retrieves the system metrics for the width of a standard icon.</span></span>                                                                     |
+| <span data-ttu-id="ff680-1357">::public static int smallIconHeight()</span><span class="sxs-lookup"><span data-stu-id="ff680-1357">::public static int smallIconHeight()</span></span>                                          | <span data-ttu-id="ff680-1358">小さなアイコンの高さのシステム メトリックを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1358">Retrieves the system metrics for the height of a small icon.</span></span>                                                                       |
+| <span data-ttu-id="ff680-1359">::public static int smallIconWidth()</span><span class="sxs-lookup"><span data-stu-id="ff680-1359">::public static int smallIconWidth()</span></span>                                           | <span data-ttu-id="ff680-1360">小さなアイコンの幅のシステム メトリックを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1360">Retrieves the system metrics for the width of a small icon.</span></span>                                                                        |
+| <span data-ttu-id="ff680-1361">public void maskColor(int Color)</span><span class="sxs-lookup"><span data-stu-id="ff680-1361">public void maskColor(int Color)</span></span>                                               | <span data-ttu-id="ff680-1362">マスキング色を設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1362">Sets the masking color.</span></span>                                                                                                            |
+| <span data-ttu-id="ff680-1363">public void draw(int HDC, int imageIdx, int x, int y, \[boolean transparent\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1363">public void draw(int HDC, int imageIdx, int x, int y, \[boolean transparent\])</span></span> | <span data-ttu-id="ff680-1364">指定されたデバイス コンテキストで画像リスト項目を描画します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1364">Draws an image list item in the specified device context.</span></span>                                                                          |
+| <span data-ttu-id="ff680-1365">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-1365">public void finalize()</span></span>                                                         |                                                                                                                                    |
+| <span data-ttu-id="ff680-1366">public void new(int cx, int cy, \[boolean transparent\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1366">public void new(int cx, int cy, \[boolean transparent\])</span></span>                       | <span data-ttu-id="ff680-1367">画像を保持する新しい空のリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1367">Creates a new empty list to hold images.</span></span>                                                                                           |
+
+### <a name="method-add"></a><span data-ttu-id="ff680-1368">メソッド add</span><span class="sxs-lookup"><span data-stu-id="ff680-1368">Method add</span></span>
+
+<span data-ttu-id="ff680-1369">イメージ リストに新しい画像を追加します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1369">Adds a new image to the image list.</span></span>
+
+    public int add(Image image)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1370">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1370">Parameters</span></span>
+
+<span data-ttu-id="ff680-1371">image</span><span class="sxs-lookup"><span data-stu-id="ff680-1371">image</span></span>  
+<span data-ttu-id="ff680-1372">リストに追加する新しい画像。</span><span class="sxs-lookup"><span data-stu-id="ff680-1372">The new image to add to the list.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1373">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1373">Return Value</span></span>
+
+<span data-ttu-id="ff680-1374">メソッドが成功した場合、0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1374">0 if the method is successful.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1375">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1375">Remarks</span></span>
+
+<span data-ttu-id="ff680-1376">autoResize メソッドを使用すると、リストに追加するときにイメージのサイズを自動的に変更することができます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1376">You can use the autoResize method to automatically resize images when you add them to the list.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1377">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1377">Examples</span></span>
+
+<span data-ttu-id="ff680-1378">次の例では、新しいイメージ リストを作成し、3 つのイメージを追加します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1378">The following example creates a new image list and adds three images to it.</span></span>
+
+    ImageList list = new Imagelist( 
+        Imagelist::smallIconWidth(), 
+        Imagelist::smallIconHeight()); 
+    list.add(new Image(3104)); 
+    list.add(new Image(1097)); 
+    list.add(new Image(1200)); 
+    // Prints 3 
+    print list.count(); 
+    pause;
+
+### <a name="method-autoresize"></a><span data-ttu-id="ff680-1379">メソッド autoResize</span><span class="sxs-lookup"><span data-stu-id="ff680-1379">Method autoResize</span></span>
+
+<span data-ttu-id="ff680-1380">新しいイメージを自動的にサイズ変更するかどうかを決定するブール値の autoResize フラグを設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1380">Sets the Boolean autoResize flag, which determines whether new images are automatically resized.</span></span>
+
+    public boolean autoResize([boolean value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1381">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1381">Parameters</span></span>
+
+<span data-ttu-id="ff680-1382">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1382">value</span></span>  
+<span data-ttu-id="ff680-1383">autoResize フラグが設定されているかどうかを示すブール値; オプション。</span><span class="sxs-lookup"><span data-stu-id="ff680-1383">A Boolean value that determines whether the autoResize flag is set; optional.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1384">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1384">Return Value</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1385">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1385">Remarks</span></span>
+
+<span data-ttu-id="ff680-1386">autoResize フラッグが true に設定されている場合、リストに追加する任意の画像サイズは、画像リストの作成時に指定された分析コードに自動的に再調整されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1386">If the autoResize flag is set to true, any image that you add to the list is automatically resized to the dimensions that were specified when you created the image list.</span></span>
+
+### <a name="method-clear"></a><span data-ttu-id="ff680-1387">メソッド clear</span><span class="sxs-lookup"><span data-stu-id="ff680-1387">Method clear</span></span>
+
+<span data-ttu-id="ff680-1388">イメージ リストからすべての画像を削除します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1388">Removes all images from the image list.</span></span>
+
+    public int clear()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1389">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1389">Return Value</span></span>
+
+<span data-ttu-id="ff680-1390">メソッドが成功した場合、0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1390">0 if the method is successful.</span></span>
+
+### <a name="method-count"></a><span data-ttu-id="ff680-1391">メソッド count</span><span class="sxs-lookup"><span data-stu-id="ff680-1391">Method count</span></span>
+
+<span data-ttu-id="ff680-1392">画像リスト内のイメージの数を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1392">Retrieves the number of images in an image list.</span></span>
+
+    public int count()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1393">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1393">Return Value</span></span>
+
+<span data-ttu-id="ff680-1394">リスト内の画像の数を表す整数。</span><span class="sxs-lookup"><span data-stu-id="ff680-1394">An integer that represents the number of images in the list.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1395">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1395">Examples</span></span>
+
+<span data-ttu-id="ff680-1396">次の例では、イメージ リストを作成し、shell.dll ファイルからアイコンを読み込み、リスト内のイメージの数を出力します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1396">The following example creates an image list, loads icons from the shell.dll file, and then prints the number of images in the list.</span></span>
+
+    Imagelist list; 
+    int       counter; 
+    list = new Imagelist( 
+       Imagelist::iconWidth(), 
+       Imagelist::iconHeight() ); 
+    list.loadIcons('shell32.dll'); 
+    print list.count(); 
+    pause;
+
+### <a name="method-dragbegin"></a><span data-ttu-id="ff680-1397">メソッド dragBegin</span><span class="sxs-lookup"><span data-stu-id="ff680-1397">Method dragBegin</span></span>
+
+<span data-ttu-id="ff680-1398">イメージのドラッグを開始します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1398">Begins dragging an image.</span></span>
+
+    public boolean dragBegin(int imageIdx, int hotSpotX, int hotSpotY)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1399">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1399">Parameters</span></span>
+
+<span data-ttu-id="ff680-1400">imageIdx</span><span class="sxs-lookup"><span data-stu-id="ff680-1400">imageIdx</span></span>  
+<span data-ttu-id="ff680-1401">画像の左上隅を基準とした、ドラッグ位置の Y 座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-1401">The Y-coordinate of the drag position, relative to the upper-left corner of the image.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1402">hotSpotX</span><span class="sxs-lookup"><span data-stu-id="ff680-1402">hotSpotX</span></span>  
+<span data-ttu-id="ff680-1403">画像の左上隅を基準とした、ドラッグ位置の Y 座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-1403">The Y-coordinate of the drag position, relative to the upper-left corner of the image.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1404">hotSpotY</span><span class="sxs-lookup"><span data-stu-id="ff680-1404">hotSpotY</span></span>  
+<span data-ttu-id="ff680-1405">画像の左上隅を基準とした、ドラッグ位置の Y 座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-1405">The Y-coordinate of the drag position, relative to the upper-left corner of the image.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1406">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1406">Return Value</span></span>
+
+<span data-ttu-id="ff680-1407">メソッドが成功した場合は 1 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1407">1 if the method is successful.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1408">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1408">Remarks</span></span>
+
+<span data-ttu-id="ff680-1409">残りのドラッグ操作は、dragEnter、dragMove、dragLeave、dragEnd の各メソッドで指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1409">The rest of the drag operation is specified by the dragEnter, dragMove, dragLeave, and dragEnd methods.</span></span>
+
+### <a name="method-dragend"></a><span data-ttu-id="ff680-1410">メソッド dragEnd</span><span class="sxs-lookup"><span data-stu-id="ff680-1410">Method dragEnd</span></span>
+
+<span data-ttu-id="ff680-1411">ドラッグ操作を終了します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1411">Ends a drag operation.</span></span>
+
+    public boolean dragEnd()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1412">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1412">Return Value</span></span>
+
+<span data-ttu-id="ff680-1413">メソッドが成功した場合は 1、それ以外の場合は 0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1413">1 if the method is successful; otherwise, 0.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1414">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1414">Remarks</span></span>
+
+<span data-ttu-id="ff680-1415">残りのドラッグ操作は、dragBegin、dragEnter、dragMove、dragLeave の各メソッドで指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1415">The rest of the drag operation is specified by the dragBegin, dragEnter, dragMove, and dragLeave methods.</span></span>
+
+### <a name="method-dragenter"></a><span data-ttu-id="ff680-1416">メソッド dragEnter</span><span class="sxs-lookup"><span data-stu-id="ff680-1416">Method dragEnter</span></span>
+
+<span data-ttu-id="ff680-1417">ドラッグ操作中に指定されたウィンドウの更新をロックし、ウィンドウの指定された位置にドラッグ イメージを表示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1417">Locks updates to the specified window during a drag operation and displays the drag image at the specified position in the window.</span></span>
+
+    public boolean dragEnter(int hWnd, int x, int y)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1418">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1418">Parameters</span></span>
+
+<span data-ttu-id="ff680-1419">hWnd</span><span class="sxs-lookup"><span data-stu-id="ff680-1419">hWnd</span></span>  
+<span data-ttu-id="ff680-1420">ウィンドウの左上隅を基準とした、ドラッグ アイコンの表示位置の Y 座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-1420">The Y-coordinate at which to display the drag icon, relative to the upper-left corner of the window.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1421">x</span><span class="sxs-lookup"><span data-stu-id="ff680-1421">x</span></span>  
+<span data-ttu-id="ff680-1422">ウィンドウの左上隅を基準とした、ドラッグ アイコンの表示位置の Y 座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-1422">The Y-coordinate at which to display the drag icon, relative to the upper-left corner of the window.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1423">y</span><span class="sxs-lookup"><span data-stu-id="ff680-1423">y</span></span>  
+<span data-ttu-id="ff680-1424">ウィンドウの左上隅を基準とした、ドラッグ アイコンの表示位置の Y 座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-1424">The Y-coordinate at which to display the drag icon, relative to the upper-left corner of the window.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1425">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1425">Return Value</span></span>
+
+<span data-ttu-id="ff680-1426">メソッドが成功した場合は 1、それ以外の場合は 0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1426">1 if the method is successful; otherwise, 0.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1427">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1427">Remarks</span></span>
+
+<span data-ttu-id="ff680-1428">ドラッグ操作を開始するには、dragBegin メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1428">To start the drag operation, call the dragBegin method.</span></span> <span data-ttu-id="ff680-1429">残りのドラッグ操作は、dragMove、dragLeave、dragEnd の各メソッドで指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1429">The rest of the drag operation is specified by the dragMove, dragLeave, and dragEnd methods.</span></span>
+
+### <a name="method-dragleave"></a><span data-ttu-id="ff680-1430">メソッド dragLeave</span><span class="sxs-lookup"><span data-stu-id="ff680-1430">Method dragLeave</span></span>
+
+<span data-ttu-id="ff680-1431">指定したウィンドウのロックを解除し、ドラッグ イメージを非表示にして、ウィンドウを更新します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1431">Unlocks the specified window and hides the drag image, so that the window to be updated.</span></span>
+
+    public boolean dragLeave(int hWnd)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1432">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1432">Parameters</span></span>
+
+<span data-ttu-id="ff680-1433">hWnd</span><span class="sxs-lookup"><span data-stu-id="ff680-1433">hWnd</span></span>  
+<span data-ttu-id="ff680-1434">ドラッグ イメージを所有するウィンドウのハンドルです。</span><span class="sxs-lookup"><span data-stu-id="ff680-1434">The handle to the window that owns the drag image.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1435">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1435">Return Value</span></span>
+
+<span data-ttu-id="ff680-1436">メソッドが成功した場合は 1、それ以外の場合は 0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1436">1 if the method is successful; otherwise, 0.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1437">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1437">Remarks</span></span>
+
+<span data-ttu-id="ff680-1438">残りのドラッグ操作は、dragBegin、dragEnter、dragMove、dragEnd の各メソッドで指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1438">The rest of the drag operation is specified by the dragBegin, dragEnter, dragMove, and dragEnd methods.</span></span>
+
+### <a name="method-dragmove"></a><span data-ttu-id="ff680-1439">メソッド dragMove</span><span class="sxs-lookup"><span data-stu-id="ff680-1439">Method dragMove</span></span>
+
+<span data-ttu-id="ff680-1440">ドラッグ アンド ドロップ操作中にドラッグされているイメージを移動します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1440">Moves the image that is being dragged during a drag-and-drop operation.</span></span>
+
+    public boolean dragMove(int x, int y)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1441">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1441">Parameters</span></span>
+
+<span data-ttu-id="ff680-1442">x</span><span class="sxs-lookup"><span data-stu-id="ff680-1442">x</span></span>  
+<span data-ttu-id="ff680-1443">ウィンドウの左上隅を基準とした、ドラッグ アイコンの表示位置の Y 座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-1443">The Y-coordinate at which to display the drag icon, relative to the upper-left corner of the window.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1444">y</span><span class="sxs-lookup"><span data-stu-id="ff680-1444">y</span></span>  
+<span data-ttu-id="ff680-1445">ウィンドウの左上隅を基準とした、ドラッグ アイコンの表示位置の Y 座標。</span><span class="sxs-lookup"><span data-stu-id="ff680-1445">The Y-coordinate at which to display the drag icon, relative to the upper-left corner of the window.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1446">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1446">Return Value</span></span>
+
+<span data-ttu-id="ff680-1447">メソッドが成功した場合は 1、それ以外の場合は 0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1447">1 if the method is successful; otherwise, 0.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1448">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1448">Remarks</span></span>
+
+<span data-ttu-id="ff680-1449">ドラッグ操作を開始するには、dragBegin メソッドを呼び出してから dragEnter メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1449">To start the drag operation, call the dragBegin method and then the dragEnter method.</span></span> <span data-ttu-id="ff680-1450">残りのドラッグ操作は、dragLeave メソッドおよび dragEnd メソッドで指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1450">The rest of the drag operation is specified by the dragLeave and dragEnd methods.</span></span>
+
+### <a name="method-dragshowimage"></a><span data-ttu-id="ff680-1451">メソッド dragShowImage</span><span class="sxs-lookup"><span data-stu-id="ff680-1451">Method dragShowImage</span></span>
+
+<span data-ttu-id="ff680-1452">ドラッグされている画像の表示と非表示を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1452">Shows or hides the image that is being dragged.</span></span>
+
+    public boolean dragShowImage(boolean show)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1453">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1453">Parameters</span></span>
+
+<span data-ttu-id="ff680-1454">show</span><span class="sxs-lookup"><span data-stu-id="ff680-1454">show</span></span>  
+<span data-ttu-id="ff680-1455">画像を表示するかどうかを指定する値。</span><span class="sxs-lookup"><span data-stu-id="ff680-1455">A value that specifies whether to show the image.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1456">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1456">Return Value</span></span>
+
+### <a name="method-height"></a><span data-ttu-id="ff680-1457">メソッド height</span><span class="sxs-lookup"><span data-stu-id="ff680-1457">Method height</span></span>
+
+<span data-ttu-id="ff680-1458">イメージ リスト内のイメージの高さ (ピクセル単位) を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1458">Retrieves the height, in pixels, of the images in the image list.</span></span>
+
+    public int height()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1459">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1459">Return Value</span></span>
+
+<span data-ttu-id="ff680-1460">画像の高さをピクセル単位で表す整数。</span><span class="sxs-lookup"><span data-stu-id="ff680-1460">An integer that represents the height of the images in pixels.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1461">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1461">Remarks</span></span>
+
+<span data-ttu-id="ff680-1462">リスト内の画像の高さは、リストをインスタンス化するときに設定されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1462">The height of the images in the list is set when you instantiate the list.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1463">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1463">Examples</span></span>
+
+<span data-ttu-id="ff680-1464">次の例では、イメージ リストを作成し、イメージの高さと幅を iconWidth メソッドと iconHeight メソッドで指定された寸法に設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1464">The following example creates an image list, and sets the height and width of the images to the dimensions that are specified by the iconWidth and iconHeight methods.</span></span> <span data-ttu-id="ff680-1465">一覧内のイメージの高さを出力します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1465">It then prints the height of images in the list.</span></span>
+
+    Imagelist list; 
+    list = new Imagelist( 
+        Imagelist::iconWidth(), 
+        Imagelist::iconHeight()); 
+    print list.height();   
+    pause;
+
+### <a name="method-loadicons"></a><span data-ttu-id="ff680-1466">メソッド loadIcons</span><span class="sxs-lookup"><span data-stu-id="ff680-1466">Method loadIcons</span></span>
+
+<span data-ttu-id="ff680-1467">イメージ リストに、指定されたリソースからアイコンを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1467">Loads icons from the specified resource into the image list.</span></span>
+
+    public int loadIcons(str moduleName)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1468">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1468">Parameters</span></span>
+
+<span data-ttu-id="ff680-1469">moduleName</span><span class="sxs-lookup"><span data-stu-id="ff680-1469">moduleName</span></span>  
+<span data-ttu-id="ff680-1470">イメージの読み込み元ファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="ff680-1470">The name of the file from which to load images.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1471">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1471">Return Value</span></span>
+
+<span data-ttu-id="ff680-1472">メソッドが成功した場合、0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1472">0 if the method is successful.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1473">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1473">Examples</span></span>
+
+<span data-ttu-id="ff680-1474">次の例では、イメージのリストを作成し、shell32.dll ファイルに含まれるイメージをロードします。</span><span class="sxs-lookup"><span data-stu-id="ff680-1474">The following example creates a list of images and then loads the images that are contained in the shell32.dll file.</span></span>
+
+    Imagelist list; 
+    list = new Imagelist(Imagelist::iconWidth(),Imagelist::iconHeight()); 
+    list.loadIcons('shell32.dll');
+
+### <a name="method-remove"></a><span data-ttu-id="ff680-1475">メソッド remove</span><span class="sxs-lookup"><span data-stu-id="ff680-1475">Method remove</span></span>
+
+<span data-ttu-id="ff680-1476">イメージ リストから画像を削除します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1476">Removes an image from an image list.</span></span>
+
+    public int remove(int imageIdx)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1477">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1477">Parameters</span></span>
+
+<span data-ttu-id="ff680-1478">imageIdx</span><span class="sxs-lookup"><span data-stu-id="ff680-1478">imageIdx</span></span>  
+<span data-ttu-id="ff680-1479">一覧から削除する画像の位置。</span><span class="sxs-lookup"><span data-stu-id="ff680-1479">The position of the image to remove from the list.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1480">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1480">Return Value</span></span>
+
+<span data-ttu-id="ff680-1481">メソッドが成功した場合、0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1481">0 if the method is successful.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1482">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1482">Examples</span></span>
+
+<span data-ttu-id="ff680-1483">次の例では、イメージ リストを作成し、アイコンを shell32.dll ファイルに追加して、リストの 4 番目のメンバーを削除します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1483">The following example creates an image list, adds the icons in shell32.dll file, and then deletes the fourth member of the list.</span></span>
+
+    Imagelist list = new Imagelist( 
+        Imagelist::iconWidth(), 
+        Imagelist::iconHeight() ); 
+    list.loadIcons('shell32.dll'); 
+    print list.count(); 
+    list.remove(4); 
+    print list.count(); 
+    pause;
+
+### <a name="method-replace"></a><span data-ttu-id="ff680-1484">メソッド replace</span><span class="sxs-lookup"><span data-stu-id="ff680-1484">Method replace</span></span>
+
+<span data-ttu-id="ff680-1485">リスト内の既存の画像を置き換えます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1485">Replaces an existing image in the list.</span></span>
+
+    public int replace(int imageIdx, Image image)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1486">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1486">Parameters</span></span>
+
+<span data-ttu-id="ff680-1487">imageIdx</span><span class="sxs-lookup"><span data-stu-id="ff680-1487">imageIdx</span></span>  
+<span data-ttu-id="ff680-1488">既存のイメージを置き換えるために使用するイメージ。</span><span class="sxs-lookup"><span data-stu-id="ff680-1488">The image to use to replace the existing image.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1489">image</span><span class="sxs-lookup"><span data-stu-id="ff680-1489">image</span></span>  
+<span data-ttu-id="ff680-1490">既存のイメージを置き換えるために使用するイメージ。</span><span class="sxs-lookup"><span data-stu-id="ff680-1490">The image to use to replace the existing image.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1491">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1491">Return Value</span></span>
+
+<span data-ttu-id="ff680-1492">メソッドが成功した場合、0 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1492">0 if the method is successful.</span></span>
+
+### <a name="method-setoverlayimage"></a><span data-ttu-id="ff680-1493">メソッド setOverlayImage</span><span class="sxs-lookup"><span data-stu-id="ff680-1493">Method setOverlayImage</span></span>
+
+<span data-ttu-id="ff680-1494">オーバーレイ マスクとして使用する画像の一覧に、画像を追加します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1494">Adds an image to the list of images to use as overlay masks.</span></span>
+
+    public boolean setOverlayImage(int imageIdx, int overlayIdx)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1495">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1495">Parameters</span></span>
+
+<span data-ttu-id="ff680-1496">imageIdx</span><span class="sxs-lookup"><span data-stu-id="ff680-1496">imageIdx</span></span>  
+<span data-ttu-id="ff680-1497">オーバーレイ マスクの 1 から始まるインデックス。</span><span class="sxs-lookup"><span data-stu-id="ff680-1497">The one-based index of the overlay mask.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1498">overlayIdx</span><span class="sxs-lookup"><span data-stu-id="ff680-1498">overlayIdx</span></span>  
+<span data-ttu-id="ff680-1499">オーバーレイ マスクの 1 から始まるインデックス。</span><span class="sxs-lookup"><span data-stu-id="ff680-1499">The one-based index of the overlay mask.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1500">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1500">Return Value</span></span>
+
+<span data-ttu-id="ff680-1501">メソッドが成功した場合は 1 です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1501">1 if the method is successful.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1502">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1502">Examples</span></span>
+
+<span data-ttu-id="ff680-1503">次の例では、3 つのイメージを持つイメージ リストを作成し、最後のイメージをオーバーレイ マスクとして設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1503">The following example creates an image list that has three images and then sets the last image as an overlay mask.</span></span>
+
+    Imagelist list = new Imagelist( 
+        Imagelist::iconWidth(), 
+        Imagelist::iconHeight() ); 
+    list.add(new Image(824)); // Image 0 
+    list.add(new Image(815)); // Image 1 
+    list.add(new Image(936)); //Image 2 
+    list.setOverlayImage (2,1);
+
+### <a name="method-width"></a><span data-ttu-id="ff680-1504">メソッド width</span><span class="sxs-lookup"><span data-stu-id="ff680-1504">Method width</span></span>
+
+<span data-ttu-id="ff680-1505">イメージ リスト内のイメージの幅 (ピクセル単位) を取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1505">Retrieves the width, in pixels, of the images in the image list.</span></span>
+
+    public int width()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1506">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1506">Return Value</span></span>
+
+<span data-ttu-id="ff680-1507">画像の幅をピクセル単位で表す整数。</span><span class="sxs-lookup"><span data-stu-id="ff680-1507">An integer that represents the width of the images in pixels.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1508">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1508">Remarks</span></span>
+
+<span data-ttu-id="ff680-1509">リスト内の画像の幅は、リストをインスタンス化するときに設定されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1509">The width of the images in the list is set when you instantiate the list.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1510">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1510">Examples</span></span>
+
+<span data-ttu-id="ff680-1511">次の例では、アイコンの標準的な高さと幅を持つイメージ リストを作成し、イメージの幅をリストに出力します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1511">The following example creates an image list that has the standard height and width for icons, and then prints the width of images in the list.</span></span>
+
+    Imagelist list; 
+    list = new Imagelist( 
+        Imagelist::iconWidth(), 
+        Imagelist::iconHeight()); 
+    print list.width();   
+    pause;
+
+### <a name="method-iconheight"></a><span data-ttu-id="ff680-1512">メソッド iconHeight</span><span class="sxs-lookup"><span data-stu-id="ff680-1512">Method iconHeight</span></span>
+
+<span data-ttu-id="ff680-1513">標準アイコンの高さのシステム メトリックを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1513">Retrieves the system metrics for the height of a standard icon.</span></span>
+
+    public static int iconHeight()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1514">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1514">Return Value</span></span>
+
+<span data-ttu-id="ff680-1515">標準アイコンの高さを表す整数。</span><span class="sxs-lookup"><span data-stu-id="ff680-1515">An integer that represents the height of a standard icon.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1516">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1516">Examples</span></span>
+
+<span data-ttu-id="ff680-1517">次の例では、イメージのリストを作成し、標準のアイコンの幅と高さに設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1517">The following example creates a list of images, and then sets them to the standard icon width and height.</span></span>
+
+    ImageList list = new Imagelist( 
+        Imagelist::iconWidth(), 
+        Imagelist::iconHeight());
+
+### <a name="method-iconwidth"></a><span data-ttu-id="ff680-1518">メソッド iconWidth</span><span class="sxs-lookup"><span data-stu-id="ff680-1518">Method iconWidth</span></span>
+
+<span data-ttu-id="ff680-1519">標準アイコンの幅のシステム メトリックを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1519">Retrieves the system metrics for the width of a standard icon.</span></span>
+
+    public static int iconWidth()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1520">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1520">Return Value</span></span>
+
+<span data-ttu-id="ff680-1521">標準アイコンの幅を表す整数。</span><span class="sxs-lookup"><span data-stu-id="ff680-1521">An integer that represents the width of a standard icon.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1522">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1522">Examples</span></span>
+
+<span data-ttu-id="ff680-1523">次の例では、イメージのリストを作成し、標準のアイコンの幅と高さに設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1523">The following example creates a list of images, and then sets them to the standard icon width and height.</span></span>
+
+    ImageList list = new Imagelist( 
+        Imagelist::iconWidth(), 
+        Imagelist::iconHeight());
+
+### <a name="method-smalliconheight"></a><span data-ttu-id="ff680-1524">メソッド smallIconHeight</span><span class="sxs-lookup"><span data-stu-id="ff680-1524">Method smallIconHeight</span></span>
+
+<span data-ttu-id="ff680-1525">小さなアイコンの高さのシステム メトリックを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1525">Retrieves the system metrics for the height of a small icon.</span></span>
+
+    public static int smallIconHeight()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1526">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1526">Return Value</span></span>
+
+<span data-ttu-id="ff680-1527">小さなアイコンの高さを表す整数。</span><span class="sxs-lookup"><span data-stu-id="ff680-1527">An integer that represents the height of a small icon.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1528">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1528">Examples</span></span>
+
+<span data-ttu-id="ff680-1529">次の例では、小さなアイコンの標準的な高さと幅を持つイメージ リストを作成し、イメージの高さをリストに出力します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1529">The following example creates an image list that has the standard height and width for small icons, and then prints the height of images in the list.</span></span>
+
+    Imagelist list = new Imagelist( 
+        Imagelist::smallIconWidth(), 
+        Imagelist::smallIconHeight()); 
+    print list.height();   
+    pause;
+
+### <a name="method-smalliconwidth"></a><span data-ttu-id="ff680-1530">メソッド smallIconWidth</span><span class="sxs-lookup"><span data-stu-id="ff680-1530">Method smallIconWidth</span></span>
+
+<span data-ttu-id="ff680-1531">小さなアイコンの幅のシステム メトリックを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1531">Retrieves the system metrics for the width of a small icon.</span></span>
+
+    public static int smallIconWidth()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1532">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1532">Return Value</span></span>
+
+<span data-ttu-id="ff680-1533">小さなアイコンの幅を表す整数。</span><span class="sxs-lookup"><span data-stu-id="ff680-1533">An integer that represents the width of a small icon.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1534">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1534">Examples</span></span>
+
+<span data-ttu-id="ff680-1535">次の例では、小さなアイコンの標準的な高さと幅を持つイメージ リストを作成し、イメージの幅をリストに出力します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1535">The following example creates an image list that has the standard height and width for small icons, and then prints the width of images in the list.</span></span>
+
+    Imagelist list = new Imagelist( 
+       Imagelist::smallIconWidth(), 
+       Imagelist::smallIconHeight()); 
+    print list.width();   
+    pause;
+
+### <a name="method-maskcolor"></a><span data-ttu-id="ff680-1536">メソッド maskColor</span><span class="sxs-lookup"><span data-stu-id="ff680-1536">Method maskColor</span></span>
+
+<span data-ttu-id="ff680-1537">マスキング色を設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1537">Sets the masking color.</span></span>
+
+    public void maskColor(int Color)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1538">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1538">Parameters</span></span>
+
+<span data-ttu-id="ff680-1539">色</span><span class="sxs-lookup"><span data-stu-id="ff680-1539">Color</span></span>  
+<span data-ttu-id="ff680-1540">ARGB 値としての色。</span><span class="sxs-lookup"><span data-stu-id="ff680-1540">The color as an ARGB value.</span></span>
+
+### <a name="method-draw"></a><span data-ttu-id="ff680-1541">メソッド draw</span><span class="sxs-lookup"><span data-stu-id="ff680-1541">Method draw</span></span>
+
+<span data-ttu-id="ff680-1542">指定されたデバイス コンテキストで画像リスト項目を描画します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1542">Draws an image list item in the specified device context.</span></span>
+
+    public void draw(int HDC, int imageIdx, int x, int y, [boolean transparent])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1543">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1543">Parameters</span></span>
+
+<span data-ttu-id="ff680-1544">HDC</span><span class="sxs-lookup"><span data-stu-id="ff680-1544">HDC</span></span>  
+<span data-ttu-id="ff680-1545">背景の色に関係なく、マスクを使用して、画像が透過的に描画されているかどうかを示すブール値; オプション。</span><span class="sxs-lookup"><span data-stu-id="ff680-1545">A Boolean value that indicates whether the image is drawn transparently by using the mask, regardless of background color; optional.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1546">imageIdx</span><span class="sxs-lookup"><span data-stu-id="ff680-1546">imageIdx</span></span>  
+<span data-ttu-id="ff680-1547">背景の色に関係なく、マスクを使用して、画像が透過的に描画されているかどうかを示すブール値; オプション。</span><span class="sxs-lookup"><span data-stu-id="ff680-1547">A Boolean value that indicates whether the image is drawn transparently by using the mask, regardless of background color; optional.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1548">x</span><span class="sxs-lookup"><span data-stu-id="ff680-1548">x</span></span>  
+<span data-ttu-id="ff680-1549">背景の色に関係なく、マスクを使用して、画像が透過的に描画されているかどうかを示すブール値; オプション。</span><span class="sxs-lookup"><span data-stu-id="ff680-1549">A Boolean value that indicates whether the image is drawn transparently by using the mask, regardless of background color; optional.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1550">y</span><span class="sxs-lookup"><span data-stu-id="ff680-1550">y</span></span>  
+<span data-ttu-id="ff680-1551">背景の色に関係なく、マスクを使用して、画像が透過的に描画されているかどうかを示すブール値; オプション。</span><span class="sxs-lookup"><span data-stu-id="ff680-1551">A Boolean value that indicates whether the image is drawn transparently by using the mask, regardless of background color; optional.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-1552">透明</span><span class="sxs-lookup"><span data-stu-id="ff680-1552">transparent</span></span>  
+<span data-ttu-id="ff680-1553">背景の色に関係なく、マスクを使用して、画像が透過的に描画されているかどうかを示すブール値; オプション。</span><span class="sxs-lookup"><span data-stu-id="ff680-1553">A Boolean value that indicates whether the image is drawn transparently by using the mask, regardless of background color; optional.</span></span>
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-1554">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-1554">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-new"></a><span data-ttu-id="ff680-1555">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-1555">Method new</span></span>
+
+<span data-ttu-id="ff680-1556">画像を保持する新しい空のリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1556">Creates a new empty list to hold images.</span></span>
+
+    public void new(int cx, int cy, [boolean transparent])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1557">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1557">Parameters</span></span>
+
+<span data-ttu-id="ff680-1558">cx</span><span class="sxs-lookup"><span data-stu-id="ff680-1558">cx</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-1559">cy</span><span class="sxs-lookup"><span data-stu-id="ff680-1559">cy</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-1560">透明</span><span class="sxs-lookup"><span data-stu-id="ff680-1560">transparent</span></span>  
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1561">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1561">Remarks</span></span>
+
+<span data-ttu-id="ff680-1562">autoResize メソッドを使用すると、リストに追加するときにイメージのサイズを自動的に変更することができます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1562">You can use the autoResize method to automatically resize images when you add them to the list.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1563">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1563">Examples</span></span>
+
+<span data-ttu-id="ff680-1564">次の例では、標準アイコンの幅と高さの項目を保持するイメージ リストを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1564">The following example creates an image list to hold items of the standard icon width and height.</span></span>
+
+    Imagelist list; 
+    list = new Imagelist( 
+       Imagelist::iconWidth(), 
+       Imagelist::iconHeight());
+
+## <a name="class-importtabledatainfo"></a><span data-ttu-id="ff680-1565">クラス ImportTableDataInfo</span><span class="sxs-lookup"><span data-stu-id="ff680-1565">Class ImportTableDataInfo</span></span>
+    class ImportTableDataInfo extends Object
+
+### <a name="remarks"></a><span data-ttu-id="ff680-1566">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1566">Remarks</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-1567">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1567">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-1568">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-1568">Methods</span></span>
+
+| <span data-ttu-id="ff680-1569">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-1569">Method</span></span>                                                  | <span data-ttu-id="ff680-1570">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-1570">Description</span></span>                                     |
+|---------------------------------------------------------|-------------------------------------------------|
+| <span data-ttu-id="ff680-1571">public int addColumnData(str szColName, AnyType colVal)</span><span class="sxs-lookup"><span data-stu-id="ff680-1571">public int addColumnData(str szColName, AnyType colVal)</span></span> |                                                 |
+| <span data-ttu-id="ff680-1572">public int copyDataRow()</span><span class="sxs-lookup"><span data-stu-id="ff680-1572">public int copyDataRow()</span></span>                                |                                                 |
+| <span data-ttu-id="ff680-1573">public void new(int usTableId)</span><span class="sxs-lookup"><span data-stu-id="ff680-1573">public void new(int usTableId)</span></span>                          | <span data-ttu-id="ff680-1574">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1574">Initializes a new instance of the Object class.</span></span> |
+
+### <a name="method-addcolumndata"></a><span data-ttu-id="ff680-1575">メソッド addColumnData</span><span class="sxs-lookup"><span data-stu-id="ff680-1575">Method addColumnData</span></span>
+
+    public int addColumnData(str szColName, AnyType colVal)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1576">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1576">Parameters</span></span>
+
+<span data-ttu-id="ff680-1577">szColName</span><span class="sxs-lookup"><span data-stu-id="ff680-1577">szColName</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-1578">colVal</span><span class="sxs-lookup"><span data-stu-id="ff680-1578">colVal</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1579">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1579">Return Value</span></span>
+
+### <a name="method-copydatarow"></a><span data-ttu-id="ff680-1580">メソッド copyDataRow</span><span class="sxs-lookup"><span data-stu-id="ff680-1580">Method copyDataRow</span></span>
+
+    public int copyDataRow()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1581">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1581">Return Value</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-1582">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-1582">Method new</span></span>
+
+<span data-ttu-id="ff680-1583">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1583">Initializes a new instance of the Object class.</span></span>
+
+    public void new(int usTableId)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1584">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1584">Parameters</span></span>
+
+<span data-ttu-id="ff680-1585">usTableId</span><span class="sxs-lookup"><span data-stu-id="ff680-1585">usTableId</span></span>  
+
+## <a name="class-importtableschemainfo"></a><span data-ttu-id="ff680-1586">クラス ImportTableSchemaInfo</span><span class="sxs-lookup"><span data-stu-id="ff680-1586">Class ImportTableSchemaInfo</span></span>
+    class ImportTableSchemaInfo extends Object
+
+### <a name="remarks"></a><span data-ttu-id="ff680-1587">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1587">Remarks</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-1588">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1588">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-1589">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-1589">Methods</span></span>
+
+| <span data-ttu-id="ff680-1590">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-1590">Method</span></span>                                                                             | <span data-ttu-id="ff680-1591">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-1591">Description</span></span>                                     |
+|------------------------------------------------------------------------------------|-------------------------------------------------|
+| <span data-ttu-id="ff680-1592">public int addColumnInfo(str szColName, Types eColType, int eColRole, int lColOrd)</span><span class="sxs-lookup"><span data-stu-id="ff680-1592">public int addColumnInfo(str szColName, Types eColType, int eColRole, int lColOrd)</span></span> |                                                 |
+| <span data-ttu-id="ff680-1593">public int addColumnMapping(str szRefRecIdColName, str szRefTableIdColName)</span><span class="sxs-lookup"><span data-stu-id="ff680-1593">public int addColumnMapping(str szRefRecIdColName, str szRefTableIdColName)</span></span>        |                                                 |
+| <span data-ttu-id="ff680-1594">public int hasEqualityCriteria(boolean fHasEqualityCriteria)</span><span class="sxs-lookup"><span data-stu-id="ff680-1594">public int hasEqualityCriteria(boolean fHasEqualityCriteria)</span></span>                       |                                                 |
+| <span data-ttu-id="ff680-1595">public int shreddedMetadataTable(boolean fIsShreddedMetadataTable)</span><span class="sxs-lookup"><span data-stu-id="ff680-1595">public int shreddedMetadataTable(boolean fIsShreddedMetadataTable)</span></span>                 |                                                 |
+| <span data-ttu-id="ff680-1596">public void new(int usTableId)</span><span class="sxs-lookup"><span data-stu-id="ff680-1596">public void new(int usTableId)</span></span>                                                     | <span data-ttu-id="ff680-1597">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1597">Initializes a new instance of the Object class.</span></span> |
+
+### <a name="method-addcolumninfo"></a><span data-ttu-id="ff680-1598">メソッド addColumnInfo</span><span class="sxs-lookup"><span data-stu-id="ff680-1598">Method addColumnInfo</span></span>
+
+    public int addColumnInfo(str szColName, Types eColType, int eColRole, int lColOrd)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1599">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1599">Parameters</span></span>
+
+<span data-ttu-id="ff680-1600">szColName</span><span class="sxs-lookup"><span data-stu-id="ff680-1600">szColName</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-1601">eColType</span><span class="sxs-lookup"><span data-stu-id="ff680-1601">eColType</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-1602">eColRole</span><span class="sxs-lookup"><span data-stu-id="ff680-1602">eColRole</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-1603">lColOrd</span><span class="sxs-lookup"><span data-stu-id="ff680-1603">lColOrd</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1604">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1604">Return Value</span></span>
+
+### <a name="method-addcolumnmapping"></a><span data-ttu-id="ff680-1605">メソッド addColumnMapping</span><span class="sxs-lookup"><span data-stu-id="ff680-1605">Method addColumnMapping</span></span>
+
+    public int addColumnMapping(str szRefRecIdColName, str szRefTableIdColName)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1606">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1606">Parameters</span></span>
+
+<span data-ttu-id="ff680-1607">szRefRecIdColName</span><span class="sxs-lookup"><span data-stu-id="ff680-1607">szRefRecIdColName</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-1608">szRefTableIdColName</span><span class="sxs-lookup"><span data-stu-id="ff680-1608">szRefTableIdColName</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1609">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1609">Return Value</span></span>
+
+### <a name="method-hasequalitycriteria"></a><span data-ttu-id="ff680-1610">メソッド hasEqualityCriteria</span><span class="sxs-lookup"><span data-stu-id="ff680-1610">Method hasEqualityCriteria</span></span>
+
+    public int hasEqualityCriteria(boolean fHasEqualityCriteria)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1611">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1611">Parameters</span></span>
+
+<span data-ttu-id="ff680-1612">fHasEqualityCriteria</span><span class="sxs-lookup"><span data-stu-id="ff680-1612">fHasEqualityCriteria</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1613">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1613">Return Value</span></span>
+
+### <a name="method-shreddedmetadatatable"></a><span data-ttu-id="ff680-1614">メソッド shreddedMetadataTable</span><span class="sxs-lookup"><span data-stu-id="ff680-1614">Method shreddedMetadataTable</span></span>
+
+    public int shreddedMetadataTable(boolean fIsShreddedMetadataTable)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1615">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1615">Parameters</span></span>
+
+<span data-ttu-id="ff680-1616">fIsShreddedMetadataTable</span><span class="sxs-lookup"><span data-stu-id="ff680-1616">fIsShreddedMetadataTable</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1617">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1617">Return Value</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-1618">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-1618">Method new</span></span>
+
+<span data-ttu-id="ff680-1619">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1619">Initializes a new instance of the Object class.</span></span>
+
+    public void new(int usTableId)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1620">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1620">Parameters</span></span>
+
+<span data-ttu-id="ff680-1621">usTableId</span><span class="sxs-lookup"><span data-stu-id="ff680-1621">usTableId</span></span>  
+
+## <a name="class-infopart"></a><span data-ttu-id="ff680-1622">クラス InfoPart</span><span class="sxs-lookup"><span data-stu-id="ff680-1622">Class InfoPart</span></span>
+    class InfoPart extends TreeNode
+
+### <a name="remarks"></a><span data-ttu-id="ff680-1623">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1623">Remarks</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-1624">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1624">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-1625">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-1625">Methods</span></span>
+
+| <span data-ttu-id="ff680-1626">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-1626">Method</span></span>                                   | <span data-ttu-id="ff680-1627">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-1627">Description</span></span>                                                                                                                               |
+|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="ff680-1628">public str caption(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1628">public str caption(\[str value\])</span></span>        | <span data-ttu-id="ff680-1629">コントロールのキャプションを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1629">Gets or set the caption of the control.</span></span>                                                                                                   |
+| <span data-ttu-id="ff680-1630">public str changedBy(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1630">public str changedBy(\[str value\])</span></span>      | <span data-ttu-id="ff680-1631">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1631">Gets or sets the name of the user who last changed the application object.</span></span>                                                                |
+| <span data-ttu-id="ff680-1632">public Date changedDate(\[Date value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1632">public Date changedDate(\[Date value\])</span></span>  | <span data-ttu-id="ff680-1633">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1633">Gets or sets the date an application object was last changed.</span></span>                                                                             |
+| <span data-ttu-id="ff680-1634">public str changedTime(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1634">public str changedTime(\[str value\])</span></span>    | <span data-ttu-id="ff680-1635">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1635">Gets or sets the time an application object was last changed.</span></span>                                                                             |
+| <span data-ttu-id="ff680-1636">public str createdBy(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1636">public str createdBy(\[str value\])</span></span>      | <span data-ttu-id="ff680-1637">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1637">Gets or sets the name of the user who created the application object.</span></span>                                                                     |
+| <span data-ttu-id="ff680-1638">public Date creationDate(\[Date value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1638">public Date creationDate(\[Date value\])</span></span> | <span data-ttu-id="ff680-1639">アプリケーション オブジェクトが作成された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1639">Gets or sets the date an application object was created.</span></span>                                                                                  |
+| <span data-ttu-id="ff680-1640">public str creationTime(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1640">public str creationTime(\[str value\])</span></span>   |                                                                                                                                           |
+| <span data-ttu-id="ff680-1641">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1641">public str name(\[str value\])</span></span>           | <span data-ttu-id="ff680-1642">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1642">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
+| <span data-ttu-id="ff680-1643">public Guid origin(\[Guid value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1643">public Guid origin(\[Guid value\])</span></span>       |                                                                                                                                           |
+| <span data-ttu-id="ff680-1644">public str query(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1644">public str query(\[str value\])</span></span>          |                                                                                                                                           |
+| <span data-ttu-id="ff680-1645">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-1645">public void new()</span></span>                        | <span data-ttu-id="ff680-1646">InfoPart クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1646">Initializes a new instance of the InfoPart class.</span></span>                                                                                         |
+
+### <a name="method-caption"></a><span data-ttu-id="ff680-1647">メソッド caption</span><span class="sxs-lookup"><span data-stu-id="ff680-1647">Method caption</span></span>
+
+<span data-ttu-id="ff680-1648">コントロールのキャプションを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1648">Gets or set the caption of the control.</span></span>
+
+    public str caption([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1649">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1649">Parameters</span></span>
+
+<span data-ttu-id="ff680-1650">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1650">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1651">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1651">Return Value</span></span>
+
+<span data-ttu-id="ff680-1652">コントロールのキャプションとして使用される文字列。</span><span class="sxs-lookup"><span data-stu-id="ff680-1652">The string that is used as the caption of the control.</span></span>
+
+### <a name="method-changedby"></a><span data-ttu-id="ff680-1653">メソッド changedBy</span><span class="sxs-lookup"><span data-stu-id="ff680-1653">Method changedBy</span></span>
+
+<span data-ttu-id="ff680-1654">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1654">Gets or sets the name of the user who last changed the application object.</span></span>
+
+    public str changedBy([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1655">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1655">Parameters</span></span>
+
+<span data-ttu-id="ff680-1656">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1656">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1657">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1657">Return Value</span></span>
+
+<span data-ttu-id="ff680-1658">ユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="ff680-1658">The name of the user.</span></span>
+
+### <a name="method-changeddate"></a><span data-ttu-id="ff680-1659">メソッド changedDate</span><span class="sxs-lookup"><span data-stu-id="ff680-1659">Method changedDate</span></span>
+
+<span data-ttu-id="ff680-1660">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1660">Gets or sets the date an application object was last changed.</span></span>
+
+    public Date changedDate([Date value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1661">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1661">Parameters</span></span>
+
+<span data-ttu-id="ff680-1662">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1662">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1663">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1663">Return Value</span></span>
+
+<span data-ttu-id="ff680-1664">アプリケーション オブジェクトが最後に変更された日付。</span><span class="sxs-lookup"><span data-stu-id="ff680-1664">The date an application object was last changed.</span></span>
+
+### <a name="method-changedtime"></a><span data-ttu-id="ff680-1665">メソッド changedTime</span><span class="sxs-lookup"><span data-stu-id="ff680-1665">Method changedTime</span></span>
+
+<span data-ttu-id="ff680-1666">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1666">Gets or sets the time an application object was last changed.</span></span>
+
+    public str changedTime([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1667">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1667">Parameters</span></span>
+
+<span data-ttu-id="ff680-1668">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1668">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1669">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1669">Return Value</span></span>
+
+<span data-ttu-id="ff680-1670">アプリケーション オブジェクトが最後に変更された時間。</span><span class="sxs-lookup"><span data-stu-id="ff680-1670">The time an application object was last changed.</span></span>
+
+### <a name="method-createdby"></a><span data-ttu-id="ff680-1671">メソッド createdBy</span><span class="sxs-lookup"><span data-stu-id="ff680-1671">Method createdBy</span></span>
+
+<span data-ttu-id="ff680-1672">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1672">Gets or sets the name of the user who created the application object.</span></span>
+
+    public str createdBy([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1673">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1673">Parameters</span></span>
+
+<span data-ttu-id="ff680-1674">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1674">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1675">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1675">Return Value</span></span>
+
+<span data-ttu-id="ff680-1676">ユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="ff680-1676">The name of the user.</span></span>
+
+### <a name="method-creationdate"></a><span data-ttu-id="ff680-1677">メソッド creationDate</span><span class="sxs-lookup"><span data-stu-id="ff680-1677">Method creationDate</span></span>
+
+<span data-ttu-id="ff680-1678">アプリケーション オブジェクトが作成された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1678">Gets or sets the date an application object was created.</span></span>
+
+    public Date creationDate([Date value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1679">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1679">Parameters</span></span>
+
+<span data-ttu-id="ff680-1680">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1680">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1681">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1681">Return Value</span></span>
+
+<span data-ttu-id="ff680-1682">アプリケーション オブジェクトが作成された日付。</span><span class="sxs-lookup"><span data-stu-id="ff680-1682">The date an application object was created.</span></span>
+
+### <a name="method-creationtime"></a><span data-ttu-id="ff680-1683">メソッド creationTime</span><span class="sxs-lookup"><span data-stu-id="ff680-1683">Method creationTime</span></span>
+
+    public str creationTime([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1684">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1684">Parameters</span></span>
+
+<span data-ttu-id="ff680-1685">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1685">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1686">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1686">Return Value</span></span>
+
+### <a name="method-name"></a><span data-ttu-id="ff680-1687">メソッド名</span><span class="sxs-lookup"><span data-stu-id="ff680-1687">Method name</span></span>
+
+<span data-ttu-id="ff680-1688">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1688">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
+
+    public str name([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1689">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1689">Parameters</span></span>
+
+<span data-ttu-id="ff680-1690">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1690">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1691">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1691">Return Value</span></span>
+
+<span data-ttu-id="ff680-1692">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="ff680-1692">The name that is used in code to identify an application object.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1693">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1693">Remarks</span></span>
+
+<span data-ttu-id="ff680-1694">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-1694">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
+
+-   <span data-ttu-id="ff680-1695">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1695">Begins with a letter.</span></span>
+-   <span data-ttu-id="ff680-1696">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="ff680-1696">Doesn't exceed 250 characters.</span></span>
+-   <span data-ttu-id="ff680-1697">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1697">Can include numbers and underscore characters.</span></span>
+-   <span data-ttu-id="ff680-1698">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1698">Cannot include punctuation or spaces.</span></span>
+-   <span data-ttu-id="ff680-1699">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1699">Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</span></span>
+
+### <a name="method-origin"></a><span data-ttu-id="ff680-1700">メソッド origin</span><span class="sxs-lookup"><span data-stu-id="ff680-1700">Method origin</span></span>
+
+    public Guid origin([Guid value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1701">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1701">Parameters</span></span>
+
+<span data-ttu-id="ff680-1702">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1702">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1703">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1703">Return Value</span></span>
+
+### <a name="method-query"></a><span data-ttu-id="ff680-1704">メソッド query</span><span class="sxs-lookup"><span data-stu-id="ff680-1704">Method query</span></span>
+
+    public str query([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1705">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1705">Parameters</span></span>
+
+<span data-ttu-id="ff680-1706">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1706">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1707">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1707">Return Value</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-1708">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-1708">Method new</span></span>
+
+<span data-ttu-id="ff680-1709">InfoPart クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1709">Initializes a new instance of the InfoPart class.</span></span>
+
+    public void new()
+
+## <a name="class-infopartfield"></a><span data-ttu-id="ff680-1710">クラス InfoPartField</span><span class="sxs-lookup"><span data-stu-id="ff680-1710">Class InfoPartField</span></span>
+    class InfoPartField extends TreeNode
+
+### <a name="remarks"></a><span data-ttu-id="ff680-1711">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1711">Remarks</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-1712">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1712">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-1713">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-1713">Methods</span></span>
+
+| <span data-ttu-id="ff680-1714">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-1714">Method</span></span>                                            | <span data-ttu-id="ff680-1715">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-1715">Description</span></span>                                                                                                                               |
+|---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="ff680-1716">public str dataField(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1716">public str dataField(\[str value\])</span></span>               |                                                                                                                                           |
+| <span data-ttu-id="ff680-1717">public str dataMethod(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1717">public str dataMethod(\[str value\])</span></span>              |                                                                                                                                           |
+| <span data-ttu-id="ff680-1718">public str dataSource(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1718">public str dataSource(\[str value\])</span></span>              | <span data-ttu-id="ff680-1719">コントロールまたはフォームで使用されるデータ ソースを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1719">Gets or sets a data source that will be used by the control or the form.</span></span>                                                                  |
+| <span data-ttu-id="ff680-1720">public str label(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1720">public str label(\[str value\])</span></span>                   | <span data-ttu-id="ff680-1721">コントロールのラベルを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1721">Gets or sets the label for a control.</span></span>                                                                                                     |
+| <span data-ttu-id="ff680-1722">public boolean manualRetrieval(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1722">public boolean manualRetrieval(\[boolean value\])</span></span> |                                                                                                                                           |
+| <span data-ttu-id="ff680-1723">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1723">public str name(\[str value\])</span></span>                    | <span data-ttu-id="ff680-1724">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1724">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
+| <span data-ttu-id="ff680-1725">public int style(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1725">public int style(\[int value\])</span></span>                   |                                                                                                                                           |
+| <span data-ttu-id="ff680-1726">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-1726">public void new()</span></span>                                 | <span data-ttu-id="ff680-1727">InfoPartField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1727">Initializes a new instance of the InfoPartField class.</span></span>                                                                                    |
+
+### <a name="method-datafield"></a><span data-ttu-id="ff680-1728">メソッド dataField</span><span class="sxs-lookup"><span data-stu-id="ff680-1728">Method dataField</span></span>
+
+    public str dataField([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1729">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1729">Parameters</span></span>
+
+<span data-ttu-id="ff680-1730">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1730">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1731">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1731">Return Value</span></span>
+
+### <a name="method-datamethod"></a><span data-ttu-id="ff680-1732">メソッド dataMethod</span><span class="sxs-lookup"><span data-stu-id="ff680-1732">Method dataMethod</span></span>
+
+    public str dataMethod([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1733">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1733">Parameters</span></span>
+
+<span data-ttu-id="ff680-1734">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1734">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1735">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1735">Return Value</span></span>
+
+### <a name="method-datasource"></a><span data-ttu-id="ff680-1736">メソッド dataSource</span><span class="sxs-lookup"><span data-stu-id="ff680-1736">Method dataSource</span></span>
+
+<span data-ttu-id="ff680-1737">コントロールまたはフォームで使用されるデータ ソースを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1737">Gets or sets a data source that will be used by the control or the form.</span></span>
+
+    public str dataSource([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1738">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1738">Parameters</span></span>
+
+<span data-ttu-id="ff680-1739">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1739">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1740">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1740">Return Value</span></span>
+
+<span data-ttu-id="ff680-1741">使用されるデータ ソースの ID。</span><span class="sxs-lookup"><span data-stu-id="ff680-1741">The identifier of the data source that will be used.</span></span>
+
+### <a name="method-label"></a><span data-ttu-id="ff680-1742">メソッド label</span><span class="sxs-lookup"><span data-stu-id="ff680-1742">Method label</span></span>
+
+<span data-ttu-id="ff680-1743">コントロールのラベルを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1743">Gets or sets the label for a control.</span></span>
+
+    public str label([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1744">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1744">Parameters</span></span>
+
+<span data-ttu-id="ff680-1745">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1745">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1746">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1746">Return Value</span></span>
+
+<span data-ttu-id="ff680-1747">ラベル文字列の現在の値。</span><span class="sxs-lookup"><span data-stu-id="ff680-1747">The current value of the label string.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1748">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1748">Remarks</span></span>
+
+<span data-ttu-id="ff680-1749">ラベルは、コントロール内に表示されているテキストまたはそれに隣接するテキストを指定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1749">The label determines which text is displayed in the control or adjacent to it.</span></span> <span data-ttu-id="ff680-1750">ラベルのプロパティ値は 250 文字を超えることはできません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1750">The label property value cannot exceed 250 characters.</span></span>
+
+### <a name="method-manualretrieval"></a><span data-ttu-id="ff680-1751">メソッド manualRetrieval</span><span class="sxs-lookup"><span data-stu-id="ff680-1751">Method manualRetrieval</span></span>
+
+    public boolean manualRetrieval([boolean value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1752">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1752">Parameters</span></span>
+
+<span data-ttu-id="ff680-1753">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1753">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1754">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1754">Return Value</span></span>
+
+### <a name="method-name"></a><span data-ttu-id="ff680-1755">メソッド名</span><span class="sxs-lookup"><span data-stu-id="ff680-1755">Method name</span></span>
+
+<span data-ttu-id="ff680-1756">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1756">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
+
+    public str name([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1757">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1757">Parameters</span></span>
+
+<span data-ttu-id="ff680-1758">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1758">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1759">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1759">Return Value</span></span>
+
+<span data-ttu-id="ff680-1760">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="ff680-1760">The name that is used in code to identify an application object.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1761">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1761">Remarks</span></span>
+
+<span data-ttu-id="ff680-1762">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-1762">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
+
+-   <span data-ttu-id="ff680-1763">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1763">Begins with a letter.</span></span>
+-   <span data-ttu-id="ff680-1764">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="ff680-1764">Doesn't exceed 250 characters.</span></span>
+-   <span data-ttu-id="ff680-1765">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1765">Can include numbers and underscore characters.</span></span>
+-   <span data-ttu-id="ff680-1766">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1766">Cannot include punctuation or spaces.</span></span>
+-   <span data-ttu-id="ff680-1767">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1767">Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</span></span>
+
+### <a name="method-style"></a><span data-ttu-id="ff680-1768">メソッド style</span><span class="sxs-lookup"><span data-stu-id="ff680-1768">Method style</span></span>
+
+    public int style([int value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1769">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1769">Parameters</span></span>
+
+<span data-ttu-id="ff680-1770">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1770">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1771">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1771">Return Value</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-1772">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-1772">Method new</span></span>
+
+<span data-ttu-id="ff680-1773">InfoPartField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1773">Initializes a new instance of the InfoPartField class.</span></span>
+
+    public void new()
+
+## <a name="class-infopartgroup"></a><span data-ttu-id="ff680-1774">クラス InfoPartGroup</span><span class="sxs-lookup"><span data-stu-id="ff680-1774">Class InfoPartGroup</span></span>
+    class InfoPartGroup extends TreeNode
+
+### <a name="remarks"></a><span data-ttu-id="ff680-1775">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1775">Remarks</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-1776">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1776">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-1777">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-1777">Methods</span></span>
+
+| <span data-ttu-id="ff680-1778">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-1778">Method</span></span>                                                         | <span data-ttu-id="ff680-1779">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-1779">Description</span></span>                                                                                                                                   |
+|----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="ff680-1780">public str caption(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1780">public str caption(\[str value\])</span></span>                              | <span data-ttu-id="ff680-1781">コントロールのキャプションを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1781">Gets or sets the caption of the control.</span></span>                                                                                                      |
+| <span data-ttu-id="ff680-1782">public str dataGroup(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1782">public str dataGroup(\[str value\])</span></span>                            |                                                                                                                                               |
+| <span data-ttu-id="ff680-1783">public str dataSource(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1783">public str dataSource(\[str value\])</span></span>                           | <span data-ttu-id="ff680-1784">コントロールまたはフォームで使用されるデータ ソースを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1784">Gets or sets a data source that will be used by the control or the form.</span></span>                                                                      |
+| <span data-ttu-id="ff680-1785">public int labelPosition(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1785">public int labelPosition(\[int value\])</span></span>                        |                                                                                                                                               |
+| <span data-ttu-id="ff680-1786">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1786">public str name(\[str value\])</span></span>                                 | <span data-ttu-id="ff680-1787">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1787">Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
+| <span data-ttu-id="ff680-1788">public boolean repeating(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1788">public boolean repeating(\[boolean value\])</span></span>                    |                                                                                                                                               |
+| <span data-ttu-id="ff680-1789">public int rowCountWhenSmall(\[int value\], \[AutoMode mode\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1789">public int rowCountWhenSmall(\[int value\], \[AutoMode mode\])</span></span> |                                                                                                                                               |
+| <span data-ttu-id="ff680-1790">public AutoMode rowCountWhenSmallMode(\[AutoMode mode\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1790">public AutoMode rowCountWhenSmallMode(\[AutoMode mode\])</span></span>       |                                                                                                                                               |
+| <span data-ttu-id="ff680-1791">public int rowCountWhenSmallValue(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1791">public int rowCountWhenSmallValue(\[int value\])</span></span>               |                                                                                                                                               |
+| <span data-ttu-id="ff680-1792">public boolean showCaption(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1792">public boolean showCaption(\[boolean value\])</span></span>                  |                                                                                                                                               |
+| <span data-ttu-id="ff680-1793">public boolean showLabels(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1793">public boolean showLabels(\[boolean value\])</span></span>                   |                                                                                                                                               |
+| <span data-ttu-id="ff680-1794">public int showWhenPartSize(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1794">public int showWhenPartSize(\[int value\])</span></span>                     |                                                                                                                                               |
+| <span data-ttu-id="ff680-1795">public boolean verticalSpacing(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1795">public boolean verticalSpacing(\[boolean value\])</span></span>              |                                                                                                                                               |
+| <span data-ttu-id="ff680-1796">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-1796">public void new()</span></span>                                              | <span data-ttu-id="ff680-1797">InfoPartGroup クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1797">Initializes a new instance of the InfoPartGroup class.</span></span>                                                                                        |
+
+### <a name="method-caption"></a><span data-ttu-id="ff680-1798">メソッド caption</span><span class="sxs-lookup"><span data-stu-id="ff680-1798">Method caption</span></span>
+
+<span data-ttu-id="ff680-1799">コントロールのキャプションを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1799">Gets or sets the caption of the control.</span></span>
+
+    public str caption([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1800">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1800">Parameters</span></span>
+
+<span data-ttu-id="ff680-1801">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1801">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1802">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1802">Return Value</span></span>
+
+<span data-ttu-id="ff680-1803">コントロールのキャプションとして使用される文字列。</span><span class="sxs-lookup"><span data-stu-id="ff680-1803">The string that is used as the caption of the control.</span></span>
+
+### <a name="method-datagroup"></a><span data-ttu-id="ff680-1804">メソッド dataGroup</span><span class="sxs-lookup"><span data-stu-id="ff680-1804">Method dataGroup</span></span>
+
+    public str dataGroup([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1805">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1805">Parameters</span></span>
+
+<span data-ttu-id="ff680-1806">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1806">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1807">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1807">Return Value</span></span>
+
+### <a name="method-datasource"></a><span data-ttu-id="ff680-1808">メソッド dataSource</span><span class="sxs-lookup"><span data-stu-id="ff680-1808">Method dataSource</span></span>
+
+<span data-ttu-id="ff680-1809">コントロールまたはフォームで使用されるデータ ソースを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1809">Gets or sets a data source that will be used by the control or the form.</span></span>
+
+    public str dataSource([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1810">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1810">Parameters</span></span>
+
+<span data-ttu-id="ff680-1811">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1811">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1812">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1812">Return Value</span></span>
+
+<span data-ttu-id="ff680-1813">使用されるデータ ソースの ID。</span><span class="sxs-lookup"><span data-stu-id="ff680-1813">The identifier of the data source that will be used.</span></span>
+
+### <a name="method-labelposition"></a><span data-ttu-id="ff680-1814">メソッド labelPosition</span><span class="sxs-lookup"><span data-stu-id="ff680-1814">Method labelPosition</span></span>
+
+    public int labelPosition([int value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1815">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1815">Parameters</span></span>
+
+<span data-ttu-id="ff680-1816">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1816">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1817">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1817">Return Value</span></span>
+
+### <a name="method-name"></a><span data-ttu-id="ff680-1818">メソッド名</span><span class="sxs-lookup"><span data-stu-id="ff680-1818">Method name</span></span>
+
+<span data-ttu-id="ff680-1819">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1819">Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
+
+    public str name([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1820">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1820">Parameters</span></span>
+
+<span data-ttu-id="ff680-1821">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1821">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1822">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1822">Return Value</span></span>
+
+<span data-ttu-id="ff680-1823">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="ff680-1823">The name that is used in the code to identify an application object.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1824">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1824">Remarks</span></span>
+
+<span data-ttu-id="ff680-1825">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-1825">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
+
+-   <span data-ttu-id="ff680-1826">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1826">Begins with a letter.</span></span>
+-   <span data-ttu-id="ff680-1827">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="ff680-1827">Doesn't exceed 250 characters.</span></span>
+-   <span data-ttu-id="ff680-1828">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1828">Can include numbers and underscore characters.</span></span>
+-   <span data-ttu-id="ff680-1829">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1829">Cannot include punctuation or spaces.</span></span>
+-   <span data-ttu-id="ff680-1830">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="ff680-1830">Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</span></span>
+
+### <a name="method-repeating"></a><span data-ttu-id="ff680-1831">メソッド repeating</span><span class="sxs-lookup"><span data-stu-id="ff680-1831">Method repeating</span></span>
+
+    public boolean repeating([boolean value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1832">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1832">Parameters</span></span>
+
+<span data-ttu-id="ff680-1833">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1833">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1834">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1834">Return Value</span></span>
+
+### <a name="method-rowcountwhensmall"></a><span data-ttu-id="ff680-1835">メソッド rowCountWhenSmall</span><span class="sxs-lookup"><span data-stu-id="ff680-1835">Method rowCountWhenSmall</span></span>
+
+    public int rowCountWhenSmall([int value], [AutoMode mode])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1836">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1836">Parameters</span></span>
+
+<span data-ttu-id="ff680-1837">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1837">value</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-1838">モード</span><span class="sxs-lookup"><span data-stu-id="ff680-1838">mode</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1839">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1839">Return Value</span></span>
+
+### <a name="method-rowcountwhensmallmode"></a><span data-ttu-id="ff680-1840">メソッド rowCountWhenSmallMode</span><span class="sxs-lookup"><span data-stu-id="ff680-1840">Method rowCountWhenSmallMode</span></span>
+
+    public AutoMode rowCountWhenSmallMode([AutoMode mode])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1841">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1841">Parameters</span></span>
+
+<span data-ttu-id="ff680-1842">モード</span><span class="sxs-lookup"><span data-stu-id="ff680-1842">mode</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1843">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1843">Return Value</span></span>
+
+### <a name="method-rowcountwhensmallvalue"></a><span data-ttu-id="ff680-1844">メソッド rowCountWhenSmallValue</span><span class="sxs-lookup"><span data-stu-id="ff680-1844">Method rowCountWhenSmallValue</span></span>
+
+    public int rowCountWhenSmallValue([int value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1845">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1845">Parameters</span></span>
+
+<span data-ttu-id="ff680-1846">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1846">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1847">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1847">Return Value</span></span>
+
+### <a name="method-showcaption"></a><span data-ttu-id="ff680-1848">メソッド showCaption</span><span class="sxs-lookup"><span data-stu-id="ff680-1848">Method showCaption</span></span>
+
+    public boolean showCaption([boolean value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1849">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1849">Parameters</span></span>
+
+<span data-ttu-id="ff680-1850">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1850">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1851">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1851">Return Value</span></span>
+
+### <a name="method-showlabels"></a><span data-ttu-id="ff680-1852">メソッド showLabels</span><span class="sxs-lookup"><span data-stu-id="ff680-1852">Method showLabels</span></span>
+
+    public boolean showLabels([boolean value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1853">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1853">Parameters</span></span>
+
+<span data-ttu-id="ff680-1854">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1854">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1855">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1855">Return Value</span></span>
+
+### <a name="method-showwhenpartsize"></a><span data-ttu-id="ff680-1856">メソッド showWhenPartSize</span><span class="sxs-lookup"><span data-stu-id="ff680-1856">Method showWhenPartSize</span></span>
+
+    public int showWhenPartSize([int value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1857">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1857">Parameters</span></span>
+
+<span data-ttu-id="ff680-1858">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1858">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1859">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1859">Return Value</span></span>
+
+### <a name="method-verticalspacing"></a><span data-ttu-id="ff680-1860">メソッド verticalSpacing</span><span class="sxs-lookup"><span data-stu-id="ff680-1860">Method verticalSpacing</span></span>
+
+    public boolean verticalSpacing([boolean value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1861">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1861">Parameters</span></span>
+
+<span data-ttu-id="ff680-1862">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1862">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1863">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1863">Return Value</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-1864">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-1864">Method new</span></span>
+
+<span data-ttu-id="ff680-1865">InfoPartGroup クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1865">Initializes a new instance of the InfoPartGroup class.</span></span>
+
+    public void new()
+
+## <a name="class-infopartlayout"></a><span data-ttu-id="ff680-1866">クラス InfoPartLayout</span><span class="sxs-lookup"><span data-stu-id="ff680-1866">Class InfoPartLayout</span></span>
+    class InfoPartLayout extends TreeNode
+
+### <a name="remarks"></a><span data-ttu-id="ff680-1867">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1867">Remarks</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-1868">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1868">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-1869">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-1869">Methods</span></span>
+
+| <span data-ttu-id="ff680-1870">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-1870">Method</span></span>                                       | <span data-ttu-id="ff680-1871">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-1871">Description</span></span>                                             |
+|----------------------------------------------|---------------------------------------------------------|
+| <span data-ttu-id="ff680-1872">public boolean showMore(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1872">public boolean showMore(\[boolean value\])</span></span>   |                                                         |
+| <span data-ttu-id="ff680-1873">public str showMoreDataSource(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1873">public str showMoreDataSource(\[str value\])</span></span> |                                                         |
+| <span data-ttu-id="ff680-1874">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-1874">public void new()</span></span>                            | <span data-ttu-id="ff680-1875">InfoPartLayout クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1875">Initializes a new instance of the InfoPartLayout class.</span></span> |
+
+### <a name="method-showmore"></a><span data-ttu-id="ff680-1876">メソッド showMore</span><span class="sxs-lookup"><span data-stu-id="ff680-1876">Method showMore</span></span>
+
+    public boolean showMore([boolean value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1877">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1877">Parameters</span></span>
+
+<span data-ttu-id="ff680-1878">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1878">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1879">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1879">Return Value</span></span>
+
+### <a name="method-showmoredatasource"></a><span data-ttu-id="ff680-1880">メソッド showMoreDataSource</span><span class="sxs-lookup"><span data-stu-id="ff680-1880">Method showMoreDataSource</span></span>
+
+    public str showMoreDataSource([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1881">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1881">Parameters</span></span>
+
+<span data-ttu-id="ff680-1882">値</span><span class="sxs-lookup"><span data-stu-id="ff680-1882">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1883">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1883">Return Value</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-1884">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-1884">Method new</span></span>
+
+<span data-ttu-id="ff680-1885">InfoPartLayout クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1885">Initializes a new instance of the InfoPartLayout class.</span></span>
+
+    public void new()
+
+## <a name="class-initialqueryparameter"></a><span data-ttu-id="ff680-1886">クラス InitialQueryParameter</span><span class="sxs-lookup"><span data-stu-id="ff680-1886">Class InitialQueryParameter</span></span>
+    class InitialQueryParameter extends Object
+
+### <a name="remarks"></a><span data-ttu-id="ff680-1887">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1887">Remarks</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-1888">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1888">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-1889">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-1889">Methods</span></span>
+
+| <span data-ttu-id="ff680-1890">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-1890">Method</span></span>                                                                                                       | <span data-ttu-id="ff680-1891">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-1891">Description</span></span>                                                    |
+|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| <span data-ttu-id="ff680-1892">public boolean applyQuery(FormDataSource datasource)</span><span class="sxs-lookup"><span data-stu-id="ff680-1892">public boolean applyQuery(FormDataSource datasource)</span></span>                                                         |                                                                |
+| <span data-ttu-id="ff680-1893">public str dataSourceName(\[str dataSourceName\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1893">public str dataSourceName(\[str dataSourceName\])</span></span>                                                            |                                                                |
+| <span data-ttu-id="ff680-1894">public str modeledQueryName(\[str modeledQueryName\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1894">public str modeledQueryName(\[str modeledQueryName\])</span></span>                                                        |                                                                |
+| <span data-ttu-id="ff680-1895">public Query query(\[Query query\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1895">public Query query(\[Query query\])</span></span>                                                                          |                                                                |
+| <span data-ttu-id="ff680-1896">::public static InitialQueryParameter createByModeledQueryName(str modeledQueryName, \[str dataSourceName\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1896">::public static InitialQueryParameter createByModeledQueryName(str modeledQueryName, \[str dataSourceName\])</span></span> |                                                                |
+| <span data-ttu-id="ff680-1897">::public static InitialQueryParameter createByQuery(Query query, \[str dataSourceName\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1897">::public static InitialQueryParameter createByQuery(Query query, \[str dataSourceName\])</span></span>                     |                                                                |
+| <span data-ttu-id="ff680-1898">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-1898">public void finalize()</span></span>                                                                                       |                                                                |
+| <span data-ttu-id="ff680-1899">public void new()</span><span class="sxs-lookup"><span data-stu-id="ff680-1899">public void new()</span></span>                                                                                            | <span data-ttu-id="ff680-1900">InitialQueryParameter クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1900">Initializes a new instance of the InitialQueryParameter class.</span></span> |
+
+### <a name="method-applyquery"></a><span data-ttu-id="ff680-1901">メソッド applyQuery</span><span class="sxs-lookup"><span data-stu-id="ff680-1901">Method applyQuery</span></span>
+
+    public boolean applyQuery(FormDataSource datasource)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1902">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1902">Parameters</span></span>
+
+<span data-ttu-id="ff680-1903">datasource</span><span class="sxs-lookup"><span data-stu-id="ff680-1903">datasource</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1904">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1904">Return Value</span></span>
+
+### <a name="method-datasourcename"></a><span data-ttu-id="ff680-1905">メソッド dataSourceName</span><span class="sxs-lookup"><span data-stu-id="ff680-1905">Method dataSourceName</span></span>
+
+    public str dataSourceName([str dataSourceName])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1906">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1906">Parameters</span></span>
+
+<span data-ttu-id="ff680-1907">dataSourceName</span><span class="sxs-lookup"><span data-stu-id="ff680-1907">dataSourceName</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1908">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1908">Return Value</span></span>
+
+### <a name="method-modeledqueryname"></a><span data-ttu-id="ff680-1909">メソッド modeledQueryName</span><span class="sxs-lookup"><span data-stu-id="ff680-1909">Method modeledQueryName</span></span>
+
+    public str modeledQueryName([str modeledQueryName])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1910">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1910">Parameters</span></span>
+
+<span data-ttu-id="ff680-1911">modeledQueryName</span><span class="sxs-lookup"><span data-stu-id="ff680-1911">modeledQueryName</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1912">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1912">Return Value</span></span>
+
+### <a name="method-query"></a><span data-ttu-id="ff680-1913">メソッド query</span><span class="sxs-lookup"><span data-stu-id="ff680-1913">Method query</span></span>
+
+    public Query query([Query query])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1914">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1914">Parameters</span></span>
+
+<span data-ttu-id="ff680-1915">クエリ</span><span class="sxs-lookup"><span data-stu-id="ff680-1915">query</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1916">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1916">Return Value</span></span>
+
+### <a name="method-createbymodeledqueryname"></a><span data-ttu-id="ff680-1917">メソッド createByModeledQueryName</span><span class="sxs-lookup"><span data-stu-id="ff680-1917">Method createByModeledQueryName</span></span>
+
+    public static InitialQueryParameter createByModeledQueryName(str modeledQueryName, [str dataSourceName])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1918">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1918">Parameters</span></span>
+
+<span data-ttu-id="ff680-1919">modeledQueryName</span><span class="sxs-lookup"><span data-stu-id="ff680-1919">modeledQueryName</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-1920">dataSourceName</span><span class="sxs-lookup"><span data-stu-id="ff680-1920">dataSourceName</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1921">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1921">Return Value</span></span>
+
+### <a name="method-createbyquery"></a><span data-ttu-id="ff680-1922">メソッド createByQuery</span><span class="sxs-lookup"><span data-stu-id="ff680-1922">Method createByQuery</span></span>
+
+    public static InitialQueryParameter createByQuery(Query query, [str dataSourceName])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1923">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1923">Parameters</span></span>
+
+<span data-ttu-id="ff680-1924">クエリ</span><span class="sxs-lookup"><span data-stu-id="ff680-1924">query</span></span>  
+
+<!-- -->
+
+<span data-ttu-id="ff680-1925">dataSourceName</span><span class="sxs-lookup"><span data-stu-id="ff680-1925">dataSourceName</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1926">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1926">Return Value</span></span>
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-1927">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-1927">Method finalize</span></span>
+
+    public void finalize()
+
+### <a name="method-new"></a><span data-ttu-id="ff680-1928">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-1928">Method new</span></span>
+
+<span data-ttu-id="ff680-1929">InitialQueryParameter クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1929">Initializes a new instance of the InitialQueryParameter class.</span></span>
+
+    public void new()
+
+## <a name="class-interoppermission"></a><span data-ttu-id="ff680-1930">クラス InteropPermission</span><span class="sxs-lookup"><span data-stu-id="ff680-1930">Class InteropPermission</span></span>
+    class InteropPermission extends CodeAccessPermission
+
+<span data-ttu-id="ff680-1931">InteropPermission クラスは、アンマネージド コードとマネージド コードを呼び出す機能を制御します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1931">The InteropPermission class controls the ability to call unmanaged and managed code.</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-1932">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1932">Remarks</span></span>
+
+<span data-ttu-id="ff680-1933">InteropPermission クラスは、特定の API のアクセス許可をチェックするように設計されています。</span><span class="sxs-lookup"><span data-stu-id="ff680-1933">The InteropPermission class is designed to check permissions for specific APIs.</span></span> <span data-ttu-id="ff680-1934">アクセス許可によって保護されているすべての API のリストについては、「セキュリティで保護された API」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-1934">For a list of all APIs that are protected by permissions, see Secured APIs.</span></span> <span data-ttu-id="ff680-1935">保護された API を実行する前に、対応する CodeAccessPermission::demand メソッドが呼び出されている同じ層 (通常はサーバー層) で assert メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-1935">Before the protected API is run, you must call the assert method on the same tier (usually the server tier) that the corresponding CodeAccessPermission::demand method is called on.</span></span> <span data-ttu-id="ff680-1936">次のいずれかの方法でサーバー層のメソッドを呼び出します:</span><span class="sxs-lookup"><span data-stu-id="ff680-1936">Call a method on the server tier from one of the following methods:</span></span>
+
+-   <span data-ttu-id="ff680-1937">サーバー静的メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-1937">A server static method</span></span>
+-   <span data-ttu-id="ff680-1938">RunOn クラス プロパティを使用して、サーバーで実行するように設定されているクラス インスタンス メソッド。</span><span class="sxs-lookup"><span data-stu-id="ff680-1938">A class instance method that is set to run on the server by using the RunOn class property.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-1939">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1939">Examples</span></span>
+
+<span data-ttu-id="ff680-1940">次のコード例は、InteropPermission クラスの新しいインスタンスを示しています。</span><span class="sxs-lookup"><span data-stu-id="ff680-1940">The following code example shows a new instance of the InteropPermission class.</span></span> <span data-ttu-id="ff680-1941">assert メソッドが呼び出され、コードが、Microsoft Windows ダイナミックリンク ライブラリ (DLL) と通信する機能を提供する DLL クラスをインスタンス化できることが宣言されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-1941">The assert method is called to declare that the code can then instantiate the DLL class that provides the ability to communicate with a Microsoft Windows dynamic-link library (DLL).</span></span>
+
+    server static void main(Args args) 
+    { 
+        InteropPermission _perm; 
+        DLL _dll; 
+        _perm = new InteropPermission(InteropKind::DllInterop); 
+        _perm.assert(); 
+        // Invoke the protected API. 
+        _dll = new DLL('cfx2032.dll'); 
+        // Optionally, call revertAssert() to limit the scope of assert. 
+        CodeAccessPermission::revertAssert(); 
+    }
+
+### <a name="methods"></a><span data-ttu-id="ff680-1942">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-1942">Methods</span></span>
+
+| <span data-ttu-id="ff680-1943">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-1943">Method</span></span>                                                 | <span data-ttu-id="ff680-1944">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-1944">Description</span></span>                                                                        |
+|--------------------------------------------------------|------------------------------------------------------------------------------------|
+| <span data-ttu-id="ff680-1945">public CodeAccessPermission copy()</span><span class="sxs-lookup"><span data-stu-id="ff680-1945">public CodeAccessPermission copy()</span></span>                     | <span data-ttu-id="ff680-1946">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1946">Creates and returns a copy of the current permission class object.</span></span>                 |
+| <span data-ttu-id="ff680-1947">public boolean isSubsetOf(CodeAccessPermission target)</span><span class="sxs-lookup"><span data-stu-id="ff680-1947">public boolean isSubsetOf(CodeAccessPermission target)</span></span> | <span data-ttu-id="ff680-1948">現在のアクセス許可が指定のアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1948">Determines whether the current permission is a subset of the specified permission.</span></span> |
+| <span data-ttu-id="ff680-1949">public void new(InteropKind kind)</span><span class="sxs-lookup"><span data-stu-id="ff680-1949">public void new(InteropKind kind)</span></span>                      | <span data-ttu-id="ff680-1950">InteropPermission クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1950">Creates a new instance of the InteropPermission class.</span></span>                            |
+
+### <a name="method-copy"></a><span data-ttu-id="ff680-1951">メソッド copy</span><span class="sxs-lookup"><span data-stu-id="ff680-1951">Method copy</span></span>
+
+<span data-ttu-id="ff680-1952">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1952">Creates and returns a copy of the current permission class object.</span></span>
+
+    public CodeAccessPermission copy()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1953">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1953">Return Value</span></span>
+
+<span data-ttu-id="ff680-1954">現在のアクセス許可オブジェクトのコピーです。</span><span class="sxs-lookup"><span data-stu-id="ff680-1954">A copy of the current permission object.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1955">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1955">Remarks</span></span>
+
+<span data-ttu-id="ff680-1956">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="ff680-1956">You override this method when you derive a class from the CodeAccessPermission class.</span></span> <span data-ttu-id="ff680-1957">詳細については、「メソッドのコピー」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-1957">For more information, see the copy method.</span></span>
+
+### <a name="method-issubsetof"></a><span data-ttu-id="ff680-1958">メソッド isSubsetOf</span><span class="sxs-lookup"><span data-stu-id="ff680-1958">Method isSubsetOf</span></span>
+
+<span data-ttu-id="ff680-1959">現在のアクセス許可が指定のアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1959">Determines whether the current permission is a subset of the specified permission.</span></span>
+
+    public boolean isSubsetOf(CodeAccessPermission target)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1960">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1960">Parameters</span></span>
+
+<span data-ttu-id="ff680-1961">target</span><span class="sxs-lookup"><span data-stu-id="ff680-1961">target</span></span>  
+<span data-ttu-id="ff680-1962">CodeAccessPermission クラス オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="ff680-1962">A CodeAccessPermission class object.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-1963">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-1963">Return Value</span></span>
+
+<span data-ttu-id="ff680-1964">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="ff680-1964">true if the current permission is a subset of the specified permission; otherwise, false.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-1965">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1965">Remarks</span></span>
+
+<span data-ttu-id="ff680-1966">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="ff680-1966">You override this method when you derive a class from the CodeAccessPermission class.</span></span> <span data-ttu-id="ff680-1967">詳細については、「isSubsetOf メソッド」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-1967">For more information, see the isSubsetOf method.</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-1968">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-1968">Method new</span></span>
+
+<span data-ttu-id="ff680-1969">InteropPermission クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1969">Creates a new instance of the InteropPermission class.</span></span>
+
+    public void new(InteropKind kind)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-1970">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-1970">Parameters</span></span>
+
+<span data-ttu-id="ff680-1971">kind</span><span class="sxs-lookup"><span data-stu-id="ff680-1971">kind</span></span>  
+<span data-ttu-id="ff680-1972">マネージドまたはアンマネージド コードへのアクセスを指定する InteropKind システム列挙値です。</span><span class="sxs-lookup"><span data-stu-id="ff680-1972">An InteropKind system enumeration value that specifies access to managed or unmanaged code.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-1973">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1973">Examples</span></span>
+
+<span data-ttu-id="ff680-1974">次のコード例は、Win32 DLL へのアクセス許可を指定する InteropPermission クラスの新しいインスタンスを示しています。</span><span class="sxs-lookup"><span data-stu-id="ff680-1974">The following code example shows a new instance of the InteropPermission class that specifies access to Win32 DLLs.</span></span>
+
+    server static void main(Args args) 
+    { 
+        InteropPermission _perm; 
+        _perm = new InteropPermission(InteropKind::DllInterop); 
+    }
+
+## <a name="class-io"></a><span data-ttu-id="ff680-1975">クラス入出力</span><span class="sxs-lookup"><span data-stu-id="ff680-1975">Class Io</span></span>
+    class Io extends Object
+
+<span data-ttu-id="ff680-1976">Io クラスは、外部ファイルにアクセスするための、ファイル固有の Io クラスの基本クラスとして機能します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1976">The Io class serves as the base class for the format-specific Io classes, which are used to access external files.</span></span>
+
+### <a name="remarks"></a><span data-ttu-id="ff680-1977">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-1977">Remarks</span></span>
+
+<span data-ttu-id="ff680-1978">基本的な Io クラスには、実際のデータ入出力機能はありませんが、形式固有の Io クラスの基本クラスとして動作します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1978">The basic Io class features no actual data I/O but works as base class for the format-specific Io classes.</span></span> <span data-ttu-id="ff680-1979">ここでは、すべての Io クラスに共通するメソッドについて説明します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1979">The methods that are common to all Io classes are described here.</span></span> <span data-ttu-id="ff680-1980">形式固有の機能およびメンバー機能の動作については、各 I/O クラスのドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff680-1980">For format-specific features and behavior of the member functions, refer to the documentation for each of the I/O classes.</span></span> <span data-ttu-id="ff680-1981">異なるフォーマットの外部ファイルの読み書きをサポートするため、MorphX はコンマで区切られたファイル、コンマで区切られた 7 ビット ファイル、バイナリ ファイル、およびプレーン テキスト ファイルのためのさまざまな Io クラスを備えています。</span><span class="sxs-lookup"><span data-stu-id="ff680-1981">To support reading and writing of different formats of external files, MorphX features a range of different Io classes for comma-separated files, for comma-separated 7 bit files, for binary files, and for plain-text files.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="ff680-1982">例</span><span class="sxs-lookup"><span data-stu-id="ff680-1982">Examples</span></span>
+
+### <a name="methods"></a><span data-ttu-id="ff680-1983">メソッド</span><span class="sxs-lookup"><span data-stu-id="ff680-1983">Methods</span></span>
+
+| <span data-ttu-id="ff680-1984">方法</span><span class="sxs-lookup"><span data-stu-id="ff680-1984">Method</span></span>                                       | <span data-ttu-id="ff680-1985">説明</span><span class="sxs-lookup"><span data-stu-id="ff680-1985">Description</span></span>                                                                                                                  |
+|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="ff680-1986">public str inFieldDelimiter(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1986">public str inFieldDelimiter(\[str value\])</span></span>   | <span data-ttu-id="ff680-1987">\*Io によってアクセスされるレコード内のフィールドを区切るために使用される区切り文字を決定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1987">Determines the delimiter used to separate fields in records accessed by the \*Io classes.</span></span>                                    |
+| <span data-ttu-id="ff680-1988">public str inRecordDelimiter(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1988">public str inRecordDelimiter(\[str value\])</span></span>  | <span data-ttu-id="ff680-1989">完全なレコードが読み込まれたかどうかを判断するために、\*Io クラスに検索する文字を決定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1989">Determines to the \*Io classes what character or characters to search for to determine whether a full record has been read.</span></span>  |
+| <span data-ttu-id="ff680-1990">public int inRecordLength(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1990">public int inRecordLength(\[int value\])</span></span>     | <span data-ttu-id="ff680-1991">ファイル内の各レコードを読み取る文字数を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1991">Gets or sets the number of characters to read for each record in a file.</span></span>                                                     |
+| <span data-ttu-id="ff680-1992">public str outFieldDelimiter(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1992">public str outFieldDelimiter(\[str value\])</span></span>  | <span data-ttu-id="ff680-1993">レコードのフィールドを区切るために使用されるファイルに書き込まれる文字のシーケンスを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1993">Gets or sets the sequence of characters that are written to a file that is used to separate the fields of a record.</span></span>          |
+| <span data-ttu-id="ff680-1994">public str outRecordDelimiter(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ff680-1994">public str outRecordDelimiter(\[str value\])</span></span> | <span data-ttu-id="ff680-1995">出力ファイルでレコードを区切る出力ファイルに書き込まれる文字のシーケンスを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1995">Gets or sets the sequence of characters that is written to the output files, which separate the records in the output files.</span></span> |
+| <span data-ttu-id="ff680-1996">public container read()</span><span class="sxs-lookup"><span data-stu-id="ff680-1996">public container read()</span></span>                      | <span data-ttu-id="ff680-1997">Io オブジェクトから次の完全なレコードを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="ff680-1997">Reads the next full record from the Io object.</span></span>                                                                               |
+| <span data-ttu-id="ff680-1998">public IO\_Status status()</span><span class="sxs-lookup"><span data-stu-id="ff680-1998">public IO\_Status status()</span></span>                   | <span data-ttu-id="ff680-1999">Io オブジェクトで実行された最後の操作のステータスを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-1999">Retrieves the status of the last operation performed on the Io object.</span></span>                                                       |
+| <span data-ttu-id="ff680-2000">public boolean write(VarArg values)</span><span class="sxs-lookup"><span data-stu-id="ff680-2000">public boolean write(VarArg values)</span></span>          | <span data-ttu-id="ff680-2001">単純型の値を記述します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2001">Writes values of a simple type.</span></span>                                                                                              |
+| <span data-ttu-id="ff680-2002">public boolean writeExp(container data)</span><span class="sxs-lookup"><span data-stu-id="ff680-2002">public boolean writeExp(container data)</span></span>      | <span data-ttu-id="ff680-2003">コンテナのコンテンツをそのファイルに記述します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2003">Writes the content of a container to the file.</span></span>                                                                               |
+| <span data-ttu-id="ff680-2004">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ff680-2004">public void finalize()</span></span>                       | <span data-ttu-id="ff680-2005">ファイルを閉じ、データが書き込まれている場合、ファイル バッファーをディスクにフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="ff680-2005">Closes the file and, if data was written, flushes the file buffers to disk.</span></span>                                                  |
+| <span data-ttu-id="ff680-2006">public void new(str filename, str mode)</span><span class="sxs-lookup"><span data-stu-id="ff680-2006">public void new(str filename, str mode)</span></span>      | <span data-ttu-id="ff680-2007">Io クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2007">Creates a new instance of the Io class.</span></span>                                                                                      |
+
+### <a name="method-infielddelimiter"></a><span data-ttu-id="ff680-2008">メソッド inFieldDelimiter</span><span class="sxs-lookup"><span data-stu-id="ff680-2008">Method inFieldDelimiter</span></span>
+
+<span data-ttu-id="ff680-2009">\*Io によってアクセスされるレコード内のフィールドを区切るために使用される区切り文字を決定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2009">Determines the delimiter used to separate fields in records accessed by the \*Io classes.</span></span>
+
+    public str inFieldDelimiter([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-2010">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-2010">Parameters</span></span>
+
+<span data-ttu-id="ff680-2011">値</span><span class="sxs-lookup"><span data-stu-id="ff680-2011">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-2012">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-2012">Return Value</span></span>
+
+<span data-ttu-id="ff680-2013">\*Io によってアクセスされるレコード内のフィールドを区切るために使用される区切り文字。</span><span class="sxs-lookup"><span data-stu-id="ff680-2013">The delimiter used to separate fields in records accessed by the \*Io classes.</span></span>
+
+### <a name="method-inrecorddelimiter"></a><span data-ttu-id="ff680-2014">メソッド inRecordDelimiter</span><span class="sxs-lookup"><span data-stu-id="ff680-2014">Method inRecordDelimiter</span></span>
+
+<span data-ttu-id="ff680-2015">完全なレコードが読み込まれたかどうかを判断するために、\*Io クラスに検索する文字を決定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2015">Determines to the \*Io classes what character or characters to search for to determine whether a full record has been read.</span></span>
+
+    public str inRecordDelimiter([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-2016">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-2016">Parameters</span></span>
+
+<span data-ttu-id="ff680-2017">値</span><span class="sxs-lookup"><span data-stu-id="ff680-2017">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-2018">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-2018">Return Value</span></span>
+
+<span data-ttu-id="ff680-2019">完全なレコードが読み込まれたかどうかを示す文字。</span><span class="sxs-lookup"><span data-stu-id="ff680-2019">The character or characters that indicate whether a full record has been read.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-2020">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-2020">Remarks</span></span>
+
+<span data-ttu-id="ff680-2021">標準的なテキストについては、区切り記号は改行文字です。</span><span class="sxs-lookup"><span data-stu-id="ff680-2021">For standard text, the delimiter is a newline character.</span></span>
+
+### <a name="method-inrecordlength"></a><span data-ttu-id="ff680-2022">メソッド inRecordLength</span><span class="sxs-lookup"><span data-stu-id="ff680-2022">Method inRecordLength</span></span>
+
+<span data-ttu-id="ff680-2023">ファイル内の各レコードを読み取る文字数を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2023">Gets or sets the number of characters to read for each record in a file.</span></span>
+
+    public int inRecordLength([int value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-2024">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-2024">Parameters</span></span>
+
+<span data-ttu-id="ff680-2025">値</span><span class="sxs-lookup"><span data-stu-id="ff680-2025">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-2026">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-2026">Return Value</span></span>
+
+<span data-ttu-id="ff680-2027">ファイル内の各レコードを読み取る文字数。</span><span class="sxs-lookup"><span data-stu-id="ff680-2027">The number of characters to read for each record in the file.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-2028">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-2028">Remarks</span></span>
+
+<span data-ttu-id="ff680-2029">固定長形式になっているファイルについては、inRecordLength プロパティを使用して、各レコードに対して指定された文字数以上が読み取られていないことを保証します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2029">For files that have a fixed-length format, use the inRecordLength property to guarantee that no more than the specified number of characters are read for each record.</span></span> <span data-ttu-id="ff680-2030">レコード フォーマットが指定された inRecordDelimiter プロパティ値で上書きされた場合、つまり、固定長が読み込まれる前に inRecordDelimiter 値が満たされている場合)、レコードは受け入れられ、追加のデータは読み込まれません。</span><span class="sxs-lookup"><span data-stu-id="ff680-2030">If the record format is overruled by a specified inRecordDelimiter property value , that is the inRecordDelimiter value is met before the fixed length is read, the record is accepted, and no additional data is read.</span></span> <span data-ttu-id="ff680-2031">固定数の文字を確実に読み取るには、inRecordDelimiter プロパティ値を空の文字列に設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2031">To guarantee that a fixed number of characters are read, set the inRecordDelimiter property value to an empty string.</span></span> <span data-ttu-id="ff680-2032">inRecordDelimiter プロパティ値が見つからない場合、inRecordDelimiter プロパティ値は読み取れる最大文字数になります。</span><span class="sxs-lookup"><span data-stu-id="ff680-2032">When no inRecordDelimiter property value is found, the inRecordDelimiter property value is the maximum limit of characters to read.</span></span> <span data-ttu-id="ff680-2033">レコードの長さチェックを無効にするには、inRecordDelimiter プロパティ値をゼロに設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2033">Set the inRecordDelimiter property value to zero to disable the record length check.</span></span>
+
+### <a name="method-outfielddelimiter"></a><span data-ttu-id="ff680-2034">メソッド outFieldDelimiter</span><span class="sxs-lookup"><span data-stu-id="ff680-2034">Method outFieldDelimiter</span></span>
+
+<span data-ttu-id="ff680-2035">レコードのフィールドを区切るために使用されるファイルに書き込まれる文字のシーケンスを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2035">Gets or sets the sequence of characters that are written to a file that is used to separate the fields of a record.</span></span>
+
+    public str outFieldDelimiter([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-2036">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-2036">Parameters</span></span>
+
+<span data-ttu-id="ff680-2037">値</span><span class="sxs-lookup"><span data-stu-id="ff680-2037">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-2038">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-2038">Return Value</span></span>
+
+<span data-ttu-id="ff680-2039">レコードのフィールドを区切るために使用されるファイルに書き込まれる文字のシーケンス。</span><span class="sxs-lookup"><span data-stu-id="ff680-2039">The sequence of characters that are written to a file that is used to separate the fields of a record.</span></span>
+
+### <a name="method-outrecorddelimiter"></a><span data-ttu-id="ff680-2040">メソッド outRecordDelimiter</span><span class="sxs-lookup"><span data-stu-id="ff680-2040">Method outRecordDelimiter</span></span>
+
+<span data-ttu-id="ff680-2041">出力ファイルでレコードを区切る出力ファイルに書き込まれる文字のシーケンスを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2041">Gets or sets the sequence of characters that is written to the output files, which separate the records in the output files.</span></span>
+
+    public str outRecordDelimiter([str value])
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-2042">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-2042">Parameters</span></span>
+
+<span data-ttu-id="ff680-2043">値</span><span class="sxs-lookup"><span data-stu-id="ff680-2043">value</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-2044">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-2044">Return Value</span></span>
+
+<span data-ttu-id="ff680-2045">出力ファイルに書き込まれる文字のシーケンス。</span><span class="sxs-lookup"><span data-stu-id="ff680-2045">The sequence of characters that is written to the output files.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-2046">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-2046">Remarks</span></span>
+
+<span data-ttu-id="ff680-2047">標準的なテキスト ファイルについては、区切り記号は改行文字です。</span><span class="sxs-lookup"><span data-stu-id="ff680-2047">For standard text files, the delimiter is a newline character.</span></span>
+
+### <a name="method-read"></a><span data-ttu-id="ff680-2048">メソッド read</span><span class="sxs-lookup"><span data-stu-id="ff680-2048">Method read</span></span>
+
+<span data-ttu-id="ff680-2049">Io オブジェクトから次の完全なレコードを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="ff680-2049">Reads the next full record from the Io object.</span></span>
+
+    public container read()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-2050">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-2050">Return Value</span></span>
+
+<span data-ttu-id="ff680-2051">入出力オブジェクトから次の完全なレコードを保持するコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="ff680-2051">A container that holds the next full record from the Io object.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-2052">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-2052">Remarks</span></span>
+
+<span data-ttu-id="ff680-2053">次の完全なレコードの定義は、次のプロパティ、inFieldDelimiter、inRecordDelimiter、および inRecordLength メソッド プロパティによって制御されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-2053">The definition of the next full record is controlled by the inFieldDelimiter, inRecordDelimiter, and inRecordLength method properties.</span></span> <span data-ttu-id="ff680-2054">レコードはコンテナーとして返されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-2054">The record is returned as a container.</span></span> <span data-ttu-id="ff680-2055">コンテナー内の各エントリは、レコードの 1 つのフィールドと同じです。</span><span class="sxs-lookup"><span data-stu-id="ff680-2055">Each entry in the container equals one field in the record.</span></span> <span data-ttu-id="ff680-2056">それぞれの特殊な Io クラスは、inFieldDelimiter、inRecordDelimiter、および inRecordLength のデフォルト設定を使用し、最も一般的な形式の入出力を可能にします。</span><span class="sxs-lookup"><span data-stu-id="ff680-2056">Each of the specialized Io classes has default settings for inFieldDelimiter, inRecordDelimiter, and inRecordLength enabling input and output of the most common formats.</span></span> <span data-ttu-id="ff680-2057">目的の形式をサポートするために、これらの設定の調整が生じる場合があります。</span><span class="sxs-lookup"><span data-stu-id="ff680-2057">You might have to adjust these to support the wanted format.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-2058">例</span><span class="sxs-lookup"><span data-stu-id="ff680-2058">Examples</span></span>
+
+<span data-ttu-id="ff680-2059">このメソッドは、run メソッドの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2059">This method demonstrates the use of the run method.</span></span> <span data-ttu-id="ff680-2060">ただし、次の例は、クラス、フォーム、またはその他のオブジェクトのコンテキストで実行される必要があるため、ジョブはコンパイルされません。</span><span class="sxs-lookup"><span data-stu-id="ff680-2060">However, the following example will not compile in a job as it must be run in the context of a class, form, or other object.</span></span>
+
+    static void Job1(Args _args) 
+    { 
+        FileIoPermission _perm; 
+        AsciiIo myfileio; 
+        Container c; 
+        _perm = new FileIoPermission("myfile.txt","r"); 
+        myfileio = new AsciiIo("myfile.txt","r"); 
+        while(myfileio.status()==IO_Status::OK) 
+        { 
+            c = myfileio.read(); 
+            // ...do something with the container 
+        } 
+    }
+
+### <a name="method-status"></a><span data-ttu-id="ff680-2061">メソッド status</span><span class="sxs-lookup"><span data-stu-id="ff680-2061">Method status</span></span>
+
+<span data-ttu-id="ff680-2062">Io オブジェクトで実行された最後の操作のステータスを取得します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2062">Retrieves the status of the last operation performed on the Io object.</span></span>
+
+    public IO_Status status()
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-2063">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-2063">Return Value</span></span>
+
+<span data-ttu-id="ff680-2064">IO\_Status システム列挙値としての最後の操作の状態。</span><span class="sxs-lookup"><span data-stu-id="ff680-2064">The status of the last operation, as an IO\_Status system enumeration value.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-2065">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-2065">Remarks</span></span>
+
+<span data-ttu-id="ff680-2066">返される可能性のある IO\_Status 値の範囲はクラスによって異なります。</span><span class="sxs-lookup"><span data-stu-id="ff680-2066">The range of possible IO\_Status values returned varies among Io Classes.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-2067">例</span><span class="sxs-lookup"><span data-stu-id="ff680-2067">Examples</span></span>
+
+    static void myExample(Args _args) 
+    { 
+        Io myIo; 
+        //.. create io object and perform some operations 
+        if (myIo.status()==IO_Status::OK) 
+        { 
+            // ...go ahead - last operation was successful 
+        } 
+    }
+
+### <a name="method-write"></a><span data-ttu-id="ff680-2068">メソッド write</span><span class="sxs-lookup"><span data-stu-id="ff680-2068">Method write</span></span>
+
+<span data-ttu-id="ff680-2069">単純型の値を記述します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2069">Writes values of a simple type.</span></span>
+
+    public boolean write(VarArg values)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-2070">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-2070">Parameters</span></span>
+
+<span data-ttu-id="ff680-2071">値</span><span class="sxs-lookup"><span data-stu-id="ff680-2071">values</span></span>  
+<span data-ttu-id="ff680-2072">単純型は、文字列、整数、実数、列挙型、日付です。</span><span class="sxs-lookup"><span data-stu-id="ff680-2072">The simple types are string, integer, real, enum, and date.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-2073">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-2073">Return Value</span></span>
+
+<span data-ttu-id="ff680-2074">書き込み操作が成功する場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="ff680-2074">true if the write operation succeeds; otherwise false.</span></span> <span data-ttu-id="ff680-2075">書き込みが失敗した場合は、ステータス メソッドがその原因を調べることができます。</span><span class="sxs-lookup"><span data-stu-id="ff680-2075">If the write failed, the status method could be checked for the cause.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-2076">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-2076">Remarks</span></span>
+
+<span data-ttu-id="ff680-2077">このメソッドは、可変数の引数を受け入れます。</span><span class="sxs-lookup"><span data-stu-id="ff680-2077">The method accepts a variable number of arguments.</span></span> <span data-ttu-id="ff680-2078">指定された各値は、フィールドとして出力レコードに配置されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-2078">Each value specified is put into the output record as a field.</span></span> <span data-ttu-id="ff680-2079">最初のフィールドとしての最初の引数、2 番目のフィールドとしての 2 番目の引数など。</span><span class="sxs-lookup"><span data-stu-id="ff680-2079">The first argument as the first field, the second argument as the second field, and so on.</span></span> <span data-ttu-id="ff680-2080">フィールドは、outFieldDelimiter メソッドで指定されたフィールド区切り記号で区切られます。</span><span class="sxs-lookup"><span data-stu-id="ff680-2080">The fields are separated with the field delimiter that is specified in the outFieldDelimiter method.</span></span> <span data-ttu-id="ff680-2081">各レコードは、outRecordDelimiter 方法で区切られます。</span><span class="sxs-lookup"><span data-stu-id="ff680-2081">Each record is separated by the outRecordDelimiter method.</span></span> <span data-ttu-id="ff680-2082">完全なコンテナーを書き込むには、writeExp メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2082">To write complete containers, use the writeExp method.</span></span>
+
+### <a name="method-writeexp"></a><span data-ttu-id="ff680-2083">メソッド writeExp</span><span class="sxs-lookup"><span data-stu-id="ff680-2083">Method writeExp</span></span>
+
+<span data-ttu-id="ff680-2084">コンテナのコンテンツをそのファイルに記述します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2084">Writes the content of a container to the file.</span></span>
+
+    public boolean writeExp(container data)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-2085">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-2085">Parameters</span></span>
+
+<span data-ttu-id="ff680-2086">データ</span><span class="sxs-lookup"><span data-stu-id="ff680-2086">data</span></span>  
+<span data-ttu-id="ff680-2087">レコードのデータを含むコンテナー。</span><span class="sxs-lookup"><span data-stu-id="ff680-2087">The container with data for the record.</span></span>
+
+#### <a name="return-value"></a><span data-ttu-id="ff680-2088">戻り値</span><span class="sxs-lookup"><span data-stu-id="ff680-2088">Return Value</span></span>
+
+<span data-ttu-id="ff680-2089">操作が成功した場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="ff680-2089">true if the operation succeeded; otherwise false.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-2090">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-2090">Remarks</span></span>
+
+<span data-ttu-id="ff680-2091">このメソッドが false を返す場合、ステータス メソッドで原因を確認します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2091">If this method returns false, check the status method for the cause.</span></span> <span data-ttu-id="ff680-2092">コンテナー内のエントリはフィールドとして扱われ、コンテナーは完全なレコードとして扱われます。</span><span class="sxs-lookup"><span data-stu-id="ff680-2092">The entries in the container are treated as fields, and the container is treated as a full record.</span></span> <span data-ttu-id="ff680-2093">フィールド区切り記号は、outFieldDelimiter メソッドで定義されています。</span><span class="sxs-lookup"><span data-stu-id="ff680-2093">The field separator is defined in the outFieldDelimiter method.</span></span> <span data-ttu-id="ff680-2094">レコード区切りは outRecordDelimiter メソッドで定義されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-2094">The record separator is defined in the outRecordDelimiter method.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-2095">例</span><span class="sxs-lookup"><span data-stu-id="ff680-2095">Examples</span></span>
+
+    static void testMethod(Args _args) 
+    { 
+        FileIOPermission _perm; 
+        container c; 
+        CommaIo myfile; 
+        _perm = new FileIOPermission("myfile.txt","w"); 
+        _perm.assert(); 
+        myfile = new CommaIo("myfile.txt","w"); 
+        // Assign the entries in the container according to record layout. 
+        c = [1,"MyText",1.324,"Last field"]; 
+        // write this record according to file format (record/field delimiters). 
+        myfile.writeExp(c); 
+    }
+
+### <a name="method-finalize"></a><span data-ttu-id="ff680-2096">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ff680-2096">Method finalize</span></span>
+
+<span data-ttu-id="ff680-2097">ファイルを閉じ、データが書き込まれている場合、ファイル バッファーをディスクにフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="ff680-2097">Closes the file and, if data was written, flushes the file buffers to disk.</span></span>
+
+    public void finalize()
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-2098">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-2098">Remarks</span></span>
+
+<span data-ttu-id="ff680-2099">オブジェクトは、通常、スコープから離れることによって確定されるため、確定は通常は直接呼び出されません。</span><span class="sxs-lookup"><span data-stu-id="ff680-2099">The object is typically finalized by leaving the scope, so finalize is typically not called directly.</span></span> <span data-ttu-id="ff680-2100">記述された出力はオブジェクトの終了前は無効です。</span><span class="sxs-lookup"><span data-stu-id="ff680-2100">Written output will not be valid before the object is finalized.</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="ff680-2101">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ff680-2101">Method new</span></span>
+
+<span data-ttu-id="ff680-2102">Io クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2102">Creates a new instance of the Io class.</span></span>
+
+    public void new(str filename, str mode)
+
+#### <a name="parameters"></a><span data-ttu-id="ff680-2103">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ff680-2103">Parameters</span></span>
+
+<span data-ttu-id="ff680-2104">filename</span><span class="sxs-lookup"><span data-stu-id="ff680-2104">filename</span></span>  
+<span data-ttu-id="ff680-2105">ファイルを開く必要があるモード。</span><span class="sxs-lookup"><span data-stu-id="ff680-2105">The mode in which the file should be opened.</span></span>
+
+<!-- -->
+
+<span data-ttu-id="ff680-2106">モード</span><span class="sxs-lookup"><span data-stu-id="ff680-2106">mode</span></span>  
+<span data-ttu-id="ff680-2107">ファイルを開く必要があるモード。</span><span class="sxs-lookup"><span data-stu-id="ff680-2107">The mode in which the file should be opened.</span></span>
+
+#### <a name="remarks"></a><span data-ttu-id="ff680-2108">備考</span><span class="sxs-lookup"><span data-stu-id="ff680-2108">Remarks</span></span>
+
+<span data-ttu-id="ff680-2109">mode パラメーターは、次のモードのいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="ff680-2109">The mode parameter can be one of the following modes:</span></span>
+
+-   <span data-ttu-id="ff680-2110">R – 読み取り</span><span class="sxs-lookup"><span data-stu-id="ff680-2110">R – read</span></span>
+-   <span data-ttu-id="ff680-2111">W – 書き込み</span><span class="sxs-lookup"><span data-stu-id="ff680-2111">W – write</span></span>
+-   <span data-ttu-id="ff680-2112">A – 追加 (意味 W)</span><span class="sxs-lookup"><span data-stu-id="ff680-2112">A – append (implies W)</span></span>
+-   <span data-ttu-id="ff680-2113">T – 翻訳 (テキスト)</span><span class="sxs-lookup"><span data-stu-id="ff680-2113">T – translate (text)</span></span>
+-   <span data-ttu-id="ff680-2114">B – バイナリ</span><span class="sxs-lookup"><span data-stu-id="ff680-2114">B – binary</span></span>
+
+<span data-ttu-id="ff680-2115">ランタイム エラーは、現在開いているモードに対応しないメソッドでファイルにアクセスすると発生します (たとえば、読み取りモード ファイルに書き込もうとした場合など)。</span><span class="sxs-lookup"><span data-stu-id="ff680-2115">A run-time error occurs if the file is accessed with a method that does not correspond to the current opened mode (for example, if an attempt is made to write to a read-mode file).</span></span> <span data-ttu-id="ff680-2116">攻撃者が新しいメソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2116">If an attacker can control input to the new method, a security risk exists.</span></span> <span data-ttu-id="ff680-2117">したがって、このメソッドは、コード アクセス セキュリティで実行されます。</span><span class="sxs-lookup"><span data-stu-id="ff680-2117">Therefore, this method runs under Code Access Security.</span></span> <span data-ttu-id="ff680-2118">サーバー上でこのメソッドを呼び出すには、アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="ff680-2118">Calls to this method on the server require permission.</span></span> <span data-ttu-id="ff680-2119">.</span><span class="sxs-lookup"><span data-stu-id="ff680-2119">.</span></span> <span data-ttu-id="ff680-2120">ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ff680-2120">Ensure that the user has development privileges by setting the security key to SysDevelopment on the control that calls this method.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="ff680-2121">例</span><span class="sxs-lookup"><span data-stu-id="ff680-2121">Examples</span></span>
+
+<span data-ttu-id="ff680-2122">この例では、Io クラスを使用して ExampleFile に書き込みます。</span><span class="sxs-lookup"><span data-stu-id="ff680-2122">This example uses the Io class to write to ExampleFile.</span></span>
+
+    void IoExample() 
+    { 
+        Io io; 
+        container con; 
+        FileIoPermission perm; 
+        #define.ExampleFile(@"c:\test.txt") 
+        #define.ExampleOpenMode("w") 
+        // Grants permission to execute the 
+        // Io.new method. 
+        // Io.new runs under code access security. 
+        perm = new FileIoPermission(#ExampleFile, #ExampleOpenMode); 
+        if (perm == null) 
+        { 
+            return; 
+        } 
+        perm.assert(); 
+        io = new Io(#ExampleFile, #ExampleOpenMode); 
+        if (io != null) 
+        { 
+            io.write("Test"); 
+        } 
+        // Close the code access permission scope. 
+        CodeAccessPermission::revertAssert(); 
+    }
+
+
+

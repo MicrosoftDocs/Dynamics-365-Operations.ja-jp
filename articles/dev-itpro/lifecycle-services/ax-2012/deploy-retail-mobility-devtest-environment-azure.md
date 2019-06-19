@@ -1,591 +1,231 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="deploy-retail-mobility-devtest-environment-azure.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>deploy-retail-mobility-devtest-environment-azure.23699a.8cf63a63ff98b6168bdc61536334c9d7a44579b0.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>8cf63a63ff98b6168bdc61536334c9d7a44579b0</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\lifecycle-services\ax-2012\deploy-retail-mobility-devtest-environment-azure.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Deploy Retail mobility dev/test environments on Azure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure での Retail Mobility 開発/テスト環境の配置</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains how to deploy a Retail mobility dev/test environment on Microsoft Azure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Azure に Retail mobility 開発/テスト環境を配置する方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>To deploy the environment, you’ll use the cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境を配置するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Deploy Retail mobility dev/test environments on Azure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure での Retail Mobility 開発/テスト環境の配置</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This topic explains how to deploy a Retail mobility dev/test environment on Microsoft Azure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Azure に Retail mobility 開発/テスト環境を配置する方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>To deploy the environment, you’ll use the cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境を配置するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Prerequisites</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Before you complete the procedures in this topic, make sure that the following prerequisites are in place.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックの手順を実行する前に、次の条件が満たされていることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Category</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カテゴリ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Prerequisite</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前提条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Required tasks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要なタスク</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt>Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure<ept id="p1">](plan-2012-r3-deployment-azure.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Azure 上での Microsoft Dynamics AX 2012 R3 の配置計画<ept id="p1">](plan-2012-r3-deployment-azure.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>1. Log on to Lifecycle Services</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1. ライフサイクル サービスにログオンする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics AX projects.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics Lifecycle Services (LCS) は、顧客およびパートナーが Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>You’ll use this website to deploy Dynamics AX on Azure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure に Dynamics AX を配置するには、この Web サイトを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Lifecycle Services is available to customers and partners as part of their support plans.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>You can access it with your CustomerSource or PartnerSource credentials, for details see <bpt id="p1">[</bpt>Log on to Lifecycle Services<ept id="p1">](https://lcs.dynamics.com/)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustomerSource または PartnerSource の資格情報でアクセスすることができます。詳細については、<bpt id="p1">[</bpt>Lifecycle Services にログオン<ept id="p1">](https://lcs.dynamics.com/)</ept>を参照してください</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>2. Create a project</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2. プロジェクトの作成</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>After you log in to LCS, open an existing project, or create a new project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS にログインした後、既存のプロジェクトを開くか、または新しいプロジェクトを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Projects are the key organizer of your experience in LCS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトは、LCS でのエクスペリエンスの主な開催者です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The methodology associated with a project determines which phases and tasks are included in the project by default.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトに関連する手法は、既定でプロジェクトに含まれるフェーズとタスクを決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>3. Connect the project to your Azure subscription</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3. Azure サブスクリプションにプロジェクトを接続する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Connect the LCS project to your Azure subscription.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure サブスクリプションに LCS プロジェクトを接続します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>This will enable LCS to deploy a Dynamics AX environment to the subscription.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、LCS は Dynamics AX 環境をサブスクリプションに展開できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>To connect the project to your Azure subscription, complete the following procedure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure サブスクリプションにプロジェクトを接続するには、次の手順を実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>In your LCS project, go to the <bpt id="p1">**</bpt>Environments<ept id="p1">**</ept> section, click <bpt id="p2">**</bpt>Microsoft Azure settings<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Add<ept id="p3">**</ept> in the <bpt id="p4">**</bpt>Azure Connectors<ept id="p4">**</ept> area.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS プロジェクトで<bpt id="p1">**</bpt>環境<ept id="p1">**</ept>セクションに移動して、<bpt id="p2">**</bpt>Microsoft Azure 設定<ept id="p2">**</ept>をクリックしてから、<bpt id="p4">**</bpt>Azure コネクタ領域<ept id="p4">**</ept>で<bpt id="p3">**</bpt>追加<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The <bpt id="p1">**</bpt>Microsoft Azure settings<ept id="p1">**</ept> option is also available when you click the <bpt id="p2">**</bpt>Cloud-hosted environments<ept id="p2">**</ept> tile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Microsoft Azure 設定<ept id="p1">**</ept>オプションは、<bpt id="p2">**</bpt>クラウド-ホスト環境タイル<ept id="p2">**</ept>をクリックしたときにも使用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Enter a name to identify the connection to Azure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure への接続を識別する名前を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Enter your Azure subscription ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure サブスクリプション ID を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>If you need to find your subscription ID, complete the following steps:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブスクリプション ID を検索する必要がある場合は、次の手順を実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Open another instance of your browser.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザの別のインスタンスを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Log on to the <bpt id="p1">[</bpt>Azure portal<ept id="p1">](https://ms.portal.azure.com/)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Azure ポータル<ept id="p1">](https://ms.portal.azure.com/)</ept>にログオンします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>In the navigation pane on the left, click <bpt id="p1">**</bpt>Subscriptions<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">左のナビゲーション ウィンドウで、<bpt id="p1">**</bpt>サブスクリプション<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>You may need to click <bpt id="p1">**</bpt>More services<ept id="p1">**</ept> at the bottom, and then click <bpt id="p2">**</bpt>Subscriptions<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">下部の <bpt id="p1">**</bpt>その他のサービス<ept id="p1">**</ept> をクリックしてから <bpt id="p2">**</bpt>サブスクリプション<ept id="p2">**</ept> をクリックすることが必要な場合があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Copy your subscription ID, and then paste it into the <bpt id="p1">**</bpt>Azure subscription ID<ept id="p1">**</ept> field in LCS (which is currently displayed in another browser instance).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブスクリプション ID をコピーして、LCS の <bpt id="p1">**</bpt>Azure サブスクリプション ID<ept id="p1">**</ept> フィールドに貼り付けます (現在別のブラウザー インスタンスに表示されています)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>次へ<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Click <bpt id="p1">**</bpt>Download<ept id="p1">**</ept> to download a management certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ダウンロード<ept id="p1">**</ept>をクリックして管理証明書をダウンロードします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>This management certificate enables LCS to communicate with Azure on your behalf.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この管理証明書により、LCS はお客様の代わりに Azure と通信できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>By default, the management certificate is saved to the <bpt id="p1">**</bpt>Downloads<ept id="p1">**</ept> folder on your computer and is named <bpt id="p2">**</bpt>LifecycleServicesDeployment.cer.<ept id="p2">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、管理証明書はコンピューターの<bpt id="p1">**</bpt>ダウンロード<ept id="p1">**</ept> フォルダーに保存され、<bpt id="p2">**</bpt>LifecycleServicesDeployment.cer<ept id="p2">**</ept> という名前が付きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Upload the management certificate to Azure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理証明書を Azure にアップロードします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>To do so, see the instructions in <bpt id="p1">[</bpt>Upload an Azure Management API Management Certificate<ept id="p1">](https://docs.microsoft.com/en-us/azure/azure-api-management-certs)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これを行うには、[<bpt id="p1">[</bpt>Azure 管理 API 管理証明書をアップロード<ept id="p1">](https://docs.microsoft.com/en-us/azure/azure-api-management-certs)</ept>] の手順を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Go back to the browser that displays the <bpt id="p1">**</bpt>Microsoft Azure setup<ept id="p1">**</ept> panel in LCS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS で <bpt id="p1">**</bpt>Microsoft Azure 設定<ept id="p1">**</ept>パネルを表示するブラウザーに戻ります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>次へ<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Select a region.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">地域を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>The AX 2012 R3 environment will be deployed to a datacenter in this region.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 R3 環境は、この領域のデータ センターに配置されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Click <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>接続<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>The project is now connected to the Azure subscription that you specified.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これで、プロジェクトが指定された Azure サブスクリプションに接続できるようになりました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>If the certificate expires, you can obtain a new one.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書が期限切れになった場合は、新しいものを取得できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>To do so:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そのためには次の作業を行います。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Select the connection in the <bpt id="p1">**</bpt>Azure connectors<ept id="p1">**</ept> area of your project settings, and click <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトの設定の <bpt id="p1">**</bpt>Azure コネクタ<ept id="p1">**</ept> 領域で接続を選択し、<bpt id="p2">**</bpt>編集<ept id="p2">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The <bpt id="p1">**</bpt>Microsoft Azure setup<ept id="p1">**</ept> panel is displayed on the side of the screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Microsoft Azure 設定<ept id="p1">**</ept>パネルが画面の横に表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Click <bpt id="p1">**</bpt>Download<ept id="p1">**</ept> to download a new certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ダウンロード<ept id="p1">**</ept>をクリックして新しい証明書をダウンロードします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Repeat steps 6-9 of the above procedure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">上の手順の手順 6 ～ 9 を繰り返します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>4. Deploy a Retail mobility dev/test environment on Azure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4. Azure での Retail Mobility 開発/テスト環境の配置</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Complete the following procedure to deploy a Retail mobility dev/test environment on Azure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure に Retail Mobility 開発/テスト環境を配置するには、以下の手順に従ってください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>On the <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept> page, click the Add (<bpt id="p2">**</bpt><ph id="ph1">+</ph><ept id="p2">**</ept>) icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>クラウド ホスト環境<ept id="p1">**</ept>ページで、追加 (<bpt id="p2">**</bpt><ph id="ph1">+</ph><ept id="p2">**</ept>) アイコンをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>In the <bpt id="p1">**</bpt>Select environment topology<ept id="p1">**</ept> panel, select <bpt id="p2">**</bpt>Dev/test<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>環境のトポロジの選択<ept id="p1">**</ept>パネルで、<bpt id="p2">**</bpt>開発/テスト<ept id="p2">**</ept>を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Click <bpt id="p1">**</bpt>Retail mobility dev/test<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Retail Mobility 開発/テスト<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>In the <bpt id="p1">**</bpt>Environment name<ept id="p1">**</ept> field, enter a name for the environment that will be deployed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>環境名<ept id="p1">**</ept>フィールドに、配置される環境の名前を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Click <bpt id="p1">**</bpt>Advanced settings<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>詳細設定<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>To customize domain settings, click <bpt id="p1">**</bpt>Customize domain settings<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドメイン設定をカスタマイズするには、<bpt id="p1">**</bpt>ドメイン設定をカスタマイズ<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Use the following table to enter information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">情報を入力するには、次の表を使用してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>If you want to</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下を行う場合</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Do this</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">操作</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Create a new domain in Azure for the environment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure で環境用に新しいドメインを作成する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>New domain<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>新規ドメイン<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Enter a name for the domain.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドメイン名を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>By default, the domain is named <bpt id="p1">&lt;em&gt;</bpt>contoso.com<ept id="p1">&lt;/em&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、ドメインは <bpt id="p1">&lt;em&gt;</bpt>contoso.com<ept id="p1">&lt;/em&gt;</ept> と呼ばれます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Add the environment to an existing domain in Azure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure の既存のドメインへの環境の追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>Existing domain<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>既存のドメイン<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Enter the name of the domain.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドメイン名を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>For example, <bpt id="p1">&lt;em&gt;</bpt>contoso.com<ept id="p1">&lt;/em&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">&lt;em&gt;</bpt>contoso.com<ept id="p1">&lt;/em&gt;</ept>。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>To customize the service accounts that will be created in the domain, click <bpt id="p1">**</bpt>Customize service accounts<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドメインで作成されるサービス アカウントをカスタマイズするには、<bpt id="p1">**</bpt>サービス アカウントをカスタマイズ<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Service accounts and/or service account passwords can be specified through the <bpt id="p1">**</bpt>Advanced Settings<ept id="p1">**</ept> option for a deployment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">展開の <bpt id="p1">**</bpt>詳細設定<ept id="p1">**</ept> オプションを通じてサービス アカウントやサービス アカウントのパスワードを指定することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>If neither is provided, default accounts are used and random passwords are selected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">どちらもが指定されていない場合は、既定の勘定が使用され、ランダムなパスワードが選択されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Use these features when you want to maintain account naming and password rules for your corporation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の機能は、企業のアカウントの命名規則とパスワードの規則を管理する場合に使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Account and password rules:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アカウントとパスワードのルール:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>A valid service name must be less than 20 characters with no special characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効なサービス名は、特殊文字を含まない 20 文字未満である必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>A valid password must be more than 8 characters and contain uppercase letters, lowercase letters, numbers, and at least one of the following characters: <ph id="ph1">\[</ph>'@', '!', '=', '<ph id="ph2">\*</ph>'<ph id="ph3">\]</ph> You can’t use common passwords, such as: pass@word1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効なパスワードは 8 文字以上で、大文字、小文字、数字、および次の文字のうち少なくとも 1 つが含まれます: <ph id="ph1">\[</ph>'@', '!', '=', '<ph id="ph2">\*</ph>'<ph id="ph3">\]</ph> 次のような一般的なパスワードは使用できません: pass@word1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>To select the version of AX 2012 R3 that you want use, click <bpt id="p1">**</bpt>Supported version<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用を希望する AX 2012 R3 のバージョンを選択するには、<bpt id="p1">**</bpt>サポートされているバージョン<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>By default, the AX 2012 R3 CU8 version of this environment will be deployed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、この環境の AX 2012 R3 CU8 バージョンが配置されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>If you don’t want to use the CU8 version, select <bpt id="p1">**</bpt>Dynamics ERP 2012 R3 RTM<ept id="p1">**</ept> from the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CU8 バージョンを使用しない場合は、<bpt id="p1">**</bpt>Dynamics ERP 2012 R3 RTM<ept id="p1">**</ept> をリストから選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>To customize virtual machine names, click C<bpt id="p1">**</bpt>ustomize virtual machine names<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仮想マシン名をカスタマイズするには、<bpt id="p1">**</bpt>仮想マシン名をカスタマイズ<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>In order to support common IT naming guidelines, the ability to name virtual machines is provided through the <bpt id="p1">**</bpt>Advanced settings<ept id="p1">**</ept> option on most deployment topologies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般的な IT 名前付けガイドラインをサポートするために、仮想マシンに名前を付ける機能がほとんどの配置トポロジの<bpt id="p1">**</bpt>詳細設定<ept id="p1">**</ept>に用意されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>In addition to defining the name, a starting index can be selected for each virtual machine type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前を定義することに加えて、各仮想マシン タイプに開始インデックスを選択できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>The index is incremented for each instance of the virtual machine type that is deployed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インデックスは、配置される仮想マシン タイプのインスタンスごとに増加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Virtual machine names must be 13 characters or less.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仮想マシン名は 13 文字またはそれ以下にする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インデックスはマシン名とハイフン (-) で区切られ、その後に最大 2 桁のインデックスが続きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Example: ACustomVMName-99.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例: ACustomVMName-99。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初の展開後に、仮想マシンのインスタンスが環境に追加されるとき、配置サービスは、中断した場所で、仮想マシンの名前の増分を開始します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、2 で始まるインデックスを持つ 4 つの AOS 仮想マシンを展開する場合、最後の AOS インスタンス名は AOS-6 になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>If you add two more AOS instances, they will be AOS-7 and AOS-8.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">もう 2 つ AOS インスタンスを追加する場合は、AOS-7 と AOS 8 になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">展開内の仮想マシン タイプの 1 つがカスタマイズされている場合は、すべての仮想マシン名をカスタマイズする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、仮想マシン名が誤って紛失してしまったため、長期的な展開が発生しないようにするためです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>To customize virtual network settings, click <bpt id="p1">&lt;strong&gt;</bpt>Customize virtual network<ept id="p1">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仮想ネットワークの設定をカスタマイズするには、<bpt id="p1">&lt;strong&gt;</bpt>仮想ネットワークをカスタマイズする<ept id="p1">&lt;/strong&gt;</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Use the following table to enter information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">情報を入力するには、次の表を使用してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>If you want to</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下を行う場合</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Do this</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">操作</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Create a new virtual network in Azure for the environment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure で環境用に新しい仮想ネットワークを作成する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Click <bpt id="p1">&lt;span class="label"&gt;</bpt><bpt id="p2">&lt;strong&gt;</bpt>New virtual networ<ept id="p2">&lt;/strong&gt;</ept>k<ept id="p1">&lt;/span&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;span class="label"&gt;</bpt><bpt id="p2">&lt;strong&gt;</bpt>新しい仮想ネットワー<ept id="p2">&lt;/strong&gt;</ept>ク<ept id="p1">&lt;/span&gt;</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Enter a name for the virtual network.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仮想ネットワーク名を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Add the environment to an existing virtual network in Azure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure の既存の仮想ネットワークへの環境の追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>Existing virtual network<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>既存の仮想ネットワーク<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Select the name of the existing virtual network that you want to use.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用する既存の仮想ネットワークの名前を選択してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>The <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>Address space<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> field will automatically display the appropriate value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>アドレス空間<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> フィールドには、適切な値が自動的に表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Select the provided value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">提供された値を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>The <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>Application subnet name<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> field will display available options.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>アプリケーション サブネット名<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>フィールドには、使用可能なオプションが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>If you are deploying to an AD that was previously deployed through Lifecycle Services, select the <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt><bpt id="p3">&lt;em&gt;</bpt>APPNET<ept id="p3">&lt;/em&gt;</ept><ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lifecycle Services によって以前に展開した広告に配置する場合は、選択した <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt><bpt id="p3">&lt;em&gt;</bpt>APPNET<ept id="p3">&lt;/em&gt;</ept><ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> 値を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>The Active Directory subnet must be entered and match the Active Directory subnet IP/Range found in the Azure management portal for the AD you want to target.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Active Directory サブネットを入力する必要があり、ターゲットとする AD の Azure 管理ポータルにある Active Directory サブネット IP/範囲と一致している必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Log on to the <bpt id="p1">&lt;a href="https://ms.portal.azure.com/"&gt;</bpt>Azure portal<ept id="p1">&lt;/a&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;a href="https://ms.portal.azure.com/"&gt;</bpt>Azure ポータル<ept id="p1">&lt;/a&gt;</ept>にログオンします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>In the navigation pane on the left, click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>Virtual networks<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">左のナビゲーション ウィンドウで、<bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>仮想ネットワーク<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Click the name of the virtual network that you’re going to use.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用する仮想ネットワークの名前をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>Configure<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>構成<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Details about the virtual network are listed on the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仮想ネットワークに関する詳細は、ページに記載されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>完了<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>The <bpt id="p1">**</bpt>Deploy environment<ept id="p1">**</ept> panel is redisplayed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>環境の展開<ept id="p1">**</ept> パネルが再表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>The number and size of each virtual machine that will be deployed is listed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置される仮想マシンの数とサイズが一覧表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Change the number and size of the virtual machines, as needed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じて、仮想マシンの数とサイズを変更します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>For information about the software installed on each virtual machine in this environment, see <bpt id="p1">[</bpt>Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure<ept id="p1">](plan-2012-r3-deployment-azure.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「<bpt id="p1">[</bpt>Azure での Microsoft Dynamics AX 2012 R3 配置の計画<ept id="p1">](plan-2012-r3-deployment-azure.md)</ept>」を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>For sizing and pricing details about virtual machines, see <bpt id="p1">[</bpt>Virtual machines pricing details<ept id="p1">](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仮想マシンに関するサイズおよび価格決定の詳細については、<bpt id="p1">[</bpt>仮想マシンの価格決定の詳細<ept id="p1">](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/)</ept> を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Click <bpt id="p1">**</bpt>Software License Terms<ept id="p1">**</ept> to review the licensing terms and conditions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンスの条項を確認するには、<bpt id="p1">**</bpt>ソフトウェア ライセンス条項<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Then select the check box to indicate that you agree to the terms.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、チェック ボックスを選択して、条件に同意することを示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>次へ<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Click <bpt id="p1">**</bpt>Deploy<ept id="p1">**</ept> to confirm that you’re ready to deploy the environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>展開<ept id="p1">**</ept>をクリックして、環境を展開する準備が整ったことを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>The deployment may take a few hours to complete.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置には数時間かかる場合があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>When the deployment is done, the <bpt id="p1">**</bpt>Deployment Status<ept id="p1">**</ept> column on the <bpt id="p2">**</bpt>Cloud-hosted environments<ept id="p2">**</ept> page will display <bpt id="p3">**</bpt>Deployed<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置が完了すると、<bpt id="p2">**</bpt>クラウド ホスト環境<ept id="p2">**</ept> ページの <bpt id="p1">**</bpt>配置ステータス<ept id="p1">**</ept> 列に <bpt id="p3">**</bpt>配置済み<ept id="p3">**</ept> が表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>(You may need to refresh your browser to see this.) If the deployment fails, you may see an error message right away.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(これを表示するにはブラウザーを更新する必要があります。) 配置が失敗すると、すぐエラー メッセージが表示される場合があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>If the error occurs later in the deployment process, error details will be displayed in the <bpt id="p1">**</bpt>Details<ept id="p1">**</ept> pane on the right-side of the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置プロセスでエラーが後に発生する場合に、エラーの詳細がページの右側の<bpt id="p1">**</bpt>詳細<ept id="p1">**</ept>ペインに表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>5. Prepare the Retail mobility dev/test environment for use</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5. 使用する Retail mobility 開発/テスト環境の配置</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Now that the Retail mobility dev/test environment has been deployed on Azure, you can connect it to your Dynamics AX environment that exists on-premises, or on Azure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Mobility 開発/テスト環境が Azure に配置されたので、オンプレミスまたは Azure にある Dynamics AX 環境に接続できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>See the following sections for more information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、以降のセクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Prerequisites</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前提条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Before you complete the following procedures, make sure that the following prerequisites are in place.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下の手順を実行する前に、次の条件が満たされていることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Prerequisite</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前提条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>More information</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Set up and configure the Dynamics AX application object server (AOS), database, and client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX アプリケーション オブジェクト サーバー (AOS)、データベース、およびクライアントを設定して構成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>As mentioned, Dynamics AX may be installed on-premises, or on Azure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前述のように、Dynamics AX はオンプレミスまたは Azure にインストールできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source><bpt id="p1">[</bpt>System setup for Microsoft Dynamics AX<ept id="p1">](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics AX のシステム設定<ept id="p1">](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>Import data into Dynamics AX.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX にデータをインポートします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>If you want sample data installed in your Dynamics AX environment, use the Test Data Transfer tool to install the sample data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX 環境にサンプル データをインストールする場合は、テスト データ転送ツールを使用してサンプル データをインストールします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>For instructions, see <bpt id="p1">[</bpt>Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012<ept id="p1">](test-data-transfer-tool-beta-2012.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手順については、<bpt id="p1">[</bpt>Microsoft Dynamics AX 2012 用のテスト データ転送ツール (ベータ版)<ept id="p1">](test-data-transfer-tool-beta-2012.md)</ept> を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Set up and configure Async Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Async Server を設定およびコンフィギュレーションします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source><bpt id="p1">[</bpt>Commerce Data Exchange: Async Server<ept id="p1">](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Commerce Data Exchange Async Server<ept id="p1">](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Set up and configure Real-time Service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Real-time Service を設定およびコンフィギュレーションします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source><bpt id="p1">[</bpt>Commerce Data Exchange: Real-time Service<ept id="p1">](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Commerce Data Exchange Real-time Service<ept id="p1">](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Sync metadata for Commerce Data Exchange.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce Data Exchange のメタデータの同期</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source><bpt id="p1">[</bpt>Enter parameters for Retail Scheduler<ept id="p1">](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>小売用スケジューラのパラメーターを入力する<ept id="p1">](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>Create a channel profile for the Retail Server using the public-facing URL of your Retail Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail サーバーの一般公開 URL を使用して、Retail サーバーのチャネル プロファイルを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source><bpt id="p1">[</bpt>Set up a channel profile<ept id="p1">](http://technet.microsoft.com/library/4ef00ad9-9da2-4d21-b3e1-637f77cab208(AX.60).aspx)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>チャンネル プロファイルの設定<ept id="p1">](http://technet.microsoft.com/library/4ef00ad9-9da2-4d21-b3e1-637f77cab208(AX.60).aspx)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Complete configuration tasks on the AOS server/virtual machine</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS サーバー/仮想機械でコンフィギュレーション タスクを完了する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Log on to the server or virtual machine where the AOS is installed and complete the following steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS がインストールされているサーバーまたは仮想マシンにログオンし、次の手順を実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Set up endpoints for the server or virtual machine.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サーバーまたは仮想マシンのエンドポイントを設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>For instructions on how to set up endpoints for a virtual machine, see the “Getting Started” section of this <bpt id="p1">[</bpt>blog post<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仮想マシンのエンドポイントを設定する方法については、<bpt id="p1">[</bpt>ブログ投稿<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept> の「はじめに」セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Configure the Real-time service and update the profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リアルタイム サービスをコンフィギュレーションし、プロファイルを更新します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>For instructions, see the “Configure Real-time Service” section of this <bpt id="p1">[</bpt>blog post<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手順については、この <bpt id="p1">[</bpt>ブログ投稿<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept> の「Real-time Service のコンフィギュレーション」セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Run the scheduler jobs to populate the channel database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャンネル データベースを設定するためのスケジューラ ジョブを実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>For instructions, see the “Run Scheduler Jobs to Populate Channel Database” section of this <bpt id="p1">[</bpt>blog post<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手順については、この <bpt id="p1">[</bpt>ブログ投稿<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept>「チャンネル データベースを設定するスケジューラ ジョブを実行する」セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>Complete configuration tasks on the MOBIL virtual machine</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MOBIL 仮想機械でコンフィギュレーション タスクを完了する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>From the <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept> page, select your Retail mobility environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>クラウド ホスト環境<ept id="p1">**</ept>ページから、Retail Mobility 開発環境を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Then scroll to the right and click the <bpt id="p1">**</bpt>MOBIL-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> link to log on to the virtual machine.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後右にスクロールし、<bpt id="p1">**</bpt>MOBIL-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> リンクをクリックして仮想マシンにログオンします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>After you have logged on to the machine, complete the following steps:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マシンにログオンした後は、次の手順を実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>If using a self-signed certificate, install the certificate on the MOBIL-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph> virtual machine.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自己署名証明書を使用する場合は、MOBI-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph> 仮想マシンに証明書をインストールします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>For instructions, see the “Install the Cert on the External Machine” section of this <bpt id="p1">[</bpt>blog post<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手順については、この <bpt id="p1">[</bpt>ブログ投稿<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept> 「外部マシンで証明書をインストール」セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Update Async Client to use the URL of the Async Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Async サーバーの URL を使用するように Async クライアントを更新します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>For instructions, see the “Install CDX Async Client” section of this <bpt id="p1">[</bpt>blog post<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手順については、この <bpt id="p1">[</bpt>ブログ投稿<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept> の「CDX Async Client のインストール」セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Set up an endpoint for port 35080.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポート 35080 用にエンドポイントを設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>For instructions on how to set up endpoints for a virtual machine, see the “Getting Started” section of this <bpt id="p1">[</bpt>blog post<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仮想マシンのエンドポイントを設定する方法については、<bpt id="p1">[</bpt>ブログ投稿<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)</ept> の「はじめに」セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Configure Windows Firewall to exclude port 35080.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポート 35080 を除外する場合は、Windows ファイアウォールをコンフィギュレーションします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>For more information about Windows Firewall, see the Windows documentation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows ファイアウォールの詳細については、Windows ドキュメントを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Install Modern POS on external devices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">外部デバイスに Modern POS をインストールします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Dynamics AX includes Modern POS, a point-of-sale app for PCs, tablets, and phones.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX は、Modern POS、PC、タブレットおよび携帯電話用の販売時点管理アプリを含みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>For instructions about how to install it, see <bpt id="p1">[</bpt>Install Retail Modern POS<ept id="p1">](https://technet.microsoft.com/EN-US/library/dn741434.aspx)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インストールする方法の詳細については、<bpt id="p1">[</bpt>Retail Modern POS のインストール<ept id="p1">](https://technet.microsoft.com/EN-US/library/dn741434.aspx)</ept>を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>6. Learn more about the service accounts for this environment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6. この環境のサービス アカウントに関する詳細</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>The following sections provide information about the service accounts that were created when you deployed the environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のセクションでは、環境を配置したときに作成されたサービス アカウントについて説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Domain accounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドメイン アカウント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>The following table lists the domain accounts that were created when you deployed the environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルに、環境を配置したときに作成されたドメイン アカウントを示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>You may have entered passwords for these accounts when you deployed the environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境を配置したときに、これらのアカウントのパスワードを入力している場合があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>If you did not, we recommend that you change the passwords.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">持っていない場合は、パスワードを変更することをお勧めします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Domain account</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドメイン アカウント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source><ph id="ph1">&lt;DomainName&gt;</ph>SQLServiceUser</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&lt;DomainName&gt;</ph>SQLServiceUser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>The account used to run the following services on the SQL-<ph id="ph1">&lt;GUID&gt;</ph> virtual machine: SQL Server Analysis Services (MSSQLSERVER)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のサービスを SQL で実行するために使用されるアカウント -<ph id="ph1">&lt;GUID&gt;</ph> 仮想マシン: SQL Server Analysis Services (MSSQLSERVER)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source><ph id="ph1">&lt;DomainName&gt;</ph>DynamicsInstallUser</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&lt;DomainName&gt;</ph>DynamicsInstallUser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>The account used to install Dynamics AX.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX をインストールするために使用したアカウント。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source><ph id="ph1">&lt;DomainName&gt;</ph>RetailServiceUser</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&lt;DomainName&gt;</ph>RetailServiceUser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>The account used to run the following services: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のサービスの実行に使用したアカウント: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>The default passwords are displayed on the <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept> page in <bpt id="p2">[</bpt>Lifecycle Services<ept id="p2">](https://lcs.dynamics.com/)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定のパスワードは、<bpt id="p2">[</bpt>Lifecycle Services<ept id="p2">](https://lcs.dynamics.com/)</ept> の <bpt id="p1">**</bpt>クラウド ホスト 環境<ept id="p1">**</ept> ページに表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Local administrator accounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル管理者アカウント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Each virtual machine that you deployed has a local administrator account.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置した各仮想マシンには、ローカル Administrator アカウントがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>This account is: builtinaxlocaladmin.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このアカウントは builtinaxlocaladmin です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>The passwords for the local administrator accounts are displayed on the <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept> page in <bpt id="p2">[</bpt>Lifecycle Services<ept id="p2">](https://lcs.dynamics.com/)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル管理者アカウントのパスワードは、<bpt id="p2">[</bpt>Lifecycle Services<ept id="p2">](https://lcs.dynamics.com/)</ept> の <bpt id="p1">**</bpt>クラウド ホスト 環境<ept id="p1">**</ept> ページに表示されます。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Azure での Retail Mobility 開発/テスト環境の配置
+description: このトピックでは、Microsoft Azure に Retail mobility 開発/テスト環境を配置する方法について説明します。 環境を配置するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。
+author: aamirallaqaband
+manager: AnnBe
+ms.date: 01/05/2018
+ms.topic: article
+ms.prod: dynamics-ax-2012
+ms.service: ''
+ms.technology: ''
+audience: Developer, IT Pro
+ms.reviewer: sericks
+ms.search.scope: AX 2012
+ms.custom: 13332
+ms.assetid: ffc3e49a-c2a7-48ce-9f3d-3950b3133cbc
+ms.search.region: Global
+ms.author: aamiral
+ms.search.validFrom: ''
+ms.dyn365.ops.version: 2012
+ms.openlocfilehash: 8cf63a63ff98b6168bdc61536334c9d7a44579b0
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555289"
+---
+# <a name="deploy-retail-mobility-devtest-environments-on-azure"></a><span data-ttu-id="e6773-104">Azure での Retail Mobility 開発/テスト環境の配置</span><span class="sxs-lookup"><span data-stu-id="e6773-104">Deploy Retail mobility dev/test environments on Azure</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="e6773-105">このトピックでは、Microsoft Azure に Retail mobility 開発/テスト環境を配置する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e6773-105">This topic explains how to deploy a Retail mobility dev/test environment on Microsoft Azure.</span></span> <span data-ttu-id="e6773-106">環境を配置するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="e6773-106">To deploy the environment, you’ll use the cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.</span></span>
+
+<a name="prerequisites"></a><span data-ttu-id="e6773-107">必要条件</span><span class="sxs-lookup"><span data-stu-id="e6773-107">Prerequisites</span></span>
+-------------
+
+<span data-ttu-id="e6773-108">このトピックの手順を実行する前に、次の条件が満たされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e6773-108">Before you complete the procedures in this topic, make sure that the following prerequisites are in place.</span></span>
+
+| <span data-ttu-id="e6773-109">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="e6773-109">Category</span></span>       | <span data-ttu-id="e6773-110">前提条件</span><span class="sxs-lookup"><span data-stu-id="e6773-110">Prerequisite</span></span>                                                                                                                                                    |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="e6773-111">必要なタスク</span><span class="sxs-lookup"><span data-stu-id="e6773-111">Required tasks</span></span> | [<span data-ttu-id="e6773-112">Azure 上での Microsoft Dynamics AX 2012 R3 の配置計画</span><span class="sxs-lookup"><span data-stu-id="e6773-112">Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure</span></span>](plan-2012-r3-deployment-azure.md) |
+
+## <a name="1-log-on-to-lifecycle-services"></a><span data-ttu-id="e6773-113">1. ライフサイクル サービスにログオンする</span><span class="sxs-lookup"><span data-stu-id="e6773-113">1. Log on to Lifecycle Services</span></span>
+<span data-ttu-id="e6773-114">Microsoft Dynamics Lifecycle Services (LCS) は、顧客およびパートナーが Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。</span><span class="sxs-lookup"><span data-stu-id="e6773-114">Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics AX projects.</span></span> <span data-ttu-id="e6773-115">Azure に Dynamics AX を配置するには、この Web サイトを使用します。</span><span class="sxs-lookup"><span data-stu-id="e6773-115">You’ll use this website to deploy Dynamics AX on Azure.</span></span> <span data-ttu-id="e6773-116">Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。</span><span class="sxs-lookup"><span data-stu-id="e6773-116">Lifecycle Services is available to customers and partners as part of their support plans.</span></span> <span data-ttu-id="e6773-117">CustomerSource または PartnerSource の資格情報でアクセスすることができます。詳細については、[Lifecycle Services にログオン](https://lcs.dynamics.com/)を参照してください</span><span class="sxs-lookup"><span data-stu-id="e6773-117">You can access it with your CustomerSource or PartnerSource credentials, for details see [Log on to Lifecycle Services](https://lcs.dynamics.com/)</span></span>
+
+## <a name="2-create-a-project"></a><span data-ttu-id="e6773-118">2. プロジェクトの作成</span><span class="sxs-lookup"><span data-stu-id="e6773-118">2. Create a project</span></span>
+<span data-ttu-id="e6773-119">LCS にログインした後、既存のプロジェクトを開くか、または新しいプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6773-119">After you log in to LCS, open an existing project, or create a new project.</span></span> <span data-ttu-id="e6773-120">プロジェクトは、LCS でのエクスペリエンスの主な開催者です。</span><span class="sxs-lookup"><span data-stu-id="e6773-120">Projects are the key organizer of your experience in LCS.</span></span> <span data-ttu-id="e6773-121">プロジェクトに関連する手法は、既定でプロジェクトに含まれるフェーズとタスクを決定します。</span><span class="sxs-lookup"><span data-stu-id="e6773-121">The methodology associated with a project determines which phases and tasks are included in the project by default.</span></span>
+
+## <a name="3-connect-the-project-to-your-azure-subscription"></a><span data-ttu-id="e6773-122">3. Azure サブスクリプションにプロジェクトを接続する</span><span class="sxs-lookup"><span data-stu-id="e6773-122">3. Connect the project to your Azure subscription</span></span>
+<span data-ttu-id="e6773-123">Azure サブスクリプションに LCS プロジェクトを接続します。</span><span class="sxs-lookup"><span data-stu-id="e6773-123">Connect the LCS project to your Azure subscription.</span></span> <span data-ttu-id="e6773-124">これにより、LCS は Dynamics AX 環境をサブスクリプションに展開できます。</span><span class="sxs-lookup"><span data-stu-id="e6773-124">This will enable LCS to deploy a Dynamics AX environment to the subscription.</span></span> <span data-ttu-id="e6773-125">Azure サブスクリプションにプロジェクトを接続するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e6773-125">To connect the project to your Azure subscription, complete the following procedure.</span></span>
+
+1. <span data-ttu-id="e6773-126">LCS プロジェクトで**環境**セクションに移動して、**Microsoft Azure 設定**をクリックしてから、**Azure コネクタ領域**で**追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-126">In your LCS project, go to the **Environments** section, click **Microsoft Azure settings**, and then click **Add** in the **Azure Connectors** area.</span></span> 
+   >[!Note]
+   > <span data-ttu-id="e6773-127">**Microsoft Azure 設定**オプションは、**クラウド-ホスト環境タイル**をクリックしたときにも使用できます。</span><span class="sxs-lookup"><span data-stu-id="e6773-127">The **Microsoft Azure settings** option is also available when you click the **Cloud-hosted environments** tile.</span></span>
+2. <span data-ttu-id="e6773-128">Azure への接続を識別する名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6773-128">Enter a name to identify the connection to Azure.</span></span>
+3. <span data-ttu-id="e6773-129">Azure サブスクリプション ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6773-129">Enter your Azure subscription ID.</span></span> <span data-ttu-id="e6773-130">サブスクリプション ID を検索する必要がある場合は、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e6773-130">If you need to find your subscription ID, complete the following steps:</span></span>
+   1.  <span data-ttu-id="e6773-131">ブラウザの別のインスタンスを開きます。</span><span class="sxs-lookup"><span data-stu-id="e6773-131">Open another instance of your browser.</span></span>
+   2.  <span data-ttu-id="e6773-132">[Azure ポータル](https://ms.portal.azure.com/)にログオンします。</span><span class="sxs-lookup"><span data-stu-id="e6773-132">Log on to the [Azure portal](https://ms.portal.azure.com/).</span></span>
+   3.  <span data-ttu-id="e6773-133">左のナビゲーション ウィンドウで、**サブスクリプション**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-133">In the navigation pane on the left, click **Subscriptions**.</span></span> 
+
+       > [!Note]
+       > <span data-ttu-id="e6773-134">下部の **その他のサービス** をクリックしてから **サブスクリプション** をクリックすることが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="e6773-134">You may need to click **More services** at the bottom, and then click **Subscriptions**.</span></span>
+
+   4.  <span data-ttu-id="e6773-135">サブスクリプション ID をコピーして、LCS の **Azure サブスクリプション ID** フィールドに貼り付けます (現在別のブラウザー インスタンスに表示されています)。</span><span class="sxs-lookup"><span data-stu-id="e6773-135">Copy your subscription ID, and then paste it into the **Azure subscription ID** field in LCS (which is currently displayed in another browser instance).</span></span>
+
+4. <span data-ttu-id="e6773-136">**次へ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-136">Click **Next**.</span></span>
+5. <span data-ttu-id="e6773-137">**ダウンロード**をクリックして管理証明書をダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="e6773-137">Click **Download** to download a management certificate.</span></span> <span data-ttu-id="e6773-138">この管理証明書により、LCS はお客様の代わりに Azure と通信できます。</span><span class="sxs-lookup"><span data-stu-id="e6773-138">This management certificate enables LCS to communicate with Azure on your behalf.</span></span> <span data-ttu-id="e6773-139">既定では、管理証明書はコンピューターの**ダウンロード** フォルダーに保存され、**LifecycleServicesDeployment.cer** という名前が付きます。</span><span class="sxs-lookup"><span data-stu-id="e6773-139">By default, the management certificate is saved to the **Downloads** folder on your computer and is named **LifecycleServicesDeployment.cer.**</span></span>
+6. <span data-ttu-id="e6773-140">管理証明書を Azure にアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e6773-140">Upload the management certificate to Azure.</span></span> <span data-ttu-id="e6773-141">これを行うには、[[Azure 管理 API 管理証明書をアップロード](https://docs.microsoft.com/en-us/azure/azure-api-management-certs)] の手順を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-141">To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).</span></span>
+
+7. <span data-ttu-id="e6773-142">LCS で **Microsoft Azure 設定**パネルを表示するブラウザーに戻ります。</span><span class="sxs-lookup"><span data-stu-id="e6773-142">Go back to the browser that displays the **Microsoft Azure setup** panel in LCS.</span></span> <span data-ttu-id="e6773-143">**次へ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-143">Click **Next**.</span></span>
+8. <span data-ttu-id="e6773-144">地域を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6773-144">Select a region.</span></span> <span data-ttu-id="e6773-145">AX 2012 R3 環境は、この領域のデータ センターに配置されます。</span><span class="sxs-lookup"><span data-stu-id="e6773-145">The AX 2012 R3 environment will be deployed to a datacenter in this region.</span></span>
+9. <span data-ttu-id="e6773-146">**接続** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-146">Click **Connect**.</span></span> <span data-ttu-id="e6773-147">これで、プロジェクトが指定された Azure サブスクリプションに接続できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="e6773-147">The project is now connected to the Azure subscription that you specified.</span></span> 
+
+>[!Note]
+> <span data-ttu-id="e6773-148">証明書が期限切れになった場合は、新しいものを取得できます。</span><span class="sxs-lookup"><span data-stu-id="e6773-148">If the certificate expires, you can obtain a new one.</span></span> <span data-ttu-id="e6773-149">そのためには次の作業を行います。</span><span class="sxs-lookup"><span data-stu-id="e6773-149">To do so:</span></span>
+> 1. <span data-ttu-id="e6773-150">プロジェクトの設定の **Azure コネクタ** 領域で接続を選択し、**編集** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-150">Select the connection in the **Azure connectors** area of your project settings, and click **Edit**.</span></span>
+> 2. <span data-ttu-id="e6773-151">**Microsoft Azure 設定**パネルが画面の横に表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6773-151">The **Microsoft Azure setup** panel is displayed on the side of the screen.</span></span> <span data-ttu-id="e6773-152">**ダウンロード**をクリックして新しい証明書をダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="e6773-152">Click **Download** to download a new certificate.</span></span>
+> 3. <span data-ttu-id="e6773-153">上の手順の手順 6 ～ 9 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="e6773-153">Repeat steps 6-9 of the above procedure.</span></span>
+
+## <a name="4-deploy-a-retail-mobility-devtest-environment-on-azure"></a><span data-ttu-id="e6773-154">4. Azure での Retail Mobility 開発/テスト環境の配置</span><span class="sxs-lookup"><span data-stu-id="e6773-154">4. Deploy a Retail mobility dev/test environment on Azure</span></span>
+<span data-ttu-id="e6773-155">Azure に Retail Mobility 開発/テスト環境を配置するには、以下の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="e6773-155">Complete the following procedure to deploy a Retail mobility dev/test environment on Azure.</span></span>
+
+1. <span data-ttu-id="e6773-156">**クラウド ホスト環境**ページで、追加 (**+**) アイコンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-156">On the **Cloud-hosted environments** page, click the Add (**+**) icon.</span></span>
+2. <span data-ttu-id="e6773-157">**環境のトポロジの選択**パネルで、**開発/テスト**を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6773-157">In the **Select environment topology** panel, select **Dev/test**.</span></span>
+3. <span data-ttu-id="e6773-158">**Retail Mobility 開発/テスト**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-158">Click **Retail mobility dev/test**.</span></span>
+4. <span data-ttu-id="e6773-159">**環境名**フィールドに、配置される環境の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6773-159">In the **Environment name** field, enter a name for the environment that will be deployed.</span></span>
+5. <span data-ttu-id="e6773-160">**詳細設定**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-160">Click **Advanced settings**.</span></span>
+6. <span data-ttu-id="e6773-161">ドメイン設定をカスタマイズするには、**ドメイン設定をカスタマイズ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-161">To customize domain settings, click **Customize domain settings**.</span></span> <span data-ttu-id="e6773-162">情報を入力するには、次の表を使用してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-162">Use the following table to enter information.</span></span>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th><span data-ttu-id="e6773-163">以下を行う場合</span><span class="sxs-lookup"><span data-stu-id="e6773-163">If you want to</span></span></th>
+   <th><span data-ttu-id="e6773-164">操作</span><span class="sxs-lookup"><span data-stu-id="e6773-164">Do this</span></span></th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td><span data-ttu-id="e6773-165">Azure で環境用に新しいドメインを作成する</span><span class="sxs-lookup"><span data-stu-id="e6773-165">Create a new domain in Azure for the environment</span></span></td>
+   <td><ol>
+   <li><span data-ttu-id="e6773-166"><strong><span class="label">新規ドメイン</span></strong>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-166">Click <strong><span class="label">New domain</span></strong>.</span></span></li>
+   <li><span data-ttu-id="e6773-167">ドメイン名を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6773-167">Enter a name for the domain.</span></span> <span data-ttu-id="e6773-168">既定では、ドメインは <em>contoso.com</em> と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="e6773-168">By default, the domain is named <em>contoso.com</em>.</span></span></li>
+   </ol></td>
+   </tr>
+   <tr class="even">
+   <td><span data-ttu-id="e6773-169">Azure の既存のドメインへの環境の追加</span><span class="sxs-lookup"><span data-stu-id="e6773-169">Add the environment to an existing domain in Azure</span></span></td>
+   <td><ol>
+   <li><span data-ttu-id="e6773-170"><strong><span class="label">既存のドメイン</span></strong>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-170">Click <strong><span class="label">Existing domain</span></strong>.</span></span></li>
+   <li><span data-ttu-id="e6773-171">ドメイン名を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6773-171">Enter the name of the domain.</span></span> <span data-ttu-id="e6773-172">たとえば、<em>contoso.com</em>。</span><span class="sxs-lookup"><span data-stu-id="e6773-172">For example, <em>contoso.com</em>.</span></span></li>
+   </ol></td>
+   </tr>
+   </tbody>
+   </table>
+
+7. <span data-ttu-id="e6773-173">ドメインで作成されるサービス アカウントをカスタマイズするには、**サービス アカウントをカスタマイズ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-173">To customize the service accounts that will be created in the domain, click **Customize service accounts**.</span></span> <span data-ttu-id="e6773-174">展開の **詳細設定** オプションを通じてサービス アカウントやサービス アカウントのパスワードを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="e6773-174">Service accounts and/or service account passwords can be specified through the **Advanced Settings** option for a deployment.</span></span> <span data-ttu-id="e6773-175">どちらもが指定されていない場合は、既定の勘定が使用され、ランダムなパスワードが選択されています。</span><span class="sxs-lookup"><span data-stu-id="e6773-175">If neither is provided, default accounts are used and random passwords are selected.</span></span> <span data-ttu-id="e6773-176">次の機能は、企業のアカウントの命名規則とパスワードの規則を管理する場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="e6773-176">Use these features when you want to maintain account naming and password rules for your corporation.</span></span> <span data-ttu-id="e6773-177">アカウントとパスワードのルール:</span><span class="sxs-lookup"><span data-stu-id="e6773-177">Account and password rules:</span></span>
+   1. <span data-ttu-id="e6773-178">有効なサービス名は、特殊文字を含まない 20 文字未満である必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6773-178">A valid service name must be less than 20 characters with no special characters.</span></span>
+   2. <span data-ttu-id="e6773-179">有効なパスワードは 8 文字以上で、大文字、小文字、数字、および次の文字のうち少なくとも 1 つが含まれます: \['@', '!', '=', '\*'\] 次のような一般的なパスワードは使用できません: pass@word1</span><span class="sxs-lookup"><span data-stu-id="e6773-179">A valid password must be more than 8 characters and contain uppercase letters, lowercase letters, numbers, and at least one of the following characters: \['@', '!', '=', '\*'\] You can’t use common passwords, such as: pass@word1</span></span>
+
+8. <span data-ttu-id="e6773-180">使用を希望する AX 2012 R3 のバージョンを選択するには、**サポートされているバージョン**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-180">To select the version of AX 2012 R3 that you want use, click **Supported version**.</span></span> <span data-ttu-id="e6773-181">既定では、この環境の AX 2012 R3 CU8 バージョンが配置されます。</span><span class="sxs-lookup"><span data-stu-id="e6773-181">By default, the AX 2012 R3 CU8 version of this environment will be deployed.</span></span> <span data-ttu-id="e6773-182">CU8 バージョンを使用しない場合は、**Dynamics ERP 2012 R3 RTM** をリストから選択します。</span><span class="sxs-lookup"><span data-stu-id="e6773-182">If you don’t want to use the CU8 version, select **Dynamics ERP 2012 R3 RTM** from the list.</span></span>
+9. <span data-ttu-id="e6773-183">仮想マシン名をカスタマイズするには、**仮想マシン名をカスタマイズ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-183">To customize virtual machine names, click C**ustomize virtual machine names**.</span></span> <span data-ttu-id="e6773-184">一般的な IT 名前付けガイドラインをサポートするために、仮想マシンに名前を付ける機能がほとんどの配置トポロジの**詳細設定**に用意されています。</span><span class="sxs-lookup"><span data-stu-id="e6773-184">In order to support common IT naming guidelines, the ability to name virtual machines is provided through the **Advanced settings** option on most deployment topologies.</span></span> <span data-ttu-id="e6773-185">名前を定義することに加えて、各仮想マシン タイプに開始インデックスを選択できます。</span><span class="sxs-lookup"><span data-stu-id="e6773-185">In addition to defining the name, a starting index can be selected for each virtual machine type.</span></span> <span data-ttu-id="e6773-186">インデックスは、配置される仮想マシン タイプのインスタンスごとに増加します。</span><span class="sxs-lookup"><span data-stu-id="e6773-186">The index is incremented for each instance of the virtual machine type that is deployed.</span></span> <span data-ttu-id="e6773-187">仮想マシン名は 13 文字またはそれ以下にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6773-187">Virtual machine names must be 13 characters or less.</span></span> <span data-ttu-id="e6773-188">インデックスはマシン名とハイフン (-) で区切られ、その後に最大 2 桁のインデックスが続きます。</span><span class="sxs-lookup"><span data-stu-id="e6773-188">The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits.</span></span> <span data-ttu-id="e6773-189">例: ACustomVMName-99。</span><span class="sxs-lookup"><span data-stu-id="e6773-189">Example: ACustomVMName-99.</span></span> <span data-ttu-id="e6773-190">最初の展開後に、仮想マシンのインスタンスが環境に追加されるとき、配置サービスは、中断した場所で、仮想マシンの名前の増分を開始します。</span><span class="sxs-lookup"><span data-stu-id="e6773-190">When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off.</span></span> <span data-ttu-id="e6773-191">たとえば、2 で始まるインデックスを持つ 4 つの AOS 仮想マシンを展開する場合、最後の AOS インスタンス名は AOS-6 になります。</span><span class="sxs-lookup"><span data-stu-id="e6773-191">For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6.</span></span> <span data-ttu-id="e6773-192">もう 2 つ AOS インスタンスを追加する場合は、AOS-7 と AOS 8 になります。</span><span class="sxs-lookup"><span data-stu-id="e6773-192">If you add two more AOS instances, they will be AOS-7 and AOS-8.</span></span> <span data-ttu-id="e6773-193">展開内の仮想マシン タイプの 1 つがカスタマイズされている場合は、すべての仮想マシン名をカスタマイズする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6773-193">If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized.</span></span> <span data-ttu-id="e6773-194">これは、仮想マシン名が誤って紛失してしまったため、長期的な展開が発生しないようにするためです。</span><span class="sxs-lookup"><span data-stu-id="e6773-194">This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.</span></span>
+10. <span data-ttu-id="e6773-195">仮想ネットワークの設定をカスタマイズするには、<strong>仮想ネットワークをカスタマイズする</strong> をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-195">To customize virtual network settings, click <strong>Customize virtual network</strong>.</span></span> <span data-ttu-id="e6773-196">情報を入力するには、次の表を使用してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-196">Use the following table to enter information.</span></span>
+    <table>
+    <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th><span data-ttu-id="e6773-197">以下を行う場合</span><span class="sxs-lookup"><span data-stu-id="e6773-197">If you want to</span></span></th>
+    <th><span data-ttu-id="e6773-198">操作</span><span class="sxs-lookup"><span data-stu-id="e6773-198">Do this</span></span></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td><span data-ttu-id="e6773-199">Azure で環境用に新しい仮想ネットワークを作成する</span><span class="sxs-lookup"><span data-stu-id="e6773-199">Create a new virtual network in Azure for the environment</span></span></td>
+    <td><ol>
+    <li><span data-ttu-id="e6773-200"><span class="label"><strong>新しい仮想ネットワー</strong>ク</span>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-200">Click <span class="label"><strong>New virtual networ</strong>k</span>.</span></span></li>
+    <li><span data-ttu-id="e6773-201">仮想ネットワーク名を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6773-201">Enter a name for the virtual network.</span></span></li>
+    </ol></td>
+    </tr>
+    <tr class="even">
+    <td><span data-ttu-id="e6773-202">Azure の既存の仮想ネットワークへの環境の追加</span><span class="sxs-lookup"><span data-stu-id="e6773-202">Add the environment to an existing virtual network in Azure</span></span></td>
+    <td><ol>
+    <li><span data-ttu-id="e6773-203"><strong><span class="label">既存の仮想ネットワーク</span></strong>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-203">Click <strong><span class="label">Existing virtual network</span></strong>.</span></span></li>
+    <li><span data-ttu-id="e6773-204">使用する既存の仮想ネットワークの名前を選択してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-204">Select the name of the existing virtual network that you want to use.</span></span></li>
+    <li><span data-ttu-id="e6773-205"><strong><span class="label">アドレス空間</span></strong> フィールドには、適切な値が自動的に表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6773-205">The <strong><span class="label">Address space</span></strong> field will automatically display the appropriate value.</span></span> <span data-ttu-id="e6773-206">提供された値を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6773-206">Select the provided value.</span></span></li>
+    <li><span data-ttu-id="e6773-207"><strong><span class="label">アプリケーション サブネット名</span></strong>フィールドには、使用可能なオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6773-207">The <strong><span class="label">Application subnet name</span></strong> field will display available options.</span></span> <span data-ttu-id="e6773-208">Lifecycle Services によって以前に展開した広告に配置する場合は、選択した <strong><span class="label"><em>APPNET</em></span></strong> 値を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6773-208">If you are deploying to an AD that was previously deployed through Lifecycle Services, select the <strong><span class="label"><em>APPNET</em></span></strong> value.</span></span></li>
+    <li><span data-ttu-id="e6773-209">Active Directory サブネットを入力する必要があり、ターゲットとする AD の Azure 管理ポータルにある Active Directory サブネット IP/範囲と一致している必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6773-209">The Active Directory subnet must be entered and match the Active Directory subnet IP/Range found in the Azure management portal for the AD you want to target.</span></span>
+    <ol>
+    <li><span data-ttu-id="e6773-210"><a href="https://ms.portal.azure.com/">Azure ポータル</a>にログオンします。</span><span class="sxs-lookup"><span data-stu-id="e6773-210">Log on to the <a href="https://ms.portal.azure.com/">Azure portal</a>.</span></span></li>
+    <li><span data-ttu-id="e6773-211">左のナビゲーション ウィンドウで、<strong><span class="label">仮想ネットワーク</span></strong>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-211">In the navigation pane on the left, click <strong><span class="label">Virtual networks</span></strong>.</span></span></li>
+    <li><span data-ttu-id="e6773-212">使用する仮想ネットワークの名前をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-212">Click the name of the virtual network that you’re going to use.</span></span></li>
+    <li><span data-ttu-id="e6773-213"><strong><span class="label">構成</span></strong>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-213">Click <strong><span class="label">Configure</span></strong>.</span></span> <span data-ttu-id="e6773-214">仮想ネットワークに関する詳細は、ページに記載されています。</span><span class="sxs-lookup"><span data-stu-id="e6773-214">Details about the virtual network are listed on the page.</span></span></li>
+    </ol></li>
+    </ol></td>
+    </tr>
+    </tbody>
+    </table>
+
+11. <span data-ttu-id="e6773-215">**完了** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-215">Click **Done**.</span></span> <span data-ttu-id="e6773-216">**環境の展開** パネルが再表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6773-216">The **Deploy environment** panel is redisplayed.</span></span>
+12. <span data-ttu-id="e6773-217">配置される仮想マシンの数とサイズが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6773-217">The number and size of each virtual machine that will be deployed is listed.</span></span> <span data-ttu-id="e6773-218">必要に応じて、仮想マシンの数とサイズを変更します。</span><span class="sxs-lookup"><span data-stu-id="e6773-218">Change the number and size of the virtual machines, as needed.</span></span>
+    -   <span data-ttu-id="e6773-219">この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-219">For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).</span></span>
+    -   <span data-ttu-id="e6773-220">仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-220">For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).</span></span>
+
+13. <span data-ttu-id="e6773-221">ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-221">Click **Software License Terms** to review the licensing terms and conditions.</span></span> <span data-ttu-id="e6773-222">次に、チェック ボックスを選択して、条件に同意することを示します。</span><span class="sxs-lookup"><span data-stu-id="e6773-222">Then select the check box to indicate that you agree to the terms.</span></span>
+14. <span data-ttu-id="e6773-223">**次へ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6773-223">Click **Next**.</span></span>
+15. <span data-ttu-id="e6773-224">**展開**をクリックして、環境を展開する準備が整ったことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e6773-224">Click **Deploy** to confirm that you’re ready to deploy the environment.</span></span> <span data-ttu-id="e6773-225">配置には数時間かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="e6773-225">The deployment may take a few hours to complete.</span></span> <span data-ttu-id="e6773-226">配置が完了すると、**クラウド ホスト環境** ページの **配置ステータス** 列に **配置済み** が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6773-226">When the deployment is done, the **Deployment Status** column on the **Cloud-hosted environments** page will display **Deployed**.</span></span> <span data-ttu-id="e6773-227">(これを表示するにはブラウザーを更新する必要があります。) 配置が失敗すると、すぐエラー メッセージが表示される場合があります。</span><span class="sxs-lookup"><span data-stu-id="e6773-227">(You may need to refresh your browser to see this.) If the deployment fails, you may see an error message right away.</span></span> <span data-ttu-id="e6773-228">配置プロセスでエラーが後に発生する場合に、エラーの詳細がページの右側の**詳細**ペインに表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6773-228">If the error occurs later in the deployment process, error details will be displayed in the **Details** pane on the right-side of the page.</span></span>
+
+## <a name="5-prepare-the-retail-mobility-devtest-environment-for-use"></a><span data-ttu-id="e6773-229">5. 使用する Retail mobility 開発/テスト環境の配置</span><span class="sxs-lookup"><span data-stu-id="e6773-229">5. Prepare the Retail mobility dev/test environment for use</span></span>
+<span data-ttu-id="e6773-230">Retail Mobility 開発/テスト環境が Azure に配置されたので、オンプレミスまたは Azure にある Dynamics AX 環境に接続できます。</span><span class="sxs-lookup"><span data-stu-id="e6773-230">Now that the Retail mobility dev/test environment has been deployed on Azure, you can connect it to your Dynamics AX environment that exists on-premises, or on Azure.</span></span> <span data-ttu-id="e6773-231">詳細については、以降のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-231">See the following sections for more information.</span></span>
+
+### <a name="prerequisites"></a><span data-ttu-id="e6773-232">前提条件</span><span class="sxs-lookup"><span data-stu-id="e6773-232">Prerequisites</span></span>
+
+<span data-ttu-id="e6773-233">以下の手順を実行する前に、次の条件が満たされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e6773-233">Before you complete the following procedures, make sure that the following prerequisites are in place.</span></span>
+
+| <span data-ttu-id="e6773-234">前提条件</span><span class="sxs-lookup"><span data-stu-id="e6773-234">Prerequisite</span></span>                                                                                                                                                     | <span data-ttu-id="e6773-235">詳細</span><span class="sxs-lookup"><span data-stu-id="e6773-235">More information</span></span>                                                                                                                                                                                                                                                                                                       |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="e6773-236">Dynamics AX アプリケーション オブジェクト サーバー (AOS)、データベース、およびクライアントを設定して構成します。</span><span class="sxs-lookup"><span data-stu-id="e6773-236">Set up and configure the Dynamics AX application object server (AOS), database, and client.</span></span> <span data-ttu-id="e6773-237">前述のように、Dynamics AX はオンプレミスまたは Azure にインストールできます。</span><span class="sxs-lookup"><span data-stu-id="e6773-237">As mentioned, Dynamics AX may be installed on-premises, or on Azure.</span></span> | <span data-ttu-id="e6773-238">[Microsoft Dynamics AX のシステム設定](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)</span><span class="sxs-lookup"><span data-stu-id="e6773-238">[System setup for Microsoft Dynamics AX](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)</span></span>                                                                                                                                                                                        |
+| <span data-ttu-id="e6773-239">Dynamics AX にデータをインポートします。</span><span class="sxs-lookup"><span data-stu-id="e6773-239">Import data into Dynamics AX.</span></span>                                                                                                                                    | <span data-ttu-id="e6773-240">Dynamics AX 環境にサンプル データをインストールする場合は、テスト データ転送ツールを使用してサンプル データをインストールします。</span><span class="sxs-lookup"><span data-stu-id="e6773-240">If you want sample data installed in your Dynamics AX environment, use the Test Data Transfer tool to install the sample data.</span></span> <span data-ttu-id="e6773-241">手順については、[Microsoft Dynamics AX 2012 用のテスト データ転送ツール (ベータ版)](test-data-transfer-tool-beta-2012.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-241">For instructions, see [Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md).</span></span> |
+| <span data-ttu-id="e6773-242">Async Server を設定およびコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="e6773-242">Set up and configure Async Server.</span></span>                                                                                                                               | <span data-ttu-id="e6773-243">[Commerce Data Exchange Async Server](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)</span><span class="sxs-lookup"><span data-stu-id="e6773-243">[Commerce Data Exchange: Async Server](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)</span></span>                                                                                                                                                                                          |
+| <span data-ttu-id="e6773-244">Real-time Service を設定およびコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="e6773-244">Set up and configure Real-time Service.</span></span>                                                                                                                          | <span data-ttu-id="e6773-245">[Commerce Data Exchange Real-time Service](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)</span><span class="sxs-lookup"><span data-stu-id="e6773-245">[Commerce Data Exchange: Real-time Service](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)</span></span>                                                                                                                                                                                     |
+| <span data-ttu-id="e6773-246">Commerce Data Exchange のメタデータの同期</span><span class="sxs-lookup"><span data-stu-id="e6773-246">Sync metadata for Commerce Data Exchange.</span></span>                                                                                                                        | <span data-ttu-id="e6773-247">[小売用スケジューラのパラメーターを入力する](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)</span><span class="sxs-lookup"><span data-stu-id="e6773-247">[Enter parameters for Retail Scheduler](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)</span></span>                                                                                                                                                                                         |
+| <span data-ttu-id="e6773-248">Retail サーバーの一般公開 URL を使用して、Retail サーバーのチャネル プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6773-248">Create a channel profile for the Retail Server using the public-facing URL of your Retail Server.</span></span>                                                                | <span data-ttu-id="e6773-249">[チャンネル プロファイルの設定](http://technet.microsoft.com/library/4ef00ad9-9da2-4d21-b3e1-637f77cab208(AX.60).aspx)</span><span class="sxs-lookup"><span data-stu-id="e6773-249">[Set up a channel profile](http://technet.microsoft.com/library/4ef00ad9-9da2-4d21-b3e1-637f77cab208(AX.60).aspx)</span></span>                                                                                                                                                                                                      |
+
+### 
+
+### <a name="complete-configuration-tasks-on-the-aos-servervirtual-machine"></a><span data-ttu-id="e6773-250">AOS サーバー/仮想機械でコンフィギュレーション タスクを完了する</span><span class="sxs-lookup"><span data-stu-id="e6773-250">Complete configuration tasks on the AOS server/virtual machine</span></span>
+
+<span data-ttu-id="e6773-251">AOS がインストールされているサーバーまたは仮想マシンにログオンし、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e6773-251">Log on to the server or virtual machine where the AOS is installed and complete the following steps.</span></span>
+
+1.  <span data-ttu-id="e6773-252">サーバーまたは仮想マシンのエンドポイントを設定します。</span><span class="sxs-lookup"><span data-stu-id="e6773-252">Set up endpoints for the server or virtual machine.</span></span> <span data-ttu-id="e6773-253">仮想マシンのエンドポイントを設定する方法については、[ブログ投稿](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/) の「はじめに」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-253">For instructions on how to set up endpoints for a virtual machine, see the “Getting Started” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).</span></span>
+2.  <span data-ttu-id="e6773-254">リアルタイム サービスをコンフィギュレーションし、プロファイルを更新します。</span><span class="sxs-lookup"><span data-stu-id="e6773-254">Configure the Real-time service and update the profile.</span></span> <span data-ttu-id="e6773-255">手順については、この [ブログ投稿](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/) の「Real-time Service のコンフィギュレーション」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-255">For instructions, see the “Configure Real-time Service” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).</span></span>
+3.  <span data-ttu-id="e6773-256">チャンネル データベースを設定するためのスケジューラ ジョブを実行します。</span><span class="sxs-lookup"><span data-stu-id="e6773-256">Run the scheduler jobs to populate the channel database.</span></span> <span data-ttu-id="e6773-257">手順については、この [ブログ投稿](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/)「チャンネル データベースを設定するスケジューラ ジョブを実行する」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-257">For instructions, see the “Run Scheduler Jobs to Populate Channel Database” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).</span></span>
+
+### <a name="complete-configuration-tasks-on-the-mobil-virtual-machine"></a><span data-ttu-id="e6773-258">MOBIL 仮想機械でコンフィギュレーション タスクを完了する</span><span class="sxs-lookup"><span data-stu-id="e6773-258">Complete configuration tasks on the MOBIL virtual machine</span></span>
+
+<span data-ttu-id="e6773-259">**クラウド ホスト環境**ページから、Retail Mobility 開発環境を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6773-259">From the **Cloud-hosted environments** page, select your Retail mobility environment.</span></span> <span data-ttu-id="e6773-260">その後右にスクロールし、**MOBIL-&lt;GUID&gt;** リンクをクリックして仮想マシンにログオンします。</span><span class="sxs-lookup"><span data-stu-id="e6773-260">Then scroll to the right and click the **MOBIL-&lt;GUID&gt;** link to log on to the virtual machine.</span></span> <span data-ttu-id="e6773-261">マシンにログオンした後は、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e6773-261">After you have logged on to the machine, complete the following steps:</span></span>
+
+1.  <span data-ttu-id="e6773-262">自己署名証明書を使用する場合は、MOBI-&lt;GUID&gt; 仮想マシンに証明書をインストールします。</span><span class="sxs-lookup"><span data-stu-id="e6773-262">If using a self-signed certificate, install the certificate on the MOBIL-&lt;GUID&gt; virtual machine.</span></span> <span data-ttu-id="e6773-263">手順については、この [ブログ投稿](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/) 「外部マシンで証明書をインストール」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-263">For instructions, see the “Install the Cert on the External Machine” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).</span></span>
+2.  <span data-ttu-id="e6773-264">Async サーバーの URL を使用するように Async クライアントを更新します。</span><span class="sxs-lookup"><span data-stu-id="e6773-264">Update Async Client to use the URL of the Async Server.</span></span> <span data-ttu-id="e6773-265">手順については、この [ブログ投稿](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/) の「CDX Async Client のインストール」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-265">For instructions, see the “Install CDX Async Client” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).</span></span>
+3.  <span data-ttu-id="e6773-266">ポート 35080 用にエンドポイントを設定します。</span><span class="sxs-lookup"><span data-stu-id="e6773-266">Set up an endpoint for port 35080.</span></span> <span data-ttu-id="e6773-267">仮想マシンのエンドポイントを設定する方法については、[ブログ投稿](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/) の「はじめに」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-267">For instructions on how to set up endpoints for a virtual machine, see the “Getting Started” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).</span></span>
+4.  <span data-ttu-id="e6773-268">ポート 35080 を除外する場合は、Windows ファイアウォールをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="e6773-268">Configure Windows Firewall to exclude port 35080.</span></span> <span data-ttu-id="e6773-269">Windows ファイアウォールの詳細については、Windows ドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-269">For more information about Windows Firewall, see the Windows documentation.</span></span>
+
+### <a name="install-modern-pos-on-external-devices"></a><span data-ttu-id="e6773-270">外部デバイスに Modern POS をインストールします。</span><span class="sxs-lookup"><span data-stu-id="e6773-270">Install Modern POS on external devices</span></span>
+
+<span data-ttu-id="e6773-271">Dynamics AX は、Modern POS、PC、タブレットおよび携帯電話用の販売時点管理アプリを含みます。</span><span class="sxs-lookup"><span data-stu-id="e6773-271">Dynamics AX includes Modern POS, a point-of-sale app for PCs, tablets, and phones.</span></span> <span data-ttu-id="e6773-272">インストールする方法の詳細については、[Retail Modern POS のインストール](https://technet.microsoft.com/EN-US/library/dn741434.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6773-272">For instructions about how to install it, see [Install Retail Modern POS](https://technet.microsoft.com/EN-US/library/dn741434.aspx).</span></span>
+
+## <a name="6-learn-more-about-the-service-accounts-for-this-environment"></a><span data-ttu-id="e6773-273">6. この環境のサービス アカウントに関する詳細</span><span class="sxs-lookup"><span data-stu-id="e6773-273">6. Learn more about the service accounts for this environment</span></span>
+<span data-ttu-id="e6773-274">次のセクションでは、環境を配置したときに作成されたサービス アカウントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="e6773-274">The following sections provide information about the service accounts that were created when you deployed the environment.</span></span>
+
+### <a name="domain-accounts"></a><span data-ttu-id="e6773-275">ドメイン アカウント</span><span class="sxs-lookup"><span data-stu-id="e6773-275">Domain accounts</span></span>
+
+<span data-ttu-id="e6773-276">次のテーブルに、環境を配置したときに作成されたドメイン アカウントを示します。</span><span class="sxs-lookup"><span data-stu-id="e6773-276">The following table lists the domain accounts that were created when you deployed the environment.</span></span> <span data-ttu-id="e6773-277">環境を配置したときに、これらのアカウントのパスワードを入力している場合があります。</span><span class="sxs-lookup"><span data-stu-id="e6773-277">You may have entered passwords for these accounts when you deployed the environment.</span></span> <span data-ttu-id="e6773-278">持っていない場合は、パスワードを変更することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="e6773-278">If you did not, we recommend that you change the passwords.</span></span>
+
+| <span data-ttu-id="e6773-279">ドメイン アカウント</span><span class="sxs-lookup"><span data-stu-id="e6773-279">Domain account</span></span>                  | <span data-ttu-id="e6773-280">説明</span><span class="sxs-lookup"><span data-stu-id="e6773-280">Description</span></span>                                                                                                                  |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="e6773-281"><DomainName>SQLServiceUser</span><span class="sxs-lookup"><span data-stu-id="e6773-281"><DomainName>SQLServiceUser</span></span>      | <span data-ttu-id="e6773-282">次のサービスを SQL で実行するために使用されるアカウント -<GUID> 仮想マシン: SQL Server Analysis Services (MSSQLSERVER)。</span><span class="sxs-lookup"><span data-stu-id="e6773-282">The account used to run the following services on the SQL-<GUID> virtual machine: SQL Server Analysis Services (MSSQLSERVER)</span></span> |
+| <span data-ttu-id="e6773-283"><DomainName>DynamicsInstallUser</span><span class="sxs-lookup"><span data-stu-id="e6773-283"><DomainName>DynamicsInstallUser</span></span> | <span data-ttu-id="e6773-284">Dynamics AX をインストールするために使用したアカウント。</span><span class="sxs-lookup"><span data-stu-id="e6773-284">The account used to install Dynamics AX.</span></span>                                                                                     |
+| <span data-ttu-id="e6773-285"><DomainName>RetailServiceUser</span><span class="sxs-lookup"><span data-stu-id="e6773-285"><DomainName>RetailServiceUser</span></span>   | <span data-ttu-id="e6773-286">次のサービスの実行に使用したアカウント: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client。</span><span class="sxs-lookup"><span data-stu-id="e6773-286">The account used to run the following services: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client.</span></span>        |
+
+> [!NOTE]
+> <span data-ttu-id="e6773-287">既定のパスワードは、[Lifecycle Services](https://lcs.dynamics.com/) の **クラウド ホスト 環境** ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6773-287">The default passwords are displayed on the **Cloud-hosted environments** page in [Lifecycle Services](https://lcs.dynamics.com/).</span></span>
+
+### <a name="local-administrator-accounts"></a><span data-ttu-id="e6773-288">ローカル管理者アカウント</span><span class="sxs-lookup"><span data-stu-id="e6773-288">Local administrator accounts</span></span>
+
+<span data-ttu-id="e6773-289">配置した各仮想マシンには、ローカル Administrator アカウントがあります。</span><span class="sxs-lookup"><span data-stu-id="e6773-289">Each virtual machine that you deployed has a local administrator account.</span></span> <span data-ttu-id="e6773-290">このアカウントは builtinaxlocaladmin です。</span><span class="sxs-lookup"><span data-stu-id="e6773-290">This account is: builtinaxlocaladmin.</span></span> <span data-ttu-id="e6773-291">ローカル管理者アカウントのパスワードは、[Lifecycle Services](https://lcs.dynamics.com/) の **クラウド ホスト 環境** ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6773-291">The passwords for the local administrator accounts are displayed on the **Cloud-hosted environments** page in [Lifecycle Services](https://lcs.dynamics.com/).</span></span>
+
+
+

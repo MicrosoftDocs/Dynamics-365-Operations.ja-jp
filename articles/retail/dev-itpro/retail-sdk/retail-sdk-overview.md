@@ -1,795 +1,276 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="retail-sdk-overview.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>retail-sdk-overview.37de38.7600249d0f5fa81c3d9977aa25e6341ad77ecd5a.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>7600249d0f5fa81c3d9977aa25e6341ad77ecd5a</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>ffc37f7c2a63bada3055f37856a30424040bc9a3</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/16/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\dev-itpro\retail-sdk\retail-sdk-overview.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Retail software development kit (SDK)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail ソフトウェア開発キット (SDK)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides general information about the Retail SDK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Retail SDK に関する一般情報を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Retail software development kit (SDK)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail ソフトウェア開発キット (SDK)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This topic provides general information about the Retail SDK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Retail SDK に関する一般情報を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">概要</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>The Retail software development kit (SDK) includes code, code samples, templates, and tools that you can use to add new or customize existing retail functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail ソフトウェア開発キット (SDK) は、新規小売機能を追加するか既存の小売機能をカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>The SDK supports rapid development, full MSBuild integration, package generation, and code separation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SDK は、迅速な開発、完全な MSBuild 統合、パッケージの生成、およびコード分離をサポートします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>The Retail SDK supports TLS (Transport Layer Security) 1.2 standard, any customization build using the Retail SDK should follow TLS 1.2 standard.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK では、TLS (トランスポート層セキュリティ) 1.2 標準がサポートされています。Retail SDK を使用して構築されたカスタマイズはすべて、TLS 1.2 標準に準拠する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Download the Retail SDK</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK をダウンロード</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>The Retail SDK is available in development environments, and in hotfix packages in a Retail SDK folder.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK は、開発環境と、Retail SDK フォルダーにある修正プログラム パッケージで使用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>For more information see:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、「」を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>If you get the SDK from a development instance, it is immediately ready for configuration and use.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発インスタンスから SDK を取得すると、構成および使用の準備がすぐに整います。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>For more information, see <bpt id="p1">[</bpt>Access instances<ept id="p1">](../../../dev-itpro/dev-tools/access-instances.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、「<bpt id="p1">[</bpt>アクセス インスタンス<ept id="p1">](../../../dev-itpro/dev-tools/access-instances.md)</ept>」を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">修正プログラムから SDK を取得する場合は、修正プログラムのパッケージでは圧縮フォルダとして含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Retail hotfixes are cumulative and includes all other fixes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail 修正プログラムは、累積的であり、その他のすべての修正プログラムが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>We recommend that you put the SDK in a source control system such as Visual Studio Online.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio Online などのソース管理システムに SDK を配置することをお勧めします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Rapid development</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高速開発</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>The main focus of the Retail SDK is to help you write customizations efficiently and correctly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK の主な焦点は、カスタマイズを効率的かつ正しく作成するのに役立ちます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The SDK lets you run applications directly in a single-computer demo environment by using the F5 functionality (run and debug) in Microsoft Visual Studio.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">SDK を使用すると、Microsoft Visual Studio の F5 機能 (実行とデバッグ) を使用して単一コンピューター デモ環境で直接アプリケーションを実行できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>All the required "deployment chores" are done for you.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">すべての必要な "展開処理" が行われます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Therefore, you don't have to copy any files.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">したがって、ファイルをコピーする必要はありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Full MSBuild integration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完全な MSBuild 統合</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>The Retail SDK is a build system.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK は、ビルド システムです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>A simple MSBuild command from the root of the SDK builds everything.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SDK のルートからの単純な MSBuild コマンドは、すべてを構築します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>This behavior eliminates guesswork about how and where to build from, and guarantees consistency and reproducibility.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この動作により、どのようにしてどこからビルドするかについての推測がなくなり、整合性と再現性が保証されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Therefore, the Retail SDK can easily be used together with any application lifecycle management (ALM) system, even Microsoft Visual Studio Online.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、Retail SDK は、Microsoft Visual Studio Online などのアプリケーション ライフサイクル管理 (ALM) システムと共に簡単に使用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>This integration includes automation of the build.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この統合には、ビルドの自動化が含まれます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Creation of final update packages, and better and explicit control over the customization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最終更新パッケージの作成、およびカスタマイズのより明示的なコントロール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>The Retail SDK includes tools that generate new packages that include everything that is required in order to deploy a service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK には、サービスを配置するために必要なすべてのものが含まれる新しいパッケージを生成するツールが含まれます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>For example, if the commerce runtime is extended with a new custom service dynamic-link library (DLL), the SDK automatically includes the new DLL in all appropriate packages (RetailServer and MPOSOffline).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<ph id="1">Commerce Runtime</ph> が新しいカスタム サービス ダイナミックリンク ライブラリ (DLL) で拡張された場合、SDK は自動で新しい DLL をすべての適切なパッケージ (RetailServer および MPOSOffline) に追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Or, if the database is extended, the upgrade script is automatically included in both RetailServer and MPOSOffline packages, because these are the packages that must (potentially) run the channel database update.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、データベースが拡張された場合、アップグレード スクリプトは自動的に RetailServer と MPOSOffline パッケージの両方に追加されます。これらは、チャンネル データベースの更新を実行する必要がある (潜在的に) パッケージだからです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Files that are shared exist only one time in the SDK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共有されているファイルは、SDK に 1 度だけ存在します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>The packaging projects are set up in such a way that they pull in the right files for the package.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ プロジェクトは、パッケージの正しいファイルを引き出すように設定されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Therefore, you edit a commerceruntime.config file in only one place.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、commerceruntime.config ファイルは 1 か所のみで編集します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>The same applies for deployment-related script files, even though these files rarely require customization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのファイルにカスタマイズが必要な場合はほとんどありませんが、展開関連のスクリプト ファイルにも同じことが適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Better code separation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">より良いコードの分離</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>If the Retail SDK needs to be updated, a potential code merge is required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK の更新が必要な場合、潜在的なコード結合が必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>This requirement applies to existing code samples or templates that have been changed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この要件は、既存のコード サンプルまたは変更されているテンプレートに適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Some features in the implementation and in the folder structure of the SDK help to provide an easy way to separate customized code from sample code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SDK の実装とフォルダー構造のいくつかの機能は、サンプル コードからカスタム コードをより簡単に分離するのに役立ちます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>You can expect to see additional improvements to code separation in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">将来のリリースでコード分離のその他の機能強化が追加される予定です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Real-world implementation samples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実際の実装サンプル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>In addition to the source code of some of the Retail implementations, the Retail SDK includes sample code that illustrates how certain scenarios should be implemented.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一部の Retail 実装のソース コードに加えて、Retail SDK には特定のシナリオを実装する方法を示すサンプル コードが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Retail SDK deep dive</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK の詳細な情報</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Prerequisites</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前提条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>To <bpt id="p1">**</bpt>code<ept id="p1">**</ept> or <bpt id="p2">**</bpt>build<ept id="p2">**</ept> your customization, you must have the following tools:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズの<bpt id="p1">**</bpt>コード<ept id="p1">**</ept>を書いたり<bpt id="p2">**</bpt>ビルド<ept id="p2">**</ept>するには、次のツールが必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Microsoft Visual Studio 2015 with Typescript 1.5 (an LCS developer topology is acceptable)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typescript 1.5 付き Microsoft Visual Studio 2015 (LCS 開発者トポロジが許容可能)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>ASP.NET MVC 4.0 (an LCS developer topology acceptable) (required only by StoreFront)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ASP.NET MVC 4.0 (LCS 開発者トポロジ受入可能) (店舗でのみ必須)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>A minimum of 150 MB of available disk space (an LCS developer topology is acceptable)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">150 MB 以上の使用可能なディスク領域 (LCS 開発者トポロジを受入可能)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>This list of requirements is very short and lets developers be productive on simple laptops.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この要件のリストは非常に短く、開発者は簡単なラップトップで生産性を高めることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>There is no longer a prerequisite for a validation utility.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検証ユーティリティの前提条件はなくなりました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>To <bpt id="p1">**</bpt>run<ept id="p1">**</ept> your customization, the normal prerequisites to run Retail apply.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズを<bpt id="p1">**</bpt>実行<ept id="p1">**</ept>するには、Retail を実行するための通常の前提条件が適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>We recommend that you run the customizations on a single-box developer topology (either LCS cloud-hosted or downloaded) during development.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発時に、シングル ボックスの開発者トポロジ (LCS クラウド ホストまたはダウンロードのいずれか) でカスタマイズを実行することをお勧めします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Retail SDK contents</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK のコンテンツ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>The following folders and files are part of the Retail SDK at the top level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のフォルダーとファイルは、トップ レベルの Retail SDK の一部です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>The folder structure and description above are applicable only for the Retail July 2017 update (7.2).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">上記のフォルダー構造と説明は、Retail の 2017 年 7 月のアップデート (7.2) にのみ適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>In the Retail 7.3 release, we sealed the Retail proxy and Hardware station projects.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail 7.3 のリリースで、Retail プロキシおよびハードウェア ステーション プロジェクトが含まれました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Therefore, in the Retail 7.3 release, you will see only samples for Hardware station and retail proxy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、Retail 7.3 リリースでは、ハードウェア ステーションと小売プロキシのサンプルのみが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>The proxy can be generated by following the new extensibility pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロキシは、新しい拡張性パターンに従って作成できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Folder/file</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォルダー/ファイル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Assets</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">資産</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Contains shared items such as scripts and configuration files (commerceRuntime.config, dllhost.exe.config, and so on).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スクリプトや構成ファイル (commerceRuntime.config、dllhost.exe.config など) などの共有アイテムが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>The configuration files should be customized and edited in this location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション ファイルは、この場所でカスタマイズおよび編集する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>The projects that use them will pick them up appropriately.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成されたワークスペースを使用するプロジェクトで、ワークスペースが適切にピッキングされます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>BuildTools</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BuildTools</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Contains anything that is related to the MSBuild and global configurations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MSBuild およびグローバル構成に関連するものがすべて含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Customization.settings is the main file that is used to set up the build system.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Customization.settings は、ビルド システムを設定するために使用する主要なファイルです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>The following list shows the items that this file controls and that customizers will likely change:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のリストは、このファイルが制御し、カスタマイザーが変更する可能性が高い項目を示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Prefix for all built assemblies (AssemblyNamePrefix)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのビルド済みアセンブリ (AssemblyNamePrefix) の接頭語</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Assembly version for all binaries (CustomAssemblyVersion)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのバイナリ (CustomAssemblyVersion) のアセンブリ バージョン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>File version for all binaries (CustomVersion)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのバイナリ (CustomVersion) のファイル バージョン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Name of the customization (CustomName)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズの名前 (CustomName)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Description of the customization (CustomDescription)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズの説明 (CustomDescription)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Publisher (CustomPublisher)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">発行元 (CustomPublisher)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Code signing (SignAssembly, AssemblyOriginatorKeyFile)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コード署名 (SignAssembly、AssemblyOriginatorKeyFile)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Modern POS certificate path (ModernPOSPackageCertificateKeyFile)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modern POS の証明書パス (ModernPOSPackageCertificateKeyFile)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Files that are related to the customization (RetailServerLibraryPathForProxyGeneration, ISV<ph id="ph1">\_</ph><ph id="ph2">\*</ph>)</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">カスタマイズに関連付けられているファイル (RetailServerLibraryPathForProxyGeneration、ISV<ph id="ph1">\_</ph><ph id="ph2">\*</ph>)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>CommerceRuntime</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">CommerceRuntime</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Contains a Visual Studio solution file (CommerceRuntime.sln) and related C# projects (CommerceRuntime, PricingEngine).</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Visual Studio ソリューション ファイル (CommerceRuntime.sln) および関連する C# プロジェクト (CommerceRuntime、PricingEngine) が含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Database</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> データベース</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Contains shared database scripts.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">共有データベース スクリプトが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>The full script CommerceRuntimeScripts<ph id="ph1">\_</ph>Create.sql is used only to create a new base database.</source><target logoport:matchpercent="95" state="translated" state-qualifier="fuzzy-match">CommerceRuntimeScripts<ph id="ph1">\_</ph>Create.sql のすべてのスクリプトは、新規の基礎データベース作成にのみ使用されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>The Upgrade folder includes incremental scripts from both Microsoft and the customizer.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">アップグレード フォルダーには、Microsoft とカスタマイザーの両方からの増分スクリプトが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>The existence of the database or the version in the database during a deployment controls which full or incremental scripts will be run.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">配置中にデータベースまたはデータベースのバージョンが存在すると、完全スクリプトまたは増分スクリプトの実行をコントロールします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Only scripts that haven't been run before will be run.</source><target logoport:matchpercent="99" state="translated" state-qualifier="fuzzy-match">まだ実行されていないスクリプトのみが実行されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>HardwareStation</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">ハードウェア ステーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Contains a Visual Studio solution file (HardwareStation.sln) and related C# projects (HardwareStation libraries and Webhost).</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Visual Studio ソリューション ファイル (HardwareStation.sln) および関連する C# プロジェクト (HardwareStation ライブラリと Webhost) が含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>OnlineStore</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OnlineStore</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Contains a Visual Studio solution file (OnlineStore.sln) and related C# projects (Ecommerce SDK).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio ソリューション ファイル (OnlineStore.sln) および関連する C# プロジェクト (Ecommerce SDK) が含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Packages</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Contains multiple projects for package creation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ作成用の複数のプロジェクトが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>These packages are used to deploy via LCS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのパッケージは、LCS を介して配布するために使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>These packages also include the final web.config files.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのパッケージには、最終的な web.config ファイルも含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>PaymentExternals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentExternals</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Contains all the payment-related assemblies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に関連するすべてのアセンブリが含まれます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>The following three subfolders hold various payment files:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の 3 つのサブフォルダでは、さまざまな支払ファイルを保持します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>IPaymentProcessor Assemblies<ept id="p1">&lt;/strong&gt;</ept> – This folder contains the assembly that implements the IPaymentProcessor interface and its dependent assemblies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>IPaymentProcessor Assemblies<ept id="p1">&lt;/strong&gt;</ept> – このフォルダーには、IPaymentProcessor インターフェイスを実装するアセンブリとその依存アセンブリが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Payment Web Files<ept id="p1">&lt;/strong&gt;</ept> – This folder contains the callback HTML, JavaScript, or CSS files that are required in order to enable the payment accepting page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>支払 Web ファイル<ept id="p1">&lt;/strong&gt;</ept> – このフォルダには、支払受け入れページを有効にするために必要なコールバック HTML、JavaScript、または CSS ファイルが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Payment connector developers will provide these web files if their payment accepting page requires them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払い受付ページで求められる場合、支払コネクタ開発者がこれらの Web ファイルを提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>IPaymentDevice Assemblies<ept id="p1">&lt;/strong&gt;</ept> – This folder contains the assembly that implements the IPaymentDevice interface and payment request handlers, and the interface's dependent assemblies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>IPaymentDevice Assemblies<ept id="p1">&lt;/strong&gt;</ept> – このフォルダーには、IPaymentDevice インターフェイスを実装するアセンブリと支払要求ハンドラー、およびインターフェイス依存アセンブリが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>These assemblies are used in Retail Hardware station and Retail Modern Point of Sale (Modern POS) to communicate with payment terminal devices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのアセンブリは、支払のターミナル デバイスと通信するために、Retail ハードウェア ステーションおよび Retail Modern Point of Sale (モダン POS) で使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Additionally, all extensions that are related to payment connectors should be put in this folder before you create the deployment packages.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">さらに支払コネクタに関連するすべての拡張子は、配置パッケージを作成する前に、フォルダーに配置する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Payments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払利息</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Contains a Visual Studio solution file (PaymentSDK.sln) and related C# projects (PaymentSDK connectors, samples and functional test).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio ソリューション ファイル (PaymentSDK.sln) および関連する C# プロジェクト (PaymentSDK コネクタ、サンプル、機能テスト) が含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Contains files for POS:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS 用のファイルが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>CloudPos.sln<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>CloudPos.sln<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>ModernPos.sln<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>ModernPos.sln<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Folder Core<ept id="p1">&lt;/strong&gt;</ept> – Low-level shared POS code</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">&lt;strong&gt;</bpt>フォルダ コア<ept id="p1">&lt;/strong&gt;</ept> – 低レベルで共有されるPOS コード</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Folder ViewModels<ept id="p1">&lt;/strong&gt;</ept> – Shared POS view models</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">&lt;strong&gt;</bpt>フォルダ ビューモデル<ept id="p1">&lt;/strong&gt;</ept> – 共有される POS ビュー モデル</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Folder SharedApp<ept id="p1">&lt;/strong&gt;</ept> – Shared POS views</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">&lt;strong&gt;</bpt>フォルダ シェアアプリ<ept id="p1">&lt;/strong&gt;</ept> – 共有される POS ビュー</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Folder App<ept id="p1">&lt;/strong&gt;</ept> – Modern POS–specific views and other items</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">&lt;strong&gt;</bpt>フォルダ アプリ<ept id="p1">&lt;/strong&gt;</ept> – Modern POS– 特定のビューおよびその他の品目</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Folder Web<ept id="p1">&lt;/strong&gt;</ept> – Cloud POS–specific views and other items</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">&lt;strong&gt;</bpt>フォルダ ウェブ<ept id="p1">&lt;/strong&gt;</ept> – クラウド POS– 特定のビューおよびその他の品目</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Proxies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロキシ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Contains two Visual Studio projects that are referenced by others.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他のユーザーが参照する 2 つの Visual Studio プロジェクトが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>These projects contain interfaces and generated code that serves as a proxy client of Retail Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのプロジェクトには、Retail Server のプロキシ クライアントとして機能するインターフェイスと生成されたコードが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Proxies.Retail.TypeScript is the TypeScript proxy, and RetailProxy is the C# proxy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proxies.Retail.TypeScript は TypeScript プロキシで、RetailProxy は C# プロキシです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>They are used by Modern POS/Cloud POS and the ECommerce SDK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modern POS/Cloud POS と ECommerce SDK で使用されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>References</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">参照</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>The single place where all binaries live.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">すべてのバイナリが存在する単一の場所。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>The location is used to resolve any project's binary references.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">この場所は、プロジェクトのバイナリ参照を解決するために使用されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>The list of files includes external non-Retail binaries and also Microsoft Retail binaries.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">ファイルのリストには、外部の非 Retail バイナリと Microsoft Retail バイナリが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Additionally, this directory serves as the global drop location for any binaries that are built from the Retail SDK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、このディレクトリは、Retail SDK からビルドされているバイナリのグローバルな格納場所として使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>SampleExtensions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SampleExtensions</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Contains sample extensions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サンプル拡張子を含みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>dirs.proj</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dirs.proj</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>The top-level MSBuild file that directs the build order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド順序を指示するトップレベルの MSBuild ファイル。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Microsoft-version.txt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft-version.txt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>A file that includes the Microsoft version of the Retail SDK.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Retail SDK の Microsoft のバージョンを含むファイル。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Don't edit this file.</source><target logoport:matchpercent="99" state="translated" state-qualifier="fuzzy-match">このファイルを編集しないでください。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>The C<ph id="ph1">\#</ph> source code in the SDK uses the Contoso namespace.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">SDK の C<ph id="ph1">\#</ph> ソース コードは、Contoso 名前空間を使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Therefore, it's easier to distinguish Microsoft types and your own types, because Microsoft uses Microsoft.Dynamics.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、Microsoft が Microsoft.Dynamics を使用するため、Microsoft の型と独自の型を区別する方が簡単です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>If you're referencing a type from the Microsoft binary, reference it by using Microsoft.Dynamics.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft バイナリからタイプを参照している場合は、Microsoft.Dynamics を参照します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>That way, you'll know that it's not from the Retail SDK but from a referenced binary.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そのようにして、Retail SDK からではなく、参照先のバイナリからであることがわかります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK02<ept id="p1">](./media/retailsdk02.png)](./media/retailsdk02.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK02<ept id="p1">](./media/retailsdk02.png)](./media/retailsdk02.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Dependencies, build order, and full build</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">相互関係、ビルド順序、およびフル ビルド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>The following illustration shows a high-level logical dependency tree within the Retail SDK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、Retail SDK 内の高レベルの論理的な依存関係ツリーを示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>It doesn't show the references to all Microsoft files or assets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての Microsoft ファイルまたはアセットへの参照は示されません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>To see these, look at the Visual Studio project and solution files in more detail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらを確認するには、Visual Studio プロジェクトとソリューション ファイルを詳しく見てください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK03<ept id="p1">](./media/retailsdk03.png)](./media/retailsdk03.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK03<ept id="p1">](./media/retailsdk03.png)](./media/retailsdk03.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Consider the following important points:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の重要な点を考慮してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>The RetailServer API is consumed by a few projects by means of automatically generated client proxy code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RetailServer API は、自動的に生成されたクライアント プロキシ コードを使用していくつかのプロジェクトによって消費されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>This behavior allows for more rapid development, and reduces opportunities for errors and bugs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この動作により、より迅速な開発が可能になり、エラーやバグの機会が減ります。 </target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>By default, the Retail SDK uses the official Microsoft DLL to generate the client code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、Retail SDK は公式の Microsoft DLL を使用してクライアント コードを生成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Customizers can switch to their own DLL (in Customization.settings) and therefore automatically generate the proxy code for their customized RetailServer API.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイザーは独自の DLL (Customization.settings 内) に切り替えることができ、カスタマイズされた RetailServer API 用のプロキシ コードを自動的に生成することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>After switching the DLL, a developer might have to change some implementations inside the RetailProxy project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DLL を切り替えた後、開発者は、RetailProxy プロジェクト内のいくつかの実装を変更する必要がある場合があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>The reason is that Modern POS in offline mode must communicate directly with the commerce runtime, and that code must be implemented.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その理由は、オフライン モードの Modern POS は <ph id="1">Commerce Runtime</ph> と直接通信する必要があり、そのコードを実装する必要があるためです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>However, no guesswork is required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、推測は必要ありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>The C<ph id="ph1">\#</ph> compiler will force it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">C<ph id="ph1">\#</ph> コンパイラはこれを強制します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>The packaging projects generate the deployment packages in the way that LCS expects them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ プロジェクトは、LCS で想定されている方法で配置パッケージを生成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>By default, these projects will ship only the Microsoft assets (non-customized) and the proxy DLLs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、これらのプロジェクトは Microsoft の資産 (カスタマイズされていない) とプロキシ DLL のみを出荷します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Anything else that should be included must be explicitly named in Customization.settings.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">含まれるべきものは、Customization.settings で明示的に記名される必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>This behavior is by design.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この動作は仕様です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>It reduces the deployed custom code and allows for binary patches.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは配置されたカスタム コードを削減して、バイナリ パッチを許可します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>For example, a customization adds a new CommerceRuntime service and a new RetailServer controller.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、カスタマイズは、新しい CommerceRuntime サービスおよび新しい RetailServer コントローラーを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>In this case, two new DLLs are registered for inclusion in the packages and are automatically included in all relevant places.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、2 つの新しい DLL はパッケージの内容に登録され、関連するすべての場所に自動的に含まれます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>The packages will <bpt id="p1">**</bpt>not<ept id="p1">**</ept> have all recompiled binaries from the SDK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージには、SDK のすべての再コンパイルされたバイナリは <bpt id="p1">**</bpt>ありません<ept id="p1">**</ept>。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>There is no single Visual Studio solution that includes all projects.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのプロジェクトを含む単一の Visual Studio ソリューションはありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Because there are few couplings between the various Visual Studio projects, you can open multiple projects or solutions side by side, and can compile the appropriate project after a change.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">さまざまな Visual Studio プロジェクト間にいくつかの結合があるため、複数のプロジェクトまたはソリューションを並べて開くことができ、変更後に適切なプロジェクトをコンパイルできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Even if you didn't customize every component, the easiest way to get the final deployment packages is by building the whole Retail SDK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのコンポーネントをカスタマイズしなくても、最終的な配置パッケージを入手する最も簡単な方法は、Retail SDK 全体を構築することです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>To do this, open an <bpt id="p1">**</bpt>MSBuild Command Prompt for VS2015<ept id="p1">**</ept> window, and enter <bpt id="p2">**</bpt>msbuild<ept id="p2">**</ept> (or <bpt id="p3">**</bpt>msbuild /p:Configuration=Release<ept id="p3">**</ept> for a non-debug version).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これを行うには、<bpt id="p1">**</bpt>VS2015 の MSBuild コマンド プロンプト<ept id="p1">**</ept> ウィンドウを開き、<bpt id="p2">**</bpt>msbuild<ept id="p2">**</ept> (または非デバッグ バージョンでは、<bpt id="p3">**</bpt>msbuild /p:Configuration=Release<ept id="p3">**</ept>) を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK04<ept id="p1">](./media/retailsdk04.png)](./media/retailsdk04.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK04<ept id="p1">](./media/retailsdk04.png)](./media/retailsdk04.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>This command will build all projects.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドはすべてのプロジェクトをビルドします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>This approach also provides a great way to verify that there are no implementation or code bugs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この方法は、実装やコードのバグがないことを確認する優れた方法も提供します。 </target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>If there are any bugs, the build will fail, and the Command Prompt window will show what failed (this output resembles what Visual Studio would show).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バグがある場合は、ビルドが失敗し、コマンド プロンプト ウィンドウに失敗した内容が表示されます (この出力は Visual Studio の表示と似ています)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK05<ept id="p1">](./media/retailsdk05.png)](./media/retailsdk05.png)</ept></source><target logoport:matchpercent="84" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK05<ept id="p1">](./media/retailsdk05.png)](./media/retailsdk05.png)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>For detailed help for MSBuild, see <bpt id="p1">[</bpt><ph id="ph1">https://msdn.microsoft.com/library/0k6kkbsd.aspx</ph><ept id="p1">](https://msdn.microsoft.com/library/0k6kkbsd.aspx)</ept>.</source><target logoport:matchpercent="85" state="translated" state-qualifier="fuzzy-match">MSBuild の詳細なヘルプについては、 <bpt id="p1">[</bpt><ph id="ph1">https://msdn.microsoft.com/library/0k6kkbsd.aspx</ph><ept id="p1">](https://msdn.microsoft.com/library/0k6kkbsd.aspx)</ept>を参照してください。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>The binaries that the build creates are automatically copied to the SDK's References folder.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">ビルドによって作成されるバイナリは、SDK リファレンス フォルダーに自動的にコピーされます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>The References folder also includes all the other binaries.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">References フォルダーには、その他のすべてのバイナリも含まれます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Notice that no DLLs are overwritten, because they are all prefixed with a name (in this case, "Contoso") that you can define in Customization.settings.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DLL には、すべて Customization.settings で定義できる名前 (この場合は「Contoso」) が接頭語にあるため上書きされないことに注意します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK06<ept id="p1">](./media/retailsdk06.png)](./media/retailsdk06.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK06<ept id="p1">](./media/retailsdk06.png)](./media/retailsdk06.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Minimal required configuration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最小限必要なコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Do you just want to quickly build the Retail SDK, or to run POS in the debugger on a demo machine?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK をすばやくビルドしたり、デモ マシンでデバッガーの POS を実行したいのですか。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>For Modern POS only, you must create an app package signing certificate in order to build correctly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modern POS のみで、正しく構築するためのアプリ パッケージ署名証明書を作成する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Alternatively, you can use Cloud POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、クラウド POS を使用することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Follow the instructions at <bpt id="p1">[</bpt><ph id="ph1">https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx</ph><ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx)</ept> to create a PFX file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx</ph><ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx)</ept> で PFX ファイルを作成する指示に従ってください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Then copy the PFX file to the BuildTools folder, and update the BuildTools<ph id="ph1">\\</ph>Customization.settings file with the correct name (ModernPOSPackageCertificateKeyFile).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PFX ファイルを BuildTools フォルダーにコピーし、 BuildTools<ph id="ph1">\\</ph>Customization.settings ファイルを正しい名前 (ModernPOSPackageCertificateKeyFile) で更新します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>At this point you have everything that you require in order to build individual solutions, projects, or the whole Retail SDK (by using MSBuild).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この時点で個々のソリューション、プロジェクト、または Retail SDK 全体を (MSBuild を使用して) ビルドするために必要なものはすべてあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Normal configuration/code signing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通常の構成/コード署名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>BuildTools<ph id="ph1">\\</ph>Customization.settings holds most of the configuration values for the SDK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BuildTools<ph id="ph1">\\</ph>Customization.settings には SDK のほとんどのコンフィギュレーション値が保持されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>The highlighted items in the following illustration are the global values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図の強調表示された項目はグローバル値です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>These values control how built binaries, components, and packages are named, versioned, and code-signed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの値は、ビルド バイナリ、コンポーネント、パッケージの名前付け、バージョン管理、コード署名の方法を制御します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK07<ept id="p1">](./media/retailsdk07.png)](./media/retailsdk07.png)</ept></source><target logoport:matchpercent="84" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK07<ept id="p1">](./media/retailsdk07.png)](./media/retailsdk07.png)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>It's good practice to sign your assemblies with a strong name, even though this isn't required.</source><target logoport:matchpercent="88" state="translated" state-qualifier="fuzzy-match">必須ではありませんが、厳密名でアセンブリに署名することをお勧めします。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>To learn how to create your own key file if you don't already have one, see <bpt id="p1">[</bpt><ph id="ph1">https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx</ph><ept id="p1">](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">独自のキー ファイルをまだ作成していない場合に作成する方法については、[<bpt id="p1">[</bpt><ph id="ph1">https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx</ph><ept id="p1">](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx)</ept>] を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>To build correctly, you must create an app package signing certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">正しくビルドするには、アプリ パッケージの署名証明書を作成する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Follow these instructions at <bpt id="p1">[</bpt><ph id="ph1">https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx</ph><ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx)</ept> to create a PFX file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx</ph><ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx)</ept> で PFX ファイルを作成するこれらの指示に従ってください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>Both the strong name key file and the app package signing certificate can be stored inside the BuildTools folder.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">厳密な名前のキー ファイルとアプリ パッケージの署名証明書の両方を BuildTools フォルダー内に保存することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>The <bpt id="p1">**</bpt>RetailServerLibraryPathForProxyGeneration<ept id="p1">**</ept> property can be used to set a different RetailServer DLL for proxy generation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>RetailServerLibraryPathForProxyGeneration<ept id="p1">**</ept> プロパティは、プロキシ生成で異なる RetailServer DLL を設定するために使用することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>Customization.settings is also the place to define your new customization assets, such as binaries, configuration files, and SQL update scripts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Customization.settings は、バイナリー、コンフィギュレーション ファイル、SQL 更新スクリプトなどの新しいカスタマイズ資産を定義する場所でもあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>After you specify your extensions, binaries, and assets here, the files will be added in the deployable package that is created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張子、バイナリ、および資産をここで指定した後、ファイルは作成された配置可能パッケージに追加されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK08<ept id="p1">](./media/retailsdk08.png)](./media/retailsdk08.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK08<ept id="p1">](./media/retailsdk08.png)](./media/retailsdk08.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>Customizing the build</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルドのカスタマイズ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>Adding new projects</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">新しいプロジェクトの追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>It's easy to add new projects to the Retail SDK's build system.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">簡単に新しいプロジェクトを Retail SDK のビルド システムに追加することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>You can either clone one of the many existing projects or start a new project.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">多くの既存のプロジェクトのいずれかを複製するか、新しいプロジェクトを開始することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>You just have to make some adjustments in a text editor, as shown in the following illustration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図に示すように、テキスト エディタでいくつかの調整を加える必要があるだけです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>The relative path of the <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> elements should be adjusted, and the <bpt id="p2">**</bpt>AssemblyName<ept id="p2">**</ept> element should use the predefined <bpt id="p3">**</bpt>AssemblyNamePrefix<ept id="p3">**</ept> property.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Import<ept id="p1">**</ept> 要素の相対パスを調整する必要があり、<bpt id="p2">**</bpt>AssemblyName<ept id="p2">**</ept> 要素は定義済みの <bpt id="p3">**</bpt>AssemblyNamePrefix<ept id="p3">**</ept> プロパティを使用する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>These adjustments are required in order to get versioning, code signing, uniform assembly naming, automatic dropping to the References folder, and other tasks for free.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの調整は、バージョン管理、コード署名、統一されたアセンブリ命名、[参照] フォルダーへの自動ドロップ、その他のタスクを無料で行うために必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK09<ept id="p1">](./media/retailsdk09.png)](./media/retailsdk09.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK09<ept id="p1">](./media/retailsdk09.png)](./media/retailsdk09.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Changing the build order or adding to the build</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド順序の変更またはビルドへの追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>The whole directory tree of the Retail SDK is built with the help of MSBuild traversal files (dirs.proj files).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK のディレクトリ ツリー全体は、MSBuild トラバーサル ファイル (dirs.proj ファイル) サポートを受けて構築されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>The following illustration shows the main traversal file of the Retail SDK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、Retail SDK の主なトラバーサルファイルを示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>Similar files might also exist in subdirectories.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">類似したファイルは、サブディレクトリにも存在する場合があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>Notice that Visual Studio solution files (.sln files) are very similar to traversal files.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Visual Studio ソリューション ファイル (.sln ファイル) がトラバーサル ファイルに非常に類似していることに注意します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>Both "direct" the MSBuild engine to process other build scripts.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">どちらもMSBuild エンジンに対して、他のビルド スクリプトを処理するよう "命令"します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK10<ept id="p1">](./media/retailsdk10.png)](./media/retailsdk10.png)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK10<ept id="p1">](./media/retailsdk10.png)](./media/retailsdk10.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>After new code is added, most of it should be located in a new folder (for details, see "Best practices of code implementation"), and you must add it to the traversal structure by adding to one or multiple dirs.proj files.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいコードを追加した後、そのほとんどは、新しいフォルダーに配置する必要があります (詳細は、「コード実装のベスト プラクティス」を参照してください)。また、1 つまたは複数の dirs.proj ファイルに追加することによって、トラバーサル構造に追加する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>The Extensions folder appears highlighted on line 10 in the previous illustration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張フォルダーは、前述の図の 10 行目で強調表示されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>The quickest way to get started with a new dirs.proj file is to copy an existing file, correct the paths in the <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> elements, and update the <bpt id="p2">**</bpt>ProjectFiles<ept id="p2">**</ept> elements in the <bpt id="p3">**</bpt>ItemGroup<ept id="p3">**</ept> element.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい dirs.proj ファイルを開始する最も簡単な方法は、既存のファイルをコピーし、<bpt id="p1">**</bpt>Import<ept id="p1">**</ept> 要素のパスを修正して、<bpt id="p3">**</bpt>ItemGroup<ept id="p3">**</ept> 要素の <bpt id="p2">**</bpt>ProjectFiles<ept id="p2">**</ept> 要素を更新することです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Build script customization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド スクリプトのカスタマイズ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>When you must implement new build steps, keep in mind that the existing scripts might be updated by a Retail SDK update later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいビルド ステップを実装する必要があるとき、既存のスクリプトが Retail SDK 更新プログラムで後で更新される可能性があることに留意してください後で、で更新します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>Best practice is to minimize the editing of any file, or add new files instead.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ベスト プラクティスはファイルの編集を最小限にするか、新しいファイルを代わりに追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>If you require new global MSBuild properties, BuildTools<ph id="ph1">\\</ph>Microsoft.Dynamics.RetailSDK.Build.props is a good place to add them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいグローバル MSBuild プロパティが必要な場合、BuildTools<ph id="ph1">\\</ph>Microsoft.Dynamics.RetailSDK.Build.props はそれらを追加する上でお勧めです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>Likewise, BuildTools<ph id="ph1">\\</ph>Microsoft.Dynamics.RetailSDK.Build.targets can be used to add new build processing targets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同様に、BuildTools<ph id="ph1">\\</ph>Microsoft.Dynamics.RetailSDK.Build.targets は、新しいビルド処理のターゲットを追加するために使用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>If only one project requires special handling, it is better to explicitly make the change there.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つのプロジェクトで特別な処理が必要とならない場合は、明示的に変更を加えることをお勧めします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>If you require new local MSBuild properties, add a new file that is named local.props in the same directory.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいローカル MSBuild プロパティが必要な場合は、同じディレクトリに local.props という名前の新しいファイルを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>Alternatively, add a local.targets file if you require local build processing targets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、ローカル ビルド処理ターゲットが必要な場合は、local.targets ファイルを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>Developer productivity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者の生産性</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>As shown in the architecture diagram earlier in this article, several things depend on the RetailServer interface.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事の前半のアーキテクチャ図に示すように、いくつかのものは RetailServer インターフェイスによって異なります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>It is likely that someone will change this interface.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他のユーザーがこのインターフェイスを変更することがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>On a developer topology machine, someone might want to immediately try out a change.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者のトポロジ マシンでは、誰かがすぐに変更を試してみることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>In this case, any CommerceRuntime and RetailServer extension DLLs must be copied into the bin folder of the locally installed RetailServer web application.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、任意の CommerceRuntime および RetailServer 拡張 DLL をローカルにインストールされた RetailServer Web アプリケーションの bin フォルダーにコピーする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>A user can configure the Customization.setting file so that the DLLs are automatically copied into the bin folder of the local RetailServer web application whenever new versions of these files are built.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーは、Customization.setting ファイルをコンフィギュレーションして、これらのファイルの新しいバージョンがビルドされるたびに、DLL がローカルの RetailServer Web アプリケーションの bin フォルダーに自動的にコピーされるようにできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK11<ept id="p1">](./media/retailsdk11.png)](./media/retailsdk11.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK11<ept id="p1">](./media/retailsdk11.png)](./media/retailsdk11.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>Application lifecycle management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション ライフサイクル管理</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source>A good ALM solution provides version control, builds, automated builds, planning tools, tracking tools, dashboards, customization, and more.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">優れた ALM ソリューションは、バージョン管理、ビルド、自動ビルド、プランニング ツール、追跡ツール、ダッシュ ボード、カスタマイズなどを提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>The Retail SDK is organized in such a way that it supports these tasks.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK は、これらのタスクをサポートするように編成されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source><bpt id="p1">[</bpt>Azure DevOps<ept id="p1">](/Azure DevOps/)</ept> is a great tool and is recommended.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Azure DevOps<ept id="p1">](/Azure DevOps/)</ept> は、優れたツールでありお勧めします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>Branching and versioning</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分岐およびバージョン管理</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source>To work efficiently in a team, or even just to be able to go back and look at some changes that were done in the past, you must have good branching strategy and versioning discipline.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チームで効率的に仕事をしたり、過去に行ったいくつかの変更を確認できるようにするには、適正な分岐戦略とバージョン管理の規範が必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>The following illustration shows a simple branching strategy that might work well for most teams.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、ほとんどのチームでうまくいく単純な分岐戦略を示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source>The version numbers are fictitious.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バージョン番号は、架空のものです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK12<ept id="p1">](./media/retailsdk12.png)](./media/retailsdk12.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailSDK12<ept id="p1">](./media/retailsdk12.png)](./media/retailsdk12.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source>Retail SDK mirror branch</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK のミラー分岐</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>A very important point to emphasize is that the non-customized Retail SDK should be stored in your source control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">強調すべき非常に重要なポイントは、カスタマイズされていない Retail SDK をソース コントロールに保存する必要があるということです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>You don't have to store every version, but the versions that your team wants to snap to should be added (these versions might be cumulative updates or hotfixes).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのバージョンを保存する必要はありませんが、チームがスナップするバージョンを追加する必要があります (これらのバージョンは、累積的な更新または修正プログラムである場合があります)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>Only a simple merge of all changes (additions, changes, and deletions) should be done.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての変更 (追加、変更、および削除) の単純な結合のみ行う必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>No other development work should occur in this branch.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このブランチで発生する他の開発作業はありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source>The Retail SDK has its own version.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK には、独自のバージョンがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>All Retail binaries and packages that are included have the same version.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての Retail バイナリおよびパッケージには同じバージョンが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source>The version can also be found in the root of the Retail SDK in a file that is named Microsoft-version.txt.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バージョンは、Microsoft-version.txt という名前のファイルの Retail SDK のルートにもあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>Customization branch</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズ分岐</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source>After development can start, a new branch should be started (customization branch).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置を開発した後、新しい分岐を開始する必要があります (カスタマイズ分岐)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">初期分岐アウトの先頭において、この分岐は Retail SDK ミラー分岐の正確なコピーになります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source>This is the branch for a team's development.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">これはチーム開発用の分岐です。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>The version of the customization branch must be incremented at least every time that a build is created for testing, or it can even be incremented daily.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">カスタマイズ ブランチのバージョンは、少なくともテストのためにビルドが作成されるたびに増分する必要があります。また、毎日増分することもできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source>The file version to increment is defined in Customization.setting file by using the <bpt id="p1">**</bpt>CustomVersion<ept id="p1">**</ept> property.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">増分するファイル バージョンは、<bpt id="p1">**</bpt>CustomVersion<ept id="p1">**</ept> プロパティを使用して Customization.setting ファイルで定義されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>If you update it and rebuild, all binaries, packages, manifest files are updated accordingly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それを更新し、すべてのバイナリ パッケージを再構築すると、マニフェスト ファイルはそれに応じて更新されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>Note that the <bpt id="p1">**</bpt>CustomAssemblyVersion<ept id="p1">**</ept> property should be updated only when the update isn't backward compatible and/or for major new releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CustomAssemblyVersion<ept id="p1">**</ept> プロパティは、更新プログラムに下位互換性がなく、主な新しいリリースに対して互換性がない場合のみ更新する必要があることに注意してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source>In other words, this update should very rarely.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">つまり、この更新プログラムはめったにありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>For example, Microsoft's assembly version stayed the same for the multiple CTP releases for the current version.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">たとえば、Microsoftのアセンブリバージョンは、現行バージョンに至るまでの複数のCTPリリースで変わっていません。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>Because there are both Microsoft assets and your own changes in the same branch, the branch essentially has two file versions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同じ分岐には Microsoft の資産と独自の変更の両方が存在するため、分岐には基本的に 2 つのファイル バージョンがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>The first version is the Microsoft version of the Retail SDK that the current branch is based on, and the second version is the version that is set by the <bpt id="p1">**</bpt>CustomVersion<ept id="p1">**</ept> property.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初のバージョンは、現在の支店が基づいている Retail SDK の Microsoft バージョンで、2 番目のバージョンは、<bpt id="p1">**</bpt>CustomVersion<ept id="p1">**</ept> プロパティによって設定されたバージョンです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source>In the previous illustration, the current file version of the customization branch is 1.0.2.<ph id="ph1">\*</ph> (based on Microsoft version 7.0.2200.3).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前述の図では、カスタマイズ分岐の現在のファイル バージョンは、1.0.2<ph id="ph1">\*</ph> です (Microsoft バージョン 7.0.2200.3 に基づく)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>The file version of the first rolled-out release was 1.0.0.40 (based on 7.0.2000.0).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">展開された最初のリリースのファイル バージョンは 1.0.0.40 (7.0.2000.0 に基づく) でした。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source>When a testing phase is completed, and the final packages are being deployed with that version, it's important that you increment the version (or create a source control label).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト フェーズが完了し、最後のパッケージがそのバージョンで配置されるとき、バージョン番号を増分する (またはソース コントロールのラベルを作成する) ことが重要です。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Retail ソフトウェア開発キット (SDK)
+description: このトピックでは、Retail SDK に関する一般情報を提供します。 Retail SDK は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。
+author: RobinARH
+manager: AnnBe
+ms.date: 10/16/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations, Retail
+ms.custom: 17771
+ms.assetid: c54d34a5-32e2-4d0d-a1c2-4a9940d95ade
+ms.search.region: Global
+ms.author: sijoshi
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 7600249d0f5fa81c3d9977aa25e6341ad77ecd5a
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577946"
+---
+# <a name="retail-software-development-kit-sdk"></a><span data-ttu-id="17ddd-104">Retail ソフトウェア開発キット (SDK)</span><span class="sxs-lookup"><span data-stu-id="17ddd-104">Retail software development kit (SDK)</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="17ddd-105">このトピックでは、Retail SDK に関する一般情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-105">This topic provides general information about the Retail SDK.</span></span> <span data-ttu-id="17ddd-106">Retail SDK は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-106">The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.</span></span>
+
+## <a name="overview"></a><span data-ttu-id="17ddd-107">概要</span><span class="sxs-lookup"><span data-stu-id="17ddd-107">Overview</span></span>
+
+<span data-ttu-id="17ddd-108">Retail ソフトウェア開発キット (SDK) は、新規小売機能を追加するか既存の小売機能をカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-108">The Retail software development kit (SDK) includes code, code samples, templates, and tools that you can use to add new or customize existing retail functionality.</span></span> <span data-ttu-id="17ddd-109">SDK は、迅速な開発、完全な MSBuild 統合、パッケージの生成、およびコード分離をサポートします。</span><span class="sxs-lookup"><span data-stu-id="17ddd-109">The SDK supports rapid development, full MSBuild integration, package generation, and code separation.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="17ddd-110">Retail SDK では、TLS (トランスポート層セキュリティ) 1.2 標準がサポートされています。Retail SDK を使用して構築されたカスタマイズはすべて、TLS 1.2 標準に準拠する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-110">The Retail SDK supports TLS (Transport Layer Security) 1.2 standard, any customization build using the Retail SDK should follow TLS 1.2 standard.</span></span>
+
+### <a name="download-the-retail-sdk"></a><span data-ttu-id="17ddd-111">Retail SDK をダウンロード</span><span class="sxs-lookup"><span data-stu-id="17ddd-111">Download the Retail SDK</span></span>
+
+<span data-ttu-id="17ddd-112">Retail SDK は、開発環境と、Retail SDK フォルダーにある修正プログラム パッケージで使用できます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-112">The Retail SDK is available in development environments, and in hotfix packages in a Retail SDK folder.</span></span> <span data-ttu-id="17ddd-113">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="17ddd-113">For more information see:</span></span>
+
+- <span data-ttu-id="17ddd-114">開発インスタンスから SDK を取得すると、構成および使用の準備がすぐに整います。</span><span class="sxs-lookup"><span data-stu-id="17ddd-114">If you get the SDK from a development instance, it is immediately ready for configuration and use.</span></span> <span data-ttu-id="17ddd-115">詳細については、「[アクセス インスタンス](../../../dev-itpro/dev-tools/access-instances.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="17ddd-115">For more information, see [Access instances](../../../dev-itpro/dev-tools/access-instances.md).</span></span> 
+- <span data-ttu-id="17ddd-116">修正プログラムから SDK を取得する場合は、修正プログラムのパッケージでは圧縮フォルダとして含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-116">If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder.</span></span> <span data-ttu-id="17ddd-117">Retail 修正プログラムは、累積的であり、その他のすべての修正プログラムが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-117">Retail hotfixes are cumulative and includes all other fixes.</span></span> 
+
+<span data-ttu-id="17ddd-118">Visual Studio Online などのソース管理システムに SDK を配置することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="17ddd-118">We recommend that you put the SDK in a source control system such as Visual Studio Online.</span></span>
+
+### <a name="rapid-development"></a><span data-ttu-id="17ddd-119">高速開発</span><span class="sxs-lookup"><span data-stu-id="17ddd-119">Rapid development</span></span>
+
+<span data-ttu-id="17ddd-120">Retail SDK の主な焦点は、カスタマイズを効率的かつ正しく作成するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-120">The main focus of the Retail SDK is to help you write customizations efficiently and correctly.</span></span> <span data-ttu-id="17ddd-121">SDK を使用すると、Microsoft Visual Studio の F5 機能 (実行とデバッグ) を使用して単一コンピューター デモ環境で直接アプリケーションを実行できます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-121">The SDK lets you run applications directly in a single-computer demo environment by using the F5 functionality (run and debug) in Microsoft Visual Studio.</span></span> <span data-ttu-id="17ddd-122">すべての必要な "展開処理" が行われます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-122">All the required "deployment chores" are done for you.</span></span> <span data-ttu-id="17ddd-123">したがって、ファイルをコピーする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="17ddd-123">Therefore, you don't have to copy any files.</span></span>
+
+### <a name="full-msbuild-integration"></a><span data-ttu-id="17ddd-124">完全な MSBuild 統合</span><span class="sxs-lookup"><span data-stu-id="17ddd-124">Full MSBuild integration</span></span>
+
+<span data-ttu-id="17ddd-125">Retail SDK は、ビルド システムです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-125">The Retail SDK is a build system.</span></span> <span data-ttu-id="17ddd-126">SDK のルートからの単純な MSBuild コマンドは、すべてを構築します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-126">A simple MSBuild command from the root of the SDK builds everything.</span></span> <span data-ttu-id="17ddd-127">この動作により、どのようにしてどこからビルドするかについての推測がなくなり、整合性と再現性が保証されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-127">This behavior eliminates guesswork about how and where to build from, and guarantees consistency and reproducibility.</span></span> <span data-ttu-id="17ddd-128">したがって、Retail SDK は、Microsoft Visual Studio Online などのアプリケーション ライフサイクル管理 (ALM) システムと共に簡単に使用できます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-128">Therefore, the Retail SDK can easily be used together with any application lifecycle management (ALM) system, even Microsoft Visual Studio Online.</span></span> <span data-ttu-id="17ddd-129">この統合には、ビルドの自動化が含まれます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-129">This integration includes automation of the build.</span></span>
+
+### <a name="creation-of-final-update-packages-and-better-and-explicit-control-over-the-customization"></a><span data-ttu-id="17ddd-130">最終更新パッケージの作成、およびカスタマイズのより明示的なコントロール</span><span class="sxs-lookup"><span data-stu-id="17ddd-130">Creation of final update packages, and better and explicit control over the customization</span></span>
+
+<span data-ttu-id="17ddd-131">Retail SDK には、サービスを配置するために必要なすべてのものが含まれる新しいパッケージを生成するツールが含まれます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-131">The Retail SDK includes tools that generate new packages that include everything that is required in order to deploy a service.</span></span> <span data-ttu-id="17ddd-132">たとえば、Commerce Runtime が新しいカスタム サービス ダイナミックリンク ライブラリ (DLL) で拡張された場合、SDK は自動で新しい DLL をすべての適切なパッケージ (RetailServer および MPOSOffline) に追加します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-132">For example, if the commerce runtime is extended with a new custom service dynamic-link library (DLL), the SDK automatically includes the new DLL in all appropriate packages (RetailServer and MPOSOffline).</span></span> <span data-ttu-id="17ddd-133">または、データベースが拡張された場合、アップグレード スクリプトは自動的に RetailServer と MPOSOffline パッケージの両方に追加されます。これらは、チャンネル データベースの更新を実行する必要がある (潜在的に) パッケージだからです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-133">Or, if the database is extended, the upgrade script is automatically included in both RetailServer and MPOSOffline packages, because these are the packages that must (potentially) run the channel database update.</span></span> <span data-ttu-id="17ddd-134">共有されているファイルは、SDK に 1 度だけ存在します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-134">Files that are shared exist only one time in the SDK.</span></span> <span data-ttu-id="17ddd-135">パッケージ プロジェクトは、パッケージの正しいファイルを引き出すように設定されています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-135">The packaging projects are set up in such a way that they pull in the right files for the package.</span></span> <span data-ttu-id="17ddd-136">したがって、commerceruntime.config ファイルは 1 か所のみで編集します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-136">Therefore, you edit a commerceruntime.config file in only one place.</span></span> <span data-ttu-id="17ddd-137">これらのファイルにカスタマイズが必要な場合はほとんどありませんが、展開関連のスクリプト ファイルにも同じことが適用されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-137">The same applies for deployment-related script files, even though these files rarely require customization.</span></span>
+
+### <a name="better-code-separation"></a><span data-ttu-id="17ddd-138">より良いコードの分離</span><span class="sxs-lookup"><span data-stu-id="17ddd-138">Better code separation</span></span>
+
+<span data-ttu-id="17ddd-139">Retail SDK の更新が必要な場合、潜在的なコード結合が必要です。</span><span class="sxs-lookup"><span data-stu-id="17ddd-139">If the Retail SDK needs to be updated, a potential code merge is required.</span></span> <span data-ttu-id="17ddd-140">この要件は、既存のコード サンプルまたは変更されているテンプレートに適用されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-140">This requirement applies to existing code samples or templates that have been changed.</span></span> <span data-ttu-id="17ddd-141">SDK の実装とフォルダー構造のいくつかの機能は、サンプル コードからカスタム コードをより簡単に分離するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-141">Some features in the implementation and in the folder structure of the SDK help to provide an easy way to separate customized code from sample code.</span></span> <span data-ttu-id="17ddd-142">将来のリリースでコード分離のその他の機能強化が追加される予定です。</span><span class="sxs-lookup"><span data-stu-id="17ddd-142">You can expect to see additional improvements to code separation in future releases.</span></span>
+
+### <a name="real-world-implementation-samples"></a><span data-ttu-id="17ddd-143">実際の実装サンプル</span><span class="sxs-lookup"><span data-stu-id="17ddd-143">Real-world implementation samples</span></span>
+
+<span data-ttu-id="17ddd-144">一部の Retail 実装のソース コードに加えて、Retail SDK には特定のシナリオを実装する方法を示すサンプル コードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-144">In addition to the source code of some of the Retail implementations, the Retail SDK includes sample code that illustrates how certain scenarios should be implemented.</span></span>
+
+## <a name="retail-sdk-deep-dive"></a><span data-ttu-id="17ddd-145">Retail SDK の詳細な情報</span><span class="sxs-lookup"><span data-stu-id="17ddd-145">Retail SDK deep dive</span></span>
+
+### <a name="prerequisites"></a><span data-ttu-id="17ddd-146">前提条件</span><span class="sxs-lookup"><span data-stu-id="17ddd-146">Prerequisites</span></span>
+
+- <span data-ttu-id="17ddd-147">カスタマイズの**コード**を書いたり**ビルド**するには、次のツールが必要です。</span><span class="sxs-lookup"><span data-stu-id="17ddd-147">To **code** or **build** your customization, you must have the following tools:</span></span>
+
+    - <span data-ttu-id="17ddd-148">Typescript 1.5 付き Microsoft Visual Studio 2015 (LCS 開発者トポロジが許容可能)</span><span class="sxs-lookup"><span data-stu-id="17ddd-148">Microsoft Visual Studio 2015 with Typescript 1.5 (an LCS developer topology is acceptable)</span></span>
+    - <span data-ttu-id="17ddd-149">ASP.NET MVC 4.0 (LCS 開発者トポロジ受入可能) (店舗でのみ必須)</span><span class="sxs-lookup"><span data-stu-id="17ddd-149">ASP.NET MVC 4.0 (an LCS developer topology acceptable) (required only by StoreFront)</span></span>
+    - <span data-ttu-id="17ddd-150">150 MB 以上の使用可能なディスク領域 (LCS 開発者トポロジを受入可能)</span><span class="sxs-lookup"><span data-stu-id="17ddd-150">A minimum of 150 MB of available disk space (an LCS developer topology is acceptable)</span></span>
+
+    <span data-ttu-id="17ddd-151">この要件のリストは非常に短く、開発者は簡単なラップトップで生産性を高めることができます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-151">This list of requirements is very short and lets developers be productive on simple laptops.</span></span> <span data-ttu-id="17ddd-152">検証ユーティリティの前提条件はなくなりました。</span><span class="sxs-lookup"><span data-stu-id="17ddd-152">There is no longer a prerequisite for a validation utility.</span></span>
+
+- <span data-ttu-id="17ddd-153">カスタマイズを**実行**するには、Retail を実行するための通常の前提条件が適用されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-153">To **run** your customization, the normal prerequisites to run Retail apply.</span></span> <span data-ttu-id="17ddd-154">開発時に、シングル ボックスの開発者トポロジ (LCS クラウド ホストまたはダウンロードのいずれか) でカスタマイズを実行することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="17ddd-154">We recommend that you run the customizations on a single-box developer topology (either LCS cloud-hosted or downloaded) during development.</span></span>
+
+### <a name="retail-sdk-contents"></a><span data-ttu-id="17ddd-155">Retail SDK のコンテンツ</span><span class="sxs-lookup"><span data-stu-id="17ddd-155">Retail SDK contents</span></span>
+
+<span data-ttu-id="17ddd-156">次のフォルダーとファイルは、トップ レベルの Retail SDK の一部です。</span><span class="sxs-lookup"><span data-stu-id="17ddd-156">The following folders and files are part of the Retail SDK at the top level.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="17ddd-157">上記のフォルダー構造と説明は、Retail の 2017 年 7 月のアップデート (7.2) にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-157">The folder structure and description above are applicable only for the Retail July 2017 update (7.2).</span></span> <span data-ttu-id="17ddd-158">Retail 7.3 のリリースで、Retail プロキシおよびハードウェア ステーション プロジェクトが含まれました。</span><span class="sxs-lookup"><span data-stu-id="17ddd-158">In the Retail 7.3 release, we sealed the Retail proxy and Hardware station projects.</span></span> <span data-ttu-id="17ddd-159">したがって、Retail 7.3 リリースでは、ハードウェア ステーションと小売プロキシのサンプルのみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-159">Therefore, in the Retail 7.3 release, you will see only samples for Hardware station and retail proxy.</span></span> <span data-ttu-id="17ddd-160">プロキシは、新しい拡張性パターンに従って作成できます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-160">The proxy can be generated by following the new extensibility pattern.</span></span>
+
+<table>
+<thead>
+<tr>
+<th><span data-ttu-id="17ddd-161">フォルダー/ファイル</span><span class="sxs-lookup"><span data-stu-id="17ddd-161">Folder/file</span></span></th>
+<th><span data-ttu-id="17ddd-162">説明</span><span class="sxs-lookup"><span data-stu-id="17ddd-162">Description</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span data-ttu-id="17ddd-163">資産</span><span class="sxs-lookup"><span data-stu-id="17ddd-163">Assets</span></span></td>
+<td><span data-ttu-id="17ddd-164">スクリプトや構成ファイル (commerceRuntime.config、dllhost.exe.config など) などの共有アイテムが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-164">Contains shared items such as scripts and configuration files (commerceRuntime.config, dllhost.exe.config, and so on).</span></span> <span data-ttu-id="17ddd-165">コンフィギュレーション ファイルは、この場所でカスタマイズおよび編集する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-165">The configuration files should be customized and edited in this location.</span></span> <span data-ttu-id="17ddd-166">作成されたワークスペースを使用するプロジェクトで、ワークスペースが適切にピッキングされます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-166">The projects that use them will pick them up appropriately.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-167">BuildTools</span><span class="sxs-lookup"><span data-stu-id="17ddd-167">BuildTools</span></span></td>
+<td><span data-ttu-id="17ddd-168">MSBuild およびグローバル構成に関連するものがすべて含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-168">Contains anything that is related to the MSBuild and global configurations.</span></span> <span data-ttu-id="17ddd-169">Customization.settings は、ビルド システムを設定するために使用する主要なファイルです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-169">Customization.settings is the main file that is used to set up the build system.</span></span> <span data-ttu-id="17ddd-170">次のリストは、このファイルが制御し、カスタマイザーが変更する可能性が高い項目を示しています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-170">The following list shows the items that this file controls and that customizers will likely change:</span></span>
+<ul>
+<li><span data-ttu-id="17ddd-171">すべてのビルド済みアセンブリ (AssemblyNamePrefix) の接頭語</span><span class="sxs-lookup"><span data-stu-id="17ddd-171">Prefix for all built assemblies (AssemblyNamePrefix)</span></span></li>
+<li><span data-ttu-id="17ddd-172">すべてのバイナリ (CustomAssemblyVersion) のアセンブリ バージョン</span><span class="sxs-lookup"><span data-stu-id="17ddd-172">Assembly version for all binaries (CustomAssemblyVersion)</span></span></li>
+<li><span data-ttu-id="17ddd-173">すべてのバイナリ (CustomVersion) のファイル バージョン</span><span class="sxs-lookup"><span data-stu-id="17ddd-173">File version for all binaries (CustomVersion)</span></span></li>
+<li><span data-ttu-id="17ddd-174">カスタマイズの名前 (CustomName)</span><span class="sxs-lookup"><span data-stu-id="17ddd-174">Name of the customization (CustomName)</span></span></li>
+<li><span data-ttu-id="17ddd-175">カスタマイズの説明 (CustomDescription)</span><span class="sxs-lookup"><span data-stu-id="17ddd-175">Description of the customization (CustomDescription)</span></span></li>
+<li><span data-ttu-id="17ddd-176">発行元 (CustomPublisher)</span><span class="sxs-lookup"><span data-stu-id="17ddd-176">Publisher (CustomPublisher)</span></span></li>
+<li><span data-ttu-id="17ddd-177">コード署名 (SignAssembly、AssemblyOriginatorKeyFile)</span><span class="sxs-lookup"><span data-stu-id="17ddd-177">Code signing (SignAssembly, AssemblyOriginatorKeyFile)</span></span></li>
+<li><span data-ttu-id="17ddd-178">Modern POS の証明書パス (ModernPOSPackageCertificateKeyFile)</span><span class="sxs-lookup"><span data-stu-id="17ddd-178">Modern POS certificate path (ModernPOSPackageCertificateKeyFile)</span></span></li>
+<li><span data-ttu-id="17ddd-179">カスタマイズに関連付けられているファイル (RetailServerLibraryPathForProxyGeneration、ISV\_\*)</span><span class="sxs-lookup"><span data-stu-id="17ddd-179">Files that are related to the customization (RetailServerLibraryPathForProxyGeneration, ISV\_\*)</span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-180">CommerceRuntime</span><span class="sxs-lookup"><span data-stu-id="17ddd-180">CommerceRuntime</span></span></td>
+<td><span data-ttu-id="17ddd-181">Visual Studio ソリューション ファイル (CommerceRuntime.sln) および関連する C# プロジェクト (CommerceRuntime、PricingEngine) が含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-181">Contains a Visual Studio solution file (CommerceRuntime.sln) and related C# projects (CommerceRuntime, PricingEngine).</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-182"> データベース</span><span class="sxs-lookup"><span data-stu-id="17ddd-182">Database</span></span></td>
+<td><span data-ttu-id="17ddd-183">共有データベース スクリプトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-183">Contains shared database scripts.</span></span> <span data-ttu-id="17ddd-184">CommerceRuntimeScripts\_Create.sql のすべてのスクリプトは、新規の基礎データベース作成にのみ使用されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-184">The full script CommerceRuntimeScripts\_Create.sql is used only to create a new base database.</span></span> <span data-ttu-id="17ddd-185">アップグレード フォルダーには、Microsoft とカスタマイザーの両方からの増分スクリプトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-185">The Upgrade folder includes incremental scripts from both Microsoft and the customizer.</span></span> <span data-ttu-id="17ddd-186">配置中にデータベースまたはデータベースのバージョンが存在すると、完全スクリプトまたは増分スクリプトの実行をコントロールします。</span><span class="sxs-lookup"><span data-stu-id="17ddd-186">The existence of the database or the version in the database during a deployment controls which full or incremental scripts will be run.</span></span> <span data-ttu-id="17ddd-187">まだ実行されていないスクリプトのみが実行されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-187">Only scripts that haven't been run before will be run.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-188">ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="17ddd-188">HardwareStation</span></span></td>
+<td><span data-ttu-id="17ddd-189">Visual Studio ソリューション ファイル (HardwareStation.sln) および関連する C# プロジェクト (HardwareStation ライブラリと Webhost) が含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-189">Contains a Visual Studio solution file (HardwareStation.sln) and related C# projects (HardwareStation libraries and Webhost).</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-190">OnlineStore</span><span class="sxs-lookup"><span data-stu-id="17ddd-190">OnlineStore</span></span></td>
+<td><span data-ttu-id="17ddd-191">Visual Studio ソリューション ファイル (OnlineStore.sln) および関連する C# プロジェクト (Ecommerce SDK) が含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-191">Contains a Visual Studio solution file (OnlineStore.sln) and related C# projects (Ecommerce SDK).</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-192">パッケージ</span><span class="sxs-lookup"><span data-stu-id="17ddd-192">Packages</span></span></td>
+<td><span data-ttu-id="17ddd-193">パッケージ作成用の複数のプロジェクトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-193">Contains multiple projects for package creation.</span></span> <span data-ttu-id="17ddd-194">これらのパッケージは、LCS を介して配布するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-194">These packages are used to deploy via LCS.</span></span> <span data-ttu-id="17ddd-195">これらのパッケージには、最終的な web.config ファイルも含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-195">These packages also include the final web.config files.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-196">PaymentExternals</span><span class="sxs-lookup"><span data-stu-id="17ddd-196">PaymentExternals</span></span></td>
+<td><span data-ttu-id="17ddd-197">支払に関連するすべてのアセンブリが含まれます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-197">Contains all the payment-related assemblies.</span></span> <span data-ttu-id="17ddd-198">次の 3 つのサブフォルダでは、さまざまな支払ファイルを保持します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-198">The following three subfolders hold various payment files:</span></span>
+<ul>
+<li><span data-ttu-id="17ddd-199"><strong>IPaymentProcessor Assemblies</strong> – このフォルダーには、IPaymentProcessor インターフェイスを実装するアセンブリとその依存アセンブリが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-199"><strong>IPaymentProcessor Assemblies</strong> – This folder contains the assembly that implements the IPaymentProcessor interface and its dependent assemblies.</span></span></li>
+<li><span data-ttu-id="17ddd-200"><strong>支払 Web ファイル</strong> – このフォルダには、支払受け入れページを有効にするために必要なコールバック HTML、JavaScript、または CSS ファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-200"><strong>Payment Web Files</strong> – This folder contains the callback HTML, JavaScript, or CSS files that are required in order to enable the payment accepting page.</span></span> <span data-ttu-id="17ddd-201">支払い受付ページで求められる場合、支払コネクタ開発者がこれらの Web ファイルを提供します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-201">Payment connector developers will provide these web files if their payment accepting page requires them.</span></span></li>
+<li><span data-ttu-id="17ddd-202"><strong>IPaymentDevice Assemblies</strong> – このフォルダーには、IPaymentDevice インターフェイスを実装するアセンブリと支払要求ハンドラー、およびインターフェイス依存アセンブリが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-202"><strong>IPaymentDevice Assemblies</strong> – This folder contains the assembly that implements the IPaymentDevice interface and payment request handlers, and the interface's dependent assemblies.</span></span> <span data-ttu-id="17ddd-203">これらのアセンブリは、支払のターミナル デバイスと通信するために、Retail ハードウェア ステーションおよび Retail Modern Point of Sale (モダン POS) で使用されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-203">These assemblies are used in Retail Hardware station and Retail Modern Point of Sale (Modern POS) to communicate with payment terminal devices.</span></span>
+<p><span data-ttu-id="17ddd-204">さらに支払コネクタに関連するすべての拡張子は、配置パッケージを作成する前に、フォルダーに配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-204">Additionally, all extensions that are related to payment connectors should be put in this folder before you create the deployment packages.</span></span></p></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-205">支払利息</span><span class="sxs-lookup"><span data-stu-id="17ddd-205">Payments</span></span></td>
+<td><span data-ttu-id="17ddd-206">Visual Studio ソリューション ファイル (PaymentSDK.sln) および関連する C# プロジェクト (PaymentSDK コネクタ、サンプル、機能テスト) が含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-206">Contains a Visual Studio solution file (PaymentSDK.sln) and related C# projects (PaymentSDK connectors, samples and functional test).</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-207">POS</span><span class="sxs-lookup"><span data-stu-id="17ddd-207">POS</span></span></td>
+<td><span data-ttu-id="17ddd-208">POS 用のファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-208">Contains files for POS:</span></span>
+<ul>
+<li><span data-ttu-id="17ddd-209"><strong>CloudPos.sln</strong></span><span class="sxs-lookup"><span data-stu-id="17ddd-209"><strong>CloudPos.sln</strong></span></span></li>
+<li><span data-ttu-id="17ddd-210"><strong>ModernPos.sln</strong></span><span class="sxs-lookup"><span data-stu-id="17ddd-210"><strong>ModernPos.sln</strong></span></span></li>
+<li><span data-ttu-id="17ddd-211"><strong>フォルダ コア</strong> – 低レベルで共有されるPOS コード</span><span class="sxs-lookup"><span data-stu-id="17ddd-211"><strong>Folder Core</strong> – Low-level shared POS code</span></span></li>
+<li><span data-ttu-id="17ddd-212"><strong>フォルダ ビューモデル</strong> – 共有される POS ビュー モデル</span><span class="sxs-lookup"><span data-stu-id="17ddd-212"><strong>Folder ViewModels</strong> – Shared POS view models</span></span></li>
+<li><span data-ttu-id="17ddd-213"><strong>フォルダ シェアアプリ</strong> – 共有される POS ビュー</span><span class="sxs-lookup"><span data-stu-id="17ddd-213"><strong>Folder SharedApp</strong> – Shared POS views</span></span></li>
+<li><span data-ttu-id="17ddd-214"><strong>フォルダ アプリ</strong> – Modern POS– 特定のビューおよびその他の品目</span><span class="sxs-lookup"><span data-stu-id="17ddd-214"><strong>Folder App</strong> – Modern POS–specific views and other items</span></span></li>
+<li><span data-ttu-id="17ddd-215"><strong>フォルダ ウェブ</strong> – クラウド POS– 特定のビューおよびその他の品目</span><span class="sxs-lookup"><span data-stu-id="17ddd-215"><strong>Folder Web</strong> – Cloud POS–specific views and other items</span></span></li>
+</ul></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-216">プロキシ</span><span class="sxs-lookup"><span data-stu-id="17ddd-216">Proxies</span></span></td>
+<td><span data-ttu-id="17ddd-217">他のユーザーが参照する 2 つの Visual Studio プロジェクトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-217">Contains two Visual Studio projects that are referenced by others.</span></span> <span data-ttu-id="17ddd-218">これらのプロジェクトには、Retail Server のプロキシ クライアントとして機能するインターフェイスと生成されたコードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-218">These projects contain interfaces and generated code that serves as a proxy client of Retail Server.</span></span> <span data-ttu-id="17ddd-219">Proxies.Retail.TypeScript は TypeScript プロキシで、RetailProxy は C# プロキシです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-219">Proxies.Retail.TypeScript is the TypeScript proxy, and RetailProxy is the C# proxy.</span></span> <span data-ttu-id="17ddd-220">Modern POS/Cloud POS と ECommerce SDK で使用されています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-220">They are used by Modern POS/Cloud POS and the ECommerce SDK.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-221">参照</span><span class="sxs-lookup"><span data-stu-id="17ddd-221">References</span></span></td>
+<td><span data-ttu-id="17ddd-222">すべてのバイナリが存在する単一の場所。</span><span class="sxs-lookup"><span data-stu-id="17ddd-222">The single place where all binaries live.</span></span> <span data-ttu-id="17ddd-223">この場所は、プロジェクトのバイナリ参照を解決するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-223">The location is used to resolve any project's binary references.</span></span> <span data-ttu-id="17ddd-224">ファイルのリストには、外部の非 Retail バイナリと Microsoft Retail バイナリが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-224">The list of files includes external non-Retail binaries and also Microsoft Retail binaries.</span></span> <span data-ttu-id="17ddd-225">また、このディレクトリは、Retail SDK からビルドされているバイナリのグローバルな格納場所として使用されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-225">Additionally, this directory serves as the global drop location for any binaries that are built from the Retail SDK.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-226">SampleExtensions</span><span class="sxs-lookup"><span data-stu-id="17ddd-226">SampleExtensions</span></span></td>
+<td><span data-ttu-id="17ddd-227">サンプル拡張子を含みます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-227">Contains sample extensions.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-228">dirs.proj</span><span class="sxs-lookup"><span data-stu-id="17ddd-228">dirs.proj</span></span></td>
+<td><span data-ttu-id="17ddd-229">ビルド順序を指示するトップレベルの MSBuild ファイル。</span><span class="sxs-lookup"><span data-stu-id="17ddd-229">The top-level MSBuild file that directs the build order.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="17ddd-230">Microsoft-version.txt</span><span class="sxs-lookup"><span data-stu-id="17ddd-230">Microsoft-version.txt</span></span></td>
+<td><span data-ttu-id="17ddd-231">Retail SDK の Microsoft のバージョンを含むファイル。</span><span class="sxs-lookup"><span data-stu-id="17ddd-231">A file that includes the Microsoft version of the Retail SDK.</span></span> <span data-ttu-id="17ddd-232">このファイルを編集しないでください。</span><span class="sxs-lookup"><span data-stu-id="17ddd-232">Don't edit this file.</span></span></td>
+</tr>
+</tbody>
+</table>
+
+<span data-ttu-id="17ddd-233">SDK の C\# ソース コードは、Contoso 名前空間を使用します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-233">The C\# source code in the SDK uses the Contoso namespace.</span></span> <span data-ttu-id="17ddd-234">したがって、Microsoft が Microsoft.Dynamics を使用するため、Microsoft の型と独自の型を区別する方が簡単です。</span><span class="sxs-lookup"><span data-stu-id="17ddd-234">Therefore, it's easier to distinguish Microsoft types and your own types, because Microsoft uses Microsoft.Dynamics.</span></span> <span data-ttu-id="17ddd-235">Microsoft バイナリからタイプを参照している場合は、Microsoft.Dynamics を参照します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-235">If you're referencing a type from the Microsoft binary, reference it by using Microsoft.Dynamics.</span></span> <span data-ttu-id="17ddd-236">そのようにして、Retail SDK からではなく、参照先のバイナリからであることがわかります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-236">That way, you'll know that it's not from the Retail SDK but from a referenced binary.</span></span> 
+
+<span data-ttu-id="17ddd-237">[![RetailSDK02](./media/retailsdk02.png)](./media/retailsdk02.png)</span><span class="sxs-lookup"><span data-stu-id="17ddd-237">[![RetailSDK02](./media/retailsdk02.png)](./media/retailsdk02.png)</span></span>
+
+### <a name="dependencies-build-order-and-full-build"></a><span data-ttu-id="17ddd-238">相互関係、ビルド順序、およびフル ビルド</span><span class="sxs-lookup"><span data-stu-id="17ddd-238">Dependencies, build order, and full build</span></span>
+
+<span data-ttu-id="17ddd-239">次の図は、Retail SDK 内の高レベルの論理的な依存関係ツリーを示しています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-239">The following illustration shows a high-level logical dependency tree within the Retail SDK.</span></span> <span data-ttu-id="17ddd-240">すべての Microsoft ファイルまたはアセットへの参照は示されません。</span><span class="sxs-lookup"><span data-stu-id="17ddd-240">It doesn't show the references to all Microsoft files or assets.</span></span> <span data-ttu-id="17ddd-241">これらを確認するには、Visual Studio プロジェクトとソリューション ファイルを詳しく見てください。</span><span class="sxs-lookup"><span data-stu-id="17ddd-241">To see these, look at the Visual Studio project and solution files in more detail.</span></span> 
+
+<span data-ttu-id="17ddd-242">[![RetailSDK03](./media/retailsdk03.png)](./media/retailsdk03.png)</span><span class="sxs-lookup"><span data-stu-id="17ddd-242">[![RetailSDK03](./media/retailsdk03.png)](./media/retailsdk03.png)</span></span> 
+
+<span data-ttu-id="17ddd-243">次の重要な点を考慮してください。</span><span class="sxs-lookup"><span data-stu-id="17ddd-243">Consider the following important points:</span></span>
+
+- <span data-ttu-id="17ddd-244">RetailServer API は、自動的に生成されたクライアント プロキシ コードを使用していくつかのプロジェクトによって消費されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-244">The RetailServer API is consumed by a few projects by means of automatically generated client proxy code.</span></span> <span data-ttu-id="17ddd-245">この動作により、より迅速な開発が可能になり、エラーやバグの機会が減ります。 </span><span class="sxs-lookup"><span data-stu-id="17ddd-245">This behavior allows for more rapid development, and reduces opportunities for errors and bugs.</span></span> <span data-ttu-id="17ddd-246">既定では、Retail SDK は公式の Microsoft DLL を使用してクライアント コードを生成します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-246">By default, the Retail SDK uses the official Microsoft DLL to generate the client code.</span></span> <span data-ttu-id="17ddd-247">カスタマイザーは独自の DLL (Customization.settings 内) に切り替えることができ、カスタマイズされた RetailServer API 用のプロキシ コードを自動的に生成することができます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-247">Customizers can switch to their own DLL (in Customization.settings) and therefore automatically generate the proxy code for their customized RetailServer API.</span></span> <span data-ttu-id="17ddd-248">DLL を切り替えた後、開発者は、RetailProxy プロジェクト内のいくつかの実装を変更する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-248">After switching the DLL, a developer might have to change some implementations inside the RetailProxy project.</span></span> <span data-ttu-id="17ddd-249">その理由は、オフライン モードの Modern POS は Commerce Runtime と直接通信する必要があり、そのコードを実装する必要があるためです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-249">The reason is that Modern POS in offline mode must communicate directly with the commerce runtime, and that code must be implemented.</span></span> <span data-ttu-id="17ddd-250">ただし、推測は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="17ddd-250">However, no guesswork is required.</span></span> <span data-ttu-id="17ddd-251">C\# コンパイラはこれを強制します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-251">The C\# compiler will force it.</span></span>
+- <span data-ttu-id="17ddd-252">パッケージ プロジェクトは、LCS で想定されている方法で配置パッケージを生成します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-252">The packaging projects generate the deployment packages in the way that LCS expects them.</span></span> <span data-ttu-id="17ddd-253">既定では、これらのプロジェクトは Microsoft の資産 (カスタマイズされていない) とプロキシ DLL のみを出荷します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-253">By default, these projects will ship only the Microsoft assets (non-customized) and the proxy DLLs.</span></span> <span data-ttu-id="17ddd-254">含まれるべきものは、Customization.settings で明示的に記名される必要があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-254">Anything else that should be included must be explicitly named in Customization.settings.</span></span> <span data-ttu-id="17ddd-255">この動作は仕様です。</span><span class="sxs-lookup"><span data-stu-id="17ddd-255">This behavior is by design.</span></span> <span data-ttu-id="17ddd-256">これは配置されたカスタム コードを削減して、バイナリ パッチを許可します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-256">It reduces the deployed custom code and allows for binary patches.</span></span> <span data-ttu-id="17ddd-257">たとえば、カスタマイズは、新しい CommerceRuntime サービスおよび新しい RetailServer コントローラーを追加します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-257">For example, a customization adds a new CommerceRuntime service and a new RetailServer controller.</span></span> <span data-ttu-id="17ddd-258">この場合、2 つの新しい DLL はパッケージの内容に登録され、関連するすべての場所に自動的に含まれます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-258">In this case, two new DLLs are registered for inclusion in the packages and are automatically included in all relevant places.</span></span> <span data-ttu-id="17ddd-259">パッケージには、SDK のすべての再コンパイルされたバイナリは **ありません**。</span><span class="sxs-lookup"><span data-stu-id="17ddd-259">The packages will **not** have all recompiled binaries from the SDK.</span></span>
+- <span data-ttu-id="17ddd-260">すべてのプロジェクトを含む単一の Visual Studio ソリューションはありません。</span><span class="sxs-lookup"><span data-stu-id="17ddd-260">There is no single Visual Studio solution that includes all projects.</span></span> <span data-ttu-id="17ddd-261">さまざまな Visual Studio プロジェクト間にいくつかの結合があるため、複数のプロジェクトまたはソリューションを並べて開くことができ、変更後に適切なプロジェクトをコンパイルできます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-261">Because there are few couplings between the various Visual Studio projects, you can open multiple projects or solutions side by side, and can compile the appropriate project after a change.</span></span>
+- <span data-ttu-id="17ddd-262">すべてのコンポーネントをカスタマイズしなくても、最終的な配置パッケージを入手する最も簡単な方法は、Retail SDK 全体を構築することです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-262">Even if you didn't customize every component, the easiest way to get the final deployment packages is by building the whole Retail SDK.</span></span> <span data-ttu-id="17ddd-263">これを行うには、**VS2015 の MSBuild コマンド プロンプト** ウィンドウを開き、**msbuild** (または非デバッグ バージョンでは、**msbuild /p:Configuration=Release**) を入力します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-263">To do this, open an **MSBuild Command Prompt for VS2015** window, and enter **msbuild** (or **msbuild /p:Configuration=Release** for a non-debug version).</span></span> 
+
+<span data-ttu-id="17ddd-264">[![RetailSDK04](./media/retailsdk04.png)](./media/retailsdk04.png)</span><span class="sxs-lookup"><span data-stu-id="17ddd-264">[![RetailSDK04](./media/retailsdk04.png)](./media/retailsdk04.png)</span></span>
+
+<span data-ttu-id="17ddd-265">このコマンドはすべてのプロジェクトをビルドします。</span><span class="sxs-lookup"><span data-stu-id="17ddd-265">This command will build all projects.</span></span> <span data-ttu-id="17ddd-266">この方法は、実装やコードのバグがないことを確認する優れた方法も提供します。 </span><span class="sxs-lookup"><span data-stu-id="17ddd-266">This approach also provides a great way to verify that there are no implementation or code bugs.</span></span> <span data-ttu-id="17ddd-267">バグがある場合は、ビルドが失敗し、コマンド プロンプト ウィンドウに失敗した内容が表示されます (この出力は Visual Studio の表示と似ています)。</span><span class="sxs-lookup"><span data-stu-id="17ddd-267">If there are any bugs, the build will fail, and the Command Prompt window will show what failed (this output resembles what Visual Studio would show).</span></span> 
+
+<span data-ttu-id="17ddd-268">[![RetailSDK05](./media/retailsdk05.png)](./media/retailsdk05.png)</span><span class="sxs-lookup"><span data-stu-id="17ddd-268">[![RetailSDK05](./media/retailsdk05.png)](./media/retailsdk05.png)</span></span>
+
+<span data-ttu-id="17ddd-269">MSBuild の詳細なヘルプについては、 [https://msdn.microsoft.com/library/0k6kkbsd.aspx](https://msdn.microsoft.com/library/0k6kkbsd.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="17ddd-269">For detailed help for MSBuild, see [https://msdn.microsoft.com/library/0k6kkbsd.aspx](https://msdn.microsoft.com/library/0k6kkbsd.aspx).</span></span> 
+
+<span data-ttu-id="17ddd-270">ビルドによって作成されるバイナリは、SDK リファレンス フォルダーに自動的にコピーされます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-270">The binaries that the build creates are automatically copied to the SDK's References folder.</span></span> <span data-ttu-id="17ddd-271">References フォルダーには、その他のすべてのバイナリも含まれます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-271">The References folder also includes all the other binaries.</span></span> <span data-ttu-id="17ddd-272">DLL には、すべて Customization.settings で定義できる名前 (この場合は「Contoso」) が接頭語にあるため上書きされないことに注意します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-272">Notice that no DLLs are overwritten, because they are all prefixed with a name (in this case, "Contoso") that you can define in Customization.settings.</span></span> 
+
+<span data-ttu-id="17ddd-273">[![RetailSDK06](./media/retailsdk06.png)](./media/retailsdk06.png)</span><span class="sxs-lookup"><span data-stu-id="17ddd-273">[![RetailSDK06](./media/retailsdk06.png)](./media/retailsdk06.png)</span></span>
+
+### <a name="minimal-required-configuration"></a><span data-ttu-id="17ddd-274">最小限必要なコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="17ddd-274">Minimal required configuration</span></span>
+
+<span data-ttu-id="17ddd-275">Retail SDK をすばやくビルドしたり、デモ マシンでデバッガーの POS を実行したいのですか。</span><span class="sxs-lookup"><span data-stu-id="17ddd-275">Do you just want to quickly build the Retail SDK, or to run POS in the debugger on a demo machine?</span></span> <span data-ttu-id="17ddd-276">Modern POS のみで、正しく構築するためのアプリ パッケージ署名証明書を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-276">For Modern POS only, you must create an app package signing certificate in order to build correctly.</span></span> <span data-ttu-id="17ddd-277">また、クラウド POS を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-277">Alternatively, you can use Cloud POS.</span></span> <span data-ttu-id="17ddd-278">[https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) で PFX ファイルを作成する指示に従ってください。</span><span class="sxs-lookup"><span data-stu-id="17ddd-278">Follow the instructions at [https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) to create a PFX file.</span></span> <span data-ttu-id="17ddd-279">PFX ファイルを BuildTools フォルダーにコピーし、 BuildTools\\Customization.settings ファイルを正しい名前 (ModernPOSPackageCertificateKeyFile) で更新します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-279">Then copy the PFX file to the BuildTools folder, and update the BuildTools\\Customization.settings file with the correct name (ModernPOSPackageCertificateKeyFile).</span></span> <span data-ttu-id="17ddd-280">この時点で個々のソリューション、プロジェクト、または Retail SDK 全体を (MSBuild を使用して) ビルドするために必要なものはすべてあります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-280">At this point you have everything that you require in order to build individual solutions, projects, or the whole Retail SDK (by using MSBuild).</span></span>
+
+### <a name="normal-configurationcode-signing"></a><span data-ttu-id="17ddd-281">通常の構成/コード署名</span><span class="sxs-lookup"><span data-stu-id="17ddd-281">Normal configuration/code signing</span></span>
+
+<span data-ttu-id="17ddd-282">BuildTools\\Customization.settings には SDK のほとんどのコンフィギュレーション値が保持されています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-282">BuildTools\\Customization.settings holds most of the configuration values for the SDK.</span></span> <span data-ttu-id="17ddd-283">次の図の強調表示された項目はグローバル値です。</span><span class="sxs-lookup"><span data-stu-id="17ddd-283">The highlighted items in the following illustration are the global values.</span></span> <span data-ttu-id="17ddd-284">これらの値は、ビルド バイナリ、コンポーネント、パッケージの名前付け、バージョン管理、コード署名の方法を制御します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-284">These values control how built binaries, components, and packages are named, versioned, and code-signed.</span></span> 
+
+<span data-ttu-id="17ddd-285">[![RetailSDK07](./media/retailsdk07.png)](./media/retailsdk07.png)</span><span class="sxs-lookup"><span data-stu-id="17ddd-285">[![RetailSDK07](./media/retailsdk07.png)](./media/retailsdk07.png)</span></span>
+
+<span data-ttu-id="17ddd-286">必須ではありませんが、厳密名でアセンブリに署名することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="17ddd-286">It's good practice to sign your assemblies with a strong name, even though this isn't required.</span></span> <span data-ttu-id="17ddd-287">独自のキー ファイルをまだ作成していない場合に作成する方法については、[[https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx)] を参照してください。</span><span class="sxs-lookup"><span data-stu-id="17ddd-287">To learn how to create your own key file if you don't already have one, see [https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx).</span></span> <span data-ttu-id="17ddd-288">正しくビルドするには、アプリ パッケージの署名証明書を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-288">To build correctly, you must create an app package signing certificate.</span></span> <span data-ttu-id="17ddd-289">[https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) で PFX ファイルを作成するこれらの指示に従ってください。</span><span class="sxs-lookup"><span data-stu-id="17ddd-289">Follow these instructions at [https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) to create a PFX file.</span></span> <span data-ttu-id="17ddd-290">厳密な名前のキー ファイルとアプリ パッケージの署名証明書の両方を BuildTools フォルダー内に保存することができます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-290">Both the strong name key file and the app package signing certificate can be stored inside the BuildTools folder.</span></span> <span data-ttu-id="17ddd-291">**RetailServerLibraryPathForProxyGeneration** プロパティは、プロキシ生成で異なる RetailServer DLL を設定するために使用することができます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-291">The **RetailServerLibraryPathForProxyGeneration** property can be used to set a different RetailServer DLL for proxy generation.</span></span> <span data-ttu-id="17ddd-292">Customization.settings は、バイナリー、コンフィギュレーション ファイル、SQL 更新スクリプトなどの新しいカスタマイズ資産を定義する場所でもあります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-292">Customization.settings is also the place to define your new customization assets, such as binaries, configuration files, and SQL update scripts.</span></span> <span data-ttu-id="17ddd-293">拡張子、バイナリ、および資産をここで指定した後、ファイルは作成された配置可能パッケージに追加されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-293">After you specify your extensions, binaries, and assets here, the files will be added in the deployable package that is created.</span></span> 
+
+<span data-ttu-id="17ddd-294">[![RetailSDK08](./media/retailsdk08.png)](./media/retailsdk08.png)</span><span class="sxs-lookup"><span data-stu-id="17ddd-294">[![RetailSDK08](./media/retailsdk08.png)](./media/retailsdk08.png)</span></span>
+
+### <a name="customizing-the-build"></a><span data-ttu-id="17ddd-295">ビルドのカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="17ddd-295">Customizing the build</span></span>
+
+#### <a name="adding-new-projects"></a><span data-ttu-id="17ddd-296">新しいプロジェクトの追加</span><span class="sxs-lookup"><span data-stu-id="17ddd-296">Adding new projects</span></span>
+
+<span data-ttu-id="17ddd-297">簡単に新しいプロジェクトを Retail SDK のビルド システムに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-297">It's easy to add new projects to the Retail SDK's build system.</span></span> <span data-ttu-id="17ddd-298">多くの既存のプロジェクトのいずれかを複製するか、新しいプロジェクトを開始することができます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-298">You can either clone one of the many existing projects or start a new project.</span></span> <span data-ttu-id="17ddd-299">次の図に示すように、テキスト エディタでいくつかの調整を加える必要があるだけです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-299">You just have to make some adjustments in a text editor, as shown in the following illustration.</span></span> <span data-ttu-id="17ddd-300">**Import** 要素の相対パスを調整する必要があり、**AssemblyName** 要素は定義済みの **AssemblyNamePrefix** プロパティを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-300">The relative path of the **Import** elements should be adjusted, and the **AssemblyName** element should use the predefined **AssemblyNamePrefix** property.</span></span> <span data-ttu-id="17ddd-301">これらの調整は、バージョン管理、コード署名、統一されたアセンブリ命名、[参照] フォルダーへの自動ドロップ、その他のタスクを無料で行うために必要です。</span><span class="sxs-lookup"><span data-stu-id="17ddd-301">These adjustments are required in order to get versioning, code signing, uniform assembly naming, automatic dropping to the References folder, and other tasks for free.</span></span> 
+
+<span data-ttu-id="17ddd-302">[![RetailSDK09](./media/retailsdk09.png)](./media/retailsdk09.png)</span><span class="sxs-lookup"><span data-stu-id="17ddd-302">[![RetailSDK09](./media/retailsdk09.png)](./media/retailsdk09.png)</span></span>
+
+#### <a name="changing-the-build-order-or-adding-to-the-build"></a><span data-ttu-id="17ddd-303">ビルド順序の変更またはビルドへの追加</span><span class="sxs-lookup"><span data-stu-id="17ddd-303">Changing the build order or adding to the build</span></span>
+
+<span data-ttu-id="17ddd-304">Retail SDK のディレクトリ ツリー全体は、MSBuild トラバーサル ファイル (dirs.proj ファイル) サポートを受けて構築されています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-304">The whole directory tree of the Retail SDK is built with the help of MSBuild traversal files (dirs.proj files).</span></span> <span data-ttu-id="17ddd-305">次の図は、Retail SDK の主なトラバーサルファイルを示しています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-305">The following illustration shows the main traversal file of the Retail SDK.</span></span> <span data-ttu-id="17ddd-306">類似したファイルは、サブディレクトリにも存在する場合があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-306">Similar files might also exist in subdirectories.</span></span> <span data-ttu-id="17ddd-307">Visual Studio ソリューション ファイル (.sln ファイル) がトラバーサル ファイルに非常に類似していることに注意します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-307">Notice that Visual Studio solution files (.sln files) are very similar to traversal files.</span></span> <span data-ttu-id="17ddd-308">どちらもMSBuild エンジンに対して、他のビルド スクリプトを処理するよう "命令"します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-308">Both "direct" the MSBuild engine to process other build scripts.</span></span> 
+
+<span data-ttu-id="17ddd-309">[![RetailSDK10](./media/retailsdk10.png)](./media/retailsdk10.png)</span><span class="sxs-lookup"><span data-stu-id="17ddd-309">[![RetailSDK10](./media/retailsdk10.png)](./media/retailsdk10.png)</span></span> 
+
+<span data-ttu-id="17ddd-310">新しいコードを追加した後、そのほとんどは、新しいフォルダーに配置する必要があります (詳細は、「コード実装のベスト プラクティス」を参照してください)。また、1 つまたは複数の dirs.proj ファイルに追加することによって、トラバーサル構造に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-310">After new code is added, most of it should be located in a new folder (for details, see "Best practices of code implementation"), and you must add it to the traversal structure by adding to one or multiple dirs.proj files.</span></span> <span data-ttu-id="17ddd-311">拡張フォルダーは、前述の図の 10 行目で強調表示されています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-311">The Extensions folder appears highlighted on line 10 in the previous illustration.</span></span> <span data-ttu-id="17ddd-312">新しい dirs.proj ファイルを開始する最も簡単な方法は、既存のファイルをコピーし、**Import** 要素のパスを修正して、**ItemGroup** 要素の **ProjectFiles** 要素を更新することです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-312">The quickest way to get started with a new dirs.proj file is to copy an existing file, correct the paths in the **Import** elements, and update the **ProjectFiles** elements in the **ItemGroup** element.</span></span>
+
+#### <a name="build-script-customization"></a><span data-ttu-id="17ddd-313">ビルド スクリプトのカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="17ddd-313">Build script customization</span></span>
+
+<span data-ttu-id="17ddd-314">新しいビルド ステップを実装する必要があるとき、既存のスクリプトが Retail SDK 更新プログラムで後で更新される可能性があることに留意してください後で、で更新します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-314">When you must implement new build steps, keep in mind that the existing scripts might be updated by a Retail SDK update later.</span></span> <span data-ttu-id="17ddd-315">ベスト プラクティスはファイルの編集を最小限にするか、新しいファイルを代わりに追加します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-315">Best practice is to minimize the editing of any file, or add new files instead.</span></span> <span data-ttu-id="17ddd-316">新しいグローバル MSBuild プロパティが必要な場合、BuildTools\\Microsoft.Dynamics.RetailSDK.Build.props はそれらを追加する上でお勧めです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-316">If you require new global MSBuild properties, BuildTools\\Microsoft.Dynamics.RetailSDK.Build.props is a good place to add them.</span></span> <span data-ttu-id="17ddd-317">同様に、BuildTools\\Microsoft.Dynamics.RetailSDK.Build.targets は、新しいビルド処理のターゲットを追加するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-317">Likewise, BuildTools\\Microsoft.Dynamics.RetailSDK.Build.targets can be used to add new build processing targets.</span></span> <span data-ttu-id="17ddd-318">1 つのプロジェクトで特別な処理が必要とならない場合は、明示的に変更を加えることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="17ddd-318">If only one project requires special handling, it is better to explicitly make the change there.</span></span> <span data-ttu-id="17ddd-319">新しいローカル MSBuild プロパティが必要な場合は、同じディレクトリに local.props という名前の新しいファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-319">If you require new local MSBuild properties, add a new file that is named local.props in the same directory.</span></span> <span data-ttu-id="17ddd-320">または、ローカル ビルド処理ターゲットが必要な場合は、local.targets ファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-320">Alternatively, add a local.targets file if you require local build processing targets.</span></span>
+
+### <a name="developer-productivity"></a><span data-ttu-id="17ddd-321">開発者の生産性</span><span class="sxs-lookup"><span data-stu-id="17ddd-321">Developer productivity</span></span>
+
+<span data-ttu-id="17ddd-322">この記事の前半のアーキテクチャ図に示すように、いくつかのものは RetailServer インターフェイスによって異なります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-322">As shown in the architecture diagram earlier in this article, several things depend on the RetailServer interface.</span></span> <span data-ttu-id="17ddd-323">他のユーザーがこのインターフェイスを変更することがあります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-323">It is likely that someone will change this interface.</span></span> <span data-ttu-id="17ddd-324">開発者のトポロジ マシンでは、誰かがすぐに変更を試してみることができます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-324">On a developer topology machine, someone might want to immediately try out a change.</span></span> <span data-ttu-id="17ddd-325">この場合、任意の CommerceRuntime および RetailServer 拡張 DLL をローカルにインストールされた RetailServer Web アプリケーションの bin フォルダーにコピーする必要があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-325">In this case, any CommerceRuntime and RetailServer extension DLLs must be copied into the bin folder of the locally installed RetailServer web application.</span></span> <span data-ttu-id="17ddd-326">ユーザーは、Customization.setting ファイルをコンフィギュレーションして、これらのファイルの新しいバージョンがビルドされるたびに、DLL がローカルの RetailServer Web アプリケーションの bin フォルダーに自動的にコピーされるようにできます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-326">A user can configure the Customization.setting file so that the DLLs are automatically copied into the bin folder of the local RetailServer web application whenever new versions of these files are built.</span></span> 
+
+<span data-ttu-id="17ddd-327">[![RetailSDK11](./media/retailsdk11.png)](./media/retailsdk11.png)</span><span class="sxs-lookup"><span data-stu-id="17ddd-327">[![RetailSDK11](./media/retailsdk11.png)](./media/retailsdk11.png)</span></span>
+
+### <a name="application-lifecycle-management"></a><span data-ttu-id="17ddd-328">アプリケーション ライフサイクル管理</span><span class="sxs-lookup"><span data-stu-id="17ddd-328">Application lifecycle management</span></span>
+
+<span data-ttu-id="17ddd-329">優れた ALM ソリューションは、バージョン管理、ビルド、自動ビルド、プランニング ツール、追跡ツール、ダッシュ ボード、カスタマイズなどを提供します。</span><span class="sxs-lookup"><span data-stu-id="17ddd-329">A good ALM solution provides version control, builds, automated builds, planning tools, tracking tools, dashboards, customization, and more.</span></span> <span data-ttu-id="17ddd-330">Retail SDK は、これらのタスクをサポートするように編成されています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-330">The Retail SDK is organized in such a way that it supports these tasks.</span></span> 
+
+<span data-ttu-id="17ddd-331">[Azure DevOps](/Azure DevOps/) は、優れたツールでありお勧めします。</span><span class="sxs-lookup"><span data-stu-id="17ddd-331">[Azure DevOps](/Azure DevOps/) is a great tool and is recommended.</span></span>
+
+### <a name="branching-and-versioning"></a><span data-ttu-id="17ddd-332">分岐およびバージョン管理</span><span class="sxs-lookup"><span data-stu-id="17ddd-332">Branching and versioning</span></span>
+
+<span data-ttu-id="17ddd-333">チームで効率的に仕事をしたり、過去に行ったいくつかの変更を確認できるようにするには、適正な分岐戦略とバージョン管理の規範が必要です。</span><span class="sxs-lookup"><span data-stu-id="17ddd-333">To work efficiently in a team, or even just to be able to go back and look at some changes that were done in the past, you must have good branching strategy and versioning discipline.</span></span> <span data-ttu-id="17ddd-334">次の図は、ほとんどのチームでうまくいく単純な分岐戦略を示しています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-334">The following illustration shows a simple branching strategy that might work well for most teams.</span></span> <span data-ttu-id="17ddd-335">バージョン番号は、架空のものです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-335">The version numbers are fictitious.</span></span>
+
+<span data-ttu-id="17ddd-336">[![RetailSDK12](./media/retailsdk12.png)](./media/retailsdk12.png)</span><span class="sxs-lookup"><span data-stu-id="17ddd-336">[![RetailSDK12](./media/retailsdk12.png)](./media/retailsdk12.png)</span></span>
+
+#### <a name="retail-sdk-mirror-branch"></a><span data-ttu-id="17ddd-337">Retail SDK のミラー分岐</span><span class="sxs-lookup"><span data-stu-id="17ddd-337">Retail SDK mirror branch</span></span>
+
+<span data-ttu-id="17ddd-338">強調すべき非常に重要なポイントは、カスタマイズされていない Retail SDK をソース コントロールに保存する必要があるということです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-338">A very important point to emphasize is that the non-customized Retail SDK should be stored in your source control.</span></span> <span data-ttu-id="17ddd-339">すべてのバージョンを保存する必要はありませんが、チームがスナップするバージョンを追加する必要があります (これらのバージョンは、累積的な更新または修正プログラムである場合があります)。</span><span class="sxs-lookup"><span data-stu-id="17ddd-339">You don't have to store every version, but the versions that your team wants to snap to should be added (these versions might be cumulative updates or hotfixes).</span></span> <span data-ttu-id="17ddd-340">すべての変更 (追加、変更、および削除) の単純な結合のみ行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-340">Only a simple merge of all changes (additions, changes, and deletions) should be done.</span></span> <span data-ttu-id="17ddd-341">このブランチで発生する他の開発作業はありません。</span><span class="sxs-lookup"><span data-stu-id="17ddd-341">No other development work should occur in this branch.</span></span> <span data-ttu-id="17ddd-342">Retail SDK には、独自のバージョンがあります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-342">The Retail SDK has its own version.</span></span> <span data-ttu-id="17ddd-343">すべての Retail バイナリおよびパッケージには同じバージョンが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17ddd-343">All Retail binaries and packages that are included have the same version.</span></span> <span data-ttu-id="17ddd-344">バージョンは、Microsoft-version.txt という名前のファイルの Retail SDK のルートにもあります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-344">The version can also be found in the root of the Retail SDK in a file that is named Microsoft-version.txt.</span></span>
+
+#### <a name="customization-branch"></a><span data-ttu-id="17ddd-345">カスタマイズ分岐</span><span class="sxs-lookup"><span data-stu-id="17ddd-345">Customization branch</span></span>
+
+<span data-ttu-id="17ddd-346">配置を開発した後、新しい分岐を開始する必要があります (カスタマイズ分岐)。</span><span class="sxs-lookup"><span data-stu-id="17ddd-346">After development can start, a new branch should be started (customization branch).</span></span> <span data-ttu-id="17ddd-347">初期分岐アウトの先頭において、この分岐は Retail SDK ミラー分岐の正確なコピーになります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-347">At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch.</span></span> <span data-ttu-id="17ddd-348">これはチーム開発用の分岐です。</span><span class="sxs-lookup"><span data-stu-id="17ddd-348">This is the branch for a team's development.</span></span> <span data-ttu-id="17ddd-349">カスタマイズ ブランチのバージョンは、少なくともテストのためにビルドが作成されるたびに増分する必要があります。また、毎日増分することもできます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-349">The version of the customization branch must be incremented at least every time that a build is created for testing, or it can even be incremented daily.</span></span> <span data-ttu-id="17ddd-350">増分するファイル バージョンは、**CustomVersion** プロパティを使用して Customization.setting ファイルで定義されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-350">The file version to increment is defined in Customization.setting file by using the **CustomVersion** property.</span></span> <span data-ttu-id="17ddd-351">それを更新し、すべてのバイナリ パッケージを再構築すると、マニフェスト ファイルはそれに応じて更新されます。</span><span class="sxs-lookup"><span data-stu-id="17ddd-351">If you update it and rebuild, all binaries, packages, manifest files are updated accordingly.</span></span> <span data-ttu-id="17ddd-352">**CustomAssemblyVersion** プロパティは、更新プログラムに下位互換性がなく、主な新しいリリースに対して互換性がない場合のみ更新する必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="17ddd-352">Note that the **CustomAssemblyVersion** property should be updated only when the update isn't backward compatible and/or for major new releases.</span></span> <span data-ttu-id="17ddd-353">つまり、この更新プログラムはめったにありません。</span><span class="sxs-lookup"><span data-stu-id="17ddd-353">In other words, this update should very rarely.</span></span> <span data-ttu-id="17ddd-354">たとえば、Microsoftのアセンブリバージョンは、現行バージョンに至るまでの複数のCTPリリースで変わっていません。</span><span class="sxs-lookup"><span data-stu-id="17ddd-354">For example, Microsoft's assembly version stayed the same for the multiple CTP releases for the current version.</span></span> <span data-ttu-id="17ddd-355">同じ分岐には Microsoft の資産と独自の変更の両方が存在するため、分岐には基本的に 2 つのファイル バージョンがあります。</span><span class="sxs-lookup"><span data-stu-id="17ddd-355">Because there are both Microsoft assets and your own changes in the same branch, the branch essentially has two file versions.</span></span> <span data-ttu-id="17ddd-356">最初のバージョンは、現在の支店が基づいている Retail SDK の Microsoft バージョンで、2 番目のバージョンは、**CustomVersion** プロパティによって設定されたバージョンです。</span><span class="sxs-lookup"><span data-stu-id="17ddd-356">The first version is the Microsoft version of the Retail SDK that the current branch is based on, and the second version is the version that is set by the **CustomVersion** property.</span></span> <span data-ttu-id="17ddd-357">前述の図では、カスタマイズ分岐の現在のファイル バージョンは、1.0.2\* です (Microsoft バージョン 7.0.2200.3 に基づく)。</span><span class="sxs-lookup"><span data-stu-id="17ddd-357">In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3).</span></span> <span data-ttu-id="17ddd-358">展開された最初のリリースのファイル バージョンは 1.0.0.40 (7.0.2000.0 に基づく) でした。</span><span class="sxs-lookup"><span data-stu-id="17ddd-358">The file version of the first rolled-out release was 1.0.0.40 (based on 7.0.2000.0).</span></span> <span data-ttu-id="17ddd-359">テスト フェーズが完了し、最後のパッケージがそのバージョンで配置されるとき、バージョン番号を増分する (またはソース コントロールのラベルを作成する) ことが重要です。</span><span class="sxs-lookup"><span data-stu-id="17ddd-359">When a testing phase is completed, and the final packages are being deployed with that version, it's important that you increment the version (or create a source control label).</span></span>

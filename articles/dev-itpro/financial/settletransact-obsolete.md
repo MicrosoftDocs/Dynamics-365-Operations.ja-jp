@@ -1,219 +1,139 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="settletransact-obsolete.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>settletransact-obsolete.2ba197.1368d58d3d0dcaeefe4531ce40a49c499d5eeac9.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>1368d58d3d0dcaeefe4531ce40a49c499d5eeac9</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>c576b81dc3c93c09fb08fb0ba0c19f417360c5ab</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\financial\settletransact-obsolete.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Settle transactions by using CustTrans::settleTransaction</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">CustTrans::settleTransaction を使用したトランザクションの決済</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topics describes the new CustTrans::settleTransaction method and explains why CustTrans::settleTransact is now obsolete.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このトピックでは、新しいCustTrans::settleTransactionメソッドについて説明を行い、CustTrans::settleTransact には実装されていない新機能について説明します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Settle transactions by using CustTrans::settleTransaction</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">CustTrans::settleTransaction を使用したトランザクションの決済</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>CustTrans::settleTransact is obsolete</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">CustTrans::settleTransact が過去のものに</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The <bpt id="p1">**</bpt>settleTransact<ept id="p1">**</ept> method on the CustTrans table has been marked as obsolete.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">CustTransテーブルの <bpt id="p1">**</bpt>settleTransact<ept id="p1">**</ept> メソッドが刷新されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Why is it marked as obsolete?</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">なぜ刷新される必要があるのか。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>When many settlements are done at the same time for the same customer, database blocking occurs.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">同じ顧客に対して複数の決済が同時に行われると、データベースのブロックが発生します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Database blocking affects performance.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">データベースのブロックはパフォーマンスの低下につながります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>What does the method do?</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このメソッドによってできること</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>The <bpt id="p1">**</bpt>settleTransact<ept id="p1">**</ept> method settles a set of invoices and payments for a specific customer.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match"><bpt id="p1">**</bpt>settleTransact<ept id="p1">**</ept> メソッドでは、特定の顧客に対する一連の請求書と支払の決済を行います。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Settlement identifies this set of invoices by using the <bpt id="p1">**</bpt>SpecCompany<ept id="p1">**</ept>, <bpt id="p2">**</bpt>SpecTableId<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>SpecRecId<ept id="p3">**</ept> columns of the SpecTrans table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">決済処理では、SpecTrans テーブルの <bpt id="p1">**</bpt>SpecCompany<ept id="p1">**</ept>、 <bpt id="p2">**</bpt>SpecTableId<ept id="p2">**</ept>、 <bpt id="p3">**</bpt>SpecRecId<ept id="p3">**</ept> 列を使用して一連の請求書を識別します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Together, the columns define a settlement context.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">同時に、これらの列によって決済コンテキストが定義されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>The <bpt id="p1">**</bpt><ph id="ph1">\_</ph>custTable<ept id="p1">**</ept> parameter of the <bpt id="p2">**</bpt>settleTransact<ept id="p2">**</ept> method defines the settlement context as the CustTable <bpt id="p3">**</bpt>DataAreaId<ept id="p3">**</ept>, <bpt id="p4">**</bpt>TableId<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>RecId<ept id="p5">**</ept> values.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p2">**</bpt>settleTransact<ept id="p2">**</ept> メソッドの <bpt id="p1">**</bpt><ph id="ph1">\_</ph>custTable<ept id="p1">**</ept> パラメータが、決済コンテキストをCustTable <bpt id="p3">**</bpt>DataAreaId<ept id="p3">**</ept>, <bpt id="p4">**</bpt>TableId<ept id="p4">**</ept>, <bpt id="p5">**</bpt>RecId<ept id="p5">**</ept> の値として定義します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>The following example shows two contexts.</source><target logoport:matchpercent="85" state="translated" state-qualifier="fuzzy-match">次の例は、2つのコンテキストを示しています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>SpecCompany</source><target logoport:matchpercent="83" state="translated" state-qualifier="fuzzy-match">SpecCompany</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>SpecTableId</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">SpecTableId</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>SpecRecId</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">SpecRecId</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Transaction</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">取引</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>USMF</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">USMF</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>7589</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">7589</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>22565451428</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">22565451428</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>1</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>USMF</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">USMF</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>7589</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">7589</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>22565451428</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">22565451428</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>2</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Replacement method</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match">メソッドの更新</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>The <bpt id="p1">**</bpt>settleTransaction<ept id="p1">**</ept> method on the CustTrans table is the replacement method.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">CustTrans テーブル <bpt id="p1">**</bpt>settleTransaction<ept id="p1">**</ept> メソッドが メソッドの更新を行います。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>How blocking will be avoided</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">ブロックがどのように回避されるか</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Every customer settlement will get a unique settlement context.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">それぞれの顧客の決済に固有の決済コンテキストが付与されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Because each settlement that is done will have a unique context, no transaction will cause blocking.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">決済にはそれぞれ固有のコンテキストが割り当てられるため、どのトランザクションもブロックを引き起こすことがなくなります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>The following example shows two contexts.</source>
-        <target logoport:matchpercent="85" state="translated" state-qualifier="leveraged-inherited">次の例は、2つのコンテキストを示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Each context has a unique <bpt id="p1">**</bpt>SpecRecId<ept id="p1">**</ept> value.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">各コンテキストには一意の <bpt id="p1">**</bpt>SpecRecId<ept id="p1">**</ept> 値を持っています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>SpecCompany</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">SpecCompany</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>SpecTableId</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">SpecTableId</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>SpecRecId</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">SpecRecId</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Transaction</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">取引</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>USMF</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">USMF</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>7599</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">7599</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>68719604825</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">68719604825</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>1</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>USMF</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">USMF</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>7599</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">7599</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>68719604826</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">68719604826</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>2</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Replacement method parameters</source><target logoport:matchpercent="68" state="translated" state-qualifier="fuzzy-match">メソッドのパラメーターを更新する</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>The <bpt id="p1">**</bpt>SpecTransExecutionContext<ept id="p1">**</ept> class defines a unique settlement execution context.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>SpecTransExecutionContext<ept id="p1">**</ept> クラスは、一意となる決済の実行コンテキストを定義します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>It has two parts.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">これは2つの部分で構成されています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>The first part defines the customer or vendor for the settlement.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">一つ目の部分は、決済の顧客または仕入先を定義します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>The second part defines the source for the settlement.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">2つ目の部分では、決済のソースを定義します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The <bpt id="p1">**</bpt>newFromSource<ept id="p1">**</ept> method takes a customer or vendor and a source.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>newFromSource<ept id="p1">**</ept> メソッドには、顧客、仕入先、およびソースが必要となります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>The customer or vendor is always the customer, and the source is always the customer.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">顧客、仕入先、ソースは常に顧客となります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>The <bpt id="p1">**</bpt>parmSpecContext<ept id="p1">**</ept> method exposes the settlement context that is generated.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>parmSpecContext<ept id="p1">**</ept> メソッドは、生成された決済コンテキストを公開します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">**</bpt>CustTransSettleTransactionParamters<ept id="p1">**</ept> contains the other method parameters.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>CustTransSettleTransactionParamters<ept id="p1">**</ept> には、他のメソッドパラメータが含まれています。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>It has a constructor method that initializes the class with default values.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">これに含まれるコンストラクターメソッドは、既定値を使用してクラスの初期化を行います。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>An example is <bpt id="p1">**</bpt>LedgerVoucher<ept id="p1">**</ept>.</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">その一例として <bpt id="p1">**</bpt>LedgerVoucher<ept id="p1">**</ept> が挙げられます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>How to use the settleTransaction method</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">settleTransaction メソッドの使用方法</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Settlement is done in two parts.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">決済は2つの部分で行われます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>First, you mark the invoices and payments for settlement.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">はじめに、決済処理に向けて請求書と支払を選び出します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Then you do the settlement.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">次に、決済処理を行います。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Obsolete code example</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">古いコードの例</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>New code example</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match">新しいコードの例</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Testing</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">テスト</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>This functionality uses flights.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">この機能はフライトを使用します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>To test it, you must turn on the flight in a non-production environment.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">このテストを行うには、非稼働環境にてフライトを有効にする必要があります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>For information about how to turn on a flight in a non-production environment, see <bpt id="p1">[</bpt>Features flighted in data management and enabling flighted features<ept id="p1">](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features)</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">非稼動環境でフライトをオンにする方法については、 <bpt id="p1">[</bpt>データ管理でフライトされる機能とフライトされた機能の有効化<ept id="p1">](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features)</ept>.を参照してください。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>The name of the flight is <bpt id="p1">**</bpt>EnableCustTransSettleTransaction<ept id="p1">**</ept>.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">フライトの名称は <bpt id="p1">**</bpt>EnableCustTransSettleTransaction<ept id="p1">**</ept>です。</target>
-        </trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: CustTrans::settleTransaction を使用したトランザクションの決済
+description: このトピックでは、新しいCustTrans::settleTransactionメソッドについて説明を行い、CustTrans::settleTransact には実装されていない新機能について説明します。
+author: RobinARH
+manager: AnnBe
+ms.date: 06/01/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: rhaertle
+ms.search.scope: Operations
+ms.custom: 25631
+ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
+ms.search.region: Global
+ms.author: markskun
+ms.search.validFrom: 2019-06-01
+ms.dyn365.ops.version: AX 10.0.4
+ms.openlocfilehash: 1368d58d3d0dcaeefe4531ce40a49c499d5eeac9
+ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620474"
+---
+# <a name="settle-transactions-by-using-custtranssettletransaction"></a><span data-ttu-id="06846-103">CustTrans::settleTransaction を使用したトランザクションの決済</span><span class="sxs-lookup"><span data-stu-id="06846-103">Settle transactions by using CustTrans::settleTransaction</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
+
+## <a name="custtranssettletransact-is-obsolete"></a><span data-ttu-id="06846-104">CustTrans::settleTransact が過去のものに</span><span class="sxs-lookup"><span data-stu-id="06846-104">CustTrans::settleTransact is obsolete</span></span>
+
+<span data-ttu-id="06846-105">CustTransテーブルの **settleTransact** メソッドが刷新されます。</span><span class="sxs-lookup"><span data-stu-id="06846-105">The **settleTransact** method on the CustTrans table has been marked as obsolete.</span></span>
+
+```X++
+public static boolean settleTransact(
+CustTable _custTable,
+    LedgerVoucher _ledgerVoucher = null,
+    boolean _balancePostingProfile = true,
+    SettleDatePrinc _saveDatePrinciple = SettleDatePrinc::DateOfPayment,
+    TransDate _saveDate = dateNull()
+    ,DimSettlementType_RU _dimSettlementType = DimSettlementType_RU::None
+    ,CustTrans _parentCustTrans = null)
+```
+
+### <a name="why-is-it-marked-as-obsolete"></a><span data-ttu-id="06846-106">なぜ刷新される必要があるのか。</span><span class="sxs-lookup"><span data-stu-id="06846-106">Why is it marked as obsolete?</span></span>
+
+<span data-ttu-id="06846-107">同じ顧客に対して複数の決済が同時に行われると、データベースのブロックが発生します。</span><span class="sxs-lookup"><span data-stu-id="06846-107">When many settlements are done at the same time for the same customer, database blocking occurs.</span></span> <span data-ttu-id="06846-108">データベースのブロックはパフォーマンスの低下につながります。</span><span class="sxs-lookup"><span data-stu-id="06846-108">Database blocking affects performance.</span></span>
+
+### <a name="what-does-the-method-do"></a><span data-ttu-id="06846-109">このメソッドによってできること</span><span class="sxs-lookup"><span data-stu-id="06846-109">What does the method do?</span></span>
+
+<span data-ttu-id="06846-110">**settleTransact** メソッドでは、特定の顧客に対する一連の請求書と支払の決済を行います。</span><span class="sxs-lookup"><span data-stu-id="06846-110">The **settleTransact** method settles a set of invoices and payments for a specific customer.</span></span> <span data-ttu-id="06846-111">決済処理では、SpecTrans テーブルの **SpecCompany**、 **SpecTableId**、 **SpecRecId** 列を使用して一連の請求書を識別します。</span><span class="sxs-lookup"><span data-stu-id="06846-111">Settlement identifies this set of invoices by using the **SpecCompany**, **SpecTableId**, and **SpecRecId** columns of the SpecTrans table.</span></span> <span data-ttu-id="06846-112">同時に、これらの列によって決済コンテキストが定義されます。</span><span class="sxs-lookup"><span data-stu-id="06846-112">Together, the columns define a settlement context.</span></span>
+
+<span data-ttu-id="06846-113">**settleTransact** メソッドの **\_custTable** パラメータが、決済コンテキストをCustTable **DataAreaId**, **TableId**, **RecId** の値として定義します。</span><span class="sxs-lookup"><span data-stu-id="06846-113">The **\_custTable** parameter of the **settleTransact** method defines the settlement context as the CustTable **DataAreaId**, **TableId**, and **RecId** values.</span></span> <span data-ttu-id="06846-114">次の例は、2つのコンテキストを示しています。</span><span class="sxs-lookup"><span data-stu-id="06846-114">The following example shows two contexts.</span></span>
+
+| <span data-ttu-id="06846-115">SpecCompany</span><span class="sxs-lookup"><span data-stu-id="06846-115">SpecCompany</span></span> | <span data-ttu-id="06846-116">SpecTableId</span><span class="sxs-lookup"><span data-stu-id="06846-116">SpecTableId</span></span> | <span data-ttu-id="06846-117">SpecRecId</span><span class="sxs-lookup"><span data-stu-id="06846-117">SpecRecId</span></span> | <span data-ttu-id="06846-118">取引</span><span class="sxs-lookup"><span data-stu-id="06846-118">Transaction</span></span> |
+|---|---|---|---|
+| <span data-ttu-id="06846-119">USMF</span><span class="sxs-lookup"><span data-stu-id="06846-119">USMF</span></span> | <span data-ttu-id="06846-120">7589</span><span class="sxs-lookup"><span data-stu-id="06846-120">7589</span></span> | <span data-ttu-id="06846-121">22565451428</span><span class="sxs-lookup"><span data-stu-id="06846-121">22565451428</span></span> | <span data-ttu-id="06846-122">1</span><span class="sxs-lookup"><span data-stu-id="06846-122">1</span></span> |
+| <span data-ttu-id="06846-123">USMF</span><span class="sxs-lookup"><span data-stu-id="06846-123">USMF</span></span> | <span data-ttu-id="06846-124">7589</span><span class="sxs-lookup"><span data-stu-id="06846-124">7589</span></span> | <span data-ttu-id="06846-125">22565451428</span><span class="sxs-lookup"><span data-stu-id="06846-125">22565451428</span></span> | <span data-ttu-id="06846-126">2</span><span class="sxs-lookup"><span data-stu-id="06846-126">2</span></span> |
+
+## <a name="replacement-method"></a><span data-ttu-id="06846-127">メソッドの更新</span><span class="sxs-lookup"><span data-stu-id="06846-127">Replacement method</span></span>
+
+<span data-ttu-id="06846-128">CustTrans テーブル **settleTransaction** メソッドが メソッドの更新を行います。</span><span class="sxs-lookup"><span data-stu-id="06846-128">The **settleTransaction** method on the CustTrans table is the replacement method.</span></span>
+
+```X++
+public static boolean settleTransaction(
+    SpecTransExecutionContext _specTransExecutionContext,
+    CustTransSettleTransactionParameters _parameters)
+```
+
+### <a name="how-blocking-will-be-avoided"></a><span data-ttu-id="06846-129">ブロックがどのように回避されるか</span><span class="sxs-lookup"><span data-stu-id="06846-129">How blocking will be avoided</span></span>
+
+<span data-ttu-id="06846-130">それぞれの顧客の決済に固有の決済コンテキストが付与されます。</span><span class="sxs-lookup"><span data-stu-id="06846-130">Every customer settlement will get a unique settlement context.</span></span> <span data-ttu-id="06846-131">決済にはそれぞれ固有のコンテキストが割り当てられるため、どのトランザクションもブロックを引き起こすことがなくなります。</span><span class="sxs-lookup"><span data-stu-id="06846-131">Because each settlement that is done will have a unique context, no transaction will cause blocking.</span></span>  <span data-ttu-id="06846-132">次の例は、2つのコンテキストを示しています。</span><span class="sxs-lookup"><span data-stu-id="06846-132">The following example shows two contexts.</span></span> <span data-ttu-id="06846-133">各コンテキストには一意の **SpecRecId** 値を持っています。</span><span class="sxs-lookup"><span data-stu-id="06846-133">Each context has a unique **SpecRecId** value.</span></span>
+
+| <span data-ttu-id="06846-134">SpecCompany</span><span class="sxs-lookup"><span data-stu-id="06846-134">SpecCompany</span></span> | <span data-ttu-id="06846-135">SpecTableId</span><span class="sxs-lookup"><span data-stu-id="06846-135">SpecTableId</span></span> | <span data-ttu-id="06846-136">SpecRecId</span><span class="sxs-lookup"><span data-stu-id="06846-136">SpecRecId</span></span> | <span data-ttu-id="06846-137">取引</span><span class="sxs-lookup"><span data-stu-id="06846-137">Transaction</span></span> |
+|---|---|---|---|
+| <span data-ttu-id="06846-138">USMF</span><span class="sxs-lookup"><span data-stu-id="06846-138">USMF</span></span> | <span data-ttu-id="06846-139">7599</span><span class="sxs-lookup"><span data-stu-id="06846-139">7599</span></span> | <span data-ttu-id="06846-140">68719604825</span><span class="sxs-lookup"><span data-stu-id="06846-140">68719604825</span></span> | <span data-ttu-id="06846-141">1</span><span class="sxs-lookup"><span data-stu-id="06846-141">1</span></span> |
+| <span data-ttu-id="06846-142">USMF</span><span class="sxs-lookup"><span data-stu-id="06846-142">USMF</span></span> | <span data-ttu-id="06846-143">7599</span><span class="sxs-lookup"><span data-stu-id="06846-143">7599</span></span> | <span data-ttu-id="06846-144">68719604826</span><span class="sxs-lookup"><span data-stu-id="06846-144">68719604826</span></span> | <span data-ttu-id="06846-145">2</span><span class="sxs-lookup"><span data-stu-id="06846-145">2</span></span> |
+    
+### <a name="replacement-method-parameters"></a><span data-ttu-id="06846-146">メソッドのパラメーターを更新する</span><span class="sxs-lookup"><span data-stu-id="06846-146">Replacement method parameters</span></span>
+
+<span data-ttu-id="06846-147">**SpecTransExecutionContext** クラスは、一意となる決済の実行コンテキストを定義します。</span><span class="sxs-lookup"><span data-stu-id="06846-147">The **SpecTransExecutionContext** class defines a unique settlement execution context.</span></span> <span data-ttu-id="06846-148">これは2つの部分で構成されています。</span><span class="sxs-lookup"><span data-stu-id="06846-148">It has two parts.</span></span> <span data-ttu-id="06846-149">一つ目の部分は、決済の顧客または仕入先を定義します。</span><span class="sxs-lookup"><span data-stu-id="06846-149">The first part defines the customer or vendor for the settlement.</span></span> <span data-ttu-id="06846-150">2つ目の部分では、決済のソースを定義します。</span><span class="sxs-lookup"><span data-stu-id="06846-150">The second part defines the source for the settlement.</span></span>
+
++ <span data-ttu-id="06846-151">**newFromSource** メソッドには、顧客、仕入先、およびソースが必要となります。</span><span class="sxs-lookup"><span data-stu-id="06846-151">The **newFromSource** method takes a customer or vendor and a source.</span></span> <span data-ttu-id="06846-152">顧客、仕入先、ソースは常に顧客となります。</span><span class="sxs-lookup"><span data-stu-id="06846-152">The customer or vendor is always the customer, and the source is always the customer.</span></span>
+
+    ```X++
+    public static SpecTransExecutionContext newFromSource(
+        CustVendTable _custVendTable, 
+        Common _source = _custVendTable)
+    ```
+
++ <span data-ttu-id="06846-153">**parmSpecContext** メソッドは、生成された決済コンテキストを公開します。</span><span class="sxs-lookup"><span data-stu-id="06846-153">The **parmSpecContext** method exposes the settlement context that is generated.</span></span>
+
+    ```X++
+    public Common parmSpecContext()
+    ```
+
+<span data-ttu-id="06846-154">**CustTransSettleTransactionParamters** には、他のメソッドパラメータが含まれています。</span><span class="sxs-lookup"><span data-stu-id="06846-154">**CustTransSettleTransactionParamters** contains the other method parameters.</span></span> <span data-ttu-id="06846-155">これに含まれるコンストラクターメソッドは、既定値を使用してクラスの初期化を行います。</span><span class="sxs-lookup"><span data-stu-id="06846-155">It has a constructor method that initializes the class with default values.</span></span> <span data-ttu-id="06846-156">その一例として **LedgerVoucher** が挙げられます。</span><span class="sxs-lookup"><span data-stu-id="06846-156">An example is **LedgerVoucher**.</span></span>
+
+### <a name="how-to-use-the-settletransaction-method"></a><span data-ttu-id="06846-157">settleTransaction メソッドの使用方法</span><span class="sxs-lookup"><span data-stu-id="06846-157">How to use the settleTransaction method</span></span>
+
+<span data-ttu-id="06846-158">決済は2つの部分で行われます。</span><span class="sxs-lookup"><span data-stu-id="06846-158">Settlement is done in two parts.</span></span> <span data-ttu-id="06846-159">はじめに、決済処理に向けて請求書と支払を選び出します。</span><span class="sxs-lookup"><span data-stu-id="06846-159">First, you mark the invoices and payments for settlement.</span></span> <span data-ttu-id="06846-160">次に、決済処理を行います。</span><span class="sxs-lookup"><span data-stu-id="06846-160">Then you do the settlement.</span></span>
+
+#### <a name="obsolete-code-example"></a><span data-ttu-id="06846-161">古いコードの例</span><span class="sxs-lookup"><span data-stu-id="06846-161">Obsolete code example</span></span>
+
+```X++
+//Mark for settlement
+SpecTransManager specTransManager = SpecTransManager::construct(custTable);
+
+specTransManager.insert(…) //Invoice(s)
+specTransManager.insert(…) //Payment(s)
+
+//Settle
+CustTrans::settleTransact(recipientCustVendTable);
+```
+
+#### <a name="new-code-example"></a><span data-ttu-id="06846-162">新しいコードの例</span><span class="sxs-lookup"><span data-stu-id="06846-162">New code example</span></span>
+
+```X++
+//Mark for settlement
+SpecTransExecutionContext specTransExecutionContext = SpecTransExecutionContext::newFromSource(custTable);
+specTransManager = SpecTransManager::construct(specTransExecutionContext.parmSpecContext());
+
+specTransManager.insert(…) //Invoice(s)
+specTransManager.insert(…) //Payment(s)
+
+//Settle
+CustTrans::settleTransaction(
+    specTransExecutionContext,
+    CustTransSettleTransactionParameters::construct());
+```
+
+### <a name="testing"></a><span data-ttu-id="06846-163">テスト</span><span class="sxs-lookup"><span data-stu-id="06846-163">Testing</span></span>
+
+<span data-ttu-id="06846-164">この機能はフライトを使用します。</span><span class="sxs-lookup"><span data-stu-id="06846-164">This functionality uses flights.</span></span> <span data-ttu-id="06846-165">このテストを行うには、非稼働環境にてフライトを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="06846-165">To test it, you must turn on the flight in a non-production environment.</span></span> <span data-ttu-id="06846-166">非稼動環境でフライトをオンにする方法については、 [データ管理でフライトされる機能とフライトされた機能の有効化](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).を参照してください。</span><span class="sxs-lookup"><span data-stu-id="06846-166">For information about how to turn on a flight in a non-production environment, see [Features flighted in data management and enabling flighted features](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).</span></span>
+
+<span data-ttu-id="06846-167">フライトの名称は **EnableCustTransSettleTransaction**です。</span><span class="sxs-lookup"><span data-stu-id="06846-167">The name of the flight is **EnableCustTransSettleTransaction**.</span></span>

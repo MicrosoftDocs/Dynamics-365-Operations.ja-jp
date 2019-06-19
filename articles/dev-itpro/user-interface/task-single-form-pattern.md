@@ -1,213 +1,118 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="task-single-form-pattern.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>task-single-form-pattern.cf3c12.f2fc183e925356d8fcc559042d78bdb4ddc7c988.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>f2fc183e925356d8fcc559042d78bdb4ddc7c988</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\user-interface\task-single-form-pattern.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Task Single form pattern</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク シングルのフォーム パターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This article provides information about the Task Single form pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、タスク シングル フォームのパターンに関する情報を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>This pattern was previously used to present data that users would perceive as originating from a single data source that had multiple records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Task Single form pattern</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク シングルのフォーム パターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This article provides information about the Task Single form pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、タスク シングル フォームのパターンに関する情報を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>This pattern was previously used to present data that users would perceive as originating from a single data source that had multiple records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">用途</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>This type of form was used when you wanted to present data that users will perceive as originating from a single data source with multiple records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このタイプのフォームは、データが複数のレコードを持つ単一のデータ ソースから発生したとユーザーが認識することを表す場合に使用されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>This isn't a recommended pattern for new forms.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいフォームの推奨パターンではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>No new forms should be created that use this pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このパターンを使用する新しいフォームを作成する必要はありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>This pattern will provide structure and stability for legacy forms, and will also provide a migration path to more modern form patterns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このパターンは、レガシー フォームの構造と安定性を提供し、より現代的なフォーム パターンへの移行パスも提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Wireframe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワイヤーフレーム</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Wireframe<ept id="p1">](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>ワイヤーフレーム<ept id="p1">](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Pattern changes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パターンの変更</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>The form opens in view mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示モードでフォームを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Commands have been moved to the standard ActionPane from a Toolbar (ActionPane strips).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマンドは、ツールバー (アクション ペイン ストライプ) から標準アクション ペインに移動されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>The <bpt id="p1">**</bpt>Overview<ept id="p1">**</ept> label on the first tab has been changed to <bpt id="p2">**</bpt>List<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初のタブの <bpt id="p1">**</bpt>概要<ept id="p1">**</ept> ラベルが <bpt id="p2">**</bpt>リスト<ept id="p2">**</ept> に変更されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>The content of the tab container uses dynamic columns for a responsive layout.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タブ コンテナーのコンテンツは、応答レイアウトに動的列を使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Model</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>High-level structure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高レベル構造体</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Design</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>ActionPane (Action Pane)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ActionPane (アクション ウィンドウ)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source><bpt id="p1">*</bpt>CustomFilter (Group) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>CustomFilter (グループ) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Tab (Tab)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タブ (タブ)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Overview (TabPage)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">概要 (TabPage)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Grid (Grid)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッド (グリッド)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source><bpt id="p1">*</bpt>RowExtension (Group) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>RowExtension (グループ) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>General (TabPage, repeats 0..N)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般 (TabPage、0..N を繰り返します)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">*</bpt>FooterGroup (Group) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>FooterGroup (グループ) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Core components</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コア コンポーネント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Apply the TaskSingle pattern on <bpt id="p1">**</bpt>Form.Design<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Form.Design<ept id="p1">**</ept> に TaskSingle パターンを適用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Address BP Warnings:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BP 警告に対処します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source><bpt id="p1">**</bpt>Design.Caption<ept id="p1">**</ept> isn't empty.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Design.Caption<ept id="p1">**</ept> は空ではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>The form must be referenced by at least one menu item.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフォームは少なくとも 1 つのメニュー項目で参照される必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">**</bpt>TabPage.Caption<ept id="p1">**</ept> isn't empty.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>TabPage.Caption<ept id="p1">**</ept> は空ではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">**</bpt>TabPage.DataSource<ept id="p1">**</ept> isn't empty.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>TabPage.DataSource<ept id="p1">**</ept> は空ではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source><bpt id="p1">**</bpt>StaticText.Text<ept id="p1">**</ept> isn't empty.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>StaticText.Text<ept id="p1">**</ept> は空ではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Related patterns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関連するパターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source><bpt id="p1">[</bpt>Task Double<ept id="p1">](task-double-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>タスク ダブル<ept id="p1">](task-double-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Commonly used subpatterns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般的に使用されるサブパターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source><bpt id="p1">[</bpt>Custom Filter Group<ept id="p1">](custom-filter-group-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>カスタム フィルター グループ<ept id="p1">](custom-filter-group-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">[</bpt>Fields and Field Groups<ept id="p1">](fields-field-groups-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フィールドおよびフィールド グループ<ept id="p1">](fields-field-groups-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source><bpt id="p1">[</bpt>Toolbar and List<ept id="p1">](toolbar-list-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびリスト<ept id="p1">](toolbar-list-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source><bpt id="p1">[</bpt>Toolbar and Fields<ept id="p1">](toolbar-fields-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびフィールド<ept id="p1">](toolbar-fields-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>UX guidelines</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UX ガイドライン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>The verification checklist shows you the steps for manually verifying that the form complies with UX guidelines.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Open the form in the browser, and walk through these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザーでフォームを開いて、これらの手順を確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source><bpt id="p1">**</bpt>Standard form guidelines:<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>標準フォーム ガイドライン:<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Standard form guidelines have been consolidated into the Microsoft Dynamics AX <bpt id="p1">[</bpt>General Form Guidelines<ept id="p1">](general-form-guidelines.md)</ept> document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準フォーム ガイドラインは、Microsoft Dynamics AX <bpt id="p1">[</bpt>全般的なガイドライン<ept id="p1">](general-form-guidelines.md)</ept> ドキュメントに統合されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source><bpt id="p1">**</bpt>Task Single guidelines:<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>タスクの 1 つのガイドライン :<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>The <bpt id="p1">**</bpt>Overview<ept id="p1">**</ept> tab is the first tab and is active when the form is opened.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>概要<ept id="p1">**</ept> タブは、最初のタブであり、フォームを開いたときに有効になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>The <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab must be the second tab and must have the label <bpt id="p2">**</bpt>General<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>全般<ept id="p1">**</ept> タブは 2 つ目のタブにする必要があり、ラベル <bpt id="p2">**</bpt>全般<ept id="p2">**</ept> が必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Form: <bpt id="p1">**</bpt>LedgerJournalTable<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: <bpt id="p1">**</bpt>LedgerJournalTable<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Task Single example 1<ept id="p1">](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>タスク シングルの例 1<ept id="p1">](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Task Single example 2<ept id="p1">](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>タスク シングルの例 2<ept id="p1">](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Appendix</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">付録</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Frequently asked questions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">よく寄せられる質問</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>This section will have answers to frequently asked questions that are related to this guideline/pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Open issues</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">未処理の問題</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>None</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">なし</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>AX 2012 content</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 コンテンツ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX 2012 visual example<ept id="p1">](./media/tasksingle4.png)](./media/tasksingle4.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX 2012 視覚例<ept id="p1">](./media/tasksingle4.png)](./media/tasksingle4.png)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: タスク シングルのフォーム パターン
+description: この記事では、タスク シングル フォームのパターンに関する情報を提供します。 このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。
+author: jasongre
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 14634
+ms.assetid: 38cb1058-ed69-4ffa-9bfd-4b65cc8d2a49
+ms.search.region: Global
+ms.author: jasongre
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f2fc183e925356d8fcc559042d78bdb4ddc7c988
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571063"
+---
+# <a name="task-single-form-pattern"></a><span data-ttu-id="ef7d9-104">タスク シングルのフォーム パターン</span><span class="sxs-lookup"><span data-stu-id="ef7d9-104">Task Single form pattern</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="ef7d9-105">この記事では、タスク シングル フォームのパターンに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-105">This article provides information about the Task Single form pattern.</span></span> <span data-ttu-id="ef7d9-106">このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-106">This pattern was previously used to present data that users would perceive as originating from a single data source that had multiple records.</span></span>
+
+<a name="usage"></a><span data-ttu-id="ef7d9-107">用途</span><span class="sxs-lookup"><span data-stu-id="ef7d9-107">Usage</span></span>
+-----
+
+<span data-ttu-id="ef7d9-108">このタイプのフォームは、データが複数のレコードを持つ単一のデータ ソースから発生したとユーザーが認識することを表す場合に使用されました。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-108">This type of form was used when you wanted to present data that users will perceive as originating from a single data source with multiple records.</span></span> <span data-ttu-id="ef7d9-109">新しいフォームの推奨パターンではありません。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-109">This isn't a recommended pattern for new forms.</span></span> <span data-ttu-id="ef7d9-110">このパターンを使用する新しいフォームを作成する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-110">No new forms should be created that use this pattern.</span></span> <span data-ttu-id="ef7d9-111">このパターンは、レガシー フォームの構造と安定性を提供し、より現代的なフォーム パターンへの移行パスも提供します。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-111">This pattern will provide structure and stability for legacy forms, and will also provide a migration path to more modern form patterns.</span></span>
+
+## <a name="wireframe"></a><span data-ttu-id="ef7d9-112">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="ef7d9-112">Wireframe</span></span>
+<span data-ttu-id="ef7d9-113">[![ワイヤーフレーム](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)</span><span class="sxs-lookup"><span data-stu-id="ef7d9-113">[![Wireframe](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)</span></span>
+
+## <a name="pattern-changes"></a><span data-ttu-id="ef7d9-114">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="ef7d9-114">Pattern changes</span></span>
+<span data-ttu-id="ef7d9-115">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-115">Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</span></span>
+
+-   <span data-ttu-id="ef7d9-116">表示モードでフォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-116">The form opens in view mode.</span></span>
+-   <span data-ttu-id="ef7d9-117">コマンドは、ツールバー (アクション ペイン ストライプ) から標準アクション ペインに移動されています。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-117">Commands have been moved to the standard ActionPane from a Toolbar (ActionPane strips).</span></span>
+-   <span data-ttu-id="ef7d9-118">最初のタブの **概要** ラベルが **リスト** に変更されました。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-118">The **Overview** label on the first tab has been changed to **List**.</span></span>
+-   <span data-ttu-id="ef7d9-119">タブ コンテナーのコンテンツは、応答レイアウトに動的列を使用します。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-119">The content of the tab container uses dynamic columns for a responsive layout.</span></span>
+
+## <a name="model"></a><span data-ttu-id="ef7d9-120">モデル</span><span class="sxs-lookup"><span data-stu-id="ef7d9-120">Model</span></span>
+### <a name="high-level-structure"></a><span data-ttu-id="ef7d9-121">高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="ef7d9-121">High-level structure</span></span>
+
+- <span data-ttu-id="ef7d9-122">デザイン</span><span class="sxs-lookup"><span data-stu-id="ef7d9-122">Design</span></span>
+
+    - <span data-ttu-id="ef7d9-123">ActionPane (アクション ウィンドウ)</span><span class="sxs-lookup"><span data-stu-id="ef7d9-123">ActionPane (Action Pane)</span></span>
+    - <span data-ttu-id="ef7d9-124">*CustomFilter (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="ef7d9-124">*CustomFilter (Group) \[Optional\]*</span></span>
+    - <span data-ttu-id="ef7d9-125">タブ (タブ)</span><span class="sxs-lookup"><span data-stu-id="ef7d9-125">Tab (Tab)</span></span>
+
+        - <span data-ttu-id="ef7d9-126">概要 (TabPage)</span><span class="sxs-lookup"><span data-stu-id="ef7d9-126">Overview (TabPage)</span></span>
+
+            - <span data-ttu-id="ef7d9-127">グリッド (グリッド)</span><span class="sxs-lookup"><span data-stu-id="ef7d9-127">Grid (Grid)</span></span>
+            - <span data-ttu-id="ef7d9-128">*RowExtension (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="ef7d9-128">*RowExtension (Group) \[Optional\]*</span></span>
+
+        - <span data-ttu-id="ef7d9-129">一般 (TabPage、0..N を繰り返します)</span><span class="sxs-lookup"><span data-stu-id="ef7d9-129">General (TabPage, repeats 0..N)</span></span>
+
+    - <span data-ttu-id="ef7d9-130">*FooterGroup (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="ef7d9-130">*FooterGroup (Group) \[Optional\]*</span></span>
+
+### <a name="core-components"></a><span data-ttu-id="ef7d9-131">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="ef7d9-131">Core components</span></span>
+
+1.  <span data-ttu-id="ef7d9-132">**Form.Design** に TaskSingle パターンを適用します。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-132">Apply the TaskSingle pattern on **Form.Design**.</span></span>
+2.  <span data-ttu-id="ef7d9-133">BP 警告に対処します。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-133">Address BP Warnings:</span></span>
+    1.  <span data-ttu-id="ef7d9-134">**Design.Caption** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-134">**Design.Caption** isn't empty.</span></span>
+    2.  <span data-ttu-id="ef7d9-135">このフォームは少なくとも 1 つのメニュー項目で参照される必要があります。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-135">The form must be referenced by at least one menu item.</span></span>
+    3.  <span data-ttu-id="ef7d9-136">**TabPage.Caption** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-136">**TabPage.Caption** isn't empty.</span></span>
+    4.  <span data-ttu-id="ef7d9-137">**TabPage.DataSource** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-137">**TabPage.DataSource** isn't empty.</span></span>
+    5.  <span data-ttu-id="ef7d9-138">**StaticText.Text** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-138">**StaticText.Text** isn't empty.</span></span>
+
+### <a name="related-patterns"></a><span data-ttu-id="ef7d9-139">関連するパターン</span><span class="sxs-lookup"><span data-stu-id="ef7d9-139">Related patterns</span></span>
+
+-   [<span data-ttu-id="ef7d9-140">タスク ダブル</span><span class="sxs-lookup"><span data-stu-id="ef7d9-140">Task Double</span></span>](task-double-form-pattern.md)
+
+### <a name="commonly-used-subpatterns"></a><span data-ttu-id="ef7d9-141">一般的に使用されるサブパターン</span><span class="sxs-lookup"><span data-stu-id="ef7d9-141">Commonly used subpatterns</span></span>
+
+-   [<span data-ttu-id="ef7d9-142">カスタム フィルター グループ</span><span class="sxs-lookup"><span data-stu-id="ef7d9-142">Custom Filter Group</span></span>](custom-filter-group-subpattern.md)
+-   [<span data-ttu-id="ef7d9-143">フィールドおよびフィールド グループ</span><span class="sxs-lookup"><span data-stu-id="ef7d9-143">Fields and Field Groups</span></span>](fields-field-groups-subpattern.md)
+-   [<span data-ttu-id="ef7d9-144">ツールバーおよびリスト</span><span class="sxs-lookup"><span data-stu-id="ef7d9-144">Toolbar and List</span></span>](toolbar-list-subpattern.md)
+-   [<span data-ttu-id="ef7d9-145">ツールバーおよびフィールド</span><span class="sxs-lookup"><span data-stu-id="ef7d9-145">Toolbar and Fields</span></span>](toolbar-fields-subpattern.md)
+
+## <a name="ux-guidelines"></a><span data-ttu-id="ef7d9-146">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="ef7d9-146">UX guidelines</span></span>
+<span data-ttu-id="ef7d9-147">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-147">The verification checklist shows you the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="ef7d9-148">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-148">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="ef7d9-149">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-149">Open the form in the browser, and walk through these steps.</span></span> 
+
+<span data-ttu-id="ef7d9-150">**標準フォーム ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="ef7d9-150">**Standard form guidelines:**</span></span>
+
+-   <span data-ttu-id="ef7d9-151">標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-151">Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.</span></span>
+
+<span data-ttu-id="ef7d9-152">**タスクの 1 つのガイドライン :**</span><span class="sxs-lookup"><span data-stu-id="ef7d9-152">**Task Single guidelines:**</span></span>
+
+-   <span data-ttu-id="ef7d9-153">**概要** タブは、最初のタブであり、フォームを開いたときに有効になります。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-153">The **Overview** tab is the first tab and is active when the form is opened.</span></span>
+-   <span data-ttu-id="ef7d9-154">**全般** タブは 2 つ目のタブにする必要があり、ラベル **全般** が必要です。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-154">The **General** tab must be the second tab and must have the label **General**.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="ef7d9-155">例</span><span class="sxs-lookup"><span data-stu-id="ef7d9-155">Examples</span></span>
+<span data-ttu-id="ef7d9-156">フォーム: **LedgerJournalTable**</span><span class="sxs-lookup"><span data-stu-id="ef7d9-156">Form: **LedgerJournalTable**</span></span> 
+
+<span data-ttu-id="ef7d9-157">[![タスク シングルの例 1](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png)</span><span class="sxs-lookup"><span data-stu-id="ef7d9-157">[![Task Single example 1](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png)</span></span> 
+
+<span data-ttu-id="ef7d9-158">[![タスク シングルの例 2](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)</span><span class="sxs-lookup"><span data-stu-id="ef7d9-158">[![Task Single example 2](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)</span></span>
+
+## <a name="appendix"></a><span data-ttu-id="ef7d9-159">付録</span><span class="sxs-lookup"><span data-stu-id="ef7d9-159">Appendix</span></span>
+### <a name="frequently-asked-questions"></a><span data-ttu-id="ef7d9-160">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="ef7d9-160">Frequently asked questions</span></span>
+
+<span data-ttu-id="ef7d9-161">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="ef7d9-161">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
+
+### <a name="open-issues"></a><span data-ttu-id="ef7d9-162">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="ef7d9-162">Open issues</span></span>
+
+-   <span data-ttu-id="ef7d9-163">なし</span><span class="sxs-lookup"><span data-stu-id="ef7d9-163">None</span></span>
+
+### <a name="ax-2012-content"></a><span data-ttu-id="ef7d9-164">AX 2012 コンテンツ</span><span class="sxs-lookup"><span data-stu-id="ef7d9-164">AX 2012 content</span></span>
+
+<span data-ttu-id="ef7d9-165">[![AX 2012 視覚例](./media/tasksingle4.png)](./media/tasksingle4.png)</span><span class="sxs-lookup"><span data-stu-id="ef7d9-165">[![AX 2012 visual example](./media/tasksingle4.png)](./media/tasksingle4.png)</span></span>

@@ -1,636 +1,213 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="migrate-upgraded-cube-entity-store.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>migrate-upgraded-cube-entity-store.27c162.b889fb0c59745cc38c8e21ee6f2d926033c76295.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>b889fb0c59745cc38c8e21ee6f2d926033c76295</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\migration-upgrade\migrate-upgraded-cube-entity-store.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Migrate upgraded AX 2012 R3 sales cubes to the entity store</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Microsoft Dynamics 365 for Finance and Operations のエンティティ格納に移行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Migrate upgraded AX 2012 R3 sales cubes to the entity store</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Microsoft Dynamics 365 for Finance and Operations のエンティティ格納に移行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The entity store will support near real-time Microsoft Power BI integration scenarios, as shown in the following diagram.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ格納は、次の図に示すように、ほぼリアルタイムの Microsoft Power BI 統合シナリオをサポートします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>For an overview of Power BI integration with entity store, see <bpt id="p1">[</bpt>Power BI integration with entity store<ept id="p1">](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ格納と Power BI 統合の概要については、「<bpt id="p1">[</bpt>エンティティ格納と Power BI の統合<ept id="p1">](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)</ept>」を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Power BI Architecture diagram<ept id="p1">](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Power BI アークテクチャ ダイアグラム<ept id="p1">](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>New Power BI features included in the May 2016 and November 2016 updates</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2016 年 5 月および 2016 年 11 月の更新プログラムに含まれる Power BI の新機能</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>This tutorial requires the Dynamics 365 for Operations May 2016 update or later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、Dynamics 365 for Operations の 2016 年 5 月以降の更新プログラムが必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>You will use the following new capabilities in this tutorial:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、次の新しい機能を使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Stage an aggregate measurement in the entity store and refresh the data from Dynamics AX.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ格納で集計測定をステージングし、Dynamics AX のデータを更新します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>You might prefer this option over in-memory real time aggregate measurements when:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メモリ内リアルタイムの集計測定値には、このオプションの方を選択する可能性があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>You upgrade a Dynamics AX 2012 cube.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX 2012 キューブをアップグレードします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Your aggregate measurements are very large.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集計の測定は非常に大規模です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Data freshness (latency) from a few minutes up to a few hours is acceptable for reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データの新しさ (待機時間) は、数分から数時間まで報告することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Use the batch framework to schedule a recurring refresh.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">定期的な更新をスケジュールするには、バッチ フレームワークを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>For this release, only a full refresh is enabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このリリースでは、完全な更新のみが有効になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Create reports using Power BI desktop in a developer/test environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者/テスト環境で Power BI デスクトップを使用してレポートを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Leverage the direct query option when creating Power BI content.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI コンテンツを作成するときに、直接クエリ オプションを活用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>For example, you can create larger models without relying on OData as the data refresh mechanism.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、データ更新のメカニズムとして OData に依存せず、大きなモデルを作成できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Migrate reports from your development environment to a production environment using Lifecycle Services (LCS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lifecycle Services (LCS) を使用してレポートを開発環境から実稼働環境に移行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>As a partner or an ISV you can distribute Power BI content as part of an LCS solution to your customers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パートナーまたは ISV として、Power BI コンテンツを LCS ソリューションの一部として顧客に配布することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">**</bpt>If you're using the November update (platform release 1611)<ept id="p1">**</ept> or later, some steps in this document are part of the process to refresh the entity store - you do not need to perform them manually.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>11 月の更新 (プラットフォーム リリース 1611) 以降を使用している場合<ept id="p1">**</ept>、このドキュメントのいくつかの手順は、エンティティ ストアを更新するプロセスの一部です。手動で実行する必要はありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Change upgraded aggregate measurement properties</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレードされた集計の測定プロパティの変更</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>As part of the code upgrade process, analysis services projects from the Application Object Tree (AOT) in Dynamics AX 2012 can be migrated to the new aggregate measurements metadata format.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">コード アップグレード プロセスの一環として、Dynamics AX 2012 のアプリケーション オブジェクト ツリー (AOT) からの分析サービス プロジェクトを新しい集計測定メタデータ形式に移行することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Launch Visual Studio and create a new project in Application Suite.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Visual Studio を起動し、アプリケーション スイートで新しいプロジェクトを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>You can create a model and include the customized aggregate measurement within that model.</source><target logoport:matchpercent="95" state="translated" state-qualifier="fuzzy-match">モデルを作成し、カスタマイズされた集計測定をそのモデルに含めることができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>For more information, see <bpt id="p1">[</bpt>Customization: Overlayering and extensions<ept id="p1">](../extensibility/customization-overlayering-extensions.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>カスタマイズ: オーバーレイおよび拡張機能<ept id="p1">](../extensibility/customization-overlayering-extensions.md)</ept> を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Open Application Explorer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション エクスプローラを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Navigate to <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Perspectives<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Aggregate measurements<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>分析<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>分析視点<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>集計の測定<ept id="p3">**</ept>と移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>You will notice a set of aggregate measurements that were upgraded from Dynamics AX 2012 R3, as well as the measurements that ship in the current version of Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations の現在のバージョンに同梱されている測定だけでなく、Dynamics AX 2012 R3 からアップグレードされた集計の測定のセットが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Select <bpt id="p1">**</bpt>SalesCube<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SalesCube<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Right-click and select <bpt id="p1">**</bpt>Duplicate in project<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右クリックし、<bpt id="p1">**</bpt>プロジェクトで複製<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>An aggregate measurement with the name <bpt id="p1">**</bpt>SalesCubeCopy<ept id="p1">**</ept> will be added to the project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SalesCubeCopy<ept id="p1">**</ept> という名前の集計の測定がプロジェクトに追加されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Rename this measurement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この測定値の名前を変更します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Select <bpt id="p1">**</bpt>SalesCubeCopy<ept id="p1">**</ept> in Solution Explorer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーで、<bpt id="p1">**</bpt>SalesCubeCopy<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Right-click and select <bpt id="p1">**</bpt>Rename<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右クリックし、<bpt id="p1">**</bpt>名前の変更<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Enter <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> as the new name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> という新しい名前を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Double-click <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> to launch the Aggregate measurement designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aggregate measurement designer を起動するには、<bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> をダブルクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Notice the structure of the aggregate measurement that was migrated from Dynamics AX 2012.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX 2012 から移行された集計の測定の構造体を確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>The Sales cube in Dynamics AX 2012 encompassed a broad subject area related to Sales.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX 2012 の Sales キューブは、販売に関連する広範な分野を包含していました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>In this case, let’s create a smaller, more focused Power BI model using the metadata that was upgraded.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、アップグレードしたメタデータを使用してより小規模で焦点を絞った Power BI モデルを作成しましょう。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Expand the <bpt id="p1">**</bpt>Sales Order Lines<ept id="p1">**</ept> measure group and review the list of measures and dimension references.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>販売注文明細行<ept id="p1">**</ept>のメジャー グループを展開し、メジャー リストおよび分析コードの参照を確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Leveraging the modeling capabilities you can quickly make a few enhancements to this model.</source><target logoport:matchpercent="95" state="translated" state-qualifier="fuzzy-match">モデリング機能を活用することで、このモデルをすばやく機能拡張することができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Suggestions for improvements:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">改善の提案:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Replace views/tables that have been used to model the measure group (and/or dimensions) with an entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メジャー グループ (または分析コード) をモデル化するために使用されたビュー/テーブルをエンティティに置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>You can model an entity using the underlying view and replace the view with the corresponding entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">基になるビューを使用してエンティティをモデリングして、対応するエンティティでビューを置き換えることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>This will enable you to leverage upcoming features such as incremental refresh and security.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、インクリメンタル リフレッシュおよびセキュリティなど、今後登場する機能を活用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Remove unwanted dimension references by adding the corresponding field to the attributes node.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性ノードに対応するフィールドを追加することで、不要な分析コードの参照を削除します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>For example, the Sizes dimension reference can be removed because the <bpt id="p1">**</bpt>Size<ept id="p1">**</ept> field in the measure group is sufficiently descriptive.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、メジャー グループの<bpt id="p1">**</bpt>サイズ<ept id="p1">**</ept>フィールドが十分に説明され、サイズの分析コード参照は削除されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>This will improve the runtime performance of queries as well as refresh times.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、クエリのランタイム パフォーマンスとリフレッシュ時間が向上します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Select the <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> root node in the Aggregate measurement designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集計測定デザイナーで <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> ルート ノードを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Right-click and select <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右クリックし、<bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>During upgrade, aggregate measurements are set to the legacy property flag, <bpt id="p1">**</bpt>SSASCube<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレード中に、集計の測定はレガシ プロパティ フラグ <bpt id="p1">**</bpt>SSASCube<ept id="p1">**</ept> に設定されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>You need to change this property to one of two supported usage types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サポートされる使用法の 2 つのタイプのいずれかに、このプロパティを変更する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Previously, <bpt id="p1">**</bpt>InMemoryRealTime<ept id="p1">**</ept> was supported as usage for aggregate measurements.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">以前は、<bpt id="p1">**</bpt>InMemoryRealTime<ept id="p1">**</ept> は集計測定値の使用方法としてサポートされていました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source><bpt id="p1">**</bpt>StagedEntityStore<ept id="p1">**</ept> is supported as a new usage type.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>StagedEntityStore<ept id="p1">**</ept> は新しい使用タイプとしてサポートされています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Modify the usage property to InMemoryRealTime if you plan to use the Aggregate measurement for embedded BI scenarios as well as Power BI integration.</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">埋め込み BI シナリオおよび Power BI 統合に集計の測定を使用する場合は、用途プロパティを InMemoryRealTime に変更します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>If you are using the Aggregate measurement only for Power BI or Cortana Intelligence Suite integration, select <bpt id="p1">**</bpt>StagedEntityStore<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI または Cortana Intelligence との統合に対してのみ集計測定を使用している場合は、<bpt id="p1">**</bpt>StagedEntityStore<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Save the project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトを保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Right-click the project in Solution Explorer and select <bpt id="p1">**</bpt>Rebuild<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーでプロジェクトを選択し、<bpt id="p1">**</bpt>リビルド<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>After the rebuild operation is finished, save the project, and then close Visual Studio.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">再構築操作を完了した後、プロジェクトを保存し、Visual Studio を閉じます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>This completes the development work.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これで開発作業は完了です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>You will author reports as a report developer or a power user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポート作成者またはパワー ユーザーとしてレポートを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Refresh the entity store</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ格納を更新</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>As an administrator you can configure the refresh of the aggregate measurement using the client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理者は、クライアントを使用して集計測定の更新をコンフィギュレーションできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Launch the Dynamics AX client and navigate to <bpt id="p1">**</bpt>System Administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Entity Store<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX クライアントを起動して、<bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>エンティティ格納<ept id="p3">**</ept>に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>The <bpt id="p1">**</bpt>Entity Store<ept id="p1">**</ept> form shows a list of aggregate measurements that are available for deployment to the entity store.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エンティティ格納<ept id="p1">**</ept> フォームには、エンティティ格納に配置するために使用できる集計測定の一覧が表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Notice that <bpt id="p1">**</bpt>Sales Cube<ept id="p1">**</ept> (which was upgraded from Dynamics AX 2012) is not available for deployment to the entity store.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>売上キューブ<ept id="p1">**</ept> (Dynamics AX 2012 からアップグレードされた) がエンティティ格納への配置に使用できないことを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source><bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept>, which you created in the previous step, can be deployed to the entity store.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept>、前の手順で作成したものをエンティティ格納に展開できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Select <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> from the list, and click the <bpt id="p2">**</bpt>Refresh<ept id="p2">**</ept> button.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストから <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> を選択し、<bpt id="p2">**</bpt>更新<ept id="p2">**</ept> ボタンをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>The <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> dialog box will display.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>更新<ept id="p1">**</ept> ダイアログ ボックスが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Expand the <bpt id="p1">**</bpt>Run in the background<ept id="p1">**</ept> tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>バックグラウンドで実行<ept id="p1">**</ept>タブを展開します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Provide a descriptive name in the <bpt id="p1">**</bpt>Task description<ept id="p1">**</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>タスクの説明<ept id="p1">**</ept> フィールドにわかりやすい名前を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Optionally, you can select the <bpt id="p1">**</bpt>Recurrence<ept id="p1">**</ept> tab and create a recurring schedule instead of a one-time refresh.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じて、<bpt id="p1">**</bpt>定期的なアイテム<ept id="p1">**</ept> タブを選択し、1 回限りの更新ではなく定期的なスケジュールを作成できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>The system will create a batch job for refresh of the aggregate measurement in the entity store.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ ストア内の集計測定値をリフレッシュするためのバッチ ジョブが作成されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Authoring a report on Sales by State with Power BI desktop</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI desktop を使用して都道府県別売上レポートの作成</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>This step requires that you the install Power BI desktop tool that can be downloaded from <bpt id="p1">[</bpt>Microsoft Power BI Desktop<ept id="p1">](https://www.microsoft.com/download/details.aspx?id=45331)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このステップでは、「<bpt id="p1">[</bpt>Microsoft Power BI Desktop<ept id="p1">](https://www.microsoft.com/download/details.aspx?id=45331)</ept>」からダウンロードできる Power BI デスクトップ ツールをインストールする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Launch Power BI desktop.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI デスクトップを起動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>You may need to apply updates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">更新を適用することが必要な場合があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>A welcome page will display.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウェルカム ページが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Click <bpt id="p1">**</bpt>Get data<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データの取得<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Alternatively, when Power BI desktop launches, on the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> tab select <bpt id="p2">**</bpt>Get Data<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>SQL Server<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、Power BI デスクトップが起動したとき、<bpt id="p1">**</bpt>ホーム<ept id="p1">**</ept>タブの<bpt id="p2">**</bpt>データの取得<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>SQL Server<ept id="p3">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>In the <bpt id="p1">**</bpt>SQL Server Database<ept id="p1">**</ept> dialog box, enter the server name and the name of the entity store database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SQL Server データベース<ept id="p1">**</ept> ダイアログ ボックスで、サーバー名とエンティティ ストア データベースの名前を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>If you deployed a developer environment, you can enter “.”</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発環境を配置する場合は、“.” を入力できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>as the server name and <bpt id="p1">**</bpt>AxDW<ept id="p1">**</ept> as the database name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サーバー名として、および <bpt id="p1">**</bpt>AxDW<ept id="p1">**</ept> をデータベースとして。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>If you are working in a test environment, you need to get these parameters from your system administrator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト環境で作業している場合、システム管理者からこれらのパラメータを取得する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Select the <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> オプションを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>In this exercise, you will create Power BI reports that are executed directly on the entity store.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この練習では、エンティティ格納に直接実行される Power BI レポートを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>If you had used the <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> option, Power BI would cache data from the entity store and you would need to periodically refresh the Power BI model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>インポート<ept id="p1">**</ept> オプションを使用した場合、Power BI ではエンティティ格納のデータがキャッシュされるため、Power BI モデルを定期的に更新する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source><bpt id="p1">**</bpt>Import mode is currently not supported with reports written using entity store<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エンティティ格納を使用して書かれたレポートでは、インポート モードは現在サポートされていません<ept id="p1">**</ept>。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Next you will see the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、<bpt id="p1">**</bpt>ナビゲーター<ept id="p1">**</ept> ダイアログ ボックスが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Navigator enables you to select tables and views from the entity store that you want to report on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ナビゲーターで、レポートの対象となるテーブルとビューをエンティティ格納から選択できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Enter <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> in the search box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検索ボックスで<bpt id="p1">**</bpt>販売<ept id="p1">**</ept>を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>The system will filter entities that are related to the <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> aggregate measurement that was previously created.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">以前に作成された <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> 集計測定に関連するエンティティがフィルタリングされます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>The entity store stages the aggregate measurements that have been created.</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">エンティティ ストアは作成された集計の測定をステージします。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>While entities within each aggregate measurement are prefixed and stored as individual tables, Power BI desktop enables you to combine data from multiple aggregate measurements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それぞれの集計測定内のエンティティには接頭語が付けられて別々のテーブルとして保管されますが、Power BI デスクトップを使用すると複数の集計測定からのデータを結合することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>You will create a report that shows sales by state.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">都道府県別の売上を表示するレポートを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Select <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> and <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph2">\_</ph>CustomerInvoices<ept id="p2">**</ept> from Navigator and click <bpt id="p3">**</bpt>Load<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ナビゲーターから <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> および <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph2">\_</ph>CustomerInvoices<ept id="p2">**</ept> を選択し、<bpt id="p3">**</bpt>読み込み<ept id="p3">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>You will notice Power BI designer with <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> present in the entities that you have chosen (on the far right), as well as available visualization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したエンティティ (右端) に<bpt id="p1">**</bpt>フィールド<ept id="p1">**</ept>が存在する Power BI デザイナーが、使用可能な視覚化とともに表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Create a surrogate key that links customers and invoices (applies to platform versions before November 2016 update)</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">顧客と請求書をリンクする代理キーを作成する (2016 年 11 月アップデート以前のプラットフォームに適用)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>You do not need to perform this step if you are working on the November 2016 release of the platform or later.</source><target logoport:matchpercent="95" state="translated" state-qualifier="fuzzy-match">プラットフォームの 2016 年 11 月以降のリリースで作業している場合は、この手順を実行する必要はありません。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Surrogate keys are generated in aggregate measurements staged into entity store.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代理キーは、エンティティ格納にステージングされる集計測定で生成されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Power BI desktop does not enable you to relate table joins using multiple fields (also known as, composite keys).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI デスクトップでは、複数のフィールド (複合キーとも呼ばれます) を使用してテーブル結合を関連付けることができません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>The <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> entity does not have a surrogate key (such as AX RecID) defined in it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> エンティティでは、代理キー (AX RecID など) が定義されていません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Next, you will create a surrogate key that enables relating a customer entity to invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、請求書に顧客エンティティを関連付けできる代理キーを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Select the ellipsis (…) icon next to the <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerInvoices<ept id="p1">**</ept> entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerInvoices<ept id="p1">**</ept> エンティティの横にある省略記号 (...) アイコンを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Right-click and select <bpt id="p1">**</bpt>New Column<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右クリックし、<bpt id="p1">**</bpt>新しい列<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Enter the following expression in the <bpt id="p1">**</bpt>Formula editor<ept id="p1">**</ept> window.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フォーミュラ エディタ<ept id="p1">**</ept>ウィンドウに次の式を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>When you enter the first few letters of the field name or function, the editor will display a list of candidate fields.</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">フィールド名または関数の最初の数文字を入力すると、エディターに候補フィールドの一覧が表示されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>This is called a type-ahead feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、先行入力機能と呼ばれます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>You can either copy and paste this expression or use the type-ahead feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この式をコピーして貼り付けるか、タイプ先行機能を使用することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>When completed, your formula should look similar to the following.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完了すると、式は次のようになるはずです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Power BI Formula<ept id="p1">](./media/powerbiformula.png)](./media/powerbiformula.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Power BI フォーミュラ<ept id="p1">](./media/powerbiformula.png)](./media/powerbiformula.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Notice that a new field, <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept>, is shown in the list of fields for the <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerInvoices<ept id="p2">**</ept> table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいフィールド <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept> が <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerInvoices<ept id="p2">**</ept> テーブルのフィールドの一覧に表示されていることに注意します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Because this field is used to relate two tables, you can hide it from end users by right-clicking the field and selecting the <bpt id="p1">**</bpt>Hide<ept id="p1">**</ept> option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフィールドは 2 つのテーブルを関連付けるために使用されるので、フィールドを右クリックして<bpt id="p1">**</bpt>非表示<ept id="p1">**</ept>オプションを選択するとエンド ユーザーから非表示にすることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Next, create a similar field in the <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、<bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> テーブルに類似したフィールドを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Select the ellipsis (…) icon next to <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> エンティティの横にある省略記号 (...) アイコンを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Right-click and select <bpt id="p1">**</bpt>New Column<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右クリックし、<bpt id="p1">**</bpt>新しい列<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Enter the following expression in the <bpt id="p1">**</bpt>Formula editor<ept id="p1">**</ept> window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フォーミュラ エディタ<ept id="p1">**</ept>ウィンドウに次の式を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Notice that the field <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept> is shown in the list of fields for the <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p2">**</ept> table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept> が <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p2">**</ept> テーブルのフィールドの一覧に表示されていることに注意します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Because this field is used for relating two tables, you can hide it from end users by right-clicking the field and selecting the <bpt id="p1">**</bpt>Hide<ept id="p1">**</ept> option.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">このフィールドは 2 つのテーブルの関連付けに使用されるため、フィールドを右クリックして<bpt id="p1">**</bpt>非表示<ept id="p1">**</ept>オプションを選択するとエンド ユーザーから非表示にすることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Relate invoices and customers</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">請求書および顧客を関連付ける</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>If you are on the November 2016 version of the platform or later, you can relate the surrogate keys already created within entity store.</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">2016 年 11 月以降のバージョン プラットフォームでは、既にエンティティ ストア内で作成された代理キーを関連付けることができます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>If not, you must relate the surrogate keys that you created manually.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それ以外の場合は、手動で作成した代理キーを関連付ける必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Next you will create a relationship between <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerInvoices<ept id="p1">**</ept> and <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph2">\_</ph>Customers<ept id="p2">**</ept> entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、<bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerInvoices<ept id="p1">**</ept> と <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph2">\_</ph>Customers<ept id="p2">**</ept> のエンティティのリレーションシップを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Click the <bpt id="p1">**</bpt>Manage Relationships<ept id="p1">**</ept> button on the Power BI ribbon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI リボンの<bpt id="p1">**</bpt>関係の管理<ept id="p1">**</ept>ボタンをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>You will see the <bpt id="p1">**</bpt>Manage Relationships<ept id="p1">**</ept> dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>リレーションシップの管理<ept id="p1">**</ept> ダイアログ ボックスが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Click the <bpt id="p1">**</bpt>New<ept id="p1">**</ept> button.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新規<ept id="p1">**</ept>ボタンをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>In the <bpt id="p1">**</bpt>Create Relationship<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>SalesCubeV2CustomerInvoices<ept id="p2">**</ept> as the first table in the drop-down list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係の作成<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>SalesCubeV2CustomerInvoices<ept id="p2">**</ept> をドロップダウン リストの最初のテーブルとして選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Scroll to the right and select the <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept> field as the column to relate to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右にスクロールし、関連する列として <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept> フィールドを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>In the second drop-down list select <bpt id="p1">**</bpt>SalesCubeV2Customer<ept id="p1">**</ept> as the table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2 番目のドロップダウン リストで、<bpt id="p1">**</bpt>SalesCubeV2Customer<ept id="p1">**</ept> をテーブルとして選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Scroll to the right and select <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept> as the column to relate to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右にスクロールし、関連する列として <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Select the <bpt id="p1">**</bpt>Make this relationship active<ept id="p1">**</ept> option if it is not already selected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>この関係を有効にする<ept id="p1">**</ept> オプションがまだオンになっていない場合はオンにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックして続行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>You will notice the newly created relationship in the <bpt id="p1">**</bpt>Manage Relationships<ept id="p1">**</ept> dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しく作成されたリレーションシップは <bpt id="p1">**</bpt>リレーションシップの管理<ept id="p1">**</ept> ダイアログ ボックスでわかります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Click the <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> button.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>閉じる<ept id="p1">**</ept>ボタンをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Create a Sales by state report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">都道府県別売上レポートを作成する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>To create a report that shows sales by customer group, drag the <bpt id="p1">**</bpt>CustomerInvoiceAmountAccountingCurrency<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerIncoices<ept id="p2">**</ept> table and drop it on the Power BI desktop canvas.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客グループによる売上を示すレポートを作成するには、<bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerIncoices<ept id="p2">**</ept> テーブルから <bpt id="p1">**</bpt>CustomerInvoiceAmountAccountingCurrency<ept id="p1">**</ept> フィールドをドラッグして、Power BI デスクトップ キャンバスにドロップします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Next, drag the <bpt id="p1">**</bpt>CustomerGroupName<ept id="p1">**</ept> field in the <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p2">**</ept> table to the same grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、<bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p2">**</ept> テーブルの <bpt id="p1">**</bpt>CustomerGroupName<ept id="p1">**</ept> フィールドを同じグリッドにドラッグします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Change the chart type to a doughnut chart.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グラフの種類をドーナツ グラフに変更します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>You should see a report similar to the following.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のようなレポートが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Power BI Doughnut Chart<ept id="p1">](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Power BI ドーナツ グラフ<ept id="p1">](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>You can create additional visuals using the Power BI desktop.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI デスクトップを使用して、追加のビジュアルを作成することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>When you save, you will notice that the file has a <bpt id="p1">**</bpt>PBIX<ept id="p1">**</ept> extension.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">保存するとき、ファイルに <bpt id="p1">**</bpt>PBIX<ept id="p1">**</ept> 拡張子が付いていることがわかります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Save the report to your desktop.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートをデスクトップに保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>At this point the report is fully functional (with data from your environment) and you can continue to use the Power BI desktop or upload this report to PowerBI.com and continue with data exploration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この時点でレポートは (環境のデータで) 完全に機能しており、Power BI デスクトップを引き続き使用するか、このレポートを PowerBI.com にアップロードしてデータの検索を続行できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Next, you will migrate this report to a production environment using LCS so that you can see this report with production data and share it with other users.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、LCS を使用してこのレポートを実稼働環境に移行し、生産データとともにこのレポートを表示して、他のユーザーと共有できるようにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Publish the report and the model</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートおよびモデルを公開</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Publishing a report and model requires uploading the report to Lifecycle Services, migrating the aggregate measurement to your production environment, configuring the client to point to the correct LCS library, and publishing your reports in your production environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートとモデルの発行には、Lifecycle Services へのレポートのアップロード、集計単位の実稼動環境への移行、適切な LCS ライブラリをポイントするためのクライアントの構成、実稼働環境でのレポートの発行が必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Upload the report to Lifecycle Services</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートを Lifecycle Services にアップロード</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Microsoft Dynamics Lifecycle Services (LCS) is the tool used to migrate development artifacts from developer to production environments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics Lifecycle Services (LCS) は、開発者から実稼働環境に開発コンポーネントを移行するために使用するツールです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>In the May 2016 update, LCS supports migrating PBIX files (authored using the entity store) between environments.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">2016 年 5 月の更新プログラムで、LCS は環境間の PBIX ファイルの移行 (エンティティ格納を使用して作成) をサポートします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>Open <bpt id="p1">[</bpt>LCS<ept id="p1">](https://lcs.dynamics.com/)</ept> from the developer environment.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">開発環境から <bpt id="p1">[</bpt>LCS<ept id="p1">](https://lcs.dynamics.com/)</ept> を起動します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>If you haven’t created a project in the LCS environment, create a project.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">LCS 環境で、プロジェクトを作成していない場合は、プロジェクトを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Scroll to the right and you will notice the <bpt id="p1">**</bpt>Asset Library<ept id="p1">**</ept> icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右にスクロールし、<bpt id="p1">**</bpt>アセット ライブラリ<ept id="p1">**</ept> アイコンを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Click the icon and launch <bpt id="p1">**</bpt>Asset Library<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アイコンをクリックし、<bpt id="p1">**</bpt>アセット ライブラリ<ept id="p1">**</ept>を起動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Notice that the asset library enables adding <bpt id="p1">**</bpt>PowerBI report models<ept id="p1">**</ept> (PBIX files) as implementation artifacts to a project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アセット ライブラリを使用して、プロジェクトに <bpt id="p1">**</bpt><ph id="1">Power BI</ph> レポート モデル<ept id="p1">**</ept> (PBIX ファイル) を実装コンポーネントとして追加できることに注意します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Select the plus (+) icon to add a new asset.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プラス記号 (+) を選択し、新しい資産を追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Provide a name and a description.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前と説明を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Click <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept> and then locate the file that you saved in an earlier step.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アップロード<ept id="p1">**</ept>をクリックし、前の手順で保存したファイルを探します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>After you successfully upload the file, click <bpt id="p1">**</bpt>Confirm<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルを正常にアップロードした後、<bpt id="p1">**</bpt>確定<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Notice that the file is uploaded into LCS as an implementation asset.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルが実装アセットとして LCS にアップロードされることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>LCS supports managing versions and releases for Power BI reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS は、バージョン管理をサポートして、Power BI レポートをリリースします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>You can maintain several versions and publish reports to other environments, just as you would for other implementation artifacts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他の実装コンポーネントに対するのと同じ方法で、複数のバージョンを管理してレポートを他環境に公開することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Because you added the PBIX files as an asset within an LCS project, environments that you deployed using that project will have access to this report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PBIX ファイルを LCS プロジェクト内の資産として追加したため、そのプロジェクトを使用して配備した環境はこのレポートにアクセスできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Optionally, you can publish this report so that all of your projects can access the shared assets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じて、すべてのプロジェクトが共用資産にアクセスできるように、このレポートを発行することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>If you are a partner or an ISV, and want to share this report with your customers, you would share this asset to your global library and enable your customers to import the asset into their respective LCS projects.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パートナーまたは ISV であり、お客様とこのレポートを共有する場合は、グローバル ライブラリにこの資産を共有し、顧客が資産をそれぞれの LCS プロジェクトにインポートできるようにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>To do this, select the <bpt id="p1">**</bpt>Save to my library<ept id="p1">**</ept> option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これを行うには、<bpt id="p1">**</bpt>マイライブラリに保存<ept id="p1">**</ept> オプションを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Migrate the aggregate measurement to a production environment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集計の測定の実稼働環境への移行</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>You need to migrate the aggregate measurement that you modified in the developer environment to the production environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発環境で修正した集計測定を実稼働環境に移行する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>You can follow the instructions in Generate a deployable package.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置可能パッケージを生成の指示に従うことができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>create-apply-deployable-package.md.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">create-apply-deployable-package.md.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>After you successfully publish the model, perform the steps outlined in the <bpt id="p1">**</bpt>Refresh the entity store<ept id="p1">**</ept> section of this tutorial, so that the entity store is updated with data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルを正常に公開した後、このチュートリアルの<bpt id="p1">**</bpt>エンティティ ストアを更新<ept id="p1">**</ept>セクションの説明している手順に従って実行し、エンティティ ストアはデータを更新できるようにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Configure an LCS project</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS プロジェクトをコンフィギュレーションする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>If you haven’t already done so, associate your environment with an LCS project so that Finance and Operations is able to consume assets within the project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">まだ実行していない場合は、環境と LCS プロジェクトを関連付けることで、Finance and Operations がプロジェクト内の資産を消費できるようにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Launch the client from the instance that you want to use to deploy the Power BI reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI レポートの配置に使用するインスタンスからクライアントを起動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Typically this is the test or a production instance where you want to see a report with a different set of data than what you worked with as a report developer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは通常、データ セットのレポートを表示するテストまたは本番のインスタンスであり、レポート開発者として作業したものとは異なります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Open <bpt id="p1">**</bpt>System Administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>System parameters<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept><ph id="ph1">&amp;gt;</ph><bpt id="p2">**</bpt>設定<ept id="p2">**</ept><ph id="ph2">&amp;gt;</ph><bpt id="p3">**</bpt>システム パラメーター<ept id="p3">**</ept>を開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>Select the <bpt id="p1">**</bpt>Help<ept id="p1">**</ept> tab. Using the <bpt id="p2">**</bpt>Lifecycle services help configuration<ept id="p2">**</ept> list box, select the LCS project that you uploaded the PBIX file to.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ヘルプ<ept id="p1">**</ept> タブを選択します。<bpt id="p2">**</bpt>Lifecycle Services のヘルプ構成<ept id="p2">**</ept> ボックスの一覧を使って、PBIX ファイルをアップロードした LCS プロジェクトを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>This form will only show the LCS projects that the current user has access to.</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">このフォームには、現在のユーザーがアクセスできる LCS プロジェクトのみが表示されます。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>If this step is being performed by an administrator, either the administrator needs to have access to the project, or the PBIX artifacts need to be imported into a project that the administrator has access to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このステップが管理者によって実行される場合、管理者がプロジェクトにアクセスする必要があるか、または PBIX コンポーネントが管理者がアクセスできるプロジェクトにインポートする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Publish Power BI reports to a production environment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI レポートを実稼働環境に公開</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Open <bpt id="p1">**</bpt>System Administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Deploy PowerBI<ept id="p3">**</ept> from the client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアントから<bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept><ph id="ph1">&amp;gt;</ph><bpt id="p2">**</bpt>設定<ept id="p2">**</ept><ph id="ph2">&amp;gt;</ph><bpt id="p3">**</bpt>PowerBI の配置<ept id="p3">**</ept>を開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>You will see the file that you uploaded to LCS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS にアップロードしたファイルが分かります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>Select the <bpt id="p1">**</bpt>Sales Report<ept id="p1">**</ept> file and select the <bpt id="p2">**</bpt>Deploy Power BI files<ept id="p2">**</ept> option on the menu bar.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>売上報告書<ept id="p1">**</ept> ファイルを選択し、メニュー バーで <bpt id="p2">**</bpt>Power BI ファイルの配置<ept id="p2">**</ept>オプションを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>You may be asked to consent publishing to the PowerBI.com service.</source><target logoport:matchpercent="93" state="translated" state-qualifier="fuzzy-match">PowerBI.com サービスへの公開に同意するよう求められる場合があります。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>Click the link to provide consent.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同意するには、リンクをクリックしてください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>When consent is complete, you need to go back to the original browser window and click the <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> button.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同意が完了すると、元のブラウザー ウィンドウに戻り、<bpt id="p1">**</bpt>閉じる<ept id="p1">**</ept> ボタンをクリックする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>After you successfully publish the file, the Power BI report will appear in your PowerBI.com subscription.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルを正常に公開した後、Power BI レポートは PowerBI.com サブスクリプションに表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>You will notice that the report now points to the entity store in the production environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートが実稼働環境にあるエンティティ格納を現在指さしていることがわかります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>Continuing with PowerBI.com</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PowerBI.com での継続</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>As an administrator or a power user, you have successfully authored and published a Power BI report to the production environment using the entity store.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理者またはパワーユーザーは、エンティティ格納を使用して実稼動環境に Power BI レポートを作成し公開することに成功しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>You can perform several additional steps using Power BI functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI 機能を使用して、いくつかの追加手順を実行することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Optionally, you can apply record-level security to the dataset to restrict users from seeing data they are not allowed to view in Power BI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じて、データセットにレコード レベルのセキュリティを適用して、Power BI での表示が許可されていないデータの表示をユーザーに制限することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>You can create an organizational content pack and share it among users in a group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組織のコンテンツ パックを作成して、グループ内のユーザーの間で共有することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>You can export datasets, reports, and dashboards from your PowerBI.com instance as a new content pack to a selected group of users.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PowerBI.com インスタンスから、データベース、レポート、およびダッシュボードを、新しいコンテンツパックとして、選択したユーザーのグループにエクスポートすることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Note that organizational content packs adhere to any record-level security rules that you defined at the dataset level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組織のコンテンツ パックは、データセット レベルで定義した任意のレコード レベルのセキュリティ ルールに従うことに注意してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>Users can personalize their workspaces by adding Power BI tiles or reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI タイルまたはレポートを追加することによって、自分のワークスペースをパーソナライズできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加リソース</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source><bpt id="p1">[</bpt>Modeling and using aggregate data<ept id="p1">](../analytics/model-aggregate-data.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>集計データのモデリングと使用<ept id="p1">](../analytics/model-aggregate-data.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
+description: このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Microsoft Dynamics 365 for Finance and Operations のエンティティ格納に移行します。 例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。
+author: MilindaV2
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer, IT Pro
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 94203
+ms.assetid: e992cdd8-abe8-42d0-97ad-6165822abbba
+ms.search.region: Global
+ms.author: milindav
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: Platform update 1
+ms.openlocfilehash: b889fb0c59745cc38c8e21ee6f2d926033c76295
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595475"
+---
+# <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a><span data-ttu-id="e6a21-104">アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行</span><span class="sxs-lookup"><span data-stu-id="e6a21-104">Migrate upgraded AX 2012 R3 sales cubes to the entity store</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="e6a21-105">このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Microsoft Dynamics 365 for Finance and Operations のエンティティ格納に移行します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-105">In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="e6a21-106">例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-106">You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.</span></span>
+
+<span data-ttu-id="e6a21-107">エンティティ格納は、次の図に示すように、ほぼリアルタイムの Microsoft Power BI 統合シナリオをサポートします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-107">The entity store will support near real-time Microsoft Power BI integration scenarios, as shown in the following diagram.</span></span> <span data-ttu-id="e6a21-108">エンティティ格納と Power BI 統合の概要については、「[エンティティ格納と Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6a21-108">For an overview of Power BI integration with entity store, see [Power BI integration with entity store](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).</span></span> <span data-ttu-id="e6a21-109">[![Power BI アークテクチャ ダイアグラム](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)</span><span class="sxs-lookup"><span data-stu-id="e6a21-109">[![Power BI Architecture diagram](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)</span></span>
+
+## <a name="new-power-bi-features-included-in-the-may-2016-and-november-2016-updates"></a><span data-ttu-id="e6a21-110">2016 年 5 月および 2016 年 11 月の更新プログラムに含まれる Power BI の新機能</span><span class="sxs-lookup"><span data-stu-id="e6a21-110">New Power BI features included in the May 2016 and November 2016 updates</span></span>
+<span data-ttu-id="e6a21-111">このチュートリアルでは、Dynamics 365 for Operations の 2016 年 5 月以降の更新プログラムが必要です。</span><span class="sxs-lookup"><span data-stu-id="e6a21-111">This tutorial requires the Dynamics 365 for Operations May 2016 update or later.</span></span> <span data-ttu-id="e6a21-112">このチュートリアルでは、次の新しい機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-112">You will use the following new capabilities in this tutorial:</span></span>
+
+-   <span data-ttu-id="e6a21-113">エンティティ格納で集計測定をステージングし、Dynamics AX のデータを更新します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-113">Stage an aggregate measurement in the entity store and refresh the data from Dynamics AX.</span></span> <span data-ttu-id="e6a21-114">メモリ内リアルタイムの集計測定値には、このオプションの方を選択する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-114">You might prefer this option over in-memory real time aggregate measurements when:</span></span>
+    -   <span data-ttu-id="e6a21-115">Dynamics AX 2012 キューブをアップグレードします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-115">You upgrade a Dynamics AX 2012 cube.</span></span>
+    -   <span data-ttu-id="e6a21-116">集計の測定は非常に大規模です。</span><span class="sxs-lookup"><span data-stu-id="e6a21-116">Your aggregate measurements are very large.</span></span>
+    -   <span data-ttu-id="e6a21-117">データの新しさ (待機時間) は、数分から数時間まで報告することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-117">Data freshness (latency) from a few minutes up to a few hours is acceptable for reporting.</span></span>
+-   <span data-ttu-id="e6a21-118">定期的な更新をスケジュールするには、バッチ フレームワークを使用します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-118">Use the batch framework to schedule a recurring refresh.</span></span> <span data-ttu-id="e6a21-119">このリリースでは、完全な更新のみが有効になります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-119">For this release, only a full refresh is enabled.</span></span>
+-   <span data-ttu-id="e6a21-120">開発者/テスト環境で Power BI デスクトップを使用してレポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-120">Create reports using Power BI desktop in a developer/test environment.</span></span>
+-   <span data-ttu-id="e6a21-121">Power BI コンテンツを作成するときに、直接クエリ オプションを活用できます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-121">Leverage the direct query option when creating Power BI content.</span></span> <span data-ttu-id="e6a21-122">たとえば、データ更新のメカニズムとして OData に依存せず、大きなモデルを作成できます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-122">For example, you can create larger models without relying on OData as the data refresh mechanism.</span></span>
+-   <span data-ttu-id="e6a21-123">Lifecycle Services (LCS) を使用してレポートを開発環境から実稼働環境に移行します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-123">Migrate reports from your development environment to a production environment using Lifecycle Services (LCS).</span></span>
+-   <span data-ttu-id="e6a21-124">パートナーまたは ISV として、Power BI コンテンツを LCS ソリューションの一部として顧客に配布することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-124">As a partner or an ISV you can distribute Power BI content as part of an LCS solution to your customers.</span></span>
+-   <span data-ttu-id="e6a21-125">**11 月の更新 (プラットフォーム リリース 1611) 以降を使用している場合**、このドキュメントのいくつかの手順は、エンティティ ストアを更新するプロセスの一部です。手動で実行する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="e6a21-125">**If you're using the November update (platform release 1611)** or later, some steps in this document are part of the process to refresh the entity store - you do not need to perform them manually.</span></span>
+
+## <a name="change-upgraded-aggregate-measurement-properties"></a><span data-ttu-id="e6a21-126">アップグレードされた集計の測定プロパティの変更</span><span class="sxs-lookup"><span data-stu-id="e6a21-126">Change upgraded aggregate measurement properties</span></span>
+<span data-ttu-id="e6a21-127">コード アップグレード プロセスの一環として、Dynamics AX 2012 のアプリケーション オブジェクト ツリー (AOT) からの分析サービス プロジェクトを新しい集計測定メタデータ形式に移行することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-127">As part of the code upgrade process, analysis services projects from the Application Object Tree (AOT) in Dynamics AX 2012 can be migrated to the new aggregate measurements metadata format.</span></span>
+
+1.  <span data-ttu-id="e6a21-128">Visual Studio を起動し、アプリケーション スイートで新しいプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-128">Launch Visual Studio and create a new project in Application Suite.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="e6a21-129">モデルを作成し、カスタマイズされた集計測定をそのモデルに含めることができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-129">You can create a model and include the customized aggregate measurement within that model.</span></span> <span data-ttu-id="e6a21-130">詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6a21-130">For more information, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).</span></span>
+
+2.  <span data-ttu-id="e6a21-131">アプリケーション エクスプローラを開きます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-131">Open Application Explorer.</span></span> <span data-ttu-id="e6a21-132">**分析** &gt; **分析視点** &gt; **集計の測定**と移動します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-132">Navigate to **Analytics** &gt; **Perspectives** &gt; **Aggregate measurements**.</span></span> <span data-ttu-id="e6a21-133">Finance and Operations の現在のバージョンに同梱されている測定だけでなく、Dynamics AX 2012 R3 からアップグレードされた集計の測定のセットが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-133">You will notice a set of aggregate measurements that were upgraded from Dynamics AX 2012 R3, as well as the measurements that ship in the current version of Finance and Operations.</span></span>
+3.  <span data-ttu-id="e6a21-134">**SalesCube** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-134">Select **SalesCube**.</span></span> <span data-ttu-id="e6a21-135">右クリックし、**プロジェクトで複製** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-135">Right-click and select **Duplicate in project**.</span></span>
+4.  <span data-ttu-id="e6a21-136">**SalesCubeCopy** という名前の集計の測定がプロジェクトに追加されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-136">An aggregate measurement with the name **SalesCubeCopy** will be added to the project.</span></span>
+5.  <span data-ttu-id="e6a21-137">この測定値の名前を変更します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-137">Rename this measurement.</span></span> <span data-ttu-id="e6a21-138">ソリューション エクスプローラーで、**SalesCubeCopy** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-138">Select **SalesCubeCopy** in Solution Explorer.</span></span> <span data-ttu-id="e6a21-139">右クリックし、**名前の変更** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-139">Right-click and select **Rename**.</span></span> <span data-ttu-id="e6a21-140">**SalesCubeV2** という新しい名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-140">Enter **SalesCubeV2** as the new name.</span></span>
+6.  <span data-ttu-id="e6a21-141">Aggregate measurement designer を起動するには、**SalesCubeV2** をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-141">Double-click **SalesCubeV2** to launch the Aggregate measurement designer.</span></span> <span data-ttu-id="e6a21-142">Dynamics AX 2012 から移行された集計の測定の構造体を確認します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-142">Notice the structure of the aggregate measurement that was migrated from Dynamics AX 2012.</span></span>
+7.  <span data-ttu-id="e6a21-143">Dynamics AX 2012 の Sales キューブは、販売に関連する広範な分野を包含していました。</span><span class="sxs-lookup"><span data-stu-id="e6a21-143">The Sales cube in Dynamics AX 2012 encompassed a broad subject area related to Sales.</span></span> <span data-ttu-id="e6a21-144">この場合、アップグレードしたメタデータを使用してより小規模で焦点を絞った Power BI モデルを作成しましょう。</span><span class="sxs-lookup"><span data-stu-id="e6a21-144">In this case, let’s create a smaller, more focused Power BI model using the metadata that was upgraded.</span></span> <span data-ttu-id="e6a21-145">**販売注文明細行**のメジャー グループを展開し、メジャー リストおよび分析コードの参照を確認します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-145">Expand the **Sales Order Lines** measure group and review the list of measures and dimension references.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="e6a21-146">モデリング機能を活用することで、このモデルをすばやく機能拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-146">Leveraging the modeling capabilities you can quickly make a few enhancements to this model.</span></span> <span data-ttu-id="e6a21-147">改善の提案:</span><span class="sxs-lookup"><span data-stu-id="e6a21-147">Suggestions for improvements:</span></span>
+    >
+    > -   <span data-ttu-id="e6a21-148">メジャー グループ (または分析コード) をモデル化するために使用されたビュー/テーブルをエンティティに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-148">Replace views/tables that have been used to model the measure group (and/or dimensions) with an entity.</span></span> <span data-ttu-id="e6a21-149">基になるビューを使用してエンティティをモデリングして、対応するエンティティでビューを置き換えることができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-149">You can model an entity using the underlying view and replace the view with the corresponding entity.</span></span> <span data-ttu-id="e6a21-150">これにより、インクリメンタル リフレッシュおよびセキュリティなど、今後登場する機能を活用できます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-150">This will enable you to leverage upcoming features such as incremental refresh and security.</span></span>
+    > -   <span data-ttu-id="e6a21-151">属性ノードに対応するフィールドを追加することで、不要な分析コードの参照を削除します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-151">Remove unwanted dimension references by adding the corresponding field to the attributes node.</span></span> <span data-ttu-id="e6a21-152">たとえば、メジャー グループの**サイズ**フィールドが十分に説明され、サイズの分析コード参照は削除されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-152">For example, the Sizes dimension reference can be removed because the **Size** field in the measure group is sufficiently descriptive.</span></span> <span data-ttu-id="e6a21-153">これにより、クエリのランタイム パフォーマンスとリフレッシュ時間が向上します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-153">This will improve the runtime performance of queries as well as refresh times.</span></span>
+
+8.  <span data-ttu-id="e6a21-154">集計測定デザイナーで **SalesCubeV2** ルート ノードを選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-154">Select the **SalesCubeV2** root node in the Aggregate measurement designer.</span></span> <span data-ttu-id="e6a21-155">右クリックし、**プロパティ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-155">Right-click and select **Properties**.</span></span>
+9.  <span data-ttu-id="e6a21-156">アップグレード中に、集計の測定はレガシ プロパティ フラグ **SSASCube** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-156">During upgrade, aggregate measurements are set to the legacy property flag, **SSASCube**.</span></span> <span data-ttu-id="e6a21-157">サポートされる使用法の 2 つのタイプのいずれかに、このプロパティを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-157">You need to change this property to one of two supported usage types.</span></span> <span data-ttu-id="e6a21-158">以前は、**InMemoryRealTime** は集計測定値の使用方法としてサポートされていました。</span><span class="sxs-lookup"><span data-stu-id="e6a21-158">Previously, **InMemoryRealTime** was supported as usage for aggregate measurements.</span></span> <span data-ttu-id="e6a21-159">**StagedEntityStore** は新しい使用タイプとしてサポートされています。</span><span class="sxs-lookup"><span data-stu-id="e6a21-159">**StagedEntityStore** is supported as a new usage type.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="e6a21-160">埋め込み BI シナリオおよび Power BI 統合に集計の測定を使用する場合は、用途プロパティを InMemoryRealTime に変更します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-160">Modify the usage property to InMemoryRealTime if you plan to use the Aggregate measurement for embedded BI scenarios as well as Power BI integration.</span></span> <span data-ttu-id="e6a21-161">Power BI または Cortana Intelligence との統合に対してのみ集計測定を使用している場合は、**StagedEntityStore** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-161">If you are using the Aggregate measurement only for Power BI or Cortana Intelligence Suite integration, select **StagedEntityStore**.</span></span>
+
+10. <span data-ttu-id="e6a21-162">プロジェクトを保存します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-162">Save the project.</span></span> <span data-ttu-id="e6a21-163">ソリューション エクスプローラーでプロジェクトを選択し、**リビルド** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-163">Right-click the project in Solution Explorer and select **Rebuild**.</span></span>
+11. <span data-ttu-id="e6a21-164">再構築操作を完了した後、プロジェクトを保存し、Visual Studio を閉じます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-164">After the rebuild operation is finished, save the project, and then close Visual Studio.</span></span> <span data-ttu-id="e6a21-165">これで開発作業は完了です。</span><span class="sxs-lookup"><span data-stu-id="e6a21-165">This completes the development work.</span></span> <span data-ttu-id="e6a21-166">レポート作成者またはパワー ユーザーとしてレポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-166">You will author reports as a report developer or a power user.</span></span>
+
+## <a name="refresh-the-entity-store"></a><span data-ttu-id="e6a21-167">エンティティ格納を更新</span><span class="sxs-lookup"><span data-stu-id="e6a21-167">Refresh the entity store</span></span>
+<span data-ttu-id="e6a21-168">管理者は、クライアントを使用して集計測定の更新をコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-168">As an administrator you can configure the refresh of the aggregate measurement using the client.</span></span>
+
+1.  <span data-ttu-id="e6a21-169">Dynamics AX クライアントを起動して、**システム管理** &gt; **設定** &gt; **エンティティ格納**に移動します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-169">Launch the Dynamics AX client and navigate to **System Administration** &gt; **Setup** &gt; **Entity Store**.</span></span> <span data-ttu-id="e6a21-170">**エンティティ格納** フォームには、エンティティ格納に配置するために使用できる集計測定の一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-170">The **Entity Store** form shows a list of aggregate measurements that are available for deployment to the entity store.</span></span>
+2.  <span data-ttu-id="e6a21-171">**売上キューブ** (Dynamics AX 2012 からアップグレードされた) がエンティティ格納への配置に使用できないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-171">Notice that **Sales Cube** (which was upgraded from Dynamics AX 2012) is not available for deployment to the entity store.</span></span> <span data-ttu-id="e6a21-172">**SalesCubeV2**、前の手順で作成したものをエンティティ格納に展開できます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-172">**SalesCubeV2**, which you created in the previous step, can be deployed to the entity store.</span></span>
+3.  <span data-ttu-id="e6a21-173">リストから **SalesCubeV2** を選択し、**更新** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-173">Select **SalesCubeV2** from the list, and click the **Refresh** button.</span></span> <span data-ttu-id="e6a21-174">**更新** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-174">The **Refresh** dialog box will display.</span></span> <span data-ttu-id="e6a21-175">**バックグラウンドで実行**タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-175">Expand the **Run in the background** tab.</span></span>
+4.  <span data-ttu-id="e6a21-176">**タスクの説明** フィールドにわかりやすい名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-176">Provide a descriptive name in the **Task description** field.</span></span> <span data-ttu-id="e6a21-177">必要に応じて、**定期的なアイテム** タブを選択し、1 回限りの更新ではなく定期的なスケジュールを作成できます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-177">Optionally, you can select the **Recurrence** tab and create a recurring schedule instead of a one-time refresh.</span></span> <span data-ttu-id="e6a21-178">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-178">Click **OK**.</span></span>
+5.  <span data-ttu-id="e6a21-179">エンティティ ストア内の集計測定値をリフレッシュするためのバッチ ジョブが作成されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-179">The system will create a batch job for refresh of the aggregate measurement in the entity store.</span></span>
+
+## <a name="authoring-a-report-on-sales-by-state-with-power-bi-desktop"></a><span data-ttu-id="e6a21-180">Power BI desktop を使用して都道府県別売上レポートの作成</span><span class="sxs-lookup"><span data-stu-id="e6a21-180">Authoring a report on Sales by State with Power BI desktop</span></span>
+<span data-ttu-id="e6a21-181">このステップでは、「[Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=45331)」からダウンロードできる Power BI デスクトップ ツールをインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-181">This step requires that you the install Power BI desktop tool that can be downloaded from [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=45331).</span></span>
+
+1.  <span data-ttu-id="e6a21-182">Power BI デスクトップを起動します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-182">Launch Power BI desktop.</span></span> <span data-ttu-id="e6a21-183">更新を適用することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-183">You may need to apply updates.</span></span> <span data-ttu-id="e6a21-184">ウェルカム ページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-184">A welcome page will display.</span></span> <span data-ttu-id="e6a21-185">**データの取得**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-185">Click **Get data**.</span></span>
+2.  <span data-ttu-id="e6a21-186">または、Power BI デスクトップが起動したとき、**ホーム**タブの**データの取得** &gt; **SQL Server** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-186">Alternatively, when Power BI desktop launches, on the **Home** tab select **Get Data** &gt; **SQL Server**.</span></span>
+3.  <span data-ttu-id="e6a21-187">**SQL Server データベース** ダイアログ ボックスで、サーバー名とエンティティ ストア データベースの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-187">In the **SQL Server Database** dialog box, enter the server name and the name of the entity store database.</span></span> <span data-ttu-id="e6a21-188">開発環境を配置する場合は、“.” を入力できます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-188">If you deployed a developer environment, you can enter “.”</span></span> <span data-ttu-id="e6a21-189">サーバー名として、および **AxDW** をデータベースとして。</span><span class="sxs-lookup"><span data-stu-id="e6a21-189">as the server name and **AxDW** as the database name.</span></span> <span data-ttu-id="e6a21-190">テスト環境で作業している場合、システム管理者からこれらのパラメータを取得する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-190">If you are working in a test environment, you need to get these parameters from your system administrator</span></span>
+4.  <span data-ttu-id="e6a21-191">**DirectQuery** オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-191">Select the **DirectQuery** option.</span></span> <span data-ttu-id="e6a21-192">この練習では、エンティティ格納に直接実行される Power BI レポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-192">In this exercise, you will create Power BI reports that are executed directly on the entity store.</span></span> <span data-ttu-id="e6a21-193">**インポート** オプションを使用した場合、Power BI ではエンティティ格納のデータがキャッシュされるため、Power BI モデルを定期的に更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-193">If you had used the **Import** option, Power BI would cache data from the entity store and you would need to periodically refresh the Power BI model.</span></span> <span data-ttu-id="e6a21-194">**エンティティ格納を使用して書かれたレポートでは、インポート モードは現在サポートされていません**。</span><span class="sxs-lookup"><span data-stu-id="e6a21-194">**Import mode is currently not supported with reports written using entity store**.</span></span> <span data-ttu-id="e6a21-195">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-195">Click **OK**.</span></span>
+5.  <span data-ttu-id="e6a21-196">次に、**ナビゲーター** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-196">Next you will see the **Navigator** dialog box.</span></span> <span data-ttu-id="e6a21-197">ナビゲーターで、レポートの対象となるテーブルとビューをエンティティ格納から選択できます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-197">Navigator enables you to select tables and views from the entity store that you want to report on.</span></span> <span data-ttu-id="e6a21-198">検索ボックスで**販売**を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-198">Enter **Sales** in the search box.</span></span> <span data-ttu-id="e6a21-199">以前に作成された **SalesCubeV2** 集計測定に関連するエンティティがフィルタリングされます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-199">The system will filter entities that are related to the **SalesCubeV2** aggregate measurement that was previously created.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="e6a21-200">エンティティ ストアは作成された集計の測定をステージします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-200">The entity store stages the aggregate measurements that have been created.</span></span> <span data-ttu-id="e6a21-201">それぞれの集計測定内のエンティティには接頭語が付けられて別々のテーブルとして保管されますが、Power BI デスクトップを使用すると複数の集計測定からのデータを結合することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-201">While entities within each aggregate measurement are prefixed and stored as individual tables, Power BI desktop enables you to combine data from multiple aggregate measurements.</span></span>
+
+6.  <span data-ttu-id="e6a21-202">都道府県別の売上を表示するレポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-202">You will create a report that shows sales by state.</span></span> <span data-ttu-id="e6a21-203">ナビゲーターから **SalesCubeV2\_Customer** および **SalesCubeV2\_CustomerInvoices** を選択し、**読み込み** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-203">Select **SalesCubeV2\_Customer** and **SalesCubeV2\_CustomerInvoices** from Navigator and click **Load**.</span></span>
+7.  <span data-ttu-id="e6a21-204">選択したエンティティ (右端) に**フィールド**が存在する Power BI デザイナーが、使用可能な視覚化とともに表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-204">You will notice Power BI designer with **Fields** present in the entities that you have chosen (on the far right), as well as available visualization.</span></span>
+
+### <a name="create-a-surrogate-key-that-links-customers-and-invoices-applies-to-platform-versions-before-november-2016-update"></a><span data-ttu-id="e6a21-205">顧客と請求書をリンクする代理キーを作成する (2016 年 11 月アップデート以前のプラットフォームに適用)</span><span class="sxs-lookup"><span data-stu-id="e6a21-205">Create a surrogate key that links customers and invoices (applies to platform versions before November 2016 update)</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e6a21-206">プラットフォームの 2016 年 11 月以降のリリースで作業している場合は、この手順を実行する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="e6a21-206">You do not need to perform this step if you are working on the November 2016 release of the platform or later.</span></span> <span data-ttu-id="e6a21-207">代理キーは、エンティティ格納にステージングされる集計測定で生成されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-207">Surrogate keys are generated in aggregate measurements staged into entity store.</span></span> <span data-ttu-id="e6a21-208">Power BI デスクトップでは、複数のフィールド (複合キーとも呼ばれます) を使用してテーブル結合を関連付けることができません。</span><span class="sxs-lookup"><span data-stu-id="e6a21-208">Power BI desktop does not enable you to relate table joins using multiple fields (also known as, composite keys).</span></span> <span data-ttu-id="e6a21-209">**SalesCubeV2\_Customer** エンティティでは、代理キー (AX RecID など) が定義されていません。</span><span class="sxs-lookup"><span data-stu-id="e6a21-209">The **SalesCubeV2\_Customer** entity does not have a surrogate key (such as AX RecID) defined in it.</span></span> <span data-ttu-id="e6a21-210">次に、請求書に顧客エンティティを関連付けできる代理キーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-210">Next, you will create a surrogate key that enables relating a customer entity to invoices.</span></span>
+
+1.  <span data-ttu-id="e6a21-211">**SalesCubeV2\_CustomerInvoices** エンティティの横にある省略記号 (...) アイコンを選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-211">Select the ellipsis (…) icon next to the **SalesCubeV2\_CustomerInvoices** entity.</span></span> <span data-ttu-id="e6a21-212">右クリックし、**新しい列** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-212">Right-click and select **New Column**.</span></span>
+2.  <span data-ttu-id="e6a21-213">**フォーミュラ エディタ**ウィンドウに次の式を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-213">Enter the following expression in the **Formula editor** window.</span></span>
+
+```
+FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_CustomerInvoices[DATAAREAID], "-"), SalesCubeV2_CustomerInvoices[ORDERACCOUNT])
+```
+
+> [!NOTE]
+> <span data-ttu-id="e6a21-214">フィールド名または関数の最初の数文字を入力すると、エディターに候補フィールドの一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-214">When you enter the first few letters of the field name or function, the editor will display a list of candidate fields.</span></span> <span data-ttu-id="e6a21-215">これは、先行入力機能と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-215">This is called a type-ahead feature.</span></span> <span data-ttu-id="e6a21-216">この式をコピーして貼り付けるか、タイプ先行機能を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-216">You can either copy and paste this expression or use the type-ahead feature.</span></span>
+
+1.  <span data-ttu-id="e6a21-217">完了すると、式は次のようになるはずです。</span><span class="sxs-lookup"><span data-stu-id="e6a21-217">When completed, your formula should look similar to the following.</span></span>
+
+<span data-ttu-id="e6a21-218">[![Power BI フォーミュラ](./media/powerbiformula.png)](./media/powerbiformula.png)</span><span class="sxs-lookup"><span data-stu-id="e6a21-218">[![Power BI Formula](./media/powerbiformula.png)](./media/powerbiformula.png)</span></span>
+
+1.  <span data-ttu-id="e6a21-219">新しいフィールド **FKCustomer** が **SalesCubeV2\_CustomerInvoices** テーブルのフィールドの一覧に表示されていることに注意します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-219">Notice that a new field, **FKCustomer**, is shown in the list of fields for the **SalesCubeV2\_CustomerInvoices** table.</span></span> <span data-ttu-id="e6a21-220">このフィールドは 2 つのテーブルを関連付けるために使用されるので、フィールドを右クリックして**非表示**オプションを選択するとエンド ユーザーから非表示にすることができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-220">Because this field is used to relate two tables, you can hide it from end users by right-clicking the field and selecting the **Hide** option.</span></span>
+2.  <span data-ttu-id="e6a21-221">次に、**SalesCubeV2\_Customer** テーブルに類似したフィールドを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-221">Next, create a similar field in the **SalesCubeV2\_Customer** table.</span></span> <span data-ttu-id="e6a21-222">**SalesCubeV2\_Customer** エンティティの横にある省略記号 (...) アイコンを選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-222">Select the ellipsis (…) icon next to **SalesCubeV2\_Customer** entity.</span></span> <span data-ttu-id="e6a21-223">右クリックし、**新しい列** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-223">Right-click and select **New Column**.</span></span>
+3.  <span data-ttu-id="e6a21-224">**フォーミュラ エディタ**ウィンドウに次の式を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-224">Enter the following expression in the **Formula editor** window.</span></span>
+
+```
+FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), SalesCubeV2_Customer[CUSTOMER])
+```
+
+1.  <span data-ttu-id="e6a21-225">フィールド **FKCustomer** が **SalesCubeV2\_Customer** テーブルのフィールドの一覧に表示されていることに注意します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-225">Notice that the field **FKCustomer** is shown in the list of fields for the **SalesCubeV2\_Customer** table.</span></span> <span data-ttu-id="e6a21-226">このフィールドは 2 つのテーブルの関連付けに使用されるため、フィールドを右クリックして**非表示**オプションを選択するとエンド ユーザーから非表示にすることができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-226">Because this field is used for relating two tables, you can hide it from end users by right-clicking the field and selecting the **Hide** option.</span></span>
+
+### <a name="relate-invoices-and-customers"></a><span data-ttu-id="e6a21-227">請求書および顧客を関連付ける</span><span class="sxs-lookup"><span data-stu-id="e6a21-227">Relate invoices and customers</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e6a21-228">2016 年 11 月以降のバージョン プラットフォームでは、既にエンティティ ストア内で作成された代理キーを関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-228">If you are on the November 2016 version of the platform or later, you can relate the surrogate keys already created within entity store.</span></span> <span data-ttu-id="e6a21-229">それ以外の場合は、手動で作成した代理キーを関連付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-229">If not, you must relate the surrogate keys that you created manually.</span></span> <span data-ttu-id="e6a21-230">次に、**SalesCubeV2\_CustomerInvoices** と **SalesCubeV2\_Customers** のエンティティのリレーションシップを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-230">Next you will create a relationship between **SalesCubeV2\_CustomerInvoices** and **SalesCubeV2\_Customers** entities.</span></span>
+
+1.  <span data-ttu-id="e6a21-231">Power BI リボンの**関係の管理**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-231">Click the **Manage Relationships** button on the Power BI ribbon.</span></span> <span data-ttu-id="e6a21-232">**リレーションシップの管理** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-232">You will see the **Manage Relationships** dialog box.</span></span> <span data-ttu-id="e6a21-233">**新規**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-233">Click the **New** button.</span></span>
+2.  <span data-ttu-id="e6a21-234">**関係の作成**ダイアログ ボックスで、**SalesCubeV2CustomerInvoices** をドロップダウン リストの最初のテーブルとして選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-234">In the **Create Relationship** dialog box, select **SalesCubeV2CustomerInvoices** as the first table in the drop-down list.</span></span> <span data-ttu-id="e6a21-235">右にスクロールし、関連する列として **FKCustomer** フィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-235">Scroll to the right and select the **FKCustomer** field as the column to relate to.</span></span>
+3.  <span data-ttu-id="e6a21-236">2 番目のドロップダウン リストで、**SalesCubeV2Customer** をテーブルとして選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-236">In the second drop-down list select **SalesCubeV2Customer** as the table.</span></span> <span data-ttu-id="e6a21-237">右にスクロールし、関連する列として **FKCustomer** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-237">Scroll to the right and select **FKCustomer** as the column to relate to.</span></span>
+4.  <span data-ttu-id="e6a21-238">**この関係を有効にする** オプションがまだオンになっていない場合はオンにします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-238">Select the **Make this relationship active** option if it is not already selected.</span></span> <span data-ttu-id="e6a21-239">**OK** をクリックして続行します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-239">Click **OK** to continue.</span></span>
+5.  <span data-ttu-id="e6a21-240">新しく作成されたリレーションシップは **リレーションシップの管理** ダイアログ ボックスでわかります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-240">You will notice the newly created relationship in the **Manage Relationships** dialog box.</span></span> <span data-ttu-id="e6a21-241">**閉じる**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-241">Click the **Close** button.</span></span>
+
+### <a name="create-a-sales-by-state-report"></a><span data-ttu-id="e6a21-242">都道府県別売上レポートを作成する</span><span class="sxs-lookup"><span data-stu-id="e6a21-242">Create a Sales by state report</span></span>
+
+1.  <span data-ttu-id="e6a21-243">顧客グループによる売上を示すレポートを作成するには、**SalesCubeV2\_CustomerIncoices** テーブルから **CustomerInvoiceAmountAccountingCurrency** フィールドをドラッグして、Power BI デスクトップ キャンバスにドロップします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-243">To create a report that shows sales by customer group, drag the **CustomerInvoiceAmountAccountingCurrency** field from the **SalesCubeV2\_CustomerIncoices** table and drop it on the Power BI desktop canvas.</span></span> <span data-ttu-id="e6a21-244">次に、**SalesCubeV2\_Customer** テーブルの **CustomerGroupName** フィールドを同じグリッドにドラッグします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-244">Next, drag the **CustomerGroupName** field in the **SalesCubeV2\_Customer** table to the same grid.</span></span>
+2.  <span data-ttu-id="e6a21-245">グラフの種類をドーナツ グラフに変更します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-245">Change the chart type to a doughnut chart.</span></span> <span data-ttu-id="e6a21-246">次のようなレポートが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-246">You should see a report similar to the following.</span></span>
+
+<span data-ttu-id="e6a21-247">[![Power BI ドーナツ グラフ](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)</span><span class="sxs-lookup"><span data-stu-id="e6a21-247">[![Power BI Doughnut Chart](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)</span></span>
+
+1.  <span data-ttu-id="e6a21-248">Power BI デスクトップを使用して、追加のビジュアルを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-248">You can create additional visuals using the Power BI desktop.</span></span> <span data-ttu-id="e6a21-249">保存するとき、ファイルに **PBIX** 拡張子が付いていることがわかります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-249">When you save, you will notice that the file has a **PBIX** extension.</span></span>
+2.  <span data-ttu-id="e6a21-250">レポートをデスクトップに保存します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-250">Save the report to your desktop.</span></span>
+3.  <span data-ttu-id="e6a21-251">この時点でレポートは (環境のデータで) 完全に機能しており、Power BI デスクトップを引き続き使用するか、このレポートを PowerBI.com にアップロードしてデータの検索を続行できます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-251">At this point the report is fully functional (with data from your environment) and you can continue to use the Power BI desktop or upload this report to PowerBI.com and continue with data exploration.</span></span>
+4.  <span data-ttu-id="e6a21-252">次に、LCS を使用してこのレポートを実稼働環境に移行し、生産データとともにこのレポートを表示して、他のユーザーと共有できるようにします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-252">Next, you will migrate this report to a production environment using LCS so that you can see this report with production data and share it with other users.</span></span>
+
+## <a name="publish-the-report-and-the-model"></a><span data-ttu-id="e6a21-253">レポートおよびモデルを公開</span><span class="sxs-lookup"><span data-stu-id="e6a21-253">Publish the report and the model</span></span>
+<span data-ttu-id="e6a21-254">レポートとモデルの発行には、Lifecycle Services へのレポートのアップロード、集計単位の実稼動環境への移行、適切な LCS ライブラリをポイントするためのクライアントの構成、実稼働環境でのレポートの発行が必要です。</span><span class="sxs-lookup"><span data-stu-id="e6a21-254">Publishing a report and model requires uploading the report to Lifecycle Services, migrating the aggregate measurement to your production environment, configuring the client to point to the correct LCS library, and publishing your reports in your production environment.</span></span>
+
+### <a name="upload-the-report-to-lifecycle-services"></a><span data-ttu-id="e6a21-255">レポートを Lifecycle Services にアップロード</span><span class="sxs-lookup"><span data-stu-id="e6a21-255">Upload the report to Lifecycle Services</span></span>
+
+<span data-ttu-id="e6a21-256">Microsoft Dynamics Lifecycle Services (LCS) は、開発者から実稼働環境に開発コンポーネントを移行するために使用するツールです。</span><span class="sxs-lookup"><span data-stu-id="e6a21-256">Microsoft Dynamics Lifecycle Services (LCS) is the tool used to migrate development artifacts from developer to production environments.</span></span> <span data-ttu-id="e6a21-257">2016 年 5 月の更新プログラムで、LCS は環境間の PBIX ファイルの移行 (エンティティ格納を使用して作成) をサポートします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-257">In the May 2016 update, LCS supports migrating PBIX files (authored using the entity store) between environments.</span></span>
+
+1.  <span data-ttu-id="e6a21-258">開発環境から [LCS](https://lcs.dynamics.com/) を起動します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-258">Open [LCS](https://lcs.dynamics.com/) from the developer environment.</span></span> <span data-ttu-id="e6a21-259">LCS 環境で、プロジェクトを作成していない場合は、プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-259">If you haven’t created a project in the LCS environment, create a project.</span></span>
+2.  <span data-ttu-id="e6a21-260">右にスクロールし、**アセット ライブラリ** アイコンを確認します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-260">Scroll to the right and you will notice the **Asset Library** icon.</span></span> <span data-ttu-id="e6a21-261">アイコンをクリックし、**アセット ライブラリ**を起動します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-261">Click the icon and launch **Asset Library**.</span></span>
+
+<span data-ttu-id="e6a21-262">アセット ライブラリを使用して、プロジェクトに **Power BI レポート モデル** (PBIX ファイル) を実装コンポーネントとして追加できることに注意します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-262">Notice that the asset library enables adding **PowerBI report models** (PBIX files) as implementation artifacts to a project.</span></span>
+
+1.  <span data-ttu-id="e6a21-263">プラス記号 (+) を選択し、新しい資産を追加します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-263">Select the plus (+) icon to add a new asset.</span></span>
+2.  <span data-ttu-id="e6a21-264">名前と説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-264">Provide a name and a description.</span></span> <span data-ttu-id="e6a21-265">**アップロード**をクリックし、前の手順で保存したファイルを探します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-265">Click **Upload** and then locate the file that you saved in an earlier step.</span></span>
+3.  <span data-ttu-id="e6a21-266">ファイルを正常にアップロードした後、**確定**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-266">After you successfully upload the file, click **Confirm**.</span></span> <span data-ttu-id="e6a21-267">ファイルが実装アセットとして LCS にアップロードされることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-267">Notice that the file is uploaded into LCS as an implementation asset.</span></span> <span data-ttu-id="e6a21-268">LCS は、バージョン管理をサポートして、Power BI レポートをリリースします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-268">LCS supports managing versions and releases for Power BI reports.</span></span> <span data-ttu-id="e6a21-269">他の実装コンポーネントに対するのと同じ方法で、複数のバージョンを管理してレポートを他環境に公開することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-269">You can maintain several versions and publish reports to other environments, just as you would for other implementation artifacts.</span></span> <span data-ttu-id="e6a21-270">PBIX ファイルを LCS プロジェクト内の資産として追加したため、そのプロジェクトを使用して配備した環境はこのレポートにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-270">Because you added the PBIX files as an asset within an LCS project, environments that you deployed using that project will have access to this report.</span></span>
+4.  <span data-ttu-id="e6a21-271">必要に応じて、すべてのプロジェクトが共用資産にアクセスできるように、このレポートを発行することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-271">Optionally, you can publish this report so that all of your projects can access the shared assets.</span></span> <span data-ttu-id="e6a21-272">パートナーまたは ISV であり、お客様とこのレポートを共有する場合は、グローバル ライブラリにこの資産を共有し、顧客が資産をそれぞれの LCS プロジェクトにインポートできるようにします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-272">If you are a partner or an ISV, and want to share this report with your customers, you would share this asset to your global library and enable your customers to import the asset into their respective LCS projects.</span></span> <span data-ttu-id="e6a21-273">これを行うには、**マイライブラリに保存** オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-273">To do this, select the **Save to my library** option.</span></span>
+
+### <a name="migrate-the-aggregate-measurement-to-a-production-environment"></a><span data-ttu-id="e6a21-274">集計の測定の実稼働環境への移行</span><span class="sxs-lookup"><span data-stu-id="e6a21-274">Migrate the aggregate measurement to a production environment</span></span>
+
+1.  <span data-ttu-id="e6a21-275">開発環境で修正した集計測定を実稼働環境に移行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-275">You need to migrate the aggregate measurement that you modified in the developer environment to the production environment.</span></span> <span data-ttu-id="e6a21-276">配置可能パッケージを生成の指示に従うことができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-276">You can follow the instructions in Generate a deployable package.</span></span> <span data-ttu-id="e6a21-277">create-apply-deployable-package.md.</span><span class="sxs-lookup"><span data-stu-id="e6a21-277">create-apply-deployable-package.md.</span></span>
+2.  <span data-ttu-id="e6a21-278">モデルを正常に公開した後、このチュートリアルの**エンティティ ストアを更新**セクションの説明している手順に従って実行し、エンティティ ストアはデータを更新できるようにします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-278">After you successfully publish the model, perform the steps outlined in the **Refresh the entity store** section of this tutorial, so that the entity store is updated with data.</span></span>
+
+### <a name="configure-an-lcs-project"></a><span data-ttu-id="e6a21-279">LCS プロジェクトをコンフィギュレーションする</span><span class="sxs-lookup"><span data-stu-id="e6a21-279">Configure an LCS project</span></span>
+
+<span data-ttu-id="e6a21-280">まだ実行していない場合は、環境と LCS プロジェクトを関連付けることで、Finance and Operations がプロジェクト内の資産を消費できるようにします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-280">If you haven’t already done so, associate your environment with an LCS project so that Finance and Operations is able to consume assets within the project.</span></span>
+
+1.  <span data-ttu-id="e6a21-281">Power BI レポートの配置に使用するインスタンスからクライアントを起動します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-281">Launch the client from the instance that you want to use to deploy the Power BI reports.</span></span> <span data-ttu-id="e6a21-282">これは通常、データ セットのレポートを表示するテストまたは本番のインスタンスであり、レポート開発者として作業したものとは異なります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-282">Typically this is the test or a production instance where you want to see a report with a different set of data than what you worked with as a report developer.</span></span>
+2.  <span data-ttu-id="e6a21-283">**システム管理**&gt;**設定**&gt;**システム パラメーター**を開きます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-283">Open **System Administration** &gt; **Setup** &gt; **System parameters**.</span></span> <span data-ttu-id="e6a21-284">**ヘルプ** タブを選択します。**Lifecycle Services のヘルプ構成** ボックスの一覧を使って、PBIX ファイルをアップロードした LCS プロジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-284">Select the **Help** tab. Using the **Lifecycle services help configuration** list box, select the LCS project that you uploaded the PBIX file to.</span></span> <span data-ttu-id="e6a21-285">**保存**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e6a21-285">Click **Save**.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="e6a21-286">このフォームには、現在のユーザーがアクセスできる LCS プロジェクトのみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-286">This form will only show the LCS projects that the current user has access to.</span></span> <span data-ttu-id="e6a21-287">このステップが管理者によって実行される場合、管理者がプロジェクトにアクセスする必要があるか、または PBIX コンポーネントが管理者がアクセスできるプロジェクトにインポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-287">If this step is being performed by an administrator, either the administrator needs to have access to the project, or the PBIX artifacts need to be imported into a project that the administrator has access to.</span></span>
+
+### <a name="publish-power-bi-reports-to-a-production-environment"></a><span data-ttu-id="e6a21-288">Power BI レポートを実稼働環境に公開</span><span class="sxs-lookup"><span data-stu-id="e6a21-288">Publish Power BI reports to a production environment</span></span>
+
+1.  <span data-ttu-id="e6a21-289">クライアントから**システム管理**&gt;**設定**&gt;**PowerBI の配置**を開きます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-289">Open **System Administration** &gt; **Setup** &gt; **Deploy PowerBI** from the client.</span></span> <span data-ttu-id="e6a21-290">LCS にアップロードしたファイルが分かります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-290">You will see the file that you uploaded to LCS.</span></span>
+2.  <span data-ttu-id="e6a21-291">**売上報告書** ファイルを選択し、メニュー バーで **Power BI ファイルの配置**オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="e6a21-291">Select the **Sales Report** file and select the **Deploy Power BI files** option on the menu bar.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="e6a21-292">PowerBI.com サービスへの公開に同意するよう求められる場合があります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-292">You may be asked to consent publishing to the PowerBI.com service.</span></span> <span data-ttu-id="e6a21-293">同意するには、リンクをクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="e6a21-293">Click the link to provide consent.</span></span> <span data-ttu-id="e6a21-294">同意が完了すると、元のブラウザー ウィンドウに戻り、**閉じる** ボタンをクリックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-294">When consent is complete, you need to go back to the original browser window and click the **Close** button.</span></span>
+
+3.  <span data-ttu-id="e6a21-295">ファイルを正常に公開した後、Power BI レポートは PowerBI.com サブスクリプションに表示されます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-295">After you successfully publish the file, the Power BI report will appear in your PowerBI.com subscription.</span></span> <span data-ttu-id="e6a21-296">レポートが実稼働環境にあるエンティティ格納を現在指さしていることがわかります。</span><span class="sxs-lookup"><span data-stu-id="e6a21-296">You will notice that the report now points to the entity store in the production environment.</span></span>
+
+## <a name="continuing-with-powerbicom"></a><span data-ttu-id="e6a21-297">PowerBI.com での継続</span><span class="sxs-lookup"><span data-stu-id="e6a21-297">Continuing with PowerBI.com</span></span>
+<span data-ttu-id="e6a21-298">管理者またはパワーユーザーは、エンティティ格納を使用して実稼動環境に Power BI レポートを作成し公開することに成功しています。</span><span class="sxs-lookup"><span data-stu-id="e6a21-298">As an administrator or a power user, you have successfully authored and published a Power BI report to the production environment using the entity store.</span></span> <span data-ttu-id="e6a21-299">Power BI 機能を使用して、いくつかの追加手順を実行することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-299">You can perform several additional steps using Power BI functionality.</span></span>
+
+-   <span data-ttu-id="e6a21-300">必要に応じて、データセットにレコード レベルのセキュリティを適用して、Power BI での表示が許可されていないデータの表示をユーザーに制限することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-300">Optionally, you can apply record-level security to the dataset to restrict users from seeing data they are not allowed to view in Power BI.</span></span>
+-   <span data-ttu-id="e6a21-301">組織のコンテンツ パックを作成して、グループ内のユーザーの間で共有することができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-301">You can create an organizational content pack and share it among users in a group.</span></span>
+    -   <span data-ttu-id="e6a21-302">PowerBI.com インスタンスから、データベース、レポート、およびダッシュボードを、新しいコンテンツパックとして、選択したユーザーのグループにエクスポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-302">You can export datasets, reports, and dashboards from your PowerBI.com instance as a new content pack to a selected group of users.</span></span>
+    -   <span data-ttu-id="e6a21-303">組織のコンテンツ パックは、データセット レベルで定義した任意のレコード レベルのセキュリティ ルールに従うことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e6a21-303">Note that organizational content packs adhere to any record-level security rules that you defined at the dataset level.</span></span>
+-   <span data-ttu-id="e6a21-304">Power BI タイルまたはレポートを追加することによって、自分のワークスペースをパーソナライズできます。</span><span class="sxs-lookup"><span data-stu-id="e6a21-304">Users can personalize their workspaces by adding Power BI tiles or reports.</span></span>
+
+
+<a name="additional-resources"></a><span data-ttu-id="e6a21-305">追加リソース</span><span class="sxs-lookup"><span data-stu-id="e6a21-305">Additional resources</span></span>
+--------
+
+[<span data-ttu-id="e6a21-306">集計データのモデリングと使用</span><span class="sxs-lookup"><span data-stu-id="e6a21-306">Modeling and using aggregate data</span></span>](../analytics/model-aggregate-data.md)
+
+
+

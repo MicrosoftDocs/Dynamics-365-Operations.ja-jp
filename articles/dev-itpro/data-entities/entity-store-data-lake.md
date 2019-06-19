@@ -1,378 +1,167 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="entity-store-data-lake.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>entity-store-data-lake.b1ad2d.5bbb4da199391f148f8f6b363f98af43bf6178dc.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>5bbb4da199391f148f8f6b363f98af43bf6178dc</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\data-entities\entity-store-data-lake.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Make Entity store available as a Data Lake</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ格納を Data Lake として使用可能にする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains how to make Entity store available as a Microsoft Azure Data Lake.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、エンティティ格納を Microsoft Azure Data Lake として使用可能にする方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Make Entity store available as a Data Lake</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ格納を Data Lake として使用可能にする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Access to this scenario is made available via flighting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このシナリオへのアクセスは、フライティングを通じて利用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The scenario is being released through multiple platform updates:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シナリオは、複数のプラットフォームの更新プログラムを通じてリリースされます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source><bpt id="p1">**</bpt>Automated Entity store refresh:<ept id="p1">**</ept> Available in Platform update 23</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>自動化されたエンティティ格納の更新:<ept id="p1">**</ept> プラットフォーム更新 23 で利用可</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source><bpt id="p1">**</bpt>Entity store data in Microsoft Azure Data Lake (full push):<ept id="p1">**</ept> Available in Platform update 23 (Restricted)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Microsoft Azure Data Lake (フル プッシュ) のエンティティ格納データ:<ept id="p1">**</ept> プラットフォーム更新 23 (制限付き) で利用可</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source><bpt id="p1">**</bpt>DataFlows for Entity store schemas on PowerBI.com:<ept id="p1">**</ept> Available in a future platform update</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PowerBI.com にあるエンティティ格納スキーマの DataFlows :<ept id="p1">**</ept> 将来のプラットフォーム更新で使用可能</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">**</bpt>Entity store data in Azure Data Lake (trickle feed):<ept id="p1">**</ept> Available in a future platform update</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Azure Data Lake (トリクル フィード) のエンティティ格納データ:<ept id="p1">**</ept> 将来のプラットフォーム更新で利用可</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source><bpt id="p1">**</bpt>Extend analytical workspaces by using PowerBI.com:<ept id="p1">**</ept> Available in a future platform update</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PowerBI.comを 使用して分析ワークスペースを拡張:<ept id="p1">**</ept> 将来のプラットフォーム更新で使用可能</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Automated Entity store refresh</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動化エンティティ格納更新</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>You need to enable automated Entity store refresh before enabling Data Lake integration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Date Lake 統合を有効にする前に、自動のエンティティ店舗更新を有効にする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Set up<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Entity store<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>セットアップ<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>エンティティ格納<ept id="p3">**</ept> に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>On the <bpt id="p1">**</bpt>Entity store<ept id="p1">**</ept> page, a message indicates that you can switch to the <bpt id="p2">**</bpt>Automated Entity store refresh<ept id="p2">**</ept> option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エンティティ店舗<ept id="p1">**</ept> ページで、メッセージに、<bpt id="p2">**</bpt>自動エンティティ格納更新<ept id="p2">**</ept> オプションに切り替えることができることが示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>This option is managed by the system.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオプションは、システムによって管理されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>An admin doesn't have to schedule or monitor the Entity store refresh.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理者は、エンティティ格納更新をスケジュール設定または監視する必要はありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Select <bpt id="p1">**</bpt>Switch now<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>今すぐ切り替える<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>This action isn't reversible.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このアクションは、元に戻すことはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>After you switch to the <bpt id="p1">**</bpt>Automated Entity store refresh<ept id="p1">**</ept> option, you can't revert to the old user interface (UI) experience.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>自動エンティティ格納更新<ept id="p1">**</ept> オプションに切り替えた後、古いユーザー インターフェイス (UI) エクスペリエンスに戻すことはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Select <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to continue.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>はい<ept id="p1">**</ept> を選択して続行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>You will now see the new experience.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいエクスペリエンスが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>New UI experience</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい UI エクスペリエンス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>After the new experience is turned on, you can define the refresh for each aggregate measurement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいエクスペリエンスをオンにすると、それぞれの集計の測定で更新を定義できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>The following refresh options are available:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の更新オプションを選択できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Every hour</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 時間ごと</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Twice a day</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 日に 2 回</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Once a day</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 日に 1 回</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Once a week</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 週間に 1 回</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>In addition, an admin can refresh any aggregate measurement on demand by selecting the <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> button.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">加えて、<bpt id="p1">**</bpt>更新<ept id="p1">**</ept> ボタンを選択することにより、管理者が必要に応じて集計の測定を更新できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Additional options will be added in future platform updates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加のオプションは、将来のプラットフォーム更新プログラムで追加されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>These options will include options for real-time refresh.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのオプションには、リアルタイム更新のオプションが含められます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>When the automated refresh is enabled, in some cases the system may disable refresh of Aggregate measurements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動化更新を有効にすると、システムは集計測定の更新を無効にすることがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>You must revisit aggregate measurements and validate that appropriate refresh intervals have been applied by the system.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集計測定に戻って、適切な更新間隔がシステムに適用されていることを検証する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Entity store data in Azure Data Lake (full push)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure Data Lake 内のエンティティ格納データ (フル プッシュ)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>This restricted feature is turned on via flighting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この制限機能は、フライティング経由でオンにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>This feature is available only if your environment is included in the flight.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この機能は、環境がフライトに含まれている場合にのみ使用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>When this feature is turned on, Entity store data isn't populated in the relational Entity store database in the Microsoft subscription.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、独自のサブスクリプションの Azure Data Lake Storage Gen2 アカウントに入力されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>You can use the full capabilities of PowerBI.com and other Azure tools to work with Entity store.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Before you start, you must complete these tasks in the Azure portal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開始する前に、Azure ポータルでこれらのタスクを実行する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source><bpt id="p1">**</bpt>Create storage accounts.<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ストレージ アカウントを作成する。<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Provision a storage account in the same data center where your Microsoft Dynamics 365 for Finance and Operations environment is provisioned.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations 環境が準備されているのと同じデータ センター内のストレージ アカウントの準備。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Make a note of the connection string for the storage account, because you will have to provide it later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後で指定する必要があるため、ストレージ アカウントの接続文字列をメモします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source><bpt id="p1">**</bpt>Create a Key Vault and a secret.<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Key Vault およびシークレットを作成する。<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Provision Azure Key Vault in your own subscription.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">独自のサブスクリプションで Azure Key Vault をプロビジョニングします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>You will need the Domain Name System (DNS) name of the Key Vault entry that you created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成した Key Vault エントリのドメイン ネーム システム (DNS) 名が必要になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Also add a secret to Key Vault.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">さらに、Key Vault にシークレットを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>As the value, specify the connection string that you made a note of in the previous task.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値として、前のタスクで書き留めた接続文字列を指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Make a note of the name of the secret, because you will have to provide it later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後で指定する必要があるため、シークレットの名前をメモします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source><bpt id="p1">**</bpt>Register the app.<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アプリを登録する。<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Create an Azure Active Directory (Azure AD) application, and grant application programming interface (API) access to Key vault.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure Active Directory (Azure AD) アプリケーションを作成し、Key Vault にアプリケーション プログラミング インターフェイス (API) アクセスを付与します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Make a note of the application ID and its application key (secret), because you will have to provide them later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">後でを入力する必要があるため、アプリケーション IDとそのアプリケーション キー (シークレット) をメモします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source><bpt id="p1">**</bpt>Add a service principal to Key Vault.<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サービス プリンシパルを Key Vault に追加する。<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>In Key Vault, use the <bpt id="p1">**</bpt>Access policies<ept id="p1">**</ept> option to grant the Azure AD application <bpt id="p2">**</bpt>Get<ept id="p2">**</ept> and <bpt id="p3">**</bpt>List<ept id="p3">**</ept> permissions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Key Vault で、<bpt id="p1">**</bpt>アクセス ポリシー<ept id="p1">**</ept> オプションを使用して、Azure AD アプリケーションに<bpt id="p2">**</bpt>取得<ept id="p2">**</ept>および<bpt id="p3">**</bpt>リスト<ept id="p3">**</ept>アクセス許可を付与します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>In this way, the application will have access to the secrets in Key Vault.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この方法で、アプリケーションは、Key Vault 内のシークレットにアクセスできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>The following sections describe each task in more detail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のセクションでは、それぞれのタスクについて詳細に説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Create storage accounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ストレージ アカウントを作成する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>In the Azure portal, create a new storage account.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure ポータルで、新しいストレージ アカウントを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>In the <bpt id="p1">**</bpt>Create storage account<ept id="p1">**</ept> dialog box, provide values for the following parameter fields:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ストレージ アカウントを作成<ept id="p1">**</ept> ダイアログ ボックスで、次のパラメーター フィールドの値を指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source><bpt id="p1">**</bpt>Location:<ept id="p1">**</ept> Select the data center where your Finance and Operations environment is located.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>場所:<ept id="p1">**</ept> Finance and Operations 環境があるデータ センターを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>If the data center that you select is in a different Azure region, you will incur additional data movement costs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したデータ センターが異なる Azure リージョンにある場合、追加のデータ移動コストが発生します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>If your Microsoft Power BI and/or your data warehouse is in a different region, you can use replication to move storage between regions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Power BI やデータ ウェアハウスが別の地域にある場合、地域間でストレージを移動するためにレプリケーションを使用することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source><bpt id="p1">**</bpt>Performance:<ept id="p1">**</ept> We recommend that you select <bpt id="p2">**</bpt>Standard<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>パフォーマンス:<ept id="p1">**</ept> <bpt id="p2">**</bpt>標準<ept id="p2">**</ept>を選択することをお勧めします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source><bpt id="p1">**</bpt>Account kind:<ept id="p1">**</ept> You must select <bpt id="p2">**</bpt>StorageV2<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アカウントの種類:<ept id="p1">**</ept> <bpt id="p2">**</bpt>StorageV2<ept id="p2">**</ept> を選択する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>In the <bpt id="p1">**</bpt>Advanced options<ept id="p1">**</ept> dialog box, turn off the <bpt id="p2">**</bpt>Data Lake storage Gen2 (preview)<ept id="p2">**</ept> option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>詳細オプション<ept id="p1">**</ept> ダイアログ ボックスで、<bpt id="p2">**</bpt>Data Lake ストレージ Gen2 (プレビュー)<ept id="p2">**</ept> オプションをオフにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>This will be made available in a later update.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、今後の更新で使用可能になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Until then, you can't consume data by using Azure Data Lake Storage APIs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それまでは、Azure Data Lake Storage API を使用してデータを使用することはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>If you aren't part of the preview program for Data Lake Storage Gen2, you might not see the <bpt id="p1">**</bpt>Data Lake storage Gen2 (preview)<ept id="p1">**</ept> option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Data Lake Storage Gen2 のプレビュー プログラムに参加していない場合、<bpt id="p1">**</bpt>Data Lake ストレージ Gen2 (プレビュー)<ept id="p1">**</ept> オプションが表示されないことがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Select <bpt id="p1">**</bpt>Review and create<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>確認して作成<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>When the deployment is completed, the new resource will be shown in the Azure portal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置が完了したら、新しいリソースが Azure ポータルに表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Select the resource, and then select <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Access keys<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソースを選択し、<bpt id="p1">**</bpt>設定<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>アクセス キー<ept id="p2">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Make a note of the connection string value, because you will have to provide it later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後で指定する必要があるため、接続文字列値を書き留めます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Create a Key Vault and a secret</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Key Vault およびシークレットを作成する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>In the Azure portal, create a new Key Vault.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure ポータルで、新しい Key Vault を作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>In the <bpt id="p1">**</bpt>Create key vault<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Location<ept id="p2">**</ept> field, select the data center where your Finance and Operations environment is located.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Key Vault の作成<ept id="p1">**</ept> ダイアログ ボックスの <bpt id="p2">**</bpt>場所<ept id="p2">**</ept> フィールドで、Finance and Operations 環境があるデータ センターを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>After Key Vault is created, select it in the list, and then select <bpt id="p1">**</bpt>Secrets<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Key Vault が作成されたら、一覧で選択して <bpt id="p1">**</bpt>シークレット<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Select <bpt id="p1">**</bpt>Generate/Import<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>生成/インポート<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>In the <bpt id="p1">**</bpt>Create a secret<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Upload options<ept id="p2">**</ept> field, select <bpt id="p3">**</bpt>Manual<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>シークレットを作成<ept id="p1">**</ept> ダイアログ ボックスの <bpt id="p2">**</bpt>アップロード オプション<ept id="p2">**</ept> フィールドで、<bpt id="p3">**</bpt>手動<ept id="p3">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Enter a name for the secret.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シークレットの名前を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Make a note of the name, because you will have to provide it later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後で指定する必要があるため、名前をメモします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>In the value field, enter the connection string that you obtained from the storage account in the previous procedure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値フィールドに、前の手順でストレージ アカウントから取得した接続文字列を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Select <bpt id="p1">**</bpt>Enabled<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Create<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>有効<ept id="p1">**</ept> を選択し、<bpt id="p2">**</bpt>作成<ept id="p2">**</ept>を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>The secret is created and added to Key Vault.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シークレットが作成され、Key Vault に追加されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Register the app</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリを登録する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>In the Azure portal, select <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>App registrations<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure ポータルで、<bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept> を選択し、<bpt id="p2">**</bpt>アプリケーション登録<ept id="p2">**</ept>を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Select <bpt id="p1">**</bpt>New application registration<ept id="p1">**</ept>, and enter the following information:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新しいアプリケーションの登録<ept id="p1">**</ept> を選択し、以下の情報を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source><bpt id="p1">**</bpt>Name:<ept id="p1">**</ept> Enter the name of the app.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>名前:<ept id="p1">**</ept> アプリの名前を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source><bpt id="p1">**</bpt>Application type:<ept id="p1">**</ept> Select <bpt id="p2">**</bpt>Web API<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アプリケーション タイプ:<ept id="p1">**</ept> <bpt id="p2">**</bpt>Web API<ept id="p2">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source><bpt id="p1">**</bpt>Sign-on URL:<ept id="p1">**</ept> Copy the root URL for Finance and Operations, and paste it here.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サインオン URL:<ept id="p1">**</ept> Finance and Operations のルート URL をコピーしてここに貼り付けます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>After the application is created, select it, and then select <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションが作成されたら選択し、<bpt id="p1">**</bpt>設定<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Select the <bpt id="p1">**</bpt>Required permissions<ept id="p1">**</ept> option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>必要なアクセス許可<ept id="p1">**</ept> オプションを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>In the dialog box that appears, select <bpt id="p1">**</bpt>Add option<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Add API<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示されたダイアログ ボックスで、<bpt id="p1">**</bpt>オプションの追加<ept id="p1">**</ept> を選択し、<bpt id="p2">**</bpt>API の追加<ept id="p2">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>In the list of APIs, select <bpt id="p1">**</bpt>Azure Key Vault<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">API のリストで <bpt id="p1">**</bpt>Azure Key Vault<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Select the <bpt id="p1">**</bpt>Delegated permissions<ept id="p1">**</ept> check box, select to grant permissions, and then select <bpt id="p2">**</bpt>Done<ept id="p2">**</ept> to save your changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>委任アクセス許可<ept id="p1">**</ept> チェック ボックスをオンにしてアクセス許可を付与し、<bpt id="p2">**</bpt>完了<ept id="p2">**</ept> を選択して変更を保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>On the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> menu of the new app, select <bpt id="p2">**</bpt>Keys<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいアプリケーションの <bpt id="p1">**</bpt>アプリケーション<ept id="p1">**</ept> メニューで、<bpt id="p2">**</bpt>キー<ept id="p2">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>In the <bpt id="p1">**</bpt>Key Description<ept id="p1">**</ept> field, enter a name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>キーの説明<ept id="p1">**</ept> フィールドに、名前を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Select a duration, and then select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">期間を選択し、<bpt id="p1">**</bpt>保存<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>A secret is generated in the <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シークレットが <bpt id="p1">**</bpt>値<ept id="p1">**</ept> フィールドに生成されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Immediately copy the secret to the clipboard, because it will disappear within one or two minutes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1、2 分以内に削除されるので、すぐにシークレットをクリップボードにコピーします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>You will have to provide this key to the application later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">後でアプリケーションにこのキーを指定する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Add a service principal to Key Vault</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サービス プリンシパルを Key Vault に追加する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>In the Azure portal, open Key Vault that you created earlier.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure ポータルで、以前に作成した Key Vault を開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Select <bpt id="p1">**</bpt>Access policies<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept> to create a new access policy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アクセス ポリシー<ept id="p1">**</ept> を選択し、<bpt id="p2">**</bpt>追加<ept id="p2">**</ept> を選択して新しいアクセス許可ポリシーを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>In the <bpt id="p1">**</bpt>Select principal<ept id="p1">**</ept> field, select the name of the application that you previously registered.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プリンシパルの選択<ept id="p1">**</ept> フィールドに、以前に登録したアプリケーションの名前を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>In the <bpt id="p1">**</bpt>Key permissions<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Get<ept id="p2">**</ept> and <bpt id="p3">**</bpt>List<ept id="p3">**</ept> permissions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>キーのアクセス許可<ept id="p1">**</ept> フィールドで、<bpt id="p2">**</bpt>取得<ept id="p2">**</ept> および <bpt id="p3">**</bpt>リスト<ept id="p3">**</ept> のアクセス許可を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>In the <bpt id="p1">**</bpt>Secret permissions<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Get<ept id="p2">**</ept> and <bpt id="p3">**</bpt>List<ept id="p3">**</ept> permissions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>シークレットのアクセス許可<ept id="p1">**</ept> フィールドで、<bpt id="p2">**</bpt>取得<ept id="p2">**</ept> および <bpt id="p3">**</bpt>リスト<ept id="p3">**</ept> のアクセス許可を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Get and List permissions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得およびリストのアクセス許可</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Work in Entity store in a Data Lake</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Data Lake のエンティティ格納で作業する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Set up<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>System parameters<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>システム パラメーター<ept id="p3">**</ept> の順に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>On the <bpt id="p1">**</bpt>Data connections<ept id="p1">**</ept> tab, enter the following information that you made a note of earlier in this topic:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データ接続<ept id="p1">**</ept> タブで、このトピックの前の部分でメモした次の情報を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source><bpt id="p1">**</bpt>Application ID:<ept id="p1">**</ept> Enter the application ID of the Azure AD application that you registered earlier.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アプリケーション ID:<ept id="p1">**</ept> 前に登録した Azure AD アプリケーションのアプリケーション ID を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source><bpt id="p1">**</bpt>Application Secret:<ept id="p1">**</ept> Enter the application key (secret) for the Azure AD application.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アプリケーション シークレット:<ept id="p1">**</ept> Azure AD アプリケーションのアプリケーション キー (秘密) を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source><bpt id="p1">**</bpt>DNS name:<ept id="p1">**</ept> Enter the DNS name of Key Vault.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DNS 名:<ept id="p1">**</ept> Key Vault の DNS 名を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source><bpt id="p1">**</bpt>Secret name:<ept id="p1">**</ept> Enter the name of the secret that you added to Key Vault together with connection string information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>シークレット名:<ept id="p1">**</ept> 接続文字列情報と共に Key Vault に追加したシークレットの名前を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Data connections tab on the System parameters page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[システム パラメーター] ページの [データ接続] タブ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Select the <bpt id="p1">**</bpt>Test Azure Key Vault<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Test Azure Storage<ept id="p2">**</ept> links to validate that system can access the configuration information that you provided.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Azure Key Vault のテスト<ept id="p1">**</ept> および <bpt id="p2">**</bpt>Azure Storage のテスト<ept id="p2">**</ept> リンクを選択し、指定した構成情報にシステムがアクセスできることを検証します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Select the <bpt id="p1">**</bpt>Enable data connection<ept id="p1">**</ept> check box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データ接続を有効にする<ept id="p1">**</ept> チェック ボックスをオンにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Entity store data should now be populated in the storage location that you provided, not in the relational Entity store database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ格納データが、リレーショナル エンティティ格納データベースではなく、指定したストレージ場所に入力されるようになりました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>The aggregate measurements and refresh options that you select in the Entity store UI should now apply to data that is copied to Data Lake.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集計の測定と、エンティティ格納 UI で選択した更新オプションが、Data Lake にコピーされたデータに適用されるようになりました。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: エンティティ格納を Data Lake として使用可能にする
+description: このトピックでは、エンティティ格納を Microsoft Azure Data Lake として使用可能にする方法について説明します。
+author: MilindaV2
+manager: AnnBe
+ms.date: 12/27/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer, IT Pro
+ms.reviewer: kfend
+ms.search.scope: Operations
+ms.custom: 96283
+ms.assetid: ''
+ms.search.region: Global
+ms.author: milindav
+ms.search.validFrom: 2018-12-03
+ms.dyn365.ops.version: Platform Update 23
+ms.openlocfilehash: 5bbb4da199391f148f8f6b363f98af43bf6178dc
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544270"
+---
+# <a name="make-entity-store-available-as-a-data-lake"></a><span data-ttu-id="05aa5-103">エンティティ格納を Data Lake として使用可能にする</span><span class="sxs-lookup"><span data-stu-id="05aa5-103">Make Entity store available as a Data Lake</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/private-preview-banner.md)]
+
+> [!IMPORTANT]
+> <span data-ttu-id="05aa5-104">このシナリオへのアクセスは、フライティングを通じて利用できます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-104">Access to this scenario is made available via flighting.</span></span> <span data-ttu-id="05aa5-105">シナリオは、複数のプラットフォームの更新プログラムを通じてリリースされます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-105">The scenario is being released through multiple platform updates:</span></span>
+>
+> - <span data-ttu-id="05aa5-106">**自動化されたエンティティ格納の更新:** プラットフォーム更新 23 で利用可</span><span class="sxs-lookup"><span data-stu-id="05aa5-106">**Automated Entity store refresh:** Available in Platform update 23</span></span>
+> - <span data-ttu-id="05aa5-107">**Microsoft Azure Data Lake (フル プッシュ) のエンティティ格納データ:** プラットフォーム更新 23 (制限付き) で利用可</span><span class="sxs-lookup"><span data-stu-id="05aa5-107">**Entity store data in Microsoft Azure Data Lake (full push):** Available in Platform update 23 (Restricted)</span></span>
+> - <span data-ttu-id="05aa5-108">**PowerBI.com にあるエンティティ格納スキーマの DataFlows :** 将来のプラットフォーム更新で使用可能</span><span class="sxs-lookup"><span data-stu-id="05aa5-108">**DataFlows for Entity store schemas on PowerBI.com:** Available in a future platform update</span></span>
+> - <span data-ttu-id="05aa5-109">**Azure Data Lake (トリクル フィード) のエンティティ格納データ:** 将来のプラットフォーム更新で利用可</span><span class="sxs-lookup"><span data-stu-id="05aa5-109">**Entity store data in Azure Data Lake (trickle feed):** Available in a future platform update</span></span>
+> - <span data-ttu-id="05aa5-110">**PowerBI.comを 使用して分析ワークスペースを拡張:** 将来のプラットフォーム更新で使用可能</span><span class="sxs-lookup"><span data-stu-id="05aa5-110">**Extend analytical workspaces by using PowerBI.com:** Available in a future platform update</span></span>
+
+## <a name="automated-entity-store-refresh"></a><span data-ttu-id="05aa5-111">自動化エンティティ格納更新</span><span class="sxs-lookup"><span data-stu-id="05aa5-111">Automated Entity store refresh</span></span>
+<span data-ttu-id="05aa5-112">Date Lake 統合を有効にする前に、自動のエンティティ店舗更新を有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="05aa5-112">You need to enable automated Entity store refresh before enabling Data Lake integration.</span></span> 
+1. <span data-ttu-id="05aa5-113">**システム管理** \> **セットアップ** \> **エンティティ格納** に移動します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-113">Go to **System administration** \> **Set up** \> **Entity store**.</span></span>
+
+    <span data-ttu-id="05aa5-114">**エンティティ店舗** ページで、メッセージに、**自動エンティティ格納更新** オプションに切り替えることができることが示されます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-114">On the **Entity store** page, a message indicates that you can switch to the **Automated Entity store refresh** option.</span></span> <span data-ttu-id="05aa5-115">このオプションは、システムによって管理されます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-115">This option is managed by the system.</span></span> <span data-ttu-id="05aa5-116">管理者は、エンティティ格納更新をスケジュール設定または監視する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="05aa5-116">An admin doesn't have to schedule or monitor the Entity store refresh.</span></span>
+
+2. <span data-ttu-id="05aa5-117">**今すぐ切り替える** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-117">Select **Switch now**.</span></span>
+
+    > [!IMPORTANT]
+    > <span data-ttu-id="05aa5-118">このアクションは、元に戻すことはできません。</span><span class="sxs-lookup"><span data-stu-id="05aa5-118">This action isn't reversible.</span></span> <span data-ttu-id="05aa5-119">**自動エンティティ格納更新** オプションに切り替えた後、古いユーザー インターフェイス (UI) エクスペリエンスに戻すことはできません。</span><span class="sxs-lookup"><span data-stu-id="05aa5-119">After you switch to the **Automated Entity store refresh** option, you can't revert to the old user interface (UI) experience.</span></span>
+
+3. <span data-ttu-id="05aa5-120">**はい** を選択して続行します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-120">Select **Yes** to continue.</span></span>
+
+<span data-ttu-id="05aa5-121">新しいエクスペリエンスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-121">You will now see the new experience.</span></span>
+
+![新しい UI エクスペリエンス](./media/entity-store-data-lake-03.png)
+
+<span data-ttu-id="05aa5-123">新しいエクスペリエンスをオンにすると、それぞれの集計の測定で更新を定義できます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-123">After the new experience is turned on, you can define the refresh for each aggregate measurement.</span></span> <span data-ttu-id="05aa5-124">次の更新オプションを選択できます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-124">The following refresh options are available:</span></span>
+
+- <span data-ttu-id="05aa5-125">1 時間ごと</span><span class="sxs-lookup"><span data-stu-id="05aa5-125">Every hour</span></span>
+- <span data-ttu-id="05aa5-126">1 日に 2 回</span><span class="sxs-lookup"><span data-stu-id="05aa5-126">Twice a day</span></span>
+- <span data-ttu-id="05aa5-127">1 日に 1 回</span><span class="sxs-lookup"><span data-stu-id="05aa5-127">Once a day</span></span>
+- <span data-ttu-id="05aa5-128">1 週間に 1 回</span><span class="sxs-lookup"><span data-stu-id="05aa5-128">Once a week</span></span>
+
+<span data-ttu-id="05aa5-129">加えて、**更新** ボタンを選択することにより、管理者が必要に応じて集計の測定を更新できます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-129">In addition, an admin can refresh any aggregate measurement on demand by selecting the **Refresh** button.</span></span> <span data-ttu-id="05aa5-130">追加のオプションは、将来のプラットフォーム更新プログラムで追加されます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-130">Additional options will be added in future platform updates.</span></span> <span data-ttu-id="05aa5-131">これらのオプションには、リアルタイム更新のオプションが含められます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-131">These options will include options for real-time refresh.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="05aa5-132">自動化更新を有効にすると、システムは集計測定の更新を無効にすることがあります。</span><span class="sxs-lookup"><span data-stu-id="05aa5-132">When the automated refresh is enabled, in some cases the system may disable refresh of Aggregate measurements.</span></span> <span data-ttu-id="05aa5-133">集計測定に戻って、適切な更新間隔がシステムに適用されていることを検証する必要があります。</span><span class="sxs-lookup"><span data-stu-id="05aa5-133">You must revisit aggregate measurements and validate that appropriate refresh intervals have been applied by the system.</span></span>
+>
+
+## <a name="entity-store-data-in-azure-data-lake-full-push"></a><span data-ttu-id="05aa5-134">Azure Data Lake 内のエンティティ格納データ (フル プッシュ)</span><span class="sxs-lookup"><span data-stu-id="05aa5-134">Entity store data in Azure Data Lake (full push)</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="05aa5-135">この制限機能は、フライティング経由でオンにします。</span><span class="sxs-lookup"><span data-stu-id="05aa5-135">This restricted feature is turned on via flighting.</span></span> <span data-ttu-id="05aa5-136">この機能は、環境がフライトに含まれている場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-136">This feature is available only if your environment is included in the flight.</span></span>
+
+<span data-ttu-id="05aa5-137">この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。</span><span class="sxs-lookup"><span data-stu-id="05aa5-137">When this feature is turned on, Entity store data isn't populated in the relational Entity store database in the Microsoft subscription.</span></span> <span data-ttu-id="05aa5-138">代わりに、独自のサブスクリプションの Azure Data Lake Storage Gen2 アカウントに入力されます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-138">Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription.</span></span> <span data-ttu-id="05aa5-139">PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-139">You can use the full capabilities of PowerBI.com and other Azure tools to work with Entity store.</span></span>
+
+<span data-ttu-id="05aa5-140">開始する前に、Azure ポータルでこれらのタスクを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="05aa5-140">Before you start, you must complete these tasks in the Azure portal.</span></span>
+
+1. <span data-ttu-id="05aa5-141">**ストレージ アカウントを作成する。**</span><span class="sxs-lookup"><span data-stu-id="05aa5-141">**Create storage accounts.**</span></span> <span data-ttu-id="05aa5-142">Microsoft Dynamics 365 for Finance and Operations 環境が準備されているのと同じデータ センター内のストレージ アカウントの準備。</span><span class="sxs-lookup"><span data-stu-id="05aa5-142">Provision a storage account in the same data center where your Microsoft Dynamics 365 for Finance and Operations environment is provisioned.</span></span> <span data-ttu-id="05aa5-143">その後で指定する必要があるため、ストレージ アカウントの接続文字列をメモします。</span><span class="sxs-lookup"><span data-stu-id="05aa5-143">Make a note of the connection string for the storage account, because you will have to provide it later.</span></span>
+2. <span data-ttu-id="05aa5-144">**Key Vault およびシークレットを作成する。**</span><span class="sxs-lookup"><span data-stu-id="05aa5-144">**Create a Key Vault and a secret.**</span></span> <span data-ttu-id="05aa5-145">独自のサブスクリプションで Azure Key Vault をプロビジョニングします。</span><span class="sxs-lookup"><span data-stu-id="05aa5-145">Provision Azure Key Vault in your own subscription.</span></span> <span data-ttu-id="05aa5-146">作成した Key Vault エントリのドメイン ネーム システム (DNS) 名が必要になります。</span><span class="sxs-lookup"><span data-stu-id="05aa5-146">You will need the Domain Name System (DNS) name of the Key Vault entry that you created.</span></span> <span data-ttu-id="05aa5-147">さらに、Key Vault にシークレットを追加します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-147">Also add a secret to Key Vault.</span></span> <span data-ttu-id="05aa5-148">値として、前のタスクで書き留めた接続文字列を指定します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-148">As the value, specify the connection string that you made a note of in the previous task.</span></span> <span data-ttu-id="05aa5-149">その後で指定する必要があるため、シークレットの名前をメモします。</span><span class="sxs-lookup"><span data-stu-id="05aa5-149">Make a note of the name of the secret, because you will have to provide it later.</span></span>
+3. <span data-ttu-id="05aa5-150">**アプリを登録する。**</span><span class="sxs-lookup"><span data-stu-id="05aa5-150">**Register the app.**</span></span> <span data-ttu-id="05aa5-151">Azure Active Directory (Azure AD) アプリケーションを作成し、Key Vault にアプリケーション プログラミング インターフェイス (API) アクセスを付与します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-151">Create an Azure Active Directory (Azure AD) application, and grant application programming interface (API) access to Key vault.</span></span> <span data-ttu-id="05aa5-152">後でを入力する必要があるため、アプリケーション IDとそのアプリケーション キー (シークレット) をメモします。</span><span class="sxs-lookup"><span data-stu-id="05aa5-152">Make a note of the application ID and its application key (secret), because you will have to provide them later.</span></span>
+4. <span data-ttu-id="05aa5-153">**サービス プリンシパルを Key Vault に追加する。**</span><span class="sxs-lookup"><span data-stu-id="05aa5-153">**Add a service principal to Key Vault.**</span></span> <span data-ttu-id="05aa5-154">Key Vault で、**アクセス ポリシー** オプションを使用して、Azure AD アプリケーションに**取得**および**リスト**アクセス許可を付与します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-154">In Key Vault, use the **Access policies** option to grant the Azure AD application **Get** and **List** permissions.</span></span> <span data-ttu-id="05aa5-155">この方法で、アプリケーションは、Key Vault 内のシークレットにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-155">In this way, the application will have access to the secrets in Key Vault.</span></span>
+
+<span data-ttu-id="05aa5-156">次のセクションでは、それぞれのタスクについて詳細に説明します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-156">The following sections describe each task in more detail.</span></span>
+
+### <a name="create-storage-accounts"></a><span data-ttu-id="05aa5-157">ストレージ アカウントを作成する</span><span class="sxs-lookup"><span data-stu-id="05aa5-157">Create storage accounts</span></span>
+
+1. <span data-ttu-id="05aa5-158">Azure ポータルで、新しいストレージ アカウントを作成します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-158">In the Azure portal, create a new storage account.</span></span>
+2. <span data-ttu-id="05aa5-159">**ストレージ アカウントを作成** ダイアログ ボックスで、次のパラメーター フィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-159">In the **Create storage account** dialog box, provide values for the following parameter fields:</span></span>
+
+    - <span data-ttu-id="05aa5-160">**場所:** Finance and Operations 環境があるデータ センターを選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-160">**Location:** Select the data center where your Finance and Operations environment is located.</span></span> <span data-ttu-id="05aa5-161">選択したデータ センターが異なる Azure リージョンにある場合、追加のデータ移動コストが発生します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-161">If the data center that you select is in a different Azure region, you will incur additional data movement costs.</span></span> <span data-ttu-id="05aa5-162">Microsoft Power BI やデータ ウェアハウスが別の地域にある場合、地域間でストレージを移動するためにレプリケーションを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-162">If your Microsoft Power BI and/or your data warehouse is in a different region, you can use replication to move storage between regions.</span></span>
+    - <span data-ttu-id="05aa5-163">**パフォーマンス:** **標準**を選択することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="05aa5-163">**Performance:** We recommend that you select **Standard**.</span></span>
+    - <span data-ttu-id="05aa5-164">**アカウントの種類:** **StorageV2** を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="05aa5-164">**Account kind:** You must select **StorageV2**.</span></span>
+
+3. <span data-ttu-id="05aa5-165">**詳細オプション** ダイアログ ボックスで、**Data Lake ストレージ Gen2 (プレビュー)** オプションをオフにします。</span><span class="sxs-lookup"><span data-stu-id="05aa5-165">In the **Advanced options** dialog box, turn off the **Data Lake storage Gen2 (preview)** option.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="05aa5-166">これは、今後の更新で使用可能になります。</span><span class="sxs-lookup"><span data-stu-id="05aa5-166">This will be made available in a later update.</span></span> <span data-ttu-id="05aa5-167">それまでは、Azure Data Lake Storage API を使用してデータを使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="05aa5-167">Until then, you can't consume data by using Azure Data Lake Storage APIs.</span></span>
+    >
+    > <span data-ttu-id="05aa5-168">Data Lake Storage Gen2 のプレビュー プログラムに参加していない場合、**Data Lake ストレージ Gen2 (プレビュー)** オプションが表示されないことがあります。</span><span class="sxs-lookup"><span data-stu-id="05aa5-168">If you aren't part of the preview program for Data Lake Storage Gen2, you might not see the **Data Lake storage Gen2 (preview)** option.</span></span>
+
+4. <span data-ttu-id="05aa5-169">**確認して作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-169">Select **Review and create**.</span></span> <span data-ttu-id="05aa5-170">配置が完了したら、新しいリソースが Azure ポータルに表示されます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-170">When the deployment is completed, the new resource will be shown in the Azure portal.</span></span>
+5. <span data-ttu-id="05aa5-171">リソースを選択し、**設定** \> **アクセス キー** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-171">Select the resource, and then select **Settings** \> **Access keys**.</span></span>
+6. <span data-ttu-id="05aa5-172">その後で指定する必要があるため、接続文字列値を書き留めます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-172">Make a note of the connection string value, because you will have to provide it later.</span></span>
+
+### <a name="create-a-key-vault-and-a-secret"></a><span data-ttu-id="05aa5-173">Key Vault およびシークレットを作成する</span><span class="sxs-lookup"><span data-stu-id="05aa5-173">Create a Key Vault and a secret</span></span>
+
+1. <span data-ttu-id="05aa5-174">Azure ポータルで、新しい Key Vault を作成します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-174">In the Azure portal, create a new Key Vault.</span></span>
+2. <span data-ttu-id="05aa5-175">**Key Vault の作成** ダイアログ ボックスの **場所** フィールドで、Finance and Operations 環境があるデータ センターを選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-175">In the **Create key vault** dialog box, in the **Location** field, select the data center where your Finance and Operations environment is located.</span></span>
+3. <span data-ttu-id="05aa5-176">Key Vault が作成されたら、一覧で選択して **シークレット** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-176">After Key Vault is created, select it in the list, and then select **Secrets**.</span></span>
+4. <span data-ttu-id="05aa5-177">**生成/インポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-177">Select **Generate/Import**.</span></span>
+5. <span data-ttu-id="05aa5-178">**シークレットを作成** ダイアログ ボックスの **アップロード オプション** フィールドで、**手動** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-178">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
+6. <span data-ttu-id="05aa5-179">シークレットの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-179">Enter a name for the secret.</span></span> <span data-ttu-id="05aa5-180">その後で指定する必要があるため、名前をメモします。</span><span class="sxs-lookup"><span data-stu-id="05aa5-180">Make a note of the name, because you will have to provide it later.</span></span>
+7. <span data-ttu-id="05aa5-181">値フィールドに、前の手順でストレージ アカウントから取得した接続文字列を入力します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-181">In the value field, enter the connection string that you obtained from the storage account in the previous procedure.</span></span>
+8. <span data-ttu-id="05aa5-182">**有効** を選択し、**作成**を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-182">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="05aa5-183">シークレットが作成され、Key Vault に追加されます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-183">The secret is created and added to Key Vault.</span></span>
+
+### <a name="register-the-app"></a><span data-ttu-id="05aa5-184">アプリを登録する</span><span class="sxs-lookup"><span data-stu-id="05aa5-184">Register the app</span></span>
+
+1. <span data-ttu-id="05aa5-185">Azure ポータルで、**Azure Active Directory** を選択し、**アプリケーション登録**を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-185">In the Azure portal, select **Azure Active Directory**, and then select **App registrations**.</span></span>
+2. <span data-ttu-id="05aa5-186">**新しいアプリケーションの登録** を選択し、以下の情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-186">Select **New application registration**, and enter the following information:</span></span>
+
+    - <span data-ttu-id="05aa5-187">**名前:** アプリの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-187">**Name:** Enter the name of the app.</span></span>
+    - <span data-ttu-id="05aa5-188">**アプリケーション タイプ:** **Web API** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-188">**Application type:** Select **Web API**.</span></span>
+    - <span data-ttu-id="05aa5-189">**サインオン URL:** Finance and Operations のルート URL をコピーしてここに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-189">**Sign-on URL:** Copy the root URL for Finance and Operations, and paste it here.</span></span>
+
+3. <span data-ttu-id="05aa5-190">アプリケーションが作成されたら選択し、**設定** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-190">After the application is created, select it, and then select **Settings**.</span></span>
+4. <span data-ttu-id="05aa5-191">**必要なアクセス許可** オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-191">Select the **Required permissions** option.</span></span>
+5. <span data-ttu-id="05aa5-192">表示されたダイアログ ボックスで、**オプションの追加** を選択し、**API の追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-192">In the dialog box that appears, select **Add option**, and then select **Add API**.</span></span>
+6. <span data-ttu-id="05aa5-193">API のリストで **Azure Key Vault** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-193">In the list of APIs, select **Azure Key Vault**.</span></span>
+7. <span data-ttu-id="05aa5-194">**委任アクセス許可** チェック ボックスをオンにしてアクセス許可を付与し、**完了** を選択して変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-194">Select the **Delegated permissions** check box, select to grant permissions, and then select **Done** to save your changes.</span></span>
+8. <span data-ttu-id="05aa5-195">新しいアプリケーションの **アプリケーション** メニューで、**キー** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-195">On the **Application** menu of the new app, select **Keys**.</span></span>
+9. <span data-ttu-id="05aa5-196">**キーの説明** フィールドに、名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-196">In the **Key Description** field, enter a name.</span></span>
+10. <span data-ttu-id="05aa5-197">期間を選択し、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-197">Select a duration, and then select **Save**.</span></span> <span data-ttu-id="05aa5-198">シークレットが **値** フィールドに生成されます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-198">A secret is generated in the **Value** field.</span></span>
+11. <span data-ttu-id="05aa5-199">1、2 分以内に削除されるので、すぐにシークレットをクリップボードにコピーします。</span><span class="sxs-lookup"><span data-stu-id="05aa5-199">Immediately copy the secret to the clipboard, because it will disappear within one or two minutes.</span></span> <span data-ttu-id="05aa5-200">後でアプリケーションにこのキーを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="05aa5-200">You will have to provide this key to the application later.</span></span>
+
+### <a name="add-a-service-principal-to-key-vault"></a><span data-ttu-id="05aa5-201">サービス プリンシパルを Key Vault に追加する</span><span class="sxs-lookup"><span data-stu-id="05aa5-201">Add a service principal to Key Vault</span></span>
+
+1. <span data-ttu-id="05aa5-202">Azure ポータルで、以前に作成した Key Vault を開きます。</span><span class="sxs-lookup"><span data-stu-id="05aa5-202">In the Azure portal, open Key Vault that you created earlier.</span></span>
+2. <span data-ttu-id="05aa5-203">**アクセス ポリシー** を選択し、**追加** を選択して新しいアクセス許可ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-203">Select **Access policies**, and then select **Add** to create a new access policy.</span></span>
+3. <span data-ttu-id="05aa5-204">**プリンシパルの選択** フィールドに、以前に登録したアプリケーションの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-204">In the **Select principal** field, select the name of the application that you previously registered.</span></span>
+4. <span data-ttu-id="05aa5-205">**キーのアクセス許可** フィールドで、**取得** および **リスト** のアクセス許可を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-205">In the **Key permissions** field, select **Get** and **List** permissions.</span></span>
+5. <span data-ttu-id="05aa5-206">**シークレットのアクセス許可** フィールドで、**取得** および **リスト** のアクセス許可を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-206">In the **Secret permissions** field, select **Get** and **List** permissions.</span></span>
+
+    ![取得およびリストのアクセス許可](./media/entity-store-data-lake-05.png)
+
+6. <span data-ttu-id="05aa5-208">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-208">Select **Save**.</span></span>
+
+## <a name="work-in-entity-store-in-a-data-lake"></a><span data-ttu-id="05aa5-209">Data Lake のエンティティ格納で作業する</span><span class="sxs-lookup"><span data-stu-id="05aa5-209">Work in Entity store in a Data Lake</span></span>
+
+1. <span data-ttu-id="05aa5-210">**システム管理** \> **設定** \> **システム パラメーター** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-210">Go to **System administration** \> **Set up** \> **System parameters**.</span></span>
+2. <span data-ttu-id="05aa5-211">**データ接続** タブで、このトピックの前の部分でメモした次の情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-211">On the **Data connections** tab, enter the following information that you made a note of earlier in this topic:</span></span>
+
+    - <span data-ttu-id="05aa5-212">**アプリケーション ID:** 前に登録した Azure AD アプリケーションのアプリケーション ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-212">**Application ID:** Enter the application ID of the Azure AD application that you registered earlier.</span></span>
+    - <span data-ttu-id="05aa5-213">**アプリケーション シークレット:** Azure AD アプリケーションのアプリケーション キー (秘密) を入力します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-213">**Application Secret:** Enter the application key (secret) for the Azure AD application.</span></span>
+    - <span data-ttu-id="05aa5-214">**DNS 名:** Key Vault の DNS 名を入力します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-214">**DNS name:** Enter the DNS name of Key Vault.</span></span>
+    - <span data-ttu-id="05aa5-215">**シークレット名:** 接続文字列情報と共に Key Vault に追加したシークレットの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-215">**Secret name:** Enter the name of the secret that you added to Key Vault together with connection string information.</span></span>
+
+    ![[システム パラメーター] ページの [データ接続] タブ](./media/entity-store-data-lake-04.png)
+
+3. <span data-ttu-id="05aa5-217">**Azure Key Vault のテスト** および **Azure Storage のテスト** リンクを選択し、指定した構成情報にシステムがアクセスできることを検証します。</span><span class="sxs-lookup"><span data-stu-id="05aa5-217">Select the **Test Azure Key Vault** and **Test Azure Storage** links to validate that system can access the configuration information that you provided.</span></span>
+4. <span data-ttu-id="05aa5-218">**データ接続を有効にする** チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="05aa5-218">Select the **Enable data connection** check box.</span></span>
+
+<span data-ttu-id="05aa5-219">エンティティ格納データが、リレーショナル エンティティ格納データベースではなく、指定したストレージ場所に入力されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="05aa5-219">Entity store data should now be populated in the storage location that you provided, not in the relational Entity store database.</span></span>
+
+<span data-ttu-id="05aa5-220">集計の測定と、エンティティ格納 UI で選択した更新オプションが、Data Lake にコピーされたデータに適用されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="05aa5-220">The aggregate measurements and refresh options that you select in the Entity store UI should now apply to data that is copied to Data Lake.</span></span>

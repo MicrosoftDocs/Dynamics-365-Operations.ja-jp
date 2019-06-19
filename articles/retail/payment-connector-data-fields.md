@@ -1,1788 +1,336 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="payment-connector-data-fields.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>payment-connector-data-fields.2a21ff.d3227a96be078ff8b289f616d91279d7afa38dbc.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>d3227a96be078ff8b289f616d91279d7afa38dbc</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>ffc37f7c2a63bada3055f37856a30424040bc9a3</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/16/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\payment-connector-data-fields.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Dynamics 365 payment data use</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 支払データの使用</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Dynamics 365 payment data use</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 支払データの使用</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Key terms</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">重要な用語</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Term</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">相談</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Card present</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カードあり</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>The term <bpt id="p1">*</bpt>card present<ept id="p1">*</ept> describes the use of a payment connector to process transactions where a physical card is present, such as at a point of sale (POS) register.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>カードあり<ept id="p1">*</ept> という語は、販売時点管理 (POS) レジスターにおいてなど、物理的なカードが存在するトランザクションを処理するために支払コネクタを使用することを指します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Card not present</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カードなし</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>The term <bpt id="p1">*</bpt>card not present<ept id="p1">*</ept> describes the use of a payment connector to process transactions where a physical card isn't present, such as in call center or e-Commerce scenarios.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>カードなし<ept id="p1">*</ept> という語は、コール センターや E コマースにおいてなど、物理的なカードが存在しないトランザクションを処理するために支払コネクタを使用することを指します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">概要</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>This topic provides specific details about the following areas with respect to data that is managed by the payment connectors:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、支払コネクタによって管理されているデータに関して次の領域に関する特定の詳細情報を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">**</bpt><bpt id="p2">[</bpt>Data used in card-present scenarios<ept id="p2">](#data-used-in-card-present-scenarios)</ept><ept id="p1">**</ept> – This section provides a list and descriptions of data fields that are passed to the payment connector for card-present scenarios.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt><bpt id="p2">[</bpt>カードありシナリオで使用されるデータ<ept id="p2">](#data-used-in-card-present-scenarios)</ept><ept id="p1">**</ept>: このセクションでは、カードありシナリオの支払コネクタに渡されるデータ フィールドの一覧および説明を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">**</bpt><bpt id="p2">[</bpt>Data used in card-not-present scenarios<ept id="p2">](#data-used-in-card-not-present-scenarios)</ept><ept id="p1">**</ept> – This section provides a list and descriptions of data fields that are passed to the payment connector for card-not-present scenarios.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt><bpt id="p2">[</bpt>カードなしシナリオで使用されるデータ<ept id="p2">](#data-used-in-card-not-present-scenarios)</ept><ept id="p1">**</ept>: このセクションでは、カードなしシナリオの支払コネクタに渡されるデータ フィールドの一覧および説明を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Data used in card-present scenarios</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カードありシナリオで使用されるデータ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>This section describes all data points that are sent to the payment connector for card-present scenarios.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションでは、カードありシナリオの支払コネクタに送信されるすべてのデータ ポイントについて説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>The payment connect might not use the data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払コネクタは、データを使用しないことがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Payment connector request-specific data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払コネクタ要求固有のデータ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>BeginTransactionPaymentTerminalDeviceRequest</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BeginTransactionPaymentTerminalDeviceRequest</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>merchantInformation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">merchantInformation</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>The merchant information that is defined on the <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> page in the Microsoft Dynamics 365 for Finance and Operations client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations クライアントの <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> ページで定義されている商社情報。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>invoiceNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">invoiceNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>The unique invoice number that the POS generates to track the sales transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS が販売トランザクションを追跡するために生成する一意の請求書番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>UpdateLineItemsPaymentTerminalDeviceRequest</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UpdateLineItemsPaymentTerminalDeviceRequest</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>totalAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">totalAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>The total amount on the current sales transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在の販売トランザクションでの合計金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>taxAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">taxAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>The tax amount on the current sales transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在の販売トランザクションでの税金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>discountAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">discountAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>The discount amount on the current sales transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在の販売トランザクションでの割引金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>subTotalAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">subTotalAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>The subtotal amount on the current sales transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在の販売トランザクションでの小計金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>items</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>The list of product-specific details, such as product names, quantities, or units of measure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品名、数量、または計量単位など、製品に固有の詳細の一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>AuthorizePaymentTerminalDeviceRequest</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AuthorizePaymentTerminalDeviceRequest</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">金額</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>The amount to authorize.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">承認する金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通貨</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>The currency for the amount to authorize.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">承認する金額の通貨。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>voiceAuthorization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">voiceAuthorization</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>The voice approval code that is sent from the POS if voice authorization is required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">音声認証が必要な場合は、POS から送信される音声承認コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>CapturePaymentTerminalDeviceRequest</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CapturePaymentTerminalDeviceRequest</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">金額</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>The amount to capture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得する金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通貨</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>The currency for the amount to capture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得する金額の通貨。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>paymentPropertiesXml</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">paymentPropertiesXml</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>The content of the <bpt id="p1">**</bpt>PaymentSdkData<ept id="p1">**</ept> object that is returned by the <bpt id="p2">**</bpt>AuthorizePaymentTerminalDeviceRequest<ept id="p2">**</ept> or <bpt id="p3">**</bpt>RefundPaymentTerminalDeviceRequest<ept id="p3">**</ept> request, and that is used to support stateful properties between the requests.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>AuthorizePaymentTerminalDeviceRequest<ept id="p2">**</ept> 要求または <bpt id="p3">**</bpt>RefundPaymentTerminalDeviceRequest<ept id="p3">**</ept> 要求によって返され、要求間のステートフル プロパティをサポートするために使用される <bpt id="p1">**</bpt>PaymentSdkData<ept id="p1">**</ept> オブジェクトのコンテンツ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>For more details, see the <bpt id="p1">[</bpt>Payment SDK data<ept id="p1">](#payment-sdk-data)</ept> section later in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、このトピックで後述する<bpt id="p1">[</bpt>支払 SDK データ<ept id="p1">](#payment-sdk-data)</ept> セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>VoidPaymentTerminalDeviceRequest</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VoidPaymentTerminalDeviceRequest</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">金額</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>The amount of the payment to void.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払いが無効になる金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通貨</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>The currency for the payment to void.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払いが無効になる通貨。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>paymentPropertiesXml</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">paymentPropertiesXml</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>The content of the <bpt id="p1">**</bpt>PaymentSdkData<ept id="p1">**</ept> object that is returned by the <bpt id="p2">**</bpt>AuthorizePaymentTerminalDeviceRequest<ept id="p2">**</ept> or <bpt id="p3">**</bpt>RefundPaymentTerminalDeviceRequest<ept id="p3">**</ept> request, and that is used to support stateful properties between the requests.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>AuthorizePaymentTerminalDeviceRequest<ept id="p2">**</ept> 要求または <bpt id="p3">**</bpt>RefundPaymentTerminalDeviceRequest<ept id="p3">**</ept> 要求によって返され、要求間のステートフル プロパティをサポートするために使用される <bpt id="p1">**</bpt>PaymentSdkData<ept id="p1">**</ept> オブジェクトのコンテンツ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>For more details, see the <bpt id="p1">[</bpt>Payment SDK data<ept id="p1">](#payment-sdk-data)</ept> section later in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、このトピックで後述する<bpt id="p1">[</bpt>支払 SDK データ<ept id="p1">](#payment-sdk-data)</ept> セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>RefundPaymentTerminalDeviceRequest</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RefundPaymentTerminalDeviceRequest</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">金額</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>The amount to refund.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">払い戻す金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通貨</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>The currency for the amount to refund.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">払い戻す金額の通貨。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>ActivateGiftCardPaymentTerminalRequest</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ActivateGiftCardPaymentTerminalRequest</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">金額</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>The initial amount to add to the gift card during activation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効化中にギフト カードに追加する初期金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通貨</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>The currency for the initial amount to add to the gift card during activation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効化中にギフト カードに追加する初期金額の通貨。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>AddBalanceToGiftCardPaymentTerminalRequest</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AddBalanceToGiftCardPaymentTerminalRequest</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">金額</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>The amount to add to the gift card balance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ギフト カード残高に追加される金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通貨</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>The currency for the amount to add to the gift card balance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ギフト カード残高に追加する金額の通貨。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>GetGiftCardBalancePaymentTerminalRequest</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetGiftCardBalancePaymentTerminalRequest</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通貨</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>The currency to retrieve the gift card balance in.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ギフト カード残高を取得するための通貨。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>GetPrivateTenderPaymentTerminalDeviceRequest</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetPrivateTenderPaymentTerminalDeviceRequest</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">金額</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>The amount that is set on the POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS に設定された金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>(Typically, this variable is used to show the amount on the payment terminal when the card number is retrieved.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(通常、この変数は、カード番号を取得したときに支払ターミナルの金額を表示するために使用されます。)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Shared data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共有データ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Payment SDK data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払 SDK データ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>ApprovedAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ApprovedAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>The amount that was approved for the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションに対して承認された金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>AvailableBalance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AvailableBalance</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>The available balance on the card.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カードの使用可能な残高。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>ApprovalCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ApprovalCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>The approval code for the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの承認コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>ProviderTransactionId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProviderTransactionId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>The transaction identifier of the payment provider.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払いプロバイダーのトランザクション識別子。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>AuthorizationResult</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AuthorizationResult</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>The result of the authorization call.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">権限呼び出しの結果。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>ExternalReceipt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExternalReceipt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>The external receipt data from the payment provider.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払プロバイダーからの外部レシート データ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>TerminalId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TerminalId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>The unique identifier of the terminal that handled the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払を処理した端末の一意の識別子。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Data used in card-not-present scenarios</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カードなしシナリオで使用されるデータ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>This section describes data that is sent to the payment connector for card-not-present scenarios.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションでは、カードなしシナリオの支払コネクタに送信されるデータについて説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>The specific data that each connector processes varies, and a given connector might not use all the data that is provided.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各コネクタが処理する特定のデータはさまざまであるため、特定のコネクタが提供されたすべてのデータを使用しない可能性があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Payment connector method–specific data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払コネクタ方法固有のデータ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Authorization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">認証</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Namespace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前空間</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>MerchantAccount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantAccount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>MerchantId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>The merchant information that is defined on the <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> page in the Finance and Operations client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations クライアントの <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> ページで定義されている商社情報。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Last4Digits</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Last4Digits</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>The last four digits of the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用するカードの末尾 4 桁。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>UniqueCardId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UniqueCardId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>The unique randomized identifier of the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用するカードのランダムな一意識別子。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>ExpirationYear</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExpirationYear</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>The expiration year of the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用するカードの有効期限年。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>ExpirationMonth</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExpirationMonth</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>The expiration month of the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用するカードの有効期限月。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>StreetAddress</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">StreetAddress</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>The street of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の番地。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>City</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">市町村</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>The city of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の市町村。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>State</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">行政単位 (区画)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>The state or province of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の都道府県。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>PostalCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PostalCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>The postal code of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の郵便番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>IndustryType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IndustryType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>The type of channel where the payment occurred (for example, <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Direct Marketing<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>E-Commerce<ept id="p3">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払が発生したチャネルのタイプ (たとえば、<bpt id="p1">**</bpt>小売<ept id="p1">**</ept>、<bpt id="p2">**</bpt>ダイレクト マーケティング<ept id="p2">**</ept>、または<bpt id="p3">**</bpt>電子商取引<ept id="p3">**</ept>)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>AllowPartialAuthorization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AllowPartialAuthorization</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>A value that indicates whether partial authorization is supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">部分的な承認がサポートされているかどうかを示す値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">量</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>The total amount of the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの合計金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>CurrencyCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CurrencyCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>The currency code for the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの通貨コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>TerminalId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TerminalId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>The unique identifier of the terminal where the transaction occurred.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションが発生した端末の一意の識別子。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>PurchaseLevelData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchaseLevelData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>The list of "Level 2" data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"レベル 2" データの一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>For more details, see the <bpt id="p1">[</bpt>L2 data<ept id="p1">](#l2-data)</ept> section later in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、このトピックで後述する<bpt id="p1">[</bpt>L2 データ<ept id="p1">](#l2-data)</ept> セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>PurchaseLevelData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchaseLevelData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>The list of "Level 3" data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"レベル 3" データの一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>For more details, see the <bpt id="p1">[</bpt>L3 data<ept id="p1">](#l3-data)</ept> section later in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、このトピックで後述する<bpt id="p1">[</bpt>L3 データ<ept id="p1">](#l3-data)</ept> セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Capture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャプチャ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Namespace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前空間</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>MerchantAccount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantAccount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>MerchantId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>The merchant information that is defined on the <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> page in the Finance and Operations client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations クライアントの <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> ページで定義されている商社情報。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">量</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>The total amount of the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの合計金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>CurrencyCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CurrencyCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>The currency code for the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの通貨コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>PurchaseLevelData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchaseLevelData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>The list of "Level 2" data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"レベル 2" データの一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>For more details, see the <bpt id="p1">[</bpt>L2 data<ept id="p1">](#l2-data)</ept> section later in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、このトピックで後述する<bpt id="p1">[</bpt>L2 データ<ept id="p1">](#l2-data)</ept> セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>PurchaseLevelData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchaseLevelData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>The list of "Level 3" data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"レベル 3" データの一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>For more details, see the <bpt id="p1">[</bpt>L3 data<ept id="p1">](#l3-data)</ept> section later in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、このトピックで後述する<bpt id="p1">[</bpt>L3 データ<ept id="p1">](#l3-data)</ept> セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>Void</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>Namespace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前空間</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>MerchantAccount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantAccount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>MerchantId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>The merchant information that is defined on the <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> page in the Finance and Operations client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations クライアントの <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> ページで定義されている商社情報。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>Amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">量</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>The total amount of the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの合計金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>CurrencyCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CurrencyCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>The currency code for the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの通貨コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Refund</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">払戻</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>Namespace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前空間</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>MerchantAccount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantAccount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>MerchantId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>The merchant information that is defined on the <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> page in the Finance and Operations client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations クライアントの <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> ページで定義されている商社情報。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Last4Digits</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Last4Digits</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>The last four digits of the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用するカードの末尾 4 桁。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>UniqueCardId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UniqueCardId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>The unique randomized identifier of the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用するカードのランダムな一意識別子。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>ExpirationYear</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExpirationYear</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>The expiration year of the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用するカードの有効期限年。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>ExpirationMonth</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExpirationMonth</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source>The expiration month of the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用するカードの有効期限月。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source>StreetAddress</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">StreetAddress</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>The street of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の番地。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>City</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">市町村</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source>The city of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の市町村。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source>State</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">行政単位 (区画)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>The state or province of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の都道府県。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>PostalCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PostalCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>The postal code of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の郵便番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>IndustryType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IndustryType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source>The type of channel where the payment occurred (for example, <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Direct Marketing<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>E-Commerce<ept id="p3">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払が発生したチャネルのタイプ (たとえば、<bpt id="p1">**</bpt>小売<ept id="p1">**</ept>、<bpt id="p2">**</bpt>ダイレクト マーケティング<ept id="p2">**</ept>、または<bpt id="p3">**</bpt>電子商取引<ept id="p3">**</ept>)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source>AllowPartialAuthorization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AllowPartialAuthorization</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>A value that indicates whether partial authorization is supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">部分的な承認がサポートされているかどうかを示す値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>Amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">量</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source>The total amount of the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの合計金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>CurrencyCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CurrencyCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source>The currency code for the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの通貨コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>TerminalId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TerminalId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>The unique identifier of the terminal where the transaction occurred.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションが発生した端末の一意の識別子。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source>PurchaseLevelData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchaseLevelData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source>The list of "Level 2" data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"レベル 2" データの一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="360">
-          <source>For more details, see the <bpt id="p1">[</bpt>L2 data<ept id="p1">](#l2-data)</ept> section later in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、このトピックで後述する<bpt id="p1">[</bpt>L2 データ<ept id="p1">](#l2-data)</ept> セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="361">
-          <source>PurchaseLevelData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchaseLevelData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="362">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="363">
-          <source>The list of "Level 3" data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"レベル 3" データの一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="364">
-          <source>For more details, see the <bpt id="p1">[</bpt>L3 data<ept id="p1">](#l3-data)</ept> section later in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、このトピックで後述する<bpt id="p1">[</bpt>L3 データ<ept id="p1">](#l3-data)</ept> セクションを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="365">
-          <source>GetPaymentAcceptPoint</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetPaymentAcceptPoint</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="366">
-          <source>Namespace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前空間</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="367">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="368">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="369">
-          <source>MerchantAccount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantAccount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="370">
-          <source>MerchantId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="371">
-          <source>The merchant information that is defined on the <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> page in the Finance and Operations client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations クライアントの <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> ページで定義されている商社情報。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="372">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="373">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="374">
-          <source>The name of the cardholder.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カード所有者の名前。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="375">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="376">
-          <source>StreetAddress</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">StreetAddress</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="377">
-          <source>The street of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の番地。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="378">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="379">
-          <source>City</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">市町村</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="380">
-          <source>The city of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の市町村。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="381">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="382">
-          <source>State</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">行政単位 (区画)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="383">
-          <source>The state or province of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の都道府県。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="384">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="385">
-          <source>PostalCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PostalCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="386">
-          <source>The postal code of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の郵便番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="387">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="388">
-          <source>Country</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">国</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="389">
-          <source>The country or region of the billing address that is associated with the card that is used for the payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払に使用されるカードに関連付けられている請求先住所の国または地域。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="390">
-          <source>PaymentCard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymentCard</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="391">
-          <source>ShowSameAsShippingAddress</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShowSameAsShippingAddress</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="392">
-          <source>A value that identifies whether the billing address is the same as the shipping address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">請求先住所が出荷先住所と同じかどうかを識別する値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="393">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="394">
-          <source>IndustryType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IndustryType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="395">
-          <source>The type of channel where the payment occurred (for example, <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Direct Marketing<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>E-Commerce<ept id="p3">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払が発生したチャネルのタイプ (たとえば、<bpt id="p1">**</bpt>小売<ept id="p1">**</ept>、<bpt id="p2">**</bpt>ダイレクト マーケティング<ept id="p2">**</ept>、または<bpt id="p3">**</bpt>電子商取引<ept id="p3">**</ept>)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="396">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="397">
-          <source>AllowPartialAuthorization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AllowPartialAuthorization</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="398">
-          <source>A value that indicates whether partial authorization is supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">部分的な承認がサポートされているかどうかを示す値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="399">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="400">
-          <source>CurrencyCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CurrencyCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="401">
-          <source>The currency code for the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの通貨コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="402">
-          <source>TransactionData</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TransactionData</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="403">
-          <source>TerminalId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TerminalId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="404">
-          <source>The unique identifier of the terminal where the transaction occurred.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションが発生した端末の一意の識別子。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="405">
-          <source>Shared data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共有データ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="406">
-          <source>L2 data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2 データ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="407">
-          <source>L2 data is sent to the connector only if this behavior is explicitly configured through the corresponding connector configuration in the Finance and Operations client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この動作が Finance and Operations クライアント内の対応するコネクタ構成を通じて明示的に構成されている場合にのみ、L2 データがコネクタに送信されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="408">
-          <source>Namespace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前空間</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="409">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="410">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="411">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="412">
-          <source>OrderDateTime</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OrderDateTime</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="413">
-          <source>The date and time when the order occurred.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文が発生した日時。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="414">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="415">
-          <source>OrderNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OrderNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="416">
-          <source>The order number that is associated with the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文に関連付けられている注文番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="417">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="418">
-          <source>InvoiceDateTime</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InvoiceDateTime</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="419">
-          <source>The date and time when the order was invoiced.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文が作成された日時。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="420">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="421">
-          <source>InvoiceNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InvoiceNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="422">
-          <source>The invoice number for the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の請求書番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="423">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="424">
-          <source>OrderDescription</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OrderDescription</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="425">
-          <source>The description of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の説明。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="426">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="427">
-          <source>SummaryCommodityCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SummaryCommodityCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="428">
-          <source>The commodity code that is associated with the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品に関連付けられている商品コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="429">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="430">
-          <source>MerchantContact</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantContact</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="431">
-          <source>The contact information for the merchant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売者の連絡先情報。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="432">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="433">
-          <source>MerchantTaxId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantTaxId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="434">
-          <source>The unique tax identifier of the merchant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売者の一意の税 ID。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="435">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="436">
-          <source>MerchantType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="437">
-          <source>The unique merchant identifier that is maintained by the payment processor.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払プロセッサによって保持されている固有の販売者 ID。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="438">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="439">
-          <source>PurchaserId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchaserId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="440">
-          <source>The unique identifier of the purchaser.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">購入者の一意の識別子。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="441">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="442">
-          <source>PurchaserTaxId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchaserTaxId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="443">
-          <source>The unique tax identifier of the purchaser.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">購入者の一意の税識別子。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="444">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="445">
-          <source>ShipToCity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipToCity</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="446">
-          <source>The city of the shipping address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出荷先住所の市町村。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="447">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="448">
-          <source>ShipToCounty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipToCounty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="449">
-          <source>The county of the shipping address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出荷先住所の市区郡。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="450">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="451">
-          <source>ShipToState<ph id="ph1">\_</ph>ProvinceCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipToState<ph id="ph1">\_</ph>ProvinceCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="452">
-          <source>The state or province code of the shipping address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出荷先住所の都道府県コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="453">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="454">
-          <source>ShipToPostalCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipToPostalCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="455">
-          <source>The postal code of the shipping address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出荷先住所の郵便番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="456">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="457">
-          <source>ShipToCountryCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipToCountryCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="458">
-          <source>The country or region code of the shipping address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出荷先住所の国または地域コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="459">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="460">
-          <source>ShipFromCity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipFromCity</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="461">
-          <source>The city of the address that the order is shipped from.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の出荷元の住所の市町村。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="462">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="463">
-          <source>ShipFromCounty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipFromCounty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="464">
-          <source>The county of the address that the order is shipped from.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の出荷元の住所の市区郡。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="465">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="466">
-          <source>ShipFromState<ph id="ph1">\_</ph>ProvinceCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipFromState<ph id="ph1">\_</ph>ProvinceCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="467">
-          <source>The state or province code of the address that the order is shipped from.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の出荷元の住所の都道府県コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="468">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="469">
-          <source>ShipFromPostalCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipFromPostalCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="470">
-          <source>The postal code of the address that the order is shipped from.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の出荷元の住所の郵便番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="471">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="472">
-          <source>ShipFromCountryCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipFromCountryCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="473">
-          <source>The country or region code of the address that the order is shipped from.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の出荷元の住所の国または地域コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="474">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="475">
-          <source>DiscountAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DiscountAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="476">
-          <source>The discount amount that is applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される割引金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="477">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="478">
-          <source>MiscCharge</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MiscCharge</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="479">
-          <source>The miscellaneous charges that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用されるその他の変更。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="480">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="481">
-          <source>DutyAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DutyAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="482">
-          <source>The duty amount that is applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される関税額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="483">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="484">
-          <source>FreightAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FreightAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="485">
-          <source>The freight amount that is applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される配送料。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="486">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="487">
-          <source>HandlingCharge</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HandlingCharge</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="488">
-          <source>The handling charge that is applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される取扱手数料。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="489">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="490">
-          <source>IsTaxable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IsTaxable</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="491">
-          <source>A value that identifies whether the specific line item part of the order is taxable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分が課税対象であるかどうかを識別する値。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="492">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="493">
-          <source>TotalTaxAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TotalTaxAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="494">
-          <source>The total tax amount that is applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される合計税額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="495">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="496">
-          <source>TotalTaxRate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TotalTaxRate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="497">
-          <source>The total tax rate that is applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される合計税率。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="498">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="499">
-          <source>MerchantName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="500">
-          <source>The name of the merchant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売者の名前。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="501">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="502">
-          <source>MerchantCity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantCity</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="503">
-          <source>The city of the address of the merchant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売者の住所の市町村。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="504">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="505">
-          <source>MerchantState</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantState</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="506">
-          <source>The state or province of the address of the merchant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売者の住所の都道府県。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="507">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="508">
-          <source>MerchantCounty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantCounty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="509">
-          <source>The county of the address of the merchant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売者の住所の市区郡。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="510">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="511">
-          <source>MerchantCountryCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantCountryCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="512">
-          <source>The country or region code of the address of the merchant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売者の住所の国または地域コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="513">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="514">
-          <source>MerchantZip</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantZip</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="515">
-          <source>The postal code of the address of the merchant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売者の住所の郵便番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="516">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="517">
-          <source>TaxRate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxRate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="518">
-          <source>The tax rate that is applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される税率。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="519">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="520">
-          <source>TaxAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="521">
-          <source>The tax amount that is applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される税額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="522">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="523">
-          <source>TaxDescription</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxDescription</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="524">
-          <source>The description of the taxes that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される税の説明。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="525">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="526">
-          <source>TaxTypeIdentifier</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxTypeIdentifier</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="527">
-          <source>The type identifier of the taxes that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される税のタイプ識別子。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="528">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="529">
-          <source>RequesterName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RequesterName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="530">
-          <source>The name of the requester.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求者の名前。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="531">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="532">
-          <source>TotalAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TotalAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="533">
-          <source>The total amount of the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分の合計税額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="534">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="535">
-          <source>PurchaseCardType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchaseCardType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="536">
-          <source>The card type of the purchaser.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">購入者のカードの種類。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="537">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="538">
-          <source>AmexLegacyDescription1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AmexLegacyDescription1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="539">
-          <source>Legacy American Express description field 1.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">従来の American Express 説明フィールド 1。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="540">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="541">
-          <source>AmexLegacyDescription2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AmexLegacyDescription2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="542">
-          <source>Legacy American Express description field 2.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">従来の American Express 説明フィールド 2。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="543">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="544">
-          <source>AmexLegacyDescription3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AmexLegacyDescription3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="545">
-          <source>Legacy American Express description field 3.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">従来の American Express 説明フィールド 3。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="546">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="547">
-          <source>AmexLegacyDescription4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AmexLegacyDescription4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="548">
-          <source>Legacy American Express description field 4.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">従来の American Express 説明フィールド 4。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="549">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="550">
-          <source>TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxRate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxRate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="551">
-          <source>The list of individual tax rates that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される個々の税率の一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="552">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="553">
-          <source>TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxDescription</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxDescription</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="554">
-          <source>The list of individual descriptions of the taxes that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される税の個々の説明の一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="555">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="556">
-          <source>TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="557">
-          <source>The list of individual tax amounts that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される個々の税額の一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="558">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="559">
-          <source>TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxTypeIdentifier</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxTypeIdentifier</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="560">
-          <source>The list of type identifiers of the taxes that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される税のタイプ識別子の一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="561">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="562">
-          <source>MiscellaneousCharges<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.ChargeType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MiscellaneousCharges<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.ChargeType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="563">
-          <source>The list of charge types that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される請求タイプの一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="564">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="565">
-          <source>MiscellaneousCharges<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.ChargeAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MiscellaneousCharges<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.ChargeAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="566">
-          <source>The list of charge amounts that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される請求金額の一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="567">
-          <source>L3 data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3 データ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="568">
-          <source>L3 data is sent to the connector only if this behavior is explicitly configured through the corresponding connector configuration in the Finance and Operations client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この動作が Finance and Operations クライアント内の対応するコネクタ構成を通じて明示的に構成されている場合にのみ、L3 データがコネクタに送信されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="569">
-          <source>Namespace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前空間</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="570">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="571">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="572">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="573">
-          <source>SequenceNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SequenceNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="574">
-          <source>The sequence number of the item for the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の品目の順序番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="575">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="576">
-          <source>CommodityCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CommodityCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="577">
-          <source>The commodity code that is associated with the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品に関連付けられている商品コード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="578">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="579">
-          <source>ProductCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProductCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="580">
-          <source>The unique code of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の一意のコード。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="581">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="582">
-          <source>ProductName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProductName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="583">
-          <source>The name of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">生産の名前。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="584">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="585">
-          <source>ProductSKU</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProductSKU</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="586">
-          <source>The stock keeping unit (SKU) of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の最小在庫管理単位 (SKU)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="587">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="588">
-          <source>Descriptor</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Descriptor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="589">
-          <source>The description of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の説明。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="590">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="591">
-          <source>UnitOfMeasure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UnitOfMeasure</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="592">
-          <source>The unit of measure of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の測定単位。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="593">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="594">
-          <source>UnitPrice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UnitPrice</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="595">
-          <source>The unit price of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の単価。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="596">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="597">
-          <source>Discount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">割引</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="598">
-          <source>The discount that is applied to the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品に適用される割引。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="599">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="600">
-          <source>DiscountRate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DiscountRate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="601">
-          <source>The discount rate that is applied to the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品に適用される割引率。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="602">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="603">
-          <source>Quantity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">件数</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="604">
-          <source>The quantity of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の数量。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="605">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="606">
-          <source>MiscCharge</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MiscCharge</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="607">
-          <source>The miscellaneous charge of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品のその他の請求金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="608">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="609">
-          <source>NetTotal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NetTotal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="610">
-          <source>The net total amount of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の正味合計額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="611">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="612">
-          <source>TaxAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="613">
-          <source>The tax amount of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の税額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="614">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="615">
-          <source>TaxRate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxRate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="616">
-          <source>The tax rate of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の税率。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="617">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="618">
-          <source>TotalAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TotalAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="619">
-          <source>The total amount of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の合計金額。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="620">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="621">
-          <source>CostCenter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostCenter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="622">
-          <source>The cost center of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品のコスト センター。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="623">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="624">
-          <source>FreightAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FreightAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="625">
-          <source>The freight amount of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の配送料。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="626">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="627">
-          <source>HandlingAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HandlingAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="628">
-          <source>The handling amount of the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の取扱手数料。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="629">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="630">
-          <source>CarrierTrackingNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CarrierTrackingNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="631">
-          <source>The carrier tracking number of the product that is being shipped.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出荷される製品の配送業者の追跡番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="632">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="633">
-          <source>MerchantTaxID</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantTaxID</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="634">
-          <source>The unique tax identifier of the merchant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売者の一意の税 ID。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="635">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="636">
-          <source>MerchantCatalogNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MerchantCatalogNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="637">
-          <source>The catalog number of the merchant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売者のカタログ番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="638">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="639">
-          <source>TaxCategoryApplied</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxCategoryApplied</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="640">
-          <source>The tax category that is applied to the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品に適用される税カテゴリ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="641">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="642">
-          <source>PickupAddress</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PickupAddress</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="643">
-          <source>The street of the pickup address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集荷元住所の番地。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="644">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="645">
-          <source>PickupCity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PickupCity</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="646">
-          <source>The city of the pickup address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集荷元住所の市町村。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="647">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="648">
-          <source>PickupState</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PickupState</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="649">
-          <source>The state or province of the pickup address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集荷元住所の都道府県。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="650">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="651">
-          <source>PickupCounty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PickupCounty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="652">
-          <source>The county of the pickup address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集荷元住所の市区郡。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="653">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="654">
-          <source>PickupZip</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PickupZip</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="655">
-          <source>The postal code of the pickup address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集荷元住所の郵便番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="656">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="657">
-          <source>PickupCountry</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PickupCountry</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="658">
-          <source>The country or region of the pickup address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集荷元住所の国または地域。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="659">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="660">
-          <source>PickupDateTime</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PickupDateTime</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="661">
-          <source>The date and time of the pickup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集荷の日時。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="662">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="663">
-          <source>PickupRecordNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PickupRecordNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="664">
-          <source>The record number of the pickup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集荷のレコード番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="665">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="666">
-          <source>CarrierShipmentNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CarrierShipmentNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="667">
-          <source>The shipment number of the carrier.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配送業者の出荷番号。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="668">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="669">
-          <source>UNSPSCCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UNSPSCCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="670">
-          <source>The United Nations Standard Products and Services Code (UNSPSC).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">United Nations Standard Products and Services Code (UNSPSC)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="671">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="672">
-          <source>TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxRate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxRate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="673">
-          <source>The list of individual tax rates that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される個々の税率の一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="674">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="675">
-          <source>TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxDescription</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxDescription</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="676">
-          <source>The list of individual descriptions of the taxes that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される税の個々の説明の一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="677">
-          <source>L2Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L2Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="678">
-          <source>TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="679">
-          <source>The list of individual tax amounts that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される個々の税額の一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="680">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="681">
-          <source>TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxTypeIdentifier</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxDetails<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.TaxTypeIdentifier</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="682">
-          <source>The list of type identifiers of the taxes that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される税のタイプ識別子の一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="683">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="684">
-          <source>MiscellaneousCharges<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.ChargeType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MiscellaneousCharges<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.ChargeType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="685">
-          <source>The list of charge types that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される請求タイプの一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="686">
-          <source>L3Data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L3Data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="687">
-          <source>MiscellaneousCharges<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.ChargeAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MiscellaneousCharges<ph id="ph1">\[</ph><ph id="ph2">\]</ph>.ChargeAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="688">
-          <source>The list of charge amounts that are applied to the specific line item part of the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の特定の明細行品目の部分に適用される請求金額の一覧。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="689">
-          <source>Related topics</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関連トピック</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="690">
-          <source><bpt id="p1">**</bpt><bpt id="p2">[</bpt>Create an end-to-end payment integration for a payment terminal<ept id="p2">](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)</ept><ept id="p1">**</ept> – This topic describes how to create a custom payment connector.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt><bpt id="p2">[</bpt>支払端末のエンド ツー エンド支払統合の作成<ept id="p2">](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)</ept><ept id="p1">**</ept> – このトピックでは、カスタム支払コネクタを作成する方法について説明します。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Dynamics 365 支払データの使用
+description: このトピックでは、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。
+author: rubendel
+manager: AnnBe
+ms.date: 12/03/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: IT Pro
+ms.reviewer: josaw
+ms.search.scope: Operations, Retail
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: rubendel
+ms.search.validFrom: 2018-11-06
+ms.dyn365.ops.version: AX 8.1.2
+ms.openlocfilehash: d3227a96be078ff8b289f616d91279d7afa38dbc
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577993"
+---
+# <a name="dynamics-365-payment-data-use"></a><span data-ttu-id="e19c7-103">Dynamics 365 支払データの使用</span><span class="sxs-lookup"><span data-stu-id="e19c7-103">Dynamics 365 payment data use</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="e19c7-104">このトピックでは、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。</span><span class="sxs-lookup"><span data-stu-id="e19c7-104">This topic provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.</span></span>
+
+## <a name="key-terms"></a><span data-ttu-id="e19c7-105">重要な用語</span><span class="sxs-lookup"><span data-stu-id="e19c7-105">Key terms</span></span>
+
+| <span data-ttu-id="e19c7-106">相談</span><span class="sxs-lookup"><span data-stu-id="e19c7-106">Term</span></span> | <span data-ttu-id="e19c7-107">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-107">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-108">カードあり</span><span class="sxs-lookup"><span data-stu-id="e19c7-108">Card present</span></span> | <span data-ttu-id="e19c7-109">*カードあり* という語は、販売時点管理 (POS) レジスターにおいてなど、物理的なカードが存在するトランザクションを処理するために支払コネクタを使用することを指します。</span><span class="sxs-lookup"><span data-stu-id="e19c7-109">The term *card present* describes the use of a payment connector to process transactions where a physical card is present, such as at a point of sale (POS) register.</span></span> |
+| <span data-ttu-id="e19c7-110">カードなし</span><span class="sxs-lookup"><span data-stu-id="e19c7-110">Card not present</span></span> | <span data-ttu-id="e19c7-111">*カードなし* という語は、コール センターや E コマースにおいてなど、物理的なカードが存在しないトランザクションを処理するために支払コネクタを使用することを指します。</span><span class="sxs-lookup"><span data-stu-id="e19c7-111">The term *card not present* describes the use of a payment connector to process transactions where a physical card isn't present, such as in call center or e-Commerce scenarios.</span></span> |
+
+## <a name="overview"></a><span data-ttu-id="e19c7-112">概要</span><span class="sxs-lookup"><span data-stu-id="e19c7-112">Overview</span></span>
+
+<span data-ttu-id="e19c7-113">このトピックでは、支払コネクタによって管理されているデータに関して次の領域に関する特定の詳細情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="e19c7-113">This topic provides specific details about the following areas with respect to data that is managed by the payment connectors:</span></span>
+
+- <span data-ttu-id="e19c7-114">**[カードありシナリオで使用されるデータ](#data-used-in-card-present-scenarios)**: このセクションでは、カードありシナリオの支払コネクタに渡されるデータ フィールドの一覧および説明を示します。</span><span class="sxs-lookup"><span data-stu-id="e19c7-114">**[Data used in card-present scenarios](#data-used-in-card-present-scenarios)** – This section provides a list and descriptions of data fields that are passed to the payment connector for card-present scenarios.</span></span>
+- <span data-ttu-id="e19c7-115">**[カードなしシナリオで使用されるデータ](#data-used-in-card-not-present-scenarios)**: このセクションでは、カードなしシナリオの支払コネクタに渡されるデータ フィールドの一覧および説明を示します。</span><span class="sxs-lookup"><span data-stu-id="e19c7-115">**[Data used in card-not-present scenarios](#data-used-in-card-not-present-scenarios)** – This section provides a list and descriptions of data fields that are passed to the payment connector for card-not-present scenarios.</span></span>
+
+## <a name="data-used-in-card-present-scenarios"></a><span data-ttu-id="e19c7-116">カードありシナリオで使用されるデータ</span><span class="sxs-lookup"><span data-stu-id="e19c7-116">Data used in card-present scenarios</span></span>
+
+<span data-ttu-id="e19c7-117">このセクションでは、カードありシナリオの支払コネクタに送信されるすべてのデータ ポイントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="e19c7-117">This section describes all data points that are sent to the payment connector for card-present scenarios.</span></span> <span data-ttu-id="e19c7-118">支払コネクタは、データを使用しないことがあります。</span><span class="sxs-lookup"><span data-stu-id="e19c7-118">The payment connect might not use the data.</span></span>
+
+### <a name="payment-connector-request-specific-data"></a><span data-ttu-id="e19c7-119">支払コネクタ要求固有のデータ</span><span class="sxs-lookup"><span data-stu-id="e19c7-119">Payment connector request-specific data</span></span>
+
+#### <a name="begintransactionpaymentterminaldevicerequest"></a><span data-ttu-id="e19c7-120">BeginTransactionPaymentTerminalDeviceRequest</span><span class="sxs-lookup"><span data-stu-id="e19c7-120">BeginTransactionPaymentTerminalDeviceRequest</span></span>
+
+| <span data-ttu-id="e19c7-121">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-121">Field</span></span> | <span data-ttu-id="e19c7-122">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-122">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-123">merchantInformation</span><span class="sxs-lookup"><span data-stu-id="e19c7-123">merchantInformation</span></span> | <span data-ttu-id="e19c7-124">Microsoft Dynamics 365 for Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。</span><span class="sxs-lookup"><span data-stu-id="e19c7-124">The merchant information that is defined on the **POS hardware profile** page in the Microsoft Dynamics 365 for Finance and Operations client.</span></span> |
+| <span data-ttu-id="e19c7-125">invoiceNumber</span><span class="sxs-lookup"><span data-stu-id="e19c7-125">invoiceNumber</span></span> | <span data-ttu-id="e19c7-126">POS が販売トランザクションを追跡するために生成する一意の請求書番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-126">The unique invoice number that the POS generates to track the sales transaction.</span></span> |
+
+#### <a name="updatelineitemspaymentterminaldevicerequest"></a><span data-ttu-id="e19c7-127">UpdateLineItemsPaymentTerminalDeviceRequest</span><span class="sxs-lookup"><span data-stu-id="e19c7-127">UpdateLineItemsPaymentTerminalDeviceRequest</span></span>
+
+| <span data-ttu-id="e19c7-128">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-128">Field</span></span> | <span data-ttu-id="e19c7-129">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-129">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-130">totalAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-130">totalAmount</span></span> | <span data-ttu-id="e19c7-131">現在の販売トランザクションでの合計金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-131">The total amount on the current sales transaction.</span></span> |
+| <span data-ttu-id="e19c7-132">taxAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-132">taxAmount</span></span> | <span data-ttu-id="e19c7-133">現在の販売トランザクションでの税金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-133">The tax amount on the current sales transaction.</span></span> | 
+| <span data-ttu-id="e19c7-134">discountAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-134">discountAmount</span></span> | <span data-ttu-id="e19c7-135">現在の販売トランザクションでの割引金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-135">The discount amount on the current sales transaction.</span></span> |
+| <span data-ttu-id="e19c7-136">subTotalAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-136">subTotalAmount</span></span> | <span data-ttu-id="e19c7-137">現在の販売トランザクションでの小計金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-137">The subtotal amount on the current sales transaction.</span></span> |
+| <span data-ttu-id="e19c7-138">項目</span><span class="sxs-lookup"><span data-stu-id="e19c7-138">items</span></span> | <span data-ttu-id="e19c7-139">製品名、数量、または計量単位など、製品に固有の詳細の一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-139">The list of product-specific details, such as product names, quantities, or units of measure.</span></span> |
+
+#### <a name="authorizepaymentterminaldevicerequest"></a><span data-ttu-id="e19c7-140">AuthorizePaymentTerminalDeviceRequest</span><span class="sxs-lookup"><span data-stu-id="e19c7-140">AuthorizePaymentTerminalDeviceRequest</span></span>
+
+| <span data-ttu-id="e19c7-141">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-141">Field</span></span> | <span data-ttu-id="e19c7-142">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-142">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-143">金額</span><span class="sxs-lookup"><span data-stu-id="e19c7-143">amount</span></span> | <span data-ttu-id="e19c7-144">承認する金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-144">The amount to authorize.</span></span> |
+| <span data-ttu-id="e19c7-145">通貨</span><span class="sxs-lookup"><span data-stu-id="e19c7-145">currency</span></span> | <span data-ttu-id="e19c7-146">承認する金額の通貨。</span><span class="sxs-lookup"><span data-stu-id="e19c7-146">The currency for the amount to authorize.</span></span> |
+| <span data-ttu-id="e19c7-147">voiceAuthorization</span><span class="sxs-lookup"><span data-stu-id="e19c7-147">voiceAuthorization</span></span> | <span data-ttu-id="e19c7-148">音声認証が必要な場合は、POS から送信される音声承認コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-148">The voice approval code that is sent from the POS if voice authorization is required.</span></span> |
+
+#### <a name="capturepaymentterminaldevicerequest"></a><span data-ttu-id="e19c7-149">CapturePaymentTerminalDeviceRequest</span><span class="sxs-lookup"><span data-stu-id="e19c7-149">CapturePaymentTerminalDeviceRequest</span></span>
+
+| <span data-ttu-id="e19c7-150">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-150">Field</span></span> | <span data-ttu-id="e19c7-151">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-151">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-152">金額</span><span class="sxs-lookup"><span data-stu-id="e19c7-152">amount</span></span> | <span data-ttu-id="e19c7-153">取得する金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-153">The amount to capture.</span></span> |
+| <span data-ttu-id="e19c7-154">通貨</span><span class="sxs-lookup"><span data-stu-id="e19c7-154">currency</span></span> | <span data-ttu-id="e19c7-155">取得する金額の通貨。</span><span class="sxs-lookup"><span data-stu-id="e19c7-155">The currency for the amount to capture.</span></span> |
+| <span data-ttu-id="e19c7-156">paymentPropertiesXml</span><span class="sxs-lookup"><span data-stu-id="e19c7-156">paymentPropertiesXml</span></span> | <span data-ttu-id="e19c7-157">**AuthorizePaymentTerminalDeviceRequest** 要求または **RefundPaymentTerminalDeviceRequest** 要求によって返され、要求間のステートフル プロパティをサポートするために使用される **PaymentSdkData** オブジェクトのコンテンツ。</span><span class="sxs-lookup"><span data-stu-id="e19c7-157">The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests.</span></span> <span data-ttu-id="e19c7-158">詳細については、このトピックで後述する[支払 SDK データ](#payment-sdk-data) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e19c7-158">For more details, see the [Payment SDK data](#payment-sdk-data) section later in this topic.</span></span> |
+
+#### <a name="voidpaymentterminaldevicerequest"></a><span data-ttu-id="e19c7-159">VoidPaymentTerminalDeviceRequest</span><span class="sxs-lookup"><span data-stu-id="e19c7-159">VoidPaymentTerminalDeviceRequest</span></span>
+
+| <span data-ttu-id="e19c7-160">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-160">Field</span></span> | <span data-ttu-id="e19c7-161">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-161">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-162">金額</span><span class="sxs-lookup"><span data-stu-id="e19c7-162">amount</span></span> | <span data-ttu-id="e19c7-163">支払いが無効になる金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-163">The amount of the payment to void.</span></span> |
+| <span data-ttu-id="e19c7-164">通貨</span><span class="sxs-lookup"><span data-stu-id="e19c7-164">currency</span></span> | <span data-ttu-id="e19c7-165">支払いが無効になる通貨。</span><span class="sxs-lookup"><span data-stu-id="e19c7-165">The currency for the payment to void.</span></span> |
+| <span data-ttu-id="e19c7-166">paymentPropertiesXml</span><span class="sxs-lookup"><span data-stu-id="e19c7-166">paymentPropertiesXml</span></span> | <span data-ttu-id="e19c7-167">**AuthorizePaymentTerminalDeviceRequest** 要求または **RefundPaymentTerminalDeviceRequest** 要求によって返され、要求間のステートフル プロパティをサポートするために使用される **PaymentSdkData** オブジェクトのコンテンツ。</span><span class="sxs-lookup"><span data-stu-id="e19c7-167">The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests.</span></span> <span data-ttu-id="e19c7-168">詳細については、このトピックで後述する[支払 SDK データ](#payment-sdk-data) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e19c7-168">For more details, see the [Payment SDK data](#payment-sdk-data) section later in this topic.</span></span> |
+
+#### <a name="refundpaymentterminaldevicerequest"></a><span data-ttu-id="e19c7-169">RefundPaymentTerminalDeviceRequest</span><span class="sxs-lookup"><span data-stu-id="e19c7-169">RefundPaymentTerminalDeviceRequest</span></span>
+
+| <span data-ttu-id="e19c7-170">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-170">Field</span></span> | <span data-ttu-id="e19c7-171">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-171">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-172">金額</span><span class="sxs-lookup"><span data-stu-id="e19c7-172">amount</span></span> | <span data-ttu-id="e19c7-173">払い戻す金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-173">The amount to refund.</span></span> |
+| <span data-ttu-id="e19c7-174">通貨</span><span class="sxs-lookup"><span data-stu-id="e19c7-174">currency</span></span> | <span data-ttu-id="e19c7-175">払い戻す金額の通貨。</span><span class="sxs-lookup"><span data-stu-id="e19c7-175">The currency for the amount to refund.</span></span> |
+
+#### <a name="activategiftcardpaymentterminalrequest"></a><span data-ttu-id="e19c7-176">ActivateGiftCardPaymentTerminalRequest</span><span class="sxs-lookup"><span data-stu-id="e19c7-176">ActivateGiftCardPaymentTerminalRequest</span></span>
+
+| <span data-ttu-id="e19c7-177">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-177">Field</span></span> | <span data-ttu-id="e19c7-178">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-178">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-179">金額</span><span class="sxs-lookup"><span data-stu-id="e19c7-179">amount</span></span> | <span data-ttu-id="e19c7-180">有効化中にギフト カードに追加する初期金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-180">The initial amount to add to the gift card during activation.</span></span> |
+| <span data-ttu-id="e19c7-181">通貨</span><span class="sxs-lookup"><span data-stu-id="e19c7-181">currency</span></span> | <span data-ttu-id="e19c7-182">有効化中にギフト カードに追加する初期金額の通貨。</span><span class="sxs-lookup"><span data-stu-id="e19c7-182">The currency for the initial amount to add to the gift card during activation.</span></span> |
+
+#### <a name="addbalancetogiftcardpaymentterminalrequest"></a><span data-ttu-id="e19c7-183">AddBalanceToGiftCardPaymentTerminalRequest</span><span class="sxs-lookup"><span data-stu-id="e19c7-183">AddBalanceToGiftCardPaymentTerminalRequest</span></span>
+
+| <span data-ttu-id="e19c7-184">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-184">Field</span></span> | <span data-ttu-id="e19c7-185">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-185">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-186">金額</span><span class="sxs-lookup"><span data-stu-id="e19c7-186">amount</span></span> | <span data-ttu-id="e19c7-187">ギフト カード残高に追加される金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-187">The amount to add to the gift card balance.</span></span> |
+| <span data-ttu-id="e19c7-188">通貨</span><span class="sxs-lookup"><span data-stu-id="e19c7-188">currency</span></span> | <span data-ttu-id="e19c7-189">ギフト カード残高に追加する金額の通貨。</span><span class="sxs-lookup"><span data-stu-id="e19c7-189">The currency for the amount to add to the gift card balance.</span></span> |
+
+#### <a name="getgiftcardbalancepaymentterminalrequest"></a><span data-ttu-id="e19c7-190">GetGiftCardBalancePaymentTerminalRequest</span><span class="sxs-lookup"><span data-stu-id="e19c7-190">GetGiftCardBalancePaymentTerminalRequest</span></span>
+
+| <span data-ttu-id="e19c7-191">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-191">Field</span></span> | <span data-ttu-id="e19c7-192">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-192">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-193">通貨</span><span class="sxs-lookup"><span data-stu-id="e19c7-193">currency</span></span> | <span data-ttu-id="e19c7-194">ギフト カード残高を取得するための通貨。</span><span class="sxs-lookup"><span data-stu-id="e19c7-194">The currency to retrieve the gift card balance in.</span></span> |
+
+#### <a name="getprivatetenderpaymentterminaldevicerequest"></a><span data-ttu-id="e19c7-195">GetPrivateTenderPaymentTerminalDeviceRequest</span><span class="sxs-lookup"><span data-stu-id="e19c7-195">GetPrivateTenderPaymentTerminalDeviceRequest</span></span>
+
+| <span data-ttu-id="e19c7-196">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-196">Field</span></span> | <span data-ttu-id="e19c7-197">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-197">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-198">金額</span><span class="sxs-lookup"><span data-stu-id="e19c7-198">amount</span></span> | <span data-ttu-id="e19c7-199">POS に設定された金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-199">The amount that is set on the POS.</span></span> <span data-ttu-id="e19c7-200">(通常、この変数は、カード番号を取得したときに支払ターミナルの金額を表示するために使用されます。)</span><span class="sxs-lookup"><span data-stu-id="e19c7-200">(Typically, this variable is used to show the amount on the payment terminal when the card number is retrieved.)</span></span> |
+
+### <a name="shared-data"></a><span data-ttu-id="e19c7-201">共有データ</span><span class="sxs-lookup"><span data-stu-id="e19c7-201">Shared data</span></span>
+
+#### <a name="payment-sdk-data"></a><span data-ttu-id="e19c7-202">支払 SDK データ</span><span class="sxs-lookup"><span data-stu-id="e19c7-202">Payment SDK data</span></span>
+
+| <span data-ttu-id="e19c7-203">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-203">Field</span></span> | <span data-ttu-id="e19c7-204">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-204">Description</span></span> |
+|---|---|
+| <span data-ttu-id="e19c7-205">ApprovedAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-205">ApprovedAmount</span></span> | <span data-ttu-id="e19c7-206">トランザクションに対して承認された金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-206">The amount that was approved for the transaction.</span></span> |
+| <span data-ttu-id="e19c7-207">AvailableBalance</span><span class="sxs-lookup"><span data-stu-id="e19c7-207">AvailableBalance</span></span> | <span data-ttu-id="e19c7-208">カードの使用可能な残高。</span><span class="sxs-lookup"><span data-stu-id="e19c7-208">The available balance on the card.</span></span> |
+| <span data-ttu-id="e19c7-209">ApprovalCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-209">ApprovalCode</span></span> | <span data-ttu-id="e19c7-210">トランザクションの承認コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-210">The approval code for the transaction.</span></span> |
+| <span data-ttu-id="e19c7-211">ProviderTransactionId</span><span class="sxs-lookup"><span data-stu-id="e19c7-211">ProviderTransactionId</span></span> | <span data-ttu-id="e19c7-212">支払いプロバイダーのトランザクション識別子。</span><span class="sxs-lookup"><span data-stu-id="e19c7-212">The transaction identifier of the payment provider.</span></span> |
+| <span data-ttu-id="e19c7-213">AuthorizationResult</span><span class="sxs-lookup"><span data-stu-id="e19c7-213">AuthorizationResult</span></span> | <span data-ttu-id="e19c7-214">権限呼び出しの結果。</span><span class="sxs-lookup"><span data-stu-id="e19c7-214">The result of the authorization call.</span></span> |
+| <span data-ttu-id="e19c7-215">ExternalReceipt</span><span class="sxs-lookup"><span data-stu-id="e19c7-215">ExternalReceipt</span></span> | <span data-ttu-id="e19c7-216">支払プロバイダーからの外部レシート データ。</span><span class="sxs-lookup"><span data-stu-id="e19c7-216">The external receipt data from the payment provider.</span></span> |
+| <span data-ttu-id="e19c7-217">TerminalId</span><span class="sxs-lookup"><span data-stu-id="e19c7-217">TerminalId</span></span> | <span data-ttu-id="e19c7-218">支払を処理した端末の一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="e19c7-218">The unique identifier of the terminal that handled the payment.</span></span> |
+ 
+## <a name="data-used-in-card-not-present-scenarios"></a><span data-ttu-id="e19c7-219">カードなしシナリオで使用されるデータ</span><span class="sxs-lookup"><span data-stu-id="e19c7-219">Data used in card-not-present scenarios</span></span>
+
+<span data-ttu-id="e19c7-220">このセクションでは、カードなしシナリオの支払コネクタに送信されるデータについて説明します。</span><span class="sxs-lookup"><span data-stu-id="e19c7-220">This section describes data that is sent to the payment connector for card-not-present scenarios.</span></span> <span data-ttu-id="e19c7-221">各コネクタが処理する特定のデータはさまざまであるため、特定のコネクタが提供されたすべてのデータを使用しない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e19c7-221">The specific data that each connector processes varies, and a given connector might not use all the data that is provided.</span></span>
+
+### <a name="payment-connector-methodspecific-data"></a><span data-ttu-id="e19c7-222">支払コネクタ方法固有のデータ</span><span class="sxs-lookup"><span data-stu-id="e19c7-222">Payment connector method–specific data</span></span>
+
+#### <a name="authorization"></a><span data-ttu-id="e19c7-223">認証</span><span class="sxs-lookup"><span data-stu-id="e19c7-223">Authorization</span></span>
+
+| <span data-ttu-id="e19c7-224">名前空間</span><span class="sxs-lookup"><span data-stu-id="e19c7-224">Namespace</span></span> | <span data-ttu-id="e19c7-225">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-225">Field</span></span> | <span data-ttu-id="e19c7-226">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-226">Description</span></span> |
+|---|---|---|
+| <span data-ttu-id="e19c7-227">MerchantAccount</span><span class="sxs-lookup"><span data-stu-id="e19c7-227">MerchantAccount</span></span> | <span data-ttu-id="e19c7-228">MerchantId</span><span class="sxs-lookup"><span data-stu-id="e19c7-228">MerchantId</span></span> | <span data-ttu-id="e19c7-229">Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。</span><span class="sxs-lookup"><span data-stu-id="e19c7-229">The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client.</span></span> |
+| <span data-ttu-id="e19c7-230">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-230">PaymentCard</span></span> | <span data-ttu-id="e19c7-231">Last4Digits</span><span class="sxs-lookup"><span data-stu-id="e19c7-231">Last4Digits</span></span> | <span data-ttu-id="e19c7-232">支払に使用するカードの末尾 4 桁。</span><span class="sxs-lookup"><span data-stu-id="e19c7-232">The last four digits of the card that is used for the payment.</span></span> | 
+| <span data-ttu-id="e19c7-233">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-233">PaymentCard</span></span> | <span data-ttu-id="e19c7-234">UniqueCardId</span><span class="sxs-lookup"><span data-stu-id="e19c7-234">UniqueCardId</span></span> | <span data-ttu-id="e19c7-235">支払に使用するカードのランダムな一意識別子。</span><span class="sxs-lookup"><span data-stu-id="e19c7-235">The unique randomized identifier of the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-236">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-236">PaymentCard</span></span> | <span data-ttu-id="e19c7-237">ExpirationYear</span><span class="sxs-lookup"><span data-stu-id="e19c7-237">ExpirationYear</span></span> | <span data-ttu-id="e19c7-238">支払に使用するカードの有効期限年。</span><span class="sxs-lookup"><span data-stu-id="e19c7-238">The expiration year of the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-239">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-239">PaymentCard</span></span> | <span data-ttu-id="e19c7-240">ExpirationMonth</span><span class="sxs-lookup"><span data-stu-id="e19c7-240">ExpirationMonth</span></span> | <span data-ttu-id="e19c7-241">支払に使用するカードの有効期限月。</span><span class="sxs-lookup"><span data-stu-id="e19c7-241">The expiration month of the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-242">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-242">PaymentCard</span></span> | <span data-ttu-id="e19c7-243">StreetAddress</span><span class="sxs-lookup"><span data-stu-id="e19c7-243">StreetAddress</span></span> | <span data-ttu-id="e19c7-244">支払に使用されるカードに関連付けられている請求先住所の番地。</span><span class="sxs-lookup"><span data-stu-id="e19c7-244">The street of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-245">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-245">PaymentCard</span></span> | <span data-ttu-id="e19c7-246">市町村</span><span class="sxs-lookup"><span data-stu-id="e19c7-246">City</span></span> | <span data-ttu-id="e19c7-247">支払に使用されるカードに関連付けられている請求先住所の市町村。</span><span class="sxs-lookup"><span data-stu-id="e19c7-247">The city of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-248">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-248">PaymentCard</span></span> | <span data-ttu-id="e19c7-249">行政単位 (区画)</span><span class="sxs-lookup"><span data-stu-id="e19c7-249">State</span></span> | <span data-ttu-id="e19c7-250">支払に使用されるカードに関連付けられている請求先住所の都道府県。</span><span class="sxs-lookup"><span data-stu-id="e19c7-250">The state or province of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-251">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-251">PaymentCard</span></span> | <span data-ttu-id="e19c7-252">PostalCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-252">PostalCode</span></span> | <span data-ttu-id="e19c7-253">支払に使用されるカードに関連付けられている請求先住所の郵便番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-253">The postal code of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-254">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-254">TransactionData</span></span> | <span data-ttu-id="e19c7-255">IndustryType</span><span class="sxs-lookup"><span data-stu-id="e19c7-255">IndustryType</span></span> | <span data-ttu-id="e19c7-256">支払が発生したチャネルのタイプ (たとえば、**小売**、**ダイレクト マーケティング**、または**電子商取引**)。</span><span class="sxs-lookup"><span data-stu-id="e19c7-256">The type of channel where the payment occurred (for example, **Retail**, **Direct Marketing**, or **E-Commerce**).</span></span> |
+| <span data-ttu-id="e19c7-257">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-257">TransactionData</span></span> | <span data-ttu-id="e19c7-258">AllowPartialAuthorization</span><span class="sxs-lookup"><span data-stu-id="e19c7-258">AllowPartialAuthorization</span></span> | <span data-ttu-id="e19c7-259">部分的な承認がサポートされているかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="e19c7-259">A value that indicates whether partial authorization is supported.</span></span> |
+| <span data-ttu-id="e19c7-260">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-260">TransactionData</span></span> | <span data-ttu-id="e19c7-261">量</span><span class="sxs-lookup"><span data-stu-id="e19c7-261">Amount</span></span> | <span data-ttu-id="e19c7-262">トランザクションの合計金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-262">The total amount of the transaction.</span></span> |
+| <span data-ttu-id="e19c7-263">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-263">TransactionData</span></span> | <span data-ttu-id="e19c7-264">CurrencyCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-264">CurrencyCode</span></span> | <span data-ttu-id="e19c7-265">トランザクションの通貨コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-265">The currency code for the transaction.</span></span> |
+| <span data-ttu-id="e19c7-266">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-266">TransactionData</span></span> | <span data-ttu-id="e19c7-267">TerminalId</span><span class="sxs-lookup"><span data-stu-id="e19c7-267">TerminalId</span></span> | <span data-ttu-id="e19c7-268">トランザクションが発生した端末の一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="e19c7-268">The unique identifier of the terminal where the transaction occurred.</span></span> |
+| <span data-ttu-id="e19c7-269">PurchaseLevelData</span><span class="sxs-lookup"><span data-stu-id="e19c7-269">PurchaseLevelData</span></span> | <span data-ttu-id="e19c7-270">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-270">L2Data</span></span> | <span data-ttu-id="e19c7-271">"レベル 2" データの一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-271">The list of "Level 2" data.</span></span> <span data-ttu-id="e19c7-272">詳細については、このトピックで後述する[L2 データ](#l2-data) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e19c7-272">For more details, see the [L2 data](#l2-data) section later in this topic.</span></span> |
+| <span data-ttu-id="e19c7-273">PurchaseLevelData</span><span class="sxs-lookup"><span data-stu-id="e19c7-273">PurchaseLevelData</span></span> | <span data-ttu-id="e19c7-274">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-274">L3Data</span></span> | <span data-ttu-id="e19c7-275">"レベル 3" データの一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-275">The list of "Level 3" data.</span></span> <span data-ttu-id="e19c7-276">詳細については、このトピックで後述する[L3 データ](#l3-data) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e19c7-276">For more details, see the [L3 data](#l3-data) section later in this topic.</span></span> |
+
+#### <a name="capture"></a><span data-ttu-id="e19c7-277">キャプチャ</span><span class="sxs-lookup"><span data-stu-id="e19c7-277">Capture</span></span>
+
+| <span data-ttu-id="e19c7-278">名前空間</span><span class="sxs-lookup"><span data-stu-id="e19c7-278">Namespace</span></span> | <span data-ttu-id="e19c7-279">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-279">Field</span></span> | <span data-ttu-id="e19c7-280">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-280">Description</span></span> |
+|---|---|---|
+| <span data-ttu-id="e19c7-281">MerchantAccount</span><span class="sxs-lookup"><span data-stu-id="e19c7-281">MerchantAccount</span></span> | <span data-ttu-id="e19c7-282">MerchantId</span><span class="sxs-lookup"><span data-stu-id="e19c7-282">MerchantId</span></span> | <span data-ttu-id="e19c7-283">Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。</span><span class="sxs-lookup"><span data-stu-id="e19c7-283">The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client.</span></span> |
+| <span data-ttu-id="e19c7-284">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-284">TransactionData</span></span> | <span data-ttu-id="e19c7-285">量</span><span class="sxs-lookup"><span data-stu-id="e19c7-285">Amount</span></span> | <span data-ttu-id="e19c7-286">トランザクションの合計金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-286">The total amount of the transaction.</span></span> |
+| <span data-ttu-id="e19c7-287">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-287">TransactionData</span></span> | <span data-ttu-id="e19c7-288">CurrencyCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-288">CurrencyCode</span></span> | <span data-ttu-id="e19c7-289">トランザクションの通貨コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-289">The currency code for the transaction.</span></span> |
+| <span data-ttu-id="e19c7-290">PurchaseLevelData</span><span class="sxs-lookup"><span data-stu-id="e19c7-290">PurchaseLevelData</span></span> | <span data-ttu-id="e19c7-291">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-291">L2Data</span></span> | <span data-ttu-id="e19c7-292">"レベル 2" データの一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-292">The list of "Level 2" data.</span></span> <span data-ttu-id="e19c7-293">詳細については、このトピックで後述する[L2 データ](#l2-data) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e19c7-293">For more details, see the [L2 data](#l2-data) section later in this topic.</span></span> |
+| <span data-ttu-id="e19c7-294">PurchaseLevelData</span><span class="sxs-lookup"><span data-stu-id="e19c7-294">PurchaseLevelData</span></span> | <span data-ttu-id="e19c7-295">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-295">L3Data</span></span> | <span data-ttu-id="e19c7-296">"レベル 3" データの一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-296">The list of "Level 3" data.</span></span> <span data-ttu-id="e19c7-297">詳細については、このトピックで後述する[L3 データ](#l3-data) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e19c7-297">For more details, see the [L3 data](#l3-data) section later in this topic.</span></span> |
+
+#### <a name="void"></a><span data-ttu-id="e19c7-298">無効</span><span class="sxs-lookup"><span data-stu-id="e19c7-298">Void</span></span>
+
+| <span data-ttu-id="e19c7-299">名前空間</span><span class="sxs-lookup"><span data-stu-id="e19c7-299">Namespace</span></span> | <span data-ttu-id="e19c7-300">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-300">Field</span></span> | <span data-ttu-id="e19c7-301">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-301">Description</span></span> |
+|---|---|---|
+| <span data-ttu-id="e19c7-302">MerchantAccount</span><span class="sxs-lookup"><span data-stu-id="e19c7-302">MerchantAccount</span></span> | <span data-ttu-id="e19c7-303">MerchantId</span><span class="sxs-lookup"><span data-stu-id="e19c7-303">MerchantId</span></span> | <span data-ttu-id="e19c7-304">Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。</span><span class="sxs-lookup"><span data-stu-id="e19c7-304">The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client.</span></span> |
+| <span data-ttu-id="e19c7-305">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-305">TransactionData</span></span> | <span data-ttu-id="e19c7-306">量</span><span class="sxs-lookup"><span data-stu-id="e19c7-306">Amount</span></span> | <span data-ttu-id="e19c7-307">トランザクションの合計金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-307">The total amount of the transaction.</span></span> |
+| <span data-ttu-id="e19c7-308">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-308">TransactionData</span></span> | <span data-ttu-id="e19c7-309">CurrencyCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-309">CurrencyCode</span></span> | <span data-ttu-id="e19c7-310">トランザクションの通貨コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-310">The currency code for the transaction.</span></span> |
+
+#### <a name="refund"></a><span data-ttu-id="e19c7-311">払戻</span><span class="sxs-lookup"><span data-stu-id="e19c7-311">Refund</span></span>
+
+| <span data-ttu-id="e19c7-312">名前空間</span><span class="sxs-lookup"><span data-stu-id="e19c7-312">Namespace</span></span> | <span data-ttu-id="e19c7-313">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-313">Field</span></span> | <span data-ttu-id="e19c7-314">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-314">Description</span></span> |
+|---|---|---|
+| <span data-ttu-id="e19c7-315">MerchantAccount</span><span class="sxs-lookup"><span data-stu-id="e19c7-315">MerchantAccount</span></span> | <span data-ttu-id="e19c7-316">MerchantId</span><span class="sxs-lookup"><span data-stu-id="e19c7-316">MerchantId</span></span> | <span data-ttu-id="e19c7-317">Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。</span><span class="sxs-lookup"><span data-stu-id="e19c7-317">The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client.</span></span> |
+| <span data-ttu-id="e19c7-318">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-318">PaymentCard</span></span> | <span data-ttu-id="e19c7-319">Last4Digits</span><span class="sxs-lookup"><span data-stu-id="e19c7-319">Last4Digits</span></span> | <span data-ttu-id="e19c7-320">支払に使用するカードの末尾 4 桁。</span><span class="sxs-lookup"><span data-stu-id="e19c7-320">The last four digits of the card that is used for the payment.</span></span> | 
+| <span data-ttu-id="e19c7-321">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-321">PaymentCard</span></span> | <span data-ttu-id="e19c7-322">UniqueCardId</span><span class="sxs-lookup"><span data-stu-id="e19c7-322">UniqueCardId</span></span> | <span data-ttu-id="e19c7-323">支払に使用するカードのランダムな一意識別子。</span><span class="sxs-lookup"><span data-stu-id="e19c7-323">The unique randomized identifier of the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-324">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-324">PaymentCard</span></span> | <span data-ttu-id="e19c7-325">ExpirationYear</span><span class="sxs-lookup"><span data-stu-id="e19c7-325">ExpirationYear</span></span> | <span data-ttu-id="e19c7-326">支払に使用するカードの有効期限年。</span><span class="sxs-lookup"><span data-stu-id="e19c7-326">The expiration year of the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-327">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-327">PaymentCard</span></span> | <span data-ttu-id="e19c7-328">ExpirationMonth</span><span class="sxs-lookup"><span data-stu-id="e19c7-328">ExpirationMonth</span></span> | <span data-ttu-id="e19c7-329">支払に使用するカードの有効期限月。</span><span class="sxs-lookup"><span data-stu-id="e19c7-329">The expiration month of the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-330">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-330">PaymentCard</span></span> | <span data-ttu-id="e19c7-331">StreetAddress</span><span class="sxs-lookup"><span data-stu-id="e19c7-331">StreetAddress</span></span> | <span data-ttu-id="e19c7-332">支払に使用されるカードに関連付けられている請求先住所の番地。</span><span class="sxs-lookup"><span data-stu-id="e19c7-332">The street of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-333">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-333">PaymentCard</span></span> | <span data-ttu-id="e19c7-334">市町村</span><span class="sxs-lookup"><span data-stu-id="e19c7-334">City</span></span> | <span data-ttu-id="e19c7-335">支払に使用されるカードに関連付けられている請求先住所の市町村。</span><span class="sxs-lookup"><span data-stu-id="e19c7-335">The city of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-336">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-336">PaymentCard</span></span> | <span data-ttu-id="e19c7-337">行政単位 (区画)</span><span class="sxs-lookup"><span data-stu-id="e19c7-337">State</span></span> | <span data-ttu-id="e19c7-338">支払に使用されるカードに関連付けられている請求先住所の都道府県。</span><span class="sxs-lookup"><span data-stu-id="e19c7-338">The state or province of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-339">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-339">PaymentCard</span></span> | <span data-ttu-id="e19c7-340">PostalCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-340">PostalCode</span></span> | <span data-ttu-id="e19c7-341">支払に使用されるカードに関連付けられている請求先住所の郵便番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-341">The postal code of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-342">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-342">TransactionData</span></span> | <span data-ttu-id="e19c7-343">IndustryType</span><span class="sxs-lookup"><span data-stu-id="e19c7-343">IndustryType</span></span> | <span data-ttu-id="e19c7-344">支払が発生したチャネルのタイプ (たとえば、**小売**、**ダイレクト マーケティング**、または**電子商取引**)。</span><span class="sxs-lookup"><span data-stu-id="e19c7-344">The type of channel where the payment occurred (for example, **Retail**, **Direct Marketing**, or **E-Commerce**).</span></span> |
+| <span data-ttu-id="e19c7-345">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-345">TransactionData</span></span> | <span data-ttu-id="e19c7-346">AllowPartialAuthorization</span><span class="sxs-lookup"><span data-stu-id="e19c7-346">AllowPartialAuthorization</span></span> | <span data-ttu-id="e19c7-347">部分的な承認がサポートされているかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="e19c7-347">A value that indicates whether partial authorization is supported.</span></span> |
+| <span data-ttu-id="e19c7-348">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-348">TransactionData</span></span> | <span data-ttu-id="e19c7-349">量</span><span class="sxs-lookup"><span data-stu-id="e19c7-349">Amount</span></span> | <span data-ttu-id="e19c7-350">トランザクションの合計金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-350">The total amount of the transaction.</span></span> |
+| <span data-ttu-id="e19c7-351">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-351">TransactionData</span></span> | <span data-ttu-id="e19c7-352">CurrencyCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-352">CurrencyCode</span></span> | <span data-ttu-id="e19c7-353">トランザクションの通貨コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-353">The currency code for the transaction.</span></span> |
+| <span data-ttu-id="e19c7-354">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-354">TransactionData</span></span> | <span data-ttu-id="e19c7-355">TerminalId</span><span class="sxs-lookup"><span data-stu-id="e19c7-355">TerminalId</span></span> | <span data-ttu-id="e19c7-356">トランザクションが発生した端末の一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="e19c7-356">The unique identifier of the terminal where the transaction occurred.</span></span> |
+| <span data-ttu-id="e19c7-357">PurchaseLevelData</span><span class="sxs-lookup"><span data-stu-id="e19c7-357">PurchaseLevelData</span></span> | <span data-ttu-id="e19c7-358">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-358">L2Data</span></span> | <span data-ttu-id="e19c7-359">"レベル 2" データの一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-359">The list of "Level 2" data.</span></span> <span data-ttu-id="e19c7-360">詳細については、このトピックで後述する[L2 データ](#l2-data) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e19c7-360">For more details, see the [L2 data](#l2-data) section later in this topic.</span></span> |
+| <span data-ttu-id="e19c7-361">PurchaseLevelData</span><span class="sxs-lookup"><span data-stu-id="e19c7-361">PurchaseLevelData</span></span> | <span data-ttu-id="e19c7-362">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-362">L3Data</span></span> | <span data-ttu-id="e19c7-363">"レベル 3" データの一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-363">The list of "Level 3" data.</span></span> <span data-ttu-id="e19c7-364">詳細については、このトピックで後述する[L3 データ](#l3-data) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e19c7-364">For more details, see the [L3 data](#l3-data) section later in this topic.</span></span> |
+
+#### <a name="getpaymentacceptpoint"></a><span data-ttu-id="e19c7-365">GetPaymentAcceptPoint</span><span class="sxs-lookup"><span data-stu-id="e19c7-365">GetPaymentAcceptPoint</span></span> 
+
+| <span data-ttu-id="e19c7-366">名前空間</span><span class="sxs-lookup"><span data-stu-id="e19c7-366">Namespace</span></span> | <span data-ttu-id="e19c7-367">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-367">Field</span></span> | <span data-ttu-id="e19c7-368">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-368">Description</span></span> |
+|---|---|---|
+| <span data-ttu-id="e19c7-369">MerchantAccount</span><span class="sxs-lookup"><span data-stu-id="e19c7-369">MerchantAccount</span></span> | <span data-ttu-id="e19c7-370">MerchantId</span><span class="sxs-lookup"><span data-stu-id="e19c7-370">MerchantId</span></span> | <span data-ttu-id="e19c7-371">Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。</span><span class="sxs-lookup"><span data-stu-id="e19c7-371">The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client.</span></span> |
+| <span data-ttu-id="e19c7-372">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-372">PaymentCard</span></span> | <span data-ttu-id="e19c7-373">氏名</span><span class="sxs-lookup"><span data-stu-id="e19c7-373">Name</span></span> | <span data-ttu-id="e19c7-374">カード所有者の名前。</span><span class="sxs-lookup"><span data-stu-id="e19c7-374">The name of the cardholder.</span></span> |
+| <span data-ttu-id="e19c7-375">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-375">PaymentCard</span></span> | <span data-ttu-id="e19c7-376">StreetAddress</span><span class="sxs-lookup"><span data-stu-id="e19c7-376">StreetAddress</span></span> | <span data-ttu-id="e19c7-377">支払に使用されるカードに関連付けられている請求先住所の番地。</span><span class="sxs-lookup"><span data-stu-id="e19c7-377">The street of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-378">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-378">PaymentCard</span></span> | <span data-ttu-id="e19c7-379">市町村</span><span class="sxs-lookup"><span data-stu-id="e19c7-379">City</span></span> | <span data-ttu-id="e19c7-380">支払に使用されるカードに関連付けられている請求先住所の市町村。</span><span class="sxs-lookup"><span data-stu-id="e19c7-380">The city of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-381">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-381">PaymentCard</span></span> | <span data-ttu-id="e19c7-382">行政単位 (区画)</span><span class="sxs-lookup"><span data-stu-id="e19c7-382">State</span></span> | <span data-ttu-id="e19c7-383">支払に使用されるカードに関連付けられている請求先住所の都道府県。</span><span class="sxs-lookup"><span data-stu-id="e19c7-383">The state or province of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-384">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-384">PaymentCard</span></span> | <span data-ttu-id="e19c7-385">PostalCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-385">PostalCode</span></span> | <span data-ttu-id="e19c7-386">支払に使用されるカードに関連付けられている請求先住所の郵便番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-386">The postal code of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-387">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-387">PaymentCard</span></span> | <span data-ttu-id="e19c7-388">国</span><span class="sxs-lookup"><span data-stu-id="e19c7-388">Country</span></span> | <span data-ttu-id="e19c7-389">支払に使用されるカードに関連付けられている請求先住所の国または地域。</span><span class="sxs-lookup"><span data-stu-id="e19c7-389">The country or region of the billing address that is associated with the card that is used for the payment.</span></span> |
+| <span data-ttu-id="e19c7-390">PaymentCard</span><span class="sxs-lookup"><span data-stu-id="e19c7-390">PaymentCard</span></span> | <span data-ttu-id="e19c7-391">ShowSameAsShippingAddress</span><span class="sxs-lookup"><span data-stu-id="e19c7-391">ShowSameAsShippingAddress</span></span> | <span data-ttu-id="e19c7-392">請求先住所が出荷先住所と同じかどうかを識別する値。</span><span class="sxs-lookup"><span data-stu-id="e19c7-392">A value that identifies whether the billing address is the same as the shipping address.</span></span> |
+| <span data-ttu-id="e19c7-393">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-393">TransactionData</span></span> | <span data-ttu-id="e19c7-394">IndustryType</span><span class="sxs-lookup"><span data-stu-id="e19c7-394">IndustryType</span></span> | <span data-ttu-id="e19c7-395">支払が発生したチャネルのタイプ (たとえば、**小売**、**ダイレクト マーケティング**、または**電子商取引**)。</span><span class="sxs-lookup"><span data-stu-id="e19c7-395">The type of channel where the payment occurred (for example, **Retail**, **Direct Marketing**, or **E-Commerce**).</span></span> |
+| <span data-ttu-id="e19c7-396">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-396">TransactionData</span></span> | <span data-ttu-id="e19c7-397">AllowPartialAuthorization</span><span class="sxs-lookup"><span data-stu-id="e19c7-397">AllowPartialAuthorization</span></span> | <span data-ttu-id="e19c7-398">部分的な承認がサポートされているかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="e19c7-398">A value that indicates whether partial authorization is supported.</span></span> |
+| <span data-ttu-id="e19c7-399">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-399">TransactionData</span></span> | <span data-ttu-id="e19c7-400">CurrencyCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-400">CurrencyCode</span></span> | <span data-ttu-id="e19c7-401">トランザクションの通貨コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-401">The currency code for the transaction.</span></span> |
+| <span data-ttu-id="e19c7-402">TransactionData</span><span class="sxs-lookup"><span data-stu-id="e19c7-402">TransactionData</span></span> | <span data-ttu-id="e19c7-403">TerminalId</span><span class="sxs-lookup"><span data-stu-id="e19c7-403">TerminalId</span></span> | <span data-ttu-id="e19c7-404">トランザクションが発生した端末の一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="e19c7-404">The unique identifier of the terminal where the transaction occurred.</span></span> |
+
+### <a name="shared-data"></a><span data-ttu-id="e19c7-405">共有データ</span><span class="sxs-lookup"><span data-stu-id="e19c7-405">Shared data</span></span>
+
+#### <a name="l2-data"></a><span data-ttu-id="e19c7-406">L2 データ</span><span class="sxs-lookup"><span data-stu-id="e19c7-406">L2 data</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e19c7-407">この動作が Finance and Operations クライアント内の対応するコネクタ構成を通じて明示的に構成されている場合にのみ、L2 データがコネクタに送信されます。</span><span class="sxs-lookup"><span data-stu-id="e19c7-407">L2 data is sent to the connector only if this behavior is explicitly configured through the corresponding connector configuration in the Finance and Operations client.</span></span>
+
+| <span data-ttu-id="e19c7-408">名前空間</span><span class="sxs-lookup"><span data-stu-id="e19c7-408">Namespace</span></span> | <span data-ttu-id="e19c7-409">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-409">Field</span></span> | <span data-ttu-id="e19c7-410">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-410">Description</span></span> |
+|---|---|---|
+| <span data-ttu-id="e19c7-411">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-411">L2Data</span></span> | <span data-ttu-id="e19c7-412">OrderDateTime</span><span class="sxs-lookup"><span data-stu-id="e19c7-412">OrderDateTime</span></span> | <span data-ttu-id="e19c7-413">注文が発生した日時。</span><span class="sxs-lookup"><span data-stu-id="e19c7-413">The date and time when the order occurred.</span></span> |
+| <span data-ttu-id="e19c7-414">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-414">L2Data</span></span> | <span data-ttu-id="e19c7-415">OrderNumber</span><span class="sxs-lookup"><span data-stu-id="e19c7-415">OrderNumber</span></span> | <span data-ttu-id="e19c7-416">注文に関連付けられている注文番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-416">The order number that is associated with the order.</span></span> |
+| <span data-ttu-id="e19c7-417">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-417">L2Data</span></span> | <span data-ttu-id="e19c7-418">InvoiceDateTime</span><span class="sxs-lookup"><span data-stu-id="e19c7-418">InvoiceDateTime</span></span> | <span data-ttu-id="e19c7-419">注文が作成された日時。</span><span class="sxs-lookup"><span data-stu-id="e19c7-419">The date and time when the order was invoiced.</span></span> |
+| <span data-ttu-id="e19c7-420">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-420">L2Data</span></span> | <span data-ttu-id="e19c7-421">InvoiceNumber</span><span class="sxs-lookup"><span data-stu-id="e19c7-421">InvoiceNumber</span></span> | <span data-ttu-id="e19c7-422">注文の請求書番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-422">The invoice number for the order.</span></span> |
+| <span data-ttu-id="e19c7-423">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-423">L2Data</span></span> | <span data-ttu-id="e19c7-424">OrderDescription</span><span class="sxs-lookup"><span data-stu-id="e19c7-424">OrderDescription</span></span> | <span data-ttu-id="e19c7-425">注文の説明。</span><span class="sxs-lookup"><span data-stu-id="e19c7-425">The description of the order.</span></span> |
+| <span data-ttu-id="e19c7-426">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-426">L2Data</span></span> | <span data-ttu-id="e19c7-427">SummaryCommodityCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-427">SummaryCommodityCode</span></span> | <span data-ttu-id="e19c7-428">製品に関連付けられている商品コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-428">The commodity code that is associated with the product.</span></span> |
+| <span data-ttu-id="e19c7-429">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-429">L2Data</span></span> | <span data-ttu-id="e19c7-430">MerchantContact</span><span class="sxs-lookup"><span data-stu-id="e19c7-430">MerchantContact</span></span> | <span data-ttu-id="e19c7-431">販売者の連絡先情報。</span><span class="sxs-lookup"><span data-stu-id="e19c7-431">The contact information for the merchant.</span></span> |
+| <span data-ttu-id="e19c7-432">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-432">L2Data</span></span> | <span data-ttu-id="e19c7-433">MerchantTaxId</span><span class="sxs-lookup"><span data-stu-id="e19c7-433">MerchantTaxId</span></span> | <span data-ttu-id="e19c7-434">販売者の一意の税 ID。</span><span class="sxs-lookup"><span data-stu-id="e19c7-434">The unique tax identifier of the merchant.</span></span> |
+| <span data-ttu-id="e19c7-435">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-435">L2Data</span></span> | <span data-ttu-id="e19c7-436">MerchantType</span><span class="sxs-lookup"><span data-stu-id="e19c7-436">MerchantType</span></span> | <span data-ttu-id="e19c7-437">支払プロセッサによって保持されている固有の販売者 ID。</span><span class="sxs-lookup"><span data-stu-id="e19c7-437">The unique merchant identifier that is maintained by the payment processor.</span></span> |
+| <span data-ttu-id="e19c7-438">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-438">L2Data</span></span> | <span data-ttu-id="e19c7-439">PurchaserId</span><span class="sxs-lookup"><span data-stu-id="e19c7-439">PurchaserId</span></span> | <span data-ttu-id="e19c7-440">購入者の一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="e19c7-440">The unique identifier of the purchaser.</span></span> |
+| <span data-ttu-id="e19c7-441">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-441">L2Data</span></span> | <span data-ttu-id="e19c7-442">PurchaserTaxId</span><span class="sxs-lookup"><span data-stu-id="e19c7-442">PurchaserTaxId</span></span> | <span data-ttu-id="e19c7-443">購入者の一意の税識別子。</span><span class="sxs-lookup"><span data-stu-id="e19c7-443">The unique tax identifier of the purchaser.</span></span> |
+| <span data-ttu-id="e19c7-444">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-444">L2Data</span></span> | <span data-ttu-id="e19c7-445">ShipToCity</span><span class="sxs-lookup"><span data-stu-id="e19c7-445">ShipToCity</span></span> | <span data-ttu-id="e19c7-446">出荷先住所の市町村。</span><span class="sxs-lookup"><span data-stu-id="e19c7-446">The city of the shipping address.</span></span> |
+| <span data-ttu-id="e19c7-447">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-447">L2Data</span></span> | <span data-ttu-id="e19c7-448">ShipToCounty</span><span class="sxs-lookup"><span data-stu-id="e19c7-448">ShipToCounty</span></span> | <span data-ttu-id="e19c7-449">出荷先住所の市区郡。</span><span class="sxs-lookup"><span data-stu-id="e19c7-449">The county of the shipping address.</span></span> |
+| <span data-ttu-id="e19c7-450">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-450">L2Data</span></span> | <span data-ttu-id="e19c7-451">ShipToState\_ProvinceCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-451">ShipToState\_ProvinceCode</span></span> | <span data-ttu-id="e19c7-452">出荷先住所の都道府県コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-452">The state or province code of the shipping address.</span></span> |
+| <span data-ttu-id="e19c7-453">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-453">L2Data</span></span> | <span data-ttu-id="e19c7-454">ShipToPostalCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-454">ShipToPostalCode</span></span> | <span data-ttu-id="e19c7-455">出荷先住所の郵便番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-455">The postal code of the shipping address.</span></span> |
+| <span data-ttu-id="e19c7-456">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-456">L2Data</span></span> | <span data-ttu-id="e19c7-457">ShipToCountryCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-457">ShipToCountryCode</span></span> | <span data-ttu-id="e19c7-458">出荷先住所の国または地域コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-458">The country or region code of the shipping address.</span></span> |
+| <span data-ttu-id="e19c7-459">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-459">L2Data</span></span> | <span data-ttu-id="e19c7-460">ShipFromCity</span><span class="sxs-lookup"><span data-stu-id="e19c7-460">ShipFromCity</span></span> | <span data-ttu-id="e19c7-461">注文の出荷元の住所の市町村。</span><span class="sxs-lookup"><span data-stu-id="e19c7-461">The city of the address that the order is shipped from.</span></span> |
+| <span data-ttu-id="e19c7-462">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-462">L2Data</span></span> | <span data-ttu-id="e19c7-463">ShipFromCounty</span><span class="sxs-lookup"><span data-stu-id="e19c7-463">ShipFromCounty</span></span> | <span data-ttu-id="e19c7-464">注文の出荷元の住所の市区郡。</span><span class="sxs-lookup"><span data-stu-id="e19c7-464">The county of the address that the order is shipped from.</span></span> |
+| <span data-ttu-id="e19c7-465">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-465">L2Data</span></span> | <span data-ttu-id="e19c7-466">ShipFromState\_ProvinceCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-466">ShipFromState\_ProvinceCode</span></span> | <span data-ttu-id="e19c7-467">注文の出荷元の住所の都道府県コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-467">The state or province code of the address that the order is shipped from.</span></span> |
+| <span data-ttu-id="e19c7-468">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-468">L2Data</span></span> | <span data-ttu-id="e19c7-469">ShipFromPostalCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-469">ShipFromPostalCode</span></span> | <span data-ttu-id="e19c7-470">注文の出荷元の住所の郵便番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-470">The postal code of the address that the order is shipped from.</span></span> |
+| <span data-ttu-id="e19c7-471">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-471">L2Data</span></span> | <span data-ttu-id="e19c7-472">ShipFromCountryCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-472">ShipFromCountryCode</span></span> | <span data-ttu-id="e19c7-473">注文の出荷元の住所の国または地域コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-473">The country or region code of the address that the order is shipped from.</span></span> |
+| <span data-ttu-id="e19c7-474">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-474">L2Data</span></span> | <span data-ttu-id="e19c7-475">DiscountAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-475">DiscountAmount</span></span> | <span data-ttu-id="e19c7-476">注文の特定の明細行品目の部分に適用される割引金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-476">The discount amount that is applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-477">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-477">L2Data</span></span> | <span data-ttu-id="e19c7-478">MiscCharge</span><span class="sxs-lookup"><span data-stu-id="e19c7-478">MiscCharge</span></span> | <span data-ttu-id="e19c7-479">注文の特定の明細行品目の部分に適用されるその他の変更。</span><span class="sxs-lookup"><span data-stu-id="e19c7-479">The miscellaneous charges that are applied to the specific line item part of the order.</span></span> | 
+| <span data-ttu-id="e19c7-480">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-480">L2Data</span></span> | <span data-ttu-id="e19c7-481">DutyAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-481">DutyAmount</span></span> | <span data-ttu-id="e19c7-482">注文の特定の明細行品目の部分に適用される関税額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-482">The duty amount that is applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-483">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-483">L2Data</span></span> | <span data-ttu-id="e19c7-484">FreightAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-484">FreightAmount</span></span> | <span data-ttu-id="e19c7-485">注文の特定の明細行品目の部分に適用される配送料。</span><span class="sxs-lookup"><span data-stu-id="e19c7-485">The freight amount that is applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-486">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-486">L2Data</span></span> | <span data-ttu-id="e19c7-487">HandlingCharge</span><span class="sxs-lookup"><span data-stu-id="e19c7-487">HandlingCharge</span></span> | <span data-ttu-id="e19c7-488">注文の特定の明細行品目の部分に適用される取扱手数料。</span><span class="sxs-lookup"><span data-stu-id="e19c7-488">The handling charge that is applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-489">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-489">L2Data</span></span> | <span data-ttu-id="e19c7-490">IsTaxable</span><span class="sxs-lookup"><span data-stu-id="e19c7-490">IsTaxable</span></span> | <span data-ttu-id="e19c7-491">注文の特定の明細行品目の部分が課税対象であるかどうかを識別する値。</span><span class="sxs-lookup"><span data-stu-id="e19c7-491">A value that identifies whether the specific line item part of the order is taxable.</span></span> |
+| <span data-ttu-id="e19c7-492">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-492">L2Data</span></span> | <span data-ttu-id="e19c7-493">TotalTaxAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-493">TotalTaxAmount</span></span> | <span data-ttu-id="e19c7-494">注文の特定の明細行品目の部分に適用される合計税額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-494">The total tax amount that is applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-495">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-495">L2Data</span></span> | <span data-ttu-id="e19c7-496">TotalTaxRate</span><span class="sxs-lookup"><span data-stu-id="e19c7-496">TotalTaxRate</span></span> | <span data-ttu-id="e19c7-497">注文の特定の明細行品目の部分に適用される合計税率。</span><span class="sxs-lookup"><span data-stu-id="e19c7-497">The total tax rate that is applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-498">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-498">L2Data</span></span> | <span data-ttu-id="e19c7-499">MerchantName</span><span class="sxs-lookup"><span data-stu-id="e19c7-499">MerchantName</span></span> | <span data-ttu-id="e19c7-500">販売者の名前。</span><span class="sxs-lookup"><span data-stu-id="e19c7-500">The name of the merchant.</span></span> |
+| <span data-ttu-id="e19c7-501">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-501">L2Data</span></span> | <span data-ttu-id="e19c7-502">MerchantCity</span><span class="sxs-lookup"><span data-stu-id="e19c7-502">MerchantCity</span></span> | <span data-ttu-id="e19c7-503">販売者の住所の市町村。</span><span class="sxs-lookup"><span data-stu-id="e19c7-503">The city of the address of the merchant.</span></span> |
+| <span data-ttu-id="e19c7-504">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-504">L2Data</span></span> | <span data-ttu-id="e19c7-505">MerchantState</span><span class="sxs-lookup"><span data-stu-id="e19c7-505">MerchantState</span></span> | <span data-ttu-id="e19c7-506">販売者の住所の都道府県。</span><span class="sxs-lookup"><span data-stu-id="e19c7-506">The state or province of the address of the merchant.</span></span> |
+| <span data-ttu-id="e19c7-507">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-507">L2Data</span></span> | <span data-ttu-id="e19c7-508">MerchantCounty</span><span class="sxs-lookup"><span data-stu-id="e19c7-508">MerchantCounty</span></span> | <span data-ttu-id="e19c7-509">販売者の住所の市区郡。</span><span class="sxs-lookup"><span data-stu-id="e19c7-509">The county of the address of the merchant.</span></span> |
+| <span data-ttu-id="e19c7-510">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-510">L2Data</span></span> | <span data-ttu-id="e19c7-511">MerchantCountryCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-511">MerchantCountryCode</span></span> | <span data-ttu-id="e19c7-512">販売者の住所の国または地域コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-512">The country or region code of the address of the merchant.</span></span> |
+| <span data-ttu-id="e19c7-513">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-513">L2Data</span></span> | <span data-ttu-id="e19c7-514">MerchantZip</span><span class="sxs-lookup"><span data-stu-id="e19c7-514">MerchantZip</span></span> | <span data-ttu-id="e19c7-515">販売者の住所の郵便番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-515">The postal code of the address of the merchant.</span></span> |
+| <span data-ttu-id="e19c7-516">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-516">L2Data</span></span> | <span data-ttu-id="e19c7-517">TaxRate</span><span class="sxs-lookup"><span data-stu-id="e19c7-517">TaxRate</span></span> | <span data-ttu-id="e19c7-518">注文の特定の明細行品目の部分に適用される税率。</span><span class="sxs-lookup"><span data-stu-id="e19c7-518">The tax rate that is applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-519">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-519">L2Data</span></span> | <span data-ttu-id="e19c7-520">TaxAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-520">TaxAmount</span></span> | <span data-ttu-id="e19c7-521">注文の特定の明細行品目の部分に適用される税額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-521">The tax amount that is applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-522">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-522">L2Data</span></span> | <span data-ttu-id="e19c7-523">TaxDescription</span><span class="sxs-lookup"><span data-stu-id="e19c7-523">TaxDescription</span></span> | <span data-ttu-id="e19c7-524">注文の特定の明細行品目の部分に適用される税の説明。</span><span class="sxs-lookup"><span data-stu-id="e19c7-524">The description of the taxes that are applied to the specific line item part of the order.</span></span> | 
+| <span data-ttu-id="e19c7-525">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-525">L2Data</span></span> | <span data-ttu-id="e19c7-526">TaxTypeIdentifier</span><span class="sxs-lookup"><span data-stu-id="e19c7-526">TaxTypeIdentifier</span></span> | <span data-ttu-id="e19c7-527">注文の特定の明細行品目の部分に適用される税のタイプ識別子。</span><span class="sxs-lookup"><span data-stu-id="e19c7-527">The type identifier of the taxes that are applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-528">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-528">L2Data</span></span> | <span data-ttu-id="e19c7-529">RequesterName</span><span class="sxs-lookup"><span data-stu-id="e19c7-529">RequesterName</span></span> | <span data-ttu-id="e19c7-530">要求者の名前。</span><span class="sxs-lookup"><span data-stu-id="e19c7-530">The name of the requester.</span></span> |
+| <span data-ttu-id="e19c7-531">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-531">L2Data</span></span> | <span data-ttu-id="e19c7-532">TotalAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-532">TotalAmount</span></span> | <span data-ttu-id="e19c7-533">注文の特定の明細行品目の部分の合計税額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-533">The total amount of the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-534">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-534">L2Data</span></span> | <span data-ttu-id="e19c7-535">PurchaseCardType</span><span class="sxs-lookup"><span data-stu-id="e19c7-535">PurchaseCardType</span></span> | <span data-ttu-id="e19c7-536">購入者のカードの種類。</span><span class="sxs-lookup"><span data-stu-id="e19c7-536">The card type of the purchaser.</span></span> |
+| <span data-ttu-id="e19c7-537">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-537">L2Data</span></span> | <span data-ttu-id="e19c7-538">AmexLegacyDescription1</span><span class="sxs-lookup"><span data-stu-id="e19c7-538">AmexLegacyDescription1</span></span> | <span data-ttu-id="e19c7-539">従来の American Express 説明フィールド 1。</span><span class="sxs-lookup"><span data-stu-id="e19c7-539">Legacy American Express description field 1.</span></span> |
+| <span data-ttu-id="e19c7-540">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-540">L2Data</span></span> | <span data-ttu-id="e19c7-541">AmexLegacyDescription2</span><span class="sxs-lookup"><span data-stu-id="e19c7-541">AmexLegacyDescription2</span></span> | <span data-ttu-id="e19c7-542">従来の American Express 説明フィールド 2。</span><span class="sxs-lookup"><span data-stu-id="e19c7-542">Legacy American Express description field 2.</span></span> |
+| <span data-ttu-id="e19c7-543">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-543">L2Data</span></span> | <span data-ttu-id="e19c7-544">AmexLegacyDescription3</span><span class="sxs-lookup"><span data-stu-id="e19c7-544">AmexLegacyDescription3</span></span> | <span data-ttu-id="e19c7-545">従来の American Express 説明フィールド 3。</span><span class="sxs-lookup"><span data-stu-id="e19c7-545">Legacy American Express description field 3.</span></span> |
+| <span data-ttu-id="e19c7-546">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-546">L2Data</span></span> | <span data-ttu-id="e19c7-547">AmexLegacyDescription4</span><span class="sxs-lookup"><span data-stu-id="e19c7-547">AmexLegacyDescription4</span></span> | <span data-ttu-id="e19c7-548">従来の American Express 説明フィールド 4。</span><span class="sxs-lookup"><span data-stu-id="e19c7-548">Legacy American Express description field 4.</span></span> |
+| <span data-ttu-id="e19c7-549">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-549">L2Data</span></span> | <span data-ttu-id="e19c7-550">TaxDetails\[\].TaxRate</span><span class="sxs-lookup"><span data-stu-id="e19c7-550">TaxDetails\[\].TaxRate</span></span> | <span data-ttu-id="e19c7-551">注文の特定の明細行品目の部分に適用される個々の税率の一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-551">The list of individual tax rates that are applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-552">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-552">L2Data</span></span> | <span data-ttu-id="e19c7-553">TaxDetails\[\].TaxDescription</span><span class="sxs-lookup"><span data-stu-id="e19c7-553">TaxDetails\[\].TaxDescription</span></span> | <span data-ttu-id="e19c7-554">注文の特定の明細行品目の部分に適用される税の個々の説明の一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-554">The list of individual descriptions of the taxes that are applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-555">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-555">L2Data</span></span> | <span data-ttu-id="e19c7-556">TaxDetails\[\].TaxAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-556">TaxDetails\[\].TaxAmount</span></span> | <span data-ttu-id="e19c7-557">注文の特定の明細行品目の部分に適用される個々の税額の一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-557">The list of individual tax amounts that are applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-558">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-558">L2Data</span></span> | <span data-ttu-id="e19c7-559">TaxDetails\[\].TaxTypeIdentifier</span><span class="sxs-lookup"><span data-stu-id="e19c7-559">TaxDetails\[\].TaxTypeIdentifier</span></span> | <span data-ttu-id="e19c7-560">注文の特定の明細行品目の部分に適用される税のタイプ識別子の一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-560">The list of type identifiers of the taxes that are applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-561">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-561">L2Data</span></span> | <span data-ttu-id="e19c7-562">MiscellaneousCharges\[\].ChargeType</span><span class="sxs-lookup"><span data-stu-id="e19c7-562">MiscellaneousCharges\[\].ChargeType</span></span> | <span data-ttu-id="e19c7-563">注文の特定の明細行品目の部分に適用される請求タイプの一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-563">The list of charge types that are applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-564">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-564">L2Data</span></span> | <span data-ttu-id="e19c7-565">MiscellaneousCharges\[\].ChargeAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-565">MiscellaneousCharges\[\].ChargeAmount</span></span> | <span data-ttu-id="e19c7-566">注文の特定の明細行品目の部分に適用される請求金額の一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-566">The list of charge amounts that are applied to the specific line item part of the order.</span></span> |
+
+#### <a name="l3-data"></a><span data-ttu-id="e19c7-567">L3 データ</span><span class="sxs-lookup"><span data-stu-id="e19c7-567">L3 data</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e19c7-568">この動作が Finance and Operations クライアント内の対応するコネクタ構成を通じて明示的に構成されている場合にのみ、L3 データがコネクタに送信されます。</span><span class="sxs-lookup"><span data-stu-id="e19c7-568">L3 data is sent to the connector only if this behavior is explicitly configured through the corresponding connector configuration in the Finance and Operations client.</span></span>
+
+| <span data-ttu-id="e19c7-569">名前空間</span><span class="sxs-lookup"><span data-stu-id="e19c7-569">Namespace</span></span> | <span data-ttu-id="e19c7-570">フィールド</span><span class="sxs-lookup"><span data-stu-id="e19c7-570">Field</span></span> | <span data-ttu-id="e19c7-571">説明</span><span class="sxs-lookup"><span data-stu-id="e19c7-571">Description</span></span> |
+|---|---|---|
+| <span data-ttu-id="e19c7-572">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-572">L3Data</span></span> | <span data-ttu-id="e19c7-573">SequenceNumber</span><span class="sxs-lookup"><span data-stu-id="e19c7-573">SequenceNumber</span></span> | <span data-ttu-id="e19c7-574">注文の品目の順序番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-574">The sequence number of the item for the order.</span></span> |
+| <span data-ttu-id="e19c7-575">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-575">L3Data</span></span> | <span data-ttu-id="e19c7-576">CommodityCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-576">CommodityCode</span></span> | <span data-ttu-id="e19c7-577">製品に関連付けられている商品コード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-577">The commodity code that is associated with the product.</span></span> |
+| <span data-ttu-id="e19c7-578">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-578">L3Data</span></span> | <span data-ttu-id="e19c7-579">ProductCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-579">ProductCode</span></span> | <span data-ttu-id="e19c7-580">製品の一意のコード。</span><span class="sxs-lookup"><span data-stu-id="e19c7-580">The unique code of the product.</span></span> | 
+| <span data-ttu-id="e19c7-581">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-581">L3Data</span></span> | <span data-ttu-id="e19c7-582">ProductName</span><span class="sxs-lookup"><span data-stu-id="e19c7-582">ProductName</span></span> | <span data-ttu-id="e19c7-583">生産の名前。</span><span class="sxs-lookup"><span data-stu-id="e19c7-583">The name of the product.</span></span> |
+| <span data-ttu-id="e19c7-584">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-584">L3Data</span></span> | <span data-ttu-id="e19c7-585">ProductSKU</span><span class="sxs-lookup"><span data-stu-id="e19c7-585">ProductSKU</span></span> | <span data-ttu-id="e19c7-586">製品の最小在庫管理単位 (SKU)。</span><span class="sxs-lookup"><span data-stu-id="e19c7-586">The stock keeping unit (SKU) of the product.</span></span> |
+| <span data-ttu-id="e19c7-587">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-587">L3Data</span></span> | <span data-ttu-id="e19c7-588">Descriptor</span><span class="sxs-lookup"><span data-stu-id="e19c7-588">Descriptor</span></span> | <span data-ttu-id="e19c7-589">製品の説明。</span><span class="sxs-lookup"><span data-stu-id="e19c7-589">The description of the product.</span></span> |
+| <span data-ttu-id="e19c7-590">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-590">L3Data</span></span> | <span data-ttu-id="e19c7-591">UnitOfMeasure</span><span class="sxs-lookup"><span data-stu-id="e19c7-591">UnitOfMeasure</span></span> | <span data-ttu-id="e19c7-592">製品の測定単位。</span><span class="sxs-lookup"><span data-stu-id="e19c7-592">The unit of measure of the product.</span></span> |
+| <span data-ttu-id="e19c7-593">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-593">L3Data</span></span> | <span data-ttu-id="e19c7-594">UnitPrice</span><span class="sxs-lookup"><span data-stu-id="e19c7-594">UnitPrice</span></span> | <span data-ttu-id="e19c7-595">製品の単価。</span><span class="sxs-lookup"><span data-stu-id="e19c7-595">The unit price of the product.</span></span> |
+| <span data-ttu-id="e19c7-596">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-596">L3Data</span></span> | <span data-ttu-id="e19c7-597">割引</span><span class="sxs-lookup"><span data-stu-id="e19c7-597">Discount</span></span> | <span data-ttu-id="e19c7-598">製品に適用される割引。</span><span class="sxs-lookup"><span data-stu-id="e19c7-598">The discount that is applied to the product.</span></span> |
+| <span data-ttu-id="e19c7-599">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-599">L3Data</span></span> | <span data-ttu-id="e19c7-600">DiscountRate</span><span class="sxs-lookup"><span data-stu-id="e19c7-600">DiscountRate</span></span> | <span data-ttu-id="e19c7-601">製品に適用される割引率。</span><span class="sxs-lookup"><span data-stu-id="e19c7-601">The discount rate that is applied to the product.</span></span> |
+| <span data-ttu-id="e19c7-602">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-602">L3Data</span></span> | <span data-ttu-id="e19c7-603">件数</span><span class="sxs-lookup"><span data-stu-id="e19c7-603">Quantity</span></span> | <span data-ttu-id="e19c7-604">製品の数量。</span><span class="sxs-lookup"><span data-stu-id="e19c7-604">The quantity of the product.</span></span> |
+| <span data-ttu-id="e19c7-605">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-605">L3Data</span></span> | <span data-ttu-id="e19c7-606">MiscCharge</span><span class="sxs-lookup"><span data-stu-id="e19c7-606">MiscCharge</span></span> | <span data-ttu-id="e19c7-607">製品のその他の請求金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-607">The miscellaneous charge of the product.</span></span> |
+| <span data-ttu-id="e19c7-608">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-608">L3Data</span></span> | <span data-ttu-id="e19c7-609">NetTotal</span><span class="sxs-lookup"><span data-stu-id="e19c7-609">NetTotal</span></span> | <span data-ttu-id="e19c7-610">製品の正味合計額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-610">The net total amount of the product.</span></span> |
+| <span data-ttu-id="e19c7-611">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-611">L3Data</span></span> | <span data-ttu-id="e19c7-612">TaxAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-612">TaxAmount</span></span> | <span data-ttu-id="e19c7-613">製品の税額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-613">The tax amount of the product.</span></span> |
+| <span data-ttu-id="e19c7-614">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-614">L3Data</span></span> | <span data-ttu-id="e19c7-615">TaxRate</span><span class="sxs-lookup"><span data-stu-id="e19c7-615">TaxRate</span></span> | <span data-ttu-id="e19c7-616">製品の税率。</span><span class="sxs-lookup"><span data-stu-id="e19c7-616">The tax rate of the product.</span></span> |
+| <span data-ttu-id="e19c7-617">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-617">L3Data</span></span> | <span data-ttu-id="e19c7-618">TotalAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-618">TotalAmount</span></span> | <span data-ttu-id="e19c7-619">製品の合計金額。</span><span class="sxs-lookup"><span data-stu-id="e19c7-619">The total amount of the product.</span></span> |
+| <span data-ttu-id="e19c7-620">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-620">L3Data</span></span> | <span data-ttu-id="e19c7-621">CostCenter</span><span class="sxs-lookup"><span data-stu-id="e19c7-621">CostCenter</span></span> | <span data-ttu-id="e19c7-622">製品のコスト センター。</span><span class="sxs-lookup"><span data-stu-id="e19c7-622">The cost center of the product.</span></span> |
+| <span data-ttu-id="e19c7-623">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-623">L3Data</span></span> | <span data-ttu-id="e19c7-624">FreightAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-624">FreightAmount</span></span> | <span data-ttu-id="e19c7-625">製品の配送料。</span><span class="sxs-lookup"><span data-stu-id="e19c7-625">The freight amount of the product.</span></span> |
+| <span data-ttu-id="e19c7-626">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-626">L3Data</span></span> | <span data-ttu-id="e19c7-627">HandlingAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-627">HandlingAmount</span></span> | <span data-ttu-id="e19c7-628">製品の取扱手数料。</span><span class="sxs-lookup"><span data-stu-id="e19c7-628">The handling amount of the product.</span></span> |
+| <span data-ttu-id="e19c7-629">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-629">L3Data</span></span> | <span data-ttu-id="e19c7-630">CarrierTrackingNumber</span><span class="sxs-lookup"><span data-stu-id="e19c7-630">CarrierTrackingNumber</span></span> | <span data-ttu-id="e19c7-631">出荷される製品の配送業者の追跡番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-631">The carrier tracking number of the product that is being shipped.</span></span> |
+| <span data-ttu-id="e19c7-632">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-632">L3Data</span></span> | <span data-ttu-id="e19c7-633">MerchantTaxID</span><span class="sxs-lookup"><span data-stu-id="e19c7-633">MerchantTaxID</span></span> | <span data-ttu-id="e19c7-634">販売者の一意の税 ID。</span><span class="sxs-lookup"><span data-stu-id="e19c7-634">The unique tax identifier of the merchant.</span></span> |
+| <span data-ttu-id="e19c7-635">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-635">L3Data</span></span> | <span data-ttu-id="e19c7-636">MerchantCatalogNumber</span><span class="sxs-lookup"><span data-stu-id="e19c7-636">MerchantCatalogNumber</span></span> | <span data-ttu-id="e19c7-637">販売者のカタログ番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-637">The catalog number of the merchant.</span></span> |
+| <span data-ttu-id="e19c7-638">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-638">L3Data</span></span> | <span data-ttu-id="e19c7-639">TaxCategoryApplied</span><span class="sxs-lookup"><span data-stu-id="e19c7-639">TaxCategoryApplied</span></span> | <span data-ttu-id="e19c7-640">製品に適用される税カテゴリ。</span><span class="sxs-lookup"><span data-stu-id="e19c7-640">The tax category that is applied to the product.</span></span> |
+| <span data-ttu-id="e19c7-641">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-641">L3Data</span></span> | <span data-ttu-id="e19c7-642">PickupAddress</span><span class="sxs-lookup"><span data-stu-id="e19c7-642">PickupAddress</span></span> | <span data-ttu-id="e19c7-643">集荷元住所の番地。</span><span class="sxs-lookup"><span data-stu-id="e19c7-643">The street of the pickup address.</span></span> |
+| <span data-ttu-id="e19c7-644">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-644">L3Data</span></span> | <span data-ttu-id="e19c7-645">PickupCity</span><span class="sxs-lookup"><span data-stu-id="e19c7-645">PickupCity</span></span> | <span data-ttu-id="e19c7-646">集荷元住所の市町村。</span><span class="sxs-lookup"><span data-stu-id="e19c7-646">The city of the pickup address.</span></span> |
+| <span data-ttu-id="e19c7-647">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-647">L3Data</span></span> | <span data-ttu-id="e19c7-648">PickupState</span><span class="sxs-lookup"><span data-stu-id="e19c7-648">PickupState</span></span> | <span data-ttu-id="e19c7-649">集荷元住所の都道府県。</span><span class="sxs-lookup"><span data-stu-id="e19c7-649">The state or province of the pickup address.</span></span> |
+| <span data-ttu-id="e19c7-650">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-650">L3Data</span></span> | <span data-ttu-id="e19c7-651">PickupCounty</span><span class="sxs-lookup"><span data-stu-id="e19c7-651">PickupCounty</span></span> | <span data-ttu-id="e19c7-652">集荷元住所の市区郡。</span><span class="sxs-lookup"><span data-stu-id="e19c7-652">The county of the pickup address.</span></span> |
+| <span data-ttu-id="e19c7-653">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-653">L3Data</span></span> | <span data-ttu-id="e19c7-654">PickupZip</span><span class="sxs-lookup"><span data-stu-id="e19c7-654">PickupZip</span></span> | <span data-ttu-id="e19c7-655">集荷元住所の郵便番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-655">The postal code of the pickup address.</span></span> |
+| <span data-ttu-id="e19c7-656">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-656">L3Data</span></span> | <span data-ttu-id="e19c7-657">PickupCountry</span><span class="sxs-lookup"><span data-stu-id="e19c7-657">PickupCountry</span></span> | <span data-ttu-id="e19c7-658">集荷元住所の国または地域。</span><span class="sxs-lookup"><span data-stu-id="e19c7-658">The country or region of the pickup address.</span></span> |
+| <span data-ttu-id="e19c7-659">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-659">L3Data</span></span> | <span data-ttu-id="e19c7-660">PickupDateTime</span><span class="sxs-lookup"><span data-stu-id="e19c7-660">PickupDateTime</span></span> | <span data-ttu-id="e19c7-661">集荷の日時。</span><span class="sxs-lookup"><span data-stu-id="e19c7-661">The date and time of the pickup.</span></span> |
+| <span data-ttu-id="e19c7-662">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-662">L3Data</span></span> | <span data-ttu-id="e19c7-663">PickupRecordNumber</span><span class="sxs-lookup"><span data-stu-id="e19c7-663">PickupRecordNumber</span></span> | <span data-ttu-id="e19c7-664">集荷のレコード番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-664">The record number of the pickup.</span></span> |
+| <span data-ttu-id="e19c7-665">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-665">L3Data</span></span> | <span data-ttu-id="e19c7-666">CarrierShipmentNumber</span><span class="sxs-lookup"><span data-stu-id="e19c7-666">CarrierShipmentNumber</span></span> | <span data-ttu-id="e19c7-667">配送業者の出荷番号。</span><span class="sxs-lookup"><span data-stu-id="e19c7-667">The shipment number of the carrier.</span></span> |
+| <span data-ttu-id="e19c7-668">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-668">L3Data</span></span> | <span data-ttu-id="e19c7-669">UNSPSCCode</span><span class="sxs-lookup"><span data-stu-id="e19c7-669">UNSPSCCode</span></span> | <span data-ttu-id="e19c7-670">United Nations Standard Products and Services Code (UNSPSC)。</span><span class="sxs-lookup"><span data-stu-id="e19c7-670">The United Nations Standard Products and Services Code (UNSPSC).</span></span> |
+| <span data-ttu-id="e19c7-671">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-671">L2Data</span></span> | <span data-ttu-id="e19c7-672">TaxDetails\[\].TaxRate</span><span class="sxs-lookup"><span data-stu-id="e19c7-672">TaxDetails\[\].TaxRate</span></span> | <span data-ttu-id="e19c7-673">注文の特定の明細行品目の部分に適用される個々の税率の一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-673">The list of individual tax rates that are applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-674">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-674">L2Data</span></span> | <span data-ttu-id="e19c7-675">TaxDetails\[\].TaxDescription</span><span class="sxs-lookup"><span data-stu-id="e19c7-675">TaxDetails\[\].TaxDescription</span></span> | <span data-ttu-id="e19c7-676">注文の特定の明細行品目の部分に適用される税の個々の説明の一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-676">The list of individual descriptions of the taxes that are applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-677">L2Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-677">L2Data</span></span> | <span data-ttu-id="e19c7-678">TaxDetails\[\].TaxAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-678">TaxDetails\[\].TaxAmount</span></span> | <span data-ttu-id="e19c7-679">注文の特定の明細行品目の部分に適用される個々の税額の一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-679">The list of individual tax amounts that are applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-680">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-680">L3Data</span></span> | <span data-ttu-id="e19c7-681">TaxDetails\[\].TaxTypeIdentifier</span><span class="sxs-lookup"><span data-stu-id="e19c7-681">TaxDetails\[\].TaxTypeIdentifier</span></span> | <span data-ttu-id="e19c7-682">注文の特定の明細行品目の部分に適用される税のタイプ識別子の一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-682">The list of type identifiers of the taxes that are applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-683">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-683">L3Data</span></span> | <span data-ttu-id="e19c7-684">MiscellaneousCharges\[\].ChargeType</span><span class="sxs-lookup"><span data-stu-id="e19c7-684">MiscellaneousCharges\[\].ChargeType</span></span> | <span data-ttu-id="e19c7-685">注文の特定の明細行品目の部分に適用される請求タイプの一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-685">The list of charge types that are applied to the specific line item part of the order.</span></span> |
+| <span data-ttu-id="e19c7-686">L3Data</span><span class="sxs-lookup"><span data-stu-id="e19c7-686">L3Data</span></span> | <span data-ttu-id="e19c7-687">MiscellaneousCharges\[\].ChargeAmount</span><span class="sxs-lookup"><span data-stu-id="e19c7-687">MiscellaneousCharges\[\].ChargeAmount</span></span> | <span data-ttu-id="e19c7-688">注文の特定の明細行品目の部分に適用される請求金額の一覧。</span><span class="sxs-lookup"><span data-stu-id="e19c7-688">The list of charge amounts that are applied to the specific line item part of the order.</span></span> |
+
+## <a name="related-topics"></a><span data-ttu-id="e19c7-689">関連トピック</span><span class="sxs-lookup"><span data-stu-id="e19c7-689">Related topics</span></span>
+
+- <span data-ttu-id="e19c7-690">**[支払端末のエンド ツー エンド支払統合の作成](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – このトピックでは、カスタム支払コネクタを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e19c7-690">**[Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – This topic describes how to create a custom payment connector.</span></span>

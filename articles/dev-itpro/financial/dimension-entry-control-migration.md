@@ -1,399 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="dimension-entry-control-migration.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>dimension-entry-control-migration.a8f54c.3c5f12bc04d2b2b7298381484062b62ace81ef71.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>3c5f12bc04d2b2b7298381484062b62ace81ef71</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\financial\dimension-entry-control-migration.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Migrate default dimensions controls to Dimension Entry controls</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の分析コード コントロールを分析コード エントリ コントロールに移行する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>It uses the PurchTable form as an example.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例として、PurchTable フォームを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Migrate default dimensions controls to Dimension Entry controls</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の分析コード コントロールを分析コード エントリ コントロールに移行する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>It uses the PurchTable form as an example.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例として、PurchTable フォームを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Simple migration scenario - PurchTable form</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">簡易移行シナリオ - PurchTable フォーム</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Search for the <bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> form in the <bpt id="p2">**</bpt>Application Explorer<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>アプリケーション エクスプローラー<ept id="p2">**</ept>で <bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> フォームを検索します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Add the form to the current project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のプロジェクトにフォームを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Open the form in the designer and code editor view.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイナーとコード エディタ ビューで、フォームを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>In the form design view</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームのデザイン ビューで</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Locate the dimension entry controls (DECs), either by manually in the control tree or by searching for "DimensionEntry" in the search bar below the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール ツリーから手動で、または<bpt id="p1">**</bpt>ファイル<ept id="p1">**</ept> タブ下の検索バーで「DimensionEntry」を検索して、分析コード エントリ コントロール (DEC) を検索します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Select the first <bpt id="p1">**</bpt>DEC<ept id="p1">**</ept> (DimensionEntryControlHeader) and verify the following:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初の <bpt id="p1">**</bpt>DEC<ept id="p1">**</ept> (DimensionEntryControlHeader) を選択し、以下を確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>The type for the control, specified in parenthesis next the control, is Dimension Entry Control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの横にある括弧で指定されたコントロールのタイプは、Dimension Entry Control です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>The Controller class property is blank.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Controller クラスのプロパティは空白になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>This property indicates what type of controller will be used by this instance of DEC, which in turn governs the behavior of the control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティは、DEC のこのインスタンスで使用されるコントローラーのタイプを示し、これによってコントロールの動作が決まります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>When this property is blank, the controller is determined by the EDT of the field specified in the <bpt id="p1">**</bpt>Value Data<ept id="p1">**</ept> field (in this case, the <bpt id="p2">**</bpt>DefaultDimension<ept id="p2">**</ept> field on the <bpt id="p3">**</bpt>PurchTable<ept id="p3">**</ept> table).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティが空白のときは、コントローラーは、<bpt id="p1">**</bpt>値のデータ<ept id="p1">**</ept> フィールド (この場合は、<bpt id="p3">**</bpt>PurchTable<ept id="p3">**</ept> テーブルの <bpt id="p2">**</bpt>DefaultDimension<ept id="p2">**</ept> フィールド) で指定されたフィールドの EDT によって決定されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Search for the <bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> table in the Application Explorer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション エクスプローラーで <bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> テーブルを検索します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Right-click <bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> and select <bpt id="p2">**</bpt>Open Designer<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>デザイナーを開く<ept id="p2">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Expand the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> node and select the <bpt id="p2">**</bpt>DefaultDimension<ept id="p2">**</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド<ept id="p1">**</ept>ノードを展開し、<bpt id="p2">**</bpt>DefaultDimension<ept id="p2">**</ept> フィールドを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The EDT property of this field is set to LedgerDefaultDimensionValueSet.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフィールドの EDT プロパティは、LedgerDefaultDimensionValueSet に設定されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>This EDT implies that this control will use the LedgerDefaultDimensionEntryController.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この EDT では、このコントロールが LedgerDefaultDimensionEntryController を使用することを意味します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Back in the <bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> form design view, select the second <bpt id="p2">**</bpt>DEC<ept id="p2">**</ept> (DimensionEntryControlLine) and verify the following:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> フォーム デザイン ビューに戻って、2 番目の <bpt id="p2">**</bpt>DEC<ept id="p2">**</ept> (DimensionEntryControlLine) を選択し、次の事項を確認してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>The type for the control, specified in parenthesis next to the control, is Dimension Entry Control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの横にある括弧で指定されたコントロールのタイプは、Dimension Entry Control です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>The Controller class property is blank.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Controller クラスのプロパティは空白になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>The controller will be determined by the EDT of the field specified in the <bpt id="p1">**</bpt>Value Data<ept id="p1">**</ept> Field, as it was for the DEC.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントローラーは、DEC の場合と同様に、<bpt id="p1">**</bpt>値データ<ept id="p1">**</ept> フィールドで指定されたフィールドの EDT によって決定されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Switch to the code editor view.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コード エディター ビューに切り替えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Search for all occurrences of "TODO: (Code Upgrade) <ph id="ph1">\[</ph>Dimension entry control<ph id="ph2">\]</ph>" in the form source code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム ソース コードで、"TODO: (Code Upgrade) <ph id="ph1">\[</ph>Dimension entry control<ph id="ph2">\]</ph>" のすべての事例を検索します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Go through each of the remaining TODO comments as follows.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">残りの各 TODO コメントの実行は、次のようになります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Data source PurchTable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース PurchTable</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source><bpt id="p1">**</bpt>(Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchTable <ph id="ph3">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>(フォーム <ph id="ph1">&amp;gt;</ph> データ ソース <ph id="ph2">&amp;gt;</ph> PurchTable <ph id="ph3">&amp;gt;</ph> メソッド<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Before</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>After</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更後</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> 移行ガイダンスに基づいてこれを置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>As a general rule with reactivate method calls, if it may not be needed, remove the call and test the control to make sure it works correctly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド呼び出しの再有効化の一般的なルールとして、必要でない場合は、呼び出しを削除し、正常に動作することを確認するためにコントロールをテストします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>If it doesn’t, add the reactivate call back.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そうでない場合は、再アクティブ化コール バックを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Data field OrderAccount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド OrderAccount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchTable <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> OrderAccount <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">**</bpt>フォーム<ph id="ph1">&amp;gt;</ph>データ ソース <ph id="ph2">&amp;gt;</ph>PurchTable<ph id="ph3">&amp;gt;</ph> フィールド <ph id="ph4">&amp;gt;</ph>OrderAccount<ph id="ph5">&amp;gt;</ph> 方法<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Before</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>After</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更後</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> 移行ガイダンスに基づいてこれを置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Data field ProjId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド ProjId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchTable <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> ProjId <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">**</bpt>フォーム<ph id="ph1">&amp;gt;</ph>データ ソース <ph id="ph2">&amp;gt;</ph>PurchTable<ph id="ph3">&amp;gt;</ph> フィールド <ph id="ph4">&amp;gt;</ph>ProjId<ph id="ph5">&amp;gt;</ph> 方法<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Before</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>After</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更後</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> 移行ガイダンスに基づいてこれを置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Because this method call does not have a parm method called before it, it can be deleted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドの呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>The entire modified() method can be deleted as well because the super() call is all that remains.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">super() 呼び出しがすべて残っているため、modified() メソッド全体を削除することもできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>The ProjId class can be removed because there are no methods in it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが含まれていないため、ProjId クラスを削除することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Data field VendGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド VendGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchTable <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> VendGroup <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">**</bpt>フォーム<ph id="ph1">&amp;gt;</ph>データ ソース <ph id="ph2">&amp;gt;</ph>PurchTable<ph id="ph3">&amp;gt;</ph> フィールド <ph id="ph4">&amp;gt;</ph>VendGroup<ph id="ph5">&amp;gt;</ph> 方法<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Before</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>After</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更後</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> 移行ガイダンスに基づいてこれを置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>The entire modified() method and VendGroup class can be deleted as well.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">modified() メソッドと VendGroup クラス全体を削除することもできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Data source PurchLine</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース PurchLine</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchLine <ph id="ph3">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">**</bpt>フォーム<ph id="ph1">&amp;gt;</ph>データ ソース <ph id="ph2">&amp;gt;</ph>PurchLine<ph id="ph3">&amp;gt;</ph> 方法<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Before</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>After</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更後</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> 移行ガイダンスに基づいてこれを置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This is the reactivate method call in the itemIdModified method on the data source.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();<bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> これはデータソースの itemIdModified メソッドにおけるメソッド呼び出しの再有効化です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> 移行ガイダンスに基づいてこれを置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This is the reactivate method call in the create() method on the data source.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();<bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> これはデータソースの create() メソッドにおけるメソッド呼び出しの再有効化です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Data field AssetGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド AssetGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchLine <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> AssetGroup <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">**</bpt>フォーム<ph id="ph1">&amp;gt;</ph>データ ソース <ph id="ph2">&amp;gt;</ph>PurchLine<ph id="ph3">&amp;gt;</ph> フィールド <ph id="ph4">&amp;gt;</ph>AssetGroup<ph id="ph5">&amp;gt;</ph> 方法<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Before</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>After</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更後</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> 移行ガイダンスに基づいてこれを置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Because this method call does not have a parm method called before it, it can be deleted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドの呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>The entire modified() method and AssetGroup class can be deleted as well.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">modified() メソッドと AssetGroup クラス全体を削除することもできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Data field AssetId(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchLine <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> AssetId <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールドの AssetId (<bpt id="p1">**</bpt>フォーム <ph id="ph1">&amp;gt;</ph> データ ソース <ph id="ph2">&amp;gt;</ph>PurchLine <ph id="ph3">&amp;gt;</ph> フィールド <ph id="ph4">&amp;gt;</ph> AssetId <ph id="ph5">&amp;gt;</ph> 方法<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Before</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>After</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更後</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> 移行ガイダンスに基づいてこれを置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Because this method call does not have a parm method called before it, it can be deleted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドの呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Data field ProcurementCategory</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド ProcurementCategory</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchLine <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> ProcurementCategory <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">**</bpt>フォーム<ph id="ph1">&amp;gt;</ph>データ ソース <ph id="ph2">&amp;gt;</ph>PurchLine<ph id="ph3">&amp;gt;</ph> フィールド <ph id="ph4">&amp;gt;</ph>ProcurementCategory<ph id="ph5">&amp;gt;</ph> 方法<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Before</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>After</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更後</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> 移行ガイダンスに基づいてこれを置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Data field ProjId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド ProjId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchLine <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> ProjId <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">**</bpt>フォーム<ph id="ph1">&amp;gt;</ph>データ ソース <ph id="ph2">&amp;gt;</ph>PurchLine<ph id="ph3">&amp;gt;</ph> フィールド <ph id="ph4">&amp;gt;</ph>ProjId<ph id="ph5">&amp;gt;</ph> 方法<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Before</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>After</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更後</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> 移行ガイダンスに基づいてこれを置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>TabPage TabFinancialDimensionsLine</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TabPage TabFinancialDimensionsLine</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>(Search for TabFinancialDimensionsLine in the search bar below the form tab)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(フォーム タブの下にある検索バーで「TabFinancialDimensionsLine」を検索してください。)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Before</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>After</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更後</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> This method can be removed if there is no custom implementation <ph id="ph5">\*</ph>///dimensionDefaultingControllerLine.pageActivated();</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> この方法は、カスタム実装がない場合に削除することができます <ph id="ph5">\*</ph>///dimensionDefaultingControllerHeader.pageActivated()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>The pageActivated method no longer needs to be called.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">pageActivated メソッドをもう呼び出す必要はありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>This entire method and the TabFinancialDimensionsLine class can be removed because there is no custom logic in the pageActivated method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この全メソッドと TabFinancialDimensionsLine クラスは、pageActivated メソッドにカスタム ロジックがないため削除できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>TabPage TabFinancialDimensionsHeader</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TabPage TabFinancialDimensionsHeader</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>(Search for TabFinancialDimensionsHeader in the search bar below the form tab)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(フォーム タブの下にある検索バーで「TabFinancialDimensionsHeader」を検索してください。)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Before</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>After</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更後</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> This method can be removed if there is no custom implementation <ph id="ph5">\*</ph>///dimensionDefaultingControllerHeader.pageActivated();</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (コード アップグレード) <ph id="ph3">\[</ph>分析コード エントリ コントロール<ph id="ph4">\]</ph> この方法は、カスタム実装がない場合に削除することができます <ph id="ph5">\*</ph>///dimensionDefaultingControllerHeader.pageActivated()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>The pageActivated method no longer needs to be called.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">pageActivated メソッドをもう呼び出す必要はありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>This entire method and the TabFinancialDimensionsHeader class can be removed because there is no custom logic in the pageActivated method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この全メソッドと TabFinancialDimensionsHeader クラスは、pageActivated メソッドにカスタム ロジックがないため削除できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のリソース</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source><bpt id="p1">[</bpt>Dimension Entry control uptake<ept id="p1">](dimension-entry-control-uptake.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>分析コード エントリ コントロールの取得<ept id="p1">](dimension-entry-control-uptake.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source><bpt id="p1">[</bpt>Dimension Entry control dialog support<ept id="p1">](dimension-entry-control-dialog-support.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>分析コード エントリ コントロール ダイアログのサポート<ept id="p1">](dimension-entry-control-dialog-support.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: 既定の分析コード コントロールを分析コード エントリ コントロールに移行する
+description: このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。 例として、PurchTable フォームを使用します。
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/26/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 25531
+ms.assetid: 05e85771-44e1-4b0a-8dd2-a878be5a3309
+ms.search.region: Global
+ms.author: ghenriks
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3c5f12bc04d2b2b7298381484062b62ace81ef71
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555616"
+---
+# <a name="migrate-default-dimensions-controls-to-dimension-entry-controls"></a><span data-ttu-id="94f30-104">既定の分析コード コントロールを分析コード エントリ コントロールに移行する</span><span class="sxs-lookup"><span data-stu-id="94f30-104">Migrate default dimensions controls to Dimension Entry controls</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="94f30-105">このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="94f30-105">This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run.</span></span> <span data-ttu-id="94f30-106">例として、PurchTable フォームを使用します。</span><span class="sxs-lookup"><span data-stu-id="94f30-106">It uses the PurchTable form as an example.</span></span>
+
+<a name="simple-migration-scenario---purchtable-form"></a><span data-ttu-id="94f30-107">簡易移行シナリオ - PurchTable フォーム</span><span class="sxs-lookup"><span data-stu-id="94f30-107">Simple migration scenario - PurchTable form</span></span>
+-------------------------------------------
+
+1.  <span data-ttu-id="94f30-108">**アプリケーション エクスプローラー**で **PurchTable** フォームを検索します。</span><span class="sxs-lookup"><span data-stu-id="94f30-108">Search for the **PurchTable** form in the **Application Explorer**.</span></span>
+2.  <span data-ttu-id="94f30-109">現在のプロジェクトにフォームを追加します。</span><span class="sxs-lookup"><span data-stu-id="94f30-109">Add the form to the current project.</span></span>
+3.  <span data-ttu-id="94f30-110">デザイナーとコード エディタ ビューで、フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="94f30-110">Open the form in the designer and code editor view.</span></span>
+4.  <span data-ttu-id="94f30-111">フォームのデザイン ビューで</span><span class="sxs-lookup"><span data-stu-id="94f30-111">In the form design view</span></span>
+    1.  <span data-ttu-id="94f30-112">コントロール ツリーから手動で、または**ファイル** タブ下の検索バーで「DimensionEntry」を検索して、分析コード エントリ コントロール (DEC) を検索します。</span><span class="sxs-lookup"><span data-stu-id="94f30-112">Locate the dimension entry controls (DECs), either by manually in the control tree or by searching for "DimensionEntry" in the search bar below the **File** tab.</span></span>
+    2.  <span data-ttu-id="94f30-113">最初の **DEC** (DimensionEntryControlHeader) を選択し、以下を確認します。</span><span class="sxs-lookup"><span data-stu-id="94f30-113">Select the first **DEC** (DimensionEntryControlHeader) and verify the following:</span></span>
+        -   <span data-ttu-id="94f30-114">コントロールの横にある括弧で指定されたコントロールのタイプは、Dimension Entry Control です。</span><span class="sxs-lookup"><span data-stu-id="94f30-114">The type for the control, specified in parenthesis next the control, is Dimension Entry Control.</span></span>
+        -   <span data-ttu-id="94f30-115">Controller クラスのプロパティは空白になります。</span><span class="sxs-lookup"><span data-stu-id="94f30-115">The Controller class property is blank.</span></span> <span data-ttu-id="94f30-116">このプロパティは、DEC のこのインスタンスで使用されるコントローラーのタイプを示し、これによってコントロールの動作が決まります。</span><span class="sxs-lookup"><span data-stu-id="94f30-116">This property indicates what type of controller will be used by this instance of DEC, which in turn governs the behavior of the control.</span></span> <span data-ttu-id="94f30-117">このプロパティが空白のときは、コントローラーは、**値のデータ** フィールド (この場合は、**PurchTable** テーブルの **DefaultDimension** フィールド) で指定されたフィールドの EDT によって決定されます。</span><span class="sxs-lookup"><span data-stu-id="94f30-117">When this property is blank, the controller is determined by the EDT of the field specified in the **Value Data** field (in this case, the **DefaultDimension** field on the **PurchTable** table).</span></span> <span data-ttu-id="94f30-118">アプリケーション エクスプローラーで **PurchTable** テーブルを検索します。</span><span class="sxs-lookup"><span data-stu-id="94f30-118">Search for the **PurchTable** table in the Application Explorer.</span></span> <span data-ttu-id="94f30-119">**PurchTable** を右クリックし、**デザイナーを開く** を選択します。</span><span class="sxs-lookup"><span data-stu-id="94f30-119">Right-click **PurchTable** and select **Open Designer**.</span></span> <span data-ttu-id="94f30-120">**フィールド**ノードを展開し、**DefaultDimension** フィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="94f30-120">Expand the **Fields** node and select the **DefaultDimension** field.</span></span> <span data-ttu-id="94f30-121">このフィールドの EDT プロパティは、LedgerDefaultDimensionValueSet に設定されます。</span><span class="sxs-lookup"><span data-stu-id="94f30-121">The EDT property of this field is set to LedgerDefaultDimensionValueSet.</span></span> <span data-ttu-id="94f30-122">この EDT では、このコントロールが LedgerDefaultDimensionEntryController を使用することを意味します。</span><span class="sxs-lookup"><span data-stu-id="94f30-122">This EDT implies that this control will use the LedgerDefaultDimensionEntryController.</span></span>
+
+    3.  <span data-ttu-id="94f30-123">**PurchTable** フォーム デザイン ビューに戻って、2 番目の **DEC** (DimensionEntryControlLine) を選択し、次の事項を確認してください。</span><span class="sxs-lookup"><span data-stu-id="94f30-123">Back in the **PurchTable** form design view, select the second **DEC** (DimensionEntryControlLine) and verify the following:</span></span>
+        -   <span data-ttu-id="94f30-124">コントロールの横にある括弧で指定されたコントロールのタイプは、Dimension Entry Control です。</span><span class="sxs-lookup"><span data-stu-id="94f30-124">The type for the control, specified in parenthesis next to the control, is Dimension Entry Control.</span></span>
+        -   <span data-ttu-id="94f30-125">Controller クラスのプロパティは空白になります。</span><span class="sxs-lookup"><span data-stu-id="94f30-125">The Controller class property is blank.</span></span> <span data-ttu-id="94f30-126">コントローラーは、DEC の場合と同様に、**値データ** フィールドで指定されたフィールドの EDT によって決定されます。</span><span class="sxs-lookup"><span data-stu-id="94f30-126">The controller will be determined by the EDT of the field specified in the **Value Data** Field, as it was for the DEC.</span></span>
+
+5.  <span data-ttu-id="94f30-127">コード エディター ビューに切り替えます。</span><span class="sxs-lookup"><span data-stu-id="94f30-127">Switch to the code editor view.</span></span>
+6.  <span data-ttu-id="94f30-128">フォーム ソース コードで、"TODO: (Code Upgrade) \[Dimension entry control\]" のすべての事例を検索します。</span><span class="sxs-lookup"><span data-stu-id="94f30-128">Search for all occurrences of "TODO: (Code Upgrade) \[Dimension entry control\]" in the form source code.</span></span>
+7.  <span data-ttu-id="94f30-129">残りの各 TODO コメントの実行は、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="94f30-129">Go through each of the remaining TODO comments as follows.</span></span>
+
+## <a name="data-source-purchtable"></a><span data-ttu-id="94f30-130">データ ソース PurchTable</span><span class="sxs-lookup"><span data-stu-id="94f30-130">Data source PurchTable</span></span>
+<span data-ttu-id="94f30-131">**(フォーム &gt; データ ソース &gt; PurchTable &gt; メソッド**)</span><span class="sxs-lookup"><span data-stu-id="94f30-131">**(Form &gt; Data sources &gt; PurchTable &gt; Methods**)</span></span>
+
+|<span data-ttu-id="94f30-132">以前</span><span class="sxs-lookup"><span data-stu-id="94f30-132">Before</span></span> | <span data-ttu-id="94f30-133">変更後</span><span class="sxs-lookup"><span data-stu-id="94f30-133">After</span></span>   |
+|-------|--------|
+| <span data-ttu-id="94f30-134">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] 移行ガイダンスに基づいてこれを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="94f30-134">/\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance.</span></span> <span data-ttu-id="94f30-135">\*/DimensionEntryControlHeader.reactivate();</span><span class="sxs-lookup"><span data-stu-id="94f30-135">\*/DimensionEntryControlHeader.reactivate();</span></span> | <span data-ttu-id="94f30-136">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="94f30-136">Because this method call doesn’t have a parm method called before it, it can be deleted.</span></span> <span data-ttu-id="94f30-137">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94f30-137">The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</span></span> <span data-ttu-id="94f30-138">メソッド呼び出しの再有効化の一般的なルールとして、必要でない場合は、呼び出しを削除し、正常に動作することを確認するためにコントロールをテストします。</span><span class="sxs-lookup"><span data-stu-id="94f30-138">As a general rule with reactivate method calls, if it may not be needed, remove the call and test the control to make sure it works correctly.</span></span> <span data-ttu-id="94f30-139">そうでない場合は、再アクティブ化コール バックを追加します。</span><span class="sxs-lookup"><span data-stu-id="94f30-139">If it doesn’t, add the reactivate call back.</span></span> |
+
+## <a name="data-field-orderaccount"></a><span data-ttu-id="94f30-140">データ フィールド OrderAccount</span><span class="sxs-lookup"><span data-stu-id="94f30-140">Data field OrderAccount</span></span>
+<span data-ttu-id="94f30-141">(**フォーム&gt;データ ソース &gt;PurchTable&gt; フィールド &gt;OrderAccount&gt; 方法**)</span><span class="sxs-lookup"><span data-stu-id="94f30-141">(**Form &gt; Data sources &gt; PurchTable &gt; Fields &gt; OrderAccount &gt; Methods**)</span></span>
+
+|<span data-ttu-id="94f30-142">以前</span><span class="sxs-lookup"><span data-stu-id="94f30-142">Before</span></span> | <span data-ttu-id="94f30-143">変更後</span><span class="sxs-lookup"><span data-stu-id="94f30-143">After</span></span>   |
+|-------|--------|
+| <span data-ttu-id="94f30-144">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] 移行ガイダンスに基づいてこれを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="94f30-144">/\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance.</span></span> <span data-ttu-id="94f30-145">\*/DimensionEntryControlHeader.reactivate();</span><span class="sxs-lookup"><span data-stu-id="94f30-145">\*/DimensionEntryControlHeader.reactivate();</span></span> | <span data-ttu-id="94f30-146">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="94f30-146">Because this method call doesn’t have a parm method called before it, it can be deleted.</span></span> <span data-ttu-id="94f30-147">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94f30-147">The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</span></span> |
+
+## <a name="data-field-projid"></a><span data-ttu-id="94f30-148">データ フィールド ProjId</span><span class="sxs-lookup"><span data-stu-id="94f30-148">Data field ProjId</span></span>
+<span data-ttu-id="94f30-149">(**フォーム&gt;データ ソース &gt;PurchTable&gt; フィールド &gt;ProjId&gt; 方法**)</span><span class="sxs-lookup"><span data-stu-id="94f30-149">(**Form &gt; Data sources &gt; PurchTable &gt; Fields &gt; ProjId &gt; Methods**)</span></span>
+
+|<span data-ttu-id="94f30-150">以前</span><span class="sxs-lookup"><span data-stu-id="94f30-150">Before</span></span> | <span data-ttu-id="94f30-151">変更後</span><span class="sxs-lookup"><span data-stu-id="94f30-151">After</span></span>   |
+|-------|--------|
+| <span data-ttu-id="94f30-152">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] 移行ガイダンスに基づいてこれを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="94f30-152">/\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance.</span></span> <span data-ttu-id="94f30-153">\*/DimensionEntryControlHeader.reactivate();</span><span class="sxs-lookup"><span data-stu-id="94f30-153">\*/DimensionEntryControlHeader.reactivate();</span></span> | <span data-ttu-id="94f30-154">このメソッドの呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="94f30-154">Because this method call does not have a parm method called before it, it can be deleted.</span></span> <span data-ttu-id="94f30-155">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94f30-155">The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</span></span> <span data-ttu-id="94f30-156">super() 呼び出しがすべて残っているため、modified() メソッド全体を削除することもできます。</span><span class="sxs-lookup"><span data-stu-id="94f30-156">The entire modified() method can be deleted as well because the super() call is all that remains.</span></span> <span data-ttu-id="94f30-157">メソッドが含まれていないため、ProjId クラスを削除することができます。</span><span class="sxs-lookup"><span data-stu-id="94f30-157">The ProjId class can be removed because there are no methods in it.</span></span> |
+
+## <a name="data-field-vendgroup"></a><span data-ttu-id="94f30-158">データ フィールド VendGroup</span><span class="sxs-lookup"><span data-stu-id="94f30-158">Data field VendGroup</span></span>
+<span data-ttu-id="94f30-159">(**フォーム&gt;データ ソース &gt;PurchTable&gt; フィールド &gt;VendGroup&gt; 方法**)</span><span class="sxs-lookup"><span data-stu-id="94f30-159">(**Form &gt; Data sources &gt; PurchTable &gt; Fields &gt; VendGroup &gt; Methods**)</span></span>
+
+|<span data-ttu-id="94f30-160">以前</span><span class="sxs-lookup"><span data-stu-id="94f30-160">Before</span></span> | <span data-ttu-id="94f30-161">変更後</span><span class="sxs-lookup"><span data-stu-id="94f30-161">After</span></span>   |
+|-------|--------|
+| <span data-ttu-id="94f30-162">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] 移行ガイダンスに基づいてこれを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="94f30-162">/\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance.</span></span> <span data-ttu-id="94f30-163">\*/DimensionEntryControlHeader.reactivate();</span><span class="sxs-lookup"><span data-stu-id="94f30-163">\*/DimensionEntryControlHeader.reactivate();</span></span> | <span data-ttu-id="94f30-164">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="94f30-164">Because this method call doesn’t have a parm method called before it, it can be deleted.</span></span> <span data-ttu-id="94f30-165">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94f30-165">The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</span></span> <span data-ttu-id="94f30-166">modified() メソッドと VendGroup クラス全体を削除することもできます。</span><span class="sxs-lookup"><span data-stu-id="94f30-166">The entire modified() method and VendGroup class can be deleted as well.</span></span> |
+
+## <a name="data-source-purchline"></a><span data-ttu-id="94f30-167">データ ソース PurchLine</span><span class="sxs-lookup"><span data-stu-id="94f30-167">Data source PurchLine</span></span>
+<span data-ttu-id="94f30-168">(**フォーム&gt;データ ソース &gt;PurchLine&gt; 方法**)</span><span class="sxs-lookup"><span data-stu-id="94f30-168">(**Form &gt; Data sources &gt; PurchLine &gt; Methods**)</span></span>
+
+|<span data-ttu-id="94f30-169">以前</span><span class="sxs-lookup"><span data-stu-id="94f30-169">Before</span></span> | <span data-ttu-id="94f30-170">変更後</span><span class="sxs-lookup"><span data-stu-id="94f30-170">After</span></span>   |
+|-------|--------|
+| <span data-ttu-id="94f30-171">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] 移行ガイダンスに基づいてこれを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="94f30-171">/\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance.</span></span> <span data-ttu-id="94f30-172">\*/DimensionEntryControlLine.reactivate();**注記:** これはデータソースの itemIdModified メソッドにおけるメソッド呼び出しの再有効化です。</span><span class="sxs-lookup"><span data-stu-id="94f30-172">\*/DimensionEntryControlLine.reactivate();**Note:** This is the reactivate method call in the itemIdModified method on the data source.</span></span> | <span data-ttu-id="94f30-173">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="94f30-173">Because this method call doesn’t have a parm method called before it, it can be deleted.</span></span> <span data-ttu-id="94f30-174">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94f30-174">The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</span></span> |
+| <span data-ttu-id="94f30-175">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] 移行ガイダンスに基づいてこれを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="94f30-175">/\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance.</span></span> <span data-ttu-id="94f30-176">\*/DimensionEntryControlLine.reactivate();**注記:** これはデータソースの create() メソッドにおけるメソッド呼び出しの再有効化です。</span><span class="sxs-lookup"><span data-stu-id="94f30-176">\*/DimensionEntryControlLine.reactivate();**Note:** This is the reactivate method call in the create() method on the data source.</span></span>       | <span data-ttu-id="94f30-177">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="94f30-177">Because this method call doesn’t have a parm method called before it, it can be deleted.</span></span> <span data-ttu-id="94f30-178">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94f30-178">The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</span></span> |
+
+## <a name="data-field-assetgroup"></a><span data-ttu-id="94f30-179">データ フィールド AssetGroup</span><span class="sxs-lookup"><span data-stu-id="94f30-179">Data field AssetGroup</span></span>
+<span data-ttu-id="94f30-180">(**フォーム&gt;データ ソース &gt;PurchLine&gt; フィールド &gt;AssetGroup&gt; 方法**)</span><span class="sxs-lookup"><span data-stu-id="94f30-180">(**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; AssetGroup &gt; Methods**)</span></span>
+
+|<span data-ttu-id="94f30-181">以前</span><span class="sxs-lookup"><span data-stu-id="94f30-181">Before</span></span> | <span data-ttu-id="94f30-182">変更後</span><span class="sxs-lookup"><span data-stu-id="94f30-182">After</span></span>   |
+|-------|--------|
+| <span data-ttu-id="94f30-183">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] 移行ガイダンスに基づいてこれを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="94f30-183">/\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance.</span></span> <span data-ttu-id="94f30-184">\*/DimensionEntryControlLine.reactivate();</span><span class="sxs-lookup"><span data-stu-id="94f30-184">\*/DimensionEntryControlLine.reactivate();</span></span> | <span data-ttu-id="94f30-185">このメソッドの呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="94f30-185">Because this method call does not have a parm method called before it, it can be deleted.</span></span> <span data-ttu-id="94f30-186">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94f30-186">The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</span></span> <span data-ttu-id="94f30-187">modified() メソッドと AssetGroup クラス全体を削除することもできます。</span><span class="sxs-lookup"><span data-stu-id="94f30-187">The entire modified() method and AssetGroup class can be deleted as well.</span></span> |
+
+## <a name="data-field-assetidform-gt-data-sources-gt-purchline-gt-fields-gt-assetid-gt-methods"></a><span data-ttu-id="94f30-188">データ フィールドの AssetId (**フォーム &gt; データ ソース &gt;PurchLine &gt; フィールド &gt; AssetId &gt; 方法**)</span><span class="sxs-lookup"><span data-stu-id="94f30-188">Data field AssetId(**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; AssetId &gt; Methods**)</span></span>
+
+|<span data-ttu-id="94f30-189">以前</span><span class="sxs-lookup"><span data-stu-id="94f30-189">Before</span></span> | <span data-ttu-id="94f30-190">変更後</span><span class="sxs-lookup"><span data-stu-id="94f30-190">After</span></span>   |
+|-------|--------|
+| <span data-ttu-id="94f30-191">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] 移行ガイダンスに基づいてこれを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="94f30-191">/\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance.</span></span> <span data-ttu-id="94f30-192">\*/DimensionEntryControlLine.reactivate();</span><span class="sxs-lookup"><span data-stu-id="94f30-192">\*/DimensionEntryControlLine.reactivate();</span></span> | <span data-ttu-id="94f30-193">このメソッドの呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="94f30-193">Because this method call does not have a parm method called before it, it can be deleted.</span></span> <span data-ttu-id="94f30-194">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94f30-194">The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</span></span> |
+
+## <a name="data-field-procurementcategory"></a><span data-ttu-id="94f30-195">データ フィールド ProcurementCategory</span><span class="sxs-lookup"><span data-stu-id="94f30-195">Data field ProcurementCategory</span></span>
+<span data-ttu-id="94f30-196">(**フォーム&gt;データ ソース &gt;PurchLine&gt; フィールド &gt;ProcurementCategory&gt; 方法**)</span><span class="sxs-lookup"><span data-stu-id="94f30-196">(**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; ProcurementCategory &gt; Methods**)</span></span>
+
+| <span data-ttu-id="94f30-197">以前</span><span class="sxs-lookup"><span data-stu-id="94f30-197">Before</span></span>        |  <span data-ttu-id="94f30-198">変更後</span><span class="sxs-lookup"><span data-stu-id="94f30-198">After</span></span>                                        |
+|--------|--------------------------------------------------|
+| <span data-ttu-id="94f30-199">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] 移行ガイダンスに基づいてこれを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="94f30-199">/\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance.</span></span> <span data-ttu-id="94f30-200">\*/DimensionEntryControlLine.reactivate();</span><span class="sxs-lookup"><span data-stu-id="94f30-200">\*/DimensionEntryControlLine.reactivate();</span></span> | <span data-ttu-id="94f30-201">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="94f30-201">Because this method call doesn’t have a parm method called before it, it can be deleted.</span></span> <span data-ttu-id="94f30-202">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94f30-202">The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</span></span> |
+
+## <a name="data-field-projid"></a><span data-ttu-id="94f30-203">データ フィールド ProjId</span><span class="sxs-lookup"><span data-stu-id="94f30-203">Data field ProjId</span></span>
+<span data-ttu-id="94f30-204">(**フォーム&gt;データ ソース &gt;PurchLine&gt; フィールド &gt;ProjId&gt; 方法**)</span><span class="sxs-lookup"><span data-stu-id="94f30-204">(**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; ProjId &gt; Methods**)</span></span>
+
+|<span data-ttu-id="94f30-205">以前</span><span class="sxs-lookup"><span data-stu-id="94f30-205">Before</span></span> | <span data-ttu-id="94f30-206">変更後</span><span class="sxs-lookup"><span data-stu-id="94f30-206">After</span></span>   |
+|-------|--------|
+| <span data-ttu-id="94f30-207">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] 移行ガイダンスに基づいてこれを置き換えます。</span><span class="sxs-lookup"><span data-stu-id="94f30-207">/\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance.</span></span> <span data-ttu-id="94f30-208">\*/DimensionEntryControlLine.reactivate();</span><span class="sxs-lookup"><span data-stu-id="94f30-208">\*/DimensionEntryControlLine.reactivate();</span></span> | <span data-ttu-id="94f30-209">このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。</span><span class="sxs-lookup"><span data-stu-id="94f30-209">Because this method call doesn’t have a parm method called before it, it can be deleted.</span></span> <span data-ttu-id="94f30-210">分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94f30-210">The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</span></span> |
+
+## <a name="tabpage-tabfinancialdimensionsline"></a><span data-ttu-id="94f30-211">TabPage TabFinancialDimensionsLine</span><span class="sxs-lookup"><span data-stu-id="94f30-211">TabPage TabFinancialDimensionsLine</span></span>
+<span data-ttu-id="94f30-212">(フォーム タブの下にある検索バーで「TabFinancialDimensionsLine」を検索してください。)</span><span class="sxs-lookup"><span data-stu-id="94f30-212">(Search for TabFinancialDimensionsLine in the search bar below the form tab)</span></span>
+
+|<span data-ttu-id="94f30-213">以前</span><span class="sxs-lookup"><span data-stu-id="94f30-213">Before</span></span> | <span data-ttu-id="94f30-214">変更後</span><span class="sxs-lookup"><span data-stu-id="94f30-214">After</span></span>   |
+|-------|--------|
+| <span data-ttu-id="94f30-215">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] この方法は、カスタム実装がない場合に削除することができます \*///dimensionDefaultingControllerHeader.pageActivated()</span><span class="sxs-lookup"><span data-stu-id="94f30-215">/\* TODO: (Code Upgrade) \[Dimension entry control\] This method can be removed if there is no custom implementation \*///dimensionDefaultingControllerLine.pageActivated();</span></span> | <span data-ttu-id="94f30-216">pageActivated メソッドをもう呼び出す必要はありません。</span><span class="sxs-lookup"><span data-stu-id="94f30-216">The pageActivated method no longer needs to be called.</span></span> <span data-ttu-id="94f30-217">この全メソッドと TabFinancialDimensionsLine クラスは、pageActivated メソッドにカスタム ロジックがないため削除できます。</span><span class="sxs-lookup"><span data-stu-id="94f30-217">This entire method and the TabFinancialDimensionsLine class can be removed because there is no custom logic in the pageActivated method.</span></span> |
+
+## <a name="tabpage-tabfinancialdimensionsheader"></a><span data-ttu-id="94f30-218">TabPage TabFinancialDimensionsHeader</span><span class="sxs-lookup"><span data-stu-id="94f30-218">TabPage TabFinancialDimensionsHeader</span></span>
+<span data-ttu-id="94f30-219">(フォーム タブの下にある検索バーで「TabFinancialDimensionsHeader」を検索してください。)</span><span class="sxs-lookup"><span data-stu-id="94f30-219">(Search for TabFinancialDimensionsHeader in the search bar below the form tab)</span></span>
+
+|<span data-ttu-id="94f30-220">以前</span><span class="sxs-lookup"><span data-stu-id="94f30-220">Before</span></span> | <span data-ttu-id="94f30-221">変更後</span><span class="sxs-lookup"><span data-stu-id="94f30-221">After</span></span>   |
+|-------|--------|
+| <span data-ttu-id="94f30-222">/\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\] この方法は、カスタム実装がない場合に削除することができます \*///dimensionDefaultingControllerHeader.pageActivated()</span><span class="sxs-lookup"><span data-stu-id="94f30-222">/\* TODO: (Code Upgrade) \[Dimension entry control\] This method can be removed if there is no custom implementation \*///dimensionDefaultingControllerHeader.pageActivated();</span></span> | <span data-ttu-id="94f30-223">pageActivated メソッドをもう呼び出す必要はありません。</span><span class="sxs-lookup"><span data-stu-id="94f30-223">The pageActivated method no longer needs to be called.</span></span> <span data-ttu-id="94f30-224">この全メソッドと TabFinancialDimensionsHeader クラスは、pageActivated メソッドにカスタム ロジックがないため削除できます。</span><span class="sxs-lookup"><span data-stu-id="94f30-224">This entire method and the TabFinancialDimensionsHeader class can be removed because there is no custom logic in the pageActivated method.</span></span> |
+
+
+
+## <a name="additional-resources"></a><span data-ttu-id="94f30-225">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="94f30-225">Additional resources</span></span>
+
+- [<span data-ttu-id="94f30-226">分析コード エントリ コントロールの取得</span><span class="sxs-lookup"><span data-stu-id="94f30-226">Dimension Entry control uptake</span></span>](dimension-entry-control-uptake.md)
+- [<span data-ttu-id="94f30-227">分析コード エントリ コントロール ダイアログのサポート</span><span class="sxs-lookup"><span data-stu-id="94f30-227">Dimension Entry control dialog support</span></span>](dimension-entry-control-dialog-support.md)
+
+
+

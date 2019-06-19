@@ -1,201 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="extensibility-changes-801.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>extensibility-changes-801.05a8f3.e1e1b716a0bd15cc4a1ef47d8b8e741bce38a040.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>e1e1b716a0bd15cc4a1ef47d8b8e741bce38a040</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\extensibility\extensibility-changes-801.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Extensibility changes in Finance and Operations update 8.0.1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations update 8.0.1.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.1 でリリースされた拡張機能を一覧表示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Extensibility changes in Finance and Operations update 8.0.1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations update 8.0.1.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.1 に実装された拡張機能の一覧です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>For more information about the schedule of changes that support extensibility, see <bpt id="p1">[</bpt>Application extensibility plans<ept id="p1">](extensibility-roadmap.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張性をサポートする変更のスケジュールの詳細については、「<bpt id="p1">[</bpt>アプリケーション機能拡張計画<ept id="p1">](extensibility-roadmap.md)</ept>」を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Refactored methods to support extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張性をサポートするためにリファクターされたメソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのメソッドはリファクターされ、コマンド チェーン、デリゲート、またはメンバーへのアクセスの提供によって、拡張性をサポートします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Class ProjControlPeriod::PeriodInsert</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjControlPeriod::PeriodInsert</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Class ProjInvoiceChoose::doSalesLine</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjInvoiceChoose::doSalesLine</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Class CustInvoiceJour::printFreeTextJournal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス CustInvoiceJour::printFreeTextJournal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Class ProjCostControl.createEmptyTransactionType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjCostControl.createEmptyTransactionType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Class ProjEstimate::autoGenerateEstimateLinesFromTask</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjEstimate::autoGenerateEstimateLinesFromTask</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Class ProjEstimateDataContract.updateEstimates</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjEstimateDataContract.updateEstimates</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Class ProjForecastBudget.Run</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjForecastBudget.Run</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Class ProjHierarchyProvider.preDeleteHierarchy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjHierarchyProvider.preDeleteHierarchy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Class ProjPlanVersionsManager::CopyTasks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjPlanVersionsManager::CopyTasks</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Class ProjPlanVersionsManager.createDraftFromPublishedVersion</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjPlanVersionsManager.createDraftFromPublishedVersion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Class ProjPlanVersionsManager.PublishQuotationSubHierarchy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjPlanVersionsManager.PublishQuotationSubHierarchy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Class ProjPlanVersionsManager.CreateDraftVersion</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjPlanVersionsManager.CreateDraftVersion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Class ProjTask.addTask</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjTask.addTask</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Class ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Class VendOpenTrans.editMarkTrans</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VendOpenTrans.editMarkTrans</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Class CustVendReversePosting.reverseTaxWithholdTrans</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス CustVendReversePosting.reverseTaxWithholdTrans</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Class CustVendSettle.postPennyDiff</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス CustVendSettle.postPennyDiff</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Class CustVendSettle.processStillOpenTransactions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス CustVendSettle.processStillOpenTransactions</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Class InventTransferOrderOverviewDP.insertTmp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス InventTransferOrderOverviewDP.insertTmp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Class LedgerJournalTransCost.LedgerJournalTrans.Create</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス LedgerJournalTransCost.LedgerJournalTrans.Create</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Class ProjAdjustmentSelect.dialog</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjAdjustmentSelect.dialog</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Class ProjEstimate.syncEstimateLinesFromTask</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjEstimate.syncEstimateLinesFromTask</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Class ProjEstimateDataContract.UpdateEstimates</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjEstimateDataContract.UpdateEstimates</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Class ProjForecastTransferFromWbs.transferToForecast</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjForecastTransferFromWbs.transferToForecast</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Class ProjWizardActivityCtrl.insertDBOnServer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjWizardActivityCtrl.insertDBOnServer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Class ProjTaskEstimatesSynchronizer.calcTotalEstimateLineHours</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjTaskEstimatesSynchronizer.calcTotalEstimateLineHours</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Class ProjTaskEstimatesSynchronizer.countNumberOfHourEstimateLines</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjTaskEstimatesSynchronizer.countNumberOfHourEstimateLines</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Class ProjTaskEstimatesSynchronizer.syncExistingHourEstimatesWithTask</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjTaskEstimatesSynchronizer.syncExistingHourEstimatesWithTask</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Class ProjTaskEstimatesSynchronizer.syncHourEstimatesWithTaskEffort</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjTaskEstimatesSynchronizer.syncHourEstimatesWithTaskEffort</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Class ProjWbsCostPlanningServerActions.executeDataRetrievalAction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjWbsCostPlanningServerActions.executeDataRetrievalAction</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Class ProjWbsCostPlanningServerActions.getProjectCategoryTypes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjWbsCostPlanningServerActions.getProjectCategoryTypes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Class ProjWbsSchedulePlanningServerActions.executeAction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjWbsSchedulePlanningServerActions.executeAction</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Class ProjWbsSchedulePlanningServerActions.executeDataRetrievalAction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjWbsSchedulePlanningServerActions.executeDataRetrievalAction</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Class ProjStatisticCalc.validate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjStatisticCalc.validate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Class WHSInventReserve.insert</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス WHSInventReserve.insert</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Class WHSInventReserveDelta.insert</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス WHSInventReserveDelta.insert</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Class ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Class ProjJournalTransEmpl - Datasource: ProjJournalTrans.Validate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjJournalTransEmpl - Datasource: ProjJournalTrans.Validate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Class LedgerJournalEngine.initTaxItemGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス LedgerJournalEngine.initTaxItemGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Class LedgerJournalEngine.initValue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス LedgerJournalEngine.initValue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Class ProjJournalTrans.mergeResourceDimensionDefault</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjJournalTrans.mergeResourceDimensionDefault</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Class ProjTask.setTaskinfo</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjTask.setTaskinfo</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Class ProjJournalName.standardJournalName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ProjJournalName.standardJournalName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Form ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Other extensibility enhancements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他の拡張性の強化</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>In addition to the refactored methods, the following extensibility enhancements have been made.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リファクタされたメソッドに加えて、次の拡張性の強化が実行されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Support variable number of decimals - InventTestLowerLimit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小数点以下の変数番号のサポート - InventTestLowerLimit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Support variable number of decimals -  InventTestLowerTolerance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小数点以下の変数番号のサポート - InventTestLowerTolerance</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Support variable number of decimals -  InventTestStandardValue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小数点以下の変数番号のサポート - InventTestStandardValue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Support variable number of decimals -  InventTestUpperLimit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小数点以下の変数番号のサポート - InventTestUpperLimit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Support variable number of decimals - InventTestUpperTolerance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小数点以下の変数番号のサポート - InventTestUpperTolerance</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Support to skip prompt on transaction reversal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの取消でスキップ確認をサポートします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Enable extension of PSAProjQuotationApproval workflow</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PSAProjQuotationApproval ワークフローの拡張機能の有効化</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更
+description: このトピックは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.1 でリリースされた拡張機能を一覧表示します。
+author: FrankDahl
+manager: AnnBe
+ms.date: 05/17/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: josaw
+ms.search.scope: Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: fdahl
+ms.search.validFrom: 2018-05-31
+ms.dyn365.ops.version: App 8.0.1
+ms.openlocfilehash: e1e1b716a0bd15cc4a1ef47d8b8e741bce38a040
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544118"
+---
+# <a name="extensibility-changes-in-finance-and-operations-update-801"></a><span data-ttu-id="1a803-103">Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更</span><span class="sxs-lookup"><span data-stu-id="1a803-103">Extensibility changes in Finance and Operations update 8.0.1</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="1a803-104">これは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.1 に実装された拡張機能の一覧です。</span><span class="sxs-lookup"><span data-stu-id="1a803-104">This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations update 8.0.1.</span></span> <span data-ttu-id="1a803-105">拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1a803-105">For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).</span></span>
+
+## <a name="refactored-methods-to-support-extensibility"></a><span data-ttu-id="1a803-106">拡張性をサポートするためにリファクターされたメソッド</span><span class="sxs-lookup"><span data-stu-id="1a803-106">Refactored methods to support extensibility</span></span>
+
+<span data-ttu-id="1a803-107">これらのメソッドはリファクターされ、コマンド チェーン、デリゲート、またはメンバーへのアクセスの提供によって、拡張性をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1a803-107">These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.</span></span>
+
+| <span data-ttu-id="1a803-108">方法</span><span class="sxs-lookup"><span data-stu-id="1a803-108">Method</span></span>|
+| --------------- |
+|<span data-ttu-id="1a803-109">クラス ProjControlPeriod::PeriodInsert</span><span class="sxs-lookup"><span data-stu-id="1a803-109">Class ProjControlPeriod::PeriodInsert</span></span>|
+|<span data-ttu-id="1a803-110">クラス ProjInvoiceChoose::doSalesLine</span><span class="sxs-lookup"><span data-stu-id="1a803-110">Class ProjInvoiceChoose::doSalesLine</span></span>|
+|<span data-ttu-id="1a803-111">クラス CustInvoiceJour::printFreeTextJournal</span><span class="sxs-lookup"><span data-stu-id="1a803-111">Class CustInvoiceJour::printFreeTextJournal</span></span>|
+|<span data-ttu-id="1a803-112">クラス ProjCostControl.createEmptyTransactionType</span><span class="sxs-lookup"><span data-stu-id="1a803-112">Class ProjCostControl.createEmptyTransactionType</span></span>|
+|<span data-ttu-id="1a803-113">クラス ProjEstimate::autoGenerateEstimateLinesFromTask</span><span class="sxs-lookup"><span data-stu-id="1a803-113">Class ProjEstimate::autoGenerateEstimateLinesFromTask</span></span>|
+|<span data-ttu-id="1a803-114">クラス ProjEstimateDataContract.updateEstimates</span><span class="sxs-lookup"><span data-stu-id="1a803-114">Class ProjEstimateDataContract.updateEstimates</span></span>|
+|<span data-ttu-id="1a803-115">クラス ProjForecastBudget.Run</span><span class="sxs-lookup"><span data-stu-id="1a803-115">Class ProjForecastBudget.Run</span></span>|
+|<span data-ttu-id="1a803-116">クラス ProjHierarchyProvider.preDeleteHierarchy</span><span class="sxs-lookup"><span data-stu-id="1a803-116">Class ProjHierarchyProvider.preDeleteHierarchy</span></span>|
+|<span data-ttu-id="1a803-117">クラス ProjPlanVersionsManager::CopyTasks</span><span class="sxs-lookup"><span data-stu-id="1a803-117">Class ProjPlanVersionsManager::CopyTasks</span></span>|
+|<span data-ttu-id="1a803-118">クラス ProjPlanVersionsManager.createDraftFromPublishedVersion</span><span class="sxs-lookup"><span data-stu-id="1a803-118">Class ProjPlanVersionsManager.createDraftFromPublishedVersion</span></span>|
+|<span data-ttu-id="1a803-119">クラス ProjPlanVersionsManager.PublishQuotationSubHierarchy</span><span class="sxs-lookup"><span data-stu-id="1a803-119">Class ProjPlanVersionsManager.PublishQuotationSubHierarchy</span></span>|
+|<span data-ttu-id="1a803-120">クラス ProjPlanVersionsManager.CreateDraftVersion</span><span class="sxs-lookup"><span data-stu-id="1a803-120">Class ProjPlanVersionsManager.CreateDraftVersion</span></span>|
+|<span data-ttu-id="1a803-121">クラス ProjTask.addTask</span><span class="sxs-lookup"><span data-stu-id="1a803-121">Class ProjTask.addTask</span></span>|
+|<span data-ttu-id="1a803-122">クラス ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span><span class="sxs-lookup"><span data-stu-id="1a803-122">Class ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span></span>|
+|<span data-ttu-id="1a803-123">クラス VendOpenTrans.editMarkTrans</span><span class="sxs-lookup"><span data-stu-id="1a803-123">Class VendOpenTrans.editMarkTrans</span></span>|
+|<span data-ttu-id="1a803-124">クラス CustVendReversePosting.reverseTaxWithholdTrans</span><span class="sxs-lookup"><span data-stu-id="1a803-124">Class CustVendReversePosting.reverseTaxWithholdTrans</span></span>|
+|<span data-ttu-id="1a803-125">クラス CustVendSettle.postPennyDiff</span><span class="sxs-lookup"><span data-stu-id="1a803-125">Class CustVendSettle.postPennyDiff</span></span>|
+|<span data-ttu-id="1a803-126">クラス CustVendSettle.processStillOpenTransactions</span><span class="sxs-lookup"><span data-stu-id="1a803-126">Class CustVendSettle.processStillOpenTransactions</span></span>|
+|<span data-ttu-id="1a803-127">クラス InventTransferOrderOverviewDP.insertTmp</span><span class="sxs-lookup"><span data-stu-id="1a803-127">Class InventTransferOrderOverviewDP.insertTmp</span></span>|
+|<span data-ttu-id="1a803-128">クラス LedgerJournalTransCost.LedgerJournalTrans.Create</span><span class="sxs-lookup"><span data-stu-id="1a803-128">Class LedgerJournalTransCost.LedgerJournalTrans.Create</span></span>|
+|<span data-ttu-id="1a803-129">クラス ProjAdjustmentSelect.dialog</span><span class="sxs-lookup"><span data-stu-id="1a803-129">Class ProjAdjustmentSelect.dialog</span></span>|
+|<span data-ttu-id="1a803-130">クラス ProjEstimate.syncEstimateLinesFromTask</span><span class="sxs-lookup"><span data-stu-id="1a803-130">Class ProjEstimate.syncEstimateLinesFromTask</span></span>|
+|<span data-ttu-id="1a803-131">クラス ProjEstimateDataContract.UpdateEstimates</span><span class="sxs-lookup"><span data-stu-id="1a803-131">Class ProjEstimateDataContract.UpdateEstimates</span></span>|
+|<span data-ttu-id="1a803-132">クラス ProjForecastTransferFromWbs.transferToForecast</span><span class="sxs-lookup"><span data-stu-id="1a803-132">Class ProjForecastTransferFromWbs.transferToForecast</span></span>|
+|<span data-ttu-id="1a803-133">クラス ProjWizardActivityCtrl.insertDBOnServer</span><span class="sxs-lookup"><span data-stu-id="1a803-133">Class ProjWizardActivityCtrl.insertDBOnServer</span></span>|
+|<span data-ttu-id="1a803-134">クラス ProjTaskEstimatesSynchronizer.calcTotalEstimateLineHours</span><span class="sxs-lookup"><span data-stu-id="1a803-134">Class ProjTaskEstimatesSynchronizer.calcTotalEstimateLineHours</span></span>|
+|<span data-ttu-id="1a803-135">クラス ProjTaskEstimatesSynchronizer.countNumberOfHourEstimateLines</span><span class="sxs-lookup"><span data-stu-id="1a803-135">Class ProjTaskEstimatesSynchronizer.countNumberOfHourEstimateLines</span></span>|
+|<span data-ttu-id="1a803-136">クラス ProjTaskEstimatesSynchronizer.syncExistingHourEstimatesWithTask</span><span class="sxs-lookup"><span data-stu-id="1a803-136">Class ProjTaskEstimatesSynchronizer.syncExistingHourEstimatesWithTask</span></span>|
+|<span data-ttu-id="1a803-137">クラス ProjTaskEstimatesSynchronizer.syncHourEstimatesWithTaskEffort</span><span class="sxs-lookup"><span data-stu-id="1a803-137">Class ProjTaskEstimatesSynchronizer.syncHourEstimatesWithTaskEffort</span></span>|
+|<span data-ttu-id="1a803-138">クラス ProjWbsCostPlanningServerActions.executeDataRetrievalAction</span><span class="sxs-lookup"><span data-stu-id="1a803-138">Class ProjWbsCostPlanningServerActions.executeDataRetrievalAction</span></span>|
+|<span data-ttu-id="1a803-139">クラス ProjWbsCostPlanningServerActions.getProjectCategoryTypes</span><span class="sxs-lookup"><span data-stu-id="1a803-139">Class ProjWbsCostPlanningServerActions.getProjectCategoryTypes</span></span>|
+|<span data-ttu-id="1a803-140">クラス ProjWbsSchedulePlanningServerActions.executeAction</span><span class="sxs-lookup"><span data-stu-id="1a803-140">Class ProjWbsSchedulePlanningServerActions.executeAction</span></span>|
+|<span data-ttu-id="1a803-141">クラス ProjWbsSchedulePlanningServerActions.executeDataRetrievalAction</span><span class="sxs-lookup"><span data-stu-id="1a803-141">Class ProjWbsSchedulePlanningServerActions.executeDataRetrievalAction</span></span>|
+|<span data-ttu-id="1a803-142">クラス ProjStatisticCalc.validate</span><span class="sxs-lookup"><span data-stu-id="1a803-142">Class ProjStatisticCalc.validate</span></span>|
+|<span data-ttu-id="1a803-143">クラス WHSInventReserve.insert</span><span class="sxs-lookup"><span data-stu-id="1a803-143">Class WHSInventReserve.insert</span></span>|
+|<span data-ttu-id="1a803-144">クラス WHSInventReserveDelta.insert</span><span class="sxs-lookup"><span data-stu-id="1a803-144">Class WHSInventReserveDelta.insert</span></span>|
+|<span data-ttu-id="1a803-145">クラス ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span><span class="sxs-lookup"><span data-stu-id="1a803-145">Class ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span></span>|
+|<span data-ttu-id="1a803-146">クラス ProjJournalTransEmpl - Datasource: ProjJournalTrans.Validate</span><span class="sxs-lookup"><span data-stu-id="1a803-146">Class ProjJournalTransEmpl - Datasource: ProjJournalTrans.Validate</span></span>|
+|<span data-ttu-id="1a803-147">クラス LedgerJournalEngine.initTaxItemGroup</span><span class="sxs-lookup"><span data-stu-id="1a803-147">Class LedgerJournalEngine.initTaxItemGroup</span></span>|
+|<span data-ttu-id="1a803-148">クラス LedgerJournalEngine.initValue</span><span class="sxs-lookup"><span data-stu-id="1a803-148">Class LedgerJournalEngine.initValue</span></span>|
+|<span data-ttu-id="1a803-149">クラス ProjJournalTrans.mergeResourceDimensionDefault</span><span class="sxs-lookup"><span data-stu-id="1a803-149">Class ProjJournalTrans.mergeResourceDimensionDefault</span></span>|
+|<span data-ttu-id="1a803-150">クラス ProjTask.setTaskinfo</span><span class="sxs-lookup"><span data-stu-id="1a803-150">Class ProjTask.setTaskinfo</span></span>|
+|<span data-ttu-id="1a803-151">クラス ProjJournalName.standardJournalName</span><span class="sxs-lookup"><span data-stu-id="1a803-151">Class ProjJournalName.standardJournalName</span></span>|
+|<span data-ttu-id="1a803-152">フォーム ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span><span class="sxs-lookup"><span data-stu-id="1a803-152">Form ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span></span>|
+
+## <a name="other-extensibility-enhancements"></a><span data-ttu-id="1a803-153">その他の拡張性の強化</span><span class="sxs-lookup"><span data-stu-id="1a803-153">Other extensibility enhancements</span></span>
+
+<span data-ttu-id="1a803-154">リファクタされたメソッドに加えて、次の拡張性の強化が実行されました。</span><span class="sxs-lookup"><span data-stu-id="1a803-154">In addition to the refactored methods, the following extensibility enhancements have been made.</span></span>
+
+- <span data-ttu-id="1a803-155">小数点以下の変数番号のサポート - InventTestLowerLimit</span><span class="sxs-lookup"><span data-stu-id="1a803-155">Support variable number of decimals - InventTestLowerLimit</span></span>
+- <span data-ttu-id="1a803-156">小数点以下の変数番号のサポート - InventTestLowerTolerance</span><span class="sxs-lookup"><span data-stu-id="1a803-156">Support variable number of decimals -  InventTestLowerTolerance</span></span>
+- <span data-ttu-id="1a803-157">小数点以下の変数番号のサポート - InventTestStandardValue</span><span class="sxs-lookup"><span data-stu-id="1a803-157">Support variable number of decimals -  InventTestStandardValue</span></span> 
+- <span data-ttu-id="1a803-158">小数点以下の変数番号のサポート - InventTestUpperLimit</span><span class="sxs-lookup"><span data-stu-id="1a803-158">Support variable number of decimals -  InventTestUpperLimit</span></span>
+- <span data-ttu-id="1a803-159">小数点以下の変数番号のサポート - InventTestUpperTolerance</span><span class="sxs-lookup"><span data-stu-id="1a803-159">Support variable number of decimals - InventTestUpperTolerance</span></span>
+- <span data-ttu-id="1a803-160">トランザクションの取消でスキップ確認をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1a803-160">Support to skip prompt on transaction reversal</span></span>
+- <span data-ttu-id="1a803-161">PSAProjQuotationApproval ワークフローの拡張機能の有効化</span><span class="sxs-lookup"><span data-stu-id="1a803-161">Enable extension of PSAProjQuotationApproval workflow</span></span>
