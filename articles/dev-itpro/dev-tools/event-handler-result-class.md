@@ -1,99 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="event-handler-result-class.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>event-handler-result-class.1d8b82.808601cf8736434d37306d48a389af1178238d4b.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>808601cf8736434d37306d48a389af1178238d4b</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-tools\event-handler-result-class.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>EventHandlerResult classes in request or response scenarios</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求または応答シナリオの EventHandlerResult クラス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes how to use EventHandlerResult classes with delegate methods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、デリゲート メソッドで EventHandlerResult クラスを使用する方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>EventHandlerResult classes in request or response scenarios</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求または応答シナリオの EventHandlerResult クラス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Delegate methods and delegate handler methods can be declared to support a request/response scenario, where the delegate calling logic requests the subscribers to provide a response.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デリゲート メソッドとデリゲート ハンドラー メソッドは、デリゲート呼び出しロジックがサブスクライバに応答を要求する要求/応答シナリオをサポートするために宣言することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>To support this scenario the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> class is most often passed as a parameter, and the delegate handler methods provide their result using one of the result methods on the class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このシナリオをサポートするために、<bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> クラスがパラメーターとして渡されることが最も多く、デリゲート ハンドラー メソッドがクラスの result メソッドの 1 つを使用して結果を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>However, the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> class can only contain a single result, so if multiple subscribers provide their individual result, the last respondent wins, and the results from the previous subscribers are overwritten.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、<bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> クラスは単一の結果のみを含むため、複数のサブスクライバが個々の結果を提供する場合は、最後の回答者が獲得し、前のサブスクライバからの結果が上書きされます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Before the functionality described in this topic was introduced (platform update 5), there was no mechanism to ensure that, at most, a single subscriber provided a result, and that no results were lost if there were multiple subscribers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックで説明されている機能が導入される前 (プラットフォーム更新プログラム 5) は、最大でも単一のサブスクライバーが結果を提供し、複数のサブスクライバーが存在すると結果が失われないことを保証するメカニズムはありませんでした。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Ensuring, at most, one response</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最大で 1 つの応答を確認</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>In platform update 5, the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> class has an additional static constructor which ensures that the logic fails if more than one subscriber provides a result.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プラットフォーム更新プログラム 5 では、1 つ以上のサブスクライバーが結果を提示している場合にロジックが失敗することを確認する追加の静的コンストラクターが、<bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> クラスにあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>The new constructor is named <bpt id="p1">**</bpt>newSingleResponse<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいコンストラクターの名前は、<bpt id="p1">**</bpt>newSingleResponse<ept id="p1">**</ept>。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>When instantiating an <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> object using this method, the framework will throw an exception as soon as a second delegate handler method attempts to provide a result.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドを使用して <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> オブジェクトをインスタンス化したとき、2 番目のデリゲート ハンドラー メソッドが結果を提供しようとすると、このフレームワークはただちに例外をスローします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>IEventHandlerResultValidator interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IEventHandlerResultValidator インターフェイス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>The validation in the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> class is handled by injecting an object of a type that implements the <bpt id="p2">**</bpt>IEventHandlerResultValidator<ept id="p2">**</ept> interface.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> クラスの検証は、<bpt id="p2">**</bpt>IEventHandlerResultValidator<ept id="p2">**</ept> インターフェイスを実装するタイプのオブジェクトを挿入することで処理されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>When instantiating the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> object using the <bpt id="p2">**</bpt>newSingleResponse<ept id="p2">**</ept> static constructor, an <bpt id="p3">**</bpt>EventHandlerSingleResponseValidator<ept id="p3">**</ept> object is instantiated and injected into the <bpt id="p4">**</bpt>EventHandlerResult<ept id="p4">**</ept> object, and the injected object becomes responsible for validating any result provided to the <bpt id="p5">**</bpt>EventhandlerResult<ept id="p5">**</ept> object.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>newSingleResponse<ept id="p2">**</ept> 静的コンストラクターを使用して <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> オブジェクトをインスタンス化するとき、<bpt id="p3">**</bpt>EventHandlerSingleResponseValidator<ept id="p3">**</ept> オブジェクトがインスタンス化されて <bpt id="p4">**</bpt>EventHandlerResult<ept id="p4">**</ept> オブジェクトに挿入され、その挿入されたオブジェクトが <bpt id="p5">**</bpt>EventhandlerResult<ept id="p5">**</ept> オブジェクトに提供される結果の検証を担当します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Other validation classes can be implemented by having the class implement the <bpt id="p1">**</bpt>IEventHandlerResultValidator<ept id="p1">**</ept> interface, and injecting it into the <bpt id="p2">**</bpt>EventHandlerResult<ept id="p2">**</ept> class by instantiating the <bpt id="p3">**</bpt>EventHandlerResult<ept id="p3">**</ept> object using another new static constructor named <bpt id="p4">**</bpt>newWithResultValidator<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他の検証クラスは、クラスで <bpt id="p1">**</bpt>IEventHandlerResultValidator<ept id="p1">**</ept> インターフェイスを実装することにより実装され、<bpt id="p4">**</bpt>newWithResultValidator<ept id="p4">**</ept> という別の新しい静的コンストラクターを使って <bpt id="p3">**</bpt>EventHandlerResult<ept id="p3">**</ept> オブジェクトをインスタンス化することにより <bpt id="p2">**</bpt>EventHandlerResult<ept id="p2">**</ept> クラスに挿入できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>The constructor takes an argument of type <bpt id="p1">**</bpt>IEventHandlerResultValidator<ept id="p1">**</ept>, which makes it possible to inject any validator object as long as it implements the <bpt id="p2">**</bpt>IEventHandlerResultValidator<ept id="p2">**</ept> interface.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンストラクターは、<bpt id="p1">**</bpt>IEventHandlerResultValidator<ept id="p1">**</ept> 型の引数をとります。これにより <bpt id="p2">**</bpt>IEventHandlerResultValidator<ept id="p2">**</ept> インターフェイスを実装している限り、任意の検証オブジェクトを挿入できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>For example, the <bpt id="p1">**</bpt>newSingleResponse<ept id="p1">**</ept> static constructor simply delegates the instantiation to the <bpt id="p2">**</bpt>newWithResultValidator<ept id="p2">**</ept> static constructor like this.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">**</bpt>newSingleResponse<ept id="p1">**</ept> 静的コンストラクターは単にインスタンス化を <bpt id="p2">**</bpt>newWithResultValidator<ept id="p2">**</ept> 静的コンストラクターに委任し、次のようになります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Accept and reject request/response scenarios</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求/応答シナリオを承認して拒否する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>In certain request/response scenarios, the subscriber is only expected to provide their acceptance or rejection.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定の要求/応答シナリオでは、サブスクライバーは承認または拒否を提示することのみ期待されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Using the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> class to request acceptance/rejection can be confusing, if the subscriber is only expected to respond with a Boolean value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブスクライバーがブール値での応答のみを期待している場合、受入/拒否の要求に <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> クラスを使用することは分かりにくい可能性があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>In a validation scenario, for example, should the subscriber only respond with Boolean false, when validation fails, or should the subscriber also respond with Boolean true, if validation succeeds?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、検証シナリオで、検証が失敗した場合にサブスクライバーはブール値 false でのみ応答すべきか、また検証が成功した場合にサブスクライバーがブール値 true で応答すべきかがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>If the response is gathered using an <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> object, then the second subscriber that validates and replies with Boolean true, might overwrite the Boolean false from the first subscriber.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> オブジェクトを使用して応答が収集される場合、第二のサブスクライバーが true のブール値で検証し、応答すると、第一サブスクライバーの false のブール値が上書きされる可能性があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>To mitigate this confusion, two new result type classes have been introduced in Platform update 5: <bpt id="p1">**</bpt>EventHandlerAcceptResult<ept id="p1">**</ept> and <bpt id="p2">**</bpt>EventHandlerRejectResult<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この混乱を軽減するために、<bpt id="p1">**</bpt>EventHandlerAcceptResult<ept id="p1">**</ept> と <bpt id="p2">**</bpt>EventHandlerRejectResult<ept id="p2">**</ept> の 2 つの新しい結果型クラスがプラットフォーム更新プログラム 5 に導入されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>When using the <bpt id="p1">**</bpt>EventHandlerAcceptResult<ept id="p1">**</ept> class, the delegate handler method can only respond by calling the <bpt id="p2">**</bpt>accept<ept id="p2">**</ept> method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>EventHandlerAcceptResult<ept id="p1">**</ept> クラスを使用するとき、デリゲート ハンドラー メソッドは <bpt id="p2">**</bpt>承認<ept id="p2">**</ept> メソッドの呼び出しによってのみ応答できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>When using the <bpt id="p1">**</bpt>EventHandlerRejectResult<ept id="p1">**</ept> class, only the <bpt id="p2">**</bpt>reject<ept id="p2">**</ept> method can be called.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>EventHandlerRejectResult<ept id="p1">**</ept> クラスを使用するとき、<bpt id="p2">**</bpt>否認<ept id="p2">**</ept> メソッドのみを呼び出すことができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>The two new classes also contain a <bpt id="p1">**</bpt>newSingleResponse<ept id="p1">**</ept> static constructor for use in scenarios where, at most, one subscriber is allowed to respond with their rejection or acceptance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2 つの新しいクラスには、最大で 1 つのサブスクライバーが拒否または承認で応答するシナリオで使用するための <bpt id="p1">**</bpt>newSingleResponse<ept id="p1">**</ept> 静的コンストラクターも含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Whether any subscriber has responded can still be answered by querying the <bpt id="p1">**</bpt>hasResult<ept id="p1">**</ept> method, and the acceptance/rejection is queried by calling either the <bpt id="p2">**</bpt>isAccepted<ept id="p2">**</ept> or <bpt id="p3">**</bpt>isRejected<ept id="p3">**</ept> methods for the <bpt id="p4">**</bpt>EventHandlerAcceptResult<ept id="p4">**</ept> and <bpt id="p5">**</bpt>EventHandlerRejectResult<ept id="p5">**</ept> classes, respectively.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">いずれかのサブスクライバーが応答したかどうかは <bpt id="p1">**</bpt>hasResult<ept id="p1">**</ept> メソッドをクエリすることによってまだ回答できます。承認/否認は、<bpt id="p4">**</bpt>EventHandlerAcceptResult<ept id="p4">**</ept> および <bpt id="p5">**</bpt>EventHandlerRejectResult<ept id="p5">**</ept> クラスの <bpt id="p2">**</bpt>isAccepted<ept id="p2">**</ept> または <bpt id="p3">**</bpt>isRejected<ept id="p3">**</ept> のいずれかのメソッドをそれぞれ呼び出すことによってクエリされます。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: 要求または応答シナリオの EventHandlerResult クラス
+description: このトピックでは、デリゲート メソッドで EventHandlerResult クラスを使用する方法について説明します。
+author: RobinARH
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.assetid: 3b2a9b85-f779-4358-b347-7b11a8e7960c
+ms.search.region: Global
+ms.author: robinr
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 808601cf8736434d37306d48a389af1178238d4b
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544144"
+---
+# <a name="eventhandlerresult-classes-in-request-or-response-scenarios"></a><span data-ttu-id="23d8a-103">要求または応答シナリオの EventHandlerResult クラス</span><span class="sxs-lookup"><span data-stu-id="23d8a-103">EventHandlerResult classes in request or response scenarios</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="23d8a-104">デリゲート メソッドとデリゲート ハンドラー メソッドは、デリゲート呼び出しロジックがサブスクライバに応答を要求する要求/応答シナリオをサポートするために宣言することができます。</span><span class="sxs-lookup"><span data-stu-id="23d8a-104">Delegate methods and delegate handler methods can be declared to support a request/response scenario, where the delegate calling logic requests the subscribers to provide a response.</span></span> <span data-ttu-id="23d8a-105">このシナリオをサポートするために、**EventHandlerResult** クラスがパラメーターとして渡されることが最も多く、デリゲート ハンドラー メソッドがクラスの result メソッドの 1 つを使用して結果を提供します。</span><span class="sxs-lookup"><span data-stu-id="23d8a-105">To support this scenario the **EventHandlerResult** class is most often passed as a parameter, and the delegate handler methods provide their result using one of the result methods on the class.</span></span> <span data-ttu-id="23d8a-106">ただし、**EventHandlerResult** クラスは単一の結果のみを含むため、複数のサブスクライバが個々の結果を提供する場合は、最後の回答者が獲得し、前のサブスクライバからの結果が上書きされます。</span><span class="sxs-lookup"><span data-stu-id="23d8a-106">However, the **EventHandlerResult** class can only contain a single result, so if multiple subscribers provide their individual result, the last respondent wins, and the results from the previous subscribers are overwritten.</span></span>
+
+<span data-ttu-id="23d8a-107">このトピックで説明されている機能が導入される前 (プラットフォーム更新プログラム 5) は、最大でも単一のサブスクライバーが結果を提供し、複数のサブスクライバーが存在すると結果が失われないことを保証するメカニズムはありませんでした。</span><span class="sxs-lookup"><span data-stu-id="23d8a-107">Before the functionality described in this topic was introduced (platform update 5), there was no mechanism to ensure that, at most, a single subscriber provided a result, and that no results were lost if there were multiple subscribers.</span></span>
+
+## <a name="ensuring-at-most-one-response"></a><span data-ttu-id="23d8a-108">最大で 1 つの応答を確認</span><span class="sxs-lookup"><span data-stu-id="23d8a-108">Ensuring, at most, one response</span></span>
+
+<span data-ttu-id="23d8a-109">プラットフォーム更新プログラム 5 では、1 つ以上のサブスクライバーが結果を提示している場合にロジックが失敗することを確認する追加の静的コンストラクターが、**EventHandlerResult** クラスにあります。</span><span class="sxs-lookup"><span data-stu-id="23d8a-109">In platform update 5, the **EventHandlerResult** class has an additional static constructor which ensures that the logic fails if more than one subscriber provides a result.</span></span> <span data-ttu-id="23d8a-110">新しいコンストラクターの名前は、**newSingleResponse**。</span><span class="sxs-lookup"><span data-stu-id="23d8a-110">The new constructor is named **newSingleResponse**.</span></span> <span data-ttu-id="23d8a-111">このメソッドを使用して **EventHandlerResult** オブジェクトをインスタンス化したとき、2 番目のデリゲート ハンドラー メソッドが結果を提供しようとすると、このフレームワークはただちに例外をスローします。</span><span class="sxs-lookup"><span data-stu-id="23d8a-111">When instantiating an **EventHandlerResult** object using this method, the framework will throw an exception as soon as a second delegate handler method attempts to provide a result.</span></span>
+
+```
+    EventHandlerResult result = EventHandlerResult::newSingleResponse();
+    this.validateWarehouseTypeDelegate(this.WarehouseType, result);
+```
+
+## <a name="ieventhandlerresultvalidator-interface"></a><span data-ttu-id="23d8a-112">IEventHandlerResultValidator インターフェイス</span><span class="sxs-lookup"><span data-stu-id="23d8a-112">IEventHandlerResultValidator interface</span></span>
+
+<span data-ttu-id="23d8a-113">**EventHandlerResult** クラスの検証は、**IEventHandlerResultValidator** インターフェイスを実装するタイプのオブジェクトを挿入することで処理されます。</span><span class="sxs-lookup"><span data-stu-id="23d8a-113">The validation in the **EventHandlerResult** class is handled by injecting an object of a type that implements the **IEventHandlerResultValidator** interface.</span></span> <span data-ttu-id="23d8a-114">**newSingleResponse** 静的コンストラクターを使用して **EventHandlerResult** オブジェクトをインスタンス化するとき、**EventHandlerSingleResponseValidator** オブジェクトがインスタンス化されて **EventHandlerResult** オブジェクトに挿入され、その挿入されたオブジェクトが **EventhandlerResult** オブジェクトに提供される結果の検証を担当します。</span><span class="sxs-lookup"><span data-stu-id="23d8a-114">When instantiating the **EventHandlerResult** object using the **newSingleResponse** static constructor, an **EventHandlerSingleResponseValidator** object is instantiated and injected into the **EventHandlerResult** object, and the injected object becomes responsible for validating any result provided to the **EventhandlerResult** object.</span></span> <span data-ttu-id="23d8a-115">他の検証クラスは、クラスで **IEventHandlerResultValidator** インターフェイスを実装することにより実装され、**newWithResultValidator** という別の新しい静的コンストラクターを使って **EventHandlerResult** オブジェクトをインスタンス化することにより **EventHandlerResult** クラスに挿入できます。</span><span class="sxs-lookup"><span data-stu-id="23d8a-115">Other validation classes can be implemented by having the class implement the **IEventHandlerResultValidator** interface, and injecting it into the **EventHandlerResult** class by instantiating the **EventHandlerResult** object using another new static constructor named **newWithResultValidator**.</span></span> <span data-ttu-id="23d8a-116">コンストラクターは、**IEventHandlerResultValidator** 型の引数をとります。これにより **IEventHandlerResultValidator** インターフェイスを実装している限り、任意の検証オブジェクトを挿入できます。</span><span class="sxs-lookup"><span data-stu-id="23d8a-116">The constructor takes an argument of type **IEventHandlerResultValidator**, which makes it possible to inject any validator object as long as it implements the **IEventHandlerResultValidator** interface.</span></span>
+
+<span data-ttu-id="23d8a-117">たとえば、**newSingleResponse** 静的コンストラクターは単にインスタンス化を **newWithResultValidator** 静的コンストラクターに委任し、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="23d8a-117">For example, the **newSingleResponse** static constructor simply delegates the instantiation to the **newWithResultValidator** static constructor like this.</span></span>
+
+```
+    return EventHandlerResult::newWithResultValidator(EventHandlerSingleResponseValidator::construct());
+```
+
+## <a name="accept-and-reject-requestresponse-scenarios"></a><span data-ttu-id="23d8a-118">要求/応答シナリオを承認して拒否する</span><span class="sxs-lookup"><span data-stu-id="23d8a-118">Accept and reject request/response scenarios</span></span>
+
+<span data-ttu-id="23d8a-119">特定の要求/応答シナリオでは、サブスクライバーは承認または拒否を提示することのみ期待されます。</span><span class="sxs-lookup"><span data-stu-id="23d8a-119">In certain request/response scenarios, the subscriber is only expected to provide their acceptance or rejection.</span></span> <span data-ttu-id="23d8a-120">サブスクライバーがブール値での応答のみを期待している場合、受入/拒否の要求に **EventHandlerResult** クラスを使用することは分かりにくい可能性があります。</span><span class="sxs-lookup"><span data-stu-id="23d8a-120">Using the **EventHandlerResult** class to request acceptance/rejection can be confusing, if the subscriber is only expected to respond with a Boolean value.</span></span> <span data-ttu-id="23d8a-121">たとえば、検証シナリオで、検証が失敗した場合にサブスクライバーはブール値 false でのみ応答すべきか、また検証が成功した場合にサブスクライバーがブール値 true で応答すべきかがあります。</span><span class="sxs-lookup"><span data-stu-id="23d8a-121">In a validation scenario, for example, should the subscriber only respond with Boolean false, when validation fails, or should the subscriber also respond with Boolean true, if validation succeeds?</span></span> <span data-ttu-id="23d8a-122">**EventHandlerResult** オブジェクトを使用して応答が収集される場合、第二のサブスクライバーが true のブール値で検証し、応答すると、第一サブスクライバーの false のブール値が上書きされる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="23d8a-122">If the response is gathered using an **EventHandlerResult** object, then the second subscriber that validates and replies with Boolean true, might overwrite the Boolean false from the first subscriber.</span></span>
+
+<span data-ttu-id="23d8a-123">この混乱を軽減するために、**EventHandlerAcceptResult** と **EventHandlerRejectResult** の 2 つの新しい結果型クラスがプラットフォーム更新プログラム 5 に導入されました。</span><span class="sxs-lookup"><span data-stu-id="23d8a-123">To mitigate this confusion, two new result type classes have been introduced in Platform update 5: **EventHandlerAcceptResult** and **EventHandlerRejectResult**.</span></span>
+
+<span data-ttu-id="23d8a-124">**EventHandlerAcceptResult** クラスを使用するとき、デリゲート ハンドラー メソッドは **承認** メソッドの呼び出しによってのみ応答できます。</span><span class="sxs-lookup"><span data-stu-id="23d8a-124">When using the **EventHandlerAcceptResult** class, the delegate handler method can only respond by calling the **accept** method.</span></span> <span data-ttu-id="23d8a-125">**EventHandlerRejectResult** クラスを使用するとき、**否認** メソッドのみを呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="23d8a-125">When using the **EventHandlerRejectResult** class, only the **reject** method can be called.</span></span>
+
+```
+    [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
+    public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(
+        InventLocationType _inventLocationType, 
+        EventHandlerAcceptResult _result)
+    {
+        switch (_inventLocationType)
+        {
+            case InventLocationType::Standard: 
+            case InventLocationType::Quarantine: 
+            case InventLocationType::Transit: 
+                _result.accept(); 
+                break; 
+        }     
+    }
+```
+
+<span data-ttu-id="23d8a-126">2 つの新しいクラスには、最大で 1 つのサブスクライバーが拒否または承認で応答するシナリオで使用するための **newSingleResponse** 静的コンストラクターも含まれています。</span><span class="sxs-lookup"><span data-stu-id="23d8a-126">The two new classes also contain a **newSingleResponse** static constructor for use in scenarios where, at most, one subscriber is allowed to respond with their rejection or acceptance.</span></span> <span data-ttu-id="23d8a-127">いずれかのサブスクライバーが応答したかどうかは **hasResult** メソッドをクエリすることによってまだ回答できます。承認/否認は、**EventHandlerAcceptResult** および **EventHandlerRejectResult** クラスの **isAccepted** または **isRejected** のいずれかのメソッドをそれぞれ呼び出すことによってクエリされます。</span><span class="sxs-lookup"><span data-stu-id="23d8a-127">Whether any subscriber has responded can still be answered by querying the **hasResult** method, and the acceptance/rejection is queried by calling either the **isAccepted** or **isRejected** methods for the **EventHandlerAcceptResult** and **EventHandlerRejectResult** classes, respectively.</span></span>
+
+```
+    boolean ret = false;
+    EventHandlerAcceptResult result = EventHandlerAcceptResult::newSingleResponse(); 
+    this.validateWarehouseTypeDelegate(this.WarehouseType, result);
+    if (result.hasResult())
+    {
+        ret = result.isAccepted();
+    }
+```

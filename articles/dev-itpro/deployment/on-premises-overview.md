@@ -1,150 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="on-premises-overview.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>on-premises-overview.594850.086449be8a41aa121a22931496bf658ab67d7c77.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>086449be8a41aa121a22931496bf658ab67d7c77</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\deployment\on-premises-overview.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>On-premises deployment option</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置のオプション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>Dynamics 365 for Finance and Operations now supports running business processes in customer data centers with the on-premises or Local Business Data (LBD) deployment option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations は、オンプレミスまたはローカル ビジネス データ (LBD) の展開オプションを使用して、顧客データ センターでビジネス プロセスを実行することをサポートします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>On-premises deployment option</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置のオプション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Microsoft Dynamics 365 for Finance and Operations, now supports running business processes in customer data centers with the on-premises deployment option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations は、オンプレミスの展開オプションを使用して、顧客データ センターでビジネス プロセスを実行することをサポートします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Customers and partners will utilize Microsoft Dynamics Lifecycle Services (LCS) to manage their on-premises deployments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客およびパートナーは、Microsoft Dynamics Lifecycle Services (LCS) を利用して、社内展開を管理します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>LCS is an application management portal that provides tools and services for managing the application lifecycle of your Microsoft Dynamics 365 for Finance and Operations implementations in the cloud and on-premises.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS は、クラウドおよびオンプレミスでの Microsoft Dynamics 365 for Finance and Operations 実装のアプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>LCS features, such as business process modeling, software deployment and patching, and monitoring and diagnostics, are used to help support on-premises deployments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">業務プロセス モデリング、ソフトウェアの展開および修正、監視および診断などの LCS の機能は、オンプレミス配置をサポートするために使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーキテクチャ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>The on-premises deployment option uses Finance and Operations cloud components running on-premises using Microsoft Azure Server Service Fabric standalone clusters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置オプションは、Microsoft Azure Server Service Fabric スタンドアロン クラスターを使用して、オンプレミスで実行される Finance and Operations クラウド コンポーネントを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Service Fabric is the next-generation Microsoft middleware platform for building and managing enterprise-class high-scale applications.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric は、企業規模の大規模なアプリケーションを構築および管理するための次世代の Microsoft ミドルウェア プラットフォームです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Service Fabric standalone clusters can be deployed on any computer that is running Windows Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric スタンドアロン クラスターは、Windows Server を実行しているどのコンピューターにも展開することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>On-premises deployment defines two types of Service Fabric standalone clusters: clusters for production environments and clusters for sandbox environments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミスの設置では、製造環境用クラスターとサンドボックス環境用クラスターの2つのタイプの Service Fabric スタンドアロン クラスターを定義します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>The following roles or node types are deployed into both types of clusters:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">両方のタイプのクラスターに、次のロールまたはノード タイプが配置されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Application Object Servers (AOS) – Provides the ability to run the Finance and Operations application functionality in client, batch, and import/export scenarios.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Application Object Servers (AOS) – Finance and Operations アプリケーション機能をクライアント、バッチ、およびインポート/エクスポートのシナリオで実行する機能を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Management Reporter (MR) – Provides financial reporting functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter (MR) – 財務レポートの機能を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>SQL Server Reporting Services (SSRS) – Provides document reporting functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server Reporting Services (SSRS): ドキュメント レポート機能を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Environment Orchestrator – Enables on-premises environment management from LCS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境オーケストレータ – LCS からオンプレミス環境管理を有効にします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Figure 1 shows a logical diagram of the node types deployed in a Service Fabric standalone cluster.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">図 1 は、Service Fabric スタンドアロン クラスターで配置されるノード タイプの論理的な図を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Service fabric standalone cluster<ept id="p1">](./media/on-premises-overview-01.png)](./media/on-premises-overview-01.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Service fabric スタンドアロン クラスター<ept id="p1">](./media/on-premises-overview-01.png)](./media/on-premises-overview-01.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Application lifecycle management for on-premises deployments is orchestrated through LCS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置のアプリケーション ライフサイクル管理は、LCS を通じて調整されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Customers can use the proven tools and methodologies in LCS to help manage their on-premises deployments (Figure 2).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客は、LCS の実績のあるツールと方法を使用して、社内展開を管理することができます (図2)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>The development experience continues to be the same as in cloud deployments through 1-box VHDs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発経験は、1 ボックス VHD によるクラウド配置と同じです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Application lifecycle management for Local Business Data deployments<ept id="p1">](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>ローカル ビジネス データ展開のアプリケーション ライフ サイクル管理<ept id="p1">](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Data storage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ストレージ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The on-premises deployment option stores core customer data on-premises.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置オプションは、オンプレミスのコア顧客データを格納します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Core customer data is a subset of the customer data definition provided in the <bpt id="p1">[</bpt>Microsoft Trust Center<ept id="p1">](https://www.microsoft.com/en-us/trustcenter/privacy/how-microsoft-defines-customer-data)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コア顧客データは、<bpt id="p1">[</bpt>Microsoft Trust Center<ept id="p1">](https://www.microsoft.com/en-us/trustcenter/privacy/how-microsoft-defines-customer-data)</ept> で提供される顧客データ定義のサブセットです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Table 1 outlines the categories of customer data that are stored in Microsoft Azure data centers located in the United States by services such as LCS, Azure Active Directory, and Microsoft Office signup portal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表 1 では、LCS、Azure Active Directory、および Microsoft Office のサインアップ ポータルなどのサービスにより、米国内にある Microsoft Azure データ センターに格納されている顧客データのカテゴリについて説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>All other customer data, referred to as core customer data, is stored on-premises.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コア顧客データと呼ばれる他のすべての顧客データは、オンプレミスに保管されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Table 1: Customer data stored in Microsoft Azure data centers located in the United States by services supporting on-premises environments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表 1: オンプレミス環境をサポートするサービスによって、米国内にある Microsoft Azure データ センターに格納されている顧客データ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>These services enable initial onboarding, initiation, and tracking of support incidents, and service updates and upgrades.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのサービスにより、サポート インシデントの初期オンボーディング、開始、追跡、サービスの更新とアップグレードが可能になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Supporting services</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サポート サービス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Customer data definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客データの定義</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Microsoft Dynamics Lifecycle Services</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics Lifecycle Services</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Project content and files are stored in a project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトには、プロジェクトのコンテンツおよびファイルが格納されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>This includes application configuration data, code, metadata, and data assets that comprise the application and business process models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これには、アプリケーション構成データ、コード、メタデータ、アプリケーションやビジネス プロセス モデルを構成するデータ アセットが含まれます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Also included is anonymized user activity logs and information that is collected during the onboarding process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">匿名化されたユーザー活動ログおよびオンボーディング プロセス中に収集された情報に含まれます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Microsoft Office signup portal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Office サインアップ ポータル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Customer information that is collected during the onboarding process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンボード プロセス中に収集された顧客情報。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Microsoft Azure Active Directory</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Azure Active Directory</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Authentication for LCS and Azure DevOps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS と Azure DevOps の認証。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Additional services or components can be configured to extend an on-premises deployment as needed; however, configuration choices may cause core customer data to be transferred outside of the customer’s data center.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加のサービスまたはコンポーネントは、必要に応じてオンプレミス配置を拡張するためにコンフィギュレーションすることができます。ただし、コンフィギュレーションの選択により、コア顧客データが顧客データ センターの外部に転送される可能性があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>For example, configuring data management features that are used to integrate external services with an on-premises deployment may result in the transfer of core customer data outside the on-premises deployment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、オンプレミス配置の外部サービスを統合するために使用されるデータ管理機能のコンフィギュレーションにより、オンプレミス配置外のコア顧客データが転送される可能性があります。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: オンプレミス配置のオプション
+description: Dynamics 365 for Finance and Operations は、オンプレミスまたはローカル ビジネス データ (LBD) の展開オプションを使用して、顧客データ センターでビジネス プロセスを実行することをサポートします。
+author: kfend
+manager: AnnBe
+ms.date: 11/16/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer, IT Pro
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 60373
+ms.assetid: ''
+ms.search.region: Global
+ms.author: arifk
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: Platform Update 8
+ms.openlocfilehash: 086449be8a41aa121a22931496bf658ab67d7c77
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550938"
+---
+# <a name="on-premises-deployment-option"></a><span data-ttu-id="e5c04-103">オンプレミス配置のオプション</span><span class="sxs-lookup"><span data-stu-id="e5c04-103">On-premises deployment option</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="e5c04-104">Microsoft Dynamics 365 for Finance and Operations は、オンプレミスの展開オプションを使用して、顧客データ センターでビジネス プロセスを実行することをサポートします。</span><span class="sxs-lookup"><span data-stu-id="e5c04-104">Microsoft Dynamics 365 for Finance and Operations, now supports running business processes in customer data centers with the on-premises deployment option.</span></span> <span data-ttu-id="e5c04-105">この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。</span><span class="sxs-lookup"><span data-stu-id="e5c04-105">With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center.</span></span> <span data-ttu-id="e5c04-106">顧客およびパートナーは、Microsoft Dynamics Lifecycle Services (LCS) を利用して、社内展開を管理します。</span><span class="sxs-lookup"><span data-stu-id="e5c04-106">Customers and partners will utilize Microsoft Dynamics Lifecycle Services (LCS) to manage their on-premises deployments.</span></span> <span data-ttu-id="e5c04-107">LCS は、クラウドおよびオンプレミスでの Microsoft Dynamics 365 for Finance and Operations 実装のアプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。</span><span class="sxs-lookup"><span data-stu-id="e5c04-107">LCS is an application management portal that provides tools and services for managing the application lifecycle of your Microsoft Dynamics 365 for Finance and Operations implementations in the cloud and on-premises.</span></span> <span data-ttu-id="e5c04-108">業務プロセス モデリング、ソフトウェアの展開および修正、監視および診断などの LCS の機能は、オンプレミス配置をサポートするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="e5c04-108">LCS features, such as business process modeling, software deployment and patching, and monitoring and diagnostics, are used to help support on-premises deployments.</span></span> 
+> [!IMPORTANT]
+> <span data-ttu-id="e5c04-109">Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置。</span><span class="sxs-lookup"><span data-stu-id="e5c04-109">On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure.</span></span> 
+
+## <a name="architecture"></a><span data-ttu-id="e5c04-110">アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="e5c04-110">Architecture</span></span> 
+
+<span data-ttu-id="e5c04-111">オンプレミス配置オプションは、Microsoft Azure Server Service Fabric スタンドアロン クラスターを使用して、オンプレミスで実行される Finance and Operations クラウド コンポーネントを使用します。</span><span class="sxs-lookup"><span data-stu-id="e5c04-111">The on-premises deployment option uses Finance and Operations cloud components running on-premises using Microsoft Azure Server Service Fabric standalone clusters.</span></span> <span data-ttu-id="e5c04-112">Service Fabric は、企業規模の大規模なアプリケーションを構築および管理するための次世代の Microsoft ミドルウェア プラットフォームです。</span><span class="sxs-lookup"><span data-stu-id="e5c04-112">Service Fabric is the next-generation Microsoft middleware platform for building and managing enterprise-class high-scale applications.</span></span> <span data-ttu-id="e5c04-113">Service Fabric スタンドアロン クラスターは、Windows Server を実行しているどのコンピューターにも展開することができます。</span><span class="sxs-lookup"><span data-stu-id="e5c04-113">Service Fabric standalone clusters can be deployed on any computer that is running Windows Server.</span></span> 
+
+<span data-ttu-id="e5c04-114">オンプレミスの設置では、製造環境用クラスターとサンドボックス環境用クラスターの2つのタイプの Service Fabric スタンドアロン クラスターを定義します。</span><span class="sxs-lookup"><span data-stu-id="e5c04-114">On-premises deployment defines two types of Service Fabric standalone clusters: clusters for production environments and clusters for sandbox environments.</span></span> <span data-ttu-id="e5c04-115">両方のタイプのクラスターに、次のロールまたはノード タイプが配置されます。</span><span class="sxs-lookup"><span data-stu-id="e5c04-115">The following roles or node types are deployed into both types of clusters:</span></span> 
+
+- <span data-ttu-id="e5c04-116">Application Object Servers (AOS) – Finance and Operations アプリケーション機能をクライアント、バッチ、およびインポート/エクスポートのシナリオで実行する機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="e5c04-116">Application Object Servers (AOS) – Provides the ability to run the Finance and Operations application functionality in client, batch, and import/export scenarios.</span></span> 
+- <span data-ttu-id="e5c04-117">Management Reporter (MR) – 財務レポートの機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="e5c04-117">Management Reporter (MR) – Provides financial reporting functionality.</span></span> 
+- <span data-ttu-id="e5c04-118">SQL Server Reporting Services (SSRS): ドキュメント レポート機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="e5c04-118">SQL Server Reporting Services (SSRS) – Provides document reporting functionality.</span></span> 
+- <span data-ttu-id="e5c04-119">環境オーケストレータ – LCS からオンプレミス環境管理を有効にします。</span><span class="sxs-lookup"><span data-stu-id="e5c04-119">Environment Orchestrator – Enables on-premises environment management from LCS.</span></span> 
+
+<span data-ttu-id="e5c04-120">図 1 は、Service Fabric スタンドアロン クラスターで配置されるノード タイプの論理的な図を示します。</span><span class="sxs-lookup"><span data-stu-id="e5c04-120">Figure 1 shows a logical diagram of the node types deployed in a Service Fabric standalone cluster.</span></span> 
+
+<span data-ttu-id="e5c04-121">[![Service fabric スタンドアロン クラスター](./media/on-premises-overview-01.png)](./media/on-premises-overview-01.png)</span><span class="sxs-lookup"><span data-stu-id="e5c04-121">[![Service fabric standalone cluster](./media/on-premises-overview-01.png)](./media/on-premises-overview-01.png)</span></span>
+
+<span data-ttu-id="e5c04-122">オンプレミス配置のアプリケーション ライフサイクル管理は、LCS を通じて調整されます。</span><span class="sxs-lookup"><span data-stu-id="e5c04-122">Application lifecycle management for on-premises deployments is orchestrated through LCS.</span></span> <span data-ttu-id="e5c04-123">顧客は、LCS の実績のあるツールと方法を使用して、社内展開を管理することができます (図2)。</span><span class="sxs-lookup"><span data-stu-id="e5c04-123">Customers can use the proven tools and methodologies in LCS to help manage their on-premises deployments (Figure 2).</span></span> <span data-ttu-id="e5c04-124">開発経験は、1 ボックス VHD によるクラウド配置と同じです。</span><span class="sxs-lookup"><span data-stu-id="e5c04-124">The development experience continues to be the same as in cloud deployments through 1-box VHDs.</span></span> 
+
+<span data-ttu-id="e5c04-125">[![ローカル ビジネス データ展開のアプリケーション ライフ サイクル管理](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)</span><span class="sxs-lookup"><span data-stu-id="e5c04-125">[![Application lifecycle management for Local Business Data deployments](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)</span></span>
+
+## <a name="data-storage"></a><span data-ttu-id="e5c04-126">データ ストレージ</span><span class="sxs-lookup"><span data-stu-id="e5c04-126">Data storage</span></span> 
+<span data-ttu-id="e5c04-127">オンプレミス配置オプションは、オンプレミスのコア顧客データを格納します。</span><span class="sxs-lookup"><span data-stu-id="e5c04-127">The on-premises deployment option stores core customer data on-premises.</span></span> <span data-ttu-id="e5c04-128">コア顧客データは、[Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/privacy/how-microsoft-defines-customer-data) で提供される顧客データ定義のサブセットです。</span><span class="sxs-lookup"><span data-stu-id="e5c04-128">Core customer data is a subset of the customer data definition provided in the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/privacy/how-microsoft-defines-customer-data).</span></span> <span data-ttu-id="e5c04-129">表 1 では、LCS、Azure Active Directory、および Microsoft Office のサインアップ ポータルなどのサービスにより、米国内にある Microsoft Azure データ センターに格納されている顧客データのカテゴリについて説明します。</span><span class="sxs-lookup"><span data-stu-id="e5c04-129">Table 1 outlines the categories of customer data that are stored in Microsoft Azure data centers located in the United States by services such as LCS, Azure Active Directory, and Microsoft Office signup portal.</span></span> <span data-ttu-id="e5c04-130">コア顧客データと呼ばれる他のすべての顧客データは、オンプレミスに保管されます。</span><span class="sxs-lookup"><span data-stu-id="e5c04-130">All other customer data, referred to as core customer data, is stored on-premises.</span></span>  
+
+<span data-ttu-id="e5c04-131">表 1: オンプレミス環境をサポートするサービスによって、米国内にある Microsoft Azure データ センターに格納されている顧客データ。</span><span class="sxs-lookup"><span data-stu-id="e5c04-131">Table 1: Customer data stored in Microsoft Azure data centers located in the United States by services supporting on-premises environments.</span></span> <span data-ttu-id="e5c04-132">これらのサービスにより、サポート インシデントの初期オンボーディング、開始、追跡、サービスの更新とアップグレードが可能になります。</span><span class="sxs-lookup"><span data-stu-id="e5c04-132">These services enable initial onboarding, initiation, and tracking of support incidents, and service updates and upgrades.</span></span>  
+
+
+| <span data-ttu-id="e5c04-133">サポート サービス</span><span class="sxs-lookup"><span data-stu-id="e5c04-133">Supporting services</span></span>                   | <span data-ttu-id="e5c04-134">顧客データの定義</span><span class="sxs-lookup"><span data-stu-id="e5c04-134">Customer data definition</span></span>                                                                                                                                                                                                                                                            |
+|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="e5c04-135">Microsoft Dynamics Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="e5c04-135">Microsoft Dynamics Lifecycle Services</span></span> | <span data-ttu-id="e5c04-136">プロジェクトには、プロジェクトのコンテンツおよびファイルが格納されます。</span><span class="sxs-lookup"><span data-stu-id="e5c04-136">Project content and files are stored in a project.</span></span> <span data-ttu-id="e5c04-137">これには、アプリケーション構成データ、コード、メタデータ、アプリケーションやビジネス プロセス モデルを構成するデータ アセットが含まれます。</span><span class="sxs-lookup"><span data-stu-id="e5c04-137">This includes application configuration data, code, metadata, and data assets that comprise the application and business process models.</span></span> <span data-ttu-id="e5c04-138">匿名化されたユーザー活動ログおよびオンボーディング プロセス中に収集された情報に含まれます。</span><span class="sxs-lookup"><span data-stu-id="e5c04-138">Also included is anonymized user activity logs and information that is collected during the onboarding process.</span></span> |
+| <span data-ttu-id="e5c04-139">Microsoft Office サインアップ ポータル</span><span class="sxs-lookup"><span data-stu-id="e5c04-139">Microsoft Office signup portal</span></span>        | <span data-ttu-id="e5c04-140">オンボード プロセス中に収集された顧客情報。</span><span class="sxs-lookup"><span data-stu-id="e5c04-140">Customer information that is collected during the onboarding process.</span></span>                                                                                                                                                                                                                                 |
+| <span data-ttu-id="e5c04-141">Microsoft Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="e5c04-141">Microsoft Azure Active Directory</span></span>      | <span data-ttu-id="e5c04-142">LCS と Azure DevOps の認証。</span><span class="sxs-lookup"><span data-stu-id="e5c04-142">Authentication for LCS and Azure DevOps.</span></span>                                                                                                                                                                                                               |
+  
+
+<span data-ttu-id="e5c04-143">追加のサービスまたはコンポーネントは、必要に応じてオンプレミス配置を拡張するためにコンフィギュレーションすることができます。ただし、コンフィギュレーションの選択により、コア顧客データが顧客データ センターの外部に転送される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e5c04-143">Additional services or components can be configured to extend an on-premises deployment as needed; however, configuration choices may cause core customer data to be transferred outside of the customer’s data center.</span></span> <span data-ttu-id="e5c04-144">たとえば、オンプレミス配置の外部サービスを統合するために使用されるデータ管理機能のコンフィギュレーションにより、オンプレミス配置外のコア顧客データが転送される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e5c04-144">For example, configuring data management features that are used to integrate external services with an on-premises deployment may result in the transfer of core customer data outside the on-premises deployment.</span></span> 
