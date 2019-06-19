@@ -75,7 +75,7 @@ ms.locfileid: "1569409"
 ### <a name="set-up-reason-codes-for-products"></a><span data-ttu-id="74601-138">製品の理由コードの設定</span><span class="sxs-lookup"><span data-stu-id="74601-138">Set up reason codes for products</span></span>
 
 1. <span data-ttu-id="74601-139">**製品情報管理** \> **製品** \> **リリースされた製品** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="74601-139">Select **Product information management** \> **Products** \> **Released products**.</span></span>
-2. <span data-ttu-id="74601-140"> *\*倉庫** タブで *\*棚卸理由コード ポリシー** を選択し、次に以下のオプションのいずれかを選択します。</span><span class="sxs-lookup"><span data-stu-id="74601-140">On the **Product** tab, select **Counting reason code policy**, and then select one of the following options:</span></span>
+2. <span data-ttu-id="74601-140"> **倉庫** タブで **棚卸理由コード ポリシー** を選択し、次に以下のオプションのいずれかを選択します。</span><span class="sxs-lookup"><span data-stu-id="74601-140">On the **Product** tab, select **Counting reason code policy**, and then select one of the following options:</span></span>
 
     - <span data-ttu-id="74601-141">**空白** – 棚卸仕訳帳が製品に対して必須かどうかを決定するために、倉庫に対して設定されるパラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="74601-141">**Blank** – The parameter that is set up for the warehouse is used to determine whether counting journals are mandatory for the product.</span></span>
     - <span data-ttu-id="74601-142">**必須** – 製品の棚卸仕訳帳では、理由コードは常に必要です。</span><span class="sxs-lookup"><span data-stu-id="74601-142">**Mandatory** – A reason code is always required on counting journals for the product.</span></span> <span data-ttu-id="74601-143">この設定は、倉庫レベルで任意の理由コード設定を上書きします。</span><span class="sxs-lookup"><span data-stu-id="74601-143">This setting overrides any reason code setting at the warehouse level.</span></span>

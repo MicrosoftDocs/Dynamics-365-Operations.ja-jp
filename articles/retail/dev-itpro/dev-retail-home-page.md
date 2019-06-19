@@ -1,303 +1,141 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="dev-retail-home-page.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>dev-retail-home-page.c994ba.6dda3fc3a16a05cce5959b329c57e74aac98c617.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>6dda3fc3a16a05cce5959b329c57e74aac98c617</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\dev-itpro\dev-retail-home-page.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Retail for IT pros and developers home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IT プロおよび開発者向けのホーム ページ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This page lists the resources that are available for IT pros and developers who support Retail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このページには、IT プロと Retail をサポートする開発者が利用できるリソースが一覧表示されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Retail for IT pros and developers home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IT プロおよび開発者向けのホーム ページ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This page lists the resources that are available for IT pros and developers who support Retail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このページには、IT プロと Retail をサポートする開発者が利用できるリソースが一覧表示されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Retail is dependent on Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail は、Finance and Operations に依存しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>We recommend that you familiarize yourself with the core <bpt id="p1">[</bpt>deployment and development content<ept id="p1">](../../dev-itpro/index.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">中核となる<bpt id="p1">[</bpt>配置と開発コンテンツ<ept id="p1">](../../dev-itpro/index.md)</ept>を把握しておくことをお勧めします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Retail components and architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売コンポーネントとアーキテクチャ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source><bpt id="p1">[</bpt>Components of Dynamics 365 for Retail<ept id="p1">](../retail-components.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Dynamics 365 for Retail のコンポーネント<ept id="p1">](../retail-components.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">[</bpt>MPOS architecture<ept id="p1">](retail-modern-pos-architecture.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>MPOS アーキテクチャ<ept id="p1">](retail-modern-pos-architecture.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source><bpt id="p1">[</bpt>Retail Server architecture<ept id="p1">](retail-server-architecture.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>レポート サーバーのアーキテクチャ<ept id="p1">](retail-server-architecture.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><bpt id="p1">[</bpt>Retail online store publishing architecture<ept id="p1">](retail-online-store-publishing-architecture.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>小売オンライン ストア発行アーキテクチャ<ept id="p1">](retail-online-store-publishing-architecture.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt>Retail Channel Performance Power BI  content<ept id="p1">](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Channel Performance Power BI コンテンツ<ept id="p1">](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Retail deployment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売の配置</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">[</bpt>Retail Modern POS configuration and installation<ept id="p1">](../retail-modern-pos-device-activation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Modern POS のコンフィギュレーションとインストール<ept id="p1">](../retail-modern-pos-device-activation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">[</bpt>Manage Retail accounts and devices from headquarters<ept id="p1">](../set-up-activation-accounts-validate-devices-hq.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>本社からの Retail アカウントとデバイスの管理<ept id="p1">](../set-up-activation-accounts-validate-devices-hq.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">[</bpt>Retail POS device activation<ept id="p1">](retail-device-activation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail POS デバイスのライセンス認証<ept id="p1">](retail-device-activation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">[</bpt>Install the POS Layout designer<ept id="p1">](../install-pos-layout-designer.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>POS のレイアウト デザイナーのインストール<ept id="p1">](../install-pos-layout-designer.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source><bpt id="p1">[</bpt>Retail Hardware Station configuration and installation<ept id="p1">](../retail-hardware-station-configuration-installation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Hardware Station のコンフィギュレーションとインストール<ept id="p1">](../retail-hardware-station-configuration-installation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source><bpt id="p1">[</bpt>Retail Store Scale Unit configuration and installation<ept id="p1">](retail-store-scale-unit-configuration-installation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Store Scale Unit のコンフィギュレーションとインストール<ept id="p1">](retail-store-scale-unit-configuration-installation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">[</bpt>Retail component events for diagnostics and troubleshooting<ept id="p1">](retail-component-events-diagnostics-troubleshooting.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>診断とトラブルシューティングの Retail コンポーネント イベント<ept id="p1">](retail-component-events-diagnostics-troubleshooting.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source><bpt id="p1">[</bpt>Access instances<ept id="p1">](../../dev-itpro/dev-tools/access-instances.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>アクセス インスタンス<ept id="p1">](../../dev-itpro/dev-tools/access-instances.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Point of Sale (POS)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売時点管理 (POS)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source><bpt id="p1">[</bpt>Retail Modern POS configuration and installation<ept id="p1">](../retail-modern-pos-device-activation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Modern POS のコンフィギュレーションとインストール<ept id="p1">](../retail-modern-pos-device-activation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source><bpt id="p1">[</bpt>Manage Retail accounts and devices from headquarters<ept id="p1">](../set-up-activation-accounts-validate-devices-hq.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>本社からの Retail アカウントとデバイスの管理<ept id="p1">](../set-up-activation-accounts-validate-devices-hq.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">[</bpt>Retail POS device activation<ept id="p1">](retail-device-activation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail POS デバイスのライセンス認証<ept id="p1">](retail-device-activation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source><bpt id="p1">[</bpt>Security best practices for Retail Cloud POS in a shared environment<ept id="p1">](secure-retail-cloud-pos.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>共有環境における Retail Cloud POS のセキュリティのベスト プラクティス<ept id="p1">](secure-retail-cloud-pos.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source><bpt id="p1">[</bpt>External gift card support<ept id="p1">](gift-card.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>外部ギフト カードのサポート<ept id="p1">](gift-card.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Customize POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズ POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source><bpt id="p1">[</bpt>Retail POS screen layouts<ept id="p1">](../pos-screen-layouts.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail POS 画面レイアウト<ept id="p1">](../pos-screen-layouts.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">[</bpt>Install the POS Layout designer<ept id="p1">](../install-pos-layout-designer.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>POS のレイアウト デザイナーのインストール<ept id="p1">](../install-pos-layout-designer.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source><bpt id="p1">[</bpt>Use Retail Modern POS in offline mode<ept id="p1">](retail-modern-pos-offline.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>オフライン モードで Retail Modern POS を使用する<ept id="p1">](retail-modern-pos-offline.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">[</bpt>Call a new or customized CRT service in offline mode<ept id="p1">](call-crt-service-offline.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>新規またはカスタマイズされた CRT サービスをオフライン モードで呼び出す<ept id="p1">](call-crt-service-offline.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">[</bpt>Modern POS and Cloud POS trigger extensibility<ept id="p1">](modern-pos-trigger-extensibility.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>モダン POS およびクラウド POS のトリガー拡張機能<ept id="p1">](modern-pos-trigger-extensibility.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source><bpt id="p1">[</bpt>Add a new custom control to an MPOS screen layout<ept id="p1">](add-new-custom-control-mpos-screen-layout.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>MPOS 画面レイアウトに新しいカスタム コントロールを追加する<ept id="p1">](add-new-custom-control-mpos-screen-layout.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source><bpt id="p1">[</bpt>Implementing a return policy by using triggers<ept id="p1">](trigger-example-return-policy.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>トリガーを使用する返品ポリシーの実装<ept id="p1">](trigger-example-return-policy.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">[</bpt>Blocking a transaction by using triggers<ept id="p1">](trigger-example-blocking-transaction.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>トリガーを使用してトランザクションをブロックする<ept id="p1">](trigger-example-blocking-transaction.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">[</bpt>Add extension properties to a Customer entity<ept id="p1">](add-extension-properties.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>顧客エンティティに拡張プロパティを追加する<ept id="p1">](add-extension-properties.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source><bpt id="p1">[</bpt>Add a custom control to a POS view<ept id="p1">](pos-custom-control.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>POS ビューへのカスタム コントロールの追加<ept id="p1">](pos-custom-control.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source><bpt id="p1">[</bpt>POS payment extension<ept id="p1">](pos-payment-extension.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>POS 支払拡張機能<ept id="p1">](pos-payment-extension.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source><bpt id="p1">[</bpt>Run Retail POS samples<ept id="p1">](pos-run-samples.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail POS サンプルの実行<ept id="p1">](pos-run-samples.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source><bpt id="p1">[</bpt>Extend existing POS views to add custom columns and app bar buttons<ept id="p1">](pos-view-extension.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>既存の POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加<ept id="p1">](pos-view-extension.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source><bpt id="p1">[</bpt>Add custom controls to Retail Modern POS transaction pages<ept id="p1">](pos-custom-transaction.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Modern POS トランザクション ページへのカスタム コントロールの追加<ept id="p1">](pos-custom-transaction.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">[</bpt>Add custom columns to a POS transaction grid<ept id="p1">](pos-custom-transaction-column.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>POS トランザクション グリッドへのカスタム列の追加<ept id="p1">](pos-custom-transaction-column.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source><bpt id="p1">[</bpt>Call a POS API or operation from a POS extension<ept id="p1">](pos-api-extension.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>POS 拡張機能からの POS API または操作の呼び出し<ept id="p1">](pos-api-extension.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source><bpt id="p1">[</bpt>Extend existing POS views to add custom columns and app bar buttons<ept id="p1">](pos-view-extension.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>既存の POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加<ept id="p1">](pos-view-extension.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source><bpt id="p1">[</bpt>Retail Modern POS triggers and printing<ept id="p1">](pos-trigger-printing.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Modern POS のトリガーと印刷<ept id="p1">](pos-trigger-printing.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source><bpt id="p1">[</bpt>Add a custom control to a Retail Modern POS non-screen designer-based view<ept id="p1">](pos-control-non-screen.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Modern POS 非画面デザイナー ベース ビューへのカスタム コントロールの追加<ept id="p1">](pos-control-non-screen.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source><bpt id="p1">[</bpt>Generate the Retail proxy for POS and e-Commerce<ept id="p1">](pos-generate-retail-proxy.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>POS および E コマース用 Retail プロキシの生成<ept id="p1">](pos-generate-retail-proxy.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source><bpt id="p1">[</bpt>Configuration steps for Retail developers working on cloud-hosted development boxes<ept id="p1">](cloud-dev-box.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>クラウド ホストのデベロップメント ボックスで作業している Retail 開発者向けのコンフィギュレーション手順<ept id="p1">](cloud-dev-box.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Integrating Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail の統合</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source><bpt id="p1">[</bpt>Create a Retail Experience app<ept id="p1">](create-retail-experience-app.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>小売エクスペリエンス アプリの作成<ept id="p1">](create-retail-experience-app.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Retail server</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail サーバー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source><bpt id="p1">[</bpt>Extend a Retail Server OData controller<ept id="p1">](extend-retail-server-odata-controller.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Server OData コントローラーの拡張<ept id="p1">](extend-retail-server-odata-controller.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">[</bpt>Extend the metadata<ept id="p1">](extend-metadata.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>メタデータの拡張<ept id="p1">](extend-metadata.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source><bpt id="p1">[</bpt>Web API and OData controllers<ept id="p1">](odata-controllers-api.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Web API および OData コントローラー<ept id="p1">](odata-controllers-api.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source><bpt id="p1">[</bpt>Retail Server customer and consumer APIs<ept id="p1">](retail-server-customer-consumer-api.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail サーバーの顧客およびコンシューマー API<ept id="p1">](retail-server-customer-consumer-api.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Retail hardware station</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail ハードウェア ステーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source><bpt id="p1">[</bpt>Retail hardware station configuration and installation<ept id="p1">](../retail-hardware-station-configuration-installation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail ハードウェア ステーションのコンフィギュレーションとインストール<ept id="p1">](../retail-hardware-station-configuration-installation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source><bpt id="p1">[</bpt>Hardware Station Extensibility<ept id="p1">](hardware-station-extensibility.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ハードウェア ステーションの拡張性<ept id="p1">](hardware-station-extensibility.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Retail Store Scale Unit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Store Scale Unit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source><bpt id="p1">[</bpt>Retail Store Scale Unit overview<ept id="p1">](retail-store-system-begin.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Store Scale Unit の概要<ept id="p1">](retail-store-system-begin.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source><bpt id="p1">[</bpt>Retail Store Scale Unit configuration and installation<ept id="p1">](retail-store-scale-unit-configuration-installation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Store Scale Unit のコンフィギュレーションとインストール<ept id="p1">](retail-store-scale-unit-configuration-installation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Commerce Runtime</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce Runtime</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source><bpt id="p1">[</bpt>Commerce Runtime overview<ept id="p1">](commerce-runtime-overview.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Commerce Runtime の概要<ept id="p1">](commerce-runtime-overview.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source><bpt id="p1">[</bpt>Commerce Runtime Extensibility - Trigger<ept id="p1">](commerce-runtime-extensibility-trigger.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Commerce Rumtime の拡張機能 - トリガー<ept id="p1">](commerce-runtime-extensibility-trigger.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source><bpt id="p1">[</bpt>Add customer preference data to a channel database<ept id="p1">](add-customer-preference-channel.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>顧客の基本設定データをチャンネル データベースに追加<ept id="p1">](add-customer-preference-channel.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source><bpt id="p1">[</bpt>Add properties to a sales order<ept id="p1">](add-properties-sales-order.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プロパティを販売注文に追加<ept id="p1">](add-properties-sales-order.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Retail SDK</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source><bpt id="p1">[</bpt>Retail SDK Overview<ept id="p1">](retail-sdk/retail-sdk-overview.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail SDK の概要<ept id="p1">](retail-sdk/retail-sdk-overview.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source><bpt id="p1">[</bpt>Retail SDK packaging<ept id="p1">](retail-sdk/retail-sdk-packaging.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail SDK 小売パッケージ<ept id="p1">](retail-sdk/retail-sdk-packaging.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source><bpt id="p1">[</bpt>Integrate the Retail SDK with the continuous build system (Azure DevOps)<ept id="p1">](retail-sdk/integrate-retail-sdk-continuous-build.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail SDK を継続的ビルド システム (Azure DevOps) と統合<ept id="p1">](retail-sdk/integrate-retail-sdk-continuous-build.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source><bpt id="p1">[</bpt>Retail SDK samples<ept id="p1">](retail-sdk/retail-sdk-samples.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail SDK サンプル<ept id="p1">](retail-sdk/retail-sdk-samples.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source><bpt id="p1">[</bpt>Channel database (DB) extensions<ept id="p1">](channel-db-extensions.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>チャネル データベース (DB) 拡張機能<ept id="p1">](channel-db-extensions.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source><bpt id="p1">[</bpt>CDX extensibility<ept id="p1">](cdx-extensibility.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>CDX の拡張性<ept id="p1">](cdx-extensibility.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source><bpt id="p1">[</bpt>Order attributes<ept id="p1">](order-attributes.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>注文属性<ept id="p1">](order-attributes.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source><bpt id="p1">[</bpt>Customer attributes<ept id="p1">](customer-attributes.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>顧客属性<ept id="p1">](customer-attributes.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source><bpt id="p1">[</bpt>Retail Typescript and C# proxy<ept id="p1">](typescript-proxy-retail-pos.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail の Typescript プロキシと C# プロキシ<ept id="p1">](typescript-proxy-retail-pos.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source><bpt id="p1">[</bpt>Run Retail POS samples<ept id="p1">](pos-run-samples.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail POS サンプルの実行<ept id="p1">](pos-run-samples.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source><bpt id="p1">[</bpt>Extend existing POS views to add custom columns and app bar buttons<ept id="p1">](pos-view-extension.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>既存の POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加<ept id="p1">](pos-view-extension.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source><bpt id="p1">[</bpt>Add custom controls to Retail Modern POS transaction pages<ept id="p1">](pos-custom-transaction.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Modern POS トランザクション ページへのカスタム コントロールの追加<ept id="p1">](pos-custom-transaction.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source><bpt id="p1">[</bpt>Add custom columns to a POS transaction grid<ept id="p1">](pos-custom-transaction-column.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>POS トランザクション グリッドへのカスタム列の追加<ept id="p1">](pos-custom-transaction-column.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source><bpt id="p1">[</bpt>Call a POS API or operation from a POS extension<ept id="p1">](pos-api-extension.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>POS 拡張機能からの POS API または操作の呼び出し<ept id="p1">](pos-api-extension.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source><bpt id="p1">[</bpt>Retail Modern POS triggers and printing<ept id="p1">](pos-trigger-printing.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Modern POS のトリガーと印刷<ept id="p1">](pos-trigger-printing.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source><bpt id="p1">[</bpt>Add a custom control to a Retail Modern POS non-screen designer-based view<ept id="p1">](pos-control-non-screen.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail Modern POS 非画面デザイナー ベース ビューへのカスタム コントロールの追加<ept id="p1">](pos-control-non-screen.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source><bpt id="p1">[</bpt>Generate the Retail proxy for POS and e-Commerce<ept id="p1">](pos-generate-retail-proxy.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>POS および E コマース用 Retail プロキシの生成<ept id="p1">](pos-generate-retail-proxy.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source><bpt id="p1">[</bpt>Configuration steps for Retail developers working on cloud-hosted development boxes<ept id="p1">](cloud-dev-box.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>クラウド ホストのデベロップメント ボックスで作業している Retail 開発者向けのコンフィギュレーション手順<ept id="p1">](cloud-dev-box.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>eCommerce</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">eCommerce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source><bpt id="p1">[</bpt>e-Commerce platform<ept id="p1">](ecommerce-platform.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>E コマース プラットフォーム<ept id="p1">](ecommerce-platform.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source><bpt id="p1">[</bpt>e-Commerce platform SDK<ept id="p1">](ecommerce-platform-sdk.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>E コマース プラットフォーム SDK<ept id="p1">](ecommerce-platform-sdk.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source><bpt id="p1">[</bpt>Configure an online store<ept id="p1">](configure-online-store.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>オンライン ストアのコンフィギュレーション<ept id="p1">](configure-online-store.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Payment connectors</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払コネクタ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source><bpt id="p1">[</bpt>Payment integration with a payment terminal<ept id="p1">](end-to-end-payment-extension.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>支払ターミナルとの支払の統合<ept id="p1">](end-to-end-payment-extension.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source><bpt id="p1">[</bpt>Implementing a payment connector and payment device (white paper)<ept id="p1">](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>支払コネクタと支払デバイスの実装 (ホワイト ペーパー)<ept id="p1">](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source><bpt id="p1">[</bpt>Create a Windows installer for a payment connector<ept id="p1">](create-windows-installer-payment-connector.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>支払コネクタ用の Windows インストーラーの作成<ept id="p1">](create-windows-installer-payment-connector.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source><bpt id="p1">[</bpt>Deploy a payment connector<ept id="p1">](deploy-payment-connector.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>支払コネクタの配置<ept id="p1">](deploy-payment-connector.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: IT プロおよび開発者向けのホーム ページ
+description: このページには、IT プロと Retail をサポートする開発者が利用できるリソースが一覧表示されています。
+author: RobinARH
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Developer, IT Pro
+ms.reviewer: robinr
+ms.search.scope: Operations, Retail
+ms.custom: 24411
+ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
+ms.search.region: Global
+ms.author: robinr
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 6dda3fc3a16a05cce5959b329c57e74aac98c617
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595561"
+---
+# <a name="retail-for-it-pros-and-developers-home-page"></a><span data-ttu-id="274e0-103">IT プロおよび開発者向けのホーム ページ</span><span class="sxs-lookup"><span data-stu-id="274e0-103">Retail for IT pros and developers home page</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="274e0-104">このページには、IT プロと Retail をサポートする開発者が利用できるリソースが一覧表示されています。</span><span class="sxs-lookup"><span data-stu-id="274e0-104">This page lists the resources that are available for IT pros and developers who support Retail.</span></span>
+
+<span data-ttu-id="274e0-105">Retail は、Finance and Operations に依存しています。</span><span class="sxs-lookup"><span data-stu-id="274e0-105">Retail is dependent on Finance and Operations.</span></span> <span data-ttu-id="274e0-106">中核となる[配置と開発コンテンツ](../../dev-itpro/index.md)を把握しておくことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="274e0-106">We recommend that you familiarize yourself with the core [deployment and development content](../../dev-itpro/index.md).</span></span>
+
+## <a name="retail-components-and-architecture"></a><span data-ttu-id="274e0-107">小売コンポーネントとアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="274e0-107">Retail components and architecture</span></span>
+-   [<span data-ttu-id="274e0-108">Dynamics 365 for Retail のコンポーネント</span><span class="sxs-lookup"><span data-stu-id="274e0-108">Components of Dynamics 365 for Retail</span></span>](../retail-components.md)
+-   [<span data-ttu-id="274e0-109">MPOS アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="274e0-109">MPOS architecture</span></span>](retail-modern-pos-architecture.md)
+-   [<span data-ttu-id="274e0-110">レポート サーバーのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="274e0-110">Retail Server architecture</span></span>](retail-server-architecture.md)
+-   [<span data-ttu-id="274e0-111">小売オンライン ストア発行アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="274e0-111">Retail online store publishing architecture</span></span>](retail-online-store-publishing-architecture.md)
+-   [<span data-ttu-id="274e0-112">Retail Channel Performance Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="274e0-112">Retail Channel Performance Power BI  content</span></span>](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+
+## <a name="retail-deployment"></a><span data-ttu-id="274e0-113">小売の配置</span><span class="sxs-lookup"><span data-stu-id="274e0-113">Retail deployment</span></span>
+-   [<span data-ttu-id="274e0-114">Retail Modern POS のコンフィギュレーションとインストール</span><span class="sxs-lookup"><span data-stu-id="274e0-114">Retail Modern POS configuration and installation</span></span>](../retail-modern-pos-device-activation.md)
+-   [<span data-ttu-id="274e0-115">本社からの Retail アカウントとデバイスの管理</span><span class="sxs-lookup"><span data-stu-id="274e0-115">Manage Retail accounts and devices from headquarters</span></span>](../set-up-activation-accounts-validate-devices-hq.md)
+-   [<span data-ttu-id="274e0-116">Retail POS デバイスのライセンス認証</span><span class="sxs-lookup"><span data-stu-id="274e0-116">Retail POS device activation</span></span>](retail-device-activation.md)
+-   [<span data-ttu-id="274e0-117">POS のレイアウト デザイナーのインストール</span><span class="sxs-lookup"><span data-stu-id="274e0-117">Install the POS Layout designer</span></span>](../install-pos-layout-designer.md)
+-   [<span data-ttu-id="274e0-118">Retail Hardware Station のコンフィギュレーションとインストール</span><span class="sxs-lookup"><span data-stu-id="274e0-118">Retail Hardware Station configuration and installation</span></span>](../retail-hardware-station-configuration-installation.md)
+-   [<span data-ttu-id="274e0-119">Retail Store Scale Unit のコンフィギュレーションとインストール</span><span class="sxs-lookup"><span data-stu-id="274e0-119">Retail Store Scale Unit configuration and installation</span></span>](retail-store-scale-unit-configuration-installation.md)
+-   [<span data-ttu-id="274e0-120">診断とトラブルシューティングの Retail コンポーネント イベント</span><span class="sxs-lookup"><span data-stu-id="274e0-120">Retail component events for diagnostics and troubleshooting</span></span>](retail-component-events-diagnostics-troubleshooting.md)
+-   [<span data-ttu-id="274e0-121">アクセス インスタンス</span><span class="sxs-lookup"><span data-stu-id="274e0-121">Access instances</span></span>](../../dev-itpro/dev-tools/access-instances.md)
+
+## <a name="point-of-sale-pos"></a><span data-ttu-id="274e0-122">販売時点管理 (POS)</span><span class="sxs-lookup"><span data-stu-id="274e0-122">Point of Sale (POS)</span></span>
+-   [<span data-ttu-id="274e0-123">Retail Modern POS のコンフィギュレーションとインストール</span><span class="sxs-lookup"><span data-stu-id="274e0-123">Retail Modern POS configuration and installation</span></span>](../retail-modern-pos-device-activation.md)
+-   [<span data-ttu-id="274e0-124">本社からの Retail アカウントとデバイスの管理</span><span class="sxs-lookup"><span data-stu-id="274e0-124">Manage Retail accounts and devices from headquarters</span></span>](../set-up-activation-accounts-validate-devices-hq.md)
+-   [<span data-ttu-id="274e0-125">Retail POS デバイスのライセンス認証</span><span class="sxs-lookup"><span data-stu-id="274e0-125">Retail POS device activation</span></span>](retail-device-activation.md)
+-   [<span data-ttu-id="274e0-126">共有環境における Retail Cloud POS のセキュリティのベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="274e0-126">Security best practices for Retail Cloud POS in a shared environment</span></span>](secure-retail-cloud-pos.md)
+-   [<span data-ttu-id="274e0-127">外部ギフト カードのサポート</span><span class="sxs-lookup"><span data-stu-id="274e0-127">External gift card support</span></span>](gift-card.md)
+
+## <a name="customize-pos"></a><span data-ttu-id="274e0-128">カスタマイズ POS</span><span class="sxs-lookup"><span data-stu-id="274e0-128">Customize POS</span></span>
+- [<span data-ttu-id="274e0-129">Retail POS 画面レイアウト</span><span class="sxs-lookup"><span data-stu-id="274e0-129">Retail POS screen layouts</span></span>](../pos-screen-layouts.md)
+- [<span data-ttu-id="274e0-130">POS のレイアウト デザイナーのインストール</span><span class="sxs-lookup"><span data-stu-id="274e0-130">Install the POS Layout designer</span></span>](../install-pos-layout-designer.md)
+- [<span data-ttu-id="274e0-131">オフライン モードで Retail Modern POS を使用する</span><span class="sxs-lookup"><span data-stu-id="274e0-131">Use Retail Modern POS in offline mode</span></span>](retail-modern-pos-offline.md)
+- [<span data-ttu-id="274e0-132">新規またはカスタマイズされた CRT サービスをオフライン モードで呼び出す</span><span class="sxs-lookup"><span data-stu-id="274e0-132">Call a new or customized CRT service in offline mode</span></span>](call-crt-service-offline.md)
+- [<span data-ttu-id="274e0-133">モダン POS およびクラウド POS のトリガー拡張機能</span><span class="sxs-lookup"><span data-stu-id="274e0-133">Modern POS and Cloud POS trigger extensibility</span></span>](modern-pos-trigger-extensibility.md)
+- [<span data-ttu-id="274e0-134">MPOS 画面レイアウトに新しいカスタム コントロールを追加する</span><span class="sxs-lookup"><span data-stu-id="274e0-134">Add a new custom control to an MPOS screen layout</span></span>](add-new-custom-control-mpos-screen-layout.md)
+- [<span data-ttu-id="274e0-135">トリガーを使用する返品ポリシーの実装</span><span class="sxs-lookup"><span data-stu-id="274e0-135">Implementing a return policy by using triggers</span></span>](trigger-example-return-policy.md)
+- [<span data-ttu-id="274e0-136">トリガーを使用してトランザクションをブロックする</span><span class="sxs-lookup"><span data-stu-id="274e0-136">Blocking a transaction by using triggers</span></span>](trigger-example-blocking-transaction.md)
+- [<span data-ttu-id="274e0-137">顧客エンティティに拡張プロパティを追加する</span><span class="sxs-lookup"><span data-stu-id="274e0-137">Add extension properties to a Customer entity</span></span>](add-extension-properties.md)
+- [<span data-ttu-id="274e0-138">POS ビューへのカスタム コントロールの追加</span><span class="sxs-lookup"><span data-stu-id="274e0-138">Add a custom control to a POS view</span></span>](pos-custom-control.md)
+- [<span data-ttu-id="274e0-139">POS 支払拡張機能</span><span class="sxs-lookup"><span data-stu-id="274e0-139">POS payment extension</span></span>](pos-payment-extension.md)
+- [<span data-ttu-id="274e0-140">Retail POS サンプルの実行</span><span class="sxs-lookup"><span data-stu-id="274e0-140">Run Retail POS samples</span></span>](pos-run-samples.md)
+- [<span data-ttu-id="274e0-141">既存の POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加</span><span class="sxs-lookup"><span data-stu-id="274e0-141">Extend existing POS views to add custom columns and app bar buttons</span></span>](pos-view-extension.md)
+- [<span data-ttu-id="274e0-142">Retail Modern POS トランザクション ページへのカスタム コントロールの追加</span><span class="sxs-lookup"><span data-stu-id="274e0-142">Add custom controls to Retail Modern POS transaction pages</span></span>](pos-custom-transaction.md)
+- [<span data-ttu-id="274e0-143">POS トランザクション グリッドへのカスタム列の追加</span><span class="sxs-lookup"><span data-stu-id="274e0-143">Add custom columns to a POS transaction grid</span></span>](pos-custom-transaction-column.md)
+- [<span data-ttu-id="274e0-144">POS 拡張機能からの POS API または操作の呼び出し</span><span class="sxs-lookup"><span data-stu-id="274e0-144">Call a POS API or operation from a POS extension</span></span>](pos-api-extension.md)
+- [<span data-ttu-id="274e0-145">既存の POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加</span><span class="sxs-lookup"><span data-stu-id="274e0-145">Extend existing POS views to add custom columns and app bar buttons</span></span>](pos-view-extension.md)
+- [<span data-ttu-id="274e0-146">Retail Modern POS のトリガーと印刷</span><span class="sxs-lookup"><span data-stu-id="274e0-146">Retail Modern POS triggers and printing</span></span>](pos-trigger-printing.md)
+- [<span data-ttu-id="274e0-147">Retail Modern POS 非画面デザイナー ベース ビューへのカスタム コントロールの追加</span><span class="sxs-lookup"><span data-stu-id="274e0-147">Add a custom control to a Retail Modern POS non-screen designer-based view</span></span>](pos-control-non-screen.md)
+- [<span data-ttu-id="274e0-148">POS および E コマース用 Retail プロキシの生成</span><span class="sxs-lookup"><span data-stu-id="274e0-148">Generate the Retail proxy for POS and e-Commerce</span></span>](pos-generate-retail-proxy.md)
+- [<span data-ttu-id="274e0-149">クラウド ホストのデベロップメント ボックスで作業している Retail 開発者向けのコンフィギュレーション手順</span><span class="sxs-lookup"><span data-stu-id="274e0-149">Configuration steps for Retail developers working on cloud-hosted development boxes</span></span>](cloud-dev-box.md)
+
+## <a name="integrating-retail"></a><span data-ttu-id="274e0-150">Retail の統合</span><span class="sxs-lookup"><span data-stu-id="274e0-150">Integrating Retail</span></span>
+-   [<span data-ttu-id="274e0-151">小売エクスペリエンス アプリの作成</span><span class="sxs-lookup"><span data-stu-id="274e0-151">Create a Retail Experience app</span></span>](create-retail-experience-app.md)
+
+## <a name="retail-server"></a><span data-ttu-id="274e0-152">Retail サーバー</span><span class="sxs-lookup"><span data-stu-id="274e0-152">Retail server</span></span>
+-   [<span data-ttu-id="274e0-153">Retail Server OData コントローラーの拡張</span><span class="sxs-lookup"><span data-stu-id="274e0-153">Extend a Retail Server OData controller</span></span>](extend-retail-server-odata-controller.md)
+-   [<span data-ttu-id="274e0-154">メタデータの拡張</span><span class="sxs-lookup"><span data-stu-id="274e0-154">Extend the metadata</span></span>](extend-metadata.md)
+-   [<span data-ttu-id="274e0-155">Web API および OData コントローラー</span><span class="sxs-lookup"><span data-stu-id="274e0-155">Web API and OData controllers</span></span>](odata-controllers-api.md)
+-   [<span data-ttu-id="274e0-156">Retail サーバーの顧客およびコンシューマー API</span><span class="sxs-lookup"><span data-stu-id="274e0-156">Retail Server customer and consumer APIs</span></span>](retail-server-customer-consumer-api.md)
+
+## <a name="retail-hardware-station"></a><span data-ttu-id="274e0-157">Retail ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="274e0-157">Retail hardware station</span></span>
+-   [<span data-ttu-id="274e0-158">Retail ハードウェア ステーションのコンフィギュレーションとインストール</span><span class="sxs-lookup"><span data-stu-id="274e0-158">Retail hardware station configuration and installation</span></span>](../retail-hardware-station-configuration-installation.md)
+-   [<span data-ttu-id="274e0-159">ハードウェア ステーションの拡張性</span><span class="sxs-lookup"><span data-stu-id="274e0-159">Hardware Station Extensibility</span></span>](hardware-station-extensibility.md)
+
+## <a name="retail-store-scale-unit"></a><span data-ttu-id="274e0-160">Retail Store Scale Unit</span><span class="sxs-lookup"><span data-stu-id="274e0-160">Retail Store Scale Unit</span></span>
+-   [<span data-ttu-id="274e0-161">Retail Store Scale Unit の概要</span><span class="sxs-lookup"><span data-stu-id="274e0-161">Retail Store Scale Unit overview</span></span>](retail-store-system-begin.md)
+-   [<span data-ttu-id="274e0-162">Retail Store Scale Unit のコンフィギュレーションとインストール</span><span class="sxs-lookup"><span data-stu-id="274e0-162">Retail Store Scale Unit configuration and installation</span></span>](retail-store-scale-unit-configuration-installation.md)
+
+## <a name="commerce-runtime"></a><span data-ttu-id="274e0-163">Commerce Runtime</span><span class="sxs-lookup"><span data-stu-id="274e0-163">Commerce Runtime</span></span>
+-   [<span data-ttu-id="274e0-164">Commerce Runtime の概要</span><span class="sxs-lookup"><span data-stu-id="274e0-164">Commerce Runtime overview</span></span>](commerce-runtime-overview.md)
+-   [<span data-ttu-id="274e0-165">Commerce Rumtime の拡張機能 - トリガー</span><span class="sxs-lookup"><span data-stu-id="274e0-165">Commerce Runtime Extensibility - Trigger</span></span>](commerce-runtime-extensibility-trigger.md)
+-   [<span data-ttu-id="274e0-166">顧客の基本設定データをチャンネル データベースに追加</span><span class="sxs-lookup"><span data-stu-id="274e0-166">Add customer preference data to a channel database</span></span>](add-customer-preference-channel.md)
+-   [<span data-ttu-id="274e0-167">プロパティを販売注文に追加</span><span class="sxs-lookup"><span data-stu-id="274e0-167">Add properties to a sales order</span></span>](add-properties-sales-order.md)
+
+## <a name="retail-sdk"></a><span data-ttu-id="274e0-168">Retail SDK</span><span class="sxs-lookup"><span data-stu-id="274e0-168">Retail SDK</span></span>
+- [<span data-ttu-id="274e0-169">Retail SDK の概要</span><span class="sxs-lookup"><span data-stu-id="274e0-169">Retail SDK Overview</span></span>](retail-sdk/retail-sdk-overview.md)
+- [<span data-ttu-id="274e0-170">Retail SDK 小売パッケージ</span><span class="sxs-lookup"><span data-stu-id="274e0-170">Retail SDK packaging</span></span>](retail-sdk/retail-sdk-packaging.md)
+- [<span data-ttu-id="274e0-171">Retail SDK を継続的ビルド システム (Azure DevOps) と統合</span><span class="sxs-lookup"><span data-stu-id="274e0-171">Integrate the Retail SDK with the continuous build system (Azure DevOps)</span></span>](retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [<span data-ttu-id="274e0-172">Retail SDK サンプル</span><span class="sxs-lookup"><span data-stu-id="274e0-172">Retail SDK samples</span></span>](retail-sdk/retail-sdk-samples.md)
+- [<span data-ttu-id="274e0-173">チャネル データベース (DB) 拡張機能</span><span class="sxs-lookup"><span data-stu-id="274e0-173">Channel database (DB) extensions</span></span>](channel-db-extensions.md) 
+- [<span data-ttu-id="274e0-174">CDX の拡張性</span><span class="sxs-lookup"><span data-stu-id="274e0-174">CDX extensibility</span></span>](cdx-extensibility.md)
+- [<span data-ttu-id="274e0-175">注文属性</span><span class="sxs-lookup"><span data-stu-id="274e0-175">Order attributes</span></span>](order-attributes.md)
+- [<span data-ttu-id="274e0-176">顧客属性</span><span class="sxs-lookup"><span data-stu-id="274e0-176">Customer attributes</span></span>](customer-attributes.md)
+- [<span data-ttu-id="274e0-177">Retail の Typescript プロキシと C# プロキシ</span><span class="sxs-lookup"><span data-stu-id="274e0-177">Retail Typescript and C# proxy</span></span>](typescript-proxy-retail-pos.md)
+- [<span data-ttu-id="274e0-178">Retail POS サンプルの実行</span><span class="sxs-lookup"><span data-stu-id="274e0-178">Run Retail POS samples</span></span>](pos-run-samples.md)
+- [<span data-ttu-id="274e0-179">既存の POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加</span><span class="sxs-lookup"><span data-stu-id="274e0-179">Extend existing POS views to add custom columns and app bar buttons</span></span>](pos-view-extension.md)
+- [<span data-ttu-id="274e0-180">Retail Modern POS トランザクション ページへのカスタム コントロールの追加</span><span class="sxs-lookup"><span data-stu-id="274e0-180">Add custom controls to Retail Modern POS transaction pages</span></span>](pos-custom-transaction.md)
+- [<span data-ttu-id="274e0-181">POS トランザクション グリッドへのカスタム列の追加</span><span class="sxs-lookup"><span data-stu-id="274e0-181">Add custom columns to a POS transaction grid</span></span>](pos-custom-transaction-column.md)
+- [<span data-ttu-id="274e0-182">POS 拡張機能からの POS API または操作の呼び出し</span><span class="sxs-lookup"><span data-stu-id="274e0-182">Call a POS API or operation from a POS extension</span></span>](pos-api-extension.md)
+- [<span data-ttu-id="274e0-183">Retail Modern POS のトリガーと印刷</span><span class="sxs-lookup"><span data-stu-id="274e0-183">Retail Modern POS triggers and printing</span></span>](pos-trigger-printing.md)
+- [<span data-ttu-id="274e0-184">Retail Modern POS 非画面デザイナー ベース ビューへのカスタム コントロールの追加</span><span class="sxs-lookup"><span data-stu-id="274e0-184">Add a custom control to a Retail Modern POS non-screen designer-based view</span></span>](pos-control-non-screen.md)
+- [<span data-ttu-id="274e0-185">POS および E コマース用 Retail プロキシの生成</span><span class="sxs-lookup"><span data-stu-id="274e0-185">Generate the Retail proxy for POS and e-Commerce</span></span>](pos-generate-retail-proxy.md)
+- [<span data-ttu-id="274e0-186">クラウド ホストのデベロップメント ボックスで作業している Retail 開発者向けのコンフィギュレーション手順</span><span class="sxs-lookup"><span data-stu-id="274e0-186">Configuration steps for Retail developers working on cloud-hosted development boxes</span></span>](cloud-dev-box.md)
+
+## <a name="ecommerce"></a><span data-ttu-id="274e0-187">eCommerce</span><span class="sxs-lookup"><span data-stu-id="274e0-187">eCommerce</span></span>
+-   [<span data-ttu-id="274e0-188">E コマース プラットフォーム</span><span class="sxs-lookup"><span data-stu-id="274e0-188">e-Commerce platform</span></span>](ecommerce-platform.md)
+-   [<span data-ttu-id="274e0-189">E コマース プラットフォーム SDK</span><span class="sxs-lookup"><span data-stu-id="274e0-189">e-Commerce platform SDK</span></span>](ecommerce-platform-sdk.md)
+-   [<span data-ttu-id="274e0-190">オンライン ストアのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="274e0-190">Configure an online store</span></span>](configure-online-store.md)
+
+## <a name="payment-connectors"></a><span data-ttu-id="274e0-191">支払コネクタ</span><span class="sxs-lookup"><span data-stu-id="274e0-191">Payment connectors</span></span>
+- [<span data-ttu-id="274e0-192">支払ターミナルとの支払の統合</span><span class="sxs-lookup"><span data-stu-id="274e0-192">Payment integration with a payment terminal</span></span>](end-to-end-payment-extension.md)
+- [<span data-ttu-id="274e0-193">支払コネクタと支払デバイスの実装 (ホワイト ペーパー)</span><span class="sxs-lookup"><span data-stu-id="274e0-193">Implementing a payment connector and payment device (white paper)</span></span>](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+-   [<span data-ttu-id="274e0-194">支払コネクタ用の Windows インストーラーの作成</span><span class="sxs-lookup"><span data-stu-id="274e0-194">Create a Windows installer for a payment connector</span></span>](create-windows-installer-payment-connector.md)
+-   [<span data-ttu-id="274e0-195">支払コネクタの配置</span><span class="sxs-lookup"><span data-stu-id="274e0-195">Deploy a payment connector</span></span>](deploy-payment-connector.md)
+
+
+
+
+
+
+

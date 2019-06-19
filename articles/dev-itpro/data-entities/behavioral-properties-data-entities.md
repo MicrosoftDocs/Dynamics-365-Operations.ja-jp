@@ -1,318 +1,152 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="behavioral-properties-data-entities.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>behavioral-properties-data-entities.b791a2.da3dc2cdc6f76709b93b6da714c30eb456f72a29.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>da3dc2cdc6f76709b93b6da714c30eb456f72a29</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\data-entities\behavioral-properties-data-entities.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Behavioral properties on data entities</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ エンティティの動作プロパティ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes the behavioral data entity properties that let you override property values on the tables or views that are the data sources of that entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、そのエンティティのデータ ソースであるテーブルまたはビューのプロパティ値をオーバーライドさせるビヘイビア データ エンティティのプロパティについて説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Behavioral properties on data entities</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ エンティティの動作プロパティ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Every data entity has properties that let you override the same property values on the tables or views that are the data sources of that entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのデータ エンティティには、そのエンティティのデータソースであるテーブルまたはビューの同じプロパティ値をオーバーライドできるようにするプロパティがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Your choices affect the behavior of the entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択内容は、エンティティの動作に影響します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>In the following table, the first column lists the properties that are discussed in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の表では、最初の列に、このトピックで説明したプロパティが一覧表示されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The top row lists the levels where the property is found in the entity designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一番上の行には、エンティティ デザイナーでプロパティが見つかったレベルが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>The levels are listed in order of increasing granularity: the data source level is more granular than the entity level but less granular than the field level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レベルは、精度の細かい順に一覧表示されます。データ ソース レベルはエンティティ レベルよりも細かく、フィールド レベルほどは細かくはありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Entity level</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ レベル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Data source level</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース レベル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Field level</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド レベル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>ReadOnly</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReadOnly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Applies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適用</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Applies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適用</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>AllowEdit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AllowEdit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Applies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適用</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>AllowEditOnCreate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AllowEditOnCreate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Applies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適用</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Mandatory</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必須</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Applies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適用</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Entity level</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ レベル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>In the designer for your data entity, when you click the name at the root node, the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane includes the <bpt id="p2">**</bpt>Is Read Only<ept id="p2">**</ept> property.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ エンティティのデザイナーで、ルート ノードの名前をクリックすると、<bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウに<bpt id="p2">**</bpt>読み取り専用<ept id="p2">**</ept>プロパティがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>The following table describes the behavioral differences between the <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> and <bpt id="p2">**</bpt>No<ept id="p2">**</ept> values of this property.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルは、このプロパティの <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> と <bpt id="p2">**</bpt>No<ept id="p2">**</ept> 値の間の動作上の相違点を示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Group</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グループ化</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Property name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Display name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Values</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Behavior</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動作</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>IsReadOnly</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IsReadOnly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Is Read Only</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">読み取り専用です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>No, Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">いいえ、はい</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>No:<ept id="p1">&lt;/strong&gt;</ept> Data modification operations (CUD) <bpt id="p2">&lt;em&gt;</bpt>are<ept id="p2">&lt;/em&gt;</ept> allowed, <bpt id="p3">&lt;em&gt;</bpt>unless<ept id="p3">&lt;/em&gt;</ept> an individual data source node in the entity's designer is set to <bpt id="p4">&lt;strong&gt;</bpt>IsReadOnly<ept id="p4">&lt;/strong&gt;</ept><ph id="ph1"> = </ph><bpt id="p5">&lt;strong&gt;</bpt>Yes<ept id="p5">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>いいえ:<ept id="p1">&lt;/strong&gt;</ept> エンティティのデザイナー内の個別のデータ ソース ノードが <bpt id="p4">&lt;strong&gt;</bpt>IsReadOnly<ept id="p4">&lt;/strong&gt;</ept><ph id="ph1"> = </ph><bpt id="p5">&lt;strong&gt;</bpt>はい<ept id="p5">&lt;/strong&gt;</ept>に設定されて<bpt id="p3">&lt;em&gt;</bpt>いない限り<ept id="p3">&lt;/em&gt;</ept>、データ変更操作 (CUD) <bpt id="p2">&lt;em&gt;</bpt>は<ept id="p2">&lt;/em&gt;</ept>許可されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Yes:<ept id="p1">&lt;/strong&gt;</ept> Only read operations are allowed, regardless of the <bpt id="p2">&lt;strong&gt;</bpt>IsReadOnly<ept id="p2">&lt;/strong&gt;</ept> settings on the individual data source nodes in the entity's designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>はい:<ept id="p1">&lt;/strong&gt;</ept> エンティティのデザイナ内の個々のデータソースノードの <bpt id="p2">&lt;strong&gt;</bpt>IsReadOnly<ept id="p2">&lt;/strong&gt;</ept> 設定に関係なく、読み取り操作のみが許可されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>You would set <bpt id="p1">**</bpt>IsReadOnly<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> for entities that are consumed mainly for export.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">主にエクスポートに使用されるエンティティに対して、<bpt id="p1">**</bpt>IsReadOnly<ept id="p1">**</ept> を <bpt id="p2">**</bpt>はい<ept id="p2">**</ept> に設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Data source level</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース レベル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>If a data entity has three data sources, you might want to allow processes to use the entity to modify the data in one of the data sources but not in the other two.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ エンティティに 3 つのデータ ソースがある場合は、その中から 2 つではなく、1 つのデータ ソースのデータを変更するために、エンティティを使用するためのプロセスを許可する場合があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>A read-only data source can be used for lookup purposes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">読み取り専用データ ソースは参照目的で使用することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>You can use the entity designer to achieve this extra degree of granular control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ デザイナーを使用すると、この非常に制度の高い制御を達成することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Under the entity's <bpt id="p1">**</bpt>Metadata<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Data Sources<ept id="p2">**</ept> node, you can select an entity node and then set the <bpt id="p3">**</bpt>IsReadOnly<ept id="p3">**</ept> property value for that one data source.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティの <bpt id="p1">**</bpt>メタデータ<ept id="p1">**</ept><ph id="ph1">&amp;gt;</ph><bpt id="p2">**</bpt>データ ソース<ept id="p2">**</ept> ノードで、エンティティ ノードを選択すると、その 1 つのデータソースの <bpt id="p3">**</bpt>IsReadOnly<ept id="p3">**</ept> プロパティの値を設定できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>The following table describes the interaction between the <bpt id="p1">**</bpt>IsReadOnly<ept id="p1">**</ept> settings at the data source level and the entity level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルでは、データ ソース レベルの <bpt id="p1">**</bpt>IsReadOnly<ept id="p1">**</ept> 設定とエンティティ レベルの相互作用について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Group</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グループ化</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Property name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Display name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Values</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Behavior</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動作</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>IsReadOnly</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IsReadOnly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Is Read Only</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">読み取り専用です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>No, Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">いいえ、はい</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>No:<ept id="p1">&lt;/strong&gt;</ept> Data modification operations (CUD) <bpt id="p2">&lt;em&gt;</bpt>are<ept id="p2">&lt;/em&gt;</ept> allowed on the data source, <bpt id="p3">&lt;em&gt;</bpt>unless<ept id="p3">&lt;/em&gt;</ept> <bpt id="p4">&lt;strong&gt;</bpt>IsReadOnly<ept id="p4">&lt;/strong&gt;</ept><ph id="ph1"> </ph>is set to<bpt id="p5"> &lt;strong&gt;</bpt>Yes<ept id="p5">&lt;/strong&gt;</ept> at the entity level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>いいえ:<ept id="p1">&lt;/strong&gt;</ept> エンティティ レベルで <bpt id="p4">&lt;strong&gt;</bpt>IsReadOnly<ept id="p4">&lt;/strong&gt;</ept><ph id="ph1"> </ph>が<bpt id="p5"> &lt;strong&gt;</bpt>はい<ept id="p5">&lt;/strong&gt;</ept>にセットされて<bpt id="p3">&lt;em&gt;</bpt>いない限り<ept id="p3">&lt;/em&gt;</ept>、データ変更操作 (CUD) <bpt id="p2">&lt;em&gt;</bpt>は<ept id="p2">&lt;/em&gt;</ept>データ ソースで許可されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Yes:<ept id="p1">&lt;/strong&gt;</ept> Only operations are allowed, regardless of the <bpt id="p2">&lt;strong&gt;</bpt>IsReadOnly<ept id="p2">&lt;/strong&gt;</ept> setting on the entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>はい:<ept id="p1">&lt;/strong&gt;</ept> エンティティの <bpt id="p2">&lt;strong&gt;</bpt>IsReadOnly<ept id="p2">&lt;/strong&gt;</ept> 設定に関係なく、操作のみが許可されます</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Field level</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド レベル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>At the field level, the <bpt id="p1">**</bpt>AllowEdit<ept id="p1">**</ept> and <bpt id="p2">**</bpt>AllowEditOnCreate<ept id="p2">**</ept> properties are available instead of an <bpt id="p3">**</bpt>IsReadOnly<ept id="p3">**</ept> property.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド レベルにおいて、<bpt id="p1">**</bpt>AllowEdit<ept id="p1">**</ept> と <bpt id="p2">**</bpt>AllowEditOnCreate<ept id="p2">**</ept> プロパティは <bpt id="p3">**</bpt>IsReadOnly<ept id="p3">**</ept> プロパティの代わりに利用可能です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>The two <bpt id="p1">**</bpt>Allow<ept id="p1">**</ept> properties include <bpt id="p2">**</bpt>Auto<ept id="p2">**</ept> as a third available value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2 つの<bpt id="p1">**</bpt>許可<ept id="p1">**</ept>プロパティには、3 番目の利用可能な値として<bpt id="p2">**</bpt>自動<ept id="p2">**</ept>が含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>The <bpt id="p1">**</bpt>Auto<ept id="p1">**</ept> value inherits the value that is on the field in the underlying table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>自動<ept id="p1">**</ept> 値は、基になっているテーブルのフィールドにある値を継承します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>The <bpt id="p1">**</bpt>Auto<ept id="p1">**</ept> value isn't available for unmapped fields, such as computed or virtual fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>自動<ept id="p1">**</ept>の値は、計算フィールドや仮想フィールドなどのマップされていないフィールドでは使用できません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Group</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グループ化</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Property name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Display name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Behavior</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動作</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>AllowEditOnCreate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AllowEditOnCreate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Allow edit on create</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成時の編集を許可</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Auto, No, Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動、いいえ、はい</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Auto</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Auto:<ept id="p1">&lt;/strong&gt;</ept> The property is inherited from the underlying table field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>自動:<ept id="p1">&lt;/strong&gt;</ept> 基になるテーブル フィールドから、プロパティを継承します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>The <bpt id="p1">&lt;strong&gt;</bpt>Auto<ept id="p1">&lt;/strong&gt;</ept> value isn't available for unmapped fields, such as computed or virtual fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>自動<ept id="p1">&lt;/strong&gt;</ept>の値は、計算フィールドや仮想フィールドなどのマップされていないフィールドでは使用できません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>No:<ept id="p1">&lt;/strong&gt;</ept> Users aren't allowed to modify the data for this field in a new record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>いいえ:<ept id="p1">&lt;/strong&gt;</ept> ユーザーは、このフィールドのデータを新しいレコードで変更することはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Yes:<ept id="p1">&lt;/strong&gt;</ept> Users are allowed to modify the data for this field for a new record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>はい:<ept id="p1">&lt;/strong&gt;</ept> ユーザーは、このフィールドのデータを新しいレコードに対して変更することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>This behavior is enforced for all consumers – X++, OData, and so on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この動作はすべてのコンシューマー (X++、OData など) に適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>The <bpt id="p1">&lt;strong&gt;</bpt>No<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Yes<ept id="p2">&lt;/strong&gt;</ept> values do <bpt id="p3">&lt;em&gt;</bpt>not<ept id="p3">&lt;/em&gt;</ept> override the setting on the field in the underlying table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>いいえ<ept id="p1">&lt;/strong&gt;</ept>および<bpt id="p2">&lt;strong&gt;</bpt>はい<ept id="p2">&lt;/strong&gt;</ept>の値は、基になるテーブル内のフィールドの設定を上書き<bpt id="p3">&lt;em&gt;</bpt>しません<ept id="p3">&lt;/em&gt;</ept>。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Behavior</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動作</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>AllowEdit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AllowEdit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Allow edit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">編集を許可</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Auto, No, Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動、いいえ、はい</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Auto</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>The behavior is the same as the behavior for <bpt id="p1">&lt;strong&gt;</bpt>AllowEditOnCreate<ept id="p1">&lt;/strong&gt;</ept>, but it applies to updates to <bpt id="p2">&lt;em&gt;</bpt>existing<ept id="p2">&lt;/em&gt;</ept> records instead of new records that are being created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動作は、<bpt id="p1">&lt;strong&gt;</bpt>AllowEditOnCreate<ept id="p1">&lt;/strong&gt;</ept> の動作と同じですが、作成されている新しいレコードではなく、<bpt id="p2">&lt;em&gt;</bpt>既存の<ept id="p2">&lt;/em&gt;</ept>レコードへの更新に適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>This behavior is enforced for all consumers – X++, OData, and so on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この動作は、すべてのコンシューマー (X++、OData など) に適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Behavior</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動作</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Mandatory</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必須</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Mandatory</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必須</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Auto, No, Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動、いいえ、はい</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Auto</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Auto:<ept id="p1">&lt;/strong&gt;</ept> The property is inherited from the underlying table field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>自動:<ept id="p1">&lt;/strong&gt;</ept> 基になるテーブル フィールドから、プロパティを継承します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>This behavior is enforced for all consumers – X++, OData, and so on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この動作は、すべてのコンシューマー (X++、OData など) に適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>The <bpt id="p1">&lt;strong&gt;</bpt>No<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Yes<ept id="p2">&lt;/strong&gt;</ept> values do <bpt id="p3">&lt;em&gt;</bpt>not<ept id="p3">&lt;/em&gt;</ept> override the setting on the field in the underlying table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>いいえ<ept id="p1">&lt;/strong&gt;</ept>および<bpt id="p2">&lt;strong&gt;</bpt>はい<ept id="p2">&lt;/strong&gt;</ept>の値は、基になるテーブル内のフィールドの設定を上書き<bpt id="p3">&lt;em&gt;</bpt>しません<ept id="p3">&lt;/em&gt;</ept>。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: データ エンティティの動作プロパティ
+description: このトピックでは、そのエンティティのデータ ソースであるテーブルまたはビューのプロパティ値をオーバーライドさせるビヘイビア データ エンティティのプロパティについて説明します。
+author: Sunil-Garg
+manager: AnnBe
+ms.date: 10/26/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: margoc
+ms.search.scope: Operations
+ms.custom: 25341
+ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
+ms.search.region: Global
+ms.author: sunilg
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: da3dc2cdc6f76709b93b6da714c30eb456f72a29
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544275"
+---
+# <a name="behavioral-properties-on-data-entities"></a><span data-ttu-id="7ca15-103">データ エンティティの動作プロパティ</span><span class="sxs-lookup"><span data-stu-id="7ca15-103">Behavioral properties on data entities</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="7ca15-104">すべてのデータ エンティティには、そのエンティティのデータソースであるテーブルまたはビューの同じプロパティ値をオーバーライドできるようにするプロパティがあります。</span><span class="sxs-lookup"><span data-stu-id="7ca15-104">Every data entity has properties that let you override the same property values on the tables or views that are the data sources of that entity.</span></span> <span data-ttu-id="7ca15-105">選択内容は、エンティティの動作に影響します。</span><span class="sxs-lookup"><span data-stu-id="7ca15-105">Your choices affect the behavior of the entity.</span></span> <span data-ttu-id="7ca15-106">次の表では、最初の列に、このトピックで説明したプロパティが一覧表示されています。</span><span class="sxs-lookup"><span data-stu-id="7ca15-106">In the following table, the first column lists the properties that are discussed in this topic.</span></span> <span data-ttu-id="7ca15-107">一番上の行には、エンティティ デザイナーでプロパティが見つかったレベルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-107">The top row lists the levels where the property is found in the entity designer.</span></span> <span data-ttu-id="7ca15-108">レベルは、精度の細かい順に一覧表示されます。データ ソース レベルはエンティティ レベルよりも細かく、フィールド レベルほどは細かくはありません。</span><span class="sxs-lookup"><span data-stu-id="7ca15-108">The levels are listed in order of increasing granularity: the data source level is more granular than the entity level but less granular than the field level.</span></span>
+
+|                   | <span data-ttu-id="7ca15-109">エンティティ レベル</span><span class="sxs-lookup"><span data-stu-id="7ca15-109">Entity level</span></span> | <span data-ttu-id="7ca15-110">データ ソース レベル</span><span class="sxs-lookup"><span data-stu-id="7ca15-110">Data source level</span></span> | <span data-ttu-id="7ca15-111">フィールド レベル</span><span class="sxs-lookup"><span data-stu-id="7ca15-111">Field level</span></span> |
+|-------------------|--------------|-------------------|-------------|
+| <span data-ttu-id="7ca15-112">ReadOnly</span><span class="sxs-lookup"><span data-stu-id="7ca15-112">ReadOnly</span></span>          | <span data-ttu-id="7ca15-113">適用</span><span class="sxs-lookup"><span data-stu-id="7ca15-113">Applies</span></span>      | <span data-ttu-id="7ca15-114">適用</span><span class="sxs-lookup"><span data-stu-id="7ca15-114">Applies</span></span>           | <span data-ttu-id="7ca15-115">.</span><span class="sxs-lookup"><span data-stu-id="7ca15-115">.</span></span>           |
+| <span data-ttu-id="7ca15-116">AllowEdit</span><span class="sxs-lookup"><span data-stu-id="7ca15-116">AllowEdit</span></span>         | <span data-ttu-id="7ca15-117">.</span><span class="sxs-lookup"><span data-stu-id="7ca15-117">.</span></span>            | <span data-ttu-id="7ca15-118">.</span><span class="sxs-lookup"><span data-stu-id="7ca15-118">.</span></span>                 | <span data-ttu-id="7ca15-119">適用</span><span class="sxs-lookup"><span data-stu-id="7ca15-119">Applies</span></span>     |
+| <span data-ttu-id="7ca15-120">AllowEditOnCreate</span><span class="sxs-lookup"><span data-stu-id="7ca15-120">AllowEditOnCreate</span></span> | <span data-ttu-id="7ca15-121">.</span><span class="sxs-lookup"><span data-stu-id="7ca15-121">.</span></span>            | <span data-ttu-id="7ca15-122">.</span><span class="sxs-lookup"><span data-stu-id="7ca15-122">.</span></span>                 | <span data-ttu-id="7ca15-123">適用</span><span class="sxs-lookup"><span data-stu-id="7ca15-123">Applies</span></span>     |
+| <span data-ttu-id="7ca15-124">必須</span><span class="sxs-lookup"><span data-stu-id="7ca15-124">Mandatory</span></span>         | <span data-ttu-id="7ca15-125">.</span><span class="sxs-lookup"><span data-stu-id="7ca15-125">.</span></span>            | <span data-ttu-id="7ca15-126">.</span><span class="sxs-lookup"><span data-stu-id="7ca15-126">.</span></span>                 | <span data-ttu-id="7ca15-127">適用</span><span class="sxs-lookup"><span data-stu-id="7ca15-127">Applies</span></span>     |
+
+## <a name="entity-level"></a><span data-ttu-id="7ca15-128">エンティティ レベル</span><span class="sxs-lookup"><span data-stu-id="7ca15-128">Entity level</span></span>
+<span data-ttu-id="7ca15-129">データ エンティティのデザイナーで、ルート ノードの名前をクリックすると、**プロパティ** ウィンドウに**読み取り専用**プロパティがあります。</span><span class="sxs-lookup"><span data-stu-id="7ca15-129">In the designer for your data entity, when you click the name at the root node, the **Properties** pane includes the **Is Read Only** property.</span></span> <span data-ttu-id="7ca15-130">次のテーブルは、このプロパティの **Yes** と **No** 値の間の動作上の相違点を示しています。</span><span class="sxs-lookup"><span data-stu-id="7ca15-130">The following table describes the behavioral differences between the **Yes** and **No** values of this property.</span></span>
+
+<table>
+<thead>
+<tr>
+<th><span data-ttu-id="7ca15-131">グループ化</span><span class="sxs-lookup"><span data-stu-id="7ca15-131">Group</span></span></th>
+<th><span data-ttu-id="7ca15-132">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="7ca15-132">Property name</span></span></th>
+<th><span data-ttu-id="7ca15-133">表示名</span><span class="sxs-lookup"><span data-stu-id="7ca15-133">Display name</span></span></th>
+<th><span data-ttu-id="7ca15-134">値</span><span class="sxs-lookup"><span data-stu-id="7ca15-134">Values</span></span></th>
+<th><span data-ttu-id="7ca15-135">既定</span><span class="sxs-lookup"><span data-stu-id="7ca15-135">Default</span></span></th>
+<th><span data-ttu-id="7ca15-136">説明</span><span class="sxs-lookup"><span data-stu-id="7ca15-136">Description</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span data-ttu-id="7ca15-137">動作</span><span class="sxs-lookup"><span data-stu-id="7ca15-137">Behavior</span></span></td>
+<td><span data-ttu-id="7ca15-138">IsReadOnly</span><span class="sxs-lookup"><span data-stu-id="7ca15-138">IsReadOnly</span></span></td>
+<td><span data-ttu-id="7ca15-139">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="7ca15-139">Is Read Only</span></span></td>
+<td><span data-ttu-id="7ca15-140">いいえ、はい</span><span class="sxs-lookup"><span data-stu-id="7ca15-140">No, Yes</span></span></td>
+<td><span data-ttu-id="7ca15-141">無</span><span class="sxs-lookup"><span data-stu-id="7ca15-141">No</span></span></td>
+<td><ul>
+<li><span data-ttu-id="7ca15-142"><strong>いいえ:</strong> エンティティのデザイナー内の個別のデータ ソース ノードが <strong>IsReadOnly</strong> = <strong>はい</strong>に設定されて<em>いない限り</em>、データ変更操作 (CUD) <em>は</em>許可されます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-142"><strong>No:</strong> Data modification operations (CUD) <em>are</em> allowed, <em>unless</em> an individual data source node in the entity's designer is set to <strong>IsReadOnly</strong> = <strong>Yes</strong>.</span></span></li>
+<li><span data-ttu-id="7ca15-143"><strong>はい:</strong> エンティティのデザイナ内の個々のデータソースノードの <strong>IsReadOnly</strong> 設定に関係なく、読み取り操作のみが許可されます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-143"><strong>Yes:</strong> Only read operations are allowed, regardless of the <strong>IsReadOnly</strong> settings on the individual data source nodes in the entity's designer.</span></span></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+<span data-ttu-id="7ca15-144">主にエクスポートに使用されるエンティティに対して、**IsReadOnly** を **はい** に設定します。</span><span class="sxs-lookup"><span data-stu-id="7ca15-144">You would set **IsReadOnly** to **Yes** for entities that are consumed mainly for export.</span></span>
+
+## <a name="data-source-level"></a><span data-ttu-id="7ca15-145">データ ソース レベル</span><span class="sxs-lookup"><span data-stu-id="7ca15-145">Data source level</span></span>
+<span data-ttu-id="7ca15-146">データ エンティティに 3 つのデータ ソースがある場合は、その中から 2 つではなく、1 つのデータ ソースのデータを変更するために、エンティティを使用するためのプロセスを許可する場合があります。</span><span class="sxs-lookup"><span data-stu-id="7ca15-146">If a data entity has three data sources, you might want to allow processes to use the entity to modify the data in one of the data sources but not in the other two.</span></span> <span data-ttu-id="7ca15-147">読み取り専用データ ソースは参照目的で使用することができます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-147">A read-only data source can be used for lookup purposes.</span></span> <span data-ttu-id="7ca15-148">エンティティ デザイナーを使用すると、この非常に制度の高い制御を達成することができます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-148">You can use the entity designer to achieve this extra degree of granular control.</span></span> <span data-ttu-id="7ca15-149">エンティティの **メタデータ**&gt;**データ ソース** ノードで、エンティティ ノードを選択すると、その 1 つのデータソースの **IsReadOnly** プロパティの値を設定できます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-149">Under the entity's **Metadata** &gt; **Data Sources** node, you can select an entity node and then set the **IsReadOnly** property value for that one data source.</span></span> <span data-ttu-id="7ca15-150">次のテーブルでは、データ ソース レベルの **IsReadOnly** 設定とエンティティ レベルの相互作用について説明します。</span><span class="sxs-lookup"><span data-stu-id="7ca15-150">The following table describes the interaction between the **IsReadOnly** settings at the data source level and the entity level.</span></span>
+
+<table>
+<thead>
+<tr>
+<th><span data-ttu-id="7ca15-151">グループ化</span><span class="sxs-lookup"><span data-stu-id="7ca15-151">Group</span></span></th>
+<th><span data-ttu-id="7ca15-152">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="7ca15-152">Property name</span></span></th>
+<th><span data-ttu-id="7ca15-153">表示名</span><span class="sxs-lookup"><span data-stu-id="7ca15-153">Display name</span></span></th>
+<th><span data-ttu-id="7ca15-154">値</span><span class="sxs-lookup"><span data-stu-id="7ca15-154">Values</span></span></th>
+<th><span data-ttu-id="7ca15-155">既定</span><span class="sxs-lookup"><span data-stu-id="7ca15-155">Default</span></span></th>
+<th><span data-ttu-id="7ca15-156">説明</span><span class="sxs-lookup"><span data-stu-id="7ca15-156">Description</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span data-ttu-id="7ca15-157">動作</span><span class="sxs-lookup"><span data-stu-id="7ca15-157">Behavior</span></span></td>
+<td><span data-ttu-id="7ca15-158">IsReadOnly</span><span class="sxs-lookup"><span data-stu-id="7ca15-158">IsReadOnly</span></span></td>
+<td><span data-ttu-id="7ca15-159">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="7ca15-159">Is Read Only</span></span></td>
+<td><span data-ttu-id="7ca15-160">いいえ、はい</span><span class="sxs-lookup"><span data-stu-id="7ca15-160">No, Yes</span></span></td>
+<td><span data-ttu-id="7ca15-161">無</span><span class="sxs-lookup"><span data-stu-id="7ca15-161">No</span></span></td>
+<td><ul>
+<li><span data-ttu-id="7ca15-162"><strong>いいえ:</strong> エンティティ レベルで <strong>IsReadOnly</strong> が <strong>はい</strong>にセットされて<em>いない限り</em>、データ変更操作 (CUD) <em>は</em>データ ソースで許可されます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-162"><strong>No:</strong> Data modification operations (CUD) <em>are</em> allowed on the data source, <em>unless</em> <strong>IsReadOnly</strong> is set to <strong>Yes</strong> at the entity level.</span></span></li>
+<li><span data-ttu-id="7ca15-163"><strong>はい:</strong> エンティティの <strong>IsReadOnly</strong> 設定に関係なく、操作のみが許可されます</span><span class="sxs-lookup"><span data-stu-id="7ca15-163"><strong>Yes:</strong> Only operations are allowed, regardless of the <strong>IsReadOnly</strong> setting on the entity.</span></span></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+## <a name="field-level"></a><span data-ttu-id="7ca15-164">フィールド レベル</span><span class="sxs-lookup"><span data-stu-id="7ca15-164">Field level</span></span>
+<span data-ttu-id="7ca15-165">フィールド レベルにおいて、**AllowEdit** と **AllowEditOnCreate** プロパティは **IsReadOnly** プロパティの代わりに利用可能です。</span><span class="sxs-lookup"><span data-stu-id="7ca15-165">At the field level, the **AllowEdit** and **AllowEditOnCreate** properties are available instead of an **IsReadOnly** property.</span></span> <span data-ttu-id="7ca15-166">2 つの**許可**プロパティには、3 番目の利用可能な値として**自動**が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7ca15-166">The two **Allow** properties include **Auto** as a third available value.</span></span> <span data-ttu-id="7ca15-167">**自動** 値は、基になっているテーブルのフィールドにある値を継承します。</span><span class="sxs-lookup"><span data-stu-id="7ca15-167">The **Auto** value inherits the value that is on the field in the underlying table.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="7ca15-168">**自動**の値は、計算フィールドや仮想フィールドなどのマップされていないフィールドでは使用できません。</span><span class="sxs-lookup"><span data-stu-id="7ca15-168">The **Auto** value isn't available for unmapped fields, such as computed or virtual fields.</span></span>
+
+<table>
+<thead>
+<tr>
+<th><span data-ttu-id="7ca15-169">グループ化</span><span class="sxs-lookup"><span data-stu-id="7ca15-169">Group</span></span></th>
+<th><span data-ttu-id="7ca15-170">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="7ca15-170">Property name</span></span></th>
+<th><span data-ttu-id="7ca15-171">表示名</span><span class="sxs-lookup"><span data-stu-id="7ca15-171">Display name</span></span></th>
+<th><span data-ttu-id="7ca15-172">先頭値</span><span class="sxs-lookup"><span data-stu-id="7ca15-172">Value</span></span></th>
+<th><span data-ttu-id="7ca15-173">既定</span><span class="sxs-lookup"><span data-stu-id="7ca15-173">Default</span></span></th>
+<th><span data-ttu-id="7ca15-174">説明</span><span class="sxs-lookup"><span data-stu-id="7ca15-174">Description</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span data-ttu-id="7ca15-175">動作</span><span class="sxs-lookup"><span data-stu-id="7ca15-175">Behavior</span></span></td>
+<td><span data-ttu-id="7ca15-176">AllowEditOnCreate</span><span class="sxs-lookup"><span data-stu-id="7ca15-176">AllowEditOnCreate</span></span></td>
+<td><span data-ttu-id="7ca15-177">作成時の編集を許可</span><span class="sxs-lookup"><span data-stu-id="7ca15-177">Allow edit on create</span></span></td>
+<td><span data-ttu-id="7ca15-178">自動、いいえ、はい</span><span class="sxs-lookup"><span data-stu-id="7ca15-178">Auto, No, Yes</span></span></td>
+<td><span data-ttu-id="7ca15-179">自動</span><span class="sxs-lookup"><span data-stu-id="7ca15-179">Auto</span></span></td>
+<td><ul>
+<li><span data-ttu-id="7ca15-180"><strong>自動:</strong> 基になるテーブル フィールドから、プロパティを継承します。</span><span class="sxs-lookup"><span data-stu-id="7ca15-180"><strong>Auto:</strong> The property is inherited from the underlying table field.</span></span>
+<blockquote>[!NOTE] <span data-ttu-id="7ca15-181"><strong>自動</strong>の値は、計算フィールドや仮想フィールドなどのマップされていないフィールドでは使用できません。</span><span class="sxs-lookup"><span data-stu-id="7ca15-181">The <strong>Auto</strong> value isn't available for unmapped fields, such as computed or virtual fields.</span></span></blockquote>
+</li>
+<li><span data-ttu-id="7ca15-182"><strong>いいえ:</strong> ユーザーは、このフィールドのデータを新しいレコードで変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="7ca15-182"><strong>No:</strong> Users aren't allowed to modify the data for this field in a new record.</span></span></li>
+<li><span data-ttu-id="7ca15-183"><strong>はい:</strong> ユーザーは、このフィールドのデータを新しいレコードに対して変更することができます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-183"><strong>Yes:</strong> Users are allowed to modify the data for this field for a new record.</span></span></li>
+</ul>
+<span data-ttu-id="7ca15-184">この動作はすべてのコンシューマー (X++、OData など) に適用されます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-184">This behavior is enforced for all consumers – X++, OData, and so on.</span></span>
+<blockquote>[!IMPORTANT] <span data-ttu-id="7ca15-185"><strong>いいえ</strong>および<strong>はい</strong>の値は、基になるテーブル内のフィールドの設定を上書き<em>しません</em>。</span><span class="sxs-lookup"><span data-stu-id="7ca15-185">The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</span></span></blockquote></td>
+</tr>
+<tr>
+<td><span data-ttu-id="7ca15-186">動作</span><span class="sxs-lookup"><span data-stu-id="7ca15-186">Behavior</span></span></td>
+<td><span data-ttu-id="7ca15-187">AllowEdit</span><span class="sxs-lookup"><span data-stu-id="7ca15-187">AllowEdit</span></span></td>
+<td><span data-ttu-id="7ca15-188">編集を許可</span><span class="sxs-lookup"><span data-stu-id="7ca15-188">Allow edit</span></span></td>
+<td><span data-ttu-id="7ca15-189">自動、いいえ、はい</span><span class="sxs-lookup"><span data-stu-id="7ca15-189">Auto, No, Yes</span></span></td>
+<td><span data-ttu-id="7ca15-190">自動</span><span class="sxs-lookup"><span data-stu-id="7ca15-190">Auto</span></span></td>
+<td><span data-ttu-id="7ca15-191">動作は、<strong>AllowEditOnCreate</strong> の動作と同じですが、作成されている新しいレコードではなく、<em>既存の</em>レコードへの更新に適用されます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-191">The behavior is the same as the behavior for <strong>AllowEditOnCreate</strong>, but it applies to updates to <em>existing</em> records instead of new records that are being created.</span></span> <span data-ttu-id="7ca15-192">この動作は、すべてのコンシューマー (X++、OData など) に適用されます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-192">This behavior is enforced for all consumers – X++, OData, and so on.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="7ca15-193">動作</span><span class="sxs-lookup"><span data-stu-id="7ca15-193">Behavior</span></span></td>
+<td><span data-ttu-id="7ca15-194">必須</span><span class="sxs-lookup"><span data-stu-id="7ca15-194">Mandatory</span></span></td>
+<td><span data-ttu-id="7ca15-195">必須</span><span class="sxs-lookup"><span data-stu-id="7ca15-195">Mandatory</span></span></td>
+<td><span data-ttu-id="7ca15-196">自動、いいえ、はい</span><span class="sxs-lookup"><span data-stu-id="7ca15-196">Auto, No, Yes</span></span></td>
+<td><span data-ttu-id="7ca15-197">自動</span><span class="sxs-lookup"><span data-stu-id="7ca15-197">Auto</span></span></td>
+<td><span data-ttu-id="7ca15-198"><strong>自動:</strong> 基になるテーブル フィールドから、プロパティを継承します。</span><span class="sxs-lookup"><span data-stu-id="7ca15-198"><strong>Auto:</strong> The property is inherited from the underlying table field.</span></span> <span data-ttu-id="7ca15-199">この動作は、すべてのコンシューマー (X++、OData など) に適用されます。</span><span class="sxs-lookup"><span data-stu-id="7ca15-199">This behavior is enforced for all consumers – X++, OData, and so on.</span></span>
+<blockquote>[!IMPORTANT] <span data-ttu-id="7ca15-200"><strong>いいえ</strong>および<strong>はい</strong>の値は、基になるテーブル内のフィールドの設定を上書き<em>しません</em>。</span><span class="sxs-lookup"><span data-stu-id="7ca15-200">The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</span></span></blockquote></td>
+</tr>
+</tbody>
+</table>
