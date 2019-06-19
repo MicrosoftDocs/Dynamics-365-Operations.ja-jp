@@ -1,480 +1,129 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="retail-modern-pos-offline.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>retail-modern-pos-offline.c09c3e.8e3b2fd2e6780570e3480c25df2e7bff42b4d4da.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>8e3b2fd2e6780570e3480c25df2e7bff42b4d4da</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\dev-itpro\retail-modern-pos-offline.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Retail Modern POS (MPOS) in offline mode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オフライン モードの Retail Modern POS (MPOS)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This article explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、Retail サーバーが利用できない場合に、オフライン モードで Retail Modern POS デバイスを使用する方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Retail Modern POS (MPOS) in offline mode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オフライン モードの Retail Modern POS (MPOS)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Retail サーバーが利用できない場合に、オフライン モードで Retail Modern POS デバイスを使用する方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>A Retail Modern POS device will go offline if the Retail Server is unavailable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail サーバーが利用できない場合、Retail Modern POS はオフラインになります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>When the connection with the Retail Server is lost, the point of sale (POS) automatically switches to the offline database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail サーバーとの接続が失われると、販売時点管理 (POS) はオフライン データベースに自動的に接続されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>If a data request doesn't succeed within the time-out interval that is configured in the offline profile, Retail Modern POS automatically switches to the offline database and continues the sales transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オフライン プロファイルでコンフィギュレーションされたタイムアウトの間隔内でデータの要求が成功しない場合、Retail Modern POS は自動的にオフライン データベースに切り替わり、販売トランザクションを続行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Retail Modern POS will try to reconnect to the Retail Server after the reconnect attempt interval that is configured in the offline profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS はオフライン プロファイルでコンフィギュレーションされた再接続試行間隔の後に Retail Server への再接続を試みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>This reconnect attempt will occur only at the beginning of a transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この再接続の試みは、トランザクションの開始時にのみ発生します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Determine the connection mode of Retail Modern POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS の接続モードを決定する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>The status header of Retail Modern POS indicates the current connection status.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS のステータス ヘッダーは、現在の接続状態を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>connection<ept id="p1">](./media/connection.png)](./media/connection.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>接続<ept id="p1">](./media/connection.png)](./media/connection.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>The <bpt id="p1">**</bpt>Connection status<ept id="p1">**</ept> page in Retail Modern POS shows the status of the last attempt to synchronize with the offline database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS の<bpt id="p1">**</bpt>接続ステータス<ept id="p1">**</ept>ページには、オフライン データベースと同期する前回の試みのステータスが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>connection status<ept id="p1">](./media/connection-status.png)](./media/connection-status.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>接続ステータス<ept id="p1">](./media/connection-status.png)](./media/connection-status.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Create a button to manually switch between online and offline modes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手動でオンラインとオフライン モードを切り替えるためのボタンを作成</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>You can add a button to Retail Modern POS to manually switch between online and offline modes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS にオンラインとオフライン モードを手動で切り替えるボタンを追加できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Create a button for <bpt id="p1">**</bpt>POS operation 917 – Database connection status<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>POS 操作 917 – データベース接続ステータス<ept id="p1">**</ept>のボタンを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Use the button as a toggle to connect or disconnect.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">接続または切断するには、ボタンをトグルとして切り替えて使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Operations that can be completed when the channel database is offline</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル データベースがオフラインのときに実行できる操作</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>You can complete the following operations when the channel database is offline.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル データベースがオフラインときは、次の操作を完了することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>If any functionality requires Commerce Data Exchange: Real-time Service, you receive an error message that states that the operation isn't supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce Data Exchange: リアルタイム サービスが必要な機能があれば、操作がサポートされていないことを示すエラー メッセージが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>An example of this is the Inventory Lookup operation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この例は、在庫検索操作です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>While the operation will allow you to look up an item, the Real-time Service call necessary to get available inventory data from the store's warehouse and the related store's warehouses as defined in the store's Fulfillment Group will fail if there is no connectivity to HQ.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">工程では品目の検索が許可されますが、HQ への接続がない場合、店舗の調達グループで定義された店舗の倉庫と関連する店舗の倉庫から入手可能な在庫データに必要なリアルタイム サービス コールは失敗します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source><bpt id="p1">**</bpt>Tip:<ept id="p1">**</ept> Reports and other operations will act only on the data that is available in the offline database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ヒント:<ept id="p1">**</ept> オフライン データベースで使用できるデータにのみ、レポートおよびその他の操作が実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Operation ID</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">操作 ID</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>100</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">100</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Product sale</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品売上</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>101</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">101</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Price check</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">価格の確認</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>102</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Void product</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の無効化</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>103</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">103</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Product comment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品コメント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>104</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">104</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Price override</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">価格変更</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>105</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">105</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Set quantity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">数量の設定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>106</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">106</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Clear quantity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">数量のクリア</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>108</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">108</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Product search</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品検索</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>109</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">109</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Return product</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">返品</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>115</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">115</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Show journal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕訳帳の表示</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>117</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">117</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Add loyalty card</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティ カードの追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>123</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">123</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Change unit of measure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">単位の変更</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>128</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">128</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Override transaction tax from list</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストから取引税を上書きする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>130</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">130</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Override line product tax from list</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストから明細行の製品税を上書きする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>132</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">132</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Deposit override</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">預金の上書き</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>134</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">134</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Add affiliation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">所属を追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>135</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">135</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Add affiliation from list</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストから所属を追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>200</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">200</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Pay cash</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現金で支払う</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>202</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">202</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Pay customer account</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客口座から支払う</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>203</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">203</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Pay currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各種通貨で支払う</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>206</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">206</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Pay cash quick</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現金で即支払う</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>211</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">211</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Void payment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払の無効化</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>214</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">214</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Pay gift card</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ギフト カードで支払う</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>300</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">300</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Line discount amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">品目割引金額</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>301</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">301</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Line discount percent</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">品目割引率</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>302</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">302</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Total discount amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">合計割引金額</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>303</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">303</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Total discount percent</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">合計割引率</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>500</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">500</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Void transaction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの無効化</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>501</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">501</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Transaction comment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクション コメント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>503</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">503</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Suspend transaction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの中断</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>512</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">512</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Issue gift card</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ギフト カードの発行</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>515</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">515</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Recall order</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文の取り消し</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>519</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">519</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Add to gift card</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ギフト カードに追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>520</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">520</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Gift card balance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ギフト カード残高</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>602</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">602</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Customer search</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客検索</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>603</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">603</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Customer clear</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客のクリア</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>612</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">612</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Customer add</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客の追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>622</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">622</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Search</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検索</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>623</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">623</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Edit customer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客の編集</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>701</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">701</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Log off</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ログオフ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>703</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">703</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Lock register</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レジスターのロック</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>801</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">801</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Inventory lookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">在庫検索</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>802</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">802</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Stock count</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">在庫数</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>917</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">917</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Database connection status</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベース接続ステータス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>920</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">920</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Time clock</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タイム レコーダー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>921</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">921</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>View time clock entries</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タイム レコーダー エントリの表示</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>922</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">922</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>View product details</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の詳細表示</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>1003</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1003</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>View reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートの表示</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>1052</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1052</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Tender declaration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払/入金申告</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>1200</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1200</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Declare start amount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開始金額の申告</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>1201</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1201</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>Float entry</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">釣銭入力</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>1210</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1210</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Tender removal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払/入金の削除</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>1211</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1211</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Safe drop</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">金庫保管</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>1212</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1212</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Bank drop</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">銀行入金</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Operations that can’t be completed when the channel database is offline</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル データベースがオフラインのときに実行できない操作</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>You can’t complete the following operations when the channel database is offline.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル データベースがオフラインときは、次の操作を完了することができません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Operation ID</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">操作 ID</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>207</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">207</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>Pay loyalty card</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティ カードで支払う</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>707</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">707</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Activate device</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デバイスのアクティブ化</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>708</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">708</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Inactivate device</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デバイスの無効化</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>1053</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1053</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Blind close shift</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シフトのブラインド クローズ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>1054</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1054</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>Suspend shift</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シフトの中断</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>1055</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1055</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Close shift</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シフトのクローズ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>1056</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1056</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Print X</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X の印刷</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>1057</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1057</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Reprint Z</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">再印刷 Z</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: オフライン モードの Retail Modern POS (MPOS)
+description: この記事では、Retail サーバーが利用できない場合に、オフライン モードで Retail Modern POS デバイスを使用する方法について説明します。
+author: RobinARH
+manager: AnnBe
+ms.date: 08/20/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations, Retail
+ms.custom: 31441
+ms.assetid: 219f93a3-6321-46e9-b989-f97072af0bb3
+ms.search.region: Global
+ms.author: meeram
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 8e3b2fd2e6780570e3480c25df2e7bff42b4d4da
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564383"
+---
+# <a name="retail-modern-pos-mpos-in-offline-mode"></a><span data-ttu-id="1dc99-103">オフライン モードの Retail Modern POS (MPOS)</span><span class="sxs-lookup"><span data-stu-id="1dc99-103">Retail Modern POS (MPOS) in offline mode</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="1dc99-104">このトピックでは、Retail サーバーが利用できない場合に、オフライン モードで Retail Modern POS デバイスを使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="1dc99-104">This topic explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.</span></span>
+
+<span data-ttu-id="1dc99-105">Retail サーバーが利用できない場合、Retail Modern POS はオフラインになります。</span><span class="sxs-lookup"><span data-stu-id="1dc99-105">A Retail Modern POS device will go offline if the Retail Server is unavailable.</span></span> <span data-ttu-id="1dc99-106">Retail サーバーとの接続が失われると、販売時点管理 (POS) はオフライン データベースに自動的に接続されます。</span><span class="sxs-lookup"><span data-stu-id="1dc99-106">When the connection with the Retail Server is lost, the point of sale (POS) automatically switches to the offline database.</span></span> <span data-ttu-id="1dc99-107">オフライン プロファイルでコンフィギュレーションされたタイムアウトの間隔内でデータの要求が成功しない場合、Retail Modern POS は自動的にオフライン データベースに切り替わり、販売トランザクションを続行します。</span><span class="sxs-lookup"><span data-stu-id="1dc99-107">If a data request doesn't succeed within the time-out interval that is configured in the offline profile, Retail Modern POS automatically switches to the offline database and continues the sales transaction.</span></span> <span data-ttu-id="1dc99-108">Retail Modern POS はオフライン プロファイルでコンフィギュレーションされた再接続試行間隔の後に Retail Server への再接続を試みます。</span><span class="sxs-lookup"><span data-stu-id="1dc99-108">Retail Modern POS will try to reconnect to the Retail Server after the reconnect attempt interval that is configured in the offline profile.</span></span> <span data-ttu-id="1dc99-109">この再接続の試みは、トランザクションの開始時にのみ発生します。</span><span class="sxs-lookup"><span data-stu-id="1dc99-109">This reconnect attempt will occur only at the beginning of a transaction.</span></span>
+
+## <a name="determine-the-connection-mode-of-retail-modern-pos"></a><span data-ttu-id="1dc99-110">Retail Modern POS の接続モードを決定する</span><span class="sxs-lookup"><span data-stu-id="1dc99-110">Determine the connection mode of Retail Modern POS</span></span>
+<span data-ttu-id="1dc99-111">Retail Modern POS のステータス ヘッダーは、現在の接続状態を示します。</span><span class="sxs-lookup"><span data-stu-id="1dc99-111">The status header of Retail Modern POS indicates the current connection status.</span></span> 
+
+<span data-ttu-id="1dc99-112">[![接続](./media/connection.png)](./media/connection.png)</span><span class="sxs-lookup"><span data-stu-id="1dc99-112">[![connection](./media/connection.png)](./media/connection.png)</span></span> 
+
+<span data-ttu-id="1dc99-113">Retail Modern POS の**接続ステータス**ページには、オフライン データベースと同期する前回の試みのステータスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1dc99-113">The **Connection status** page in Retail Modern POS shows the status of the last attempt to synchronize with the offline database.</span></span> 
+
+<span data-ttu-id="1dc99-114">[![接続ステータス](./media/connection-status.png)](./media/connection-status.png)</span><span class="sxs-lookup"><span data-stu-id="1dc99-114">[![connection status](./media/connection-status.png)](./media/connection-status.png)</span></span>
+
+## <a name="create-a-button-to-manually-switch-between-online-and-offline-modes"></a><span data-ttu-id="1dc99-115">手動でオンラインとオフライン モードを切り替えるためのボタンを作成</span><span class="sxs-lookup"><span data-stu-id="1dc99-115">Create a button to manually switch between online and offline modes</span></span>
+<span data-ttu-id="1dc99-116">Retail Modern POS にオンラインとオフライン モードを手動で切り替えるボタンを追加できます。</span><span class="sxs-lookup"><span data-stu-id="1dc99-116">You can add a button to Retail Modern POS to manually switch between online and offline modes.</span></span> <span data-ttu-id="1dc99-117">**POS 操作 917 – データベース接続ステータス**のボタンを作成します。</span><span class="sxs-lookup"><span data-stu-id="1dc99-117">Create a button for **POS operation 917 – Database connection status**.</span></span> <span data-ttu-id="1dc99-118">接続または切断するには、ボタンをトグルとして切り替えて使用します。</span><span class="sxs-lookup"><span data-stu-id="1dc99-118">Use the button as a toggle to connect or disconnect.</span></span>
+
+## <a name="operations-that-can-be-completed-when-the-channel-database-is-offline"></a><span data-ttu-id="1dc99-119">チャネル データベースがオフラインのときに実行できる操作</span><span class="sxs-lookup"><span data-stu-id="1dc99-119">Operations that can be completed when the channel database is offline</span></span>
+<span data-ttu-id="1dc99-120">チャネル データベースがオフラインときは、次の操作を完了することができます。</span><span class="sxs-lookup"><span data-stu-id="1dc99-120">You can complete the following operations when the channel database is offline.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="1dc99-121">Commerce Data Exchange: リアルタイム サービスが必要な機能があれば、操作がサポートされていないことを示すエラー メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1dc99-121">If any functionality requires Commerce Data Exchange: Real-time Service, you receive an error message that states that the operation isn't supported.</span></span> <span data-ttu-id="1dc99-122">この例は、在庫検索操作です。</span><span class="sxs-lookup"><span data-stu-id="1dc99-122">An example of this is the Inventory Lookup operation.</span></span> <span data-ttu-id="1dc99-123">工程では品目の検索が許可されますが、HQ への接続がない場合、店舗の調達グループで定義された店舗の倉庫と関連する店舗の倉庫から入手可能な在庫データに必要なリアルタイム サービス コールは失敗します。</span><span class="sxs-lookup"><span data-stu-id="1dc99-123">While the operation will allow you to look up an item, the Real-time Service call necessary to get available inventory data from the store's warehouse and the related store's warehouses as defined in the store's Fulfillment Group will fail if there is no connectivity to HQ.</span></span>   
+
+<span data-ttu-id="1dc99-124">**ヒント:** オフライン データベースで使用できるデータにのみ、レポートおよびその他の操作が実行されます。</span><span class="sxs-lookup"><span data-stu-id="1dc99-124">**Tip:** Reports and other operations will act only on the data that is available in the offline database.</span></span>
+
+| <span data-ttu-id="1dc99-125">操作 ID</span><span class="sxs-lookup"><span data-stu-id="1dc99-125">Operation ID</span></span> | <span data-ttu-id="1dc99-126">説明</span><span class="sxs-lookup"><span data-stu-id="1dc99-126">Description</span></span>                         |
+|--------------|-------------------------------------|
+| <span data-ttu-id="1dc99-127">100</span><span class="sxs-lookup"><span data-stu-id="1dc99-127">100</span></span>          | <span data-ttu-id="1dc99-128">製品売上</span><span class="sxs-lookup"><span data-stu-id="1dc99-128">Product sale</span></span>                        |
+| <span data-ttu-id="1dc99-129">101</span><span class="sxs-lookup"><span data-stu-id="1dc99-129">101</span></span>          | <span data-ttu-id="1dc99-130">価格の確認</span><span class="sxs-lookup"><span data-stu-id="1dc99-130">Price check</span></span>                         |
+| <span data-ttu-id="1dc99-131">102</span><span class="sxs-lookup"><span data-stu-id="1dc99-131">102</span></span>          | <span data-ttu-id="1dc99-132">製品の無効化</span><span class="sxs-lookup"><span data-stu-id="1dc99-132">Void product</span></span>                        |
+| <span data-ttu-id="1dc99-133">103</span><span class="sxs-lookup"><span data-stu-id="1dc99-133">103</span></span>          | <span data-ttu-id="1dc99-134">製品コメント</span><span class="sxs-lookup"><span data-stu-id="1dc99-134">Product comment</span></span>                     |
+| <span data-ttu-id="1dc99-135">104</span><span class="sxs-lookup"><span data-stu-id="1dc99-135">104</span></span>          | <span data-ttu-id="1dc99-136">価格変更</span><span class="sxs-lookup"><span data-stu-id="1dc99-136">Price override</span></span>                      |
+| <span data-ttu-id="1dc99-137">105</span><span class="sxs-lookup"><span data-stu-id="1dc99-137">105</span></span>          | <span data-ttu-id="1dc99-138">数量の設定</span><span class="sxs-lookup"><span data-stu-id="1dc99-138">Set quantity</span></span>                        |
+| <span data-ttu-id="1dc99-139">106</span><span class="sxs-lookup"><span data-stu-id="1dc99-139">106</span></span>          | <span data-ttu-id="1dc99-140">数量のクリア</span><span class="sxs-lookup"><span data-stu-id="1dc99-140">Clear quantity</span></span>                      |
+| <span data-ttu-id="1dc99-141">108</span><span class="sxs-lookup"><span data-stu-id="1dc99-141">108</span></span>          | <span data-ttu-id="1dc99-142">製品検索</span><span class="sxs-lookup"><span data-stu-id="1dc99-142">Product search</span></span>                      |
+| <span data-ttu-id="1dc99-143">109</span><span class="sxs-lookup"><span data-stu-id="1dc99-143">109</span></span>          | <span data-ttu-id="1dc99-144">返品</span><span class="sxs-lookup"><span data-stu-id="1dc99-144">Return product</span></span>                      |
+| <span data-ttu-id="1dc99-145">115</span><span class="sxs-lookup"><span data-stu-id="1dc99-145">115</span></span>          | <span data-ttu-id="1dc99-146">仕訳帳の表示</span><span class="sxs-lookup"><span data-stu-id="1dc99-146">Show journal</span></span>                        |
+| <span data-ttu-id="1dc99-147">117</span><span class="sxs-lookup"><span data-stu-id="1dc99-147">117</span></span>          | <span data-ttu-id="1dc99-148">ロイヤルティ カードの追加</span><span class="sxs-lookup"><span data-stu-id="1dc99-148">Add loyalty card</span></span>                    |
+| <span data-ttu-id="1dc99-149">123</span><span class="sxs-lookup"><span data-stu-id="1dc99-149">123</span></span>          | <span data-ttu-id="1dc99-150">単位の変更</span><span class="sxs-lookup"><span data-stu-id="1dc99-150">Change unit of measure</span></span>              |
+| <span data-ttu-id="1dc99-151">128</span><span class="sxs-lookup"><span data-stu-id="1dc99-151">128</span></span>          | <span data-ttu-id="1dc99-152">リストから取引税を上書きする</span><span class="sxs-lookup"><span data-stu-id="1dc99-152">Override transaction tax from list</span></span>  |
+| <span data-ttu-id="1dc99-153">130</span><span class="sxs-lookup"><span data-stu-id="1dc99-153">130</span></span>          | <span data-ttu-id="1dc99-154">リストから明細行の製品税を上書きする</span><span class="sxs-lookup"><span data-stu-id="1dc99-154">Override line product tax from list</span></span> |
+| <span data-ttu-id="1dc99-155">132</span><span class="sxs-lookup"><span data-stu-id="1dc99-155">132</span></span>          | <span data-ttu-id="1dc99-156">預金の上書き</span><span class="sxs-lookup"><span data-stu-id="1dc99-156">Deposit override</span></span>                    |
+| <span data-ttu-id="1dc99-157">134</span><span class="sxs-lookup"><span data-stu-id="1dc99-157">134</span></span>          | <span data-ttu-id="1dc99-158">所属を追加</span><span class="sxs-lookup"><span data-stu-id="1dc99-158">Add affiliation</span></span>                     |
+| <span data-ttu-id="1dc99-159">135</span><span class="sxs-lookup"><span data-stu-id="1dc99-159">135</span></span>          | <span data-ttu-id="1dc99-160">リストから所属を追加</span><span class="sxs-lookup"><span data-stu-id="1dc99-160">Add affiliation from list</span></span>           |
+| <span data-ttu-id="1dc99-161">200</span><span class="sxs-lookup"><span data-stu-id="1dc99-161">200</span></span>          | <span data-ttu-id="1dc99-162">現金で支払う</span><span class="sxs-lookup"><span data-stu-id="1dc99-162">Pay cash</span></span>                            |
+| <span data-ttu-id="1dc99-163">202</span><span class="sxs-lookup"><span data-stu-id="1dc99-163">202</span></span>          | <span data-ttu-id="1dc99-164">顧客口座から支払う</span><span class="sxs-lookup"><span data-stu-id="1dc99-164">Pay customer account</span></span>                |
+| <span data-ttu-id="1dc99-165">203</span><span class="sxs-lookup"><span data-stu-id="1dc99-165">203</span></span>          | <span data-ttu-id="1dc99-166">各種通貨で支払う</span><span class="sxs-lookup"><span data-stu-id="1dc99-166">Pay currency</span></span>                        |
+| <span data-ttu-id="1dc99-167">206</span><span class="sxs-lookup"><span data-stu-id="1dc99-167">206</span></span>          | <span data-ttu-id="1dc99-168">現金で即支払う</span><span class="sxs-lookup"><span data-stu-id="1dc99-168">Pay cash quick</span></span>                      |
+| <span data-ttu-id="1dc99-169">211</span><span class="sxs-lookup"><span data-stu-id="1dc99-169">211</span></span>          | <span data-ttu-id="1dc99-170">支払の無効化</span><span class="sxs-lookup"><span data-stu-id="1dc99-170">Void payment</span></span>                        |
+| <span data-ttu-id="1dc99-171">214</span><span class="sxs-lookup"><span data-stu-id="1dc99-171">214</span></span>          | <span data-ttu-id="1dc99-172">ギフト カードで支払う</span><span class="sxs-lookup"><span data-stu-id="1dc99-172">Pay gift card</span></span>                       |
+| <span data-ttu-id="1dc99-173">300</span><span class="sxs-lookup"><span data-stu-id="1dc99-173">300</span></span>          | <span data-ttu-id="1dc99-174">品目割引金額</span><span class="sxs-lookup"><span data-stu-id="1dc99-174">Line discount amount</span></span>                |
+| <span data-ttu-id="1dc99-175">301</span><span class="sxs-lookup"><span data-stu-id="1dc99-175">301</span></span>          | <span data-ttu-id="1dc99-176">品目割引率</span><span class="sxs-lookup"><span data-stu-id="1dc99-176">Line discount percent</span></span>               |
+| <span data-ttu-id="1dc99-177">302</span><span class="sxs-lookup"><span data-stu-id="1dc99-177">302</span></span>          | <span data-ttu-id="1dc99-178">合計割引金額</span><span class="sxs-lookup"><span data-stu-id="1dc99-178">Total discount amount</span></span>               |
+| <span data-ttu-id="1dc99-179">303</span><span class="sxs-lookup"><span data-stu-id="1dc99-179">303</span></span>          | <span data-ttu-id="1dc99-180">合計割引率</span><span class="sxs-lookup"><span data-stu-id="1dc99-180">Total discount percent</span></span>              |
+| <span data-ttu-id="1dc99-181">500</span><span class="sxs-lookup"><span data-stu-id="1dc99-181">500</span></span>          | <span data-ttu-id="1dc99-182">トランザクションの無効化</span><span class="sxs-lookup"><span data-stu-id="1dc99-182">Void transaction</span></span>                    |
+| <span data-ttu-id="1dc99-183">501</span><span class="sxs-lookup"><span data-stu-id="1dc99-183">501</span></span>          | <span data-ttu-id="1dc99-184">トランザクション コメント</span><span class="sxs-lookup"><span data-stu-id="1dc99-184">Transaction comment</span></span>                 |
+| <span data-ttu-id="1dc99-185">503</span><span class="sxs-lookup"><span data-stu-id="1dc99-185">503</span></span>          | <span data-ttu-id="1dc99-186">トランザクションの中断</span><span class="sxs-lookup"><span data-stu-id="1dc99-186">Suspend transaction</span></span>                 |
+| <span data-ttu-id="1dc99-187">512</span><span class="sxs-lookup"><span data-stu-id="1dc99-187">512</span></span>          | <span data-ttu-id="1dc99-188">ギフト カードの発行</span><span class="sxs-lookup"><span data-stu-id="1dc99-188">Issue gift card</span></span>                     |
+| <span data-ttu-id="1dc99-189">515</span><span class="sxs-lookup"><span data-stu-id="1dc99-189">515</span></span>          | <span data-ttu-id="1dc99-190">注文の取り消し</span><span class="sxs-lookup"><span data-stu-id="1dc99-190">Recall order</span></span>                        |
+| <span data-ttu-id="1dc99-191">519</span><span class="sxs-lookup"><span data-stu-id="1dc99-191">519</span></span>          | <span data-ttu-id="1dc99-192">ギフト カードに追加</span><span class="sxs-lookup"><span data-stu-id="1dc99-192">Add to gift card</span></span>                    |
+| <span data-ttu-id="1dc99-193">520</span><span class="sxs-lookup"><span data-stu-id="1dc99-193">520</span></span>          | <span data-ttu-id="1dc99-194">ギフト カード残高</span><span class="sxs-lookup"><span data-stu-id="1dc99-194">Gift card balance</span></span>                   |
+| <span data-ttu-id="1dc99-195">602</span><span class="sxs-lookup"><span data-stu-id="1dc99-195">602</span></span>          | <span data-ttu-id="1dc99-196">顧客検索</span><span class="sxs-lookup"><span data-stu-id="1dc99-196">Customer search</span></span>                     |
+| <span data-ttu-id="1dc99-197">603</span><span class="sxs-lookup"><span data-stu-id="1dc99-197">603</span></span>          | <span data-ttu-id="1dc99-198">顧客のクリア</span><span class="sxs-lookup"><span data-stu-id="1dc99-198">Customer clear</span></span>                      |
+| <span data-ttu-id="1dc99-199">612</span><span class="sxs-lookup"><span data-stu-id="1dc99-199">612</span></span>          | <span data-ttu-id="1dc99-200">顧客の追加</span><span class="sxs-lookup"><span data-stu-id="1dc99-200">Customer add</span></span>                        |
+| <span data-ttu-id="1dc99-201">622</span><span class="sxs-lookup"><span data-stu-id="1dc99-201">622</span></span>          | <span data-ttu-id="1dc99-202">検索</span><span class="sxs-lookup"><span data-stu-id="1dc99-202">Search</span></span>                              |
+| <span data-ttu-id="1dc99-203">623</span><span class="sxs-lookup"><span data-stu-id="1dc99-203">623</span></span>          | <span data-ttu-id="1dc99-204">顧客の編集</span><span class="sxs-lookup"><span data-stu-id="1dc99-204">Edit customer</span></span>                       |
+| <span data-ttu-id="1dc99-205">701</span><span class="sxs-lookup"><span data-stu-id="1dc99-205">701</span></span>          | <span data-ttu-id="1dc99-206">ログオフ</span><span class="sxs-lookup"><span data-stu-id="1dc99-206">Log off</span></span>                             |
+| <span data-ttu-id="1dc99-207">703</span><span class="sxs-lookup"><span data-stu-id="1dc99-207">703</span></span>          | <span data-ttu-id="1dc99-208">レジスターのロック</span><span class="sxs-lookup"><span data-stu-id="1dc99-208">Lock register</span></span>                       |
+| <span data-ttu-id="1dc99-209">801</span><span class="sxs-lookup"><span data-stu-id="1dc99-209">801</span></span>          | <span data-ttu-id="1dc99-210">在庫検索</span><span class="sxs-lookup"><span data-stu-id="1dc99-210">Inventory lookup</span></span>                    |
+| <span data-ttu-id="1dc99-211">802</span><span class="sxs-lookup"><span data-stu-id="1dc99-211">802</span></span>          | <span data-ttu-id="1dc99-212">在庫数</span><span class="sxs-lookup"><span data-stu-id="1dc99-212">Stock count</span></span>                         |
+| <span data-ttu-id="1dc99-213">917</span><span class="sxs-lookup"><span data-stu-id="1dc99-213">917</span></span>          | <span data-ttu-id="1dc99-214">データベース接続ステータス</span><span class="sxs-lookup"><span data-stu-id="1dc99-214">Database connection status</span></span>          |
+| <span data-ttu-id="1dc99-215">920</span><span class="sxs-lookup"><span data-stu-id="1dc99-215">920</span></span>          | <span data-ttu-id="1dc99-216">タイム レコーダー</span><span class="sxs-lookup"><span data-stu-id="1dc99-216">Time clock</span></span>                          |
+| <span data-ttu-id="1dc99-217">921</span><span class="sxs-lookup"><span data-stu-id="1dc99-217">921</span></span>          | <span data-ttu-id="1dc99-218">タイム レコーダー エントリの表示</span><span class="sxs-lookup"><span data-stu-id="1dc99-218">View time clock entries</span></span>             |
+| <span data-ttu-id="1dc99-219">922</span><span class="sxs-lookup"><span data-stu-id="1dc99-219">922</span></span>          | <span data-ttu-id="1dc99-220">製品の詳細表示</span><span class="sxs-lookup"><span data-stu-id="1dc99-220">View product details</span></span>                |
+| <span data-ttu-id="1dc99-221">1003</span><span class="sxs-lookup"><span data-stu-id="1dc99-221">1003</span></span>         | <span data-ttu-id="1dc99-222">レポートの表示</span><span class="sxs-lookup"><span data-stu-id="1dc99-222">View reports</span></span>                        |
+| <span data-ttu-id="1dc99-223">1052</span><span class="sxs-lookup"><span data-stu-id="1dc99-223">1052</span></span>         | <span data-ttu-id="1dc99-224">支払/入金申告</span><span class="sxs-lookup"><span data-stu-id="1dc99-224">Tender declaration</span></span>                  |
+| <span data-ttu-id="1dc99-225">1200</span><span class="sxs-lookup"><span data-stu-id="1dc99-225">1200</span></span>         | <span data-ttu-id="1dc99-226">開始金額の申告</span><span class="sxs-lookup"><span data-stu-id="1dc99-226">Declare start amount</span></span>                |
+| <span data-ttu-id="1dc99-227">1201</span><span class="sxs-lookup"><span data-stu-id="1dc99-227">1201</span></span>         | <span data-ttu-id="1dc99-228">釣銭入力</span><span class="sxs-lookup"><span data-stu-id="1dc99-228">Float entry</span></span>                         |
+| <span data-ttu-id="1dc99-229">1210</span><span class="sxs-lookup"><span data-stu-id="1dc99-229">1210</span></span>         | <span data-ttu-id="1dc99-230">支払/入金の削除</span><span class="sxs-lookup"><span data-stu-id="1dc99-230">Tender removal</span></span>                      |
+| <span data-ttu-id="1dc99-231">1211</span><span class="sxs-lookup"><span data-stu-id="1dc99-231">1211</span></span>         | <span data-ttu-id="1dc99-232">金庫保管</span><span class="sxs-lookup"><span data-stu-id="1dc99-232">Safe drop</span></span>                           |
+| <span data-ttu-id="1dc99-233">1212</span><span class="sxs-lookup"><span data-stu-id="1dc99-233">1212</span></span>         | <span data-ttu-id="1dc99-234">銀行入金</span><span class="sxs-lookup"><span data-stu-id="1dc99-234">Bank drop</span></span>                           |
+
+## <a name="operations-that-cant-be-completed-when-the-channel-database-is-offline"></a><span data-ttu-id="1dc99-235">チャネル データベースがオフラインのときに実行できない操作</span><span class="sxs-lookup"><span data-stu-id="1dc99-235">Operations that can’t be completed when the channel database is offline</span></span>
+<span data-ttu-id="1dc99-236">チャネル データベースがオフラインときは、次の操作を完了することができません。</span><span class="sxs-lookup"><span data-stu-id="1dc99-236">You can’t complete the following operations when the channel database is offline.</span></span>
+
+| <span data-ttu-id="1dc99-237">操作 ID</span><span class="sxs-lookup"><span data-stu-id="1dc99-237">Operation ID</span></span> | <span data-ttu-id="1dc99-238">説明</span><span class="sxs-lookup"><span data-stu-id="1dc99-238">Description</span></span>       |
+|--------------|-------------------|
+| <span data-ttu-id="1dc99-239">207</span><span class="sxs-lookup"><span data-stu-id="1dc99-239">207</span></span>          | <span data-ttu-id="1dc99-240">ロイヤルティ カードで支払う</span><span class="sxs-lookup"><span data-stu-id="1dc99-240">Pay loyalty card</span></span>  |
+| <span data-ttu-id="1dc99-241">707</span><span class="sxs-lookup"><span data-stu-id="1dc99-241">707</span></span>          | <span data-ttu-id="1dc99-242">デバイスのアクティブ化</span><span class="sxs-lookup"><span data-stu-id="1dc99-242">Activate device</span></span>   |
+| <span data-ttu-id="1dc99-243">708</span><span class="sxs-lookup"><span data-stu-id="1dc99-243">708</span></span>          | <span data-ttu-id="1dc99-244">デバイスの無効化</span><span class="sxs-lookup"><span data-stu-id="1dc99-244">Inactivate device</span></span> |
+| <span data-ttu-id="1dc99-245">1053</span><span class="sxs-lookup"><span data-stu-id="1dc99-245">1053</span></span>         | <span data-ttu-id="1dc99-246">シフトのブラインド クローズ</span><span class="sxs-lookup"><span data-stu-id="1dc99-246">Blind close shift</span></span> |
+| <span data-ttu-id="1dc99-247">1054</span><span class="sxs-lookup"><span data-stu-id="1dc99-247">1054</span></span>         | <span data-ttu-id="1dc99-248">シフトの中断</span><span class="sxs-lookup"><span data-stu-id="1dc99-248">Suspend shift</span></span>     |
+| <span data-ttu-id="1dc99-249">1055</span><span class="sxs-lookup"><span data-stu-id="1dc99-249">1055</span></span>         | <span data-ttu-id="1dc99-250">シフトのクローズ</span><span class="sxs-lookup"><span data-stu-id="1dc99-250">Close shift</span></span>       |
+| <span data-ttu-id="1dc99-251">1056</span><span class="sxs-lookup"><span data-stu-id="1dc99-251">1056</span></span>         | <span data-ttu-id="1dc99-252">X の印刷</span><span class="sxs-lookup"><span data-stu-id="1dc99-252">Print X</span></span>           |
+| <span data-ttu-id="1dc99-253">1057</span><span class="sxs-lookup"><span data-stu-id="1dc99-253">1057</span></span>         | <span data-ttu-id="1dc99-254">再印刷 Z</span><span class="sxs-lookup"><span data-stu-id="1dc99-254">Reprint Z</span></span>         |
+
+
+
+
+

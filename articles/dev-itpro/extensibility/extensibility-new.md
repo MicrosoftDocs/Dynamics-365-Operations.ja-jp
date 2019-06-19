@@ -1,75 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="extensibility-new.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>extensibility-new.019bb0.7a591e6c8deb3ec6bf08e253b7f5f19b7288e044.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>7a591e6c8deb3ec6bf08e253b7f5f19b7288e044</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\extensibility\extensibility-new.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>What's new or changed for extensibility</source><target logoport:matchpercent="73" state="translated" state-qualifier="fuzzy-match">拡張性の新機能および変更された機能</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides links to topics about extensibility updates.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">このトピックでは、拡張性の更新に関するトピックへのリンクを提供します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>What's new or changed for extensibility</source>
-        <target logoport:matchpercent="73" state="translated" state-qualifier="leveraged-inherited">拡張性の新機能および変更された機能</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic provides links to extensibility updates for Dynamics 365 for Finance and Operations.</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match">このトピックでは Dynamics 365 for Finance and Operations に対する拡張性の更新へのリンクを提供します。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 10.0.3<ept id="p1">](extensibility-changes-10-3.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 10.0.3)<ept id="p1">](extensibility-changes-10-3.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 10.0.2<ept id="p1">](extensibility-changes-10-2.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 10.0.2)<ept id="p1">](extensibility-changes-10-2.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 10.0.1<ept id="p1">](extensibility-changes-10-1.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 10.0.1)<ept id="p1">](extensibility-changes-10-1.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 10.0<ept id="p1">](extensibility-changes-10.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 10.0)<ept id="p1">](extensibility-changes-10.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 8.1.3<ept id="p1">](extensibility-changes-813.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 8.1.3)<ept id="p1">](extensibility-changes-813.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 8.1.2<ept id="p1">](extensibility-changes-812.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 8.1.2)<ept id="p1">](extensibility-changes-812.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 8.1.1<ept id="p1">](extensibility-changes-811.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 8.1.1)<ept id="p1">](extensibility-changes-811.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 8.1<ept id="p1">](extensibility-changes-81.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 8.1)<ept id="p1">](extensibility-changes-81.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 8.0.4<ept id="p1">](extensibility-changes-804.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 8.0.4)<ept id="p1">](extensibility-changes-804.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 8.0.3<ept id="p1">](extensibility-changes-803.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 8.0.3)<ept id="p1">](extensibility-changes-803.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 8.0.2<ept id="p1">](extensibility-changes-802.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 8.0.2)<ept id="p1">](extensibility-changes-802.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">[</bpt>Extensibility changes version 8.0.1<ept id="p1">](extensibility-changes-801.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (バージョン 8.0.1)<ept id="p1">](extensibility-changes-801.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">[</bpt>Extensibility changes in version 8.0<ept id="p1">](Changes-80.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>バージョン 8.0 の拡張機能の変更<ept id="p1">](Changes-80.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source><bpt id="p1">[</bpt>Extensibility changes in version 7.3<ept id="p1">](extensibility-changes-73.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>バージョン 7.3 の拡張機能の変更<ept id="p1">](extensibility-changes-73.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source><bpt id="p1">[</bpt>Extensibility changes July 2017<ept id="p1">](changes-july-2017.md)</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張機能の変更 (2017 年 7 月)<ept id="p1">](changes-july-2017.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: 拡張性の新機能および変更された機能
+description: このトピックでは、拡張性の更新に関するトピックへのリンクを提供します。
+author: RobinARH
+manager: AnnBe
+ms.date: 05/14/2019
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 268724
+ms.assetid: ''
+ms.search.region: Global
+ms.author: rhaertle
+ms.search.validFrom: 2019-05-14
+ms.dyn365.ops.version: Platform update 4
+ms.openlocfilehash: 7a591e6c8deb3ec6bf08e253b7f5f19b7288e044
+ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1577586"
+---
+# <a name="whats-new-or-changed-for-extensibility"></a><span data-ttu-id="9ae7b-103">拡張性の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="9ae7b-103">What's new or changed for extensibility</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="9ae7b-104">このトピックでは Dynamics 365 for Finance and Operations に対する拡張性の更新へのリンクを提供します。</span><span class="sxs-lookup"><span data-stu-id="9ae7b-104">This topic provides links to extensibility updates for Dynamics 365 for Finance and Operations.</span></span>
+
++ [<span data-ttu-id="9ae7b-105">拡張機能の変更 (バージョン 10.0.3)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-105">Extensibility changes version 10.0.3</span></span>](extensibility-changes-10-3.md)
++ [<span data-ttu-id="9ae7b-106">拡張機能の変更 (バージョン 10.0.2)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-106">Extensibility changes version 10.0.2</span></span>](extensibility-changes-10-2.md)
++ [<span data-ttu-id="9ae7b-107">拡張機能の変更 (バージョン 10.0.1)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-107">Extensibility changes version 10.0.1</span></span>](extensibility-changes-10-1.md)
++ [<span data-ttu-id="9ae7b-108">拡張機能の変更 (バージョン 10.0)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-108">Extensibility changes version 10.0</span></span>](extensibility-changes-10.md)
++ [<span data-ttu-id="9ae7b-109">拡張機能の変更 (バージョン 8.1.3)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-109">Extensibility changes version 8.1.3</span></span>](extensibility-changes-813.md)
++ [<span data-ttu-id="9ae7b-110">拡張機能の変更 (バージョン 8.1.2)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-110">Extensibility changes version 8.1.2</span></span>](extensibility-changes-812.md)
++ [<span data-ttu-id="9ae7b-111">拡張機能の変更 (バージョン 8.1.1)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-111">Extensibility changes version 8.1.1</span></span>](extensibility-changes-811.md)
++ [<span data-ttu-id="9ae7b-112">拡張機能の変更 (バージョン 8.1)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-112">Extensibility changes version 8.1</span></span>](extensibility-changes-81.md)
++ [<span data-ttu-id="9ae7b-113">拡張機能の変更 (バージョン 8.0.4)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-113">Extensibility changes version 8.0.4</span></span>](extensibility-changes-804.md)
++ [<span data-ttu-id="9ae7b-114">拡張機能の変更 (バージョン 8.0.3)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-114">Extensibility changes version 8.0.3</span></span>](extensibility-changes-803.md)
++ [<span data-ttu-id="9ae7b-115">拡張機能の変更 (バージョン 8.0.2)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-115">Extensibility changes version 8.0.2</span></span>](extensibility-changes-802.md)
++ [<span data-ttu-id="9ae7b-116">拡張機能の変更 (バージョン 8.0.1)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-116">Extensibility changes version 8.0.1</span></span>](extensibility-changes-801.md)
++ [<span data-ttu-id="9ae7b-117">バージョン 8.0 の拡張機能の変更</span><span class="sxs-lookup"><span data-stu-id="9ae7b-117">Extensibility changes in version 8.0</span></span>](Changes-80.md)
++ [<span data-ttu-id="9ae7b-118">バージョン 7.3 の拡張機能の変更</span><span class="sxs-lookup"><span data-stu-id="9ae7b-118">Extensibility changes in version 7.3</span></span>](extensibility-changes-73.md)
++ [<span data-ttu-id="9ae7b-119">拡張機能の変更 (2017 年 7 月)</span><span class="sxs-lookup"><span data-stu-id="9ae7b-119">Extensibility changes July 2017</span></span>](changes-july-2017.md)
+

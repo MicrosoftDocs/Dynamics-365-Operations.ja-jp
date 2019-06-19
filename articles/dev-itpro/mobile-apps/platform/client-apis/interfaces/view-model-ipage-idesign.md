@@ -1,276 +1,173 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="view-model-ipage-idesign.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>view-model-ipage-idesign.d66ee4.7f07dc332f5e2c27ac9ca2c9071febf27753d9bb.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>7f07dc332f5e2c27ac9ca2c9071febf27753d9bb</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\mobile-apps\platform\client-apis\interfaces\view-model-ipage-idesign.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Design type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Design タイプ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>Design object type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン オブジェクトの種類。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Design type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Design タイプ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Design object type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン オブジェクトの種類。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>For more information on design, please reference the <bpt id="p1">[</bpt>Design Introduction<ept id="p1">](../../scenarios/client-api-design-overview.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザインの詳細については、<bpt id="p1">[</bpt>デザインの概要<ept id="p1">](../../scenarios/client-api-design-overview.md)</ept> を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Hierarchy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">階層</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Design</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ <bpt id="p1">[</bpt>PageLinkDesign<ept id="p1">](view-model-control-pagelink-ipagelink-ipagelinkdesign.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ <bpt id="p1">[</bpt>PageLinkDesign<ept id="p1">](view-model-control-pagelink-ipagelink-ipagelinkdesign.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ <bpt id="p1">[</bpt>ContainerControlDesign<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontroldesign.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ <bpt id="p1">[</bpt>ContainerControlDesign<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontroldesign.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ <bpt id="p1">[</bpt>InputControlDesign<ept id="p1">](view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ <bpt id="p1">[</bpt>InputControlDesign<ept id="p1">](view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ <bpt id="p1">[</bpt>ImageDesign<ept id="p1">](view-model-control-image-iimage-iimagedesign.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ <bpt id="p1">[</bpt>ImageDesign<ept id="p1">](view-model-control-image-iimage-iimagedesign.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Index</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Properties</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">[</bpt>alignItems<ept id="p1">](view-model-ipage-idesign.md#alignitems)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>alignItems<ept id="p1">](view-model-ipage-idesign.md#alignitems)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">[</bpt>alignSelf<ept id="p1">](view-model-ipage-idesign.md#alignself)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>alignSelf<ept id="p1">](view-model-ipage-idesign.md#alignself)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">[</bpt>bindings<ept id="p1">](view-model-ipage-idesign.md#bindings)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>バインディング<ept id="p1">](view-model-ipage-idesign.md#bindings)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">[</bpt>border<ept id="p1">](view-model-ipage-idesign.md#border)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>枠線<ept id="p1">](view-model-ipage-idesign.md#border)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source><bpt id="p1">[</bpt>color<ept id="p1">](view-model-ipage-idesign.md#color)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>色<ept id="p1">](view-model-ipage-idesign.md#color)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source><bpt id="p1">[</bpt>flexFlow<ept id="p1">](view-model-ipage-idesign.md#flexflow)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>flexFlow<ept id="p1">](view-model-ipage-idesign.md#flexflow)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">[</bpt>flexSize<ept id="p1">](view-model-ipage-idesign.md#flexsize)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>flexSize<ept id="p1">](view-model-ipage-idesign.md#flexsize)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source><bpt id="p1">[</bpt>fontSize<ept id="p1">](view-model-ipage-idesign.md#fontsize)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>fontSize<ept id="p1">](view-model-ipage-idesign.md#fontsize)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">[</bpt>fontWeight<ept id="p1">](view-model-ipage-idesign.md#fontweight)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>fontWeight<ept id="p1">](view-model-ipage-idesign.md#fontweight)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source><bpt id="p1">[</bpt>justifyItems<ept id="p1">](view-model-ipage-idesign.md#justifyitems)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>justifyItems<ept id="p1">](view-model-ipage-idesign.md#justifyitems)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source><bpt id="p1">[</bpt>label<ept id="p1">](view-model-ipage-idesign.md#label)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ラベル<ept id="p1">](view-model-ipage-idesign.md#label)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">[</bpt>labelPosition<ept id="p1">](view-model-ipage-idesign.md#labelposition)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>labelPosition<ept id="p1">](view-model-ipage-idesign.md#labelposition)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source><bpt id="p1">[</bpt>name<ept id="p1">](view-model-ipage-idesign.md#name)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>名前<ept id="p1">](view-model-ipage-idesign.md#name)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source><bpt id="p1">[</bpt>padding<ept id="p1">](view-model-ipage-idesign.md#padding)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>スペース<ept id="p1">](view-model-ipage-idesign.md#padding)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source><bpt id="p1">[</bpt>type<ept id="p1">](view-model-ipage-idesign.md#type)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>タイプ<ept id="p1">](view-model-ipage-idesign.md#type)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Properties</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>alignItems</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">alignItems</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>alignItems: string (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">alignItems: string (optional)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>This property is an alias for the CSS property "align-items".</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティは、CSS プロパティ「align-items」のエイリアスです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Please refer to <bpt id="p1">[</bpt>this web page<ept id="p1">](https://css-tricks.com/snippets/css/a-guide-to-flexbox)</ept> for documentation on the "align-items" property.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"align-items" プロパティに関するドキュメントは、<bpt id="p1">[</bpt>この Web ページ<ept id="p1">](https://css-tricks.com/snippets/css/a-guide-to-flexbox)</ept>をご覧ください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>alignSelf</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">alignSelf</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>alignSelf: string (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">alignSelf: string (optional)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>bindings</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">bindings</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>bindings: any (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">bindings: any (optional)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>border</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">border</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>border: "none" &amp;#124; "solid" &amp;#124; "left" &amp;#124; "right" &amp;#124; "top" &amp;#124; "bottom" (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">border: "none" &amp;#124; "solid" &amp;#124; "left" &amp;#124; "right" &amp;#124; "top" &amp;#124; "bottom" (省略可)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>The border behavior of a control.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの境界動作。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>This property will not be inherited by the children.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティは、子によって継承されません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>color</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">色</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>color: string (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">color: string (optional)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>The foreground color of the container.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンテナーの前景色。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>This will modify the color of all headers, items, labels, and icons within the container.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、コンテナ内のすべてのヘッダー、アイテム、ラベル、アイコンの色が変更されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Consider setting the background color at the same time as necessary when setting this attribute.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Note: if color is set to "theme", the theme color of the app will be used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>The following colors are available:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用可能な色は次のとおりです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source><ph id="ph1">![</ph>sample image<ph id="ph2">](../../../media/colors.PNG)</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">![</ph>サンプル画像<ph id="ph2">](../../../media/colors.PNG)</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>flexFlow</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">flexFlow</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>flexFlow: string (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">flexFlow: string (省略可)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Specifying this property makes the component a flex container component.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>This property is an alias for the CSS property "flex-flow".</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティは、CSS プロパティ「flex-flow」のエイリアスです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Please refer to <bpt id="p1">[</bpt>this web page<ept id="p1">](https://css-tricks.com/snippets/css/a-guide-to-flexbox)</ept> for documentation on the "flex-flow" property.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"flex-flow" プロパティに関するドキュメントは、<bpt id="p1">[</bpt>この Web ページ<ept id="p1">](https://css-tricks.com/snippets/css/a-guide-to-flexbox)</ept>をご覧ください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>flexSize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">flexSize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>flexSize: string (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">flexSize: string (省略可)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>One number or two numbers written as a string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つの番号または 2 つの番号が文字列として書き込まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>E.g.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E.g.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>"(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>This property is an alias for the CSS property "flex".</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティは、CSS プロパティ「flex」のエイリアスです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Please refer to <bpt id="p1">[</bpt>this web page<ept id="p1">](https://css-tricks.com/snippets/css/a-guide-to-flexbox)</ept> for documentation on the "flex" property.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"flex" プロパティに関するドキュメントは、<bpt id="p1">[</bpt>この Web ページ<ept id="p1">](https://css-tricks.com/snippets/css/a-guide-to-flexbox)</ept>をご覧ください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>fontSize</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fontSize</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>fontSize: "medium" &amp;#124; "xx-small" &amp;#124; "x-small" &amp;#124; "small" &amp;#124; "large" &amp;#124; "x-large" &amp;#124; "xx-large" (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fontSize: "medium" &amp;#124; "xx-small" &amp;#124; "x-small" &amp;#124; "small" &amp;#124; "large" &amp;#124; "x-large" &amp;#124; "xx-large" (省略可)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>The proportional text size</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">比例テキスト サイズ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>fontWeight</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fontWeight</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>fontWeight: "normal" &amp;#124; "bold" (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fontWeight: "normal" &amp;#124; "bold" (省略可)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Normal or bold text.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準または太字のテキスト。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>justifyItems</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">justifyItems</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>justifyItems: "flex-start" &amp;#124; "flex-end" &amp;#124; "center" &amp;#124; "space-between" (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">justifyItems: "flex-start" &amp;#124; "flex-end" &amp;#124; "center" &amp;#124; "space-between" (省略可)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>This property is an alias for the CSS property "justify-content".</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティは CSS プロパティ「justify-content」のエイリアスです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Please refer to <bpt id="p1">[</bpt>this web page<ept id="p1">](https://css-tricks.com/snippets/css/a-guide-to-flexbox)</ept> for documentation on the "justify-content" property.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"justify-content" プロパティに関するドキュメントは、<bpt id="p1">[</bpt>この Web ページ<ept id="p1">](https://css-tricks.com/snippets/css/a-guide-to-flexbox)</ept>をご覧ください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>label</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>label: string (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">label: string (省略可)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>labelPosition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">labelPosition</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>labelPosition: "stacked" &amp;#124; "hidden" &amp;#124; "inline" (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">labelPosition: "stacked" &amp;#124; "hidden" &amp;#124; "inline" (省略可)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Determines how a label is positioned, if at all.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベルの配置方法を決定します (行われる場合)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>By default, labelPosition is set to stacked.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、labelPosition が stacked に設定されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>name: string (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">name: string (省略可)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>padding</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">padding</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>padding: "none" &amp;#124; "small" &amp;#124; "std" (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">padding: "none" &amp;#124; "small" &amp;#124; "std" (省略可)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Allows specifying the component's padding behavior.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンポーネントのスペース動作を指定できるように許可します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>A component will inherit the padding behavior specified by its parent container components.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンポーネントは、親コンテナー コンポーネントによって指定されたスペース動作を継承します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タイプ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>type: <bpt id="p1">[</bpt>ControlType<ept id="p1">](../modules/view-model-control-basecontrol-icontrol.md#controltype)</ept> (optional)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">type: <bpt id="p1">[</bpt>ControlType<ept id="p1">](../modules/view-model-control-basecontrol-icontrol.md#controltype)</ept> (省略可)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>The type of the control as a string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字列としてのコントロールのタイプ。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Design タイプ
+description: デザイン オブジェクトの種類。
+author: shadykdc
+manager: AnnBe
+ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: ''
+ms.search.region: Global
+ms.author: kashea
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 7f07dc332f5e2c27ac9ca2c9071febf27753d9bb
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547347"
+---
+# <a name="design-type"></a><span data-ttu-id="8b918-103">Design タイプ</span><span class="sxs-lookup"><span data-stu-id="8b918-103">Design type</span></span>
+
+[!include [banner](../../../../includes/banner.md)]
+
+<span data-ttu-id="8b918-104">デザイン オブジェクトの種類。</span><span class="sxs-lookup"><span data-stu-id="8b918-104">Design object type.</span></span>
+<span data-ttu-id="8b918-105">デザインの詳細については、[デザインの概要](../../scenarios/client-api-design-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8b918-105">For more information on design, please reference the [Design Introduction](../../scenarios/client-api-design-overview.md).</span></span>
+
+### <a name="hierarchy"></a><span data-ttu-id="8b918-106">階層</span><span class="sxs-lookup"><span data-stu-id="8b918-106">Hierarchy</span></span>
+
+<span data-ttu-id="8b918-107">デザイン</span><span class="sxs-lookup"><span data-stu-id="8b918-107">Design</span></span> <br><span data-ttu-id="8b918-108">&nbsp;&nbsp;&nbsp;└─ [PageLinkDesign](view-model-control-pagelink-ipagelink-ipagelinkdesign.md)</span><span class="sxs-lookup"><span data-stu-id="8b918-108">&nbsp;&nbsp;&nbsp;└─ [PageLinkDesign](view-model-control-pagelink-ipagelink-ipagelinkdesign.md)</span></span> <br><span data-ttu-id="8b918-109">&nbsp;&nbsp;&nbsp;└─ [ContainerControlDesign](view-model-control-container-icontainercontrol-icontainercontroldesign.md)</span><span class="sxs-lookup"><span data-stu-id="8b918-109">&nbsp;&nbsp;&nbsp;└─ [ContainerControlDesign](view-model-control-container-icontainercontrol-icontainercontroldesign.md)</span></span> <br><span data-ttu-id="8b918-110">&nbsp;&nbsp;&nbsp;└─ [InputControlDesign](view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md)</span><span class="sxs-lookup"><span data-stu-id="8b918-110">&nbsp;&nbsp;&nbsp;└─ [InputControlDesign](view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md)</span></span> <br><span data-ttu-id="8b918-111">&nbsp;&nbsp;&nbsp;└─ [ImageDesign](view-model-control-image-iimage-iimagedesign.md)</span><span class="sxs-lookup"><span data-stu-id="8b918-111">&nbsp;&nbsp;&nbsp;└─ [ImageDesign](view-model-control-image-iimage-iimagedesign.md)</span></span> <br>
+
+## <a name="index"></a><span data-ttu-id="8b918-112">指数</span><span class="sxs-lookup"><span data-stu-id="8b918-112">Index</span></span>
+
+### <a name="properties"></a><span data-ttu-id="8b918-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8b918-113">Properties</span></span>
+
+* [<span data-ttu-id="8b918-114">alignItems</span><span class="sxs-lookup"><span data-stu-id="8b918-114">alignItems</span></span>](view-model-ipage-idesign.md#alignitems)
+* [<span data-ttu-id="8b918-115">alignSelf</span><span class="sxs-lookup"><span data-stu-id="8b918-115">alignSelf</span></span>](view-model-ipage-idesign.md#alignself)
+* [<span data-ttu-id="8b918-116">バインディング</span><span class="sxs-lookup"><span data-stu-id="8b918-116">bindings</span></span>](view-model-ipage-idesign.md#bindings)
+* [<span data-ttu-id="8b918-117">枠線</span><span class="sxs-lookup"><span data-stu-id="8b918-117">border</span></span>](view-model-ipage-idesign.md#border)
+* [<span data-ttu-id="8b918-118">色</span><span class="sxs-lookup"><span data-stu-id="8b918-118">color</span></span>](view-model-ipage-idesign.md#color)
+* [<span data-ttu-id="8b918-119">flexFlow</span><span class="sxs-lookup"><span data-stu-id="8b918-119">flexFlow</span></span>](view-model-ipage-idesign.md#flexflow)
+* [<span data-ttu-id="8b918-120">flexSize</span><span class="sxs-lookup"><span data-stu-id="8b918-120">flexSize</span></span>](view-model-ipage-idesign.md#flexsize)
+* [<span data-ttu-id="8b918-121">fontSize</span><span class="sxs-lookup"><span data-stu-id="8b918-121">fontSize</span></span>](view-model-ipage-idesign.md#fontsize)
+* [<span data-ttu-id="8b918-122">fontWeight</span><span class="sxs-lookup"><span data-stu-id="8b918-122">fontWeight</span></span>](view-model-ipage-idesign.md#fontweight)
+* [<span data-ttu-id="8b918-123">justifyItems</span><span class="sxs-lookup"><span data-stu-id="8b918-123">justifyItems</span></span>](view-model-ipage-idesign.md#justifyitems)
+* [<span data-ttu-id="8b918-124">ラベル</span><span class="sxs-lookup"><span data-stu-id="8b918-124">label</span></span>](view-model-ipage-idesign.md#label)
+* [<span data-ttu-id="8b918-125">labelPosition</span><span class="sxs-lookup"><span data-stu-id="8b918-125">labelPosition</span></span>](view-model-ipage-idesign.md#labelposition)
+* [<span data-ttu-id="8b918-126">名前</span><span class="sxs-lookup"><span data-stu-id="8b918-126">name</span></span>](view-model-ipage-idesign.md#name)
+* [<span data-ttu-id="8b918-127">スペース</span><span class="sxs-lookup"><span data-stu-id="8b918-127">padding</span></span>](view-model-ipage-idesign.md#padding)
+* [<span data-ttu-id="8b918-128">タイプ</span><span class="sxs-lookup"><span data-stu-id="8b918-128">type</span></span>](view-model-ipage-idesign.md#type)
+
+## <a name="properties"></a><span data-ttu-id="8b918-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8b918-129">Properties</span></span>
+
+### <a name="alignitems"></a><span data-ttu-id="8b918-130">alignItems</span><span class="sxs-lookup"><span data-stu-id="8b918-130">alignItems</span></span>
+
+<span data-ttu-id="8b918-131">alignItems: string (optional)</span><span class="sxs-lookup"><span data-stu-id="8b918-131">alignItems: string (optional)</span></span> 
+
+<span data-ttu-id="8b918-132">このプロパティは、CSS プロパティ「align-items」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="8b918-132">This property is an alias for the CSS property "align-items".</span></span>
+<span data-ttu-id="8b918-133">"align-items" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="8b918-133">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "align-items" property.</span></span>
+
+
+### <a name="alignself"></a><span data-ttu-id="8b918-134">alignSelf</span><span class="sxs-lookup"><span data-stu-id="8b918-134">alignSelf</span></span>
+
+<span data-ttu-id="8b918-135">alignSelf: string (optional)</span><span class="sxs-lookup"><span data-stu-id="8b918-135">alignSelf: string (optional)</span></span> 
+
+
+
+
+### <a name="bindings"></a><span data-ttu-id="8b918-136">bindings</span><span class="sxs-lookup"><span data-stu-id="8b918-136">bindings</span></span>
+
+<span data-ttu-id="8b918-137">bindings: any (optional)</span><span class="sxs-lookup"><span data-stu-id="8b918-137">bindings: any (optional)</span></span> 
+
+
+
+
+### <a name="border"></a><span data-ttu-id="8b918-138">border</span><span class="sxs-lookup"><span data-stu-id="8b918-138">border</span></span>
+
+<span data-ttu-id="8b918-139">border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-139">border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)</span></span> 
+
+<span data-ttu-id="8b918-140">コントロールの境界動作。</span><span class="sxs-lookup"><span data-stu-id="8b918-140">The border behavior of a control.</span></span> <span data-ttu-id="8b918-141">このプロパティは、子によって継承されません。</span><span class="sxs-lookup"><span data-stu-id="8b918-141">This property will not be inherited by the children.</span></span>
+
+
+### <a name="color"></a><span data-ttu-id="8b918-142">色</span><span class="sxs-lookup"><span data-stu-id="8b918-142">color</span></span>
+
+<span data-ttu-id="8b918-143">color: string (optional)</span><span class="sxs-lookup"><span data-stu-id="8b918-143">color: string (optional)</span></span> 
+
+<span data-ttu-id="8b918-144">コンテナーの前景色。</span><span class="sxs-lookup"><span data-stu-id="8b918-144">The foreground color of the container.</span></span>
+<span data-ttu-id="8b918-145">これにより、コンテナ内のすべてのヘッダー、アイテム、ラベル、アイコンの色が変更されます。</span><span class="sxs-lookup"><span data-stu-id="8b918-145">This will modify the color of all headers, items, labels, and icons within the container.</span></span><br>
+<span data-ttu-id="8b918-146">この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="8b918-146">Consider setting the background color at the same time as necessary when setting this attribute.</span></span><br>
+<span data-ttu-id="8b918-147">注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。</span><span class="sxs-lookup"><span data-stu-id="8b918-147">Note: if color is set to "theme", the theme color of the app will be used.</span></span><br>
+<span data-ttu-id="8b918-148">使用可能な色は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="8b918-148">The following colors are available:</span></span> <br>
+<span data-ttu-id="8b918-149">![サンプル画像](../../../media/colors.PNG)</span><span class="sxs-lookup"><span data-stu-id="8b918-149">![sample image](../../../media/colors.PNG)</span></span>
+
+
+### <a name="flexflow"></a><span data-ttu-id="8b918-150">flexFlow</span><span class="sxs-lookup"><span data-stu-id="8b918-150">flexFlow</span></span>
+
+<span data-ttu-id="8b918-151">flexFlow: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-151">flexFlow: string (optional)</span></span> 
+
+<span data-ttu-id="8b918-152">このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。</span><span class="sxs-lookup"><span data-stu-id="8b918-152">Specifying this property makes the component a flex container component.</span></span>
+<span data-ttu-id="8b918-153">このプロパティは、CSS プロパティ「flex-flow」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="8b918-153">This property is an alias for the CSS property "flex-flow".</span></span>
+<span data-ttu-id="8b918-154">"flex-flow" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="8b918-154">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "flex-flow" property.</span></span>
+
+
+### <a name="flexsize"></a><span data-ttu-id="8b918-155">flexSize</span><span class="sxs-lookup"><span data-stu-id="8b918-155">flexSize</span></span>
+
+<span data-ttu-id="8b918-156">flexSize: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-156">flexSize: string (optional)</span></span> 
+
+<span data-ttu-id="8b918-157">1 つの番号または 2 つの番号が文字列として書き込まれています。</span><span class="sxs-lookup"><span data-stu-id="8b918-157">One number or two numbers written as a string.</span></span> <span data-ttu-id="8b918-158">E.g.</span><span class="sxs-lookup"><span data-stu-id="8b918-158">E.g.</span></span> <span data-ttu-id="8b918-159">「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。</span><span class="sxs-lookup"><span data-stu-id="8b918-159">"(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.</span></span>
+<span data-ttu-id="8b918-160">このプロパティは、CSS プロパティ「flex」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="8b918-160">This property is an alias for the CSS property "flex".</span></span> <span data-ttu-id="8b918-161">"flex" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="8b918-161">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "flex" property.</span></span>
+
+
+### <a name="fontsize"></a><span data-ttu-id="8b918-162">fontSize</span><span class="sxs-lookup"><span data-stu-id="8b918-162">fontSize</span></span>
+
+<span data-ttu-id="8b918-163">fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-163">fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional)</span></span> 
+
+<span data-ttu-id="8b918-164">比例テキスト サイズ</span><span class="sxs-lookup"><span data-stu-id="8b918-164">The proportional text size</span></span>
+
+
+### <a name="fontweight"></a><span data-ttu-id="8b918-165">fontWeight</span><span class="sxs-lookup"><span data-stu-id="8b918-165">fontWeight</span></span>
+
+<span data-ttu-id="8b918-166">fontWeight: "normal" &#124; "bold" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-166">fontWeight: "normal" &#124; "bold" (optional)</span></span> 
+
+<span data-ttu-id="8b918-167">標準または太字のテキスト。</span><span class="sxs-lookup"><span data-stu-id="8b918-167">Normal or bold text.</span></span>
+
+
+### <a name="justifyitems"></a><span data-ttu-id="8b918-168">justifyItems</span><span class="sxs-lookup"><span data-stu-id="8b918-168">justifyItems</span></span>
+
+<span data-ttu-id="8b918-169">justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-169">justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (optional)</span></span> 
+
+<span data-ttu-id="8b918-170">このプロパティは CSS プロパティ「justify-content」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="8b918-170">This property is an alias for the CSS property "justify-content".</span></span>
+<span data-ttu-id="8b918-171">"justify-content" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="8b918-171">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "justify-content" property.</span></span>
+
+
+### <a name="label"></a><span data-ttu-id="8b918-172">ラベル</span><span class="sxs-lookup"><span data-stu-id="8b918-172">label</span></span>
+
+<span data-ttu-id="8b918-173">label: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-173">label: string (optional)</span></span> 
+
+
+
+
+### <a name="labelposition"></a><span data-ttu-id="8b918-174">labelPosition</span><span class="sxs-lookup"><span data-stu-id="8b918-174">labelPosition</span></span>
+
+<span data-ttu-id="8b918-175">labelPosition: "stacked" &#124; "hidden" &#124; "inline" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-175">labelPosition: "stacked" &#124; "hidden" &#124; "inline" (optional)</span></span> 
+
+<span data-ttu-id="8b918-176">ラベルの配置方法を決定します (行われる場合)。</span><span class="sxs-lookup"><span data-stu-id="8b918-176">Determines how a label is positioned, if at all.</span></span> <span data-ttu-id="8b918-177">既定では、labelPosition が stacked に設定されています。</span><span class="sxs-lookup"><span data-stu-id="8b918-177">By default, labelPosition is set to stacked.</span></span>
+
+
+### <a name="name"></a><span data-ttu-id="8b918-178">名前</span><span class="sxs-lookup"><span data-stu-id="8b918-178">name</span></span>
+
+<span data-ttu-id="8b918-179">name: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-179">name: string (optional)</span></span> 
+
+
+
+
+### <a name="padding"></a><span data-ttu-id="8b918-180">padding</span><span class="sxs-lookup"><span data-stu-id="8b918-180">padding</span></span>
+
+<span data-ttu-id="8b918-181">padding: "none" &#124; "small" &#124; "std" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-181">padding: "none" &#124; "small" &#124; "std" (optional)</span></span> 
+
+<span data-ttu-id="8b918-182">コンポーネントのスペース動作を指定できるように許可します。</span><span class="sxs-lookup"><span data-stu-id="8b918-182">Allows specifying the component's padding behavior.</span></span>
+<span data-ttu-id="8b918-183">コンポーネントは、親コンテナー コンポーネントによって指定されたスペース動作を継承します。</span><span class="sxs-lookup"><span data-stu-id="8b918-183">A component will inherit the padding behavior specified by its parent container components.</span></span>
+
+
+### <a name="type"></a><span data-ttu-id="8b918-184">タイプ</span><span class="sxs-lookup"><span data-stu-id="8b918-184">type</span></span>
+
+<span data-ttu-id="8b918-185">type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-185">type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional)</span></span> 
+
+<span data-ttu-id="8b918-186">文字列としてのコントロールのタイプ。</span><span class="sxs-lookup"><span data-stu-id="8b918-186">The type of the control as a string.</span></span>
+
+

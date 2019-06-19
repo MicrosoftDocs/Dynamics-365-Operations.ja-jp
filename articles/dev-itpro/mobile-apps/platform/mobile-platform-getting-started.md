@@ -1,126 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="mobile-platform-getting-started.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>mobile-platform-getting-started.762392.36ae8d1b6137091cc6051654c6a0ed6d0c4e92d8.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>36ae8d1b6137091cc6051654c6a0ed6d0c4e92d8</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\mobile-apps\platform\mobile-platform-getting-started.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Get started with the mobile platform</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モバイル プラットフォームを使い始める</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes how to develop on the mobile platform.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、モバイル プラットフォームでの開発方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Get started with the mobile platform</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モバイル プラットフォームを使い始める</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>After you acquire a development environment, complete the following procedures to get started with development.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発環境を取得した後、開発を開始するために次の手順を実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Get the Fleet Management mobile forms</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フリーと管理モバイル フォームを取得する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>We have created new, purpose-built forms in the <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> module.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フリート管理<ept id="p1">**</ept> モジュール内に新しい専用のフォームを作成しました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>These forms are used specifically for the mobile app and aren't meant to be used through the web client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのフォームはモバイル アプリケーション専用に使用されており、Web クライアントからは使用されません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source><bpt id="p1">[</bpt>Download the file that contains the Fleet Management project<ept id="p1">](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples)</ept> (.axpp file).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フリート管理プロジェクトを含むファイルをダウンロードする<ept id="p1">](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples)</ept> (.axpp ファイル)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Extract the contents of the zip file to a temporary location on the development computer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZIP ファイルの内容を開発用コンピュータの一時的な場所に抽出します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Import the project (.axpp) file by using Microsoft Visual Studio (click <bpt id="p1">**</bpt>Finance and Operations<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Import Project<ept id="p2">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio を使用して、プロジェクト (.axpp) ファイルをインポートします (<bpt id="p1">**</bpt>Finance and Operations<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>プロジェクトのインポート<ept id="p2">**</ept>をクリックします)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>After you've imported the project file, build the project or module.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクト ファイルをインポートした後は、プロジェクトまたはモジュールをビルドします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Get the sample workspace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サンプル ワークスペースを取得します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>We provide a sample workspace for Reservation management.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">引当管理のためのサンプルのワークスペースを提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>This workspace is based on the <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> module.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このワークスペースは、<bpt id="p1">**</bpt>フリート管理<ept id="p1">**</ept>モジュールに基づいています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">[</bpt>Download the file that contains the sample workspace<ept id="p1">](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples)</ept> (.xml file).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>サンプル ワークスペースを含むファイルをダウンロードする<ept id="p1">](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples)</ept> (.xml ファイル)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Sign in to your non-production client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">非生産クライアントにログインします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>(You must sign in as a Microsoft Dynamics 365 for Finance and Operations administrator.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Microsoft Dynamics 365 for Finance and Operations の管理者としてログインする必要があります)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>In the address bar, add <bpt id="p1">**</bpt>&amp;mode=mobile<ept id="p1">**</ept> to the end of the URL, and then press Enter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アドレス バーで、<bpt id="p1">**</bpt>&amp;mode=mobile<ept id="p1">**</ept> を URL の末尾に追加してから Enter キーを押します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>In the client, go to <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Mobile app<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアントで、<bpt id="p1">**</bpt>設定<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>モバイル アプリ<ept id="p2">**</ept>と移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>The mobile app designer will appear docked next to the Finance and Operations client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モバイル アプリ デザイナーは、Finance and Operations クライアントの横にドッキングして表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Click the <bpt id="p1">**</bpt>Overflow<ept id="p1">**</ept> button (<bpt id="p2">**</bpt>…<ept id="p2">**</ept>), and then click <bpt id="p3">**</bpt>Import<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>オーバーフロー<ept id="p1">**</ept> ボタン (<bpt id="p2">**</bpt>…<ept id="p2">**</ept>) をクリックし、<bpt id="p3">**</bpt>インポート<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Click the <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept> button that appears at the bottom of the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページの下部に表示される<bpt id="p1">**</bpt>参照<ept id="p1">**</ept>ボタンをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>In the file selection dialog box that appears, select one of the XML files that you previously extracted from the zip file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示されるファイル選択ダイアログ ボックスで、以前に zip ファイルから抽出した XML ファイルのいずれかを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>After the app has been loaded into the mobile app designer, click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept> at the bottom of the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリがモバイル アプリ デザイナーに読み込まれた後、ページの下部にある<bpt id="p1">**</bpt>完了<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Click <bpt id="p1">**</bpt>Publish workspace<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ワークスペースの公開<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Get the mobile app</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モバイル アプリの取得</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The mobile app is being made available for the most popular mobile operating systems.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モバイル アプリは、最も一般的なモバイル オペレーティング システムで利用可能です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>You must have a Dynamics 365 Unified Operations instance and valid user credentials in order to log in to the app.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションにログインするためには、Dynamics 365 Unified Operations のインスタンスと、有効なユーザー資格情報が必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Android (available now) - <bpt id="p1">[</bpt>Microsoft Dynamics 365 Unified Operations on the Google Play Store<ept id="p1">](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Android (現在利用可能) - <bpt id="p1">[</bpt>Google Play ストアの Microsoft Dynamics 365 Unified Operations<ept id="p1">](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>iPhone (available now) - <bpt id="p1">[</bpt>Microsoft Dynamics 365 Unified Operations on the iTunes apps store<ept id="p1">](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">iPhone (現在利用可能) - <bpt id="p1">[</bpt>iTunes アプリ ストアの Microsoft Dynamics 365 Unified Operations<ept id="p1">](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>You're done!</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完了です</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Launch the app from your mobile device to see the sample workspace.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モバイル デバイスからアプリを起動してサンプル ワークスペースを表示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のリソース</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source><bpt id="p1">[</bpt>Architecture<ept id="p1">](mobile-platform-architecture.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>アーキテクチャ<ept id="p1">](mobile-platform-architecture.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source><bpt id="p1">[</bpt>Client APIs reference<ept id="p1">](client-apis/client-apis-reference.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>クライアント APIs リファレンス<ept id="p1">](client-apis/client-apis-reference.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">[</bpt>Server APIs reference<ept id="p1">](mobile-workspace-server-apis.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>サーバー APIs 参照<ept id="p1">](mobile-workspace-server-apis.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: モバイル プラットフォームを使い始める
+description: このトピックでは、モバイル プラットフォームでの開発方法について説明します。
+author: makhabaz
+manager: AnnBe
+ms.date: 07/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer, IT Pro
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 255544
+ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
+ms.search.region: Global
+ms.author: makhabaz
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Platform update 9
+ms.openlocfilehash: 36ae8d1b6137091cc6051654c6a0ed6d0c4e92d8
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549735"
+---
+# <a name="get-started-with-the-mobile-platform"></a><span data-ttu-id="b6950-103">モバイル プラットフォームを使い始める</span><span class="sxs-lookup"><span data-stu-id="b6950-103">Get started with the mobile platform</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="b6950-104">開発環境を取得した後、開発を開始するために次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="b6950-104">After you acquire a development environment, complete the following procedures to get started with development.</span></span>
+
+### <a name="get-the-fleet-management-mobile-forms"></a><span data-ttu-id="b6950-105">フリーと管理モバイル フォームを取得する</span><span class="sxs-lookup"><span data-stu-id="b6950-105">Get the Fleet Management mobile forms</span></span>
+
+<span data-ttu-id="b6950-106">**フリート管理** モジュール内に新しい専用のフォームを作成しました。</span><span class="sxs-lookup"><span data-stu-id="b6950-106">We have created new, purpose-built forms in the **Fleet Management** module.</span></span> <span data-ttu-id="b6950-107">これらのフォームはモバイル アプリケーション専用に使用されており、Web クライアントからは使用されません。</span><span class="sxs-lookup"><span data-stu-id="b6950-107">These forms are used specifically for the mobile app and aren't meant to be used through the web client.</span></span>
+
+1.  <span data-ttu-id="b6950-108">[フリート管理プロジェクトを含むファイルをダウンロードする](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp ファイル)。</span><span class="sxs-lookup"><span data-stu-id="b6950-108">[Download the file that contains the Fleet Management project](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file).</span></span>
+2.  <span data-ttu-id="b6950-109">ZIP ファイルの内容を開発用コンピュータの一時的な場所に抽出します。</span><span class="sxs-lookup"><span data-stu-id="b6950-109">Extract the contents of the zip file to a temporary location on the development computer.</span></span>
+3.  <span data-ttu-id="b6950-110">Visual Studio を使用して、プロジェクト (.axpp) ファイルをインポートします (**Finance and Operations** &gt; **プロジェクトのインポート**をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="b6950-110">Import the project (.axpp) file by using Microsoft Visual Studio (click **Finance and Operations** &gt; **Import Project**).</span></span>
+4.  <span data-ttu-id="b6950-111">プロジェクト ファイルをインポートした後は、プロジェクトまたはモジュールをビルドします。</span><span class="sxs-lookup"><span data-stu-id="b6950-111">After you've imported the project file, build the project or module.</span></span>
+
+### <a name="get-the-sample-workspace"></a><span data-ttu-id="b6950-112">サンプル ワークスペースを取得します</span><span class="sxs-lookup"><span data-stu-id="b6950-112">Get the sample workspace</span></span>
+
+<span data-ttu-id="b6950-113">引当管理のためのサンプルのワークスペースを提供します。</span><span class="sxs-lookup"><span data-stu-id="b6950-113">We provide a sample workspace for Reservation management.</span></span> <span data-ttu-id="b6950-114">このワークスペースは、**フリート管理**モジュールに基づいています。</span><span class="sxs-lookup"><span data-stu-id="b6950-114">This workspace is based on the **Fleet Management** module.</span></span>
+
+1.  <span data-ttu-id="b6950-115">[サンプル ワークスペースを含むファイルをダウンロードする](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.xml ファイル)。</span><span class="sxs-lookup"><span data-stu-id="b6950-115">[Download the file that contains the sample workspace](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.xml file).</span></span>
+2.  <span data-ttu-id="b6950-116">非生産クライアントにログインします。</span><span class="sxs-lookup"><span data-stu-id="b6950-116">Sign in to your non-production client.</span></span> <span data-ttu-id="b6950-117">(Microsoft Dynamics 365 for Finance and Operations の管理者としてログインする必要があります)。</span><span class="sxs-lookup"><span data-stu-id="b6950-117">(You must sign in as a Microsoft Dynamics 365 for Finance and Operations administrator.)</span></span>
+3.  <span data-ttu-id="b6950-118">アドレス バーで、**&mode=mobile** を URL の末尾に追加してから Enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="b6950-118">In the address bar, add **&mode=mobile** to the end of the URL, and then press Enter.</span></span>
+4.  <span data-ttu-id="b6950-119">クライアントで、**設定** &gt; **モバイル アプリ**と移動します。</span><span class="sxs-lookup"><span data-stu-id="b6950-119">In the client, go to **Settings** &gt; **Mobile app**.</span></span> <span data-ttu-id="b6950-120">モバイル アプリ デザイナーは、Finance and Operations クライアントの横にドッキングして表示されます。</span><span class="sxs-lookup"><span data-stu-id="b6950-120">The mobile app designer will appear docked next to the Finance and Operations client.</span></span>
+5.  <span data-ttu-id="b6950-121">**オーバーフロー** ボタン (**…**) をクリックし、**インポート**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6950-121">Click the **Overflow** button (**…**), and then click **Import**.</span></span>
+6.  <span data-ttu-id="b6950-122">ページの下部に表示される**参照**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6950-122">Click the **Browse** button that appears at the bottom of the page.</span></span>
+7.  <span data-ttu-id="b6950-123">表示されるファイル選択ダイアログ ボックスで、以前に zip ファイルから抽出した XML ファイルのいずれかを選択します。</span><span class="sxs-lookup"><span data-stu-id="b6950-123">In the file selection dialog box that appears, select one of the XML files that you previously extracted from the zip file.</span></span>
+8.  <span data-ttu-id="b6950-124">アプリがモバイル アプリ デザイナーに読み込まれた後、ページの下部にある**完了**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6950-124">After the app has been loaded into the mobile app designer, click **Done** at the bottom of the page.</span></span>
+9.  <span data-ttu-id="b6950-125">**ワークスペースの公開**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6950-125">Click **Publish workspace**.</span></span>
+
+### <a name="get-the-mobile-app"></a><span data-ttu-id="b6950-126">モバイル アプリの取得</span><span class="sxs-lookup"><span data-stu-id="b6950-126">Get the mobile app</span></span>
+
+<span data-ttu-id="b6950-127">モバイル アプリは、最も一般的なモバイル オペレーティング システムで利用可能です。</span><span class="sxs-lookup"><span data-stu-id="b6950-127">The mobile app is being made available for the most popular mobile operating systems.</span></span> <span data-ttu-id="b6950-128">アプリケーションにログインするためには、Dynamics 365 Unified Operations のインスタンスと、有効なユーザー資格情報が必要です。</span><span class="sxs-lookup"><span data-stu-id="b6950-128">You must have a Dynamics 365 Unified Operations instance and valid user credentials in order to log in to the app.</span></span>
+
+-   <span data-ttu-id="b6950-129">Android (現在利用可能) - [Google Play ストアの Microsoft Dynamics 365 Unified Operations](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)</span><span class="sxs-lookup"><span data-stu-id="b6950-129">Android (available now) - [Microsoft Dynamics 365 Unified Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)</span></span>
+-   <span data-ttu-id="b6950-130">iPhone (現在利用可能) - [iTunes アプリ ストアの Microsoft Dynamics 365 Unified Operations](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)</span><span class="sxs-lookup"><span data-stu-id="b6950-130">iPhone (available now) - [Microsoft Dynamics 365 Unified Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)</span></span>
+
+<span data-ttu-id="b6950-131">完了です</span><span class="sxs-lookup"><span data-stu-id="b6950-131">You're done!</span></span> <span data-ttu-id="b6950-132">モバイル デバイスからアプリを起動してサンプル ワークスペースを表示します。</span><span class="sxs-lookup"><span data-stu-id="b6950-132">Launch the app from your mobile device to see the sample workspace.</span></span>
+
+### <a name="additional-resources"></a><span data-ttu-id="b6950-133">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="b6950-133">Additional resources</span></span>
+
+[<span data-ttu-id="b6950-134">アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="b6950-134">Architecture</span></span>](mobile-platform-architecture.md) 
+
+[<span data-ttu-id="b6950-135">クライアント APIs リファレンス</span><span class="sxs-lookup"><span data-stu-id="b6950-135">Client APIs reference</span></span>](client-apis/client-apis-reference.md)
+
+[<span data-ttu-id="b6950-136">サーバー APIs 参照</span><span class="sxs-lookup"><span data-stu-id="b6950-136">Server APIs reference</span></span>](mobile-workspace-server-apis.md)

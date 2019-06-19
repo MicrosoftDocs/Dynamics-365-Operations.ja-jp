@@ -1,369 +1,139 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="build-rental-charge-type-form.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>build-rental-charge-type-form.11a2dc.7c6aa02aec4ec1e74c75919849512a453276947a.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>7c6aa02aec4ec1e74c75919849512a453276947a</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\user-interface\build-rental-charge-type-form.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Build the Rental Charge Type form</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レンタル料金のタイプ フォームの構築</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>In this lab you’ll create a Simple List form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このラボでは、簡易リストのフォームを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>A Simple List form can show reference or secondary data that has six or fewer fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シンプル リスト フォームでは、参照データまたは 6 つ以下のフィールドが含まれるセカンダリ データを表示できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104" restype="x-metadata">
-          <source>For example, the form that you create will list and describe the types of rental charges.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、作成するフォームは、レンタル料金のタイプについて一覧表示して説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Build the Rental Charge Type form</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レンタル料金のタイプ フォームの構築</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>In this lab you’ll create a Simple List form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このラボでは、簡易リストのフォームを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>A Simple List form can show reference or secondary data that has six or fewer fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シンプル リスト フォームでは、参照データまたは 6 つ以下のフィールドが含まれるセカンダリ データを表示できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>For example, the form that you create will list and describe the types of rental charges.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、作成するフォームは、レンタル料金のタイプについて一覧表示して説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Prerequisites</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前提条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>For this tutorial, you’ll need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>For more information, see <bpt id="p1">[</bpt>Access Instances<ept id="p1">](../dev-tools/access-instances.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、「<bpt id="p1">[</bpt>アクセス インスタンス<ept id="p1">](../dev-tools/access-instances.md)</ept>」を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">概要</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>To create the form, you’ll start from the existing form, <bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームを作成するには、既存のフォーム <bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept> から開始します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>This form uses the Simple List pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフォームは、簡易リストのパターンを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>The following illustration shows the <bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept> form with the required controls from the Simple List pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、<bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept> フォームと簡易リスト パターンからの必要なコントロールを示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>rentalcharge1<ept id="p1">](./media/rentalcharge1.png)](./media/rentalcharge1.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>rentalcharge1<ept id="p1">](./media/rentalcharge1.png)](./media/rentalcharge1.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Adhering to the form pattern ensures that this Simple List form has the same structure and layout as other Simple List forms.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パターンに従うことによって、この簡易リストのフォームは、他の簡易リストのフォームと同じ構造とレイアウトを持つようになります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Key concepts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">重要な概念</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Create a Simple List form using a pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パターンを使用して簡易リストのフォームを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Bind a table to the form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルをフォームにバインドします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Add controls to the form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームにコントロールを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>View the form using Visual Studio and a browser.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio とブラウザーを使用してフォームを表示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Setup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セットアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Import the tutorial project and transactional data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル プロジェクトおよびトランザクション データのインポート</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Use Visual Studio to import the tutorial project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio を使用してチュートリアル プロジェクトをインポートします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>The tutorial project includes the artifacts that you’ll use to complete this tutorial.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Use Visual Studio to open the FMTutorial project and load the data for the tutorial.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>You’ll use the FMTDataHelper class to load data for the Fleet Management tutorial.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フリート管理チュートリアルのデータを読み込むために、FMTDataHelper クラスを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>If this is the first tutorial you’re working on, review <bpt id="p1">[</bpt>Access Microsoft Instances<ept id="p1">](../dev-tools/access-instances.md)</ept> and make sure you provision your administrator user if you’re working on a local VM.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これが作業する最初のチュートリアルである場合は、<bpt id="p1">[</bpt>アクセス Microsoft インスタンス<ept id="p1">](../dev-tools/access-instances.md)</ept>を確認し、ローカル VM で作業している場合に、管理者ユーザーを提供するかどうかを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Download the Fleet Management sample from <ph id="ph1">&lt;https://github.com/Microsoft/FMLab&gt;</ph>, save it to <bpt id="p1">**</bpt>C:<ph id="ph2">\\</ph><ept id="p1">**</ept>, and unzip it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フリート管理のサンプルを <ph id="ph1">&lt;https://github.com/Microsoft/FMLab&gt;</ph> からダウンロードし、<bpt id="p1">**</bpt>C:<ph id="ph2">\\</ph><ept id="p1">**</ept> に保存してから解凍します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>On the desktop, double-click the Visual Studio shortcut to open the development environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップで、Visual Studio ショートカットをダブルクリックして、開発環境を開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>On the <bpt id="p1">**</bpt>Finance and Operations<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Import Project<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Finance and Operations<ept id="p1">**</ept> メニューで、<bpt id="p2">**</bpt>プロジェクトのインポート<ept id="p2">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>In the <bpt id="p1">**</bpt>Import Project<ept id="p1">**</ept> window, next to the <bpt id="p2">**</bpt>Filename<ept id="p2">**</ept> text box, click the ellipsis button.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロジェクトのインポート<ept id="p1">**</ept> ウィンドウで、<bpt id="p2">**</bpt>ファイル名<ept id="p2">**</ept>テキスト ボックスの隣にある、省略記号ボタンをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>In the <bpt id="p1">**</bpt>Select the file to import<ept id="p1">**</ept> window, browse to C:\FMLab, click FMTutorialDataModel.axpp, and then click <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>インポートするファイルの選択<ept id="p1">**</ept>ウィンドウで、C:\FMLab を参照して FMTutorialDataModel.axpp をクリックしてから<bpt id="p2">**</bpt>開く<ept id="p2">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>In the <bpt id="p1">**</bpt>Project file location<ept id="p1">**</ept> text box, enter C:\FMLab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロジェクト ファイルの場所<ept id="p1">**</ept>テキスト ボックスに、C:\FMLab と入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Select the <bpt id="p1">**</bpt>Overwrite Elements<ept id="p1">**</ept> option, and the <bpt id="p2">**</bpt>Current solution<ept id="p2">**</ept> radio button.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>要素の上書き<ept id="p1">**</ept> オプションをオンにし、<bpt id="p2">**</bpt>現在のソリューション<ept id="p2">**</ept> ラジオ オプションをオンにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>The following illustration shows the completed <bpt id="p1">**</bpt>Import Project<ept id="p1">**</ept> dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、完了した <bpt id="p1">**</bpt>インポート プロジェクト<ept id="p1">**</ept> ダイアログ ボックスを示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>rentalcharge2<ept id="p1">](./media/rentalcharge2.png)](./media/rentalcharge2.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>rentalcharge2<ept id="p1">](./media/rentalcharge2.png)](./media/rentalcharge2.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, expand <bpt id="p2">**</bpt>Classes, and<ept id="p2">**</ept> under the <bpt id="p3">**</bpt>FMTutorial<ept id="p3">**</ept> project, right-click <bpt id="p4">**</bpt>FMTDataHelper<ept id="p4">**</ept>, and then click <bpt id="p5">**</bpt>Set as Startup Object<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイナー<bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>クラス<ept id="p2">**</ept>を展開して、<bpt id="p3">**</bpt>FMTutorial<ept id="p3">**</ept> プロジェクトで <bpt id="p4">**</bpt>FMTDataHelper<ept id="p4">**</ept> を右クリックしてから、<bpt id="p5">**</bpt>スタートアップ オブジェクトとして設定<ept id="p5">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>On the <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Rebuild Solution<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ビルド<ept id="p1">**</ept>メニューで、<bpt id="p2">**</bpt>ソリューションの再構築<ept id="p2">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Use the rebuild to make sure that all of the files in the project are built regardless of timestamps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タイムスタンプに関係なく、プロジェクトのすべてのファイルを確実に作成するには、リビルドを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>You can view the build progress in the <bpt id="p1">**</bpt>Output<ept id="p1">**</ept> window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>出力<ept id="p1">**</ept> ウィンドウでビルドの進行状況を表示できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>After the build completes, press <bpt id="p1">**</bpt>Ctrl+F5<ept id="p1">**</ept> to run the project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルドが完了すると、<bpt id="p1">**</bpt>Ctrl + F5<ept id="p1">**</ept> を押してプロジェクトを実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>The browser will open and run the class that imports the data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザーが開き、データをインポートするクラスが実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Open the FMTutorial project</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTutorial プロジェクトを開く</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Use Visual Studio to open the FMTutorial project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio を使用して FMTutorial プロジェクトを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>If you have Visual Studio open and have already loaded the FMTutorial project, you can continue to the next section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio を開き、FMTutorial プロジェクトが既に読み込まれている場合は、次のセクションに続行することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>If the development environment isn’t already open, on the desktop, double-click the Visual Studio shortcut to open the development environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発環境がまだ開いていない場合は、デスクトップで開発環境への Visual Studio ショートカットをダブルクリックして、開発環境を開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Open<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ファイル<ept id="p1">**</ept>メニューで、<bpt id="p2">**</bpt>開く<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>プロジェクト/ソリューション<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>In the <bpt id="p1">**</bpt>Open Project<ept id="p1">**</ept> dialog box, browse to C:\FmLab\FMTutorial, select the <bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept> solution, and then click <bpt id="p3">**</bpt>Open<ept id="p3">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロジェクトを開く<ept id="p1">**</ept>ダイアログ ボックスで、C:\FmLab\FMTutorial を参照し、<bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept> ソリューションを選択してから<bpt id="p3">**</bpt>開く<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>The FMTutorial project appears in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTutorial プロジェクトが<bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>に表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Use a template to create the form</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テンプレートを使用してフォームを作成</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Use Visual Studio to create the <bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept> form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio を使用して <bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept> フォームを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>You’ll use a template for building the Simple List form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">簡易リスト フォームを構築ためのテンプレートを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>You’ll also add a data source to the form and add fields to the data grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、フォームにデータ ソースを追加し、データ グリッドにフィールドを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click the <bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept> project, point to <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>Existing Item<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept> プロジェクトを右クリックして<bpt id="p3">**</bpt>追加<ept id="p3">**</ept>をポイントしてから<bpt id="p4">**</bpt>既存の項目<ept id="p4">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>In the <bpt id="p1">**</bpt>Add Existing Item<ept id="p1">**</ept> window, browse to C:\FmLab, click <bpt id="p2">**</bpt>AxForm<ph id="ph1">\_</ph>FmtChargeType<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>既存の品目を追加<ept id="p1">**</ept>ウィンドウで、C:\FmLab を参照し、<bpt id="p2">**</bpt>AxForm<ph id="ph1">\_</ph>FmtChargeType<ept id="p2">**</ept> をクリックしてから<bpt id="p3">**</bpt>追加<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>The <bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept> form appears at the bottom of the <bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept> project in <bpt id="p3">**</bpt>Solution Explorer<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p3">**</bpt>ソリューション エクスプローラー<ept id="p3">**</ept>の <bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept> プロジェクトの下に <bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept> フォームが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, double-click <bpt id="p2">**</bpt>FmtChargeType<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>FmtChargeType<ept id="p2">**</ept> をダブルクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>The form opens in the Form designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム デザイナーで、フォームを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Add the <bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept> table as the data source for the form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームのデータ ソースとして <bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept> テーブルを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Right-click <bpt id="p1">**</bpt>Data Sources,<ept id="p1">**</ept> and then click <bpt id="p2">**</bpt>New Data Source<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データ ソース<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>新しいデータ ソース<ept id="p2">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>A data source node is added.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース ノードが追加されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Click the data source node from the previous step.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前の手順でデータ ソース ノードをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, populate the following properties with the specified values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウで、次のプロパティに指定された値を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Table</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>FMTChargeType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTChargeType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>FMTChargeType <bpt id="p1">*</bpt>Be sure to specify the value for the Table property first. This property will automatically update to use that same value.<ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTChargeType <bpt id="p1">*</bpt>まず Table プロパティの値を指定してください。このプロパティは、同じ値を使用するよう自動的に更新されます。<ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>The following illustration shows <bpt id="p1">**</bpt>Data Sources<ept id="p1">**</ept> after you add the <bpt id="p2">**</bpt>FMTChargeType<ept id="p2">**</ept> table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、<bpt id="p2">**</bpt>FMTChargeType<ept id="p2">**</ept> テーブルを追加した後の <bpt id="p1">**</bpt>データソース<ept id="p1">**</ept>を示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>rentalcharge3<ept id="p1">](./media/rentalcharge3.png)](./media/rentalcharge3.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>rentalcharge3<ept id="p1">](./media/rentalcharge3.png)](./media/rentalcharge3.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>In the Form designer, click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム デザイナーで、<bpt id="p1">**</bpt>デザイン<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, populate the following properties with the specified values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウで、次のプロパティに指定された値を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Caption</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャプション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Rental charge types <bpt id="p1">*</bpt>This is the label that appears at the top of the form.<ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レンタル料金のタイプ <bpt id="p1">*</bpt>これは、フォームの上部に表示されるラベルです。<ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Data Source</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>FMTChargeType <bpt id="p1">*</bpt>Use this property to specify the data source for the form.<ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTChargeType <bpt id="p1">*</bpt>フォームのデータ ソースを指定するには、このプロパティを使用します。<ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>In the Form designer, click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Grid<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム デザイナーで、<bpt id="p1">**</bpt>デザイン<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>グリッド<ept id="p2">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Bind the FMTChargeType data source to the grid that appears in the simple list form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTChargeType データ ソースを簡易リスト フォームで表示されているグリッドにバインドします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, in <bpt id="p2">**</bpt>Data Source<ept id="p2">**</ept>, enter <bpt id="p3">**</bpt>FMTChargeType<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウの<bpt id="p2">**</bpt>データ ソース<ept id="p2">**</ept>に、<bpt id="p3">**</bpt>FMTChargeType<ept id="p3">**</ept> を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>You have to specify the data source before you add fields to the grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッドにフィールドを追加する前に、データ ソースを指定する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>You can then use the fields from the data source to add columns to the grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、データ ソースからのフィールドを使用して、グリッドに列を追加することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Add two fields from the data source to the grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッドにデータ ソースから 2 つのフォームを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>The fields you add will appear as columns on the Simple List form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加するフィールドは、簡易リスト フォームの列として表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Expand the FMTChargeType data source <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> node in the left pane.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">左側のウィンドウで、FMTChargeType データ ソース<bpt id="p1">**</bpt>フィールド<ept id="p1">**</ept>ノードを展開します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Press <bpt id="p1">**</bpt>Ctrl<ept id="p1">**</ept> and then click the following fields:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ctrl<ept id="p1">**</ept> を押し、次のフィールドをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>ChargeType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ChargeType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Drag the selected fields to <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Grid<ept id="p2">**</ept> in the right pane.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したフィールドを右ウィンドウの<bpt id="p1">**</bpt>デザイン<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>グリッド<ept id="p2">**</ept>にドラッグします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>The following illustration shows the grid after the grid node is expanded and the two fields are added.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、グリッド ノードが展開され、2 つのフィールドが追加された後のグリッドを示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>rentalcharge4<ept id="p1">](./media/rentalcharge4.png)](./media/rentalcharge4.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>rentalcharge4<ept id="p1">](./media/rentalcharge4.png)](./media/rentalcharge4.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>In the Form designer, click <bpt id="p1">**</bpt>Design <ph id="ph1">&amp;gt;</ph> CustomFilterGroup <ph id="ph2">&amp;gt;</ph> QuickFilter<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム デザイナーで、<bpt id="p1">**</bpt>デザイン <ph id="ph1">&amp;gt;</ph> CustomFilterGroup <ph id="ph2">&amp;gt;</ph> QuickFilter<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, click <bpt id="p2">**</bpt>TargetControl<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>Grid<ept id="p3">**</ept> to bind the <bpt id="p4">**</bpt>QuickFilter<ept id="p4">**</ept> control to the grid on the form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウで、<bpt id="p2">**</bpt>TargetControl<ept id="p2">**</ept> をクリックしてから<bpt id="p3">**</bpt>グリッド<ept id="p3">**</ept>を選択して <bpt id="p4">**</bpt>QuickFilter<ept id="p4">**</ept> コントロールをフォームのグリッドにバインドします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Click <bpt id="p1">**</bpt>File<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Save<ept id="p2">**</ept> <bpt id="p3">**</bpt>FmtChargeType<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ファイル<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>保存<ept id="p2">**</ept> <bpt id="p3">**</bpt>FmtChargeType<ept id="p3">**</ept> とクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>View the form</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームの表示</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Use Visual Studio to build and run the <bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept> form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio を使用して、<bpt id="p1">**</bpt>FmtChargeType<ept id="p1">**</ept> フォームをビルドして実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click the <bpt id="p2">**</bpt>FmtChargeType<ept id="p2">**</ept> form, and then click <bpt id="p3">**</bpt>Set as Startup Object<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>FmtChargeType<ept id="p2">**</ept> フォームを右クリックしてから、<bpt id="p3">**</bpt>スタートアップ オブジェクトとして設定<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Press Ctrl+F5 to build and run the form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ctrl+F5 キーを押して、フォームをビルドおよび実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>The form opens in Internet Explorer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer でフォームが開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>To add a rental charge type, click <bpt id="p1">**</bpt>New<ept id="p1">**</ept> in the Action Pane at the top of the form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レンタル料金タイプを追加するには、フォームの上部にあるアクション ペインで <bpt id="p1">**</bpt>新規<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Add the following information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の情報を追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source><bpt id="p1">**</bpt>Rental Charge Type<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>レンタル料金のタイプ<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>説明<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>cleaning</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クリーニング</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Cleaning fee</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クリーニング代</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>In the Action Pane, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクション ウィンドウで、<bpt id="p1">**</bpt>保存<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Refresh the browser to see the new record in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザーを更新して、一覧に新しいレコードを表示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>The following illustration shows how the form should look.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、フォームの外観を示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>rentalcharge5<ept id="p1">](./media/rentalcharge5.png)](./media/rentalcharge5.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>rentalcharge5<ept id="p1">](./media/rentalcharge5.png)](./media/rentalcharge5.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>The form opens in view mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示モードでフォームを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> in the Action Pane to switch the form into edit mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクション ウィンドウの<bpt id="p1">**</bpt>編集<ept id="p1">**</ept>をクリックして、フォームを編集モードに切り替えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>To return to view mode, click <bpt id="p1">**</bpt>Options<ept id="p1">**</ept> and then <bpt id="p2">**</bpt>Read mode<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示モードに戻るには、<bpt id="p1">**</bpt>オプション<ept id="p1">**</ept> をクリックしてから <bpt id="p2">**</bpt>読み取りモード<ept id="p2">**</ept> をクリックします。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: レンタル料金のタイプ フォームの構築
+description: このラボでは、簡易リストのフォームを作成します。 シンプル リスト フォームでは、参照データまたは 6 つ以下のフィールドが含まれるセカンダリ データを表示できます。 たとえば、作成するフォームは、レンタル料金のタイプについて一覧表示して説明します。
+author: jasongre
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 13671
+ms.assetid: 9b4f244c-f058-416c-b3c2-6f4ca29c8db8
+ms.search.region: Global
+ms.author: jasongre
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7c6aa02aec4ec1e74c75919849512a453276947a
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555239"
+---
+# <a name="build-the-rental-charge-type-form"></a><span data-ttu-id="b6a9c-105">レンタル料金のタイプ フォームの構築</span><span class="sxs-lookup"><span data-stu-id="b6a9c-105">Build the Rental Charge Type form</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="b6a9c-106">このラボでは、簡易リストのフォームを作成します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-106">In this lab you’ll create a Simple List form.</span></span> <span data-ttu-id="b6a9c-107">シンプル リスト フォームでは、参照データまたは 6 つ以下のフィールドが含まれるセカンダリ データを表示できます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-107">A Simple List form can show reference or secondary data that has six or fewer fields.</span></span> <span data-ttu-id="b6a9c-108">たとえば、作成するフォームは、レンタル料金のタイプについて一覧表示して説明します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-108">For example, the form that you create will list and describe the types of rental charges.</span></span> 
+
+<a name="prerequisites"></a><span data-ttu-id="b6a9c-109">前提条件</span><span class="sxs-lookup"><span data-stu-id="b6a9c-109">Prerequisites</span></span>
+-------------
+
+<span data-ttu-id="b6a9c-110">このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-110">For this tutorial, you’ll need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance.</span></span> <span data-ttu-id="b6a9c-111">詳細については、「[アクセス インスタンス](../dev-tools/access-instances.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-111">For more information, see [Access Instances](../dev-tools/access-instances.md).</span></span>
+
+## <a name="overview"></a><span data-ttu-id="b6a9c-112">概要</span><span class="sxs-lookup"><span data-stu-id="b6a9c-112">Overview</span></span>
+<span data-ttu-id="b6a9c-113">フォームを作成するには、既存のフォーム **FmtChargeType** から開始します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-113">To create the form, you’ll start from the existing form, **FmtChargeType**.</span></span> <span data-ttu-id="b6a9c-114">このフォームは、簡易リストのパターンを使用します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-114">This form uses the Simple List pattern.</span></span> <span data-ttu-id="b6a9c-115">次の図は、**FmtChargeType** フォームと簡易リスト パターンからの必要なコントロールを示しています。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-115">The following illustration shows the **FmtChargeType** form with the required controls from the Simple List pattern.</span></span> 
+
+<span data-ttu-id="b6a9c-116">[![rentalcharge1](./media/rentalcharge1.png)](./media/rentalcharge1.png)</span><span class="sxs-lookup"><span data-stu-id="b6a9c-116">[![rentalcharge1](./media/rentalcharge1.png)](./media/rentalcharge1.png)</span></span> 
+
+<span data-ttu-id="b6a9c-117">フォーム パターンに従うことによって、この簡易リストのフォームは、他の簡易リストのフォームと同じ構造とレイアウトを持つようになります。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-117">Adhering to the form pattern ensures that this Simple List form has the same structure and layout as other Simple List forms.</span></span>
+
+## <a name="key-concepts"></a><span data-ttu-id="b6a9c-118">重要な概念</span><span class="sxs-lookup"><span data-stu-id="b6a9c-118">Key concepts</span></span>
+-   <span data-ttu-id="b6a9c-119">パターンを使用して簡易リストのフォームを作成します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-119">Create a Simple List form using a pattern.</span></span>
+-   <span data-ttu-id="b6a9c-120">テーブルをフォームにバインドします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-120">Bind a table to the form.</span></span>
+-   <span data-ttu-id="b6a9c-121">フォームにコントロールを追加します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-121">Add controls to the form.</span></span>
+-   <span data-ttu-id="b6a9c-122">Visual Studio とブラウザーを使用してフォームを表示します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-122">View the form using Visual Studio and a browser.</span></span>
+
+## <a name="setup"></a><span data-ttu-id="b6a9c-123">セットアップ</span><span class="sxs-lookup"><span data-stu-id="b6a9c-123">Setup</span></span>
+### <a name="import-the-tutorial-project-and-transactional-data"></a><span data-ttu-id="b6a9c-124">チュートリアル プロジェクトおよびトランザクション データのインポート</span><span class="sxs-lookup"><span data-stu-id="b6a9c-124">Import the tutorial project and transactional data</span></span>
+
+<span data-ttu-id="b6a9c-125">Visual Studio を使用してチュートリアル プロジェクトをインポートします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-125">Use Visual Studio to import the tutorial project.</span></span> <span data-ttu-id="b6a9c-126">チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-126">The tutorial project includes the artifacts that you’ll use to complete this tutorial.</span></span> <span data-ttu-id="b6a9c-127">Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-127">Use Visual Studio to open the FMTutorial project and load the data for the tutorial.</span></span> <span data-ttu-id="b6a9c-128">フリート管理チュートリアルのデータを読み込むために、FMTDataHelper クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-128">You’ll use the FMTDataHelper class to load data for the Fleet Management tutorial.</span></span> <span data-ttu-id="b6a9c-129">これが作業する最初のチュートリアルである場合は、[アクセス Microsoft インスタンス](../dev-tools/access-instances.md)を確認し、ローカル VM で作業している場合に、管理者ユーザーを提供するかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-129">If this is the first tutorial you’re working on, review [Access Microsoft Instances](../dev-tools/access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.</span></span>
+
+1.  <span data-ttu-id="b6a9c-130">フリート管理のサンプルを <https://github.com/Microsoft/FMLab> からダウンロードし、**C:\\** に保存してから解凍します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-130">Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.</span></span>
+2.  <span data-ttu-id="b6a9c-131">デスクトップで、Visual Studio ショートカットをダブルクリックして、開発環境を開きます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-131">On the desktop, double-click the Visual Studio shortcut to open the development environment.</span></span>
+3.  <span data-ttu-id="b6a9c-132">**Finance and Operations** メニューで、**プロジェクトのインポート**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-132">On the **Finance and Operations** menu, click **Import Project**.</span></span>
+4.  <span data-ttu-id="b6a9c-133">**プロジェクトのインポート** ウィンドウで、**ファイル名**テキスト ボックスの隣にある、省略記号ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-133">In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.</span></span>
+5.  <span data-ttu-id="b6a9c-134">**インポートするファイルの選択**ウィンドウで、C:\FMLab を参照して FMTutorialDataModel.axpp をクリックしてから**開く**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-134">In the **Select the file to import** window, browse to C:\FMLab, click FMTutorialDataModel.axpp, and then click **Open**.</span></span>
+6.  <span data-ttu-id="b6a9c-135">**プロジェクト ファイルの場所**テキスト ボックスに、C:\FMLab と入力します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-135">In the **Project file location** text box, enter C:\FMLab.</span></span>
+7.  <span data-ttu-id="b6a9c-136">**要素の上書き** オプションをオンにし、**現在のソリューション** ラジオ オプションをオンにします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-136">Select the **Overwrite Elements** option, and the **Current solution** radio button.</span></span> <span data-ttu-id="b6a9c-137">次の図は、完了した **インポート プロジェクト** ダイアログ ボックスを示しています。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-137">The following illustration shows the completed **Import Project** dialog box.</span></span> 
+
+    <span data-ttu-id="b6a9c-138">[![rentalcharge2](./media/rentalcharge2.png)](./media/rentalcharge2.png)</span><span class="sxs-lookup"><span data-stu-id="b6a9c-138">[![rentalcharge2](./media/rentalcharge2.png)](./media/rentalcharge2.png)</span></span>
+
+8.  <span data-ttu-id="b6a9c-139">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-139">Click **OK**.</span></span>
+9.  <span data-ttu-id="b6a9c-140">デザイナー**ソリューション エクスプローラー**で、**クラス**を展開して、**FMTutorial** プロジェクトで **FMTDataHelper** を右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-140">In **Solution Explorer**, expand **Classes, and** under the **FMTutorial** project, right-click **FMTDataHelper**, and then click **Set as Startup Object**.</span></span>
+10. <span data-ttu-id="b6a9c-141">**ビルド**メニューで、**ソリューションの再構築**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-141">On the **Build** menu, click **Rebuild Solution**.</span></span> <span data-ttu-id="b6a9c-142">タイムスタンプに関係なく、プロジェクトのすべてのファイルを確実に作成するには、リビルドを使用します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-142">Use the rebuild to make sure that all of the files in the project are built regardless of timestamps.</span></span> <span data-ttu-id="b6a9c-143">**出力** ウィンドウでビルドの進行状況を表示できます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-143">You can view the build progress in the **Output** window.</span></span>
+11. <span data-ttu-id="b6a9c-144">ビルドが完了すると、**Ctrl + F5** を押してプロジェクトを実行します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-144">After the build completes, press **Ctrl+F5** to run the project.</span></span> <span data-ttu-id="b6a9c-145">ブラウザーが開き、データをインポートするクラスが実行されます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-145">The browser will open and run the class that imports the data.</span></span>
+
+## <a name="open-the-fmtutorial-project"></a><span data-ttu-id="b6a9c-146">FMTutorial プロジェクトを開く</span><span class="sxs-lookup"><span data-stu-id="b6a9c-146">Open the FMTutorial project</span></span>
+<span data-ttu-id="b6a9c-147">Visual Studio を使用して FMTutorial プロジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-147">Use Visual Studio to open the FMTutorial project.</span></span> <span data-ttu-id="b6a9c-148">Visual Studio を開き、FMTutorial プロジェクトが既に読み込まれている場合は、次のセクションに続行することができます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-148">If you have Visual Studio open and have already loaded the FMTutorial project, you can continue to the next section.</span></span>
+
+1.  <span data-ttu-id="b6a9c-149">開発環境がまだ開いていない場合は、デスクトップで開発環境への Visual Studio ショートカットをダブルクリックして、開発環境を開きます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-149">If the development environment isn’t already open, on the desktop, double-click the Visual Studio shortcut to open the development environment.</span></span>
+2.  <span data-ttu-id="b6a9c-150">**ファイル**メニューで、**開く** &gt; **プロジェクト/ソリューション**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-150">On the **File** menu, click **Open** &gt; **Project/Solution**.</span></span>
+3.  <span data-ttu-id="b6a9c-151">**プロジェクトを開く**ダイアログ ボックスで、C:\FmLab\FMTutorial を参照し、**FMTutorial** ソリューションを選択してから**開く**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-151">In the **Open Project** dialog box, browse to C:\FmLab\FMTutorial, select the **FMTutorial** solution, and then click **Open**</span></span>
+4.  <span data-ttu-id="b6a9c-152">FMTutorial プロジェクトが**ソリューション エクスプローラー**に表示されます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-152">The FMTutorial project appears in **Solution Explorer**.</span></span>
+
+## <a name="use-a-template-to-create-the-form"></a><span data-ttu-id="b6a9c-153">テンプレートを使用してフォームを作成</span><span class="sxs-lookup"><span data-stu-id="b6a9c-153">Use a template to create the form</span></span>
+<span data-ttu-id="b6a9c-154">Visual Studio を使用して **FmtChargeType** フォームを作成します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-154">Use Visual Studio to create the **FmtChargeType** form.</span></span> <span data-ttu-id="b6a9c-155">簡易リスト フォームを構築ためのテンプレートを使用します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-155">You’ll use a template for building the Simple List form.</span></span> <span data-ttu-id="b6a9c-156">また、フォームにデータ ソースを追加し、データ グリッドにフィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-156">You’ll also add a data source to the form and add fields to the data grid.</span></span>
+
+1.  <span data-ttu-id="b6a9c-157">**ソリューション エクスプローラー**で、**FMTutorial** プロジェクトを右クリックして**追加**をポイントしてから**既存の項目**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-157">In **Solution Explorer**, right-click the **FMTutorial** project, point to **Add**, and then click **Existing Item**.</span></span>
+2.  <span data-ttu-id="b6a9c-158">**既存の品目を追加**ウィンドウで、C:\FmLab を参照し、**AxForm\_FmtChargeType** をクリックしてから**追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-158">In the **Add Existing Item** window, browse to C:\FmLab, click **AxForm\_FmtChargeType**, and then click **Add**.</span></span> <span data-ttu-id="b6a9c-159">**ソリューション エクスプローラー**の **FMTutorial** プロジェクトの下に **FmtChargeType** フォームが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-159">The **FmtChargeType** form appears at the bottom of the **FMTutorial** project in **Solution Explorer**.</span></span>
+3.  <span data-ttu-id="b6a9c-160">**ソリューション エクスプローラー**で、**FmtChargeType** をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-160">In **Solution Explorer**, double-click **FmtChargeType**.</span></span> <span data-ttu-id="b6a9c-161">フォーム デザイナーで、フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-161">The form opens in the Form designer.</span></span>
+4.  <span data-ttu-id="b6a9c-162">フォームのデータ ソースとして **FmtChargeType** テーブルを追加します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-162">Add the **FmtChargeType** table as the data source for the form.</span></span> <span data-ttu-id="b6a9c-163">**データ ソース** を右クリックし、**新しいデータ ソース** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-163">Right-click **Data Sources,** and then click **New Data Source**.</span></span> <span data-ttu-id="b6a9c-164">データ ソース ノードが追加されます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-164">A data source node is added.</span></span>
+5.  <span data-ttu-id="b6a9c-165">前の手順でデータ ソース ノードをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-165">Click the data source node from the previous step.</span></span> <span data-ttu-id="b6a9c-166">**プロパティ** ウィンドウで、次のプロパティに指定された値を設定します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-166">In the **Properties** window, populate the following properties with the specified values.</span></span>
+
+    | <span data-ttu-id="b6a9c-167">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="b6a9c-167">**Property**</span></span> | <span data-ttu-id="b6a9c-168">**値**</span><span class="sxs-lookup"><span data-stu-id="b6a9c-168">**Value**</span></span>|
+    |--------------|------|
+    | <span data-ttu-id="b6a9c-169">テーブル</span><span class="sxs-lookup"><span data-stu-id="b6a9c-169">Table</span></span>        | <span data-ttu-id="b6a9c-170">FMTChargeType</span><span class="sxs-lookup"><span data-stu-id="b6a9c-170">FMTChargeType</span></span>|
+    | <span data-ttu-id="b6a9c-171">氏名</span><span class="sxs-lookup"><span data-stu-id="b6a9c-171">Name</span></span>         | <span data-ttu-id="b6a9c-172">FMTChargeType *まず Table プロパティの値を指定してください。このプロパティは、同じ値を使用するよう自動的に更新されます。*</span><span class="sxs-lookup"><span data-stu-id="b6a9c-172">FMTChargeType *Be sure to specify the value for the Table property first. This property will automatically update to use that same value.*</span></span> |
+
+    <span data-ttu-id="b6a9c-173">次の図は、**FMTChargeType** テーブルを追加した後の **データソース**を示しています。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-173">The following illustration shows **Data Sources** after you add the **FMTChargeType** table.</span></span> 
+
+    <span data-ttu-id="b6a9c-174">[![rentalcharge3](./media/rentalcharge3.png)](./media/rentalcharge3.png)</span><span class="sxs-lookup"><span data-stu-id="b6a9c-174">[![rentalcharge3](./media/rentalcharge3.png)](./media/rentalcharge3.png)</span></span>
+
+6.  <span data-ttu-id="b6a9c-175">フォーム デザイナーで、**デザイン**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-175">In the Form designer, click **Design**.</span></span> <span data-ttu-id="b6a9c-176">**プロパティ** ウィンドウで、次のプロパティに指定された値を設定します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-176">In the **Properties** window, populate the following properties with the specified values.</span></span>
+
+    | <span data-ttu-id="b6a9c-177">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="b6a9c-177">**Property**</span></span> | <span data-ttu-id="b6a9c-178">**値**</span><span class="sxs-lookup"><span data-stu-id="b6a9c-178">**Value**</span></span>                                                                    |
+    |--------------|------------------------------------------------------------------------------|
+    | <span data-ttu-id="b6a9c-179">キャプション</span><span class="sxs-lookup"><span data-stu-id="b6a9c-179">Caption</span></span>      | <span data-ttu-id="b6a9c-180">レンタル料金のタイプ *これは、フォームの上部に表示されるラベルです。*</span><span class="sxs-lookup"><span data-stu-id="b6a9c-180">Rental charge types *This is the label that appears at the top of the form.*</span></span> |
+    | <span data-ttu-id="b6a9c-181">データ ソース</span><span class="sxs-lookup"><span data-stu-id="b6a9c-181">Data Source</span></span>  | <span data-ttu-id="b6a9c-182">FMTChargeType *フォームのデータ ソースを指定するには、このプロパティを使用します。*</span><span class="sxs-lookup"><span data-stu-id="b6a9c-182">FMTChargeType *Use this property to specify the data source for the form.*</span></span>   |
+
+7.  <span data-ttu-id="b6a9c-183">フォーム デザイナーで、**デザイン** &gt; **グリッド**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-183">In the Form designer, click **Design** &gt; **Grid**.</span></span>
+8.  <span data-ttu-id="b6a9c-184">FMTChargeType データ ソースを簡易リスト フォームで表示されているグリッドにバインドします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-184">Bind the FMTChargeType data source to the grid that appears in the simple list form.</span></span> <span data-ttu-id="b6a9c-185">**プロパティ** ウィンドウの**データ ソース**に、**FMTChargeType** を入力します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-185">In the **Properties** window, in **Data Source**, enter **FMTChargeType**.</span></span>
+9.  <span data-ttu-id="b6a9c-186">グリッドにフィールドを追加する前に、データ ソースを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-186">You have to specify the data source before you add fields to the grid.</span></span> <span data-ttu-id="b6a9c-187">次に、データ ソースからのフィールドを使用して、グリッドに列を追加することができます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-187">You can then use the fields from the data source to add columns to the grid.</span></span> <span data-ttu-id="b6a9c-188">グリッドにデータ ソースから 2 つのフォームを追加します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-188">Add two fields from the data source to the grid.</span></span> <span data-ttu-id="b6a9c-189">追加するフィールドは、簡易リスト フォームの列として表示されます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-189">The fields you add will appear as columns on the Simple List form.</span></span> <span data-ttu-id="b6a9c-190">左側のウィンドウで、FMTChargeType データ ソース**フィールド**ノードを展開します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-190">Expand the FMTChargeType data source **Fields** node in the left pane.</span></span> <span data-ttu-id="b6a9c-191">**Ctrl** を押し、次のフィールドをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-191">Press **Ctrl** and then click the following fields:</span></span>
+    -   <span data-ttu-id="b6a9c-192">ChargeType</span><span class="sxs-lookup"><span data-stu-id="b6a9c-192">ChargeType</span></span>
+    -   <span data-ttu-id="b6a9c-193">説明</span><span class="sxs-lookup"><span data-stu-id="b6a9c-193">Description</span></span>
+
+10. <span data-ttu-id="b6a9c-194">選択したフィールドを右ウィンドウの**デザイン** &gt; **グリッド**にドラッグします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-194">Drag the selected fields to **Design** &gt; **Grid** in the right pane.</span></span> <span data-ttu-id="b6a9c-195">次の図は、グリッド ノードが展開され、2 つのフィールドが追加された後のグリッドを示しています。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-195">The following illustration shows the grid after the grid node is expanded and the two fields are added.</span></span> 
+
+    <span data-ttu-id="b6a9c-196">[![rentalcharge4](./media/rentalcharge4.png)](./media/rentalcharge4.png)</span><span class="sxs-lookup"><span data-stu-id="b6a9c-196">[![rentalcharge4](./media/rentalcharge4.png)](./media/rentalcharge4.png)</span></span>
+
+11. <span data-ttu-id="b6a9c-197">フォーム デザイナーで、**デザイン &gt; CustomFilterGroup &gt; QuickFilter** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-197">In the Form designer, click **Design &gt; CustomFilterGroup &gt; QuickFilter**.</span></span>
+12. <span data-ttu-id="b6a9c-198">**プロパティ** ウィンドウで、**TargetControl** をクリックしてから**グリッド**を選択して **QuickFilter** コントロールをフォームのグリッドにバインドします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-198">In the **Properties** window, click **TargetControl**, and then select **Grid** to bind the **QuickFilter** control to the grid on the form.</span></span>
+13. <span data-ttu-id="b6a9c-199">**ファイル** &gt; **保存** **FmtChargeType** とクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-199">Click **File** &gt; **Save** **FmtChargeType**.</span></span>
+
+## <a name="view-the-form"></a><span data-ttu-id="b6a9c-200">フォームの表示</span><span class="sxs-lookup"><span data-stu-id="b6a9c-200">View the form</span></span>
+<span data-ttu-id="b6a9c-201">Visual Studio を使用して、**FmtChargeType** フォームをビルドして実行します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-201">Use Visual Studio to build and run the **FmtChargeType** form.</span></span>
+
+1.  <span data-ttu-id="b6a9c-202">**ソリューション エクスプローラー**で、**FmtChargeType** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-202">In **Solution Explorer**, right-click the **FmtChargeType** form, and then click **Set as Startup Object**.</span></span>
+2.  <span data-ttu-id="b6a9c-203">Ctrl+F5 キーを押して、フォームをビルドおよび実行します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-203">Press Ctrl+F5 to build and run the form.</span></span>
+3.  <span data-ttu-id="b6a9c-204">Internet Explorer でフォームが開きます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-204">The form opens in Internet Explorer.</span></span>
+4.  <span data-ttu-id="b6a9c-205">レンタル料金タイプを追加するには、フォームの上部にあるアクション ペインで **新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-205">To add a rental charge type, click **New** in the Action Pane at the top of the form.</span></span> <span data-ttu-id="b6a9c-206">次の情報を追加します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-206">Add the following information.</span></span>
+
+    | <span data-ttu-id="b6a9c-207">**レンタル料金のタイプ**</span><span class="sxs-lookup"><span data-stu-id="b6a9c-207">**Rental Charge Type**</span></span> | <span data-ttu-id="b6a9c-208">**説明**</span><span class="sxs-lookup"><span data-stu-id="b6a9c-208">**Description**</span></span> |
+    |------------------------|-----------------|
+    | <span data-ttu-id="b6a9c-209">クリーニング</span><span class="sxs-lookup"><span data-stu-id="b6a9c-209">cleaning</span></span>               | <span data-ttu-id="b6a9c-210">クリーニング代</span><span class="sxs-lookup"><span data-stu-id="b6a9c-210">Cleaning fee</span></span>    |
+
+5.  <span data-ttu-id="b6a9c-211">アクション ウィンドウで、**保存**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-211">In the Action Pane, click **Save**.</span></span>
+6.  <span data-ttu-id="b6a9c-212">ブラウザーを更新して、一覧に新しいレコードを表示します。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-212">Refresh the browser to see the new record in the list.</span></span> <span data-ttu-id="b6a9c-213">次の図は、フォームの外観を示しています。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-213">The following illustration shows how the form should look.</span></span>
+
+    <span data-ttu-id="b6a9c-214">[![rentalcharge5](./media/rentalcharge5.png)](./media/rentalcharge5.png)</span><span class="sxs-lookup"><span data-stu-id="b6a9c-214">[![rentalcharge5](./media/rentalcharge5.png)](./media/rentalcharge5.png)</span></span>
+
+7.  <span data-ttu-id="b6a9c-215">表示モードでフォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-215">The form opens in view mode.</span></span> <span data-ttu-id="b6a9c-216">アクション ウィンドウの**編集**をクリックして、フォームを編集モードに切り替えます。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-216">Click **Edit** in the Action Pane to switch the form into edit mode.</span></span> <span data-ttu-id="b6a9c-217">表示モードに戻るには、**オプション** をクリックしてから **読み取りモード** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6a9c-217">To return to view mode, click **Options** and then **Read mode**.</span></span>
+
+
+
+

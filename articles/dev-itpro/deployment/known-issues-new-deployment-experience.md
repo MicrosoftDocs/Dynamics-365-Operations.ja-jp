@@ -1,189 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="known-issues-new-deployment-experience.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>known-issues-new-deployment-experience.cfecb0.2afbf09176274777db9f63fcf6eaf9262c3faced.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>2afbf09176274777db9f63fcf6eaf9262c3faced</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\deployment\known-issues-new-deployment-experience.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Known issues with self-service deployment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セルフサービス配置に関する既知の問題</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic lists known issues that you might experience when using self-service deployment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、セルフ サービス配置を使用する場合に発生する可能性がある既知の問題を一覧表示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Known issues with self-service deployment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セルフサービス配置に関する既知の問題</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic describes the known issues with <bpt id="p1">[</bpt>self-service deployment<ept id="p1">](infrastructure-stack.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、<bpt id="p1">[</bpt>セルフ サービス配置<ept id="p1">](infrastructure-stack.md)</ept>の既知の問題について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Lifecycle Services (LCS)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lifecycle Services (LCS)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Features not intended to be implemented</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実装が意図されていない機能</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The following LCS features are deprecated and will not be implemented in self-service deployment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の LCS 機能は廃止されており、セルフ サービス配置では実装されません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source><bpt id="p1">**</bpt>Feature<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>機能<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>説明<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>System diagnostics</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム診断</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>System diagnostics has been deprecated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム診断は非推奨です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>All data and functionality provided by system diagnostics today will be available through other features in the product and LCS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のシステム診断によって提供されるすべてのデータと機能は、製品と LCS のその他の機能を通じて使用可能になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Service requests</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サービス要求</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Service requests are being replaced with self-service actions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サービス要求は、セルフ サービス アクションに置き換えられます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Known issues in this release</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このリリースの既知の問題</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Know issues are bugs that will be addressed in upcoming releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既知の問題は、将来のリリースで解決されるバグです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Every 2 weeks there is a new release of LCS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2 週間おきに LCS の新しいリリースがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Log files listing deployment failures are not yet available through LCS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置エラーを一覧表示するログ ファイルは、まだ LCS を通じて使用できません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Currently, you can open a support ticket if you need the log files.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現時点では、ログ ファイルが必要な場合は、サポート チケットを開くことができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>LCS integration from a Finance and Operations environment does not work.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations 環境からの LCS 統合は機能しません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The features that are not available as a result of this include:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この結果使用できない機能は次のとおりです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Getting started</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">はじめに</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Online Help enabled through BPM libraries.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BPM ライブラリを通じて有効なオンライン ヘルプ。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Online Help from docs.microsoft.com is available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">docs.microsoft.com のオンライン ヘルプは使用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Raising support tickets from within Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations 内からサポート チケットを生成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Cloud-powered support from LCS is enabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS からのクラウドを利用したサポートが有効です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Finance and Operations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Features not yet implemented</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">まだ実装されていない機能</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>The following features that have infrastructure dependencies are not yet implemented in the modern deployment experience.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インフラストラクチャの依存関係がある次の機能は、最新の配置エクスペリエンスにはまだ実装されていません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>These features have not been deprecated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの機能は推奨されていませんでした。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source><bpt id="p1">**</bpt>Feature<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>機能<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>説明<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Retail support is not yet enabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail のサポートがまだ有効ではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Trace Parser</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Trace Parser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Perf tools are not yet supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実績ツールはまだサポートされていません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Reporting – Print to Screen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポート: 画面に出力</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Only print to PDF is supported at this time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PDF への出力のみこの時点でサポートされています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Export to Word</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Word にエクスポート</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Export to Word functionality is not enabled at this time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この時点で、Word へのエクスポート機能は有効ではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Features not intended to be implemented</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実装が意図されていない機能</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>The following features are deprecated and will not be implemented in the modern deployment experience.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の機能は廃止されており、最新の配置エクスペリエンスでは実装されません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">**</bpt>Feature<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>機能<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>説明<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Custom fonts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム フォント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Custom fonts will not be supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム フォントはサポートされません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Known issues in this release</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このリリースの既知の問題</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Known issues are listed below.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既知の問題は次のとおりです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>These are bugs that are being worked on actively.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらは、アクティブにの作業されているバグです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Hotfixes will be provided in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">修正プログラムは将来のリリースで提供されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Financial reporting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務報告</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source><bpt id="p1">**</bpt>Default reports are not imported by default:<ept id="p1">**</ept> To import the default reports, do the following:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>既定のレポートは既定ではインポートされない:<ept id="p1">**</ept> 既定のレポートをインポートするには、以下を行います。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Launch Report designer by going to <bpt id="p1">**</bpt>General Ledger <ph id="ph1">\&gt;</ph> Inquiries and reports <ph id="ph2">\&gt;</ph> Financial reports.<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>総勘定元帳 <ph id="ph1">\&gt;</ph> 照会およびレポート<ph id="ph2">\&gt;</ph> 財務諸表<ept id="p1">**</ept> に移動して、レポート デザイナーを起動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新規<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Go to <bpt id="p1">**</bpt>Tools <ph id="ph1">\&gt;</ph> Import Default Reports<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ツール <ph id="ph1">\&gt;</ph> 既定のレポートのインポート<ept id="p1">**</ept> に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Reports will load into the web client after a few minutes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートは、数分後に Web クライアントに読み込まれます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source><bpt id="p1">**</bpt>Print to PDF is printing to XPS instead<ept id="p1">**</ept> (due to a print driver access issue).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PDF に出力は、代わりに XPS に出力されます<ept id="p1">**</ept> (印刷ドライバーへのアクセスの問題のため)。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: セルフサービス配置に関する既知の問題
+description: このトピックでは、セルフ サービス配置を使用する場合に発生する可能性がある既知の問題を一覧表示します。
+author: sarvanisathish
+manager: AnnBe
+ms.date: 12/14/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: IT Pro
+ms.reviewer: sericks
+ms.search.scope: Operations
+ms.search.region: Global
+ms.author: sarvanis
+ms.search.validFrom: 2018-12-31
+ms.dyn365.ops.version: 8.1.1
+ms.openlocfilehash: 2afbf09176274777db9f63fcf6eaf9262c3faced
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544215"
+---
+# <a name="known-issues-with-self-service-deployment"></a><span data-ttu-id="5d004-103">セルフサービス配置に関する既知の問題</span><span class="sxs-lookup"><span data-stu-id="5d004-103">Known issues with self-service deployment</span></span>
+
+[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/limited-availability.md)]
+
+<span data-ttu-id="5d004-104">このトピックでは、[セルフ サービス配置](infrastructure-stack.md)の既知の問題について説明します。</span><span class="sxs-lookup"><span data-stu-id="5d004-104">This topic describes the known issues with [self-service deployment](infrastructure-stack.md).</span></span>
+
+## <a name="lifecycle-services-lcs"></a><span data-ttu-id="5d004-105">Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="5d004-105">Lifecycle Services (LCS)</span></span>
+
+### <a name="features-not-intended-to-be-implemented"></a><span data-ttu-id="5d004-106">実装が意図されていない機能</span><span class="sxs-lookup"><span data-stu-id="5d004-106">Features not intended to be implemented</span></span>
+<span data-ttu-id="5d004-107">次の LCS 機能は廃止されており、セルフ サービス配置では実装されません。</span><span class="sxs-lookup"><span data-stu-id="5d004-107">The following LCS features are deprecated and will not be implemented in self-service deployment.</span></span>
+
+| <span data-ttu-id="5d004-108">**機能**</span><span class="sxs-lookup"><span data-stu-id="5d004-108">**Feature**</span></span>        | <span data-ttu-id="5d004-109">**説明**</span><span class="sxs-lookup"><span data-stu-id="5d004-109">**Description**</span></span>   |
+|--------------------|--------|
+| <span data-ttu-id="5d004-110">システム診断</span><span class="sxs-lookup"><span data-stu-id="5d004-110">System diagnostics</span></span> | <span data-ttu-id="5d004-111">システム診断は非推奨です。</span><span class="sxs-lookup"><span data-stu-id="5d004-111">System diagnostics has been deprecated.</span></span> <span data-ttu-id="5d004-112">現在のシステム診断によって提供されるすべてのデータと機能は、製品と LCS のその他の機能を通じて使用可能になります。</span><span class="sxs-lookup"><span data-stu-id="5d004-112">All data and functionality provided by system diagnostics today will be available through other features in the product and LCS.</span></span> |
+| <span data-ttu-id="5d004-113">サービス要求</span><span class="sxs-lookup"><span data-stu-id="5d004-113">Service requests</span></span>   | <span data-ttu-id="5d004-114">サービス要求は、セルフ サービス アクションに置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="5d004-114">Service requests are being replaced with self-service actions.</span></span> |
+
+### <a name="known-issues-in-this-release"></a><span data-ttu-id="5d004-115">このリリースの既知の問題</span><span class="sxs-lookup"><span data-stu-id="5d004-115">Known issues in this release</span></span>
+<span data-ttu-id="5d004-116">既知の問題は、将来のリリースで解決されるバグです。</span><span class="sxs-lookup"><span data-stu-id="5d004-116">Know issues are bugs that will be addressed in upcoming releases.</span></span> <span data-ttu-id="5d004-117">2 週間おきに LCS の新しいリリースがあります。</span><span class="sxs-lookup"><span data-stu-id="5d004-117">Every 2 weeks there is a new release of LCS.</span></span>
+
+-   <span data-ttu-id="5d004-118">配置エラーを一覧表示するログ ファイルは、まだ LCS を通じて使用できません。</span><span class="sxs-lookup"><span data-stu-id="5d004-118">Log files listing deployment failures are not yet available through LCS.</span></span> <span data-ttu-id="5d004-119">現時点では、ログ ファイルが必要な場合は、サポート チケットを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="5d004-119">Currently, you can open a support ticket if you need the log files.</span></span>
+
+-   <span data-ttu-id="5d004-120">Finance and Operations 環境からの LCS 統合は機能しません。</span><span class="sxs-lookup"><span data-stu-id="5d004-120">LCS integration from a Finance and Operations environment does not work.</span></span> <span data-ttu-id="5d004-121">この結果使用できない機能は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="5d004-121">The features that are not available as a result of this include:</span></span>
+
+    -   <span data-ttu-id="5d004-122">はじめに</span><span class="sxs-lookup"><span data-stu-id="5d004-122">Getting started</span></span>
+
+    -   <span data-ttu-id="5d004-123">BPM ライブラリを通じて有効なオンライン ヘルプ。</span><span class="sxs-lookup"><span data-stu-id="5d004-123">Online Help enabled through BPM libraries.</span></span> <span data-ttu-id="5d004-124">docs.microsoft.com のオンライン ヘルプは使用できます。</span><span class="sxs-lookup"><span data-stu-id="5d004-124">Online Help from docs.microsoft.com is available.</span></span>
+
+    -   <span data-ttu-id="5d004-125">Finance and Operations 内からサポート チケットを生成します。</span><span class="sxs-lookup"><span data-stu-id="5d004-125">Raising support tickets from within Finance and Operations.</span></span> <span data-ttu-id="5d004-126">LCS からのクラウドを利用したサポートが有効です。</span><span class="sxs-lookup"><span data-stu-id="5d004-126">Cloud-powered support from LCS is enabled.</span></span>
+
+## <a name="finance-and-operations"></a><span data-ttu-id="5d004-127">Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="5d004-127">Finance and Operations</span></span> 
+
+### <a name="features-not-yet-implemented"></a><span data-ttu-id="5d004-128">まだ実装されていない機能</span><span class="sxs-lookup"><span data-stu-id="5d004-128">Features not yet implemented</span></span>
+
+<span data-ttu-id="5d004-129">インフラストラクチャの依存関係がある次の機能は、最新の配置エクスペリエンスにはまだ実装されていません。</span><span class="sxs-lookup"><span data-stu-id="5d004-129">The following features that have infrastructure dependencies are not yet implemented in the modern deployment experience.</span></span> <span data-ttu-id="5d004-130">これらの機能は推奨されていませんでした。</span><span class="sxs-lookup"><span data-stu-id="5d004-130">These features have not been deprecated.</span></span>
+
+| <span data-ttu-id="5d004-131">**機能**</span><span class="sxs-lookup"><span data-stu-id="5d004-131">**Feature**</span></span>                 | <span data-ttu-id="5d004-132">**説明**</span><span class="sxs-lookup"><span data-stu-id="5d004-132">**Description**</span></span>                                           |
+|-----------------------------|-----------------------------------------------------------|
+| <span data-ttu-id="5d004-133">小売</span><span class="sxs-lookup"><span data-stu-id="5d004-133">Retail</span></span>                      | <span data-ttu-id="5d004-134">Retail のサポートがまだ有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="5d004-134">Retail support is not yet enabled.</span></span>                        |
+| <span data-ttu-id="5d004-135">Trace Parser</span><span class="sxs-lookup"><span data-stu-id="5d004-135">Trace Parser</span></span>                | <span data-ttu-id="5d004-136">実績ツールはまだサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5d004-136">Perf tools are not yet supported.</span></span>                         |
+| <span data-ttu-id="5d004-137">レポート: 画面に出力</span><span class="sxs-lookup"><span data-stu-id="5d004-137">Reporting – Print to Screen</span></span> | <span data-ttu-id="5d004-138">PDF への出力のみこの時点でサポートされています。</span><span class="sxs-lookup"><span data-stu-id="5d004-138">Only print to PDF is supported at this time.</span></span>              |
+| <span data-ttu-id="5d004-139">Word にエクスポート</span><span class="sxs-lookup"><span data-stu-id="5d004-139">Export to Word</span></span>              | <span data-ttu-id="5d004-140">この時点で、Word へのエクスポート機能は有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="5d004-140">Export to Word functionality is not enabled at this time.</span></span> |
+
+### <a name="features-not-intended-to-be-implemented"></a><span data-ttu-id="5d004-141">実装が意図されていない機能</span><span class="sxs-lookup"><span data-stu-id="5d004-141">Features not intended to be implemented</span></span>
+<span data-ttu-id="5d004-142">次の機能は廃止されており、最新の配置エクスペリエンスでは実装されません。</span><span class="sxs-lookup"><span data-stu-id="5d004-142">The following features are deprecated and will not be implemented in the modern deployment experience.</span></span>
+
+| <span data-ttu-id="5d004-143">**機能**</span><span class="sxs-lookup"><span data-stu-id="5d004-143">**Feature**</span></span>  | <span data-ttu-id="5d004-144">**説明**</span><span class="sxs-lookup"><span data-stu-id="5d004-144">**Description**</span></span>                     |
+|--------------|-------------------------------------|
+| <span data-ttu-id="5d004-145">カスタム フォント</span><span class="sxs-lookup"><span data-stu-id="5d004-145">Custom fonts</span></span> | <span data-ttu-id="5d004-146">カスタム フォントはサポートされません。</span><span class="sxs-lookup"><span data-stu-id="5d004-146">Custom fonts will not be supported.</span></span> |
+
+### <a name="known-issues-in-this-release"></a><span data-ttu-id="5d004-147">このリリースの既知の問題</span><span class="sxs-lookup"><span data-stu-id="5d004-147">Known issues in this release</span></span>
+<span data-ttu-id="5d004-148">既知の問題は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="5d004-148">Known issues are listed below.</span></span> <span data-ttu-id="5d004-149">これらは、アクティブにの作業されているバグです。</span><span class="sxs-lookup"><span data-stu-id="5d004-149">These are bugs that are being worked on actively.</span></span> <span data-ttu-id="5d004-150">修正プログラムは将来のリリースで提供されます。</span><span class="sxs-lookup"><span data-stu-id="5d004-150">Hotfixes will be provided in future releases.</span></span>
+
+#### <a name="financial-reporting"></a><span data-ttu-id="5d004-151">財務報告</span><span class="sxs-lookup"><span data-stu-id="5d004-151">Financial reporting</span></span>
+
+-   <span data-ttu-id="5d004-152">**既定のレポートは既定ではインポートされない:** 既定のレポートをインポートするには、以下を行います。</span><span class="sxs-lookup"><span data-stu-id="5d004-152">**Default reports are not imported by default:** To import the default reports, do the following:</span></span>
+
+    1.  <span data-ttu-id="5d004-153">**総勘定元帳 \> 照会およびレポート\> 財務諸表** に移動して、レポート デザイナーを起動します。</span><span class="sxs-lookup"><span data-stu-id="5d004-153">Launch Report designer by going to **General Ledger \> Inquiries and reports \> Financial reports.**</span></span>
+    2.  <span data-ttu-id="5d004-154">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5d004-154">Click **New**.</span></span>
+    3.  <span data-ttu-id="5d004-155">**ツール \> 既定のレポートのインポート** に移動します。</span><span class="sxs-lookup"><span data-stu-id="5d004-155">Go to **Tools \> Import Default Reports**.</span></span> 
+    4.  <span data-ttu-id="5d004-156">レポートは、数分後に Web クライアントに読み込まれます。</span><span class="sxs-lookup"><span data-stu-id="5d004-156">Reports will load into the web client after a few minutes.</span></span>
+
+-   <span data-ttu-id="5d004-157">**PDF に出力は、代わりに XPS に出力されます** (印刷ドライバーへのアクセスの問題のため)。</span><span class="sxs-lookup"><span data-stu-id="5d004-157">**Print to PDF is printing to XPS instead** (due to a print driver access issue).</span></span>

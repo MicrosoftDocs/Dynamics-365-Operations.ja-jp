@@ -1,225 +1,102 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="models.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>models.f2bfa6.b96446b19fe9559b3f04fc7451ade16140e8f679.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>b96446b19fe9559b3f04fc7451ade16140e8f679</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-tools\models.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Models and packages</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルとパッケージ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This article describes the concept of models and packages.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、モデルとパッケージの概念について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Models and packages</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルとパッケージ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This article describes the concept of models and packages.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、モデルとパッケージの概念について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>It also explains how to use the development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>To work with models in the model store, you use tools in Microsoft Visual Studio.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル ストアのモデルを操作するには、Microsoft Visual Studio のツールを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>You can create new models and change parameters for existing models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいモデルを作成、および既存のモデルのパラメータを変更することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Conceptual overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">概念に関する概要</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>A model is a group of elements, such as metadata and source files, that typically constitute a distributable software solution and includes customizations of an existing solution.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルは、通常、配布可能なソフトウェア ソリューションを構成するメタデータとソース ファイルなどの要素のグループであり、既存のソリューションのカスタマイズを含みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>A model is a design-time concept, for example a warehouse management model or a project accounting model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルは、倉庫管理モデルやプロジェクト会計モデルなどのデザイン時概念です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>A model always belongs to a package.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルは、常に 1 つのパッケージに属しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>A package is a deployment and compilation unit of one or more models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージは、1 つまたは複数のモデルの配置およびコンパイル単位です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>It includes model metadata, binaries, and other associated resources.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これには、モデル メタデータ、バイナリ、およびその他の関連するリソースが含まれます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>One or more packages can be packaged into a deployable package, which is the vehicle used for deployment on runtime environments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つ以上のパッケージは、ランタイム環境の配置に使用する車両の配置可能パッケージにパッケージすることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Creating a new model</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいモデルを作成しています</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>You use the <bpt id="p1">**</bpt>Create model<ept id="p1">**</ept> wizard to create new models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>モデルの作成<ept id="p1">**</ept> ウィザードを使用して、新しいモデルを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>You can access this wizard from <bpt id="p1">**</bpt>Model Management<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>Dynamics 365<ept id="p2">**</ept>menu.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このウィザードには <bpt id="p2">**</bpt>Dynamics 365<ept id="p2">**</ept> メニューの <bpt id="p1">**</bpt>モデル管理<ept id="p1">**</ept> からアクセスすることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>You can create two types of models:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルは 2 種類作成することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">**</bpt>A model that is deployed in its own package<ept id="p1">**</ept> – You can use this type of model to create new model elements, and extend the metadata and business logic of referenced models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>固有のパッケージに配置されているモデル<ept id="p1">**</ept> - このタイプのモデルを使用して、新しいモデル要素を作成し、参照モデルのメタデータとビジネス ロジックを拡張することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The wizard lets you select the referenced models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このウィザードでは、参照モデルを選択できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>This type of model is compiled into its own assembly and binaries, and will simplify and reduce the cost of upgrades, deployment, and application lifecycle management in general.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このタイプのモデルは、独自のアセンブリとバイナリにコンパイルされるため、一般的なアップグレード、展開、アプリケーション ライフサイクル管理のコストが削減され、簡素化されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source><bpt id="p1">**</bpt>A model that is a part of an existing package<ept id="p1">**</ept> – You can use this type of model to perform advanced customizations, such as overlayering source code and metadata.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>既存のパッケージの一部であるモデル<ept id="p1">**</ept> - このタイプのモデルを使用して、ソース コードおよびメタデータのオーバーレイなどの高度なカスタマイズを実行することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>When the <bpt id="p1">**</bpt>Create model<ept id="p1">**</ept> wizard is completed, if you chose to create a new project, you will be prompted to specify a name and location for it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>モデルの作成<ept id="p1">**</ept> ウィザードが完了したとき、新しいプロジェクトの作成を選択した場合、名前とその場所を指定するための入力を要求されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Updating model parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モード パラメーターの更新</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>If you must change the parameters for a model, you can use the <bpt id="p1">**</bpt>Update model parameters<ept id="p1">**</ept> dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルのパラメーターを変更する必要がある場合は、<bpt id="p1">**</bpt>更新モデル パラメーター<ept id="p1">**</ept> ダイアログ ボックスを使用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>On the <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>Model Management<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Update model parameters<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> メニューで、<bpt id="p2">**</bpt>モデル管理<ept id="p2">**</ept>をポイントし、<bpt id="p3">**</bpt>モデルのパラメーターの更新<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>In the <bpt id="p1">**</bpt>Model name<ept id="p1">**</ept> field, select the model to update parameters for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>モデル名<ept id="p1">**</ept>フィールドで、パラメーターを更新するモデルを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Update the parameters as you require.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じてパラメーターを更新します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>次へ<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Update the dependency information for the current model, if changes are required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更が必要な場合は、現在のモデルの依存関係情報を更新します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>次へ<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>The summary information for the model is displayed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルの要約情報が表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>完了<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>The updated model parameters become effective only after you restart Visual Studio.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">更新されたモデル パラメーターは、Visual Studio を再起動した後にのみ有効になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Viewing package dependencies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージの依存関係の表示</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>You can create a graphical representation that shows which packages and their models have dependencies on other packages.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">どのパッケージとそのモデルに他のパッケージへの依存関係があるかを示す、グラフィック表現を作成することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>On the <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>Model Management<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>View package dependencies<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> メニューで、<bpt id="p2">**</bpt>モデル管理<ept id="p2">**</ept>をポイントし、<bpt id="p3">**</bpt>パッケージの依存関係の表示<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>A Directed Graph Markup Language (DGML) diagram will be generated for the current packages and their models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のパッケージとそのモデルについて、有向グラフ マークアップ言語 (DGML) 図が生成されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>This diagram is a collection of interdependent nodes, each of which represents a package.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この図は、それぞれがパッケージを表す相互依存ノードの集合です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Each node lists all the models that belong to that package.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各ノードでは、パッケージに属するすべてのモデルを表示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Additional tools let you enhance or simplify the diagram.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加のツールは、強化または図を簡略化できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>For example, you can add comments, move nodes around, or remove nodes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、コメントを追加したり、ノードをあちこちに移動したり、またはノードを削除できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>You can also view package dependencies of a single model by following these steps:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、次の手順で、単一モデルのパッケージ依存関係を表示することもできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Make sure the Application Explorer is in Model view: Right-click on the AOT node and select Model view.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション エクスプローラーがモデル ビューになっていることを確認します。AOT ノードを右クリックし、モデル ビューを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Right-click on any model and select <bpt id="p1">**</bpt>View package dependencies<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>View outgoing references.<ept id="p2">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">任意のモデルを右クリックし、<bpt id="p1">**</bpt>パッケージの依存関係を表示<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>送信参照を表示<ept id="p2">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>This will generate a graph of all packages that the selected model depends on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したモデルが依存するすべてのパッケージのグラフが生成されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>view dependencies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビューの相互関係</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>directory dependencies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ディレクトリ依存関係</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Deleting a model</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルの削除</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>On a development or test environment, follow these steps to delete a model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発またはテスト環境では、次の手順に従ってモデルを削除します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>The following steps assume the local model store folder is C:\AOSService\PackagesLocalDirectory and your model is named MyModel1.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の手順では、ローカル モデル ストア フォルダーが C:\AOSService\PackagesLocalDirectory であり、モデルの名前が MyModel1 であると想定しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>If your model belongs to its own package (For example: An extension package with no other models in the package):</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルがそれ自身のパッケージに属している場合 (たとえば: パッケージに他のモデルがない拡張機能パッケージ):</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Stop the following services: The AOS web service and the Batch Management Service</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のサービスを停止: AOS Web サービスおよびバッチ管理サービス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Delete the package folder  C:\AOSService\PackagesLocalDirectory\MyModel1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ フォルダー  C:\AOSService\PackagesLocalDirectory\MyModel1 を削除します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Restart the services from step 1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手順 1 からサービスを再開</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>If Visual Studio is running, refresh your models (Visual Studio &gt; Dynamics 365 &gt; Model management &gt; Refresh models)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio を実行している場合、モデルを更新します (Visual Studio &gt; Dynamics 365 &gt; モデル管理 &gt; モデルの更新)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>In Visual Studio, perform a full database synchronization (Visual Studio &gt; Dynamics 365 &gt; Synchronize database...)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio で、完全なデータベース同期を実行します (Visual Studio &gt; Dynamics 365 &gt; データベースの同期...)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>If your model belongs to a package with multiple models (For example, MyModel1 overlays Application Suite):</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルが、複数のモデルを持つパッケージに属している場合 (MyModel1 がアプリケーション スイートにオーバーレイする場合など):</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Stop the following services: The AOS web service and the Batch Management Service</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のサービスを停止: AOS Web サービスおよびバッチ管理サービス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Delete the model folder  C:\AOSService\PackagesLocalDirectory<ph id="ph1">\&lt;</ph>PackageName&gt;\MyModel1 (In this example PackageName=ApplicationSuite)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル フォルダー  C:\AOSService\PackagesLocalDirectory<ph id="ph1">\&lt;</ph>PackageName&gt;\MyModel1 (In this example PackageName=ApplicationSuite) を削除します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Restart the services from step 1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手順 1 からサービスを再開</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>In Visual Studio, refresh your models (Visual Studio &gt; Dynamics 365 &gt; Model management &gt; Refresh models)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio で、モデルを更新します (Visual Studio &gt; Dynamics 365 &gt; モデル管理 &gt; モデルの更新)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>In Visual Studio, build the package that the deleted models belonged to (Visual Studio &gt; Dynamics 365 &gt; Build models...)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio で、削除したモデルが属しているパッケージをビルドします (Visual Studio &gt; Dynamics 365 &gt; モデルをビルド...)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>In Visual Studio, perform a full database synchronization (Visual Studio &gt; Dynamics 365 &gt; Synchronize database...)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio で、完全なデータベース同期を実行します (Visual Studio &gt; Dynamics 365 &gt; データベースの同期...)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加リソース</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source><bpt id="p1">[</bpt>Development tools overview<ept id="p1">](development-tools-overview.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>開発ツールの概要<ept id="p1">](development-tools-overview.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source><bpt id="p1">[</bpt>Developer home page<ept id="p1">](developer-home-page.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>開発者ホーム ページ<ept id="p1">](developer-home-page.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source><bpt id="p1">[</bpt>Distribution of models: How to export and import model files<ept id="p1">](models-export-import.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>モデルの配分: モデル ファイルをエクスポートおよびインポートする方法<ept id="p1">](models-export-import.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: モデルとパッケージ
+description: この記事では、モデルとパッケージの概念について説明します。 また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。
+author: robadawy
+manager: AnnBe
+ms.date: 05/30/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 83351
+ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59
+ms.search.region: Global
+ms.author: robadawy
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b96446b19fe9559b3f04fc7451ade16140e8f679
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544131"
+---
+# <a name="models-and-packages"></a><span data-ttu-id="f3841-104">モデルとパッケージ</span><span class="sxs-lookup"><span data-stu-id="f3841-104">Models and packages</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="f3841-105">この記事では、モデルとパッケージの概念について説明します。</span><span class="sxs-lookup"><span data-stu-id="f3841-105">This article describes the concept of models and packages.</span></span> <span data-ttu-id="f3841-106">また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。</span><span class="sxs-lookup"><span data-stu-id="f3841-106">It also explains how to use the development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.</span></span>
+
+<span data-ttu-id="f3841-107">モデル ストアのモデルを操作するには、Microsoft Visual Studio のツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="f3841-107">To work with models in the model store, you use tools in Microsoft Visual Studio.</span></span> <span data-ttu-id="f3841-108">新しいモデルを作成、および既存のモデルのパラメータを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="f3841-108">You can create new models and change parameters for existing models.</span></span>
+
+## <a name="conceptual-overview"></a><span data-ttu-id="f3841-109">概念に関する概要</span><span class="sxs-lookup"><span data-stu-id="f3841-109">Conceptual overview</span></span>
+<span data-ttu-id="f3841-110">モデルは、通常、配布可能なソフトウェア ソリューションを構成するメタデータとソース ファイルなどの要素のグループであり、既存のソリューションのカスタマイズを含みます。</span><span class="sxs-lookup"><span data-stu-id="f3841-110">A model is a group of elements, such as metadata and source files, that typically constitute a distributable software solution and includes customizations of an existing solution.</span></span> <span data-ttu-id="f3841-111">モデルは、倉庫管理モデルやプロジェクト会計モデルなどのデザイン時概念です。</span><span class="sxs-lookup"><span data-stu-id="f3841-111">A model is a design-time concept, for example a warehouse management model or a project accounting model.</span></span> <span data-ttu-id="f3841-112">モデルは、常に 1 つのパッケージに属しています。</span><span class="sxs-lookup"><span data-stu-id="f3841-112">A model always belongs to a package.</span></span> <span data-ttu-id="f3841-113">パッケージは、1 つまたは複数のモデルの配置およびコンパイル単位です。</span><span class="sxs-lookup"><span data-stu-id="f3841-113">A package is a deployment and compilation unit of one or more models.</span></span> <span data-ttu-id="f3841-114">これには、モデル メタデータ、バイナリ、およびその他の関連するリソースが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f3841-114">It includes model metadata, binaries, and other associated resources.</span></span> <span data-ttu-id="f3841-115">1 つ以上のパッケージは、ランタイム環境の配置に使用する車両の配置可能パッケージにパッケージすることができます。</span><span class="sxs-lookup"><span data-stu-id="f3841-115">One or more packages can be packaged into a deployable package, which is the vehicle used for deployment on runtime environments.</span></span>
+
+<!--The [Packages, models, and projects](https://mix.office.com/watch/ies6lyit6773) Office Mix describes models and packages and how they relate to each other.-->
+
+## <a name="creating-a-new-model"></a><span data-ttu-id="f3841-116">新しいモデルを作成しています</span><span class="sxs-lookup"><span data-stu-id="f3841-116">Creating a new model</span></span>
+<span data-ttu-id="f3841-117">**モデルの作成** ウィザードを使用して、新しいモデルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f3841-117">You use the **Create model** wizard to create new models.</span></span> <span data-ttu-id="f3841-118">このウィザードには **Dynamics 365** メニューの **モデル管理** からアクセスすることができます。</span><span class="sxs-lookup"><span data-stu-id="f3841-118">You can access this wizard from **Model Management** on the **Dynamics 365**menu.</span></span> <span data-ttu-id="f3841-119">モデルは 2 種類作成することができます。</span><span class="sxs-lookup"><span data-stu-id="f3841-119">You can create two types of models:</span></span>
+
+-   <span data-ttu-id="f3841-120">**固有のパッケージに配置されているモデル** - このタイプのモデルを使用して、新しいモデル要素を作成し、参照モデルのメタデータとビジネス ロジックを拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="f3841-120">**A model that is deployed in its own package** – You can use this type of model to create new model elements, and extend the metadata and business logic of referenced models.</span></span> <span data-ttu-id="f3841-121">このウィザードでは、参照モデルを選択できます。</span><span class="sxs-lookup"><span data-stu-id="f3841-121">The wizard lets you select the referenced models.</span></span> <span data-ttu-id="f3841-122">このタイプのモデルは、独自のアセンブリとバイナリにコンパイルされるため、一般的なアップグレード、展開、アプリケーション ライフサイクル管理のコストが削減され、簡素化されます。</span><span class="sxs-lookup"><span data-stu-id="f3841-122">This type of model is compiled into its own assembly and binaries, and will simplify and reduce the cost of upgrades, deployment, and application lifecycle management in general.</span></span>
+-   <span data-ttu-id="f3841-123">**既存のパッケージの一部であるモデル** - このタイプのモデルを使用して、ソース コードおよびメタデータのオーバーレイなどの高度なカスタマイズを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="f3841-123">**A model that is a part of an existing package** – You can use this type of model to perform advanced customizations, such as overlayering source code and metadata.</span></span>
+
+<span data-ttu-id="f3841-124">**モデルの作成** ウィザードが完了したとき、新しいプロジェクトの作成を選択した場合、名前とその場所を指定するための入力を要求されます。</span><span class="sxs-lookup"><span data-stu-id="f3841-124">When the **Create model** wizard is completed, if you chose to create a new project, you will be prompted to specify a name and location for it.</span></span>
+
+## <a name="updating-model-parameters"></a><span data-ttu-id="f3841-125">モード パラメーターの更新</span><span class="sxs-lookup"><span data-stu-id="f3841-125">Updating model parameters</span></span>
+<span data-ttu-id="f3841-126">モデルのパラメーターを変更する必要がある場合は、**更新モデル パラメーター** ダイアログ ボックスを使用できます。</span><span class="sxs-lookup"><span data-stu-id="f3841-126">If you must change the parameters for a model, you can use the **Update model parameters** dialog box.</span></span>
+
+1.  <span data-ttu-id="f3841-127">**Dynamics 365** メニューで、**モデル管理**をポイントし、**モデルのパラメーターの更新**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f3841-127">On the **Dynamics 365** menu, point to **Model Management**, and then click **Update model parameters**.</span></span>
+2.  <span data-ttu-id="f3841-128">**モデル名**フィールドで、パラメーターを更新するモデルを選択します。</span><span class="sxs-lookup"><span data-stu-id="f3841-128">In the **Model name** field, select the model to update parameters for.</span></span>
+3.  <span data-ttu-id="f3841-129">必要に応じてパラメーターを更新します。</span><span class="sxs-lookup"><span data-stu-id="f3841-129">Update the parameters as you require.</span></span>
+4.  <span data-ttu-id="f3841-130">**次へ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f3841-130">Click **Next**.</span></span>
+5.  <span data-ttu-id="f3841-131">変更が必要な場合は、現在のモデルの依存関係情報を更新します。</span><span class="sxs-lookup"><span data-stu-id="f3841-131">Update the dependency information for the current model, if changes are required.</span></span>
+6.  <span data-ttu-id="f3841-132">**次へ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f3841-132">Click **Next**.</span></span> <span data-ttu-id="f3841-133">モデルの要約情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="f3841-133">The summary information for the model is displayed.</span></span>
+7.  <span data-ttu-id="f3841-134">**完了** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f3841-134">Click **Finish**.</span></span>
+
+<span data-ttu-id="f3841-135">更新されたモデル パラメーターは、Visual Studio を再起動した後にのみ有効になります。</span><span class="sxs-lookup"><span data-stu-id="f3841-135">The updated model parameters become effective only after you restart Visual Studio.</span></span>
+
+## <a name="viewing-package-dependencies"></a><span data-ttu-id="f3841-136">パッケージの依存関係の表示</span><span class="sxs-lookup"><span data-stu-id="f3841-136">Viewing package dependencies</span></span>
+<span data-ttu-id="f3841-137">どのパッケージとそのモデルに他のパッケージへの依存関係があるかを示す、グラフィック表現を作成することができます。</span><span class="sxs-lookup"><span data-stu-id="f3841-137">You can create a graphical representation that shows which packages and their models have dependencies on other packages.</span></span> <span data-ttu-id="f3841-138">**Dynamics 365** メニューで、**モデル管理**をポイントし、**パッケージの依存関係の表示**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f3841-138">On the **Dynamics 365** menu, point to **Model Management**, and then click **View package dependencies**.</span></span> <span data-ttu-id="f3841-139">現在のパッケージとそのモデルについて、有向グラフ マークアップ言語 (DGML) 図が生成されます。</span><span class="sxs-lookup"><span data-stu-id="f3841-139">A Directed Graph Markup Language (DGML) diagram will be generated for the current packages and their models.</span></span> <span data-ttu-id="f3841-140">この図は、それぞれがパッケージを表す相互依存ノードの集合です。</span><span class="sxs-lookup"><span data-stu-id="f3841-140">This diagram is a collection of interdependent nodes, each of which represents a package.</span></span> <span data-ttu-id="f3841-141">各ノードでは、パッケージに属するすべてのモデルを表示します。</span><span class="sxs-lookup"><span data-stu-id="f3841-141">Each node lists all the models that belong to that package.</span></span> <span data-ttu-id="f3841-142">追加のツールは、強化または図を簡略化できます。</span><span class="sxs-lookup"><span data-stu-id="f3841-142">Additional tools let you enhance or simplify the diagram.</span></span> <span data-ttu-id="f3841-143">たとえば、コメントを追加したり、ノードをあちこちに移動したり、またはノードを削除できます。</span><span class="sxs-lookup"><span data-stu-id="f3841-143">For example, you can add comments, move nodes around, or remove nodes.</span></span> <span data-ttu-id="f3841-144">また、次の手順で、単一モデルのパッケージ依存関係を表示することもできます。</span><span class="sxs-lookup"><span data-stu-id="f3841-144">You can also view package dependencies of a single model by following these steps:</span></span>
+
+1.  <span data-ttu-id="f3841-145">アプリケーション エクスプローラーがモデル ビューになっていることを確認します。AOT ノードを右クリックし、モデル ビューを選択します。</span><span class="sxs-lookup"><span data-stu-id="f3841-145">Make sure the Application Explorer is in Model view: Right-click on the AOT node and select Model view.</span></span>
+2.  <span data-ttu-id="f3841-146">任意のモデルを右クリックし、**パッケージの依存関係を表示** > **送信参照を表示** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f3841-146">Right-click on any model and select **View package dependencies** > **View outgoing references.**</span></span>
+
+<span data-ttu-id="f3841-147">選択したモデルが依存するすべてのパッケージのグラフが生成されます。</span><span class="sxs-lookup"><span data-stu-id="f3841-147">This will generate a graph of all packages that the selected model depends on.</span></span> 
+
+![ビューの相互関係](./media/viewdependencies2.png) 
+
+![ディレクトリ依存関係](./media/directorydependencies.png)
+
+## <a name="deleting-a-model"></a><span data-ttu-id="f3841-150">モデルの削除</span><span class="sxs-lookup"><span data-stu-id="f3841-150">Deleting a model</span></span>
+<span data-ttu-id="f3841-151">開発またはテスト環境では、次の手順に従ってモデルを削除します。</span><span class="sxs-lookup"><span data-stu-id="f3841-151">On a development or test environment, follow these steps to delete a model.</span></span>
+
+<span data-ttu-id="f3841-152">次の手順では、ローカル モデル ストア フォルダーが C:\AOSService\PackagesLocalDirectory であり、モデルの名前が MyModel1 であると想定しています。</span><span class="sxs-lookup"><span data-stu-id="f3841-152">The following steps assume the local model store folder is C:\AOSService\PackagesLocalDirectory and your model is named MyModel1.</span></span>
+
+<span data-ttu-id="f3841-153">モデルがそれ自身のパッケージに属している場合 (たとえば: パッケージに他のモデルがない拡張機能パッケージ):</span><span class="sxs-lookup"><span data-stu-id="f3841-153">If your model belongs to its own package (For example: An extension package with no other models in the package):</span></span>
+1. <span data-ttu-id="f3841-154">次のサービスを停止: AOS Web サービスおよびバッチ管理サービス</span><span class="sxs-lookup"><span data-stu-id="f3841-154">Stop the following services: The AOS web service and the Batch Management Service</span></span>
+2. <span data-ttu-id="f3841-155">パッケージ フォルダー  C:\AOSService\PackagesLocalDirectory\MyModel1 を削除します</span><span class="sxs-lookup"><span data-stu-id="f3841-155">Delete the package folder  C:\AOSService\PackagesLocalDirectory\MyModel1</span></span>
+3. <span data-ttu-id="f3841-156">手順 1 からサービスを再開</span><span class="sxs-lookup"><span data-stu-id="f3841-156">Restart the services from step 1</span></span>
+4. <span data-ttu-id="f3841-157">Visual Studio を実行している場合、モデルを更新します (Visual Studio > Dynamics 365 > モデル管理 > モデルの更新)</span><span class="sxs-lookup"><span data-stu-id="f3841-157">If Visual Studio is running, refresh your models (Visual Studio > Dynamics 365 > Model management > Refresh models)</span></span>
+5. <span data-ttu-id="f3841-158">Visual Studio で、完全なデータベース同期を実行します (Visual Studio > Dynamics 365 > データベースの同期...)</span><span class="sxs-lookup"><span data-stu-id="f3841-158">In Visual Studio, perform a full database synchronization (Visual Studio > Dynamics 365 > Synchronize database...)</span></span>
+
+<span data-ttu-id="f3841-159">モデルが、複数のモデルを持つパッケージに属している場合 (MyModel1 がアプリケーション スイートにオーバーレイする場合など):</span><span class="sxs-lookup"><span data-stu-id="f3841-159">If your model belongs to a package with multiple models (For example, MyModel1 overlays Application Suite):</span></span>
+1. <span data-ttu-id="f3841-160">次のサービスを停止: AOS Web サービスおよびバッチ管理サービス</span><span class="sxs-lookup"><span data-stu-id="f3841-160">Stop the following services: The AOS web service and the Batch Management Service</span></span>
+2. <span data-ttu-id="f3841-161">モデル フォルダー  C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1 (In this example PackageName=ApplicationSuite) を削除します</span><span class="sxs-lookup"><span data-stu-id="f3841-161">Delete the model folder  C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1 (In this example PackageName=ApplicationSuite)</span></span>
+3. <span data-ttu-id="f3841-162">手順 1 からサービスを再開</span><span class="sxs-lookup"><span data-stu-id="f3841-162">Restart the services from step 1</span></span>
+4. <span data-ttu-id="f3841-163">Visual Studio で、モデルを更新します (Visual Studio > Dynamics 365 > モデル管理 > モデルの更新)</span><span class="sxs-lookup"><span data-stu-id="f3841-163">In Visual Studio, refresh your models (Visual Studio > Dynamics 365 > Model management > Refresh models)</span></span>
+5. <span data-ttu-id="f3841-164">Visual Studio で、削除したモデルが属しているパッケージをビルドします (Visual Studio > Dynamics 365 > モデルをビルド...)</span><span class="sxs-lookup"><span data-stu-id="f3841-164">In Visual Studio, build the package that the deleted models belonged to (Visual Studio > Dynamics 365 > Build models...)</span></span>
+6. <span data-ttu-id="f3841-165">Visual Studio で、完全なデータベース同期を実行します (Visual Studio > Dynamics 365 > データベースの同期...)</span><span class="sxs-lookup"><span data-stu-id="f3841-165">In Visual Studio, perform a full database synchronization (Visual Studio > Dynamics 365 > Synchronize database...)</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="f3841-166">追加リソース</span><span class="sxs-lookup"><span data-stu-id="f3841-166">Additional resources</span></span>
+
+[<span data-ttu-id="f3841-167">開発ツールの概要</span><span class="sxs-lookup"><span data-stu-id="f3841-167">Development tools overview</span></span>](development-tools-overview.md)
+
+[<span data-ttu-id="f3841-168">開発者ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="f3841-168">Developer home page</span></span>](developer-home-page.md)
+
+[<span data-ttu-id="f3841-169">モデルの配分: モデル ファイルをエクスポートおよびインポートする方法</span><span class="sxs-lookup"><span data-stu-id="f3841-169">Distribution of models: How to export and import model files</span></span>](models-export-import.md)
+
+
+

@@ -1,174 +1,92 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="retail-server-architecture.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>retail-server-architecture.37c49f.869fd15f586d48f39d2efd3826cd69bcfc9aa300.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>869fd15f586d48f39d2efd3826cd69bcfc9aa300</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\dev-itpro\retail-server-architecture.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Retail Server architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポート サーバーのアーキテクチャ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This article describes the architecture of Retail Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、Retail サーバーのアーキテクチャについて説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail サーバーは、Retail Modern 販売時点管理 (POS) および電子商取引クライアントのステートレス サービスとビジネス ロジックを提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Retail Server architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポート サーバーのアーキテクチャ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This article describes the architecture of Retail Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、Retail サーバーのアーキテクチャについて説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail サーバーは、Retail Modern 販売時点管理 (POS) および電子商取引クライアントのステートレス サービスとビジネス ロジックを提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Retail Server architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポート サーバーのアーキテクチャ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>The commerce runtime is wrapped in a Retail Server layer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="1">Commerce Runtime</ph> は Retail サーバー レイヤーにラップされます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Retail Server uses a web API and OData to support thin clients both in the store and online on tablets and phones.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail サーバーは、タブレットや電話で店舗とオンラインの両方のシン クライアントをサポートするために、Web API および OData を使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>The commerce runtime communicates with Retail Headquarters through Commerce Data Exchange services.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="3">Commerce Runtime</ph> は Commerce Data Exchange サービスを通じて Retail Headquarters と通信します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>The following diagram shows the architecture of Retail Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、Retail サーバーのアーキテクチャを示しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailServer<ept id="p1">](./media/retailserver.png)](./media/retailserver.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>RetailServer<ept id="p1">](./media/retailserver.png)](./media/retailserver.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Retail Server uses the following concepts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail サーバーは、次の概念を使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Concept</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">概念</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Entity type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ タイプ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>An entity type is an entity that has a life cycle that you want to monitor.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ タイプは監視するライフ サイクルを持つエンティティです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Each entity type has a key.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各エンティティ タイプには、キーがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>An example of an entity type is <bpt id="p1">&lt;strong&gt;</bpt>Customer<ept id="p1">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ タイプの例は<bpt id="p1">&lt;strong&gt;</bpt>顧客<ept id="p1">&lt;/strong&gt;</ept>です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Complex type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複合型</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>A complex type is an OData concept that is designed to prevent duplication by grouping specific related properties.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複合型は、特定の関連プロパティをグループ化して重複を防止するよう設計された OData 概念です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>These related properties can be reused in multiple entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの関連するプロパティは、複数のエンティティで再利用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>For example, <bpt id="p1">&lt;strong&gt;</bpt>Customer<ept id="p1">&lt;/strong&gt;</ept> is an entity type that has a customer address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">&lt;strong&gt;</bpt>顧客<ept id="p1">&lt;/strong&gt;</ept>は顧客のアドレスを持つエンティティ タイプです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>This customer address is a wrapper that contains an address line, city, state, and ZIP/postal code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この顧客アドレスは、アドレス行、市町村、都道府県、および郵便番号を含むラッパーです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Therefore, <bpt id="p1">&lt;strong&gt;</bpt>Customer address<ept id="p1">&lt;/strong&gt;</ept> is a complex type that can be reused by other entity types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、<bpt id="p1">&lt;strong&gt;</bpt>顧客の住所<ept id="p1">&lt;/strong&gt;</ept>は、他のエンティティ タイプにより再利用できる複合型です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>For example, the <bpt id="p1">&lt;strong&gt;</bpt>Order<ept id="p1">&lt;/strong&gt;</ept> entity type requires the same address information that is associated with the <bpt id="p2">&lt;strong&gt;</bpt>Customer<ept id="p2">&lt;/strong&gt;</ept> entity type and therefore reuses the <bpt id="p3">&lt;strong&gt;</bpt>Customer address<ept id="p3">&lt;/strong&gt;</ept> complex type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">&lt;strong&gt;</bpt>注文<ept id="p1">&lt;/strong&gt;</ept>エンティティ タイプは、<bpt id="p2">&lt;strong&gt;</bpt>顧客<ept id="p2">&lt;/strong&gt;</ept>エンティティ タイプに関連付けられている同じ住所情報を必要とし、したがって<bpt id="p3">&lt;strong&gt;</bpt>顧客住所<ept id="p3">&lt;/strong&gt;</ept>複合型を再利用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Controller</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントローラー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>A controller is a mapping for an entity type that controls create, read, update, and delete (CRUD) behaviors and actions for the entity type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントローラーは、エンティティ タイプの作成、読み取り、更新、および削除 (CRUD) の動作とアクションをコントロールするエンティティ タイプのマッピングです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>A controller is provided for each commerce entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各 commerce エンティティに、コントローラーが用意されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>You can customize the following controllers:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下のコントローラーをカスタマイズすることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Carts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カート</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Catalogs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カタログ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Categories</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カテゴリ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Commerce</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマース</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Commerce Lists</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマース リスト</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Composite Key Entity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複合キー エンティティ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Controller Assembly Resolver</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントローラ アセンブリ リゾルバー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Customers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Employees</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">従業員</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Non-Bindable Action</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バインドできないアクション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Org Units</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組織単位</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Picking Lists</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ピッキング リスト</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Products</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Purchase Orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">発注書</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Sales Orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売注文</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Shifts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シフト</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Stock Counts Journals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">在庫棚卸仕訳帳</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Transfer Orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">移動オーダー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Metadata</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メタデータ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Metadata defines the contract between the client and the server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メタデータは、クライアントとサーバーの間の契約を定義します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>You can create your own entity type or complex type, extend an existing controller, add a new controller, and customize the metadata.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自分自身のエンティティ タイプまたは複合タイプを作成して、既存のコントローラーを拡張し、新しいコントローラーを追加し、メタデータをカスタマイズすることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>If you customize the commerce runtime, you must also customize various components in Retail Server to expose those changes to your Retail Modern POS clients.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce ランタイムをカスタマイズする場合は、Retail サーバーのさまざまなコンポーネントもカスタマイズし、これらの変更を Retail Modern POS クライアントに公開する必要があります。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: レポート サーバーのアーキテクチャ
+description: この記事では、Retail サーバーのアーキテクチャについて説明します。 Retail サーバーは、Retail Modern 販売時点管理 (POS) および電子商取引クライアントのステートレス サービスとビジネス ロジックを提供します。
+author: RobinARH
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Developer, IT Pro
+ms.reviewer: robinr
+ms.search.scope: Operations, Retail
+ms.custom: 31521
+ms.assetid: 3a169648-592b-4616-9834-598c0244a852
+ms.search.region: Global
+ms.author: meeram
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 869fd15f586d48f39d2efd3826cd69bcfc9aa300
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570587"
+---
+# <a name="retail-server-architecture"></a><span data-ttu-id="b87b0-104">レポート サーバーのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="b87b0-104">Retail Server architecture</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="b87b0-105">この記事では、Retail サーバーのアーキテクチャについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b87b0-105">This article describes the architecture of Retail Server.</span></span> <span data-ttu-id="b87b0-106">Retail サーバーは、Retail Modern 販売時点管理 (POS) および電子商取引クライアントのステートレス サービスとビジネス ロジックを提供します。</span><span class="sxs-lookup"><span data-stu-id="b87b0-106">Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.</span></span>
+
+<a name="retail-server-architecture"></a><span data-ttu-id="b87b0-107">レポート サーバーのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="b87b0-107">Retail Server architecture</span></span>
+--------------------------
+
+<span data-ttu-id="b87b0-108">Commerce Runtime は Retail サーバー レイヤーにラップされます。</span><span class="sxs-lookup"><span data-stu-id="b87b0-108">The commerce runtime is wrapped in a Retail Server layer.</span></span> <span data-ttu-id="b87b0-109">Retail サーバーは、タブレットや電話で店舗とオンラインの両方のシン クライアントをサポートするために、Web API および OData を使用します。</span><span class="sxs-lookup"><span data-stu-id="b87b0-109">Retail Server uses a web API and OData to support thin clients both in the store and online on tablets and phones.</span></span> <span data-ttu-id="b87b0-110">Commerce Runtime は Commerce Data Exchange サービスを通じて Retail Headquarters と通信します。</span><span class="sxs-lookup"><span data-stu-id="b87b0-110">The commerce runtime communicates with Retail Headquarters through Commerce Data Exchange services.</span></span> <span data-ttu-id="b87b0-111">次の図は、Retail サーバーのアーキテクチャを示しています。</span><span class="sxs-lookup"><span data-stu-id="b87b0-111">The following diagram shows the architecture of Retail Server.</span></span> 
+
+<span data-ttu-id="b87b0-112">[![RetailServer](./media/retailserver.png)](./media/retailserver.png)</span><span class="sxs-lookup"><span data-stu-id="b87b0-112">[![RetailServer](./media/retailserver.png)](./media/retailserver.png)</span></span> 
+
+<span data-ttu-id="b87b0-113">Retail サーバーは、次の概念を使用します。</span><span class="sxs-lookup"><span data-stu-id="b87b0-113">Retail Server uses the following concepts.</span></span>
+
+<table>
+<thead>
+<tr class="header">
+<th><span data-ttu-id="b87b0-114">概念</span><span class="sxs-lookup"><span data-stu-id="b87b0-114">Concept</span></span></th>
+<th><span data-ttu-id="b87b0-115">説明</span><span class="sxs-lookup"><span data-stu-id="b87b0-115">Description</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span data-ttu-id="b87b0-116">エンティティ タイプ</span><span class="sxs-lookup"><span data-stu-id="b87b0-116">Entity type</span></span></td>
+<td><span data-ttu-id="b87b0-117">エンティティ タイプは監視するライフ サイクルを持つエンティティです。</span><span class="sxs-lookup"><span data-stu-id="b87b0-117">An entity type is an entity that has a life cycle that you want to monitor.</span></span> <span data-ttu-id="b87b0-118">各エンティティ タイプには、キーがあります。</span><span class="sxs-lookup"><span data-stu-id="b87b0-118">Each entity type has a key.</span></span> <span data-ttu-id="b87b0-119">エンティティ タイプの例は<strong>顧客</strong>です。</span><span class="sxs-lookup"><span data-stu-id="b87b0-119">An example of an entity type is <strong>Customer</strong>.</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="b87b0-120">複合型</span><span class="sxs-lookup"><span data-stu-id="b87b0-120">Complex type</span></span></td>
+<td><span data-ttu-id="b87b0-121">複合型は、特定の関連プロパティをグループ化して重複を防止するよう設計された OData 概念です。</span><span class="sxs-lookup"><span data-stu-id="b87b0-121">A complex type is an OData concept that is designed to prevent duplication by grouping specific related properties.</span></span> <span data-ttu-id="b87b0-122">これらの関連するプロパティは、複数のエンティティで再利用できます。</span><span class="sxs-lookup"><span data-stu-id="b87b0-122">These related properties can be reused in multiple entities.</span></span> <span data-ttu-id="b87b0-123">たとえば、<strong>顧客</strong>は顧客のアドレスを持つエンティティ タイプです。</span><span class="sxs-lookup"><span data-stu-id="b87b0-123">For example, <strong>Customer</strong> is an entity type that has a customer address.</span></span> <span data-ttu-id="b87b0-124">この顧客アドレスは、アドレス行、市町村、都道府県、および郵便番号を含むラッパーです。</span><span class="sxs-lookup"><span data-stu-id="b87b0-124">This customer address is a wrapper that contains an address line, city, state, and ZIP/postal code.</span></span> <span data-ttu-id="b87b0-125">したがって、<strong>顧客の住所</strong>は、他のエンティティ タイプにより再利用できる複合型です。</span><span class="sxs-lookup"><span data-stu-id="b87b0-125">Therefore, <strong>Customer address</strong> is a complex type that can be reused by other entity types.</span></span> <span data-ttu-id="b87b0-126">たとえば、<strong>注文</strong>エンティティ タイプは、<strong>顧客</strong>エンティティ タイプに関連付けられている同じ住所情報を必要とし、したがって<strong>顧客住所</strong>複合型を再利用します。</span><span class="sxs-lookup"><span data-stu-id="b87b0-126">For example, the <strong>Order</strong> entity type requires the same address information that is associated with the <strong>Customer</strong> entity type and therefore reuses the <strong>Customer address</strong> complex type.</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="b87b0-127">コントローラー</span><span class="sxs-lookup"><span data-stu-id="b87b0-127">Controller</span></span></td>
+<td><span data-ttu-id="b87b0-128">コントローラーは、エンティティ タイプの作成、読み取り、更新、および削除 (CRUD) の動作とアクションをコントロールするエンティティ タイプのマッピングです。</span><span class="sxs-lookup"><span data-stu-id="b87b0-128">A controller is a mapping for an entity type that controls create, read, update, and delete (CRUD) behaviors and actions for the entity type.</span></span> <span data-ttu-id="b87b0-129">各 commerce エンティティに、コントローラーが用意されています。</span><span class="sxs-lookup"><span data-stu-id="b87b0-129">A controller is provided for each commerce entity.</span></span> <span data-ttu-id="b87b0-130">以下のコントローラーをカスタマイズすることができます。</span><span class="sxs-lookup"><span data-stu-id="b87b0-130">You can customize the following controllers:</span></span>
+<ul>
+<li><span data-ttu-id="b87b0-131">カート</span><span class="sxs-lookup"><span data-stu-id="b87b0-131">Carts</span></span></li>
+<li><span data-ttu-id="b87b0-132">カタログ</span><span class="sxs-lookup"><span data-stu-id="b87b0-132">Catalogs</span></span></li>
+<li><span data-ttu-id="b87b0-133">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="b87b0-133">Categories</span></span></li>
+<li><span data-ttu-id="b87b0-134">コマース</span><span class="sxs-lookup"><span data-stu-id="b87b0-134">Commerce</span></span></li>
+<li><span data-ttu-id="b87b0-135">コマース リスト</span><span class="sxs-lookup"><span data-stu-id="b87b0-135">Commerce Lists</span></span></li>
+<li><span data-ttu-id="b87b0-136">複合キー エンティティ</span><span class="sxs-lookup"><span data-stu-id="b87b0-136">Composite Key Entity</span></span></li>
+<li><span data-ttu-id="b87b0-137">コントローラ アセンブリ リゾルバー</span><span class="sxs-lookup"><span data-stu-id="b87b0-137">Controller Assembly Resolver</span></span></li>
+<li><span data-ttu-id="b87b0-138">顧客</span><span class="sxs-lookup"><span data-stu-id="b87b0-138">Customers</span></span></li>
+<li><span data-ttu-id="b87b0-139">従業員</span><span class="sxs-lookup"><span data-stu-id="b87b0-139">Employees</span></span></li>
+<li><span data-ttu-id="b87b0-140">バインドできないアクション</span><span class="sxs-lookup"><span data-stu-id="b87b0-140">Non-Bindable Action</span></span></li>
+<li><span data-ttu-id="b87b0-141">組織単位</span><span class="sxs-lookup"><span data-stu-id="b87b0-141">Org Units</span></span></li>
+<li><span data-ttu-id="b87b0-142">ピッキング リスト</span><span class="sxs-lookup"><span data-stu-id="b87b0-142">Picking Lists</span></span></li>
+<li><span data-ttu-id="b87b0-143">製品</span><span class="sxs-lookup"><span data-stu-id="b87b0-143">Products</span></span></li>
+<li><span data-ttu-id="b87b0-144">発注書</span><span class="sxs-lookup"><span data-stu-id="b87b0-144">Purchase Orders</span></span></li>
+<li><span data-ttu-id="b87b0-145">販売注文</span><span class="sxs-lookup"><span data-stu-id="b87b0-145">Sales Orders</span></span></li>
+<li><span data-ttu-id="b87b0-146">シフト</span><span class="sxs-lookup"><span data-stu-id="b87b0-146">Shifts</span></span></li>
+<li><span data-ttu-id="b87b0-147">在庫棚卸仕訳帳</span><span class="sxs-lookup"><span data-stu-id="b87b0-147">Stock Counts Journals</span></span></li>
+<li><span data-ttu-id="b87b0-148">移動オーダー</span><span class="sxs-lookup"><span data-stu-id="b87b0-148">Transfer Orders</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="b87b0-149">メタデータ</span><span class="sxs-lookup"><span data-stu-id="b87b0-149">Metadata</span></span></td>
+<td><span data-ttu-id="b87b0-150">メタデータは、クライアントとサーバーの間の契約を定義します。</span><span class="sxs-lookup"><span data-stu-id="b87b0-150">Metadata defines the contract between the client and the server.</span></span></td>
+</tr>
+</tbody>
+</table>
+
+<span data-ttu-id="b87b0-151">自分自身のエンティティ タイプまたは複合タイプを作成して、既存のコントローラーを拡張し、新しいコントローラーを追加し、メタデータをカスタマイズすることができます。</span><span class="sxs-lookup"><span data-stu-id="b87b0-151">You can create your own entity type or complex type, extend an existing controller, add a new controller, and customize the metadata.</span></span> <span data-ttu-id="b87b0-152">Commerce ランタイムをカスタマイズする場合は、Retail サーバーのさまざまなコンポーネントもカスタマイズし、これらの変更を Retail Modern POS クライアントに公開する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b87b0-152">If you customize the commerce runtime, you must also customize various components in Retail Server to expose those changes to your Retail Modern POS clients.</span></span>
+
+
+

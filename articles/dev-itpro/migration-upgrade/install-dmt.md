@@ -1,363 +1,155 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="install-dmt.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>install-dmt.410525.a301bafc023af117a38e6901e1e0d01232f6e79b.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>a301bafc023af117a38e6901e1e0d01232f6e79b</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\migration-upgrade\install-dmt.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>AX 2009 migration - Install the Data migration tool</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 の移行 － データ移行ツールのインストール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains how to set up the Data migration tool (DMT) so that you can migrate your data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics AX 2009 から Microsoft Dynamics 365 for Finance and Operations にデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>AX 2009 migration – Install the Data migration tool</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 の移行 – データ移行ツールのインストール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic explains how to set up the Data migration tool (DMT) so that you can migrate data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics AX 2009 から Microsoft Dynamics 365 for Finance and Operations にデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>At this time, the DMT is in private preview.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現時点で、DMT はプライベート プレビューです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>If you are interested you can sign up for the <bpt id="p1">[</bpt>Preview Program<ept id="p1">](https://microsoft.qualtrics.com/jfe/form/SV_brOLCioQ7mmeykB)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関心をお持ちの場合、<bpt id="p1">[</bpt>プレビュー プログラム<ept id="p1">](https://microsoft.qualtrics.com/jfe/form/SV_brOLCioQ7mmeykB)</ept>にサインアップすることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The public release date for the DMT has not been set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DMT の公開リリース日は設定されていません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Prerequisites</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Microsoft SQL Server 2008/2012/2014/2016.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft SQL Server 2008/2012/2014/2016。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>The Microsoft .NET Framework version 4.5 or later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft .NET Framework バージョン 4.5 またはそれ以降。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Microsoft SQL Server machine that has Microsoft SQL 2012 Native Client installed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft SQL 2012 Native Client がインストールされている Microsoft SQL Server コンピューター。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>The Microsoft SQL Server Integration Services (SSIS) service is installed and running on the machine where the DMT service will be installed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft SQL Server Integration Services (SSIS) サービスがインストールされ、DMT サービスがインストールされるコンピューターで実行されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>SQL Server authentication must support both SQL authentication and Microsoft Windows authentication.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server 認証は、SQL 認証と Microsoft Windows 認証の両方をサポートする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Microsoft Access database engines that follows the version guidance in the following table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の表のバージョン ガイダンスに従っている Microsoft Access データベース エンジン。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>SQL Server 2008</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server 2008</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>SQL Server 2012 and later</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server 2012 以降</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">**</bpt>No Microsoft Office on the VM<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>VM に Microsoft Office がない<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Access engine 32-bit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Access エンジン 32 ビット</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Access engine 64-bit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Access エンジン 64 ビット</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">**</bpt>Microsoft Office 32-bit<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Microsoft Office 32 ビット<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Access engine 32-bit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Access エンジン 32 ビット</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Access engine 64-bit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Access エンジン 64 ビット</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source><bpt id="p1">**</bpt>Microsoft Office 64-bit<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Microsoft Office 64 ビット<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Access engine 32-bit and 64-bit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Access エンジン 32 ビットおよび 64 ビット</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Access engine 64-bit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Access エンジン 64 ビット</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Microsoft Dynamics AX 2009 SP1 5.0.1000.52 or later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2009 SP1 5.0.1000.52 以降。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The prerequisite patch (axpatch.exe) installed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前提条件となる修正プログラム (axpatch.exe) がインストールされている。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>To find the patch, from the location where you downloaded and extracted the zip file, go to &lt;pre-requisiteforpatch<ph id="ph1">\&gt;</ph><ph id="ph2">\&lt;</ph>application<ph id="ph3">\&gt;</ph>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">修正プログラムを見つけるには、ZIP ファイルをダウンロードして展開した場所から、&lt;pre-requisiteforpatch<ph id="ph1">\&gt;</ph><ph id="ph2">\&lt;</ph>application<ph id="ph3">\&gt;</ph> に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Install DIXF service</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DIXF サービスのインストール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Go to the location where you extracted the zip file, and then, in the <bpt id="p1">**</bpt>DIXF msi<ept id="p1">**</ept> folder, right-click <bpt id="p2">**</bpt>DIXF<ph id="ph1">\_</ph>Service<ph id="ph2">\_</ph>x64.msi<ept id="p2">**</ept>, and select <bpt id="p3">**</bpt>Run<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZIP ファイルを展開した場所に移動し、<bpt id="p1">**</bpt>DIXF msi<ept id="p1">**</ept> フォルダーで <bpt id="p2">**</bpt>DIXF<ph id="ph1">\_</ph>Service<ph id="ph2">\_</ph>x64.msi<ept id="p2">**</ept> を右クリックし、<bpt id="p3">**</bpt>実行<ept id="p3">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>When the wizard starts, select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィザードが開始したら、<bpt id="p1">**</bpt>次へ<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Accept the license terms, and then select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス条項を受け入れ、<bpt id="p1">**</bpt>次へ<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Select an account for the service, and then select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サービスのアカウントを選択し、<bpt id="p1">**</bpt>次へ<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>The account should have admin rights.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アカウントは、管理者権限を持っている必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>If you select the <bpt id="p1">**</bpt>Network Service<ept id="p1">**</ept> check box, verify that the network service account has admin rights.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ネットワーク サービス<ept id="p1">**</ept> チェック ボックスをオンにした場合、ネットワーク サービス アカウントに管理者権限があることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Otherwise, clear the check box, and enter an admin account user name and password.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それ以外の場合、チェック ボックスをオフにし、管理者アカウントのユーザー名とパスワードを入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Then select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後、<bpt id="p1">**</bpt>次へ<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Select the SQL Server version, and then select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server のバージョンを選択し、<bpt id="p1">**</bpt>次へ<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Select <bpt id="p1">**</bpt>Install<ept id="p1">**</ept>, and then, when the wizard is completed, select <bpt id="p2">**</bpt>Finish<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>インストール<ept id="p1">**</ept> を選択し、ウィザードが完了したら <bpt id="p2">**</bpt>完了<ept id="p2">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Copy binaries</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バイナリのコピー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Go to the location where you extracted the zip file, and copy the following files to the <bpt id="p1">**</bpt>Program Files (x86)<ph id="ph1">\\</ph>Microsoft Dynamics AX<ph id="ph2">\\</ph>50<ph id="ph3">\\</ph>Client<ph id="ph4">\\</ph>Bin<ept id="p1">**</ept> folder:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZIP ファイルを展開した場所に移動し、以下のファイルを <bpt id="p1">**</bpt>Program Files (x86)<ph id="ph1">\\</ph>Microsoft Dynamics AX<ph id="ph2">\\</ph>50<ph id="ph3">\\</ph>Client<ph id="ph4">\\</ph>Bin<ept id="p1">**</ept> フォルダーにコピーします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Microsoft.Dynamics.AX.Framework.Tools.DMT.dll</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft.Dynamics.AX.Framework.Tools.DMT.dll</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Interop.Shell32.dll</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Interop.Shell32.dll</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Install DMT components for AX 2009</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 の DMT コンポーネントのインストール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>There are two ways to install the DMT.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DMT をインストールする方法は 2 つあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>You can use the combined XPO file or an application hotfix.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">結合された XPO ファイルまたはアプリケーション修正プログラムを使用することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>If you're using a Microsoft Dynamics Lifecycle Services (LCS) Implementation project, use the application hotfix.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクトを使用している場合、アプリケーション修正プログラムを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Installation takes approximately seven hours.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インストールには、約 7 時間かかります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Combined XPO file</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">結合された XPO ファイル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Extract the combined XPO file from <bpt id="p1">**</bpt>DMT_V1.0\CombinedXPO<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">結合された XPO ファイルを <bpt id="p1">**</bpt>DMT_V1.0\CombinedXPO<ept id="p1">**</ept> から展開します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Import the combined XPO file into AX 2009.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 に結合された XPO ファイルをインポートします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Copy the label file from <bpt id="p1">**</bpt>DMT_V1.0\Label file<ept id="p1">**</ept> to the <bpt id="p2">**</bpt>Program Files<ph id="ph1">\\</ph>Microsoft Dynamics AX<ph id="ph2">\\</ph>50<ph id="ph3">\\</ph>Application<ph id="ph4">\\</ph>Appl<ph id="ph5">\\</ph>&lt;NameOfYourDeployment<ph id="ph6">\&gt;</ph><ept id="p2">**</ept> folder.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DMT_V1.0\Label file<ept id="p1">**</ept> ファイルから  <bpt id="p2">**</bpt>Program Files<ph id="ph1">\\</ph>Microsoft Dynamics AX<ph id="ph2">\\</ph>50<ph id="ph3">\\</ph>Application<ph id="ph4">\\</ph>Appl<ph id="ph5">\\</ph>&lt;NameOfYourDeployment<ph id="ph6">\&gt;</ph><ept id="p2">**</ept> フォルダーにラベル ファイルをコピーします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Restart the Application Object Server (AOS) instance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Application Object Server (AOS) インスタンスを再起動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>In AX 2009, select <bpt id="p1">**</bpt>Data migration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Compile and synchronize DMT application<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 で、<bpt id="p1">**</bpt>データ移行<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>DMT アプリケーションのコンパイルと同期<ept id="p3">**</ept>を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Note that the combined XPO file is imported into the layer that the user is signed in to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーがログインしているレイヤーに結合された XPO ファイルがインポートされることに注意してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Application hotfix</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションの修正プログラム</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Go to <bpt id="p1">**</bpt>DMT_V1.0<ph id="ph1">\\</ph>ApplicationHotfix<ph id="ph2">\\</ph>DynamicsAX2009-KB4010403-SP1<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>setup.exe<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>Run<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DMT_V1.0<ph id="ph1">\\</ph>ApplicationHotfix<ph id="ph2">\\</ph>DynamicsAX2009-KB4010403-SP1<ept id="p1">**</ept> に移動し、<bpt id="p2">**</bpt>setup.exe<ept id="p2">**</ept> を右クリックして <bpt id="p3">**</bpt>実行<ept id="p3">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>In AX 2009, in the Application Object Tree (AOT), notice that the <bpt id="p1">**</bpt>LegalEntityId<ept id="p1">**</ept> field has been added to the <bpt id="p2">**</bpt>DMTCustomerAddressView<ept id="p2">**</ept> and <bpt id="p3">**</bpt>DMTVendorAddressView<ept id="p3">**</ept> views.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 のアプリケーション オブジェクト ツリー (AOT) で、<bpt id="p1">**</bpt>LegalEntityId<ept id="p1">**</ept> フィールドが <bpt id="p2">**</bpt>DMTCustomerAddressView<ept id="p2">**</ept> ビューと <bpt id="p3">**</bpt>DMTVendorAddressView<ept id="p3">**</ept> ビューに追加されていることに注目してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Select <bpt id="p1">**</bpt>Data migration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Compile and synchronize DMT application<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データ移行<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>DMT アプリケーションのコンパイルと同期<ept id="p3">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Parameter setup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメータの設定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Go to the location to where you extracted the zip file, and find <bpt id="p1">**</bpt>defaultvalue.xlsx<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZIP ファイルを展開した場所に移動し、<bpt id="p1">**</bpt>defaultvalue.xlsx<ept id="p1">**</ept> を検索します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>The file is saved in .xlsx format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルは .xlsx 形式に保存されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Don't change the extension.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張機能を変更しないでください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>When you provide this file as input for the <bpt id="p1">**</bpt>Default configuration<ept id="p1">**</ept> parameter, select <bpt id="p2">**</bpt>All Files<ept id="p2">**</ept> so that you can select the .xlsx format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このファイルを <bpt id="p1">**</bpt>既定のコンフィギュレーション<ept id="p1">**</ept> パラメーターの入力として入力したら、<bpt id="p2">**</bpt>すべてのファイル<ept id="p2">**</ept> を選択して .xlsx 形式を選択できるようにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>If you don't select this format, errors will occur when you start to generate mappings.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この形式を選択しない場合、マッピングの生成を開始するとエラーが発生します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>In AX 2009, select <bpt id="p1">**</bpt>Data migration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Configure default maps<ept id="p3">**</ept>, and enter the appropriate information in the following fields:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 で、<bpt id="p1">**</bpt>データ移行<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>既定のマップを構成する<ept id="p3">**</ept> を選択し、次のフィールドに適切な情報を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source><bpt id="p1">**</bpt>Default configuration<ept id="p1">**</ept> – Enter the path of the Microsoft Excel file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>既定のコンフィギュレーション<ept id="p1">**</ept>: Microsoft Excel ファイルのパスを入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source><bpt id="p1">**</bpt>Export file path<ept id="p1">**</ept> – Enter the server path that can be accessed by the service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エクスポート ファイルのパス<ept id="p1">**</ept>: サービスがアクセスできるサーバーのパスを入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source><bpt id="p1">**</bpt>SQL Server user and password<ept id="p1">**</ept> – Enter the SQL authentication credentials for the AX 2009 database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SQL Server のユーザー名とパスワード<ept id="p1">**</ept>: AX 2009 データベースの SQL 認証資格情報を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Close the form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームを閉じます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Under <bpt id="p1">**</bpt>Setup<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Configure connections<ept id="p2">**</ept>, and enter the appropriate information on the following fields:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>設定<ept id="p1">**</ept> で、<bpt id="p2">**</bpt>接続の構成<ept id="p2">**</ept> を選択し、次のフィールドに適切な情報を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source><bpt id="p1">**</bpt>DIXF service host<ept id="p1">**</ept> – Enter the host name of the DIXF service installation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DIXF サービス ホスト<ept id="p1">**</ept>: DIXF サービスのインストールのホスト名を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source><bpt id="p1">**</bpt>Tenant URL<ept id="p1">**</ept> – Enter the Finance and Operations URL.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テナント URL<ept id="p1">**</ept>: Finance and Operations の URL を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>If you aren't sure of the tenant, see the Finance and Operations web.config file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テナントが不明な場合は、Finance and Operations の web.config ファイルを参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>[!NOTE} In the Azure Portal, when you create a new app in the Azure Active Directory (AAD), you can select from two options.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[!注意} Azure ポータルでは、Azure Active Directory (AAD) で新しいアプリケーションを作成するときは、2 つのオプションから選択できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source><bpt id="p1">**</bpt>Web API<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Native<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Web API<ept id="p1">**</ept> と <bpt id="p2">**</bpt>ネイティブ<ept id="p2">**</ept>。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>In this instance, select <bpt id="p1">**</bpt>Native<ept id="p1">**</ept> and grant permissions to native AAD app.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このインスタンスでは、<bpt id="p1">**</bpt>ネイティブ<ept id="p1">**</ept> を選択し、ネイティブ AAD アプリケーションへのアクセス許可を付与します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Multi-box setup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マルチボックスの設定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>For a multi-box setup, you must have the following machines:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マルチボックスの設定の場合、次のコンピューターが必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Machine A, where the AX 2009 database and DIXF service are installed</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 データベースおよび DIXF サービスがインストールされているコンピューター A</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Machine B, where the AX 2009 AOS instance is installed</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 AOS インスタンスがインストールされているコンピューター B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Machine C, where the AX 2009 client is installed</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 クライアントがインストールされているコンピューター C</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>In this three-machine setup, machine C is configured to connect to the AOS instance on machine B. Machine B is connected to the database that is configured on machine A.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この 3 コンピューター設定では、コンピューター C はコンピューター B の AOS インスタンスに接続するように構成されています。コンピューター B は、コンピューター A で構成されているデータベースに接続されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>DIXF service machine prerequisites (machine A)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DIXF サービス コンピューターの前提条件 (コンピューター A)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>The DIXF service on machine A has the following prerequisites:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンピューター A の DIXF サービスには、次の前提条件があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>SQL Server 2008/2012/2014</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server 2008/2012/2014</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>The .NET Framework version 4.5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.NET Framework バージョン 4.5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Access database engines</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Access データベース エンジン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source><bpt id="p1">**</bpt>For SQL Server 2008:<ept id="p1">**</ept> Access engine 32-bit and 64-bit (if Microsoft Excel is 64-bit)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SQL Server 2008 の場合:<ept id="p1">**</ept> Access エンジン 32 ビットおよび 64 ビット (Microsoft Excel が 64 ビットの場合)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source><bpt id="p1">**</bpt>For SQL Server 2012 or later:<ept id="p1">**</ept> Access engine 64-bit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SQL Server 2012 以降の場合:<ept id="p1">**</ept> Access エンジン 64 ビット</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>AX 2009 database (configured on SQL Server)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 データベース (SQL Server で構成)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>AOS machine prerequisites (machine B)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS コンピューターの前提条件 (コンピューター B)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>The AOS installation on machine B has the following prerequisites:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンピューター B の AOS のインストールには、次の前提条件があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>AX 2009 AOS Server</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 AOS サーバー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Application files</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション ファイル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Client machine prerequisites (machine C)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアント コンピューターの前提条件 (コンピューター C)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>The client installation on machine C has the following prerequisites:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンピューター C のクライアントのインストールには、次の前提条件があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>AX 2009 client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2009 クライアント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Shared folder permissions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共有フォルダーのアクセス許可</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>The path of the default configuration file and the export package file should be shared, and client users and the DIXF service should have read/write access to these files.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定のコンフィギュレーション ファイルとエクスポート パッケージ ファイルのパスは共有する必要があり、クライアント ユーザーおよび DIXF サービスにはこれらのファイルへの読み取り/書き込みアクセスが必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>To grant this access, select <bpt id="p1">**</bpt>Data migration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Configure and generate maps<ept id="p3">**</ept>, and then select <bpt id="p4">**</bpt>Validate path<ept id="p4">**</ept> to verify that the required access is available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクセス権を付与するには、<bpt id="p1">**</bpt>データ移行<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>マップの構成と生成<ept id="p3">**</ept> を選択し、<bpt id="p4">**</bpt>パスの検証<ept id="p4">**</ept> を選択して必要なアクセス権があることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Set up parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメータの設定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Select <bpt id="p1">**</bpt>Data migration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Configure connections<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データ移行<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>接続の構成<ept id="p3">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>In the <bpt id="p1">**</bpt>DIXF service host<ept id="p1">**</ept> field, enter the name of the remote machine where the DIXF service is installed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DIXF サービス ホスト<ept id="p1">**</ept> フィールドに、DIXF サービスがインストールされているリモート コンピューターの名前を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>By default, the name is <bpt id="p1">**</bpt>localhost<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、名前は <bpt id="p1">**</bpt>localhost<ept id="p1">**</ept> です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Select <bpt id="p1">**</bpt>Validate<ept id="p1">**</ept> to validate that the client can access the DIXF service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>検証<ept id="p1">**</ept> を選択し、クライアントが DIXF サービスにアクセスできることを検証します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Workarounds</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">回避策</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>If you receive an error message that states, "DIXF service is unavailable," complete the following workaround to enable a service connection for port 7000.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"DIXF サービスを利用できません" というエラー メッセージが表示される場合、次の回避方法を実行してポート 7000 のサービスの接続を有効にします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Open port 7000, and then, for inbound rules on the DMT service machine, select <bpt id="p1">**</bpt>Firewall settings<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Run<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>wf.msc<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポート 7000 を開いた後、DMT サービス コンピューターの受信ルールで <bpt id="p1">**</bpt>ファイアウォール設定<ept id="p1">**</ept> を選択して <bpt id="p2">**</bpt>実行<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>wf.msc<ept id="p3">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Select <bpt id="p1">**</bpt>Inbound Rules<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>New rule<ept id="p2">**</ept>, and then, on the <bpt id="p3">**</bpt>Rule Type<ept id="p3">**</ept> tab, select <bpt id="p4">**</bpt>Port<ept id="p4">**</ept>, and then select <bpt id="p5">**</bpt>Next<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>受信ルール<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>新しいルール<ept id="p2">**</ept> を選択した後、<bpt id="p3">**</bpt>ルール タイプ<ept id="p3">**</ept> タブで、<bpt id="p4">**</bpt>ポート<ept id="p4">**</ept> を選択し、<bpt id="p5">**</bpt>次へ<ept id="p5">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>In the <bpt id="p1">**</bpt>Specific local ports<ept id="p1">**</ept> field, enter <bpt id="p2">**</bpt>7000<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>Next<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>特定のローカル ポート<ept id="p1">**</ept> フィールドに、<bpt id="p2">**</bpt>7000<ept id="p2">**</ept> と入力し、<bpt id="p3">**</bpt>次へ<ept id="p3">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Select <bpt id="p1">**</bpt>Allow the connection<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>接続を許可する<ept id="p1">**</ept> を選択し、<bpt id="p2">**</bpt>次へ<ept id="p2">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Select all three check boxes to apply all the rules, and then select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3 つのチェック ボックスをすべてオンにしてすべてのルールを適用し、<bpt id="p1">**</bpt>次へ<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Enter the name of the rule, and then select <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルールの名前を入力し、<bpt id="p1">**</bpt>完了<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Repeat these steps for outbound rules.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">送信ルールでこれらの手順を繰り返します。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: AX 2009 の移行 － データ移行ツールのインストール
+description: このトピックでは、Microsoft Dynamics AX 2009 から Microsoft Dynamics 365 for Finance and Operations にデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。
+author: kfend
+manager: AnnBe
+ms.date: 09/13/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer, IT Pro
+ms.reviewer: kfend
+ms.search.scope: Operations
+ms.search.region: Global
+ms.author: kfend
+ms.search.validFrom: 2018-06-21
+ms.dyn365.ops.version: Platform update 17
+ms.openlocfilehash: a301bafc023af117a38e6901e1e0d01232f6e79b
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1557988"
+---
+# <a name="ax-2009-migration--install-the-data-migration-tool"></a><span data-ttu-id="b23cd-103">AX 2009 の移行 – データ移行ツールのインストール</span><span class="sxs-lookup"><span data-stu-id="b23cd-103">AX 2009 migration – Install the Data migration tool</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="b23cd-104">このトピックでは、Microsoft Dynamics AX 2009 から Microsoft Dynamics 365 for Finance and Operations にデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-104">This topic explains how to set up the Data migration tool (DMT) so that you can migrate data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="b23cd-105">現時点で、DMT はプライベート プレビューです。</span><span class="sxs-lookup"><span data-stu-id="b23cd-105">At this time, the DMT is in private preview.</span></span> <span data-ttu-id="b23cd-106">関心をお持ちの場合、[プレビュー プログラム](https://microsoft.qualtrics.com/jfe/form/SV_brOLCioQ7mmeykB)にサインアップすることができます。</span><span class="sxs-lookup"><span data-stu-id="b23cd-106">If you are interested you can sign up for the [Preview Program](https://microsoft.qualtrics.com/jfe/form/SV_brOLCioQ7mmeykB).</span></span> <span data-ttu-id="b23cd-107">DMT の公開リリース日は設定されていません。</span><span class="sxs-lookup"><span data-stu-id="b23cd-107">The public release date for the DMT has not been set.</span></span> 
+
+## <a name="prerequisites"></a><span data-ttu-id="b23cd-108">必要条件</span><span class="sxs-lookup"><span data-stu-id="b23cd-108">Prerequisites</span></span>
+
+- <span data-ttu-id="b23cd-109">Microsoft SQL Server 2008/2012/2014/2016。</span><span class="sxs-lookup"><span data-stu-id="b23cd-109">Microsoft SQL Server 2008/2012/2014/2016.</span></span>
+- <span data-ttu-id="b23cd-110">Microsoft .NET Framework バージョン 4.5 またはそれ以降。</span><span class="sxs-lookup"><span data-stu-id="b23cd-110">The Microsoft .NET Framework version 4.5 or later.</span></span>
+- <span data-ttu-id="b23cd-111">Microsoft SQL 2012 Native Client がインストールされている Microsoft SQL Server コンピューター。</span><span class="sxs-lookup"><span data-stu-id="b23cd-111">Microsoft SQL Server machine that has Microsoft SQL 2012 Native Client installed.</span></span>
+- <span data-ttu-id="b23cd-112">Microsoft SQL Server Integration Services (SSIS) サービスがインストールされ、DMT サービスがインストールされるコンピューターで実行されています。</span><span class="sxs-lookup"><span data-stu-id="b23cd-112">The Microsoft SQL Server Integration Services (SSIS) service is installed and running on the machine where the DMT service will be installed.</span></span>
+- <span data-ttu-id="b23cd-113">SQL Server 認証は、SQL 認証と Microsoft Windows 認証の両方をサポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b23cd-113">SQL Server authentication must support both SQL authentication and Microsoft Windows authentication.</span></span>
+- <span data-ttu-id="b23cd-114">次の表のバージョン ガイダンスに従っている Microsoft Access データベース エンジン。</span><span class="sxs-lookup"><span data-stu-id="b23cd-114">Microsoft Access database engines that follows the version guidance in the following table.</span></span>
+
+    |                                   | <span data-ttu-id="b23cd-115">SQL Server 2008</span><span class="sxs-lookup"><span data-stu-id="b23cd-115">SQL Server 2008</span></span>                 | <span data-ttu-id="b23cd-116">SQL Server 2012 以降</span><span class="sxs-lookup"><span data-stu-id="b23cd-116">SQL Server 2012 and later</span></span> |
+    |-----------------------------------|---------------------------------|---------------------------|
+    | <span data-ttu-id="b23cd-117">**VM に Microsoft Office がない**</span><span class="sxs-lookup"><span data-stu-id="b23cd-117">**No Microsoft Office on the VM**</span></span> | <span data-ttu-id="b23cd-118">Access エンジン 32 ビット</span><span class="sxs-lookup"><span data-stu-id="b23cd-118">Access engine 32-bit</span></span>            | <span data-ttu-id="b23cd-119">Access エンジン 64 ビット</span><span class="sxs-lookup"><span data-stu-id="b23cd-119">Access engine 64-bit</span></span>      |
+    | <span data-ttu-id="b23cd-120">**Microsoft Office 32 ビット**</span><span class="sxs-lookup"><span data-stu-id="b23cd-120">**Microsoft Office 32-bit**</span></span>       | <span data-ttu-id="b23cd-121">Access エンジン 32 ビット</span><span class="sxs-lookup"><span data-stu-id="b23cd-121">Access engine 32-bit</span></span>            | <span data-ttu-id="b23cd-122">Access エンジン 64 ビット</span><span class="sxs-lookup"><span data-stu-id="b23cd-122">Access engine 64-bit</span></span>      |
+    | <span data-ttu-id="b23cd-123">**Microsoft Office 64 ビット**</span><span class="sxs-lookup"><span data-stu-id="b23cd-123">**Microsoft Office 64-bit**</span></span>       | <span data-ttu-id="b23cd-124">Access エンジン 32 ビットおよび 64 ビット</span><span class="sxs-lookup"><span data-stu-id="b23cd-124">Access engine 32-bit and 64-bit</span></span> | <span data-ttu-id="b23cd-125">Access エンジン 64 ビット</span><span class="sxs-lookup"><span data-stu-id="b23cd-125">Access engine 64-bit</span></span>      |
+
+- <span data-ttu-id="b23cd-126">Microsoft Dynamics AX 2009 SP1 5.0.1000.52 以降。</span><span class="sxs-lookup"><span data-stu-id="b23cd-126">Microsoft Dynamics AX 2009 SP1 5.0.1000.52 or later.</span></span>
+- <span data-ttu-id="b23cd-127">前提条件となる修正プログラム (axpatch.exe) がインストールされている。</span><span class="sxs-lookup"><span data-stu-id="b23cd-127">The prerequisite patch (axpatch.exe) installed.</span></span> <span data-ttu-id="b23cd-128">修正プログラムを見つけるには、ZIP ファイルをダウンロードして展開した場所から、<pre-requisiteforpatch\>\<application\> に移動します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-128">To find the patch, from the location where you downloaded and extracted the zip file, go to <pre-requisiteforpatch\>\<application\>.</span></span>
+
+## <a name="install-dixf-service"></a><span data-ttu-id="b23cd-129">DIXF サービスのインストール</span><span class="sxs-lookup"><span data-stu-id="b23cd-129">Install DIXF service</span></span>
+
+1. <span data-ttu-id="b23cd-130">ZIP ファイルを展開した場所に移動し、**DIXF msi** フォルダーで **DIXF\_Service\_x64.msi** を右クリックし、**実行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-130">Go to the location where you extracted the zip file, and then, in the **DIXF msi** folder, right-click **DIXF\_Service\_x64.msi**, and select **Run**.</span></span>
+2. <span data-ttu-id="b23cd-131">ウィザードが開始したら、**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-131">When the wizard starts, select **Next**.</span></span>
+3. <span data-ttu-id="b23cd-132">ライセンス条項を受け入れ、**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-132">Accept the license terms, and then select **Next**.</span></span>
+4. <span data-ttu-id="b23cd-133">サービスのアカウントを選択し、**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-133">Select an account for the service, and then select **Next**.</span></span> <span data-ttu-id="b23cd-134">アカウントは、管理者権限を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="b23cd-134">The account should have admin rights.</span></span> <span data-ttu-id="b23cd-135">**ネットワーク サービス** チェック ボックスをオンにした場合、ネットワーク サービス アカウントに管理者権限があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-135">If you select the **Network Service** check box, verify that the network service account has admin rights.</span></span> <span data-ttu-id="b23cd-136">それ以外の場合、チェック ボックスをオフにし、管理者アカウントのユーザー名とパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-136">Otherwise, clear the check box, and enter an admin account user name and password.</span></span> <span data-ttu-id="b23cd-137">その後、**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-137">Then select **Next**.</span></span>
+5. <span data-ttu-id="b23cd-138">SQL Server のバージョンを選択し、**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-138">Select the SQL Server version, and then select **Next**.</span></span>
+6. <span data-ttu-id="b23cd-139">**インストール** を選択し、ウィザードが完了したら **完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-139">Select **Install**, and then, when the wizard is completed, select **Finish**.</span></span>
+
+## <a name="copy-binaries"></a><span data-ttu-id="b23cd-140">バイナリのコピー</span><span class="sxs-lookup"><span data-stu-id="b23cd-140">Copy binaries</span></span>
+<span data-ttu-id="b23cd-141">ZIP ファイルを展開した場所に移動し、以下のファイルを **Program Files (x86)\\Microsoft Dynamics AX\\50\\Client\\Bin** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="b23cd-141">Go to the location where you extracted the zip file, and copy the following files to the **Program Files (x86)\\Microsoft Dynamics AX\\50\\Client\\Bin** folder:</span></span>
+
+- <span data-ttu-id="b23cd-142">Microsoft.Dynamics.AX.Framework.Tools.DMT.dll</span><span class="sxs-lookup"><span data-stu-id="b23cd-142">Microsoft.Dynamics.AX.Framework.Tools.DMT.dll</span></span>
+- <span data-ttu-id="b23cd-143">Interop.Shell32.dll</span><span class="sxs-lookup"><span data-stu-id="b23cd-143">Interop.Shell32.dll</span></span>
+
+## <a name="install-dmt-components-for-ax-2009"></a><span data-ttu-id="b23cd-144">AX 2009 の DMT コンポーネントのインストール</span><span class="sxs-lookup"><span data-stu-id="b23cd-144">Install DMT components for AX 2009</span></span>
+<span data-ttu-id="b23cd-145">DMT をインストールする方法は 2 つあります。</span><span class="sxs-lookup"><span data-stu-id="b23cd-145">There are two ways to install the DMT.</span></span> <span data-ttu-id="b23cd-146">結合された XPO ファイルまたはアプリケーション修正プログラムを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="b23cd-146">You can use the combined XPO file or an application hotfix.</span></span> <span data-ttu-id="b23cd-147">Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクトを使用している場合、アプリケーション修正プログラムを使用します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-147">If you're using a Microsoft Dynamics Lifecycle Services (LCS) Implementation project, use the application hotfix.</span></span> <span data-ttu-id="b23cd-148">インストールには、約 7 時間かかります。</span><span class="sxs-lookup"><span data-stu-id="b23cd-148">Installation takes approximately seven hours.</span></span>
+
+### <a name="combined-xpo-file"></a><span data-ttu-id="b23cd-149">結合された XPO ファイル</span><span class="sxs-lookup"><span data-stu-id="b23cd-149">Combined XPO file</span></span>
+1. <span data-ttu-id="b23cd-150">結合された XPO ファイルを **DMT_V1.0\CombinedXPO** から展開します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-150">Extract the combined XPO file from **DMT_V1.0\CombinedXPO**.</span></span>
+2. <span data-ttu-id="b23cd-151">AX 2009 に結合された XPO ファイルをインポートします。</span><span class="sxs-lookup"><span data-stu-id="b23cd-151">Import the combined XPO file into AX 2009.</span></span>
+3. <span data-ttu-id="b23cd-152">**DMT_V1.0\Label file** ファイルから  **Program Files\\Microsoft Dynamics AX\\50\\Application\\Appl\\<NameOfYourDeployment\>** フォルダーにラベル ファイルをコピーします。</span><span class="sxs-lookup"><span data-stu-id="b23cd-152">Copy the label file from **DMT_V1.0\Label file** to the **Program Files\\Microsoft Dynamics AX\\50\\Application\\Appl\\<NameOfYourDeployment\>** folder.</span></span>
+4. <span data-ttu-id="b23cd-153">Application Object Server (AOS) インスタンスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-153">Restart the Application Object Server (AOS) instance.</span></span>
+5. <span data-ttu-id="b23cd-154">AX 2009 で、**データ移行** \> **設定** \> **DMT アプリケーションのコンパイルと同期**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-154">In AX 2009, select **Data migration** \> **Setup** \> **Compile and synchronize DMT application**.</span></span>
+
+<span data-ttu-id="b23cd-155">ユーザーがログインしているレイヤーに結合された XPO ファイルがインポートされることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="b23cd-155">Note that the combined XPO file is imported into the layer that the user is signed in to.</span></span>
+
+### <a name="application-hotfix"></a><span data-ttu-id="b23cd-156">アプリケーションの修正プログラム</span><span class="sxs-lookup"><span data-stu-id="b23cd-156">Application hotfix</span></span>
+1. <span data-ttu-id="b23cd-157">**DMT_V1.0\\ApplicationHotfix\\DynamicsAX2009-KB4010403-SP1** に移動し、**setup.exe** を右クリックして **実行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-157">Go to **DMT_V1.0\\ApplicationHotfix\\DynamicsAX2009-KB4010403-SP1**, right-click **setup.exe**, and then select **Run**.</span></span>
+2. <span data-ttu-id="b23cd-158">AX 2009 のアプリケーション オブジェクト ツリー (AOT) で、**LegalEntityId** フィールドが **DMTCustomerAddressView** ビューと **DMTVendorAddressView** ビューに追加されていることに注目してください。</span><span class="sxs-lookup"><span data-stu-id="b23cd-158">In AX 2009, in the Application Object Tree (AOT), notice that the **LegalEntityId** field has been added to the **DMTCustomerAddressView** and **DMTVendorAddressView** views.</span></span>
+3. <span data-ttu-id="b23cd-159">**データ移行** \> **設定** \> **DMT アプリケーションのコンパイルと同期** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-159">Select **Data migration** \> **Setup** \> **Compile and synchronize DMT application**.</span></span>
+
+## <a name="parameter-setup"></a><span data-ttu-id="b23cd-160">パラメータの設定</span><span class="sxs-lookup"><span data-stu-id="b23cd-160">Parameter setup</span></span>
+<span data-ttu-id="b23cd-161">ZIP ファイルを展開した場所に移動し、**defaultvalue.xlsx** を検索します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-161">Go to the location to where you extracted the zip file, and find **defaultvalue.xlsx**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="b23cd-162">ファイルは .xlsx 形式に保存されます。</span><span class="sxs-lookup"><span data-stu-id="b23cd-162">The file is saved in .xlsx format.</span></span> <span data-ttu-id="b23cd-163">拡張機能を変更しないでください。</span><span class="sxs-lookup"><span data-stu-id="b23cd-163">Don't change the extension.</span></span> <span data-ttu-id="b23cd-164">このファイルを **既定のコンフィギュレーション** パラメーターの入力として入力したら、**すべてのファイル** を選択して .xlsx 形式を選択できるようにします。</span><span class="sxs-lookup"><span data-stu-id="b23cd-164">When you provide this file as input for the **Default configuration** parameter, select **All Files** so that you can select the .xlsx format.</span></span> <span data-ttu-id="b23cd-165">この形式を選択しない場合、マッピングの生成を開始するとエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-165">If you don't select this format, errors will occur when you start to generate mappings.</span></span>
+
+1. <span data-ttu-id="b23cd-166">AX 2009 で、**データ移行** \> **設定** \> **既定のマップを構成する** を選択し、次のフィールドに適切な情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-166">In AX 2009, select **Data migration** \> **Setup** \> **Configure default maps**, and enter the appropriate information in the following fields:</span></span>
+
+    - <span data-ttu-id="b23cd-167">**既定のコンフィギュレーション**: Microsoft Excel ファイルのパスを入力します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-167">**Default configuration** – Enter the path of the Microsoft Excel file.</span></span>
+    - <span data-ttu-id="b23cd-168">**エクスポート ファイルのパス**: サービスがアクセスできるサーバーのパスを入力します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-168">**Export file path** – Enter the server path that can be accessed by the service.</span></span>
+    - <span data-ttu-id="b23cd-169">**SQL Server のユーザー名とパスワード**: AX 2009 データベースの SQL 認証資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-169">**SQL Server user and password** – Enter the SQL authentication credentials for the AX 2009 database.</span></span>
+
+2. <span data-ttu-id="b23cd-170">フォームを閉じます。</span><span class="sxs-lookup"><span data-stu-id="b23cd-170">Close the form.</span></span>
+3. <span data-ttu-id="b23cd-171">**設定** で、**接続の構成** を選択し、次のフィールドに適切な情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-171">Under **Setup**, select **Configure connections**, and enter the appropriate information on the following fields:</span></span>
+
+    - <span data-ttu-id="b23cd-172">**DIXF サービス ホスト**: DIXF サービスのインストールのホスト名を入力します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-172">**DIXF service host** – Enter the host name of the DIXF service installation.</span></span>
+    - <span data-ttu-id="b23cd-173">**テナント URL**: Finance and Operations の URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-173">**Tenant URL** – Enter the Finance and Operations URL.</span></span> <span data-ttu-id="b23cd-174">テナントが不明な場合は、Finance and Operations の web.config ファイルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b23cd-174">If you aren't sure of the tenant, see the Finance and Operations web.config file.</span></span>
+
+    > <span data-ttu-id="b23cd-175">[!注意} Azure ポータルでは、Azure Active Directory (AAD) で新しいアプリケーションを作成するときは、2 つのオプションから選択できます。</span><span class="sxs-lookup"><span data-stu-id="b23cd-175">[!NOTE} In the Azure Portal, when you create a new app in the Azure Active Directory (AAD), you can select from two options.</span></span> <span data-ttu-id="b23cd-176">**Web API** と **ネイティブ**。</span><span class="sxs-lookup"><span data-stu-id="b23cd-176">**Web API** and **Native**.</span></span> <span data-ttu-id="b23cd-177">このインスタンスでは、**ネイティブ** を選択し、ネイティブ AAD アプリケーションへのアクセス許可を付与します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-177">In this instance, select **Native** and grant permissions to native AAD app.</span></span>
+
+## <a name="multi-box-setup"></a><span data-ttu-id="b23cd-178">マルチボックスの設定</span><span class="sxs-lookup"><span data-stu-id="b23cd-178">Multi-box setup</span></span>
+<span data-ttu-id="b23cd-179">マルチボックスの設定の場合、次のコンピューターが必要です。</span><span class="sxs-lookup"><span data-stu-id="b23cd-179">For a multi-box setup, you must have the following machines:</span></span>
+
+- <span data-ttu-id="b23cd-180">AX 2009 データベースおよび DIXF サービスがインストールされているコンピューター A</span><span class="sxs-lookup"><span data-stu-id="b23cd-180">Machine A, where the AX 2009 database and DIXF service are installed</span></span>
+- <span data-ttu-id="b23cd-181">AX 2009 AOS インスタンスがインストールされているコンピューター B</span><span class="sxs-lookup"><span data-stu-id="b23cd-181">Machine B, where the AX 2009 AOS instance is installed</span></span>
+- <span data-ttu-id="b23cd-182">AX 2009 クライアントがインストールされているコンピューター C</span><span class="sxs-lookup"><span data-stu-id="b23cd-182">Machine C, where the AX 2009 client is installed</span></span>
+
+<span data-ttu-id="b23cd-183">この 3 コンピューター設定では、コンピューター C はコンピューター B の AOS インスタンスに接続するように構成されています。コンピューター B は、コンピューター A で構成されているデータベースに接続されます。</span><span class="sxs-lookup"><span data-stu-id="b23cd-183">In this three-machine setup, machine C is configured to connect to the AOS instance on machine B. Machine B is connected to the database that is configured on machine A.</span></span>
+
+### <a name="dixf-service-machine-prerequisites-machine-a"></a><span data-ttu-id="b23cd-184">DIXF サービス コンピューターの前提条件 (コンピューター A)</span><span class="sxs-lookup"><span data-stu-id="b23cd-184">DIXF service machine prerequisites (machine A)</span></span>
+<span data-ttu-id="b23cd-185">コンピューター A の DIXF サービスには、次の前提条件があります。</span><span class="sxs-lookup"><span data-stu-id="b23cd-185">The DIXF service on machine A has the following prerequisites:</span></span>
+
+- <span data-ttu-id="b23cd-186">SQL Server 2008/2012/2014</span><span class="sxs-lookup"><span data-stu-id="b23cd-186">SQL Server 2008/2012/2014</span></span>
+- <span data-ttu-id="b23cd-187">.NET Framework バージョン 4.5</span><span class="sxs-lookup"><span data-stu-id="b23cd-187">The .NET Framework version 4.5</span></span>
+- <span data-ttu-id="b23cd-188">Access データベース エンジン</span><span class="sxs-lookup"><span data-stu-id="b23cd-188">Access database engines</span></span>
+
+    - <span data-ttu-id="b23cd-189">**SQL Server 2008 の場合:** Access エンジン 32 ビットおよび 64 ビット (Microsoft Excel が 64 ビットの場合)</span><span class="sxs-lookup"><span data-stu-id="b23cd-189">**For SQL Server 2008:** Access engine 32-bit and 64-bit (if Microsoft Excel is 64-bit)</span></span>
+    - <span data-ttu-id="b23cd-190">**SQL Server 2012 以降の場合:** Access エンジン 64 ビット</span><span class="sxs-lookup"><span data-stu-id="b23cd-190">**For SQL Server 2012 or later:** Access engine 64-bit</span></span>
+
+- <span data-ttu-id="b23cd-191">AX 2009 データベース (SQL Server で構成)</span><span class="sxs-lookup"><span data-stu-id="b23cd-191">AX 2009 database (configured on SQL Server)</span></span>
+
+### <a name="aos-machine-prerequisites-machine-b"></a><span data-ttu-id="b23cd-192">AOS コンピューターの前提条件 (コンピューター B)</span><span class="sxs-lookup"><span data-stu-id="b23cd-192">AOS machine prerequisites (machine B)</span></span>
+<span data-ttu-id="b23cd-193">コンピューター B の AOS のインストールには、次の前提条件があります。</span><span class="sxs-lookup"><span data-stu-id="b23cd-193">The AOS installation on machine B has the following prerequisites:</span></span>
+
+- <span data-ttu-id="b23cd-194">AX 2009 AOS サーバー</span><span class="sxs-lookup"><span data-stu-id="b23cd-194">AX 2009 AOS Server</span></span>
+- <span data-ttu-id="b23cd-195">アプリケーション ファイル</span><span class="sxs-lookup"><span data-stu-id="b23cd-195">Application files</span></span>
+
+### <a name="client-machine-prerequisites-machine-c"></a><span data-ttu-id="b23cd-196">クライアント コンピューターの前提条件 (コンピューター C)</span><span class="sxs-lookup"><span data-stu-id="b23cd-196">Client machine prerequisites (machine C)</span></span>
+<span data-ttu-id="b23cd-197">コンピューター C のクライアントのインストールには、次の前提条件があります。</span><span class="sxs-lookup"><span data-stu-id="b23cd-197">The client installation on machine C has the following prerequisites:</span></span>
+
+- <span data-ttu-id="b23cd-198">AX 2009 クライアント</span><span class="sxs-lookup"><span data-stu-id="b23cd-198">AX 2009 client</span></span>
+
+### <a name="shared-folder-permissions"></a><span data-ttu-id="b23cd-199">共有フォルダーのアクセス許可</span><span class="sxs-lookup"><span data-stu-id="b23cd-199">Shared folder permissions</span></span>
+
+<span data-ttu-id="b23cd-200">既定のコンフィギュレーション ファイルとエクスポート パッケージ ファイルのパスは共有する必要があり、クライアント ユーザーおよび DIXF サービスにはこれらのファイルへの読み取り/書き込みアクセスが必要です。</span><span class="sxs-lookup"><span data-stu-id="b23cd-200">The path of the default configuration file and the export package file should be shared, and client users and the DIXF service should have read/write access to these files.</span></span> <span data-ttu-id="b23cd-201">アクセス権を付与するには、**データ移行** \> **設定** \> **マップの構成と生成** を選択し、**パスの検証** を選択して必要なアクセス権があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-201">To grant this access, select **Data migration** \> **Setup** \> **Configure and generate maps**, and then select **Validate path** to verify that the required access is available.</span></span>
+
+### <a name="set-up-parameters"></a><span data-ttu-id="b23cd-202">パラメータの設定</span><span class="sxs-lookup"><span data-stu-id="b23cd-202">Set up parameters</span></span>
+
+1. <span data-ttu-id="b23cd-203">**データ移行** \> **設定** \> **接続の構成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-203">Select **Data migration** \> **Setup** \> **Configure connections**.</span></span>
+2. <span data-ttu-id="b23cd-204">**DIXF サービス ホスト** フィールドに、DIXF サービスがインストールされているリモート コンピューターの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-204">In the **DIXF service host** field, enter the name of the remote machine where the DIXF service is installed.</span></span> <span data-ttu-id="b23cd-205">既定では、名前は **localhost** です。</span><span class="sxs-lookup"><span data-stu-id="b23cd-205">By default, the name is **localhost**.</span></span>
+3. <span data-ttu-id="b23cd-206">**検証** を選択し、クライアントが DIXF サービスにアクセスできることを検証します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-206">Select **Validate** to validate that the client can access the DIXF service.</span></span>
+
+### <a name="workarounds"></a><span data-ttu-id="b23cd-207">回避策</span><span class="sxs-lookup"><span data-stu-id="b23cd-207">Workarounds</span></span>
+<span data-ttu-id="b23cd-208">"DIXF サービスを利用できません" というエラー メッセージが表示される場合、次の回避方法を実行してポート 7000 のサービスの接続を有効にします。</span><span class="sxs-lookup"><span data-stu-id="b23cd-208">If you receive an error message that states, "DIXF service is unavailable," complete the following workaround to enable a service connection for port 7000.</span></span>
+
+1. <span data-ttu-id="b23cd-209">ポート 7000 を開いた後、DMT サービス コンピューターの受信ルールで **ファイアウォール設定** を選択して **実行** \> **wf.msc** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-209">Open port 7000, and then, for inbound rules on the DMT service machine, select **Firewall settings**, and then select **Run** \> **wf.msc**.</span></span>
+2. <span data-ttu-id="b23cd-210">**受信ルール** \> **新しいルール** を選択した後、**ルール タイプ** タブで、**ポート** を選択し、**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-210">Select **Inbound Rules** \> **New rule**, and then, on the **Rule Type** tab, select **Port**, and then select **Next**.</span></span>
+3. <span data-ttu-id="b23cd-211">**特定のローカル ポート** フィールドに、**7000** と入力し、**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-211">In the **Specific local ports** field, enter **7000**, and then select **Next**.</span></span>
+4. <span data-ttu-id="b23cd-212">**接続を許可する** を選択し、**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-212">Select **Allow the connection**, and then select **Next**.</span></span>
+5. <span data-ttu-id="b23cd-213">3 つのチェック ボックスをすべてオンにしてすべてのルールを適用し、**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-213">Select all three check boxes to apply all the rules, and then select **Next**.</span></span>
+6. <span data-ttu-id="b23cd-214">ルールの名前を入力し、**完了** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-214">Enter the name of the rule, and then select **Finish**.</span></span>
+7. <span data-ttu-id="b23cd-215">送信ルールでこれらの手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="b23cd-215">Repeat these steps for outbound rules.</span></span>

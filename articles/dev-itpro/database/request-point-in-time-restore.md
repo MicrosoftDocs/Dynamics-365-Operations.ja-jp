@@ -1,261 +1,98 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="request-point-in-time-restore.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>request-point-in-time-restore.0d74ce.73da227045377f6eaebfac4fd4327050803c9ce7.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>73da227045377f6eaebfac4fd4327050803c9ce7</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\database\request-point-in-time-restore.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Restore databases in non-production environments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">非実稼働環境でのデータベースの復元</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>Microsoft Dynamics 365 for Finance and Operations lets you request that a database be restored to a specific point in time that is within 35 days of your request.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations では、データベースを要求後 35 日以内の特定の時点に復元するように要求できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>This topic describes how to request a point-in-time restore.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Point-in-Time 復元を要求する方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Restore databases in non-production environments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">非実稼働環境でのデータベースの復元</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Microsoft Dynamics 365 for Finance and Operations lets you request that a database be restored to a specific point in time that is within 35 days of your request.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations では、データベースを要求後 35 日以内の特定の時点に復元するように要求できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>This topic describes how to request a point-in-time restore.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Point-in-Time 復元を要求する方法について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Point-in-time restore is a Microsoft Azure SQL Database feature that can be used with Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポイントインタイム復元は、Microsoft Dynamics 365 for Finance and Operations で使用できる Microsoft Azure SQL データベース機能です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>A point-in-time restore resets a non-production environment to a known good state after destructive testing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポイントインタイム復元では、破壊試験後に、非製造環境を既知の正常な状態にリセットします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>In an emergency, you can also do a point-in-time restore on a production environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">緊急の場合は、実稼働環境でポイントインタイム復元を実行することもできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>However, to request a production restore, don't use the process that is described in this topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、生産復元を要求するには、このトピックに記載されているプロセスを使用しないでください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Instead, you should contact Microsoft Support.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、Microsoft サポートに問い合わせてください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>The point-in-time restore feature always creates a new database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポイントインタイム リストア機能により、かならず新しいデータベースが作成されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>To uptake the new database into the Dynamics 365 for Finance and Operations environment, you must replace the original database with the new database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいデータベースを Dynamics 365 for Finance and Operations 環境に取り込むには、元のデータベースを新しいデータベースに置き換える必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Therefore, after you uptake the new database, all backup history is gone.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、新しいデータベースを取り込んだ後、すべてのバックアップの履歴はなくなります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>History tracking will begin again from that moment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その時点から履歴の追跡が再び開始されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Example of a database before and after a point-in-time restore<ept id="p1">](./media/pitrestorebehaviour.png)](./media/pitrestorebehaviour.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>ポイント イン タイム復元前後のデータベースの例<ept id="p1">](./media/pitrestorebehaviour.png)](./media/pitrestorebehaviour.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Code versioning</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コード バージョン管理</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>When you're trying to determine which restore point in time to select, it's important that you consider code versioning, because the current version of the code might be incompatible with the state of the database at the restore point.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択する復元時点を決定するときは、コード バージョン管理を考慮することが重要です。それは、コードの現在のバージョンが復元時点のデータベースの状態と互換性がない場合があるためです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>For example, today's database is running Microsoft Dynamics 365 for Finance and Operations Platform Update 2, plus some customizations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、今日のデータベースは、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 2、およびいくつかのカスタマイズを実行しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>However, 10 days ago, the environment was running the Microsoft Dynamics AX February 2016 release, plus customizations that were created for that build.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、10 日前には、2016 年 2 月にリリースされた Microsoft Dynamics AX 、さらにそのビルドを作成されたカスタマイズが環境で実行されていました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>If you try to restore the database to the state that it was in 10 days ago, but the environment is still running the most recent version of the code, the environment might not work as you expect, because the database has been upgraded.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベースを 10 日前の状態に復元しようとしましたが、環境でコードの最新バージョンが実行されている場合、データベースがアップグレードされているため、期待どおりに動作しない可能性があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Although you might be able to mix a version of the database and a version of the code without encountering issues, it's important that you be aware that issues can occur.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題を発生させることなく、データベースのバージョンとコードのバージョンを混在させることはできますが、問題が発生する可能性があることに注意してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>We recommend that, as a rule, you not mix major version releases from Microsoft, or major versions of customizations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般に、Microsoft からの、またはカスタマイズのメジャー バージョンからのメジャー バージョン リリースを混同しないことをお勧めします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Here is the most common scenario where you will require a point-in-time restore:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポイントインタイム復元を要求する最も一般的なシナリオを次に示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>User tests that are run in the sandbox environment identify some bugs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サンドボックス環境で実行されるユーザー テストにはいくつかのバグがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>The bugs are fixed in a development environment, and a new build is deployed to the sandbox environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バグは開発環境で修正され、新しいビルドはサンドボックス環境に展開されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>You request a point-in-time restore to restore the database to a time before the tests were run, so that the database can be retested in exactly the same way.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベースをまったく同じ方法で再テストできるように、ポイントインタイム復元を要求して、テストを実施する前の時点にデータベースを復元します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>In this case, there is mismatch of the code version and the database, because the bug fixes were deployed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、修正が配置されたため、コード バージョンとデータベースの不一致が発生します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>However, this mismatch is unlikely to cause an issue.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、この不一致により問題が発生することはあまりありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Consult the developers who make the customizations to verify that you can proceed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズを行う開発者に問い合わせ、進めることができることを確認してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>After the database is restored, synchronize it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベースを復元した後、それを同期します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Point-in-time restore process</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポイントインタイム復元プロセス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>The Microsoft Service Engineering team will take your environment offline, complete the point-in-time restore, and then bring the environment back online.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft サービス エンジニアリング チームは、環境をオフラインにして、ポイント イン タイム復元を実行し、環境をオンラインに戻します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>You can expect the downtime period to be less than two hours.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ダウンタイム期間が 2 時間未満であると予測することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>The period after you enter your request and before our Service Engineers take action will be longer than your environment downtime.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーが要求を入力してから、マイクロソフトのサービス エンジニアが措置を講じるまでの時間が、ユーザーの環境のダウンタイムよりも長くなります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>In the future, we will provide a self-service method that you can use to perform your own point-in-time restores.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">今後、独自のポイントインタイム復元を実行するために使用できるセルフ サービスのメソッドを提供する予定です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Click the hamburger icon in the upper left of the Microsoft Dynamics Lifecycle Services (LCS) window, and then select <bpt id="p1">**</bpt>Work items<ept id="p1">**</ept> in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics Lifecycle Services (LCS) ウィンドウの左上にあるハンバーガー アイコンをクリックし、一覧から<bpt id="p1">**</bpt>作業項目<ept id="p1">**</ept>を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Work items<ept id="p1">](./media/selectworkitems.png)](./media/selectworkitems.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>作業項目<ept id="p1">](./media/selectworkitems.png)](./media/selectworkitems.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>On the <bpt id="p1">**</bpt>Work items<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept> on the toolbar, and then click <bpt id="p3">**</bpt>Database point-in-time restore request<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>作業項目<ept id="p1">**</ept>ページで、ツール バーの<bpt id="p2">**</bpt>追加<ept id="p2">**</ept>をクリックし、<bpt id="p3">**</bpt>データベース ポイントインタイム復元要求<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Database point-in-time restore request<ept id="p1">](./media/createrequest.png)](./media/createrequest.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>データベース ポイントインタイム復元要求<ept id="p1">](./media/createrequest.png)](./media/createrequest.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>In the <bpt id="p1">**</bpt>Request for database point-in-time restore<ept id="p1">**</ept> dialog box, follow these steps:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データベース ポイントインタイム復元要求<ept id="p1">**</ept>ダイアログ ボックスで、これらの手順に従います。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>In the <bpt id="p1">**</bpt>Environment name<ept id="p1">**</ept> field, select the environment to restore.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>環境名<ept id="p1">**</ept>フィールドで、復元する環境を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Only Azure SQL Database environments can be restored.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure SQL データベース環境のみを復元することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Therefore, you can't select one-box environments that are based on Microsoft SQL Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、Microsoft SQL Server に基づく 1 つのボックス環境は選択できません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>In the <bpt id="p1">**</bpt>Database<ept id="p1">**</ept> field, the database to restore is always Microsoft Dynamics AX or Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データベース<ept id="p1">**</ept> フィールドでは、復元するデータベースは常に Microsoft Dynamics AX または Microsoft Dynamics 365 for Finance and Operations です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Other databases, such as Entity store or Financial reporting, aren't currently supported for point-in-time restores.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティ格納や財務報告など、他のデータベースでは、ポイントインタイム復元が現在サポートされていません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Enter information in the <bpt id="p1">**</bpt>Restore point time<ept id="p1">**</ept> fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>特定の時点の復元<ept id="p1">**</ept>フィールドに情報を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Azure SQL Database lets you restore a database to a point in time that is up to 35 days before the date when you make the request.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure SQL データベースを使用すると、要求を作成する日の 35 日前までの時点にデータベースを復元できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>If the environment is less than 35 days old, or if it has previously been restored, the maximum amount of time will be less.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境が 35 日未満の場合、または以前に復元されている場合は、最大時間が少なくなります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Enter information in the <bpt id="p1">**</bpt>Preferred downtime start date<ept id="p1">**</ept> and the <bpt id="p2">**</bpt>Preferred downtime end date<ept id="p2">**</ept> fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ダウンタイム開始日を優先<ept id="p1">**</ept>および<bpt id="p2">**</bpt>ダウンタイム終了日を優先<ept id="p2">**</ept>フィールドに情報を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The end date must be at least one hour after the start date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サイクル終了日は、サイクル開始日の少なくとも 1 時間後でなければなりません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Requests must be submitted least 24 hours before the preferred downtime window, to help guarantee that resources are available to complete the request.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求は、要求を完了するためにリソースを確実に使用できるようにするため、推奨されるダウンタイム期間の少なくとも 24 時間前までに送信する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Carefully read and acknowledge the three statements that have check boxes next to them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チェック ボックスを隣に置いた 3 つのステートメントを注意深く読んで確認してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Request for database point-in-time restore dialog box<ept id="p1">](./media/requestform.png)](./media/requestform.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>データベース ポイント イン タイム復元ダイアログ ボックスの要求<ept id="p1">](./media/requestform.png)](./media/requestform.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>After you submit your request, you will be redirected to the list of work items.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求を送信した後、作業項目のリストにリダイレクトされます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Here, you can view the status of the request, or reschedule or cancel the request.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ここで、要求のステータスを表示し、または再スケジューリングし、または要求をキャンセルできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>When the Microsoft Service Engineering team has acknowledged that it can complete your request, the status of the request changes to <bpt id="p1">**</bpt>Request accepted<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft サービス エンジニア リング チームがお客様の要求を達成できることを確認したとき、その要求のステータスは <bpt id="p1">**</bpt>要求受入済<ept id="p1">**</ept> に変わります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>At this point, you can follow any of these steps:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この時点で、次のいずれかの手順を実行できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Wait for the Service Engineering team to complete the restore.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サービス エンジニア リング チームによる復元が完了するまで待ちます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>When restore is completed, the status changes to <bpt id="p1">**</bpt>Succeeded<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">復元が完了したら、ステータスが <bpt id="p1">**</bpt>"成功"<ept id="p1">**</ept> に変更されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Reschedule the request by clicking the ID, or by selecting the request and then clicking <bpt id="p1">**</bpt>Reschedule<ept id="p1">**</ept> on the toolbar.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ID をクリックするか、要求を選択してツール バーで <bpt id="p1">**</bpt>再スケジューリング<ept id="p1">**</ept> をクリックすることにより、リクエストを再スケジューリングします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>You can then change the downtime windows dates and times, and the point in time to restore to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ダウンタイム ウィンドウの日時、および復元する時点を変更することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Cancel the request by selecting the request and then clicking <bpt id="p1">**</bpt>Cancel<ept id="p1">**</ept> on the toolbar.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求を選択し、ツールバーの<bpt id="p1">**</bpt>キャンセル<ept id="p1">**</ept>をクリックして、要求をキャンセルします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Enable change tracking</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更追跡の有効化</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>If change tracking was enabled in the database, ensure to enable change tracking again in the newly restored database using the ALTER DATABASE command.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベースで変更追跡が有効になっている場合は、ALTER DATABASE コマンドを使用して、新しく復元したデータベースで変更追跡を再度有効にしてください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいデータベースで店舗の業務手順の現在のバージョン (変更追跡に関連する) が使用されていることを確認するには、データ管理のデータ エンティティの変更追跡を有効または無効にする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>This can be done on any entity as this is needed to trigger the refresh of store procedure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、店舗の業務手順の更新をトリガーするために必要なので、どのエンティティでも実行できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Conditions of a point-in-time restore</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポイントインタイム復元要求の条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Here is the list of requirements and conditions of operation for a point-in-time restore:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポイントインタイム復元の操作の要件および条件の一覧を次に示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Requests must be submitted 24 hours before the desired downtime window, to help guarantee that resources will be available to complete the request.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求は、要求を完了するためにリソースを確実に使用できるようにするため、目的のダウンタイム期間の 24 時間前までに送信する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>A point-in-time restore erases the existing database in the target environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポイントインタイム復元により、ターゲット環境の既存のデータベースが消去されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>The existing database can't be recovered after the restore is completed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">復元が完了すると、既存のデータベースを復元することはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>The target environment will be unavailable until the refresh process is completed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">更新プロセスが完了するまで、ターゲット環境は使用できなくなります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>The point-in-time restore will affect only the Dynamics 365 for Finance and Operations database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポイントインタイム リストアは、Dynamics 365 for Finance and Operations データベースのみに影響します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Document handling documents that are stored in Azure blob storage won't be changed and will remain in their current state.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure blob storage に格納されているドキュメント処理のドキュメントは、変更されず現在の状態で残ります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>The same rule applies to any documents that are stored in Azure blob storage through X++ customization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同様のルールは、 X++ のカスタマイズによって Azure Blob Storage に保存されているすべてのドキュメントに適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>The Financial reporting database will also remain in the current state and must be reset after the restore is completed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務諸表データベースは、現在の状態にも残ります、復元が完了した後にリセットする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>The Dynamics 365 for Finance and Operations database will be left at the precise state that it was in at the requested point in time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations データベースは、要求された時点の正確な状態のままになります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>We do <bpt id="p1">**</bpt>not<ept id="p1">**</ept> withhold batches or restrict access to the restored database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バッチの保留または復元したデータベースへのアクセスの制限は行い <bpt id="p1">**</bpt>ません<ept id="p1">**</ept>。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>LCS users who have a role of <bpt id="p1">**</bpt>Project Owner<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Environment Manager<ept id="p2">**</ept> in LCS will have access to the Azure SQL Database and machine credentials for all non-production environments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS で<bpt id="p1">**</bpt>プロジェクト所有者<ept id="p1">**</ept>または<bpt id="p2">**</bpt>環境マネージャー<ept id="p2">**</ept>のロールを持つ LCS ユーザーは、すべての非実稼働環境の Azure SQL データベースとマシンの資格情報にアクセスします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>To help guarantee security of the data that is copied to non-production environments, restrict membership in these roles.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">非実稼働環境にコピーされたデータのセキュリティを保証するには、これらのロールのメンバーシップを制限します。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+redirect_url: /dynamics365/unified-operations/dev-itpro/database/dbmovement-operations
+title: 非実稼働環境でのデータベースの復元
+description: Microsoft Dynamics 365 for Finance and Operations では、データベースを要求後 35 日以内の特定の時点に復元するように要求できます。 このトピックでは、Point-in-Time 復元を要求する方法について説明します。
+author: MargoC
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: IT Pro
+ms.reviewer: margoc
+ms.search.scope: Operations
+ms.custom: 257614
+ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
+ms.search.region: Global
+ms.author: tabell
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 73da227045377f6eaebfac4fd4327050803c9ce7
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544233"
+---
+# <a name="restore-databases-in-non-production-environments"></a><span data-ttu-id="8487a-104">非実稼働環境でのデータベースの復元</span><span class="sxs-lookup"><span data-stu-id="8487a-104">Restore databases in non-production environments</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="8487a-105">Microsoft Dynamics 365 for Finance and Operations では、データベースを要求後 35 日以内の特定の時点に復元するように要求できます。</span><span class="sxs-lookup"><span data-stu-id="8487a-105">Microsoft Dynamics 365 for Finance and Operations lets you request that a database be restored to a specific point in time that is within 35 days of your request.</span></span> <span data-ttu-id="8487a-106">このトピックでは、Point-in-Time 復元を要求する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8487a-106">This topic describes how to request a point-in-time restore.</span></span>
+
+<span data-ttu-id="8487a-107">ポイントインタイム復元は、Microsoft Dynamics 365 for Finance and Operations で使用できる Microsoft Azure SQL データベース機能です。</span><span class="sxs-lookup"><span data-stu-id="8487a-107">Point-in-time restore is a Microsoft Azure SQL Database feature that can be used with Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="8487a-108">ポイントインタイム復元では、破壊試験後に、非製造環境を既知の正常な状態にリセットします。</span><span class="sxs-lookup"><span data-stu-id="8487a-108">A point-in-time restore resets a non-production environment to a known good state after destructive testing.</span></span> <span data-ttu-id="8487a-109">緊急の場合は、実稼働環境でポイントインタイム復元を実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="8487a-109">In an emergency, you can also do a point-in-time restore on a production environment.</span></span> <span data-ttu-id="8487a-110">ただし、生産復元を要求するには、このトピックに記載されているプロセスを使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="8487a-110">However, to request a production restore, don't use the process that is described in this topic.</span></span> <span data-ttu-id="8487a-111">代わりに、Microsoft サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="8487a-111">Instead, you should contact Microsoft Support.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="8487a-112">ポイントインタイム リストア機能により、かならず新しいデータベースが作成されます。</span><span class="sxs-lookup"><span data-stu-id="8487a-112">The point-in-time restore feature always creates a new database.</span></span> <span data-ttu-id="8487a-113">新しいデータベースを Dynamics 365 for Finance and Operations 環境に取り込むには、元のデータベースを新しいデータベースに置き換える必要があります。</span><span class="sxs-lookup"><span data-stu-id="8487a-113">To uptake the new database into the Dynamics 365 for Finance and Operations environment, you must replace the original database with the new database.</span></span> <span data-ttu-id="8487a-114">したがって、新しいデータベースを取り込んだ後、すべてのバックアップの履歴はなくなります。</span><span class="sxs-lookup"><span data-stu-id="8487a-114">Therefore, after you uptake the new database, all backup history is gone.</span></span> <span data-ttu-id="8487a-115">その時点から履歴の追跡が再び開始されます。</span><span class="sxs-lookup"><span data-stu-id="8487a-115">History tracking will begin again from that moment.</span></span>
+
+<span data-ttu-id="8487a-116">[![ポイント イン タイム復元前後のデータベースの例](./media/pitrestorebehaviour.png)](./media/pitrestorebehaviour.png)</span><span class="sxs-lookup"><span data-stu-id="8487a-116">[![Example of a database before and after a point-in-time restore](./media/pitrestorebehaviour.png)](./media/pitrestorebehaviour.png)</span></span>
+
+## <a name="code-versioning"></a><span data-ttu-id="8487a-117">コード バージョン管理</span><span class="sxs-lookup"><span data-stu-id="8487a-117">Code versioning</span></span>
+<span data-ttu-id="8487a-118">選択する復元時点を決定するときは、コード バージョン管理を考慮することが重要です。それは、コードの現在のバージョンが復元時点のデータベースの状態と互換性がない場合があるためです。</span><span class="sxs-lookup"><span data-stu-id="8487a-118">When you're trying to determine which restore point in time to select, it's important that you consider code versioning, because the current version of the code might be incompatible with the state of the database at the restore point.</span></span> <span data-ttu-id="8487a-119">たとえば、今日のデータベースは、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 2、およびいくつかのカスタマイズを実行しています。</span><span class="sxs-lookup"><span data-stu-id="8487a-119">For example, today's database is running Microsoft Dynamics 365 for Finance and Operations Platform Update 2, plus some customizations.</span></span> <span data-ttu-id="8487a-120">ただし、10 日前には、2016 年 2 月にリリースされた Microsoft Dynamics AX 、さらにそのビルドを作成されたカスタマイズが環境で実行されていました。</span><span class="sxs-lookup"><span data-stu-id="8487a-120">However, 10 days ago, the environment was running the Microsoft Dynamics AX February 2016 release, plus customizations that were created for that build.</span></span> <span data-ttu-id="8487a-121">データベースを 10 日前の状態に復元しようとしましたが、環境でコードの最新バージョンが実行されている場合、データベースがアップグレードされているため、期待どおりに動作しない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8487a-121">If you try to restore the database to the state that it was in 10 days ago, but the environment is still running the most recent version of the code, the environment might not work as you expect, because the database has been upgraded.</span></span> <span data-ttu-id="8487a-122">問題を発生させることなく、データベースのバージョンとコードのバージョンを混在させることはできますが、問題が発生する可能性があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="8487a-122">Although you might be able to mix a version of the database and a version of the code without encountering issues, it's important that you be aware that issues can occur.</span></span> <span data-ttu-id="8487a-123">一般に、Microsoft からの、またはカスタマイズのメジャー バージョンからのメジャー バージョン リリースを混同しないことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="8487a-123">We recommend that, as a rule, you not mix major version releases from Microsoft, or major versions of customizations.</span></span> <span data-ttu-id="8487a-124">ポイントインタイム復元を要求する最も一般的なシナリオを次に示します。</span><span class="sxs-lookup"><span data-stu-id="8487a-124">Here is the most common scenario where you will require a point-in-time restore:</span></span>
+
+- <span data-ttu-id="8487a-125">サンドボックス環境で実行されるユーザー テストにはいくつかのバグがあります。</span><span class="sxs-lookup"><span data-stu-id="8487a-125">User tests that are run in the sandbox environment identify some bugs.</span></span>
+- <span data-ttu-id="8487a-126">バグは開発環境で修正され、新しいビルドはサンドボックス環境に展開されます。</span><span class="sxs-lookup"><span data-stu-id="8487a-126">The bugs are fixed in a development environment, and a new build is deployed to the sandbox environment.</span></span>
+- <span data-ttu-id="8487a-127">データベースをまったく同じ方法で再テストできるように、ポイントインタイム復元を要求して、テストを実施する前の時点にデータベースを復元します。</span><span class="sxs-lookup"><span data-stu-id="8487a-127">You request a point-in-time restore to restore the database to a time before the tests were run, so that the database can be retested in exactly the same way.</span></span> <span data-ttu-id="8487a-128">この場合、修正が配置されたため、コード バージョンとデータベースの不一致が発生します。</span><span class="sxs-lookup"><span data-stu-id="8487a-128">In this case, there is mismatch of the code version and the database, because the bug fixes were deployed.</span></span> <span data-ttu-id="8487a-129">ただし、この不一致により問題が発生することはあまりありません。</span><span class="sxs-lookup"><span data-stu-id="8487a-129">However, this mismatch is unlikely to cause an issue.</span></span> <span data-ttu-id="8487a-130">カスタマイズを行う開発者に問い合わせ、進めることができることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="8487a-130">Consult the developers who make the customizations to verify that you can proceed.</span></span>
+- <span data-ttu-id="8487a-131">データベースを復元した後、それを同期します。</span><span class="sxs-lookup"><span data-stu-id="8487a-131">After the database is restored, synchronize it.</span></span>
+
+## <a name="point-in-time-restore-process"></a><span data-ttu-id="8487a-132">ポイントインタイム復元プロセス</span><span class="sxs-lookup"><span data-stu-id="8487a-132">Point-in-time restore process</span></span>
+<span data-ttu-id="8487a-133">Microsoft サービス エンジニアリング チームは、環境をオフラインにして、ポイント イン タイム復元を実行し、環境をオンラインに戻します。</span><span class="sxs-lookup"><span data-stu-id="8487a-133">The Microsoft Service Engineering team will take your environment offline, complete the point-in-time restore, and then bring the environment back online.</span></span> <span data-ttu-id="8487a-134">ダウンタイム期間が 2 時間未満であると予測することができます。</span><span class="sxs-lookup"><span data-stu-id="8487a-134">You can expect the downtime period to be less than two hours.</span></span> <span data-ttu-id="8487a-135">ユーザーが要求を入力してから、マイクロソフトのサービス エンジニアが措置を講じるまでの時間が、ユーザーの環境のダウンタイムよりも長くなります。</span><span class="sxs-lookup"><span data-stu-id="8487a-135">The period after you enter your request and before our Service Engineers take action will be longer than your environment downtime.</span></span> <span data-ttu-id="8487a-136">今後、独自のポイントインタイム復元を実行するために使用できるセルフ サービスのメソッドを提供する予定です。</span><span class="sxs-lookup"><span data-stu-id="8487a-136">In the future, we will provide a self-service method that you can use to perform your own point-in-time restores.</span></span>
+
+1. <span data-ttu-id="8487a-137">Microsoft Dynamics Lifecycle Services (LCS) ウィンドウの左上にあるハンバーガー アイコンをクリックし、一覧から**作業項目**を選択します。</span><span class="sxs-lookup"><span data-stu-id="8487a-137">Click the hamburger icon in the upper left of the Microsoft Dynamics Lifecycle Services (LCS) window, and then select **Work items** in the list.</span></span>
+
+    <span data-ttu-id="8487a-138">[![作業項目](./media/selectworkitems.png)](./media/selectworkitems.png)</span><span class="sxs-lookup"><span data-stu-id="8487a-138">[![Work items](./media/selectworkitems.png)](./media/selectworkitems.png)</span></span>
+
+2. <span data-ttu-id="8487a-139">**作業項目**ページで、ツール バーの**追加**をクリックし、**データベース ポイントインタイム復元要求**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8487a-139">On the **Work items** page, click **Add** on the toolbar, and then click **Database point-in-time restore request**.</span></span>
+
+    <span data-ttu-id="8487a-140">[![データベース ポイントインタイム復元要求](./media/createrequest.png)](./media/createrequest.png)</span><span class="sxs-lookup"><span data-stu-id="8487a-140">[![Database point-in-time restore request](./media/createrequest.png)](./media/createrequest.png)</span></span>
+
+3. <span data-ttu-id="8487a-141">**データベース ポイントインタイム復元要求**ダイアログ ボックスで、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="8487a-141">In the **Request for database point-in-time restore** dialog box, follow these steps:</span></span>
+
+    1. <span data-ttu-id="8487a-142">**環境名**フィールドで、復元する環境を選択します。</span><span class="sxs-lookup"><span data-stu-id="8487a-142">In the **Environment name** field, select the environment to restore.</span></span>
+
+        > [!NOTE]
+        > <span data-ttu-id="8487a-143">Azure SQL データベース環境のみを復元することができます。</span><span class="sxs-lookup"><span data-stu-id="8487a-143">Only Azure SQL Database environments can be restored.</span></span> <span data-ttu-id="8487a-144">したがって、Microsoft SQL Server に基づく 1 つのボックス環境は選択できません。</span><span class="sxs-lookup"><span data-stu-id="8487a-144">Therefore, you can't select one-box environments that are based on Microsoft SQL Server.</span></span>
+
+    2. <span data-ttu-id="8487a-145">**データベース** フィールドでは、復元するデータベースは常に Microsoft Dynamics AX または Microsoft Dynamics 365 for Finance and Operations です。</span><span class="sxs-lookup"><span data-stu-id="8487a-145">In the **Database** field, the database to restore is always Microsoft Dynamics AX or Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="8487a-146">エンティティ格納や財務報告など、他のデータベースでは、ポイントインタイム復元が現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8487a-146">Other databases, such as Entity store or Financial reporting, aren't currently supported for point-in-time restores.</span></span>
+    3. <span data-ttu-id="8487a-147">**特定の時点の復元**フィールドに情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="8487a-147">Enter information in the **Restore point time** fields.</span></span> <span data-ttu-id="8487a-148">Azure SQL データベースを使用すると、要求を作成する日の 35 日前までの時点にデータベースを復元できます。</span><span class="sxs-lookup"><span data-stu-id="8487a-148">Azure SQL Database lets you restore a database to a point in time that is up to 35 days before the date when you make the request.</span></span> <span data-ttu-id="8487a-149">環境が 35 日未満の場合、または以前に復元されている場合は、最大時間が少なくなります。</span><span class="sxs-lookup"><span data-stu-id="8487a-149">If the environment is less than 35 days old, or if it has previously been restored, the maximum amount of time will be less.</span></span>
+    4. <span data-ttu-id="8487a-150">**ダウンタイム開始日を優先**および**ダウンタイム終了日を優先**フィールドに情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="8487a-150">Enter information in the **Preferred downtime start date** and the **Preferred downtime end date** fields.</span></span> <span data-ttu-id="8487a-151">サイクル終了日は、サイクル開始日の少なくとも 1 時間後でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="8487a-151">The end date must be at least one hour after the start date.</span></span> <span data-ttu-id="8487a-152">要求は、要求を完了するためにリソースを確実に使用できるようにするため、推奨されるダウンタイム期間の少なくとも 24 時間前までに送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8487a-152">Requests must be submitted least 24 hours before the preferred downtime window, to help guarantee that resources are available to complete the request.</span></span>
+    5. <span data-ttu-id="8487a-153">チェック ボックスを隣に置いた 3 つのステートメントを注意深く読んで確認してください。</span><span class="sxs-lookup"><span data-stu-id="8487a-153">Carefully read and acknowledge the three statements that have check boxes next to them.</span></span>
+
+    <span data-ttu-id="8487a-154">[![データベース ポイント イン タイム復元ダイアログ ボックスの要求](./media/requestform.png)](./media/requestform.png)</span><span class="sxs-lookup"><span data-stu-id="8487a-154">[![Request for database point-in-time restore dialog box](./media/requestform.png)](./media/requestform.png)</span></span>
+
+4. <span data-ttu-id="8487a-155">要求を送信した後、作業項目のリストにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="8487a-155">After you submit your request, you will be redirected to the list of work items.</span></span> <span data-ttu-id="8487a-156">ここで、要求のステータスを表示し、または再スケジューリングし、または要求をキャンセルできます。</span><span class="sxs-lookup"><span data-stu-id="8487a-156">Here, you can view the status of the request, or reschedule or cancel the request.</span></span>
+5. <span data-ttu-id="8487a-157">Microsoft サービス エンジニア リング チームがお客様の要求を達成できることを確認したとき、その要求のステータスは **要求受入済** に変わります。</span><span class="sxs-lookup"><span data-stu-id="8487a-157">When the Microsoft Service Engineering team has acknowledged that it can complete your request, the status of the request changes to **Request accepted**.</span></span> <span data-ttu-id="8487a-158">この時点で、次のいずれかの手順を実行できます。</span><span class="sxs-lookup"><span data-stu-id="8487a-158">At this point, you can follow any of these steps:</span></span>
+
+    - <span data-ttu-id="8487a-159">サービス エンジニア リング チームによる復元が完了するまで待ちます。</span><span class="sxs-lookup"><span data-stu-id="8487a-159">Wait for the Service Engineering team to complete the restore.</span></span> <span data-ttu-id="8487a-160">復元が完了したら、ステータスが **"成功"** に変更されます。</span><span class="sxs-lookup"><span data-stu-id="8487a-160">When restore is completed, the status changes to **Succeeded**.</span></span>
+    - <span data-ttu-id="8487a-161">ID をクリックするか、要求を選択してツール バーで **再スケジューリング** をクリックすることにより、リクエストを再スケジューリングします。</span><span class="sxs-lookup"><span data-stu-id="8487a-161">Reschedule the request by clicking the ID, or by selecting the request and then clicking **Reschedule** on the toolbar.</span></span> <span data-ttu-id="8487a-162">ダウンタイム ウィンドウの日時、および復元する時点を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="8487a-162">You can then change the downtime windows dates and times, and the point in time to restore to.</span></span>
+    - <span data-ttu-id="8487a-163">要求を選択し、ツールバーの**キャンセル**をクリックして、要求をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="8487a-163">Cancel the request by selecting the request and then clicking **Cancel** on the toolbar.</span></span>
+
+## <a name="enable-change-tracking"></a><span data-ttu-id="8487a-164">変更追跡の有効化</span><span class="sxs-lookup"><span data-stu-id="8487a-164">Enable change tracking</span></span>
+<span data-ttu-id="8487a-165">データベースで変更追跡が有効になっている場合は、ALTER DATABASE コマンドを使用して、新しく復元したデータベースで変更追跡を再度有効にしてください。</span><span class="sxs-lookup"><span data-stu-id="8487a-165">If change tracking was enabled in the database, ensure to enable change tracking again in the newly restored database using the ALTER DATABASE command.</span></span>
+
+<span data-ttu-id="8487a-166">新しいデータベースで店舗の業務手順の現在のバージョン (変更追跡に関連する) が使用されていることを確認するには、データ管理のデータ エンティティの変更追跡を有効または無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="8487a-166">To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management.</span></span> <span data-ttu-id="8487a-167">これは、店舗の業務手順の更新をトリガーするために必要なので、どのエンティティでも実行できます。</span><span class="sxs-lookup"><span data-stu-id="8487a-167">This can be done on any entity as this is needed to trigger the refresh of store procedure.</span></span>
+
+## <a name="conditions-of-a-point-in-time-restore"></a><span data-ttu-id="8487a-168">ポイントインタイム復元要求の条件</span><span class="sxs-lookup"><span data-stu-id="8487a-168">Conditions of a point-in-time restore</span></span>
+<span data-ttu-id="8487a-169">ポイントインタイム復元の操作の要件および条件の一覧を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8487a-169">Here is the list of requirements and conditions of operation for a point-in-time restore:</span></span>
+
+- <span data-ttu-id="8487a-170">要求は、要求を完了するためにリソースを確実に使用できるようにするため、目的のダウンタイム期間の 24 時間前までに送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8487a-170">Requests must be submitted 24 hours before the desired downtime window, to help guarantee that resources will be available to complete the request.</span></span>
+- <span data-ttu-id="8487a-171">ポイントインタイム復元により、ターゲット環境の既存のデータベースが消去されます。</span><span class="sxs-lookup"><span data-stu-id="8487a-171">A point-in-time restore erases the existing database in the target environment.</span></span> <span data-ttu-id="8487a-172">復元が完了すると、既存のデータベースを復元することはできません。</span><span class="sxs-lookup"><span data-stu-id="8487a-172">The existing database can't be recovered after the restore is completed.</span></span>
+- <span data-ttu-id="8487a-173">更新プロセスが完了するまで、ターゲット環境は使用できなくなります。</span><span class="sxs-lookup"><span data-stu-id="8487a-173">The target environment will be unavailable until the refresh process is completed.</span></span>
+- <span data-ttu-id="8487a-174">ポイントインタイム リストアは、Dynamics 365 for Finance and Operations データベースのみに影響します。</span><span class="sxs-lookup"><span data-stu-id="8487a-174">The point-in-time restore will affect only the Dynamics 365 for Finance and Operations database.</span></span>
+
+    - <span data-ttu-id="8487a-175">Azure blob storage に格納されているドキュメント処理のドキュメントは、変更されず現在の状態で残ります。</span><span class="sxs-lookup"><span data-stu-id="8487a-175">Document handling documents that are stored in Azure blob storage won't be changed and will remain in their current state.</span></span> <span data-ttu-id="8487a-176">同様のルールは、 X++ のカスタマイズによって Azure Blob Storage に保存されているすべてのドキュメントに適用されます。</span><span class="sxs-lookup"><span data-stu-id="8487a-176">The same rule applies to any documents that are stored in Azure blob storage through X++ customization.</span></span>
+    - <span data-ttu-id="8487a-177">財務諸表データベースは、現在の状態にも残ります、復元が完了した後にリセットする必要があります。</span><span class="sxs-lookup"><span data-stu-id="8487a-177">The Financial reporting database will also remain in the current state and must be reset after the restore is completed.</span></span>
+
+- <span data-ttu-id="8487a-178">Dynamics 365 for Finance and Operations データベースは、要求された時点の正確な状態のままになります。</span><span class="sxs-lookup"><span data-stu-id="8487a-178">The Dynamics 365 for Finance and Operations database will be left at the precise state that it was in at the requested point in time.</span></span> <span data-ttu-id="8487a-179">バッチの保留または復元したデータベースへのアクセスの制限は行い **ません**。</span><span class="sxs-lookup"><span data-stu-id="8487a-179">We do **not** withhold batches or restrict access to the restored database.</span></span>
+- <span data-ttu-id="8487a-180">LCS で**プロジェクト所有者**または**環境マネージャー**のロールを持つ LCS ユーザーは、すべての非実稼働環境の Azure SQL データベースとマシンの資格情報にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="8487a-180">LCS users who have a role of **Project Owner** or **Environment Manager** in LCS will have access to the Azure SQL Database and machine credentials for all non-production environments.</span></span> <span data-ttu-id="8487a-181">非実稼働環境にコピーされたデータのセキュリティを保証するには、これらのロールのメンバーシップを制限します。</span><span class="sxs-lookup"><span data-stu-id="8487a-181">To help guarantee security of the data that is copied to non-production environments, restrict membership in these roles.</span></span>

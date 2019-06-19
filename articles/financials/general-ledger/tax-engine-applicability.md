@@ -1,342 +1,172 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="tax-engine-applicability.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>tax-engine-applicability.d76b64.d3d3f09bc0dfb0299f9f4ef374eb920f16001cd3.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>d3d3f09bc0dfb0299f9f4ef374eb920f16001cd3</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\general-ledger\tax-engine-applicability.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Tax engine applicability</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税エンジンの適用性</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides information about Tax engine applicability.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、税エンジンの適用性について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Tax engine applicability</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税エンジンの適用性</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>The <bpt id="p1">[</bpt>Tax engine<ept id="p1">](tax-engine.md)</ept> (also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>税エンジン<ept id="p1">](tax-engine.md)</ept> (GTE とも呼ばれます) では、法的要件および業務要件に基づいて、税の適用、計算、転記、および決済を決定する税ルールを設定できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This topic walks you through a tax engine configuration to help you understand how GTE handles tax applicability.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは GTE が税金の適用性を処理する方法を理解するのに役立つ税エンジン構成について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>The Tax engine functionality is only available for legal entities with a primary address in India.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税エンジン機能は、インドに基本住所がある法人に対してのみ使用可能です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Prerequisites</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>This document uses India Goods and Services Tax configuration to explain the tax applicability.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このドキュメントでは、インドの商品及びサービス税のコンフィギュレーションを使用して、税の適用について説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>For more information, see <bpt id="p1">[</bpt>India Goods and Services Tax<ept id="p1">](../localizations/apac-ind-gst.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>インドの商品及びサービス税<ept id="p1">](../localizations/apac-ind-gst.md)</ept> を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">概要</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Tax applicability is the condition under which tax type, tax component, or tax rate are applicable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税の適用性とは、税タイプ、税コンポーネント、または税率が適用される条件です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>For example, for India GST, if you sell goods from one state to another state, you need to charge IGST, and the goods you are selling will determine the tax rate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、インドの GST では、ある州から別の州に商品を販売する場合、IGST を請求する必要があります。販売している商品によって税率が決まります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>The tax engine provides two ways to handle the tax applicability, lookup and condition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税エンジンは 2 種類の方法で、税の適用、ルックアップおよび条件を処理します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>A lookup is mainly used to handle the dynamic applicability rules, and a condition is used to handle the static applicability rules.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップは主に動的適用ルールを処理するために使用され、条件は静的適用ルールを処理するために使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>The following GTE components are relevant to tax applicability.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下の GTE コンポーネントは、税の適用性に関連しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>GTE component</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GTE コンポーネント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Lookup/Condition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップ/条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Comments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Tax type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税タイプ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Lookup &amp; Condition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップ &amp; 条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Tax component</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税コンポーネント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Lookup &amp; Condition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップ &amp; 条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Both tax component and tax type can have applicability logic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税コンポーネントと税タイプの両方に適用性ロジックを含めることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Because the tax component is under tax type, applicability logic is used to determine whether a specific tax component is applicable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税コンポーネントは税タイプに属しているため、特定の税コンポーネントが適用可能かどうかを判断するために適用性ロジックが使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Tax measure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税措置</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Lookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The measure type should be <bpt id="p1">**</bpt>Tax rate<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Percentage<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Percentage group<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">測定タイプは、<bpt id="p1">**</bpt>税率<ept id="p1">**</ept>、<bpt id="p2">**</bpt>割合<ept id="p2">**</ept>、または<bpt id="p3">**</bpt>割合グループ<ept id="p3">**</ept>である必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Formula</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">式</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Condition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>For a specific transaction type, not all tax formulas are relevant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定のトランザクション タイプに対して、すべての税計算式が関連するわけではありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>For example, the formula that is used to calculate the non-deductible tax is only relevant for document purchases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、非控除税額の計算に使用される式は、ドキュメントの購入にのみ関連しています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Posting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">転記</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Condition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Different transaction types have different posting logic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">異なるトランザクション タイプには、異なる転記ロジックがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>In this case, a condition is used to ensure that the correct posting profile is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、条件を使用して正しい転記プロファイルが使用されていることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Accounting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">会計</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Lookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Accounting is the same as tax accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">会計は税勘定と同じです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>With a lookup, you can maintain different sets of tax accounts for different scenarios.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップを使用すると、さまざまなシナリオに応じてさまざまな税勘定セットを管理できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>For example, different tax registration numbers have different tax accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、税務登録番号が異なれば、税勘定も異なります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Credit pool</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クレジット プール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Lookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Use a lookup to determine how to settle tax.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップを使用して税の決済方法を決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>For example, you can settle tax based on different tax registration numbers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、さまざまな税務登録番号に基づいて税を決済できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Tax period</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税期間</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Lookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Use a lookup to determine which tax period should be used for different scenarios.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップを使用して、さまざまなシナリオに使用する税の期間を決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Condition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>If the applicability rule is always static, you need to use a condition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適用ルールが常に静的な場合は、条件を使用する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>For example, GST is not applicable for intra-state inventory transfer in India.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、GST はインドの州内在庫移動には適用されません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Open Tax (India GST) by clicking the <bpt id="p1">**</bpt>Designer<ept id="p1">**</ept> button.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>デザイナー<ept id="p1">**</ept>ボタンをクリックして税 (インドの GST) を開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>CGST condition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CGST 条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Select the tax component CGST, and click the pencil icon, to check the detailed condition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CGST、税コンポーネント CGST を選択し、鉛筆アイコンをクリックして、詳細な条件をチェックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>CGST condition details</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CGST 条件の詳細</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>The condition is actually an <bpt id="p1">[</bpt>Electronic Reporting<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting.md)</ept> expression.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件は、実際には、<bpt id="p1">[</bpt>電子申告<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting.md)</ept> 式です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>It is comprised of the fields on the left in <bpt id="p1">**</bpt>Data source<ept id="p1">**</ept>, and <bpt id="p2">**</bpt>Functions<ept id="p2">**</ept> on the right.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは<bpt id="p1">**</bpt>データ ソース<ept id="p1">**</ept>の左側のフィールドと右側の<bpt id="p2">**</bpt>関数<ept id="p2">**</ept>で構成されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>For a list of supported functions, see <bpt id="p1">[</bpt>Functions<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md#supported-functions)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サポートされている関数の一覧については、<bpt id="p1">[</bpt>関数<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md#supported-functions)</ept> を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>The following condition means that <bpt id="p1">*</bpt>Taxable Document Type<ept id="p1">*</ept> cannot be "Invent transfer order receive", "Invent transfer order shipment", or "Invent transfer order".</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の条件は、<bpt id="p1">*</bpt>課税対象文書のタイプ<ept id="p1">*</ept>を「在庫転送オーダー受信」、「在庫転送オーダー出荷」、または「在庫転送オーダー」にすることはできないことを意味します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>This also means that either HSN Code or SAC should be specified.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">つまり HSN コードまたは SAC のいずれかを指定する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Enable GST for intra-state inventory transfer order</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">州内在庫移動オーダーに対して GST を有効にする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>In this scenario, suppose that the Indian government requires you to calculate GST for intra-state inventory transfer orders if the GST registration numbers are different between the ship from and ship to warehouse.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このシナリオでは、GST 登録番号が出荷元と出荷先の倉庫間で異なる場合、インド政府が州内在庫移動オーダーの GST の計算を要求するとします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Structure of the Data source in the formula designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーミュラ デザイナーのデータソースの構造</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>On the leftmost side of the formula designer, you can find all the fields that are defined in the taxable document and tax document, and the reference model that is defined in the taxable document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーミュラ デザイナーの左端には、課税対象文書と税務書類に定義されているすべてのフィールドと、課税対象文書に定義されている参照モデルがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Change the applicability condition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適用条件を変更する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>To change the applicability condition, go to <bpt id="p1">**</bpt>Header &gt; Lines &gt; GST Registration number<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Header &gt; Lines &gt; Party GST Registration number<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適用条件を変更するには<bpt id="p1">**</bpt>ヘッダー &gt; 明細行 &gt; GST 登録番号<ept id="p1">**</ept>および<bpt id="p2">**</bpt>ヘッダー &gt; 明細行 &gt; パーティ GST 登録番号<ept id="p2">**</ept>の順に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>These represent the GST registration numbers for the ship from and ship to warehouse.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらは、倉庫からの出荷および倉庫への出荷の GST 登録番号を表します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>The condition can be changed to the following.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件は以下のように変更できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Select the field from the data source, and use <bpt id="p1">**</bpt>Add data source<ept id="p1">**</ept> to add the field into the formula.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースからフィールドを選択し、<bpt id="p1">**</bpt>データ ソースの追加<ept id="p1">**</ept>を使用して、式にフィールドを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Make sure to use single quotes for the data source field if there is an empty space in the name, like 'Taxable Document Type'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「課税対象文書のタイプ」のように、名前に空白がある場合は、データ ソース フィールドの単一引用符を使用してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Use a double quote for the value if there is an empty space, like "Inventory transfer order".</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「在庫移動オーダー」のように空白がある場合は、値に対して二重引用符を使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Click <bpt id="p1">**</bpt>Test<ept id="p1">**</ept> to test your formula after you are done with editing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">編集が完了した後に、<bpt id="p1">**</bpt>テスト<ept id="p1">**</ept>をクリックして式をテストします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Lookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>If the static applicability rules are complex, or it is a dynamic applicability rule, you need to use a lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的適用ルールが複雑な場合、または動的適用ルールである場合は、ルックアップを使用する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Lookup for static applicability rules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的適用ルールのルックアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Select <bpt id="p1">**</bpt>GST<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Lookups<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>GST<ept id="p1">**</ept> を選択して、<bpt id="p2">**</bpt>ルックアップ<ept id="p2">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>CGST condition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CGST 条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Because a lookup can handle both static applicability rules and dynamic applicability rules, the <bpt id="p1">**</bpt>Source type<ept id="p1">**</ept> drop-down list is for this purpose.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップは静的適用ルールと動的適用ルールの両方を処理できるので、<bpt id="p1">**</bpt>ソース タイプ<ept id="p1">**</ept>ドロップダウンリストはこの目的のためにあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Use <bpt id="p1">**</bpt>Configuration<ept id="p1">**</ept> for the static applicability rule, which means that the data used in the lookup comes from the configuration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的適用ルールには<bpt id="p1">**</bpt>コンフィギュレーション<ept id="p1">**</ept>を使用します。これは、ルックアップで使用されるデータがコンフィギュレーションから取得されることを意味します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Use <bpt id="p1">**</bpt>User data<ept id="p1">**</ept> for the dynamic applicability rule, which means that the data used in the lookup comes from the runtime environment, such as Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動的適用ルールには<bpt id="p1">**</bpt>ユーザー データ<ept id="p1">**</ept>を使用します。これは、ルックアップに使用されるデータが Finance and Operations などのランタイム環境から取得されることを意味します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>A lookup is a matrix.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップはマトリックスです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>The relation of each line is <bpt id="p1">*</bpt>OR<ept id="p1">*</ept>, and the relation of each column within the line is <bpt id="p2">*</bpt>AND<ept id="p2">*</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各行の関係は <bpt id="p1">*</bpt>OR<ept id="p1">*</ept> で、行内の各列の関係は <bpt id="p2">*</bpt>AND<ept id="p2">*</ept> です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>If the value of the cell is empty, it means that all of the values satisfy the condition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セルの値が空の場合は、すべての値が条件を満たすことを意味します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>In the screenshot above, all the data for the lookup of tax type GST comes from the configuration, so the <bpt id="p1">**</bpt>Source type<ept id="p1">**</ept> is <bpt id="p2">**</bpt>Configuration<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">上のスクリーンショットでは、税タイプ GST のルックアップのためのすべてのデータはコンフィギュレーションから来ているので、<bpt id="p1">**</bpt>ソース タイプ<ept id="p1">**</ept>は<bpt id="p2">**</bpt>コンフィギュレーション<ept id="p2">**</ept>です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>If you convert the lookup of GST into a condition, it will look like following.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GST のルックアップを条件に変換する場合は次のように表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Lookup for dynamic applicability rules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動的適用ルールのルックアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Many applicability rules depend on the runtime data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">多くの適用ルールは、ランタイム データに依存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>For example, some tax components are only applicable for a certain good or service, so a different type of tax transaction results in a different tax rate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、一部の税コンポーネントは特定の商品またはサービスにのみ適用されるため、税務取引の種類が異なると税率も異なります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Select <bpt id="p1">**</bpt>CESS<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Lookups<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CESS<ept id="p1">**</ept> を選択して、<bpt id="p2">**</bpt>ルックアップ<ept id="p2">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>In India, CESS is applicable for certain goods and services.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インドでは、CESS は、特定の商品やサービスに適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>In Finance and Operations, HSN represents goods, SAC represents services, so HSN Code and SAC are used in the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations では、HSN は商品を表し、SAC はサービスを表すため、ルックアップでは HSN コードと SAC が使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>The <bpt id="p1">**</bpt>Source type<ept id="p1">**</ept> is <bpt id="p2">**</bpt>User data<ept id="p2">**</ept>, because the real value of HSN Code and SAC come from Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HSN Code と SAC の実際の価は Finance and Operations から取得されるため、<bpt id="p1">**</bpt>ソース タイプ<ept id="p1">**</ept>は<bpt id="p2">**</bpt>ユーザー データ<ept id="p2">**</ept>です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Now, let's check how the CGST rate is determined.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ここでは、CGST レートを決定する方法を確認しましょう。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Select <bpt id="p1">**</bpt>CGST &gt; Rate<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Lookups<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CGST &gt; レート<ept id="p1">**</ept>の順に選択し、<bpt id="p2">**</bpt>ルックアップ<ept id="p2">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>CGST&gt;Rate Lookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CGST &gt; レート ルックアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Runtime data is required to determine the tax rate, so the system hides the <bpt id="p1">**</bpt>Source type<ept id="p1">**</ept>, and the <bpt id="p2">**</bpt>User data<ept id="p2">**</ept> value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ランタイム データは税率を決定するために必要なので、システムは<bpt id="p1">**</bpt>ソース タイプ<ept id="p1">**</ept>と<bpt id="p2">**</bpt>ユーザー データ<ept id="p2">**</ept>の値を隠します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Different goods and services result in different tax rates, so there are <bpt id="p1">**</bpt>HSN Code<ept id="p1">**</ept> and <bpt id="p2">**</bpt>SAC<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">商品やサービスが異なれば税率が異なるため、<bpt id="p1">**</bpt>HSN コード<ept id="p1">**</ept>および <bpt id="p2">**</bpt>SAC<ept id="p2">**</ept> があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source><bpt id="p1">**</bpt>Party GST Registration Number<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Tax Direction<ept id="p2">**</ept> are used to handle the scenario of purchasing from an unregistered GST supplier.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>パーティ GST 登録番号<ept id="p1">**</ept>および<bpt id="p2">**</bpt>税提示方法<ept id="p2">**</ept>は、GST 未登録の仕入先から購入するシナリオを処理するために使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source><bpt id="p1">**</bpt>Transaction Date from<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Transaction Date to<ept id="p2">**</ept> are used to handle different tax rate per periods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>トランザクション開始日<ept id="p1">**</ept>および<bpt id="p2">**</bpt>トランザクション終了日<ept id="p2">**</ept>は、期間ごとに異なる税率を処理するために使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Enable different tax rate for different goods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">商品ごとに異なる税率を有効にする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Different goods can share one HSN code, so the lookup cannot satisfy this scenario.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">異なる商品が 1 つの HSN コードを共有できるため、ルックアップでこのシナリオを満たすことはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>A different lookup column is needed to handle this.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これに対応するには、別のルックアップ列が必要です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Click <bpt id="p1">**</bpt>Columns<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>列<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>On the left side, you can find all of the <bpt id="p1">**</bpt>Available columns<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">左側に<bpt id="p1">**</bpt>使用可能な列<ept id="p1">**</ept>がすべてあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>The structure is the same as the <bpt id="p1">**</bpt>Data source<ept id="p1">**</ept> in the formula designer, except that there are no reference models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">構造は、参照モデルがないことを除けば、フォーミュラ デザイナーの<bpt id="p1">**</bpt>データ ソース<ept id="p1">**</ept>と同じです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>CGST&gt;Rate Change Lookup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CGST &gt; レート 変更 ルックアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Select <bpt id="p1">**</bpt>Item ID<ept id="p1">**</ept> in <bpt id="p2">**</bpt>Available columns<ept id="p2">**</ept> to uniquely determine the goods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>使用可能な列<ept id="p2">**</ept>で<bpt id="p1">**</bpt>品目 ID<ept id="p1">**</ept>を選択し、商品を一意に決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Click the right-arrow icon to add it to the <bpt id="p1">**</bpt>Selected columns<ept id="p1">**</ept> side.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右矢印アイコンをクリックして、<bpt id="p1">**</bpt>選択された列<ept id="p1">**</ept>側に追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>If HSN is not needed, you can select <bpt id="p1">**</bpt>HSN Code<ept id="p1">**</ept> in <bpt id="p2">**</bpt>Selected columns<ept id="p2">**</ept>, and click the left-arrow icon to remove it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HSN が不要な場合は、<bpt id="p2">**</bpt>選択された列<ept id="p2">**</ept>で <bpt id="p1">**</bpt>HSN コード<ept id="p1">**</ept>を選択し、左矢印アイコンをクリックして削除できます。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: 税エンジンの適用性
+description: このトピックでは、税エンジンの適用性について説明します。
+author: yijialuan
+manager: AnnBe
+ms.date: 10/07/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE, Applicability
+audience: IT Pro
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: India
+ms.author: riluan
+ms.search.validFrom: 2018-10-07
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: d3d3f09bc0dfb0299f9f4ef374eb920f16001cd3
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1563657"
+---
+# <a name="tax-engine-applicability"></a><span data-ttu-id="f5c45-103">税エンジンの適用性</span><span class="sxs-lookup"><span data-stu-id="f5c45-103">Tax engine applicability</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="f5c45-104">[税エンジン](tax-engine.md) (GTE とも呼ばれます) では、法的要件および業務要件に基づいて、税の適用、計算、転記、および決済を決定する税ルールを設定できます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-104">The [Tax engine](tax-engine.md) (also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.</span></span> <span data-ttu-id="f5c45-105">このトピックでは GTE が税金の適用性を処理する方法を理解するのに役立つ税エンジン構成について説明します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-105">This topic walks you through a tax engine configuration to help you understand how GTE handles tax applicability.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="f5c45-106">税エンジン機能は、インドに基本住所がある法人に対してのみ使用可能です。</span><span class="sxs-lookup"><span data-stu-id="f5c45-106">The Tax engine functionality is only available for legal entities with a primary address in India.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="f5c45-107">必要条件</span><span class="sxs-lookup"><span data-stu-id="f5c45-107">Prerequisites</span></span>                                               
+<span data-ttu-id="f5c45-108">このドキュメントでは、インドの商品及びサービス税のコンフィギュレーションを使用して、税の適用について説明します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-108">This document uses India Goods and Services Tax configuration to explain the tax applicability.</span></span> <span data-ttu-id="f5c45-109">詳細については、[インドの商品及びサービス税](../localizations/apac-ind-gst.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f5c45-109">For more information, see [India Goods and Services Tax](../localizations/apac-ind-gst.md).</span></span>
+
+## <a name="overview"></a><span data-ttu-id="f5c45-110">概要</span><span class="sxs-lookup"><span data-stu-id="f5c45-110">Overview</span></span>
+<span data-ttu-id="f5c45-111">税の適用性とは、税タイプ、税コンポーネント、または税率が適用される条件です。</span><span class="sxs-lookup"><span data-stu-id="f5c45-111">Tax applicability is the condition under which tax type, tax component, or tax rate are applicable.</span></span> <span data-ttu-id="f5c45-112">たとえば、インドの GST では、ある州から別の州に商品を販売する場合、IGST を請求する必要があります。販売している商品によって税率が決まります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-112">For example, for India GST, if you sell goods from one state to another state, you need to charge IGST, and the goods you are selling will determine the tax rate.</span></span> <span data-ttu-id="f5c45-113">税エンジンは 2 種類の方法で、税の適用、ルックアップおよび条件を処理します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-113">The tax engine provides two ways to handle the tax applicability, lookup and condition.</span></span> <span data-ttu-id="f5c45-114">ルックアップは主に動的適用ルールを処理するために使用され、条件は静的適用ルールを処理するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-114">A lookup is mainly used to handle the dynamic applicability rules, and a condition is used to handle the static applicability rules.</span></span>
+
+<span data-ttu-id="f5c45-115">以下の GTE コンポーネントは、税の適用性に関連しています。</span><span class="sxs-lookup"><span data-stu-id="f5c45-115">The following GTE components are relevant to tax applicability.</span></span>
+
+|<span data-ttu-id="f5c45-116">GTE コンポーネント</span><span class="sxs-lookup"><span data-stu-id="f5c45-116">GTE component</span></span> | <span data-ttu-id="f5c45-117">ルックアップ/条件</span><span class="sxs-lookup"><span data-stu-id="f5c45-117">Lookup/Condition</span></span> | <span data-ttu-id="f5c45-118">備考</span><span class="sxs-lookup"><span data-stu-id="f5c45-118">Comments</span></span> |
+|--------------|------------------|----------|
+| <span data-ttu-id="f5c45-119">税タイプ</span><span class="sxs-lookup"><span data-stu-id="f5c45-119">Tax type</span></span> | <span data-ttu-id="f5c45-120">ルックアップ & 条件</span><span class="sxs-lookup"><span data-stu-id="f5c45-120">Lookup & Condition</span></span> |  |
+| <span data-ttu-id="f5c45-121">税コンポーネント</span><span class="sxs-lookup"><span data-stu-id="f5c45-121">Tax component</span></span> | <span data-ttu-id="f5c45-122">ルックアップ & 条件</span><span class="sxs-lookup"><span data-stu-id="f5c45-122">Lookup & Condition</span></span> | <span data-ttu-id="f5c45-123">税コンポーネントと税タイプの両方に適用性ロジックを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-123">Both tax component and tax type can have applicability logic.</span></span> <span data-ttu-id="f5c45-124">税コンポーネントは税タイプに属しているため、特定の税コンポーネントが適用可能かどうかを判断するために適用性ロジックが使用されます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-124">Because the tax component is under tax type, applicability logic is used to determine whether a specific tax component is applicable.</span></span> |
+| <span data-ttu-id="f5c45-125">税措置</span><span class="sxs-lookup"><span data-stu-id="f5c45-125">Tax measure</span></span> | <span data-ttu-id="f5c45-126">ルックアップ</span><span class="sxs-lookup"><span data-stu-id="f5c45-126">Lookup</span></span> | <span data-ttu-id="f5c45-127">測定タイプは、**税率**、**割合**、または**割合グループ**である必要があります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-127">The measure type should be **Tax rate**, **Percentage**, or **Percentage group**.</span></span> |
+| <span data-ttu-id="f5c45-128">式</span><span class="sxs-lookup"><span data-stu-id="f5c45-128">Formula</span></span> | <span data-ttu-id="f5c45-129">条件</span><span class="sxs-lookup"><span data-stu-id="f5c45-129">Condition</span></span> | <span data-ttu-id="f5c45-130">特定のトランザクション タイプに対して、すべての税計算式が関連するわけではありません。</span><span class="sxs-lookup"><span data-stu-id="f5c45-130">For a specific transaction type, not all tax formulas are relevant.</span></span> <span data-ttu-id="f5c45-131">たとえば、非控除税額の計算に使用される式は、ドキュメントの購入にのみ関連しています。</span><span class="sxs-lookup"><span data-stu-id="f5c45-131">For example, the formula that is used to calculate the non-deductible tax is only relevant for document purchases.</span></span> |
+| <span data-ttu-id="f5c45-132">転記</span><span class="sxs-lookup"><span data-stu-id="f5c45-132">Posting</span></span> | <span data-ttu-id="f5c45-133">条件</span><span class="sxs-lookup"><span data-stu-id="f5c45-133">Condition</span></span> | <span data-ttu-id="f5c45-134">異なるトランザクション タイプには、異なる転記ロジックがあります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-134">Different transaction types have different posting logic.</span></span> <span data-ttu-id="f5c45-135">この場合、条件を使用して正しい転記プロファイルが使用されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-135">In this case, a condition is used to ensure that the correct posting profile is used.</span></span> | 
+| <span data-ttu-id="f5c45-136">会計</span><span class="sxs-lookup"><span data-stu-id="f5c45-136">Accounting</span></span> | <span data-ttu-id="f5c45-137">ルックアップ</span><span class="sxs-lookup"><span data-stu-id="f5c45-137">Lookup</span></span> | <span data-ttu-id="f5c45-138">会計は税勘定と同じです。</span><span class="sxs-lookup"><span data-stu-id="f5c45-138">Accounting is the same as tax accounts.</span></span> <span data-ttu-id="f5c45-139">ルックアップを使用すると、さまざまなシナリオに応じてさまざまな税勘定セットを管理できます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-139">With a lookup, you can maintain different sets of tax accounts for different scenarios.</span></span> <span data-ttu-id="f5c45-140">たとえば、税務登録番号が異なれば、税勘定も異なります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-140">For example, different tax registration numbers have different tax accounts.</span></span> |
+| <span data-ttu-id="f5c45-141">クレジット プール</span><span class="sxs-lookup"><span data-stu-id="f5c45-141">Credit pool</span></span> | <span data-ttu-id="f5c45-142">ルックアップ</span><span class="sxs-lookup"><span data-stu-id="f5c45-142">Lookup</span></span> | <span data-ttu-id="f5c45-143">ルックアップを使用して税の決済方法を決定します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-143">Use a lookup to determine how to settle tax.</span></span> <span data-ttu-id="f5c45-144">たとえば、さまざまな税務登録番号に基づいて税を決済できます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-144">For example, you can settle tax based on different tax registration numbers.</span></span> |
+| <span data-ttu-id="f5c45-145">税期間</span><span class="sxs-lookup"><span data-stu-id="f5c45-145">Tax period</span></span> | <span data-ttu-id="f5c45-146">ルックアップ</span><span class="sxs-lookup"><span data-stu-id="f5c45-146">Lookup</span></span> | <span data-ttu-id="f5c45-147">ルックアップを使用して、さまざまなシナリオに使用する税の期間を決定します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-147">Use a lookup to determine which tax period should be used for different scenarios.</span></span> |
+
+
+## <a name="condition"></a><span data-ttu-id="f5c45-148">条件</span><span class="sxs-lookup"><span data-stu-id="f5c45-148">Condition</span></span>
+<span data-ttu-id="f5c45-149">適用ルールが常に静的な場合は、条件を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-149">If the applicability rule is always static, you need to use a condition.</span></span> <span data-ttu-id="f5c45-150">たとえば、GST はインドの州内在庫移動には適用されません。</span><span class="sxs-lookup"><span data-stu-id="f5c45-150">For example, GST is not applicable for intra-state inventory transfer in India.</span></span>  
+
+<span data-ttu-id="f5c45-151">**デザイナー**ボタンをクリックして税 (インドの GST) を開きます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-151">Open Tax (India GST) by clicking the **Designer** button.</span></span> 
+
+![CGST 条件](media/gte-tax-document-applicability-cgst.png)
+
+<span data-ttu-id="f5c45-153">CGST、税コンポーネント CGST を選択し、鉛筆アイコンをクリックして、詳細な条件をチェックします。</span><span class="sxs-lookup"><span data-stu-id="f5c45-153">Select the tax component CGST, and click the pencil icon, to check the detailed condition.</span></span> 
+
+![CGST 条件の詳細](media/gte-tax-document-applicability-cgst-condition.png)
+
+<span data-ttu-id="f5c45-155">条件は、実際には、[電子申告](../../dev-itpro/analytics/general-electronic-reporting.md) 式です。</span><span class="sxs-lookup"><span data-stu-id="f5c45-155">The condition is actually an [Electronic Reporting](../../dev-itpro/analytics/general-electronic-reporting.md) expression.</span></span> <span data-ttu-id="f5c45-156">これは**データ ソース**の左側のフィールドと右側の**関数**で構成されています。</span><span class="sxs-lookup"><span data-stu-id="f5c45-156">It is comprised of the fields on the left in **Data source**, and **Functions** on the right.</span></span> <span data-ttu-id="f5c45-157">サポートされている関数の一覧については、[関数](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md#supported-functions) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f5c45-157">For a list of supported functions, see [Functions](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md#supported-functions).</span></span> 
+
+<span data-ttu-id="f5c45-158">次の条件は、*課税対象文書のタイプ*を「在庫転送オーダー受信」、「在庫転送オーダー出荷」、または「在庫転送オーダー」にすることはできないことを意味します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-158">The following condition means that *Taxable Document Type* cannot be "Invent transfer order receive", "Invent transfer order shipment", or "Invent transfer order".</span></span> <span data-ttu-id="f5c45-159">つまり HSN コードまたは SAC のいずれかを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-159">This also means that either HSN Code or SAC should be specified.</span></span>
+```
+AND(Header.'Taxable Document Type'<>"Invent transfer order receive",
+    Header.'Taxable Document Type'<>"Invent transfer order shipment",
+    Header.'Taxable Document Type'<>"Invent transfer order", 
+    OR(NOT(Header.Lines.'HSN Code'=""), NOT(Header.Lines.SAC=""))
+   )
+```
+### <a name="enable-gst-for-intra-state-inventory-transfer-order"></a><span data-ttu-id="f5c45-160">州内在庫移動オーダーに対して GST を有効にする</span><span class="sxs-lookup"><span data-stu-id="f5c45-160">Enable GST for intra-state inventory transfer order</span></span>
+<span data-ttu-id="f5c45-161">このシナリオでは、GST 登録番号が出荷元と出荷先の倉庫間で異なる場合、インド政府が州内在庫移動オーダーの GST の計算を要求するとします。</span><span class="sxs-lookup"><span data-stu-id="f5c45-161">In this scenario, suppose that the Indian government requires you to calculate GST for intra-state inventory transfer orders if the GST registration numbers are different between the ship from and ship to warehouse.</span></span> 
+
+#### <a name="structure-of-the-data-source-in-the-formula-designer"></a><span data-ttu-id="f5c45-162">フォーミュラ デザイナーのデータソースの構造</span><span class="sxs-lookup"><span data-stu-id="f5c45-162">Structure of the Data source in the formula designer</span></span>
+<span data-ttu-id="f5c45-163">フォーミュラ デザイナーの左端には、課税対象文書と税務書類に定義されているすべてのフィールドと、課税対象文書に定義されている参照モデルがあります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-163">On the leftmost side of the formula designer, you can find all the fields that are defined in the taxable document and tax document, and the reference model that is defined in the taxable document.</span></span>
+```
+Header
+└───Header fields
+└───Lines
+|   └───Lines field
+|       └───Tax types
+|           └───Tax components
+|               └───Tax measures
+Reference models
+```
+#### <a name="change-the-applicability-condition"></a><span data-ttu-id="f5c45-164">適用条件を変更する</span><span class="sxs-lookup"><span data-stu-id="f5c45-164">Change the applicability condition</span></span>
+<span data-ttu-id="f5c45-165">適用条件を変更するには**ヘッダー > 明細行 > GST 登録番号**および**ヘッダー > 明細行 > パーティ GST 登録番号**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-165">To change the applicability condition, go to **Header > Lines > GST Registration number** and **Header > Lines > Party GST Registration number**.</span></span> <span data-ttu-id="f5c45-166">これらは、倉庫からの出荷および倉庫への出荷の GST 登録番号を表します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-166">These represent the GST registration numbers for the ship from and ship to warehouse.</span></span> <span data-ttu-id="f5c45-167">条件は以下のように変更できます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-167">The condition can be changed to the following.</span></span>
+```
+AND(
+    OR(
+       AND(
+           OR(
+              Header.'Taxable Document Type'="Invent transfer order receive",
+              Header.'Taxable Document Type'="Invent transfer order shipment",
+              Header.'Taxable Document Type'="Invent transfer order"
+             ),
+             'GST Registration Number'<>'Party GST Registration Number'
+           ),
+       AND(
+           Header.'Taxable Document Type'<>"Invent transfer order receive",
+           Header.'Taxable Document Type'<>"Invent transfer order shipment",
+           Header.'Taxable Document Type'<>"Invent transfer order"
+          )
+      ), 
+    OR(NOT(Header.Lines.'HSN Code'=""), NOT(Header.Lines.SAC=""))
+   )
+```
+<span data-ttu-id="f5c45-168">データ ソースからフィールドを選択し、**データ ソースの追加**を使用して、式にフィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-168">Select the field from the data source, and use **Add data source** to add the field into the formula.</span></span> <span data-ttu-id="f5c45-169">「課税対象文書のタイプ」のように、名前に空白がある場合は、データ ソース フィールドの単一引用符を使用してください。</span><span class="sxs-lookup"><span data-stu-id="f5c45-169">Make sure to use single quotes for the data source field if there is an empty space in the name, like 'Taxable Document Type'.</span></span> <span data-ttu-id="f5c45-170">「在庫移動オーダー」のように空白がある場合は、値に対して二重引用符を使用します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-170">Use a double quote for the value if there is an empty space, like "Inventory transfer order".</span></span>
+
+<span data-ttu-id="f5c45-171">編集が完了した後に、**テスト**をクリックして式をテストします。</span><span class="sxs-lookup"><span data-stu-id="f5c45-171">Click **Test** to test your formula after you are done with editing.</span></span>
+
+## <a name="lookup"></a><span data-ttu-id="f5c45-172">ルックアップ</span><span class="sxs-lookup"><span data-stu-id="f5c45-172">Lookup</span></span>
+<span data-ttu-id="f5c45-173">静的適用ルールが複雑な場合、または動的適用ルールである場合は、ルックアップを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-173">If the static applicability rules are complex, or it is a dynamic applicability rule, you need to use a lookup.</span></span>
+
+### <a name="lookup-for-static-applicability-rules"></a><span data-ttu-id="f5c45-174">静的適用ルールのルックアップ</span><span class="sxs-lookup"><span data-stu-id="f5c45-174">Lookup for static applicability rules</span></span>
+<span data-ttu-id="f5c45-175">**GST** を選択して、**ルックアップ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5c45-175">Select **GST**, click **Lookups**.</span></span>
+
+![CGST 条件](media/gte-tax-document-applicability-static-lookups.png)
+
+<span data-ttu-id="f5c45-177">ルックアップは静的適用ルールと動的適用ルールの両方を処理できるので、**ソース タイプ**ドロップダウンリストはこの目的のためにあります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-177">Because a lookup can handle both static applicability rules and dynamic applicability rules, the **Source type** drop-down list is for this purpose.</span></span> <span data-ttu-id="f5c45-178">静的適用ルールには**コンフィギュレーション**を使用します。これは、ルックアップで使用されるデータがコンフィギュレーションから取得されることを意味します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-178">Use **Configuration** for the static applicability rule, which means that the data used in the lookup comes from the configuration.</span></span> <span data-ttu-id="f5c45-179">動的適用ルールには**ユーザー データ**を使用します。これは、ルックアップに使用されるデータが Finance and Operations などのランタイム環境から取得されることを意味します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-179">Use **User data** for the dynamic applicability rule, which means that the data used in the lookup comes from the runtime environment, such as Finance and Operations.</span></span>
+
+<span data-ttu-id="f5c45-180">ルックアップはマトリックスです。</span><span class="sxs-lookup"><span data-stu-id="f5c45-180">A lookup is a matrix.</span></span> <span data-ttu-id="f5c45-181">各行の関係は *OR* で、行内の各列の関係は *AND* です。</span><span class="sxs-lookup"><span data-stu-id="f5c45-181">The relation of each line is *OR*, and the relation of each column within the line is *AND*.</span></span> <span data-ttu-id="f5c45-182">セルの値が空の場合は、すべての値が条件を満たすことを意味します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-182">If the value of the cell is empty, it means that all of the values satisfy the condition.</span></span> 
+
+<span data-ttu-id="f5c45-183">上のスクリーンショットでは、税タイプ GST のルックアップのためのすべてのデータはコンフィギュレーションから来ているので、**ソース タイプ**は**コンフィギュレーション**です。</span><span class="sxs-lookup"><span data-stu-id="f5c45-183">In the screenshot above, all the data for the lookup of tax type GST comes from the configuration, so the **Source type** is **Configuration**.</span></span>
+
+<span data-ttu-id="f5c45-184">GST のルックアップを条件に変換する場合は次のように表示されます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-184">If you convert the lookup of GST into a condition, it will look like following.</span></span>
+``` 
+OR(
+    AND(Exempt=Exempt.No,
+        AND('Tax Direction' = "Sales tax receivable",
+            'GST Composition Scheme' = NoYes.No,
+            'Party GST Registration Number' <> ""
+        ),
+        AND('Tax Direction' = "Sales tax payable",
+            'Export Order' = NoYes.No,
+            'GST Registration Number' <> ""
+        ),
+        AND('Tax Direction' = "Sales tax receivable",
+            'GST Composition Scheme' = NoYes.No,
+            'GST Registration Number' <> ""
+        )
+    )
+)
+```
+### <a name="lookup-for-dynamic-applicability-rules"></a><span data-ttu-id="f5c45-185">動的適用ルールのルックアップ</span><span class="sxs-lookup"><span data-stu-id="f5c45-185">Lookup for dynamic applicability rules</span></span>
+<span data-ttu-id="f5c45-186">多くの適用ルールは、ランタイム データに依存します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-186">Many applicability rules depend on the runtime data.</span></span> <span data-ttu-id="f5c45-187">たとえば、一部の税コンポーネントは特定の商品またはサービスにのみ適用されるため、税務取引の種類が異なると税率も異なります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-187">For example, some tax components are only applicable for a certain good or service, so a different type of tax transaction results in a different tax rate.</span></span> 
+
+<span data-ttu-id="f5c45-188">**CESS** を選択して、**ルックアップ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5c45-188">Select **CESS**, click **Lookups**.</span></span>
+
+<span data-ttu-id="f5c45-189">インドでは、CESS は、特定の商品やサービスに適用されます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-189">In India, CESS is applicable for certain goods and services.</span></span> <span data-ttu-id="f5c45-190">Finance and Operations では、HSN は商品を表し、SAC はサービスを表すため、ルックアップでは HSN コードと SAC が使用されます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-190">In Finance and Operations, HSN represents goods, SAC represents services, so HSN Code and SAC are used in the lookup.</span></span> <span data-ttu-id="f5c45-191">HSN Code と SAC の実際の価は Finance and Operations から取得されるため、**ソース タイプ**は**ユーザー データ**です。</span><span class="sxs-lookup"><span data-stu-id="f5c45-191">The **Source type** is **User data**, because the real value of HSN Code and SAC come from Finance and Operations.</span></span>
+
+<span data-ttu-id="f5c45-192">ここでは、CGST レートを決定する方法を確認しましょう。</span><span class="sxs-lookup"><span data-stu-id="f5c45-192">Now, let's check how the CGST rate is determined.</span></span> <span data-ttu-id="f5c45-193">**CGST > レート**の順に選択し、**ルックアップ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5c45-193">Select **CGST > Rate**, click **Lookups**.</span></span>
+
+![CGST > レート ルックアップ](media/gte-tax-document-applicability-dynamic-lookups.png)
+
+<span data-ttu-id="f5c45-195">ランタイム データは税率を決定するために必要なので、システムは**ソース タイプ**と**ユーザー データ**の値を隠します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-195">Runtime data is required to determine the tax rate, so the system hides the **Source type**, and the **User data** value.</span></span>
+
+<span data-ttu-id="f5c45-196">商品やサービスが異なれば税率が異なるため、**HSN コード**および **SAC** があります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-196">Different goods and services result in different tax rates, so there are **HSN Code** and **SAC**.</span></span> <span data-ttu-id="f5c45-197">**パーティ GST 登録番号**および**税提示方法**は、GST 未登録の仕入先から購入するシナリオを処理するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-197">**Party GST Registration Number** and **Tax Direction** are used to handle the scenario of purchasing from an unregistered GST supplier.</span></span> <span data-ttu-id="f5c45-198">**トランザクション開始日**および**トランザクション終了日**は、期間ごとに異なる税率を処理するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-198">**Transaction Date from** and **Transaction Date to** are used to handle different tax rate per periods.</span></span>
+
+### <a name="enable-different-tax-rate-for-different-goods"></a><span data-ttu-id="f5c45-199">商品ごとに異なる税率を有効にする</span><span class="sxs-lookup"><span data-stu-id="f5c45-199">Enable different tax rate for different goods</span></span>
+<span data-ttu-id="f5c45-200">異なる商品が 1 つの HSN コードを共有できるため、ルックアップでこのシナリオを満たすことはできません。</span><span class="sxs-lookup"><span data-stu-id="f5c45-200">Different goods can share one HSN code, so the lookup cannot satisfy this scenario.</span></span> <span data-ttu-id="f5c45-201">これに対応するには、別のルックアップ列が必要です。</span><span class="sxs-lookup"><span data-stu-id="f5c45-201">A different lookup column is needed to handle this.</span></span>
+
+<span data-ttu-id="f5c45-202">**列**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5c45-202">Click **Columns**.</span></span> <span data-ttu-id="f5c45-203">左側に**使用可能な列**がすべてあります。</span><span class="sxs-lookup"><span data-stu-id="f5c45-203">On the left side, you can find all of the **Available columns**.</span></span> <span data-ttu-id="f5c45-204">構造は、参照モデルがないことを除けば、フォーミュラ デザイナーの**データ ソース**と同じです。</span><span class="sxs-lookup"><span data-stu-id="f5c45-204">The structure is the same as the **Data source** in the formula designer, except that there are no reference models.</span></span>
+
+![CGST > レート 変更 ルックアップ](media/gte-tax-document-applicability-change-lookups.png)
+
+<span data-ttu-id="f5c45-206">**使用可能な列**で**品目 ID**を選択し、商品を一意に決定します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-206">Select **Item ID** in **Available columns** to uniquely determine the goods.</span></span> <span data-ttu-id="f5c45-207">右矢印アイコンをクリックして、**選択された列**側に追加します。</span><span class="sxs-lookup"><span data-stu-id="f5c45-207">Click the right-arrow icon to add it to the **Selected columns** side.</span></span> <span data-ttu-id="f5c45-208">HSN が不要な場合は、**選択された列**で **HSN コード**を選択し、左矢印アイコンをクリックして削除できます。</span><span class="sxs-lookup"><span data-stu-id="f5c45-208">If HSN is not needed, you can select **HSN Code** in **Selected columns**, and click the left-arrow icon to remove it.</span></span> 

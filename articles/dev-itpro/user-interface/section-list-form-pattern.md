@@ -1,252 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="section-list-form-pattern.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>section-list-form-pattern.15811a.1488b4871bcd1d9e3c90eb85894bd80ef84fe064.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>1488b4871bcd1d9e3c90eb85894bd80ef84fe064</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\user-interface\section-list-form-pattern.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Form Part Section List form patterns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パート セクション リストのフォーム パターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This article provides information about the Form Part Section List form patterns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、フォーム パート セクション リストのフォーム パターンについての情報を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>These workspace-specific patterns have been developed to show filtered lists inside workspaces.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Form Part Section List form patterns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パート セクション リストのフォーム パターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This article provides information about the Form Part Section List form patterns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、フォーム パート セクション リストのフォーム パターンについての情報を提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>These workspace-specific patterns have been developed to show filtered lists inside workspaces.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">用途</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>The Form Part Section List form patterns are workspace-specific patterns that are used to show filtered lists.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パターン セクション リストのフォーム パターンは、フィルター処理されたリストの表示に使用されるワークスペース固有のパターンです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>The tabbed section of the workspace contains a set of vertical tabs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペースのタブ付きセクションには、一連の垂直タブが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Each tab contains a Form Part Control that points to a form that contains one of the Form Part Section List patterns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各タブはフォーム パーツ コントロールを含み、いずれかのフォーム パーツ セクション リスト パターンを含むフォームを指します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Two patterns are described in this article:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、2 つのパターンについて説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">**</bpt>Form Part Section List<ept id="p1">**</ept> – This is the default Section pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フォーム パターン セクション リスト<ept id="p1">**</ept> – これは、既定のセクション パターンです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>It allows for a single list of data, together with an optional header group that contains filters and/or actions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、フィルターやアクションを含む省略可能なヘッダー グループと共に、単一のデータのリストに使用できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Most content areas in the tabbed section of a workspace will use this pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペースのタブ付きセクションにある大部分のコンテンツの領域が、このパターンを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">**</bpt>Form Part Section List - Double<ept id="p1">**</ept> – This variant enables a second list of data to appear to the right of the primary list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フォーム パターン セクション リスト - ダブル<ept id="p1">**</ept> – このバリアントでは、データの 2 番目のリストをプライマリ リストの右側に表示できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>By default, the secondary list is hidden.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、セカンダリ リストは表示されません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>To show it, the user clicks a button on the Toolbar above the primary list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これを表示するには、プライマリ リストの上にあるツールバーのボタンをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Wireframe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワイヤーフレーム</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Form Part Section List</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パート セクション リスト</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>formPartSectionListWireframe<ept id="p1">](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>formPartSectionListWireframe<ept id="p1">](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Form Part Section List - Double</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パート セクション リスト - ダブル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>formPartSectionListDoubleWireframe<ept id="p1">](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>formPartSectionListDoubleWireframe<ept id="p1">](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Pattern changes for Microsoft Dynamics 365 for Finance and Operations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations 用のパターンの変更</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>These patterns did not exist for Microsoft Dynamics AX 2012.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのパターンは、Microsoft DynamicsAX 2012 では存在しませんでした。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Model</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Form Part Section List: High-level structure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パート セクション リスト: 高レベルの構造</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Design | Container</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン | コンテナー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source><bpt id="p1">*</bpt>Header (Group) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept> – This must use one of the <bpt id="p2">[</bpt>Filters and Toolbar<ept id="p2">](filters-toolbar-subpattern.md)</ept> subpatterns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>ヘッダー (グループ) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept> – これは、<bpt id="p2">[</bpt>フィルターおよびツールバー<ept id="p2">](filters-toolbar-subpattern.md)</ept>サブパターンのいずれかを使用する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Grid</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">*</bpt>GridDefaultAction (Button) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>GridDefaultAction (ボタン) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source><bpt id="p1">*</bpt>SeeMoreButton (Button) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>SeeMoreButton (ボタン) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Form Part Section List - Double: High-level structure</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パート セクション リスト - ダブル: 高レベルの構造</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Design | Container</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン | コンテナー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>PrimaryGroup (Group)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PrimaryGroup (グループ)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source><bpt id="p1">*</bpt>Header (Group) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept> – This must use one of the <bpt id="p2">[</bpt>Filters and Toolbar<ept id="p2">](filters-toolbar-subpattern.md)</ept> subpatterns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>ヘッダー (グループ) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept> – これは、<bpt id="p2">[</bpt>フィルターおよびツールバー<ept id="p2">](filters-toolbar-subpattern.md)</ept>サブパターンのいずれかを使用する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Grid</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">*</bpt>GridDefaultAction (Button) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>GridDefaultAction (ボタン) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source><bpt id="p1">*</bpt>SeeMoreButton (Button) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>SeeMoreButton (ボタン) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>SecondaryGroup (Group)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SecondaryGroup (グループ)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source><bpt id="p1">*</bpt>Header (Group) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept> – This must use one of the <bpt id="p2">[</bpt>Filters and Toolbar<ept id="p2">](filters-toolbar-subpattern.md)</ept> subpatterns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>ヘッダー (グループ) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept> – これは、<bpt id="p2">[</bpt>フィルターおよびツールバー<ept id="p2">](filters-toolbar-subpattern.md)</ept>サブパターンのいずれかを使用する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Grid</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source><bpt id="p1">*</bpt>GridDefaultAction (Button) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>GridDefaultAction (ボタン) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">*</bpt>SeeMoreButton (Button) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>SeeMoreButton (ボタン) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Core components</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コア コンポーネント</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Apply the appropriate Form Part Section List pattern on <bpt id="p1">**</bpt>Form.Design<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Form.Design<ept id="p1">**</ept> に適切なフォーム パターン セクション リストのパターンを適用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>In the backing Operational workspace form, set the Form Part control on the corresponding vertical tab to point to a menu item that points to this form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バッキング運用ワークスペース フォームで、対応する垂直タブのフォーム パーツ コントロールを設定して、このフォームを指定するメニュー項目を指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Related container patterns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関連するコンテナー パターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source><bpt id="p1">[</bpt>Section Tabbed List<ept id="p1">](section-tabbed-list-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション タブ付きリスト<ept id="p1">](section-tabbed-list-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source><bpt id="p1">[</bpt>Filters and Toolbar<ept id="p1">](filters-toolbar-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フィルターおよびツールバー<ept id="p1">](filters-toolbar-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>UX guidelines</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UX ガイドライン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Open the form in the browser, and walk through these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザーでフォームを開いて、これらの手順を確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">**</bpt>General form guidelines<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フォームの全般的なガイドライン<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Standard form guidelines have been consolidated into the <bpt id="p1">[</bpt>General Form Guidelines<ept id="p1">](general-form-guidelines.md)</ept> document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準フォーム ガイドラインは、<bpt id="p1">[</bpt>全般的なガイドライン<ept id="p1">](general-form-guidelines.md)</ept> ドキュメントに統合されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source><bpt id="p1">**</bpt>Pattern-specific guidelines<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>パターン固有のガイドライン<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>If a backing form exists, and especially if not all the records are shown in the list, a <bpt id="p1">**</bpt>See more<ept id="p1">**</ept> button should appear at the bottom of the list, so that the user can see the full list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バックアップ フォームが存在し、特にすべてのレコードが一覧表示されていない場合に、<bpt id="p1">**</bpt>詳細情報<ept id="p1">**</ept> ボタンは、ユーザーが完全に一覧表示できるように、一覧の下部に表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Up to two important filters exist above the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストの上には、最大 2 つの重要なフィルターが存在します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Up to three frequently used actions exist above the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストの上には、頻繁に使用される最大で 3 つのアクションがあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source><bpt id="p1">**</bpt>Grid<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>グリッド<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Lists are filtered down to an interesting, relatively small set of data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストは、興味のある、比較的小規模のデータまでフィルター処理されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>List grids have no more than three lines of data per row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストのグリッドには、行ごとに 3 つまでの明細行があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Card grids show no more than four fields (not including an image).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カード グリッドには 4 つのフィールドしか表示されません (イメージは含まれません)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Tabular grids show no more than eight fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表形式グリッドには、8 つを超えるフィールドが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source><bpt id="p1">**</bpt>Form Part Section List - Double guidelines<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フォーム パターン セクション リスト - ダブルのガイドライン<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>If both lists have actions and/or filters, both list must use the same <bpt id="p1">[</bpt>Filters and Toolbar<ept id="p1">](filters-toolbar-subpattern.md)</ept> subpattern (either the Stacked variant or the Inline variant).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">両方のリストにアクションやフィルターがある場合は、両方のリストには、同じ <bpt id="p1">[</bpt>フィルターおよびツールバー<ept id="p1">](filters-toolbar-subpattern.md)</ept> サブパターン (積み上げバリアントまたはインライン バリアント) がある必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Examples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Form Part Section List</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パート セクション リスト</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Form: <bpt id="p1">**</bpt>PurchOrderProcessReceiptsWorkspace<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>PurchOrdersWithDelayedReceiptsPart<ept id="p2">**</ept> (<bpt id="p3">**</bpt>All workspaces<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Purchase order receipt and follow-up<ept id="p4">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: <bpt id="p1">**</bpt>PurchOrderProcessReceiptsWorkspace<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>PurchOrdersWithDelayedReceiptsPart<ept id="p2">**</ept> (<bpt id="p3">**</bpt>すべてのワークスペース<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>発注書入庫とフォローアップ<ept id="p4">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>formPartSectionListExample<ept id="p1">](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>formPartSectionListExample<ept id="p1">](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Form Part Section List - Double</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パート セクション リスト - ダブル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Form: <bpt id="p1">**</bpt>BudgetTrackingWorkspace<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>BudgetTransactionPart<ept id="p2">**</ept> (<bpt id="p3">**</bpt>All workspaces<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Ledger budgets and forecasts<ept id="p4">**</ept>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: <bpt id="p1">**</bpt>BudgetTrackingWorkspace<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>BudgetTransactionPart<ept id="p2">**</ept> (<bpt id="p3">**</bpt>すべてのワークスペース<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>元帳予算および予測<ept id="p4">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>formPartSectionListDoubleExample<ept id="p1">](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>formPartSectionListDoubleExample<ept id="p1">](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Appendix</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">付録</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Frequently asked questions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">よく寄せられる質問</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>This section will have answers to frequently asked questions that are related to this guideline/pattern.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Open issues</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">未処理の問題</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>None</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">None</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: フォーム パート セクション リストのフォーム パターン
+description: この記事では、フォーム パート セクション リストのフォーム パターンについての情報を提供します。 これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。
+author: jasongre
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 29211
+ms.assetid: 05e02e22-6b71-45f2-bacd-5e3f8ea898fb
+ms.search.region: Global
+ms.author: jasongre
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1488b4871bcd1d9e3c90eb85894bd80ef84fe064
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560823"
+---
+# <a name="form-part-section-list-form-patterns"></a><span data-ttu-id="d2443-104">フォーム パート セクション リストのフォーム パターン</span><span class="sxs-lookup"><span data-stu-id="d2443-104">Form Part Section List form patterns</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="d2443-105">この記事では、フォーム パート セクション リストのフォーム パターンについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="d2443-105">This article provides information about the Form Part Section List form patterns.</span></span> <span data-ttu-id="d2443-106">これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。</span><span class="sxs-lookup"><span data-stu-id="d2443-106">These workspace-specific patterns have been developed to show filtered lists inside workspaces.</span></span>
+
+<a name="usage"></a><span data-ttu-id="d2443-107">用途</span><span class="sxs-lookup"><span data-stu-id="d2443-107">Usage</span></span>
+-----
+
+<span data-ttu-id="d2443-108">フォーム パターン セクション リストのフォーム パターンは、フィルター処理されたリストの表示に使用されるワークスペース固有のパターンです。</span><span class="sxs-lookup"><span data-stu-id="d2443-108">The Form Part Section List form patterns are workspace-specific patterns that are used to show filtered lists.</span></span> <span data-ttu-id="d2443-109">ワークスペースのタブ付きセクションには、一連の垂直タブが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d2443-109">The tabbed section of the workspace contains a set of vertical tabs.</span></span> <span data-ttu-id="d2443-110">各タブはフォーム パーツ コントロールを含み、いずれかのフォーム パーツ セクション リスト パターンを含むフォームを指します。</span><span class="sxs-lookup"><span data-stu-id="d2443-110">Each tab contains a Form Part Control that points to a form that contains one of the Form Part Section List patterns.</span></span> <span data-ttu-id="d2443-111">この記事では、2 つのパターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="d2443-111">Two patterns are described in this article:</span></span>
+
+-   <span data-ttu-id="d2443-112">**フォーム パターン セクション リスト** – これは、既定のセクション パターンです。</span><span class="sxs-lookup"><span data-stu-id="d2443-112">**Form Part Section List** – This is the default Section pattern.</span></span> <span data-ttu-id="d2443-113">これは、フィルターやアクションを含む省略可能なヘッダー グループと共に、単一のデータのリストに使用できます。</span><span class="sxs-lookup"><span data-stu-id="d2443-113">It allows for a single list of data, together with an optional header group that contains filters and/or actions.</span></span>  <span data-ttu-id="d2443-114">ワークスペースのタブ付きセクションにある大部分のコンテンツの領域が、このパターンを使用します。</span><span class="sxs-lookup"><span data-stu-id="d2443-114">Most content areas in the tabbed section of a workspace will use this pattern.</span></span>
+-   <span data-ttu-id="d2443-115">**フォーム パターン セクション リスト - ダブル** – このバリアントでは、データの 2 番目のリストをプライマリ リストの右側に表示できます。</span><span class="sxs-lookup"><span data-stu-id="d2443-115">**Form Part Section List - Double** – This variant enables a second list of data to appear to the right of the primary list.</span></span> <span data-ttu-id="d2443-116">既定では、セカンダリ リストは表示されません。</span><span class="sxs-lookup"><span data-stu-id="d2443-116">By default, the secondary list is hidden.</span></span> <span data-ttu-id="d2443-117">これを表示するには、プライマリ リストの上にあるツールバーのボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d2443-117">To show it, the user clicks a button on the Toolbar above the primary list.</span></span>
+
+## <a name="wireframe"></a><span data-ttu-id="d2443-118">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="d2443-118">Wireframe</span></span>
+### <a name="form-part-section-list"></a><span data-ttu-id="d2443-119">フォーム パート セクション リスト</span><span class="sxs-lookup"><span data-stu-id="d2443-119">Form Part Section List</span></span>
+
+<span data-ttu-id="d2443-120">[![formPartSectionListWireframe](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)</span><span class="sxs-lookup"><span data-stu-id="d2443-120">[![formPartSectionListWireframe](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)</span></span>
+
+### <a name="form-part-section-list---double"></a><span data-ttu-id="d2443-121">フォーム パート セクション リスト - ダブル</span><span class="sxs-lookup"><span data-stu-id="d2443-121">Form Part Section List - Double</span></span>
+
+<span data-ttu-id="d2443-122">[![formPartSectionListDoubleWireframe](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)</span><span class="sxs-lookup"><span data-stu-id="d2443-122">[![formPartSectionListDoubleWireframe](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)</span></span>
+
+## <a name="pattern-changes-for-microsoft-dynamics-365-for-finance-and-operations"></a><span data-ttu-id="d2443-123">Microsoft Dynamics 365 for Finance and Operations 用のパターンの変更</span><span class="sxs-lookup"><span data-stu-id="d2443-123">Pattern changes for Microsoft Dynamics 365 for Finance and Operations</span></span>
+<span data-ttu-id="d2443-124">これらのパターンは、Microsoft DynamicsAX 2012 では存在しませんでした。</span><span class="sxs-lookup"><span data-stu-id="d2443-124">These patterns did not exist for Microsoft Dynamics AX 2012.</span></span>
+
+## <a name="model"></a><span data-ttu-id="d2443-125">モデル</span><span class="sxs-lookup"><span data-stu-id="d2443-125">Model</span></span>
+### <a name="form-part-section-list-high-level-structure"></a><span data-ttu-id="d2443-126">フォーム パート セクション リスト: 高レベルの構造</span><span class="sxs-lookup"><span data-stu-id="d2443-126">Form Part Section List: High-level structure</span></span>
+
+- <span data-ttu-id="d2443-127">デザイン | コンテナー</span><span class="sxs-lookup"><span data-stu-id="d2443-127">Design | Container</span></span>
+
+    - <span data-ttu-id="d2443-128">*ヘッダー (グループ) \[オプション\]* – これは、[フィルターおよびツールバー](filters-toolbar-subpattern.md)サブパターンのいずれかを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d2443-128">*Header (Group) \[Optional\]* – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.</span></span>
+    - <span data-ttu-id="d2443-129">グリッド</span><span class="sxs-lookup"><span data-stu-id="d2443-129">Grid</span></span>
+    - <span data-ttu-id="d2443-130">*GridDefaultAction (ボタン) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="d2443-130">*GridDefaultAction (Button) \[Optional\]*</span></span>
+    - <span data-ttu-id="d2443-131">*SeeMoreButton (ボタン) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="d2443-131">*SeeMoreButton (Button) \[Optional\]*</span></span>
+
+### <a name="form-part-section-list---double-high-level-structure"></a><span data-ttu-id="d2443-132">フォーム パート セクション リスト - ダブル: 高レベルの構造</span><span class="sxs-lookup"><span data-stu-id="d2443-132">Form Part Section List - Double: High-level structure</span></span>
+
+- <span data-ttu-id="d2443-133">デザイン | コンテナー</span><span class="sxs-lookup"><span data-stu-id="d2443-133">Design | Container</span></span>
+
+    - <span data-ttu-id="d2443-134">PrimaryGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="d2443-134">PrimaryGroup (Group)</span></span>
+
+        - <span data-ttu-id="d2443-135">*ヘッダー (グループ) \[オプション\]* – これは、[フィルターおよびツールバー](filters-toolbar-subpattern.md)サブパターンのいずれかを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d2443-135">*Header (Group) \[Optional\]* – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.</span></span>
+        - <span data-ttu-id="d2443-136">グリッド</span><span class="sxs-lookup"><span data-stu-id="d2443-136">Grid</span></span>
+        - <span data-ttu-id="d2443-137">*GridDefaultAction (ボタン) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="d2443-137">*GridDefaultAction (Button) \[Optional\]*</span></span>
+        - <span data-ttu-id="d2443-138">*SeeMoreButton (ボタン) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="d2443-138">*SeeMoreButton (Button) \[Optional\]*</span></span>
+
+    - <span data-ttu-id="d2443-139">SecondaryGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="d2443-139">SecondaryGroup (Group)</span></span>
+
+        - <span data-ttu-id="d2443-140">*ヘッダー (グループ) \[オプション\]* – これは、[フィルターおよびツールバー](filters-toolbar-subpattern.md)サブパターンのいずれかを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d2443-140">*Header (Group) \[Optional\]* – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.</span></span>
+        - <span data-ttu-id="d2443-141">グリッド</span><span class="sxs-lookup"><span data-stu-id="d2443-141">Grid</span></span>
+        - <span data-ttu-id="d2443-142">*GridDefaultAction (ボタン) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="d2443-142">*GridDefaultAction (Button) \[Optional\]*</span></span>
+        - <span data-ttu-id="d2443-143">*SeeMoreButton (ボタン) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="d2443-143">*SeeMoreButton (Button) \[Optional\]*</span></span>
+
+### <a name="core-components"></a><span data-ttu-id="d2443-144">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="d2443-144">Core components</span></span>
+
+1.  <span data-ttu-id="d2443-145">**Form.Design** に適切なフォーム パターン セクション リストのパターンを適用します。</span><span class="sxs-lookup"><span data-stu-id="d2443-145">Apply the appropriate Form Part Section List pattern on **Form.Design**.</span></span>
+2.  <span data-ttu-id="d2443-146">バッキング運用ワークスペース フォームで、対応する垂直タブのフォーム パーツ コントロールを設定して、このフォームを指定するメニュー項目を指定します。</span><span class="sxs-lookup"><span data-stu-id="d2443-146">In the backing Operational workspace form, set the Form Part control on the corresponding vertical tab to point to a menu item that points to this form.</span></span>
+
+### <a name="related-container-patterns"></a><span data-ttu-id="d2443-147">関連するコンテナー パターン</span><span class="sxs-lookup"><span data-stu-id="d2443-147">Related container patterns</span></span>
+
+-   [<span data-ttu-id="d2443-148">セクション タブ付きリスト</span><span class="sxs-lookup"><span data-stu-id="d2443-148">Section Tabbed List</span></span>](section-tabbed-list-subpattern.md)
+-   [<span data-ttu-id="d2443-149">フィルターおよびツールバー</span><span class="sxs-lookup"><span data-stu-id="d2443-149">Filters and Toolbar</span></span>](filters-toolbar-subpattern.md)
+
+## <a name="ux-guidelines"></a><span data-ttu-id="d2443-150">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="d2443-150">UX guidelines</span></span>
+<span data-ttu-id="d2443-151">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="d2443-151">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="d2443-152">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="d2443-152">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="d2443-153">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="d2443-153">Open the form in the browser, and walk through these steps.</span></span>
+
+-   <span data-ttu-id="d2443-154">**フォームの全般的なガイドライン**</span><span class="sxs-lookup"><span data-stu-id="d2443-154">**General form guidelines**</span></span>
+    -   <span data-ttu-id="d2443-155">標準フォーム ガイドラインは、[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="d2443-155">Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.</span></span>
+-   <span data-ttu-id="d2443-156">**パターン固有のガイドライン**</span><span class="sxs-lookup"><span data-stu-id="d2443-156">**Pattern-specific guidelines**</span></span>
+    -   <span data-ttu-id="d2443-157">バックアップ フォームが存在し、特にすべてのレコードが一覧表示されていない場合に、**詳細情報** ボタンは、ユーザーが完全に一覧表示できるように、一覧の下部に表示されます。</span><span class="sxs-lookup"><span data-stu-id="d2443-157">If a backing form exists, and especially if not all the records are shown in the list, a **See more** button should appear at the bottom of the list, so that the user can see the full list.</span></span>
+    -   <span data-ttu-id="d2443-158">リストの上には、最大 2 つの重要なフィルターが存在します。</span><span class="sxs-lookup"><span data-stu-id="d2443-158">Up to two important filters exist above the list.</span></span>
+    -   <span data-ttu-id="d2443-159">リストの上には、頻繁に使用される最大で 3 つのアクションがあります。</span><span class="sxs-lookup"><span data-stu-id="d2443-159">Up to three frequently used actions exist above the list.</span></span>
+-   <span data-ttu-id="d2443-160">**グリッド**</span><span class="sxs-lookup"><span data-stu-id="d2443-160">**Grid**</span></span>
+    -   <span data-ttu-id="d2443-161">リストは、興味のある、比較的小規模のデータまでフィルター処理されます。</span><span class="sxs-lookup"><span data-stu-id="d2443-161">Lists are filtered down to an interesting, relatively small set of data.</span></span>
+    -   <span data-ttu-id="d2443-162">リストのグリッドには、行ごとに 3 つまでの明細行があります。</span><span class="sxs-lookup"><span data-stu-id="d2443-162">List grids have no more than three lines of data per row.</span></span>
+    -   <span data-ttu-id="d2443-163">カード グリッドには 4 つのフィールドしか表示されません (イメージは含まれません)。</span><span class="sxs-lookup"><span data-stu-id="d2443-163">Card grids show no more than four fields (not including an image).</span></span>
+    -   <span data-ttu-id="d2443-164">表形式グリッドには、8 つを超えるフィールドが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d2443-164">Tabular grids show no more than eight fields.</span></span>
+-   <span data-ttu-id="d2443-165">**フォーム パターン セクション リスト - ダブルのガイドライン**</span><span class="sxs-lookup"><span data-stu-id="d2443-165">**Form Part Section List - Double guidelines**</span></span>
+    -   <span data-ttu-id="d2443-166">両方のリストにアクションやフィルターがある場合は、両方のリストには、同じ [フィルターおよびツールバー](filters-toolbar-subpattern.md) サブパターン (積み上げバリアントまたはインライン バリアント) がある必要があります。</span><span class="sxs-lookup"><span data-stu-id="d2443-166">If both lists have actions and/or filters, both list must use the same [Filters and Toolbar](filters-toolbar-subpattern.md) subpattern (either the Stacked variant or the Inline variant).</span></span>
+
+## <a name="examples"></a><span data-ttu-id="d2443-167">例</span><span class="sxs-lookup"><span data-stu-id="d2443-167">Examples</span></span>
+### <a name="form-part-section-list"></a><span data-ttu-id="d2443-168">フォーム パート セクション リスト</span><span class="sxs-lookup"><span data-stu-id="d2443-168">Form Part Section List</span></span>
+
+<span data-ttu-id="d2443-169">フォーム: **PurchOrderProcessReceiptsWorkspace** &gt; **PurchOrdersWithDelayedReceiptsPart** (**すべてのワークスペース** &gt; **発注書入庫とフォローアップ**)</span><span class="sxs-lookup"><span data-stu-id="d2443-169">Form: **PurchOrderProcessReceiptsWorkspace** &gt; **PurchOrdersWithDelayedReceiptsPart** (**All workspaces** &gt; **Purchase order receipt and follow-up**)</span></span> 
+
+<span data-ttu-id="d2443-170">[![formPartSectionListExample](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)</span><span class="sxs-lookup"><span data-stu-id="d2443-170">[![formPartSectionListExample](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)</span></span>
+
+### <a name="form-part-section-list---double"></a><span data-ttu-id="d2443-171">フォーム パート セクション リスト - ダブル</span><span class="sxs-lookup"><span data-stu-id="d2443-171">Form Part Section List - Double</span></span>
+
+<span data-ttu-id="d2443-172">フォーム: **BudgetTrackingWorkspace** &gt; **BudgetTransactionPart** (**すべてのワークスペース** &gt; **元帳予算および予測**)</span><span class="sxs-lookup"><span data-stu-id="d2443-172">Form: **BudgetTrackingWorkspace** &gt; **BudgetTransactionPart** (**All workspaces** &gt; **Ledger budgets and forecasts**)</span></span> 
+
+<span data-ttu-id="d2443-173">[![formPartSectionListDoubleExample](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)</span><span class="sxs-lookup"><span data-stu-id="d2443-173">[![formPartSectionListDoubleExample](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)</span></span>
+
+## <a name="appendix"></a><span data-ttu-id="d2443-174">付録</span><span class="sxs-lookup"><span data-stu-id="d2443-174">Appendix</span></span>
+### <a name="frequently-asked-questions"></a><span data-ttu-id="d2443-175">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="d2443-175">Frequently asked questions</span></span>
+
+<span data-ttu-id="d2443-176">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="d2443-176">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
+
+### <a name="open-issues"></a><span data-ttu-id="d2443-177">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="d2443-177">Open issues</span></span>
+
+<span data-ttu-id="d2443-178">None</span><span class="sxs-lookup"><span data-stu-id="d2443-178">None</span></span>

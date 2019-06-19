@@ -1,192 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="copy-customer.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>copy-customer.99fcbb.7a1e6c6e3a995ad745522d58960e850d72c2ee57.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>7a1e6c6e3a995ad745522d58960e850d72c2ee57</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\accounts-receivable\copy-customer.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Copy customers by using shared number sequences</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共有番号順序を使用して、顧客をコピーする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains how to use shared number sequences to copy a customer to another legal entity but keep the same customer ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、同じ顧客 ID を維持したまま共有番号順序を使用して顧客を別の法人にコピーする方法について、説明します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Copy customers by using shared number sequences</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共有番号順序を使用して、顧客をコピーする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>You can use shared number sequences to assign customer IDs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共有番号順序を使用して、顧客 ID を割り当てることができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Shared number sequences also let you copy customers from one legal entity to another legal entity but use the same customer IDs in both legal entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、共有番号順序を使用して、同じ顧客 ID を維持したまま、法人間で顧客をコピーすることもできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Setup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セットアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The feature is activated when you use a shared number sequence to assign customer IDs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この機能が有効化されるのは、共有番号順序を使用して顧客 ID を割り当てる場合です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>You must use the same number sequence in every legal entity that you want to copy a customer to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客のコピー先となるすべての法人内で、同じ番号順序を使用する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>You change the customer number sequence on the <bpt id="p1">**</bpt>Accounts receivable parameters<ept id="p1">**</ept> page for each legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客番号順序を変更するには、各法人に対する <bpt id="p1">**</bpt>売掛金パラメーター<ept id="p1">**</ept> ページを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Select <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Parameters<ept id="p2">**</ept>, and then select the <bpt id="p3">**</bpt>Number sequences<ept id="p3">**</ept> tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>売掛金<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>パラメーター<ept id="p2">**</ept> を選択し、<bpt id="p3">**</bpt>番号順序<ept id="p3">**</ept> タブを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>You can also set up customer number sequences for each customer group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各顧客グループに対して顧客番号順序を指定することもできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>These number sequences must also be shared.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、これらの番号順序を共有する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>The number sequence for a customer group is used first.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客グループに対する番号順序が最初に使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>If no number sequence is specified for a customer group, the number sequence that is specified on the <bpt id="p1">**</bpt>Accounts receivable parameters<ept id="p1">**</ept> page is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客グループに対して番号順序を指定しない場合、<bpt id="p1">**</bpt>売掛金パラメーター<ept id="p1">**</ept> ページで指定した番号順序が使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>You can also copy customers between legal entities if you use manual customer IDs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手動顧客 ID を使用する場合、法人間で顧客をコピーすることもできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>However, if you try to copy a customer to a legal entity where the customer ID already exists, the copy process won't be started.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、顧客 ID が既に存在している法人に顧客をコピーしようとした場合、コピー プロセスは開始しません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Copy a customer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客をコピーする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>To copy a customer, select <bpt id="p1">**</bpt>New<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>All customers<ept id="p2">**</ept> list page to open the <bpt id="p3">**</bpt>Create customer<ept id="p3">**</ept> dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客をコピーするには、<bpt id="p2">**</bpt>すべての顧客<ept id="p2">**</ept> リスト ページで <bpt id="p1">**</bpt>新規<ept id="p1">**</ept> を選択し、<bpt id="p3">**</bpt>顧客を作成<ept id="p3">**</ept> ダイアログ ボックスを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Notice that the new customer ID isn't assigned immediately.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新規顧客 ID は、すぐには割り当てられません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この挙動は、Microsoft Dynamics 365 for Finance and Operations の旧バージョンとは異なります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Because you haven't yet selected the customer group, the system can't determine the correct number sequence to use.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客グループが選択されていないため、使用する正しい番号順序を決定できません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Additionally, it can't determine whether you're trying to create a new customer or copy a customer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、顧客を新規に作成しようとしているのか、それとも顧客をコピーしようとしているのか、を判断できません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Therefore, the customer ID isn't assigned until you select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> at the bottom of the dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、ダイアログ ボックスの下端にある <bpt id="p1">**</bpt>保存<ept id="p1">**</ept> を選択するまで、顧客 ID は割り当てられません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>If you're creating a new customer, you can continue to fill in all the fields as you usually do.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客を新規に作成する場合、今までどおり、すべてのフィールドの値を指定できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>When you've finished, and you select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>, you will see that the customer ID was assigned automatically.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド値をすべて指定して <bpt id="p1">**</bpt>保存<ept id="p1">**</ept> を選択すると、顧客 ID が自動的に割り当てられます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Alternatively, for manual number sequences, you will see that your manual customer ID was used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手動番号順序の場合は、手動顧客 ID が使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>To copy a customer, in the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, enter one or more characters that represent the customer that you're looking for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>名前<ept id="p1">**</ept> フィールドに顧客をコピーするには、探している顧客を表す 1 つ以上の文字を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>A search dialog box shows a list of parties that might represent the customer that you're looking for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検索ダイアログ ボックスに、探している顧客の可能性がある関係者が一覧表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>When you select one of the parties, additional information appears on the right side of the dialog box:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">いずれかの関係者を選択すると、ダイアログ ボックスの右部に詳細情報が表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>The <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab shows the party's phone number and address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>全般<ept id="p1">**</ept> タブ ページには、その関係者の電話番号と住所が表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>The <bpt id="p1">**</bpt>Roles<ept id="p1">**</ept> tab shows the roles that the selected party can have and the legal entity where it has each role.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ロール<ept id="p1">**</ept> タブ ページには、その関係者に割り当て可能なロール、および、どの法人内で各ロールがその関係者に割り当てられるか、が表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">**</bpt>Tax registration ID<ept id="p1">**</ept> tab shows the tax registration IDs that are assigned to the party.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>税登録 ID<ept id="p1">**</ept> タブ ページには、その関係者に割り当てられている税登録 ID が表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>You can copy a party only if it has a customer role, and if it has that role in a legal entity that isn't the current legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係者をコピーできるのは、その関係者に顧客ロールが割り当てられている場合、および、現在の法人以外の法人内でその関係者にロールが割り当てられている場合だけです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>When you find a party that meets these criteria, follow these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの条件を満たす関係者を探すには、次のステップを実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>A <bpt id="p1">**</bpt>Copy customer<ept id="p1">**</ept> option appears.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>顧客をコピー<ept id="p1">**</ept> オプションが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>By default, this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオプションの既定値は <bpt id="p1">**</bpt>いいえ<ept id="p1">**</ept> です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>To copy the customer to the current legal entity, set the option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客を現在の法人にコピーするには、このオプションで <bpt id="p1">**</bpt>はい<ept id="p1">**</ept> を指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>A <bpt id="p1">**</bpt>Legal entity<ept id="p1">**</ept> field appears.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>法人<ept id="p1">**</ept> フィールドが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Select the legal entity to copy the customer from.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客のコピー元となる法人を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>If the customer exists in only one legal entity, the field is set to that legal entity by default.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客が 1 つの法人内にのみ存在している場合、このフィールドの既定値はその法人になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Select <bpt id="p1">**</bpt>Select<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>選択<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>The new customer is created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客が新規に作成されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Validation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">妥当性確認</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>When you copy a customer, the system tries to save the new customer information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客をコピーする際、新規顧客情報の保存が試みられます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Validations are run to verify that the data that was copied is good.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">妥当性確認処理が実行され、コピーされたデータが正しいかどうかが検証されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>You receive an error message for every validation that fails.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">妥当性確認処理で不合格になった場合、エラー メッセージが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>The error messages explain what information must be updated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー メッセージの中で、更新する必要のある情報について説明されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>The copy of the customer can't be saved until you fix all the validation errors.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての妥当性確認エラーを修正するまで、顧客のコピーを保存することはできません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Copy a customer by using tax exempt number search feature</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">課税控除番号検索機能を使用して顧客をコピーする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>You can also copy customers by using the Tax exempt number search feature that is in the <bpt id="p1">**</bpt>Registration<ept id="p1">**</ept> group on the <bpt id="p2">**</bpt>Customer<ept id="p2">**</ept> tab on the Action Pane of the <bpt id="p3">**</bpt>All customers<ept id="p3">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p3">**</bpt>すべての顧客<ept id="p3">**</ept> ページのアクション ペインの <bpt id="p2">**</bpt>顧客<ept id="p2">**</ept> タブで、<bpt id="p1">**</bpt>登録<ept id="p1">**</ept> グループにある課税控除番号検索機能を利用して、顧客をコピーすることもできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The <bpt id="p1">**</bpt>Tax exempt number search<ept id="p1">**</ept> dialog box that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>課税控除番号検索<ept id="p1">**</ept> ダイアログ ボックスが開き、課税控除番号、顧客 ID、顧客名、および、どの法人内で課税控除 ID が使用されるか、が表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>You can copy a customer only if it's in a legal entity that isn't the current legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客をコピーできるのは、現在の法人でない法人内に存在している場合だけです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>After you select a customer that meets this criterion, follow these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この条件を満たす顧客を選択したら、次ステップを実行します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>A <bpt id="p1">**</bpt>Copy customer<ept id="p1">**</ept> option appears.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>顧客をコピー<ept id="p1">**</ept> オプションが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>By default, this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオプションの既定値は <bpt id="p1">**</bpt>いいえ<ept id="p1">**</ept> です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>To copy the customer to the current legal entity, set the option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客を現在の法人にコピーするには、このオプションで <bpt id="p1">**</bpt>はい<ept id="p1">**</ept> を指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Select <bpt id="p1">**</bpt>Select<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>選択<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>The new customer is created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客が新規に作成されます。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: 共有番号順序を使用して、顧客をコピーする
+description: このトピックでは、同じ顧客 ID を維持したまま共有番号順序を使用して顧客を別の法人にコピーする方法について、説明します。
+author: mikefalkner
+manager: aolson
+ms.date: 08/31/2018
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustTable
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: mikefalkner
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556275"
+---
+# <a name="copy-customers-by-using-shared-number-sequences"></a><span data-ttu-id="627e7-103">共有番号順序を使用して、顧客をコピーする</span><span class="sxs-lookup"><span data-stu-id="627e7-103">Copy customers by using shared number sequences</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="627e7-104">共有番号順序を使用して、顧客 ID を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="627e7-104">You can use shared number sequences to assign customer IDs.</span></span> <span data-ttu-id="627e7-105">また、共有番号順序を使用して、同じ顧客 ID を維持したまま、法人間で顧客をコピーすることもできます。</span><span class="sxs-lookup"><span data-stu-id="627e7-105">Shared number sequences also let you copy customers from one legal entity to another legal entity but use the same customer IDs in both legal entities.</span></span>
+
+## <a name="setup"></a><span data-ttu-id="627e7-106">セットアップ</span><span class="sxs-lookup"><span data-stu-id="627e7-106">Setup</span></span>
+
+<span data-ttu-id="627e7-107">この機能が有効化されるのは、共有番号順序を使用して顧客 ID を割り当てる場合です。</span><span class="sxs-lookup"><span data-stu-id="627e7-107">The feature is activated when you use a shared number sequence to assign customer IDs.</span></span> <span data-ttu-id="627e7-108">顧客のコピー先となるすべての法人内で、同じ番号順序を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="627e7-108">You must use the same number sequence in every legal entity that you want to copy a customer to.</span></span> <span data-ttu-id="627e7-109">顧客番号順序を変更するには、各法人に対する **売掛金パラメーター** ページを使用します。</span><span class="sxs-lookup"><span data-stu-id="627e7-109">You change the customer number sequence on the **Accounts receivable parameters** page for each legal entity.</span></span> <span data-ttu-id="627e7-110">**売掛金** \> **パラメーター** を選択し、**番号順序** タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="627e7-110">Select **Accounts receivable** \> **Parameters**, and then select the **Number sequences** tab.</span></span>
+
+<span data-ttu-id="627e7-111">各顧客グループに対して顧客番号順序を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="627e7-111">You can also set up customer number sequences for each customer group.</span></span> <span data-ttu-id="627e7-112">また、これらの番号順序を共有する必要があります。</span><span class="sxs-lookup"><span data-stu-id="627e7-112">These number sequences must also be shared.</span></span> <span data-ttu-id="627e7-113">顧客グループに対する番号順序が最初に使用されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-113">The number sequence for a customer group is used first.</span></span> <span data-ttu-id="627e7-114">顧客グループに対して番号順序を指定しない場合、**売掛金パラメーター** ページで指定した番号順序が使用されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-114">If no number sequence is specified for a customer group, the number sequence that is specified on the **Accounts receivable parameters** page is used.</span></span>
+
+<span data-ttu-id="627e7-115">手動顧客 ID を使用する場合、法人間で顧客をコピーすることもできます。</span><span class="sxs-lookup"><span data-stu-id="627e7-115">You can also copy customers between legal entities if you use manual customer IDs.</span></span> <span data-ttu-id="627e7-116">ただし、顧客 ID が既に存在している法人に顧客をコピーしようとした場合、コピー プロセスは開始しません。</span><span class="sxs-lookup"><span data-stu-id="627e7-116">However, if you try to copy a customer to a legal entity where the customer ID already exists, the copy process won't be started.</span></span>
+
+## <a name="copy-a-customer"></a><span data-ttu-id="627e7-117">顧客をコピーする</span><span class="sxs-lookup"><span data-stu-id="627e7-117">Copy a customer</span></span>
+
+<span data-ttu-id="627e7-118">顧客をコピーするには、**すべての顧客** リスト ページで **新規** を選択し、**顧客を作成** ダイアログ ボックスを開きます。</span><span class="sxs-lookup"><span data-stu-id="627e7-118">To copy a customer, select **New** on the **All customers** list page to open the **Create customer** dialog box.</span></span> <span data-ttu-id="627e7-119">新規顧客 ID は、すぐには割り当てられません。</span><span class="sxs-lookup"><span data-stu-id="627e7-119">Notice that the new customer ID isn't assigned immediately.</span></span> <span data-ttu-id="627e7-120">この挙動は、Microsoft Dynamics 365 for Finance and Operations の旧バージョンとは異なります。</span><span class="sxs-lookup"><span data-stu-id="627e7-120">This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="627e7-121">顧客グループが選択されていないため、使用する正しい番号順序を決定できません。</span><span class="sxs-lookup"><span data-stu-id="627e7-121">Because you haven't yet selected the customer group, the system can't determine the correct number sequence to use.</span></span> <span data-ttu-id="627e7-122">また、顧客を新規に作成しようとしているのか、それとも顧客をコピーしようとしているのか、を判断できません。</span><span class="sxs-lookup"><span data-stu-id="627e7-122">Additionally, it can't determine whether you're trying to create a new customer or copy a customer.</span></span> <span data-ttu-id="627e7-123">したがって、ダイアログ ボックスの下端にある **保存** を選択するまで、顧客 ID は割り当てられません。</span><span class="sxs-lookup"><span data-stu-id="627e7-123">Therefore, the customer ID isn't assigned until you select **Save** at the bottom of the dialog box.</span></span>
+
+<span data-ttu-id="627e7-124">顧客を新規に作成する場合、今までどおり、すべてのフィールドの値を指定できます。</span><span class="sxs-lookup"><span data-stu-id="627e7-124">If you're creating a new customer, you can continue to fill in all the fields as you usually do.</span></span> <span data-ttu-id="627e7-125">フィールド値をすべて指定して **保存** を選択すると、顧客 ID が自動的に割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="627e7-125">When you've finished, and you select **Save**, you will see that the customer ID was assigned automatically.</span></span> <span data-ttu-id="627e7-126">手動番号順序の場合は、手動顧客 ID が使用されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-126">Alternatively, for manual number sequences, you will see that your manual customer ID was used.</span></span>
+
+<span data-ttu-id="627e7-127">**名前** フィールドに顧客をコピーするには、探している顧客を表す 1 つ以上の文字を入力します。</span><span class="sxs-lookup"><span data-stu-id="627e7-127">To copy a customer, in the **Name** field, enter one or more characters that represent the customer that you're looking for.</span></span> <span data-ttu-id="627e7-128">検索ダイアログ ボックスに、探している顧客の可能性がある関係者が一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-128">A search dialog box shows a list of parties that might represent the customer that you're looking for.</span></span> <span data-ttu-id="627e7-129">いずれかの関係者を選択すると、ダイアログ ボックスの右部に詳細情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-129">When you select one of the parties, additional information appears on the right side of the dialog box:</span></span>
+
+- <span data-ttu-id="627e7-130">**全般** タブ ページには、その関係者の電話番号と住所が表示されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-130">The **General** tab shows the party's phone number and address.</span></span>
+- <span data-ttu-id="627e7-131">**ロール** タブ ページには、その関係者に割り当て可能なロール、および、どの法人内で各ロールがその関係者に割り当てられるか、が表示されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-131">The **Roles** tab shows the roles that the selected party can have and the legal entity where it has each role.</span></span>
+- <span data-ttu-id="627e7-132">**税登録 ID** タブ ページには、その関係者に割り当てられている税登録 ID が表示されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-132">**Tax registration ID** tab shows the tax registration IDs that are assigned to the party.</span></span>
+
+<span data-ttu-id="627e7-133">関係者をコピーできるのは、その関係者に顧客ロールが割り当てられている場合、および、現在の法人以外の法人内でその関係者にロールが割り当てられている場合だけです。</span><span class="sxs-lookup"><span data-stu-id="627e7-133">You can copy a party only if it has a customer role, and if it has that role in a legal entity that isn't the current legal entity.</span></span> <span data-ttu-id="627e7-134">これらの条件を満たす関係者を探すには、次のステップを実行します。</span><span class="sxs-lookup"><span data-stu-id="627e7-134">When you find a party that meets these criteria, follow these steps.</span></span>
+
+1. <span data-ttu-id="627e7-135">**顧客をコピー** オプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-135">A **Copy customer** option appears.</span></span> <span data-ttu-id="627e7-136">このオプションの既定値は **いいえ** です。</span><span class="sxs-lookup"><span data-stu-id="627e7-136">By default, this option is set to **No**.</span></span> <span data-ttu-id="627e7-137">顧客を現在の法人にコピーするには、このオプションで **はい** を指定します。</span><span class="sxs-lookup"><span data-stu-id="627e7-137">To copy the customer to the current legal entity, set the option to **Yes**.</span></span> 
+2. <span data-ttu-id="627e7-138">**法人** フィールドが表示されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-138">A **Legal entity** field appears.</span></span> <span data-ttu-id="627e7-139">顧客のコピー元となる法人を選択します。</span><span class="sxs-lookup"><span data-stu-id="627e7-139">Select the legal entity to copy the customer from.</span></span> <span data-ttu-id="627e7-140">顧客が 1 つの法人内にのみ存在している場合、このフィールドの既定値はその法人になります。</span><span class="sxs-lookup"><span data-stu-id="627e7-140">If the customer exists in only one legal entity, the field is set to that legal entity by default.</span></span>
+3. <span data-ttu-id="627e7-141">**選択** を選択します。</span><span class="sxs-lookup"><span data-stu-id="627e7-141">Select **Select**.</span></span> <span data-ttu-id="627e7-142">顧客が新規に作成されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-142">The new customer is created.</span></span>
+
+## <a name="validation"></a><span data-ttu-id="627e7-143">妥当性確認</span><span class="sxs-lookup"><span data-stu-id="627e7-143">Validation</span></span>
+
+<span data-ttu-id="627e7-144">顧客をコピーする際、新規顧客情報の保存が試みられます。</span><span class="sxs-lookup"><span data-stu-id="627e7-144">When you copy a customer, the system tries to save the new customer information.</span></span> <span data-ttu-id="627e7-145">妥当性確認処理が実行され、コピーされたデータが正しいかどうかが検証されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-145">Validations are run to verify that the data that was copied is good.</span></span> <span data-ttu-id="627e7-146">妥当性確認処理で不合格になった場合、エラー メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-146">You receive an error message for every validation that fails.</span></span> <span data-ttu-id="627e7-147">エラー メッセージの中で、更新する必要のある情報について説明されています。</span><span class="sxs-lookup"><span data-stu-id="627e7-147">The error messages explain what information must be updated.</span></span> <span data-ttu-id="627e7-148">すべての妥当性確認エラーを修正するまで、顧客のコピーを保存することはできません。</span><span class="sxs-lookup"><span data-stu-id="627e7-148">The copy of the customer can't be saved until you fix all the validation errors.</span></span>
+
+## <a name="copy-a-customer-by-using-tax-exempt-number-search-feature"></a><span data-ttu-id="627e7-149">課税控除番号検索機能を使用して顧客をコピーする</span><span class="sxs-lookup"><span data-stu-id="627e7-149">Copy a customer by using tax exempt number search feature</span></span>
+
+<span data-ttu-id="627e7-150">**すべての顧客** ページのアクション ペインの **顧客** タブで、**登録** グループにある課税控除番号検索機能を利用して、顧客をコピーすることもできます。</span><span class="sxs-lookup"><span data-stu-id="627e7-150">You can also copy customers by using the Tax exempt number search feature that is in the **Registration** group on the **Customer** tab on the Action Pane of the **All customers** page.</span></span> <span data-ttu-id="627e7-151">**課税控除番号検索** ダイアログ ボックスが開き、課税控除番号、顧客 ID、顧客名、および、どの法人内で課税控除 ID が使用されるか、が表示されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-151">The **Tax exempt number search** dialog box that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used.</span></span> <span data-ttu-id="627e7-152">顧客をコピーできるのは、現在の法人でない法人内に存在している場合だけです。</span><span class="sxs-lookup"><span data-stu-id="627e7-152">You can copy a customer only if it's in a legal entity that isn't the current legal entity.</span></span> <span data-ttu-id="627e7-153">この条件を満たす顧客を選択したら、次ステップを実行します。</span><span class="sxs-lookup"><span data-stu-id="627e7-153">After you select a customer that meets this criterion, follow these steps.</span></span>
+
+1. <span data-ttu-id="627e7-154">**顧客をコピー** オプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-154">A **Copy customer** option appears.</span></span> <span data-ttu-id="627e7-155">このオプションの既定値は **いいえ** です。</span><span class="sxs-lookup"><span data-stu-id="627e7-155">By default, this option is set to **No**.</span></span> <span data-ttu-id="627e7-156">顧客を現在の法人にコピーするには、このオプションで **はい** を指定します。</span><span class="sxs-lookup"><span data-stu-id="627e7-156">To copy the customer to the current legal entity, set the option to **Yes**.</span></span> 
+2. <span data-ttu-id="627e7-157">**選択** を選択します。</span><span class="sxs-lookup"><span data-stu-id="627e7-157">Select **Select**.</span></span> <span data-ttu-id="627e7-158">顧客が新規に作成されます。</span><span class="sxs-lookup"><span data-stu-id="627e7-158">The new customer is created.</span></span>

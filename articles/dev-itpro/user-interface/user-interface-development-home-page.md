@@ -1,330 +1,99 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="user-interface-development-home-page.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>user-interface-development-home-page.57afdd.54b5687d4cb1251627bc6c8b0fc0dc01ff16b292.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>54b5687d4cb1251627bc6c8b0fc0dc01ff16b292</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\user-interface\user-interface-development-home-page.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>User interface development home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー インターフェイス開発ホーム ページ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic contains links to topics about developing user interface elements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>User interface development home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー インターフェイス開発ホーム ページ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic contains links to topics about developing user interface elements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The user interface for Microsoft Dynamics 365 for Finance and Operations differs significantly from the interface for Microsoft Dynamics AX 2012.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations のユーザー インターフェイスは、Microsoft Dynamics AX 2012 のユーザー インターフェイスと大きく異なります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>The client in Dynamics AX 2012 is a Microsoft Win32 application that has extensions that use ActiveX, WinForm, or WPF controls.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX 2012 のクライアントは、ActiveX、WinForm、または WPF コントロールを使用する拡張機能を備えた Microsoft Win32 アプリケーションです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The X++ application logic runs on the client for the form and table methods, and some logic occurs on the server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ アプリケーション ロジックが、フォーム メソッドおよびテーブル メソッドに対してクライアントで実行され、何らかのロジックがサーバー上で発生します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>For controls, both the X++ logic application programming interface (API) and the physical Win32 control are tightly connected on the client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールについては、X++ ロジック アプリケーション プログラミング インターフェイス (API) および現物 Win32 コントロールの両方が、クライアントで密に接続されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>The client is an HTML web client that runs in all major browsers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアントは、すべての主要なブラウザーで動作する HTML Web クライアントです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>These browsers include Microsoft Edge, Internet Explorer 11, Chrome, and Safari (see <bpt id="p1">[</bpt>System requirements<ept id="p1">](../../fin-and-ops/get-started/system-requirements.md)</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのブラウザーには、Microsoft Edge、Internet Explorer 11、Chrome、および Safari が含まれます (<bpt id="p1">[</bpt>システム要件<ept id="p1">](../../fin-and-ops/get-started/system-requirements.md)</ept> を参照)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>The move to a web client has produced the following changes to client forms and controls:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Web クライアントへの移行により、クライアントのフォームとコントロールに以下の変更が加えられました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>The physical presentation of forms and controls is now HTML, JavaScript, and CSS within the browser.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームとコントロールの物理的な表現は、現在は、ブラウザー内の HTML、JavaScript、および CSS です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Form controls are split into logical and physical parts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム コントロールは、論理的および物理的な部分に分割されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>The X++ logical API and related state run on the server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ 論理 API および関連する状態は、サーバーで実行されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>The logical and physical parts are kept in sync through service calls that communicate changes from each side.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">論理的部分と物理的部分は、それぞれの側から変更を伝えるサービス コールによって同期されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>For example, a user action on the client creates a service call to the server that is either sent immediately or queued so that it can be sent later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、クライアントのユーザー アクションは、すぐに送信されるまたは後で送信されるようにキューに入れられるかのいずれかであるサーバーへのサービス コールを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>The server tier keeps the form state in memory while the form is open.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サーバー層は、フォームが開いている間にフォーム状態をメモリーに保持します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>The form metamodel continues to be used to define controls and application logic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム メタモデルは、コントロールとアプリケーション ロジックを定義するために引き続き使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>This approach supports almost all the existing Form, Form DataSource, and Form Control metamodel and X++ override methods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この方法は、ほとんどすべての既存の Form、Form DataSource、および Form Control のメタモデルと X++ のオーバーライドメソッドをサポートしています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>However, some control types, properties, and override methods have been removed, either because of incompatibility with the new platform or for performance reasons.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、新しいプラットフォームでの互換性またはパフォーマンス上の理由から、一部のコントロール タイプ、プロパティ、およびオーバーライド メソッドは削除されました。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>For example, ActiveX and ManagedHost controls can no longer be used to add custom controls, because they are incompatible with the HTML platform.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、ActiveX および ManagedHost コントロールは、HTML プラットフォームと互換性がないため、カスタム コントロールを追加するためには使用できなくなります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Instead, a new extensible control framework has been added that lets you add additional controls.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、新しい拡張可能コントロール フレームワークが追加され、さらにコントロールを追加できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Tutorials</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source><bpt id="p1">[</bpt>Building the rental charge type form<ept id="p1">](build-rental-charge-type-form.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>レンタル料金のタイプ フォームの作成<ept id="p1">](build-rental-charge-type-form.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">[</bpt>Building the customer form<ept id="p1">](build-customer-form.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>顧客フォームの作成<ept id="p1">](build-customer-form.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Forms</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source><bpt id="p1">[</bpt>Navigation concepts<ept id="p1">](page-navigation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ナビゲーション概念<ept id="p1">](page-navigation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source><bpt id="p1">[</bpt>Layout<ept id="p1">](page-layout.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>レイアウト<ept id="p1">](page-layout.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source><bpt id="p1">[</bpt>Symbol font<ept id="p1">](symbol-font.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Symbol フォント<ept id="p1">](symbol-font.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">[</bpt>Testing forms with custom patterns<ept id="p1">](testing-forms-custom-patterns.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>カスタム パターンを使用したテスト フォーム<ept id="p1">](testing-forms-custom-patterns.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Controls</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">[</bpt>Action controls<ept id="p1">](action-controls.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>アクション コントロール<ept id="p1">](action-controls.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">[</bpt>Sizing for input controls and grid columns<ept id="p1">](sizing-input-controls-grid-columns.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>入力コントロールとグリッド列のサイズ変更<ept id="p1">](sizing-input-controls-grid-columns.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source><bpt id="p1">[</bpt>Check box support in tree controls<ept id="p1">](check-box-tree-controls.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツリー コントロールでのチェック ボックスのサポート<ept id="p1">](check-box-tree-controls.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source><bpt id="p1">[</bpt>Filtering<ept id="p1">](filtering.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フィルター処理<ept id="p1">](filtering.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">[</bpt>Display pages side-by-side using the Open in New Window icon<ept id="p1">](../../fin-and-ops/get-started/display-pages-side-by-side.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>[新しいウィンドウで開く] アイコンを使用してページを並べて表示する<ept id="p1">](../../fin-and-ops/get-started/display-pages-side-by-side.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">[</bpt>Code migration - context menus<ept id="p1">](../migration-upgrade/code-migration-context-menus.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>コードの移行 - コンテキスト メニュー<ept id="p1">](../migration-upgrade/code-migration-context-menus.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source><bpt id="p1">[</bpt>Code migration - mouse double click<ept id="p1">](../migration-upgrade/code-migration-double-click.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>コードの移行 - マウス ダブルクリック<ept id="p1">](../migration-upgrade/code-migration-double-click.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source><bpt id="p1">[</bpt>Contextual data entry for lookups<ept id="p1">](contextual-data-entry-lookups.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ルックアップのコンテキスト データ入力<ept id="p1">](contextual-data-entry-lookups.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source><bpt id="p1">[</bpt>HierarchyViewer control<ept id="p1">](hierarchy-viewer-control.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>HierarchyViewer コントロール<ept id="p1">](hierarchy-viewer-control.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source><bpt id="p1">[</bpt>Lookup controls<ept id="p1">](lookups-controls.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ルックアップ コントロール<ept id="p1">](lookups-controls.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source><bpt id="p1">[</bpt>File upload control<ept id="p1">](file-upload-control.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ファイルのアップロード コントロール<ept id="p1">](file-upload-control.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">[</bpt>How to: system-defined buttons<ept id="p1">](system-defined-buttons.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>方法: システム定義ボタン<ept id="p1">](system-defined-buttons.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source><bpt id="p1">[</bpt>Using images<ept id="p1">](images-form-grid.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>画像の使用<ept id="p1">](images-form-grid.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source><bpt id="p1">[</bpt>Specify the font and background colors for input, table, and grid controls<ept id="p1">](specify-color-font-background-controls.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>入力、テーブル、およびグリッド コントロールのフォントと背景色を指定する<ept id="p1">](specify-color-font-background-controls.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source><bpt id="p1">[</bpt>Support for right-to-left languages: A primer on bidirectional text<ept id="p1">](bidirectional-support.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>右から左へ読み書きする言語のサポート: 双方向テキストの入門書<ept id="p1">](bidirectional-support.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source><bpt id="p1">[</bpt>Creating icons for workspace tiles<ept id="p1">](create-icons-workspace-tiles.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ワークスペース タイル用のアイコンの作成<ept id="p1">](create-icons-workspace-tiles.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source><bpt id="p1">[</bpt>Keyboard shortcuts for extensible controls<ept id="p1">](keyboard-shortcuts-controls.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張可能なコントロールのキーボード ショートカット<ept id="p1">](keyboard-shortcuts-controls.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source><bpt id="p1">[</bpt>Extensible controls – public JavaScript APIs<ept id="p1">](public-javascript-apis.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張可能なコントロール – パブリック JavaScript API<ept id="p1">](public-javascript-apis.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Messaging</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メッセージング</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source><bpt id="p1">[</bpt>Slider and MessageBox<ept id="p1">](slider-messagebox.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>スライダーとメッセージ ボックス<ept id="p1">](slider-messagebox.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source><bpt id="p1">[</bpt>Messaging API: Message center, Message bar, Message details<ept id="p1">](messaging-api-center-bar-details.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>メッセージング API: メッセージ センター、メッセージ バー、およびメッセージ詳細<ept id="p1">](messaging-api-center-bar-details.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source><bpt id="p1">[</bpt>Messaging the user<ept id="p1">](messaging-user.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ユーザーにメッセージを送信する<ept id="p1">](messaging-user.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Form pattern guidelines</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パターンのガイドライン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source><bpt id="p1">[</bpt>Selecting a form pattern<ept id="p1">](select-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フォーム パターンの選択<ept id="p1">](select-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source><bpt id="p1">[</bpt>Form styles and patterns<ept id="p1">](form-styles-patterns.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フォームのスタイルとパターン<ept id="p1">](form-styles-patterns.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source><bpt id="p1">[</bpt>Form pattern add-ins<ept id="p1">](form-pattern-add-ins.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フォーム パターン アドイン<ept id="p1">](form-pattern-add-ins.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Form patterns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Support form patterns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パターンのサポート</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Sub patterns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブ パターン</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source><bpt id="p1">[</bpt>Details Master<ept id="p1">](details-master-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細マスター<ept id="p1">](details-master-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source><bpt id="p1">[</bpt>Details Transaction<ept id="p1">](details-transaction-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細トランザクション<ept id="p1">](details-transaction-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source><bpt id="p1">[</bpt>Form Part Section List<ept id="p1">](section-list-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フォーム パート セクション リスト<ept id="p1">](section-list-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source><bpt id="p1">[</bpt>List Page<ept id="p1">](list-page-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>リスト ページ<ept id="p1">](list-page-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source><bpt id="p1">[</bpt>Simple Details<ept id="p1">](simple-details-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易詳細<ept id="p1">](simple-details-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source><bpt id="p1">[</bpt>Simple List<ept id="p1">](simple-list-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リスト<ept id="p1">](simple-list-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source><bpt id="p1">[</bpt>Simple List and Details<ept id="p1">](simple-list-details-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リストと詳細<ept id="p1">](simple-list-details-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source><bpt id="p1">[</bpt>Table Of Contents<ept id="p1">](table-of-contents-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>目次<ept id="p1">](table-of-contents-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source><bpt id="p1">[</bpt>Task Single<ept id="p1">](task-single-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>タスク シングル<ept id="p1">](task-single-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source><bpt id="p1">[</bpt>Task Double<ept id="p1">](task-double-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>タスク ダブル<ept id="p1">](task-double-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source><bpt id="p1">[</bpt>Wizard<ept id="p1">](wizard-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ウィザード<ept id="p1">](wizard-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source><bpt id="p1">[</bpt>Workspace<ept id="p1">](workspace-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ワークスペース<ept id="p1">](workspace-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source><bpt id="p1">[</bpt>General Form Guidelines<ept id="p1">](general-form-guidelines.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フォームの全般的なガイドライン<ept id="p1">](general-form-guidelines.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source><bpt id="p1">[</bpt>Advanced Selection<ept id="p1">](advanced-selection-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>高度な選択<ept id="p1">](advanced-selection-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source><bpt id="p1">[</bpt>Dialog<ept id="p1">](dialog-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ダイアログ<ept id="p1">](dialog-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source><bpt id="p1">[</bpt>Drop Dialog<ept id="p1">](drop-dialog-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ドロップ ダイアログ<ept id="p1">](drop-dialog-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source><bpt id="p1">[</bpt>Lookup<ept id="p1">](lookup-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ルックアップ<ept id="p1">](lookup-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source><bpt id="p1">[</bpt>Factbox<ept id="p1">](factbox-form-patterns.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>情報ボックス<ept id="p1">](factbox-form-patterns.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source><bpt id="p1">[</bpt>Custom Filter Group<ept id="p1">](custom-filter-group-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>カスタム フィルター グループ<ept id="p1">](custom-filter-group-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source><bpt id="p1">[</bpt>Dimension Entry Control<ept id="p1">](../financial/dimension-entry-control-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>分析コード エントリ コントロール<ept id="p1">](../financial/dimension-entry-control-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source><bpt id="p1">[</bpt>Dimension Expression Builder<ept id="p1">](../financial/dimension-expression-builder-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>分析コード式ビルダー<ept id="p1">](../financial/dimension-expression-builder-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source><bpt id="p1">[</bpt>Fields and Field Groups<ept id="p1">](fields-field-groups-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フィールドおよびフィールド グループ<ept id="p1">](fields-field-groups-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source><bpt id="p1">[</bpt>Filters and Toolbar<ept id="p1">](filters-toolbar-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フィルターおよびツールバー<ept id="p1">](filters-toolbar-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source><bpt id="p1">[</bpt>Fill Text<ept id="p1">](fill-text-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>テキスト入力<ept id="p1">](fill-text-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source><bpt id="p1">[</bpt>Horizontal Fields and Buttons Group<ept id="p1">](horizontal-fields-buttons-group-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>水平フィールドおよびボタン グループ<ept id="p1">](horizontal-fields-buttons-group-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source><bpt id="p1">[</bpt>Image Preview<ept id="p1">](image-preview-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>画像のプレビュー<ept id="p1">](image-preview-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source><bpt id="p1">[</bpt>List Panel<ept id="p1">](list-panel-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>リスト パネル<ept id="p1">](list-panel-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source><bpt id="p1">[</bpt>Nested Simple List and Details<ept id="p1">](nested-simple-list-details-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>入れ子になった簡易リストおよび詳細<ept id="p1">](nested-simple-list-details-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source><bpt id="p1">[</bpt>Section Chart<ept id="p1">](section-chart-form-pattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション グラフ<ept id="p1">](section-chart-form-pattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source><bpt id="p1">[</bpt>Section Power BI<ept id="p1">](section-powerbi-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション Power BI<ept id="p1">](section-powerbi-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source><bpt id="p1">[</bpt>Section Related Links<ept id="p1">](section-related-links-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション関連リンク<ept id="p1">](section-related-links-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source><bpt id="p1">[</bpt>Section Stacked Chart<ept id="p1">](section-stacked-chart-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション積み上げグラフ<ept id="p1">](section-stacked-chart-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source><bpt id="p1">[</bpt>Section Tabbed List<ept id="p1">](section-tabbed-list-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション タブ付きリスト<ept id="p1">](section-tabbed-list-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source><bpt id="p1">[</bpt>Section Tiles<ept id="p1">](section-tiles-subpattern.md)</ept> <bpt id="p2">[</bpt>Tabular Fields<ept id="p2">](tabular-fields-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション タイル<ept id="p1">](section-tiles-subpattern.md)</ept> <bpt id="p2">[</bpt>表形式フィールド<ept id="p2">](tabular-fields-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source><bpt id="p1">[</bpt>Toolbar and List<ept id="p1">](toolbar-list-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびリスト<ept id="p1">](toolbar-list-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source><bpt id="p1">[</bpt>Toolbar and Fields<ept id="p1">](toolbar-fields-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびフィールド<ept id="p1">](toolbar-fields-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source><bpt id="p1">[</bpt>Workspace Filter Group<ept id="p1">](workspace-filter-group-subpattern.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ワークスペース フィルター グループ<ept id="p1">](workspace-filter-group-subpattern.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Control extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの拡張機能</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source><bpt id="p1">[</bpt>Building an extensible control<ept id="p1">](build-extensible-control.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張可能コントロールの構築<ept id="p1">](build-extensible-control.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source><bpt id="p1">[</bpt>Extensible control programming reference<ept id="p1">](extensible-control-programming-reference.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張可能なコントロールのプログラミング リファレンス<ept id="p1">](extensible-control-programming-reference.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source><bpt id="p1">[</bpt>Control extensibility<ept id="p1">](control-extensibility.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>コントロールの拡張機能<ept id="p1">](control-extensibility.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source><bpt id="p1">[</bpt>Add localizable labels for an extensible control<ept id="p1">](create-localizable-labels-client.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ローカライズ可能なラベルを拡張可能なコントロールに追加する<ept id="p1">](create-localizable-labels-client.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source><bpt id="p1">[</bpt>Guidelines for extensible controls layout<ept id="p1">](extensible-controls-layout.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>拡張可能なコントロール レイアウトのガイドライン<ept id="p1">](extensible-controls-layout.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source><bpt id="p1">[</bpt>Control the text that Task Recorder generates for a control<ept id="p1">](task-recorder-control-text.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>コントロールに対してタスク レコーダーが生成するテキストの制御<ept id="p1">](task-recorder-control-text.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: ユーザー インターフェイス開発ホーム ページ
+description: このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
+author: RobinARH
+manager: AnnBe
+ms.date: 12/18/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 191453
+ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
+ms.search.region: Global
+ms.author: robinr
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 54b5687d4cb1251627bc6c8b0fc0dc01ff16b292
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571986"
+---
+# <a name="user-interface-development-home-page"></a><span data-ttu-id="d24bb-103">ユーザー インターフェイス開発ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="d24bb-103">User interface development home page</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="d24bb-104">このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d24bb-104">This topic contains links to topics about developing user interface elements.</span></span>
+
+<span data-ttu-id="d24bb-105">Microsoft Dynamics 365 for Finance and Operations のユーザー インターフェイスは、Microsoft Dynamics AX 2012 のユーザー インターフェイスと大きく異なります。</span><span class="sxs-lookup"><span data-stu-id="d24bb-105">The user interface for Microsoft Dynamics 365 for Finance and Operations differs significantly from the interface for Microsoft Dynamics AX 2012.</span></span> <span data-ttu-id="d24bb-106">Dynamics AX 2012 のクライアントは、ActiveX、WinForm、または WPF コントロールを使用する拡張機能を備えた Microsoft Win32 アプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="d24bb-106">The client in Dynamics AX 2012 is a Microsoft Win32 application that has extensions that use ActiveX, WinForm, or WPF controls.</span></span> <span data-ttu-id="d24bb-107">X++ アプリケーション ロジックが、フォーム メソッドおよびテーブル メソッドに対してクライアントで実行され、何らかのロジックがサーバー上で発生します。</span><span class="sxs-lookup"><span data-stu-id="d24bb-107">The X++ application logic runs on the client for the form and table methods, and some logic occurs on the server.</span></span> <span data-ttu-id="d24bb-108">コントロールについては、X++ ロジック アプリケーション プログラミング インターフェイス (API) および現物 Win32 コントロールの両方が、クライアントで密に接続されます。</span><span class="sxs-lookup"><span data-stu-id="d24bb-108">For controls, both the X++ logic application programming interface (API) and the physical Win32 control are tightly connected on the client.</span></span> <span data-ttu-id="d24bb-109">クライアントは、すべての主要なブラウザーで動作する HTML Web クライアントです。</span><span class="sxs-lookup"><span data-stu-id="d24bb-109">The client is an HTML web client that runs in all major browsers.</span></span> <span data-ttu-id="d24bb-110">これらのブラウザーには、Microsoft Edge、Internet Explorer 11、Chrome、および Safari が含まれます ([システム要件](../../fin-and-ops/get-started/system-requirements.md) を参照)。</span><span class="sxs-lookup"><span data-stu-id="d24bb-110">These browsers include Microsoft Edge, Internet Explorer 11, Chrome, and Safari (see [System requirements](../../fin-and-ops/get-started/system-requirements.md)).</span></span> <span data-ttu-id="d24bb-111">Web クライアントへの移行により、クライアントのフォームとコントロールに以下の変更が加えられました。</span><span class="sxs-lookup"><span data-stu-id="d24bb-111">The move to a web client has produced the following changes to client forms and controls:</span></span>
+
+-   <span data-ttu-id="d24bb-112">フォームとコントロールの物理的な表現は、現在は、ブラウザー内の HTML、JavaScript、および CSS です。</span><span class="sxs-lookup"><span data-stu-id="d24bb-112">The physical presentation of forms and controls is now HTML, JavaScript, and CSS within the browser.</span></span>
+-   <span data-ttu-id="d24bb-113">フォーム コントロールは、論理的および物理的な部分に分割されます。</span><span class="sxs-lookup"><span data-stu-id="d24bb-113">Form controls are split into logical and physical parts.</span></span> <span data-ttu-id="d24bb-114">X++ 論理 API および関連する状態は、サーバーで実行されます。</span><span class="sxs-lookup"><span data-stu-id="d24bb-114">The X++ logical API and related state run on the server.</span></span>
+-   <span data-ttu-id="d24bb-115">論理的部分と物理的部分は、それぞれの側から変更を伝えるサービス コールによって同期されています。</span><span class="sxs-lookup"><span data-stu-id="d24bb-115">The logical and physical parts are kept in sync through service calls that communicate changes from each side.</span></span> <span data-ttu-id="d24bb-116">たとえば、クライアントのユーザー アクションは、すぐに送信されるまたは後で送信されるようにキューに入れられるかのいずれかであるサーバーへのサービス コールを作成します。</span><span class="sxs-lookup"><span data-stu-id="d24bb-116">For example, a user action on the client creates a service call to the server that is either sent immediately or queued so that it can be sent later.</span></span>
+-   <span data-ttu-id="d24bb-117">サーバー層は、フォームが開いている間にフォーム状態をメモリーに保持します。</span><span class="sxs-lookup"><span data-stu-id="d24bb-117">The server tier keeps the form state in memory while the form is open.</span></span>
+
+<span data-ttu-id="d24bb-118">フォーム メタモデルは、コントロールとアプリケーション ロジックを定義するために引き続き使用されます。</span><span class="sxs-lookup"><span data-stu-id="d24bb-118">The form metamodel continues to be used to define controls and application logic.</span></span> <span data-ttu-id="d24bb-119">この方法は、ほとんどすべての既存の Form、Form DataSource、および Form Control のメタモデルと X++ のオーバーライドメソッドをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="d24bb-119">This approach supports almost all the existing Form, Form DataSource, and Form Control metamodel and X++ override methods.</span></span> <span data-ttu-id="d24bb-120">ただし、新しいプラットフォームでの互換性またはパフォーマンス上の理由から、一部のコントロール タイプ、プロパティ、およびオーバーライド メソッドは削除されました。</span><span class="sxs-lookup"><span data-stu-id="d24bb-120">However, some control types, properties, and override methods have been removed, either because of incompatibility with the new platform or for performance reasons.</span></span> <span data-ttu-id="d24bb-121">たとえば、ActiveX および ManagedHost コントロールは、HTML プラットフォームと互換性がないため、カスタム コントロールを追加するためには使用できなくなります。</span><span class="sxs-lookup"><span data-stu-id="d24bb-121">For example, ActiveX and ManagedHost controls can no longer be used to add custom controls, because they are incompatible with the HTML platform.</span></span> <span data-ttu-id="d24bb-122">代わりに、新しい拡張可能コントロール フレームワークが追加され、さらにコントロールを追加できます。</span><span class="sxs-lookup"><span data-stu-id="d24bb-122">Instead, a new extensible control framework has been added that lets you add additional controls.</span></span>
+
+## <a name="tutorials"></a><span data-ttu-id="d24bb-123">チュートリアル</span><span class="sxs-lookup"><span data-stu-id="d24bb-123">Tutorials</span></span>
+-   [<span data-ttu-id="d24bb-124">レンタル料金のタイプ フォームの作成</span><span class="sxs-lookup"><span data-stu-id="d24bb-124">Building the rental charge type form</span></span>](build-rental-charge-type-form.md)
+-   [<span data-ttu-id="d24bb-125">顧客フォームの作成</span><span class="sxs-lookup"><span data-stu-id="d24bb-125">Building the customer form</span></span>](build-customer-form.md)
+
+## <a name="forms"></a><span data-ttu-id="d24bb-126">フォーム</span><span class="sxs-lookup"><span data-stu-id="d24bb-126">Forms</span></span>
+-   [<span data-ttu-id="d24bb-127">ナビゲーション概念</span><span class="sxs-lookup"><span data-stu-id="d24bb-127">Navigation concepts</span></span>](page-navigation.md)
+<!---   [The new user experience](https://mix.office.com/watch/1ohsrrpsd02e1)-->
+-   [<span data-ttu-id="d24bb-128">レイアウト</span><span class="sxs-lookup"><span data-stu-id="d24bb-128">Layout</span></span>](page-layout.md)
+-   [<span data-ttu-id="d24bb-129">Symbol フォント</span><span class="sxs-lookup"><span data-stu-id="d24bb-129">Symbol font</span></span>](symbol-font.md)
+-   [<span data-ttu-id="d24bb-130">カスタム パターンを使用したテスト フォーム</span><span class="sxs-lookup"><span data-stu-id="d24bb-130">Testing forms with custom patterns</span></span>](testing-forms-custom-patterns.md)
+
+## <a name="controls"></a><span data-ttu-id="d24bb-131">コントロール</span><span class="sxs-lookup"><span data-stu-id="d24bb-131">Controls</span></span>
+-   [<span data-ttu-id="d24bb-132">アクション コントロール</span><span class="sxs-lookup"><span data-stu-id="d24bb-132">Action controls</span></span>](action-controls.md)
+-   [<span data-ttu-id="d24bb-133">入力コントロールとグリッド列のサイズ変更</span><span class="sxs-lookup"><span data-stu-id="d24bb-133">Sizing for input controls and grid columns</span></span>](sizing-input-controls-grid-columns.md)
+-   [<span data-ttu-id="d24bb-134">ツリー コントロールでのチェック ボックスのサポート</span><span class="sxs-lookup"><span data-stu-id="d24bb-134">Check box support in tree controls</span></span>](check-box-tree-controls.md)
+-   [<span data-ttu-id="d24bb-135">フィルター処理</span><span class="sxs-lookup"><span data-stu-id="d24bb-135">Filtering</span></span>](filtering.md)
+-   <span data-ttu-id="d24bb-136">[[新しいウィンドウで開く] アイコンを使用してページを並べて表示する](../../fin-and-ops/get-started/display-pages-side-by-side.md)</span><span class="sxs-lookup"><span data-stu-id="d24bb-136">[Display pages side-by-side using the Open in New Window icon](../../fin-and-ops/get-started/display-pages-side-by-side.md)</span></span>
+-   [<span data-ttu-id="d24bb-137">コードの移行 - コンテキスト メニュー</span><span class="sxs-lookup"><span data-stu-id="d24bb-137">Code migration - context menus</span></span>](../migration-upgrade/code-migration-context-menus.md)
+-   [<span data-ttu-id="d24bb-138">コードの移行 - マウス ダブルクリック</span><span class="sxs-lookup"><span data-stu-id="d24bb-138">Code migration - mouse double click</span></span>](../migration-upgrade/code-migration-double-click.md)
+-   [<span data-ttu-id="d24bb-139">ルックアップのコンテキスト データ入力</span><span class="sxs-lookup"><span data-stu-id="d24bb-139">Contextual data entry for lookups</span></span>](contextual-data-entry-lookups.md)
+-   [<span data-ttu-id="d24bb-140">HierarchyViewer コントロール</span><span class="sxs-lookup"><span data-stu-id="d24bb-140">HierarchyViewer control</span></span>](hierarchy-viewer-control.md)
+-   [<span data-ttu-id="d24bb-141">ルックアップ コントロール</span><span class="sxs-lookup"><span data-stu-id="d24bb-141">Lookup controls</span></span>](lookups-controls.md)
+-   [<span data-ttu-id="d24bb-142">ファイルのアップロード コントロール</span><span class="sxs-lookup"><span data-stu-id="d24bb-142">File upload control</span></span>](file-upload-control.md)
+-   [<span data-ttu-id="d24bb-143">方法: システム定義ボタン</span><span class="sxs-lookup"><span data-stu-id="d24bb-143">How to: system-defined buttons</span></span>](system-defined-buttons.md)
+-   [<span data-ttu-id="d24bb-144">画像の使用</span><span class="sxs-lookup"><span data-stu-id="d24bb-144">Using images</span></span>](images-form-grid.md)
+-   [<span data-ttu-id="d24bb-145">入力、テーブル、およびグリッド コントロールのフォントと背景色を指定する</span><span class="sxs-lookup"><span data-stu-id="d24bb-145">Specify the font and background colors for input, table, and grid controls</span></span>](specify-color-font-background-controls.md)
+-   [<span data-ttu-id="d24bb-146">右から左へ読み書きする言語のサポート: 双方向テキストの入門書</span><span class="sxs-lookup"><span data-stu-id="d24bb-146">Support for right-to-left languages: A primer on bidirectional text</span></span>](bidirectional-support.md)
+-   [<span data-ttu-id="d24bb-147">ワークスペース タイル用のアイコンの作成</span><span class="sxs-lookup"><span data-stu-id="d24bb-147">Creating icons for workspace tiles</span></span>](create-icons-workspace-tiles.md)
+-   [<span data-ttu-id="d24bb-148">拡張可能なコントロールのキーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="d24bb-148">Keyboard shortcuts for extensible controls</span></span>](keyboard-shortcuts-controls.md)
+-   [<span data-ttu-id="d24bb-149">拡張可能なコントロール – パブリック JavaScript API</span><span class="sxs-lookup"><span data-stu-id="d24bb-149">Extensible controls – public JavaScript APIs</span></span>](public-javascript-apis.md)
+
+## <a name="messaging"></a><span data-ttu-id="d24bb-150">メッセージング</span><span class="sxs-lookup"><span data-stu-id="d24bb-150">Messaging</span></span>
+-   [<span data-ttu-id="d24bb-151">スライダーとメッセージ ボックス</span><span class="sxs-lookup"><span data-stu-id="d24bb-151">Slider and MessageBox</span></span>](slider-messagebox.md)
+-   [<span data-ttu-id="d24bb-152">メッセージング API: メッセージ センター、メッセージ バー、およびメッセージ詳細</span><span class="sxs-lookup"><span data-stu-id="d24bb-152">Messaging API: Message center, Message bar, Message details</span></span>](messaging-api-center-bar-details.md)
+-   [<span data-ttu-id="d24bb-153">ユーザーにメッセージを送信する</span><span class="sxs-lookup"><span data-stu-id="d24bb-153">Messaging the user</span></span>](messaging-user.md)
+
+## <a name="form-pattern-guidelines"></a><span data-ttu-id="d24bb-154">フォーム パターンのガイドライン</span><span class="sxs-lookup"><span data-stu-id="d24bb-154">Form pattern guidelines</span></span>
+-   [<span data-ttu-id="d24bb-155">フォーム パターンの選択</span><span class="sxs-lookup"><span data-stu-id="d24bb-155">Selecting a form pattern</span></span>](select-form-pattern.md)
+-   [<span data-ttu-id="d24bb-156">フォームのスタイルとパターン</span><span class="sxs-lookup"><span data-stu-id="d24bb-156">Form styles and patterns</span></span>](form-styles-patterns.md)
+-   [<span data-ttu-id="d24bb-157">フォーム パターン アドイン</span><span class="sxs-lookup"><span data-stu-id="d24bb-157">Form pattern add-ins</span></span>](form-pattern-add-ins.md)
+
+| <span data-ttu-id="d24bb-158">フォーム パターン</span><span class="sxs-lookup"><span data-stu-id="d24bb-158">Form patterns</span></span>     | <span data-ttu-id="d24bb-159">フォーム パターンのサポート</span><span class="sxs-lookup"><span data-stu-id="d24bb-159">Support form patterns</span></span>       | <span data-ttu-id="d24bb-160">サブ パターン</span><span class="sxs-lookup"><span data-stu-id="d24bb-160">Sub patterns</span></span>      |
+|---|---|---|
+| [<span data-ttu-id="d24bb-161">詳細マスター</span><span class="sxs-lookup"><span data-stu-id="d24bb-161">Details Master</span></span>](details-master-form-pattern.md)<br>[<span data-ttu-id="d24bb-162">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="d24bb-162">Details Transaction</span></span>](details-transaction-form-pattern.md)<br>[<span data-ttu-id="d24bb-163">フォーム パート セクション リスト</span><span class="sxs-lookup"><span data-stu-id="d24bb-163">Form Part Section List</span></span>](section-list-form-pattern.md)<br>[<span data-ttu-id="d24bb-164">リスト ページ</span><span class="sxs-lookup"><span data-stu-id="d24bb-164">List Page</span></span>](list-page-form-pattern.md)<br>[<span data-ttu-id="d24bb-165">簡易詳細</span><span class="sxs-lookup"><span data-stu-id="d24bb-165">Simple Details</span></span>](simple-details-form-pattern.md)<br>[<span data-ttu-id="d24bb-166">簡易リスト</span><span class="sxs-lookup"><span data-stu-id="d24bb-166">Simple List</span></span>](simple-list-form-pattern.md)<br>[<span data-ttu-id="d24bb-167">簡易リストと詳細</span><span class="sxs-lookup"><span data-stu-id="d24bb-167">Simple List and Details</span></span>](simple-list-details-form-pattern.md)<br>[<span data-ttu-id="d24bb-168">目次</span><span class="sxs-lookup"><span data-stu-id="d24bb-168">Table Of Contents</span></span>](table-of-contents-form-pattern.md)<br>[<span data-ttu-id="d24bb-169">タスク シングル</span><span class="sxs-lookup"><span data-stu-id="d24bb-169">Task Single</span></span>](task-single-form-pattern.md)<br>[<span data-ttu-id="d24bb-170">タスク ダブル</span><span class="sxs-lookup"><span data-stu-id="d24bb-170">Task Double</span></span>](task-double-form-pattern.md)<br>[<span data-ttu-id="d24bb-171">ウィザード</span><span class="sxs-lookup"><span data-stu-id="d24bb-171">Wizard</span></span>](wizard-form-pattern.md)<br>[<span data-ttu-id="d24bb-172">ワークスペース</span><span class="sxs-lookup"><span data-stu-id="d24bb-172">Workspace</span></span>](workspace-form-pattern.md)<br>[<span data-ttu-id="d24bb-173">フォームの全般的なガイドライン</span><span class="sxs-lookup"><span data-stu-id="d24bb-173">General Form Guidelines</span></span>](general-form-guidelines.md) | [<span data-ttu-id="d24bb-174">高度な選択</span><span class="sxs-lookup"><span data-stu-id="d24bb-174">Advanced Selection</span></span>](advanced-selection-form-pattern.md)<br>[<span data-ttu-id="d24bb-175">ダイアログ</span><span class="sxs-lookup"><span data-stu-id="d24bb-175">Dialog</span></span>](dialog-form-pattern.md)<br>[<span data-ttu-id="d24bb-176">ドロップ ダイアログ</span><span class="sxs-lookup"><span data-stu-id="d24bb-176">Drop Dialog</span></span>](drop-dialog-form-pattern.md)<br>[<span data-ttu-id="d24bb-177">ルックアップ</span><span class="sxs-lookup"><span data-stu-id="d24bb-177">Lookup</span></span>](lookup-form-pattern.md)<br>[<span data-ttu-id="d24bb-178">情報ボックス</span><span class="sxs-lookup"><span data-stu-id="d24bb-178">Factbox</span></span>](factbox-form-patterns.md) | [<span data-ttu-id="d24bb-179">カスタム フィルター グループ</span><span class="sxs-lookup"><span data-stu-id="d24bb-179">Custom Filter Group</span></span>](custom-filter-group-subpattern.md)<br>[<span data-ttu-id="d24bb-180">分析コード エントリ コントロール</span><span class="sxs-lookup"><span data-stu-id="d24bb-180">Dimension Entry Control</span></span>](../financial/dimension-entry-control-subpattern.md)<br>[<span data-ttu-id="d24bb-181">分析コード式ビルダー</span><span class="sxs-lookup"><span data-stu-id="d24bb-181">Dimension Expression Builder</span></span>](../financial/dimension-expression-builder-subpattern.md)<br>[<span data-ttu-id="d24bb-182">フィールドおよびフィールド グループ</span><span class="sxs-lookup"><span data-stu-id="d24bb-182">Fields and Field Groups</span></span>](fields-field-groups-subpattern.md)<br>[<span data-ttu-id="d24bb-183">フィルターおよびツールバー</span><span class="sxs-lookup"><span data-stu-id="d24bb-183">Filters and Toolbar</span></span>](filters-toolbar-subpattern.md)<br>[<span data-ttu-id="d24bb-184">テキスト入力</span><span class="sxs-lookup"><span data-stu-id="d24bb-184">Fill Text</span></span>](fill-text-subpattern.md)<br>[<span data-ttu-id="d24bb-185">水平フィールドおよびボタン グループ</span><span class="sxs-lookup"><span data-stu-id="d24bb-185">Horizontal Fields and Buttons Group</span></span>](horizontal-fields-buttons-group-subpattern.md)<br>[<span data-ttu-id="d24bb-186">画像のプレビュー</span><span class="sxs-lookup"><span data-stu-id="d24bb-186">Image Preview</span></span>](image-preview-subpattern.md)<br>[<span data-ttu-id="d24bb-187">リスト パネル</span><span class="sxs-lookup"><span data-stu-id="d24bb-187">List Panel</span></span>](list-panel-subpattern.md)<br>[<span data-ttu-id="d24bb-188">入れ子になった簡易リストおよび詳細</span><span class="sxs-lookup"><span data-stu-id="d24bb-188">Nested Simple List and Details</span></span>](nested-simple-list-details-subpattern.md)<br>[<span data-ttu-id="d24bb-189">セクション グラフ</span><span class="sxs-lookup"><span data-stu-id="d24bb-189">Section Chart</span></span>](section-chart-form-pattern.md)<br>[<span data-ttu-id="d24bb-190">セクション Power BI</span><span class="sxs-lookup"><span data-stu-id="d24bb-190">Section Power BI</span></span>](section-powerbi-subpattern.md)<br>[<span data-ttu-id="d24bb-191">セクション関連リンク</span><span class="sxs-lookup"><span data-stu-id="d24bb-191">Section Related Links</span></span>](section-related-links-subpattern.md)<br>[<span data-ttu-id="d24bb-192">セクション積み上げグラフ</span><span class="sxs-lookup"><span data-stu-id="d24bb-192">Section Stacked Chart</span></span>](section-stacked-chart-subpattern.md)<br>[<span data-ttu-id="d24bb-193">セクション タブ付きリスト</span><span class="sxs-lookup"><span data-stu-id="d24bb-193">Section Tabbed List</span></span>](section-tabbed-list-subpattern.md)<br><span data-ttu-id="d24bb-194">[セクション タイル](section-tiles-subpattern.md) [表形式フィールド](tabular-fields-subpattern.md)</span><span class="sxs-lookup"><span data-stu-id="d24bb-194">[Section Tiles](section-tiles-subpattern.md) [Tabular Fields](tabular-fields-subpattern.md)</span></span><br>[<span data-ttu-id="d24bb-195">ツールバーおよびリスト</span><span class="sxs-lookup"><span data-stu-id="d24bb-195">Toolbar and List</span></span>](toolbar-list-subpattern.md)<br>[<span data-ttu-id="d24bb-196">ツールバーおよびフィールド</span><span class="sxs-lookup"><span data-stu-id="d24bb-196">Toolbar and Fields</span></span>](toolbar-fields-subpattern.md)<br>[<span data-ttu-id="d24bb-197">ワークスペース フィルター グループ</span><span class="sxs-lookup"><span data-stu-id="d24bb-197">Workspace Filter Group</span></span>](workspace-filter-group-subpattern.md) |
+
+## <a name="control-extensibility"></a><span data-ttu-id="d24bb-198">コントロールの拡張機能</span><span class="sxs-lookup"><span data-stu-id="d24bb-198">Control extensibility</span></span>
+-   [<span data-ttu-id="d24bb-199">拡張可能コントロールの構築</span><span class="sxs-lookup"><span data-stu-id="d24bb-199">Building an extensible control</span></span>](build-extensible-control.md)
+-   [<span data-ttu-id="d24bb-200">拡張可能なコントロールのプログラミング リファレンス</span><span class="sxs-lookup"><span data-stu-id="d24bb-200">Extensible control programming reference</span></span>](extensible-control-programming-reference.md)
+-   [<span data-ttu-id="d24bb-201">コントロールの拡張機能</span><span class="sxs-lookup"><span data-stu-id="d24bb-201">Control extensibility</span></span>](control-extensibility.md)
+-   [<span data-ttu-id="d24bb-202">ローカライズ可能なラベルを拡張可能なコントロールに追加する</span><span class="sxs-lookup"><span data-stu-id="d24bb-202">Add localizable labels for an extensible control</span></span>](create-localizable-labels-client.md)
+-   [<span data-ttu-id="d24bb-203">拡張可能なコントロール レイアウトのガイドライン</span><span class="sxs-lookup"><span data-stu-id="d24bb-203">Guidelines for extensible controls layout</span></span>](extensible-controls-layout.md)
+-   [<span data-ttu-id="d24bb-204">コントロールに対してタスク レコーダーが生成するテキストの制御</span><span class="sxs-lookup"><span data-stu-id="d24bb-204">Control the text that Task Recorder generates for a control</span></span>](task-recorder-control-text.md)
+
+
+
+
+
+

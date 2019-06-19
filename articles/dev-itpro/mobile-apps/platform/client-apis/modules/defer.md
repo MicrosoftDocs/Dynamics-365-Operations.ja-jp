@@ -1,198 +1,118 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="defer.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>defer.f8e453.b1762e999010f87dbac3ac6186e79a19d445f44c.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>b1762e999010f87dbac3ac6186e79a19d445f44c</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\mobile-apps\platform\client-apis\modules\defer.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Defer module</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">延期モジュール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>Defer type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">延期タイプ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Defer module</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">延期モジュール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Index</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source><bpt id="p1">[</bpt>Deferred<ept id="p1">](../interfaces/defer-ideferred.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Deferred<ept id="p1">](../interfaces/defer-ideferred.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関数</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source><bpt id="p1">[</bpt>all<ept id="p1">](defer.md#all)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>すべて<ept id="p1">](defer.md#all)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">[</bpt>defer<ept id="p1">](defer.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>延期<ept id="p1">](defer.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source><bpt id="p1">[</bpt>reject<ept id="p1">](defer.md#reject)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>否認<ept id="p1">](defer.md#reject)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><bpt id="p1">[</bpt>resolve<ept id="p1">](defer.md#resolve)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>解決<ept id="p1">](defer.md#resolve)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Deferred</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">繰延</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Hierarchy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">階層</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Deferred</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">繰延</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Properties</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Signature</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">署名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">[</bpt>promise<ept id="p1">](../interfaces/defer-ideferred.md#promise)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>promise<ept id="p1">](../interfaces/defer-ideferred.md#promise)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>promise: Promise <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">promise: Promise <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Signature</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">署名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source><bpt id="p1">[</bpt>reject<ept id="p1">](../interfaces/defer-ideferred.md#reject)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>否認<ept id="p1">](../interfaces/defer-ideferred.md#reject)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>reject(error?: any): void</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">reject(error?: any): void</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source><bpt id="p1">[</bpt>resolve<ept id="p1">](../interfaces/defer-ideferred.md#resolve)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>解決<ept id="p1">](../interfaces/defer-ideferred.md#resolve)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>resolve(value?: T &amp;#124; PromiseLike <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph>): void</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">resolve (value?: T &amp;#124; PromiseLike <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph>) : void</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファンクション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>all</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべて</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>all(...args: any [ ]): Promise <ph id="ph1">&amp;lt;</ph>any [ ]<ph id="ph2">&amp;gt;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">all(...args: any [ ]): Promise <ph id="ph1">&amp;lt;</ph>any [ ]<ph id="ph2">&amp;gt;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>...args</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">...args</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>any [ ]</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any [ ]</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Returns Promise <ph id="ph1">&amp;lt;</ph>any [ ]<ph id="ph2">&amp;gt;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Promise <ph id="ph1">&amp;lt;</ph>any [ ]<ph id="ph2">&amp;gt;</ph> を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>defer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">defer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>defer <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph>(): <bpt id="p1">[</bpt>Deferred<ept id="p1">](../interfaces/defer-ideferred.md)</ept> <ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">defer <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph>(): <bpt id="p1">[</bpt>Deferred<ept id="p1">](../interfaces/defer-ideferred.md)</ept> <ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Returns <bpt id="p1">[</bpt>Deferred<ept id="p1">](../interfaces/defer-ideferred.md)</ept> <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Deferred<ept id="p1">](../interfaces/defer-ideferred.md)</ept> <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph> を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>reject</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">否認</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>reject(error?: any): Promise <ph id="ph1">&amp;lt;</ph>any<ph id="ph2">&amp;gt;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">reject(error?: any): Promise <ph id="ph1">&amp;lt;</ph>any<ph id="ph2">&amp;gt;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>error?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>any</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Returns Promise <ph id="ph1">&amp;lt;</ph>any<ph id="ph2">&amp;gt;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Promise <ph id="ph1">&amp;lt;</ph>any<ph id="ph2">&amp;gt;</ph> を返します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>resolve</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">解決</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>resolve <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph>(value?: T &amp;#124; PromiseLike <ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph>): Promise <ph id="ph5">&amp;lt;</ph>T<ph id="ph6">&amp;gt;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">resolve <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph> (value?: T &amp;#124; PromiseLike <ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph>) : Promise <ph id="ph5">&amp;lt;</ph>T<ph id="ph6">&amp;gt;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">型</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>value?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">value?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>T &amp;#124; PromiseLike <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">T &amp;#124; PromiseLike <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Returns Promise <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Promise <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph> を返します</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: 延期モジュール
+description: 延期タイプ
+author: shadykdc
+manager: AnnBe
+ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: ''
+ms.search.region: Global
+ms.author: kashea
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: b1762e999010f87dbac3ac6186e79a19d445f44c
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547342"
+---
+# <a name="defer-module"></a><span data-ttu-id="d3a02-103">延期モジュール</span><span class="sxs-lookup"><span data-stu-id="d3a02-103">Defer module</span></span>
+
+[!include [banner](../../../../includes/banner.md)]
+
+## <a name="index"></a><span data-ttu-id="d3a02-104">指数</span><span class="sxs-lookup"><span data-stu-id="d3a02-104">Index</span></span>
+
+### <a name="types"></a><span data-ttu-id="d3a02-105">種類</span><span class="sxs-lookup"><span data-stu-id="d3a02-105">Types</span></span>
+
+* [<span data-ttu-id="d3a02-106">Deferred</span><span class="sxs-lookup"><span data-stu-id="d3a02-106">Deferred</span></span>](../interfaces/defer-ideferred.md)
+
+### <a name="functions"></a><span data-ttu-id="d3a02-107">関数</span><span class="sxs-lookup"><span data-stu-id="d3a02-107">Functions</span></span>
+
+* [<span data-ttu-id="d3a02-108">すべて</span><span class="sxs-lookup"><span data-stu-id="d3a02-108">all</span></span>](defer.md#all)
+* [<span data-ttu-id="d3a02-109">延期</span><span class="sxs-lookup"><span data-stu-id="d3a02-109">defer</span></span>](defer.md)
+* [<span data-ttu-id="d3a02-110">否認</span><span class="sxs-lookup"><span data-stu-id="d3a02-110">reject</span></span>](defer.md#reject)
+* [<span data-ttu-id="d3a02-111">解決</span><span class="sxs-lookup"><span data-stu-id="d3a02-111">resolve</span></span>](defer.md#resolve)
+
+## <a name="types"></a><span data-ttu-id="d3a02-112">種類</span><span class="sxs-lookup"><span data-stu-id="d3a02-112">Types</span></span>
+
+
+### <a name="deferred"></a><span data-ttu-id="d3a02-113">繰延</span><span class="sxs-lookup"><span data-stu-id="d3a02-113">Deferred</span></span>
+
+#### <a name="hierarchy"></a><span data-ttu-id="d3a02-114">階層</span><span class="sxs-lookup"><span data-stu-id="d3a02-114">Hierarchy</span></span>
+
+<span data-ttu-id="d3a02-115">繰延</span><span class="sxs-lookup"><span data-stu-id="d3a02-115">Deferred</span></span> <br>
+
+#### <a name="properties"></a><span data-ttu-id="d3a02-116">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d3a02-116">Properties</span></span>
+
+| <span data-ttu-id="d3a02-117">氏名</span><span class="sxs-lookup"><span data-stu-id="d3a02-117">Name</span></span> | <span data-ttu-id="d3a02-118">署名</span><span class="sxs-lookup"><span data-stu-id="d3a02-118">Signature</span></span> | <span data-ttu-id="d3a02-119">説明</span><span class="sxs-lookup"><span data-stu-id="d3a02-119">Description</span></span> |
+| ---- | --------- | ----------- |
+| [<span data-ttu-id="d3a02-120">promise</span><span class="sxs-lookup"><span data-stu-id="d3a02-120">promise</span></span>](../interfaces/defer-ideferred.md#promise) |<span data-ttu-id="d3a02-121">promise: Promise &lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="d3a02-121">promise: Promise &lt;T&gt;</span></span> <br>|  |
+
+#### <a name="methods"></a><span data-ttu-id="d3a02-122">メソッド</span><span class="sxs-lookup"><span data-stu-id="d3a02-122">Methods</span></span>
+
+| <span data-ttu-id="d3a02-123">氏名</span><span class="sxs-lookup"><span data-stu-id="d3a02-123">Name</span></span> | <span data-ttu-id="d3a02-124">署名</span><span class="sxs-lookup"><span data-stu-id="d3a02-124">Signature</span></span> | <span data-ttu-id="d3a02-125">説明</span><span class="sxs-lookup"><span data-stu-id="d3a02-125">Description</span></span> |
+| ---- | --------- | ----------- |
+| [<span data-ttu-id="d3a02-126">否認</span><span class="sxs-lookup"><span data-stu-id="d3a02-126">reject</span></span>](../interfaces/defer-ideferred.md#reject) |<span data-ttu-id="d3a02-127">reject(error?: any): void</span><span class="sxs-lookup"><span data-stu-id="d3a02-127">reject(error?: any): void</span></span>|  |
+| [<span data-ttu-id="d3a02-128">解決</span><span class="sxs-lookup"><span data-stu-id="d3a02-128">resolve</span></span>](../interfaces/defer-ideferred.md#resolve) |<span data-ttu-id="d3a02-129">resolve (value?: T &#124; PromiseLike &lt;T&gt;) : void</span><span class="sxs-lookup"><span data-stu-id="d3a02-129">resolve(value?: T &#124; PromiseLike &lt;T&gt;): void</span></span>|  |
+
+## <a name="functions"></a><span data-ttu-id="d3a02-130">ファンクション</span><span class="sxs-lookup"><span data-stu-id="d3a02-130">Functions</span></span>
+
+
+### <a name="all"></a><span data-ttu-id="d3a02-131">すべて</span><span class="sxs-lookup"><span data-stu-id="d3a02-131">all</span></span>
+<span data-ttu-id="d3a02-132">all(...args: any [ ]): Promise &lt;any [ ]&gt;</span><span class="sxs-lookup"><span data-stu-id="d3a02-132">all(...args: any [ ]): Promise &lt;any [ ]&gt;</span></span>
+
+
+
+
+#### <a name="parameters"></a><span data-ttu-id="d3a02-133">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d3a02-133">Parameters</span></span>
+
+| <span data-ttu-id="d3a02-134">氏名</span><span class="sxs-lookup"><span data-stu-id="d3a02-134">Name</span></span> | <span data-ttu-id="d3a02-135">種類</span><span class="sxs-lookup"><span data-stu-id="d3a02-135">Type</span></span> | <span data-ttu-id="d3a02-136">説明</span><span class="sxs-lookup"><span data-stu-id="d3a02-136">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="d3a02-137">...args</span><span class="sxs-lookup"><span data-stu-id="d3a02-137">...args</span></span>|<span data-ttu-id="d3a02-138">any [ ]</span><span class="sxs-lookup"><span data-stu-id="d3a02-138">any [ ]</span></span>||
+
+#### <a name="returns-promise-ltany--gt"></a><span data-ttu-id="d3a02-139">Promise &lt;any [ ]&gt; を返します</span><span class="sxs-lookup"><span data-stu-id="d3a02-139">Returns Promise &lt;any [ ]&gt;</span></span>
+
+
+### <a name="defer"></a><span data-ttu-id="d3a02-140">defer</span><span class="sxs-lookup"><span data-stu-id="d3a02-140">defer</span></span>
+<span data-ttu-id="d3a02-141">defer &lt;T&gt;(): [Deferred](../interfaces/defer-ideferred.md) &lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="d3a02-141">defer &lt;T&gt;(): [Deferred](../interfaces/defer-ideferred.md) &lt;T&gt;</span></span>
+
+
+
+#### <a name="returns-deferredinterfacesdefer-ideferredmd-lttgt"></a><span data-ttu-id="d3a02-142">[Deferred](../interfaces/defer-ideferred.md) &lt;T&gt; を返します</span><span class="sxs-lookup"><span data-stu-id="d3a02-142">Returns [Deferred](../interfaces/defer-ideferred.md) &lt;T&gt;</span></span>
+
+
+### <a name="reject"></a><span data-ttu-id="d3a02-143">否認</span><span class="sxs-lookup"><span data-stu-id="d3a02-143">reject</span></span>
+<span data-ttu-id="d3a02-144">reject(error?: any): Promise &lt;any&gt;</span><span class="sxs-lookup"><span data-stu-id="d3a02-144">reject(error?: any): Promise &lt;any&gt;</span></span>
+
+
+
+
+#### <a name="parameters"></a><span data-ttu-id="d3a02-145">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d3a02-145">Parameters</span></span>
+
+| <span data-ttu-id="d3a02-146">氏名</span><span class="sxs-lookup"><span data-stu-id="d3a02-146">Name</span></span> | <span data-ttu-id="d3a02-147">種類</span><span class="sxs-lookup"><span data-stu-id="d3a02-147">Type</span></span> | <span data-ttu-id="d3a02-148">説明</span><span class="sxs-lookup"><span data-stu-id="d3a02-148">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="d3a02-149">エラー?</span><span class="sxs-lookup"><span data-stu-id="d3a02-149">error?</span></span>|<span data-ttu-id="d3a02-150">any</span><span class="sxs-lookup"><span data-stu-id="d3a02-150">any</span></span>||
+
+#### <a name="returns-promise-ltanygt"></a><span data-ttu-id="d3a02-151">Promise &lt;any&gt; を返します</span><span class="sxs-lookup"><span data-stu-id="d3a02-151">Returns Promise &lt;any&gt;</span></span>
+
+
+### <a name="resolve"></a><span data-ttu-id="d3a02-152">解決</span><span class="sxs-lookup"><span data-stu-id="d3a02-152">resolve</span></span>
+<span data-ttu-id="d3a02-153">resolve &lt;T&gt; (value?: T &#124; PromiseLike &lt;T&gt;) : Promise &lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="d3a02-153">resolve &lt;T&gt;(value?: T &#124; PromiseLike &lt;T&gt;): Promise &lt;T&gt;</span></span>
+
+
+
+
+#### <a name="parameters"></a><span data-ttu-id="d3a02-154">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d3a02-154">Parameters</span></span>
+
+| <span data-ttu-id="d3a02-155">氏名</span><span class="sxs-lookup"><span data-stu-id="d3a02-155">Name</span></span> | <span data-ttu-id="d3a02-156">型</span><span class="sxs-lookup"><span data-stu-id="d3a02-156">Type</span></span> | <span data-ttu-id="d3a02-157">説明</span><span class="sxs-lookup"><span data-stu-id="d3a02-157">Description</span></span> |
+| ---- | ---- | ----------- |
+| <span data-ttu-id="d3a02-158">value?</span><span class="sxs-lookup"><span data-stu-id="d3a02-158">value?</span></span>|<span data-ttu-id="d3a02-159">T &#124; PromiseLike &lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="d3a02-159">T &#124; PromiseLike &lt;T&gt;</span></span>||
+
+#### <a name="returns-promise-lttgt"></a><span data-ttu-id="d3a02-160">Promise &lt;T&gt; を返します</span><span class="sxs-lookup"><span data-stu-id="d3a02-160">Returns Promise &lt;T&gt;</span></span>
+

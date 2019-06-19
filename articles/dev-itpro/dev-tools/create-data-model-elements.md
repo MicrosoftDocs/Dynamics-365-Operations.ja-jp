@@ -1,555 +1,215 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="create-data-model-elements.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>create-data-model-elements.0d1bb9.ff58bb6067cd516bf3fb5054879ca78fc458ce09.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>ff58bb6067cd516bf3fb5054879ca78fc458ce09</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-tools\create-data-model-elements.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Create models and data model elements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルとデータ モデル要素の作成</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>In this tutorial, you'll use Visual Studio's Dynamics 365 menu to create a new model named Fleet Management tutorial.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、Visual Studio の Dynamics 365 メニューを使用して、フリート管理チュートリアルという名前の新しいモデルを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>You'll also create and edit new model elements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、新しいモデルの要素を作成および編集します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Create models and data model elements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルとデータ モデル要素の作成</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>In this tutorial, you'll use Visual Studio's Dynamics 365 menu to create a new model named Fleet Management tutorial in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、Visual Studio の Dynamics 365 メニューを使用して、Microsoft Dynamics 365 for Finance and Operations でフリート管理チュートリアルという名前の新しいモデルを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>You'll also create and edit new model elements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、新しいモデルの要素を作成および編集します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Prerequisites</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要条件</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>This tutorial requires that you have access to a Finance and Operations environment, and that you be provisioned as an administrator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、Finance and Operations 環境にアクセスし、管理者としてプロビジョニングする必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Keywords</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キーワード</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source><bpt id="p1">**</bpt>Model<ept id="p1">**</ept> - You configure your model to refer to two other models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>モデル<ept id="p1">**</ept> - 他の 2 つのモデルを参照するモデルをコンフィギュレーションします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>This enables your model to reference metadata and code elements that are in other packages.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、モデルは他のパッケージにあるメタデータとコード要素を参照できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">**</bpt>Project<ept id="p1">**</ept> - You create a <bpt id="p2">**</bpt>Unified Operations<ept id="p2">**</ept> project, and you associate your project to your new model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロジェクト<ept id="p1">**</ept> -<bpt id="p2">**</bpt>Unified Operations<ept id="p2">**</ept> プロジェクトを作成し、プロジェクトを新しいモデルに関連付けます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>You add elements to your project, which are also added to your model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要素をプロジェクトに追加します。これはモデルにも追加されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Specifically, you add an extended data type (EDT).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">具体的には、拡張データ型 (EDT) を追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>You also add a table that you populate with fields and a method.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、フィールドおよびメソッドで入力するテーブルを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">**</bpt>Designer<ept id="p1">**</ept> - Each time you add an item to your project, a designer is displayed that is tailored to the item type you selected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>デザイナー<ept id="p1">**</ept> - プロジェクトに品目を追加するたびに、選択した品目タイプに合わせたデザイナーが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>The <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window adjusts each time a different node of the designer is highlighted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウは、デザイナーの異なるノードが強調表示されるたびに調整されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>You make updates in the designers and in the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイナーおよび <bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウで更新を行います。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source><bpt id="p1">**</bpt>EDT<ept id="p1">**</ept> - Extended data type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>EDT<ept id="p1">**</ept> - 拡張データ型。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Create the Fleet Management tutorial model</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フリート管理チュートリアル モデルを作成する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Start Visual Studio using <bpt id="p1">**</bpt>Run as administrator<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>管理者として実行<ept id="p1">**</ept> を使用して Visual Studio を起動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>From the <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> window, select <bpt id="p2">**</bpt>Model Management <ph id="ph1">&amp;gt;</ph> Create model<ept id="p2">**</ept> to open the <bpt id="p3">**</bpt>Create model<ept id="p3">**</ept> wizard.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> ウィンドウから、<bpt id="p2">**</bpt>モデル管理 <ph id="ph1">&amp;gt;</ph> モデルの作成<ept id="p2">**</ept>を選択して、<bpt id="p3">**</bpt>モデルの作成<ept id="p3">**</ept>ウィザードを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Enter the following values for model parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル パラメーターの以下の値を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source><bpt id="p1">**</bpt>Model name<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>モデル名<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>FleetMgmntTutorial</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FleetMgmntTutorial</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source><bpt id="p1">**</bpt>Model publisher<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>モデル発行元<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Microsoft Corp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Corp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">**</bpt>Layer<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>レイヤー<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>isv</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">isv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">**</bpt>Model description<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>モデルの説明<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>This tutorial shows how to build the Fleet Management application by using the Microsoft Dynamics AX  development tools.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、Microsoft Dynamics AX の開発ツールを使用して、フリート管理 アプリケーションを構築する方法を示します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source><bpt id="p1">**</bpt>Model display name<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>モデルの表示名<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Fleet Management Tutorial</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フリート管理のチュートリアル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Your model name must be <bpt id="p1">**</bpt>FleetMgmntTutorial<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルの名前は <bpt id="p1">**</bpt>FleetMgmntTutorial<ept id="p1">**</ept> である必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Don't use any other name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他の名前は使用しないでください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>In other tutorials, you'll overwrite model elements in this model by importing a project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のチュートリアルでは、プロジェクトをインポートすることでこのモデル内のモデル要素を上書きします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>If the model you create in this tutorial isn't named <bpt id="p1">**</bpt>FleetMgmntTutorial<ept id="p1">**</ept>, you may not be able to correctly import the project in other tutorials.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルで作成したモデルに <bpt id="p1">**</bpt>FleetMgmntTutorial<ept id="p1">**</ept> という名前が付けられていない場合、その他のチュートリアルでプロジェクトが正しくインポートできない可能性があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to advance to the next page, and then select <bpt id="p2">**</bpt>Create New Package<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>次へ<ept id="p1">**</ept>をクリックして次のページに移動し、次に<bpt id="p2">**</bpt>新しいパッケージの作成<ept id="p2">**</ept>を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>The model you're creating will have its own package and build its own .NET assembly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成しているモデルは独自のパッケージを持ち、独自の .NET アセンブリを構築します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Package<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/package_datamodel.png)](./media/package_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Package<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/package_datamodel.png)](./media/package_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to advance to the <bpt id="p2">**</bpt>Select referenced models<ept id="p2">**</ept> step.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>次へ<ept id="p1">**</ept>をクリックし、<bpt id="p2">**</bpt>参照モデルを選択<ept id="p2">**</ept>ステップに進みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Select <bpt id="p1">**</bpt>Application Platform<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Application Foundation<ept id="p2">**</ept> as referenced models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">参照されるモデルとして <bpt id="p1">**</bpt>アプリケーション プラットフォーム<ept id="p1">**</ept> および <bpt id="p2">**</bpt>アプリケーション基盤<ept id="p2">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>ReferenceModels<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/referencemodels_datamodel.png)](./media/referencemodels_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>ReferenceModels<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/referencemodels_datamodel.png)](./media/referencemodels_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Verify that you've selected the correct referenced models.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">正しい参照モデルを選択していることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to advance to the <bpt id="p2">**</bpt>Summary<ept id="p2">**</ept> step.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>次へ<ept id="p1">**</ept>をクリックし、<bpt id="p2">**</bpt>概要<ept id="p2">**</ept>ステップに進みます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Verify the information on the summary page, and then select the <bpt id="p1">**</bpt>Create new project<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Make this my default model for new projects<ept id="p2">**</ept> check boxes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">概要ページの情報を確認してから、<bpt id="p1">**</bpt>新規プロジェクトの作成<ept id="p1">**</ept> および <bpt id="p2">**</bpt>これを新規プロジェクトの自分の既定のモデルにする<ept id="p2">**</ept> チェック ボックスを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Summary<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/summary_datamodel.png)](./media/summary_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Summary<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/summary_datamodel.png)](./media/summary_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>完了<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box opens.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新しいプロジェクト<ept id="p1">**</ept> ダイアログ ボックスが開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Under <bpt id="p1">**</bpt>Templates<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Dynamics 365<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テンプレート<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>Dynamics 365<ept id="p2">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Select the <bpt id="p1">**</bpt>Unified Operations<ept id="p1">**</ept> template.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Unified Operations<ept id="p1">**</ept> テンプレートを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Enter the following values in the fields in the dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ダイアログ ボックスのフィールドに次の値を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source><bpt id="p1">**</bpt>Name<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>名前<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>FMTDataModel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTDataModel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source><bpt id="p1">**</bpt>Location<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保管場所<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>C:<ph id="ph1">\\</ph>FMLab</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">C:<ph id="ph1">\\</ph>FMLab</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source><bpt id="p1">**</bpt>Solution<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Add to solution</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューションへの追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>NewProject<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/newproject_datamodel.png)](./media/newproject_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>NewProject<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/newproject_datamodel.png)](./media/newproject_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to create the project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトを作成するには、<bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Create the FMTAddress extended data type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTAddress の拡張データ型を作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMTDataModel<ept id="p2">**</ept>, point to <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>New Item<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>FMTDataModel<ept id="p2">**</ept> を右クリックして<bpt id="p3">**</bpt>追加<ept id="p3">**</ept>をポイントしてから<bpt id="p4">**</bpt>新しい項目<ept id="p4">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Under <bpt id="p1">**</bpt>Dynamics 365 Items<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Data Types<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dynamics 365 品目<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>データ型<ept id="p2">**</ept>を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Click <bpt id="p1">**</bpt>EDT String<ept id="p1">**</ept> to select the new item type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>EDT 文字列<ept id="p1">**</ept>をクリックし、を新しい項目の種類を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, enter <bpt id="p2">**</bpt>FMTAddress<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>名前<ept id="p1">**</ept>フィールドに、<bpt id="p2">**</bpt>FMTAddress<ept id="p2">**</ept> と入力してから<bpt id="p3">**</bpt>追加<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>NewItem<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/newitem_datamodel.png)](./media/newitem_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>NewItem<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/newitem_datamodel.png)](./media/newitem_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>This adds a new EDT model element to the project, and opens the EDT designer for the new element, as shown in the following illustration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、新しい EDT モデル要素をプロジェクトに追加され、次の図に示すように、新しい要素の EDT デザイナーを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>EDTelement<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/edtelement_datamodel.png)](./media/edtelement_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>EDTelement<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/edtelement_datamodel.png)](./media/edtelement_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Select the root node of <bpt id="p1">**</bpt>FMTAddress<ept id="p1">**</ept> in the designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイナーで <bpt id="p1">**</bpt>FMTAddress<ept id="p1">**</ept> ルート ノードを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, in the <bpt id="p2">**</bpt>Appearance section<ept id="p2">**</ept>, set the following properties.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウの<bpt id="p2">**</bpt>外観セクション<ept id="p2">**</ept>で、次のプロパティを設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source><bpt id="p1">**</bpt>Help Text<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ヘルプ テキスト<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Check online help.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンライン ヘルプをチェックしてください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source><bpt id="p1">**</bpt>Label<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ラベル<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Address</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アドレス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source><bpt id="p1">**</bpt>String Size<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>文字列サイズ<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>75</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">75</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>EDTProperty<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/edtproperty_datamodel.png)](./media/edtproperty_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>EDTProperty<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/edtproperty_datamodel.png)](./media/edtproperty_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Press <bpt id="p1">**</bpt>Ctrl+S<ept id="p1">**</ept> to save the EDT.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ctrl+S<ept id="p1">**</ept> キーを押して EDT を保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Add existing model</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既存のモデルの追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Add the other required model element files to the current model and project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のモデルとプロジェクトに他の必要なモデル要素ファイルを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>You can do this quickly by using the <bpt id="p1">**</bpt>Add existing item<ept id="p1">**</ept> feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>既存の品目を追加<ept id="p1">**</ept> フィーチャーを使用することにより、これを素早く実行することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>In the <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMTDataModel<ept id="p2">**</ept>, point to <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>Existing Item<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>FMTDataModel<ept id="p2">**</ept> を右クリックして<bpt id="p3">**</bpt>追加<ept id="p3">**</ept>をポイントしてから<bpt id="p4">**</bpt>既存の項目<ept id="p4">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Browse to C:<ph id="ph1">\\</ph>FMLab<ph id="ph2">\\</ph>EDT<ph id="ph3">\\</ph>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">C:<ph id="ph1">\\</ph>FMLab<ph id="ph2">\\</ph>EDT<ph id="ph3">\\</ph> を参照します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>ExistingItem<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/existingitem_datamodel.png)](./media/existingitem_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>ExistingItem<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/existingitem_datamodel.png)](./media/existingitem_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Press <bpt id="p1">**</bpt>Ctrl+A<ept id="p1">**</ept> to select all of the files, and then click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ctrl+A<ept id="p1">**</ept> を押してすべてのファイルを選択し、<bpt id="p2">**</bpt>追加<ept id="p2">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Create the FMTCustomer table</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTCustomer テーブルを作成します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMTDataModel<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Add <ph id="ph1">&amp;gt;</ph> New Item<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>FMTDataModel<ept id="p2">**</ept> を右クリックしてから<bpt id="p3">**</bpt>追加 <ph id="ph1">&amp;gt;</ph> 新しい項目<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>In the left pane, expand <bpt id="p1">**</bpt>Installed<ept id="p1">**</ept>, expand <bpt id="p2">**</bpt>Dynamics 365 Items<ept id="p2">**</ept> and then click <bpt id="p3">**</bpt>Data Model<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">左ウィンドウで、<bpt id="p1">**</bpt>インストール済み<ept id="p1">**</ept>を展開し、<bpt id="p2">**</bpt>Dynamics 365 品目<ept id="p2">**</ept>を展開してから、<bpt id="p3">**</bpt>データ モデル<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>In the list of artifacts, select <bpt id="p1">**</bpt>Table<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーティファクトの一覧で<bpt id="p1">**</bpt>テーブル<ept id="p1">**</ept>を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, enter <bpt id="p2">**</bpt>FMTCustomer<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>名前<ept id="p1">**</ept>フィールドに、<bpt id="p2">**</bpt>FMTCustomer<ept id="p2">**</ept> と入力してから<bpt id="p3">**</bpt>追加<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>The table designer opens.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル デザイナーが開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Add<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/add_datamodel.png)](./media/add_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Add<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/add_datamodel.png)](./media/add_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Add fields to the FMTCustomer table</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTCustomer テーブルへのフィールドの追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>In the table designer for FMTCustomer, you now add several fields to the table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTCustomer のテーブル デザイナーで、テーブルに複数のフィールドを追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AddFields<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/addfields_datamodel.png)](./media/addfields_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>AddFields<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/addfields_datamodel.png)](./media/addfields_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>To add each field, right-click <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then select a type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各フィールドを追加するには、<bpt id="p1">**</bpt>フィールド<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>新規<ept id="p2">**</ept> をクリックして、タイプを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>As you add each field, you must specify the field name and certain other values in the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, as described in the following table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各フィールドを追加すると、次の表に示すように、<bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウでフィールド名とその他の特定の値を指定する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source><bpt id="p1">**</bpt>Type<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>タイプ<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source><bpt id="p1">**</bpt>Field name<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド名<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source><bpt id="p1">**</bpt>Property values<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ値<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source><bpt id="p1">**</bpt>Date<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>日付<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>CCExpiryDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CCExpiryDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Extended Data Type = FMTCCExpiryDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張データ型 = FMTCCExpiryDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source><bpt id="p1">**</bpt>String<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>文字列<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Address</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アドレス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Extended Data Type = FMTAddressHelp Text = Help text for the address field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張データ型 = FMTAddressHelp テキスト = アドレス フィールドのヘルプ テキスト。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source><bpt id="p1">**</bpt>String<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>文字列<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>CellPhone</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CellPhone</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Extended Data Type = Phone</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張データ型 = 電話</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source><bpt id="p1">**</bpt>String<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>文字列<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>CreditCardNum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CreditCardNum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Extended Data Type = FMTCreditCardNum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張データ型 = FMTCreditCardNum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source><bpt id="p1">**</bpt>String<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>文字列<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>DriversLicense</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DriversLicense</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Extended Data Type = FMTDriversLicense</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張データ型 = FMTDriversLicense</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source><bpt id="p1">**</bpt>String<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>文字列<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Email</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>String Size = 80Label = Email</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字列サイズ = 80Label = 電子メール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source><bpt id="p1">**</bpt>String<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>文字列<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>FirstName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Extended Data Type = FirstName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張データ型 = FirstName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source><bpt id="p1">**</bpt>String<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>文字列<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>LastName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">姓</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Extended Data Type = LastName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張データ型 = LastName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source><bpt id="p1">**</bpt>String<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>文字列<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>License</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>String Size = 100Label = License</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字列サイズ = 100Label = ライセンス</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source><bpt id="p1">**</bpt>String<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>文字列<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Thumbnail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">縮小版</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>String Size = 100Label = Thumbnail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字列サイズ = 100Label = サムネイル</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>For all new fields in the table that reference an EDT, you can create the field by simply dragging the EDT element from <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Application Explorer<ept id="p2">**</ept> and dropping it on the <bpt id="p3">**</bpt>Fields<ept id="p3">**</ept> node of the <bpt id="p4">**</bpt>FMTCustomer<ept id="p4">**</ept> table in the designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDT を参照するテーブル内のすべての新しいフィールドでは、<bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>または<bpt id="p2">**</bpt>アプリケーション エクスプローラー<ept id="p2">**</ept>から EDT エレメントをドラッグし、デザイナーの <bpt id="p4">**</bpt>FMTCustomer<ept id="p4">**</ept> テーブルの<bpt id="p3">**</bpt>フィールド<ept id="p3">**</ept>ノードをドロップするだけで、フィールドを作成できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AdministratorArrow<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/administratorarrow_datamodel.png)](./media/administratorarrow_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>AdministratorArrow<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/administratorarrow_datamodel.png)](./media/administratorarrow_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>Press <bpt id="p1">**</bpt>Ctrl+S<ept id="p1">**</ept> to save the new fields on the table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ctrl+S<ept id="p1">**</ept> キーを押して、テーブルに新しいフィールドを保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>Add fields to field groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド グループへのフィールドの追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Prepare to add some of the fields to the <bpt id="p1">**</bpt>AutoSummary<ept id="p1">**</ept> field group by selecting the fields in the following list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の一覧のフィールドを選択して、一部の不フィールドを <bpt id="p1">**</bpt>AutoSummary<ept id="p1">**</ept> フィールド グループに追加する準備をします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>To select multiple fields, hold down the Ctrl key while you click each field:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数のフィールドを選択するには、Ctrl キーを押しながら各フィールドをクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source><bpt id="p1">**</bpt>Address<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>住所<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source><bpt id="p1">**</bpt>CCExpiryDate<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CCExpiryDate<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source><bpt id="p1">**</bpt>CellPhone<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CellPhone<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source><bpt id="p1">**</bpt>CreditCardNum<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CreditCardNum<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source><bpt id="p1">**</bpt>DriversLicense<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DriversLicense<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source><bpt id="p1">**</bpt>Email<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>電子メール<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source><bpt id="p1">**</bpt>FirstName<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>名<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source><bpt id="p1">**</bpt>LastName<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>姓<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Expand the <bpt id="p1">**</bpt>Field Groups<ept id="p1">**</ept> node.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド グループ<ept id="p1">**</ept>ノードを展開します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Drag the selected fields to the <bpt id="p1">**</bpt>AutoSummary<ept id="p1">**</ept> node</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したフィールドを <bpt id="p1">**</bpt>AutoSummary<ept id="p1">**</ept> ノードにドラッグします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Use the same technique to add the fields <bpt id="p1">**</bpt>FirstName<ept id="p1">**</ept>, <bpt id="p2">**</bpt>LastName<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>CellPhone<ept id="p3">**</ept> to the <bpt id="p4">**</bpt>AutoReport<ept id="p4">**</ept> field group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同じ方法を使用して、<bpt id="p1">**</bpt>氏名<ept id="p1">**</ept>、<bpt id="p2">**</bpt>姓<ept id="p2">**</ept>、および<bpt id="p3">**</bpt>携帯<ept id="p3">**</ept>フィールドを<bpt id="p4">**</bpt>自動レポート<ept id="p4">**</ept>フィールド グループに追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Save the table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルを保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Add a method</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドの追加</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Add the X++ method named <bpt id="p1">**</bpt>fullName<ept id="p1">**</ept> to the <bpt id="p2">**</bpt>FMTCustomer<ept id="p2">**</ept> table by right-clicking the <bpt id="p3">**</bpt>Methods<ept id="p3">**</ept> node, and then clicking <bpt id="p4">**</bpt>New Method<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p3">**</bpt>Methods<ept id="p3">**</ept> ノードを右クリックし、<bpt id="p4">**</bpt>New Method<ept id="p4">**</ept> をクリックして、<bpt id="p2">**</bpt>FMTCustomer<ept id="p2">**</ept> テーブルに <bpt id="p1">**</bpt>fullName<ept id="p1">**</ept> という名前の X++ メソッドを 追加します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>In the code editor, replace the default method code with the following code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コード エディターで、既定のメソッドのコードを次のコードに置き換えます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>When you type “this.”, choose the field from the IntelliSense list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「this.」を入力するとき、IntelliSense リストからフィールドを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Save the code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コードを保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Update the FMTAddress EDT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTAddress EDT の更新</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, expand the <bpt id="p2">**</bpt>FMTDataModel<ept id="p2">**</ept> project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で <bpt id="p2">**</bpt>FMTDataModel<ept id="p2">**</ept> プロジェクトを展開します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Right-click <bpt id="p1">**</bpt>FMTAddress<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FMTAddress<ept id="p1">**</ept> を右クリックしてから、<bpt id="p2">**</bpt>開く<ept id="p2">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>The <bpt id="p1">**</bpt>EDT designer<ept id="p1">**</ept> opens.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>EDT デザイナー<ept id="p1">**</ept>が開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>In the <bpt id="p1">**</bpt>EDT designer<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>FMTAddress<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>EDT デザイナー<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>FMTAddress<ept id="p2">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, in the <bpt id="p2">**</bpt>Reference Table<ept id="p2">**</ept> field, select <bpt id="p3">**</bpt>FMTCustomer<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウの<bpt id="p2">**</bpt>参照テーブル<ept id="p2">**</ept> フィールドで、<bpt id="p3">**</bpt>FMTCustomer<ept id="p3">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source><bpt id="p1">**</bpt>Tip:<ept id="p1">**</ept> Click the drop-down list, and then type the prefix "FMT" in the search box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ヒント:<ept id="p1">**</ept> ドロップダウン リストをクリックし、検索ボックスに、接頭語「FMT」を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>This filters the drop-down list to only show tables that contain "FMT" in their name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、名前に「FMT」が含まれている表のみが表示されるように、ドロップダウン リストがフィルター処理されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Select the <bpt id="p1">**</bpt>FMTCustomer<ept id="p1">**</ept> table from the list of filtered entries.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィルター処理されたエントリの一覧から <bpt id="p1">**</bpt>FMTCustomer<ept id="p1">**</ept> テーブルを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>SearchFMT<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>SearchFMT<ph id="ph2">\_</ph>DataModel<ept id="p1">](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Save the EDT.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDT を保存します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Build the FMTDataModel project and the Fleet Management tutorial model</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTDataModel プロジェクトと フリート管理チュートリアル モデルの構築</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMTDataModel<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Rebuild<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>FMTDataModel<ept id="p2">**</ept> を右クリックしてから<bpt id="p3">**</bpt>リビルド<ept id="p3">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>To do a full build of the entire model, on the <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Build models<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル全体の完全なビルドを行うには、<bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> メニューで、<bpt id="p2">**</bpt>モデルをビルド<ept id="p2">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Clear the check box for all models except for <bpt id="p1">**</bpt>Fleet Management Tutorial<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フリート管理チュートリアル<ept id="p1">**</ept>以外のすべてのモデルのチェック ボックスをオフにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>On the <bpt id="p1">**</bpt>Options<ept id="p1">**</ept> tab, select the <bpt id="p2">**</bpt>Run Best practice checks<ept id="p2">**</ept> check box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>オプション<ept id="p1">**</ept>タブで、<bpt id="p2">**</bpt>推奨チェックの実行<ept id="p2">**</ept>チェック ボックスを選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>Note that other options available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用可能なその他のオプションに注意してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>On the <bpt id="p1">**</bpt>Models<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Build<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>モデル<ept id="p1">**</ept>タブで、<bpt id="p2">**</bpt>ビルド<ept id="p2">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept>  in the dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ダイアログ ボックスで <bpt id="p1">**</bpt>閉じる<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>On the <bpt id="p1">**</bpt>Window<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Close All Documents<ept id="p2">**</ept>, to close all open documents.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ウィンドウ<ept id="p1">**</ept>メニューで、<bpt id="p2">**</bpt>すべてのドキュメントを閉じる<ept id="p2">**</ept>をクリックして、開いているすべてのドキュメントを閉じます。</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: モデルとデータ モデル要素の作成
+description: このチュートリアルでは、Visual Studio の Dynamics 365 メニューを使用して、フリート管理チュートリアルという名前の新しいモデルを作成します。 また、新しいモデルの要素を作成および編集します。
+author: RobinARH
+manager: AnnBe
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 23421
+ms.assetid: 1b7789f4-12c1-480b-bb39-c354b5b03276
+ms.search.region: Global
+ms.author: robadawy
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ff58bb6067cd516bf3fb5054879ca78fc458ce09
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544159"
+---
+# <a name="create-models-and-data-model-elements"></a><span data-ttu-id="5eace-104">モデルとデータ モデル要素の作成</span><span class="sxs-lookup"><span data-stu-id="5eace-104">Create models and data model elements</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="5eace-105">このチュートリアルでは、Visual Studio の Dynamics 365 メニューを使用して、Microsoft Dynamics 365 for Finance and Operations でフリート管理チュートリアルという名前の新しいモデルを作成します。</span><span class="sxs-lookup"><span data-stu-id="5eace-105">In this tutorial, you'll use Visual Studio's Dynamics 365 menu to create a new model named Fleet Management tutorial in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="5eace-106">また、新しいモデルの要素を作成および編集します。</span><span class="sxs-lookup"><span data-stu-id="5eace-106">You'll also create and edit new model elements.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="5eace-107">必要条件</span><span class="sxs-lookup"><span data-stu-id="5eace-107">Prerequisites</span></span>
+
+<span data-ttu-id="5eace-108">このチュートリアルでは、Finance and Operations 環境にアクセスし、管理者としてプロビジョニングする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5eace-108">This tutorial requires that you have access to a Finance and Operations environment, and that you be provisioned as an administrator</span></span>
+
+## <a name="keywords"></a><span data-ttu-id="5eace-109">キーワード</span><span class="sxs-lookup"><span data-stu-id="5eace-109">Keywords</span></span>
+- <span data-ttu-id="5eace-110">**モデル** - 他の 2 つのモデルを参照するモデルをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="5eace-110">**Model** - You configure your model to refer to two other models.</span></span> <span data-ttu-id="5eace-111">これにより、モデルは他のパッケージにあるメタデータとコード要素を参照できます。</span><span class="sxs-lookup"><span data-stu-id="5eace-111">This enables your model to reference metadata and code elements that are in other packages.</span></span>
+- <span data-ttu-id="5eace-112">**プロジェクト** -**Unified Operations** プロジェクトを作成し、プロジェクトを新しいモデルに関連付けます。</span><span class="sxs-lookup"><span data-stu-id="5eace-112">**Project** - You create a **Unified Operations** project, and you associate your project to your new model.</span></span> <span data-ttu-id="5eace-113">要素をプロジェクトに追加します。これはモデルにも追加されます。</span><span class="sxs-lookup"><span data-stu-id="5eace-113">You add elements to your project, which are also added to your model.</span></span> <span data-ttu-id="5eace-114">具体的には、拡張データ型 (EDT) を追加します。</span><span class="sxs-lookup"><span data-stu-id="5eace-114">Specifically, you add an extended data type (EDT).</span></span> <span data-ttu-id="5eace-115">また、フィールドおよびメソッドで入力するテーブルを追加します。</span><span class="sxs-lookup"><span data-stu-id="5eace-115">You also add a table that you populate with fields and a method.</span></span>
+- <span data-ttu-id="5eace-116">**デザイナー** - プロジェクトに品目を追加するたびに、選択した品目タイプに合わせたデザイナーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="5eace-116">**Designer** - Each time you add an item to your project, a designer is displayed that is tailored to the item type you selected.</span></span> <span data-ttu-id="5eace-117">**プロパティ** ウィンドウは、デザイナーの異なるノードが強調表示されるたびに調整されます。</span><span class="sxs-lookup"><span data-stu-id="5eace-117">The **Properties** window adjusts each time a different node of the designer is highlighted.</span></span> <span data-ttu-id="5eace-118">デザイナーおよび **プロパティ** ウィンドウで更新を行います。</span><span class="sxs-lookup"><span data-stu-id="5eace-118">You make updates in the designers and in the **Properties** window.</span></span>
+- <span data-ttu-id="5eace-119">**EDT** - 拡張データ型。</span><span class="sxs-lookup"><span data-stu-id="5eace-119">**EDT** - Extended data type.</span></span>
+
+## <a name="create-the-fleet-management-tutorial-model"></a><span data-ttu-id="5eace-120">フリート管理チュートリアル モデルを作成する</span><span class="sxs-lookup"><span data-stu-id="5eace-120">Create the Fleet Management tutorial model</span></span>
+1.  <span data-ttu-id="5eace-121">**管理者として実行** を使用して Visual Studio を起動します。</span><span class="sxs-lookup"><span data-stu-id="5eace-121">Start Visual Studio using **Run as administrator**.</span></span>
+2.  <span data-ttu-id="5eace-122">**Dynamics 365** ウィンドウから、**モデル管理 &gt; モデルの作成**を選択して、**モデルの作成**ウィザードを開きます。</span><span class="sxs-lookup"><span data-stu-id="5eace-122">From the **Dynamics 365** window, select **Model Management &gt; Create model** to open the **Create model** wizard.</span></span>
+3.  <span data-ttu-id="5eace-123">モデル パラメーターの以下の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="5eace-123">Enter the following values for model parameters.</span></span>
+
+    | <span data-ttu-id="5eace-124">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="5eace-124">**Property**</span></span>           | <span data-ttu-id="5eace-125">**値**</span><span class="sxs-lookup"><span data-stu-id="5eace-125">**Value**</span></span>                                                                                                                |
+    |------------------------|--------------------------------------------------------------------------------------------------------------------------|
+    | <span data-ttu-id="5eace-126">**モデル名**</span><span class="sxs-lookup"><span data-stu-id="5eace-126">**Model name**</span></span>         | <span data-ttu-id="5eace-127">FleetMgmntTutorial</span><span class="sxs-lookup"><span data-stu-id="5eace-127">FleetMgmntTutorial</span></span>                                                                                                       |
+    | <span data-ttu-id="5eace-128">**モデル発行元**</span><span class="sxs-lookup"><span data-stu-id="5eace-128">**Model publisher**</span></span>    | <span data-ttu-id="5eace-129">Microsoft Corp</span><span class="sxs-lookup"><span data-stu-id="5eace-129">Microsoft Corp</span></span>                                                                                                           |
+    | <span data-ttu-id="5eace-130">**レイヤー**</span><span class="sxs-lookup"><span data-stu-id="5eace-130">**Layer**</span></span>              | <span data-ttu-id="5eace-131">isv</span><span class="sxs-lookup"><span data-stu-id="5eace-131">isv</span></span>                                                                                                                      |
+    | <span data-ttu-id="5eace-132">**モデルの説明**</span><span class="sxs-lookup"><span data-stu-id="5eace-132">**Model description**</span></span>  | <span data-ttu-id="5eace-133">このチュートリアルでは、Microsoft Dynamics AX の開発ツールを使用して、フリート管理 アプリケーションを構築する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5eace-133">This tutorial shows how to build the Fleet Management application by using the Microsoft Dynamics AX  development tools.</span></span> |
+    | <span data-ttu-id="5eace-134">**モデルの表示名**</span><span class="sxs-lookup"><span data-stu-id="5eace-134">**Model display name**</span></span> | <span data-ttu-id="5eace-135">フリート管理のチュートリアル</span><span class="sxs-lookup"><span data-stu-id="5eace-135">Fleet Management Tutorial</span></span>                                                                                                |
+
+    > [!NOTE]
+    > <span data-ttu-id="5eace-136">モデルの名前は **FleetMgmntTutorial** である必要があります。</span><span class="sxs-lookup"><span data-stu-id="5eace-136">Your model name must be **FleetMgmntTutorial**.</span></span> <span data-ttu-id="5eace-137">他の名前は使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="5eace-137">Don't use any other name.</span></span> <span data-ttu-id="5eace-138">その他のチュートリアルでは、プロジェクトをインポートすることでこのモデル内のモデル要素を上書きします。</span><span class="sxs-lookup"><span data-stu-id="5eace-138">In other tutorials, you'll overwrite model elements in this model by importing a project.</span></span> <span data-ttu-id="5eace-139">このチュートリアルで作成したモデルに **FleetMgmntTutorial** という名前が付けられていない場合、その他のチュートリアルでプロジェクトが正しくインポートできない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="5eace-139">If the model you create in this tutorial isn't named **FleetMgmntTutorial**, you may not be able to correctly import the project in other tutorials.</span></span>
+ 
+4.  <span data-ttu-id="5eace-140">**次へ**をクリックして次のページに移動し、次に**新しいパッケージの作成**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-140">Click **Next** to advance to the next page, and then select **Create New Package**.</span></span> <span data-ttu-id="5eace-141">作成しているモデルは独自のパッケージを持ち、独自の .NET アセンブリを構築します。</span><span class="sxs-lookup"><span data-stu-id="5eace-141">The model you're creating will have its own package and build its own .NET assembly.</span></span> 
+
+    <span data-ttu-id="5eace-142">[![Package\_DataModel](./media/package_datamodel.png)](./media/package_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-142">[![Package\_DataModel](./media/package_datamodel.png)](./media/package_datamodel.png)</span></span>
+
+5.  <span data-ttu-id="5eace-143">**次へ**をクリックし、**参照モデルを選択**ステップに進みます。</span><span class="sxs-lookup"><span data-stu-id="5eace-143">Click **Next** to advance to the **Select referenced models** step.</span></span>
+6.  <span data-ttu-id="5eace-144">参照されるモデルとして **アプリケーション プラットフォーム** および **アプリケーション基盤** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-144">Select **Application Platform** and **Application Foundation** as referenced models.</span></span>
+
+    <span data-ttu-id="5eace-145">[![ReferenceModels\_DataModel](./media/referencemodels_datamodel.png)](./media/referencemodels_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-145">[![ReferenceModels\_DataModel](./media/referencemodels_datamodel.png)](./media/referencemodels_datamodel.png)</span></span> 
+
+    > [!IMPORTANT]
+    > <span data-ttu-id="5eace-146">正しい参照モデルを選択していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="5eace-146">Verify that you've selected the correct referenced models.</span></span>
+    
+7.  <span data-ttu-id="5eace-147">**次へ**をクリックし、**概要**ステップに進みます。</span><span class="sxs-lookup"><span data-stu-id="5eace-147">Click **Next** to advance to the **Summary** step.</span></span>
+8.  <span data-ttu-id="5eace-148">概要ページの情報を確認してから、**新規プロジェクトの作成** および **これを新規プロジェクトの自分の既定のモデルにする** チェック ボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-148">Verify the information on the summary page, and then select the **Create new project** and **Make this my default model for new projects** check boxes.</span></span> 
+
+    <span data-ttu-id="5eace-149">[![Summary\_DataModel](./media/summary_datamodel.png)](./media/summary_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-149">[![Summary\_DataModel](./media/summary_datamodel.png)](./media/summary_datamodel.png)</span></span>
+
+9.  <span data-ttu-id="5eace-150">**完了** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-150">Click **Finish**.</span></span> <span data-ttu-id="5eace-151">**新しいプロジェクト** ダイアログ ボックスが開きます。</span><span class="sxs-lookup"><span data-stu-id="5eace-151">The **New Project** dialog box opens.</span></span>
+10. <span data-ttu-id="5eace-152">**テンプレート**で、**Dynamics 365** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-152">Under **Templates**, select **Dynamics 365**.</span></span>
+11. <span data-ttu-id="5eace-153">**Unified Operations** テンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-153">Select the **Unified Operations** template.</span></span>
+12. <span data-ttu-id="5eace-154">ダイアログ ボックスのフィールドに次の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="5eace-154">Enter the following values in the fields in the dialog box.</span></span>
+
+    | <span data-ttu-id="5eace-155">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="5eace-155">**Property**</span></span> | <span data-ttu-id="5eace-156">**値**</span><span class="sxs-lookup"><span data-stu-id="5eace-156">**Value**</span></span>       |
+    |--------------|-----------------|
+    | <span data-ttu-id="5eace-157">**名前**</span><span class="sxs-lookup"><span data-stu-id="5eace-157">**Name**</span></span>     | <span data-ttu-id="5eace-158">FMTDataModel</span><span class="sxs-lookup"><span data-stu-id="5eace-158">FMTDataModel</span></span>    |
+    | <span data-ttu-id="5eace-159">**保管場所**</span><span class="sxs-lookup"><span data-stu-id="5eace-159">**Location**</span></span> | <span data-ttu-id="5eace-160">C:\\FMLab</span><span class="sxs-lookup"><span data-stu-id="5eace-160">C:\\FMLab</span></span>       |
+    | <span data-ttu-id="5eace-161">**ソリューション**</span><span class="sxs-lookup"><span data-stu-id="5eace-161">**Solution**</span></span> | <span data-ttu-id="5eace-162">ソリューションへの追加</span><span class="sxs-lookup"><span data-stu-id="5eace-162">Add to solution</span></span> |
+
+    <span data-ttu-id="5eace-163">[![NewProject\_DataModel](./media/newproject_datamodel.png)](./media/newproject_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-163">[![NewProject\_DataModel](./media/newproject_datamodel.png)](./media/newproject_datamodel.png)</span></span>
+
+13. <span data-ttu-id="5eace-164">プロジェクトを作成するには、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-164">Click **OK** to create the project.</span></span>
+
+## <a name="create-the-fmtaddress-extended-data-type"></a><span data-ttu-id="5eace-165">FMTAddress の拡張データ型を作成します。</span><span class="sxs-lookup"><span data-stu-id="5eace-165">Create the FMTAddress extended data type</span></span>
+1.  <span data-ttu-id="5eace-166">**ソリューション エクスプローラー**で、**FMTDataModel** を右クリックして**追加**をポイントしてから**新しい項目**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-166">In **Solution Explorer**, right-click **FMTDataModel**, point to **Add**, and then click **New Item**.</span></span>
+2.  <span data-ttu-id="5eace-167">**Dynamics 365 品目**で、**データ型**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-167">Under **Dynamics 365 Items**, select **Data Types**.</span></span>
+3.  <span data-ttu-id="5eace-168">**EDT 文字列**をクリックし、を新しい項目の種類を選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-168">Click **EDT String** to select the new item type.</span></span>
+4.  <span data-ttu-id="5eace-169">**名前**フィールドに、**FMTAddress** と入力してから**追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-169">In the **Name** field, enter **FMTAddress**, and then click **Add**.</span></span> 
+
+    <span data-ttu-id="5eace-170">[![NewItem\_DataModel](./media/newitem_datamodel.png)](./media/newitem_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-170">[![NewItem\_DataModel](./media/newitem_datamodel.png)](./media/newitem_datamodel.png)</span></span> 
+
+    <span data-ttu-id="5eace-171">これにより、新しい EDT モデル要素をプロジェクトに追加され、次の図に示すように、新しい要素の EDT デザイナーを開きます。</span><span class="sxs-lookup"><span data-stu-id="5eace-171">This adds a new EDT model element to the project, and opens the EDT designer for the new element, as shown in the following illustration.</span></span> 
+
+    <span data-ttu-id="5eace-172">[![EDTelement\_DataModel](./media/edtelement_datamodel.png)](./media/edtelement_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-172">[![EDTelement\_DataModel](./media/edtelement_datamodel.png)](./media/edtelement_datamodel.png)</span></span>
+
+5.  <span data-ttu-id="5eace-173">デザイナーで **FMTAddress** ルート ノードを選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-173">Select the root node of **FMTAddress** in the designer.</span></span>
+6.  <span data-ttu-id="5eace-174">**プロパティ** ウィンドウの**外観セクション**で、次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="5eace-174">In the **Properties** window, in the **Appearance section**, set the following properties.</span></span>
+
+    | <span data-ttu-id="5eace-175">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="5eace-175">**Property**</span></span>    | <span data-ttu-id="5eace-176">**値**</span><span class="sxs-lookup"><span data-stu-id="5eace-176">**Value**</span></span>          |
+    |-----------------|--------------------|
+    | <span data-ttu-id="5eace-177">**ヘルプ テキスト**</span><span class="sxs-lookup"><span data-stu-id="5eace-177">**Help Text**</span></span>   | <span data-ttu-id="5eace-178">オンライン ヘルプをチェックしてください。</span><span class="sxs-lookup"><span data-stu-id="5eace-178">Check online help.</span></span> |
+    | <span data-ttu-id="5eace-179">**ラベル**</span><span class="sxs-lookup"><span data-stu-id="5eace-179">**Label**</span></span>       | <span data-ttu-id="5eace-180">アドレス</span><span class="sxs-lookup"><span data-stu-id="5eace-180">Address</span></span>            |
+    | <span data-ttu-id="5eace-181">**文字列サイズ**</span><span class="sxs-lookup"><span data-stu-id="5eace-181">**String Size**</span></span> | <span data-ttu-id="5eace-182">75</span><span class="sxs-lookup"><span data-stu-id="5eace-182">75</span></span>                 |
+
+    <span data-ttu-id="5eace-183">[![EDTProperty\_DataModel](./media/edtproperty_datamodel.png)](./media/edtproperty_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-183">[![EDTProperty\_DataModel](./media/edtproperty_datamodel.png)](./media/edtproperty_datamodel.png)</span></span>
+
+7.  <span data-ttu-id="5eace-184">**Ctrl+S** キーを押して EDT を保存します。</span><span class="sxs-lookup"><span data-stu-id="5eace-184">Press **Ctrl+S** to save the EDT.</span></span>
+
+## <a name="add-existing-model"></a><span data-ttu-id="5eace-185">既存のモデルの追加</span><span class="sxs-lookup"><span data-stu-id="5eace-185">Add existing model</span></span>
+<span data-ttu-id="5eace-186">現在のモデルとプロジェクトに他の必要なモデル要素ファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="5eace-186">Add the other required model element files to the current model and project.</span></span> <span data-ttu-id="5eace-187">**既存の品目を追加** フィーチャーを使用することにより、これを素早く実行することができます。</span><span class="sxs-lookup"><span data-stu-id="5eace-187">You can do this quickly by using the **Add existing item** feature.</span></span>
+
+1.  <span data-ttu-id="5eace-188">**ソリューション エクスプローラー**で、**FMTDataModel** を右クリックして**追加**をポイントしてから**既存の項目**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-188">In the **Solution Explorer**, right-click **FMTDataModel**, point to **Add**, and then click **Existing Item**.</span></span>
+2.  <span data-ttu-id="5eace-189">C:\\FMLab\\EDT\\ を参照します。</span><span class="sxs-lookup"><span data-stu-id="5eace-189">Browse to C:\\FMLab\\EDT\\.</span></span> 
+
+    <span data-ttu-id="5eace-190">[![ExistingItem\_DataModel](./media/existingitem_datamodel.png)](./media/existingitem_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-190">[![ExistingItem\_DataModel](./media/existingitem_datamodel.png)](./media/existingitem_datamodel.png)</span></span>
+
+3.  <span data-ttu-id="5eace-191">**Ctrl+A** を押してすべてのファイルを選択し、**追加** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-191">Press **Ctrl+A** to select all of the files, and then click **Add**.</span></span>
+
+## <a name="create-the-fmtcustomer-table"></a><span data-ttu-id="5eace-192">FMTCustomer テーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="5eace-192">Create the FMTCustomer table</span></span>
+1. <span data-ttu-id="5eace-193">**ソリューション エクスプローラー**で、**FMTDataModel** を右クリックしてから**追加 &gt; 新しい項目**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-193">In **Solution Explorer**, right-click **FMTDataModel**, and then click **Add &gt; New Item**.</span></span>
+2. <span data-ttu-id="5eace-194">左ウィンドウで、**インストール済み**を展開し、**Dynamics 365 品目**を展開してから、**データ モデル**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-194">In the left pane, expand **Installed**, expand **Dynamics 365 Items** and then click **Data Model**.</span></span>
+3. <span data-ttu-id="5eace-195">アーティファクトの一覧で**テーブル**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-195">In the list of artifacts, select **Table**.</span></span>
+4. <span data-ttu-id="5eace-196">**名前**フィールドに、**FMTCustomer** と入力してから**追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-196">In the **Name** field, enter **FMTCustomer**, and then click **Add**.</span></span> <span data-ttu-id="5eace-197">テーブル デザイナーが開きます。</span><span class="sxs-lookup"><span data-stu-id="5eace-197">The table designer opens.</span></span> 
+
+   <span data-ttu-id="5eace-198">[![Add\_DataModel](./media/add_datamodel.png)](./media/add_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-198">[![Add\_DataModel](./media/add_datamodel.png)](./media/add_datamodel.png)</span></span>
+
+### <a name="add-fields-to-the-fmtcustomer-table"></a><span data-ttu-id="5eace-199">FMTCustomer テーブルへのフィールドの追加</span><span class="sxs-lookup"><span data-stu-id="5eace-199">Add fields to the FMTCustomer table</span></span>
+
+<span data-ttu-id="5eace-200">FMTCustomer のテーブル デザイナーで、テーブルに複数のフィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="5eace-200">In the table designer for FMTCustomer, you now add several fields to the table.</span></span> 
+
+<span data-ttu-id="5eace-201">[![AddFields\_DataModel](./media/addfields_datamodel.png)](./media/addfields_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-201">[![AddFields\_DataModel](./media/addfields_datamodel.png)](./media/addfields_datamodel.png)</span></span>
+
+1.  <span data-ttu-id="5eace-202">各フィールドを追加するには、**フィールド** を右クリックし、**新規** をクリックして、タイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-202">To add each field, right-click **Fields**, click **New**, and then select a type.</span></span> <span data-ttu-id="5eace-203">各フィールドを追加すると、次の表に示すように、**プロパティ** ウィンドウでフィールド名とその他の特定の値を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5eace-203">As you add each field, you must specify the field name and certain other values in the **Properties** window, as described in the following table.</span></span>
+
+    | <span data-ttu-id="5eace-204">**タイプ**</span><span class="sxs-lookup"><span data-stu-id="5eace-204">**Type**</span></span>   | <span data-ttu-id="5eace-205">**フィールド名**</span><span class="sxs-lookup"><span data-stu-id="5eace-205">**Field name**</span></span> | <span data-ttu-id="5eace-206">**プロパティ値**</span><span class="sxs-lookup"><span data-stu-id="5eace-206">**Property values**</span></span>                                                         |
+    |------------|----------------|-----------------------------------------------------------------------------|
+    | <span data-ttu-id="5eace-207">**日付**</span><span class="sxs-lookup"><span data-stu-id="5eace-207">**Date**</span></span>   | <span data-ttu-id="5eace-208">CCExpiryDate</span><span class="sxs-lookup"><span data-stu-id="5eace-208">CCExpiryDate</span></span>   | <span data-ttu-id="5eace-209">拡張データ型 = FMTCCExpiryDate</span><span class="sxs-lookup"><span data-stu-id="5eace-209">Extended Data Type = FMTCCExpiryDate</span></span>                                        |
+    | <span data-ttu-id="5eace-210">**文字列**</span><span class="sxs-lookup"><span data-stu-id="5eace-210">**String**</span></span> | <span data-ttu-id="5eace-211">アドレス</span><span class="sxs-lookup"><span data-stu-id="5eace-211">Address</span></span>        | <span data-ttu-id="5eace-212">拡張データ型 = FMTAddressHelp テキスト = アドレス フィールドのヘルプ テキスト。</span><span class="sxs-lookup"><span data-stu-id="5eace-212">Extended Data Type = FMTAddressHelp Text = Help text for the address field.</span></span> |
+    | <span data-ttu-id="5eace-213">**文字列**</span><span class="sxs-lookup"><span data-stu-id="5eace-213">**String**</span></span> | <span data-ttu-id="5eace-214">CellPhone</span><span class="sxs-lookup"><span data-stu-id="5eace-214">CellPhone</span></span>      | <span data-ttu-id="5eace-215">拡張データ型 = 電話</span><span class="sxs-lookup"><span data-stu-id="5eace-215">Extended Data Type = Phone</span></span>                                                  |
+    | <span data-ttu-id="5eace-216">**文字列**</span><span class="sxs-lookup"><span data-stu-id="5eace-216">**String**</span></span> | <span data-ttu-id="5eace-217">CreditCardNum</span><span class="sxs-lookup"><span data-stu-id="5eace-217">CreditCardNum</span></span>  | <span data-ttu-id="5eace-218">拡張データ型 = FMTCreditCardNum</span><span class="sxs-lookup"><span data-stu-id="5eace-218">Extended Data Type = FMTCreditCardNum</span></span>                                       |
+    | <span data-ttu-id="5eace-219">**文字列**</span><span class="sxs-lookup"><span data-stu-id="5eace-219">**String**</span></span> | <span data-ttu-id="5eace-220">DriversLicense</span><span class="sxs-lookup"><span data-stu-id="5eace-220">DriversLicense</span></span> | <span data-ttu-id="5eace-221">拡張データ型 = FMTDriversLicense</span><span class="sxs-lookup"><span data-stu-id="5eace-221">Extended Data Type = FMTDriversLicense</span></span>                                      |
+    | <span data-ttu-id="5eace-222">**文字列**</span><span class="sxs-lookup"><span data-stu-id="5eace-222">**String**</span></span> | <span data-ttu-id="5eace-223">電子メール</span><span class="sxs-lookup"><span data-stu-id="5eace-223">Email</span></span>          | <span data-ttu-id="5eace-224">文字列サイズ = 80Label = 電子メール</span><span class="sxs-lookup"><span data-stu-id="5eace-224">String Size = 80Label = Email</span></span>                                               |
+    | <span data-ttu-id="5eace-225">**文字列**</span><span class="sxs-lookup"><span data-stu-id="5eace-225">**String**</span></span> | <span data-ttu-id="5eace-226">名</span><span class="sxs-lookup"><span data-stu-id="5eace-226">FirstName</span></span>      | <span data-ttu-id="5eace-227">拡張データ型 = FirstName</span><span class="sxs-lookup"><span data-stu-id="5eace-227">Extended Data Type = FirstName</span></span>                                              |
+    | <span data-ttu-id="5eace-228">**文字列**</span><span class="sxs-lookup"><span data-stu-id="5eace-228">**String**</span></span> | <span data-ttu-id="5eace-229">姓</span><span class="sxs-lookup"><span data-stu-id="5eace-229">LastName</span></span>       | <span data-ttu-id="5eace-230">拡張データ型 = LastName</span><span class="sxs-lookup"><span data-stu-id="5eace-230">Extended Data Type = LastName</span></span>                                               |
+    | <span data-ttu-id="5eace-231">**文字列**</span><span class="sxs-lookup"><span data-stu-id="5eace-231">**String**</span></span> | <span data-ttu-id="5eace-232">ライセンス</span><span class="sxs-lookup"><span data-stu-id="5eace-232">License</span></span>        | <span data-ttu-id="5eace-233">文字列サイズ = 100Label = ライセンス</span><span class="sxs-lookup"><span data-stu-id="5eace-233">String Size = 100Label = License</span></span>                                            |
+    | <span data-ttu-id="5eace-234">**文字列**</span><span class="sxs-lookup"><span data-stu-id="5eace-234">**String**</span></span> | <span data-ttu-id="5eace-235">縮小版</span><span class="sxs-lookup"><span data-stu-id="5eace-235">Thumbnail</span></span>      | <span data-ttu-id="5eace-236">文字列サイズ = 100Label = サムネイル</span><span class="sxs-lookup"><span data-stu-id="5eace-236">String Size = 100Label = Thumbnail</span></span>                                          |
+
+
+    > [!TIP]
+    > <span data-ttu-id="5eace-237">EDT を参照するテーブル内のすべての新しいフィールドでは、**ソリューション エクスプローラー**または**アプリケーション エクスプローラー**から EDT エレメントをドラッグし、デザイナーの **FMTCustomer** テーブルの**フィールド**ノードをドロップするだけで、フィールドを作成できます。</span><span class="sxs-lookup"><span data-stu-id="5eace-237">For all new fields in the table that reference an EDT, you can create the field by simply dragging the EDT element from **Solution Explorer** or **Application Explorer** and dropping it on the **Fields** node of the **FMTCustomer** table in the designer.</span></span> 
+
+    <span data-ttu-id="5eace-238">[![AdministratorArrow\_DataModel](./media/administratorarrow_datamodel.png)](./media/administratorarrow_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-238">[![AdministratorArrow\_DataModel](./media/administratorarrow_datamodel.png)](./media/administratorarrow_datamodel.png)</span></span>
+
+2.  <span data-ttu-id="5eace-239">**Ctrl+S** キーを押して、テーブルに新しいフィールドを保存します。</span><span class="sxs-lookup"><span data-stu-id="5eace-239">Press **Ctrl+S** to save the new fields on the table.</span></span>
+
+### <a name="add-fields-to-field-groups"></a><span data-ttu-id="5eace-240">フィールド グループへのフィールドの追加</span><span class="sxs-lookup"><span data-stu-id="5eace-240">Add fields to field groups</span></span>
+
+1.  <span data-ttu-id="5eace-241">次の一覧のフィールドを選択して、一部の不フィールドを **AutoSummary** フィールド グループに追加する準備をします。</span><span class="sxs-lookup"><span data-stu-id="5eace-241">Prepare to add some of the fields to the **AutoSummary** field group by selecting the fields in the following list.</span></span> <span data-ttu-id="5eace-242">複数のフィールドを選択するには、Ctrl キーを押しながら各フィールドをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-242">To select multiple fields, hold down the Ctrl key while you click each field:</span></span>
+    -   <span data-ttu-id="5eace-243">**住所**</span><span class="sxs-lookup"><span data-stu-id="5eace-243">**Address**</span></span>
+    -   <span data-ttu-id="5eace-244">**CCExpiryDate**</span><span class="sxs-lookup"><span data-stu-id="5eace-244">**CCExpiryDate**</span></span>
+    -   <span data-ttu-id="5eace-245">**CellPhone**</span><span class="sxs-lookup"><span data-stu-id="5eace-245">**CellPhone**</span></span>
+    -   <span data-ttu-id="5eace-246">**CreditCardNum**</span><span class="sxs-lookup"><span data-stu-id="5eace-246">**CreditCardNum**</span></span>
+    -   <span data-ttu-id="5eace-247">**DriversLicense**</span><span class="sxs-lookup"><span data-stu-id="5eace-247">**DriversLicense**</span></span>
+    -   <span data-ttu-id="5eace-248">**電子メール**</span><span class="sxs-lookup"><span data-stu-id="5eace-248">**Email**</span></span>
+    -   <span data-ttu-id="5eace-249">**名**</span><span class="sxs-lookup"><span data-stu-id="5eace-249">**FirstName**</span></span>
+    -   <span data-ttu-id="5eace-250">**姓**</span><span class="sxs-lookup"><span data-stu-id="5eace-250">**LastName**</span></span>
+
+2.  <span data-ttu-id="5eace-251">**フィールド グループ**ノードを展開します。</span><span class="sxs-lookup"><span data-stu-id="5eace-251">Expand the **Field Groups** node.</span></span>
+3.  <span data-ttu-id="5eace-252">選択したフィールドを **AutoSummary** ノードにドラッグします。</span><span class="sxs-lookup"><span data-stu-id="5eace-252">Drag the selected fields to the **AutoSummary** node</span></span>
+4.  <span data-ttu-id="5eace-253">同じ方法を使用して、**氏名**、**姓**、および**携帯**フィールドを**自動レポート**フィールド グループに追加します。</span><span class="sxs-lookup"><span data-stu-id="5eace-253">Use the same technique to add the fields **FirstName**, **LastName**, and **CellPhone** to the **AutoReport** field group.</span></span>
+5.  <span data-ttu-id="5eace-254">テーブルを保存します。</span><span class="sxs-lookup"><span data-stu-id="5eace-254">Save the table.</span></span>
+
+### <a name="add-a-method"></a><span data-ttu-id="5eace-255">メソッドの追加</span><span class="sxs-lookup"><span data-stu-id="5eace-255">Add a method</span></span>
+
+1.  <span data-ttu-id="5eace-256">**Methods** ノードを右クリックし、**New Method** をクリックして、**FMTCustomer** テーブルに **fullName** という名前の X++ メソッドを 追加します。</span><span class="sxs-lookup"><span data-stu-id="5eace-256">Add the X++ method named **fullName** to the **FMTCustomer** table by right-clicking the **Methods** node, and then clicking **New Method**.</span></span>
+2.  <span data-ttu-id="5eace-257">コード エディターで、既定のメソッドのコードを次のコードに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="5eace-257">In the code editor, replace the default method code with the following code.</span></span> 
+ 
+    > [!TIP]
+    > <span data-ttu-id="5eace-258">「this.」を入力するとき、IntelliSense リストからフィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-258">When you type “this.”, choose the field from the IntelliSense list.</span></span>
+
+```
+        public display FMTName fullName()
+        {
+            return this.FirstName + ' ' + this.LastName;
+        }
+```
+
+3.  <span data-ttu-id="5eace-259">コードを保存します。</span><span class="sxs-lookup"><span data-stu-id="5eace-259">Save the code.</span></span>
+
+## <a name="update-the-fmtaddress-edt"></a><span data-ttu-id="5eace-260">FMTAddress EDT の更新</span><span class="sxs-lookup"><span data-stu-id="5eace-260">Update the FMTAddress EDT</span></span>
+1.  <span data-ttu-id="5eace-261">**ソリューション エクスプローラー**で **FMTDataModel** プロジェクトを展開します。</span><span class="sxs-lookup"><span data-stu-id="5eace-261">In **Solution Explorer**, expand the **FMTDataModel** project.</span></span>
+2.  <span data-ttu-id="5eace-262">**FMTAddress** を右クリックしてから、**開く** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-262">Right-click **FMTAddress**, and then click **Open**.</span></span> <span data-ttu-id="5eace-263">**EDT デザイナー**が開きます。</span><span class="sxs-lookup"><span data-stu-id="5eace-263">The **EDT designer** opens.</span></span>
+3.  <span data-ttu-id="5eace-264">**EDT デザイナー**で、**FMTAddress** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-264">In the **EDT designer**, select **FMTAddress**.</span></span>
+4.  <span data-ttu-id="5eace-265">**プロパティ** ウィンドウの**参照テーブル** フィールドで、**FMTCustomer** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-265">In the **Properties** window, in the **Reference Table** field, select **FMTCustomer**.</span></span> <span data-ttu-id="5eace-266">**ヒント:** ドロップダウン リストをクリックし、検索ボックスに、接頭語「FMT」を入力します。</span><span class="sxs-lookup"><span data-stu-id="5eace-266">**Tip:** Click the drop-down list, and then type the prefix "FMT" in the search box.</span></span> <span data-ttu-id="5eace-267">これにより、名前に「FMT」が含まれている表のみが表示されるように、ドロップダウン リストがフィルター処理されます。</span><span class="sxs-lookup"><span data-stu-id="5eace-267">This filters the drop-down list to only show tables that contain "FMT" in their name.</span></span> <span data-ttu-id="5eace-268">フィルター処理されたエントリの一覧から **FMTCustomer** テーブルを選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-268">Select the **FMTCustomer** table from the list of filtered entries.</span></span> <span data-ttu-id="5eace-269">[![SearchFMT\_DataModel](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)</span><span class="sxs-lookup"><span data-stu-id="5eace-269">[![SearchFMT\_DataModel](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)</span></span>
+5.  <span data-ttu-id="5eace-270">EDT を保存します。</span><span class="sxs-lookup"><span data-stu-id="5eace-270">Save the EDT.</span></span>
+
+## <a name="build-the-fmtdatamodel-project-and-the-fleet-management-tutorial-model"></a><span data-ttu-id="5eace-271">FMTDataModel プロジェクトと フリート管理チュートリアル モデルの構築</span><span class="sxs-lookup"><span data-stu-id="5eace-271">Build the FMTDataModel project and the Fleet Management tutorial model</span></span>
+1. <span data-ttu-id="5eace-272">**ソリューション エクスプローラー**で、**FMTDataModel** を右クリックしてから**リビルド**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-272">In **Solution Explorer**, right-click **FMTDataModel**, and then click **Rebuild**.</span></span>
+2. <span data-ttu-id="5eace-273">モデル全体の完全なビルドを行うには、**Dynamics 365** メニューで、**モデルをビルド**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-273">To do a full build of the entire model, on the **Dynamics 365** menu, click **Build models**.</span></span>
+3. <span data-ttu-id="5eace-274">**フリート管理チュートリアル**以外のすべてのモデルのチェック ボックスをオフにします。</span><span class="sxs-lookup"><span data-stu-id="5eace-274">Clear the check box for all models except for **Fleet Management Tutorial**.</span></span>
+4. <span data-ttu-id="5eace-275">**オプション**タブで、**推奨チェックの実行**チェック ボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="5eace-275">On the **Options** tab, select the **Run Best practice checks** check box.</span></span> <span data-ttu-id="5eace-276">使用可能なその他のオプションに注意してください。</span><span class="sxs-lookup"><span data-stu-id="5eace-276">Note that other options available.</span></span>
+5. <span data-ttu-id="5eace-277">**モデル**タブで、**ビルド**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-277">On the **Models** tab, click **Build**.</span></span>
+6. <span data-ttu-id="5eace-278">ダイアログ ボックスで **閉じる**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5eace-278">Click **Close**  in the dialog box.</span></span>
+7. <span data-ttu-id="5eace-279">**ウィンドウ**メニューで、**すべてのドキュメントを閉じる**をクリックして、開いているすべてのドキュメントを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5eace-279">On the **Window** menu, click **Close All Documents**, to close all open documents.</span></span>
+
+
+
+

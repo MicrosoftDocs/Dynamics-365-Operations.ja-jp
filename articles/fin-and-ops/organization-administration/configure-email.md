@@ -1,627 +1,277 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="configure-email.md" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>configure-email.9eb590.18059ead5dc34f3d562cebaaff3197f9671c5b41.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>18059ead5dc34f3d562cebaaff3197f9671c5b41</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>b2addd9bb23c46881508098264c5994b4258d7e6</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/29/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\fin-and-ops\organization-administration\configure-email.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Configure and send email</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールのコンフィギュレーションと送信</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Configure and send email</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールのコンフィギュレーションと送信</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This topic is divided into sections for administrators and users.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックは、管理者のセクションとユーザーのセクションに分かれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>This topic is divided into sections for administrators and users to make it easy to find relevant information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、関連情報を見つけやすくするために、管理者のセクションとユーザーのセクションに分かれています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>In Dynamics 365 for Finance and Operations both administrators and users set the behavior of the email subsystem.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations では、管理者とユーザーの両方が電子メールのサブシステムの動作を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Administrator: Email parameters page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理者: 電子メール パラメーター ページ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>On the <bpt id="p1">**</bpt>Email parameters<ept id="p1">**</ept> page, note the following settings on the <bpt id="p2">**</bpt>Email providers<ept id="p2">**</ept> tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>電子メール パラメーター<ept id="p1">**</ept>ページの、<bpt id="p2">**</bpt>電子メール プロバイダー<ept id="p2">**</ept>タブで、次の設定に注意してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Batch email provider</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バッチ電子メール プロバイダー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バッチ方式または非対話型のプロセスで送信される電子メールの送信に使用される電子メール プロバイダーを指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>The Exchange provider will use the account associated with the batch process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exchange プロバイダーは、バッチ プロセスに関連付けられているアカウントを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Attachment size limit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">添付ファイル サイズの上限</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Specifies the maximum size of a single email that can be sent via the email subsystem.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール サブシステム経由で送信できる 1 つの電子メールの最大サイズを指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>On the <bpt id="p1">**</bpt>Email parameters<ept id="p1">**</ept> page, note the following settings on the <bpt id="p2">**</bpt>SMTP settings<ept id="p2">**</ept> tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>電子メール パラメーター<ept id="p1">**</ept>ページの、<bpt id="p2">**</bpt>SMTP 設定<ept id="p2">**</ept>タブで、次の設定に注意してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Outgoing mail server</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">送信メール サーバー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The host name of the desired SMTP server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">目的の SMTP サーバーのホスト名。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>For <bpt id="p1">&lt;a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c"&gt;</bpt>Office 365 production<ept id="p1">&lt;/a&gt;</ept> (including *.onmicrosoft.com accounts) use smtp.office365.com.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c"&gt;</bpt>Office 365 製品<ept id="p1">&lt;/a&gt;</ept> (*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>(You can find this setting at outlook.office.com at <bpt id="p1">&lt;strong&gt;</bpt>Settings<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Mail<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>POP and IMAP<ept id="p3">&lt;/strong&gt;</ept>.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">&lt;strong&gt;</bpt>設定<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>メール<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>POP および IMAP<ept id="p3">&lt;/strong&gt;</ept>の outlook.office.com でこの設定を検索します。.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>For Outlook/Hotmail use smtp-mail.outlook.com.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Outlook/Hotmail で smtp-mail.outlook.com を使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>SMTP port number</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMTP ポート番号</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Typically, the port number should be set to 587 for secure transport.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通常、セキュリティで保護して送信するためにポート番号は 587 に設定する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>User name<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Password<ept id="p2">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>ユーザー名<ept id="p1">&lt;/strong&gt;</ept>と<bpt id="p2">&lt;strong&gt;</bpt>パスワード<ept id="p2">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Specify, as needed, to send the email via the appropriate mail account.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じて、適切なメール アカウントを使用して電子メールの送信を指定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>All users need to provide the SMTP account <bpt id="p1">&lt;strong&gt;</bpt>Send As<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Send On Behalf Of<ept id="p2">&lt;/strong&gt;</ept> permissions to enable the ability to send Simple Mail Transfer Protocol (SMTP) mail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのユーザーは SMTP アカウントを指定し <bpt id="p1">&lt;strong&gt;</bpt>送信者<ept id="p1">&lt;/strong&gt;</ept>および <bpt id="p2">&lt;strong&gt;</bpt>代理送信<ept id="p2">&lt;/strong&gt;</ept>許可をし、Simple Mail Transfer Protocol (SMTP) で送信する機能を有効にします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>You can configure Send As permissions in the Office 365 admin center (portal.office.com/Admin), at <bpt id="p1">&lt;strong&gt;</bpt>Users<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Active users<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>User<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Edit mailbox permissions<ept id="p4">&lt;/strong&gt;</ept> <ph id="ph4">&amp;gt;</ph> <bpt id="p5">&lt;strong&gt;</bpt>Send email from this mailbox<ept id="p5">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Send As 権限は、Office 365 管理センター (portal.office.com/Admin) にて、<bpt id="p1">&lt;strong&gt;</bpt>ユーザー<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>有効なユーザー<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>ユーザー<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>メールボックスのアクセス許可を編集<ept id="p4">&lt;/strong&gt;</ept> <ph id="ph4">&amp;gt;</ph> <bpt id="p5">&lt;strong&gt;</bpt>このメールボックスから電子メールを送信する<ept id="p5">&lt;/strong&gt;</ept> で構成することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>For more information, see <bpt id="p1">&lt;a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E"&gt;</bpt>Enable sending email from another user's mailbox in Office 365<ept id="p1">&lt;/a&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">&lt;a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E"&gt;</bpt>Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする<ept id="p1">&lt;/a&gt;</ept>を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Specify if SSL is required</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SSL が必須かどうかを指定します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Determines whether secure transport is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">安全なトランスポートをを使用するかを決定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Typically, this is <bpt id="p1">&lt;strong&gt;</bpt>Yes<ept id="p1">&lt;/strong&gt;</ept>, except for internal or troubleshooting scenarios.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは通常、内部またはトラブルシューティングのシナリオを除き、<bpt id="p1">&lt;strong&gt;</bpt>はい<ept id="p1">&lt;/strong&gt;</ept> です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Administrator: Email Distributor batch process</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理者: 電子メール配布バッチ処理</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Email that is sent directly from the server, without user interaction, via SMTP is sent by the <bpt id="p1">**</bpt>Email distributor batch<ept id="p1">**</ept> process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーの操作なしに、SMTP 経由でサーバーから直接送信される電子メールは、<bpt id="p1">**</bpt>電子メール ディストリビューター バッチ<ept id="p1">**</ept>プロセスによって送信されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>That batch process must be started to process the email queue.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールのキューの処理には、そのバッチ処理を開始する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>To start the process, open the <bpt id="p1">**</bpt>Email distributor batch<ept id="p1">**</ept> pane (<bpt id="p2">**</bpt>System administration<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Periodic tasks<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Email processing<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Batch<ept id="p5">**</ept>) and turn on <bpt id="p6">**</bpt>Batch processing<ept id="p6">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロセスを開始するには、<bpt id="p1">**</bpt>電子メール配布バッチ<ept id="p1">**</ept>ウィンドウ (<bpt id="p2">**</bpt>システム管理<ept id="p2">**</ept><ph id="ph1">&amp;gt;</ph><bpt id="p3">**</bpt>定期タスク<ept id="p3">**</ept><ph id="ph2">&amp;gt;</ph><bpt id="p4">**</bpt>電子メール処理<ept id="p4">**</ept><ph id="ph3">&amp;gt;</ph><bpt id="p5">**</bpt>バッチ<ept id="p5">**</ept>)] を開いて、<bpt id="p6">**</bpt>バッチ処理<ept id="p6">**</ept> をオンにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>If the Exchange provider is used, then the user account associated with the batch process (usually admin) will be sender.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">為替プロバイダーを使用している場合、バッチ プロセス (通常は管理者) に関連付けられているユーザー アカウントが送信者になります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Administrator: User email</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理者ユーザー: ユーザーの電子メール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>The default email address for each user is pulled from the <bpt id="p1">**</bpt>Email<ept id="p1">**</ept> field on the <bpt id="p2">**</bpt>Users<ept id="p2">**</ept> page (<bpt id="p3">**</bpt>System administration<ept id="p3">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p4">**</bpt>Users<ept id="p4">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p5">**</bpt>Users<ept id="p5">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各ユーザーのデフォルトのメールアドレスは、<bpt id="p2">**</bpt>ユーザー<ept id="p2">**</ept>ページ (<bpt id="p3">**</bpt>システム管理<ept id="p3">**</ept><ph id="ph1">&amp;gt;</ph> <bpt id="p4">**</bpt>ユーザー<ept id="p4">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p5">**</bpt>ユーザー<ept id="p5">**</ept>) の <bpt id="p1">**</bpt>電子メール<ept id="p1">**</ept> 電子メールフィールドから取得します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>An email address should be specified for each user for sign in, so this field should be populated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各ユーザーがサインインするために電子メール アドレスを指定する必要がありますが、そのためにフィールドを設定する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Users can override this default if needed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じて、この既定値をオーバーライドできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>User: Email provider selection section on the Options page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー: [オプション] ページの電子メール プロバイダーの選択セクション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>The <bpt id="p1">**</bpt>Options<ept id="p1">**</ept> page can be opened via <bpt id="p2">**</bpt>Settings <ph id="ph1">&amp;gt;</ph> User options<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>オプション<ept id="p1">**</ept> ページは、<bpt id="p2">**</bpt>設定 <ph id="ph1">&amp;gt;</ph> ユーザー オプション<ept id="p2">**</ept> から開くことができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>The <bpt id="p1">**</bpt>Email provider selection<ept id="p1">**</ept> section is on the <bpt id="p2">**</bpt>Account<ept id="p2">**</ept> tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>電子メール プロバイダーの選択<ept id="p1">**</ept> セクションは、<bpt id="p2">**</bpt>アカウント<ept id="p2">**</ept> タブにあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Email provider ID</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール プロバイダー ID</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Allows the user to select the email provider that should be used when sending an email.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーは、電子メールを送信するときに使用する電子メール プロバイダーを選択できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Selecting an option here is the equivalent of selecting <bpt id="p1">**</bpt>Do not ask again<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>How would you like to send email<ept id="p2">**</ept> dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ここでオプションを選択することは、<bpt id="p2">**</bpt>どのように電子メール送信しますか<ept id="p2">**</ept> ダイアログ ボックスで <bpt id="p1">**</bpt>今後確認しない<ept id="p1">**</ept> をオンにするのと同じです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Selecting the blank option <bpt id="p1">**</bpt>Prompt for which email provider to use<ept id="p1">**</ept> will cause the <bpt id="p2">**</bpt>How would you like to send email<ept id="p2">**</ept> dialog box to display when an email is going to be sent.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">空白のオプション <bpt id="p1">**</bpt>使用する電子メール プロバイダーの入力を求める<ept id="p1">**</ept> を選択すると、メールが送信されるときに <bpt id="p2">**</bpt>電子メールを送信する方法<ept id="p2">**</ept> ダイアログ ボックスが表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Email</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Allows the user to provide an email address override for the <bpt id="p1">**</bpt>From<ept id="p1">**</ept> field of the email.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーが電子メールの<bpt id="p1">**</bpt>ソース<ept id="p1">**</ept>フィールドの電子メール アドレスの上書きを提供できるようにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>By default, the email alias that associated with the user account is used as the <bpt id="p1">**</bpt>From<ept id="p1">**</ept> field in new emails, but this user option email address will override that.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、ユーザー アカウントに関連付けられた電子メール エイリアスは新しい電子メールの<bpt id="p1">**</bpt>ソース<ept id="p1">**</ept> フィールドとして使用されますが、このユーザー オプションの電子メール アドレスによって上書きされます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>When sending email via SMTP the user needs to have appropriate <bpt id="p1">**</bpt>Send As<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Send On Behalf Of<ept id="p2">**</ept> permissions configured in Exchange or on the SMTP server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMTP で電子メールを送信するとき、ユーザーは適切な <bpt id="p1">**</bpt>Send As<ept id="p1">**</ept>および <bpt id="p2">**</bpt>Send On Behalf Of<ept id="p2">**</ept> アクセス許可を Exchange または SMTP サーバー上で構成する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>You can configure <bpt id="p1">**</bpt>Send As<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Send On Behalf Of<ept id="p2">**</ept> permissions in the Office 365 admin center (portal.office.com/Admin) at <bpt id="p3">**</bpt>Users<ept id="p3">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p4">**</bpt>Active users<ept id="p4">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p5">**</bpt>User<ept id="p5">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p6">**</bpt>Edit mailbox permissions<ept id="p6">**</ept> <ph id="ph4">&amp;gt;</ph> <bpt id="p7">**</bpt>Send email from this mailbox<ept id="p7">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Send As<ept id="p1">**</ept> および <bpt id="p2">**</bpt>Send On Behalf Of<ept id="p2">**</ept> 権限は、Office 365 管理センター (portal.office.com/Admin) にて、<bpt id="p3">**</bpt>ユーザー<ept id="p3">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p4">**</bpt>有効なユーザー<ept id="p4">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p5">**</bpt>ユーザー<ept id="p5">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p6">**</bpt>メール ボックスのアクセス許可を編集<ept id="p6">**</ept> <ph id="ph4">&amp;gt;</ph> <bpt id="p7">**</bpt>このメールボックスから電子メールを送信する<ept id="p7">**</ept>で構成することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>For more information, see <bpt id="p1">[</bpt>Enable sending email from another user's mailbox in Office 365<ept id="p1">](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする<ept id="p1">](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)</ept>を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>User (optional): How would you like to send email dialog box</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー (省略可): 電子メール ダイアログ ボックスをどのように送信しますか</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>When an email is going to be sent, the user will see the <bpt id="p1">**</bpt>How would you like to send email<ept id="p1">**</ept> dialog box that will list the available options for sending email.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールを送信するときは、<bpt id="p1">**</bpt>電子メールをどのように送信しますか<ept id="p1">**</ept> ダイアログ ボックスが表示され、それに電子メールを送信するために使用可能なオプションが一覧表示されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Use an email app, such as Outlook</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Outlook などの電子メール アプリケーションを使用します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Provides the user with a generated email (.eml) file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">生成された電子メール (.eml) を持つを提供します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Use Exchange email server</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exchange 電子メール サーバーを使用します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Uses the Exchange Online server associated with the tenant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テナントに関連付けられている Exchange Online サーバーを使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>The email will be sent using Exchange Web Services (EWS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールは、Exchange Webサービス (EWS) を使用して送信されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>On-premises Exchange servers are not supported at this time for the <bpt id="p1">**</bpt>Exchange<ept id="p1">**</ept> mail provider.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">オンプレミス Exchange サーバーは、この時点では <bpt id="p1">**</bpt>Exchange<ept id="p1">**</ept> メール プロバイダーでサポートされていません、</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Use the Microsoft Dynamics 365 for Finance and Operations email client</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations 電子メール クライアントを使用します</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Opens the <bpt id="p1">**</bpt>Send email<ept id="p1">**</ept> composition dialog box and then sends the resulting email via SMTP.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>電子メール送信する<ept id="p1">**</ept>構成ダイアログ ボックスを開いて、結果を電子メールで SMTP 経由で送信します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Do not ask again</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">今後このメッセージを表示しない</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフィールドが選択されていない場合は、次回に電子メールが送信されたときに最後に選択したオプションが使用され、ダイアログ ボックスが表示されません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>User (optional): Send email dialog box</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー (省略可): 電子メール ダイアログ ボックスを送信</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>The <bpt id="p1">**</bpt>Send email<ept id="p1">**</ept> dialog box is opened to allow the user to edit the contents of the email that will be sent.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>電子メール送信<ept id="p1">**</ept> ダイアログ ボックスが開き、送信される電子メールの内容を編集できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Some of the following fields will be pre-populated in this window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のフィールドの一部は、このウィンドウであらかじめ設定されています。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>From</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Populated from the <bpt id="p1">**</bpt>Email<ept id="p1">**</ept> field on the <bpt id="p2">**</bpt>Options<ept id="p2">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>オプション<ept id="p2">**</ept> ページの <bpt id="p1">**</bpt>メール<ept id="p1">**</ept> フィールドから取得されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source><bpt id="p1">**</bpt>To<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Cc<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Bcc<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Subject<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>Body<ept id="p5">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>宛先<ept id="p1">**</ept>、<bpt id="p2">**</bpt>Cc<ept id="p2">**</ept>、<bpt id="p3">**</bpt>Bcc<ept id="p3">**</ept>、<bpt id="p4">**</bpt>件名<ept id="p4">**</ept>、および<bpt id="p5">**</bpt>本文<ept id="p5">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Populated with values specified by the process that initiated the sending of the email.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールの送信を開始したプロセスによって指定された値が取得されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>These fields can be edited as needed by the user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのフィールドは、必要に応じてユーザーが編集できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Attachments list</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">添付ファイル リスト</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>May be populated with attachments specified by the process that initiated the sending of the email.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールの送信を開始したプロセスによって指定されたファイルが添付される場合があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>This list can be edited as needed by the user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このリストは、必要に応じてユーザーが編集できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>When the email is ready to be sent, the <bpt id="p1">**</bpt>Send<ept id="p1">**</ept> button will cause the email to be sent via SMTP.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールを送信する準備ができたら、<bpt id="p1">**</bpt>送信<ept id="p1">**</ept> ボタンを使用して SMTP 経由で電子メールが送信されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Usage scenarios to verify if email is configured correctly</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールが正しく設定されているかどうかを確認するための使用シナリオ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Send mail via a local mail client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル メール クライアント経由で電子メールを送信</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Email workflows that are enabled via the SysEmail framework can generate email messages (.eml files) that contain attachments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SysEmail フレームワークで有効になっている電子メール ワークフローでは、添付ファイルを含む電子メール メッセージ (.eml files) を生成できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>You can then send these messages via Microsoft Outlook or another email client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのメッセージは Microsoft Outlook または他の電子メール クライアント経由で送信することができます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>All customers<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer で、<bpt id="p1">**</bpt>売掛金勘定<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>顧客<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>すべての顧客<ept id="p3">**</ept>の順に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Select <bpt id="p1">**</bpt>US-008 Sparrow Retail<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>US-008 Sparrow Retail<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Click <bpt id="p1">**</bpt>Collect<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customer balances<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Collections<ept id="p3">**</ept> to open the <bpt id="p4">**</bpt>Collections<ept id="p4">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>回収<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>顧客残高<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>コレクション<ept id="p3">**</ept>の順にクリックし、<bpt id="p4">**</bpt>コレクション<ept id="p4">**</ept> ページを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Click <bpt id="p1">**</bpt>Communicate<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Email<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Statements to contact<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>連絡<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>電子メール<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>連絡先に対する明細書<ept id="p3">**</ept>の順にクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to accept the default values in the dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ダイアログ ボックスで既定値を承諾する場合は、<bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>If you're prompted for the mail option to use, clear the <bpt id="p1">**</bpt>Do not ask again<ept id="p1">**</ept> check box (you can change this option from the <bpt id="p2">**</bpt>User options<ept id="p2">**</ept> page), select <bpt id="p3">**</bpt>Use an email app, such as Outlook<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>OK<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メール オプションの使用を促すメッセージが表示された場合は、<bpt id="p1">**</bpt>再度確認しない<ept id="p1">**</ept>チェック ボックス (このオプションは<bpt id="p2">**</bpt>ユーザー オプション<ept id="p2">**</ept> ページから変更できます) をオフにし、<bpt id="p3">**</bpt>Outlook などの電子メール アプリケーションを使用<ept id="p3">**</ept>を選択し、<bpt id="p4">**</bpt>OK<ept id="p4">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>If you're using Internet Explorer on your computer, open the email (.eml) file that is generated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンピューター上で Internet Explorer を使用している場合は、生成される電子メール (.eml) ファイルを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>If you're using Internet Explorer on the VM, copy the file to your computer, and open it there.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VM 上で Internet Explorer を使用している場合は、ファイルをコンピューターにコピーし、そのコンピュータでファイルを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Note the email address in the <bpt id="p1">**</bpt>To<ept id="p1">**</ept> field and the generated workbook attachment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>宛先<ept id="p1">**</ept>フィールドの電子メール アドレスと生成されたブック添付ファイルに注意します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Send mail via SMTP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMTP 経由でメールを送信</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Email workflows that are enabled via the SysEmail framework can also be created in a simple email dialog box and then sent via Simple Mail Transfer Protocol (SMTP).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SysEmail フレームワークを介して有効になっている電子メール ワークフローは、簡単な電子メール ダイアログ ボックスで作成し、Simple Mail Transfer Protocol (SMTP) 経由で送信することもできます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>In Finance and Operations, go to the <bpt id="p1">**</bpt>Email parameters<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations で、<bpt id="p1">**</bpt>電子メール パラメーター<ept id="p1">**</ept> ページに移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Click <bpt id="p1">**</bpt>SMTP settings<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SMTP 設定<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Set the <bpt id="p1">**</bpt>Outgoing mail server<ept id="p1">**</ept> to the desired SMTP server:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>送信メール サーバー<ept id="p1">**</ept> を要求された SMTP サーバーに設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>For <bpt id="p1">[</bpt>Office 365 production<ept id="p1">](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c)</ept> (including <ph id="ph1">\*</ph>.onmicrosoft.com accounts) use smtp.office365.com.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Office 365 製品<ept id="p1">](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c)</ept> (<ph id="ph1">\*</ph>.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>(Find this setting via outlook.office.com, at <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Mail<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>POP and IMAP<ept id="p3">**</ept>.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">**</bpt>設定<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>メール<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>POP および IMAP<ept id="p3">**</ept>で outlook.office.com を通してこの設定を検索します。.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>For Outlook/Hotmail use smtp-mail.outlook.com.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Outlook/Hotmail で smtp-mail.outlook.com を使用します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Set the user name and password to an appropriate email account and password.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー名とパスワードを適切な電子メール アカウントとパスワードに設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Leave <bpt id="p1">**</bpt>SSLRequired<ept id="p1">**</ept> turned on, and leave <bpt id="p2">**</bpt>SMTP port number<ept id="p2">**</ept> set to <bpt id="p3">**</bpt>587<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SSLRequired<ept id="p1">**</ept> を有効のままにして、<bpt id="p2">**</bpt>SMTP ポート番号<ept id="p2">**</ept>は <bpt id="p3">**</bpt>587<ept id="p3">**</ept> に設定したままにします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>All customers<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer で、<bpt id="p1">**</bpt>売掛金勘定<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>顧客<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>すべての顧客<ept id="p3">**</ept>の順に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Select <bpt id="p1">**</bpt>US-008 Sparrow Retail<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>US-008 Sparrow Retail<ept id="p1">**</ept> を選択します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Click <bpt id="p1">**</bpt>Collect<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customer balances<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Collections<ept id="p3">**</ept> to open the <bpt id="p4">**</bpt>Collections<ept id="p4">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>回収<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>顧客残高<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>コレクション<ept id="p3">**</ept>の順にクリックし、<bpt id="p4">**</bpt>コレクション<ept id="p4">**</ept> ページを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Click <bpt id="p1">**</bpt>Communicate<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Email<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Statements to contact<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>連絡<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>電子メール<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>連絡先に対する明細書<ept id="p3">**</ept>の順にクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to accept the default values in the dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ダイアログ ボックスで既定値を承諾する場合は、<bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>If you're prompted for the mail option to use, select <bpt id="p1">**</bpt>Use the Microsoft Dynamics 365 for Finance and Operations email client<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メール オプションを使用するように求められたら、<bpt id="p1">**</bpt>Microsoft Dynamics 365 for Finance and Operations 電子メール クライアントの使用<ept id="p1">**</ept>を選択し、<bpt id="p2">**</bpt>OK<ept id="p2">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>To receive the test message, change the <bpt id="p1">**</bpt>To address<ept id="p1">**</ept> to your email address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト メッセージを受信するには、<bpt id="p1">**</bpt>宛先アドレス<ept id="p1">**</ept>をメール アドレスに変更します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Ensure that the account specified in the SMTP settings is able to <bpt id="p1">**</bpt>Send As<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Send On Behalf Of<ept id="p2">**</ept> your email account.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMTP 設定で指定されたアカウントが、電子メール アカウントの <bpt id="p1">**</bpt>Send As<ept id="p1">**</ept> および <bpt id="p2">**</bpt>Send On Behalf Of<ept id="p2">**</ept> であることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>The easiest way to ensure this to use your email account in the SMTP settings.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これを確実にするための最も簡単な方法は、電子メール アカウントを SMTP 設定で使用することです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Enter a subject and body for the message.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メッセージの件名および本文を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Click <bpt id="p1">**</bpt>Send<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>送信<ept id="p1">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>The message should be delivered in one to five minutes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メッセージは 1 〜 5 分で配信する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Administrator: Workflow email notifications</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理者: ワークフロー電子メール通知</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Workflow email configuration is a collection of related settings that work in conjunction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー電子メールのコンフィギュレーションは連携して動作する関連設定の集合です。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Workflow email notification setup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー電子メール通知のセットアップ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Verify email settings:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール設定の確認:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Email<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>Email parameters<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>電子メール<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>電子メール パラメータ<ept id="p4">**</ept>の順に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>Verify that SMTP is enabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMTP が有効であることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Set the SMTP mail server settings.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMTP メール サーバーの設定を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Verify that the email batch process is running:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールのバッチ処理が実行されていることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Periodic tasks<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Email processing<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>Email distributor batch<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>定期処理のタスク<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>電子メールの処理<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>電子メール ディストリビューター バッチ<ept id="p4">**</ept> の順に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Enable the <bpt id="p1">**</bpt>Batch processing<ept id="p1">**</ept> option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>バッチ プロセス<ept id="p1">**</ept>オプションを有効にします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Optionally, adjust the recurrence of the email process:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じて、電子メール プロセスの再実行を調整します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Select <bpt id="p1">**</bpt>No end date<ept id="p1">**</ept> to adjust all recurrences of the email batch process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>終了日なし<ept id="p1">**</ept> を選択し、メール バッチ処理のすべての反復を調整します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Adjust the count.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カウントを調整します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Adjust to run every minute if needed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じて毎分実行するように調整します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Verify workflow notification system email templates:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー通知システムの電子メール テンプレートを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Email<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>System email templates<ept id="p4">**</ept> (for system-wide templates).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>電子メール<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>システムの電子メール テンプレート<ept id="p4">**</ept> (システム全体のテンプレート) の順に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>Verify that the <bpt id="p1">**</bpt>Sender email<ept id="p1">**</ept> field is set and valid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>送信者電子メール<ept id="p1">**</ept> フィールドが設定済みで有効であることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>Verify workflow notification organization email templates:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー通知組織の電子メール テンプレートを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Go to <bpt id="p1">**</bpt>Organization administration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Organization email templates<ept id="p3">**</ept> (for organization-specific templates).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>組織管理<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>組織の電子メール テンプレート<ept id="p3">**</ept> (組織固有のテンプレート) の順に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Verify that the <bpt id="p1">**</bpt>Sender email<ept id="p1">**</ept> field is set and valid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>送信者電子メール<ept id="p1">**</ept> フィールドが設定済みで有効であることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Verify that the user can receive email notifications:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーが電子メール通知を受信できることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Go to <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>User options<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>設定<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>ユーザー オプション<ept id="p2">**</ept>に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Go to the <bpt id="p1">**</bpt>Account<ept id="p1">**</ept> tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>勘定<ept id="p1">**</ept>タブに移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Set the email provider ID (for example, SMTP).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メール プロバイダー ID (SMTP など) を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Optionally, set the email address for the provider if it was not the default from the user setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じて、ユーザー設定の既定になっていなかった場合は、プロバイダーの電子メール アドレスを設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>Navigate to the <bpt id="p1">**</bpt>Workflow<ept id="p1">**</ept> tab. Set the option to send notifications in email to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ワークフロー<ept id="p1">**</ept> タブに移動します。電子メールで通知を送信するオプションを <bpt id="p2">**</bpt>はい<ept id="p2">**</ept> に設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>Verify that the workflow system will send email notifications:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー システムが電子メール通知を送信することを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>For each workflow that should have a notification, open the workflow properties in the workflow editor.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通知する必要があるワークフローごとに、ワークフロー エディターでワークフロー プロパティを開きます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Click <bpt id="p1">**</bpt>Basic settings<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>基本設定<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Adjust the email template for the workflow notifications.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー通知の電子メール テンプレートを調整します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Click <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>通知<ept id="p1">**</ept>をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Enable the events for which a user should be notified.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーに通知するべきイベントを有効にします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Set the recipient of the workflow notification for each event notification that is enabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効なイベント通知ごとにワークフロー通知の受信者を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>On a workflow approval element for which a user should be notified:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーに通知される必要のあるワークフロー承認要素:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Go to <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept>に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>Enable the events for which a user should be notified.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーに通知するべきイベントを有効にします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Set the recipient of the workflow notification for each event notification that is enabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効なイベント通知ごとにワークフロー通知の受信者を設定します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Workflow email notification testing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー電子メール通知のテスト</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>The testing for email notifications is to simply trigger the notification and then check for it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール通知のテストでは、単に通知をトリガーし、それを確認するだけです。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Submit a workflow that has been set up for email notifications.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール通知に対して設定されているワークフローを送信します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Check the workflow history to make sure that a workflow work item was assigned to the expected user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー履歴をチェックして、ワークフロー作業項目が予定されたユーザーに割り当てられていることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Check the status of the pending email notification in <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Periodic tasks<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Email processing<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>Email sending status<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>定期処理のタスク<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>電子メールの処理<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>電子メール送信ステータス<ept id="p4">**</ept> で、保留中の電子メール通知の状態を確認してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>If the email is fails to send, make sure that the SMTP mail account can be opened.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールが送信に失敗した場合は、SMTP メール アカウントを開くことができることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Check for the email notification in the appropriate inbox.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適切な受信トレイで電子メール通知を確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Troubleshoot email</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールのトラブルシューティング</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>There are a few standard steps that can help you troubleshoot the configuration of email settings.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メール設定のトラブルシューティングに役立つ標準的な手順がいくつかあります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Verify email settings:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール設定の確認:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Email<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>Email parameters<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>電子メール<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>電子メール パラメータ<ept id="p4">**</ept>の順に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Verify that SMTP is enabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMTP が有効であることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Verify the settings of the SMTP mail server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMTP メール サーバーの設定を確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>Sign in to the SMTP account in a separate window to make sure that the account and password are correct.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アカウントとパスワードが正確であるかことを確認するために、別のウィンドウで SMTP アカウントにログインします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Verify that the email batch process is running:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールのバッチ処理が実行されていることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Periodic tasks<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Email processing<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>Batch<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>定期処理のタスク<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>電子メールの処理<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>バッチ<ept id="p4">**</ept>の順に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>Make sure that the <bpt id="p1">**</bpt>Batch processing<ept id="p1">**</ept> option is set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>バッチ処理<ept id="p1">**</ept>オプションが<bpt id="p2">**</bpt>はい<ept id="p2">**</ept>に設定されていることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Review the recurrence of the email process:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール プロセスの再実行を調整します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Select <bpt id="p1">**</bpt>No end date<ept id="p1">**</ept> to adjust all recurrences of the email batch process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>終了日なし<ept id="p1">**</ept> を選択し、メール バッチ処理のすべての反復を調整します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Adjust the count as you require.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じてカウントを調整します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>To review the contents and status of the pending emails, go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Periodic tasks<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Email processing<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>Email sending status<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">保留中の電子メールの内容とステータスを確認するには、<bpt id="p1">**</bpt>システム管理<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>定期処理のタスク<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>電子メールの処理<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>電子メール送信ステータス<ept id="p4">**</ept> の順に移動します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>If you're using a release that is earlier than Platform update 28, personalize the form to add the email sender for easy review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プラットフォーム更新プログラム 28 より前のリリースを使用している場合は、フォームをパーソナライズして電子メールの差出人を追加し確認しやすくします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>To do this, right-click the grid header, select <bpt id="p1">**</bpt>Add columns<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Email<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Insert<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これを行うには、グリッド ヘッダーを右クリックし <bpt id="p1">**</bpt>列の追加<ept id="p1">**</ept> を選択して <bpt id="p2">**</bpt>電子メール<ept id="p2">**</ept> を選択して、<bpt id="p3">**</bpt>挿入<ept id="p3">**</ept> をクリックします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>If the <bpt id="p1">**</bpt>Email<ept id="p1">**</ept> field isn't added into the grid, you can view the sender by selecting <bpt id="p2">**</bpt>Show message<ept id="p2">**</ept>, and then selecting the <bpt id="p3">**</bpt>Email<ept id="p3">**</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>電子メール<ept id="p1">**</ept> フィールドがグリッドに追加されていない場合は、<bpt id="p2">**</bpt>メッセージの表示<ept id="p2">**</ept> を選択してから <bpt id="p3">**</bpt>電子メール<ept id="p3">**</ept> フィールドを選択して送信者を表示できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>Verify that emails are being sent from the correct account.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールが正しいアカウントから送信されていることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>If the account is incorrect, you need to adjust settings such as user options, system templates,  or organization templates, as needed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アカウントが正しくない場合、必要に応じてユーザー オプション、システム テンプレート、組織テンプレートなどの設定を調整する必要があります。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Verify that all email user accounts have been granted permission to <bpt id="p1">**</bpt>Send As<ept id="p1">**</ept> for the configured SMTP account (see step 4 for details).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての電子メール ユーザー アカウントに構成された SMTP アカウントの <bpt id="p1">**</bpt>Send As<ept id="p1">**</ept> へのアクセス許可が付与されていることを確認します (詳細は手順 4 を参照してください)。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>In the Office 365 admin center, verify that all user mail accounts that will be used to send emails have <bpt id="p1">**</bpt>Send As<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Send On Behalf Of<ept id="p2">**</ept> permissions for the configured SMTP account.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Office 365 管理センターで、電子メールの送信に使用されるすべてのユーザー メール アカウントに、構成された SMTP アカウントに対する <bpt id="p1">**</bpt>Send As<ept id="p1">**</ept> と <bpt id="p2">**</bpt>Send On Behalf Of<ept id="p2">**</ept> アクセス許可があることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>For more information, see <bpt id="p1">[</bpt>Enable sending email from another user's mailbox in Office 365<ept id="p1">](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする<ept id="p1">](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)</ept>を参照してください。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Sign in to all user mailboxes to verify that they are valid and can be signed in to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効かつログインできることを確認するために、すべてのユーザー メールボックスにログインします。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>If you continue to experience issues when email is sent via SMTP, try to enter the SMTP account information in a tool such as <bpt id="p1">[</bpt>SMTPer.net<ept id="p1">](https://www.smtper.net/)</ept> to verify that the SMTP server and account are valid and working correctly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMTP を介して電子メールを送信すると問題が発生する場合は、SMTP サーバーとアカウントが有効であり、正しく機能していることを確認するには、<bpt id="p1">[</bpt>SMTPer.net<ept id="p1">](https://www.smtper.net/)</ept> のようなツールに SMTP アカウント情報を入力します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>Troubleshoot the Exchange mail provider</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exchange メール プロバイダーのトラブルシューティング</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>The <bpt id="p1">**</bpt>Email parameters<ept id="p1">**</ept> page allows an administrator to select Exchange as an interactive email provider and as the Batch email provider.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>電子メール パラメーター<ept id="p1">**</ept> ページで管理者は対話型の電子メール プロバイダーおよびバッチ電子メール プロバイダーとして Exchange を選択できます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>The Exchange mail provider will use the current user's Exchange Online account to send emails.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exchange メール プロバイダーは、現在のユーザーの Exchange Online アカウントを使用して電子メールを送信します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>When used as the Batch email provider, the batch account will be used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バッチ電子メール プロバイダーとして使用された場合は、バッチ アカウントが使用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>No additional configuration is needed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加のコンフィギュレーションは必要ありません。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>If troubleshooting is needed, ensure that the current user's account can be signed into and that emails can be sent from that account to the intended recipients.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トラブルシューティングが必要な場合は、現在のユーザーのアカウントにサインインできることと、そのアカウントから目的の受信者に電子メールを送信できることを確認します。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>Other notes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のメモ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システムは Exchange や一般的な電子メール クライアントのような SMTP サーバーと通信するため、標準の動作と制限が適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>For example, standard <bpt id="p1">[</bpt>Exchange Online receiving and sending limits<ept id="p1">](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits)</ept> apply.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、標準の <bpt id="p1">[</bpt>Exchange Online 送受信制限<ept id="p1">](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits)</ept>が適用されます。</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加リソース</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source><bpt id="p1">[</bpt>Office integration troubleshooting<ept id="p1">](../../dev-itpro/office-integration/office-integration-troubleshooting.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Office 統合のトラブルシューティング<ept id="p1">](../../dev-itpro/office-integration/office-integration-troubleshooting.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source><bpt id="p1">[</bpt>Office integration tutorial<ept id="p1">](../../dev-itpro/office-integration/office-integration-tutorial.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Office 統合のチュートリアル<ept id="p1">](../../dev-itpro/office-integration/office-integration-tutorial.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source><bpt id="p1">[</bpt>Configure email functionality in Microsoft Dynamics AX [AX 2012]<ept id="p1">](https://technet.microsoft.com/library/aa834374.aspx)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics AX での電子メール機能のコンフィギュレーション [AX 2012]<ept id="p1">](https://technet.microsoft.com/library/aa834374.aspx)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: 電子メールのコンフィギュレーションと送信
+description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
+author: ChrisGarty
+manager: AnnBe
+ms.date: 05/29/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: SysEmailParameters
+audience: IT Pro
+ms.reviewer: sericks
+ms.search.scope: Core, Operations
+ms.custom: 268274
+ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
+ms.search.region: Global
+ms.author: cgarty
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 18059ead5dc34f3d562cebaaff3197f9671c5b41
+ms.sourcegitcommit: b2addd9bb23c46881508098264c5994b4258d7e6
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "1609142"
+---
+# <a name="configure-and-send-email"></a><span data-ttu-id="ba813-103">電子メールのコンフィギュレーションと送信</span><span class="sxs-lookup"><span data-stu-id="ba813-103">Configure and send email</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="ba813-104">電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。</span><span class="sxs-lookup"><span data-stu-id="ba813-104">The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices.</span></span> <span data-ttu-id="ba813-105">このトピックは、管理者のセクションとユーザーのセクションに分かれています。</span><span class="sxs-lookup"><span data-stu-id="ba813-105">This topic is divided into sections for administrators and users.</span></span> <span data-ttu-id="ba813-106">このトピックでは、関連情報を見つけやすくするために、管理者のセクションとユーザーのセクションに分かれています。</span><span class="sxs-lookup"><span data-stu-id="ba813-106">This topic is divided into sections for administrators and users to make it easy to find relevant information.</span></span>
+
+<span data-ttu-id="ba813-107">Dynamics 365 for Finance and Operations では、管理者とユーザーの両方が電子メールのサブシステムの動作を設定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-107">In Dynamics 365 for Finance and Operations both administrators and users set the behavior of the email subsystem.</span></span>
+
+## <a name="administrator-email-parameters-page"></a><span data-ttu-id="ba813-108">管理者: 電子メール パラメーター ページ</span><span class="sxs-lookup"><span data-stu-id="ba813-108">Administrator: Email parameters page</span></span>
+
+<span data-ttu-id="ba813-109">**電子メール パラメーター**ページの、**電子メール プロバイダー**タブで、次の設定に注意してください。</span><span class="sxs-lookup"><span data-stu-id="ba813-109">On the **Email parameters** page, note the following settings on the **Email providers** tab.</span></span>
+
+| <span data-ttu-id="ba813-110">フィールド</span><span class="sxs-lookup"><span data-stu-id="ba813-110">Field</span></span>                 | <span data-ttu-id="ba813-111">説明</span><span class="sxs-lookup"><span data-stu-id="ba813-111">Description</span></span> |
+|-----------------------|-------------|
+| <span data-ttu-id="ba813-112">バッチ電子メール プロバイダー</span><span class="sxs-lookup"><span data-stu-id="ba813-112">Batch email provider</span></span>  | <span data-ttu-id="ba813-113">バッチ方式または非対話型のプロセスで送信される電子メールの送信に使用される電子メール プロバイダーを指定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-113">Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner.</span></span> <span data-ttu-id="ba813-114">Exchange プロバイダーは、バッチ プロセスに関連付けられているアカウントを使用します。</span><span class="sxs-lookup"><span data-stu-id="ba813-114">The Exchange provider will use the account associated with the batch process.</span></span> |
+| <span data-ttu-id="ba813-115">添付ファイル サイズの上限</span><span class="sxs-lookup"><span data-stu-id="ba813-115">Attachment size limit</span></span> | <span data-ttu-id="ba813-116">電子メール サブシステム経由で送信できる 1 つの電子メールの最大サイズを指定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-116">Specifies the maximum size of a single email that can be sent via the email subsystem.</span></span> |
+
+<span data-ttu-id="ba813-117">**電子メール パラメーター**ページの、**SMTP 設定**タブで、次の設定に注意してください。</span><span class="sxs-lookup"><span data-stu-id="ba813-117">On the **Email parameters** page, note the following settings on the **SMTP settings** tab.</span></span>
+
+<table>
+<thead>
+<tr>
+<th><span data-ttu-id="ba813-118">フィールド</span><span class="sxs-lookup"><span data-stu-id="ba813-118">Field</span></span></th>
+<th><span data-ttu-id="ba813-119">説明</span><span class="sxs-lookup"><span data-stu-id="ba813-119">Description</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span data-ttu-id="ba813-120">送信メール サーバー</span><span class="sxs-lookup"><span data-stu-id="ba813-120">Outgoing mail server</span></span></td>
+<td><span data-ttu-id="ba813-121">目的の SMTP サーバーのホスト名。</span><span class="sxs-lookup"><span data-stu-id="ba813-121">The host name of the desired SMTP server.</span></span>
+<ul>
+<li><span data-ttu-id="ba813-122"><a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Office 365 製品</a> (\*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。</span><span class="sxs-lookup"><span data-stu-id="ba813-122">For <a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Office 365 production</a> (including \*.onmicrosoft.com accounts) use smtp.office365.com.</span></span> <span data-ttu-id="ba813-123">(<strong>設定</strong> &gt; <strong>メール</strong> &gt; <strong>POP および IMAP</strong>の outlook.office.com でこの設定を検索します。.)</span><span class="sxs-lookup"><span data-stu-id="ba813-123">(You can find this setting at outlook.office.com at <strong>Settings</strong> &gt; <strong>Mail</strong> &gt; <strong>POP and IMAP</strong>.)</span></span></li>
+<li><span data-ttu-id="ba813-124">Outlook/Hotmail で smtp-mail.outlook.com を使用します。</span><span class="sxs-lookup"><span data-stu-id="ba813-124">For Outlook/Hotmail use smtp-mail.outlook.com.</span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="ba813-125">SMTP ポート番号</span><span class="sxs-lookup"><span data-stu-id="ba813-125">SMTP port number</span></span></td>
+<td><span data-ttu-id="ba813-126">通常、セキュリティで保護して送信するためにポート番号は 587 に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba813-126">Typically, the port number should be set to 587 for secure transport.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="ba813-127"><strong>ユーザー名</strong>と<strong>パスワード</strong></span><span class="sxs-lookup"><span data-stu-id="ba813-127"><strong>User name</strong> and <strong>Password</strong></span></span></td>
+<td><span data-ttu-id="ba813-128">必要に応じて、適切なメール アカウントを使用して電子メールの送信を指定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-128">Specify, as needed, to send the email via the appropriate mail account.</span></span> <span data-ttu-id="ba813-129">すべてのユーザーは SMTP アカウントを指定し <strong>送信者</strong>および <strong>代理送信</strong>許可をし、Simple Mail Transfer Protocol (SMTP) で送信する機能を有効にします。</span><span class="sxs-lookup"><span data-stu-id="ba813-129">All users need to provide the SMTP account <strong>Send As</strong> and <strong>Send On Behalf Of</strong> permissions to enable the ability to send Simple Mail Transfer Protocol (SMTP) mail.</span></span> <span data-ttu-id="ba813-130">Send As 権限は、Office 365 管理センター (portal.office.com/Admin) にて、<strong>ユーザー</strong> &gt; <strong>有効なユーザー</strong> &gt; <strong>ユーザー</strong> &gt; <strong>メールボックスのアクセス許可を編集</strong> &gt; <strong>このメールボックスから電子メールを送信する</strong> で構成することができます。</span><span class="sxs-lookup"><span data-stu-id="ba813-130">You can configure Send As permissions in the Office 365 admin center (portal.office.com/Admin), at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>.</span></span> <span data-ttu-id="ba813-131">詳細については、<a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする</a>を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ba813-131">For more information, see <a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user's mailbox in Office 365</a>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="ba813-132">SSL が必須かどうかを指定します</span><span class="sxs-lookup"><span data-stu-id="ba813-132">Specify if SSL is required</span></span></td>
+<td><span data-ttu-id="ba813-133">安全なトランスポートをを使用するかを決定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-133">Determines whether secure transport is used.</span></span> <span data-ttu-id="ba813-134">これは通常、内部またはトラブルシューティングのシナリオを除き、<strong>はい</strong> です。</span><span class="sxs-lookup"><span data-stu-id="ba813-134">Typically, this is <strong>Yes</strong>, except for internal or troubleshooting scenarios.</span></span></td>
+</tr>
+</tbody>
+</table>
+
+## <a name="administrator-email-distributor-batch-process"></a><span data-ttu-id="ba813-135">管理者: 電子メール配布バッチ処理</span><span class="sxs-lookup"><span data-stu-id="ba813-135">Administrator: Email Distributor batch process</span></span>
+
+<span data-ttu-id="ba813-136">ユーザーの操作なしに、SMTP 経由でサーバーから直接送信される電子メールは、**電子メール ディストリビューター バッチ**プロセスによって送信されます。</span><span class="sxs-lookup"><span data-stu-id="ba813-136">Email that is sent directly from the server, without user interaction, via SMTP is sent by the **Email distributor batch** process.</span></span> <span data-ttu-id="ba813-137">電子メールのキューの処理には、そのバッチ処理を開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba813-137">That batch process must be started to process the email queue.</span></span> <span data-ttu-id="ba813-138">プロセスを開始するには、**電子メール配布バッチ**ウィンドウ (**システム管理**&gt;**定期タスク**&gt;**電子メール処理**&gt;**バッチ**)] を開いて、**バッチ処理** をオンにします。</span><span class="sxs-lookup"><span data-stu-id="ba813-138">To start the process, open the **Email distributor batch** pane (**System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**) and turn on **Batch processing**.</span></span>
+
+<span data-ttu-id="ba813-139">為替プロバイダーを使用している場合、バッチ プロセス (通常は管理者) に関連付けられているユーザー アカウントが送信者になります。</span><span class="sxs-lookup"><span data-stu-id="ba813-139">If the Exchange provider is used, then the user account associated with the batch process (usually admin) will be sender.</span></span>
+
+## <a name="administrator-user-email"></a><span data-ttu-id="ba813-140">管理者ユーザー: ユーザーの電子メール</span><span class="sxs-lookup"><span data-stu-id="ba813-140">Administrator: User email</span></span>
+
+<span data-ttu-id="ba813-141">各ユーザーのデフォルトのメールアドレスは、**ユーザー**ページ (**システム管理**&gt; **ユーザー** &gt; **ユーザー**) の **電子メール** 電子メールフィールドから取得します。</span><span class="sxs-lookup"><span data-stu-id="ba813-141">The default email address for each user is pulled from the **Email** field on the **Users** page (**System administration** &gt; **Users** &gt; **Users**).</span></span> <span data-ttu-id="ba813-142">各ユーザーがサインインするために電子メール アドレスを指定する必要がありますが、そのためにフィールドを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba813-142">An email address should be specified for each user for sign in, so this field should be populated.</span></span> <span data-ttu-id="ba813-143">必要に応じて、この既定値をオーバーライドできます。</span><span class="sxs-lookup"><span data-stu-id="ba813-143">Users can override this default if needed.</span></span>
+
+## <a name="user-email-provider-selection-section-on-the-options-page"></a><span data-ttu-id="ba813-144">ユーザー: [オプション] ページの電子メール プロバイダーの選択セクション</span><span class="sxs-lookup"><span data-stu-id="ba813-144">User: Email provider selection section on the Options page</span></span>
+
+<span data-ttu-id="ba813-145">**オプション** ページは、**設定 &gt; ユーザー オプション** から開くことができます。</span><span class="sxs-lookup"><span data-stu-id="ba813-145">The **Options** page can be opened via **Settings &gt; User options**.</span></span> <span data-ttu-id="ba813-146">**電子メール プロバイダーの選択** セクションは、**アカウント** タブにあります。</span><span class="sxs-lookup"><span data-stu-id="ba813-146">The **Email provider selection** section is on the **Account** tab.</span></span>
+
+| <span data-ttu-id="ba813-147">フィールド</span><span class="sxs-lookup"><span data-stu-id="ba813-147">Field</span></span>             | <span data-ttu-id="ba813-148">説明</span><span class="sxs-lookup"><span data-stu-id="ba813-148">Description</span></span> |
+|-------------------|-------------|
+| <span data-ttu-id="ba813-149">電子メール プロバイダー ID</span><span class="sxs-lookup"><span data-stu-id="ba813-149">Email provider ID</span></span> | <span data-ttu-id="ba813-150">ユーザーは、電子メールを送信するときに使用する電子メール プロバイダーを選択できます。</span><span class="sxs-lookup"><span data-stu-id="ba813-150">Allows the user to select the email provider that should be used when sending an email.</span></span> <span data-ttu-id="ba813-151">ここでオプションを選択することは、**どのように電子メール送信しますか** ダイアログ ボックスで **今後確認しない** をオンにするのと同じです。</span><span class="sxs-lookup"><span data-stu-id="ba813-151">Selecting an option here is the equivalent of selecting **Do not ask again** in the **How would you like to send email** dialog box.</span></span> <span data-ttu-id="ba813-152">空白のオプション **使用する電子メール プロバイダーの入力を求める** を選択すると、メールが送信されるときに **電子メールを送信する方法** ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="ba813-152">Selecting the blank option **Prompt for which email provider to use** will cause the **How would you like to send email** dialog box to display when an email is going to be sent.</span></span> |
+| <span data-ttu-id="ba813-153">電子メール</span><span class="sxs-lookup"><span data-stu-id="ba813-153">Email</span></span>             | <span data-ttu-id="ba813-154">ユーザーが電子メールの**ソース**フィールドの電子メール アドレスの上書きを提供できるようにします。</span><span class="sxs-lookup"><span data-stu-id="ba813-154">Allows the user to provide an email address override for the **From** field of the email.</span></span> <span data-ttu-id="ba813-155">既定では、ユーザー アカウントに関連付けられた電子メール エイリアスは新しい電子メールの**ソース** フィールドとして使用されますが、このユーザー オプションの電子メール アドレスによって上書きされます。</span><span class="sxs-lookup"><span data-stu-id="ba813-155">By default, the email alias that associated with the user account is used as the **From** field in new emails, but this user option email address will override that.</span></span> <span data-ttu-id="ba813-156">SMTP で電子メールを送信するとき、ユーザーは適切な **Send As**および **Send On Behalf Of** アクセス許可を Exchange または SMTP サーバー上で構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba813-156">When sending email via SMTP the user needs to have appropriate **Send As** and **Send On Behalf Of** permissions configured in Exchange or on the SMTP server.</span></span><blockquote>[!NOTE] <span data-ttu-id="ba813-157">**Send As** および **Send On Behalf Of** 権限は、Office 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メール ボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する**で構成することができます。</span><span class="sxs-lookup"><span data-stu-id="ba813-157">You can configure **Send As** and **Send On Behalf Of** permissions in the Office 365 admin center (portal.office.com/Admin) at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**.</span></span> <span data-ttu-id="ba813-158">詳細については、[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ba813-158">For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).</span></span></blockquote> |
+
+## <a name="user-optional-how-would-you-like-to-send-email-dialog-box"></a><span data-ttu-id="ba813-159">ユーザー (省略可): 電子メール ダイアログ ボックスをどのように送信しますか</span><span class="sxs-lookup"><span data-stu-id="ba813-159">User (optional): How would you like to send email dialog box</span></span>
+
+<span data-ttu-id="ba813-160">電子メールを送信するときは、**電子メールをどのように送信しますか** ダイアログ ボックスが表示され、それに電子メールを送信するために使用可能なオプションが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="ba813-160">When an email is going to be sent, the user will see the **How would you like to send email** dialog box that will list the available options for sending email.</span></span>
+
+| <span data-ttu-id="ba813-161">フィールド</span><span class="sxs-lookup"><span data-stu-id="ba813-161">Field</span></span>                                                                  | <span data-ttu-id="ba813-162">説明</span><span class="sxs-lookup"><span data-stu-id="ba813-162">Description</span></span> |
+|------------------------------------------------------------------------|-------------|
+| <span data-ttu-id="ba813-163">Outlook などの電子メール アプリケーションを使用します</span><span class="sxs-lookup"><span data-stu-id="ba813-163">Use an email app, such as Outlook</span></span>                                      | <span data-ttu-id="ba813-164">生成された電子メール (.eml) を持つを提供します。</span><span class="sxs-lookup"><span data-stu-id="ba813-164">Provides the user with a generated email (.eml) file.</span></span> |
+| <span data-ttu-id="ba813-165">Exchange 電子メール サーバーを使用します</span><span class="sxs-lookup"><span data-stu-id="ba813-165">Use Exchange email server</span></span>                                              | <span data-ttu-id="ba813-166">テナントに関連付けられている Exchange Online サーバーを使用します。</span><span class="sxs-lookup"><span data-stu-id="ba813-166">Uses the Exchange Online server associated with the tenant.</span></span> <span data-ttu-id="ba813-167">電子メールは、Exchange Webサービス (EWS) を使用して送信されます。</span><span class="sxs-lookup"><span data-stu-id="ba813-167">The email will be sent using Exchange Web Services (EWS).</span></span> <span data-ttu-id="ba813-168">オンプレミス Exchange サーバーは、この時点では **Exchange** メール プロバイダーでサポートされていません、</span><span class="sxs-lookup"><span data-stu-id="ba813-168">On-premises Exchange servers are not supported at this time for the **Exchange** mail provider.</span></span> |
+| <span data-ttu-id="ba813-169">Microsoft Dynamics 365 for Finance and Operations 電子メール クライアントを使用します</span><span class="sxs-lookup"><span data-stu-id="ba813-169">Use the Microsoft Dynamics 365 for Finance and Operations email client</span></span> | <span data-ttu-id="ba813-170">**電子メール送信する**構成ダイアログ ボックスを開いて、結果を電子メールで SMTP 経由で送信します。</span><span class="sxs-lookup"><span data-stu-id="ba813-170">Opens the **Send email** composition dialog box and then sends the resulting email via SMTP.</span></span> |
+| <span data-ttu-id="ba813-171">今後このメッセージを表示しない</span><span class="sxs-lookup"><span data-stu-id="ba813-171">Do not ask again</span></span>                                                       | <span data-ttu-id="ba813-172">このフィールドが選択されていない場合は、次回に電子メールが送信されたときに最後に選択したオプションが使用され、ダイアログ ボックスが表示されません。</span><span class="sxs-lookup"><span data-stu-id="ba813-172">If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open.</span></span> |
+
+## <a name="user-optional-send-email-dialog-box"></a><span data-ttu-id="ba813-173">ユーザー (省略可): 電子メール ダイアログ ボックスを送信</span><span class="sxs-lookup"><span data-stu-id="ba813-173">User (optional): Send email dialog box</span></span>
+
+<span data-ttu-id="ba813-174">**電子メール送信** ダイアログ ボックスが開き、送信される電子メールの内容を編集できます。</span><span class="sxs-lookup"><span data-stu-id="ba813-174">The **Send email** dialog box is opened to allow the user to edit the contents of the email that will be sent.</span></span> <span data-ttu-id="ba813-175">次のフィールドの一部は、このウィンドウであらかじめ設定されています。</span><span class="sxs-lookup"><span data-stu-id="ba813-175">Some of the following fields will be pre-populated in this window.</span></span>
+
+| <span data-ttu-id="ba813-176">フィールド</span><span class="sxs-lookup"><span data-stu-id="ba813-176">Field</span></span>                                                     | <span data-ttu-id="ba813-177">説明</span><span class="sxs-lookup"><span data-stu-id="ba813-177">Description</span></span> |
+|-----------------------------------------------------------|-------------|
+| <span data-ttu-id="ba813-178">自</span><span class="sxs-lookup"><span data-stu-id="ba813-178">From</span></span>                                                      | <span data-ttu-id="ba813-179">**オプション** ページの **メール** フィールドから取得されます。</span><span class="sxs-lookup"><span data-stu-id="ba813-179">Populated from the **Email** field on the **Options** page.</span></span> |
+| <span data-ttu-id="ba813-180">**宛先**、**Cc**、**Bcc**、**件名**、および**本文**</span><span class="sxs-lookup"><span data-stu-id="ba813-180">**To**, **Cc**, **Bcc**, **Subject**, and **Body**</span></span> | <span data-ttu-id="ba813-181">電子メールの送信を開始したプロセスによって指定された値が取得されます。</span><span class="sxs-lookup"><span data-stu-id="ba813-181">Populated with values specified by the process that initiated the sending of the email.</span></span> <span data-ttu-id="ba813-182">これらのフィールドは、必要に応じてユーザーが編集できます。</span><span class="sxs-lookup"><span data-stu-id="ba813-182">These fields can be edited as needed by the user.</span></span> |
+| <span data-ttu-id="ba813-183">添付ファイル リスト</span><span class="sxs-lookup"><span data-stu-id="ba813-183">Attachments list</span></span>                                          | <span data-ttu-id="ba813-184">電子メールの送信を開始したプロセスによって指定されたファイルが添付される場合があります。</span><span class="sxs-lookup"><span data-stu-id="ba813-184">May be populated with attachments specified by the process that initiated the sending of the email.</span></span> <span data-ttu-id="ba813-185">このリストは、必要に応じてユーザーが編集できます。</span><span class="sxs-lookup"><span data-stu-id="ba813-185">This list can be edited as needed by the user.</span></span> |
+
+<span data-ttu-id="ba813-186">電子メールを送信する準備ができたら、**送信** ボタンを使用して SMTP 経由で電子メールが送信されます。</span><span class="sxs-lookup"><span data-stu-id="ba813-186">When the email is ready to be sent, the **Send** button will cause the email to be sent via SMTP.</span></span>
+
+## <a name="usage-scenarios-to-verify-if-email-is-configured-correctly"></a><span data-ttu-id="ba813-187">電子メールが正しく設定されているかどうかを確認するための使用シナリオ</span><span class="sxs-lookup"><span data-stu-id="ba813-187">Usage scenarios to verify if email is configured correctly</span></span>
+
+### <a name="send-mail-via-a-local-mail-client"></a><span data-ttu-id="ba813-188">ローカル メール クライアント経由で電子メールを送信</span><span class="sxs-lookup"><span data-stu-id="ba813-188">Send mail via a local mail client</span></span>
+
+<span data-ttu-id="ba813-189">SysEmail フレームワークで有効になっている電子メール ワークフローでは、添付ファイルを含む電子メール メッセージ (.eml files) を生成できます。</span><span class="sxs-lookup"><span data-stu-id="ba813-189">Email workflows that are enabled via the SysEmail framework can generate email messages (.eml files) that contain attachments.</span></span> <span data-ttu-id="ba813-190">これらのメッセージは Microsoft Outlook または他の電子メール クライアント経由で送信することができます。</span><span class="sxs-lookup"><span data-stu-id="ba813-190">You can then send these messages via Microsoft Outlook or another email client.</span></span>
+
+1. <span data-ttu-id="ba813-191">Internet Explorer で、**売掛金勘定** &gt; **顧客** &gt; **すべての顧客**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-191">In Internet Explorer, navigate to **Accounts receivable** &gt; **Customers** &gt; **All customers**.</span></span>
+2. <span data-ttu-id="ba813-192">**US-008 Sparrow Retail** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ba813-192">Select **US-008 Sparrow Retail**.</span></span>
+3. <span data-ttu-id="ba813-193">**回収** &gt; **顧客残高** &gt; **コレクション**の順にクリックし、**コレクション** ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="ba813-193">Click **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.</span></span>
+4. <span data-ttu-id="ba813-194">**連絡** &gt; **電子メール** &gt; **連絡先に対する明細書**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-194">Click **Communicate** &gt; **Email** &gt; **Statements to contact**.</span></span>
+5. <span data-ttu-id="ba813-195">ダイアログ ボックスで既定値を承諾する場合は、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-195">Click **OK** to accept the default values in the dialog box.</span></span>
+6. <span data-ttu-id="ba813-196">メール オプションの使用を促すメッセージが表示された場合は、**再度確認しない**チェック ボックス (このオプションは**ユーザー オプション** ページから変更できます) をオフにし、**Outlook などの電子メール アプリケーションを使用**を選択し、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-196">If you're prompted for the mail option to use, clear the **Do not ask again** check box (you can change this option from the **User options** page), select **Use an email app, such as Outlook**, and then click **OK**.</span></span>
+7. <span data-ttu-id="ba813-197">コンピューター上で Internet Explorer を使用している場合は、生成される電子メール (.eml) ファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="ba813-197">If you're using Internet Explorer on your computer, open the email (.eml) file that is generated.</span></span> <span data-ttu-id="ba813-198">VM 上で Internet Explorer を使用している場合は、ファイルをコンピューターにコピーし、そのコンピュータでファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="ba813-198">If you're using Internet Explorer on the VM, copy the file to your computer, and open it there.</span></span>
+8. <span data-ttu-id="ba813-199">**宛先**フィールドの電子メール アドレスと生成されたブック添付ファイルに注意します。</span><span class="sxs-lookup"><span data-stu-id="ba813-199">Note the email address in the **To** field and the generated workbook attachment.</span></span>
+
+### <a name="send-mail-via-smtp"></a><span data-ttu-id="ba813-200">SMTP 経由でメールを送信</span><span class="sxs-lookup"><span data-stu-id="ba813-200">Send mail via SMTP</span></span>
+
+<span data-ttu-id="ba813-201">SysEmail フレームワークを介して有効になっている電子メール ワークフローは、簡単な電子メール ダイアログ ボックスで作成し、Simple Mail Transfer Protocol (SMTP) 経由で送信することもできます。</span><span class="sxs-lookup"><span data-stu-id="ba813-201">Email workflows that are enabled via the SysEmail framework can also be created in a simple email dialog box and then sent via Simple Mail Transfer Protocol (SMTP).</span></span>
+
+1. <span data-ttu-id="ba813-202">Finance and Operations で、**電子メール パラメーター** ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-202">In Finance and Operations, go to the **Email parameters** page.</span></span>
+2. <span data-ttu-id="ba813-203">**SMTP 設定**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-203">Click **SMTP settings**.</span></span>
+3. <span data-ttu-id="ba813-204">**送信メール サーバー** を要求された SMTP サーバーに設定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-204">Set the **Outgoing mail server** to the desired SMTP server:</span></span>
+
+    - <span data-ttu-id="ba813-205">[Office 365 製品](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (\*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。</span><span class="sxs-lookup"><span data-stu-id="ba813-205">For [Office 365 production](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (including \*.onmicrosoft.com accounts) use smtp.office365.com.</span></span> <span data-ttu-id="ba813-206">(**設定** &gt; **メール** &gt; **POP および IMAP**で outlook.office.com を通してこの設定を検索します。.)</span><span class="sxs-lookup"><span data-stu-id="ba813-206">(Find this setting via outlook.office.com, at **Settings** &gt; **Mail** &gt; **POP and IMAP**.)</span></span>
+    - <span data-ttu-id="ba813-207">Outlook/Hotmail で smtp-mail.outlook.com を使用します。</span><span class="sxs-lookup"><span data-stu-id="ba813-207">For Outlook/Hotmail use smtp-mail.outlook.com.</span></span>
+
+4. <span data-ttu-id="ba813-208">ユーザー名とパスワードを適切な電子メール アカウントとパスワードに設定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-208">Set the user name and password to an appropriate email account and password.</span></span>
+5. <span data-ttu-id="ba813-209">**SSLRequired** を有効のままにして、**SMTP ポート番号**は **587** に設定したままにします。</span><span class="sxs-lookup"><span data-stu-id="ba813-209">Leave **SSLRequired** turned on, and leave **SMTP port number** set to **587**.</span></span>
+6. <span data-ttu-id="ba813-210">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-210">Click **Save**.</span></span>
+7. <span data-ttu-id="ba813-211">Internet Explorer で、**売掛金勘定** &gt; **顧客** &gt; **すべての顧客**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-211">In Internet Explorer, navigate to **Accounts receivable** &gt; **Customers** &gt; **All customers**.</span></span>
+8. <span data-ttu-id="ba813-212">**US-008 Sparrow Retail** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ba813-212">Select **US-008 Sparrow Retail**.</span></span>
+9. <span data-ttu-id="ba813-213">**回収** &gt; **顧客残高** &gt; **コレクション**の順にクリックし、**コレクション** ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="ba813-213">Click **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.</span></span>
+10. <span data-ttu-id="ba813-214">**連絡** &gt; **電子メール** &gt; **連絡先に対する明細書**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-214">Click **Communicate** &gt; **Email** &gt; **Statements to contact**.</span></span>
+11. <span data-ttu-id="ba813-215">ダイアログ ボックスで既定値を承諾する場合は、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-215">Click **OK** to accept the default values in the dialog box.</span></span>
+12. <span data-ttu-id="ba813-216">メール オプションを使用するように求められたら、**Microsoft Dynamics 365 for Finance and Operations 電子メール クライアントの使用**を選択し、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-216">If you're prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Finance and Operations email client**, and then click **OK**.</span></span>
+13. <span data-ttu-id="ba813-217">テスト メッセージを受信するには、**宛先アドレス**をメール アドレスに変更します。</span><span class="sxs-lookup"><span data-stu-id="ba813-217">To receive the test message, change the **To address** to your email address.</span></span>
+
+    <span data-ttu-id="ba813-218">SMTP 設定で指定されたアカウントが、電子メール アカウントの **Send As** および **Send On Behalf Of** であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-218">Ensure that the account specified in the SMTP settings is able to **Send As** and **Send On Behalf Of** your email account.</span></span> <span data-ttu-id="ba813-219">これを確実にするための最も簡単な方法は、電子メール アカウントを SMTP 設定で使用することです。</span><span class="sxs-lookup"><span data-stu-id="ba813-219">The easiest way to ensure this to use your email account in the SMTP settings.</span></span>
+
+14. <span data-ttu-id="ba813-220">メッセージの件名および本文を入力します。</span><span class="sxs-lookup"><span data-stu-id="ba813-220">Enter a subject and body for the message.</span></span>
+15. <span data-ttu-id="ba813-221">**送信** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-221">Click **Send**.</span></span> <span data-ttu-id="ba813-222">メッセージは 1 〜 5 分で配信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba813-222">The message should be delivered in one to five minutes.</span></span>
+
+## <a name="administrator-workflow-email-notifications"></a><span data-ttu-id="ba813-223">管理者: ワークフロー電子メール通知</span><span class="sxs-lookup"><span data-stu-id="ba813-223">Administrator: Workflow email notifications</span></span>
+
+<span data-ttu-id="ba813-224">ワークフロー電子メールのコンフィギュレーションは連携して動作する関連設定の集合です。</span><span class="sxs-lookup"><span data-stu-id="ba813-224">Workflow email configuration is a collection of related settings that work in conjunction.</span></span>
+
+### <a name="workflow-email-notification-setup"></a><span data-ttu-id="ba813-225">ワークフロー電子メール通知のセットアップ</span><span class="sxs-lookup"><span data-stu-id="ba813-225">Workflow email notification setup</span></span>
+
+1. <span data-ttu-id="ba813-226">電子メール設定の確認:</span><span class="sxs-lookup"><span data-stu-id="ba813-226">Verify email settings:</span></span>
+
+    1. <span data-ttu-id="ba813-227">**システム管理** \> **設定** \> **電子メール** \> **電子メール パラメータ**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-227">Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.</span></span>
+    2. <span data-ttu-id="ba813-228">SMTP が有効であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-228">Verify that SMTP is enabled.</span></span>
+    3. <span data-ttu-id="ba813-229">SMTP メール サーバーの設定を設定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-229">Set the SMTP mail server settings.</span></span>
+
+2. <span data-ttu-id="ba813-230">電子メールのバッチ処理が実行されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-230">Verify that the email batch process is running:</span></span>
+
+    1. <span data-ttu-id="ba813-231">**システム管理** \> **定期処理のタスク** \> **電子メールの処理** \> **電子メール ディストリビューター バッチ** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-231">Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Email distributor batch**.</span></span>
+    2. <span data-ttu-id="ba813-232">**バッチ プロセス**オプションを有効にします。</span><span class="sxs-lookup"><span data-stu-id="ba813-232">Enable the **Batch processing** option.</span></span>
+    3. <span data-ttu-id="ba813-233">必要に応じて、電子メール プロセスの再実行を調整します。</span><span class="sxs-lookup"><span data-stu-id="ba813-233">Optionally, adjust the recurrence of the email process:</span></span>
+
+        1. <span data-ttu-id="ba813-234">**終了日なし** を選択し、メール バッチ処理のすべての反復を調整します。</span><span class="sxs-lookup"><span data-stu-id="ba813-234">Select **No end date** to adjust all recurrences of the email batch process.</span></span>
+        2. <span data-ttu-id="ba813-235">カウントを調整します。</span><span class="sxs-lookup"><span data-stu-id="ba813-235">Adjust the count.</span></span>
+        3. <span data-ttu-id="ba813-236">必要に応じて毎分実行するように調整します。</span><span class="sxs-lookup"><span data-stu-id="ba813-236">Adjust to run every minute if needed.</span></span>
+
+3. <span data-ttu-id="ba813-237">ワークフロー通知システムの電子メール テンプレートを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-237">Verify workflow notification system email templates:</span></span>
+
+    1. <span data-ttu-id="ba813-238">**システム管理** \> **設定** \> **電子メール** \> **システムの電子メール テンプレート** (システム全体のテンプレート) の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-238">Go to **System administration** \> **Setup** \> **Email** \> **System email templates** (for system-wide templates).</span></span>
+    2. <span data-ttu-id="ba813-239">**送信者電子メール** フィールドが設定済みで有効であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-239">Verify that the **Sender email** field is set and valid.</span></span>
+
+4. <span data-ttu-id="ba813-240">ワークフロー通知組織の電子メール テンプレートを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-240">Verify workflow notification organization email templates:</span></span>
+
+    1. <span data-ttu-id="ba813-241">**組織管理** \> **設定** \> **組織の電子メール テンプレート** (組織固有のテンプレート) の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-241">Go to **Organization administration** \> **Setup** \> **Organization email templates** (for organization-specific templates).</span></span>
+    2. <span data-ttu-id="ba813-242">**送信者電子メール** フィールドが設定済みで有効であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-242">Verify that the **Sender email** field is set and valid.</span></span>
+
+5. <span data-ttu-id="ba813-243">ユーザーが電子メール通知を受信できることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-243">Verify that the user can receive email notifications:</span></span>
+
+    1. <span data-ttu-id="ba813-244">**設定** \> **ユーザー オプション**に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-244">Go to **Settings** \> **User options**.</span></span>
+    2. <span data-ttu-id="ba813-245">**勘定**タブに移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-245">Go to the **Account** tab.</span></span>
+
+       1. <span data-ttu-id="ba813-246">メール プロバイダー ID (SMTP など) を設定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-246">Set the email provider ID (for example, SMTP).</span></span>
+       2. <span data-ttu-id="ba813-247">必要に応じて、ユーザー設定の既定になっていなかった場合は、プロバイダーの電子メール アドレスを設定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-247">Optionally, set the email address for the provider if it was not the default from the user setup.</span></span>
+
+    3. <span data-ttu-id="ba813-248">**ワークフロー** タブに移動します。電子メールで通知を送信するオプションを **はい** に設定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-248">Navigate to the **Workflow** tab. Set the option to send notifications in email to **Yes**.</span></span>
+
+6. <span data-ttu-id="ba813-249">ワークフロー システムが電子メール通知を送信することを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-249">Verify that the workflow system will send email notifications:</span></span>
+
+    <span data-ttu-id="ba813-250">通知する必要があるワークフローごとに、ワークフロー エディターでワークフロー プロパティを開きます。</span><span class="sxs-lookup"><span data-stu-id="ba813-250">For each workflow that should have a notification, open the workflow properties in the workflow editor.</span></span>
+
+    1. <span data-ttu-id="ba813-251">**基本設定**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-251">Click **Basic settings**.</span></span> <span data-ttu-id="ba813-252">ワークフロー通知の電子メール テンプレートを調整します。</span><span class="sxs-lookup"><span data-stu-id="ba813-252">Adjust the email template for the workflow notifications.</span></span>
+    2. <span data-ttu-id="ba813-253">**通知**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-253">Click **Notifications**.</span></span>
+
+        1. <span data-ttu-id="ba813-254">ユーザーに通知するべきイベントを有効にします。</span><span class="sxs-lookup"><span data-stu-id="ba813-254">Enable the events for which a user should be notified.</span></span>
+        2. <span data-ttu-id="ba813-255">有効なイベント通知ごとにワークフロー通知の受信者を設定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-255">Set the recipient of the workflow notification for each event notification that is enabled.</span></span>
+
+    3. <span data-ttu-id="ba813-256">ユーザーに通知される必要のあるワークフロー承認要素:</span><span class="sxs-lookup"><span data-stu-id="ba813-256">On a workflow approval element for which a user should be notified:</span></span>
+
+        1. <span data-ttu-id="ba813-257">**プロパティ**に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-257">Go to **Properties**.</span></span>
+        2. <span data-ttu-id="ba813-258">ユーザーに通知するべきイベントを有効にします。</span><span class="sxs-lookup"><span data-stu-id="ba813-258">Enable the events for which a user should be notified.</span></span>
+        3. <span data-ttu-id="ba813-259">有効なイベント通知ごとにワークフロー通知の受信者を設定します。</span><span class="sxs-lookup"><span data-stu-id="ba813-259">Set the recipient of the workflow notification for each event notification that is enabled.</span></span>
+
+### <a name="workflow-email-notification-testing"></a><span data-ttu-id="ba813-260">ワークフロー電子メール通知のテスト</span><span class="sxs-lookup"><span data-stu-id="ba813-260">Workflow email notification testing</span></span>
+
+<span data-ttu-id="ba813-261">電子メール通知のテストでは、単に通知をトリガーし、それを確認するだけです。</span><span class="sxs-lookup"><span data-stu-id="ba813-261">The testing for email notifications is to simply trigger the notification and then check for it.</span></span>
+
+1. <span data-ttu-id="ba813-262">電子メール通知に対して設定されているワークフローを送信します。</span><span class="sxs-lookup"><span data-stu-id="ba813-262">Submit a workflow that has been set up for email notifications.</span></span>
+2. <span data-ttu-id="ba813-263">ワークフロー履歴をチェックして、ワークフロー作業項目が予定されたユーザーに割り当てられていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-263">Check the workflow history to make sure that a workflow work item was assigned to the expected user.</span></span>
+3. <span data-ttu-id="ba813-264">**システム管理** \> **定期処理のタスク** \> **電子メールの処理** \> **電子メール送信ステータス** で、保留中の電子メール通知の状態を確認してください。</span><span class="sxs-lookup"><span data-stu-id="ba813-264">Check the status of the pending email notification in **System administration** \> **Periodic tasks** \> **Email processing** \> **Email sending status**.</span></span>
+
+    <span data-ttu-id="ba813-265">電子メールが送信に失敗した場合は、SMTP メール アカウントを開くことができることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-265">If the email is fails to send, make sure that the SMTP mail account can be opened.</span></span>
+
+4. <span data-ttu-id="ba813-266">適切な受信トレイで電子メール通知を確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-266">Check for the email notification in the appropriate inbox.</span></span>
+
+## <a name="troubleshoot-email"></a><span data-ttu-id="ba813-267">電子メールのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="ba813-267">Troubleshoot email</span></span>
+
+<span data-ttu-id="ba813-268">メール設定のトラブルシューティングに役立つ標準的な手順がいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="ba813-268">There are a few standard steps that can help you troubleshoot the configuration of email settings.</span></span>
+
+1. <span data-ttu-id="ba813-269">電子メール設定の確認:</span><span class="sxs-lookup"><span data-stu-id="ba813-269">Verify email settings:</span></span>
+
+    1. <span data-ttu-id="ba813-270">**システム管理** \> **設定** \> **電子メール** \> **電子メール パラメータ**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-270">Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.</span></span>
+    2. <span data-ttu-id="ba813-271">SMTP が有効であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-271">Verify that SMTP is enabled.</span></span>
+    3. <span data-ttu-id="ba813-272">SMTP メール サーバーの設定を確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-272">Verify the settings of the SMTP mail server.</span></span>
+    4. <span data-ttu-id="ba813-273">アカウントとパスワードが正確であるかことを確認するために、別のウィンドウで SMTP アカウントにログインします。</span><span class="sxs-lookup"><span data-stu-id="ba813-273">Sign in to the SMTP account in a separate window to make sure that the account and password are correct.</span></span>
+
+2. <span data-ttu-id="ba813-274">電子メールのバッチ処理が実行されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-274">Verify that the email batch process is running:</span></span>
+
+    1. <span data-ttu-id="ba813-275">**システム管理** \> **定期処理のタスク** \> **電子メールの処理** \> **バッチ**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-275">Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Batch**.</span></span>
+    2. <span data-ttu-id="ba813-276">**バッチ処理**オプションが**はい**に設定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-276">Make sure that the **Batch processing** option is set to **Yes**.</span></span>
+    3. <span data-ttu-id="ba813-277">電子メール プロセスの再実行を調整します。</span><span class="sxs-lookup"><span data-stu-id="ba813-277">Review the recurrence of the email process:</span></span>
+
+        1. <span data-ttu-id="ba813-278">**終了日なし** を選択し、メール バッチ処理のすべての反復を調整します。</span><span class="sxs-lookup"><span data-stu-id="ba813-278">Select **No end date** to adjust all recurrences of the email batch process.</span></span>
+        2. <span data-ttu-id="ba813-279">必要に応じてカウントを調整します。</span><span class="sxs-lookup"><span data-stu-id="ba813-279">Adjust the count as you require.</span></span>
+
+3. <span data-ttu-id="ba813-280">保留中の電子メールの内容とステータスを確認するには、**システム管理** \> **定期処理のタスク** \> **電子メールの処理** \> **電子メール送信ステータス** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba813-280">To review the contents and status of the pending emails, go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Email sending status**.</span></span>
+
+    1. <span data-ttu-id="ba813-281">プラットフォーム更新プログラム 28 より前のリリースを使用している場合は、フォームをパーソナライズして電子メールの差出人を追加し確認しやすくします。</span><span class="sxs-lookup"><span data-stu-id="ba813-281">If you're using a release that is earlier than Platform update 28, personalize the form to add the email sender for easy review.</span></span> <span data-ttu-id="ba813-282">これを行うには、グリッド ヘッダーを右クリックし **列の追加** を選択して **電子メール** を選択して、**挿入** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba813-282">To do this, right-click the grid header, select **Add columns**, select **Email**, and then click **Insert**.</span></span> <span data-ttu-id="ba813-283">**電子メール** フィールドがグリッドに追加されていない場合は、**メッセージの表示** を選択してから **電子メール** フィールドを選択して送信者を表示できます。</span><span class="sxs-lookup"><span data-stu-id="ba813-283">If the **Email** field isn't added into the grid, you can view the sender by selecting **Show message**, and then selecting the **Email** field.</span></span>
+    2. <span data-ttu-id="ba813-284">電子メールが正しいアカウントから送信されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-284">Verify that emails are being sent from the correct account.</span></span> <span data-ttu-id="ba813-285">アカウントが正しくない場合、必要に応じてユーザー オプション、システム テンプレート、組織テンプレートなどの設定を調整する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba813-285">If the account is incorrect, you need to adjust settings such as user options, system templates,  or organization templates, as needed.</span></span>
+    3. <span data-ttu-id="ba813-286">すべての電子メール ユーザー アカウントに構成された SMTP アカウントの **Send As** へのアクセス許可が付与されていることを確認します (詳細は手順 4 を参照してください)。</span><span class="sxs-lookup"><span data-stu-id="ba813-286">Verify that all email user accounts have been granted permission to **Send As** for the configured SMTP account (see step 4 for details).</span></span>
+
+4. <span data-ttu-id="ba813-287">Office 365 管理センターで、電子メールの送信に使用されるすべてのユーザー メール アカウントに、構成された SMTP アカウントに対する **Send As** と **Send On Behalf Of** アクセス許可があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-287">In the Office 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account.</span></span> <span data-ttu-id="ba813-288">詳細については、[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ba813-288">For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).</span></span>
+5. <span data-ttu-id="ba813-289">有効かつログインできることを確認するために、すべてのユーザー メールボックスにログインします。</span><span class="sxs-lookup"><span data-stu-id="ba813-289">Sign in to all user mailboxes to verify that they are valid and can be signed in to.</span></span>
+6. <span data-ttu-id="ba813-290">SMTP を介して電子メールを送信すると問題が発生する場合は、SMTP サーバーとアカウントが有効であり、正しく機能していることを確認するには、[SMTPer.net](https://www.smtper.net/) のようなツールに SMTP アカウント情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="ba813-290">If you continue to experience issues when email is sent via SMTP, try to enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.</span></span>
+
+## <a name="troubleshoot-the-exchange-mail-provider"></a><span data-ttu-id="ba813-291">Exchange メール プロバイダーのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="ba813-291">Troubleshoot the Exchange mail provider</span></span>
+
+<span data-ttu-id="ba813-292">**電子メール パラメーター** ページで管理者は対話型の電子メール プロバイダーおよびバッチ電子メール プロバイダーとして Exchange を選択できます。</span><span class="sxs-lookup"><span data-stu-id="ba813-292">The **Email parameters** page allows an administrator to select Exchange as an interactive email provider and as the Batch email provider.</span></span> <span data-ttu-id="ba813-293">Exchange メール プロバイダーは、現在のユーザーの Exchange Online アカウントを使用して電子メールを送信します。</span><span class="sxs-lookup"><span data-stu-id="ba813-293">The Exchange mail provider will use the current user's Exchange Online account to send emails.</span></span> <span data-ttu-id="ba813-294">バッチ電子メール プロバイダーとして使用された場合は、バッチ アカウントが使用されます。</span><span class="sxs-lookup"><span data-stu-id="ba813-294">When used as the Batch email provider, the batch account will be used.</span></span> <span data-ttu-id="ba813-295">追加のコンフィギュレーションは必要ありません。</span><span class="sxs-lookup"><span data-stu-id="ba813-295">No additional configuration is needed.</span></span> <span data-ttu-id="ba813-296">トラブルシューティングが必要な場合は、現在のユーザーのアカウントにサインインできることと、そのアカウントから目的の受信者に電子メールを送信できることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba813-296">If troubleshooting is needed, ensure that the current user's account can be signed into and that emails can be sent from that account to the intended recipients.</span></span>
+
+## <a name="other-notes"></a><span data-ttu-id="ba813-297">その他のメモ</span><span class="sxs-lookup"><span data-stu-id="ba813-297">Other notes</span></span>
+
+<span data-ttu-id="ba813-298">システムは Exchange や一般的な電子メール クライアントのような SMTP サーバーと通信するため、標準の動作と制限が適用されます。</span><span class="sxs-lookup"><span data-stu-id="ba813-298">The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply.</span></span> <span data-ttu-id="ba813-299">たとえば、標準の [Exchange Online 送受信制限](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits)が適用されます。</span><span class="sxs-lookup"><span data-stu-id="ba813-299">For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits) apply.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="ba813-300">追加リソース</span><span class="sxs-lookup"><span data-stu-id="ba813-300">Additional resources</span></span>
+
+[<span data-ttu-id="ba813-301">Office 統合のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="ba813-301">Office integration troubleshooting</span></span>](../../dev-itpro/office-integration/office-integration-troubleshooting.md)
+
+[<span data-ttu-id="ba813-302">Office 統合のチュートリアル</span><span class="sxs-lookup"><span data-stu-id="ba813-302">Office integration tutorial</span></span>](../../dev-itpro/office-integration/office-integration-tutorial.md)
+
+<span data-ttu-id="ba813-303">[Microsoft Dynamics AX での電子メール機能のコンフィギュレーション [AX 2012]](https://technet.microsoft.com/library/aa834374.aspx)</span><span class="sxs-lookup"><span data-stu-id="ba813-303">[Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/library/aa834374.aspx)</span></span>
