@@ -1,588 +1,383 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="TOC.yml" target-language="ja-JP">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>TOC.8820d6.dea47d376e4da04c15c94a8207856ec23522f4a7.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>dea47d376e4da04c15c94a8207856ec23522f4a7</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>7e223ddd04184fe5a9861be1405fcc0eb8dd166c</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/04/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\talent\TOC.yml</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101">
-          <source>Dynamics 365 for Talent</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Dynamics 365 for Talent</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102">
-          <source>Get started</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">使用開始</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Get started with Talent</source><target logoport:matchpercent="80" state="translated" state-qualifier="fuzzy-match">Talent の使用を開始する</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>What's new or changed in Talent</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Talent の新機能および変更された機能</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>May 28, 2019</source><target logoport:matchpercent="97" state="translated" state-qualifier="fuzzy-match">2019 年 5 月 28 日</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>May 21, 2019</source><target logoport:matchpercent="97" state="translated" state-qualifier="fuzzy-match">2019 年 5 月 21 日</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>May 13, 2019</source><target logoport:matchpercent="97" state="translated" state-qualifier="fuzzy-match">2019 年 5 月 13 日</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>May 6, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">2019 年 5 月 6 日</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>April 30, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">2019 年 4 月 30 日</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>April 25, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">2019 年 4 月 25 日</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>April 16, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">2019 年 4 月 16 日</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>April 9, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">2019 年 4 月 9 日</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>April 2, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 4 月 2 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>March 26, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 3 月 26 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>March 20, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 3 月 20 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>March 14, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 3 月 14 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>March 5, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 3 月 5 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>What's new archives 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新機能アーカイブ 2019</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>February 27, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 2 月 27 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>February 14, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 2 月 14 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>February 7, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 2 月 7 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>January 31, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 1 月 31 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>January 23, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 1 月 23 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>January 17, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 1 月 17 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>January 11, 2019</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2019 年 1 月 11 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>What's new archives 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新機能アーカイブ 2018</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>December 14, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 12 月 14 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>December 6, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 12 月 6 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>November 27, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 11 月 27 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>November 15, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 11 月 15 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>October 31, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 10 月 31 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>October 19, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 10 月 19 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>October 15, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 10 月 15 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>October 8, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 10 月 8 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>October 1, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 10 月 1 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>September 24, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 9 月 24 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>September 17, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 9 月 17 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>September 10, 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 9 月 10 日</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>August 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 8 月</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>July 2018</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 7 月</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>System requirements and update policy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム要件と更新ポリシー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Provision Talent</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talent のプロビジョニング</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Remove Talent environments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talent 環境の削除</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Provisioning for the Onboard app</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Onboard アプリのプロビジョニング</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Embed PowerApps apps</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">PowerApps アプリの埋め込み</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Core HR and Common Data Service</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Core HR および Common Data Service</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Access preview features</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">プレビュー機能の利用</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Get support for Talent</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Talent に関するサポートの利用</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Staff your organization with Attract</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Attract による組織のスタッフ配置</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Which version of Attract?</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Attract のどのバージョンですか。</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Attract features and capabilities</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Attract の機能</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Create a process template in Attract</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attract でのプロセス テンプレートの作成</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Create, approve, and post jobs in Attract</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Attract でジョブ求人の作成、承認、および投稿</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Post jobs to external career sites from Attract</source><target logoport:matchpercent="86" state="translated" state-qualifier="fuzzy-match">Attract から外部キャリア サイトへの求人の投稿</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Source candidates by using talent pools</source><target logoport:matchpercent="80" state="translated" state-qualifier="fuzzy-match">人材グループを使用した候補者のソーシング</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Sourcing with LinkedIn Recruiter</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">LinkedIn Recruiter によるソーシング</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Activities in the hiring processes</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">採用プロセスの活動</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Interview scheduling and feedback</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">面接のスケジューリングおよびフィードバック</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Extensibility in Attract</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Attract での拡張性</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Career site functionality in Attract</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Attract のキャリア サイト機能</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Set up offer management</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">オファー管理の設定</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Create, approve, and sign offers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オファーの作成、承認、および署名</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Email templates</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール テンプレート</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Security and role management in Attract</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attract でのセキュリティおよびロール管理</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Admin settings in Attract</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attract での管理者設定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Intelligent recommendations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インテリジェントな推奨</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Create an engaging onboarding experience</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">魅力的な新人研修エクスペリエンスの作成</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Track sources for candidate profiles and applications</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">候補者のプロファイルおよび応募のソースの追跡</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Use analytic reports for hiring process insights</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">プロセス インサイトの採用に分析レポートを使用</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Manage your workforce with Core HR</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Core HR による従業員の管理</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Organize your workforce</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">従業員の編成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Organize your workforce by using departments, jobs, and positions</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">部門、職務、職位を使用した従業員の編成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Set up the components of a job</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">職務のコンポーネントの設定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Create departments and include them in the department hierarchy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">部門の作成と部門階層への取り込み</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Set up HR parameters across legal entities</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">法人間の HR パラメーターの設定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Set up company-specific HR parameters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">会社固有の HR パラメーターの設定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Personnel actions FAQ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">個人のアクションに関するよく寄せられる質問</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Formalize business processes</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">業務プロセスの形式化</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Use workflows to manage employee information</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">ワークフローを使用した従業員情報の管理</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Set up number sequences</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">番号順序の設定</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Number sequence overview</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">番号順序の概要</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Set up number sequences on an individual basis</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">番号順序を個別に設定する</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Set up number sequences by using a wizard</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">ウィザードを使用した番号順序の設定</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Configure organizations and organizational hierarchies</source><target logoport:matchpercent="84" state="translated" state-qualifier="fuzzy-match">組織と組織階層のコンフィギュレーション</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Organizations overview</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">組織の概要</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Plan your organizational hierarchy</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">組織階層の計画</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Create an organizational hierarchy</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">組織階層の作成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Create a legal entity</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">法人の作成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Create an operating unit</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">作業単位の作成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Set up a global address book</source><target logoport:matchpercent="70" state="translated" state-qualifier="fuzzy-match">グローバル アドレス帳の設定</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Global address book overview</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match">グローバル アドレス帳の概要</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Plan for the global address book and others</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">グローバル アドレス帳およびその他のアドレス帳の計画</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Configure the global address book</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">グローバル アドレス帳の構成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Address books FAQ</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">アドレス帳に関するよく寄せられる質問</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Configure workflows</source><target logoport:matchpercent="81" state="translated" state-qualifier="x-fuzzy-match-unedited">ワークフローのコンフィギュレーション</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Workflow overview</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">ワークフローの概要</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Workflow elements</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">ワークフロー要素</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Actions in workflow approval processes</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">ワークフローの承認プロセスでのアクション</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Create workflows</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフローの作成</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Configure workflow properties</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー プロパティのコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Configure manual tasks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手動タスクのコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Configure automated tasks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動化タスクのコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Configure approval processes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">承認プロセスのコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Configure approval steps</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">承認ステップのコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Configure manual decisions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手動決定のコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Configure conditional decisions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件付き意思決定のコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Configure parallel activities</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">並列活動のコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Configure parallel branches</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">並列分岐のコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Configure line-item workflows</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">品目ワークフローのコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Configure the message processing batch job</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メッセージ処理バッチ ジョブのコンフィギュレーション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Delegate work items in a workflow</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフローの作業項目をデリゲート</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>View workflow history</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">ワークフロー履歴の表示</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Enable users to receive workflow-related email messages</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">ワークフロー関連の電子メール メッセージを受信するためのユーザーを有効にする</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Set up alerts</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">警告の設定</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Alerts overview</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">警告の概要</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Create alert rules</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">警告ルールの作成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Batch processing of alerts</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">警告のバッチ処理</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Manage cases</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">ケースの管理</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Case management overview</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">ケース管理の概要</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Plan case security, processes, and categories</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">ケース セキュリティ、プロセス、およびカテゴリの計画</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Configure document management</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">ドキュメント管理のコンフィギュレーション</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Configure and send email</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">電子メールのコンフィギュレーションと送信</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Date/time data and time zones</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">日時データとタイム ゾーン</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Set up leave and absence</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">休暇および欠勤の設定</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Manage leave and absence</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">休暇および欠勤の管理</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Leave and absence concepts</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">休暇および欠勤の概念</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Accrue time off based on hours worked</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">作業時間に基づく休暇取得権利の発生</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>Working time calendars</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">作業時間カレンダー</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Set up compensation plans</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match">報酬プランの設定</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Compensation plans overview</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">報酬プランの概要</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Create fixed compensation plans</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">固定報酬プランの作成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Create variable compensation plans</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">変動報酬プランの作成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Process compensation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">報酬の処理</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Set up the components of a job</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">職務のコンポーネントの設定</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Develop and train employees</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">従業員の育成とトレーニング</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Performance management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パフォーマンス管理</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Align workforce skills with business needs</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">要員のスキルとビジネス ニーズの調整</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Set up training courses</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">トレーニング コースの設定</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>Add to your performance journal and send praise to someone</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">業績仕訳への追加および称賛の送信</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>Create a goal</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">目標の作成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Create a performance review</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">業績の確認の作成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Define and manage a benefits program</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">福利厚生プログラムの定義および管理</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Define and manage a benefits program</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited">福利厚生プログラムの定義および管理</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Benefit eligibility policies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">給付金の適格性ポリシー</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Generate Affordable Care Act (ACA) reports</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">医療費負担適正化法 (Affordable Care Act) 報告の生成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Manage items lent to workers</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">作業者への貸与品目の管理</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Evaluate key metrics with questionnaires</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">アンケートによる主要メトリックスの評価</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>Gather information with questionnaires</source><target logoport:matchpercent="85" state="translated" state-qualifier="x-fuzzy-match-unedited">アンケートによる情報の収集</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>Design questionnaires</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">アンケートのデザイン</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Distribute and schedule questionnaires</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">アンケートの配布とスケジューリング</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>View and evaluate the results of questionnaires</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アンケート結果の表示と評価</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Workplace safety and compliance (United States)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">職場の安全性とコンプライアンス (米国)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Respond to a request for personal data in Talent</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Talent での個人データ要求に対応</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Form I-9 employment verification</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">フォーム I-9 就労資格確認書</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Comply with the ADA</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">アメリカ障害者法 (ADA) への準拠</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Integration</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">統合</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Integrate with Dynamics 365 for Finance and Operations</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match">Dynamics 365 for Finance and Operations との統合</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>Configure the payroll integration between Talent and Dayforce</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Talent と Dayforce 間の給与統合のコンフィギュレーション</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Data integration guidance for Dynamics 365 for Talent</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Talent のデータ統合ガイド</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Integration FAQ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">統合に関してよく寄せられる質問</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Recurring data export using Azure Logic apps</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Azure Logic Apps を使用した定期的なデータのエクスポート</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Office integration</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Office 統合</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Office integration tutorial</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Office 統合のチュートリアル</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Update entity data in Excel</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Excel でのエンティティ データの更新</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Create Open in Excel experiences</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">[Excel で開く] エクスペリエンスの作成</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Troubleshoot the Office integration</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Office 統合のトラブルシューティング</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Extensibility</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">拡張性</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Embedded Power BI in workspaces</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">ワークスペースの埋め込み Power BI</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Extend Talent by using PowerApps and Microsoft Flow - Example scenarios</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">PowerApps と Microsoft Flow を使用した Talent の拡張 - シナリオ例</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Mobile app</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">モバイル アプリ</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Mobile workspaces</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">モバイル ワークスペース</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Company directory mobile workspace</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">会社のディレクトリ モバイル ワークスペース</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>My team mobile workspace</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">自分のチーム モバイル ワークスペース</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Publish mobile workspaces</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">モバイル ワークスペースの公開</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Track changes in recruiting data</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">採用データの変更の追跡</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>Extensibility in Attract</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Attract での拡張性</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Custom fields in Core HR</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Core HR のカスタム フィールド</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Troubleshoot Talent</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Talent のトラブルシューティング</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Analytic reports aren't updated</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">分析レポートが更新されない</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Can't create an environment in the PowerApps Admin center</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">PowerApps 管理センターで環境を作成できない</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Talent client disconnects</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talent クライアントの接続が切断される</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Avoid text truncation on the position hierarchy and export to Visio</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">職位階層でテキストの一部が切り捨てられないようにし、Visio にエクスポートする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Run the compensation process</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">報酬プロセスを実行する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>Save task guides to LCS and replay them</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS にタスク ガイドを保存して再生する</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Access to private addresses by security role</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セキュリティ ロールで個人住所にアクセスする</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 アプリ (Common Data Service 1.0) で Talent が表示されない</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>User can access Core HR but not the Onboard or Attract app</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーが Core HR にアクセスできるが、Onboard または Attract アプリにアクセスできない</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Reporting options in Talent</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talent のレポート オプション</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Integration FAQ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">統合に関してよく寄せられる質問</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>Azure Active Directory users not found in People Picker</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure Active Directory ユーザーが人員ピッカーで見つからない</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+- name: Dynamics 365 for Talent
+  href: index.md
+  items:
+    - name: 使用開始
+      items:
+        - name: Talent の使用を開始する
+          href: talent-get-started.md
+        - name: Talent の新機能および変更された機能
+          href: whats-new.md
+          items:
+            - name: 2019 年 5 月 28 日
+              href: whats-new-talent-may-28-2019.md
+            - name: 2019 年 5 月 21 日
+              href: whats-new-talent-may-21-2019.md
+            - name: 2019 年 5 月 13 日
+              href: whats-new-talent-may-13-2019.md
+            - name: 2019 年 5 月 6 日
+              href: whats-new-talent-may-6-2019.md
+            - name: 2019 年 4 月 30 日
+              href: whats-new-talent-april-30-2019.md
+            - name: 2019 年 4 月 25 日
+              href: whats-new-talent-april-25-2019.md
+            - name: 2019 年 4 月 16 日
+              href: whats-new-talent-april-16-2019.md
+            - name: 2019 年 4 月 9 日
+              href: whats-new-talent-april-9-2019.md
+            - name: 2019 年 4 月 2 日
+              href: whats-new-talent-april-2-2019.md
+            - name: 2019 年 3 月 26 日
+              href: whats-new-talent-march-26-2019.md
+            - name: 2019 年 3 月 20 日
+              href: whats-new-talent-march-20.md
+            - name: 2019 年 3 月 14 日
+              href: whats-new-talent-march-14.md
+            - name: 2019 年 3 月 5 日
+              href: whats-new-talent-march-5.md
+            - name: 新機能アーカイブ 2019
+              items:
+                - name: 2019 年 2 月 27 日
+                  href: whats-new-talent-feb-27.md
+                - name: 2019 年 2 月 14 日
+                  href: whats-new-talent-feb14.md
+                - name: 2019 年 2 月 7 日
+                  href: whats-new-talent-february-7.md
+                - name: 2019 年 1 月 31 日
+                  href: whats-new-talent-january-29.md
+                - name: 2019 年 1 月 23 日
+                  href: whats-new-talent-january-23.md
+                - name: 2019 年 1 月 17 日
+                  href: whats-new-talent-january-17.md
+                - name: 2019 年 1 月 11 日
+                  href: whats-new-talent-january-11.md
+            - name: 新機能アーカイブ 2018
+              items:
+                - name: 2018 年 12 月 14 日
+                  href: whats-new-talent-december-14.md
+                - name: 2018 年 12 月 6 日
+                  href: whats-new-talent-december-6.md
+                - name: 2018 年 11 月 27 日
+                  href: whats-new-talent-november-27.md
+                - name: 2018 年 11 月 15 日
+                  href: whats-new-talent-november-15.md
+                - name: 2018 年 10 月 31 日
+                  href: whats-new-talent-october-31.md
+                - name: 2018 年 10 月 19 日
+                  href: whats-new-talent-october-19.md
+                - name: 2018 年 10 月 15 日
+                  href: whats-new-talent-october-11.md
+                - name: 2018 年 10 月 8 日
+                  href: whats-new-talent-october-8.md
+                - name: 2018 年 10 月 1 日
+                  href: whats-new-talent-october-01.md
+                - name: 2018 年 9 月 24 日
+                  href: whats-new-talent-september-24.md
+                - name: 2018 年 9 月 17 日
+                  href: whats-new-talent-september-17-2018.md
+                - name: 2018 年 9 月 10 日
+                  href: whats-new-talent-september-10.md
+                - name: 2018 年 8 月
+                  href: whats-new-talent-august2018.md
+                - name: 2018 年 7 月
+                  href: whats-new-talent-july2018.md
+        - name: システム要件と更新ポリシー
+          href: talent-versions-update-policy.md
+        - name: Talent のプロビジョニング
+          href: provisioning-talent.md
+        - name: Talent 環境の削除
+          href: remove-talent-environment.md
+        - name: Onboard アプリのプロビジョニング
+          href: modular-app-tech-faq.md
+        - name: PowerApps アプリの埋め込み
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Core HR および Common Data Service
+          href: CoreHREntities.md
+        - name: プレビュー機能の利用
+          href: access-preview-feature.md
+        - name: Talent に関するサポートの利用
+          href: talent-support.md
+    - name: Attract による組織のスタッフ配置
+      items:
+        - name: Attract のどのバージョンですか。
+          href: attract-comprehensive-hiring.md
+        - name: Attract の機能
+          href: attract-overview.md
+        - name: Attract でのプロセス テンプレートの作成
+          href: Process-templates-Attract.md
+        - name: Attract でジョブ求人の作成、承認、および投稿
+          href: Creating-jobs-Attract.md
+        - name: Attract から外部キャリア サイトへの求人の投稿
+          href: posting-jobs-external.md
+        - name: 人材グループを使用した候補者のソーシング
+          href: attract-talent-pools.md
+        - name: LinkedIn Recruiter によるソーシング
+          href: attract-linked-in-recruiter.md
+        - name: 採用プロセスの活動
+          href: activities-attract.md
+        - name: 面接のスケジューリングおよびフィードバック
+          href: interview-scheduling-feedback.md
+        - name: Attract での拡張性
+          href: extensibility-attract.md
+        - name: Attract のキャリア サイト機能
+          href: career-site.md
+        - name: オファー管理の設定
+          href: offer-setup.md
+        - name: オファーの作成、承認、および署名
+          href: creating-offers.md
+        - name: 電子メール テンプレート
+          href: email-templates.md
+        - name: Attract でのセキュリティおよびロール管理
+          href: security-attract.md
+        - name: Attract での管理者設定
+          href: Admin-Settings-Attract.md
+        - name: インテリジェントな推奨
+          href: Intelligent-Recommendations.md
+        - name: 魅力的な新人研修エクスペリエンスの作成
+          href: create-onboarding-experience.md
+        - name: 候補者のプロファイルおよび応募のソースの追跡
+          href: source-tracking.md
+        - name: プロセス インサイトの採用に分析レポートを使用
+          href: analytic-reports.md
+    - name: Core HR による従業員の管理
+      items:
+        - name: 従業員の編成
+          items:
+            - name: 部門、職務、職位を使用した従業員の編成
+              href: departments-jobs-positions.md
+            - name: 職務のコンポーネントの設定
+              href: create-job.md
+            - name: 部門の作成と部門階層への取り込み
+              href: create-department-add-department-hierarchy.md
+            - name: 法人間の HR パラメーターの設定
+              href: set-up-hr-parameters-across-legal-entities.md
+            - name: 会社固有の HR パラメーターの設定
+              href: set-up-company-specific-hr-parameters.md
+            - name: 個人のアクションに関するよく寄せられる質問
+              href: personnel-actions-faq.md
+            - name: 業務プロセスの形式化
+              href: formalize-business-processes.md
+            - name: ワークフローを使用した従業員情報の管理
+              href: workflow-manage-employee-information.md
+            - name: 番号順序の設定
+              items:
+                - name: 番号順序の概要
+                  href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: 番号順序を個別に設定する
+                  href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: ウィザードを使用した番号順序の設定
+                  href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: 組織と組織階層のコンフィギュレーション
+              items:
+                - name: 組織の概要
+                  href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: 組織階層の計画
+                  href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: 組織階層の作成
+                  href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: 法人の作成
+                  href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: 作業単位の作成
+                  href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: グローバル アドレス帳の設定
+              items:
+                - name: グローバル アドレス帳の概要
+                  href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: グローバル アドレス帳およびその他のアドレス帳の計画
+                  href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: グローバル アドレス帳の構成
+                  href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: アドレス帳に関するよく寄せられる質問
+                  href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: ワークフローのコンフィギュレーション
+              items:
+                - name: ワークフローの概要
+                  href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: ワークフロー要素
+                  href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: ワークフローの承認プロセスでのアクション
+                  href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: ワークフローの作成
+                  href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  items:
+                    - name: ワークフロー プロパティのコンフィギュレーション
+                      href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: 手動タスクのコンフィギュレーション
+                      href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: 自動化タスクのコンフィギュレーション
+                      href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: 承認プロセスのコンフィギュレーション
+                      href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: 承認ステップのコンフィギュレーション
+                      href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: 手動決定のコンフィギュレーション
+                      href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: 条件付き意思決定のコンフィギュレーション
+                      href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: 並列活動のコンフィギュレーション
+                      href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: 並列分岐のコンフィギュレーション
+                      href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                    - name: 品目ワークフローのコンフィギュレーション
+                      href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: メッセージ処理バッチ ジョブのコンフィギュレーション
+                  href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: ワークフローの作業項目をデリゲート
+                  href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: ワークフロー履歴の表示
+                  href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: ワークフロー関連の電子メール メッセージを受信するためのユーザーを有効にする
+                  href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: 警告の設定
+              items:
+                - name: 警告の概要
+                  href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: 警告ルールの作成
+                  href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: 警告のバッチ処理
+                  href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: ケースの管理
+              items:
+                - name: ケース管理の概要
+                  href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: ケース セキュリティ、プロセス、およびカテゴリの計画
+                  href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: ドキュメント管理のコンフィギュレーション
+              href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: 電子メールのコンフィギュレーションと送信
+              href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: 日時データとタイム ゾーン
+              href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: 休暇および欠勤の設定
+          items:
+            - name: 休暇および欠勤の管理
+              href: leave-absence-overview.md
+            - name: 休暇および欠勤の概念
+              href: leave-absence-concepts.md
+            - name: 作業時間に基づく休暇取得権利の発生
+              href: leave-accrue-hours-worked.md
+            - name: 作業時間カレンダー
+              href: working-time-calendars.md
+        - name: 報酬プランの設定
+          items:
+            - name: 報酬プランの概要
+              href: compensation-plans.md
+            - name: 固定報酬プランの作成
+              href: create-fixed-compensation-plans.md
+            - name: 変動報酬プランの作成
+              href: create-variable-compensation-plans.md
+            - name: 報酬の処理
+              href: process-compensation.md
+            - name: 職務のコンポーネントの設定
+              href: create-job.md
+        - name: 従業員の育成とトレーニング
+          items:
+            - name: パフォーマンス管理
+              href: performance-management-overview.md
+            - name: 要員のスキルとビジネス ニーズの調整
+              href: skills.md
+            - name: トレーニング コースの設定
+              href: courses.md
+            - name: 業績仕訳への追加および称賛の送信
+              href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: 目標の作成
+              href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: 業績の確認の作成
+              href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: 福利厚生プログラムの定義および管理
+          items:
+            - name: 福利厚生プログラムの定義および管理
+              href: manage-benefit-program.md
+            - name: 給付金の適格性ポリシー
+              href: benefit-eligibility-policies.md
+            - name: 医療費負担適正化法 (Affordable Care Act) 報告の生成
+              href: generate-aca-reports.md
+            - name: 作業者への貸与品目の管理
+              href: loan-items.md
+        - name: アンケートによる主要メトリックスの評価
+          items:
+            - name: アンケートによる情報の収集
+              href: questionnaires.md
+            - name: アンケートのデザイン
+              href: design-questionnaires.md
+            - name: アンケートの配布とスケジューリング
+              href: distribute-questionnaires.md
+            - name: アンケート結果の表示と評価
+              href: evaluate-questionnaire-results.md
+        - name: 職場の安全性とコンプライアンス (米国)
+          items:
+            - name: Talent での個人データ要求に対応
+              href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: フォーム I-9 就労資格確認書
+              href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: アメリカ障害者法 (ADA) への準拠
+              href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: 統合
+      items:
+        - name: Dynamics 365 for Finance and Operations との統合
+          href: talent-financeandoperations-integration.md
+        - name: Talent と Dayforce 間の給与統合のコンフィギュレーション
+          href: configure-payroll-integration.md
+        - name: Dynamics 365 for Talent のデータ統合ガイド
+          href: data-integration.md
+        - name: 統合に関してよく寄せられる質問
+          href: talent-fo-integration.md
+        - name: Azure Logic Apps を使用した定期的なデータのエクスポート
+          href: tutorial-integration-recurring-export.md
+        - name: Office 統合
+          items:
+            - name: Office 統合のチュートリアル
+              href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Excel でのエンティティ データの更新
+              href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: '[Excel で開く] エクスペリエンスの作成'
+              href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Office 統合のトラブルシューティング
+              href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: 拡張性
+      items:
+        - name: ワークスペースの埋め込み Power BI
+          href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: PowerApps と Microsoft Flow を使用した Talent の拡張 - シナリオ例
+          href: extensibility-examples.md
+        - name: モバイル アプリ
+          items:
+            - name: モバイル ワークスペース
+              items:
+                - name: 会社のディレクトリ モバイル ワークスペース
+                  href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: 自分のチーム モバイル ワークスペース
+                  href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: モバイル ワークスペースの公開
+              href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: 採用データの変更の追跡
+          href: process-auditing.md
+        - name: Attract での拡張性
+          href: extensibility-attract.md
+        - name: Core HR のカスタム フィールド
+          href: corehr-custom-fields.md
+    - name: Talent のトラブルシューティング
+      items:
+        - name: 分析レポートが更新されない
+          href: analytic-reports-not-updated.md
+        - name: PowerApps 管理センターで環境を作成できない
+          href: create-envi-powerapps-admin-ctr.md
+        - name: Talent クライアントの接続が切断される
+          href: client-disconnects.md
+        - name: 職位階層でテキストの一部が切り捨てられないようにし、Visio にエクスポートする
+          href: avoid-text-truncation-position-hierarchy-visio.md
+        - name: 報酬プロセスを実行する
+          href: run-compensation-process.md
+        - name: LCS にタスク ガイドを保存して再生する
+          href: save-play-task-guides-LCS.md
+        - name: セキュリティ ロールで個人住所にアクセスする
+          href: security-roles-addresses.md
+        - name: Microsoft Dynamics 365 アプリ (Common Data Service 1.0) で Talent が表示されない
+          href: talent-not-in-home-CDS.md
+        - name: ユーザーが Core HR にアクセスできるが、Onboard または Attract アプリにアクセスできない
+          href: user-access-core-hr.md
+        - name: Talent のレポート オプション
+          href: talent-reporting-options.md
+        - name: 統合に関してよく寄せられる質問
+          href: talent-FO-integration.md
+        - name: Azure Active Directory ユーザーが人員ピッカーで見つからない
+          href: people-picker-user-not-found.md
