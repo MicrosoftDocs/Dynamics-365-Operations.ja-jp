@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 774e8651314ce707224bf55695f5395d7b7b0912
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c78921dd1e4d8e3aafc64443d1d187c9dbffb8f6
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506191"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570305"
 ---
 # <a name="cross-company-data-sharing"></a>会社間データ共有
 

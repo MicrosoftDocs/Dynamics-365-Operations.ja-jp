@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a645ee6f7e6085abc6e872d490b078f512c15aa1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b71fde2d1b56b237dec2a08d3bd27e8ba6c35fef
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552372"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595549"
 ---
 # <a name="demand-forecasting-overview"></a>需要予測の概要
 
@@ -52,7 +52,7 @@ ms.locfileid: "1552372"
     -   Finance and Operations Demand forecasting experiments をダウンロードして、ビジネス要件に適合するように変更し、Azure の Web サービスとして公開し、需要予測を生成するために使用できます。 エンタープライズ レベルのユーザーとして、生産計画担当者向けに Finance and Operations サブスクリプションを購入した場合は、この実験をダウンロードできます。
     -   [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) から現在有効な需要予測実験をダウンロードできます。 Finance and Operations Demand forecasting experiments は Finance and Operations と自動的に統合されるので、顧客およびパートナーは [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) からダウンロードした experiments の統合を処理する必要があります。 したがって、[Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) の実験は Finance and Operations の需要予測実験として使用できるほど単純ではありません。 Finance and Operations アプリケーション プログラム インターフェイス (API) を使用するように experiments のコードを修正する必要があります。
     -   Microsoft Azure Machine Learning Studio で独自の実験を作成し、Azure のサービスとして発行、そして需要予測の生成に使用することができます。
-    -   高パフォーマンスが必要でない場合、または大量のデータの処理が要求されていない場合に、Machine Learning 無料レベルを使用できます。 特に実装およびテスト フェーズの際には、このレベルから常に開始することをお勧めします。 高パフォーマンスと追加のストレージが必要な場合、Machine Learning 標準レベルを使用できます。 この層には、Azure のサブスクリプションが要求され、追加費用が含まれます。 Machine Learning 価格設定の詳細については、<http://aka.ms/machine-learning-price-info>を参照してください。
+    -   高パフォーマンスが必要でない場合、または大量のデータの処理が要求されていない場合に、Machine Learning 無料レベルを使用できます。 特に実装およびテスト フェーズの際には、このレベルから常に開始することをお勧めします。 高パフォーマンスと追加のストレージが必要な場合、Machine Learning 標準レベルを使用できます。 この層には、Azure のサブスクリプションが要求され、追加費用が含まれます。 Machine Learning 価格設定の詳細については、[Machine Learning Studio の価格](https://aka.ms/machine-learning-price-info)を参照ください。
 -   **すべてのデカップリング ポイントでの予測の減少** – Finance and Operations の需要予測はこの機能に基づいて作成されるので、すべてのデカップリング ポイントで需要に依存する、または依存しない予測が可能です。
 
 ## <a name="basic-flow-in-demand-forecasting"></a>需要予測の基本フロー

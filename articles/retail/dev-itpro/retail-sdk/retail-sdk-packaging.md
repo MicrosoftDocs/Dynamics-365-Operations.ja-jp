@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dff0d0337654c54c58cc1b4f3bf9e52d67f0b72e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 544c3c42ce542fef345da0f959b082aeaa74857e
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512637"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577916"
 ---
 # <a name="create-retail-deployable-packages"></a>配置可能な小売パッケージの作成
 
@@ -42,6 +42,7 @@ ms.locfileid: "1512637"
 - ハイブリッド アプリ (IOS および Android POS アプリ)
 
 ## <a name="retail-deployable-package"></a>配置可能 Retail パッケージ
+
 小売可能なパッケージは、配置に必要なすべてのメタデータと共に、すべてのカスタマイズを含む 1 つの結合されたパッケージです。 この小売展開可能パッケージを使用して、カスタマイズをさまざまな環境に展開できます。 LCS で自動フローを使用して、配置を行うことができます。またはパッケージ内に用意されているスクリプトを使用して手動で行うことができます。 このトピックでは、配置可能小売パッケージを生成するプロセスを説明します。
 
 > [!IMPORTANT]
@@ -52,6 +53,7 @@ ms.locfileid: "1512637"
 Retail SDK の詳細情報は、[Retail SDK 概要](retail-sdk-overview.md) を参照してください。
 
 ### <a name="steps-to-create-a-retail-deployable-package"></a>小売展開可能パッケージを作成する手順
+
 小売展開可能パッケージを生成するには、2 つの方法があります。 Retail ビルドの自動化を使用することができます。または Retail SDK のビルド ツールを使用し、手動でパッケージを生成することもできます。 このトピックでは、手動メソッドを対象としています。
 
 1. 小売スタックに機能をカスタマイズまたは追加します。
@@ -59,6 +61,7 @@ Retail SDK の詳細情報は、[Retail SDK 概要](retail-sdk-overview.md) を�
 3. すべての設定が **...\\Retail SDK\\BuildTools** フォルダーの **Customization.settings** ファイルで指定された後、Retail SDK フォルダーのルートで **msbuild /t:rebuild** を起動します。 配置可能小売パッケージを生成するために、MSBuild ビルド ツールまたは Microsoft Visual Studio 開発者コマンド ライン ツールのいずれかを使用することができます。 パッケージを作成する前に、すべてのカスタマイズされたアセンブリを、**...\\Retail SDK\\References** フォルダに保存します。 さらに、**...\\Retail SDK\\Assets** フォルダーの **CommerceRuntime.Ext.config**、**CommerceRuntime.MPOSOffline.Ext.config**、 **HardwareStation.Extension.config**、および **RetailProxy.MPOSOffline.ext.config** のような変更済の構成ファイルを入力します。
 
 ## <a name="retail-sdk-build-tools--customization-settings"></a>Retail SDK ビルド ツール: カスタマイズ設定
+
 カスタマイズを構築しパッケージ化するために Retail SDK が使用するコンフィギュレーション値のほとんどが BuildTools\\Customization.setting files で設定されます。 これらの値は、バイナリ、コンポーネント、パッケージの名前付け、バージョン管理、コード署名の方法を制御するメタデータを定義します。 このメタデータを定義した後、Retail SDK ビルド システムはカスタマイズ資産を識別し、すべての Retail コンポーネントのためにカスタマイズ資産をパッケージ化します。
 
 次のコンフィギュレーション設定は、 Customization.settings ファイルで使用できます。
@@ -127,11 +130,13 @@ Retail SDK の詳細情報は、[Retail SDK 概要](retail-sdk-overview.md) を�
 > ビルド プロセスを開始する前に、拡張アセンブリを \\Retail SDK\\References に、カスタム データベース スクリプトを \\RetailSDK\\Database\Upgrade\\Custom に配置する必要があります。
 
 ### <a name="database-scripts"></a>データベース スクリプト
+
 データベース スクリプトは、Retail サーバーおよび Modern POS オフライン パッケージとともにパッケージ化され、Retail Server および Modern POS がインストールされたときに実行されます。 複数のカスタム データベース スクリプトがある場合は、アルファベット順に実行されます。 したがって、スクリプトを特定の順序で実行したい場合は、それに応じて名前を付ける必要があります。 CRT.RETAILUPGRADEHISTORY テーブルは、データベースに既に適用されているスクリプトを追跡します。 したがって、次のパッケージ アップグレードは、CRT.RETAILUPGRADEHISTORY テーブルに項目がないアップグレード スクリプトのみを実行します。
 
 チャネル データベース拡張機能の詳細については、[チャネル データベース拡張機能](../channel-db-extensions.md)を参照してください。
 
 ## <a name="update-the-extension-configuration-files"></a>拡張機能の構成ファイルを更新します
+
 CRT、Retail Server、ハードウェア ステーション、またはプロキシに新しい拡張機能がある場合は、関連する拡張構成ファイルの\<構成\>セクションに拡張アセンブリの詳細を登録する必要があります。 すべての拡張設定ファイルは次で見つけることができます。\\RetailSDK\\資産フォルダ。 すべての拡張機能は拡張ファイルの情報に基づいて読み込まれるため、アセンブリを登録する必要があります。
 
 パッケージを行う前に、次の構成ファイルを更新する必要があります (この領域でカスタマイズがある場合)。
@@ -193,6 +198,7 @@ CRT、Retail Server、ハードウェア ステーション、またはプロキ
     ```
 
 ### <a name="retail-server-extension-assemblies"></a>Retail サーバーの拡張機能アセンブリ
+
 パッケージを開始する前に、Retail Server web.config file の \<extensionComposition\> に、Retail Server 拡張アセンブリのエントリを追加する必要があります。これにより、アセンブリがロードされ、使用できるようになります。 web.config ファイルは、Retail SDK\\パッケージ\\RetailServer\\ コード フォルダーで検索できます。
 
 次の図は、Retail サーバーの Web.config ファイルの例を示します。
@@ -200,10 +206,10 @@ CRT、Retail Server、ハードウェア ステーション、またはプロキ
 [![Retail サーバーの Web.config ファイル](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)
 
 > [!NOTE]
-> 上記の例、またはチャネル構成ファイルのいずれかで、カスタム設定を追加したり変更したりしないでください。 サポートされている唯一の変更は、構成セクションでのカスタム アセンブリの詳細の追加です。
-
+> 上記の例、またはチャネル構成ファイルのいずれかで、カスタム設定を追加したり変更したりしないでください。 対応している変更は、構成セクションでのカスタム アセンブリの詳細の追加のみです。
+>
 > また、拡張機能またはパッケージの一部として、構成ファイルのいずれも編集しないでください。 これらの構成ファイルは、配置の際にコア Microsoft パッケージの最新のファイルで更新され、変更内容は失われます。
-
+>
 > - CommerceRuntime.config
 > - dllhost.exe.config
 > - HardwareStation.Dedicated.config
@@ -212,14 +218,16 @@ CRT、Retail Server、ハードウェア ステーション、またはプロキ
 > - ハードウェア ステーション - Web.config
 
 ## <a name="install-nugetexe"></a>NuGet.exe のインストール 
-ファイルの結合およびSDKのサイズを最小限に抑えるため、いくつかの依存関係パッケージおよび参照を NuGet パッケージに移動します。 これらは NuGet.org からダウンロードできます。Retail SDK を作成すると、これらの依存関係は自動的に packages.config ファイルに基づいて NuGet.org から収集されます。 このためには、「[NuGet コマンド ライン インターフェイス](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#installing-nugetexe)」をインストールし、 NuGet.org から nuget.exe をダウンロードした後、nuget を Windows パスに追加する必要があります。次の手順は、Windows パスに nuget を追加する方法を示しています。
 
-  1. ウィンドウ メニューを開き、"パス" を入力します。 **システム環境変数を編集**を使用できます。 
-  2. メニューの右下の**環境変数**をクリックします。
-  3. 次のウィンドウで、**システム変数**の**パス**を選択し、**編集**をクリックします。
-  4. nuget.exe ファイルを保存するフォルダーのエントリを追加するか、既に登録されているフォルダーに nuget.exe ファイルを保存します。
+ファイルの結合およびSDKのサイズを最小限に抑えるため、いくつかの依存関係パッケージおよび参照を NuGet パッケージに移動します。 これらは NuGet.org からダウンロードできます。Retail SDK を作成すると、これらの依存関係は自動的に packages.config ファイルに基づいて NuGet.org から収集されます。 このためには、「[NuGet コマンド ライン インターフェイス](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference#installing-nugetexe)」をインストールし、 NuGet.org から nuget.exe をダウンロードした後、nuget を Windows パスに追加する必要があります。次の手順は、Windows パスに nuget を追加する方法を示しています。
+
+1. Windows メニューを開き、 **Path**と入力します。 **システム環境変数を編集**を使用できます。 
+2. メニューの右下の**環境変数**をクリックします。
+3. 次のウィンドウで、**システム変数**の**パス**を選択し、**編集**をクリックします。
+4. nuget.exe ファイルを保存するフォルダーのエントリを追加するか、既に登録されているフォルダーに nuget.exe ファイルを保存します。
 
 ## <a name="generate-a-retail-deployable-package"></a>配置可能小売パッケージを生成
+
 配置可能小売パッケージを生成するには、MSBuild ビルド コマンド プロンプト ウィンドウを開きます。 (開発者仮想マシンの、**開始**メニューで **msbuild** を検索します。) そして、次のコマンドを実行します。
 
 ```
@@ -229,10 +237,12 @@ msbuild /p:Configuration=Release
 Microsoft Visual Studio 2015 開発者コマンド ライン ツールで同じコマンドを実行することもできます。
 
 ### <a name="packages"></a>梱包
+
 ビルドが完了した後、Retail SDK\\Packages\\RetailDeployablePackage フォルダーに、配置可能小売パッケージ が zip ファイルとして (RetailDeployablePackage.zip) が生成されます。
 
 > [!NOTE]
 > さまざまな Retail コンポーネントを別々のパッケージにすることはありません。 すべてのパッケージは、RetailDeployablePackage という名の 1 つのバンドル パッケージに結合されます。
 
 ## <a name="deploy-the-retail-deployable-packages"></a>小売展開可能パッケージを配置する
+
 手動または LCS 自動化フローを使用してパッケージを配置する方法については、[配置可能なパッケージを適用する](../../../dev-itpro/deployment/apply-deployable-package-system.md)および[配置可能なパッケージをインストールする](../../../dev-itpro/deployment/install-deployable-package.md)を参照してください。

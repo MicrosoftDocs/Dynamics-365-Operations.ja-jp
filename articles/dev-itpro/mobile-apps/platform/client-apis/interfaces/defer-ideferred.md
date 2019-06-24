@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5fe5bf6b296a935b39af5ba719421fc65ac9d754
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1c654bc705bfc5a45e38a255e2ffb567c9e4186b
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537158"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554381"
 ---
 # <a name="deferred-typelttgt"></a>延期されたタイプ&lt;T&gt;
 

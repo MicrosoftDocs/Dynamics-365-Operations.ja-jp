@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 64220fe3ed246c5abd4d0919ed70f9b97cc15ea8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c95c4678951247ab882398b5658822a6e3b77123
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505414"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551078"
 ---
 # <a name="copy-configuration-data-between-companies-or-legal-entities"></a>会社間または法人間のコンフィギュレーション データのコピー
 

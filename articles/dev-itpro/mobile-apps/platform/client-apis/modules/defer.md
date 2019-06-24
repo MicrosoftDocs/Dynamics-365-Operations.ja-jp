@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c654d6609559e8a4f67c31d3f2e8e7e9d6ab8ff3
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b1762e999010f87dbac3ac6186e79a19d445f44c
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537294"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547342"
 ---
 # <a name="defer-module"></a>延期モジュール
 

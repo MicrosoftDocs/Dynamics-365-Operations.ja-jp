@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b77436e5f4afeaa55bd0c6882e62a293bd44442d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 17207b63a579df40be604f62029139c86e4448bc
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537027"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550934"
 ---
 # <a name="uninstall-a-package"></a>パッケージのアンインストール
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2038ba67d5f13763d79f3249708d5ab1358b8fd9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ef86e9707455a1ed2bc6321e57d768ab5208d21c
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537214"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551074"
 ---
 # <a name="data-entities"></a>データ エンティティ
 

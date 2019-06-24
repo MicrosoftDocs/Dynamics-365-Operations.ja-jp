@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 5b703659393c05f4cd567cb8bb2f1936a9597cc3
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8af724108aabb477625df02a618a981858978f94
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537369"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552506"
 ---
 # <a name="configuration-manager-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内での構成マネージャー
 

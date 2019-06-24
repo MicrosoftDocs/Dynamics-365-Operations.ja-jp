@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f758397754b9489f1e14caf28b832fae16ab3665
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a0a23fd1ff275d61c4cd742866e14e310e0d096c
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506053"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595575"
 ---
 # <a name="workflow-subsystem-updates-in-finance-and-operations"></a>Finance and Operations でのワークフロー サブシステムの更新
 
@@ -34,14 +34,14 @@ Microsoft Dynamics AX 2012 を使用していれば、Finance and Operations の
 
 | このテーマについて学ぶには | このトピックを参照                                             |
 |-----------------------------|------------------------------------------------------------|
-| ワークフロー システム         | <http://technet.microsoft.com/en-us/library/dd309672.aspx> |
-| モジュールごとのワークフロー タイプ    | <http://technet.microsoft.com/EN-US/library/dd362043.aspx> |
-| ワークフロー要素           | <http://technet.microsoft.com/en-us/library/dd309626.aspx> |
-| ワークフロー アクション            | <http://technet.microsoft.com/EN-US/library/dd362144.aspx> |
-| ワークフローの参加者       | <http://technet.microsoft.com/EN-US/library/dd309598.aspx> |
-| ワークフローの例           | <http://technet.microsoft.com/en-us/library/dd309636.aspx> |
-| ワークフローの開発       | <http://msdn.microsoft.com/EN-US/library/cc967389.aspx>    |
-| ワークフローの実装     | <http://msdn.microsoft.com/en-us/library/cc585061.aspx>    |
+| ワークフロー システム         | <https://technet.microsoft.com/library/dd309672.aspx> |
+| モジュールごとのワークフロー タイプ    | <https://technet.microsoft.com/library/dd362043.aspx> |
+| ワークフロー要素           | <https://technet.microsoft.com/library/dd309626.aspx> |
+| ワークフロー アクション            | <https://technet.microsoft.com/library/dd362144.aspx> |
+| ワークフローの参加者       | <https://technet.microsoft.com/library/dd309598.aspx> |
+| ワークフローの例           | <https://technet.microsoft.com/library/dd309636.aspx> |
+| ワークフローの開発       | <https://msdn.microsoft.com/library/cc967389.aspx>    |
+| ワークフローの実装     | <https://msdn.microsoft.com/library/cc585061.aspx>    |
 
 ## <a name="primary-changes-to-the-workflow-system"></a>ワークフロー システムの主な変更
 Finance and Operations で実装された基本変更を次に示します。

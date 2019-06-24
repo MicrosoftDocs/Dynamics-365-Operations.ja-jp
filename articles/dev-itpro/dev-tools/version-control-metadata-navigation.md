@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e39471a22055a82fed83bed0e4ae30a95686f06
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 7dea2809e504ee7133326f1e6f82f1906f55bab0
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537466"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595416"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 
@@ -36,9 +36,13 @@ ms.locfileid: "1537466"
 
 ### <a name="sign-up-to-azure-devops-create-an-account-and-create-a-new-project"></a>Azure DevOps への登録、アカウントの作成、および新しいプロジェクトの作成
 
-<http://www.visualstudio.com/> に移動して Azure DevOps にサインアップします。 **サインアップ**をクリックします。 Azure DevOps アカウントを既に持っている場合は、このトピックの後半の「Azure DevOps プロジェクトの作成」セクションに移動します。 
+<https://www.visualstudio.com/> に移動して Azure DevOps にサインアップします。 **サインアップ**をクリックします。 Azure DevOps アカウントを既に持っている場合は、このトピックの後半の「Azure DevOps プロジェクトの作成」セクションに移動します。 
 
-1.  Microsoft アカウントでサインインします。 **注記**: 組織のアカウント (Microsoft Office 365 ドメイン) を使用することもできます。
+1.  Microsoft アカウントでサインインします。
+
+    > [!NOTE]
+    > 組織のアカウント (Microsoft Office 365 ドメイン) を使用することも可能です。
+
 2.  Azure DevOps アカウントを作成し、アカウントの URL を選択します。 これは、Visual Studio でソース管理を設定するときに、開発用コンピューターから接続する URL です。 次は、アカウント URLの例です。 
 
     [![AccountURL\_UsingDevoTools](./media/accounturl_usingdevotools.png)](./media/accounturl_usingdevotools.png) 
@@ -52,7 +56,7 @@ ms.locfileid: "1537466"
 
 Azure DevOps アカウントを既に持っている場合は、Internet Explorer を使用してアカウントに移動します。 このトピックでは、説明のために URL の例として **.visualstudio.com** を使用します。
 
-1. http://.visualstudio.com に移動します。
+1. <https://www.visualstudio.com/> に移動します。
 2. **最近使用したプロジェクトとチーム** で **新規** をクリックして新しいプロジェクトを作成します。 
 
    [![ClickNew\_UsingDevoTools](./media/clicknew_usingdevotools.png)](./media/clicknew_usingdevotools.png)
@@ -90,9 +94,12 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 1. Visual studio の**チーム エクスプローラー**で、このドキュメントで前に説明したようにチーム プロジェクトに接続します。
 2. **ソース管理エクスプローラー**から**チーム エクスプローラー**を開きます。
-3. チーム プロジェクトの**メタデータ** フォルダーを、ローカル ドライブ上のモデル ストアのルート フォルダー (通常は c:\\packages) にマップします。例を以下の図に示します。 **注記**: マシンの構成によっては、モデル ストアが I:\\AosService\\PackagesLocalDirectory または別のドライブの下にある場合があります。
+3. チーム プロジェクトの**メタデータ** フォルダーを、ローカル ドライブ上のモデル ストアのルート フォルダー (通常は c:\\packages) にマップします。例を以下の図に示します。
 
-   [![VSOfolders2](./media/vsofolders21.png)](./media/vsofolders21.png)
+    > [!NOTE]
+    > マシンの構成によっては、モデル ストアが I:\\AosService\\PackagesLocalDirectory または別のドライブの配下にある場合があります。
+
+    [![VSOfolders2](./media/vsofolders21.png)](./media/vsofolders21.png)
 
 4. **マップ**をクリックし、次のダイアログ ボックスで、**No** をクリックします。
 5. 同様に、Visual Studio ソリューションとプロジェクト ファイルを保持する <strong>/Trunk/Main/Projects **サーバー フォルダーから**ローカル プロジェクト フォルダー</strong>にマッピングします。
@@ -102,7 +109,8 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 ### <a name="open-the-fleetmanagement-solution"></a>FleetManagement ソリューションを開く
 
-注記: これは単なる一例です。 任意のプロジェクト/ソリューションを開いて、ソリューションをソース管理に追加するプロセスについて学習することができます。
+> [!NOTE]
+> これはほんの一例に過ぎません。 任意のプロジェクト/ソリューションを開いて、ソリューションをソース管理に追加するプロセスについて学習することができます。
 
 1.  **ファイル**メニューで、**開く**をポイントし、**プロジェクト/ソリューション**をクリックします。
 2.  デスクトップを参照し、**FleetManagement** フォルダーを開きます。
@@ -113,7 +121,10 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 1.  **ソリューション エクスプローラー**で、フリート管理ソリューションを右クリックして、**ソリューションをソース管理に追加**を選択します。
 2.  次のダイアログで、**Team Foundation バージョン管理**を選択し、**次へ**をクリックします。
-3.  **チーム プロジェクトの場所**で、この図のように**プロジェクト**を選択します (**注記**: FleetManagement ソリューションが含まれているローカル フォルダーにサーバー プロジェクト フォルダーが既にマップされている場合、手順 2 と 3 は省略されます)
+3.  **チーム プロジェクト ロケーション**にて、以下画像のように **プロジェクト** を選択します。
+
+    > [!NOTE]
+    > サーバープロジェクト フォルダ を FleetManagement ソリューションを含むローカルフォルダに既にマッピングしている場合は、手順2 と 3 を省略します。
 
     [![VSOfolders3](./media/vsofolders31.png)](./media/vsofolders31.png)
 
@@ -126,11 +137,18 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 1.  Visual Studio の**チーム エクスプローラー**で、**ソース管理エクスプローラー**を開いてから、メタデータ フォルダー (たとえば、**\Trunk\Main\Metadata**) を右クリックします。
 2.  **ソース管理エクスプローラー** ツール バーで、**フォルダーへの項目の追加**をクリックします。
-3.  モデル記述子ファイルを選択します。 モデル記述子ファイルは、モデルの XML ファイルのマニフェストです。 これは、モデルが属するパッケージの**記述子**フォルダーにあります。 次の図は、フリート管理モデルのモデル記述子ファイルが存在する場所の例を示しています (c:\\packages\\FleetManagement\\Descriptor\\FleetManagement.xml)。 **注記**: マシンの構成によっては、モデル ストアが、I:\AosService\PackagesLocalDirectory、c:\AosService\PackagesLocalDirectory、または別のドライブの下にある場合があります。
+3.  モデル記述子ファイルを選択します。 モデル記述子ファイルは、モデルの XML ファイルのマニフェストです。 これは、モデルが属するパッケージの**記述子**フォルダーにあります。 次の図は、フリート管理モデルのモデル記述子ファイルが存在する場所の例を示しています (c:\\packages\\FleetManagement\\Descriptor\\FleetManagement.xml)。
+
+    > [!NOTE]
+    > マシンの構成によっては、モデル ストアが、I:\AosService\PackagesLocalDirectory、c:\AosService\PackagesLocalDirectory、または別のドライブの配下にある場合があります。
 
     [![AddSourceControl\_UsingDevoTools](./media/addsourcecontrol_usingdevotools.png)](./media/addsourcecontrol_usingdevotools.png)
 
-4.  **完了** をクリックします。 **注記**: ソリューションに 2 つのモデルの要素が含まれているため、ソース管理に追加のモデル記述子ファイルを追加する必要があります。C:\\Packages\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
+4.  **完了** をクリックします。
+
+    > [!NOTE]
+    > ソリューションに 2 つのモデルの要素が含まれているため、ソース管理に追加のモデル記述子ファイルを追加する必要があります。C:\\Packages\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
+
 5.  保留中の品目をチェックインします。 これで、Azure DevOps の最新のクラウド ベースのソース コントロール システムとその他の多くのアプリケーション ライフ サイクルの機能を使用して、項目のフリート管理アプリケーションの開発の準備が整いました。
 
 ### <a name="experiment-with-source-control"></a>ソース管理を試す

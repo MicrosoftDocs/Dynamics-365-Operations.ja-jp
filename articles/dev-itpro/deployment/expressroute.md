@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a4350a8889e1d525af0646025047db649f66ef1a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fd281cc3d7ef2edb2aec1d7804307ab04d963041
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537078"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544220"
 ---
 # <a name="azure-expressroute-and-finance-and-operations"></a>Azure ExpressRoute および Finance and Operations の購入
 

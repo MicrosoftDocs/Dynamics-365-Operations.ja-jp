@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: 08/09/2017
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e37d49cad2ba4abe08bc33d2faa375e08a91783d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b03894746209218e4b63d34710fa6de21fae27e2
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537349"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554477"
 ---
 # <a name="mobile-platform-client-apis"></a>モバイル プラットフォーム クライアント API
 

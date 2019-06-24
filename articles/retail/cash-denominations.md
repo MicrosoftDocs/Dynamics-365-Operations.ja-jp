@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24775044e5a502a5615392a6a8c4030bdfafb0ab
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a34ae8084c0ad55221f4ab93eb8c6481fa8c4771
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558576"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606759"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション
 
@@ -34,17 +34,17 @@ ms.locfileid: "1558576"
 
 ## <a name="define-denominations"></a>貨幣単位の定義
 
-貨幣単位は店舗ごとに**設定** \> **店舗プロパティからの現金申告オプション**ページで設定されます。
+貨幣単位は店舗ごとに、店舗のプロパティ ページから**設定** \> **現金申告**オプションで設定されます。
 
-![現金貨幣単位](./media/image1-denomination.png)
+![現金申告オプション](./media/image1-denomination.png)
 
 貨幣単位を定義する方法:
 
-1. **新規**をクリックします。
+1. **新規** をクリックします。
 1. 種類 (硬貨または紙幣) を指定します。
 1. 金額 (値) を指定します。
 
-![現金貨幣単位](./media/image2-denomination.png)
+![現金申告貨幣ページ](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>機能プロファイルのコンフィギュレーション
 

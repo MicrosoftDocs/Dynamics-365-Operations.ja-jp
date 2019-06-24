@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2018-11-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17217e65586251a514e18dc549c233da2b463abe
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ecce0a1f75d4d307be586f491f655059a0f1dd51
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537461"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561964"
 ---
 # <a name="connect-a-custom-help-site-to-dynamics-365-for-finance-and-operations"></a>カスタム ヘルプ サイトを Dynamics 365 for Finance and Operations に接続する。
 

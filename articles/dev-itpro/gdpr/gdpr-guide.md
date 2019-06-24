@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ToddLefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3d9bd0d37e18b9f1a9b5e5aa1194502c8b46b2f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 452dd19afd7c8e757019fc2fdda36fdbba074eb9
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537524"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595376"
 ---
 # <a name="guide-to-the-gdpr-for-finance-and-operations"></a>Finance and Operations の GDPR に関するガイド
 
@@ -33,8 +33,7 @@ ms.locfileid: "1537524"
 
 > [!NOTE]
 > このドキュメントのスコープおよび補充の詳細については、このトピックの最後にある [このコンテンツの範囲の説明](#clarification-of-the-scope-of-this-content) を参照してください。
-
-[!NOTE]
+>
 > GDPR コンプライアンスの実行をサポートする製品の機能を使用する前に、すべての関連する修正プログラムを適用したことを確認してください。
 
 GDPR は、次のアクションを実行できるように EU 市民に特定のデータ主体権利 (DSR) を与えます。
@@ -45,7 +44,7 @@ GDPR は、次のアクションを実行できるように EU 市民に特定�
 + 個人データを処理するオブジェクト。
 + 個人データをエキスポートします。
 
-GDPR は、[規制](http://data.consilium.europa.eu/doc/document/ST-5419-2016-INIT/en/pdf)の第 4 項の次の方法で個人データを定義しています (組織は個人データを持っていない)。
+GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-INIT/en/pdf)の第 4 項の次の方法で個人データを定義しています (組織は個人データを持っていない)。
 
 > (1) 「個人データ」とは、特定または識別可能な自然人 (「データ主体」) に関するすべての情報を意味します。識別可能な自然人とは、特に、名前、識別番号、位置データ、オンライン識別子のような識別子、または身体的、生理学的、遺伝的、精神的、経済的、文化的、社会的アイデンティティーなど、その自然人固有の 1 つ以上の要因を参照することによって、直接的または間接的に、識別できる人のことです。
 
@@ -251,11 +250,11 @@ Finance and Operations の将来のリリースで使用できる担当者検索
 
 ## <a name="activity-and-diagnostic-information"></a>活動と診断情報
 
-コントローラーは、[Microsoft Enterprise Privacy Portal](https://www.microsoft.com/en-us/trustcenter/privacy) を使用してテレメトリ データに関する DSR 要求を行うことができます。 収集する一部のテレメトリ データは、システムで生成されるログです。 追加情報または支援なしでは、ユーザーの ID は匿名です。
+コントローラーは、[Microsoft Enterprise Privacy Portal](https://www.microsoft.com/trustcenter/privacy) を使用してテレメトリ データに関する DSR 要求を行うことができます。 収集する一部のテレメトリ データは、システムで生成されるログです。 追加情報または支援なしでは、ユーザーの ID は匿名です。
 
 ## <a name="representation-of-a-person-in-finance-and-operations"></a>Finance and Operations のユーザーの表示
 
-Finance and Operations には共通の [グローバル アドレス帳](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book) があります。 連絡先、顧客、ユーザー、作業者、または他の担当者をシステムに追加するたびに、通常はアドレス帳にその人物のエントリを作成します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID などの ロール ID を持ちます。
+Finance and Operations には共通の [グローバル アドレス帳](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book) があります。 連絡先、顧客、ユーザー、作業者、または他の担当者をシステムに追加するたびに、通常はアドレス帳にその人物のエントリを作成します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID などの ロール ID を持ちます。
 
 ![グローバル アドレス帳のデータ モデル](../media/gdpr-address-data-model.jpg)
 
@@ -276,13 +275,13 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 
 データ主体がコントローラーに申し入れてユーザーの個人データのコピーを要求するとき、そのコントローラーは、個人を説明するデータを特定するためにグローバル アドレス帳情報を使用する選択をすることがあります。 このトピックの前の図で説明したように、**人物**は**ロール**を担う**関係者**のタイプです。
 
-組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
+組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
 
 ## <a name="the-person-search-report"></a>個人検索レポート
 
 コントローラーをサポートするために、このレポートでは、**データ管理** 作業領域で利用可能な既存のエンティティ モデル レポート機能を改善しています。 **データ管理** ワークスペースは、ほとんどのロールの種類のパッケージ化された表現のコレクションを提供します。 これらの表現はエンティティと呼ばれます。
 
-> [!Note]
+> [!NOTE]
 > 担当者検索レポートは、Finance and Operations、Microsoft Dynamics 365 for Retail、および Microsoft Dynamics 365 for Talent の今後のリリースで利用できるようになります。 現在、レポートは Microsoft Dynamics AX 2012 をサポートしていません。 
 
 エンティティは特定のロールのインスタンスを表します。 データ管理機能を使用すると、コントローラーはエンティティ データを、コロン区切り値、コンマ区切り値 (CSV)、セミコロン区切り値、タブ区切り値、Microsoft Excel、および XML などの複数の形式にエクスポートできます。
@@ -291,7 +290,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 
 データ主体がコントローラーに申し入れてユーザーの個人データのコピーを要求するとき、そのコントローラーは、個人を説明するデータを特定するためにグローバル アドレス帳情報を使用する選択をすることがあります。 このトピックの前の図で説明したように、**人物**は**ロール**を担う**関係者**のタイプです。
 
-組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
+組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
 
 ## <a name="additional-notes-that-apply-to-requests-for-data"></a>データの要求に適用される追加のメモ
 

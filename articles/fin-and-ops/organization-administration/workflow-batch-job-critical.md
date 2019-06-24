@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2017-05-19
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: d7bb1089d7fcb4da7cda91ba480065c3483a1a57
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 98b89f4a11fc0c791358cbec8e617bb8417c11d3
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1507117"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560417"
 ---
 # <a name="configure-the-workflow-message-processing-batch-job-as-critical"></a>ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
 

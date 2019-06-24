@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567979"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577847"
 ---
 # <a name="get-support-for-dynamics-365-for-retail"></a>Dynamics 365 for Retail に関するサポートの利用
 
@@ -61,7 +61,7 @@ Retail のサポートを得るには、次の表にあるリソースを使用�
 <li><strong>アクティブな問題</strong> タブで問題を選択し、次に <strong>Microsoft に送信</strong> をクリックします。</li>
 <li><strong>Microsoft に送信</strong> タブで、<strong>新しいインシデントを送信</strong> をクリックして問題を送信します。</li>
 </ul>
-<blockquote>[!NOTE] Microsoft Premier の顧客やパートナーも、上記の手順を使用してプレミア サポート チケットを送信できます。</blockquote>
+<p><strong>注記:</strong> Microsoft Premier の顧客やパートナーも、上記の手順を使用してプレミア サポート チケットを送信できます。</p>
 </td>
 </tr>
 <tr>
@@ -84,4 +84,4 @@ CustomerSource へのサインインやアクセス、e ラーニング、検索
 </tbody>
 </table>
 
-Microsoft Dynamics サポート提供の詳細については、「[Microsoft Dynamics オンライン サポート](https://dynamics.microsoft.com/en-us/support/)」を参照してください。
+Microsoft Dynamics サポート提供の詳細については、「[Microsoft Dynamics オンライン サポート](https://dynamics.microsoft.com/support/)」を参照してください。

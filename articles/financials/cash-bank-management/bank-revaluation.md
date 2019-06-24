@@ -3,7 +3,7 @@ title: 銀行の外貨再評価
 description: このトピックでは、銀行の外貨再評価プロセスの概要を示します。 設定およびプロセスの実行と計算、再評価取引の取消に関する情報が含まれています。
 author: mikefalkner
 manager: AnnBe
-ms.date: 04/16/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,17 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4ec9814a4a35a1b3ba7ba05a04b53e5b150f4a04
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: 353153a3a5cbcb27749f21582fcf83ac4f3a8f36
+ms.sourcegitcommit: 56ec43e459ba93f495bc76fed23d6737218ef37e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538635"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "1591763"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>銀行の外貨再評価
 
 [!include [banner](../includes/banner.md)]
-[!include [preview-banner](../includes/preview-banner.md)]
+
 
 このトピックでは、銀行の外貨再評価プロセスの概要を示します。 プロセスの設定と実行の方法を説明し、プロセスの計算に関する情報を提供します。 また、取消が必要な場合の再評価トランザクションの取消方法も説明します。
 

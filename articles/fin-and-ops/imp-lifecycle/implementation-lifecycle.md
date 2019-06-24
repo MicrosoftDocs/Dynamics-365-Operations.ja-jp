@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ebd832758771f7b0d919b6090b106303e0aecbf0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 81c5b5204c0ab131e229110ff15cc62dc5c4491b
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509840"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566649"
 ---
 # <a name="implementation-lifecycle-management"></a>実装ライフサイクル管理
 

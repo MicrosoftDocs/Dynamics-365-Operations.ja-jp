@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: bfa5dd7fef2891b730c481c3cd8aa8717f3e8807
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 192fc687c62311a1a8a27699106c9fdc82be96cd
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505062"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1553778"
 ---
 # <a name="information-access-and-reporting"></a>情報へのアクセスとレポート
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59bddd21473c3ec2612cd061c7bf1749efb37069
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 65d92f10f3456d44a38978d8902aa1dbd0a3c8d6
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537038"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595470"
 ---
 # <a name="c-classes"></a>C クラス
 
@@ -4175,7 +4175,7 @@ resultSetConcurrency
 
 #### <a name="remarks"></a>備考
 
-createStatement メソッドを使用して SQL ステートメントを作成し、ユーザーがステートメントへの入力を制御できるようにすると、SQL インジェクション脅威の危険性があります。 SQL インジェクションの詳細については、「http://go.microsoft.com/fwlink/?LinkId=114986」を参照してください。 AOT、ビュー、および X++ Select ステートメントでは、SQL ステートメントを実行するための安全な代替手段として、クエリ要素を使用することができます。
+createStatement メソッドを使用して SQL ステートメントを作成し、ユーザーがステートメントへの入力を制御できるようにすると、SQL インジェクション脅威の危険性があります。 詳細については [SQL インジェクション](https://go.microsoft.com/fwlink/?LinkId=114986) を参照してください。 AOT、ビュー、および X++ Select ステートメントでは、SQL ステートメントを実行するための安全な代替手段として、クエリ要素を使用することができます。
 
 ### <a name="method-odbcgetinfoint"></a>メソッド odbcGetInfoInt
 

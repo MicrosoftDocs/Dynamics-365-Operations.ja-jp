@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 6e1003433129b38ed645dfa41044137ff31d4c1e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fd5203580fff2ebd46fc4e671b25015dd168ac92
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1504207"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554018"
 ---
 # <a name="extend-report-menu-items-to-redirect-user-navigations"></a>レポート メニュー項目を拡張して、ユーザーのナビゲーションをリダイレクトする
 

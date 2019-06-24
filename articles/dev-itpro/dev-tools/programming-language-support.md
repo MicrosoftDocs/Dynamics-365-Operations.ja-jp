@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4f06921ccaec53cf9d2ab3d769b8ab3d6406b1a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e4135506ce79ea51b10350220f38f46aa4c6776c
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506140"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544128"
 ---
 # <a name="changes-in-x-and-the-x-compiler"></a>X++ と X++ コンパイラの変更
 
@@ -97,7 +97,7 @@ X++ は .NET の世界でファーストクラスの住民になりました。 
     -   `pause`
     -   `window`
 -   旧式 X++ では、クライアントまたはサーバーのいずれかを実行するメソッドを指定できました。 これは不可能です。 すべてのコンパイルされた X++ コードは、サーバー上の .NET CIL で実行されます。 クライアント サイトまたはブラウザーで評価される X++ コードは存在しないため、*client* と *server* の 2 つのキーワードは無視されます。 コンパイル エラーは発生しませんが、新しい X++ コードのいずれでも使用しないでください。
--   Microsoft Dynamics AX 2012 には、P コード対 CIL にコンパイルしたときに X++ が異なる動作をするいくつかの領域がありました。 Dynamics 365 for Finance and Operations のこれらすべての領域では、Microsoft DynamicsAX 2012 の CIL で実行されたように動作します。 X++ p-code と CIL としての X+ との間の有意な行動上の相違は次のとおりです。
+-   Microsoft Dynamics AX 2012 には、P コード対 CIL にコンパイルしたときに X++ が異なる動作をするいくつかの領域がありました。 Dynamics 365 for Finance and Operations のこれらすべての領域では、Microsoft Dynamics AX 2012 の CIL で実行されたように動作します。 X++ p-code と CIL としての X+ との間の有意な行動上の相違は次のとおりです。
     -   CIL では、`real `データ型が `System.Decimal` として表されます。 これは、各 `real` の範囲と精度が p コードの場合と異なることを意味します。 この変更は、.NET CIL が実行された時点で Microsoft Dynamics AX 2012 ですでに有効でした。
     -   1 つの全体配列を別の配列に割り当てることが P コード モードの値で実行されましたが、CIL モードでの参照が実行されます。
     -   `Global::runClassMethodIL` などの CIL ヘルパー メソッドは、関連性が無くなったため削除されました。

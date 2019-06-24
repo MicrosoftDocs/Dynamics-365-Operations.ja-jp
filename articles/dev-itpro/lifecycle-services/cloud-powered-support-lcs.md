@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2291dbdf7596668cb83e1a1f0bffba93d72c4e47
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c68e84f1477e1136bb01f5a65f6ecabdadfe40fe
+ms.sourcegitcommit: c5edff04f35a067934fddebd166906edc003e7c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537424"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "1605848"
 ---
 # <a name="manage-finance-and-operations-support-experiences"></a>Finance and Operations サポート エクスペリエンスの管理
 
@@ -89,11 +89,11 @@ ms.locfileid: "1537424"
 1. プロジェクト内から選択 **サポート** し、メイン メニューなどの選択から **管理サポート プラン** します。 
 2. **契約の追加** を選択します
 
-   ![](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+   ![契約の追加](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
 3. アクセスIDと、パスワードまたは契約IDを入力し、 **契約の追加** を選択します。
 
-   ![](media/4abba1127549ef484a58daf51609d924.png)
+   ![契約の追加](media/4abba1127549ef484a58daf51609d924.png)
 
 ### <a name="partnersource-business-center-account"></a>PartnerSource Business Center アカウント
 利用可能な場合は、次のサポートプランインシデントがPartnerSource業務部門 (PSBC) アカウントの一部として使用できます。 
@@ -132,7 +132,7 @@ PartnerSourceビジネス センター アカウントが見つからない場�
 
 サポート インシデントを作成する際に **ソフトウェア保証プラン追加** することで追加します。 定期売買番号および連絡先の電子メールを入力し、 **続行します** をクリックします。
 
-![](media/cd8f65a32c30722ea687dfbc5cc30874.png)
+![ソフトウェア保証プラン](media/cd8f65a32c30722ea687dfbc5cc30874.png)
    
 ## <a name="report-production-outage"></a>稼働停止のレポート
 プロダクション環境の品質が低下または使用不可能になった際に、Microsoft サポートに迅速に問題を効果的にエスカレーションするには、 [Report a production outage](report-production-outage.md) をご確認ください。

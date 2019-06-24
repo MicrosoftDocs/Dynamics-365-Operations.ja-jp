@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb8e36b08fbcfb1a09fc20aab425572dcc8d6b0c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f9aee75319bce3839671fb58c85500dd31d924df
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506210"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595508"
 ---
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 
@@ -33,7 +33,7 @@ ms.locfileid: "1506210"
 このドキュメントでは、拡張可能なコントロールを作成するための API、HTML、および JavaScript のサポートについて説明します。
 
 ## <a name="examples"></a>例
-このドキュメントには、文書化されている各 API の使用方法を示す小さなコード スニペットが含まれています。 これらの API の多くを活用する完成したコントロールのより完全な例は Github で確認できます。 [Github での拡張可能コントロールの例](http://github.com/Microsoft/Dynamics-AX-Extensible-Control-Samples)
+このドキュメントには、文書化されている各 API の使用方法を示す小さなコード スニペットが含まれています。 これらの API の多くを活用する完成したコントロールのより完全な例は Github で確認できます。 [Github での拡張可能コントロールの例](https://github.com/Microsoft/Dynamics-AX-Extensible-Control-Samples)
 
 ## <a name="control-block-diagram"></a>コントロール ブロック図
 この高度な図は、拡張可能なコントロールの主要コンポーネントと、それらが相互にやり取りする方法を示しています。 拡張可能なコントロール ソリューションには、コントロールを実装する 2 つの X++ クラスが含まれます。 ランタイム クラスは、ランタイム データ、プレゼンテーション、コントロールの動作を実装します。 ビルド クラスは、コントロールがフォーム デザイナー、プロパティ ウィンドウ、およびアプリケーション エクスプローラーでどのように表示されるかを定義します。 [![ExtensibilityArchitecture](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
@@ -88,9 +88,9 @@ ms.locfileid: "1506210"
 ## <a name="runtime-formpropertyattribute"></a>ランタイム: FormPropertyAttribute
 **FormPropertyAttribute** は、コントロール クラスのメソッドに適用されるため、X++ メソッドをコントロールの JavaScript クラスから **FormProperty** ゲッター/セッターとして呼び出すことができます。 この属性を適用したメソッドは**プロパティ**と呼ばれます。 コントロールの JavaScript クラスから直接アクセスする必要がある X++ メソッドの **FormPropertyAttribute** のみ使用します。 **FormPropertyAttribute** は、X++ 内からメソッドが使用される場合、X++ メソッドの動作に影響を与えません。 すべてのプロパティは、ブラウザーにエンドポイントを公開します。 したがって、すべてのプロパティは脅威モデル化およびエクスプロイトのためにテストされる必要があります。 基礎となる X++ メソッドは、他の X++ コードからアクセスできないようにプライベート宣言する必要があります。 別の X++ コードがプロパティにアクセスする必要がある場合、別のパブリック X++ メソッドを **FormPropertyAttibute** なしで宣言し、このメソッドに共有プロパティ ロジックを移動します。 次に、このメソッドを **FormPropertyAttribute を持つプライベート X++ メソッドから呼び出します。この方法により、コア共有 X++ ロジックを実行する前に、JavaScript からの呼び出しに固有のロジック (引数の型の逆シリアル化、引数の検証、セキュリティの検証など) をプロパティで実行できます。** 基本となる X++ メソッドは、必要なタイプのプロパティを受け入れて返す必要があります。 目的の型が EDT である場合は、プロパティは、EDT の基本データ型を受け入れ、返す必要があります。 サポートされているプロパティの種類は次のとおりです。
 
--   [X++ プリミティブ型](https://msdn.microsoft.com/en-us/library/aa602290.aspx)
--   [X++ データ契約](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.datacontractattribute(v=vs.110).aspx) (そのメンバーもサポートされているタイプ)
--   [X++ リスト](https://msdn.microsoft.com/en-us/library/list.aspx) (その項目もサポートされているタイプ)
+-   [X++ プリミティブ型](https://msdn.microsoft.com/library/aa602290.aspx)
+-   [X++ データ契約](https://msdn.microsoft.com/library/system.runtime.serialization.datacontractattribute(v=vs.110).aspx) (そのメンバーもサポートされているタイプ)
+-   [X++ リスト](https://msdn.microsoft.com/library/list.aspx) (その項目もサポートされているタイプ)
 
 次の引数を **FormPropertyAttribute** コンストラクターに指定します。
 
@@ -118,7 +118,7 @@ private str parmText(str _value = textProperty.parmValue())
 ## <a name="runtime-formproperty"></a>ランタイム: FormProperty
 ##### <a name="behavior"></a>動作
 
-**FormProperty** は X++ と JavaScript の間のプロパティの値の同期のために管理フレームワークによって使用される X++ [派生型](https://msdn.microsoft.com/en-us/library/esd9wew8(v=vs.100).aspx) です。 **FormProperty** オブジェクトはプロパティによって内部で使用されるバックアップ フィールドと見なされます。 各 **FormProperty** は、コントロールの X++ ランタイム クラスの 4 つの場所で通常使用されます。
+**FormProperty** は X++ と JavaScript の間のプロパティの値の同期のために管理フレームワークによって使用される X++ [派生型](https://msdn.microsoft.com/library/esd9wew8(v=vs.100).aspx) です。 **FormProperty** オブジェクトはプロパティによって内部で使用されるバックアップ フィールドと見なされます。 各 **FormProperty** は、コントロールの X++ ランタイム クラスの 4 つの場所で通常使用されます。
 
 1.  **FormProperty** は通常クラス宣言のすぐ下で宣言されます。
 2.  **FormProperty** は、クラスの **new** メソッドでインスタンス化されます
@@ -339,7 +339,7 @@ FormDesignControlAttribute は、フォームのデザイン ノードを右ク�
 
 ### <a name="data-dyn-bind"></a>data-dyn-bind
 
-**data-dyn-bind**、データ バインディング属性は - 宣言 HTML-based API を使用して、要素の属性、プロパティおよび CSS、または DOM イベントの処理などの変更のような、多くの一般的な DOM 操作を標準化しています。 データ バインディング属性は、複雑な JavaScript を必要とせずにこれらの動作を可能にします。 複雑な JavaScript を記述するのではなく、データ バインド属性を使用することで、コントロールの設計、デバッグ、および維持をより簡単にすることによって、コントロールの開発者の貴重な時間を節約することができます。 ただし、シナリオが必要とする場合、複合 JavaScript が引き続き使用可能です。 データ バインディング属性は、HTML 要素の動作をコントロール開発者が提供する値に結合します。 指定された値は、単純な JavaScript [変数](http://www.w3schools.com/js/js_variables.asp)、JavaScript [比較](http://www.w3schools.com/js/js_comparisons.asp)、[算術](http://www.w3schools.com/js/js_arithmetic.asp)式、JavaScript [関数](http://www.w3schools.com/js/js_functions.asp)、JSON [オブジェクト](https://www.w3schools.com/js/js_json_objects.asp)のいずれかになります。 提供される値は、このドキュメントで説明されている API を使用して作成された、観察可能な変数でもあります。 指定された値が HTML 要素にバインドされる方法は、データ バインディング属性で使用されるバインディング ハンドラーによって決まります。 このドキュメントでは、サポートされているすべてのバインディング ハンドラーの一覧を提供します。 バインディング ハンドラーで使用する場合、データ バインディング属性には次の構文が必要です。 **data-dyn-bind** の構文は次のとおりです。
+**data-dyn-bind**、データ バインディング属性は - 宣言 HTML-based API を使用して、要素の属性、プロパティおよび CSS、または DOM イベントの処理などの変更のような、多くの一般的な DOM 操作を標準化しています。 データ バインディング属性は、複雑な JavaScript を必要とせずにこれらの動作を可能にします。 複雑な JavaScript を記述するのではなく、データ バインド属性を使用することで、コントロールの設計、デバッグ、および維持をより簡単にすることによって、コントロールの開発者の貴重な時間を節約することができます。 ただし、シナリオが必要とする場合、複合 JavaScript が引き続き使用可能です。 データ バインディング属性は、HTML 要素の動作をコントロール開発者が提供する値に結合します。 指定された値は、単純な JavaScript [変数](https://www.w3schools.com/js/js_variables.asp)、JavaScript [比較](https://www.w3schools.com/js/js_comparisons.asp)、[算術](https://www.w3schools.com/js/js_arithmetic.asp)式、JavaScript [関数](https://www.w3schools.com/js/js_functions.asp)、JSON [オブジェクト](https://www.w3schools.com/js/js_json_objects.asp)のいずれかになります。 提供される値は、このドキュメントで説明されている API を使用して作成された、観察可能な変数でもあります。 指定された値が HTML 要素にバインドされる方法は、データ バインディング属性で使用されるバインディング ハンドラーによって決まります。 このドキュメントでは、サポートされているすべてのバインディング ハンドラーの一覧を提供します。 バインディング ハンドラーで使用する場合、データ バインディング属性には次の構文が必要です。 **data-dyn-bind** の構文は次のとおりです。
 
     data-dyn-bind="[first binding handler]: [value to bind to]"
 
@@ -360,7 +360,7 @@ FormDesignControlAttribute は、フォームのデザイン ノードを右ク�
 ## <a name="html-binding-handlers"></a>HTML: バインディング ハンドラー
 ### <a name="attr"></a>attr
 
-**attr** バンディング ハンドラーは、指定された HTML 属性と値を要素に適用します。 HTML 属性の一覧については、[W3 学校 – HTML 属性](http://www.w3schools.com/html/html_attributes.asp) を参照してください。 引数は、オブジェクト配列として渡されます。 各引数は、デュアル値です。 最初の値は属性の名前で、2 番目の値は属性の値です。
+**attr** バンディング ハンドラーは、指定された HTML 属性と値を要素に適用します。 HTML 属性の一覧については、[W3 学校 – HTML 属性](https://www.w3schools.com/html/html_attributes.asp) を参照してください。 引数は、オブジェクト配列として渡されます。 各引数は、デュアル値です。 最初の値は属性の名前で、2 番目の値は属性の値です。
 
 -   **名前**: 作成する属性の任意の名前を指定する文字列。
 -   **値または式:** 属性に設定する値を指定する文字列。 式が指定されている場合は、式を評価することによって返される値が使用されます。
@@ -389,7 +389,7 @@ FormDesignControlAttribute は、フォームのデザイン ノードを右ク�
 
 ##### <a name="behavior"></a>動作
 
-要素のクリック イベントに指定された関数をサブスクライブします。 クリック イベントのサブスクライブの詳細については、[jQuery – click()](http://api.jquery.com/click/) を参照してください。
+要素のクリック イベントに指定された関数をサブスクライブします。 クリック イベントのサブスクライブの詳細については、[jQuery – click()](https://api.jquery.com/click/) を参照してください。
 
 ##### <a name="arguments"></a>引数
 
@@ -501,11 +501,11 @@ self.yellow = $dyn.observable(true);
 
 ##### <a name="behavior"></a>動作
 
-指定した DOM イベントに指定されたイベントをサブスクライブします。 サポートされている DOM イベントの一覧については、[jQuery - イベント](http://api.jquery.com/Types/#Event) を参照してください。
+指定した DOM イベントに指定されたイベントをサブスクライブします。 サポートされている DOM イベントの一覧については、[jQuery - イベント](https://api.jquery.com/Types/#Event) を参照してください。
 
 ##### <a name="arguments"></a>引数
 
-イベント バインディング ハンドラーへの引数の詳細については、[jQuery - .bind()](http://api.jquery.com/bind/) を参照してください。 次の例では、mouseover イベントにサブスクライブし、要素がポイントされたときにアラートを表示します。
+イベント バインディング ハンドラーへの引数の詳細については、[jQuery - .bind()](https://api.jquery.com/bind/) を参照してください。 次の例では、mouseover イベントにサブスクライブし、要素がポイントされたときにアラートを表示します。
 
 ```
 // In your control’s code-behind JS file
@@ -1087,7 +1087,7 @@ console.log($dyn.label("greeting"));
 コントロールのテンプレート ID を持つクラス名を付加して、すべての CSS クラス名に名前空間を追加します。 これにより、コントロールとそのスタイルがクライアントの他のコントロールと競合するのを防ぐことができます。
 
 ## <a name="flexbox"></a>Flexbox
-高度なレイアウト シナリオでは、Flexbox の使用をお勧めします。 Flexbox は、拡張可能な管理フレームワークと互換性があります。 [CSS 変動ボックス (Mozilla 開発者ネットワーク) を使用する](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) 次のトピックの説明と例については [パブリック Flexbox ドキュメント](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) を参照してください。
+高度なレイアウト シナリオでは、Flexbox の使用をお勧めします。 Flexbox は、拡張可能な管理フレームワークと互換性があります。 [CSS 変動ボックス (Mozilla 開発者ネットワーク) を使用する](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) 次のトピックの説明と例については [パブリック Flexbox ドキュメント](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) を参照してください。
 
 -   反応の敏感なレイアウト
 -   列および行の構築

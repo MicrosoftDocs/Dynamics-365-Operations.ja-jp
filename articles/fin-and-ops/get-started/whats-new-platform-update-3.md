@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: ebc807ce7bd6e2bba5bd6ff790e536de87b213b3
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fb438857eee6d6064e303c35ba63b1527747ef61
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1510861"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552476"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-3-november-2016"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能
 

@@ -18,24 +18,27 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-05-15
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d4171c85eab50c531aeb52eccf860e36815994af
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 29636683779adb5deb41498d102f83897d7d81f9
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537534"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577925"
 ---
 # <a name="loyalty-extension-sample"></a>ロイヤルティの拡張機能のサンプル
 
 [!include [banner](../../../includes/banner.md)]
 
-## <a name="scenario"></a>シナリオ 
+## <a name="scenario"></a>シナリオ
+
 小売業者は、顧客がロイヤルティ ポイントを取得し、1 つのトランザクションでロイヤルティ ポイントを使用して支払うことができるように求めています。 
 
 ## <a name="scenario-details"></a>シナリオの詳細
+
 小売業者は、チャネルのロイヤルティ スキームを設定し、そのスキームをロイヤルティ プログラムと関連付けました。 ロイヤルティ スキーマには、収益と償還のルールが含まれています。 小売業者は、顧客がロイヤルティ ポイントを使用して、部分的に取引金額を支払うことができるようにしたいと考えています。 顧客は、他の支払い方法を使用して支払う残りのトランザクション金額に対してロイヤルティ ポイントを獲得することができます。
 
 ## <a name="assumptions"></a>前提
+
 ロイヤルティの設定が提供する柔軟性のため、このシナリオはすばやく非常に複雑になります。 このサンプルの複雑さを軽減するためにいくつかの仮定をしました。 ただし、これらの前提条件は、現実の例から遠くかけ離れてはいません。 前提条件を次に示します。
 
 + ロイヤルティ プログラムに関連付けられている階層はありません。
@@ -47,6 +50,7 @@ ms.locfileid: "1537534"
 > ここで触れている収益と償還のルールは単なる例に過ぎません。 このサンプルでは、ハードコーディングされた値があります。 生産シナリオでは、値は代わりにデータベースから読み取られる必要があります。
 
 ## <a name="customization-approach"></a>カスタマイズ方法
+
 このカスタマイズを 2 つの手順で実装します。 手順 1 では、ロイヤルティ ポイントがトランザクションに使用されなかったかのようにポイントを獲得します。 次に、ステップ 2 で獲得された余分なポイントは、償還されたポイントに基づいて減額されます。
 
 ロイヤリティ機能には 6 つのサービス リクエストがあります。
@@ -84,7 +88,6 @@ namespace Contoso
         using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
         using System.Collections.Generic;
         using Microsoft.Dynamics.Commerce.Runtime.Messages;
-        
         public class FillInLoyaltyRewardPointLinesForSalesHandler : IRequestHandler
         {
             /// <summary>
@@ -146,7 +149,7 @@ namespace Contoso
                 ThrowIf.Null(request, "request");
                 var LoyaltyRewardPointSalesServiceRequest = (FillInLoyaltyRewardPointLinesForSalesServiceRequest)request;
                 SalesTransaction salesTransaction = LoyaltyRewardPointSalesServiceRequest.SalesTransaction;
-                                
+
                 if (salesTransaction.LoyaltyRewardPointLines != null)
                 {
                     decimal totalReedeemedPoints = 0m;
@@ -155,7 +158,7 @@ namespace Contoso
                     // Find the redeemed reward lines in the transaction and calculate the total redeemed reward points
                     IEnumerable<LoyaltyRewardPointLine> redeemLoyaltyRewardPointLines = salesTransaction.LoyaltyRewardPointLines.Where<LoyaltyRewardPointLine>(line => line.EntryType == LoyaltyRewardPointEntryType.Redeem);
                     if (redeemLoyaltyRewardPointLines.Count() > 0)
-                    {                        
+                    {
                         foreach (var rewardPointLine in redeemLoyaltyRewardPointLines)
                         {
                             totalReedeemedPoints += rewardPointLine.RewardPointAmountQuantity;

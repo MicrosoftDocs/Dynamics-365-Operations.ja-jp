@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24a4f98a3675057b03592653cc5e9ad74ebeaf6c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2d32ee27ca157dcaaf12abbff297a6f84e8a8dbd
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537521"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568710"
 ---
 # <a name="implement-a-return-policy-by-using-triggers"></a>トリガーを使用して返品ポリシーを実装してください
 

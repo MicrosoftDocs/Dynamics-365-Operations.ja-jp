@@ -15,17 +15,16 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 0129106ab430bb08d8274d7c9397c7a3fe42344b
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: 6fe4967ebfb119fdff16414f8dbd36718bfedb70
+ms.sourcegitcommit: 56ec43e459ba93f495bc76fed23d6737218ef37e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538646"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "1591586"
 ---
 # <a name="business-events"></a>ビジネス イベント
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 ビジネス イベントは外部システムが Microsoft Dynamics 365 for Finance and Operations から通知を受信するメカニズムを提供します。 これにより、システムは、ビジネス イベントに対してビジネス アクションを実行できます。
 

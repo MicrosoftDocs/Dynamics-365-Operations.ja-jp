@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 01afd5839165f2f48fe717e621d18f45aa832843
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b4bdce4944ee098b486fdced75d1a98f17a44bb5
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505061"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577831"
 ---
 # <a name="configure-install-and-activate-retail-modern-pos-mpos"></a>Retail Modern POS (MPOS) のコンフィギュレーション、インストール、有効化
 
@@ -161,7 +161,7 @@ Retail Modern POS インストーラーは、まず関連付けられている�
 ### <a name="create-a-worker"></a>作業者を作成
 
 1. **小売** &gt; **従業員** &gt; **作業者**の順に移動します。
-2. アクション ウィンドウで、**+新規**を選択し新しい従業員を作成します。
+2. アクション パネルにて **+新規** を選択して新しい従業員を作成します。
 3. 名前および姓を入力します。 たとえば、**John** を名として、**Smith** を姓として入力します。
 4. **法人** フィールドが **USRT** に設定され、**作業者の種類** フィールドが **従業員** に設定され、**雇用開始日** フィールドが当日の午前 12 時に設定されていることを確認し、従業員の雇用がすぐに開始されるようにします。
 5. **職位の割り当て** チェック ボックスを選択します。 ストア マネージャーの職位ある職位番号 **000544** を選択します。

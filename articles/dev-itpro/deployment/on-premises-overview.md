@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: arifk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 56cbc8bc104f47b921088eefa09ede0c3c6a8f8e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 086449be8a41aa121a22931496bf658ab67d7c77
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537057"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550938"
 ---
 # <a name="on-premises-deployment-option"></a>オンプレミス配置のオプション
 

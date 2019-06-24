@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df780ed431168db0d54fd7c34442698d84e224c8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b826206ad07e4afbaca88596c7ea9ee93fcc9f49
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537442"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595626"
 ---
 # <a name="wizard-form-pattern"></a>ウィザードのフォーム パターン
 
@@ -110,8 +110,8 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="ax-2012-links"></a>AX 2012 リンク
 
--   [Microsoft DynamicsAX\[AX 2012\] の MSDN ウィザード](http://msdn.microsoft.com/en-us/library/aa622644.aspx)
--   [ウィザード開発のための MSDN ガイドライン \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/aa853845.aspx)
+-   [Microsoft DynamicsAX\[AX 2012\] の MSDN ウィザード](https://msdn.microsoft.com/library/aa622644.aspx)
+-   [ウィザード開発のための MSDN ガイドライン \[AX 2012\]](https://msdn.microsoft.com/library/aa853845.aspx)
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 

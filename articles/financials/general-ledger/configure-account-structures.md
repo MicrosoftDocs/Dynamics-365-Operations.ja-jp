@@ -3,7 +3,7 @@ title: 勘定構造のコンフィギュレーション
 description: このトピックでは、勘定構造と財務分析コードについて説明します。
 author: aprilolson
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 06/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5fbd4b34d09b4ba8e1d34234c8e32268bba18778
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552012"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617299"
 ---
 # <a name="configure-account-structures"></a>勘定構造のコンフィギュレーション
 
@@ -70,6 +70,16 @@ ms.locfileid: "1552012"
 
 [![許可された値](./media/account.png)](./media/account.png) 
 
+許可される値は、勘定構造の設定に従って他に選択できる値がない場合に、仕訳帳または勘定配布エントリ ページに既定で設定されます。
+
+ここでは、**損益勘定構造**の例を示します。
+
+|主勘定          | 事業単位    |部門          | 原価部門    |
+|----------------------|-----------|----------------------|-----------|
+|400000..999999 | 002 | 022 | 014 |
+
+仕訳帳に入力し、損益範囲の勘定を選択する場合、事業単位 002 を選択すると、022 と 014 の値は勘定制御の既定値として設定されます。 この動作は、勘定配分ページでも発生します。 
+
 ## <a name="more-than-7-criteria-needed"></a>7 を超える基準が必要です
 
 7 を超える基準が必要な場合、次の行に追加し続けることができます。 **許可された値の詳細**セクションの作業中、7 番目の基準が入力された後、**+ 新規追加**基準が有効ではなくなることがわかります。 これは、以下のようなさまざまな要因によります。 
@@ -79,8 +89,6 @@ ms.locfileid: "1552012"
  - 有用性  
  
 基準を追加するために、**セグメント内で複製**および**許可された値のセクション**をクリックします。 これにより新しい明細行に基準がコピーされます。 **許可された値の詳細**セクションの入力または修正ができます。
-
-(作成されるビデオへのリンク)
 
 ## <a name="best-practices"></a>ベスト プラクティス
 勘定構造を設定する場合、ベスト プラクティスに従うことができます。 ただし、これはガイダンスですので、業務、拡大計画、およびメンテナンス計画に関する組織全体にわたるディスカッションはディスカッションの一部とみなされる必要があります。

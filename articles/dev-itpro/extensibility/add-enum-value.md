@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: ebd55fc17160e129ef0adcf129192d163c94d12e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d59e20efdc6da946f71c131bcf40e9d9cdb61edd
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537506"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550923"
 ---
 # <a name="add-values-to-enums-through-extension"></a>拡張機能を使用して列挙体に値を追加
 

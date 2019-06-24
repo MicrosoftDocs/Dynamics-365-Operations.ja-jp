@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 086f02ca576563eb5fceb4d0324f9a4f09f88ad2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9a56dd8c5c4100b5294cb99c6778fc7bf572fe5a
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537318"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595408"
 ---
 # <a name="person-search-report"></a>個人検索レポート
 
@@ -28,7 +28,7 @@ ms.locfileid: "1537318"
 
 担当者検索レポートは、既存の Microsoft Dynamics 365 for Finance and Operations データ管理フレームワークの機能を強化したものです。 データ管理フレームワークには、担当者と、担当者が Finance and Operations で割り当てられる可能性があるロールを定義するために使用される個人データを識別するために Microsoft が作成した、事前パッケージ化されたエンティティ セットが用意されています。 
 
-> [!Note]
+> [!NOTE]
 > Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent のレポートを使用できます。 このトピックの Finance and Operations への参照は、Retail と Talent にも当てはまります。 Microsoft Dynamics AX 2012 では今のところレポートは使用できません。 個人検索レポートは、Finance and Operations バージョン 8.0 で利用可能です。 レポートはバージョン 7.3 (毎月の更新プログラム 7.3.2 経由で配信)、バージョン 7.2 (KB 4132615 経由)、およびバージョン7.1 (KB 4132441 経由 ) でも使用できます。 個人検索レポートが定期的に更新される場合があります。 このレポートを使用する前に、すべての関連する修正プログラムを取得し、適用したことを確認する必要があります。 
 
 Finance and Operations のグローバル アドレス帳を使用すると、データ モデルで関係者として説明されている人物のインスタンスを作成することができます。 
@@ -104,7 +104,7 @@ LCS からテンプレートをダウンロードすることも、7.1 以降の
 
 ## <a name="additional-resources"></a>その他のリソース
 
-GDPR の詳細については、[欧州連合の Web サイト](http://europa.eu/)、[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)  および [Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](./gdpr-guide.md) トピックの情報を参照してください。
+GDPR の詳細については、[欧州連合の Web サイト](https://europa.eu/)、[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)  および [Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](./gdpr-guide.md) トピックの情報を参照してください。
 
 
 ### <a name="disclaimer"></a>免責事項

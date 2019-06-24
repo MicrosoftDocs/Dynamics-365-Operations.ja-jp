@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 15
-ms.openlocfilehash: face68c3df51bd0c685bf2193dde98ce7b6b7202
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fbecef075e2bede70495f24076876b1fe16868c5
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508022"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595479"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-15-march-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能
 
@@ -37,7 +37,7 @@ ms.locfileid: "1508022"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2018 年春リリース ノートをダウンロードします](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf)。 計画に使用できる単一の PDF 内のすべての詳細を、端から端まで徹底的に捕捉しました。
+[2018 年春リリース ノートをダウンロードします](https://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf)。 計画に使用できる単一の PDF 内のすべての詳細を、端から端まで徹底的に捕捉しました。
 
 ### <a name="platform-update-15-bug-fixes"></a>プラットフォーム アップデート 15 のバグ修正プログラム
 

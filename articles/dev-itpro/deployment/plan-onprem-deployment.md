@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: c9ae2393736c1fd43eb702649ed90d7c79bc02f5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b03826b1602b7e9f05a45150efbbf18479c315f2
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537058"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595382"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -98,9 +98,9 @@ Finance and Operations の開発経験は、クラウドとオンプレミスの
 
 ### <a name="service-fabric-resources"></a>Service Fabric リソース
 Service Fabric の詳細については、次のトピックを参照してください。
-- [Azure Service Fabric documentation](https://docs.microsoft.com/en-us/azure/service-fabric) - サービスファブリックの詳細について。
-- [Service Fabric application upgrade](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade)- Azure Service Fabric アプリケーションは、定期的なアップグレードを必要となるサービスです。
-- [Service Fabric のスタンドアロン クラスター展開の計画と準備](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) - Service Fabric クラスターおよびウィルス対策の除外に関する追加情報
+- [Azure Service Fabric documentation](https://docs.microsoft.com/azure/service-fabric) - サービスファブリックの詳細について。
+- [Service Fabric application upgrade](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade)- Azure Service Fabric アプリケーションは、定期的なアップグレードを必要となるサービスです。
+- [Service Fabric のスタンドアロン クラスター展開の計画と準備](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) - Service Fabric クラスターおよびウィルス対策の除外に関する追加情報
 
 ## <a name="system-requirements"></a>システム要件
 [オンプレミス展開のシステム要件](../../fin-and-ops/get-started/system-requirements-on-prem.md)でシステム要件を確認し、オンプレミス展開が必要なコンピューターの台数を確認します。
@@ -166,7 +166,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 クラスターまたはミラーリングの設定で、常に SQL Server を使用する必要があります。 2 番目の SQL ノードは、1 次ノードと同じ数のコアを持つ必要があります。
 
 #### <a name="active-directory-federation-services-ad-fs"></a>Active Directory フェデレーション サービス (AD FS)
-広告のサイズ変更について、[広告のサーバーの処理能力ドキュメント](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity)を参照してください。 A[サイズ変更スプレッドシート](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx)は、展開内のインスタンスの数を計画するために使用できます。
+広告のサイズ変更について、[広告のサーバーの処理能力ドキュメント](https://docs.microsoft.com/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity)を参照してください。 A[サイズ変更スプレッドシート](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx)は、展開内のインスタンスの数を計画するために使用できます。
 
 ### <a name="aos-online-and-batch"></a>AOS (オンラインおよびバッチ)
 
@@ -196,7 +196,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 Dynamics 365 for Finance and Operations の現在のリリースは、1 つの SSRS ノードしか展開できません。 テスト中に SSRS ノードを監視し、SSRS で使用可能なコアの数を必要に応じて増やします。 SSRS VM とは異なる仮想ホストで事前構成されたセカンダリ ノードを使用できることを確認してください。 これは、SSRS または仮想ホストをホストする仮想マシンに問題がある場合に重要です。 この場合、ノードは交換する必要があります。
 
 ### <a name="environment-orchestrator"></a>環境オーケストレーター
-オーケストレータ サービスは、展開および LCS との関連する通信を管理するサービスです。 このサービスはプライマリ Service Fabric サービスとして展開され、最低 3 台の VM が必要です。 このサービスは、サービス ファブリック オーケストレーション サービスと同じ場所に配置されています。 これは、クラスターのピーク負荷に合わせたサイズにする必要があります。 詳細については、[Service Fabric クラスターの能力計画に関する考慮事項](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-capacity)を参照してください。
+オーケストレータ サービスは、展開および LCS との関連する通信を管理するサービスです。 このサービスはプライマリ Service Fabric サービスとして展開され、最低 3 台の VM が必要です。 このサービスは、サービス ファブリック オーケストレーション サービスと同じ場所に配置されています。 これは、クラスターのピーク負荷に合わせたサイズにする必要があります。 詳細については、[Service Fabric クラスターの能力計画に関する考慮事項](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-capacity)を参照してください。
 
 ### <a name="virtualization-and-oversubscription"></a>仮想化と過剰加入
 AOS のようなミッション クリティカルなサービスは、コア、メモリ、ディスクなどの専用リソースを持つ仮想ホストでホストする必要があります。
@@ -205,18 +205,18 @@ AOS のようなミッション クリティカルなサービスは、コア、
 
 オンプレミスの配置では、次の認証方法が使用されます。
 
-- **Azure Active Directory(Azure AD)** - Azure AD は LCS へのログインに使用される認証方法です。 Azure AD は LCS ローカル エージェントの構成に使用されます。 詳細については、「[Azure Active Directory とは何か](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis)」を参照してください。
-- **Active Directory ドメイン サービス (AD DS)** - Finance and Operations (オンプレミス) コンポーネントをホストするコンピューターは、Active Directory ドメインに属している必要があります。 Active Directory ドメイン サービス (AD DS) はネイティブ モードで構成する必要があります。 詳細については、[Active Directory ドメイン サービス](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services) を参照してください。
+- **Azure Active Directory(Azure AD)** - Azure AD は LCS へのログインに使用される認証方法です。 Azure AD は LCS ローカル エージェントの構成に使用されます。 詳細については、「[Azure Active Directory とは何か](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)」を参照してください。
+- **Active Directory ドメイン サービス (AD DS)** - Finance and Operations (オンプレミス) コンポーネントをホストするコンピューターは、Active Directory ドメインに属している必要があります。 Active Directory ドメイン サービス (AD DS) はネイティブ モードで構成する必要があります。 詳細については、[Active Directory ドメイン サービス](https://docs.microsoft.com/windows-server/identity/ad-ds/active-directory-domain-services) を参照してください。
 - **Active Directory フェデレーション サービス (AD FS)** - AD FS は、オンプレミス配置で使用される認証方法です。 AD FS は、Office 365、クラウド ベースの SaaS アプリケーション、会社のネットワーク上のアプリケーションを含むさまざまなアプリケーション全体でアクセス制御とシングル サインオンを提供します。
   - IT 組織については、同じ資格情報とポリシーのセットに基づいて、最新および従来のアプリケーション、クラウドのオンプレミスの両方への署名とアクセス制御を提供できます。
   - ユーザーについては、同じ、使い慣れたアカウントの資格情報を使用してシームレスなサインを提供します。
   - 開発者については、組織のディレクトリに ID があるユーザーを認証するための簡単な方法を提供します。 つまり、認証や識別ではなく、アプリケーションに力を注ぐことができます。
 
-    詳細については、[Active Directory フェデレーション サービス](https://docs.microsoft.com/en-us/windows-server/identity/active-directory-federation-services) を参照してください。
+    詳細については、[Active Directory フェデレーション サービス](https://docs.microsoft.com/windows-server/identity/active-directory-federation-services) を参照してください。
 
 ## <a name="data-stored-in-azure-data-centers"></a>Azure データ センターに保存されたデータ
 
-Finance and Operations のオンプレミス配置オプションは、オンプレミスのコア顧客データを格納します。 コア顧客データは、[Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/privacy/how-microsoft-defines-customer-data) で提供される顧客データ定義のサブセットです。
+Finance and Operations のオンプレミス配置オプションは、オンプレミスのコア顧客データを格納します。 コア顧客データは、[Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/how-microsoft-defines-customer-data) で提供される顧客データ定義のサブセットです。
 
 次のテーブルは、米国内にある Azure データ センターに顧客データを保存するために使用されるサービスの概要を示しています。 サービスには、Lifecycle Services (LCS)、Microsoft Office サインアップ ポータルおよび Azure Active Directory が含まれます。 これらのサービスにより、サポート インシデントの初期オンボーディング、開始、追跡、サービスの更新とアップグレードが可能になります。 コア顧客データと呼ばれる他のすべての顧客データは、オンプレミスに保管されます。
 

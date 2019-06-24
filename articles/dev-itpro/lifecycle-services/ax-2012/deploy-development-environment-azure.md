@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: ab0511d0e6891252636e7e3980132dd254fd1429
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b06b87bb82892d0deb03329431946e8bd0390919
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537245"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544093"
 ---
 # <a name="deploy-development-environments-on-azure"></a>Azure での開発環境の配置
 

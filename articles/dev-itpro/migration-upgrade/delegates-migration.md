@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7aa29b245ffc03c9a7b35fb6c4d96cf3c7931ef9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8ddd1527bfa0fc162e62bcf044ab999d5c441c5b
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537429"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595476"
 ---
 # <a name="solve-dependencies-among-models-by-using-delegates-during-code-migration"></a>コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 
@@ -60,7 +60,7 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 
 ![static delegate ハンドラー](media/static-delegate-handler.png)
 
-デリゲートに戻り値がないため、EventHandlerResult がパラメーターとして渡され、デリゲートが返された後に必要な結果値にアクセスできるようになります。 このトピックでは、SubscribesTo を使用する静的委任ハンドラーについて説明します。 Dynamics AX 2012 からのデリゲート機能が保持されます。 [Dynamics AX 2012 で X++ デリゲートを使用する方法](http://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) は Dynamics AX 2012 のデリゲートの概念について、Microsoft の開発者 Marcos Calderon が MSDN に投稿した素晴らしいブログです。 これらの概念が引き続き適用されます。
+デリゲートに戻り値がないため、EventHandlerResult がパラメーターとして渡され、デリゲートが返された後に必要な結果値にアクセスできるようになります。 このトピックでは、SubscribesTo を使用する静的委任ハンドラーについて説明します。 Dynamics AX 2012 からのデリゲート機能が保持されます。 [Dynamics AX 2012 で X++ デリゲートを使用する方法](https://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) は Dynamics AX 2012 のデリゲートの概念について、Microsoft の開発者 Marcos Calderon が MSDN に投稿した素晴らしいブログです。 これらの概念が引き続き適用されます。
 
 ## <a name="example-scenarios"></a>シナリオ例
 ### <a name="overlaying-an-existing-delegate"></a>既存の委任のオーバーレイ
@@ -107,8 +107,8 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 } 
 ```
 
-
-**注記:** デリゲートの宣言、デリゲート インスタンスおよびデリゲート ハンドラーの署名は一致する必要があります。 デリゲート ハンドラーを実行するコード内の箇所に、デリゲートのインスタンスを作成することが必要になりました。 &lt;isv&gt; タグ間での変更は追加されたコードを表します。 
+> [!NOTE]
+> デリゲートの宣言、デリゲート インスタンスおよびデリゲート ハンドラーの署名は一致する必要があります。 デリゲート ハンドラーを実行するコード内の箇所に、デリゲートのインスタンスを作成することが必要になりました。 &lt;isv&gt; タグ間での変更は追加されたコードを表します。 
 
 ![calculateTotalTax method](media/calculate-total-tax.png)
 
@@ -116,7 +116,10 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 
 ![applyDiscountDelegateHandler メソッド](media/apply-discount-delegate-handler.png)
 
-SubscribesTo キーワードを使用して、applyDiscountDelegateHandler メソッドを applyDiscountDelegate デリゲートにハンドラーとして結合します。 **注記:** 委任ごとに複数のハンドラーが存在する可能性があります。 ハンドラー メソッドの処理には、定義された順序は**ありません**。 注文が重要な場合は、代行ハンドラーのペアは一緒に連鎖する必要があります。 以下の最終クラスでは、calculateTotalTax() メソッドが実行されるとき、applyDiscountDelegate が起動および処理され、receiptTotal が更新されて正確な税計算が提供されます。
+SubscribesTo キーワードを使用して、applyDiscountDelegateHandler メソッドを applyDiscountDelegate デリゲートにハンドラーとして結合します。
+
+> [!NOTE]
+> デリゲートごとに複数のハンドラーが存在する可能性があります。 ハンドラー メソッドの処理には、定義された順序は**ありません**。 注文が重要な場合は、代行ハンドラーのペアは一緒に連鎖する必要があります。 以下の最終クラスでは、calculateTotalTax() メソッドが実行されるとき、applyDiscountDelegate が起動および処理され、receiptTotal が更新されて正確な税計算が提供されます。
 
 #### <a name="full-code"></a>完全なコード
 

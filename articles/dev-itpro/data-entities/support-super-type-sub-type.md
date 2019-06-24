@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a0c1e22519070bc05db8af6605a6085c77e423f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 448ab6deb50e63fd63c7501aea1c9b6991a94cd8
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537216"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544265"
 ---
 # <a name="super-types-and-sub-types"></a>スーパー タイプおよびサブ タイプ
 

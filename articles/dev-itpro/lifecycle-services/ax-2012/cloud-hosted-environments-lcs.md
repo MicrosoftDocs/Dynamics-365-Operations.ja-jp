@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 8d402c379b4f2e5b15ae0078a2000dfe90e88c22
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ad0dffb24264f636f1b753e04a1a1e81c75b6380
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506228"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555293"
 ---
 # <a name="cloud-hosted-environments-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のクラウド ホスト環境
 

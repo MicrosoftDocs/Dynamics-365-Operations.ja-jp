@@ -17,12 +17,12 @@ ms.search.scope: Operations
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1174ee657828c2e69ac8f7eee9e074a40548ccf7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 990f0a5a3427df6ec6c8958bb14ad79d70e3323a
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537251"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552513"
 ---
 # <a name="development-and-administration-for-finance-and-operations"></a>Finance and Operations の開発と管理
 
@@ -59,10 +59,10 @@ Finance and Operations は、5 つの異なるレポート作成エクスペリ�
 - Financial Reporting – 法人の財務活動の標準的な見解に基づいて、詳細な会計管理のツールを提供するように設計されています。
 
 ## <a name="mobile-apps"></a>モバイル アプリ
-Microsoft Dynamics 365 for Finance and Operations のモバイル アプリは、組織の業務プロセスをモバイル化するための力を組織に与えます。 IT 管理者が組織のモバイル ワークスペース機能を有効にすると、ユーザーはアプリにサインインしてすぐにモバイル デバイスから業務プロセスの実行を開始できます。 Dynamics 365 for Finance and Operations のモバイル アプリには、生産性の向上に役立つ以下の機能が含まれています。
-+ ネットワーク接続が断続的な場合やモバイル デバイスがオフラインの場合でも、ユーザーは業務データを表示、編集、および処理できます。 デバイスがネットワーク接続を再確立する際に、オフライン データ操作は Dynamics 365 for Finance and Operations と自動的に同期されます。 
+Microsoft Dynamics 365 for Finance and Operations のモバイル アプリは、組織の業務プロセスをモバイル化するための力を組織に与えます。 IT 管理者が組織のモバイル ワークスペース機能を有効にすると、ユーザーはアプリにサインインしてすぐにモバイル デバイスから業務プロセスの実行を開始できます。 Dynamics 365 for Finance and Operations のモバイル アプリには、生産性の向上に役立つ以下の機能が含まれています。
++ ネットワーク接続が断続的な場合やモバイル デバイスがオフラインの場合でも、ユーザーは業務データを表示、編集、および処理できます。 デバイスがネットワーク接続を再確立する際に、オフライン データ操作は Dynamics 365 for Finance and Operations と自動的に同期されます。 
 + IT 管理者または開発者は、組織に合わせたモバイル ワークスペースを構築し公開することができます。 このアプリは既存のコード資産を使用します。したがって、検証手順、ビジネス ロジック、またはセキュリティのコンフィギュレーションを再実装する必要はありません。 
-+ IT 管理者または開発者は、Dynamics 365 for Finance and Operations Web クライアントに含まれているポイント アンド クリック ワークスペース デザイナーを使用して、モバイル ワークスペースを容易に設計できます。 
++ IT 管理者または開発者は、Dynamics 365 for Finance and Operations Web クライアントに含まれているポイント アンド クリック ワークスペース デザイナーを使用して、モバイル ワークスペースを容易に設計できます。 
 + IT 管理者または開発者は、ビジネス ロジック拡張機能フレームワークを使用して、ワークスペースのオフライン機能を必要に応じて最適化できます。 デバイスがオフラインの間もデータは引き続き処理されるため、デバイスが常時ネットワーク接続していなくても、モバイル シナリオは豊富で流動的なままです。 
 
 ## <a name="data-management-and-data-entities"></a>データ管理とデータ エンティティ

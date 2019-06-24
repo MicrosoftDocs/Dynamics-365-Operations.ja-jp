@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dad0e622342d04d135d7513e645a6b18f7fcf442
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 61b0bd619eef4e20b68b08d338e6d2d31e76141d
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1510969"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560802"
 ---
 # <a name="section-tabbed-list-subpattern"></a>セクション タブ付きリストのサブパターン
 

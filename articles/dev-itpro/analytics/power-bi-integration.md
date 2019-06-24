@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d6bb3917ebc4e836b41f6df51c50e30ab53a399
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f0f4b0e4e1604fe746ac58b2c5f8a2e9e4287043
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537117"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551732"
 ---
 # <a name="features-and-services-available-through-power-bi-integration"></a>Power BI 統合を通じて利用できる機能やサービス
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0fd7af755560c61ba40b20421390135b2be11888
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 24965ad43137c2c158db45051fd9561b2393d40e
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537159"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554370"
 ---
 # <a name="inputcontrol-type"></a>InputControl タイプ
 

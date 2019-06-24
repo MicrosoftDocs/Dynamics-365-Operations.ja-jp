@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497acf5968f0912bfde1d8174fe4cf7f853b12d9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 81acea25b6e502bc3cbe6e8c8fd280eb03539cf5
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508235"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571042"
 ---
 # <a name="test-forms-that-use-custom-patterns"></a>カスタム パターンを使用したテスト フォーム
 

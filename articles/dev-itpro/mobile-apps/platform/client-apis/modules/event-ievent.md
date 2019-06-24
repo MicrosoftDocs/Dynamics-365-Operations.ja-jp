@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b8e6861b3cbcf5f56bd54f59c3196c81b620fbef
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a31d27318da5eda944c2614c2526066926949c31
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537292"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547339"
 ---
 # <a name="event-module"></a>イベント モジュール
 

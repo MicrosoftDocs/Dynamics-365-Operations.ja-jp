@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 035acda7b07d4254cf88db5c3dcdf346f23ffcf9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 402efc45b9c7a147be3cc9032ead8e2ea3fce683
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537508"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577915"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 
@@ -104,8 +104,10 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 1. **HardwareStation.Extension.EFRSample** プロジェクトを探して、構築します。
 2. **Extension.EFRSample\\bin\\Debug** フォルダーで、以下のファイルを探します。
-  - **Contoso.Commerce.HardwareStation.EFRSample.dll** アセンブリ
-  - **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** アセンブリ
+
+    - **Contoso.Commerce.HardwareStation.EFRSample.dll** アセンブリ
+    - **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** アセンブリ
+
 3. アセンブリ ファイルをハードウェア ステーション拡張機能フォルダーにコピーします。
 
     - **共有ハードウェア ステーション:** ファイルを、Microsoft インターネット インフォメーション サービス (IIS) ハードウェア ステーション サイトの場所の **bin** フォルダーにコピーします。
@@ -133,11 +135,11 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
     ``` json
     {
-      "extensionPackages": [
-        {
-          "baseUrl": "Microsoft/AuditEvent.AT"
-        }
-      ]
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AuditEvent.AT"
+            }
+        ]
     }
     ```
 
@@ -150,16 +152,15 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 ### <a name="cloud-pos-extension-components"></a>クラウド POS 拡張コンポーネント
 
 1. **RetailSdk\\POS\\CloudPOS.sln** でソリューションを開き、エラーなくコンパイルできるかどうかを確認します。
-
 2. **extensions.json**で、次の明細行を追加することによって拡張機能が読み込まれるようにします。
 
     ``` json
     {
-      "extensionPackages": [
-        {
-          "baseUrl": "Microsoft/AuditEvent.AT"
-        }
-      ]
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AuditEvent.AT"
+            }
+        ]
     }
     ```
 
@@ -176,26 +177,20 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 登録プロセスを有効にするには、次の手順を使用して Retail Headquarters を設定します。 詳細については、[会計登録プロセスの設定方法](./setting-up-fiscal-integration-for-retail-channel.md)を参照してください。
 
 1. **小売共有パラメーター** を開き、**全般** タブで **会計統合** を有効にします。
+2. **小売 \> チャンネル設定 \> 会計統合 \> 会計コネクタ** メニューを開きます。 RetailSdk からコネクタ構成を読み込みます。 ファイルは、SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml の下に保存されています。
+3. **小売 \> チャンネル設定 \> 会計統合 \> 会計ドキュメント プロバイダー** メニューを開きます。 RetailSdk からドキュメント プロバイダー コンフィギュレーションを読み込みます。
 
-2. **小売 > チャンネル設定 > 会計統合 > 会計コネクタ** メニューを開きます。 RetailSdk からコネクタ構成を読み込みます。 ファイルは、SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml の下に保存されています。
+    コンフィギュレーション ファイルは **SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration** の下にあります:
 
-3. **小売 > チャンネル設定 > 会計統合 > 会計ドキュメント プロバイダー** メニューを開きます。 RetailSdk からドキュメント プロバイダー コンフィギュレーションを読み込みます。
-
-コンフィギュレーション ファイルは、SampleExtensions\CommerceRuntime\Extensions.DocumentProvider.EFRSample\Configuration の下にあります。
     - DocumentProviderEFRSampleAustria.xml
     - DocumentProviderNonFiscalEFRSampleAustria.xml
 
-4. **小売 > チャンネル設定 > 会計統合 > コネクタ機能プロファイル** を開きます。 上記の手順からドキュメント プロバイダーごとに 2 つの新しいプロファイルを作成し、読み込まれたコネクタを選択します。 必要な場合は、データ マッピング設定を更新します。
-
-5. **小売 > チャンネル設定 > 会計統合 > コネクタ技術プロファイル** を開きます。 上記の手順から新しいプロファイルを作成し、読み込まれたコネクタを選択します。 必要な場合は、接続設定を更新します。
-
-6. **小売 > チャンネル設定 > 会計統合 > 会計コネクタ グループ** を開きます。 上記の手順からコネクタの機能プロファイルごとに 2 つの新しいグループを作成します。
-
-7. **小売 > チャンネル設定 > 会計統合 > 登録プロセス**を開きします。 新しいプロセスを作成します。 上記の手順から両方のコネクタの機能グループを選択します。
-
-7. **小売 > チャンネル設定 > POS 設定 > POS プロファイル > 機能プロファイル** の順に開きます。 登録プロセスを有効化する、店舗にリンクされているプロファイルを選択します。 **会計登録プロセス** タブを展開します。上記の手順から作成された登録プロセスを選択します。 POS で非会計イベントの登録を有効にするには、**機能** クイック タブで **監査** プロパティを有効にします。
-
-8. **小売 > チャンネル設定 > POS 設定 > POS プロファイル > ハードウェア プロファイル** の順に開きます。 会計プリンターの接続先のハードウェア ステーションにリンクされているプロファイルを選択します。 **会計周辺機器** を展開します。コネクタの技術的なプロファイルを選択します。
+4. **小売 \> チャンネル設定 \> 会計統合 \> コネクタ機能プロファイル** を開きます。 上記の手順からドキュメント プロバイダーごとに 2 つの新しいプロファイルを作成し、読み込まれたコネクタを選択します。 必要な場合は、データ マッピング設定を更新します。
+5. **小売 \> チャンネル設定 \> 会計統合 \> コネクタ技術プロファイル** を開きます。 上記の手順から新しいプロファイルを作成し、読み込まれたコネクタを選択します。 必要な場合は、接続設定を更新します。
+6. **小売 \> チャンネル設定 \> 会計統合 \> 会計コネクタ グループ** を開きます。 上記の手順からコネクタの機能プロファイルごとに 2 つの新しいグループを作成します。
+7. **小売 \> チャンネル設定 \> 会計統合 \> 登録プロセス** を開きます。 新しいプロセスを作成します。 上記の手順から両方のコネクタの機能グループを選択します。
+8. **小売 \> チャンネル設定 \> POS 設定 \> POS プロファイル \> 機能プロファイル** を開きます。 登録プロセスを有効化する、店舗にリンクされているプロファイルを選択します。 **会計登録プロセス** タブを展開します。上記の手順から作成された登録プロセスを選択します。 POS で非会計イベントの登録を有効にするには、**機能** クイック タブで **監査** プロパティを有効にします。
+9. **小売 \> チャンネル設定 \> POS 設定 \> POS プロファイル \> ハードウェア プロファイル** を開きます。 会計プリンターの接続先のハードウェア ステーションにリンクされているプロファイルを選択します。 **会計周辺機器** を展開します。コネクタの技術的なプロファイルを選択します。
 
 詳細については、[オーストリアの会計登録サービス統合サンプル](./emea-aut-fi-sample.md)を参照してください。
 
@@ -232,7 +227,5 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
         ```
 
 4. Visual Studio utility 用に、MSBuild コマンド プロンプトを起動し 、Retail SDK フォルダーの下で **msbuild** を実行し、配置可能なパッケージを作成します。
-
 5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
-
 6. [Retail Headquartersにおいて設定が必要なパラメーター](#set-up-required-parameters-in-retail-headquarters)の入力を完了します

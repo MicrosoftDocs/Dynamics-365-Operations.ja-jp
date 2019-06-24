@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 574f87a4907b97d2149fe33a02db46e76004d999
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4b36ba02a5539f59e4ff74fea5a676e2d812fe84
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537099"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595461"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -43,7 +43,7 @@ OData の詳細については、次の Web ページを参照してください
 
 | トピック                                                               | Webpage                                                 |
 |---------------------------------------------------------------------|---------------------------------------------------------|
-| OData 標準                                                     | <http://www.odata.org/documentation/>                   |
+| OData 標準                                                     | <https://www.odata.org/documentation/>                   |
 | OData: Web、クラウド、モバイル デバイスなどのデータ アクセス | <https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/>    |
 
 パブリック OData サービス エンドポイントにより、幅広いクライアントにわたって、一貫した方法でデータにアクセスできるようになります。 公開されているすべてのエンティティの一覧を表示するには、OData サービスのルート URLを開きます。 システムのサービス ルートの URL の形式は **\[お客様の組織のルート URL\]/data** です。
@@ -69,7 +69,7 @@ OData サービスを使用するためのコード例は、「[Microsoft Dynami
 
 ### <a name="supported-features-from-the-odata-specification"></a>OData 仕様からサポートされている機能
 
-[OData 仕様](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) に従って、OData サービスで使用可能な上位レベルの機能は次のとおりです.
+[OData 仕様](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) に従って、OData サービスで使用可能な上位レベルの機能は次のとおりです.
 
 - CRUD サポートは、転記、パッチ、挿入、および削除の HTTP 動詞サポートにより処理されます。
 - 利用可能なクエリ オプションは
@@ -84,7 +84,7 @@ OData サービスを使用するためのコード例は、「[Microsoft Dynami
 
 - OData サービスでは、最大ページ サイズが 1,000 のサービス ドリブン ページングをサポートします。
 
-詳細については、以下を参照してください: [エンティティにバインドされている OData アクション](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355)
+詳細については、以下を参照してください: [エンティティにバインドされている OData アクション](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355)
 
 #### <a name="filter-details"></a>フィルター詳細
 
@@ -106,10 +106,10 @@ $filter には組み込みの演算子があります。
 
 また、**Contains** オプションを $filter 要求とともに使用することができます。 これは、ワイルドカード文字として実装されています。 例: `http://host/service/EntitySet?$filter=StringField eq '\*retail\*'`
 
-詳細については、「[OData 演算子](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096)」を参照してください。
+詳細については、「[OData 演算子](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096)」を参照してください。
 
 #### <a name="batch-requests"></a>バッチ要求
-OData サービスでは、バッチ要求がサポートされています。 詳細については、「[OData バッチ要求](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398359)」を参照してください。
+OData サービスでは、バッチ要求がサポートされています。 詳細については、「[OData バッチ要求](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398359)」を参照してください。
 
 #### <a name="metadata-annotations"></a>メタデータの注釈
 
@@ -239,7 +239,7 @@ OData は、データベースに対して豊富なクエリを作成できる S
 | \[組織のルート URL\]/data/Customers?$select=FirstName,LastName | すべての顧客の一覧を表示しますが、姓名のプロパティだけを表示します。 |
 | \[組織のルート URL\]/data/Customers?$format=json               | JavaScript クライアントとやり取りするために使用できる JSON 形式ですべての顧客の一覧を表示します。 |
 
-OData プロトコルは、エンティティで多くの似たフィルター処理とクエリ オプションをサポートします。 クエリ オプションの完全なセットについては、[Windows Communication Foundation](http://msdn.microsoft.com/en-us/library/ff478141.aspx) を参照してください。
+OData プロトコルは、エンティティで多くの似たフィルター処理とクエリ オプションをサポートします。 クエリ オプションの完全なセットについては、[Windows Communication Foundation](https://msdn.microsoft.com/library/ff478141.aspx) を参照してください。
 
 ## <a name="authentication"></a>認証
 OData は、サーバーと同じ認証スタック上に配置されます。 認証の詳細については、[サービス エンドポイント](services-home-page.md) を参照してください。
@@ -300,7 +300,7 @@ public static void CreateVendor(Resources context)
 ```
 
 ### <a name="handling-duplicate-names-between-enums-and-entities-in-metadata"></a>メタデータ内の列挙とエンティティ間の重複する名前の処理
-列挙とエンティティが同じ名前を共有する場合があります。 この名前の重複により、OData クライアント コードの生成エラーが発生します。 このエラーから回復するには、gitHub のヘルパー コード <https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs> を、削除しなければならない重複する名前のインスタンスを識別するために使用できます。 生成されたメタデータ ドキュメントは、クライアント側で Odata ロジックの処理を進めるために使用できます。
+列挙とエンティティが同じ名前を共有する場合があります。 この名前の重複により、OData クライアント コードの生成エラーが発生します。 このエラーから回復するには [GitHub のヘルパー コード](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) を、削除しなければならない重複する名前のインスタンスを識別するために使用できます。 生成されたメタデータ ドキュメントは、クライアント側で Odata ロジックの処理を進めるために使用できます。
 
 ### <a name="array-fields"></a>配列フィールド
 OData はエンティティで配列フィールドをサポートしていません。 OData で使用されるエンティティを設計するときにこれを考慮する必要があります。

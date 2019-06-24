@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: e773b4bbded556bd03d8c48e4e5e2b3a5350a7fa
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 676c38e8d8134448210097ab634010bba194ad97
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559543"
 ---
 # <a name="ax-2009-migration--import-packages"></a>AX 2009 の移行 - パッケージのインポート
 

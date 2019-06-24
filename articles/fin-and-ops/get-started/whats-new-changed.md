@@ -3,7 +3,7 @@ title: 新規または変更
 description: このページでは、最新バージョンの Microsoft Dynamics 365 for Finance and Operations の新しい機能について学ぶ役立つトピックを示します。
 author: josaw1
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2b6884165c6f0811a649e8fd5db831260ed1508e
-ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
+ms.openlocfilehash: bc13efe11f383157338ccd6b2ae378ee1f92a698
+ms.sourcegitcommit: bbc9aa0d6b94a942e1f4d5b038601509dcc87937
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1538982"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1619195"
 ---
 # <a name="whats-new-or-changed"></a>新機能および変更された機能
 
@@ -53,6 +53,13 @@ ms.locfileid: "1538982"
 <tbody>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0.4</td>
+<td>10.0.136</td>
+<td>2019 年 7 月</td>
+<td><a href="whats-new-changed-10-0-4.md">Dynamics 365 for Finance and Operations バージョン 10.0.4 (2019 年 7 月) の機能をプレビューする</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.3</td>
 <td>10.0.107</td>
 <td>2019 年 6 月</td>
@@ -62,7 +69,7 @@ ms.locfileid: "1538982"
 <td>10.0.2</td>
 <td>10.0.80</td>
 <td>2019 年 5 月</td>
-<td><a href="whats-new-changed-10-0-2.md">Dynamics 365 for Finance and Operations バージョン 10.0.2 (2019 年 5 月) の機能をプレビューする</a></td>
+<td><a href="whats-new-changed-10-0-2.md">Dynamics 365 for Finance and Operations バージョン 10.0.2 (2019 年 5 月) の新機能および変更された機能</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
@@ -166,6 +173,13 @@ ms.locfileid: "1538982"
 <tbody>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>プラットフォーム update 28</td>
+<td>7.0.5314</td>
+<td>2019 年 7 月</td>
+<td><a href="whats-new-platform-update-28.md">Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 28 (2019 年 7 月) の機能をプレビューする</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>プラットフォーム update 27</td>
 <td>7.0.5286</td>
 <td>2019 年 6 月</td>
@@ -175,7 +189,7 @@ ms.locfileid: "1538982"
 <td>プラットフォーム update 26</td>
 <td>7.0.5257</td>
 <td>2019 年 5 月</td>
-<td><a href="whats-new-platform-update-26.md">Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) の機能をプレビューする</a></td>
+<td><a href="whats-new-platform-update-26.md">Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) の新機能および変更された機能</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>

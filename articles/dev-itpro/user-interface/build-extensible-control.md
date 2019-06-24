@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6596baba347bf384532d9f948be8e4995e88a9ed
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 073c13cd083f6053b1e59011dd4c8c4a57e924de
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537438"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595511"
 ---
 # <a name="build-extensible-controls"></a>拡張可能なコントロールの構築
 
@@ -73,7 +73,10 @@ Visual Studio を使用してチュートリアル プロジェクトをイン�
 
 ### <a name="set-up-aggregate-data"></a>集計データの設定
 
-FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Services データベースに集計データを追加します。 **注記:** これらの手順は、**FMTDataHelper** クラスを使用してデータをインポートした直後に完了する必要があります。 所持しているチュートリアル ファイルに応じて、[集計尺度が "InMemoryRealTime"](../analytics/model-aggregate-data.md) の場合に、これらのステップを実行する必要が **ない** 場合があります。
+FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Services データベースに集計データを追加します。
+
+> [!NOTE]
+> これらの手順は **FMTDataHelper** クラスを使用してデータをインポートした直後に完了する必要があります。 所持しているチュートリアル ファイルに応じて、[集計尺度が "InMemoryRealTime"](../analytics/model-aggregate-data.md) の場合に、これらのステップを実行する必要が **ない** 場合があります。
 
 1.  ソリューション エクスプローラーの**分析**で、**FMTAggregateMeasurement** をダブルクリックします。
 2.  デザイナーで、**FMTAggregateMeasurement** を右クリックしてから、**配置と処理**をクリックします。
@@ -132,7 +135,8 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 
         [![x5](./media/x5.png)](./media/x5.png)
 
-        **注記:** 子デザイン コンポーネントは、**FormBindingDataField** ビルド クラスで使用可能なプロパティを表示します。 これは、データ フィールドとデータ ソースへのイメージ データのバインドを有効にするために適しています。 これは、連絡先コントロールのビルド クラスにデザイナー プロパティを追加するために必要なものです。
+        > [!NOTE]
+        > 子デザイン コンポーネントは **FormBindingDataField** ビルド クラスで使用可能なプロパティを表示します。 これは、データ フィールドとデータ ソースへのイメージ データのバインドを有効にするために適しています。 これは、連絡先コントロールのビルド クラスにデザイナー プロパティを追加するために必要なものです。
 
 3.  Ctrl+S キーを押して変更を保存し、コード エディターを閉じます。
 4.  ソリューション エクスプローラーで、**FMTutorial** を右クリックしてから**ビルド**をクリックします。
@@ -166,7 +170,9 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
         -   **Value** を指定した場合、**ValueProperty** が JavaScript ビュー モデルに生成されます。 開発者は、**ValueProperty** の値を更新するためのコードを記述する必要があります。
     -   属性の第 2 引数は、JavaScript ビュー モデルで定義されるプロパティの名前を設定します。
 
-    **注記:** この例では、**値**プロパティを使用するため、**TitleFields** がデータにバインドされていないように見える場合にも問題はありません。 **TitleFields** プロパティは、それぞれデータ バインドされた **FormBindingDataFields** を含むリストを返します。 **FormPropertyAttribute** 属性を持つ X++ メソッドは、**FormProperty** をバッキング フィールドとして使用する単純なゲッター/セッターです。 **FormProperty** には、値またはデータ ソースの変更に基づく、プロパティを更新するためのロジックが含まれています。 プロパティのバッキング フィールドとしても機能します。
+    > [!NOTE]
+    > この例では **値** プロパティを使用するため、**TitleFields** がデータにバインドされていないように見える場合にも問題はありません。 **TitleFields** プロパティは、それぞれデータ バインドされた **FormBindingDataFields** を含むリストを返します。 **FormPropertyAttribute** 属性を持つ X++ メソッドは、**FormProperty** をバッキング フィールドとして使用する単純なゲッター/セッターです。 **FormProperty** には、値またはデータ ソースの変更に基づく、プロパティを更新するためのロジックが含まれています。 プロパティのバッキング フィールドとしても機能します。
+
 -   **コントロールの実行時コマンド** – コマンドはクライアント側のユーザーとのやり取りに基づく、トリガー X++ ロジックのクライアント部分のコントロールを有効にします。 コマンドは **FormCommandAttribute** 属性を使用して宣言されます。 単一の引数は、JavaScript ビューモデルに表示されるコマンドの名前を指定します。 次の例は、**FMTContactControl** のコマンド宣言を示しています。. 
 
     [![x7](./media/x7.png)](./media/x7.png)
@@ -178,7 +184,10 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 
     [![x8](./media/x8.png)](./media/x8.png)
 
-3.  **parmDataSource** X++ メソッドの後に、次の X++ メソッドを追加します。 新しいメソッドは、**imageFieldProperty** のゲッター/セッターとして機能します。 **注記:** 後で見るように、フレームワークはクライアントのデータにバインドさせるため、ここでは画像データの値を返しません。 
+3.  **parmDataSource** X++ メソッドの後に、次の X++ メソッドを追加します。 新しいメソッドは、**imageFieldProperty** のゲッター/セッターとして機能します。
+
+    > [!NOTE]
+    > 後で見るように、フレームワークはクライアントのデータにバインドさせるため、ここでは画像データの値を返しません。 
 
     [![x9](./media/x9.png)](./media/x9.png)
 
@@ -389,7 +398,7 @@ HTML バインディング構文の追加機能の 1 つは、バインディン
     |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |         氏名          |                                                                                                 RatePerDay                                                                                                  |
     |      データ ソース      |                                                                                                FMTModelRate                                                                                                 |
-    |      データ フィールド       | RaterPerDay <strong>注:</strong> <strong>データ フィールド</strong> 値はテーブル フィールド値に一致する必要があります。 スペル エラーを修正すると、値が一致しない場合は、ランタイム エラーが表示されます。 |
+    |      データ フィールド       | RaterPerDay<p><strong>注:</strong> <strong>データ フィールド</strong> 値はテーブル フィールド名と一致する必要があります。 スペル エラーを修正すると、値が一致しない場合は、ランタイム エラーが表示されます。</p> |
     | フォーマット式 |                                                                                                1 日当たりの ${0}                                                                                                 |
 
 
@@ -407,7 +416,11 @@ HTML バインディング構文の追加機能の 1 つは、バインディン
 
 26. Ctrl+S を押し、変更を **FMTRentalRatesPart** に保存します。
 27. ソリューション エクスプローラーで、**FMTClerkWorkspace** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。
-28. Ctrl+F5 キーを押し、Internet Explorer で更新された連絡先コントロールを開きます。 **注記:** JavaScript エラーが発生した場合は、ブラウザーが新しい JavaScript ファイルを読み込むように、Internet Explorer のキャッシュをクリアする必要があります。
+28. Ctrl+F5 キーを押し、Internet Explorer で更新された連絡先コントロールを開きます。
+
+    > [!NOTE]
+    > JavaScript エラーが発生した場合は、ブラウザーが新しい JavaScript ファイルを読み込むように Internet Explorer のキャッシュをクリアする必要があります。
+
     1.  デバッガーを開くように求めるメッセージが表示されたら、**いいえ** をクリックします。
     2.  Internet Explorer が開いているときに、F12 キーを押し (または **設定** &gt; **F12 開発者ツール** をクリックし)、Ctrl+R を押します。
     3.  **ブラウザー キャッシュのクリア** ダイアログ ボックスで、**はい**をクリックします。
@@ -418,7 +431,7 @@ HTML バインディング構文の追加機能の 1 つは、バインディン
 このチュートリアルでは、コントロールのデザイン時とサーバー側の動作を定義するときに X++ を使用する方法、および UI およびユーザー操作パターンをデザインするときに HTML および JavaScript ベースの強力なフレームワークを使用する方法について説明しました。 コントロール拡張フレームワークは、コントロールのモデル化された動作とその物理的なマニフェストの区切りを提供します。 ベスト プラクティスは、拡張可能コントロールを作成するときにデータ、メタデータ、および UI の間の疎結合を管理する必要があります。
 
 ## <a name="bidirectional-or-right-to-left-support"></a>双方向または右から左へのサポート
-拡張可能コントロールの右から左 (RTL) サポートを検証するには、HTML ドキュメントの**dir** (方向) 属性を設定するだけです。 この属性が変更されると、ブラウザーは、コントロールのレイアウトの方向を自動的に変更します。 このレイアウトと競合するすべてのスタイルがコントロールで実装されていないことを確認する必要があります。 この属性を手動で設定するのではなく、フォームにコントロールを配置して、右から左へ読み書きする言語を選択することでも検証できます。 RTL 言語を選択すると、クライアントは **dir** 属性も適切に更新します。 詳細については、HTML 標準で [ディレクトリ属性](http://www.w3.org/TR/html5/dom.html#the-dir-attribute) を参照してください。
+拡張可能コントロールの右から左 (RTL) サポートを検証するには、HTML ドキュメントの**dir** (方向) 属性を設定するだけです。 この属性が変更されると、ブラウザーは、コントロールのレイアウトの方向を自動的に変更します。 このレイアウトと競合するすべてのスタイルがコントロールで実装されていないことを確認する必要があります。 この属性を手動で設定するのではなく、フォームにコントロールを配置して、右から左へ読み書きする言語を選択することでも検証できます。 RTL 言語を選択すると、クライアントは **dir** 属性も適切に更新します。 詳細については、HTML 標準で [ディレクトリ属性](https://www.w3.org/TR/html5/dom.html#the-dir-attribute) を参照してください。
 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nimak
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49fe81b4a850e14a3d15a7ccb11d88f8fe952fcb
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bb112cf5e4502e9c0566c0e9739ff64ae8dca303
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537096"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595462"
 ---
 # <a name="troubleshoot-service-authentication-issues"></a>サービス認証問題のトラブルシューティング
 
@@ -35,13 +35,13 @@ ms.locfileid: "1537096"
 ## <a name="inspect-the-jwt"></a>JWT を検査します。
 ### <a name="capture-the-jwt-from-an-http-request"></a>HTTP 要求から JWT をキャプチャします。
 
-1. Fiddler を <http://www.telerik.com/fiddler> からダウンロードします。
+1. Fiddler を <https://www.telerik.com/fiddler> からダウンロードします。
 2. クライアントから HTTPS トラフィックを監視するには、HTTPS キャプチャを設定します。
 3. 未処理認証 (OAuth) JSON Web トークン (JWT) を検索します。 これは、「ベアラー」セグメントのない HTTP「認証」ヘッダーの値です。
 
 ### <a name="use-a-deserializer-tool-to-look-at-the-token-contents"></a>逆シリアル化ツールを使用してトークンの内容を確認
 
-1. <http://jwt.io> に移動し、入力パネルに JWT を貼り付けます。
+1. <https://jwt.io> に移動し、入力パネルに JWT を貼り付けます。
 2. 名前と値の組でコンテンツを表示します。 次の例を参照してください。
 3. 次の情報が正しいことを確認します。
 

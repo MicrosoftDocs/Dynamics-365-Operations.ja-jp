@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1f6ca1aa49a8a5b4f28e19710af106096d50023
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 7f546233a5f33c7343f469cc6c094440999c4945
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537504"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595302"
 ---
 # <a name="apply-countryregion-context"></a>国/地域コンテキストの適用
 
@@ -69,7 +69,10 @@ ms.locfileid: "1537504"
 </table>
 
 ## <a name="using-the-countryregioncodes-property"></a>CountryRegionCodes プロパティの使用
-制御されたエンティティで国/地域コンテキストを作成するには、**CountryRegionCodes** プロパティで ISO コード値の設定します。 ISO 国および地域コードの一覧は [ここ](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm) で見つけることができます。 Microsoft Dynamics 365 for Finance and Operations は、**CountryRegionCodes** プロパティの値を管理関係者の国/地域コンテキストと比較します。 値が一致した場合は、要素が表示されます。 それ以外の場合、表示されません。 **ヒント:** **CountryRegionCodes** プロパティに複数の ISO 国および地域コードを追加するには、コンマ区切りのリストを使用します。
+制御されたエンティティで国/地域コンテキストを作成するには、**CountryRegionCodes** プロパティで ISO コード値の設定します。 ISO の国および地域コードの一覧は [ISO の Web サイト](https://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm) にあります。 Microsoft Dynamics 365 for Finance and Operations は、**CountryRegionCodes** プロパティの値を管理関係者の国/地域コンテキストと比較します。 値が一致した場合は、要素が表示されます。 それ以外の場合、表示されません。
+
+> [!TIP]
+> **CountryRegionCodes** プロパティに複数の ISO 国および地域コードを追加するには、コンマ区切りのリストを使用します。
 
 ## <a name="using-the-legal-entity-as-the-controlling-party"></a>法人を管理関係者として使用
 法人のプライマリ住所の **国/地域** 値により、制御側関係者の国/地域コンテキストが決定されます。 **国/地域** フィールドの既定値は、Finance and Operations クライアントのロケールです。 次の図は、法人の基本住所を設定する方法を示しています。 [![LE\_Edit\_address](./media/le_edit_address-1024x570.jpg)](./media/le_edit_address.jpg)
@@ -83,7 +86,7 @@ ms.locfileid: "1537504"
 <a name="additional-resources"></a>その他のリソース
 --------
 
-[ISO コード](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
+[ISO コード](https://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 810a761ff80cb258d053c365ee7eff19906a61fa
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 34e9438ef0764399ac9de3444330d05a47e72e5f
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536994"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544182"
 ---
 # <a name="x-compile-time-functions"></a>X++ コンパイル時関数
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3e680bd585e6fe75f2abf5e9906765bc07cb73bf
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e5ae325c41880d3b2ef82e884e9f9a13e62de090
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537471"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548072"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 

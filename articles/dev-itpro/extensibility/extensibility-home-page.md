@@ -3,7 +3,7 @@ title: 拡張機能のホーム ページ
 description: このトピックでは、拡張性に関するトピックへのリンクを提供します。
 author: FrankDahl
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,14 +15,14 @@ ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2017-02-28
+ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 65780daf29286a4812110dfbb78d574bd1f5ef05
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e58f4291d6413117657a6aaa2e215c8d7386cb47
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1510970"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595379"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
@@ -38,14 +38,11 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 
 + [アプリケーション機能拡張計画](extensibility-roadmap.md)
 + [拡張性の要求](extensibility-requests.md) 
-+ [拡張性についてよく寄せられる質問](app-sealing-faq.md) 
++ [拡張性に関するよく寄せられる質問](app-sealing-faq.md) 
 
 ## <a name="whats-new"></a>新機能
-このセクションでは、2017 年 7 月以降に行われた拡張性に関連する更新プログラムを一覧表示します。
 
-+ [Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更](changes-july-2017.md)
-+ [Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更](extensibility-changes-73.md)
-+ [Dynamics 365 for Finance and Operations リリース 8.0 の拡張機能の変更](Changes-80.md)
+2017 年 7 月以降に行われた拡張性関連の更新については [拡張性の新機能](extensibility-new.md) を参照してください。
 
 ## <a name="getting-started"></a>はじめに
 
@@ -68,7 +65,7 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 
 ## <a name="how-do-i-create-extensions"></a>拡張機能の作成方法
 
-このセクションには、特定のオブジェクト タイプやコードをカスタマイズする方法について解説した トピックが含まれています。 このトピックのほとんどは、簡潔で要点を押さえた内容となっています。 ここには多くのトピックがあるため、特定のトピックを検索すると便利にご利用いただける場合があります。
+このセクションは "方法" を含みます トピックが含まれています。 このトピックのほとんどは、簡潔で要点を押さえた内容となっています。 ここには多くのトピックがあるため、特定のトピックを検索すると便利にご利用いただける場合があります。
 
 ### <a name="data-types"></a>データ型
 + [列挙値の追加](add-enum-value.md)
@@ -108,7 +105,7 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 + [Dynamics 365 for Finance and Operations の拡張](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-dynamics-365-for-operations/)
 + [クラスの状態の機能拡張](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-class-state/)
 + [拡張メソッド](https://blogs.msdn.microsoft.com/mfp/2015/12/15/x-in-ax7-extension-methods/)
-+ [拡張可能な基本列挙型](http://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
++ [拡張可能な基本列挙型](https://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
 + [静的イベント サブスクリプション](https://blogs.msdn.microsoft.com/mfp/2015/12/10/x-in-ax7-static-event-subscription/)
 + [デリゲートを通じての応答](https://blogs.msdn.microsoft.com/mfp/2017/01/31/responding-through-delegates/)
 + [onValidatingWrite へのサブスクライブ](https://blogs.msdn.microsoft.com/mfp/2017/01/31/subscribing-to-onvalidatingwrite/)

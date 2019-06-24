@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: f1b7b5e1f9d1687cf6ce52c1a295602b44b99962
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e179179602c1e8169e8065ec8a269b034945a528
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506201"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570304"
 ---
 # <a name="copy-a-batch-job"></a>バッチ ジョブのコピー
 

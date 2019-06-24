@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ed4f9b3055e164600827b62d57b7a5068edb3b1a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afbf69c072ae205e973203d97a5fbca7504ae04f
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559304"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607056"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>売上グループを使用した販売時点管理 (POS) でのコミッションの追跡
 
 [!include [banner](includes/banner.md)]
 
-顧客からの支援、アップセリング、クロスセリング、トランザクションの処理を担当したアソシエイトの売上を追跡するのは、一般的な小売業務です。
+支援、アップセリング、クロスセリング、トランザクションを提供することによって顧客と作業した協力者の売上を追跡するのは、一般的な小売業務です。
 
 販売担当者による売上の追跡は、アソシエイトの販売能力の測定であり、レジ担当者による売上はスピードと効率の測定です。 販売担当者が追跡した売上も、手数料やその他のインセンティブの計算によく使用されます。
 

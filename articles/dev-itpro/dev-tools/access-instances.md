@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52fa6e53a95ef2a51316e2a69688989a7e03cbea
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1b1a860157050b3714198ab5bffef5e89390cf68
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537015"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595381"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -127,7 +127,7 @@ Retail もコンフィギュレーションしている場合は、このセク�
 
 ダウンロード可能な VHD を POS のカスタマイズに使用するには、次の手順も実行する必要があります。
 
--   ホスト コンピューターで、入れ子になった VM サポートを有効にします。 詳細については、[入れ子仮想化の仮想マシンで Hyper-v を実行](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/nesting) を参照してください。
+-   ホスト コンピューターで、入れ子になった VM サポートを有効にします。 詳細については、[入れ子仮想化の仮想マシンで Hyper-v を実行](https://msdn.microsoft.com/virtualization/hyperv_on_windows/user_guide/nesting) を参照してください。
 
 ### <a name="running-the-virtual-machine-vm-locally"></a>仮想マシン (VM) をローカルで実行
 
@@ -152,8 +152,8 @@ Hyper-V マネージャーから VM を実行するには、これらの手順�
 
 POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要があります。
 
-1.  [Microsoft Emulator for Windows 10 Mobile Anniversary Update](https://www.microsoft.com/en-us/download/details.aspx?id=53424) をダウンロードしてインストールします。
-2.  Hyper-V ホスト サービスを起動します。 詳細については、[Hyper-V: Hyper-V 仮想マシン管理サービスを実行している必要があります](https://technet.microsoft.com/en-us/library/ee956894(v=ws.10).aspx) を参照してください。 起動中にエラーが発生した場合は、ゲスト VM で Hyper-V ロールをアンインストールし、再インストールすることもできます。
+1.  [Microsoft Emulator for Windows 10 Mobile Anniversary Update](https://www.microsoft.com/download/details.aspx?id=53424) をダウンロードしてインストールします。
+2.  Hyper-V ホスト サービスを起動します。 詳細については、[Hyper-V: Hyper-V 仮想マシン管理サービスを実行している必要があります](https://technet.microsoft.com/library/ee956894(v=ws.10).aspx) を参照してください。 起動中にエラーが発生した場合は、ゲスト VM で Hyper-V ロールをアンインストールし、再インストールすることもできます。
 
 ### <a name="provisioning-the-administrator-user"></a>管理者ユーザーを準備
 
@@ -176,8 +176,8 @@ Retail もコンフィギュレーションしている場合は、このセク�
 
 #### <a name="for-dynamics-365-for-operations-70"></a>Dynamics 365 for Operations 7.0 の場合
 
-1.  [IT プロフェッショナル用 Microsoft Online Services サインイン アシスタント RTW](http://go.microsoft.com/fwlink/?LinkID=286152) をインストールします。
-2.  [Windows PowerShell (64-ビット バージョン) 用 Azure Active Directory モジュール](http://go.microsoft.com/fwlink/p/?linkid=236297) をインストールします。
+1.  [IT プロフェッショナル用 Microsoft Online Services サインイン アシスタント RTW](https://go.microsoft.com/fwlink/?LinkID=286152) をインストールします。
+2.  [Windows PowerShell (64-ビット バージョン) 用 Azure Active Directory モジュール](https://go.microsoft.com/fwlink/p/?linkid=236297) をインストールします。
 3.  テナントとユーザー ID の Azure AD を照会します。 Windows PowerShell 統合スクリプト環境 (ISE) ウィンドウを管理者権限で開き、次のコマンドを実行します。 Azure AD 資格情報を求められます。 以前に管理者プロビジョニング ツールで使用したのと同じユーザー アカウントを使用します。
 
         $msocred = Get-Credential 

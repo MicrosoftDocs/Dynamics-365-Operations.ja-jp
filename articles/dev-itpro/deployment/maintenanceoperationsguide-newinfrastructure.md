@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: b0f6f9340bccac7001569680a54e417ebe22f20f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ce89ea44265340b8638ef84be6e0b6c5720d1d42
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537024"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550967"
 ---
 # <a name="maintenance-operations-for-deployments"></a>配置の保守操作
 

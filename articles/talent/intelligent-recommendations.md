@@ -3,7 +3,7 @@ title: インテリジェントな推奨
 description: このトピックでは、機械学習を使用して、職務および職務候補者の推奨事項を提供する方法について説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518445"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620623"
 ---
 # <a name="intelligent-recommendations"></a>インテリジェントな推奨
 
@@ -33,7 +33,7 @@ ms.locfileid: "1518445"
 
 > [!NOTE] 
 > - インテリジェントな推奨機能は、[包括採用アドオン](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring) でのみ使用できます。
-> - このトピックに記載されている機能は、プレビュー レビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 この機能を使用するには、Attract の**管理者設定**を使用して有効にするよう管理者に依頼してください。 **推奨候補者**、**推奨職務**、および**候補者の推奨事項**を**オン**に設定します。 詳細については、[Talent のプレビュー機能の利用](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature) を参照してください。 
+> - このトピックに記載されている機能は、プレビュー レビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 この機能を使用するには、Attract の**管理者センター**を使用して有効にするよう管理者に依頼してください。 **推奨候補者**、**推奨職務**、および**候補者の推奨事項**を**オン**に設定します。 詳細については、[Talent のプレビュー機能の利用](./access-preview-feature.md) を参照してください。 
 
 
 ## <a name="candidate-recommendations"></a>推奨候補者

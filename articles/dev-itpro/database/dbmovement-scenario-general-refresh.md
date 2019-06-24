@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 356e91d9a095531fb9b16ec475d0a160ed5add61
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 12a19e4010ebb24ffcb49f65ed67ad44fd880041
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537093"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544235"
 ---
 # <a name="refresh-for-training-purposes"></a>トレーニング用の更新
 

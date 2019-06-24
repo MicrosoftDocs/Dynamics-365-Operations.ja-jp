@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: acb9d6a19497038205cd9bb44e737d17b88b4599
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bbf36d3317ca20ee82f1a56b2f5208f258b9438a
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536958"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595380"
 ---
 # <a name="develop-and-customize"></a>開発およびカスタマイズ 
 
@@ -51,7 +51,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 -   [削除予定の機能](../migration-upgrade/deprecated-features.md)
 -   [非推奨 API's](../migration-upgrade/deprecated-apis.md)
 -   [Azure DevOps の名前を変更し、コンピューターを再起動する](../migration-upgrade/vso-machine-renaming.md)
--   [Azure DevOps の概要 (ビデオ)](http://channel9.msdn.com/Events/Build/2014/2-575)
+-   [Azure DevOps の概要 (ビデオ)](https://channel9.msdn.com/Events/Build/2014/2-575)
 <!-- [Learn about packages, models and Visual Studio (Office Mix)](https://mix.office.com/watch/ies6lyit6773)-->
 <!-- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)-->
 <!-- [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)-->

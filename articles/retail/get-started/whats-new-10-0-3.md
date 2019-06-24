@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: d574d37193edee7d302d008ca311f200053dfcba
-ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
+ms.openlocfilehash: ad5bc7b7bb03c393f20d0b09e9340898d4b00154
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1539502"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577832"
 ---
 # <a name="preview-features-in-dynamics-365-for-retail-version-1003"></a>Dynamics 365 for Retail バージョン 10.0.3 の機能をプレビューする
 
@@ -31,7 +31,7 @@ ms.locfileid: "1539502"
 
 このトピックでは、Microsoft Dynamics 365 for Retail 10.0.3 の新機能または変更された機能について説明します。 
 
-Microsoft Dynamics 365 for Finance and Operations の機能については [Finance and Operations バージョン 10.0.3 (2019 年 6 月) の機能をプレビューする](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3) を参照してください。
+Microsoft Dynamics 365 for Finance and Operations の機能については [Finance and Operations バージョン 10.0.3 (2019 年 6 月) の機能をプレビューする](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3) を参照してください。
 
 ## <a name="new-calculation-logic-for-autocharges-in-call-center-for-mixed-delivery-mode-sales-lines"></a>混載配送モードの販売明細行の、コール センターにおける自動請求のための新しい計算ロジック
 
@@ -41,18 +41,20 @@ Microsoft Dynamics 365 for Finance and Operations の機能については [Fina
 
 ## <a name="hq-extensions"></a>HQ 拡張機能 
 
-このリリースは Dynamics 365 for Retail のカスタマイズがより簡単になる多数の拡張ポイントを追加します。 カスタム拡張シナリオをサポートするために、次の拡張ポイントが追加されました。
+このリリースは Dynamics 365 for Retail のカスタマイズがより簡単となる多数の拡張ポイントを追加します。 カスタム拡張シナリオをサポートするために、次の拡張ポイントが追加されました。
 
-  - Retail Headquarters: 拡張性をサポートするためにリファクターされたメソッド。 これらのメソッドはリファクターされ、コマンド チェーン、デリゲート、またはメンバーへのアクセスの提供によって、拡張性をサポートします。
+- Retail Headquarters: 拡張性をサポートするためにリファクターされたメソッド。 これらのメソッドはリファクターされ、コマンド チェーン、デリゲート、またはメンバーへのアクセスの提供によって、拡張性をサポートします。
+- メソッド:
+
+    - 注文の取得
  
-  - メソッド:
-    - 注文の取得 
         1. RetailTransactionTransformer.readTransactionSalesTrans
         1. RetailTransactionServiceOrders.createCustomerOrder
         1. Salesline.Insert
         1. Salesline.update
 
     - 販売促進
+
         1. RetailBarCodeManagement.CreateBarCodeNoDim
         1. EcoResProductRelationtable.validateWrite
 
@@ -62,4 +64,4 @@ Microsoft Dynamics 365 for Finance and Operations の機能については [Fina
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。

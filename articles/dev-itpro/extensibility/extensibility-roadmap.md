@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-10
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 2e912830c52a1e2c2a8382a50e19bc130bde50d8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 535e6c441f22d1bc60ddc894cad4c3af82deba05
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1511418"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550884"
 ---
 # <a name="application-extensibility-roadmap"></a>アプリケーション拡張機能ロードマップ
 

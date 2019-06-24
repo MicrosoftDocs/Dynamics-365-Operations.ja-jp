@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 58eaf1ea5696c8e2c76d7679e1e384341dc41ed5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e081cdd84dc37f9211047a5dba74e5b993ebdc2d
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537097"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544269"
 ---
 # <a name="copy-finance-and-operations-databases-from-sql-server-to-production-azure-sql-database-environments"></a>Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする
 

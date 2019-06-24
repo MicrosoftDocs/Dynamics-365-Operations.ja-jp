@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 96d4cbdf254c4e8e30dad381c4d2527be30a2426
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5e5727319089bb30de4fbfb0e6f61596f5e9ad80
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1510976"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544102"
 ---
 # <a name="register-subclasses-for-factory-methods"></a>ファクトリ メソッドのサブクラスを登録
 

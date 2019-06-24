@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f02cf587f869c282b83ed905621d9026b8937dfa
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: dc24c26ce0fb7d208d3f387a1d6556a4fd63875d
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537223"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544042"
 ---
 # <a name="issue-search-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) での問題検索
 
@@ -43,7 +43,7 @@ None
 3.  **問題検索**タイルをクリックします。
 4.  検索用語を入力します。 キーワードまたはキーワードのグループ、または Microsoft サポート技術情報 (KB) 番号を入力することができます。 また、ドル記号 ($) を使用してアプリケーション オブジェクト ツリー (AOT) のオブジェクト パスを $\\*ObjectType\\Object* または $\\*ObjectType\\Object*\#*Method* の形式で指定することができます (たとえば、**$\\Classes\\Tax\#Save**)。 **AND** や **OR** などの標準検索演算子がサポートされます。
 
-解決済みまたは未処理の問題、回避策、および修正されないまたは延期される問題のための結果リストをフィルター処理することができます。 また、Finance and Operations のバージョンでフィルター処理することができます。 既定では、結果は関連別に並べ替えられます。 ただし、日付の昇順、降順、バージョンの昇順、または降順で並べ替えることができます。 既定では、すべてのステータスと製品バージョンのフィルターが選択されます。 **注記:** Microsoft DynamicsAX 2009 の結果は、規制機能を検索する場合にのみ Microsoft DynamicsAX 2012 プロジェクトに含まれます。 次のテーブルでは、製品の問題別に検索する際の各ステータスについて提供される情報について説明します。
+解決済みまたは未処理の問題、回避策、および修正されないまたは延期される問題のための結果リストをフィルター処理することができます。 また、Finance and Operations のバージョンでフィルター処理することができます。 既定では、結果は関連別に並べ替えられます。 ただし、日付の昇順、降順、バージョンの昇順、または降順で並べ替えることができます。 既定では、すべてのステータスと製品バージョンのフィルターが選択されます。 **注記:** Microsoft Dynamics AX 2009 の結果は、規制機能を検索する場合にのみ Microsoft Dynamics AX 2012 プロジェクトに含まれます。 次のテーブルでは、製品の問題別に検索する際の各ステータスについて提供される情報について説明します。
 
 <table>
 <colgroup>

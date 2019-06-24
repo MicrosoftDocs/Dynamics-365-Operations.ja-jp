@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 002e3b619de2d3120022b2422710ac2f8055d226
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a19fcd01df491bbbc106bd3ebd32681bdb31c861
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537053"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595454"
 ---
 # <a name="f-classes-formbuildfilterpanecontrol-to-formbuildrealcontrol"></a>F クラス (FormBuildFilterPaneControl から FormBuildRealControl)
 
@@ -1356,7 +1356,7 @@ FormBuildFunctionButtonControl クラスを使用すると、X++ コードとメ
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-既定の文字セットは、現在のシステム ロケールに基づく値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については、MSDN Web サイト、http://go.microsoft.com/fwlink/?LinkID=85972 で LOGFONT 構造を参照してください。
+既定の文字セットは、現在のシステム ロケールに基づく値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については [MSDN Web サイト](https://go.microsoft.com/fwlink/?LinkID=85972) で LOGFONT 構造を参照してください。
 
 ### <a name="method-colorscheme"></a>メソッド colorScheme
 
@@ -3785,7 +3785,7 @@ FormBuildGroupControl クラスを使用すると、X++ コードとメタデー
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-既定の文字セットは、現在のシステム ロケールに基づいて値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については、MSDN Web サイト、http://go.microsoft.com/fwlink/?LinkID=85972 で LOGFONT 構造を参照してください。
+既定の文字セットは、現在のシステム ロケールに基づいて値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については [MSDN Web サイト](https://go.microsoft.com/fwlink/?LinkID=85972) で LOGFONT 構造を参照してください。
 
 ### <a name="method-colorscheme"></a>メソッド colorScheme
 
@@ -5098,7 +5098,7 @@ FormBuildGuidControl クラスを使用すると、X++ コードとメタデー�
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については、MSDN Web サイト、http://go.microsoft.com/fwlink/?LinkID=85972 で LOGFONT 構造を参照してください。
+既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については [MSDN Web サイト](https://go.microsoft.com/fwlink/?LinkID=85972) で LOGFONT 構造を参照してください。
 
 ### <a name="method-colorscheme"></a>メソッド colorScheme
 
@@ -7220,7 +7220,7 @@ FormBuildIntControl クラスを使用すると、X++ コードとメタデー�
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については、MSDN Web サイト、http://go.microsoft.com/fwlink/?LinkID=85972 で LOGFONT 構造を参照してください。
+既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については [MSDN Web サイト](https://go.microsoft.com/fwlink/?LinkID=85972) で LOGFONT 構造を参照してください。
 
 ### <a name="method-colorscheme"></a>メソッド colorScheme
 
@@ -8697,7 +8697,7 @@ FormBuildListBoxControl クラスを使用すると、X++ コードとメタデ�
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については、MSDN Web サイト、http://go.microsoft.com/fwlink/?LinkID=85972 で LOGFONT 構造を参照してください。
+既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については [MSDN Web サイト](https://go.microsoft.com/fwlink/?LinkID=85972) で LOGFONT 構造を参照してください。
 
 ### <a name="method-colorscheme"></a>メソッド colorScheme
 
@@ -9984,7 +9984,7 @@ FormBuildListControl クラスを使用すると、X++ コードとメタデー�
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については、MSDN Web サイト、http://go.microsoft.com/fwlink/?LinkID=85972 で LOGFONT 構造を参照してください。
+既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については [MSDN Web サイト](https://go.microsoft.com/fwlink/?LinkID=85972) で LOGFONT 構造を参照してください。
 
 ### <a name="method-checkbox"></a>メソッド checkBox
 
@@ -11803,7 +11803,7 @@ FormBuildMenuButtonControl クラスを使用すると、X++ コードとメタ�
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については、MSDN Web サイト、http://go.microsoft.com/fwlink/?LinkID=85972 で LOGFONT 構造を参照してください。
+既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については [MSDN Web サイト](https://go.microsoft.com/fwlink/?LinkID=85972) で LOGFONT 構造を参照してください。
 
 ### <a name="method-colorscheme"></a>メソッド colorScheme
 
@@ -13773,7 +13773,7 @@ FormBuildRadioControl クラスを使用すると、X++ コードとメタデー
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については、MSDN Web サイト、http://go.microsoft.com/fwlink/?LinkID=85972 で LOGFONT 構造を参照してください。
+既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については [MSDN Web サイト](https://go.microsoft.com/fwlink/?LinkID=85972) で LOGFONT 構造を参照してください。
 
 ### <a name="method-colorscheme"></a>メソッド colorScheme
 
@@ -15062,7 +15062,7 @@ FormBuildRealControl クラスを使用すると、X++ コードとメタデー�
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については、MSDN Web サイト、http://go.microsoft.com/fwlink/?LinkID=85972 で LOGFONT 構造を参照してください。
+既定の文字セットは、現在のシステム ロケールに応じて、値に対して設定されます。 たとえば、システム ロケールが英語 (米国) である場合、ANSI\_CHARSET として設定されます。 詳細については [MSDN Web サイト](https://go.microsoft.com/fwlink/?LinkID=85972) で LOGFONT 構造を参照してください。
 
 ### <a name="method-colorscheme"></a>メソッド colorScheme
 

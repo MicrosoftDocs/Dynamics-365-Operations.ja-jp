@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21df0b804b28f811a195e9ee4667e95886569f67
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f992e84e53baf2c9ff330584f844d198923bbfaa
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537445"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566997"
 ---
 # <a name="task-double-form-pattern"></a>タスク ダブルのフォーム パターン
 

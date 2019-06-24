@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: a32f874030ccf4ae311ef87fac848fbae46caa2a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d05b09aeade1f3934e43b0dbc227e706db6c9eb2
+ms.sourcegitcommit: c5edff04f35a067934fddebd166906edc003e7c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516942"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "1605851"
 ---
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 
@@ -283,7 +283,7 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 
 次のコード例は、そのクラスと **doExecute()** メソッドの実装を示しています。 このメソッドは単に、、セッションの状態から注文 ID とユーザー ID を取得し、この製造オーダーを開始するメソッドを呼び出すだけです。
 
-![](media/class-and-method-implementation.png)
+![doExecute() メソッドの実装](media/class-and-method-implementation.png)
 
 例外が発生した場合、フレームワーク例外処理ロジックは、前の手順でプロセスがロールバックされることを保証します。
 

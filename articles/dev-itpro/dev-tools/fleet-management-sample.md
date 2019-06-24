@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36a49334c87e8ae32430fd88bf4978624610fc83
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 75ab30b185ecc6774b3f1b77ff0ad6f9479af4f0
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537014"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544142"
 ---
 # <a name="end-to-end-scenario-for-the-fleet-management-sample-application"></a>フリート管理のサンプル アプリケーションのエンド ツー エンドのシナリオ
 

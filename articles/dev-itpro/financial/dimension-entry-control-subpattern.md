@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b42e50d1f64f26d6dc0e37238471c6c393706222
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d6cc957d4b02f645ef2e7cc2321dd5d8de23f8a5
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537403"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555610"
 ---
 # <a name="dimension-entry-control-subpattern"></a>分析コード エントリ コントロールのサブパターン
 

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: b6ed76c37a6f1a64740d1a1a2140dc57d39dced5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1d8aebb147d710760360ad5e04f10fcea5edc339
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537515"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1572209"
 ---
 # <a name="device-management-implementation-guidance"></a>デバイス管理実装ガイダンス
 

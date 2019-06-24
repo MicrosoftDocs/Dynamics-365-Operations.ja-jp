@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anmukh
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: b1cce308d313b50089ef7144510856d3f104c7f1
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3803d51578e8f5301b851d1c8b1e12d0a1c3385f
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537511"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1572038"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-czech-republic-hungary-and-poland"></a>チェコ共和国、ハンガリー、およびポーランドのキャッシュ レジスターの配置ガイドライン
 

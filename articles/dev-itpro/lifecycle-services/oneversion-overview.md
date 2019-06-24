@@ -3,7 +3,7 @@ title: 1 つのバージョンのサービス更新の概要
 description: このトピックでは、1 つのバージョンの一部として Microsoft によって開始されたサービスの更新を管理するための体験を構成する、さまざまな手順の概要を説明します。
 author: meeram
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 730a0ee44f69348c25a9911cb98fe71bc0aaffc4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 98e292697f4338115e3e411da6a9cc1d34b7514c
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537560"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595458"
 ---
 # <a name="one-version-service-updates-overview"></a>1 つのバージョンのサービス更新の概要
 
@@ -28,7 +28,7 @@ ms.locfileid: "1537560"
 
 次の一連のトピックでは Microsoft Dynamics 365 for Finance and Operations **バージョン 8.1 (2018 年 10 月) 以降** のサービス更新に関連する情報を提供しています。 これはクラウド リリースにのみ適用されます。
 
-- [標準および最初のリリース サービス更新](../../fin-and-ops/get-started/public-preview-releases.md) – このトピックはリリース頻度およびリリース プロセスに関する情報を提供します。
+- [サービス更新の可用性](../../fin-and-ops/get-started/public-preview-releases.md) – このトピックはリリース頻度およびリリース プロセスに関する情報を提供します。
 - [ソフトウェアのライフサイクル ポリシーおよびクラウド リリース](../migration-upgrade/versions-update-policy.md) – このトピックはサービスの更新、可用性、およびサービス終了についての情報を提供します。
 - [1 つのバージョンのサービス更新に関するよく寄せられる質問](../../fin-and-ops/get-started/one-version.md) – このトピックは更新プロセス、ツール、計画、および小売サービスの更新に関する質問に回答します。
 
@@ -61,7 +61,7 @@ ms.locfileid: "1537560"
 
 通知が送信された後、Microsoft は指定された保守時間枠で更新 (**自動更新**) を適用します。 この操作が完了した後、更新の状態を示す通知電子メールが送信されます。 LCS の標準的な更新エクスペリエンスを使用することで **自己更新** も可能になります。 詳細については、[クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md)を参照してください。 
 
-初回リリース プログラムに参加している顧客は、サンドボックス環境およびその他の環境を早期に更新する機会があります。 初回リリース プログラムに登録するには [http://experience.dynamics.com](http://experience.dynamics.com) に移動します。
+初回リリース プログラムに参加している顧客は、サンドボックス環境およびその他の環境を早期に更新する機会があります。 初回リリース プログラムに登録するには [https://experience.dynamics.com](https://experience.dynamics.com) に移動します。
 
 次の図に示すように、LCS の標準的な更新エクスペリエンスを使用することで **自己更新** も可能になります。
 

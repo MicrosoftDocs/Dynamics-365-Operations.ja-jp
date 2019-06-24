@@ -3,7 +3,7 @@ title: モバイル プラットフォームのホーム ページ
 description: モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。
 author: RobinARH
 manager: AnnBe
-ms.date: 05/03/2019
+ms.date: 05/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 66265bac176e0b5f6b09fe84d944c8314a6fea92
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 168c77b8ecfb67508a1588a88592a75c99f31f1e
+ms.sourcegitcommit: 291d90a857dd1be4ad58dc10d57415d6bddb09c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537297"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1616406"
 ---
 # <a name="mobile-platform-home-page"></a>モバイル プラットフォームのホーム ページ
 
@@ -166,6 +166,8 @@ ADFS がドメインで使用されており、環境がオンプレミスであ
 ワークスペースの作成および変更に関するヒントを以下に示します。
 - 大規模で複雑なフォームを記録するのではなく、記録用の簡略化されたフォームを新しく作成します。
 - フォームを記録したら、**完了**をクリックする代わりにフォームを閉じる必要があります。そうしないと、フォームは開いたままです。
+- "ジョブ ステップ" を使用して記録が正しいことを確認します。
+- タスク レコーダーの再生を使用して記録を再生し、確認します。
 - グリッドのあるページを記録し直す場合は、[詳細] ページへのリンクをもう一度記録する必要があります。そうしないと、リンクがページに含まれないためです。
 - アクションを記録するときは、フィールドに追加する値を変更します。 記録が完了したら、**保存**をクリックする代わりににフォームを閉じます。
 - 携帯のルックアップは、記録済みのリスト ページです。 **保存する値としてフィールドを使用する** (データ) および**ユーザーに表示するフィールド** (表示) を選択するには、それぞれ**フィールド データの選択**および**表示するフィールドを選択します**を使用します。
@@ -180,7 +182,7 @@ ADFS がドメインで使用されており、環境がオンプレミスであ
 ワークスペースの記録を作成するときは、次のパターンやコントロールをフォームで使用しないでください。
 - DelayedJoin を使用するデータソース (トランザクション フォームに共通)。
 - クイック タブ (既存のフォームに共通)。
-    - 記録されるフォームには FastTabs は不要です (展開状態は記憶されます)。
+    - クイック タブの展開状態が再生を妨げる可能性があるため、記録されたフォームにクイック タブを含めることはできません。
 - 展開可能なリージョン、リージョンの表示/非表示などの状態を持つユーザー インターフェイス (UI)。
 - モバイルにはチェック ボックスはありません。 JavaScript で、フィールドを Yes/No 列挙型に手動でバインドする必要があります。
 
@@ -189,6 +191,8 @@ Unified Operations アプリ および Unified Operations (モバイルクライ
 - 別のデバイス - 別のデバイスを使って多要素認証への応答をすることで、元のデバイス上ではUnified Operations アプリ がアクティブな状態を維持することができます。
 - 電話を使った多要素認証 - 多要素認証の応答に電話を使用することでアプリの切り替えが不要になります。
 - これを回避するには、認証通知を「長押し」したまま**承諾**オプションをクリックします。 通知の承諾ではアプリの切り替えは必要ないため、サインインが通常どおりに実行されます。
+
+MFA 認証で継続的な問題がある場合は、[Microsoft Authenticator アプリ ログの送信](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) に役立ち、結果のインシデント ID に対するサポートを提供します。
 
 ### <a name="trouble-signing-out-of-the-app-and-signing-in-with-new-credentials"></a>新しい資格情報でアプリからサインアウト、またはログインすると問題が発生します。
 新しい資格情報を使用してアプリからサインアウト、またはログインすることで問題が発生する場合は、 Azure AD サインイン画面にて [古い資格情報の破棄] を選択する必要があります。

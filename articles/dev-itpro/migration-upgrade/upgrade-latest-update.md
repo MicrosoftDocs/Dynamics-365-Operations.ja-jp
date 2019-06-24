@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 13aa115a6ad6caeddac2dd96425cae864f657e2d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f17a685bd25d753ba516e4bcb825c5fdf43d2f68
+ms.sourcegitcommit: c5edff04f35a067934fddebd166906edc003e7c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537183"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "1605849"
 ---
 # <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a>最新の Finance and Operations 更新プログラムへの移行の処理
 
@@ -43,7 +43,7 @@ Finance and Operations の各リリースの内容については、[新機能�
 - **更新**: バージョン 8.0 以降のソース環境で、バイナリ パッケージを環境に適用し、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。 このプロセスには、低いダウンタイム要件があり、データ アップグレードは含まれません。
 
 ## <a name="paths-to-one-version"></a>1 つのバージョンへのパス
-<img src="../migration-upgrade/media/OneVersion_Paths.png" width="600px" />
+<img src="../migration-upgrade/media/OneVersion_Paths.png" width="600px" alt="Paths to One Version" />
 Finance and Operations の最新バージョンを導入するには 3 つの基本パスがあります。  各パスは、詳細な手順へのリンクとともに以下で参照されます。
 
 ### <a name="self-service-upgrade"></a>セルフサービス アップグレード

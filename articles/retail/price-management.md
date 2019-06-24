@@ -3,7 +3,7 @@ title: 小売販売の価格管理
 description: このトピックでは、Microsoft Dynamics 365 for Retail で販売価格を作成および管理するための概念について説明します。
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 04/20/2018
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afa553fd0562b306f720f2a30c7f901db7ad1b3a
+ms.sourcegitcommit: 0fbfb9b0ab78c804f3931a083028d2ce313d6521
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549406"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "1594073"
 ---
 # <a name="retail-sales-price-management"></a>Retail 販売価格の管理
 
@@ -231,3 +231,9 @@ Microsoft Dynamics 365 で販売価格を設定する場合、設定する価格
 
 - 価格は、製品マスター価格に最も限定的なバリアント価格から最も限定的でないバリアント価格の順に、製品分析コードに基づきます。 2 つの製品分析コード (たとえば、色やサイズ) を使用して設定される価格は、1 つだけの製品分析コード (たとえば、サイズ) を使用して設定される価格の前に使用されます。
 - 価格および割引を管理するため、同じ価格グループを使用できます。
+
+## <a name="pricing-api-enhancements"></a>API の機能強化の価格設定
+
+価格は、多くの顧客の購買決定を管理するための最も重要な要素の 1 つであり、多くの顧客が購買を行う前に、さまざまなサイトの価格を比較しています。 競争力のある価格を確実に提供するために、小売業者は競合他社についての概要を把握し、プロモーションを実行することができます。 したがって、これらの小売業者が顧客を惹きつけには、製品検索、参照機能、一覧、および最も正確な価格を表示する製品の詳細ページが重要です。
+
+小売の次期リリースでは、**GetActivePrices** アプリケーション プログラミング インターフェイス (API) から、単純割引を含む価格が返されます (たとえば、買い物カゴの他の品目に依存しない単一行の割引)。 これにより、表示される価格は、顧客が品目に対して支払う実際の金額に近くなります。 この API には、すべてのタイプの単純割引、たとえば所属ベース、ロイヤルティベース、カタログベース、チャネルベースの割引が含まれます。 さらに、この API は適用された割引の名前と有効性の情報を返すので、小売業者は、価格の詳細な説明を提供し、割引の有効期限が近づいた場合に緊急性を高めることができます。

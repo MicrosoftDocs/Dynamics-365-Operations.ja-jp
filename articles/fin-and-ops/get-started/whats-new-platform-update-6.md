@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: 459cb3c270c6de343f82ccf346ac7f4205ae8676
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 56e4ba73bc3dab3f6b1b633f71d87650d848d972
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1510854"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595624"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-6-april-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の新機能および変更された機能
 
@@ -66,7 +66,7 @@ Dynamics AX 7.0 がリリースされたとき、添付ファイル用のデー�
 
 ## <a name="ideas-portal"></a>アイデア ポータル
 
-Dynamics 365 for Operations アイデア フォーラムは、[アイデア ポータル.](https://experience.dynamics.com/ideas/) で使用可能です。 アイデア ポータルでは、すべての Dynamics 365 for Operations ユーザーは、定期的に新しいアイデアを送信、既存のアイデアを採決、およびそのアイデアの状態を追跡することができます。 これは、現在、製品の外部 ([http://experience.dynamics.com/ideas](http://experience.dynamics.com/ideas/)) およびアプリケーション内の両方から達成できます。 このスクリーンショットは、Dynamics 365 for Operations からアイデア ポータルにナビゲートする方法を示しています。
+Dynamics 365 for Operations アイデア フォーラムは、 [アイデア ポータル](https://experience.dynamics.com/ideas/) にて使用可能となっています。 アイデア ポータルでは、すべての Dynamics 365 for Operations ユーザーは、定期的に新しいアイデアを送信、既存のアイデアを採決、およびそのアイデアの状態を追跡することができます。 これは、現在、製品の外部 ([https://experience.dynamics.com/ideas](https://experience.dynamics.com/ideas/)) およびアプリケーション内の両方から達成できます。 このスクリーンショットは、Dynamics 365 for Operations からアイデア ポータルにナビゲートする方法を示しています。
 
 [![ideas-menu](./media/ideas-menu.png)](./media/ideas-menu.png)
 

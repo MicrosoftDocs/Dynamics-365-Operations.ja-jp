@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552720"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606898"
 ---
 # <a name="attributes-and-attribute-groups"></a>属性および属性グループ
 
@@ -176,8 +176,8 @@ ms.locfileid: "1552720"
 > [!NOTE]
 > この手順を使用して、チャンネル ナビゲーション カテゴリ階層と補助製品カテゴリ階層内のカテゴリに属性グループを割り当てることもできます。 手順 2 では、次のナビゲーション パスを使用します。
 >
-> - **小売** &gt; **カテゴリおよび製品の管理** &gt; **チャネル ナビゲーション カテゴリ**
-> - **小売** &gt; **カテゴリおよび製品の管理** &gt; **補助製品カテゴリ**
+> - 小売 &gt; カテゴリおよび製品の管理 &gt; チャネル ナビゲーション カテゴリ
+> - 小売 &gt; カテゴリおよび製品の管理 &gt; 補助製品カテゴリ
 
 ### <a name="assign-attribute-groups-to-retail-stores"></a>小売店舗へ属性グループを割り当て
 

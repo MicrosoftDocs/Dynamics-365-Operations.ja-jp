@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a4b1cd7a02cdf4c650af50199f4425eb53cef0a8
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544912"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595398"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け
 
@@ -34,11 +34,11 @@ ms.locfileid: "1544912"
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
 2. [コンフィギュレーション プロバイダー] をクリックします。
 3. [新規] をクリックします。
-    * プロバイダー レコードには固有の名称とURL があります。 このページの内容を確認し、Litware, Inc. (http://www.litware.com) の記録が既に存在している場合、この手順を省略します。  
+    * プロバイダー レコードには固有の名称とURL があります。 このページの内容を確認し、Litware, Inc. (https://www.litware.com) の記録が既に存在している場合、この手順を省略します。  
 4. [名前] フィールドに「Litware, Inc.」を入力します。
     * Litware, Inc.  
-5. [インターネット アドレス] フィールドに http://www.litware.com を入力します。
-    * http://www.litware.com  
+5. [インターネット アドレス] フィールドに https://www.litware.com を入力します。
+    * https://www.litware.com  
 6. [保存] をクリックします。
 7. ページを閉じます。
 

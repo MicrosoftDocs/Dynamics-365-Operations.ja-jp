@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: e90b7e533429149e3d175fb45e09f3a3ee86cc8e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 360511d7485046ae14748f22c2d4eeb026273b35
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537222"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595456"
 ---
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 
@@ -34,13 +34,16 @@ ms.locfileid: "1537222"
 ## <a name="before-you-begin"></a>準備
 開始する前に、環境には次のコンポーネントが含まれている必要があります。
 
-- 業務に合わせてコンフィギュレーションされた実行中の AX 2012 R3 のバージョン。 AX 2012 R3 のインストール方法の詳細については、[Microsoft Dynamics AX 2012 のインストール](http://technet.microsoft.com/library/fbe52b68-1294-4398-b233-f8ec37c6d531(AX.60).aspx)を参照してください。
+- 業務に合わせてコンフィギュレーションされた実行中の AX 2012 R3 のバージョン。 AX 2012 R3 のインストール方法の詳細については、[Microsoft Dynamics AX 2012 のインストール](https://technet.microsoft.com/library/fbe52b68-1294-4398-b233-f8ec37c6d531(AX.60).aspx)を参照してください。
 - 実行中のデータのインポート/エクスポート フレームワークのインスタンス。 データのインポート/エクスポート フレームワークをインストールする方法の詳細については、[データのインポート/エクスポート フレームワークをインストール (AX 2012)](./ax-2012/install-dixf.md) を参照してください。 
-  > [!IMPORTANT]
-  > データのインポート/エクスポート フレームワークへ接続するためには、構成マネージャー (ベータ) を有効にする DMFEntityExecutionStatusService および DMFService サービス グループを配置する必要があります。
+
+    > [!IMPORTANT]
+    > データのインポート/エクスポート フレームワークへ接続するためには、構成マネージャー (ベータ) を有効にする DMFEntityExecutionStatusService および DMFService サービス グループを配置する必要があります。
+
 - Lifecycle Services の AX 2012 R3 プロジェクトです。 
-  > [!WARNING]
-  > 環境間でコンフィギュレーションをコピーすることは破壊的な操作になります。 すべてのプロジェクト所有者は構成およびこれらの操作を実行する権限を持っています。 信頼されたユーザーのみがプロジェクト所有者として設定されていることを確認します。
+
+    > [!WARNING]
+    > 環境間でコンフィギュレーションをコピーすることは破壊的な操作になります。 すべてのプロジェクト所有者は構成およびこれらの操作を実行する権限を持っています。 信頼されたユーザーのみがプロジェクト所有者として設定されていることを確認します。
 
 ## <a name="create-data-importexport-framework-source-data-formats-in-ax-2012-r3"></a>AX 2012 R3 でのデータのインポート/エクスポート フレームワーク ソース データ形式の作成
 構成をエクスポートおよびインポートするすべての環境で構成を管理するには、Dynamics AX と CSV ソース データ形式の両方を作成する必要があります。
@@ -76,10 +79,12 @@ ms.locfileid: "1537222"
    | <strong>複数値の区切り</strong> |       ;        |
 
    ![構成マネージャーの DIXF 設定](./media/dixfconfigurationmanager.png)
+
 5. 構成のインポート先の環境で、この手順を繰り返します。
 
 ## <a name="install-and-configure-the-local-component-of-the-system-diagnostics-lifecycle-services"></a>システム診断 (Lifecycle Services) のローカル コンポーネントのインストールと構成
 構成をエクスポートする環境で、次の手順を実行します。 
+
 > [!IMPORTANT]
 > プロジェクトおよび環境のシステム診断のローカル コンポーネントを既にインストールしている場合、**プログラムの追加と削除**を使用し、アンインストールする必要があります。 検出されたインスタンスの数にかかわらず、環境ごとに 1 つの Microsoft Dynamics AX Application Object Server (AOS) だけが、コンフィギュレーションの管理と共に使用されます。
 
@@ -87,6 +92,7 @@ ms.locfileid: "1537222"
 2.  **開始** &gt; **Microsoft Dynamics AX Lifecycle Services 診断サービス検索の順にクリックします**。
 3.  **環境の検出**ウィンドウに、環境の名前と Microsoft SQL Server のインスタンスとデータベースの完全修飾名を入力します。 その後、[環境を検出] をクリックします。
 4.  探索を完了した後、**コンフィギュレーション管理 (ベータ)** セクションに値を入力し、**保存**をクリックして、**アップロード環境**をクリックします。
+
     <table>
     <colgroup>
     <col width="50%" />
@@ -102,20 +108,8 @@ ms.locfileid: "1537222"
     <tr class="odd">
     <td><span class="ui">コンフィギュレーションの上書きを有効にする</span></td>
     <td>指定した AOS インスタンスのコンフィギュレーションをコピーし、上書きできるようにするには、このオプションを選択します。
-    <div class="alert">
-    <table>
-    <thead>
-    <tr class="header">
-    <th><strong>注意 </strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>環境を完全に構成したときは、構成の上書きを無効にすることを強くお勧めします。</td>
-    </tr>
-    </tbody>
-    </table>
-    </div></td>
+    <p><strong>重要:</strong> 環境の設定が完了した際に、環境設定の上書きを無効にすることを強くお勧めします。</p>
+    </td>
     </tr>
     <tr class="even">
     <td><span class="ui">AOS インスタンス</span></td>
@@ -124,25 +118,14 @@ ms.locfileid: "1537222"
     <tr class="odd">
     <td><span class="ui">保存場所</span></td>
     <td>構成のローカルの格納場所を指定します。 AOS サービス アカウントとデータのインポート/エクスポート フレームワーク サービス アカウントには、この場所への書き込みアクセス権が必要です。
-    <div class="alert">
-    <table>
-    <thead>
-    <tr class="header">
-    <th><strong>重要</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>データ インポート/エクスポート フレームワークに使用されている同じディレクトリを使用することを強くお勧めします。共有ディレクトリには、インポートおよびエクスポートする内容によっては、機密データが含まれていることがあるので注意してください。 出来る限りの少数のユーザーが、AOS サービス アカウントおよびデータのインポート / エクスポート フレームワーク サービス アカウントに加えて、その場所にアクセスできることを確認します。</td>
-    </tr>
-    </tbody>
-    </table>
-    </div></td>
+    <p><strong>重要:</strong> データ インポート/エクスポート フレームワークに使用されているものと同じディレクトリを使用することを強く推奨します。インポートおよびエクスポートの内容によっては、共有ディレクトリに機密データが含まれていることがありますので注意してください。 出来る限りの少数のユーザーが、AOS サービス アカウントおよびデータのインポート / エクスポート フレームワーク サービス アカウントに加えて、その場所にアクセスできることを確認します。</p>
+    </td>
     </tr>
     </tbody>
     </table>
 
     ![構成マネージャーのシステム診断の検出](./media/systemdiagnosticconfigurationmanagerdiscoverysettings.png)
+
 5.  構成のインポート先の環境で、この手順を繰り返します。
 
 ## <a name="next-steps"></a>次のステップ

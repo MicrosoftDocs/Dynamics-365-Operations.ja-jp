@@ -15,12 +15,12 @@ ms.custom: 197063
 ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 3c34f2c23ce11fa79d0d37587114164b2f3f6385
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 31485cd75abf65e717f75f4d6f3b1f622a2b11eb
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537380"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552508"
 ---
 # <a name="add-methodologies-to-finance-and-operations-solutions"></a>Finance and Operations のソリューションに方法を追加
 

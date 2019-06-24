@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530273"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577983"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>販売時点管理 (POS) での注文通知の表示
 
@@ -68,7 +68,7 @@ ms.locfileid: "1530273"
 
 ![ボタン グリッド デザイナーでのライブ コンテンツ設定](./media/ButtonGridDesigner.png "ボタン グリッド デザイナーでのライブ コンテンツ設定")
 
-ボタンに通知カウントを表示するには、正しい画面レイアウトが更新されていることを確認する必要があります。 POS によって使用されている画面レイアウトを確認するには、右上隅の**設定**アイコンを選択し、**画面レイアウト ID** と**レイアウトの解像度**を確認します。 ここで Edge ブラウザを使用して、Dynamics 365 for Finance and Operations の**画面レイアウト**ページに移動し、上の**画面レイアウト ID** と**レイアウトの解像度**を見つけて、**ライブ コンテンツを有効化する**チェックボックスを選択します。 **小売 > 小売 IT > 配送スケジュール**に移動し、レイアウトの変更を同期するために 1090 (レジスター) ジョブを実行します。 
+ボタンに通知カウントを表示するには、正しい画面レイアウトが更新されていることを確認する必要があります。 POS によって使用されている画面レイアウトを確認するには、右上隅の**設定**アイコンを選択し、**画面レイアウト ID** と**レイアウトの解像度**を確認します。 ここで Edge ブラウザを使用して、Dynamics 365 for Finance and Operations の**画面レイアウト**ページに移動し、上の**画面レイアウト ID** と**レイアウトの解像度**を見つけて、**ライブ コンテンツを有効化する**チェックボックスを選択します。 **小売 \> 小売 IT \> 配送スケジュール** に移動し、レイアウトの変更を同期するために 1090 (レジスター) ジョブを実行します。
 
 ![POS で使用される画面レイアウトの検索](./media/Choose_screen_layout.png "画面レイアウトの検索")
 

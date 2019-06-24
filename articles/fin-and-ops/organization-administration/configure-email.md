@@ -3,7 +3,7 @@ title: 電子メールのコンフィギュレーションと送信
 description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d12f2733f211f81aec24f4367e7c69ff5c08f7f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 18059ead5dc34f3d562cebaaff3197f9671c5b41
+ms.sourcegitcommit: b2addd9bb23c46881508098264c5994b4258d7e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509627"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "1609142"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
@@ -102,7 +102,7 @@ Dynamics 365 for Finance and Operations では、管理者とユーザーの両�
 | フィールド                                                                  | 説明 |
 |------------------------------------------------------------------------|-------------|
 | Outlook などの電子メール アプリケーションを使用します                                      | 生成された電子メール (.eml) を持つを提供します。 |
-| Exchange 電子メール サーバーを使用します                                              | テナントに関連付けられている Exchange Online サーバーを使用します。 電子メールは、Exchange Webサービス (EWS) を使用して送信されます。 オンプレミス Exchange サーバーは、この時点では **Exchange** メール プロバイダーでサポートされていません、 オンプレミス Exchange サーバーは、**SMTP** メール プロバイダーで正常に動作します。 |
+| Exchange 電子メール サーバーを使用します                                              | テナントに関連付けられている Exchange Online サーバーを使用します。 電子メールは、Exchange Webサービス (EWS) を使用して送信されます。 オンプレミス Exchange サーバーは、この時点では **Exchange** メール プロバイダーでサポートされていません、 |
 | Microsoft Dynamics 365 for Finance and Operations 電子メール クライアントを使用します | **電子メール送信する**構成ダイアログ ボックスを開いて、結果を電子メールで SMTP 経由で送信します。 |
 | 今後このメッセージを表示しない                                                       | このフィールドが選択されていない場合は、次回に電子メールが送信されたときに最後に選択したオプションが使用され、ダイアログ ボックスが表示されません。 |
 

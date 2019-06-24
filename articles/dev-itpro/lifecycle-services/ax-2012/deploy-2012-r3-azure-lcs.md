@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 3da497c108db14765d2d5bdb35bfe325a908b68d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 595e05c48b63440e3ea7cb68719b11c6e54e8ff7
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506189"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544090"
 ---
 # <a name="deploy-ax-2012-r3-on-azure-by-using-lifecycle-services-lcs"></a>Lifecycle Services (LCS) を使用して Azure に Dynamics AX 2012 R3 を配置する
 

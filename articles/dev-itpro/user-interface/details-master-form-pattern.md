@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8f98af0dc024f34159205b2c6addbde9bdd59a3
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ae39826e9fa5e2ee017408d5d295e2a3f2613e20
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537595"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595509"
 ---
 # <a name="details-master-form-pattern"></a>詳細マスター フォーム パターン
 
@@ -245,7 +245,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 #### <a name="ax-2012-links"></a>AX 2012 リンク
--   [AX 2012 MSDN 詳細のフォーム](http://msdn.microsoft.com/EN-US/library/hh397318.aspx)
+-   [AX 2012 MSDN 詳細のフォーム](https://msdn.microsoft.com/library/hh397318.aspx)
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 

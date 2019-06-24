@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 9b373b6ae8a92912197d50f67de245e44006ce5d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: df6220a073a9c5b0d8015801ec46654fe802b3c7
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537233"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555254"
 ---
 # <a name="request-for-proposals-rfp-responses"></a>提案依頼 (RFP) の応答
 

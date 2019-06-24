@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b20feff6373f650091319ea526231aab6e7afbd7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8812aaf7b32edc1c21fbe16f7fc344c4b78f0e5c
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537305"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1557987"
 ---
 # <a name="lookup-module"></a>参照モジュール
 

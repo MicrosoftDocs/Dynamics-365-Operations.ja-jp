@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2e6792725dc9006b519a6b7a8bd30afe49e724e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fc20b0653558ad7391c1c768fa3fb65f120dec80
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551073"
 ---
 # <a name="f-classes-fieldbinding-to-formbuildanimatecontrol"></a>F クラス (FieldBinding から FormBuildAnimateControl)
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能または変更された機能について説明します。
+description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 manager: AnnBe
 ms.date: 02/21/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 22
-ms.openlocfilehash: b4bc5a465d286a882872e7733c8d2546d705a615
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fdec6bc92be2c2ced7c823fc0cb14c4bca3a4231
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1510912"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1545137"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-22-december-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能および変更された機能
 

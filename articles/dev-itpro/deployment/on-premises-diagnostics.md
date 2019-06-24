@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-ms.openlocfilehash: 893872268385b005d216c07a93e309fbd3894424
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 06e7388ccca731996b705ec70aa8367091cc5ab7
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537061"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595420"
 ---
 # <a name="on-premises-diagnostics"></a>オンプレミス診断
 
@@ -69,7 +69,7 @@ Elastic スタックを展開する場合、このトピックで説明されて
 このトピックでは、Elastic Stack が Finance and Operations のオンプレミス配置のために動作するために必要な設定、およびコンフィギュレーションの手順を Microsoft がどのように処理したかについて説明します。 Finance and Operations に関連していないガイダンスについては、Elastic.co のドキュメントを参照してください。
 
 ## <a name="install-and-configure-the-elastic-stack"></a>Elastic スタックのインストールと構成
-Winlogbeat を除くすべての Elastic スタックのホストされているコンポーネントはすべて Java 上で動作します。 テスト シナリオでは、Microsoft は最初に Elasticsearch、Logstash、または Kibana (つまり、すべてのオーケストレータ ノード) を実行する各ノードに、Java ランタイム環境 (JRE) 8 (64 ビット) の最新バージョンをダウンロードしてインストールしました。 [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html) から Java 8 を取得することができます。
+Winlogbeat を除くすべての Elastic スタックのホストされているコンポーネントはすべて Java 上で動作します。 テスト シナリオでは、Microsoft は最初に Elasticsearch、Logstash、または Kibana (つまり、すべてのオーケストレータ ノード) を実行する各ノードに、Java ランタイム環境 (JRE) 8 (64 ビット) の最新バージョンをダウンロードしてインストールしました。 [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html) から Java 8 を取得することができます。
 
 2018 年 6 月現在、Elastic スタックは Java 8 で実行します。 Java の新しいバージョンで実行しようとすると、すべてが動作しない可能性があります。
 

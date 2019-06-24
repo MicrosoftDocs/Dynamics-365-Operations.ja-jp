@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86cf5be96bce7b0e8682143421141a15338a6538
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9628ae5c9f5d98eb4652868e57710732afd4b8d1
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536974"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595414"
 ---
 # <a name="x-session-runtime-functions"></a>X++ セッション ランタイム関数
 
@@ -134,7 +134,7 @@ ms.locfileid: "1536974"
 
 ### <a name="remarks"></a>備考
 
-**getCurrentPartitionRecId** 関数に依存するコード例を参照するには、[[パーティションのフィルターを直接 Transact-SQL に含める方法](http://msdn.microsoft.com/library/5ce90a42-e862-464e-90bc-1eb16a8afd1a(AX.60).aspx)] を参照してください。
+**getCurrentPartitionRecId** 関数に依存するコード例を参照するには、[[パーティションのフィルターを直接 Transact-SQL に含める方法](https://msdn.microsoft.com/library/5ce90a42-e862-464e-90bc-1eb16a8afd1a(AX.60).aspx)] を参照してください。
 
 ### <a name="example"></a>例
 
@@ -267,7 +267,7 @@ ms.locfileid: "1536974"
 
 ### <a name="remarks"></a>備考
 
-この関数を使用すると、別のユーザーとしてコードを実行できます。 この機能はセキュリティ上の脅威です。 したがって、この関数は、[コード アクセス セキュリティ](http://msdn.microsoft.com/library/09299e91-5b73-4cf5-a17e-f1f39b6bae76(AX.60).aspx)で実行されます。 サーバー上でこの関数を呼び出すには、**RunAsPermission** クラスからのアクセス許可が必要です。 このアプリケーション プログラミング インターフェイス (API) を使用するたびに、脅威なモデル化とする必要があります。 セキュリティの脆弱性が見つかった場合は、この API への入力を検証します。 デバッガーは、**runAs** 関数を使用して呼び出されるメソッドにあるブレークポイントを無視することがあります。 **runAs** 関数として実行される X++ コードは、Microsoft .NET Framework の共通中間言語 (CIL) として実行する必要があります。 CIL が対象となる静的メソッドに対して生成されていない場合、メソッドが見つからないことを示すエラーメッセージが表示されます。 **PartitionKey** システムの型は、*partition* パラメーターの正確な型です。 **PartitionKey** は最大長が 8 文字の文字列です。
+この関数を使用すると、別のユーザーとしてコードを実行できます。 この機能はセキュリティ上の脅威です。 したがって、この関数は、[コード アクセス セキュリティ](https://msdn.microsoft.com/library/09299e91-5b73-4cf5-a17e-f1f39b6bae76(AX.60).aspx)で実行されます。 サーバー上でこの関数を呼び出すには、**RunAsPermission** クラスからのアクセス許可が必要です。 このアプリケーション プログラミング インターフェイス (API) を使用するたびに、脅威なモデル化とする必要があります。 セキュリティの脆弱性が見つかった場合は、この API への入力を検証します。 デバッガーは、**runAs** 関数を使用して呼び出されるメソッドにあるブレークポイントを無視することがあります。 **runAs** 関数として実行される X++ コードは、Microsoft .NET Framework の共通中間言語 (CIL) として実行する必要があります。 CIL が対象となる静的メソッドに対して生成されていない場合、メソッドが見つからないことを示すエラーメッセージが表示されます。 **PartitionKey** システムの型は、*partition* パラメーターの正確な型です。 **PartitionKey** は最大長が 8 文字の文字列です。
 
 ### <a name="example"></a>例
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 9a51d562d0343adee6415992f00feb09bfdbb2f8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 36ae8d1b6137091cc6051654c6a0ed6d0c4e92d8
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537283"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549735"
 ---
 # <a name="get-started-with-the-mobile-platform"></a>モバイル プラットフォームを使い始める
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df9585cfe2bc7ccc60dc69741994785869ba71b1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c9731ba47f449e037850c95a7873e1ae4551e2a9
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545928"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595526"
 ---
 # <a name="master-plans"></a>マスター プラン
 
@@ -51,7 +51,7 @@ ms.locfileid: "1545928"
 
 [補充設定](coverage-settings.md)
 
-[マスター スケジューリングの戦術的な計画と実施計画の分割](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
+[マスター スケジューリングの戦術的な計画と実施計画の分割](https://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
 [マスター プラン: 静的および動的マスター プランまたは 1 つの計画のどちらを使用するか。](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
 

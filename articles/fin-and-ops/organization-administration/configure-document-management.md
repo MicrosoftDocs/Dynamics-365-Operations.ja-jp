@@ -3,7 +3,7 @@ title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 05/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6f0552df9e3cce3cd2c44390a5b6feef39c4e1e0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d30e451799d012a8c7eab350aa524bc0870190d6
+ms.sourcegitcommit: 1bd8d0911a64d56cedaa60a9e5a58f9e13b8c1cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1507508"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1616141"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -135,10 +135,34 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 
 オンプレミス環境の場合、添付ファイルの Azure Blob ストレージ プロバイダーはファイル フォルダー ストレージ プロバイダーに置き換えられ、添付ファイルはクラウドに格納される代わりにオンプレミスに保存されます。 したがって、添付ファイルの既定の保管場所はファイル フォルダとなります。
 
-### <a name="if-i-accidentally-delete-an-attachment-stored-in-azure-blob-storage-can-it-be-restored"></a>誤ってAzureブロブ ストレージに格納されている添付ファイルを削除した場合、復元できますか。
+### <a name="if-i-accidentally-delete-an-attachment-stored-in-azure-blob-storage-can-it-be-restored"></a>誤って Azure Blob Storage に格納されている添付ファイルを削除した場合、復元できますか。
 
-Azureブロブ ストレージに格納されている添付ファイルが誤って削除された場合は、完全に削除されたことになり、ファイルへの参照情報も削除されてしまうため、復元や修復することができません。
+Azure Blob Storage に格納されている添付ファイルが誤って削除された場合は、完全に削除されたことになり、ファイルへの参照情報も削除されてしまうため、復元や修復することができません。
 
 ### <a name="is-the-database-information-about-attachments-stored-separately-from-the-attachments-themselves"></a>添付ファイルに関するデータベースの情報は、添付ファイルそのものとは別の場所に保存されていますか？
 
 添付ファイルの情報はDocuRefテーブルおよびDocuViewテーブルに格納されています。 DocuRefテーブルは、主に添付ファイルに関する情報を保持しています。 DocuRefの情報は、DocuViewレコードに関連付けられている情報と連携しています。 DocuRefテーブルは、添付ファイルを保持しています。 ファイルはデータベースの外に保存されるため、バックアップから復元するなどのデータベース上の操作は添付ファイルに関するデータベース情報のみに作用し、添付ファイルそのものには作用しません。
+
+### <a name="can-attachments-be-stored-in-the-database"></a>添付ファイルをデータベースに保存できますか。
+
+一連番号 既定では、添付ファイルは Azure Blob Storage に格納されます。
+
+### <a name="what-are-the-main-differences-between-azure-blob-storage-and-database-storage"></a>Azure Blob Storage とデータベース ストレージの主な相違点は何ですか。
+
+データベース ストレージは Azure SQL データベースです。 ファイル ストレージは Azure Blob Storage です。 Azure Blob Storage はよりシンプルで安価です。
+
+### <a name="how-much-storage-do-we-get-for-azure-blob-storage"></a>Azure Blob Storage にどのくらいストレージを確保できますか。
+
+詳細については [ライセンス ガイド](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf) を参照してください。 現在、40 ギガバイト (GB) のストレージを使用できます。
+
+### <a name="what-is-the-cost-for-additional-storage"></a>追加ストレージの費用はいくらですか。
+
+追加ストレージのコストは変動しますが [標準の Azure ストレージ費用](https://azure.microsoft.com/pricing/details/storage/page-blobs/) と同様です。 すなわち、費用はおよそ GB あたり $0.05 です。
+
+### <a name="how-can-we-learn-how-much-storage-weve-already-used"></a>既に使用しているストレージの量を確認する方法を教えてください。
+
+データベースやファイル ストレージの制限に近づいた場合は、積極的なコミュニケーションが必要になります。 ただし、Microsoft Dynamics Lifecycle Services (LCS) は一部の情報を提供し、追加情報のサポート要求をログに記録できます。 
+
+### <a name="is-there-an-option-to-export-all-document-attachments-from-the-system"></a>すべてのドキュメントの添付ファイルをシステムからエクスポートするか選択できますか。
+
+添付ファイルをエクスポートできますが、標準の添付ファイル エンティティが存在しないため、その機能は標準の機能ではありません。 特定のビジネス ドキュメントやレコードに対する添付ファイルを提供するエンティティを作成する必要があります。

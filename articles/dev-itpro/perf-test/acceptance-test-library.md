@@ -3,7 +3,7 @@ title: 承認テスト ライブラリ
 description: このトピックでは承認テスト ライブラリに関する情報を提供します。
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,17 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 126d2624d6f7df48bc5a5324b11b57ad3879b713
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fdb87cf1e56aaf27d4b3ff5c551735dcb71473cd
+ms.sourcegitcommit: 2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537289"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "1608151"
 ---
 # <a name="acceptance-test-library"></a>承認テスト ライブラリ
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 承認テスト ライブラリ (ATL) は、X++ テスト ライブラリであり、以下の利点を提供します:
 
@@ -41,6 +40,9 @@ ms.locfileid: "1537289"
 ## <a name="example-of-a-test-that-is-written-in-atl"></a>ATL で記述されたテストの例
 
 ```
+// Create the data root node
+var data = AtlDataRootNode::construct();
+
 // Get a reference to a well-known warehouse 
 var warehouse = data.invent().warehouses().default();
  

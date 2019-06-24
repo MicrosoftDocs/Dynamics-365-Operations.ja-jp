@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e4a876b3a41c92d6247dde581bfb164d3ad9958e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ce8d5b7475e9b229235badd7febbfc7e3f7e1050
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550885"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595563"
 ---
 # <a name="import-postal-codes-for-japan"></a>日本の郵便番号のインポート
 
@@ -31,7 +31,7 @@ ms.locfileid: "1550885"
 
 ## <a name="prepare-the-zip-code-file"></a>郵便番号コード ファイルを準備します。
 
-1. 日本郵便局のホーム ページからコンマ区切り値 (CSV) ファイルをダウンロードします: <http://www.post.japanpost.jp/zipcode/download.html>
+1. [日本郵便局のホーム ページ](https://www.post.japanpost.jp/zipcode/download.html) からコンマ区切り値 (CSV) ファイルをダウンロードします
 2. ファイルを編集するために開き、列見出しのために次の行を追加します。
 
         LocalAuthCode,OldZipCode,ZipCode,PrefectureName,KanaCity,KanaStreetName,State,City,StreetName,MoreZipCodeFlag,SmallerAreaFlag,StreetChomeFlag,MoreStreetFlag,UpdateFlag,Reason

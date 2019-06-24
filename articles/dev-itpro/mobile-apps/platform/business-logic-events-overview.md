@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 0107a49e22b03492421b00296df2cafb4c29a8cd
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9b6ee5b1187f24013dfde73a1d5339018a3ff2fa
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537337"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560607"
 ---
 # <a name="business-logic-events"></a>ビジネス ロジック イベント
 

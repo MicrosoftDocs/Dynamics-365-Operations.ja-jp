@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: dmakimo
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9c25aed4d5dcfcad375bffad01c42354f9c2422f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e0b95c3f5d4a822100fb4343bf50ea79780faaaa
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537512"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549011"
 ---
 # <a name="support-for-upgrade-and-n-1-for-india"></a>インドにおけるアップグレードおよび N-1 のサポート
 

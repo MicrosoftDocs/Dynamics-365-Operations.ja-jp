@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: CGarty
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 4821ab52d0da6cb7a05dda9471bddba7f1ce2a0b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ab532f76f8c9287e25f0fcf7f8141e79a37f731f
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537389"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554541"
 ---
 # <a name="relax-model-restrictions-to-refactor-overlayering-into-extensions"></a>オーバレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
 

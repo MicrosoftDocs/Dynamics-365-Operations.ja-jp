@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-18-05
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.openlocfilehash: e9ef78c31be0fc0f043506931d68a7424d82589f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 35182afafd3649b9669564b289cdfc5a39975e20
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537561"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556198"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 

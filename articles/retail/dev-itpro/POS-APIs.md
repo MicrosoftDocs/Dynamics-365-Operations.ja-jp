@@ -3,7 +3,7 @@ title: Retail POS API
 description: このトピックでは、使用可能な POS API の一覧とそれらにアクセスする方法を示します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 12/03/2018
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: decdbad7f9670f26a02421576be8ba88e289f5f3
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 092253de911b724945760facf422d966e742f561
+ms.sourcegitcommit: 33e5f728a70d0546975f91010148dc4c57bf3af3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537574"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "1606548"
 ---
 # <a name="retail-pos-apis"></a>Retail POS API
 [!include [banner](../includes/banner.md)]
@@ -376,6 +376,8 @@ currentCart = getCurrentCartClientResponse.data.result;
 | RegisterPrintReceiptCopyEventRequest             |
 | MarkAsPickedServiceRequest                       |
 | PrintPackingSlipClientRequest                    |
+| PickUpCustomerOrderLinesClientRequest            |
+
 
 ### <a name="shifts"></a>シフト
 

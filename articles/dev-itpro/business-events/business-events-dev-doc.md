@@ -3,7 +3,7 @@ title: ビジネス イベント開発者ドキュメント
 description: このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/24/2019
+ms.date: 05/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 7f7ccbee6dbf60a29de4b107277d2d655bba1e3a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b8cc984908e6acfcb65684234337c67de23e1411
+ms.sourcegitcommit: f7e1720ffa3e34c787ca0f93d561cb75cbbb540a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505431"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "1605761"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -593,6 +593,236 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 }
 ```
 
-## <a name="summary"></a>集計
+## <a name="extending-filters-to-have-custom-fields-if-supported-by-the-middleware"></a>カスタム フィールドを持つようにフィルターを拡張する (ミドルウェアによってサポートされている場合)
 
-標準ビジネス イベント契約を補うビジネス イベント契約を実装し、 **buildContract** メソッドの実装をラップするためにコマンド チェーン (CoC) を使用する拡張クラスを実装することにより、ビジネス イベントのペイロードを容易に拡張することができます。
+一部のミドルウェア システムはイベントのフィルター処理を許可します。 たとえば、Azure Service Bus にはキーと値のペアを設定できるプロパティ バッグがあります。 これらのキーと値のペアは、Azure Service Bus のキューやトピックからの読み込み時にイベントをフィルター処理するために使用できます。 また、Azure イベント グリッドには件名、イベント タイプ、ID などのフィルター処理されたメッセージ プロパティがあります。 さまざまなシステムに対してこれらの異なるプロパティをサポートするために、ビジネス イベント フレームワークは PayloadContext と呼ばれる概念を使用しており、さまざまなイベント システムによるフィルター処理に対してカスタム フィールドを含むように拡張できます。
+
+### <a name="payload-context"></a>ペイロード コンテキスト
+
+ビジネス イベント フレームワークは *ペイロード コンテキスト* の概念をサポートしており、フレームワークによって送信されたメッセージをペイロードに関するコンテキストで修飾する手段を提供します。 シナリオによっては、エンドポイントにメッセージを送信するときに追加のコンテキストが必要になることがあります。そのため、フレームワークにはコンテキストの上書きやアダプタのカスタマイズができるフックポイントがあります。
+
+### <a name="adding-a-custom-payload-context"></a>カスタム ペイロード コンテキストの追加
+
+カスタム ペイロード コンテキストは BusinessEventsCommitLogPayloadContext クラスから拡張する必要があります。
+
+```
+class CustomCommitLogPayloadContext extends
+BusinessEventsCommitLogPayloadContext
+
+{
+
+private utcdatetime eventTime;
+
+public utcdatetime parmEventTime(utcdatetime \_eventTime = eventTime)
+
+{
+
+eventTime = \_eventTime;
+
+return eventTime;
+
+}
+
+}  
+```
+
+### <a name="constructing-the-custom-payload-context"></a>カスタム ペイロード コンテキストの構築
+
+新しいペイロード コンテキスト タイプを作成するには、BusinessEventsSender.buildPayloadContext メソッドに対してコマンド チェーン (CoC) 拡張機能を記述する必要があります。
+
+```
+[ExtensionOf(classStr(BusinessEventsSender))]
+
+public final class CustomPayloadContextBusinessEventsSender_Extension
+
+{
+
+protected BusinessEventsCommitLogPayloadContext
+buildPayloadContext(BusinessEventsCommitLogEntry \_commitLogEntry)
+
+{
+
+BusinessEventsCommitLogPayloadContext payloadContext = next
+buildPayloadContext(_commitLogEntry);
+
+CustomCommitLogPayloadContext customPayloadContext = new
+CustomCommitLogPayloadContext();
+
+customPayloadContext.initFromBusinessEventsCommitLogEntry(_commitLogEntry);
+
+customPayloadContext.parmEventTime(_commitLogEntry.parmEventTime());
+
+return customPayloadContext;
+
+}
+
+}  
+```
+
+### <a name="consuming-the-custom-payload-context-from-an-adapter"></a>アダプターからカスタム ペイロード コンテキストを使用する
+
+ペイロード コンテキストを使用するアダプターは、CoC メソッドを公開して新しいペイロード コンテキストを使用できるように記述されます。 次の例では、サービス バス アダプターの一般的なプロパティ バッグを持ち、サービス バスの消費者によってフィルター処理できるサービス バス アダプターの外観について説明します。
+
+BusinessEventsServiceBusAdapter には addProperties という CoC メソッドがあります。
+
+```
+[ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
+
+public final class CustomBusinessEventsServiceBusAdapter_Extension
+
+{
+
+protected void addProperties(BrokeredMessage \_message,
+BusinessEventsEndpointPayloadContext \_context)
+
+{
+
+if (_context is CustomCommitLogPayloadContext)
+
+{
+
+CustomCommitLogPayloadContext customPayloadContext = \_context as
+CustomCommitLogPayloadContext;
+
+var propertyBag = \_message.Properties;
+
+propertyBag.Add('EventId', customPayloadContext.parmEventId());
+
+propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
+
+*// Convert the enum to string to be able to serialize the property.*
+
+propertyBag.Add('BusinessEventCategory', enum2Symbol(enumNum(ModuleAxapta),
+customPayloadContext.parmBusinessEventCategory()));
+
+propertyBag.Add('LegalEntity', customPayloadContext.parmLegalEntity());
+
+propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
+
+}
+
+}
+
+}  
+```
+
+## <a name="adding-a-custom-endpoint-type"></a>カスタム エンドポイント タイプの追加
+ビジネス イベント フレームワークは出荷時のものに加え、新しいエンドポイント タイプの追加をサポートしています。 この方法の例は以下の説明を参照してください。
+
+### <a name="add-new-endpoint-type"></a>新しいエンドポイント タイプの追加
+
+各エンドポイント タイプは、列挙 BusinessEventsEndpointType によって表されます。 新しいエンドポイントの追加は、次のセクションで示すように、この列挙を拡張して開始されます。
+
+![ビジネス イベントのエンドポイント](../media/customendpoint1.png)
+
+### <a name="add-new-endpoint-table-to-the-hierarchy"></a>新しいエンドポイント テーブルを階層に追加します
+
+すべてのエンドポイント データが階層テーブルに保管され、そのルートは BusinessEventsEndpoint です。 新しいエンドポイント テーブルは、サポート継承プロパティ = Yes、拡張プロパティ = “BusinessEventsEndpoint” (または BusinessEventsEndpoint 階層内の他の任意のエンドポイント) を設定して、このルート テーブルを拡張する必要があります。
+
+![ビジネス イベントのエンドポイント](../media/customendpoint2.png)
+
+その後、新しいテーブルに、このエンドポイントとの初期化とコード内での通信に必要なカスタム フィールドの定義が保持されます。 競合の可能性を回避するには、フィールド名を属している特定のエンドポイントに対して限定する必要があります。 たとえば、2 つのエンドポイントは "URL" フィールドの概念を持つことができますが、それらを区別するために "CustomURL" のようなカスタム エンドポイントに固有の名前にする必要があります。
+
+![ビジネス イベントのエンドポイント](../media/customendpoint3.png)
+
+### <a name="add-new-endpointadapter-class-that-implements-ibusinesseventsendpoint"></a>IBusinessEventsEndpoint を実装する新しい EndpointAdapter クラスを追加します
+
+新しいエンドポイント アダプター クラスでは IBusinessEventsEndpoint インターフェイスを実装し、BusinessEventsEndpointAttribute 属性で修飾する必要があります。
+
+```
+
+[BusinessEventsEndpoint(BusinessEventsEndpointType::CustomEndpoint)]
+
+public class CustomEndpointAdapter implements IBusinessEventsEndpoint
+
+{  
+```
+
+初期化メソッドを実装して、渡された BusinessEventsEndpoint バッファーのタイプを確認し、次に示すように、この新しいアダプターに対して適切な型である場合は初期化する必要があります。
+
+```
+
+if (!(_endpoint is CustomBusinessEventsEndpoint))
+
+{
+
+BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
+\_endpoint.RecId);
+
+}
+
+CustomBusinessEventsEndpoint customBusinessEventsEndpoint = \_endpoint as
+CustomBusinessEventsEndpoint;
+
+customField = customBusinessEventsEndpoint.CustomField;
+
+if (!customField)
+
+{
+
+throw warning(strFmt("\@BusinessEvents:MissingAdapterConstructorParameter",
+classStr(CustomEndpointAdapter), varStr(customField)));
+
+}
+
+```
+
+### <a name="extend-the-endpointconfiguration-form"></a>EndpointConfiguration フォームの拡張
+
+カスタム フィールド入力を保持するには FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ の下に新しいグループ コントロールを追加します。
+
+![ビジネス イベントのエンドポイント](../media/customendpoint4.png)
+
+カスタム フィールドの入力は、前の手順で作成された新しいテーブルとフィールドにバインドする必要があります。 次に示すように、BusinessEventsEndpointConfiguration フォームの getConcreteType と showOtherFields メソッドを拡張するクラス拡張機能を作成します。
+
+![ビジネス イベントのエンドポイント](../media/customendpoint5.png)
+
+```
+
+[ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]
+
+final public class CustomBusinessEventsEndpointConfiguration_Extension
+
+{
+
+public TableName getConcreteTableType(BusinessEventsEndpointType \_endpointType)
+
+{
+
+TableName tableName = next getConcreteTableType(_endpointType);
+
+if (_endpointType == BusinessEventsEndpointType::CustomEndpoint)
+
+{
+
+tableName = tableStr(CustomBusinessEventsEndpoint);
+
+}
+
+return tableName;
+
+}
+
+public void showOtherFields()
+
+{
+
+next showOtherFields();
+
+BusinessEventsEndpointType selection =
+any2Enum(EndpointTypeSelection.selection());
+
+if (selection == BusinessEventsEndpointType::CustomEndpoint)
+
+{
+
+this.control(this.controlId(formControlStr(BusinessEventsEndpointConfiguration,
+CustomFields))).visible(true);
+
+}
+
+}
+
+}
+
+```

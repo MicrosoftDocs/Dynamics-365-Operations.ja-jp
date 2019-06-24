@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 97c09131d964a7a9d1affc5cd03696e4581b0e0d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5eb916a10a8751ccd51b2282ec3af1d44a6d5fa9
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506049"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554376"
 ---
 # <a name="cacheservice-type"></a>CacheService タイプ
 

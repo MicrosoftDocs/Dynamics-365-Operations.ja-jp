@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518442"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577798"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>PowerApps と Microsoft Flow を使用した Talent の拡張 - シナリオ例
 
@@ -115,7 +115,7 @@ LinkedIn との統合を有効にすると、自動的に LinkedIn の人材プ�
 
 この PowerApps アプリは多対多リレーションシップを使用するため、多対多リレーションシップを持つレコードを抽出する必要がある他のシナリオのテンプレートとして使用できます。
 
-**人材プールを扱う管理コンソール**テンプレートをダウンロードするには、Microsoft Download Center で[人材プールを扱う管理コンソール](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) へ移動します。
+**人材プールを扱う管理コンソール**テンプレートをダウンロードするには、Microsoft Download Center で[人材プールを扱う管理コンソール](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) へ移動します。
 
 ## <a name="additional-resources"></a>追加リソース
 

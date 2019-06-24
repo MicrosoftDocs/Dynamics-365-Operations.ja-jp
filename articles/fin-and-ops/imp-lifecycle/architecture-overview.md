@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca848cc0849bd65019ed02c58c52bab87a4322bc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d380aaeed728fd2671669af7bf54636682c690e1
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1507997"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561630"
 ---
 # <a name="finance-and-operations-architecture"></a>Finance and Operations のアーキテクチャ
 

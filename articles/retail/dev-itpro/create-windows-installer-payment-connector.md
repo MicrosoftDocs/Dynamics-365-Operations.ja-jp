@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4985456b374aa82b564b1b96993d3050accf346
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5e36c1085d708342490a09bdd4ad88379011e4f9
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537577"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556199"
 ---
 # <a name="create-windows-installers-for-payment-connectors"></a>支払コネクタ用の Windows インストーラーの作成
 

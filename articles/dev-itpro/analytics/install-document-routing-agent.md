@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6f8fdaf6d026161ef03aef53c7331e42ed27d17
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 91a6765712132ae290ae0068b5470d2c8dbc99ed
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1503881"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1553801"
 ---
 # <a name="install-the-document-routing-agent-to-enable-network-printing"></a>ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 
@@ -37,7 +37,7 @@ ms.locfileid: "1503881"
 - クライアント内管理ページを使用して、特定の会社のためにネットワーク プリンターを有効にすることができます。
 - ネットワーク印刷リソースへのアクセスには、Active Directory Domain Services (AD DS) 認証が必要です。
 - ドキュメント回覧エージェント (DRA) をインストールする場合は、管理者ユーザーとしてログインしていることを確認してください。
-- DRA を構成するために使用される Microsoft Azure Active Directory (Azure AD) アカウントには、Azure テナントと同じドメインを共有する必要があります。
+- DRA を構成するために使用される Microsoft Azure Active Directory (Azure AD) アカウントには、Azure テナントと同じドメインを共有する必要があります。
 - DRA には、クライアント上に .NET 4.62 以降と Adobe Acrobat Reader が必要です。
 - クライアントは、Windows 8.1、Windows 10、Microsoft Windows Server 2012 R2、または Microsoft Windows Server 2016 でのみサポートされています。
 
@@ -77,13 +77,13 @@ Finance and Operations アプリケーションは、ドキュメント回覧エ
 
     - **アプリケーション ID** - アプリケーション固有の ID で、自動的に入力されます。
     - **Finance and Operations URL** – Finance and Operations アプリケーションのベース URL。
-    - **Azure AD テナント** - Azure AD のドメイン名。
+    - **Azure AD テナント** - Azure AD のドメイン名。
 
 5. **OK** をクリックします。
 6. **サインイン**をクリックしてアカウントにサインインします。
 
     > [!NOTE]
-    > アカウントは、Finance and Operations アプリケーションに関連付けられている Azure AD と同じドメインを共有する必要があります。 ドキュメント回覧エージェントで、ドキュメントを処理する準備が整いました。
+    > アカウントは、Finance and Operations アプリケーションに関連付けられている Azure AD と同じドメインを共有する必要があります。 ドキュメント回覧エージェントで、ドキュメントを処理する準備が整いました。
 
 正常にサインインした後、**プリンター** ボタンがツールバーに表示されます。
 

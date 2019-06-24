@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30
-ms.openlocfilehash: a257e71f16739eb41449ea77783e142f3f37be26
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 88178c23103082cce1dc06a5082ceeb9aee63805
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505060"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564320"
 ---
 # <a name="retail-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できる小売機能
 

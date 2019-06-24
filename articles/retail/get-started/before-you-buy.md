@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: c130d54550cd21115e2fd3df80c8e732385dcfca
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: dfd7ed8b8884f9497daa1526c726c8c78720c711
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512540"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595301"
 ---
 # <a name="before-you-buy-retail"></a>Retail を購入する前に
 
@@ -64,7 +64,7 @@ Microsoft は柔軟性の高い、業界をリードするサポート、サー�
 詳細については、次をご覧ください。
 
 - [Dynamics 365 サポート](https://www.microsoft.com/dynamics365/support)
-- [福利厚生をサポートする Microsoft Dynamics  クラウド サービスのクイック スタート ガイド](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
+- [福利厚生をサポートする Microsoft Dynamics  クラウド サービスのクイック スタート ガイド](https://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
 
 ## <a name="step-3-learn-about-fasttrack-and-plan-your-deployment"></a>手順 3: FastTrack について学び、展開を計画する
 

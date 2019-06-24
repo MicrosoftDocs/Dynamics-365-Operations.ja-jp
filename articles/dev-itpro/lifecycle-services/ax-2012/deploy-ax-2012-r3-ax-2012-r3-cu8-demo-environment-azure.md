@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 7577969614f320a9124d2bc2dc757d9c6efd49d7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 398a1942d9e45dfb108bc7fceb6346e8c68e7ea4
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506229"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555287"
 ---
 # <a name="deploy-ax-2012-r3-or-ax-2012-r3-cu8-demo-environments-on-azure"></a>Azure に AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置する
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4f5c7e1a9ae214b00ef99f3db8e9bc4ea274ec2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 0ab30d1c679058188ef073b993a1c65f4eb5ad63
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537116"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595468"
 ---
 # <a name="help-prevent-long-running-reports-from-timing-out"></a>実行時間の長いレポートがタイムアウトしないようにする
 
@@ -33,7 +33,7 @@ ms.locfileid: "1537116"
 ページ設定されたレポートおよびドキュメントは、Microsoft SQL Server Reporting Services を使用して生成されます。 Reporting Services は、Windows Communication Foundation (WCF) を使って AOS と通信するカスタム拡張機能を使うことにより、Application Object Server (AOS) からレポート データを取得します。 データセットのサイズと生成されるレポートの複雑さは、レポートの表示に必要な時間に影響する可能性があります。 また、さまざまなタイムアウトおよびその他のしきい値に達すると、レポートの生成が失敗する可能性があります。 展開におけるサービスのタイムアウトは固定されており、対話型の接続を 10 分に制限します。 このサービスのタイムアウト制限を超えるデータ セット生成プロセスは完了しません。 この記事では、実行時間の長いレポートをサポートするための拡張機能について説明します。 これらの拡張機能は、プロセスが 10 分のサービス タイム アウト制限を超えていても長時間実行されるレポートを生成できるようにします。
 
 ## <a name="preprocess-the-data-source"></a>データ ソースの前処理
-レポートでレポートのデータ プロバイダー (RDP) を使用してデータを取得している場合、レポートは、事前処理 RDP クラスをデータ ソースとして使用するために変更される必要があります。 この方法では、処理ロジックが Reporting Services に対して呼び出しが行われる前に呼び出されます。 RDP クラスの詳細については、[レポート データにアクセスするレポートのデータ プロバイダー クラスを使用する](http://technet.microsoft.com/library/66667d57-37b1-48a8-90a1-ab8231698463(AX.60).aspx) および [レポートのプログラム ガイド](http://technet.microsoft.com/library/1a6cb21f-e665-45ef-8bf7-4df31e6ca0b7(AX.60).aspx) を参照してください。
+レポートでレポートのデータ プロバイダー (RDP) を使用してデータを取得している場合、レポートは、事前処理 RDP クラスをデータ ソースとして使用するために変更される必要があります。 この方法では、処理ロジックが Reporting Services に対して呼び出しが行われる前に呼び出されます。 RDP クラスの詳細については、[レポート データにアクセスするレポートのデータ プロバイダー クラスを使用する](https://technet.microsoft.com/library/66667d57-37b1-48a8-90a1-ab8231698463(AX.60).aspx) および [レポートのプログラム ガイド](https://technet.microsoft.com/library/1a6cb21f-e665-45ef-8bf7-4df31e6ca0b7(AX.60).aspx) を参照してください。
 
 [![レポート タイムアウト](./media/report-timeouts.png)](./media/report-timeouts.png)
 

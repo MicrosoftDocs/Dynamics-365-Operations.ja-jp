@@ -227,8 +227,9 @@
             - name: X クラス
               href: dev-ref/x-classes.md
     - name: 拡張性
-      href: extensibility/extensibility-home-page.md
       items:
+        - name: 拡張機能のホーム ページ
+          href: extensibility/extensibility-home-page.md
         - name: 概要と使用開始
           items:
             - name: アプリケーション機能拡張計画
@@ -245,36 +246,38 @@
               href: extensibility/customization-overlayering-extensions.md
         - name: 新機能
           items:
-            - name: 拡張機能の変更 (2017 年 7 月)
-              href: extensibility/changes-july-2017.md
-            - name: バージョン 7.3 の拡張機能の変更
-              href: extensibility/extensibility-changes-73.md
-            - name: バージョン 8.0 の拡張機能の変更
-              href: extensibility/changes-80.md
-            - name: 拡張機能の変更 (バージョン 8.0.1)
-              href: extensibility/extensibility-changes-801.md
-            - name: 拡張機能の変更 (バージョン 8.0.2)
-              href: extensibility/extensibility-changes-802.md
-            - name: 拡張機能の変更 (バージョン 8.0.3)
-              href: extensibility/extensibility-changes-803.md
-            - name: 拡張機能の変更 (バージョン 8.0.4)
-              href: extensibility/extensibility-changes-804.md
-            - name: 拡張機能の変更 (バージョン 8.1)
-              href: extensibility/extensibility-changes-81.md
-            - name: 拡張機能の変更 (バージョン 8.1.1)
-              href: extensibility/extensibility-changes-811.md
-            - name: 拡張機能の変更 (バージョン 8.1.2)
-              href: extensibility/extensibility-changes-812.md
-            - name: 拡張機能の変更 (バージョン 8.1.3)
-              href: extensibility/extensibility-changes-813.md
-            - name: 拡張機能の変更 (バージョン 10.0)
-              href: extensibility/extensibility-changes-10.md
-            - name: 拡張機能の変更 (バージョン 10.0.1)
-              href: extensibility/extensibility-changes-10-1.md
-            - name: 拡張機能の変更 (バージョン 10.0.2)
-              href: extensibility/extensibility-changes-10-2.md
+            - name: 拡張性の新機能および変更された機能
+              href: extensibility/extensibility-new.md
             - name: 拡張機能の変更 (バージョン 10.0.3)
               href: extensibility/extensibility-changes-10-3.md
+            - name: 拡張機能の変更 (バージョン 10.0.2)
+              href: extensibility/extensibility-changes-10-2.md
+            - name: 拡張機能の変更 (バージョン 10.0.1)
+              href: extensibility/extensibility-changes-10-1.md
+            - name: 拡張機能の変更 (バージョン 10.0)
+              href: extensibility/extensibility-changes-10.md
+            - name: 拡張機能の変更 (バージョン 8.1.3)
+              href: extensibility/extensibility-changes-813.md
+            - name: 拡張機能の変更 (バージョン 8.1.2)
+              href: extensibility/extensibility-changes-812.md
+            - name: 拡張機能の変更 (バージョン 8.1.1)
+              href: extensibility/extensibility-changes-811.md
+            - name: 拡張機能の変更 (バージョン 8.1)
+              href: extensibility/extensibility-changes-81.md
+            - name: 拡張機能の変更 (バージョン 8.0.4)
+              href: extensibility/extensibility-changes-804.md
+            - name: 拡張機能の変更 (バージョン 8.0.3)
+              href: extensibility/extensibility-changes-803.md
+            - name: 拡張機能の変更 (バージョン 8.0.2)
+              href: extensibility/extensibility-changes-802.md
+            - name: 拡張機能の変更 (バージョン 8.0.1)
+              href: extensibility/extensibility-changes-801.md
+            - name: バージョン 8.0 の拡張機能の変更
+              href: extensibility/changes-80.md
+            - name: バージョン 7.3 の拡張機能の変更
+              href: extensibility/extensibility-changes-73.md
+            - name: 拡張機能の変更 (2017 年 7 月)
+              href: extensibility/changes-july-2017.md
         - name: 基本
           items:
             - name: 侵入的なカスタマイズ
@@ -361,9 +364,15 @@
       items:
         - name: Trace Parser を使用したトレースの実行
           href: perf-test/trace-trace-tutorial.md
-        - name: パフォーマンス SDK および Visual Studio Online を介したマルチ ユーザー テスト
-          href: perf-test/perfsdk-tutorial.md
-        - name: オンプレミスの環境でのパフォーマンス SDK およびマルチ ユーザー テスト
+        - name: タスク レコーダーおよびパフォーマンス SDK を使用したシングル ユーザー テスト
+          href: perf-test/single-user-test-perf-sdk.md
+        - name: パフォーマンス SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト
+          href: perf-test/multi-user-testing-local-test-controller.md
+        - name: パフォーマンス SDK および Azure DevOps を使用したマルチ ユーザー テスト
+          href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+        - name: パフォーマンス SDK を使用したシングル ユーザーまたはマルチ ユーザー テストのトラブルシューティング ガイド
+          href: perf-test/troubleshoot-perf-sdk-user-testing.md
+        - name: オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
           href: perf-test/perfsdk-tutorial-lbd.md
         - name: Trace Parser を使用した問題点の診断およびパフォーマンスの分析
           href: perf-test/trace-parser.md
@@ -922,6 +931,8 @@
           href: financial/create-exchange-rate-providers.md
         - name: Finance and Operations バージョン 8.0 を使用した為替レート プロバイダーの作成
           href: financial/create-exchange-rate-8.md
+    - name: 'CustTrans::settleTransaction を使用したトランザクションの決済'
+      href: financial/settletransact-obsolete.md
 - name: サプライ チェーンの開発
   items:
     - name: ガント コントロール作成ガイド
@@ -1076,7 +1087,7 @@
       items:
         - name: コード移行の準備
           href: migration-upgrade/prepare-migration.md
-        - name: Azure DevOps マッピングの構成
+        - name: Azure DevOps マッピングのコンフィギュレーション
           href: migration-upgrade/configure-vso-solution.md
         - name: 分割されたモデル
           href: dev-tools/model-split.md

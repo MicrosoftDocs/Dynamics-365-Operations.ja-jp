@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 151b8936a46a1945e98bfe0ed040ca50c93db4b0
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544452"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595443"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER 形式の新しい基準バージョンを採用してその形式をアップグレードする
 
@@ -36,7 +36,7 @@ ms.locfileid: "1544452"
 
 ## <a name="select-format-configuration-for-customization"></a>カスタマイズする形式のコンフィギュレーションを選択
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
-    * この例では、サンプル会社 Litware, Inc. (http://www.litware.com) が特定の国に対する電子支払の形式コンフィギュレーションをサポートするコンフィギュレーション プロバイダーとして機能します。    サンプル会社 Proseware, Inc. (http://www.proseware.com) は、Liteware, Inc. が提供した形式コンフィギュレーションの消費者として機能します。 Proseware, Inc. はその国の特定の地域の形式を使用します。  
+    * この例では、サンプル会社 Litware, Inc. (https://www.litware.com) が特定の国に対する電子支払の形式コンフィギュレーションをサポートするコンフィギュレーション プロバイダーとして機能します。    サンプル会社 Proseware, Inc. (http://www.proseware.com) は、Liteware, Inc. が提供した形式コンフィギュレーションの消費者として機能します。 Proseware, Inc. はその国の特定の地域の形式を使用します。  
 2. [コンフィギュレーションをレポートする] をクリックします。
 3. [フィルターの表示] をクリックします。
 4. [名前] フィールドで "次の値で始まる" フィルター演算子を使用して、値 "BACS (英国企業)" でフィルターを適用します。

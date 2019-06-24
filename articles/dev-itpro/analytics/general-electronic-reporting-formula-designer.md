@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541271"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592663"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>電子申告 (ER) のフォーミュラ デザイナー
 
@@ -443,7 +443,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <tr>
 <td>インデックス (リスト、インデックス)</td>
 <td>この関数は、リスト内の特定の数値インデックスで選択されているレコードを返します。 インデックスがリスト内のレコードの範囲外である場合は、例外がスローされます。</td>
-<td><strong>計算済フィールド</strong>タイプにデータ ソース <strong>DS</strong> を入力していて、式 <strong>SPLIT ("A|B|C", “|”), 2)</strong> が含まれている場合、式 <strong>DS.Value</strong> はテキスト値、「B」を返します。 式<strong>インデックス (SPLIT ("A|B|C", “|”), 2) 値</strong>は、「B」テキスト値も返します。</td>
+<td><strong>計算済フィールド</strong>タイプにデータ ソース <strong>DS</strong> を入力していて、式 <strong>SPLIT ("A|B|C", “|”), 2</strong> が含まれている場合、式 <strong>DS.Value</strong> はテキスト値、「B」を返します。 式<strong>インデックス (SPLIT ("A|B|C", “|”), 2) 値</strong>は、「B」テキスト値も返します。</td>
 </tr>
 </tbody>
 </table>

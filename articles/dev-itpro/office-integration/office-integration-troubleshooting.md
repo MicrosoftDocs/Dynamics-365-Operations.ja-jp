@@ -3,7 +3,7 @@ title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 327a2202382864c19363f6773a6cccba7e0e7cdd
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 21c55a457d24876f1b8664d663ba1dc7abec8d07
+ms.sourcegitcommit: b2addd9bb23c46881508098264c5994b4258d7e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537303"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "1609141"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド)
 
@@ -104,16 +104,24 @@ Excel にエクスポートの理想的な代替は、[Excel で開く] と Exce
 
 はい、一元化配置はサポートされています。 詳細については、「[一元化配置](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/centralized-deployment)」を参照してください。 
 
-**Office アプリのパラメータ** ページの **アプリ パラメータ** タブで重要な標準値:
-- アプリ ID: "WA104379629"
-- 店舗: "en-US"
-- 店舗のタイプ: "Office Store"
+一元化配置を使用するには、**Office アプリのパラメーター** ページの **アプリのパラメーター** タブで **アプリ ID**、**ストア**、**ストア タイプ** を変更します:
+
+- **アプリ ID**: 61bcc63f-b860-4280-8280-3e4fb5ea7726
+- **ストア**: EXCatalog
+- **ストア タイプ**: 一元化配置
+
+Office ストアへの戻しが必要な場合、標準値は次のとおりです:
+- **アプリ ID**: WA104379629
+- **ストア**: en-US
+- **ストア タイプ**: Office ストア
 
 > [!NOTE]
 >- **名前**、**バージョン**、および **メモ** は情報を提供する値ですが、Excel アドインを実行するために必要ではありません。
 >- これらの値は、ドキュメント テンプレートのフォームから実行されるときに Word アドインに対しても使用されます。
 
-一元化配置を使用するには、**店舗タイプ** を [一元化配置] に、**店舗** を [EXCatalog] に変更します。
+一部のユーザーに一元化配置で問題が発生した場合は、次のいずれかの問題が考えられます:
+-   グループの 1 人以上のユーザーが、他よりも制限が厳しいメンバー
+-   参照されたユーザーが別の Office 365 アカウント (個人アカウントなど) にある
 
 ## <a name="troubleshooting-issues"></a>問題のトラブルシューティング
 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: fbc921d97a24d1115202ecaa35a217e749a523c5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 90d56b480a7b940d0a2998e550915d4e271b67d7
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537545"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564382"
 ---
 # <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスに関する問題
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 228f76b4fcc67b86a448db303ff0dc83d09c65da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 589ce5db2e16c50b6dacbafa938ec9aaa5fd3fb9
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506213"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595506"
 ---
 # <a name="factbox-form-patterns"></a>情報ボックスのフォーム パターン
 
@@ -150,7 +150,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="ax-2012-links"></a>AX 2012 リンク
 
--   [AX 2012 MSDN リスト ページ ガイドライン (FactBoxes を含む)](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
+-   [AX 2012 MSDN リスト ページ ガイドライン (FactBoxes を含む)](https://msdn.microsoft.com/library/gg853328.aspx)
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 

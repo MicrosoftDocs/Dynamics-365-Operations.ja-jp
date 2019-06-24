@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) の機能をプレビューする
+title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019年 5月) の新機能および変更点
 description: このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) でプレビューされる機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/11/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-XX-XX
 ms.dyn365.ops.version: Platform 26
-ms.openlocfilehash: 720c7f8aba348b959180dafb50d51dfff4e61019
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 14728b03b678f199590be62f5d23bd6eeb446ef2
+ms.sourcegitcommit: 56ec43e459ba93f495bc76fed23d6737218ef37e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508188"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "1591612"
 ---
-# <a name="preview-features-in-dynamics-365-for-finance-and-operations-platform-update-26-may-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) の機能をプレビューする
+# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-26-may-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019年 5月) の新機能および変更点
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5257 です。 プラットフォーム更新プログラム 26 の詳細については [追加リソース](whats-new-platform-update-26.md#additional-resources) を参照してください。
 

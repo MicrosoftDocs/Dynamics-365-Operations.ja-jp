@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 506844306d67c5e7098c5fe5c0f3677e19aac2a7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a8d48d190beb7433ae4fc09ef7431181f85752dd
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548120"
 ---
 # <a name="set-up-technical-support-for-finance-and-operations"></a>Finance and Operations の技術サポートの設定
 

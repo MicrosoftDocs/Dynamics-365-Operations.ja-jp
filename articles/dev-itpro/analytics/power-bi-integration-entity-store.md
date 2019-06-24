@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 229d64ef3057267874d3cc804c54139a7eec7f37
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8381c04636dc9ef3811a0021efef4c58f415adb3
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537204"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544994"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 
@@ -53,7 +53,7 @@ Microsoft Dynamics AX の 2016 年 2 月のリリースでは、データ エン
 ただし、ステージングできるように集計測定をモデル化するのはなぜかと疑問に思われるかもしれません。 メモリ内リアルタイム集計測定を常に使用しないのはなぜですか。 **StagedEntityStore** パターンを使用する理由はいくつかあります。
 
 - 調査して分析する必要がある、大量のデータが存在する可能性があります。
-- コード アップグレード プロセスの一部として、Microsoft DynamicsAX 2012 R3 から Dynamics 365 for Finance and Operations に移行する解析プロジェクト (つまり、キューブ) がある場合があります。 スキーマには複雑なビューと結合が存在するため、クエリ応答時間は埋め込まれたビジュアルには受け入れられない場合があります。 ただし、NCCI テクノロジーを直ちに活用するためにビジュアルをリファクタリングする必要はありません。
+- コード アップグレード プロセスの一部として、Microsoft Dynamics AX 2012 R3 から Dynamics 365 for Finance and Operations に移行する解析プロジェクト (つまり、キューブ) がある場合があります。 スキーマには複雑なビューと結合が存在するため、クエリ応答時間は埋め込まれたビジュアルには受け入れられない場合があります。 ただし、NCCI テクノロジーを直ちに活用するためにビジュアルをリファクタリングする必要はありません。
 - 運用データベースのスキーマとは異なり、エンティティ ストアのスキーマは特にレポートのためにモデル化されています。 したがって、エンティティ ストアのスキーマから新しいレポートを作成する方がはるかに簡単です。
 - 自分のシナリオが、操作の数秒以内での分析データの更新を必要としない場合があります。 データ検索を有効にするために構築されているほとんどの Power BI レポートは、このカテゴリに分類されます。 約 10 分でデータをリフレッシュすることがシナリオで許容される場合は、段階的なパターンを使用する場合があります。
 

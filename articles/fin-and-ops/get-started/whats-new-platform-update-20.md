@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 (2018 年 9 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 の新機能または変更された機能について説明します。 このバージョンは 2018 年 9 月にリリースされました。
+description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 20 の新機能または変更された機能について説明します。 このバージョンは 2018 年 9 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
 ms.date: 01/22/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 18, Platform update 19, Platform 20
-ms.openlocfilehash: a9f50dcd877bd5c852343aac118da635ec784935
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 29ba724b9c3cb10e7011e4f0ed45a6a903eef468
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512513"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547992"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-20-september-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 (2018 年 9 月) の新機能および変更された機能
 

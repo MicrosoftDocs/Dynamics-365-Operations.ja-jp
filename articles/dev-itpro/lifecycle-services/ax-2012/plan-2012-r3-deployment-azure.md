@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: d791670a7b7942b83be7c3f688a335fb68283b02
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 908ea8ea8d609de145c6d078203328d97682e6b1
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537258"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555279"
 ---
 # <a name="plan-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3の 配置計画
 

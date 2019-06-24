@@ -3,7 +3,7 @@ title: クラウド配置オプション
 description: このトピックでは、展開するクラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および Microsoft Dynamics 365 for Finance and Operations で管理する必要があるデータおよびカスタマイズについて説明します。
 author: kfend
 manager: AnnBe
-ms.date: 09/14/2018
+ms.date: 06/4/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 29192e48a34eff13a75cad03232a9eb7fad10094
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b1fa00603fbdf3cd012d625780de238b3f66eb3f
+ms.sourcegitcommit: 75596be9fcfefcbe82edaa148d527ad21cf11a66
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537086"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1617718"
 ---
 # <a name="cloud-deployment-option"></a>クラウド配置オプション
 
@@ -112,7 +112,7 @@ Finance and Operations の実稼動環境は、以下のものを含む Azure �
 - 他の Azure リージョンでの Azure blob storage (ドキュメントの添付ファイルを含む) のジオ重複コピー。 詳細については、[ジオ重複ストレージ](/azure/storage/common/storage-redundancy-grs) を参照してください。
 - Azure SQL および Azure ブログ記憶域レプリケーションの同じセカンダリ地域。  
 
-プライマリのデータ格納場所のみレプリケーションがサポートされます。 つまり、プライマリ データベースから変換されたデータを使用する Management Reporter やエンティティ格納などの 一部の Finance and Operations アプリケーション コンポーネントは、リカバリ サイトが設定され、サービスが開始された後に生成されなければなりません。 顧客コード コンポーネントと回復されたデータの格納場所を使用してサイトを再展開し、RTO (Recovery Time Objective) を 10 時間、Recovery Point Objective を5分に設定します。 詳細については、[Azure SQL データベース ポイントインタイム復元](https://azure.microsoft.com/en-us/blog/azure-sql-database-point-in-time-restore/) を参照してください。
+プライマリのデータ格納場所のみレプリケーションがサポートされます。 つまり、プライマリ データベースから変換されたデータを使用する Management Reporter やエンティティ格納などの 一部の Finance and Operations アプリケーション コンポーネントは、リカバリ サイトが設定され、サービスが開始された後に生成されなければなりません。 顧客コード コンポーネントと回復されたデータの格納場所を使用してサイトを再展開し、RTO (Recovery Time Objective) を 10 時間、Recovery Point Objective を 5 秒に設定します。 詳細については、[Azure SQL データベース ポイントインタイム復元](https://azure.microsoft.com/en-us/blog/azure-sql-database-point-in-time-restore/) を参照してください。
 
 ## <a name="service-availability"></a>サービスの可用性 
 Dynamics Lifecycle Services (LCS) を使用して、他の Microsoft Azure データ センターに Finance and Operations を展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 Finance and Operations では、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。 詳細については、[サービス説明のホワイト ペーパー](https://aka.ms/D365-Cloud-Service-Operations)をご覧ください。

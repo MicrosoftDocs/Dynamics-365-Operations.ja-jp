@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: aad614dc41cc682e21768fe6324ea849a2680fcc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a08a44a7c107d4c4207711a28ee855b91c5616df
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506217"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554380"
 ---
 # <a name="eventhook-typelttgt"></a>EventHook タイプ&lt;T&gt;
 

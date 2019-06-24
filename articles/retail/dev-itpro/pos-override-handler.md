@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 0fb70e2dea907f2d6becf18fdc323b65894cb09b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 54144a2a0e6539c2cf89a7f8e551a335dc3b3cdb
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537546"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564390"
 ---
 # <a name="pos-override-request-handler-sdk"></a>POS オーバーライド要求ハンドラー (SDK)
 

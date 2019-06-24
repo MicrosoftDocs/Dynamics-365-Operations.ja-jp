@@ -3,7 +3,7 @@ title: Talent のプロビジョニング
 description: このトピックでは、Microsoft Dynamics 365 for Talent の新しい環境のプロビジョニングについて説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 00/05/2019
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 98f60e466b8b97215fdba0f48ca53ca57157283b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
+ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518467"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1576924"
 ---
 # <a name="provision-talent"></a>Talent のプロビジョニング
 
@@ -47,13 +47,14 @@ Talent を使い始める方法については、新しいプロジェクトで�
 LCS プロジェクトを作成した後は、環境に Talent をプロビジョニングすることができます。
 
 1. LCS プロジェクトでは、**Talent アプリの管理** タイルを選択します。
-2. Talent は、Microsoft PowerApps の環境に常にプロビジョニングされていて、これにより PowerApps の統合および拡張機能が有効になります。 続行する前に、このトピックの「PowerApps 環境の選択」を参照してください。 まだ PowerApps 環境を持っていない場合は、LCS で環境の管理を選択するか、または PowerApps 管理センターに移動します。 次に、以下の手順に従います [PowerApps 環境の作成](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment)。
+2. これが人材のサンドボックスまたは実稼働インスタンスであるかどうかを示します。 初期のプレビュー機能をサンドボックス インスタンスで使用することにより、早期のフィードバックおよびテストを行うことができます。 
+3. Talent テスト ドライブ エクスペリエンスで使用される同じデモ データのセットを環境に含める場合は、**デモ データを含む**オプションをオンにします。 これは長期的なデモまたはトレーニング環境に便利であり、稼動環境で使用されることはありません。  初期展開時にこのオプションを選択する必要があることに注意してください。 後で、既存の配置を更新することはできません。
+4. Talent は、Microsoft PowerApps の環境に常にプロビジョニングされていて、これにより PowerApps の統合および拡張機能が有効になります。 続行する前に、このトピックの「PowerApps 環境の選択」を参照してください。 まだ PowerApps 環境を持っていない場合は、LCS で環境の管理を選択するか、または PowerApps 管理センターに移動します。 次に、以下の手順に従います [PowerApps 環境の作成](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment)。
 
     > [!NOTE]
     > 既存の環境を表示、または新しい環境を作成するために、Talent をプロビジョニングするテナント管理者は PowerApps P2 ライセンスに割り当てられる必要があります。 組織に PowerApps P2 ライセンスがない場合、CSP または [PowerApps 価格ページ](https://powerapps.microsoft.com/en-us/pricing/) から入手することができます。
 
-4. **追加**を選択し、Talent をプロビジョニングする環境を選択します。
-5. Talent テスト ドライブ エクスペリエンスで使用される同じデモ データのセットを環境に含める場合は、**デモ データを含む**オプションをオンにします。 これは長期的なデモまたはトレーニング環境に便利であり、稼動環境で使用されることはありません。  初期展開時にこのオプションを選択する必要があることに注意してください。 後で、既存の配置を更新することはできません。
+5. 人材を供給する環境を選択します。
 6. 使用条件に同意、および展開を開始するために **はい** を選択します。
 
     新しい環境は、左のナビゲーション ウィンドウにある環境の一覧に表示されます。 ただし、配置状態が**配置済み**に更新されるまでは、環境の使用を開始できません。 このプロセスには通常、数分間かかります。 プロビジョニング プロセスに失敗する場合は、サポートに連絡する必要があります。

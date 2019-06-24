@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d2f4cc99ec239c4c35c44a226235d01e18d4185f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c256569135a00ea98a5c059b9dd12a07a000ee6a
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546366"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606944"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Retail Modern POS (MPOS) のイメージの設定および管理
 
@@ -49,11 +49,11 @@ Retail Modern POS (MPOS) に表示される画像は Microsoft Dynamics 365 for 
 1. Dynamics 365 for Retail HQ ポータルを開きます。
 2. **小売りとコマース** &gt; **チャンネル設定** &gt; **チャンネル プロファイル** の順にクリックします。
 
-    [![チャンネル プロファイル 1](./media/channel-profile1.png)](./media/channel-profile1.png)
+    [![ナビゲーション](./media/channel-profile1.png)](./media/channel-profile1.png)
 
 3. 店舗で MPOS に使用するチャンネル プロファイルで、メディアサーバーあるいは CDN の基準 URLの**メディア基準 URL** フィールドを更新します。 ベース URL は別のエンティティのすべての画像のフォルダにより共有される URL の最初の部分です。
 
-    [![channel-profile2](./media/channel-profile2.png)](./media/channel-profile2.png)
+    [![チャネル プロファイル ページ](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>エンティティのメディアのテンプレートを定義します。
 
@@ -71,7 +71,7 @@ Retail Modern POS (MPOS) に表示される画像は Microsoft Dynamics 365 for 
 8. イメージにアクセスする場合に MPOS がテンプレートを使用するように、チャンネルのデータベースに新しいテンプレートをプッシュするため、同期ジョブを実行します。
 9. チャネル側のカタログ画像のメディア テンプレートを更新するには、**Retail IT** &gt; **配送スケジュール**から**カタログ ジョブ 1150** を実行してください。
 
-    [![catalog1](./media/catalog1.png)](./media/catalog1.png)
+    [![メディア テンプレートの定義ダイアログ ボックス](./media/catalog1.png)](./media/catalog1.png)
 
 ## <a name="previewing-an-image-from-the-entity-level"></a>エンティティ レベルからの画像のプレビュー
 
@@ -80,12 +80,12 @@ Retail Modern POS (MPOS) に表示される画像は Microsoft Dynamics 365 for 
 3. 暗黙的なテンプレートに基づき、特定の画像に使用されるパスを手動で変更するために、**追加**および**削除**ボタンを使用できます。 詳細については、この記事で後述する[エンティティ アイテムのメディア テンプレートの上書き](#overwriting-the-media-template-for-entity-items)セクションを参照してください。
 4. 画像をプレビューし、必要な変更を加えることを完了したら、適切な店舗の MPOS のインスタンスを起動し、カタログの画像を表示するかどうかを確認します。
 
-    [![catalog4](./media/catalog4.png)](./media/catalog4.png)
+    [![ダイアログ ボックスの画像](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
 > サポートされている 5 つのエンティティ、作業者、顧客、カタログ、カテゴリ、および製品で同じ手順を使用できます。 「カタログ製品」 (カタログ レベルで設定された製品) および「チャンネル製品」 (チャンネル レベルで設定された製品) は、製品 エンティティで設定されたメディア テンプレートを使用します。 製品のメディア テンプレートでは、製品ごとに表示する製品画像の数を選択できます。 また、特定の製品に既定の画像を設定できます。 これにより、MPOS の空白の画像をなくしたり、画像を製品品目の既定の画像として使用するかどうかを制御できます。 次の例では、各製品に 5 つの画像があり、最初の画像は、既定の画像として設定されます。 バリアント製品はマスターの製品と同じ方法で処理されます。 イメージ ファイルのファイル名は製品番号に基づく必要があります。 ファイル名の生成中、一部の文字がエスケープします。 したがって、**Excel 用の画像 URL の生成**セクションを使用してファイル名を確認することをお勧めします。
 >
-> [![製品](./media/prods.png)](./media/prods.png)
+> [![メディア テンプレートの定義ダイアログ ボックス](./media/prods.png)](./media/prods.png)
 
 ## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>チャンネル側にメディアのテンプレートを送信するジョブを同期
 
@@ -111,11 +111,11 @@ Retail Modern POS (MPOS) に表示される画像は Microsoft Dynamics 365 for 
     > [!IMPORTANT]
     > メディア テンプレートが変更された場合、Excel で編集機能を使用する前に、**生成**をクリックする必要があります。
 
-    [![excel1](./media/excel1.jpg)](./media/excel1.jpg)
+    [![Excel 用の画像 URL の生成クイック タブ](./media/excel1.jpg)](./media/excel1.jpg)
 
     最後に保存したメディア テンプレートに基づいて生成された、画像 URL がプレビュー表示されます。
 
-    [![excel2](./media/excel2.png)](./media/excel2.png)
+    [![生成が選択された後の Excel 用の画像 URL の生成クイック タブ](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
     > Excel 用に生成された URL は、定義されているメディア テンプレートのパスと方式を使用します。 これらの方式には、ファイル名の方式も含まれます。 Dynamics 365 for Retail の外部で現物画像を設定することが期待されており、画像は、先に定義したメディア テンプレートから派生する URL から取得することができます。 Excel で編集の機能を使用すると、これらの派生 URL を上書きできます。
@@ -160,11 +160,11 @@ Excel の新しいレコードを作成できます。 ただし、正しい情�
 3. この画像を MPOS でカタログに表示する場合、既定の画像として設定できます。
 4. **OK** をクリックします 画像 URL は、このカタログ画像に更新され、プレビューが表示されます。
 
-    [![プレビュー 3](./media/preview3.png)](./media/preview3.png)
+    [![新しい画像ダイアログ ボックスで更新された URL](./media/preview3.png)](./media/preview3.png)
 
 5. すべてを上書きした画像 URL は、画像のプレビューを**カタログ画像**ギャラリー ページで表示できます。
 
-    [![preview-4](./media/preview-4.png)](./media/preview-4.png)
+    [![カタログ画像ギャラリー ページ](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
 > 現在のところ、ギャラリーはメディア テンプレートの画像 URL の画像のプレビューを表示しません。 カタログ、作業者、顧客、およびカテゴリエンティティに、ユーザーがこのページで明示的に URL を指定すると、Retail サーバーのクライアントがカタログ、顧客、作業者、およびカテゴリごとに一つの画像のみを参照するため、既定の画像を指定することをお勧めします。 ユーザーが既定の画像を指定しないと、システムは既定の画像を確認し、小売サービスの呼び出し元に送信します (MPOS または e コマース)。
@@ -179,7 +179,7 @@ Excel の新しいレコードを作成できます。 ただし、正しい情�
 4. **追加**をクリックし、画像 URL を新しい URL で上書きします。
 5. **OK** をクリックします これで、新しい画像をプレビュー表示し、既定の画像として設定できます。
 
-    [![cat3](./media/cat3.png)](./media/cat3.png)
+    [![新しい画像ダイアログ ボックスの画像プレビュー](./media/cat3.png)](./media/cat3.png)
 
 > [!NOTE]
 > カテゴリ画像のアソシエーションの後、チャネルを発行し、チャネル データベースへの変更を公開することを保証するチャネル ジョブを実行する必要があります。
@@ -200,7 +200,7 @@ MPOS はオンライン モード (MPOS が Retail サーバーに接続され�
 6. MPOS がオンライン モードの間に、データがオフライン データベースに 1 回以上の送信を行うかどうか確認するため、HQ でカタログジョブを実行します。
 7. オフライン モードに MPOS を挿入します。 HQ の特定の製品にアップロードする画像を確認する必要があります。
 
-    [![オフライン 1](./media/offline1.png)](./media/offline1.png)
+    [![オフライン モードの製品画像](./media/offline1.png)](./media/offline1.png)
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>MPOS のオフライン モードで表示するカタログ、カテゴリ、従業員、および顧客の画像を設定します。
 
@@ -212,4 +212,4 @@ MPOS はオンライン モード (MPOS が Retail サーバーに接続され�
 4. カタログジョブを実行します。 この画像は MPOS でカタログのオフラインの画像としてすぐに使用されます。
 5. カテゴリ、従業員、および顧客など、他のエンティティの類似したプロセスに従います。
 
-    [![オフライン 2](./media/offline2.png)](./media/offline2.png)
+    [![オフライン画像](./media/offline2.png)](./media/offline2.png)

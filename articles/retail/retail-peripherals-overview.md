@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571561"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577932"
 ---
 # <a name="retail-peripherals"></a>小売周辺機器
 
@@ -295,7 +295,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>ネットワーク
-<blockquote>注: ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ドロワーを 1 つだけ設定できます。</blockquote>
+<p><strong>注記:</strong> <strong>共有シフトを使用</strong>がドロワーに設定されている場合、ドロワーは 1 つだけ設定できます。</p>
 </li>
 </ul>
 </td>
@@ -306,7 +306,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>ネットワーク
-<blockquote>注: ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ドロワーを 1 つだけ設定できます。</blockquote>
+<p><strong>注記:</strong> <strong>共有シフトを使用</strong>がドロワーに設定されている場合、ドロワーは 1 つだけ設定できます。</p>
 </li>
 </ul>
 </td>
@@ -374,7 +374,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>Windows ドライバー
-<blockquote>注: ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンターへのアクセス許可が必要です。</blockquote>
+<p><strong>注記:</strong> ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンターへのアクセス許可が必要です。</p>
 </li>
 <li>ネットワーク</li>
 </ul>
@@ -404,7 +404,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>ネットワーク
-<blockquote>注: ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ハードウェア プロファイルごとにドロワーは 1 つだけ設定できます。</blockquote>
+<p><strong>注記:</strong> <strong>共有シフトを使用</strong> が設定されている場合、ハードウェア プロファイルごとにドロワーは 1 つだけ設定できます。</p>
 </li>
 </ul>
 </td>
@@ -469,7 +469,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>Windows ドライバー
-<blockquote>注: ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンターへのアクセス許可が必要です。</blockquote>
+<p><strong>注記:</strong> ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンターへのアクセス許可が必要です。</p>
 </li>
 <li>ネットワーク</li>
 </ul>
@@ -491,7 +491,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>ネットワーク
-<blockquote>注: ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ハードウェア プロファイルごとにドロワーは 1 つだけ設定できます。</blockquote>
+<p><strong>注記:</strong> <strong>共有シフトを使用</strong> が設定されている場合、ハードウェア プロファイルごとにドロワーは 1 つだけ設定できます。</p>
 </li>
 </ul>
 </td>

@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a742039b9877734a3893ea85884f8ae5f18a8e90
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 286f2c6f7276f3c16541ab4e23d242cb11d69e82
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537382"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595409"
 ---
 # <a name="classification-of-localization-features"></a>ローカライズ機能の分類
 
@@ -46,7 +46,7 @@ BPM ライブラリが構築されているときは、ローカライズ ソリ
 
 | コンポーネント名      | 書式設定      | 説明                                                                                                                   | 例                 |
 |---------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 国/地域コード | XX          | 2 文字の ISO 国/地域コード ([ISO 3166 規格](http://www.iso.org/iso/country_names_and_code_elements)) | PT (= ポルトガル)         |
+| 国/地域コード | XX          | 2 文字の ISO 国/地域コード ([ISO 3166 規格](https://www.iso.org/iso/country_names_and_code_elements)) | PT (= ポルトガル)         |
 | フィーチャー タイプ        | REG または COMP | 機能のタイプ                                                                                                           | REG                     |
 | フィーチャー名        | テキスト        | 機能がどのように使用されているかを説明する短い機能タイトル                                                             | 直接売上税レポート |
 

@@ -6,11 +6,11 @@
       href: get-started/whats-new.md
     - name: Dynamics 365 for Retail 10.0.3 の機能のプレビュー
       href: get-started/whats-new-10-0-3.md
-    - name: Dynamics 365 for Retail 10.0.2 の機能のプレビュー
+    - name: Dynamics 365 for Retail 10.0.2 の新機能および変更された機能
       href: get-started/whats-new-10-0-2.md
     - name: Dynamics 365 for Retail 10.0.1 の新機能および変更された機能
       href: get-started/whats-new-10-0-1.md
-    - name: Dynamics 365 for Retail (2019 年 4 月) の新機能と変更された機能
+    - name: Dynamics 365 for Retail (2019 年 4 月) の新機能および変更された機能
       href: get-started/april-whats-new.md
     - name: Retail を購入する前に
       href: get-started/before-you-buy.md
@@ -49,14 +49,18 @@
       href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
     - name: Finance and Operations Retail プロジェクトの実装
       href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
+    - name: Retail プロジェクトの新しい環境、Azure DevOps、ブランチの設定
       href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
     - name: Retail プロジェクトのコードと環境の更新
       href: dev-itpro/updating-environments.md
     - name: テストおよびパフォーマンスに関する問題
       href: dev-itpro/retail-implementation-testing-performance.md
-- name: 分散型注文管理 (DOM)
-  href: dom.md
+- name: 配分済み注文の管理 (DOM)
+  items:
+    - name: DOM 概要
+      href: dom.md
+    - name: 原価コンフィギュレーション
+      href: cost.md
 - name: 支払
   items:
     - name: 支払方法
@@ -67,6 +71,8 @@
       href: cash-denominations.md
     - name: Adyen 向け Dynamics 365 Payment Connector
       href: dev-itpro/adyen-connector.md
+    - name: オンライン支払手段を Adyen コネクタで保存
+      href: dev-itpro/adyen-connector-listPI.md
     - name: 請求書の支払シナリオを設定する
       href: payinvoice.md
     - name: 支払に関してよく寄せられる質問
@@ -95,7 +101,9 @@
       href: tasks/create-calculate-post-statement-retail-store.md
     - name: 明細書転記機能に関する強化事項
       href: statement-posting-EOD.md
-    - name: 小売明細書に影響を及ぼす Retail のパラメーターのコンフィギュレーション
+    - name: バッチ追跡品目の処理の改善
+      href: batch.md
+    - name: 小売明細書に影響を及ぼす 小売パラメーターのコンフィギュレーション
       href: tasks/parameter-configurations-retail-statements.md
     - name: 小売明細書に影響を及ぼす支払方法設定のコンフィギュレーション
       href: tasks/payment-configurations-retail-statements.md
@@ -115,7 +123,9 @@
       href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
     - name: 消費税コードの合計額と間隔計算オプション
       href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-- name: Omni チャネルの高度な自動請求
+- name: オムニ チャネル支払の概要
+  href: omni-channel-payments.md
+- name: オムニ チャネルの高度な自動請求
   items:
     - name: 高度な自動請求のコンフィギュレーションおよび使用
       href: omni-auto-charges.md
@@ -159,12 +169,14 @@
       href: MPOS-or-CPOS.md
     - name: オンラインおよびオフラインの POS 操作
       href: pos-operations.md
-    - name: カスタマイズされた Retail Modern POS のデバイスの有効化
+    - name: カスタマイズされた Retail MPOS のデバイスの有効化
       href: dev-itpro/retail-POS-activation-changes.md
     - name: MPOS および Cloud POS のデモ データ画面レイアウト
       href: demo-data.md
     - name: POS での製品および顧客の検索
       href: POS-search-improvements.md
+    - name: 現金管理の改善
+      href: cash-mgmt.md
     - name: POS での在庫検索
       href: product-variants-POS.md
     - name: POS でのトランザクションの中断および再開
@@ -590,7 +602,7 @@
           href: dev-itpro/extend-metadata.md
         - name: オフライン モードでの CRT サービスの呼び出し
           href: dev-itpro/call-crt-service-offline.md
-    - name: Commerce runtime (CRT) の拡張機能
+    - name: Commerce Runtime (CRT) の拡張機能
       items:
         - name: CRT のアーキテクチャおよびコンフィギュレーション
           href: dev-itpro/commerce-runtime-overview.md

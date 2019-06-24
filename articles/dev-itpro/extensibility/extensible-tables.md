@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: fe467b0f4e7f764360182230d80ba316f4374e85
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 358ccdda7c16056afdcab11804bd3e7485d35b7f
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1510939"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550882"
 ---
 # <a name="write-extensible-tables"></a>拡張可能なテーブルの書き込み
 [!include [banner](../includes/banner.md)]

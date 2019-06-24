@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 5342f280f55721cbc8fd837da5a489ee97d4ee96
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e31891d188146d98ae856f7d9a5c362132ba2507
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506303"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555291"
 ---
 # <a name="create-archive-objects-for-the-intelligent-data-management-framework"></a>Intelligent Data Management Framework のアーカイブ オブジェクトの作成
 

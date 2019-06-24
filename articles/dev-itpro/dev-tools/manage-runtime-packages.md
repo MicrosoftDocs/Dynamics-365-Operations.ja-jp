@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73362144e6aa1f9b868c2c86ed5d517a56a8125e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fde134e037e7ffa2c385d624eeb045f4076e5f69
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536954"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544134"
 ---
 # <a name="manage-third-party-models-and-runtime-packages-by-using-source-control"></a>ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: a2399573be036faefe70f9b00754e41d854c7661
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a35b24f06745945009271168a54ed699d22e1be5
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537064"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544216"
 ---
 # <a name="self-service-deployment"></a>セルフサービス配置
 

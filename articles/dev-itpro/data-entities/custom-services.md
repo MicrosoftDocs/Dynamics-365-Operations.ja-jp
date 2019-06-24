@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad5977643f3eae16a80a00a3ec6d00267e61ebdd
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 02e828baa43087e8768b0dda182637d02cab15e5
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505423"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595384"
 ---
 # <a name="custom-service-development"></a>顧客サービスの開発
 
@@ -54,8 +54,8 @@ SOAP を使用したカスタム サービスを使用するためのコード�
 
 カスタム サービスの詳細については、次を参照してください。
 
-- [カスタム サービスを使用する \[AX 2012\] (TechNet)](http://technet.microsoft.com/en-us/library/hh509052.aspx)
-- [チュートリアル: X++ クラスをデータ契約として公開する (TechNet)](http://technet.microsoft.com/en-us/library/gg844225.aspx)
+- [カスタム サービスを使用する \[AX 2012\] (TechNet)](https://technet.microsoft.com/library/hh509052.aspx)
+- [チュートリアル: X++ クラスをデータ契約として公開する (TechNet)](https://technet.microsoft.com/library/gg844225.aspx)
 
 <!--
 - [Custom services Office Mix presentation](https://mix.office.com/watch/12e4fejbgj429). -->

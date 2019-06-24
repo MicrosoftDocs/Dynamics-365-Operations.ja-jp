@@ -44,9 +44,11 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: オンプレミス配置で実装されていない機能
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations バージョン 10.0.4 (2019 年 7 月) の機能のプレビュー
+              href: get-started/whats-new-changed-10-0-4.md
             - name: Finance and Operations バージョン 10.0.3 (2019 年 6 月) の機能のプレビュー
               href: get-started/whats-new-changed-10-0-3.md
-            - name: Finance and Operations バージョン 10.0.2 (2019 年 5 月) の機能のプレビュー
+            - name: Finance and Operations バージョン 10.0.2 (2019 年 5 月)
               href: get-started/whats-new-changed-10-0-2.md
             - name: Finance and Operations バージョン 10.0.1 (2019 年 4 月)
               href: get-started/whats-new-changed-10-0-1.md
@@ -54,9 +56,11 @@
               href: get-started/whats-new-changed-10.md
             - name: Finance and Operations バージョン 8.1.3 (2019 年 1 月)
               href: get-started/whats-new-changed-8-1-3.md
+            - name: Finance and Operations platform update 28 (2019 年 7 月) の機能のプレビュー
+              href: get-started/whats-new-platform-update-28.md
             - name: Finance and Operations platform update 27 (2019 年 6 月) の機能のプレビュー
               href: get-started/whats-new-platform-update-27.md
-            - name: Finance and Operations platform update 26 (2019 年 5 月) の機能のプレビュー
+            - name: Platform update 26 (2019 年 5 月)
               href: get-started/whats-new-platform-update-26.md
             - name: Platform update 25 (2019 年 4 月)
               href: get-started/whats-new-platform-25.md
@@ -912,7 +916,7 @@
         - name: 経費管理
           href: ../financials/expense-management/expense-management.md
           items:
-            - name: 経費レポートの再設計
+            - name: 経費精算書の再設計
               href: ../financials/expense-management/ExpenseWorkspaceNew.md
             - name: 経費管理の計画
               href: ../financials/expense-management/plan-expense-management.md
@@ -1261,6 +1265,8 @@
                   href: ../financials/public-sector/tasks/create-original-budget.md
                 - name: 公的機関の暫定予算の作成
                   href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
+                - name: 予算分析レポート
+                  href: ../financials/public-sector/budget-analysis-report.md
                 - name: 公的部門での予算分析
                   href: ../financials/public-sector/budget-analysis-public-sector.md
                 - name: 公的機関での暫定予算と配賦予算
@@ -2277,6 +2283,7 @@
                   href: ../financials/localizations/rus-ledger-transactions-preview.md
                 - name: 通貨トランザクションに対する為替レートの設定
                   href: ../financials/localizations/rus-exchange-difference.md
+                - name: CBRF から通貨為替レートをインポート ../financials/general-ledger/import-currency-exchange-rates.md
             - name: 前貸し保有者
               href: ../financials/localizations/rus-advance-holders.md
               items:
@@ -2638,7 +2645,6 @@
                   href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
                 - name: 福利厚生の設定
                   href: hr/localizations/noam-usa-benefit-set-up-tasks.md
-            - name: 頻度とサイクル
             - name: 支払サイクルと支払期間の設定
               href: hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
             - name: 給与計算頻度の設定
@@ -2922,6 +2928,8 @@
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
             - name: CSV 形式で受信したドキュメントを解析する
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
+            - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
+              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
             - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
               items:
@@ -3877,6 +3885,10 @@
           href: ../financials/project-management/project-time-entry-mobile-workspace.md
         - name: プロジェクト タイムシート モバイル アプリ
           href: ../financials/project-management/project-timesheet.md
+        - name: モバイル デバイスでのプロジェクト タイムシート
+          href: ../financials/project-management/mobile-timesheets.md
+        - name: プロジェクト タイムシート モバイル アプリのカスタム フィールドの実装
+          href: ../financials/project-management/custom-fields-mobile.md
     - name: 販売とマーケティング
       href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:

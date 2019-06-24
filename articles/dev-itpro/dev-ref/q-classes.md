@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85bab7b4a98e351e45157e1168939d30e08b0505
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 478236c6d1436ee428768ca7a596cfaf4d345dcb
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537032"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544201"
 ---
 # <a name="q-classes"></a>Q クラス
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f74811939026c3bdd5b2f26a843f9f87f70856d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: aa18c13518c6038a2daae42b1de700e340489af1
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537407"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551495"
 ---
 # <a name="retail-channel-performance-powerbicom-solution"></a>小売チャネルの実績 PowerBI.com ソリューション
 
@@ -33,27 +33,27 @@ ms.locfileid: "1537407"
 
 このトピックでは、Dynamics AX の Retail channel performance PowerBI.com ソリューションに関する情報を提供します。 この PowerBI.com ソリューションを使用すると、チャネル パフォーマンス アナリティクスを迅速にビルドして、販売実績に基づいて傾向を予測し、洞察を得ることができます。
 
-Retail チャンネル パフォーマンス PowerBI.com ソリューションを使用すると、チャネル パフォーマンスの分析機能をすばやく作成することができます。 PowerBI.com ソリューションは、販売実績に焦点を当てて傾向を予測し、洞察を明らかにするチャネル マネージャー専用に設計されています。 そのコンポーネントは、Dynamics AX データベースで Retail と Commerce のデータから直接を取得し、従業員、カテゴリ、製品、ターミナル、チャネルなどによって地理的に世界中の組織全体の販売実績に関するドリルダウン レポートを提供します。 Power BI は、小売およびコマース データを調査して分析するための良い出発点となる、レポートとダッシュボードに自動的に作成します。 この記事には、次の情報が含まれています。
+Retail チャンネル パフォーマンス PowerBI.com ソリューションを使用すると、チャネル パフォーマンスの分析機能をすばやく作成することができます。 PowerBI.com ソリューションは、販売実績に焦点を当てて傾向を予測し、洞察を明らかにするチャネル マネージャー専用に設計されています。 そのコンポーネントは、Dynamics AX データベースで Retail と Commerce のデータから直接を取得し、従業員、カテゴリ、製品、ターミナル、チャネルなどによって地理的に世界中の組織全体の販売実績に関するドリルダウン レポートを提供します。 Power BI は、小売およびコマース データを調査して分析するための良い出発点となる、レポートとダッシュボードに自動的に作成します。 この記事には、次の情報が含まれています。
 
 - Retail channel performance PowerBI.com ソリューションを Dynamics AX データ ソースに接続する方法について説明します。
 - Retail channel performance に関する詳細情報を提供するレポートの一覧を表示します。
 - PowerBI.com ソリューションの既存のレポートを変更して自分で作成する方法について説明します。
-- Power BI でのエクスペリエンス全体を有効にする実際のデータ モデルのほんの一部を取得します。
+- Power BI でのエクスペリエンス全体を有効にする実際のデータ モデルのほんの一部を取得します。
 
 ## <a name="connect-the-retail-channel-performance-powerbicom-solution-to-a-dynamicsax-data-source"></a>Retail チャネルの実績 PowerBI.com ソリューションを Dynamics AX データ ソースに接続します。
-1. https://www.powerbi.com に移動し、**サインイン**をクリックします。 アカウントがない場合は、サインアップし、新しい Power BI を無料でプレビューできます。
-2. サインインするには、Power BI アカウントを持つ Microsoft Office 365 アカウントを入力します。
+1. https://www.powerbi.com に移動し、**サインイン**をクリックします。 アカウントがない場合は、サインアップし、新しい Power B を無料でプレビューできます。
+2. サインインするには、Power BI アカウントを持つ Microsoft Office 365 アカウントを入力します。
 3. ワークスペースが表示されたら、左のナビゲーション ウィンドウの下部にある**データの取得**をクリックします。
 4. **サービス** セクションで、**取得**をクリックします。
 5. スクロールするか検索して **Microsoft Dynamics AX Retail channel performance** を見つけ、**今すぐ入手**をクリックします。
 6. 次の形式に Dynamics AX の URL を入力します。`https://<tenant>.cloudax.dynamics.com` (例えば、`https://YourAOSTenant.cloudax.dynamics.com`) です。 次に、**Next** をクリックして Dynamics AX データ ストレージからこの Power BI ダッシュボードにデータをプルします。
 7. 認証方法として **oAuth2** を選択し、**署名する** をクリックします。
-8. サインインするには、Dynamics AX 環境にアクセスするアクセス許可を持つ Office 365 のアカウントを入力します。
-9. データが Dynamics AX から Power BI に正常に引き込まれた後、左のナビゲーション ウィンドウで**Retail channel performance** ダッシュボードをクリックして、Power BI の個人の**Retail channel performance dashboard**を表示することができます。
+8. サインインするには、Dynamics AX 環境にアクセスするアクセス許可を持つ Office 365 のアカウントを入力します。
+9. データが Dynamics AX から Power BI に正常に引き込まれた後、左のナビゲーション ウィンドウで**Retail channel performance** ダッシュボードをクリックして、Power BI の個人の**Retail channel performance dashboard**を表示することができます。
 
     [![小売チャンネル パフォーマンス ダッシュボード](./media/rcmpbidashboard-1024x679.png)](./media/rcmpbidashboard.png)
 
-10. 自然言語を使用することにより、Power BI 内の Q&A フィーチャーを活用して Dynamics AX の営業データをクエリすることができます。
+10. 自然言語を使用することにより、Power BI 内の Q&A フィーチャーを活用して Dynamics AX の営業データをクエリすることができます。
 
     [![Power BI の Q&A 機能](./media/qnapbiretailchannelperformance.png)](./media/qnapbiretailchannelperformance.png)
 

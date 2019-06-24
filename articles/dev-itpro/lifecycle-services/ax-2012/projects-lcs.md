@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448481c3a153c76f3012a0937a60ee5edc8f3ad5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c8ab1bae913527896817511ad15adf77ff0bebb3
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537374"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544079"
 ---
 # <a name="projects-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のプロジェクト
 

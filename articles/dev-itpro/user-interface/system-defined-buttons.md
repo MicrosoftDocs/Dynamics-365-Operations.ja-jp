@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 75a32c096a286f87ac693b22a6f6e781f1c0696e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 852b7d3bd321d9c73ad708c07b6e6c3fd3b95b29
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537469"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559542"
 ---
 # <a name="system-defined-buttons"></a>システム定義ボタン
 

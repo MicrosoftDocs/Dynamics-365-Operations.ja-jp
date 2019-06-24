@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 0aeb1c8ba079e9456b3e2798a3efdc3a6f0f90e4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5149b8da13b431a307fca8ce6910948290b2a025
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537246"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544087"
 ---
 # <a name="deploy-retail-e-commerce-devtest-environments-on-azure"></a>Azure での Retail E-commerce 開発/テスト環境の配置
 

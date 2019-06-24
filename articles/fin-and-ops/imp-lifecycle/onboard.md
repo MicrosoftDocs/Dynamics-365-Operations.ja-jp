@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 910727f5c6efbbd208d2a7453d3d82a2da1dfe32
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c124599b72cde7451c04f23632515e6e7da4abae
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512397"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1562870"
 ---
 # <a name="onboard-a-finance-and-operations-implementation-project"></a>Finance and Operations 実装プロジェクトの配送準備
 

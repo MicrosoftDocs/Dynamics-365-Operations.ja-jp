@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7fad2f0eedabcc7ea128010fd27eeed7364a95f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 47786c36a1f6ad495a236bdb38945726cbeac1aa
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537458"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595507"
 ---
 # <a name="details-transaction-form-pattern"></a>詳細トランザクション フォーム パターン
 
@@ -194,8 +194,8 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="ax-2012-links"></a>AX 2012 リンク
 
--   [ユーザー エクスペリエンス ガイドラインの詳細を含む MSDN 詳細フォーム \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/gg886601.aspx)
--   [MSDN 詳細フォーム \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/hh397318.aspx)
+-   [ユーザー エクスペリエンス ガイドラインの詳細を含む MSDN 詳細フォーム \[AX 2012\]](https://msdn.microsoft.com/library/gg886601.aspx)
+-   [MSDN 詳細フォーム \[AX 2012\]](https://msdn.microsoft.com/library/hh397318.aspx)
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 

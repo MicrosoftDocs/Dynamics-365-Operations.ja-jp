@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 021d2cac9b6c0c36be18e16893fdef20e502556e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c4d1b5a7e4ff92510b466576d024cd4a4309a646
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537443"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550917"
 ---
 # <a name="class-extension-model-in-x"></a>X++ の拡張モデルのクラス
 

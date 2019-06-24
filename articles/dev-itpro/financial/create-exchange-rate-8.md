@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jbye
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 90e8123b7fe432fc88877b3fb452c1428addcf7c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3da4544cbfdf1d6693696aec84f53737855b514a
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1510974"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595413"
 ---
 # <a name="create-exchange-rate-providers-in-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 を使用した為替レート プロバイダーの作成
 
@@ -32,7 +32,7 @@ ms.locfileid: "1510974"
 
 このトピックで説明している手順に従って、機能為替レート プロバイダーを作成できます。 このコードは生産コードです。 ソースは **ExchangeRateProviderOanda** クラスで見つけることができます。 必要に応じて、このトピックからそのクラスを参照することができます。
 
-OANDA テスト アカウントを要求し、OANDA 為替レートに関する情報を受け取るには、<http://developer.oanda.com/exchange-rates-api/> にアクセスしてください。
+OANDA テスト アカウントを要求し、OANDA 為替レートに関する情報を受け取るには、<https://developer.oanda.com/exchange-rates-api/> にアクセスしてください。
 
 ## <a name="terminology"></a>用語
 - **現在の通貨為替レートをインポート** – 為替レート プロバイダーから為替レートを取得してインポートするプロセス。 このプロセスは、バッチ処理をサポートするシステム操作です。

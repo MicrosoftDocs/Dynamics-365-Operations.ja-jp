@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: c0477d50d89059e4425f7ee7883ab9e99af08b21
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 21ec32bafeeb51fd64f579270b0def656fc2548e
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537241"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544084"
 ---
 # <a name="infrastructure-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール
 

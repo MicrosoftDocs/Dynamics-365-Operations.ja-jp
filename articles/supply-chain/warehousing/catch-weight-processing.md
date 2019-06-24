@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 14f2c6eb3baf0de65de3b72e10b42b03a8c6b21a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6e295456838ca0195a472518b5979dfdc7819f74
+ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536713"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1617976"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>倉庫管理による CW 製品の処理
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/pivate-preview-banner.md)]
+[!include [banner](../includes/pivate-preview-banner.md)]
 
 
 ## <a name="feature-exposure"></a>エクスポージャ機能
@@ -138,10 +138,6 @@ CW タグの追跡が使用されていない場合は、各分析コードの�
 - 検査指示の手動作成では、CW 製品はサポートされていません。
 - 作業に関連付けしている在庫の手動による移動では、CW 製品はサポートされていません。
 - ライセンス プレートの連結では、CW 製品はサポートされていません。
-- 定期処理タスクの一部としての倉庫在庫ステータスの変更では、CW 製品はサポートされていません。
-- クエリで定義されている在庫ステータスの変更では、CW 製品はサポートされていません。 (品質指示の在庫ステータスへの変更もサポートしていません。)
-- CW 製品では、在庫ステータスは**保管場所ごとの手持在庫**ページから変更できません。
-- CW 製品では、在庫ステータスは倉庫アプリケーション振替作業の一部として変更できません。
 - 倉庫の在庫を初期化するためのライセンス プレートの読み込みでは、CW 製品はサポートされていません。
 - バッチ バランシングのプロセスでは、CW 製品はサポートされていません。
 - マイナスの現物在庫の処理では、CW 製品はサポートされていません。
@@ -151,7 +147,6 @@ CW タグの追跡が使用されていない場合は、各分析コードの�
 
 - クラスター ピッキングの機能では、CW 製品はサポートされていません。
 - ピッキングと梱包の倉庫の処理では、CW 製品はサポートされていません。
-- CW 製品では、作業を**作業**ページから完了できません。
 - CW 製品では、作業テンプレートで定義されている作業を自動的に実行できます。
 - 逆仕訳作業の機能では、CW 製品はサポートされていません。
 - CW 製品では、コンテナーが終了した後に、作業が作成される手作業の梱包ステーションの処理はサポートされていません。
@@ -163,7 +158,7 @@ CW タグの追跡が使用されていない場合は、各分析コードの�
 - かんばんの機能では、CW 製品はサポートされていません。
 - CW 製品では、シリアル番号を消費する前に登録することはできません。
 - 逆仕訳ライセンス プレートの機能では、CW 製品はサポートされていません。
-- CW 製品では、完了報告はシリアル番号で登録できます。
+- CW 製品では、完了報告はシリアル番号で登録できません。
 
 ### <a name="transportation-management-processing"></a>輸送管理プロセス
 

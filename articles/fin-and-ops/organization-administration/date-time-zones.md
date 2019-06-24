@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25840cfa2152da486a1dd521ba08c2fa779e750d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: da87cbc27d637fbdabc1fceb5777360198a67ff5
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509628"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1573130"
 ---
 # <a name="datetime-data-and-time-zones"></a>日時データとタイム ゾーン
 

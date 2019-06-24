@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 213d7e01e0d174cf6b0181df6d7b7c23ea117ac9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a11860e7f1138fe5e20a6bf4ac8c3e966444b918
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506222"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595466"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 
@@ -89,7 +89,7 @@ ms.locfileid: "1506222"
 ## <a name="select-the-correct-data-upgrade-deployable-package"></a>適切なデータ アップグレード展開可能なパッケージを選択
 
 最新の Finance and Operations 更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード配置可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共有アセット ライブラリからダウンロードします。
-1. http://lcs.dynamics.com/ へサインインします。
+1. [LCS](https://lcs.dynamics.com/) にサインインします。
 2. **共有資産** ライブラリ タイルを選択します。
 3. 共有アセット ライブラリの**アセット タイプの選択**で、**ソフトウェア配置可能パッケージ**を選択します。
 4. 配置可能パッケージ ファイルの一覧で、アップグレードに対応するデータ アップグレード パッケージを検索します。
@@ -124,7 +124,7 @@ ms.locfileid: "1506222"
     > [!NOTE]
     > 以前のリリースで実行されている実稼働データベースのデータのアップグレードを検査する場合: 実稼働環境からデモまたは開発環境にデータベースをコピーするには [標準ユーザー受け入れテスト (UAT) データベースのコピーのエクスポート](../database/dbmovement-scenario-exportuat.md) の手順に従ってください。   
     > 
-    > Azure 仮想マシン (VM) 間でアップロード/ダウンロードの速度を向上するには、AzCopy を使用することをお勧めします。 AzCopy をダウンロードする方法、およびそれを使用して Azure blob ストアにコピーまたは Azure blob ストアからコピーする方法については、[AzCopy Command-Line Utility でデータを転送する](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) を参照してください。
+    > Azure 仮想マシン (VM) 間でアップロード/ダウンロードの速度を向上するには、AzCopy を使用することをお勧めします。 AzCopy をダウンロードする方法、およびそれを使用して Azure blob ストアにコピーまたは Azure blob ストアからコピーする方法については、[AzCopy Command-Line Utility でデータを転送する](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/) を参照してください。
 
 3. 接尾語 **\_orig** を追加することによって、元のデータベースの名前を変更します。 元のデータベースと同じ名前になるように、新しく復元したデータベースの名前を変更します。 この方法で、2 つのデータベースが場所を切り替えます。
 

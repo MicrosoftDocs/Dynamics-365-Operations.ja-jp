@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 08a4c0043b989824d6fbb7e8362e116b058f7cab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c73c504301945cf371dd10e5508a44222724a8fc
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506219"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566353"
 ---
 # <a name="show-counts-in-fields"></a>フィールドに数を表示
 

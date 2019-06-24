@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab8012fbb7569a2c89841699ed3c98b26ea0db5d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 13d0644ae4590803118e12038ae6d070cb678e73
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502673"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551779"
 ---
 # <a name="create-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションを作成する
 

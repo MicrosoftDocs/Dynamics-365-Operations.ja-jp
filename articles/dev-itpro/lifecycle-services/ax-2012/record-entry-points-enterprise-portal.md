@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 2012 R3 CU8
-ms.openlocfilehash: 9b9c9eec377f04cc35c03c63b398e0d9a38347a4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9e8305fbcb38fc56bc33dcb29e78841a3cac4e5f
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537228"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544077"
 ---
 # <a name="record-entry-points-in-enterprise-portal"></a>エンタープライズ ポータルのエントリ ポイントを記録
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6f036d917fa14cc784ec7e583a8ad73943cf3ae
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: da0e173602d637a7bb0584dab15f79a941ff7a34
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537181"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595474"
 ---
 # <a name="patch-sql-server-reporting-services-ssrs-in-one-box-environments"></a>1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用
 
@@ -35,7 +35,7 @@ ms.locfileid: "1537181"
 次の手順は、1 ボックス開発環境のみを対象としています。
 
 -   パッチ .zip file を Lifecycle Services (LCS) からダウンロードします。
--   レポート サービスの修正プログラムのデータのフォルダーにフォント ファイルがある場合は、SQL Server Reporting Services (SSRS) が実行されているコンピューターにこれらをインストールします。 Windows でのフォントのインストールの詳細については、「<http://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx>」を参照してください。  既にインストールされているフォントは再度インストールする必要はありません。
+-   レポート サービスの修正プログラムのデータのフォルダーにフォント ファイルがある場合は、SQL Server Reporting Services (SSRS) が実行されているコンピューターにこれらをインストールします。 Windows にフォントをインストールする詳細については [TrueType 概要](https://www.microsoft.com/Typography/TrueTypeInstall.aspx) を参照してください。  既にインストールされているフォントは再度インストールする必要はありません。
 -   Reporting Services のパッチ スクリプト フォルダーのファイルを C:\\Packages\\Plugins\\AxReportVmRoleStartupTask の下にあるレポート プラグイン フォルダーにコピーします。
 -   ディレクトリを、スクリプト ファイルを格納したレポート プラグイン フォルダに変更します。
 -   以下に示すメソッドのいずれかを使用して、レポート拡張機能の古いインスタンスを置き換えます。
@@ -58,7 +58,8 @@ SSRS が実行されているマシンの管理者グループのユーザーと
 2.  SQL Server Reporting Services バイナリ フォルダーを検索します。 このフォルダーは、通常、C:\\Program Files\\Microsoft SQL Server\\MSRS11.MSSQLSERVER\\Reporting Services\\ReportServer\\bin にあります。
 3.  次のファイルのいずれかがパッチにある場合は、それらのファイルを SQL Server Reporting Services Bin フォルダーにコピーします。* *
 
-**注記:** パッチは、サービスによって使用されるすべてのファイルを含む完全なパッチ、または変更されたファイルのみを含む増分パッチのいずれかです。 差分の修正プログラムを使用する場合は、一部のファイルが含まれない可能性があります。 パッチに含まれていないファイルは、置き換える必要はありません。
+> [!NOTE]
+> パッチは、サービスによって使用されるすべてのファイルを含む完全なパッチ、または変更されたファイルのみを含む増分パッチのいずれかです。 差分の修正プログラムを使用する場合は、一部のファイルが含まれない可能性があります。 パッチに含まれていないファイルは、置き換える必要はありません。
 
 -   Microsoft.Dynamics.AX.Framework.Services.Platform.Client.dll
 -   Microsoft.Dynamics.Framework.ReportsExtensions.dll

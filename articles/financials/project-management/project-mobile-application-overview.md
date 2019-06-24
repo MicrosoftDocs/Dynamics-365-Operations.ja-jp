@@ -3,7 +3,7 @@ title: プロジェクト モバイル アプリケーションの概要
 description: このトピックでは、モバイルデバイスで利用可能な Microsoft Dynamics 365 のプロジェクト時間関連のアプリケーションに関する一般情報を提供します。
 author: KimANelson
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 5b0560a8be32962f94b24754458fb2cf714a15c8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 22ccc70e242ffc9a487720c6a25fa6c5b8d78073
+ms.sourcegitcommit: 2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1529974"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "1608141"
 ---
 # <a name="project-mobile-applications-overview"></a>プロジェクト モバイル アプリケーションの概要
 
@@ -45,4 +45,4 @@ Dynamics 365 プロジェクト タイムシート モバイル アプリを使�
 
 ## <a name="for-more-information"></a>詳細情報
 
-詳細については、[Microsoft Dynamics 365 Project Timesheet モバイル アプリケーション](project-timesheet.md)、[プロジェクト時間の入力]( project-time-entry-mobile-workspace.md)、および [モバイル デバイスでのプロジェクト タイムシート](Mobile-timesheets.md) を参照してください。
+詳細については、[Microsoft Dynamics 365 Project Timesheet モバイル アプリケーション](project-timesheet.md)、[プロジェクト タイム エントリ]( project-time-entry-mobile-workspace.md)、[モバイル デバイスの Project Timesheet](Mobile-timesheets.md)、および[Project Timesheet モバイル アプリのカスタム フィールドの実装](custom-fields-mobile.md) を参照してください。

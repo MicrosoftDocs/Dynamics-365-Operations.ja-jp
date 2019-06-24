@@ -3,7 +3,7 @@ title: 削除済みまたは推奨されない機能
 description: このトピックでは、削除された、または削除される予定の機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1527674"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620648"
 ---
 # <a name="removed-or-deprecated-features"></a>削除または削除予定の機能
 
@@ -38,8 +38,35 @@ ms.locfileid: "1527674"
 > [!NOTE]
 > Dynamics 365 for Finance and Operations 2017 年 7 月リリースおよびプラットフォーム更新プログラム 8 から始まり、削除または削除予定の機能ごとに、展開のタイプが記録されます。 このトピックに記載されているすべての以前のリリースは、クラウド配置のみサポートされています。
 
-> [!NOTE]
 > Finance and Operations 内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations の各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="dynamics-365-for-finance-and-operations-1004"></a>Dynamics 365 for Finance and Operations 10.0.4 
+
+### <a name="france-fec-accounting-data-export-in-xml"></a>フランス用: XML の FEC 会計データ エクスポート
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | TXT 形式に置換られ、**フランス用 FEC 監査ファイル**は、**一般会計** \> **定期処理タスク** \> **データ エクスポート**を通じて利用できます。
+| **別の機能で置き換えられているか?**   | はい |
+| **影響を受ける製品領域**         | 一般会計 |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨。 機能を削除するターゲットのタイムフレームは 2020年 7 月です。 |
+
+=======
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 プラット更新プログラム 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 プラットフォーム更新プログラム 28 は、プレビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](../../fin-and-ops/get-started/public-preview-releases.md) を参照してください。
+
+### <a name="legacy-navigation-bar"></a>レガシー ナビゲーション バー
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 他の Dynamics および Office 製品のヘッダー配置。 詳細については、[Office のヘッダーに対応した更新済みのナビゲーション バー](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar) を参照してください。
+| **別の機能で置き換えられているか?**   | プラットフォーム更新プログラム 24 から開始し、検索機能を持つ再スタイルされたナビゲーション バーを追加しました。 |
+| **影響を受ける製品領域**         | Web クライアント |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: 2020 年 4 月から、ナビゲーション バーは使用できなくなります。 それまで、顧客は**クライアント パフォーマンス オプション**ページを使用して、従来のナビゲーション バーを使用することができます。 |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 プラット更新プログラム 26

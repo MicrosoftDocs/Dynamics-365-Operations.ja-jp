@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-12-10
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 9edebda48f0f33535975c539326065ab424cfd28
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2f46e9f2bbcfbd5e566107405af202efcea104f
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512134"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544104"
 ---
 # <a name="price-and-discount-extensibility"></a>価格と割引の拡張性
 

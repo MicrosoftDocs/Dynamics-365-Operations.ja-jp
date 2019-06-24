@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c9dec578091f5b3cb468525eff3f947b54ace4ff
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 7600249d0f5fa81c3d9977aa25e6341ad77ecd5a
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512990"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577946"
 ---
 # <a name="retail-software-development-kit-sdk"></a>Retail ソフトウェア開発キット (SDK)
 
@@ -48,7 +48,7 @@ Visual Studio Online などのソース管理システムに SDK を配置する
 
 ### <a name="rapid-development"></a>高速開発
 
-Retail SDK の主な焦点は、カスタマイズを効率的かつ正しく作成するのに役立ちます。 SDK を使用すると、Microsoft Visual Studio の F5 機能 (実行とデバッグ) を使用して単一コンピューター デモ環境で直接アプリケーションを実行できます。 すべての必要な「配備雑用」が行われます。 したがって、ファイルをコピーする必要はありません。
+Retail SDK の主な焦点は、カスタマイズを効率的かつ正しく作成するのに役立ちます。 SDK を使用すると、Microsoft Visual Studio の F5 機能 (実行とデバッグ) を使用して単一コンピューター デモ環境で直接アプリケーションを実行できます。 すべての必要な "展開処理" が行われます。 したがって、ファイルをコピーする必要はありません。
 
 ### <a name="full-msbuild-integration"></a>完全な MSBuild 統合
 
@@ -61,22 +61,24 @@ Retail SDK には、サービスを配置するために必要なすべてのも
 ### <a name="better-code-separation"></a>より良いコードの分離
 
 Retail SDK の更新が必要な場合、潜在的なコード結合が必要です。 この要件は、既存のコード サンプルまたは変更されているテンプレートに適用されます。 SDK の実装とフォルダー構造のいくつかの機能は、サンプル コードからカスタム コードをより簡単に分離するのに役立ちます。 将来のリリースでコード分離のその他の機能強化が追加される予定です。
+
 ### <a name="real-world-implementation-samples"></a>実際の実装サンプル
 
 一部の Retail 実装のソース コードに加えて、Retail SDK には特定のシナリオを実装する方法を示すサンプル コードが含まれています。
 
 ## <a name="retail-sdk-deep-dive"></a>Retail SDK の詳細な情報
+
 ### <a name="prerequisites"></a>前提条件
 
--   カスタマイズの**コード**を書いたり**ビルド**するには、次のツールが必要です。
+- カスタマイズの**コード**を書いたり**ビルド**するには、次のツールが必要です。
 
-    -   Typescript 1.5 付き Microsoft Visual Studio 2015 (LCS 開発者トポロジが許容可能)
-    -   ASP.NET MVC 4.0 (LCS 開発者トポロジ受入可能) (店舗でのみ必須)
-    -   150 MB 以上の使用可能なディスク領域 (LCS 開発者トポロジを受入可能)
+    - Typescript 1.5 付き Microsoft Visual Studio 2015 (LCS 開発者トポロジが許容可能)
+    - ASP.NET MVC 4.0 (LCS 開発者トポロジ受入可能) (店舗でのみ必須)
+    - 150 MB 以上の使用可能なディスク領域 (LCS 開発者トポロジを受入可能)
 
     この要件のリストは非常に短く、開発者は簡単なラップトップで生産性を高めることができます。 検証ユーティリティの前提条件はなくなりました。
 
--   カスタマイズを**実行**するには、Retail を実行するための通常の前提条件が適用されます。 開発時に、シングル ボックスの開発者トポロジ (LCS クラウド ホストまたはダウンロードのいずれか) でカスタマイズを実行することをお勧めします。
+- カスタマイズを**実行**するには、Retail を実行するための通常の前提条件が適用されます。 開発時に、シングル ボックスの開発者トポロジ (LCS クラウド ホストまたはダウンロードのいずれか) でカスタマイズを実行することをお勧めします。
 
 ### <a name="retail-sdk-contents"></a>Retail SDK のコンテンツ
 
@@ -86,22 +88,18 @@ Retail SDK の更新が必要な場合、潜在的なコード結合が必要で
 > 上記のフォルダー構造と説明は、Retail の 2017 年 7 月のアップデート (7.2) にのみ適用されます。 Retail 7.3 のリリースで、Retail プロキシおよびハードウェア ステーション プロジェクトが含まれました。 したがって、Retail 7.3 リリースでは、ハードウェア ステーションと小売プロキシのサンプルのみが表示されます。 プロキシは、新しい拡張性パターンに従って作成できます。
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>フォルダー/ファイル</th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>資産</td>
 <td>スクリプトや構成ファイル (commerceRuntime.config、dllhost.exe.config など) などの共有アイテムが含まれています。 コンフィギュレーション ファイルは、この場所でカスタマイズおよび編集する必要があります。 作成されたワークスペースを使用するプロジェクトで、ワークスペースが適切にピッキングされます。</td>
 </tr>
-<tr class="even">
+<tr>
 <td>BuildTools</td>
 <td>MSBuild およびグローバル構成に関連するものがすべて含まれています。 Customization.settings は、ビルド システムを設定するために使用する主要なファイルです。 次のリストは、このファイルが制御し、カスタマイザーが変更する可能性が高い項目を示しています。
 <ul>
@@ -113,30 +111,31 @@ Retail SDK の更新が必要な場合、潜在的なコード結合が必要で
 <li>発行元 (CustomPublisher)</li>
 <li>コード署名 (SignAssembly、AssemblyOriginatorKeyFile)</li>
 <li>Modern POS の証明書パス (ModernPOSPackageCertificateKeyFile)</li>
-<li>カスタマイズ (RetailServerLibraryPathForProxyGeneration、ISV_*) に関連付けられているファイル</li>
-</ul></td>
+<li>カスタマイズに関連付けられているファイル (RetailServerLibraryPathForProxyGeneration、ISV\_\*)</li>
+</ul>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>CommerceRuntime</td>
 <td>Visual Studio ソリューション ファイル (CommerceRuntime.sln) および関連する C# プロジェクト (CommerceRuntime、PricingEngine) が含まれています。</td>
 </tr>
-<tr class="even">
+<tr>
 <td> データベース</td>
-<td>共有データベース スクリプトが含まれています。 完全なスクリプト CommerceRuntimeScripts_Create.sql は、新しい基本データベースの作成にのみ使用されます。 アップグレード フォルダーには、Microsoft とカスタマイザーの両方からの増分スクリプトが含まれています。 配置中にデータベースまたはデータベースのバージョンが存在すると、完全スクリプトまたは増分スクリプトの実行をコントロールします。 実行されたことのないスクリプトのみ実行されます。</td>
+<td>共有データベース スクリプトが含まれています。 CommerceRuntimeScripts\_Create.sql のすべてのスクリプトは、新規の基礎データベース作成にのみ使用されます。 アップグレード フォルダーには、Microsoft とカスタマイザーの両方からの増分スクリプトが含まれています。 配置中にデータベースまたはデータベースのバージョンが存在すると、完全スクリプトまたは増分スクリプトの実行をコントロールします。 まだ実行されていないスクリプトのみが実行されます。</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ハードウェア ステーション</td>
 <td>Visual Studio ソリューション ファイル (HardwareStation.sln) および関連する C# プロジェクト (HardwareStation ライブラリと Webhost) が含まれています。</td>
 </tr>
-<tr class="even">
+<tr>
 <td>OnlineStore</td>
 <td>Visual Studio ソリューション ファイル (OnlineStore.sln) および関連する C# プロジェクト (Ecommerce SDK) が含まれています。</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>パッケージ</td>
 <td>パッケージ作成用の複数のプロジェクトが含まれています。 これらのパッケージは、LCS を介して配布するために使用されます。 これらのパッケージには、最終的な web.config ファイルも含まれています。</td>
 </tr>
-<tr class="even">
+<tr>
 <td>PaymentExternals</td>
 <td>支払に関連するすべてのアセンブリが含まれます。 次の 3 つのサブフォルダでは、さまざまな支払ファイルを保持します。
 <ul>
@@ -147,42 +146,42 @@ Retail SDK の更新が必要な場合、潜在的なコード結合が必要で
 </ul>
 </td>
 </tr>
-<tr class="odd">
+<tr>
 <td>支払利息</td>
 <td>Visual Studio ソリューション ファイル (PaymentSDK.sln) および関連する C# プロジェクト (PaymentSDK コネクタ、サンプル、機能テスト) が含まれています。</td>
 </tr>
-<tr class="even">
+<tr>
 <td>POS</td>
 <td>POS 用のファイルが含まれています。
 <ul>
-<li>CloudPos.sln</li>
-<li>ModernPos.sln</li>
-<li>フォルダ コア – 低レベルで共有する POS コード</li>
-<li>フォルダー ViewModels – 共有する POS ビュー モデル</li>
-<li>フォルダー SharedApp – 共有する POS ビュー</li>
-<li>フォルダー アプリ – Modern POS– 特定のビューおよびその他の品目</li>
-<li>フォルダー Web – クラウド POS– 特定のビューおよびその他の品目</li>
+<li><strong>CloudPos.sln</strong></li>
+<li><strong>ModernPos.sln</strong></li>
+<li><strong>フォルダ コア</strong> – 低レベルで共有されるPOS コード</li>
+<li><strong>フォルダ ビューモデル</strong> – 共有される POS ビュー モデル</li>
+<li><strong>フォルダ シェアアプリ</strong> – 共有される POS ビュー</li>
+<li><strong>フォルダ アプリ</strong> – Modern POS– 特定のビューおよびその他の品目</li>
+<li><strong>フォルダ ウェブ</strong> – クラウド POS– 特定のビューおよびその他の品目</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>プロキシ</td>
 <td>他のユーザーが参照する 2 つの Visual Studio プロジェクトが含まれています。 これらのプロジェクトには、Retail Server のプロキシ クライアントとして機能するインターフェイスと生成されたコードが含まれています。 Proxies.Retail.TypeScript は TypeScript プロキシで、RetailProxy は C# プロキシです。 Modern POS/Cloud POS と ECommerce SDK で使用されています。</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>参照</td>
-<td>すべてのバイナリが存在する単一の場所。 場所は、プロジェクトのバイナリ参照を解決するために使用されます。 ファイルのリストには、外部の非 Retail バイナリと Microsoft Retail バイナリが含まれています。 また、このディレクトリは、Retail SDK からビルドされているバイナリのグローバルな格納場所として使用されます。</td>
+<td>すべてのバイナリが存在する単一の場所。 この場所は、プロジェクトのバイナリ参照を解決するために使用されます。 ファイルのリストには、外部の非 Retail バイナリと Microsoft Retail バイナリが含まれています。 また、このディレクトリは、Retail SDK からビルドされているバイナリのグローバルな格納場所として使用されます。</td>
 </tr>
-<tr class="even">
+<tr>
 <td>SampleExtensions</td>
 <td>サンプル拡張子を含みます。</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>dirs.proj</td>
 <td>ビルド順序を指示するトップレベルの MSBuild ファイル。</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Microsoft-version.txt</td>
-<td>Retail SDK の Microsoft のバージョンを含むファイル。 ファイルを編集しないでください。</td>
+<td>Retail SDK の Microsoft のバージョンを含むファイル。 このファイルを編集しないでください。</td>
 </tr>
 </tbody>
 </table>
@@ -199,30 +198,34 @@ SDK の C\# ソース コードは、Contoso 名前空間を使用します。 �
 
 次の重要な点を考慮してください。
 
--   RetailServer API は、自動的に生成されたクライアント プロキシ コードを使用していくつかのプロジェクトによって消費されます。 この動作により、より迅速な開発が可能になり、エラーやバグの機会が減ります。  既定では、Retail SDK は公式の Microsoft DLL を使用してクライアント コードを生成します。 カスタマイザーは独自の DLL (Customization.settings 内) に切り替えることができ、カスタマイズされた RetailServer API 用のプロキシ コードを自動的に生成することができます。 DLL を切り替えた後、開発者は、RetailProxy プロジェクト内のいくつかの実装を変更する必要がある場合があります。 その理由は、オフライン モードの Modern POS は Commerce Runtime と直接通信する必要があり、そのコードを実装する必要があるためです。 ただし、推測は必要ありません。 C\# コンパイラはこれを強制します。
--   パッケージ プロジェクトは、LCS で想定されている方法で配置パッケージを生成します。 既定では、これらのプロジェクトは Microsoft の資産 (カスタマイズされていない) とプロキシ DLL のみを出荷します。 含まれるべきものは、Customization.settings で明示的に記名される必要があります。 この動作は仕様です。 これは配置されたカスタム コードを削減して、バイナリ パッチを許可します。 たとえば、カスタマイズは、新しい CommerceRuntime サービスおよび新しい RetailServer コントローラーを追加します。 この場合、2 つの新しい DLL はパッケージの内容に登録され、関連するすべての場所に自動的に含まれます。 パッケージには、SDK のすべての再コンパイルされたバイナリは **ありません**。
--   すべてのプロジェクトを含む単一の Visual Studio ソリューションはありません。 さまざまな Visual Studio プロジェクト間にいくつかの結合があるため、複数のプロジェクトまたはソリューションを並べて開くことができ、変更後に適切なプロジェクトをコンパイルできます。
--   すべてのコンポーネントをカスタマイズしなくても、最終的な配置パッケージを入手する最も簡単な方法は、Retail SDK 全体を構築することです。 これを行うには、**VS2015 の MSBuild コマンド プロンプト** ウィンドウを開き、**msbuild** (または非デバッグ バージョンでは、**msbuild /p:Configuration=Release**) を入力します。 
+- RetailServer API は、自動的に生成されたクライアント プロキシ コードを使用していくつかのプロジェクトによって消費されます。 この動作により、より迅速な開発が可能になり、エラーやバグの機会が減ります。  既定では、Retail SDK は公式の Microsoft DLL を使用してクライアント コードを生成します。 カスタマイザーは独自の DLL (Customization.settings 内) に切り替えることができ、カスタマイズされた RetailServer API 用のプロキシ コードを自動的に生成することができます。 DLL を切り替えた後、開発者は、RetailProxy プロジェクト内のいくつかの実装を変更する必要がある場合があります。 その理由は、オフライン モードの Modern POS は Commerce Runtime と直接通信する必要があり、そのコードを実装する必要があるためです。 ただし、推測は必要ありません。 C\# コンパイラはこれを強制します。
+- パッケージ プロジェクトは、LCS で想定されている方法で配置パッケージを生成します。 既定では、これらのプロジェクトは Microsoft の資産 (カスタマイズされていない) とプロキシ DLL のみを出荷します。 含まれるべきものは、Customization.settings で明示的に記名される必要があります。 この動作は仕様です。 これは配置されたカスタム コードを削減して、バイナリ パッチを許可します。 たとえば、カスタマイズは、新しい CommerceRuntime サービスおよび新しい RetailServer コントローラーを追加します。 この場合、2 つの新しい DLL はパッケージの内容に登録され、関連するすべての場所に自動的に含まれます。 パッケージには、SDK のすべての再コンパイルされたバイナリは **ありません**。
+- すべてのプロジェクトを含む単一の Visual Studio ソリューションはありません。 さまざまな Visual Studio プロジェクト間にいくつかの結合があるため、複数のプロジェクトまたはソリューションを並べて開くことができ、変更後に適切なプロジェクトをコンパイルできます。
+- すべてのコンポーネントをカスタマイズしなくても、最終的な配置パッケージを入手する最も簡単な方法は、Retail SDK 全体を構築することです。 これを行うには、**VS2015 の MSBuild コマンド プロンプト** ウィンドウを開き、**msbuild** (または非デバッグ バージョンでは、**msbuild /p:Configuration=Release**) を入力します。 
 
 [![RetailSDK04](./media/retailsdk04.png)](./media/retailsdk04.png)
 
 このコマンドはすべてのプロジェクトをビルドします。 この方法は、実装やコードのバグがないことを確認する優れた方法も提供します。  バグがある場合は、ビルドが失敗し、コマンド プロンプト ウィンドウに失敗した内容が表示されます (この出力は Visual Studio の表示と似ています)。 
 
-[![RetailSDK05](./media/retailsdk05.png)](./media/retailsdk05.png) MSBuild の詳細については、以下を参照してください[https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx](https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx)。 
+[![RetailSDK05](./media/retailsdk05.png)](./media/retailsdk05.png)
 
-ビルドによって作成されるバイナリは、自動的に SDK リファレンス フォルダーにコピーされます。 References フォルダーには、その他のすべてのバイナリも含まれます。 DLL には、すべて Customization.settings で定義できる名前 (この場合は「Contoso」) が接頭語にあるため上書きされないことに注意します。 
+MSBuild の詳細なヘルプについては、 [https://msdn.microsoft.com/library/0k6kkbsd.aspx](https://msdn.microsoft.com/library/0k6kkbsd.aspx)を参照してください。 
+
+ビルドによって作成されるバイナリは、SDK リファレンス フォルダーに自動的にコピーされます。 References フォルダーには、その他のすべてのバイナリも含まれます。 DLL には、すべて Customization.settings で定義できる名前 (この場合は「Contoso」) が接頭語にあるため上書きされないことに注意します。 
 
 [![RetailSDK06](./media/retailsdk06.png)](./media/retailsdk06.png)
 
 ### <a name="minimal-required-configuration"></a>最小限必要なコンフィギュレーション
 
-Retail SDK をすばやくビルドしたり、デモ マシンでデバッガーの POS を実行したいのですか。 Modern POS のみで、正しく構築するためのアプリ パッケージ署名証明書を作成する必要があります。 また、クラウド POS を使用することができます。 [https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85).aspx) で PFX ファイルを作成する指示に従ってください。 PFX ファイルを BuildTools フォルダーにコピーし、 BuildTools\\Customization.settings ファイルを正しい名前 (ModernPOSPackageCertificateKeyFile) で更新します。 この時点で個々のソリューション、プロジェクト、または Retail SDK 全体を (MSBuild を使用して) ビルドするために必要なものはすべてあります。
+Retail SDK をすばやくビルドしたり、デモ マシンでデバッガーの POS を実行したいのですか。 Modern POS のみで、正しく構築するためのアプリ パッケージ署名証明書を作成する必要があります。 また、クラウド POS を使用することができます。 [https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) で PFX ファイルを作成する指示に従ってください。 PFX ファイルを BuildTools フォルダーにコピーし、 BuildTools\\Customization.settings ファイルを正しい名前 (ModernPOSPackageCertificateKeyFile) で更新します。 この時点で個々のソリューション、プロジェクト、または Retail SDK 全体を (MSBuild を使用して) ビルドするために必要なものはすべてあります。
 
 ### <a name="normal-configurationcode-signing"></a>通常の構成/コード署名
 
 BuildTools\\Customization.settings には SDK のほとんどのコンフィギュレーション値が保持されています。 次の図の強調表示された項目はグローバル値です。 これらの値は、ビルド バイナリ、コンポーネント、パッケージの名前付け、バージョン管理、コード署名の方法を制御します。 
 
-[![RetailSDK07](./media/retailsdk07.png)](./media/retailsdk07.png) これは必須ではありませんが、厳密な名前でアセンブリに署名することをお勧めします。 独自のキー ファイルをまだ作成していない場合に作成する方法については、[[https://msdn.microsoft.com/en-us/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/en-us/library/6f05ezxy(v=vs.110).aspx)] を参照してください。 正しくビルドするには、アプリ パッケージの署名証明書を作成する必要があります。 [https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85).aspx) で PFX ファイルを作成するこれらの指示に従ってください。 厳密な名前のキー ファイルとアプリ パッケージの署名証明書の両方を BuildTools フォルダー内に保存することができます。 **RetailServerLibraryPathForProxyGeneration** プロパティは、プロキシ生成で異なる RetailServer DLL を設定するために使用することができます。 Customization.settings は、バイナリー、コンフィギュレーション ファイル、SQL 更新スクリプトなどの新しいカスタマイズ資産を定義する場所でもあります。 拡張子、バイナリ、および資産をここで指定した後、ファイルは作成された配置可能パッケージに追加されます。 
+[![RetailSDK07](./media/retailsdk07.png)](./media/retailsdk07.png)
+
+必須ではありませんが、厳密名でアセンブリに署名することをお勧めします。 独自のキー ファイルをまだ作成していない場合に作成する方法については、[[https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx)] を参照してください。 正しくビルドするには、アプリ パッケージの署名証明書を作成する必要があります。 [https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) で PFX ファイルを作成するこれらの指示に従ってください。 厳密な名前のキー ファイルとアプリ パッケージの署名証明書の両方を BuildTools フォルダー内に保存することができます。 **RetailServerLibraryPathForProxyGeneration** プロパティは、プロキシ生成で異なる RetailServer DLL を設定するために使用することができます。 Customization.settings は、バイナリー、コンフィギュレーション ファイル、SQL 更新スクリプトなどの新しいカスタマイズ資産を定義する場所でもあります。 拡張子、バイナリ、および資産をここで指定した後、ファイルは作成された配置可能パッケージに追加されます。 
 
 [![RetailSDK08](./media/retailsdk08.png)](./media/retailsdk08.png)
 
@@ -230,13 +233,13 @@ BuildTools\\Customization.settings には SDK のほとんどのコンフィギ�
 
 #### <a name="adding-new-projects"></a>新しいプロジェクトの追加
 
-新しいプロジェクトを Retail SDK のビルド システムに追加するのは簡単です。 多くの既存のプロジェクトのいずれかを複製するか、新しいプロジェクトを開始することができます。 次の図に示すように、テキスト エディタでいくつかの調整を加える必要があるだけです。 **Import** 要素の相対パスを調整する必要があり、**AssemblyName** 要素は定義済みの **AssemblyNamePrefix** プロパティを使用する必要があります。 これらの調整は、バージョン管理、コード署名、統一されたアセンブリ命名、[参照] フォルダーへの自動ドロップ、その他のタスクを無料で行うために必要です。 
+簡単に新しいプロジェクトを Retail SDK のビルド システムに追加することができます。 多くの既存のプロジェクトのいずれかを複製するか、新しいプロジェクトを開始することができます。 次の図に示すように、テキスト エディタでいくつかの調整を加える必要があるだけです。 **Import** 要素の相対パスを調整する必要があり、**AssemblyName** 要素は定義済みの **AssemblyNamePrefix** プロパティを使用する必要があります。 これらの調整は、バージョン管理、コード署名、統一されたアセンブリ命名、[参照] フォルダーへの自動ドロップ、その他のタスクを無料で行うために必要です。 
 
 [![RetailSDK09](./media/retailsdk09.png)](./media/retailsdk09.png)
 
 #### <a name="changing-the-build-order-or-adding-to-the-build"></a>ビルド順序の変更またはビルドへの追加
 
-Retail SDK のディレクトリ ツリー全体は、MSBuild トラバーサル ファイル (dirs.proj ファイル) サポートを受けて構築されています。 次の図は、Retail SDK の主なトラバーサルファイルを示しています。 類似したファイルは、サブディレクトリにも存在する場合があります。 Visual Studio ソリューション ファイル (.sln ファイル) がトラバーサル ファイルに非常に類似していることに注意します。 どちらも他のビルド スクリプトを処理することを MSBuild エンジンに「指示」します。 
+Retail SDK のディレクトリ ツリー全体は、MSBuild トラバーサル ファイル (dirs.proj ファイル) サポートを受けて構築されています。 次の図は、Retail SDK の主なトラバーサルファイルを示しています。 類似したファイルは、サブディレクトリにも存在する場合があります。 Visual Studio ソリューション ファイル (.sln ファイル) がトラバーサル ファイルに非常に類似していることに注意します。 どちらもMSBuild エンジンに対して、他のビルド スクリプトを処理するよう "命令"します。 
 
 [![RetailSDK10](./media/retailsdk10.png)](./media/retailsdk10.png) 
 
@@ -260,7 +263,9 @@ Retail SDK のディレクトリ ツリー全体は、MSBuild トラバーサル
 
 ### <a name="branching-and-versioning"></a>分岐およびバージョン管理
 
-チームで効率的に仕事をしたり、過去に行ったいくつかの変更を確認できるようにするには、適正な分岐戦略とバージョン管理の規範が必要です。 次の図は、ほとんどのチームでうまくいく単純な分岐戦略を示しています。 バージョン番号は、架空のものです。 [![RetailSDK12](./media/retailsdk12.png)](./media/retailsdk12.png)
+チームで効率的に仕事をしたり、過去に行ったいくつかの変更を確認できるようにするには、適正な分岐戦略とバージョン管理の規範が必要です。 次の図は、ほとんどのチームでうまくいく単純な分岐戦略を示しています。 バージョン番号は、架空のものです。
+
+[![RetailSDK12](./media/retailsdk12.png)](./media/retailsdk12.png)
 
 #### <a name="retail-sdk-mirror-branch"></a>Retail SDK のミラー分岐
 
@@ -268,4 +273,4 @@ Retail SDK のディレクトリ ツリー全体は、MSBuild トラバーサル
 
 #### <a name="customization-branch"></a>カスタマイズ分岐
 
-配置を開発した後、新しい分岐を開始する必要があります (カスタマイズ分岐)。 初期分岐アウトの先頭において、この分岐は Retail SDK ミラー分岐の正確なコピーになります。 これは、チームの開発の分岐です。 カスタマイズ ブランチのバージョンは、少なくともテストのためにビルドが作成されるたびに増分する必要があります。また、毎日増分することもできます。 増分するファイル バージョンは、**CustomVersion** プロパティを使用して Customization.setting ファイルで定義されます。 それを更新し、すべてのバイナリ パッケージを再構築すると、マニフェスト ファイルはそれに応じて更新されます。 **CustomAssemblyVersion** プロパティは、更新プログラムに下位互換性がなく、主な新しいリリースに対して互換性がない場合のみ更新する必要があることに注意してください。 つまり、この更新プログラムはめったにありません。 たとえば、Microsoft のアセンブリ バージョンは、現在のバージョンの複数の CTP リリースに対して変わりませんでした。 同じ分岐には Microsoft の資産と独自の変更の両方が存在するため、分岐には基本的に 2 つのファイル バージョンがあります。 最初のバージョンは、現在の支店が基づいている Retail SDK の Microsoft バージョンで、2 番目のバージョンは、**CustomVersion** プロパティによって設定されたバージョンです。 前述の図では、カスタマイズ分岐の現在のファイル バージョンは、1.0.2\* です (Microsoft バージョン 7.0.2200.3 に基づく)。 展開された最初のリリースのファイル バージョンは 1.0.0.40 (7.0.2000.0 に基づく) でした。 テスト フェーズが完了し、最後のパッケージがそのバージョンで配置されるとき、バージョン番号を増分する (またはソース コントロールのラベルを作成する) ことが重要です。
+配置を開発した後、新しい分岐を開始する必要があります (カスタマイズ分岐)。 初期分岐アウトの先頭において、この分岐は Retail SDK ミラー分岐の正確なコピーになります。 これはチーム開発用の分岐です。 カスタマイズ ブランチのバージョンは、少なくともテストのためにビルドが作成されるたびに増分する必要があります。また、毎日増分することもできます。 増分するファイル バージョンは、**CustomVersion** プロパティを使用して Customization.setting ファイルで定義されます。 それを更新し、すべてのバイナリ パッケージを再構築すると、マニフェスト ファイルはそれに応じて更新されます。 **CustomAssemblyVersion** プロパティは、更新プログラムに下位互換性がなく、主な新しいリリースに対して互換性がない場合のみ更新する必要があることに注意してください。 つまり、この更新プログラムはめったにありません。 たとえば、Microsoftのアセンブリバージョンは、現行バージョンに至るまでの複数のCTPリリースで変わっていません。 同じ分岐には Microsoft の資産と独自の変更の両方が存在するため、分岐には基本的に 2 つのファイル バージョンがあります。 最初のバージョンは、現在の支店が基づいている Retail SDK の Microsoft バージョンで、2 番目のバージョンは、**CustomVersion** プロパティによって設定されたバージョンです。 前述の図では、カスタマイズ分岐の現在のファイル バージョンは、1.0.2\* です (Microsoft バージョン 7.0.2200.3 に基づく)。 展開された最初のリリースのファイル バージョンは 1.0.0.40 (7.0.2000.0 に基づく) でした。 テスト フェーズが完了し、最後のパッケージがそのバージョンで配置されるとき、バージョン番号を増分する (またはソース コントロールのラベルを作成する) ことが重要です。

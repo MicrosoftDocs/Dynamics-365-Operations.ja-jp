@@ -3,7 +3,7 @@ title: 経費精算書の再設計
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の経費精算書エントリのために再設計され再考された経験に関する情報を提供します。 この新しいエクスペリエンスにより、経費精算書を完成させるプロセスが簡略化され、必要な時間が短縮されます。
 author: ryansandness
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 3039cda3f2cf9259ca06207bdf941bc6b0fb28e1
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: c7a2b95456e812970b135d83f0f7e503310ce185
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538696"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592640"
 ---
 # <a name="expense-reports-reimagined"></a>経費精算書の再設計
 
@@ -46,10 +46,9 @@ ms.locfileid: "1538696"
 
 ## <a name="getting-started-video-for-new-users"></a>新しいユーザー向けビデオの使用にあたり
 
-経費エントリの主要な機能を表示する短いビデオを見ることができます。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2Y7gO]
 
-> [!NOTE]
-> ビデオはまだ使用できません。 このトピックでは、ビデオが使用可能になったときに更新されます。
+[Dynamics 365 for Finance and Operations の経費エクスペリエンス](https://youtu.be/Ocy-MsTvEE0) ビデオ (上記参照) は、YouTube で入手可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
 ## <a name="new-features"></a>新機能
 

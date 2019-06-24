@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 4a0394d3543e761115cec2e4a611cf040fbf00c7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d5a6dbedc8b71aa89162e6c1c52ca5390adf6f3b
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537412"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544086"
 ---
 # <a name="deploy-test-environments-on-azure"></a>Azure でのテスト環境の配置
 
@@ -317,7 +317,7 @@ AX 2012 R3 クライアントを開いて、初期化チェックリストを完
 ユーザが AX 2012 R3 にアクセスできるようにするには、以下のタスクを実行します。
 
 -   CLI- &lt;GUID&gt; 仮想マシンのリモート デスクトップ ユーザー グループに各ユーザーのドメイン アカウントを追加します。
--   ユーザーに AX 2012 R3 へのアクセス許可を付与します。 手順については、[Microsoft Dynamics AXで新しいユーザーを作成する](https://technet.microsoft.com/en-us/library/aa548139.aspx)を参照してください。
+-   ユーザーに AX 2012 R3 へのアクセス許可を付与します。 手順については、[Microsoft Dynamics AX で新しいユーザーを作成する](https://technet.microsoft.com/en-us/library/aa548139.aspx)を参照してください。
 
 **注:** VPN 接続とドメイン信頼を作成しない場合でも、ユーザーに AX 2012 R3 へのアクセス権を与えることができます。 これを行うには、ドメイン コントローラとして機能する仮想マシンにログオンし、各ユーザーのドメイン アカウントを作成する必要があります。 その後、上記の 2 つのタスクを完了する必要があります。
 

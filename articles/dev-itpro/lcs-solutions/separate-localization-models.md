@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7acc1139d1e91ed17b1322ad2e7da3e0e5bd62b1
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b94a8eb9ee319286dc203201611b3f5151f24f53
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506084"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552507"
 ---
 # <a name="separation-of-localization-models"></a>ローカライズ モデルの分離
 

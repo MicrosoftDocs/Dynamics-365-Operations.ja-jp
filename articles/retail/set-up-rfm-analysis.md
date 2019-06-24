@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553048"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606829"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Recency、頻度、および金融 (RFM) 分析の設定
 
@@ -46,7 +46,7 @@ ms.locfileid: "1553048"
 
 組織がこれらの数の合計を使用する場合は、スコアとして、個別の評価が合計されます。 同じ例では、顧客の評価は 13 です (5 + 3 + 5)。
 
-## <a name="to-set-up-rfm-analysis-for-the-customers-in-your-organization"></a>組織内の顧客に対して、RFM 分析を設定するには
+## <a name="set-up-rfm-analysis-for-the-customers-in-your-organization"></a>組織内の顧客に対して、RFM 分析を設定します
 
 1. **コール センター** \> **定期処理** \> **RFM 分析**の順に移動します。
 2. **RFM 分析** ページで、**新規** を選択します。 **RFM 定義** フィールドに、RFM 定義の名前を入力します。 たとえば、定義に RFM-A という名前を付けることができます。

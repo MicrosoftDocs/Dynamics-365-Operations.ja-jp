@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c7f95a4f46429e76f077b7666383f9ddd1aa0856
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6dda3fc3a16a05cce5959b329c57e74aac98c617
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537557"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595561"
 ---
 # <a name="retail-for-it-pros-and-developers-home-page"></a>IT プロおよび開発者向けのホーム ページ
 
@@ -129,7 +129,7 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 
 ## <a name="payment-connectors"></a>支払コネクタ
 - [支払ターミナルとの支払の統合](end-to-end-payment-extension.md)
-- [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+- [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 -   [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 -   [支払コネクタの配置](deploy-payment-connector.md)
 

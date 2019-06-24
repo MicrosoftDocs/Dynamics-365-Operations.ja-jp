@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98c7fb44f0a2b2e07071242c3b6ce80c191e9713
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b96446b19fe9559b3f04fc7451ade16140e8f679
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537274"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544131"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 

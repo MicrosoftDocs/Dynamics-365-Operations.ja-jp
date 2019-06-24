@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 2a807382dc35bc0c875334379b40eca707b5e1f5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a72a16c17c511d2bf2ccc1e8d05119d0d57c9b65
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537278"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556425"
 ---
 # <a name="translate-documentation-files"></a>ドキュメント ファイルの翻訳
 

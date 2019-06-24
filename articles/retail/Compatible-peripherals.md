@@ -18,16 +18,16 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 33ee0b20327ead0d7e0a74b21fd1d45546ee5777
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: be071ac3b08f995387c974cb1dc604f983ae52d7
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537580"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606792"
 ---
 # <a name="peripheral-compatibility-for-retail"></a>Retail の周辺機器互換性
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このページに挙げられたデバイスは、[小売の周辺機器シミュレーター](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator)を使用して Microsoft Dynamics 365 for Retail との互換性のテストが完了しています。 デバイスごとに、テストを実行し、Microsoft に成功結果を送信した関係者が、[テスト担当者] 列に表示されます。 "Microsoft Corp" によるテストとして表示されているデバイスについては、Microsoft にサポート要求を送信する必要があります。 Microsoft 以外の関係者によってテストされたデバイスに関する問題は、まずテストした関係者に報告する必要があります。
 

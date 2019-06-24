@@ -3,7 +3,7 @@ title: 管理者アクセスのないクラウド ホスト開発環境での開
 description: このトピックは、クラウドでホストされている開発マシンで作業している Retail 開発者向けのコンフィギュレーション手順について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/22/2018
+ms.date: 05/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 575ae616d52dfb1d1e497dae05f1be6afd0ed95d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 982dd5d02bca9faedbf952575726e62330452322
+ms.sourcegitcommit: 0b9856cfc175f791898af47aa0d6fc6ac63873b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537570"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "1615654"
 ---
 # <a name="development-in-cloud-hosted-development-environments-without-admin-access"></a>管理者アクセスのないクラウド ホスト開発環境での開発
 
@@ -35,7 +35,7 @@ Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition プラッ
 
 Lifecycle Services (LCS) で Microsoft Azure サブスクリプションを使用する環境を配置した場合、この環境では管理者アクセス権がありません。 ご使用の環境で管理者アクセス権が必要な場合は、Azure サブスクリプションを使用し、LCS を使用して環境を配置してください。 ダウンロード可能な VHD を使用して Azure 仮想マシン (VM) に配置したり、ローカルでホストしたりして完全な管理者権限を取得することもできます。
 
-この環境に管理者アクセス権がない場合、Modern POS を使用してテストおよびデバッグすることはできません。 カスタマイズをテストしている場合は、POS のすべての小売カスタマイズを行うことができます。その環境でクラウド POS を使用する必要があります。 カスタマイズの観点からは、Cloud POS および Modern POS に違いはありません - どのカスタマイズも Cloud POS および Modern POS の両方で機能します。 ハードウェアおよびその他のシナリオの、ブラウザー固有もしくは UWP アプリ固有のロジックを追加しない限り、Modern POS か、その逆で作業するために Cloud POS で完了したカスタマイズの追加のロジックやコードはありません。 別のオプションは、Modern POS を使用した環境ですべての開発を実行し、MPOS をインストールするための管理者アクセス権限を持つ他の環境でテストすることです。 ほとんどの場合はクラウド POS を使用してテストすることができます。オフラインのシナリオをテストするか予想します。 オフライン シナリオをテストする場合は、ビルド スクリプトを使用して Modern POS インストーラーを作成し、テスト環境またはその他のいくつかの POS レジスターでテストできます。
+この環境に管理者アクセス権がない場合、Modern POS を使用してテストおよびデバッグすることはできません。 カスタマイズをテストしている場合は、POS のすべての小売カスタマイズを行うことができます。その環境でクラウド POS を使用する必要があります。 カスタマイズの観点からは、Cloud POS および Modern POS に違いはありません - どのカスタマイズも Cloud POS および Modern POS の両方で機能します。 ハードウェアおよびその他のシナリオの、ブラウザー固有もしくは UWP アプリ固有のロジックを追加しない限り、Modern POS か、その逆で作業するために Cloud POS で完了したカスタマイズの追加のロジックやコードはありません。 別のオプションは、Modern POS を使用した環境ですべての開発を実行し、MPOS をインストールするための管理者アクセス権限を持つ他の環境でテストすることです。 ほとんどの場合はクラウド POS を使用してテストすることが可能で、オフラインのシナリオをテストするか予想します。 オフライン シナリオをテストする場合は、ビルド スクリプトを使用して Modern POS インストーラーを作成し、テスト環境またはその他のいくつかの POS レジスターでテストできます。
 
 **クラウド POS を開発に使用している場合は、クラウド POS プロジェクトを開く前に以下の設定を行います**
 

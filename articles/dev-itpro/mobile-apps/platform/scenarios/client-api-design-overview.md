@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: d621846355378baee1a5f760e9b66de1307cc741
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 97a1279bab499d72897ef3d71898cbcd6d23dcb5
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506204"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1562568"
 ---
 # <a name="client-side-design-apis"></a>クライアント側の設計 API
 

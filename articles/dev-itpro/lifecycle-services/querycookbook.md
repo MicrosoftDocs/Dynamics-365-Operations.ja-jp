@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b85a3910dc7296e542d9909ee2cd4c0fc7bd099
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f4060f711a0b240ec448dd944a6032551dfda394
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537201"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548124"
 ---
 # <a name="query-cookbook"></a>クックブックの照会 
 

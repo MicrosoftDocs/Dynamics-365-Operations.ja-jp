@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2261f17ad380c71ed0e1ce43ddbc8db9d5f3b793
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1f0d348077cdf8306e24c2a68396254b3a4fd51f
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537072"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577833"
 ---
 # <a name="retail-components"></a>Retail のコンポーネント
 
@@ -45,7 +45,7 @@ Dynamics 365 for Retail は、中規模市場および大規模小売業者に�
 <tr>
 <td>Retail Headquarters</td>
 <td>Dynamics 365 for Retail 用小売用バックオフィスを使用すると、一連の店舗を 1 つの企業として管理することができます。 これは、日々の業務を管理し、チェーンの全店舗の販売情報を追跡します。 小売用スケジューラは、Dynamics 365 for Retail と店舗間の通信を調整します。 小売用バックオフィスは、POS 、または必要なデータを受信して転送できるオンライン店舗システムで使用できます。
-<blockquote>[!IMPORTANT] Dynamics 365 for Retail のカスタム POS またはオンライン ストア ソリューションの構築は、広範な計画、開発、およびテストが必要な複雑な作業です。</blockquote>
+<p><strong>重要:</strong> Dynamics 365 for Retail において、カスタム POS またはオンライン ストア ソリューションの構築を行うには、広範囲にわたる計画、開発、およびテストなどの複雑な作業が必要となります。</p>
 </td>
 </tr>
 <tr>

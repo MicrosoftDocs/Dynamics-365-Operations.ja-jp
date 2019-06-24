@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 78c6fbda4e9b27bd6dd82cb8a479f58ec41bf5d4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a3f006c2c7cb37c489a3268217b0e65a1f4d39e4
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506088"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555282"
 ---
 # <a name="license-sizing-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のライセンス数見積もりツール
 

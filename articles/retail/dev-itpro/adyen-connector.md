@@ -3,7 +3,7 @@ title: Adyen 向け Dynamics 365 Payment Connector
 description: このトピックでは、Adyen 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: rassadi
 manager: AnnBe
-ms.date: 01/04/2019
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bb5e91863612ed593f541499b0c78efc18af814d
-ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
+ms.openlocfilehash: 494e42a815124c2bc56fc9797ae5cb437a37ddd9
+ms.sourcegitcommit: f829b5c0e28eb228296ba65f1d6c51d8a919a7d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1539443"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "1614986"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -78,6 +78,18 @@ ms.locfileid: "1539443"
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
+
+# <a name="1002tab10-0-2"></a>[10.0.2](#tab/10-0-2)
+### <a name="dynamics-365-for-retail-pos-version-1002"></a>Dynamics 365 for Retail POS バージョン 10.0.2
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_35p15 | adyen_v1_38p5 |
+
+# <a name="1003tab10-0-3"></a>[10.0.3](#tab/10-0-3)
+### <a name="dynamics-365-for-retail-pos-version-1003"></a>Dynamics 365 for Retail POS バージョン 10.0.3
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_35p15 | adyen_v1_38p5 |
 
 ---
 
@@ -189,7 +201,7 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | スイス | ✔ |
 | 英国 | ✔ |
 | 米国 | ✔ |
-| ブラジル | 2019 年第 1 四半期 |
+| ブラジル | 将来のリリース |
 
 #### <a name="supported-card-not-present-countries"></a>カード不提示がサポートされている国
 電子商取引またはコール センターなどのカード不提示シナリオでは、特別な国間、通貨間、市場間の考慮事項が適用されます。 詳細は、<MicrosoftDynamics@adyen.com> にお問い合わせください
@@ -203,6 +215,7 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | [重複支払保護](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
 | オムニ チャネルのトークン化 | ✔ | ✔ |
 | リンクされた払戻 | ✔<br>(10.0.1 以降) | ✔<br>(10.0.1 以降) |
+| [オンライン支払の保存](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(10.0.2 以降) | 
 
 ## <a name="sign-up-with-adyen"></a>Adyen でサインアップ
 

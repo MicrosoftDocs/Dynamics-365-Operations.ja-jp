@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bb8692c30a63e2bea4fc43b2ebb6a2f4a9568562
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 40317f3d0196350d850e06d7b2094bd93e8ad46e
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506209"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1563402"
 ---
 # <a name="file-uploader-module"></a>ファイル アップローダー モジュール
 

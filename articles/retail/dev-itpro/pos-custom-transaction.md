@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d47dad1a3219811ae5cf0a3bc6e28b63bdcb69a4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d6373f83aa4c0e64addbb17d336016ebe49e36aa
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537531"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561353"
 ---
 # <a name="add-custom-controls-to-retail-modern-pos-mpos-transaction-pages"></a>Retail Modern POS (MPOS) トランザクション ページへのカスタム コントロールの追加
 

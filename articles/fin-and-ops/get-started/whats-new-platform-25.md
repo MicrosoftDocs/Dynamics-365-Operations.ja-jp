@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月) の機能をプレビューする
+title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能および変更点
 description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 manager: AnnBe
@@ -17,18 +17,17 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25
-ms.openlocfilehash: 38bb8aa7a2b34fe4656e140cbcb5480521d50182
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 54eb9bdc3413a65c44bb3a77860ef036a77d860c
+ms.sourcegitcommit: 67d00b95952faf0db580d341249d4e50be59119c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508425"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1576512"
 ---
-# <a name="preview-features-in-dynamics-365-for-finance-and-operations-platform-update-25-april-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月) の機能をプレビューする
+# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-25-april-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能および変更点
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5222 です。 プラットフォーム更新プログラム 25 の詳細については [追加リソース](whats-new-platform-25.md#additional-resources) を参照してください。
 
@@ -39,7 +38,7 @@ ms.locfileid: "1508425"
 アプリケーションに組み込まれている標準の分析レポートを PowerBI.com でホストされているカスタム ソリューションに置き換える組み込みツールを使用することにより、パワー ユーザー向け Web クライアントで利用可能なカスタマイズ オプションの柔軟性の向上を利用できます。 最新のプラットフォーム更新プログラムにより、パワー ユーザーはアプリケーション ワークスペースの標準レポートを PowerBI.com でホストされたレポートに置き換えることができます。 これらの更新プログラムはすぐにワークスペースの他のユーザーが利用できるようになり、標準ソリューションを置き換えます。 追加オプションには、元々アプリケーションとともにリリースされた分析レポートに戻す機能が含まれています。
 
 ## <a name="entity-store-in-azure-data-lake-public-preview"></a>Azure Data Lake のエンティティ格納 (パブリック プレビュー)
-エンティティストアは、Power BI でレポートするための簡略化したトランザクション データを含む運用データ ウェアハウスです。 これで Azure Data Lake Storage (ADLS Gen2) にあるエンティティ格納をステージできます。 データを操作するのに、他の Azure やサードパーティ製ツールに加え PowerBI.com を使用できます。 この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。 代わりに、独自のサブスクリプションの Azure Data Lake ストレージ Gen2 アカウントに入力されます。 PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。
+エンティティストアは、Power BI でレポートするための簡略化したトランザクション データを含む運用データ ウェアハウスです。 これで Azure Data Lake Storage (ADLS Gen2) にあるエンティティ格納をステージできます。 データを操作するのに、他の Azure やサードパーティ製ツールに加え PowerBI.com を使用できます。 この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。 代わりに、独自のサブスクリプションの Azure Data Lake ストレージ  Azure Data Lake Storage Gen2 アカウントに入力されます。 PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。
 
 この機能を有効にするには [Business Data Lake のエンティティ格納](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-finance-operations/erp-data-entity-store-byod-business-data-lake) を参照してください。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 71eefdeb221f1347ba92f0bb216cdba285947169
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 97d5dff4d0715c39903a5e51d42c52efe084cd0e
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537176"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554360"
 ---
 # <a name="help-secure-mobile-workspaces"></a>モバイル ワークスペースのセキュリティを強化する
 

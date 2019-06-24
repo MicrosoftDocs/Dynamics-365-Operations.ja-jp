@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 3312904d3690d5a8b4117e25f2e51704d8fa9a99
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 7331fc152ea7ed5e46d5586da6da3b35fe02e197
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537077"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595410"
 ---
 # <a name="power-bi-embedded-integration"></a>Power BI Embedded 統合
 
@@ -31,7 +31,7 @@ ms.locfileid: "1537077"
 パートナーおよび独立系ソフトウェア ベンダー (ISV) が開発した Microsoft Power BI コンテンツは、Microsoft Dynamics 365 for Finance and Operations に直接埋め込むことができます。 このトピックでは、Microsoft Power BI Embedded 統合を使用するための方法について説明します。
 
 ## <a name="overview"></a>概要
-Finance and Operations と [Power BI](http://www.powerbi.com/) の統合により、Microsoft Power Query for Excel でサポートされている外部データ ソースへのアクセスが必要なデータ マッシュアップ シナリオが可能になります。 ユーザーは、PowerBI.com でホストされているタイルを埋め込むことにより、ワークスペースをカスタマイズできます。 ユーザーは、PowerBI.com でホストされているレポートに直接リンクを追加することもできます。 このようにして、ユーザーはアプリケーションを終了せずにレポートにアクセスし、対話できます。 パートナーと ISV が開発する Power BI コンテンツ (PBIX ファイル) は、アプリケーションに直接埋め込むことができます。 モデル ファイルに関連付けられている PBIX ファイルは、アプリケーション配置プロセスの一部として Power BI Embedded で自動的に公開されます。 また、次の機能が必要な埋め込みレポート シナリオの X++ 拡張機能を追加できます。
+Finance and Operations と [Power BI](https://www.powerbi.com/) の統合により、Microsoft Power Query for Excel でサポートされている外部データ ソースへのアクセスが必要なデータ マッシュアップ シナリオが可能になります。 ユーザーは、PowerBI.com でホストされているタイルを埋め込むことにより、ワークスペースをカスタマイズできます。 ユーザーは、PowerBI.com でホストされているレポートに直接リンクを追加することもできます。 このようにして、ユーザーはアプリケーションを終了せずにレポートにアクセスし、対話できます。 パートナーと ISV が開発する Power BI コンテンツ (PBIX ファイル) は、アプリケーションに直接埋め込むことができます。 モデル ファイルに関連付けられている PBIX ファイルは、アプリケーション配置プロセスの一部として Power BI Embedded で自動的に公開されます。 また、次の機能が必要な埋め込みレポート シナリオの X++ 拡張機能を追加できます。
 
 - ユーザー インタラクションに応じた詳細ページへナビゲーションをドリルダウン
 - 会社または日付の範囲など、ユーザーとセッション コンテキスト情報に基づいたレポート フィルター
@@ -44,7 +44,7 @@ Finance and Operations と [Power BI](http://www.powerbi.com/) の統合によ�
 
 ![サービス間の機能の比較](media/Power-BI-Embedded-integration.png)
 
-Power BI Embedded サービスの詳細については、「[Power BI Embedded FAQ](https://powerbi.microsoft.com/en-us/documentation/powerbi-frequently-asked-questions/)」を参照してください。
+Power BI Embedded サービスの詳細については、「[Power BI Embedded FAQ](https://powerbi.microsoft.com/documentation/powerbi-frequently-asked-questions/)」を参照してください。
 
 ## <a name="advantages-of-power-bi-embedded"></a>Power BI Embedded のメリット
 - **アプリケーションで Power BI ワークスペースとレポートを配信します。** ユーザーが power user またはビジネス アナリストである場合は、Power BI ツールを使用して既製のレポートを調整したり、新しいレポートを作成することができます。 開発者は、ワークスペースを通じて製品の豊富なナビゲーション エクスペリエンスを提供するためにユーザーが作成したレポートを使用できます。 パートナーおよび ISV コミュニティにいる場合は、Power BI エクスペリエンスを含む豊富なワークスペースを構築し、そのワークスペースをソリューションの一部としてリリースすることができます。
@@ -57,7 +57,7 @@ Power BI Embedded サービスの詳細については、「[Power BI Embedded F
 **Power BI Embedded サービスは自動的に配置し、すべてのクラウド ホスト、複数のボックス配置を構成します。** このサービスは Microsoft Azure サービスに依存しているため、アプリケーションの分析ワークスペースとレポートはワンボックス環境では使用できません。 Power BI Embedded サービスは、ほとんどの Azure データ センターで既に利用できます。 [Azure の状態](https://azure.microsoft.com/status/) ページで最新の使用可能性を確認することができます。
 
 > [!NOTE]
-> Microsoft Dynamics 365 チームは、顧客が Power BI Embedded サービスのインスタンスをホストしなくても、ワン ボックス環境で分析ワークスペースを有効にするソリューションで作業します。 [Dynamics 365 ロードマップ](http://roadmap.dynamics.com)のサイトのお知らせをご覧ください。
+> Microsoft Dynamics 365 チームは、顧客が Power BI Embedded サービスのインスタンスをホストしなくても、ワン ボックス環境で分析ワークスペースを有効にするソリューションで作業します。 [Dynamics 365 ロードマップ](https://roadmap.dynamics.com)のサイトのお知らせをご覧ください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

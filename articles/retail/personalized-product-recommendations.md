@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c73bc10332329e81986a259969f8fe34b57f4ee6
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559561"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607011"
 ---
 # <a name="personalized-product-recommendations"></a>パーソナライズされた製品の推奨事項
 
@@ -44,7 +44,7 @@ Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推�
     - 店舗スタッフが、異なるチャネル間で以前のトランザクションを調べるときに、**製品の詳細** ページを参照する場合、推薦エンジンは、一緒に購入される可能性が高い追加アイテムを提案します。
     - 店舗スタッフが顧客をトランザクションに追加し、**製品の詳細** を参照する場合、推奨エンジンは、顧客の取引履歴を使用してパーソナライズされた推奨事項を提供します。
 
-    [![proddetails](./media/proddetails.png)](./media/proddetails.png)
+    [![製品詳細ページの推奨事項](./media/proddetails.png)](./media/proddetails.png)
 
 2. **トランザクション** ページ:
 
@@ -54,13 +54,11 @@ Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推�
     > [!NOTE]
     > **トランザクション** ページに推奨事項を表示するには、小売業者は Dynamics 365 for Retail の画面レイアウトを更新する必要があります。 **推奨事項** コントロールは、**トランザクション** ページにドロップする必要があります。
 
-    [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![トランザクション ページの推奨事項](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3. **顧客の詳細** ページ:
+3. **顧客詳細**ページにて、推薦エンジンはユーザ ID および顧客の希望リストの品目に基づいて、品目を提案します。
 
-    - 推薦エンジンは、ユーザ ID および顧客の希望リストの品目に基づいて、品目を提案します。
-
-    [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
+    [![顧客詳細ページの推奨事項](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
 ## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Dynamics 365 for Retail をコンフィギュレーションして POS 推奨事項を有効化する
 

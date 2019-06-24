@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18435fea88d9cd4e905da5383a0ec39de1cc1c10
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 86e36b31fc1b7bd076860dfd83a9c9ffba9b8dc7
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537285"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595412"
 ---
 # <a name="manage-access-to-sensitive-data"></a>機密データへのアクセスを管理
 
@@ -48,11 +48,11 @@ ms.locfileid: "1537285"
 
 ![[ユーザー ログのクリーンアップ] ページ](../media/gdpr-sensitive-data-4.jpg)
 
->[!Note]
+>[!NOTE]
 > この機能はバージョン 8.0 で使用することができます。 この機能は、Dynamics AX 2012 R3 (KB 4074643) で有効です。
 
 ## <a name="additional-resources"></a>追加リソース
-GDPR の詳細については、[欧州連合の Web サイト](http://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。
+GDPR の詳細については、[欧州連合の Web サイト](https://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。
 
 ### <a name="disclaimer"></a>免責事項
 (c)2018 Microsoft Corporation. All rights reserved. このドキュメントは、"現状のまま" 提供されます。 URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。 このドキュメントの使用上のリスクは、すべてユーザーが負うものとします。 このドキュメントは、Microsoft の製品に含まれる知的財産に対する法律上の権利をお客様に付与するものではありません。 内部での参照を目的とする場合、このドキュメントをコピーして使用できます。

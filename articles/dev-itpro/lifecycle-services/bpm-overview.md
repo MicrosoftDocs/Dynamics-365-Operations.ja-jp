@@ -17,25 +17,26 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 1b539a0cda6f663d56b21638303dd828075ae202
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 07663ba91840cf6b2fac992a613b2aa4d90dfae8
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537225"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595459"
 ---
 # <a name="business-process-modeler-bpm-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) は、業務プロセス ライブラリとフローチャートに基づいて反復可能な実装を作成、表示、および変更するために使用することができるツールです。 BPM は、[アメリカ生産性&amp;品質センター (APQC)](http://www.apqc.org/) によって説明された業界標準プロセスを使用して、業務プロセスを Microsoft Dynamics 365 for Finance and Operations に配置するのに役立ちます。 Microsoft Dynamics 365 for Finance and Operations で、業務上の要件と既定のプロセスの間でフィットギャップ分析を実行することができます。 また、新しい業務プロセスを追加して、Finance and Operations でまだ定義されていないプロセスのためにフローチャートを作成することができます。
+Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) は、業務プロセス ライブラリとフローチャートに基づいて反復可能な実装を作成、表示、および変更するために使用することができるツールです。 BPM は、[アメリカ生産性&amp;品質センター (APQC)](https://www.apqc.org/) によって説明された業界標準プロセスを使用して、業務プロセスを Microsoft Dynamics 365 for Finance and Operations に配置するのに役立ちます。 Microsoft Dynamics 365 for Finance and Operations で、業務上の要件と既定のプロセスの間でフィットギャップ分析を実行することができます。 また、新しい業務プロセスを追加して、Finance and Operations でまだ定義されていないプロセスのためにフローチャートを作成することができます。
 
 BPM は次のプログラムと互換性があります。
 
 - **Microsoft Word** - 業務プロセスのドキュメントを生成することができます。
 - **Microsoft Visio** – 業務プロセスのマップを Visio ファイルにエクスポートできます。
 
-**注記:** このトピックの情報は Dynamics 365 for Finance and Operations 固有です。 ビジネス プロセス モデラーおよび Microsoft Dynamics AX 2012 の詳細については、[ビジネス プロセス モデラー](ax-2012/business-process-modeler-lcs.md)を参照してください。 
+> [!NOTE]
+> このトピックの情報は Dynamics 365 for Finance and Operations のみに固有です。 ビジネス プロセス モデラーおよび Microsoft Dynamics AX 2012 の詳細については、[ビジネス プロセス モデラー](ax-2012/business-process-modeler-lcs.md)を参照してください。 
 
 ## <a name="prerequisites"></a>必要条件
 

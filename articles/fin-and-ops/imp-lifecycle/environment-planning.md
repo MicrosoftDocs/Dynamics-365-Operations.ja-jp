@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: 6c0cfc68fc9235516c2ab88a9a653b8c17db66b6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2f305bca82f6b16d02280eb5dcac049234b75d27
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1510941"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595600"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -101,7 +101,7 @@ ms.locfileid: "1510941"
 
 顧客は、ソリューションをビルドするのではなく**運用**するために実稼働環境を使用する必要がある。 実稼働環境が業務の遂行に合ったサイズになっている。 サイズ決定は、サブスクリプションの見積とパフォーマンス テストの診断データに基づいて行われます。 展開後、顧客は実稼働環境でモック切替および最終的な一連の検証を行うことができ、その必要があります。 最後切替の前に、顧客はポイント イン タイム復元を要求し、実稼働環境をクリーンなスナップショット (最大 35 日前) に復元できます。
 
-実稼働環境の適切なデータ センターを選択するには、ビジネスが運営されている地理的な場所から待機時間を検討してください。 [PsPing](https://docs.microsoft.com/sysinternals/downloads/psping) や [azurespeed.com](http://azurespeed.com/) などのツールを使って、Azure データ センターの待機時間をテストします。
+実稼働環境の適切なデータ センターを選択するには、ビジネスが運営されている地理的な場所から待機時間を検討してください。 [PsPing](https://docs.microsoft.com/sysinternals/downloads/psping) や [AzureSpeed.com](http://azurespeed.com/) などのツールを使って、Azure データ センターの待機時間をテストします。
 
 次の図は、環境計画プロセスを示しています。
 

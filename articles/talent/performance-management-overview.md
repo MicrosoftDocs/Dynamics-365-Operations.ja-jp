@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1954b691d84b0aa8710da621af21415c6c116539
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
+ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518457"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1590508"
 ---
 # <a name="performance-management"></a>パフォーマンス管理
 
@@ -109,7 +109,7 @@ ms.locfileid: "1518457"
 
 ### <a name="ratings"></a>評価
 
-確認にあるすべての目標またはコンピテンシーに評価を適用できます。 確認ごとに評価モデルを定義できます。 評価の既定は、**業績** の **人事管理パラメーター** ページにあります。
+確認にあるすべての目標またはコンピテンシーに評価を適用できます。 確認ごとに評価モデルを定義できます。 評価の既定は、**業績**の下の**人事管理の共有パラメーター**ページにあります。
 
 ### <a name="sign-offs"></a>サインオフ
 

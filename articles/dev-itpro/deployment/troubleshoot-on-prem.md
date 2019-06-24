@@ -3,7 +3,7 @@ title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/21/2019
+ms.date: 05/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 54639b39870f970ae639c128729de21edf3eb4a3
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2674b4c65d33369e0d4b96679c38bbffad3233fb
+ms.sourcegitcommit: d1029dcf8d890278fb90abd9a96f70654586533b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537063"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "1614582"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -122,7 +122,7 @@ AXSFType (AOS) に **InBuild** のステータスが表示される場合、DB S
 
 > "ExtractInstallerService は抽出に失敗しました" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll。
 
-このエラーが発生した場合は [Azure Service Fabric](http://go.microsoft.com/fwlink/?LinkId=730690) の最新バージョンをダウンロードしてください。 エラー メッセージのユーザー名およびパスは、環境によって変化することに注意してください。
+このエラーが発生した場合は [Azure Service Fabric](https://go.microsoft.com/fwlink/?LinkId=730690) の最新バージョンをダウンロードしてください。 エラー メッセージのユーザー名およびパスは、環境によって変化することに注意してください。
 
 #### <a name="service-fabric-logs"></a>Service Fabric ログ
 
@@ -259,10 +259,7 @@ Service Fabric Explorer でローカル エージェント値を見つけるこ�
 
 ## <a name="install-upgrade-or-uninstall-a-local-agent"></a>ローカル エージェントのインストール、アップグレード、アンインストール
 
-ローカル エージェントのインストールについての詳細は、ご使用の環境に適した設定と配置のトピックを参照してください。
-
-- [プラットフォーム update 12](setup-deploy-on-premises-pu12.md)
-- [プラットフォーム更新 8 またはプラットフォーム更新 11](setup-deploy-on-premises-pu8-pu11.md)
+ローカルエージェントを更新する方法については、 [ローカルエージェントを更新する](../lifecycle-services/update-local-agent.md) を参照してください。
 
 また、以下のアップグレードおよびアンインストール コマンドを使用することができます:
 

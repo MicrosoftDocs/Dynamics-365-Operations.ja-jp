@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: dac470a245dcc4e831ff8bdf3ff72ea94ef5abb0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e27236865d9621354e725192ce50c16955d83fc6
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536967"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544154"
 ---
 # <a name="debug-x-against-copies-of-production-databases"></a>生産データベースのコピーに対する X++ のデバッグ
 

@@ -3,7 +3,7 @@ title: Finance and Operations に関するビデオ
 description: このページでは、YouTube および他のサイトで使用可能な Dynamics 365 for Finance and Operations に関連する Microsoft が作成したハウツーおよび技術解説ビデオを一覧表示します。
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2018
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1b828382f9f81d796fcfaef0e9c7dc9450a97992
+ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561671"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1591551"
 ---
 # <a name="videos-for-finance-and-operations"></a>Finance and Operations のビデオ
 
@@ -50,7 +50,7 @@ ms.locfileid: "1561671"
 - [最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [開発の分岐およびビルドの設定](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [開発マシンの設定](https://www.youtube.com/watch?v=cqp9MetfiyM)
-- [Lifecycle Services と Azure DevOps の統合](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
+- [Lifecycle Services と Azure DevOps 統合](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
 
 #### <a name="explore-the-user-interface"></a>ユーザー インターフェイスの操作
 
@@ -63,6 +63,7 @@ ms.locfileid: "1561671"
 - [Cost control mobile workspace (原価管理モバイル ワークスペース)](https://youtu.be/imsuTg8rUVk)
 - [Get started with Cost accounting (原価会計の使用を開始する)](https://youtu.be/1pUDtJQZ8FU)
 - [Use Excel for cost analysis (コスト分析に Excel を使用する)](https://youtu.be/-HKHYdClvx8)
+- [経費エクスペリエンス](https://youtu.be/Ocy-MsTvEE0)
 
 #### <a name="intelligence"></a>インテリジェンス
 

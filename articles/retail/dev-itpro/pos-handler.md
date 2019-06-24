@@ -3,7 +3,7 @@ title: POS 要求ハンドラーのオーバーライド
 description: このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。 リアルタイム サービスは、Retail クライアントがリアルタイムで小売機能を操作できるようします。
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 2933463c3e3fd2ca274a11153136e1fd0d54708f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 88fc67499f14dd34cc23b47b837fe875821e4d09
+ms.sourcegitcommit: 33e5f728a70d0546975f91010148dc4c57bf3af3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537530"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "1606547"
 ---
 # <a name="override-pos-request-handler"></a>POS 要求ハンドラーのオーバーライド
 
@@ -122,6 +122,7 @@ ms.locfileid: "1537530"
 | CreateBankDropTransactionClientRequestHandler          | POS で銀行入金操作を行うときに実行されます。          |
 | CreateTenderDeclarationTransactionClientRequestHandler | POS で支払/入金申告操作を行うときに実行されます。 |
 | GetCountedTenderDetailAmountClientRequestHandler   | POS で入札件数の詳細を行うときに実行されます。 |
+| CreateBankDropTransactionClientRequestHandler      | POS で銀行入金操作を行うときに実行されます。 |
 
 
 **販売注文の要求ハンドラー**

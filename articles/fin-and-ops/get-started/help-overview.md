@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
-ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
+ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1538959"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595642"
 ---
 # <a name="finance-and-operations-help-system"></a>Finance and Operations のヘルプ システム
 
@@ -192,7 +192,7 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 | [Docs.microsoft.com](/dynamics365/)                                                            | Dynamics 365 のすべての製品ドキュメントのホストまたはリンクです。 |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsoft の無料 e ラーニング サイトです。 |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | 事前販売からの実装および工程にいたるまで Dynamics 365 for Finance and Operations のプロジェクトを管理するのに、顧客とパートナーが使用できるクラウドベースの共同ワークスペースを提供します。 このサイトは、実装のすべてのフェーズに役立ちます。 |
-| [サポート ブログ](http://aka.ms/AXSupportBlog)                                                    | Dynamics 365 for Finance and Operations のサポート チームによって投稿されるトリックおよびヒントを提供します。 |
+| [サポート ブログ](https://aka.ms/AXSupportBlog)                                                    | Dynamics 365 for Finance and Operations のサポート チームによって投稿されるトリックおよびヒントを提供します。 |
 | [Docs.microsoft.com/previous versions](https://docs.microsoft.com/previous-versions/dynamics/) | 以前のリリースのコンテンツをホストします。 |
 | [Dynamics コミュニティ](https://community.dynamics.com/)                                          | ブログ、フォーラムおよびビデオをホストします。 |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | 評価と販売情報を提供します。 |

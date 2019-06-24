@@ -3,7 +3,7 @@ title: 機能のコールアウト
 description: 機能のコールアウトをトリガーして、ユーザーに新しい機能を認識してもらいましょう。
 author: jasongre
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-5-31
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: 1239f0d77e0e317c730f8c130e0bcc3d5246c95d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 15779aec6b0a05a0bef930effa0b0410fd726b40
+ms.sourcegitcommit: 56ec43e459ba93f495bc76fed23d6737218ef37e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537140"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "1591584"
 ---
 # <a name="feature-callouts"></a>機能のコールアウト
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 ## <a name="introduction"></a>はじめに
-  ドキュメントは新機能の説明に役立ちますが、製品の使用中にユーザーがその機能に遭遇した場合は、これらの新機能について認識を高めることも重要です。 その結果、機能のコールアウトをプラットフォームの更新プログラム 26 で使用できます。 機能のコールアウトを使用して、ユーザーに新しい機能を示して、オプションで機能の詳細を知るためのハイパーリンクをユーザーに提供することができます。 
+ドキュメントは新機能の説明に役立ちますが、製品の使用中にユーザーがその機能に遭遇した場合は、これらの新機能について認識を高めることも重要です。 その結果、機能のコールアウトをプラットフォームの更新プログラム 26 で使用できます。 機能のコールアウトを使用して、ユーザーに新しい機能を示して、オプションで機能の詳細を知るためのハイパーリンクをユーザーに提供することができます。 
 
 このトピックでは、機能のコールアウトの作成に使用される API について詳しく説明します。   
 

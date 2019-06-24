@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 735d6322db788be44f4948963722e467fde69bb4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 026f07d75a9d8e1b59d025dc6c1f30d72f3b3028
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537154"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554368"
 ---
 # <a name="containercontrol-type"></a>ContainerControl タイプ
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 3022c4624835591237ae18d9450e09a5ceedd2b3
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 474712a788df5787f4d66a2f5b067dbdd1d17450
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537356"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544072"
 ---
 # <a name="updates-for-ax-2012-r3-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の AX 2012 R3 用の更新プログラム
 

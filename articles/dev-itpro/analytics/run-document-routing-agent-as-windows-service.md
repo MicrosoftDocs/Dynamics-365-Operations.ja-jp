@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 3f7a28a7144e0d05d87cb874ac61512e5eca7401
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e144c4e8b2e27ff17b1bb5972cae655cd17b5ffc
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537112"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551567"
 ---
 # <a name="run-the-document-routing-agent-as-a-windows-service"></a>ドキュメント回覧エージェントを Windows サービスとして実行する
 
@@ -56,7 +56,7 @@ ms.locfileid: "1537112"
 
 4. 手順1では、コンフィギュレーション ファイルをコピーし、次のディレクトリに貼り付けます。c:\\ProgramData\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing。 このステップにより、ドキュメント回覧エージェント アプリケーションの新しいバージョンに以前のすべての構成設定が使用されていることを保証できます。
 5. ドキュメント回覧エージェントを実行します。
-6. Microsoft Azure Active Directory (Azure AD) または Finance and Operations の資格情報を使用してログインします。
+6. Microsoft Azure Active Directory (Azure AD) または Finance and Operations の資格情報を使用してログインします。
 7. 適切なメニュー項目をクリックして、設定およびプリンターを表示して確認します。
 
 次のセクションでは、Windows サービスの実行モードを選択するための詳細な手順を説明します。
@@ -66,7 +66,7 @@ ms.locfileid: "1537112"
 
 ### <a name="update-the-execution-mode-for-the-document-routing-agent"></a>ドキュメント回覧エージェントの実行モードを更新
 1. デスクトップ アイコンを使用してドキュメント回覧エージェントを起動します。
-2. **サインイン** オプションを選択し、Azure AD 資格情報を使用してログインします。
+2. **サインイン** オプションを選択し、Azure AD 資格情報を使用してログインします。
 3. リボンで、**設定**を選択します。
 4. **Windows Service として実行**オプションを有効にします。
 5. ユーザー設定の余白を持つドキュメントに生成される PDF ファイルの対象となるフォルダーを提供します。

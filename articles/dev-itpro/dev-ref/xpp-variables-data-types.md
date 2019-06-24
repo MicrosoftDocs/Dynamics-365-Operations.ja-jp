@@ -3,7 +3,7 @@ title: X++ の変数とデータ型
 description: このトピックでは、X++ の変数とデータ型について説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c33fd7ce86552ee6c05688fb8caefbb1f363257b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b663facb1230985830abc4c69d9d885753d549fd
+ms.sourcegitcommit: ecc7c19e08da1b592fdbd9268f3314558811ca81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536984"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "1606553"
 ---
 # <a name="x-variables-and-data-types"></a>X++ の変数とデータ型
 
@@ -109,7 +109,7 @@ ms.locfileid: "1536984"
             al = new Alist();
             str s;
             al.Add(1);
-            s.IONS.Path::ChangeExtension(@"c:\tmp\test.xml", ".txt");
+            IONS.Path::ChangeExtension(@"c:\tmp\test.xml", ".txt");
         }
     }
 
@@ -296,7 +296,7 @@ X++ のプリミティブ データ型は、**anytype**、**boolean**、**date**
 
 ### <a name="date"></a>日付
 
-**date** データ型は、年、月、日を格納します。 日付は、次の構文を使用してリテラルとして記述できます。**日付リテラル = 日 \\ 月 \\ 年**。 その年の 4 桁の数字を使用する必要があります。 **日付**データ型は、1900 年 1 月 1 日～ 2154 年 12 月 31 日の日付を保持できます。 **date** のサイズは 32 ビットです。 既定値は、**null** で、内部表示は、日付です。 **日付**に暗黙的な変換はありません。 ただし、次の明示的な [変換関数](xpp-conversion-run-time-functions.md) が使用できます: **str2date**、**date2str**、**date2num**、および **int2date**。 日付から整数を加算または減算することはできますが、お互いに 2 つの日付を加算または減算することはできません。 試行すると、コンパイラ エラーが発生します。
+**date** データ型は、年、月、日を格納します。 日付は、次の構文を使用してリテラルとして記述できます。**日付リテラル = 日 \\ 月 \\ 年**。 その年の 4 桁の数字を使用する必要があります。 **日付**データ型は、1900 年 1 月 1 日～ 2154 年 12 月 31 日の日付を保持できます。 **date** のサイズは 32 ビットです。 既定値は、**null** で、内部表示は、日付です。 **日付**に暗黙的な変換はありません。 ただし、次の明示的な [変換関数](xpp-conversion-run-time-functions.md) が使用できます: **str2date**、 **date2str**、 **date2num**、 **int2date**。 日付に対し、整数を加算または減算することができます。これにより将来の日付または、過去の日付に移動します。 それぞれの日付を減算することにより、差異が日数で計算されます。 ただし、2つの日付を一緒に加算することはできず、コンパイラ エラーの原因になります。
 
 #### <a name="date-examples"></a>date の例
 
@@ -331,7 +331,7 @@ X++ のプリミティブ データ型は、**anytype**、**boolean**、**date**
             date bDate;
             int dateDifference;
             bDate = 2\10\1998; 
-            dateDifference = bDate - aDate;    // dateDifference will equal 9.
+            dateDifference = bDate - aDate; // dateDifference will equal 244.
         }
     }
 

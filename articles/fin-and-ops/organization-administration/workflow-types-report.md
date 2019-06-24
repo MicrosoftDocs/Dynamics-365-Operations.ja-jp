@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 22c4915898992097611ac3db2682eba5ece7cd55
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6be3f1f1f0234b52c2d895fb817f7e8e044c4a6d
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509147"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564494"
 ---
 # <a name="workflow-types-report"></a>ワークフロー タイプのレポート
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518511"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617346"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Dynamics 365 for Talent から Dynamics 365 for Finance and Operations への統合に関する FAQ
 
@@ -46,7 +46,7 @@ Attract および Onboard に関しては、すべてのデータが Common Data
 
 Finance and Operations で存在しますが、Talent では存在しないデータに関しては、Talent の**リンクの構成**を使用して 2 つのシステムを相互にリンクします。 Talent および Finance and Operations 間のリンクを構成する方法の詳細については、「[Dynamics 365 for Talent Core HR (2018 年 10月 31日) の新機能および変更された機能](whats-new-talent-october-31.md)」を参照してください。
 
-![](media/MapFinancialDimensions.png)
+![財務分析コードのマップ](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>場合によっては、従業員をインポートする場合 Finance and Operations の無効な作業者に入ってしまいます。 なぜですか。
 
@@ -60,14 +60,14 @@ Finance and Operations で存在しますが、Talent では存在しないデ�
 
 「高度なクエリ」を使用して、ソースデータを送信先に渡す前に、フィルター処理して再作成できます。
 
-![](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![有効な作業者の高度なクエリ](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>特定のエンティティの Finance and Operations に送信するフィールドを指定できますか。
 
 フィールドは、統合タスクから追加または削除できます。 Common Data Service エンティティに存在するすべてのデータ フィールドが、Core HR から入力されるわけではありません。
 追加のデータは、PowerApps 経由で入力されます。
 
-![](media/SpecifyFieldsIncludedInIntegration.png)
+![統合タスクへ (から) フィールドを追加または削除します](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-talent-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>バッチ ジョブとしての統合を設定しましたが、Talent は宛先システムへの接続を失いました。 宛先システムに同じ一連の変更をどのように送信しますか。
 

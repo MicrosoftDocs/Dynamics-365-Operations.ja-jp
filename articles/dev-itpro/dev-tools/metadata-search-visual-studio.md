@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbce1affa2024c09edd9e3b9a5cdd92553f1119b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 05e4f558cb72c3fca162ce0c0a6325e5905a3cc5
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506203"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544133"
 ---
 # <a name="metadata-search-in-visual-studio"></a>Visual Studio でのメタデータの検索
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 1e4254f638ee0a04bfc95a1ee952940f2e803deb
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 117b3d3eed6f092b07eb115a6b363078d4de9a5d
+ms.sourcegitcommit: 2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537141"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "1608152"
 ---
 # <a name="creators-in-the-acceptance-test-library"></a>承認テスト ライブラリの作成者
 
@@ -62,13 +62,12 @@ AtlCreatorCustomer
 ### <a name="example"></a>例
 
 ```
-item = new AtlCreatorProductItem()
+item = new AtlCreatorProductsReleasedVariant()
     .setItemId('DemoItem')
-    .setItemGroup(invent.itemGroups().carAudio())
-    .setItemModelGroup(invent.modelGroups().fifo())
-    .setStorageDimGroup(invent.storageDimGroups().siteWarehousePhysical())
-    .setTrackingDimGroup(invent.trackingDimGroups().serialControlled())
-    .setDefaultWarehouse(invent.warehouses().default())
+    .setColor(ecoResColor)
+    .setStyle(ecoResStyle)
+    .setConfig(ecoResConfig)
+    .setSize(ecoResSize)
     .create();
 ```
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 683ceb29bf2c27e2f4457112b889325aeb5c9d6e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3806c9f3d3a950490bfc528349467677d1914723
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512993"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595415"
 ---
 # <a name="default-financial-dimensions"></a>既定の財務分析コード
 [!include [banner](../includes/banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "1512993"
 
 ### <a name="form-uptake-and-the-dimensions-data-model"></a>取込みフォームと分析コードデータのモデル
 
-既定の分析コードを表示するすべてのページでは **DimensionDefaultingController** コントローラが使用されています。 このコントローラでは、分析コードが自動的に表示され、値を読み込んで保存するので、対話的な操作を行うことができます。 取込みパターンの詳細については、ホワイト ペーパー [Implementing the Account and Financial Dimensions Framework for Microsoft Dynamics AX 2012 Applications](http://go.microsoft.com/fwlink/?linkid=213133) を参照してください。
+既定の分析コードを表示するすべてのページでは **DimensionDefaultingController** コントローラが使用されています。 このコントローラでは、分析コードが自動的に表示され、値を読み込んで保存するので、対話的な操作を行うことができます。 取込みパターンの詳細については、ホワイト ペーパー [Implementing the Account and Financial Dimensions Framework for Microsoft Dynamics AX 2012 Applications](https://go.microsoft.com/fwlink/?linkid=213133) を参照してください。
 
 ### <a name="storage-of-default-dimension-values"></a>既定の分析コード値の保存
 
@@ -245,7 +245,7 @@ ms.locfileid: "1512993"
 
 このセクションでは、新しい勘定分析コードを作成するために既定の分析コードをマージするか方法について説明します。
 
-既定の分析コードは、仕訳帳と勘定配布で使用される勘定科目の組み合わせを作成するために後のステップで使用される値を提供します。 [勘定科目の組み合わせに関する一連のブログの記事](http://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/02/15/ledger-account-combinations-part-5-_2800_ledger-dimensions_2900_-.aspx)に定義されている内容に従い、勘定科目の組み合わせには、構造と順序が適用される MainAccount と 分析コード値の組み合わせのみを使用します。
+既定の分析コードは、仕訳帳と勘定配布で使用される勘定科目の組み合わせを作成するために後のステップで使用される値を提供します。 [勘定科目の組み合わせに関する一連のブログの記事](https://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/02/15/ledger-account-combinations-part-5-_2800_ledger-dimensions_2900_-.aspx)に定義されている内容に従い、勘定科目の組み合わせには、構造と順序が適用される MainAccount と 分析コード値の組み合わせのみを使用します。
 
 既定の分析コードには、 MainAccount 以外の勘定科目の組み合わせに必要なすべての分析コードが用意されています。 既定の分析コードは既定の勘定と組み合わせることも、別の勘定分析コードを組み合わせて勘定分析コードを生成することもできます。
 

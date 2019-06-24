@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7402d929ad3900a11611724bca0b24f47f9b2225
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: be5c383e958a4b83f542307824e2ee33336c89fc
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536971"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595417"
 ---
 # <a name="operator-precedence"></a>演算子の優先順位
 
@@ -48,11 +48,11 @@ ms.locfileid: "1536971"
 同じ行の演算子には、同等な優先順位があります。 式にあるこれらの演算子が 1 つ以上ある場合、代入演算子が使用されていない限り、式は左から右に評価されます (これらは右から左に評価されます)。 たとえば、&& (論理的 AND) および || (論理的 OR) は、優先順位が等しく、左から右に評価されます。 つまり、0&&0||1 == 1、および 1||0&&0 == 0 です
 
 ## <a name="additional-resources"></a>その他のリソース
-[代入演算子](http://msdn.microsoft.com/library/d4e86b9c-be82-4f19-ad86-7722344a05f3(AX.60).aspx)
+[代入演算子](https://msdn.microsoft.com/library/d4e86b9c-be82-4f19-ad86-7722344a05f3(AX.60).aspx)
 
-[算術演算子](http://msdn.microsoft.com/library/cffbc613-3875-4520-9dea-046dc99aab99(AX.60).aspx)
+[算術演算子](https://msdn.microsoft.com/library/cffbc613-3875-4520-9dea-046dc99aab99(AX.60).aspx)
 
-[リレーショナル演算子](http://msdn.microsoft.com/library/702af366-4d46-445e-bd4b-722c9845199f(AX.60).aspx)
+[リレーショナル演算子](https://msdn.microsoft.com/library/702af366-4d46-445e-bd4b-722c9845199f(AX.60).aspx)
 
 
 

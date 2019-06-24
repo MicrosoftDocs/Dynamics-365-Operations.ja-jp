@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d63f9d1c2af29b4c02b9555c8711eb8665e1bab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 082d9003a5b1afba67273ffb22a3e6973e68b561
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506225"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595478"
 ---
 # <a name="configure-lifecycle-services-lcs-security"></a>Lifecycle Services (LCS) のセキュリティの構成
 
@@ -30,7 +30,10 @@ ms.locfileid: "1506225"
 
 Microsoft Dynamics Lifecycle Services (LCS) のセキュリティは、組織レベルとプロジェクト レベルの両方で制御されます。 組織のすべてのメンバーが、すべてのプロジェクトへのアクセス権を持っているわけではありません。 また、プロジェクトのメンバーは、すべて同じ組織のメンバーではない可能性があります。
 
-Microsoft Dynamics 365 for Finance and Operations の現在のバージョンでは、サインアップ時に [Microsoft Office 365 ポータル](http://go.microsoft.com/fwlink/?LinkID=324287)で作成した Microsoft Azure Active Directory(Azure AD) 資格情報を使用してサインインできます。 Azure AD の組織の管理者になっているユーザーは、Microsoft Dynamics Lifecycle Services (LCS) の管理者になります。 Microsoft Dynamics AX 2012 では、LCS への組織レベルのアクセスは、個人の Microsoft ID と CustomerSource または PartnerSource の組織との関連付けによって制御されます。 したがって、CustomerSource または PartnerSource のユーザーは、LCS の組織のワークスペースに自動的にアクセスし、参加するように招待されたすべてのプロジェクトを表示できます。 CustomerSource および PartnerSource の組織の管理者になっているユーザーは LCS の管理者になります。 管理者は CustomerSource または PartnerSource の資格情報を持っていないユーザーを LCS の組織のメンバーに招待できますが、この方法はお勧めしません。 LCS 組織のメンバーとなるよう招待されたユーザーには、CustomerSource または PartnerSource での資格情報が提供されません。 LCS へのプロジェクト レベル アクセスは、招待によって行われます。 プロジェクトの所有者およびチーム メンバーとして組織のメンバーを招待することができます。 また、組織のメンバーではなく、Azure AD、CustomerSource、または PartnerSource のアカンウントを持たないユーザーをチーム メンバーに招待できます。 **重要:** 会社内のすべてのユーザーを組織レベルで管理することを強くお勧めします。 この方法で、組織との関係が CustomerSource、PartnerSource、および Azure AD で正しいことを保証できます。 また、ユーザーが組織で利用できる福利厚生にアクセスできることを保証します。
+Microsoft Dynamics 365 for Finance and Operations の現在のバージョンでは、サインアップ時に [Microsoft Office 365 ポータル](https://go.microsoft.com/fwlink/?LinkID=324287)で作成した Microsoft Azure Active Directory(Azure AD) 資格情報を使用してサインインできます。 Azure AD の組織の管理者になっているユーザーは、Microsoft Dynamics Lifecycle Services (LCS) の管理者になります。 Microsoft Dynamics AX 2012 では、LCS への組織レベルのアクセスは、個人の Microsoft ID と CustomerSource または PartnerSource の組織との関連付けによって制御されます。 したがって、CustomerSource または PartnerSource のユーザーは、LCS の組織のワークスペースに自動的にアクセスし、参加するように招待されたすべてのプロジェクトを表示できます。 CustomerSource および PartnerSource の組織の管理者になっているユーザーは LCS の管理者になります。 管理者は CustomerSource または PartnerSource の資格情報を持っていないユーザーを LCS の組織のメンバーに招待できますが、この方法はお勧めしません。 LCS 組織のメンバーとなるよう招待されたユーザーには、CustomerSource または PartnerSource での資格情報が提供されません。 LCS へのプロジェクト レベル アクセスは、招待によって行われます。 プロジェクトの所有者およびチーム メンバーとして組織のメンバーを招待することができます。 また、組織のメンバーではなく、Azure AD、CustomerSource、または PartnerSource のアカンウントを持たないユーザーをチーム メンバーに招待できます。
+
+> [!IMPORTANT]
+> 会社内のすべてのユーザーを組織レベルで管理することを強くお勧めします。 この方法で、組織との関係が CustomerSource、PartnerSource、および Azure AD で正しいことを保証できます。 また、ユーザーが組織で利用できる福利厚生にアクセスできることを保証します。
 
 ## <a name="manage-lcs-organization-users"></a>LCS 組織のユーザーの管理
 管理者のみユーザーを管理できます。 以下の手順を実行します。
@@ -40,7 +43,7 @@ Microsoft Dynamics 365 for Finance and Operations の現在のバージョンで
 
 ### <a name="invite-a-user-to-an-lcs-project"></a>LCS プロジェクトへのユーザーの招待
 
-1.  [LCS](http://lcs.dynamics.com/) にサインインします。
+1.  [LCS](https://lcs.dynamics.com/) にサインインします。
 2.  プロジェクトをクリックしてユーザーを追加します。
 3.  **プロジェクト ユーザー** タイルをクリックし、**プロジェクト ユーザー** ページで、プラス記号 (**+**) をクリックします。
 4.  ユーザーの電子メール アドレスを入力し、次に正しいセキュリティ ロールを選択して、**招待**をクリックします。
@@ -54,7 +57,7 @@ Microsoft Dynamics 365 for Finance and Operations の現在のバージョンで
 
 ### <a name="determining-the-administrator-for-your-organization-in-customersource-or-partnersource"></a>CustomerSource または PartnerSource で組織の管理者を決定する
 
-CustomerSource の管理者がわからない場合、または組織に CustomerSource 管理者がいない場合は、電子メール メッセージを [itmbssup@microsoft.com](http://itmbssup@microsoft.com) に送信してお問い合わせください。
+CustomerSource の管理者がわからない場合、または組織に CustomerSource 管理者がいない場合は、電子メール メッセージを [itmbssup@microsoft.com](mailto:itmbssup@microsoft.com) に送信してお問い合わせください。
 
 ## <a name="configuring-project-security"></a>プロジェクト セキュリティのコンフィギュレーション
 プロジェクトにユーザーとして参加するように、組織の内外からユーザーを招待することができます。 次のテーブルに、ユーザーが使用可能なロールを示します。

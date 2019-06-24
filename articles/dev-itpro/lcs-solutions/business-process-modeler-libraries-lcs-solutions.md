@@ -15,12 +15,12 @@ ms.custom: 196953
 ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: bea27594f49a22ef629f131499228093be1c7c3f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: cb47e4fdfe4beb729f9f5c4b8608eb9078bfad52
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537408"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594973"
 ---
 # <a name="set-up-business-process-modeler-libraries-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのビジネス プロセス モデラー ライブラリの設定
 
@@ -132,7 +132,7 @@ LCS の業務プロセス ライブラリで記録するタスクを表示でき
 6.  完了したら、**タスク ガイドの停止**を選択します。
 
 
-<a name="additional-resources"></a>追加リソース
+## <a name="additional-resources"></a>追加リソース
 --------
 
 [AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)

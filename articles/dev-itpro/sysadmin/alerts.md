@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: d45d27b11beb70630df1cd1d17939468e734c908
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b6aa7ea3e8250fd442cbf7ea29bc8f55e458f38c
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537177"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594949"
 ---
 # <a name="set-up-alerts"></a>警告の設定
 
@@ -44,7 +44,7 @@ Microsoft Dynamics 365 for Finance and Operations の重大なイベントの通
 
     ![警告の通知](./media/Batch-alert-notification.png)
 
-# <a name="set-up-alerts-for-batch-legacy-forms"></a>旧方式によるバッチ ジョブ 警告の設定
+## <a name="set-up-alerts-for-batch-legacy-forms"></a>旧方式によるバッチ ジョブ 警告の設定
 
 この手順では、従来のバッチ化されたフォームに表示される警告を設定します。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f24655707749fe6ef0cc931dbeeded6e40e6450d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: aa0514b0d7b5ebd02db579b4420bb50b5774043c
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537386"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552502"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-partners"></a>Lifecycle Services (LCS) for Finance and Operations のパートナー
 

@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67dc99d11df923416e8890a3ab22a6fe74990ebc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9138d10091550c22046c2c8b12bc263c919a7d53
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537248"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595460"
 ---
 # <a name="regulatory-certification-information-in-feature-titles"></a>機能タイトルの規制認証情報
 
@@ -40,7 +40,7 @@ ms.locfileid: "1537248"
 
 | コンポーネント名      |  書式設定 | 説明                                                                                                                   | 例                           |
 |---------------------|---------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| 国/地域コード | XX      | 2 文字の ISO 国/地域コード ([ISO 3166 規格](http://www.iso.org/iso/country_names_and_code_elements)) | PT (= ポルトガル)                   |
+| 国/地域コード | XX      | 2 文字の ISO 国/地域コード ([ISO 3166 規格](https://www.iso.org/iso/country_names_and_code_elements)) | PT (= ポルトガル)                   |
 | フィーチャー タイプ        | REG     | 機能のタイプ                                                                                                           | REG                               |
 | 証明の名前  | テキスト    | 証明書とそのアプリケーションを説明する短いタイトル                                                            | 会計プリンターの証明 |
 

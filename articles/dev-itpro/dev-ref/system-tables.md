@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91df47727f6608d416a21d94ad1ebaf3ac2c82cc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4d0051b098e0cdf9c17a23f769cc42362bd7d125
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537010"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544190"
 ---
 # <a name="system-tables"></a>システム テーブル
 
@@ -1699,7 +1699,7 @@ SqlDictionary テーブルは、テーブルおよびフィールド メタデ�
 [xRecord クラス](x-classes.md#class-xrecord) [共通テーブル](#common) [SqlDictionary テーブル](#sqldictionary)
 
 ## <a name="sqlparameters"></a>SqlParameters
-SqlParameters テーブルは、パラメーターと値の組み合わせの形式でデータベースに関連する情報を格納します。 このテーブルは Microsoft Dynamics AX 2009 では使用されません。
+SqlParameters テーブルは、パラメーターと値の組み合わせの形式でデータベースに関連する情報を格納します。 このテーブルは Microsoft Dynamics Ax 2009 では使用されません。
 
 ### <a name="fields"></a>フィールド
 
@@ -1728,7 +1728,7 @@ SqlParameters テーブルは、パラメーターと値の組み合わせの形
 [xRecord クラス](x-classes.md#class-xrecord) [共通テーブル](#common) [SqlParameters テーブル](#sqlparameters)
 
 ## <a name="sqlstatistics"></a>SqlStatistics
-SqlStatistics テーブルは、ユーザーの関連するデータベースの統計情報を格納します。 このテーブルは Microsoft Dynamics AX 2009 では使用されません。
+SqlStatistics テーブルは、ユーザーの関連するデータベースの統計情報を格納します。 このテーブルは Microsoft Dynamics Ax 2009 では使用されません。
 
 ### <a name="fields"></a>フィールド
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 5381f902ea232235b24ef87f57cece88cdab18b9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: cb878fb7916c7db76be112bc901a2ec5d800f448
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537081"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550966"
 ---
 # <a name="download-ax-2012-if-you-purchased-finance-and-operations-through-a-cloud-solution-provider"></a>クラウド ソリューション プロバイダーを通して Finance and Operations を購入した場合は AX 2012 をダウンロード
 

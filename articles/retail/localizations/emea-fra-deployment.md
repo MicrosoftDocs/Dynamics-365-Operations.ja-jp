@@ -16,16 +16,16 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 4700b5b880c5282cf9214bb95bc77e0e9ac810eb
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5bd7287bf68e2d142beccaf611b625d3a220ee6f
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512514"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577884"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックは、Microsoft Dynamics 365 for Retail のフランスでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、小売コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 フランスの小売ローカライズの詳細については、[フランスのキャッシュ レジスター](./emea-fra-cash-registers.md)を参照してください。
 

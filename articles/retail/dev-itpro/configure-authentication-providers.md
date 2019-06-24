@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 250c49ba1c95a0f3c1605edfccdc207c4e55edb3
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f5fe5ec83b0e2a89932eaef7f7c4243c22f6050d
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537583"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595465"
 ---
 # <a name="configure-authentication-providers"></a>認証プロバイダーのコンフィギュレーション
 
@@ -30,7 +30,7 @@ ms.locfileid: "1537583"
 
 このトピックでは、新しい OpenID 認証プロバイダを構成するためのプロセスの概要を示します。
 
-E コマース プラットフォームは、認証のためのメカニズムとして業界標準の [OpenID Connect](http://openid.net/connect/) を使用します。 この記事では、オンライン ストアで使用される OpenID プロバイダーを登録するために使用するページについて説明します。 Retail サーバーは、認証された顧客をサポートするメカニズムとして OpenID Connect を使用します。 OpenID 接続は、シンプルで発展した ID プロバイダーとして、OAuth 2.0 に加えて広く受け入れられている標準です。 Retail サーバーは、Microsoft Azure アクセス制御サービスを通じてすぐに使用できる OpenID プロバイダー、およびその他の個別に使用可能なプロバイダーの両方と統合することができます。 さらに、OpenID 接続をサポートするカスタム プロバイダーを統合および登録できます。 次の図は、Retail サーバーと電子商取引のフロントエンド サーバーの間で発生し、後続の呼び出しで認証トークンを渡すステップ バイ ステップのハンドシェイクを示しています。 
+E コマース プラットフォームは、認証のためのメカニズムとして業界標準の [OpenID Connect](https://openid.net/connect/) を使用します。 この記事では、オンライン ストアで使用される OpenID プロバイダーを登録するために使用するページについて説明します。 Retail サーバーは、認証された顧客をサポートするメカニズムとして OpenID Connect を使用します。 OpenID 接続は、シンプルで発展した ID プロバイダーとして、OAuth 2.0 に加えて広く受け入れられている標準です。 Retail サーバーは、Microsoft Azure アクセス制御サービスを通じてすぐに使用できる OpenID プロバイダー、およびその他の個別に使用可能なプロバイダーの両方と統合することができます。 さらに、OpenID 接続をサポートするカスタム プロバイダーを統合および登録できます。 次の図は、Retail サーバーと電子商取引のフロントエンド サーバーの間で発生し、後続の呼び出しで認証トークンを渡すステップ バイ ステップのハンドシェイクを示しています。 
 
 [![OpenId](./media/openid-1024x540.png)](./media/openid.png) 
 

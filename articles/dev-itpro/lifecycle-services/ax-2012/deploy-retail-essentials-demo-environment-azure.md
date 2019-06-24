@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: d12e11599dbaebd8e2d76bba2060b54e65f4bf47
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 7ec1e8b15e574e2d96880ed9bf6680d60f6cbd85
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537244"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555286"
 ---
 # <a name="deploy-retail-essentials-demo-environments-on-azure"></a>Azure での Retail Essentials デモ環境の配置
 

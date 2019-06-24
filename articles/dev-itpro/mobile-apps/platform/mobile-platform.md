@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 19319311d2a60cf0e943f569a48bc97b5dcf26aa
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: af4d15916c5989d549e40f8296b826caf4aea8e7
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506192"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1553266"
 ---
 # <a name="mobile-platform-for-finance-and-operations"></a>Finance and Operations 用のモバイル プラットフォーム
 

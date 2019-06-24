@@ -3,7 +3,7 @@ title: 規制の更新
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の計画されたおよびリリース済の規制の更新の一覧を提供します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
+ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530710"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "1593346"
 ---
 # <a name="regulatory-updates"></a>規制の更新
 
@@ -52,12 +52,23 @@ Microsoft は、新しい規制要件をできるだけ早く実装するよう�
 |      2019 年 4 月          |   10.0.1      |   ドイツ     |電子請求 - xRechnung 1.1 形式での顧客請求書のエクスポート         |
 |      2019 年 4 月          |   10.0.1      |    英国     |[VAT 明細書の提出の変更 (Making Tax Digital)](emea-gbr-mtd-vat-integration.md)    |    
 |      2019 年 4 月          |   10.0.1      |    ブラジル     |NF-e 新しい NT 2018.005         |
-|      2019 年 4 月          |   10.0.1      |    ロシア     |VAT 申告の形式が 2019 年から変更されます         |
-|      2019 年 4 月          |   10.0.1      |    ロシア     |VAT 申告の形式が 2019 年から変更されます (売上および購買帳簿) 
+|      2019 年 4 月          |   10.0.1      |    ロシア     |[VAT 申告の形式が 2019 年から変更されます](rus-VAT-declaration.md) |
+|      2019 年 4 月          |   10.0.1      |    ロシア     |VAT 申告の形式が 2019 年から変更されます (売上および購買帳簿) |
+|      2019 年 4 月          |   10.0.1      |    ロシア     |2018 年より土地税申告に対する変更 |
+|      2019 年 4 月          |   10.0.1      |    ロシア     |[2019 年より財産税申告に対する変更](rus-assessed-tax-declaration.md)|
+|      2019 年 4 月          |   10.0.1      |    ロシア     |2019 年より輸送税申告に対する変更  |
+|      2019 年 4 月            |   10.0.1      | ハンガリー      |  ハンガリー用: Microsoft Dynamics 365 for Finance and Operations v.1.1 2019 でオンライン請求  |
 |      2019 年 5 月            |   10.0.2      | ブラジル      |   SPED ECD レイアウト 7   |
+|      保留中            |   10.0.3      | ブラジル      |   NF-e 新 NT 2018.005 - v.1.20   |
+|      保留中            |   10.0.3      | ブラジル      |   SPED ECD レイアウト 7   |
+|      保留中            |   10.0.3      | ブラジル      |   SPED ECF - 2019 の レイアウト 5   |
+|      保留中            |   10.0.3      | リトアニア    |   i.SAF レポートでは、ユーザーに法律税コードに関連するシステム売上税コードを定義させます。    |
+|      保留中            |   10.0.3      | ポーランド     |   2019 年 7 月 1 日からの SAF 請求書 (JPK_FA) v 2  |
+|      保留中            |   10.0.3      | ブラジル   |   ICMS 会計ドキュメント調整でのテーブル 5.2 の有効化   |
+|      保留中            |   10.0.3      | ブラジル    |   NF-e 法令 54.308/18 (RS)   |
 
 
 ## <a name="additional-resources"></a>追加リソース
-- [Lifecycle Service - 問題検索](https://lcs.dynamics.com/Logon/Index) (ログイン必須) ですべての計画されたおよびリリース済みの規制の更新を検索します。
+- [Lifecycle Service - 問題検索](https://lcs.dynamics.com/Logon/Index) (サイン イン必須) ですべての計画されたおよびリリース済みの規制の更新を検索します。
 - Dynamics 365 for Finance and Operations でサポートされているローカライズの一覧は、「[国際可用性ガイド](https://aka.ms/dynamics_365_international_availability_deck)」を参照してください。
 

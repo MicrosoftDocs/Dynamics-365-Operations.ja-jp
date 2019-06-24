@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 674e3ca8a5b282a3a7522b92633972cb7dd88a7b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 839bc9843cc4e339c3980ad0768389e08b62c8b8
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502672"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552521"
 ---
 # <a name="configure-the-electronic-reporting-er-framework"></a>電子申告 (ER) フレームワークの構成
 

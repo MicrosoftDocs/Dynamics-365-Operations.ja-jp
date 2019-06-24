@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 37f2de832ba3b4d0a93aa4dce13c6295f9609fdc
-ms.sourcegitcommit: f7a1e74a639dfbe470f7d57d4fc55e3bf4c6a74a
+ms.openlocfilehash: 911a8983baa8df0fd3e21c86abb527e93b9c4978
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "1540879"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595457"
 ---
 # <a name="synchronize-bpm-libraries-with-azure-devops"></a>BPM ライブラリと Azure DevOps の同期
 
@@ -35,7 +35,7 @@ ms.locfileid: "1540879"
 - 作業品目タイプの状態を削除しないでください。
 - 必須フィールドを作業項目の種類に追加しない
 
-Azure DevOps の詳細については、[www.visualstudio.com/team-services](http://www.visualstudio.com/team-services) をご覧ください。
+Azure DevOps の詳細については、[www.visualstudio.com/team-services](https://www.visualstudio.com/team-services) をご覧ください。
 
 ## <a name="lcs-project-settings-set-up-azure-devops"></a>LCS プロジェクト設定: Azure DevOps の設定
 
@@ -89,7 +89,7 @@ BPM ライブラリを Azure DevOps プロジェクトと同期させるには�
 
 ![ライブラリのツール バーから Azure DevOps 同期を開始](./media/newbpm_BlogPost26.png)
 
->[!NOTE]
+> [!NOTE]
 > BPM ローカライズはサポートされません。 EN-US 以外の言語で新しい BPM クライアントを編集すると、変更が加えられた言語で BPM を表示したときのみ変更が表示されます。 EN-US で行われた変更を表示するには、変更が表示される前に、Visual Studio Team Server と同期する必要があります。
 
 ## <a name="turn-off-synchronization-of-bpm-with-azure-devops"></a>BPM と Azure DevOps の同期の停止

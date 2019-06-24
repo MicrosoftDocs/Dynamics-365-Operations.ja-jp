@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5fb6b23d11ab263ed158a0a4476f77ed22b5084
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561813"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595665"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0 (2016 年 2 月) の新機能および変更された機能
 
@@ -721,7 +721,7 @@ Retail サーバーとデータ管理によって、オンライン、店舗、�
 </thead>
 <tbody>
 <tr>
-<td>CRT サービスを使用して、チャンネルの業務データを保管する Commerce Runtime (CRT) データベースに接続します。</td>
+<td>CRT サービスを使用して、チャンネルの業務データを保管する commerce runtime (CRT) データベースに接続します。</td>
 <td>OData V3 がサポートされています。</td>
 <td>OData V4 がサポートされています。</td>
 <td>これは、顧客が最新の OData 標準に準拠し続けるために役立ちます。 また、店舗、モバイル、オンライン チャンネルをまたがって販売を統合することで、堅牢な無指向性のチャンネル体験も生みます。</td>
@@ -971,7 +971,7 @@ Lifecycle Services (LCS) は、サインアップから日常業務までのシ�
 </tr>
 <tr>
 <td>システムの健全性を監視し、エラーおよび問題を診断します。</td>
-<td>この機能には、<a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a> が必要です。</td>
+<td>この機能には、<a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a> が必要です。</td>
 <td>Retail コンポーネントの監視および診断を、LCS の<strong>オペレーション インサイト</strong> ダッシュボードから実施できるようになりました。</td>
 <td><strong>オペレーション インサイト</strong> ダッシュボードは、System Center Operations Manager (SCOM) インフラストラクチャをインストールする手間を置き換えるクラウドベースの監視ポータルです。</td>
 </tr>

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d2d00232064c7a65edaeac659e5456540cde2ce0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 380473cfb819adf881364fd2e6d50f5983ef0da8
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537070"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564377"
 ---
 # <a name="configure-and-install-retail-hardware-station"></a>Retail ハードウェア ステーションのコンフィギュレーションとインストール
 

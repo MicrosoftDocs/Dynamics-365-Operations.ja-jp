@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3aaf5f7849bcad259ba17c160efcd6af08c45859
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ff2acbe94acf5d6b1d921ecb9c32e9f7d76955f3
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536979"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595383"
 ---
 # <a name="x-math-runtime-functions"></a>X++ 数学ランタイム関数
 
@@ -71,7 +71,10 @@ ms.locfileid: "1536979"
     }
 
 ## <a name="acos"></a>acos
-実数の逆余弦を取得します。 **注記:** 引数が -1 から 1 の範囲外の場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。
+実数の逆余弦を取得します。
+
+> [!NOTE]
+> 注記: 引数が -1 から 1 の範囲外である場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。
 
 ### <a name="syntax"></a>構文
 
@@ -101,7 +104,10 @@ ms.locfileid: "1536979"
     }
 
 ## <a name="asin"></a>asin
-実数の逆正弦を取得します。 **注記:** 引数が -1 から 1 の範囲外の場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。
+実数の逆正弦を取得します。
+
+> [!NOTE]
+> 注記: 引数が -1 から 1 の範囲外である場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。
 
 ### <a name="syntax"></a>構文
 
@@ -236,7 +242,10 @@ ms.locfileid: "1536979"
     }
 
 ## <a name="cosh"></a>cosh
-実数の双曲線余弦を取得します。 **注記:** 引数が -250 から 250 の範囲外の場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。
+実数の双曲線余弦を取得します。
+
+> [!NOTE]
+> 注記: 引数が -250 から 250 の範囲外である場合、次のランタイム エラーが発生します。「引数が三角関数の範囲外です」。
 
 ### <a name="syntax"></a>構文
 
@@ -526,7 +535,7 @@ ms.locfileid: "1536979"
 
 ### <a name="remarks"></a>備考
 
-指定した小数点以下の桁数に実数を丸めるには、[decround 関数](http://msdn.microsoft.com/library/03bd2ea2-414e-43e0-ba05-f5db1a943b91(AX.60).aspx)を使用します。
+指定した小数点以下の桁数に実数を丸めるには、[decround 関数](https://msdn.microsoft.com/library/03bd2ea2-414e-43e0-ba05-f5db1a943b91(AX.60).aspx)を使用します。
 
 ### <a name="remarks"></a>備考
 

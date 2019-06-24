@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 63854db6dd2ca1ccbad7dbc8e53fc284abf2a561
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d51f75f9ebbf42d6ce0125124463dae35d3084bd
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537255"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555285"
 ---
 # <a name="install-and-run-system-diagnostics-ax-2012"></a>システム診断のインストールと実行 (AX 2012)
 

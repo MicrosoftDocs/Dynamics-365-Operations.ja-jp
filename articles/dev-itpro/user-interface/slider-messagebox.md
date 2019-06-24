@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aorth
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85df918e7f890f59a669cd092854369c010a0c1f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 65823eae3ff1ca30eee6d057a9426dd9520318f5
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537435"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559541"
 ---
 # <a name="slider-and-messagebox-dialogs"></a>スライダー ダイアログとメッセージ ボックス ダイアログ
 

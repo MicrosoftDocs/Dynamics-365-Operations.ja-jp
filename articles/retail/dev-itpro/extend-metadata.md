@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ec72dd190c410a8d7dc1b80e7d8924b208c2537f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 13436f9705f03a34992bbfd1cbb129a54a2f0621
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537556"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1569278"
 ---
 # <a name="extend-the-default-retail-server-metadata-controller"></a>既定の Retail Server メタデータ コントローラーの拡張
 

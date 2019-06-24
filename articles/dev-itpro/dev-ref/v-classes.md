@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b1c8d013b92bba4f8c844fc1b8e29a6e90ed791
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f0bd05f773b43f8f9ca1a0a364b9810bad4feb5a
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537005"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544183"
 ---
 # <a name="v-classes"></a>V クラス
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63b0a23d2cc89712f2d34469f34f8bd3d51f580d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2616ef93dcf99ea35f1b123253c26663bda68009
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502882"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547067"
 ---
 # <a name="document-reporting-services"></a>ドキュメントの Reporting Services
 

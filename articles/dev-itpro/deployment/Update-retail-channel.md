@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 0c4f634b0cad2e7458049e3ca52da377a53900ee
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 33a75b82197ce5c7df78fc918fd33d2678ef75bb
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537082"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544230"
 ---
 # <a name="apply-updates-and-extensions-to-cloud-hosted-retail-channel-components"></a>クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
 

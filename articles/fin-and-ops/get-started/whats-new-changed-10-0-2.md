@@ -1,9 +1,9 @@
 ---
-title: Finance and Operations バージョン 10.0.2 (2019 年 5 月) の機能のプレビュー
+title: Finance and Operations バージョン 10.0.2 (2019 年 5 月) の新機能および変更点
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 10.0.2 の新機能または変更された機能について説明します。 このバージョンは 5 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/11/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 75d90b3a41f5c9381a8b2ef5e7f931f6aac1cabb
-ms.sourcegitcommit: 3d1b0e7d0f165fbcbec9c92783e5e936b282d757
+ms.openlocfilehash: 1db22391cd5dd53da7ca24301a537ceafa6b6fc8
+ms.sourcegitcommit: bbc9aa0d6b94a942e1f4d5b038601509dcc87937
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "1540140"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1619157"
 ---
-# <a name="preview-features-in-finance-and-operations-version-1002-may-2019"></a>Finance and Operations バージョン 10.0.2 (2019 年 5 月) の機能のプレビュー
+# <a name="whats-new-or-changed-in-finance-and-operations-version-1002-may-2019"></a>Finance and Operations バージョン 10.0.2 (2019 年 5 月) の新機能および変更点
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.2 の新機能または変更された機能について説明します。 このバージョンは 5 月にリリースされ、ビルド番号は 10.0.80 です。 バージョン 10.0.2 の詳細については [追加リソース](whats-new-changed-10-0-2.md#additional-resources) を参照してください。
 
-Microsoft Dynamics 365 for Retail の新機能と変更についての最新のリリースでについては、[Dynamics 365 for Retail バージョン 10.0.2 の機能のプレビュー](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-2) を参照してください。
+
+最新のリリースの Microsoft Dynamics 365 for Retail の新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.2 の新機能と変更](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-2) を参照してください。
 
   
 ## <a name="recovering-vendor-invoices-that-are-in-use"></a>使用中の仕入先請求書を回復します。
@@ -70,7 +70,9 @@ Finance and Operations の規制の更新については、[ローカライズ�
 Finance and Operations 10.0.2 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=313841&dbType=3&qc=a4ba239cdec6f528657f529750b68845b75580e5fdb0ad6060c4bc33f8da67f8)を参照してください。
 
 ### <a name="platform-update-26"></a>プラットフォーム update 26
-Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.2 には、プラットフォーム更新プログラム 26 が含まれています。 プラットフォーム更新プロフラム 26 については [Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) のプレビュー機能](whats-new-platform-update-26.md) を参照してください。
+
+Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.2 には、プラットフォーム更新プログラム 26 が含まれています。 プラットフォーム更新プログラム 26 の詳細ついては [Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) の新機と変更点](whats-new-platform-update-26.md) を参照してください。
+
 
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?

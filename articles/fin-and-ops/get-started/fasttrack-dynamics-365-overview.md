@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
-ms.openlocfilehash: b76cdae060dbc66952816c982c5682f3d09236c6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8629d2f9de103fca5a2fec883d8ff025667c95eb
+ms.sourcegitcommit: 2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537418"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "1608153"
 ---
 # <a name="microsoft-fasttrack-for-finance-and-operations"></a>Microsoft FastTrack for Finance and Operations
 
@@ -57,9 +57,9 @@ Microsoft Dynamics Lifecycle Services (LCS) で**実装プロジェクト** ワ�
 
 ### <a name="tiered-services-for-finance-and-operations"></a>Finance and Operations のための階層化されたサービス
 
-| 座席数                                                                         | TechTalks | ワークショップ     | 評価                  | 専用 FastTrack ソリューション アーキテクト | コミュニティ |
+| シート数                                                                         | 技術解説 | ワーク ショップ     | 評価                  | 指定の FastTrack ソリューション アーキテクト | コミュニティ |
 |-----------------------------------------------------------------------------------------|-----------|---------------|------------------------------|----------------------------------------|-----------|
-| 20–149 の合算されたアプリまたは計画のユーザー サブスクリプション ライセンスまたは同等のもの      | ✓         | 使用不可 | 電子メールによる Go-Live 評価 | 使用不可                          | ✓         |
+| 20-149 の、結合された適格なアプリケーションまたはプランユーザーのサブスクリプション ライセンス、または相当額      | ✓         | 使用不可 | 電子メールによる Go-Live 評価 | 使用不可                          | ✓         |
 | 150 以上の組み合わせの適格なアプリまたは計画のユーザー サブスクリプション ライセンスまたは同等のもの | ✓         | ✓             | Go-Live 評価ワークショップ  | ✓                                      | ✓         |
 
 ### <a name="fasttrack-for-finance-and-operations-services"></a>FastTrack for Finance and Operations のサービス
