@@ -973,7 +973,7 @@
           href: deployment/Update-retail-channel.md
         - name: Retail Cloud Scale Unit の初期化
           href: deployment/Initialize-Retail-Channels.md
-        - name: Retail データ居住地
+        - name: Retail データ所在地
           href: deployment/retail-data-residency.md
     - name: オンプレミス配置
       href: deployment/on-premises-deployment-landing-page.md
@@ -997,7 +997,9 @@
               href: deployment/deploy-retail-onprem.md
         - name: カスタム モデルの開発とオンプレミス環境への配置
           href: deployment/develop-deploy-custom-models-on-premises.md
-        - name: オンプレミス環境のリバース プロキシのコンフィギュレーション
+        - name: オンプレミス環境との PowerBI.com の統合
+          href: analytics/entity-store-on-prem.md
+        - name: オンプレミス環境用リバース プロキシの構成
           href: deployment/onprem-reverseproxy.md
         - name: オンプレミス配置への更新プログラムの適用
           href: deployment/apply-updates-on-premises.md
@@ -1009,15 +1011,17 @@
           href: lifecycle-services/update-local-agent.md
         - name: 環境の再コンフィギュレーション
           href: lifecycle-services/reconfigure-environment.md
-        - name: クライアント インターネット接続
+        - name: クライアントのインターネット接続
           href: user-interface/client-disconnected.md
         - name: オンプレミス配置のトラブルシューティング
           href: deployment/troubleshoot-on-prem.md
+        - name: 証明書のローテーション
+          href: deployment/certificate-rotation-on-prem.md
     - name: カスタム コードの配置
       items:
-        - name: モデルの配置可能なパッケージの作成
+        - name: 配置可能なモデル パッケージの作成
           href: deployment/create-apply-deployable-package.md
-        - name: 配置可能なパッケージのコマンドラインからのインストール
+        - name: コマンド ラインからの配置可能なパッケージのインストール
           href: deployment/install-deployable-package.md
         - name: パッケージのアンインストール
           href: deployment/uninstall-deployable-package.md
@@ -1087,7 +1091,7 @@
       items:
         - name: コード移行の準備
           href: migration-upgrade/prepare-migration.md
-        - name: Azure DevOps マッピングのコンフィギュレーション
+        - name: Azure DevOps マッピングの構成
           href: migration-upgrade/configure-vso-solution.md
         - name: 分割されたモデル
           href: dev-tools/model-split.md
@@ -1099,9 +1103,9 @@
           href: migration-upgrade/upgrade-latest-update.md
         - name: 1 つのバージョンへのパス
           items:
-            - name: 最新バージョンへのセルフサービスアップグレード
+            - name: 最新バージョンへのセルフサービス アップグレード
               href: migration-upgrade/self-service-upgrade.md
-            - name: リビルドして最新バージョンに更新
+            - name: 再構築して最新バージョンに更新
               href: migration-upgrade/appupdate-80-81.md
         - name: ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
           href: migration-upgrade/versions-update-policy.md
@@ -1109,7 +1113,7 @@
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: 2016 年 8 月リリースへの Dynamics AX プラットフォームのアップグレード
           href: migration-upgrade/update-platform-each-release.md
-        - name: 開発またはデモ環境でのデータのアップグレード
+        - name: 開発環境またはデモ環境でのデータのアップグレード
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: 開発ツールの更新
           href: dev-tools/update-development-tools.md

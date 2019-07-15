@@ -4,15 +4,15 @@
   items:
     - name: 新機能および変更された機能
       href: get-started/whats-new.md
-    - name: Dynamics 365 for Retail 10.0.3 の機能のプレビュー
+    - name: Dynamics 365 for Retail 10.0.3 の新機能または変更された機能
       href: get-started/whats-new-10-0-3.md
-    - name: Dynamics 365 for Retail 10.0.2 の新機能および変更された機能
+    - name: Dynamics 365 for Retail 10.0.2 の新機能または変更された機能
       href: get-started/whats-new-10-0-2.md
-    - name: Dynamics 365 for Retail 10.0.1 の新機能および変更された機能
+    - name: Dynamics 365 for Retail 10.0.1 の新機能または変更された機能
       href: get-started/whats-new-10-0-1.md
-    - name: Dynamics 365 for Retail (2019 年 4 月) の新機能および変更された機能
+    - name: Dynamics 365 for Retail の新機能または変更された機能 (2019 年 4 月)
       href: get-started/april-whats-new.md
-    - name: Retail を購入する前に
+    - name: Retail 購入前に
       href: get-started/before-you-buy.md
     - name: プレビュー サブスクリプションのサインアップ
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
@@ -29,7 +29,7 @@
   items:
     - name: Microsoft FastTrack for Dynamics 365
       href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
-    - name: Onboarding
+    - name: オンボード
       href: ../fin-and-ops/imp-lifecycle/onboard.md
     - name: Go-Live の準備
       href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
@@ -49,7 +49,7 @@
       href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
     - name: Finance and Operations Retail プロジェクトの実装
       href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: Retail プロジェクトの新しい環境、Azure DevOps、ブランチの設定
+    - name: Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
       href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
     - name: Retail プロジェクトのコードと環境の更新
       href: dev-itpro/updating-environments.md
@@ -401,12 +401,16 @@
           href: localizations/apac-ind-cash-registers.md
         - name: キャッシュ レジスターの配置ガイドライン
           href: localizations/apac-ind-loc-deployment-guidelines.md
-        - name: インドにおけるアップグレードおよび N-1 のサポート
+        - name: インド向けアップグレードと N-1 のサポート
           href: localizations/apac-ind-n-1-for-india.md
     - name: イタリア
       items:
         - name: イタリア向け会計プリンター統合サンプル
           href: localizations/emea-ita-fpi-sample.md
+    - name: メキシコ
+      items:
+        - name: メキシコ向けグローバル CFDI 電子請求書
+          href: ../financials/localizations/latam-mex-global-cfdi-3-3.md
     - name: ノルウェー
       items:
         - name: キャッシュ レジスター機能
@@ -598,13 +602,13 @@
           href: dev-itpro/odata-controllers-api.md
         - name: Retail Server の顧客およびコンシューマー API
           href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: 既定の Retail Server のメタデータ コント ローラーの拡張
+        - name: 既定の Retail Server メタデータ コントローラーの拡張
           href: dev-itpro/extend-metadata.md
         - name: オフライン モードでの CRT サービスの呼び出し
           href: dev-itpro/call-crt-service-offline.md
     - name: Commerce Runtime (CRT) の拡張機能
       items:
-        - name: CRT のアーキテクチャおよびコンフィギュレーション
+        - name: CRT のアーキテクチャと構成
           href: dev-itpro/commerce-runtime-overview.md
         - name: CRT サービス
           href: dev-itpro/crt-services.md
