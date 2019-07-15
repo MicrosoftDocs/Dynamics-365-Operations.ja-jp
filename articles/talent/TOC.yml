@@ -8,6 +8,16 @@
         - name: Talent の新機能および変更された機能
           href: whats-new.md
           items:
+            - name: 2019 年 7 月 2 日
+              href: whats-new-talent-july-2-2019.md
+            - name: 2019 年 6 月 25 日
+              href: whats-new-talent-june-25-2019.md
+            - name: 2019 年 6 月 18 日
+              href: whats-new-talent-june-18-2019.md
+            - name: 2019 年 6 月 11 日
+              href: whats-new-talent-june-11-2019.md
+            - name: 2019 年 6 月 4 日
+              href: whats-new-talent-june-4-2019.md
             - name: 2019 年 5 月 28 日
               href: whats-new-talent-may-28-2019.md
             - name: 2019 年 5 月 21 日
@@ -16,26 +26,26 @@
               href: whats-new-talent-may-13-2019.md
             - name: 2019 年 5 月 6 日
               href: whats-new-talent-may-6-2019.md
-            - name: 2019 年 4 月 30 日
-              href: whats-new-talent-april-30-2019.md
-            - name: 2019 年 4 月 25 日
-              href: whats-new-talent-april-25-2019.md
-            - name: 2019 年 4 月 16 日
-              href: whats-new-talent-april-16-2019.md
-            - name: 2019 年 4 月 9 日
-              href: whats-new-talent-april-9-2019.md
-            - name: 2019 年 4 月 2 日
-              href: whats-new-talent-april-2-2019.md
-            - name: 2019 年 3 月 26 日
-              href: whats-new-talent-march-26-2019.md
-            - name: 2019 年 3 月 20 日
-              href: whats-new-talent-march-20.md
-            - name: 2019 年 3 月 14 日
-              href: whats-new-talent-march-14.md
-            - name: 2019 年 3 月 5 日
-              href: whats-new-talent-march-5.md
             - name: 新機能アーカイブ 2019
               items:
+                - name: 2019 年 4 月 30 日
+                  href: whats-new-talent-april-30-2019.md
+                - name: 2019 年 4 月 25 日
+                  href: whats-new-talent-april-25-2019.md
+                - name: 2019 年 4 月 16 日
+                  href: whats-new-talent-april-16-2019.md
+                - name: 2019 年 4 月 9 日
+                  href: whats-new-talent-april-9-2019.md
+                - name: 2019 年 4 月 2 日
+                  href: whats-new-talent-april-2-2019.md
+                - name: 2019 年 3 月 26 日
+                  href: whats-new-talent-march-26-2019.md
+                - name: 2019 年 3 月 20 日
+                  href: whats-new-talent-march-20.md
+                - name: 2019 年 3 月 14 日
+                  href: whats-new-talent-march-14.md
+                - name: 2019 年 3 月 5 日
+                  href: whats-new-talent-march-5.md
                 - name: 2019 年 2 月 27 日
                   href: whats-new-talent-feb-27.md
                 - name: 2019 年 2 月 14 日
@@ -102,16 +112,24 @@
           href: attract-comprehensive-hiring.md
         - name: Attract の機能
           href: attract-overview.md
+        - name: LinkedIn に関するよく寄せられる質問
+          href: attract-linkedin-faq.md
+        - name: 電子メール設定の構成
+          href: attract-configure-email-settings.md
         - name: Attract でのプロセス テンプレートの作成
           href: Process-templates-Attract.md
-        - name: Attract でジョブ求人の作成、承認、および投稿
+        - name: 職務の作成と投稿
           href: Creating-jobs-Attract.md
-        - name: Attract から外部キャリア サイトへの求人の投稿
+        - name: LinkedIn との統合の設定
+          href: attract-admin-linkedin.md
+        - name: Attract から LinkedIn への職務の投稿
+          href: attract-post-jobs-to-linkedin.md
+        - name: Attract から Broadbean への職務の投稿
           href: posting-jobs-external.md
         - name: 人材グループを使用した候補者のソーシング
           href: attract-talent-pools.md
-        - name: LinkedIn Recruiter によるソーシング
-          href: attract-linked-in-recruiter.md
+        - name: LinkedIn Recruiter を使用した候補者のソーシング
+          href: attract-linkedin-recruiter.md
         - name: 採用プロセスの活動
           href: activities-attract.md
         - name: 面接のスケジューリングおよびフィードバック
@@ -132,12 +150,28 @@
           href: Admin-Settings-Attract.md
         - name: インテリジェントな推奨
           href: Intelligent-Recommendations.md
-        - name: 魅力的な新人研修エクスペリエンスの作成
-          href: create-onboarding-experience.md
         - name: 候補者のプロファイルおよび応募のソースの追跡
           href: source-tracking.md
         - name: プロセス インサイトの採用に分析レポートを使用
           href: analytic-reports.md
+    - name: Onboard での新規採用にようこそ
+      items:
+        - name: Onboard の使用を開始する
+          href: create-onboarding-experience.md
+        - name: Onboard アプリを入手する
+          href: onboard-get-app.md
+        - name: 研修用ガイドの作成と送信
+          href: onboard-create-guide.md
+        - name: 研修テンプレートの作成
+          href: onboard-create-template.md
+        - name: ガイドとテンプレートの編集
+          href: onboard-edit-guides-templates.md
+        - name: コンテンツの共有
+          href: onboard-share-template.md
+        - name: 状態の表示
+          href: onboard-view-status.md
+        - name: 採用チームの作成
+          href: onboard-create-team.md
     - name: Core HR による従業員の管理
       items:
         - name: 従業員の編成
@@ -357,6 +391,8 @@
           href: corehr-custom-fields.md
     - name: Talent のトラブルシューティング
       items:
+        - name: LinkedIn への職務の投稿のトラブルシューティング
+          href: attract-troubleshoot-linkedin.md
         - name: 分析レポートが更新されない
           href: analytic-reports-not-updated.md
         - name: PowerApps 管理センターで環境を作成できない

@@ -42,11 +42,11 @@
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: 延期された AX 2012 の機能
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
-            - name: オンプレミス配置で実装されていない機能
+            - name: オンプレミス配置に実装されない機能
               href: get-started/features-not-implemented-on-prem.md
-            - name: Finance and Operations バージョン 10.0.4 (2019 年 7 月) の機能のプレビュー
+            - name: Finance and Operations バージョン 10.0.4 (2019 年 7 月)
               href: get-started/whats-new-changed-10-0-4.md
-            - name: Finance and Operations バージョン 10.0.3 (2019 年 6 月) の機能のプレビュー
+            - name: Finance and Operations バージョン 10.0.3 (2019 年 6 月)
               href: get-started/whats-new-changed-10-0-3.md
             - name: Finance and Operations バージョン 10.0.2 (2019 年 5 月)
               href: get-started/whats-new-changed-10-0-2.md
@@ -56,9 +56,9 @@
               href: get-started/whats-new-changed-10.md
             - name: Finance and Operations バージョン 8.1.3 (2019 年 1 月)
               href: get-started/whats-new-changed-8-1-3.md
-            - name: Finance and Operations platform update 28 (2019 年 7 月) の機能のプレビュー
+            - name: Platform update 28 (2019 年 7 月)
               href: get-started/whats-new-platform-update-28.md
-            - name: Finance and Operations platform update 27 (2019 年 6 月) の機能のプレビュー
+            - name: Platform update 27 (2019 年 6 月)
               href: get-started/whats-new-platform-update-27.md
             - name: Platform update 26 (2019 年 5 月)
               href: get-started/whats-new-platform-update-26.md
@@ -236,10 +236,16 @@
           href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
         - name: データ タスクの自動化
           href: ../dev-itpro/data-entities/data-task-automation.md
-        - name: 1 つのバージョンを使用した ISV ソリューションの配信
+        - name: One Version を使用した ISV ソリューションの提供
           href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-        - name: Regression Suite Automation Tool
-          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+        - name: テストの自動化
+          items:
+            - name: ユーザー受け入れテストの作成と自動化
+              href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+            - name: Regression Suite Automation Tool チュートリアルの設定
+              href: get-started/hol-set-up-regression-suite-automation-tool.md
+            - name: Regression Suite Automation Tool チュートリアルの使用
+              href: get-started/hol-use-regression-suite-automation-tool.md
     - name: ビジネス イベント
       href: ../dev-itpro/business-events/home-page.md
       items:
@@ -257,6 +263,10 @@
           href: ../dev-itpro/business-events/troubleshooting.md
         - name: ビジネス イベントのユースケース
           href: ../dev-itpro/business-events/potential-use-cases.md
+        - name: チュートリアル
+          items:
+            - name: Microsoft Flow でのビジネスイベントの消費
+              href: ../dev-itpro/business-events/how-to/how-to-flow.md
     - name: コンプライアンス
       items:
         - name: 監査ポリシー ルール
@@ -849,7 +859,7 @@
               href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
             - name: 財務分析コード
               href: ../financials/general-ledger/financial-dimensions.md
-            - name: 勘定構造
+            - name: 財務分析コードおよび転記
               href: ../financials/general-ledger/Default-dimensions.md
             - name: CFO ワークスペースへの財務分析コードの追加
               href: ../financials/general-ledger/CFO-workspace.md
@@ -1080,6 +1090,8 @@
                   href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
                 - name: 勘定構造の作成
                   href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: 財務分析コードおよび転記
+                  href: ../financials/general-ledger/default-dimensions.md
                 - name: 発生主義スキーマの作成
                   href: ../financials/general-ledger/tasks/create-accrual-schemes.md
                 - name: 財務連結および通貨換算
@@ -1936,10 +1948,144 @@
                   href: ../financials/localizations/apac-ind-gst-reference-groups.md
                 - name: キャッシュ レジスターの販売税統合
                   href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: 未登録仕入先からの課税対象品目の購買
-                  href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
-            - name: キャッシュ レジスターの配置ガイドライン
-              href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+                - name: マスター データの設定
+                  items:
+                    - name: ビジネス業種の作成
+                      href: ../financials/localizations/apac-ind-GST-create-business-vertical.md
+                    - name: 州コードと連邦直轄領の更新
+                      href: ../financials/localizations/apac-ind-GST-update-state-code-union-territory.md
+                    - name: GSTIN マスターの作成
+                      href: ../financials/localizations/apac-ind-GST-create-gstin-master.md
+                    - name: GSTIN および参照番号順序の定義
+                      href: ../financials/localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
+                    - name: HSN コードとサービス会計コードの定義
+                      href: ../financials/localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                    - name: 販売税転記タイプの主勘定の作成
+                      href: ../financials/localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
+                    - name: 税決済期間の作成
+                      href: ../financials/localizations/apac-ind-GST-create-tax-settlement-period.md
+                    - name: 税登録グループへの GSTIN の関連付け
+                      href: ../financials/localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
+                - name: 税設定
+                  items:
+                    - name: 税コンフィギュレーションの定義と法人への配置
+                      href: ../financials/localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
+                    - name: コンフィギュレーション税タイプのマップ - 関税
+                      href: ../financials/localizations/apac-ind-GST-map-configuration-tax-types.md
+                    - name: レート テーブルと比率テーブルの設定
+                      href: ../financials/localizations/apac-ind-GST-set-up-rate-percentage-tables.md
+                    - name: 消費税階層と税相殺ルールの設定
+                      href: ../financials/localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
+                - name: 購買トランザクション
+                  items:
+                    - name: 未登録仕入先からの購入
+                      href: ../financials/localizations/apac-ind-GST-purchases-unregistered-vendor.md
+                    - name: 未登録仕入先からの課税対象品目の購入
+                      href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
+                    - name: 登録仕入先からの購入
+                      href: ../financials/localizations/apac-ind-GST-purchases-registered-vendor.md
+                    - name: 割引済商品の購入
+                      href: ../financials/localizations/apac-ind-GST-purchase-discounted-goods.md
+                    - name: 非課税商品の購入
+                      href: ../financials/localizations/apac-ind-GST-purchase-exempted-goods.md
+                    - name: 税率 0 の商品の購入
+                      href: ../financials/localizations/apac-ind-GST-purchase-zero-rated-goods.md
+                    - name: 販売税がない商品の購入
+                      href: ../financials/localizations/apac-ind-GST-purchase-non-gst-goods.md
+                    - name: 複合ディーラーからの購入
+                      href: ../financials/localizations/apac-ind-GST-purchase-from-composite-dealer.md
+                    - name: 出荷費用がかかる課税対象商品の購入
+                      href: ../financials/localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
+                    - name: 課税対象商品がある仕入請求書の変更
+                      href: ../financials/localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
+                    - name: 固定資産の購入
+                      href: ../financials/localizations/apac-ind-GST-purchase-fixed-asset.md
+                    - name: 仕入請求書に対する訂正票の作成
+                      href: ../financials/localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
+                    - name: 仕入請求書に対する借方票の作成
+                      href: ../financials/localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
+                    - name: サンプリング品目の破壊が関与する品質指示
+                      href: ../financials/localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
+                    - name: 購買返品注文
+                      href: ../financials/localizations/apac-ind-GST-purchase-return-order.md
+                    - name: 逆請求がある仕入先の前払
+                      href: ../financials/localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                - name: 販売トランザクション
+                  items:
+                    - name: 消費者への課税対象商品の販売
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-consumer.md
+                    - name: 登録済顧客への販売
+                      href: ../financials/localizations/apac-ind-GST-sell-registered-customer.md
+                    - name: 自由書式の請求書
+                      href: ../financials/localizations/apac-ind-GST-free-text-invoices.md
+                    - name: 逆請求がある課税対象商品の販売
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
+                    - name: 非課税品目の販売
+                      href: ../financials/localizations/apac-ind-GST-sales-exempted-item.md
+                    - name: 税率 0 の商品の販売
+                      href: ../financials/localizations/apac-ind-GST-sell-zero-rated-goods.md
+                    - name: 販売税がない商品の販売
+                      href: ../financials/localizations/apac-ind-GST-sell-non-gst-goods.md
+                    - name: 割引と仮評価が適用される課税対象商品の販売
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
+                    - name: 出荷費用が課税される課税対象商品の販売
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
+                    - name: 価格が税込みまたは税抜きの販売
+                      href: ../financials/localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
+                    - name: 売上請求書に対する借方票の作成
+                      href: ../financials/localizations/apac-ind-GST-debit-note-against-sales-invoice.md
+                    - name: 売上請求書に対する訂正票の作成
+                      href: ../financials/localizations/apac-ind-GST-credit-note-against-sales-invoice.md
+                    - name: 配送先住所に基づいて分割されている売上請求書
+                      href: ../financials/localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
+                    - name: 返品注文
+                      href: ../financials/localizations/apac-ind-GST-return-order-form.md
+                - name: 外部トランザクション
+                  items:
+                    - name: 販売税がある商品のインポート
+                      href: ../financials/localizations/apac-ind-GST-import-goods-gst.md
+                    - name: 販売税があるサービスのインポート
+                      href: ../financials/localizations/apac-ind-import-services-gst.md
+                    - name: 税率 0 の商品のエクスポート
+                      href: ../financials/localizations/apac-ind-GST-export-goods-zero-rated-tax.md
+                    - name: 税率 0 のサービスのエクスポート
+                      href: ../financials/localizations/apac-ind-GST-export-services-zero-rated-tax.md
+                - name: 在庫トランザクション
+                  items:
+                    - name: 移転価格が課税される在庫移動オーダー
+                      href: ../financials/localizations/apac-ind-GST-stock-transfer-transactions.md
+                - name: 顧客支払トランザクション
+                  items:
+                    - name: 税込みの前払
+                      href: ../financials/localizations/apac-ind-GST-advance-payment-includes-tax.md
+                    - name: 請求書の転記時に決済される前払
+                      href: ../financials/localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
+                    - name: 税込みの前払と請求書の手動決済
+                      href: ../financials/localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
+                    - name: 税込みの請求書の支払
+                      href: ../financials/localizations/apac-ind-GST-pay-invoice-includes-tax.md
+                    - name: 税込みの前払の変更
+                      href: ../financials/localizations/apac-ind-GST-revise-advanced-payment-tax.md
+                    - name: 顧客の支払の払戻
+                      href: ../financials/localizations/apac-ind-GST-customer-payment-refund.md
+                - name: 直接税トランザクション
+                  items:
+                    - name: 税控除の計算時に販売税を含める
+                      href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                    - name: 徴税の計算時に販売税を含める
+                      href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+                - name: 税額の調整
+                  href: ../financials/localizations/apac-ind-GST-tax-adjustments.md
+                - name: ルール ベースの税決済
+                  href: ../financials/localizations/apac-ind-GST-tax-settlement.md
+                - name: 税仕訳帳の作成
+                  href: ../financials/localizations/apac-ind-GST-tax-journal.md
+                - name: 税還付用 GSTR レポート データの生成
+                  href: ../financials/localizations/apac-ind-GST-tax-returns.md
+                - name: 税の照会
+                  href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
+                - name: キャッシュ レジスターの配置ガイドライン
+                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
             - name: 税エンジンの概要
               href: ../financials/general-ledger/tax-engine.md
               items:
@@ -2353,7 +2499,7 @@
                   href: ../financials/localizations/rus-fixed-asset-transfer.md
                 - name: 固定資産の統一された印刷フォーム
                   href: ../financials/localizations/printing-forms-fixed-assets.md
-                - name: 作業ウェア/特殊衣類の会計 (ロシア)
+                - name: 作業着/特殊衣類の会計 (ロシア)
                   href: ../financials/localizations/rus-working-clothes-instruments-accounting.md
                 - name: 価値のない固定資産 (NVFA) (ロシア)
                   href: ../financials/localizations/rus-not-valuable-assets.md
@@ -2377,6 +2523,10 @@
                   href: ../financials/localizations/rus-accounting-reporting.md
                 - name: 評価税申告
                   href: ../financials/localizations/rus-assessed-tax-declaration.md
+                - name: 輸送税申告
+                  href: ../financials/localizations/rus-transport-tax-declaration.md
+                - name: 土地税の申告
+                  href: ../financials/localizations/rus-land-tax-declaration.md
             - name: 組織管理
               items:
                 - name: 住所に関連する税登録情報
@@ -2795,162 +2945,224 @@
               href: ../dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/fin-and-ops/toc.json
             - name: レポートのメニュー項目を拡張してユーザー ナビゲーションをリダイレクトする
               href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
-            - name: ビジネス ドキュメントのカスタム デザインの作成
+            - name: ビジネス ドキュメントのカスタム デザインを作成する
               href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
-        - name: 電子申告
+            - name: 埋め込みビューアを使用して PDF ドキュメントをプレビューする
+              href: ../dev-itpro/analytics/preview-pdf-documents.md?toc=/fin-and-ops/toc.json
+    - name: 電子申告
+      items:
+        - name: 電子申告の概要
           href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
+        - name: コンフィギュレーション
           items:
-            - name: 電子申告フレームワークのコンフィギュレーション
-              href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
             - name: コンフィギュレーションの作成
               href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
+            - name: 電子申告ソリューションのコンポーネントを準備する
               items:
-                - name: コンフィギュレーション プロバイダーを作成し、有効としてマークする
-                  href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
                 - name: ドメイン固有のデータ モデルを設計する
                   href: ../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json
+                - name: アプリケーション固有のメタデータを準備する
+                  items:
+                    - name: (ER) RCS で使用するアプリケーション メタデータを準備する
+                      href: ../dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/fin-and-ops/toc.json
+                    - name: (RCS) ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする
+                      href: ../dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/fin-and-ops/toc.json
+                    - name: (RCS) 接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする
+                      href: ../dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/fin-and-ops/toc.json
                 - name: モデル マッピングを定義し、データ ソースを選択する
                   href: ../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: データ モデルを選択したデータ ソースにマップする
+                - name: 選択したデータ ソースにデータ モデルをマップする
                   href: ../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: 形式のコンフィギュレーションの作成
+                - name: 形式コンフィギュレーションを作成する
                   href: ../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: 形式のコンポーネントをデータ モデル要素にマップする
+                - name: 作成された形式のコンポーネントをデータ モデル要素にマッピングする
                   href: ../dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/fin-and-ops/toc.json
+            - name: 準備された ER ソリューションをターゲット アプリケーションでテストする
+              items:
+                - name: (ER) コンフィギュレーションを RCS からインポートする
+                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/fin-and-ops/toc.json
                 - name: 形式コンフィギュレーションを使用して支払の電子ドキュメントを生成する
                   href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-                - name: 新しい基準バージョンを採用した形式のアップグレード
-                  href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
-                - name: ER コンフィギュレーションのデザイン (PDF テンプレートの入力用)
-                  href: ../dev-itpro/analytics/er-fillable-pdf.md
-            - name: 電子申告のフォーミュラ デザイナー
-              href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-            - name: Power BI にデータをプルするよう電子申告を構成する
-              href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
-            - name: 行先
-              href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: コンフィギュレーション先
-                  href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Word 形式のレポートを生成するためのコンフィギュレーションを設計する
-              href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: OpenXML 形式のレポートを生成するためのコンフィギュレーションを設計する
+            - name: 形式の新しい基準バージョンを採用してその形式をアップグレードする
+              href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
+        - name: 電子申告のフォーミュラ デザイナー
+          href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
+        - name: 個別の ER コンフィギュレーションで ER モデル マッピングを管理する
+          href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: 形式を作成するときにデータ モデル定義を選択する
+          href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: コンテンツを XML のままで追加してレポートを生成する
+          href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
+        - name: (ER) 電子申告における会社間データ ソース
+          href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
+        - name: さまざまな形式で送信電子ドキュメントを生成するための ER 形式を設計する
+          items:
+            - name: (ER) OPENXML 形式でレポートを生成するためのコンフィギュレーションを設計する
               href: ../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Excel テンプレートを再適用して電子申告形式を変更する
-              href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: 形式を作成するときにデータ モデル定義を選択する
-              href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
-            - name: その他のコンポーネントでコンフィギュレーションの依存関係を定義する
-              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: (ER) Word 形式のレポートを生成するためのコンフィギュレーションを設計する
+              href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: PDF テンプレートを入力するためのコンフィギュレーションを設計する
+              href: ../dev-itpro/analytics/er-fillable-pdf.md?toc=/fin-and-ops/toc.json
+        - name: 画像や図形を埋め込む
+          items:
+            - name: (ER) 生成するドキュメントに画像や図形を埋め込む
+              href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
+            - name: 画像や図形の埋め込み例
               items:
-                - name: データ ソースとして財務分析コードを使用するためのデータ モデルを設計する
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
-                - name: データ ソースとして財務分析コードを使用するためのモデルをマップする
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
-                - name: データ ソースとして財務分析コードを使用するためのレポートを設計する
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
-                - name: 財務分析コードをデータ ソースとして使用するレポートを実行する
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
-                - name: 棚卸および集計を行うための形式を作成する
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
-                - name: 棚卸および集計を行うための計算を構成する
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
-                - name: 棚卸および集計の出力を生成するための計算を使用する
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
-                - name: 棚卸および集計を行うための形式を実行する
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
-                - name: 列を水平に拡張された範囲として動的に追加する形式を設計する
-                  href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-                - name: 列を水平に拡張された範囲として動的に追加する形式を実行する
-                  href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
-                - name: 出力でドキュメント管理ファイルを使用するためのデータ モデルを準備する
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-                - name: 出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
-                - name: 出力でドキュメント管理ファイルを使用するための形式を作成する
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
-                - name: 出力でドキュメント管理ファイルを使用するための形式を実行する
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
-                - name: 出力でドキュメント管理ファイルを使用するための形式を変更して実行する
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
-                - name: 画像が埋め込まれた Office 形式でレポートを生成するコンフィギュレーションを設計する
+                - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを設計する
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json
-                - name: 画像が埋め込まれた Office 形式でレポートを生成するコンフィギュレーションを確認する
+                - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを確認する
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json
                 - name: 画像が埋め込まれた Office 形式でレポートを生成する
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
+        - name: Excel テンプレートを再適用して電子申告形式を変更する
+          href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
+        - name: Finance and Operation バージョンに依存する ER コンフィギュレーションを設計する
+          items:
+            - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
+              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: 財務分析コードを使用するための ER ソリューションを設計する
+          items:
+            - name: データ ソースとして財務分析コードを使用するためのデータ モデルを設計する
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
+            - name: データ ソースとして財務分析コードを使用するためのモデルをマップする
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
+            - name: データ ソースとして財務分析コードを使用するためのレポートを設計する
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
+            - name: 財務分析コードをデータ ソースとして使用するレポートを実行する
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
+        - name: 生成された出力からの情報を使用して棚卸および集計を行うための ER 形式を設計する
+          items:
+            - name: 棚卸および集計を行うための形式を作成する
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
+            - name: 棚卸および集計を行うための形式を構成する
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
+            - name: 棚卸および集計の出力を生成するための計算を使用する
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
+            - name: 棚卸および集計を行うための形式を実行する
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
+        - name: 水平に拡張された範囲として列を Excel レポートに動的に追加する
+          items:
+            - name: 水平に拡張された範囲として列を Excel レポートに動的に追加するための形式を設計する
+              href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
+            - name: 水平に拡張された範囲として列を Excel レポートに動的に追加するための形式を実行する
+              href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
+        - name: 形式出力でドキュメント管理ファイルを使用する
+          items:
+            - name: ER 出力でドキュメント管理ファイルを使用するためのデータ モデルを準備する
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
+            - name: ER 出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
+            - name: ER 出力でドキュメント管理ファイルを使用するための形式を作成する
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
+            - name: ER 出力でドキュメント管理ファイルを使用するための形式を実行する
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
+            - name: ER 出力でドキュメント管理ファイルを使用するための形式を変更して実行する
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
+        - name: 電子申告を使用してアプリケーション データを更新する
+          items:
             - name: 電子ドキュメントを生成してアプリケーション データを更新する
               href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
+            - name: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションをインポートする
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
+            - name: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションを設計する
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
+            - name: アプリケーション データを含むドキュメントを生成するためのモデルとマッピングを変更する
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
+            - name: アプリケーション データを含むドキュメントを生成するための形式を変更する
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
+            - name: アプリケーション データを含むドキュメントを生成する
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
+        - name: ER ソリューションを使用して受信ファイルからデータをインポートする
+          items:
+            - name: 異なる形式で着信ドキュメントを解析する
+              href: ../dev-itpro/analytics/er-parse-incoming-documents.md?toc=/fin-and-ops/toc.json
+            - name: 手動で選択したファイルからのデータのインポートを構成する
               items:
-                - name: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションをインポートする
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
-                - name: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションを設計する
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
-                - name: アプリケーション データを含むドキュメントを生成するためのモデルとマッピングを変更する
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
-                - name: アプリケーション データを含むドキュメントを生成するための形式を変更する
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
-                - name: アプリケーション データを含むドキュメントを生成する
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
-            - name: 印刷可能な FTI フォームを生成する
-              href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
-            - name: コンテンツを XML のままで追加してレポートを生成する
-              href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
-            - name: 生成されたレポート結果を追跡し、ベースライン値と比較する
-              href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
-            - name: 電子申告における会社間データ ソース
-              href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
-            - name: 生成するドキュメントに画像や図形を埋め込む
-              href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
-            - name: コンフィギュレーション ライフサイクルの管理
-              href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Lifecycle Services へのコンフィギュレーションのアップロード
-                  href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Lifecycle Services からのコンフィギュレーションのインポート
-                  href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: コンフィギュレーション規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
-                  href: ../dev-itpro/analytics/rcs-download-configurations.md
-                - name: Lifecycle Services からのコンフィギュレーションのダウンロード
-                  href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
-                - name: コンフィギュレーションのインポート
-                  href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
-            - name: モデル マッピング コンフィギュレーションの管理
-              href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: 外部ファイルからデータをインポートするためのコンフィギュレーションを作成する
+                - name: 外部 XML ファイルからデータをインポートするためのコンフィギュレーションを作成する
                   href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
-                - name: SharePoint からのデータ インポートを構成する
-                  href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
-            - name: 受信ドキュメントを Excel 形式で解析する
-              href: ../dev-itpro/analytics/parse-incoming-documents-excel.md?toc=/fin-and-ops/toc.json
-            - name: アプリケーション データを更新するために受信したドキュメントを解析する
-              href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
-            - name: CSV 形式で受信したドキュメントを解析する
-              href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
-            - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
-              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
+            - name: SharePoint にあるファイルからのバッチ モードのデータのインポートを構成する
+              href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
+            - name: XML 形式のファイルをインポートする
+              items:
+                - name: オプションの属性を使用して XML 形式でファイルをインポートする
+                  href: ../dev-itpro/analytics/rcs-optional-attributes.md?toc=/fin-and-ops/toc.json
+                - name: オプションの属性を含む XML 形式のファイルをインポートするための ER 形式を構成する
+                  href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
             - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
+        - name: コンフィギュレーション ライフサイクル
+          items:
+            - name: コンフィギュレーション ライフサイクルの管理
+              href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
+            - name: コンフィギュレーションを Lifecycle Services にアップロードする
+              href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
+            - name: コンフィギュレーションを Lifecycle Services からインポートする
+              href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+            - name: コンフィギュレーションを Lifecycle Services からダウンロードする
+              href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
+            - name: コンフィギュレーションをインポートする
+              href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
+            - name: ER コンフィギュレーションを RCS リポジトリからダウンロードする
               items:
-                - name: 電子申告機能の一覧の拡張
-                  href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
-                - name: Application update 7.3 での電子申告フレームワーク API の変更
-                  href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
-                - name: 生成されるドキュメントに対するカスタム ストレージの指定
-                  href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
+                - name: RCS タイプの ER リポジトリからコンフィギュレーションをダウンロードする
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md?toc=/fin-and-ops/toc.json
+                - name: コンフィギュレーションを RCS からインポートする
+                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md
+        - name: Finance and Operations で電子申告ソリューションを使用する
+          items:
+            - name: フレームワークのコンフィギュレーション
+              items:
+                - name: 電子申告フレームワークのコンフィギュレーション
+                  href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
+                - name: コンフィギュレーション プロバイダーを作成し、有効としてマークする
+                  href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: 行先
+              items:
+                - name: 概算見積
+                  href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
+                - name: コンフィギュレーション先
+                  href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: 生成されたレポートの自動検証
+              items:
+                - name: 生成されたレポート結果を追跡し、ベースライン値と比較する
+                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
+                - name: 生成された ER レポートの追跡結果およびベースライン値との比較における改善
+                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
+                - name: 電子申告を使用したテストの自動化
+                  href: ../dev-itpro/analytics/er-automate-testing.md?toc=/fin-and-ops/toc.json
+            - name: 電子申告コンフィギュレーションを使用して業務プロセスを自動化する
+              items:
+                - name: Power BI にデータをプルするよう電子申告を構成する
+                  href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
+                - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
+                  href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
+            - name: ER 形式の実行を追跡してパフォーマンス問題をトラブルシューティングする
+              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+        - name: ER フレームワーク API
+          items:
+            - name: 電子申告機能の一覧を拡張する
+              href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
+            - name: Application update 7.3 での電子申告フレームワーク API の変更
+              href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+            - name: 生成されるドキュメントに対するカスタム ストレージ場所を指定する
+              href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
         - name: 埋め込み型の解析ソリューション
           items:
             - name: ワークスペースの埋め込み Power BI
               href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json
             - name: Power BI Embedded 統合
               href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
-        - name: PowerBI.com での個人用設定オプション
+            - name: PowerBI.com から分析ワークスペースを選択する
+              href: ../dev-itpro/analytics/select-analytical-workspace.md
+        - name: PowerBI.com でのパーソナル化オプション
           items:
             - name: Power BI 統合を通じて利用できる機能やサービス
               href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
             - name: Power BI レポートをワークスペースにピン留めする
               href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
+            - name: 分析ワークスペースで埋め込みレポートをカスタマイズする
+              href: ../dev-itpro/analytics/customize-analytical-workspace.md
         - name: ソリューションの作成および拡張のためのツール
           items:
             - name: 分析、集計の測定、および KPI モデリング
@@ -3067,12 +3279,16 @@
               href: ../supply-chain/cost-management/adjust-hand-inventory-cost-values.md
             - name: 在庫分析コード当たりの移動平均原価の追跡
               href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+    - name: サプライ チェーン
+      href: ../supply-chain/index.md
     - name: マスター プラン
       href: ../supply-chain/master-planning/master-planning-home-page.md
       items:
         - name: マスター プラン
           href: ../supply-chain/master-planning/master-plans.md
           items:
+            - name: マスター プランの設定
+              href: ../supply-chain/master-planning/master-planning-setup.md
             - name: 補充設定
               href: ../supply-chain/master-planning/coverage-settings.md
             - name: 品目の補充ルールの定義
@@ -3099,6 +3315,8 @@
               href: ../supply-chain/master-planning/tasks/create-plan-site.md
             - name: カレンダーおよびマスター プラン
               href: ../supply-chain/master-planning/supply-chain-calendars-master-planning.md
+            - name: マスター プランのパフォーマンスの改善
+              href: ../supply-chain/master-planning/master-planning-performance.md
             - name: マスター プランとマルチサイト機能
               href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
               items:
@@ -3114,6 +3332,8 @@
                   href: ../supply-chain/master-planning/master-plan-bom-version-determined.md
                 - name: BOM バージョンの展開
                   href: ../supply-chain/master-planning/master-plan-explosion-bom-version.md
+            - name: マイナス在庫日数と動的マイナス在庫日数
+              href: ../supply-chain/master-planning/more-about-dynamic-negative-days.md
             - name: 会社間計画の作成
               href: ../supply-chain/master-planning/tasks/create-intercompany-plan.md
             - name: 計画企業内需要 (アウトバウンド) の表示
