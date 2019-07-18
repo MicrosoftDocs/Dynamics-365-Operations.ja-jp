@@ -1,9 +1,9 @@
 ---
-title: Finance and Operations バージョン 10.0.3 (2019 年 6 月) の機能のプレビュー
+title: Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更点
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 10.0.3 の新機能または変更された機能について説明します。 このバージョンは 6 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/03/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.3
-ms.openlocfilehash: 3020c5004c500ea64f8e067c51201da38fbfea9e
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: b6d40a56c0b56f535666a979c990570898d5d8dd
+ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617285"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "1632066"
 ---
-# <a name="preview-features-in-finance-and-operations-version-1003-june-2019"></a>Finance and Operations バージョン 10.0.3 (2019 年 6 月) の機能のプレビュー
+# <a name="whats-new-or-changed-in-finance-and-operations-version-1003-june-2019"></a>Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更点
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 の新機能または変更された機能について説明します。 このバージョンは 6 月にリリースされ、ビルド番号は 10.0.107 です。 バージョン 10.0.3 の詳細については [追加リソース](whats-new-changed-10-0-3.md#additional-resources) を参照してください。
 
-Microsoft Dynamics 365 for Retail の新機能と変更についての最新のリリースでについては、[Dynamics 365 for Retail バージョン 10.0.3 の機能のプレビュー](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-3) を参照してください。
+最新のリリースの Microsoft Dynamics 365 for Retail の新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.3 の新機能と変更](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-3) を参照してください。
 
 ## <a name="feature-management"></a>機能管理
 
@@ -63,13 +62,16 @@ Microsoft Dynamics 365 for Retail の新機能と変更についての最新の�
 
 Finance and Operations の今回のリリースでは、 **税設定パラメータ** ページに新たなパラメータが追加されました。これにより、インポート/エクスポートを行う注文に対して、税金を計算する通貨を選択できます。 既定では、 **トランザクション通貨** を使用して、インポート/エクスポートを行う注文に対し、計算する税金の通貨を選択できます。 既定では、 **トランザクション通貨** は元のシステム動作と同じです。 **会計通貨** を選択すると、システムが会計通貨の課税金額に基づいて税金を計算します。
 
+## <a name="regulatory-updates"></a>規制の更新
+Finance and Operations の規制の更新については、[ローカライズおよび規制機能 – 規制の更新](../../financials/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
+
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="bug-fixes"></a>バグ修正
 Finance and Operations 10.0.3 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=320385&dbType=3&qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34)を参照してください。
 
 ### <a name="platform-update-27"></a>プラットフォーム update 27
-Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 には、プラットフォーム更新プログラム 27 が含まれています。 プラットフォーム更新プロフラム 27 については [Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) のプレビュー機能](whats-new-platform-update-27.md) を参照してください。
+Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 には、プラットフォーム更新プログラム 27 が含まれています。 プラットフォーム更新プログラム 27 の詳細ついては [Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) の新機と変更点](whats-new-platform-update-27.md) を参照してください。
 
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?

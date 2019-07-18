@@ -1,9 +1,9 @@
 ---
-title: Finance and Operations バージョン 10.0.4 (2019 年 7 月) の機能のプレビュー
+title: Finance and Operations バージョン 10.0.4 (2019 年 7 月) の新機能および変更点
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 10.0.4 の新機能または変更された機能について説明します。 このバージョンは 7 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,17 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.4
-ms.openlocfilehash: 51f2740f629a12ff9e144aa70b02928a61e886a3
-ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
+ms.openlocfilehash: a260de1474f3fa4a88d72a844472446855ace65b
+ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620003"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1731108"
 ---
-# <a name="preview-features-in-finance-and-operations-version-1004-july-2019"></a>Finance and Operations バージョン 10.0.4 (2019 年 7 月) の機能のプレビュー
+# <a name="whats-new-or-changed-in-finance-and-operations-version-1004-july-2019"></a>Finance and Operations バージョン 10.0.4 (2019 年 7 月) の新機能および変更点
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.4 の新機能または変更された機能について説明します。 このバージョンは 7 月にリリースされ、ビルド番号は 10.0.136 です。 バージョン 10.0.4 の詳細については [追加リソース](whats-new-changed-10-0-4.md#additional-resources) を参照してください。
 
@@ -44,13 +43,16 @@ ms.locfileid: "1620003"
 
 詳細については、 [予算分析レポート](https://go.microsoft.com/fwlink/?linkid=2087447)を参照してください。
 
+## <a name="regulatory-updates"></a>規制の更新
+Finance and Operations の規制の更新については、[ローカライズおよび規制機能 – 規制の更新](../../financials/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
+
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="bug-fixes"></a>バグ修正
 Finance and Operations 10.0.4 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=328732&dbType=3&qc=cdb2117c03722ee9cdbcb2a2e0558dd5b40a37e3caa32850aca4c9a89c476eb2)を参照してください。
 
 ### <a name="platform-update-28"></a>プラットフォーム update 28
-Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.4 には、プラットフォーム更新プログラム 28 が含まれています。 プラットフォーム更新プログラム 28 については [Finance and Operations プラットフォーム更新プログラム 28 (2019 年 7 月) のプレビュー機能](whats-new-platform-update-28.md)を参照してください。
+Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.4 には、プラットフォーム更新プログラム 28 が含まれています。 プラットフォーム更新プログラム 28 の詳細ついては [Finance and Operations プラットフォーム更新プログラム 28 (2019 年 7 月) の新機と変更点](whats-new-platform-update-28.md) を参照してください。
 
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?

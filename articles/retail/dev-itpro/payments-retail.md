@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 296f9aec795432254f965a09028b1d797f451af0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 908e8294701b54c3241cc486793832e44b24ac95
+ms.sourcegitcommit: df585b02224cf3812cc4fcf0d49e03f64e739980
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557889"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "1632802"
 ---
 # <a name="payments-faq"></a>支払に関してよく寄せられる質問
 
@@ -42,20 +42,21 @@ ms.locfileid: "1557889"
 
         
 ## <a name="which-payment-providers-are-supported-and-in-what-regions"></a>どの支払プロバイダーがどの地域でサポートされていますか。
+- Adyenはカードが存在する、またはカードが存在しない商取引に対応しています。 対応している地域の一覧については、 [Adyen 向け Dynamics 365 Payment Connector の概要](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。
 - Verifoneは、カードが存在する取引 (デバイスを使用してを実行) 、およびカードが存在しない取引 (電子商取引やコールセンター取引など) のために米国でサポートされています。
-- カードが次の国に存在しない場合、トランザクションでは Mastercard がサポートされています: オーストラリア、カナダ、デンマーク、フランス、ドイツ、アイスランド、アイルランド、メキシコ、オランダ、ニュージーランド、南アフリカ、英国、および米国。
+- Mastercard Simplify は新しい顧客に対しては対応していません。
 
 
 ## <a name="what-is-a-payment-connector-and-in-what-cases-do-i-need-to-deploy-and-implement-a-payment-connector"></a>支払コネクタとは何ですか、またどのような場合に支払コネクタの配置と実装が必要ですか ?
 支払コネクタは、カードが存在しないトランザクションとカードが存在するトランザクションの支払いをアプリケーションが処理できるようにする、設定可能なソフトウェア コンポーネントです。
 
-Verifone および MasterCard などの Microsoft によって指定されたコネクタを使用するか、ISV パートナーがカスタム コネクタを構築することができます。 コネクタは通常、顧客の業務でのニーズを満たすために構築されます。 新しいタイプの支払いタイプ (リンク払い戻しなど) が必要なシナリオがある場合、カスタム コネクタが作成されることがあります。 特定の地域でビジネスを行っている顧客は、最初から用意されているコネクタがこれらの地域をサポートしていない場合、新しいコネクタが必要になることがあります。
+Verifone および Adyen などの Microsoft によって指定されたコネクタを使用するか、または ISV パートナーがカスタム コネクタを開発することができます。 コネクタは通常、顧客の業務でのニーズを満たすために構築されます。 新しいタイプの支払いタイプ (リンク払い戻しなど) が必要なシナリオがある場合、カスタム コネクタが作成されることがあります。 特定の地域でビジネスを行っている顧客は、最初から用意されているコネクタがこれらの地域をサポートしていない場合、新しいコネクタが必要になることがあります。
           
 ## <a name="are-other-payment-connector-providers-supported"></a>その他の支払コネクタ プロバイダーはサポートされていますか。
 はい、ただしカスタマイズを使用してそれらを接続する必要があります。
 
-## <a name="what-is-the-service-level-agreement-sla-for-out-of-box-payment-connectors-like-verifone-and-mastercard"></a>Verifone および Mastercard などの標準の支払いコネクタのサービス レベル アグリーメント (SLA) とは何ですか ?
-Verifone や Mastercard などの標準コネクタの SLA は、支払コネクタ プロバイダー自体によって所有されます。 その SLA については、Verifone または Mastercard サポートにお問い合わせください。
+## <a name="what-is-the-service-level-agreement-sla-for-out-of-box-payment-connectors-like-verifone-and-adyen"></a>Verifone および Adyen などの革新的な支払いコネクタ の サービス レベル アグリーメント (SLA) はどうなっているか ?
+Verifone のコネクタに対するSLAは、Verifoneによって管理されています。 Verifone の SLA については、Verifone のサポートにお問い合わせください。 Adyenコネクタに関して、設定に関する問題の場合は Adyenコネクタの [概要ページ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。 コネクタに関するその他の設定、または機能の問題については、Microsoftへのサポートリクエストを作成してください。 問題がデバイス本体、またはAdyenの処理サービスに起因する場合は、support-dynamics365@adyen.com Adyenのサポートに連絡してください。 
         
 ## <a name="if-a-supported-payment-provider-issues-an-update-will-microsoft-automatically-update-the-payment-connector-or-do-i-need-to-work-with-the-payment-provider-to-get-the-updated-payment-connector"></a>サポートされている支払プロバイダーが更新プログラムを発行した場合は、Microsoft は自動的に支払コネクタを更新してくれますか? または更新された支払コネクタを取得するために支払プロバイダーと連携する必要がありますか。
 支払いコネクターの更新プログラムが支払コネクター プロバイダーによって発行された場合、支払いコネクターの更新バージョンは Dynamics 365 for Retail の次の予定リリースに含まれます。 ただし、顧客は早期に取得するため、支払コネクタ プロバイダと直接作業することもできます。
@@ -66,4 +67,4 @@ Verifone や Mastercard などの標準コネクタの SLA は、支払コネク
 - [支払コネクタの配置](deploy-payment-connector.md)
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 - [Verifone 支払コネクタ](https://dynamics.verifone.com/repo/)
-- [MasterCard 支払コネクタ](https://www.simplify.com/microsoft/) 
+

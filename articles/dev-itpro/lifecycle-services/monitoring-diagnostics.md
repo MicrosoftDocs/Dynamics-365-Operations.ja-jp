@@ -3,13 +3,13 @@ title: Lifecycle Services (LCS) の監視および診断ツール
 description: このトピックでは、管理する Microsoft Dynamics 365 for Finance and Operations 環境の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services (LCS) が提供するさまざまなツールについて説明します。
 author: manalidongre
 manager: AnnBe
-ms.date: 03/04/2019
+ms.date: 07/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e172ad61d49fbd065e23b703666f71e4213b90c1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 86239140693a6cdc0aabd4a55922b53f2a214754
+ms.sourcegitcommit: f5c2cfac0411c880994376ead6691ab52f2fd12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548126"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "1720229"
 ---
 # <a name="monitoring-and-diagnostics-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の監視および診断ツール
 
@@ -43,7 +43,7 @@ LCS の監視および診断ポータルの基礎となるテレメトリ デー
 業務運営ソフトウェアでは、環境が立ち上がっており実行中であるかどうか常に把握して、業務運営を実行できるようにする必要があります。 LCS を通じて環境の稼働状態を簡単に表示できる必要があります。 Microsoft は、2 種類の監視機能をサポートします。
 
 - **可用性の監視** - このタイプの監視は、いつでも利用可能であることを確認するため、環境に対してチェックを実行します。 チェックが失敗した場合、Microsoft サービス エンジニアリング チームにすぐに通知されます。
-- **稼働状態の監視** – 可用性チェックに加えて、基本的な正常性チェックを実行する必要があります。 これらのヘルス チェックは、Application Object Server、バッチ フレームワーク、データのインポート/エクスポート フレームワーク、Microsoft Azure SQL、Management Reporter などのさまざまなコンポーネントを対象とします。 これらのチェックは、環境から収集されたテレメトリ、環境を継続的に監視するウォッチドッグ サービスにより実行されるチェック、環境が出力する CPU カウンターや他のシステム レベル カウンターなど、複数のデータ ソースに基づいて行われます。 いくつかのヘルス チェックは自動修復され、即座に軽減されます。 ただし、他のヘルス チェックは調査のための Microsoft サービス エンジニアリング チームに報告されます。
+- **稼働状態の監視** – 可用性チェックに加えて、基本的な正常性チェックを実行する必要があります。 これらのヘルス チェックは、アプリケーション オブジェクト サーバー (AOS)、バッチ フレームワーク、データ マネジメント フレームワーク、 Microsoft Azure SQL、Management Reporter などのさまざまなコンポーネントを対象としています。 これらのチェックは、環境から収集されたテレメトリ、環境を継続的に監視するウォッチドッグ サービスにより実行されるチェック、環境が出力する CPU カウンターや他のシステム レベル カウンターなど、複数のデータ ソースに基づいて行われます。 いくつかのヘルス チェックは自動修復され、即座に軽減されます。 ただし、他のヘルス チェックは調査のための Microsoft サービス エンジニアリング チームに報告されます。
 
 ### <a name="diagnostics"></a>診断
 

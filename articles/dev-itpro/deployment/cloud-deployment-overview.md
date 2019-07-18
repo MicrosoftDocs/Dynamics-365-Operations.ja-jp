@@ -3,7 +3,7 @@ title: クラウド配置オプション
 description: このトピックでは、展開するクラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および Microsoft Dynamics 365 for Finance and Operations で管理する必要があるデータおよびカスタマイズについて説明します。
 author: kfend
 manager: AnnBe
-ms.date: 06/4/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: b1fa00603fbdf3cd012d625780de238b3f66eb3f
-ms.sourcegitcommit: 75596be9fcfefcbe82edaa148d527ad21cf11a66
+ms.openlocfilehash: 1b9f2c81d9d1955d3411ed501481d93689d46ee8
+ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "1617718"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "1629994"
 ---
 # <a name="cloud-deployment-option"></a>クラウド配置オプション
 

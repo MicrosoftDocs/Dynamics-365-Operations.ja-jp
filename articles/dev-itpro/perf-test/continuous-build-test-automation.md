@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 941aad8dfc61248fb3542bd089f1146bca1c483e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6b612680d2de97f03e32cf2c2b717a6d963f13ab
+ms.sourcegitcommit: 9917df8c0c9320955c61186cd922c8df894a4f25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537596"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "1700648"
 ---
 # <a name="deploy-and-use-an-environment-that-supports-continuous-build-and-test-automation"></a>継続的なビルドとテストの自動化をサポートする環境を配置して使用する
 
@@ -36,15 +36,15 @@ ms.locfileid: "1537596"
 
 ## <a name="workflow"></a>ワークフロー
 
-Microsoft Dynamics Lifecycle Services (LCS) で Azure DevOps サブスクリプションを構成した後、LCS を使用して開発者 VM やビルド / テスト VM を配置できます。 LCS は開発者 VM を構成し、それは Azure DevOps プロジェクトへのワークスペース マッピングを持ちます。 LCS は、Azure DevOps プロジェクトからモジュールを構築し、検証のための外部エンド ポイントを持つ自動テストを実行するビルド エージェント / コントローラーを持つビルド VM も構成します。 次の図は通常のワークフローを示します。
+Microsoft Dynamics Lifecycle Services (LCS) で Azure DevOps サブスクリプションを構成した後、LCS を使用して開発者 VM やビルド / テスト VM を配置できます。 LCS は開発 VM を構成し、それは Azure DevOps プロジェクトにマップされます。 LCS は、ビルド VM も構成します。ビルド VM は、自動的に Azure DevOps プロジェクトにマップされ、Azure DevOps プロジェクトのモジュールを構成するビルド エージェント / コントローラーを持ち、妥当性確認のための外部エンドポイントを持つ自動化テストを実行します。 次の図は通常のワークフローを示します。
 
 ![LCS、Azure DevOps、および VM の関係](./media/deploy-build-test.png)
 
 このワークフローには、Azure の開発者 VM とビルド / テスト VM の LCS 配置が含まれています。
 
-+ LCS は Azure で開発者 VM とビルド / テスト VM を作成します。 VM を作成するために、LCS は Azure DevOps プロジェクトのソース コードがどこにあるか特定できる必要があります。
++ LCS は Azure で開発およびビルド / テスト環境を作成します。 ビルド / テスト環境を作成するためには、LCS は Azure DevOps プロジェクトのソース コードがどこにあるか特定できる必要があります。
 + 開発者は開発者 VM のソース コードで作業し、その作業は Azure DevOps プロジェクトに同期されます。
-+ ビルド プロセスは、コード、モジュール、およびパッケージを Azure DevOps からビルド / テスト VM に移動します。 コード、モジュール、およびパッケージは、開発 VM からビルド / テスト VM へのフローを直接持ちません。 これらは Azure DevOps を通して同期されます。
++ ビルドプロセスによって、コードがAzure DevOpsからビルド / テスト VM に同期され、配置可能なパッケージが作成され、サンドボックスおよび実稼動環境に適用できるようになります。 ソース コードは、開発 VM からビルド / テスト VM への直接フローを持ちません。 これらは Azure DevOps を通して同期されます。
 
 カスタム テスト コードの記述またはビルド インフラストラクチャと統合するための自動テスト コードを生成する方法の詳細は、[テストと検証](testing-validation.md) を参照してください。
 
@@ -70,12 +70,13 @@ LCS の Azure DevOps へのアクセスを承認するまで、アクション �
 
 ### <a name="suspend-current-builds"></a>現在のビルドの中断
 
-既にビルド定義がある既存の Azure DevOps プロジェクトにビルド エージェントを配置している場合、ビルドをキューに入れるアクティブなトリガーがないことを確認してください。 また、ビルド プールに対して、スケジュールされたりキューに格納されたビルドがないことを確認してください。
+既にビルド定義を持つ既存の Azure DevOps プロジェクトにビルド環境を展開している場合、ビルドをキューに入れるアクティブなトリガーがないことを確認してください。 また、ビルド プールに対して、スケジュールされたりキューに格納されたビルドがないことを確認してください。
 
-## <a name="deploy-developer-topology-from-lcs"></a>LCS から開発者トポロジを配置する
-LCS では、開発トポロジ環境を配置するオプションが提供されます。 このオプションでは、Azure DevOps プロジェクトに接続されたクラウド内に、開発者を配置して VM をビルドすることができます。
+## <a name="deploy-developer-and-buildtest-environments-from-lcs"></a>LCS 開発およびビルド / テスト環境の展開
+LCS では、開発およびビルド / テスト環境を展開するオプションが提供されます。 このオプションでは、Azure DevOps プロジェクトに接続されたクラウド内に、開発者を配置して VM をビルドすることができます。
 
 ### <a name="azure-devops-credential-setup-and-linking-to-lcs-project"></a>Azure DevOps 資格情報の設定と LCS プロジェクトへのリンク
+まだ完了していない場合は、ビルド環境を配置する前に、最初にLCS プロジェクトを設定してから Azure DevOps プロジェクトに接続してください。
 
 1. [https://lcs.dynamics.com/](https://lcs.dynamics.com/)で LCS ポータルにログインして、Azure DevOps および LCS プロジェクトに接続します。
 2. 作業しているプロジェクトを選択します。
@@ -93,50 +94,18 @@ LCS では、開発トポロジ環境を配置するオプションが提供さ�
 
 ![VSTS フォルダー構造](media/build-trunk-main-metadata.png)
 
-### <a name="deploy-developer-topology-developer-and-build-vm"></a>開発者トポロジの配置 (開発者とビルド VM)
+### <a name="deploy-a-build-environment"></a>ビルド環境の展開
 
-1. LCS ポータルで、Azure DevOps に接続されているプロジェクトを選択します。
-2. **環境**ウィンドウで、**+** をクリックして新しい環境を配置します。
+「[開発環境の展開およびアクセス](../dev-tools/access-instances.md)」のトピックでは、開発環境の展開方法が説明されています。 同様のフローを使用して、ビルド環境を配置します。 展開またはコンフィギュレーション ウィザードを実行する際に、**トポロジを選択してください**というメッセージが表示されたら、**ビルドおよびテスト**トポロジを選択するのではなく **DevTest** を選択します。
 
-   ![Azure の設定](media/azure-settings.png)
+展開ウィザードの一部として、ビルド エージェント名およびビルド エージェント プールを構成できます。
 
-3. **環境のトポロジの選択**ウィンドウで、**Azure** を選択します。
-
-   ![環境のトポロジの選択](media/select-environment-topology.png)
-
-4. DEV/TEST 環境の展開に進みます。
-   -   LCS プロジェクトのタイプによっては、以下に説明する配置ステップの一部が異なる場合があります。
-
-5. **環境の配置**ウィンドウで、配置のための環境名を入力し、**開発者** VM のインスタンスの番号を選択します。
-   > [!NOTE]
-   > 1 つのビルド VM および 1 つの開発者向け VM のみを展開することができます。 開発者 VM を導入しない場合、インスタンスの数をゼロに設定します。 
-
-   複数の開発者 VM が必要な場合、開発者 VM ごとに新しい環境を展開します。
-
-   [![配置](./media/deploy-1024x669.jpg)](./media/deploy.jpg)
-
-6. **詳細設定** をクリックし、**Azure DevOps** を選択します
+**詳細設定** をクリックし、**Azure DevOps** を選択します
    1.  ビルド エージェント名: Azure DevOps ビルド エージェントのフレンドリ名
    2.  ビルド エージェント プール: ビルド マシンの配置に使用するビルド エージェント プール名を指定します。 Azure DevOps に少なくとも 1 つのエージェント プールが含まれていることを確認します。 既定では、既定のプールがあります。 既定のプールを削除した場合は、ビルド配置は失敗します。
    3.  分岐名: ビルド VM の既定のソース コード同期場所になる Azure DevOps ソース コード ブランチを指定します。 既定の分岐は、「メイン」です。
 
    ![設定](media/settings.jpg)
-
-7. 設定が確認されたら、**次へ**をクリックして展開を開始します。 展開の進捗状況は **環境** の下に表示されます。
-8. 配置が完了したら、リモート デスクトップを使用して、開発者とビルド VMを表示することができます。
-
-## <a name="use-a-developer-vm-environment"></a>開発者 VM 環境の使用
-開発者 VM が配置されると、ソース管理 (Azure DevOps) からのコードの同期に使用されるワークスペースで開発者 VM が自動構成されます。 この開発者 VM には Microsoft Dynamics 365 for Finance and Operations が配置されているので、開発者 VM を テスト用 VM としても使用できます。
-
-### <a name="configure-visual-studio-to-connect-to-azure-devops"></a>Azure DevOps に接続するために Visual Studio を構成
-
-開発者 VM で初めて Visual Studio を開くときは、自分の資格情報を使用して Azure DevOps に接続します。
-
-1.  **チーム エクスプローラー**を開き、**チーム プロジェクトの選択**を開きます。
-2.  Azure DevOps URL を入力し、**OK** をクリックします。 Azure DevOps ユーザー名とパスワードを求められます。
-3.  Azure DevOps にログインした後、開発に使用する**既定のワークスペース**。
-
-    ![ワークスペースの管理](media/manage-workspaces.png)
 
 ## <a name="test-integration-with-the-build"></a>ビルドとのテスト統合
 テストと検証のためのビルド プロセスの一部としてテストを統合するには、2 つの方法があります。

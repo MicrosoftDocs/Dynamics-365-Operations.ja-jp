@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: c3e87143e33876e8950b12e4040f60e0736af8cf
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: a6618491746b938ed249407e8ec57a5b0c96a0a5
+ms.sourcegitcommit: 8cf77e9171d6cad8ae6c8bfad9e4f9a46fef6d23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538645"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "1688989"
 ---
 # <a name="business-events-in-microsoft-flow"></a>Microsoft Flow 内のビジネス イベント
 
@@ -50,6 +50,9 @@ ms.locfileid: "1538645"
 トリガーまたはフローのいずれかを削除または無効化すると、ビジネス イベントは自動的に購読解除されます。
 
 複数のフローは、同一もしくは異なる法人内の同じビジネス イベントを購読することができます。
+
+> [!NOTE]
+> Finance and Operationsでは、Finance and OperationsのFlow エンドポイントを手動で構成しないでください。 上記の説明に従って、エンドポイントはフローから自動的に作成されます。
 
 ## <a name="other-ways-to-consume-business-events-in-microsoft-flow"></a>Microsoft Flow 内のビジネス イベントを消費する他の方法
 

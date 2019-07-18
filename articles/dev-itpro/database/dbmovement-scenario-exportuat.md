@@ -3,7 +3,7 @@ title: 標準ユーザー承認テスト (UAT) データベースのコピーの
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベース エクスポート シナリオについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: a1e4fb959d89ab135954e811d8055bb1a9aa9eeb
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 42a6fdaf342f445f8bf61a4d6ad2b1a1096a882b
+ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537111"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1729894"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -206,7 +206,7 @@ LCS からのオートメーションがタイムアウトした場合、エク�
 
 ### <a name="the-export-database-takes-a-very-long-time"></a>エクスポート データベースに時間が非常にかかる
 
-最近、Azure SQL チームは、サイズが 200 GB を超えるデータベースの場合、LCS が使用するインポート/エクスポート アプリケーション プログラミング インターフェイス (API) の実行時間が変化すると発表しました。 この問題が発生した場合、[UAT データベースに直接 DevTest 環境を接続](dbmovement-scenario-debugdiag.md)するか、[レガシー ドキュメント](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/b86878500e79f0fe0488c9aedf3fd38b30749fd4/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)に従うことができます。 ポイントインタイム復元機能が使用可能であり、環境に含まれているため、バックアップ目的でデータベースをエクスポートすることはお勧めしません。
+最近、Azure SQL チームは、サイズが 200 GB を超えるデータベースの場合、LCS が使用するインポート/エクスポート アプリケーション プログラミング インターフェイス (API) の実行時間が変化すると発表しました。 この問題が発生した場合、[UAT データベースに直接 DevTest 環境を接続](dbmovement-scenario-debugdiag.md)するか、[レガシー ドキュメント](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/8bf1db9f2d994fc585caf380af85bb0a50eaf02b/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)に従うことができます。 ご利用の環境では、ポイントインタイム リストア機能が使用可能となっているため、バックアップ目的でのデータベースのエクスポートを推奨しません。
 
 Lifecycle Services チームは、インポート/エクスポート API のパフォーマンスを改善するために Azure SQL チームと直接協力しており、LCS の将来のリリースで修正する予定です。
 

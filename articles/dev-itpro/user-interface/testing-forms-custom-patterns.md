@@ -3,7 +3,7 @@ title: カスタム パターンを使用したテスト フォーム
 description: このトピックでは、カスタム パターンを使用してフォームをテストする方法について説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 08/17/2017
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81acea25b6e502bc3cbe6e8c8fd280eb03539cf5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: eeac0fc337afc1f2a4ee4d2815391de640b0fd83
+ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571042"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1729865"
 ---
 # <a name="test-forms-that-use-custom-patterns"></a>カスタム パターンを使用したテスト フォーム
 
@@ -66,7 +66,7 @@ ms.locfileid: "1571042"
 以下の手順を実行します。 各ステップで、フォームのレイアウトの問題を確認します。 検証の一環として、すべてのタブ ページ、および展開/折りたたみコンテンツのグループを確認します。
 
 1.  全画面のサイズでブラウザー ウィンドウを開き、(低密度で) フォーム/コントロールへ移動します。 1366 × 768 の解像度でテストを開始することをお勧めします。
-2.  Windows ログ キー + 左方向キーを押し、ブラウザー ウィンドウをスナップ ビューに切り替えます (画面の半分)。
+2.  Windows ロゴ キー + 左方向キーを押し、ブラウザー ウィンドウをスナップ ビューに切り替えます (画面の半分)。
 3.  ブラウザーを横幅最大までゆっくりと横方向にサイズ変更します。 ときどき停止して、フォーム レイアウトを評価します。
 4.  ブラウザーを高さ最大から画面の半分の高さまでゆっくりと縦方向にサイズ変更します。 ときどき停止して、フォーム レイアウトを評価します。
 5.  ブラウザー ウィンドウを全画面のサイズに最大化します。 ズーム レベル (50%、75%、125%、150% および 200%) を調整し、フォーム レイアウトを評価します。

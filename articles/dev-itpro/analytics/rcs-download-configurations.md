@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 98ba483e67bd76e54ad1f85fa5f9cd736f7979a4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 651083c51bdead76639911fffae5458d77eb3241
+ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551499"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "1629995"
 ---
 # <a name="import-electronic-reporting-er-configurations-from-regulatory-configuration-services-rcs"></a>規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
 
@@ -29,7 +29,7 @@ ms.locfileid: "1551499"
 
 規制コンフィギュレーション サービス (RCS) を使用すると電子申告 (ER) 構成をインポートできます。 ER ツールは、1 つの会社用にプロビジョニングされた RCS の各インスタンスで構成されているコンフィギュレーションの一覧へのアクセスを提供します。 この機能を使用して、Microsoft Dynamics 365 for Finance and Operations の現在のインスタンスに、RCS インスタンスで構成した構成をインポートできます。 コンフィギュレーションをインポートした後、受信ドキュメントの処理や、送信電子ドキュメントの生成に使用できます。
 
-この機能の詳細を知るには、このトピックの例を実行します。 または、7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677) 業務プロセスの一部である **RCS からの ER インポート構成**タスク ガイドを再生します。 このタスク ガイドは [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=874684)からダウンロードできます。 現在の Finance and Operations インスタンスに RCS インスタンスから ER コンフィギュレーションをインポートするプロセスを示します。
+この機能の詳細を知るには、このトピックの例を実行します。 または、7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677) 業務プロセスの一部である **RCS からの ER インポート構成**タスク ガイドを再生します。 このタスク ガイドは [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=2082739)からダウンロードできます。 現在の Finance and Operations インスタンスに RCS インスタンスから ER コンフィギュレーションをインポートするプロセスを示します。
 
 ## <a name="example-import-an-er-configuration-from-rcs"></a>例: RCS からの ER コンフィギュレーションのインポート
 

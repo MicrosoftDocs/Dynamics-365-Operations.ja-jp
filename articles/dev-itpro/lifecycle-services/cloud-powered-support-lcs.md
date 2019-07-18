@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c68e84f1477e1136bb01f5a65f6ecabdadfe40fe
-ms.sourcegitcommit: c5edff04f35a067934fddebd166906edc003e7c5
+ms.openlocfilehash: 7260a536f082d9c4d571f5ee715be701ca34d829
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "1605848"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624920"
 ---
 # <a name="manage-finance-and-operations-support-experiences"></a>Finance and Operations サポート エクスペリエンスの管理
 
@@ -93,7 +93,7 @@ ms.locfileid: "1605848"
 
 3. アクセスIDと、パスワードまたは契約IDを入力し、 **契約の追加** を選択します。
 
-   ![契約の追加](media/4abba1127549ef484a58daf51609d924.png)
+   ![契約の資格情報の追加](media/4abba1127549ef484a58daf51609d924.png)
 
 ### <a name="partnersource-business-center-account"></a>PartnerSource Business Center アカウント
 利用可能な場合は、次のサポートプランインシデントがPartnerSource業務部門 (PSBC) アカウントの一部として使用できます。 
@@ -107,7 +107,7 @@ ms.locfileid: "1605848"
 
 PartnerSourceビジネス センター アカウントが見つからない場合は、PSBCの組織でサインインがプロフェッショナルとして追加されているか確認してください。 同一のMicrosoftアカウントまたは職場アカウントを使用してログインしていることを確認します。 このアカウントは、オンプレミスプロジェクトにのみ有効です。
 
-![](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+![契約の追加](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
 ### <a name="sign-in-specfic-options"></a>サインイン 特定のオプション
 該当するものがある場合、ログインのアカウントに基づき次の問題とサポートの特典が表示されます。

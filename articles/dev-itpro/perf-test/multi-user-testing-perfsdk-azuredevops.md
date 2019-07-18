@@ -3,7 +3,7 @@ title: パフォーマンス SDK と Azure DevOps を使用したマルチユー
 description: このトピックでは、タスク レコーダーを使用して生成されたパフォーマンス テスト スクリプトとともに パフォーマンス SDK と Microsoft Azure DevOps を使用して、マルチユーザー テストを行う方法を説明します。
 author: hasaid
 manager: AnnBe
-ms.date: 06/4/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,25 +17,21 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7388ef37b886f58181849223bf6253cc1636f347
-ms.sourcegitcommit: 6a975e23130a77aa625d4213000fc0ffbc32dadf
+ms.openlocfilehash: b88078f802b14eaac1be57812e0905742481a6bd
+ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620831"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "1630066"
 ---
 # <a name="multi-user-testing-with-the-performance-sdk-and-azure-devops"></a>パフォーマンス SDK と Azure DevOps を使用したマルチユーザー テスト
 
 [!include [banner](../includes/banner.md)]
 
- > [!IMPORTANT]
+  > [!IMPORTANT]
   > Visual Studio 2019は Visual Studio の最新バージョンです。webパフォーマンスと負荷機能テストを実装しています。 将来的に、代替ソリューションの推奨を公開します。  
-  
   > - Visual Studio および、オンプレミスでの負荷テストに向けたテストコント ローラー/テストエージェントをご利用の場合、 Visual Studio 2019が最新のバージョンになります。 そのサポート サイクルが終了するまで継続して使用することができます。 
- 
- >  - クラウド ベースの負荷テストサービスをご利用の場合、同サービスは 2020 年 3 月 31 日まで継続してご利用いただけます。 それまでの間は、同サービスの全機能を継続してご利用いただけます。 また、オンプレミス負荷テストに切り替えることがも可能です。 
- 
- > 詳細については、 [クラウド ベース 負荷テストサービスの終了について](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) をご参照ください。
+  > - クラウド ベースの負荷テストサービスをご利用の場合、同サービスは 2020 年 3 月 31 日まで継続してご利用いただけます。 それまでの間は、同サービスの全機能を継続してご利用いただけます。 また、オンプレミス負荷テストに切り替えることがも可能です。 詳細については、 [クラウド ベース 負荷テストサービスの終了について](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) をご参照ください。
 
 ## <a name="prerequisites"></a>必要条件
 

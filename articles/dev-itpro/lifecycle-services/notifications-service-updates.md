@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) でサービス更新プログラムに関する
 description: このトピックでは環境へのサービス更新プログラムについて通知を受けるさまざまな方法について説明します。
 author: manalidongre
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 07/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: fd6e619fe2285b698213c91ee7000b85e120f4b0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ccaa596f9edeba5f653f674886d85229969f4ea5
+ms.sourcegitcommit: f5c2cfac0411c880994376ead6691ab52f2fd12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537500"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "1720224"
 ---
 # <a name="get-notified-about-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でサービス更新プログラムに関する通知を受け取る
 
@@ -32,6 +32,7 @@ Microsoft はサービス更新プログラムを使用して、構成された�
 
 受け取る通知の種類を次に示します:
 
+- **更新が利用可能になった際の通知:** 新しいリリースが一般公開されると、ご利用の実装しているプロジェクトのアクションセンターに Microsoft からの通知が表示されます。 Microsoft による自動更新がされる前に環境に更新を適用する場合は、その更新をプロジェクトのアセットライブラリに保存することができます。 Microsoftが自動更新を行うと、プロジェクトのアセットライブラリに更新のコピーが保存されます。 
 - **更新の 5 日前に送信される通知:** Microsoft はお客様の環境を更新する 5 日前にユーザーに通知します。 更新頻度を構成した後で、更新が発生する 5 日前に次回の更新プログラムに関する通知を受け取ります。 これらの通知は 3 つのフォームを取ります:
 
     - **電子メール通知:** プロジェクト所有者、環境管理者、および追加で環境の関係者としてリストされているユーザーに、次回の更新について電子メールで通知されます。

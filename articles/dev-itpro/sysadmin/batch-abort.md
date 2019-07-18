@@ -3,7 +3,7 @@ title: 実行中のバッチ ジョブの中止
 description: このトピックでは Microsoft Dynamics 365 for Finance and Operations で実行中のバッチ ジョブをキャンセルする方法について説明します。
 author: hasaid
 manager: AnnBe
-ms.date: 05/08/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,17 +17,18 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-05-08
 ms.dyn365.ops.version: Platform update 27
-ms.openlocfilehash: c28c208a0c2cbcb106b53555fce6562ff3043503
-ms.sourcegitcommit: 8234845464c57ba8250f458c8c04007903692f86
+ms.openlocfilehash: 41568b9ec9b45ac6f2d07a0d32cdfdc8e99fcd72
+ms.sourcegitcommit: 169b593b0d9afb228d2cfb0f3b742e4777ec81af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "1539855"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "1633964"
 ---
 # <a name="abort-an-executing-batch-job"></a>実行中のバッチ ジョブの中止
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
+> [!NOTE] 
+> この機能は、Platform update 27 以降で利用できます。
 
 すでに実行中のタスクが完了するのに長い時間がかかる場合、バッチ ジョブのキャンセルに長い時間がかかる場合があります。 中止オプションを使用すると、システム管理者やバッチ ジョブ マネージャーは、キャンセル処理中のジョブに対してすでに実行されているタスクを中止できます。 これは他の場所でシステムの使用に影響を与えている長時間実行中のジョブをキャンセルするはるかに高速なメカニズムを提供します。
 

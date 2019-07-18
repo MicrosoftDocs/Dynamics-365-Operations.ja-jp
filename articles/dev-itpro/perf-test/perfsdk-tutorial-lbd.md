@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: 0985bae74ed1032b8dfdef58fa7d4fa224d99c26
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b033b5ccac793d72a436af852602152080ca5d5e
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537307"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624849"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 
@@ -78,7 +78,7 @@ ms.locfileid: "1537307"
 
     [![TestRoot 環境変数](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
-2. [http://selenium-release.storage.googleapis.com/index.html?path=2.42/](http://selenium-release.storage.googleapis.com/index.html?path=2.42/) から、**selenium-dotnet-strongnamed-2.42.0.zip** および **IEDriverServer\_Win32\_2.42.0.zip** ファイルをダウンロードし、ファイルを抽出します。
+2. [https://selenium-release.storage.googleapis.com/index.html?path=2.42/](https://selenium-release.storage.googleapis.com/index.html?path=2.42/) から、**selenium-dotnet-strongnamed-2.42.0.zip** および **IEDriverServer\_Win32\_2.42.0.zip** ファイルをダウンロードし、ファイルを抽出します。
 3. 動的リンク ライブラリ (DLL) を、**selenium-dotnet-strongnamed-2.42.0.zip\net40** フォルダから **PerfSDK\\Common\\External\\Selenium** フォルダにコピーします。 **IEDriverServer.exe** を **IEDriverServer\_Win32\_2.42.0.zip** から **PerfSDK\\Common\\External\\Selenium** フォルダーにもコピーします。
 
     [![PerfSDK\Common\External\Selenium フォルダーにある DLL](./media/perf103d.png)](./media/perf103d.png)

@@ -3,7 +3,7 @@ title: データ統合方法 (インポート/エクスポート) の選択
 description: このトピックは、設計者と開発者が Microsoft Dynamics 365 for Finance and Operations の統合シナリオを実装する際に意思決定を適切に行えるようにすることを目的としています。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 06/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d59e8e6a703dab0e0ccdbb9f7fcbf7994535646c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f2189b0488d9b65c410b3febefff1041c101b13c
+ms.sourcegitcommit: 8cf77e9171d6cad8ae6c8bfad9e4f9a46fef6d23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544268"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "1689037"
 ---
 # <a name="choose-a-data-integration-importexport-strategy"></a>データ統合方法 (インポート/エクスポート) の選択
 
@@ -29,6 +29,9 @@ ms.locfileid: "1544268"
 このトピックは、設計者と開発者が Microsoft Dynamics 365 for Finance and Operations の統合シナリオを実装する際に意思決定を適切に行えるようにすることを目的としています。
 
 このトピックでは、統合パターン、統合シナリオ、統合ソリューション、Finance and Operations のベストプラクティスについて説明します。 ただし、すべての統合パターンを使用または設定する方法に関する技術詳細は含まれません。 また、サンプル統合コードも含まれていません。
+
+> [!NOTE]
+> パターンを選択にあたってガイダンスを示し、シナリオについて説明する際には、データのボリューム番号について言及されます。 これらの番号は、パターンを測定するためだけに使用されるものであり、ハードシステムの機能限界を意味するものではありません。 絶対数は、実稼働環境ではさまざまな要因によって変わってきます。コンフィギュレーションはこのシナリオにおけるただ1つの側面に過ぎません。 
 
 次のテーブルに、Finance and Operations で使用可能な受信統合パターンを示します。
 

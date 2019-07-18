@@ -3,7 +3,7 @@ title: パッケージのアンインストール
 description: このトピックでは、配置可能パッケージを環境から削除する方法について説明します。
 author: manado
 manager: AnnBe
-ms.date: 07/02/2018
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17207b63a579df40be604f62029139c86e4448bc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d52a5559f5ecf948ebcd40c9ebd11152137bd7e5
+ms.sourcegitcommit: 6f0e5bf82a5f61bab52c3cf4c82849fae5c5d50b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550934"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702924"
 ---
 # <a name="uninstall-a-package"></a>パッケージのアンインストール
 
@@ -41,8 +41,8 @@ ms.locfileid: "1550934"
 
 ## <a name="uninstall-a-package"></a>パッケージのアンインストール
 
-1. **ModuleToRemove.txt** という名前のファイルを作成します。
+1. **ModulesToRemove.txt** という名前のファイルを作成します。
 2. ファイルには、別の行で削除する各モジュールの名前を入力します。 削除する各モジュールの前提条件が完了したことを確認します。
-3. 有効な配置可能なパッケージを作成して、**package\\AOSService\\Scripts** フォルダに ModuleToRemove.txt ファイルを保存します。
+3. 有効な配置可能なパッケージを作成して、 **package\\AOSService\\Scripts** フォルダに ModulesToRemove.txt ファイルを保存します。
 4. 配置可能パッケージをインストールします。 配置可能パッケージをインストールする方法の詳細については、[クラウド配置に更新プログラムを適用する](apply-deployable-package-system.md)を参照してください。
 5. 実稼動環境で、この手順を実行する前に、パッケージがアンインストールされたことを確認します。
