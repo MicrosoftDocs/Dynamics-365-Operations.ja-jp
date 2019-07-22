@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
-ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
+ms.openlocfilehash: c249df697553cd42eccd59d3f2c3f5f083ead1cb
+ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576924"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624610"
 ---
 # <a name="provision-talent"></a>Talent のプロビジョニング
 
@@ -48,6 +48,8 @@ LCS プロジェクトを作成した後は、環境に Talent をプロビジ�
 
 1. LCS プロジェクトでは、**Talent アプリの管理** タイルを選択します。
 2. これが人材のサンドボックスまたは実稼働インスタンスであるかどうかを示します。 初期のプレビュー機能をサンドボックス インスタンスで使用することにより、早期のフィードバックおよびテストを行うことができます。 
+    > [!NOTE]
+    > Talent のインスタンス タイプは、PowerApps 管理センターで設定された PowerApps 環境のインスタンス タイプとは異なります。
 3. Talent テスト ドライブ エクスペリエンスで使用される同じデモ データのセットを環境に含める場合は、**デモ データを含む**オプションをオンにします。 これは長期的なデモまたはトレーニング環境に便利であり、稼動環境で使用されることはありません。  初期展開時にこのオプションを選択する必要があることに注意してください。 後で、既存の配置を更新することはできません。
 4. Talent は、Microsoft PowerApps の環境に常にプロビジョニングされていて、これにより PowerApps の統合および拡張機能が有効になります。 続行する前に、このトピックの「PowerApps 環境の選択」を参照してください。 まだ PowerApps 環境を持っていない場合は、LCS で環境の管理を選択するか、または PowerApps 管理センターに移動します。 次に、以下の手順に従います [PowerApps 環境の作成](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment)。
 

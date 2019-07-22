@@ -3,7 +3,7 @@ title: パフォーマンス上の問題をトラブルシューティングす�
 description: このトピックでは、パフォーマンス上の問題をトラブルシューティングするために電子申告 (ER) のパフォーマンス追跡機能を使用する方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 05/08/2019
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: aa71db2752889bc905c22bab1cf2fa46d7ee07c7
-ms.sourcegitcommit: 67d00b95952faf0db580d341249d4e50be59119c
+ms.openlocfilehash: 55f3fd95a87bcf62824021ebfbf3bcd11af6013f
+ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576549"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "1703878"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>パフォーマンス上の問題をトラブルシューティングするため ER 形式の実行を追跡します
 
@@ -346,3 +346,29 @@ Finance and Operations のいずれかのバージョンを使用する場合は
 このトピックの先のセクション [ER 形式を実行する](#run-format) の手順を繰り返して、新しいパフォーマンス追跡を生成します。
 
 Web ブラウザーによって、ダウンロード用の zip ファイルが提供されていることに注意してください。 このファイルには、PerfView 形式のパフォーマンス追跡が含まれています。 次に、PerfView パフォーマンス分析ツールを使用して ER 形式実行の詳細を分析できます。
+
+![PerfView で実行された ER 形式のトレース情報](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+
+## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>外部ツールを使用してデータベース クエリを含む実行トレースを確認する
+
+ER フレームワークに行われた改善のため、PerfView 形式で生成されたパフォーマンスの追跡により、ER 形式の実行に関する詳細情報が提供されるようになりました。 Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.4 (2019 年 7 月) では、このトレースに、アプリケーション データベースに対して実行された SQL クエリの詳細を含めることができるようになりました。
+
+### <a name="configure-user-parameters"></a>ユーザー パラメーターのコンフィギュレーション
+
+1. Finance and Operations で、**組織管理** \> **電子申告** \> **構成**の順に移動します。
+2. **構成**ページ、アクション ウィンドウ、**構成**タブ、**詳細設定**グループで、**ユーザー パラメーター**を選択します。
+3. **ユーザー パラメーター** ダイアログ ボックスの**実行トレース** セクションで、次のパラメーターを設定します。
+
+    - **実行トレース形式**フィールドで、**PerfView XML** を選択します。
+    - **クエリ統計情報の収集** オプションを**はい**に設定します。
+    - **クエリの追跡**オプションを**はい**に設定します。
+
+    ![Finance and Operations のユーザー パラメーター ダイアログ ボックス](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+
+### <a name="run-the-er-format"></a>ER 形式を実行する
+
+このトピックの先のセクション [ER 形式を実行する](#run-format) の手順を繰り返して、新しいパフォーマンス追跡を生成します。
+
+Web ブラウザーによって、ダウンロード用の zip ファイルが提供されていることに注意してください。 このファイルには、PerfView 形式のパフォーマンス追跡が含まれています。 次に、PerfView パフォーマンス分析ツールを使用して ER 形式実行の詳細を分析できます。 この追跡に、ER 形式の実行中における SQL データベース アクセスに関する詳細が含まれるようになりました。
+
+![PerfView で実行された ER 形式のトレース情報](./media/GER-PerfTrace2-PerfViewTrace2.PNG)

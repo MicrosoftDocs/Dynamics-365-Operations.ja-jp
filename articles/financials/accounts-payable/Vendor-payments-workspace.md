@@ -3,7 +3,7 @@ title: 仕入先支払ワークスペース
 description: このトピックでは、[仕入先支払] モバイル ワークスペースに関する情報を提供します。 [仕入先支払] ワークスペースは、仕入先支払の処理に関連する情報を表示します。
 author: abruer
 manager: AnnBe
-ms.date: 05/09/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 789acd3f403e322ec00388ca8184ccd30c3ea436
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6f5ffe65b2f9be7423f1fe420594c936e15550fb
+ms.sourcegitcommit: 6f0e5bf82a5f61bab52c3cf4c82849fae5c5d50b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509225"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702938"
 ---
 # <a name="vendor-payments-workspace"></a>仕入先支払ワークスペース
 
 [!include [banner](../includes/banner.md)]
 
 **仕入先支払** ワークスペースは、仕入先支払の処理に関連する情報を表示します。 このワークスペースには、**自分の作業** ビューと **分析** ページが含まれます。 **自分の作業** ビューでは、概要タイル、仕入先トランザクションのグリッド、および関連する仕入先情報を表示します。 **分析**ページは、Microsoft Power BI の機能を使用して、仕入先支払に関連付けられているビジュアルを表示します。
+
+## <a name="setup-needed-to-view-power-bi-content"></a>Power BI コンテンツを表示するための設定
+
+データを**仕入先支払** Power BI ビジュアルに表示するには、次の設定を完了する必要があります。
+1. **システム管理 > 設定 > システム パラメーター**に移動して、**システム通貨**および**システム為替レート**を設定します。
+2. **総勘定元帳 > 設定 > 元帳**に移動して、**会計通貨**および**為替レート タイプ**を設定します。 
+2. トランザクション通貨と会計通貨、会計通貨とシステム通貨の間の為替レートを定義します。 これを行うには、**総勘定元帳 > 通貨 > 通貨の為替レート**に移動します。
+3. **システム管理 > 設定 > エンティティ格納**に移動して、**VendPaymentBIMeasure** 集計測定を更新します。 
 
 ## <a name="my-work-view"></a>自分の作業ビュー
 

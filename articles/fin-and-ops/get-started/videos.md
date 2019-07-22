@@ -3,7 +3,7 @@ title: Finance and Operations に関するビデオ
 description: このページでは、YouTube および他のサイトで使用可能な Dynamics 365 for Finance and Operations に関連する Microsoft が作成したハウツーおよび技術解説ビデオを一覧表示します。
 author: josaw1
 manager: AnnBe
-ms.date: 05/15/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 1b828382f9f81d796fcfaef0e9c7dc9450a97992
-ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
+ms.openlocfilehash: 5ede5bfa3b7a61461adb1514b7e96c4eba5a75c7
+ms.sourcegitcommit: fdc37a3c2ca2bac5741e7017fb225344e64f041a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1591551"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625400"
 ---
 # <a name="videos-for-finance-and-operations"></a>Finance and Operations のビデオ
 
@@ -38,7 +38,7 @@ ms.locfileid: "1591551"
 
 #### <a name="data-integration"></a>データ統合
 
-- [Prospect to cash integration (見込顧客リストの現金化への統合)](https://youtu.be/AVV9x5x-XCg)
+- [見込顧客リストの現金化への統合](https://youtu.be/AVV9x5x-XCg)
 - [Dynamics 365 for Field Service と Finance and Operations の間のワーク オーダーの同期](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 #### <a name="data-management"></a>データ管理
@@ -60,10 +60,14 @@ ms.locfileid: "1591551"
 #### <a name="financial-management"></a>財務管理
 
 - [レポート デザイナーのバージョンを検索](https://www.youtube.com/embed/icfA5Q3kp4w)
-- [Cost control mobile workspace (原価管理モバイル ワークスペース)](https://youtu.be/imsuTg8rUVk)
-- [Get started with Cost accounting (原価会計の使用を開始する)](https://youtu.be/1pUDtJQZ8FU)
-- [Use Excel for cost analysis (コスト分析に Excel を使用する)](https://youtu.be/-HKHYdClvx8)
+- [原価管理モバイル ワークスペース](https://youtu.be/imsuTg8rUVk)
+- [原価会計の使用を開始する](https://youtu.be/1pUDtJQZ8FU)
+- [コスト分析に Excel を使用する](https://youtu.be/-HKHYdClvx8)
 - [経費エクスペリエンス](https://youtu.be/Ocy-MsTvEE0)
+
+#### <a name="help-system"></a>ヘルプ システム
+
+- [Microsoft Dynamics 365 ドキュメントへの寄稿方法](https://youtu.be/m5djioozRbg)
 
 #### <a name="intelligence"></a>インテリジェンス
 
@@ -98,7 +102,7 @@ ms.locfileid: "1591551"
 
 #### <a name="procurement-and-sourcing"></a>調達
 
-- [Approve purchase orders on a mobile device (モバイル デバイスで発注書を承認する)](https://youtu.be/gZ-gOlJe7H8)
+- [モバイル デバイスで発注書を承認する](https://youtu.be/gZ-gOlJe7H8)
 - [新しい仕入先の搭載](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
 
 #### <a name="production-control"></a>生産管理
@@ -114,7 +118,7 @@ ms.locfileid: "1591551"
 #### <a name="warehouse-management"></a>倉庫管理
 
 - [バッチの倉庫への生産ピッキングのリリース](https://youtu.be/8urAJn50dQ8)
-- [Use warehouse template to copy configuration (倉庫テンプレートを使用したコンフィギュレーションのコピー)](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
+- [倉庫テンプレートを使用したコンフィギュレーションのコピー](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 ## <a name="fasttrack-tech-talks"></a>FastTrack 技術解説
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 13cfe68e3d06001c56770fa60838404c43d0b38d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5ec10820761cb22cbff6229babe8a250848214b7
+ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518438"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624584"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-23-2019"></a>Dynamics 365 for Talent (2019 年 4 月 23 日) の新機能および変更された機能
 
@@ -46,7 +46,7 @@ ms.locfileid: "1518438"
 ### <a name="additional-odata-entities-302992"></a>追加の OData エンティティ (302992)
 現在、次のエンティティで OData がサポートされています。作業者の職務経験および作業者の教育です。
    
-### <a name="performance-journal-attachments-for-nanagers-and-employees-308248"></a>管理者および従業員の業績仕訳帳の添付ファイル (308248)
+### <a name="performance-journal-attachments-for-managers-and-employees-308248"></a>管理者および従業員の業績仕訳帳の添付ファイル (308248)
 今回のリリースでは、業績仕訳帳エントリの作成および更新時に、マネージャと従業員の両方に対して添付ファイルが使用可能になりました。
 
 ### <a name="employee-rehire-flag-always-available-310047"></a>従業員再雇用フラグは常に使用可能 (310047)

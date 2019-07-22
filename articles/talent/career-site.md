@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518503"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729706"
 ---
 # <a name="career-site-functionality-in-attract"></a>Attract のキャリア サイト機能
 
@@ -48,11 +48,14 @@ Attract ではテナントの環境ごとに 1 つのキャリア サイトが�
  
 以下の項目の値を設定するには、管理者として Attract にサインインし、**設定**メニューで**管理センター**を選択してから、**キャリア サイトの管理**タブを選択します。
 
--   **検索エンジンの最適化** - 有効にすると、Attract キャリア サイトに募集されているすべてのジョブは、Bing や Google などの検索エンジンを使用して検索可能になります。
+-   **検索エンジンの最適化** - 有効にすると、Attract キャリア サイトに募集されているすべてのジョブは、Bing や Google などの検索エンジンを使用して検索可能になります。 
 
     > [!NOTE] 
     > 使用している検索エンジンによって、この設定をオンにしてから検索結果が表示されるまでに時間がかかることがあります。
-         
+    
+-   **契約条件** - 有効になっている場合、すべての候補者はジョブに応募する際に、組織の契約条件に同意する必要があります。 Attract 管理者は、独自の同意テキストと、その契約条件ページへのリンクをコンフィギュレーションすることができます。 
+
+        
 ## <a name="career-site-urls"></a>キャリア サイトの URL
 
 次の一覧には、一般的に使用されるキャリア サイトの URL およびそのアクセス方法が含まれています。

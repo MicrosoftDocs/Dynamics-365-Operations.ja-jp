@@ -3,7 +3,7 @@ title: 経費管理
 description: このトピックは、経費管理に関する一般情報、および追加のリソースへのリンクを提供します。 経費管理は、支払方法に関する情報を保存したり、クレジット カード トランザクションをインポートしたり、従業員が業務を遂行する際に発生する経費を追跡したりするための統合ワークフローを作成するのに使用できます。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 06/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe1e92dbf63d2683a53684b350f77c978b14c75e
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: 7509553df57b9cba206e606b78c70732da32074d
+ms.sourcegitcommit: 169b593b0d9afb228d2cfb0f3b742e4777ec81af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538612"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "1633978"
 ---
 # <a name="expense-management"></a>経費管理
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 経費管理は、支払方法に関する情報を保存したり、クレジット カード トランザクションをインポートしたり、従業員が業務を遂行する際に発生する経費を追跡したりするための統合ワークフローを作成するのに使用できます。 また、経費ポリシーを定義し、旅行経費の払い戻しを自動化することもできます。
 

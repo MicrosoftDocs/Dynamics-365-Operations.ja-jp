@@ -3,7 +3,7 @@ title: 工程のスケジューリング
 description: このトピックでは、工程のスケジューリングに関する情報を提供します。 この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 298c07346427a949ffa544e66eb6b01995dadc38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9447474e0878077659a80dc49f7c7c1313db2cbe
+ms.sourcegitcommit: 8741b4b32ef32a54de3d064bf40a9c0179d4139a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560265"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "1691465"
 ---
 # <a name="operations-scheduling"></a>工程のスケジューリング
 
@@ -67,6 +67,9 @@ ms.locfileid: "1560265"
 -   **受注残の生産** – 計画済、リリース済、開始済の製品
 -   **使用可能な材料** – 在庫、副生産、外注業者、および仕入先
 -   **能力の利用可能性** – 生産に必要なリソース
+
+> [!NOTE]
+> マルチ スレッドのマスター プランと工程スケジューリングを使用している場合、有限能力は考慮されません。 
 
 ## <a name="cancellations"></a>取消
 工程のスケジューリングを実行すると、特定部分の工順をキャンセルできます。 これらの機能には、待ち時間、段取り時間、プロセス時間、重複時間および配送時間が含まれます。

@@ -3,7 +3,7 @@ title: 人材グループを使用するソースの候補者
 description: このトピックでは、Attract の人材プールを作成および設定する方法について説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
+ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518425"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "1711297"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>人材グループを使用するソースの候補者
 
@@ -110,8 +110,6 @@ ms.locfileid: "1518425"
 
 - 候補者の詳細な連絡先を表示できます。 **詳細の編集**ボタンを使用して、必要な情報を編集または更新できます。
 
-- 候補者のスキルを識別するために、スキル タグをさらに追加することができます。
-
 - 候補者のアプリケーションの全体履歴を表示することができます。 候補者が組織内で応募したすべてのジョブおよびこれらのアプリケーション状態を表示できます。 ジョブの採用チームの一員である場合は、**表示**を選択し、詳細にアプリケーションを確認できます。
 
 - **ドキュメント**タブを使用して、候補者が自身のプロファイルからまたはジョブ アプリケーション間に、追加したドキュメントを表示します。 このタブを使用して、候補者の履歴書、カバー レター、ポートフォリオの作業などを管理できます。 このタブを使用して、ドキュメントを追加することもできます。
@@ -119,6 +117,9 @@ ms.locfileid: "1518425"
     ドキュメントを表示するには、ドキュメント リストでドキュメント名を選択します。 Microsoft Office 365 を使用して、アプリケーションの Microsoft Word ドキュメントを表示できます。 各ドキュメントの**ダウンロード**オプションを使用して、ドキュメントをローカル コンピューターにダウンロードすることもできます。
 
 - **LinkedIn** タブを使用して、候補者の LinkedIn 情報を表示します。 このタブを使用するには、ユーザー設定で LinkedIn アカウントを接続する必要があり、自身の環境 LinkedIn Recruiter の接続は確立されている必要があります。 詳細については、[LinkedIn Recruiter によるソーシング](./attract-linked-in-recruiter.md) を参照してください。
+
+> [!NOTE]
+> 候補者だけが、自分のスキル、学歴、および業務経験を更新できます。
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>人材プールからジョブに候補者を追加
 

@@ -3,7 +3,7 @@ title: 規制の更新
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の計画されたおよびリリース済の規制の更新の一覧を提供します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
-ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
+ms.openlocfilehash: ba01fe7ad3e4326e8ab52b78220d3ba79e94af7c
+ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "1593346"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624314"
 ---
 # <a name="regulatory-updates"></a>規制の更新
 
@@ -66,6 +66,13 @@ Microsoft は、新しい規制要件をできるだけ早く実装するよう�
 |      保留中            |   10.0.3      | ポーランド     |   2019 年 7 月 1 日からの SAF 請求書 (JPK_FA) v 2  |
 |      保留中            |   10.0.3      | ブラジル   |   ICMS 会計ドキュメント調整でのテーブル 5.2 の有効化   |
 |      保留中            |   10.0.3      | ブラジル    |   NF-e 法令 54.308/18 (RS)   |
+  | 保留中            |   10.0.4      | ブラジル    |   入金会計ドキュメント 66   |
+   | 保留中            |   10.0.4      | ブラジル    |   NF-e および NFC-e - 解決 13/2019 および条例 SUCIEF 55/2019- RJ - NF-e における免税タグ出力のための新しい条件。   |
+   | 保留中            |   10.0.4      | インド   |   GST 税金請求書における「供給の場所」の表示  |
+   | 保留中            |   10.0.4      | メキシコ   |  DIOT サード パーティ申告 - レイアウト 2019 の変更   |
+   | 保留中            |   10.0.4      | ブラジル    |   NF-e ICMS-ST - SP 州のための条例 CAT 42/18 - CAT 42/18
+   | 保留中            |   10.0.4      | ブラジル    |   NF-e 法令 54.308/18 - RS NF   |
+   
 
 
 ## <a name="additional-resources"></a>追加リソース
