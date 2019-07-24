@@ -3,7 +3,7 @@ title: Sales 製品への Finance and Operations の製品の直接同期
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Sales に製品を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff284585a2eb4c5cf55d2e3a3e0f317d1fb218bb
+ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572607"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624338"
 ---
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Sales 製品への Finance and Operations の製品の直接同期
 
@@ -43,7 +43,7 @@ ms.locfileid: "1572607"
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
-利用可能なテンプレートにアクセスするには、[PowerApps 管理者センター](https://preview.admin.powerapps.com/dataintegration) を開きます。 **プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
+利用可能なテンプレートにアクセスするには、[PowerApps 管理者センター](https://admin.powerapps.com/dataintegration) を開きます。 **プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
 
 以下のテンプレートと基本的なタスクは、Finance and Operations から Sales に製品を同期させるために使用されます。
 

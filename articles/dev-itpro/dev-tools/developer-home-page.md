@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbf36d3317ca20ee82f1a56b2f5208f258b9438a
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 93f55b36dadda37b3f58601ce158f303042a63fc
+ms.sourcegitcommit: a1354c6218b328d4d7dcc149d1339a7af10c48bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595380"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "1723135"
 ---
 # <a name="develop-and-customize"></a>開発およびカスタマイズ 
 
@@ -82,7 +82,6 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 -   [開発者ツールのアドイン](developer-tools-add-ins.md)
 -   [モデルの配分: モデルをエクスポートおよびインポートする方法](models-export-import.md)
 -   [Visual Studio でのメタデータの検索](metadata-search-visual-studio.md)
--   [Visual Studio を使用して競合を解決する](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [新しいユーザー アカウントを開発 VM で開発できるようにする](enable-development-machine.md)
 -   [Visual Studio 開発ツールの更新](update-development-tools.md)
 -   [仮想マシンが管理者のアクセスを許可しない事象に関するFAQ](../sysadmin/VMs-no-admin-access.md)

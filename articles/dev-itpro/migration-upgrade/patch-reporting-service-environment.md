@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da0e173602d637a7bb0584dab15f79a941ff7a34
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: cc70f675cdbf521da3f2a97d2fbd0beb533500bd
+ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595474"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625068"
 ---
 # <a name="patch-sql-server-reporting-services-ssrs-in-one-box-environments"></a>1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用
 
@@ -35,7 +35,7 @@ ms.locfileid: "1595474"
 次の手順は、1 ボックス開発環境のみを対象としています。
 
 -   パッチ .zip file を Lifecycle Services (LCS) からダウンロードします。
--   レポート サービスの修正プログラムのデータのフォルダーにフォント ファイルがある場合は、SQL Server Reporting Services (SSRS) が実行されているコンピューターにこれらをインストールします。 Windows にフォントをインストールする詳細については [TrueType 概要](https://www.microsoft.com/Typography/TrueTypeInstall.aspx) を参照してください。  既にインストールされているフォントは再度インストールする必要はありません。
+-   レポート サービスの修正プログラムのデータのフォルダーにフォント ファイルがある場合は、SQL Server Reporting Services (SSRS) が実行されているコンピューターにこれらをインストールします。 Windows にフォントをインストールする方法の詳細については、 [windowsにフォントをインストールまたは削除する方法](https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows)を参照してください。  既にインストールされているフォントは再度インストールする必要はありません。
 -   Reporting Services のパッチ スクリプト フォルダーのファイルを C:\\Packages\\Plugins\\AxReportVmRoleStartupTask の下にあるレポート プラグイン フォルダーにコピーします。
 -   ディレクトリを、スクリプト ファイルを格納したレポート プラグイン フォルダに変更します。
 -   以下に示すメソッドのいずれかを使用して、レポート拡張機能の古いインスタンスを置き換えます。

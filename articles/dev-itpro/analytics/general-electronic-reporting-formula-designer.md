@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
-ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
+ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
+ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "1592663"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625875"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>電子申告 (ER) のフォーミュラ デザイナー
 
@@ -651,6 +651,11 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <td>NUMBERFORMAT (数値, 形式)</td>
 <td>指定された形式で指定された数値の文字列形式を返します。 (サポートされている形式の詳細については、「<a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">標準</a>」と「<a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">カスタム</a>」を参照してください)。この関数が実行されるコンテキストが、数値の書式設定に使用されるカルチャを決めます。</td>
 <td>EN-US カルチャの場合、<strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> は <strong>&quot;45.00 %&quot;</strong> を返します。 <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> は <strong>&quot;10&quot;</strong> を返します。</td>
+</tr>
+<tr>
+<td>NUMBERFORMAT (数値, 形式, カルチャ)</td>
+<td>指定された形式およびカルチャで指定された数の文字列表現を返します。 (サポートされている形式の詳細については、「<a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">標準</a>」と「<a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">カスタム</a>」を参照してください)。</td>
+<td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong> は <strong>3,33</strong> を返し、<strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> は <strong>3.33</strong> を返します。</td>
 </tr>
 <tr>
 <td>NUMERALSTOTEXT (数, 言語, 通貨, 通貨名を印刷フラグ, 小数点)</td>

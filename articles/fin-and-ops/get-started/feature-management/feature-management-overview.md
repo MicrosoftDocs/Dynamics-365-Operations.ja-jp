@@ -3,7 +3,7 @@ title: 機能管理の概要
 description: このトピックでは、機能管理の機能および使用方法について説明します。
 author: mikefalkner
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: b200156a623c67a562cc1a5952899e3a77517528
-ms.sourcegitcommit: bbc9aa0d6b94a942e1f4d5b038601509dcc87937
+ms.openlocfilehash: d6aea8651c00b975cf158492e38bb147e908bc56
+ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1619147"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "1632056"
 ---
 # <a name="feature-management-overview"></a>機能管理の概要
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 機能は、Microsoft Dynamics 365 for Finance and Operations のすべてのリリースで追加および更新されます 機能管理エクスペリエンスは、各リリースで提供されている機能のリストを表示できるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。
 

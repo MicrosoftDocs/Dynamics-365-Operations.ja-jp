@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
-ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7eff0ce166785cb777fbf58ecf08ca8915be5af
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557332"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624887"
 ---
 # <a name="project-timesheets-on-a-mobile-device"></a>モバイル デバイスでのプロジェクト タイムシート
 
 [!include [banner](../includes/banner.md)]
-
-# <a name="overview"></a>概要
 
 **タイムシート (モバイルに最適化)** で、従業員はモバイル デバイスで特定のプロジェクトの作業時間を記録するプロジェクト タイムシートを作成および送信できます。 迅速で正確な時間を入力するため、従業員は、新しいタイムシートの作成または既存のタイムシートからデータをコピーできます。 デリゲートとして指名されている場合、別の作業者のタイム シートに入力することもできます。 アプリケーションでは、従業員がプロジェクト、リソース、または承認ステータスごとにフィルター処理をして、すばやく特定およびタイム シートを選択できるようにします。 また、従業員がタイムシートにプロジェクトおよび活動情報を保存する、お気に入りを保存する機能も提供します。 保存したお気に入りは、将来のタイムシートの作成、時間入力プロセスのスピード化に使用できます。 編集または財務分析コード情報の表示は、モバイル アプリからはサポートされていません。 **タイムシート (モバイルに最適化)** はモバイル デバイスで Web ブラウザーからアクセスできます。
 
@@ -35,8 +33,7 @@ ms.locfileid: "1557332"
 このモバイル アプリケーションは Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 の iPhone と互換性があります。
 Android は使用できるようになると、プラットフォーム更新プログラム 16 との互換性を持ちます。
 
-<a name="create-a-project-timesheet-on-your-mobile-device"></a>モバイル デバイスでプロジェクト タイムシートを作成します。
-------------------------------------------------
+## <a name="create-a-project-timesheet-on-your-mobile-device"></a>モバイル デバイスでプロジェクト タイムシートを作成します。
 
 1.  Dynamics 365 URL は **プロジェクト管理と会計** \> **タイムシート** \> **タイムシート (モバイルに最適化)** ページに対応することに注意してください。
 

@@ -3,7 +3,7 @@ title: X++ の変数とデータ型
 description: このトピックでは、X++ の変数とデータ型について説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 05/20/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b663facb1230985830abc4c69d9d885753d549fd
-ms.sourcegitcommit: ecc7c19e08da1b592fdbd9268f3314558811ca81
+ms.openlocfilehash: 2e85c80b92b160fc07beee0609659a3291eff7ce
+ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "1606553"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1729892"
 ---
 # <a name="x-variables-and-data-types"></a>X++ の変数とデータ型
 
@@ -601,7 +601,7 @@ X++ のプリミティブ データ型は、**anytype**、**boolean**、**date**
 
 ### <a name="utcdatetime"></a>utcdatetime
 
-**utcdatetime** データ型は、**date** 型と **timeOfDay** 型を結合します。 **utcdatetime** 変数には、タイム ゾーンに関する情報も含まれています。 ただし、この情報はコードではアクセスできません。 **utcdatetime** リテラルの形式は、**yyyy-mm-ddThh:mm:ss** です。 大文字「T」が必要です。 この形式は引用符を使用せずに記述できます。 最小値は、**1900-01-01T00:00:00** で、最大値は **1900-01-01T00:00:00** です。 この最大値は、**date** と **timeOfDay** の上位範囲に一致します。 **utcdatetime** の最小単位は 1 秒です。 宣言されているもののまた初期化されていない **utcdatetime** 変数の規定値は、 **1900-01-01T00:00:00** です。 この値は、**DateTimeUtil::minValue()** によって返される値です。 一部の機能は、この最小値の入力パラメーターを **null** として扱います。 たとえば、**DateTimeUtil::toStr** メソッドは、空の文字列を返します。 ただし、**DateTimeUtil::addSeconds** メソッドは使用可能な **utcdatetime** 値を返します。 **utcdatetime** データ型の暗黙的な変換はありません。 **DateTimeUtil** クラスは、**utcdatetime** 値を操作するために使用できるさまざまなメソッドを提供します。 次の明示的な [変換関数](xpp-conversion-run-time-functions.md)、**str2datetime** および **datetime2str** も使用できます。 また、**グローバル** クラスは、**utcDateTime2SystemDateTime** と **CLRSystemDateTime2UtcDateTime** 変換メソッドを提供して、共通言語ランタイム (CLR) 相互運用をサポートします。 比較演算子は、**utcdatetime** データ型で使用できる唯一の演算子です。 次の演算子を使用して、2つの **utcdatetime** 値を比較することができます: !=、&lt;、&lt;=、==、&gt;、および &gt;=。 テーブルに **utcdatetime** フィールドを追加するときは、そのフィールドを EDT にもとづいて決めることをお勧めします。
+**utcdatetime** データ型は、**date** 型と **timeOfDay** 型を結合します。 **utcdatetime** 変数には、タイム ゾーンに関する情報も含まれています。 ただし、この情報はコードではアクセスできません。 **utcdatetime** リテラルの形式は、**yyyy-mm-ddThh:mm:ss** です。 大文字「T」が必要です。 この形式は引用符を使用せずに記述できます。 最小値は、**1900-01-01T00:00:00** で、最大値は **2154-12-31T23:59:59** です。 この最大値は、**date** と **timeOfDay** の上位範囲に一致します。 **utcdatetime** の最小単位は 1 秒です。 宣言されているもののまた初期化されていない **utcdatetime** 変数の規定値は、 **1900-01-01T00:00:00** です。 この値は、**DateTimeUtil::minValue()** によって返される値です。 一部の機能は、この最小値の入力パラメーターを **null** として扱います。 たとえば、**DateTimeUtil::toStr** メソッドは、空の文字列を返します。 ただし、**DateTimeUtil::addSeconds** メソッドは使用可能な **utcdatetime** 値を返します。 **utcdatetime** データ型の暗黙的な変換はありません。 **DateTimeUtil** クラスは、**utcdatetime** 値を操作するために使用できるさまざまなメソッドを提供します。 次の明示的な [変換関数](xpp-conversion-run-time-functions.md)、**str2datetime** および **datetime2str** も使用できます。 また、**グローバル** クラスは、**utcDateTime2SystemDateTime** と **CLRSystemDateTime2UtcDateTime** 変換メソッドを提供して、共通言語ランタイム (CLR) 相互運用をサポートします。 比較演算子は、**utcdatetime** データ型で使用できる唯一の演算子です。 次の演算子を使用して、2つの **utcdatetime** 値を比較することができます: !=、&lt;、&lt;=、==、&gt;、および &gt;=。 テーブルに **utcdatetime** フィールドを追加するときは、そのフィールドを EDT にもとづいて決めることをお勧めします。
 
 #### <a name="utcdatetime-examples"></a>utcdatetime の例
 
@@ -765,22 +765,22 @@ C++ および C\# などの一部の言語を使用すると、1 つ以上のイ
         myContainer33 += [34, "banana"];
     }
 
-    // List class example. In this example, variable2 and variable3 refer to the same List object.
+    // Container example. The variable2 and variable3 hold different containers.
     static void JobC(Args _args)
     {
-        container variable2, variable33;
+        container variable2, variable3;
         variable2 += [98];
-        variable33 = variable2;
+        variable3 = variable2;
         variable2 += [97];
     }
 
-    // Container example. The variable2 and variable3 hold different containers.
+    // List class example. In this example, variable2 and variable3 refer to the same List object.
     static void JobL(Args _args)
     {
-        List variable2,variable33;
+        List variable2,variable3;
         variable2 = new List(Types::Integer);
         variable2.addEnd(98);
-        variable33 = variable2;
+        variable3 = variable2;
         variable2.addEnd(97);
     }
 

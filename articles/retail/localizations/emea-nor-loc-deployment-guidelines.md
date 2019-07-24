@@ -3,7 +3,7 @@ title: ノルウェーのキャッシュ レジスタの配置ガイドライン
 description: このトピックは、ノルウェー向け小売ローカライズ用配置ガイドです。
 author: AlexChern0v
 manager: olegkl
-ms.date: 10/10/2018
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 48b0938f7bd20fc7f288196bb42294d2917757d2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bb750d87d7531fde86f30314c46cfa5f3bad1391
+ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1515744"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1731272"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
@@ -673,7 +673,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
         - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** コンフィギュレーション ファイル
 
     2. ファイルを、IIS Retail Server サイトがある場所の下の **\\bin** フォルダーにコピーします。
-    3. CRT用拡張機能コンフィギュレーションファイルでCRTの変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
+    3. CRT用拡張機能コンフィギュレーションファイルで  CRT の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -683,7 +683,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
     1. **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** フォルダーで、**Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** アセンブリ ファイルを検索します。
     2. ファイルをIIS Retail Server サイトがある場所の **\\bin** フォルダーにコピーします。
-    3. CRT用拡張機能コンフィギュレーションファイルでCRTの変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
+    3. CRT用拡張機能コンフィギュレーションファイルで CRT の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
@@ -1535,7 +1535,34 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
         ---
 
-4. 拇印、保管場所、署名販売取引に使用されるべき証明書の保存名を指定して、証明書のコンフィギュレーションを変更します。 その後 **References** フォルダーにコンフィギュレーション ファイルをコピーします。
+4. 以下のファイルを修正して、配置可能なパッケージ内に ノルウェーのリソース ファイルを含めます。
+    - Packages\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj
+    - Packages\RetailServer\Sdk.RetailServerSetup.proj
+  
+  - **Sdk.ModernPos.Shared.csproj** ファイルの場合 
+    - **ItemGroup** セクションに新しい行を追加
+    
+        ``` xml
+        <<File_name> Include="$(SdkReferencesPath)\nb-NO\*" />
+        ```
+    > [注意] < ファイル名> ではなく、リソースファイルの名前を指定します。 次に示す例にも同じことが当てはまります。
+ 
+    - **Target Name="CopyPackageFiles"** セクションに行を追加します。
+       ``` xml
+        <Copy SourceFiles="@(<File_name>)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\nb-NO" SkipUnchangedFiles="true" />
+        ```
+  
+  - **Sdk.RetailServerSetup.proj** ファイルの場合 
+    - **ItemGroup** セクションに新しい行を追加
+        ``` xml
+        <<File_name> Include="$(SdkReferencesPath)\nb-NO\*" />
+        ```    
+    - **Target Name="CopyPackageFiles"** セクションに行を追加します。
+         ``` xml
+        <Copy SourceFiles="@(<File_name>)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\nb-NO" SkipUnchangedFiles="true" />
+        ```    
+
+5. 拇印、保管場所、署名販売取引に使用されるべき証明書の保存名を指定して、証明書のコンフィギュレーションを変更します。 その後 **References** フォルダーにコンフィギュレーション ファイルをコピーします。
 
     # <a name="application-update-4tabapp-update-4"></a>[アプリケーション 更新 4](#tab/app-update-4)
 
@@ -1563,14 +1590,14 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
     ---
 
-5. Retail Server コンフィギュレーション ファイルを更新します。 **RetailSDK\\Packages\\RetailServer\\Code\\web.config** ファイルの **extensionComposition** セクションに次の行を追加します。
+6. Retail Server コンフィギュレーション ファイルを更新します。 **RetailSDK\\Packages\\RetailServer\\Code\\web.config** ファイルの **extensionComposition** セクションに次の行を追加します。
 
     ``` xml
     <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
     ```
 
-6. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
-7. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
+7. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
+8. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 
 ### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Modern POS のオフライン モードでのデジタル署名を有効にします。
 

@@ -3,7 +3,7 @@ title: 経費精算書の再設計
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の経費精算書エントリのために再設計され再考された経験に関する情報を提供します。 この新しいエクスペリエンスにより、経費精算書を完成させるプロセスが簡略化され、必要な時間が短縮されます。
 author: ryansandness
 manager: AnnBe
-ms.date: 05/20/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: c7a2b95456e812970b135d83f0f7e503310ce185
-ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
+ms.openlocfilehash: 9e87a61bd6dd7bc1c7ef569882daf2074c7cade9
+ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "1592640"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "1631958"
 ---
 # <a name="expense-reports-reimagined"></a>経費精算書の再設計
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 経費精算書エントリは、経費精算書の完成単純化および必要な時間を節約するために再設計されています。 新しい経費のエクスペリエンスに関する主なコンポーネントは次のとおりです。
 

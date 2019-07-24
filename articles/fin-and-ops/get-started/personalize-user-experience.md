@@ -3,7 +3,7 @@ title: ユーザー エクスペリエンスのパーソナライズ
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations を個人用設定する方法について説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 05/17/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67ba1a95299de09c74e2fa2808cb63f61acf5862
-ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
+ms.openlocfilehash: 51c4cbbba36ed4c93fbbba907031023060d51495
+ms.sourcegitcommit: 0273905ceb371ba17d3a37d690e1f568aa968b4f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620017"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625014"
 ---
 # <a name="personalize-the-user-experience"></a>ユーザー エクスペリエンスのパーソナライズ
 
@@ -169,6 +169,6 @@ Finance and Operations の個人用設定には 3 つの基本クラスがあり
 
 ページ上の在庫分析コードの設定をカスタマイズするときは、**分析コードの表示** オプションを使用して作成した設定を考慮に入れます。 たとえば、個人用設定を使用して、バッチ番号在庫分析コードの列を非表示にしますが、次にそのページが開かれるとき、列は表示されます。 この動作が発生するのは、**分析コード表示**の設定が、表示されている在庫分析コードの列をコントロールするからです。
 
-**分析コード表示設定**はすべてのページに適用され、個々のページの在庫分析コード フィールドの個人用設定をすべて上書きします。
+**分析コード表示**設定はすべてのページに適用され、個々のページの在庫分析コード フィールドの個人用設定をすべて上書きします。
 
-結果として、前の例では、バッチ番号在庫分析コードの列を表示したくない場合、テーブルの**寸法を表示**オプションの一部としてその寸法をクリアする必要があります。 最終的には、この変更は 1 つの特定のページにだけでなく、すべてのページに適用されます。
+結果として、前の例では、ページにバッチ番号在庫分析コードの列を表示したくない場合、テーブルの**寸法を表示**オプションの一部としてその寸法をクリアする必要があります。

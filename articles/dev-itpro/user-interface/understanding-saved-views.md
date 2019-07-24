@@ -1,5 +1,5 @@
 ---
-title: 保存されたビューを十分に最適化するフォームの作成
+title: 保存されたビューを十分に活用するフォームの作成
 description: このトピックでは、保存されたビューの技術的な側面について説明します。また、保存されたビューを使用したフォームがうまく機能するよう、フォーム開発に関する考察を記載します。
 author: jasongre
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 0a98f7cc39c835f37585402350227787870fe45e
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: 078cda9e6d7a25fcf7454c84770a8b660b0bc600
+ms.sourcegitcommit: e516442d23c7ed08566930cee2bbe100ba25cba9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620791"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "1621271"
 ---
-# <a name="build-forms-that-fully-optimize-saved-views"></a>保存されたビューを十分に最適化するフォームの作成
+# <a name="build-forms-that-fully-utilize-saved-views"></a>保存されたビューを十分に活用するフォームの作成
 
 [!include [banner](../includes/banner.md)]
 [!include [private preview banner](../includes/private-preview-banner.md)]

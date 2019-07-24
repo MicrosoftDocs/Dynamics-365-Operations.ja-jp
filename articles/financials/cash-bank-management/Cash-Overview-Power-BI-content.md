@@ -3,7 +3,7 @@ title: 現金の概要 Power BI コンテンツ
 description: このトピックでは、現金の概要 Power BI コンテンツについて説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 author: saraschi2
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5dccb5c5c6c336607603dfc7a935c039e5ac4aa5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: bff0b1b0a68eccec1cebf130bc40ec3e6d88c3a9
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568920"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702798"
 ---
 # <a name="cash-overview-power-bi-content"></a>現金の概要 Power BI コンテンツ
 
@@ -33,6 +33,17 @@ ms.locfileid: "1568920"
 
 **現金の概要** Power BI コンテンツは、組織内で現金を担当する方のために作成されました。 **現金の概要** Power BI コンテンツは、キャッシュ フローの可視性を提供します。 適切な意志決定を支援するための予測も提供し、キャッシュ フローの正常性が向上します。 黒字額と不足分を把握するために、法人、通貨、および銀行口座ごとにキャッシュを分析できます。
 
+## <a name="setup-needed-to-view-power-bi-content"></a>Power BI コンテンツを表示するための設定
+
+**現金の概要**および**銀行管理** Power BI のビジュアルにデータを表示するには、次の設定を完了する必要があります。
+
+1. **システム管理 > 設定 > システム パラメーター**に移動して、**システム通貨**および**システム為替レート**を設定します。
+2. **総勘定元帳 > 設定 > 元帳**に移動して、**会計通貨**および**為替レート タイプ**を設定します。
+2. トランザクション通貨と会計通貨、会計通貨とシステム通貨、および会計通貨と銀行通貨の間の為替レートを定義します。 これを行うには、**総勘定元帳 > 通貨 > 通貨の為替レート**に移動します。
+3. キャッシュ フロー予測をコンフィギュレーションおよび実行します。 キャッシュ フロー予測の設定方法の詳細については、<a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+">キャッシュ フロー予測</a>を参照してください。 
+4. **システム管理 > 設定 > エンティティ格納**に移動して、**LedgerCovLiquidityMeasurement** 集計測定を更新します。
+
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 
 **現金の概要** Power BI コンテンツからのレポートが、**現金の概要**および**銀行管理**ワークスペースで表示されます。
@@ -42,6 +53,7 @@ ms.locfileid: "1568920"
 説明するには、**データの生成** ページをデモ データ モジュールから使用し、キャッシュ フロー予測デモ データを追加できます。  このスクリプトは、キャッシュ フロー予測テーブルにデータを挿入して、レポートに必要な情報をすばやく入力します。  このモジュールは、デモ データ スイート モデルが環境に展開されている場合にのみ使用できます。 
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
+
 次の表は、**現金の概要** Power BI コンテンツコンテンツの各レポート ページに表示されるメトリックスの詳細について説明しています。
 
 | レポート                                 | コンテンツ |
@@ -67,5 +79,3 @@ ms.locfileid: "1568920"
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | 各会社の会計通貨を使用したキャッシュ インフロー、アウトフロー、および残高 |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | 全ての会社に関して、システム通貨を使用したキャッシュ インフロー、アウトフロー、および残高 |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | トランザクション通貨を使用した、トランザクション正味金額および通貨残高の集計 |
-
-

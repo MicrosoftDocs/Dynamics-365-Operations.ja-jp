@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) のアセット ライブラリ
 description: このトピックでは、Lifecycle Services (LCS) のアセット ライブラリ機能について説明します。
 author: manalidongre
 manager: AnnBe
-ms.date: 05/10/2019
+ms.date: 07/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe05bf9749f786088504c5dfe2bd1729541fbb63
-ms.sourcegitcommit: f7a1e74a639dfbe470f7d57d4fc55e3bf4c6a74a
+ms.openlocfilehash: acafaca5ae749ec1fdfb1739fde1e12d26be4a99
+ms.sourcegitcommit: f5c2cfac0411c880994376ead6691ab52f2fd12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "1540874"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "1720225"
 ---
 # <a name="asset-library-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のアセット ライブラリ
 
@@ -53,7 +53,7 @@ ms.locfileid: "1540874"
 アセット ライブラリがサポートするすべての資産には複数のスコープがあります。 サポートされる資産スコープのいくつかを次に示します。
 
 - **自分自身** – 資産は、アップロードされるときに、**自分自身**スコープに設定されます。 **Me** スコープの資産は、資産をアップロードしたユーザーにのみに表示されます。
-- **プロジェクト** – プロジェクトを**グローバル** スコープから別のプロジェクトにインポートすると、**プロジェクト** スコープに設定されます。
+- **プロジェクト** – アセットを**グローバル** スコープから別のプロジェクトにインポートすると、**プロジェクト** スコープに設定されます。
 - **組織** – テナント内の複数のユーザーで資産を共有するとき、テナント管理は、資産を**組織**スコープに昇格できます。
 - **グローバル** – Microsoft だけが資産を**グローバル** スコープにアップロードできます。 これらのアセットは、Microsoft がすべての LCS プロジェクトおよびユーザーに公に利用されることを望むアセットです。
 

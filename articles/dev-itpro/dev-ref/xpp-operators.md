@@ -3,7 +3,7 @@ title: X++ 演算子
 description: このトピックでは、X++ でサポートされている演算子について説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a16408380d40248478636d88c9f172e4a3a62d0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1b50992394bf50781864c278d02aa9a42e23fc72
+ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544168"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1729889"
 ---
 # <a name="x-operators"></a>X++ 演算子
 
@@ -314,7 +314,7 @@ ms.locfileid: "1544168"
 | 乗算、シフト、ビット演算 <strong>AND</strong>、ビット演算排他的 <strong>OR</strong> |    \* / % DIV &lt;&lt; &gt;&gt; & ^    |
 |                      加法、ビット演算包括的 <strong>OR</strong>                       |                  + –                   |
 |                                    リレーショナル、同等                                    | &lt; &lt;= == != &gt; &gt;= 現状のとおり |
-|                    論理 (<strong>AND</strong>、<strong>OR</strong>)                     |                   &&                   |
+|                    論理 (<strong>AND</strong>、<strong>OR</strong>)                     |            && &#124;&#124;             |
 |                                        条件付                                         |                  ? :                   |
 
 同じ行の演算子には、同等な優先順位があります。 式にこれらの演算子のうち 1 つ以上が含まれる場合、代入演算子が使用されない限り、式は左から右に評価されます。 (代入演算子は、右から左に評価されます)。たとえば、**&&** (論理的**アンド**) および**||** (論理的**または**) には、同じ優先順位があり、左から右に評価されます。 したがって、**0&&0||1 == 1**、および **1||0&&0 == 0** です。

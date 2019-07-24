@@ -3,7 +3,7 @@ title: Finance and Operations のヘルプ システム
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システムのコンポーネントの概要を提供します。
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: da5b67bd67ff1a227a5f1812d41cdad9f062dfd0
+ms.sourcegitcommit: ad4d378afd88028d2002633a3cc8a67313cbeddd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595642"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625332"
 ---
 # <a name="finance-and-operations-help-system"></a>Finance and Operations のヘルプ システム
 
@@ -95,16 +95,18 @@ Unified Operations のコンテンツへのすべての更新の RSS フィー�
 
     ![コメントを投稿](./media/feedback.png)
 
-##### <a name="suggest-a-change-or-contribute-content-through-github"></a>GitHub を通じてコンテンツの変更や提案を投稿する
+### <a name="contribute-to-the-documentation"></a>ドキュメントに寄稿する
 
-変更を提案するには、GitHub アカウントを所有し、コントリビューター ライセンス契約に署名する必要があります。 プル要求が送信された後、提案された変更が確認されます。 必要に応じて、内部的に検討してから返答します。
+Finance and Operations のドキュメントを寄稿し、編集することができます。 開始するには、トピックの**編集** (鉛筆) ボタンをクリック、または <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public> にあるリポジトリへ移動します。 次のビデオでは、ドキュメントに寄稿する方法を示します。
 
-開始するには、トピックの**編集** (鉛筆) ボタンをクリック、または <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public> にあるリポジトリへ移動します。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE36liB]
+
+上記の [Microsoft Dynamics 365 ドキュメントへの寄稿方法](https://youtu.be/m5djioozRbg) ビデオは、YouTube で利用可能な [Dynamics 365 プレイリストの新機能](https://www.youtube.com/playlist?list=PLcakwueIHoT-ErQZPP80qNKuEAr0wAAD9) に含まれています。
 
 詳細については、<https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md> にある寄稿者のガイドを参照してください。
 
 > [!NOTE]
-> 現時点では英語のコンテンツ セットへの寄稿のみを受け付けています。
+> 現時点では英語のコンテンツへの寄稿のみを受け付けています。
 
 ## <a name="task-guides"></a>タスク ガイド
 

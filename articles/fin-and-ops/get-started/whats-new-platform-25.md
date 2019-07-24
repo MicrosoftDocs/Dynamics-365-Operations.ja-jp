@@ -3,7 +3,7 @@ title: Dynamics 365 for Finance and Operations プラットフォーム更新プ
 description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/14/2019
+ms.date: 07/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25
-ms.openlocfilehash: 54eb9bdc3413a65c44bb3a77860ef036a77d860c
-ms.sourcegitcommit: 67d00b95952faf0db580d341249d4e50be59119c
+ms.openlocfilehash: 4d699d25c4dafd501a31e18311e3dbb50ab97fa4
+ms.sourcegitcommit: d940c7892b6caa6141b3bda8abf1c56e9df4687a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576512"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "1726109"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-25-april-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能および変更点
 
@@ -66,7 +66,7 @@ Azure Blob Storage はビジネス イベントのエンド ポイントとし�
 > ビジネス イベント機能はプライベート プレビューとして使用できます。 その機能が一般に利用可能になる時期については [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features) を参照してください。 
 
 ## <a name="batch-jobs-single-scheduler"></a>バッチ ジョブの単一スケジューラ
-バッチ フレームワークで行われた改善は、バッチ スケジューリング機能を最適化します。 一度にアクティブになるバッチス ケジューラはひとつだけで、それがより高いスループットを維持します。 これはプラットフォーム更新プログラム 25 では既定で有効です。
+バッチ フレームワークで行われた改善は、バッチ スケジューリング機能を最適化します。 一度に有効になるバッチスケジューラは１つだけであり、これによってバッチテーブルの競合が減少し、スループットが向上する場合があります。 これはプラットフォーム更新プログラム 25 では既定で有効です。
 
 ## <a name="batch-jobs-enhanced-forms"></a>バッチ ジョブ拡張フォーム
 **バッチ ジョブ** フォームは生産性の向上し、ユーザー エクスペリエンスを高めるために拡張されています。 ユーザーは拡張形式とレガシ形式を切り替えることができます。 詳細については [バッチ拡張フォーム](../../dev-itpro/sysadmin/enhanced-forms.md) を参照してください。

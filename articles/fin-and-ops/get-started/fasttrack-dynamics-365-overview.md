@@ -3,7 +3,7 @@ title: Microsoft FastTrack for Finance and Operations
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のMicrosoft FastTrack の概要を説明します。 FastTrack は、事業価値をより速く達成できるように、Microsoft Dynamics 365 を円滑かつ確実に移行できるように設計された顧客成功サービスです。
 author: margoc
 manager: AnnBe
-ms.date: 08/02/2018
+ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
-ms.openlocfilehash: 8629d2f9de103fca5a2fec883d8ff025667c95eb
-ms.sourcegitcommit: 2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e
+ms.openlocfilehash: dc566c33eaafed85f48ece1d4285401f4ff742a8
+ms.sourcegitcommit: 98894aa32150e95fb7e87f98703b266b03493362
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "1608153"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "1718583"
 ---
 # <a name="microsoft-fasttrack-for-finance-and-operations"></a>Microsoft FastTrack for Finance and Operations
 
@@ -31,23 +31,7 @@ Microsoft Dynamics 365 for Finance and Operations の Microsoft FastTrack は、
 
 ## <a name="microsoft-fasttrack-for-finance-and-operations-overview"></a>Microsoft FastTrack for Finance and Operations の概要
 
-Finance and Operations はクラウドの異なる [配置オプション](../../dev-itpro/deployment/choose-deployment-type.md) とオンプレミスの環境を提供しています。 各配置オプションの基本的なアーキテクチャと実装方法が異なるため、 Microsoft は各オプションに合わせた FastTrack サービスを提供しています。
-
-### <a name="fasttrack-for-cloud"></a>クラウドの FastTrack
-
-このサービスは、Finance and Operations をクラウドで実装している顧客向けに設計されています。 このサービスは、新しい実装のためだけではなく、既存の Microsoft Dynamics AX 2012 または Microsoft Dynamics AX 2009 の実装からクラウド展開にアップグレードまたは移行している顧客のためにも設計されています。
-
-### <a name="fasttrack-for-on-premises"></a>オンプレミスの FastTrack
-
-このサービスは、Finance and Operations をオンプレミスで実装するために必要なアーキテクチャ上のガイダンスと、ツールおよびプロセスを提供することにより、新規顧客を助けるように設計されています。
-
-サービスは、既存の AX 2012 展開を Finance and Operations へ移行する顧客のためではなく、新しいオンプレミス展開を作成する顧客のために設計されています。
-
-提供されているガイダンスのいくつかは以下の通りです。
-
-- オンプレミスのサイズ
-- オンプレミス配置
-- オンプレミス パフォーマンスのチューニング
+Finance and Operations はクラウドの異なる [配置オプション](../../dev-itpro/deployment/choose-deployment-type.md) とオンプレミスの環境を提供しています。 Microsoft は、クラウド導入専用の FastTrack ソリューションアーキテクトを提供しています。 
 
 ## <a name="eligibility-for-fasttrack-for-finance-and-operations"></a>FastTrack for Finance and Operations の適格性
 
@@ -78,9 +62,9 @@ TechTalks は、対象となるサブジェクト領域固有の技術解説お�
 TechTalks は、基本知識を提供し、提供されるワーク ショップの価値および効率性を増やします。 FastTrack チームは、特定のワークショップの準備に役立つ関連性のある TechTalks をガイドします。 ストリーミングまたはダウンロード可能なすべての記録された TechTalk の完全なインベントリについては、追加のハウツービデオをと共に、[Dynamics 365 for Finance and Operations に関するビデオ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/videos)を参照してください。
 
 ## <a name="community"></a>コミュニティ
-FastTrack Finance and Operations コミュニティでは、顧客およびパートナーが質問を投稿し、ベスト プラクティスおよびガイダンスについて FastTrack ソリューションの設計者から回答を得ることができるプラットフォームを提供します。 コミュニティに参加するには、[FastTrack Finance and Operations フォーラム](https://community.dynamics.com/365/fasttrack/f/770)もしくは [FastTrack Finance and Operations オンプレミス フォーラム](https://community.dynamics.com/365/fasttrack/f/772)をご覧ください。
+FastTrack Finance and Operations コミュニティでは、顧客およびパートナーが質問を投稿し、ベスト プラクティスおよびガイダンスについて FastTrack ソリューションの設計者から回答を得ることができるプラットフォームを提供します。 コミュニティに参加するには、 [Fasttrack Finance and Operations フォーラム](https://community.dynamics.com/365/fasttrack/f/770)を参照してください。
 
-## <a name="workshops"></a>ワークショップ
+## <a name="workshops"></a>ワーク ショップ
 
 ワークショップは、対話型の結果ベースのリモート セッションです。 顧客とパートナーは、ワークショップの前に入力を提供し、エンゲージメントのためにカスタマイズすることができます。
 

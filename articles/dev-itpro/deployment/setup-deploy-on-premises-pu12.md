@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 021210293943510662fdf19717f859a5ecda61c6
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: f0457ebe391cad38f922b67cf99c8022a6e6f05a
+ms.sourcegitcommit: 661c7886b657ce0daa54dd0bdc638ffe85fc01ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595421"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "1711120"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -545,6 +545,8 @@ Finance and Operations の展開とサービスは、オンプレミスのロー
 2. [顧客の Azure ポータル](https://portal.azure.com) にサインインして、グローバル管理者ディレクトリの役割があることを確認します。
 3. **インフラストラクチャ**フォルダから次のスクリプトを実行します。
     ```powershell
+    Install-Module AzureRM
+    Import-Module AzureRM
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
     ```
 

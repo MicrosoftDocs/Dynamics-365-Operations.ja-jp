@@ -3,7 +3,7 @@ title: 埋め込みビューアを使用してPDFドキュメントのプレビ�
 description: このトピックでは、ビジネスドキュメントを表示するにあたり、埋め込みPDFプレビューオプションを使用する方法について説明します。
 author: tjvass
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 33c28751eed42ab7a478e02d93385220ecf3568e
-ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
+ms.openlocfilehash: 96fc64707af149ba53ec48a412231963e9f146be
+ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "1618009"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1731107"
 ---
 # <a name="preview-pdf-documents-with-an-embedded-viewer"></a>埋め込みビューアを使用してPDFドキュメントのプレビューをする
 
 [!include[banner](../includes/banner.md)]
-
-[!include[banner](../includes/preview-banner.md)]
 
 埋め込みPDFプレビューオプションを利用することにより、ビジネスドキュメントの作成にまつわるアプリケーションエクスペリエンスび効率を上げることができます。 Microsoft Dynamics 365 for Finance and Operations アプリケーションは、本サービスによって作成されたビジネスドキュメントをプレビューするにあたって最新のエクスペリエンスをお届けします。 組み込みのツールバーを使用することで、ドキュメントの閲覧やダウンロード、またはローカルに接続されている機器での印刷ができます。
 

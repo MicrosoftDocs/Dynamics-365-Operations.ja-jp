@@ -15,12 +15,12 @@ ms.custom: 196953
 ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: cb47e4fdfe4beb729f9f5c4b8608eb9078bfad52
-ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
+ms.openlocfilehash: d97facf84167774a6b53b37fcc875a8ef70dc80a
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1594973"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624848"
 ---
 # <a name="set-up-business-process-modeler-libraries-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのビジネス プロセス モデラー ライブラリの設定
 
@@ -42,8 +42,8 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
 
 2.  新しいライブラリを作成するには、任意のライブラリを右クリックし、ウィンドウの左下隅にある**作成**を選択します。 既存のライブラリをコピーするには、そのライブラリを右クリックし、ウィンドウの左下隅にある**コピー**を選択します。
 
-    [![コピー ボタンの位置](./media/bpm_03.png)](./media/bpm_03.png)
-=======
+    [![コピー ボタンの場所](./media/bpm_03.png)](./media/bpm_03.png)
+
     -   **グローバル ライブラリ** – 産業間の標準の業務プロセス。 [![業務プロセス ライブラリページの 3 種類のライブラリ](./media/bpm_02.png)](./media/bpm_02.png)
 
 3.  ライブラリ名を入力します。
@@ -108,7 +108,7 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
 1.  **LCS に保存**を選択します。
 2.  業務プロセス ライブラリを選択します。
 3.  記録に関連付ける業務プロセス ラインを選択します。
-4.   **OK**を選択します。
+4.  **OK**を選択します。
 
 LCS の業務プロセス ライブラリで記録するタスクを表示できるようになりました。
 
@@ -131,8 +131,6 @@ LCS の業務プロセス ライブラリで記録するタスクを表示でき
 5.  タスク ガイドのステップに従います。 **ロック解除**を選択すると、タスク ガイドに従わずに処理することができます。
 6.  完了したら、**タスク ガイドの停止**を選択します。
 
-
 ## <a name="additional-resources"></a>追加リソース
---------
 
 [AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)

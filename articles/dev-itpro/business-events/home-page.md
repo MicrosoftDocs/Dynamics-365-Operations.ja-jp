@@ -3,7 +3,7 @@ title: ビジネス イベント
 description: このトピックは、外部システムが Dynamics 365 for Finance and Operations から通知を受信するためのメカニズムを提供するビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 6fe4967ebfb119fdff16414f8dbd36718bfedb70
-ms.sourcegitcommit: 56ec43e459ba93f495bc76fed23d6737218ef37e
+ms.openlocfilehash: bc8eb0eb5be4df23a9aece50904fb214523c9d72
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "1591586"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702738"
 ---
 # <a name="business-events"></a>ビジネス イベント
 
@@ -131,6 +131,9 @@ Service Bus トピックにエンドポイントを作成するには、**新規
 ### <a name="create-an-azure-event-grid-endpoint"></a>Azure イベント グリッド エンドポイントの作成
 
 エンドポイントを作成するには、Azure ポータルで **Azure イベント グリッド トピック**を作成して構成し、次に**ビジネス イベント ワークスペース**でイベント グリッド トピックにエンドポイントを作成する必要があります。 **エンドポイント**タブに移動し、**新規**を選択し、**エンドポイントの種類**で **Azure イベント グリッド**を選択します。 **エンドポイント URL** フィールドで、**Azure イベント グリッド トピック**からURLを入力します。 これは、イベント グリッド トピックの**概要**セクションの**トピック エンドポイント**の値です。
+
+> [!IMPORTANT]
+> また、登録された Azure アプリケーションは、Key Vault のアクセス ポリシーで設定された Key Vault に追加する必要があります。 この設定を完了するには、**キー、シークレット、および証明書の管理**テンプレートを選択し、アプリケーションを**プリンシパル**として選択します。
 
 ![ビジネス イベントのイベント グリッド エンドポイントの値](../media/BusinessEventsEGTopicsEndpoint.PNG)
 

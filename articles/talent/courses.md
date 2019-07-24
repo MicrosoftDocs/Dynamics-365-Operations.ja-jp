@@ -3,7 +3,7 @@ title: トレーニング コースの設定
 description: 人事管理の管理者とマネージャーは、作業者に提供されるトレーニングに関する情報を管理するためにコース機能を使用できます。
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 83f88d17c744bb53dad975b77d169a09375d20d1
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 26e76d68c6d5c8bd965e65e65d57f239fb8a2918
+ms.sourcegitcommit: 87e8b811680b1f87a973ce1680f07d657fa23046
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518419"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "1701393"
 ---
 # <a name="set-up-training-courses"></a>トレーニング コースの設定
 
@@ -128,12 +128,12 @@ ms.locfileid: "1518419"
 </table>
 
 ## <a name="course-participants"></a>コース参加者
-コース参加者は、トレーニング コースまたはイベントに参加する作業者、申請者、または連絡担当者です。 オープン コースの参加者のみを登録できます。 コースに登録できる参加者の最小数と最大数は、**コース** ページの**全般**クイック タブで定義されます。
+コース参加者は、トレーニング コースまたはイベントに参加する作業者です。 オープン コースの参加者のみを登録できます。 コースに登録できる参加者の最小数と最大数は、**コース** ページの**全般**クイック タブで定義されます。
 
 <a name="workflow"></a>ワークフロー
 --------
 
-**従業員セルフ サービス** ページからコースに登録する従業員は、承認のワークフローを経て登録することができます。  ワークフローは、**コース** ページの**全般**クイック タブでコースに割り当てることができます。
+**従業員セルフ サービス** ページからコースに登録する従業員は、承認のワークフローを経て登録することができます。 **コース** ページの**一般**クイック タブで、コースにワークフローを割り当てることができます。
 
 
 

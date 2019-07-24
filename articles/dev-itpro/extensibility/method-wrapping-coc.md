@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfc2d9c637de579562160fc982c9de32dc162437
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3c7a6fd8d36a4168fb6dd43949e9106fedb83479
+ms.sourcegitcommit: d3bd6a9531dd39925d9bf13216086d07ab4116c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544106"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "1631893"
 ---
 # <a name="class-extension-via-method-wrapping-and-chain-of-command-coc"></a>メソッドのラッピングとコマンド チェーン経由のクラスの拡張機能 (CoC)
 
@@ -372,10 +372,10 @@ final class TableToExtend_Extension
 この例では、**DataEntityToExtend** はデータ エンティティで、**validateDelete** および **validateWrite** はデータ エンティティでラップできるメソッドです。
 
 ```C#
-[ExtensionOf(TableStr(LedgerJournalEntity))]
-final class LedgerJournalEntity_Extension
+[ExtensionOf(tableStr(DataEntityToExtend))]
+final class DataEntityToExtend_Extension
 {
-        public boolean validateDelete()
+    public boolean validateDelete()
     {
         boolean ret;
         //...

@@ -3,7 +3,7 @@ title: ソフトウェアのライフサイクル ポリシーおよびクラウ
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンライン サービスにおけるライフサイクルおよびサポート ポリシーの概要を説明します。
 author: RyanCCarlson2
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 52f27391264343d458c1e453a01772d29bb4d86d
-ms.sourcegitcommit: 56ec43e459ba93f495bc76fed23d6737218ef37e
+ms.openlocfilehash: ceba497968213e8ead5770e4263b08bd6ece942f
+ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "1591613"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1731105"
 ---
 # <a name="software-lifecycle-policy-and-cloud-releases"></a>ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
 
@@ -96,6 +96,8 @@ Dynamics 365 for Finance and Operations オンライン サービスは、Modern
 
 | **リリース**                                                                                                                                                  | **ビルド番号** | **在庫状態** | **有効期限**        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|----------------------------|
+| [プラットフォーム update 28](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28)               | 7.0.5314        | 2019 年 7 月   | 該当なし (継続的に更新) |
+| [プラットフォーム update 27](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27)               | 7.0.5286        | 2019 年 6 月   | 該当なし (継続的に更新) |
 | [プラットフォーム update 26](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26)               | 7.0.5257        | 2019 年 5 月   | 該当なし (継続的に更新) |
 | [プラットフォーム update 25](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25)               | 7.0.5222        | 2019 年 4 月   | 該当なし (継続的に更新) |
 | [プラットフォーム update 24](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24)               | 7.0.5179          | 2019 年 3 月   | 該当なし (継続的に更新) |

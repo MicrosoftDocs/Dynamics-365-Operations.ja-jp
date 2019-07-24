@@ -3,7 +3,7 @@ title: 1 つのバージョンのサービス更新に関するよく寄せら�
 description: このトピックは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールを明確にすることを目的としています。
 author: meeramahabala
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 06/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 77e87c2ce6c2c73f1d65a3d1098ae2e86b306c3e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 03363b225c15e4ac1ceee87eaf5e6a412abdc6dd
+ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537420"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "1629996"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
@@ -65,6 +65,8 @@ ms.locfileid: "1537420"
 ### <a name="whats-the-upcoming-schedule-of-updates"></a>更新の将来のスケジュールとは何ですか?
 
 サービスの更新は、2018 年 11 月から提供されています。 都合の良いときに更新プログラムを適用したり、選択された保守時間帯に基づいてマイクロソフトがサービス更新を自動適用するようにしたりするオプションがあります。 3 か月以内に更新する必要があります。
+
+対象となるリリースのスケジュールについては、 [サービス更新の可用性](public-preview-releases.md)を参照してください。
 
 ### <a name="are-there-any-major-updates-post-81"></a>8.1 以降のメジャー アップデートはありますか?
 

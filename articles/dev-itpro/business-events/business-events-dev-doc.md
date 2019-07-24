@@ -3,7 +3,7 @@ title: ビジネス イベント開発者ドキュメント
 description: このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/23/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: b8cc984908e6acfcb65684234337c67de23e1411
-ms.sourcegitcommit: f7e1720ffa3e34c787ca0f93d561cb75cbbb540a
+ms.openlocfilehash: 9b7c5da22d68409a42928b95e6b6d75400aaadc1
+ms.sourcegitcommit: 33e98f89294086334fe9c0a350abb6a52ef9dacb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "1605761"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "1711167"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -61,6 +61,9 @@ ms.locfileid: "1605761"
 | 簡単にノイズレスのままにすることができます。                                                                                       | ノイズを除去するためのサウンド ロジックを導入する追加作業が行われるまで、ノイズレスのままにすることは困難です。 |
 | 堅牢性およびペイロードの品質を著しく向上させる、ビジネス プロセスの追加コンテキストを提供します。 | イベントのキャプチャが低レベルであると、ビジネス プロセスのコンテキストが失われる可能性が高くなります。                             |
 
+
+> [!NOTE]
+> 一般に、テーブル レベルでのビジネス イベントの実装には、前述よりも多くの課題が伴う場合があります。 たとえば、基になるテーブルのデータを更新するストアド プロシージャを使用してビジネス ロジックを実行する場合は、X++のテーブルの挿入メソッドでそのビジネス イベントが実装されているため、そのイベントは生成すらされません。 特定のユース ケースに基づいて追加的な課題が発生する可能性があります。 したがって、業務イベントをテーブル レベルで実装することはお勧めできません。
 
 ## <a name="implementing-a-business-event"></a>ビジネス イベントの実装
 

@@ -3,7 +3,7 @@ title: ワークスペースの構築
 description: このチュートリアルでは、新しいタイルを作成し、ワークスペースの概要にそれを含め、ワークスペースの新しいリストを構築して、ワークスペースにリストのデータ キャッシュを作成します。
 author: jasongre
 manager: AnnBe
-ms.date: 08/25/2017
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb0575ccabff214367c354908615233ffbb34b03
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 523877816f1f125d4283b3404cf8b6afae8af6e4
+ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555240"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1729891"
 ---
 # <a name="build-workspaces"></a>ワークスペースの構築
 
@@ -313,10 +313,10 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 21. **FilterGroup** を右クリックして **新規** をクリックし、**QuickFilter** をクリックします。
 22. **プロパティ** ウィンドウで、次のプロパティを設定します。
 
-    | プロパティ       | 先頭値              |
+    | プロパティ       | 金額              |
     |----------------|--------------------|
     | 氏名           | VehicleQuickFilter |
-    | ターゲット コントロール | VehicleGrid        |
+    | ターゲット コントロール | VehicleList        |
 
 23. **Ctrl+S** キーを押して保存します。
 
@@ -329,10 +329,10 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 5.  デザイナーで、**データ ソース**を右クリックしてから**新しいデータ ソース**をクリックします。
 6.  **プロパティ** ウィンドウで、次のプロパティを設定します。
 
-    | プロパティ        | 先頭値       |
+    | プロパティ        | 金額       |
     |-----------------|-------------|
-    | テーブル           | FMTVehicles |
-    | Dynamics フィールド | 有         |
+    | テーブル           | FMTVehicle  |
+    | Dynamics フィールド | はい         |
 
 7.  **範囲** を右クリックし、**新しい範囲** をクリックします。
 8.  **プロパティ** ウィンドウで、次のプロパティを設定します。
@@ -352,9 +352,9 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 4.  新しい **FMTAvailableVehicles** メニュー項目がデザイナーで開かれていない場合、ソリューション エクスプローラーでダブルクリックします。
 5.  **プロパティ** ウィンドウで、次のプロパティを設定します。
 
-    | プロパティ       | 先頭値                |
+    | プロパティ       | 金額                |
     |----------------|----------------------|
-    | メニュー項目名 | FMTAvailableVehicles |
+    | オブジェクト         | FMTAvailableVehicles |
     | クエリ          | FMTAvailableVehicles |
 
 6.  **Ctrl+S** キーを押して保存します。

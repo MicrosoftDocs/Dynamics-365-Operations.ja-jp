@@ -3,7 +3,7 @@ title: オンプレミス環境のインプレース アップグレード プ�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 7.x のオンプレミス環境を 8.1 にアップグレードする詳細プロセスを説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 03/07/2019
+ms.date: 06/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 296d394562eb3d345a2fc37659076b29ab4c3015
-ms.sourcegitcommit: ab88de98a1958734213eb9d9b1988508b055f748
+ms.openlocfilehash: 6eb79a1d1662e03c2557405b289a9f9f610ffdbb
+ms.sourcegitcommit: 31a918d357a7182f3870713a9c4455bd5c44cd58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538762"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "1634493"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
+
+> [!NOTE]
+> 実稼働環境のアップグレードを実行する前に、サンドボックス環境のアップグレードを実行してください。
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 7.x のオンプレミス環境を 8.1 にアップグレードする詳細プロセスを説明します。  
 

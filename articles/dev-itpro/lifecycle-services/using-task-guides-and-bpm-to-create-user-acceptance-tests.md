@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: e90755122b0ee9cb7a37364994bbadc365017309
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: cfc661c78880c939ce8f0b4bb82ade0481064157
+ms.sourcegitcommit: 7b5ff31c0a82809641beb681510201b942932c74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537413"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "1621849"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
@@ -171,6 +171,15 @@ Dynamics 365 Unified Operations プラットフォームは、タスク記録に
 開発者は、**ビルドおよびテスト**環境のビルドおよびテスト自動化機能を使用できます。 詳細については、[継続的な配信ホーム ページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
 
 機能パワー ユーザーは、**Regression Suite Automation Tool** を使ってテスト ケースの実行を自動化できます。 ツールとユーザー マニュアルは、[ここで](https://www.microsoft.com/en-us/download/details.aspx?id=57357)ダウンロードします。
+
+Regression Suite Automation Toolの詳細については、次の情報を参照してください。
+
+ - [-   パート 1: Regression Suite Automation Tool -- バックグラウンド & セットアップ](https://infopedia.eventbuilder.com/event?eventid=j5m3w4&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+ - [-   パート 2: Regression Suite Automation Tool -- ライフサイクル デモのテスト](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+ 
+実習で使用する手順については、次のトピックを参照してください。
+- [Regression Suite Automation Toolの設定およびインストール](../../fin-and-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
+- [Regression Suite Automation Toolの使用](../../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md)
 
 #### <a name="investigate-test-runs"></a>テストの実行を調査します
 自動実行が完了したら、Azure DevOps ツール バーで**テスト > 実行** (または **テスト計画 > 実行**) を選択し、テストの実行を調査すします。 テスト ケース失敗およびエラーを調査するために必要なテスト実行を選択します。 Azure DevOps のテスト スイートにアクセスして、テスト ケースに関連する最新の結果を確認することもできます。

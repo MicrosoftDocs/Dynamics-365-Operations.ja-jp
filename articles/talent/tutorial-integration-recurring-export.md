@@ -3,7 +3,7 @@ title: Azure Logic アプリを使用した定期的なデータ エクスポー
 description: このチュートリアルでは Dynamics 365 for Talent から定期的なスケジュールでデータをエクスポートする Azure ロジック アプリを作成する方法を説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/15/2019
+ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Talent January 2019 update
-ms.openlocfilehash: 4d57e30d12cc5ef5cd574f58d4ded3d85c444ba0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bd6d52f207d7bf91b6e354ce8d2335eb1e2374b8
+ms.sourcegitcommit: 8cf77e9171d6cad8ae6c8bfad9e4f9a46fef6d23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537617"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "1689036"
 ---
 # <a name="recurring-data-export-using-azure-logic-apps"></a>Azure Logic アプリを使用した定期的なデータ エクスポート
 
@@ -133,22 +133,15 @@ Core HR で、作業者をエクスポートするデータ エクスポート �
         ![Until ループ コンテナー](media/integration-logic-app-until-loop-step.png)
 
         > [!NOTE]
-        > エクスポートが完了するまで最大 75 秒 (15 イテレーション × 5 秒) 待つには、制限カウントを **15** に設定します。 さらにエクスポートに時間がかかる場合は、必要に応じて制限カウントを調整してください。
-
-        > このサンプルはエラー チェックを実行しません。 **GetExecutionSummaryStatus** API は成功しなかった端末状態 (つまり、**"成功"** 以外の状態) を返す可能性があります。 詳細については [API のドキュメント](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) を参照してください。
+        > エクスポートが完了するまで最大 75 秒 (15 イテレーション × 5 秒) 待つには、制限カウントを **15** に設定します。 さらにエクスポートに時間がかかる場合は、必要に応じて制限カウントを調整してください。        
 
     3. **HTTP 要求の呼び出し** アクションを追加して [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API を呼び出し、 **ExecutionStatus** 変数を **GetExecutionSummaryStatus** 応答の結果に設定します。
 
-        > ![NOTE] エクスポートが完了するまで最大 75 秒 (15 イテレーション × 5 秒) 待つには、制限カウントを **15** に設定します。 さらにエクスポートに時間がかかる場合は、必要に応じて制限カウントを調整してください。
-
         > このサンプルはエラー チェックを実行しません。 **GetExecutionSummaryStatus** API は成功しなかった端末状態 (つまり、**"成功"** 以外の状態) を返す可能性があります。 詳細については [API のドキュメント](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) を参照してください。
-
-    3. **HTTP 要求の呼び出し** アクションを追加して [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API を呼び出し、 **ExecutionStatus** 変数を **GetExecutionSummaryStatus** 応答の結果に設定します。
-
 
         - **メソッド:** POST
         - **要求のUrl:** https://\<ホスト名\>/名前空間/\<名前空間\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
-        - **要求の本文:** body('Invoke\_an\_HTTP\_request').value
+        - **要求の本文:** body('Invoke\_an\_HTTP\_request')?['value']
 
             > [!NOTE]
             > コード ビューまたはデザイナーの機能エディターで **要求の本文** 値を入力する必要がある場合があります。
@@ -158,7 +151,7 @@ Core HR で、作業者をエクスポートするデータ エクスポート �
         ![変数アクションの設定](media/integration-logic-app-set-variable-step.png)
 
         > [!IMPORTANT]
-        > デザイナーが同じ方法で値を表示するとしても、**変数を設定** アクション (**body('Invoke\_an\_HTTP\_request\_2').value**) の値は **HTTP request 2 の呼び出し** 本文値の値とは異なります。
+        > デザイナーが同じ方法で値を表示するとしても、 **変数を設定** アクション (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) の値は **HTTP request 2 の呼び出し** 本文値の値とは異なります。
 
 7. エクスポートしたパッケージのダウンロード URL を取得します。
 
@@ -166,7 +159,7 @@ Core HR で、作業者をエクスポートするデータ エクスポート �
 
         - **メソッド:** POST
         - **要求のUrl:** https://\<ホスト名\>/名前空間/\<名前空間\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
-        - **要求の本文:**{"executionId": body('GetExportedPackageURL').value}
+        - **要求の本文:** {"executionId": body('GetExportedPackageURL')?['value']}
 
         ![GetExportedPackageURL action](media/integration-logic-app-get-exported-package-step.png)
 

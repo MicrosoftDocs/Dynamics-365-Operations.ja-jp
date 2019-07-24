@@ -3,7 +3,7 @@ title: X++ ステートメント、ループ、および例外処理
 description: このトピックでは、X++ の構文、ループ、および例外処理について説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 07/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c280a5faad44405b6c11646814d7d2d04ea880cd
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 7a4460e8e3f15cbbce45ad79c2b12defcbc59cc8
+ms.sourcegitcommit: f5c2cfac0411c880994376ead6691ab52f2fd12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536963"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "1720228"
 ---
 # <a name="x-statements-loops-and-exception-handling"></a>X++ ステートメント、ループ、および例外処理
 
@@ -687,17 +687,17 @@ ms.locfileid: "1536963"
 ## <a name="todo-comments"></a>TODO コメント
 コンパイラは、コメントの先頭に**仕事**という文字列があると認識します。 **TODO** 文字列は、Microsoft Visual Studio の**タスク一覧**ウィンドウでコメント テキストの残りの部分を報告するようにコンパイラに求めます。 **タスク一覧** ウィンドウを開くには、**表示** を選択し、**タスク ウィンドウ** を選択します。 **タスク ウィンドウ**は、明細行番号を報告します。**TODO** コメントがコード内にあります。 コメントで **TODO** を使用するためのルールを次に示します。
 
-- **TODO** 文字列は、**//** スタイル、または **/** スタイルを使うコメントに表示されます。
+- **TODO** 文字列は、 **//** スタイル、または **/\*** スタイルを使うコメントに表示されます。
 - **"TODO"** 文字列は、コメント内の最初の空白文字以外の文字列にする必要があります。 キャリッジ リターン、改行、タブ、およびスペース、すべて空白と見なされます。
 - コメントの開始と **"仕事"** の間に空白は必要ありません。
 - **TODO** 文字列では大文字と小文字が区別されません。 ただし、規則では **ToDo** またはその他のバリエーションの代わりに、全大文字で **TODO** が入力されます。
 - **TODO** 文字列には任意の文字を追加できます。 ただし、規則は、コロンを **TODO** 文字列に追加するかまたは空白で続けるかのいずれかです。
 - **TODO** 文字列の後のコメントの残りは、タスク記述として報告されます。 コメントが 200 文字よりも長い場合は、**タスク** タブで切り詰められるとうに表示されることがあります。
-- **/** コメント スタイルが使用されている場合、**TODO** タスクの説明は複数行にまたがることができます。
+- **/\*** コメント スタイルが使用されている場合、**TODO** タスクの説明は複数行にまたがることができます。
 
 ### <a name="examples-of-todo-comments"></a>TODO コメントの例
 
-次の例では、**//** と **/** スタイルを使用する <strong>TODO</strong> コメントを示しています。
+次の例では、 **//** と **/\*** スタイルを使用する <strong>TODO</strong> コメントを示しています。
 
     // An example of using TODO in the // style of comment.
     public boolean isLate()

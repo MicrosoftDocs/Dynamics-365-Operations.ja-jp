@@ -3,7 +3,7 @@ title: クラウド配置のシステム要件
 description: このトピックは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるクラウド配置のシステム要件を一覧表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 12/17/2018
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f23c558e5482242600ea14a58b083f36a676f28c
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e3db0bf0f21ff12a02042cef78266ae72ff604ad
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595480"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702737"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
@@ -74,6 +74,11 @@ Finance and Operations では、ドキュメント回覧エージェントなど
 
 - Microsoft Excel と Word のアドインを実行するには、Windows 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合トラブルシューティング](../../dev-itpro/office-integration/office-integration-troubleshooting.md) を参照してください。
 - Excel にエクスポートまたはWord にエクスポート機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
+
+# <a name="system-requirements-for-retail-client-components"></a>小売クライアントコンポーネントのシステム要件
+
+> [!NOTE]
+> 実稼働に移行する前に適切なパフォーマンステストを実行することが重要です。  次に示すのは、アプリケーションが機能するための最小システム要件であると考えられます。  目的のパフォーマンスを達成するには、データ量、時間あたりのトランザクション負荷、カスタマイズの影響などの概念を考慮します。  実装の初期段階と最終テストの前に再度、適切なパフォーマンステストを実施することで、必要なパフォーマンスを向上させることができます。また、基本ソリューションが必要な運用時間を満たしているかどうかを検証できます。
 
 ## <a name="retail-modern-pos-for-windows-requirements"></a>Windows 用 Retail Modern POS の要件
 

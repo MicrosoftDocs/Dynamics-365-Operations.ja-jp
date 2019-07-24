@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 28 (2019 年 7 月) の機能をプレビューする
+title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 28 (2019 年 7 月) の新機能および変更された機能
 description: このトピックでは、 Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 28 (2019 年 7 月) でプレビューされる機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform 28
-ms.openlocfilehash: a8f152a1208481a4820453484d3f4d480f9ee6e9
-ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
+ms.openlocfilehash: 76d471bfad90ba77b61225c3c77800f05201a9c1
+ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620073"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1731109"
 ---
-# <a name="preview-features-in-dynamics-365-for-finance-and-operations-platform-update-28-july-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 28 (2019 年 7 月) の機能をプレビューする
+# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-28-july-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 28 (2019 年 7 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 28 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5314 です。 プラットフォーム更新プログラム 28 の詳細については [追加リソース](whats-new-platform-update-28.md#additional-resources) を参照してください。
 
@@ -41,7 +40,7 @@ Dynamics 365 for Finance and Operations においてドキュメントの表示�
 PowerBI.com レポートは、Dynamics 365 Finance and Operations のアプリケーションワークスペースで提供されています。カスタムメニューコマンドを使用することで、このレポートに表示されるグラフを視覚化し、洞察性を高めることができます。 直感的な操作によりレポート データのビューにフィルターをかけ、業務を行うことができます。 最新のプラットフォーム更新プログラムを適用すると、開発者は、Finance and Operations アプリケーション内で分析ソリューションと対話形式の実用的な操作体験をユーザーに提供するカスタム拡張機能を追加できます。
 
 ## <a name="extended-availability-of-the-legacy-navigation-bar"></a>従来のナビゲーションバーの拡張された可用性
-プラットフォーム更新プログラム 24では、Dynamics 365 製品における Officeのヘッダーのビジュアルを統合する取り組みの一環として、刷新されたナビゲーションバーが Finance and Operations に導入されました。これにはパンくずリストは含まれません。 この時点で、従来のナビゲーションバーは品質に影響をもたらす懸念から、優先除外スケジュール (Platform Update28以降は利用不可) に設定されていました。 新しいナビゲーションバーから パンくずリスト がなくなっていること関し、お客様からの不満が寄せられていることから、従来のナビゲーションバーの使用可能時期を2020年4月まで延長することを決定しました。 
+プラットフォーム更新プログラム 24では、Dynamics 365 製品における Officeのヘッダーのビジュアルを統合する取り組みの一環として、刷新されたナビゲーションバーが Finance and Operations に導入されました。これには階層リンクは含まれていません。 この時点で、従来のナビゲーションバーは品質に影響をもたらす懸念から、優先除外スケジュール (Platform Update28以降は利用不可) に設定されていました。 新しいナビゲーションバーから パンくずリスト がなくなっていること関し、お客様からの不満が寄せられていることから、従来のナビゲーションバーの使用可能時期を2020年4月まで延長することを決定しました。 ナビゲーション バーの詳細、および従来 のナビゲーションバーに一時的に戻す方法については、 [更新されたナビゲーションバー](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar) を参照してください。 
 
 ## <a name="alert-users-before-sessions-end-due-to-inactivity"></a>非操作時間の経過によりセッションが終了する前にユーザーに警告する
 Finance and Operations の既定のアイドルタイムアウトは、現在60分となっています。 ユーザーが非アクティブ状態の時間制限を超過した後は、セッションが終了したことをユーザーに警告します。 非アクティブによりセッションが中断されることをユーザーが認識し、保存されていない変更が失われないようにするために、非アクティブによるセッションのが了する3分前にユーザーに通知されるようになりました。 また、ユーザーはセッションが終了する前に再度セッションに接続することも可能です。  
