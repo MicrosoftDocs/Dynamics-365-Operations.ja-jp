@@ -106,10 +106,28 @@
           items:
             - name: X++ 言語リファレンス
               href: dev-ref/xpp-language-reference.md
-            - name: X++ の変数とデータ型
-              href: dev-ref/xpp-variables-data-types.md
-            - name: X++ のステートメント、ループ、および例外処理
-              href: dev-ref/xpp-statements-loops.md
+            - name: 変数とデータ型
+              items:
+                - name: 変数
+                  href: dev-ref/xpp-variables-data-types.md
+                - name: プリミティブ データ型
+                  href: dev-ref/xpp-data-primitive.md
+                - name: 複合データ型
+                  href: dev-ref/xpp-data-composite.md
+                - name: コレクション クラス
+                  href: dev-ref/xpp-data-collection.md
+                - name: 拡張データ型
+                  href: dev-ref/xpp-data-edt.md
+            - name: ステートメント、ループ、および例外処理
+              items:
+                - name: コメント、使用、および印刷
+                  href: dev-ref/xpp-statements-loops.md
+                - name: 条件付きステートメント
+                  href: dev-ref/xpp-conditional.md
+                - name: ループ ステートメント
+                  href: dev-ref/xpp-loops.md
+                - name: 例外処理
+                  href: dev-ref/xpp-exceptions.md
             - name: X++ の SQL 接続エラー例外
               href: dev-ref/sql-connection-error.md
             - name: X++ 演算子
@@ -120,6 +138,8 @@
               href: dev-ref/xpp-classes-methods.md
             - name: X++ データの選択と操作
               href: dev-ref/xpp-data-query.md
+            - name: SysDa API を使用したデータアクセス
+              href: dev-ref/sysda.md
             - name: X++ マクロ
               href: dev-ref/xpp-macros.md
             - name: X++ 属性クラス
@@ -438,6 +458,10 @@
           href: user-interface/page-layout.md
         - name: Dynamics Symbol フォント
           href: user-interface/symbol-font.md
+        - name: 保存されているビュー
+          href: ../fin-and-ops/get-started/saved-views.md
+        - name: 保存されたビューを十分に活用するフォームの作成
+          href: user-interface/understanding-saved-views.md
         - name: カスタム パターンを使用するテスト フォーム
           href: user-interface/testing-forms-custom-patterns.md
         - name: セキュリティ保護された共有可能な URL (ディープ リンク) の作成
@@ -496,7 +520,7 @@
           href: user-interface/messaging-api-center-bar-details.md
         - name: メッセージ センター、メッセージ バー、およびメッセージ詳細に関するよく寄せられる質問
           href: user-interface/messaging-user.md
-    - name: 基本フォーム パターンのガイドライン
+    - name: フォーム パターンのガイドライン
       items:
         - name: 移行後のフォームのフォーム パターン
           href: user-interface/select-form-pattern.md
@@ -1129,7 +1153,7 @@
           href: migration-upgrade/on-prem-upgrade.md
     - name: 修正プログラム
       items:
-        - name: Lifecycle Services からの修正プログラムのダウンロード
+        - name: Lifecycle Services から更新プログラムを入手
           href: migration-upgrade/download-hotfix-lcs.md
         - name: クラウド環境への更新プログラムの適用
           href: deployment/apply-deployable-package-system.md
@@ -1162,6 +1186,8 @@
       href: sysadmin/pre-configured-system-accounts.md
     - name: B2B ユーザーの Azure AD へのエクスポート
       href: sysadmin/implement-b2b.md
+    - name: セッション アイドル タイムアウトの設定
+      href: sysadmin/session-idle-timeout.md
     - name: ロールベース セキュリティ
       href: sysadmin/role-based-security.md
       items:
@@ -1310,6 +1336,8 @@
   items:
     - name: Finance and Operations および Lifecycle Services のサポートの取得
       href: lifecycle-services/lcs-support.md
+    - name: Dynamics 365 のサポートの概要
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
     - name: 中国の 21Vianet で運用される Finance and Operations に対するサポートの取得
       href: lifecycle-services/21vianet-support.md
     - name: プレミア サポート チケットの記録
