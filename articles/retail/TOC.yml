@@ -4,6 +4,8 @@
   items:
     - name: 新機能および変更された機能
       href: get-started/whats-new.md
+    - name: Dynamics 365 for Retail 10.0.5 の機能のプレビュー
+      href: get-started/whats-new-10-0-5.md
     - name: Dynamics 365 for Retail 10.0.3 の新機能または変更された機能
       href: get-started/whats-new-10-0-3.md
     - name: Dynamics 365 for Retail 10.0.2 の新機能または変更された機能
@@ -257,6 +259,8 @@
       href: Notifications-POS.md
 - name: 返品
   items:
+    - name: リンクされた払戻
+      href: dev-itpro/linked-refunds.md
     - name: 店舗の品揃えに含まれていない製品の販売および返品
       href: sell-return-outside-assortments.md
     - name: 返品注文に対する交換のコンフィギュレーションとプロセス
