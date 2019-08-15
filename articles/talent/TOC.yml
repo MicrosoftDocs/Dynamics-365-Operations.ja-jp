@@ -8,6 +8,12 @@
         - name: Talent の新機能および変更された機能
           href: whats-new.md
           items:
+            - name: 2019 年 7 月 23 日
+              href: whats-new-talent-july-24-2019.md
+            - name: 2019 年 7 月 16 日
+              href: whats-new-talent-july-16-2019.md
+            - name: 2019 年 7 月 9 日
+              href: whats-new-talent-july-9-2019.md
             - name: 2019 年 7 月 2 日
               href: whats-new-talent-july-2-2019.md
             - name: 2019 年 6 月 25 日
@@ -102,8 +108,6 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR および Common Data Service
           href: CoreHREntities.md
-        - name: プレビュー機能の利用
-          href: access-preview-feature.md
         - name: Talent に関するサポートの利用
           href: talent-support.md
     - name: Attract による組織のスタッフ配置
@@ -112,48 +116,68 @@
           href: attract-comprehensive-hiring.md
         - name: Attract の機能
           href: attract-overview.md
-        - name: LinkedIn に関するよく寄せられる質問
-          href: attract-linkedin-faq.md
-        - name: 電子メール設定の構成
-          href: attract-configure-email-settings.md
-        - name: Attract でのプロセス テンプレートの作成
-          href: Process-templates-Attract.md
+        - name: よく寄せられる質問
+          items:
+            - name: LinkedIn の統合に関するよく寄せられる質問
+              href: attract-linkedin-faq.md
+        - name: システム設定のコンフィギュレーション
+          items:
+            - name: 会社情報のコンフィギュレーション
+              href: admin-settings-attract.md
+            - name: ユーザーのアクセス許可の設定
+              href: security-attract.md
+            - name: 機能の管理
+              href: access-preview-feature.md
+            - name: キャリア サイトの設定
+              href: career-site.md
+            - name: Broadbean との統合を有効にする
+              href: attract-admin-job-board-settings.md
+            - name: 電子メール設定のコンフィギュレーション
+              href: attract-configure-email-settings.md
+            - name: LinkedIn 統合の設定
+              href: attract-admin-linkedin.md
+        - name: 採用プロセスの作成
+          items:
+            - name: プロセス テンプレートの作成
+              href: process-templates-attract.md
+            - name: 採用プロセスの活動
+              href: activities-attract.md
+            - name: 電子メール テンプレート
+              href: email-templates.md
+            - name: 分析レポートの使用
+              href: analytic-reports.md
         - name: 職務の作成と投稿
-          href: Creating-jobs-Attract.md
-        - name: LinkedIn との統合の設定
-          href: attract-admin-linkedin.md
-        - name: Attract から LinkedIn への職務の投稿
-          href: attract-post-jobs-to-linkedin.md
-        - name: Attract から Broadbean への職務の投稿
-          href: posting-jobs-external.md
-        - name: 人材グループを使用した候補者のソーシング
-          href: attract-talent-pools.md
-        - name: LinkedIn Recruiter を使用した候補者のソーシング
-          href: attract-linkedin-recruiter.md
-        - name: 採用プロセスの活動
-          href: activities-attract.md
-        - name: 面接のスケジューリングおよびフィードバック
-          href: interview-scheduling-feedback.md
+          items:
+            - name: 職務の作成
+              href: creating-jobs-attract.md
+            - name: LinkedIn への職務の投稿
+              href: attract-post-jobs-to-linkedin.md
+            - name: Broadbean への職務の投稿
+              href: posting-jobs-external.md
+            - name: 職務の終了
+              href: attract-close-job.md
+        - name: 候補者のソーシング
+          items:
+            - name: 人材プールを使用した候補者のソーシング
+              href: attract-talent-pools.md
+            - name: LinkedIn Recruiter を使用した候補者のソーシング
+              href: attract-linkedin-recruiter.md
+            - name: 候補者のソースの追跡
+              href: source-tracking.md
+            - name: インテリジェントな推奨
+              href: Intelligent-Recommendations.md
+        - name: 面接の設定
+          items:
+            - name: 面接のスケジューリングおよびフィードバック
+              href: interview-scheduling-feedback.md
+        - name: オファーの作成
+          items:
+            - name: オファー管理の設定
+              href: offer-setup.md
+            - name: オファーの作成、承認、および署名
+              href: creating-offers.md
         - name: Attract での拡張性
           href: extensibility-attract.md
-        - name: Attract のキャリア サイト機能
-          href: career-site.md
-        - name: オファー管理の設定
-          href: offer-setup.md
-        - name: オファーの作成、承認、および署名
-          href: creating-offers.md
-        - name: 電子メール テンプレート
-          href: email-templates.md
-        - name: Attract でのセキュリティおよびロール管理
-          href: security-attract.md
-        - name: Attract での管理者設定
-          href: Admin-Settings-Attract.md
-        - name: インテリジェントな推奨
-          href: Intelligent-Recommendations.md
-        - name: 候補者のプロファイルおよび応募のソースの追跡
-          href: source-tracking.md
-        - name: プロセス インサイトの採用に分析レポートを使用
-          href: analytic-reports.md
     - name: Onboard での新規採用にようこそ
       items:
         - name: Onboard の使用を開始する
@@ -186,6 +210,8 @@
               href: set-up-hr-parameters-across-legal-entities.md
             - name: 会社固有の HR パラメーターの設定
               href: set-up-company-specific-hr-parameters.md
+            - name: Talent の日付と時刻のフィールド
+              href: date-time-fields-in-talent.md
             - name: 個人のアクションに関するよく寄せられる質問
               href: personnel-actions-faq.md
             - name: 業務プロセスの形式化

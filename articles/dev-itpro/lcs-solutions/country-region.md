@@ -10,24 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9815ee404981719888e4fdf637bd81f1744d7fb
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2d2fe0b357edf3594aa7d795eb2a15f03a886d79
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517112"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850618"
 ---
 # <a name="globalization"></a>グローバリゼーション
 
 ## <a name="local-and-regional-deployments"></a>ローカルおよび地域での展開
-政府規制によって、他の国/地域とは異なる方法で、データを保管またはサービスを提供することが要求される場合は、Finance and Operations を展開する際に考慮する必要がある国/地域の要件があります。 関連する可能性のある次のリソースを検討してください。
+政府規制によって、他の国/地域とは異なる方法で、データを保管またはサービスを提供することが要求される場合は、Finance and Operations を展開する際に考慮する必要がある国/地域固有の要件が存在する可能性があります。 関連する可能性のある次のリソースを検討してください。
 
 [Microsoft Dynamics 365 for Finance and Operations-中国で 21Vianet が運用](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
@@ -67,7 +67,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品のローカ�
 [Dynamics 365 リリース ノート](https://docs.microsoft.com/business-applications-release-notes/) では、Dynamics 365 のビジネス アプリケーションとアプリケーション プラットフォームに対して予定されている新機能と拡張機能について説明します。 
 
 #### <a name="finance-and-operations-whats-new"></a>Finance and Operations の新機能
-[新機能のコンテンツ](../../fin-and-ops/get-started/whats-new-changed.md)は、Finance and Operations のリリースに含まれる機能を一覧表示します。
+[新機能のコンテンツ](../../fin-and-ops/get-started/whats-new-changed.md)では、Finance and Operations のリリースに含まれる機能を紹介しています。
 
 ### <a name="electronic-reporting"></a>電子申告
 電子申告 (ER) ツールを使用すると、さまざまな国/地域の法的要件に従って電子ドキュメントの形式を構成できます。 ER では、これらの形式をライフ サイクル中に管理できます。 詳細については、次のいずれかのトピックを参照してください。
