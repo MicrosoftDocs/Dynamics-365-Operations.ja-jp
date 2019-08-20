@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Reasons, SalesTableListPage, SalesCreateOrder, SalesTable, BankLGRequestForm, BankLGRequestFormRequest, BankLGGuarantee, BankLGFormSubmitToBank, BankDocumentAgreementLineLookup, BankLGFormReceiveFromBank, LedgerJournalTable, LedgerJournalTransDaily, BankLGRequestFormGiveToBeneficiary, BankLGFormGiveToBeneficiary, BankLGRequestFormIncreaseValue, BankLGFormIncreaseValue, BankLGRequestFormLiquidate, BankLGFormLiquidate
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4dc6ee178121fae05d538f5103919442d91e65eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff105bdefff2ea93c853d590c77391653f50a4dc
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566113"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1841996"
 ---
 # <a name="letter-of-guarantee-transaction"></a>信用保証状のトランザクション
 
@@ -61,7 +61,7 @@ ms.locfileid: "1566113"
 15. [指定出荷日] フィールドに日付を入力します。
 16. [確定出荷日] フィールドに日付を入力します。
 
-## <a name="process-letter-of-guaranteerequest"></a>信用保証状_要求 プロセス
+## <a name="process-letter-of-guarantee_request"></a>信用保証状_要求 プロセス
 1. [アクション] ウィンドウで、[管理] をクリックします。
 2. [信用保証状] をクリックします。
 3. アクション ペインで、[信用保証状] をクリックします。
@@ -73,7 +73,7 @@ ms.locfileid: "1566113"
 9. [OK] をクリックします。
 10. ページを閉じます。
 
-## <a name="process-letter-of-guaranteesubmit-to-bank"></a>信用保証状_銀行に送信 プロセス
+## <a name="process-letter-of-guarantee_submit-to-bank"></a>信用保証状_銀行に送信 プロセス
 1. [現金および銀行管理] > [信用保証状] > [信用保証状] の順に移動します。
 2. 一覧で、目的のレコードを見つけ、選択します。
 3. [銀行に送信] をクリックして、ドロップ ダイアログを開きます。
@@ -81,7 +81,7 @@ ms.locfileid: "1566113"
 5. 一覧で、選択された行のリンクをクリックします。
 6. [OK] をクリックします。
 
-## <a name="process-letter-of-guaranteereceive-from-bank"></a>信用保証状_銀行から受信 プロセス
+## <a name="process-letter-of-guarantee_receive-from-bank"></a>信用保証状_銀行から受信 プロセス
 1. [銀行から受信] をクリックして、ドロップ ダイアログを開きます。
 2. [銀行番号] フィールドに値を入力します。
     * 計算された [利益幅] と[経費] フィールドの値を確認します。  
@@ -93,7 +93,7 @@ ms.locfileid: "1566113"
     * 仕訳入力の転記を確認します。  
 7. ページを閉じます。
 
-## <a name="process-letter-of-guaranteegive-to-beneficiary"></a>信用保証状_受益者に渡す プロセス
+## <a name="process-letter-of-guarantee_give-to-beneficiary"></a>信用保証状_受益者に渡す プロセス
 1. [売掛金勘定] > [注文] > [すべての販売注文] の順に移動します。
 2. 一覧で、選択された行のリンクをクリックします。
 3. [アクション] ウィンドウで、[管理] をクリックします。
@@ -108,7 +108,7 @@ ms.locfileid: "1566113"
 12. [アクション] セクションを展開します。
     * 「受益者に渡す」レコードを確認します。  
 
-## <a name="process-letter-of-guaranteeincrease-value"></a>信用保証状_増加額 プロセス
+## <a name="process-letter-of-guarantee_increase-value"></a>信用保証状_増加額 プロセス
 1. [売掛金勘定] > [注文] > [すべての販売注文] の順に移動します。
 2. 一覧で、選択された行のリンクをクリックします。
 3. [アクション] ウィンドウで、[管理] をクリックします。
@@ -128,7 +128,7 @@ ms.locfileid: "1566113"
 16. [明細行] をクリックします。
     * 転記済みの仕訳入力を確認します。  
 
-## <a name="process-letter-of-guaranteeliquidate"></a>信用保証状_清算 プロセス
+## <a name="process-letter-of-guarantee_liquidate"></a>信用保証状_清算 プロセス
 1. [売掛金勘定] > [注文] > [すべての販売注文] の順に移動します。
 2. 一覧で、選択された行のリンクをクリックします。
 3. [アクション] ウィンドウで、[管理] をクリックします。

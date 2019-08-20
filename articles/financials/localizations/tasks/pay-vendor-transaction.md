@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor, DimensionLookup, LedgerTransVoucher
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a166d6c8e6153fc086a23c03a1ffa6ca07e909ad
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 452bf8cc7aa9366bb6015415b903eae1b5bff2e4
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566469"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852619"
 ---
 # <a name="pay-a-vendor-transaction-by-endorsing-a-customer-bill-of-exchange"></a>顧客の受取手形の裏書による仕入先トランザクションの支払
 
@@ -49,7 +49,7 @@ ms.locfileid: "1566469"
 6. 一覧で、選択された行のリンクをクリックします。
     * 例: 「JPMF-000001」というレコードを選択します。  
 7. [説明] フィールドに値を入力します。
-8. [BusinessUnit] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
+8. BusinessUnit フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 9. 一覧で、選択された行のリンクをクリックします。
     * 例: 「003」というレコードを選択します。  
 10. [仕入先に対する裏書] をクリックします。

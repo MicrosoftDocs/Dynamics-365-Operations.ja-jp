@@ -3,7 +3,7 @@ title: 削除済みまたは推奨されない機能
 description: このトピックでは、削除された、または削除される予定の機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624910"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863386"
 ---
 # <a name="removed-or-deprecated-features"></a>削除または削除予定の機能
 
@@ -40,10 +40,32 @@ ms.locfileid: "1624910"
 
 > Finance and Operations 内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations の各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 プラット更新プログラム 28
+## <a name="dynamics-365-for-finance-and-operations-1005-with-platform-update-29"></a>Dynamics 365 for Finance and Operations 10.0.5 プラット更新プログラム 29
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 プラットフォーム更新プログラム 28 は、プレビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](../../fin-and-ops/get-started/public-preview-releases.md) を参照してください。
+> Dynamics 365 for Finance and Operations 10.0.5 プラットフォーム更新プログラム 29 は、プレビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](../../fin-and-ops/get-started/public-preview-releases.md) を参照してください。
+
+### <a name="us-payroll-tax-updates"></a>米国の給与税の更新
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 使用率が低く、戦略的統合によって提供される機能が強化されているため、米国給与の税更新は廃止されます。  |
+| **別の機能で置き換えられているか?**   | はい |
+| **影響を受ける製品領域**         | 給与 |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: 2021 年 10 月 1 日までには、米国の給与顧客への税更新を提供しなくなる予定です。 機能は製品内に残りますが、強化機能によって機能が最新の状態に保たれなくなり、製品の欠陥はその都度評価されます。 詳細については、[Microsoft Dynamics 365 for Finance and Operations で米国給与機能に対して廃止される税の更新](https://aka.ms/financepayrollfaq) を参照してください。 |
+
+
+### <a name="data-management-staging-clean-up"></a>データ管理ステージングのクリーンアップ
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 定期的なクリーンアップのスケジューリングに必要であったコア要件を満たしていません。 |
+| **別の機能で置き換えられているか?**   | はい、ジョブ履歴クリーンアップ機能は、シナリオ全体に対応するよう追加されています。 |
+| **影響を受ける製品領域**         | データ管理 |
+| **配置オプション**              | すべて  |
+| **ステータス**                         | 非推奨: 機能を削除するターゲットのタイムフレームは 2020 年 12 月です。 |
+
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 プラット更新プログラム 28
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>フランス用: XML の FEC 会計データ エクスポート
 
@@ -1235,7 +1257,7 @@ Dynamics AX 2012 R3 では Retail サーバーは、HTTP 通信 (保護されて
 
 ### <a name="virtual-company-accounts"></a>仮想会社
 
-仮想会社の機能は、Dynamics AX ではサポートされていません。 仮想会社の機能で、ユーザーは一連の会社で共有できるテーブルを設定できます。 機能の説明については、「[会社コードと仮想会社コード](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx)」を参照してください。 その機能は、既存の「実在する」会社のグループの仮想会社に割り当てられたコレクションに、テーブルをグループ化することで動作します。 仮想会社内の会社すべてが、関連付けられたテーブル コレクションのテーブルにあるデータにアクセスできるように、クエリが作成されます。
+仮想会社の機能は、Dynamics AX ではサポートされていません。 仮想会社の機能で、ユーザーは一連の会社で共有できるテーブルを設定できます。 機能の説明については、「[会社コードと仮想会社コード](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx)」を参照してください。 その機能は、既存の「実在する」会社のグループの仮想会社に割り当てられたコレクションに、テーブルをグループ化することで動作します。 仮想会社内の会社すべてが、関連付けられたテーブル コレクションのテーブルにあるデータにアクセスできるように、クエリが作成されます。
 
 |   |  | 
 |------------|--------------------|

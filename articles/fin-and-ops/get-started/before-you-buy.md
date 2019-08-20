@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: dc34ca33d2844eaedfa1734fe6d7c7f2ef4a622d
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: f6074906dc77f17d10cc2fb94a4ded7cb8b32f14
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595688"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850954"
 ---
 # <a name="before-you-buy"></a>購入する前に
 
@@ -39,7 +39,7 @@ Dynamics 365 for Finance and Operations は、簡単な電子メールでのサ�
 
 配置オプションとしてオンプレミスを選択する場合、次の考慮事項を考慮する必要があります。
 
-- [クラウド認証](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities) で使用できない規制およびコンプライアンスのニーズ
+- クラウド認証 で使用できない規制およびコンプライアンスのニーズ
 - アプリケーション ライフサイクル管理の Microsoft Dynamics Lifecycle Services (LCS) にアクセスするのに必要な断続的なインターネット接続を持つ、未接続の業務プロセス
 - [オンプレミス配置で現在実装されていない機能](features-not-implemented-on-prem.md)
 - [最小限のインフラストラクチャ要件](system-requirements-on-prem.md#minimum-infrastructure-requirements)

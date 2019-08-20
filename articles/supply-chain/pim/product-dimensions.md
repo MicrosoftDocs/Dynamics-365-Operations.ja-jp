@@ -3,7 +3,7 @@ title: 製品分析コード
 description: 4 つの製品分析コードがあります - 色、構成、サイズ、およびスタイルです。 分析コード グループで製品分析コードを組み合わせて、製品マスターに分析コード グループを割り当てます。 製品分析コードの組み合わせは、製品バリアントの定義方法を決定します。
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ccb9d47bf6f081dbcc9590bddd4516cf7385ec23
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3391679696c0e1dd84840821480ccbfb544829a6
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563577"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863039"
 ---
 # <a name="product-dimensions"></a>製品分析コード
 
@@ -35,8 +35,8 @@ ms.locfileid: "1563577"
 4 つの製品分析コードがあります - 色、構成、サイズ、およびスタイルです。 分析コード グループで製品分析コードを組み合わせて、製品マスターに分析コード グループを割り当てます。 製品分析コードの組み合わせは、製品バリアントの定義方法を決定します。
 
 製品分析コードは、製品バリアントを識別するために役立つ特性です。 製品バリアントを定義するために製品分析コードの組み合わせを使用できます。 製品バリアントを作成するには、製品マスターに対して少なくとも 1 つ製品分析コードを定義する必要があります。
-製品バリアント
-----------------
+
+## <a name="product-variants"></a>製品バリアント
 
 製品バリアントは品目とも呼ばれます。 品目は、有形製品のことで、サービスとは異なるものです。 サービス タイプの製品マスターを定義することもできます。 [Service] タイプを使用して、サービスを含む製品バリアントを指定できます。 たとえば、上級顧問や若手のコンサルタントによって実行される、コンサルタント作業および作業の製品バリアントに、製品マスターを指定できます。
 

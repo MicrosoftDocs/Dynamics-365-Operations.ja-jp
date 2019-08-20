@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd138fb5fea4098a862fbecba5e8ec226ed6afa9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551518"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850306"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン
 
@@ -64,7 +64,7 @@ ms.locfileid: "1551518"
     * 保存アクションは、構成の変更を保存するだけでなく、添付されている Word テンプレートも更新します。 設計された形式の構造は、'報告' という名前の新しいカスタム XML 部分として、関連付けられている Word 文書にポートされます。 関連付けられている Word テンプレートには、ER 出力として生成するドキュメントのレイアウトを含むだけでなく、実行時に ER がこのテンプレートに実装するデータの構造も含まれます。  
 2. [添付ファイル] クリックします。
     * ここで、カスタム XML 部分 '報告' の要素を Word ドキュメント パーツにバインドする必要があります。  
-    * カスタム XML パーツの要素でバインドされたコンテンツ コントロールを含む形式としてデザイン可能な Word 文書に慣れている場合は、次のサブタスクのすべてのステップを再生して、そのようなドキュメントを作成します。 詳細については、こちらのリンク (https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US) を参照してください。 そうでない場合は、次のサブタスクのすべてのステップをスキップします。  
+    * カスタム XML パーツの要素でバインドされたコンテンツ コントロールを含む形式としてデザイン可能な Word 文書に慣れている場合は、次のサブタスクのすべてのステップを再生して、そのようなドキュメントを作成します。 詳細については、こちらのリンク (https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US) を参照してください。 そうでない場合は、次のサブタスクのすべてのステップをスキップします。  
 
 ## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a>データ バインドを行うカスタム XML 部分と共に Word を取得します。
     * Word でこのドキュメントを開き、以下の操作を行います: - [Word 開発者] タブを開きます (有効になっていない場合は、リボンをカスタマイズします)。  - XML マッピング ウィンドウを選択します。  - ルックアップで、'報告' カスタム XML 部分を選択します。  - 選択したカスタム XML 部分の要素と Word ドキュメントのコンテンツ コントロールとのマッピングを行います。  - ローカル ドライブに更新された Word ドキュメントを保存します。  

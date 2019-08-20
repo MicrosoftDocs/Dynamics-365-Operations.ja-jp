@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: fd29dc5f932c9cd274a42923e1ff659dd5d8e9d6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8836e5b43498c792d214b13b2196645c4ee3ffba
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567309"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863803"
 ---
 # <a name="consolidate-online"></a>オンラインで連結
 
@@ -69,7 +69,7 @@ ms.locfileid: "1567309"
 
 ![法人タブ](./media/legal-entities-cons.png "法人タブ")
 
-![自動トランザクションの勘定ページ](./media/accounts%20for%20automatic%20(cons).png "自動トランザクションの勘定ページ")
+![自動トランザクションの勘定ページ](./media/accounts-for-automatic-cons.png "自動トランザクションの勘定ページ")
 
 ## <a name="elimination"></a>消去
 **消去**タブには、消去を処理するための 3 つのオプションがあります。

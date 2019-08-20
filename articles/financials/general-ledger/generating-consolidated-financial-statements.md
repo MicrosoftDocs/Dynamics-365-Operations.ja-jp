@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557734"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863703"
 ---
 # <a name="generate-consolidated-financial-statements"></a>連結財務諸表の生成
 
@@ -49,11 +49,11 @@ ms.locfileid: "1557734"
 
 また、必要な数のレベルを含む複数レベルのレポート ツリーを作成することもできます。 次の図は、世界中の地域ごとにロール アップのある複数レベル レポート ツリー定義を示します。
 
-![地域ごとのロールアップによる複数レベルのレポート ツリー](./media/multilevel-reporting-tree-definition-roll-ups%20-worldwide-region.png "地域ごとのロールアップによる複数レベルのレポート ツリー")
+![地域ごとのロールアップによる複数レベルのレポート ツリー](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "地域ごとのロールアップによる複数レベルのレポート ツリー")
 
 次の図は、関数ごとのロール アップのある複数レベルのレポート ツリー定義を示します。
 
-![関数ごとのロールアップによる複数レベルのレポート ツリー](./media/multilevel-reporting-tree-definition-roll-ups%20-by-function.png "関数ごとのロールアップによる複数レベルのレポート ツリー")
+![関数ごとのロールアップによる複数レベルのレポート ツリー](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "関数ごとのロールアップによる複数レベルのレポート ツリー")
 
 ### <a name="viewing-companies-side-by-side"></a>会社を並べて表示
 多くの顧客は、会社が並べて表示されているレポートと、列に連結合計が表示されているレポートを使用します。 この形式は、レポート ツリーを作成した後で簡単に実現します。 連結財務諸表上で、会社を並べて表示する大まかな手順を示します。
@@ -98,7 +98,7 @@ ms.locfileid: "1557734"
 > [!NOTE]
 > この所有権割合は、会社レベルだけでなく、すべてのレポート ユニットにも適用できます。 
 
-![レポート ツリー定義の割合を使用](./media/Using-reporting%20tree-definition-percentage.png "レポート ツリー定義の割合を使用")
+![レポート ツリー定義の割合を使用](./media/Using-reporting-tree-definition-percentage.png "レポート ツリー定義の割合を使用")
 
 レポートが生成されると、Contoso ドイツのレポートには売上金額の 100% が表示され、金額の 80% が販売の連結レベルに割り当てられロール アップされます。
 

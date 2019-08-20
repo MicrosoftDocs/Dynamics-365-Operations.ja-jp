@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81994343acf5d99e9cfc1f6253c65aa7260822d7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1beab38f04e153e81a365c813d9a1af347a73b80
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562357"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742312"
 ---
 # <a name="monitor-service-activities"></a>サービス活動の監視 
 
@@ -55,7 +55,7 @@ ms.locfileid: "1562357"
 
 [サービス注文のステータスを表示](view-the-status-of-service-orders.md)
 
-[派遣表 (フォーム)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))
+[派遣表 (フォーム)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
   
 
