@@ -10,47 +10,47 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, SysDataAreaSelectLookup, LedgerTransVoucher, LedgerTransRelatedVouchers
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fe2590b43a4399c3935906c8ab67a91883bbf094
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: eed4ab9bac4aa40e20709927053613bbffe1be71
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543540"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834713"
 ---
-# <a name="view-related-intercompany-voucher-from-journal"></a><span data-ttu-id="daec0-103">仕訳帳からの関連する会社間伝票の表示</span><span class="sxs-lookup"><span data-stu-id="daec0-103">View related intercompany voucher from journal</span></span>
+# <a name="view-related-intercompany-voucher-from-journal"></a><span data-ttu-id="3b676-103">仕訳帳からの関連する会社間伝票の表示</span><span class="sxs-lookup"><span data-stu-id="3b676-103">View related intercompany voucher from journal</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="daec0-104">一般仕訳帳から会社間トランザクションを転記する時、関連する伝票ウィンドウは相殺会社からの伝票を表示します。</span><span class="sxs-lookup"><span data-stu-id="daec0-104">The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.</span></span>
+<span data-ttu-id="3b676-104">一般仕訳帳から会社間トランザクションを転記する時、関連する伝票ウィンドウは相殺会社からの伝票を表示します。</span><span class="sxs-lookup"><span data-stu-id="3b676-104">The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.</span></span>
 
 
-## <a name="post-an-intercompany-journal"></a><span data-ttu-id="daec0-105">会社間仕訳帳の転記</span><span class="sxs-lookup"><span data-stu-id="daec0-105">Post an intercompany journal</span></span>
-1. <span data-ttu-id="daec0-106">[一般仕訳帳] へ移動します。</span><span class="sxs-lookup"><span data-stu-id="daec0-106">Go to General journals.</span></span>
-2. <span data-ttu-id="daec0-107">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="daec0-107">Click New.</span></span>
-3. <span data-ttu-id="daec0-108">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="daec0-108">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="daec0-109">[名前] フィールドで、会社間の仕訳帳名を入力するか、または選択します。</span><span class="sxs-lookup"><span data-stu-id="daec0-109">In the Name field, enter or select the intercompany journal name.</span></span>
-5. <span data-ttu-id="daec0-110">[行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="daec0-110">Click Lines.</span></span>
-6. <span data-ttu-id="daec0-111">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="daec0-111">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="daec0-112">[勘定] フィールドで、任意の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="daec0-112">In the Account field, specify the desired values.</span></span>
-8. <span data-ttu-id="daec0-113">[説明] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="daec0-113">In the Description field, enter or select a value.</span></span>
-9. <span data-ttu-id="daec0-114">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="daec0-114">In the Description field, type a value.</span></span>
-10. <span data-ttu-id="daec0-115">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="daec0-115">Close the page.</span></span>
-11. <span data-ttu-id="daec0-116">[借方] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="daec0-116">In the Debit field, enter a number.</span></span>
-12. <span data-ttu-id="daec0-117">[相殺会社] フィールドで、相殺会社を入力、または選択します。</span><span class="sxs-lookup"><span data-stu-id="daec0-117">In the Offset company field, type or select the offset company.</span></span>
-13. <span data-ttu-id="daec0-118">[相殺会社] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="daec0-118">In the Offset company field, enter or select a value.</span></span>
-14. <span data-ttu-id="daec0-119">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="daec0-119">Close the page.</span></span>
-15. <span data-ttu-id="daec0-120">[相殺勘定] フィールドで、任意の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="daec0-120">In the Offset account field, specify the desired values.</span></span>
-16. <span data-ttu-id="daec0-121">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="daec0-121">Click Post.</span></span>
+## <a name="post-an-intercompany-journal"></a><span data-ttu-id="3b676-105">会社間仕訳帳の転記</span><span class="sxs-lookup"><span data-stu-id="3b676-105">Post an intercompany journal</span></span>
+1. <span data-ttu-id="3b676-106">[一般仕訳帳] へ移動します。</span><span class="sxs-lookup"><span data-stu-id="3b676-106">Go to General journals.</span></span>
+2. <span data-ttu-id="3b676-107">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3b676-107">Click New.</span></span>
+3. <span data-ttu-id="3b676-108">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="3b676-108">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="3b676-109">[名前] フィールドで、会社間の仕訳帳名を入力するか、または選択します。</span><span class="sxs-lookup"><span data-stu-id="3b676-109">In the Name field, enter or select the intercompany journal name.</span></span>
+5. <span data-ttu-id="3b676-110">[行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3b676-110">Click Lines.</span></span>
+6. <span data-ttu-id="3b676-111">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="3b676-111">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="3b676-112">[勘定] フィールドで、任意の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="3b676-112">In the Account field, specify the desired values.</span></span>
+8. <span data-ttu-id="3b676-113">[説明] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="3b676-113">In the Description field, enter or select a value.</span></span>
+9. <span data-ttu-id="3b676-114">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="3b676-114">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="3b676-115">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="3b676-115">Close the page.</span></span>
+11. <span data-ttu-id="3b676-116">[借方] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="3b676-116">In the Debit field, enter a number.</span></span>
+12. <span data-ttu-id="3b676-117">[相殺会社] フィールドで、相殺会社を入力、または選択します。</span><span class="sxs-lookup"><span data-stu-id="3b676-117">In the Offset company field, type or select the offset company.</span></span>
+13. <span data-ttu-id="3b676-118">[相殺会社] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="3b676-118">In the Offset company field, enter or select a value.</span></span>
+14. <span data-ttu-id="3b676-119">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="3b676-119">Close the page.</span></span>
+15. <span data-ttu-id="3b676-120">[相殺勘定] フィールドで、任意の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="3b676-120">In the Offset account field, specify the desired values.</span></span>
+16. <span data-ttu-id="3b676-121">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3b676-121">Click Post.</span></span>
 
-## <a name="view-related-intercompany-voucher"></a><span data-ttu-id="daec0-122">関連する会社間伝票の表示</span><span class="sxs-lookup"><span data-stu-id="daec0-122">View related intercompany voucher</span></span>
-1. <span data-ttu-id="daec0-123">[伝票] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="daec0-123">Click Voucher.</span></span>
-2. <span data-ttu-id="daec0-124">[関連する伝票] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="daec0-124">Click Related vouchers.</span></span>
-3. <span data-ttu-id="daec0-125">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="daec0-125">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="daec0-126">[伝票] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="daec0-126">Click Voucher.</span></span>
+## <a name="view-related-intercompany-voucher"></a><span data-ttu-id="3b676-122">関連する会社間伝票の表示</span><span class="sxs-lookup"><span data-stu-id="3b676-122">View related intercompany voucher</span></span>
+1. <span data-ttu-id="3b676-123">[伝票] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3b676-123">Click Voucher.</span></span>
+2. <span data-ttu-id="3b676-124">[関連する伝票] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3b676-124">Click Related vouchers.</span></span>
+3. <span data-ttu-id="3b676-125">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="3b676-125">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="3b676-126">[伝票] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3b676-126">Click Voucher.</span></span>
 

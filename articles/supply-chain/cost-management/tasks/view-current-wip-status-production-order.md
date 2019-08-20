@@ -10,31 +10,31 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, ProdTable, CostStatement
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b35f8927082c70b53702c7ac7c866c05cfc1fde
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 026a847ce63c96865dcb8c094fec205396f810ba
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563069"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836443"
 ---
-# <a name="view-current-wip-status-on-a-production-order"></a><span data-ttu-id="10de6-103">製造オーダーの現在の仕掛品ステータスの表示</span><span class="sxs-lookup"><span data-stu-id="10de6-103">View current WIP status on a production order</span></span>
+# <a name="view-current-wip-status-on-a-production-order"></a><span data-ttu-id="f2cfd-103">製造オーダーの現在の仕掛品ステータスの表示</span><span class="sxs-lookup"><span data-stu-id="f2cfd-103">View current WIP status on a production order</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="10de6-104">この手順では、製造オーダーの仕掛報告書の表示方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="10de6-104">This procedure shows how to view WIP statement on a production order.</span></span> <span data-ttu-id="10de6-105">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="10de6-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="10de6-106">この手順は、原価の管理者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="10de6-106">This procedure is intended for the cost controller.</span></span>
+<span data-ttu-id="f2cfd-104">この手順では、製造オーダーの仕掛報告書の表示方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="f2cfd-104">This procedure shows how to view WIP statement on a production order.</span></span> <span data-ttu-id="f2cfd-105">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="f2cfd-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="f2cfd-106">この手順は、原価の管理者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="f2cfd-106">This procedure is intended for the cost controller.</span></span>
 
-1. <span data-ttu-id="10de6-107">[原価管理] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10de6-107">Click Cost administration.</span></span>
-2. <span data-ttu-id="10de6-108">[製造オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10de6-108">Click Production orders.</span></span>
-3. <span data-ttu-id="10de6-109">[クイック フィルター] を使用して、[生産] フィールドで「p000153」という値を指定してフィルターを実行します。</span><span class="sxs-lookup"><span data-stu-id="10de6-109">Use the Quick Filter to filter on the Production field with a value of 'p000153'.</span></span>
-4. <span data-ttu-id="10de6-110">[アクション] ペインで [原価の管理] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10de6-110">On the Action Pane, click Manage costs.</span></span>
-5. <span data-ttu-id="10de6-111">[生産仕掛報告書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="10de6-111">Click Production WIP statement.</span></span>
-6. <span data-ttu-id="10de6-112">[開始日] フィールドで、日付を「2012 年 12 月 1 日」に設定します。</span><span class="sxs-lookup"><span data-stu-id="10de6-112">In the From date field, set the date to '2012-12-01'.</span></span>
-7. <span data-ttu-id="10de6-113">[終了日] フィールドで、日付を「2012 年 12 月 31 日」に設定します。</span><span class="sxs-lookup"><span data-stu-id="10de6-113">In the To date field, set the date to '2012-12-31'.</span></span>
+1. <span data-ttu-id="f2cfd-107">[原価管理] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2cfd-107">Click Cost administration.</span></span>
+2. <span data-ttu-id="f2cfd-108">[製造オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2cfd-108">Click Production orders.</span></span>
+3. <span data-ttu-id="f2cfd-109">[クイック フィルター] を使用して、[生産] フィールドで「p000153」という値を指定してフィルターを実行します。</span><span class="sxs-lookup"><span data-stu-id="f2cfd-109">Use the Quick Filter to filter on the Production field with a value of 'p000153'.</span></span>
+4. <span data-ttu-id="f2cfd-110">[アクション] ペインで [原価の管理] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2cfd-110">On the Action Pane, click Manage costs.</span></span>
+5. <span data-ttu-id="f2cfd-111">[生産仕掛報告書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2cfd-111">Click Production WIP statement.</span></span>
+6. <span data-ttu-id="f2cfd-112">[開始日] フィールドで、日付を「2012 年 12 月 1 日」に設定します。</span><span class="sxs-lookup"><span data-stu-id="f2cfd-112">In the From date field, set the date to '2012-12-01'.</span></span>
+7. <span data-ttu-id="f2cfd-113">[終了日] フィールドで、日付を「2012 年 12 月 31 日」に設定します。</span><span class="sxs-lookup"><span data-stu-id="f2cfd-113">In the To date field, set the date to '2012-12-31'.</span></span>
 

@@ -10,32 +10,32 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendSearchCriterion, VendSearchAddCategory
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86fced38d0ac73e67d04a59c5f39f4ec9b192daa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dfa5bfa2eba39b981c5dc1d029f4847651c8fc6f
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571917"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844036"
 ---
-# <a name="search-for-vendors"></a><span data-ttu-id="8f331-103">仕入先の検索</span><span class="sxs-lookup"><span data-stu-id="8f331-103">Search for vendors</span></span>
+# <a name="search-for-vendors"></a><span data-ttu-id="41f46-103">仕入先の検索</span><span class="sxs-lookup"><span data-stu-id="41f46-103">Search for vendors</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="8f331-104">特定の基準に基づく仕入先の検索方法を習得します。</span><span class="sxs-lookup"><span data-stu-id="8f331-104">Learn how to search for vendors based on specific criteria.</span></span> <span data-ttu-id="8f331-105">この例では、特定の調達カテゴリに対して承認されていて、特定の国に基本住所をもっている仕入先の検索方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8f331-105">This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country.</span></span> <span data-ttu-id="8f331-106">この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="8f331-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="8f331-107">通常、このタスクを実行するのは、調達担当者です。</span><span class="sxs-lookup"><span data-stu-id="8f331-107">This task would usually be carried out by a procurement professional.</span></span>
+<span data-ttu-id="41f46-104">特定の基準に基づく仕入先の検索方法を習得します。</span><span class="sxs-lookup"><span data-stu-id="41f46-104">Learn how to search for vendors based on specific criteria.</span></span> <span data-ttu-id="41f46-105">この例では、特定の調達カテゴリに対して承認されていて、特定の国に基本住所をもっている仕入先の検索方法を示します。</span><span class="sxs-lookup"><span data-stu-id="41f46-105">This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country.</span></span> <span data-ttu-id="41f46-106">この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="41f46-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="41f46-107">通常、このタスクを実行するのは、調達担当者です。</span><span class="sxs-lookup"><span data-stu-id="41f46-107">This task would usually be carried out by a procurement professional.</span></span>
 
-1. <span data-ttu-id="8f331-108">[調達] > [仕入先] > [仕入先の検索]の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="8f331-108">Go to Procurement and sourcing > Vendors > Vendor search.</span></span>
-2. <span data-ttu-id="8f331-109">[調達カテゴリの選択] ページを開くには、プラス アイコンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="8f331-109">Click on the Plus icon to open the Procurement category selection page.</span></span>  
-3. <span data-ttu-id="8f331-110">ツリーで、「CORP PROCUREMENT CATEGORIES\OFFICE MACHINES」を選択します。</span><span class="sxs-lookup"><span data-stu-id="8f331-110">In the tree, select 'CORP PROCUREMENT CATEGORIES\OFFICE MACHINES'.</span></span>
-    * <span data-ttu-id="8f331-111">タスク ガイドのこの手順を実行している場合は、正しいノードを選択する前に、[ロック解除] ボタンのクリックが必要となる場合があります。</span><span class="sxs-lookup"><span data-stu-id="8f331-111">If you're running this procedure as a task guide, you may have to click the Unlock button before you can select the correct node.</span></span> <span data-ttu-id="8f331-112">USMF を使用していない場合は、カテゴリから 1 つを選択します。</span><span class="sxs-lookup"><span data-stu-id="8f331-112">If you're not using USMF, select one of the categories that you have.</span></span>  
-4. <span data-ttu-id="8f331-113">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8f331-113">Click Add.</span></span>
-    * <span data-ttu-id="8f331-114">複数のカテゴリをここで選択することができます。</span><span class="sxs-lookup"><span data-stu-id="8f331-114">It’s possible to select more than one category here.</span></span> <span data-ttu-id="8f331-115">これを行う場合は、検索では、少なくとも 1 つのカテゴリに対して承認されている仕入先をすべて探します。</span><span class="sxs-lookup"><span data-stu-id="8f331-115">If you do so, the search will find all the vendors that are approved for at least one of the categories.</span></span>  
-5. <span data-ttu-id="8f331-116">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8f331-116">Click OK.</span></span>
-6. <span data-ttu-id="8f331-117">[国/地域] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="8f331-117">In the Country/region field, type a value.</span></span>
-7. <span data-ttu-id="8f331-118">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8f331-118">Click OK.</span></span>
+1. <span data-ttu-id="41f46-108">[調達] > [仕入先] > [仕入先の検索]の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="41f46-108">Go to Procurement and sourcing > Vendors > Vendor search.</span></span>
+2. <span data-ttu-id="41f46-109">[調達カテゴリの選択] ページを開くには、プラス アイコンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f46-109">Click on the Plus icon to open the Procurement category selection page.</span></span>  
+3. <span data-ttu-id="41f46-110">ツリーで、「CORP PROCUREMENT CATEGORIES\OFFICE MACHINES」を選択します。</span><span class="sxs-lookup"><span data-stu-id="41f46-110">In the tree, select 'CORP PROCUREMENT CATEGORIES\OFFICE MACHINES'.</span></span>
+    * <span data-ttu-id="41f46-111">タスク ガイドのこの手順を実行している場合は、正しいノードを選択する前に、[ロック解除] ボタンのクリックが必要となる場合があります。</span><span class="sxs-lookup"><span data-stu-id="41f46-111">If you're running this procedure as a task guide, you may have to click the Unlock button before you can select the correct node.</span></span> <span data-ttu-id="41f46-112">USMF を使用していない場合は、カテゴリから 1 つを選択します。</span><span class="sxs-lookup"><span data-stu-id="41f46-112">If you're not using USMF, select one of the categories that you have.</span></span>  
+4. <span data-ttu-id="41f46-113">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f46-113">Click Add.</span></span>
+    * <span data-ttu-id="41f46-114">複数のカテゴリをここで選択することができます。</span><span class="sxs-lookup"><span data-stu-id="41f46-114">It’s possible to select more than one category here.</span></span> <span data-ttu-id="41f46-115">これを行う場合は、検索では、少なくとも 1 つのカテゴリに対して承認されている仕入先をすべて探します。</span><span class="sxs-lookup"><span data-stu-id="41f46-115">If you do so, the search will find all the vendors that are approved for at least one of the categories.</span></span>  
+5. <span data-ttu-id="41f46-116">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f46-116">Click OK.</span></span>
+6. <span data-ttu-id="41f46-117">[国/地域] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="41f46-117">In the Country/region field, type a value.</span></span>
+7. <span data-ttu-id="41f46-118">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f46-118">Click OK.</span></span>
 

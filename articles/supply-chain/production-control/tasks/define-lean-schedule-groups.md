@@ -10,49 +10,49 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanScheduleGroup, GanttColorTableLookup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 787694b094f343445cca784d035554a8bfa25f5a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e0cb17c68abbc4979a65e33c50450be575df3d93
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549820"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836267"
 ---
-# <a name="define-lean-schedule-groups"></a><span data-ttu-id="c3323-103">リーン スケジュール グループの定義</span><span class="sxs-lookup"><span data-stu-id="c3323-103">Define lean schedule groups</span></span>
+# <a name="define-lean-schedule-groups"></a><span data-ttu-id="179e1-103">リーン スケジュール グループの定義</span><span class="sxs-lookup"><span data-stu-id="179e1-103">Define lean schedule groups</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="c3323-104">リーン スケジュール グループは、かんばんスケジューリングの製品をグループ化して区別するために定義されます。</span><span class="sxs-lookup"><span data-stu-id="c3323-104">Lean schedule groups are defined to group and distinguish products in kanban scheduling.</span></span> <span data-ttu-id="c3323-105">グループ化は、会社ごとの一般的な関連として、または作業セル特定としてできます。</span><span class="sxs-lookup"><span data-stu-id="c3323-105">The grouping can be done as generic association per company or specific to a work cell.</span></span> <span data-ttu-id="c3323-106">各グループには、かんばんスケジューリング リストページでの視覚的表示のため、割り当てられた色コードがあります。</span><span class="sxs-lookup"><span data-stu-id="c3323-106">Each group has a color code assigned for visual indication in the kanban scheduling listpage.</span></span> <span data-ttu-id="c3323-107">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="c3323-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="179e1-104">リーン スケジュール グループは、かんばんスケジューリングの製品をグループ化して区別するために定義されます。</span><span class="sxs-lookup"><span data-stu-id="179e1-104">Lean schedule groups are defined to group and distinguish products in kanban scheduling.</span></span> <span data-ttu-id="179e1-105">グループ化は、会社ごとの一般的な関連として、または作業セル特定としてできます。</span><span class="sxs-lookup"><span data-stu-id="179e1-105">The grouping can be done as generic association per company or specific to a work cell.</span></span> <span data-ttu-id="179e1-106">各グループには、かんばんスケジューリング リストページでの視覚的表示のため、割り当てられた色コードがあります。</span><span class="sxs-lookup"><span data-stu-id="179e1-106">Each group has a color code assigned for visual indication in the kanban scheduling listpage.</span></span> <span data-ttu-id="179e1-107">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="179e1-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="define-lean-scheduling-group"></a><span data-ttu-id="c3323-108">リーン スケジューリング グループの定義</span><span class="sxs-lookup"><span data-stu-id="c3323-108">Define lean scheduling group</span></span>
-1. <span data-ttu-id="c3323-109">[製品情報管理] > [リーン生産] > [リーン スケジュール グループ] に移動します。</span><span class="sxs-lookup"><span data-stu-id="c3323-109">Go to Product information management > Lean manufacturing > Lean schedule groups.</span></span>
-2. <span data-ttu-id="c3323-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c3323-110">Click New.</span></span>
-3. <span data-ttu-id="c3323-111">[スケジュール グループ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="c3323-111">In the Schedule group field, type a value.</span></span>
-    * <span data-ttu-id="c3323-112">スケジュール グループは、グローバル グループとして、または作業セルを固有に定義できます。</span><span class="sxs-lookup"><span data-stu-id="c3323-112">A schedule group can be defined as global group or specific to a work cell.</span></span> <span data-ttu-id="c3323-113">この単純な例では、グローバル グループを定義し、作業セルは空白になります。</span><span class="sxs-lookup"><span data-stu-id="c3323-113">In this simple example, we define a global group, and the work cell is kept empty.</span></span> <span data-ttu-id="c3323-114">このグループの設定は、特定のスケジュール グループがないすべての作業セルに適用されます。</span><span class="sxs-lookup"><span data-stu-id="c3323-114">The settings of this group apply to all work cells that do not have specific schedule groups.</span></span>  
-4. <span data-ttu-id="c3323-115">色セレクションから色を選択します。</span><span class="sxs-lookup"><span data-stu-id="c3323-115">Select a color from the color selection.</span></span>
-    * <span data-ttu-id="c3323-116">かんばんスケジュールのリスト ページまたはかんばんプロセス ボードのジョブを強調表示するため、色が使用されます。</span><span class="sxs-lookup"><span data-stu-id="c3323-116">The colors are used to highlight the jobs on the kanban schedule list page or the kanban process board.</span></span>  
-5. <span data-ttu-id="c3323-117">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="c3323-117">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="c3323-118">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="c3323-118">In the list, click the link in the selected row.</span></span>
+## <a name="define-lean-scheduling-group"></a><span data-ttu-id="179e1-108">リーン スケジューリング グループの定義</span><span class="sxs-lookup"><span data-stu-id="179e1-108">Define lean scheduling group</span></span>
+1. <span data-ttu-id="179e1-109">[製品情報管理] > [リーン生産] > [リーン スケジュール グループ] に移動します。</span><span class="sxs-lookup"><span data-stu-id="179e1-109">Go to Product information management > Lean manufacturing > Lean schedule groups.</span></span>
+2. <span data-ttu-id="179e1-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="179e1-110">Click New.</span></span>
+3. <span data-ttu-id="179e1-111">[スケジュール グループ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="179e1-111">In the Schedule group field, type a value.</span></span>
+    * <span data-ttu-id="179e1-112">スケジュール グループは、グローバル グループとして、または作業セルを固有に定義できます。</span><span class="sxs-lookup"><span data-stu-id="179e1-112">A schedule group can be defined as global group or specific to a work cell.</span></span> <span data-ttu-id="179e1-113">この単純な例では、グローバル グループを定義し、作業セルは空白になります。</span><span class="sxs-lookup"><span data-stu-id="179e1-113">In this simple example, we define a global group, and the work cell is kept empty.</span></span> <span data-ttu-id="179e1-114">このグループの設定は、特定のスケジュール グループがないすべての作業セルに適用されます。</span><span class="sxs-lookup"><span data-stu-id="179e1-114">The settings of this group apply to all work cells that do not have specific schedule groups.</span></span>  
+4. <span data-ttu-id="179e1-115">色セレクションから色を選択します。</span><span class="sxs-lookup"><span data-stu-id="179e1-115">Select a color from the color selection.</span></span>
+    * <span data-ttu-id="179e1-116">かんばんスケジュールのリスト ページまたはかんばんプロセス ボードのジョブを強調表示するため、色が使用されます。</span><span class="sxs-lookup"><span data-stu-id="179e1-116">The colors are used to highlight the jobs on the kanban schedule list page or the kanban process board.</span></span>  
+5. <span data-ttu-id="179e1-117">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="179e1-117">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="179e1-118">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="179e1-118">In the list, click the link in the selected row.</span></span>
 
-## <a name="associate-product"></a><span data-ttu-id="c3323-119">製品の関連付け</span><span class="sxs-lookup"><span data-stu-id="c3323-119">Associate product</span></span>
-1. <span data-ttu-id="c3323-120">特定の製品を関連付けます。</span><span class="sxs-lookup"><span data-stu-id="c3323-120">Associate a specific product</span></span>
-    * <span data-ttu-id="c3323-121">製品をリーン スケジュール グループに関連付けるには、特定の製品として(商品関係タイプ = 品目) または、品目配賦キーの一部として(商品関係タイプ = グループ) のいずれか 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="c3323-121">There are two ways to associate products to lean schedule groups, either as a specific product (Item relation type = Item) or as part of an item allocation key (item relation type = group).</span></span>    
-2. <span data-ttu-id="c3323-122">[商品関係タイプ] フィールドで、品目を選択します。</span><span class="sxs-lookup"><span data-stu-id="c3323-122">In the Item relation type field, select Item</span></span>
-3. <span data-ttu-id="c3323-123">[品目番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="c3323-123">In the Item number field, type a value.</span></span>
-4. <span data-ttu-id="c3323-124">[スループットの比率] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="c3323-124">In the Throughput ratio field, enter a number.</span></span>
-    * <span data-ttu-id="c3323-125">既定のスループットの比率は 1 です。つまり、関連する製品は、生産フローのプロセス活動で指定されたのと同じ能力を消費することを意味します。</span><span class="sxs-lookup"><span data-stu-id="c3323-125">The default Throughput ratio is 1, which means that the related products consume exactly the capacity specified in the process activites of the production flows.</span></span> <span data-ttu-id="c3323-126">スループットの比率 > 1 はより高いリソース消費を定義し、スループットの比率 < 1 はより低いリソース消費を定義します。</span><span class="sxs-lookup"><span data-stu-id="c3323-126">Throughput ratio > 1 defines a higher resource consumption, Throughput ratio < 1 defines a lower resource consumption.</span></span> <span data-ttu-id="c3323-127">この比率は原価計算とかんばん作業消費の計算に使用されます。</span><span class="sxs-lookup"><span data-stu-id="c3323-127">The ratio is used in the cost calculation and in the calculation of the kanban job consumption.</span></span>  
+## <a name="associate-product"></a><span data-ttu-id="179e1-119">製品の関連付け</span><span class="sxs-lookup"><span data-stu-id="179e1-119">Associate product</span></span>
+1. <span data-ttu-id="179e1-120">特定の製品を関連付けます。</span><span class="sxs-lookup"><span data-stu-id="179e1-120">Associate a specific product</span></span>
+    * <span data-ttu-id="179e1-121">製品をリーン スケジュール グループに関連付けるには、特定の製品として(商品関係タイプ = 品目) または、品目配賦キーの一部として(商品関係タイプ = グループ) のいずれか 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="179e1-121">There are two ways to associate products to lean schedule groups, either as a specific product (Item relation type = Item) or as part of an item allocation key (item relation type = group).</span></span>    
+2. <span data-ttu-id="179e1-122">[商品関係タイプ] フィールドで、品目を選択します。</span><span class="sxs-lookup"><span data-stu-id="179e1-122">In the Item relation type field, select Item</span></span>
+3. <span data-ttu-id="179e1-123">[品目番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="179e1-123">In the Item number field, type a value.</span></span>
+4. <span data-ttu-id="179e1-124">[スループットの比率] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="179e1-124">In the Throughput ratio field, enter a number.</span></span>
+    * <span data-ttu-id="179e1-125">既定のスループットの比率は 1 です。つまり、関連する製品は、生産フローのプロセス活動で指定されたのと同じ能力を消費することを意味します。</span><span class="sxs-lookup"><span data-stu-id="179e1-125">The default Throughput ratio is 1, which means that the related products consume exactly the capacity specified in the process activites of the production flows.</span></span> <span data-ttu-id="179e1-126">スループットの比率 > 1 はより高いリソース消費を定義し、スループットの比率 < 1 はより低いリソース消費を定義します。</span><span class="sxs-lookup"><span data-stu-id="179e1-126">Throughput ratio > 1 defines a higher resource consumption, Throughput ratio < 1 defines a lower resource consumption.</span></span> <span data-ttu-id="179e1-127">この比率は原価計算とかんばん作業消費の計算に使用されます。</span><span class="sxs-lookup"><span data-stu-id="179e1-127">The ratio is used in the cost calculation and in the calculation of the kanban job consumption.</span></span>  
 
-## <a name="associate-item-allocation-key"></a><span data-ttu-id="c3323-128">品目配賦キーの関連付け</span><span class="sxs-lookup"><span data-stu-id="c3323-128">Associate item allocation key</span></span>
-1. <span data-ttu-id="c3323-129">品目配賦キーの関連付け</span><span class="sxs-lookup"><span data-stu-id="c3323-129">Associate an item allocation key</span></span>
-    * <span data-ttu-id="c3323-130">[品目関係タイプ] グループを使用して、品目配賦キーにアソシエーションを追加します。</span><span class="sxs-lookup"><span data-stu-id="c3323-130">Add an association to an item allocation key by using the Item relation type Group.</span></span>   <span data-ttu-id="c3323-131">このプロセスには、データで定義された予測の品目配賦キーが必要なことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="c3323-131">Note that for this process, you need a forecast item alllocation key defined in your data.</span></span>  
-2. <span data-ttu-id="c3323-132">[商品関係タイプ] フィールドで、グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="c3323-132">In the Item relation type field, select Group</span></span>
-3. <span data-ttu-id="c3323-133">[品目配賦キー] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="c3323-133">In the Item allocation key field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="c3323-134">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="c3323-134">In the list, click the link in the selected row.</span></span>
+## <a name="associate-item-allocation-key"></a><span data-ttu-id="179e1-128">品目配賦キーの関連付け</span><span class="sxs-lookup"><span data-stu-id="179e1-128">Associate item allocation key</span></span>
+1. <span data-ttu-id="179e1-129">品目配賦キーの関連付け</span><span class="sxs-lookup"><span data-stu-id="179e1-129">Associate an item allocation key</span></span>
+    * <span data-ttu-id="179e1-130">[品目関係タイプ] グループを使用して、品目配賦キーにアソシエーションを追加します。</span><span class="sxs-lookup"><span data-stu-id="179e1-130">Add an association to an item allocation key by using the Item relation type Group.</span></span>   <span data-ttu-id="179e1-131">このプロセスには、データで定義された予測の品目配賦キーが必要なことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="179e1-131">Note that for this process, you need a forecast item alllocation key defined in your data.</span></span>  
+2. <span data-ttu-id="179e1-132">[商品関係タイプ] フィールドで、グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="179e1-132">In the Item relation type field, select Group</span></span>
+3. <span data-ttu-id="179e1-133">[品目配賦キー] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="179e1-133">In the Item allocation key field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="179e1-134">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="179e1-134">In the list, click the link in the selected row.</span></span>
 

@@ -10,36 +10,36 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, PurchVendorPortalConfirmedOrders, DefaultDashboard, ConsignmentVendorPortalOnhand
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8186b553e8518f3153bfd88b89121d4b0567501b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dfbe5e9de7b700d991e0826fb4387de416ce242a
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561343"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845395"
 ---
-# <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="51099-103">仕入先コラボレーションを使用した委託販売在庫の監視</span><span class="sxs-lookup"><span data-stu-id="51099-103">Monitor consignment inventory using vendor collaboration</span></span>
+# <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="28ab5-103">仕入先コラボレーションを使用した委託販売在庫の監視</span><span class="sxs-lookup"><span data-stu-id="28ab5-103">Monitor consignment inventory using vendor collaboration</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="51099-104">この手順は、顧客との委託販売で置いた製品の在庫レベルに関する情報を表示する際の仕入先との連携方法を示します。</span><span class="sxs-lookup"><span data-stu-id="51099-104">This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer.</span></span> <span data-ttu-id="51099-105">顧客が在庫品目の所有権を取得したときの在庫品目の移動状況をチェックすることができます。</span><span class="sxs-lookup"><span data-stu-id="51099-105">You can also monitor the consumption of the stock when the customer takes ownership of the inventory.</span></span> <span data-ttu-id="51099-106">デモ データの会社 USMF でこの手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="51099-106">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="51099-107">この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="51099-107">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
+<span data-ttu-id="28ab5-104">この手順は、顧客との委託販売で置いた製品の在庫レベルに関する情報を表示する際の仕入先との連携方法を示します。</span><span class="sxs-lookup"><span data-stu-id="28ab5-104">This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer.</span></span> <span data-ttu-id="28ab5-105">顧客が在庫品目の所有権を取得したときの在庫品目の移動状況をチェックすることができます。</span><span class="sxs-lookup"><span data-stu-id="28ab5-105">You can also monitor the consumption of the stock when the customer takes ownership of the inventory.</span></span> <span data-ttu-id="28ab5-106">デモ データの会社 USMF でこの手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="28ab5-106">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="28ab5-107">この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="28ab5-107">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
 
-## <a name="view-consumed-inventory"></a><span data-ttu-id="51099-108">移動した在庫品目を表示する</span><span class="sxs-lookup"><span data-stu-id="51099-108">View consumed inventory</span></span>
-1. <span data-ttu-id="51099-109">[仕入先コラボレーション] > [委託販売在庫] > [委託販売在庫から受領された製品] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="51099-109">Go to Vendor collaboration > Consignment inventory > Products received from consignment inventory.</span></span>
-    * <span data-ttu-id="51099-110">リストは、委託製品在庫の所有権が仕入先から顧客に変更されたとき生成された製品受領明細行を示します。</span><span class="sxs-lookup"><span data-stu-id="51099-110">The list shows the product receipt lines that were generated when ownership of the consignment inventory was changed from the vendor to the customer.</span></span> <span data-ttu-id="51099-111">数量およびその他の情報を確認するには、右にスクロールします。</span><span class="sxs-lookup"><span data-stu-id="51099-111">You might have to scroll to the right to see quantities and other information.</span></span> <span data-ttu-id="51099-112">このリストにある情報で顧客の請求書を生成することができます。</span><span class="sxs-lookup"><span data-stu-id="51099-112">You can use the information in this list to generate invoices for your customer.</span></span> <span data-ttu-id="51099-113">また、データを Microsoft Excel にエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="51099-113">You can also export the data to Microsoft Excel.</span></span>   
-2. <span data-ttu-id="51099-114">[発注書を表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="51099-114">Click View purchase order.</span></span>
-3. <span data-ttu-id="51099-115">[明細行の詳細] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="51099-115">Expand the Line details section.</span></span>
-    * <span data-ttu-id="51099-116">明細行が委託製品としてマークされます。ヘッダー セクションは発注書が「受領」の状態であることを示します。</span><span class="sxs-lookup"><span data-stu-id="51099-116">The line is marked as Consignment, and the header section shows that the purchase order has a status of Received.</span></span>  
-4. <span data-ttu-id="51099-117">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="51099-117">Close the page.</span></span>
+## <a name="view-consumed-inventory"></a><span data-ttu-id="28ab5-108">移動した在庫品目を表示する</span><span class="sxs-lookup"><span data-stu-id="28ab5-108">View consumed inventory</span></span>
+1. <span data-ttu-id="28ab5-109">[仕入先コラボレーション] > [委託販売在庫] > [委託販売在庫から受領された製品] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="28ab5-109">Go to Vendor collaboration > Consignment inventory > Products received from consignment inventory.</span></span>
+    * <span data-ttu-id="28ab5-110">リストは、委託製品在庫の所有権が仕入先から顧客に変更されたとき生成された製品受領明細行を示します。</span><span class="sxs-lookup"><span data-stu-id="28ab5-110">The list shows the product receipt lines that were generated when ownership of the consignment inventory was changed from the vendor to the customer.</span></span> <span data-ttu-id="28ab5-111">数量およびその他の情報を確認するには、右にスクロールします。</span><span class="sxs-lookup"><span data-stu-id="28ab5-111">You might have to scroll to the right to see quantities and other information.</span></span> <span data-ttu-id="28ab5-112">このリストにある情報で顧客の請求書を生成することができます。</span><span class="sxs-lookup"><span data-stu-id="28ab5-112">You can use the information in this list to generate invoices for your customer.</span></span> <span data-ttu-id="28ab5-113">また、データを Microsoft Excel にエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="28ab5-113">You can also export the data to Microsoft Excel.</span></span>   
+2. <span data-ttu-id="28ab5-114">[発注書を表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="28ab5-114">Click View purchase order.</span></span>
+3. <span data-ttu-id="28ab5-115">[明細行の詳細] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="28ab5-115">Expand the Line details section.</span></span>
+    * <span data-ttu-id="28ab5-116">明細行が委託製品としてマークされます。ヘッダー セクションは発注書が「受領」の状態であることを示します。</span><span class="sxs-lookup"><span data-stu-id="28ab5-116">The line is marked as Consignment, and the header section shows that the purchase order has a status of Received.</span></span>  
+4. <span data-ttu-id="28ab5-117">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="28ab5-117">Close the page.</span></span>
 
-## <a name="view-on-hand-inventory"></a><span data-ttu-id="51099-118">手持在庫の表示</span><span class="sxs-lookup"><span data-stu-id="51099-118">View on-hand inventory</span></span>
-1. <span data-ttu-id="51099-119">[仕入先コラボレーション] > [委託販売在庫] > [手持委託販売在庫] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="51099-119">Go to Vendor collaboration > Consignment inventory > On-hand consignment inventory.</span></span>
-    * <span data-ttu-id="51099-120">手持委託製品在庫のページは、その在庫が顧客の倉庫で所有していることを示します。</span><span class="sxs-lookup"><span data-stu-id="51099-120">The On-hand consignment inventory page shows the stock that you own at the customer’s warehouse.</span></span> <span data-ttu-id="51099-121">[規模のタブを表示] をクリックして、サイトや倉庫などその他の規模を表示できます。</span><span class="sxs-lookup"><span data-stu-id="51099-121">You can show additional dimensions, such as the site and warehouse, by clicking the Display dimensions tab.</span></span>   
+## <a name="view-on-hand-inventory"></a><span data-ttu-id="28ab5-118">手持在庫の表示</span><span class="sxs-lookup"><span data-stu-id="28ab5-118">View on-hand inventory</span></span>
+1. <span data-ttu-id="28ab5-119">[仕入先コラボレーション] > [委託販売在庫] > [手持委託販売在庫] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="28ab5-119">Go to Vendor collaboration > Consignment inventory > On-hand consignment inventory.</span></span>
+    * <span data-ttu-id="28ab5-120">手持委託製品在庫のページは、その在庫が顧客の倉庫で所有していることを示します。</span><span class="sxs-lookup"><span data-stu-id="28ab5-120">The On-hand consignment inventory page shows the stock that you own at the customer’s warehouse.</span></span> <span data-ttu-id="28ab5-121">[規模のタブを表示] をクリックして、サイトや倉庫などその他の規模を表示できます。</span><span class="sxs-lookup"><span data-stu-id="28ab5-121">You can show additional dimensions, such as the site and warehouse, by clicking the Display dimensions tab.</span></span>   
 

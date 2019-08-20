@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 14071
 ms.assetid: e6fce826-c403-4d91-a78b-e9a58c44ac03
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9addb2897bac68115a38f0239764ab65af2378c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 872ee7812d98e6102798c3a10773176541c02c90
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572468"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839380"
 ---
-# <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a><span data-ttu-id="f29b5-104">勘定と分析コードの組み合わせの入力 (セグメント化されたエントリのコントロール)</span><span class="sxs-lookup"><span data-stu-id="f29b5-104">Enter account and dimension combinations (segmented entry control)</span></span>
+# <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a><span data-ttu-id="6efb8-104">勘定と分析コードの組み合わせの入力 (セグメント化されたエントリのコントロール)</span><span class="sxs-lookup"><span data-stu-id="6efb8-104">Enter account and dimension combinations (segmented entry control)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f29b5-105">この記事は、勘定と分析コードの組み合わせまたは勘定科目を入力する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-105">This article describes how to enter account and dimension combinations or ledger accounts.</span></span> <span data-ttu-id="f29b5-106">入力経験は、多くの場合、セグメント化されたエントリのコントロールと呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="f29b5-106">The entry experience is often referred to as segmented entry control.</span></span>
+<span data-ttu-id="6efb8-105">この記事は、勘定と分析コードの組み合わせまたは勘定科目を入力する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-105">This article describes how to enter account and dimension combinations or ledger accounts.</span></span> <span data-ttu-id="6efb8-106">入力経験は、多くの場合、セグメント化されたエントリのコントロールと呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="6efb8-106">The entry experience is often referred to as segmented entry control.</span></span>
 
-<span data-ttu-id="f29b5-107">ユーザーは、一般仕訳帳、予算作成、および転記の定義などのさまざまなページで、勘定と分析コードの組み合わせを入力します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-107">Users enter account and dimension combinations on various pages, such as pages for general journals, budgeting, and posting definitions.</span></span> <span data-ttu-id="f29b5-108">有効な勘定と分析コードの組み合わせは、元帳に割り当てられた勘定構造と勘定構造に割り当てられた詳細ルールによって異なります。</span><span class="sxs-lookup"><span data-stu-id="f29b5-108">The valid account and dimension combinations depend on the account structures that are assigned to the ledger and the advanced rules that are assigned to the account structures.</span></span> <span data-ttu-id="f29b5-109">組み合わせを入力するときに、手動で値を入力するか、または豊富なルックアップ エクスペリエンスを使用できます。</span><span class="sxs-lookup"><span data-stu-id="f29b5-109">When users enter a combination, they can either manually type the values or take advantage of a rich, lookup experience.</span></span> <span data-ttu-id="f29b5-110">フィールドを入力するときに、入力し始めると、値と説明を検索できます。</span><span class="sxs-lookup"><span data-stu-id="f29b5-110">When you enter the field, you can start to type and it will search the value and the description.</span></span> <span data-ttu-id="f29b5-111">たとえば、「180」と入力すると、その番号の組み合わせで始まるすべての値を検索します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-111">For example, if you type 180 it will search any value that begins with that number combination.</span></span> <span data-ttu-id="f29b5-112">または、「Cash」と入力すれば、「Cash」で始まるすべての説明を持つ値を検索します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-112">Or you may type Cash and it will search any value that has a description that begins with Cash.</span></span> <span data-ttu-id="f29b5-113">\*Cash や \*180 などのワイルドカードを使用すると、値や説明に検索基準が含まれているかどうか検索することもできます。</span><span class="sxs-lookup"><span data-stu-id="f29b5-113">You can also use a wildcard, such as \*Cash or \*180 to search if the value or description contain the search criteria.</span></span> 
+<span data-ttu-id="6efb8-107">ユーザーは、一般仕訳帳、予算作成、および転記の定義などのさまざまなページで、勘定と分析コードの組み合わせを入力します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-107">Users enter account and dimension combinations on various pages, such as pages for general journals, budgeting, and posting definitions.</span></span> <span data-ttu-id="6efb8-108">有効な勘定と分析コードの組み合わせは、元帳に割り当てられた勘定構造と勘定構造に割り当てられた詳細ルールによって異なります。</span><span class="sxs-lookup"><span data-stu-id="6efb8-108">The valid account and dimension combinations depend on the account structures that are assigned to the ledger and the advanced rules that are assigned to the account structures.</span></span> <span data-ttu-id="6efb8-109">組み合わせを入力するときに、手動で値を入力するか、または豊富なルックアップ エクスペリエンスを使用できます。</span><span class="sxs-lookup"><span data-stu-id="6efb8-109">When users enter a combination, they can either manually type the values or take advantage of a rich, lookup experience.</span></span> <span data-ttu-id="6efb8-110">フィールドを入力するときに、入力し始めると、値と説明を検索できます。</span><span class="sxs-lookup"><span data-stu-id="6efb8-110">When you enter the field, you can start to type and it will search the value and the description.</span></span> <span data-ttu-id="6efb8-111">たとえば、「180」と入力すると、その番号の組み合わせで始まるすべての値を検索します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-111">For example, if you type 180 it will search any value that begins with that number combination.</span></span> <span data-ttu-id="6efb8-112">または、「Cash」と入力すれば、「Cash」で始まるすべての説明を持つ値を検索します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-112">Or you may type Cash and it will search any value that has a description that begins with Cash.</span></span> <span data-ttu-id="6efb8-113">\*Cash や \*180 などのワイルドカードを使用すると、値や説明に検索基準が含まれているかどうか検索することもできます。</span><span class="sxs-lookup"><span data-stu-id="6efb8-113">You can also use a wildcard, such as \*Cash or \*180 to search if the value or description contain the search criteria.</span></span> 
 
-<span data-ttu-id="f29b5-114">次の表に、ルックアップが閉じているときに使用できるキーボード ショートカットを示します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-114">The following table describes the keyboard shortcuts that can be used when the lookup is closed.</span></span>
+<span data-ttu-id="6efb8-114">次の表に、ルックアップが閉じているときに使用できるキーボード ショートカットを示します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-114">The following table describes the keyboard shortcuts that can be used when the lookup is closed.</span></span>
 
 <table>
 <colgroup>
@@ -42,31 +42,31 @@ ms.locfileid: "1572468"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="f29b5-115">キーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="f29b5-115">Keyboard shortcut</span></span></th>
-<th><span data-ttu-id="f29b5-116">アクション</span><span class="sxs-lookup"><span data-stu-id="f29b5-116">Action</span></span></th>
+<th><span data-ttu-id="6efb8-115">キーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="6efb8-115">Keyboard shortcut</span></span></th>
+<th><span data-ttu-id="6efb8-116">アクション</span><span class="sxs-lookup"><span data-stu-id="6efb8-116">Action</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="f29b5-117">Alt + 下方向キー</span><span class="sxs-lookup"><span data-stu-id="f29b5-117">Alt+Down Arrow</span></span></td>
-<td><span data-ttu-id="f29b5-118">ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f29b5-118">Open the lookup.</span></span> <span data-ttu-id="f29b5-119">2 回目に Alt + 下方向キーを押した場合、フォーカスがポップアップのセグメントに移動します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-119">If you press Alt+Down Arrow a second time, the focus moves to the segments in the flyout.</span></span></td>
+<td><span data-ttu-id="6efb8-117">Alt + 下方向キー</span><span class="sxs-lookup"><span data-stu-id="6efb8-117">Alt+Down Arrow</span></span></td>
+<td><span data-ttu-id="6efb8-118">ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="6efb8-118">Open the lookup.</span></span> <span data-ttu-id="6efb8-119">2 回目に Alt + 下方向キーを押した場合、フォーカスがポップアップのセグメントに移動します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-119">If you press Alt+Down Arrow a second time, the focus moves to the segments in the flyout.</span></span></td>
 </tr>
 <tr class="even">
 <td><ul>
-<li><span data-ttu-id="f29b5-120">Enter キーおよび Shift + Enter キー</span><span class="sxs-lookup"><span data-stu-id="f29b5-120">Enter and Shift+Enter</span></span></li>
-<li><span data-ttu-id="f29b5-121">勘定科目表の区切り記号</span><span class="sxs-lookup"><span data-stu-id="f29b5-121">Chart of accounts delimiter</span></span></li>
-<li><span data-ttu-id="f29b5-122">右方向キーおよび左方向キー</span><span class="sxs-lookup"><span data-stu-id="f29b5-122">Right Arrow and Left Arrow</span></span></li>
+<li><span data-ttu-id="6efb8-120">Enter キーおよび Shift + Enter キー</span><span class="sxs-lookup"><span data-stu-id="6efb8-120">Enter and Shift+Enter</span></span></li>
+<li><span data-ttu-id="6efb8-121">勘定科目表の区切り記号</span><span class="sxs-lookup"><span data-stu-id="6efb8-121">Chart of accounts delimiter</span></span></li>
+<li><span data-ttu-id="6efb8-122">右方向キーおよび左方向キー</span><span class="sxs-lookup"><span data-stu-id="6efb8-122">Right Arrow and Left Arrow</span></span></li>
 </ul></td>
-<td><span data-ttu-id="f29b5-123">前後のセグメントへ移動します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-123">Move to the next or previous segment.</span></span></td>
+<td><span data-ttu-id="6efb8-123">前後のセグメントへ移動します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-123">Move to the next or previous segment.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="f29b5-124">タブ</span><span class="sxs-lookup"><span data-stu-id="f29b5-124">Tab</span></span></td>
-<td><span data-ttu-id="f29b5-125">グリッド内で次のフィールドに移動します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-125">Move to the next field in the grid.</span></span></td>
+<td><span data-ttu-id="6efb8-124">タブ</span><span class="sxs-lookup"><span data-stu-id="6efb8-124">Tab</span></span></td>
+<td><span data-ttu-id="6efb8-125">グリッド内で次のフィールドに移動します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-125">Move to the next field in the grid.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="f29b5-126">次の表に、ルックアップが開いているときに使用できるキーボード ショートカットを示します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-126">The following table describes the keyboard shortcuts that can be used when the lookup is open.</span></span>
+<span data-ttu-id="6efb8-126">次の表に、ルックアップが開いているときに使用できるキーボード ショートカットを示します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-126">The following table describes the keyboard shortcuts that can be used when the lookup is open.</span></span>
 
 <table>
 <colgroup>
@@ -75,37 +75,37 @@ ms.locfileid: "1572468"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="f29b5-127">キーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="f29b5-127">Keyboard shortcut</span></span></th>
-<th><span data-ttu-id="f29b5-128">アクション</span><span class="sxs-lookup"><span data-stu-id="f29b5-128">Action</span></span></th>
+<th><span data-ttu-id="6efb8-127">キーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="6efb8-127">Keyboard shortcut</span></span></th>
+<th><span data-ttu-id="6efb8-128">アクション</span><span class="sxs-lookup"><span data-stu-id="6efb8-128">Action</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="f29b5-129">Esc キー</span><span class="sxs-lookup"><span data-stu-id="f29b5-129">Esc</span></span></td>
-<td><span data-ttu-id="f29b5-130">ルックアップを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f29b5-130">Close the lookup.</span></span></td>
+<td><span data-ttu-id="6efb8-129">Esc キー</span><span class="sxs-lookup"><span data-stu-id="6efb8-129">Esc</span></span></td>
+<td><span data-ttu-id="6efb8-130">ルックアップを閉じます。</span><span class="sxs-lookup"><span data-stu-id="6efb8-130">Close the lookup.</span></span></td>
 </tr>
 <tr class="even">
 <td><ul>
-<li><span data-ttu-id="f29b5-131">上方向キーおよび下方向キー</span><span class="sxs-lookup"><span data-stu-id="f29b5-131">Up Arrow and Down Arrow</span></span></li>
-<li><span data-ttu-id="f29b5-132">Page Up キーおよび Page Down キー</span><span class="sxs-lookup"><span data-stu-id="f29b5-132">Page Up and Page Down</span></span></li>
-<li><span data-ttu-id="f29b5-133">Home キーおよび End キー</span><span class="sxs-lookup"><span data-stu-id="f29b5-133">Home and End</span></span></li>
+<li><span data-ttu-id="6efb8-131">上方向キーおよび下方向キー</span><span class="sxs-lookup"><span data-stu-id="6efb8-131">Up Arrow and Down Arrow</span></span></li>
+<li><span data-ttu-id="6efb8-132">Page Up キーおよび Page Down キー</span><span class="sxs-lookup"><span data-stu-id="6efb8-132">Page Up and Page Down</span></span></li>
+<li><span data-ttu-id="6efb8-133">Home キーおよび End キー</span><span class="sxs-lookup"><span data-stu-id="6efb8-133">Home and End</span></span></li>
 </ul></td>
-<td><span data-ttu-id="f29b5-134">一覧での前後の値、値の前後のグループ、またはルックアップの最初または最後の要素に移動します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-134">Move to the previous or next value in the lists, to the previous or next group of values, or to the first or last element in the lookup.</span></span></td>
+<td><span data-ttu-id="6efb8-134">一覧での前後の値、値の前後のグループ、またはルックアップの最初または最後の要素に移動します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-134">Move to the previous or next value in the lists, to the previous or next group of values, or to the first or last element in the lookup.</span></span></td>
 </tr>
 <tr class="odd">
 <td><ul>
-<li><span data-ttu-id="f29b5-135">勘定科目表の区切り記号</span><span class="sxs-lookup"><span data-stu-id="f29b5-135">Chart of accounts delimiter</span></span></li>
-<li><span data-ttu-id="f29b5-136">右方向キーおよび左方向キー</span><span class="sxs-lookup"><span data-stu-id="f29b5-136">Right Arrow and Left Arrow</span></span></li>
+<li><span data-ttu-id="6efb8-135">勘定科目表の区切り記号</span><span class="sxs-lookup"><span data-stu-id="6efb8-135">Chart of accounts delimiter</span></span></li>
+<li><span data-ttu-id="6efb8-136">右方向キーおよび左方向キー</span><span class="sxs-lookup"><span data-stu-id="6efb8-136">Right Arrow and Left Arrow</span></span></li>
 </ul></td>
-<td><span data-ttu-id="f29b5-137">前後のセグメントへ移動します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-137">Move to the next or previous segment.</span></span></td>
+<td><span data-ttu-id="6efb8-137">前後のセグメントへ移動します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-137">Move to the next or previous segment.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="f29b5-138">タブ</span><span class="sxs-lookup"><span data-stu-id="f29b5-138">Tab</span></span></td>
-<td><span data-ttu-id="f29b5-139">グリッド内で次のフィールドに移動します。</span><span class="sxs-lookup"><span data-stu-id="f29b5-139">Move to the next field in the grid.</span></span></td>
+<td><span data-ttu-id="6efb8-138">タブ</span><span class="sxs-lookup"><span data-stu-id="6efb8-138">Tab</span></span></td>
+<td><span data-ttu-id="6efb8-139">グリッド内で次のフィールドに移動します。</span><span class="sxs-lookup"><span data-stu-id="6efb8-139">Move to the next field in the grid.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="f29b5-140">Alt + W キー</span><span class="sxs-lookup"><span data-stu-id="f29b5-140">Alt+W</span></span></td>
-<td><span data-ttu-id="f29b5-141"><strong>すべて表示l</strong> と <strong>有効なものを表示</strong> を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="f29b5-141">Switch between <strong>Show all</strong> and <strong>Show valid</strong>.</span></span></td>
+<td><span data-ttu-id="6efb8-140">Alt + W キー</span><span class="sxs-lookup"><span data-stu-id="6efb8-140">Alt+W</span></span></td>
+<td><span data-ttu-id="6efb8-141"><strong>すべて表示l</strong> と <strong>有効なものを表示</strong> を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="6efb8-141">Switch between <strong>Show all</strong> and <strong>Show valid</strong>.</span></span></td>
 </tr>
 </tbody>
 </table>

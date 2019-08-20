@@ -18,45 +18,45 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 349836c788d8ed5a70af57ff74944d02a04815ad
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6900d0d21e65e443e497b5d9d220c7377a7537a2
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555332"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742960"
 ---
-# <a name="view-undispatched-service-orders"></a><span data-ttu-id="5af41-103">実出荷のサービス注文の表示</span><span class="sxs-lookup"><span data-stu-id="5af41-103">View undispatched service orders</span></span> 
+# <a name="view-undispatched-service-orders"></a><span data-ttu-id="c8e6b-103">実出荷のサービス注文の表示</span><span class="sxs-lookup"><span data-stu-id="c8e6b-103">View undispatched service orders</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="5af41-104">このトピックでは、出荷チームからそれらに割り当てられた作業者がいないサービス注文の活動を表示する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5af41-104">This topic describes how to view activities in a service order that don’t have a worker assigned to them from a dispatch team.</span></span>
+<span data-ttu-id="c8e6b-104">このトピックでは、出荷チームからそれらに割り当てられた作業者がいないサービス注文の活動を表示する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="c8e6b-104">This topic describes how to view activities in a service order that don’t have a worker assigned to them from a dispatch team.</span></span>
 
-1.  <span data-ttu-id="5af41-105">**サービス管理** \> **定期処理** \> **派遣表**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af41-105">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="c8e6b-105">**サービス管理** \> **定期処理** \> **派遣表**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8e6b-105">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
 
-2.  <span data-ttu-id="5af41-106">**派遣表**ウィンドウで、派遣活動を表示する期間の開始日と終了日を入力します。</span><span class="sxs-lookup"><span data-stu-id="5af41-106">In the **Dispatch board** window, enter the start date and end date for the period to view dispatch activity for.</span></span>
+2.  <span data-ttu-id="c8e6b-106">**派遣表**ウィンドウで、派遣活動を表示する期間の開始日と終了日を入力します。</span><span class="sxs-lookup"><span data-stu-id="c8e6b-106">In the **Dispatch board** window, enter the start date and end date for the period to view dispatch activity for.</span></span>
 
-3.  <span data-ttu-id="5af41-107">オプション: 結果に終了した活動および関連するチームを含めるかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="5af41-107">Optional: Select whether to include closed activities and related teams in the results.</span></span>
+3.  <span data-ttu-id="c8e6b-107">オプション: 結果に終了した活動および関連するチームを含めるかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="c8e6b-107">Optional: Select whether to include closed activities and related teams in the results.</span></span>
 
-4.  <span data-ttu-id="5af41-108">**OK** をクリックして結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="5af41-108">Click **OK** to view the results.</span></span>
+4.  <span data-ttu-id="c8e6b-108">**OK** をクリックして結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="c8e6b-108">Click **OK** to view the results.</span></span>
     
 
     > [!NOTE]
-    > <P><span data-ttu-id="5af41-109"><STRONG>派遣表</STRONG>フォームで、<STRONG>詳細</STRONG>ビューが自動的に表示されます。</span><span class="sxs-lookup"><span data-stu-id="5af41-109">In the <STRONG>Dispatch board</STRONG> form, the <STRONG>Advanced</STRONG> view is automatically displayed.</span></span> <span data-ttu-id="5af41-110">このビューでは、ページ上部のガント チャートおよびページ下部のタブが表示されます。</span><span class="sxs-lookup"><span data-stu-id="5af41-110">In this view, the Gantt chart at the top of the page and the tabs at the bottom of the page are displayed.</span></span> <span data-ttu-id="5af41-111">ガント チャートのみを表示するには、<STRONG>簡易</STRONG>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af41-111">Click <STRONG>Simple</STRONG> to display only the Gantt chart.</span></span></P>
+    > <P><span data-ttu-id="c8e6b-109"><STRONG>派遣表</STRONG>フォームで、<STRONG>詳細</STRONG>ビューが自動的に表示されます。</span><span class="sxs-lookup"><span data-stu-id="c8e6b-109">In the <STRONG>Dispatch board</STRONG> form, the <STRONG>Advanced</STRONG> view is automatically displayed.</span></span> <span data-ttu-id="c8e6b-110">このビューでは、ページ上部のガント チャートおよびページ下部のタブが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c8e6b-110">In this view, the Gantt chart at the top of the page and the tabs at the bottom of the page are displayed.</span></span> <span data-ttu-id="c8e6b-111">ガント チャートのみを表示するには、<STRONG>簡易</STRONG>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8e6b-111">Click <STRONG>Simple</STRONG> to display only the Gantt chart.</span></span></P>
 
 
 
-5.  <span data-ttu-id="5af41-112">割り当てられている派遣チームがないサービス注文の一覧を表示するには、**未出荷**タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5af41-112">To view a list of service orders that don’t have a dispatch team assigned, click the **Undispatched** tab.</span></span>
+5.  <span data-ttu-id="c8e6b-112">割り当てられている派遣チームがないサービス注文の一覧を表示するには、**未出荷**タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="c8e6b-112">To view a list of service orders that don’t have a dispatch team assigned, click the **Undispatched** tab.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="5af41-113">参照</span><span class="sxs-lookup"><span data-stu-id="5af41-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c8e6b-113">参照</span><span class="sxs-lookup"><span data-stu-id="c8e6b-113">See also</span></span>
 
-<span data-ttu-id="5af41-114">[派遣表 (フォーム)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="5af41-114">[Dispatch board (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span></span>
+<span data-ttu-id="c8e6b-114">[派遣表 (フォーム)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="c8e6b-114">[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span></span>
 
-[<span data-ttu-id="5af41-115">サービス活動</span><span class="sxs-lookup"><span data-stu-id="5af41-115">Service activities</span></span>](service-activities.md)
+[<span data-ttu-id="c8e6b-115">サービス活動</span><span class="sxs-lookup"><span data-stu-id="c8e6b-115">Service activities</span></span>](service-activities.md)
 
-[<span data-ttu-id="5af41-116">派遣表</span><span class="sxs-lookup"><span data-stu-id="5af41-116">Dispatch board</span></span>](dispatch-board.md)
+[<span data-ttu-id="c8e6b-116">派遣表</span><span class="sxs-lookup"><span data-stu-id="c8e6b-116">Dispatch board</span></span>](dispatch-board.md)
 
-[<span data-ttu-id="5af41-117">活動の再割り当て</span><span class="sxs-lookup"><span data-stu-id="5af41-117">Reassign activities</span></span>](reassign-activities.md)
+[<span data-ttu-id="c8e6b-117">活動の再割り当て</span><span class="sxs-lookup"><span data-stu-id="c8e6b-117">Reassign activities</span></span>](reassign-activities.md)
 
   
 

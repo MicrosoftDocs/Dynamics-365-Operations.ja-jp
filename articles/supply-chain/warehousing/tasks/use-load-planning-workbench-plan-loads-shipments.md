@@ -1,9 +1,9 @@
 ---
 title: 積荷計画ワークベンチを使用した積荷および出荷の計画
-description: この手順では、販売注文の積荷を作成するための積荷計画ワークベンチの使用方法を示します。
+description: このトピックでは、販売注文の積荷を作成するための積荷計画ワークベンチの使用方法を示します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,53 +16,47 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1927cff48beb30f934bd066c32ab48dfb9d06f74
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5e20eef8aa748bb64c6c14dd7e1d92ccf6592e0
+ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564802"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "1739068"
 ---
-# <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a><span data-ttu-id="4ea81-103">積荷計画ワークベンチを使用した積荷および出荷の計画</span><span class="sxs-lookup"><span data-stu-id="4ea81-103">Plan loads and shipments using the Load planning workbench</span></span>
+# <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a><span data-ttu-id="f1787-103">積荷計画ワークベンチを使用した積荷および出荷の計画</span><span class="sxs-lookup"><span data-stu-id="f1787-103">Plan loads and shipments using the Load planning workbench</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="4ea81-104">この手順では、販売注文の積荷を作成するための積荷計画ワークベンチの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-104">This procedure shows how to use the load planning workbench to create a load for a sales order.</span></span> <span data-ttu-id="4ea81-105">前提条件として、まず販売注文を作成します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-105">As a prerequisite we'll create the sales order first.</span></span> <span data-ttu-id="4ea81-106">この手順は、配送コーディネーターの日常の作業一部です。</span><span class="sxs-lookup"><span data-stu-id="4ea81-106">This procedure is part of the daily work for the transportation coordinator.</span></span> <span data-ttu-id="4ea81-107">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="4ea81-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="f1787-104">このトピックでは、販売注文の積荷を作成するための積荷計画ワークベンチの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f1787-104">This topic shows how to use the load planning workbench to create a load for a sales order.</span></span> <span data-ttu-id="f1787-105">前提条件として、まず販売注文を作成します。</span><span class="sxs-lookup"><span data-stu-id="f1787-105">As a prerequisite we'll create the sales order first.</span></span> <span data-ttu-id="f1787-106">この手順は、配送コーディネーターの日常の作業一部です。</span><span class="sxs-lookup"><span data-stu-id="f1787-106">This procedure is part of the daily work for the transportation coordinator.</span></span> <span data-ttu-id="f1787-107">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="f1787-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-sales-order"></a><span data-ttu-id="4ea81-108">販売注文の作成</span><span class="sxs-lookup"><span data-stu-id="4ea81-108">Create a sales order</span></span>
-1. <span data-ttu-id="4ea81-109">[売掛金勘定] > [注文] > [すべての販売注文] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-109">Go to Accounts receivable > Orders > All sales orders.</span></span>
-2. <span data-ttu-id="4ea81-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-110">Click New.</span></span>
-3. <span data-ttu-id="4ea81-111">[顧客口座] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="4ea81-111">In the Customer account field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="4ea81-112">勘定 US-004 を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-112">Select account US-004.</span></span>
-5. <span data-ttu-id="4ea81-113">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-113">Click OK.</span></span>
-6. <span data-ttu-id="4ea81-114">[品目番号] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="4ea81-114">In the Item number field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="4ea81-115">品目 A0001 を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-115">Select item A0001.</span></span>
-    * <span data-ttu-id="4ea81-116">A0001 は輸送管理に対して有効になっています。</span><span class="sxs-lookup"><span data-stu-id="4ea81-116">A0001 is enabled for transportation management.</span></span>  
-8. <span data-ttu-id="4ea81-117">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-117">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="4ea81-118">[数量] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-118">In the Quantity field, enter a number.</span></span>
-10. <span data-ttu-id="4ea81-119">[倉庫] フィールドに、「24」と入力します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-119">In the Warehouse field, type '24'.</span></span>
-    * <span data-ttu-id="4ea81-120">この例では、倉庫 24 を選択します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-120">In this example select warehouse 24.</span></span> <span data-ttu-id="4ea81-121">この倉庫は、輸送管理および高度な倉庫管理で有効になっています。</span><span class="sxs-lookup"><span data-stu-id="4ea81-121">This warehouse is enabled for transportation management and advanced warehouse management.</span></span>  
-11. <span data-ttu-id="4ea81-122">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-122">Click Save.</span></span>
-12. <span data-ttu-id="4ea81-123">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4ea81-123">Close the page.</span></span>
+## <a name="create-a-sales-order"></a><span data-ttu-id="f1787-108">販売注文の作成</span><span class="sxs-lookup"><span data-stu-id="f1787-108">Create a sales order</span></span>
+1. <span data-ttu-id="f1787-109">**ナビゲーション ウィンドウ > モジュール > 売掛金勘定 > 注文 > すべての販売注文**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f1787-109">Go to the **Navigation pane > Modules > Accounts receivable > Orders > All sales orders**.</span></span>
+2. <span data-ttu-id="f1787-110">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-110">Select **New**.</span></span>
+3. <span data-ttu-id="f1787-111">**顧客口座**フィールドで、ドロップ ダウン ボタンを選択し、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f1787-111">In the **Customer account** field, select the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="f1787-112">勘定 **US-004** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-112">Select account **US-004**.</span></span>
+5. <span data-ttu-id="f1787-113">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-113">Select **OK**.</span></span>
+6. <span data-ttu-id="f1787-114">**品目番号**フィールドで、ドロップ ダウン ボタンを選択し、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f1787-114">In the **Item number** field, select the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="f1787-115">品目 **A0001** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-115">Select item **A0001**.</span></span> <span data-ttu-id="f1787-116">**A0001** は輸送管理に対して有効になっています。</span><span class="sxs-lookup"><span data-stu-id="f1787-116">**A0001** is enabled for transportation management.</span></span>  
+8. <span data-ttu-id="f1787-117">**サイト** フィールドで、ドロップ ダウン ボタンを選択し、ルックアップを開き、次に品目を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-117">In the **Site** field, select the drop-down button to open the lookup, then select an item.</span></span>
+9. <span data-ttu-id="f1787-118">**数量**フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f1787-118">In the **Quantity** field, enter a number.</span></span>
+10. <span data-ttu-id="f1787-119">**倉庫**フィールドに、この例の場合、「24」と入力します。</span><span class="sxs-lookup"><span data-stu-id="f1787-119">In the **Warehouse** field, type '24' for this example.</span></span> <span data-ttu-id="f1787-120">この倉庫は、輸送管理および高度な倉庫管理で有効になっています。</span><span class="sxs-lookup"><span data-stu-id="f1787-120">This warehouse is enabled for transportation management and advanced warehouse management.</span></span>  
+11. <span data-ttu-id="f1787-121">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-121">Select **Save**.</span></span>
+12. <span data-ttu-id="f1787-122">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f1787-122">Close the page.</span></span>
 
-## <a name="create-a-new-load"></a><span data-ttu-id="4ea81-124">新しい積荷の作成</span><span class="sxs-lookup"><span data-stu-id="4ea81-124">Create a new load</span></span>
-1. <span data-ttu-id="4ea81-125">[配送管理] > [計画] > [積荷計画ワークベンチ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-125">Go to Transportation management > Planning > Load planning workbench.</span></span>
-2. <span data-ttu-id="4ea81-126">[販売明細行] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-126">Click the Sales lines tab.</span></span>
-    * <span data-ttu-id="4ea81-127">次に、作成した販売注文の積荷を構築します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-127">Now you'll build the load for the sales order that you just created.</span></span> <span data-ttu-id="4ea81-128">積荷は、発注書、移動オーダー、および販売注文からの供給と需要に基づいて作成することができます。</span><span class="sxs-lookup"><span data-stu-id="4ea81-128">Loads can be built based on supply and demand from purchase orders, transfer orders, and sales orders.</span></span>  
-3. <span data-ttu-id="4ea81-129">アクション ウィンドウで、[供給と需要] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-129">On the Action Pane, click Supply and demand.</span></span>
-4. <span data-ttu-id="4ea81-130">[新しい積荷へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-130">Click To new load.</span></span>
-5. <span data-ttu-id="4ea81-131">[読み込みテンプレート ID] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="4ea81-131">In the Load template ID field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="4ea81-132">積荷のテンプレートには、積荷全体の重量および容積の最大測定値を定義します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-132">The Load template defines maximum measurements for weight and volume of the entire load.</span></span> <span data-ttu-id="4ea81-133">たとえば、積荷テンプレートは、コンテナーまたはトラックのサイズを表す場合があります。</span><span class="sxs-lookup"><span data-stu-id="4ea81-133">For example, the load template might represent the size of a container or truck.</span></span>  
-6. <span data-ttu-id="4ea81-134">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-134">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="4ea81-135">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-135">Click OK.</span></span>
+## <a name="create-a-new-load"></a><span data-ttu-id="f1787-123">新しい積荷の作成</span><span class="sxs-lookup"><span data-stu-id="f1787-123">Create a new load</span></span>
+1. <span data-ttu-id="f1787-124">**ナビゲーション ウィンドウ > モジュール > 輸送管理 > 計画 > 積荷計画ワークベンチ**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f1787-124">Go to the **Navigation pane > Modules > Transportation management > Planning > Load planning workbench**.</span></span>
+2. <span data-ttu-id="f1787-125">**販売明細行**タブを選択します。次に、作成した販売注文の積荷を構築します。</span><span class="sxs-lookup"><span data-stu-id="f1787-125">Select the **Sales lines** tab. Now you'll build the load for the sales order that you just created.</span></span> <span data-ttu-id="f1787-126">積荷は、発注書、移動オーダー、および販売注文からの供給と需要に基づいて作成することができます。</span><span class="sxs-lookup"><span data-stu-id="f1787-126">Loads can be built based on supply and demand from purchase orders, transfer orders, and sales orders.</span></span>  
+3. <span data-ttu-id="f1787-127">アクション ウィンドウで、**供給と需要**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-127">On the Action Pane, select **Supply and demand**.</span></span>
+4. <span data-ttu-id="f1787-128">**新しい積荷へ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-128">Select **To new load**.</span></span>
+5. <span data-ttu-id="f1787-129">**読み込みテンプレート ID** フィールドで、ドロップ ダウン ボタンを選択し、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f1787-129">In the **Load template ID** field, select the drop-down button to open the lookup.</span></span> <span data-ttu-id="f1787-130">積荷のテンプレートには、積荷全体の重量および容積の最大測定値を定義します。</span><span class="sxs-lookup"><span data-stu-id="f1787-130">The Load template defines maximum measurements for weight and volume of the entire load.</span></span> <span data-ttu-id="f1787-131">たとえば、積荷テンプレートは、コンテナーまたはトラックのサイズを表す場合があります。</span><span class="sxs-lookup"><span data-stu-id="f1787-131">For example, the load template might represent the size of a container or truck.</span></span> <span data-ttu-id="f1787-132">品目を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-132">Select an item.</span></span>
+6. <span data-ttu-id="f1787-133">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-133">Select **OK**.</span></span>
 
-## <a name="rate-and-route-the-load"></a><span data-ttu-id="4ea81-136">積荷のレートと工順</span><span class="sxs-lookup"><span data-stu-id="4ea81-136">Rate and route the load</span></span>
-1. <span data-ttu-id="4ea81-137">[評価とルート指定] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-137">Click Rating and routing.</span></span>
-2. <span data-ttu-id="4ea81-138">[工順ワークベンチの評価] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-138">Click Rate route workbench.</span></span>
-3. <span data-ttu-id="4ea81-139">[レート ショップ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-139">Click Rate shop.</span></span>
-4. <span data-ttu-id="4ea81-140">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="4ea81-140">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="4ea81-141">[割り当て] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4ea81-141">Click Assign.</span></span>
-6. <span data-ttu-id="4ea81-142">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4ea81-142">Close the page.</span></span>
-7. <span data-ttu-id="4ea81-143">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4ea81-143">Close the page.</span></span>
+## <a name="rate-and-route-the-load"></a><span data-ttu-id="f1787-134">積荷のレートと工順</span><span class="sxs-lookup"><span data-stu-id="f1787-134">Rate and route the load</span></span>
+1. <span data-ttu-id="f1787-135">**評価とルート指定**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-135">Select **Rating and routing**.</span></span>
+2. <span data-ttu-id="f1787-136">**レート工順ワークベンチ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-136">Select **Rate route workbench**.</span></span>
+3. <span data-ttu-id="f1787-137">**レート ショップ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-137">Select **Rate shop**.</span></span>
+4. <span data-ttu-id="f1787-138">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-138">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="f1787-139">**割り当て**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f1787-139">Select **Assign**.</span></span>
+6. <span data-ttu-id="f1787-140">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f1787-140">Close the page.</span></span>
 

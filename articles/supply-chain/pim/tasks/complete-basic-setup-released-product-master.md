@@ -1,66 +1,55 @@
 ---
 title: リリース済み製品マスターの基本設定の完了
-description: この手順は、製品マスターを BOM バージョンで使用する前に必要な最小限の設定の完了方法を示します。
+description: このトピックは、製品マスターを BOM バージョンで使用する前に必要な最小限の設定の完了方法を示します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroups, InventItemOrderSetup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d3a91977c38c0ce0f9fe114bec943c7cb32a5d4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: bd7e02c9aea17fbc3312660d0e50cd8bbf39aa3d
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568775"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845020"
 ---
-# <a name="complete-basic-setup-of-a-released-product-master"></a><span data-ttu-id="7b9ba-103">リリース済み製品マスターの基本設定の完了</span><span class="sxs-lookup"><span data-stu-id="7b9ba-103">Complete basic setup of a released product master</span></span>
+# <a name="complete-basic-setup-of-a-released-product-master"></a><span data-ttu-id="5b844-103">リリース済み製品マスターの基本設定の完了</span><span class="sxs-lookup"><span data-stu-id="5b844-103">Complete basic setup of a released product master</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="7b9ba-104">この手順は、製品マスターを BOM バージョンで使用する前に必要な最小限の設定の完了方法を示します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-104">This procedure shows how to complete the minimum setup that is required before the product master can be used in BOM versions.</span></span>
+<span data-ttu-id="5b844-104">このトピックは、製品マスターを BOM バージョンで使用する前に必要な最小限の設定の完了方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5b844-104">This topic shows how to complete the minimum setup that is required before the product master can be used in BOM versions.</span></span>
 
-<span data-ttu-id="7b9ba-105">これは、分析コードベースのコンフィギュレーションでの組み合わせの作成方法を説明する 8 つの手順の 3 番目です。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-105">This is the third procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span> <span data-ttu-id="7b9ba-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="5b844-105">これは、分析コードベースのコンフィギュレーションでの組み合わせの作成方法を説明する 8 つの手順の 3 番目です。</span><span class="sxs-lookup"><span data-stu-id="5b844-105">This is the third procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span> <span data-ttu-id="5b844-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="5b844-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="7b9ba-107">[製品情報管理] > [製品] > [リリースされた製品] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-107">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="7b9ba-108">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-108">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="7b9ba-109">2 番目の手順でリリースする製品マスターを選択します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-109">Select the product master that you have released in the second procedure.</span></span> <span data-ttu-id="7b9ba-110">この製品マスターは、分析コード ベースのコンフィギュレーション テクノロジで作成されます。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-110">This product master is created with the dimension-based configuration technology.</span></span>  
-3. <span data-ttu-id="7b9ba-111">アクション ウィンドウで、[製品] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-111">On the Action Pane, click Product.</span></span>
-4. <span data-ttu-id="7b9ba-112">[分析コード グループ] をクリックすると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-112">Click Dimension groups to open the drop dialog.</span></span>
-5. <span data-ttu-id="7b9ba-113">[保管分析コード グループ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-113">In the Storage dimension group field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="7b9ba-114">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-114">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="7b9ba-115">保管分析コード グループにより、製品トランザクションに使用される保管分析コードが決まります。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-115">The storage dimension group determines which storage dimensions are used for product transaction.</span></span> <span data-ttu-id="7b9ba-116">この手順で [サイト] を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-116">Select Site for this procedure.</span></span>  
-7. <span data-ttu-id="7b9ba-117">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-117">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="7b9ba-118">[追跡用分析コード グループ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-118">In the Tracking dimension group field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="7b9ba-119">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-119">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="7b9ba-120">追跡用分析コード グループにより、製品トランザクションに使用される追跡用分析コードが決まります。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-120">The tracking dimension group determines which tracking dimensions are used for product transaction.</span></span> <span data-ttu-id="7b9ba-121">この手順で [いいえ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-121">Select None for this procedure.</span></span>  
-10. <span data-ttu-id="7b9ba-122">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-122">In the list, click the link in the selected row.</span></span>
-11. <span data-ttu-id="7b9ba-123">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-123">Click OK.</span></span>
-12. <span data-ttu-id="7b9ba-124">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-124">In the list, click the link in the selected row.</span></span>
-13. <span data-ttu-id="7b9ba-125">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-125">Click Edit.</span></span>
-    * <span data-ttu-id="7b9ba-126">[リリース済製品の詳細] フォームを開き、設定作業を続行します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-126">Open the Released product details form to continue the setup task.</span></span>  
-14. <span data-ttu-id="7b9ba-127">[品目モデル グループ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-127">In the Item model group field, click the drop-down button to open the lookup.</span></span>
-15. <span data-ttu-id="7b9ba-128">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-128">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="7b9ba-129">品目モデル グループには、品目の入庫および出庫時における品目の管理方法および処理方法を決定する設定が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-129">Item model groups contain settings that determine how items are controlled and handled on item receipts and issues.</span></span> <span data-ttu-id="7b9ba-130">在庫モデル グループは、品目消費の計算方法も決定します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-130">They also determine how item consumption is calculated.</span></span> <span data-ttu-id="7b9ba-131">この手順では [FIFO] を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-131">Select   FIFO for this procedure.</span></span>  
-16. <span data-ttu-id="7b9ba-132">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-132">In the list, click the link in the selected row.</span></span>
-17. <span data-ttu-id="7b9ba-133">[原価の管理] セクションを展開または折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-133">Expand or collapse the Manage costs section.</span></span>
-18. <span data-ttu-id="7b9ba-134">[品目グループ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-134">In the Item group field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="7b9ba-135">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-135">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="7b9ba-136">品目グループは、在庫品目の分類による在庫管理に使用されます。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-136">Item groups are used to manage inventory by dividing inventory items into groups.</span></span> <span data-ttu-id="7b9ba-137">この手順では CarAudio を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-137">Select   CarAudio for this procedure.</span></span>  
-20. <span data-ttu-id="7b9ba-138">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-138">In the list, click the link in the selected row.</span></span>
-21. <span data-ttu-id="7b9ba-139">アクション ウィンドウで、[計画] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-139">On the Action Pane, click Plan.</span></span>
-22. <span data-ttu-id="7b9ba-140">[既定の注文設定] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-140">Click Default order settings.</span></span>
-23. <span data-ttu-id="7b9ba-141">[既定の注文タイプ] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-141">In the Default order type field, select an option.</span></span>
-    * <span data-ttu-id="7b9ba-142">[生産] を選択して、この製品マスターの既定の供給オプションが製品の生産であることを指定します。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-142">Select Production to specify that the default supply option for this product master is to produce it.</span></span>  
-24. <span data-ttu-id="7b9ba-143">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-143">Close the page.</span></span>
-25. <span data-ttu-id="7b9ba-144">[リリース製品の詳細] フォームを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7b9ba-144">Close the Released product details form.</span></span>
+1. <span data-ttu-id="5b844-107">**ナビゲーション ウィンドウ > モジュール > 製品情報管理 > 製品 > リリース済製品**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="5b844-107">Go to **Navigation pane > Modules > Product information management > Products > Released products**.</span></span>
+2. <span data-ttu-id="5b844-108">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-108">In the list, find and select the desired record.</span></span> <span data-ttu-id="5b844-109">2 番目の手順でリリースする製品マスターを選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-109">Select the product master that you have released in the second procedure.</span></span> <span data-ttu-id="5b844-110">この製品マスターは、分析コード ベースのコンフィギュレーション テクノロジで作成されます。</span><span class="sxs-lookup"><span data-stu-id="5b844-110">This product master is created with the dimension-based configuration technology.</span></span>  
+3. <span data-ttu-id="5b844-111">アクション ウィンドウで、**製品**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-111">On the Action Pane, select **Product**.</span></span>
+4. <span data-ttu-id="5b844-112">**分析コード グループ**を選択して、ドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="5b844-112">Select **Dimension groups** to open the drop dialog.</span></span>
+5. <span data-ttu-id="5b844-113">**保管分析コード グループ** フィールドで、ドロップダウン ボタンを選択し、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="5b844-113">In the **Storage dimension group** field, select the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="5b844-114">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-114">In the list, find and select the desired record.</span></span> <span data-ttu-id="5b844-115">保管分析コード グループにより、製品トランザクションに使用される保管分析コードが決まります。</span><span class="sxs-lookup"><span data-stu-id="5b844-115">The storage dimension group determines which storage dimensions are used for product transaction.</span></span> <span data-ttu-id="5b844-116">この手順では**サイト**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-116">Select **Site** for this procedure.</span></span>  
+7. <span data-ttu-id="5b844-117">**追跡用分析コード グループ** フィールドで、ドロップダウン ボタンを選択し、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="5b844-117">In the **Tracking dimension group** field, select the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="5b844-118">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-118">In the list, find and select the desired record.</span></span> <span data-ttu-id="5b844-119">追跡用分析コード グループにより、製品トランザクションに使用される追跡用分析コードが決まります。</span><span class="sxs-lookup"><span data-stu-id="5b844-119">The tracking dimension group determines which tracking dimensions are used for product transaction.</span></span> <span data-ttu-id="5b844-120">この手順では**なし**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-120">Select **None** for this procedure.</span></span>  
+9. <span data-ttu-id="5b844-121">**OK**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b844-121">Click **OK**.</span></span>
+10. <span data-ttu-id="5b844-122">**編集** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b844-122">Click **Edit**.</span></span>
+11. <span data-ttu-id="5b844-123">**品目モデル グループ** フィールドで、ドロップダウン ボタンを選択し、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="5b844-123">In the **Item model group** field, select the drop-down button to open the lookup.</span></span>
+12. <span data-ttu-id="5b844-124">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-124">In the list, find and select the desired record.</span></span> <span data-ttu-id="5b844-125">品目モデル グループには、品目の入庫および出庫時における品目の管理方法および処理方法を決定する設定が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5b844-125">Item model groups contain settings that determine how items are controlled and handled on item receipts and issues.</span></span> <span data-ttu-id="5b844-126">在庫モデル グループは、品目消費の計算方法も決定します。</span><span class="sxs-lookup"><span data-stu-id="5b844-126">They also determine how item consumption is calculated.</span></span> <span data-ttu-id="5b844-127">この手順では **FIFO** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-127">Select **FIFO** for this procedure.</span></span>  
+13. <span data-ttu-id="5b844-128">**原価の管理**セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="5b844-128">Expand the **Manage costs** section.</span></span>
+14. <span data-ttu-id="5b844-129">**品目グループ** フィールドで、ドロップダウン ボタンを選択し、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="5b844-129">In the **Item group** field, select the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="5b844-130">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-130">In the list, find and select the desired record.</span></span> <span data-ttu-id="5b844-131">品目グループは、在庫品目の分類による在庫管理に使用されます。</span><span class="sxs-lookup"><span data-stu-id="5b844-131">Item groups are used to manage inventory by dividing inventory items into groups.</span></span> <span data-ttu-id="5b844-132">この手順では **CarAudio** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-132">Select **CarAudio** for this procedure.</span></span>  
+16. <span data-ttu-id="5b844-133">アクション ウィンドウで、**計画**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-133">On the Action Pane, select **Plan**.</span></span>
+17. <span data-ttu-id="5b844-134">**既定の注文設定**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-134">Select **Default order settings**.</span></span>
+18. <span data-ttu-id="5b844-135">**既定の注文タイプ フィールド**で、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-135">In the **Default order type field**, select an option.</span></span> <span data-ttu-id="5b844-136">**生産**を選択して、この製品マスターの既定の供給オプションが製品の生産であることを指定します。</span><span class="sxs-lookup"><span data-stu-id="5b844-136">Select **Production** to specify that the default supply option for this product master is to produce it.</span></span>  
+19. <span data-ttu-id="5b844-137">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5b844-137">Select **Save**.</span></span>
+20. <span data-ttu-id="5b844-138">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5b844-138">Close the page.</span></span>
+21. <span data-ttu-id="5b844-139">**リリース製品の詳細**フォームを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5b844-139">Close the **Released product details** form.</span></span>
 
