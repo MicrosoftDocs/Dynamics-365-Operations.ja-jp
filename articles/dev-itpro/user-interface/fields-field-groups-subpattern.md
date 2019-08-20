@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 12384
 ms.assetid: f3bf8d00-8e6d-4af7-ab7e-3ff47fce9e21
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cfe48630c2bfda898a800b0c2452c35fbb0fd051
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ec5c7e35a934f023df1e72af4c7145484d72d44
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567021"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851171"
 ---
 # <a name="fields-and-field-groups-subpattern"></a>フィールドおよびフィールド グループのサブパターン
 

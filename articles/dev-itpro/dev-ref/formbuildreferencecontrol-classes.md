@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 63613
 ms.assetid: 0cc4deb6-201c-403e-a4bf-961e3eda1adf
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5665e38868f1ba620b234654b41866c0173abad
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 21dba72589b430de58331569fc518ce28aca7f51
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595473"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833704"
 ---
 # <a name="f-classes-formbuildreferencecontrol-to-formbuttonseparatorcontrol"></a>F クラス (FormBuildReferenceControl から FormButtonSeparatorControl)
 

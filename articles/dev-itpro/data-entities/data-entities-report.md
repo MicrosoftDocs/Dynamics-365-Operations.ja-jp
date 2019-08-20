@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 202654
 ms.assetid: 6ec8ea87-ea1e-4a10-9d67-2b6565c5c62e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: a09ca4e10ff83c48969edf3b9a5f107cca8f5910
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9eebc4431af1b34a303c18dbfe1eee1570e3c17a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551076"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850453"
 ---
 # <a name="find-information-about-standard-data-entities"></a>標準データ エンティティに関する情報の検索
 

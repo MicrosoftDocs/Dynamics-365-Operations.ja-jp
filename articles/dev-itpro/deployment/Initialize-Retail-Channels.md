@@ -3,7 +3,7 @@ title: Retail Cloud Scale Unit の初期化
 description: このトピックでは、Retail Cloud Scale Unit を初期化する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 04/05/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: d3587f7321bc5109a2fd11da2a9c377c12728274
-ms.sourcegitcommit: dda5e3f911a8b0066918cea6ed2a41660c3da13b
+ms.openlocfilehash: a8f952e8d265be7eaea143cb647017a1330bc9b8
+ms.sourcegitcommit: 1e1d63ec5dde569aaeb352b018ac7de4648cc8b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "1604056"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1796545"
 ---
 # <a name="initialize-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit の初期化
 
@@ -75,7 +75,7 @@ ms.locfileid: "1604056"
 
 ## <a name="deploy-additional-retail-cloud-scale-units-optional"></a>追加の Retail Cloud Scale Unit を展開する (オプション)
 
-最初の Retail Cloud Scale Unit (RCSU) を初期化した後、オプションで RCSU をもうひとつ追加で展開できます。 複数の RCSU が必要な場合は、上限を増やすためにサポート要求の提出が必要で、これには必要な RCSU の数、環境名、そして希望する地域が必要です。
+最初の Retail Cloud Scale Unit (RCSU) を初期化した後、追加のクラウド スケール ユニットが必要な場合はサポート要求を入力します。 サポート要求で、必要な RCSU の数、環境名、希望するリージョンを明記します。
 
 展開する追加の RCSU ごとに、チャネル データ ベースグループを 個別に作成することもお勧めします。 これを行うには、次の手順に従います。
 

@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 237fb0d30050aaa74da798e62918b72313d9aef3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f1efa1a07674ff7520ff1d306ee7427b57975913
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547340"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851507"
 ---
 # <a name="application-module"></a>アプリケーション モジュール
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 10234
 ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a3f5fba3c3b1309834e9ee3a13651d9d6784753
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ef813120df9158dc29a8a926a99ecc61c1b83ab6
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551780"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849853"
 ---
 # <a name="model-aggregate-data"></a>データの集計モデル
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 27791
 ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5efa1df21092c4d2022deeb7f147dce7990aafab
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 368fefc37c17cbad663aada32fc34ebc0533fb69
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555294"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850585"
 ---
 # <a name="submit-alerts-about-countryregion-specific-regulatory-features"></a>国または地域固有の規制機能に関わる通知を送信
 

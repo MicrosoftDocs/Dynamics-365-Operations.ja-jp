@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6a33ee1672adf0f0e7dffee3de43e1da128416a0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2d92b9ff8feb3fb5b82929e3d85678d8f27a6071
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547358"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851549"
 ---
 # <a name="pagelinkdesign-type"></a>PageLinkDesign タイプ
 

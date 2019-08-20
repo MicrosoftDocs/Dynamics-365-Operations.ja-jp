@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 265594
 ms.assetid: 964b5a15-9b9c-434c-a4c2-e14406ebfaeb
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4ea5a558eeb04d227f7f59d736379657a1a55b3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9ec61ac5d3e920892f9cd179da4d76dfcd4f0002
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555245"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850679"
 ---
 # <a name="configure-the-code-upgrade-service-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) で、コード アップグレード サービスを構成する
 
@@ -124,4 +124,4 @@ LCS のコードのアップグレード タイルは、移行元の Finance and
 
 [![リリース ブランチのマージ](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)
 
-これにより、[[ソース管理マージ ウィザード](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files#sourcecontrolwizard)] が開きます。これは、リリース\\\<のバージョン番号\>のブランチをトランク\\メインにマージする手順を案内します。 
+これにより、[[ソース管理マージ ウィザード](https://www.visualstudio.com/docs/tfvc/merge-folders-files#sourcecontrolwizard)] が開きます。これは、リリース\\\<のバージョン番号\>のブランチをトランク\\メインにマージする手順を案内します。 

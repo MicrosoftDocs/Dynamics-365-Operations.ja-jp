@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 7d75f46e996314d30f1c5a450cfcbc86fd8ba79e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d388736b1added697a4bbfc6513449df31893c1e
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557996"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851747"
 ---
 # <a name="ax-2009-migration--create-migration-groups"></a>AX 2009 の移行 – 移行グループの作成
 

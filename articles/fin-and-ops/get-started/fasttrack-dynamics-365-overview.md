@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 267934
 ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
-ms.openlocfilehash: dc566c33eaafed85f48ece1d4285401f4ff742a8
-ms.sourcegitcommit: 98894aa32150e95fb7e87f98703b266b03493362
+ms.openlocfilehash: f52831cdefed8dddb319b994e1977263b1081750
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "1718583"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850939"
 ---
 # <a name="microsoft-fasttrack-for-finance-and-operations"></a>Microsoft FastTrack for Finance and Operations
 

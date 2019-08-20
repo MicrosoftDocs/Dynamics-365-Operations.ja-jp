@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18231
 ms.assetid: 18a1ba1e-5c75-4cff-95f7-ec0beef0a28e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 595e05c48b63440e3ea7cb68719b11c6e54e8ff7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 904e0ca794504910eded2ff2ec59c4b642de8705
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544090"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850559"
 ---
 # <a name="deploy-ax-2012-r3-on-azure-by-using-lifecycle-services-lcs"></a>Lifecycle Services (LCS) を使用して Azure に Dynamics AX 2012 R3 を配置する
 
@@ -35,7 +35,7 @@ Azure はオープンで柔軟なクラウド プラットフォームであり�
 -   **柔軟性を入手** クラウドを使用すると、変化するビジネスのニーズに合わせて簡単にスケールアップ (またはスケールダウン) できます。
 
 > [!NOTE]
-> Dynamics AX 2012 R3 は、オンプレミスにも配置できます。 詳細については、[Microsoft Dynamics AX 2012 のインストール](https://technet.microsoft.com/en-us/library/dd362138.aspx) のトピックを参照してください。
+> Dynamics AX 2012 R3 は、オンプレミスにも配置できます。 詳細については、[Microsoft Dynamics AX 2012 のインストール](https://technet.microsoft.com/library/dd362138.aspx) のトピックを参照してください。
 
 ## <a name="the-azure-services-model"></a>Azure サービス モデル
 Azure は Software-as-a-Service (SaaS)、 Platform-as-a-Service (PaaS)、および Infrastructure-as-a-Service (IaaS) の 3 種類のサービスを提供しています。

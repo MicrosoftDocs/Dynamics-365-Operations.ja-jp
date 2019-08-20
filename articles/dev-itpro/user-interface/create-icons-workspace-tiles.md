@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 141853
 ms.assetid: 4f78c3a4-011f-4ebd-bada-98e77d43821e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 3cd0c01303412c304db6cb8be9549f02f3b26df4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0c9cd293708891132b3aee3e5a0af2a49149f94c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570072"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851219"
 ---
 # <a name="create-icons-for-workspace-tiles"></a>ワークスペース タイル用のアイコンの作成
 

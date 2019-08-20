@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef05d66145f40958f9bb0bb57df05f90c025938f
-ms.sourcegitcommit: f7a1e74a639dfbe470f7d57d4fc55e3bf4c6a74a
+ms.openlocfilehash: 1543ccae77f19e07f34bcbd3a8df6d04fd2b136e
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "1540878"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862922"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 
@@ -75,6 +75,8 @@ ms.locfileid: "1540878"
 | --sqluser                   | SQL Server のユーザーを指定するには、このパラメーターを使用します。 **AOSUser** を使用する必要があります。                                    |
 | --sqlpwd                    | SQL Server のパスワードを指定するには、このパラメーターを使用します。                                                            |
 | --isinmaintenancemode       | 構成モードを有効または無効にするには、このパラメーターを使用します。 オンにするには **true** とし、オフにするには **false** にします。 |
+
+## <a name="enable-or-disable-configuration-keys"></a>コンフィギュレーション キーの有効化 (または無効化)
 
 Finance and Operations の Application Object Server (AOS) のインスタンスを再起動すると、システムはメンテナンス モードになります。 次のスクリーンショットに示すように、構成キーを有効にすることができます。 
 

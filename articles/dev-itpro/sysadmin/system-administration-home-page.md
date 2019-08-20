@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7aa4dc8a2d516230abe825a084020cb716b66678
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a71d1f71a93c7c7f93518269abd29856ecad80e4
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537126"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863257"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 
@@ -123,3 +123,4 @@ Microsoft Dynamics 365 for Unified Operations Mobile アプリにより、組織
 - [メンテナンス モード](maintenance-mode.md)
 - [コンフィギュレーション済みのシステム アカウント](pre-configured-system-accounts.md)
 - [B2B ユーザーの Azure AD へのエクスポート](implement-b2b.md)
+- [セッション アイドル タイムアウトの設定](session-idle-timeout.md)

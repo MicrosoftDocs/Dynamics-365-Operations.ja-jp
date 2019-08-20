@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26751
 ms.assetid: 8bd10c93-9d5e-49d7-b20f-7f804e16e76c
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ffd29a18875dd13da35856bb4b55ebc27d41078
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b744143816c91e17e76e5c5e0fa1a79856e6cb74
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544136"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833528"
 ---
 # <a name="language-integrated-query-linq-provider-for-c"></a>C# の統合言語クエリ (LINQ) プロバイダー
 

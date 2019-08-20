@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 23401
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb32703db45efc02debc8e23a7e9d0b61471aac4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1f8e84933dcce7ee1f58d642fbb0d99f789be1cd
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544148"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833554"
 ---
 # <a name="development-tools-in-visual-studio"></a>Visual Studio の開発ツール
 

@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysAbout
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 69914
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2017-07-15
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 05fd88c117ba25beeaef2f0012d9c8d42608662d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1b7b2ac3acaf1d8fa09e72bc2da59060930ae577
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537174"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851727"
 ---
 # <a name="software-lifecycle-policy-and-on-premises-releases"></a>ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース
 
@@ -31,7 +31,7 @@ ms.locfileid: "1537174"
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations (設置型) リリースにおけるライフサイクルおよびサポート ポリシーの概要を説明します。
 
 ## <a name="modern-lifecycle-policy"></a>Modern Lifecycle ポリシー 
-Microsoft Dynamics 365 for Finance and Operations (設置型) ソフトウェアは、Modern Lifecycle ポリシーの対象となります。 Modern Lifecycle Policy は、継続的に保守およびサポートされる製品およびサービスをカバーします。 このポリシーの詳細については、[Modern Lifecycle ポリシー](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy) を参照してください。  
+Microsoft Dynamics 365 for Finance and Operations (設置型) ソフトウェアは、Modern Lifecycle ポリシーの対象となります。 Modern Lifecycle Policy は、継続的に保守およびサポートされる製品およびサービスをカバーします。 このポリシーの詳細については、[Modern Lifecycle ポリシー](https://support.microsoft.com/help/30881/modern-lifecycle-policy) を参照してください。  
 
 ライセンス供与された顧客は、次のサービスとシステムの要件に従って、Dynamics 365 for Finance and Operations 設置型のソフトウェアに対する更新で最新の状態にする必要があります。 このポリシーでは、SA (Software Assurance) または拡張計画を維持し、このトピックの後半で説明する更新プログラムを展開する必要があります。 修正サポート ライフサイクル ポリシー (5 + 5) を使用するお客様は、Microsoft Dynamics AX 2012 R3 にダウングレードする必要があります。 顧客が SA または Enhancement Plan を失うと、Microsoft Dynamics AX 2012 R3 への永久ライセンスの権利のみが適用され、Microsoft Dynamics 365 for Finance and Operations (設置型) ソフトウェアをアンインストールする必要があります。 
 

@@ -10,19 +10,19 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 3dd56c17f92aed76c19e3e82dd32c651723d4c1c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c7de876002db1d6711af9874279b0d2c6f900018
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570188"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833105"
 ---
 # <a name="update-code-and-environments-for-retail-projects"></a>Retail プロジェクトのコードと環境の更新
 

@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysTaskRecorderPane
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 24271
 ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31193c92a3b610dd9a2b80c4e592e3a03834c96a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3b0a56670aff7c9b0e4009ac84f161d1b3434789
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571089"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851053"
 ---
 # <a name="task-recorder"></a>タスク レコーダー
 

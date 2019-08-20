@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8812aaf7b32edc1c21fbe16f7fc344c4b78f0e5c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 28c99e8f499dc5265fef206b32ef7edddc3e6808
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557987"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851489"
 ---
 # <a name="lookup-module"></a>参照モジュール
 

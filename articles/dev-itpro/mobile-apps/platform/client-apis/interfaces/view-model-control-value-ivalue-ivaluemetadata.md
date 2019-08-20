@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4a2673a937a0df04a6984e579b6c03f7d7d2e250
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3fb07d9ff1a511ada39f986fd24cd32ead4ac9db
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547350"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851535"
 ---
 # <a name="valuemetadata-type"></a>ValueMetadata タイプ
 

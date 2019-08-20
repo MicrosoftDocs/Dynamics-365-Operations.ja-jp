@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: e58f4291d6413117657a6aaa2e215c8d7386cb47
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 9219c860e5e87b2c19ed00a5fe022d9d924451de
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595379"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833442"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 

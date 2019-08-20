@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 106163
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 1df1e7cead3c802079bf4faba66b91fc30e3e947
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a043e160d71e0e13e5f4379631eb6c1be12c1f23
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554485"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851667"
 ---
 # <a name="upgrade-from-ax-2012---plan-by-using-the-upgrade-analyzer-tool"></a>AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
 

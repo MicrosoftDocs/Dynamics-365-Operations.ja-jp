@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 24821
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0fa739009e55b61791db755fdcedca1710da2f12
-ms.sourcegitcommit: 0ae1a94c88dbf56e9b45e45ada980f7136ae640a
+ms.openlocfilehash: 87d9d93d9aa630cf802e6d6fc84b4f817312961d
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1539152"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848277"
 ---
 # <a name="recurring-integrations"></a>定期統合
 

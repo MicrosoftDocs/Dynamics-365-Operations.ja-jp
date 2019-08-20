@@ -10,19 +10,19 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailSharedParameters
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Retail, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 3f8e1a9e4e4d4614767c7fed9d9478080f50c992
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 4f50e384e45d04038401db5347e500fc47b20dfb
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595559"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833155"
 ---
 # <a name="manage-bing-maps-for-your-organization"></a>組織の Bing マップの管理
 

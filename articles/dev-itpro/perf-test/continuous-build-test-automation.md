@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 13171
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b612680d2de97f03e32cf2c2b717a6d963f13ab
-ms.sourcegitcommit: 9917df8c0c9320955c61186cd922c8df894a4f25
+ms.openlocfilehash: 5182bc14a07a0972602d2ff55a1f39934acf73a6
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "1700648"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833282"
 ---
 # <a name="deploy-and-use-an-environment-that-supports-continuous-build-and-test-automation"></a>継続的なビルドとテストの自動化をサポートする環境を配置して使用する
 

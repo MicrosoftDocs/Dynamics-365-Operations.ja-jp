@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 10884
 ms.assetid: 65fb607a-58e4-4800-81b5-6058acb003cb
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d29324c626195462da1e4f435ebcd0d5dc0e54de
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 98ac3c38be33c3896a7036902d6086b931fe0eb0
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568294"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851445"
 ---
 # <a name="office-integration-tutorial"></a>Office 統合のチュートリアル
 
@@ -443,7 +443,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 1.  Internet Explorer で、**システム管理** &gt; **設定** &gt; **電子メール**  &gt; **電子メール パラメータ**の順に移動します。
 2.  **SMTP 設定**をクリックします。
 3.  **送信メール サーバー** を要求された SMTP サーバーに設定します。
-    -   「[Office 365 製品](https://support.office.com/en-us/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c)」 (\*.onmicrosoft.com アカウントを含む) の場合: smtp.office365.com (**設定** &gt; **メール** &gt; **POP および IMAP** で outlook.office.com を通してこの設定を検索します。)
+    -   「[Office 365 製品](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c)」 (\*.onmicrosoft.com アカウントを含む) の場合: smtp.office365.com (**設定** &gt; **メール** &gt; **POP および IMAP** で outlook.office.com を通してこの設定を検索します。)
     -   Outlook/Hotmail 用: smtp-mail.outlook.com
 
 4.  ユーザー名とパスワードを適切な電子メール アカウントとパスワードに設定します。
@@ -458,8 +458,8 @@ SysEmail フレームワークを介して有効になっている電子メー�
 13. テスト メッセージを受信するには、宛先アドレスをメール アドレスに変更します。
 14. メッセージの件名および本文を入力します。
 15. **送信** をクリックします。 メッセージは 1 〜 5 分で配信する必要があります。 メッセージが**電子メール パラメーター** ページに設定されている電子メール アカウントから送信されることに注意してください。 そのメール アカウントに**メールの送信**ダイアログ ボックスで使用されている送信元アドレスの「送信者」(または「このメールボックスからメールを送信」) のアクセス許可が与えられている場合、そのアドレスからのメッセージが表示されます。
-    -   Send As 権限は、Office 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メールボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する** で構成することができます。 詳細については、「[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)」を参照してください。
-    -   ユーザーが電子メール メッセージを送信する前に、**電子メール パラメーター** ページで設定されている電子メール アカウントにクライアントの各ユーザー電子メール アカウントの 「送信者」権限を与える必要があります。 詳細については、「[Office 365 を使用して電子メールを送信するためのマルチ機能デバイスまたはアプリケーションの設定方法](https://technet.microsoft.com/en-us/library/dn554323(v=exchg.150).aspx)」を参照してください。
+    -   Send As 権限は、Office 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メールボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する** で構成することができます。 詳細については、「[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)」を参照してください。
+    -   ユーザーが電子メール メッセージを送信する前に、**電子メール パラメーター** ページで設定されている電子メール アカウントにクライアントの各ユーザー電子メール アカウントの 「送信者」権限を与える必要があります。 詳細については、「[Office 365 を使用して電子メールを送信するためのマルチ機能デバイスまたはアプリケーションの設定方法](https://technet.microsoft.com/library/dn554323(v=exchg.150).aspx)」を参照してください。
 
 16. ユーザーの介入なしにサーバーから直接送信される電子メールは、バッチ処理を介して送信され、**電子メール ディストリビューター バッチ**プロセスを開始する必要があります。 プロセスを開始するには、これらの手順に従います。
     1.  **システム管理** &gt; **定期処理のタスク** &gt; **電子メールの処理** &gt; **バッチ**と移動します。

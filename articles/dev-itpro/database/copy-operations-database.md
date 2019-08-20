@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 269254
 ms.assetid: 7464b180-8ace-4b65-8b53-ba608d0611e1
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: LaneSwenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 62e0d3fcea6c1de70c6d2a328c5395befa891f16
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7199807cc4295f87b1b4e83a2bde0d6fface993f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550941"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848165"
 ---
 # <a name="export-copies-of-finance-and-operations-databases-to-restore-later"></a>後で復元する Finance and Operations のデータベースのコピーをエクスポートする
 

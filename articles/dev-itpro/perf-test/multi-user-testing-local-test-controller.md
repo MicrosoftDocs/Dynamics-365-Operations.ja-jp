@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b886ab9a4bcf44013b95eee8e651d04f74ef077
-ms.sourcegitcommit: 7b5ff31c0a82809641beb681510201b942932c74
+ms.openlocfilehash: d3304860d756dad26b08d54e704eed3517028d90
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "1621851"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833284"
 ---
 # <a name="multi-user-testing-with-the-performance-sdk-and-a-local-test-controller"></a>パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト
 

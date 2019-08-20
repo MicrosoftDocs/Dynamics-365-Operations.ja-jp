@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 31241
 ms.assetid: fef883f3-981a-4bba-9a41-d9dde63b0cd0
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f5fe5ec83b0e2a89932eaef7f7c4243c22f6050d
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 38f2b9f4f93b7cbde6d0b0cd260d2f624355ffac
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595465"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833189"
 ---
 # <a name="configure-authentication-providers"></a>認証プロバイダーのコンフィギュレーション
 

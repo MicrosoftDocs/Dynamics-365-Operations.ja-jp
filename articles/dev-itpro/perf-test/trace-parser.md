@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 13441
 ms.assetid: eb0fbbaf-07d4-4a02-85e8-0d4f7920a0b9
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fba6b140d68f5949429a2daa683db25294284964
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 12b361a8e8924834636e74c8deeb4adec8aae085
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595627"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833236"
 ---
 # <a name="diagnose-issues-and-analyze-performance-by-using-trace-parser"></a>Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 

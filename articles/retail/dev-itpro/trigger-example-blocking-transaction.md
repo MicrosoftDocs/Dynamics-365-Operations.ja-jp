@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 65893
 ms.assetid: 605f5986-f84f-4b18-b94e-b0912cb367a1
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5994755b11bc2268686bedc7664c7992ca3e6d79
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 811c640add3f3e4f0ab8fa092eb6e752ab3d11e6
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553081"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833056"
 ---
 # <a name="block-transactions-by-using-triggers"></a>トリガーを使用してトランザクションをブロックする
 

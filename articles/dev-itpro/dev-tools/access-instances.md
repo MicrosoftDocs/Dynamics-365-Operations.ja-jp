@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b1a860157050b3714198ab5bffef5e89390cf68
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 7f1b5b341886ac6cb911d4562a59c40820913ab0
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595381"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833590"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 

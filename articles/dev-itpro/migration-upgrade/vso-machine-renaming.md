@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 25911
 ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d424ad3e911fcd7b98e1a14c7c7226b6710774a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d0f59c949afa1871bf7c36dfed8fc42d71d28cfa
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554476"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851647"
 ---
 # <a name="rename-a-local-development-vhd-environment"></a>ローカル開発 (VHD) 環境の名前変更
 

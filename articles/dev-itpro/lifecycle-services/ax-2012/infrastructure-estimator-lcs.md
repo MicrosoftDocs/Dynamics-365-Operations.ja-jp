@@ -8,7 +8,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 19081
 ms.assetid: ce126e17-5dc6-42fd-a9aa-4932e3db3830
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 21ec32bafeeb51fd64f579270b0def656fc2548e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d12e2ff43a5b404a901033675f04f9c028fe6b58
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544084"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850552"
 ---
 # <a name="infrastructure-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール
 

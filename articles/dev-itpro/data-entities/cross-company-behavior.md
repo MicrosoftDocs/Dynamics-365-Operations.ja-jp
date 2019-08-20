@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 25371
 ms.assetid: f293d97a-9f70-4c45-91d4-574731892353
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c44fbb29c5c66abf59f1a6089ce1cef4d64a4e2c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a104711574c87ba90f291f57b74412c7a3e8fb9c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544274"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850459"
 ---
 # <a name="cross-company-behavior-of-data-entities"></a>データ エンティティの会社間動作
 

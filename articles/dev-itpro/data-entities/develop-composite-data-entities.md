@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 18411
 ms.assetid: 1cb19868-cbfd-4f45-bc47-39b9f303583d
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fdfe2f472ae8b052446a1db48cdedd5f4855ebc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 520e970f126a1b5d06822faf153cdb2f89f6e6d0
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544273"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850415"
 ---
 # <a name="develop-composite-data-entities"></a>複合データ エンティティの開発
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 4624
 ms.assetid: 7ea995fa-8ea0-403d-8a68-f19993c40a6d
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af8d38ccc48db39ab7bf071c54a86e2786be18c1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1dc7dc68ceb5986e4a4f1a80552d9a9c81f5ef3e
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550972"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848167"
 ---
 # <a name="validations-default-values-and-unmapped-fields"></a>検証、既定値、およびマップされていないフィールド
 

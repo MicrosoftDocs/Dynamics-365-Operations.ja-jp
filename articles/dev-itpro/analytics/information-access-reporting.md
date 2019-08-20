@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 266104
 ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 192fc687c62311a1a8a27699106c9fdc82be96cd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1cd398c39d99e55d2d702c755026645781963e64
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553778"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863688"
 ---
 # <a name="information-access-and-reporting"></a>情報へのアクセスとレポート
 
@@ -87,7 +87,7 @@ Finance and Operations アプリケーションでサポートされる情報へ
 
 レポート ソリューションに適したツールを選択する際には、次のテーブルを参考にすることができます。
 
-[![レポート スコアカード](https://msdnshared.blob.core.windows.net/media/2016/07/Report-scorecard.png)](https://msdnshared.blob.core.windows.net/media/2016/07/Report-scorecard.png)
+![レポート スコアカード](media/report-scorecard.png)
 
 > [!NOTE]
 > 「ほぼリアルタイム」は、リアルタイムよりもわずかに遅く処理されたデータを示します。

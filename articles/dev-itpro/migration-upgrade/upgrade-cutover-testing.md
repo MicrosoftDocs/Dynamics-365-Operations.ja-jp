@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 2c24e6770fc13172074c7e44d459c03811fd262d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e7fa7e4f98c27d35e3f8d1082ab64d72adf78ef
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554484"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851669"
 ---
 # <a name="upgrade-from-ax-2012---cutover-testing-mock-cutover"></a>AX 2012 からのアップグレード - 切替テスト (切替モック)
 

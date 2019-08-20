@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 31361
 ms.assetid: 8982f158-f638-46d7-b3f7-ba8cfd356d57
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff2acbe94acf5d6b1d921ecb9c32e9f7d76955f3
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 813ab2e7244301a4f3b595659e25ce342dec4731
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595383"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833610"
 ---
 # <a name="x-math-runtime-functions"></a>X++ 数学ランタイム関数
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7b1df7ced54fe692c2cbfc49612a943eda91229
-ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
+ms.openlocfilehash: 2bee58df2e0f9444f420a5e16be15a62e7de1ac7
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538883"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851435"
 ---
 # <a name="batch-processing"></a>バッチ処理
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 219714
 ms.assetid: 773fb32d-14c1-4dc8-8330-0332c6a037a2
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fe22915375f31ce8273b744685057dac2aff621c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 27be921d90fda288052cdff09931d654e4465c6e
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553082"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833073"
 ---
 # <a name="retail-store-scale-unit"></a>Retail Store Scale Unit
 

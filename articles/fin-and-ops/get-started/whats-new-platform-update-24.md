@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 20189-XX-XX
 ms.dyn365.ops.version: Platform 24
-ms.openlocfilehash: a58d3bde816d9f3d07f80d314d3a883f0d370ef6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: dbec280baf5cb7ff8d5a53ba05f8c067a29f24fe
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512662"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863407"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-platform-update-24-march-2019"></a>Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
 
@@ -111,7 +111,7 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。

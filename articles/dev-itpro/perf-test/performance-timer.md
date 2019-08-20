@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 27191
 ms.assetid: 64b8f266-a9e1-48ee-93c7-e082f21ddfa7
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0ecaa51ac75b83acced17cec0b5974fd6afa51e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b0274a5b984b4f56dc436fbc70c230acf7ab0a01
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569718"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833278"
 ---
 # <a name="performance-timer"></a>パフォーマンス タイマー
 

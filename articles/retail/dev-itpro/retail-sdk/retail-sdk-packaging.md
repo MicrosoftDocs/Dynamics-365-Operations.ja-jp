@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 28021
 ms.assetid: 0fa3c8e7-49e4-417d-afe9-fa2055f6546f
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 544c3c42ce542fef345da0f959b082aeaa74857e
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 5375b0f97e69ec4079671d5c39b6c05a2aac8eb5
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577916"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833730"
 ---
 # <a name="create-retail-deployable-packages"></a>配置可能な小売パッケージの作成
 

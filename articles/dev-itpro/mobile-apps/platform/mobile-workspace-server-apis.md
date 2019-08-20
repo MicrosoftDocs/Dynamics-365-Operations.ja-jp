@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 255544
 ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: f3a1f7893aa7835c04b331045911eb3b9c47212e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f3424707e1d27af862c236d389cca0a18374db70
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549736"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851471"
 ---
 # <a name="server-side-development-workspace-x-apis"></a>サーバー側の開発 (ワークスペース X++ API)
 

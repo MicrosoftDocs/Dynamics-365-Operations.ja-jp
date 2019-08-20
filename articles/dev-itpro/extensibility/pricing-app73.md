@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-12-10
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: d2f46e9f2bbcfbd5e566107405af202efcea104f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c03c749e4b76ebe855ea49fe01073bc48946905f
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544104"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833398"
 ---
 # <a name="price-and-discount-extensibility"></a>価格と割引の拡張性
 

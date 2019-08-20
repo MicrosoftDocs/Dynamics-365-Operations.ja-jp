@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 29231
 ms.assetid: 90d5a70b-a99b-4e79-a52d-b4ef5a942607
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 24f1dcab826333fbf59ef6996211489d1fed6b8a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 35bd291adcfc34e801f7f655ff42fda502404223
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571719"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851041"
 ---
 # <a name="workspace-page-filter-group-subpattern"></a>ワークスペース ページ フィルター グループのサブパターン
 

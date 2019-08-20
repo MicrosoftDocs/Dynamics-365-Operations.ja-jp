@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 255544
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 9b6ee5b1187f24013dfde73a1d5339018a3ff2fa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9a77b902606a2b5bb8c39016656f0d62e5793d7a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560607"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851645"
 ---
 # <a name="business-logic-events"></a>ビジネス ロジック イベント
 

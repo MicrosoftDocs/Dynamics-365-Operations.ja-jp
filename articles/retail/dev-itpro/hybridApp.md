@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: dccc59abf1f8aab1dc7545ff67bfd43146bc2a4e
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 28b4785d35f0e6bf05d504a35b1b77a252a6e305
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595560"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833059"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]

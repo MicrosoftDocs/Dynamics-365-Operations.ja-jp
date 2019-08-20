@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 24861
 ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: f6408bc601536e31e8318089c374af6c20133ab3
-ms.sourcegitcommit: 987d7ef5a5df53e2272db6814fe6ef78be1a9aab
+ms.openlocfilehash: a2a35f7612671251c9a1cbd591258ae2a9827529
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "1540171"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850365"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
 
@@ -84,7 +84,7 @@ Dynamics 365 for Finance and Operations で AD FS アプリケーションを使
 
 ## <a name="certificates"></a>証明書 
 
-アプリがインストールされているデバイスに、リソースにアクセスする適切な証明書があることを確認します。 自己署名証明書を使用している場合、コンピューター アカウント/ユーザー アカウントの信頼されているルートに star(AX) と AD FS をインポートすることで、これらが各デバイスにインストールされている必要があります。 詳細については、[自己署名証明書の作成およびエクスポート](https://technet.microsoft.com/en-us/library/ff710475(v=ws.10).aspx) を参照してください。
+アプリがインストールされているデバイスに、リソースにアクセスする適切な証明書があることを確認します。 自己署名証明書を使用している場合、コンピューター アカウント/ユーザー アカウントの信頼されているルートに star(AX) と AD FS をインポートすることで、これらが各デバイスにインストールされている必要があります。 詳細については、[自己署名証明書の作成およびエクスポート](https://technet.microsoft.com/library/ff710475(v=ws.10).aspx) を参照してください。
 
 ## <a name="configure-the-application"></a>アプリケーションのコンフィギュレーション
 

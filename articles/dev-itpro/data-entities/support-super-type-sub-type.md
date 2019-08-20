@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 25331
 ms.assetid: d59cefc0-be94-42e9-a22e-87493985dbcd
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448ab6deb50e63fd63c7501aea1c9b6991a94cd8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 04254a8f68018e9823cae117c3c0a8cc109934d6
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544265"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848269"
 ---
 # <a name="super-types-and-sub-types"></a>スーパー タイプおよびサブ タイプ
 

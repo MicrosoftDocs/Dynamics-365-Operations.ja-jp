@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 265974
 ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22bd043c6a21b8fae2f4f76ba21e3556ce3f06a3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 99a4b0929ef06fb644b1fc0df768f818e15ad7c0
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551067"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850409"
 ---
 # <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
 

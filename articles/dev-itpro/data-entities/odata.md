@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b36ba02a5539f59e4ff74fea5a676e2d812fe84
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 13191dbc85571101e6a8fe34adf06fcda8a2e0bb
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595461"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848275"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 

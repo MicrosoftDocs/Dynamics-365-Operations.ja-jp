@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: 140993
 ms.assetid: 7ab12871-d7b9-4bf8-9bde-1ab372db421a
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: f2d217c5c1fac6fa5f4d425925d534cb6e77f275
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f103eadb4a36f63ce9fa336093a46662dd737bc4
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547993"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863419"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-platform-update-2-august-2016"></a>Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月) の新機能および変更された機能
 

@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-ms.openlocfilehash: f2a2ad56d7492a87069a6204081fba079e53fa1b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e3c4476a54aaf3edaed87fc20fe835a3b36c31c0
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537522"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833052"
 ---
 # <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>Typescript および小売販売時点管理 (POS) の C# プロキシ
 

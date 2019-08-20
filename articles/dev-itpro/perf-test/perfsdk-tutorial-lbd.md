@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: b033b5ccac793d72a436af852602152080ca5d5e
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: 9214951c3dea619967696cabc34b4b2808311927
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624849"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833250"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 
@@ -274,7 +274,7 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
     Environment.SetEnvironmentVariable("testroot", testroot);
     ```
 
-2. [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** ディレクトリの **Visual Studio Online** フォルダーに配置します。
+2. [https://www.microsoft.com/download/details.aspx?id=50420](https://www.microsoft.com/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** ディレクトリの **Visual Studio Online** フォルダーに配置します。
 3. **Visual Studio Online** フォルダ内の **setup.cmd** ファイル内容を次のコードと一致するように変更します。
 
     ```

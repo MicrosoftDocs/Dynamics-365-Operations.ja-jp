@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26781
 ms.assetid: 056d4064-e365-487c-a606-e2fadfe28242
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4135506ce79ea51b10350220f38f46aa4c6776c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: eb640a936c0df279f66c90884863f30f7cd02168
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544128"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833512"
 ---
 # <a name="changes-in-x-and-the-x-compiler"></a>X++ と X++ コンパイラの変更
 

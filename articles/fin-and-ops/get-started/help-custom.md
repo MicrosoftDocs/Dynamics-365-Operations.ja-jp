@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2018-11-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecce0a1f75d4d307be586f491f655059a0f1dd51
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2444b0fb5d56a0c9540c16fc8c5746f480141962
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561964"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850889"
 ---
 # <a name="connect-a-custom-help-site-to-dynamics-365-for-finance-and-operations"></a>カスタム ヘルプ サイトを Dynamics 365 for Finance and Operations に接続する。
 

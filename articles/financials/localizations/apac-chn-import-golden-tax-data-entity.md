@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr
 audience: IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 261394
 ms.search.region: China (PRC)
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c957ec8ddc91a59b5b52c3f596a6037379f48b28
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: dfde4faf1eea9356c482e6be4eaa4e353f4c8717
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537608"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850732"
 ---
 # <a name="import-the-chinese-golden-tax-data-entity"></a>中国金税データ エンティティのインポート
 

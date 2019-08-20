@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 76764
 ms.assetid: f061b6cf-16f7-440e-94b9-f40666dd7431
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87928ab631c346d2c379c6fe977b5606985a5ba6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 442552effacddde37f28d9a116386bcaa134938c
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544157"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833584"
 ---
 # <a name="build-operations"></a>ビルド操作
 

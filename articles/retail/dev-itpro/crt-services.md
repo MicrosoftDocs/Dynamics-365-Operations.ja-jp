@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-18-05
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.openlocfilehash: 35182afafd3649b9669564b289cdfc5a39975e20
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: aa3aa29fa4cf04cadc9f9a8107f9204ba4416a20
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556198"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833168"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 
@@ -348,7 +348,7 @@ public sealed class MyRequestHandler : SingleRequestHandler< MyRequest, MyRespon
 
 サービス レイヤーの上は、ワークフロー レイヤーです。 ワークフローは、サービスとビジネス ロジックを共に業務プロセスを定義するコレクションです。 たとえば、顧客がカートに品目を追加すると、価格の取得、検証の実行、在庫数量の確認、出荷費用の計算、税計算、および割引計算をするためワークフローを使用できます。 既存のワークフローをカスタマイズすることも、新しいワークフローを作成することもできます。 ワークフローを使用して、業務プロセスの一部としてサードパーティ製システムに接続することもできます。
 
-サービスと同じように、ワークフローは要求/応答パターンを使用します。 基本 CRT [要求](https://technet.microsoft.com/en-us/library/microsoft.dynamics.commerce.runtime.messages.request.aspx) クラスから継承された要求オブジェクト。 基本 CRT [応答](https://technet.microsoft.com/en-us/library/microsoft.dynamics.commerce.runtime.messages.response.aspx) クラスから継承された応答オブジェクト。 ワークフローには、[WorkflowRequestHandler<TRequest, TResponse>](https://technet.microsoft.com/en-us/library/jj764791.aspx) クラスを拡張する要求ハンドラー クラスもあります。 ワークフローを作成するには、要求クラスおよび応答クラスを作成し、ワークフローのビジネス ロジックが含まれる要求ハンドラー クラスを作成します。
+サービスと同じように、ワークフローは要求/応答パターンを使用します。 基本 CRT [要求](https://technet.microsoft.com/library/microsoft.dynamics.commerce.runtime.messages.request.aspx) クラスから継承された要求オブジェクト。 基本 CRT [応答](https://technet.microsoft.com/library/microsoft.dynamics.commerce.runtime.messages.response.aspx) クラスから継承された応答オブジェクト。 ワークフローには、[WorkflowRequestHandler<TRequest, TResponse>](https://technet.microsoft.com/library/jj764791.aspx) クラスを拡張する要求ハンドラー クラスもあります。 ワークフローを作成するには、要求クラスおよび応答クラスを作成し、ワークフローのビジネス ロジックが含まれる要求ハンドラー クラスを作成します。
 
 たとえば、現金払いトランザクションまたは顧客からの注文を作成する場合、注文が作成される前に、多くの異なるステップやワークフローが完了します。 注文プロセスでのワークフロー ステップの 1 つは、カート要求の保存です。 カート要求ワークフローの保存は、POS からカートに加えられる変更の保存を担当します。 たとえば、買い物カゴに品目を追加したり、数量を変更するなど POS で行う行為は、SaveCart を呼び出して POS とデータベースに変更を保存します。
 

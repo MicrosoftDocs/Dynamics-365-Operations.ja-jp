@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: e3a5eda1f219a9e1c0ee448864ec3763f9fe155f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7273afe46c8bc793de9352a4755a198ba31089f1
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561798"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851913"
 ---
 # <a name="subscriptions-lcs-projects-and-azure-active-directory-tenants-faq"></a>サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
 

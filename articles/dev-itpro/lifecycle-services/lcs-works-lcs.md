@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 84711
 ms.assetid: 785baef9-aa46-44c3-95fa-e34749c2b44e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b5adfde75e098bfe5b8a9a8091eb25a1422a506
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 02e28b97f41d2f29392c4c72b9af9e0f10856f7c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552501"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850641"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-customers"></a>Finance and Operations の顧客用の Lifecycle Services (LCS)
 

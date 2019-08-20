@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 28271
 ms.assetid: 23b4dade-cb99-4c61-bd1e-cf2aeafddea4
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 852b7d3bd321d9c73ad708c07b6e6c3fd3b95b29
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6f10c5f438fbf9cb1e0b96735aa80c923cccf016
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559542"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851089"
 ---
 # <a name="system-defined-buttons"></a>システム定義ボタン
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 8cf63a63ff98b6168bdc61536334c9d7a44579b0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e2b8ea378557b92c0aadeaea78ccd758c8cdef75
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555289"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741209"
 ---
 # <a name="deploy-retail-mobility-devtest-environments-on-azure"></a>Azure での Retail Mobility 開発/テスト環境の配置
 
@@ -64,7 +64,7 @@ Azure サブスクリプションに LCS プロジェクトを接続します。
 
 4. **次へ** をクリックします。
 5. **ダウンロード**をクリックして管理証明書をダウンロードします。 この管理証明書により、LCS はお客様の代わりに Azure と通信できます。 既定では、管理証明書はコンピューターの**ダウンロード** フォルダーに保存され、**LifecycleServicesDeployment.cer** という名前が付きます。
-6. 管理証明書を Azure にアップロードします。 これを行うには、[[Azure 管理 API 管理証明書をアップロード](https://docs.microsoft.com/en-us/azure/azure-api-management-certs)] の手順を参照してください。
+6. 管理証明書を Azure にアップロードします。 これを行うには、[[Azure 管理 API 管理証明書をアップロード](https://docs.microsoft.com/azure/azure-api-management-certs)] の手順を参照してください。
 
 7. LCS で **Microsoft Azure 設定**パネルを表示するブラウザーに戻ります。 **次へ** をクリックします。
 8. 地域を選択します。 AX 2012 R3 環境は、この領域のデータ センターに配置されます。
@@ -162,7 +162,7 @@ Azure に Retail Mobility 開発/テスト環境を配置するには、以下�
 11. **完了** をクリックします。 **環境の展開** パネルが再表示されます。
 12. 配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。
     -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md)」を参照してください。
-    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/) を参照してください。
+    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 13. ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
 14. **次へ** をクリックします。
@@ -205,7 +205,7 @@ AOS がインストールされているサーバーまたは仮想マシンに�
 
 ### <a name="install-modern-pos-on-external-devices"></a>外部デバイスに Modern POS をインストールします。
 
-Dynamics AX は、Modern POS、PC、タブレットおよび携帯電話用の販売時点管理アプリを含みます。 インストールする方法の詳細については、[Retail Modern POS のインストール](https://technet.microsoft.com/EN-US/library/dn741434.aspx)を参照してください。
+Dynamics AX は、Modern POS、PC、タブレットおよび携帯電話用の販売時点管理アプリを含みます。 インストールする方法の詳細については、[Retail Modern POS のインストール](https://technet.microsoft.com/library/dn741434.aspx)を参照してください。
 
 ## <a name="6-learn-more-about-the-service-accounts-for-this-environment"></a>6. この環境のサービス アカウントに関する詳細
 次のセクションでは、環境を配置したときに作成されたサービス アカウントについて説明します。

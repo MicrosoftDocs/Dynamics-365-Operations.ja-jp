@@ -10,7 +10,7 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailHardwareStation
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.custom: 27161
 ms.assetid: eb164a9d-5538-4b6f-81ad-87e05d92eca5
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 380473cfb819adf881364fd2e6d50f5983ef0da8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f026433ec3bef7cf1ed16c82d5dd4f7865334722
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564377"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845659"
 ---
 # <a name="configure-and-install-retail-hardware-station"></a>Retail ハードウェア ステーションのコンフィギュレーションとインストール
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 16281
 ms.assetid: 016c8e36-0abe-4b55-a575-5696761959a5
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47786c36a1f6ad495a236bdb38945726cbeac1aa
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 06f670fa7e3635ea0771ea7ff1c32ea27ea4c31c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595507"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851185"
 ---
 # <a name="details-transaction-form-pattern"></a>詳細トランザクション フォーム パターン
 

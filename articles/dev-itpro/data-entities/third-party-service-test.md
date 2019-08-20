@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99dab5ca0ad65f67b2677a913b1565ca234b8bf5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fdd3c2f5eae3b1aa03885bc749431348a5f7d183
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544266"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848195"
 ---
 # <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 

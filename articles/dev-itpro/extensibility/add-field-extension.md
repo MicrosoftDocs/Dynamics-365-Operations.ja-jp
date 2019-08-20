@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 88a99d87aaea7cd21b0b78197972ab931a510f2c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3a8c671e1d36603a963b2eecb756a713e40055c7
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544123"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833488"
 ---
 # <a name="add-fields-to-tables-through-extension"></a>拡張機能を使用してテーブルにフィールドを追加
 

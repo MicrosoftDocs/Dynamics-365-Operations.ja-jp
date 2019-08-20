@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18751
 ms.assetid: ceeb6463-00d4-41f9-88c3-61791020a9f5
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 629dfff6a6f96eafe5714963de1be3a5f89b2264
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0567b78a9b7129173203e8d8d658f4e9d89cd4c9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544071"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850477"
 ---
 # <a name="usage-profiler-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の使用状況プロファイル
 

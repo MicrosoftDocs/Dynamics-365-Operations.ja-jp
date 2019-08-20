@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 27581
 ms.assetid: d0b8286a-b2c1-4fa2-905a-3383b1d34d56
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9138d10091550c22046c2c8b12bc263c919a7d53
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 23f218128d26a111e96ff0771328a0445b5e57cc
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595460"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850591"
 ---
 # <a name="regulatory-certification-information-in-feature-titles"></a>機能タイトルの規制認証情報
 

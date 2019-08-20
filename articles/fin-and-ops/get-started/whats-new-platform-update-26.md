@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-XX-XX
 ms.dyn365.ops.version: Platform 26
-ms.openlocfilehash: 14728b03b678f199590be62f5d23bd6eeb446ef2
-ms.sourcegitcommit: 56ec43e459ba93f495bc76fed23d6737218ef37e
+ms.openlocfilehash: 2034de89c25262ab51e100cd588122fdbb4c5402
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "1591612"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863405"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-26-may-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019年 5月) の新機能および変更点
 
@@ -49,7 +49,7 @@ Azure Data Lake のエンティティ ストアは、プラットフォーム更
 Finance and Operations に対して新しい機能が定期的に開発されています。 ドキュメントは新機能の説明に役立ちますが、役立つ場合にはユーザーの新機能に対する認識を製品内で直接高めます。 このために、プラットフォーム更新プログラム 26 で利用できる [機能のコールアウト](../../dev-itpro/user-interface/feature-callouts.md) はユーザーに新しい機能を示して、オプションで機能の詳細を知るためのハイパーリンクをユーザーに提供することができます。  
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
-プラットフォーム更新プログラム 26 に含まれる [プラットフォーム拡張機能の 3 番目の波](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility3) は、2019 年 4 月リリース ノートにドキュメントされています。 7 つの機能強化の詳細が説明されており、強調すべきひとつは、コマンド チェーンが他のメソッド拡張をターゲットにして拡張可能になったことです。
+プラットフォーム更新プログラム 26 に含まれる [プラットフォーム拡張機能の 3 番目の波](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility3) は、2019 年 4 月リリース ノートにドキュメントされています。 7 つの機能強化の詳細が説明されており、強調すべきひとつは、コマンド チェーンが他のメソッド拡張をターゲットにして拡張可能になったことです。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -59,7 +59,7 @@ Finance and Operations に対して新しい機能が定期的に開発されて
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 13671
 ms.assetid: 9b4f244c-f058-416c-b3c2-6f4ca29c8db8
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c6aa02aec4ec1e74c75919849512a453276947a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58a07639562acfc92326b281718d0f38131ebb7f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555239"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851237"
 ---
 # <a name="build-the-rental-charge-type-form"></a>レンタル料金のタイプ フォームの構築
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26731
 ms.assetid: 5c2378fe-cb34-4a81-a940-57d4e13eb282
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b842c4704b8505b07502eb3e87af85f7239a660
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6a39141ae595e776e656bd4f7a5336dbe688e937
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544162"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833582"
 ---
 # <a name="build-and-debug-projects"></a>プロジェクトのビルドおよびデバッグ
 

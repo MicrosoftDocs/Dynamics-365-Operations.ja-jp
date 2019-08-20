@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012, Operations
 ms.custom: 62753
 ms.assetid: fab3f6cf-03db-47c7-90fb-f8bc03dacf49
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 8af724108aabb477625df02a618a981858978f94
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ed0d85e7c95205781b2e5dc418b4117b8c8ed35
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552506"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850685"
 ---
 # <a name="configuration-manager-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内での構成マネージャー
 

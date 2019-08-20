@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 94366c6a904e9cdb6a0bd3daa3ca514973ab18cd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cc0bf944f2dec943ac06e522bc970a351ec88c0d
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559797"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851787"
 ---
 # <a name="ax-2009-migration--export-packages"></a>AX 2009 の移行 - パッケージのエクスポート
 

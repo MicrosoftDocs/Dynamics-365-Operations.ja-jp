@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: ce0d4af4dae49f0661b8668a6b9f07ac7d174cf0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2c340f9bccc0f5f5f6d4032bae35d2f77ab76a02
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564389"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833135"
 ---
 # <a name="run-the-retail-point-of-sale-pos-samples"></a>小売販売時点管理 (POS) サンプルを実行
 

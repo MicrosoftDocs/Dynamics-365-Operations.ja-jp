@@ -3,13 +3,12 @@ title: 保存されたビューを十分に活用するフォームの作成
 description: このトピックでは、保存されたビューの技術的な側面について説明します。また、保存されたビューを使用したフォームがうまく機能するよう、フォーム開発に関する考察を記載します。
 author: jasongre
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserSetup, DefaultDashboard
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +16,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 078cda9e6d7a25fcf7454c84770a8b660b0bc600
-ms.sourcegitcommit: e516442d23c7ed08566930cee2bbe100ba25cba9
+ms.openlocfilehash: f7943e7d3ea049ac38edf727a3bd90e4816ee93c
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "1621271"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862976"
 ---
 # <a name="build-forms-that-fully-utilize-saved-views"></a>保存されたビューを十分に活用するフォームの作成
 
 [!include [banner](../includes/banner.md)]
-[!include [private preview banner](../includes/private-preview-banner.md)]
-
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 保存されたビューは、 Dynamics 365 for Finance and Operations におけるパーソナライズ機能の中でも重要な拡張機能です。 [保存されたビュー](../../fin-and-ops/get-started/saved-views.md) のトピックでは、この機能の総合的な詳細情報を提供します。ここでは、保存されているビューの技術的な要素のみでなく、ビューの影響を受ける可能性のあるフォーム開発の側面も対象とします。 
 
@@ -74,7 +71,7 @@ ms.locfileid: "1621271"
      -    run() 内の super() に対するフォーム変更を行うと、ユーザーのパーソナライゼーションが正しく適用されない可能性があります。  
 
 -    カスタムフィルタの値を常に現在のビュー、またはクエリに合わせるには、追加の作業が必要となる場合があります。  
-     -    現在のクエリに基づいてカスタムフィルタの値を更新し、フォームの読み込みごとに同じ既定値に初期化されないようにするには、フォームを計測する必要があります。  
+     -    保存されているビューでカスタムフィルターを正しく機能させるには、プラットフォームで追加の作業を行う必要があり、また、フォームによってカスタムのフィルタの取得の可能性があります。 詳細については、後ほど提供します。  
 
 -    長期的に見ると、ビューはモデル化されたセカンダリ リストページに取って代わるものです。  
      -   通常、保留中の得意先などのセカンダリ リスト ページは、同じフォームを指定するメニュー項目ですが、異なるクエリを持っています。 クエリを渡すメニュー項目は、既定のビューで定義されているすべてのクエリを上書きするため、こうしたエントリ ポイントはユーザーを混乱させる可能性があります。 長期的には、セカンダリ リストページを廃止して、それらをビューに移動する計画となっています。
@@ -82,5 +79,5 @@ ms.locfileid: "1621271"
      -  ユーザがフォームキャプション (「すべての顧客」など) とビュー名 (「お客様」など) を混同しないように、フォームキャプションを対応するエンティティの名前に変更することを検討してください。 たとえば、フォームキャプションに 「すべての顧客」 や 「すべての受注」 と表示していたものを、 「顧客」 や 「受注」 へと変更します。 
 
 ## <a name="known-issues"></a>既知の問題
--    現在、サブフォームにパーソナライゼーションを含む発行ビュー(FactBoxe または フォームパーツ)では、ビューのサブフォーム部分を発行できません。 
--    現在のビューを再発行するときに、ビューの名前を更新すると、元のビューを置き換えるのではなく、2番目のビューが作成されます。  
+- QuickFilter 条件は、ビュー定義に保存されていません。
+- カスタムフィルター、高度なフィルター、または並べ替え (ビュー上でフィルターがサポートされているページ上で) でフィルター処理を実行しても、ビューは正しく表示されません。 ただし、グリッドの列ヘッダーまたはフィルターウィンドウを使用してフィルター処理を行う場合や、明示的なカスタマイズを実行してビューを保存する場合は、カスタムフィルター、高度なフィルタ、または並べ替えの各クエリ条件がビューに保存されます。  

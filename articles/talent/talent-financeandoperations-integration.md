@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-8
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fc4d6f88e54ebcdb9b82889c9315391eeee31d4d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 72d52783a91f5b1af1e22b350d1f6673c4adb620
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537614"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742646"
 ---
 # <a name="integration-from-dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Talent から Dynamics 365 for Finance and Operations への統合
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Talent および Dynamics 365 for Finance and Operations から統合できる機能について説明します。 [データ インテグレーター](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)と共に使用可能な Talent から Finance and Operations へのテンプレートにより、ジョブ、職位、および作業者のデータのフローが可能になります。 Talent から Finance and Operations へのデータ フロー。 テンプレートでは、Finance and Operations から Talent にデータを戻す機能は提供されません。 
+このトピックでは、Dynamics 365 for Talent および Dynamics 365 for Finance and Operations から統合できる機能について説明します。 [データ インテグレーター](https://docs.microsoft.com/powerapps/administrator/data-integrator)と共に使用可能な Talent から Finance and Operations へのテンプレートにより、ジョブ、職位、および作業者のデータのフローが可能になります。 Talent から Finance and Operations へのデータ フロー。 テンプレートでは、Finance and Operations から Talent にデータを戻す機能は提供されません。 
 
 ![Talent のから Finance and Operations への統合フロー](./media/TalentFinOpsFlow.png)
 
@@ -242,7 +242,7 @@ Talent から Finance and Operations にデータを統合する場合は、統�
 
 これが発生する領域は、従業員番号を使用して一致が作成される作業者と、職位です。 職務には、番号順序は使用されません。 その結果、同一の職務ジョブ ID が Talent と Finance and Operations の両方で存在する場合は、Talent 情報により Finance and Operations 情報が上書きされます。 
 
-重複する ID の問題を防ぐには、[番号順序](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json)に接頭語を追加するか、その他のシステムの範囲を超えている番号順序の開始番号を設定します。 
+重複する ID の問題を防ぐには、[番号順序](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json)に接頭語を追加するか、その他のシステムの範囲を超えている番号順序の開始番号を設定します。 
 
 番号順序に含まれていない作業者住所に使用される場所 ID。 Talent から Finance and Operations に作業者住所を統合するとき、Finance and Operations に作業者の住所が既に存在する場合は、重複する住所レコードが作成される場合があります。 
 

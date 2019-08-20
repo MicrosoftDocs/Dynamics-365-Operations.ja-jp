@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.search.region: Global
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 7fcc2a05f77f5814dbc25823967c4f61befc37e0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 25a52a2428e41f2f320c339c522377337a4119e3
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569277"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833061"
 ---
 # <a name="extension-points-for-packing-slips-during-order-fulfillment"></a>注文のフルフィルメント中の梱包明細の拡張ポイント
 

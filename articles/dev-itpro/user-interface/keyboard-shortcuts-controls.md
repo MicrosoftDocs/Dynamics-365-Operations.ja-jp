@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: C0E2E0F9-19C1-4CE0-A81C-1ACFA841F6AB
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinarh
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: ca7d50668cfbdb37bd88cb0b4f5c56bfab726d6f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1a26d23cf8d6160b8c5b5f02071e8471e0ceaf6b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559021"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851145"
 ---
 # <a name="keyboard-shortcuts-for-extensible-controls"></a>拡張可能なコントロールのキーボード ショートカット
 
@@ -51,9 +51,9 @@ ms.locfileid: "1559021"
 Dynamics 365 for Finance and Operations およびサポートされているブラウザーに記載されているキーボード ショートカットへのリンクを次に示します。
 
 - <a href="../../fin-and-ops/get-started/shortcut-keys.md">キーボード ショートカット</a>
-- <a href="https://support.microsoft.com/en-us/help/13805">Microsoft Edge</a>
+- <a href="https://support.microsoft.com/help/13805">Microsoft Edge</a>
 - <a href="https://support.google.com/chrome/answer/157179">Google Chrome</a>
-- <a href="https://support.microsoft.com/en-us/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a>
+- <a href="https://support.microsoft.com/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a>
 - <a href="https://support.apple.com/kb/PH21483">Apple Safari</a>
 
 ### <a name="planned-keyboard-shortcuts-for-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations で計画されているキーボード ショートカット

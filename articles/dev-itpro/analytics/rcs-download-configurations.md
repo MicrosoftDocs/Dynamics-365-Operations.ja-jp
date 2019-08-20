@@ -10,18 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionRepositoryTable
 audience: IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 651083c51bdead76639911fffae5458d77eb3241
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 82d7481af5b76cf4f6629b7e4c207bff661976f3
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1629995"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850033"
 ---
 # <a name="import-electronic-reporting-er-configurations-from-regulatory-configuration-services-rcs"></a>規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
 

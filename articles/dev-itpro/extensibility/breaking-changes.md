@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: smithanataraj
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 06bde311e2d272e20b0e088b28f7e3c01932809c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ef116f4a8834816546a7e8963f2efa409ba5a414
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550915"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833478"
 ---
 # <a name="breaking-changes"></a>変更の分割
 

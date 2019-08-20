@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c795d9eb499ffa07b2d6289627f8ef8f509ebdef
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 9e6560441be725dea64c7d7be6631e5ae7b7a42a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595471"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850369"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-8-and-11"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)
 

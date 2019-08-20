@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 29451
 ms.assetid: 6ab0f75d-3168-4dfe-b2ce-d17d3861216e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b09476da4fa764df3bac30d0097648d8b7ad6ce
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 207125baf544259f67fa1a729a71ec20aa3767f1
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555608"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833368"
 ---
 # <a name="dimension-expression-builder-subpattern"></a>分析コード式ビルダーのサブパターン
 

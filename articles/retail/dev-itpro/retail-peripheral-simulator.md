@@ -10,7 +10,7 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations, Retail
 ms.custom: 266544
 ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 49587e17c364af6c2cb2e5a87c557257c86d6189
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9178f355aa8e19b82ab997e2e346ffd9b6ed6d5a
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564384"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833127"
 ---
 # <a name="peripheral-simulator-for-retail"></a>小売の周辺機器シミュレーター
 
@@ -130,7 +130,7 @@ ms.locfileid: "1564384"
 
 ## <a name="using-the-virtual-peripheral-simulator"></a>仮想周辺機器シミュレーターの使用
 
-バーチャル ペリフェラル シミュレーターを起動するには、コンピュータの **開始** をクリックし、**Peripheral simulator for Retail** と入力して、検索結果に表示されたときにアプリを選択します。 周辺機器シミュレーションを開始した後、**仮想周辺機器を使用**をクリックします。 サポートされているデバイスはウィンドウの左側のタブとしてリストされます。 特定のデバイスを表示するには、そのデバイスのタブをクリックします。
+仮想周辺機器シミュレーターを起動するには、コンピュータの **開始** をクリックし、**Peripheral simulator for Retail** と入力して、検索結果に表示されたときにアプリを選択します。 周辺機器シミュレーションを開始した後、**仮想周辺機器を使用**をクリックします。 サポートされているデバイスはウィンドウの左側のタブとしてリストされます。 特定のデバイスを表示するには、そのデバイスのタブをクリックします。
 
 ### <a name="line-display-capabilities"></a>ライン ディスプレイ機能
 
@@ -336,7 +336,7 @@ POS シミュレーターは、Windows プリンターをテストするため�
 #### <a name="line-display-gt-advanced-tab-settings"></a>ライン ディスプレイ &gt;詳細タブ設定
 
 - **バイナリ変換** - ライン ディスプレイによって、テキストをバイナリ形式に変換する必要があります。 この変換が必要かどうかを確認するのには、デバイスのマニュアルを参照してください。
-- **文字セット** - デバイスに送信される文字のコード ページ。 特定のコード ページの識別子については、<https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx> を参照してください。
+- **文字セット** - デバイスに送信される文字のコード ページ。 特定のコード ページの識別子については、<https://msdn.microsoft.com/library/windows/desktop/dd317756(v=vs.85).aspx> を参照してください。
 
 #### <a name="msr"></a>MSR
 

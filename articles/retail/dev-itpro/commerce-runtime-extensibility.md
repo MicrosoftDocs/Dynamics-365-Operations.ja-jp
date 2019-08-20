@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 104593
 ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 138612221bb6e17ae354a194cd3df7d70b3ce543
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9ef963e1c4126d434573e7d90b958a4f156a3b94
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549468"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833093"
 ---
 # <a name="commerce-runtime-crt-and-retail-server-extensibility"></a>Commerce Runtime (CRT) および Retail サーバーの拡張機能
 
@@ -98,8 +98,8 @@ CRT 拡張パターンについて学習する前に、CRT 拡張の作成方法
 属性もまたサポートされます (コンフィギュレーション駆動型の開発)。 拡張プロパティの場合は、カスタム テーブルを作成し、データを格納する必要があります。 ただし、属性はコンフィギュレーション駆動型であり、テーブル フィールドを作成するために必須ではありません。 したがって、読み取りおよび更新操作にコードは必要ありません。</blockquote>
 <p>属性についての詳細は、次のトピックを参照してください。</p>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/order-attributes">注文属性</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/customer-attributes">顧客属性</a></li>
+<li><a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/order-attributes">注文属性</a></li>
+<li><a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/customer-attributes">顧客属性</a></li>
 </ul>
 </td>
 </tr>

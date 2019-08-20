@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 52411
 ms.assetid: 64592da4-d509-4309-a30c-729e7cddd510
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc20b0653558ad7391c1c768fa3fb65f120dec80
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 98dd4c3cd87c557888895cd098dffda2dd6b4e4f
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551073"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833716"
 ---
 # <a name="f-classes-fieldbinding-to-formbuildanimatecontrol"></a>F クラス (FieldBinding から FormBuildAnimateControl)
 

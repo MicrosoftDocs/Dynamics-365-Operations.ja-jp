@@ -3,24 +3,24 @@ title: Finance and Operations の実装プロジェクトの Go-Live に関す�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations プロジェクトの運用についてよく寄せられる質問を一覧表示します。
 author: sshashi7
 manager: AnnBe
-ms.date: 02/13/2018
+ms.date: 07/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: margoc
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sshashi
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0072548f50afbd6f11257c1ff3906ce20e636fd1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 910cec0f47f05537b910a2a471937654c9a67d7c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546583"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851911"
 ---
 # <a name="go-live-for-finance-and-operations-implementation-projects-faq"></a>Finance and Operations の実装プロジェクトの Go-Live に関するよく寄せられる質問
 
@@ -43,8 +43,7 @@ ms.locfileid: "1546583"
 Go-live 評価/レビューは、[Microsoft FastTrack プログラム](../get-started/fasttrack-dynamics-365-overview.md)の一部です。 レビュー中に、ソリューション アーキテクトは、実装プロジェクトが成功した切替および Go-live の準備が整っているかどうかを評価します。 このレビューは、実稼働環境で準備を開始する前に、すべての Finance and Operations プロジェクトで必須です。
 
 ## <a name="i-want-to-request-my-production-environment-who-do-i-contact-for-a-go-live-assessmentreview"></a>実稼働環境を要求します。 Go-live アセスメント/レビューのために誰に連絡しますか。
-
-FastTrack ソリューション アーキテクトがプロジェクトに割り当てられている場合は、担当者に直接問い合わせます。 それ以外の場合、Microsoft Dynamics Lifecycle Services (LCS) に指定されている運用日付に基づいて、運用前チェックリストに記入し、運用日の数週間前に <go-live@microsoft.com> に送信するように指示する電子メールを受信します。 電子メールを受け取っておらず、稼働の準備ができている場合は、、[CustomerSource から稼働前のチェックリストをダウンロード](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops) して、それを完成させ、<go-live@microsoft.com> に送信します。
+FastTrack ソリューション アーキテクトがプロジェクトに割り当てられている場合は、担当者に直接問い合わせます。 それ以外の場合、Microsoft Dynamics Lifecycle Services (LCS) に指定されている運用日付に基づいて、運用前チェックリストに記入し、運用日の数週間前に <d365fogl@microsoft.com> に送信するように指示する電子メールを受信します。 電子メールを受信しておらず Go-Live の準備ができている場合は、[Go-live 計画 TechTalk](https://aka.ms/FastTrackPreGoLiveChecklist) ページの **Dynamics 365 コミュニティ** からチェックリストをダウンロードし、記入して d365fogl@microsoft.com に送信できます。
 
 ## <a name="the-production-button-isnt-available-in-lcs-how-do-i-request-my-production-environment"></a>生産ボタンは、LCS では使用できません。 実稼働環境を要求するにはどうすればよいですか。
 
@@ -95,13 +94,7 @@ Microsoft FastTrack チームによる Go-live アセスメントが完了し、
 一連番号 ただし、データベースの更新サービス要求を送信し、レベル 2 およびそれ以上の大きいサンドボックス環境に運用データベースをコピーすることができます。 コピー要求が完了した後、サンドボックス環境をバックアップすることができます。
 
 ## <a name="my-golden-configuration-database-is-in-a-tier-1-sandbox-environment-how-can-i-copy-and-restore-it-to-my-production-environment"></a>高品質の構成データベースは、第 1 層サンドボックス環境にあります。 実稼働環境にどのようにコピーおよび復元しますか。
-
-第 1 層サンド ボックス環境からコピーして復元するには、次の手順を実行します。
-
-1. 第 1 層サンドボックス環境から第 2 層サンドボックス環境に高品質の構成データベースを移動します。
-2. レベル 2 サンドボックス環境から実稼働環境に、高品質の構成をコピーするサービス要求を送信します。
-
-詳細については、[Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)を参照してください。
+データベースをコピーして復元するには、トピック [ゴールデンコンフィギュレーションプロモーション](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md) の指示に従います。 
 
 > [!NOTE]
 > 高品質の構成がデータ パッケージにある場合、実稼働環境に手動でデータ パッケージをインポートする必要があります。
@@ -114,4 +107,4 @@ Microsoft FastTrack チームによる Go-live アセスメントが完了し、
 
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>実稼働環境がダウンした場合はどうすればよいでしょうか ?
 
-稼働停止を報告するには、[[Lifecycle Services によって稼働停止を報告する新しいプロセス](https://blogs.msdn.microsoft.com/lcs/2017/12/18/report-production-outage-through-lcs/)] のブログ記事を参照してください。
+稼働停止をレポートするには、トピック [稼働停止のレポート](../../dev-itpro/lifecycle-services/report-production-outage.md) で説明されているプロセスに従います。

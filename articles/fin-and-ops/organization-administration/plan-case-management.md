@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 23581
 ms.assetid: 0a1ffae4-5750-46a2-becb-604f7a989d32
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f879d20511967e8f58e250c8533c4f78bbf8a011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c2ead6ed7373a17b176b8e389b0d831750c4449b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545775"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851833"
 ---
 # <a name="plan-case-category-security-case-processes-and-case-categories"></a>ケース カテゴリ セキュリティの計画、ケース プロセス、およびケース カテゴリ
 

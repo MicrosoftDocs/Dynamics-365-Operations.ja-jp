@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rschloma
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d5705c846d03879e1d3c71b838c8949ba905c03
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 1999c276bd777ff0e93966674550de54a1678987
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595411"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833316"
 ---
 # <a name="extend-the-person-search-report"></a>個人検索レポートの拡張
 
@@ -121,7 +121,7 @@ Microsoft Dynamics 365 for Finance and Operations の担当者検索レポート
 
 欧州連合の一般的なデータ保護規制 (GDPR) に基づくデータの依頼への応答の一部として、個人検索レポートを拡張している場合、この規制に関する詳細については、[Microsoft Dynamics 365 for Finance and Operations のための GDPR ガイド](./gdpr-guide.md) でご覧いただけます。
 
-GDPR の詳細については、[欧州連合の Web サイト](https://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。
+GDPR の詳細については、[欧州連合の Web サイト](https://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。
 
 
 ### <a name="disclaimer"></a>免責事項

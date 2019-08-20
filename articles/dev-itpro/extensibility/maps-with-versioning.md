@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: d44391c1d630c5aea686e65a016fc33137edeb26
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5fba592fe7a2c6578c4e310ea320c884a967e611
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544107"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833416"
 ---
 # <a name="extend-table-maps-that-are-used-for-versioning"></a>バージョン管理で使用されるテーブル マップの拡張
 

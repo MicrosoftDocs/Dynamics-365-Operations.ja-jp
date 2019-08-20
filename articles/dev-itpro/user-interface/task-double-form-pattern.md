@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 14651
 ms.assetid: 9f28e5f9-efec-48c5-aaa6-b68a505c4df3
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f992e84e53baf2c9ff330584f844d198923bbfaa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 75b4de24af7155f42e447a8c1a9a6e28650c04b2
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566997"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851081"
 ---
 # <a name="task-double-form-pattern"></a>タスク ダブルのフォーム パターン
 

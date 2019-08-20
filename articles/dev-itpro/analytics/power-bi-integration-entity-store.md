@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 265974
 ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 8381c04636dc9ef3811a0021efef4c58f415adb3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f7ed1a5f1b6db8cc2129c8a2e7fb1b60f146cb9d
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544994"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863786"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 
@@ -48,7 +48,7 @@ Microsoft Dynamics AX の 2016 年 2 月のリリースでは、データ エン
 ## <a name="stage-aggregate-measurements-in-entity-store"></a>エンティティ格納における集計測定のステージング
 集計測定は分析シナリオのためにモデル化されたスター スキーマです。 2016 年 2 月のリリースでは、リアルタイムなメモリ内集計の測定が有効になりました。 リアルタイムの集計測定を使用することにより、データのリアルタイム操作に対応する埋め込みチャートおよび主要業績評価指標 (KPI) を有効にすることができます。 詳細については、[メモリ内リアルタイム集計モデルによる SSAS キューブの置換](../migration-upgrade/in-memory-real-time-aggregate-models.md) を参照してください。 リアルタイム集計測定は、インメモリの非クラスター化縦棒ストア インデックス (NCCI) の技術を活用します。 リアルタイムの集計の測定で作成されたビジュアルおよび集計計算に数秒以内のトランザクションが反映されます。 プラットフォーム更新プログラム 1 (2016 年 5 月) のリリースでは、エンティティ格納でステージングできる集計測定を有効にしました。 エンティティ ストアで実施された集計測定は、Power BI を使用して大量のデータを調べる必要がある、ほぼリアルタイムの分析シナリオで使用できます。 開発者は、[モデリングおよび集計データを使用して](model-aggregate-data.md) 集計の測定でリアルタイム分析をモデル化する方法について学びました。 プラットフォーム更新プログラム 1 (2016 年 5 月) のリリースでは、エンティティ格納でステージングできる集計測定をモデル化する機能も追加しました。 Microsoft Visual Studio で、**StagedEntityStore** を集計の測定の用途プロパティとして指定します。 この新しいプロパティは、2016 年 5 月で追加されました。 以前は、**InMemoryRealTime** は用途プロパティとして使用できました。
 
-[![Visual Studio にある新しい StagedEntityStore の使用プロパティ](https://msdnshared.blob.core.windows.net/media/2016/06/New-usage-property-in-VS-300x242.png)](https://msdnshared.blob.core.windows.net/media/2016/06/New-usage-property-in-VS.png)
+![Visual Studio にある新しい StagedEntityStore の使用プロパティ](media/new-usage-property-in-VS.png)
 
 ただし、ステージングできるように集計測定をモデル化するのはなぜかと疑問に思われるかもしれません。 メモリ内リアルタイム集計測定を常に使用しないのはなぜですか。 **StagedEntityStore** パターンを使用する理由はいくつかあります。
 

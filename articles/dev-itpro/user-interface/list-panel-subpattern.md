@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 12433
 ms.assetid: 81df4016-d7b9-4376-8a78-bdd435d686f6
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c788fb4dc7d463e1d22e0585d3e616c0437425b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 719c93cdda219d9aba53f0628dc3d2b19f22f018
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562012"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851141"
 ---
 # <a name="list-panel-subpattern"></a>リスト パネルのサブパターン
 

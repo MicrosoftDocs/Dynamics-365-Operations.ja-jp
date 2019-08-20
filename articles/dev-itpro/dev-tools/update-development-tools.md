@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 33571
 ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0dbe4329ad97c4812c85cc15c06eab632fc9f895
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 037dbb7820c3f06ebdd1aeaa5c925ad72bbc252c
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544125"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833504"
 ---
 # <a name="update-the-visual-studio-development-tools"></a>Visual Studio 開発ツールの更新
 

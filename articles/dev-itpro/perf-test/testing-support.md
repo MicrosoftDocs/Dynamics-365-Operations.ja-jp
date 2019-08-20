@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 24161
 ms.assetid: d94f46f0-cde2-47c3-8994-c79e609eabce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c86c0a2fa1e6d33e0e584c796b65480b618aeac9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 428030a443eab41adb7aa2c48e5b9e7112f05ffe
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555732"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833248"
 ---
 # <a name="test-projects-in-visual-studio"></a>Visual Studio のプロジェクトのテスト
 

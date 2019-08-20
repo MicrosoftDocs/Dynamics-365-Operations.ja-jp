@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 51831
 ms.assetid: 279efb4c-e228-4ab5-be7d-c96d91064787
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 478236c6d1436ee428768ca7a596cfaf4d345dcb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 159432f6ecdab9ba06ec2ee86d18c37a2413a5a5
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544201"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833678"
 ---
 # <a name="q-classes"></a>Q クラス
 
@@ -1332,7 +1332,7 @@ arrayIndex
 
 モード  
 
-### <a name="method-insertrecordset"></a>メソッド insert\_recordset
+### <a name="method-insert_recordset"></a>メソッド insert\_recordset
 
     public static void insert_recordset(Common targetCursor, Map targetToSourceMap, Query sourceQuery)
 

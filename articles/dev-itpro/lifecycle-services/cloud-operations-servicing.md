@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ffa84521b2b435921a55771adb7a57f829c9f40
-ms.sourcegitcommit: f5c2cfac0411c880994376ead6691ab52f2fd12b
+ms.openlocfilehash: e3163a0f559e2290d24957994a83681832e1bc19
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "1720226"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850689"
 ---
 # <a name="cloud-operations-and-servicing"></a>クラウドの工程とサービス
 

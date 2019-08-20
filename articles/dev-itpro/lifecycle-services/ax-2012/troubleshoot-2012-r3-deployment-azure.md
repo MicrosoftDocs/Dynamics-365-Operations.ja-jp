@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18691
 ms.assetid: cc7c6dd5-b715-4734-9918-c25df4187c6e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 07c16619c050751a4fb8739456267ff61d708aa4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b014e4d9f1036bf393a1dae0115fbabf370d8a77
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555248"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850483"
 ---
 # <a name="troubleshoot-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 配置のトラブルシューティング
 
@@ -46,7 +46,7 @@ Windows のデモ環境で仮想マシンに試用版のライセンスを更新
 コマンド プロンプト ウィンドウが短く表示され、仮想マシンが再起動します。 ライセンスは現在 180 日間有効です。 この手順は 3 回完了することができます。
 
 ## <a name="how-do-i-renew-the-microsoft-dynamics-ax-license-on-a-demo-virtual-machine"></a>デモ仮想マシンで Microsoft Dynamics AX ライセンスを更新するにはどうすればよいですか。
-Microsoft Dynamics AX のデモ環境で仮想マシンのライセンスを更新する必要がある場合、[CustomerSource](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/service-packs/AX2012DemoToolsMaterials#DemoVirtualMachineLicenses) または [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898) から試用版のライセンス ファイルをダウンロードします。 「[ライセンス情報の指定](https://technet.microsoft.com/en-us/library/aa496447.aspx)」に記載の手順に従います。
+Microsoft Dynamics AX のデモ環境で仮想マシンのライセンスを更新する必要がある場合、[CustomerSource](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/service-packs/AX2012DemoToolsMaterials#DemoVirtualMachineLicenses) または [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898) から試用版のライセンス ファイルをダウンロードします。 「[ライセンス情報の指定](https://technet.microsoft.com/library/aa496447.aspx)」に記載の手順に従います。
 
 ## <a name="how-do-i-activate-windows-on-the-virtual-machines-in-my-non-demo-environment"></a>非デモ環境で仮想マシンの Windows をアクティブにするにはどうしたらいいですか。
 Windows は非デモ環境に含まれている仮想マシン上で自動的に有効化されます。 ただし、有効化には完了までに 4 日間かかる場合があります。 4 日間後に Windows を有効化するように求めるメッセージが続けて表示される場合は、Azure サポート チームに問い合わせます。 Azure サポート チームに連絡する方法の詳細については、次のセクションを参照してください。
@@ -92,19 +92,19 @@ Azure のサポートを得るには、次の表に示すリソースを使用�
 </tr>
 <tr class="even">
 <td>請求書に関連する質問について援助を受けます</td>
-<td>サンプル請求書、および現在の請求期間に対する毎日の使用データをダウンロードする方法に関する情報にリンクする Azure 請求プロセスの概要を確認するには、<a href="http://azure.microsoft.com/en-us/support/understand-your-bill/">請求書を理解する</a>ページに移動してください。</td>
+<td>サンプル請求書、および現在の請求期間に対する毎日の使用データをダウンロードする方法に関する情報にリンクする Azure 請求プロセスの概要を確認するには、<a href="http://azure.microsoft.com/support/understand-your-bill/">請求書を理解する</a>ページに移動してください。</td>
 </tr>
 <tr class="odd">
 <td>コミュニティに質問する</td>
-<td><a href="http://www.windowsazure.com/en-us/support/forums/">Azure フォーラム</a>ページに移動し、Azure コミュニティからの質問のヘルプを入手します。</td>
+<td><a href="http://www.windowsazure.com/support/forums/">Azure フォーラム</a>ページに移動し、Azure コミュニティからの質問のヘルプを入手します。</td>
 </tr>
 <tr class="even">
 <td>Azure サービス ダッシュ ボードの使用</td>
-<td><a href="http://www.windowsazure.com/en-us/support/service-dashboard/">Azure サービス ダッシュ ボード</a>ページに移動して、Azure プラットフォームおよびサービスの現在のステータスを取得します。</td>
+<td><a href="http://www.windowsazure.com/support/service-dashboard/">Azure サービス ダッシュ ボード</a>ページに移動して、Azure プラットフォームおよびサービスの現在のステータスを取得します。</td>
 </tr>
 <tr class="odd">
 <td>Azure サポート チームとのサポート チケットを入力します。</td>
-<td><a href="http://www.windowsazure.com/en-us/support/options/">Azure サポート オプション</a>ページに移動し、サポートを受けるをクリックしてサポート チケットを開きます。 Azure サポート チームは、以下に関連する問題の解決をサポートします。
+<td><a href="http://www.windowsazure.com/support/options/">Azure サポート オプション</a>ページに移動し、サポートを受けるをクリックしてサポート チケットを開きます。 Azure サポート チームは、以下に関連する問題の解決をサポートします。
 <ul>
 <li>Azure サブスクリプションのサイズを大きくする要求</li>
 <li>Azure 管理ポータルの使用時のエラー</li>

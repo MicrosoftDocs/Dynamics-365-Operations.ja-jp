@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 6f9b02081fdfdead8b9c26e43992fcbd4bc5b7d4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2e49c1f4f55a1f9df4a60a0e188727282a3a871d
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544114"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833438"
 ---
 # <a name="extended-data-types"></a>拡張データ型
 [!include [banner](../includes/banner.md)]

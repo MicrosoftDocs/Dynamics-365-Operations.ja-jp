@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: CGarty
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: ab532f76f8c9287e25f0fcf7f8141e79a37f731f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 19401e71e69ca73a55bdd13daed04a6557066d7c
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554541"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833396"
 ---
 # <a name="relax-model-restrictions-to-refactor-overlayering-into-extensions"></a>オーバレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
 

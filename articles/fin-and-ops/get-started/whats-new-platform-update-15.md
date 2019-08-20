@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: a765d51c-52d3-45c5-b578-63b5242c592a
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 15
-ms.openlocfilehash: fbecef075e2bede70495f24076876b1fe16868c5
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 577ab3c4dfec3fa48976a0eba3a4096bbedec168
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595479"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863416"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-15-march-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012, Operations
 ms.custom: 13301
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 7b7540a1bffff8dea1a69f36cfad9317747f57c7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c9cdb917c0476d8bd303cf7d5d77f2eb58d9173b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544069"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850687"
 ---
 # <a name="complete-tasks-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) でのタスクの完了
 

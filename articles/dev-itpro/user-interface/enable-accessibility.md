@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 104943
 ms.assetid: 5b97c471-212a-4487-baef-120d01063319
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 415c1a94ffb146d4c1f7caca957a08249a961526
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e5f2e276224ea4dea478715df2fa21da178dbdeb
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548638"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851181"
 ---
 # <a name="accessibility-in-forms-products-and-controls"></a>フォーム、製品、およびコントロールのユーザー補助機能
 

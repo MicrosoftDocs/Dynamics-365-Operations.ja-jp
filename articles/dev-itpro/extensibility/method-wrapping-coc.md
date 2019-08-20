@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c7a6fd8d36a4168fb6dd43949e9106fedb83479
-ms.sourcegitcommit: d3bd6a9531dd39925d9bf13216086d07ab4116c9
+ms.openlocfilehash: 671ff27627fa33008a7e4721d7c394fd581b1143
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "1631893"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833412"
 ---
 # <a name="class-extension-via-method-wrapping-and-chain-of-command-coc"></a>メソッドのラッピングとコマンド チェーン経由のクラスの拡張機能 (CoC)
 

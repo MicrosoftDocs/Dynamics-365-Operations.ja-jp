@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 27111
 ms.assetid: b8ddf156-eb7c-4010-95bd-16754cb1e122
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e0d3e9b1a8a5c0f8d2a3c40bdcf31f541ca59fa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d094af70c7d72dfcfba0b8f2351100186bfb7a65
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555238"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851231"
 ---
 # <a name="build-operational-workspaces"></a>運用ワークスペースの構築
 

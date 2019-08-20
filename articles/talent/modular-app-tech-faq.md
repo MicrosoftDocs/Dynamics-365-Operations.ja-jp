@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
-ms.openlocfilehash: cca8ef2d858a6ba53d021aa2f95c746c8fa8e3c0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f90778a7259632f9e78725a93d8d3f2163e94976
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537270"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742762"
 ---
 # <a name="provisioning-for-the-onboard-app"></a>Onboard アプリのプロビジョニング
 
@@ -38,7 +38,7 @@ Microsoft Dynamics 365 for Talent の完全版には、中核人事 (Core HR) �
 - PowerApps 環境が存在しない場合は、テナントの場所を参照します
 - Talent が現在対応しているデータ センター
 
-Onboard アプリは、対応する国または地域でのみで提供しています。 サポートされている国と地域は Microsoft Trust Center for Talent データ透過性で定義されています。 サポートされている国と地域の一覧は、『[Microsoft Dynamics 365 の国際可用性ガイド](https://docs.microsoft.com/en-us/dynamics365/get-started/availability)』を参照してください。
+Onboard アプリは、対応する国または地域でのみで提供しています。 サポートされている国と地域は Microsoft Trust Center for Talent データ透過性で定義されています。 サポートされている国と地域の一覧は、『[Microsoft Dynamics 365 の国際可用性ガイド](https://docs.microsoft.com/dynamics365/get-started/availability)』を参照してください。
 
 以下の図では、スタンドアロンの Onboard アプリを提供するにあたって使用されているロジックを示しています。
 

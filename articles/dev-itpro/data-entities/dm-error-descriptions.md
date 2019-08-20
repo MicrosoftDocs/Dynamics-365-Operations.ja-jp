@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 25341
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-09-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 65ec59516b56561a1bfe6fe43bac4519b8cef0cc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 64a4af138879ffa7d16ab5759812ff6139dbef4f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544272"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850411"
 ---
 # <a name="data-management-error-descriptions"></a>データ管理エラーの説明
 このトピックでは、特定のエラーが表示されるときのシナリオを示します。 これはエラーとシナリオの完全な一覧ではありませんが、このリストは継続的に更新されるため、最新情報をチェックしてください。 特定のエラーが扱われるべきかどうかに関するこのページのフィードバックをお送りください。 このトピックが最新の状態になるように、フィードバック依頼を優先するよう努めます。

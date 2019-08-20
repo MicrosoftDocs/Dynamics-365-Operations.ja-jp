@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PowerBIConfiguration
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 31001
 ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0f4b0e4e1604fe746ac58b2c5f8a2e9e4287043
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c8c9e58b8fc2167310c1501e2d337b035d4c32f6
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551732"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850137"
 ---
 # <a name="features-and-services-available-through-power-bi-integration"></a>Power BI 統合を通じて利用できる機能やサービス
 
@@ -96,7 +96,7 @@ PowerBI.com は、Microsoft が提供するサービスです。 これにより
 
 レポートをアップロードした後、ユーザーは Web 上で (自宅またはオフィスでインターネットに接続されている場合) またはデバイス上のアプリを使用して表示、調整、検索することができます。
 
-Power BI の概念の詳細については、「[Power BI ドキュメント](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-how-should-i-share-my-dashboard/)」を参照してください。
+Power BI の概念の詳細については、「[Power BI ドキュメント](https://powerbi.microsoft.com/documentation/powerbi-service-how-should-i-share-my-dashboard/)」を参照してください。
 
 ## <a name="pinning-power-bi-content-to-the-finance-and-operations-client"></a>Finance and Operations クライアントに Power BI コンテンツを固定
 PowerBI.com は、組織または業務単位のレポートおよびダッシュ ボード ソリューションとして独自に使用できます。 ただし、ユーザーは自分の PowerBI.com アカウントから Finance and Operations のワークスペースにタイルおよびレポートをピン留めすることもできます。 Dynamics 365 の Power BI コンテンツは、事業運営に関連するコンテキスト インサイトを提供します。

@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30
-ms.openlocfilehash: 88178c23103082cce1dc06a5082ceeb9aee63805
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1c79a4f925415791d18b0127424a9787ff80c618
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564320"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845657"
 ---
 # <a name="retail-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できる小売機能
 

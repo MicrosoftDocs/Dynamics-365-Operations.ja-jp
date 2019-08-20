@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyTable, DirPartyTableRoles
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 23521
 ms.assetid: bb6c02fa-cd91-4ca8-a58c-020502b19074
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5da52b9a10be13ab208536c80a6307e4674f35b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8dd1632c028874b0a2364c45f98a8a6937c6326c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545822"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851835"
 ---
 # <a name="global-address-book"></a>グローバル アドレス帳
 

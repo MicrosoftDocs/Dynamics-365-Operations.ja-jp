@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: RobinARH
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 117b3d3eed6f092b07eb115a6b363078d4de9a5d
-ms.sourcegitcommit: 2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e
+ms.openlocfilehash: 2ff2486beb362be9095ec335cc243bd808ccdeeb
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "1608152"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833294"
 ---
 # <a name="creators-in-the-acceptance-test-library"></a>承認テスト ライブラリの作成者
 

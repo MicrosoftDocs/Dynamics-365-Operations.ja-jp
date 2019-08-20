@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 1fbb7dd6daea1ff2f5c44558e6f3705c6876458b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f59e58383075a3a4a5d7ea970e11d57d473ffb57
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537335"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851437"
 ---
 # <a name="clean-up-the-job-batch-history"></a>バッチジョブ履歴のクリーンアップ
 

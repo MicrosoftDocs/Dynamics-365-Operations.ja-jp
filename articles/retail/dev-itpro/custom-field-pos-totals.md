@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 931f20163f1ba11b6c8cf5a5597dc800f2e79fe1
-ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
+ms.openlocfilehash: cf868d1e0f4c6eee465c27b54837a0f88f62354a
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1539448"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833078"
 ---
 # <a name="add-custom-fields-to-the-point-of-sale-pos-totals-panel"></a>販売時点管理 (POS) Totals パネルへカスタム フィールドを追加
 

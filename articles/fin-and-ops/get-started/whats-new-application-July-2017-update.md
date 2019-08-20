@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 108a3d8a536d7b7601db7facd775f8bb6b0eb7a1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 51223f2e5422464b23a874f92e70c929453b15ef
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541304"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863551"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations、Enterprise Edition (2017 7 月) の新機能および変更された機能
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 23401
 ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dea2809e504ee7133326f1e6f82f1906f55bab0
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 5431ce12adb4ae5da42f2f817a545c096246f58b
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595416"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833502"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 

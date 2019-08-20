@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: 220184
 ms.assetid: 8beb4e7f-4a71-4c50-adf7-7733e6a150d9
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: fb438857eee6d6064e303c35ba63b1527747ef61
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1fc5c53b878ab12f2edea54302b7158b18cca1da
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552476"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863397"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-3-november-2016"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能
 

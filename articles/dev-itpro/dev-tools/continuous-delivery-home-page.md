@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 189643
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50165a4df6cdcec36b232941b83fbd1957c0ab9e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 250f5123cca46fc244a9e31d2546056150755fd7
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536965"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833572"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 

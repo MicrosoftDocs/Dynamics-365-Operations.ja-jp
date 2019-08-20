@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 266574
 ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 113d699bf7c704a37f139465a1ef0473472ac5c5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e430e1b2f6442a4f5d941ff8d2ac9525b58f4821
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549187"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848359"
 ---
 # <a name="create-custom-designs-for-business-documents"></a>ビジネス ドキュメントのカスタム デザインを作成する
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 for Finance and Operations には、カスタム ソリ�
 
 - 印刷管理設定は、有効な法人に適用されます。 カスタム デザインは、1 つ以上の印刷管理設定を関連付けることができます。
 - 標準レポート デザインは、カスタム ソリューションと共に引き続き使用できます。 印刷管理設定を使用して、トランザクションの詳細に基づいて適切なデザインを選択します。
-- カスタム ビジネス プロセスのビジネス ドキュメントを導入する場合は、多くの作業が必要です。 カスタム ビジネス ドキュメント ソリューションの作成方法の詳細については、[印刷管理の統合ガイド](https://www.microsoft.com/en-us/download/details.aspx?id=36049) を参照してください。
+- カスタム ビジネス プロセスのビジネス ドキュメントを導入する場合は、多くの作業が必要です。 カスタム ビジネス ドキュメント ソリューションの作成方法の詳細については、[印刷管理の統合ガイド](https://www.microsoft.com/download/details.aspx?id=36049) を参照してください。
 
 ## <a name="customize-a-business-document"></a>ビジネス ドキュメントのカスタマイズ
 次のチュートリアルでは、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを導入し、次に印刷管理を使用して新しいデザインを選択するプロセスを示します。 このソリューションには、Application Suite モデルの一部として標準アプリケーションで提供される**販売の確認**レポートのカスタム設計定義が含まれています。 アプリケーションのカスタマイズ内容は、拡張モデルで定義されます。

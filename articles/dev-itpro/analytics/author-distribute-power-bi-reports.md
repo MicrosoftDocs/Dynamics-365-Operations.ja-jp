@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 265864
 ms.assetid: e253a57a-979b-4ca5-8e09-2bfce97395a5
@@ -18,21 +18,21 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: ce56573117d4a3f964455e4f70a06fc15d5c7505
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 886156800bf765c69299d6eb283efb3957297b2c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548780"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848535"
 ---
 # <a name="create-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用した分析レポートの作成
 
 [!include [banner](../includes/banner.md)]
 
-ユーザーが power user またはビジネス アナリストである場合は、自分の組織のために多くのレポートを作成している可能性があります。 他のユーザーと共有する前に、データの書式設定と関連付けによって、Microsoft Excel でこれらのレポートを作成する場合があります。 レポートへの変更が必要な場合、組織内のユーザーから連絡が来る可能性があります。 このソリューションを使用すると、リッチでインタラクティブなレポートを簡単に作成できます。 レポート ライターは、Microsoft Power BI Desktop をレポート ツールとして使用することができます。 作成したレポートは、PowerBI.com に公開することができます。 Power BI Desktop の詳細については、[Power BI Desktop で魅力的なレポートとビジュアライゼーションを作成する](https://powerbi.microsoft.com/en-us/desktop)を参照してください。
+ユーザーが power user またはビジネス アナリストである場合は、自分の組織のために多くのレポートを作成している可能性があります。 他のユーザーと共有する前に、データの書式設定と関連付けによって、Microsoft Excel でこれらのレポートを作成する場合があります。 レポートへの変更が必要な場合、組織内のユーザーから連絡が来る可能性があります。 このソリューションを使用すると、リッチでインタラクティブなレポートを簡単に作成できます。 レポート ライターは、Microsoft Power BI Desktop をレポート ツールとして使用することができます。 作成したレポートは、PowerBI.com に公開することができます。 Power BI Desktop の詳細については、[Power BI Desktop で魅力的なレポートとビジュアライゼーションを作成する](https://powerbi.microsoft.com/desktop)を参照してください。
 
 ## <a name="accessing-the-local-entity-store-by-using-directquery"></a>DirectQuery を使用してローカル エンティティ ストアへのアクセス
-Microsoft Dynamics 365 for Finance and Operations では、データ エンティティを介して公開されるオープン データ プロトコル (OData) エンドポイントを使用して、Microsoft Power BI レポートを作成することができます。このアプローチの限界にもかかわらず、エンティティ格納は従来のソリューションでもエンティティ格納をサポートしています。 ただし、DirectQuery は、解析ソリューションのソース データに推奨されるメソッドになりました。 DirectQuery の利点および制限の詳細については、[Power BI Desktop で DirectQuery の使用](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-use-directquery/)を参照してください。
+Microsoft Dynamics 365 for Finance and Operations では、データ エンティティを介して公開されるオープン データ プロトコル (OData) エンドポイントを使用して、Microsoft Power BI レポートを作成することができます。このアプローチの限界にもかかわらず、エンティティ格納は従来のソリューションでもエンティティ格納をサポートしています。 ただし、DirectQuery は、解析ソリューションのソース データに推奨されるメソッドになりました。 DirectQuery の利点および制限の詳細については、[Power BI Desktop で DirectQuery の使用](https://powerbi.microsoft.com/documentation/powerbi-desktop-use-directquery/)を参照してください。
 
 Power BI Desktop を使用すると、ローカルのエンティティ格納データベースに直接接続することによって、開発またはテスト環境でレポートを作成することができます。 レポートに問題がなければ、管理者は、ユーザーがそれを実稼働環境に移行する支援をすることができます。 このセクションの残りの部分では、このプロセスについて説明します。
 

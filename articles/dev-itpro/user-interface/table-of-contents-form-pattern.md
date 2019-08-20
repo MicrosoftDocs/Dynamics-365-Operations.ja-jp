@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 14621
 ms.assetid: 1785880c-d729-43b7-bd78-9ae03bac4043
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bedd642cd6f1c81103d793620986a6e8194ad02
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cd1967add1619e6ad23891f6db69e3234d78abf6
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559516"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851091"
 ---
 # <a name="table-of-contents-form-pattern"></a>目次のフォーム パターン
 

@@ -10,25 +10,25 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a65db6abd3c11fa168fc788fb4a3bf1d30f13bcc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1cbd2fe8c4c99b97479bfdad0d1608e40e12d764
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553752"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849424"
 ---
 # <a name="install-network-printer-devices-in-on-premises-environments"></a>オンプレミス環境でのネットワーク プリンター デバイスのインストール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開を既存のネットワーク プリンタ デバイスに接続する方法について説明します。 オンプレミス アプリケーションでのネットワーク印刷は、Microsoft Windows Server 2016 の「[印刷およびドキュメント サービス](https://technet.microsoft.com/en-us/library/hh831468(v=ws.11).aspx)」機能でサポートされます。 この機能を使用すると、プリンター管理に関連するタスクを集中管理できます。 印刷およびドキュメント サービスをインストールして構成するには、Application Object Server (AOS) のプライマリー インスタンスをホストするサーバーへの管理アクセス権が必要です。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開を既存のネットワーク プリンタ デバイスに接続する方法について説明します。 オンプレミス アプリケーションでのネットワーク印刷は、Microsoft Windows Server 2016 の「[印刷およびドキュメント サービス](https://technet.microsoft.com/library/hh831468(v=ws.11).aspx)」機能でサポートされます。 この機能を使用すると、プリンター管理に関連するタスクを集中管理できます。 印刷およびドキュメント サービスをインストールして構成するには、Application Object Server (AOS) のプライマリー インスタンスをホストするサーバーへの管理アクセス権が必要です。
 
 ネットワーク印刷サービスの構成には、次の 2 つの役割があります。
 
@@ -41,8 +41,8 @@ ms.locfileid: "1553752"
 
 環境管理者は、このセクションの情報を使用してネットワーク印刷サービスを有効にします。
 
-1. [印刷およびドキュメント サービスのインストール](https://technet.microsoft.com/en-us/library/jj134159(v=ws.11).aspx)の手順に従って印刷およびドキュメント サービスをインストールします。
-2. 次の手順に従って印刷およびドキュメント サービスをコンフィギュレーションします [印刷およびドキュメント サービスのコンフィギュレーション](https://technet.microsoft.com/en-us/library/jj134163(v=ws.11).aspx)。
+1. [印刷およびドキュメント サービスのインストール](https://technet.microsoft.com/library/jj134159(v=ws.11).aspx)の手順に従って印刷およびドキュメント サービスをインストールします。
+2. 次の手順に従って印刷およびドキュメント サービスをコンフィギュレーションします [印刷およびドキュメント サービスのコンフィギュレーション](https://technet.microsoft.com/library/jj134163(v=ws.11).aspx)。
 3. AXService アプリケーションをホストするために使用する各サーバーに対して、これらの手順に従います。
 
     1. ローカル サーバーで、**ローカル ユーザーとグループ**マネージャーを開始します。

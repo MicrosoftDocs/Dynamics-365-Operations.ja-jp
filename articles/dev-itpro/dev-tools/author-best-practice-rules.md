@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 48071
 ms.assetid: 4fe671c4-c556-4942-8570-307cf68ae0a7
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0406f2b7b25a659aa84dedaff3dae9fa1c4b529d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 06a95b5ca33c61044c3fd90f2d46c21a76482f60
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544164"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833586"
 ---
 # <a name="write-best-practice-rules"></a>ベスト プラクティス ルールを記述する
 

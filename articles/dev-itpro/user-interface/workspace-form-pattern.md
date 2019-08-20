@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 29151
 ms.assetid: 4ca77c08-1c8f-4b0c-af55-ca89a7e8982b
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a409a42e4d930b72df5e7ac4e87e698134b7c7f
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 90f1a9efbb71738b86fc77427681c3c798e4827d
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595698"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851037"
 ---
 # <a name="workspace-form-pattern"></a>ワークスペースのフォーム パターン
 

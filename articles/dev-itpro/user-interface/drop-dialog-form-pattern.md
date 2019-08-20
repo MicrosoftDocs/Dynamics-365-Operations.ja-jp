@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 16041
 ms.assetid: 94ffa218-de7d-4d13-9a8a-461cad0970b3
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aefdc81b44c3bc2f0e07169b2689a601a164d84c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b7847f87ca431b7d05d2d063026fea0f28d87b46
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556698"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851179"
 ---
 # <a name="drop-dialog-form-pattern"></a>ダイアログ削除のフォーム パターン
 

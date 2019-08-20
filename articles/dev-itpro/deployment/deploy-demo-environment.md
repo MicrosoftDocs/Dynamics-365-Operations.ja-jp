@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 141093
 ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 460db6ea6a5cd744a2497efc19e54c7cc1eaea5e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1eb13a7fe914743c2530d50b13cf592627ed95c2
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544223"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850377"
 ---
 # <a name="deploy-demo-environments"></a>デモ環境の配置
 
@@ -54,7 +54,7 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
 
 
 ~~~
-**Note:** The size of the VM and the number of instances affect the cost of your subscription. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/).
+**Note:** The size of the VM and the number of instances affect the cost of your subscription. For more information, see [Azure pricing](https://azure.microsoft.com/pricing/).
 ~~~
 
 7. **詳細設定**をクリックし、配置にカスタマイズを追加します。 デモ環境では、既定の設定のままにすることをお勧めします。

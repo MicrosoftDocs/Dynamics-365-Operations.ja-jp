@@ -1,9 +1,9 @@
 ---
 title: ロールベース セキュリティ
-description: この記事では、Microsoft Dynamics 365 for Finance and Operations のロールベースのセキュリティの要素の概要を説明します。
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のロールベースのセキュリティの要素の概要を提供します。
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbe795c61312ada89ca8c6ed08f00411d9c35812
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 36f446c88a59818d6a67df448228b92db42048fa
+ms.sourcegitcommit: 2d7ddd806b12a30e0f97079a1977abdc7d285a22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563798"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "1772507"
 ---
 # <a name="role-based-security"></a>ロールベース セキュリティ
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations のロールベースのセキュリティの要素の概要を説明します。 
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のロールベースのセキュリティの要素の概要を提供します。 
 
 ロールベース セキュリティでは、個々のユーザーではなく、セキュリティ ロールに対してのみアクセスを許可します。 ユーザーはロールに割り当てられます。 セキュリティ ロールに割り当てられているユーザーは、そのロールに関連付けられている一連の権限にアクセスできます。 任意のロールに割り当てられていないユーザーには権限がありません。 
 
@@ -69,7 +69,7 @@ Finance and Operations のセキュリティ モデルでは、職務に権限�
 既定の職務が用意されています。 管理者は、職務権限に関連付けられている権限を変更するか、新しい職務権限を作成することができます。
 
 ## <a name="privileges"></a>権限
-Finance and Operations のセキュリティ モデルでは、ジョブを実行したり、問題を解決したり、割り当てを完了したりするために必要なアクセス許可のレベルが権限によって指定されます。 権限は、ロールに直接割り当てることができます。 ただし、より簡単なメンテナンスでは、ロールに関税のみを割り当てることをお勧めします。 
+Finance and Operations のセキュリティ モデルでは、ジョブを実行したり、問題を解決したり、割り当てを完了したりするために必要なアクセス許可のレベルが権限によって指定されます。 権限はロールに直接割り当てることができますが、職務をロールのみに割り当てることをお勧めします。 これにより、権限をまずグループ化して職務にまとめられ、メンテナンスが容易になります。 
 
 権限には、ユーザー インターフェイス要素やテーブルなどの個別のアプリケーション オブジェクトへのアクセス許可が含まれています。 たとえば、**支払のキャンセル**権限には、支払のキャンセルに必要なメニュー項目、フィールド、およびテーブルへのアクセス許可が含まれています。 
 

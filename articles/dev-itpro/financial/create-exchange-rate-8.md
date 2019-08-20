@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: shylaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jbye
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 3da4544cbfdf1d6693696aec84f53737855b514a
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: bd9a354fadad027e03f0bd3e631046609316f802
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595413"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833380"
 ---
 # <a name="create-exchange-rate-providers-in-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 を使用した為替レート プロバイダーの作成
 

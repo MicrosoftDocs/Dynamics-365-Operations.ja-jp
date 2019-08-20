@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 29171
 ms.assetid: c3c5eea7-f771-41ea-9976-8d0e1f3d3f25
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a63f24353ba0c79bc718f047331edd25a0a74a4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b3dbb2858e04dffa9878b255523db50c6a7ed8ae
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569692"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851258"
 ---
 # <a name="advanced-selection-form-pattern"></a>高度な選択のフォーム パターン
 

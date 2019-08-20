@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 91363
 ms.assetid: 6be04fc8-5e2b-4ea6-b9bc-940fb5b811e5
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c1f0bb1570d81623c3132f350882d8e0453aa95d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 39912fa34ac2e9439f27d4987af68b5ab5f5d2b6
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552518"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833356"
 ---
 # <a name="financial-dimension-configuration"></a>財務分析コードのコンフィギュレーション
 

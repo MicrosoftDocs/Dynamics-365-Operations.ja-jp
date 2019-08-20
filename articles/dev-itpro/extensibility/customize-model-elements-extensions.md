@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 11184
 ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 739033a750925d948039e3ed52eee33336d2e56e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e0d5bd397fc76028ff9fa1e0bde79adbc9e976d0
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550918"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833472"
 ---
 # <a name="customize-model-elements-through-extension"></a>拡張機能によってモデル要素をカスタマイズする
 

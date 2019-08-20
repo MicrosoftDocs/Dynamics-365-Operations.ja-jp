@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 191133
 ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: e144c4e8b2e27ff17b1bb5972cae655cd17b5ffc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5449a8ebd62a2db6b7b2736dcfc8af533e7a351f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551567"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849907"
 ---
 # <a name="run-the-document-routing-agent-as-a-windows-service"></a>ドキュメント回覧エージェントを Windows サービスとして実行する
 

@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-11-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f26dd879e421ad1dee43f54745c9466871127642
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: acd1f0ff3aafdaf2d17a43cb778fc8151cd513bc
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559013"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833246"
 ---
 # <a name="systest-filtering-using-class-and-method-attributes"></a>クラスおよびメソッドの属性を使用した SysTest フィルター処理
 
@@ -44,7 +44,7 @@ ms.locfileid: "1559013"
 
 **テスト プロパティ** 属性の **SysTestProperty** は、プラットフォームの以前のリリースに存在していましたが、完全には機能しませんでした。 ただし、**SysTestProperty** 属性は **Test Essentials** パッケージに存在する他の属性とは対照的に、**アプリケーション基準**パッケージに存在します。 プラットフォームの下位互換性への確約のため、現在この属性を予定の場所に移動することはできません。そのため、使用するには**アプリケーション基準**パッケージへの参照が必要になります。 **SysTestProperty** はプロパティと値 (2 つの文字列) を指定し、Visual Studio の **Test Toolbox** ウィンドウで使用できるようになりました。 **テスト プロパティ**は複数回指定でき、クラスとメソッドの両方のレベルで存在できます。 **テスト プロパティ**は、MSTest アダプタに従って、Visual Studio テスト コンソールのフィルター処理のテストには使用できません。
 
-Visual Studio テスト コンソールで使用できる高度なフィルター処理構文および MSTest フレームワークのフィルター処理例の確認については、[選択可能な単位テストの実行](https://docs.microsoft.com/en-us/dotnet/core/testing/selective-unit-tests) を参照してください。 
+Visual Studio テスト コンソールで使用できる高度なフィルター処理構文および MSTest フレームワークのフィルター処理例の確認については、[選択可能な単位テストの実行](https://docs.microsoft.com/dotnet/core/testing/selective-unit-tests) を参照してください。 
 
 > [!NOTE]
 > フィルター処理のテストの目的で、SysTest フレームワークを使用して **FullyQualifiedName** と **名前**でフィルター処理することができます。

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 25971
 ms.assetid: a911b0f2-a7b0-4643-bf5b-16e55c9397be
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04eb3ba177d9151bc34ce13e67564864e3e01563
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fe7c3211cff3d208bb9f18be7b7b1a6a99d55a21
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554533"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851721"
 ---
 # <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコードの移行の準備
 

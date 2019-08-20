@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 44351
 ms.assetid: dd9b86cb-630a-4429-9aea-8ba4c4723baa
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6cb99d6ce863b464c6ed8d7c3a96c5e6a2e8e04c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dcd139698cc611cc1abcd128a787e994d732e0d4
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545113"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833097"
 ---
 # <a name="add-properties-to-sales-orders"></a>プロパティを販売注文に追加
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 255544
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: a007b7e50436a6dd223633707d7e4f6fc420e510
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4382b0d976b9e304c776bde1064ec12621702acf
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565243"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851475"
 ---
 # <a name="architecture-and-design-considerations-for-the-mobile-platform"></a>モバイル プラットフォームのアーキテクチャと設計の考慮事項
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 4984
 ms.assetid: e9590e78-6aae-4c3a-b50b-786351cfc0ff
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88130888b9d203c90702901190dcb6ee8620101e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d762651e5f876674533d79ea602cfedbf001f142
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544146"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833548"
 ---
 # <a name="commands-for-determining-how-elements-are-used"></a>要素の使用方法を決定するためのコマンド
 

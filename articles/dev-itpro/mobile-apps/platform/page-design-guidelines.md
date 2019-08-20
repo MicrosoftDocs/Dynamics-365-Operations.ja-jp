@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 255544
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 388ed3db38630028522b1614483f9109589253ad
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f21735406a6893aa60c75a395ee47d545965a984
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559795"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851463"
 ---
 # <a name="page-design-guidelines"></a>ページ デザインのガイドライン
 

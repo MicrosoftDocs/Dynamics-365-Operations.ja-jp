@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 72124
 ms.assetid: c9ab2a6c-ea19-4c21-a2d9-35a8d516b48b
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 17502c50d3b95be1ae454afdeafb2c003609b51a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e2df3186237034d97c503b8ec56a78f625c0baed
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564379"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833734"
 ---
 # <a name="retail-online-store-publishing-architecture"></a>小売オンライン ストア発行アーキテクチャ
 
@@ -48,7 +48,7 @@ ms.locfileid: "1564379"
 5.  Retail 発行ジョブは、CRT アプリケーション プログラミング インターフェイス (API) から実行され、オンライン ストアで作成したサイトの階層を作成します。
 6.  Commerce Data Exchange: Real-time Service は、CRT API から小売公開ジョブ アクションの状態を受け取り、状態を公開します。 状態は、**公開済** または **エラー** のいずれかになります。
 
-チャンネルを公開する特定の手順については、[オンライン ストアの設定](https://msdn.microsoft.com/en-us/jj682095) を参照してください。 チャンネルを公開した後は、カタログを公開できます。
+チャンネルを公開する特定の手順については、[オンライン ストアの設定](https://msdn.microsoft.com/jj682095) を参照してください。 チャンネルを公開した後は、カタログを公開できます。
 
 ## <a name="publish-a-retail-online-store-catalog"></a>Retail オンライン ストア カタログを発行
 小売製品カタログを使用すると、オンライン ストアで提供する製品を識別できます。 カタログを作成するときは、製品が提供されるオンライン ストアを識別し、製品を追加し、販売促進の詳細の追加によって製品の提供を強化します。 カタログが承認された後、オンライン ストアで製品を使用できるようにカタログを公開します。 小売製品カタログを発行する前に、以下の設定タスクを実行する必要があります。

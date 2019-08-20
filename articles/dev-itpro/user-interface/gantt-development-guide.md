@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 17311
 ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90659ea7fb0eb6cbfa6ac7ce7e0deedcfab2e7c4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 72c5d6d02a3b7a3be18c256e5a1c96a0e6384fed
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572524"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851155"
 ---
 # <a name="gantt-control-development-guide"></a>ガント管理作成ガイド
 

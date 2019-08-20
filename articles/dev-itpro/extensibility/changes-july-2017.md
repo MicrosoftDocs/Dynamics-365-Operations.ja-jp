@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: d29dda71a2785a35ab12297b5b57695053457291
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d6834971cb50a7379a43320ac386e9294717f2f3
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544130"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833474"
 ---
 # <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-july-2017"></a>Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 6154
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3bc76680edff97c07be6388e36c331ef2a4e104c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 96426ee5b1a817c91745d67ffc59cbf8bb7198ff
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556747"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851803"
 ---
 # <a name="translate-user-interface-files"></a>ユーザー インタ フェース ファイルの翻訳
 

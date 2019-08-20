@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 255544
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 168c77b8ecfb67508a1588a88592a75c99f31f1e
-ms.sourcegitcommit: 291d90a857dd1be4ad58dc10d57415d6bddb09c3
+ms.openlocfilehash: 4a28c447d9f59cf23e7ca7d31eadf97ade29b701
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1616406"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851469"
 ---
 # <a name="mobile-platform-home-page"></a>モバイル プラットフォームのホーム ページ
 
@@ -148,7 +148,7 @@ ms.locfileid: "1616406"
 9. 詳細の変更や検証が必要な場合は、プロセスを繰り返します。
 
 ## <a name="change-needed-for-adfs-to-support-mobile-client-in-on-premises-environments"></a>ADFS がオンプレミス環境でモバイル クライアントをサポートするために必要な変更 
-ADFS がドメインで使用されており、環境がオンプレミスである場合、Windows 統合認証 (WIA) を使用する代わりに **ADFS は標準のフォームベースの認証画面を提供するように構成する必要があります**。 iOS と Android の Microsoft Dynamics Unified Operations アプリには、標準のフォーム ベースの認証画面が必要です。 ADFS は、ブラウザー クライアント (ユース ケース) のみ WIA を提供するように構成する必要があります。 詳細については、[WIA をサポートしていないデバイスのイントラネット フォーム ベースの認証を構成する](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)を参照してください。
+ADFS がドメインで使用されており、環境がオンプレミスである場合、Windows 統合認証 (WIA) を使用する代わりに **ADFS は標準のフォームベースの認証画面を提供するように構成する必要があります**。 iOS と Android の Microsoft Dynamics Unified Operations アプリには、標準のフォーム ベースの認証画面が必要です。 ADFS は、ブラウザー クライアント (ユース ケース) のみ WIA を提供するように構成する必要があります。 詳細については、[WIA をサポートしていないデバイスのイントラネット フォーム ベースの認証を構成する](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)を参照してください。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 ### <a name="the-mobile-client-app-is-not-working-correctly-on-particular-devices"></a>特定のデバイスでモバイル クライアント アプリケーションが正常に動作しない

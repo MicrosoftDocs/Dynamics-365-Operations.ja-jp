@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 28251
 ms.assetid: 1cfa479c-71fa-4eb6-8d12-ad4d65c8ecf3
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f34628361f91a47bc0f8b0670e78e1a354aae04a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 65c3dcf50ecd0e7a62184b5598593c823b470d19
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572987"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851129"
 ---
 # <a name="page-layout-in-the-web-client"></a>Web クライアントのページ レイアウト
 

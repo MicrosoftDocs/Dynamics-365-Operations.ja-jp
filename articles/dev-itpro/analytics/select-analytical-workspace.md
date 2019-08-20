@@ -3,7 +3,7 @@ title: PowerBI.comからの分析ワークスペースの選択
 description: このトピックでは、PowerBI.comでホストされているレポートを選択してアプリケーション ワークスペースで使用する方法について説明します。
 author: tjvass
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: add3f3ae779b06b3f114cef16984c14dff2c1791
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 0a86d445e8bfd5ffe087fcb5b28fce8478dc6987
+ms.sourcegitcommit: 0429e6ac7d309cc9c0890401e0563871f5b2cbc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731106"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "1772483"
 ---
 # <a name="select-analytical-workspaces-from-powerbicom"></a>PowerBI.comからの分析ワークスペースの選択
 
@@ -46,6 +46,10 @@ PowerBI.comが提供するワールドクラスのツールを使用すると、
 - Microsoft Power BIプレミアムサービスを使用している組織では、標準レポートを強化したいと考えています。
 
 ### <a name="embed-a-powerbicom-report-in-an-analytical-workspace"></a>分析ワークスペースへのPowerBI.comレポートの埋め込み
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3lP5m]
+
+[Dynamics 365 for Finance and Operations に PowerBI.com レポートを埋め込む方法](https://www.youtube.com/watch?v=gGWuNJDoi-M&feature=youtu.be) ビデオ (上記) は、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) が YouTube でご覧いただけます。
 
 標準レポートを置き換えるには、システム レポート エディター セキュリティ グループのメンバーである必要があります。 このセキュリティ グループ メンバーは、標準レポートをカスタマイズするためのアプリケーション ワークスペースのオプションにアクセスできます。 次の例は、標準分析レポートを、PowerBI.comでホストされているカスタム レポートに置き換える方法を示しています。
 

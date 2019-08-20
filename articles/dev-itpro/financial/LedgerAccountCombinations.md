@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: ''
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 11314
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9869deaa2a02c9d9b469436659048fe5f77f87c7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d6e7bf06fbba804db4b6e1cf3fbec2b0b8adb5da
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513393"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1794920"
 ---
 # <a name="ledger-account-combinations"></a>勘定科目の組み合せ
 

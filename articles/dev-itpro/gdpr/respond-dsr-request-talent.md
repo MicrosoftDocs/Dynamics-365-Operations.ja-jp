@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rschloma
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 827baf656c34b0bdb35ba32d9dca7421df1c23b6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c0d85356f2bcc56ec89fec94ead41c48df814bba
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555522"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833310"
 ---
 # <a name="respond-to-requests-for-personal-data-in-talent"></a>Talent での個人データ要求に対応
 
@@ -107,7 +107,7 @@ Talent で、Microsoft はプロセッサとして動作します。 データ �
 管理者は、Microsoft Dynamics 365 for Talent の個人データを検索し、エクスポートできます。Attract および Microsoft Dynamics 365 for Talent: <https://attract.talent.dynamics.com/personreport> 経由でのオンボーディングです。
 
 ## <a name="additional-resources"></a>追加リソース
-GDPR の詳細については、[欧州連合の Web サイト](https://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。
+GDPR の詳細については、[欧州連合の Web サイト](https://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。
 
 
 

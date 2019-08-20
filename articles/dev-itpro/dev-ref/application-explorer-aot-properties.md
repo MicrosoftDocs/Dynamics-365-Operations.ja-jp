@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 85213
 ms.assetid: ca186dda-8a78-4969-9be0-b81be00892e5
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6c6eaa9152652df1b78f6ad42b5025913ccec4d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be69b5678278436bc236354faf6ae731e4a4e82e
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551070"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833718"
 ---
 # <a name="application-explorer-properties"></a>アプリケーション エクスプローラーのプロパティ
 

@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Operations, Retail
 ms.search.region: Sweden
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: cba9f2fec7bdc4cafabb1cc86ae7752e16d65809
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 5fe04faea78bc13442e753ffdec7559d285a73eb
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577942"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834016"
 ---
 # <a name="sample-for-retail-pos-integration-with-control-units-for-sweden"></a>スウェーデン用の管理単位との Retail POS の統合
 

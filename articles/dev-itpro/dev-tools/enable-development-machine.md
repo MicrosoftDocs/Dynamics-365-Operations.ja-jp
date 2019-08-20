@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 31621
 ms.assetid: c56d5cdf-3c01-4730-bda5-bb5f8f79e375
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c12c765c6bc1a55b2d89e3b01b00df8c4a6b132
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c6e6d3e5cc7029dea16847d90bf051215cc6bca4
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544145"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833546"
 ---
 # <a name="create-new-users-on-development-machines"></a>開発マシンでの新しいユーザーの作成
 

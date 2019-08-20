@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7bbe43f5c112583b7c6e3b4a9f63b02c99a4ac02
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ac90e9848717706e5d197f3e7969090db471b738
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537499"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741203"
 ---
 # <a name="microsoft-dynamics-365-translation-service"></a>Microsoft Dynamics 365 Translation Service
 
@@ -43,7 +43,7 @@ DTS は、翻訳出力の品質を最大限に高めるために [Microsoft 一�
 DTSは Microsoft Translator サービスとカスタム トランスレーターを使用して、Microsoft Dynamics 製品向けに Microsoft Translator の高度なニューラル機械翻訳をカスタマイズします。 カスタム トレーニングを受けた MT システムは、パートナーが 10,000 を超える翻訳単位 (TU) を含む XLIFF TM ファイルをアップロードしない限り、GA 言語でのみ使用できます。 (TU には、通常、ソース文字列、翻訳、状態、状態識別子、およびメモが含まれています。) そのような場合、DTS は、XLIFF TM ファイルが提出される翻訳要求に固有のカスタムトレーニング MT システムを作成します。
 
 > [!NOTE]
-> Microsoft Translator は Microsoft Translator テキスト API を介したテキスト翻訳をサポートしています。 [Microsoft Translator Hub](https://www.microsoft.com/en-us/translator/business/hub/) の廃止により、V2 も 2019 年 4 月 30 日に廃止されます。そのため DTS は V3 Translator API を使用します。 V3 のサポート言語についての詳細は [Translator テキスト API の言語と地域のサポート](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/language-support#customization) を参照してください。 
+> Microsoft Translator は Microsoft Translator テキスト API を介したテキスト翻訳をサポートしています。 [Microsoft Translator Hub](https://www.microsoft.com/translator/business/hub/) の廃止により、V2 も 2019 年 4 月 30 日に廃止されます。そのため DTS は V3 Translator API を使用します。 V3 のサポート言語についての詳細は [Translator テキスト API の言語と地域のサポート](https://docs.microsoft.com/azure/cognitive-services/translator/language-support#customization) を参照してください。 
 
 ## <a name="supported-products"></a>サポートされている製品
 DTS では、現在次の製品バージョンがサポートされています。

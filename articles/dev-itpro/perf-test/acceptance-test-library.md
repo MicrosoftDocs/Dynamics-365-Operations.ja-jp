@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: RobinARH
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: fdb87cf1e56aaf27d4b3ff5c551735dcb71473cd
-ms.sourcegitcommit: 2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e
+ms.openlocfilehash: 887f2e29d7dfc59bd8c2c141aea425fe01ac043c
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "1608151"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833302"
 ---
 # <a name="acceptance-test-library"></a>承認テスト ライブラリ
 

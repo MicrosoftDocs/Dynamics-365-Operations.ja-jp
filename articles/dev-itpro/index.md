@@ -1,7 +1,7 @@
 ---
 title: Finance and Operations の開発と管理
 description: このページは、開発者と IT プロが Finance and Operations の使用を開始するのに役に立ちます。
-author: margoc
+author: robinarh
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
-ms.reviewer: margoc
+ms.reviewer: rhaertle
 ms.custom: 62303
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.search.region: Global
@@ -17,12 +17,12 @@ ms.search.scope: Operations
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 990f0a5a3427df6ec6c8958bb14ad79d70e3323a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 126e770079b57cf77cdd7111372d7043127b2e77
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552513"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856221"
 ---
 # <a name="development-and-administration-for-finance-and-operations"></a>Finance and Operations の開発と管理
 

@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 21631
 ms.assetid: 06e26767-6056-4755-b47e-0bda71833581
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93f55b36dadda37b3f58601ce158f303042a63fc
-ms.sourcegitcommit: a1354c6218b328d4d7dcc149d1339a7af10c48bf
+ms.openlocfilehash: 307ae1a2b855186c2029bf0dd36ec4080df9b1f4
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "1723135"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833558"
 ---
 # <a name="develop-and-customize"></a>開発およびカスタマイズ 
 

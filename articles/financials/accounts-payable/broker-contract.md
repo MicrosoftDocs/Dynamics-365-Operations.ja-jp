@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 34bacac65184ce879a7a571e40a7a1031c9428ad
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c11d89c714e11583a8819f5b60cf8dbca167b8bb
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558294"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1837434"
 ---
 # <a name="broker-contract-management"></a>ブローカー契約管理
 

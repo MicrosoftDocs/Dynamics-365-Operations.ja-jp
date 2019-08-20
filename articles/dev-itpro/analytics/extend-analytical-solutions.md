@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 443130ff1a79fb4d5d0ee0358a957d7eee83ef16
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d9408ca6d8a4f4c408aa82b07d2294f929fafb8f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553941"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849645"
 ---
 # <a name="extend-analytical-solutions-and-host-them-on-powerbicom"></a>解析ソリューションを拡張して、PowerBI.com でホストします。
 

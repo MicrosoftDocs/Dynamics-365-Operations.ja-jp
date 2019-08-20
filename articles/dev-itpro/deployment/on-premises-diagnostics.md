@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-ms.openlocfilehash: 06e7388ccca731996b705ec70aa8367091cc5ab7
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 346c7c329772d591e925517b6f9ee7136152106c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595420"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848105"
 ---
 # <a name="on-premises-diagnostics"></a>オンプレミス診断
 

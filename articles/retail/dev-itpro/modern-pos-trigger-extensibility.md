@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 17751
 ms.assetid: 6767d342-73e0-432b-a02f-ea8191464506
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 779376807af5294ddcd996934582d03ff57c0e7b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 69d8454c5ab4232382b8ddb8d45ea25facdf9289
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558210"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833764"
 ---
 # <a name="retail-modern-pos-mpos-and-cloud-pos-trigger-extensibility"></a>Retail Modern POS (MPOS) およびクラウド POS のトリガー拡張機能
 

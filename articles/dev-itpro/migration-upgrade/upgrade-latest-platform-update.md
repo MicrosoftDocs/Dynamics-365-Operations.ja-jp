@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 253274
 ms.assetid: a70a4f28-9269-4b35-bc29-1edba0b92d83
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 9d02dda07c2165d255c229ceae7d662e63efb4fb
-ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
+ms.openlocfilehash: 7b1cc727194c501f5c77ef5cbcff86964f42e30a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1539442"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851655"
 ---
 # <a name="apply-the-latest-platform-update-to-environments"></a>最新のプラットフォーム更新プログラムを環境へ適用
 

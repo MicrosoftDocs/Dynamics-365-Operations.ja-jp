@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: RobinARH
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: cac5a416293d18514d167cf0bdd28156fb1c4b9d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d9c34b3ae3f55d3316b8a6d21318f446d06494de
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506196"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833296"
 ---
 # <a name="acceptance-test-library-commands"></a>承認テスト ライブラリのコマンド
 

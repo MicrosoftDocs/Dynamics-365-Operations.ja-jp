@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 5e229f7275061ae8c4293d317f5561a0b224fe0a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6d3ca1b55a393b292522b5cda4d881b7e6580574
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554482"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851661"
 ---
 # <a name="upgrade-from-ax-2012---functional-test-passes"></a>AX 2012 からのアップグレード - 機能テスト パス
 

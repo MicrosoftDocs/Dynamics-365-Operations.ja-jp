@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: b8246b8cbbc60d881b7c23c9ceec43ea09b1c005
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8624f9f7eb3aa32a2d855d0c9e2ef4887dd441df
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561657"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863549"
 ---
 # <a name="whats-new-or-changed-in-on-premises-deployments-of-dynamics-365-for-finance-and-operations-enterprise-edition-72-with-platform-update-12-march-2018"></a>プラットフォーム更新プログラム 12 による Dynamics 365 for Finance and Operations, Enterprise Edition 7.2 のオンプレミス配置 (2018 年 3 月)
 

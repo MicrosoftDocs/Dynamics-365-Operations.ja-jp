@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Retail
 ms.search.region: France
 ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 5bd7287bf68e2d142beccaf611b625d3a220ee6f
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: a8d3b850311a23b652eb28a1763780bf8a06382d
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577884"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845663"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 

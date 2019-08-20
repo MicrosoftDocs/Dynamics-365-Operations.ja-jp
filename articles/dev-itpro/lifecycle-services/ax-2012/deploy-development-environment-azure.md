@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 17591
 ms.assetid: eaef3391-e5fe-43f9-98d9-db9fb6951363
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b06b87bb82892d0deb03329431946e8bd0390919
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9904b69252bd839a8ee3b17250a65e5d58bbb623
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544093"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850561"
 ---
 # <a name="deploy-development-environments-on-azure"></a>Azure での開発環境の配置
 
@@ -76,15 +76,15 @@ Azure サブスクリプションに Lifecycle Services プロジェクトを接
 
 企業ユーザーが Azure 仮想ネットワーク内の仮想マシンのリソースにアクセスできるようにするには、Azure 仮想ネットワークとオンプレミス社内ネットワークの間にサイト間 VPN 接続を作成する必要があります。 これを行う方法の詳細については、以下を参照してください。
 
--   [仮想ネットワークの概要](https://msdn.microsoft.com/en-us/library/windowsazure/jj156007.aspx)
--   [仮想ネットワークのコンフィギュレーション タスク](https://msdn.microsoft.com/en-us/library/jj156206.aspx)
--   [テスト用にシミュレーションしたハイブリッド クラウド環境を設定する](http://azure.microsoft.com/en-us/documentation/articles/virtual-networks-setup-simulated-hybrid-cloud-environment-testing/)
+-   [仮想ネットワークの概要](https://msdn.microsoft.com/library/windowsazure/jj156007.aspx)
+-   [仮想ネットワークのコンフィギュレーション タスク](https://msdn.microsoft.com/library/jj156206.aspx)
+-   [テスト用にシミュレーションしたハイブリッド クラウド環境を設定する](http://azure.microsoft.com/documentation/articles/virtual-networks-setup-simulated-hybrid-cloud-environment-testing/)
 -   [Windows Server 2012 ルーティングおよびリモート アクセスサービス (RRAS) を使用した Azure 仮想ネットワークのサイト間 VPN](https://msdn.microsoft.com/library/dn636917.aspx)
--   [管理ポータルに仮想ネットワーク ゲートウェイを構成する](https://msdn.microsoft.com/en-us/library/azure/jj156210.aspx)
+-   [管理ポータルに仮想ネットワーク ゲートウェイを構成する](https://msdn.microsoft.com/library/azure/jj156210.aspx)
 
 ### <a name="create-an-active-directory-in-azure"></a>Azure の Active Directory アカウントの作成
 
-Active Directory は Azure 仮想ネットワークに必須です。 Active Directory は Azure 仮想ネットワークに配置できます。 [Azure 仮想マシンに Windows Server Active Directory を展開するためのガイドライン](https://msdn.microsoft.com/en-us/library/azure/jj156090.aspx)に従ってください。 Active Directory フェデレーション サービスは現在 AX 2012 R3 でサポートされていないことに注意してください。 Active Directory を提供する場合は、LCS 展開サービスで使用できる範囲で次のサービス アカウントを作成する必要があります。
+Active Directory は Azure 仮想ネットワークに必須です。 Active Directory は Azure 仮想ネットワークに配置できます。 [Azure 仮想マシンに Windows Server Active Directory を展開するためのガイドライン](https://msdn.microsoft.com/library/azure/jj156090.aspx)に従ってください。 Active Directory フェデレーション サービスは現在 AX 2012 R3 でサポートされていないことに注意してください。 Active Directory を提供する場合は、LCS 展開サービスで使用できる範囲で次のサービス アカウントを作成する必要があります。
 
 <table>
 <colgroup>
@@ -148,7 +148,7 @@ Active Directory は Azure 仮想ネットワークに必須です。 Active Dir
 
 ### <a name="create-a-domain-trust"></a>ドメイン信頼の作成
 
-企業ユーザーが Azure ドメイン内の仮想マシンのリソースにアクセスできるようにするには、ドメイン間で Active Directory のトラストを作成する必要があります。 信託の作成方法の詳細については、「[フォレスト信託の作成](https://technet.microsoft.com/en-us/library/cc754626.aspx)」を参照してください。 このプロセスは、2 つのオンプレミス ドメイン間で信頼関係を作成する場合と同じプロセスです。
+企業ユーザーが Azure ドメイン内の仮想マシンのリソースにアクセスできるようにするには、ドメイン間で Active Directory のトラストを作成する必要があります。 信託の作成方法の詳細については、「[フォレスト信託の作成](https://technet.microsoft.com/library/cc754626.aspx)」を参照してください。 このプロセスは、2 つのオンプレミス ドメイン間で信頼関係を作成する場合と同じプロセスです。
 
 ### <a name="give-the-administrators-group-the-right-to-log-on-as-a-batch-job"></a>バッチ ジョブとしてログオンする権限を管理者グループに付与します
 
@@ -253,7 +253,7 @@ Azure に開発環境を配置するには、以下の手順に従ってくだ�
 11. **完了**をクリックします。 **環境の展開** パネルが再表示されます。
 12. 配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。
     -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md)」を参照してください。
-    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/) を参照してください。
+    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 13. ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
 14. **次へ** をクリックします。
@@ -268,11 +268,11 @@ AOS-&lt;GUID&gt; 仮想マシンに &lt;DomainName&gt;DynamicsInstallUser アカ
 
 ### <a name="compile-ax-2012-r3"></a>AX 2012 R3 のコンパイル
 
-AxBuild.exe. を使用した AX 2012 R3 のコンパイル 手順については、[X++ から P コードへの AOS の並列コンパイルに対する AxBuild.exe](https://technet.microsoft.com/EN-US/library/dn528954.aspx) を参照してください。
+AxBuild.exe. を使用した AX 2012 R3 のコンパイル 手順については、[X++ から P コードへの AOS の並列コンパイルに対する AxBuild.exe](https://technet.microsoft.com/library/dn528954.aspx) を参照してください。
 
 ### <a name="initailize-ax-2012-r3"></a>AX 2012 R3 の初期化
 
-AX 2012 R3 クライアントを開いて、初期化チェックリストを完了します。 手順については、[初期化チェックリスト](https://technet.microsoft.com/EN-US/library/aa497061.aspx) を参照してください。
+AX 2012 R3 クライアントを開いて、初期化チェックリストを完了します。 手順については、[初期化チェックリスト](https://technet.microsoft.com/library/aa497061.aspx) を参照してください。
 
 ### <a name="install-sample-data"></a>サンプル データのインストール
 
@@ -284,14 +284,14 @@ AX 2012 R3 クライアントを開いて、初期化チェックリストを完
 4.  コマンド プロンプトを開いて、次の場所にアクセスします: C:\Program Files (x86) \Microsoft Dynamics AX 2012 テスト データ確認転送ツール (ベータ)
 5.  次のコマンドを実行します: dp.exe import F:DemoData MicrosoftDynamicsAx
 
-**注:** サンプル データには、AX 2012 R3 の試用版のライセンス キーが含まれています。 サンプル データをインストールしないように選択する場合は、開発またはテスト用の試用版ライセンス キーを [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) または [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898#FileId=57028) からダウンロードすることができます
+**注:** サンプル データには、AX 2012 R3 の試用版のライセンス キーが含まれています。 サンプル データをインストールしないように選択する場合は、開発またはテスト用の試用版ライセンス キーを [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) または [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898#FileId=57028) からダウンロードすることができます
 
 ### <a name="give-users-access"></a>ユーザーのアクセス許可を付与します
 
 ユーザが AX 2012 R3 にアクセスできるようにするには、以下のタスクを実行します。
 
 -   CLI- &lt;GUID&gt; 仮想マシンのリモート デスクトップ ユーザー グループに各ユーザーのドメイン アカウントを追加します。
--   ユーザーに AX 2012 R3 へのアクセス許可を付与します。 手順については、[ Microsoft Dynamics AX で新しいユーザーを作成する](https://technet.microsoft.com/EN-US/library/aa548139.aspx) を参照してください。
+-   ユーザーに AX 2012 R3 へのアクセス許可を付与します。 手順については、[Microsoft Dynamics AX で新しいユーザーを作成する](https://technet.microsoft.com/library/aa548139.aspx)を参照してください。
 
 **注:** VPN 接続とドメイン信頼を作成しない場合でも、ユーザーに AX 2012 R3 へのアクセス権を与えることができます。 これを行うには、ドメイン コントローラとして機能する仮想マシンにログオンし、各ユーザーのドメイン アカウントを作成する必要があります。 その後、上記の 2 つのタスクを完了する必要があります。
 
@@ -312,10 +312,10 @@ Azure 上で AX 2012 R3 を設定およびコンフィギュレーションす�
 <tr class="even">
 <td>TechNet の手順を参照してください。</td>
 <td><ul>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg732218.aspx">Microsoft Dynamics AX のシステム設定</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg732158.aspx">Microsoft Dynamics AX クライアント</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg731868.aspx">Application Object Server</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/ee873263.aspx">Microsoft Dynamics AX でのレポート</a></li>
+<li><a href="https://technet.microsoft.com/library/gg732218.aspx">Microsoft Dynamics AX のシステム設定</a></li>
+<li><a href="https://technet.microsoft.com/library/gg732158.aspx">Microsoft Dynamics AX クライアント</a></li>
+<li><a href="https://technet.microsoft.com/library/gg731868.aspx">Application Object Server</a></li>
+<li><a href="https://technet.microsoft.com/library/ee873263.aspx">Microsoft Dynamics AX でのレポート</a></li>
 </ul>
 <table>
 <tbody>
@@ -323,13 +323,13 @@ Azure 上で AX 2012 R3 を設定およびコンフィギュレーションす�
 <td><strong>メモ</strong></td>
 </tr>
 <tr class="even">
-<td><a href="https://technet.microsoft.com/EN-US/library/dd309703.aspx">既定のレポートを展開</a>し、ユーザーに<a href="https://technet.microsoft.com/EN-US/library/aa496432.aspx">アクセス権を付与</a>してください。</td>
+<td><a href="https://technet.microsoft.com/library/dd309703.aspx">既定のレポートを展開</a>し、ユーザーに<a href="https://technet.microsoft.com/library/aa496432.aspx">アクセス権を付与</a>してください。</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=5916">Management Reporter 2012</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/ee873272.aspx">Microsoft Dynamics AX での分析</a></li>
+<li><a href="https://www.microsoft.com/download/details.aspx?id=5916">Management Reporter 2012</a></li>
+<li><a href="https://technet.microsoft.com/library/ee873272.aspx"> Microsoft Dynamics AX での分析</a></li>
 </ul>
 <table>
 <tbody>
@@ -342,8 +342,8 @@ Azure 上で AX 2012 R3 を設定およびコンフィギュレーションす�
 </tbody>
 </table>
 <ul>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg866975.aspx">ヘルプ サーバー</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg751374.aspx">エンタープライズ ポータルおよびロール センター</a></li>
+<li><a href="https://technet.microsoft.com/library/gg866975.aspx">ヘルプ サーバー</a></li>
+<li><a href="https://technet.microsoft.com/library/gg751374.aspx">エンタープライズ ポータルおよびロール センター</a></li>
 </ul>
 <table>
 <tbody>
@@ -356,18 +356,18 @@ Azure 上で AX 2012 R3 を設定およびコンフィギュレーションす�
 </tbody>
 </table>
 <ul>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg731850.aspx">エンタープライズ検索</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg731810.aspx">サービス & アプリケーション統合フレームワーク (AIF)</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/jj710398.aspx">Microsoft Dynamics AX Retail IT プロおよび開発者向け</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/aa834453.aspx">.NET Business Connector</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg731779.aspx">セキュリティ</a></li>
+<li><a href="https://technet.microsoft.com/library/gg731850.aspx">エンタープライズ検索</a></li>
+<li><a href="https://technet.microsoft.com/library/gg731810.aspx">サービス & アプリケーション統合フレームワーク (AIF)</a></li>
+<li><a href="https://technet.microsoft.com/library/jj710398.aspx">Microsoft Dynamics AX Retail IT プロおよび開発者向け</a></li>
+<li><a href="https://technet.microsoft.com/library/aa834453.aspx">.NET Business Connector</a></li>
+<li><a href="https://technet.microsoft.com/library/gg731779.aspx">セキュリティ</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>印刷可能なガイドおよびホワイト ペーパーの表示</td>
 <td><ul>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg732268.aspx">印刷可能なガイド</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/gg188985.aspx">システム管理者向けのホワイト ペーパー</a></li>
+<li><a href="https://technet.microsoft.com/library/gg732268.aspx">印刷可能なガイド</a></li>
+<li><a href="https://technet.microsoft.com/library/gg188985.aspx">システム管理者向けのホワイト ペーパー</a></li>
 </ul></td>
 </tr>
 <tr class="even">

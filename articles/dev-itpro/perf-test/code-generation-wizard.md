@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: RobinARH
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 665d0b17a7e89f54cdb4c2d2ed38b384e9da9861
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d06047b7262d70d14a0b834f5f3902cd809f083d
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537142"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833298"
 ---
 # <a name="acceptance-test-library-code-generation-wizard"></a>受け入れテスト ライブラリ コード生成ウィザード
 

@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: d0aa6b55700a53becf5adcee3212615a5b85c875
-ms.sourcegitcommit: 82447ca02786f41b799ab079e14d4361838044a9
+ms.openlocfilehash: 4551e7349f7273764c0939822519f5253e868c70
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "1608270"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833762"
 ---
 # <a name="define-and-set-order-attributes"></a>注文属性の定義と設定をする
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 14671
 ms.assetid: 564b88d7-85f5-488a-bbbe-19eff7194321
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b826206ad07e4afbaca88596c7ea9ee93fcc9f49
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: a53fe7addbc8fb01082cc1e1c6b1b42c7029018b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595626"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851045"
 ---
 # <a name="wizard-form-pattern"></a>ウィザードのフォーム パターン
 

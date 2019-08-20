@@ -1,7 +1,7 @@
 ---
 title: セグメント化されたエントリ コントロールの移行のガイダンス
 description: このトピックでは、セグメント化エントリ コントロールを Microsoft Dynamics AX 2012 のパターンから Microsoft Dynamics AX の新しいパターンに移行するプロセスについて説明します。
-author: ShylaThompson
+author: robinarh
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 25651
 ms.assetid: eea675a0-d9d8-453d-9f5a-70c833a7a0d6
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9182d9feb4653ef23c733ff3d43b009b04e06e36
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ccdcbeef63afde1f1e8578d66fe40e69cbe16702
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544105"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833324"
 ---
 # <a name="migration-guidance-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールに関する移行ガイダンス
 

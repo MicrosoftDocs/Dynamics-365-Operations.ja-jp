@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysDataSharingConfiguration
 audience: IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 89071
 ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: c78921dd1e4d8e3aafc64443d1d187c9dbffb8f6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1103e7e70a86e08c80bed4811330a12b916d00e9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570305"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851405"
 ---
 # <a name="cross-company-data-sharing"></a>会社間データ共有
 

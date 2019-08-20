@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c7da36a60b695882f2585ca408410303ee85f777
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 63f9065a87fc0ebbed411d82b0f7f61f1651d941
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552802"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849725"
 ---
 # <a name="er-framework-api-changes-for-application-update-73"></a>Application update 7.3 での ER フレームワーク API の変更
 

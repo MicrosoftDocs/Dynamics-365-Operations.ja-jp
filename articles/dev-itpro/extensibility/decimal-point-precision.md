@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: ''
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: b6941256a37d2113730d979f538e9b5555decdd5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f2b1611bf5e968f23402bd5e6b391e8613963bfb
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1511278"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1794858"
 ---
 # <a name="extending-decimal-point-precision-for-selected-data-types"></a>選択したデータ型の小数点以下の精度の拡張
 

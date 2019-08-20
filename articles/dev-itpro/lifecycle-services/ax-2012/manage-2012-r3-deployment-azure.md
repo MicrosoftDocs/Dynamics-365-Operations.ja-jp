@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18491
 ms.assetid: 04d5d43f-07da-4a81-adce-50e214133b94
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 4fbbf4489f1121d08245f03944e1493b9944e40b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0c503216bd92df68b35a310de9443677828987c0
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555284"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850537"
 ---
 # <a name="manage-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 の 配置管理
 
@@ -85,7 +85,7 @@ AX 2012 R3 環境内の仮想マシンにログオンするには、次の手順
 5.  フォームの先頭の近くにある編集 (鉛筆) アイコンをクリックします。
 6.  環境に追加する仮想マシンの数を示します。 次に、それらの仮想マシンのサイズを指定します。
     -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md)」を参照してください。
-    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/) を参照してください。
+    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 7.  ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
 8.  **次へ** をクリックします。

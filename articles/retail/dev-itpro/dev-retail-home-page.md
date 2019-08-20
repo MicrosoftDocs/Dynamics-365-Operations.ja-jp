@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 24411
 ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6dda3fc3a16a05cce5959b329c57e74aac98c617
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: b9a24ef3b740ad38767068e0cf4115227013461f
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595561"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833077"
 ---
 # <a name="retail-for-it-pros-and-developers-home-page"></a>IT プロおよび開発者向けのホーム ページ
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 7a591e6c8deb3ec6bf08e253b7f5f19b7288e044
-ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
+ms.openlocfilehash: 81c6fc570fec2d4e0d2c5ee3cbeea470a38a7e85
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1577586"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833440"
 ---
 # <a name="whats-new-or-changed-for-extensibility"></a>拡張性の新機能および変更された機能
 

@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.assetid: c04e0a7b-1747-4b88-b729-fd820f8ab600
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f458cca2955c9c808ba3d7ed54c16bb60e075a97
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4636a8ff2ee2eda4fd299e8f31c9406c22c16740
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548151"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848561"
 ---
 # <a name="add-financial-dimensions-to-aggregate-measurements"></a>集計の測定への財務分析コードの追加
 

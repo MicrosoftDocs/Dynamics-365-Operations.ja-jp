@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: anniels
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 35755f94383f124e503c4416149a7afa4eed4411
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6799df7484cff3c804c0c63c918d2c4fe2846541
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536978"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833538"
 ---
 # <a name="install-basex-for-application-checker"></a>アプリケーション チェッカーに対する BaseX のインストール
 

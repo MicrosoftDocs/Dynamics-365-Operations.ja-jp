@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dbf138d5f60c5b72689460c4477f957b464d71f9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6ff3be4758de3c5635cc5e248424db12120e581a
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557608"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833153"
 ---
 # <a name="extend-commerce-data-exchange---real-time-service"></a>Commerce Data Exchange の拡張 - リアルタイム サービス
 

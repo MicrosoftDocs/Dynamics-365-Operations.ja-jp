@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: Dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 44351
 ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: b16c2543f87f6d7b9f394c17728a7bee3dc52050
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ed658392a60c10cef0e59cf619b17b1f883066b8
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557938"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833141"
 ---
 # <a name="upgrade-and-n-1-support-for-retail"></a>Retail のアップグレードおよび N-1 のサポート
 

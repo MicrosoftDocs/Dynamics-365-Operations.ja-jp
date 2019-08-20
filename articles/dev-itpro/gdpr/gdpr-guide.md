@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
 ms.author: ToddLefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 452dd19afd7c8e757019fc2fdda36fdbba074eb9
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 6752c01a3268c31139358bc6409d7d4f7567a4be
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595376"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833312"
 ---
 # <a name="guide-to-the-gdpr-for-finance-and-operations"></a>Finance and Operations の GDPR に関するガイド
 

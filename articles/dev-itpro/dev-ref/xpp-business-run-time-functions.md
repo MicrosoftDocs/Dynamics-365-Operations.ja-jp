@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 31281
 ms.assetid: 7107cd00-ecb0-46d2-91d6-c342e4314345
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bc531f565f326814b467e48ee8761f6825efbde
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 591931e61addf866901e058cf73ca809faf2cf39
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544181"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833642"
 ---
 # <a name="x-business-runtime-functions"></a>X++ ビジネス ランタイム関数
 

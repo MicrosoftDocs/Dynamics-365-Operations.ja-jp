@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 260954
 ms.assetid: 5dccb418-b489-4777-aa5e-2a0b03b4f2b0
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fd281cc3d7ef2edb2aec1d7804307ab04d963041
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58d345a818219ce94c3583acd322599d281a3c94
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544220"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848107"
 ---
 # <a name="azure-expressroute-and-finance-and-operations"></a>Azure ExpressRoute および Finance and Operations の購入
 
@@ -41,10 +41,10 @@ Microsoft Azure ExpressRoute で、Azure データ センターとオンプレ�
 この情報は、ExpressRoute の標準または割増給与提供が必要かどうかを判別するために必要です。
 
 ## <a name="resources-for-getting-started"></a>概要リソース
--   [ExpressRoute サービス ページ](https://azure.microsoft.com/en-us/services/expressroute/)
--   [ExpressRoute 技術の概要](https://azure.microsoft.com/en-us/documentation/articles/expressroute-introduction/)
--   [ExpressRoute パートナーおよびピアリング場所](https://azure.microsoft.com/en-us/documentation/articles/expressroute-locations/)
--   [ExpressRoute の価格決定](https://azure.microsoft.com/en-us/pricing/details/expressroute/)
+-   [ExpressRoute サービス ページ](https://azure.microsoft.com/services/expressroute/)
+-   [ExpressRoute 技術の概要](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)
+-   [ExpressRoute パートナーおよびピアリング場所](https://azure.microsoft.com/documentation/articles/expressroute-locations/)
+-   [ExpressRoute の価格決定](https://azure.microsoft.com/pricing/details/expressroute/)
 
 
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 89803
 ms.assetid: 565d9e98-77eb-4495-987a-ad9e2de303cc
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bc44cdb0e5ecbc405ec1371d11198c5328a15450
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: a04260b98c65c2dfe268caedc76b5aea493e524d
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577917"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833115"
 ---
 # <a name="retail-software-development-kit-sdk-extensibility-samples"></a>Retail ソフトウェア開発キット (SDK) の拡張機能サンプル
 

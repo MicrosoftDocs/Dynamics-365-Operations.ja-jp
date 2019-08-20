@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6eb79a1d1662e03c2557405b289a9f9f610ffdbb
-ms.sourcegitcommit: 31a918d357a7182f3870713a9c4455bd5c44cd58
+ms.openlocfilehash: a95a3a6865632d3b0f2c288da794dccbcf6ac450
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "1634493"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741176"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
@@ -109,9 +109,9 @@ ms.locfileid: "1634493"
 
     b.  **資産タイプを選択**では、**モデル**を選択し、Dynamics 365 for Finance and Operations オンプレミス、アプリケーション バージョン 8.1 デモ データをダウンロードします。
 
-    c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
+    c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
      
-    d.  データベースを構成する必要があります。 [Finance and Operations データベースを構成](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database)の手順に従います。
+    d.  データベースを構成する必要があります。 [Finance and Operations データベースを構成](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database)の手順に従います。
 
     e.  LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定するデータベースは手順 13 c (通常は AXDB) で作成したものにする必要があります。
 
@@ -246,7 +246,7 @@ ms.locfileid: "1634493"
 
 4.  Hyper-V を使用して、VM を起動し、VHD を接続します。 (マシンはジェネレーション 1 である必要があります。)
 
-5.  VM に接続します。 資格情報についてはこちらをご覧ください。https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally
+5.  VM に接続します。 資格情報についてはこちらをご覧ください。https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally
 
 6.  続行する前に、VHD のプラットフォームのバージョンを、環境にあるものと同じ状態になるようにアップグレードする必要があります。 基本的には、環境内のバージョン番号と正確に一致するように VHD 内のプラットフォームのバージョン数を計算する必要があります。 これを行うには、LCS で環境の履歴を確認し、資産ライブラリからどのパッケージが適用されているかを確認できます。 VHD が既にプラットフォーム更新 プログラム 20 (7.0.5030.35333) に含まれているため、環境に手動でインストールした一部のパッケージが既に含まれていますが、環境に適用した最新のバイナリ更新プログラムが含まれていない可能性があります。
 

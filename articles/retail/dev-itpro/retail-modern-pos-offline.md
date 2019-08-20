@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 31441
 ms.assetid: 219f93a3-6321-46e9-b989-f97072af0bb3
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8e3b2fd2e6780570e3480c25df2e7bff42b4d4da
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8957972e00a5d3d9727c92e87461195ac81b7232
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564383"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833119"
 ---
 # <a name="retail-modern-pos-mpos-in-offline-mode"></a>オフライン モードの Retail Modern POS (MPOS)
 

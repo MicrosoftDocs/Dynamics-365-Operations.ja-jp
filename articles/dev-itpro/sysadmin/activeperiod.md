@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: 03ae30cb14770a7f930dbb72cbd77f27b7f538f1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7fc46f60f3bd2cd36fe180243b804951e64f6111
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553751"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851465"
 ---
 # <a name="active-batch-periods"></a>有効なバッチ期間
 

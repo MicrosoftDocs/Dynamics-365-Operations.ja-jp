@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rschloma
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 92013
 ms.assetid: 94d555d7-28f3-4d94-91b4-6038e2be5047
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bfb8ad57d8bedcd2c046f1727b24e85d49377b52
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3525bcd56fe68e59a2d4a1d4c15517b5709cebe0
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555520"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851213"
 ---
 # <a name="customize-field-descriptions"></a>フィールドの説明をカスタマイズする
 

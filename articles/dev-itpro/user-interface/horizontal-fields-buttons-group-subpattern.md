@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 12464
 ms.assetid: 56b16f26-d4d3-4052-9ebc-0878b09cc00d
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60be0e67f88ec5523b62f0a5f667695f409038f7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f0408c226532a832655ff92fe3908103bb59ed93
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560055"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851153"
 ---
 # <a name="horizontal-fields-and-buttons-group-subpattern"></a>水平フィールドおよびボタン グループのサブパターン
 

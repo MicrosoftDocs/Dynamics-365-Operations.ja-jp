@@ -10,7 +10,7 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.custom: 221954
 ms.assetid: 8fe1b080-00d4-41ae-b047-10da160877ab
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1f0d348077cdf8306e24c2a68396254b3a4fd51f
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: ac3324c2da93cb4e7daa2947c189709b61d88f49
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577833"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836520"
 ---
 # <a name="retail-components"></a>Retail のコンポーネント
 

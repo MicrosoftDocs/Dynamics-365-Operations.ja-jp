@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26421
 ms.assetid: b41f6fc4-7883-4987-8160-374576b11d16
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e4ff2a805b73a3036b6acd31f6fcf81e9b901c0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff26301ac0777c07449edeb0f3a3634697954234
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544153"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833562"
 ---
 # <a name="design-principles-and-best-practices-for-data-entities"></a>データ エンティティに関する設計原則とベスト プラクティス
 

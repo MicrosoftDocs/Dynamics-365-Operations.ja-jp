@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: b1412bd0f60600d83ce8fce57013eb3e977438b1
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 253d008ec82b98caa3a967d669e07c7dd36f98ed
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537502"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833484"
 ---
 # <a name="add-relations-to-tables-through-extension"></a>拡張機能を使用してテーブルに関係を追加
 

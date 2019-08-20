@@ -3,13 +3,13 @@ title: コマンド ラインからの配置可能パッケージのインスト
 description: このトピックでは、開発環境またはビルド環境で作成されたバイナリ更新プログラムまたはアプリケーション (AOT) の展開可能パッケージのいずれかをコマンドラインを使用して適用する手順について説明します。
 author: manalidongre
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 24191
 ms.assetid: 42d238d6-ff03-41b6-b2d5-c94bcdc37576
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 773db05f4b98d30396f420525170d16cf90080aa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7099cf4800826855ffced6f71f7583bb33617c04
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544217"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850375"
 ---
 # <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインからの配置可能パッケージのインストール
 
@@ -211,4 +211,4 @@ Runbook には、環境を更新するために実行する必要がある一連
     AXUpdateInstaller.exe execute -runbookid=[runbook ID] -versioncheck=true
     ```
 
-- データベースの同期を確認するには、<**aosservce\\scripts\\** フォルダー内の **dbsync.error.txt** ファイルを見つけて開き、エラーを探します。
+- データベースの同期を確認するには **aosservice\\scripts\\** フォルダー内の **dbsync.error.txt** ファイルを見つけて開き、エラーを探します。

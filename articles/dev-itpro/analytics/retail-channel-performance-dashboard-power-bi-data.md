@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 105483
 ms.assetid: cb5aff3b-5b29-44f7-9c6f-6b055c043996
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa18c13518c6038a2daae42b1de700e340489af1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f783211f1d1c855fcadaa182539e7ea1dd90849b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551495"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849933"
 ---
 # <a name="retail-channel-performance-powerbicom-solution"></a>小売チャネルの実績 PowerBI.com ソリューション
 

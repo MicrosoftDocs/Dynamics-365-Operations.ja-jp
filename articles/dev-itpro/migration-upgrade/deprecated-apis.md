@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 26011
 ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57ab578355e1baf97f5bf272197fb9b0dcf07ef6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8d15fc445f3283f7fc57719ed887be029bb9cd5d
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557995"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851735"
 ---
 # <a name="deprecated-apis-june-2017"></a>非推奨 API (2017 年 6 月)
 

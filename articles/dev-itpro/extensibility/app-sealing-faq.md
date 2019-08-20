@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: c963f5c3e049f886752a0bab7e53169cbc73d497
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 948481502fc69487f5608055c9e28be83cc82f99
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550920"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833482"
 ---
 # <a name="extensibility-faq"></a>拡張性 FAQ
 
@@ -76,7 +76,7 @@ Microsoft Dynamics 365 for Finance and Operations リリース 8.0 の後、プ�
 
 ## <a name="why-wasnt-my-extensibility-request-accepted"></a>拡張性要求が承認されなかった理由を教えてください。
 
-一部の拡張性は、重大な変更を要求します。 重大な可能性のあるよくある要求の一部を、その考えられる回避策と共に以下に掲載します。 さらに、[拡張の作成](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value)を読んで既存のプラットフォーム拡張機能については理解し、[拡張性要求を記録するためのヒント](https://blogs.msdn.microsoft.com/mfp/2018/09/15/tips-for-logging-extensibility-requests/)を読んで、機能が最新リリースに存在しない場合に適切な要求を作成する方法を確認してください。
+一部の拡張性は、重大な変更を要求します。 重大な可能性のあるよくある要求の一部を、その考えられる回避策と共に以下に掲載します。 さらに、[拡張の作成](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value)を読んで既存のプラットフォーム拡張機能については理解し、[拡張性要求を記録するためのヒント](https://blogs.msdn.microsoft.com/mfp/2018/09/15/tips-for-logging-extensibility-requests/)を読んで、機能が最新リリースに存在しない場合に適切な要求を作成する方法を確認してください。
 
 ### <a name="why-cant-edtstringsize-be-made-extensible"></a>EDT.StringSize を拡張可能にできないのはなぜですか?
 

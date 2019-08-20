@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18391
 ms.assetid: f62f5636-4d63-473e-b326-277ea500c540
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 53865c47b9a66c6fa292b14590d962721bdde0db
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ac086c611195b8591617fa36582a8fbd212ea36f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544083"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850549"
 ---
 # <a name="install-the-security-development-tool"></a>セキュリティ開発ツールをインストールする
 
@@ -53,7 +53,7 @@ ms.locfileid: "1544083"
 
 ### <a name="import-and-compile-the-tool"></a>ツールのインポートおよびコンパイル
 
-1.  使用している Application Object Server (AOS) のインスタンスからクライアント接続を排除します。 詳細については、[AOS からユーザーを排除](http://technet.microsoft.com/en-us/library/hh433538.aspx) を参照してください。
+1.  使用している Application Object Server (AOS) のインスタンスからクライアント接続を排除します。 詳細については、[AOS からユーザーを排除](http://technet.microsoft.com/library/hh433538.aspx) を参照してください。
 2.  **管理ツール**に移動し、**サービス**をクリックし、**Microsoft Dynamics AX Object Server 6.0** サービスを停止します。
 3.  Windows PowerShell または AXUtil を使用して、**SecurityDevelopmentTool.axmodel** モデルを Microsoft Dynamics AX AOT にインポートします。
     1.  スタートメニューで、**すべてのプログラム**をポイントし、**管理ツール**をポイントして、**Microsoft Dynamics AX 管理シェル**をクリックします。

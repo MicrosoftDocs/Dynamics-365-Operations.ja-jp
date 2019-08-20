@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 1b9f2c81d9d1955d3411ed501481d93689d46ee8
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: dc1c6e6d22bffb7f060e89803a2b3fed3f6a21c1
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1629994"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848125"
 ---
 # <a name="cloud-deployment-option"></a>クラウド配置オプション
 
@@ -112,14 +112,14 @@ Finance and Operations の実稼動環境は、以下のものを含む Azure �
 - 他の Azure リージョンでの Azure blob storage (ドキュメントの添付ファイルを含む) のジオ重複コピー。 詳細については、[ジオ重複ストレージ](/azure/storage/common/storage-redundancy-grs) を参照してください。
 - Azure SQL および Azure ブログ記憶域レプリケーションの同じセカンダリ地域。  
 
-プライマリのデータ格納場所のみレプリケーションがサポートされます。 つまり、プライマリ データベースから変換されたデータを使用する Management Reporter やエンティティ格納などの 一部の Finance and Operations アプリケーション コンポーネントは、リカバリ サイトが設定され、サービスが開始された後に生成されなければなりません。 顧客コード コンポーネントと回復されたデータの格納場所を使用してサイトを再展開し、RTO (Recovery Time Objective) を 10 時間、Recovery Point Objective を 5 秒に設定します。 詳細については、[Azure SQL データベース ポイントインタイム復元](https://azure.microsoft.com/en-us/blog/azure-sql-database-point-in-time-restore/) を参照してください。
+プライマリのデータ格納場所のみレプリケーションがサポートされます。 つまり、プライマリ データベースから変換されたデータを使用する Management Reporter やエンティティ格納などの 一部の Finance and Operations アプリケーション コンポーネントは、リカバリ サイトが設定され、サービスが開始された後に生成されなければなりません。 顧客コード コンポーネントと回復されたデータの格納場所を使用してサイトを再展開し、RTO (Recovery Time Objective) を 10 時間、Recovery Point Objective を 5 秒に設定します。 詳細については、[Azure SQL データベース ポイントインタイム復元](https://azure.microsoft.com/blog/azure-sql-database-point-in-time-restore/) を参照してください。
 
 ## <a name="service-availability"></a>サービスの可用性 
 Dynamics Lifecycle Services (LCS) を使用して、他の Microsoft Azure データ センターに Finance and Operations を展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 Finance and Operations では、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。 詳細については、[サービス説明のホワイト ペーパー](https://aka.ms/D365-Cloud-Service-Operations)をご覧ください。
 
 > [!IMPORTANT]
 > 顧客データがどこに格納されているかに関係なく、マイクロソフトは顧客またはエンドユーザーがアクセスできる場所を管理したり制限したりしません。
-詳細については、[Finance and Operations のデータが格納されている場所](https://www.microsoft.com/en-us/trustcenter/privacy/dynamics365-operations-location) を参照してください。
+詳細については、[Finance and Operations のデータが格納されている場所](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location) を参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

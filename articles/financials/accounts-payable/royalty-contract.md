@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: margoc
+ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e2970adcaa5021e28877569c412f99739940dad4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 50e4215957aa248de4f56754e465a4180a841426
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565172"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834549"
 ---
 # <a name="royalty-contract-management"></a>ロイヤルティ契約管理
 

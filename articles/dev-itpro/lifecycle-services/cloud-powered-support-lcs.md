@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7260a536f082d9c4d571f5ee715be701ca34d829
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: 13a1169e226666cf87e78cf7e62f42da1c675a1f
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624920"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741206"
 ---
 # <a name="manage-finance-and-operations-support-experiences"></a>Finance and Operations サポート エクスペリエンスの管理
 
@@ -138,7 +138,7 @@ PartnerSourceビジネス センター アカウントが見つからない場�
 プロダクション環境の品質が低下または使用不可能になった際に、Microsoft サポートに迅速に問題を効果的にエスカレーションするには、 [Report a production outage](report-production-outage.md) をご確認ください。
 
 ## <a name="phone-support"></a>電話サポート
-[新しいインシデントを開く](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident) の手順に従ってサポートに連絡することをお勧めします。 LCS で新しいインシデントを開けない場合は、次のいずれかのオプションで電話サポートを受けることができます:
+[新しいインシデントを開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident) の手順に従ってサポートに連絡することをお勧めします。 LCS で新しいインシデントを開けない場合は、次のいずれかのオプションで電話サポートを受けることができます:
 
-- [プレミア電話サポート](https://support.microsoft.com/en-us/premier/contacts)
+- [プレミア電話サポート](https://support.microsoft.com/premier/contacts)
 - [広範な商業電話サポート](https://mbs.microsoft.com/customersource/northamerica/GP/support/support-news/global_support_contacts_eng)

@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Lifecycle Services
 ms.custom: 196953
 ms.assetid: 6e7h6896-edef-4739-98ad-c9ea12880972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: cf8b6d0057a31504ef3a6b77f81525d7f01ddd26
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9fcc3d8c08a19f4470a018e02919b63434aa6ab5
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552519"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850633"
 ---
 # <a name="business-process-modeler-library-updated-bpm-experience"></a>ビジネス プロセス モデラーのライブラリ (更新された BPM エクスペリエンス )
 
@@ -109,7 +109,7 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
 1.  **LCS に保存**を選択します。
 2.  業務プロセス ライブラリを選択します。
 3.  記録に関連付ける業務プロセス ラインを選択します。
-4.   **OK**を選択します。
+4.  **OK**を選択します。
 
 LCS の業務プロセス ライブラリで記録するタスクを表示できるようになりました。
 

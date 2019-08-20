@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 092253de911b724945760facf422d966e742f561
-ms.sourcegitcommit: 33e5f728a70d0546975f91010148dc4c57bf3af3
+ms.openlocfilehash: 1977c824fb71e5ceb2ec7d43ee2f19edccd82bc6
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "1606548"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833103"
 ---
 # <a name="retail-pos-apis"></a>Retail POS API
 [!include [banner](../includes/banner.md)]
@@ -424,3 +424,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 | GetCurrenciesServiceRequest                     |
 | GetSrsReportDataSetServiceRequest               |
 | SearchCommissionSalesGroupsServiceRequest       |
+| IssueLoyaltyCardOperationRequest                |
+| GetPickingAndReceivingOrdersClientRequest       |
+
+

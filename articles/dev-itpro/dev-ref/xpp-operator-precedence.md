@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 6174
 ms.assetid: dd4a4971-c35a-466d-9c24-244cd75f9020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15c55aca9318f6a774fb84dc3d04710780a6cf00
-ms.sourcegitcommit: 98894aa32150e95fb7e87f98703b266b03493362
+ms.openlocfilehash: 9a4c2ed8822dfb684fa5e796ec89af65c20dc14d
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "1718558"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833608"
 ---
 # <a name="operator-precedence"></a>演算子の優先順位
 

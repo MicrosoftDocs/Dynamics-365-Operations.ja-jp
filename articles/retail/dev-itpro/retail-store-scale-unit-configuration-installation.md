@@ -10,7 +10,7 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail, Core
 ms.custom: 219744
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 14dfa174afaa91c894870a9063206cf824c19d81
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: cb40f9981ffd1f0e81aa6e67c7b452c1dbe283f9
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702831"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833121"
 ---
 # <a name="configure-and-install-retail-store-scale-unit"></a>Retail Store Scale Unit のコンフィギュレーションとインストール
 
@@ -308,7 +308,7 @@ Retail Store Scale Unit インストーラーが最初に関連付けられて�
 15. 高度なセキュリティの Microsoft Windows ファイアウォールを起動します。
 16. Windows ファイアウォールで、TCP ポート 1433 を開放する受信ルールを作成します。
 
-SQL Server および Windows ファイアウォールに関する詳細については、[データベース エンジンへ アクセス用の Windows ファイアウォールをコンフィギュレーションする](https://msdn.microsoft.com/en-us/library/ms175043.aspx) を参照してください。
+SQL Server および Windows ファイアウォールに関する詳細については、[データベース エンジンへ アクセス用の Windows ファイアウォールをコンフィギュレーションする](https://msdn.microsoft.com/library/ms175043.aspx) を参照してください。
 
 #### <a name="installation-on-the-second-computer"></a>2 台目のコンピューターへのインストール
 
@@ -327,7 +327,7 @@ SQL Server および Windows ファイアウォールに関する詳細につい
 
 4. **クラウド POS のコンフィギュレーション** を選択し、Azure Web アプリケーションを作成するための適切なアクセス許可を持つ Azure AD 資格情報を入力します。 
 
-    Azure Web アプリ、それを作成する方法、および新しいキー (シークレット) を生成する方法の詳細については、[リソースにアクセスできる Azure Active Directory アプリケーションおよびサービス プリンシパルを作成するポータルの使用](https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/) を参照してください。 サインイン URL やアプリ ID URI は重要ではないことに注意してください。
+    Azure Web アプリ、それを作成する方法、および新しいキー (シークレット) を生成する方法の詳細については、[リソースにアクセスできる Azure Active Directory アプリケーションおよびサービス プリンシパルを作成するポータルの使用](https://azure.microsoft.com/documentation/articles/resource-group-create-service-principal-portal/) を参照してください。 サインイン URL やアプリ ID URI は重要ではないことに注意してください。
 
 5. セットアップが正常に行われたときは、インストーラーを終了しません。 
 

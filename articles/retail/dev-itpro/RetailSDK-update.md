@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfendd
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 767ffaf742dc794dc60fe74942d2b295ac918d07
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3470f0b0dd2128c3cfb0748e0d00f3a8b6f7fbe4
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569563"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833207"
 ---
 # <a name="upgrade-the-retail-channel-extension-to-the-latest-retail-sdk"></a>Retail チャネル拡張機能を最新の Retail SDK にアップグレード
 

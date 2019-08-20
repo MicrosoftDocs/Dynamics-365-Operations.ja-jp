@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9368f5e529594a23b05f83b8d2d59cb903c6b661
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 96bb376b4117b584a2f8c55f65f0c74f1b322b7f
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595562"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833151"
 ---
 # <a name="deploy-payment-connectors"></a>支払コネクタの配置
 

@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 3c59fcb1e2ec2593ff9b4a09f4c163f45e78f97c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fa1117a6247b21c12cea4ef00f9fc93f7db9b0f1
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557914"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833756"
 ---
 # <a name="call-point-of-sale-pos-apis-or-operations-from-pos-extensions"></a>販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
 

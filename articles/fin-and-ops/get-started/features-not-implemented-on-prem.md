@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 370a06f0c69af01e2e3401a1fa6ff64b7fc0ef25
-ms.sourcegitcommit: 0ae1a94c88dbf56e9b45e45ada980f7136ae640a
+ms.openlocfilehash: c9e909af7ea0f52af5cb5d383aa5151161f603b0
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1539154"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741070"
 ---
 # <a name="features-that-arent-implemented-in-on-premises-deployments"></a>オンプレミス配置で実装されていない機能
 
@@ -50,7 +50,7 @@ ms.locfileid: "1539154"
 |Trace Parser および PerfTimer |これらのツールは動作していないか、このリリースで機能が制限されています。 これらの機能は、将来のリリースで実装される予定です。 |
 |SSRS スケール アウト  |現在の SQL Server Reporting Services (SSRS) はスケール アウトをサポートしていません。この機能は将来のリリースの際に追加されます。 |
 |テレメトリ  |現在、テレメトリはクラウドへ転送されません。 今後の更新プログラムで、テレメトリ データをクラウドに転送できるようになります。 |
-|データ タスクの自動化  |[データ タスクの自動化](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-task-automation)は現在実装されていません。 |
+|データ タスクの自動化  |[データ タスクの自動化](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-task-automation)は現在実装されていません。 |
 
 ## <a name="features-available-in-81"></a>8.1 で使用可能な機能
 

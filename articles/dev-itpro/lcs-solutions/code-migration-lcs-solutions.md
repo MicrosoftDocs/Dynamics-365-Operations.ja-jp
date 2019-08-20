@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Lifecycle Services
 ms.custom: 196993
 ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: f686e9a6da796739b3e73b14007c3a7bd16b0a8a
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 422b67957f84216f8ee91e88d719a1567828a65e
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595305"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850603"
 ---
 # <a name="migrate-code-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのコードの移行
 

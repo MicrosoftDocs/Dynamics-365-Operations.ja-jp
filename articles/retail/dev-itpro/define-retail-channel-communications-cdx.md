@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations, Retail
 ms.custom: 27021
 ms.assetid: 179b1629-ac90-4cfb-b46a-5bda56c4f451
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 35540a70b48d7d25e2e8ae11fcd243628c95523a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0866580946d5c58c9ad3d804e0de1a9bb43514bd
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549465"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833083"
 ---
 # <a name="commerce-data-exchange-and-retail-channel-communications"></a>Commerce Data Exchange と小売チャネルのコミュニケーション
 

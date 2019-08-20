@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.openlocfilehash: 72bf722bd54a21bfe3bb8ba7bc9af3c0a898a4f0
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 8383f13bf2e230e9ffb0f6b8cd84f5471a4d9d3e
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577888"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863815"
 ---
 # <a name="retail-discounts"></a>小売割引
 
@@ -53,7 +53,7 @@ Dynamics 365 for Retail のすべての小売割引には、ヘッダー 1 つ�
 
 小売割引を管理するときは、各割引オプションを個別に理解することが重要ですが、どのオプションが互いにどのような影響を与えるかを理解しておくことも同じように重要です。 割引の一般的な設定は、2 つのカテゴリに分類されます。 最初の分類は、考慮すべき割引をフィルター処理する設定です。 例としては、**ステータス**、**通貨**、および **測定単位** です。 2 番目のカテゴリの設定は、複数の割引が考慮されて適用される順序を制御します。 例としては、**割引同時実行モード** および **価格決定の優先順位** があります。 次の図は、割引の各種プロパティを示しています。
 
-![割引プロパティ](./media/discount%20properties.png "割引プロパティ")
+![割引プロパティ](./media/discount-properties.png "割引プロパティ")
 
 ### <a name="discount-id"></a>割引 ID
 

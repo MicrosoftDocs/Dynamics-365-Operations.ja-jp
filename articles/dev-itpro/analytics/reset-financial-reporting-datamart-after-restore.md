@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: IT Pro, Developer
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 261824
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 49aa58e90ab8dd03a20889d05c74ba4c589856e8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e8399fe381587fd28936e18c335c81ecbfa836f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544969"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849935"
 ---
 # <a name="reset-the-financial-reporting-data-mart"></a>財務報告のデータ マートのリセット
 

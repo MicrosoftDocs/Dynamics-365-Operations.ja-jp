@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: 261064
 ms.assetid: f3ab87ab-ee8b-462c-bb6f-4d98e0030513
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 571fa8b12ead1e59a06524aad9f36b201f81d43b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 99c41833fb2cb479bb230a7653e220904cc1a673
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554537"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833382"
 ---
 # <a name="add-lookup-values-for-financial-dimensions-to-excel-templates"></a>Excel テンプレートに財務分析コードの値の検索を追加
 
@@ -80,7 +80,7 @@ ms.locfileid: "1554537"
         | 作業者                                   | DimAttributeHcmWorkerEntity               |
 
     -   **関連データ エンティティ カーディナリティ** - **ZeroOne**
-    -   **関連データ エンティティ ロール** - 分析コード部署などの一意の名前を入力します。
+    -   **関連データ エンティティ ロール** - "分析コード部門の検索" などの一意の名前を入力します。
     -   **関係タイプ** - **関連**
     -   **ロール** - 分析コード部署などの一意の名前を入力します。
 

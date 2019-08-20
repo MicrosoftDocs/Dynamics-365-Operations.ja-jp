@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE, Applicability
 audience: IT Pro
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d3d3f09bc0dfb0299f9f4ef374eb920f16001cd3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7ad7e1757cb9da4c291a21500fc9708f664a790c
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563657"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846187"
 ---
 # <a name="tax-engine-applicability"></a>税エンジンの適用性
 

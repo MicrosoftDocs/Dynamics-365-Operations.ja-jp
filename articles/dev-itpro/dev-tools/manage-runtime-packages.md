@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26731
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fde134e037e7ffa2c385d624eeb045f4076e5f69
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5e3315f82d48c6457e5fd7b31cfe53283cd924ea
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544134"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833524"
 ---
 # <a name="manage-third-party-models-and-runtime-packages-by-using-source-control"></a>ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
 

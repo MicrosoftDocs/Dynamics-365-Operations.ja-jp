@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 28291
 ms.assetid: 2245dd9f-7ef7-46cc-9e1b-e00fc66526ec
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eeac0fc337afc1f2a4ee4d2815391de640b0fd83
-ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
+ms.openlocfilehash: 8a00aeddb16811af7ca6d2a453dbfb2c6e8f4e6f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1729865"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851049"
 ---
 # <a name="test-forms-that-use-custom-patterns"></a>カスタム パターンを使用したテスト フォーム
 

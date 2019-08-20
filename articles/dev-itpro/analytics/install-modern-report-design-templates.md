@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PrintMgmtSetupUIMain
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 82783
 ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 172e800fb43cb60ab2d7bc46736046576ef5ee9e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6704d5dddb84533c64b4d0320e76757f154cdf60
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553776"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849445"
 ---
 # <a name="install-modern-report-design-templates"></a>現代レポートのデザイン テンプレートのインストール
 

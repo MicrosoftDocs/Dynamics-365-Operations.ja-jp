@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 31521
 ms.assetid: 3a169648-592b-4616-9834-598c0244a852
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 869fd15f586d48f39d2efd3826cd69bcfc9aa300
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a99dd116b102b9d6f32c3b9e447a2c1264803114
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570587"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833113"
 ---
 # <a name="retail-server-architecture"></a>レポート サーバーのアーキテクチャ
 

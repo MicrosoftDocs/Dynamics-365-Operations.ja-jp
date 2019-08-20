@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: a78dbef13408bc4256138198add914cf7d3932e2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7ae8e8896a1a032fadc4480750007d0699afefd2
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544138"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833530"
 ---
 # <a name="independent-software-vendor-isv-licensing-on-premises"></a>独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 

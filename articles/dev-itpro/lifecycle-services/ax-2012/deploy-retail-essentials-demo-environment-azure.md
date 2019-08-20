@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 7ec1e8b15e574e2d96880ed9bf6680d60f6cbd85
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b676432fe0af2d4463660f0a7eca9dbd5ca560f5
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555286"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741208"
 ---
 # <a name="deploy-retail-essentials-demo-environments-on-azure"></a>Azure での Retail Essentials デモ環境の配置
 
@@ -62,7 +62,7 @@ Azure サブスクリプションに Lifecycle Services プロジェクトを接
 
 4. **次へ** をクリックします。
 5. **ダウンロード**をクリックして管理証明書をダウンロードします。 この管理証明書により、Lifecycle Services はお客様の代わりに Azure と通信できます。 既定では、管理証明書はコンピューターの**ダウンロード** フォルダーに保存され、**LifecycleServicesDeployment.cer** という名前が付きます。
-6. 管理証明書を Azure にアップロードします。 これを行うには、[[Azure 管理 API 管理証明書をアップロード](https://docs.microsoft.com/en-us/azure/azure-api-management-certs)] の手順を参照してください。
+6. 管理証明書を Azure にアップロードします。 これを行うには、[[Azure 管理 API 管理証明書をアップロード](https://docs.microsoft.com/azure/azure-api-management-certs)] の手順を参照してください。
 
 7. Lifecycle Services で **Microsoft Azure 設定**パネルを表示するブラウザーに戻ります。 **次へ** をクリックします。
 8. 地域を選択します。 AX 2012 R3 環境は、この領域のデータ センターに配置されます。
@@ -122,7 +122,7 @@ Azure に Retail Essentials デモ環境を配置するには、以下の手順�
     </table>
 
     -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、[Azure での Microsoft Dynamics AX 配置の計画](plan-2012-r3-deployment-azure.md)を参照してください。
-    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/) を参照してください。
+    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 8.  ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
 9.  **次へ** をクリックします。

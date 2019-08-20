@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 31141
 ms.assetid: 8536e688-33f1-4f0c-a402-b1de2d253fbc
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0999a102b7f0695da0832c625f1c5e50fa254365
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 73222604a285afa92899a61eb05071b1aa48abc9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571051"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851085"
 ---
 # <a name="task-recorder-quick-reference"></a>タスク レコーダーのクイック リファレンス
 

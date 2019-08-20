@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 202614
 ms.assetid: bc80fee3-8f54-43c4-9162-f058056c956c
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 28f4d159477bc294adee3187e5471e0e2b8a03a3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: add5e54f4eb2fcef98e1a51677b0f69eebe8c6d7
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544160"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833574"
 ---
 # <a name="development-and-continuous-delivery-faq"></a>開発と継続的な配信のよく寄せられる質問
 
@@ -114,9 +114,9 @@ ms.locfileid: "1544160"
 
 -   Visual Studio Professional with MSDN の場合は月額 $50 で、VS Enterprise with MSDN の場合は $150 で Microsoft Azure サブスクリプションが含まれます。
 -   サブスクリプションは開発/テスト レートが低く、Windows レートではなく Linux レートを支払います。
--   詳細については、<https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/> にアクセスしてください。
+-   詳細については、<https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/> にアクセスしてください。
 
-マイクロソフト パートナーは、Microsoft コア コンピテンシーを取得して MSDN サブスクリプションで無料の VS Enterprise を獲得できます。 たとえば、ゴールド パートナー用のアプリケーション開発コンピテンシーは、コア給付金に付属している 10 のライセンスに加えて 25 の無料 MSDN エンタープライズ ライセンスを獲得します。 詳細については、[Visual Studio サブスクライバの月額 Azure クレジット](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/) にアクセスしてください。 これらの利点により、クラウド開発は非常に経済的です。例:
+マイクロソフト パートナーは、Microsoft コア コンピテンシーを取得して MSDN サブスクリプションで無料の VS Enterprise を獲得できます。 たとえば、ゴールド パートナー用のアプリケーション開発コンピテンシーは、コア給付金に付属している 10 のライセンスに加えて 25 の無料 MSDN エンタープライズ ライセンスを獲得します。 詳細については、[Visual Studio サブスクライバの月額 Azure クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) にアクセスしてください。 これらの利点により、クラウド開発は非常に経済的です。例:
 
 -   D12v2 VM 表示価格は = $470/月 (4コア、28ギガ)
 -   D12v2 MSDN Azure またはその他の dev/test サブスクリプションで実行している場合の VM 価格 = $276/月

@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CaseDetail
 audience: IT Pro
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 23541
 ms.assetid: 4aa0a2da-be45-4dc3-97bf-b84bcf83144c
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e1518b100fb57cced8bcd34f01c8abfe2b3a794
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 38b6df64c6e3632397c18b5b428edb38d7039613
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561628"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850763"
 ---
 # <a name="case-management"></a>ケース管理
 

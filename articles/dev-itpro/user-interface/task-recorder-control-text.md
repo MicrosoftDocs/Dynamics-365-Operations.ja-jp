@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 17711
 ms.assetid: 9b75a1e3-cc76-4a2f-ae30-7e5a485b30b1
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfc8b5b36bacd90ba36cacfe7b925a7b812caf3d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 26b7a3307cd6e0b7cf4b6e38319e7bf7537a6689
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553261"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851083"
 ---
 # <a name="control-the-text-that-task-recorder-generates-for-a-control"></a>コントロールに対してタスク レコーダーが生成するテキストの制御
 

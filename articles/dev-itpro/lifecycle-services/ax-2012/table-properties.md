@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18141
 ms.assetid: 1ad8b7e9-80b3-44a3-b57d-7e9fc88db038
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b52bf9b7c8a6abcdd362d16c178a14fa12fef31b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 502423f87ba5ed9a7a3ad848f91b5a2786f3956f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555251"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850493"
 ---
 # <a name="table-properties-in-the-application-object-tree-aot"></a>アプリケーション オブジェクト ツリー (AOT) のテーブル プロパティ
 

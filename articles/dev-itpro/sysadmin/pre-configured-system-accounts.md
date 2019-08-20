@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 904108e36edf929164d92e2df85b2d71447a197f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 718300fc700eeefc2226c111bd2d36373a71ec34
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553264"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851403"
 ---
 # <a name="preconfigured-system-accounts"></a>コンフィギュレーション済みのシステム アカウント
 

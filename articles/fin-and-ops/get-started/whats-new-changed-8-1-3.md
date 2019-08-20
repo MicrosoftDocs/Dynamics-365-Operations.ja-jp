@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: b364a31d-34de-45c5-b698-64c5262c592e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 4adb2e0665aff774b95a9c56760596591512c02c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0378e6dd638be845ca3aa01a633e94103f8f4af6
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561631"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863481"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-813-january-2019"></a>Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) の新機能および変更された機能
 

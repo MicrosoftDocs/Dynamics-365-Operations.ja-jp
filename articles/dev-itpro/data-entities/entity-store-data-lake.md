@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 96283
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2018-12-03
 ms.dyn365.ops.version: Platform Update 23
-ms.openlocfilehash: 5bbb4da199391f148f8f6b363f98af43bf6178dc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 160c8e354a4225cc20071097f6adf87d35126063
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544270"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850407"
 ---
 # <a name="make-entity-store-available-as-a-data-lake"></a>エンティティ格納を Data Lake として使用可能にする
 

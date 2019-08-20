@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 28891
 ms.assetid: 9cf9949a-7787-4b2c-b248-fff7d038cda5
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 422ab5e96b75c87ddce85de0496c88941befad86
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e196fcdf6373acd5bcf6a9b9c64a5f238497a411
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569464"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851157"
 ---
 # <a name="form-styles-and-patterns"></a>フォームのスタイルとパターン
 

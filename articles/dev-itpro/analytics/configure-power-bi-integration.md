@@ -3,14 +3,14 @@ title: ワークスペースの Power BI 統合のコンフィギュレーショ
 description: このトピックでは、PowerBI.com との統合をサポートする新しい Microsoft Dynamics 365 for Finance and Operations 環境を構成する方法を説明します。 このコンフィギュレーションにより、ワークスペースに Power BI コントロールが表示され、ユーザーはワークスペースに視覚エフェクトをピン留めすることができます。
 author: MilindaV2
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 07/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PowerBIConfiguration
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15d259d26ece872925290b64c0d7e17063cb1524
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3329d54c2f8c90682cbaae67ba26c941a45a07e5
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548732"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848411"
 ---
 # <a name="configure-power-bi-integration-for-workspaces"></a>ワークスペースの Power BI 統合のコンフィギュレーション
 
@@ -60,7 +60,10 @@ Finance and Operations と PowerBI.com の両方はクラウドベースのサ�
 
 - **名前** - アプリの名前。
 - **アプリケーション タイプ** - Web アプリ/API
-- **サインオン URL** - Finance and Operations クライアントと OAuth 接尾語のベース URL。 たとえば、http://contosoax7.cloud.dynamics.com/oauth。
+- **サインオンの URL** - Finance and Operations クライアントのベース URL。 たとえば、`https://contosoax7.cloud.dynamics.com`。
+
+> [!NOTE]
+> Finance and Operations のバージョンにより、URL の接尾語として /oauth を追加するか、プロトコルとして https の代わりに http を使用する必要があります。たとえば `https://contosoax7.cloud.dynamics.com/oauth/` や `http://contosoax7.cloud.dynamics.com/oauth/` など。
              
 4. **作成** をクリックします。
 5. **アプリケーション ID** をコピーします。 これは、PowerBI.com サービスに接続するために Finance and Operations で使用されます。

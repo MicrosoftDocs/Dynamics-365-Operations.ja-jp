@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 17551
 ms.assetid: 1681290d-93f0-489d-9746-7793b2ffe690
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 0b3be0e97f9c5ea48e04713944579487b59eb8c2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 16ae6a0f5fded1702a1131592511b36ff568b86e
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555280"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850547"
 ---
 # <a name="install-the-test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ) のインストール
 

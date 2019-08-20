@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: 13d2b8a5-c2e0-4f32-a43b-7726ae20392c
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: 56e4ba73bc3dab3f6b1b633f71d87650d848d972
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: a440ff04dc2a405144f2c243ff37b5fd1b15ec06
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595624"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863369"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-6-april-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の新機能および変更された機能
 

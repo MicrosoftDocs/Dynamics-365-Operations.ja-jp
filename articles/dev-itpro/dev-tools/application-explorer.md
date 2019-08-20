@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 74934
 ms.assetid: cf2154eb-56a9-4867-b1ef-85690440b177
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9c5914c2d0e860f50ae7bf0549863fffc18e63e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 365e42a948e1390816664bc8c872c6eeff3da8e8
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544165"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833588"
 ---
 # <a name="application-explorer"></a>アプリケーション エクスプローラー
 

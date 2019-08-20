@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 69834
 ms.assetid: 4f4dbdd3-e48c-417c-b8bb-f7fd6628bd9b
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 26644fa2c9f4b4ff29573a4d15d315d10b516746
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 27e09714571bc6b35045337a31bb602bf85dbb6c
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552686"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833193"
 ---
 # <a name="call-the-commerce-runtime-crt-service-in-offline-mode"></a>Commerce Runtime (CRT) サービスをオフライン モードで呼び出す
 

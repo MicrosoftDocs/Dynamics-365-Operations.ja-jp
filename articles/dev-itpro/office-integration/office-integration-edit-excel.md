@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 79223
 ms.assetid: 05d8f7af-df6a-452f-a532-0f059eba4377
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c4ce8a671ba4b7035ff000a9d1a2cef33c00a2e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e05be085f0efdc8956fc945f27571e8243ea004
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567457"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851447"
 ---
 # <a name="create-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスの作成
 

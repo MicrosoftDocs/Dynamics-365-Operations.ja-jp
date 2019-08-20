@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 29531
 ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8d48d190beb7433ae4fc09ef7431181f85752dd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 44725adafa7dc269a79c6964d1f2a9db6cd4d544
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548120"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863819"
 ---
 # <a name="set-up-technical-support-for-finance-and-operations"></a>Finance and Operations の技術サポートの設定
 
@@ -142,7 +142,7 @@ LCS に接続した後は、既存の Microsoft 更新プログラムおよび�
 
 Azure DevOps 管理者は、**#SearchableInFinanceAndOperations** を作業項目にタグ付けすることによって、プロジェクトの作業項目を組織のユーザーに発行することができます。 タグ付けされた作業項目は、クライアント サポート検索ボックスからユーザーに対して検索可能になります。 検索結果には、Microsoft が公開した更新プログラムや修正プログラムに加えて、タグ付きの Azure DevOps 作業項目が含まれます。 次のグラフィックは、公開用のタグ付きの Azure DevOps 作業項目を示しています。
 
-[![vstsTag](./media/VSTS%20Tagging.png)](./media/VSTS%20Tagging.png)
+[![vstsTag](./media/VSTS-Tagging.png)](./media/VSTS-Tagging.png)
 
 サポート検索ボックスを使用して公開済みの Azure DevOps 作業項目を検索するとき、検索結果は、新しいブラウザー タブに **表示** モードで、作業項目のタイプ、タイトル、状態、および説明が表示されます。  適切なアクセス許可を持つユーザーが、Azure DevOps の作業項目を編集できます。 次のグラフィックは、公開された Azure DevOps 作業項目の検索結果を示しています。
 

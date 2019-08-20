@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: 91183
 ms.assetid: 259a6844-3675-44bd-a4ea-57a5976628ff
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 2ac28585eb3e5c8af490d562257aa82ca968a2a1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e5059a414fdfbb4280f04d93f226d726743b543c
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548021"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863453"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-platform-update-1-may-2016"></a>Dynamics AX プラットフォーム更新プログラム 1 (2016 年 5 月) の新機能および変更された機能
 

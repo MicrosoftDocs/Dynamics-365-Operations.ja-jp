@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 31681
 ms.assetid: c39a34b5-3fce-446f-877b-0aa41817ef25
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 496ab6512cfb1478ed762eb165a760c872e7e222
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f01bec33a206af80983cc27fef2e8ea23443a2cc
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550762"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833069"
 ---
 # <a name="extend-a-retail-server-odata-controller"></a>Retail Server OData コントローラーの拡張
 

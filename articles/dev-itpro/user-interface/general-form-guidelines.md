@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 14701
 ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f25c61a7cadcd99725c0adb0f096b65206a8ccff
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: bd131eaf334abab7f7ce1a6c37eba5834da6372f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552801"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851151"
 ---
 # <a name="general-form-guidelines"></a>フォームの全般的なガイドライン
 
@@ -142,7 +142,7 @@ ms.locfileid: "1552801"
 -   クイック タブにグリッドが含まれている場合は、[ツールバーおよびリスト](toolbar-list-subpattern.md) サブパターン ガイドラインに従う必要があります。
 
 ## <a name="radio-button-guidelines"></a>ラジオ ボタン ガイドライン
--   すべての [ラジオ ボタンに対する Microsoft 標準ガイドライン](https://docs.microsoft.com/en-us/windows/desktop/uxguide/ctrl-radio-buttons) に従います。 具体的には、次のガイドラインを遵守します。
+-   すべての [ラジオ ボタンに対する Microsoft 標準ガイドライン](https://docs.microsoft.com/windows/desktop/uxguide/ctrl-radio-buttons) に従います。 具体的には、次のガイドラインを遵守します。
     -   ラジオ ボタン コントロールは、相互に排他的な選択肢からオプションを 1 つ選択するために使用されます。
     -   2 つから 7 つの選択肢があります。 7 つ以上の選択肢がある場合は、コンボ ボックスを使用します。
     -   オプションのいずれも有効な選択肢でない場合、この状況を反映するには、**なし**または**適用されない**などの別のオプションがあります。
@@ -164,7 +164,7 @@ ms.locfileid: "1552801"
 
 [![checkboxtoggle](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
 
--   すべての [チェック ボックスに対する Microsoft の標準ガイドライン](https://docs.microsoft.com/en-us/windows/desktop/uxguide/ctrl-check-boxes ) に従います。 具体的には、次のガイドラインを遵守します。
+-   すべての [チェック ボックスに対する Microsoft の標準ガイドライン](https://docs.microsoft.com/windows/desktop/uxguide/ctrl-check-boxes ) に従います。 具体的には、次のガイドラインを遵守します。
     -   既定では、フォームのチェック ボックスの代わりにトグル ボタンを使用します。 ラベルは、Microsoft のチェックボックス ラベルのガイドラインに従う必要があります。
         -   **例外:**
             -   多数の関連オプションをグループで設定する必要がある場合は、チェック ボックスを使用します。

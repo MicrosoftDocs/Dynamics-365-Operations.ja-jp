@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 19021
 ms.assetid: 409386b2-98c8-44a7-be6f-252f8a21f819
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 9bd15953d0f024a8df5959837ff3b39534eba1a9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3387b3221fb8f2817d63107778877ec8661dd63b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544088"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850557"
 ---
 # <a name="customization-analysis-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内のカスタマイズ分析
 

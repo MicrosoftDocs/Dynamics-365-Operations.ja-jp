@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 51751
 ms.assetid: cb7c0fd3-34ec-407b-ad78-1007a67d70d5
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f60a1052c05b9e48bd3df1d34b853b3c78f66a1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d2c3ee626024a12ed44178bf55152da578f8e3fe
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544189"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833658"
 ---
 # <a name="s-classes"></a>S クラス
 
@@ -5134,7 +5134,7 @@ pkTableName
 
 #### <a name="return-value"></a>戻り値
 
-### <a name="method-deprecatedworkflowcaption"></a>メソッド DEPRECATED\_WorkflowCaption
+### <a name="method-deprecated_workflowcaption"></a>メソッド DEPRECATED\_WorkflowCaption
 
     public static str DEPRECATED_WorkflowCaption(str tableName, str fieldName, Int64 recIDValue)
 

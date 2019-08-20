@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26961
 ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7eb1def57fc1a74e73c92226611550a35b528bf
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8efbfb8e70c9051bb67233ec8d683ea1ba7ece9b
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544126"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833476"
 ---
 # <a name="customize-through-extension-and-overlayering"></a>拡張機能とオーバーレイによってカスタマイズする
 

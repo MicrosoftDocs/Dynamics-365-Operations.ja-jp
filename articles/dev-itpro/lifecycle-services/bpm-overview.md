@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012, Operations
 ms.custom: 13301
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 07663ba91840cf6b2fac992a613b2aa4d90dfae8
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: a527a21d0c89f30f2e5557094be62ecd7ad90c2a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595459"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850473"
 ---
 # <a name="business-process-modeler-bpm-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 27831
 ms.assetid: 32723600-2e9c-4517-b582-78dca3c166cc
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7884c687247c5ae4cbc7d855b47719a0c411fd12
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6ad1ab86d01ced1067cbaf63e30b8280a60ade33
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555295"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850587"
 ---
 # <a name="regulatory-watch-and-communication-of-regulatory-updates"></a>規制の監視と規制の更新の通知
 

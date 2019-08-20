@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 270754
 ms.assetid: ca4b2ccf-d68d-4344-833e-1c45d966246c
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 7331fc152ea7ed5e46d5586da6da3b35fe02e197
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 9b3bbf1396c19288b3ff4604f1416569e9571c74
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595410"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849751"
 ---
 # <a name="power-bi-embedded-integration"></a>Power BI Embedded 統合
 

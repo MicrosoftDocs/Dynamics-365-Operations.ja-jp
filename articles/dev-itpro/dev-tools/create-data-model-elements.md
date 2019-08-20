@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 23421
 ms.assetid: 1b7789f4-12c1-480b-bb39-c354b5b03276
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff58bb6067cd516bf3fb5054879ca78fc458ce09
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7f71ef42e4ba9860a9b27e676c7c2bfbe0983e73
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544159"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833570"
 ---
 # <a name="create-models-and-data-model-elements"></a>モデルとデータ モデル要素の作成
 

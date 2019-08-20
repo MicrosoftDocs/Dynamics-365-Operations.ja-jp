@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 63793
 ms.assetid: 9e05d1b3-530a-4f87-a8f0-197ad35616ef
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e859dfb04a726c981416e6571ae783650b4eaa1
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: dc701d26240e49c9258acd0fcc00e4c588755a23
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595426"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833698"
 ---
 # <a name="f-classes-formchangetracker-to-formcontroleventargs"></a>F クラス (FormChangeTracker から FormControlEventArgs)
 

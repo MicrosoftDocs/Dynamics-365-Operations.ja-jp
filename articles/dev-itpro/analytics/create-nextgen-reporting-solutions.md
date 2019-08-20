@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 21551
 ms.assetid: 2e1c96f8-46c9-428e-bb3d-6791f2a954ef
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e5ff0918ad7154c5c9c2cda85e861ec241f7529
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fb8706b1e5cc8bf450248be56f771818481406ab
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548639"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848361"
 ---
 # <a name="create-reporting-solutions"></a>レポート ソリューションの作成
 
@@ -172,7 +172,7 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 
 [![レポート デザイナー](./media/report-designer-1024x665.png)](./media/report-designer.png) 
 
-上図は、Visual Studio 2015 Precision Designer を使用して表示される FMRentalsByCustomer レポート デザイン定義のスクリーン ショットです。 Precision Designer には、レポートのコンテンツおよびレイアウトをカスタマイズできる組み込みツールが備わった、自由書式デザイン サーフェイスが用意されています。 また、埋め込み VB コードを活用して、実行時デザイン操作を作成し、ユーザーとの対話をサポートすることができます。 統合されたツールとして、開発者は、AX EDT に基づいてレポート本文のデータをフォーマットするために、AX ラベルとパブリック API を参照することができます。 MSDN には、SSRS 書式設定機能に関連する豊富な開発者ドキュメントが用意されています。 有効 SSRS レポートを設計する基本的な方法については、[Reporting Services レポート (SSRS)](https://msdn.microsoft.com/en-us/library/bb522712.aspx) を参照してください。
+上図は、Visual Studio 2015 Precision Designer を使用して表示される FMRentalsByCustomer レポート デザイン定義のスクリーン ショットです。 Precision Designer には、レポートのコンテンツおよびレイアウトをカスタマイズできる組み込みツールが備わった、自由書式デザイン サーフェイスが用意されています。 また、埋め込み VB コードを活用して、実行時デザイン操作を作成し、ユーザーとの対話をサポートすることができます。 統合されたツールとして、開発者は、AX EDT に基づいてレポート本文のデータをフォーマットするために、AX ラベルとパブリック API を参照することができます。 MSDN には、SSRS 書式設定機能に関連する豊富な開発者ドキュメントが用意されています。 有効 SSRS レポートを設計する基本的な方法については、[Reporting Services レポート (SSRS)](https://msdn.microsoft.com/library/bb522712.aspx) を参照してください。
 
 ## <a name="customizing-the-parameter-experience"></a>パラメータ経験のカスタマイズ
 レポート フレームワークは、モデル化されたソリューションを使用して対処できない要件を持つ先進的なソリューションを促進するため、サービスの拡張機能を通じて柔軟性を提供します。 VS デザイナーを使用して、基本的なパラメーターの書式設定、グループ化、入力の検証を追加します。 X++ ベースのデータ コントラクト検証はより高度なシナリオで使用可能です。 ユーザー インターフェイス (UI) ビルダ クラスを追加して、レポートを実行する前にセッション入力を促すパラメータ ウィンドウをカスタマイズすることを検討してください。 これらのカスタム拡張機能は、次の機能に有効です。

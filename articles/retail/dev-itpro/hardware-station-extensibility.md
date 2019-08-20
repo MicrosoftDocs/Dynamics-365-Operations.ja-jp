@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 17971
 ms.assetid: 256f7f2b-c419-442f-b195-0c6a299a056e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5dfaea195248edb7b22b59ca9b85812d6e70d400
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e543b256cfcb6c4ed31a56c497d65d4dee403a24
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569559"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833145"
 ---
 # <a name="hardware-station-extensibility"></a>Hardware Station 拡張性
 
@@ -51,7 +51,7 @@ Retail Hardware Station は、プリンター、キャッシュ ドロワー、�
 [![ハードウェア ステーション アーキテクチャ](./media/hardware-station-architecture-1024x764.png)](./media/hardware-station-architecture.png)
 
 ## <a name="retail-hardware-station-extensibility-scenarios"></a>Retail Hardware Station 拡張性シナリオ
-.NTE にサポートされている [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/en-us/library/dd460648(v=vs.110).aspx) を使用して、ハードウェア ステーションの拡張性が獲得されます。 **拡張性の規定:** 拡張機能アセンブリで、常に、拡張機能の書き込みをします。 そのようにして、実際の拡張機能を記述し、アップグレードがかなり簡単になります。 拡張のための 2 つの基本的なシナリオがあります。
+.NTE にサポートされている [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/dd460648(v=vs.110).aspx) を使用して、ハードウェア ステーションの拡張性が獲得されます。 **拡張性の規定:** 拡張機能アセンブリで、常に、拡張機能の書き込みをします。 そのようにして、実際の拡張機能を記述し、アップグレードがかなり簡単になります。 拡張のための 2 つの基本的なシナリオがあります。
 
 -   **新しいデバイスを追加する** - 最初から用意されているハードウェア ステーションはデバイス (現金自動支払機など) をまだサポートしていません。 したがって、ハードウェア ステーションで新しいデバイスのサポートを追加する必要があります。
 -   **既存のデバイスに対する新しいデバイス タイプを追加する** - 最初から用意されているハードウェア ステーションの実装ではすでにデバイス (MSR など) がサポートされていますが、特定のデバイス タイプ (オーディオ ジャック MSR 実装) のサポートを追加する必要があります。

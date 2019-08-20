@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 28681
 ms.assetid: 09a51876-8c9d-41ed-ab81-b780894a4281
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 209804c4a733c350566fa1ac90d670750ca66a79
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7bd79638da677f5c12f01eba166458d771f88a37
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555734"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851109"
 ---
 # <a name="form-patterns-for-migrated-forms"></a>移行後のフォームのフォーム パターン
 

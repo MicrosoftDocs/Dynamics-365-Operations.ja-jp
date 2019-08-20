@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 13401
 ms.assetid: c16c9fb5-b1c1-4f22-a955-ff7325621a22
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 2383184dffd2b04c9770fba94db9d08170f361e1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 42610982a198f9121dc7ff4d4522e823bade8d3a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555283"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850551"
 ---
 # <a name="import-demo-data-for-ax-2012-r3-by-using-the-test-data-transfer-tool"></a>テスト データ転送ツールを使用した AX 2012 R3 のデモ データのインポート
 

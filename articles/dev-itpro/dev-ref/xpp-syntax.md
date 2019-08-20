@@ -3,26 +3,26 @@ title: X++ 構文
 description: このトピックには、X++ の構文リファレンスが含まれています。
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 72211
 ms.assetid: bb238a46-3a43-4f3c-a9b6-86b26e988881
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea5c999dc8739a65b42e4be9f07f535c07f40d25
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2b02bc4e16b0fc37c5981963a377a26375949ce0
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544172"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833596"
 ---
 # <a name="x-syntax"></a>X++ 構文
 
@@ -831,12 +831,6 @@ Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester こ�
 
 このセクションでは、Backus Naur Form (BNF) の X++ の文法について説明します。 次に、BNF の小さな例について説明します。
 
-BNF コード
-
-解釈
-
-コードのコピー
-
     AA ::= BB  CC_SYM
     BB ::= JJ_SYM
        ::= KK_SYM
@@ -850,8 +844,6 @@ X++ の文法の BNF で、ターミナルのほとんどに名前の接尾語�
 ### <a name="the-formal-x-grammar-in-bnf"></a>BNF での正式な X++ 文法
 
 このセクションには、X++文法を定義する BNF が含まれています。
-
-コードのコピー
 
     CMPL_UNIT ::= RETTYPEID  FUNC_HDR  FUNC_HEAD  BODY
               ::= RETTYPEID  DATA_HDR  CLASS_DECL
@@ -1491,6 +1483,5 @@ Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバ�
 --------
 
 [X++ 言語リファレンス](xpp-language-reference.md)
-
 
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 28331
 ms.assetid: ba33ee49-2053-4e3c-b0fa-123c9410265d
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c325729e29df2c48bb28d0fe2d6201166ca4ea0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fb6ab62f372ec758ca8cce492cf5a0ddc276d829
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560632"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851762"
 ---
 # <a name="code-migration---mouse-double-click-logic"></a>コードの移行 - マウス ダブルクリック ロジック
 

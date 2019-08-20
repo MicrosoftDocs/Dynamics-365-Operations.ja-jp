@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 107013
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: e9709f842413f8de53f310fc425edf453374120f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fede0a915ef7ea2791983902b4da3f093b4c9ec2
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544221"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848117"
 ---
 # <a name="troubleshoot-package-application-issues"></a>パッケージ アプリケーションの問題のトラブルシューティング
 

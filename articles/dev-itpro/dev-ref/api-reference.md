@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 63853
 ms.assetid: 46e5e47b-2c80-44fd-a7a3-e41884da2f55
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec3d156aefd1c725381858cc9667273983238f1e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1efb8d1764de7a77f2fb81d83c380fb36a957626
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550964"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833720"
 ---
 # <a name="api-class-and-table-reference"></a>API、クラス、およびテーブルの参照
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 26031
 ms.assetid: ad8ba47b-becb-4d13-a5af-8aca46075e82
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 653ed097932674e9a78e6363c69f473207cc6eae
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9cdefb4302ae9af1674e1e5c1de14e11120f349b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556401"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851239"
 ---
 # <a name="build-navigation"></a>ナビゲーションの構築
 

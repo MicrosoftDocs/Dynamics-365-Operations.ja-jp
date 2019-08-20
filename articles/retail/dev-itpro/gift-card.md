@@ -10,7 +10,7 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.devlang: ''
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: retail
 ms.author: ivanv
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 753b2983176b5cc1e51ffb18bfafefbfb07b2bd4
-ms.sourcegitcommit: a25f988c4a159a1aea98641cf9eb0e0b9979d00f
+ms.openlocfilehash: 04a1518bb0d10010079be118dac8241bf9103cba
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541012"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833065"
 ---
 # <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 
