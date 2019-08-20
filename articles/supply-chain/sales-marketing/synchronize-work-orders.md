@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5ca01b085315d916a18c512af28fc7534ce76ee8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 77358513ffdf791ab10d6efe1b84f598ffb5ec26
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536736"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1843412"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-finance-and-operations"></a>Field Service から Finance and Operations へのワーク オーダーとプロジェクトの同期
 
@@ -34,7 +34,7 @@ ms.locfileid: "1536736"
 
 [![Finance and Operations および Field Service 間の業務プロセスの同期](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-使用されている**ワーク オーダーとプロジェクト (Field Service から Finance and Operations)** テンプレートは、**ワーク オーダー (Field Service から Finance and Operations)** テンプレートに基づきます。 詳細については、[Field Service のワーク オーダーと Finance and Operations の販売注文との同期](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order) を参照してください。
+使用されている**ワーク オーダーとプロジェクト (Field Service から Finance and Operations)** テンプレートは、**ワーク オーダー (Field Service から Finance and Operations)** テンプレートに基づきます。 詳細については、[Field Service のワーク オーダーと Finance and Operations の販売注文との同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order) を参照してください。
 
 このトピックでは、2 つのテンプレートの相違のみについて説明します:
 - **ワーク オーダーとプロジェクト (Field Service から Finance and Operations)**

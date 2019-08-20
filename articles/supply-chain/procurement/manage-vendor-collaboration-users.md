@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 520dcaa1eec3c0fb8aa72fc7f75a56622069881f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d0644372944b4c9d472ff738258665544fccbad4
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555064"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742473"
 ---
 # <a name="manage-vendor-collaboration-users"></a>仕入先コラボレーション ユーザーの管理
 
@@ -65,7 +65,7 @@ Microsoft Dynamics 365 for Finance and Operations の仕入先コラボレーシ
 4. **ユーザー ロールの割り当て** セクションで、新しいユーザーが持つ必要のあるセキュリティ ロールの **割り当て** チェック ボックスを選択します。
 5. **送信** をクリックします。
 
-仕入先ユーザーが送信を要求する場合、**仕入先コラボレーションへのアクセスの許可** フィールドは、選択された仕入先アカウントのために **はい** に設定され、ユーザー要求のワークフローは開始されます。 ワークフローの一部として、新しいユーザーは Finance and Operations で作成し、セキュリティ ロールが割り当てられます。 また、Azure B2B サービスは、Azure ポータルでインタラクションを開始することを有効化し、Finance and Operations ユーザー アカウントで関連する新しいもしくは既存の AAD アカウントを関連付けます。 詳細については、[Azure AD B2B コラボレーションとは何ですか。](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) を参照してください。
+仕入先ユーザーが送信を要求する場合、**仕入先コラボレーションへのアクセスの許可** フィールドは、選択された仕入先アカウントのために **はい** に設定され、ユーザー要求のワークフローは開始されます。 ワークフローの一部として、新しいユーザーは Finance and Operations で作成し、セキュリティ ロールが割り当てられます。 また、Azure B2B サービスは、Azure ポータルでインタラクションを開始することを有効化し、Finance and Operations ユーザー アカウントで関連する新しいもしくは既存の AAD アカウントを関連付けます。 詳細については、[Azure AD B2B コラボレーションとは何ですか。](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) を参照してください。
 
 ### <a name="inactivate-a-user"></a>ユーザーの無効化
 

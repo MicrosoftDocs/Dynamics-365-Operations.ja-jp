@@ -3,7 +3,7 @@ title: 明細書を転記するジョブの構成および実行
 description: この手順は、選択した店舗または店舗グループの明細書を転記する反復バッチ ジョブを構成し、実行する方法を説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 676216d90c50c0d3fa1a839cab7a734e624708ba
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a24014f7e1b925e0fdb20b91bcc9594feb8f4c5c
+ms.sourcegitcommit: fc40279d0e56f8a43c601bca6265fdde4c8c4c7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550119"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "1792251"
 ---
 # <a name="configure-and-run-job-to-post-statements"></a>明細書を転記するジョブの構成および実行
 
@@ -31,11 +31,12 @@ ms.locfileid: "1550119"
 この手順は、選択した店舗または店舗グループの明細書を転記する反復バッチ ジョブを構成し、実行する方法を説明します。 この手順では、デモ データの会社 USRT を使用します。
 
 1. すべてのワークスペース > .. に移動します > 小売店舗の財務。
-2. [明細書の転記] をクリックします。
+2. 明細書のバッチ転記をクリックします。
     * 組織階層を選択し、次に組織ノード ツリーで、個々の店舗またはノードを選択します。 店舗グループのバッチ ジョブを作成する場合は、ノードを選択します。  
     * 選択した項目を追加するには、矢印をクリックします。  
-3. [バックグラウンドで実行] タブをクリックします。
+3. バックグラウンドで実行タブをクリックします。 ![バックグラウンドで実行](../dev-itpro/media/runbackground.png "バックグラウンドで実行") 
 4. [バッチ処理] チェック ボックスをオンまたはオフにします。
+![バッチ処理](../dev-itpro/media/batchprocessing.png "バッチ処理と繰り返し") 
 5. [再実行] をクリックします。
 6. [開始日] フィールドに日付を入力します。
 7. [開始時刻] フィールドに時刻を入力します。

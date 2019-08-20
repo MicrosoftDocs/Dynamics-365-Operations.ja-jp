@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85cb5c5618346f1e5132f818911be21df86fbfcb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554993"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741113"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Excel でエンティティ データを開き、Excel アドインを使用して更新する
 
@@ -60,7 +60,7 @@ Excel アドインが、選択したエンティティのデータを自動的�
 
 6. **OK** を選択してから **はい** を選択し、変更を確認します。 Excel アドインが再開しメタデータを読み込みます。
 
-    **デザイン** ボタンが使用できるようになりました。 Excel アドインに **アプレットの読み込み** ボタンがある場合は、正しいユーザーとしてサインインしていない可能性があります。 詳細については、このトピックの「トラブルシューティング」セクションにある「[アプレットの読み込みボタンが表示される](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting)」を参照してください。
+    **デザイン** ボタンが使用できるようになりました。 Excel アドインに **アプレットの読み込み** ボタンがある場合は、正しいユーザーとしてサインインしていない可能性があります。 詳細については、このトピックの「トラブルシューティング」セクションにある「[アプレットの読み込みボタンが表示される](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting)」を参照してください。
 
 7. **デザイン** を選択します。 Excel アドインがエンティティ メタデータを取得します。
 8. **テーブルの追加** を選択します。 エンティティの一覧が表示されます。 エンティティは「名前 - ラベル」形式で一覧表示されます。

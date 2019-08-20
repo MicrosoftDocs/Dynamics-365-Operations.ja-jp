@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 37b338d5971395264bd2ff673ee7892814859846
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554442"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741162"
 ---
 # <a name="company-directory-mobile-workspace"></a>会社のディレクトリ モバイル ワークスペース
 
@@ -57,7 +57,7 @@ ms.locfileid: "1554442"
 </ul>
 </td>
 <td>システム管理者</td>
-<td>組織にまだ Finance and Operations が配置されない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ Talent が配置されていない場合、システム管理者は<a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent ウェブページ</a>から評価版バージョンにアクセスできます。
+<td>組織にまだ Finance and Operations が配置されない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ Talent が配置されていない場合、システム管理者は<a href="https://www.microsoft.com/dynamics365/talent">Talent ウェブページ</a>から評価版バージョンにアクセスできます。
 </td>
 </tr>
 <tr class="even">

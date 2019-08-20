@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 23004930d2377a3d647435b53b6809cd500f44ac
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551486"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741358"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>受信したドキュメントへの ER コンフィギュレーションのデザイン
 
@@ -30,7 +30,7 @@ ms.locfileid: "1551486"
 
 この手順は、「システム管理者」または「電子レポート開発者」ロールが割り当てられているユーザー用に作成されています。 
 
-これらのステップは、任意のデータ セットを使用して完了することができます。 始める前に、トピック「受信ドキュメントを解析してアプリケーション データを更新」 (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents) に一覧表示されたファイルをダウンロードして保存します。 ファイルは次のものです: EFSTA model.xml、EFSTA format.xml、Response1.xml、Response2.xml、Response3.xml、Response4.xml。
+これらのステップは、任意のデータ セットを使用して完了することができます。 始める前に、トピック「受信ドキュメントを解析してアプリケーション データを更新」 (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents) に一覧表示されたファイルをダウンロードして保存します。 ファイルは次のものです: EFSTA model.xml、EFSTA format.xml、Response1.xml、Response2.xml、Response3.xml、Response4.xml。
 
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
     * サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、アクティブとしてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」という手順のステップを完了する必要があります。  

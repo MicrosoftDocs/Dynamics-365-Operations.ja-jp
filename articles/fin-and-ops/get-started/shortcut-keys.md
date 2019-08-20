@@ -3,7 +3,7 @@ title: キーボード ショートカット
 description: 以下のキーボード ショートカットは、Dynamics 365 for Finance and Operations 全体に適用されます。
 author: jasongre
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 95a6b6bd70c4a5bb684c605d364a28b85ed4e120
+ms.sourcegitcommit: d88d3d504e85c5bf6f6e9dc842488a2b644261cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561836"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1780061"
 ---
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
@@ -138,9 +138,13 @@ ms.locfileid: "1561836"
 | 選択したセットに行の範囲を追加<blockquote>[!NOTE] このショートカットは、複数選択のシナリオにのみ適用されます。</blockquote>         | Shift+クリック                     |
 | 前後のデータ ページに移動                                                                                   | Page up キーまたは Page down キー             |
 | グリッドの下部に新しい行を作成                                                                             | 下方向キー (最後の行から)  |
-| すべての行を選択またはクリア                                                                                               | Ctrl + Shift + M                    |
 | 最初のレコードに移動                                                                                               | Ctrl + Home                       |
 | 最後のレコードに移動                                                                                                | Ctrl + End                        |
+| すべての行を選択またはクリア                                                                                               | Ctrl + Shift + M                    |
+| 最初にマークした行に移動                                                                                           | Alt + シフト + M、F                    |
+| 次のマークした行に移動                                                                                            | Alt + シフト + M、L                    |
+| 前のマークした行に移動                                                                                        | Alt + シフト + M、P                    |
+| 最後のマークした行に移動                                                                                           | Alt + シフト + M、N                    |
 | グリッドで既定のアクションを実行する<blockquote>[!NOTE] フォーカスがハイパーリンクを含んでいるセル上にあり、すべてのセルがそのハイパーリンクを持つ列にある時、このショートカットが有効になります。</blockquote> | 入力                           |
 | 選択した行およびヘッダー行間でフォーカスを切り替え                                                               | Alt + Shift + H                     |
 | (ヘッダー行のフォーカスで) 現在の列を大きくする/小さくする                                                  | 右方向キー / 左方向キー        |

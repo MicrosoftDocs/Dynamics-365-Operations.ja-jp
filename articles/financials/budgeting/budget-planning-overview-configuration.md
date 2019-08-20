@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a262b5200c8071bec78ff6d3ed7976d4b2057ea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 560a5346e33e1b98a7513b6d7c033fe35458f63a
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570975"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834153"
 ---
 # <a name="budget-planning-overview"></a>予算計画の概要
 
@@ -154,6 +154,8 @@ Microsoft Dynamics 365 for Finance and Operations で使用されている概念
 [![列](./media/columns.png)](./media/columns.png) 
 
 各レイアウト要素 (列) が編集可能で、そのレイアウトに作成されたワークシート テンプレートすべてを使用可能にするかどうかも指定します。 見積のステージで使用されるレイアウトの例のスキーマでは、予測の列は編集可能ですが、PY の販売、および契約の列は読み取り専用です。
+
+[!Note] 既定では、[予算計画レイアウトの拡張](./extending-budget-planning-layout.md) のステップを使用して予算計画を拡張しない限り、36 列に制限されます。
 
 ### <a name="templates"></a>テンプレート
 

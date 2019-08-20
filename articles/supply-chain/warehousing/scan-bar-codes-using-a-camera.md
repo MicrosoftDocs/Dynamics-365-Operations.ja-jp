@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: e78d0a82d3ca66a6912ea1a9517296ca241edf1c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ec9197c2e8b7970fcbf5ea42612c60f940bcae0
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559045"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742937"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Dynamics 365 for Finance and Operations – Warehousing でのカメラを使用したバーコードのスキャン
 
@@ -36,7 +36,7 @@ ms.locfileid: "1559045"
 ## <a name="setup"></a>段取り
 Warehousing アプリケーションの表示設定では、バーコードのスキャンにカメラを使用すべきかを選択できます。 **スキャナーとしてカメラを使用** を有効にした場合、優先入力モードを **スキャン** に設定した各入力フィールドでカメラを使用できます。 
 
-入力フィールドをスキャン可能にする必要があるかどうかをコントロールするには、Dynamics 365 for Finance and Operations の**倉庫保管アプリ フィールド名**ページで、**優先入力モード**を**スキャン**に設定します。 このオプションが選択されている場合、倉庫保管アプリでスキャンするのにカメラを使用できます。 Warehousing でアプリ フィールド名を構成する方法については、[倉庫保管アプリでアプリ フィールド名をコンフィギュレーションする](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse) を参照してください。
+入力フィールドをスキャン可能にする必要があるかどうかをコントロールするには、Dynamics 365 for Finance and Operations の**倉庫保管アプリ フィールド名**ページで、**優先入力モード**を**スキャン**に設定します。 このオプションが選択されている場合、倉庫保管アプリでスキャンするのにカメラを使用できます。 Warehousing でアプリ フィールド名を構成する方法については、[倉庫保管アプリでアプリ フィールド名をコンフィギュレーションする](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse) を参照してください。
 
 ## <a name="supported-bar-code-formats"></a>サポートされているバーコード形式
 サポートされている最も一般的なバーコード形式には、コード 128、コード 39、コード 93、EAN-8、EAN-13、UPC-E、UPC-A、および QR コードが含まれます。 

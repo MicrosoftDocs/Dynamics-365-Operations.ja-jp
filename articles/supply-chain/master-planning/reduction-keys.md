@@ -3,7 +3,7 @@ title: 予測下方修正キー
 description: このトピックでは、下方修正キーを設定する方法を示す例を提供します。 これには、さまざまな下方修正キーの設定とそれぞれの結果に関する情報が含まれます。 予測要求を減らす方法を定義するには下方修正キーを使用できます。
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 07/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b915570145a48db7a182b9fce34e1544e3600107
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5efa5b2c7a4c45bbf6e940170000b391384fe7ff
+ms.sourcegitcommit: add48ece3864645a89a28327c4add607714befb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1504082"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "1736307"
 ---
 # <a name="method-used-to-reduce-forecast-requirements"></a>予測要求の削減に使用する方法
 
@@ -138,14 +138,14 @@ ms.locfileid: "1504082"
 | 日       | 需要予測 |
 |------------|-----------------|
 | 1 月 1 日  | 1.000           |
-| 2 月 1 日 | 500             |
+| 2 月 1 日 | 1.000             |
 
 次の販売注文も作成します。
 
 | 日        | 販売注文数量 |
 |-------------|----------------------|
-| 1 月 15 日  | 500                  |
-| 15 年 2月 | 100                  |
+| 1 月 15 日  | 200                  |
+| 15 年 2月 | 400                  |
 
 この場合、次の計画オーダーが作成されます。
 
