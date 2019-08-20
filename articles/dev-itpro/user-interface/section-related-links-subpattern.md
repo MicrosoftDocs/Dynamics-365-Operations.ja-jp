@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 29331
 ms.assetid: 984d7c6b-cf0a-4056-88f3-c32c92ca3401
@@ -17,61 +17,61 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d797b366325b77046d8322df69981df3bce90e29
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cb9868795661c1ed80b60aae1486eedc3bc5f2b0
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560796"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851117"
 ---
-# <a name="section-related-links-subpattern"></a><span data-ttu-id="cda8b-104">セクション関連リンクのサブパターン</span><span class="sxs-lookup"><span data-stu-id="cda8b-104">Section Related Links subpattern</span></span>
+# <a name="section-related-links-subpattern"></a><span data-ttu-id="7c6ae-104">セクション関連リンクのサブパターン</span><span class="sxs-lookup"><span data-stu-id="7c6ae-104">Section Related Links subpattern</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cda8b-105">この記事では、関連リンクのサブパターンに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="cda8b-105">This article provides information about the Section Related Links subpattern.</span></span> <span data-ttu-id="cda8b-106">このサブパターンは、他のフォームへのリンクのセットを含む最後のパノラマ セクション専用の運用ワークスペース パターンの一部として使用されます。</span><span class="sxs-lookup"><span data-stu-id="cda8b-106">This subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.</span></span>
+<span data-ttu-id="7c6ae-105">この記事では、関連リンクのサブパターンに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="7c6ae-105">This article provides information about the Section Related Links subpattern.</span></span> <span data-ttu-id="7c6ae-106">このサブパターンは、他のフォームへのリンクのセットを含む最後のパノラマ セクション専用の運用ワークスペース パターンの一部として使用されます。</span><span class="sxs-lookup"><span data-stu-id="7c6ae-106">This subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.</span></span>
 
-<a name="usage"></a><span data-ttu-id="cda8b-107">用途</span><span class="sxs-lookup"><span data-stu-id="cda8b-107">Usage</span></span>
+<a name="usage"></a><span data-ttu-id="7c6ae-107">用途</span><span class="sxs-lookup"><span data-stu-id="7c6ae-107">Usage</span></span>
 -----
 
-<span data-ttu-id="cda8b-108">セクション関連リンク サブパターンは、他のフォームへのリンクのセットを含む最後のパノラマ セクション専用の運用ワークスペース パターンの一部として使用されます。</span><span class="sxs-lookup"><span data-stu-id="cda8b-108">The Section Related Links subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.</span></span>
+<span data-ttu-id="7c6ae-108">セクション関連リンク サブパターンは、他のフォームへのリンクのセットを含む最後のパノラマ セクション専用の運用ワークスペース パターンの一部として使用されます。</span><span class="sxs-lookup"><span data-stu-id="7c6ae-108">The Section Related Links subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.</span></span>
 
-## <a name="wireframe"></a><span data-ttu-id="cda8b-109">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="cda8b-109">Wireframe</span></span>
-<span data-ttu-id="cda8b-110">[![sectionRelatedLinksWireframe](./media/sectionrelatedlinkswireframe.png)](./media/sectionrelatedlinkswireframe.png)</span><span class="sxs-lookup"><span data-stu-id="cda8b-110">[![sectionRelatedLinksWireframe](./media/sectionrelatedlinkswireframe.png)](./media/sectionrelatedlinkswireframe.png)</span></span>
+## <a name="wireframe"></a><span data-ttu-id="7c6ae-109">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="7c6ae-109">Wireframe</span></span>
+<span data-ttu-id="7c6ae-110">[![sectionRelatedLinksWireframe](./media/sectionrelatedlinkswireframe.png)](./media/sectionrelatedlinkswireframe.png)</span><span class="sxs-lookup"><span data-stu-id="7c6ae-110">[![sectionRelatedLinksWireframe](./media/sectionrelatedlinkswireframe.png)](./media/sectionrelatedlinkswireframe.png)</span></span>
 
-## <a name="pattern-changes-for-microsoft-dynamics-ax"></a><span data-ttu-id="cda8b-111">Microsoft Dynamics AX 用のパターンの変更</span><span class="sxs-lookup"><span data-stu-id="cda8b-111">Pattern changes for Microsoft Dynamics AX</span></span>
-<span data-ttu-id="cda8b-112">このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。</span><span class="sxs-lookup"><span data-stu-id="cda8b-112">This pattern didn't exist for Microsoft Dynamics AX 2012.</span></span>
+## <a name="pattern-changes-for-microsoft-dynamics-ax"></a><span data-ttu-id="7c6ae-111">Microsoft Dynamics AX 用のパターンの変更</span><span class="sxs-lookup"><span data-stu-id="7c6ae-111">Pattern changes for Microsoft Dynamics AX</span></span>
+<span data-ttu-id="7c6ae-112">このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。</span><span class="sxs-lookup"><span data-stu-id="7c6ae-112">This pattern didn't exist for Microsoft Dynamics AX 2012.</span></span>
 
-## <a name="model"></a><span data-ttu-id="cda8b-113">モデル</span><span class="sxs-lookup"><span data-stu-id="cda8b-113">Model</span></span>
-### <a name="high-level-structure"></a><span data-ttu-id="cda8b-114">高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="cda8b-114">High-level structure</span></span>
+## <a name="model"></a><span data-ttu-id="7c6ae-113">モデル</span><span class="sxs-lookup"><span data-stu-id="7c6ae-113">Model</span></span>
+### <a name="high-level-structure"></a><span data-ttu-id="7c6ae-114">高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="7c6ae-114">High-level structure</span></span>
 
-- <span data-ttu-id="cda8b-115">TabPage</span><span class="sxs-lookup"><span data-stu-id="cda8b-115">TabPage</span></span>
+- <span data-ttu-id="7c6ae-115">TabPage</span><span class="sxs-lookup"><span data-stu-id="7c6ae-115">TabPage</span></span>
 
-    - <span data-ttu-id="cda8b-116">*LinkButton ($ ボタン)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="cda8b-116">*LinkButton ($Button) \[0..N\]*</span></span>
-    - <span data-ttu-id="cda8b-117">*ButtonGroup (グループ)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="cda8b-117">*ButtonGroup (Group) \[0..N\]*</span></span>
+    - <span data-ttu-id="7c6ae-116">*LinkButton ($ ボタン)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="7c6ae-116">*LinkButton ($Button) \[0..N\]*</span></span>
+    - <span data-ttu-id="7c6ae-117">*ButtonGroup (グループ)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="7c6ae-117">*ButtonGroup (Group) \[0..N\]*</span></span>
 
-- <span data-ttu-id="cda8b-118">LinkButton ($Button) \[1..N\]</span><span class="sxs-lookup"><span data-stu-id="cda8b-118">LinkButton ($Button) \[1..N\]</span></span>
+- <span data-ttu-id="7c6ae-118">LinkButton ($Button) \[1..N\]</span><span class="sxs-lookup"><span data-stu-id="7c6ae-118">LinkButton ($Button) \[1..N\]</span></span>
 
-### <a name="core-components"></a><span data-ttu-id="cda8b-119">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="cda8b-119">Core components</span></span>
+### <a name="core-components"></a><span data-ttu-id="7c6ae-119">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="7c6ae-119">Core components</span></span>
 
-<span data-ttu-id="cda8b-120">セクション関連リンクを運用ワークスペース内の適切なタブ ページに適用します。</span><span class="sxs-lookup"><span data-stu-id="cda8b-120">Apply Section Related Links to the appropriate tab page in the Operational Workspace.</span></span>
+<span data-ttu-id="7c6ae-120">セクション関連リンクを運用ワークスペース内の適切なタブ ページに適用します。</span><span class="sxs-lookup"><span data-stu-id="7c6ae-120">Apply Section Related Links to the appropriate tab page in the Operational Workspace.</span></span>
 
-### <a name="related-container-patterns"></a><span data-ttu-id="cda8b-121">関連するコンテナー パターン</span><span class="sxs-lookup"><span data-stu-id="cda8b-121">Related container patterns</span></span>
+### <a name="related-container-patterns"></a><span data-ttu-id="7c6ae-121">関連するコンテナー パターン</span><span class="sxs-lookup"><span data-stu-id="7c6ae-121">Related container patterns</span></span>
 
--   [<span data-ttu-id="cda8b-122">運用ワークスペース</span><span class="sxs-lookup"><span data-stu-id="cda8b-122">Operational Workspace</span></span>](workspace-form-pattern.md)
+-   [<span data-ttu-id="7c6ae-122">運用ワークスペース</span><span class="sxs-lookup"><span data-stu-id="7c6ae-122">Operational Workspace</span></span>](workspace-form-pattern.md)
 
-## <a name="ux-guidelines"></a><span data-ttu-id="cda8b-123">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="cda8b-123">UX guidelines</span></span>
-<span data-ttu-id="cda8b-124">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="cda8b-124">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="cda8b-125">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="cda8b-125">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="cda8b-126">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="cda8b-126">Open the form in the browser, and walk through these steps.</span></span> <span data-ttu-id="cda8b-127">None</span><span class="sxs-lookup"><span data-stu-id="cda8b-127">None</span></span>
+## <a name="ux-guidelines"></a><span data-ttu-id="7c6ae-123">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="7c6ae-123">UX guidelines</span></span>
+<span data-ttu-id="7c6ae-124">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="7c6ae-124">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="7c6ae-125">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="7c6ae-125">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="7c6ae-126">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="7c6ae-126">Open the form in the browser, and walk through these steps.</span></span> <span data-ttu-id="7c6ae-127">None</span><span class="sxs-lookup"><span data-stu-id="7c6ae-127">None</span></span>
 
-## <a name="examples"></a><span data-ttu-id="cda8b-128">例</span><span class="sxs-lookup"><span data-stu-id="cda8b-128">Examples</span></span>
-<span data-ttu-id="cda8b-129">フォーム: **PurchOrderProcessReceiptsWorkspace** (**すべてのワークスペース** &gt; **発注書入庫とフォローアップ** (**リンク**セクションを参照してください)</span><span class="sxs-lookup"><span data-stu-id="cda8b-129">Form: **PurchOrderProcessReceiptsWorkspace** (**All workspaces** &gt; **Purchase order receipt and follow-up** (see the **Links** section)</span></span> 
+## <a name="examples"></a><span data-ttu-id="7c6ae-128">例</span><span class="sxs-lookup"><span data-stu-id="7c6ae-128">Examples</span></span>
+<span data-ttu-id="7c6ae-129">フォーム: **PurchOrderProcessReceiptsWorkspace** (**すべてのワークスペース** &gt; **発注書入庫とフォローアップ** (**リンク**セクションを参照してください)</span><span class="sxs-lookup"><span data-stu-id="7c6ae-129">Form: **PurchOrderProcessReceiptsWorkspace** (**All workspaces** &gt; **Purchase order receipt and follow-up** (see the **Links** section)</span></span> 
 
-<span data-ttu-id="cda8b-130">[![sectionRelatedLinksExample](./media/sectionrelatedlinksexample.png)](./media/sectionrelatedlinksexample.png)</span><span class="sxs-lookup"><span data-stu-id="cda8b-130">[![sectionRelatedLinksExample](./media/sectionrelatedlinksexample.png)](./media/sectionrelatedlinksexample.png)</span></span>
+<span data-ttu-id="7c6ae-130">[![sectionRelatedLinksExample](./media/sectionrelatedlinksexample.png)](./media/sectionrelatedlinksexample.png)</span><span class="sxs-lookup"><span data-stu-id="7c6ae-130">[![sectionRelatedLinksExample](./media/sectionrelatedlinksexample.png)](./media/sectionrelatedlinksexample.png)</span></span>
 
-## <a name="appendix"></a><span data-ttu-id="cda8b-131">付録</span><span class="sxs-lookup"><span data-stu-id="cda8b-131">Appendix</span></span>
-### <a name="frequently-asked-questions"></a><span data-ttu-id="cda8b-132">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="cda8b-132">Frequently asked questions</span></span>
+## <a name="appendix"></a><span data-ttu-id="7c6ae-131">付録</span><span class="sxs-lookup"><span data-stu-id="7c6ae-131">Appendix</span></span>
+### <a name="frequently-asked-questions"></a><span data-ttu-id="7c6ae-132">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="7c6ae-132">Frequently asked questions</span></span>
 
-<span data-ttu-id="cda8b-133">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="cda8b-133">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
+<span data-ttu-id="7c6ae-133">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="7c6ae-133">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
 
-### <a name="open-issues"></a><span data-ttu-id="cda8b-134">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="cda8b-134">Open issues</span></span>
+### <a name="open-issues"></a><span data-ttu-id="7c6ae-134">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="7c6ae-134">Open issues</span></span>
 
-<span data-ttu-id="cda8b-135">None</span><span class="sxs-lookup"><span data-stu-id="cda8b-135">None</span></span>
+<span data-ttu-id="7c6ae-135">None</span><span class="sxs-lookup"><span data-stu-id="7c6ae-135">None</span></span>

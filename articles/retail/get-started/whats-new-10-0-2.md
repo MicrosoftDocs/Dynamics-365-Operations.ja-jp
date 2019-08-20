@@ -17,40 +17,40 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-05
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 521236f9b65152901d3fb1ee4e7cd7e80feef854
-ms.sourcegitcommit: bbc9aa0d6b94a942e1f4d5b038601509dcc87937
+ms.openlocfilehash: 2b721ed81dd4568889562936715b2a72c86e7d7f
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1619205"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742134"
 ---
-# <a name="whats-new-and-changed-in-dynamics-365-for-retail-version-1002"></a><span data-ttu-id="66360-103">Dynamics 365 for Retail バージョン 10.0.2 の新機能と変更点</span><span class="sxs-lookup"><span data-stu-id="66360-103">What's new and changed in Dynamics 365 for Retail version 10.0.2</span></span>
+# <a name="whats-new-and-changed-in-dynamics-365-for-retail-version-1002"></a><span data-ttu-id="cd526-103">Dynamics 365 for Retail バージョン 10.0.2 の新機能と変更点</span><span class="sxs-lookup"><span data-stu-id="cd526-103">What's new and changed in Dynamics 365 for Retail version 10.0.2</span></span>
 
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="66360-104">このトピックでは、Microsoft Dynamics 365 for Retail の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="66360-104">This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail.</span></span> 
+<span data-ttu-id="cd526-104">このトピックでは、Microsoft Dynamics 365 for Retail の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="cd526-104">This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail.</span></span> 
 
 
-<span data-ttu-id="66360-105">Microsoft Dynamics 365 for Finance and Operations の機能については [Finance and Operations バージョン 10.0.2 (2019 年 5 月) の新機能と変更点](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="66360-105">To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new and changed in Finance and Operations version 10.0.2 (May 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2).</span></span>
+<span data-ttu-id="cd526-105">Microsoft Dynamics 365 for Finance and Operations の機能については [Finance and Operations バージョン 10.0.2 (2019 年 5 月) の新機能と変更点](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cd526-105">To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new and changed in Finance and Operations version 10.0.2 (May 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2).</span></span>
 
 
-## <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a><span data-ttu-id="66360-106">チェコ共和国向け会計登録サービス統合サンプル</span><span class="sxs-lookup"><span data-stu-id="66360-106">Fiscal registration service integration sample for Czech Republic</span></span>
+## <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a><span data-ttu-id="cd526-106">チェコ共和国向け会計登録サービス統合サンプル</span><span class="sxs-lookup"><span data-stu-id="cd526-106">Fiscal registration service integration sample for Czech Republic</span></span>
 
-<span data-ttu-id="66360-107">チェコ共和国のキャッシュ レジスターにおける現地の財政要件を満たすため、Dynamics 365 for Retail バージョン 10.0.2 には、販売時点管理 (POS) と外部財政登録サービスとの統合例が含まれています。</span><span class="sxs-lookup"><span data-stu-id="66360-107">To meet local fiscal requirements for cash registers in the Czech Republic, Dynamics 365 for Retail version 10.0.2 includes a sample integration of the point of sale (POS) with an external fiscal registration service.</span></span> 
+<span data-ttu-id="cd526-107">チェコ共和国のキャッシュ レジスターにおける現地の財政要件を満たすため、Dynamics 365 for Retail バージョン 10.0.2 には、販売時点管理 (POS) と外部財政登録サービスとの統合例が含まれています。</span><span class="sxs-lookup"><span data-stu-id="cd526-107">To meet local fiscal requirements for cash registers in the Czech Republic, Dynamics 365 for Retail version 10.0.2 includes a sample integration of the point of sale (POS) with an external fiscal registration service.</span></span> 
 
-<span data-ttu-id="66360-108">詳細については [チェコ共和国の会計登録サービス統合サンプル](../../retail/localizations/emea-cze-fi-sample.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="66360-108">For more information, see [Fiscal registration service integration sample for Czech Republic](../../retail/localizations/emea-cze-fi-sample.md).</span></span>
+<span data-ttu-id="cd526-108">詳細については [チェコ共和国の会計登録サービス統合サンプル](../../retail/localizations/emea-cze-fi-sample.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cd526-108">For more information, see [Fiscal registration service integration sample for Czech Republic](../../retail/localizations/emea-cze-fi-sample.md).</span></span>
 
-## <a name="shipping-discounts"></a><span data-ttu-id="66360-109">出荷割引</span><span class="sxs-lookup"><span data-stu-id="66360-109">Shipping discounts</span></span>
+## <a name="shipping-discounts"></a><span data-ttu-id="cd526-109">出荷割引</span><span class="sxs-lookup"><span data-stu-id="cd526-109">Shipping discounts</span></span>
 
-<span data-ttu-id="66360-110">チャネル全体で無料または割引配送を有効にする、配送プロモーションを設定できます。</span><span class="sxs-lookup"><span data-stu-id="66360-110">You can now set up shipping promotions to enable free or discounted shipping across channels.</span></span>
+<span data-ttu-id="cd526-110">チャネル全体で無料または割引配送を有効にする、配送プロモーションを設定できます。</span><span class="sxs-lookup"><span data-stu-id="cd526-110">You can now set up shipping promotions to enable free or discounted shipping across channels.</span></span>
 
-<span data-ttu-id="66360-111">詳細については、[出荷割引の概要](../../retail/retail-shipping-discount.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="66360-111">For more information, see [Shipping discount overview](../../retail/retail-shipping-discount.md).</span></span>
+<span data-ttu-id="cd526-111">詳細については、[出荷割引の概要](../../retail/retail-shipping-discount.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cd526-111">For more information, see [Shipping discount overview](../../retail/retail-shipping-discount.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="66360-112">追加リソース</span><span class="sxs-lookup"><span data-stu-id="66360-112">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="cd526-112">追加リソース</span><span class="sxs-lookup"><span data-stu-id="cd526-112">Additional resources</span></span>
 
-### <a name="dynamics-365-april-19-release-notes"></a><span data-ttu-id="66360-113">Dynamics 365 2019 年 4 月 リリース ノート</span><span class="sxs-lookup"><span data-stu-id="66360-113">Dynamics 365 April '19 release notes</span></span>
+### <a name="dynamics-365-april-19-release-notes"></a><span data-ttu-id="cd526-113">Dynamics 365 2019 年 4 月 リリース ノート</span><span class="sxs-lookup"><span data-stu-id="cd526-113">Dynamics 365 April '19 release notes</span></span>
 
-<span data-ttu-id="66360-114">当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?</span><span class="sxs-lookup"><span data-stu-id="66360-114">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</span></span>
+<span data-ttu-id="cd526-114">当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?</span><span class="sxs-lookup"><span data-stu-id="cd526-114">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</span></span>
 
-<span data-ttu-id="66360-115">[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。</span><span class="sxs-lookup"><span data-stu-id="66360-115">[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index).</span></span> <span data-ttu-id="66360-116">あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。</span><span class="sxs-lookup"><span data-stu-id="66360-116">We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.</span></span>
+<span data-ttu-id="cd526-115">[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。</span><span class="sxs-lookup"><span data-stu-id="cd526-115">[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index).</span></span> <span data-ttu-id="cd526-116">あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。</span><span class="sxs-lookup"><span data-stu-id="cd526-116">We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.</span></span>

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 12373
 ms.assetid: e4518f56-57b5-4cf1-b197-3fbaea7be861
@@ -17,249 +17,249 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae39826e9fa5e2ee017408d5d295e2a3f2613e20
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: a558f880eeff0c0407c4f980bc1db6a2558fc2a2
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595509"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851187"
 ---
-# <a name="details-master-form-pattern"></a><span data-ttu-id="3eca5-104">詳細マスター フォーム パターン</span><span class="sxs-lookup"><span data-stu-id="3eca5-104">Details Master form pattern</span></span>
+# <a name="details-master-form-pattern"></a><span data-ttu-id="41e25-104">詳細マスター フォーム パターン</span><span class="sxs-lookup"><span data-stu-id="41e25-104">Details Master form pattern</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3eca5-105">このトピックでは、詳細マスター フォームのパターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="3eca5-105">This topic provides information about the Details Master form pattern.</span></span> <span data-ttu-id="3eca5-106">詳細フォームは、データ入力の基本方法です。</span><span class="sxs-lookup"><span data-stu-id="3eca5-106">A details form is the primary method for entering data.</span></span>
+<span data-ttu-id="41e25-105">このトピックでは、詳細マスター フォームのパターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="41e25-105">This topic provides information about the Details Master form pattern.</span></span> <span data-ttu-id="41e25-106">詳細フォームは、データ入力の基本方法です。</span><span class="sxs-lookup"><span data-stu-id="41e25-106">A details form is the primary method for entering data.</span></span>
 
-<a name="usage"></a><span data-ttu-id="3eca5-107">用途</span><span class="sxs-lookup"><span data-stu-id="3eca5-107">Usage</span></span>
+<a name="usage"></a><span data-ttu-id="41e25-107">用途</span><span class="sxs-lookup"><span data-stu-id="41e25-107">Usage</span></span>
 -----
 
-<span data-ttu-id="3eca5-108">詳細フォームは、データ入力の基本方法です。</span><span class="sxs-lookup"><span data-stu-id="3eca5-108">A details form is the primary method for entering data.</span></span> <span data-ttu-id="3eca5-109">これらのフォームにより、ユーザーはデータを表示、編集、および操作できます。</span><span class="sxs-lookup"><span data-stu-id="3eca5-109">These forms let the user view, edit, and act upon data.</span></span> <span data-ttu-id="3eca5-110">これらフォーム タイプのすべてのコンテンツは展開および折りたたむことのできるクイック タブとして構造化されているため、複数のクイック タブを同時に開くことができます。</span><span class="sxs-lookup"><span data-stu-id="3eca5-110">All content on these form types is structured into FastTabs that can be expanded and collapsed, so that multiple FastTabs can be open at the same time.</span></span> <span data-ttu-id="3eca5-111">クイック タブには、フィールドやグリッドを含めることができ、各クイック タブはローカル ツール バーを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="3eca5-111">The FastTabs can contain fields or a grid, and each FastTab can have a local toolbar.</span></span> <span data-ttu-id="3eca5-112">このドキュメントでは、2 つのパターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="3eca5-112">Two patterns are described in this document:</span></span>
+<span data-ttu-id="41e25-108">詳細フォームは、データ入力の基本方法です。</span><span class="sxs-lookup"><span data-stu-id="41e25-108">A details form is the primary method for entering data.</span></span> <span data-ttu-id="41e25-109">これらのフォームにより、ユーザーはデータを表示、編集、および操作できます。</span><span class="sxs-lookup"><span data-stu-id="41e25-109">These forms let the user view, edit, and act upon data.</span></span> <span data-ttu-id="41e25-110">これらフォーム タイプのすべてのコンテンツは展開および折りたたむことのできるクイック タブとして構造化されているため、複数のクイック タブを同時に開くことができます。</span><span class="sxs-lookup"><span data-stu-id="41e25-110">All content on these form types is structured into FastTabs that can be expanded and collapsed, so that multiple FastTabs can be open at the same time.</span></span> <span data-ttu-id="41e25-111">クイック タブには、フィールドやグリッドを含めることができ、各クイック タブはローカル ツール バーを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="41e25-111">The FastTabs can contain fields or a grid, and each FastTab can have a local toolbar.</span></span> <span data-ttu-id="41e25-112">このドキュメントでは、2 つのパターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="41e25-112">Two patterns are described in this document:</span></span>
 
--   <span data-ttu-id="3eca5-113">**詳細マスター** - これは、基本の詳細マスター パターンです。</span><span class="sxs-lookup"><span data-stu-id="3eca5-113">**Detail Master** – This is the basic Detail Master pattern.</span></span> <span data-ttu-id="3eca5-114">これは既定で使用されるパターンです。</span><span class="sxs-lookup"><span data-stu-id="3eca5-114">This is the pattern that you should use by default.</span></span>
--   <span data-ttu-id="3eca5-115">**タブ付き詳細マスター** - エンティティがカテゴリにグループ化できるクイック タブ (15 以上) を多数必要とする場合は、このパターンを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3eca5-115">**Detail Master w/ Tabs** – You should use this pattern when an entity requires many FastTabs (more than 15) that can be grouped into categories.</span></span>
+-   <span data-ttu-id="41e25-113">**詳細マスター** - これは、基本の詳細マスター パターンです。</span><span class="sxs-lookup"><span data-stu-id="41e25-113">**Detail Master** – This is the basic Detail Master pattern.</span></span> <span data-ttu-id="41e25-114">これは既定で使用されるパターンです。</span><span class="sxs-lookup"><span data-stu-id="41e25-114">This is the pattern that you should use by default.</span></span>
+-   <span data-ttu-id="41e25-115">**タブ付き詳細マスター** - エンティティがカテゴリにグループ化できるクイック タブ (15 以上) を多数必要とする場合は、このパターンを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="41e25-115">**Detail Master w/ Tabs** – You should use this pattern when an entity requires many FastTabs (more than 15) that can be grouped into categories.</span></span>
 
-<span data-ttu-id="3eca5-116">どちらの場合も、グリッド ビューの構成は同じです。</span><span class="sxs-lookup"><span data-stu-id="3eca5-116">In both cases, the grid view is structured the same.</span></span>
+<span data-ttu-id="41e25-116">どちらの場合も、グリッド ビューの構成は同じです。</span><span class="sxs-lookup"><span data-stu-id="41e25-116">In both cases, the grid view is structured the same.</span></span>
 
-## <a name="wireframe"></a><span data-ttu-id="3eca5-117">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="3eca5-117">Wireframe</span></span>
-### <a name="details-master"></a><span data-ttu-id="3eca5-118">詳細マスター</span><span class="sxs-lookup"><span data-stu-id="3eca5-118">Details Master</span></span>
+## <a name="wireframe"></a><span data-ttu-id="41e25-117">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="41e25-117">Wireframe</span></span>
+### <a name="details-master"></a><span data-ttu-id="41e25-118">詳細マスター</span><span class="sxs-lookup"><span data-stu-id="41e25-118">Details Master</span></span>
 
-#### <a name="details-view"></a><span data-ttu-id="3eca5-119">詳細ビュー</span><span class="sxs-lookup"><span data-stu-id="3eca5-119">Details view</span></span>
+#### <a name="details-view"></a><span data-ttu-id="41e25-119">詳細ビュー</span><span class="sxs-lookup"><span data-stu-id="41e25-119">Details view</span></span>
 
-<span data-ttu-id="3eca5-120">[![詳細マスター ワイヤーフレーム: 詳細ビュー](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-120">[![Details Master wireframe: Details view](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)</span></span>
+<span data-ttu-id="41e25-120">[![詳細マスター ワイヤーフレーム: 詳細ビュー](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-120">[![Details Master wireframe: Details view](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)</span></span>
 
-#### <a name="grid-view"></a><span data-ttu-id="3eca5-121">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="3eca5-121">Grid view</span></span>
+#### <a name="grid-view"></a><span data-ttu-id="41e25-121">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="41e25-121">Grid view</span></span>
 
-<span data-ttu-id="3eca5-122">[![詳細マスター ワイヤーフレーム: グリッド ビュー](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-122">[![Details Master wireframe: Grid view](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)</span></span>
+<span data-ttu-id="41e25-122">[![詳細マスター ワイヤーフレーム: グリッド ビュー](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-122">[![Details Master wireframe: Grid view](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)</span></span>
 
-### <a name="details-master-wstandard-tabs"></a><span data-ttu-id="3eca5-123">詳細マスター / 標準タブ</span><span class="sxs-lookup"><span data-stu-id="3eca5-123">Details Master w/Standard Tabs</span></span>
+### <a name="details-master-wstandard-tabs"></a><span data-ttu-id="41e25-123">詳細マスター / 標準タブ</span><span class="sxs-lookup"><span data-stu-id="41e25-123">Details Master w/Standard Tabs</span></span>
 
-#### <a name="details-view"></a><span data-ttu-id="3eca5-124">詳細ビュー</span><span class="sxs-lookup"><span data-stu-id="3eca5-124">Details view</span></span>
+#### <a name="details-view"></a><span data-ttu-id="41e25-124">詳細ビュー</span><span class="sxs-lookup"><span data-stu-id="41e25-124">Details view</span></span>
 
-<span data-ttu-id="3eca5-125">[![詳細マスター / 標準タブ ワイヤーフレーム: 詳細ビュー](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-125">[![Details Master w/Standard Tabs wireframe: Details view](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)</span></span>
+<span data-ttu-id="41e25-125">[![詳細マスター / 標準タブ ワイヤーフレーム: 詳細ビュー](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-125">[![Details Master w/Standard Tabs wireframe: Details view](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)</span></span>
 
-#### <a name="grid-view"></a><span data-ttu-id="3eca5-126">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="3eca5-126">Grid view</span></span>
+#### <a name="grid-view"></a><span data-ttu-id="41e25-126">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="41e25-126">Grid view</span></span>
 
-<span data-ttu-id="3eca5-127">[![詳細マスター / 標準タブ ワイヤーフレーム: グリッド ビュー](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-127">[![Details Master w/Standard Tabs wireframe: Grid view](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)</span></span>
+<span data-ttu-id="41e25-127">[![詳細マスター / 標準タブ ワイヤーフレーム: グリッド ビュー](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-127">[![Details Master w/Standard Tabs wireframe: Grid view](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)</span></span>
 
-## <a name="pattern-changes"></a><span data-ttu-id="3eca5-128">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="3eca5-128">Pattern changes</span></span>
-<span data-ttu-id="3eca5-129">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3eca5-129">Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</span></span>
+## <a name="pattern-changes"></a><span data-ttu-id="41e25-128">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="41e25-128">Pattern changes</span></span>
+<span data-ttu-id="41e25-129">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</span><span class="sxs-lookup"><span data-stu-id="41e25-129">Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</span></span>
 
--   <span data-ttu-id="3eca5-130">詳細ビューコンテンツの左側にリスト スタイル グリッドが追加されました。</span><span class="sxs-lookup"><span data-stu-id="3eca5-130">Added a List style grid to the left of the Details view content.</span></span>
--   <span data-ttu-id="3eca5-131">リスト ページと詳細マスターが 1 つのフォームにマージされました。</span><span class="sxs-lookup"><span data-stu-id="3eca5-131">Merged List Page and Details Master into a single form.</span></span>
-    -   <span data-ttu-id="3eca5-132">一覧と詳細の間を移動するときのパフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="3eca5-132">Improves performance when moving between a list and details.</span></span>
-    -   <span data-ttu-id="3eca5-133">初期一覧で一括編集を有効にします。</span><span class="sxs-lookup"><span data-stu-id="3eca5-133">Enables bulk editing in the initial list.</span></span>
-    -   <span data-ttu-id="3eca5-134">プレビュー ウィンドウの一覧ページの消去を許可します。</span><span class="sxs-lookup"><span data-stu-id="3eca5-134">Allows for elimination of the list page preview pane.</span></span>
--   <span data-ttu-id="3eca5-135">表示/編集、新規作成、削除、保存、最新の情報に更新、添付、および Excel にエクスポートの各アクションはすべてファンデーションによって提供され、ファンデーションによって提供されたボタンが削除されない限り、各アクションに明示的なアプリ ボタンを使用する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="3eca5-135">View/Edit, New, Delete, Save, Refresh, Attachments, and Export to Excel actions are all provided by the foundation and should not have explicit app buttons unless the foundation-provided button is removed.</span></span>
--   <span data-ttu-id="3eca5-136">以前に TOC 拡張機能を使用したマスター詳細フォームでは、標準タブ パターン付きマスター詳細を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3eca5-136">Master Details forms that previously used the TOC extension should now use the Master Details w/Standard Tabs pattern.</span></span>
+-   <span data-ttu-id="41e25-130">詳細ビューコンテンツの左側にリスト スタイル グリッドが追加されました。</span><span class="sxs-lookup"><span data-stu-id="41e25-130">Added a List style grid to the left of the Details view content.</span></span>
+-   <span data-ttu-id="41e25-131">リスト ページと詳細マスターが 1 つのフォームにマージされました。</span><span class="sxs-lookup"><span data-stu-id="41e25-131">Merged List Page and Details Master into a single form.</span></span>
+    -   <span data-ttu-id="41e25-132">一覧と詳細の間を移動するときのパフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="41e25-132">Improves performance when moving between a list and details.</span></span>
+    -   <span data-ttu-id="41e25-133">初期一覧で一括編集を有効にします。</span><span class="sxs-lookup"><span data-stu-id="41e25-133">Enables bulk editing in the initial list.</span></span>
+    -   <span data-ttu-id="41e25-134">プレビュー ウィンドウの一覧ページの消去を許可します。</span><span class="sxs-lookup"><span data-stu-id="41e25-134">Allows for elimination of the list page preview pane.</span></span>
+-   <span data-ttu-id="41e25-135">表示/編集、新規作成、削除、保存、最新の情報に更新、添付、および Excel にエクスポートの各アクションはすべてファンデーションによって提供され、ファンデーションによって提供されたボタンが削除されない限り、各アクションに明示的なアプリ ボタンを使用する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="41e25-135">View/Edit, New, Delete, Save, Refresh, Attachments, and Export to Excel actions are all provided by the foundation and should not have explicit app buttons unless the foundation-provided button is removed.</span></span>
+-   <span data-ttu-id="41e25-136">以前に TOC 拡張機能を使用したマスター詳細フォームでは、標準タブ パターン付きマスター詳細を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="41e25-136">Master Details forms that previously used the TOC extension should now use the Master Details w/Standard Tabs pattern.</span></span>
 
-## <a name="model"></a><span data-ttu-id="3eca5-137">モデル</span><span class="sxs-lookup"><span data-stu-id="3eca5-137">Model</span></span>
-### <a name="details-master-basic--high-level-structure"></a><span data-ttu-id="3eca5-138">詳細マスター (基本) – 高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="3eca5-138">Details Master (basic) – High-level structure</span></span>
+## <a name="model"></a><span data-ttu-id="41e25-137">モデル</span><span class="sxs-lookup"><span data-stu-id="41e25-137">Model</span></span>
+### <a name="details-master-basic--high-level-structure"></a><span data-ttu-id="41e25-138">詳細マスター (基本) – 高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="41e25-138">Details Master (basic) – High-level structure</span></span>
 
-- <span data-ttu-id="3eca5-139">デザイン</span><span class="sxs-lookup"><span data-stu-id="3eca5-139">Design</span></span>
+- <span data-ttu-id="41e25-139">デザイン</span><span class="sxs-lookup"><span data-stu-id="41e25-139">Design</span></span>
 
-    - <span data-ttu-id="3eca5-140">ActionPane (ActionPane)</span><span class="sxs-lookup"><span data-stu-id="3eca5-140">ActionPane (ActionPane)</span></span>
-    - <span data-ttu-id="3eca5-141">SidePanel (グループ)</span><span class="sxs-lookup"><span data-stu-id="3eca5-141">SidePanel (Group)</span></span>
+    - <span data-ttu-id="41e25-140">ActionPane (ActionPane)</span><span class="sxs-lookup"><span data-stu-id="41e25-140">ActionPane (ActionPane)</span></span>
+    - <span data-ttu-id="41e25-141">SidePanel (グループ)</span><span class="sxs-lookup"><span data-stu-id="41e25-141">SidePanel (Group)</span></span>
 
-        - <span data-ttu-id="3eca5-142">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="3eca5-142">QuickFilter</span></span>
-        - <span data-ttu-id="3eca5-143">*CustomFilter (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="3eca5-143">*CustomFilters (Group) \[Optional\]*</span></span>
-        - <span data-ttu-id="3eca5-144">NavigationList (グリッド、スタイル = リスト)</span><span class="sxs-lookup"><span data-stu-id="3eca5-144">NavigationList (Grid, Style=List)</span></span>
+        - <span data-ttu-id="41e25-142">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="41e25-142">QuickFilter</span></span>
+        - <span data-ttu-id="41e25-143">*CustomFilter (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="41e25-143">*CustomFilters (Group) \[Optional\]*</span></span>
+        - <span data-ttu-id="41e25-144">NavigationList (グリッド、スタイル = リスト)</span><span class="sxs-lookup"><span data-stu-id="41e25-144">NavigationList (Grid, Style=List)</span></span>
 
-    - <span data-ttu-id="3eca5-145">MainTab (Tab ShowTabs=No)</span><span class="sxs-lookup"><span data-stu-id="3eca5-145">MainTab (Tab ShowTabs=No)</span></span>
+    - <span data-ttu-id="41e25-145">MainTab (Tab ShowTabs=No)</span><span class="sxs-lookup"><span data-stu-id="41e25-145">MainTab (Tab ShowTabs=No)</span></span>
 
-        - <span data-ttu-id="3eca5-146">DetailsTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="3eca5-146">DetailsTabPage (TabPage)</span></span>
+        - <span data-ttu-id="41e25-146">DetailsTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="41e25-146">DetailsTabPage (TabPage)</span></span>
 
-            - <span data-ttu-id="3eca5-147">TitleGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="3eca5-147">TitleGroup (Group)</span></span>
+            - <span data-ttu-id="41e25-147">TitleGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="41e25-147">TitleGroup (Group)</span></span>
 
-                - <span data-ttu-id="3eca5-148">HeaderTitle (文字列)</span><span class="sxs-lookup"><span data-stu-id="3eca5-148">HeaderTitle (String)</span></span>
-                - <span data-ttu-id="3eca5-149">*EntityStatus (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="3eca5-149">*EntityStatus (Group) \[Optional\]*</span></span>
+                - <span data-ttu-id="41e25-148">HeaderTitle (文字列)</span><span class="sxs-lookup"><span data-stu-id="41e25-148">HeaderTitle (String)</span></span>
+                - <span data-ttu-id="41e25-149">*EntityStatus (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="41e25-149">*EntityStatus (Group) \[Optional\]*</span></span>
 
-                    <span data-ttu-id="3eca5-150">StatusFields (1..N)</span><span class="sxs-lookup"><span data-stu-id="3eca5-150">StatusFields (1..N)</span></span>
+                    <span data-ttu-id="41e25-150">StatusFields (1..N)</span><span class="sxs-lookup"><span data-stu-id="41e25-150">StatusFields (1..N)</span></span>
 
-            - <span data-ttu-id="3eca5-151">DetailsTab (タブ スタイル =FastTabs)</span><span class="sxs-lookup"><span data-stu-id="3eca5-151">DetailsTab (Tab Style=FastTabs)</span></span>
+            - <span data-ttu-id="41e25-151">DetailsTab (タブ スタイル =FastTabs)</span><span class="sxs-lookup"><span data-stu-id="41e25-151">DetailsTab (Tab Style=FastTabs)</span></span>
 
-                - <span data-ttu-id="3eca5-152">DetailsTabPage (TabPages *反復 1..N*)</span><span class="sxs-lookup"><span data-stu-id="3eca5-152">DetailsTabPage (TabPages *repeats 1..N*)</span></span>
+                - <span data-ttu-id="41e25-152">DetailsTabPage (TabPages *反復 1..N*)</span><span class="sxs-lookup"><span data-stu-id="41e25-152">DetailsTabPage (TabPages *repeats 1..N*)</span></span>
 
-        - <span data-ttu-id="3eca5-153">GridTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="3eca5-153">GridTabPage (TabPage)</span></span>
+        - <span data-ttu-id="41e25-153">GridTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="41e25-153">GridTabPage (TabPage)</span></span>
 
-            - <span data-ttu-id="3eca5-154">CustomFilterGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="3eca5-154">CustomFilterGroup (Group)</span></span>
+            - <span data-ttu-id="41e25-154">CustomFilterGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="41e25-154">CustomFilterGroup (Group)</span></span>
 
-                - <span data-ttu-id="3eca5-155">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="3eca5-155">QuickFilter</span></span>
-                - <span data-ttu-id="3eca5-156">*OtherFilters ($ フィールド)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="3eca5-156">*OtherFilters ($Field) \[0..N\]*</span></span>
+                - <span data-ttu-id="41e25-155">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="41e25-155">QuickFilter</span></span>
+                - <span data-ttu-id="41e25-156">*OtherFilters ($ フィールド)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="41e25-156">*OtherFilters ($Field) \[0..N\]*</span></span>
 
-            - <span data-ttu-id="3eca5-157">MainGrid (グリッド)</span><span class="sxs-lookup"><span data-stu-id="3eca5-157">MainGrid (Grid)</span></span>
-            - <span data-ttu-id="3eca5-158">MainGridDefaultAction (CommandButton)</span><span class="sxs-lookup"><span data-stu-id="3eca5-158">MainGridDefaultAction (CommandButton)</span></span>
+            - <span data-ttu-id="41e25-157">MainGrid (グリッド)</span><span class="sxs-lookup"><span data-stu-id="41e25-157">MainGrid (Grid)</span></span>
+            - <span data-ttu-id="41e25-158">MainGridDefaultAction (CommandButton)</span><span class="sxs-lookup"><span data-stu-id="41e25-158">MainGridDefaultAction (CommandButton)</span></span>
 
-### <a name="details-master-wstandard-tabs--high-level-structure"></a><span data-ttu-id="3eca5-159">詳細マスター / 標準タブの詳細 – 高度な構造</span><span class="sxs-lookup"><span data-stu-id="3eca5-159">Details Master w/Standard Tabs – High-level structure</span></span>
+### <a name="details-master-wstandard-tabs--high-level-structure"></a><span data-ttu-id="41e25-159">詳細マスター / 標準タブの詳細 – 高度な構造</span><span class="sxs-lookup"><span data-stu-id="41e25-159">Details Master w/Standard Tabs – High-level structure</span></span>
 
-- <span data-ttu-id="3eca5-160">デザイン</span><span class="sxs-lookup"><span data-stu-id="3eca5-160">Design</span></span>
+- <span data-ttu-id="41e25-160">デザイン</span><span class="sxs-lookup"><span data-stu-id="41e25-160">Design</span></span>
 
-    - <span data-ttu-id="3eca5-161">ActionPane (ActionPane)</span><span class="sxs-lookup"><span data-stu-id="3eca5-161">ActionPane (ActionPane)</span></span>
-    - <span data-ttu-id="3eca5-162">SidePanel (グループ)</span><span class="sxs-lookup"><span data-stu-id="3eca5-162">SidePanel (Group)</span></span>
+    - <span data-ttu-id="41e25-161">ActionPane (ActionPane)</span><span class="sxs-lookup"><span data-stu-id="41e25-161">ActionPane (ActionPane)</span></span>
+    - <span data-ttu-id="41e25-162">SidePanel (グループ)</span><span class="sxs-lookup"><span data-stu-id="41e25-162">SidePanel (Group)</span></span>
 
-        - <span data-ttu-id="3eca5-163">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="3eca5-163">QuickFilter</span></span>
-        - <span data-ttu-id="3eca5-164">*CustomFilter (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="3eca5-164">*CustomFilters (Group) \[Optional\]*</span></span>
-        - <span data-ttu-id="3eca5-165">NavigationList (グリッド、スタイル = リスト)</span><span class="sxs-lookup"><span data-stu-id="3eca5-165">NavigationList (Grid, Style=List)</span></span>
+        - <span data-ttu-id="41e25-163">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="41e25-163">QuickFilter</span></span>
+        - <span data-ttu-id="41e25-164">*CustomFilter (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="41e25-164">*CustomFilters (Group) \[Optional\]*</span></span>
+        - <span data-ttu-id="41e25-165">NavigationList (グリッド、スタイル = リスト)</span><span class="sxs-lookup"><span data-stu-id="41e25-165">NavigationList (Grid, Style=List)</span></span>
 
-    - <span data-ttu-id="3eca5-166">MainTab (Tab ShowTabs=No)</span><span class="sxs-lookup"><span data-stu-id="3eca5-166">MainTab (Tab ShowTabs=No)</span></span>
+    - <span data-ttu-id="41e25-166">MainTab (Tab ShowTabs=No)</span><span class="sxs-lookup"><span data-stu-id="41e25-166">MainTab (Tab ShowTabs=No)</span></span>
 
-        - <span data-ttu-id="3eca5-167">DetailsTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="3eca5-167">DetailsTabPage (TabPage)</span></span>
+        - <span data-ttu-id="41e25-167">DetailsTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="41e25-167">DetailsTabPage (TabPage)</span></span>
 
-            - <span data-ttu-id="3eca5-168">TitleGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="3eca5-168">TitleGroup (Group)</span></span>
+            - <span data-ttu-id="41e25-168">TitleGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="41e25-168">TitleGroup (Group)</span></span>
 
-                - <span data-ttu-id="3eca5-169">HeaderTitle (文字列)</span><span class="sxs-lookup"><span data-stu-id="3eca5-169">HeaderTitle (String)</span></span>
-                - <span data-ttu-id="3eca5-170">*EntityStatus (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="3eca5-170">*EntityStatus (Group) \[Optional\]*</span></span>
+                - <span data-ttu-id="41e25-169">HeaderTitle (文字列)</span><span class="sxs-lookup"><span data-stu-id="41e25-169">HeaderTitle (String)</span></span>
+                - <span data-ttu-id="41e25-170">*EntityStatus (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="41e25-170">*EntityStatus (Group) \[Optional\]*</span></span>
 
-                    - <span data-ttu-id="3eca5-171">StatusFields (1…N)</span><span class="sxs-lookup"><span data-stu-id="3eca5-171">StatusFields (1…N)</span></span>
+                    - <span data-ttu-id="41e25-171">StatusFields (1…N)</span><span class="sxs-lookup"><span data-stu-id="41e25-171">StatusFields (1…N)</span></span>
 
-            - <span data-ttu-id="3eca5-172">CategoryTab (タブ スタイル = タブ)</span><span class="sxs-lookup"><span data-stu-id="3eca5-172">CategoryTab (Tab Style=Tabs)</span></span>
+            - <span data-ttu-id="41e25-172">CategoryTab (タブ スタイル = タブ)</span><span class="sxs-lookup"><span data-stu-id="41e25-172">CategoryTab (Tab Style=Tabs)</span></span>
 
-                - <span data-ttu-id="3eca5-173">CategoryTabPage (TabPages *反復 3..N*)</span><span class="sxs-lookup"><span data-stu-id="3eca5-173">CategoryTabPage (TabPages *repeats 3..N*)</span></span>
+                - <span data-ttu-id="41e25-173">CategoryTabPage (TabPages *反復 3..N*)</span><span class="sxs-lookup"><span data-stu-id="41e25-173">CategoryTabPage (TabPages *repeats 3..N*)</span></span>
 
-                    - <span data-ttu-id="3eca5-174">TabHeader (グループ)</span><span class="sxs-lookup"><span data-stu-id="3eca5-174">TabHeader (Group)</span></span>
-                    - <span data-ttu-id="3eca5-175">DetailsTab (タブ スタイル =FastTabs)</span><span class="sxs-lookup"><span data-stu-id="3eca5-175">DetailsTab (Tab Style=FastTabs)</span></span>
+                    - <span data-ttu-id="41e25-174">TabHeader (グループ)</span><span class="sxs-lookup"><span data-stu-id="41e25-174">TabHeader (Group)</span></span>
+                    - <span data-ttu-id="41e25-175">DetailsTab (タブ スタイル =FastTabs)</span><span class="sxs-lookup"><span data-stu-id="41e25-175">DetailsTab (Tab Style=FastTabs)</span></span>
 
-                        - <span data-ttu-id="3eca5-176">DetailsTabPage (TabPages *反復 1..N*)</span><span class="sxs-lookup"><span data-stu-id="3eca5-176">DetailsTabPage (TabPages *repeats 1..N*)</span></span>
+                        - <span data-ttu-id="41e25-176">DetailsTabPage (TabPages *反復 1..N*)</span><span class="sxs-lookup"><span data-stu-id="41e25-176">DetailsTabPage (TabPages *repeats 1..N*)</span></span>
 
-        - <span data-ttu-id="3eca5-177">GridTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="3eca5-177">GridTabPage (TabPage)</span></span>
+        - <span data-ttu-id="41e25-177">GridTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="41e25-177">GridTabPage (TabPage)</span></span>
 
-            - <span data-ttu-id="3eca5-178">CustomFilterGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="3eca5-178">CustomFilterGroup (Group)</span></span>
+            - <span data-ttu-id="41e25-178">CustomFilterGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="41e25-178">CustomFilterGroup (Group)</span></span>
 
-                - <span data-ttu-id="3eca5-179">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="3eca5-179">QuickFilter</span></span>
-                - <span data-ttu-id="3eca5-180">*OtherFilters ($ フィールド)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="3eca5-180">*OtherFilters ($Field) \[0..N\]*</span></span>
+                - <span data-ttu-id="41e25-179">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="41e25-179">QuickFilter</span></span>
+                - <span data-ttu-id="41e25-180">*OtherFilters ($ フィールド)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="41e25-180">*OtherFilters ($Field) \[0..N\]*</span></span>
 
-            - <span data-ttu-id="3eca5-181">MainGrid (グリッド)</span><span class="sxs-lookup"><span data-stu-id="3eca5-181">MainGrid (Grid)</span></span>
-            - <span data-ttu-id="3eca5-182">MainGridDefaultAction (CommandButton)</span><span class="sxs-lookup"><span data-stu-id="3eca5-182">MainGridDefaultAction (CommandButton)</span></span>
+            - <span data-ttu-id="41e25-181">MainGrid (グリッド)</span><span class="sxs-lookup"><span data-stu-id="41e25-181">MainGrid (Grid)</span></span>
+            - <span data-ttu-id="41e25-182">MainGridDefaultAction (CommandButton)</span><span class="sxs-lookup"><span data-stu-id="41e25-182">MainGridDefaultAction (CommandButton)</span></span>
 
-### <a name="core-components"></a><span data-ttu-id="3eca5-183">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="3eca5-183">Core components</span></span>
+### <a name="core-components"></a><span data-ttu-id="41e25-183">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="41e25-183">Core components</span></span>
 
-1.  <span data-ttu-id="3eca5-184">**Form.Design** に DetailsMaster パターンを適用します。</span><span class="sxs-lookup"><span data-stu-id="3eca5-184">Apply the DetailsMaster pattern on **Form.Design**.</span></span>
-2.  <span data-ttu-id="3eca5-185">BP 警告に対処します。</span><span class="sxs-lookup"><span data-stu-id="3eca5-185">Address BP Warnings:</span></span>
-    1.  <span data-ttu-id="3eca5-186">**Design.Caption** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="3eca5-186">**Design.Caption** isn't empty.</span></span>
-    2.  <span data-ttu-id="3eca5-187">フォームは少なくとも 1 つのメニュー項目で参照される必要があります。</span><span class="sxs-lookup"><span data-stu-id="3eca5-187">Form must be referenced by at least one menu item.</span></span>
-    3.  <span data-ttu-id="3eca5-188">**TabPage.Caption** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="3eca5-188">**TabPage.Caption** isn't empty.</span></span>
+1.  <span data-ttu-id="41e25-184">**Form.Design** に DetailsMaster パターンを適用します。</span><span class="sxs-lookup"><span data-stu-id="41e25-184">Apply the DetailsMaster pattern on **Form.Design**.</span></span>
+2.  <span data-ttu-id="41e25-185">BP 警告に対処します。</span><span class="sxs-lookup"><span data-stu-id="41e25-185">Address BP Warnings:</span></span>
+    1.  <span data-ttu-id="41e25-186">**Design.Caption** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="41e25-186">**Design.Caption** isn't empty.</span></span>
+    2.  <span data-ttu-id="41e25-187">フォームは少なくとも 1 つのメニュー項目で参照される必要があります。</span><span class="sxs-lookup"><span data-stu-id="41e25-187">Form must be referenced by at least one menu item.</span></span>
+    3.  <span data-ttu-id="41e25-188">**TabPage.Caption** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="41e25-188">**TabPage.Caption** isn't empty.</span></span>
 
-### <a name="related-patterns"></a><span data-ttu-id="3eca5-189">関連するパターン</span><span class="sxs-lookup"><span data-stu-id="3eca5-189">Related patterns</span></span>
+### <a name="related-patterns"></a><span data-ttu-id="41e25-189">関連するパターン</span><span class="sxs-lookup"><span data-stu-id="41e25-189">Related patterns</span></span>
 
--   [<span data-ttu-id="3eca5-190">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="3eca5-190">Details Transaction</span></span>](details-transaction-form-pattern.md)
--   [<span data-ttu-id="3eca5-191">簡易リストと詳細</span><span class="sxs-lookup"><span data-stu-id="3eca5-191">Simple List and Details</span></span>](simple-list-details-form-pattern.md)
+-   [<span data-ttu-id="41e25-190">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="41e25-190">Details Transaction</span></span>](details-transaction-form-pattern.md)
+-   [<span data-ttu-id="41e25-191">簡易リストと詳細</span><span class="sxs-lookup"><span data-stu-id="41e25-191">Simple List and Details</span></span>](simple-list-details-form-pattern.md)
 
-### <a name="commonly-used-subpatterns"></a><span data-ttu-id="3eca5-192">一般的に使用されるサブパターン</span><span class="sxs-lookup"><span data-stu-id="3eca5-192">Commonly used subpatterns</span></span>
+### <a name="commonly-used-subpatterns"></a><span data-ttu-id="41e25-192">一般的に使用されるサブパターン</span><span class="sxs-lookup"><span data-stu-id="41e25-192">Commonly used subpatterns</span></span>
 
--   [<span data-ttu-id="3eca5-193">フィールドおよびフィールド グループ</span><span class="sxs-lookup"><span data-stu-id="3eca5-193">Fields and Field Groups</span></span>](fields-field-groups-subpattern.md)
--   [<span data-ttu-id="3eca5-194">ツールバーおよびリスト</span><span class="sxs-lookup"><span data-stu-id="3eca5-194">Toolbar and List</span></span>](toolbar-list-subpattern.md)
--   [<span data-ttu-id="3eca5-195">ツールバーおよびフィールド</span><span class="sxs-lookup"><span data-stu-id="3eca5-195">Toolbar and Fields</span></span>](toolbar-fields-subpattern.md)
--   [<span data-ttu-id="3eca5-196">入れ子になった簡易リストおよび詳細</span><span class="sxs-lookup"><span data-stu-id="3eca5-196">Nested Simple List and Details</span></span>](nested-simple-list-details-subpattern.md)
--   [<span data-ttu-id="3eca5-197">カスタム フィルター グループ</span><span class="sxs-lookup"><span data-stu-id="3eca5-197">Custom Filter Group</span></span>](custom-filter-group-subpattern.md)
+-   [<span data-ttu-id="41e25-193">フィールドおよびフィールド グループ</span><span class="sxs-lookup"><span data-stu-id="41e25-193">Fields and Field Groups</span></span>](fields-field-groups-subpattern.md)
+-   [<span data-ttu-id="41e25-194">ツールバーおよびリスト</span><span class="sxs-lookup"><span data-stu-id="41e25-194">Toolbar and List</span></span>](toolbar-list-subpattern.md)
+-   [<span data-ttu-id="41e25-195">ツールバーおよびフィールド</span><span class="sxs-lookup"><span data-stu-id="41e25-195">Toolbar and Fields</span></span>](toolbar-fields-subpattern.md)
+-   [<span data-ttu-id="41e25-196">入れ子になった簡易リストおよび詳細</span><span class="sxs-lookup"><span data-stu-id="41e25-196">Nested Simple List and Details</span></span>](nested-simple-list-details-subpattern.md)
+-   [<span data-ttu-id="41e25-197">カスタム フィルター グループ</span><span class="sxs-lookup"><span data-stu-id="41e25-197">Custom Filter Group</span></span>](custom-filter-group-subpattern.md)
 
-## <a name="ux-guidelines"></a><span data-ttu-id="3eca5-198">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="3eca5-198">UX guidelines</span></span>
-<span data-ttu-id="3eca5-199">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="3eca5-199">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="3eca5-200">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="3eca5-200">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="3eca5-201">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="3eca5-201">Open the form in a browser, and walk through these steps.</span></span> <span data-ttu-id="3eca5-202">**標準フォーム ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="3eca5-202">**Standard form guidelines:**</span></span>
+## <a name="ux-guidelines"></a><span data-ttu-id="41e25-198">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="41e25-198">UX guidelines</span></span>
+<span data-ttu-id="41e25-199">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="41e25-199">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="41e25-200">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="41e25-200">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="41e25-201">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="41e25-201">Open the form in a browser, and walk through these steps.</span></span> <span data-ttu-id="41e25-202">**標準フォーム ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="41e25-202">**Standard form guidelines:**</span></span>
 
--   <span data-ttu-id="3eca5-203">標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="3eca5-203">Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.</span></span>
+-   <span data-ttu-id="41e25-203">標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="41e25-203">Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.</span></span>
 
-<span data-ttu-id="3eca5-204">**詳細マスターガイドライン**</span><span class="sxs-lookup"><span data-stu-id="3eca5-204">**Detail Master guidelines:**</span></span>
+<span data-ttu-id="41e25-204">**詳細マスターガイドライン**</span><span class="sxs-lookup"><span data-stu-id="41e25-204">**Detail Master guidelines:**</span></span>
 
--   <span data-ttu-id="3eca5-205">**新規** ボタンおよび **削除** ボタンは重複してはいけません。</span><span class="sxs-lookup"><span data-stu-id="3eca5-205">There should not be any duplicate **New** and **Delete** buttons.</span></span>
--   <span data-ttu-id="3eca5-206">従来のタブではなく、フィールドをグループ化するのにクイック タブを使用する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="3eca5-206">Should use FastTabs to group the fields instead of traditional tabs.</span></span> <span data-ttu-id="3eca5-207">詳細マスター / 標準タブ パターンは、関連するこれらのクイック タブを従来のタブにグループ化します。</span><span class="sxs-lookup"><span data-stu-id="3eca5-207">The Details Master w/Standard Tabs pattern groups these related FastTabs into traditional tabs.</span></span>
-    -   <span data-ttu-id="3eca5-208">**既定**の状態で、最初のクイック タブのコンテンツはスクロールせずに完全に表示される必要があります。</span><span class="sxs-lookup"><span data-stu-id="3eca5-208">In its **default** state, the content of the first FastTab should be fully visible without scrolling.</span></span>
-    -   <span data-ttu-id="3eca5-209">**クイック タブ**ガイドラインは、[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="3eca5-209">**FastTabs** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document.</span></span>
--   <span data-ttu-id="3eca5-210">**ActionPane** ガイドラインは、ActionPane ガイドライン セクションの[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="3eca5-210">**ActionPane** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document, in the ActionPane guidelines section.</span></span>
--   <span data-ttu-id="3eca5-211">**ページ タイトル エリア:**</span><span class="sxs-lookup"><span data-stu-id="3eca5-211">**Page title area:**</span></span>
-    -   <span data-ttu-id="3eca5-212">"&lt;ID&gt; : &lt;Description&gt;" という形式を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3eca5-212">The following format should be used: "&lt;ID&gt; : &lt;Description&gt;"</span></span>
-    -   <span data-ttu-id="3eca5-213">リスト ページが詳細ページにマージされている場合は、詳細ページへのリンクをメイン メニューで提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3eca5-213">A link to the Details page should be provided in the Main Menu when the List page has been merged into the Details page.</span></span>
-    -   <span data-ttu-id="3eca5-214">ページ タイトルは、複数フォームの形式にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3eca5-214">The page title should be in a plural form.</span></span>
--   <span data-ttu-id="3eca5-215">**情報ボックス**ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="3eca5-215">**FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.</span></span>
--   <span data-ttu-id="3eca5-216">**ナビゲーション リスト グリッド:**</span><span class="sxs-lookup"><span data-stu-id="3eca5-216">**Navigation list grid:**</span></span>
-    -   <span data-ttu-id="3eca5-217">リスト スタイル グリッドは、グリッド行内に行が 3 行以上にまたがるフィールドはありません。</span><span class="sxs-lookup"><span data-stu-id="3eca5-217">The list style grid should not have fields within a grid row that cause the row to span more than three lines.</span></span>
-        -   <span data-ttu-id="3eca5-218">通常は IDと説明だけで十分です。</span><span class="sxs-lookup"><span data-stu-id="3eca5-218">Typically, just the ID and Description are sufficient.</span></span>
-        -   <span data-ttu-id="3eca5-219">2 つ以上のフィールドが必要です。</span><span class="sxs-lookup"><span data-stu-id="3eca5-219">There should be at least two fields.</span></span>
--   <span data-ttu-id="3eca5-220">**グリッド ビュー:**</span><span class="sxs-lookup"><span data-stu-id="3eca5-220">**Grid view:**</span></span>
-    -   <span data-ttu-id="3eca5-221">グリッドには 2 〜 15 個のフィールドがあります。</span><span class="sxs-lookup"><span data-stu-id="3eca5-221">The grid has 2 to 15 fields.</span></span> <span data-ttu-id="3eca5-222">通常はすべての必須フィールドが含まれているので、グリッド内にレコードを作成できます。</span><span class="sxs-lookup"><span data-stu-id="3eca5-222">Typically, all mandatory fields are included, so that records can be created in the grid.</span></span>
-    -   <span data-ttu-id="3eca5-223">リンクされているフィールドを使用すると、ユーザーは選択したレコードの詳細を開くことができます。</span><span class="sxs-lookup"><span data-stu-id="3eca5-223">A linked field lets the user open the details for the selected record.</span></span>
-    -   <span data-ttu-id="3eca5-224">クイック フィルターの既定値は、フィルター シナリオに最も可能性が高いフィールドに設定されます。</span><span class="sxs-lookup"><span data-stu-id="3eca5-224">The Quick filter should default to the most likely field for a filter scenario.</span></span>
-    -   <span data-ttu-id="3eca5-225">**グリッド:**</span><span class="sxs-lookup"><span data-stu-id="3eca5-225">**Grid:**</span></span>
-        -   <span data-ttu-id="3eca5-226">**ID** フィールドは最初の列にする必要があります (グリッドで必要な場合)。</span><span class="sxs-lookup"><span data-stu-id="3eca5-226">The **ID** field should be the first column (if it's needed in the grid).</span></span> <span data-ttu-id="3eca5-227">それ以外の場合、**名前** フィールドは最初の列にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3eca5-227">Otherwise, the **Name** field should be the first column.</span></span>
-        -   <span data-ttu-id="3eca5-228">追加のグリッド ガイドラインは、グリッド ガイドライン セクションの [全般的なフォームのガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="3eca5-228">Additional grid guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document, in the Grid guidelines section.</span></span>
+-   <span data-ttu-id="41e25-205">**新規** ボタンおよび **削除** ボタンは重複してはいけません。</span><span class="sxs-lookup"><span data-stu-id="41e25-205">There should not be any duplicate **New** and **Delete** buttons.</span></span>
+-   <span data-ttu-id="41e25-206">従来のタブではなく、フィールドをグループ化するのにクイック タブを使用する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="41e25-206">Should use FastTabs to group the fields instead of traditional tabs.</span></span> <span data-ttu-id="41e25-207">詳細マスター / 標準タブ パターンは、関連するこれらのクイック タブを従来のタブにグループ化します。</span><span class="sxs-lookup"><span data-stu-id="41e25-207">The Details Master w/Standard Tabs pattern groups these related FastTabs into traditional tabs.</span></span>
+    -   <span data-ttu-id="41e25-208">**既定**の状態で、最初のクイック タブのコンテンツはスクロールせずに完全に表示される必要があります。</span><span class="sxs-lookup"><span data-stu-id="41e25-208">In its **default** state, the content of the first FastTab should be fully visible without scrolling.</span></span>
+    -   <span data-ttu-id="41e25-209">**クイック タブ**ガイドラインは、[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="41e25-209">**FastTabs** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document.</span></span>
+-   <span data-ttu-id="41e25-210">**ActionPane** ガイドラインは、ActionPane ガイドライン セクションの[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="41e25-210">**ActionPane** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document, in the ActionPane guidelines section.</span></span>
+-   <span data-ttu-id="41e25-211">**ページ タイトル エリア:**</span><span class="sxs-lookup"><span data-stu-id="41e25-211">**Page title area:**</span></span>
+    -   <span data-ttu-id="41e25-212">"&lt;ID&gt; : &lt;Description&gt;" という形式を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="41e25-212">The following format should be used: "&lt;ID&gt; : &lt;Description&gt;"</span></span>
+    -   <span data-ttu-id="41e25-213">リスト ページが詳細ページにマージされている場合は、詳細ページへのリンクをメイン メニューで提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="41e25-213">A link to the Details page should be provided in the Main Menu when the List page has been merged into the Details page.</span></span>
+    -   <span data-ttu-id="41e25-214">ページ タイトルは、複数フォームの形式にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="41e25-214">The page title should be in a plural form.</span></span>
+-   <span data-ttu-id="41e25-215">**情報ボックス**ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="41e25-215">**FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.</span></span>
+-   <span data-ttu-id="41e25-216">**ナビゲーション リスト グリッド:**</span><span class="sxs-lookup"><span data-stu-id="41e25-216">**Navigation list grid:**</span></span>
+    -   <span data-ttu-id="41e25-217">リスト スタイル グリッドは、グリッド行内に行が 3 行以上にまたがるフィールドはありません。</span><span class="sxs-lookup"><span data-stu-id="41e25-217">The list style grid should not have fields within a grid row that cause the row to span more than three lines.</span></span>
+        -   <span data-ttu-id="41e25-218">通常は IDと説明だけで十分です。</span><span class="sxs-lookup"><span data-stu-id="41e25-218">Typically, just the ID and Description are sufficient.</span></span>
+        -   <span data-ttu-id="41e25-219">2 つ以上のフィールドが必要です。</span><span class="sxs-lookup"><span data-stu-id="41e25-219">There should be at least two fields.</span></span>
+-   <span data-ttu-id="41e25-220">**グリッド ビュー:**</span><span class="sxs-lookup"><span data-stu-id="41e25-220">**Grid view:**</span></span>
+    -   <span data-ttu-id="41e25-221">グリッドには 2 〜 15 個のフィールドがあります。</span><span class="sxs-lookup"><span data-stu-id="41e25-221">The grid has 2 to 15 fields.</span></span> <span data-ttu-id="41e25-222">通常はすべての必須フィールドが含まれているので、グリッド内にレコードを作成できます。</span><span class="sxs-lookup"><span data-stu-id="41e25-222">Typically, all mandatory fields are included, so that records can be created in the grid.</span></span>
+    -   <span data-ttu-id="41e25-223">リンクされているフィールドを使用すると、ユーザーは選択したレコードの詳細を開くことができます。</span><span class="sxs-lookup"><span data-stu-id="41e25-223">A linked field lets the user open the details for the selected record.</span></span>
+    -   <span data-ttu-id="41e25-224">クイック フィルターの既定値は、フィルター シナリオに最も可能性が高いフィールドに設定されます。</span><span class="sxs-lookup"><span data-stu-id="41e25-224">The Quick filter should default to the most likely field for a filter scenario.</span></span>
+    -   <span data-ttu-id="41e25-225">**グリッド:**</span><span class="sxs-lookup"><span data-stu-id="41e25-225">**Grid:**</span></span>
+        -   <span data-ttu-id="41e25-226">**ID** フィールドは最初の列にする必要があります (グリッドで必要な場合)。</span><span class="sxs-lookup"><span data-stu-id="41e25-226">The **ID** field should be the first column (if it's needed in the grid).</span></span> <span data-ttu-id="41e25-227">それ以外の場合、**名前** フィールドは最初の列にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="41e25-227">Otherwise, the **Name** field should be the first column.</span></span>
+        -   <span data-ttu-id="41e25-228">追加のグリッド ガイドラインは、グリッド ガイドライン セクションの [全般的なフォームのガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="41e25-228">Additional grid guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document, in the Grid guidelines section.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3eca5-229">例</span><span class="sxs-lookup"><span data-stu-id="3eca5-229">Examples</span></span>
-### <a name="details-master-basic"></a><span data-ttu-id="3eca5-230">詳細マスター (基本)</span><span class="sxs-lookup"><span data-stu-id="3eca5-230">Details Master (basic)</span></span>
+## <a name="examples"></a><span data-ttu-id="41e25-229">例</span><span class="sxs-lookup"><span data-stu-id="41e25-229">Examples</span></span>
+### <a name="details-master-basic"></a><span data-ttu-id="41e25-230">詳細マスター (基本)</span><span class="sxs-lookup"><span data-stu-id="41e25-230">Details Master (basic)</span></span>
 
-<span data-ttu-id="3eca5-231">フォーム: **CustTable**</span><span class="sxs-lookup"><span data-stu-id="3eca5-231">Form: **CustTable**</span></span>
+<span data-ttu-id="41e25-231">フォーム: **CustTable**</span><span class="sxs-lookup"><span data-stu-id="41e25-231">Form: **CustTable**</span></span>
 
-#### <a name="details-view-navigation-list-off"></a><span data-ttu-id="3eca5-232">詳細ビュー (ナビゲーション リスト オフ)</span><span class="sxs-lookup"><span data-stu-id="3eca5-232">Details view (navigation list off)</span></span>
+#### <a name="details-view-navigation-list-off"></a><span data-ttu-id="41e25-232">詳細ビュー (ナビゲーション リスト オフ)</span><span class="sxs-lookup"><span data-stu-id="41e25-232">Details view (navigation list off)</span></span>
 
-<span data-ttu-id="3eca5-233">[![詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オフ)](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-233">[![Details Master (basic) example: Details view (navigation list off)](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)</span></span>
+<span data-ttu-id="41e25-233">[![詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オフ)](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-233">[![Details Master (basic) example: Details view (navigation list off)](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)</span></span>
 
-#### <a name="details-view-navigation-list-on"></a><span data-ttu-id="3eca5-234">詳細ビュー (ナビゲーション リスト オン)</span><span class="sxs-lookup"><span data-stu-id="3eca5-234">Details view (navigation list on)</span></span>
+#### <a name="details-view-navigation-list-on"></a><span data-ttu-id="41e25-234">詳細ビュー (ナビゲーション リスト オン)</span><span class="sxs-lookup"><span data-stu-id="41e25-234">Details view (navigation list on)</span></span>
 
-<span data-ttu-id="3eca5-235">[![詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オン)](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-235">[![Details Master (basic) example: Details view (navigation list on)](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)</span></span>
+<span data-ttu-id="41e25-235">[![詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オン)](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-235">[![Details Master (basic) example: Details view (navigation list on)](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)</span></span>
 
-#### <a name="grid-view"></a><span data-ttu-id="3eca5-236">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="3eca5-236">Grid view</span></span>
+#### <a name="grid-view"></a><span data-ttu-id="41e25-236">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="41e25-236">Grid view</span></span>
 
-<span data-ttu-id="3eca5-237">[![詳細マスター (基本) の例: グリッド ビュー](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-237">[![Details Master (basic) example: Grid view](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)</span></span>
+<span data-ttu-id="41e25-237">[![詳細マスター (基本) の例: グリッド ビュー](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-237">[![Details Master (basic) example: Grid view](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)</span></span>
 
-### <a name="details-master-wstandard-tabs"></a><span data-ttu-id="3eca5-238">詳細マスター / 標準タブ</span><span class="sxs-lookup"><span data-stu-id="3eca5-238">Details Master w/Standard Tabs</span></span>
+### <a name="details-master-wstandard-tabs"></a><span data-ttu-id="41e25-238">詳細マスター / 標準タブ</span><span class="sxs-lookup"><span data-stu-id="41e25-238">Details Master w/Standard Tabs</span></span>
 
-<span data-ttu-id="3eca5-239">フォーム: **HcmWorker**</span><span class="sxs-lookup"><span data-stu-id="3eca5-239">Form: **HcmWorker**</span></span>
+<span data-ttu-id="41e25-239">フォーム: **HcmWorker**</span><span class="sxs-lookup"><span data-stu-id="41e25-239">Form: **HcmWorker**</span></span>
 
-#### <a name="details-view-navigation-list-off"></a><span data-ttu-id="3eca5-240">詳細ビュー (ナビゲーション リスト オフ)</span><span class="sxs-lookup"><span data-stu-id="3eca5-240">Details view (navigation list off)</span></span>
+#### <a name="details-view-navigation-list-off"></a><span data-ttu-id="41e25-240">詳細ビュー (ナビゲーション リスト オフ)</span><span class="sxs-lookup"><span data-stu-id="41e25-240">Details view (navigation list off)</span></span>
 
-<span data-ttu-id="3eca5-241">[![詳細マスター / 標準タブの例: 詳細ビュー (ナビゲーション リスト オフ)](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-241">[![Details Master w/Standard Tabs example: Details view (navigation list off)](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)</span></span>
+<span data-ttu-id="41e25-241">[![詳細マスター / 標準タブの例: 詳細ビュー (ナビゲーション リスト オフ)](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-241">[![Details Master w/Standard Tabs example: Details view (navigation list off)](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)</span></span>
 
-#### <a name="details-view-navigation-list-on"></a><span data-ttu-id="3eca5-242">詳細ビュー (ナビゲーション リスト オン)</span><span class="sxs-lookup"><span data-stu-id="3eca5-242">Details view (navigation list on)</span></span>
+#### <a name="details-view-navigation-list-on"></a><span data-ttu-id="41e25-242">詳細ビュー (ナビゲーション リスト オン)</span><span class="sxs-lookup"><span data-stu-id="41e25-242">Details view (navigation list on)</span></span>
 
-<span data-ttu-id="3eca5-243">[![詳細マスター / 標準タブの例: 詳細ビュー (ナビゲーション リスト オン)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-243">[![Details Master w/Standard Tabs example: Details view (navigation list on)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)</span></span>
+<span data-ttu-id="41e25-243">[![詳細マスター / 標準タブの例: 詳細ビュー (ナビゲーション リスト オン)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-243">[![Details Master w/Standard Tabs example: Details view (navigation list on)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)</span></span>
 
-#### <a name="grid-view"></a><span data-ttu-id="3eca5-244">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="3eca5-244">Grid view</span></span>
+#### <a name="grid-view"></a><span data-ttu-id="41e25-244">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="41e25-244">Grid view</span></span>
 
-<span data-ttu-id="3eca5-245">[![詳細マスター / 標準タブ例: グリッド ビュー](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-245">[![Details Master w/Standard Tabs example: Grid view](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)</span></span>
+<span data-ttu-id="41e25-245">[![詳細マスター / 標準タブ例: グリッド ビュー](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-245">[![Details Master w/Standard Tabs example: Grid view](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)</span></span>
 
-## <a name="appendix"></a><span data-ttu-id="3eca5-246">付録</span><span class="sxs-lookup"><span data-stu-id="3eca5-246">Appendix</span></span>
-### <a name="frequently-asked-questions"></a><span data-ttu-id="3eca5-247">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="3eca5-247">Frequently asked questions</span></span>
+## <a name="appendix"></a><span data-ttu-id="41e25-246">付録</span><span class="sxs-lookup"><span data-stu-id="41e25-246">Appendix</span></span>
+### <a name="frequently-asked-questions"></a><span data-ttu-id="41e25-247">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="41e25-247">Frequently asked questions</span></span>
 
-<span data-ttu-id="3eca5-248">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="3eca5-248">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
+<span data-ttu-id="41e25-248">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="41e25-248">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
 
-### <a name="open-issues"></a><span data-ttu-id="3eca5-249">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="3eca5-249">Open issues</span></span>
+### <a name="open-issues"></a><span data-ttu-id="41e25-249">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="41e25-249">Open issues</span></span>
 
-<span data-ttu-id="3eca5-250">なし。</span><span class="sxs-lookup"><span data-stu-id="3eca5-250">None.</span></span>
+<span data-ttu-id="41e25-250">なし。</span><span class="sxs-lookup"><span data-stu-id="41e25-250">None.</span></span>
 
-### <a name="ax-2012-content"></a><span data-ttu-id="3eca5-251">AX 2012 コンテンツ</span><span class="sxs-lookup"><span data-stu-id="3eca5-251">AX 2012 content</span></span>
+### <a name="ax-2012-content"></a><span data-ttu-id="41e25-251">AX 2012 コンテンツ</span><span class="sxs-lookup"><span data-stu-id="41e25-251">AX 2012 content</span></span>
 
-#### <a name="ax-2012-links"></a><span data-ttu-id="3eca5-252">AX 2012 リンク</span><span class="sxs-lookup"><span data-stu-id="3eca5-252">AX 2012 links</span></span>
--   [<span data-ttu-id="3eca5-253">AX 2012 MSDN 詳細のフォーム</span><span class="sxs-lookup"><span data-stu-id="3eca5-253">AX 2012 MSDN Details Forms</span></span>](https://msdn.microsoft.com/library/hh397318.aspx)
+#### <a name="ax-2012-links"></a><span data-ttu-id="41e25-252">AX 2012 リンク</span><span class="sxs-lookup"><span data-stu-id="41e25-252">AX 2012 links</span></span>
+-   [<span data-ttu-id="41e25-253">AX 2012 MSDN 詳細のフォーム</span><span class="sxs-lookup"><span data-stu-id="41e25-253">AX 2012 MSDN Details Forms</span></span>](https://msdn.microsoft.com/library/hh397318.aspx)
 
-#### <a name="ax-2012-example"></a><span data-ttu-id="3eca5-254">AX 2012 の例</span><span class="sxs-lookup"><span data-stu-id="3eca5-254">AX 2012 example</span></span>
+#### <a name="ax-2012-example"></a><span data-ttu-id="41e25-254">AX 2012 の例</span><span class="sxs-lookup"><span data-stu-id="41e25-254">AX 2012 example</span></span>
 
-##### <a name="details-master-basic"></a><span data-ttu-id="3eca5-255">詳細マスター (基本)</span><span class="sxs-lookup"><span data-stu-id="3eca5-255">Details Master (basic)</span></span>
+##### <a name="details-master-basic"></a><span data-ttu-id="41e25-255">詳細マスター (基本)</span><span class="sxs-lookup"><span data-stu-id="41e25-255">Details Master (basic)</span></span>
 
-<span data-ttu-id="3eca5-256">[![AX 2012 の例: 詳細マスター (基本) 1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-256">[![AX 2012 example: Details Master (basic) 1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png)</span></span> 
+<span data-ttu-id="41e25-256">[![AX 2012 の例: 詳細マスター (基本) 1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-256">[![AX 2012 example: Details Master (basic) 1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png)</span></span> 
 
-<span data-ttu-id="3eca5-257">[![AX 2012 の例: 詳細マスター (基本) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-257">[![AX 2012 example: Details Master (basic) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)</span></span>
+<span data-ttu-id="41e25-257">[![AX 2012 の例: 詳細マスター (基本) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-257">[![AX 2012 example: Details Master (basic) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)</span></span>
 
-##### <a name="details-master-wstandard-tabs"></a><span data-ttu-id="3eca5-258">詳細マスター / 標準タブ</span><span class="sxs-lookup"><span data-stu-id="3eca5-258">Details Master w/Standard Tabs</span></span>
+##### <a name="details-master-wstandard-tabs"></a><span data-ttu-id="41e25-258">詳細マスター / 標準タブ</span><span class="sxs-lookup"><span data-stu-id="41e25-258">Details Master w/Standard Tabs</span></span>
 
-<span data-ttu-id="3eca5-259">[![AXAX 2012 の例: 詳細マスターと標準タブ 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-259">[![AX 2012 example: Details Master w/Standard Tabs 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png)</span></span> 
+<span data-ttu-id="41e25-259">[![AXAX 2012 の例: 詳細マスターと標準タブ 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-259">[![AX 2012 example: Details Master w/Standard Tabs 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png)</span></span> 
 
-<span data-ttu-id="3eca5-260">[![AX 2012 の例: 詳細マスターと標準タブ 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)</span><span class="sxs-lookup"><span data-stu-id="3eca5-260">[![AX 2012 example: Details Master w/Standard Tabs 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)</span></span>
+<span data-ttu-id="41e25-260">[![AX 2012 の例: 詳細マスターと標準タブ 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)</span><span class="sxs-lookup"><span data-stu-id="41e25-260">[![AX 2012 example: Details Master w/Standard Tabs 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)</span></span>
 
 
 

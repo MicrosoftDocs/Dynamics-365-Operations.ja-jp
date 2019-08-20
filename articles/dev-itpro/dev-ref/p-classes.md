@@ -9,388 +9,388 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 52231
 ms.assetid: 50842cd5-c27f-43aa-8a6d-bc9d3b02fd60
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3370eebfd92dceee682a197d661869b9a4bbf4e1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be43a30edca6f94e7c0f406c8095a6670ae6900b
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544202"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833672"
 ---
-# <a name="p-classes"></a><span data-ttu-id="18cf4-103">P クラス</span><span class="sxs-lookup"><span data-stu-id="18cf4-103">P classes</span></span>
+# <a name="p-classes"></a><span data-ttu-id="0f5c1-103">P クラス</span><span class="sxs-lookup"><span data-stu-id="0f5c1-103">P classes</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="18cf4-104">文字 P で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="18cf4-104">System API classes that start with the letter P.</span></span>
+<span data-ttu-id="0f5c1-104">文字 P で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-104">System API classes that start with the letter P.</span></span>
 
-<a name="class-page"></a><span data-ttu-id="18cf4-105">クラス ページ</span><span class="sxs-lookup"><span data-stu-id="18cf4-105">Class Page</span></span>
+<a name="class-page"></a><span data-ttu-id="0f5c1-105">クラス ページ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-105">Class Page</span></span>
 ----------
 
     class Page extends Object
 
-<span data-ttu-id="18cf4-106">このページ クラスでは、作成、読み取り、更新、および X++ コードおよびメタデータを削除できます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-106">This Page class lets you create, read, update, and delete X++ code and metadata.</span></span>
+<span data-ttu-id="0f5c1-106">このページ クラスでは、作成、読み取り、更新、および X++ コードおよびメタデータを削除できます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-106">This Page class lets you create, read, update, and delete X++ code and metadata.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-107">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-107">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-107">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-107">Remarks</span></span>
 
-<span data-ttu-id="18cf4-108">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-108">Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</span></span>
+<span data-ttu-id="0f5c1-108">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-108">Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-109">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-109">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-109">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-109">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-110">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-110">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-110">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-110">Methods</span></span>
 
-| <span data-ttu-id="18cf4-111">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-111">Method</span></span>                                                                        | <span data-ttu-id="18cf4-112">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-112">Description</span></span>                                                              |
+| <span data-ttu-id="0f5c1-111">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-111">Method</span></span>                                                                        | <span data-ttu-id="0f5c1-112">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-112">Description</span></span>                                                              |
 |-------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <span data-ttu-id="18cf4-113">public boolean actionPaneControlEnabled(str controlName, \[boolean enabled\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-113">public boolean actionPaneControlEnabled(str controlName, \[boolean enabled\])</span></span> | <span data-ttu-id="18cf4-114">アクション ウィンドウ上のコントロールの有効なプロパティの値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-114">Sets or gets the enabled property value of a control on the Action Pane.</span></span> |
-| <span data-ttu-id="18cf4-115">public boolean actionPaneControlVisible(str controlName, \[boolean visible\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-115">public boolean actionPaneControlVisible(str controlName, \[boolean visible\])</span></span> | <span data-ttu-id="18cf4-116">アクション ウィンドウ上のコントロールの表示されるプロパティの値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-116">Sets or gets the visible property value of a control on the Action Pane.</span></span> |
-| <span data-ttu-id="18cf4-117">public Array activeActionPaneTabNames()</span><span class="sxs-lookup"><span data-stu-id="18cf4-117">public Array activeActionPaneTabNames()</span></span>                                       |                                                                          |
-| <span data-ttu-id="18cf4-118">public Common activeRecord(str dataSourceName)</span><span class="sxs-lookup"><span data-stu-id="18cf4-118">public Common activeRecord(str dataSourceName)</span></span>                                | <span data-ttu-id="18cf4-119">特定のデータ ソース名の有効なレコードを取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-119">Gets the active record for the given data source name.</span></span>                   |
-| <span data-ttu-id="18cf4-120">public str name()</span><span class="sxs-lookup"><span data-stu-id="18cf4-120">public str name()</span></span>                                                             | <span data-ttu-id="18cf4-121">ページの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-121">Gets the name of the page.</span></span>                                               |
-| <span data-ttu-id="18cf4-122">public PageArgs pageArgs()</span><span class="sxs-lookup"><span data-stu-id="18cf4-122">public PageArgs pageArgs()</span></span>                                                    | <span data-ttu-id="18cf4-123">page 引数を取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-123">Gets the page arguments.</span></span>                                                 |
-| <span data-ttu-id="18cf4-124">public xFormRun formRun()</span><span class="sxs-lookup"><span data-stu-id="18cf4-124">public xFormRun formRun()</span></span>                                                     |                                                                          |
+| <span data-ttu-id="0f5c1-113">public boolean actionPaneControlEnabled(str controlName, \[boolean enabled\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-113">public boolean actionPaneControlEnabled(str controlName, \[boolean enabled\])</span></span> | <span data-ttu-id="0f5c1-114">アクション ウィンドウ上のコントロールの有効なプロパティの値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-114">Sets or gets the enabled property value of a control on the Action Pane.</span></span> |
+| <span data-ttu-id="0f5c1-115">public boolean actionPaneControlVisible(str controlName, \[boolean visible\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-115">public boolean actionPaneControlVisible(str controlName, \[boolean visible\])</span></span> | <span data-ttu-id="0f5c1-116">アクション ウィンドウ上のコントロールの表示されるプロパティの値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-116">Sets or gets the visible property value of a control on the Action Pane.</span></span> |
+| <span data-ttu-id="0f5c1-117">public Array activeActionPaneTabNames()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-117">public Array activeActionPaneTabNames()</span></span>                                       |                                                                          |
+| <span data-ttu-id="0f5c1-118">public Common activeRecord(str dataSourceName)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-118">public Common activeRecord(str dataSourceName)</span></span>                                | <span data-ttu-id="0f5c1-119">特定のデータ ソース名の有効なレコードを取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-119">Gets the active record for the given data source name.</span></span>                   |
+| <span data-ttu-id="0f5c1-120">public str name()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-120">public str name()</span></span>                                                             | <span data-ttu-id="0f5c1-121">ページの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-121">Gets the name of the page.</span></span>                                               |
+| <span data-ttu-id="0f5c1-122">public PageArgs pageArgs()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-122">public PageArgs pageArgs()</span></span>                                                    | <span data-ttu-id="0f5c1-123">page 引数を取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-123">Gets the page arguments.</span></span>                                                 |
+| <span data-ttu-id="0f5c1-124">public xFormRun formRun()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-124">public xFormRun formRun()</span></span>                                                     |                                                                          |
 
-### <a name="method-actionpanecontrolenabled"></a><span data-ttu-id="18cf4-125">メソッド actionPaneControlEnabled</span><span class="sxs-lookup"><span data-stu-id="18cf4-125">Method actionPaneControlEnabled</span></span>
+### <a name="method-actionpanecontrolenabled"></a><span data-ttu-id="0f5c1-125">メソッド actionPaneControlEnabled</span><span class="sxs-lookup"><span data-stu-id="0f5c1-125">Method actionPaneControlEnabled</span></span>
 
-<span data-ttu-id="18cf4-126">アクション ウィンドウ上のコントロールの有効なプロパティの値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-126">Sets or gets the enabled property value of a control on the Action Pane.</span></span>
+<span data-ttu-id="0f5c1-126">アクション ウィンドウ上のコントロールの有効なプロパティの値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-126">Sets or gets the enabled property value of a control on the Action Pane.</span></span>
 
     public boolean actionPaneControlEnabled(str controlName, [boolean enabled])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-127">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-127">Parameters</span></span>
 
-<span data-ttu-id="18cf4-128">controlName</span><span class="sxs-lookup"><span data-stu-id="18cf4-128">controlName</span></span>  
-<span data-ttu-id="18cf4-129">アクション ウィンドウ コントロールが有効かどうかを指定する値、オプション。</span><span class="sxs-lookup"><span data-stu-id="18cf4-129">A value that specifies whether the Action Pane control is enabled; optional.</span></span>
+<span data-ttu-id="0f5c1-128">controlName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-128">controlName</span></span>  
+<span data-ttu-id="0f5c1-129">アクション ウィンドウ コントロールが有効かどうかを指定する値、オプション。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-129">A value that specifies whether the Action Pane control is enabled; optional.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="18cf4-130">有効</span><span class="sxs-lookup"><span data-stu-id="18cf4-130">enabled</span></span>  
-<span data-ttu-id="18cf4-131">アクション ウィンドウ コントロールが有効かどうかを指定する値、オプション。</span><span class="sxs-lookup"><span data-stu-id="18cf4-131">A value that specifies whether the Action Pane control is enabled; optional.</span></span>
+<span data-ttu-id="0f5c1-130">有効</span><span class="sxs-lookup"><span data-stu-id="0f5c1-130">enabled</span></span>  
+<span data-ttu-id="0f5c1-131">アクション ウィンドウ コントロールが有効かどうかを指定する値、オプション。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-131">A value that specifies whether the Action Pane control is enabled; optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-132">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-132">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-132">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-132">Return Value</span></span>
 
-<span data-ttu-id="18cf4-133">アクション ペイン コントロールが有効かどうかを指定するブール値。</span><span class="sxs-lookup"><span data-stu-id="18cf4-133">A Boolean value that indicates whether the Action Pane control is enabled.</span></span>
+<span data-ttu-id="0f5c1-133">アクション ペイン コントロールが有効かどうかを指定するブール値。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-133">A Boolean value that indicates whether the Action Pane control is enabled.</span></span>
 
-### <a name="method-actionpanecontrolvisible"></a><span data-ttu-id="18cf4-134">メソッド actionPaneControlVisible</span><span class="sxs-lookup"><span data-stu-id="18cf4-134">Method actionPaneControlVisible</span></span>
+### <a name="method-actionpanecontrolvisible"></a><span data-ttu-id="0f5c1-134">メソッド actionPaneControlVisible</span><span class="sxs-lookup"><span data-stu-id="0f5c1-134">Method actionPaneControlVisible</span></span>
 
-<span data-ttu-id="18cf4-135">アクション ウィンドウ上のコントロールの表示されるプロパティの値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-135">Sets or gets the visible property value of a control on the Action Pane.</span></span>
+<span data-ttu-id="0f5c1-135">アクション ウィンドウ上のコントロールの表示されるプロパティの値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-135">Sets or gets the visible property value of a control on the Action Pane.</span></span>
 
     public boolean actionPaneControlVisible(str controlName, [boolean visible])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-136">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-136">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-136">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-136">Parameters</span></span>
 
-<span data-ttu-id="18cf4-137">controlName</span><span class="sxs-lookup"><span data-stu-id="18cf4-137">controlName</span></span>  
-<span data-ttu-id="18cf4-138">アクション ウィンドウ コントロールが表示されるかどうかを指定する値、オプション。</span><span class="sxs-lookup"><span data-stu-id="18cf4-138">A value that specifies whether the Action Pane control is visible; optional.</span></span>
+<span data-ttu-id="0f5c1-137">controlName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-137">controlName</span></span>  
+<span data-ttu-id="0f5c1-138">アクション ウィンドウ コントロールが表示されるかどうかを指定する値、オプション。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-138">A value that specifies whether the Action Pane control is visible; optional.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="18cf4-139">表示</span><span class="sxs-lookup"><span data-stu-id="18cf4-139">visible</span></span>  
-<span data-ttu-id="18cf4-140">アクション ウィンドウ コントロールが表示されるかどうかを指定する値、オプション。</span><span class="sxs-lookup"><span data-stu-id="18cf4-140">A value that specifies whether the Action Pane control is visible; optional.</span></span>
+<span data-ttu-id="0f5c1-139">表示</span><span class="sxs-lookup"><span data-stu-id="0f5c1-139">visible</span></span>  
+<span data-ttu-id="0f5c1-140">アクション ウィンドウ コントロールが表示されるかどうかを指定する値、オプション。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-140">A value that specifies whether the Action Pane control is visible; optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-141">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-141">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-141">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-141">Return Value</span></span>
 
-<span data-ttu-id="18cf4-142">アクション ペイン コントロールが表示されるかどうかを指定するブール値。</span><span class="sxs-lookup"><span data-stu-id="18cf4-142">A Boolean value that indicates whether the Action Pane control is visible.</span></span>
+<span data-ttu-id="0f5c1-142">アクション ペイン コントロールが表示されるかどうかを指定するブール値。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-142">A Boolean value that indicates whether the Action Pane control is visible.</span></span>
 
-### <a name="method-activeactionpanetabnames"></a><span data-ttu-id="18cf4-143">メソッド activeActionPaneTabNames</span><span class="sxs-lookup"><span data-stu-id="18cf4-143">Method activeActionPaneTabNames</span></span>
+### <a name="method-activeactionpanetabnames"></a><span data-ttu-id="0f5c1-143">メソッド activeActionPaneTabNames</span><span class="sxs-lookup"><span data-stu-id="0f5c1-143">Method activeActionPaneTabNames</span></span>
 
     public Array activeActionPaneTabNames()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-144">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-144">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-144">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-144">Return Value</span></span>
 
-### <a name="method-activerecord"></a><span data-ttu-id="18cf4-145">メソッド activeRecord</span><span class="sxs-lookup"><span data-stu-id="18cf4-145">Method activeRecord</span></span>
+### <a name="method-activerecord"></a><span data-ttu-id="0f5c1-145">メソッド activeRecord</span><span class="sxs-lookup"><span data-stu-id="0f5c1-145">Method activeRecord</span></span>
 
-<span data-ttu-id="18cf4-146">特定のデータ ソース名の有効なレコードを取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-146">Gets the active record for the given data source name.</span></span>
+<span data-ttu-id="0f5c1-146">特定のデータ ソース名の有効なレコードを取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-146">Gets the active record for the given data source name.</span></span>
 
     public Common activeRecord(str dataSourceName)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-147">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-147">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-147">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-147">Parameters</span></span>
 
-<span data-ttu-id="18cf4-148">dataSourceName</span><span class="sxs-lookup"><span data-stu-id="18cf4-148">dataSourceName</span></span>  
-<span data-ttu-id="18cf4-149">検索するデータ ソースの名前。</span><span class="sxs-lookup"><span data-stu-id="18cf4-149">The name of the data source to search on.</span></span>
+<span data-ttu-id="0f5c1-148">dataSourceName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-148">dataSourceName</span></span>  
+<span data-ttu-id="0f5c1-149">検索するデータ ソースの名前。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-149">The name of the data source to search on.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-150">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-150">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-150">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-150">Return Value</span></span>
 
-<span data-ttu-id="18cf4-151">特定のデータ ソース用の有効なレコード。</span><span class="sxs-lookup"><span data-stu-id="18cf4-151">The active record for the given data source.</span></span>
+<span data-ttu-id="0f5c1-151">特定のデータ ソース用の有効なレコード。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-151">The active record for the given data source.</span></span>
 
-### <a name="method-name"></a><span data-ttu-id="18cf4-152">メソッド名</span><span class="sxs-lookup"><span data-stu-id="18cf4-152">Method name</span></span>
+### <a name="method-name"></a><span data-ttu-id="0f5c1-152">メソッド名</span><span class="sxs-lookup"><span data-stu-id="0f5c1-152">Method name</span></span>
 
-<span data-ttu-id="18cf4-153">ページの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-153">Gets the name of the page.</span></span>
+<span data-ttu-id="0f5c1-153">ページの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-153">Gets the name of the page.</span></span>
 
     public str name()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-154">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-154">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-154">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-154">Return Value</span></span>
 
-<span data-ttu-id="18cf4-155">ページ名。</span><span class="sxs-lookup"><span data-stu-id="18cf4-155">The page name.</span></span>
+<span data-ttu-id="0f5c1-155">ページ名。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-155">The page name.</span></span>
 
-### <a name="method-pageargs"></a><span data-ttu-id="18cf4-156">メソッド pageArgs</span><span class="sxs-lookup"><span data-stu-id="18cf4-156">Method pageArgs</span></span>
+### <a name="method-pageargs"></a><span data-ttu-id="0f5c1-156">メソッド pageArgs</span><span class="sxs-lookup"><span data-stu-id="0f5c1-156">Method pageArgs</span></span>
 
-<span data-ttu-id="18cf4-157">page 引数を取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-157">Gets the page arguments.</span></span>
+<span data-ttu-id="0f5c1-157">page 引数を取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-157">Gets the page arguments.</span></span>
 
     public PageArgs pageArgs()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-158">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-158">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-158">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-158">Return Value</span></span>
 
-<span data-ttu-id="18cf4-159">page 引数。</span><span class="sxs-lookup"><span data-stu-id="18cf4-159">The page arguments.</span></span>
+<span data-ttu-id="0f5c1-159">page 引数。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-159">The page arguments.</span></span>
 
-### <a name="method-formrun"></a><span data-ttu-id="18cf4-160">メソッド formRun</span><span class="sxs-lookup"><span data-stu-id="18cf4-160">Method formRun</span></span>
+### <a name="method-formrun"></a><span data-ttu-id="0f5c1-160">メソッド formRun</span><span class="sxs-lookup"><span data-stu-id="0f5c1-160">Method formRun</span></span>
 
     public xFormRun formRun()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-161">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-161">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-161">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-161">Return Value</span></span>
 
-## <a name="class-pageargs"></a><span data-ttu-id="18cf4-162">クラス PageArgs</span><span class="sxs-lookup"><span data-stu-id="18cf4-162">Class PageArgs</span></span>
+## <a name="class-pageargs"></a><span data-ttu-id="0f5c1-162">クラス PageArgs</span><span class="sxs-lookup"><span data-stu-id="0f5c1-162">Class PageArgs</span></span>
     class PageArgs extends Object
 
-<span data-ttu-id="18cf4-163">PageArgs クラスを使用すると、X++ コードとメタデータの作成、読み取り、更新、および削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-163">The PageArgs class lets you create, read, update, and delete X++ code and metadata.</span></span>
+<span data-ttu-id="0f5c1-163">PageArgs クラスを使用すると、X++ コードとメタデータの作成、読み取り、更新、および削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-163">The PageArgs class lets you create, read, update, and delete X++ code and metadata.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-164">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-164">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-164">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-164">Remarks</span></span>
 
-<span data-ttu-id="18cf4-165">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-165">Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</span></span>
+<span data-ttu-id="0f5c1-165">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-165">Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-166">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-166">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-166">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-166">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-167">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-167">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-167">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-167">Methods</span></span>
 
-| <span data-ttu-id="18cf4-168">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-168">Method</span></span>                                         | <span data-ttu-id="18cf4-169">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-169">Description</span></span>                                                                                                 |
+| <span data-ttu-id="0f5c1-168">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-168">Method</span></span>                                         | <span data-ttu-id="0f5c1-169">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-169">Description</span></span>                                                                                                 |
 |------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="18cf4-170">public int enumParameter(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-170">public int enumParameter(\[int value\])</span></span>        | <span data-ttu-id="18cf4-171">MenuFunction クラスによって実行されるオブジェクトに渡される enumParameter プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-171">Gets or sets the enumParameter property that is passed to the object that is run by the MenuFunction class.</span></span> |
-| <span data-ttu-id="18cf4-172">public int enumTypeParameter(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-172">public int enumTypeParameter(\[int value\])</span></span>    | <span data-ttu-id="18cf4-173">MenuFunction クラスの enumTypeParameter プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-173">Gets or sets the enumTypeParameter property for the MenuFunction class.</span></span>                                     |
-| <span data-ttu-id="18cf4-174">public Common externalRecord(\[Common value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-174">public Common externalRecord(\[Common value\])</span></span> |                                                                                                             |
-| <span data-ttu-id="18cf4-175">public str menuItemName(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-175">public str menuItemName(\[str value\])</span></span>         |                                                                                                             |
-| <span data-ttu-id="18cf4-176">public str parameters(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-176">public str parameters(\[str value\])</span></span>           | <span data-ttu-id="18cf4-177">MenuFunction クラスで実行されるオブジェクトに渡されるパラメータの一覧を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-177">Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.</span></span>      |
-| <span data-ttu-id="18cf4-178">public void new()</span><span class="sxs-lookup"><span data-stu-id="18cf4-178">public void new()</span></span>                              | <span data-ttu-id="18cf4-179">PageArgs クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-179">Initializes a new instance of the PageArgs class.</span></span>                                                           |
+| <span data-ttu-id="0f5c1-170">public int enumParameter(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-170">public int enumParameter(\[int value\])</span></span>        | <span data-ttu-id="0f5c1-171">MenuFunction クラスによって実行されるオブジェクトに渡される enumParameter プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-171">Gets or sets the enumParameter property that is passed to the object that is run by the MenuFunction class.</span></span> |
+| <span data-ttu-id="0f5c1-172">public int enumTypeParameter(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-172">public int enumTypeParameter(\[int value\])</span></span>    | <span data-ttu-id="0f5c1-173">MenuFunction クラスの enumTypeParameter プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-173">Gets or sets the enumTypeParameter property for the MenuFunction class.</span></span>                                     |
+| <span data-ttu-id="0f5c1-174">public Common externalRecord(\[Common value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-174">public Common externalRecord(\[Common value\])</span></span> |                                                                                                             |
+| <span data-ttu-id="0f5c1-175">public str menuItemName(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-175">public str menuItemName(\[str value\])</span></span>         |                                                                                                             |
+| <span data-ttu-id="0f5c1-176">public str parameters(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-176">public str parameters(\[str value\])</span></span>           | <span data-ttu-id="0f5c1-177">MenuFunction クラスで実行されるオブジェクトに渡されるパラメータの一覧を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-177">Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.</span></span>      |
+| <span data-ttu-id="0f5c1-178">public void new()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-178">public void new()</span></span>                              | <span data-ttu-id="0f5c1-179">PageArgs クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-179">Initializes a new instance of the PageArgs class.</span></span>                                                           |
 
-### <a name="method-enumparameter"></a><span data-ttu-id="18cf4-180">メソッド enumParameter</span><span class="sxs-lookup"><span data-stu-id="18cf4-180">Method enumParameter</span></span>
+### <a name="method-enumparameter"></a><span data-ttu-id="0f5c1-180">メソッド enumParameter</span><span class="sxs-lookup"><span data-stu-id="0f5c1-180">Method enumParameter</span></span>
 
-<span data-ttu-id="18cf4-181">MenuFunction クラスによって実行されるオブジェクトに渡される enumParameter プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-181">Gets or sets the enumParameter property that is passed to the object that is run by the MenuFunction class.</span></span>
+<span data-ttu-id="0f5c1-181">MenuFunction クラスによって実行されるオブジェクトに渡される enumParameter プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-181">Gets or sets the enumParameter property that is passed to the object that is run by the MenuFunction class.</span></span>
 
     public int enumParameter([int value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-182">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-182">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-182">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-182">Parameters</span></span>
 
-<span data-ttu-id="18cf4-183">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-183">value</span></span>  
+<span data-ttu-id="0f5c1-183">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-183">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-184">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-184">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-184">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-184">Return Value</span></span>
 
-<span data-ttu-id="18cf4-185">MenuFunction クラスによって実行されるオブジェクトに渡される enumParameter プロパティ。</span><span class="sxs-lookup"><span data-stu-id="18cf4-185">The enumParameter property that is passed to the object that is run by the MenuFunction class.</span></span>
+<span data-ttu-id="0f5c1-185">MenuFunction クラスによって実行されるオブジェクトに渡される enumParameter プロパティ。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-185">The enumParameter property that is passed to the object that is run by the MenuFunction class.</span></span>
 
-### <a name="method-enumtypeparameter"></a><span data-ttu-id="18cf4-186">メソッド enumTypeParameter</span><span class="sxs-lookup"><span data-stu-id="18cf4-186">Method enumTypeParameter</span></span>
+### <a name="method-enumtypeparameter"></a><span data-ttu-id="0f5c1-186">メソッド enumTypeParameter</span><span class="sxs-lookup"><span data-stu-id="0f5c1-186">Method enumTypeParameter</span></span>
 
-<span data-ttu-id="18cf4-187">MenuFunction クラスの enumTypeParameter プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-187">Gets or sets the enumTypeParameter property for the MenuFunction class.</span></span>
+<span data-ttu-id="0f5c1-187">MenuFunction クラスの enumTypeParameter プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-187">Gets or sets the enumTypeParameter property for the MenuFunction class.</span></span>
 
     public int enumTypeParameter([int value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-188">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-188">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-188">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-188">Parameters</span></span>
 
-<span data-ttu-id="18cf4-189">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-189">value</span></span>  
+<span data-ttu-id="0f5c1-189">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-189">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-190">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-190">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-190">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-190">Return Value</span></span>
 
-<span data-ttu-id="18cf4-191">MenuFunction クラスの enumTypeParameter プロパティ。</span><span class="sxs-lookup"><span data-stu-id="18cf4-191">The enumTypeParameter property for the MenuFunction class.</span></span>
+<span data-ttu-id="0f5c1-191">MenuFunction クラスの enumTypeParameter プロパティ。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-191">The enumTypeParameter property for the MenuFunction class.</span></span>
 
-### <a name="method-externalrecord"></a><span data-ttu-id="18cf4-192">メソッド externalRecord</span><span class="sxs-lookup"><span data-stu-id="18cf4-192">Method externalRecord</span></span>
+### <a name="method-externalrecord"></a><span data-ttu-id="0f5c1-192">メソッド externalRecord</span><span class="sxs-lookup"><span data-stu-id="0f5c1-192">Method externalRecord</span></span>
 
     public Common externalRecord([Common value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-193">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-193">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-193">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-193">Parameters</span></span>
 
-<span data-ttu-id="18cf4-194">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-194">value</span></span>  
+<span data-ttu-id="0f5c1-194">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-194">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-195">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-195">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-195">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-195">Return Value</span></span>
 
-### <a name="method-menuitemname"></a><span data-ttu-id="18cf4-196">メソッド menuItemName</span><span class="sxs-lookup"><span data-stu-id="18cf4-196">Method menuItemName</span></span>
+### <a name="method-menuitemname"></a><span data-ttu-id="0f5c1-196">メソッド menuItemName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-196">Method menuItemName</span></span>
 
     public str menuItemName([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-197">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-197">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-197">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-197">Parameters</span></span>
 
-<span data-ttu-id="18cf4-198">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-198">value</span></span>  
+<span data-ttu-id="0f5c1-198">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-198">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-199">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-199">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-199">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-199">Return Value</span></span>
 
-### <a name="method-parameters"></a><span data-ttu-id="18cf4-200">メソッド parameters</span><span class="sxs-lookup"><span data-stu-id="18cf4-200">Method parameters</span></span>
+### <a name="method-parameters"></a><span data-ttu-id="0f5c1-200">メソッド parameters</span><span class="sxs-lookup"><span data-stu-id="0f5c1-200">Method parameters</span></span>
 
-<span data-ttu-id="18cf4-201">MenuFunction クラスで実行されるオブジェクトに渡されるパラメータの一覧を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-201">Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.</span></span>
+<span data-ttu-id="0f5c1-201">MenuFunction クラスで実行されるオブジェクトに渡されるパラメータの一覧を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-201">Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.</span></span>
 
     public str parameters([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-202">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-202">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-202">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-202">Parameters</span></span>
 
-<span data-ttu-id="18cf4-203">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-203">value</span></span>  
+<span data-ttu-id="0f5c1-203">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-203">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-204">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-204">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-204">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-204">Return Value</span></span>
 
-<span data-ttu-id="18cf4-205">オブジェクトに渡されるパラメーターのリスト。</span><span class="sxs-lookup"><span data-stu-id="18cf4-205">The list of parameters that are passed to the object.</span></span>
+<span data-ttu-id="0f5c1-205">オブジェクトに渡されるパラメーターのリスト。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-205">The list of parameters that are passed to the object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-206">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-206">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-206">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-206">Remarks</span></span>
 
-<span data-ttu-id="18cf4-207">パラメータ文字列形式は、パラメーター 1 = 値 1、パラメーター 2 = 値 2、.... というようになります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-207">The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on.</span></span> <span data-ttu-id="18cf4-208">オブジェクトは、渡された未認識のパラメーターを無視します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-208">Objects ignore passed, unrecognized parameters.</span></span>
+<span data-ttu-id="0f5c1-207">パラメータ文字列形式は、パラメーター 1 = 値 1、パラメーター 2 = 値 2、.... というようになります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-207">The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on.</span></span> <span data-ttu-id="0f5c1-208">オブジェクトは、渡された未認識のパラメーターを無視します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-208">Objects ignore passed, unrecognized parameters.</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-209">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-209">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-209">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-209">Method new</span></span>
 
-<span data-ttu-id="18cf4-210">PageArgs クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-210">Initializes a new instance of the PageArgs class.</span></span>
+<span data-ttu-id="0f5c1-210">PageArgs クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-210">Initializes a new instance of the PageArgs class.</span></span>
 
     public void new()
 
-## <a name="class-pageinteraction"></a><span data-ttu-id="18cf4-211">クラス PageInteraction</span><span class="sxs-lookup"><span data-stu-id="18cf4-211">Class PageInteraction</span></span>
+## <a name="class-pageinteraction"></a><span data-ttu-id="0f5c1-211">クラス PageInteraction</span><span class="sxs-lookup"><span data-stu-id="0f5c1-211">Class PageInteraction</span></span>
     class PageInteraction extends Object
 
-<span data-ttu-id="18cf4-212">PageInteraction クラスは、リスト ページとやり取りするための機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-212">The PageInteraction class provides functionality for interacting with a list page.</span></span>
+<span data-ttu-id="0f5c1-212">PageInteraction クラスは、リスト ページとやり取りするための機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-212">The PageInteraction class provides functionality for interacting with a list page.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-213">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-213">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-213">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-213">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-214">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-214">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-214">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-214">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-215">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-215">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-215">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-215">Methods</span></span>
 
-| <span data-ttu-id="18cf4-216">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-216">Method</span></span>                                           | <span data-ttu-id="18cf4-217">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-217">Description</span></span>                                                        |
+| <span data-ttu-id="0f5c1-216">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-216">Method</span></span>                                           | <span data-ttu-id="0f5c1-217">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-217">Description</span></span>                                                        |
 |--------------------------------------------------|--------------------------------------------------------------------|
-| <span data-ttu-id="18cf4-218">public Page page()</span><span class="sxs-lookup"><span data-stu-id="18cf4-218">public Page page()</span></span>                               | <span data-ttu-id="18cf4-219">ListPage インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-219">Gets the ListPage instance.</span></span>                                        |
-| <span data-ttu-id="18cf4-220">public void tabChanged(container activeTabNames)</span><span class="sxs-lookup"><span data-stu-id="18cf4-220">public void tabChanged(container activeTabNames)</span></span> |                                                                    |
-| <span data-ttu-id="18cf4-221">public void new(Page page)</span><span class="sxs-lookup"><span data-stu-id="18cf4-221">public void new(Page page)</span></span>                       | <span data-ttu-id="18cf4-222">リスト ページ上で動作する新しい PageInteraction オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-222">Creates a new PageInteraction object that operates on a list page.</span></span> |
+| <span data-ttu-id="0f5c1-218">public Page page()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-218">public Page page()</span></span>                               | <span data-ttu-id="0f5c1-219">ListPage インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-219">Gets the ListPage instance.</span></span>                                        |
+| <span data-ttu-id="0f5c1-220">public void tabChanged(container activeTabNames)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-220">public void tabChanged(container activeTabNames)</span></span> |                                                                    |
+| <span data-ttu-id="0f5c1-221">public void new(Page page)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-221">public void new(Page page)</span></span>                       | <span data-ttu-id="0f5c1-222">リスト ページ上で動作する新しい PageInteraction オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-222">Creates a new PageInteraction object that operates on a list page.</span></span> |
 
-### <a name="method-page"></a><span data-ttu-id="18cf4-223">メソッド page</span><span class="sxs-lookup"><span data-stu-id="18cf4-223">Method page</span></span>
+### <a name="method-page"></a><span data-ttu-id="0f5c1-223">メソッド page</span><span class="sxs-lookup"><span data-stu-id="0f5c1-223">Method page</span></span>
 
-<span data-ttu-id="18cf4-224">ListPage インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-224">Gets the ListPage instance.</span></span>
+<span data-ttu-id="0f5c1-224">ListPage インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-224">Gets the ListPage instance.</span></span>
 
     public Page page()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-225">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-225">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-225">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-225">Return Value</span></span>
 
-<span data-ttu-id="18cf4-226">この PageInteraction インスタンスの ListPage インスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-226">Returns the ListPage instance for this PageInteraction instance.</span></span>
+<span data-ttu-id="0f5c1-226">この PageInteraction インスタンスの ListPage インスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-226">Returns the ListPage instance for this PageInteraction instance.</span></span>
 
-### <a name="method-tabchanged"></a><span data-ttu-id="18cf4-227">メソッド tabChanged</span><span class="sxs-lookup"><span data-stu-id="18cf4-227">Method tabChanged</span></span>
+### <a name="method-tabchanged"></a><span data-ttu-id="0f5c1-227">メソッド tabChanged</span><span class="sxs-lookup"><span data-stu-id="0f5c1-227">Method tabChanged</span></span>
 
     public void tabChanged(container activeTabNames)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-228">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-228">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-228">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-228">Parameters</span></span>
 
-<span data-ttu-id="18cf4-229">activeTabNames</span><span class="sxs-lookup"><span data-stu-id="18cf4-229">activeTabNames</span></span>  
+<span data-ttu-id="0f5c1-229">activeTabNames</span><span class="sxs-lookup"><span data-stu-id="0f5c1-229">activeTabNames</span></span>  
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-230">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-230">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-230">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-230">Method new</span></span>
 
-<span data-ttu-id="18cf4-231">リスト ページ上で動作する新しい PageInteraction オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-231">Creates a new PageInteraction object that operates on a list page.</span></span>
+<span data-ttu-id="0f5c1-231">リスト ページ上で動作する新しい PageInteraction オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-231">Creates a new PageInteraction object that operates on a list page.</span></span>
 
     public void new(Page page)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-232">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-232">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-232">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-232">Parameters</span></span>
 
-<span data-ttu-id="18cf4-233">ページ</span><span class="sxs-lookup"><span data-stu-id="18cf4-233">page</span></span>  
+<span data-ttu-id="0f5c1-233">ページ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-233">page</span></span>  
 
-## <a name="class-partlist"></a><span data-ttu-id="18cf4-234">クラス PartList</span><span class="sxs-lookup"><span data-stu-id="18cf4-234">Class PartList</span></span>
+## <a name="class-partlist"></a><span data-ttu-id="0f5c1-234">クラス PartList</span><span class="sxs-lookup"><span data-stu-id="0f5c1-234">Class PartList</span></span>
     class PartList extends Object
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-235">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-235">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-235">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-235">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-236">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-236">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-236">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-236">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-237">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-237">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-237">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-237">Methods</span></span>
 
-| <span data-ttu-id="18cf4-238">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-238">Method</span></span>                                        | <span data-ttu-id="18cf4-239">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-239">Description</span></span>                                     |
+| <span data-ttu-id="0f5c1-238">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-238">Method</span></span>                                        | <span data-ttu-id="0f5c1-239">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-239">Description</span></span>                                     |
 |-----------------------------------------------|-------------------------------------------------|
-| <span data-ttu-id="18cf4-240">public xFormRun getPartById(int id)</span><span class="sxs-lookup"><span data-stu-id="18cf4-240">public xFormRun getPartById(int id)</span></span>           |                                                 |
-| <span data-ttu-id="18cf4-241">public FormControl getPartControlById(int id)</span><span class="sxs-lookup"><span data-stu-id="18cf4-241">public FormControl getPartControlById(int id)</span></span> |                                                 |
-| <span data-ttu-id="18cf4-242">public int partCount()</span><span class="sxs-lookup"><span data-stu-id="18cf4-242">public int partCount()</span></span>                        |                                                 |
-| <span data-ttu-id="18cf4-243">public void new(xFormRun form)</span><span class="sxs-lookup"><span data-stu-id="18cf4-243">public void new(xFormRun form)</span></span>                | <span data-ttu-id="18cf4-244">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-244">Initializes a new instance of the Object class.</span></span> |
-| <span data-ttu-id="18cf4-245">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="18cf4-245">public void finalize()</span></span>                        |                                                 |
+| <span data-ttu-id="0f5c1-240">public xFormRun getPartById(int id)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-240">public xFormRun getPartById(int id)</span></span>           |                                                 |
+| <span data-ttu-id="0f5c1-241">public FormControl getPartControlById(int id)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-241">public FormControl getPartControlById(int id)</span></span> |                                                 |
+| <span data-ttu-id="0f5c1-242">public int partCount()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-242">public int partCount()</span></span>                        |                                                 |
+| <span data-ttu-id="0f5c1-243">public void new(xFormRun form)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-243">public void new(xFormRun form)</span></span>                | <span data-ttu-id="0f5c1-244">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-244">Initializes a new instance of the Object class.</span></span> |
+| <span data-ttu-id="0f5c1-245">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-245">public void finalize()</span></span>                        |                                                 |
 
-### <a name="method-getpartbyid"></a><span data-ttu-id="18cf4-246">メソッド getPartById</span><span class="sxs-lookup"><span data-stu-id="18cf4-246">Method getPartById</span></span>
+### <a name="method-getpartbyid"></a><span data-ttu-id="0f5c1-246">メソッド getPartById</span><span class="sxs-lookup"><span data-stu-id="0f5c1-246">Method getPartById</span></span>
 
     public xFormRun getPartById(int id)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-247">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-247">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-247">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-247">Parameters</span></span>
 
-<span data-ttu-id="18cf4-248">id</span><span class="sxs-lookup"><span data-stu-id="18cf4-248">id</span></span>  
+<span data-ttu-id="0f5c1-248">id</span><span class="sxs-lookup"><span data-stu-id="0f5c1-248">id</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-249">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-249">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-249">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-249">Return Value</span></span>
 
-### <a name="method-getpartcontrolbyid"></a><span data-ttu-id="18cf4-250">メソッド getPartControlById</span><span class="sxs-lookup"><span data-stu-id="18cf4-250">Method getPartControlById</span></span>
+### <a name="method-getpartcontrolbyid"></a><span data-ttu-id="0f5c1-250">メソッド getPartControlById</span><span class="sxs-lookup"><span data-stu-id="0f5c1-250">Method getPartControlById</span></span>
 
     public FormControl getPartControlById(int id)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-251">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-251">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-251">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-251">Parameters</span></span>
 
-<span data-ttu-id="18cf4-252">id</span><span class="sxs-lookup"><span data-stu-id="18cf4-252">id</span></span>  
+<span data-ttu-id="0f5c1-252">id</span><span class="sxs-lookup"><span data-stu-id="0f5c1-252">id</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-253">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-253">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-253">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-253">Return Value</span></span>
 
-### <a name="method-partcount"></a><span data-ttu-id="18cf4-254">メソッド partCount</span><span class="sxs-lookup"><span data-stu-id="18cf4-254">Method partCount</span></span>
+### <a name="method-partcount"></a><span data-ttu-id="0f5c1-254">メソッド partCount</span><span class="sxs-lookup"><span data-stu-id="0f5c1-254">Method partCount</span></span>
 
     public int partCount()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-255">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-255">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-255">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-255">Return Value</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-256">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-256">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-256">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-256">Method new</span></span>
 
-<span data-ttu-id="18cf4-257">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-257">Initializes a new instance of the Object class.</span></span>
+<span data-ttu-id="0f5c1-257">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-257">Initializes a new instance of the Object class.</span></span>
 
     public void new(xFormRun form)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-258">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-258">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-258">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-258">Parameters</span></span>
 
-<span data-ttu-id="18cf4-259">フォーム</span><span class="sxs-lookup"><span data-stu-id="18cf4-259">form</span></span>  
+<span data-ttu-id="0f5c1-259">フォーム</span><span class="sxs-lookup"><span data-stu-id="0f5c1-259">form</span></span>  
 
-### <a name="method-finalize"></a><span data-ttu-id="18cf4-260">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="18cf4-260">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="0f5c1-260">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="0f5c1-260">Method finalize</span></span>
 
     public void finalize()
 
-## <a name="class-percentbar"></a><span data-ttu-id="18cf4-261">クラス Percentbar</span><span class="sxs-lookup"><span data-stu-id="18cf4-261">Class Percentbar</span></span>
+## <a name="class-percentbar"></a><span data-ttu-id="0f5c1-261">クラス Percentbar</span><span class="sxs-lookup"><span data-stu-id="0f5c1-261">Class Percentbar</span></span>
     class Percentbar extends Object
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-262">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-262">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-262">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-262">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-263">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-263">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-263">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-263">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-264">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-264">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-264">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-264">Methods</span></span>
 
-| <span data-ttu-id="18cf4-265">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-265">Method</span></span>                                   | <span data-ttu-id="18cf4-266">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-266">Description</span></span>                                         |
+| <span data-ttu-id="0f5c1-265">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-265">Method</span></span>                                   | <span data-ttu-id="0f5c1-266">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-266">Description</span></span>                                         |
 |------------------------------------------|-----------------------------------------------------|
-| <span data-ttu-id="18cf4-267">public void new(int maxCount, str title)</span><span class="sxs-lookup"><span data-stu-id="18cf4-267">public void new(int maxCount, str title)</span></span> | <span data-ttu-id="18cf4-268">Percentbar クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-268">Initializes a new instance of the Percentbar class.</span></span> |
-| <span data-ttu-id="18cf4-269">public void set(int count)</span><span class="sxs-lookup"><span data-stu-id="18cf4-269">public void set(int count)</span></span>               |                                                     |
-| <span data-ttu-id="18cf4-270">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="18cf4-270">public void finalize()</span></span>                   |                                                     |
+| <span data-ttu-id="0f5c1-267">public void new(int maxCount, str title)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-267">public void new(int maxCount, str title)</span></span> | <span data-ttu-id="0f5c1-268">Percentbar クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-268">Initializes a new instance of the Percentbar class.</span></span> |
+| <span data-ttu-id="0f5c1-269">public void set(int count)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-269">public void set(int count)</span></span>               |                                                     |
+| <span data-ttu-id="0f5c1-270">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-270">public void finalize()</span></span>                   |                                                     |
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-271">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-271">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-271">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-271">Method new</span></span>
 
-<span data-ttu-id="18cf4-272">Percentbar クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-272">Initializes a new instance of the Percentbar class.</span></span>
+<span data-ttu-id="0f5c1-272">Percentbar クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-272">Initializes a new instance of the Percentbar class.</span></span>
 
     public void new(int maxCount, str title)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-273">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-273">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-273">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-273">Parameters</span></span>
 
-<span data-ttu-id="18cf4-274">maxCount</span><span class="sxs-lookup"><span data-stu-id="18cf4-274">maxCount</span></span>  
+<span data-ttu-id="0f5c1-274">maxCount</span><span class="sxs-lookup"><span data-stu-id="0f5c1-274">maxCount</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-275">title</span><span class="sxs-lookup"><span data-stu-id="18cf4-275">title</span></span>  
+<span data-ttu-id="0f5c1-275">title</span><span class="sxs-lookup"><span data-stu-id="0f5c1-275">title</span></span>  
 
-### <a name="method-set"></a><span data-ttu-id="18cf4-276">メソッド set</span><span class="sxs-lookup"><span data-stu-id="18cf4-276">Method set</span></span>
+### <a name="method-set"></a><span data-ttu-id="0f5c1-276">メソッド set</span><span class="sxs-lookup"><span data-stu-id="0f5c1-276">Method set</span></span>
 
     public void set(int count)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-277">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-277">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-277">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-277">Parameters</span></span>
 
-<span data-ttu-id="18cf4-278">カウント</span><span class="sxs-lookup"><span data-stu-id="18cf4-278">count</span></span>  
+<span data-ttu-id="0f5c1-278">カウント</span><span class="sxs-lookup"><span data-stu-id="0f5c1-278">count</span></span>  
 
-### <a name="method-finalize"></a><span data-ttu-id="18cf4-279">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="18cf4-279">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="0f5c1-279">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="0f5c1-279">Method finalize</span></span>
 
     public void finalize()
 
-## <a name="class-performancemonitor"></a><span data-ttu-id="18cf4-280">クラス PerformanceMonitor</span><span class="sxs-lookup"><span data-stu-id="18cf4-280">Class PerformanceMonitor</span></span>
+## <a name="class-performancemonitor"></a><span data-ttu-id="0f5c1-280">クラス PerformanceMonitor</span><span class="sxs-lookup"><span data-stu-id="0f5c1-280">Class PerformanceMonitor</span></span>
     class PerformanceMonitor extends Object
 
-<span data-ttu-id="18cf4-281">PerformanceMonitor クラスは、システムで実行されているプロセスのデータをフェッチします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-281">The PerformanceMonitor class fetches data for processes that are running on the system.</span></span>
+<span data-ttu-id="0f5c1-281">PerformanceMonitor クラスは、システムで実行されているプロセスのデータをフェッチします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-281">The PerformanceMonitor class fetches data for processes that are running on the system.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-282">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-282">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-282">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-282">Remarks</span></span>
 
-<span data-ttu-id="18cf4-283">いつでもシステムのスナップショットを取得して、システムで実行されている任意のプロセスのカウンター上で移動することができます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-283">You can take a snapshot of the system at any time and traverse the counters for any process that is running on the system.</span></span>
+<span data-ttu-id="0f5c1-283">いつでもシステムのスナップショットを取得して、システムで実行されている任意のプロセスのカウンター上で移動することができます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-283">You can take a snapshot of the system at any time and traverse the counters for any process that is running on the system.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-284">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-284">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-284">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-284">Examples</span></span>
 
-<span data-ttu-id="18cf4-285">次の例は、現在実行中のすべてのプロセスの processId および workingset 値を出力します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-285">The following example prints the processId and workingset values for all the currently running processes.</span></span>
+<span data-ttu-id="0f5c1-285">次の例は、現在実行中のすべてのプロセスの processId および workingset 値を出力します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-285">The following example prints the processId and workingset values for all the currently running processes.</span></span>
 
     static void pvPerformanceMonitorTest(args a) 
     { 
@@ -413,43 +413,43 @@ ms.locfileid: "1544202"
         pause;  
     }
 
-### <a name="methods"></a><span data-ttu-id="18cf4-286">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-286">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-286">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-286">Methods</span></span>
 
-| <span data-ttu-id="18cf4-287">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-287">Method</span></span>                                                     | <span data-ttu-id="18cf4-288">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-288">Description</span></span>                                                                                    |
+| <span data-ttu-id="0f5c1-287">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-287">Method</span></span>                                                     | <span data-ttu-id="0f5c1-288">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-288">Description</span></span>                                                                                    |
 |------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="18cf4-289">public PerformanceMonitorInstance instance(int instanceNo)</span><span class="sxs-lookup"><span data-stu-id="18cf4-289">public PerformanceMonitorInstance instance(int instanceNo)</span></span> |                                                                                                |
-| <span data-ttu-id="18cf4-290">public int instanceCount()</span><span class="sxs-lookup"><span data-stu-id="18cf4-290">public int instanceCount()</span></span>                                 | <span data-ttu-id="18cf4-291">インスタンス数 (現在のスナップショットのプロセスの数) を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-291">Returns the instance count, which is the number of processes in the current snapshot.</span></span>          |
-| <span data-ttu-id="18cf4-292">public int processId()</span><span class="sxs-lookup"><span data-stu-id="18cf4-292">public int processId()</span></span>                                     | <span data-ttu-id="18cf4-293">このメソッドを実行しているプロセスの processId 値を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-293">Returns the processId value of the process that is running this method.</span></span>                        |
-| <span data-ttu-id="18cf4-294">public str systemName()</span><span class="sxs-lookup"><span data-stu-id="18cf4-294">public str systemName()</span></span>                                    |                                                                                                |
-| <span data-ttu-id="18cf4-295">public boolean takeSnapshot(\[str processName\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-295">public boolean takeSnapshot(\[str processName\])</span></span>           |                                                                                                |
-| <span data-ttu-id="18cf4-296">public str toString()</span><span class="sxs-lookup"><span data-stu-id="18cf4-296">public str toString()</span></span>                                      | <span data-ttu-id="18cf4-297">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-297">Returns a string that contains the class handle and name, and possibly additional information.</span></span> |
-| <span data-ttu-id="18cf4-298">public void new()</span><span class="sxs-lookup"><span data-stu-id="18cf4-298">public void new()</span></span>                                          | <span data-ttu-id="18cf4-299">PerformanceMonitor クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-299">Initializes a new instance of the PerformanceMonitor class.</span></span>                                    |
+| <span data-ttu-id="0f5c1-289">public PerformanceMonitorInstance instance(int instanceNo)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-289">public PerformanceMonitorInstance instance(int instanceNo)</span></span> |                                                                                                |
+| <span data-ttu-id="0f5c1-290">public int instanceCount()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-290">public int instanceCount()</span></span>                                 | <span data-ttu-id="0f5c1-291">インスタンス数 (現在のスナップショットのプロセスの数) を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-291">Returns the instance count, which is the number of processes in the current snapshot.</span></span>          |
+| <span data-ttu-id="0f5c1-292">public int processId()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-292">public int processId()</span></span>                                     | <span data-ttu-id="0f5c1-293">このメソッドを実行しているプロセスの processId 値を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-293">Returns the processId value of the process that is running this method.</span></span>                        |
+| <span data-ttu-id="0f5c1-294">public str systemName()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-294">public str systemName()</span></span>                                    |                                                                                                |
+| <span data-ttu-id="0f5c1-295">public boolean takeSnapshot(\[str processName\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-295">public boolean takeSnapshot(\[str processName\])</span></span>           |                                                                                                |
+| <span data-ttu-id="0f5c1-296">public str toString()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-296">public str toString()</span></span>                                      | <span data-ttu-id="0f5c1-297">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-297">Returns a string that contains the class handle and name, and possibly additional information.</span></span> |
+| <span data-ttu-id="0f5c1-298">public void new()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-298">public void new()</span></span>                                          | <span data-ttu-id="0f5c1-299">PerformanceMonitor クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-299">Initializes a new instance of the PerformanceMonitor class.</span></span>                                    |
 
-### <a name="method-instance"></a><span data-ttu-id="18cf4-300">メソッド instance</span><span class="sxs-lookup"><span data-stu-id="18cf4-300">Method instance</span></span>
+### <a name="method-instance"></a><span data-ttu-id="0f5c1-300">メソッド instance</span><span class="sxs-lookup"><span data-stu-id="0f5c1-300">Method instance</span></span>
 
     public PerformanceMonitorInstance instance(int instanceNo)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-301">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-301">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-301">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-301">Parameters</span></span>
 
-<span data-ttu-id="18cf4-302">instanceNo</span><span class="sxs-lookup"><span data-stu-id="18cf4-302">instanceNo</span></span>  
+<span data-ttu-id="0f5c1-302">instanceNo</span><span class="sxs-lookup"><span data-stu-id="0f5c1-302">instanceNo</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-303">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-303">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-303">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-303">Return Value</span></span>
 
-### <a name="method-instancecount"></a><span data-ttu-id="18cf4-304">メソッド instanceCount</span><span class="sxs-lookup"><span data-stu-id="18cf4-304">Method instanceCount</span></span>
+### <a name="method-instancecount"></a><span data-ttu-id="0f5c1-304">メソッド instanceCount</span><span class="sxs-lookup"><span data-stu-id="0f5c1-304">Method instanceCount</span></span>
 
-<span data-ttu-id="18cf4-305">インスタンス数 (現在のスナップショットのプロセスの数) を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-305">Returns the instance count, which is the number of processes in the current snapshot.</span></span>
+<span data-ttu-id="0f5c1-305">インスタンス数 (現在のスナップショットのプロセスの数) を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-305">Returns the instance count, which is the number of processes in the current snapshot.</span></span>
 
     public int instanceCount()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-306">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-306">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-306">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-306">Return Value</span></span>
 
-<span data-ttu-id="18cf4-307">現在のスナップショット内のプロセス数。</span><span class="sxs-lookup"><span data-stu-id="18cf4-307">The number of processes in the current snapshot.</span></span>
+<span data-ttu-id="0f5c1-307">現在のスナップショット内のプロセス数。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-307">The number of processes in the current snapshot.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-308">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-308">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-308">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-308">Remarks</span></span>
 
-<span data-ttu-id="18cf4-309">現在実行中のプロセスのスナップショットを取得するには、takeSnapshot メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-309">Use the takeSnapshot method to take a snapshot of the currently running processes.</span></span>
+<span data-ttu-id="0f5c1-309">現在実行中のプロセスのスナップショットを取得するには、takeSnapshot メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-309">Use the takeSnapshot method to take a snapshot of the currently running processes.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="18cf4-310">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-310">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="0f5c1-310">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-310">Examples</span></span>
 
     static void pvPerformanceMonitorTest(args a) 
     { 
@@ -472,17 +472,17 @@ ms.locfileid: "1544202"
         pause; 
     }
 
-### <a name="method-processid"></a><span data-ttu-id="18cf4-311">メソッド processId</span><span class="sxs-lookup"><span data-stu-id="18cf4-311">Method processId</span></span>
+### <a name="method-processid"></a><span data-ttu-id="0f5c1-311">メソッド processId</span><span class="sxs-lookup"><span data-stu-id="0f5c1-311">Method processId</span></span>
 
-<span data-ttu-id="18cf4-312">このメソッドを実行しているプロセスの processId 値を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-312">Returns the processId value of the process that is running this method.</span></span>
+<span data-ttu-id="0f5c1-312">このメソッドを実行しているプロセスの processId 値を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-312">Returns the processId value of the process that is running this method.</span></span>
 
     public int processId()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-313">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-313">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-313">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-313">Return Value</span></span>
 
-<span data-ttu-id="18cf4-314">このメソッドを実行している、Finance and Operations プロセスの processId 値。</span><span class="sxs-lookup"><span data-stu-id="18cf4-314">The processId value of the Finance and Operations process that is running this method.</span></span>
+<span data-ttu-id="0f5c1-314">このメソッドを実行している、Finance and Operations プロセスの processId 値。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-314">The processId value of the Finance and Operations process that is running this method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="18cf4-315">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-315">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="0f5c1-315">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-315">Examples</span></span>
 
     static void processIdDemo(args a) 
     { 
@@ -491,451 +491,451 @@ ms.locfileid: "1544202"
         pause; 
     }
 
-### <a name="method-systemname"></a><span data-ttu-id="18cf4-316">メソッド systemName</span><span class="sxs-lookup"><span data-stu-id="18cf4-316">Method systemName</span></span>
+### <a name="method-systemname"></a><span data-ttu-id="0f5c1-316">メソッド systemName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-316">Method systemName</span></span>
 
     public str systemName()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-317">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-317">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-317">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-317">Return Value</span></span>
 
-### <a name="method-takesnapshot"></a><span data-ttu-id="18cf4-318">メソッド takeSnapshot</span><span class="sxs-lookup"><span data-stu-id="18cf4-318">Method takeSnapshot</span></span>
+### <a name="method-takesnapshot"></a><span data-ttu-id="0f5c1-318">メソッド takeSnapshot</span><span class="sxs-lookup"><span data-stu-id="0f5c1-318">Method takeSnapshot</span></span>
 
     public boolean takeSnapshot([str processName])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-319">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-319">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-319">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-319">Parameters</span></span>
 
-<span data-ttu-id="18cf4-320">processName</span><span class="sxs-lookup"><span data-stu-id="18cf4-320">processName</span></span>  
+<span data-ttu-id="0f5c1-320">processName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-320">processName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-321">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-321">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-321">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-321">Return Value</span></span>
 
-### <a name="method-tostring"></a><span data-ttu-id="18cf4-322">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="18cf4-322">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="0f5c1-322">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="0f5c1-322">Method toString</span></span>
 
-<span data-ttu-id="18cf4-323">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-323">Returns a string that contains the class handle and name, and possibly additional information.</span></span>
+<span data-ttu-id="0f5c1-323">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-323">Returns a string that contains the class handle and name, and possibly additional information.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-324">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-324">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-324">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-324">Return Value</span></span>
 
-<span data-ttu-id="18cf4-325">クラスのテキストの説明。</span><span class="sxs-lookup"><span data-stu-id="18cf4-325">A textual description of the class.</span></span>
+<span data-ttu-id="0f5c1-325">クラスのテキストの説明。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-325">A textual description of the class.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-326">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-326">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-326">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-326">Remarks</span></span>
 
-<span data-ttu-id="18cf4-327">既定では、ほとんどのクラスは、toString メソッドがクラス ハンドルおよび名前を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-327">By default, for most classes, the toString method returns a string that contains the class handle and name.</span></span> <span data-ttu-id="18cf4-328">ただし、一部のクラスでは、追加情報が文字列で返されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-328">However, in some classes, additional information is returned in the string.</span></span>
+<span data-ttu-id="0f5c1-327">既定では、ほとんどのクラスは、toString メソッドがクラス ハンドルおよび名前を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-327">By default, for most classes, the toString method returns a string that contains the class handle and name.</span></span> <span data-ttu-id="0f5c1-328">ただし、一部のクラスでは、追加情報が文字列で返されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-328">However, in some classes, additional information is returned in the string.</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-329">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-329">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-329">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-329">Method new</span></span>
 
-<span data-ttu-id="18cf4-330">PerformanceMonitor クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-330">Initializes a new instance of the PerformanceMonitor class.</span></span>
+<span data-ttu-id="0f5c1-330">PerformanceMonitor クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-330">Initializes a new instance of the PerformanceMonitor class.</span></span>
 
     public void new()
 
-## <a name="class-performancemonitorcounter"></a><span data-ttu-id="18cf4-331">クラス PerformanceMonitorCounter</span><span class="sxs-lookup"><span data-stu-id="18cf4-331">Class PerformanceMonitorCounter</span></span>
+## <a name="class-performancemonitorcounter"></a><span data-ttu-id="0f5c1-331">クラス PerformanceMonitorCounter</span><span class="sxs-lookup"><span data-stu-id="0f5c1-331">Class PerformanceMonitorCounter</span></span>
     class PerformanceMonitorCounter extends Object
 
-<span data-ttu-id="18cf4-332">PerformanceMonitorCounter クラスでは、特定のスナップショットの特定のインスタンスに割り当てられているカウンターを識別します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-332">The PerformanceMonitorCounter class identifies a counter that is assigned to a particular instance of a particular snapshot.</span></span>
+<span data-ttu-id="0f5c1-332">PerformanceMonitorCounter クラスでは、特定のスナップショットの特定のインスタンスに割り当てられているカウンターを識別します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-332">The PerformanceMonitorCounter class identifies a counter that is assigned to a particular instance of a particular snapshot.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-333">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-333">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-333">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-333">Remarks</span></span>
 
-<span data-ttu-id="18cf4-334">get メソッドを使用してデータを取得できます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-334">The data can be fetched by using the get methods.</span></span>
+<span data-ttu-id="0f5c1-334">get メソッドを使用してデータを取得できます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-334">The data can be fetched by using the get methods.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-335">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-335">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-335">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-335">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-336">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-336">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-336">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-336">Methods</span></span>
 
-| <span data-ttu-id="18cf4-337">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-337">Method</span></span>                 | <span data-ttu-id="18cf4-338">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-338">Description</span></span>                                                                                    |
+| <span data-ttu-id="0f5c1-337">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-337">Method</span></span>                 | <span data-ttu-id="0f5c1-338">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-338">Description</span></span>                                                                                    |
 |------------------------|------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="18cf4-339">public int intData()</span><span class="sxs-lookup"><span data-stu-id="18cf4-339">public int intData()</span></span>   |                                                                                                |
-| <span data-ttu-id="18cf4-340">public str name()</span><span class="sxs-lookup"><span data-stu-id="18cf4-340">public str name()</span></span>      |                                                                                                |
-| <span data-ttu-id="18cf4-341">public Time timeData()</span><span class="sxs-lookup"><span data-stu-id="18cf4-341">public Time timeData()</span></span> |                                                                                                |
-| <span data-ttu-id="18cf4-342">public str toString()</span><span class="sxs-lookup"><span data-stu-id="18cf4-342">public str toString()</span></span>  | <span data-ttu-id="18cf4-343">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-343">Returns a string that contains the class handle and name, and possibly additional information.</span></span> |
+| <span data-ttu-id="0f5c1-339">public int intData()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-339">public int intData()</span></span>   |                                                                                                |
+| <span data-ttu-id="0f5c1-340">public str name()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-340">public str name()</span></span>      |                                                                                                |
+| <span data-ttu-id="0f5c1-341">public Time timeData()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-341">public Time timeData()</span></span> |                                                                                                |
+| <span data-ttu-id="0f5c1-342">public str toString()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-342">public str toString()</span></span>  | <span data-ttu-id="0f5c1-343">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-343">Returns a string that contains the class handle and name, and possibly additional information.</span></span> |
 
-### <a name="method-intdata"></a><span data-ttu-id="18cf4-344">メソッド intData</span><span class="sxs-lookup"><span data-stu-id="18cf4-344">Method intData</span></span>
+### <a name="method-intdata"></a><span data-ttu-id="0f5c1-344">メソッド intData</span><span class="sxs-lookup"><span data-stu-id="0f5c1-344">Method intData</span></span>
 
     public int intData()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-345">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-345">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-345">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-345">Return Value</span></span>
 
-### <a name="method-name"></a><span data-ttu-id="18cf4-346">メソッド名</span><span class="sxs-lookup"><span data-stu-id="18cf4-346">Method name</span></span>
+### <a name="method-name"></a><span data-ttu-id="0f5c1-346">メソッド名</span><span class="sxs-lookup"><span data-stu-id="0f5c1-346">Method name</span></span>
 
     public str name()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-347">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-347">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-347">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-347">Return Value</span></span>
 
-### <a name="method-timedata"></a><span data-ttu-id="18cf4-348">メソッド timeData</span><span class="sxs-lookup"><span data-stu-id="18cf4-348">Method timeData</span></span>
+### <a name="method-timedata"></a><span data-ttu-id="0f5c1-348">メソッド timeData</span><span class="sxs-lookup"><span data-stu-id="0f5c1-348">Method timeData</span></span>
 
     public Time timeData()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-349">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-349">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-349">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-349">Return Value</span></span>
 
-### <a name="method-tostring"></a><span data-ttu-id="18cf4-350">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="18cf4-350">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="0f5c1-350">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="0f5c1-350">Method toString</span></span>
 
-<span data-ttu-id="18cf4-351">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-351">Returns a string that contains the class handle and name, and possibly additional information.</span></span>
+<span data-ttu-id="0f5c1-351">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-351">Returns a string that contains the class handle and name, and possibly additional information.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-352">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-352">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-352">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-352">Return Value</span></span>
 
-<span data-ttu-id="18cf4-353">クラスのテキストの説明。</span><span class="sxs-lookup"><span data-stu-id="18cf4-353">A textual description of the class.</span></span>
+<span data-ttu-id="0f5c1-353">クラスのテキストの説明。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-353">A textual description of the class.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-354">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-354">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-354">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-354">Remarks</span></span>
 
-<span data-ttu-id="18cf4-355">既定では、ほとんどのクラスは、toString メソッドがクラス ハンドルおよび名前を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-355">By default, for most classes, the toString method returns a string that contains the class handle and name.</span></span> <span data-ttu-id="18cf4-356">ただし、一部のクラスでは、追加情報が文字列で返されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-356">However, in some classes additional information is returned in the string.</span></span>
+<span data-ttu-id="0f5c1-355">既定では、ほとんどのクラスは、toString メソッドがクラス ハンドルおよび名前を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-355">By default, for most classes, the toString method returns a string that contains the class handle and name.</span></span> <span data-ttu-id="0f5c1-356">ただし、一部のクラスでは、追加情報が文字列で返されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-356">However, in some classes additional information is returned in the string.</span></span>
 
-## <a name="class-performancemonitorinstance"></a><span data-ttu-id="18cf4-357">クラス PerformanceMonitorInstance</span><span class="sxs-lookup"><span data-stu-id="18cf4-357">Class PerformanceMonitorInstance</span></span>
+## <a name="class-performancemonitorinstance"></a><span data-ttu-id="0f5c1-357">クラス PerformanceMonitorInstance</span><span class="sxs-lookup"><span data-stu-id="0f5c1-357">Class PerformanceMonitorInstance</span></span>
     class PerformanceMonitorInstance extends Object
 
-<span data-ttu-id="18cf4-358">PerformanceMonitorInstance クラスは、プロセス モニターが実行されるコンピューターで実行されているプロセスを表します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-358">The PerformanceMonitorInstance class represents a process that is running on the machine on which the Process Monitor runs.</span></span>
+<span data-ttu-id="0f5c1-358">PerformanceMonitorInstance クラスは、プロセス モニターが実行されるコンピューターで実行されているプロセスを表します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-358">The PerformanceMonitorInstance class represents a process that is running on the machine on which the Process Monitor runs.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-359">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-359">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-359">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-359">Remarks</span></span>
 
-<span data-ttu-id="18cf4-360">このクラスは、プロセス カウンターのクエリを可能にします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-360">This class allows for queries of the process counters.</span></span> <span data-ttu-id="18cf4-361">このクラスのオブジェクトを使用してプロセス カウンターをクエリすることができます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-361">You can use objects of this class to query the processes counters.</span></span> <span data-ttu-id="18cf4-362">各カウンターは、プロセス パラメーターを表します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-362">Each counter represents a process parameter.</span></span>
+<span data-ttu-id="0f5c1-360">このクラスは、プロセス カウンターのクエリを可能にします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-360">This class allows for queries of the process counters.</span></span> <span data-ttu-id="0f5c1-361">このクラスのオブジェクトを使用してプロセス カウンターをクエリすることができます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-361">You can use objects of this class to query the processes counters.</span></span> <span data-ttu-id="0f5c1-362">各カウンターは、プロセス パラメーターを表します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-362">Each counter represents a process parameter.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-363">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-363">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-363">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-363">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-364">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-364">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-364">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-364">Methods</span></span>
 
-| <span data-ttu-id="18cf4-365">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-365">Method</span></span>                                                       | <span data-ttu-id="18cf4-366">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-366">Description</span></span>                                                                                    |
+| <span data-ttu-id="0f5c1-365">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-365">Method</span></span>                                                       | <span data-ttu-id="0f5c1-366">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-366">Description</span></span>                                                                                    |
 |--------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="18cf4-367">public PerformanceMonitorCounter getCounter(str counterName)</span><span class="sxs-lookup"><span data-stu-id="18cf4-367">public PerformanceMonitorCounter getCounter(str counterName)</span></span> |                                                                                                |
-| <span data-ttu-id="18cf4-368">public str name()</span><span class="sxs-lookup"><span data-stu-id="18cf4-368">public str name()</span></span>                                            |                                                                                                |
-| <span data-ttu-id="18cf4-369">public str toString()</span><span class="sxs-lookup"><span data-stu-id="18cf4-369">public str toString()</span></span>                                        | <span data-ttu-id="18cf4-370">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-370">Returns a string that contains the class handle and name, and possibly additional information.</span></span> |
+| <span data-ttu-id="0f5c1-367">public PerformanceMonitorCounter getCounter(str counterName)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-367">public PerformanceMonitorCounter getCounter(str counterName)</span></span> |                                                                                                |
+| <span data-ttu-id="0f5c1-368">public str name()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-368">public str name()</span></span>                                            |                                                                                                |
+| <span data-ttu-id="0f5c1-369">public str toString()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-369">public str toString()</span></span>                                        | <span data-ttu-id="0f5c1-370">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-370">Returns a string that contains the class handle and name, and possibly additional information.</span></span> |
 
-### <a name="method-getcounter"></a><span data-ttu-id="18cf4-371">メソッド getCounter</span><span class="sxs-lookup"><span data-stu-id="18cf4-371">Method getCounter</span></span>
+### <a name="method-getcounter"></a><span data-ttu-id="0f5c1-371">メソッド getCounter</span><span class="sxs-lookup"><span data-stu-id="0f5c1-371">Method getCounter</span></span>
 
     public PerformanceMonitorCounter getCounter(str counterName)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-372">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-372">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-372">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-372">Parameters</span></span>
 
-<span data-ttu-id="18cf4-373">counterName</span><span class="sxs-lookup"><span data-stu-id="18cf4-373">counterName</span></span>  
+<span data-ttu-id="0f5c1-373">counterName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-373">counterName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-374">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-374">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-374">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-374">Return Value</span></span>
 
-### <a name="method-name"></a><span data-ttu-id="18cf4-375">メソッド名</span><span class="sxs-lookup"><span data-stu-id="18cf4-375">Method name</span></span>
+### <a name="method-name"></a><span data-ttu-id="0f5c1-375">メソッド名</span><span class="sxs-lookup"><span data-stu-id="0f5c1-375">Method name</span></span>
 
     public str name()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-376">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-376">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-376">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-376">Return Value</span></span>
 
-### <a name="method-tostring"></a><span data-ttu-id="18cf4-377">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="18cf4-377">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="0f5c1-377">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="0f5c1-377">Method toString</span></span>
 
-<span data-ttu-id="18cf4-378">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-378">Returns a string that contains the class handle and name, and possibly additional information.</span></span>
+<span data-ttu-id="0f5c1-378">クラス ハンドルと名前、および場合によっては追加情報を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-378">Returns a string that contains the class handle and name, and possibly additional information.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-379">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-379">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-379">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-379">Return Value</span></span>
 
-<span data-ttu-id="18cf4-380">クラスのテキストの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-380">Returns a textual description of the class.</span></span>
+<span data-ttu-id="0f5c1-380">クラスのテキストの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-380">Returns a textual description of the class.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-381">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-381">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-381">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-381">Remarks</span></span>
 
-<span data-ttu-id="18cf4-382">既定では、ほとんどのクラスは、toString メソッドがクラス ハンドルおよび名前を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-382">By default, for most classes, the toString method returns a string that contains the class handle and name.</span></span> <span data-ttu-id="18cf4-383">ただし、一部のクラスでは、追加情報が文字列で返されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-383">However, in some classes additional information is returned in the string.</span></span>
+<span data-ttu-id="0f5c1-382">既定では、ほとんどのクラスは、toString メソッドがクラス ハンドルおよび名前を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-382">By default, for most classes, the toString method returns a string that contains the class handle and name.</span></span> <span data-ttu-id="0f5c1-383">ただし、一部のクラスでは、追加情報が文字列で返されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-383">However, in some classes additional information is returned in the string.</span></span>
 
-## <a name="class-pipeclient"></a><span data-ttu-id="18cf4-384">クラス PipeClient</span><span class="sxs-lookup"><span data-stu-id="18cf4-384">Class PipeClient</span></span>
+## <a name="class-pipeclient"></a><span data-ttu-id="0f5c1-384">クラス PipeClient</span><span class="sxs-lookup"><span data-stu-id="0f5c1-384">Class PipeClient</span></span>
     class PipeClient extends Object
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-385">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-385">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-385">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-385">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-386">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-386">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-386">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-386">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-387">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-387">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-387">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-387">Methods</span></span>
 
-| <span data-ttu-id="18cf4-388">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-388">Method</span></span>                                                              | <span data-ttu-id="18cf4-389">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-389">Description</span></span>                                         |
+| <span data-ttu-id="0f5c1-388">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-388">Method</span></span>                                                              | <span data-ttu-id="0f5c1-389">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-389">Description</span></span>                                         |
 |---------------------------------------------------------------------|-----------------------------------------------------|
-| <span data-ttu-id="18cf4-390">public boolean blockingMode(\[boolean block\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-390">public boolean blockingMode(\[boolean block\])</span></span>                      |                                                     |
-| <span data-ttu-id="18cf4-391">public int errorCode()</span><span class="sxs-lookup"><span data-stu-id="18cf4-391">public int errorCode()</span></span>                                              |                                                     |
-| <span data-ttu-id="18cf4-392">public str read()</span><span class="sxs-lookup"><span data-stu-id="18cf4-392">public str read()</span></span>                                                   |                                                     |
-| <span data-ttu-id="18cf4-393">public boolean write(str buffer)</span><span class="sxs-lookup"><span data-stu-id="18cf4-393">public boolean write(str buffer)</span></span>                                    |                                                     |
-| <span data-ttu-id="18cf4-394">public void new(str servername, str pipename, \[boolean blocking\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-394">public void new(str servername, str pipename, \[boolean blocking\])</span></span> | <span data-ttu-id="18cf4-395">PipeClient クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-395">Initializes a new instance of the PipeClient class.</span></span> |
+| <span data-ttu-id="0f5c1-390">public boolean blockingMode(\[boolean block\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-390">public boolean blockingMode(\[boolean block\])</span></span>                      |                                                     |
+| <span data-ttu-id="0f5c1-391">public int errorCode()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-391">public int errorCode()</span></span>                                              |                                                     |
+| <span data-ttu-id="0f5c1-392">public str read()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-392">public str read()</span></span>                                                   |                                                     |
+| <span data-ttu-id="0f5c1-393">public boolean write(str buffer)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-393">public boolean write(str buffer)</span></span>                                    |                                                     |
+| <span data-ttu-id="0f5c1-394">public void new(str servername, str pipename, \[boolean blocking\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-394">public void new(str servername, str pipename, \[boolean blocking\])</span></span> | <span data-ttu-id="0f5c1-395">PipeClient クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-395">Initializes a new instance of the PipeClient class.</span></span> |
 
-### <a name="method-blockingmode"></a><span data-ttu-id="18cf4-396">メソッド blockingMode</span><span class="sxs-lookup"><span data-stu-id="18cf4-396">Method blockingMode</span></span>
+### <a name="method-blockingmode"></a><span data-ttu-id="0f5c1-396">メソッド blockingMode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-396">Method blockingMode</span></span>
 
     public boolean blockingMode([boolean block])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-397">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-397">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-397">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-397">Parameters</span></span>
 
-<span data-ttu-id="18cf4-398">block</span><span class="sxs-lookup"><span data-stu-id="18cf4-398">block</span></span>  
+<span data-ttu-id="0f5c1-398">block</span><span class="sxs-lookup"><span data-stu-id="0f5c1-398">block</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-399">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-399">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-399">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-399">Return Value</span></span>
 
-### <a name="method-errorcode"></a><span data-ttu-id="18cf4-400">メソッド errorCode</span><span class="sxs-lookup"><span data-stu-id="18cf4-400">Method errorCode</span></span>
+### <a name="method-errorcode"></a><span data-ttu-id="0f5c1-400">メソッド errorCode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-400">Method errorCode</span></span>
 
     public int errorCode()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-401">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-401">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-401">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-401">Return Value</span></span>
 
-### <a name="method-read"></a><span data-ttu-id="18cf4-402">メソッド read</span><span class="sxs-lookup"><span data-stu-id="18cf4-402">Method read</span></span>
+### <a name="method-read"></a><span data-ttu-id="0f5c1-402">メソッド read</span><span class="sxs-lookup"><span data-stu-id="0f5c1-402">Method read</span></span>
 
     public str read()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-403">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-403">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-403">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-403">Return Value</span></span>
 
-### <a name="method-write"></a><span data-ttu-id="18cf4-404">メソッド write</span><span class="sxs-lookup"><span data-stu-id="18cf4-404">Method write</span></span>
+### <a name="method-write"></a><span data-ttu-id="0f5c1-404">メソッド write</span><span class="sxs-lookup"><span data-stu-id="0f5c1-404">Method write</span></span>
 
     public boolean write(str buffer)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-405">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-405">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-405">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-405">Parameters</span></span>
 
-<span data-ttu-id="18cf4-406">バッファ</span><span class="sxs-lookup"><span data-stu-id="18cf4-406">buffer</span></span>  
+<span data-ttu-id="0f5c1-406">バッファ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-406">buffer</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-407">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-407">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-407">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-407">Return Value</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-408">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-408">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-408">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-408">Method new</span></span>
 
-<span data-ttu-id="18cf4-409">PipeClient クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-409">Initializes a new instance of the PipeClient class.</span></span>
+<span data-ttu-id="0f5c1-409">PipeClient クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-409">Initializes a new instance of the PipeClient class.</span></span>
 
     public void new(str servername, str pipename, [boolean blocking])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-410">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-410">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-410">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-410">Parameters</span></span>
 
-<span data-ttu-id="18cf4-411">servername</span><span class="sxs-lookup"><span data-stu-id="18cf4-411">servername</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="18cf4-412">pipename</span><span class="sxs-lookup"><span data-stu-id="18cf4-412">pipename</span></span>  
+<span data-ttu-id="0f5c1-411">servername</span><span class="sxs-lookup"><span data-stu-id="0f5c1-411">servername</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-413">ブロック</span><span class="sxs-lookup"><span data-stu-id="18cf4-413">blocking</span></span>  
+<span data-ttu-id="0f5c1-412">pipename</span><span class="sxs-lookup"><span data-stu-id="0f5c1-412">pipename</span></span>  
 
-## <a name="class-pipeserver"></a><span data-ttu-id="18cf4-414">クラス PipeServer</span><span class="sxs-lookup"><span data-stu-id="18cf4-414">Class PipeServer</span></span>
+<!-- -->
+
+<span data-ttu-id="0f5c1-413">ブロック</span><span class="sxs-lookup"><span data-stu-id="0f5c1-413">blocking</span></span>  
+
+## <a name="class-pipeserver"></a><span data-ttu-id="0f5c1-414">クラス PipeServer</span><span class="sxs-lookup"><span data-stu-id="0f5c1-414">Class PipeServer</span></span>
     class PipeServer extends Object
 
-<span data-ttu-id="18cf4-415">PipeServer クラスでは、名前付きパイプのサーバー側がサポートされます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-415">The PipeServer class supports the server side of a named pipe connection.</span></span>
+<span data-ttu-id="0f5c1-415">PipeServer クラスでは、名前付きパイプのサーバー側がサポートされます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-415">The PipeServer class supports the server side of a named pipe connection.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-416">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-416">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-416">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-416">Remarks</span></span>
 
-<span data-ttu-id="18cf4-417">PipeServer オブジェクトが PipeServer.new メソッドを使用して作成されたときに、名前付きパイプが作成されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-417">A named pipe is created when a PipeServer object is created by using the PipeServer.new method.</span></span> <span data-ttu-id="18cf4-418">作成されるパイプは、読み取りアクセス権を保有し、メッセージ モードの状態にあります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-418">The pipe that is created has read access and is in message mode.</span></span> <span data-ttu-id="18cf4-419">パイプの名前には自動的に接頭語 \\\\.\\pipe\\Dynamics が付けられます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-419">The name of the pipe is automatically prefixed with \\\\.\\pipe\\Dynamics.</span></span> <span data-ttu-id="18cf4-420">現在のセッション SID は名前の接尾辞になります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-420">The current session SID is postfixed to the name.</span></span> <span data-ttu-id="18cf4-421">サーバーのパイプ接続に提供されるサポートは、以下のセキュリティ上の理由により制限されています。</span><span class="sxs-lookup"><span data-stu-id="18cf4-421">The support that is provided for pipe connections on the server is restricted for the following security reasons:</span></span>
+<span data-ttu-id="0f5c1-417">PipeServer オブジェクトが PipeServer.new メソッドを使用して作成されたときに、名前付きパイプが作成されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-417">A named pipe is created when a PipeServer object is created by using the PipeServer.new method.</span></span> <span data-ttu-id="0f5c1-418">作成されるパイプは、読み取りアクセス権を保有し、メッセージ モードの状態にあります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-418">The pipe that is created has read access and is in message mode.</span></span> <span data-ttu-id="0f5c1-419">パイプの名前には自動的に接頭語 \\\\.\\pipe\\Dynamics が付けられます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-419">The name of the pipe is automatically prefixed with \\\\.\\pipe\\Dynamics.</span></span> <span data-ttu-id="0f5c1-420">現在のセッション SID は名前の接尾辞になります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-420">The current session SID is postfixed to the name.</span></span> <span data-ttu-id="0f5c1-421">サーバーのパイプ接続に提供されるサポートは、以下のセキュリティ上の理由により制限されています。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-421">The support that is provided for pipe connections on the server is restricted for the following security reasons:</span></span>
 
--   <span data-ttu-id="18cf4-422">パイプは、セッションが作成されたコンピュータ上の現在のログオン セッションのみに対してサポートされます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-422">The pipe is supported only for the current logon session on the computer that the session was created on.</span></span>
--   <span data-ttu-id="18cf4-423">パイプを作成するユーザーは、そのパイプと通信できる唯一のユーザーです。</span><span class="sxs-lookup"><span data-stu-id="18cf4-423">The user who creates the pipe is the only person who can communicate with that pipe.</span></span>
+-   <span data-ttu-id="0f5c1-422">パイプは、セッションが作成されたコンピュータ上の現在のログオン セッションのみに対してサポートされます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-422">The pipe is supported only for the current logon session on the computer that the session was created on.</span></span>
+-   <span data-ttu-id="0f5c1-423">パイプを作成するユーザーは、そのパイプと通信できる唯一のユーザーです。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-423">The user who creates the pipe is the only person who can communicate with that pipe.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-424">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-424">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-424">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-424">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-425">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-425">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-425">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-425">Methods</span></span>
 
-| <span data-ttu-id="18cf4-426">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-426">Method</span></span>                                              | <span data-ttu-id="18cf4-427">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-427">Description</span></span>                                                                  |
+| <span data-ttu-id="0f5c1-426">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-426">Method</span></span>                                              | <span data-ttu-id="0f5c1-427">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-427">Description</span></span>                                                                  |
 |-----------------------------------------------------|------------------------------------------------------------------------------|
-| <span data-ttu-id="18cf4-428">public boolean blockingMode(\[boolean block\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-428">public boolean blockingMode(\[boolean block\])</span></span>      |                                                                              |
-| <span data-ttu-id="18cf4-429">public boolean connect()</span><span class="sxs-lookup"><span data-stu-id="18cf4-429">public boolean connect()</span></span>                            | <span data-ttu-id="18cf4-430">クライアントが名前付きパイプに接続するまで待機します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-430">Waits for a client to connect to the named pipe.</span></span>                             |
-| <span data-ttu-id="18cf4-431">public boolean disconnect()</span><span class="sxs-lookup"><span data-stu-id="18cf4-431">public boolean disconnect()</span></span>                         | <span data-ttu-id="18cf4-432">名前付きパイプ インスタンスのサーバー側をクライアント プロセスから切断します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-432">Disconnects the server end of the named pipe instance from a client process.</span></span> |
-| <span data-ttu-id="18cf4-433">public int errorCode()</span><span class="sxs-lookup"><span data-stu-id="18cf4-433">public int errorCode()</span></span>                              |                                                                              |
-| <span data-ttu-id="18cf4-434">public str read()</span><span class="sxs-lookup"><span data-stu-id="18cf4-434">public str read()</span></span>                                   | <span data-ttu-id="18cf4-435">パイプ クライアントによって書き込まれたとおりに、名前付きパイプからデータを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-435">Reads data from the named pipe, as written by a pipe client.</span></span>                 |
-| <span data-ttu-id="18cf4-436">public void new(str pipename, \[boolean blocking\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-436">public void new(str pipename, \[boolean blocking\])</span></span> | <span data-ttu-id="18cf4-437">PipeServer クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-437">Creates a new instance of the PipeServer class.</span></span>                              |
+| <span data-ttu-id="0f5c1-428">public boolean blockingMode(\[boolean block\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-428">public boolean blockingMode(\[boolean block\])</span></span>      |                                                                              |
+| <span data-ttu-id="0f5c1-429">public boolean connect()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-429">public boolean connect()</span></span>                            | <span data-ttu-id="0f5c1-430">クライアントが名前付きパイプに接続するまで待機します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-430">Waits for a client to connect to the named pipe.</span></span>                             |
+| <span data-ttu-id="0f5c1-431">public boolean disconnect()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-431">public boolean disconnect()</span></span>                         | <span data-ttu-id="0f5c1-432">名前付きパイプ インスタンスのサーバー側をクライアント プロセスから切断します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-432">Disconnects the server end of the named pipe instance from a client process.</span></span> |
+| <span data-ttu-id="0f5c1-433">public int errorCode()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-433">public int errorCode()</span></span>                              |                                                                              |
+| <span data-ttu-id="0f5c1-434">public str read()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-434">public str read()</span></span>                                   | <span data-ttu-id="0f5c1-435">パイプ クライアントによって書き込まれたとおりに、名前付きパイプからデータを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-435">Reads data from the named pipe, as written by a pipe client.</span></span>                 |
+| <span data-ttu-id="0f5c1-436">public void new(str pipename, \[boolean blocking\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-436">public void new(str pipename, \[boolean blocking\])</span></span> | <span data-ttu-id="0f5c1-437">PipeServer クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-437">Creates a new instance of the PipeServer class.</span></span>                              |
 
-### <a name="method-blockingmode"></a><span data-ttu-id="18cf4-438">メソッド blockingMode</span><span class="sxs-lookup"><span data-stu-id="18cf4-438">Method blockingMode</span></span>
+### <a name="method-blockingmode"></a><span data-ttu-id="0f5c1-438">メソッド blockingMode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-438">Method blockingMode</span></span>
 
     public boolean blockingMode([boolean block])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-439">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-439">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-439">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-439">Parameters</span></span>
 
-<span data-ttu-id="18cf4-440">block</span><span class="sxs-lookup"><span data-stu-id="18cf4-440">block</span></span>  
+<span data-ttu-id="0f5c1-440">block</span><span class="sxs-lookup"><span data-stu-id="0f5c1-440">block</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-441">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-441">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-441">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-441">Return Value</span></span>
 
-### <a name="method-connect"></a><span data-ttu-id="18cf4-442">メソッド connect</span><span class="sxs-lookup"><span data-stu-id="18cf4-442">Method connect</span></span>
+### <a name="method-connect"></a><span data-ttu-id="0f5c1-442">メソッド connect</span><span class="sxs-lookup"><span data-stu-id="0f5c1-442">Method connect</span></span>
 
-<span data-ttu-id="18cf4-443">クライアントが名前付きパイプに接続するまで待機します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-443">Waits for a client to connect to the named pipe.</span></span>
+<span data-ttu-id="0f5c1-443">クライアントが名前付きパイプに接続するまで待機します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-443">Waits for a client to connect to the named pipe.</span></span>
 
     public boolean connect()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-444">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-444">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-444">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-444">Return Value</span></span>
 
-<span data-ttu-id="18cf4-445">メソッドが成功する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="18cf4-445">true if the method succeeds; otherwise, false.</span></span>
+<span data-ttu-id="0f5c1-445">メソッドが成功する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-445">true if the method succeeds; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-446">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-446">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-446">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-446">Remarks</span></span>
 
-<span data-ttu-id="18cf4-447">クライアントが接続するのを待機している場合は、現在のスレッドをブロックしない場合、PipeServer.connect メソッドを使用しないようにし、代わりに PipeServer.read メソッドを使用してポーリングします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-447">If you do not want to block the current thread if it is waiting for a client to connect, avoid using the PipeServer.connect method, and poll by using the PipeServer.read method instead.</span></span>
+<span data-ttu-id="0f5c1-447">クライアントが接続するのを待機している場合は、現在のスレッドをブロックしない場合、PipeServer.connect メソッドを使用しないようにし、代わりに PipeServer.read メソッドを使用してポーリングします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-447">If you do not want to block the current thread if it is waiting for a client to connect, avoid using the PipeServer.connect method, and poll by using the PipeServer.read method instead.</span></span>
 
-### <a name="method-disconnect"></a><span data-ttu-id="18cf4-448">メソッド disconnect</span><span class="sxs-lookup"><span data-stu-id="18cf4-448">Method disconnect</span></span>
+### <a name="method-disconnect"></a><span data-ttu-id="0f5c1-448">メソッド disconnect</span><span class="sxs-lookup"><span data-stu-id="0f5c1-448">Method disconnect</span></span>
 
-<span data-ttu-id="18cf4-449">名前付きパイプ インスタンスのサーバー側をクライアント プロセスから切断します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-449">Disconnects the server end of the named pipe instance from a client process.</span></span>
+<span data-ttu-id="0f5c1-449">名前付きパイプ インスタンスのサーバー側をクライアント プロセスから切断します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-449">Disconnects the server end of the named pipe instance from a client process.</span></span>
 
     public boolean disconnect()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-450">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-450">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-450">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-450">Return Value</span></span>
 
-<span data-ttu-id="18cf4-451">メソッドが成功する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="18cf4-451">true if the method succeeds; otherwise, false.</span></span>
+<span data-ttu-id="0f5c1-451">メソッドが成功する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-451">true if the method succeeds; otherwise, false.</span></span>
 
-### <a name="method-errorcode"></a><span data-ttu-id="18cf4-452">メソッド errorCode</span><span class="sxs-lookup"><span data-stu-id="18cf4-452">Method errorCode</span></span>
+### <a name="method-errorcode"></a><span data-ttu-id="0f5c1-452">メソッド errorCode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-452">Method errorCode</span></span>
 
     public int errorCode()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-453">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-453">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-453">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-453">Return Value</span></span>
 
-### <a name="method-read"></a><span data-ttu-id="18cf4-454">メソッド read</span><span class="sxs-lookup"><span data-stu-id="18cf4-454">Method read</span></span>
+### <a name="method-read"></a><span data-ttu-id="0f5c1-454">メソッド read</span><span class="sxs-lookup"><span data-stu-id="0f5c1-454">Method read</span></span>
 
-<span data-ttu-id="18cf4-455">パイプ クライアントによって書き込まれたとおりに、名前付きパイプからデータを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-455">Reads data from the named pipe, as written by a pipe client.</span></span>
+<span data-ttu-id="0f5c1-455">パイプ クライアントによって書き込まれたとおりに、名前付きパイプからデータを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-455">Reads data from the named pipe, as written by a pipe client.</span></span>
 
     public str read()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-456">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-456">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-456">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-456">Return Value</span></span>
 
-<span data-ttu-id="18cf4-457">データが読み取られた場合に、パイプから読み取られるデータ。</span><span class="sxs-lookup"><span data-stu-id="18cf4-457">The data that is read from the pipe, if any data is read.</span></span>
+<span data-ttu-id="0f5c1-457">データが読み取られた場合に、パイプから読み取られるデータ。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-457">The data that is read from the pipe, if any data is read.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-458">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-458">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-458">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-458">Remarks</span></span>
 
-<span data-ttu-id="18cf4-459">クライアントが名前付きパイプに接続されていないために、このメソッドが呼び出されたときにデータを使用できないことがあります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-459">Data might not be available when this method is called, perhaps because no client has connected to the named pipe.</span></span> <span data-ttu-id="18cf4-460">クライアントへの接続を待機する場合は、接続方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-460">If you want to wait for a client to connect, use the connect method.</span></span> <span data-ttu-id="18cf4-461">ただし、クライアントの接続を待機している現在のスレッドをブロックしない場合、読み取りメソッドを使用してポーリングします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-461">However, if you do not want to block the current thread that is waiting for a client to connect, poll by using the read method.</span></span>
+<span data-ttu-id="0f5c1-459">クライアントが名前付きパイプに接続されていないために、このメソッドが呼び出されたときにデータを使用できないことがあります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-459">Data might not be available when this method is called, perhaps because no client has connected to the named pipe.</span></span> <span data-ttu-id="0f5c1-460">クライアントへの接続を待機する場合は、接続方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-460">If you want to wait for a client to connect, use the connect method.</span></span> <span data-ttu-id="0f5c1-461">ただし、クライアントの接続を待機している現在のスレッドをブロックしない場合、読み取りメソッドを使用してポーリングします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-461">However, if you do not want to block the current thread that is waiting for a client to connect, poll by using the read method.</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-462">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-462">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-462">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-462">Method new</span></span>
 
-<span data-ttu-id="18cf4-463">PipeServer クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-463">Creates a new instance of the PipeServer class.</span></span>
+<span data-ttu-id="0f5c1-463">PipeServer クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-463">Creates a new instance of the PipeServer class.</span></span>
 
     public void new(str pipename, [boolean blocking])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-464">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-464">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-464">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-464">Parameters</span></span>
 
-<span data-ttu-id="18cf4-465">pipename</span><span class="sxs-lookup"><span data-stu-id="18cf4-465">pipename</span></span>  
-<span data-ttu-id="18cf4-466">ブロック動作を使用するかどうかを示すブール値フラグ。</span><span class="sxs-lookup"><span data-stu-id="18cf4-466">A Boolean flag that indicates whether blocking behavior should be used.</span></span> <span data-ttu-id="18cf4-467">非ブロック モードは、Microsoft LAN Manager バージョン 2.0 との互換性をサポートしており、名前付きパイプで非同期入出力を達成するために使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="18cf4-467">Non-blocking mode is supported for compatibility with Microsoft LAN Manager version 2.0 and should not be used to achieve asynchronous I/O with named pipes.</span></span> <span data-ttu-id="18cf4-468">代わりに、ポーリング技術を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-468">Instead, a polling technique should be used.</span></span> <span data-ttu-id="18cf4-469">読み取りメソッドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="18cf4-469">See the read method.</span></span>
+<span data-ttu-id="0f5c1-465">pipename</span><span class="sxs-lookup"><span data-stu-id="0f5c1-465">pipename</span></span>  
+<span data-ttu-id="0f5c1-466">ブロック動作を使用するかどうかを示すブール値フラグ。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-466">A Boolean flag that indicates whether blocking behavior should be used.</span></span> <span data-ttu-id="0f5c1-467">非ブロック モードは、Microsoft LAN Manager バージョン 2.0 との互換性をサポートしており、名前付きパイプで非同期入出力を達成するために使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-467">Non-blocking mode is supported for compatibility with Microsoft LAN Manager version 2.0 and should not be used to achieve asynchronous I/O with named pipes.</span></span> <span data-ttu-id="0f5c1-468">代わりに、ポーリング技術を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-468">Instead, a polling technique should be used.</span></span> <span data-ttu-id="0f5c1-469">読み取りメソッドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-469">See the read method.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="18cf4-470">ブロック</span><span class="sxs-lookup"><span data-stu-id="18cf4-470">blocking</span></span>  
-<span data-ttu-id="18cf4-471">ブロック動作を使用するかどうかを示すブール値フラグ。</span><span class="sxs-lookup"><span data-stu-id="18cf4-471">A Boolean flag that indicates whether blocking behavior should be used.</span></span> <span data-ttu-id="18cf4-472">非ブロック モードは、Microsoft LAN Manager バージョン 2.0 との互換性をサポートしており、名前付きパイプで非同期入出力を達成するために使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="18cf4-472">Non-blocking mode is supported for compatibility with Microsoft LAN Manager version 2.0 and should not be used to achieve asynchronous I/O with named pipes.</span></span> <span data-ttu-id="18cf4-473">代わりに、ポーリング技術を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-473">Instead, a polling technique should be used.</span></span> <span data-ttu-id="18cf4-474">読み取りメソッドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="18cf4-474">See the read method.</span></span>
+<span data-ttu-id="0f5c1-470">ブロック</span><span class="sxs-lookup"><span data-stu-id="0f5c1-470">blocking</span></span>  
+<span data-ttu-id="0f5c1-471">ブロック動作を使用するかどうかを示すブール値フラグ。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-471">A Boolean flag that indicates whether blocking behavior should be used.</span></span> <span data-ttu-id="0f5c1-472">非ブロック モードは、Microsoft LAN Manager バージョン 2.0 との互換性をサポートしており、名前付きパイプで非同期入出力を達成するために使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-472">Non-blocking mode is supported for compatibility with Microsoft LAN Manager version 2.0 and should not be used to achieve asynchronous I/O with named pipes.</span></span> <span data-ttu-id="0f5c1-473">代わりに、ポーリング技術を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-473">Instead, a polling technique should be used.</span></span> <span data-ttu-id="0f5c1-474">読み取りメソッドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-474">See the read method.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-475">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-475">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-475">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-475">Remarks</span></span>
 
-<span data-ttu-id="18cf4-476">いくつかの制限が適用されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-476">Some restrictions apply.</span></span> <span data-ttu-id="18cf4-477">PipeServer クラスの一般的な説明の例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="18cf4-477">See the example in the general description of the PipeServer class.</span></span>
+<span data-ttu-id="0f5c1-476">いくつかの制限が適用されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-476">Some restrictions apply.</span></span> <span data-ttu-id="0f5c1-477">PipeServer クラスの一般的な説明の例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-477">See the example in the general description of the PipeServer class.</span></span>
 
-## <a name="class-presenceinfo"></a><span data-ttu-id="18cf4-478">クラス PresenceInfo</span><span class="sxs-lookup"><span data-stu-id="18cf4-478">Class PresenceInfo</span></span>
+## <a name="class-presenceinfo"></a><span data-ttu-id="0f5c1-478">クラス PresenceInfo</span><span class="sxs-lookup"><span data-stu-id="0f5c1-478">Class PresenceInfo</span></span>
     class PresenceInfo extends Object
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-479">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-479">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-479">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-479">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-480">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-480">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-480">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-480">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-481">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-481">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-481">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-481">Methods</span></span>
 
-| <span data-ttu-id="18cf4-482">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-482">Method</span></span>                                                                | <span data-ttu-id="18cf4-483">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-483">Description</span></span>                                           |
+| <span data-ttu-id="0f5c1-482">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-482">Method</span></span>                                                                | <span data-ttu-id="0f5c1-483">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-483">Description</span></span>                                           |
 |-----------------------------------------------------------------------|-------------------------------------------------------|
-| <span data-ttu-id="18cf4-484">public str contactName(\[str contactName\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-484">public str contactName(\[str contactName\])</span></span>                           |                                                       |
-| <span data-ttu-id="18cf4-485">public str emailAddress(int index)</span><span class="sxs-lookup"><span data-stu-id="18cf4-485">public str emailAddress(int index)</span></span>                                    |                                                       |
-| <span data-ttu-id="18cf4-486">public str emailAlias(int index)</span><span class="sxs-lookup"><span data-stu-id="18cf4-486">public str emailAlias(int index)</span></span>                                      |                                                       |
-| <span data-ttu-id="18cf4-487">public int emailCount()</span><span class="sxs-lookup"><span data-stu-id="18cf4-487">public int emailCount()</span></span>                                               |                                                       |
-| <span data-ttu-id="18cf4-488">public str phoneAlias(int index)</span><span class="sxs-lookup"><span data-stu-id="18cf4-488">public str phoneAlias(int index)</span></span>                                      |                                                       |
-| <span data-ttu-id="18cf4-489">public int phoneCount()</span><span class="sxs-lookup"><span data-stu-id="18cf4-489">public int phoneCount()</span></span>                                               |                                                       |
-| <span data-ttu-id="18cf4-490">public str phoneNumber(int index)</span><span class="sxs-lookup"><span data-stu-id="18cf4-490">public str phoneNumber(int index)</span></span>                                     |                                                       |
-| <span data-ttu-id="18cf4-491">public str sipAddress(\[str sipAddress\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-491">public str sipAddress(\[str sipAddress\])</span></span>                             |                                                       |
-| <span data-ttu-id="18cf4-492">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="18cf4-492">public void finalize()</span></span>                                                |                                                       |
-| <span data-ttu-id="18cf4-493">public void new()</span><span class="sxs-lookup"><span data-stu-id="18cf4-493">public void new()</span></span>                                                     | <span data-ttu-id="18cf4-494">PresenceInfo クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-494">Initializes a new instance of the PresenceInfo class.</span></span> |
-| <span data-ttu-id="18cf4-495">public void addEmailAddress(\[str emailAlias\], \[str emailAddress\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-495">public void addEmailAddress(\[str emailAlias\], \[str emailAddress\])</span></span> |                                                       |
-| <span data-ttu-id="18cf4-496">public void addPhoneNumber(\[str phoneAlias\], \[str phoneNumber\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-496">public void addPhoneNumber(\[str phoneAlias\], \[str phoneNumber\])</span></span>   |                                                       |
+| <span data-ttu-id="0f5c1-484">public str contactName(\[str contactName\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-484">public str contactName(\[str contactName\])</span></span>                           |                                                       |
+| <span data-ttu-id="0f5c1-485">public str emailAddress(int index)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-485">public str emailAddress(int index)</span></span>                                    |                                                       |
+| <span data-ttu-id="0f5c1-486">public str emailAlias(int index)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-486">public str emailAlias(int index)</span></span>                                      |                                                       |
+| <span data-ttu-id="0f5c1-487">public int emailCount()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-487">public int emailCount()</span></span>                                               |                                                       |
+| <span data-ttu-id="0f5c1-488">public str phoneAlias(int index)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-488">public str phoneAlias(int index)</span></span>                                      |                                                       |
+| <span data-ttu-id="0f5c1-489">public int phoneCount()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-489">public int phoneCount()</span></span>                                               |                                                       |
+| <span data-ttu-id="0f5c1-490">public str phoneNumber(int index)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-490">public str phoneNumber(int index)</span></span>                                     |                                                       |
+| <span data-ttu-id="0f5c1-491">public str sipAddress(\[str sipAddress\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-491">public str sipAddress(\[str sipAddress\])</span></span>                             |                                                       |
+| <span data-ttu-id="0f5c1-492">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-492">public void finalize()</span></span>                                                |                                                       |
+| <span data-ttu-id="0f5c1-493">public void new()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-493">public void new()</span></span>                                                     | <span data-ttu-id="0f5c1-494">PresenceInfo クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-494">Initializes a new instance of the PresenceInfo class.</span></span> |
+| <span data-ttu-id="0f5c1-495">public void addEmailAddress(\[str emailAlias\], \[str emailAddress\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-495">public void addEmailAddress(\[str emailAlias\], \[str emailAddress\])</span></span> |                                                       |
+| <span data-ttu-id="0f5c1-496">public void addPhoneNumber(\[str phoneAlias\], \[str phoneNumber\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-496">public void addPhoneNumber(\[str phoneAlias\], \[str phoneNumber\])</span></span>   |                                                       |
 
-### <a name="method-contactname"></a><span data-ttu-id="18cf4-497">メソッド contactName</span><span class="sxs-lookup"><span data-stu-id="18cf4-497">Method contactName</span></span>
+### <a name="method-contactname"></a><span data-ttu-id="0f5c1-497">メソッド contactName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-497">Method contactName</span></span>
 
     public str contactName([str contactName])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-498">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-498">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-498">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-498">Parameters</span></span>
 
-<span data-ttu-id="18cf4-499">contactName</span><span class="sxs-lookup"><span data-stu-id="18cf4-499">contactName</span></span>  
+<span data-ttu-id="0f5c1-499">contactName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-499">contactName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-500">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-500">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-500">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-500">Return Value</span></span>
 
-### <a name="method-emailaddress"></a><span data-ttu-id="18cf4-501">メソッド emailAddress</span><span class="sxs-lookup"><span data-stu-id="18cf4-501">Method emailAddress</span></span>
+### <a name="method-emailaddress"></a><span data-ttu-id="0f5c1-501">メソッド emailAddress</span><span class="sxs-lookup"><span data-stu-id="0f5c1-501">Method emailAddress</span></span>
 
     public str emailAddress(int index)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-502">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-502">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-502">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-502">Parameters</span></span>
 
-<span data-ttu-id="18cf4-503">指数</span><span class="sxs-lookup"><span data-stu-id="18cf4-503">index</span></span>  
+<span data-ttu-id="0f5c1-503">指数</span><span class="sxs-lookup"><span data-stu-id="0f5c1-503">index</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-504">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-504">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-504">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-504">Return Value</span></span>
 
-### <a name="method-emailalias"></a><span data-ttu-id="18cf4-505">メソッド emailAlias</span><span class="sxs-lookup"><span data-stu-id="18cf4-505">Method emailAlias</span></span>
+### <a name="method-emailalias"></a><span data-ttu-id="0f5c1-505">メソッド emailAlias</span><span class="sxs-lookup"><span data-stu-id="0f5c1-505">Method emailAlias</span></span>
 
     public str emailAlias(int index)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-506">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-506">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-506">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-506">Parameters</span></span>
 
-<span data-ttu-id="18cf4-507">指数</span><span class="sxs-lookup"><span data-stu-id="18cf4-507">index</span></span>  
+<span data-ttu-id="0f5c1-507">指数</span><span class="sxs-lookup"><span data-stu-id="0f5c1-507">index</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-508">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-508">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-508">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-508">Return Value</span></span>
 
-### <a name="method-emailcount"></a><span data-ttu-id="18cf4-509">メソッド emailCount</span><span class="sxs-lookup"><span data-stu-id="18cf4-509">Method emailCount</span></span>
+### <a name="method-emailcount"></a><span data-ttu-id="0f5c1-509">メソッド emailCount</span><span class="sxs-lookup"><span data-stu-id="0f5c1-509">Method emailCount</span></span>
 
     public int emailCount()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-510">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-510">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-510">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-510">Return Value</span></span>
 
-### <a name="method-phonealias"></a><span data-ttu-id="18cf4-511">メソッド phoneAlias</span><span class="sxs-lookup"><span data-stu-id="18cf4-511">Method phoneAlias</span></span>
+### <a name="method-phonealias"></a><span data-ttu-id="0f5c1-511">メソッド phoneAlias</span><span class="sxs-lookup"><span data-stu-id="0f5c1-511">Method phoneAlias</span></span>
 
     public str phoneAlias(int index)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-512">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-512">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-512">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-512">Parameters</span></span>
 
-<span data-ttu-id="18cf4-513">指数</span><span class="sxs-lookup"><span data-stu-id="18cf4-513">index</span></span>  
+<span data-ttu-id="0f5c1-513">指数</span><span class="sxs-lookup"><span data-stu-id="0f5c1-513">index</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-514">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-514">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-514">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-514">Return Value</span></span>
 
-### <a name="method-phonecount"></a><span data-ttu-id="18cf4-515">メソッド phoneCount</span><span class="sxs-lookup"><span data-stu-id="18cf4-515">Method phoneCount</span></span>
+### <a name="method-phonecount"></a><span data-ttu-id="0f5c1-515">メソッド phoneCount</span><span class="sxs-lookup"><span data-stu-id="0f5c1-515">Method phoneCount</span></span>
 
     public int phoneCount()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-516">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-516">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-516">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-516">Return Value</span></span>
 
-### <a name="method-phonenumber"></a><span data-ttu-id="18cf4-517">メソッド phoneNumber</span><span class="sxs-lookup"><span data-stu-id="18cf4-517">Method phoneNumber</span></span>
+### <a name="method-phonenumber"></a><span data-ttu-id="0f5c1-517">メソッド phoneNumber</span><span class="sxs-lookup"><span data-stu-id="0f5c1-517">Method phoneNumber</span></span>
 
     public str phoneNumber(int index)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-518">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-518">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-518">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-518">Parameters</span></span>
 
-<span data-ttu-id="18cf4-519">指数</span><span class="sxs-lookup"><span data-stu-id="18cf4-519">index</span></span>  
+<span data-ttu-id="0f5c1-519">指数</span><span class="sxs-lookup"><span data-stu-id="0f5c1-519">index</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-520">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-520">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-520">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-520">Return Value</span></span>
 
-### <a name="method-sipaddress"></a><span data-ttu-id="18cf4-521">メソッド sipAddress</span><span class="sxs-lookup"><span data-stu-id="18cf4-521">Method sipAddress</span></span>
+### <a name="method-sipaddress"></a><span data-ttu-id="0f5c1-521">メソッド sipAddress</span><span class="sxs-lookup"><span data-stu-id="0f5c1-521">Method sipAddress</span></span>
 
     public str sipAddress([str sipAddress])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-522">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-522">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-522">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-522">Parameters</span></span>
 
-<span data-ttu-id="18cf4-523">sipAddress</span><span class="sxs-lookup"><span data-stu-id="18cf4-523">sipAddress</span></span>  
+<span data-ttu-id="0f5c1-523">sipAddress</span><span class="sxs-lookup"><span data-stu-id="0f5c1-523">sipAddress</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-524">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-524">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-524">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-524">Return Value</span></span>
 
-### <a name="method-finalize"></a><span data-ttu-id="18cf4-525">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="18cf4-525">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="0f5c1-525">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="0f5c1-525">Method finalize</span></span>
 
     public void finalize()
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-526">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-526">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-526">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-526">Method new</span></span>
 
-<span data-ttu-id="18cf4-527">PresenceInfo クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-527">Initializes a new instance of the PresenceInfo class.</span></span>
+<span data-ttu-id="0f5c1-527">PresenceInfo クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-527">Initializes a new instance of the PresenceInfo class.</span></span>
 
     public void new()
 
-### <a name="method-addemailaddress"></a><span data-ttu-id="18cf4-528">メソッド addEmailAddress</span><span class="sxs-lookup"><span data-stu-id="18cf4-528">Method addEmailAddress</span></span>
+### <a name="method-addemailaddress"></a><span data-ttu-id="0f5c1-528">メソッド addEmailAddress</span><span class="sxs-lookup"><span data-stu-id="0f5c1-528">Method addEmailAddress</span></span>
 
     public void addEmailAddress([str emailAlias], [str emailAddress])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-529">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-529">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-529">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-529">Parameters</span></span>
 
-<span data-ttu-id="18cf4-530">emailAlias</span><span class="sxs-lookup"><span data-stu-id="18cf4-530">emailAlias</span></span>  
+<span data-ttu-id="0f5c1-530">emailAlias</span><span class="sxs-lookup"><span data-stu-id="0f5c1-530">emailAlias</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-531">emailAddress</span><span class="sxs-lookup"><span data-stu-id="18cf4-531">emailAddress</span></span>  
+<span data-ttu-id="0f5c1-531">emailAddress</span><span class="sxs-lookup"><span data-stu-id="0f5c1-531">emailAddress</span></span>  
 
-### <a name="method-addphonenumber"></a><span data-ttu-id="18cf4-532">メソッド addPhoneNumber</span><span class="sxs-lookup"><span data-stu-id="18cf4-532">Method addPhoneNumber</span></span>
+### <a name="method-addphonenumber"></a><span data-ttu-id="0f5c1-532">メソッド addPhoneNumber</span><span class="sxs-lookup"><span data-stu-id="0f5c1-532">Method addPhoneNumber</span></span>
 
     public void addPhoneNumber([str phoneAlias], [str phoneNumber])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-533">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-533">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-533">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-533">Parameters</span></span>
 
-<span data-ttu-id="18cf4-534">phoneAlias</span><span class="sxs-lookup"><span data-stu-id="18cf4-534">phoneAlias</span></span>  
+<span data-ttu-id="0f5c1-534">phoneAlias</span><span class="sxs-lookup"><span data-stu-id="0f5c1-534">phoneAlias</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-535">phoneNumber</span><span class="sxs-lookup"><span data-stu-id="18cf4-535">phoneNumber</span></span>  
+<span data-ttu-id="0f5c1-535">phoneNumber</span><span class="sxs-lookup"><span data-stu-id="0f5c1-535">phoneNumber</span></span>  
 
-## <a name="class-printjobsettings"></a><span data-ttu-id="18cf4-536">クラス PrintJobSettings</span><span class="sxs-lookup"><span data-stu-id="18cf4-536">Class PrintJobSettings</span></span>
+## <a name="class-printjobsettings"></a><span data-ttu-id="0f5c1-536">クラス PrintJobSettings</span><span class="sxs-lookup"><span data-stu-id="0f5c1-536">Class PrintJobSettings</span></span>
     class PrintJobSettings extends Object
 
-<span data-ttu-id="18cf4-537">PrintJobSettings クラスを使用すると、ユーザーがプリンターおよびそのデバイス設定にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-537">The PrintJobSettings class lets users access printers and their device settings.</span></span>
+<span data-ttu-id="0f5c1-537">PrintJobSettings クラスを使用すると、ユーザーがプリンターおよびそのデバイス設定にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-537">The PrintJobSettings class lets users access printers and their device settings.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-538">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-538">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-538">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-538">Remarks</span></span>
 
-<span data-ttu-id="18cf4-539">PrintJobSettings は、SysPrintForm フォームにより使用されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-539">PrintJobSettings is used by the SysPrintForm form.</span></span>
+<span data-ttu-id="0f5c1-539">PrintJobSettings は、SysPrintForm フォームにより使用されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-539">PrintJobSettings is used by the SysPrintForm form.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-540">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-540">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-540">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-540">Examples</span></span>
 
-<span data-ttu-id="18cf4-541">次の例では、既定のプリンターの名前を書き込み、使用可能なプリンターを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-541">The following example writes the name of the default printer and lists the available printers.</span></span>
+<span data-ttu-id="0f5c1-541">次の例では、既定のプリンターの名前を書き込み、使用可能なプリンターを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-541">The following example writes the name of the default printer and lists the available printers.</span></span>
 
     void printerInfo() 
     {    
@@ -953,147 +953,147 @@ ms.locfileid: "1544202"
         pause; 
     }
 
-### <a name="methods"></a><span data-ttu-id="18cf4-542">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-542">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-542">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-542">Methods</span></span>
 
-| <span data-ttu-id="18cf4-543">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-543">Method</span></span>                                                                                                  | <span data-ttu-id="18cf4-544">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-544">Description</span></span>                                                                                       |
+| <span data-ttu-id="0f5c1-543">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-543">Method</span></span>                                                                                                  | <span data-ttu-id="0f5c1-544">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-544">Description</span></span>                                                                                       |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="18cf4-545">public boolean allPages(\[boolean all\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-545">public boolean allPages(\[boolean all\])</span></span>                                                                | <span data-ttu-id="18cf4-546">sysPrintForm を実行するときに、すべてまたはページのオプション ボタンを選択するかどうかをコントロールします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-546">Controls whether the All or Pages option button should be selected when you run the sysPrintForm.</span></span> |
-| <span data-ttu-id="18cf4-547">public boolean appendToTextFile(\[boolean append\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-547">public boolean appendToTextFile(\[boolean append\])</span></span>                                                     |                                                                                                   |
-| <span data-ttu-id="18cf4-548">public boolean banding()</span><span class="sxs-lookup"><span data-stu-id="18cf4-548">public boolean banding()</span></span>                                                                                |                                                                                                   |
-| <span data-ttu-id="18cf4-549">public PrintJobSettings clientPrintJobSettings()</span><span class="sxs-lookup"><span data-stu-id="18cf4-549">public PrintJobSettings clientPrintJobSettings()</span></span>                                                        |                                                                                                   |
-| <span data-ttu-id="18cf4-550">public boolean collate(\[boolean collate\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-550">public boolean collate(\[boolean collate\])</span></span>                                                             |                                                                                                   |
-| <span data-ttu-id="18cf4-551">public int copies(\[int numberOfCopies\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-551">public int copies(\[int numberOfCopies\])</span></span>                                                               |                                                                                                   |
-| <span data-ttu-id="18cf4-552">public str copyDescription(int number, \[str description\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-552">public str copyDescription(int number, \[str description\])</span></span>                                             |                                                                                                   |
-| <span data-ttu-id="18cf4-553">public str deviceName(\[str device\], \[ClassRunMode runOn\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-553">public str deviceName(\[str device\], \[ClassRunMode runOn\])</span></span>                                           | <span data-ttu-id="18cf4-554">プリンターを選択するか、選択されているプリンター デバイス名を取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-554">Selects a printer or retrieves the deviceName of the selected printer.</span></span>                            |
-| <span data-ttu-id="18cf4-555">public boolean doNotOverwrite(\[boolean warn\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-555">public boolean doNotOverwrite(\[boolean warn\])</span></span>                                                         |                                                                                                   |
-| <span data-ttu-id="18cf4-556">public boolean enableCopies(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-556">public boolean enableCopies(\[boolean enable\])</span></span>                                                         |                                                                                                   |
-| <span data-ttu-id="18cf4-557">public boolean enableDevice(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-557">public boolean enableDevice(\[boolean enable\])</span></span>                                                         |                                                                                                   |
-| <span data-ttu-id="18cf4-558">public boolean enablePages(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-558">public boolean enablePages(\[boolean enable\])</span></span>                                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-559">public boolean enableProperties(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-559">public boolean enableProperties(\[boolean enable\])</span></span>                                                     |                                                                                                   |
-| <span data-ttu-id="18cf4-560">public boolean enableStoreInPrintArchive(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-560">public boolean enableStoreInPrintArchive(\[boolean enable\])</span></span>                                            |                                                                                                   |
-| <span data-ttu-id="18cf4-561">public boolean enableTarget(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-561">public boolean enableTarget(\[boolean enable\])</span></span>                                                         |                                                                                                   |
-| <span data-ttu-id="18cf4-562">public int facename2number(\[str facename\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-562">public int facename2number(\[str facename\])</span></span>                                                            |                                                                                                   |
-| <span data-ttu-id="18cf4-563">public str fileName(\[str FileName\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-563">public str fileName(\[str FileName\])</span></span>                                                                   |                                                                                                   |
-| <span data-ttu-id="18cf4-564">public boolean fitToPage(\[boolean fit\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-564">public boolean fitToPage(\[boolean fit\])</span></span>                                                               |                                                                                                   |
-| <span data-ttu-id="18cf4-565">public PrintFormat format(\[PrintFormat format\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-565">public PrintFormat format(\[PrintFormat format\])</span></span>                                                       |                                                                                                   |
-| <span data-ttu-id="18cf4-566">public int from(\[int fromPage\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-566">public int from(\[int fromPage\])</span></span>                                                                       |                                                                                                   |
-| <span data-ttu-id="18cf4-567">public str getFacename(int number)</span><span class="sxs-lookup"><span data-stu-id="18cf4-567">public str getFacename(int number)</span></span>                                                                      |                                                                                                   |
-| <span data-ttu-id="18cf4-568">public str getFacenameInfo(int number)</span><span class="sxs-lookup"><span data-stu-id="18cf4-568">public str getFacenameInfo(int number)</span></span>                                                                  |                                                                                                   |
-| <span data-ttu-id="18cf4-569">public Struct getFontInfo(str fontName)</span><span class="sxs-lookup"><span data-stu-id="18cf4-569">public Struct getFontInfo(str fontName)</span></span>                                                                 |                                                                                                   |
-| <span data-ttu-id="18cf4-570">public Array getGlyphWidthsArray(str fontName, int firstChar, int lastChar)</span><span class="sxs-lookup"><span data-stu-id="18cf4-570">public Array getGlyphWidthsArray(str fontName, int firstChar, int lastChar)</span></span>                             |                                                                                                   |
-| <span data-ttu-id="18cf4-571">public int getNumberOfClientPrinters()</span><span class="sxs-lookup"><span data-stu-id="18cf4-571">public int getNumberOfClientPrinters()</span></span>                                                                  |                                                                                                   |
-| <span data-ttu-id="18cf4-572">public int getNumberOfFacenames()</span><span class="sxs-lookup"><span data-stu-id="18cf4-572">public int getNumberOfFacenames()</span></span>                                                                       |                                                                                                   |
-| <span data-ttu-id="18cf4-573">public int getNumberOfPrinters()</span><span class="sxs-lookup"><span data-stu-id="18cf4-573">public int getNumberOfPrinters()</span></span>                                                                        | <span data-ttu-id="18cf4-574">コンピューターに設定されているプリンターの数を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-574">Returns the number of printers that are set up on the computer.</span></span>                                   |
-| <span data-ttu-id="18cf4-575">public int getNumberOfServerPrinters()</span><span class="sxs-lookup"><span data-stu-id="18cf4-575">public int getNumberOfServerPrinters()</span></span>                                                                  |                                                                                                   |
-| <span data-ttu-id="18cf4-576">public int getNumberOfTrays()</span><span class="sxs-lookup"><span data-stu-id="18cf4-576">public int getNumberOfTrays()</span></span>                                                                           |                                                                                                   |
-| <span data-ttu-id="18cf4-577">public str getPrinter(int number)</span><span class="sxs-lookup"><span data-stu-id="18cf4-577">public str getPrinter(int number)</span></span>                                                                       | <span data-ttu-id="18cf4-578">プリンターの deviceName を取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-578">Gets the deviceName of a printer.</span></span>                                                                 |
-| <span data-ttu-id="18cf4-579">public ClassRunMode getRunOn(int number)</span><span class="sxs-lookup"><span data-stu-id="18cf4-579">public ClassRunMode getRunOn(int number)</span></span>                                                                |                                                                                                   |
-| <span data-ttu-id="18cf4-580">public PrintMedium getTarget()</span><span class="sxs-lookup"><span data-stu-id="18cf4-580">public PrintMedium getTarget()</span></span>                                                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-581">public int getTray(int number)</span><span class="sxs-lookup"><span data-stu-id="18cf4-581">public int getTray(int number)</span></span>                                                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-582">public str getTrayName(int number)</span><span class="sxs-lookup"><span data-stu-id="18cf4-582">public str getTrayName(int number)</span></span>                                                                      |                                                                                                   |
-| <span data-ttu-id="18cf4-583">public Int64 hDC()</span><span class="sxs-lookup"><span data-stu-id="18cf4-583">public Int64 hDC()</span></span>                                                                                      |                                                                                                   |
-| <span data-ttu-id="18cf4-584">public boolean lockDestinationProperties(\[boolean warn\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-584">public boolean lockDestinationProperties(\[boolean warn\])</span></span>                                              |                                                                                                   |
-| <span data-ttu-id="18cf4-585">public str mailCc(\[str MailCc\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-585">public str mailCc(\[str MailCc\])</span></span>                                                                       |                                                                                                   |
-| <span data-ttu-id="18cf4-586">public str mailSubject(\[str MailSubject\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-586">public str mailSubject(\[str MailSubject\])</span></span>                                                             |                                                                                                   |
-| <span data-ttu-id="18cf4-587">public str mailTo(\[str MailTo\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-587">public str mailTo(\[str MailTo\])</span></span>                                                                       |                                                                                                   |
-| <span data-ttu-id="18cf4-588">public int numberOfCopyDescriptions(int number)</span><span class="sxs-lookup"><span data-stu-id="18cf4-588">public int numberOfCopyDescriptions(int number)</span></span>                                                         |                                                                                                   |
-| <span data-ttu-id="18cf4-589">public boolean outputToClient(\[boolean toClient\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-589">public boolean outputToClient(\[boolean toClient\])</span></span>                                                     |                                                                                                   |
-| <span data-ttu-id="18cf4-590">public boolean outputToPrnFile(\[boolean writePrnFile\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-590">public boolean outputToPrnFile(\[boolean writePrnFile\])</span></span>                                                |                                                                                                   |
-| <span data-ttu-id="18cf4-591">public container packNamesAndPrinterData()</span><span class="sxs-lookup"><span data-stu-id="18cf4-591">public container packNamesAndPrinterData()</span></span>                                                              |                                                                                                   |
-| <span data-ttu-id="18cf4-592">public container packPageSettings()</span><span class="sxs-lookup"><span data-stu-id="18cf4-592">public container packPageSettings()</span></span>                                                                     | <span data-ttu-id="18cf4-593">ページの書式設定時に選択されているデータをコンテナーに格納します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-593">Stores the data that is selected during page formatting in a container.</span></span>                           |
-| <span data-ttu-id="18cf4-594">public container packPrinterSettings()</span><span class="sxs-lookup"><span data-stu-id="18cf4-594">public container packPrinterSettings()</span></span>                                                                  |                                                                                                   |
-| <span data-ttu-id="18cf4-595">public container packPrintJobSettings()</span><span class="sxs-lookup"><span data-stu-id="18cf4-595">public container packPrintJobSettings()</span></span>                                                                 |                                                                                                   |
-| <span data-ttu-id="18cf4-596">public container packSubtotalSettings()</span><span class="sxs-lookup"><span data-stu-id="18cf4-596">public container packSubtotalSettings()</span></span>                                                                 |                                                                                                   |
-| <span data-ttu-id="18cf4-597">public int pageCopy2Tray(int pageNumber, \[int copyNumber\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-597">public int pageCopy2Tray(int pageNumber, \[int copyNumber\])</span></span>                                            |                                                                                                   |
-| <span data-ttu-id="18cf4-598">public boolean pageFormatting()</span><span class="sxs-lookup"><span data-stu-id="18cf4-598">public boolean pageFormatting()</span></span>                                                                         |                                                                                                   |
-| <span data-ttu-id="18cf4-599">public PrinterOrientation paperOrientation(\[PrinterOrientation orientation\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-599">public PrinterOrientation paperOrientation(\[PrinterOrientation orientation\])</span></span>                          |                                                                                                   |
-| <span data-ttu-id="18cf4-600">public int paperTray(\[int tray\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-600">public int paperTray(\[int tray\])</span></span>                                                                      |                                                                                                   |
-| <span data-ttu-id="18cf4-601">public int paperTrayRaw(\[int tray\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-601">public int paperTrayRaw(\[int tray\])</span></span>                                                                   |                                                                                                   |
-| <span data-ttu-id="18cf4-602">public int performanceTest(\[int loops\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-602">public int performanceTest(\[int loops\])</span></span>                                                               |                                                                                                   |
-| <span data-ttu-id="18cf4-603">public PrintFormat preferredFileFormat(\[PrintFormat format\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-603">public PrintFormat preferredFileFormat(\[PrintFormat format\])</span></span>                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-604">public PrintFormat preferredMailFormat(\[PrintFormat format\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-604">public PrintFormat preferredMailFormat(\[PrintFormat format\])</span></span>                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-605">public PrinterOrientation preferredOrientation(\[PrinterOrientation orientation\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-605">public PrinterOrientation preferredOrientation(\[PrinterOrientation orientation\])</span></span>                      |                                                                                                   |
-| <span data-ttu-id="18cf4-606">public PrintMedium preferredTarget(\[PrintMedium target\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-606">public PrintMedium preferredTarget(\[PrintMedium target\])</span></span>                                              |                                                                                                   |
-| <span data-ttu-id="18cf4-607">public int printerAttributes()</span><span class="sxs-lookup"><span data-stu-id="18cf4-607">public int printerAttributes()</span></span>                                                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-608">public int printerAveragePPM()</span><span class="sxs-lookup"><span data-stu-id="18cf4-608">public int printerAveragePPM()</span></span>                                                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-609">public str printerComment()</span><span class="sxs-lookup"><span data-stu-id="18cf4-609">public str printerComment()</span></span>                                                                             |                                                                                                   |
-| <span data-ttu-id="18cf4-610">public str printerDatatype()</span><span class="sxs-lookup"><span data-stu-id="18cf4-610">public str printerDatatype()</span></span>                                                                            |                                                                                                   |
-| <span data-ttu-id="18cf4-611">public int printerDefaultPriority()</span><span class="sxs-lookup"><span data-stu-id="18cf4-611">public int printerDefaultPriority()</span></span>                                                                     |                                                                                                   |
-| <span data-ttu-id="18cf4-612">public str printerDriverName()</span><span class="sxs-lookup"><span data-stu-id="18cf4-612">public str printerDriverName()</span></span>                                                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-613">public str printerLocation()</span><span class="sxs-lookup"><span data-stu-id="18cf4-613">public str printerLocation()</span></span>                                                                            |                                                                                                   |
-| <span data-ttu-id="18cf4-614">public int printerPageHeight()</span><span class="sxs-lookup"><span data-stu-id="18cf4-614">public int printerPageHeight()</span></span>                                                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-615">public int printerPageWidth()</span><span class="sxs-lookup"><span data-stu-id="18cf4-615">public int printerPageWidth()</span></span>                                                                           |                                                                                                   |
-| <span data-ttu-id="18cf4-616">public int printerPaper()</span><span class="sxs-lookup"><span data-stu-id="18cf4-616">public int printerPaper()</span></span>                                                                               |                                                                                                   |
-| <span data-ttu-id="18cf4-617">public str printerParameters()</span><span class="sxs-lookup"><span data-stu-id="18cf4-617">public str printerParameters()</span></span>                                                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-618">public str printerPortName()</span><span class="sxs-lookup"><span data-stu-id="18cf4-618">public str printerPortName()</span></span>                                                                            |                                                                                                   |
-| <span data-ttu-id="18cf4-619">public str printerPrinterName()</span><span class="sxs-lookup"><span data-stu-id="18cf4-619">public str printerPrinterName()</span></span>                                                                         |                                                                                                   |
-| <span data-ttu-id="18cf4-620">public str printerPrintProcessor()</span><span class="sxs-lookup"><span data-stu-id="18cf4-620">public str printerPrintProcessor()</span></span>                                                                      |                                                                                                   |
-| <span data-ttu-id="18cf4-621">public int printerPriority()</span><span class="sxs-lookup"><span data-stu-id="18cf4-621">public int printerPriority()</span></span>                                                                            |                                                                                                   |
-| <span data-ttu-id="18cf4-622">public int printerQueuedJobs()</span><span class="sxs-lookup"><span data-stu-id="18cf4-622">public int printerQueuedJobs()</span></span>                                                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-623">public ClassRunMode printerRunOn()</span><span class="sxs-lookup"><span data-stu-id="18cf4-623">public ClassRunMode printerRunOn()</span></span>                                                                      |                                                                                                   |
-| <span data-ttu-id="18cf4-624">public str printerSepFile()</span><span class="sxs-lookup"><span data-stu-id="18cf4-624">public str printerSepFile()</span></span>                                                                             |                                                                                                   |
-| <span data-ttu-id="18cf4-625">public str printerServerName()</span><span class="sxs-lookup"><span data-stu-id="18cf4-625">public str printerServerName()</span></span>                                                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-626">public boolean printerSettings(str formName, \[xArgs args\], \[ReportRun reportRun\], \[int showWhat\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-626">public boolean printerSettings(str formName, \[xArgs args\], \[ReportRun reportRun\], \[int showWhat\])</span></span> |                                                                                                   |
-| <span data-ttu-id="18cf4-627">public str printerShareName()</span><span class="sxs-lookup"><span data-stu-id="18cf4-627">public str printerShareName()</span></span>                                                                           |                                                                                                   |
-| <span data-ttu-id="18cf4-628">public TimeOfDay printerStartTime()</span><span class="sxs-lookup"><span data-stu-id="18cf4-628">public TimeOfDay printerStartTime()</span></span>                                                                     |                                                                                                   |
-| <span data-ttu-id="18cf4-629">public int printerStatus()</span><span class="sxs-lookup"><span data-stu-id="18cf4-629">public int printerStatus()</span></span>                                                                              |                                                                                                   |
-| <span data-ttu-id="18cf4-630">public TimeOfDay printerUntilTime()</span><span class="sxs-lookup"><span data-stu-id="18cf4-630">public TimeOfDay printerUntilTime()</span></span>                                                                     |                                                                                                   |
-| <span data-ttu-id="18cf4-631">public ReportRun reportRun()</span><span class="sxs-lookup"><span data-stu-id="18cf4-631">public ReportRun reportRun()</span></span>                                                                            |                                                                                                   |
-| <span data-ttu-id="18cf4-632">public str requestedDeviceName()</span><span class="sxs-lookup"><span data-stu-id="18cf4-632">public str requestedDeviceName()</span></span>                                                                        |                                                                                                   |
-| <span data-ttu-id="18cf4-633">public ClassRunMode requestedRunOn()</span><span class="sxs-lookup"><span data-stu-id="18cf4-633">public ClassRunMode requestedRunOn()</span></span>                                                                    |                                                                                                   |
-| <span data-ttu-id="18cf4-634">public boolean runClient()</span><span class="sxs-lookup"><span data-stu-id="18cf4-634">public boolean runClient()</span></span>                                                                              |                                                                                                   |
-| <span data-ttu-id="18cf4-635">public boolean runServer()</span><span class="sxs-lookup"><span data-stu-id="18cf4-635">public boolean runServer()</span></span>                                                                              |                                                                                                   |
-| <span data-ttu-id="18cf4-636">public int sectionsPerPage(\[int sectionsPerPage\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-636">public int sectionsPerPage(\[int sectionsPerPage\])</span></span>                                                     |                                                                                                   |
-| <span data-ttu-id="18cf4-637">public PrintMedium setTarget(PrintMedium target)</span><span class="sxs-lookup"><span data-stu-id="18cf4-637">public PrintMedium setTarget(PrintMedium target)</span></span>                                                        | <span data-ttu-id="18cf4-638">印刷メディアを設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-638">Sets the print medium.</span></span>                                                                            |
-| <span data-ttu-id="18cf4-639">public boolean singleLargePage(\[boolean singleLargePage\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-639">public boolean singleLargePage(\[boolean singleLargePage\])</span></span>                                             |                                                                                                   |
-| <span data-ttu-id="18cf4-640">public boolean skipBitmapsInRTF(\[boolean skipBitmaps\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-640">public boolean skipBitmapsInRTF(\[boolean skipBitmaps\])</span></span>                                                | <span data-ttu-id="18cf4-641">.rtf ファイルにレポートを印刷するときにビットマップを含めるかどうかをコントロールします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-641">Controls whether bitmaps are included when reports are printed to an .rtf file.</span></span>                   |
-| <span data-ttu-id="18cf4-642">public boolean storeInPrintArchive(\[boolean store\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-642">public boolean storeInPrintArchive(\[boolean store\])</span></span>                                                   |                                                                                                   |
-| <span data-ttu-id="18cf4-643">public boolean suppressScalingMessage(\[boolean suppress\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-643">public boolean suppressScalingMessage(\[boolean suppress\])</span></span>                                             |                                                                                                   |
-| <span data-ttu-id="18cf4-644">public int to(\[int toPage\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-644">public int to(\[int toPage\])</span></span>                                                                           |                                                                                                   |
-| <span data-ttu-id="18cf4-645">public str toString()</span><span class="sxs-lookup"><span data-stu-id="18cf4-645">public str toString()</span></span>                                                                                   | <span data-ttu-id="18cf4-646">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-646">Returns a string that represents the current object.</span></span>                                              |
-| <span data-ttu-id="18cf4-647">public boolean unpackPageSettings(container settings)</span><span class="sxs-lookup"><span data-stu-id="18cf4-647">public boolean unpackPageSettings(container settings)</span></span>                                                   | <span data-ttu-id="18cf4-648">用紙サイズと向きなど、ページ設定を設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-648">Sets the page settings, such as paper size and orientation.</span></span>                                       |
-| <span data-ttu-id="18cf4-649">public boolean unpackPrinterSettings(container settings)</span><span class="sxs-lookup"><span data-stu-id="18cf4-649">public boolean unpackPrinterSettings(container settings)</span></span>                                                |                                                                                                   |
-| <span data-ttu-id="18cf4-650">public boolean unpackPrintJobSettings(container settings)</span><span class="sxs-lookup"><span data-stu-id="18cf4-650">public boolean unpackPrintJobSettings(container settings)</span></span>                                               |                                                                                                   |
-| <span data-ttu-id="18cf4-651">public boolean unpackSubtotalSettings(container settings)</span><span class="sxs-lookup"><span data-stu-id="18cf4-651">public boolean unpackSubtotalSettings(container settings)</span></span>                                               |                                                                                                   |
-| <span data-ttu-id="18cf4-652">public int unprintableBottom()</span><span class="sxs-lookup"><span data-stu-id="18cf4-652">public int unprintableBottom()</span></span>                                                                          |                                                                                                   |
-| <span data-ttu-id="18cf4-653">public int unprintableLeft()</span><span class="sxs-lookup"><span data-stu-id="18cf4-653">public int unprintableLeft()</span></span>                                                                            |                                                                                                   |
-| <span data-ttu-id="18cf4-654">public int unprintableRight()</span><span class="sxs-lookup"><span data-stu-id="18cf4-654">public int unprintableRight()</span></span>                                                                           |                                                                                                   |
-| <span data-ttu-id="18cf4-655">public int unprintableTop()</span><span class="sxs-lookup"><span data-stu-id="18cf4-655">public int unprintableTop()</span></span>                                                                             | <span data-ttu-id="18cf4-656">用紙の最上部から用紙の印刷可能な範囲までの距離を示します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-656">Indicates the distance from the top of the paper to the printable area of the paper.</span></span>              |
-| <span data-ttu-id="18cf4-657">public ReportOutputUserType viewerType(\[ReportOutputUserType type\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-657">public ReportOutputUserType viewerType(\[ReportOutputUserType type\])</span></span>                                   |                                                                                                   |
-| <span data-ttu-id="18cf4-658">public int virtualPageHeight(\[int height\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-658">public int virtualPageHeight(\[int height\])</span></span>                                                            |                                                                                                   |
-| <span data-ttu-id="18cf4-659">public boolean warnIfFileExists(\[boolean warn\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-659">public boolean warnIfFileExists(\[boolean warn\])</span></span>                                                       |                                                                                                   |
-| <span data-ttu-id="18cf4-660">public void enableBody(\[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-660">public void enableBody(\[TableId tableId\])</span></span>                                                             |                                                                                                   |
-| <span data-ttu-id="18cf4-661">public void new(\[container Settings\], \[boolean infoOnly\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-661">public void new(\[container Settings\], \[boolean infoOnly\])</span></span>                                           | <span data-ttu-id="18cf4-662">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-662">Initializes a new instance of the Object class.</span></span>                                                   |
-| <span data-ttu-id="18cf4-663">public void addTrayPageCopy(int tray, int pageNumber, \[int copyNumber\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-663">public void addTrayPageCopy(int tray, int pageNumber, \[int copyNumber\])</span></span>                               |                                                                                                   |
-| <span data-ttu-id="18cf4-664">public void disableBody(\[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-664">public void disableBody(\[TableId tableId\])</span></span>                                                            |                                                                                                   |
-| <span data-ttu-id="18cf4-665">public void clearTrayPageCopy()</span><span class="sxs-lookup"><span data-stu-id="18cf4-665">public void clearTrayPageCopy()</span></span>                                                                         |                                                                                                   |
-| <span data-ttu-id="18cf4-666">public void rulerInch()</span><span class="sxs-lookup"><span data-stu-id="18cf4-666">public void rulerInch()</span></span>                                                                                 |                                                                                                   |
-| <span data-ttu-id="18cf4-667">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="18cf4-667">public void finalize()</span></span>                                                                                  |                                                                                                   |
-| <span data-ttu-id="18cf4-668">public void rulerOff()</span><span class="sxs-lookup"><span data-stu-id="18cf4-668">public void rulerOff()</span></span>                                                                                  |                                                                                                   |
-| <span data-ttu-id="18cf4-669">public void rulerMetric()</span><span class="sxs-lookup"><span data-stu-id="18cf4-669">public void rulerMetric()</span></span>                                                                               |                                                                                                   |
+| <span data-ttu-id="0f5c1-545">public boolean allPages(\[boolean all\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-545">public boolean allPages(\[boolean all\])</span></span>                                                                | <span data-ttu-id="0f5c1-546">sysPrintForm を実行するときに、すべてまたはページのオプション ボタンを選択するかどうかをコントロールします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-546">Controls whether the All or Pages option button should be selected when you run the sysPrintForm.</span></span> |
+| <span data-ttu-id="0f5c1-547">public boolean appendToTextFile(\[boolean append\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-547">public boolean appendToTextFile(\[boolean append\])</span></span>                                                     |                                                                                                   |
+| <span data-ttu-id="0f5c1-548">public boolean banding()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-548">public boolean banding()</span></span>                                                                                |                                                                                                   |
+| <span data-ttu-id="0f5c1-549">public PrintJobSettings clientPrintJobSettings()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-549">public PrintJobSettings clientPrintJobSettings()</span></span>                                                        |                                                                                                   |
+| <span data-ttu-id="0f5c1-550">public boolean collate(\[boolean collate\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-550">public boolean collate(\[boolean collate\])</span></span>                                                             |                                                                                                   |
+| <span data-ttu-id="0f5c1-551">public int copies(\[int numberOfCopies\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-551">public int copies(\[int numberOfCopies\])</span></span>                                                               |                                                                                                   |
+| <span data-ttu-id="0f5c1-552">public str copyDescription(int number, \[str description\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-552">public str copyDescription(int number, \[str description\])</span></span>                                             |                                                                                                   |
+| <span data-ttu-id="0f5c1-553">public str deviceName(\[str device\], \[ClassRunMode runOn\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-553">public str deviceName(\[str device\], \[ClassRunMode runOn\])</span></span>                                           | <span data-ttu-id="0f5c1-554">プリンターを選択するか、選択されているプリンター デバイス名を取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-554">Selects a printer or retrieves the deviceName of the selected printer.</span></span>                            |
+| <span data-ttu-id="0f5c1-555">public boolean doNotOverwrite(\[boolean warn\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-555">public boolean doNotOverwrite(\[boolean warn\])</span></span>                                                         |                                                                                                   |
+| <span data-ttu-id="0f5c1-556">public boolean enableCopies(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-556">public boolean enableCopies(\[boolean enable\])</span></span>                                                         |                                                                                                   |
+| <span data-ttu-id="0f5c1-557">public boolean enableDevice(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-557">public boolean enableDevice(\[boolean enable\])</span></span>                                                         |                                                                                                   |
+| <span data-ttu-id="0f5c1-558">public boolean enablePages(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-558">public boolean enablePages(\[boolean enable\])</span></span>                                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-559">public boolean enableProperties(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-559">public boolean enableProperties(\[boolean enable\])</span></span>                                                     |                                                                                                   |
+| <span data-ttu-id="0f5c1-560">public boolean enableStoreInPrintArchive(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-560">public boolean enableStoreInPrintArchive(\[boolean enable\])</span></span>                                            |                                                                                                   |
+| <span data-ttu-id="0f5c1-561">public boolean enableTarget(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-561">public boolean enableTarget(\[boolean enable\])</span></span>                                                         |                                                                                                   |
+| <span data-ttu-id="0f5c1-562">public int facename2number(\[str facename\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-562">public int facename2number(\[str facename\])</span></span>                                                            |                                                                                                   |
+| <span data-ttu-id="0f5c1-563">public str fileName(\[str FileName\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-563">public str fileName(\[str FileName\])</span></span>                                                                   |                                                                                                   |
+| <span data-ttu-id="0f5c1-564">public boolean fitToPage(\[boolean fit\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-564">public boolean fitToPage(\[boolean fit\])</span></span>                                                               |                                                                                                   |
+| <span data-ttu-id="0f5c1-565">public PrintFormat format(\[PrintFormat format\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-565">public PrintFormat format(\[PrintFormat format\])</span></span>                                                       |                                                                                                   |
+| <span data-ttu-id="0f5c1-566">public int from(\[int fromPage\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-566">public int from(\[int fromPage\])</span></span>                                                                       |                                                                                                   |
+| <span data-ttu-id="0f5c1-567">public str getFacename(int number)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-567">public str getFacename(int number)</span></span>                                                                      |                                                                                                   |
+| <span data-ttu-id="0f5c1-568">public str getFacenameInfo(int number)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-568">public str getFacenameInfo(int number)</span></span>                                                                  |                                                                                                   |
+| <span data-ttu-id="0f5c1-569">public Struct getFontInfo(str fontName)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-569">public Struct getFontInfo(str fontName)</span></span>                                                                 |                                                                                                   |
+| <span data-ttu-id="0f5c1-570">public Array getGlyphWidthsArray(str fontName, int firstChar, int lastChar)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-570">public Array getGlyphWidthsArray(str fontName, int firstChar, int lastChar)</span></span>                             |                                                                                                   |
+| <span data-ttu-id="0f5c1-571">public int getNumberOfClientPrinters()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-571">public int getNumberOfClientPrinters()</span></span>                                                                  |                                                                                                   |
+| <span data-ttu-id="0f5c1-572">public int getNumberOfFacenames()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-572">public int getNumberOfFacenames()</span></span>                                                                       |                                                                                                   |
+| <span data-ttu-id="0f5c1-573">public int getNumberOfPrinters()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-573">public int getNumberOfPrinters()</span></span>                                                                        | <span data-ttu-id="0f5c1-574">コンピューターに設定されているプリンターの数を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-574">Returns the number of printers that are set up on the computer.</span></span>                                   |
+| <span data-ttu-id="0f5c1-575">public int getNumberOfServerPrinters()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-575">public int getNumberOfServerPrinters()</span></span>                                                                  |                                                                                                   |
+| <span data-ttu-id="0f5c1-576">public int getNumberOfTrays()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-576">public int getNumberOfTrays()</span></span>                                                                           |                                                                                                   |
+| <span data-ttu-id="0f5c1-577">public str getPrinter(int number)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-577">public str getPrinter(int number)</span></span>                                                                       | <span data-ttu-id="0f5c1-578">プリンターの deviceName を取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-578">Gets the deviceName of a printer.</span></span>                                                                 |
+| <span data-ttu-id="0f5c1-579">public ClassRunMode getRunOn(int number)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-579">public ClassRunMode getRunOn(int number)</span></span>                                                                |                                                                                                   |
+| <span data-ttu-id="0f5c1-580">public PrintMedium getTarget()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-580">public PrintMedium getTarget()</span></span>                                                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-581">public int getTray(int number)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-581">public int getTray(int number)</span></span>                                                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-582">public str getTrayName(int number)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-582">public str getTrayName(int number)</span></span>                                                                      |                                                                                                   |
+| <span data-ttu-id="0f5c1-583">public Int64 hDC()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-583">public Int64 hDC()</span></span>                                                                                      |                                                                                                   |
+| <span data-ttu-id="0f5c1-584">public boolean lockDestinationProperties(\[boolean warn\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-584">public boolean lockDestinationProperties(\[boolean warn\])</span></span>                                              |                                                                                                   |
+| <span data-ttu-id="0f5c1-585">public str mailCc(\[str MailCc\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-585">public str mailCc(\[str MailCc\])</span></span>                                                                       |                                                                                                   |
+| <span data-ttu-id="0f5c1-586">public str mailSubject(\[str MailSubject\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-586">public str mailSubject(\[str MailSubject\])</span></span>                                                             |                                                                                                   |
+| <span data-ttu-id="0f5c1-587">public str mailTo(\[str MailTo\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-587">public str mailTo(\[str MailTo\])</span></span>                                                                       |                                                                                                   |
+| <span data-ttu-id="0f5c1-588">public int numberOfCopyDescriptions(int number)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-588">public int numberOfCopyDescriptions(int number)</span></span>                                                         |                                                                                                   |
+| <span data-ttu-id="0f5c1-589">public boolean outputToClient(\[boolean toClient\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-589">public boolean outputToClient(\[boolean toClient\])</span></span>                                                     |                                                                                                   |
+| <span data-ttu-id="0f5c1-590">public boolean outputToPrnFile(\[boolean writePrnFile\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-590">public boolean outputToPrnFile(\[boolean writePrnFile\])</span></span>                                                |                                                                                                   |
+| <span data-ttu-id="0f5c1-591">public container packNamesAndPrinterData()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-591">public container packNamesAndPrinterData()</span></span>                                                              |                                                                                                   |
+| <span data-ttu-id="0f5c1-592">public container packPageSettings()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-592">public container packPageSettings()</span></span>                                                                     | <span data-ttu-id="0f5c1-593">ページの書式設定時に選択されているデータをコンテナーに格納します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-593">Stores the data that is selected during page formatting in a container.</span></span>                           |
+| <span data-ttu-id="0f5c1-594">public container packPrinterSettings()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-594">public container packPrinterSettings()</span></span>                                                                  |                                                                                                   |
+| <span data-ttu-id="0f5c1-595">public container packPrintJobSettings()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-595">public container packPrintJobSettings()</span></span>                                                                 |                                                                                                   |
+| <span data-ttu-id="0f5c1-596">public container packSubtotalSettings()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-596">public container packSubtotalSettings()</span></span>                                                                 |                                                                                                   |
+| <span data-ttu-id="0f5c1-597">public int pageCopy2Tray(int pageNumber, \[int copyNumber\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-597">public int pageCopy2Tray(int pageNumber, \[int copyNumber\])</span></span>                                            |                                                                                                   |
+| <span data-ttu-id="0f5c1-598">public boolean pageFormatting()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-598">public boolean pageFormatting()</span></span>                                                                         |                                                                                                   |
+| <span data-ttu-id="0f5c1-599">public PrinterOrientation paperOrientation(\[PrinterOrientation orientation\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-599">public PrinterOrientation paperOrientation(\[PrinterOrientation orientation\])</span></span>                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-600">public int paperTray(\[int tray\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-600">public int paperTray(\[int tray\])</span></span>                                                                      |                                                                                                   |
+| <span data-ttu-id="0f5c1-601">public int paperTrayRaw(\[int tray\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-601">public int paperTrayRaw(\[int tray\])</span></span>                                                                   |                                                                                                   |
+| <span data-ttu-id="0f5c1-602">public int performanceTest(\[int loops\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-602">public int performanceTest(\[int loops\])</span></span>                                                               |                                                                                                   |
+| <span data-ttu-id="0f5c1-603">public PrintFormat preferredFileFormat(\[PrintFormat format\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-603">public PrintFormat preferredFileFormat(\[PrintFormat format\])</span></span>                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-604">public PrintFormat preferredMailFormat(\[PrintFormat format\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-604">public PrintFormat preferredMailFormat(\[PrintFormat format\])</span></span>                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-605">public PrinterOrientation preferredOrientation(\[PrinterOrientation orientation\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-605">public PrinterOrientation preferredOrientation(\[PrinterOrientation orientation\])</span></span>                      |                                                                                                   |
+| <span data-ttu-id="0f5c1-606">public PrintMedium preferredTarget(\[PrintMedium target\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-606">public PrintMedium preferredTarget(\[PrintMedium target\])</span></span>                                              |                                                                                                   |
+| <span data-ttu-id="0f5c1-607">public int printerAttributes()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-607">public int printerAttributes()</span></span>                                                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-608">public int printerAveragePPM()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-608">public int printerAveragePPM()</span></span>                                                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-609">public str printerComment()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-609">public str printerComment()</span></span>                                                                             |                                                                                                   |
+| <span data-ttu-id="0f5c1-610">public str printerDatatype()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-610">public str printerDatatype()</span></span>                                                                            |                                                                                                   |
+| <span data-ttu-id="0f5c1-611">public int printerDefaultPriority()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-611">public int printerDefaultPriority()</span></span>                                                                     |                                                                                                   |
+| <span data-ttu-id="0f5c1-612">public str printerDriverName()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-612">public str printerDriverName()</span></span>                                                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-613">public str printerLocation()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-613">public str printerLocation()</span></span>                                                                            |                                                                                                   |
+| <span data-ttu-id="0f5c1-614">public int printerPageHeight()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-614">public int printerPageHeight()</span></span>                                                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-615">public int printerPageWidth()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-615">public int printerPageWidth()</span></span>                                                                           |                                                                                                   |
+| <span data-ttu-id="0f5c1-616">public int printerPaper()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-616">public int printerPaper()</span></span>                                                                               |                                                                                                   |
+| <span data-ttu-id="0f5c1-617">public str printerParameters()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-617">public str printerParameters()</span></span>                                                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-618">public str printerPortName()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-618">public str printerPortName()</span></span>                                                                            |                                                                                                   |
+| <span data-ttu-id="0f5c1-619">public str printerPrinterName()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-619">public str printerPrinterName()</span></span>                                                                         |                                                                                                   |
+| <span data-ttu-id="0f5c1-620">public str printerPrintProcessor()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-620">public str printerPrintProcessor()</span></span>                                                                      |                                                                                                   |
+| <span data-ttu-id="0f5c1-621">public int printerPriority()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-621">public int printerPriority()</span></span>                                                                            |                                                                                                   |
+| <span data-ttu-id="0f5c1-622">public int printerQueuedJobs()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-622">public int printerQueuedJobs()</span></span>                                                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-623">public ClassRunMode printerRunOn()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-623">public ClassRunMode printerRunOn()</span></span>                                                                      |                                                                                                   |
+| <span data-ttu-id="0f5c1-624">public str printerSepFile()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-624">public str printerSepFile()</span></span>                                                                             |                                                                                                   |
+| <span data-ttu-id="0f5c1-625">public str printerServerName()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-625">public str printerServerName()</span></span>                                                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-626">public boolean printerSettings(str formName, \[xArgs args\], \[ReportRun reportRun\], \[int showWhat\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-626">public boolean printerSettings(str formName, \[xArgs args\], \[ReportRun reportRun\], \[int showWhat\])</span></span> |                                                                                                   |
+| <span data-ttu-id="0f5c1-627">public str printerShareName()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-627">public str printerShareName()</span></span>                                                                           |                                                                                                   |
+| <span data-ttu-id="0f5c1-628">public TimeOfDay printerStartTime()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-628">public TimeOfDay printerStartTime()</span></span>                                                                     |                                                                                                   |
+| <span data-ttu-id="0f5c1-629">public int printerStatus()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-629">public int printerStatus()</span></span>                                                                              |                                                                                                   |
+| <span data-ttu-id="0f5c1-630">public TimeOfDay printerUntilTime()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-630">public TimeOfDay printerUntilTime()</span></span>                                                                     |                                                                                                   |
+| <span data-ttu-id="0f5c1-631">public ReportRun reportRun()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-631">public ReportRun reportRun()</span></span>                                                                            |                                                                                                   |
+| <span data-ttu-id="0f5c1-632">public str requestedDeviceName()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-632">public str requestedDeviceName()</span></span>                                                                        |                                                                                                   |
+| <span data-ttu-id="0f5c1-633">public ClassRunMode requestedRunOn()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-633">public ClassRunMode requestedRunOn()</span></span>                                                                    |                                                                                                   |
+| <span data-ttu-id="0f5c1-634">public boolean runClient()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-634">public boolean runClient()</span></span>                                                                              |                                                                                                   |
+| <span data-ttu-id="0f5c1-635">public boolean runServer()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-635">public boolean runServer()</span></span>                                                                              |                                                                                                   |
+| <span data-ttu-id="0f5c1-636">public int sectionsPerPage(\[int sectionsPerPage\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-636">public int sectionsPerPage(\[int sectionsPerPage\])</span></span>                                                     |                                                                                                   |
+| <span data-ttu-id="0f5c1-637">public PrintMedium setTarget(PrintMedium target)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-637">public PrintMedium setTarget(PrintMedium target)</span></span>                                                        | <span data-ttu-id="0f5c1-638">印刷メディアを設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-638">Sets the print medium.</span></span>                                                                            |
+| <span data-ttu-id="0f5c1-639">public boolean singleLargePage(\[boolean singleLargePage\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-639">public boolean singleLargePage(\[boolean singleLargePage\])</span></span>                                             |                                                                                                   |
+| <span data-ttu-id="0f5c1-640">public boolean skipBitmapsInRTF(\[boolean skipBitmaps\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-640">public boolean skipBitmapsInRTF(\[boolean skipBitmaps\])</span></span>                                                | <span data-ttu-id="0f5c1-641">.rtf ファイルにレポートを印刷するときにビットマップを含めるかどうかをコントロールします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-641">Controls whether bitmaps are included when reports are printed to an .rtf file.</span></span>                   |
+| <span data-ttu-id="0f5c1-642">public boolean storeInPrintArchive(\[boolean store\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-642">public boolean storeInPrintArchive(\[boolean store\])</span></span>                                                   |                                                                                                   |
+| <span data-ttu-id="0f5c1-643">public boolean suppressScalingMessage(\[boolean suppress\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-643">public boolean suppressScalingMessage(\[boolean suppress\])</span></span>                                             |                                                                                                   |
+| <span data-ttu-id="0f5c1-644">public int to(\[int toPage\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-644">public int to(\[int toPage\])</span></span>                                                                           |                                                                                                   |
+| <span data-ttu-id="0f5c1-645">public str toString()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-645">public str toString()</span></span>                                                                                   | <span data-ttu-id="0f5c1-646">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-646">Returns a string that represents the current object.</span></span>                                              |
+| <span data-ttu-id="0f5c1-647">public boolean unpackPageSettings(container settings)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-647">public boolean unpackPageSettings(container settings)</span></span>                                                   | <span data-ttu-id="0f5c1-648">用紙サイズと向きなど、ページ設定を設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-648">Sets the page settings, such as paper size and orientation.</span></span>                                       |
+| <span data-ttu-id="0f5c1-649">public boolean unpackPrinterSettings(container settings)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-649">public boolean unpackPrinterSettings(container settings)</span></span>                                                |                                                                                                   |
+| <span data-ttu-id="0f5c1-650">public boolean unpackPrintJobSettings(container settings)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-650">public boolean unpackPrintJobSettings(container settings)</span></span>                                               |                                                                                                   |
+| <span data-ttu-id="0f5c1-651">public boolean unpackSubtotalSettings(container settings)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-651">public boolean unpackSubtotalSettings(container settings)</span></span>                                               |                                                                                                   |
+| <span data-ttu-id="0f5c1-652">public int unprintableBottom()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-652">public int unprintableBottom()</span></span>                                                                          |                                                                                                   |
+| <span data-ttu-id="0f5c1-653">public int unprintableLeft()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-653">public int unprintableLeft()</span></span>                                                                            |                                                                                                   |
+| <span data-ttu-id="0f5c1-654">public int unprintableRight()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-654">public int unprintableRight()</span></span>                                                                           |                                                                                                   |
+| <span data-ttu-id="0f5c1-655">public int unprintableTop()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-655">public int unprintableTop()</span></span>                                                                             | <span data-ttu-id="0f5c1-656">用紙の最上部から用紙の印刷可能な範囲までの距離を示します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-656">Indicates the distance from the top of the paper to the printable area of the paper.</span></span>              |
+| <span data-ttu-id="0f5c1-657">public ReportOutputUserType viewerType(\[ReportOutputUserType type\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-657">public ReportOutputUserType viewerType(\[ReportOutputUserType type\])</span></span>                                   |                                                                                                   |
+| <span data-ttu-id="0f5c1-658">public int virtualPageHeight(\[int height\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-658">public int virtualPageHeight(\[int height\])</span></span>                                                            |                                                                                                   |
+| <span data-ttu-id="0f5c1-659">public boolean warnIfFileExists(\[boolean warn\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-659">public boolean warnIfFileExists(\[boolean warn\])</span></span>                                                       |                                                                                                   |
+| <span data-ttu-id="0f5c1-660">public void enableBody(\[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-660">public void enableBody(\[TableId tableId\])</span></span>                                                             |                                                                                                   |
+| <span data-ttu-id="0f5c1-661">public void new(\[container Settings\], \[boolean infoOnly\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-661">public void new(\[container Settings\], \[boolean infoOnly\])</span></span>                                           | <span data-ttu-id="0f5c1-662">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-662">Initializes a new instance of the Object class.</span></span>                                                   |
+| <span data-ttu-id="0f5c1-663">public void addTrayPageCopy(int tray, int pageNumber, \[int copyNumber\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-663">public void addTrayPageCopy(int tray, int pageNumber, \[int copyNumber\])</span></span>                               |                                                                                                   |
+| <span data-ttu-id="0f5c1-664">public void disableBody(\[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-664">public void disableBody(\[TableId tableId\])</span></span>                                                            |                                                                                                   |
+| <span data-ttu-id="0f5c1-665">public void clearTrayPageCopy()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-665">public void clearTrayPageCopy()</span></span>                                                                         |                                                                                                   |
+| <span data-ttu-id="0f5c1-666">public void rulerInch()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-666">public void rulerInch()</span></span>                                                                                 |                                                                                                   |
+| <span data-ttu-id="0f5c1-667">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-667">public void finalize()</span></span>                                                                                  |                                                                                                   |
+| <span data-ttu-id="0f5c1-668">public void rulerOff()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-668">public void rulerOff()</span></span>                                                                                  |                                                                                                   |
+| <span data-ttu-id="0f5c1-669">public void rulerMetric()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-669">public void rulerMetric()</span></span>                                                                               |                                                                                                   |
 
-### <a name="method-allpages"></a><span data-ttu-id="18cf4-670">メソッド allPages</span><span class="sxs-lookup"><span data-stu-id="18cf4-670">Method allPages</span></span>
+### <a name="method-allpages"></a><span data-ttu-id="0f5c1-670">メソッド allPages</span><span class="sxs-lookup"><span data-stu-id="0f5c1-670">Method allPages</span></span>
 
-<span data-ttu-id="18cf4-671">sysPrintForm を実行するときに、すべてまたはページのオプション ボタンを選択するかどうかをコントロールします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-671">Controls whether the All or Pages option button should be selected when you run the sysPrintForm.</span></span>
+<span data-ttu-id="0f5c1-671">sysPrintForm を実行するときに、すべてまたはページのオプション ボタンを選択するかどうかをコントロールします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-671">Controls whether the All or Pages option button should be selected when you run the sysPrintForm.</span></span>
 
     public boolean allPages([boolean all])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-672">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-672">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-672">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-672">Parameters</span></span>
 
-<span data-ttu-id="18cf4-673">すべて</span><span class="sxs-lookup"><span data-stu-id="18cf4-673">all</span></span>  
-<span data-ttu-id="18cf4-674">true の場合、すべてのオプション ボタンが選択されるブール値; それ以外の場合は、ページ オプション ボタンが選択されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-674">A boolean value that, if true, the All option button is selected; otherwise, the Pages option button is selected.</span></span>
+<span data-ttu-id="0f5c1-673">すべて</span><span class="sxs-lookup"><span data-stu-id="0f5c1-673">all</span></span>  
+<span data-ttu-id="0f5c1-674">true の場合、すべてのオプション ボタンが選択されるブール値; それ以外の場合は、ページ オプション ボタンが選択されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-674">A boolean value that, if true, the All option button is selected; otherwise, the Pages option button is selected.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-675">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-675">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-675">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-675">Return Value</span></span>
 
-<span data-ttu-id="18cf4-676">すべてのオプション ボタンを選択する必要がある場合は true。それ以外の場合は false で、ページのオプション ボタンが選択されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-676">true if the All radio button should be selected; otherwise, false, and the Pages option button is selected.</span></span>
+<span data-ttu-id="0f5c1-676">すべてのオプション ボタンを選択する必要がある場合は true。それ以外の場合は false で、ページのオプション ボタンが選択されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-676">true if the All radio button should be selected; otherwise, false, and the Pages option button is selected.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-677">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-677">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-677">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-677">Remarks</span></span>
 
-<span data-ttu-id="18cf4-678">このメソッドは、sysPrintForm によって内部的に使用されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-678">The method is for internal use by sysPrintForm.</span></span>
+<span data-ttu-id="0f5c1-678">このメソッドは、sysPrintForm によって内部的に使用されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-678">The method is for internal use by sysPrintForm.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="18cf4-679">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-679">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="0f5c1-679">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-679">Examples</span></span>
 
-<span data-ttu-id="18cf4-680">次の例では、2 〜 4 のページを印刷し、[すべてのオプション] ボタンではなく [ページのオプション] ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-680">The following example prints pages 2 to 4 and selects the Pages option button instead of the All option button.</span></span>
+<span data-ttu-id="0f5c1-680">次の例では、2 〜 4 のページを印刷し、[すべてのオプション] ボタンではなく [ページのオプション] ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-680">The following example prints pages 2 to 4 and selects the Pages option button instead of the All option button.</span></span>
 
     static void PrintingToPDF(Args _args) 
     { 
@@ -1116,87 +1116,87 @@ ms.locfileid: "1544202"
         rr.run(); 
     }
 
-### <a name="method-appendtotextfile"></a><span data-ttu-id="18cf4-681">メソッド appendToTextFile</span><span class="sxs-lookup"><span data-stu-id="18cf4-681">Method appendToTextFile</span></span>
+### <a name="method-appendtotextfile"></a><span data-ttu-id="0f5c1-681">メソッド appendToTextFile</span><span class="sxs-lookup"><span data-stu-id="0f5c1-681">Method appendToTextFile</span></span>
 
     public boolean appendToTextFile([boolean append])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-682">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-682">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-682">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-682">Parameters</span></span>
 
-<span data-ttu-id="18cf4-683">append</span><span class="sxs-lookup"><span data-stu-id="18cf4-683">append</span></span>  
+<span data-ttu-id="0f5c1-683">append</span><span class="sxs-lookup"><span data-stu-id="0f5c1-683">append</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-684">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-684">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-684">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-684">Return Value</span></span>
 
-### <a name="method-banding"></a><span data-ttu-id="18cf4-685">メソッド banding</span><span class="sxs-lookup"><span data-stu-id="18cf4-685">Method banding</span></span>
+### <a name="method-banding"></a><span data-ttu-id="0f5c1-685">メソッド banding</span><span class="sxs-lookup"><span data-stu-id="0f5c1-685">Method banding</span></span>
 
     public boolean banding()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-686">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-686">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-686">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-686">Return Value</span></span>
 
-### <a name="method-clientprintjobsettings"></a><span data-ttu-id="18cf4-687">メソッド clientPrintJobSettings</span><span class="sxs-lookup"><span data-stu-id="18cf4-687">Method clientPrintJobSettings</span></span>
+### <a name="method-clientprintjobsettings"></a><span data-ttu-id="0f5c1-687">メソッド clientPrintJobSettings</span><span class="sxs-lookup"><span data-stu-id="0f5c1-687">Method clientPrintJobSettings</span></span>
 
     public PrintJobSettings clientPrintJobSettings()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-688">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-688">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-688">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-688">Return Value</span></span>
 
-### <a name="method-collate"></a><span data-ttu-id="18cf4-689">メソッド collate</span><span class="sxs-lookup"><span data-stu-id="18cf4-689">Method collate</span></span>
+### <a name="method-collate"></a><span data-ttu-id="0f5c1-689">メソッド collate</span><span class="sxs-lookup"><span data-stu-id="0f5c1-689">Method collate</span></span>
 
     public boolean collate([boolean collate])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-690">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-690">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-690">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-690">Parameters</span></span>
 
-<span data-ttu-id="18cf4-691">collate</span><span class="sxs-lookup"><span data-stu-id="18cf4-691">collate</span></span>  
+<span data-ttu-id="0f5c1-691">collate</span><span class="sxs-lookup"><span data-stu-id="0f5c1-691">collate</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-692">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-692">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-692">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-692">Return Value</span></span>
 
-### <a name="method-copies"></a><span data-ttu-id="18cf4-693">メソッド copies</span><span class="sxs-lookup"><span data-stu-id="18cf4-693">Method copies</span></span>
+### <a name="method-copies"></a><span data-ttu-id="0f5c1-693">メソッド copies</span><span class="sxs-lookup"><span data-stu-id="0f5c1-693">Method copies</span></span>
 
     public int copies([int numberOfCopies])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-694">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-694">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-694">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-694">Parameters</span></span>
 
-<span data-ttu-id="18cf4-695">numberOfCopies</span><span class="sxs-lookup"><span data-stu-id="18cf4-695">numberOfCopies</span></span>  
+<span data-ttu-id="0f5c1-695">numberOfCopies</span><span class="sxs-lookup"><span data-stu-id="0f5c1-695">numberOfCopies</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-696">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-696">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-696">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-696">Return Value</span></span>
 
-### <a name="method-copydescription"></a><span data-ttu-id="18cf4-697">メソッド copyDescription</span><span class="sxs-lookup"><span data-stu-id="18cf4-697">Method copyDescription</span></span>
+### <a name="method-copydescription"></a><span data-ttu-id="0f5c1-697">メソッド copyDescription</span><span class="sxs-lookup"><span data-stu-id="0f5c1-697">Method copyDescription</span></span>
 
     public str copyDescription(int number, [str description])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-698">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-698">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-698">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-698">Parameters</span></span>
 
-<span data-ttu-id="18cf4-699">数値</span><span class="sxs-lookup"><span data-stu-id="18cf4-699">number</span></span>  
+<span data-ttu-id="0f5c1-699">数値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-699">number</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-700">description</span><span class="sxs-lookup"><span data-stu-id="18cf4-700">description</span></span>  
+<span data-ttu-id="0f5c1-700">description</span><span class="sxs-lookup"><span data-stu-id="0f5c1-700">description</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-701">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-701">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-701">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-701">Return Value</span></span>
 
-### <a name="method-devicename"></a><span data-ttu-id="18cf4-702">メソッド deviceName</span><span class="sxs-lookup"><span data-stu-id="18cf4-702">Method deviceName</span></span>
+### <a name="method-devicename"></a><span data-ttu-id="0f5c1-702">メソッド deviceName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-702">Method deviceName</span></span>
 
-<span data-ttu-id="18cf4-703">プリンターを選択するか、選択されているプリンター デバイス名を取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-703">Selects a printer or retrieves the deviceName of the selected printer.</span></span>
+<span data-ttu-id="0f5c1-703">プリンターを選択するか、選択されているプリンター デバイス名を取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-703">Selects a printer or retrieves the deviceName of the selected printer.</span></span>
 
     public str deviceName([str device], [ClassRunMode runOn])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-704">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-704">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-704">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-704">Parameters</span></span>
 
-<span data-ttu-id="18cf4-705">デバイス</span><span class="sxs-lookup"><span data-stu-id="18cf4-705">device</span></span>  
+<span data-ttu-id="0f5c1-705">デバイス</span><span class="sxs-lookup"><span data-stu-id="0f5c1-705">device</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-706">runOn</span><span class="sxs-lookup"><span data-stu-id="18cf4-706">runOn</span></span>  
+<span data-ttu-id="0f5c1-706">runOn</span><span class="sxs-lookup"><span data-stu-id="0f5c1-706">runOn</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-707">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-707">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-707">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-707">Return Value</span></span>
 
-<span data-ttu-id="18cf4-708">選択したプリンターの deviceName。</span><span class="sxs-lookup"><span data-stu-id="18cf4-708">The deviceName of the selected printer.</span></span>
+<span data-ttu-id="0f5c1-708">選択したプリンターの deviceName。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-708">The deviceName of the selected printer.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-709">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-709">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-709">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-709">Remarks</span></span>
 
-<span data-ttu-id="18cf4-710">選択されるプリンターの deviceName は、getPrinter メソッドを使用して検出できます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-710">The deviceName of a printer to be selected could be found by using the getPrinter method.</span></span>
+<span data-ttu-id="0f5c1-710">選択されるプリンターの deviceName は、getPrinter メソッドを使用して検出できます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-710">The deviceName of a printer to be selected could be found by using the getPrinter method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="18cf4-711">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-711">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="0f5c1-711">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-711">Examples</span></span>
 
-<span data-ttu-id="18cf4-712">このジョブは、利用可能なプリンターと印刷できない領域を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-712">This job lists the available printers and their nonprintable area.</span></span>
+<span data-ttu-id="0f5c1-712">このジョブは、利用可能なプリンターと印刷できない領域を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-712">This job lists the available printers and their nonprintable area.</span></span>
 
     static void aaaKJ(args a) 
     { 
@@ -1217,224 +1217,224 @@ ms.locfileid: "1544202"
         pause; 
     }
 
-### <a name="method-donotoverwrite"></a><span data-ttu-id="18cf4-713">メソッド doNotOverwrite</span><span class="sxs-lookup"><span data-stu-id="18cf4-713">Method doNotOverwrite</span></span>
+### <a name="method-donotoverwrite"></a><span data-ttu-id="0f5c1-713">メソッド doNotOverwrite</span><span class="sxs-lookup"><span data-stu-id="0f5c1-713">Method doNotOverwrite</span></span>
 
     public boolean doNotOverwrite([boolean warn])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-714">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-714">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-714">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-714">Parameters</span></span>
 
-<span data-ttu-id="18cf4-715">警告</span><span class="sxs-lookup"><span data-stu-id="18cf4-715">warn</span></span>  
+<span data-ttu-id="0f5c1-715">警告</span><span class="sxs-lookup"><span data-stu-id="0f5c1-715">warn</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-716">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-716">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-716">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-716">Return Value</span></span>
 
-### <a name="method-enablecopies"></a><span data-ttu-id="18cf4-717">メソッド enableCopies</span><span class="sxs-lookup"><span data-stu-id="18cf4-717">Method enableCopies</span></span>
+### <a name="method-enablecopies"></a><span data-ttu-id="0f5c1-717">メソッド enableCopies</span><span class="sxs-lookup"><span data-stu-id="0f5c1-717">Method enableCopies</span></span>
 
     public boolean enableCopies([boolean enable])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-718">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-718">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-718">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-718">Parameters</span></span>
 
-<span data-ttu-id="18cf4-719">enable</span><span class="sxs-lookup"><span data-stu-id="18cf4-719">enable</span></span>  
+<span data-ttu-id="0f5c1-719">enable</span><span class="sxs-lookup"><span data-stu-id="0f5c1-719">enable</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-720">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-720">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-720">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-720">Return Value</span></span>
 
-### <a name="method-enabledevice"></a><span data-ttu-id="18cf4-721">メソッド enableDevice</span><span class="sxs-lookup"><span data-stu-id="18cf4-721">Method enableDevice</span></span>
+### <a name="method-enabledevice"></a><span data-ttu-id="0f5c1-721">メソッド enableDevice</span><span class="sxs-lookup"><span data-stu-id="0f5c1-721">Method enableDevice</span></span>
 
     public boolean enableDevice([boolean enable])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-722">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-722">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-722">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-722">Parameters</span></span>
 
-<span data-ttu-id="18cf4-723">enable</span><span class="sxs-lookup"><span data-stu-id="18cf4-723">enable</span></span>  
+<span data-ttu-id="0f5c1-723">enable</span><span class="sxs-lookup"><span data-stu-id="0f5c1-723">enable</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-724">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-724">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-724">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-724">Return Value</span></span>
 
-### <a name="method-enablepages"></a><span data-ttu-id="18cf4-725">メソッド enablePages</span><span class="sxs-lookup"><span data-stu-id="18cf4-725">Method enablePages</span></span>
+### <a name="method-enablepages"></a><span data-ttu-id="0f5c1-725">メソッド enablePages</span><span class="sxs-lookup"><span data-stu-id="0f5c1-725">Method enablePages</span></span>
 
     public boolean enablePages([boolean enable])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-726">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-726">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-726">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-726">Parameters</span></span>
 
-<span data-ttu-id="18cf4-727">enable</span><span class="sxs-lookup"><span data-stu-id="18cf4-727">enable</span></span>  
+<span data-ttu-id="0f5c1-727">enable</span><span class="sxs-lookup"><span data-stu-id="0f5c1-727">enable</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-728">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-728">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-728">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-728">Return Value</span></span>
 
-### <a name="method-enableproperties"></a><span data-ttu-id="18cf4-729">メソッド enableProperties</span><span class="sxs-lookup"><span data-stu-id="18cf4-729">Method enableProperties</span></span>
+### <a name="method-enableproperties"></a><span data-ttu-id="0f5c1-729">メソッド enableProperties</span><span class="sxs-lookup"><span data-stu-id="0f5c1-729">Method enableProperties</span></span>
 
     public boolean enableProperties([boolean enable])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-730">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-730">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-730">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-730">Parameters</span></span>
 
-<span data-ttu-id="18cf4-731">enable</span><span class="sxs-lookup"><span data-stu-id="18cf4-731">enable</span></span>  
+<span data-ttu-id="0f5c1-731">enable</span><span class="sxs-lookup"><span data-stu-id="0f5c1-731">enable</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-732">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-732">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-732">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-732">Return Value</span></span>
 
-### <a name="method-enablestoreinprintarchive"></a><span data-ttu-id="18cf4-733">メソッド enableStoreInPrintArchive</span><span class="sxs-lookup"><span data-stu-id="18cf4-733">Method enableStoreInPrintArchive</span></span>
+### <a name="method-enablestoreinprintarchive"></a><span data-ttu-id="0f5c1-733">メソッド enableStoreInPrintArchive</span><span class="sxs-lookup"><span data-stu-id="0f5c1-733">Method enableStoreInPrintArchive</span></span>
 
     public boolean enableStoreInPrintArchive([boolean enable])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-734">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-734">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-734">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-734">Parameters</span></span>
 
-<span data-ttu-id="18cf4-735">enable</span><span class="sxs-lookup"><span data-stu-id="18cf4-735">enable</span></span>  
+<span data-ttu-id="0f5c1-735">enable</span><span class="sxs-lookup"><span data-stu-id="0f5c1-735">enable</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-736">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-736">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-736">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-736">Return Value</span></span>
 
-### <a name="method-enabletarget"></a><span data-ttu-id="18cf4-737">メソッド enableTarget</span><span class="sxs-lookup"><span data-stu-id="18cf4-737">Method enableTarget</span></span>
+### <a name="method-enabletarget"></a><span data-ttu-id="0f5c1-737">メソッド enableTarget</span><span class="sxs-lookup"><span data-stu-id="0f5c1-737">Method enableTarget</span></span>
 
     public boolean enableTarget([boolean enable])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-738">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-738">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-738">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-738">Parameters</span></span>
 
-<span data-ttu-id="18cf4-739">enable</span><span class="sxs-lookup"><span data-stu-id="18cf4-739">enable</span></span>  
+<span data-ttu-id="0f5c1-739">enable</span><span class="sxs-lookup"><span data-stu-id="0f5c1-739">enable</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-740">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-740">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-740">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-740">Return Value</span></span>
 
-### <a name="method-facename2number"></a><span data-ttu-id="18cf4-741">メソッド facename2number</span><span class="sxs-lookup"><span data-stu-id="18cf4-741">Method facename2number</span></span>
+### <a name="method-facename2number"></a><span data-ttu-id="0f5c1-741">メソッド facename2number</span><span class="sxs-lookup"><span data-stu-id="0f5c1-741">Method facename2number</span></span>
 
     public int facename2number([str facename])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-742">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-742">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-742">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-742">Parameters</span></span>
 
-<span data-ttu-id="18cf4-743">facename</span><span class="sxs-lookup"><span data-stu-id="18cf4-743">facename</span></span>  
+<span data-ttu-id="0f5c1-743">facename</span><span class="sxs-lookup"><span data-stu-id="0f5c1-743">facename</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-744">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-744">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-744">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-744">Return Value</span></span>
 
-### <a name="method-filename"></a><span data-ttu-id="18cf4-745">メソッド fileName</span><span class="sxs-lookup"><span data-stu-id="18cf4-745">Method fileName</span></span>
+### <a name="method-filename"></a><span data-ttu-id="0f5c1-745">メソッド fileName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-745">Method fileName</span></span>
 
     public str fileName([str FileName])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-746">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-746">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-746">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-746">Parameters</span></span>
 
-<span data-ttu-id="18cf4-747">FileName</span><span class="sxs-lookup"><span data-stu-id="18cf4-747">FileName</span></span>  
+<span data-ttu-id="0f5c1-747">FileName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-747">FileName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-748">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-748">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-748">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-748">Return Value</span></span>
 
-### <a name="method-fittopage"></a><span data-ttu-id="18cf4-749">メソッド fitToPage</span><span class="sxs-lookup"><span data-stu-id="18cf4-749">Method fitToPage</span></span>
+### <a name="method-fittopage"></a><span data-ttu-id="0f5c1-749">メソッド fitToPage</span><span class="sxs-lookup"><span data-stu-id="0f5c1-749">Method fitToPage</span></span>
 
     public boolean fitToPage([boolean fit])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-750">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-750">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-750">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-750">Parameters</span></span>
 
-<span data-ttu-id="18cf4-751">fit</span><span class="sxs-lookup"><span data-stu-id="18cf4-751">fit</span></span>  
+<span data-ttu-id="0f5c1-751">fit</span><span class="sxs-lookup"><span data-stu-id="0f5c1-751">fit</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-752">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-752">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-752">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-752">Return Value</span></span>
 
-### <a name="method-format"></a><span data-ttu-id="18cf4-753">メソッド format</span><span class="sxs-lookup"><span data-stu-id="18cf4-753">Method format</span></span>
+### <a name="method-format"></a><span data-ttu-id="0f5c1-753">メソッド format</span><span class="sxs-lookup"><span data-stu-id="0f5c1-753">Method format</span></span>
 
     public PrintFormat format([PrintFormat format])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-754">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-754">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-754">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-754">Parameters</span></span>
 
-<span data-ttu-id="18cf4-755">形式</span><span class="sxs-lookup"><span data-stu-id="18cf4-755">format</span></span>  
+<span data-ttu-id="0f5c1-755">形式</span><span class="sxs-lookup"><span data-stu-id="0f5c1-755">format</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-756">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-756">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-756">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-756">Return Value</span></span>
 
-### <a name="method-from"></a><span data-ttu-id="18cf4-757">メソッド from</span><span class="sxs-lookup"><span data-stu-id="18cf4-757">Method from</span></span>
+### <a name="method-from"></a><span data-ttu-id="0f5c1-757">メソッド from</span><span class="sxs-lookup"><span data-stu-id="0f5c1-757">Method from</span></span>
 
     public int from([int fromPage])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-758">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-758">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-758">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-758">Parameters</span></span>
 
-<span data-ttu-id="18cf4-759">fromPage</span><span class="sxs-lookup"><span data-stu-id="18cf4-759">fromPage</span></span>  
+<span data-ttu-id="0f5c1-759">fromPage</span><span class="sxs-lookup"><span data-stu-id="0f5c1-759">fromPage</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-760">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-760">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-760">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-760">Return Value</span></span>
 
-### <a name="method-getfacename"></a><span data-ttu-id="18cf4-761">メソッド getFacename</span><span class="sxs-lookup"><span data-stu-id="18cf4-761">Method getFacename</span></span>
+### <a name="method-getfacename"></a><span data-ttu-id="0f5c1-761">メソッド getFacename</span><span class="sxs-lookup"><span data-stu-id="0f5c1-761">Method getFacename</span></span>
 
     public str getFacename(int number)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-762">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-762">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-762">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-762">Parameters</span></span>
 
-<span data-ttu-id="18cf4-763">数値</span><span class="sxs-lookup"><span data-stu-id="18cf4-763">number</span></span>  
+<span data-ttu-id="0f5c1-763">数値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-763">number</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-764">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-764">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-764">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-764">Return Value</span></span>
 
-### <a name="method-getfacenameinfo"></a><span data-ttu-id="18cf4-765">メソッド getFacenameInfo</span><span class="sxs-lookup"><span data-stu-id="18cf4-765">Method getFacenameInfo</span></span>
+### <a name="method-getfacenameinfo"></a><span data-ttu-id="0f5c1-765">メソッド getFacenameInfo</span><span class="sxs-lookup"><span data-stu-id="0f5c1-765">Method getFacenameInfo</span></span>
 
     public str getFacenameInfo(int number)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-766">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-766">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-766">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-766">Parameters</span></span>
 
-<span data-ttu-id="18cf4-767">数値</span><span class="sxs-lookup"><span data-stu-id="18cf4-767">number</span></span>  
+<span data-ttu-id="0f5c1-767">数値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-767">number</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-768">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-768">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-768">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-768">Return Value</span></span>
 
-### <a name="method-getfontinfo"></a><span data-ttu-id="18cf4-769">メソッド getFontInfo</span><span class="sxs-lookup"><span data-stu-id="18cf4-769">Method getFontInfo</span></span>
+### <a name="method-getfontinfo"></a><span data-ttu-id="0f5c1-769">メソッド getFontInfo</span><span class="sxs-lookup"><span data-stu-id="0f5c1-769">Method getFontInfo</span></span>
 
     public Struct getFontInfo(str fontName)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-770">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-770">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-770">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-770">Parameters</span></span>
 
-<span data-ttu-id="18cf4-771">fontName</span><span class="sxs-lookup"><span data-stu-id="18cf4-771">fontName</span></span>  
+<span data-ttu-id="0f5c1-771">fontName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-771">fontName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-772">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-772">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-772">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-772">Return Value</span></span>
 
-### <a name="method-getglyphwidthsarray"></a><span data-ttu-id="18cf4-773">メソッド getGlyphWidthsArray</span><span class="sxs-lookup"><span data-stu-id="18cf4-773">Method getGlyphWidthsArray</span></span>
+### <a name="method-getglyphwidthsarray"></a><span data-ttu-id="0f5c1-773">メソッド getGlyphWidthsArray</span><span class="sxs-lookup"><span data-stu-id="0f5c1-773">Method getGlyphWidthsArray</span></span>
 
     public Array getGlyphWidthsArray(str fontName, int firstChar, int lastChar)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-774">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-774">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-774">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-774">Parameters</span></span>
 
-<span data-ttu-id="18cf4-775">fontName</span><span class="sxs-lookup"><span data-stu-id="18cf4-775">fontName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="18cf4-776">firstChar</span><span class="sxs-lookup"><span data-stu-id="18cf4-776">firstChar</span></span>  
+<span data-ttu-id="0f5c1-775">fontName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-775">fontName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-777">lastChar</span><span class="sxs-lookup"><span data-stu-id="18cf4-777">lastChar</span></span>  
+<span data-ttu-id="0f5c1-776">firstChar</span><span class="sxs-lookup"><span data-stu-id="0f5c1-776">firstChar</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-778">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-778">Return Value</span></span>
+<!-- -->
 
-### <a name="method-getnumberofclientprinters"></a><span data-ttu-id="18cf4-779">メソッド getNumberOfClientPrinters</span><span class="sxs-lookup"><span data-stu-id="18cf4-779">Method getNumberOfClientPrinters</span></span>
+<span data-ttu-id="0f5c1-777">lastChar</span><span class="sxs-lookup"><span data-stu-id="0f5c1-777">lastChar</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-778">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-778">Return Value</span></span>
+
+### <a name="method-getnumberofclientprinters"></a><span data-ttu-id="0f5c1-779">メソッド getNumberOfClientPrinters</span><span class="sxs-lookup"><span data-stu-id="0f5c1-779">Method getNumberOfClientPrinters</span></span>
 
     public int getNumberOfClientPrinters()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-780">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-780">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-780">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-780">Return Value</span></span>
 
-### <a name="method-getnumberoffacenames"></a><span data-ttu-id="18cf4-781">メソッド getNumberOfFacenames</span><span class="sxs-lookup"><span data-stu-id="18cf4-781">Method getNumberOfFacenames</span></span>
+### <a name="method-getnumberoffacenames"></a><span data-ttu-id="0f5c1-781">メソッド getNumberOfFacenames</span><span class="sxs-lookup"><span data-stu-id="0f5c1-781">Method getNumberOfFacenames</span></span>
 
     public int getNumberOfFacenames()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-782">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-782">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-782">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-782">Return Value</span></span>
 
-### <a name="method-getnumberofprinters"></a><span data-ttu-id="18cf4-783">メソッド getNumberOfPrinters</span><span class="sxs-lookup"><span data-stu-id="18cf4-783">Method getNumberOfPrinters</span></span>
+### <a name="method-getnumberofprinters"></a><span data-ttu-id="0f5c1-783">メソッド getNumberOfPrinters</span><span class="sxs-lookup"><span data-stu-id="0f5c1-783">Method getNumberOfPrinters</span></span>
 
-<span data-ttu-id="18cf4-784">コンピューターに設定されているプリンターの数を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-784">Returns the number of printers that are set up on the computer.</span></span>
+<span data-ttu-id="0f5c1-784">コンピューターに設定されているプリンターの数を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-784">Returns the number of printers that are set up on the computer.</span></span>
 
     public int getNumberOfPrinters()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-785">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-785">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-785">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-785">Return Value</span></span>
 
-<span data-ttu-id="18cf4-786">コンピューターに設定されているプリンターの数。</span><span class="sxs-lookup"><span data-stu-id="18cf4-786">The number of printers that are set up on the computer.</span></span>
+<span data-ttu-id="0f5c1-786">コンピューターに設定されているプリンターの数。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-786">The number of printers that are set up on the computer.</span></span>
 
-### <a name="method-getnumberofserverprinters"></a><span data-ttu-id="18cf4-787">メソッド getNumberOfServerPrinters</span><span class="sxs-lookup"><span data-stu-id="18cf4-787">Method getNumberOfServerPrinters</span></span>
+### <a name="method-getnumberofserverprinters"></a><span data-ttu-id="0f5c1-787">メソッド getNumberOfServerPrinters</span><span class="sxs-lookup"><span data-stu-id="0f5c1-787">Method getNumberOfServerPrinters</span></span>
 
     public int getNumberOfServerPrinters()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-788">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-788">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-788">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-788">Return Value</span></span>
 
-### <a name="method-getnumberoftrays"></a><span data-ttu-id="18cf4-789">メソッド getNumberOfTrays</span><span class="sxs-lookup"><span data-stu-id="18cf4-789">Method getNumberOfTrays</span></span>
+### <a name="method-getnumberoftrays"></a><span data-ttu-id="0f5c1-789">メソッド getNumberOfTrays</span><span class="sxs-lookup"><span data-stu-id="0f5c1-789">Method getNumberOfTrays</span></span>
 
     public int getNumberOfTrays()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-790">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-790">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-790">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-790">Return Value</span></span>
 
-### <a name="method-getprinter"></a><span data-ttu-id="18cf4-791">メソッド getPrinter</span><span class="sxs-lookup"><span data-stu-id="18cf4-791">Method getPrinter</span></span>
+### <a name="method-getprinter"></a><span data-ttu-id="0f5c1-791">メソッド getPrinter</span><span class="sxs-lookup"><span data-stu-id="0f5c1-791">Method getPrinter</span></span>
 
-<span data-ttu-id="18cf4-792">プリンターの deviceName を取得します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-792">Gets the deviceName of a printer.</span></span>
+<span data-ttu-id="0f5c1-792">プリンターの deviceName を取得します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-792">Gets the deviceName of a printer.</span></span>
 
     public str getPrinter(int number)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-793">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-793">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-793">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-793">Parameters</span></span>
 
-<span data-ttu-id="18cf4-794">数値</span><span class="sxs-lookup"><span data-stu-id="18cf4-794">number</span></span>  
-<span data-ttu-id="18cf4-795">1 から使用可能なプリンターの数までの値。</span><span class="sxs-lookup"><span data-stu-id="18cf4-795">A value between 1 and the number of available printers.</span></span>
+<span data-ttu-id="0f5c1-794">数値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-794">number</span></span>  
+<span data-ttu-id="0f5c1-795">1 から使用可能なプリンターの数までの値。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-795">A value between 1 and the number of available printers.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-796">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-796">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-796">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-796">Return Value</span></span>
 
-<span data-ttu-id="18cf4-797">指定されたプリンター番号の deviceName。</span><span class="sxs-lookup"><span data-stu-id="18cf4-797">The deviceName of the given printer number.</span></span>
+<span data-ttu-id="0f5c1-797">指定されたプリンター番号の deviceName。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-797">The deviceName of the given printer number.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="18cf4-798">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-798">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="0f5c1-798">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-798">Examples</span></span>
 
     printJobSettings pjs; 
     int i; 
@@ -1446,622 +1446,622 @@ ms.locfileid: "1544202"
         i++; 
     }
 
-### <a name="method-getrunon"></a><span data-ttu-id="18cf4-799">メソッド getRunOn</span><span class="sxs-lookup"><span data-stu-id="18cf4-799">Method getRunOn</span></span>
+### <a name="method-getrunon"></a><span data-ttu-id="0f5c1-799">メソッド getRunOn</span><span class="sxs-lookup"><span data-stu-id="0f5c1-799">Method getRunOn</span></span>
 
     public ClassRunMode getRunOn(int number)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-800">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-800">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-800">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-800">Parameters</span></span>
 
-<span data-ttu-id="18cf4-801">数値</span><span class="sxs-lookup"><span data-stu-id="18cf4-801">number</span></span>  
+<span data-ttu-id="0f5c1-801">数値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-801">number</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-802">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-802">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-802">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-802">Return Value</span></span>
 
-### <a name="method-gettarget"></a><span data-ttu-id="18cf4-803">メソッド getTarget</span><span class="sxs-lookup"><span data-stu-id="18cf4-803">Method getTarget</span></span>
+### <a name="method-gettarget"></a><span data-ttu-id="0f5c1-803">メソッド getTarget</span><span class="sxs-lookup"><span data-stu-id="0f5c1-803">Method getTarget</span></span>
 
     public PrintMedium getTarget()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-804">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-804">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-804">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-804">Return Value</span></span>
 
-### <a name="method-gettray"></a><span data-ttu-id="18cf4-805">メソッド getTray</span><span class="sxs-lookup"><span data-stu-id="18cf4-805">Method getTray</span></span>
+### <a name="method-gettray"></a><span data-ttu-id="0f5c1-805">メソッド getTray</span><span class="sxs-lookup"><span data-stu-id="0f5c1-805">Method getTray</span></span>
 
     public int getTray(int number)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-806">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-806">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-806">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-806">Parameters</span></span>
 
-<span data-ttu-id="18cf4-807">数値</span><span class="sxs-lookup"><span data-stu-id="18cf4-807">number</span></span>  
+<span data-ttu-id="0f5c1-807">数値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-807">number</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-808">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-808">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-808">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-808">Return Value</span></span>
 
-### <a name="method-gettrayname"></a><span data-ttu-id="18cf4-809">メソッド getTrayName</span><span class="sxs-lookup"><span data-stu-id="18cf4-809">Method getTrayName</span></span>
+### <a name="method-gettrayname"></a><span data-ttu-id="0f5c1-809">メソッド getTrayName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-809">Method getTrayName</span></span>
 
     public str getTrayName(int number)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-810">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-810">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-810">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-810">Parameters</span></span>
 
-<span data-ttu-id="18cf4-811">数値</span><span class="sxs-lookup"><span data-stu-id="18cf4-811">number</span></span>  
+<span data-ttu-id="0f5c1-811">数値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-811">number</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-812">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-812">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-812">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-812">Return Value</span></span>
 
-### <a name="method-hdc"></a><span data-ttu-id="18cf4-813">メソッド hDC</span><span class="sxs-lookup"><span data-stu-id="18cf4-813">Method hDC</span></span>
+### <a name="method-hdc"></a><span data-ttu-id="0f5c1-813">メソッド hDC</span><span class="sxs-lookup"><span data-stu-id="0f5c1-813">Method hDC</span></span>
 
     public Int64 hDC()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-814">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-814">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-814">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-814">Return Value</span></span>
 
-### <a name="method-lockdestinationproperties"></a><span data-ttu-id="18cf4-815">メソッド lockDestinationProperties</span><span class="sxs-lookup"><span data-stu-id="18cf4-815">Method lockDestinationProperties</span></span>
+### <a name="method-lockdestinationproperties"></a><span data-ttu-id="0f5c1-815">メソッド lockDestinationProperties</span><span class="sxs-lookup"><span data-stu-id="0f5c1-815">Method lockDestinationProperties</span></span>
 
     public boolean lockDestinationProperties([boolean warn])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-816">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-816">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-816">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-816">Parameters</span></span>
 
-<span data-ttu-id="18cf4-817">警告</span><span class="sxs-lookup"><span data-stu-id="18cf4-817">warn</span></span>  
+<span data-ttu-id="0f5c1-817">警告</span><span class="sxs-lookup"><span data-stu-id="0f5c1-817">warn</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-818">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-818">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-818">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-818">Return Value</span></span>
 
-### <a name="method-mailcc"></a><span data-ttu-id="18cf4-819">メソッド mailCc</span><span class="sxs-lookup"><span data-stu-id="18cf4-819">Method mailCc</span></span>
+### <a name="method-mailcc"></a><span data-ttu-id="0f5c1-819">メソッド mailCc</span><span class="sxs-lookup"><span data-stu-id="0f5c1-819">Method mailCc</span></span>
 
     public str mailCc([str MailCc])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-820">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-820">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-820">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-820">Parameters</span></span>
 
-<span data-ttu-id="18cf4-821">MailCc</span><span class="sxs-lookup"><span data-stu-id="18cf4-821">MailCc</span></span>  
+<span data-ttu-id="0f5c1-821">MailCc</span><span class="sxs-lookup"><span data-stu-id="0f5c1-821">MailCc</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-822">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-822">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-822">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-822">Return Value</span></span>
 
-### <a name="method-mailsubject"></a><span data-ttu-id="18cf4-823">メソッド mailSubject</span><span class="sxs-lookup"><span data-stu-id="18cf4-823">Method mailSubject</span></span>
+### <a name="method-mailsubject"></a><span data-ttu-id="0f5c1-823">メソッド mailSubject</span><span class="sxs-lookup"><span data-stu-id="0f5c1-823">Method mailSubject</span></span>
 
     public str mailSubject([str MailSubject])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-824">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-824">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-824">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-824">Parameters</span></span>
 
-<span data-ttu-id="18cf4-825">MailSubject</span><span class="sxs-lookup"><span data-stu-id="18cf4-825">MailSubject</span></span>  
+<span data-ttu-id="0f5c1-825">MailSubject</span><span class="sxs-lookup"><span data-stu-id="0f5c1-825">MailSubject</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-826">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-826">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-826">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-826">Return Value</span></span>
 
-### <a name="method-mailto"></a><span data-ttu-id="18cf4-827">メソッド mailTo</span><span class="sxs-lookup"><span data-stu-id="18cf4-827">Method mailTo</span></span>
+### <a name="method-mailto"></a><span data-ttu-id="0f5c1-827">メソッド mailTo</span><span class="sxs-lookup"><span data-stu-id="0f5c1-827">Method mailTo</span></span>
 
     public str mailTo([str MailTo])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-828">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-828">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-828">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-828">Parameters</span></span>
 
-<span data-ttu-id="18cf4-829">MailTo</span><span class="sxs-lookup"><span data-stu-id="18cf4-829">MailTo</span></span>  
+<span data-ttu-id="0f5c1-829">MailTo</span><span class="sxs-lookup"><span data-stu-id="0f5c1-829">MailTo</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-830">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-830">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-830">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-830">Return Value</span></span>
 
-### <a name="method-numberofcopydescriptions"></a><span data-ttu-id="18cf4-831">メソッド numberOfCopyDescriptions</span><span class="sxs-lookup"><span data-stu-id="18cf4-831">Method numberOfCopyDescriptions</span></span>
+### <a name="method-numberofcopydescriptions"></a><span data-ttu-id="0f5c1-831">メソッド numberOfCopyDescriptions</span><span class="sxs-lookup"><span data-stu-id="0f5c1-831">Method numberOfCopyDescriptions</span></span>
 
     public int numberOfCopyDescriptions(int number)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-832">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-832">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-832">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-832">Parameters</span></span>
 
-<span data-ttu-id="18cf4-833">数値</span><span class="sxs-lookup"><span data-stu-id="18cf4-833">number</span></span>  
+<span data-ttu-id="0f5c1-833">数値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-833">number</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-834">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-834">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-834">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-834">Return Value</span></span>
 
-### <a name="method-outputtoclient"></a><span data-ttu-id="18cf4-835">メソッド outputToClient</span><span class="sxs-lookup"><span data-stu-id="18cf4-835">Method outputToClient</span></span>
+### <a name="method-outputtoclient"></a><span data-ttu-id="0f5c1-835">メソッド outputToClient</span><span class="sxs-lookup"><span data-stu-id="0f5c1-835">Method outputToClient</span></span>
 
     public boolean outputToClient([boolean toClient])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-836">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-836">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-836">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-836">Parameters</span></span>
 
-<span data-ttu-id="18cf4-837">toClient</span><span class="sxs-lookup"><span data-stu-id="18cf4-837">toClient</span></span>  
+<span data-ttu-id="0f5c1-837">toClient</span><span class="sxs-lookup"><span data-stu-id="0f5c1-837">toClient</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-838">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-838">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-838">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-838">Return Value</span></span>
 
-### <a name="method-outputtoprnfile"></a><span data-ttu-id="18cf4-839">メソッド outputToPrnFile</span><span class="sxs-lookup"><span data-stu-id="18cf4-839">Method outputToPrnFile</span></span>
+### <a name="method-outputtoprnfile"></a><span data-ttu-id="0f5c1-839">メソッド outputToPrnFile</span><span class="sxs-lookup"><span data-stu-id="0f5c1-839">Method outputToPrnFile</span></span>
 
     public boolean outputToPrnFile([boolean writePrnFile])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-840">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-840">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-840">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-840">Parameters</span></span>
 
-<span data-ttu-id="18cf4-841">writePrnFile</span><span class="sxs-lookup"><span data-stu-id="18cf4-841">writePrnFile</span></span>  
+<span data-ttu-id="0f5c1-841">writePrnFile</span><span class="sxs-lookup"><span data-stu-id="0f5c1-841">writePrnFile</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-842">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-842">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-842">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-842">Return Value</span></span>
 
-### <a name="method-packnamesandprinterdata"></a><span data-ttu-id="18cf4-843">メソッド packNamesAndPrinterData</span><span class="sxs-lookup"><span data-stu-id="18cf4-843">Method packNamesAndPrinterData</span></span>
+### <a name="method-packnamesandprinterdata"></a><span data-ttu-id="0f5c1-843">メソッド packNamesAndPrinterData</span><span class="sxs-lookup"><span data-stu-id="0f5c1-843">Method packNamesAndPrinterData</span></span>
 
     public container packNamesAndPrinterData()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-844">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-844">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-844">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-844">Return Value</span></span>
 
-### <a name="method-packpagesettings"></a><span data-ttu-id="18cf4-845">メソッド packPageSettings</span><span class="sxs-lookup"><span data-stu-id="18cf4-845">Method packPageSettings</span></span>
+### <a name="method-packpagesettings"></a><span data-ttu-id="0f5c1-845">メソッド packPageSettings</span><span class="sxs-lookup"><span data-stu-id="0f5c1-845">Method packPageSettings</span></span>
 
-<span data-ttu-id="18cf4-846">ページの書式設定時に選択されているデータをコンテナーに格納します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-846">Stores the data that is selected during page formatting in a container.</span></span>
+<span data-ttu-id="0f5c1-846">ページの書式設定時に選択されているデータをコンテナーに格納します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-846">Stores the data that is selected during page formatting in a container.</span></span>
 
     public container packPageSettings()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-847">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-847">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-847">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-847">Return Value</span></span>
 
-<span data-ttu-id="18cf4-848">ページの書式設定時に選択されているデータを保持するコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="18cf4-848">A container that holds data that is selected during page formatting.</span></span>
+<span data-ttu-id="0f5c1-848">ページの書式設定時に選択されているデータを保持するコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-848">A container that holds data that is selected during page formatting.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-849">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-849">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-849">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-849">Remarks</span></span>
 
-<span data-ttu-id="18cf4-850">返されたコンテナーは、unpackPageSettings メソッドへの入力として使用できます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-850">The returned container can be used as input to the unpackPageSettings method.</span></span>
+<span data-ttu-id="0f5c1-850">返されたコンテナーは、unpackPageSettings メソッドへの入力として使用できます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-850">The returned container can be used as input to the unpackPageSettings method.</span></span>
 
-### <a name="method-packprintersettings"></a><span data-ttu-id="18cf4-851">メソッド packPrinterSettings</span><span class="sxs-lookup"><span data-stu-id="18cf4-851">Method packPrinterSettings</span></span>
+### <a name="method-packprintersettings"></a><span data-ttu-id="0f5c1-851">メソッド packPrinterSettings</span><span class="sxs-lookup"><span data-stu-id="0f5c1-851">Method packPrinterSettings</span></span>
 
     public container packPrinterSettings()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-852">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-852">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-852">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-852">Return Value</span></span>
 
-### <a name="method-packprintjobsettings"></a><span data-ttu-id="18cf4-853">メソッド packPrintJobSettings</span><span class="sxs-lookup"><span data-stu-id="18cf4-853">Method packPrintJobSettings</span></span>
+### <a name="method-packprintjobsettings"></a><span data-ttu-id="0f5c1-853">メソッド packPrintJobSettings</span><span class="sxs-lookup"><span data-stu-id="0f5c1-853">Method packPrintJobSettings</span></span>
 
     public container packPrintJobSettings()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-854">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-854">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-854">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-854">Return Value</span></span>
 
-### <a name="method-packsubtotalsettings"></a><span data-ttu-id="18cf4-855">メソッド packSubtotalSettings</span><span class="sxs-lookup"><span data-stu-id="18cf4-855">Method packSubtotalSettings</span></span>
+### <a name="method-packsubtotalsettings"></a><span data-ttu-id="0f5c1-855">メソッド packSubtotalSettings</span><span class="sxs-lookup"><span data-stu-id="0f5c1-855">Method packSubtotalSettings</span></span>
 
     public container packSubtotalSettings()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-856">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-856">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-856">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-856">Return Value</span></span>
 
-### <a name="method-pagecopy2tray"></a><span data-ttu-id="18cf4-857">メソッド pageCopy2Tray</span><span class="sxs-lookup"><span data-stu-id="18cf4-857">Method pageCopy2Tray</span></span>
+### <a name="method-pagecopy2tray"></a><span data-ttu-id="0f5c1-857">メソッド pageCopy2Tray</span><span class="sxs-lookup"><span data-stu-id="0f5c1-857">Method pageCopy2Tray</span></span>
 
     public int pageCopy2Tray(int pageNumber, [int copyNumber])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-858">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-858">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-858">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-858">Parameters</span></span>
 
-<span data-ttu-id="18cf4-859">pageNumber</span><span class="sxs-lookup"><span data-stu-id="18cf4-859">pageNumber</span></span>  
+<span data-ttu-id="0f5c1-859">pageNumber</span><span class="sxs-lookup"><span data-stu-id="0f5c1-859">pageNumber</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-860">copyNumber</span><span class="sxs-lookup"><span data-stu-id="18cf4-860">copyNumber</span></span>  
+<span data-ttu-id="0f5c1-860">copyNumber</span><span class="sxs-lookup"><span data-stu-id="0f5c1-860">copyNumber</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-861">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-861">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-861">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-861">Return Value</span></span>
 
-### <a name="method-pageformatting"></a><span data-ttu-id="18cf4-862">メソッド pageFormatting</span><span class="sxs-lookup"><span data-stu-id="18cf4-862">Method pageFormatting</span></span>
+### <a name="method-pageformatting"></a><span data-ttu-id="0f5c1-862">メソッド pageFormatting</span><span class="sxs-lookup"><span data-stu-id="0f5c1-862">Method pageFormatting</span></span>
 
     public boolean pageFormatting()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-863">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-863">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-863">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-863">Return Value</span></span>
 
-### <a name="method-paperorientation"></a><span data-ttu-id="18cf4-864">メソッド paperOrientation</span><span class="sxs-lookup"><span data-stu-id="18cf4-864">Method paperOrientation</span></span>
+### <a name="method-paperorientation"></a><span data-ttu-id="0f5c1-864">メソッド paperOrientation</span><span class="sxs-lookup"><span data-stu-id="0f5c1-864">Method paperOrientation</span></span>
 
     public PrinterOrientation paperOrientation([PrinterOrientation orientation])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-865">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-865">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-865">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-865">Parameters</span></span>
 
-<span data-ttu-id="18cf4-866">orientation</span><span class="sxs-lookup"><span data-stu-id="18cf4-866">orientation</span></span>  
+<span data-ttu-id="0f5c1-866">orientation</span><span class="sxs-lookup"><span data-stu-id="0f5c1-866">orientation</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-867">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-867">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-867">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-867">Return Value</span></span>
 
-### <a name="method-papertray"></a><span data-ttu-id="18cf4-868">メソッド paperTray</span><span class="sxs-lookup"><span data-stu-id="18cf4-868">Method paperTray</span></span>
+### <a name="method-papertray"></a><span data-ttu-id="0f5c1-868">メソッド paperTray</span><span class="sxs-lookup"><span data-stu-id="0f5c1-868">Method paperTray</span></span>
 
     public int paperTray([int tray])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-869">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-869">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-869">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-869">Parameters</span></span>
 
-<span data-ttu-id="18cf4-870">トレイ</span><span class="sxs-lookup"><span data-stu-id="18cf4-870">tray</span></span>  
+<span data-ttu-id="0f5c1-870">トレイ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-870">tray</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-871">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-871">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-871">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-871">Return Value</span></span>
 
-### <a name="method-papertrayraw"></a><span data-ttu-id="18cf4-872">メソッド paperTrayRaw</span><span class="sxs-lookup"><span data-stu-id="18cf4-872">Method paperTrayRaw</span></span>
+### <a name="method-papertrayraw"></a><span data-ttu-id="0f5c1-872">メソッド paperTrayRaw</span><span class="sxs-lookup"><span data-stu-id="0f5c1-872">Method paperTrayRaw</span></span>
 
     public int paperTrayRaw([int tray])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-873">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-873">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-873">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-873">Parameters</span></span>
 
-<span data-ttu-id="18cf4-874">トレイ</span><span class="sxs-lookup"><span data-stu-id="18cf4-874">tray</span></span>  
+<span data-ttu-id="0f5c1-874">トレイ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-874">tray</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-875">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-875">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-875">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-875">Return Value</span></span>
 
-### <a name="method-performancetest"></a><span data-ttu-id="18cf4-876">メソッド performanceTest</span><span class="sxs-lookup"><span data-stu-id="18cf4-876">Method performanceTest</span></span>
+### <a name="method-performancetest"></a><span data-ttu-id="0f5c1-876">メソッド performanceTest</span><span class="sxs-lookup"><span data-stu-id="0f5c1-876">Method performanceTest</span></span>
 
     public int performanceTest([int loops])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-877">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-877">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-877">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-877">Parameters</span></span>
 
-<span data-ttu-id="18cf4-878">loops</span><span class="sxs-lookup"><span data-stu-id="18cf4-878">loops</span></span>  
+<span data-ttu-id="0f5c1-878">loops</span><span class="sxs-lookup"><span data-stu-id="0f5c1-878">loops</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-879">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-879">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-879">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-879">Return Value</span></span>
 
-### <a name="method-preferredfileformat"></a><span data-ttu-id="18cf4-880">メソッド preferredFileFormat</span><span class="sxs-lookup"><span data-stu-id="18cf4-880">Method preferredFileFormat</span></span>
+### <a name="method-preferredfileformat"></a><span data-ttu-id="0f5c1-880">メソッド preferredFileFormat</span><span class="sxs-lookup"><span data-stu-id="0f5c1-880">Method preferredFileFormat</span></span>
 
     public PrintFormat preferredFileFormat([PrintFormat format])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-881">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-881">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-881">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-881">Parameters</span></span>
 
-<span data-ttu-id="18cf4-882">形式</span><span class="sxs-lookup"><span data-stu-id="18cf4-882">format</span></span>  
+<span data-ttu-id="0f5c1-882">形式</span><span class="sxs-lookup"><span data-stu-id="0f5c1-882">format</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-883">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-883">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-883">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-883">Return Value</span></span>
 
-### <a name="method-preferredmailformat"></a><span data-ttu-id="18cf4-884">メソッド preferredMailFormat</span><span class="sxs-lookup"><span data-stu-id="18cf4-884">Method preferredMailFormat</span></span>
+### <a name="method-preferredmailformat"></a><span data-ttu-id="0f5c1-884">メソッド preferredMailFormat</span><span class="sxs-lookup"><span data-stu-id="0f5c1-884">Method preferredMailFormat</span></span>
 
     public PrintFormat preferredMailFormat([PrintFormat format])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-885">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-885">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-885">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-885">Parameters</span></span>
 
-<span data-ttu-id="18cf4-886">形式</span><span class="sxs-lookup"><span data-stu-id="18cf4-886">format</span></span>  
+<span data-ttu-id="0f5c1-886">形式</span><span class="sxs-lookup"><span data-stu-id="0f5c1-886">format</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-887">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-887">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-887">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-887">Return Value</span></span>
 
-### <a name="method-preferredorientation"></a><span data-ttu-id="18cf4-888">メソッド preferredOrientation</span><span class="sxs-lookup"><span data-stu-id="18cf4-888">Method preferredOrientation</span></span>
+### <a name="method-preferredorientation"></a><span data-ttu-id="0f5c1-888">メソッド preferredOrientation</span><span class="sxs-lookup"><span data-stu-id="0f5c1-888">Method preferredOrientation</span></span>
 
     public PrinterOrientation preferredOrientation([PrinterOrientation orientation])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-889">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-889">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-889">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-889">Parameters</span></span>
 
-<span data-ttu-id="18cf4-890">orientation</span><span class="sxs-lookup"><span data-stu-id="18cf4-890">orientation</span></span>  
+<span data-ttu-id="0f5c1-890">orientation</span><span class="sxs-lookup"><span data-stu-id="0f5c1-890">orientation</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-891">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-891">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-891">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-891">Return Value</span></span>
 
-### <a name="method-preferredtarget"></a><span data-ttu-id="18cf4-892">メソッド preferredTarget</span><span class="sxs-lookup"><span data-stu-id="18cf4-892">Method preferredTarget</span></span>
+### <a name="method-preferredtarget"></a><span data-ttu-id="0f5c1-892">メソッド preferredTarget</span><span class="sxs-lookup"><span data-stu-id="0f5c1-892">Method preferredTarget</span></span>
 
     public PrintMedium preferredTarget([PrintMedium target])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-893">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-893">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-893">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-893">Parameters</span></span>
 
-<span data-ttu-id="18cf4-894">target</span><span class="sxs-lookup"><span data-stu-id="18cf4-894">target</span></span>  
+<span data-ttu-id="0f5c1-894">target</span><span class="sxs-lookup"><span data-stu-id="0f5c1-894">target</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-895">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-895">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-895">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-895">Return Value</span></span>
 
-### <a name="method-printerattributes"></a><span data-ttu-id="18cf4-896">メソッド printerAttributes</span><span class="sxs-lookup"><span data-stu-id="18cf4-896">Method printerAttributes</span></span>
+### <a name="method-printerattributes"></a><span data-ttu-id="0f5c1-896">メソッド printerAttributes</span><span class="sxs-lookup"><span data-stu-id="0f5c1-896">Method printerAttributes</span></span>
 
     public int printerAttributes()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-897">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-897">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-897">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-897">Return Value</span></span>
 
-### <a name="method-printeraverageppm"></a><span data-ttu-id="18cf4-898">メソッド printerAveragePPM</span><span class="sxs-lookup"><span data-stu-id="18cf4-898">Method printerAveragePPM</span></span>
+### <a name="method-printeraverageppm"></a><span data-ttu-id="0f5c1-898">メソッド printerAveragePPM</span><span class="sxs-lookup"><span data-stu-id="0f5c1-898">Method printerAveragePPM</span></span>
 
     public int printerAveragePPM()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-899">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-899">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-899">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-899">Return Value</span></span>
 
-### <a name="method-printercomment"></a><span data-ttu-id="18cf4-900">メソッド printerComment</span><span class="sxs-lookup"><span data-stu-id="18cf4-900">Method printerComment</span></span>
+### <a name="method-printercomment"></a><span data-ttu-id="0f5c1-900">メソッド printerComment</span><span class="sxs-lookup"><span data-stu-id="0f5c1-900">Method printerComment</span></span>
 
     public str printerComment()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-901">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-901">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-901">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-901">Return Value</span></span>
 
-### <a name="method-printerdatatype"></a><span data-ttu-id="18cf4-902">メソッド printerDatatype</span><span class="sxs-lookup"><span data-stu-id="18cf4-902">Method printerDatatype</span></span>
+### <a name="method-printerdatatype"></a><span data-ttu-id="0f5c1-902">メソッド printerDatatype</span><span class="sxs-lookup"><span data-stu-id="0f5c1-902">Method printerDatatype</span></span>
 
     public str printerDatatype()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-903">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-903">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-903">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-903">Return Value</span></span>
 
-### <a name="method-printerdefaultpriority"></a><span data-ttu-id="18cf4-904">メソッド printerDefaultPriority</span><span class="sxs-lookup"><span data-stu-id="18cf4-904">Method printerDefaultPriority</span></span>
+### <a name="method-printerdefaultpriority"></a><span data-ttu-id="0f5c1-904">メソッド printerDefaultPriority</span><span class="sxs-lookup"><span data-stu-id="0f5c1-904">Method printerDefaultPriority</span></span>
 
     public int printerDefaultPriority()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-905">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-905">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-905">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-905">Return Value</span></span>
 
-### <a name="method-printerdrivername"></a><span data-ttu-id="18cf4-906">メソッド printerDriverName</span><span class="sxs-lookup"><span data-stu-id="18cf4-906">Method printerDriverName</span></span>
+### <a name="method-printerdrivername"></a><span data-ttu-id="0f5c1-906">メソッド printerDriverName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-906">Method printerDriverName</span></span>
 
     public str printerDriverName()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-907">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-907">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-907">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-907">Return Value</span></span>
 
-### <a name="method-printerlocation"></a><span data-ttu-id="18cf4-908">メソッド printerLocation</span><span class="sxs-lookup"><span data-stu-id="18cf4-908">Method printerLocation</span></span>
+### <a name="method-printerlocation"></a><span data-ttu-id="0f5c1-908">メソッド printerLocation</span><span class="sxs-lookup"><span data-stu-id="0f5c1-908">Method printerLocation</span></span>
 
     public str printerLocation()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-909">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-909">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-909">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-909">Return Value</span></span>
 
-### <a name="method-printerpageheight"></a><span data-ttu-id="18cf4-910">メソッド printerPageHeight</span><span class="sxs-lookup"><span data-stu-id="18cf4-910">Method printerPageHeight</span></span>
+### <a name="method-printerpageheight"></a><span data-ttu-id="0f5c1-910">メソッド printerPageHeight</span><span class="sxs-lookup"><span data-stu-id="0f5c1-910">Method printerPageHeight</span></span>
 
     public int printerPageHeight()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-911">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-911">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-911">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-911">Return Value</span></span>
 
-### <a name="method-printerpagewidth"></a><span data-ttu-id="18cf4-912">メソッド printerPageWidth</span><span class="sxs-lookup"><span data-stu-id="18cf4-912">Method printerPageWidth</span></span>
+### <a name="method-printerpagewidth"></a><span data-ttu-id="0f5c1-912">メソッド printerPageWidth</span><span class="sxs-lookup"><span data-stu-id="0f5c1-912">Method printerPageWidth</span></span>
 
     public int printerPageWidth()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-913">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-913">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-913">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-913">Return Value</span></span>
 
-### <a name="method-printerpaper"></a><span data-ttu-id="18cf4-914">メソッド printerPaper</span><span class="sxs-lookup"><span data-stu-id="18cf4-914">Method printerPaper</span></span>
+### <a name="method-printerpaper"></a><span data-ttu-id="0f5c1-914">メソッド printerPaper</span><span class="sxs-lookup"><span data-stu-id="0f5c1-914">Method printerPaper</span></span>
 
     public int printerPaper()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-915">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-915">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-915">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-915">Return Value</span></span>
 
-### <a name="method-printerparameters"></a><span data-ttu-id="18cf4-916">メソッド printerParameters</span><span class="sxs-lookup"><span data-stu-id="18cf4-916">Method printerParameters</span></span>
+### <a name="method-printerparameters"></a><span data-ttu-id="0f5c1-916">メソッド printerParameters</span><span class="sxs-lookup"><span data-stu-id="0f5c1-916">Method printerParameters</span></span>
 
     public str printerParameters()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-917">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-917">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-917">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-917">Return Value</span></span>
 
-### <a name="method-printerportname"></a><span data-ttu-id="18cf4-918">メソッド printerPortName</span><span class="sxs-lookup"><span data-stu-id="18cf4-918">Method printerPortName</span></span>
+### <a name="method-printerportname"></a><span data-ttu-id="0f5c1-918">メソッド printerPortName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-918">Method printerPortName</span></span>
 
     public str printerPortName()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-919">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-919">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-919">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-919">Return Value</span></span>
 
-### <a name="method-printerprintername"></a><span data-ttu-id="18cf4-920">メソッド printerPrinterName</span><span class="sxs-lookup"><span data-stu-id="18cf4-920">Method printerPrinterName</span></span>
+### <a name="method-printerprintername"></a><span data-ttu-id="0f5c1-920">メソッド printerPrinterName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-920">Method printerPrinterName</span></span>
 
     public str printerPrinterName()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-921">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-921">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-921">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-921">Return Value</span></span>
 
-### <a name="method-printerprintprocessor"></a><span data-ttu-id="18cf4-922">メソッド printerPrintProcessor</span><span class="sxs-lookup"><span data-stu-id="18cf4-922">Method printerPrintProcessor</span></span>
+### <a name="method-printerprintprocessor"></a><span data-ttu-id="0f5c1-922">メソッド printerPrintProcessor</span><span class="sxs-lookup"><span data-stu-id="0f5c1-922">Method printerPrintProcessor</span></span>
 
     public str printerPrintProcessor()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-923">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-923">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-923">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-923">Return Value</span></span>
 
-### <a name="method-printerpriority"></a><span data-ttu-id="18cf4-924">メソッド printerPriority</span><span class="sxs-lookup"><span data-stu-id="18cf4-924">Method printerPriority</span></span>
+### <a name="method-printerpriority"></a><span data-ttu-id="0f5c1-924">メソッド printerPriority</span><span class="sxs-lookup"><span data-stu-id="0f5c1-924">Method printerPriority</span></span>
 
     public int printerPriority()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-925">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-925">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-925">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-925">Return Value</span></span>
 
-### <a name="method-printerqueuedjobs"></a><span data-ttu-id="18cf4-926">メソッド printerQueuedJobs</span><span class="sxs-lookup"><span data-stu-id="18cf4-926">Method printerQueuedJobs</span></span>
+### <a name="method-printerqueuedjobs"></a><span data-ttu-id="0f5c1-926">メソッド printerQueuedJobs</span><span class="sxs-lookup"><span data-stu-id="0f5c1-926">Method printerQueuedJobs</span></span>
 
     public int printerQueuedJobs()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-927">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-927">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-927">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-927">Return Value</span></span>
 
-### <a name="method-printerrunon"></a><span data-ttu-id="18cf4-928">メソッド printerRunOn</span><span class="sxs-lookup"><span data-stu-id="18cf4-928">Method printerRunOn</span></span>
+### <a name="method-printerrunon"></a><span data-ttu-id="0f5c1-928">メソッド printerRunOn</span><span class="sxs-lookup"><span data-stu-id="0f5c1-928">Method printerRunOn</span></span>
 
     public ClassRunMode printerRunOn()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-929">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-929">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-929">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-929">Return Value</span></span>
 
-### <a name="method-printersepfile"></a><span data-ttu-id="18cf4-930">メソッド printerSepFile</span><span class="sxs-lookup"><span data-stu-id="18cf4-930">Method printerSepFile</span></span>
+### <a name="method-printersepfile"></a><span data-ttu-id="0f5c1-930">メソッド printerSepFile</span><span class="sxs-lookup"><span data-stu-id="0f5c1-930">Method printerSepFile</span></span>
 
     public str printerSepFile()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-931">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-931">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-931">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-931">Return Value</span></span>
 
-### <a name="method-printerservername"></a><span data-ttu-id="18cf4-932">メソッド printerServerName</span><span class="sxs-lookup"><span data-stu-id="18cf4-932">Method printerServerName</span></span>
+### <a name="method-printerservername"></a><span data-ttu-id="0f5c1-932">メソッド printerServerName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-932">Method printerServerName</span></span>
 
     public str printerServerName()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-933">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-933">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-933">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-933">Return Value</span></span>
 
-### <a name="method-printersettings"></a><span data-ttu-id="18cf4-934">メソッド printerSettings</span><span class="sxs-lookup"><span data-stu-id="18cf4-934">Method printerSettings</span></span>
+### <a name="method-printersettings"></a><span data-ttu-id="0f5c1-934">メソッド printerSettings</span><span class="sxs-lookup"><span data-stu-id="0f5c1-934">Method printerSettings</span></span>
 
     public boolean printerSettings(str formName, [xArgs args], [ReportRun reportRun], [int showWhat])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-935">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-935">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-935">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-935">Parameters</span></span>
 
-<span data-ttu-id="18cf4-936">formName</span><span class="sxs-lookup"><span data-stu-id="18cf4-936">formName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="18cf4-937">args</span><span class="sxs-lookup"><span data-stu-id="18cf4-937">args</span></span>  
+<span data-ttu-id="0f5c1-936">formName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-936">formName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-938">reportRun</span><span class="sxs-lookup"><span data-stu-id="18cf4-938">reportRun</span></span>  
+<span data-ttu-id="0f5c1-937">args</span><span class="sxs-lookup"><span data-stu-id="0f5c1-937">args</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-939">showWhat</span><span class="sxs-lookup"><span data-stu-id="18cf4-939">showWhat</span></span>  
+<span data-ttu-id="0f5c1-938">reportRun</span><span class="sxs-lookup"><span data-stu-id="0f5c1-938">reportRun</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-940">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-940">Return Value</span></span>
+<!-- -->
 
-### <a name="method-printersharename"></a><span data-ttu-id="18cf4-941">メソッド printerShareName</span><span class="sxs-lookup"><span data-stu-id="18cf4-941">Method printerShareName</span></span>
+<span data-ttu-id="0f5c1-939">showWhat</span><span class="sxs-lookup"><span data-stu-id="0f5c1-939">showWhat</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-940">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-940">Return Value</span></span>
+
+### <a name="method-printersharename"></a><span data-ttu-id="0f5c1-941">メソッド printerShareName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-941">Method printerShareName</span></span>
 
     public str printerShareName()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-942">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-942">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-942">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-942">Return Value</span></span>
 
-### <a name="method-printerstarttime"></a><span data-ttu-id="18cf4-943">メソッド printerStartTime</span><span class="sxs-lookup"><span data-stu-id="18cf4-943">Method printerStartTime</span></span>
+### <a name="method-printerstarttime"></a><span data-ttu-id="0f5c1-943">メソッド printerStartTime</span><span class="sxs-lookup"><span data-stu-id="0f5c1-943">Method printerStartTime</span></span>
 
     public TimeOfDay printerStartTime()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-944">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-944">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-944">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-944">Return Value</span></span>
 
-### <a name="method-printerstatus"></a><span data-ttu-id="18cf4-945">メソッド printerStatus</span><span class="sxs-lookup"><span data-stu-id="18cf4-945">Method printerStatus</span></span>
+### <a name="method-printerstatus"></a><span data-ttu-id="0f5c1-945">メソッド printerStatus</span><span class="sxs-lookup"><span data-stu-id="0f5c1-945">Method printerStatus</span></span>
 
     public int printerStatus()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-946">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-946">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-946">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-946">Return Value</span></span>
 
-### <a name="method-printeruntiltime"></a><span data-ttu-id="18cf4-947">メソッド printerUntilTime</span><span class="sxs-lookup"><span data-stu-id="18cf4-947">Method printerUntilTime</span></span>
+### <a name="method-printeruntiltime"></a><span data-ttu-id="0f5c1-947">メソッド printerUntilTime</span><span class="sxs-lookup"><span data-stu-id="0f5c1-947">Method printerUntilTime</span></span>
 
     public TimeOfDay printerUntilTime()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-948">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-948">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-948">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-948">Return Value</span></span>
 
-### <a name="method-reportrun"></a><span data-ttu-id="18cf4-949">メソッド reportRun</span><span class="sxs-lookup"><span data-stu-id="18cf4-949">Method reportRun</span></span>
+### <a name="method-reportrun"></a><span data-ttu-id="0f5c1-949">メソッド reportRun</span><span class="sxs-lookup"><span data-stu-id="0f5c1-949">Method reportRun</span></span>
 
     public ReportRun reportRun()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-950">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-950">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-950">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-950">Return Value</span></span>
 
-### <a name="method-requesteddevicename"></a><span data-ttu-id="18cf4-951">メソッド requestedDeviceName</span><span class="sxs-lookup"><span data-stu-id="18cf4-951">Method requestedDeviceName</span></span>
+### <a name="method-requesteddevicename"></a><span data-ttu-id="0f5c1-951">メソッド requestedDeviceName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-951">Method requestedDeviceName</span></span>
 
     public str requestedDeviceName()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-952">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-952">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-952">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-952">Return Value</span></span>
 
-### <a name="method-requestedrunon"></a><span data-ttu-id="18cf4-953">メソッド requestedRunOn</span><span class="sxs-lookup"><span data-stu-id="18cf4-953">Method requestedRunOn</span></span>
+### <a name="method-requestedrunon"></a><span data-ttu-id="0f5c1-953">メソッド requestedRunOn</span><span class="sxs-lookup"><span data-stu-id="0f5c1-953">Method requestedRunOn</span></span>
 
     public ClassRunMode requestedRunOn()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-954">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-954">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-954">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-954">Return Value</span></span>
 
-### <a name="method-runclient"></a><span data-ttu-id="18cf4-955">メソッド runClient</span><span class="sxs-lookup"><span data-stu-id="18cf4-955">Method runClient</span></span>
+### <a name="method-runclient"></a><span data-ttu-id="0f5c1-955">メソッド runClient</span><span class="sxs-lookup"><span data-stu-id="0f5c1-955">Method runClient</span></span>
 
     public boolean runClient()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-956">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-956">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-956">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-956">Return Value</span></span>
 
-### <a name="method-runserver"></a><span data-ttu-id="18cf4-957">メソッド runServer</span><span class="sxs-lookup"><span data-stu-id="18cf4-957">Method runServer</span></span>
+### <a name="method-runserver"></a><span data-ttu-id="0f5c1-957">メソッド runServer</span><span class="sxs-lookup"><span data-stu-id="0f5c1-957">Method runServer</span></span>
 
     public boolean runServer()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-958">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-958">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-958">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-958">Return Value</span></span>
 
-### <a name="method-sectionsperpage"></a><span data-ttu-id="18cf4-959">メソッド sectionsPerPage</span><span class="sxs-lookup"><span data-stu-id="18cf4-959">Method sectionsPerPage</span></span>
+### <a name="method-sectionsperpage"></a><span data-ttu-id="0f5c1-959">メソッド sectionsPerPage</span><span class="sxs-lookup"><span data-stu-id="0f5c1-959">Method sectionsPerPage</span></span>
 
     public int sectionsPerPage([int sectionsPerPage])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-960">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-960">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-960">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-960">Parameters</span></span>
 
-<span data-ttu-id="18cf4-961">sectionsPerPage</span><span class="sxs-lookup"><span data-stu-id="18cf4-961">sectionsPerPage</span></span>  
+<span data-ttu-id="0f5c1-961">sectionsPerPage</span><span class="sxs-lookup"><span data-stu-id="0f5c1-961">sectionsPerPage</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-962">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-962">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-962">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-962">Return Value</span></span>
 
-### <a name="method-settarget"></a><span data-ttu-id="18cf4-963">メソッド setTarget</span><span class="sxs-lookup"><span data-stu-id="18cf4-963">Method setTarget</span></span>
+### <a name="method-settarget"></a><span data-ttu-id="0f5c1-963">メソッド setTarget</span><span class="sxs-lookup"><span data-stu-id="0f5c1-963">Method setTarget</span></span>
 
-<span data-ttu-id="18cf4-964">印刷メディアを設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-964">Sets the print medium.</span></span>
+<span data-ttu-id="0f5c1-964">印刷メディアを設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-964">Sets the print medium.</span></span>
 
     public PrintMedium setTarget(PrintMedium target)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-965">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-965">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-965">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-965">Parameters</span></span>
 
-<span data-ttu-id="18cf4-966">target</span><span class="sxs-lookup"><span data-stu-id="18cf4-966">target</span></span>  
-<span data-ttu-id="18cf4-967">印刷メディア。</span><span class="sxs-lookup"><span data-stu-id="18cf4-967">The print medium.</span></span>
+<span data-ttu-id="0f5c1-966">target</span><span class="sxs-lookup"><span data-stu-id="0f5c1-966">target</span></span>  
+<span data-ttu-id="0f5c1-967">印刷メディア。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-967">The print medium.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-968">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-968">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-968">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-968">Return Value</span></span>
 
-<span data-ttu-id="18cf4-969">印刷メディア。</span><span class="sxs-lookup"><span data-stu-id="18cf4-969">The print medium.</span></span>
+<span data-ttu-id="0f5c1-969">印刷メディア。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-969">The print medium.</span></span>
 
-### <a name="method-singlelargepage"></a><span data-ttu-id="18cf4-970">メソッド singleLargePage</span><span class="sxs-lookup"><span data-stu-id="18cf4-970">Method singleLargePage</span></span>
+### <a name="method-singlelargepage"></a><span data-ttu-id="0f5c1-970">メソッド singleLargePage</span><span class="sxs-lookup"><span data-stu-id="0f5c1-970">Method singleLargePage</span></span>
 
     public boolean singleLargePage([boolean singleLargePage])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-971">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-971">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-971">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-971">Parameters</span></span>
 
-<span data-ttu-id="18cf4-972">singleLargePage</span><span class="sxs-lookup"><span data-stu-id="18cf4-972">singleLargePage</span></span>  
+<span data-ttu-id="0f5c1-972">singleLargePage</span><span class="sxs-lookup"><span data-stu-id="0f5c1-972">singleLargePage</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-973">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-973">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-973">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-973">Return Value</span></span>
 
-### <a name="method-skipbitmapsinrtf"></a><span data-ttu-id="18cf4-974">メソッド skipBitmapsInRTF</span><span class="sxs-lookup"><span data-stu-id="18cf4-974">Method skipBitmapsInRTF</span></span>
+### <a name="method-skipbitmapsinrtf"></a><span data-ttu-id="0f5c1-974">メソッド skipBitmapsInRTF</span><span class="sxs-lookup"><span data-stu-id="0f5c1-974">Method skipBitmapsInRTF</span></span>
 
-<span data-ttu-id="18cf4-975">.rtf ファイルにレポートを印刷するときにビットマップを含めるかどうかをコントロールします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-975">Controls whether bitmaps are included when reports are printed to an .rtf file.</span></span>
+<span data-ttu-id="0f5c1-975">.rtf ファイルにレポートを印刷するときにビットマップを含めるかどうかをコントロールします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-975">Controls whether bitmaps are included when reports are printed to an .rtf file.</span></span>
 
     public boolean skipBitmapsInRTF([boolean skipBitmaps])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-976">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-976">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-976">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-976">Parameters</span></span>
 
-<span data-ttu-id="18cf4-977">skipBitmaps</span><span class="sxs-lookup"><span data-stu-id="18cf4-977">skipBitmaps</span></span>  
-<span data-ttu-id="18cf4-978">ビットマップが含まれるかどうかを判断するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="18cf4-978">A boolean flag that determines whether bitmaps are included; optional.</span></span>
+<span data-ttu-id="0f5c1-977">skipBitmaps</span><span class="sxs-lookup"><span data-stu-id="0f5c1-977">skipBitmaps</span></span>  
+<span data-ttu-id="0f5c1-978">ビットマップが含まれるかどうかを判断するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-978">A boolean flag that determines whether bitmaps are included; optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-979">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-979">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-979">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-979">Return Value</span></span>
 
-<span data-ttu-id="18cf4-980">ビットマップが含まれる場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="18cf4-980">true if the bitmaps are included; otherwise, false.</span></span>
+<span data-ttu-id="0f5c1-980">ビットマップが含まれる場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-980">true if the bitmaps are included; otherwise, false.</span></span>
 
-### <a name="method-storeinprintarchive"></a><span data-ttu-id="18cf4-981">メソッド storeInPrintArchive</span><span class="sxs-lookup"><span data-stu-id="18cf4-981">Method storeInPrintArchive</span></span>
+### <a name="method-storeinprintarchive"></a><span data-ttu-id="0f5c1-981">メソッド storeInPrintArchive</span><span class="sxs-lookup"><span data-stu-id="0f5c1-981">Method storeInPrintArchive</span></span>
 
     public boolean storeInPrintArchive([boolean store])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-982">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-982">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-982">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-982">Parameters</span></span>
 
-<span data-ttu-id="18cf4-983">店舗</span><span class="sxs-lookup"><span data-stu-id="18cf4-983">store</span></span>  
+<span data-ttu-id="0f5c1-983">店舗</span><span class="sxs-lookup"><span data-stu-id="0f5c1-983">store</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-984">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-984">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-984">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-984">Return Value</span></span>
 
-### <a name="method-suppressscalingmessage"></a><span data-ttu-id="18cf4-985">メソッド suppressScalingMessage</span><span class="sxs-lookup"><span data-stu-id="18cf4-985">Method suppressScalingMessage</span></span>
+### <a name="method-suppressscalingmessage"></a><span data-ttu-id="0f5c1-985">メソッド suppressScalingMessage</span><span class="sxs-lookup"><span data-stu-id="0f5c1-985">Method suppressScalingMessage</span></span>
 
     public boolean suppressScalingMessage([boolean suppress])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-986">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-986">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-986">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-986">Parameters</span></span>
 
-<span data-ttu-id="18cf4-987">suppress</span><span class="sxs-lookup"><span data-stu-id="18cf4-987">suppress</span></span>  
+<span data-ttu-id="0f5c1-987">suppress</span><span class="sxs-lookup"><span data-stu-id="0f5c1-987">suppress</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-988">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-988">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-988">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-988">Return Value</span></span>
 
-### <a name="method-to"></a><span data-ttu-id="18cf4-989">メソッド to</span><span class="sxs-lookup"><span data-stu-id="18cf4-989">Method to</span></span>
+### <a name="method-to"></a><span data-ttu-id="0f5c1-989">メソッド to</span><span class="sxs-lookup"><span data-stu-id="0f5c1-989">Method to</span></span>
 
     public int to([int toPage])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-990">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-990">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-990">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-990">Parameters</span></span>
 
-<span data-ttu-id="18cf4-991">toPage</span><span class="sxs-lookup"><span data-stu-id="18cf4-991">toPage</span></span>  
+<span data-ttu-id="0f5c1-991">toPage</span><span class="sxs-lookup"><span data-stu-id="0f5c1-991">toPage</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-992">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-992">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-992">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-992">Return Value</span></span>
 
-### <a name="method-tostring"></a><span data-ttu-id="18cf4-993">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="18cf4-993">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="0f5c1-993">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="0f5c1-993">Method toString</span></span>
 
-<span data-ttu-id="18cf4-994">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-994">Returns a string that represents the current object.</span></span>
+<span data-ttu-id="0f5c1-994">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-994">Returns a string that represents the current object.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-995">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-995">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-995">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-995">Return Value</span></span>
 
-<span data-ttu-id="18cf4-996">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="18cf4-996">A string that represents the current object.</span></span>
+<span data-ttu-id="0f5c1-996">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-996">A string that represents the current object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-997">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-997">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-997">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-997">Remarks</span></span>
 
-<span data-ttu-id="18cf4-998">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-998">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="18cf4-999">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-999">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="18cf4-1000">たとえば、クラスのインスタンスは、インスタンスまたは静的などの、メソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1000">For example, an instance of the class returns the method name and type of the method, such as instance or static.</span></span>
+<span data-ttu-id="0f5c1-998">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-998">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="0f5c1-999">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-999">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="0f5c1-1000">たとえば、クラスのインスタンスは、インスタンスまたは静的などの、メソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1000">For example, an instance of the class returns the method name and type of the method, such as instance or static.</span></span>
 
-### <a name="method-unpackpagesettings"></a><span data-ttu-id="18cf4-1001">メソッド unpackPageSettings</span><span class="sxs-lookup"><span data-stu-id="18cf4-1001">Method unpackPageSettings</span></span>
+### <a name="method-unpackpagesettings"></a><span data-ttu-id="0f5c1-1001">メソッド unpackPageSettings</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1001">Method unpackPageSettings</span></span>
 
-<span data-ttu-id="18cf4-1002">用紙サイズと向きなど、ページ設定を設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1002">Sets the page settings, such as paper size and orientation.</span></span>
+<span data-ttu-id="0f5c1-1002">用紙サイズと向きなど、ページ設定を設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1002">Sets the page settings, such as paper size and orientation.</span></span>
 
     public boolean unpackPageSettings(container settings)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1003">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1003">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1003">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1003">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1004">設定</span><span class="sxs-lookup"><span data-stu-id="18cf4-1004">settings</span></span>  
-<span data-ttu-id="18cf4-1005">packPageSettings メソッドを呼び出して取得されるコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1005">A container that is obtained by calling the packPageSettings method.</span></span>
+<span data-ttu-id="0f5c1-1004">設定</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1004">settings</span></span>  
+<span data-ttu-id="0f5c1-1005">packPageSettings メソッドを呼び出して取得されるコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1005">A container that is obtained by calling the packPageSettings method.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1006">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1006">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1006">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1006">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1007">pageSettings が正常に変更された場合は true。pageSettings が既定値に設定された場合は false。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1007">true if the pageSettings were successfully changed; false if the pageSettings were set to the default values.</span></span>
+<span data-ttu-id="0f5c1-1007">pageSettings が正常に変更された場合は true。pageSettings が既定値に設定された場合は false。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1007">true if the pageSettings were successfully changed; false if the pageSettings were set to the default values.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1008">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1008">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1008">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1008">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1009">reportDesign クラスと report クラスには、同じ名前のメソッドがあります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1009">The classes reportDesign and report have a method with the same name.</span></span>
+<span data-ttu-id="0f5c1-1009">reportDesign クラスと report クラスには、同じ名前のメソッドがあります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1009">The classes reportDesign and report have a method with the same name.</span></span>
 
-### <a name="method-unpackprintersettings"></a><span data-ttu-id="18cf4-1010">メソッド unpackPrinterSettings</span><span class="sxs-lookup"><span data-stu-id="18cf4-1010">Method unpackPrinterSettings</span></span>
+### <a name="method-unpackprintersettings"></a><span data-ttu-id="0f5c1-1010">メソッド unpackPrinterSettings</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1010">Method unpackPrinterSettings</span></span>
 
     public boolean unpackPrinterSettings(container settings)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1011">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1011">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1011">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1011">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1012">設定</span><span class="sxs-lookup"><span data-stu-id="18cf4-1012">settings</span></span>  
+<span data-ttu-id="0f5c1-1012">設定</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1012">settings</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1013">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1013">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1013">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1013">Return Value</span></span>
 
-### <a name="method-unpackprintjobsettings"></a><span data-ttu-id="18cf4-1014">メソッド unpackPrintJobSettings</span><span class="sxs-lookup"><span data-stu-id="18cf4-1014">Method unpackPrintJobSettings</span></span>
+### <a name="method-unpackprintjobsettings"></a><span data-ttu-id="0f5c1-1014">メソッド unpackPrintJobSettings</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1014">Method unpackPrintJobSettings</span></span>
 
     public boolean unpackPrintJobSettings(container settings)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1015">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1015">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1015">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1015">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1016">設定</span><span class="sxs-lookup"><span data-stu-id="18cf4-1016">settings</span></span>  
+<span data-ttu-id="0f5c1-1016">設定</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1016">settings</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1017">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1017">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1017">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1017">Return Value</span></span>
 
-### <a name="method-unpacksubtotalsettings"></a><span data-ttu-id="18cf4-1018">メソッド unpackSubtotalSettings</span><span class="sxs-lookup"><span data-stu-id="18cf4-1018">Method unpackSubtotalSettings</span></span>
+### <a name="method-unpacksubtotalsettings"></a><span data-ttu-id="0f5c1-1018">メソッド unpackSubtotalSettings</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1018">Method unpackSubtotalSettings</span></span>
 
     public boolean unpackSubtotalSettings(container settings)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1019">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1019">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1019">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1019">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1020">設定</span><span class="sxs-lookup"><span data-stu-id="18cf4-1020">settings</span></span>  
+<span data-ttu-id="0f5c1-1020">設定</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1020">settings</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1021">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1021">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1021">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1021">Return Value</span></span>
 
-### <a name="method-unprintablebottom"></a><span data-ttu-id="18cf4-1022">メソッド unprintableBottom</span><span class="sxs-lookup"><span data-stu-id="18cf4-1022">Method unprintableBottom</span></span>
+### <a name="method-unprintablebottom"></a><span data-ttu-id="0f5c1-1022">メソッド unprintableBottom</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1022">Method unprintableBottom</span></span>
 
     public int unprintableBottom()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1023">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1023">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1023">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1023">Return Value</span></span>
 
-### <a name="method-unprintableleft"></a><span data-ttu-id="18cf4-1024">メソッド unprintableLeft</span><span class="sxs-lookup"><span data-stu-id="18cf4-1024">Method unprintableLeft</span></span>
+### <a name="method-unprintableleft"></a><span data-ttu-id="0f5c1-1024">メソッド unprintableLeft</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1024">Method unprintableLeft</span></span>
 
     public int unprintableLeft()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1025">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1025">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1025">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1025">Return Value</span></span>
 
-### <a name="method-unprintableright"></a><span data-ttu-id="18cf4-1026">メソッド unprintableRight</span><span class="sxs-lookup"><span data-stu-id="18cf4-1026">Method unprintableRight</span></span>
+### <a name="method-unprintableright"></a><span data-ttu-id="0f5c1-1026">メソッド unprintableRight</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1026">Method unprintableRight</span></span>
 
     public int unprintableRight()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1027">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1027">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1027">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1027">Return Value</span></span>
 
-### <a name="method-unprintabletop"></a><span data-ttu-id="18cf4-1028">メソッド unprintableTop</span><span class="sxs-lookup"><span data-stu-id="18cf4-1028">Method unprintableTop</span></span>
+### <a name="method-unprintabletop"></a><span data-ttu-id="0f5c1-1028">メソッド unprintableTop</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1028">Method unprintableTop</span></span>
 
-<span data-ttu-id="18cf4-1029">用紙の最上部から用紙の印刷可能な範囲までの距離を示します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1029">Indicates the distance from the top of the paper to the printable area of the paper.</span></span>
+<span data-ttu-id="0f5c1-1029">用紙の最上部から用紙の印刷可能な範囲までの距離を示します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1029">Indicates the distance from the top of the paper to the printable area of the paper.</span></span>
 
     public int unprintableTop()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1030">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1030">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1030">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1030">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1031">印刷できない領域のサイズ。単位は 100 分の 1 ミリメートルです。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1031">The size of nonprintable area, measured in hundredths of a millimeter.</span></span>
+<span data-ttu-id="0f5c1-1031">印刷できない領域のサイズ。単位は 100 分の 1 ミリメートルです。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1031">The size of nonprintable area, measured in hundredths of a millimeter.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1032">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1032">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1032">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1032">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1033">レポートでは、reportDesign の topMargin を unprintableTop よりも小さくしてはなりません。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1033">In reports, the topMargin of a reportDesign must not be less than unprintableTop.</span></span>
+<span data-ttu-id="0f5c1-1033">レポートでは、reportDesign の topMargin を unprintableTop よりも小さくしてはなりません。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1033">In reports, the topMargin of a reportDesign must not be less than unprintableTop.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="18cf4-1034">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-1034">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="0f5c1-1034">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1034">Examples</span></span>
 
     static void printerInfo(args a) 
     { 
@@ -2086,1058 +2086,1058 @@ ms.locfileid: "1544202"
         pause; 
     }
 
-### <a name="method-viewertype"></a><span data-ttu-id="18cf4-1035">メソッド viewerType</span><span class="sxs-lookup"><span data-stu-id="18cf4-1035">Method viewerType</span></span>
+### <a name="method-viewertype"></a><span data-ttu-id="0f5c1-1035">メソッド viewerType</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1035">Method viewerType</span></span>
 
     public ReportOutputUserType viewerType([ReportOutputUserType type])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1036">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1036">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1036">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1036">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1037">タイプ</span><span class="sxs-lookup"><span data-stu-id="18cf4-1037">type</span></span>  
+<span data-ttu-id="0f5c1-1037">タイプ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1037">type</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1038">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1038">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1038">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1038">Return Value</span></span>
 
-### <a name="method-virtualpageheight"></a><span data-ttu-id="18cf4-1039">メソッド virtualPageHeight</span><span class="sxs-lookup"><span data-stu-id="18cf4-1039">Method virtualPageHeight</span></span>
+### <a name="method-virtualpageheight"></a><span data-ttu-id="0f5c1-1039">メソッド virtualPageHeight</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1039">Method virtualPageHeight</span></span>
 
     public int virtualPageHeight([int height])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1040">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1040">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1040">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1040">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1041">height</span><span class="sxs-lookup"><span data-stu-id="18cf4-1041">height</span></span>  
+<span data-ttu-id="0f5c1-1041">height</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1041">height</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1042">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1042">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1042">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1042">Return Value</span></span>
 
-### <a name="method-warniffileexists"></a><span data-ttu-id="18cf4-1043">メソッド warnIfFileExists</span><span class="sxs-lookup"><span data-stu-id="18cf4-1043">Method warnIfFileExists</span></span>
+### <a name="method-warniffileexists"></a><span data-ttu-id="0f5c1-1043">メソッド warnIfFileExists</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1043">Method warnIfFileExists</span></span>
 
     public boolean warnIfFileExists([boolean warn])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1044">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1044">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1044">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1044">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1045">警告</span><span class="sxs-lookup"><span data-stu-id="18cf4-1045">warn</span></span>  
+<span data-ttu-id="0f5c1-1045">警告</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1045">warn</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1046">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1046">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1046">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1046">Return Value</span></span>
 
-### <a name="method-enablebody"></a><span data-ttu-id="18cf4-1047">メソッド enableBody</span><span class="sxs-lookup"><span data-stu-id="18cf4-1047">Method enableBody</span></span>
+### <a name="method-enablebody"></a><span data-ttu-id="0f5c1-1047">メソッド enableBody</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1047">Method enableBody</span></span>
 
     public void enableBody([TableId tableId])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1048">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1048">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1048">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1048">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1049">tableId</span><span class="sxs-lookup"><span data-stu-id="18cf4-1049">tableId</span></span>  
+<span data-ttu-id="0f5c1-1049">tableId</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1049">tableId</span></span>  
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-1050">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-1050">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-1050">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1050">Method new</span></span>
 
-<span data-ttu-id="18cf4-1051">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1051">Initializes a new instance of the Object class.</span></span>
+<span data-ttu-id="0f5c1-1051">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1051">Initializes a new instance of the Object class.</span></span>
 
     public void new([container Settings], [boolean infoOnly])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1052">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1052">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1052">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1052">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1053">設定</span><span class="sxs-lookup"><span data-stu-id="18cf4-1053">Settings</span></span>  
+<span data-ttu-id="0f5c1-1053">設定</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1053">Settings</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1054">infoOnly</span><span class="sxs-lookup"><span data-stu-id="18cf4-1054">infoOnly</span></span>  
+<span data-ttu-id="0f5c1-1054">infoOnly</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1054">infoOnly</span></span>  
 
-### <a name="method-addtraypagecopy"></a><span data-ttu-id="18cf4-1055">メソッド addTrayPageCopy</span><span class="sxs-lookup"><span data-stu-id="18cf4-1055">Method addTrayPageCopy</span></span>
+### <a name="method-addtraypagecopy"></a><span data-ttu-id="0f5c1-1055">メソッド addTrayPageCopy</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1055">Method addTrayPageCopy</span></span>
 
     public void addTrayPageCopy(int tray, int pageNumber, [int copyNumber])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1056">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1056">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1056">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1056">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1057">トレイ</span><span class="sxs-lookup"><span data-stu-id="18cf4-1057">tray</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="18cf4-1058">pageNumber</span><span class="sxs-lookup"><span data-stu-id="18cf4-1058">pageNumber</span></span>  
+<span data-ttu-id="0f5c1-1057">トレイ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1057">tray</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1059">copyNumber</span><span class="sxs-lookup"><span data-stu-id="18cf4-1059">copyNumber</span></span>  
+<span data-ttu-id="0f5c1-1058">pageNumber</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1058">pageNumber</span></span>  
 
-### <a name="method-disablebody"></a><span data-ttu-id="18cf4-1060">メソッド disableBody</span><span class="sxs-lookup"><span data-stu-id="18cf4-1060">Method disableBody</span></span>
+<!-- -->
+
+<span data-ttu-id="0f5c1-1059">copyNumber</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1059">copyNumber</span></span>  
+
+### <a name="method-disablebody"></a><span data-ttu-id="0f5c1-1060">メソッド disableBody</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1060">Method disableBody</span></span>
 
     public void disableBody([TableId tableId])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1061">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1061">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1061">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1061">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1062">tableId</span><span class="sxs-lookup"><span data-stu-id="18cf4-1062">tableId</span></span>  
+<span data-ttu-id="0f5c1-1062">tableId</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1062">tableId</span></span>  
 
-### <a name="method-cleartraypagecopy"></a><span data-ttu-id="18cf4-1063">メソッド clearTrayPageCopy</span><span class="sxs-lookup"><span data-stu-id="18cf4-1063">Method clearTrayPageCopy</span></span>
+### <a name="method-cleartraypagecopy"></a><span data-ttu-id="0f5c1-1063">メソッド clearTrayPageCopy</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1063">Method clearTrayPageCopy</span></span>
 
     public void clearTrayPageCopy()
 
-### <a name="method-rulerinch"></a><span data-ttu-id="18cf4-1064">メソッド rulerInch</span><span class="sxs-lookup"><span data-stu-id="18cf4-1064">Method rulerInch</span></span>
+### <a name="method-rulerinch"></a><span data-ttu-id="0f5c1-1064">メソッド rulerInch</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1064">Method rulerInch</span></span>
 
     public void rulerInch()
 
-### <a name="method-finalize"></a><span data-ttu-id="18cf4-1065">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="18cf4-1065">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="0f5c1-1065">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1065">Method finalize</span></span>
 
     public void finalize()
 
-### <a name="method-ruleroff"></a><span data-ttu-id="18cf4-1066">メソッド rulerOff</span><span class="sxs-lookup"><span data-stu-id="18cf4-1066">Method rulerOff</span></span>
+### <a name="method-ruleroff"></a><span data-ttu-id="0f5c1-1066">メソッド rulerOff</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1066">Method rulerOff</span></span>
 
     public void rulerOff()
 
-### <a name="method-rulermetric"></a><span data-ttu-id="18cf4-1067">メソッド rulerMetric</span><span class="sxs-lookup"><span data-stu-id="18cf4-1067">Method rulerMetric</span></span>
+### <a name="method-rulermetric"></a><span data-ttu-id="0f5c1-1067">メソッド rulerMetric</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1067">Method rulerMetric</span></span>
 
     public void rulerMetric()
 
-## <a name="class-profiler"></a><span data-ttu-id="18cf4-1068">クラス プロファイラー</span><span class="sxs-lookup"><span data-stu-id="18cf4-1068">Class profiler</span></span>
+## <a name="class-profiler"></a><span data-ttu-id="0f5c1-1068">クラス プロファイラー</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1068">Class profiler</span></span>
     class profiler extends Object
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-1069">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1069">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-1069">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1069">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-1070">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-1070">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-1070">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1070">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-1071">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-1071">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-1071">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1071">Methods</span></span>
 
-| <span data-ttu-id="18cf4-1072">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-1072">Method</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                          | <span data-ttu-id="18cf4-1073">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-1073">Description</span></span>                                          |
+| <span data-ttu-id="0f5c1-1072">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1072">Method</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                          | <span data-ttu-id="0f5c1-1073">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1073">Description</span></span>                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="18cf4-1074">public int collected()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1074">public int collected()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                      |
-| <span data-ttu-id="18cf4-1075">public int flushInterval(\[int interval\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1075">public int flushInterval(\[int interval\])</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                      |
-| <span data-ttu-id="18cf4-1076">public AnyType profileOff()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1076">public AnyType profileOff()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                      |
-| <span data-ttu-id="18cf4-1077">public AnyType profileOn(str runId, \[int traceDepth\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1077">public AnyType profileOn(str runId, \[int traceDepth\])</span></span>                                                                                                                                                                                                                                                                                                                                                                                                         |                                                      |
-| <span data-ttu-id="18cf4-1078">public str tempPath()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1078">public str tempPath()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                      |
-| <span data-ttu-id="18cf4-1079">public str toString()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1079">public str toString()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                           | <span data-ttu-id="18cf4-1080">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1080">Returns a string that represents the current object.</span></span> |
-| <span data-ttu-id="18cf4-1081">::public static AnyType profilerAlreadyOn()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1081">::public static AnyType profilerAlreadyOn()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                      |
-| <span data-ttu-id="18cf4-1082">public void flush()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1082">public void flush()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                      |
-| <span data-ttu-id="18cf4-1083">public void new()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1083">public void new()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                               | <span data-ttu-id="18cf4-1084">profiler クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1084">Initializes a new instance of the profiler class.</span></span>    |
-| <span data-ttu-id="18cf4-1085">public void flushData(int lineNumber, str path, int microSecs, int sequenceNumber, int parentSequenceNumber, int selectCalls, int selectBytes, int selectRows, int sqlWaitTime, int aosWaitTime, int sqlInserts, int sqlUpdates, int sqlDeletes, int aosInCalls, int aosOutCalls, int aosInBytes, int aosOutBytes, \[int sqlInsertBytes\], \[int sqlInsertRows\], \[int sqlUpdateBytes\], \[int sqlUpdateRows\], \[int sqlDeleteBytes\], \[int sqlDeleteRows\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1085">public void flushData(int lineNumber, str path, int microSecs, int sequenceNumber, int parentSequenceNumber, int selectCalls, int selectBytes, int selectRows, int sqlWaitTime, int aosWaitTime, int sqlInserts, int sqlUpdates, int sqlDeletes, int aosInCalls, int aosOutCalls, int aosInBytes, int aosOutBytes, \[int sqlInsertBytes\], \[int sqlInsertRows\], \[int sqlUpdateBytes\], \[int sqlUpdateRows\], \[int sqlDeleteBytes\], \[int sqlDeleteRows\])</span></span> |                                                      |
+| <span data-ttu-id="0f5c1-1074">public int collected()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1074">public int collected()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                      |
+| <span data-ttu-id="0f5c1-1075">public int flushInterval(\[int interval\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1075">public int flushInterval(\[int interval\])</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                      |
+| <span data-ttu-id="0f5c1-1076">public AnyType profileOff()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1076">public AnyType profileOff()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                      |
+| <span data-ttu-id="0f5c1-1077">public AnyType profileOn(str runId, \[int traceDepth\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1077">public AnyType profileOn(str runId, \[int traceDepth\])</span></span>                                                                                                                                                                                                                                                                                                                                                                                                         |                                                      |
+| <span data-ttu-id="0f5c1-1078">public str tempPath()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1078">public str tempPath()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                      |
+| <span data-ttu-id="0f5c1-1079">public str toString()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1079">public str toString()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                           | <span data-ttu-id="0f5c1-1080">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1080">Returns a string that represents the current object.</span></span> |
+| <span data-ttu-id="0f5c1-1081">::public static AnyType profilerAlreadyOn()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1081">::public static AnyType profilerAlreadyOn()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                      |
+| <span data-ttu-id="0f5c1-1082">public void flush()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1082">public void flush()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                      |
+| <span data-ttu-id="0f5c1-1083">public void new()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1083">public void new()</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                               | <span data-ttu-id="0f5c1-1084">profiler クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1084">Initializes a new instance of the profiler class.</span></span>    |
+| <span data-ttu-id="0f5c1-1085">public void flushData(int lineNumber, str path, int microSecs, int sequenceNumber, int parentSequenceNumber, int selectCalls, int selectBytes, int selectRows, int sqlWaitTime, int aosWaitTime, int sqlInserts, int sqlUpdates, int sqlDeletes, int aosInCalls, int aosOutCalls, int aosInBytes, int aosOutBytes, \[int sqlInsertBytes\], \[int sqlInsertRows\], \[int sqlUpdateBytes\], \[int sqlUpdateRows\], \[int sqlDeleteBytes\], \[int sqlDeleteRows\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1085">public void flushData(int lineNumber, str path, int microSecs, int sequenceNumber, int parentSequenceNumber, int selectCalls, int selectBytes, int selectRows, int sqlWaitTime, int aosWaitTime, int sqlInserts, int sqlUpdates, int sqlDeletes, int aosInCalls, int aosOutCalls, int aosInBytes, int aosOutBytes, \[int sqlInsertBytes\], \[int sqlInsertRows\], \[int sqlUpdateBytes\], \[int sqlUpdateRows\], \[int sqlDeleteBytes\], \[int sqlDeleteRows\])</span></span> |                                                      |
 
-### <a name="method-collected"></a><span data-ttu-id="18cf4-1086">メソッド collected</span><span class="sxs-lookup"><span data-stu-id="18cf4-1086">Method collected</span></span>
+### <a name="method-collected"></a><span data-ttu-id="0f5c1-1086">メソッド collected</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1086">Method collected</span></span>
 
     public int collected()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1087">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1087">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1087">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1087">Return Value</span></span>
 
-### <a name="method-flushinterval"></a><span data-ttu-id="18cf4-1088">メソッド flushInterval</span><span class="sxs-lookup"><span data-stu-id="18cf4-1088">Method flushInterval</span></span>
+### <a name="method-flushinterval"></a><span data-ttu-id="0f5c1-1088">メソッド flushInterval</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1088">Method flushInterval</span></span>
 
     public int flushInterval([int interval])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1089">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1089">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1089">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1089">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1090">interval</span><span class="sxs-lookup"><span data-stu-id="18cf4-1090">interval</span></span>  
+<span data-ttu-id="0f5c1-1090">interval</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1090">interval</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1091">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1091">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1091">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1091">Return Value</span></span>
 
-### <a name="method-profileoff"></a><span data-ttu-id="18cf4-1092">メソッド profileOff</span><span class="sxs-lookup"><span data-stu-id="18cf4-1092">Method profileOff</span></span>
+### <a name="method-profileoff"></a><span data-ttu-id="0f5c1-1092">メソッド profileOff</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1092">Method profileOff</span></span>
 
     public AnyType profileOff()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1093">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1093">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1093">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1093">Return Value</span></span>
 
-### <a name="method-profileon"></a><span data-ttu-id="18cf4-1094">メソッド profileOn</span><span class="sxs-lookup"><span data-stu-id="18cf4-1094">Method profileOn</span></span>
+### <a name="method-profileon"></a><span data-ttu-id="0f5c1-1094">メソッド profileOn</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1094">Method profileOn</span></span>
 
     public AnyType profileOn(str runId, [int traceDepth])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1095">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1095">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1095">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1095">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1096">runId</span><span class="sxs-lookup"><span data-stu-id="18cf4-1096">runId</span></span>  
+<span data-ttu-id="0f5c1-1096">runId</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1096">runId</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1097">traceDepth</span><span class="sxs-lookup"><span data-stu-id="18cf4-1097">traceDepth</span></span>  
+<span data-ttu-id="0f5c1-1097">traceDepth</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1097">traceDepth</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1098">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1098">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1098">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1098">Return Value</span></span>
 
-### <a name="method-temppath"></a><span data-ttu-id="18cf4-1099">メソッド tempPath</span><span class="sxs-lookup"><span data-stu-id="18cf4-1099">Method tempPath</span></span>
+### <a name="method-temppath"></a><span data-ttu-id="0f5c1-1099">メソッド tempPath</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1099">Method tempPath</span></span>
 
     public str tempPath()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1100">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1100">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1100">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1100">Return Value</span></span>
 
-### <a name="method-tostring"></a><span data-ttu-id="18cf4-1101">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="18cf4-1101">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="0f5c1-1101">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1101">Method toString</span></span>
 
-<span data-ttu-id="18cf4-1102">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1102">Returns a string that represents the current object.</span></span>
+<span data-ttu-id="0f5c1-1102">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1102">Returns a string that represents the current object.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1103">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1103">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1103">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1103">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1104">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1104">A string that represents the current object.</span></span>
+<span data-ttu-id="0f5c1-1104">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1104">A string that represents the current object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1105">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1105">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1105">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1105">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1106">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1106">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="18cf4-1107">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1107">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="18cf4-1108">たとえば、クラスのインスタンスは、インスタンスまたは静的などの、メソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1108">For example, an instance of the class returns the method name and type of the method, such as instance or static.</span></span>
+<span data-ttu-id="0f5c1-1106">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1106">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="0f5c1-1107">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1107">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="0f5c1-1108">たとえば、クラスのインスタンスは、インスタンスまたは静的などの、メソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1108">For example, an instance of the class returns the method name and type of the method, such as instance or static.</span></span>
 
-### <a name="method-profileralreadyon"></a><span data-ttu-id="18cf4-1109">メソッド profilerAlreadyOn</span><span class="sxs-lookup"><span data-stu-id="18cf4-1109">Method profilerAlreadyOn</span></span>
+### <a name="method-profileralreadyon"></a><span data-ttu-id="0f5c1-1109">メソッド profilerAlreadyOn</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1109">Method profilerAlreadyOn</span></span>
 
     public static AnyType profilerAlreadyOn()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1110">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1110">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1110">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1110">Return Value</span></span>
 
-### <a name="method-flush"></a><span data-ttu-id="18cf4-1111">メソッド flush</span><span class="sxs-lookup"><span data-stu-id="18cf4-1111">Method flush</span></span>
+### <a name="method-flush"></a><span data-ttu-id="0f5c1-1111">メソッド flush</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1111">Method flush</span></span>
 
     public void flush()
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-1112">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-1112">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-1112">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1112">Method new</span></span>
 
-<span data-ttu-id="18cf4-1113">profiler クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1113">Initializes a new instance of the profiler class.</span></span>
+<span data-ttu-id="0f5c1-1113">profiler クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1113">Initializes a new instance of the profiler class.</span></span>
 
     public void new()
 
-### <a name="method-flushdata"></a><span data-ttu-id="18cf4-1114">メソッド flushData</span><span class="sxs-lookup"><span data-stu-id="18cf4-1114">Method flushData</span></span>
+### <a name="method-flushdata"></a><span data-ttu-id="0f5c1-1114">メソッド flushData</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1114">Method flushData</span></span>
 
     public void flushData(int lineNumber, str path, int microSecs, int sequenceNumber, int parentSequenceNumber, int selectCalls, int selectBytes, int selectRows, int sqlWaitTime, int aosWaitTime, int sqlInserts, int sqlUpdates, int sqlDeletes, int aosInCalls, int aosOutCalls, int aosInBytes, int aosOutBytes, [int sqlInsertBytes], [int sqlInsertRows], [int sqlUpdateBytes], [int sqlUpdateRows], [int sqlDeleteBytes], [int sqlDeleteRows])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1115">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1115">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1115">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1115">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1116">lineNumber</span><span class="sxs-lookup"><span data-stu-id="18cf4-1116">lineNumber</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="18cf4-1117">path</span><span class="sxs-lookup"><span data-stu-id="18cf4-1117">path</span></span>  
+<span data-ttu-id="0f5c1-1116">lineNumber</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1116">lineNumber</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1118">microSecs</span><span class="sxs-lookup"><span data-stu-id="18cf4-1118">microSecs</span></span>  
+<span data-ttu-id="0f5c1-1117">path</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1117">path</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1119">sequenceNumber</span><span class="sxs-lookup"><span data-stu-id="18cf4-1119">sequenceNumber</span></span>  
+<span data-ttu-id="0f5c1-1118">microSecs</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1118">microSecs</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1120">parentSequenceNumber</span><span class="sxs-lookup"><span data-stu-id="18cf4-1120">parentSequenceNumber</span></span>  
+<span data-ttu-id="0f5c1-1119">sequenceNumber</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1119">sequenceNumber</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1121">selectCalls</span><span class="sxs-lookup"><span data-stu-id="18cf4-1121">selectCalls</span></span>  
+<span data-ttu-id="0f5c1-1120">parentSequenceNumber</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1120">parentSequenceNumber</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1122">selectBytes</span><span class="sxs-lookup"><span data-stu-id="18cf4-1122">selectBytes</span></span>  
+<span data-ttu-id="0f5c1-1121">selectCalls</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1121">selectCalls</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1123">selectRows</span><span class="sxs-lookup"><span data-stu-id="18cf4-1123">selectRows</span></span>  
+<span data-ttu-id="0f5c1-1122">selectBytes</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1122">selectBytes</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1124">sqlWaitTime</span><span class="sxs-lookup"><span data-stu-id="18cf4-1124">sqlWaitTime</span></span>  
+<span data-ttu-id="0f5c1-1123">selectRows</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1123">selectRows</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1125">aosWaitTime</span><span class="sxs-lookup"><span data-stu-id="18cf4-1125">aosWaitTime</span></span>  
+<span data-ttu-id="0f5c1-1124">sqlWaitTime</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1124">sqlWaitTime</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1126">sqlInserts</span><span class="sxs-lookup"><span data-stu-id="18cf4-1126">sqlInserts</span></span>  
+<span data-ttu-id="0f5c1-1125">aosWaitTime</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1125">aosWaitTime</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1127">sqlUpdates</span><span class="sxs-lookup"><span data-stu-id="18cf4-1127">sqlUpdates</span></span>  
+<span data-ttu-id="0f5c1-1126">sqlInserts</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1126">sqlInserts</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1128">sqlDeletes</span><span class="sxs-lookup"><span data-stu-id="18cf4-1128">sqlDeletes</span></span>  
+<span data-ttu-id="0f5c1-1127">sqlUpdates</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1127">sqlUpdates</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1129">aosInCalls</span><span class="sxs-lookup"><span data-stu-id="18cf4-1129">aosInCalls</span></span>  
+<span data-ttu-id="0f5c1-1128">sqlDeletes</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1128">sqlDeletes</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1130">aosOutCalls</span><span class="sxs-lookup"><span data-stu-id="18cf4-1130">aosOutCalls</span></span>  
+<span data-ttu-id="0f5c1-1129">aosInCalls</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1129">aosInCalls</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1131">aosInBytes</span><span class="sxs-lookup"><span data-stu-id="18cf4-1131">aosInBytes</span></span>  
+<span data-ttu-id="0f5c1-1130">aosOutCalls</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1130">aosOutCalls</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1132">aosOutBytes</span><span class="sxs-lookup"><span data-stu-id="18cf4-1132">aosOutBytes</span></span>  
+<span data-ttu-id="0f5c1-1131">aosInBytes</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1131">aosInBytes</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1133">sqlInsertBytes</span><span class="sxs-lookup"><span data-stu-id="18cf4-1133">sqlInsertBytes</span></span>  
+<span data-ttu-id="0f5c1-1132">aosOutBytes</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1132">aosOutBytes</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1134">sqlInsertRows</span><span class="sxs-lookup"><span data-stu-id="18cf4-1134">sqlInsertRows</span></span>  
+<span data-ttu-id="0f5c1-1133">sqlInsertBytes</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1133">sqlInsertBytes</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1135">sqlUpdateBytes</span><span class="sxs-lookup"><span data-stu-id="18cf4-1135">sqlUpdateBytes</span></span>  
+<span data-ttu-id="0f5c1-1134">sqlInsertRows</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1134">sqlInsertRows</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1136">sqlUpdateRows</span><span class="sxs-lookup"><span data-stu-id="18cf4-1136">sqlUpdateRows</span></span>  
+<span data-ttu-id="0f5c1-1135">sqlUpdateBytes</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1135">sqlUpdateBytes</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1137">sqlDeleteBytes</span><span class="sxs-lookup"><span data-stu-id="18cf4-1137">sqlDeleteBytes</span></span>  
+<span data-ttu-id="0f5c1-1136">sqlUpdateRows</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1136">sqlUpdateRows</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1138">sqlDeleteRows</span><span class="sxs-lookup"><span data-stu-id="18cf4-1138">sqlDeleteRows</span></span>  
+<span data-ttu-id="0f5c1-1137">sqlDeleteBytes</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1137">sqlDeleteBytes</span></span>  
 
-## <a name="class-progresswindow"></a><span data-ttu-id="18cf4-1139">クラス ProgressWindow</span><span class="sxs-lookup"><span data-stu-id="18cf4-1139">Class ProgressWindow</span></span>
+<!-- -->
+
+<span data-ttu-id="0f5c1-1138">sqlDeleteRows</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1138">sqlDeleteRows</span></span>  
+
+## <a name="class-progresswindow"></a><span data-ttu-id="0f5c1-1139">クラス ProgressWindow</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1139">Class ProgressWindow</span></span>
     class ProgressWindow extends Object
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-1140">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1140">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-1140">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1140">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-1141">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-1141">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-1141">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1141">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-1142">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-1142">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-1142">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1142">Methods</span></span>
 
-| <span data-ttu-id="18cf4-1143">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-1143">Method</span></span>                                                      | <span data-ttu-id="18cf4-1144">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-1144">Description</span></span>                                             |
+| <span data-ttu-id="0f5c1-1143">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1143">Method</span></span>                                                      | <span data-ttu-id="0f5c1-1144">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1144">Description</span></span>                                             |
 |-------------------------------------------------------------|---------------------------------------------------------|
-| <span data-ttu-id="18cf4-1145">public int addProgressControl(\[int progressControlCount\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1145">public int addProgressControl(\[int progressControlCount\])</span></span> |                                                         |
-| <span data-ttu-id="18cf4-1146">public void ProgressBarVisible(int index, int visible)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1146">public void ProgressBarVisible(int index, int visible)</span></span>      |                                                         |
-| <span data-ttu-id="18cf4-1147">public void ProgressValue(int index, int progressValue)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1147">public void ProgressValue(int index, int progressValue)</span></span>     |                                                         |
-| <span data-ttu-id="18cf4-1148">public void ControlMinMax(int index, int min, int max)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1148">public void ControlMinMax(int index, int min, int max)</span></span>      |                                                         |
-| <span data-ttu-id="18cf4-1149">public void ProgressTextVisible(int index, int visible)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1149">public void ProgressTextVisible(int index, int visible)</span></span>     |                                                         |
-| <span data-ttu-id="18cf4-1150">public void Animation(str animation)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1150">public void Animation(str animation)</span></span>                        |                                                         |
-| <span data-ttu-id="18cf4-1151">public void ControlText(int index, str text)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1151">public void ControlText(int index, str text)</span></span>                |                                                         |
-| <span data-ttu-id="18cf4-1152">public void FormCaption(str text)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1152">public void FormCaption(str text)</span></span>                           |                                                         |
-| <span data-ttu-id="18cf4-1153">public void ControlTime(str text)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1153">public void ControlTime(str text)</span></span>                           |                                                         |
-| <span data-ttu-id="18cf4-1154">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1154">public void finalize()</span></span>                                      |                                                         |
-| <span data-ttu-id="18cf4-1155">public void new()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1155">public void new()</span></span>                                           | <span data-ttu-id="18cf4-1156">ProgressWindow クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1156">Initializes a new instance of the ProgressWindow class.</span></span> |
+| <span data-ttu-id="0f5c1-1145">public int addProgressControl(\[int progressControlCount\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1145">public int addProgressControl(\[int progressControlCount\])</span></span> |                                                         |
+| <span data-ttu-id="0f5c1-1146">public void ProgressBarVisible(int index, int visible)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1146">public void ProgressBarVisible(int index, int visible)</span></span>      |                                                         |
+| <span data-ttu-id="0f5c1-1147">public void ProgressValue(int index, int progressValue)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1147">public void ProgressValue(int index, int progressValue)</span></span>     |                                                         |
+| <span data-ttu-id="0f5c1-1148">public void ControlMinMax(int index, int min, int max)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1148">public void ControlMinMax(int index, int min, int max)</span></span>      |                                                         |
+| <span data-ttu-id="0f5c1-1149">public void ProgressTextVisible(int index, int visible)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1149">public void ProgressTextVisible(int index, int visible)</span></span>     |                                                         |
+| <span data-ttu-id="0f5c1-1150">public void Animation(str animation)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1150">public void Animation(str animation)</span></span>                        |                                                         |
+| <span data-ttu-id="0f5c1-1151">public void ControlText(int index, str text)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1151">public void ControlText(int index, str text)</span></span>                |                                                         |
+| <span data-ttu-id="0f5c1-1152">public void FormCaption(str text)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1152">public void FormCaption(str text)</span></span>                           |                                                         |
+| <span data-ttu-id="0f5c1-1153">public void ControlTime(str text)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1153">public void ControlTime(str text)</span></span>                           |                                                         |
+| <span data-ttu-id="0f5c1-1154">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1154">public void finalize()</span></span>                                      |                                                         |
+| <span data-ttu-id="0f5c1-1155">public void new()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1155">public void new()</span></span>                                           | <span data-ttu-id="0f5c1-1156">ProgressWindow クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1156">Initializes a new instance of the ProgressWindow class.</span></span> |
 
-### <a name="method-addprogresscontrol"></a><span data-ttu-id="18cf4-1157">メソッド addProgressControl</span><span class="sxs-lookup"><span data-stu-id="18cf4-1157">Method addProgressControl</span></span>
+### <a name="method-addprogresscontrol"></a><span data-ttu-id="0f5c1-1157">メソッド addProgressControl</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1157">Method addProgressControl</span></span>
 
     public int addProgressControl([int progressControlCount])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1158">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1158">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1158">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1158">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1159">progressControlCount</span><span class="sxs-lookup"><span data-stu-id="18cf4-1159">progressControlCount</span></span>  
+<span data-ttu-id="0f5c1-1159">progressControlCount</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1159">progressControlCount</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1160">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1160">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1160">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1160">Return Value</span></span>
 
-### <a name="method-progressbarvisible"></a><span data-ttu-id="18cf4-1161">メソッド ProgressBarVisible</span><span class="sxs-lookup"><span data-stu-id="18cf4-1161">Method ProgressBarVisible</span></span>
+### <a name="method-progressbarvisible"></a><span data-ttu-id="0f5c1-1161">メソッド ProgressBarVisible</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1161">Method ProgressBarVisible</span></span>
 
     public void ProgressBarVisible(int index, int visible)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1162">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1162">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1162">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1162">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1163">指数</span><span class="sxs-lookup"><span data-stu-id="18cf4-1163">index</span></span>  
+<span data-ttu-id="0f5c1-1163">指数</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1163">index</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1164">表示</span><span class="sxs-lookup"><span data-stu-id="18cf4-1164">visible</span></span>  
+<span data-ttu-id="0f5c1-1164">表示</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1164">visible</span></span>  
 
-### <a name="method-progressvalue"></a><span data-ttu-id="18cf4-1165">メソッド ProgressValue</span><span class="sxs-lookup"><span data-stu-id="18cf4-1165">Method ProgressValue</span></span>
+### <a name="method-progressvalue"></a><span data-ttu-id="0f5c1-1165">メソッド ProgressValue</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1165">Method ProgressValue</span></span>
 
     public void ProgressValue(int index, int progressValue)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1166">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1166">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1166">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1166">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1167">指数</span><span class="sxs-lookup"><span data-stu-id="18cf4-1167">index</span></span>  
+<span data-ttu-id="0f5c1-1167">指数</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1167">index</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1168">progressValue</span><span class="sxs-lookup"><span data-stu-id="18cf4-1168">progressValue</span></span>  
+<span data-ttu-id="0f5c1-1168">progressValue</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1168">progressValue</span></span>  
 
-### <a name="method-controlminmax"></a><span data-ttu-id="18cf4-1169">メソッド ControlMinMax</span><span class="sxs-lookup"><span data-stu-id="18cf4-1169">Method ControlMinMax</span></span>
+### <a name="method-controlminmax"></a><span data-ttu-id="0f5c1-1169">メソッド ControlMinMax</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1169">Method ControlMinMax</span></span>
 
     public void ControlMinMax(int index, int min, int max)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1170">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1170">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1170">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1170">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1171">指数</span><span class="sxs-lookup"><span data-stu-id="18cf4-1171">index</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="18cf4-1172">最小</span><span class="sxs-lookup"><span data-stu-id="18cf4-1172">min</span></span>  
+<span data-ttu-id="0f5c1-1171">指数</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1171">index</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1173">最大</span><span class="sxs-lookup"><span data-stu-id="18cf4-1173">max</span></span>  
+<span data-ttu-id="0f5c1-1172">最小</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1172">min</span></span>  
 
-### <a name="method-progresstextvisible"></a><span data-ttu-id="18cf4-1174">メソッド ProgressTextVisible</span><span class="sxs-lookup"><span data-stu-id="18cf4-1174">Method ProgressTextVisible</span></span>
+<!-- -->
+
+<span data-ttu-id="0f5c1-1173">最大</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1173">max</span></span>  
+
+### <a name="method-progresstextvisible"></a><span data-ttu-id="0f5c1-1174">メソッド ProgressTextVisible</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1174">Method ProgressTextVisible</span></span>
 
     public void ProgressTextVisible(int index, int visible)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1175">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1175">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1175">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1175">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1176">指数</span><span class="sxs-lookup"><span data-stu-id="18cf4-1176">index</span></span>  
+<span data-ttu-id="0f5c1-1176">指数</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1176">index</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1177">表示</span><span class="sxs-lookup"><span data-stu-id="18cf4-1177">visible</span></span>  
+<span data-ttu-id="0f5c1-1177">表示</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1177">visible</span></span>  
 
-### <a name="method-animation"></a><span data-ttu-id="18cf4-1178">メソッド アニメーション</span><span class="sxs-lookup"><span data-stu-id="18cf4-1178">Method Animation</span></span>
+### <a name="method-animation"></a><span data-ttu-id="0f5c1-1178">メソッド アニメーション</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1178">Method Animation</span></span>
 
     public void Animation(str animation)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1179">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1179">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1179">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1179">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1180">animation</span><span class="sxs-lookup"><span data-stu-id="18cf4-1180">animation</span></span>  
+<span data-ttu-id="0f5c1-1180">animation</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1180">animation</span></span>  
 
-### <a name="method-controltext"></a><span data-ttu-id="18cf4-1181">メソッド ControlText</span><span class="sxs-lookup"><span data-stu-id="18cf4-1181">Method ControlText</span></span>
+### <a name="method-controltext"></a><span data-ttu-id="0f5c1-1181">メソッド ControlText</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1181">Method ControlText</span></span>
 
     public void ControlText(int index, str text)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1182">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1182">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1182">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1182">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1183">指数</span><span class="sxs-lookup"><span data-stu-id="18cf4-1183">index</span></span>  
+<span data-ttu-id="0f5c1-1183">指数</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1183">index</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1184">テキスト</span><span class="sxs-lookup"><span data-stu-id="18cf4-1184">text</span></span>  
+<span data-ttu-id="0f5c1-1184">テキスト</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1184">text</span></span>  
 
-### <a name="method-formcaption"></a><span data-ttu-id="18cf4-1185">メソッド FormCaption</span><span class="sxs-lookup"><span data-stu-id="18cf4-1185">Method FormCaption</span></span>
+### <a name="method-formcaption"></a><span data-ttu-id="0f5c1-1185">メソッド FormCaption</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1185">Method FormCaption</span></span>
 
     public void FormCaption(str text)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1186">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1186">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1186">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1186">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1187">テキスト</span><span class="sxs-lookup"><span data-stu-id="18cf4-1187">text</span></span>  
+<span data-ttu-id="0f5c1-1187">テキスト</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1187">text</span></span>  
 
-### <a name="method-controltime"></a><span data-ttu-id="18cf4-1188">メソッド ControlTime</span><span class="sxs-lookup"><span data-stu-id="18cf4-1188">Method ControlTime</span></span>
+### <a name="method-controltime"></a><span data-ttu-id="0f5c1-1188">メソッド ControlTime</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1188">Method ControlTime</span></span>
 
     public void ControlTime(str text)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1189">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1189">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1189">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1189">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1190">テキスト</span><span class="sxs-lookup"><span data-stu-id="18cf4-1190">text</span></span>  
+<span data-ttu-id="0f5c1-1190">テキスト</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1190">text</span></span>  
 
-### <a name="method-finalize"></a><span data-ttu-id="18cf4-1191">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="18cf4-1191">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="0f5c1-1191">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1191">Method finalize</span></span>
 
     public void finalize()
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-1192">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-1192">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-1192">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1192">Method new</span></span>
 
-<span data-ttu-id="18cf4-1193">ProgressWindow クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1193">Initializes a new instance of the ProgressWindow class.</span></span>
+<span data-ttu-id="0f5c1-1193">ProgressWindow クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1193">Initializes a new instance of the ProgressWindow class.</span></span>
 
     public void new()
 
-## <a name="class-projectgroupnode"></a><span data-ttu-id="18cf4-1194">クラス ProjectGroupNode</span><span class="sxs-lookup"><span data-stu-id="18cf4-1194">Class ProjectGroupNode</span></span>
+## <a name="class-projectgroupnode"></a><span data-ttu-id="0f5c1-1194">クラス ProjectGroupNode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1194">Class ProjectGroupNode</span></span>
     class ProjectGroupNode extends TreeNode
 
-<span data-ttu-id="18cf4-1195">ProjectGroupNode クラスは、プロジェクト内のグループ ノードを表します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1195">The ProjectGroupNode class represents a group node within a project.</span></span>
+<span data-ttu-id="0f5c1-1195">ProjectGroupNode クラスは、プロジェクト内のグループ ノードを表します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1195">The ProjectGroupNode class represents a group node within a project.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-1196">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1196">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-1196">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1196">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1197">このクラスを使用すると、作成、読み取り、更新、および X++ コードとメタデータの削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1197">This class enables you to create, read, update, and delete X++ code and metadata.</span></span> <span data-ttu-id="18cf4-1198">この API を呼び出す前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1198">Make sure that the user has access to the development security key (SysDevelopment) before you call this API.</span></span>
+<span data-ttu-id="0f5c1-1197">このクラスを使用すると、作成、読み取り、更新、および X++ コードとメタデータの削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1197">This class enables you to create, read, update, and delete X++ code and metadata.</span></span> <span data-ttu-id="0f5c1-1198">この API を呼び出す前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1198">Make sure that the user has access to the development security key (SysDevelopment) before you call this API.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-1199">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-1199">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-1199">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1199">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-1200">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-1200">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-1200">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1200">Methods</span></span>
 
-| <span data-ttu-id="18cf4-1201">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-1201">Method</span></span>                                                                                       | <span data-ttu-id="18cf4-1202">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-1202">Description</span></span>                                                                                                                                   |
+| <span data-ttu-id="0f5c1-1201">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1201">Method</span></span>                                                                                       | <span data-ttu-id="0f5c1-1202">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1202">Description</span></span>                                                                                                                                   |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="18cf4-1203">public TreeNode findGroupMember(str name, UtilElementType type, \[boolean searchSubgroups\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1203">public TreeNode findGroupMember(str name, UtilElementType type, \[boolean searchSubgroups\])</span></span> | <span data-ttu-id="18cf4-1204">特定の要素の projectGroup を検索します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1204">Searches the projectGroup for a specific element.</span></span> <span data-ttu-id="18cf4-1205">特定のグループまたはプロジェクト全体を検索するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1205">It can be used to search a specific group or the whole project.</span></span>                             |
-| <span data-ttu-id="18cf4-1206">public str groupMask(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1206">public str groupMask(\[str value\])</span></span>                                                          |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1207">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1207">public str name(\[str value\])</span></span>                                                               | <span data-ttu-id="18cf4-1208">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1208">Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
-| <span data-ttu-id="18cf4-1209">public boolean preventEditProperties(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1209">public boolean preventEditProperties(\[boolean value\])</span></span>                                      |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1210">public GroupNodeType projectGroupType(\[GroupNodeType value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1210">public GroupNodeType projectGroupType(\[GroupNodeType value\])</span></span>                               |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1211">public void addUtilNode(UtilElementType type, str name)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1211">public void addUtilNode(UtilElementType type, str name)</span></span>                                      | <span data-ttu-id="18cf4-1212">projectGroup にノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1212">Adds a node to the projectGroup.</span></span>                                                                                                              |
-| <span data-ttu-id="18cf4-1213">public void addNode(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1213">public void addNode(TreeNode node)</span></span>                                                           | <span data-ttu-id="18cf4-1214">ProjectGroup に既存のノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1214">Adds an existing node to the projectGroup.</span></span>                                                                                                    |
+| <span data-ttu-id="0f5c1-1203">public TreeNode findGroupMember(str name, UtilElementType type, \[boolean searchSubgroups\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1203">public TreeNode findGroupMember(str name, UtilElementType type, \[boolean searchSubgroups\])</span></span> | <span data-ttu-id="0f5c1-1204">特定の要素の projectGroup を検索します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1204">Searches the projectGroup for a specific element.</span></span> <span data-ttu-id="0f5c1-1205">特定のグループまたはプロジェクト全体を検索するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1205">It can be used to search a specific group or the whole project.</span></span>                             |
+| <span data-ttu-id="0f5c1-1206">public str groupMask(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1206">public str groupMask(\[str value\])</span></span>                                                          |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1207">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1207">public str name(\[str value\])</span></span>                                                               | <span data-ttu-id="0f5c1-1208">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1208">Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
+| <span data-ttu-id="0f5c1-1209">public boolean preventEditProperties(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1209">public boolean preventEditProperties(\[boolean value\])</span></span>                                      |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1210">public GroupNodeType projectGroupType(\[GroupNodeType value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1210">public GroupNodeType projectGroupType(\[GroupNodeType value\])</span></span>                               |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1211">public void addUtilNode(UtilElementType type, str name)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1211">public void addUtilNode(UtilElementType type, str name)</span></span>                                      | <span data-ttu-id="0f5c1-1212">projectGroup にノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1212">Adds a node to the projectGroup.</span></span>                                                                                                              |
+| <span data-ttu-id="0f5c1-1213">public void addNode(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1213">public void addNode(TreeNode node)</span></span>                                                           | <span data-ttu-id="0f5c1-1214">ProjectGroup に既存のノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1214">Adds an existing node to the projectGroup.</span></span>                                                                                                    |
 
-### <a name="method-findgroupmember"></a><span data-ttu-id="18cf4-1215">メソッド findGroupMember</span><span class="sxs-lookup"><span data-stu-id="18cf4-1215">Method findGroupMember</span></span>
+### <a name="method-findgroupmember"></a><span data-ttu-id="0f5c1-1215">メソッド findGroupMember</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1215">Method findGroupMember</span></span>
 
-<span data-ttu-id="18cf4-1216">特定の要素の projectGroup を検索します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1216">Searches the projectGroup for a specific element.</span></span> <span data-ttu-id="18cf4-1217">特定のグループまたはプロジェクト全体を検索するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1217">It can be used to search a specific group or the whole project.</span></span>
+<span data-ttu-id="0f5c1-1216">特定の要素の projectGroup を検索します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1216">Searches the projectGroup for a specific element.</span></span> <span data-ttu-id="0f5c1-1217">特定のグループまたはプロジェクト全体を検索するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1217">It can be used to search a specific group or the whole project.</span></span>
 
     public TreeNode findGroupMember(str name, UtilElementType type, [boolean searchSubgroups])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1218">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1218">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1218">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1218">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1219">名前</span><span class="sxs-lookup"><span data-stu-id="18cf4-1219">name</span></span>  
-<span data-ttu-id="18cf4-1220">検索が再帰的 (サブプロジェクトを検索するか) どうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1220">A boolean flag that determines whether the search should be recursive (whether to search subprojects); optional.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="18cf4-1221">タイプ</span><span class="sxs-lookup"><span data-stu-id="18cf4-1221">type</span></span>  
-<span data-ttu-id="18cf4-1222">検索が再帰的 (サブプロジェクトを検索するか) どうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1222">A boolean flag that determines whether the search should be recursive (whether to search subprojects); optional.</span></span>
+<span data-ttu-id="0f5c1-1219">名前</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1219">name</span></span>  
+<span data-ttu-id="0f5c1-1220">検索が再帰的 (サブプロジェクトを検索するか) どうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1220">A boolean flag that determines whether the search should be recursive (whether to search subprojects); optional.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1223">searchSubgroups</span><span class="sxs-lookup"><span data-stu-id="18cf4-1223">searchSubgroups</span></span>  
-<span data-ttu-id="18cf4-1224">検索が再帰的 (サブプロジェクトを検索するか) どうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1224">A boolean flag that determines whether the search should be recursive (whether to search subprojects); optional.</span></span>
+<span data-ttu-id="0f5c1-1221">タイプ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1221">type</span></span>  
+<span data-ttu-id="0f5c1-1222">検索が再帰的 (サブプロジェクトを検索するか) どうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1222">A boolean flag that determines whether the search should be recursive (whether to search subprojects); optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1225">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1225">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="18cf4-1226">オブジェクトが見つからない場合は、条件を満たす最初のオブジェクト、または nullNothingnullptrunita null 参照 (Visual Basic にはなし) を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1226">The first object that fits the criteria; returns nullNothingnullptrunita null reference (Nothing in Visual Basic) if no object is found.</span></span>
+<span data-ttu-id="0f5c1-1223">searchSubgroups</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1223">searchSubgroups</span></span>  
+<span data-ttu-id="0f5c1-1224">検索が再帰的 (サブプロジェクトを検索するか) どうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1224">A boolean flag that determines whether the search should be recursive (whether to search subprojects); optional.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1227">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1227">Remarks</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1225">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1225">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1228">このメソッドは ProjectNode にもあります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1228">This method is also found on ProjectNode.</span></span>
+<span data-ttu-id="0f5c1-1226">オブジェクトが見つからない場合は、条件を満たす最初のオブジェクト、または nullNothingnullptrunita null 参照 (Visual Basic にはなし) を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1226">The first object that fits the criteria; returns nullNothingnullptrunita null reference (Nothing in Visual Basic) if no object is found.</span></span>
 
-### <a name="method-groupmask"></a><span data-ttu-id="18cf4-1229">メソッド groupMask</span><span class="sxs-lookup"><span data-stu-id="18cf4-1229">Method groupMask</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1227">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1227">Remarks</span></span>
+
+<span data-ttu-id="0f5c1-1228">このメソッドは ProjectNode にもあります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1228">This method is also found on ProjectNode.</span></span>
+
+### <a name="method-groupmask"></a><span data-ttu-id="0f5c1-1229">メソッド groupMask</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1229">Method groupMask</span></span>
 
     public str groupMask([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1230">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1230">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1230">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1230">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1231">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1231">value</span></span>  
+<span data-ttu-id="0f5c1-1231">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1231">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1232">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1232">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1232">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1232">Return Value</span></span>
 
-### <a name="method-name"></a><span data-ttu-id="18cf4-1233">メソッド名</span><span class="sxs-lookup"><span data-stu-id="18cf4-1233">Method name</span></span>
+### <a name="method-name"></a><span data-ttu-id="0f5c1-1233">メソッド名</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1233">Method name</span></span>
 
-<span data-ttu-id="18cf4-1234">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1234">Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
+<span data-ttu-id="0f5c1-1234">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1234">Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
 
     public str name([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1235">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1235">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1235">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1235">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1236">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1236">value</span></span>  
+<span data-ttu-id="0f5c1-1236">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1236">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1237">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1237">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1237">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1237">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1238">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1238">The name that is used in the code to identify an application object.</span></span>
+<span data-ttu-id="0f5c1-1238">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1238">The name that is used in the code to identify an application object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1239">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1239">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1239">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1239">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1240">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1240">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
+<span data-ttu-id="0f5c1-1240">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1240">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
 
--   <span data-ttu-id="18cf4-1241">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1241">Begins with a letter.</span></span>
--   <span data-ttu-id="18cf4-1242">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1242">Doesn't exceed 250 characters.</span></span>
--   <span data-ttu-id="18cf4-1243">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1243">Can include numbers and underscore characters.</span></span>
--   <span data-ttu-id="18cf4-1244">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1244">Cannot include punctuation or spaces.</span></span>
--   <span data-ttu-id="18cf4-1245">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1245">Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</span></span>
+-   <span data-ttu-id="0f5c1-1241">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1241">Begins with a letter.</span></span>
+-   <span data-ttu-id="0f5c1-1242">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1242">Doesn't exceed 250 characters.</span></span>
+-   <span data-ttu-id="0f5c1-1243">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1243">Can include numbers and underscore characters.</span></span>
+-   <span data-ttu-id="0f5c1-1244">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1244">Cannot include punctuation or spaces.</span></span>
+-   <span data-ttu-id="0f5c1-1245">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1245">Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</span></span>
 
-### <a name="method-preventeditproperties"></a><span data-ttu-id="18cf4-1246">メソッド preventEditProperties</span><span class="sxs-lookup"><span data-stu-id="18cf4-1246">Method preventEditProperties</span></span>
+### <a name="method-preventeditproperties"></a><span data-ttu-id="0f5c1-1246">メソッド preventEditProperties</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1246">Method preventEditProperties</span></span>
 
     public boolean preventEditProperties([boolean value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1247">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1247">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1247">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1247">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1248">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1248">value</span></span>  
+<span data-ttu-id="0f5c1-1248">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1248">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1249">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1249">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1249">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1249">Return Value</span></span>
 
-### <a name="method-projectgrouptype"></a><span data-ttu-id="18cf4-1250">メソッド projectGroupType</span><span class="sxs-lookup"><span data-stu-id="18cf4-1250">Method projectGroupType</span></span>
+### <a name="method-projectgrouptype"></a><span data-ttu-id="0f5c1-1250">メソッド projectGroupType</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1250">Method projectGroupType</span></span>
 
     public GroupNodeType projectGroupType([GroupNodeType value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1251">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1251">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1251">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1251">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1252">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1252">value</span></span>  
+<span data-ttu-id="0f5c1-1252">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1252">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1253">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1253">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1253">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1253">Return Value</span></span>
 
-### <a name="method-addutilnode"></a><span data-ttu-id="18cf4-1254">メソッド addUtilNode</span><span class="sxs-lookup"><span data-stu-id="18cf4-1254">Method addUtilNode</span></span>
+### <a name="method-addutilnode"></a><span data-ttu-id="0f5c1-1254">メソッド addUtilNode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1254">Method addUtilNode</span></span>
 
-<span data-ttu-id="18cf4-1255">projectGroup にノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1255">Adds a node to the projectGroup.</span></span>
+<span data-ttu-id="0f5c1-1255">projectGroup にノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1255">Adds a node to the projectGroup.</span></span>
 
     public void addUtilNode(UtilElementType type, str name)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1256">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1256">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1256">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1256">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1257">タイプ</span><span class="sxs-lookup"><span data-stu-id="18cf4-1257">type</span></span>  
-<span data-ttu-id="18cf4-1258">ノードの名前。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1258">The name of the node.</span></span>
+<span data-ttu-id="0f5c1-1257">タイプ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1257">type</span></span>  
+<span data-ttu-id="0f5c1-1258">ノードの名前。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1258">The name of the node.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1259">名前</span><span class="sxs-lookup"><span data-stu-id="18cf4-1259">name</span></span>  
-<span data-ttu-id="18cf4-1260">ノードの名前。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1260">The name of the node.</span></span>
+<span data-ttu-id="0f5c1-1259">名前</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1259">name</span></span>  
+<span data-ttu-id="0f5c1-1260">ノードの名前。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1260">The name of the node.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1261">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1261">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1261">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1261">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1262">このメソッドは、ProjectNode クラスにもあります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1262">This method also is found on the ProjectNode class.</span></span>
+<span data-ttu-id="0f5c1-1262">このメソッドは、ProjectNode クラスにもあります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1262">This method also is found on the ProjectNode class.</span></span>
 
-### <a name="method-addnode"></a><span data-ttu-id="18cf4-1263">メソッド addNode</span><span class="sxs-lookup"><span data-stu-id="18cf4-1263">Method addNode</span></span>
+### <a name="method-addnode"></a><span data-ttu-id="0f5c1-1263">メソッド addNode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1263">Method addNode</span></span>
 
-<span data-ttu-id="18cf4-1264">ProjectGroup に既存のノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1264">Adds an existing node to the projectGroup.</span></span>
+<span data-ttu-id="0f5c1-1264">ProjectGroup に既存のノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1264">Adds an existing node to the projectGroup.</span></span>
 
     public void addNode(TreeNode node)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1265">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1265">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1265">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1265">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1266">node</span><span class="sxs-lookup"><span data-stu-id="18cf4-1266">node</span></span>  
-<span data-ttu-id="18cf4-1267">追加するノード。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1267">The node to add.</span></span>
+<span data-ttu-id="0f5c1-1266">node</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1266">node</span></span>  
+<span data-ttu-id="0f5c1-1267">追加するノード。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1267">The node to add.</span></span>
 
-## <a name="class-projectlistnode"></a><span data-ttu-id="18cf4-1268">クラス ProjectListNode</span><span class="sxs-lookup"><span data-stu-id="18cf4-1268">Class ProjectListNode</span></span>
+## <a name="class-projectlistnode"></a><span data-ttu-id="0f5c1-1268">クラス ProjectListNode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1268">Class ProjectListNode</span></span>
     class ProjectListNode extends TreeNode
 
-<span data-ttu-id="18cf4-1269">ProjectListNode クラスは、プロジェクトの概要ウィンドウ内のプロジェクトのプライベートと共有のリストに対応します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1269">The ProjectListNode class corresponds to the Private and Shared lists of projects in the project overview window.</span></span> <span data-ttu-id="18cf4-1270">X++ コードから新しいプロジェクトを追加するのにには、ProjectListNode.addProject メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1270">Use the ProjectListNode.addProject method to add a new project from X++ code.</span></span>
+<span data-ttu-id="0f5c1-1269">ProjectListNode クラスは、プロジェクトの概要ウィンドウ内のプロジェクトのプライベートと共有のリストに対応します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1269">The ProjectListNode class corresponds to the Private and Shared lists of projects in the project overview window.</span></span> <span data-ttu-id="0f5c1-1270">X++ コードから新しいプロジェクトを追加するのにには、ProjectListNode.addProject メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1270">Use the ProjectListNode.addProject method to add a new project from X++ code.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-1271">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1271">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-1271">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1271">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1272">このクラスを使用すると、作成、読み取り、更新、および X++ コードとメタデータの削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1272">This class enables you to create, read, update, and delete X++ code and metadata.</span></span> <span data-ttu-id="18cf4-1273">ユーザーがこの API を呼び出す前に、開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1273">Make sure that the user has access to the development security key (SysDevelopment) before calling this API.</span></span>
+<span data-ttu-id="0f5c1-1272">このクラスを使用すると、作成、読み取り、更新、および X++ コードとメタデータの削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1272">This class enables you to create, read, update, and delete X++ code and metadata.</span></span> <span data-ttu-id="0f5c1-1273">ユーザーがこの API を呼び出す前に、開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1273">Make sure that the user has access to the development security key (SysDevelopment) before calling this API.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-1274">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-1274">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-1274">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1274">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-1275">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-1275">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-1275">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1275">Methods</span></span>
 
-| <span data-ttu-id="18cf4-1276">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-1276">Method</span></span>                                                               | <span data-ttu-id="18cf4-1277">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-1277">Description</span></span>                     |
+| <span data-ttu-id="0f5c1-1276">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1276">Method</span></span>                                                               | <span data-ttu-id="0f5c1-1277">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1277">Description</span></span>                     |
 |----------------------------------------------------------------------|---------------------------------|
-| <span data-ttu-id="18cf4-1278">public ProjectNode addProject(str projectName, \[str projectClass\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1278">public ProjectNode addProject(str projectName, \[str projectClass\])</span></span> | <span data-ttu-id="18cf4-1279">リストに新しいプロジェクトを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1279">Adds a new project to the list.</span></span> |
+| <span data-ttu-id="0f5c1-1278">public ProjectNode addProject(str projectName, \[str projectClass\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1278">public ProjectNode addProject(str projectName, \[str projectClass\])</span></span> | <span data-ttu-id="0f5c1-1279">リストに新しいプロジェクトを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1279">Adds a new project to the list.</span></span> |
 
-### <a name="method-addproject"></a><span data-ttu-id="18cf4-1280">メソッド addProject</span><span class="sxs-lookup"><span data-stu-id="18cf4-1280">Method addProject</span></span>
+### <a name="method-addproject"></a><span data-ttu-id="0f5c1-1280">メソッド addProject</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1280">Method addProject</span></span>
 
-<span data-ttu-id="18cf4-1281">リストに新しいプロジェクトを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1281">Adds a new project to the list.</span></span>
+<span data-ttu-id="0f5c1-1281">リストに新しいプロジェクトを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1281">Adds a new project to the list.</span></span>
 
     public ProjectNode addProject(str projectName, [str projectClass])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1282">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1282">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1282">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1282">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1283">projectName</span><span class="sxs-lookup"><span data-stu-id="18cf4-1283">projectName</span></span>  
-<span data-ttu-id="18cf4-1284">projecttype の名前 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1284">The name of the projecttype; optional.</span></span> <span data-ttu-id="18cf4-1285">これは、プロジェクトに関連付けられたクラスの名前でなければなりません (setProjectClass メソッドを参照)。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1285">This should be the name of a class associated with the project (see the setProjectClass method).</span></span> <span data-ttu-id="18cf4-1286">値が指定されていない場合は、標準のプロジェクトがプロジェクトになります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1286">If no value is supplied, the project becomes a standard project.</span></span>
+<span data-ttu-id="0f5c1-1283">projectName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1283">projectName</span></span>  
+<span data-ttu-id="0f5c1-1284">projecttype の名前 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1284">The name of the projecttype; optional.</span></span> <span data-ttu-id="0f5c1-1285">これは、プロジェクトに関連付けられたクラスの名前でなければなりません (setProjectClass メソッドを参照)。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1285">This should be the name of a class associated with the project (see the setProjectClass method).</span></span> <span data-ttu-id="0f5c1-1286">値が指定されていない場合は、標準のプロジェクトがプロジェクトになります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1286">If no value is supplied, the project becomes a standard project.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1287">projectClass</span><span class="sxs-lookup"><span data-stu-id="18cf4-1287">projectClass</span></span>  
-<span data-ttu-id="18cf4-1288">projecttype の名前 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1288">The name of the projecttype; optional.</span></span> <span data-ttu-id="18cf4-1289">これは、プロジェクトに関連付けられたクラスの名前でなければなりません (setProjectClass メソッドを参照)。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1289">This should be the name of a class associated with the project (see the setProjectClass method).</span></span> <span data-ttu-id="18cf4-1290">値が指定されていない場合は、標準のプロジェクトがプロジェクトになります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1290">If no value is supplied, the project becomes a standard project.</span></span>
+<span data-ttu-id="0f5c1-1287">projectClass</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1287">projectClass</span></span>  
+<span data-ttu-id="0f5c1-1288">projecttype の名前 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1288">The name of the projecttype; optional.</span></span> <span data-ttu-id="0f5c1-1289">これは、プロジェクトに関連付けられたクラスの名前でなければなりません (setProjectClass メソッドを参照)。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1289">This should be the name of a class associated with the project (see the setProjectClass method).</span></span> <span data-ttu-id="0f5c1-1290">値が指定されていない場合は、標準のプロジェクトがプロジェクトになります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1290">If no value is supplied, the project becomes a standard project.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1291">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1291">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1291">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1291">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1292">新たに追加された projectNode。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1292">The newly added projectNode.</span></span>
+<span data-ttu-id="0f5c1-1292">新たに追加された projectNode。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1292">The newly added projectNode.</span></span>
 
-## <a name="class-projectnode"></a><span data-ttu-id="18cf4-1293">クラス ProjectNode</span><span class="sxs-lookup"><span data-stu-id="18cf4-1293">Class ProjectNode</span></span>
+## <a name="class-projectnode"></a><span data-ttu-id="0f5c1-1293">クラス ProjectNode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1293">Class ProjectNode</span></span>
     class ProjectNode extends TreeNode
 
-<span data-ttu-id="18cf4-1294">ProjectNode クラスは、AOT プロジェクトの動作を制御します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1294">The ProjectNode class controls the behavior of an AOT project.</span></span>
+<span data-ttu-id="0f5c1-1294">ProjectNode クラスは、AOT プロジェクトの動作を制御します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1294">The ProjectNode class controls the behavior of an AOT project.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-1295">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1295">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-1295">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1295">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1296">このクラスを使用すると、作成、読み取り、更新、および X++ コードとメタデータの削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1296">This class enables you to create, read, update, and delete X++ code and metadata.</span></span> <span data-ttu-id="18cf4-1297">このクラスから拡張して、新しいユーザー定義の AOT プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1297">Create a new, user-defined AOT project by extending from this class.</span></span> <span data-ttu-id="18cf4-1298">このクラスのメソッドを上書きすることによって、プロジェクトの動作を制御します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1298">Control the behavior of the project by overriding the methods of this class.</span></span> <span data-ttu-id="18cf4-1299">Web プロジェクトとヘルプ プロジェクトの両方を作成するには、ProjectNode クラスを拡張するクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1299">Create both Web projects and Help projects by creating classes that extend the ProjectNode class.</span></span>
+<span data-ttu-id="0f5c1-1296">このクラスを使用すると、作成、読み取り、更新、および X++ コードとメタデータの削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1296">This class enables you to create, read, update, and delete X++ code and metadata.</span></span> <span data-ttu-id="0f5c1-1297">このクラスから拡張して、新しいユーザー定義の AOT プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1297">Create a new, user-defined AOT project by extending from this class.</span></span> <span data-ttu-id="0f5c1-1298">このクラスのメソッドを上書きすることによって、プロジェクトの動作を制御します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1298">Control the behavior of the project by overriding the methods of this class.</span></span> <span data-ttu-id="0f5c1-1299">Web プロジェクトとヘルプ プロジェクトの両方を作成するには、ProjectNode クラスを拡張するクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1299">Create both Web projects and Help projects by creating classes that extend the ProjectNode class.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-1300">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-1300">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-1300">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1300">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-1301">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-1301">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-1301">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1301">Methods</span></span>
 
-| <span data-ttu-id="18cf4-1302">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-1302">Method</span></span>                                                                                       | <span data-ttu-id="18cf4-1303">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-1303">Description</span></span>                                                                                                                                   |
+| <span data-ttu-id="0f5c1-1302">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1302">Method</span></span>                                                                                       | <span data-ttu-id="0f5c1-1303">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1303">Description</span></span>                                                                                                                                   |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="18cf4-1304">public str addContextMenuItems()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1304">public str addContextMenuItems()</span></span>                                                             | <span data-ttu-id="18cf4-1305">プロジェクト ノードのショートカット メニューに品目のリストを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1305">Adds a list of items to the shortcut menu of the project node.</span></span>                                                                                |
-| <span data-ttu-id="18cf4-1306">public str changedBy(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1306">public str changedBy(\[str value\])</span></span>                                                          | <span data-ttu-id="18cf4-1307">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1307">Gets or sets the name of the user who last changed the application object.</span></span>                                                                    |
-| <span data-ttu-id="18cf4-1308">public Date changedDate(\[Date value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1308">public Date changedDate(\[Date value\])</span></span>                                                      | <span data-ttu-id="18cf4-1309">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1309">Gets or sets the date an application object was last changed.</span></span>                                                                                 |
-| <span data-ttu-id="18cf4-1310">public str changedTime(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1310">public str changedTime(\[str value\])</span></span>                                                        | <span data-ttu-id="18cf4-1311">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1311">Gets or sets the time an application object was last changed.</span></span>                                                                                 |
-| <span data-ttu-id="18cf4-1312">public str createdBy(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1312">public str createdBy(\[str value\])</span></span>                                                          | <span data-ttu-id="18cf4-1313">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1313">Gets or sets the name of the user who created the application object.</span></span>                                                                         |
-| <span data-ttu-id="18cf4-1314">public Date creationDate(\[Date value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1314">public Date creationDate(\[Date value\])</span></span>                                                     | <span data-ttu-id="18cf4-1315">アプリケーション オブジェクトが作成された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1315">Gets or sets the date an application object was created.</span></span>                                                                                      |
-| <span data-ttu-id="18cf4-1316">public str creationTime(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1316">public str creationTime(\[str value\])</span></span>                                                       |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1317">public str export(str buffer)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1317">public str export(str buffer)</span></span>                                                                |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1318">public TreeNode findGroupMember(str name, UtilElementType type, \[boolean searchSubgroups\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1318">public TreeNode findGroupMember(str name, UtilElementType type, \[boolean searchSubgroups\])</span></span> | <span data-ttu-id="18cf4-1319">特定の要素のプロジェクトまたはグループを検索します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1319">Searches the project or group for a specific element.</span></span>                                                                                         |
-| <span data-ttu-id="18cf4-1320">public str getProjectClassName()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1320">public str getProjectClassName()</span></span>                                                             | <span data-ttu-id="18cf4-1321">プロジェクトの classid に対応するクラスの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1321">Returns the name of the class corresponding to the classid of the project.</span></span>                                                                    |
-| <span data-ttu-id="18cf4-1322">public ProjectNode getRunNode()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1322">public ProjectNode getRunNode()</span></span>                                                              | <span data-ttu-id="18cf4-1323">プロジェクト ウィンドウを開いて、プロジェクトの概要ウィンドウで見つかった特定の projectNode のためにそのウィンドウのルート projectNode を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1323">Opens the project window and returns the root projectNode of that window, for a particular projectNode found in the project overview window.</span></span>  |
-| <span data-ttu-id="18cf4-1324">public str import(str buffer)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1324">public str import(str buffer)</span></span>                                                                |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1325">public boolean isRunNode()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1325">public boolean isRunNode()</span></span>                                                                   |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1326">public ProjectNode loadForInspection()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1326">public ProjectNode loadForInspection()</span></span>                                                       | <span data-ttu-id="18cf4-1327">プロジェクトの概要ウィンドウにある projectNode の読み込まれたバージョンを返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1327">Returns a loaded version of a projectNode found in the project overview window.</span></span>                                                               |
-| <span data-ttu-id="18cf4-1328">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1328">public str name(\[str value\])</span></span>                                                               | <span data-ttu-id="18cf4-1329">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1329">Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
-| <span data-ttu-id="18cf4-1330">public Guid origin(\[Guid value\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1330">public Guid origin(\[Guid value\])</span></span>                                                           |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1331">public boolean removeFromProject(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1331">public boolean removeFromProject(TreeNode node)</span></span>                                              |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1332">public str tooltipText(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1332">public str tooltipText(TreeNode node)</span></span>                                                        |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1333">::public static str projectType()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1333">::public static str projectType()</span></span>                                                            |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1334">public void lockUpdate()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1334">public void lockUpdate()</span></span>                                                                     | <span data-ttu-id="18cf4-1335">一連のアクションを実行中に、視覚的な更新を禁止します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1335">Prevents visual updates while a series of actions is being performed.</span></span>                                                                         |
-| <span data-ttu-id="18cf4-1336">public void addSpecialOverlayIcon(str path, int resId, \[int xOffset\], \[int yOffset\])</span><span class="sxs-lookup"><span data-stu-id="18cf4-1336">public void addSpecialOverlayIcon(str path, int resId, \[int xOffset\], \[int yOffset\])</span></span>     |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1337">public void created(str name)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1337">public void created(str name)</span></span>                                                                | <span data-ttu-id="18cf4-1338">プロジェクトの新しいインスタンスが作成された際、プロジェクトでカスタム アクションを実行を有効にします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1338">Enables the ability to perform custom actions on a project when a new instance of the project is created.</span></span>                                     |
-| <span data-ttu-id="18cf4-1339">public void setSpecialIcon(int type, str name, int resId)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1339">public void setSpecialIcon(int type, str name, int resId)</span></span>                                    | <span data-ttu-id="18cf4-1340">プロジェクト内の特定のノードに別のアイコンを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1340">Assigns a different icon to a specific node in the project.</span></span>                                                                                   |
-| <span data-ttu-id="18cf4-1341">public void loadProject(str buffer)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1341">public void loadProject(str buffer)</span></span>                                                          | <span data-ttu-id="18cf4-1342">プロジェクトが読み込まれた際、プロジェクト定義にカスタムデータの格納と取得を有効にします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1342">Enables storing and retrieving custom data in the project definition when a project is loaded.</span></span>                                                |
-| <span data-ttu-id="18cf4-1343">public void saveProject(str buffer)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1343">public void saveProject(str buffer)</span></span>                                                          | <span data-ttu-id="18cf4-1344">アプリケーション オブジェクト データベースでは、プロジェクトと共にカスタム データの保存を有効にします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1344">Enables saving custom data together with the project in the application object database.</span></span>                                                      |
-| <span data-ttu-id="18cf4-1345">public void unlockUpdate()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1345">public void unlockUpdate()</span></span>                                                                   | <span data-ttu-id="18cf4-1346">lockUpdate で一連のアクションを開始した後にビジュアル更新プログラムを有効にします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1346">Enables a visual update after a series of actions started with lockUpdate.</span></span>                                                                    |
-| <span data-ttu-id="18cf4-1347">public void handleContextMenuItem(int id)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1347">public void handleContextMenuItem(int id)</span></span>                                                    | <span data-ttu-id="18cf4-1348">ユーザーが対応するメソッド addContextMenuItems で定義されているショートカット メニューの項目を選択するのを処理します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1348">Handles a user selecting an item on the shortcut menu that has been defined by the corresponding method addContextMenuItems.</span></span>                  |
-| <span data-ttu-id="18cf4-1349">public void addNode(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1349">public void addNode(TreeNode node)</span></span>                                                           | <span data-ttu-id="18cf4-1350">プロジェクトに既存のノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1350">Adds an existing node to the project.</span></span>                                                                                                         |
-| <span data-ttu-id="18cf4-1351">public void addUtilNode(UtilElementType type, str name)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1351">public void addUtilNode(UtilElementType type, str name)</span></span>                                      | <span data-ttu-id="18cf4-1352">プロジェクトにノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1352">Adds a node to the project.</span></span>                                                                                                                   |
-| <span data-ttu-id="18cf4-1353">public void clear()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1353">public void clear()</span></span>                                                                          | <span data-ttu-id="18cf4-1354">プロジェクトの内容を削除します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1354">Removes the contents of a project.</span></span>                                                                                                            |
-| <span data-ttu-id="18cf4-1355">public void setProjectClass(int classid)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1355">public void setProjectClass(int classid)</span></span>                                                     | <span data-ttu-id="18cf4-1356">クラスをプロジェクトに割り当てますが、クラスに定義されているタイプをプロジェクトに与えます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1356">Assigns a class to the project, which gives the project the type that the class defines.</span></span>                                                      |
-| <span data-ttu-id="18cf4-1357">public void removeSpecialOverlayIcons(str path)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1357">public void removeSpecialOverlayIcons(str path)</span></span>                                              |                                                                                                                                               |
-| <span data-ttu-id="18cf4-1358">public void new()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1358">public void new()</span></span>                                                                            | <span data-ttu-id="18cf4-1359">ProjectNode クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1359">Initializes a new instance of the ProjectNode class.</span></span>                                                                                          |
+| <span data-ttu-id="0f5c1-1304">public str addContextMenuItems()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1304">public str addContextMenuItems()</span></span>                                                             | <span data-ttu-id="0f5c1-1305">プロジェクト ノードのショートカット メニューに品目のリストを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1305">Adds a list of items to the shortcut menu of the project node.</span></span>                                                                                |
+| <span data-ttu-id="0f5c1-1306">public str changedBy(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1306">public str changedBy(\[str value\])</span></span>                                                          | <span data-ttu-id="0f5c1-1307">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1307">Gets or sets the name of the user who last changed the application object.</span></span>                                                                    |
+| <span data-ttu-id="0f5c1-1308">public Date changedDate(\[Date value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1308">public Date changedDate(\[Date value\])</span></span>                                                      | <span data-ttu-id="0f5c1-1309">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1309">Gets or sets the date an application object was last changed.</span></span>                                                                                 |
+| <span data-ttu-id="0f5c1-1310">public str changedTime(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1310">public str changedTime(\[str value\])</span></span>                                                        | <span data-ttu-id="0f5c1-1311">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1311">Gets or sets the time an application object was last changed.</span></span>                                                                                 |
+| <span data-ttu-id="0f5c1-1312">public str createdBy(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1312">public str createdBy(\[str value\])</span></span>                                                          | <span data-ttu-id="0f5c1-1313">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1313">Gets or sets the name of the user who created the application object.</span></span>                                                                         |
+| <span data-ttu-id="0f5c1-1314">public Date creationDate(\[Date value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1314">public Date creationDate(\[Date value\])</span></span>                                                     | <span data-ttu-id="0f5c1-1315">アプリケーション オブジェクトが作成された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1315">Gets or sets the date an application object was created.</span></span>                                                                                      |
+| <span data-ttu-id="0f5c1-1316">public str creationTime(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1316">public str creationTime(\[str value\])</span></span>                                                       |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1317">public str export(str buffer)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1317">public str export(str buffer)</span></span>                                                                |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1318">public TreeNode findGroupMember(str name, UtilElementType type, \[boolean searchSubgroups\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1318">public TreeNode findGroupMember(str name, UtilElementType type, \[boolean searchSubgroups\])</span></span> | <span data-ttu-id="0f5c1-1319">特定の要素のプロジェクトまたはグループを検索します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1319">Searches the project or group for a specific element.</span></span>                                                                                         |
+| <span data-ttu-id="0f5c1-1320">public str getProjectClassName()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1320">public str getProjectClassName()</span></span>                                                             | <span data-ttu-id="0f5c1-1321">プロジェクトの classid に対応するクラスの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1321">Returns the name of the class corresponding to the classid of the project.</span></span>                                                                    |
+| <span data-ttu-id="0f5c1-1322">public ProjectNode getRunNode()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1322">public ProjectNode getRunNode()</span></span>                                                              | <span data-ttu-id="0f5c1-1323">プロジェクト ウィンドウを開いて、プロジェクトの概要ウィンドウで見つかった特定の projectNode のためにそのウィンドウのルート projectNode を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1323">Opens the project window and returns the root projectNode of that window, for a particular projectNode found in the project overview window.</span></span>  |
+| <span data-ttu-id="0f5c1-1324">public str import(str buffer)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1324">public str import(str buffer)</span></span>                                                                |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1325">public boolean isRunNode()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1325">public boolean isRunNode()</span></span>                                                                   |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1326">public ProjectNode loadForInspection()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1326">public ProjectNode loadForInspection()</span></span>                                                       | <span data-ttu-id="0f5c1-1327">プロジェクトの概要ウィンドウにある projectNode の読み込まれたバージョンを返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1327">Returns a loaded version of a projectNode found in the project overview window.</span></span>                                                               |
+| <span data-ttu-id="0f5c1-1328">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1328">public str name(\[str value\])</span></span>                                                               | <span data-ttu-id="0f5c1-1329">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1329">Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
+| <span data-ttu-id="0f5c1-1330">public Guid origin(\[Guid value\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1330">public Guid origin(\[Guid value\])</span></span>                                                           |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1331">public boolean removeFromProject(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1331">public boolean removeFromProject(TreeNode node)</span></span>                                              |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1332">public str tooltipText(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1332">public str tooltipText(TreeNode node)</span></span>                                                        |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1333">::public static str projectType()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1333">::public static str projectType()</span></span>                                                            |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1334">public void lockUpdate()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1334">public void lockUpdate()</span></span>                                                                     | <span data-ttu-id="0f5c1-1335">一連のアクションを実行中に、視覚的な更新を禁止します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1335">Prevents visual updates while a series of actions is being performed.</span></span>                                                                         |
+| <span data-ttu-id="0f5c1-1336">public void addSpecialOverlayIcon(str path, int resId, \[int xOffset\], \[int yOffset\])</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1336">public void addSpecialOverlayIcon(str path, int resId, \[int xOffset\], \[int yOffset\])</span></span>     |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1337">public void created(str name)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1337">public void created(str name)</span></span>                                                                | <span data-ttu-id="0f5c1-1338">プロジェクトの新しいインスタンスが作成された際、プロジェクトでカスタム アクションを実行を有効にします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1338">Enables the ability to perform custom actions on a project when a new instance of the project is created.</span></span>                                     |
+| <span data-ttu-id="0f5c1-1339">public void setSpecialIcon(int type, str name, int resId)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1339">public void setSpecialIcon(int type, str name, int resId)</span></span>                                    | <span data-ttu-id="0f5c1-1340">プロジェクト内の特定のノードに別のアイコンを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1340">Assigns a different icon to a specific node in the project.</span></span>                                                                                   |
+| <span data-ttu-id="0f5c1-1341">public void loadProject(str buffer)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1341">public void loadProject(str buffer)</span></span>                                                          | <span data-ttu-id="0f5c1-1342">プロジェクトが読み込まれた際、プロジェクト定義にカスタムデータの格納と取得を有効にします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1342">Enables storing and retrieving custom data in the project definition when a project is loaded.</span></span>                                                |
+| <span data-ttu-id="0f5c1-1343">public void saveProject(str buffer)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1343">public void saveProject(str buffer)</span></span>                                                          | <span data-ttu-id="0f5c1-1344">アプリケーション オブジェクト データベースでは、プロジェクトと共にカスタム データの保存を有効にします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1344">Enables saving custom data together with the project in the application object database.</span></span>                                                      |
+| <span data-ttu-id="0f5c1-1345">public void unlockUpdate()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1345">public void unlockUpdate()</span></span>                                                                   | <span data-ttu-id="0f5c1-1346">lockUpdate で一連のアクションを開始した後にビジュアル更新プログラムを有効にします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1346">Enables a visual update after a series of actions started with lockUpdate.</span></span>                                                                    |
+| <span data-ttu-id="0f5c1-1347">public void handleContextMenuItem(int id)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1347">public void handleContextMenuItem(int id)</span></span>                                                    | <span data-ttu-id="0f5c1-1348">ユーザーが対応するメソッド addContextMenuItems で定義されているショートカット メニューの項目を選択するのを処理します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1348">Handles a user selecting an item on the shortcut menu that has been defined by the corresponding method addContextMenuItems.</span></span>                  |
+| <span data-ttu-id="0f5c1-1349">public void addNode(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1349">public void addNode(TreeNode node)</span></span>                                                           | <span data-ttu-id="0f5c1-1350">プロジェクトに既存のノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1350">Adds an existing node to the project.</span></span>                                                                                                         |
+| <span data-ttu-id="0f5c1-1351">public void addUtilNode(UtilElementType type, str name)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1351">public void addUtilNode(UtilElementType type, str name)</span></span>                                      | <span data-ttu-id="0f5c1-1352">プロジェクトにノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1352">Adds a node to the project.</span></span>                                                                                                                   |
+| <span data-ttu-id="0f5c1-1353">public void clear()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1353">public void clear()</span></span>                                                                          | <span data-ttu-id="0f5c1-1354">プロジェクトの内容を削除します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1354">Removes the contents of a project.</span></span>                                                                                                            |
+| <span data-ttu-id="0f5c1-1355">public void setProjectClass(int classid)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1355">public void setProjectClass(int classid)</span></span>                                                     | <span data-ttu-id="0f5c1-1356">クラスをプロジェクトに割り当てますが、クラスに定義されているタイプをプロジェクトに与えます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1356">Assigns a class to the project, which gives the project the type that the class defines.</span></span>                                                      |
+| <span data-ttu-id="0f5c1-1357">public void removeSpecialOverlayIcons(str path)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1357">public void removeSpecialOverlayIcons(str path)</span></span>                                              |                                                                                                                                               |
+| <span data-ttu-id="0f5c1-1358">public void new()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1358">public void new()</span></span>                                                                            | <span data-ttu-id="0f5c1-1359">ProjectNode クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1359">Initializes a new instance of the ProjectNode class.</span></span>                                                                                          |
 
-### <a name="method-addcontextmenuitems"></a><span data-ttu-id="18cf4-1360">メソッド addContextMenuItems</span><span class="sxs-lookup"><span data-stu-id="18cf4-1360">Method addContextMenuItems</span></span>
+### <a name="method-addcontextmenuitems"></a><span data-ttu-id="0f5c1-1360">メソッド addContextMenuItems</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1360">Method addContextMenuItems</span></span>
 
-<span data-ttu-id="18cf4-1361">プロジェクト ノードのショートカット メニューに品目のリストを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1361">Adds a list of items to the shortcut menu of the project node.</span></span>
+<span data-ttu-id="0f5c1-1361">プロジェクト ノードのショートカット メニューに品目のリストを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1361">Adds a list of items to the shortcut menu of the project node.</span></span>
 
     public str addContextMenuItems()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1362">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1362">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1362">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1362">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1363">追加するメニュー項目のコンマ区切りリスト。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1363">A comma-separated list of the menu items to be added.</span></span>
+<span data-ttu-id="0f5c1-1363">追加するメニュー項目のコンマ区切りリスト。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1363">A comma-separated list of the menu items to be added.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1364">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1364">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1364">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1364">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1365">プロジェクト ノードのショートカット メニューに品目のリストを追加するには、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1365">Override this method to add a list of items to the shortcut menu of the project node.</span></span> <span data-ttu-id="18cf4-1366">追加されたメニュー項目の 1 つがユーザーによって選択されると、handleContextMenuItem メソッドが呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1366">When one of the added menu items is selected by a user, the handleContextMenuItem method is called.</span></span> <span data-ttu-id="18cf4-1367">適切なアクションを実行するには、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1367">Override this method to perform the appropriate action.</span></span>
+<span data-ttu-id="0f5c1-1365">プロジェクト ノードのショートカット メニューに品目のリストを追加するには、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1365">Override this method to add a list of items to the shortcut menu of the project node.</span></span> <span data-ttu-id="0f5c1-1366">追加されたメニュー項目の 1 つがユーザーによって選択されると、handleContextMenuItem メソッドが呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1366">When one of the added menu items is selected by a user, the handleContextMenuItem method is called.</span></span> <span data-ttu-id="0f5c1-1367">適切なアクションを実行するには、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1367">Override this method to perform the appropriate action.</span></span>
 
-### <a name="method-changedby"></a><span data-ttu-id="18cf4-1368">メソッド changedBy</span><span class="sxs-lookup"><span data-stu-id="18cf4-1368">Method changedBy</span></span>
+### <a name="method-changedby"></a><span data-ttu-id="0f5c1-1368">メソッド changedBy</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1368">Method changedBy</span></span>
 
-<span data-ttu-id="18cf4-1369">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1369">Gets or sets the name of the user who last changed the application object.</span></span>
+<span data-ttu-id="0f5c1-1369">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1369">Gets or sets the name of the user who last changed the application object.</span></span>
 
     public str changedBy([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1370">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1370">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1370">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1370">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1371">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1371">value</span></span>  
+<span data-ttu-id="0f5c1-1371">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1371">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1372">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1372">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1372">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1372">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1373">ユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1373">The name of the user.</span></span>
+<span data-ttu-id="0f5c1-1373">ユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1373">The name of the user.</span></span>
 
-### <a name="method-changeddate"></a><span data-ttu-id="18cf4-1374">メソッド changedDate</span><span class="sxs-lookup"><span data-stu-id="18cf4-1374">Method changedDate</span></span>
+### <a name="method-changeddate"></a><span data-ttu-id="0f5c1-1374">メソッド changedDate</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1374">Method changedDate</span></span>
 
-<span data-ttu-id="18cf4-1375">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1375">Gets or sets the date an application object was last changed.</span></span>
+<span data-ttu-id="0f5c1-1375">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1375">Gets or sets the date an application object was last changed.</span></span>
 
     public Date changedDate([Date value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1376">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1376">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1376">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1376">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1377">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1377">value</span></span>  
+<span data-ttu-id="0f5c1-1377">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1377">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1378">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1378">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1378">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1378">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1379">アプリケーション オブジェクトが最後に変更された日付。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1379">The date an application object was last changed.</span></span>
+<span data-ttu-id="0f5c1-1379">アプリケーション オブジェクトが最後に変更された日付。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1379">The date an application object was last changed.</span></span>
 
-### <a name="method-changedtime"></a><span data-ttu-id="18cf4-1380">メソッド changedTime</span><span class="sxs-lookup"><span data-stu-id="18cf4-1380">Method changedTime</span></span>
+### <a name="method-changedtime"></a><span data-ttu-id="0f5c1-1380">メソッド changedTime</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1380">Method changedTime</span></span>
 
-<span data-ttu-id="18cf4-1381">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1381">Gets or sets the time an application object was last changed.</span></span>
+<span data-ttu-id="0f5c1-1381">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1381">Gets or sets the time an application object was last changed.</span></span>
 
     public str changedTime([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1382">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1382">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1382">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1382">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1383">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1383">value</span></span>  
+<span data-ttu-id="0f5c1-1383">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1383">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1384">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1384">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1384">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1384">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1385">アプリケーション オブジェクトが最後に変更された時間。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1385">The time an application object was last changed.</span></span>
+<span data-ttu-id="0f5c1-1385">アプリケーション オブジェクトが最後に変更された時間。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1385">The time an application object was last changed.</span></span>
 
-### <a name="method-createdby"></a><span data-ttu-id="18cf4-1386">メソッド createdBy</span><span class="sxs-lookup"><span data-stu-id="18cf4-1386">Method createdBy</span></span>
+### <a name="method-createdby"></a><span data-ttu-id="0f5c1-1386">メソッド createdBy</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1386">Method createdBy</span></span>
 
-<span data-ttu-id="18cf4-1387">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1387">Gets or sets the name of the user who created the application object.</span></span>
+<span data-ttu-id="0f5c1-1387">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1387">Gets or sets the name of the user who created the application object.</span></span>
 
     public str createdBy([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1388">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1388">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1388">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1388">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1389">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1389">value</span></span>  
+<span data-ttu-id="0f5c1-1389">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1389">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1390">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1390">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1390">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1390">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1391">ユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1391">The name of the user.</span></span>
+<span data-ttu-id="0f5c1-1391">ユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1391">The name of the user.</span></span>
 
-### <a name="method-creationdate"></a><span data-ttu-id="18cf4-1392">メソッド creationDate</span><span class="sxs-lookup"><span data-stu-id="18cf4-1392">Method creationDate</span></span>
+### <a name="method-creationdate"></a><span data-ttu-id="0f5c1-1392">メソッド creationDate</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1392">Method creationDate</span></span>
 
-<span data-ttu-id="18cf4-1393">アプリケーション オブジェクトが作成された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1393">Gets or sets the date an application object was created.</span></span>
+<span data-ttu-id="0f5c1-1393">アプリケーション オブジェクトが作成された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1393">Gets or sets the date an application object was created.</span></span>
 
     public Date creationDate([Date value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1394">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1394">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1394">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1394">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1395">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1395">value</span></span>  
+<span data-ttu-id="0f5c1-1395">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1395">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1396">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1396">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1396">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1396">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1397">アプリケーション オブジェクトが作成された日付。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1397">The date an application object was created.</span></span>
+<span data-ttu-id="0f5c1-1397">アプリケーション オブジェクトが作成された日付。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1397">The date an application object was created.</span></span>
 
-### <a name="method-creationtime"></a><span data-ttu-id="18cf4-1398">メソッド creationTime</span><span class="sxs-lookup"><span data-stu-id="18cf4-1398">Method creationTime</span></span>
+### <a name="method-creationtime"></a><span data-ttu-id="0f5c1-1398">メソッド creationTime</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1398">Method creationTime</span></span>
 
     public str creationTime([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1399">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1399">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1399">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1399">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1400">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1400">value</span></span>  
+<span data-ttu-id="0f5c1-1400">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1400">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1401">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1401">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1401">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1401">Return Value</span></span>
 
-### <a name="method-export"></a><span data-ttu-id="18cf4-1402">メソッド export</span><span class="sxs-lookup"><span data-stu-id="18cf4-1402">Method export</span></span>
+### <a name="method-export"></a><span data-ttu-id="0f5c1-1402">メソッド export</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1402">Method export</span></span>
 
     public str export(str buffer)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1403">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1403">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1403">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1403">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1404">バッファ</span><span class="sxs-lookup"><span data-stu-id="18cf4-1404">buffer</span></span>  
+<span data-ttu-id="0f5c1-1404">バッファ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1404">buffer</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1405">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1405">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1405">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1405">Return Value</span></span>
 
-### <a name="method-findgroupmember"></a><span data-ttu-id="18cf4-1406">メソッド findGroupMember</span><span class="sxs-lookup"><span data-stu-id="18cf4-1406">Method findGroupMember</span></span>
+### <a name="method-findgroupmember"></a><span data-ttu-id="0f5c1-1406">メソッド findGroupMember</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1406">Method findGroupMember</span></span>
 
-<span data-ttu-id="18cf4-1407">特定の要素のプロジェクトまたはグループを検索します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1407">Searches the project or group for a specific element.</span></span>
+<span data-ttu-id="0f5c1-1407">特定の要素のプロジェクトまたはグループを検索します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1407">Searches the project or group for a specific element.</span></span>
 
     public TreeNode findGroupMember(str name, UtilElementType type, [boolean searchSubgroups])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1408">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1408">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1408">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1408">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1409">名前</span><span class="sxs-lookup"><span data-stu-id="18cf4-1409">name</span></span>  
-<span data-ttu-id="18cf4-1410">検索を再帰的に行うかどうかを決定するブール値フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1410">A Boolean flag to determine whether the search should be recursive; optional.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="18cf4-1411">タイプ</span><span class="sxs-lookup"><span data-stu-id="18cf4-1411">type</span></span>  
-<span data-ttu-id="18cf4-1412">検索を再帰的に行うかどうかを決定するブール値フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1412">A Boolean flag to determine whether the search should be recursive; optional.</span></span>
+<span data-ttu-id="0f5c1-1409">名前</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1409">name</span></span>  
+<span data-ttu-id="0f5c1-1410">検索を再帰的に行うかどうかを決定するブール値フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1410">A Boolean flag to determine whether the search should be recursive; optional.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1413">searchSubgroups</span><span class="sxs-lookup"><span data-stu-id="18cf4-1413">searchSubgroups</span></span>  
-<span data-ttu-id="18cf4-1414">検索を再帰的に行うかどうかを決定するブール値フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1414">A Boolean flag to determine whether the search should be recursive; optional.</span></span>
+<span data-ttu-id="0f5c1-1411">タイプ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1411">type</span></span>  
+<span data-ttu-id="0f5c1-1412">検索を再帰的に行うかどうかを決定するブール値フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1412">A Boolean flag to determine whether the search should be recursive; optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1415">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1415">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="18cf4-1416">オブジェクトが見つからない場合は、条件を満たす最初のオブジェクト、または nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1416">The first object that fits the criteria, or nullNothingnullptrunita null reference (Nothing in Visual Basic) if no object is found.</span></span>
+<span data-ttu-id="0f5c1-1413">searchSubgroups</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1413">searchSubgroups</span></span>  
+<span data-ttu-id="0f5c1-1414">検索を再帰的に行うかどうかを決定するブール値フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1414">A Boolean flag to determine whether the search should be recursive; optional.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1417">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1417">Remarks</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1415">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1415">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1418">このメソッドは ProjectGroupNode にもあります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1418">This method is also found on ProjectGroupNode.</span></span>
+<span data-ttu-id="0f5c1-1416">オブジェクトが見つからない場合は、条件を満たす最初のオブジェクト、または nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1416">The first object that fits the criteria, or nullNothingnullptrunita null reference (Nothing in Visual Basic) if no object is found.</span></span>
 
-### <a name="method-getprojectclassname"></a><span data-ttu-id="18cf4-1419">メソッド getProjectClassName</span><span class="sxs-lookup"><span data-stu-id="18cf4-1419">Method getProjectClassName</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1417">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1417">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1420">プロジェクトの classid に対応するクラスの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1420">Returns the name of the class corresponding to the classid of the project.</span></span>
+<span data-ttu-id="0f5c1-1418">このメソッドは ProjectGroupNode にもあります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1418">This method is also found on ProjectGroupNode.</span></span>
+
+### <a name="method-getprojectclassname"></a><span data-ttu-id="0f5c1-1419">メソッド getProjectClassName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1419">Method getProjectClassName</span></span>
+
+<span data-ttu-id="0f5c1-1420">プロジェクトの classid に対応するクラスの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1420">Returns the name of the class corresponding to the classid of the project.</span></span>
 
     public str getProjectClassName()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1421">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1421">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1421">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1421">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1422">プロジェクトの classid に対応するクラスの名前。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1422">The name of the class corresponding to the classid of the project.</span></span>
+<span data-ttu-id="0f5c1-1422">プロジェクトの classid に対応するクラスの名前。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1422">The name of the class corresponding to the classid of the project.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1423">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1423">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1423">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1423">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1424">setClassId メソッドは、クラス ID をプロジェクトに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1424">The setClassId method assigns a classid to the project.</span></span>
+<span data-ttu-id="0f5c1-1424">setClassId メソッドは、クラス ID をプロジェクトに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1424">The setClassId method assigns a classid to the project.</span></span>
 
-### <a name="method-getrunnode"></a><span data-ttu-id="18cf4-1425">メソッド getRunNode</span><span class="sxs-lookup"><span data-stu-id="18cf4-1425">Method getRunNode</span></span>
+### <a name="method-getrunnode"></a><span data-ttu-id="0f5c1-1425">メソッド getRunNode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1425">Method getRunNode</span></span>
 
-<span data-ttu-id="18cf4-1426">プロジェクト ウィンドウを開いて、プロジェクトの概要ウィンドウで見つかった特定の projectNode のためにそのウィンドウのルート projectNode を返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1426">Opens the project window and returns the root projectNode of that window, for a particular projectNode found in the project overview window.</span></span>
+<span data-ttu-id="0f5c1-1426">プロジェクト ウィンドウを開いて、プロジェクトの概要ウィンドウで見つかった特定の projectNode のためにそのウィンドウのルート projectNode を返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1426">Opens the project window and returns the root projectNode of that window, for a particular projectNode found in the project overview window.</span></span>
 
     public ProjectNode getRunNode()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1427">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1427">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1427">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1427">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1428">実行中の projectNode。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1428">The running projectNode.</span></span>
+<span data-ttu-id="0f5c1-1428">実行中の projectNode。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1428">The running projectNode.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1429">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1429">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1429">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1429">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1430">[プロジェクト] ウィンドウを開くことがなく実行中の projectNode を取得するには、ProjectNode.loadForInspection メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1430">To obtain a running projectNode without opening the project window, use the ProjectNode.loadForInspection Method.</span></span>
+<span data-ttu-id="0f5c1-1430">[プロジェクト] ウィンドウを開くことがなく実行中の projectNode を取得するには、ProjectNode.loadForInspection メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1430">To obtain a running projectNode without opening the project window, use the ProjectNode.loadForInspection Method.</span></span>
 
-### <a name="method-import"></a><span data-ttu-id="18cf4-1431">メソッド import</span><span class="sxs-lookup"><span data-stu-id="18cf4-1431">Method import</span></span>
+### <a name="method-import"></a><span data-ttu-id="0f5c1-1431">メソッド import</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1431">Method import</span></span>
 
     public str import(str buffer)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1432">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1432">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1432">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1432">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1433">バッファ</span><span class="sxs-lookup"><span data-stu-id="18cf4-1433">buffer</span></span>  
+<span data-ttu-id="0f5c1-1433">バッファ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1433">buffer</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1434">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1434">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1434">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1434">Return Value</span></span>
 
-### <a name="method-isrunnode"></a><span data-ttu-id="18cf4-1435">メソッド isRunNode</span><span class="sxs-lookup"><span data-stu-id="18cf4-1435">Method isRunNode</span></span>
+### <a name="method-isrunnode"></a><span data-ttu-id="0f5c1-1435">メソッド isRunNode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1435">Method isRunNode</span></span>
 
     public boolean isRunNode()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1436">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1436">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1436">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1436">Return Value</span></span>
 
-### <a name="method-loadforinspection"></a><span data-ttu-id="18cf4-1437">メソッド loadForInspection</span><span class="sxs-lookup"><span data-stu-id="18cf4-1437">Method loadForInspection</span></span>
+### <a name="method-loadforinspection"></a><span data-ttu-id="0f5c1-1437">メソッド loadForInspection</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1437">Method loadForInspection</span></span>
 
-<span data-ttu-id="18cf4-1438">プロジェクトの概要ウィンドウにある projectNode の読み込まれたバージョンを返します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1438">Returns a loaded version of a projectNode found in the project overview window.</span></span>
+<span data-ttu-id="0f5c1-1438">プロジェクトの概要ウィンドウにある projectNode の読み込まれたバージョンを返します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1438">Returns a loaded version of a projectNode found in the project overview window.</span></span>
 
     public ProjectNode loadForInspection()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1439">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1439">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1439">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1439">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1440">読み込まれた projectNode。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1440">The loaded projectNode.</span></span>
+<span data-ttu-id="0f5c1-1440">読み込まれた projectNode。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1440">The loaded projectNode.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1441">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1441">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1441">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1441">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1442">[プロジェクト] ウィンドウを開いたときに projectNode を読み込むには、getRunNode メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1442">To get a loaded projectNode while also opening the project window, use the method getRunNode.</span></span>
+<span data-ttu-id="0f5c1-1442">[プロジェクト] ウィンドウを開いたときに projectNode を読み込むには、getRunNode メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1442">To get a loaded projectNode while also opening the project window, use the method getRunNode.</span></span>
 
-### <a name="method-name"></a><span data-ttu-id="18cf4-1443">メソッド名</span><span class="sxs-lookup"><span data-stu-id="18cf4-1443">Method name</span></span>
+### <a name="method-name"></a><span data-ttu-id="0f5c1-1443">メソッド名</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1443">Method name</span></span>
 
-<span data-ttu-id="18cf4-1444">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1444">Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
+<span data-ttu-id="0f5c1-1444">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1444">Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
 
     public str name([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1445">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1445">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1445">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1445">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1446">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1446">value</span></span>  
+<span data-ttu-id="0f5c1-1446">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1446">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1447">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1447">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1447">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1447">Return Value</span></span>
 
-<span data-ttu-id="18cf4-1448">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1448">The name that is used in the code to identify an application object.</span></span>
+<span data-ttu-id="0f5c1-1448">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1448">The name that is used in the code to identify an application object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1449">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1449">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1449">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1449">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1450">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1450">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
+<span data-ttu-id="0f5c1-1450">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1450">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
 
--   <span data-ttu-id="18cf4-1451">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1451">Begins with a letter.</span></span>
--   <span data-ttu-id="18cf4-1452">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1452">Doesn't exceed 250 characters.</span></span>
--   <span data-ttu-id="18cf4-1453">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1453">Can include numbers and underscore characters.</span></span>
--   <span data-ttu-id="18cf4-1454">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1454">Cannot include punctuation or spaces.</span></span>
--   <span data-ttu-id="18cf4-1455">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1455">Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</span></span>
+-   <span data-ttu-id="0f5c1-1451">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1451">Begins with a letter.</span></span>
+-   <span data-ttu-id="0f5c1-1452">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1452">Doesn't exceed 250 characters.</span></span>
+-   <span data-ttu-id="0f5c1-1453">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1453">Can include numbers and underscore characters.</span></span>
+-   <span data-ttu-id="0f5c1-1454">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1454">Cannot include punctuation or spaces.</span></span>
+-   <span data-ttu-id="0f5c1-1455">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1455">Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</span></span>
 
-### <a name="method-origin"></a><span data-ttu-id="18cf4-1456">メソッド origin</span><span class="sxs-lookup"><span data-stu-id="18cf4-1456">Method origin</span></span>
+### <a name="method-origin"></a><span data-ttu-id="0f5c1-1456">メソッド origin</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1456">Method origin</span></span>
 
     public Guid origin([Guid value])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1457">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1457">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1457">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1457">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1458">値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1458">value</span></span>  
+<span data-ttu-id="0f5c1-1458">値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1458">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1459">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1459">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1459">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1459">Return Value</span></span>
 
-### <a name="method-removefromproject"></a><span data-ttu-id="18cf4-1460">メソッド removeFromProject</span><span class="sxs-lookup"><span data-stu-id="18cf4-1460">Method removeFromProject</span></span>
+### <a name="method-removefromproject"></a><span data-ttu-id="0f5c1-1460">メソッド removeFromProject</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1460">Method removeFromProject</span></span>
 
     public boolean removeFromProject(TreeNode node)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1461">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1461">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1461">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1461">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1462">node</span><span class="sxs-lookup"><span data-stu-id="18cf4-1462">node</span></span>  
+<span data-ttu-id="0f5c1-1462">node</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1462">node</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1463">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1463">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1463">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1463">Return Value</span></span>
 
-### <a name="method-tooltiptext"></a><span data-ttu-id="18cf4-1464">メソッド tooltipText</span><span class="sxs-lookup"><span data-stu-id="18cf4-1464">Method tooltipText</span></span>
+### <a name="method-tooltiptext"></a><span data-ttu-id="0f5c1-1464">メソッド tooltipText</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1464">Method tooltipText</span></span>
 
     public str tooltipText(TreeNode node)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1465">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1465">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1465">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1465">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1466">node</span><span class="sxs-lookup"><span data-stu-id="18cf4-1466">node</span></span>  
+<span data-ttu-id="0f5c1-1466">node</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1466">node</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1467">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1467">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1467">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1467">Return Value</span></span>
 
-### <a name="method-projecttype"></a><span data-ttu-id="18cf4-1468">メソッド projectType</span><span class="sxs-lookup"><span data-stu-id="18cf4-1468">Method projectType</span></span>
+### <a name="method-projecttype"></a><span data-ttu-id="0f5c1-1468">メソッド projectType</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1468">Method projectType</span></span>
 
     public static str projectType()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1469">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1469">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1469">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1469">Return Value</span></span>
 
-### <a name="method-lockupdate"></a><span data-ttu-id="18cf4-1470">メソッド lockUpdate</span><span class="sxs-lookup"><span data-stu-id="18cf4-1470">Method lockUpdate</span></span>
+### <a name="method-lockupdate"></a><span data-ttu-id="0f5c1-1470">メソッド lockUpdate</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1470">Method lockUpdate</span></span>
 
-<span data-ttu-id="18cf4-1471">一連のアクションを実行中に、視覚的な更新を禁止します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1471">Prevents visual updates while a series of actions is being performed.</span></span>
+<span data-ttu-id="0f5c1-1471">一連のアクションを実行中に、視覚的な更新を禁止します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1471">Prevents visual updates while a series of actions is being performed.</span></span>
 
     public void lockUpdate()
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1472">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1472">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1472">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1472">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1473">一連のアクションの後にビジュアル アップデートを実行するには、unlockUpdate を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1473">To perform visual updates after the series of actions, call unlockUpdate.</span></span>
+<span data-ttu-id="0f5c1-1473">一連のアクションの後にビジュアル アップデートを実行するには、unlockUpdate を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1473">To perform visual updates after the series of actions, call unlockUpdate.</span></span>
 
-### <a name="method-addspecialoverlayicon"></a><span data-ttu-id="18cf4-1474">メソッド addSpecialOverlayIcon</span><span class="sxs-lookup"><span data-stu-id="18cf4-1474">Method addSpecialOverlayIcon</span></span>
+### <a name="method-addspecialoverlayicon"></a><span data-ttu-id="0f5c1-1474">メソッド addSpecialOverlayIcon</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1474">Method addSpecialOverlayIcon</span></span>
 
     public void addSpecialOverlayIcon(str path, int resId, [int xOffset], [int yOffset])
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1475">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1475">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1475">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1475">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1476">path</span><span class="sxs-lookup"><span data-stu-id="18cf4-1476">path</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="18cf4-1477">resId</span><span class="sxs-lookup"><span data-stu-id="18cf4-1477">resId</span></span>  
+<span data-ttu-id="0f5c1-1476">path</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1476">path</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1478">xOffset</span><span class="sxs-lookup"><span data-stu-id="18cf4-1478">xOffset</span></span>  
+<span data-ttu-id="0f5c1-1477">resId</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1477">resId</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1479">yOffset</span><span class="sxs-lookup"><span data-stu-id="18cf4-1479">yOffset</span></span>  
+<span data-ttu-id="0f5c1-1478">xOffset</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1478">xOffset</span></span>  
 
-### <a name="method-created"></a><span data-ttu-id="18cf4-1480">メソッド created</span><span class="sxs-lookup"><span data-stu-id="18cf4-1480">Method created</span></span>
+<!-- -->
 
-<span data-ttu-id="18cf4-1481">プロジェクトの新しいインスタンスが作成された際、プロジェクトでカスタム アクションを実行を有効にします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1481">Enables the ability to perform custom actions on a project when a new instance of the project is created.</span></span>
+<span data-ttu-id="0f5c1-1479">yOffset</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1479">yOffset</span></span>  
+
+### <a name="method-created"></a><span data-ttu-id="0f5c1-1480">メソッド created</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1480">Method created</span></span>
+
+<span data-ttu-id="0f5c1-1481">プロジェクトの新しいインスタンスが作成された際、プロジェクトでカスタム アクションを実行を有効にします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1481">Enables the ability to perform custom actions on a project when a new instance of the project is created.</span></span>
 
     public void created(str name)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1482">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1482">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1482">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1482">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1483">名前</span><span class="sxs-lookup"><span data-stu-id="18cf4-1483">name</span></span>  
-<span data-ttu-id="18cf4-1484">プロジェクト インスタンスの名前。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1484">The name of the project instance.</span></span>
+<span data-ttu-id="0f5c1-1483">名前</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1483">name</span></span>  
+<span data-ttu-id="0f5c1-1484">プロジェクト インスタンスの名前。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1484">The name of the project instance.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1485">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1485">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1485">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1485">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1486">このメソッドは、プロジェクトの新しいインスタンスが作成されるときに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1486">This method is called when a new instance of the project is created.</span></span> <span data-ttu-id="18cf4-1487">プロジェクトでカスタム アクションを実行するには、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1487">Override this method to perform custom actions on your project.</span></span>
+<span data-ttu-id="0f5c1-1486">このメソッドは、プロジェクトの新しいインスタンスが作成されるときに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1486">This method is called when a new instance of the project is created.</span></span> <span data-ttu-id="0f5c1-1487">プロジェクトでカスタム アクションを実行するには、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1487">Override this method to perform custom actions on your project.</span></span>
 
-### <a name="method-setspecialicon"></a><span data-ttu-id="18cf4-1488">メソッド setSpecialIcon</span><span class="sxs-lookup"><span data-stu-id="18cf4-1488">Method setSpecialIcon</span></span>
+### <a name="method-setspecialicon"></a><span data-ttu-id="0f5c1-1488">メソッド setSpecialIcon</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1488">Method setSpecialIcon</span></span>
 
-<span data-ttu-id="18cf4-1489">プロジェクト内の特定のノードに別のアイコンを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1489">Assigns a different icon to a specific node in the project.</span></span>
+<span data-ttu-id="0f5c1-1489">プロジェクト内の特定のノードに別のアイコンを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1489">Assigns a different icon to a specific node in the project.</span></span>
 
     public void setSpecialIcon(int type, str name, int resId)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1490">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1490">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1490">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1490">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1491">タイプ</span><span class="sxs-lookup"><span data-stu-id="18cf4-1491">type</span></span>  
-<span data-ttu-id="18cf4-1492">指定されたノードに使用する必要があるアイコンの ID。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1492">The ID of the icon that must be used for the specified node.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="18cf4-1493">名前</span><span class="sxs-lookup"><span data-stu-id="18cf4-1493">name</span></span>  
-<span data-ttu-id="18cf4-1494">指定されたノードに使用する必要があるアイコンの ID。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1494">The ID of the icon that must be used for the specified node.</span></span>
+<span data-ttu-id="0f5c1-1491">タイプ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1491">type</span></span>  
+<span data-ttu-id="0f5c1-1492">指定されたノードに使用する必要があるアイコンの ID。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1492">The ID of the icon that must be used for the specified node.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1495">resId</span><span class="sxs-lookup"><span data-stu-id="18cf4-1495">resId</span></span>  
-<span data-ttu-id="18cf4-1496">指定されたノードに使用する必要があるアイコンの ID。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1496">The ID of the icon that must be used for the specified node.</span></span>
+<span data-ttu-id="0f5c1-1493">名前</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1493">name</span></span>  
+<span data-ttu-id="0f5c1-1494">指定されたノードに使用する必要があるアイコンの ID。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1494">The ID of the icon that must be used for the specified node.</span></span>
 
-### <a name="method-loadproject"></a><span data-ttu-id="18cf4-1497">メソッド loadProject</span><span class="sxs-lookup"><span data-stu-id="18cf4-1497">Method loadProject</span></span>
+<!-- -->
 
-<span data-ttu-id="18cf4-1498">プロジェクトが読み込まれた際、プロジェクト定義にカスタムデータの格納と取得を有効にします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1498">Enables storing and retrieving custom data in the project definition when a project is loaded.</span></span>
+<span data-ttu-id="0f5c1-1495">resId</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1495">resId</span></span>  
+<span data-ttu-id="0f5c1-1496">指定されたノードに使用する必要があるアイコンの ID。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1496">The ID of the icon that must be used for the specified node.</span></span>
+
+### <a name="method-loadproject"></a><span data-ttu-id="0f5c1-1497">メソッド loadProject</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1497">Method loadProject</span></span>
+
+<span data-ttu-id="0f5c1-1498">プロジェクトが読み込まれた際、プロジェクト定義にカスタムデータの格納と取得を有効にします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1498">Enables storing and retrieving custom data in the project definition when a project is loaded.</span></span>
 
     public void loadProject(str buffer)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1499">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1499">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1499">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1499">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1500">バッファ</span><span class="sxs-lookup"><span data-stu-id="18cf4-1500">buffer</span></span>  
-<span data-ttu-id="18cf4-1501">saveProject によってプロジェクトに保存されたカスタム データを含む文字列。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1501">A string that contains the custom data that was saved in the project by saveProject.</span></span>
+<span data-ttu-id="0f5c1-1500">バッファ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1500">buffer</span></span>  
+<span data-ttu-id="0f5c1-1501">saveProject によってプロジェクトに保存されたカスタム データを含む文字列。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1501">A string that contains the custom data that was saved in the project by saveProject.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1502">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1502">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1502">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1502">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1503">このメソッドは、プロジェクトが読み込まれたときに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1503">This method is called when a project is loaded.</span></span> <span data-ttu-id="18cf4-1504">saveProject および loadProject を上書きすることにより、ユーザーはカスタム データをプロジェクト定義に保存して取得できます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1504">By overriding saveProject and loadProject, a user can store and retrieve custom data in the project definition.</span></span> <span data-ttu-id="18cf4-1505">読み込みを続行するには、プロジェクトの super() を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1505">You must call super() for the project to continue loading.</span></span>
+<span data-ttu-id="0f5c1-1503">このメソッドは、プロジェクトが読み込まれたときに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1503">This method is called when a project is loaded.</span></span> <span data-ttu-id="0f5c1-1504">saveProject および loadProject を上書きすることにより、ユーザーはカスタム データをプロジェクト定義に保存して取得できます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1504">By overriding saveProject and loadProject, a user can store and retrieve custom data in the project definition.</span></span> <span data-ttu-id="0f5c1-1505">読み込みを続行するには、プロジェクトの super() を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1505">You must call super() for the project to continue loading.</span></span>
 
-### <a name="method-saveproject"></a><span data-ttu-id="18cf4-1506">メソッド saveProject</span><span class="sxs-lookup"><span data-stu-id="18cf4-1506">Method saveProject</span></span>
+### <a name="method-saveproject"></a><span data-ttu-id="0f5c1-1506">メソッド saveProject</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1506">Method saveProject</span></span>
 
-<span data-ttu-id="18cf4-1507">アプリケーション オブジェクト データベースでは、プロジェクトと共にカスタム データの保存を有効にします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1507">Enables saving custom data together with the project in the application object database.</span></span>
+<span data-ttu-id="0f5c1-1507">アプリケーション オブジェクト データベースでは、プロジェクトと共にカスタム データの保存を有効にします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1507">Enables saving custom data together with the project in the application object database.</span></span>
 
     public void saveProject(str buffer)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1508">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1508">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1508">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1508">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1509">バッファ</span><span class="sxs-lookup"><span data-stu-id="18cf4-1509">buffer</span></span>  
-<span data-ttu-id="18cf4-1510">データをパッキングするために使用する必要がある文字列バッファ。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1510">A string buffer that must be used for packing the data.</span></span> <span data-ttu-id="18cf4-1511">その後、バッファ はsuper() に渡されなければなりません。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1511">The buffer must then be passed on to super().</span></span>
+<span data-ttu-id="0f5c1-1509">バッファ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1509">buffer</span></span>  
+<span data-ttu-id="0f5c1-1510">データをパッキングするために使用する必要がある文字列バッファ。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1510">A string buffer that must be used for packing the data.</span></span> <span data-ttu-id="0f5c1-1511">その後、バッファ はsuper() に渡されなければなりません。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1511">The buffer must then be passed on to super().</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1512">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1512">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1512">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1512">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1513">このメソッドを上書きすることにより、アプリケーション オブジェクト データベースでは、プロジェクトと共にカスタム データを保存できます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1513">By overriding this method, you can save custom data together with the project in the application object database.</span></span> <span data-ttu-id="18cf4-1514">データは「&lt;APPDATA&gt; ... &lt;/APPDATA&gt;」の形式で XML 文字列として形成することをお勧めします。このデータは loadProject メソッドをオーバーライドして取得できます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1514">It is recommended that the data be formed as an XML string in the following form: "&lt;APPDATA&gt; ... &lt;/APPDATA&gt;" The data can be retrieved by overriding the loadProject method.</span></span>
+<span data-ttu-id="0f5c1-1513">このメソッドを上書きすることにより、アプリケーション オブジェクト データベースでは、プロジェクトと共にカスタム データを保存できます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1513">By overriding this method, you can save custom data together with the project in the application object database.</span></span> <span data-ttu-id="0f5c1-1514">データは「&lt;APPDATA&gt; ... &lt;/APPDATA&gt;」の形式で XML 文字列として形成することをお勧めします。このデータは loadProject メソッドをオーバーライドして取得できます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1514">It is recommended that the data be formed as an XML string in the following form: "&lt;APPDATA&gt; ... &lt;/APPDATA&gt;" The data can be retrieved by overriding the loadProject method.</span></span>
 
-### <a name="method-unlockupdate"></a><span data-ttu-id="18cf4-1515">メソッド unlockUpdate</span><span class="sxs-lookup"><span data-stu-id="18cf4-1515">Method unlockUpdate</span></span>
+### <a name="method-unlockupdate"></a><span data-ttu-id="0f5c1-1515">メソッド unlockUpdate</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1515">Method unlockUpdate</span></span>
 
-<span data-ttu-id="18cf4-1516">lockUpdate で一連のアクションを開始した後にビジュアル更新プログラムを有効にします。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1516">Enables a visual update after a series of actions started with lockUpdate.</span></span>
+<span data-ttu-id="0f5c1-1516">lockUpdate で一連のアクションを開始した後にビジュアル更新プログラムを有効にします。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1516">Enables a visual update after a series of actions started with lockUpdate.</span></span>
 
     public void unlockUpdate()
 
-### <a name="method-handlecontextmenuitem"></a><span data-ttu-id="18cf4-1517">メソッド handleContextMenuItem</span><span class="sxs-lookup"><span data-stu-id="18cf4-1517">Method handleContextMenuItem</span></span>
+### <a name="method-handlecontextmenuitem"></a><span data-ttu-id="0f5c1-1517">メソッド handleContextMenuItem</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1517">Method handleContextMenuItem</span></span>
 
-<span data-ttu-id="18cf4-1518">ユーザーが対応するメソッド addContextMenuItems で定義されているショートカット メニューの項目を選択するのを処理します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1518">Handles a user selecting an item on the shortcut menu that has been defined by the corresponding method addContextMenuItems.</span></span>
+<span data-ttu-id="0f5c1-1518">ユーザーが対応するメソッド addContextMenuItems で定義されているショートカット メニューの項目を選択するのを処理します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1518">Handles a user selecting an item on the shortcut menu that has been defined by the corresponding method addContextMenuItems.</span></span>
 
     public void handleContextMenuItem(int id)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1519">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1519">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1519">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1519">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1520">id</span><span class="sxs-lookup"><span data-stu-id="18cf4-1520">id</span></span>  
-<span data-ttu-id="18cf4-1521">メニュー項目の ID。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1521">The ID of the menu items.</span></span> <span data-ttu-id="18cf4-1522">これは、addContextMenuItems メソッドによって設定されたリスト内の 0 から始まる数値です。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1522">This is the zero-based number in the list set by the addContextMenuItems method.</span></span> <span data-ttu-id="18cf4-1523">accContextMenuItems が文字列である "item1,item2" を返し、ユーザーがショートカット メニューの品目である "item2" を選択した場合、この方法では値 1 を使用します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1523">If accContextMenuItems returns the string "item1,item2" and the user selects the item "item2" in the shortcut menu, this method uses the value 1.</span></span>
+<span data-ttu-id="0f5c1-1520">id</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1520">id</span></span>  
+<span data-ttu-id="0f5c1-1521">メニュー項目の ID。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1521">The ID of the menu items.</span></span> <span data-ttu-id="0f5c1-1522">これは、addContextMenuItems メソッドによって設定されたリスト内の 0 から始まる数値です。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1522">This is the zero-based number in the list set by the addContextMenuItems method.</span></span> <span data-ttu-id="0f5c1-1523">accContextMenuItems が文字列である "item1,item2" を返し、ユーザーがショートカット メニューの品目である "item2" を選択した場合、この方法では値 1 を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1523">If accContextMenuItems returns the string "item1,item2" and the user selects the item "item2" in the shortcut menu, this method uses the value 1.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1524">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1524">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1524">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1524">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1525">このメソッドは、ユーザーが対応するメソッド addContextMenuItems で定義されているショートカット メニューの項目を選択するときに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1525">This method is called when a user selects an item on the shortcut menu that has been defined by the corresponding method addContextMenuItems.</span></span>
+<span data-ttu-id="0f5c1-1525">このメソッドは、ユーザーが対応するメソッド addContextMenuItems で定義されているショートカット メニューの項目を選択するときに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1525">This method is called when a user selects an item on the shortcut menu that has been defined by the corresponding method addContextMenuItems.</span></span>
 
-### <a name="method-addnode"></a><span data-ttu-id="18cf4-1526">メソッド addNode</span><span class="sxs-lookup"><span data-stu-id="18cf4-1526">Method addNode</span></span>
+### <a name="method-addnode"></a><span data-ttu-id="0f5c1-1526">メソッド addNode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1526">Method addNode</span></span>
 
-<span data-ttu-id="18cf4-1527">プロジェクトに既存のノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1527">Adds an existing node to the project.</span></span>
+<span data-ttu-id="0f5c1-1527">プロジェクトに既存のノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1527">Adds an existing node to the project.</span></span>
 
     public void addNode(TreeNode node)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1528">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1528">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1528">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1528">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1529">node</span><span class="sxs-lookup"><span data-stu-id="18cf4-1529">node</span></span>  
-<span data-ttu-id="18cf4-1530">追加するノード。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1530">The node to add.</span></span>
+<span data-ttu-id="0f5c1-1529">node</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1529">node</span></span>  
+<span data-ttu-id="0f5c1-1530">追加するノード。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1530">The node to add.</span></span>
 
-### <a name="method-addutilnode"></a><span data-ttu-id="18cf4-1531">メソッド addUtilNode</span><span class="sxs-lookup"><span data-stu-id="18cf4-1531">Method addUtilNode</span></span>
+### <a name="method-addutilnode"></a><span data-ttu-id="0f5c1-1531">メソッド addUtilNode</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1531">Method addUtilNode</span></span>
 
-<span data-ttu-id="18cf4-1532">プロジェクトにノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1532">Adds a node to the project.</span></span>
+<span data-ttu-id="0f5c1-1532">プロジェクトにノードを追加します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1532">Adds a node to the project.</span></span>
 
     public void addUtilNode(UtilElementType type, str name)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1533">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1533">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1533">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1533">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1534">タイプ</span><span class="sxs-lookup"><span data-stu-id="18cf4-1534">type</span></span>  
-<span data-ttu-id="18cf4-1535">ノードの名前。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1535">The name of the node.</span></span>
+<span data-ttu-id="0f5c1-1534">タイプ</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1534">type</span></span>  
+<span data-ttu-id="0f5c1-1535">ノードの名前。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1535">The name of the node.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="18cf4-1536">名前</span><span class="sxs-lookup"><span data-stu-id="18cf4-1536">name</span></span>  
-<span data-ttu-id="18cf4-1537">ノードの名前。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1537">The name of the node.</span></span>
+<span data-ttu-id="0f5c1-1536">名前</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1536">name</span></span>  
+<span data-ttu-id="0f5c1-1537">ノードの名前。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1537">The name of the node.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1538">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1538">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1538">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1538">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1539">この関数は ProjectGroupNode にもあります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1539">This function is also found on ProjectGroupNode.</span></span>
+<span data-ttu-id="0f5c1-1539">この関数は ProjectGroupNode にもあります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1539">This function is also found on ProjectGroupNode.</span></span>
 
-### <a name="method-clear"></a><span data-ttu-id="18cf4-1540">メソッド clear</span><span class="sxs-lookup"><span data-stu-id="18cf4-1540">Method clear</span></span>
+### <a name="method-clear"></a><span data-ttu-id="0f5c1-1540">メソッド clear</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1540">Method clear</span></span>
 
-<span data-ttu-id="18cf4-1541">プロジェクトの内容を削除します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1541">Removes the contents of a project.</span></span>
+<span data-ttu-id="0f5c1-1541">プロジェクトの内容を削除します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1541">Removes the contents of a project.</span></span>
 
     public void clear()
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1542">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1542">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1542">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1542">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1543">このメソッドは、アプリケーション オブジェクト ツリー (AOT) からプロジェクトの内容を削除しません。プロジェクト自体からのみです。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1543">This method does not remove the project contents from the Application Object Tree (AOT)—only from the project itself.</span></span> <span data-ttu-id="18cf4-1544">このメソッドはプロジェクトの内容を削除しますが、プロジェクト フォルダーは削除しません。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1544">This method removes the project contents but does not remove the project folder.</span></span> <span data-ttu-id="18cf4-1545">1 回のメソッド呼び出しでプロジェクトとその内容を削除するには、AOTdelete メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1545">To delete a project and its contents in one method call, use the AOTdelete method.</span></span> <span data-ttu-id="18cf4-1546">オブジェクトを AOT から削除するには、AOTdelete メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1546">To delete objects from the AOT, use the AOTdelete method.</span></span>
+<span data-ttu-id="0f5c1-1543">このメソッドは、アプリケーション オブジェクト ツリー (AOT) からプロジェクトの内容を削除しません。プロジェクト自体からのみです。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1543">This method does not remove the project contents from the Application Object Tree (AOT)—only from the project itself.</span></span> <span data-ttu-id="0f5c1-1544">このメソッドはプロジェクトの内容を削除しますが、プロジェクト フォルダーは削除しません。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1544">This method removes the project contents but does not remove the project folder.</span></span> <span data-ttu-id="0f5c1-1545">1 回のメソッド呼び出しでプロジェクトとその内容を削除するには、AOTdelete メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1545">To delete a project and its contents in one method call, use the AOTdelete method.</span></span> <span data-ttu-id="0f5c1-1546">オブジェクトを AOT から削除するには、AOTdelete メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1546">To delete objects from the AOT, use the AOTdelete method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="18cf4-1547">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-1547">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="0f5c1-1547">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1547">Examples</span></span>
 
-<span data-ttu-id="18cf4-1548">次の例では、Project1 プロジェクト内のプライベート フォルダー内のオブジェクトをすべて削除します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1548">The following example removes any objects in the Project1 project in the Private folder.</span></span>
+<span data-ttu-id="0f5c1-1548">次の例では、Project1 プロジェクト内のプライベート フォルダー内のオブジェクトをすべて削除します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1548">The following example removes any objects in the Project1 project in the Private folder.</span></span>
 
     static void clearProjectObjects(Args _args) 
         { 
@@ -3151,104 +3151,104 @@ ms.locfileid: "1544202"
             pn.clear(); 
         }
 
-### <a name="method-setprojectclass"></a><span data-ttu-id="18cf4-1549">メソッド setProjectClass</span><span class="sxs-lookup"><span data-stu-id="18cf4-1549">Method setProjectClass</span></span>
+### <a name="method-setprojectclass"></a><span data-ttu-id="0f5c1-1549">メソッド setProjectClass</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1549">Method setProjectClass</span></span>
 
-<span data-ttu-id="18cf4-1550">クラスをプロジェクトに割り当てますが、クラスに定義されているタイプをプロジェクトに与えます。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1550">Assigns a class to the project, which gives the project the type that the class defines.</span></span>
+<span data-ttu-id="0f5c1-1550">クラスをプロジェクトに割り当てますが、クラスに定義されているタイプをプロジェクトに与えます。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1550">Assigns a class to the project, which gives the project the type that the class defines.</span></span>
 
     public void setProjectClass(int classid)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1551">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1551">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1551">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1551">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1552">classid</span><span class="sxs-lookup"><span data-stu-id="18cf4-1552">classid</span></span>  
-<span data-ttu-id="18cf4-1553">プロジェクトに割り当てるクラスの ID。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1553">The ID of the class to assign to the project.</span></span>
+<span data-ttu-id="0f5c1-1552">classid</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1552">classid</span></span>  
+<span data-ttu-id="0f5c1-1553">プロジェクトに割り当てるクラスの ID。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1553">The ID of the class to assign to the project.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="18cf4-1554">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1554">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="0f5c1-1554">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1554">Remarks</span></span>
 
-<span data-ttu-id="18cf4-1555">指定されたクラスは、projectNode クラスを拡張する必要があります。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1555">The specified class must extend the projectNode class.</span></span>
+<span data-ttu-id="0f5c1-1555">指定されたクラスは、projectNode クラスを拡張する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1555">The specified class must extend the projectNode class.</span></span>
 
-### <a name="method-removespecialoverlayicons"></a><span data-ttu-id="18cf4-1556">メソッド removeSpecialOverlayIcons</span><span class="sxs-lookup"><span data-stu-id="18cf4-1556">Method removeSpecialOverlayIcons</span></span>
+### <a name="method-removespecialoverlayicons"></a><span data-ttu-id="0f5c1-1556">メソッド removeSpecialOverlayIcons</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1556">Method removeSpecialOverlayIcons</span></span>
 
     public void removeSpecialOverlayIcons(str path)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1557">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1557">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1557">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1557">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1558">path</span><span class="sxs-lookup"><span data-stu-id="18cf4-1558">path</span></span>  
+<span data-ttu-id="0f5c1-1558">path</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1558">path</span></span>  
 
-### <a name="method-new"></a><span data-ttu-id="18cf4-1559">メソッド new</span><span class="sxs-lookup"><span data-stu-id="18cf4-1559">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="0f5c1-1559">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1559">Method new</span></span>
 
-<span data-ttu-id="18cf4-1560">ProjectNode クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="18cf4-1560">Initializes a new instance of the ProjectNode class.</span></span>
+<span data-ttu-id="0f5c1-1560">ProjectNode クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1560">Initializes a new instance of the ProjectNode class.</span></span>
 
     public void new()
 
-## <a name="class-propertieswindow"></a><span data-ttu-id="18cf4-1561">クラス PropertiesWindow</span><span class="sxs-lookup"><span data-stu-id="18cf4-1561">Class PropertiesWindow</span></span>
+## <a name="class-propertieswindow"></a><span data-ttu-id="0f5c1-1561">クラス PropertiesWindow</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1561">Class PropertiesWindow</span></span>
     class PropertiesWindow extends Object
 
-### <a name="remarks"></a><span data-ttu-id="18cf4-1562">備考</span><span class="sxs-lookup"><span data-stu-id="18cf4-1562">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="0f5c1-1562">備考</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1562">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="18cf4-1563">例</span><span class="sxs-lookup"><span data-stu-id="18cf4-1563">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="0f5c1-1563">例</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1563">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="18cf4-1564">メソッド</span><span class="sxs-lookup"><span data-stu-id="18cf4-1564">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="0f5c1-1564">メソッド</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1564">Methods</span></span>
 
-| <span data-ttu-id="18cf4-1565">方法</span><span class="sxs-lookup"><span data-stu-id="18cf4-1565">Method</span></span>                                                   | <span data-ttu-id="18cf4-1566">説明</span><span class="sxs-lookup"><span data-stu-id="18cf4-1566">Description</span></span> |
+| <span data-ttu-id="0f5c1-1565">方法</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1565">Method</span></span>                                                   | <span data-ttu-id="0f5c1-1566">説明</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1566">Description</span></span> |
 |----------------------------------------------------------|-------------|
-| <span data-ttu-id="18cf4-1567">public int Activate(PropWindowDisplayState displaystate)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1567">public int Activate(PropWindowDisplayState displaystate)</span></span> |             |
-| <span data-ttu-id="18cf4-1568">public boolean DockFrame(PropWindowDockState dockstate)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1568">public boolean DockFrame(PropWindowDockState dockstate)</span></span>  |             |
-| <span data-ttu-id="18cf4-1569">public str GetSelectedPropertyName()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1569">public str GetSelectedPropertyName()</span></span>                     |             |
-| <span data-ttu-id="18cf4-1570">public boolean IsVisible()</span><span class="sxs-lookup"><span data-stu-id="18cf4-1570">public boolean IsVisible()</span></span>                               |             |
-| <span data-ttu-id="18cf4-1571">public boolean SelectPropertyByName(str propname)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1571">public boolean SelectPropertyByName(str propname)</span></span>        |             |
-| <span data-ttu-id="18cf4-1572">public boolean SelectTab(PropWindowSelectTab selecttab)</span><span class="sxs-lookup"><span data-stu-id="18cf4-1572">public boolean SelectTab(PropWindowSelectTab selecttab)</span></span>  |             |
+| <span data-ttu-id="0f5c1-1567">public int Activate(PropWindowDisplayState displaystate)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1567">public int Activate(PropWindowDisplayState displaystate)</span></span> |             |
+| <span data-ttu-id="0f5c1-1568">public boolean DockFrame(PropWindowDockState dockstate)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1568">public boolean DockFrame(PropWindowDockState dockstate)</span></span>  |             |
+| <span data-ttu-id="0f5c1-1569">public str GetSelectedPropertyName()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1569">public str GetSelectedPropertyName()</span></span>                     |             |
+| <span data-ttu-id="0f5c1-1570">public boolean IsVisible()</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1570">public boolean IsVisible()</span></span>                               |             |
+| <span data-ttu-id="0f5c1-1571">public boolean SelectPropertyByName(str propname)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1571">public boolean SelectPropertyByName(str propname)</span></span>        |             |
+| <span data-ttu-id="0f5c1-1572">public boolean SelectTab(PropWindowSelectTab selecttab)</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1572">public boolean SelectTab(PropWindowSelectTab selecttab)</span></span>  |             |
 
-### <a name="method-activate"></a><span data-ttu-id="18cf4-1573">メソッド Activate</span><span class="sxs-lookup"><span data-stu-id="18cf4-1573">Method Activate</span></span>
+### <a name="method-activate"></a><span data-ttu-id="0f5c1-1573">メソッド Activate</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1573">Method Activate</span></span>
 
     public int Activate(PropWindowDisplayState displaystate)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1574">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1574">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1574">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1574">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1575">displaystate</span><span class="sxs-lookup"><span data-stu-id="18cf4-1575">displaystate</span></span>  
+<span data-ttu-id="0f5c1-1575">displaystate</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1575">displaystate</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1576">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1576">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1576">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1576">Return Value</span></span>
 
-### <a name="method-dockframe"></a><span data-ttu-id="18cf4-1577">メソッド DockFrame</span><span class="sxs-lookup"><span data-stu-id="18cf4-1577">Method DockFrame</span></span>
+### <a name="method-dockframe"></a><span data-ttu-id="0f5c1-1577">メソッド DockFrame</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1577">Method DockFrame</span></span>
 
     public boolean DockFrame(PropWindowDockState dockstate)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1578">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1578">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1578">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1578">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1579">dockstate</span><span class="sxs-lookup"><span data-stu-id="18cf4-1579">dockstate</span></span>  
+<span data-ttu-id="0f5c1-1579">dockstate</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1579">dockstate</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1580">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1580">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1580">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1580">Return Value</span></span>
 
-### <a name="method-getselectedpropertyname"></a><span data-ttu-id="18cf4-1581">メソッド GetSelectedPropertyName</span><span class="sxs-lookup"><span data-stu-id="18cf4-1581">Method GetSelectedPropertyName</span></span>
+### <a name="method-getselectedpropertyname"></a><span data-ttu-id="0f5c1-1581">メソッド GetSelectedPropertyName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1581">Method GetSelectedPropertyName</span></span>
 
     public str GetSelectedPropertyName()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1582">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1582">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1582">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1582">Return Value</span></span>
 
-### <a name="method-isvisible"></a><span data-ttu-id="18cf4-1583">メソッド IsVisible</span><span class="sxs-lookup"><span data-stu-id="18cf4-1583">Method IsVisible</span></span>
+### <a name="method-isvisible"></a><span data-ttu-id="0f5c1-1583">メソッド IsVisible</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1583">Method IsVisible</span></span>
 
     public boolean IsVisible()
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1584">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1584">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1584">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1584">Return Value</span></span>
 
-### <a name="method-selectpropertybyname"></a><span data-ttu-id="18cf4-1585">メソッド SelectPropertyByName</span><span class="sxs-lookup"><span data-stu-id="18cf4-1585">Method SelectPropertyByName</span></span>
+### <a name="method-selectpropertybyname"></a><span data-ttu-id="0f5c1-1585">メソッド SelectPropertyByName</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1585">Method SelectPropertyByName</span></span>
 
     public boolean SelectPropertyByName(str propname)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1586">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1586">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1586">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1586">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1587">propname</span><span class="sxs-lookup"><span data-stu-id="18cf4-1587">propname</span></span>  
+<span data-ttu-id="0f5c1-1587">propname</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1587">propname</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1588">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1588">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1588">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1588">Return Value</span></span>
 
-### <a name="method-selecttab"></a><span data-ttu-id="18cf4-1589">メソッド SelectTab</span><span class="sxs-lookup"><span data-stu-id="18cf4-1589">Method SelectTab</span></span>
+### <a name="method-selecttab"></a><span data-ttu-id="0f5c1-1589">メソッド SelectTab</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1589">Method SelectTab</span></span>
 
     public boolean SelectTab(PropWindowSelectTab selecttab)
 
-#### <a name="parameters"></a><span data-ttu-id="18cf4-1590">パラメーター</span><span class="sxs-lookup"><span data-stu-id="18cf4-1590">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="0f5c1-1590">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1590">Parameters</span></span>
 
-<span data-ttu-id="18cf4-1591">selecttab</span><span class="sxs-lookup"><span data-stu-id="18cf4-1591">selecttab</span></span>  
+<span data-ttu-id="0f5c1-1591">selecttab</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1591">selecttab</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="18cf4-1592">戻り値</span><span class="sxs-lookup"><span data-stu-id="18cf4-1592">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="0f5c1-1592">戻り値</span><span class="sxs-lookup"><span data-stu-id="0f5c1-1592">Return Value</span></span>
 
 
 

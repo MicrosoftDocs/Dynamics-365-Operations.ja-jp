@@ -9,165 +9,165 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7f07dc332f5e2c27ac9ca2c9071febf27753d9bb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 68ce378e917311d15e0a7d5b0bcccde8268cf668
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547347"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851527"
 ---
-# <a name="design-type"></a><span data-ttu-id="8b918-103">Design タイプ</span><span class="sxs-lookup"><span data-stu-id="8b918-103">Design type</span></span>
+# <a name="design-type"></a><span data-ttu-id="895d1-103">Design タイプ</span><span class="sxs-lookup"><span data-stu-id="895d1-103">Design type</span></span>
 
 [!include [banner](../../../../includes/banner.md)]
 
-<span data-ttu-id="8b918-104">デザイン オブジェクトの種類。</span><span class="sxs-lookup"><span data-stu-id="8b918-104">Design object type.</span></span>
-<span data-ttu-id="8b918-105">デザインの詳細については、[デザインの概要](../../scenarios/client-api-design-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8b918-105">For more information on design, please reference the [Design Introduction](../../scenarios/client-api-design-overview.md).</span></span>
+<span data-ttu-id="895d1-104">デザイン オブジェクトの種類。</span><span class="sxs-lookup"><span data-stu-id="895d1-104">Design object type.</span></span>
+<span data-ttu-id="895d1-105">デザインの詳細については、[デザインの概要](../../scenarios/client-api-design-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="895d1-105">For more information on design, please reference the [Design Introduction](../../scenarios/client-api-design-overview.md).</span></span>
 
-### <a name="hierarchy"></a><span data-ttu-id="8b918-106">階層</span><span class="sxs-lookup"><span data-stu-id="8b918-106">Hierarchy</span></span>
+### <a name="hierarchy"></a><span data-ttu-id="895d1-106">階層</span><span class="sxs-lookup"><span data-stu-id="895d1-106">Hierarchy</span></span>
 
-<span data-ttu-id="8b918-107">デザイン</span><span class="sxs-lookup"><span data-stu-id="8b918-107">Design</span></span> <br><span data-ttu-id="8b918-108">&nbsp;&nbsp;&nbsp;└─ [PageLinkDesign](view-model-control-pagelink-ipagelink-ipagelinkdesign.md)</span><span class="sxs-lookup"><span data-stu-id="8b918-108">&nbsp;&nbsp;&nbsp;└─ [PageLinkDesign](view-model-control-pagelink-ipagelink-ipagelinkdesign.md)</span></span> <br><span data-ttu-id="8b918-109">&nbsp;&nbsp;&nbsp;└─ [ContainerControlDesign](view-model-control-container-icontainercontrol-icontainercontroldesign.md)</span><span class="sxs-lookup"><span data-stu-id="8b918-109">&nbsp;&nbsp;&nbsp;└─ [ContainerControlDesign](view-model-control-container-icontainercontrol-icontainercontroldesign.md)</span></span> <br><span data-ttu-id="8b918-110">&nbsp;&nbsp;&nbsp;└─ [InputControlDesign](view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md)</span><span class="sxs-lookup"><span data-stu-id="8b918-110">&nbsp;&nbsp;&nbsp;└─ [InputControlDesign](view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md)</span></span> <br><span data-ttu-id="8b918-111">&nbsp;&nbsp;&nbsp;└─ [ImageDesign](view-model-control-image-iimage-iimagedesign.md)</span><span class="sxs-lookup"><span data-stu-id="8b918-111">&nbsp;&nbsp;&nbsp;└─ [ImageDesign](view-model-control-image-iimage-iimagedesign.md)</span></span> <br>
+<span data-ttu-id="895d1-107">デザイン</span><span class="sxs-lookup"><span data-stu-id="895d1-107">Design</span></span> <br><span data-ttu-id="895d1-108">&nbsp;&nbsp;&nbsp;└─ [PageLinkDesign](view-model-control-pagelink-ipagelink-ipagelinkdesign.md)</span><span class="sxs-lookup"><span data-stu-id="895d1-108">&nbsp;&nbsp;&nbsp;└─ [PageLinkDesign](view-model-control-pagelink-ipagelink-ipagelinkdesign.md)</span></span> <br><span data-ttu-id="895d1-109">&nbsp;&nbsp;&nbsp;└─ [ContainerControlDesign](view-model-control-container-icontainercontrol-icontainercontroldesign.md)</span><span class="sxs-lookup"><span data-stu-id="895d1-109">&nbsp;&nbsp;&nbsp;└─ [ContainerControlDesign](view-model-control-container-icontainercontrol-icontainercontroldesign.md)</span></span> <br><span data-ttu-id="895d1-110">&nbsp;&nbsp;&nbsp;└─ [InputControlDesign](view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md)</span><span class="sxs-lookup"><span data-stu-id="895d1-110">&nbsp;&nbsp;&nbsp;└─ [InputControlDesign](view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md)</span></span> <br><span data-ttu-id="895d1-111">&nbsp;&nbsp;&nbsp;└─ [ImageDesign](view-model-control-image-iimage-iimagedesign.md)</span><span class="sxs-lookup"><span data-stu-id="895d1-111">&nbsp;&nbsp;&nbsp;└─ [ImageDesign](view-model-control-image-iimage-iimagedesign.md)</span></span> <br>
 
-## <a name="index"></a><span data-ttu-id="8b918-112">指数</span><span class="sxs-lookup"><span data-stu-id="8b918-112">Index</span></span>
+## <a name="index"></a><span data-ttu-id="895d1-112">指数</span><span class="sxs-lookup"><span data-stu-id="895d1-112">Index</span></span>
 
-### <a name="properties"></a><span data-ttu-id="8b918-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8b918-113">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="895d1-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="895d1-113">Properties</span></span>
 
-* [<span data-ttu-id="8b918-114">alignItems</span><span class="sxs-lookup"><span data-stu-id="8b918-114">alignItems</span></span>](view-model-ipage-idesign.md#alignitems)
-* [<span data-ttu-id="8b918-115">alignSelf</span><span class="sxs-lookup"><span data-stu-id="8b918-115">alignSelf</span></span>](view-model-ipage-idesign.md#alignself)
-* [<span data-ttu-id="8b918-116">バインディング</span><span class="sxs-lookup"><span data-stu-id="8b918-116">bindings</span></span>](view-model-ipage-idesign.md#bindings)
-* [<span data-ttu-id="8b918-117">枠線</span><span class="sxs-lookup"><span data-stu-id="8b918-117">border</span></span>](view-model-ipage-idesign.md#border)
-* [<span data-ttu-id="8b918-118">色</span><span class="sxs-lookup"><span data-stu-id="8b918-118">color</span></span>](view-model-ipage-idesign.md#color)
-* [<span data-ttu-id="8b918-119">flexFlow</span><span class="sxs-lookup"><span data-stu-id="8b918-119">flexFlow</span></span>](view-model-ipage-idesign.md#flexflow)
-* [<span data-ttu-id="8b918-120">flexSize</span><span class="sxs-lookup"><span data-stu-id="8b918-120">flexSize</span></span>](view-model-ipage-idesign.md#flexsize)
-* [<span data-ttu-id="8b918-121">fontSize</span><span class="sxs-lookup"><span data-stu-id="8b918-121">fontSize</span></span>](view-model-ipage-idesign.md#fontsize)
-* [<span data-ttu-id="8b918-122">fontWeight</span><span class="sxs-lookup"><span data-stu-id="8b918-122">fontWeight</span></span>](view-model-ipage-idesign.md#fontweight)
-* [<span data-ttu-id="8b918-123">justifyItems</span><span class="sxs-lookup"><span data-stu-id="8b918-123">justifyItems</span></span>](view-model-ipage-idesign.md#justifyitems)
-* [<span data-ttu-id="8b918-124">ラベル</span><span class="sxs-lookup"><span data-stu-id="8b918-124">label</span></span>](view-model-ipage-idesign.md#label)
-* [<span data-ttu-id="8b918-125">labelPosition</span><span class="sxs-lookup"><span data-stu-id="8b918-125">labelPosition</span></span>](view-model-ipage-idesign.md#labelposition)
-* [<span data-ttu-id="8b918-126">名前</span><span class="sxs-lookup"><span data-stu-id="8b918-126">name</span></span>](view-model-ipage-idesign.md#name)
-* [<span data-ttu-id="8b918-127">スペース</span><span class="sxs-lookup"><span data-stu-id="8b918-127">padding</span></span>](view-model-ipage-idesign.md#padding)
-* [<span data-ttu-id="8b918-128">タイプ</span><span class="sxs-lookup"><span data-stu-id="8b918-128">type</span></span>](view-model-ipage-idesign.md#type)
+* [<span data-ttu-id="895d1-114">alignItems</span><span class="sxs-lookup"><span data-stu-id="895d1-114">alignItems</span></span>](view-model-ipage-idesign.md#alignitems)
+* [<span data-ttu-id="895d1-115">alignSelf</span><span class="sxs-lookup"><span data-stu-id="895d1-115">alignSelf</span></span>](view-model-ipage-idesign.md#alignself)
+* [<span data-ttu-id="895d1-116">バインディング</span><span class="sxs-lookup"><span data-stu-id="895d1-116">bindings</span></span>](view-model-ipage-idesign.md#bindings)
+* [<span data-ttu-id="895d1-117">枠線</span><span class="sxs-lookup"><span data-stu-id="895d1-117">border</span></span>](view-model-ipage-idesign.md#border)
+* [<span data-ttu-id="895d1-118">色</span><span class="sxs-lookup"><span data-stu-id="895d1-118">color</span></span>](view-model-ipage-idesign.md#color)
+* [<span data-ttu-id="895d1-119">flexFlow</span><span class="sxs-lookup"><span data-stu-id="895d1-119">flexFlow</span></span>](view-model-ipage-idesign.md#flexflow)
+* [<span data-ttu-id="895d1-120">flexSize</span><span class="sxs-lookup"><span data-stu-id="895d1-120">flexSize</span></span>](view-model-ipage-idesign.md#flexsize)
+* [<span data-ttu-id="895d1-121">fontSize</span><span class="sxs-lookup"><span data-stu-id="895d1-121">fontSize</span></span>](view-model-ipage-idesign.md#fontsize)
+* [<span data-ttu-id="895d1-122">fontWeight</span><span class="sxs-lookup"><span data-stu-id="895d1-122">fontWeight</span></span>](view-model-ipage-idesign.md#fontweight)
+* [<span data-ttu-id="895d1-123">justifyItems</span><span class="sxs-lookup"><span data-stu-id="895d1-123">justifyItems</span></span>](view-model-ipage-idesign.md#justifyitems)
+* [<span data-ttu-id="895d1-124">ラベル</span><span class="sxs-lookup"><span data-stu-id="895d1-124">label</span></span>](view-model-ipage-idesign.md#label)
+* [<span data-ttu-id="895d1-125">labelPosition</span><span class="sxs-lookup"><span data-stu-id="895d1-125">labelPosition</span></span>](view-model-ipage-idesign.md#labelposition)
+* [<span data-ttu-id="895d1-126">名前</span><span class="sxs-lookup"><span data-stu-id="895d1-126">name</span></span>](view-model-ipage-idesign.md#name)
+* [<span data-ttu-id="895d1-127">スペース</span><span class="sxs-lookup"><span data-stu-id="895d1-127">padding</span></span>](view-model-ipage-idesign.md#padding)
+* [<span data-ttu-id="895d1-128">タイプ</span><span class="sxs-lookup"><span data-stu-id="895d1-128">type</span></span>](view-model-ipage-idesign.md#type)
 
-## <a name="properties"></a><span data-ttu-id="8b918-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8b918-129">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="895d1-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="895d1-129">Properties</span></span>
 
-### <a name="alignitems"></a><span data-ttu-id="8b918-130">alignItems</span><span class="sxs-lookup"><span data-stu-id="8b918-130">alignItems</span></span>
+### <a name="alignitems"></a><span data-ttu-id="895d1-130">alignItems</span><span class="sxs-lookup"><span data-stu-id="895d1-130">alignItems</span></span>
 
-<span data-ttu-id="8b918-131">alignItems: string (optional)</span><span class="sxs-lookup"><span data-stu-id="8b918-131">alignItems: string (optional)</span></span> 
+<span data-ttu-id="895d1-131">alignItems: string (optional)</span><span class="sxs-lookup"><span data-stu-id="895d1-131">alignItems: string (optional)</span></span> 
 
-<span data-ttu-id="8b918-132">このプロパティは、CSS プロパティ「align-items」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="8b918-132">This property is an alias for the CSS property "align-items".</span></span>
-<span data-ttu-id="8b918-133">"align-items" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="8b918-133">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "align-items" property.</span></span>
+<span data-ttu-id="895d1-132">このプロパティは、CSS プロパティ「align-items」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="895d1-132">This property is an alias for the CSS property "align-items".</span></span>
+<span data-ttu-id="895d1-133">"align-items" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="895d1-133">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "align-items" property.</span></span>
 
 
-### <a name="alignself"></a><span data-ttu-id="8b918-134">alignSelf</span><span class="sxs-lookup"><span data-stu-id="8b918-134">alignSelf</span></span>
+### <a name="alignself"></a><span data-ttu-id="895d1-134">alignSelf</span><span class="sxs-lookup"><span data-stu-id="895d1-134">alignSelf</span></span>
 
-<span data-ttu-id="8b918-135">alignSelf: string (optional)</span><span class="sxs-lookup"><span data-stu-id="8b918-135">alignSelf: string (optional)</span></span> 
+<span data-ttu-id="895d1-135">alignSelf: string (optional)</span><span class="sxs-lookup"><span data-stu-id="895d1-135">alignSelf: string (optional)</span></span> 
 
 
 
 
-### <a name="bindings"></a><span data-ttu-id="8b918-136">bindings</span><span class="sxs-lookup"><span data-stu-id="8b918-136">bindings</span></span>
+### <a name="bindings"></a><span data-ttu-id="895d1-136">bindings</span><span class="sxs-lookup"><span data-stu-id="895d1-136">bindings</span></span>
 
-<span data-ttu-id="8b918-137">bindings: any (optional)</span><span class="sxs-lookup"><span data-stu-id="8b918-137">bindings: any (optional)</span></span> 
+<span data-ttu-id="895d1-137">bindings: any (optional)</span><span class="sxs-lookup"><span data-stu-id="895d1-137">bindings: any (optional)</span></span> 
 
 
 
 
-### <a name="border"></a><span data-ttu-id="8b918-138">border</span><span class="sxs-lookup"><span data-stu-id="8b918-138">border</span></span>
+### <a name="border"></a><span data-ttu-id="895d1-138">border</span><span class="sxs-lookup"><span data-stu-id="895d1-138">border</span></span>
 
-<span data-ttu-id="8b918-139">border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-139">border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)</span></span> 
+<span data-ttu-id="895d1-139">border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可)</span><span class="sxs-lookup"><span data-stu-id="895d1-139">border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)</span></span> 
 
-<span data-ttu-id="8b918-140">コントロールの境界動作。</span><span class="sxs-lookup"><span data-stu-id="8b918-140">The border behavior of a control.</span></span> <span data-ttu-id="8b918-141">このプロパティは、子によって継承されません。</span><span class="sxs-lookup"><span data-stu-id="8b918-141">This property will not be inherited by the children.</span></span>
+<span data-ttu-id="895d1-140">コントロールの境界動作。</span><span class="sxs-lookup"><span data-stu-id="895d1-140">The border behavior of a control.</span></span> <span data-ttu-id="895d1-141">このプロパティは、子によって継承されません。</span><span class="sxs-lookup"><span data-stu-id="895d1-141">This property will not be inherited by the children.</span></span>
 
 
-### <a name="color"></a><span data-ttu-id="8b918-142">色</span><span class="sxs-lookup"><span data-stu-id="8b918-142">color</span></span>
+### <a name="color"></a><span data-ttu-id="895d1-142">色</span><span class="sxs-lookup"><span data-stu-id="895d1-142">color</span></span>
 
-<span data-ttu-id="8b918-143">color: string (optional)</span><span class="sxs-lookup"><span data-stu-id="8b918-143">color: string (optional)</span></span> 
+<span data-ttu-id="895d1-143">color: string (optional)</span><span class="sxs-lookup"><span data-stu-id="895d1-143">color: string (optional)</span></span> 
 
-<span data-ttu-id="8b918-144">コンテナーの前景色。</span><span class="sxs-lookup"><span data-stu-id="8b918-144">The foreground color of the container.</span></span>
-<span data-ttu-id="8b918-145">これにより、コンテナ内のすべてのヘッダー、アイテム、ラベル、アイコンの色が変更されます。</span><span class="sxs-lookup"><span data-stu-id="8b918-145">This will modify the color of all headers, items, labels, and icons within the container.</span></span><br>
-<span data-ttu-id="8b918-146">この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="8b918-146">Consider setting the background color at the same time as necessary when setting this attribute.</span></span><br>
-<span data-ttu-id="8b918-147">注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。</span><span class="sxs-lookup"><span data-stu-id="8b918-147">Note: if color is set to "theme", the theme color of the app will be used.</span></span><br>
-<span data-ttu-id="8b918-148">使用可能な色は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="8b918-148">The following colors are available:</span></span> <br>
-<span data-ttu-id="8b918-149">![サンプル画像](../../../media/colors.PNG)</span><span class="sxs-lookup"><span data-stu-id="8b918-149">![sample image](../../../media/colors.PNG)</span></span>
+<span data-ttu-id="895d1-144">コンテナーの前景色。</span><span class="sxs-lookup"><span data-stu-id="895d1-144">The foreground color of the container.</span></span>
+<span data-ttu-id="895d1-145">これにより、コンテナ内のすべてのヘッダー、アイテム、ラベル、アイコンの色が変更されます。</span><span class="sxs-lookup"><span data-stu-id="895d1-145">This will modify the color of all headers, items, labels, and icons within the container.</span></span><br>
+<span data-ttu-id="895d1-146">この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="895d1-146">Consider setting the background color at the same time as necessary when setting this attribute.</span></span><br>
+<span data-ttu-id="895d1-147">注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。</span><span class="sxs-lookup"><span data-stu-id="895d1-147">Note: if color is set to "theme", the theme color of the app will be used.</span></span><br>
+<span data-ttu-id="895d1-148">使用可能な色は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="895d1-148">The following colors are available:</span></span> <br>
+<span data-ttu-id="895d1-149">![サンプル画像](../../../media/colors.PNG)</span><span class="sxs-lookup"><span data-stu-id="895d1-149">![sample image](../../../media/colors.PNG)</span></span>
 
 
-### <a name="flexflow"></a><span data-ttu-id="8b918-150">flexFlow</span><span class="sxs-lookup"><span data-stu-id="8b918-150">flexFlow</span></span>
+### <a name="flexflow"></a><span data-ttu-id="895d1-150">flexFlow</span><span class="sxs-lookup"><span data-stu-id="895d1-150">flexFlow</span></span>
 
-<span data-ttu-id="8b918-151">flexFlow: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-151">flexFlow: string (optional)</span></span> 
+<span data-ttu-id="895d1-151">flexFlow: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="895d1-151">flexFlow: string (optional)</span></span> 
 
-<span data-ttu-id="8b918-152">このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。</span><span class="sxs-lookup"><span data-stu-id="8b918-152">Specifying this property makes the component a flex container component.</span></span>
-<span data-ttu-id="8b918-153">このプロパティは、CSS プロパティ「flex-flow」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="8b918-153">This property is an alias for the CSS property "flex-flow".</span></span>
-<span data-ttu-id="8b918-154">"flex-flow" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="8b918-154">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "flex-flow" property.</span></span>
+<span data-ttu-id="895d1-152">このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。</span><span class="sxs-lookup"><span data-stu-id="895d1-152">Specifying this property makes the component a flex container component.</span></span>
+<span data-ttu-id="895d1-153">このプロパティは、CSS プロパティ「flex-flow」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="895d1-153">This property is an alias for the CSS property "flex-flow".</span></span>
+<span data-ttu-id="895d1-154">"flex-flow" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="895d1-154">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "flex-flow" property.</span></span>
 
 
-### <a name="flexsize"></a><span data-ttu-id="8b918-155">flexSize</span><span class="sxs-lookup"><span data-stu-id="8b918-155">flexSize</span></span>
+### <a name="flexsize"></a><span data-ttu-id="895d1-155">flexSize</span><span class="sxs-lookup"><span data-stu-id="895d1-155">flexSize</span></span>
 
-<span data-ttu-id="8b918-156">flexSize: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-156">flexSize: string (optional)</span></span> 
+<span data-ttu-id="895d1-156">flexSize: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="895d1-156">flexSize: string (optional)</span></span> 
 
-<span data-ttu-id="8b918-157">1 つの番号または 2 つの番号が文字列として書き込まれています。</span><span class="sxs-lookup"><span data-stu-id="8b918-157">One number or two numbers written as a string.</span></span> <span data-ttu-id="8b918-158">E.g.</span><span class="sxs-lookup"><span data-stu-id="8b918-158">E.g.</span></span> <span data-ttu-id="8b918-159">「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。</span><span class="sxs-lookup"><span data-stu-id="8b918-159">"(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.</span></span>
-<span data-ttu-id="8b918-160">このプロパティは、CSS プロパティ「flex」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="8b918-160">This property is an alias for the CSS property "flex".</span></span> <span data-ttu-id="8b918-161">"flex" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="8b918-161">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "flex" property.</span></span>
+<span data-ttu-id="895d1-157">1 つの番号または 2 つの番号が文字列として書き込まれています。</span><span class="sxs-lookup"><span data-stu-id="895d1-157">One number or two numbers written as a string.</span></span> <span data-ttu-id="895d1-158">E.g.</span><span class="sxs-lookup"><span data-stu-id="895d1-158">E.g.</span></span> <span data-ttu-id="895d1-159">「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。</span><span class="sxs-lookup"><span data-stu-id="895d1-159">"(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.</span></span>
+<span data-ttu-id="895d1-160">このプロパティは、CSS プロパティ「flex」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="895d1-160">This property is an alias for the CSS property "flex".</span></span> <span data-ttu-id="895d1-161">"flex" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="895d1-161">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "flex" property.</span></span>
 
 
-### <a name="fontsize"></a><span data-ttu-id="8b918-162">fontSize</span><span class="sxs-lookup"><span data-stu-id="8b918-162">fontSize</span></span>
+### <a name="fontsize"></a><span data-ttu-id="895d1-162">fontSize</span><span class="sxs-lookup"><span data-stu-id="895d1-162">fontSize</span></span>
 
-<span data-ttu-id="8b918-163">fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-163">fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional)</span></span> 
+<span data-ttu-id="895d1-163">fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (省略可)</span><span class="sxs-lookup"><span data-stu-id="895d1-163">fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional)</span></span> 
 
-<span data-ttu-id="8b918-164">比例テキスト サイズ</span><span class="sxs-lookup"><span data-stu-id="8b918-164">The proportional text size</span></span>
+<span data-ttu-id="895d1-164">比例テキスト サイズ</span><span class="sxs-lookup"><span data-stu-id="895d1-164">The proportional text size</span></span>
 
 
-### <a name="fontweight"></a><span data-ttu-id="8b918-165">fontWeight</span><span class="sxs-lookup"><span data-stu-id="8b918-165">fontWeight</span></span>
+### <a name="fontweight"></a><span data-ttu-id="895d1-165">fontWeight</span><span class="sxs-lookup"><span data-stu-id="895d1-165">fontWeight</span></span>
 
-<span data-ttu-id="8b918-166">fontWeight: "normal" &#124; "bold" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-166">fontWeight: "normal" &#124; "bold" (optional)</span></span> 
+<span data-ttu-id="895d1-166">fontWeight: "normal" &#124; "bold" (省略可)</span><span class="sxs-lookup"><span data-stu-id="895d1-166">fontWeight: "normal" &#124; "bold" (optional)</span></span> 
 
-<span data-ttu-id="8b918-167">標準または太字のテキスト。</span><span class="sxs-lookup"><span data-stu-id="8b918-167">Normal or bold text.</span></span>
+<span data-ttu-id="895d1-167">標準または太字のテキスト。</span><span class="sxs-lookup"><span data-stu-id="895d1-167">Normal or bold text.</span></span>
 
 
-### <a name="justifyitems"></a><span data-ttu-id="8b918-168">justifyItems</span><span class="sxs-lookup"><span data-stu-id="8b918-168">justifyItems</span></span>
+### <a name="justifyitems"></a><span data-ttu-id="895d1-168">justifyItems</span><span class="sxs-lookup"><span data-stu-id="895d1-168">justifyItems</span></span>
 
-<span data-ttu-id="8b918-169">justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-169">justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (optional)</span></span> 
+<span data-ttu-id="895d1-169">justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (省略可)</span><span class="sxs-lookup"><span data-stu-id="895d1-169">justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (optional)</span></span> 
 
-<span data-ttu-id="8b918-170">このプロパティは CSS プロパティ「justify-content」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="8b918-170">This property is an alias for the CSS property "justify-content".</span></span>
-<span data-ttu-id="8b918-171">"justify-content" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="8b918-171">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "justify-content" property.</span></span>
+<span data-ttu-id="895d1-170">このプロパティは CSS プロパティ「justify-content」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="895d1-170">This property is an alias for the CSS property "justify-content".</span></span>
+<span data-ttu-id="895d1-171">"justify-content" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="895d1-171">Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "justify-content" property.</span></span>
 
 
-### <a name="label"></a><span data-ttu-id="8b918-172">ラベル</span><span class="sxs-lookup"><span data-stu-id="8b918-172">label</span></span>
+### <a name="label"></a><span data-ttu-id="895d1-172">ラベル</span><span class="sxs-lookup"><span data-stu-id="895d1-172">label</span></span>
 
-<span data-ttu-id="8b918-173">label: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-173">label: string (optional)</span></span> 
+<span data-ttu-id="895d1-173">label: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="895d1-173">label: string (optional)</span></span> 
 
 
 
 
-### <a name="labelposition"></a><span data-ttu-id="8b918-174">labelPosition</span><span class="sxs-lookup"><span data-stu-id="8b918-174">labelPosition</span></span>
+### <a name="labelposition"></a><span data-ttu-id="895d1-174">labelPosition</span><span class="sxs-lookup"><span data-stu-id="895d1-174">labelPosition</span></span>
 
-<span data-ttu-id="8b918-175">labelPosition: "stacked" &#124; "hidden" &#124; "inline" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-175">labelPosition: "stacked" &#124; "hidden" &#124; "inline" (optional)</span></span> 
+<span data-ttu-id="895d1-175">labelPosition: "stacked" &#124; "hidden" &#124; "inline" (省略可)</span><span class="sxs-lookup"><span data-stu-id="895d1-175">labelPosition: "stacked" &#124; "hidden" &#124; "inline" (optional)</span></span> 
 
-<span data-ttu-id="8b918-176">ラベルの配置方法を決定します (行われる場合)。</span><span class="sxs-lookup"><span data-stu-id="8b918-176">Determines how a label is positioned, if at all.</span></span> <span data-ttu-id="8b918-177">既定では、labelPosition が stacked に設定されています。</span><span class="sxs-lookup"><span data-stu-id="8b918-177">By default, labelPosition is set to stacked.</span></span>
+<span data-ttu-id="895d1-176">ラベルの配置方法を決定します (行われる場合)。</span><span class="sxs-lookup"><span data-stu-id="895d1-176">Determines how a label is positioned, if at all.</span></span> <span data-ttu-id="895d1-177">既定では、labelPosition が stacked に設定されています。</span><span class="sxs-lookup"><span data-stu-id="895d1-177">By default, labelPosition is set to stacked.</span></span>
 
 
-### <a name="name"></a><span data-ttu-id="8b918-178">名前</span><span class="sxs-lookup"><span data-stu-id="8b918-178">name</span></span>
+### <a name="name"></a><span data-ttu-id="895d1-178">名前</span><span class="sxs-lookup"><span data-stu-id="895d1-178">name</span></span>
 
-<span data-ttu-id="8b918-179">name: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-179">name: string (optional)</span></span> 
+<span data-ttu-id="895d1-179">name: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="895d1-179">name: string (optional)</span></span> 
 
 
 
 
-### <a name="padding"></a><span data-ttu-id="8b918-180">padding</span><span class="sxs-lookup"><span data-stu-id="8b918-180">padding</span></span>
+### <a name="padding"></a><span data-ttu-id="895d1-180">padding</span><span class="sxs-lookup"><span data-stu-id="895d1-180">padding</span></span>
 
-<span data-ttu-id="8b918-181">padding: "none" &#124; "small" &#124; "std" (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-181">padding: "none" &#124; "small" &#124; "std" (optional)</span></span> 
+<span data-ttu-id="895d1-181">padding: "none" &#124; "small" &#124; "std" (省略可)</span><span class="sxs-lookup"><span data-stu-id="895d1-181">padding: "none" &#124; "small" &#124; "std" (optional)</span></span> 
 
-<span data-ttu-id="8b918-182">コンポーネントのスペース動作を指定できるように許可します。</span><span class="sxs-lookup"><span data-stu-id="8b918-182">Allows specifying the component's padding behavior.</span></span>
-<span data-ttu-id="8b918-183">コンポーネントは、親コンテナー コンポーネントによって指定されたスペース動作を継承します。</span><span class="sxs-lookup"><span data-stu-id="8b918-183">A component will inherit the padding behavior specified by its parent container components.</span></span>
+<span data-ttu-id="895d1-182">コンポーネントのスペース動作を指定できるように許可します。</span><span class="sxs-lookup"><span data-stu-id="895d1-182">Allows specifying the component's padding behavior.</span></span>
+<span data-ttu-id="895d1-183">コンポーネントは、親コンテナー コンポーネントによって指定されたスペース動作を継承します。</span><span class="sxs-lookup"><span data-stu-id="895d1-183">A component will inherit the padding behavior specified by its parent container components.</span></span>
 
 
-### <a name="type"></a><span data-ttu-id="8b918-184">タイプ</span><span class="sxs-lookup"><span data-stu-id="8b918-184">type</span></span>
+### <a name="type"></a><span data-ttu-id="895d1-184">タイプ</span><span class="sxs-lookup"><span data-stu-id="895d1-184">type</span></span>
 
-<span data-ttu-id="8b918-185">type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (省略可)</span><span class="sxs-lookup"><span data-stu-id="8b918-185">type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional)</span></span> 
+<span data-ttu-id="895d1-185">type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (省略可)</span><span class="sxs-lookup"><span data-stu-id="895d1-185">type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional)</span></span> 
 
-<span data-ttu-id="8b918-186">文字列としてのコントロールのタイプ。</span><span class="sxs-lookup"><span data-stu-id="8b918-186">The type of the control as a string.</span></span>
+<span data-ttu-id="895d1-186">文字列としてのコントロールのタイプ。</span><span class="sxs-lookup"><span data-stu-id="895d1-186">The type of the control as a string.</span></span>
 
 

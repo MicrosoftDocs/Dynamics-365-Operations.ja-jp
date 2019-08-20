@@ -9,147 +9,147 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 565e383768022419fee8c622183a35dc5469c9f6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 80475ac5ccdf6ed91c5719bb3c5ab7d6326d0830
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547349"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851521"
 ---
-# <a name="pagemetadata-type"></a><span data-ttu-id="c9d09-103">PageMetadata タイプ</span><span class="sxs-lookup"><span data-stu-id="c9d09-103">PageMetadata type</span></span>
+# <a name="pagemetadata-type"></a><span data-ttu-id="d988c-103">PageMetadata タイプ</span><span class="sxs-lookup"><span data-stu-id="d988c-103">PageMetadata type</span></span>
 
 [!include [banner](../../../../includes/banner.md)]
 
-### <a name="hierarchy"></a><span data-ttu-id="c9d09-104">階層</span><span class="sxs-lookup"><span data-stu-id="c9d09-104">Hierarchy</span></span>
+### <a name="hierarchy"></a><span data-ttu-id="d988c-104">階層</span><span class="sxs-lookup"><span data-stu-id="d988c-104">Hierarchy</span></span>
 
-<span data-ttu-id="c9d09-105">PageMetadata</span><span class="sxs-lookup"><span data-stu-id="c9d09-105">PageMetadata</span></span> <br>
+<span data-ttu-id="d988c-105">PageMetadata</span><span class="sxs-lookup"><span data-stu-id="d988c-105">PageMetadata</span></span> <br>
 
-## <a name="index"></a><span data-ttu-id="c9d09-106">指数</span><span class="sxs-lookup"><span data-stu-id="c9d09-106">Index</span></span>
+## <a name="index"></a><span data-ttu-id="d988c-106">指数</span><span class="sxs-lookup"><span data-stu-id="d988c-106">Index</span></span>
 
-### <a name="properties"></a><span data-ttu-id="c9d09-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c9d09-107">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="d988c-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d988c-107">Properties</span></span>
 
-* [<span data-ttu-id="c9d09-108">コントロール</span><span class="sxs-lookup"><span data-stu-id="c9d09-108">Controls</span></span>](view-model-ipage-ipagemetadata.md#controls)
-* [<span data-ttu-id="c9d09-109">Design</span><span class="sxs-lookup"><span data-stu-id="c9d09-109">Design</span></span>](view-model-ipage-ipagemetadata.md#design)
-* [<span data-ttu-id="c9d09-110">ID</span><span class="sxs-lookup"><span data-stu-id="c9d09-110">Id</span></span>](view-model-ipage-ipagemetadata.md#id)
-* [<span data-ttu-id="c9d09-111">QuickSubmit</span><span class="sxs-lookup"><span data-stu-id="c9d09-111">QuickSubmit</span></span>](view-model-ipage-ipagemetadata.md#quicksubmit)
-* [<span data-ttu-id="c9d09-112">SourcePageId</span><span class="sxs-lookup"><span data-stu-id="c9d09-112">SourcePageId</span></span>](view-model-ipage-ipagemetadata.md#sourcepageid)
-* [<span data-ttu-id="c9d09-113">SubmitButtonDesign</span><span class="sxs-lookup"><span data-stu-id="c9d09-113">SubmitButtonDesign</span></span>](view-model-ipage-ipagemetadata.md#submitbuttondesign)
-* [<span data-ttu-id="c9d09-114">仕事</span><span class="sxs-lookup"><span data-stu-id="c9d09-114">Tasks</span></span>](view-model-ipage-ipagemetadata.md#tasks)
-* [<span data-ttu-id="c9d09-115">タイトル</span><span class="sxs-lookup"><span data-stu-id="c9d09-115">Title</span></span>](view-model-ipage-ipagemetadata.md#title)
+* [<span data-ttu-id="d988c-108">コントロール</span><span class="sxs-lookup"><span data-stu-id="d988c-108">Controls</span></span>](view-model-ipage-ipagemetadata.md#controls)
+* [<span data-ttu-id="d988c-109">Design</span><span class="sxs-lookup"><span data-stu-id="d988c-109">Design</span></span>](view-model-ipage-ipagemetadata.md#design)
+* [<span data-ttu-id="d988c-110">ID</span><span class="sxs-lookup"><span data-stu-id="d988c-110">Id</span></span>](view-model-ipage-ipagemetadata.md#id)
+* [<span data-ttu-id="d988c-111">QuickSubmit</span><span class="sxs-lookup"><span data-stu-id="d988c-111">QuickSubmit</span></span>](view-model-ipage-ipagemetadata.md#quicksubmit)
+* [<span data-ttu-id="d988c-112">SourcePageId</span><span class="sxs-lookup"><span data-stu-id="d988c-112">SourcePageId</span></span>](view-model-ipage-ipagemetadata.md#sourcepageid)
+* [<span data-ttu-id="d988c-113">SubmitButtonDesign</span><span class="sxs-lookup"><span data-stu-id="d988c-113">SubmitButtonDesign</span></span>](view-model-ipage-ipagemetadata.md#submitbuttondesign)
+* [<span data-ttu-id="d988c-114">仕事</span><span class="sxs-lookup"><span data-stu-id="d988c-114">Tasks</span></span>](view-model-ipage-ipagemetadata.md#tasks)
+* [<span data-ttu-id="d988c-115">タイトル</span><span class="sxs-lookup"><span data-stu-id="d988c-115">Title</span></span>](view-model-ipage-ipagemetadata.md#title)
 
-### <a name="events"></a><span data-ttu-id="c9d09-116">イベント</span><span class="sxs-lookup"><span data-stu-id="c9d09-116">Events</span></span>
+### <a name="events"></a><span data-ttu-id="d988c-116">イベント</span><span class="sxs-lookup"><span data-stu-id="d988c-116">Events</span></span>
 
-* [<span data-ttu-id="c9d09-117">OnDataLoaded</span><span class="sxs-lookup"><span data-stu-id="c9d09-117">OnDataLoaded</span></span>](view-model-ipage-ipagemetadata.md#ondataloaded)
-* [<span data-ttu-id="c9d09-118">OnInit</span><span class="sxs-lookup"><span data-stu-id="c9d09-118">OnInit</span></span>](view-model-ipage-ipagemetadata.md#oninit)
-* [<span data-ttu-id="c9d09-119">OnPreInit</span><span class="sxs-lookup"><span data-stu-id="c9d09-119">OnPreInit</span></span>](view-model-ipage-ipagemetadata.md#onpreinit)
-* [<span data-ttu-id="c9d09-120">OnSubmit</span><span class="sxs-lookup"><span data-stu-id="c9d09-120">OnSubmit</span></span>](view-model-ipage-ipagemetadata.md#onsubmit)
-* [<span data-ttu-id="c9d09-121">OnTaskSubmitted</span><span class="sxs-lookup"><span data-stu-id="c9d09-121">OnTaskSubmitted</span></span>](view-model-ipage-ipagemetadata.md#ontasksubmitted)
-* [<span data-ttu-id="c9d09-122">OnTaskSubmitting</span><span class="sxs-lookup"><span data-stu-id="c9d09-122">OnTaskSubmitting</span></span>](view-model-ipage-ipagemetadata.md#ontasksubmitting)
+* [<span data-ttu-id="d988c-117">OnDataLoaded</span><span class="sxs-lookup"><span data-stu-id="d988c-117">OnDataLoaded</span></span>](view-model-ipage-ipagemetadata.md#ondataloaded)
+* [<span data-ttu-id="d988c-118">OnInit</span><span class="sxs-lookup"><span data-stu-id="d988c-118">OnInit</span></span>](view-model-ipage-ipagemetadata.md#oninit)
+* [<span data-ttu-id="d988c-119">OnPreInit</span><span class="sxs-lookup"><span data-stu-id="d988c-119">OnPreInit</span></span>](view-model-ipage-ipagemetadata.md#onpreinit)
+* [<span data-ttu-id="d988c-120">OnSubmit</span><span class="sxs-lookup"><span data-stu-id="d988c-120">OnSubmit</span></span>](view-model-ipage-ipagemetadata.md#onsubmit)
+* [<span data-ttu-id="d988c-121">OnTaskSubmitted</span><span class="sxs-lookup"><span data-stu-id="d988c-121">OnTaskSubmitted</span></span>](view-model-ipage-ipagemetadata.md#ontasksubmitted)
+* [<span data-ttu-id="d988c-122">OnTaskSubmitting</span><span class="sxs-lookup"><span data-stu-id="d988c-122">OnTaskSubmitting</span></span>](view-model-ipage-ipagemetadata.md#ontasksubmitting)
 
-## <a name="properties"></a><span data-ttu-id="c9d09-123">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c9d09-123">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d988c-123">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d988c-123">Properties</span></span>
 
-### <a name="controls"></a><span data-ttu-id="c9d09-124">コントロール</span><span class="sxs-lookup"><span data-stu-id="c9d09-124">Controls</span></span>
+### <a name="controls"></a><span data-ttu-id="d988c-124">コントロール</span><span class="sxs-lookup"><span data-stu-id="d988c-124">Controls</span></span>
 
-<span data-ttu-id="c9d09-125">コントロール: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) \[ \] (オプション)</span><span class="sxs-lookup"><span data-stu-id="c9d09-125">Controls: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) \[ \] (optional)</span></span> 
+<span data-ttu-id="d988c-125">コントロール: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) \[ \] (オプション)</span><span class="sxs-lookup"><span data-stu-id="d988c-125">Controls: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) \[ \] (optional)</span></span> 
 
 
 
 
-### <a name="design"></a><span data-ttu-id="c9d09-126">デザイン</span><span class="sxs-lookup"><span data-stu-id="c9d09-126">Design</span></span>
+### <a name="design"></a><span data-ttu-id="d988c-126">デザイン</span><span class="sxs-lookup"><span data-stu-id="d988c-126">Design</span></span>
 
-<span data-ttu-id="c9d09-127">デザイン: [デザイン](view-model-ipage-idesign.md) (オプション)</span><span class="sxs-lookup"><span data-stu-id="c9d09-127">Design: [Design](view-model-ipage-idesign.md) (optional)</span></span> 
+<span data-ttu-id="d988c-127">デザイン: [デザイン](view-model-ipage-idesign.md) (オプション)</span><span class="sxs-lookup"><span data-stu-id="d988c-127">Design: [Design](view-model-ipage-idesign.md) (optional)</span></span> 
 
 
 
 
-### <a name="id"></a><span data-ttu-id="c9d09-128">ID</span><span class="sxs-lookup"><span data-stu-id="c9d09-128">Id</span></span>
+### <a name="id"></a><span data-ttu-id="d988c-128">ID</span><span class="sxs-lookup"><span data-stu-id="d988c-128">Id</span></span>
 
-<span data-ttu-id="c9d09-129">Id: string (オプション)</span><span class="sxs-lookup"><span data-stu-id="c9d09-129">Id: string (optional)</span></span> 
+<span data-ttu-id="d988c-129">Id: string (オプション)</span><span class="sxs-lookup"><span data-stu-id="d988c-129">Id: string (optional)</span></span> 
 
 
 
 
-### <a name="quicksubmit"></a><span data-ttu-id="c9d09-130">QuickSubmit</span><span class="sxs-lookup"><span data-stu-id="c9d09-130">QuickSubmit</span></span>
+### <a name="quicksubmit"></a><span data-ttu-id="d988c-130">QuickSubmit</span><span class="sxs-lookup"><span data-stu-id="d988c-130">QuickSubmit</span></span>
 
-<span data-ttu-id="c9d09-131">QuickSubmit: ブール値 (省略可)</span><span class="sxs-lookup"><span data-stu-id="c9d09-131">QuickSubmit: boolean (optional)</span></span> 
+<span data-ttu-id="d988c-131">QuickSubmit: ブール値 (省略可)</span><span class="sxs-lookup"><span data-stu-id="d988c-131">QuickSubmit: boolean (optional)</span></span> 
 
 
 
 
-### <a name="sourcepageid"></a><span data-ttu-id="c9d09-132">SourcePageId</span><span class="sxs-lookup"><span data-stu-id="c9d09-132">SourcePageId</span></span>
+### <a name="sourcepageid"></a><span data-ttu-id="d988c-132">SourcePageId</span><span class="sxs-lookup"><span data-stu-id="d988c-132">SourcePageId</span></span>
 
-<span data-ttu-id="c9d09-133">SourcePageId: 文字列 (省略可)</span><span class="sxs-lookup"><span data-stu-id="c9d09-133">SourcePageId: string (optional)</span></span> 
+<span data-ttu-id="d988c-133">SourcePageId: 文字列 (省略可)</span><span class="sxs-lookup"><span data-stu-id="d988c-133">SourcePageId: string (optional)</span></span> 
 
 
 
 
-### <a name="submitbuttondesign"></a><span data-ttu-id="c9d09-134">SubmitButtonDesign</span><span class="sxs-lookup"><span data-stu-id="c9d09-134">SubmitButtonDesign</span></span>
+### <a name="submitbuttondesign"></a><span data-ttu-id="d988c-134">SubmitButtonDesign</span><span class="sxs-lookup"><span data-stu-id="d988c-134">SubmitButtonDesign</span></span>
 
-<span data-ttu-id="c9d09-135">SubmitButtonDesign: [デザイン](view-model-ipage-idesign.md) (省略可)</span><span class="sxs-lookup"><span data-stu-id="c9d09-135">SubmitButtonDesign: [Design](view-model-ipage-idesign.md) (optional)</span></span> 
+<span data-ttu-id="d988c-135">SubmitButtonDesign: [デザイン](view-model-ipage-idesign.md) (省略可)</span><span class="sxs-lookup"><span data-stu-id="d988c-135">SubmitButtonDesign: [Design](view-model-ipage-idesign.md) (optional)</span></span> 
 
 
 
 
-### <a name="tasks"></a><span data-ttu-id="c9d09-136">仕事</span><span class="sxs-lookup"><span data-stu-id="c9d09-136">Tasks</span></span>
+### <a name="tasks"></a><span data-ttu-id="d988c-136">仕事</span><span class="sxs-lookup"><span data-stu-id="d988c-136">Tasks</span></span>
 
-<span data-ttu-id="c9d09-137">タスク: [PageMetadata](view-model-ipage-ipagemetadata.md)\[\] (省略可)</span><span class="sxs-lookup"><span data-stu-id="c9d09-137">Tasks: [PageMetadata](view-model-ipage-ipagemetadata.md) \[ \] (optional)</span></span> 
+<span data-ttu-id="d988c-137">タスク: [PageMetadata](view-model-ipage-ipagemetadata.md)\[\] (省略可)</span><span class="sxs-lookup"><span data-stu-id="d988c-137">Tasks: [PageMetadata](view-model-ipage-ipagemetadata.md) \[ \] (optional)</span></span> 
 
 
 
 
-### <a name="title"></a><span data-ttu-id="c9d09-138">肩書き</span><span class="sxs-lookup"><span data-stu-id="c9d09-138">Title</span></span>
+### <a name="title"></a><span data-ttu-id="d988c-138">肩書き</span><span class="sxs-lookup"><span data-stu-id="d988c-138">Title</span></span>
 
-<span data-ttu-id="c9d09-139">タイトル: 文字列 (省略可)</span><span class="sxs-lookup"><span data-stu-id="c9d09-139">Title: string (optional)</span></span> 
+<span data-ttu-id="d988c-139">タイトル: 文字列 (省略可)</span><span class="sxs-lookup"><span data-stu-id="d988c-139">Title: string (optional)</span></span> 
 
 
 
 
-## <a name="events"></a><span data-ttu-id="c9d09-140">イベント</span><span class="sxs-lookup"><span data-stu-id="c9d09-140">Events</span></span>
+## <a name="events"></a><span data-ttu-id="d988c-140">イベント</span><span class="sxs-lookup"><span data-stu-id="d988c-140">Events</span></span>
 
-### <a name="ondataloaded"></a><span data-ttu-id="c9d09-141">OnDataLoaded</span><span class="sxs-lookup"><span data-stu-id="c9d09-141">OnDataLoaded</span></span>
+### <a name="ondataloaded"></a><span data-ttu-id="d988c-141">OnDataLoaded</span><span class="sxs-lookup"><span data-stu-id="d988c-141">OnDataLoaded</span></span>
 
-<span data-ttu-id="c9d09-142">OnDataLoaded: 機能 (送信者: [ページ](view-model-ipage-ipage.md)、dataWrapper: すべて): 無効 (オプション)</span><span class="sxs-lookup"><span data-stu-id="c9d09-142">OnDataLoaded: function(sender: [Page](view-model-ipage-ipage.md), dataWrapper: any): void (optional)</span></span> 
+<span data-ttu-id="d988c-142">OnDataLoaded: 機能 (送信者: [ページ](view-model-ipage-ipage.md)、dataWrapper: すべて): 無効 (オプション)</span><span class="sxs-lookup"><span data-stu-id="d988c-142">OnDataLoaded: function(sender: [Page](view-model-ipage-ipage.md), dataWrapper: any): void (optional)</span></span> 
 
 
 
 
-### <a name="oninit"></a><span data-ttu-id="c9d09-143">OnInit</span><span class="sxs-lookup"><span data-stu-id="c9d09-143">OnInit</span></span>
+### <a name="oninit"></a><span data-ttu-id="d988c-143">OnInit</span><span class="sxs-lookup"><span data-stu-id="d988c-143">OnInit</span></span>
 
-<span data-ttu-id="c9d09-144">OnInit: 機能 (送信者: [ページ](view-model-ipage-ipage.md)): 無効 (オプション)</span><span class="sxs-lookup"><span data-stu-id="c9d09-144">OnInit: function(sender: [Page](view-model-ipage-ipage.md)): void (optional)</span></span> 
+<span data-ttu-id="d988c-144">OnInit: 機能 (送信者: [ページ](view-model-ipage-ipage.md)): 無効 (オプション)</span><span class="sxs-lookup"><span data-stu-id="d988c-144">OnInit: function(sender: [Page](view-model-ipage-ipage.md)): void (optional)</span></span> 
 
 
 
 
-### <a name="onpreinit"></a><span data-ttu-id="c9d09-145">OnPreInit</span><span class="sxs-lookup"><span data-stu-id="c9d09-145">OnPreInit</span></span>
+### <a name="onpreinit"></a><span data-ttu-id="d988c-145">OnPreInit</span><span class="sxs-lookup"><span data-stu-id="d988c-145">OnPreInit</span></span>
 
-<span data-ttu-id="c9d09-146">OnPreInit: 機能 (送信者: [ページ](view-model-ipage-ipage.md)): 無効 (オプション)</span><span class="sxs-lookup"><span data-stu-id="c9d09-146">OnPreInit: function(sender: [Page](view-model-ipage-ipage.md)): void (optional)</span></span> 
+<span data-ttu-id="d988c-146">OnPreInit: 機能 (送信者: [ページ](view-model-ipage-ipage.md)): 無効 (オプション)</span><span class="sxs-lookup"><span data-stu-id="d988c-146">OnPreInit: function(sender: [Page](view-model-ipage-ipage.md)): void (optional)</span></span> 
 
 
 
 
-### <a name="onsubmit"></a><span data-ttu-id="c9d09-147">OnSubmit</span><span class="sxs-lookup"><span data-stu-id="c9d09-147">OnSubmit</span></span>
+### <a name="onsubmit"></a><span data-ttu-id="d988c-147">OnSubmit</span><span class="sxs-lookup"><span data-stu-id="d988c-147">OnSubmit</span></span>
 
-<span data-ttu-id="c9d09-148">OnSubmit: 機能 (dataValues: すべて、args: すべて): 無効 (オプション)</span><span class="sxs-lookup"><span data-stu-id="c9d09-148">OnSubmit: function(dataValues: any, args: any): void (optional)</span></span> 
+<span data-ttu-id="d988c-148">OnSubmit: 機能 (dataValues: すべて、args: すべて): 無効 (オプション)</span><span class="sxs-lookup"><span data-stu-id="d988c-148">OnSubmit: function(dataValues: any, args: any): void (optional)</span></span> 
 
 
 
 
-### <a name="ontasksubmitted"></a><span data-ttu-id="c9d09-149">OnTaskSubmitted</span><span class="sxs-lookup"><span data-stu-id="c9d09-149">OnTaskSubmitted</span></span>
+### <a name="ontasksubmitted"></a><span data-ttu-id="d988c-149">OnTaskSubmitted</span><span class="sxs-lookup"><span data-stu-id="d988c-149">OnTaskSubmitted</span></span>
 
-<span data-ttu-id="c9d09-150">OnTaskSubmitted: 機能 (taskHandle: すべて、taskOptions: すべて): すべて (オプション)</span><span class="sxs-lookup"><span data-stu-id="c9d09-150">OnTaskSubmitted: function(taskHandle: any, taskOptions: any): any (optional)</span></span> 
+<span data-ttu-id="d988c-150">OnTaskSubmitted: 機能 (taskHandle: すべて、taskOptions: すべて): すべて (オプション)</span><span class="sxs-lookup"><span data-stu-id="d988c-150">OnTaskSubmitted: function(taskHandle: any, taskOptions: any): any (optional)</span></span> 
 
 
 
 
-### <a name="ontasksubmitting"></a><span data-ttu-id="c9d09-151">OnTaskSubmitting</span><span class="sxs-lookup"><span data-stu-id="c9d09-151">OnTaskSubmitting</span></span>
+### <a name="ontasksubmitting"></a><span data-ttu-id="d988c-151">OnTaskSubmitting</span><span class="sxs-lookup"><span data-stu-id="d988c-151">OnTaskSubmitting</span></span>
 
-<span data-ttu-id="c9d09-152">OnTaskSubmitted: 機能 (taskOptions: すべて): すべて (オプション)</span><span class="sxs-lookup"><span data-stu-id="c9d09-152">OnTaskSubmitting: function(taskOptions: any): any (optional)</span></span> 
+<span data-ttu-id="d988c-152">OnTaskSubmitted: 機能 (taskOptions: すべて): すべて (オプション)</span><span class="sxs-lookup"><span data-stu-id="d988c-152">OnTaskSubmitting: function(taskOptions: any): any (optional)</span></span> 
 
 
 

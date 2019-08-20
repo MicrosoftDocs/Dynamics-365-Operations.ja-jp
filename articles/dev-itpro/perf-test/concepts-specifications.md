@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: RobinARH
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,33 +17,33 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 06c82e8972a768dcd3d2b00f35e8fb10d9faf590
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 696834d934f10d9e9040466044d2692085dd729a
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537148"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833286"
 ---
-# <a name="specification-classes"></a><span data-ttu-id="a5c2e-103">詳細のクラス</span><span class="sxs-lookup"><span data-stu-id="a5c2e-103">Specification classes</span></span>
+# <a name="specification-classes"></a><span data-ttu-id="2f2bc-103">詳細のクラス</span><span class="sxs-lookup"><span data-stu-id="2f2bc-103">Specification classes</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-<span data-ttu-id="a5c2e-104">詳細のクラスはエンティティが満たすべき一連の条件の定義に使用される Fluent アプリケーション プログラミング インターフェイス (API) を提供します。</span><span class="sxs-lookup"><span data-stu-id="a5c2e-104">A specification class provides fluent application programming interfaces (APIs) that are used to define the set of criteria that an entity should meet.</span></span> <span data-ttu-id="a5c2e-105">詳細は検証シナリオでよく使用されます。</span><span class="sxs-lookup"><span data-stu-id="a5c2e-105">Specifications are often used in validation scenarios.</span></span> <span data-ttu-id="a5c2e-106">通常それらはクエリ クラスと一緒に使用されます。</span><span class="sxs-lookup"><span data-stu-id="a5c2e-106">They are usually used together with query classes.</span></span>
+<span data-ttu-id="2f2bc-104">詳細のクラスはエンティティが満たすべき一連の条件の定義に使用される Fluent アプリケーション プログラミング インターフェイス (API) を提供します。</span><span class="sxs-lookup"><span data-stu-id="2f2bc-104">A specification class provides fluent application programming interfaces (APIs) that are used to define the set of criteria that an entity should meet.</span></span> <span data-ttu-id="2f2bc-105">詳細は検証シナリオでよく使用されます。</span><span class="sxs-lookup"><span data-stu-id="2f2bc-105">Specifications are often used in validation scenarios.</span></span> <span data-ttu-id="2f2bc-106">通常それらはクエリ クラスと一緒に使用されます。</span><span class="sxs-lookup"><span data-stu-id="2f2bc-106">They are usually used together with query classes.</span></span>
 
-<span data-ttu-id="a5c2e-107">詳細のクラスの利点は、検証コードが非常に簡潔で表現的になることです。</span><span class="sxs-lookup"><span data-stu-id="a5c2e-107">An advantage of specification classes is that the validation code becomes very concise and expressive.</span></span> <span data-ttu-id="a5c2e-108">基本的に 1 行のコードで複数の検証を行えます。</span><span class="sxs-lookup"><span data-stu-id="a5c2e-108">Basically, you can do multiple validations in a single line of code.</span></span>
+<span data-ttu-id="2f2bc-107">詳細のクラスの利点は、検証コードが非常に簡潔で表現的になることです。</span><span class="sxs-lookup"><span data-stu-id="2f2bc-107">An advantage of specification classes is that the validation code becomes very concise and expressive.</span></span> <span data-ttu-id="2f2bc-108">基本的に 1 行のコードで複数の検証を行えます。</span><span class="sxs-lookup"><span data-stu-id="2f2bc-108">Basically, you can do multiple validations in a single line of code.</span></span>
 
-## <a name="naming-convention"></a><span data-ttu-id="a5c2e-109">名前付け規則</span><span class="sxs-lookup"><span data-stu-id="a5c2e-109">Naming convention</span></span>
+## <a name="naming-convention"></a><span data-ttu-id="2f2bc-109">名前付け規則</span><span class="sxs-lookup"><span data-stu-id="2f2bc-109">Naming convention</span></span>
 
 `AtlSpec<ModuleName><#EntityName>`
 
-<span data-ttu-id="a5c2e-110">この命名規則で:</span><span class="sxs-lookup"><span data-stu-id="a5c2e-110">In this naming convention:</span></span>
+<span data-ttu-id="2f2bc-110">この命名規則で:</span><span class="sxs-lookup"><span data-stu-id="2f2bc-110">In this naming convention:</span></span>
 
-- <span data-ttu-id="a5c2e-111">`<ModuleName>` はオプションで、メイン メニューのモジュール名に基づいています。</span><span class="sxs-lookup"><span data-stu-id="a5c2e-111">`<ModuleName>` is optional and is based on the names of the modules on the main menu.</span></span> <span data-ttu-id="a5c2e-112">ただし、短いテスト コードをサポートするために、短いバージョンまたは省略形を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a5c2e-112">However, a short version or an abbreviation should be used to support brevity of test code.</span></span>
-- <span data-ttu-id="a5c2e-113">`<#EntityName>` は承認テスト ライブラリ (ATL) 全体で使用されるエンティティ名を表します。</span><span class="sxs-lookup"><span data-stu-id="a5c2e-113">`<#EntityName>` represents the name of the entity that is used throughout the Acceptance test library (ATL).</span></span>
+- <span data-ttu-id="2f2bc-111">`<ModuleName>` はオプションで、メイン メニューのモジュール名に基づいています。</span><span class="sxs-lookup"><span data-stu-id="2f2bc-111">`<ModuleName>` is optional and is based on the names of the modules on the main menu.</span></span> <span data-ttu-id="2f2bc-112">ただし、短いテスト コードをサポートするために、短いバージョンまたは省略形を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f2bc-112">However, a short version or an abbreviation should be used to support brevity of test code.</span></span>
+- <span data-ttu-id="2f2bc-113">`<#EntityName>` は承認テスト ライブラリ (ATL) 全体で使用されるエンティティ名を表します。</span><span class="sxs-lookup"><span data-stu-id="2f2bc-113">`<#EntityName>` represents the name of the entity that is used throughout the Acceptance test library (ATL).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a5c2e-114">例</span><span class="sxs-lookup"><span data-stu-id="a5c2e-114">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2f2bc-114">例</span><span class="sxs-lookup"><span data-stu-id="2f2bc-114">Examples</span></span>
 
 ```
 AtlSpecWHSLoadLine
@@ -51,13 +51,13 @@ AtlSpecWHSLoadLine
 AtlSpecWHSWorkLine
 ```
 
-## <a name="implementation"></a><span data-ttu-id="a5c2e-115">実装</span><span class="sxs-lookup"><span data-stu-id="a5c2e-115">Implementation</span></span>
+## <a name="implementation"></a><span data-ttu-id="2f2bc-115">実装</span><span class="sxs-lookup"><span data-stu-id="2f2bc-115">Implementation</span></span>
 
-<span data-ttu-id="a5c2e-116">詳細のクラスは仕様のさまざまな条件を指定する Fluent セッター メソッドを提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a5c2e-116">Specification classes should provide fluent setter methods to specify various criteria of the specification.</span></span>
+<span data-ttu-id="2f2bc-116">詳細のクラスは仕様のさまざまな条件を指定する Fluent セッター メソッドを提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f2bc-116">Specification classes should provide fluent setter methods to specify various criteria of the specification.</span></span>
 
-### <a name="example"></a><span data-ttu-id="a5c2e-117">例</span><span class="sxs-lookup"><span data-stu-id="a5c2e-117">Example</span></span>
+### <a name="example"></a><span data-ttu-id="2f2bc-117">例</span><span class="sxs-lookup"><span data-stu-id="2f2bc-117">Example</span></span>
 
-<span data-ttu-id="a5c2e-118">次のコードは、指定された条件を満たす 6 行が作業に含まれることを確認します。</span><span class="sxs-lookup"><span data-stu-id="a5c2e-118">The following code verifies that the work contains six lines that meet the specified criteria.</span></span> <span data-ttu-id="a5c2e-119">たとえば、1 行目は **1** の行番号として **1** を、作業タイプとして **ピッキング** を、数量として **1** を、状態として **終了済み** を、場所として **一括** を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="a5c2e-119">For example, the first line should have **1** as the line number of **1**, **Pick** as the work type, **1** as the quantity, **Closed** as the status, and **bulk** as the location.</span></span>
+<span data-ttu-id="2f2bc-118">次のコードは、指定された条件を満たす 6 行が作業に含まれることを確認します。</span><span class="sxs-lookup"><span data-stu-id="2f2bc-118">The following code verifies that the work contains six lines that meet the specified criteria.</span></span> <span data-ttu-id="2f2bc-119">たとえば、1 行目は **1** の行番号として **1** を、作業タイプとして **ピッキング** を、数量として **1** を、状態として **終了済み** を、場所として **一括** を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f2bc-119">For example, the first line should have **1** as the line number of **1**, **Pick** as the work type, **1** as the quantity, **Closed** as the status, and **bulk** as the location.</span></span>
 
 ```
 work.lines().assertExpectedLines(

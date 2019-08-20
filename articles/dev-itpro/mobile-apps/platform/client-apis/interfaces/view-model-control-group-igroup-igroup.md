@@ -9,241 +9,241 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5b1ef0ed797e3546701a81b8013a76df71796d24
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: af06e438a3b3a1a667ed7c9a6c5ade3bb030d784
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555242"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851587"
 ---
-# <a name="group-type"></a><span data-ttu-id="437d3-103">グループ タイプ</span><span class="sxs-lookup"><span data-stu-id="437d3-103">Group type</span></span>
+# <a name="group-type"></a><span data-ttu-id="dbee1-103">グループ タイプ</span><span class="sxs-lookup"><span data-stu-id="dbee1-103">Group type</span></span>
 
 [!include [banner](../../../../includes/banner.md)]
 
-<span data-ttu-id="437d3-104">グループ コンテナーのコントロール タイプ。</span><span class="sxs-lookup"><span data-stu-id="437d3-104">Group container control type.</span></span>
-<span data-ttu-id="437d3-105">グループ コントロールは、任意の数のコントロールを子として持つコンテナー コントロールです。</span><span class="sxs-lookup"><span data-stu-id="437d3-105">A group control is a container control that has any number of controls as children.</span></span>
+<span data-ttu-id="dbee1-104">グループ コンテナーのコントロール タイプ。</span><span class="sxs-lookup"><span data-stu-id="dbee1-104">Group container control type.</span></span>
+<span data-ttu-id="dbee1-105">グループ コントロールは、任意の数のコントロールを子として持つコンテナー コントロールです。</span><span class="sxs-lookup"><span data-stu-id="dbee1-105">A group control is a container control that has any number of controls as children.</span></span>
 
-### <a name="hierarchy"></a><span data-ttu-id="437d3-106">階層</span><span class="sxs-lookup"><span data-stu-id="437d3-106">Hierarchy</span></span>
+### <a name="hierarchy"></a><span data-ttu-id="dbee1-106">階層</span><span class="sxs-lookup"><span data-stu-id="dbee1-106">Hierarchy</span></span>
 
-[<span data-ttu-id="437d3-107">ContainerControl</span><span class="sxs-lookup"><span data-stu-id="437d3-107">ContainerControl</span></span>](view-model-control-container-icontainercontrol-icontainercontrol.md) <br><span data-ttu-id="437d3-108">&nbsp;&nbsp;&nbsp;└─ グループ</span><span class="sxs-lookup"><span data-stu-id="437d3-108">&nbsp;&nbsp;&nbsp;└─ Group</span></span> <br>
+[<span data-ttu-id="dbee1-107">ContainerControl</span><span class="sxs-lookup"><span data-stu-id="dbee1-107">ContainerControl</span></span>](view-model-control-container-icontainercontrol-icontainercontrol.md) <br><span data-ttu-id="dbee1-108">&nbsp;&nbsp;&nbsp;└─ グループ</span><span class="sxs-lookup"><span data-stu-id="dbee1-108">&nbsp;&nbsp;&nbsp;└─ Group</span></span> <br>
 
-## <a name="index"></a><span data-ttu-id="437d3-109">指数</span><span class="sxs-lookup"><span data-stu-id="437d3-109">Index</span></span>
+## <a name="index"></a><span data-ttu-id="dbee1-109">指数</span><span class="sxs-lookup"><span data-stu-id="dbee1-109">Index</span></span>
 
-### <a name="properties"></a><span data-ttu-id="437d3-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="437d3-110">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="dbee1-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dbee1-110">Properties</span></span>
 
-* [<span data-ttu-id="437d3-111">コンテナー</span><span class="sxs-lookup"><span data-stu-id="437d3-111">container</span></span>](view-model-control-group-igroup-igroup.md#container)
-* [<span data-ttu-id="437d3-112">ジェネリック</span><span class="sxs-lookup"><span data-stu-id="437d3-112">generic</span></span>](view-model-control-group-igroup-igroup.md#generic)
-* [<span data-ttu-id="437d3-113">getDataSource</span><span class="sxs-lookup"><span data-stu-id="437d3-113">getDataSource</span></span>](view-model-control-group-igroup-igroup.md#getdatasource)
-* [<span data-ttu-id="437d3-114">非表示</span><span class="sxs-lookup"><span data-stu-id="437d3-114">hidden</span></span>](view-model-control-group-igroup-igroup.md#hidden)
+* [<span data-ttu-id="dbee1-111">コンテナー</span><span class="sxs-lookup"><span data-stu-id="dbee1-111">container</span></span>](view-model-control-group-igroup-igroup.md#container)
+* [<span data-ttu-id="dbee1-112">ジェネリック</span><span class="sxs-lookup"><span data-stu-id="dbee1-112">generic</span></span>](view-model-control-group-igroup-igroup.md#generic)
+* [<span data-ttu-id="dbee1-113">getDataSource</span><span class="sxs-lookup"><span data-stu-id="dbee1-113">getDataSource</span></span>](view-model-control-group-igroup-igroup.md#getdatasource)
+* [<span data-ttu-id="dbee1-114">非表示</span><span class="sxs-lookup"><span data-stu-id="dbee1-114">hidden</span></span>](view-model-control-group-igroup-igroup.md#hidden)
 
-### <a name="methods"></a><span data-ttu-id="437d3-115">メソッド</span><span class="sxs-lookup"><span data-stu-id="437d3-115">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="dbee1-115">メソッド</span><span class="sxs-lookup"><span data-stu-id="dbee1-115">Methods</span></span>
 
-* [<span data-ttu-id="437d3-116">applyDesign</span><span class="sxs-lookup"><span data-stu-id="437d3-116">applyDesign</span></span>](view-model-control-group-igroup-igroup.md#applydesign)
-* [<span data-ttu-id="437d3-117">dataContext</span><span class="sxs-lookup"><span data-stu-id="437d3-117">dataContext</span></span>](view-model-control-group-igroup-igroup.md#datacontext)
-* [<span data-ttu-id="437d3-118">getChildren</span><span class="sxs-lookup"><span data-stu-id="437d3-118">getChildren</span></span>](view-model-control-group-igroup-igroup.md#getchildren)
-* [<span data-ttu-id="437d3-119">getControl</span><span class="sxs-lookup"><span data-stu-id="437d3-119">getControl</span></span>](view-model-control-group-igroup-igroup.md#getcontrol)
-* [<span data-ttu-id="437d3-120">getControlById</span><span class="sxs-lookup"><span data-stu-id="437d3-120">getControlById</span></span>](view-model-control-group-igroup-igroup.md#getcontrolbyid)
-* [<span data-ttu-id="437d3-121">getDesign</span><span class="sxs-lookup"><span data-stu-id="437d3-121">getDesign</span></span>](view-model-control-group-igroup-igroup.md#getdesign)
-* [<span data-ttu-id="437d3-122">isEditable</span><span class="sxs-lookup"><span data-stu-id="437d3-122">isEditable</span></span>](view-model-control-group-igroup-igroup.md#iseditable)
-* [<span data-ttu-id="437d3-123">メタデータ</span><span class="sxs-lookup"><span data-stu-id="437d3-123">metadata</span></span>](view-model-control-group-igroup-igroup.md#metadata)
-* [<span data-ttu-id="437d3-124">親</span><span class="sxs-lookup"><span data-stu-id="437d3-124">parent</span></span>](view-model-control-group-igroup-igroup.md#parent)
-* [<span data-ttu-id="437d3-125">ルート</span><span class="sxs-lookup"><span data-stu-id="437d3-125">root</span></span>](view-model-control-group-igroup-igroup.md#root)
+* [<span data-ttu-id="dbee1-116">applyDesign</span><span class="sxs-lookup"><span data-stu-id="dbee1-116">applyDesign</span></span>](view-model-control-group-igroup-igroup.md#applydesign)
+* [<span data-ttu-id="dbee1-117">dataContext</span><span class="sxs-lookup"><span data-stu-id="dbee1-117">dataContext</span></span>](view-model-control-group-igroup-igroup.md#datacontext)
+* [<span data-ttu-id="dbee1-118">getChildren</span><span class="sxs-lookup"><span data-stu-id="dbee1-118">getChildren</span></span>](view-model-control-group-igroup-igroup.md#getchildren)
+* [<span data-ttu-id="dbee1-119">getControl</span><span class="sxs-lookup"><span data-stu-id="dbee1-119">getControl</span></span>](view-model-control-group-igroup-igroup.md#getcontrol)
+* [<span data-ttu-id="dbee1-120">getControlById</span><span class="sxs-lookup"><span data-stu-id="dbee1-120">getControlById</span></span>](view-model-control-group-igroup-igroup.md#getcontrolbyid)
+* [<span data-ttu-id="dbee1-121">getDesign</span><span class="sxs-lookup"><span data-stu-id="dbee1-121">getDesign</span></span>](view-model-control-group-igroup-igroup.md#getdesign)
+* [<span data-ttu-id="dbee1-122">isEditable</span><span class="sxs-lookup"><span data-stu-id="dbee1-122">isEditable</span></span>](view-model-control-group-igroup-igroup.md#iseditable)
+* [<span data-ttu-id="dbee1-123">メタデータ</span><span class="sxs-lookup"><span data-stu-id="dbee1-123">metadata</span></span>](view-model-control-group-igroup-igroup.md#metadata)
+* [<span data-ttu-id="dbee1-124">親</span><span class="sxs-lookup"><span data-stu-id="dbee1-124">parent</span></span>](view-model-control-group-igroup-igroup.md#parent)
+* [<span data-ttu-id="dbee1-125">ルート</span><span class="sxs-lookup"><span data-stu-id="dbee1-125">root</span></span>](view-model-control-group-igroup-igroup.md#root)
 
-## <a name="properties"></a><span data-ttu-id="437d3-126">プロパティ</span><span class="sxs-lookup"><span data-stu-id="437d3-126">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="dbee1-126">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dbee1-126">Properties</span></span>
 
-### <a name="container"></a><span data-ttu-id="437d3-127">コンテナー</span><span class="sxs-lookup"><span data-stu-id="437d3-127">container</span></span>
+### <a name="container"></a><span data-ttu-id="dbee1-127">コンテナー</span><span class="sxs-lookup"><span data-stu-id="dbee1-127">container</span></span>
 
-<span data-ttu-id="437d3-128">container: ブール値</span><span class="sxs-lookup"><span data-stu-id="437d3-128">container: boolean</span></span>
+<span data-ttu-id="dbee1-128">container: ブール値</span><span class="sxs-lookup"><span data-stu-id="dbee1-128">container: boolean</span></span>
 
-<span data-ttu-id="437d3-129">コントロールがコンテナーの場合は true です。</span><span class="sxs-lookup"><span data-stu-id="437d3-129">True if the control is a container.</span></span>
+<span data-ttu-id="dbee1-129">コントロールがコンテナーの場合は true です。</span><span class="sxs-lookup"><span data-stu-id="dbee1-129">True if the control is a container.</span></span>
 
-> <span data-ttu-id="437d3-130">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container) から継承</span><span class="sxs-lookup"><span data-stu-id="437d3-130">Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container)</span></span>
+> <span data-ttu-id="dbee1-130">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container) から継承</span><span class="sxs-lookup"><span data-stu-id="dbee1-130">Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container)</span></span>
 > 
-> <span data-ttu-id="437d3-131">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container) をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="437d3-131">Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)</span></span>
+> <span data-ttu-id="dbee1-131">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container) をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="dbee1-131">Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)</span></span>
 
 
-### <a name="generic"></a><span data-ttu-id="437d3-132">generic</span><span class="sxs-lookup"><span data-stu-id="437d3-132">generic</span></span>
+### <a name="generic"></a><span data-ttu-id="dbee1-132">generic</span><span class="sxs-lookup"><span data-stu-id="dbee1-132">generic</span></span>
 
-<span data-ttu-id="437d3-133">generic: boolean (省略可)</span><span class="sxs-lookup"><span data-stu-id="437d3-133">generic: boolean (optional)</span></span> 
-
-
-
-> <span data-ttu-id="437d3-134">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic) から継承</span><span class="sxs-lookup"><span data-stu-id="437d3-134">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)</span></span>
-
-
-### <a name="getdatasource"></a><span data-ttu-id="437d3-135">getDataSource</span><span class="sxs-lookup"><span data-stu-id="437d3-135">getDataSource</span></span>
-
-<span data-ttu-id="437d3-136">getDataSource: function(): any</span><span class="sxs-lookup"><span data-stu-id="437d3-136">getDataSource: function(): any</span></span>
+<span data-ttu-id="dbee1-133">generic: boolean (省略可)</span><span class="sxs-lookup"><span data-stu-id="dbee1-133">generic: boolean (optional)</span></span> 
 
 
 
-> <span data-ttu-id="437d3-137">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource) から継承</span><span class="sxs-lookup"><span data-stu-id="437d3-137">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)</span></span>
+> <span data-ttu-id="dbee1-134">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic) から継承</span><span class="sxs-lookup"><span data-stu-id="dbee1-134">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)</span></span>
 
 
-### <a name="hidden"></a><span data-ttu-id="437d3-138">hidden</span><span class="sxs-lookup"><span data-stu-id="437d3-138">hidden</span></span>
+### <a name="getdatasource"></a><span data-ttu-id="dbee1-135">getDataSource</span><span class="sxs-lookup"><span data-stu-id="dbee1-135">getDataSource</span></span>
 
-<span data-ttu-id="437d3-139">hidden: boolean</span><span class="sxs-lookup"><span data-stu-id="437d3-139">hidden: boolean</span></span>
-
-<span data-ttu-id="437d3-140">コントロールが非常時の場合は true です。</span><span class="sxs-lookup"><span data-stu-id="437d3-140">True if the control is hidden.</span></span>
-
-> <span data-ttu-id="437d3-141">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden) から継承</span><span class="sxs-lookup"><span data-stu-id="437d3-141">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)</span></span>
+<span data-ttu-id="dbee1-136">getDataSource: function(): any</span><span class="sxs-lookup"><span data-stu-id="dbee1-136">getDataSource: function(): any</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="437d3-142">メソッド</span><span class="sxs-lookup"><span data-stu-id="437d3-142">Methods</span></span>
 
-### <a name="applydesign"></a><span data-ttu-id="437d3-143">applyDesign</span><span class="sxs-lookup"><span data-stu-id="437d3-143">applyDesign</span></span>
-
-
-<span data-ttu-id="437d3-144">applyDesign(IDesign: [GroupDesign](view-model-control-group-igroup-igroupdesign.md)): void</span><span class="sxs-lookup"><span data-stu-id="437d3-144">applyDesign(IDesign: [GroupDesign](view-model-control-group-igroup-igroupdesign.md)): void</span></span>
-
-<span data-ttu-id="437d3-145">付与されたデザインをコントロールのデザインに適用します。</span><span class="sxs-lookup"><span data-stu-id="437d3-145">Applies given design to the design on the control.</span></span>
-<span data-ttu-id="437d3-146">デザインが既に存在する場合は、設計のプロトタイプ チェーンが保持されます。</span><span class="sxs-lookup"><span data-stu-id="437d3-146">If a design already exists, the prototype chain of the design will be preserved.</span></span>
-
-> <span data-ttu-id="437d3-147">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[applyDesign](view-model-control-basecontrol-icontrol-icontrol.md#applydesign) をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="437d3-147">Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[applyDesign](view-model-control-basecontrol-icontrol-icontrol.md#applydesign)</span></span>
+> <span data-ttu-id="dbee1-137">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource) から継承</span><span class="sxs-lookup"><span data-stu-id="dbee1-137">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)</span></span>
 
 
-#### <a name="parameters"></a><span data-ttu-id="437d3-148">パラメーター</span><span class="sxs-lookup"><span data-stu-id="437d3-148">Parameters</span></span>
+### <a name="hidden"></a><span data-ttu-id="dbee1-138">hidden</span><span class="sxs-lookup"><span data-stu-id="dbee1-138">hidden</span></span>
 
-| <span data-ttu-id="437d3-149">氏名</span><span class="sxs-lookup"><span data-stu-id="437d3-149">Name</span></span> | <span data-ttu-id="437d3-150">種類</span><span class="sxs-lookup"><span data-stu-id="437d3-150">Type</span></span> | <span data-ttu-id="437d3-151">説明</span><span class="sxs-lookup"><span data-stu-id="437d3-151">Description</span></span> |
+<span data-ttu-id="dbee1-139">hidden: boolean</span><span class="sxs-lookup"><span data-stu-id="dbee1-139">hidden: boolean</span></span>
+
+<span data-ttu-id="dbee1-140">コントロールが非常時の場合は true です。</span><span class="sxs-lookup"><span data-stu-id="dbee1-140">True if the control is hidden.</span></span>
+
+> <span data-ttu-id="dbee1-141">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden) から継承</span><span class="sxs-lookup"><span data-stu-id="dbee1-141">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)</span></span>
+
+
+## <a name="methods"></a><span data-ttu-id="dbee1-142">メソッド</span><span class="sxs-lookup"><span data-stu-id="dbee1-142">Methods</span></span>
+
+### <a name="applydesign"></a><span data-ttu-id="dbee1-143">applyDesign</span><span class="sxs-lookup"><span data-stu-id="dbee1-143">applyDesign</span></span>
+
+
+<span data-ttu-id="dbee1-144">applyDesign(IDesign: [GroupDesign](view-model-control-group-igroup-igroupdesign.md)): void</span><span class="sxs-lookup"><span data-stu-id="dbee1-144">applyDesign(IDesign: [GroupDesign](view-model-control-group-igroup-igroupdesign.md)): void</span></span>
+
+<span data-ttu-id="dbee1-145">付与されたデザインをコントロールのデザインに適用します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-145">Applies given design to the design on the control.</span></span>
+<span data-ttu-id="dbee1-146">デザインが既に存在する場合は、設計のプロトタイプ チェーンが保持されます。</span><span class="sxs-lookup"><span data-stu-id="dbee1-146">If a design already exists, the prototype chain of the design will be preserved.</span></span>
+
+> <span data-ttu-id="dbee1-147">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[applyDesign](view-model-control-basecontrol-icontrol-icontrol.md#applydesign) をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="dbee1-147">Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[applyDesign](view-model-control-basecontrol-icontrol-icontrol.md#applydesign)</span></span>
+
+
+#### <a name="parameters"></a><span data-ttu-id="dbee1-148">パラメーター</span><span class="sxs-lookup"><span data-stu-id="dbee1-148">Parameters</span></span>
+
+| <span data-ttu-id="dbee1-149">氏名</span><span class="sxs-lookup"><span data-stu-id="dbee1-149">Name</span></span> | <span data-ttu-id="dbee1-150">種類</span><span class="sxs-lookup"><span data-stu-id="dbee1-150">Type</span></span> | <span data-ttu-id="dbee1-151">説明</span><span class="sxs-lookup"><span data-stu-id="dbee1-151">Description</span></span> |
 | ---- | ---- | ----------- |
-| <span data-ttu-id="437d3-152">IDesign</span><span class="sxs-lookup"><span data-stu-id="437d3-152">IDesign</span></span>|[<span data-ttu-id="437d3-153">GroupDesign</span><span class="sxs-lookup"><span data-stu-id="437d3-153">GroupDesign</span></span>](view-model-control-group-igroup-igroupdesign.md)|<span data-ttu-id="437d3-154">デザイン プロパティをキーとして含むオブジェクト</span><span class="sxs-lookup"><span data-stu-id="437d3-154">object containing design properties as keys</span></span>|
+| <span data-ttu-id="dbee1-152">IDesign</span><span class="sxs-lookup"><span data-stu-id="dbee1-152">IDesign</span></span>|[<span data-ttu-id="dbee1-153">GroupDesign</span><span class="sxs-lookup"><span data-stu-id="dbee1-153">GroupDesign</span></span>](view-model-control-group-igroup-igroupdesign.md)|<span data-ttu-id="dbee1-154">デザイン プロパティをキーとして含むオブジェクト</span><span class="sxs-lookup"><span data-stu-id="dbee1-154">object containing design properties as keys</span></span>|
 
-#### <a name="returns-void"></a><span data-ttu-id="437d3-155">void を返します</span><span class="sxs-lookup"><span data-stu-id="437d3-155">Returns void</span></span>
+#### <a name="returns-void"></a><span data-ttu-id="dbee1-155">void を返します</span><span class="sxs-lookup"><span data-stu-id="dbee1-155">Returns void</span></span>
 
-### <a name="datacontext"></a><span data-ttu-id="437d3-156">dataContext</span><span class="sxs-lookup"><span data-stu-id="437d3-156">dataContext</span></span>
-
-
-<span data-ttu-id="437d3-157">dataContext(): any</span><span class="sxs-lookup"><span data-stu-id="437d3-157">dataContext(): any</span></span>
+### <a name="datacontext"></a><span data-ttu-id="dbee1-156">dataContext</span><span class="sxs-lookup"><span data-stu-id="dbee1-156">dataContext</span></span>
 
 
-
-> <span data-ttu-id="437d3-158">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext) から継承</span><span class="sxs-lookup"><span data-stu-id="437d3-158">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)</span></span>
-
-#### <a name="returns-any"></a><span data-ttu-id="437d3-159">any を返します</span><span class="sxs-lookup"><span data-stu-id="437d3-159">Returns any</span></span>
-
-### <a name="getchildren"></a><span data-ttu-id="437d3-160">getChildren</span><span class="sxs-lookup"><span data-stu-id="437d3-160">getChildren</span></span>
-
-
-<span data-ttu-id="437d3-161">getChildren(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ]</span><span class="sxs-lookup"><span data-stu-id="437d3-161">getChildren(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ]</span></span>
-
-<span data-ttu-id="437d3-162">このグループ コントロールに関連付けられている子のリストを返します。</span><span class="sxs-lookup"><span data-stu-id="437d3-162">Returns the list of children associated with this group control.</span></span>
-
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd--"></a><span data-ttu-id="437d3-163">[Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ] を返します</span><span class="sxs-lookup"><span data-stu-id="437d3-163">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ]</span></span>
+<span data-ttu-id="dbee1-157">dataContext(): any</span><span class="sxs-lookup"><span data-stu-id="dbee1-157">dataContext(): any</span></span>
 
 
 
-### <a name="getcontrol"></a><span data-ttu-id="437d3-164">getControl</span><span class="sxs-lookup"><span data-stu-id="437d3-164">getControl</span></span>
+> <span data-ttu-id="dbee1-158">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext) から継承</span><span class="sxs-lookup"><span data-stu-id="dbee1-158">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)</span></span>
+
+#### <a name="returns-any"></a><span data-ttu-id="dbee1-159">any を返します</span><span class="sxs-lookup"><span data-stu-id="dbee1-159">Returns any</span></span>
+
+### <a name="getchildren"></a><span data-ttu-id="dbee1-160">getChildren</span><span class="sxs-lookup"><span data-stu-id="dbee1-160">getChildren</span></span>
 
 
-<span data-ttu-id="437d3-165">getControl(controlName: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span><span class="sxs-lookup"><span data-stu-id="437d3-165">getControl(controlName: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
+<span data-ttu-id="dbee1-161">getChildren(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ]</span><span class="sxs-lookup"><span data-stu-id="dbee1-161">getChildren(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ]</span></span>
 
-<span data-ttu-id="437d3-166">コントロールの名前の場合、コントロール インスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="437d3-166">Given the name of a control, returns the control instance.</span></span>
+<span data-ttu-id="dbee1-162">このグループ コントロールに関連付けられている子のリストを返します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-162">Returns the list of children associated with this group control.</span></span>
 
-> <span data-ttu-id="437d3-167">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControl](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrol) から継承</span><span class="sxs-lookup"><span data-stu-id="437d3-167">Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControl](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrol)</span></span>
+#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd--"></a><span data-ttu-id="dbee1-163">[Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ] を返します</span><span class="sxs-lookup"><span data-stu-id="dbee1-163">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ]</span></span>
 
 
-#### <a name="parameters"></a><span data-ttu-id="437d3-168">パラメーター</span><span class="sxs-lookup"><span data-stu-id="437d3-168">Parameters</span></span>
 
-| <span data-ttu-id="437d3-169">氏名</span><span class="sxs-lookup"><span data-stu-id="437d3-169">Name</span></span> | <span data-ttu-id="437d3-170">種類</span><span class="sxs-lookup"><span data-stu-id="437d3-170">Type</span></span> | <span data-ttu-id="437d3-171">説明</span><span class="sxs-lookup"><span data-stu-id="437d3-171">Description</span></span> |
+### <a name="getcontrol"></a><span data-ttu-id="dbee1-164">getControl</span><span class="sxs-lookup"><span data-stu-id="dbee1-164">getControl</span></span>
+
+
+<span data-ttu-id="dbee1-165">getControl(controlName: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span><span class="sxs-lookup"><span data-stu-id="dbee1-165">getControl(controlName: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
+
+<span data-ttu-id="dbee1-166">コントロールの名前の場合、コントロール インスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-166">Given the name of a control, returns the control instance.</span></span>
+
+> <span data-ttu-id="dbee1-167">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControl](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrol) から継承</span><span class="sxs-lookup"><span data-stu-id="dbee1-167">Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControl](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrol)</span></span>
+
+
+#### <a name="parameters"></a><span data-ttu-id="dbee1-168">パラメーター</span><span class="sxs-lookup"><span data-stu-id="dbee1-168">Parameters</span></span>
+
+| <span data-ttu-id="dbee1-169">氏名</span><span class="sxs-lookup"><span data-stu-id="dbee1-169">Name</span></span> | <span data-ttu-id="dbee1-170">種類</span><span class="sxs-lookup"><span data-stu-id="dbee1-170">Type</span></span> | <span data-ttu-id="dbee1-171">説明</span><span class="sxs-lookup"><span data-stu-id="dbee1-171">Description</span></span> |
 | ---- | ---- | ----------- |
-| <span data-ttu-id="437d3-172">controlName</span><span class="sxs-lookup"><span data-stu-id="437d3-172">controlName</span></span>|<span data-ttu-id="437d3-173">string</span><span class="sxs-lookup"><span data-stu-id="437d3-173">string</span></span>|<span data-ttu-id="437d3-174">コントロール名</span><span class="sxs-lookup"><span data-stu-id="437d3-174">control name</span></span>|
+| <span data-ttu-id="dbee1-172">controlName</span><span class="sxs-lookup"><span data-stu-id="dbee1-172">controlName</span></span>|<span data-ttu-id="dbee1-173">string</span><span class="sxs-lookup"><span data-stu-id="dbee1-173">string</span></span>|<span data-ttu-id="dbee1-174">コントロール名</span><span class="sxs-lookup"><span data-stu-id="dbee1-174">control name</span></span>|
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a><span data-ttu-id="437d3-175">[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します</span><span class="sxs-lookup"><span data-stu-id="437d3-175">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
-
-
-
-### <a name="getcontrolbyid"></a><span data-ttu-id="437d3-176">getControlById</span><span class="sxs-lookup"><span data-stu-id="437d3-176">getControlById</span></span>
+#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a><span data-ttu-id="dbee1-175">[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します</span><span class="sxs-lookup"><span data-stu-id="dbee1-175">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
 
 
-<span data-ttu-id="437d3-177">getControlById(id: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span><span class="sxs-lookup"><span data-stu-id="437d3-177">getControlById(id: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
 
-<span data-ttu-id="437d3-178">コントロールの ID の場合、コントロール インスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="437d3-178">Given the ID of a control, returns the control instance.</span></span>
-
-> <span data-ttu-id="437d3-179">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControlById](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrolbyid) から継承</span><span class="sxs-lookup"><span data-stu-id="437d3-179">Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControlById](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrolbyid)</span></span>
+### <a name="getcontrolbyid"></a><span data-ttu-id="dbee1-176">getControlById</span><span class="sxs-lookup"><span data-stu-id="dbee1-176">getControlById</span></span>
 
 
-#### <a name="parameters"></a><span data-ttu-id="437d3-180">パラメーター</span><span class="sxs-lookup"><span data-stu-id="437d3-180">Parameters</span></span>
+<span data-ttu-id="dbee1-177">getControlById(id: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span><span class="sxs-lookup"><span data-stu-id="dbee1-177">getControlById(id: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
 
-| <span data-ttu-id="437d3-181">氏名</span><span class="sxs-lookup"><span data-stu-id="437d3-181">Name</span></span> | <span data-ttu-id="437d3-182">種類</span><span class="sxs-lookup"><span data-stu-id="437d3-182">Type</span></span> | <span data-ttu-id="437d3-183">説明</span><span class="sxs-lookup"><span data-stu-id="437d3-183">Description</span></span> |
+<span data-ttu-id="dbee1-178">コントロールの ID の場合、コントロール インスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-178">Given the ID of a control, returns the control instance.</span></span>
+
+> <span data-ttu-id="dbee1-179">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControlById](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrolbyid) から継承</span><span class="sxs-lookup"><span data-stu-id="dbee1-179">Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControlById](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrolbyid)</span></span>
+
+
+#### <a name="parameters"></a><span data-ttu-id="dbee1-180">パラメーター</span><span class="sxs-lookup"><span data-stu-id="dbee1-180">Parameters</span></span>
+
+| <span data-ttu-id="dbee1-181">氏名</span><span class="sxs-lookup"><span data-stu-id="dbee1-181">Name</span></span> | <span data-ttu-id="dbee1-182">種類</span><span class="sxs-lookup"><span data-stu-id="dbee1-182">Type</span></span> | <span data-ttu-id="dbee1-183">説明</span><span class="sxs-lookup"><span data-stu-id="dbee1-183">Description</span></span> |
 | ---- | ---- | ----------- |
-| <span data-ttu-id="437d3-184">id</span><span class="sxs-lookup"><span data-stu-id="437d3-184">id</span></span>|<span data-ttu-id="437d3-185">string</span><span class="sxs-lookup"><span data-stu-id="437d3-185">string</span></span>|<span data-ttu-id="437d3-186">コントロール ID</span><span class="sxs-lookup"><span data-stu-id="437d3-186">control ID</span></span>|
+| <span data-ttu-id="dbee1-184">id</span><span class="sxs-lookup"><span data-stu-id="dbee1-184">id</span></span>|<span data-ttu-id="dbee1-185">string</span><span class="sxs-lookup"><span data-stu-id="dbee1-185">string</span></span>|<span data-ttu-id="dbee1-186">コントロール ID</span><span class="sxs-lookup"><span data-stu-id="dbee1-186">control ID</span></span>|
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a><span data-ttu-id="437d3-187">[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します</span><span class="sxs-lookup"><span data-stu-id="437d3-187">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
-
-
-
-### <a name="getdesign"></a><span data-ttu-id="437d3-188">getDesign</span><span class="sxs-lookup"><span data-stu-id="437d3-188">getDesign</span></span>
-
-
-<span data-ttu-id="437d3-189">getDesign(): [Design](view-model-ipage-idesign.md)</span><span class="sxs-lookup"><span data-stu-id="437d3-189">getDesign(): [Design](view-model-ipage-idesign.md)</span></span>
-
-<span data-ttu-id="437d3-190">このコントロールのデザイン オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="437d3-190">Returns the design object of this control.</span></span>
-
-> <span data-ttu-id="437d3-191">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](view-model-control-basecontrol-icontrol-icontrol.md#getdesign) から継承</span><span class="sxs-lookup"><span data-stu-id="437d3-191">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](view-model-control-basecontrol-icontrol-icontrol.md#getdesign)</span></span>
-
-#### <a name="returns-designview-model-ipage-idesignmd"></a><span data-ttu-id="437d3-192">[Design](view-model-ipage-idesign.md) を返します</span><span class="sxs-lookup"><span data-stu-id="437d3-192">Returns [Design](view-model-ipage-idesign.md)</span></span>
+#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a><span data-ttu-id="dbee1-187">[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します</span><span class="sxs-lookup"><span data-stu-id="dbee1-187">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
 
 
 
-### <a name="iseditable"></a><span data-ttu-id="437d3-193">isEditable</span><span class="sxs-lookup"><span data-stu-id="437d3-193">isEditable</span></span>
+### <a name="getdesign"></a><span data-ttu-id="dbee1-188">getDesign</span><span class="sxs-lookup"><span data-stu-id="dbee1-188">getDesign</span></span>
 
 
-<span data-ttu-id="437d3-194">isEditable(): boolean</span><span class="sxs-lookup"><span data-stu-id="437d3-194">isEditable(): boolean</span></span>
+<span data-ttu-id="dbee1-189">getDesign(): [Design](view-model-ipage-idesign.md)</span><span class="sxs-lookup"><span data-stu-id="dbee1-189">getDesign(): [Design](view-model-ipage-idesign.md)</span></span>
 
-<span data-ttu-id="437d3-195">コントロールが編集可能かどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="437d3-195">Boolean indicating if the control is editable.</span></span>
-<span data-ttu-id="437d3-196">コントロールまたはその親が編集可能でない場合は、false を返します。</span><span class="sxs-lookup"><span data-stu-id="437d3-196">Returns false when either the control or it's parent is not editable.</span></span>
-<span data-ttu-id="437d3-197">コントロールとその親の両方が編集可能な場合、true を返します。</span><span class="sxs-lookup"><span data-stu-id="437d3-197">Returns true when both the control and it's parent are editable.</span></span>
-<span data-ttu-id="437d3-198">コントロールまたはその親が編集可能で、もう一方が未定義の場合は true を返します。</span><span class="sxs-lookup"><span data-stu-id="437d3-198">Returns true when either the control or it's parent is editable and the other is undefined.</span></span>
-<span data-ttu-id="437d3-199">コントロールの編集機能と親の編集機能の両方が未定義の場合は undefined を返します。</span><span class="sxs-lookup"><span data-stu-id="437d3-199">Returns undefined if both the control's edit-ability and it's parent's edit-ability is undefined.</span></span>
+<span data-ttu-id="dbee1-190">このコントロールのデザイン オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-190">Returns the design object of this control.</span></span>
 
-> <span data-ttu-id="437d3-200">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[isEditable](view-model-control-basecontrol-icontrol-icontrol.md#iseditable) から継承</span><span class="sxs-lookup"><span data-stu-id="437d3-200">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[isEditable](view-model-control-basecontrol-icontrol-icontrol.md#iseditable)</span></span>
+> <span data-ttu-id="dbee1-191">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](view-model-control-basecontrol-icontrol-icontrol.md#getdesign) から継承</span><span class="sxs-lookup"><span data-stu-id="dbee1-191">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](view-model-control-basecontrol-icontrol-icontrol.md#getdesign)</span></span>
 
-#### <a name="returns-boolean"></a><span data-ttu-id="437d3-201">ブール値を返します</span><span class="sxs-lookup"><span data-stu-id="437d3-201">Returns boolean</span></span>
+#### <a name="returns-designview-model-ipage-idesignmd"></a><span data-ttu-id="dbee1-192">[Design](view-model-ipage-idesign.md) を返します</span><span class="sxs-lookup"><span data-stu-id="dbee1-192">Returns [Design](view-model-ipage-idesign.md)</span></span>
 
 
 
-### <a name="metadata"></a><span data-ttu-id="437d3-202">metadata</span><span class="sxs-lookup"><span data-stu-id="437d3-202">metadata</span></span>
+### <a name="iseditable"></a><span data-ttu-id="dbee1-193">isEditable</span><span class="sxs-lookup"><span data-stu-id="dbee1-193">isEditable</span></span>
 
 
-<span data-ttu-id="437d3-203">metadata(): [GroupMetadata](view-model-control-group-igroup-igroupmetadata.md)</span><span class="sxs-lookup"><span data-stu-id="437d3-203">metadata(): [GroupMetadata](view-model-control-group-igroup-igroupmetadata.md)</span></span>
+<span data-ttu-id="dbee1-194">isEditable(): boolean</span><span class="sxs-lookup"><span data-stu-id="dbee1-194">isEditable(): boolean</span></span>
 
-<span data-ttu-id="437d3-204">このコントロールのメタデータ オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="437d3-204">Returns the metadata object of this control.</span></span>
+<span data-ttu-id="dbee1-195">コントロールが編集可能かどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="dbee1-195">Boolean indicating if the control is editable.</span></span>
+<span data-ttu-id="dbee1-196">コントロールまたはその親が編集可能でない場合は、false を返します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-196">Returns false when either the control or it's parent is not editable.</span></span>
+<span data-ttu-id="dbee1-197">コントロールとその親の両方が編集可能な場合、true を返します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-197">Returns true when both the control and it's parent are editable.</span></span>
+<span data-ttu-id="dbee1-198">コントロールまたはその親が編集可能で、もう一方が未定義の場合は true を返します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-198">Returns true when either the control or it's parent is editable and the other is undefined.</span></span>
+<span data-ttu-id="dbee1-199">コントロールの編集機能と親の編集機能の両方が未定義の場合は undefined を返します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-199">Returns undefined if both the control's edit-ability and it's parent's edit-ability is undefined.</span></span>
 
-> <span data-ttu-id="437d3-205">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[metadata](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata) をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="437d3-205">Overrides [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[metadata](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata)</span></span>
+> <span data-ttu-id="dbee1-200">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[isEditable](view-model-control-basecontrol-icontrol-icontrol.md#iseditable) から継承</span><span class="sxs-lookup"><span data-stu-id="dbee1-200">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[isEditable](view-model-control-basecontrol-icontrol-icontrol.md#iseditable)</span></span>
 
-#### <a name="returns-groupmetadataview-model-control-group-igroup-igroupmetadatamd"></a><span data-ttu-id="437d3-206">[GroupMetadata](view-model-control-group-igroup-igroupmetadata.md) を返します</span><span class="sxs-lookup"><span data-stu-id="437d3-206">Returns [GroupMetadata](view-model-control-group-igroup-igroupmetadata.md)</span></span>
-
-
-
-### <a name="parent"></a><span data-ttu-id="437d3-207">parent</span><span class="sxs-lookup"><span data-stu-id="437d3-207">parent</span></span>
-
-
-<span data-ttu-id="437d3-208">parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md)</span><span class="sxs-lookup"><span data-stu-id="437d3-208">parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md)</span></span>
-
-<span data-ttu-id="437d3-209">このコントロールの親 (コントロールまたはページ) を返します。</span><span class="sxs-lookup"><span data-stu-id="437d3-209">Returns the parent (control or page) of this control.</span></span>
-
-> <span data-ttu-id="437d3-210">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[parent](view-model-control-basecontrol-icontrol-icontrol.md#parent) から継承</span><span class="sxs-lookup"><span data-stu-id="437d3-210">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[parent](view-model-control-basecontrol-icontrol-icontrol.md#parent)</span></span>
-
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd-124-pageview-model-ipage-ipagemd"></a><span data-ttu-id="437d3-211">[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します</span><span class="sxs-lookup"><span data-stu-id="437d3-211">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md)</span></span>
+#### <a name="returns-boolean"></a><span data-ttu-id="dbee1-201">ブール値を返します</span><span class="sxs-lookup"><span data-stu-id="dbee1-201">Returns boolean</span></span>
 
 
 
-### <a name="root"></a><span data-ttu-id="437d3-212">root</span><span class="sxs-lookup"><span data-stu-id="437d3-212">root</span></span>
+### <a name="metadata"></a><span data-ttu-id="dbee1-202">metadata</span><span class="sxs-lookup"><span data-stu-id="dbee1-202">metadata</span></span>
 
 
-<span data-ttu-id="437d3-213">root(): [Page](view-model-ipage-ipage.md)</span><span class="sxs-lookup"><span data-stu-id="437d3-213">root(): [Page](view-model-ipage-ipage.md)</span></span>
+<span data-ttu-id="dbee1-203">metadata(): [GroupMetadata](view-model-control-group-igroup-igroupmetadata.md)</span><span class="sxs-lookup"><span data-stu-id="dbee1-203">metadata(): [GroupMetadata](view-model-control-group-igroup-igroupmetadata.md)</span></span>
 
-<span data-ttu-id="437d3-214">このコントロールのルート フォーム インスタンス (ページ) を返します。</span><span class="sxs-lookup"><span data-stu-id="437d3-214">Returns the root form instance (page) of this control.</span></span>
+<span data-ttu-id="dbee1-204">このコントロールのメタデータ オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-204">Returns the metadata object of this control.</span></span>
 
-> <span data-ttu-id="437d3-215">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[root](view-model-control-basecontrol-icontrol-icontrol.md#root) から継承</span><span class="sxs-lookup"><span data-stu-id="437d3-215">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[root](view-model-control-basecontrol-icontrol-icontrol.md#root)</span></span>
+> <span data-ttu-id="dbee1-205">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[metadata](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata) をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="dbee1-205">Overrides [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[metadata](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata)</span></span>
 
-#### <a name="returns-pageview-model-ipage-ipagemd"></a><span data-ttu-id="437d3-216">[Page](view-model-ipage-ipage.md) を返します</span><span class="sxs-lookup"><span data-stu-id="437d3-216">Returns [Page](view-model-ipage-ipage.md)</span></span>
+#### <a name="returns-groupmetadataview-model-control-group-igroup-igroupmetadatamd"></a><span data-ttu-id="dbee1-206">[GroupMetadata](view-model-control-group-igroup-igroupmetadata.md) を返します</span><span class="sxs-lookup"><span data-stu-id="dbee1-206">Returns [GroupMetadata](view-model-control-group-igroup-igroupmetadata.md)</span></span>
+
+
+
+### <a name="parent"></a><span data-ttu-id="dbee1-207">parent</span><span class="sxs-lookup"><span data-stu-id="dbee1-207">parent</span></span>
+
+
+<span data-ttu-id="dbee1-208">parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md)</span><span class="sxs-lookup"><span data-stu-id="dbee1-208">parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md)</span></span>
+
+<span data-ttu-id="dbee1-209">このコントロールの親 (コントロールまたはページ) を返します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-209">Returns the parent (control or page) of this control.</span></span>
+
+> <span data-ttu-id="dbee1-210">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[parent](view-model-control-basecontrol-icontrol-icontrol.md#parent) から継承</span><span class="sxs-lookup"><span data-stu-id="dbee1-210">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[parent](view-model-control-basecontrol-icontrol-icontrol.md#parent)</span></span>
+
+#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd-124-pageview-model-ipage-ipagemd"></a><span data-ttu-id="dbee1-211">[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します</span><span class="sxs-lookup"><span data-stu-id="dbee1-211">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md)</span></span>
+
+
+
+### <a name="root"></a><span data-ttu-id="dbee1-212">root</span><span class="sxs-lookup"><span data-stu-id="dbee1-212">root</span></span>
+
+
+<span data-ttu-id="dbee1-213">root(): [Page](view-model-ipage-ipage.md)</span><span class="sxs-lookup"><span data-stu-id="dbee1-213">root(): [Page](view-model-ipage-ipage.md)</span></span>
+
+<span data-ttu-id="dbee1-214">このコントロールのルート フォーム インスタンス (ページ) を返します。</span><span class="sxs-lookup"><span data-stu-id="dbee1-214">Returns the root form instance (page) of this control.</span></span>
+
+> <span data-ttu-id="dbee1-215">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[root](view-model-control-basecontrol-icontrol-icontrol.md#root) から継承</span><span class="sxs-lookup"><span data-stu-id="dbee1-215">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[root](view-model-control-basecontrol-icontrol-icontrol.md#root)</span></span>
+
+#### <a name="returns-pageview-model-ipage-ipagemd"></a><span data-ttu-id="dbee1-216">[Page](view-model-ipage-ipage.md) を返します</span><span class="sxs-lookup"><span data-stu-id="dbee1-216">Returns [Page](view-model-ipage-ipage.md)</span></span>
 
 
 

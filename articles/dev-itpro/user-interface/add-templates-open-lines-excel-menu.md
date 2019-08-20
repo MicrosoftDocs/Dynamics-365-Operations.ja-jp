@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 77432
 ms.assetid: 9793bf54-cfb8-4ba1-bc8f-ba49ef37884a
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74f401f427ada267c0aeaf2802cd9a5f3371d5c0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d55edc83f72d52c738d0da5e215ccffd5cbcb3c9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569694"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851247"
 ---
-# <a name="add-templates-to-the-open-lines-in-excel-menu"></a><span data-ttu-id="8e227-103">[Excel で明細行を開く] メニューへのテンプレートの追加</span><span class="sxs-lookup"><span data-stu-id="8e227-103">Add templates to the Open lines in Excel menu</span></span>
+# <a name="add-templates-to-the-open-lines-in-excel-menu"></a><span data-ttu-id="d2305-103">[Excel で明細行を開く] メニューへのテンプレートの追加</span><span class="sxs-lookup"><span data-stu-id="d2305-103">Add templates to the Open lines in Excel menu</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="8e227-104">このトピックでは、仕訳帳のページで利用できる [Excel] メニューの [Open] 行にテンプレートを表示させる方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8e227-104">This topic describes how you can promote a template to the Open lines in the Excel menu that is available on journal pages.</span></span>
+<span data-ttu-id="d2305-104">このトピックでは、仕訳帳のページで利用できる [Excel] メニューの [Open] 行にテンプレートを表示させる方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d2305-104">This topic describes how you can promote a template to the Open lines in the Excel menu that is available on journal pages.</span></span>
 
-<span data-ttu-id="8e227-105">頻繁に使用される一部のテンプレートは、仕訳帳テンプレートです。</span><span class="sxs-lookup"><span data-stu-id="8e227-105">Some of the most frequently used templates are the journal templates.</span></span> <span data-ttu-id="8e227-106">これらの仕訳帳テンプレートの一部はプロモーションされたため、**Excel で明細行を開く** メニューに既定で表示されます。</span><span class="sxs-lookup"><span data-stu-id="8e227-106">Some of these journal templates have been promoted so that they appear on the **Open lines in Excel** menu by default.</span></span> <span data-ttu-id="8e227-107">しかし、システムに新しいテンプレートを追加するときに、既定では、**Office で開く** メニューで利用可能です。</span><span class="sxs-lookup"><span data-stu-id="8e227-107">However, when you add a new template to the system, it's available on the **Open in Office** menu by default.</span></span> <span data-ttu-id="8e227-108">テンプレートを **Excel で行を開く** メニューで利用できるようにするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="8e227-108">To promote the template so that it's available on the **Open lines in Excel** menu, follow these steps.</span></span>
+<span data-ttu-id="d2305-105">頻繁に使用される一部のテンプレートは、仕訳帳テンプレートです。</span><span class="sxs-lookup"><span data-stu-id="d2305-105">Some of the most frequently used templates are the journal templates.</span></span> <span data-ttu-id="d2305-106">これらの仕訳帳テンプレートの一部はプロモーションされたため、**Excel で明細行を開く** メニューに既定で表示されます。</span><span class="sxs-lookup"><span data-stu-id="d2305-106">Some of these journal templates have been promoted so that they appear on the **Open lines in Excel** menu by default.</span></span> <span data-ttu-id="d2305-107">しかし、システムに新しいテンプレートを追加するときに、既定では、**Office で開く** メニューで利用可能です。</span><span class="sxs-lookup"><span data-stu-id="d2305-107">However, when you add a new template to the system, it's available on the **Open in Office** menu by default.</span></span> <span data-ttu-id="d2305-108">テンプレートを **Excel で行を開く** メニューで利用できるようにするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="d2305-108">To promote the template so that it's available on the **Open lines in Excel** menu, follow these steps.</span></span>
 
-1.  <span data-ttu-id="8e227-109">Microsoft Excel テンプレートを作成し、ローカルに保存します。</span><span class="sxs-lookup"><span data-stu-id="8e227-109">Create a Microsoft Excel template, and save it locally.</span></span> <span data-ttu-id="8e227-110">詳細については、「Excel で開くエクスペリエンスの作成」の記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8e227-110">For more information, see the "Create Open in Excel experiences" article.</span></span>
-2.  <span data-ttu-id="8e227-111">Microsoft Visual Studio で、ApplicationSuite モデルへの参照を含むモデルに新しいプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="8e227-111">In Microsoft Visual Studio, create a new project for a model that has a reference to the ApplicationSuite model.</span></span> <span data-ttu-id="8e227-112">[![Visual Studio で新しいプロジェクトを作成する](./media/110-1024x523.png)](./media/110.png)</span><span class="sxs-lookup"><span data-stu-id="8e227-112">[![Creating a new project in Visual Studio](./media/110-1024x523.png)](./media/110.png)</span></span>
-3.  <span data-ttu-id="8e227-113">新しいクラスを作成し、**LedgerIJournalExcelTemplate** インターフェイスを実装し、**DocuTemplateRegistrationBase** を拡張します。</span><span class="sxs-lookup"><span data-stu-id="8e227-113">Create a new class, implement the **LedgerIJournalExcelTemplate** interface, and extend **DocuTemplateRegistrationBase**.</span></span> <span data-ttu-id="8e227-114">実装 (仕訳帳タイプなどによってサポートされる) では、「Excel で開く」エクスペリエンスで、テンプレートをオプションとして使用できるコンテキストが定義されます。</span><span class="sxs-lookup"><span data-stu-id="8e227-114">Your implementation (supported journal type, and so on) defines the context that your template will be available as an option for in the Open in Excel experience.</span></span> <span data-ttu-id="8e227-115">この例では、LedgerJournalHeaderEntity と LedgerJournalLineEntity を使用していますが、これらのエンティティに限定されません。</span><span class="sxs-lookup"><span data-stu-id="8e227-115">This example uses LedgerJournalHeaderEntity and LedgerJournalLineEntity, but you aren't limited to these entities.</span></span> <span data-ttu-id="8e227-116">エンティティが仕訳帳ヘッダー/明細行のエンティティ パターンに従うという条件で、自分自身のエンティティを定義することができます。</span><span class="sxs-lookup"><span data-stu-id="8e227-116">You can define your own entities, provided that they entities follow the journal header/line entity pattern.</span></span> <span data-ttu-id="8e227-117">**LedgerDailyJournalExcelTemplate** クラスからの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8e227-117">Here is an example from the **LedgerDailyJournalExcelTemplate** class.</span></span>
+1.  <span data-ttu-id="d2305-109">Microsoft Excel テンプレートを作成し、ローカルに保存します。</span><span class="sxs-lookup"><span data-stu-id="d2305-109">Create a Microsoft Excel template, and save it locally.</span></span> <span data-ttu-id="d2305-110">詳細については、「Excel で開くエクスペリエンスの作成」の記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d2305-110">For more information, see the "Create Open in Excel experiences" article.</span></span>
+2.  <span data-ttu-id="d2305-111">Microsoft Visual Studio で、ApplicationSuite モデルへの参照を含むモデルに新しいプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="d2305-111">In Microsoft Visual Studio, create a new project for a model that has a reference to the ApplicationSuite model.</span></span> <span data-ttu-id="d2305-112">[![Visual Studio で新しいプロジェクトを作成する](./media/110-1024x523.png)](./media/110.png)</span><span class="sxs-lookup"><span data-stu-id="d2305-112">[![Creating a new project in Visual Studio](./media/110-1024x523.png)](./media/110.png)</span></span>
+3.  <span data-ttu-id="d2305-113">新しいクラスを作成し、**LedgerIJournalExcelTemplate** インターフェイスを実装し、**DocuTemplateRegistrationBase** を拡張します。</span><span class="sxs-lookup"><span data-stu-id="d2305-113">Create a new class, implement the **LedgerIJournalExcelTemplate** interface, and extend **DocuTemplateRegistrationBase**.</span></span> <span data-ttu-id="d2305-114">実装 (仕訳帳タイプなどによってサポートされる) では、「Excel で開く」エクスペリエンスで、テンプレートをオプションとして使用できるコンテキストが定義されます。</span><span class="sxs-lookup"><span data-stu-id="d2305-114">Your implementation (supported journal type, and so on) defines the context that your template will be available as an option for in the Open in Excel experience.</span></span> <span data-ttu-id="d2305-115">この例では、LedgerJournalHeaderEntity と LedgerJournalLineEntity を使用していますが、これらのエンティティに限定されません。</span><span class="sxs-lookup"><span data-stu-id="d2305-115">This example uses LedgerJournalHeaderEntity and LedgerJournalLineEntity, but you aren't limited to these entities.</span></span> <span data-ttu-id="d2305-116">エンティティが仕訳帳ヘッダー/明細行のエンティティ パターンに従うという条件で、自分自身のエンティティを定義することができます。</span><span class="sxs-lookup"><span data-stu-id="d2305-116">You can define your own entities, provided that they entities follow the journal header/line entity pattern.</span></span> <span data-ttu-id="d2305-117">**LedgerDailyJournalExcelTemplate** クラスからの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d2305-117">Here is an example from the **LedgerDailyJournalExcelTemplate** class.</span></span>
 
         using Microsoft.Dynamics.Platform.Integration.Office;  
         public class TestNewTemplate extends DocuTemplateRegistrationBase implements LedgerIJournalExcelTemplate
@@ -173,17 +173,17 @@ ms.locfileid: "1569694"
             }
         }
 
-4.  <span data-ttu-id="8e227-118">新しいリソースを含むプロジェクト/モデルを構築します。</span><span class="sxs-lookup"><span data-stu-id="8e227-118">Build the project/model that has the new resources.</span></span> <span data-ttu-id="8e227-119">新しいリソース 1 つと、新しいクラス 1 つが必要です。</span><span class="sxs-lookup"><span data-stu-id="8e227-119">You should have one new resource and one new class.</span></span> 
+4.  <span data-ttu-id="d2305-118">新しいリソースを含むプロジェクト/モデルを構築します。</span><span class="sxs-lookup"><span data-stu-id="d2305-118">Build the project/model that has the new resources.</span></span> <span data-ttu-id="d2305-119">新しいリソース 1 つと、新しいクラス 1 つが必要です。</span><span class="sxs-lookup"><span data-stu-id="d2305-119">You should have one new resource and one new class.</span></span> 
 
         [![Built project/model](./media/22.png)](./media/22.png)
 
-5.  <span data-ttu-id="8e227-120">クライアントで、**共通** &gt; **共通** &gt; **Office 統合** &gt; **ドキュメント テンプレート** &gt; **システム テンプレートの再読み込み**と移動します。</span><span class="sxs-lookup"><span data-stu-id="8e227-120">In the client, go to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** &gt; **Reload system templates**.</span></span> <span data-ttu-id="8e227-121">一覧に新しいテンプレートが表示され、そのテンプレートを仕訳帳ページに追加した場合、そのテンプレートは **Excel で明細行を開く** メニューにも表示されます。</span><span class="sxs-lookup"><span data-stu-id="8e227-121">You will see the new template in the list, and if you open the journal page that you added the template to, you will also see that template on the **Open lines in Excel** menu.</span></span>
+5.  <span data-ttu-id="d2305-120">クライアントで、**共通** &gt; **共通** &gt; **Office 統合** &gt; **ドキュメント テンプレート** &gt; **システム テンプレートの再読み込み**と移動します。</span><span class="sxs-lookup"><span data-stu-id="d2305-120">In the client, go to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** &gt; **Reload system templates**.</span></span> <span data-ttu-id="d2305-121">一覧に新しいテンプレートが表示され、そのテンプレートを仕訳帳ページに追加した場合、そのテンプレートは **Excel で明細行を開く** メニューにも表示されます。</span><span class="sxs-lookup"><span data-stu-id="d2305-121">You will see the new template in the list, and if you open the journal page that you added the template to, you will also see that template on the **Open lines in Excel** menu.</span></span>
 
 
-<a name="additional-resources"></a><span data-ttu-id="8e227-122">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="8e227-122">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="d2305-122">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="d2305-122">Additional resources</span></span>
 --------
 
-<span data-ttu-id="8e227-123">[[Excel で開く] エクスペリエンスの作成](../office-integration/office-integration-edit-excel.md)</span><span class="sxs-lookup"><span data-stu-id="8e227-123">[Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)</span></span>
+<span data-ttu-id="d2305-123">[[Excel で開く] エクスペリエンスの作成](../office-integration/office-integration-edit-excel.md)</span><span class="sxs-lookup"><span data-stu-id="d2305-123">[Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)</span></span>
 
 
 

@@ -9,249 +9,249 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.region: India
 ms.search.industry: Retail
 ms.author: jiaqia
 ms.search.scope: Retail
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: a636ddaf42c4545cfd3c988d34f00e35cf714545
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afc0ee505192f20899d9abb51920468e9d3332f1
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571596"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845665"
 ---
-# <a name="deployment-guidelines-for-cash-registers-for-india"></a><span data-ttu-id="1f1e9-103">インドのキャッシュ レジスターの配置ガイドライン</span><span class="sxs-lookup"><span data-stu-id="1f1e9-103">Deployment guidelines for cash registers for India</span></span>
+# <a name="deployment-guidelines-for-cash-registers-for-india"></a><span data-ttu-id="de12e-103">インドのキャッシュ レジスターの配置ガイドライン</span><span class="sxs-lookup"><span data-stu-id="de12e-103">Deployment guidelines for cash registers for India</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1f1e9-104">このトピックは、インドの Microsoft Dynamics 365 for Retail ローカライズで商品及びサービス税 (GST) の要件を有効にする方法を示す配置ガイドです。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-104">This topic is a deployment guide that shows how to enable the requirements for Goods and Services Tax (GST) in the Microsoft Dynamics 365 for Retail localization for India.</span></span> <span data-ttu-id="1f1e9-105">インドの小売ローカライズの詳細については、[インドのキャッシュ レジスターの販売税統合](./apac-ind-cash-registers.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-105">For more information about the Retail localization for India, see [GST integration for cash registers for India](./apac-ind-cash-registers.md).</span></span>
+<span data-ttu-id="de12e-104">このトピックは、インドの Microsoft Dynamics 365 for Retail ローカライズで商品及びサービス税 (GST) の要件を有効にする方法を示す配置ガイドです。</span><span class="sxs-lookup"><span data-stu-id="de12e-104">This topic is a deployment guide that shows how to enable the requirements for Goods and Services Tax (GST) in the Microsoft Dynamics 365 for Retail localization for India.</span></span> <span data-ttu-id="de12e-105">インドの小売ローカライズの詳細については、[インドのキャッシュ レジスターの販売税統合](./apac-ind-cash-registers.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="de12e-105">For more information about the Retail localization for India, see [GST integration for cash registers for India](./apac-ind-cash-registers.md).</span></span>
 
-<span data-ttu-id="1f1e9-106">このサンプルは、小売ソフトウェア開発キット (SDK) の一部です。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-106">This sample is part of the Retail software development kit (SDK).</span></span> <span data-ttu-id="1f1e9-107">リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-107">For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).</span></span>
+<span data-ttu-id="de12e-106">このサンプルは、小売ソフトウェア開発キット (SDK) の一部です。</span><span class="sxs-lookup"><span data-stu-id="de12e-106">This sample is part of the Retail software development kit (SDK).</span></span> <span data-ttu-id="de12e-107">リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="de12e-107">For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).</span></span>
 
-<span data-ttu-id="1f1e9-108">このサンプルは Commerce runtime (CRT) の拡張機能で構成されます。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-108">This sample consists of extensions for the Commerce runtime (CRT).</span></span> <span data-ttu-id="1f1e9-109">このサンプルを実行するには、CRT プロジェクトを変更して構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-109">To run this sample, you must modify and build the CRT projects.</span></span> <span data-ttu-id="1f1e9-110">このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-110">We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic.</span></span> <span data-ttu-id="1f1e9-111">ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-111">We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.</span></span>
+<span data-ttu-id="de12e-108">このサンプルは Commerce runtime (CRT) の拡張機能で構成されます。</span><span class="sxs-lookup"><span data-stu-id="de12e-108">This sample consists of extensions for the Commerce runtime (CRT).</span></span> <span data-ttu-id="de12e-109">このサンプルを実行するには、CRT プロジェクトを変更して構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="de12e-109">To run this sample, you must modify and build the CRT projects.</span></span> <span data-ttu-id="de12e-110">このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="de12e-110">We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic.</span></span> <span data-ttu-id="de12e-111">ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。</span><span class="sxs-lookup"><span data-stu-id="de12e-111">We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1f1e9-112">使用しているバージョンによって、このトピックの手順の一部が異なります。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-112">Some steps in the procedures in this topic differ, depending on the version of Retail that you're using.</span></span> <span data-ttu-id="1f1e9-113">詳細については、[Dynamics 365 for Retail の新機能および変更された機能](../get-started/whats-new.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-113">For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).</span></span>
+> <span data-ttu-id="de12e-112">使用しているバージョンによって、このトピックの手順の一部が異なります。</span><span class="sxs-lookup"><span data-stu-id="de12e-112">Some steps in the procedures in this topic differ, depending on the version of Retail that you're using.</span></span> <span data-ttu-id="de12e-113">詳細については、[Dynamics 365 for Retail の新機能および変更された機能](../get-started/whats-new.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="de12e-113">For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1f1e9-114">必要条件</span><span class="sxs-lookup"><span data-stu-id="1f1e9-114">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="de12e-114">必要条件</span><span class="sxs-lookup"><span data-stu-id="de12e-114">Prerequisites</span></span>
 
-<span data-ttu-id="1f1e9-115">Visual C++ 再頒布可能パッケージが商品及びサービス税 (GST) 計算を実行するマシン上にあることを確認します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-115">Make sure that the Visual C++ Redistributable Packages are present on the machine that you're running Goods and Services Tax (GST) calculations on.</span></span> <span data-ttu-id="1f1e9-116">クラウド POS、およびオンライン モードの Modern POS の場合、このマシンは小売サーバーです。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-116">For Cloud POS, and for Modern POS in online mode, this machine is Retail server.</span></span> <span data-ttu-id="1f1e9-117">オフライン モードの Modern POS の場合、それは Modern POS マシン自身です。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-117">For Modern POS in offline mode, it's the Modern POS machine itself.</span></span> <span data-ttu-id="1f1e9-118">パッケージを取得するには、[Visual C++ 再頒布可能パッケージをダウンロード](https://www.microsoft.com/download/details.aspx?id=30679)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-118">To get the packages, see [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/download/details.aspx?id=30679).</span></span>
+<span data-ttu-id="de12e-115">Visual C++ 再頒布可能パッケージが商品及びサービス税 (GST) 計算を実行するマシン上にあることを確認します。</span><span class="sxs-lookup"><span data-stu-id="de12e-115">Make sure that the Visual C++ Redistributable Packages are present on the machine that you're running Goods and Services Tax (GST) calculations on.</span></span> <span data-ttu-id="de12e-116">クラウド POS、およびオンライン モードの Modern POS の場合、このマシンは小売サーバーです。</span><span class="sxs-lookup"><span data-stu-id="de12e-116">For Cloud POS, and for Modern POS in online mode, this machine is Retail server.</span></span> <span data-ttu-id="de12e-117">オフライン モードの Modern POS の場合、それは Modern POS マシン自身です。</span><span class="sxs-lookup"><span data-stu-id="de12e-117">For Modern POS in offline mode, it's the Modern POS machine itself.</span></span> <span data-ttu-id="de12e-118">パッケージを取得するには、[Visual C++ 再頒布可能パッケージをダウンロード](https://www.microsoft.com/download/details.aspx?id=30679)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="de12e-118">To get the packages, see [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/download/details.aspx?id=30679).</span></span>
 
-## <a name="development-environment"></a><span data-ttu-id="1f1e9-119">開発環境</span><span class="sxs-lookup"><span data-stu-id="1f1e9-119">Development environment</span></span>
+## <a name="development-environment"></a><span data-ttu-id="de12e-119">開発環境</span><span class="sxs-lookup"><span data-stu-id="de12e-119">Development environment</span></span>
 
-<span data-ttu-id="1f1e9-120">サンプルをテストして拡張できるように開発環境を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-120">Follow these steps to set up a development environment so that you can test and extend the sample.</span></span>
+<span data-ttu-id="de12e-120">サンプルをテストして拡張できるように開発環境を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="de12e-120">Follow these steps to set up a development environment so that you can test and extend the sample.</span></span>
 
-### <a name="the-crt-extension-components"></a><span data-ttu-id="1f1e9-121">CRT 拡張コンポーネント</span><span class="sxs-lookup"><span data-stu-id="1f1e9-121">The CRT extension components</span></span>
+### <a name="the-crt-extension-components"></a><span data-ttu-id="de12e-121">CRT 拡張コンポーネント</span><span class="sxs-lookup"><span data-stu-id="de12e-121">The CRT extension components</span></span>
 
-<span data-ttu-id="1f1e9-122">CRT サンプルには、CRT 拡張コンポーネントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-122">The CRT extension components are included in the CRT samples.</span></span> <span data-ttu-id="1f1e9-123">次の手順を完了するには、CRT ソリューション **CommerceRuntimeSamples.sln** を開きます。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-123">To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**.</span></span> <span data-ttu-id="1f1e9-124">このソリューションは **RetailSdk\\SampleExtensions\\CommerceRuntime** の下にあります。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-124">You can find this solution under **RetailSdk\\SampleExtensions\\CommerceRuntime**.</span></span>
+<span data-ttu-id="de12e-122">CRT サンプルには、CRT 拡張コンポーネントが含まれます。</span><span class="sxs-lookup"><span data-stu-id="de12e-122">The CRT extension components are included in the CRT samples.</span></span> <span data-ttu-id="de12e-123">次の手順を完了するには、CRT ソリューション **CommerceRuntimeSamples.sln** を開きます。</span><span class="sxs-lookup"><span data-stu-id="de12e-123">To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**.</span></span> <span data-ttu-id="de12e-124">このソリューションは **RetailSdk\\SampleExtensions\\CommerceRuntime** の下にあります。</span><span class="sxs-lookup"><span data-stu-id="de12e-124">You can find this solution under **RetailSdk\\SampleExtensions\\CommerceRuntime**.</span></span>
 
-#### <a name="generic-tax-engine-component"></a><span data-ttu-id="1f1e9-125">汎用税エンジン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="1f1e9-125">Generic Tax Engine component</span></span>
+#### <a name="generic-tax-engine-component"></a><span data-ttu-id="de12e-125">汎用税エンジン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="de12e-125">Generic Tax Engine component</span></span>
 
-# <a name="retail-731tabretail-7-3-1"></a>[<span data-ttu-id="1f1e9-126">Retail 7.3.1</span><span class="sxs-lookup"><span data-stu-id="1f1e9-126">Retail 7.3.1</span></span>](#tab/retail-7-3-1)
+# <a name="retail-731tabretail-7-3-1"></a>[<span data-ttu-id="de12e-126">Retail 7.3.1</span><span class="sxs-lookup"><span data-stu-id="de12e-126">Retail 7.3.1</span></span>](#tab/retail-7-3-1)
 
-1. <span data-ttu-id="1f1e9-127">**Runtime.Extensions.GenericTaxEngine** プロジェクトを探して、構築します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-127">Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.</span></span>
-2. <span data-ttu-id="1f1e9-128">以下のファイルを検索します:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-128">Find the following files:</span></span>
+1. <span data-ttu-id="de12e-127">**Runtime.Extensions.GenericTaxEngine** プロジェクトを探して、構築します。</span><span class="sxs-lookup"><span data-stu-id="de12e-127">Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.</span></span>
+2. <span data-ttu-id="de12e-128">以下のファイルを検索します:</span><span class="sxs-lookup"><span data-stu-id="de12e-128">Find the following files:</span></span>
 
-    - <span data-ttu-id="1f1e9-129">**Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-129">In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:</span></span>
+    - <span data-ttu-id="de12e-129">**Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="de12e-129">In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:</span></span>
 
-        - <span data-ttu-id="1f1e9-130">Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-130">Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll</span></span>
+        - <span data-ttu-id="de12e-130">Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-130">Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll</span></span>
 
-    - <span data-ttu-id="1f1e9-131">**Reference\\Newtonsoft.Json\\9.0.0.0** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-131">In the **Reference\\Newtonsoft.Json\\9.0.0.0** folder:</span></span>
+    - <span data-ttu-id="de12e-131">**Reference\\Newtonsoft.Json\\9.0.0.0** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="de12e-131">In the **Reference\\Newtonsoft.Json\\9.0.0.0** folder:</span></span>
 
-        - <span data-ttu-id="1f1e9-132">Newtonsoft.Json.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-132">Newtonsoft.Json.dll</span></span>
+        - <span data-ttu-id="de12e-132">Newtonsoft.Json.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-132">Newtonsoft.Json.dll</span></span>
 
-    - <span data-ttu-id="1f1e9-133">**Reference\\TaxEngine** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-133">In the **Reference\\TaxEngine** folder:</span></span>
+    - <span data-ttu-id="de12e-133">**Reference\\TaxEngine** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="de12e-133">In the **Reference\\TaxEngine** folder:</span></span>
 
-        - <span data-ttu-id="1f1e9-134">Microsoft.Dynamics365.Tax.Core.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-134">Microsoft.Dynamics365.Tax.Core.dll</span></span>
-        - <span data-ttu-id="1f1e9-135">Microsoft.Dynamics365.Tax.DataAccessor.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-135">Microsoft.Dynamics365.Tax.DataAccessor.dll</span></span>
-        - <span data-ttu-id="1f1e9-136">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-136">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span></span>
-        - <span data-ttu-id="1f1e9-137">Microsoft.Dynamics365.Tax.DataModel.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-137">Microsoft.Dynamics365.Tax.DataModel.dll</span></span>
-        - <span data-ttu-id="1f1e9-138">Microsoft.Dynamics365.Tax.Metadata.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-138">Microsoft.Dynamics365.Tax.Metadata.dll</span></span>
-        - <span data-ttu-id="1f1e9-139">Microsoft.Dynamics365.LocalizationFramework.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-139">Microsoft.Dynamics365.LocalizationFramework.dll</span></span>
-        - <span data-ttu-id="1f1e9-140">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-140">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span></span>
-        - <span data-ttu-id="1f1e9-141">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-141">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span></span>
-        - <span data-ttu-id="1f1e9-142">Microsoft.Dynamics365.XppSupportLayer.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-142">Microsoft.Dynamics365.XppSupportLayer.dll</span></span>
+        - <span data-ttu-id="de12e-134">Microsoft.Dynamics365.Tax.Core.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-134">Microsoft.Dynamics365.Tax.Core.dll</span></span>
+        - <span data-ttu-id="de12e-135">Microsoft.Dynamics365.Tax.DataAccessor.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-135">Microsoft.Dynamics365.Tax.DataAccessor.dll</span></span>
+        - <span data-ttu-id="de12e-136">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-136">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span></span>
+        - <span data-ttu-id="de12e-137">Microsoft.Dynamics365.Tax.DataModel.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-137">Microsoft.Dynamics365.Tax.DataModel.dll</span></span>
+        - <span data-ttu-id="de12e-138">Microsoft.Dynamics365.Tax.Metadata.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-138">Microsoft.Dynamics365.Tax.Metadata.dll</span></span>
+        - <span data-ttu-id="de12e-139">Microsoft.Dynamics365.LocalizationFramework.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-139">Microsoft.Dynamics365.LocalizationFramework.dll</span></span>
+        - <span data-ttu-id="de12e-140">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-140">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span></span>
+        - <span data-ttu-id="de12e-141">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-141">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span></span>
+        - <span data-ttu-id="de12e-142">Microsoft.Dynamics365.XppSupportLayer.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-142">Microsoft.Dynamics365.XppSupportLayer.dll</span></span>
 
-    - <span data-ttu-id="1f1e9-143">以下のフォルダーを **Reference\\Z3** フォルダー内で見つけます:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-143">Find the following folders in the **Reference\\Z3** folder:</span></span>
+    - <span data-ttu-id="de12e-143">以下のフォルダーを **Reference\\Z3** フォルダー内で見つけます:</span><span class="sxs-lookup"><span data-stu-id="de12e-143">Find the following folders in the **Reference\\Z3** folder:</span></span>
 
-        - <span data-ttu-id="1f1e9-144">x86</span><span class="sxs-lookup"><span data-stu-id="1f1e9-144">x86</span></span>
-        - <span data-ttu-id="1f1e9-145">x64</span><span class="sxs-lookup"><span data-stu-id="1f1e9-145">x64</span></span>
+        - <span data-ttu-id="de12e-144">x86</span><span class="sxs-lookup"><span data-stu-id="de12e-144">x86</span></span>
+        - <span data-ttu-id="de12e-145">x64</span><span class="sxs-lookup"><span data-stu-id="de12e-145">x64</span></span>
 
-3. <span data-ttu-id="1f1e9-146">11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-146">Copy the 11 assembly files, and both x64 and x86 folders to the CRT extensions folder:</span></span>
+3. <span data-ttu-id="de12e-146">11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:</span><span class="sxs-lookup"><span data-stu-id="de12e-146">Copy the 11 assembly files, and both x64 and x86 folders to the CRT extensions folder:</span></span>
 
-    - <span data-ttu-id="1f1e9-147">**小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-147">**Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.</span></span>
-    - <span data-ttu-id="1f1e9-148">**Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-148">**Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.</span></span>
+    - <span data-ttu-id="de12e-147">**小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="de12e-147">**Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.</span></span>
+    - <span data-ttu-id="de12e-148">**Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="de12e-148">**Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.</span></span>
 
-4. <span data-ttu-id="1f1e9-149">CRT の拡張機能のコンフィギュレーション ファイルを検索します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-149">Find the extensions configuration file for CRT:</span></span>
+4. <span data-ttu-id="de12e-149">CRT の拡張機能のコンフィギュレーション ファイルを検索します。</span><span class="sxs-lookup"><span data-stu-id="de12e-149">Find the extensions configuration file for CRT:</span></span>
 
-    - <span data-ttu-id="1f1e9-150">**小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-150">**Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.</span></span>
-    - <span data-ttu-id="1f1e9-151">**Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-151">**Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.</span></span>
+    - <span data-ttu-id="de12e-150">**小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="de12e-150">**Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.</span></span>
+    - <span data-ttu-id="de12e-151">**Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。</span><span class="sxs-lookup"><span data-stu-id="de12e-151">**Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.</span></span>
 
-5. <span data-ttu-id="1f1e9-152">拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-152">Register the CRT change in the extensions configuration file.</span></span>
+5. <span data-ttu-id="de12e-152">拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。</span><span class="sxs-lookup"><span data-stu-id="de12e-152">Register the CRT change in the extensions configuration file.</span></span>
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
     ```
 
     > [!WARNING]
-    > <span data-ttu-id="1f1e9-153">commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-153">Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files.</span></span> <span data-ttu-id="1f1e9-154">これらのファイルはカスタマイズのためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-154">These files aren't intended for any customizations.</span></span>
+    > <span data-ttu-id="de12e-153">commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。</span><span class="sxs-lookup"><span data-stu-id="de12e-153">Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files.</span></span> <span data-ttu-id="de12e-154">これらのファイルはカスタマイズのためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="de12e-154">These files aren't intended for any customizations.</span></span>
 
-# <a name="retail-732-and-latertabretail-7-3-2"></a>[<span data-ttu-id="1f1e9-155">Retail 7.3.2 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-155">Retail 7.3.2 and later</span></span>](#tab/retail-7-3-2)
+# <a name="retail-732-and-latertabretail-7-3-2"></a>[<span data-ttu-id="de12e-155">Retail 7.3.2 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-155">Retail 7.3.2 and later</span></span>](#tab/retail-7-3-2)
 
-1. <span data-ttu-id="1f1e9-156">**Runtime.Extensions.GenericTaxEngine** プロジェクトを探して、構築します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-156">Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.</span></span>
-2. <span data-ttu-id="1f1e9-157">以下のファイルを検索します:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-157">Find the following files:</span></span>
+1. <span data-ttu-id="de12e-156">**Runtime.Extensions.GenericTaxEngine** プロジェクトを探して、構築します。</span><span class="sxs-lookup"><span data-stu-id="de12e-156">Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.</span></span>
+2. <span data-ttu-id="de12e-157">以下のファイルを検索します:</span><span class="sxs-lookup"><span data-stu-id="de12e-157">Find the following files:</span></span>
 
-    - <span data-ttu-id="1f1e9-158">**Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-158">In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:</span></span>
+    - <span data-ttu-id="de12e-158">**Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="de12e-158">In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:</span></span>
 
-        - <span data-ttu-id="1f1e9-159">Contoso.Commerce.Runtime.GenericTaxEngine.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-159">Contoso.Commerce.Runtime.GenericTaxEngine.dll</span></span>
+        - <span data-ttu-id="de12e-159">Contoso.Commerce.Runtime.GenericTaxEngine.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-159">Contoso.Commerce.Runtime.GenericTaxEngine.dll</span></span>
 
-    - <span data-ttu-id="1f1e9-160">**References\\Newtonsoft.Json.9.0.1\\lib\\net45** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-160">In the **References\\Newtonsoft.Json.9.0.1\\lib\\net45** folder:</span></span>
+    - <span data-ttu-id="de12e-160">**References\\Newtonsoft.Json.9.0.1\\lib\\net45** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="de12e-160">In the **References\\Newtonsoft.Json.9.0.1\\lib\\net45** folder:</span></span>
 
-        - <span data-ttu-id="1f1e9-161">Newtonsoft.Json.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-161">Newtonsoft.Json.dll</span></span>
+        - <span data-ttu-id="de12e-161">Newtonsoft.Json.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-161">Newtonsoft.Json.dll</span></span>
 
-    - <span data-ttu-id="1f1e9-162">**References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-162">In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:</span></span>
+    - <span data-ttu-id="de12e-162">**References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="de12e-162">In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:</span></span>
 
-        - <span data-ttu-id="1f1e9-163">Microsoft.Dynamics365.LocalizationFramework.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-163">Microsoft.Dynamics365.LocalizationFramework.dll</span></span>
-        - <span data-ttu-id="1f1e9-164">Microsoft.Dynamics365.Tax.Core.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-164">Microsoft.Dynamics365.Tax.Core.dll</span></span>
-        - <span data-ttu-id="1f1e9-165">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-165">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span></span>
-        - <span data-ttu-id="1f1e9-166">Microsoft.Dynamics365.Tax.DataAccessor.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-166">Microsoft.Dynamics365.Tax.DataAccessor.dll</span></span>
-        - <span data-ttu-id="1f1e9-167">Microsoft.Dynamics365.Tax.DataModel.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-167">Microsoft.Dynamics365.Tax.DataModel.dll</span></span>
-        - <span data-ttu-id="1f1e9-168">Microsoft.Dynamics365.Tax.Metadata.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-168">Microsoft.Dynamics365.Tax.Metadata.dll</span></span>
+        - <span data-ttu-id="de12e-163">Microsoft.Dynamics365.LocalizationFramework.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-163">Microsoft.Dynamics365.LocalizationFramework.dll</span></span>
+        - <span data-ttu-id="de12e-164">Microsoft.Dynamics365.Tax.Core.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-164">Microsoft.Dynamics365.Tax.Core.dll</span></span>
+        - <span data-ttu-id="de12e-165">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-165">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span></span>
+        - <span data-ttu-id="de12e-166">Microsoft.Dynamics365.Tax.DataAccessor.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-166">Microsoft.Dynamics365.Tax.DataAccessor.dll</span></span>
+        - <span data-ttu-id="de12e-167">Microsoft.Dynamics365.Tax.DataModel.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-167">Microsoft.Dynamics365.Tax.DataModel.dll</span></span>
+        - <span data-ttu-id="de12e-168">Microsoft.Dynamics365.Tax.Metadata.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-168">Microsoft.Dynamics365.Tax.Metadata.dll</span></span>
 
-    - <span data-ttu-id="1f1e9-169">**References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-169">In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** folder:</span></span>
+    - <span data-ttu-id="de12e-169">**References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="de12e-169">In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** folder:</span></span>
 
-        - <span data-ttu-id="1f1e9-170">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-170">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span></span>
-        - <span data-ttu-id="1f1e9-171">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-171">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span></span>
-        - <span data-ttu-id="1f1e9-172">Microsoft.Dynamics365.XppSupportLayer.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-172">Microsoft.Dynamics365.XppSupportLayer.dll</span></span>
+        - <span data-ttu-id="de12e-170">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-170">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span></span>
+        - <span data-ttu-id="de12e-171">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-171">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span></span>
+        - <span data-ttu-id="de12e-172">Microsoft.Dynamics365.XppSupportLayer.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-172">Microsoft.Dynamics365.XppSupportLayer.dll</span></span>
 
-    - <span data-ttu-id="1f1e9-173">以下のフォルダーを **References\\Z3.4.5.0\\lib\\net40** フォルダーで探します:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-173">Find the following folders in the **References\\Z3.4.5.0\\lib\\net40** folder:</span></span>
+    - <span data-ttu-id="de12e-173">以下のフォルダーを **References\\Z3.4.5.0\\lib\\net40** フォルダーで探します:</span><span class="sxs-lookup"><span data-stu-id="de12e-173">Find the following folders in the **References\\Z3.4.5.0\\lib\\net40** folder:</span></span>
 
-        - <span data-ttu-id="1f1e9-174">x86</span><span class="sxs-lookup"><span data-stu-id="1f1e9-174">x86</span></span>
-        - <span data-ttu-id="1f1e9-175">x64</span><span class="sxs-lookup"><span data-stu-id="1f1e9-175">x64</span></span>
+        - <span data-ttu-id="de12e-174">x86</span><span class="sxs-lookup"><span data-stu-id="de12e-174">x86</span></span>
+        - <span data-ttu-id="de12e-175">x64</span><span class="sxs-lookup"><span data-stu-id="de12e-175">x64</span></span>
 
-3. <span data-ttu-id="1f1e9-176">11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-176">Copy the 11 assembly files, and both x64 and x86 folders to the CRT extensions folder:</span></span>
+3. <span data-ttu-id="de12e-176">11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:</span><span class="sxs-lookup"><span data-stu-id="de12e-176">Copy the 11 assembly files, and both x64 and x86 folders to the CRT extensions folder:</span></span>
 
-    - <span data-ttu-id="1f1e9-177">**小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-177">**Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.</span></span>
-    - <span data-ttu-id="1f1e9-178">**Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-178">**Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.</span></span>
+    - <span data-ttu-id="de12e-177">**小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="de12e-177">**Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.</span></span>
+    - <span data-ttu-id="de12e-178">**Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="de12e-178">**Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.</span></span>
 
-4. <span data-ttu-id="1f1e9-179">CRT の拡張機能のコンフィギュレーション ファイルを検索します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-179">Find the extensions configuration file for CRT:</span></span>
+4. <span data-ttu-id="de12e-179">CRT の拡張機能のコンフィギュレーション ファイルを検索します。</span><span class="sxs-lookup"><span data-stu-id="de12e-179">Find the extensions configuration file for CRT:</span></span>
 
-    - <span data-ttu-id="1f1e9-180">**小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-180">**Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.</span></span>
-    - <span data-ttu-id="1f1e9-181">**Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-181">**Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.</span></span>
+    - <span data-ttu-id="de12e-180">**小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="de12e-180">**Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.</span></span>
+    - <span data-ttu-id="de12e-181">**Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。</span><span class="sxs-lookup"><span data-stu-id="de12e-181">**Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.</span></span>
 
-5. <span data-ttu-id="1f1e9-182">拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-182">Register the CRT change in the extensions configuration file.</span></span>
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
-    ```
-
-    > [!WARNING]
-    > <span data-ttu-id="1f1e9-183">commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-183">Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files.</span></span> <span data-ttu-id="1f1e9-184">これらのファイルはカスタマイズのためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-184">These files aren't intended for any customizations.</span></span>
-
-# <a name="retail-813-and-latertabretail-8-1-3"></a>[<span data-ttu-id="1f1e9-185">Retail 8.1.3 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-185">Retail 8.1.3 and later</span></span>](#tab/retail-8-1-3)
-
-1. <span data-ttu-id="1f1e9-186">**Runtime.Extensions.GenericTaxEngine** プロジェクトを探して、構築します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-186">Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.</span></span>
-2. <span data-ttu-id="1f1e9-187">以下のファイルを検索します:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-187">Find the following files:</span></span>
-
-    - <span data-ttu-id="1f1e9-188">**Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-188">In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:</span></span>
-
-        - <span data-ttu-id="1f1e9-189">Contoso.Commerce.Runtime.GenericTaxEngine.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-189">Contoso.Commerce.Runtime.GenericTaxEngine.dll</span></span>
-
-    - <span data-ttu-id="1f1e9-190">**References\\Newtonsoft.Json.9.0.1\\lib\\net45** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-190">In the **References\\Newtonsoft.Json.9.0.1\\lib\\net45** folder:</span></span>
-
-        - <span data-ttu-id="1f1e9-191">Newtonsoft.Json.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-191">Newtonsoft.Json.dll</span></span>
-
-    - <span data-ttu-id="1f1e9-192">**References\\Microsoft.Dynamics.AX.TaxEngine.8.0.26\\XppModule\\TaxEngine\\bin** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-192">In the **References\\Microsoft.Dynamics.AX.TaxEngine.8.0.26\\XppModule\\TaxEngine\\bin** folder:</span></span>
-
-        - <span data-ttu-id="1f1e9-193">Microsoft.Dynamics365.LocalizationFramework.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-193">Microsoft.Dynamics365.LocalizationFramework.dll</span></span>
-        - <span data-ttu-id="1f1e9-194">Microsoft.Dynamics365.Tax.Core.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-194">Microsoft.Dynamics365.Tax.Core.dll</span></span>
-        - <span data-ttu-id="1f1e9-195">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-195">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span></span>
-        - <span data-ttu-id="1f1e9-196">Microsoft.Dynamics365.Tax.DataAccessor.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-196">Microsoft.Dynamics365.Tax.DataAccessor.dll</span></span>
-        - <span data-ttu-id="1f1e9-197">Microsoft.Dynamics365.Tax.DataModel.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-197">Microsoft.Dynamics365.Tax.DataModel.dll</span></span>
-        - <span data-ttu-id="1f1e9-198">Microsoft.Dynamics365.Tax.Metadata.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-198">Microsoft.Dynamics365.Tax.Metadata.dll</span></span>
-
-    - <span data-ttu-id="1f1e9-199">**References\\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\\XppModule\\ElectronicReporting\\bin** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-199">In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\\XppModule\\ElectronicReporting\\bin** folder:</span></span>
-
-        - <span data-ttu-id="1f1e9-200">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-200">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span></span>
-        - <span data-ttu-id="1f1e9-201">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-201">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span></span>
-        - <span data-ttu-id="1f1e9-202">Microsoft.Dynamics365.XppSupportLayer.dll</span><span class="sxs-lookup"><span data-stu-id="1f1e9-202">Microsoft.Dynamics365.XppSupportLayer.dll</span></span>
-
-    - <span data-ttu-id="1f1e9-203">以下のフォルダーを **References\\Z3.4.5.0\\lib\\net40** フォルダーで探します:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-203">Find the following folders in the **References\\Z3.4.5.0\\lib\\net40** folder:</span></span>
-
-        - <span data-ttu-id="1f1e9-204">x86</span><span class="sxs-lookup"><span data-stu-id="1f1e9-204">x86</span></span>
-        - <span data-ttu-id="1f1e9-205">x64</span><span class="sxs-lookup"><span data-stu-id="1f1e9-205">x64</span></span>
-
-3. <span data-ttu-id="1f1e9-206">11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:</span><span class="sxs-lookup"><span data-stu-id="1f1e9-206">Copy the 11 assembly files, and both x64 and x86 folders to the CRT extensions folder:</span></span>
-
-    - <span data-ttu-id="1f1e9-207">**小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-207">**Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.</span></span>
-    - <span data-ttu-id="1f1e9-208">**Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-208">**Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.</span></span>
-
-4. <span data-ttu-id="1f1e9-209">CRT の拡張機能のコンフィギュレーション ファイルを検索します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-209">Find the extensions configuration file for CRT:</span></span>
-
-    - <span data-ttu-id="1f1e9-210">**小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-210">**Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.</span></span>
-    - <span data-ttu-id="1f1e9-211">**Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-211">**Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.</span></span>
-
-5. <span data-ttu-id="1f1e9-212">拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-212">Register the CRT change in the extensions configuration file.</span></span>
+5. <span data-ttu-id="de12e-182">拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。</span><span class="sxs-lookup"><span data-stu-id="de12e-182">Register the CRT change in the extensions configuration file.</span></span>
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
 
     > [!WARNING]
-    > <span data-ttu-id="1f1e9-213">commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-213">Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files.</span></span> <span data-ttu-id="1f1e9-214">これらのファイルはカスタマイズのためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-214">These files aren't intended for any customizations.</span></span>
+    > <span data-ttu-id="de12e-183">commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。</span><span class="sxs-lookup"><span data-stu-id="de12e-183">Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files.</span></span> <span data-ttu-id="de12e-184">これらのファイルはカスタマイズのためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="de12e-184">These files aren't intended for any customizations.</span></span>
 
-# <a name="retail-100-and-latertabretail-10-0"></a>[<span data-ttu-id="1f1e9-215">Retail 10.0 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-215">Retail 10.0 and later</span></span>](#tab/retail-10-0)
+# <a name="retail-813-and-latertabretail-8-1-3"></a>[<span data-ttu-id="de12e-185">Retail 8.1.3 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-185">Retail 8.1.3 and later</span></span>](#tab/retail-8-1-3)
 
-<span data-ttu-id="1f1e9-216">汎用税エンジン コンポーネントはシールド拡張機能の一部です。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-216">The Generic Tax Engine component is a part of sealed extensions.</span></span>
+1. <span data-ttu-id="de12e-186">**Runtime.Extensions.GenericTaxEngine** プロジェクトを探して、構築します。</span><span class="sxs-lookup"><span data-stu-id="de12e-186">Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.</span></span>
+2. <span data-ttu-id="de12e-187">以下のファイルを検索します:</span><span class="sxs-lookup"><span data-stu-id="de12e-187">Find the following files:</span></span>
 
-1. <span data-ttu-id="1f1e9-217">CRT の拡張機能のコンフィギュレーション ファイルを検索します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-217">Find the extensions configuration file for CRT:</span></span>
+    - <span data-ttu-id="de12e-188">**Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="de12e-188">In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:</span></span>
 
-    - <span data-ttu-id="1f1e9-218">**小売サーバー:** ファイルは **commerceruntime.ext.config** で、Microsoft インターネット インフォメーション サービス (IIS) 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-218">**Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.</span></span>
-    - <span data-ttu-id="1f1e9-219">**Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-219">**Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.</span></span>
+        - <span data-ttu-id="de12e-189">Contoso.Commerce.Runtime.GenericTaxEngine.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-189">Contoso.Commerce.Runtime.GenericTaxEngine.dll</span></span>
 
-2. <span data-ttu-id="1f1e9-220">拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-220">Register the CRT change in the extensions configuration file.</span></span>
+    - <span data-ttu-id="de12e-190">**References\\Newtonsoft.Json.9.0.1\\lib\\net45** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="de12e-190">In the **References\\Newtonsoft.Json.9.0.1\\lib\\net45** folder:</span></span>
+
+        - <span data-ttu-id="de12e-191">Newtonsoft.Json.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-191">Newtonsoft.Json.dll</span></span>
+
+    - <span data-ttu-id="de12e-192">**References\\Microsoft.Dynamics.AX.TaxEngine.8.0.26\\XppModule\\TaxEngine\\bin** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="de12e-192">In the **References\\Microsoft.Dynamics.AX.TaxEngine.8.0.26\\XppModule\\TaxEngine\\bin** folder:</span></span>
+
+        - <span data-ttu-id="de12e-193">Microsoft.Dynamics365.LocalizationFramework.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-193">Microsoft.Dynamics365.LocalizationFramework.dll</span></span>
+        - <span data-ttu-id="de12e-194">Microsoft.Dynamics365.Tax.Core.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-194">Microsoft.Dynamics365.Tax.Core.dll</span></span>
+        - <span data-ttu-id="de12e-195">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-195">Microsoft.Dynamics365.Tax.DataAccessFramework.dll</span></span>
+        - <span data-ttu-id="de12e-196">Microsoft.Dynamics365.Tax.DataAccessor.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-196">Microsoft.Dynamics365.Tax.DataAccessor.dll</span></span>
+        - <span data-ttu-id="de12e-197">Microsoft.Dynamics365.Tax.DataModel.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-197">Microsoft.Dynamics365.Tax.DataModel.dll</span></span>
+        - <span data-ttu-id="de12e-198">Microsoft.Dynamics365.Tax.Metadata.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-198">Microsoft.Dynamics365.Tax.Metadata.dll</span></span>
+
+    - <span data-ttu-id="de12e-199">**References\\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\\XppModule\\ElectronicReporting\\bin** フォルダー内:</span><span class="sxs-lookup"><span data-stu-id="de12e-199">In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\\XppModule\\ElectronicReporting\\bin** folder:</span></span>
+
+        - <span data-ttu-id="de12e-200">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-200">Microsoft.Dynamics365.ElectronicReportingMapping.dll</span></span>
+        - <span data-ttu-id="de12e-201">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-201">Microsoft.Dynamics365.LocalizationFrameworkCore.dll</span></span>
+        - <span data-ttu-id="de12e-202">Microsoft.Dynamics365.XppSupportLayer.dll</span><span class="sxs-lookup"><span data-stu-id="de12e-202">Microsoft.Dynamics365.XppSupportLayer.dll</span></span>
+
+    - <span data-ttu-id="de12e-203">以下のフォルダーを **References\\Z3.4.5.0\\lib\\net40** フォルダーで探します:</span><span class="sxs-lookup"><span data-stu-id="de12e-203">Find the following folders in the **References\\Z3.4.5.0\\lib\\net40** folder:</span></span>
+
+        - <span data-ttu-id="de12e-204">x86</span><span class="sxs-lookup"><span data-stu-id="de12e-204">x86</span></span>
+        - <span data-ttu-id="de12e-205">x64</span><span class="sxs-lookup"><span data-stu-id="de12e-205">x64</span></span>
+
+3. <span data-ttu-id="de12e-206">11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:</span><span class="sxs-lookup"><span data-stu-id="de12e-206">Copy the 11 assembly files, and both x64 and x86 folders to the CRT extensions folder:</span></span>
+
+    - <span data-ttu-id="de12e-207">**小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="de12e-207">**Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.</span></span>
+    - <span data-ttu-id="de12e-208">**Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="de12e-208">**Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.</span></span>
+
+4. <span data-ttu-id="de12e-209">CRT の拡張機能のコンフィギュレーション ファイルを検索します。</span><span class="sxs-lookup"><span data-stu-id="de12e-209">Find the extensions configuration file for CRT:</span></span>
+
+    - <span data-ttu-id="de12e-210">**小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="de12e-210">**Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.</span></span>
+    - <span data-ttu-id="de12e-211">**Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。</span><span class="sxs-lookup"><span data-stu-id="de12e-211">**Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.</span></span>
+
+5. <span data-ttu-id="de12e-212">拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。</span><span class="sxs-lookup"><span data-stu-id="de12e-212">Register the CRT change in the extensions configuration file.</span></span>
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
+    ```
+
+    > [!WARNING]
+    > <span data-ttu-id="de12e-213">commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。</span><span class="sxs-lookup"><span data-stu-id="de12e-213">Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files.</span></span> <span data-ttu-id="de12e-214">これらのファイルはカスタマイズのためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="de12e-214">These files aren't intended for any customizations.</span></span>
+
+# <a name="retail-100-and-latertabretail-10-0"></a>[<span data-ttu-id="de12e-215">Retail 10.0 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-215">Retail 10.0 and later</span></span>](#tab/retail-10-0)
+
+<span data-ttu-id="de12e-216">汎用税エンジン コンポーネントはシールド拡張機能の一部です。</span><span class="sxs-lookup"><span data-stu-id="de12e-216">The Generic Tax Engine component is a part of sealed extensions.</span></span>
+
+1. <span data-ttu-id="de12e-217">CRT の拡張機能のコンフィギュレーション ファイルを検索します。</span><span class="sxs-lookup"><span data-stu-id="de12e-217">Find the extensions configuration file for CRT:</span></span>
+
+    - <span data-ttu-id="de12e-218">**小売サーバー:** ファイルは **commerceruntime.ext.config** で、Microsoft インターネット インフォメーション サービス (IIS) 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="de12e-218">**Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.</span></span>
+    - <span data-ttu-id="de12e-219">**Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。</span><span class="sxs-lookup"><span data-stu-id="de12e-219">**Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.</span></span>
+
+2. <span data-ttu-id="de12e-220">拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。</span><span class="sxs-lookup"><span data-stu-id="de12e-220">Register the CRT change in the extensions configuration file.</span></span>
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
     ```
 
     > [!WARNING]
-    > <span data-ttu-id="1f1e9-221">commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-221">Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files.</span></span> <span data-ttu-id="1f1e9-222">これらのファイルはカスタマイズのためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-222">These files aren't intended for any customizations.</span></span>
+    > <span data-ttu-id="de12e-221">commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。</span><span class="sxs-lookup"><span data-stu-id="de12e-221">Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files.</span></span> <span data-ttu-id="de12e-222">これらのファイルはカスタマイズのためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="de12e-222">These files aren't intended for any customizations.</span></span>
 
 ---
 
-### <a name="set-up-required-parameters-in-retail-headquarters"></a><span data-ttu-id="1f1e9-223">小売用バックオフィスで要求されるパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-223">Set up required parameters in Retail headquarters</span></span>
+### <a name="set-up-required-parameters-in-retail-headquarters"></a><span data-ttu-id="de12e-223">小売用バックオフィスで要求されるパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="de12e-223">Set up required parameters in Retail headquarters</span></span>
 
-<span data-ttu-id="1f1e9-224">詳細については、[インドのキャッシュ レジスターの販売税統合](./apac-ind-cash-registers.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-224">For more information, see [GST integration for cash registers for India](./apac-ind-cash-registers.md).</span></span>
+<span data-ttu-id="de12e-224">詳細については、[インドのキャッシュ レジスターの販売税統合](./apac-ind-cash-registers.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="de12e-224">For more information, see [GST integration for cash registers for India](./apac-ind-cash-registers.md).</span></span>
 
-## <a name="production-environment"></a><span data-ttu-id="1f1e9-225">実稼働環境</span><span class="sxs-lookup"><span data-stu-id="1f1e9-225">Production environment</span></span>
+## <a name="production-environment"></a><span data-ttu-id="de12e-225">実稼働環境</span><span class="sxs-lookup"><span data-stu-id="de12e-225">Production environment</span></span>
 
-<span data-ttu-id="1f1e9-226">以下の手順に従い、小売コンポーネントを含む配置可能パッケージを作成して、パッケージを実稼働環境で適用します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-226">Follow these steps to create deployable packages that contain Retail components, and to apply the packages in a production environment.</span></span>
+<span data-ttu-id="de12e-226">以下の手順に従い、小売コンポーネントを含む配置可能パッケージを作成して、パッケージを実稼働環境で適用します。</span><span class="sxs-lookup"><span data-stu-id="de12e-226">Follow these steps to create deployable packages that contain Retail components, and to apply the packages in a production environment.</span></span>
 
-1. <span data-ttu-id="1f1e9-227">**RetailSdk\\Assets** フォルダーの下の **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルで、以下の行を **合成** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-227">In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.</span></span>
+1. <span data-ttu-id="de12e-227">**RetailSdk\\Assets** フォルダーの下の **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルで、以下の行を **合成** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="de12e-227">In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.</span></span>
 
-    # <a name="retail-731tabretail-7-3-1"></a>[<span data-ttu-id="1f1e9-228">Retail 7.3.1</span><span class="sxs-lookup"><span data-stu-id="1f1e9-228">Retail 7.3.1</span></span>](#tab/retail-7-3-1)
+    # <a name="retail-731tabretail-7-3-1"></a>[<span data-ttu-id="de12e-228">Retail 7.3.1</span><span class="sxs-lookup"><span data-stu-id="de12e-228">Retail 7.3.1</span></span>](#tab/retail-7-3-1)
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
     ```
 
-    # <a name="retail-732-and-latertabretail-7-3-2"></a>[<span data-ttu-id="1f1e9-229">Retail 7.3.2 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-229">Retail 7.3.2 and later</span></span>](#tab/retail-7-3-2)
+    # <a name="retail-732-and-latertabretail-7-3-2"></a>[<span data-ttu-id="de12e-229">Retail 7.3.2 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-229">Retail 7.3.2 and later</span></span>](#tab/retail-7-3-2)
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
 
-    # <a name="retail-813-and-latertabretail-8-1-3"></a>[<span data-ttu-id="1f1e9-230">Retail 8.1.3 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-230">Retail 8.1.3 and later</span></span>](#tab/retail-8-1-3)
+    # <a name="retail-813-and-latertabretail-8-1-3"></a>[<span data-ttu-id="de12e-230">Retail 8.1.3 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-230">Retail 8.1.3 and later</span></span>](#tab/retail-8-1-3)
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
 
-    # <a name="retail-100-and-latertabretail-10-0"></a>[<span data-ttu-id="1f1e9-231">Retail 10.0 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-231">Retail 10.0 and later</span></span>](#tab/retail-10-0)
+    # <a name="retail-100-and-latertabretail-10-0"></a>[<span data-ttu-id="de12e-231">Retail 10.0 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-231">Retail 10.0 and later</span></span>](#tab/retail-10-0)
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
@@ -259,9 +259,9 @@ ms.locfileid: "1571596"
 
     ---
 
-2. <span data-ttu-id="1f1e9-232">**RetailSdk\\BuildTools** フォルダーの下の **Customization.settings** パッケージ カスタマイズ構成ファイルで、以下の行を **ItemGroup** セクションに追加して、配置可能パッケージ内の CRT 拡張機能を含めます。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-232">In the **Customization.settings** package customization configuration file under the **RetailSdk\\BuildTools** folder, add the following lines to the **ItemGroup** section to include the CRT extensions in deployable packages.</span></span>
+2. <span data-ttu-id="de12e-232">**RetailSdk\\BuildTools** フォルダーの下の **Customization.settings** パッケージ カスタマイズ構成ファイルで、以下の行を **ItemGroup** セクションに追加して、配置可能パッケージ内の CRT 拡張機能を含めます。</span><span class="sxs-lookup"><span data-stu-id="de12e-232">In the **Customization.settings** package customization configuration file under the **RetailSdk\\BuildTools** folder, add the following lines to the **ItemGroup** section to include the CRT extensions in deployable packages.</span></span>
 
-    # <a name="retail-731tabretail-7-3-1"></a>[<span data-ttu-id="1f1e9-233">Retail 7.3.1</span><span class="sxs-lookup"><span data-stu-id="1f1e9-233">Retail 7.3.1</span></span>](#tab/retail-7-3-1)
+    # <a name="retail-731tabretail-7-3-1"></a>[<span data-ttu-id="de12e-233">Retail 7.3.1</span><span class="sxs-lookup"><span data-stu-id="de12e-233">Retail 7.3.1</span></span>](#tab/retail-7-3-1)
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
@@ -277,7 +277,7 @@ ms.locfileid: "1571596"
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json\9.0.0.0\Newtonsoft.Json.dll" />
     ```
 
-    # <a name="retail-732-and-latertabretail-7-3-2"></a>[<span data-ttu-id="1f1e9-234">Retail 7.3.2 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-234">Retail 7.3.2 and later</span></span>](#tab/retail-7-3-2)
+    # <a name="retail-732-and-latertabretail-7-3-2"></a>[<span data-ttu-id="de12e-234">Retail 7.3.2 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-234">Retail 7.3.2 and later</span></span>](#tab/retail-7-3-2)
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.GenericTaxEngine.dll" />
@@ -293,7 +293,7 @@ ms.locfileid: "1571596"
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" />
     ```
 
-    # <a name="retail-813-and-latertabretail-8-1-3"></a>[<span data-ttu-id="1f1e9-235">Retail 8.1.3 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-235">Retail 8.1.3 and later</span></span>](#tab/retail-8-1-3)
+    # <a name="retail-813-and-latertabretail-8-1-3"></a>[<span data-ttu-id="de12e-235">Retail 8.1.3 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-235">Retail 8.1.3 and later</span></span>](#tab/retail-8-1-3)
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.GenericTaxEngine.dll" />
@@ -309,100 +309,100 @@ ms.locfileid: "1571596"
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" />
     ```
 
-    # <a name="retail-100-and-latertabretail-10-0"></a>[<span data-ttu-id="1f1e9-236">Retail 10.0 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-236">Retail 10.0 and later</span></span>](#tab/retail-10-0)
+    # <a name="retail-100-and-latertabretail-10-0"></a>[<span data-ttu-id="de12e-236">Retail 10.0 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-236">Retail 10.0 and later</span></span>](#tab/retail-10-0)
 
     > [!NOTE]
-    > <span data-ttu-id="1f1e9-237">このバージョンには、この手順は適用されません。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-237">This step doesn't apply to this version.</span></span>
+    > <span data-ttu-id="de12e-237">このバージョンには、この手順は適用されません。</span><span class="sxs-lookup"><span data-stu-id="de12e-237">This step doesn't apply to this version.</span></span>
 
     ---
 
-3. <span data-ttu-id="1f1e9-238">以下のファイルを修正して、配置可能パッケージに Z3 ライブラリを含めます。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-238">Modify the following files to include the Z3 libraries in deployable packages:</span></span>
+3. <span data-ttu-id="de12e-238">以下のファイルを修正して、配置可能パッケージに Z3 ライブラリを含めます。</span><span class="sxs-lookup"><span data-stu-id="de12e-238">Modify the following files to include the Z3 libraries in deployable packages:</span></span>
 
-    # <a name="retail-731tabretail-7-3-1"></a>[<span data-ttu-id="1f1e9-239">Retail 7.3.1</span><span class="sxs-lookup"><span data-stu-id="1f1e9-239">Retail 7.3.1</span></span>](#tab/retail-7-3-1)
+    # <a name="retail-731tabretail-7-3-1"></a>[<span data-ttu-id="de12e-239">Retail 7.3.1</span><span class="sxs-lookup"><span data-stu-id="de12e-239">Retail 7.3.1</span></span>](#tab/retail-7-3-1)
 
-    - <span data-ttu-id="1f1e9-240">Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj</span><span class="sxs-lookup"><span data-stu-id="1f1e9-240">Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj</span></span>
-    - <span data-ttu-id="1f1e9-241">Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj</span><span class="sxs-lookup"><span data-stu-id="1f1e9-241">Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj</span></span>
-    - <span data-ttu-id="1f1e9-242">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span><span class="sxs-lookup"><span data-stu-id="1f1e9-242">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span></span>
+    - <span data-ttu-id="de12e-240">Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj</span><span class="sxs-lookup"><span data-stu-id="de12e-240">Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj</span></span>
+    - <span data-ttu-id="de12e-241">Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj</span><span class="sxs-lookup"><span data-stu-id="de12e-241">Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj</span></span>
+    - <span data-ttu-id="de12e-242">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span><span class="sxs-lookup"><span data-stu-id="de12e-242">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span></span>
 
-    <span data-ttu-id="1f1e9-243">以下の行を **ItemGroup** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-243">Add the following lines to the **ItemGroup** section.</span></span>
+    <span data-ttu-id="de12e-243">以下の行を **ItemGroup** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="de12e-243">Add the following lines to the **ItemGroup** section.</span></span>
 
     ```xml
     <_bin_ext_Z3_x86_File Include="..\..\References\Z3\x86\*.*" />
     <_bin_ext_Z3_x64_File Include="..\..\References\Z3\x64\*.*" />
     ```
 
-    <span data-ttu-id="1f1e9-244">**Sdk.ModernPOSSetup.csproj** および **Sdk.ModernPOSSetupOffline.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-244">For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
+    <span data-ttu-id="de12e-244">**Sdk.ModernPOSSetup.csproj** および **Sdk.ModernPOSSetupOffline.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="de12e-244">For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
 
     ```xml
     <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    <span data-ttu-id="1f1e9-245">**Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-245">For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
+    <span data-ttu-id="de12e-245">**Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="de12e-245">For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
     ```xml
     <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    # <a name="retail-732-and-latertabretail-7-3-2"></a>[<span data-ttu-id="1f1e9-246">Retail 7.3.2 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-246">Retail 7.3.2 and later</span></span>](#tab/retail-7-3-2)
+    # <a name="retail-732-and-latertabretail-7-3-2"></a>[<span data-ttu-id="de12e-246">Retail 7.3.2 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-246">Retail 7.3.2 and later</span></span>](#tab/retail-7-3-2)
 
-    - <span data-ttu-id="1f1e9-247">Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj</span><span class="sxs-lookup"><span data-stu-id="1f1e9-247">Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj</span></span>
-    - <span data-ttu-id="1f1e9-248">Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj</span><span class="sxs-lookup"><span data-stu-id="1f1e9-248">Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj</span></span>
-    - <span data-ttu-id="1f1e9-249">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span><span class="sxs-lookup"><span data-stu-id="1f1e9-249">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span></span>
+    - <span data-ttu-id="de12e-247">Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj</span><span class="sxs-lookup"><span data-stu-id="de12e-247">Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj</span></span>
+    - <span data-ttu-id="de12e-248">Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj</span><span class="sxs-lookup"><span data-stu-id="de12e-248">Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj</span></span>
+    - <span data-ttu-id="de12e-249">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span><span class="sxs-lookup"><span data-stu-id="de12e-249">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span></span>
 
-    <span data-ttu-id="1f1e9-250">以下の行を **ItemGroup** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-250">Add the following lines to the **ItemGroup** section.</span></span>
+    <span data-ttu-id="de12e-250">以下の行を **ItemGroup** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="de12e-250">Add the following lines to the **ItemGroup** section.</span></span>
 
     ```xml
     <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
     <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
     ```
 
-    <span data-ttu-id="1f1e9-251">**Sdk.ModernPOSSetup.csproj** および **Sdk.ModernPOSSetupOffline.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-251">For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
+    <span data-ttu-id="de12e-251">**Sdk.ModernPOSSetup.csproj** および **Sdk.ModernPOSSetupOffline.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="de12e-251">For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
 
     ```xml
     <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    <span data-ttu-id="1f1e9-252">**Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-252">For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
+    <span data-ttu-id="de12e-252">**Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="de12e-252">For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
 
     ```xml
     <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    # <a name="retail-813-and-latertabretail-8-1-3"></a>[<span data-ttu-id="1f1e9-253">Retail 8.1.3 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-253">Retail 8.1.3 and later</span></span>](#tab/retail-8-1-3)
+    # <a name="retail-813-and-latertabretail-8-1-3"></a>[<span data-ttu-id="de12e-253">Retail 8.1.3 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-253">Retail 8.1.3 and later</span></span>](#tab/retail-8-1-3)
 
-    - <span data-ttu-id="1f1e9-254">Packages\\\_SharedPackagingProjectComponents\\Sdk.ModernPos.Shared.csproj</span><span class="sxs-lookup"><span data-stu-id="1f1e9-254">Packages\\\_SharedPackagingProjectComponents\\Sdk.ModernPos.Shared.csproj</span></span>
-    - <span data-ttu-id="1f1e9-255">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span><span class="sxs-lookup"><span data-stu-id="1f1e9-255">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span></span>
+    - <span data-ttu-id="de12e-254">Packages\\\_SharedPackagingProjectComponents\\Sdk.ModernPos.Shared.csproj</span><span class="sxs-lookup"><span data-stu-id="de12e-254">Packages\\\_SharedPackagingProjectComponents\\Sdk.ModernPos.Shared.csproj</span></span>
+    - <span data-ttu-id="de12e-255">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span><span class="sxs-lookup"><span data-stu-id="de12e-255">Packages\\RetailServer\\Sdk.RetailServerSetup.proj</span></span>
 
-    <span data-ttu-id="1f1e9-256">以下の行を **ItemGroup** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-256">Add the following lines to the **ItemGroup** section.</span></span>
+    <span data-ttu-id="de12e-256">以下の行を **ItemGroup** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="de12e-256">Add the following lines to the **ItemGroup** section.</span></span>
 
      ```xml
     <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
     <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
      ```
 
-    <span data-ttu-id="1f1e9-257">**Sdk.ModernPos.Shared.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-257">For **Sdk.ModernPos.Shared.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
+    <span data-ttu-id="de12e-257">**Sdk.ModernPos.Shared.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="de12e-257">For **Sdk.ModernPos.Shared.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
 
     ```xml
     <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    <span data-ttu-id="1f1e9-258">**Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-258">For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
+    <span data-ttu-id="de12e-258">**Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="de12e-258">For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.</span></span>
 
     ```xml
     <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    # <a name="retail-100-and-latertabretail-10-0"></a>[<span data-ttu-id="1f1e9-259">Retail 10.0 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="1f1e9-259">Retail 10.0 and later</span></span>](#tab/retail-10-0)
+    # <a name="retail-100-and-latertabretail-10-0"></a>[<span data-ttu-id="de12e-259">Retail 10.0 およびそれ以降</span><span class="sxs-lookup"><span data-stu-id="de12e-259">Retail 10.0 and later</span></span>](#tab/retail-10-0)
 
     > [!NOTE]
-    > <span data-ttu-id="1f1e9-260">このバージョンには、この手順は適用されません。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-260">This step doesn't apply to this version.</span></span>
+    > <span data-ttu-id="de12e-260">このバージョンには、この手順は適用されません。</span><span class="sxs-lookup"><span data-stu-id="de12e-260">This step doesn't apply to this version.</span></span>
 
     ---
 
-4. <span data-ttu-id="1f1e9-261">Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-261">Run **msbuild** for the whole Retail SDK to create deployable packages.</span></span>
-5. <span data-ttu-id="1f1e9-262">Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-262">Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually.</span></span> <span data-ttu-id="1f1e9-263">詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f1e9-263">For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).</span></span>
+4. <span data-ttu-id="de12e-261">Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。</span><span class="sxs-lookup"><span data-stu-id="de12e-261">Run **msbuild** for the whole Retail SDK to create deployable packages.</span></span>
+5. <span data-ttu-id="de12e-262">Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。</span><span class="sxs-lookup"><span data-stu-id="de12e-262">Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually.</span></span> <span data-ttu-id="de12e-263">詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="de12e-263">For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).</span></span>

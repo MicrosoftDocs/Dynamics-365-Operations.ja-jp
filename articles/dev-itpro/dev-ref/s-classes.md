@@ -9,1337 +9,1337 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 51751
 ms.assetid: cb7c0fd3-34ec-407b-ad78-1007a67d70d5
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f60a1052c05b9e48bd3df1d34b853b3c78f66a1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d2c3ee626024a12ed44178bf55152da578f8e3fe
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544189"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833658"
 ---
-# <a name="s-classes"></a><span data-ttu-id="7f44c-103">S クラス</span><span class="sxs-lookup"><span data-stu-id="7f44c-103">S classes</span></span>
+# <a name="s-classes"></a><span data-ttu-id="50251-103">S クラス</span><span class="sxs-lookup"><span data-stu-id="50251-103">S classes</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="7f44c-104">文字 S で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="7f44c-104">System API classes that start with the letter S.</span></span>
+<span data-ttu-id="50251-104">文字 S で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="50251-104">System API classes that start with the letter S.</span></span>
 
-<a name="class-scannerclass"></a><span data-ttu-id="7f44c-105">クラス ScannerClass</span><span class="sxs-lookup"><span data-stu-id="7f44c-105">Class ScannerClass</span></span>
+<a name="class-scannerclass"></a><span data-ttu-id="50251-105">クラス ScannerClass</span><span class="sxs-lookup"><span data-stu-id="50251-105">Class ScannerClass</span></span>
 ------------------
 
     class ScannerClass extends Object
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-106">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-106">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-106">備考</span><span class="sxs-lookup"><span data-stu-id="50251-106">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-107">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-107">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-107">例</span><span class="sxs-lookup"><span data-stu-id="50251-107">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-108">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-108">Methods</span></span>
 
-| <span data-ttu-id="7f44c-109">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-109">Method</span></span>                                                                                       | <span data-ttu-id="7f44c-110">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-110">Description</span></span>                                     |
+| <span data-ttu-id="50251-109">方法</span><span class="sxs-lookup"><span data-stu-id="50251-109">Method</span></span>                                                                                       | <span data-ttu-id="50251-110">説明</span><span class="sxs-lookup"><span data-stu-id="50251-110">Description</span></span>                                     |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <span data-ttu-id="7f44c-111">public int col()</span><span class="sxs-lookup"><span data-stu-id="7f44c-111">public int col()</span></span>                                                                             |                                                 |
-| <span data-ttu-id="7f44c-112">public Date dateValue()</span><span class="sxs-lookup"><span data-stu-id="7f44c-112">public Date dateValue()</span></span>                                                                      |                                                 |
-| <span data-ttu-id="7f44c-113">public int firstSymbol()</span><span class="sxs-lookup"><span data-stu-id="7f44c-113">public int firstSymbol()</span></span>                                                                     |                                                 |
-| <span data-ttu-id="7f44c-114">public Int64 int64Value()</span><span class="sxs-lookup"><span data-stu-id="7f44c-114">public Int64 int64Value()</span></span>                                                                    |                                                 |
-| <span data-ttu-id="7f44c-115">public int intValue()</span><span class="sxs-lookup"><span data-stu-id="7f44c-115">public int intValue()</span></span>                                                                        |                                                 |
-| <span data-ttu-id="7f44c-116">public int line()</span><span class="sxs-lookup"><span data-stu-id="7f44c-116">public int line()</span></span>                                                                            |                                                 |
-| <span data-ttu-id="7f44c-117">public int nextSymbol()</span><span class="sxs-lookup"><span data-stu-id="7f44c-117">public int nextSymbol()</span></span>                                                                      |                                                 |
-| <span data-ttu-id="7f44c-118">public Real realValue()</span><span class="sxs-lookup"><span data-stu-id="7f44c-118">public Real realValue()</span></span>                                                                      |                                                 |
-| <span data-ttu-id="7f44c-119">public int startColumn()</span><span class="sxs-lookup"><span data-stu-id="7f44c-119">public int startColumn()</span></span>                                                                     |                                                 |
-| <span data-ttu-id="7f44c-120">public str string()</span><span class="sxs-lookup"><span data-stu-id="7f44c-120">public str string()</span></span>                                                                          |                                                 |
-| <span data-ttu-id="7f44c-121">public str strValue()</span><span class="sxs-lookup"><span data-stu-id="7f44c-121">public str strValue()</span></span>                                                                        |                                                 |
-| <span data-ttu-id="7f44c-122">public void localMacroDefine(str text, int startLine, int startPos, int endLine, int endPos)</span><span class="sxs-lookup"><span data-stu-id="7f44c-122">public void localMacroDefine(str text, int startLine, int startPos, int endLine, int endPos)</span></span> |                                                 |
-| <span data-ttu-id="7f44c-123">public void lineComment(str text, int startLine, int startPos, int endLine, int endPos)</span><span class="sxs-lookup"><span data-stu-id="7f44c-123">public void lineComment(str text, int startLine, int startPos, int endLine, int endPos)</span></span>      |                                                 |
-| <span data-ttu-id="7f44c-124">public void macroDefine(str text, int startLine, int startPos, int endLine, int endPos)</span><span class="sxs-lookup"><span data-stu-id="7f44c-124">public void macroDefine(str text, int startLine, int startPos, int endLine, int endPos)</span></span>      |                                                 |
-| <span data-ttu-id="7f44c-125">public void new(str source)</span><span class="sxs-lookup"><span data-stu-id="7f44c-125">public void new(str source)</span></span>                                                                  | <span data-ttu-id="7f44c-126">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-126">Initializes a new instance of the Object class.</span></span> |
-| <span data-ttu-id="7f44c-127">public void comment(str text, int startLine, int startPos, int endLine, int endPos)</span><span class="sxs-lookup"><span data-stu-id="7f44c-127">public void comment(str text, int startLine, int startPos, int endLine, int endPos)</span></span>          |                                                 |
+| <span data-ttu-id="50251-111">public int col()</span><span class="sxs-lookup"><span data-stu-id="50251-111">public int col()</span></span>                                                                             |                                                 |
+| <span data-ttu-id="50251-112">public Date dateValue()</span><span class="sxs-lookup"><span data-stu-id="50251-112">public Date dateValue()</span></span>                                                                      |                                                 |
+| <span data-ttu-id="50251-113">public int firstSymbol()</span><span class="sxs-lookup"><span data-stu-id="50251-113">public int firstSymbol()</span></span>                                                                     |                                                 |
+| <span data-ttu-id="50251-114">public Int64 int64Value()</span><span class="sxs-lookup"><span data-stu-id="50251-114">public Int64 int64Value()</span></span>                                                                    |                                                 |
+| <span data-ttu-id="50251-115">public int intValue()</span><span class="sxs-lookup"><span data-stu-id="50251-115">public int intValue()</span></span>                                                                        |                                                 |
+| <span data-ttu-id="50251-116">public int line()</span><span class="sxs-lookup"><span data-stu-id="50251-116">public int line()</span></span>                                                                            |                                                 |
+| <span data-ttu-id="50251-117">public int nextSymbol()</span><span class="sxs-lookup"><span data-stu-id="50251-117">public int nextSymbol()</span></span>                                                                      |                                                 |
+| <span data-ttu-id="50251-118">public Real realValue()</span><span class="sxs-lookup"><span data-stu-id="50251-118">public Real realValue()</span></span>                                                                      |                                                 |
+| <span data-ttu-id="50251-119">public int startColumn()</span><span class="sxs-lookup"><span data-stu-id="50251-119">public int startColumn()</span></span>                                                                     |                                                 |
+| <span data-ttu-id="50251-120">public str string()</span><span class="sxs-lookup"><span data-stu-id="50251-120">public str string()</span></span>                                                                          |                                                 |
+| <span data-ttu-id="50251-121">public str strValue()</span><span class="sxs-lookup"><span data-stu-id="50251-121">public str strValue()</span></span>                                                                        |                                                 |
+| <span data-ttu-id="50251-122">public void localMacroDefine(str text, int startLine, int startPos, int endLine, int endPos)</span><span class="sxs-lookup"><span data-stu-id="50251-122">public void localMacroDefine(str text, int startLine, int startPos, int endLine, int endPos)</span></span> |                                                 |
+| <span data-ttu-id="50251-123">public void lineComment(str text, int startLine, int startPos, int endLine, int endPos)</span><span class="sxs-lookup"><span data-stu-id="50251-123">public void lineComment(str text, int startLine, int startPos, int endLine, int endPos)</span></span>      |                                                 |
+| <span data-ttu-id="50251-124">public void macroDefine(str text, int startLine, int startPos, int endLine, int endPos)</span><span class="sxs-lookup"><span data-stu-id="50251-124">public void macroDefine(str text, int startLine, int startPos, int endLine, int endPos)</span></span>      |                                                 |
+| <span data-ttu-id="50251-125">public void new(str source)</span><span class="sxs-lookup"><span data-stu-id="50251-125">public void new(str source)</span></span>                                                                  | <span data-ttu-id="50251-126">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-126">Initializes a new instance of the Object class.</span></span> |
+| <span data-ttu-id="50251-127">public void comment(str text, int startLine, int startPos, int endLine, int endPos)</span><span class="sxs-lookup"><span data-stu-id="50251-127">public void comment(str text, int startLine, int startPos, int endLine, int endPos)</span></span>          |                                                 |
 
-### <a name="method-col"></a><span data-ttu-id="7f44c-128">メソッド col</span><span class="sxs-lookup"><span data-stu-id="7f44c-128">Method col</span></span>
+### <a name="method-col"></a><span data-ttu-id="50251-128">メソッド col</span><span class="sxs-lookup"><span data-stu-id="50251-128">Method col</span></span>
 
     public int col()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-129">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-129">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-129">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-129">Return Value</span></span>
 
-### <a name="method-datevalue"></a><span data-ttu-id="7f44c-130">メソッド dateValue</span><span class="sxs-lookup"><span data-stu-id="7f44c-130">Method dateValue</span></span>
+### <a name="method-datevalue"></a><span data-ttu-id="50251-130">メソッド dateValue</span><span class="sxs-lookup"><span data-stu-id="50251-130">Method dateValue</span></span>
 
     public Date dateValue()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-131">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-131">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-131">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-131">Return Value</span></span>
 
-### <a name="method-firstsymbol"></a><span data-ttu-id="7f44c-132">メソッド firstSymbol</span><span class="sxs-lookup"><span data-stu-id="7f44c-132">Method firstSymbol</span></span>
+### <a name="method-firstsymbol"></a><span data-ttu-id="50251-132">メソッド firstSymbol</span><span class="sxs-lookup"><span data-stu-id="50251-132">Method firstSymbol</span></span>
 
     public int firstSymbol()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-133">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-133">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-133">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-133">Return Value</span></span>
 
-### <a name="method-int64value"></a><span data-ttu-id="7f44c-134">メソッド int64Value</span><span class="sxs-lookup"><span data-stu-id="7f44c-134">Method int64Value</span></span>
+### <a name="method-int64value"></a><span data-ttu-id="50251-134">メソッド int64Value</span><span class="sxs-lookup"><span data-stu-id="50251-134">Method int64Value</span></span>
 
     public Int64 int64Value()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-135">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-135">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-135">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-135">Return Value</span></span>
 
-### <a name="method-intvalue"></a><span data-ttu-id="7f44c-136">メソッド intValue</span><span class="sxs-lookup"><span data-stu-id="7f44c-136">Method intValue</span></span>
+### <a name="method-intvalue"></a><span data-ttu-id="50251-136">メソッド intValue</span><span class="sxs-lookup"><span data-stu-id="50251-136">Method intValue</span></span>
 
     public int intValue()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-137">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-137">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-137">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-137">Return Value</span></span>
 
-### <a name="method-line"></a><span data-ttu-id="7f44c-138">メソッド line</span><span class="sxs-lookup"><span data-stu-id="7f44c-138">Method line</span></span>
+### <a name="method-line"></a><span data-ttu-id="50251-138">メソッド line</span><span class="sxs-lookup"><span data-stu-id="50251-138">Method line</span></span>
 
     public int line()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-139">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-139">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-139">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-139">Return Value</span></span>
 
-### <a name="method-nextsymbol"></a><span data-ttu-id="7f44c-140">メソッド nextSymbol</span><span class="sxs-lookup"><span data-stu-id="7f44c-140">Method nextSymbol</span></span>
+### <a name="method-nextsymbol"></a><span data-ttu-id="50251-140">メソッド nextSymbol</span><span class="sxs-lookup"><span data-stu-id="50251-140">Method nextSymbol</span></span>
 
     public int nextSymbol()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-141">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-141">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-141">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-141">Return Value</span></span>
 
-### <a name="method-realvalue"></a><span data-ttu-id="7f44c-142">メソッド realValue</span><span class="sxs-lookup"><span data-stu-id="7f44c-142">Method realValue</span></span>
+### <a name="method-realvalue"></a><span data-ttu-id="50251-142">メソッド realValue</span><span class="sxs-lookup"><span data-stu-id="50251-142">Method realValue</span></span>
 
     public Real realValue()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-143">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-143">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-143">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-143">Return Value</span></span>
 
-### <a name="method-startcolumn"></a><span data-ttu-id="7f44c-144">メソッド startColumn</span><span class="sxs-lookup"><span data-stu-id="7f44c-144">Method startColumn</span></span>
+### <a name="method-startcolumn"></a><span data-ttu-id="50251-144">メソッド startColumn</span><span class="sxs-lookup"><span data-stu-id="50251-144">Method startColumn</span></span>
 
     public int startColumn()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-145">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-145">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-145">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-145">Return Value</span></span>
 
-### <a name="method-string"></a><span data-ttu-id="7f44c-146">メソッド string</span><span class="sxs-lookup"><span data-stu-id="7f44c-146">Method string</span></span>
+### <a name="method-string"></a><span data-ttu-id="50251-146">メソッド string</span><span class="sxs-lookup"><span data-stu-id="50251-146">Method string</span></span>
 
     public str string()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-147">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-147">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-147">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-147">Return Value</span></span>
 
-### <a name="method-strvalue"></a><span data-ttu-id="7f44c-148">メソッド strValue</span><span class="sxs-lookup"><span data-stu-id="7f44c-148">Method strValue</span></span>
+### <a name="method-strvalue"></a><span data-ttu-id="50251-148">メソッド strValue</span><span class="sxs-lookup"><span data-stu-id="50251-148">Method strValue</span></span>
 
     public str strValue()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-149">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-149">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-149">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-149">Return Value</span></span>
 
-### <a name="method-localmacrodefine"></a><span data-ttu-id="7f44c-150">メソッド localMacroDefine</span><span class="sxs-lookup"><span data-stu-id="7f44c-150">Method localMacroDefine</span></span>
+### <a name="method-localmacrodefine"></a><span data-ttu-id="50251-150">メソッド localMacroDefine</span><span class="sxs-lookup"><span data-stu-id="50251-150">Method localMacroDefine</span></span>
 
     public void localMacroDefine(str text, int startLine, int startPos, int endLine, int endPos)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-151">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-151">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-151">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-151">Parameters</span></span>
 
-<span data-ttu-id="7f44c-152">テキスト</span><span class="sxs-lookup"><span data-stu-id="7f44c-152">text</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-153">startLine</span><span class="sxs-lookup"><span data-stu-id="7f44c-153">startLine</span></span>  
+<span data-ttu-id="50251-152">テキスト</span><span class="sxs-lookup"><span data-stu-id="50251-152">text</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-154">startPos</span><span class="sxs-lookup"><span data-stu-id="7f44c-154">startPos</span></span>  
+<span data-ttu-id="50251-153">startLine</span><span class="sxs-lookup"><span data-stu-id="50251-153">startLine</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-155">endLine</span><span class="sxs-lookup"><span data-stu-id="7f44c-155">endLine</span></span>  
+<span data-ttu-id="50251-154">startPos</span><span class="sxs-lookup"><span data-stu-id="50251-154">startPos</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-156">endPos</span><span class="sxs-lookup"><span data-stu-id="7f44c-156">endPos</span></span>  
+<span data-ttu-id="50251-155">endLine</span><span class="sxs-lookup"><span data-stu-id="50251-155">endLine</span></span>  
 
-### <a name="method-linecomment"></a><span data-ttu-id="7f44c-157">メソッド lineComment</span><span class="sxs-lookup"><span data-stu-id="7f44c-157">Method lineComment</span></span>
+<!-- -->
+
+<span data-ttu-id="50251-156">endPos</span><span class="sxs-lookup"><span data-stu-id="50251-156">endPos</span></span>  
+
+### <a name="method-linecomment"></a><span data-ttu-id="50251-157">メソッド lineComment</span><span class="sxs-lookup"><span data-stu-id="50251-157">Method lineComment</span></span>
 
     public void lineComment(str text, int startLine, int startPos, int endLine, int endPos)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-158">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-158">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-158">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-158">Parameters</span></span>
 
-<span data-ttu-id="7f44c-159">テキスト</span><span class="sxs-lookup"><span data-stu-id="7f44c-159">text</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-160">startLine</span><span class="sxs-lookup"><span data-stu-id="7f44c-160">startLine</span></span>  
+<span data-ttu-id="50251-159">テキスト</span><span class="sxs-lookup"><span data-stu-id="50251-159">text</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-161">startPos</span><span class="sxs-lookup"><span data-stu-id="7f44c-161">startPos</span></span>  
+<span data-ttu-id="50251-160">startLine</span><span class="sxs-lookup"><span data-stu-id="50251-160">startLine</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-162">endLine</span><span class="sxs-lookup"><span data-stu-id="7f44c-162">endLine</span></span>  
+<span data-ttu-id="50251-161">startPos</span><span class="sxs-lookup"><span data-stu-id="50251-161">startPos</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-163">endPos</span><span class="sxs-lookup"><span data-stu-id="7f44c-163">endPos</span></span>  
+<span data-ttu-id="50251-162">endLine</span><span class="sxs-lookup"><span data-stu-id="50251-162">endLine</span></span>  
 
-### <a name="method-macrodefine"></a><span data-ttu-id="7f44c-164">メソッド macroDefine</span><span class="sxs-lookup"><span data-stu-id="7f44c-164">Method macroDefine</span></span>
+<!-- -->
+
+<span data-ttu-id="50251-163">endPos</span><span class="sxs-lookup"><span data-stu-id="50251-163">endPos</span></span>  
+
+### <a name="method-macrodefine"></a><span data-ttu-id="50251-164">メソッド macroDefine</span><span class="sxs-lookup"><span data-stu-id="50251-164">Method macroDefine</span></span>
 
     public void macroDefine(str text, int startLine, int startPos, int endLine, int endPos)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-165">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-165">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-165">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-165">Parameters</span></span>
 
-<span data-ttu-id="7f44c-166">テキスト</span><span class="sxs-lookup"><span data-stu-id="7f44c-166">text</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-167">startLine</span><span class="sxs-lookup"><span data-stu-id="7f44c-167">startLine</span></span>  
+<span data-ttu-id="50251-166">テキスト</span><span class="sxs-lookup"><span data-stu-id="50251-166">text</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-168">startPos</span><span class="sxs-lookup"><span data-stu-id="7f44c-168">startPos</span></span>  
+<span data-ttu-id="50251-167">startLine</span><span class="sxs-lookup"><span data-stu-id="50251-167">startLine</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-169">endLine</span><span class="sxs-lookup"><span data-stu-id="7f44c-169">endLine</span></span>  
+<span data-ttu-id="50251-168">startPos</span><span class="sxs-lookup"><span data-stu-id="50251-168">startPos</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-170">endPos</span><span class="sxs-lookup"><span data-stu-id="7f44c-170">endPos</span></span>  
+<span data-ttu-id="50251-169">endLine</span><span class="sxs-lookup"><span data-stu-id="50251-169">endLine</span></span>  
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-171">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-171">Method new</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-172">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-172">Initializes a new instance of the Object class.</span></span>
+<span data-ttu-id="50251-170">endPos</span><span class="sxs-lookup"><span data-stu-id="50251-170">endPos</span></span>  
+
+### <a name="method-new"></a><span data-ttu-id="50251-171">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-171">Method new</span></span>
+
+<span data-ttu-id="50251-172">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-172">Initializes a new instance of the Object class.</span></span>
 
     public void new(str source)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-173">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-173">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-173">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-173">Parameters</span></span>
 
-<span data-ttu-id="7f44c-174">ソース</span><span class="sxs-lookup"><span data-stu-id="7f44c-174">source</span></span>  
+<span data-ttu-id="50251-174">ソース</span><span class="sxs-lookup"><span data-stu-id="50251-174">source</span></span>  
 
-### <a name="method-comment"></a><span data-ttu-id="7f44c-175">メソッド comment</span><span class="sxs-lookup"><span data-stu-id="7f44c-175">Method comment</span></span>
+### <a name="method-comment"></a><span data-ttu-id="50251-175">メソッド comment</span><span class="sxs-lookup"><span data-stu-id="50251-175">Method comment</span></span>
 
     public void comment(str text, int startLine, int startPos, int endLine, int endPos)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-176">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-176">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-176">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-176">Parameters</span></span>
 
-<span data-ttu-id="7f44c-177">テキスト</span><span class="sxs-lookup"><span data-stu-id="7f44c-177">text</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-178">startLine</span><span class="sxs-lookup"><span data-stu-id="7f44c-178">startLine</span></span>  
+<span data-ttu-id="50251-177">テキスト</span><span class="sxs-lookup"><span data-stu-id="50251-177">text</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-179">startPos</span><span class="sxs-lookup"><span data-stu-id="7f44c-179">startPos</span></span>  
+<span data-ttu-id="50251-178">startLine</span><span class="sxs-lookup"><span data-stu-id="50251-178">startLine</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-180">endLine</span><span class="sxs-lookup"><span data-stu-id="7f44c-180">endLine</span></span>  
+<span data-ttu-id="50251-179">startPos</span><span class="sxs-lookup"><span data-stu-id="50251-179">startPos</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-181">endPos</span><span class="sxs-lookup"><span data-stu-id="7f44c-181">endPos</span></span>  
+<span data-ttu-id="50251-180">endLine</span><span class="sxs-lookup"><span data-stu-id="50251-180">endLine</span></span>  
 
-## <a name="class-searchparm"></a><span data-ttu-id="7f44c-182">クラス SearchParm</span><span class="sxs-lookup"><span data-stu-id="7f44c-182">Class SearchParm</span></span>
+<!-- -->
+
+<span data-ttu-id="50251-181">endPos</span><span class="sxs-lookup"><span data-stu-id="50251-181">endPos</span></span>  
+
+## <a name="class-searchparm"></a><span data-ttu-id="50251-182">クラス SearchParm</span><span class="sxs-lookup"><span data-stu-id="50251-182">Class SearchParm</span></span>
     class SearchParm extends Object
 
-<span data-ttu-id="7f44c-183">SearchParm クラスは、カーネルと sysTreeSearch クラス間のインターフェイスとして機能し、アプリケーション オブジェクト ツリー (AOT) で検索できるようにします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-183">The SearchParm class serves as an interface between the kernel and the sysTreeSearch class, and enables searches in the  Application Object Tree (AOT).</span></span>
+<span data-ttu-id="50251-183">SearchParm クラスは、カーネルと sysTreeSearch クラス間のインターフェイスとして機能し、アプリケーション オブジェクト ツリー (AOT) で検索できるようにします。</span><span class="sxs-lookup"><span data-stu-id="50251-183">The SearchParm class serves as an interface between the kernel and the sysTreeSearch class, and enables searches in the  Application Object Tree (AOT).</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-184">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-184">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-184">備考</span><span class="sxs-lookup"><span data-stu-id="50251-184">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-185">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-185">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-185">例</span><span class="sxs-lookup"><span data-stu-id="50251-185">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-186">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-186">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-186">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-186">Methods</span></span>
 
-| <span data-ttu-id="7f44c-187">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-187">Method</span></span>                                          | <span data-ttu-id="7f44c-188">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-188">Description</span></span> |
+| <span data-ttu-id="50251-187">方法</span><span class="sxs-lookup"><span data-stu-id="50251-187">Method</span></span>                                          | <span data-ttu-id="50251-188">説明</span><span class="sxs-lookup"><span data-stu-id="50251-188">Description</span></span> |
 |-------------------------------------------------|-------------|
-| <span data-ttu-id="7f44c-189">public str nodeName(\[str name\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-189">public str nodeName(\[str name\])</span></span>               |             |
-| <span data-ttu-id="7f44c-190">public int nodeType(\[int type\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-190">public int nodeType(\[int type\])</span></span>               |             |
-| <span data-ttu-id="7f44c-191">public str nodeTypeArray()</span><span class="sxs-lookup"><span data-stu-id="7f44c-191">public str nodeTypeArray()</span></span>                      |             |
-| <span data-ttu-id="7f44c-192">public str propertyName(\[str name\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-192">public str propertyName(\[str name\])</span></span>           |             |
-| <span data-ttu-id="7f44c-193">public str propertyValue(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-193">public str propertyValue(\[str value\])</span></span>         |             |
-| <span data-ttu-id="7f44c-194">public str replaceString(\[str replaceString\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-194">public str replaceString(\[str replaceString\])</span></span> |             |
-| <span data-ttu-id="7f44c-195">public int searchFlag(\[int flag\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-195">public int searchFlag(\[int flag\])</span></span>             |             |
-| <span data-ttu-id="7f44c-196">public str searchString(\[str searchString\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-196">public str searchString(\[str searchString\])</span></span>   |             |
-| <span data-ttu-id="7f44c-197">public int searchType(\[int type\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-197">public int searchType(\[int type\])</span></span>             |             |
-| <span data-ttu-id="7f44c-198">public boolean startSearch()</span><span class="sxs-lookup"><span data-stu-id="7f44c-198">public boolean startSearch()</span></span>                    |             |
-| <span data-ttu-id="7f44c-199">public TreeNode topNode(\[TreeNode node\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-199">public TreeNode topNode(\[TreeNode node\])</span></span>      |             |
-| <span data-ttu-id="7f44c-200">public str topNodeName(\[str name\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-200">public str topNodeName(\[str name\])</span></span>            |             |
-| <span data-ttu-id="7f44c-201">public int topNodeType(\[int type\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-201">public int topNodeType(\[int type\])</span></span>            |             |
-| <span data-ttu-id="7f44c-202">public void preSearch()</span><span class="sxs-lookup"><span data-stu-id="7f44c-202">public void preSearch()</span></span>                         |             |
-| <span data-ttu-id="7f44c-203">public void killSearch()</span><span class="sxs-lookup"><span data-stu-id="7f44c-203">public void killSearch()</span></span>                        |             |
+| <span data-ttu-id="50251-189">public str nodeName(\[str name\])</span><span class="sxs-lookup"><span data-stu-id="50251-189">public str nodeName(\[str name\])</span></span>               |             |
+| <span data-ttu-id="50251-190">public int nodeType(\[int type\])</span><span class="sxs-lookup"><span data-stu-id="50251-190">public int nodeType(\[int type\])</span></span>               |             |
+| <span data-ttu-id="50251-191">public str nodeTypeArray()</span><span class="sxs-lookup"><span data-stu-id="50251-191">public str nodeTypeArray()</span></span>                      |             |
+| <span data-ttu-id="50251-192">public str propertyName(\[str name\])</span><span class="sxs-lookup"><span data-stu-id="50251-192">public str propertyName(\[str name\])</span></span>           |             |
+| <span data-ttu-id="50251-193">public str propertyValue(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="50251-193">public str propertyValue(\[str value\])</span></span>         |             |
+| <span data-ttu-id="50251-194">public str replaceString(\[str replaceString\])</span><span class="sxs-lookup"><span data-stu-id="50251-194">public str replaceString(\[str replaceString\])</span></span> |             |
+| <span data-ttu-id="50251-195">public int searchFlag(\[int flag\])</span><span class="sxs-lookup"><span data-stu-id="50251-195">public int searchFlag(\[int flag\])</span></span>             |             |
+| <span data-ttu-id="50251-196">public str searchString(\[str searchString\])</span><span class="sxs-lookup"><span data-stu-id="50251-196">public str searchString(\[str searchString\])</span></span>   |             |
+| <span data-ttu-id="50251-197">public int searchType(\[int type\])</span><span class="sxs-lookup"><span data-stu-id="50251-197">public int searchType(\[int type\])</span></span>             |             |
+| <span data-ttu-id="50251-198">public boolean startSearch()</span><span class="sxs-lookup"><span data-stu-id="50251-198">public boolean startSearch()</span></span>                    |             |
+| <span data-ttu-id="50251-199">public TreeNode topNode(\[TreeNode node\])</span><span class="sxs-lookup"><span data-stu-id="50251-199">public TreeNode topNode(\[TreeNode node\])</span></span>      |             |
+| <span data-ttu-id="50251-200">public str topNodeName(\[str name\])</span><span class="sxs-lookup"><span data-stu-id="50251-200">public str topNodeName(\[str name\])</span></span>            |             |
+| <span data-ttu-id="50251-201">public int topNodeType(\[int type\])</span><span class="sxs-lookup"><span data-stu-id="50251-201">public int topNodeType(\[int type\])</span></span>            |             |
+| <span data-ttu-id="50251-202">public void preSearch()</span><span class="sxs-lookup"><span data-stu-id="50251-202">public void preSearch()</span></span>                         |             |
+| <span data-ttu-id="50251-203">public void killSearch()</span><span class="sxs-lookup"><span data-stu-id="50251-203">public void killSearch()</span></span>                        |             |
 
-### <a name="method-nodename"></a><span data-ttu-id="7f44c-204">メソッド nodeName</span><span class="sxs-lookup"><span data-stu-id="7f44c-204">Method nodeName</span></span>
+### <a name="method-nodename"></a><span data-ttu-id="50251-204">メソッド nodeName</span><span class="sxs-lookup"><span data-stu-id="50251-204">Method nodeName</span></span>
 
     public str nodeName([str name])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-205">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-205">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-205">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-205">Parameters</span></span>
 
-<span data-ttu-id="7f44c-206">名前</span><span class="sxs-lookup"><span data-stu-id="7f44c-206">name</span></span>  
+<span data-ttu-id="50251-206">名前</span><span class="sxs-lookup"><span data-stu-id="50251-206">name</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-207">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-207">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-207">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-207">Return Value</span></span>
 
-### <a name="method-nodetype"></a><span data-ttu-id="7f44c-208">メソッド nodeType</span><span class="sxs-lookup"><span data-stu-id="7f44c-208">Method nodeType</span></span>
+### <a name="method-nodetype"></a><span data-ttu-id="50251-208">メソッド nodeType</span><span class="sxs-lookup"><span data-stu-id="50251-208">Method nodeType</span></span>
 
     public int nodeType([int type])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-209">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-209">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-209">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-209">Parameters</span></span>
 
-<span data-ttu-id="7f44c-210">タイプ</span><span class="sxs-lookup"><span data-stu-id="7f44c-210">type</span></span>  
+<span data-ttu-id="50251-210">タイプ</span><span class="sxs-lookup"><span data-stu-id="50251-210">type</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-211">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-211">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-211">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-211">Return Value</span></span>
 
-### <a name="method-nodetypearray"></a><span data-ttu-id="7f44c-212">メソッド nodeTypeArray</span><span class="sxs-lookup"><span data-stu-id="7f44c-212">Method nodeTypeArray</span></span>
+### <a name="method-nodetypearray"></a><span data-ttu-id="50251-212">メソッド nodeTypeArray</span><span class="sxs-lookup"><span data-stu-id="50251-212">Method nodeTypeArray</span></span>
 
     public str nodeTypeArray()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-213">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-213">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-213">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-213">Return Value</span></span>
 
-### <a name="method-propertyname"></a><span data-ttu-id="7f44c-214">メソッド propertyName</span><span class="sxs-lookup"><span data-stu-id="7f44c-214">Method propertyName</span></span>
+### <a name="method-propertyname"></a><span data-ttu-id="50251-214">メソッド propertyName</span><span class="sxs-lookup"><span data-stu-id="50251-214">Method propertyName</span></span>
 
     public str propertyName([str name])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-215">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-215">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-215">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-215">Parameters</span></span>
 
-<span data-ttu-id="7f44c-216">名前</span><span class="sxs-lookup"><span data-stu-id="7f44c-216">name</span></span>  
+<span data-ttu-id="50251-216">名前</span><span class="sxs-lookup"><span data-stu-id="50251-216">name</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-217">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-217">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-217">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-217">Return Value</span></span>
 
-### <a name="method-propertyvalue"></a><span data-ttu-id="7f44c-218">メソッド propertyValue</span><span class="sxs-lookup"><span data-stu-id="7f44c-218">Method propertyValue</span></span>
+### <a name="method-propertyvalue"></a><span data-ttu-id="50251-218">メソッド propertyValue</span><span class="sxs-lookup"><span data-stu-id="50251-218">Method propertyValue</span></span>
 
     public str propertyValue([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-219">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-219">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-219">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-219">Parameters</span></span>
 
-<span data-ttu-id="7f44c-220">値</span><span class="sxs-lookup"><span data-stu-id="7f44c-220">value</span></span>  
+<span data-ttu-id="50251-220">値</span><span class="sxs-lookup"><span data-stu-id="50251-220">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-221">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-221">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-221">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-221">Return Value</span></span>
 
-### <a name="method-replacestring"></a><span data-ttu-id="7f44c-222">メソッド replaceString</span><span class="sxs-lookup"><span data-stu-id="7f44c-222">Method replaceString</span></span>
+### <a name="method-replacestring"></a><span data-ttu-id="50251-222">メソッド replaceString</span><span class="sxs-lookup"><span data-stu-id="50251-222">Method replaceString</span></span>
 
     public str replaceString([str replaceString])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-223">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-223">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-223">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-223">Parameters</span></span>
 
-<span data-ttu-id="7f44c-224">replaceString</span><span class="sxs-lookup"><span data-stu-id="7f44c-224">replaceString</span></span>  
+<span data-ttu-id="50251-224">replaceString</span><span class="sxs-lookup"><span data-stu-id="50251-224">replaceString</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-225">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-225">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-225">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-225">Return Value</span></span>
 
-### <a name="method-searchflag"></a><span data-ttu-id="7f44c-226">メソッド searchFlag</span><span class="sxs-lookup"><span data-stu-id="7f44c-226">Method searchFlag</span></span>
+### <a name="method-searchflag"></a><span data-ttu-id="50251-226">メソッド searchFlag</span><span class="sxs-lookup"><span data-stu-id="50251-226">Method searchFlag</span></span>
 
     public int searchFlag([int flag])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-227">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-227">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-227">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-227">Parameters</span></span>
 
-<span data-ttu-id="7f44c-228">flag</span><span class="sxs-lookup"><span data-stu-id="7f44c-228">flag</span></span>  
+<span data-ttu-id="50251-228">flag</span><span class="sxs-lookup"><span data-stu-id="50251-228">flag</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-229">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-229">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-229">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-229">Return Value</span></span>
 
-### <a name="method-searchstring"></a><span data-ttu-id="7f44c-230">メソッド searchString</span><span class="sxs-lookup"><span data-stu-id="7f44c-230">Method searchString</span></span>
+### <a name="method-searchstring"></a><span data-ttu-id="50251-230">メソッド searchString</span><span class="sxs-lookup"><span data-stu-id="50251-230">Method searchString</span></span>
 
     public str searchString([str searchString])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-231">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-231">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-231">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-231">Parameters</span></span>
 
-<span data-ttu-id="7f44c-232">searchString</span><span class="sxs-lookup"><span data-stu-id="7f44c-232">searchString</span></span>  
+<span data-ttu-id="50251-232">searchString</span><span class="sxs-lookup"><span data-stu-id="50251-232">searchString</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-233">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-233">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-233">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-233">Return Value</span></span>
 
-### <a name="method-searchtype"></a><span data-ttu-id="7f44c-234">メソッド searchType</span><span class="sxs-lookup"><span data-stu-id="7f44c-234">Method searchType</span></span>
+### <a name="method-searchtype"></a><span data-ttu-id="50251-234">メソッド searchType</span><span class="sxs-lookup"><span data-stu-id="50251-234">Method searchType</span></span>
 
     public int searchType([int type])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-235">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-235">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-235">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-235">Parameters</span></span>
 
-<span data-ttu-id="7f44c-236">タイプ</span><span class="sxs-lookup"><span data-stu-id="7f44c-236">type</span></span>  
+<span data-ttu-id="50251-236">タイプ</span><span class="sxs-lookup"><span data-stu-id="50251-236">type</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-237">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-237">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-237">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-237">Return Value</span></span>
 
-### <a name="method-startsearch"></a><span data-ttu-id="7f44c-238">メソッド startSearch</span><span class="sxs-lookup"><span data-stu-id="7f44c-238">Method startSearch</span></span>
+### <a name="method-startsearch"></a><span data-ttu-id="50251-238">メソッド startSearch</span><span class="sxs-lookup"><span data-stu-id="50251-238">Method startSearch</span></span>
 
     public boolean startSearch()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-239">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-239">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-239">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-239">Return Value</span></span>
 
-### <a name="method-topnode"></a><span data-ttu-id="7f44c-240">メソッド topNode</span><span class="sxs-lookup"><span data-stu-id="7f44c-240">Method topNode</span></span>
+### <a name="method-topnode"></a><span data-ttu-id="50251-240">メソッド topNode</span><span class="sxs-lookup"><span data-stu-id="50251-240">Method topNode</span></span>
 
     public TreeNode topNode([TreeNode node])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-241">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-241">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-241">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-241">Parameters</span></span>
 
-<span data-ttu-id="7f44c-242">node</span><span class="sxs-lookup"><span data-stu-id="7f44c-242">node</span></span>  
+<span data-ttu-id="50251-242">node</span><span class="sxs-lookup"><span data-stu-id="50251-242">node</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-243">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-243">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-243">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-243">Return Value</span></span>
 
-### <a name="method-topnodename"></a><span data-ttu-id="7f44c-244">メソッド topNodeName</span><span class="sxs-lookup"><span data-stu-id="7f44c-244">Method topNodeName</span></span>
+### <a name="method-topnodename"></a><span data-ttu-id="50251-244">メソッド topNodeName</span><span class="sxs-lookup"><span data-stu-id="50251-244">Method topNodeName</span></span>
 
     public str topNodeName([str name])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-245">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-245">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-245">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-245">Parameters</span></span>
 
-<span data-ttu-id="7f44c-246">名前</span><span class="sxs-lookup"><span data-stu-id="7f44c-246">name</span></span>  
+<span data-ttu-id="50251-246">名前</span><span class="sxs-lookup"><span data-stu-id="50251-246">name</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-247">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-247">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-247">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-247">Return Value</span></span>
 
-### <a name="method-topnodetype"></a><span data-ttu-id="7f44c-248">メソッド topNodeType</span><span class="sxs-lookup"><span data-stu-id="7f44c-248">Method topNodeType</span></span>
+### <a name="method-topnodetype"></a><span data-ttu-id="50251-248">メソッド topNodeType</span><span class="sxs-lookup"><span data-stu-id="50251-248">Method topNodeType</span></span>
 
     public int topNodeType([int type])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-249">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-249">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-249">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-249">Parameters</span></span>
 
-<span data-ttu-id="7f44c-250">タイプ</span><span class="sxs-lookup"><span data-stu-id="7f44c-250">type</span></span>  
+<span data-ttu-id="50251-250">タイプ</span><span class="sxs-lookup"><span data-stu-id="50251-250">type</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-251">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-251">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-251">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-251">Return Value</span></span>
 
-### <a name="method-presearch"></a><span data-ttu-id="7f44c-252">メソッド preSearch</span><span class="sxs-lookup"><span data-stu-id="7f44c-252">Method preSearch</span></span>
+### <a name="method-presearch"></a><span data-ttu-id="50251-252">メソッド preSearch</span><span class="sxs-lookup"><span data-stu-id="50251-252">Method preSearch</span></span>
 
     public void preSearch()
 
-### <a name="method-killsearch"></a><span data-ttu-id="7f44c-253">メソッド killSearch</span><span class="sxs-lookup"><span data-stu-id="7f44c-253">Method killSearch</span></span>
+### <a name="method-killsearch"></a><span data-ttu-id="50251-253">メソッド killSearch</span><span class="sxs-lookup"><span data-stu-id="50251-253">Method killSearch</span></span>
 
     public void killSearch()
 
-## <a name="class-securenode"></a><span data-ttu-id="7f44c-254">クラス SecureNode</span><span class="sxs-lookup"><span data-stu-id="7f44c-254">Class SecureNode</span></span>
+## <a name="class-securenode"></a><span data-ttu-id="50251-254">クラス SecureNode</span><span class="sxs-lookup"><span data-stu-id="50251-254">Class SecureNode</span></span>
     class SecureNode extends TreeNode
 
-<span data-ttu-id="7f44c-255">SecureNode クラスを使用すると、X++ コードとメタデータの作成、読み取り、更新、および削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-255">The SecureNode class lets you create, read, update, and delete X++ code and metadata.</span></span>
+<span data-ttu-id="50251-255">SecureNode クラスを使用すると、X++ コードとメタデータの作成、読み取り、更新、および削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="50251-255">The SecureNode class lets you create, read, update, and delete X++ code and metadata.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-256">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-256">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-256">備考</span><span class="sxs-lookup"><span data-stu-id="50251-256">Remarks</span></span>
 
-<span data-ttu-id="7f44c-257">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-257">Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</span></span>
+<span data-ttu-id="50251-257">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="50251-257">Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-258">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-258">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-258">例</span><span class="sxs-lookup"><span data-stu-id="50251-258">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-259">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-259">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-259">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-259">Methods</span></span>
 
-| <span data-ttu-id="7f44c-260">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-260">Method</span></span>                                                                          | <span data-ttu-id="7f44c-261">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-261">Description</span></span>                                                             |
+| <span data-ttu-id="50251-260">方法</span><span class="sxs-lookup"><span data-stu-id="50251-260">Method</span></span>                                                                          | <span data-ttu-id="50251-261">説明</span><span class="sxs-lookup"><span data-stu-id="50251-261">Description</span></span>                                                             |
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-262">public boolean checkAccessRights()</span><span class="sxs-lookup"><span data-stu-id="7f44c-262">public boolean checkAccessRights()</span></span>                                              |                                                                         |
-| <span data-ttu-id="7f44c-263">public ConfigurationKeyId configurationKey(\[ConfigurationKeyId value\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-263">public ConfigurationKeyId configurationKey(\[ConfigurationKeyId value\])</span></span>        | <span data-ttu-id="7f44c-264">コントロールに割り当てられるコンフィギュレーション キーを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-264">Gets or sets the configuration key that is assigned to the control.</span></span>     |
-| <span data-ttu-id="7f44c-265">public ConfigurationKeyId countryConfigurationkey(\[ConfigurationKeyId value\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-265">public ConfigurationKeyId countryConfigurationkey(\[ConfigurationKeyId value\])</span></span> |                                                                         |
-| <span data-ttu-id="7f44c-266">public boolean extendedDataSecurity(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-266">public boolean extendedDataSecurity(\[boolean value\])</span></span>                          |                                                                         |
-| <span data-ttu-id="7f44c-267">public boolean isWeb()</span><span class="sxs-lookup"><span data-stu-id="7f44c-267">public boolean isWeb()</span></span>                                                          |                                                                         |
-| <span data-ttu-id="7f44c-268">public int neededAccessLevel(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-268">public int neededAccessLevel(\[int value\])</span></span>                                     | <span data-ttu-id="7f44c-269">MenuFunction クラスの neededAccessLevel プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-269">Gets or sets the neededAccessLevel property for the MenuFunction class.</span></span> |
-| <span data-ttu-id="7f44c-270">public SecurityKeyId securityKey(\[SecurityKeyId value\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-270">public SecurityKeyId securityKey(\[SecurityKeyId value\])</span></span>                       |                                                                         |
-| <span data-ttu-id="7f44c-271">public ConfigurationKeyId webConfigurationkey(\[ConfigurationKeyId value\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-271">public ConfigurationKeyId webConfigurationkey(\[ConfigurationKeyId value\])</span></span>     |                                                                         |
+| <span data-ttu-id="50251-262">public boolean checkAccessRights()</span><span class="sxs-lookup"><span data-stu-id="50251-262">public boolean checkAccessRights()</span></span>                                              |                                                                         |
+| <span data-ttu-id="50251-263">public ConfigurationKeyId configurationKey(\[ConfigurationKeyId value\])</span><span class="sxs-lookup"><span data-stu-id="50251-263">public ConfigurationKeyId configurationKey(\[ConfigurationKeyId value\])</span></span>        | <span data-ttu-id="50251-264">コントロールに割り当てられるコンフィギュレーション キーを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-264">Gets or sets the configuration key that is assigned to the control.</span></span>     |
+| <span data-ttu-id="50251-265">public ConfigurationKeyId countryConfigurationkey(\[ConfigurationKeyId value\])</span><span class="sxs-lookup"><span data-stu-id="50251-265">public ConfigurationKeyId countryConfigurationkey(\[ConfigurationKeyId value\])</span></span> |                                                                         |
+| <span data-ttu-id="50251-266">public boolean extendedDataSecurity(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="50251-266">public boolean extendedDataSecurity(\[boolean value\])</span></span>                          |                                                                         |
+| <span data-ttu-id="50251-267">public boolean isWeb()</span><span class="sxs-lookup"><span data-stu-id="50251-267">public boolean isWeb()</span></span>                                                          |                                                                         |
+| <span data-ttu-id="50251-268">public int neededAccessLevel(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="50251-268">public int neededAccessLevel(\[int value\])</span></span>                                     | <span data-ttu-id="50251-269">MenuFunction クラスの neededAccessLevel プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-269">Gets or sets the neededAccessLevel property for the MenuFunction class.</span></span> |
+| <span data-ttu-id="50251-270">public SecurityKeyId securityKey(\[SecurityKeyId value\])</span><span class="sxs-lookup"><span data-stu-id="50251-270">public SecurityKeyId securityKey(\[SecurityKeyId value\])</span></span>                       |                                                                         |
+| <span data-ttu-id="50251-271">public ConfigurationKeyId webConfigurationkey(\[ConfigurationKeyId value\])</span><span class="sxs-lookup"><span data-stu-id="50251-271">public ConfigurationKeyId webConfigurationkey(\[ConfigurationKeyId value\])</span></span>     |                                                                         |
 
-### <a name="method-checkaccessrights"></a><span data-ttu-id="7f44c-272">メソッド checkAccessRights</span><span class="sxs-lookup"><span data-stu-id="7f44c-272">Method checkAccessRights</span></span>
+### <a name="method-checkaccessrights"></a><span data-ttu-id="50251-272">メソッド checkAccessRights</span><span class="sxs-lookup"><span data-stu-id="50251-272">Method checkAccessRights</span></span>
 
     public boolean checkAccessRights()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-273">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-273">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-273">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-273">Return Value</span></span>
 
-### <a name="method-configurationkey"></a><span data-ttu-id="7f44c-274">メソッド configurationKey</span><span class="sxs-lookup"><span data-stu-id="7f44c-274">Method configurationKey</span></span>
+### <a name="method-configurationkey"></a><span data-ttu-id="50251-274">メソッド configurationKey</span><span class="sxs-lookup"><span data-stu-id="50251-274">Method configurationKey</span></span>
 
-<span data-ttu-id="7f44c-275">コントロールに割り当てられるコンフィギュレーション キーを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-275">Gets or sets the configuration key that is assigned to the control.</span></span>
+<span data-ttu-id="50251-275">コントロールに割り当てられるコンフィギュレーション キーを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-275">Gets or sets the configuration key that is assigned to the control.</span></span>
 
     public ConfigurationKeyId configurationKey([ConfigurationKeyId value])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-276">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-276">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-276">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-276">Parameters</span></span>
 
-<span data-ttu-id="7f44c-277">値</span><span class="sxs-lookup"><span data-stu-id="7f44c-277">value</span></span>  
+<span data-ttu-id="50251-277">値</span><span class="sxs-lookup"><span data-stu-id="50251-277">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-278">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-278">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-278">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-278">Return Value</span></span>
 
-<span data-ttu-id="7f44c-279">コントロールに割り当てられるコンフィギュレーションの ID。</span><span class="sxs-lookup"><span data-stu-id="7f44c-279">The identifier of the configuration key that is assigned to the control.</span></span>
+<span data-ttu-id="50251-279">コントロールに割り当てられるコンフィギュレーションの ID。</span><span class="sxs-lookup"><span data-stu-id="50251-279">The identifier of the configuration key that is assigned to the control.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-280">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-280">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-280">備考</span><span class="sxs-lookup"><span data-stu-id="50251-280">Remarks</span></span>
 
-<span data-ttu-id="7f44c-281">コンフィギュレーション キーは、このコントロールを表示するかどうかを決定するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-281">The configuration key is used to determine whether this control can be displayed.</span></span> <span data-ttu-id="7f44c-282">コンフィギュレーション キーがシステムで無効な場合、コントロールはフォームで表示されません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-282">If the configuration key is disabled in the system, the control is not displayed in the form.</span></span>
+<span data-ttu-id="50251-281">コンフィギュレーション キーは、このコントロールを表示するかどうかを決定するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-281">The configuration key is used to determine whether this control can be displayed.</span></span> <span data-ttu-id="50251-282">コンフィギュレーション キーがシステムで無効な場合、コントロールはフォームで表示されません。</span><span class="sxs-lookup"><span data-stu-id="50251-282">If the configuration key is disabled in the system, the control is not displayed in the form.</span></span>
 
-### <a name="method-countryconfigurationkey"></a><span data-ttu-id="7f44c-283">メソッド countryConfigurationkey</span><span class="sxs-lookup"><span data-stu-id="7f44c-283">Method countryConfigurationkey</span></span>
+### <a name="method-countryconfigurationkey"></a><span data-ttu-id="50251-283">メソッド countryConfigurationkey</span><span class="sxs-lookup"><span data-stu-id="50251-283">Method countryConfigurationkey</span></span>
 
     public ConfigurationKeyId countryConfigurationkey([ConfigurationKeyId value])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-284">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-284">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-284">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-284">Parameters</span></span>
 
-<span data-ttu-id="7f44c-285">値</span><span class="sxs-lookup"><span data-stu-id="7f44c-285">value</span></span>  
+<span data-ttu-id="50251-285">値</span><span class="sxs-lookup"><span data-stu-id="50251-285">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-286">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-286">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-286">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-286">Return Value</span></span>
 
-### <a name="method-extendeddatasecurity"></a><span data-ttu-id="7f44c-287">メソッド extendedDataSecurity</span><span class="sxs-lookup"><span data-stu-id="7f44c-287">Method extendedDataSecurity</span></span>
+### <a name="method-extendeddatasecurity"></a><span data-ttu-id="50251-287">メソッド extendedDataSecurity</span><span class="sxs-lookup"><span data-stu-id="50251-287">Method extendedDataSecurity</span></span>
 
     public boolean extendedDataSecurity([boolean value])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-288">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-288">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-288">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-288">Parameters</span></span>
 
-<span data-ttu-id="7f44c-289">値</span><span class="sxs-lookup"><span data-stu-id="7f44c-289">value</span></span>  
+<span data-ttu-id="50251-289">値</span><span class="sxs-lookup"><span data-stu-id="50251-289">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-290">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-290">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-290">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-290">Return Value</span></span>
 
-### <a name="method-isweb"></a><span data-ttu-id="7f44c-291">メソッド isWeb</span><span class="sxs-lookup"><span data-stu-id="7f44c-291">Method isWeb</span></span>
+### <a name="method-isweb"></a><span data-ttu-id="50251-291">メソッド isWeb</span><span class="sxs-lookup"><span data-stu-id="50251-291">Method isWeb</span></span>
 
     public boolean isWeb()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-292">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-292">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-292">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-292">Return Value</span></span>
 
-### <a name="method-neededaccesslevel"></a><span data-ttu-id="7f44c-293">メソッド neededAccessLevel</span><span class="sxs-lookup"><span data-stu-id="7f44c-293">Method neededAccessLevel</span></span>
+### <a name="method-neededaccesslevel"></a><span data-ttu-id="50251-293">メソッド neededAccessLevel</span><span class="sxs-lookup"><span data-stu-id="50251-293">Method neededAccessLevel</span></span>
 
-<span data-ttu-id="7f44c-294">MenuFunction クラスの neededAccessLevel プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-294">Gets or sets the neededAccessLevel property for the MenuFunction class.</span></span>
+<span data-ttu-id="50251-294">MenuFunction クラスの neededAccessLevel プロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-294">Gets or sets the neededAccessLevel property for the MenuFunction class.</span></span>
 
     public int neededAccessLevel([int value])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-295">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-295">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-295">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-295">Parameters</span></span>
 
-<span data-ttu-id="7f44c-296">値</span><span class="sxs-lookup"><span data-stu-id="7f44c-296">value</span></span>  
+<span data-ttu-id="50251-296">値</span><span class="sxs-lookup"><span data-stu-id="50251-296">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-297">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-297">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-297">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-297">Return Value</span></span>
 
-<span data-ttu-id="7f44c-298">neededAccessLevel プロパティの現在の値。</span><span class="sxs-lookup"><span data-stu-id="7f44c-298">The current value of the neededAccessLevel property.</span></span>
+<span data-ttu-id="50251-298">neededAccessLevel プロパティの現在の値。</span><span class="sxs-lookup"><span data-stu-id="50251-298">The current value of the neededAccessLevel property.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-299">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-299">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-299">備考</span><span class="sxs-lookup"><span data-stu-id="50251-299">Remarks</span></span>
 
-<span data-ttu-id="7f44c-300">AccessType システム列挙値の使用可能な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-300">The possible values for the AccessType system enumeration value are as follows:</span></span>
+<span data-ttu-id="50251-300">AccessType システム列挙値の使用可能な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="50251-300">The possible values for the AccessType system enumeration value are as follows:</span></span>
 
--   <span data-ttu-id="7f44c-301">AccessType::NoAccess。</span><span class="sxs-lookup"><span data-stu-id="7f44c-301">AccessType::NoAccess.</span></span>
--   <span data-ttu-id="7f44c-302">AccessType::View。</span><span class="sxs-lookup"><span data-stu-id="7f44c-302">AccessType::View.</span></span>
--   <span data-ttu-id="7f44c-303">AccessType::Edit。</span><span class="sxs-lookup"><span data-stu-id="7f44c-303">AccessType::Edit.</span></span>
--   <span data-ttu-id="7f44c-304">AccessType::Add。</span><span class="sxs-lookup"><span data-stu-id="7f44c-304">AccessType::Add.</span></span>
--   <span data-ttu-id="7f44c-305">AccessType::Delete。</span><span class="sxs-lookup"><span data-stu-id="7f44c-305">AccessType::Delete.</span></span>
+-   <span data-ttu-id="50251-301">AccessType::NoAccess。</span><span class="sxs-lookup"><span data-stu-id="50251-301">AccessType::NoAccess.</span></span>
+-   <span data-ttu-id="50251-302">AccessType::View。</span><span class="sxs-lookup"><span data-stu-id="50251-302">AccessType::View.</span></span>
+-   <span data-ttu-id="50251-303">AccessType::Edit。</span><span class="sxs-lookup"><span data-stu-id="50251-303">AccessType::Edit.</span></span>
+-   <span data-ttu-id="50251-304">AccessType::Add。</span><span class="sxs-lookup"><span data-stu-id="50251-304">AccessType::Add.</span></span>
+-   <span data-ttu-id="50251-305">AccessType::Delete。</span><span class="sxs-lookup"><span data-stu-id="50251-305">AccessType::Delete.</span></span>
 
-### <a name="method-securitykey"></a><span data-ttu-id="7f44c-306">メソッド securityKey</span><span class="sxs-lookup"><span data-stu-id="7f44c-306">Method securityKey</span></span>
+### <a name="method-securitykey"></a><span data-ttu-id="50251-306">メソッド securityKey</span><span class="sxs-lookup"><span data-stu-id="50251-306">Method securityKey</span></span>
 
     public SecurityKeyId securityKey([SecurityKeyId value])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-307">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-307">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-307">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-307">Parameters</span></span>
 
-<span data-ttu-id="7f44c-308">値</span><span class="sxs-lookup"><span data-stu-id="7f44c-308">value</span></span>  
+<span data-ttu-id="50251-308">値</span><span class="sxs-lookup"><span data-stu-id="50251-308">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-309">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-309">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-309">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-309">Return Value</span></span>
 
-### <a name="method-webconfigurationkey"></a><span data-ttu-id="7f44c-310">メソッド webConfigurationkey</span><span class="sxs-lookup"><span data-stu-id="7f44c-310">Method webConfigurationkey</span></span>
+### <a name="method-webconfigurationkey"></a><span data-ttu-id="50251-310">メソッド webConfigurationkey</span><span class="sxs-lookup"><span data-stu-id="50251-310">Method webConfigurationkey</span></span>
 
     public ConfigurationKeyId webConfigurationkey([ConfigurationKeyId value])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-311">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-311">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-311">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-311">Parameters</span></span>
 
-<span data-ttu-id="7f44c-312">値</span><span class="sxs-lookup"><span data-stu-id="7f44c-312">value</span></span>  
+<span data-ttu-id="50251-312">値</span><span class="sxs-lookup"><span data-stu-id="50251-312">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-313">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-313">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-313">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-313">Return Value</span></span>
 
-## <a name="class-securitycontext"></a><span data-ttu-id="7f44c-314">クラス SecurityContext</span><span class="sxs-lookup"><span data-stu-id="7f44c-314">Class SecurityContext</span></span>
+## <a name="class-securitycontext"></a><span data-ttu-id="50251-314">クラス SecurityContext</span><span class="sxs-lookup"><span data-stu-id="50251-314">Class SecurityContext</span></span>
     class SecurityContext extends Object
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-315">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-315">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-315">備考</span><span class="sxs-lookup"><span data-stu-id="50251-315">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-316">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-316">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-316">例</span><span class="sxs-lookup"><span data-stu-id="50251-316">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-317">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-317">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-317">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-317">Methods</span></span>
 
-| <span data-ttu-id="7f44c-318">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-318">Method</span></span>                                                                                                | <span data-ttu-id="7f44c-319">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-319">Description</span></span> |
+| <span data-ttu-id="50251-318">方法</span><span class="sxs-lookup"><span data-stu-id="50251-318">Method</span></span>                                                                                                | <span data-ttu-id="50251-319">説明</span><span class="sxs-lookup"><span data-stu-id="50251-319">Description</span></span> |
 |-------------------------------------------------------------------------------------------------------|-------------|
-| <span data-ttu-id="7f44c-320">public boolean isTableOperationAllowed(int tableId, StatementType operation, \[DataAreaId dataArea\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-320">public boolean isTableOperationAllowed(int tableId, StatementType operation, \[DataAreaId dataArea\])</span></span> |             |
-| <span data-ttu-id="7f44c-321">::public static SecurityContext current()</span><span class="sxs-lookup"><span data-stu-id="7f44c-321">::public static SecurityContext current()</span></span>                                                             |             |
-| <span data-ttu-id="7f44c-322">::public static SecurityContext constructFromEntryPoint(SecurableType type, str name, str childName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-322">::public static SecurityContext constructFromEntryPoint(SecurableType type, str name, str childName)</span></span>  |             |
-| <span data-ttu-id="7f44c-323">public boolean equal(SecurityContext context)</span><span class="sxs-lookup"><span data-stu-id="7f44c-323">public boolean equal(SecurityContext context)</span></span>                                                         |             |
-| <span data-ttu-id="7f44c-324">public SecurableType securableType()</span><span class="sxs-lookup"><span data-stu-id="7f44c-324">public SecurableType securableType()</span></span>                                                                  |             |
-| <span data-ttu-id="7f44c-325">public str securableName()</span><span class="sxs-lookup"><span data-stu-id="7f44c-325">public str securableName()</span></span>                                                                            |             |
-| <span data-ttu-id="7f44c-326">public str securableChildName()</span><span class="sxs-lookup"><span data-stu-id="7f44c-326">public str securableChildName()</span></span>                                                                       |             |
-| <span data-ttu-id="7f44c-327">public void push()</span><span class="sxs-lookup"><span data-stu-id="7f44c-327">public void push()</span></span>                                                                                    |             |
-| <span data-ttu-id="7f44c-328">::public static void pop()</span><span class="sxs-lookup"><span data-stu-id="7f44c-328">::public static void pop()</span></span>                                                                            |             |
-| <span data-ttu-id="7f44c-329">private void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-329">private void new()</span></span>                                                                                    |             |
+| <span data-ttu-id="50251-320">public boolean isTableOperationAllowed(int tableId, StatementType operation, \[DataAreaId dataArea\])</span><span class="sxs-lookup"><span data-stu-id="50251-320">public boolean isTableOperationAllowed(int tableId, StatementType operation, \[DataAreaId dataArea\])</span></span> |             |
+| <span data-ttu-id="50251-321">::public static SecurityContext current()</span><span class="sxs-lookup"><span data-stu-id="50251-321">::public static SecurityContext current()</span></span>                                                             |             |
+| <span data-ttu-id="50251-322">::public static SecurityContext constructFromEntryPoint(SecurableType type, str name, str childName)</span><span class="sxs-lookup"><span data-stu-id="50251-322">::public static SecurityContext constructFromEntryPoint(SecurableType type, str name, str childName)</span></span>  |             |
+| <span data-ttu-id="50251-323">public boolean equal(SecurityContext context)</span><span class="sxs-lookup"><span data-stu-id="50251-323">public boolean equal(SecurityContext context)</span></span>                                                         |             |
+| <span data-ttu-id="50251-324">public SecurableType securableType()</span><span class="sxs-lookup"><span data-stu-id="50251-324">public SecurableType securableType()</span></span>                                                                  |             |
+| <span data-ttu-id="50251-325">public str securableName()</span><span class="sxs-lookup"><span data-stu-id="50251-325">public str securableName()</span></span>                                                                            |             |
+| <span data-ttu-id="50251-326">public str securableChildName()</span><span class="sxs-lookup"><span data-stu-id="50251-326">public str securableChildName()</span></span>                                                                       |             |
+| <span data-ttu-id="50251-327">public void push()</span><span class="sxs-lookup"><span data-stu-id="50251-327">public void push()</span></span>                                                                                    |             |
+| <span data-ttu-id="50251-328">::public static void pop()</span><span class="sxs-lookup"><span data-stu-id="50251-328">::public static void pop()</span></span>                                                                            |             |
+| <span data-ttu-id="50251-329">private void new()</span><span class="sxs-lookup"><span data-stu-id="50251-329">private void new()</span></span>                                                                                    |             |
 
-### <a name="method-istableoperationallowed"></a><span data-ttu-id="7f44c-330">メソッド isTableOperationAllowed</span><span class="sxs-lookup"><span data-stu-id="7f44c-330">Method isTableOperationAllowed</span></span>
+### <a name="method-istableoperationallowed"></a><span data-ttu-id="50251-330">メソッド isTableOperationAllowed</span><span class="sxs-lookup"><span data-stu-id="50251-330">Method isTableOperationAllowed</span></span>
 
     public boolean isTableOperationAllowed(int tableId, StatementType operation, [DataAreaId dataArea])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-331">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-331">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-331">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-331">Parameters</span></span>
 
-<span data-ttu-id="7f44c-332">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-332">tableId</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-333">工程</span><span class="sxs-lookup"><span data-stu-id="7f44c-333">operation</span></span>  
+<span data-ttu-id="50251-332">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-332">tableId</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-334">dataArea</span><span class="sxs-lookup"><span data-stu-id="7f44c-334">dataArea</span></span>  
+<span data-ttu-id="50251-333">工程</span><span class="sxs-lookup"><span data-stu-id="50251-333">operation</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-335">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-335">Return Value</span></span>
+<!-- -->
 
-### <a name="method-current"></a><span data-ttu-id="7f44c-336">メソッド current</span><span class="sxs-lookup"><span data-stu-id="7f44c-336">Method current</span></span>
+<span data-ttu-id="50251-334">dataArea</span><span class="sxs-lookup"><span data-stu-id="50251-334">dataArea</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-335">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-335">Return Value</span></span>
+
+### <a name="method-current"></a><span data-ttu-id="50251-336">メソッド current</span><span class="sxs-lookup"><span data-stu-id="50251-336">Method current</span></span>
 
     public static SecurityContext current()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-337">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-337">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-337">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-337">Return Value</span></span>
 
-### <a name="method-constructfromentrypoint"></a><span data-ttu-id="7f44c-338">メソッド constructFromEntryPoint</span><span class="sxs-lookup"><span data-stu-id="7f44c-338">Method constructFromEntryPoint</span></span>
+### <a name="method-constructfromentrypoint"></a><span data-ttu-id="50251-338">メソッド constructFromEntryPoint</span><span class="sxs-lookup"><span data-stu-id="50251-338">Method constructFromEntryPoint</span></span>
 
     public static SecurityContext constructFromEntryPoint(SecurableType type, str name, str childName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-339">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-339">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-339">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-339">Parameters</span></span>
 
-<span data-ttu-id="7f44c-340">タイプ</span><span class="sxs-lookup"><span data-stu-id="7f44c-340">type</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-341">名前</span><span class="sxs-lookup"><span data-stu-id="7f44c-341">name</span></span>  
+<span data-ttu-id="50251-340">タイプ</span><span class="sxs-lookup"><span data-stu-id="50251-340">type</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-342">childName</span><span class="sxs-lookup"><span data-stu-id="7f44c-342">childName</span></span>  
+<span data-ttu-id="50251-341">名前</span><span class="sxs-lookup"><span data-stu-id="50251-341">name</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-343">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-343">Return Value</span></span>
+<!-- -->
 
-### <a name="method-equal"></a><span data-ttu-id="7f44c-344">メソッド equal</span><span class="sxs-lookup"><span data-stu-id="7f44c-344">Method equal</span></span>
+<span data-ttu-id="50251-342">childName</span><span class="sxs-lookup"><span data-stu-id="50251-342">childName</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-343">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-343">Return Value</span></span>
+
+### <a name="method-equal"></a><span data-ttu-id="50251-344">メソッド equal</span><span class="sxs-lookup"><span data-stu-id="50251-344">Method equal</span></span>
 
     public boolean equal(SecurityContext context)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-345">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-345">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-345">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-345">Parameters</span></span>
 
-<span data-ttu-id="7f44c-346">context</span><span class="sxs-lookup"><span data-stu-id="7f44c-346">context</span></span>  
+<span data-ttu-id="50251-346">context</span><span class="sxs-lookup"><span data-stu-id="50251-346">context</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-347">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-347">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-347">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-347">Return Value</span></span>
 
-### <a name="method-securabletype"></a><span data-ttu-id="7f44c-348">メソッド securableType</span><span class="sxs-lookup"><span data-stu-id="7f44c-348">Method securableType</span></span>
+### <a name="method-securabletype"></a><span data-ttu-id="50251-348">メソッド securableType</span><span class="sxs-lookup"><span data-stu-id="50251-348">Method securableType</span></span>
 
     public SecurableType securableType()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-349">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-349">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-349">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-349">Return Value</span></span>
 
-### <a name="method-securablename"></a><span data-ttu-id="7f44c-350">メソッド securableName</span><span class="sxs-lookup"><span data-stu-id="7f44c-350">Method securableName</span></span>
+### <a name="method-securablename"></a><span data-ttu-id="50251-350">メソッド securableName</span><span class="sxs-lookup"><span data-stu-id="50251-350">Method securableName</span></span>
 
     public str securableName()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-351">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-351">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-351">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-351">Return Value</span></span>
 
-### <a name="method-securablechildname"></a><span data-ttu-id="7f44c-352">メソッド securableChildName</span><span class="sxs-lookup"><span data-stu-id="7f44c-352">Method securableChildName</span></span>
+### <a name="method-securablechildname"></a><span data-ttu-id="50251-352">メソッド securableChildName</span><span class="sxs-lookup"><span data-stu-id="50251-352">Method securableChildName</span></span>
 
     public str securableChildName()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-353">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-353">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-353">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-353">Return Value</span></span>
 
-### <a name="method-push"></a><span data-ttu-id="7f44c-354">メソッド push</span><span class="sxs-lookup"><span data-stu-id="7f44c-354">Method push</span></span>
+### <a name="method-push"></a><span data-ttu-id="50251-354">メソッド push</span><span class="sxs-lookup"><span data-stu-id="50251-354">Method push</span></span>
 
     public void push()
 
-### <a name="method-pop"></a><span data-ttu-id="7f44c-355">メソッド pop</span><span class="sxs-lookup"><span data-stu-id="7f44c-355">Method pop</span></span>
+### <a name="method-pop"></a><span data-ttu-id="50251-355">メソッド pop</span><span class="sxs-lookup"><span data-stu-id="50251-355">Method pop</span></span>
 
     public static void pop()
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-356">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-356">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-356">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-356">Method new</span></span>
 
     private void new()
 
-## <a name="class-securitypolicy"></a><span data-ttu-id="7f44c-357">クラス SecurityPolicy</span><span class="sxs-lookup"><span data-stu-id="7f44c-357">Class SecurityPolicy</span></span>
+## <a name="class-securitypolicy"></a><span data-ttu-id="50251-357">クラス SecurityPolicy</span><span class="sxs-lookup"><span data-stu-id="50251-357">Class SecurityPolicy</span></span>
     class SecurityPolicy extends Object
 
-<span data-ttu-id="7f44c-358">SecurityPolicy クラスには、セキュリティ ポリシーに関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-358">The SecurityPolicy class holds the information about the security policies.</span></span>
+<span data-ttu-id="50251-358">SecurityPolicy クラスには、セキュリティ ポリシーに関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="50251-358">The SecurityPolicy class holds the information about the security policies.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-359">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-359">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-359">備考</span><span class="sxs-lookup"><span data-stu-id="50251-359">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-360">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-360">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-360">例</span><span class="sxs-lookup"><span data-stu-id="50251-360">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-361">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-361">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-361">方法</span><span class="sxs-lookup"><span data-stu-id="50251-361">Methods</span></span>
 
-| <span data-ttu-id="7f44c-362">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-362">Method</span></span>                                                                 | <span data-ttu-id="7f44c-363">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-363">Description</span></span>                                             |
+| <span data-ttu-id="50251-362">方法</span><span class="sxs-lookup"><span data-stu-id="50251-362">Method</span></span>                                                                 | <span data-ttu-id="50251-363">説明</span><span class="sxs-lookup"><span data-stu-id="50251-363">Description</span></span>                                             |
 |------------------------------------------------------------------------|---------------------------------------------------------|
-| <span data-ttu-id="7f44c-364">::public static void synchronizeAllPolicies()</span><span class="sxs-lookup"><span data-stu-id="7f44c-364">::public static void synchronizeAllPolicies()</span></span>                          |                                                         |
-| <span data-ttu-id="7f44c-365">::public static void synchronizePolicy(UtilElementName securityPolicy)</span><span class="sxs-lookup"><span data-stu-id="7f44c-365">::public static void synchronizePolicy(UtilElementName securityPolicy)</span></span> |                                                         |
-| <span data-ttu-id="7f44c-366">public void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-366">public void new()</span></span>                                                      | <span data-ttu-id="7f44c-367">SecurityPolicy クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-367">Initializes a new instance of the SecurityPolicy class.</span></span> |
+| <span data-ttu-id="50251-364">::public static void synchronizeAllPolicies()</span><span class="sxs-lookup"><span data-stu-id="50251-364">::public static void synchronizeAllPolicies()</span></span>                          |                                                         |
+| <span data-ttu-id="50251-365">::public static void synchronizePolicy(UtilElementName securityPolicy)</span><span class="sxs-lookup"><span data-stu-id="50251-365">::public static void synchronizePolicy(UtilElementName securityPolicy)</span></span> |                                                         |
+| <span data-ttu-id="50251-366">public void new()</span><span class="sxs-lookup"><span data-stu-id="50251-366">public void new()</span></span>                                                      | <span data-ttu-id="50251-367">SecurityPolicy クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-367">Initializes a new instance of the SecurityPolicy class.</span></span> |
 
-### <a name="method-synchronizeallpolicies"></a><span data-ttu-id="7f44c-368">メソッド synchronizeAllPolicies</span><span class="sxs-lookup"><span data-stu-id="7f44c-368">Method synchronizeAllPolicies</span></span>
+### <a name="method-synchronizeallpolicies"></a><span data-ttu-id="50251-368">メソッド synchronizeAllPolicies</span><span class="sxs-lookup"><span data-stu-id="50251-368">Method synchronizeAllPolicies</span></span>
 
     public static void synchronizeAllPolicies()
 
-### <a name="method-synchronizepolicy"></a><span data-ttu-id="7f44c-369">メソッド synchronizePolicy</span><span class="sxs-lookup"><span data-stu-id="7f44c-369">Method synchronizePolicy</span></span>
+### <a name="method-synchronizepolicy"></a><span data-ttu-id="50251-369">メソッド synchronizePolicy</span><span class="sxs-lookup"><span data-stu-id="50251-369">Method synchronizePolicy</span></span>
 
     public static void synchronizePolicy(UtilElementName securityPolicy)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-370">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-370">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-370">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-370">Parameters</span></span>
 
-<span data-ttu-id="7f44c-371">securityPolicy</span><span class="sxs-lookup"><span data-stu-id="7f44c-371">securityPolicy</span></span>  
+<span data-ttu-id="50251-371">securityPolicy</span><span class="sxs-lookup"><span data-stu-id="50251-371">securityPolicy</span></span>  
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-372">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-372">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-372">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-372">Method new</span></span>
 
-<span data-ttu-id="7f44c-373">SecurityPolicy クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-373">Initializes a new instance of the SecurityPolicy class.</span></span>
+<span data-ttu-id="50251-373">SecurityPolicy クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-373">Initializes a new instance of the SecurityPolicy class.</span></span>
 
     public void new()
 
-## <a name="class-securityrights"></a><span data-ttu-id="7f44c-374">クラス SecurityRights</span><span class="sxs-lookup"><span data-stu-id="7f44c-374">Class SecurityRights</span></span>
+## <a name="class-securityrights"></a><span data-ttu-id="50251-374">クラス SecurityRights</span><span class="sxs-lookup"><span data-stu-id="50251-374">Class SecurityRights</span></span>
     class SecurityRights extends Object
 
-<span data-ttu-id="7f44c-375">SecurityRights クラスには、セキュリティの権利とアクセス許可の管理に関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-375">The SecurityRights class holds the information about the security rights and permissions management.</span></span>
+<span data-ttu-id="50251-375">SecurityRights クラスには、セキュリティの権利とアクセス許可の管理に関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="50251-375">The SecurityRights class holds the information about the security rights and permissions management.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-376">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-376">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-376">備考</span><span class="sxs-lookup"><span data-stu-id="50251-376">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-377">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-377">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-377">例</span><span class="sxs-lookup"><span data-stu-id="50251-377">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-378">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-378">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-378">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-378">Methods</span></span>
 
-| <span data-ttu-id="7f44c-379">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-379">Method</span></span>                                                                                                                                                                                 | <span data-ttu-id="7f44c-380">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-380">Description</span></span>                                                            |
+| <span data-ttu-id="50251-379">方法</span><span class="sxs-lookup"><span data-stu-id="50251-379">Method</span></span>                                                                                                                                                                                 | <span data-ttu-id="50251-380">説明</span><span class="sxs-lookup"><span data-stu-id="50251-380">Description</span></span>                                                            |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-381">public boolean hasDataServiceAccess(SecurableName name, StatementType operation, \[SecurableChildName fieldName\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-381">public boolean hasDataServiceAccess(SecurableName name, StatementType operation, \[SecurableChildName fieldName\])</span></span>                                                                     |                                                                        |
-| <span data-ttu-id="7f44c-382">public boolean hasDataServiceMethodAccess(SecurableName name, StatementType operation, SecurableChildName methodName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-382">public boolean hasDataServiceMethodAccess(SecurableName name, StatementType operation, SecurableChildName methodName)</span></span>                                                                  |                                                                        |
-| <span data-ttu-id="7f44c-383">public AccessRight dataManagementAccessRight(SecurableName dataEntityName, \[SecurableChildName fieldName\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-383">public AccessRight dataManagementAccessRight(SecurableName dataEntityName, \[SecurableChildName fieldName\])</span></span>                                                                           |                                                                        |
-| <span data-ttu-id="7f44c-384">public str listDataServiceAccess(SecurableName name, \[SecurableChildName context\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-384">public str listDataServiceAccess(SecurableName name, \[SecurableChildName context\])</span></span>                                                                                                   |                                                                        |
-| <span data-ttu-id="7f44c-385">public AccessRight fieldAccessRight(TableName tableName, FieldName fieldName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-385">public AccessRight fieldAccessRight(TableName tableName, FieldName fieldName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span></span> | <span data-ttu-id="7f44c-386">テーブルのフィールドのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-386">Retrieves the access rights for the field of the table.</span></span>                |
-| <span data-ttu-id="7f44c-387">public AccessRight formControlAccessRight(FormName form, UtilElementName control, \[Common record\], \[DataAreaId dataArea\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-387">public AccessRight formControlAccessRight(FormName form, UtilElementName control, \[Common record\], \[DataAreaId dataArea\])</span></span>                                                          | <span data-ttu-id="7f44c-388">フォーム コントロールのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-388">Retrieves the access rights for the form control.</span></span>                      |
-| <span data-ttu-id="7f44c-389">public container getSelectableCompanies()</span><span class="sxs-lookup"><span data-stu-id="7f44c-389">public container getSelectableCompanies()</span></span>                                                                                                                                              |                                                                        |
-| <span data-ttu-id="7f44c-390">public boolean hasMenuAccess(MenuName menu, \[boolean isWebMenu\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-390">public boolean hasMenuAccess(MenuName menu, \[boolean isWebMenu\])</span></span>                                                                                                                     | <span data-ttu-id="7f44c-391">ユーザーが指定されたメニューにアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-391">Checks whether the user has access to the specified menu.</span></span>              |
-| <span data-ttu-id="7f44c-392">public boolean hasMenuItemAccess(SecurableType type, MenuItemName menuItem, \[Common record\], \[DataAreaId dataArea\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-392">public boolean hasMenuItemAccess(SecurableType type, MenuItemName menuItem, \[Common record\], \[DataAreaId dataArea\])</span></span>                                                                | <span data-ttu-id="7f44c-393">ユーザーが指定されたメニュー項目にアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-393">Checks whether the user has access to the specified menu item.</span></span>         |
-| <span data-ttu-id="7f44c-394">public boolean SysObsoleteAttribute(ClassName class, MethodName method)</span><span class="sxs-lookup"><span data-stu-id="7f44c-394">public boolean SysObsoleteAttribute(ClassName class, MethodName method)</span></span>                                                                                                                |                                                                        |
-| <span data-ttu-id="7f44c-395">public boolean hasServiceOperationAccess(UtilElementName service, UtilElementName operation)</span><span class="sxs-lookup"><span data-stu-id="7f44c-395">public boolean hasServiceOperationAccess(UtilElementName service, UtilElementName operation)</span></span>                                                                                           | <span data-ttu-id="7f44c-396">ユーザーが指定されたサービス操作にアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-396">Checks whether the user has access to the specified service operation.</span></span> |
-| <span data-ttu-id="7f44c-397">public boolean isDeveloper()</span><span class="sxs-lookup"><span data-stu-id="7f44c-397">public boolean isDeveloper()</span></span>                                                                                                                                                           |                                                                        |
-| <span data-ttu-id="7f44c-398">public boolean isSystemAdministrator()</span><span class="sxs-lookup"><span data-stu-id="7f44c-398">public boolean isSystemAdministrator()</span></span>                                                                                                                                                 | <span data-ttu-id="7f44c-399">現在のユーザーがシステム管理者であるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-399">Checks whether the current user is a system administrator.</span></span>             |
-| <span data-ttu-id="7f44c-400">public AccessRight menuItemAccessRight(SecurableType type, MenuItemName menuItem, \[DataAreaId dataArea\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-400">public AccessRight menuItemAccessRight(SecurableType type, MenuItemName menuItem, \[DataAreaId dataArea\])</span></span>                                                                             | <span data-ttu-id="7f44c-401">メニュー項目のアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-401">Retrieves the access rights for the menu item.</span></span>                         |
-| <span data-ttu-id="7f44c-402">public AccessRight tableAccessRight(TableName tableName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-402">public AccessRight tableAccessRight(TableName tableName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span></span>                      | <span data-ttu-id="7f44c-403">テーブルのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-403">Retrieves the access rights for the table.</span></span>                             |
-| <span data-ttu-id="7f44c-404">public SecurityTableRights tableFieldAccessRights(TableName tableName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-404">public SecurityTableRights tableFieldAccessRights(TableName tableName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span></span>        | <span data-ttu-id="7f44c-405">テーブルのフィールド アクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-405">Retrieves the field access rights for the table.</span></span>                       |
-| <span data-ttu-id="7f44c-406">public Set variableAccessFields(TableName tableName, \[AccessRight targetAccess\], \[DataAreaId dataArea\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-406">public Set variableAccessFields(TableName tableName, \[AccessRight targetAccess\], \[DataAreaId dataArea\])</span></span>                                                                            | <span data-ttu-id="7f44c-407">一連のテーブル フィールド ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-407">Retrieves a set of the table field IDs.</span></span>                                |
-| <span data-ttu-id="7f44c-408">public AccessRight webContentAccessRight(SecurableType type, WebContentItemName name)</span><span class="sxs-lookup"><span data-stu-id="7f44c-408">public AccessRight webContentAccessRight(SecurableType type, WebContentItemName name)</span></span>                                                                                                  | <span data-ttu-id="7f44c-409">Web コンテンツ項目のアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-409">Retrieves the access rights for the web content item.</span></span>                  |
-| <span data-ttu-id="7f44c-410">::public static SecurityRights construct()</span><span class="sxs-lookup"><span data-stu-id="7f44c-410">::public static SecurityRights construct()</span></span>                                                                                                                                             | <span data-ttu-id="7f44c-411">現在のユーザーの新しいセキュリティ権限インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-411">Creates a new security rights instance for the current user.</span></span>           |
-| <span data-ttu-id="7f44c-412">::public static SecurityRights newUser(UserId user)</span><span class="sxs-lookup"><span data-stu-id="7f44c-412">::public static SecurityRights newUser(UserId user)</span></span>                                                                                                                                    | <span data-ttu-id="7f44c-413">特定のユーザーの新しいセキュリティ権限インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-413">Creates a new security rights instance for the specified user.</span></span>         |
-| <span data-ttu-id="7f44c-414">private void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-414">private void new()</span></span>                                                                                                                                                                     | <span data-ttu-id="7f44c-415">SecurityRights クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-415">Initializes a new instance of the SecurityRights class.</span></span>                |
-| <span data-ttu-id="7f44c-416">public void populateSelectableCompanies()</span><span class="sxs-lookup"><span data-stu-id="7f44c-416">public void populateSelectableCompanies()</span></span>                                                                                                                                              | <span data-ttu-id="7f44c-417">選択できる会社を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-417">Populates the selectable companies.</span></span>                                    |
+| <span data-ttu-id="50251-381">public boolean hasDataServiceAccess(SecurableName name, StatementType operation, \[SecurableChildName fieldName\])</span><span class="sxs-lookup"><span data-stu-id="50251-381">public boolean hasDataServiceAccess(SecurableName name, StatementType operation, \[SecurableChildName fieldName\])</span></span>                                                                     |                                                                        |
+| <span data-ttu-id="50251-382">public boolean hasDataServiceMethodAccess(SecurableName name, StatementType operation, SecurableChildName methodName)</span><span class="sxs-lookup"><span data-stu-id="50251-382">public boolean hasDataServiceMethodAccess(SecurableName name, StatementType operation, SecurableChildName methodName)</span></span>                                                                  |                                                                        |
+| <span data-ttu-id="50251-383">public AccessRight dataManagementAccessRight(SecurableName dataEntityName, \[SecurableChildName fieldName\])</span><span class="sxs-lookup"><span data-stu-id="50251-383">public AccessRight dataManagementAccessRight(SecurableName dataEntityName, \[SecurableChildName fieldName\])</span></span>                                                                           |                                                                        |
+| <span data-ttu-id="50251-384">public str listDataServiceAccess(SecurableName name, \[SecurableChildName context\])</span><span class="sxs-lookup"><span data-stu-id="50251-384">public str listDataServiceAccess(SecurableName name, \[SecurableChildName context\])</span></span>                                                                                                   |                                                                        |
+| <span data-ttu-id="50251-385">public AccessRight fieldAccessRight(TableName tableName, FieldName fieldName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span><span class="sxs-lookup"><span data-stu-id="50251-385">public AccessRight fieldAccessRight(TableName tableName, FieldName fieldName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span></span> | <span data-ttu-id="50251-386">テーブルのフィールドのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-386">Retrieves the access rights for the field of the table.</span></span>                |
+| <span data-ttu-id="50251-387">public AccessRight formControlAccessRight(FormName form, UtilElementName control, \[Common record\], \[DataAreaId dataArea\])</span><span class="sxs-lookup"><span data-stu-id="50251-387">public AccessRight formControlAccessRight(FormName form, UtilElementName control, \[Common record\], \[DataAreaId dataArea\])</span></span>                                                          | <span data-ttu-id="50251-388">フォーム コントロールのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-388">Retrieves the access rights for the form control.</span></span>                      |
+| <span data-ttu-id="50251-389">public container getSelectableCompanies()</span><span class="sxs-lookup"><span data-stu-id="50251-389">public container getSelectableCompanies()</span></span>                                                                                                                                              |                                                                        |
+| <span data-ttu-id="50251-390">public boolean hasMenuAccess(MenuName menu, \[boolean isWebMenu\])</span><span class="sxs-lookup"><span data-stu-id="50251-390">public boolean hasMenuAccess(MenuName menu, \[boolean isWebMenu\])</span></span>                                                                                                                     | <span data-ttu-id="50251-391">ユーザーが指定されたメニューにアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="50251-391">Checks whether the user has access to the specified menu.</span></span>              |
+| <span data-ttu-id="50251-392">public boolean hasMenuItemAccess(SecurableType type, MenuItemName menuItem, \[Common record\], \[DataAreaId dataArea\])</span><span class="sxs-lookup"><span data-stu-id="50251-392">public boolean hasMenuItemAccess(SecurableType type, MenuItemName menuItem, \[Common record\], \[DataAreaId dataArea\])</span></span>                                                                | <span data-ttu-id="50251-393">ユーザーが指定されたメニュー項目にアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="50251-393">Checks whether the user has access to the specified menu item.</span></span>         |
+| <span data-ttu-id="50251-394">public boolean SysObsoleteAttribute(ClassName class, MethodName method)</span><span class="sxs-lookup"><span data-stu-id="50251-394">public boolean SysObsoleteAttribute(ClassName class, MethodName method)</span></span>                                                                                                                |                                                                        |
+| <span data-ttu-id="50251-395">public boolean hasServiceOperationAccess(UtilElementName service, UtilElementName operation)</span><span class="sxs-lookup"><span data-stu-id="50251-395">public boolean hasServiceOperationAccess(UtilElementName service, UtilElementName operation)</span></span>                                                                                           | <span data-ttu-id="50251-396">ユーザーが指定されたサービス操作にアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="50251-396">Checks whether the user has access to the specified service operation.</span></span> |
+| <span data-ttu-id="50251-397">public boolean isDeveloper()</span><span class="sxs-lookup"><span data-stu-id="50251-397">public boolean isDeveloper()</span></span>                                                                                                                                                           |                                                                        |
+| <span data-ttu-id="50251-398">public boolean isSystemAdministrator()</span><span class="sxs-lookup"><span data-stu-id="50251-398">public boolean isSystemAdministrator()</span></span>                                                                                                                                                 | <span data-ttu-id="50251-399">現在のユーザーがシステム管理者であるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="50251-399">Checks whether the current user is a system administrator.</span></span>             |
+| <span data-ttu-id="50251-400">public AccessRight menuItemAccessRight(SecurableType type, MenuItemName menuItem, \[DataAreaId dataArea\])</span><span class="sxs-lookup"><span data-stu-id="50251-400">public AccessRight menuItemAccessRight(SecurableType type, MenuItemName menuItem, \[DataAreaId dataArea\])</span></span>                                                                             | <span data-ttu-id="50251-401">メニュー項目のアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-401">Retrieves the access rights for the menu item.</span></span>                         |
+| <span data-ttu-id="50251-402">public AccessRight tableAccessRight(TableName tableName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span><span class="sxs-lookup"><span data-stu-id="50251-402">public AccessRight tableAccessRight(TableName tableName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span></span>                      | <span data-ttu-id="50251-403">テーブルのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-403">Retrieves the access rights for the table.</span></span>                             |
+| <span data-ttu-id="50251-404">public SecurityTableRights tableFieldAccessRights(TableName tableName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span><span class="sxs-lookup"><span data-stu-id="50251-404">public SecurityTableRights tableFieldAccessRights(TableName tableName, \[Common record\], \[DataAreaId dataArea\], \[boolean includeDerived\], \[AutoAuthzMode autoAuthzMode\])</span></span>        | <span data-ttu-id="50251-405">テーブルのフィールド アクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-405">Retrieves the field access rights for the table.</span></span>                       |
+| <span data-ttu-id="50251-406">public Set variableAccessFields(TableName tableName, \[AccessRight targetAccess\], \[DataAreaId dataArea\])</span><span class="sxs-lookup"><span data-stu-id="50251-406">public Set variableAccessFields(TableName tableName, \[AccessRight targetAccess\], \[DataAreaId dataArea\])</span></span>                                                                            | <span data-ttu-id="50251-407">一連のテーブル フィールド ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-407">Retrieves a set of the table field IDs.</span></span>                                |
+| <span data-ttu-id="50251-408">public AccessRight webContentAccessRight(SecurableType type, WebContentItemName name)</span><span class="sxs-lookup"><span data-stu-id="50251-408">public AccessRight webContentAccessRight(SecurableType type, WebContentItemName name)</span></span>                                                                                                  | <span data-ttu-id="50251-409">Web コンテンツ項目のアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-409">Retrieves the access rights for the web content item.</span></span>                  |
+| <span data-ttu-id="50251-410">::public static SecurityRights construct()</span><span class="sxs-lookup"><span data-stu-id="50251-410">::public static SecurityRights construct()</span></span>                                                                                                                                             | <span data-ttu-id="50251-411">現在のユーザーの新しいセキュリティ権限インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-411">Creates a new security rights instance for the current user.</span></span>           |
+| <span data-ttu-id="50251-412">::public static SecurityRights newUser(UserId user)</span><span class="sxs-lookup"><span data-stu-id="50251-412">::public static SecurityRights newUser(UserId user)</span></span>                                                                                                                                    | <span data-ttu-id="50251-413">特定のユーザーの新しいセキュリティ権限インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-413">Creates a new security rights instance for the specified user.</span></span>         |
+| <span data-ttu-id="50251-414">private void new()</span><span class="sxs-lookup"><span data-stu-id="50251-414">private void new()</span></span>                                                                                                                                                                     | <span data-ttu-id="50251-415">SecurityRights クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-415">Initializes a new instance of the SecurityRights class.</span></span>                |
+| <span data-ttu-id="50251-416">public void populateSelectableCompanies()</span><span class="sxs-lookup"><span data-stu-id="50251-416">public void populateSelectableCompanies()</span></span>                                                                                                                                              | <span data-ttu-id="50251-417">選択できる会社を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-417">Populates the selectable companies.</span></span>                                    |
 
-### <a name="method-hasdataserviceaccess"></a><span data-ttu-id="7f44c-418">メソッド hasDataServiceAccess</span><span class="sxs-lookup"><span data-stu-id="7f44c-418">Method hasDataServiceAccess</span></span>
+### <a name="method-hasdataserviceaccess"></a><span data-ttu-id="50251-418">メソッド hasDataServiceAccess</span><span class="sxs-lookup"><span data-stu-id="50251-418">Method hasDataServiceAccess</span></span>
 
     public boolean hasDataServiceAccess(SecurableName name, StatementType operation, [SecurableChildName fieldName])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-419">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-419">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-419">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-419">Parameters</span></span>
 
-<span data-ttu-id="7f44c-420">名前</span><span class="sxs-lookup"><span data-stu-id="7f44c-420">name</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-421">工程</span><span class="sxs-lookup"><span data-stu-id="7f44c-421">operation</span></span>  
+<span data-ttu-id="50251-420">名前</span><span class="sxs-lookup"><span data-stu-id="50251-420">name</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-422">fieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-422">fieldName</span></span>  
+<span data-ttu-id="50251-421">工程</span><span class="sxs-lookup"><span data-stu-id="50251-421">operation</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-423">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-423">Return Value</span></span>
+<!-- -->
 
-### <a name="method-hasdataservicemethodaccess"></a><span data-ttu-id="7f44c-424">メソッド hasDataServiceMethodAccess</span><span class="sxs-lookup"><span data-stu-id="7f44c-424">Method hasDataServiceMethodAccess</span></span>
+<span data-ttu-id="50251-422">fieldName</span><span class="sxs-lookup"><span data-stu-id="50251-422">fieldName</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-423">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-423">Return Value</span></span>
+
+### <a name="method-hasdataservicemethodaccess"></a><span data-ttu-id="50251-424">メソッド hasDataServiceMethodAccess</span><span class="sxs-lookup"><span data-stu-id="50251-424">Method hasDataServiceMethodAccess</span></span>
 
     public boolean hasDataServiceMethodAccess(SecurableName name, StatementType operation, SecurableChildName methodName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-425">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-425">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-425">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-425">Parameters</span></span>
 
-<span data-ttu-id="7f44c-426">名前</span><span class="sxs-lookup"><span data-stu-id="7f44c-426">name</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-427">工程</span><span class="sxs-lookup"><span data-stu-id="7f44c-427">operation</span></span>  
+<span data-ttu-id="50251-426">名前</span><span class="sxs-lookup"><span data-stu-id="50251-426">name</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-428">methodName</span><span class="sxs-lookup"><span data-stu-id="7f44c-428">methodName</span></span>  
+<span data-ttu-id="50251-427">工程</span><span class="sxs-lookup"><span data-stu-id="50251-427">operation</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-429">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-429">Return Value</span></span>
+<!-- -->
 
-### <a name="method-datamanagementaccessright"></a><span data-ttu-id="7f44c-430">メソッド dataManagementAccessRight</span><span class="sxs-lookup"><span data-stu-id="7f44c-430">Method dataManagementAccessRight</span></span>
+<span data-ttu-id="50251-428">methodName</span><span class="sxs-lookup"><span data-stu-id="50251-428">methodName</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-429">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-429">Return Value</span></span>
+
+### <a name="method-datamanagementaccessright"></a><span data-ttu-id="50251-430">メソッド dataManagementAccessRight</span><span class="sxs-lookup"><span data-stu-id="50251-430">Method dataManagementAccessRight</span></span>
 
     public AccessRight dataManagementAccessRight(SecurableName dataEntityName, [SecurableChildName fieldName])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-431">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-431">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-431">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-431">Parameters</span></span>
 
-<span data-ttu-id="7f44c-432">dataEntityName</span><span class="sxs-lookup"><span data-stu-id="7f44c-432">dataEntityName</span></span>  
+<span data-ttu-id="50251-432">dataEntityName</span><span class="sxs-lookup"><span data-stu-id="50251-432">dataEntityName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-433">fieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-433">fieldName</span></span>  
+<span data-ttu-id="50251-433">fieldName</span><span class="sxs-lookup"><span data-stu-id="50251-433">fieldName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-434">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-434">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-434">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-434">Return Value</span></span>
 
-### <a name="method-listdataserviceaccess"></a><span data-ttu-id="7f44c-435">メソッド listDataServiceAccess</span><span class="sxs-lookup"><span data-stu-id="7f44c-435">Method listDataServiceAccess</span></span>
+### <a name="method-listdataserviceaccess"></a><span data-ttu-id="50251-435">メソッド listDataServiceAccess</span><span class="sxs-lookup"><span data-stu-id="50251-435">Method listDataServiceAccess</span></span>
 
     public str listDataServiceAccess(SecurableName name, [SecurableChildName context])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-436">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-436">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-436">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-436">Parameters</span></span>
 
-<span data-ttu-id="7f44c-437">名前</span><span class="sxs-lookup"><span data-stu-id="7f44c-437">name</span></span>  
+<span data-ttu-id="50251-437">名前</span><span class="sxs-lookup"><span data-stu-id="50251-437">name</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-438">context</span><span class="sxs-lookup"><span data-stu-id="7f44c-438">context</span></span>  
+<span data-ttu-id="50251-438">context</span><span class="sxs-lookup"><span data-stu-id="50251-438">context</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-439">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-439">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-439">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-439">Return Value</span></span>
 
-### <a name="method-fieldaccessright"></a><span data-ttu-id="7f44c-440">メソッド fieldAccessRight</span><span class="sxs-lookup"><span data-stu-id="7f44c-440">Method fieldAccessRight</span></span>
+### <a name="method-fieldaccessright"></a><span data-ttu-id="50251-440">メソッド fieldAccessRight</span><span class="sxs-lookup"><span data-stu-id="50251-440">Method fieldAccessRight</span></span>
 
-<span data-ttu-id="7f44c-441">テーブルのフィールドのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-441">Retrieves the access rights for the field of the table.</span></span>
+<span data-ttu-id="50251-441">テーブルのフィールドのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-441">Retrieves the access rights for the field of the table.</span></span>
 
     public AccessRight fieldAccessRight(TableName tableName, FieldName fieldName, [Common record], [DataAreaId dataArea], [boolean includeDerived], [AutoAuthzMode autoAuthzMode])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-442">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-442">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-442">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-442">Parameters</span></span>
 
-<span data-ttu-id="7f44c-443">tableName</span><span class="sxs-lookup"><span data-stu-id="7f44c-443">tableName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-444">fieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-444">fieldName</span></span>  
+<span data-ttu-id="50251-443">tableName</span><span class="sxs-lookup"><span data-stu-id="50251-443">tableName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-445">記録</span><span class="sxs-lookup"><span data-stu-id="7f44c-445">record</span></span>  
+<span data-ttu-id="50251-444">fieldName</span><span class="sxs-lookup"><span data-stu-id="50251-444">fieldName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-446">dataArea</span><span class="sxs-lookup"><span data-stu-id="7f44c-446">dataArea</span></span>  
+<span data-ttu-id="50251-445">記録</span><span class="sxs-lookup"><span data-stu-id="50251-445">record</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-447">includeDerived</span><span class="sxs-lookup"><span data-stu-id="7f44c-447">includeDerived</span></span>  
+<span data-ttu-id="50251-446">dataArea</span><span class="sxs-lookup"><span data-stu-id="50251-446">dataArea</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-448">autoAuthzMode</span><span class="sxs-lookup"><span data-stu-id="7f44c-448">autoAuthzMode</span></span>  
+<span data-ttu-id="50251-447">includeDerived</span><span class="sxs-lookup"><span data-stu-id="50251-447">includeDerived</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-449">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-449">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-450">テーブルのフィールドの AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="7f44c-450">The AccesRight instance for the field of the table.</span></span>
+<span data-ttu-id="50251-448">autoAuthzMode</span><span class="sxs-lookup"><span data-stu-id="50251-448">autoAuthzMode</span></span>  
 
-### <a name="method-formcontrolaccessright"></a><span data-ttu-id="7f44c-451">メソッド formControlAccessRight</span><span class="sxs-lookup"><span data-stu-id="7f44c-451">Method formControlAccessRight</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-449">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-449">Return Value</span></span>
 
-<span data-ttu-id="7f44c-452">フォーム コントロールのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-452">Retrieves the access rights for the form control.</span></span>
+<span data-ttu-id="50251-450">テーブルのフィールドの AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="50251-450">The AccesRight instance for the field of the table.</span></span>
+
+### <a name="method-formcontrolaccessright"></a><span data-ttu-id="50251-451">メソッド formControlAccessRight</span><span class="sxs-lookup"><span data-stu-id="50251-451">Method formControlAccessRight</span></span>
+
+<span data-ttu-id="50251-452">フォーム コントロールのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-452">Retrieves the access rights for the form control.</span></span>
 
     public AccessRight formControlAccessRight(FormName form, UtilElementName control, [Common record], [DataAreaId dataArea])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-453">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-453">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-453">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-453">Parameters</span></span>
 
-<span data-ttu-id="7f44c-454">フォーム</span><span class="sxs-lookup"><span data-stu-id="7f44c-454">form</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-455">control</span><span class="sxs-lookup"><span data-stu-id="7f44c-455">control</span></span>  
+<span data-ttu-id="50251-454">フォーム</span><span class="sxs-lookup"><span data-stu-id="50251-454">form</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-456">記録</span><span class="sxs-lookup"><span data-stu-id="7f44c-456">record</span></span>  
+<span data-ttu-id="50251-455">control</span><span class="sxs-lookup"><span data-stu-id="50251-455">control</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-457">dataArea</span><span class="sxs-lookup"><span data-stu-id="7f44c-457">dataArea</span></span>  
+<span data-ttu-id="50251-456">記録</span><span class="sxs-lookup"><span data-stu-id="50251-456">record</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-458">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-458">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-459">フォーム コントロールの AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="7f44c-459">The AccesRight instance for the form control.</span></span>
+<span data-ttu-id="50251-457">dataArea</span><span class="sxs-lookup"><span data-stu-id="50251-457">dataArea</span></span>  
 
-### <a name="method-getselectablecompanies"></a><span data-ttu-id="7f44c-460">メソッド getSelectableCompanies</span><span class="sxs-lookup"><span data-stu-id="7f44c-460">Method getSelectableCompanies</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-458">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-458">Return Value</span></span>
+
+<span data-ttu-id="50251-459">フォーム コントロールの AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="50251-459">The AccesRight instance for the form control.</span></span>
+
+### <a name="method-getselectablecompanies"></a><span data-ttu-id="50251-460">メソッド getSelectableCompanies</span><span class="sxs-lookup"><span data-stu-id="50251-460">Method getSelectableCompanies</span></span>
 
     public container getSelectableCompanies()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-461">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-461">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-461">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-461">Return Value</span></span>
 
-### <a name="method-hasmenuaccess"></a><span data-ttu-id="7f44c-462">メソッド hasMenuAccess</span><span class="sxs-lookup"><span data-stu-id="7f44c-462">Method hasMenuAccess</span></span>
+### <a name="method-hasmenuaccess"></a><span data-ttu-id="50251-462">メソッド hasMenuAccess</span><span class="sxs-lookup"><span data-stu-id="50251-462">Method hasMenuAccess</span></span>
 
-<span data-ttu-id="7f44c-463">ユーザーが指定されたメニューにアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-463">Checks whether the user has access to the specified menu.</span></span>
+<span data-ttu-id="50251-463">ユーザーが指定されたメニューにアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="50251-463">Checks whether the user has access to the specified menu.</span></span>
 
     public boolean hasMenuAccess(MenuName menu, [boolean isWebMenu])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-464">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-464">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-464">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-464">Parameters</span></span>
 
-<span data-ttu-id="7f44c-465">メニュー</span><span class="sxs-lookup"><span data-stu-id="7f44c-465">menu</span></span>  
+<span data-ttu-id="50251-465">メニュー</span><span class="sxs-lookup"><span data-stu-id="50251-465">menu</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-466">isWebMenu</span><span class="sxs-lookup"><span data-stu-id="7f44c-466">isWebMenu</span></span>  
+<span data-ttu-id="50251-466">isWebMenu</span><span class="sxs-lookup"><span data-stu-id="50251-466">isWebMenu</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-467">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-467">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-467">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-467">Return Value</span></span>
 
-<span data-ttu-id="7f44c-468">ユーザーがメニューへのアクセス権を持つ場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-468">true if the user has access to the menu; otherwise, false.</span></span>
+<span data-ttu-id="50251-468">ユーザーがメニューへのアクセス権を持つ場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-468">true if the user has access to the menu; otherwise, false.</span></span>
 
-### <a name="method-hasmenuitemaccess"></a><span data-ttu-id="7f44c-469">メソッド hasMenuItemAccess</span><span class="sxs-lookup"><span data-stu-id="7f44c-469">Method hasMenuItemAccess</span></span>
+### <a name="method-hasmenuitemaccess"></a><span data-ttu-id="50251-469">メソッド hasMenuItemAccess</span><span class="sxs-lookup"><span data-stu-id="50251-469">Method hasMenuItemAccess</span></span>
 
-<span data-ttu-id="7f44c-470">ユーザーが指定されたメニュー項目にアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-470">Checks whether the user has access to the specified menu item.</span></span>
+<span data-ttu-id="50251-470">ユーザーが指定されたメニュー項目にアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="50251-470">Checks whether the user has access to the specified menu item.</span></span>
 
     public boolean hasMenuItemAccess(SecurableType type, MenuItemName menuItem, [Common record], [DataAreaId dataArea])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-471">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-471">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-471">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-471">Parameters</span></span>
 
-<span data-ttu-id="7f44c-472">タイプ</span><span class="sxs-lookup"><span data-stu-id="7f44c-472">type</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-473">menuItem</span><span class="sxs-lookup"><span data-stu-id="7f44c-473">menuItem</span></span>  
+<span data-ttu-id="50251-472">タイプ</span><span class="sxs-lookup"><span data-stu-id="50251-472">type</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-474">記録</span><span class="sxs-lookup"><span data-stu-id="7f44c-474">record</span></span>  
+<span data-ttu-id="50251-473">menuItem</span><span class="sxs-lookup"><span data-stu-id="50251-473">menuItem</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-475">dataArea</span><span class="sxs-lookup"><span data-stu-id="7f44c-475">dataArea</span></span>  
+<span data-ttu-id="50251-474">記録</span><span class="sxs-lookup"><span data-stu-id="50251-474">record</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-476">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-476">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-477">ユーザーがメニュー項目へのアクセス権を持つ場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-477">true if the user has access to the menu item; otherwise, false.</span></span>
+<span data-ttu-id="50251-475">dataArea</span><span class="sxs-lookup"><span data-stu-id="50251-475">dataArea</span></span>  
 
-### <a name="method-sysobsoleteattribute"></a><span data-ttu-id="7f44c-478">メソッド SysObsoleteAttribute</span><span class="sxs-lookup"><span data-stu-id="7f44c-478">Method SysObsoleteAttribute</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-476">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-476">Return Value</span></span>
+
+<span data-ttu-id="50251-477">ユーザーがメニュー項目へのアクセス権を持つ場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-477">true if the user has access to the menu item; otherwise, false.</span></span>
+
+### <a name="method-sysobsoleteattribute"></a><span data-ttu-id="50251-478">メソッド SysObsoleteAttribute</span><span class="sxs-lookup"><span data-stu-id="50251-478">Method SysObsoleteAttribute</span></span>
 
     public boolean SysObsoleteAttribute(ClassName class, MethodName method)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-479">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-479">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-479">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-479">Parameters</span></span>
 
-<span data-ttu-id="7f44c-480">クラス</span><span class="sxs-lookup"><span data-stu-id="7f44c-480">class</span></span>  
+<span data-ttu-id="50251-480">クラス</span><span class="sxs-lookup"><span data-stu-id="50251-480">class</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-481">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-481">method</span></span>  
+<span data-ttu-id="50251-481">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-481">method</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-482">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-482">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-482">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-482">Return Value</span></span>
 
-### <a name="method-hasserviceoperationaccess"></a><span data-ttu-id="7f44c-483">メソッド hasServiceOperationAccess</span><span class="sxs-lookup"><span data-stu-id="7f44c-483">Method hasServiceOperationAccess</span></span>
+### <a name="method-hasserviceoperationaccess"></a><span data-ttu-id="50251-483">メソッド hasServiceOperationAccess</span><span class="sxs-lookup"><span data-stu-id="50251-483">Method hasServiceOperationAccess</span></span>
 
-<span data-ttu-id="7f44c-484">ユーザーが指定されたサービス操作にアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-484">Checks whether the user has access to the specified service operation.</span></span>
+<span data-ttu-id="50251-484">ユーザーが指定されたサービス操作にアクセスできるかどうかをチェックします。</span><span class="sxs-lookup"><span data-stu-id="50251-484">Checks whether the user has access to the specified service operation.</span></span>
 
     public boolean hasServiceOperationAccess(UtilElementName service, UtilElementName operation)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-485">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-485">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-485">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-485">Parameters</span></span>
 
-<span data-ttu-id="7f44c-486">サービス</span><span class="sxs-lookup"><span data-stu-id="7f44c-486">service</span></span>  
+<span data-ttu-id="50251-486">サービス</span><span class="sxs-lookup"><span data-stu-id="50251-486">service</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-487">工程</span><span class="sxs-lookup"><span data-stu-id="7f44c-487">operation</span></span>  
+<span data-ttu-id="50251-487">工程</span><span class="sxs-lookup"><span data-stu-id="50251-487">operation</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-488">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-488">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-488">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-488">Return Value</span></span>
 
-<span data-ttu-id="7f44c-489">ユーザーがサービス操作へのアクセス権を持つ場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-489">true if user has access to the service operation; otherwise, false.</span></span>
+<span data-ttu-id="50251-489">ユーザーがサービス操作へのアクセス権を持つ場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-489">true if user has access to the service operation; otherwise, false.</span></span>
 
-### <a name="method-isdeveloper"></a><span data-ttu-id="7f44c-490">メソッド isDeveloper</span><span class="sxs-lookup"><span data-stu-id="7f44c-490">Method isDeveloper</span></span>
+### <a name="method-isdeveloper"></a><span data-ttu-id="50251-490">メソッド isDeveloper</span><span class="sxs-lookup"><span data-stu-id="50251-490">Method isDeveloper</span></span>
 
     public boolean isDeveloper()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-491">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-491">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-491">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-491">Return Value</span></span>
 
-### <a name="method-issystemadministrator"></a><span data-ttu-id="7f44c-492">メソッド isSystemAdministrator</span><span class="sxs-lookup"><span data-stu-id="7f44c-492">Method isSystemAdministrator</span></span>
+### <a name="method-issystemadministrator"></a><span data-ttu-id="50251-492">メソッド isSystemAdministrator</span><span class="sxs-lookup"><span data-stu-id="50251-492">Method isSystemAdministrator</span></span>
 
-<span data-ttu-id="7f44c-493">現在のユーザーがシステム管理者であるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-493">Checks whether the current user is a system administrator.</span></span>
+<span data-ttu-id="50251-493">現在のユーザーがシステム管理者であるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="50251-493">Checks whether the current user is a system administrator.</span></span>
 
     public boolean isSystemAdministrator()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-494">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-494">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-494">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-494">Return Value</span></span>
 
-<span data-ttu-id="7f44c-495">現在のユーザーがシステム管理者である場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-495">true if the current user is a system administrator; otherwise, false.</span></span>
+<span data-ttu-id="50251-495">現在のユーザーがシステム管理者である場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-495">true if the current user is a system administrator; otherwise, false.</span></span>
 
-### <a name="method-menuitemaccessright"></a><span data-ttu-id="7f44c-496">メソッド menuItemAccessRight</span><span class="sxs-lookup"><span data-stu-id="7f44c-496">Method menuItemAccessRight</span></span>
+### <a name="method-menuitemaccessright"></a><span data-ttu-id="50251-496">メソッド menuItemAccessRight</span><span class="sxs-lookup"><span data-stu-id="50251-496">Method menuItemAccessRight</span></span>
 
-<span data-ttu-id="7f44c-497">メニュー項目のアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-497">Retrieves the access rights for the menu item.</span></span>
+<span data-ttu-id="50251-497">メニュー項目のアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-497">Retrieves the access rights for the menu item.</span></span>
 
     public AccessRight menuItemAccessRight(SecurableType type, MenuItemName menuItem, [DataAreaId dataArea])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-498">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-498">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-498">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-498">Parameters</span></span>
 
-<span data-ttu-id="7f44c-499">タイプ</span><span class="sxs-lookup"><span data-stu-id="7f44c-499">type</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-500">menuItem</span><span class="sxs-lookup"><span data-stu-id="7f44c-500">menuItem</span></span>  
+<span data-ttu-id="50251-499">タイプ</span><span class="sxs-lookup"><span data-stu-id="50251-499">type</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-501">dataArea</span><span class="sxs-lookup"><span data-stu-id="7f44c-501">dataArea</span></span>  
+<span data-ttu-id="50251-500">menuItem</span><span class="sxs-lookup"><span data-stu-id="50251-500">menuItem</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-502">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-502">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-503">項目の AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="7f44c-503">The AccesRight instance for the item.</span></span>
+<span data-ttu-id="50251-501">dataArea</span><span class="sxs-lookup"><span data-stu-id="50251-501">dataArea</span></span>  
 
-### <a name="method-tableaccessright"></a><span data-ttu-id="7f44c-504">メソッド tableAccessRight</span><span class="sxs-lookup"><span data-stu-id="7f44c-504">Method tableAccessRight</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-502">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-502">Return Value</span></span>
 
-<span data-ttu-id="7f44c-505">テーブルのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-505">Retrieves the access rights for the table.</span></span>
+<span data-ttu-id="50251-503">項目の AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="50251-503">The AccesRight instance for the item.</span></span>
+
+### <a name="method-tableaccessright"></a><span data-ttu-id="50251-504">メソッド tableAccessRight</span><span class="sxs-lookup"><span data-stu-id="50251-504">Method tableAccessRight</span></span>
+
+<span data-ttu-id="50251-505">テーブルのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-505">Retrieves the access rights for the table.</span></span>
 
     public AccessRight tableAccessRight(TableName tableName, [Common record], [DataAreaId dataArea], [boolean includeDerived], [AutoAuthzMode autoAuthzMode])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-506">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-506">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-506">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-506">Parameters</span></span>
 
-<span data-ttu-id="7f44c-507">tableName</span><span class="sxs-lookup"><span data-stu-id="7f44c-507">tableName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-508">記録</span><span class="sxs-lookup"><span data-stu-id="7f44c-508">record</span></span>  
+<span data-ttu-id="50251-507">tableName</span><span class="sxs-lookup"><span data-stu-id="50251-507">tableName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-509">dataArea</span><span class="sxs-lookup"><span data-stu-id="7f44c-509">dataArea</span></span>  
+<span data-ttu-id="50251-508">記録</span><span class="sxs-lookup"><span data-stu-id="50251-508">record</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-510">includeDerived</span><span class="sxs-lookup"><span data-stu-id="7f44c-510">includeDerived</span></span>  
+<span data-ttu-id="50251-509">dataArea</span><span class="sxs-lookup"><span data-stu-id="50251-509">dataArea</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-511">autoAuthzMode</span><span class="sxs-lookup"><span data-stu-id="7f44c-511">autoAuthzMode</span></span>  
+<span data-ttu-id="50251-510">includeDerived</span><span class="sxs-lookup"><span data-stu-id="50251-510">includeDerived</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-512">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-512">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-513">テーブルの AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="7f44c-513">The AccesRight instance for the table.</span></span>
+<span data-ttu-id="50251-511">autoAuthzMode</span><span class="sxs-lookup"><span data-stu-id="50251-511">autoAuthzMode</span></span>  
 
-### <a name="method-tablefieldaccessrights"></a><span data-ttu-id="7f44c-514">メソッド tableFieldAccessRights</span><span class="sxs-lookup"><span data-stu-id="7f44c-514">Method tableFieldAccessRights</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-512">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-512">Return Value</span></span>
 
-<span data-ttu-id="7f44c-515">テーブルのフィールド アクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-515">Retrieves the field access rights for the table.</span></span>
+<span data-ttu-id="50251-513">テーブルの AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="50251-513">The AccesRight instance for the table.</span></span>
+
+### <a name="method-tablefieldaccessrights"></a><span data-ttu-id="50251-514">メソッド tableFieldAccessRights</span><span class="sxs-lookup"><span data-stu-id="50251-514">Method tableFieldAccessRights</span></span>
+
+<span data-ttu-id="50251-515">テーブルのフィールド アクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-515">Retrieves the field access rights for the table.</span></span>
 
     public SecurityTableRights tableFieldAccessRights(TableName tableName, [Common record], [DataAreaId dataArea], [boolean includeDerived], [AutoAuthzMode autoAuthzMode])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-516">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-516">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-516">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-516">Parameters</span></span>
 
-<span data-ttu-id="7f44c-517">tableName</span><span class="sxs-lookup"><span data-stu-id="7f44c-517">tableName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-518">記録</span><span class="sxs-lookup"><span data-stu-id="7f44c-518">record</span></span>  
+<span data-ttu-id="50251-517">tableName</span><span class="sxs-lookup"><span data-stu-id="50251-517">tableName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-519">dataArea</span><span class="sxs-lookup"><span data-stu-id="7f44c-519">dataArea</span></span>  
+<span data-ttu-id="50251-518">記録</span><span class="sxs-lookup"><span data-stu-id="50251-518">record</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-520">includeDerived</span><span class="sxs-lookup"><span data-stu-id="7f44c-520">includeDerived</span></span>  
+<span data-ttu-id="50251-519">dataArea</span><span class="sxs-lookup"><span data-stu-id="50251-519">dataArea</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-521">autoAuthzMode</span><span class="sxs-lookup"><span data-stu-id="7f44c-521">autoAuthzMode</span></span>  
+<span data-ttu-id="50251-520">includeDerived</span><span class="sxs-lookup"><span data-stu-id="50251-520">includeDerived</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-522">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-522">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-523">テーブルの SecurityTableRights インスタンス。</span><span class="sxs-lookup"><span data-stu-id="7f44c-523">The SecurityTableRights instance for the table.</span></span>
+<span data-ttu-id="50251-521">autoAuthzMode</span><span class="sxs-lookup"><span data-stu-id="50251-521">autoAuthzMode</span></span>  
 
-### <a name="method-variableaccessfields"></a><span data-ttu-id="7f44c-524">メソッド variableAccessFields</span><span class="sxs-lookup"><span data-stu-id="7f44c-524">Method variableAccessFields</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-522">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-522">Return Value</span></span>
 
-<span data-ttu-id="7f44c-525">一連のテーブル フィールド ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-525">Retrieves a set of the table field IDs.</span></span>
+<span data-ttu-id="50251-523">テーブルの SecurityTableRights インスタンス。</span><span class="sxs-lookup"><span data-stu-id="50251-523">The SecurityTableRights instance for the table.</span></span>
+
+### <a name="method-variableaccessfields"></a><span data-ttu-id="50251-524">メソッド variableAccessFields</span><span class="sxs-lookup"><span data-stu-id="50251-524">Method variableAccessFields</span></span>
+
+<span data-ttu-id="50251-525">一連のテーブル フィールド ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-525">Retrieves a set of the table field IDs.</span></span>
 
     public Set variableAccessFields(TableName tableName, [AccessRight targetAccess], [DataAreaId dataArea])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-526">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-526">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-526">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-526">Parameters</span></span>
 
-<span data-ttu-id="7f44c-527">tableName</span><span class="sxs-lookup"><span data-stu-id="7f44c-527">tableName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-528">targetAccess</span><span class="sxs-lookup"><span data-stu-id="7f44c-528">targetAccess</span></span>  
+<span data-ttu-id="50251-527">tableName</span><span class="sxs-lookup"><span data-stu-id="50251-527">tableName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-529">dataArea</span><span class="sxs-lookup"><span data-stu-id="7f44c-529">dataArea</span></span>  
+<span data-ttu-id="50251-528">targetAccess</span><span class="sxs-lookup"><span data-stu-id="50251-528">targetAccess</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-530">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-530">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-531">一連のテーブル フィールド ID。</span><span class="sxs-lookup"><span data-stu-id="7f44c-531">A set of the table field IDs.</span></span>
+<span data-ttu-id="50251-529">dataArea</span><span class="sxs-lookup"><span data-stu-id="50251-529">dataArea</span></span>  
 
-### <a name="method-webcontentaccessright"></a><span data-ttu-id="7f44c-532">メソッド webContentAccessRight</span><span class="sxs-lookup"><span data-stu-id="7f44c-532">Method webContentAccessRight</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-530">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-530">Return Value</span></span>
 
-<span data-ttu-id="7f44c-533">Web コンテンツ項目のアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-533">Retrieves the access rights for the web content item.</span></span>
+<span data-ttu-id="50251-531">一連のテーブル フィールド ID。</span><span class="sxs-lookup"><span data-stu-id="50251-531">A set of the table field IDs.</span></span>
+
+### <a name="method-webcontentaccessright"></a><span data-ttu-id="50251-532">メソッド webContentAccessRight</span><span class="sxs-lookup"><span data-stu-id="50251-532">Method webContentAccessRight</span></span>
+
+<span data-ttu-id="50251-533">Web コンテンツ項目のアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-533">Retrieves the access rights for the web content item.</span></span>
 
     public AccessRight webContentAccessRight(SecurableType type, WebContentItemName name)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-534">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-534">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-534">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-534">Parameters</span></span>
 
-<span data-ttu-id="7f44c-535">タイプ</span><span class="sxs-lookup"><span data-stu-id="7f44c-535">type</span></span>  
+<span data-ttu-id="50251-535">タイプ</span><span class="sxs-lookup"><span data-stu-id="50251-535">type</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-536">名前</span><span class="sxs-lookup"><span data-stu-id="7f44c-536">name</span></span>  
+<span data-ttu-id="50251-536">名前</span><span class="sxs-lookup"><span data-stu-id="50251-536">name</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-537">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-537">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-537">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-537">Return Value</span></span>
 
-<span data-ttu-id="7f44c-538">項目の AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="7f44c-538">The AccesRight instance for the item.</span></span>
+<span data-ttu-id="50251-538">項目の AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="50251-538">The AccesRight instance for the item.</span></span>
 
-### <a name="method-construct"></a><span data-ttu-id="7f44c-539">メソッド construct</span><span class="sxs-lookup"><span data-stu-id="7f44c-539">Method construct</span></span>
+### <a name="method-construct"></a><span data-ttu-id="50251-539">メソッド construct</span><span class="sxs-lookup"><span data-stu-id="50251-539">Method construct</span></span>
 
-<span data-ttu-id="7f44c-540">現在のユーザーの新しいセキュリティ権限インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-540">Creates a new security rights instance for the current user.</span></span>
+<span data-ttu-id="50251-540">現在のユーザーの新しいセキュリティ権限インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-540">Creates a new security rights instance for the current user.</span></span>
 
     public static SecurityRights construct()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-541">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-541">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-541">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-541">Return Value</span></span>
 
-<span data-ttu-id="7f44c-542">作成された SecurityRights インスタンスです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-542">The SecurityRights instance that was created.</span></span>
+<span data-ttu-id="50251-542">作成された SecurityRights インスタンスです。</span><span class="sxs-lookup"><span data-stu-id="50251-542">The SecurityRights instance that was created.</span></span>
 
-### <a name="method-newuser"></a><span data-ttu-id="7f44c-543">メソッド newUser</span><span class="sxs-lookup"><span data-stu-id="7f44c-543">Method newUser</span></span>
+### <a name="method-newuser"></a><span data-ttu-id="50251-543">メソッド newUser</span><span class="sxs-lookup"><span data-stu-id="50251-543">Method newUser</span></span>
 
-<span data-ttu-id="7f44c-544">特定のユーザーの新しいセキュリティ権限インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-544">Creates a new security rights instance for the specified user.</span></span>
+<span data-ttu-id="50251-544">特定のユーザーの新しいセキュリティ権限インスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-544">Creates a new security rights instance for the specified user.</span></span>
 
     public static SecurityRights newUser(UserId user)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-545">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-545">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-545">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-545">Parameters</span></span>
 
-<span data-ttu-id="7f44c-546">ユーザー</span><span class="sxs-lookup"><span data-stu-id="7f44c-546">user</span></span>  
+<span data-ttu-id="50251-546">ユーザー</span><span class="sxs-lookup"><span data-stu-id="50251-546">user</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-547">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-547">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-547">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-547">Return Value</span></span>
 
-<span data-ttu-id="7f44c-548">作成された SecurityRights インスタンスです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-548">The SecurityRights instance that was created.</span></span>
+<span data-ttu-id="50251-548">作成された SecurityRights インスタンスです。</span><span class="sxs-lookup"><span data-stu-id="50251-548">The SecurityRights instance that was created.</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-549">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-549">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-549">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-549">Method new</span></span>
 
-<span data-ttu-id="7f44c-550">SecurityRights クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-550">Initializes a new instance of the SecurityRights class.</span></span>
+<span data-ttu-id="50251-550">SecurityRights クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-550">Initializes a new instance of the SecurityRights class.</span></span>
 
     private void new()
 
-### <a name="method-populateselectablecompanies"></a><span data-ttu-id="7f44c-551">メソッド populateSelectableCompanies</span><span class="sxs-lookup"><span data-stu-id="7f44c-551">Method populateSelectableCompanies</span></span>
+### <a name="method-populateselectablecompanies"></a><span data-ttu-id="50251-551">メソッド populateSelectableCompanies</span><span class="sxs-lookup"><span data-stu-id="50251-551">Method populateSelectableCompanies</span></span>
 
-<span data-ttu-id="7f44c-552">選択できる会社を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-552">Populates the selectable companies.</span></span>
+<span data-ttu-id="50251-552">選択できる会社を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-552">Populates the selectable companies.</span></span>
 
     public void populateSelectableCompanies()
 
-## <a name="class-securityskipflush"></a><span data-ttu-id="7f44c-553">クラス SecuritySkipFlush</span><span class="sxs-lookup"><span data-stu-id="7f44c-553">Class SecuritySkipFlush</span></span>
+## <a name="class-securityskipflush"></a><span data-ttu-id="50251-553">クラス SecuritySkipFlush</span><span class="sxs-lookup"><span data-stu-id="50251-553">Class SecuritySkipFlush</span></span>
     class SecuritySkipFlush extends Object
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-554">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-554">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-554">備考</span><span class="sxs-lookup"><span data-stu-id="50251-554">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-555">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-555">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-555">例</span><span class="sxs-lookup"><span data-stu-id="50251-555">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-556">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-556">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-556">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-556">Methods</span></span>
 
-| <span data-ttu-id="7f44c-557">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-557">Method</span></span>              | <span data-ttu-id="7f44c-558">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-558">Description</span></span>                                                |
+| <span data-ttu-id="50251-557">方法</span><span class="sxs-lookup"><span data-stu-id="50251-557">Method</span></span>              | <span data-ttu-id="50251-558">説明</span><span class="sxs-lookup"><span data-stu-id="50251-558">Description</span></span>                                                |
 |---------------------|------------------------------------------------------------|
-| <span data-ttu-id="7f44c-559">public void clear()</span><span class="sxs-lookup"><span data-stu-id="7f44c-559">public void clear()</span></span> |                                                            |
-| <span data-ttu-id="7f44c-560">public void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-560">public void new()</span></span>   | <span data-ttu-id="7f44c-561">SecuritySkipFlush クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-561">Initializes a new instance of the SecuritySkipFlush class.</span></span> |
-| <span data-ttu-id="7f44c-562">public void set()</span><span class="sxs-lookup"><span data-stu-id="7f44c-562">public void set()</span></span>   |                                                            |
+| <span data-ttu-id="50251-559">public void clear()</span><span class="sxs-lookup"><span data-stu-id="50251-559">public void clear()</span></span> |                                                            |
+| <span data-ttu-id="50251-560">public void new()</span><span class="sxs-lookup"><span data-stu-id="50251-560">public void new()</span></span>   | <span data-ttu-id="50251-561">SecuritySkipFlush クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-561">Initializes a new instance of the SecuritySkipFlush class.</span></span> |
+| <span data-ttu-id="50251-562">public void set()</span><span class="sxs-lookup"><span data-stu-id="50251-562">public void set()</span></span>   |                                                            |
 
-### <a name="method-clear"></a><span data-ttu-id="7f44c-563">メソッド clear</span><span class="sxs-lookup"><span data-stu-id="7f44c-563">Method clear</span></span>
+### <a name="method-clear"></a><span data-ttu-id="50251-563">メソッド clear</span><span class="sxs-lookup"><span data-stu-id="50251-563">Method clear</span></span>
 
     public void clear()
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-564">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-564">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-564">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-564">Method new</span></span>
 
-<span data-ttu-id="7f44c-565">SecuritySkipFlush クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-565">Initializes a new instance of the SecuritySkipFlush class.</span></span>
+<span data-ttu-id="50251-565">SecuritySkipFlush クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-565">Initializes a new instance of the SecuritySkipFlush class.</span></span>
 
     public void new()
 
-### <a name="method-set"></a><span data-ttu-id="7f44c-566">メソッド set</span><span class="sxs-lookup"><span data-stu-id="7f44c-566">Method set</span></span>
+### <a name="method-set"></a><span data-ttu-id="50251-566">メソッド set</span><span class="sxs-lookup"><span data-stu-id="50251-566">Method set</span></span>
 
     public void set()
 
-## <a name="class-securitytablerights"></a><span data-ttu-id="7f44c-567">クラス SecurityTableRights</span><span class="sxs-lookup"><span data-stu-id="7f44c-567">Class SecurityTableRights</span></span>
+## <a name="class-securitytablerights"></a><span data-ttu-id="50251-567">クラス SecurityTableRights</span><span class="sxs-lookup"><span data-stu-id="50251-567">Class SecurityTableRights</span></span>
     class SecurityTableRights extends Object
 
-<span data-ttu-id="7f44c-568">SecurityTableRights クラスには、テーブル セキュリティ権限に関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-568">The SecurityTableRights class holds the information about the table security rights.</span></span>
+<span data-ttu-id="50251-568">SecurityTableRights クラスには、テーブル セキュリティ権限に関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="50251-568">The SecurityTableRights class holds the information about the table security rights.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-569">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-569">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-569">備考</span><span class="sxs-lookup"><span data-stu-id="50251-569">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-570">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-570">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-570">例</span><span class="sxs-lookup"><span data-stu-id="50251-570">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-571">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-571">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-571">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-571">Methods</span></span>
 
-| <span data-ttu-id="7f44c-572">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-572">Method</span></span>                                                   | <span data-ttu-id="7f44c-573">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-573">Description</span></span>                                               |
+| <span data-ttu-id="50251-572">方法</span><span class="sxs-lookup"><span data-stu-id="50251-572">Method</span></span>                                                   | <span data-ttu-id="50251-573">説明</span><span class="sxs-lookup"><span data-stu-id="50251-573">Description</span></span>                                               |
 |----------------------------------------------------------|-----------------------------------------------------------|
-| <span data-ttu-id="7f44c-574">public AccessRight fieldAccessRight(FieldName fieldName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-574">public AccessRight fieldAccessRight(FieldName fieldName)</span></span> | <span data-ttu-id="7f44c-575">テーブルのフィールドのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-575">Gets the access rights for the field of the table.</span></span>        |
-| <span data-ttu-id="7f44c-576">public AccessRight tableAccessRight()</span><span class="sxs-lookup"><span data-stu-id="7f44c-576">public AccessRight tableAccessRight()</span></span>                    | <span data-ttu-id="7f44c-577">テーブルのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-577">Gets the access rights for the table.</span></span>                     |
-| <span data-ttu-id="7f44c-578">private void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-578">private void new()</span></span>                                       | <span data-ttu-id="7f44c-579">SecurityTableRights クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-579">Initializes an instance of the SecurityTableRights class.</span></span> |
+| <span data-ttu-id="50251-574">public AccessRight fieldAccessRight(FieldName fieldName)</span><span class="sxs-lookup"><span data-stu-id="50251-574">public AccessRight fieldAccessRight(FieldName fieldName)</span></span> | <span data-ttu-id="50251-575">テーブルのフィールドのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-575">Gets the access rights for the field of the table.</span></span>        |
+| <span data-ttu-id="50251-576">public AccessRight tableAccessRight()</span><span class="sxs-lookup"><span data-stu-id="50251-576">public AccessRight tableAccessRight()</span></span>                    | <span data-ttu-id="50251-577">テーブルのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-577">Gets the access rights for the table.</span></span>                     |
+| <span data-ttu-id="50251-578">private void new()</span><span class="sxs-lookup"><span data-stu-id="50251-578">private void new()</span></span>                                       | <span data-ttu-id="50251-579">SecurityTableRights クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-579">Initializes an instance of the SecurityTableRights class.</span></span> |
 
-### <a name="method-fieldaccessright"></a><span data-ttu-id="7f44c-580">メソッド fieldAccessRight</span><span class="sxs-lookup"><span data-stu-id="7f44c-580">Method fieldAccessRight</span></span>
+### <a name="method-fieldaccessright"></a><span data-ttu-id="50251-580">メソッド fieldAccessRight</span><span class="sxs-lookup"><span data-stu-id="50251-580">Method fieldAccessRight</span></span>
 
-<span data-ttu-id="7f44c-581">テーブルのフィールドのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-581">Gets the access rights for the field of the table.</span></span>
+<span data-ttu-id="50251-581">テーブルのフィールドのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-581">Gets the access rights for the field of the table.</span></span>
 
     public AccessRight fieldAccessRight(FieldName fieldName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-582">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-582">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-582">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-582">Parameters</span></span>
 
-<span data-ttu-id="7f44c-583">fieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-583">fieldName</span></span>  
+<span data-ttu-id="50251-583">fieldName</span><span class="sxs-lookup"><span data-stu-id="50251-583">fieldName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-584">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-584">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-584">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-584">Return Value</span></span>
 
-<span data-ttu-id="7f44c-585">フィールドの AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="7f44c-585">The AccesRight instance for the field.</span></span>
+<span data-ttu-id="50251-585">フィールドの AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="50251-585">The AccesRight instance for the field.</span></span>
 
-### <a name="method-tableaccessright"></a><span data-ttu-id="7f44c-586">メソッド tableAccessRight</span><span class="sxs-lookup"><span data-stu-id="7f44c-586">Method tableAccessRight</span></span>
+### <a name="method-tableaccessright"></a><span data-ttu-id="50251-586">メソッド tableAccessRight</span><span class="sxs-lookup"><span data-stu-id="50251-586">Method tableAccessRight</span></span>
 
-<span data-ttu-id="7f44c-587">テーブルのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-587">Gets the access rights for the table.</span></span>
+<span data-ttu-id="50251-587">テーブルのアクセス権を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-587">Gets the access rights for the table.</span></span>
 
     public AccessRight tableAccessRight()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-588">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-588">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-588">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-588">Return Value</span></span>
 
-<span data-ttu-id="7f44c-589">テーブルの AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="7f44c-589">The AccesRight instance for the table.</span></span>
+<span data-ttu-id="50251-589">テーブルの AccesRight インスタンス。</span><span class="sxs-lookup"><span data-stu-id="50251-589">The AccesRight instance for the table.</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-590">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-590">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-590">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-590">Method new</span></span>
 
-<span data-ttu-id="7f44c-591">SecurityTableRights クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-591">Initializes an instance of the SecurityTableRights class.</span></span>
+<span data-ttu-id="50251-591">SecurityTableRights クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-591">Initializes an instance of the SecurityTableRights class.</span></span>
 
     private void new()
 
-## <a name="class-securityutil"></a><span data-ttu-id="7f44c-592">クラス SecurityUtil</span><span class="sxs-lookup"><span data-stu-id="7f44c-592">Class SecurityUtil</span></span>
+## <a name="class-securityutil"></a><span data-ttu-id="50251-592">クラス SecurityUtil</span><span class="sxs-lookup"><span data-stu-id="50251-592">Class SecurityUtil</span></span>
     class SecurityUtil extends Object
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-593">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-593">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-593">備考</span><span class="sxs-lookup"><span data-stu-id="50251-593">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-594">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-594">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-594">例</span><span class="sxs-lookup"><span data-stu-id="50251-594">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-595">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-595">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-595">方法</span><span class="sxs-lookup"><span data-stu-id="50251-595">Methods</span></span>
 
-| <span data-ttu-id="7f44c-596">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-596">Method</span></span>                                                                                                                 | <span data-ttu-id="7f44c-597">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-597">Description</span></span>                                                                |
+| <span data-ttu-id="50251-596">方法</span><span class="sxs-lookup"><span data-stu-id="50251-596">Method</span></span>                                                                                                                 | <span data-ttu-id="50251-597">説明</span><span class="sxs-lookup"><span data-stu-id="50251-597">Description</span></span>                                                                |
 |------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-598">::public static boolean isImplicitFlushMode()</span><span class="sxs-lookup"><span data-stu-id="7f44c-598">::public static boolean isImplicitFlushMode()</span></span>                                                                          | <span data-ttu-id="7f44c-599">暗黙的なセキュリティ フラッシュ モードがオンであるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-599">Indicates whether implicit security flushing mode is on.</span></span>                   |
-| <span data-ttu-id="7f44c-600">::public static int getRoleEffectiveAccess(Int64 roleID, str secObjectName, int secObjectType, str secObjectChildName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-600">::public static int getRoleEffectiveAccess(Int64 roleID, str secObjectName, int secObjectType, str secObjectChildName)</span></span> | <span data-ttu-id="7f44c-601">セキュリティ保護可能なオブジェクトのロール値の有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-601">Retrieves an effective access for role value of securable object.</span></span>          |
-| <span data-ttu-id="7f44c-602">::public static container getRolePermissions(Int64 roleID)</span><span class="sxs-lookup"><span data-stu-id="7f44c-602">::public static container getRolePermissions(Int64 roleID)</span></span>                                                             | <span data-ttu-id="7f44c-603">セキュリティ保護可能なオブジェクトのコンテナーおよび有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-603">Gets a container of securable objects and their effective access.</span></span>          |
-| <span data-ttu-id="7f44c-604">::public static boolean sysAdminMode(\[boolean active\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-604">::public static boolean sysAdminMode(\[boolean active\])</span></span>                                                               | <span data-ttu-id="7f44c-605">セキュリティ管理者モードを取得および設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-605">Gets and sets the security administrator mode.</span></span>                             |
-| <span data-ttu-id="7f44c-606">::public static void refreshRolePermissions(Int64 roleID)</span><span class="sxs-lookup"><span data-stu-id="7f44c-606">::public static void refreshRolePermissions(Int64 roleID)</span></span>                                                              | <span data-ttu-id="7f44c-607">セキュリティ保護可能なオブジェクトの指定されたロールの有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-607">Retrieves the effective access of a specified role for a securable object.</span></span> |
-| <span data-ttu-id="7f44c-608">::public static void runSecondPassAutoInference()</span><span class="sxs-lookup"><span data-stu-id="7f44c-608">::public static void runSecondPassAutoInference()</span></span>                                                                      | <span data-ttu-id="7f44c-609">2 つ目の合格自動推定が実行されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-609">Runs the second pass auto inference.</span></span>                                       |
-| <span data-ttu-id="7f44c-610">::public static void flushPermissions()</span><span class="sxs-lookup"><span data-stu-id="7f44c-610">::public static void flushPermissions()</span></span>                                                                                | <span data-ttu-id="7f44c-611">アクセス許可をフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-611">Flushes the permissions.</span></span>                                                   |
-| <span data-ttu-id="7f44c-612">public void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-612">public void new()</span></span>                                                                                                      | <span data-ttu-id="7f44c-613">SecurityUtil クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-613">Initializes a new instance of the SecurityUtil class.</span></span>                      |
-| <span data-ttu-id="7f44c-614">::public static void flushAll()</span><span class="sxs-lookup"><span data-stu-id="7f44c-614">::public static void flushAll()</span></span>                                                                                        |                                                                            |
+| <span data-ttu-id="50251-598">::public static boolean isImplicitFlushMode()</span><span class="sxs-lookup"><span data-stu-id="50251-598">::public static boolean isImplicitFlushMode()</span></span>                                                                          | <span data-ttu-id="50251-599">暗黙的なセキュリティ フラッシュ モードがオンであるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="50251-599">Indicates whether implicit security flushing mode is on.</span></span>                   |
+| <span data-ttu-id="50251-600">::public static int getRoleEffectiveAccess(Int64 roleID, str secObjectName, int secObjectType, str secObjectChildName)</span><span class="sxs-lookup"><span data-stu-id="50251-600">::public static int getRoleEffectiveAccess(Int64 roleID, str secObjectName, int secObjectType, str secObjectChildName)</span></span> | <span data-ttu-id="50251-601">セキュリティ保護可能なオブジェクトのロール値の有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-601">Retrieves an effective access for role value of securable object.</span></span>          |
+| <span data-ttu-id="50251-602">::public static container getRolePermissions(Int64 roleID)</span><span class="sxs-lookup"><span data-stu-id="50251-602">::public static container getRolePermissions(Int64 roleID)</span></span>                                                             | <span data-ttu-id="50251-603">セキュリティ保護可能なオブジェクトのコンテナーおよび有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-603">Gets a container of securable objects and their effective access.</span></span>          |
+| <span data-ttu-id="50251-604">::public static boolean sysAdminMode(\[boolean active\])</span><span class="sxs-lookup"><span data-stu-id="50251-604">::public static boolean sysAdminMode(\[boolean active\])</span></span>                                                               | <span data-ttu-id="50251-605">セキュリティ管理者モードを取得および設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-605">Gets and sets the security administrator mode.</span></span>                             |
+| <span data-ttu-id="50251-606">::public static void refreshRolePermissions(Int64 roleID)</span><span class="sxs-lookup"><span data-stu-id="50251-606">::public static void refreshRolePermissions(Int64 roleID)</span></span>                                                              | <span data-ttu-id="50251-607">セキュリティ保護可能なオブジェクトの指定されたロールの有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-607">Retrieves the effective access of a specified role for a securable object.</span></span> |
+| <span data-ttu-id="50251-608">::public static void runSecondPassAutoInference()</span><span class="sxs-lookup"><span data-stu-id="50251-608">::public static void runSecondPassAutoInference()</span></span>                                                                      | <span data-ttu-id="50251-609">2 つ目の合格自動推定が実行されます。</span><span class="sxs-lookup"><span data-stu-id="50251-609">Runs the second pass auto inference.</span></span>                                       |
+| <span data-ttu-id="50251-610">::public static void flushPermissions()</span><span class="sxs-lookup"><span data-stu-id="50251-610">::public static void flushPermissions()</span></span>                                                                                | <span data-ttu-id="50251-611">アクセス許可をフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="50251-611">Flushes the permissions.</span></span>                                                   |
+| <span data-ttu-id="50251-612">public void new()</span><span class="sxs-lookup"><span data-stu-id="50251-612">public void new()</span></span>                                                                                                      | <span data-ttu-id="50251-613">SecurityUtil クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-613">Initializes a new instance of the SecurityUtil class.</span></span>                      |
+| <span data-ttu-id="50251-614">::public static void flushAll()</span><span class="sxs-lookup"><span data-stu-id="50251-614">::public static void flushAll()</span></span>                                                                                        |                                                                            |
 
-### <a name="method-isimplicitflushmode"></a><span data-ttu-id="7f44c-615">メソッド isImplicitFlushMode</span><span class="sxs-lookup"><span data-stu-id="7f44c-615">Method isImplicitFlushMode</span></span>
+### <a name="method-isimplicitflushmode"></a><span data-ttu-id="50251-615">メソッド isImplicitFlushMode</span><span class="sxs-lookup"><span data-stu-id="50251-615">Method isImplicitFlushMode</span></span>
 
-<span data-ttu-id="7f44c-616">暗黙的なセキュリティ フラッシュ モードがオンであるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-616">Indicates whether implicit security flushing mode is on.</span></span>
+<span data-ttu-id="50251-616">暗黙的なセキュリティ フラッシュ モードがオンであるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="50251-616">Indicates whether implicit security flushing mode is on.</span></span>
 
     public static boolean isImplicitFlushMode()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-617">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-617">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-617">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-617">Return Value</span></span>
 
-<span data-ttu-id="7f44c-618">ブール値。</span><span class="sxs-lookup"><span data-stu-id="7f44c-618">A Boolean value.</span></span>
+<span data-ttu-id="50251-618">ブール値。</span><span class="sxs-lookup"><span data-stu-id="50251-618">A Boolean value.</span></span>
 
-### <a name="method-getroleeffectiveaccess"></a><span data-ttu-id="7f44c-619">メソッド getRoleEffectiveAccess</span><span class="sxs-lookup"><span data-stu-id="7f44c-619">Method getRoleEffectiveAccess</span></span>
+### <a name="method-getroleeffectiveaccess"></a><span data-ttu-id="50251-619">メソッド getRoleEffectiveAccess</span><span class="sxs-lookup"><span data-stu-id="50251-619">Method getRoleEffectiveAccess</span></span>
 
-<span data-ttu-id="7f44c-620">セキュリティ保護可能なオブジェクトのロール値の有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-620">Retrieves an effective access for role value of securable object.</span></span>
+<span data-ttu-id="50251-620">セキュリティ保護可能なオブジェクトのロール値の有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-620">Retrieves an effective access for role value of securable object.</span></span>
 
     public static int getRoleEffectiveAccess(Int64 roleID, str secObjectName, int secObjectType, str secObjectChildName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-621">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-621">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-621">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-621">Parameters</span></span>
 
-<span data-ttu-id="7f44c-622">roleID</span><span class="sxs-lookup"><span data-stu-id="7f44c-622">roleID</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-623">secObjectName</span><span class="sxs-lookup"><span data-stu-id="7f44c-623">secObjectName</span></span>  
+<span data-ttu-id="50251-622">roleID</span><span class="sxs-lookup"><span data-stu-id="50251-622">roleID</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-624">secObjectType</span><span class="sxs-lookup"><span data-stu-id="7f44c-624">secObjectType</span></span>  
+<span data-ttu-id="50251-623">secObjectName</span><span class="sxs-lookup"><span data-stu-id="50251-623">secObjectName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-625">secObjectChildName</span><span class="sxs-lookup"><span data-stu-id="7f44c-625">secObjectChildName</span></span>  
+<span data-ttu-id="50251-624">secObjectType</span><span class="sxs-lookup"><span data-stu-id="50251-624">secObjectType</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-626">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-626">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-627">有効なアクセス値。</span><span class="sxs-lookup"><span data-stu-id="7f44c-627">The effective access value.</span></span>
+<span data-ttu-id="50251-625">secObjectChildName</span><span class="sxs-lookup"><span data-stu-id="50251-625">secObjectChildName</span></span>  
 
-### <a name="method-getrolepermissions"></a><span data-ttu-id="7f44c-628">メソッド getRolePermissions</span><span class="sxs-lookup"><span data-stu-id="7f44c-628">Method getRolePermissions</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-626">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-626">Return Value</span></span>
 
-<span data-ttu-id="7f44c-629">セキュリティ保護可能なオブジェクトのコンテナーおよび有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-629">Gets a container of securable objects and their effective access.</span></span>
+<span data-ttu-id="50251-627">有効なアクセス値。</span><span class="sxs-lookup"><span data-stu-id="50251-627">The effective access value.</span></span>
+
+### <a name="method-getrolepermissions"></a><span data-ttu-id="50251-628">メソッド getRolePermissions</span><span class="sxs-lookup"><span data-stu-id="50251-628">Method getRolePermissions</span></span>
+
+<span data-ttu-id="50251-629">セキュリティ保護可能なオブジェクトのコンテナーおよび有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-629">Gets a container of securable objects and their effective access.</span></span>
 
     public static container getRolePermissions(Int64 roleID)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-630">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-630">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-630">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-630">Parameters</span></span>
 
-<span data-ttu-id="7f44c-631">roleID</span><span class="sxs-lookup"><span data-stu-id="7f44c-631">roleID</span></span>  
-<span data-ttu-id="7f44c-632">ロール ID。</span><span class="sxs-lookup"><span data-stu-id="7f44c-632">The role ID.</span></span>
+<span data-ttu-id="50251-631">roleID</span><span class="sxs-lookup"><span data-stu-id="50251-631">roleID</span></span>  
+<span data-ttu-id="50251-632">ロール ID。</span><span class="sxs-lookup"><span data-stu-id="50251-632">The role ID.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-633">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-633">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-633">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-633">Return Value</span></span>
 
-<span data-ttu-id="7f44c-634">セキュリティ保護可能なオブジェクトのコンテナーと、有効なアクセスです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-634">A container of securable objects and their effective access.</span></span>
+<span data-ttu-id="50251-634">セキュリティ保護可能なオブジェクトのコンテナーと、有効なアクセスです。</span><span class="sxs-lookup"><span data-stu-id="50251-634">A container of securable objects and their effective access.</span></span>
 
-### <a name="method-sysadminmode"></a><span data-ttu-id="7f44c-635">メソッド sysAdminMode</span><span class="sxs-lookup"><span data-stu-id="7f44c-635">Method sysAdminMode</span></span>
+### <a name="method-sysadminmode"></a><span data-ttu-id="50251-635">メソッド sysAdminMode</span><span class="sxs-lookup"><span data-stu-id="50251-635">Method sysAdminMode</span></span>
 
-<span data-ttu-id="7f44c-636">セキュリティ管理者モードを取得および設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-636">Gets and sets the security administrator mode.</span></span>
+<span data-ttu-id="50251-636">セキュリティ管理者モードを取得および設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-636">Gets and sets the security administrator mode.</span></span>
 
     public static boolean sysAdminMode([boolean active])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-637">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-637">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-637">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-637">Parameters</span></span>
 
-<span data-ttu-id="7f44c-638">有効</span><span class="sxs-lookup"><span data-stu-id="7f44c-638">active</span></span>  
-<span data-ttu-id="7f44c-639">ブール値。</span><span class="sxs-lookup"><span data-stu-id="7f44c-639">A Boolean value.</span></span>
+<span data-ttu-id="50251-638">有効</span><span class="sxs-lookup"><span data-stu-id="50251-638">active</span></span>  
+<span data-ttu-id="50251-639">ブール値。</span><span class="sxs-lookup"><span data-stu-id="50251-639">A Boolean value.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-640">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-640">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-640">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-640">Return Value</span></span>
 
-<span data-ttu-id="7f44c-641">セキュリティ管理者モードの古い状態。</span><span class="sxs-lookup"><span data-stu-id="7f44c-641">The old state of the security administrator mode.</span></span>
+<span data-ttu-id="50251-641">セキュリティ管理者モードの古い状態。</span><span class="sxs-lookup"><span data-stu-id="50251-641">The old state of the security administrator mode.</span></span>
 
-### <a name="method-refreshrolepermissions"></a><span data-ttu-id="7f44c-642">メソッド refreshRolePermissions</span><span class="sxs-lookup"><span data-stu-id="7f44c-642">Method refreshRolePermissions</span></span>
+### <a name="method-refreshrolepermissions"></a><span data-ttu-id="50251-642">メソッド refreshRolePermissions</span><span class="sxs-lookup"><span data-stu-id="50251-642">Method refreshRolePermissions</span></span>
 
-<span data-ttu-id="7f44c-643">セキュリティ保護可能なオブジェクトの指定されたロールの有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-643">Retrieves the effective access of a specified role for a securable object.</span></span>
+<span data-ttu-id="50251-643">セキュリティ保護可能なオブジェクトの指定されたロールの有効なアクセスを取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-643">Retrieves the effective access of a specified role for a securable object.</span></span>
 
     public static void refreshRolePermissions(Int64 roleID)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-644">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-644">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-644">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-644">Parameters</span></span>
 
-<span data-ttu-id="7f44c-645">roleID</span><span class="sxs-lookup"><span data-stu-id="7f44c-645">roleID</span></span>  
+<span data-ttu-id="50251-645">roleID</span><span class="sxs-lookup"><span data-stu-id="50251-645">roleID</span></span>  
 
-### <a name="method-runsecondpassautoinference"></a><span data-ttu-id="7f44c-646">メソッド runSecondPassAutoInference</span><span class="sxs-lookup"><span data-stu-id="7f44c-646">Method runSecondPassAutoInference</span></span>
+### <a name="method-runsecondpassautoinference"></a><span data-ttu-id="50251-646">メソッド runSecondPassAutoInference</span><span class="sxs-lookup"><span data-stu-id="50251-646">Method runSecondPassAutoInference</span></span>
 
-<span data-ttu-id="7f44c-647">2 つ目の合格自動推定が実行されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-647">Runs the second pass auto inference.</span></span>
+<span data-ttu-id="50251-647">2 つ目の合格自動推定が実行されます。</span><span class="sxs-lookup"><span data-stu-id="50251-647">Runs the second pass auto inference.</span></span>
 
     public static void runSecondPassAutoInference()
 
-### <a name="method-flushpermissions"></a><span data-ttu-id="7f44c-648">メソッド flushPermissions</span><span class="sxs-lookup"><span data-stu-id="7f44c-648">Method flushPermissions</span></span>
+### <a name="method-flushpermissions"></a><span data-ttu-id="50251-648">メソッド flushPermissions</span><span class="sxs-lookup"><span data-stu-id="50251-648">Method flushPermissions</span></span>
 
-<span data-ttu-id="7f44c-649">アクセス許可をフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-649">Flushes the permissions.</span></span>
+<span data-ttu-id="50251-649">アクセス許可をフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="50251-649">Flushes the permissions.</span></span>
 
     public static void flushPermissions()
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-650">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-650">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-650">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-650">Method new</span></span>
 
-<span data-ttu-id="7f44c-651">SecurityUtil クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-651">Initializes a new instance of the SecurityUtil class.</span></span>
+<span data-ttu-id="50251-651">SecurityUtil クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-651">Initializes a new instance of the SecurityUtil class.</span></span>
 
     public void new()
 
-### <a name="method-flushall"></a><span data-ttu-id="7f44c-652">メソッド flushAll</span><span class="sxs-lookup"><span data-stu-id="7f44c-652">Method flushAll</span></span>
+### <a name="method-flushall"></a><span data-ttu-id="50251-652">メソッド flushAll</span><span class="sxs-lookup"><span data-stu-id="50251-652">Method flushAll</span></span>
 
     public static void flushAll()
 
-## <a name="class-segmententeredeventargs"></a><span data-ttu-id="7f44c-653">クラス SegmentEnteredEventArgs</span><span class="sxs-lookup"><span data-stu-id="7f44c-653">Class SegmentEnteredEventArgs</span></span>
+## <a name="class-segmententeredeventargs"></a><span data-ttu-id="50251-653">クラス SegmentEnteredEventArgs</span><span class="sxs-lookup"><span data-stu-id="50251-653">Class SegmentEnteredEventArgs</span></span>
     class SegmentEnteredEventArgs extends Object
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-654">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-654">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-654">備考</span><span class="sxs-lookup"><span data-stu-id="50251-654">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-655">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-655">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-655">例</span><span class="sxs-lookup"><span data-stu-id="50251-655">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-656">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-656">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-656">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-656">Methods</span></span>
 
-| <span data-ttu-id="7f44c-657">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-657">Method</span></span>                                                   | <span data-ttu-id="7f44c-658">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-658">Description</span></span> |
+| <span data-ttu-id="50251-657">方法</span><span class="sxs-lookup"><span data-stu-id="50251-657">Method</span></span>                                                   | <span data-ttu-id="50251-658">説明</span><span class="sxs-lookup"><span data-stu-id="50251-658">Description</span></span> |
 |----------------------------------------------------------|-------------|
-| <span data-ttu-id="7f44c-659">public boolean isAllValuesEnabled(\[boolean enabled\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-659">public boolean isAllValuesEnabled(\[boolean enabled\])</span></span>   |             |
-| <span data-ttu-id="7f44c-660">public boolean isMRUEnabled(\[boolean enabled\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-660">public boolean isMRUEnabled(\[boolean enabled\])</span></span>         |             |
-| <span data-ttu-id="7f44c-661">public boolean isValidValuesEnabled(\[boolean enabled\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-661">public boolean isValidValuesEnabled(\[boolean enabled\])</span></span> |             |
+| <span data-ttu-id="50251-659">public boolean isAllValuesEnabled(\[boolean enabled\])</span><span class="sxs-lookup"><span data-stu-id="50251-659">public boolean isAllValuesEnabled(\[boolean enabled\])</span></span>   |             |
+| <span data-ttu-id="50251-660">public boolean isMRUEnabled(\[boolean enabled\])</span><span class="sxs-lookup"><span data-stu-id="50251-660">public boolean isMRUEnabled(\[boolean enabled\])</span></span>         |             |
+| <span data-ttu-id="50251-661">public boolean isValidValuesEnabled(\[boolean enabled\])</span><span class="sxs-lookup"><span data-stu-id="50251-661">public boolean isValidValuesEnabled(\[boolean enabled\])</span></span> |             |
 
-### <a name="method-isallvaluesenabled"></a><span data-ttu-id="7f44c-662">メソッド isAllValuesEnabled</span><span class="sxs-lookup"><span data-stu-id="7f44c-662">Method isAllValuesEnabled</span></span>
+### <a name="method-isallvaluesenabled"></a><span data-ttu-id="50251-662">メソッド isAllValuesEnabled</span><span class="sxs-lookup"><span data-stu-id="50251-662">Method isAllValuesEnabled</span></span>
 
     public boolean isAllValuesEnabled([boolean enabled])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-663">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-663">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-663">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-663">Parameters</span></span>
 
-<span data-ttu-id="7f44c-664">有効</span><span class="sxs-lookup"><span data-stu-id="7f44c-664">enabled</span></span>  
+<span data-ttu-id="50251-664">有効</span><span class="sxs-lookup"><span data-stu-id="50251-664">enabled</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-665">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-665">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-665">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-665">Return Value</span></span>
 
-### <a name="method-ismruenabled"></a><span data-ttu-id="7f44c-666">メソッド isMRUEnabled</span><span class="sxs-lookup"><span data-stu-id="7f44c-666">Method isMRUEnabled</span></span>
+### <a name="method-ismruenabled"></a><span data-ttu-id="50251-666">メソッド isMRUEnabled</span><span class="sxs-lookup"><span data-stu-id="50251-666">Method isMRUEnabled</span></span>
 
     public boolean isMRUEnabled([boolean enabled])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-667">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-667">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-667">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-667">Parameters</span></span>
 
-<span data-ttu-id="7f44c-668">有効</span><span class="sxs-lookup"><span data-stu-id="7f44c-668">enabled</span></span>  
+<span data-ttu-id="50251-668">有効</span><span class="sxs-lookup"><span data-stu-id="50251-668">enabled</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-669">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-669">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-669">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-669">Return Value</span></span>
 
-### <a name="method-isvalidvaluesenabled"></a><span data-ttu-id="7f44c-670">メソッド isValidValuesEnabled</span><span class="sxs-lookup"><span data-stu-id="7f44c-670">Method isValidValuesEnabled</span></span>
+### <a name="method-isvalidvaluesenabled"></a><span data-ttu-id="50251-670">メソッド isValidValuesEnabled</span><span class="sxs-lookup"><span data-stu-id="50251-670">Method isValidValuesEnabled</span></span>
 
     public boolean isValidValuesEnabled([boolean enabled])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-671">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-671">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-671">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-671">Parameters</span></span>
 
-<span data-ttu-id="7f44c-672">有効</span><span class="sxs-lookup"><span data-stu-id="7f44c-672">enabled</span></span>  
+<span data-ttu-id="50251-672">有効</span><span class="sxs-lookup"><span data-stu-id="50251-672">enabled</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-673">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-673">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-673">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-673">Return Value</span></span>
 
-## <a name="class-segmentvaluechangedeventargs"></a><span data-ttu-id="7f44c-674">クラス SegmentValueChangedEventArgs</span><span class="sxs-lookup"><span data-stu-id="7f44c-674">Class SegmentValueChangedEventArgs</span></span>
+## <a name="class-segmentvaluechangedeventargs"></a><span data-ttu-id="50251-674">クラス SegmentValueChangedEventArgs</span><span class="sxs-lookup"><span data-stu-id="50251-674">Class SegmentValueChangedEventArgs</span></span>
     class SegmentValueChangedEventArgs extends Object
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-675">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-675">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-675">備考</span><span class="sxs-lookup"><span data-stu-id="50251-675">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-676">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-676">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-676">例</span><span class="sxs-lookup"><span data-stu-id="50251-676">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-677">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-677">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-677">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-677">Methods</span></span>
 
-| <span data-ttu-id="7f44c-678">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-678">Method</span></span>                       | <span data-ttu-id="7f44c-679">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-679">Description</span></span> |
+| <span data-ttu-id="50251-678">方法</span><span class="sxs-lookup"><span data-stu-id="50251-678">Method</span></span>                       | <span data-ttu-id="50251-679">説明</span><span class="sxs-lookup"><span data-stu-id="50251-679">Description</span></span> |
 |------------------------------|-------------|
-| <span data-ttu-id="7f44c-680">public FormSegment segment()</span><span class="sxs-lookup"><span data-stu-id="7f44c-680">public FormSegment segment()</span></span> |             |
-| <span data-ttu-id="7f44c-681">public AnyType selectedTag()</span><span class="sxs-lookup"><span data-stu-id="7f44c-681">public AnyType selectedTag()</span></span> |             |
+| <span data-ttu-id="50251-680">public FormSegment segment()</span><span class="sxs-lookup"><span data-stu-id="50251-680">public FormSegment segment()</span></span> |             |
+| <span data-ttu-id="50251-681">public AnyType selectedTag()</span><span class="sxs-lookup"><span data-stu-id="50251-681">public AnyType selectedTag()</span></span> |             |
 
-### <a name="method-segment"></a><span data-ttu-id="7f44c-682">メソッド segment</span><span class="sxs-lookup"><span data-stu-id="7f44c-682">Method segment</span></span>
+### <a name="method-segment"></a><span data-ttu-id="50251-682">メソッド segment</span><span class="sxs-lookup"><span data-stu-id="50251-682">Method segment</span></span>
 
     public FormSegment segment()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-683">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-683">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-683">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-683">Return Value</span></span>
 
-### <a name="method-selectedtag"></a><span data-ttu-id="7f44c-684">メソッド selectedTag</span><span class="sxs-lookup"><span data-stu-id="7f44c-684">Method selectedTag</span></span>
+### <a name="method-selectedtag"></a><span data-ttu-id="50251-684">メソッド selectedTag</span><span class="sxs-lookup"><span data-stu-id="50251-684">Method selectedTag</span></span>
 
     public AnyType selectedTag()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-685">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-685">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-685">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-685">Return Value</span></span>
 
-## <a name="class-sequence"></a><span data-ttu-id="7f44c-686">クラスの順序</span><span class="sxs-lookup"><span data-stu-id="7f44c-686">Class Sequence</span></span>
+## <a name="class-sequence"></a><span data-ttu-id="50251-686">クラスの順序</span><span class="sxs-lookup"><span data-stu-id="50251-686">Class Sequence</span></span>
     class Sequence extends Object
 
-<span data-ttu-id="7f44c-687">Sequence クラスを使用すると、通常は何らかの順序または伝票番号の生成のために、主要なトランザクション スコープ外でトランザクションを実行できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-687">The Sequence class lets you perform transactions outside the main transaction scope, typically for some kind of sequence, or voucher number generation.</span></span>
+<span data-ttu-id="50251-687">Sequence クラスを使用すると、通常は何らかの順序または伝票番号の生成のために、主要なトランザクション スコープ外でトランザクションを実行できます。</span><span class="sxs-lookup"><span data-stu-id="50251-687">The Sequence class lets you perform transactions outside the main transaction scope, typically for some kind of sequence, or voucher number generation.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-688">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-688">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-688">備考</span><span class="sxs-lookup"><span data-stu-id="50251-688">Remarks</span></span>
 
-<span data-ttu-id="7f44c-689">接続には、メインユーザー接続、補助システム接続、ユーザー接続の 3 種類があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-689">There are three kinds of connections: The main user connection, an auxiliary system connection, and user connections.</span></span> <span data-ttu-id="7f44c-690">最初のものはアプリケーション ロジック用に使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-690">The first is used for the application logic.</span></span> <span data-ttu-id="7f44c-691">2 番目は、内部シーケンス番号の生成 (特に組み込みフィールド RecId) に使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-691">The second is used for internal sequence number generation (specifically the built-in field RecId).</span></span> <span data-ttu-id="7f44c-692">3 番目はアプリケーションが別々の接続を維持するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-692">The third is used for the application maintained separate connections.</span></span> <span data-ttu-id="7f44c-693">このクラスは、番号生成のための補助システム接続へのインターフェイスを提供します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-693">This class provides an interface to the auxiliary system connection for number generation.</span></span> <span data-ttu-id="7f44c-694">ただし、これはアプリケーションの使用するメソッドまたは柔軟性、さらにカーネルの順序番号の生成で同時実行の問題を回避するため、UserConnection クラスを使用する方がより良いソリューションになる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-694">However, it may be a better solution to use the UserConnection class, as this is the method the application uses or flexibility, and to avoid concurrency problems with the kernel's sequence number generation.</span></span>
+<span data-ttu-id="50251-689">接続には、メインユーザー接続、補助システム接続、ユーザー接続の 3 種類があります。</span><span class="sxs-lookup"><span data-stu-id="50251-689">There are three kinds of connections: The main user connection, an auxiliary system connection, and user connections.</span></span> <span data-ttu-id="50251-690">最初のものはアプリケーション ロジック用に使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-690">The first is used for the application logic.</span></span> <span data-ttu-id="50251-691">2 番目は、内部シーケンス番号の生成 (特に組み込みフィールド RecId) に使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-691">The second is used for internal sequence number generation (specifically the built-in field RecId).</span></span> <span data-ttu-id="50251-692">3 番目はアプリケーションが別々の接続を維持するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-692">The third is used for the application maintained separate connections.</span></span> <span data-ttu-id="50251-693">このクラスは、番号生成のための補助システム接続へのインターフェイスを提供します。</span><span class="sxs-lookup"><span data-stu-id="50251-693">This class provides an interface to the auxiliary system connection for number generation.</span></span> <span data-ttu-id="50251-694">ただし、これはアプリケーションの使用するメソッドまたは柔軟性、さらにカーネルの順序番号の生成で同時実行の問題を回避するため、UserConnection クラスを使用する方がより良いソリューションになる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="50251-694">However, it may be a better solution to use the UserConnection class, as this is the method the application uses or flexibility, and to avoid concurrency problems with the kernel's sequence number generation.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-695">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-695">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-695">例</span><span class="sxs-lookup"><span data-stu-id="50251-695">Examples</span></span>
 
     static void example() 
     { 
@@ -1350,96 +1350,96 @@ ms.locfileid: "1544189"
         print S.nextval(1,"MMM");      // 101 in subkey "MMM" 
     }
 
-### <a name="methods"></a><span data-ttu-id="7f44c-696">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-696">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-696">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-696">Methods</span></span>
 
-| <span data-ttu-id="7f44c-697">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-697">Method</span></span>                                                                                                        | <span data-ttu-id="7f44c-698">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-698">Description</span></span>                                                                                 |
+| <span data-ttu-id="50251-697">方法</span><span class="sxs-lookup"><span data-stu-id="50251-697">Method</span></span>                                                                                                        | <span data-ttu-id="50251-698">説明</span><span class="sxs-lookup"><span data-stu-id="50251-698">Description</span></span>                                                                                 |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-699">public Int64 currval(\[str Subkey1\], \[int Subkey2\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-699">public Int64 currval(\[str Subkey1\], \[int Subkey2\])</span></span>                                                        | <span data-ttu-id="7f44c-700">カウンター値の増加なしで、シーケンスから現在の順序番号を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-700">Gets the current sequence number from the sequence, without incrementing the counter value.</span></span> |
-| <span data-ttu-id="7f44c-701">public Int64 nextval(Int64 Increment, \[str Subkey1\], \[int Subkey2\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-701">public Int64 nextval(Int64 Increment, \[str Subkey1\], \[int Subkey2\])</span></span>                                       | <span data-ttu-id="7f44c-702">シーケンスから次の順序番号を返し、カウンター値を増分します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-702">Returns the next sequence number from the sequence and then increments the counter value.</span></span>   |
-| <span data-ttu-id="7f44c-703">public void new(str Name, int Id, Int64 InitialValue, Int64 MaxValue, \[boolean Cycle\], \[Int64 CacheSize\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-703">public void new(str Name, int Id, Int64 InitialValue, Int64 MaxValue, \[boolean Cycle\], \[Int64 CacheSize\])</span></span> | <span data-ttu-id="7f44c-704">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-704">Initializes a new instance of the Object class.</span></span>                                             |
+| <span data-ttu-id="50251-699">public Int64 currval(\[str Subkey1\], \[int Subkey2\])</span><span class="sxs-lookup"><span data-stu-id="50251-699">public Int64 currval(\[str Subkey1\], \[int Subkey2\])</span></span>                                                        | <span data-ttu-id="50251-700">カウンター値の増加なしで、シーケンスから現在の順序番号を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-700">Gets the current sequence number from the sequence, without incrementing the counter value.</span></span> |
+| <span data-ttu-id="50251-701">public Int64 nextval(Int64 Increment, \[str Subkey1\], \[int Subkey2\])</span><span class="sxs-lookup"><span data-stu-id="50251-701">public Int64 nextval(Int64 Increment, \[str Subkey1\], \[int Subkey2\])</span></span>                                       | <span data-ttu-id="50251-702">シーケンスから次の順序番号を返し、カウンター値を増分します。</span><span class="sxs-lookup"><span data-stu-id="50251-702">Returns the next sequence number from the sequence and then increments the counter value.</span></span>   |
+| <span data-ttu-id="50251-703">public void new(str Name, int Id, Int64 InitialValue, Int64 MaxValue, \[boolean Cycle\], \[Int64 CacheSize\])</span><span class="sxs-lookup"><span data-stu-id="50251-703">public void new(str Name, int Id, Int64 InitialValue, Int64 MaxValue, \[boolean Cycle\], \[Int64 CacheSize\])</span></span> | <span data-ttu-id="50251-704">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-704">Initializes a new instance of the Object class.</span></span>                                             |
 
-### <a name="method-currval"></a><span data-ttu-id="7f44c-705">メソッド currval</span><span class="sxs-lookup"><span data-stu-id="7f44c-705">Method currval</span></span>
+### <a name="method-currval"></a><span data-ttu-id="50251-705">メソッド currval</span><span class="sxs-lookup"><span data-stu-id="50251-705">Method currval</span></span>
 
-<span data-ttu-id="7f44c-706">カウンター値の増加なしで、シーケンスから現在の順序番号を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-706">Gets the current sequence number from the sequence, without incrementing the counter value.</span></span>
+<span data-ttu-id="50251-706">カウンター値の増加なしで、シーケンスから現在の順序番号を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-706">Gets the current sequence number from the sequence, without incrementing the counter value.</span></span>
 
     public Int64 currval([str Subkey1], [int Subkey2])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-707">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-707">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-707">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-707">Parameters</span></span>
 
-<span data-ttu-id="7f44c-708">Subkey1</span><span class="sxs-lookup"><span data-stu-id="7f44c-708">Subkey1</span></span>  
+<span data-ttu-id="50251-708">Subkey1</span><span class="sxs-lookup"><span data-stu-id="50251-708">Subkey1</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-709">Subkey2</span><span class="sxs-lookup"><span data-stu-id="7f44c-709">Subkey2</span></span>  
+<span data-ttu-id="50251-709">Subkey2</span><span class="sxs-lookup"><span data-stu-id="50251-709">Subkey2</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-710">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-710">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-710">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-710">Return Value</span></span>
 
-<span data-ttu-id="7f44c-711">シーケンスの現在のシーケンス番号。</span><span class="sxs-lookup"><span data-stu-id="7f44c-711">The current sequence number from the sequence.</span></span>
+<span data-ttu-id="50251-711">シーケンスの現在のシーケンス番号。</span><span class="sxs-lookup"><span data-stu-id="50251-711">The current sequence number from the sequence.</span></span>
 
-### <a name="method-nextval"></a><span data-ttu-id="7f44c-712">メソッド nextval</span><span class="sxs-lookup"><span data-stu-id="7f44c-712">Method nextval</span></span>
+### <a name="method-nextval"></a><span data-ttu-id="50251-712">メソッド nextval</span><span class="sxs-lookup"><span data-stu-id="50251-712">Method nextval</span></span>
 
-<span data-ttu-id="7f44c-713">シーケンスから次の順序番号を返し、カウンター値を増分します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-713">Returns the next sequence number from the sequence and then increments the counter value.</span></span>
+<span data-ttu-id="50251-713">シーケンスから次の順序番号を返し、カウンター値を増分します。</span><span class="sxs-lookup"><span data-stu-id="50251-713">Returns the next sequence number from the sequence and then increments the counter value.</span></span>
 
     public Int64 nextval(Int64 Increment, [str Subkey1], [int Subkey2])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-714">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-714">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-714">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-714">Parameters</span></span>
 
-<span data-ttu-id="7f44c-715">増分</span><span class="sxs-lookup"><span data-stu-id="7f44c-715">Increment</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-716">Subkey1</span><span class="sxs-lookup"><span data-stu-id="7f44c-716">Subkey1</span></span>  
+<span data-ttu-id="50251-715">増分</span><span class="sxs-lookup"><span data-stu-id="50251-715">Increment</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-717">Subkey2</span><span class="sxs-lookup"><span data-stu-id="7f44c-717">Subkey2</span></span>  
+<span data-ttu-id="50251-716">Subkey1</span><span class="sxs-lookup"><span data-stu-id="50251-716">Subkey1</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-718">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-718">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-719">利用可能な次の順序番号。</span><span class="sxs-lookup"><span data-stu-id="7f44c-719">The next sequence number available.</span></span>
+<span data-ttu-id="50251-717">Subkey2</span><span class="sxs-lookup"><span data-stu-id="50251-717">Subkey2</span></span>  
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-720">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-720">Method new</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-718">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-718">Return Value</span></span>
 
-<span data-ttu-id="7f44c-721">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-721">Initializes a new instance of the Object class.</span></span>
+<span data-ttu-id="50251-719">利用可能な次の順序番号。</span><span class="sxs-lookup"><span data-stu-id="50251-719">The next sequence number available.</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="50251-720">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-720">Method new</span></span>
+
+<span data-ttu-id="50251-721">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-721">Initializes a new instance of the Object class.</span></span>
 
     public void new(str Name, int Id, Int64 InitialValue, Int64 MaxValue, [boolean Cycle], [Int64 CacheSize])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-722">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-722">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-722">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-722">Parameters</span></span>
 
-<span data-ttu-id="7f44c-723">氏名</span><span class="sxs-lookup"><span data-stu-id="7f44c-723">Name</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-724">ID</span><span class="sxs-lookup"><span data-stu-id="7f44c-724">Id</span></span>  
+<span data-ttu-id="50251-723">氏名</span><span class="sxs-lookup"><span data-stu-id="50251-723">Name</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-725">InitialValue</span><span class="sxs-lookup"><span data-stu-id="7f44c-725">InitialValue</span></span>  
+<span data-ttu-id="50251-724">ID</span><span class="sxs-lookup"><span data-stu-id="50251-724">Id</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-726">MaxValue</span><span class="sxs-lookup"><span data-stu-id="7f44c-726">MaxValue</span></span>  
+<span data-ttu-id="50251-725">InitialValue</span><span class="sxs-lookup"><span data-stu-id="50251-725">InitialValue</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-727">サイクル</span><span class="sxs-lookup"><span data-stu-id="7f44c-727">Cycle</span></span>  
+<span data-ttu-id="50251-726">MaxValue</span><span class="sxs-lookup"><span data-stu-id="50251-726">MaxValue</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-728">CacheSize</span><span class="sxs-lookup"><span data-stu-id="7f44c-728">CacheSize</span></span>  
+<span data-ttu-id="50251-727">サイクル</span><span class="sxs-lookup"><span data-stu-id="50251-727">Cycle</span></span>  
 
-## <a name="class-set"></a><span data-ttu-id="7f44c-729">クラスのセット</span><span class="sxs-lookup"><span data-stu-id="7f44c-729">Class Set</span></span>
+<!-- -->
+
+<span data-ttu-id="50251-728">CacheSize</span><span class="sxs-lookup"><span data-stu-id="50251-728">CacheSize</span></span>  
+
+## <a name="class-set"></a><span data-ttu-id="50251-729">クラスのセット</span><span class="sxs-lookup"><span data-stu-id="50251-729">Class Set</span></span>
     class Set extends Object
 
-<span data-ttu-id="7f44c-730">Set クラスは、格納されている要素の値が固有であり、自動的に並べ替えられるデータに応じたキー値として機能するコレクションからデータを格納して取得ために使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-730">The Set class is used for the storage and retrieval of data from a collection in which the values of the elements contained are unique and serve as the key values according to which the data is automatically ordered.</span></span>
+<span data-ttu-id="50251-730">Set クラスは、格納されている要素の値が固有であり、自動的に並べ替えられるデータに応じたキー値として機能するコレクションからデータを格納して取得ために使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-730">The Set class is used for the storage and retrieval of data from a collection in which the values of the elements contained are unique and serve as the key values according to which the data is automatically ordered.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-731">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-731">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-731">備考</span><span class="sxs-lookup"><span data-stu-id="50251-731">Remarks</span></span>
 
-<span data-ttu-id="7f44c-732">値は任意の X++ 型にできます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-732">The values may be of any X++ type.</span></span> <span data-ttu-id="7f44c-733">セット内のすべての値には同じタイプが必要です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-733">All values in the set must have the same type.</span></span> <span data-ttu-id="7f44c-734">セットにすでに保存されている値が追加されると、その値は無視され、セット内の要素の数を増加させません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-734">When a value that is already stored in the set is added, it is ignored and does not increase the number of elements in the set.</span></span> <span data-ttu-id="7f44c-735">セットに格納された値は、SetEnumerator 型のオブジェクトを使用してスキャンできます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-735">The values stored in the set can be traversed by using objects of type SetEnumerator.</span></span> <span data-ttu-id="7f44c-736">セットのコンテンツは、要素の効率的な検索を容易にする方法で格納されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-736">The contents of a set are stored in a way that facilitates efficient look up of the elements.</span></span>
+<span data-ttu-id="50251-732">値は任意の X++ 型にできます。</span><span class="sxs-lookup"><span data-stu-id="50251-732">The values may be of any X++ type.</span></span> <span data-ttu-id="50251-733">セット内のすべての値には同じタイプが必要です。</span><span class="sxs-lookup"><span data-stu-id="50251-733">All values in the set must have the same type.</span></span> <span data-ttu-id="50251-734">セットにすでに保存されている値が追加されると、その値は無視され、セット内の要素の数を増加させません。</span><span class="sxs-lookup"><span data-stu-id="50251-734">When a value that is already stored in the set is added, it is ignored and does not increase the number of elements in the set.</span></span> <span data-ttu-id="50251-735">セットに格納された値は、SetEnumerator 型のオブジェクトを使用してスキャンできます。</span><span class="sxs-lookup"><span data-stu-id="50251-735">The values stored in the set can be traversed by using objects of type SetEnumerator.</span></span> <span data-ttu-id="50251-736">セットのコンテンツは、要素の効率的な検索を容易にする方法で格納されます。</span><span class="sxs-lookup"><span data-stu-id="50251-736">The contents of a set are stored in a way that facilitates efficient look up of the elements.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-737">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-737">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-737">例</span><span class="sxs-lookup"><span data-stu-id="50251-737">Examples</span></span>
 
-<span data-ttu-id="7f44c-738">次の例では、noConfigs セットのいずれかの値が 2 番目のセットの yesConfigs セットに含まれているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-738">The following example checks whether any of the values in one set, the noConfigs set, are found in a second set, the yesConfigs set.</span></span> <span data-ttu-id="7f44c-739">見つかった場合は、yesConfigs セットから削除されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-739">If they are, they are removed from the yesConfigs set.</span></span>
+<span data-ttu-id="50251-738">次の例では、noConfigs セットのいずれかの値が 2 番目のセットの yesConfigs セットに含まれているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="50251-738">The following example checks whether any of the values in one set, the noConfigs set, are found in a second set, the yesConfigs set.</span></span> <span data-ttu-id="50251-739">見つかった場合は、yesConfigs セットから削除されます。</span><span class="sxs-lookup"><span data-stu-id="50251-739">If they are, they are removed from the yesConfigs set.</span></span>
 
     Set             noConfigs; 
     Set             yesConfigs; 
@@ -1456,51 +1456,51 @@ ms.locfileid: "1544189"
         } 
     }
 
-### <a name="methods"></a><span data-ttu-id="7f44c-740">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-740">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-740">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-740">Methods</span></span>
 
-| <span data-ttu-id="7f44c-741">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-741">Method</span></span>                                               | <span data-ttu-id="7f44c-742">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-742">Description</span></span>                                                                                                                       |
+| <span data-ttu-id="50251-741">方法</span><span class="sxs-lookup"><span data-stu-id="50251-741">Method</span></span>                                               | <span data-ttu-id="50251-742">説明</span><span class="sxs-lookup"><span data-stu-id="50251-742">Description</span></span>                                                                                                                       |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-743">public boolean add(AnyType arg)</span><span class="sxs-lookup"><span data-stu-id="7f44c-743">public boolean add(AnyType arg)</span></span>                      | <span data-ttu-id="7f44c-744">セットに要素を追加します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-744">Adds an element to the set.</span></span>                                                                                                       |
-| <span data-ttu-id="7f44c-745">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="7f44c-745">public str definitionString()</span></span>                        | <span data-ttu-id="7f44c-746">セット内のすべての要素のタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-746">Returns a description of the type of the elements in the set.</span></span>                                                                     |
-| <span data-ttu-id="7f44c-747">public int elements()</span><span class="sxs-lookup"><span data-stu-id="7f44c-747">public int elements()</span></span>                                | <span data-ttu-id="7f44c-748">セット内の要素の数を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-748">Returns the number of elements in the set.</span></span>                                                                                        |
-| <span data-ttu-id="7f44c-749">public boolean empty()</span><span class="sxs-lookup"><span data-stu-id="7f44c-749">public boolean empty()</span></span>                               | <span data-ttu-id="7f44c-750">セットが空であるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-750">Determines whether the set is empty.</span></span>                                                                                              |
-| <span data-ttu-id="7f44c-751">public boolean equal(Set set)</span><span class="sxs-lookup"><span data-stu-id="7f44c-751">public boolean equal(Set set)</span></span>                        | <span data-ttu-id="7f44c-752">セットが現在のセットと同一かどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-752">Determines whether a set is identical to the current set.</span></span>                                                                         |
-| <span data-ttu-id="7f44c-753">public SetEnumerator getEnumerator()</span><span class="sxs-lookup"><span data-stu-id="7f44c-753">public SetEnumerator getEnumerator()</span></span>                 | <span data-ttu-id="7f44c-754">セット内のスキャンを可能にする、セットの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-754">Creates an enumerator for a set, which allows you to traverse the set.</span></span>                                                            |
-| <span data-ttu-id="7f44c-755">public boolean in(AnyType arg)</span><span class="sxs-lookup"><span data-stu-id="7f44c-755">public boolean in(AnyType arg)</span></span>                       | <span data-ttu-id="7f44c-756">指定された要素がセットのメンバーであるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-756">Determines whether a specified element is a member of the set.</span></span>                                                                    |
-| <span data-ttu-id="7f44c-757">public container pack()</span><span class="sxs-lookup"><span data-stu-id="7f44c-757">public container pack()</span></span>                              | <span data-ttu-id="7f44c-758">Set クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-758">Serializes the current instance of the Set class.</span></span>                                                                                 |
-| <span data-ttu-id="7f44c-759">public boolean remove(AnyType arg)</span><span class="sxs-lookup"><span data-stu-id="7f44c-759">public boolean remove(AnyType arg)</span></span>                   | <span data-ttu-id="7f44c-760">セットから要素を削除します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-760">Removes an element from the set.</span></span>                                                                                                  |
-| <span data-ttu-id="7f44c-761">public str toString()</span><span class="sxs-lookup"><span data-stu-id="7f44c-761">public str toString()</span></span>                                | <span data-ttu-id="7f44c-762">設定の内容を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-762">Returns a string describing the contents of the set.</span></span>                                                                              |
-| <span data-ttu-id="7f44c-763">public Types typeId()</span><span class="sxs-lookup"><span data-stu-id="7f44c-763">public Types typeId()</span></span>                                | <span data-ttu-id="7f44c-764">セット内の値のタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-764">Returns the type of the values in the set.</span></span>                                                                                        |
-| <span data-ttu-id="7f44c-765">public str xml(\[int indent\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-765">public str xml(\[int indent\])</span></span>                       | <span data-ttu-id="7f44c-766">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-766">Returns an XML string that represents the current object.</span></span>                                                                         |
-| <span data-ttu-id="7f44c-767">::public static Set create(container container)</span><span class="sxs-lookup"><span data-stu-id="7f44c-767">::public static Set create(container container)</span></span>      | <span data-ttu-id="7f44c-768">以前の Set.pack メソッドの呼び出しで取得したコンテナーからセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-768">Creates a set from the container obtained from a prior call to the Set.pack method.</span></span>                                               |
-| <span data-ttu-id="7f44c-769">::public static Set createFromXML(Object xmlnode)</span><span class="sxs-lookup"><span data-stu-id="7f44c-769">::public static Set createFromXML(Object xmlnode)</span></span>    |                                                                                                                                   |
-| <span data-ttu-id="7f44c-770">::public static Set difference(Set set1, Set set2)</span><span class="sxs-lookup"><span data-stu-id="7f44c-770">::public static Set difference(Set set1, Set set2)</span></span>   | <span data-ttu-id="7f44c-771">set2 で検出されない set1 の要素を含むセットを計算および取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-771">Calculates and retrieves the set containing the elements from set1 that are not found in set2.</span></span>                                    |
-| <span data-ttu-id="7f44c-772">::public static Set intersection(Set set1, Set set2)</span><span class="sxs-lookup"><span data-stu-id="7f44c-772">::public static Set intersection(Set set1, Set set2)</span></span> | <span data-ttu-id="7f44c-773">2 つのセット内で検出される同一の値を計算して返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-773">Calculates and returns the identical values found in two sets.</span></span>                                                                    |
-| <span data-ttu-id="7f44c-774">::public static Set union(Set set1, Set set2)</span><span class="sxs-lookup"><span data-stu-id="7f44c-774">::public static Set union(Set set1, Set set2)</span></span>        | <span data-ttu-id="7f44c-775">指定された 2 つのセットの和集合を計算および取得します</span><span class="sxs-lookup"><span data-stu-id="7f44c-775">Calculates and retrieves the union of two given sets.</span></span> <span data-ttu-id="7f44c-776">これは、少なくとも 1 つのセットにある値を含むセットです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-776">This is the set that contains the values found in at least one of the sets.</span></span> |
-| <span data-ttu-id="7f44c-777">public void new(Types Type)</span><span class="sxs-lookup"><span data-stu-id="7f44c-777">public void new(Types Type)</span></span>                          | <span data-ttu-id="7f44c-778">指定した型の要素を含めることができるセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-778">Creates a set that can contain elements of the specified type.</span></span>                                                                    |
+| <span data-ttu-id="50251-743">public boolean add(AnyType arg)</span><span class="sxs-lookup"><span data-stu-id="50251-743">public boolean add(AnyType arg)</span></span>                      | <span data-ttu-id="50251-744">セットに要素を追加します。</span><span class="sxs-lookup"><span data-stu-id="50251-744">Adds an element to the set.</span></span>                                                                                                       |
+| <span data-ttu-id="50251-745">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="50251-745">public str definitionString()</span></span>                        | <span data-ttu-id="50251-746">セット内のすべての要素のタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-746">Returns a description of the type of the elements in the set.</span></span>                                                                     |
+| <span data-ttu-id="50251-747">public int elements()</span><span class="sxs-lookup"><span data-stu-id="50251-747">public int elements()</span></span>                                | <span data-ttu-id="50251-748">セット内の要素の数を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-748">Returns the number of elements in the set.</span></span>                                                                                        |
+| <span data-ttu-id="50251-749">public boolean empty()</span><span class="sxs-lookup"><span data-stu-id="50251-749">public boolean empty()</span></span>                               | <span data-ttu-id="50251-750">セットが空であるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="50251-750">Determines whether the set is empty.</span></span>                                                                                              |
+| <span data-ttu-id="50251-751">public boolean equal(Set set)</span><span class="sxs-lookup"><span data-stu-id="50251-751">public boolean equal(Set set)</span></span>                        | <span data-ttu-id="50251-752">セットが現在のセットと同一かどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="50251-752">Determines whether a set is identical to the current set.</span></span>                                                                         |
+| <span data-ttu-id="50251-753">public SetEnumerator getEnumerator()</span><span class="sxs-lookup"><span data-stu-id="50251-753">public SetEnumerator getEnumerator()</span></span>                 | <span data-ttu-id="50251-754">セット内のスキャンを可能にする、セットの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-754">Creates an enumerator for a set, which allows you to traverse the set.</span></span>                                                            |
+| <span data-ttu-id="50251-755">public boolean in(AnyType arg)</span><span class="sxs-lookup"><span data-stu-id="50251-755">public boolean in(AnyType arg)</span></span>                       | <span data-ttu-id="50251-756">指定された要素がセットのメンバーであるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="50251-756">Determines whether a specified element is a member of the set.</span></span>                                                                    |
+| <span data-ttu-id="50251-757">public container pack()</span><span class="sxs-lookup"><span data-stu-id="50251-757">public container pack()</span></span>                              | <span data-ttu-id="50251-758">Set クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="50251-758">Serializes the current instance of the Set class.</span></span>                                                                                 |
+| <span data-ttu-id="50251-759">public boolean remove(AnyType arg)</span><span class="sxs-lookup"><span data-stu-id="50251-759">public boolean remove(AnyType arg)</span></span>                   | <span data-ttu-id="50251-760">セットから要素を削除します。</span><span class="sxs-lookup"><span data-stu-id="50251-760">Removes an element from the set.</span></span>                                                                                                  |
+| <span data-ttu-id="50251-761">public str toString()</span><span class="sxs-lookup"><span data-stu-id="50251-761">public str toString()</span></span>                                | <span data-ttu-id="50251-762">設定の内容を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-762">Returns a string describing the contents of the set.</span></span>                                                                              |
+| <span data-ttu-id="50251-763">public Types typeId()</span><span class="sxs-lookup"><span data-stu-id="50251-763">public Types typeId()</span></span>                                | <span data-ttu-id="50251-764">セット内の値のタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="50251-764">Returns the type of the values in the set.</span></span>                                                                                        |
+| <span data-ttu-id="50251-765">public str xml(\[int indent\])</span><span class="sxs-lookup"><span data-stu-id="50251-765">public str xml(\[int indent\])</span></span>                       | <span data-ttu-id="50251-766">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-766">Returns an XML string that represents the current object.</span></span>                                                                         |
+| <span data-ttu-id="50251-767">::public static Set create(container container)</span><span class="sxs-lookup"><span data-stu-id="50251-767">::public static Set create(container container)</span></span>      | <span data-ttu-id="50251-768">以前の Set.pack メソッドの呼び出しで取得したコンテナーからセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-768">Creates a set from the container obtained from a prior call to the Set.pack method.</span></span>                                               |
+| <span data-ttu-id="50251-769">::public static Set createFromXML(Object xmlnode)</span><span class="sxs-lookup"><span data-stu-id="50251-769">::public static Set createFromXML(Object xmlnode)</span></span>    |                                                                                                                                   |
+| <span data-ttu-id="50251-770">::public static Set difference(Set set1, Set set2)</span><span class="sxs-lookup"><span data-stu-id="50251-770">::public static Set difference(Set set1, Set set2)</span></span>   | <span data-ttu-id="50251-771">set2 で検出されない set1 の要素を含むセットを計算および取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-771">Calculates and retrieves the set containing the elements from set1 that are not found in set2.</span></span>                                    |
+| <span data-ttu-id="50251-772">::public static Set intersection(Set set1, Set set2)</span><span class="sxs-lookup"><span data-stu-id="50251-772">::public static Set intersection(Set set1, Set set2)</span></span> | <span data-ttu-id="50251-773">2 つのセット内で検出される同一の値を計算して返します。</span><span class="sxs-lookup"><span data-stu-id="50251-773">Calculates and returns the identical values found in two sets.</span></span>                                                                    |
+| <span data-ttu-id="50251-774">::public static Set union(Set set1, Set set2)</span><span class="sxs-lookup"><span data-stu-id="50251-774">::public static Set union(Set set1, Set set2)</span></span>        | <span data-ttu-id="50251-775">指定された 2 つのセットの和集合を計算および取得します</span><span class="sxs-lookup"><span data-stu-id="50251-775">Calculates and retrieves the union of two given sets.</span></span> <span data-ttu-id="50251-776">これは、少なくとも 1 つのセットにある値を含むセットです。</span><span class="sxs-lookup"><span data-stu-id="50251-776">This is the set that contains the values found in at least one of the sets.</span></span> |
+| <span data-ttu-id="50251-777">public void new(Types Type)</span><span class="sxs-lookup"><span data-stu-id="50251-777">public void new(Types Type)</span></span>                          | <span data-ttu-id="50251-778">指定した型の要素を含めることができるセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-778">Creates a set that can contain elements of the specified type.</span></span>                                                                    |
 
-### <a name="method-add"></a><span data-ttu-id="7f44c-779">メソッド add</span><span class="sxs-lookup"><span data-stu-id="7f44c-779">Method add</span></span>
+### <a name="method-add"></a><span data-ttu-id="50251-779">メソッド add</span><span class="sxs-lookup"><span data-stu-id="50251-779">Method add</span></span>
 
-<span data-ttu-id="7f44c-780">セットに要素を追加します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-780">Adds an element to the set.</span></span>
+<span data-ttu-id="50251-780">セットに要素を追加します。</span><span class="sxs-lookup"><span data-stu-id="50251-780">Adds an element to the set.</span></span>
 
     public boolean add(AnyType arg)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-781">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-781">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-781">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-781">Parameters</span></span>
 
-<span data-ttu-id="7f44c-782">arg</span><span class="sxs-lookup"><span data-stu-id="7f44c-782">arg</span></span>  
-<span data-ttu-id="7f44c-783">セットに追加する要素。</span><span class="sxs-lookup"><span data-stu-id="7f44c-783">The element to add to the set.</span></span>
+<span data-ttu-id="50251-782">arg</span><span class="sxs-lookup"><span data-stu-id="50251-782">arg</span></span>  
+<span data-ttu-id="50251-783">セットに追加する要素。</span><span class="sxs-lookup"><span data-stu-id="50251-783">The element to add to the set.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-784">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-784">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-784">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-784">Return Value</span></span>
 
-<span data-ttu-id="7f44c-785">要素がセットに追加された場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-785">true if the element is added to the set; otherwise, false.</span></span>
+<span data-ttu-id="50251-785">要素がセットに追加された場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-785">true if the element is added to the set; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-786">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-786">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-786">備考</span><span class="sxs-lookup"><span data-stu-id="50251-786">Remarks</span></span>
 
-<span data-ttu-id="7f44c-787">セットに追加される要素は、セットの作成時にセットに割り当てられたタイプと同じタイプでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-787">The element added to a set must be of the same type as the type assigned to the set when it was created.</span></span> <span data-ttu-id="7f44c-788">既にセットに存在する場合、要素は追加されません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-788">An element will not be added if it already exists in the set.</span></span>
+<span data-ttu-id="50251-787">セットに追加される要素は、セットの作成時にセットに割り当てられたタイプと同じタイプでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="50251-787">The element added to a set must be of the same type as the type assigned to the set when it was created.</span></span> <span data-ttu-id="50251-788">既にセットに存在する場合、要素は追加されません。</span><span class="sxs-lookup"><span data-stu-id="50251-788">An element will not be added if it already exists in the set.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-789">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-789">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-789">例</span><span class="sxs-lookup"><span data-stu-id="50251-789">Examples</span></span>
 
-<span data-ttu-id="7f44c-790">次の例では、セットを作成し、いくつかの整数を追加してから、セットの内容を出力します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-790">The following example creates a set, adds some integers to it, and then prints out the contents of the set.</span></span>
+<span data-ttu-id="50251-790">次の例では、セットを作成し、いくつかの整数を追加してから、セットの内容を出力します。</span><span class="sxs-lookup"><span data-stu-id="50251-790">The following example creates a set, adds some integers to it, and then prints out the contents of the set.</span></span>
 
     { 
         // Create a set of integers 
@@ -1516,23 +1516,23 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-definitionstring"></a><span data-ttu-id="7f44c-791">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="7f44c-791">Method definitionString</span></span>
+### <a name="method-definitionstring"></a><span data-ttu-id="50251-791">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="50251-791">Method definitionString</span></span>
 
-<span data-ttu-id="7f44c-792">セット内のすべての要素のタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-792">Returns a description of the type of the elements in the set.</span></span>
+<span data-ttu-id="50251-792">セット内のすべての要素のタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-792">Returns a description of the type of the elements in the set.</span></span>
 
     public str definitionString()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-793">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-793">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-793">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-793">Return Value</span></span>
 
-<span data-ttu-id="7f44c-794">設定の定義を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-794">A string that contains a definition of the set.</span></span>
+<span data-ttu-id="50251-794">設定の定義を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-794">A string that contains a definition of the set.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-795">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-795">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-795">備考</span><span class="sxs-lookup"><span data-stu-id="50251-795">Remarks</span></span>
 
-<span data-ttu-id="7f44c-796">セット内の値の一覧を印刷するには、Set.toString を使用します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-796">To print a list of the values within the set, use Set.toString.</span></span>
+<span data-ttu-id="50251-796">セット内の値の一覧を印刷するには、Set.toString を使用します。</span><span class="sxs-lookup"><span data-stu-id="50251-796">To print a list of the values within the set, use Set.toString.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-797">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-797">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-797">例</span><span class="sxs-lookup"><span data-stu-id="50251-797">Examples</span></span>
 
-<span data-ttu-id="7f44c-798">次の例では、整数のセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-798">The following example creates a set of integers.</span></span> <span data-ttu-id="7f44c-799">definitionString メソッドを使用して、セットの説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-799">The definitionString method is used to print a description of the set.</span></span>
+<span data-ttu-id="50251-798">次の例では、整数のセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-798">The following example creates a set of integers.</span></span> <span data-ttu-id="50251-799">definitionString メソッドを使用して、セットの説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="50251-799">The definitionString method is used to print a description of the set.</span></span>
 
     { 
         // Declare a set of integers 
@@ -1549,19 +1549,19 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-elements"></a><span data-ttu-id="7f44c-800">メソッド elements</span><span class="sxs-lookup"><span data-stu-id="7f44c-800">Method elements</span></span>
+### <a name="method-elements"></a><span data-ttu-id="50251-800">メソッド elements</span><span class="sxs-lookup"><span data-stu-id="50251-800">Method elements</span></span>
 
-<span data-ttu-id="7f44c-801">セット内の要素の数を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-801">Returns the number of elements in the set.</span></span>
+<span data-ttu-id="50251-801">セット内の要素の数を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-801">Returns the number of elements in the set.</span></span>
 
     public int elements()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-802">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-802">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-802">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-802">Return Value</span></span>
 
-<span data-ttu-id="7f44c-803">セット内の要素の数。</span><span class="sxs-lookup"><span data-stu-id="7f44c-803">The number of elements in the set.</span></span>
+<span data-ttu-id="50251-803">セット内の要素の数。</span><span class="sxs-lookup"><span data-stu-id="50251-803">The number of elements in the set.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-804">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-804">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-804">例</span><span class="sxs-lookup"><span data-stu-id="50251-804">Examples</span></span>
 
-<span data-ttu-id="7f44c-805">次の例では、セットの内容をコンテナーにパックします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-805">The following example packs the contents of a set into a container.</span></span> <span data-ttu-id="7f44c-806">要素メソッドは、セットに任意のコンテンツが含まれているかどうかをテストするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-806">The elements method is used to test whether the set has any contents.</span></span> <span data-ttu-id="7f44c-807">コンテンツがない場合は、nullNothingnullptrunita null 参照 (Visual Basic ではなしになる) コンテナーが返されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-807">If there are no contents, a nullNothingnullptrunita null reference (Nothing in Visual Basic) container is returned.</span></span>
+<span data-ttu-id="50251-805">次の例では、セットの内容をコンテナーにパックします。</span><span class="sxs-lookup"><span data-stu-id="50251-805">The following example packs the contents of a set into a container.</span></span> <span data-ttu-id="50251-806">要素メソッドは、セットに任意のコンテンツが含まれているかどうかをテストするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-806">The elements method is used to test whether the set has any contents.</span></span> <span data-ttu-id="50251-807">コンテンツがない場合は、nullNothingnullptrunita null 参照 (Visual Basic ではなしになる) コンテナーが返されます。</span><span class="sxs-lookup"><span data-stu-id="50251-807">If there are no contents, a nullNothingnullptrunita null reference (Nothing in Visual Basic) container is returned.</span></span>
 
     public static container intSet2Con(Set _intSet) 
     { 
@@ -1580,23 +1580,23 @@ ms.locfileid: "1544189"
         return intCon; 
     }
 
-### <a name="method-empty"></a><span data-ttu-id="7f44c-808">メソッド empty</span><span class="sxs-lookup"><span data-stu-id="7f44c-808">Method empty</span></span>
+### <a name="method-empty"></a><span data-ttu-id="50251-808">メソッド empty</span><span class="sxs-lookup"><span data-stu-id="50251-808">Method empty</span></span>
 
-<span data-ttu-id="7f44c-809">セットが空であるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-809">Determines whether the set is empty.</span></span>
+<span data-ttu-id="50251-809">セットが空であるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="50251-809">Determines whether the set is empty.</span></span>
 
     public boolean empty()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-810">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-810">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-810">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-810">Return Value</span></span>
 
-<span data-ttu-id="7f44c-811">セットが空の場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-811">true if the set is empty; otherwise, false.</span></span>
+<span data-ttu-id="50251-811">セットが空の場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-811">true if the set is empty; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-812">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-812">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-812">備考</span><span class="sxs-lookup"><span data-stu-id="50251-812">Remarks</span></span>
 
-<span data-ttu-id="7f44c-813">これは、(elements() == 0) と等価です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-813">This is equivalent to (elements() == 0).</span></span>
+<span data-ttu-id="50251-813">これは、(elements() == 0) と等価です。</span><span class="sxs-lookup"><span data-stu-id="50251-813">This is equivalent to (elements() == 0).</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-814">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-814">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-814">例</span><span class="sxs-lookup"><span data-stu-id="50251-814">Examples</span></span>
 
-<span data-ttu-id="7f44c-815">次の例では、セットに要素があるかどうかをテストします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-815">The following example tests whether there are any elements in a set.</span></span>
+<span data-ttu-id="50251-815">次の例では、セットに要素があるかどうかをテストします。</span><span class="sxs-lookup"><span data-stu-id="50251-815">The following example tests whether there are any elements in a set.</span></span>
 
     { 
         Set mySet = new Set(Types::Integer); 
@@ -1608,28 +1608,28 @@ ms.locfileid: "1544189"
         } 
     }
 
-### <a name="method-equal"></a><span data-ttu-id="7f44c-816">メソッド equal</span><span class="sxs-lookup"><span data-stu-id="7f44c-816">Method equal</span></span>
+### <a name="method-equal"></a><span data-ttu-id="50251-816">メソッド equal</span><span class="sxs-lookup"><span data-stu-id="50251-816">Method equal</span></span>
 
-<span data-ttu-id="7f44c-817">セットが現在のセットと同一かどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-817">Determines whether a set is identical to the current set.</span></span>
+<span data-ttu-id="50251-817">セットが現在のセットと同一かどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="50251-817">Determines whether a set is identical to the current set.</span></span>
 
     public boolean equal(Set set)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-818">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-818">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-818">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-818">Parameters</span></span>
 
-<span data-ttu-id="7f44c-819">set</span><span class="sxs-lookup"><span data-stu-id="7f44c-819">set</span></span>  
-<span data-ttu-id="7f44c-820">現在のセットと比較されるセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-820">The set to be compared with the current set.</span></span>
+<span data-ttu-id="50251-819">set</span><span class="sxs-lookup"><span data-stu-id="50251-819">set</span></span>  
+<span data-ttu-id="50251-820">現在のセットと比較されるセット。</span><span class="sxs-lookup"><span data-stu-id="50251-820">The set to be compared with the current set.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-821">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-821">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-821">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-821">Return Value</span></span>
 
-<span data-ttu-id="7f44c-822">そのセットが現在のセットと同じである場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-822">true if the set is the same as the current set; otherwise, false.</span></span>
+<span data-ttu-id="50251-822">そのセットが現在のセットと同じである場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-822">true if the set is the same as the current set; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-823">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-823">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-823">備考</span><span class="sxs-lookup"><span data-stu-id="50251-823">Remarks</span></span>
 
-<span data-ttu-id="7f44c-824">2 つのセットが等しくなるためには、それらには同じタイプおよび同じ数の要素があり、すべての要素は同じである必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-824">For two sets to be equal, they must have the same type and the same number of elements, and all elements must be the same.</span></span>
+<span data-ttu-id="50251-824">2 つのセットが等しくなるためには、それらには同じタイプおよび同じ数の要素があり、すべての要素は同じである必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-824">For two sets to be equal, they must have the same type and the same number of elements, and all elements must be the same.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-825">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-825">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-825">例</span><span class="sxs-lookup"><span data-stu-id="50251-825">Examples</span></span>
 
-<span data-ttu-id="7f44c-826">次の例では、2 つの整数セットを作成し、それらにいくつかの値を追加し、それらを比較してセットが同じかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-826">The following example creates two sets of integers, adds some values to them, and then compares them to see whether the sets are the same.</span></span>
+<span data-ttu-id="50251-826">次の例では、2 つの整数セットを作成し、それらにいくつかの値を追加し、それらを比較してセットが同じかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="50251-826">The following example creates two sets of integers, adds some values to them, and then compares them to see whether the sets are the same.</span></span>
 
     { 
         Set is1 = new Set (Types::Integer); 
@@ -1652,19 +1652,19 @@ ms.locfileid: "1544189"
          } 
     }
 
-### <a name="method-getenumerator"></a><span data-ttu-id="7f44c-827">メソッド getEnumerator</span><span class="sxs-lookup"><span data-stu-id="7f44c-827">Method getEnumerator</span></span>
+### <a name="method-getenumerator"></a><span data-ttu-id="50251-827">メソッド getEnumerator</span><span class="sxs-lookup"><span data-stu-id="50251-827">Method getEnumerator</span></span>
 
-<span data-ttu-id="7f44c-828">セット内のスキャンを可能にする、セットの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-828">Creates an enumerator for a set, which allows you to traverse the set.</span></span>
+<span data-ttu-id="50251-828">セット内のスキャンを可能にする、セットの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-828">Creates an enumerator for a set, which allows you to traverse the set.</span></span>
 
     public SetEnumerator getEnumerator()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-829">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-829">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-829">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-829">Return Value</span></span>
 
-<span data-ttu-id="7f44c-830">現在のセットの SetEnumerator オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="7f44c-830">A SetEnumerator object for the current set.</span></span>
+<span data-ttu-id="50251-830">現在のセットの SetEnumerator オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="50251-830">A SetEnumerator object for the current set.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-831">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-831">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-831">例</span><span class="sxs-lookup"><span data-stu-id="50251-831">Examples</span></span>
 
-<span data-ttu-id="7f44c-832">次の例では、セットの内容をコンテナーにパックします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-832">The following example packs the contents of a set into a container.</span></span> <span data-ttu-id="7f44c-833">getEnumerator メソッドは、セットの列挙子を作成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-833">The getEnumerator method is used to create an enumerator for the set.</span></span> <span data-ttu-id="7f44c-834">したがって、セット内の要素を横断してコンテナーに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-834">Therefore, that the elements in the set can be traversed and added to the container.</span></span>
+<span data-ttu-id="50251-832">次の例では、セットの内容をコンテナーにパックします。</span><span class="sxs-lookup"><span data-stu-id="50251-832">The following example packs the contents of a set into a container.</span></span> <span data-ttu-id="50251-833">getEnumerator メソッドは、セットの列挙子を作成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-833">The getEnumerator method is used to create an enumerator for the set.</span></span> <span data-ttu-id="50251-834">したがって、セット内の要素を横断してコンテナーに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="50251-834">Therefore, that the elements in the set can be traversed and added to the container.</span></span>
 
     public static container intSet2Con(Set _intSet) 
     { 
@@ -1683,24 +1683,24 @@ ms.locfileid: "1544189"
         return intCon; 
     }
 
-### <a name="method-in"></a><span data-ttu-id="7f44c-835">メソッド in</span><span class="sxs-lookup"><span data-stu-id="7f44c-835">Method in</span></span>
+### <a name="method-in"></a><span data-ttu-id="50251-835">メソッド in</span><span class="sxs-lookup"><span data-stu-id="50251-835">Method in</span></span>
 
-<span data-ttu-id="7f44c-836">指定された要素がセットのメンバーであるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-836">Determines whether a specified element is a member of the set.</span></span>
+<span data-ttu-id="50251-836">指定された要素がセットのメンバーであるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="50251-836">Determines whether a specified element is a member of the set.</span></span>
 
     public boolean in(AnyType arg)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-837">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-837">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-837">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-837">Parameters</span></span>
 
-<span data-ttu-id="7f44c-838">arg</span><span class="sxs-lookup"><span data-stu-id="7f44c-838">arg</span></span>  
-<span data-ttu-id="7f44c-839">チェックする要素。</span><span class="sxs-lookup"><span data-stu-id="7f44c-839">The element to check.</span></span> <span data-ttu-id="7f44c-840">要素のタイプは、セットの指定されたタイプと同じである必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-840">The type of the element must be the same as the type that was specified for the set.</span></span>
+<span data-ttu-id="50251-838">arg</span><span class="sxs-lookup"><span data-stu-id="50251-838">arg</span></span>  
+<span data-ttu-id="50251-839">チェックする要素。</span><span class="sxs-lookup"><span data-stu-id="50251-839">The element to check.</span></span> <span data-ttu-id="50251-840">要素のタイプは、セットの指定されたタイプと同じである必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-840">The type of the element must be the same as the type that was specified for the set.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-841">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-841">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-841">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-841">Return Value</span></span>
 
-<span data-ttu-id="7f44c-842">指定した要素がセット内で見つかる場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-842">true if the specified element is found in the set; otherwise, false.</span></span>
+<span data-ttu-id="50251-842">指定した要素がセット内で見つかる場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-842">true if the specified element is found in the set; otherwise, false.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-843">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-843">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-843">例</span><span class="sxs-lookup"><span data-stu-id="50251-843">Examples</span></span>
 
-<span data-ttu-id="7f44c-844">次の例では、in メソッドが false を返す場合、バージョン コントロール システム内の特定の変更リストの内容を読み込みます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-844">The following example loads the contents a particular change list in the version control system, if the in method returns false.</span></span> <span data-ttu-id="7f44c-845">changeSet セットには、コンテンツが既にロードされている変更リスト番号のリストが含まれています。</span><span class="sxs-lookup"><span data-stu-id="7f44c-845">The changeSet set contains a list of the change list numbers that already have the content loaded.</span></span>
+<span data-ttu-id="50251-844">次の例では、in メソッドが false を返す場合、バージョン コントロール システム内の特定の変更リストの内容を読み込みます。</span><span class="sxs-lookup"><span data-stu-id="50251-844">The following example loads the contents a particular change list in the version control system, if the in method returns false.</span></span> <span data-ttu-id="50251-845">changeSet セットには、コンテンツが既にロードされている変更リスト番号のリストが含まれています。</span><span class="sxs-lookup"><span data-stu-id="50251-845">The changeSet set contains a list of the change list numbers that already have the content loaded.</span></span>
 
     public void pageActivated() 
     { 
@@ -1721,29 +1721,29 @@ ms.locfileid: "1544189"
         super(); 
     }
 
-### <a name="method-pack"></a><span data-ttu-id="7f44c-846">メソッド pack</span><span class="sxs-lookup"><span data-stu-id="7f44c-846">Method pack</span></span>
+### <a name="method-pack"></a><span data-ttu-id="50251-846">メソッド pack</span><span class="sxs-lookup"><span data-stu-id="50251-846">Method pack</span></span>
 
-<span data-ttu-id="7f44c-847">Set クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-847">Serializes the current instance of the Set class.</span></span>
+<span data-ttu-id="50251-847">Set クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="50251-847">Serializes the current instance of the Set class.</span></span>
 
     public container pack()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-848">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-848">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-848">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-848">Return Value</span></span>
 
-<span data-ttu-id="7f44c-849">Set クラスの現在のインスタンスを含むコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-849">A container that contains the current instance of the Set class.</span></span>
+<span data-ttu-id="50251-849">Set クラスの現在のインスタンスを含むコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="50251-849">A container that contains the current instance of the Set class.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-850">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-850">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-850">備考</span><span class="sxs-lookup"><span data-stu-id="50251-850">Remarks</span></span>
 
-<span data-ttu-id="7f44c-851">このメソッドで作成されたコンテナーには、セットの最初の要素の前に 3 つの要素が含まれます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-851">The container created by this method contains 3 elements before the first element from the set:</span></span>
+<span data-ttu-id="50251-851">このメソッドで作成されたコンテナーには、セットの最初の要素の前に 3 つの要素が含まれます。</span><span class="sxs-lookup"><span data-stu-id="50251-851">The container created by this method contains 3 elements before the first element from the set:</span></span>
 
--   <span data-ttu-id="7f44c-852">コンテナのバージョン番号</span><span class="sxs-lookup"><span data-stu-id="7f44c-852">A version number for the container</span></span>
--   <span data-ttu-id="7f44c-853">セット要素のデータ型を識別する整数</span><span class="sxs-lookup"><span data-stu-id="7f44c-853">An integer that identifies the data type of the set elements</span></span>
--   <span data-ttu-id="7f44c-854">セット内の要素の数。</span><span class="sxs-lookup"><span data-stu-id="7f44c-854">The number of elements in the set</span></span>
+-   <span data-ttu-id="50251-852">コンテナのバージョン番号</span><span class="sxs-lookup"><span data-stu-id="50251-852">A version number for the container</span></span>
+-   <span data-ttu-id="50251-853">セット要素のデータ型を識別する整数</span><span class="sxs-lookup"><span data-stu-id="50251-853">An integer that identifies the data type of the set elements</span></span>
+-   <span data-ttu-id="50251-854">セット内の要素の数。</span><span class="sxs-lookup"><span data-stu-id="50251-854">The number of elements in the set</span></span>
 
-<span data-ttu-id="7f44c-855">キーまたは値がオブジェクトになっている場合は、各オブジェクトに対して pack メソッドが呼び出され、サブコンテナーを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-855">If the keys or the values are objects, the pack method is called on each object to create a subcontainer.</span></span> <span data-ttu-id="7f44c-856">Set::create method を使用することにより、結果のコンテナから新しいセットを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-856">You can create a new set from the resulting container by using the Set::create method.</span></span>
+<span data-ttu-id="50251-855">キーまたは値がオブジェクトになっている場合は、各オブジェクトに対して pack メソッドが呼び出され、サブコンテナーを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-855">If the keys or the values are objects, the pack method is called on each object to create a subcontainer.</span></span> <span data-ttu-id="50251-856">Set::create method を使用することにより、結果のコンテナから新しいセットを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="50251-856">You can create a new set from the resulting container by using the Set::create method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-857">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-857">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-857">例</span><span class="sxs-lookup"><span data-stu-id="50251-857">Examples</span></span>
 
-<span data-ttu-id="7f44c-858">次の例では、10 個の整数のセットを作成し、それをコンテナーにパックし、元の内容と同じ内容の新しいセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-858">The following example creates a set of 10 integers, packs it into a container, and then creates a new set with contents identical to the original one.</span></span>
+<span data-ttu-id="50251-858">次の例では、10 個の整数のセットを作成し、それをコンテナーにパックし、元の内容と同じ内容の新しいセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-858">The following example creates a set of 10 integers, packs it into a container, and then creates a new set with contents identical to the original one.</span></span>
 
     { 
         Set is1, is = new Set (Types::Integer); 
@@ -1763,24 +1763,24 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-remove"></a><span data-ttu-id="7f44c-859">メソッド remove</span><span class="sxs-lookup"><span data-stu-id="7f44c-859">Method remove</span></span>
+### <a name="method-remove"></a><span data-ttu-id="50251-859">メソッド remove</span><span class="sxs-lookup"><span data-stu-id="50251-859">Method remove</span></span>
 
-<span data-ttu-id="7f44c-860">セットから要素を削除します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-860">Removes an element from the set.</span></span>
+<span data-ttu-id="50251-860">セットから要素を削除します。</span><span class="sxs-lookup"><span data-stu-id="50251-860">Removes an element from the set.</span></span>
 
     public boolean remove(AnyType arg)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-861">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-861">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-861">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-861">Parameters</span></span>
 
-<span data-ttu-id="7f44c-862">arg</span><span class="sxs-lookup"><span data-stu-id="7f44c-862">arg</span></span>  
-<span data-ttu-id="7f44c-863">削除する要素。</span><span class="sxs-lookup"><span data-stu-id="7f44c-863">The element to remove.</span></span>
+<span data-ttu-id="50251-862">arg</span><span class="sxs-lookup"><span data-stu-id="50251-862">arg</span></span>  
+<span data-ttu-id="50251-863">削除する要素。</span><span class="sxs-lookup"><span data-stu-id="50251-863">The element to remove.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-864">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-864">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-864">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-864">Return Value</span></span>
 
-<span data-ttu-id="7f44c-865">要素が見つかり削除された場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-865">true if the element was found and removed; otherwise, false.</span></span>
+<span data-ttu-id="50251-865">要素が見つかり削除された場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-865">true if the element was found and removed; otherwise, false.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-866">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-866">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-866">例</span><span class="sxs-lookup"><span data-stu-id="50251-866">Examples</span></span>
 
-<span data-ttu-id="7f44c-867">次の例では、noConfigs セットのいずれかの値が 2 番目のセットの yesConfigs セットに含まれているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-867">The following example checks whether any of the values in one set, the noConfigs set, are found in a second set, the yesConfigs set.</span></span> <span data-ttu-id="7f44c-868">見つかった場合は、yesConfigs セットから削除されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-868">If they are found, they are removed from the yesConfigs set.</span></span>
+<span data-ttu-id="50251-867">次の例では、noConfigs セットのいずれかの値が 2 番目のセットの yesConfigs セットに含まれているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="50251-867">The following example checks whether any of the values in one set, the noConfigs set, are found in a second set, the yesConfigs set.</span></span> <span data-ttu-id="50251-868">見つかった場合は、yesConfigs セットから削除されます。</span><span class="sxs-lookup"><span data-stu-id="50251-868">If they are found, they are removed from the yesConfigs set.</span></span>
 
     Set             noConfigs; 
     Set             yesConfigs; 
@@ -1797,23 +1797,23 @@ ms.locfileid: "1544189"
         } 
     }
 
-### <a name="method-tostring"></a><span data-ttu-id="7f44c-869">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="7f44c-869">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="50251-869">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="50251-869">Method toString</span></span>
 
-<span data-ttu-id="7f44c-870">設定の内容を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-870">Returns a string describing the contents of the set.</span></span>
+<span data-ttu-id="50251-870">設定の内容を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-870">Returns a string describing the contents of the set.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-871">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-871">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-871">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-871">Return Value</span></span>
 
-<span data-ttu-id="7f44c-872">設定の内容を説明する文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-872">A string that describes the contents of the set.</span></span>
+<span data-ttu-id="50251-872">設定の内容を説明する文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-872">A string that describes the contents of the set.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-873">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-873">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-873">備考</span><span class="sxs-lookup"><span data-stu-id="50251-873">Remarks</span></span>
 
-<span data-ttu-id="7f44c-874">を使用して、セット内の単一要素の説明を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-874">Use the to get the description of a single element within a set.</span></span>
+<span data-ttu-id="50251-874">を使用して、セット内の単一要素の説明を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-874">Use the to get the description of a single element within a set.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-875">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-875">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-875">例</span><span class="sxs-lookup"><span data-stu-id="50251-875">Examples</span></span>
 
-<span data-ttu-id="7f44c-876">次の例では、文字列のセットを作成し、そのセットの説明とセット内容の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-876">The following example creates a set of strings, and then prints out a description of the set and a description of the set contents.</span></span>
+<span data-ttu-id="50251-876">次の例では、文字列のセットを作成し、そのセットの説明とセット内容の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="50251-876">The following example creates a set of strings, and then prints out a description of the set and a description of the set contents.</span></span>
 
     { 
         // Declare a set of strings 
@@ -1828,23 +1828,23 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-typeid"></a><span data-ttu-id="7f44c-877">メソッド typeId</span><span class="sxs-lookup"><span data-stu-id="7f44c-877">Method typeId</span></span>
+### <a name="method-typeid"></a><span data-ttu-id="50251-877">メソッド typeId</span><span class="sxs-lookup"><span data-stu-id="50251-877">Method typeId</span></span>
 
-<span data-ttu-id="7f44c-878">セット内の値のタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-878">Returns the type of the values in the set.</span></span>
+<span data-ttu-id="50251-878">セット内の値のタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="50251-878">Returns the type of the values in the set.</span></span>
 
     public Types typeId()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-879">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-879">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-879">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-879">Return Value</span></span>
 
-<span data-ttu-id="7f44c-880">セット内の値のタイプ。</span><span class="sxs-lookup"><span data-stu-id="7f44c-880">The type of the values in the set.</span></span>
+<span data-ttu-id="50251-880">セット内の値のタイプ。</span><span class="sxs-lookup"><span data-stu-id="50251-880">The type of the values in the set.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-881">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-881">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-881">備考</span><span class="sxs-lookup"><span data-stu-id="50251-881">Remarks</span></span>
 
-<span data-ttu-id="7f44c-882">構成要素のタイプは、そのセットが作成されるときに決定される。</span><span class="sxs-lookup"><span data-stu-id="7f44c-882">The type of the constituent elements is determined when the set is created.</span></span>
+<span data-ttu-id="50251-882">構成要素のタイプは、そのセットが作成されるときに決定される。</span><span class="sxs-lookup"><span data-stu-id="50251-882">The type of the constituent elements is determined when the set is created.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-883">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-883">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-883">例</span><span class="sxs-lookup"><span data-stu-id="50251-883">Examples</span></span>
 
-<span data-ttu-id="7f44c-884">次の例では、既存のセットと同じタイプの新しいセットをインスタンス化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-884">The following example instantiates a new set with the same type as an existing set.</span></span>
+<span data-ttu-id="50251-884">次の例では、既存のセットと同じタイプの新しいセットをインスタンス化します。</span><span class="sxs-lookup"><span data-stu-id="50251-884">The following example instantiates a new set with the same type as an existing set.</span></span>
 
     { 
         Set set1 = new Set(Types::Integer); 
@@ -1855,47 +1855,47 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-xml"></a><span data-ttu-id="7f44c-885">メソッド xml</span><span class="sxs-lookup"><span data-stu-id="7f44c-885">Method xml</span></span>
+### <a name="method-xml"></a><span data-ttu-id="50251-885">メソッド xml</span><span class="sxs-lookup"><span data-stu-id="50251-885">Method xml</span></span>
 
-<span data-ttu-id="7f44c-886">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-886">Returns an XML string that represents the current object.</span></span>
+<span data-ttu-id="50251-886">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-886">Returns an XML string that represents the current object.</span></span>
 
     public str xml([int indent])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-887">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-887">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-887">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-887">Parameters</span></span>
 
-<span data-ttu-id="7f44c-888">インデント</span><span class="sxs-lookup"><span data-stu-id="7f44c-888">indent</span></span>  
-<span data-ttu-id="7f44c-889">返された XML 文字列のインデントの量 (省略可能)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-889">The amount of indentation of the returned XML string; optional.</span></span>
+<span data-ttu-id="50251-888">インデント</span><span class="sxs-lookup"><span data-stu-id="50251-888">indent</span></span>  
+<span data-ttu-id="50251-889">返された XML 文字列のインデントの量 (省略可能)。</span><span class="sxs-lookup"><span data-stu-id="50251-889">The amount of indentation of the returned XML string; optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-890">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-890">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-890">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-890">Return Value</span></span>
 
-<span data-ttu-id="7f44c-891">現在のオブジェクトを表す XML 文字列です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-891">An XML string that represents the current object.</span></span>
+<span data-ttu-id="50251-891">現在のオブジェクトを表す XML 文字列です。</span><span class="sxs-lookup"><span data-stu-id="50251-891">An XML string that represents the current object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-892">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-892">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-892">備考</span><span class="sxs-lookup"><span data-stu-id="50251-892">Remarks</span></span>
 
-<span data-ttu-id="7f44c-893">このメソッドをオーバーライドして、その型に対して意味のある値を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-893">This method can be overridden to return values that are meaningful for that type.</span></span>
+<span data-ttu-id="50251-893">このメソッドをオーバーライドして、その型に対して意味のある値を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="50251-893">This method can be overridden to return values that are meaningful for that type.</span></span>
 
-### <a name="method-create"></a><span data-ttu-id="7f44c-894">メソッド create</span><span class="sxs-lookup"><span data-stu-id="7f44c-894">Method create</span></span>
+### <a name="method-create"></a><span data-ttu-id="50251-894">メソッド create</span><span class="sxs-lookup"><span data-stu-id="50251-894">Method create</span></span>
 
-<span data-ttu-id="7f44c-895">以前の Set.pack メソッドの呼び出しで取得したコンテナーからセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-895">Creates a set from the container obtained from a prior call to the Set.pack method.</span></span>
+<span data-ttu-id="50251-895">以前の Set.pack メソッドの呼び出しで取得したコンテナーからセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-895">Creates a set from the container obtained from a prior call to the Set.pack method.</span></span>
 
     public static Set create(container container)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-896">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-896">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-896">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-896">Parameters</span></span>
 
-<span data-ttu-id="7f44c-897">コンテナー</span><span class="sxs-lookup"><span data-stu-id="7f44c-897">container</span></span>  
-<span data-ttu-id="7f44c-898">パックされたセットを保持するコンテナー。</span><span class="sxs-lookup"><span data-stu-id="7f44c-898">The container that holds the packed set.</span></span>
+<span data-ttu-id="50251-897">コンテナー</span><span class="sxs-lookup"><span data-stu-id="50251-897">container</span></span>  
+<span data-ttu-id="50251-898">パックされたセットを保持するコンテナー。</span><span class="sxs-lookup"><span data-stu-id="50251-898">The container that holds the packed set.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-899">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-899">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-899">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-899">Return Value</span></span>
 
-<span data-ttu-id="7f44c-900">コンテナーに梱包されたものと同じセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-900">A set equal to the one that was packed into the container.</span></span>
+<span data-ttu-id="50251-900">コンテナーに梱包されたものと同じセット。</span><span class="sxs-lookup"><span data-stu-id="50251-900">A set equal to the one that was packed into the container.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-901">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-901">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-901">備考</span><span class="sxs-lookup"><span data-stu-id="50251-901">Remarks</span></span>
 
-<span data-ttu-id="7f44c-902">値がオブジェクトの場合、オブジェクトにはコンテナーからその内部状態を再設定するために呼び出されるアンパック メソッドが必要です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-902">If the values are objects, the objects must have an unpack method that is called to reestablish their internal state from the container.</span></span>
+<span data-ttu-id="50251-902">値がオブジェクトの場合、オブジェクトにはコンテナーからその内部状態を再設定するために呼び出されるアンパック メソッドが必要です。</span><span class="sxs-lookup"><span data-stu-id="50251-902">If the values are objects, the objects must have an unpack method that is called to reestablish their internal state from the container.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-903">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-903">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-903">例</span><span class="sxs-lookup"><span data-stu-id="50251-903">Examples</span></span>
 
-<span data-ttu-id="7f44c-904">次の例では、セットを作成し、それをコンテナーにパックします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-904">The following example creates a set and packs it into a container.</span></span> <span data-ttu-id="7f44c-905">次に、create メソッドを使用してコンテナーを展開し、元のセットと同じセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-905">The create method is then used to unpack the container and create a set identical to the original one.</span></span>
+<span data-ttu-id="50251-904">次の例では、セットを作成し、それをコンテナーにパックします。</span><span class="sxs-lookup"><span data-stu-id="50251-904">The following example creates a set and packs it into a container.</span></span> <span data-ttu-id="50251-905">次に、create メソッドを使用してコンテナーを展開し、元のセットと同じセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-905">The create method is then used to unpack the container and create a set identical to the original one.</span></span>
 
     { 
         Set is1, is = new Set (Types::Integer); 
@@ -1915,43 +1915,43 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-createfromxml"></a><span data-ttu-id="7f44c-906">メソッド createFromXML</span><span class="sxs-lookup"><span data-stu-id="7f44c-906">Method createFromXML</span></span>
+### <a name="method-createfromxml"></a><span data-ttu-id="50251-906">メソッド createFromXML</span><span class="sxs-lookup"><span data-stu-id="50251-906">Method createFromXML</span></span>
 
     public static Set createFromXML(Object xmlnode)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-907">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-907">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-907">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-907">Parameters</span></span>
 
-<span data-ttu-id="7f44c-908">xmlnode</span><span class="sxs-lookup"><span data-stu-id="7f44c-908">xmlnode</span></span>  
+<span data-ttu-id="50251-908">xmlnode</span><span class="sxs-lookup"><span data-stu-id="50251-908">xmlnode</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-909">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-909">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-909">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-909">Return Value</span></span>
 
-### <a name="method-difference"></a><span data-ttu-id="7f44c-910">メソッド difference</span><span class="sxs-lookup"><span data-stu-id="7f44c-910">Method difference</span></span>
+### <a name="method-difference"></a><span data-ttu-id="50251-910">メソッド difference</span><span class="sxs-lookup"><span data-stu-id="50251-910">Method difference</span></span>
 
-<span data-ttu-id="7f44c-911">set2 で検出されない set1 の要素を含むセットを計算および取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-911">Calculates and retrieves the set containing the elements from set1 that are not found in set2.</span></span>
+<span data-ttu-id="50251-911">set2 で検出されない set1 の要素を含むセットを計算および取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-911">Calculates and retrieves the set containing the elements from set1 that are not found in set2.</span></span>
 
     public static Set difference(Set set1, Set set2)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-912">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-912">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-912">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-912">Parameters</span></span>
 
-<span data-ttu-id="7f44c-913">set1</span><span class="sxs-lookup"><span data-stu-id="7f44c-913">set1</span></span>  
-<span data-ttu-id="7f44c-914">チェックするセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-914">The set to check.</span></span>
+<span data-ttu-id="50251-913">set1</span><span class="sxs-lookup"><span data-stu-id="50251-913">set1</span></span>  
+<span data-ttu-id="50251-914">チェックするセット。</span><span class="sxs-lookup"><span data-stu-id="50251-914">The set to check.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-915">set2</span><span class="sxs-lookup"><span data-stu-id="7f44c-915">set2</span></span>  
-<span data-ttu-id="7f44c-916">チェックするセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-916">The set to check.</span></span>
+<span data-ttu-id="50251-915">set2</span><span class="sxs-lookup"><span data-stu-id="50251-915">set2</span></span>  
+<span data-ttu-id="50251-916">チェックするセット。</span><span class="sxs-lookup"><span data-stu-id="50251-916">The set to check.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-917">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-917">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-917">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-917">Return Value</span></span>
 
-<span data-ttu-id="7f44c-918">set2 で検出されない set1 の要素を含むセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-918">A set containing the elements from set1 that are not found in set2.</span></span>
+<span data-ttu-id="50251-918">set2 で検出されない set1 の要素を含むセット。</span><span class="sxs-lookup"><span data-stu-id="50251-918">A set containing the elements from set1 that are not found in set2.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-919">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-919">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-919">備考</span><span class="sxs-lookup"><span data-stu-id="50251-919">Remarks</span></span>
 
-<span data-ttu-id="7f44c-920">比較される 2 つのセットは、同じタイプでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-920">The two sets to be compared must be of the same type.</span></span>
+<span data-ttu-id="50251-920">比較される 2 つのセットは、同じタイプでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="50251-920">The two sets to be compared must be of the same type.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-921">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-921">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-921">例</span><span class="sxs-lookup"><span data-stu-id="50251-921">Examples</span></span>
 
-<span data-ttu-id="7f44c-922">次の例では、整数 1､2 および 3 を含む 1 つのセットと、整数 2 および 4 を含む 1 つのセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-922">The following example creates one set that contains the integers 1, 2, and 3, and one set that contains the integers 2 and 4.</span></span> <span data-ttu-id="7f44c-923">差異メソッドは、最初のセット内の 2 番目のセット (1 および 3) にない要素を含むセットを作成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-923">The difference method is used to create a set that contains the elements in the first set that are not in the second set (1 and 3).</span></span>
+<span data-ttu-id="50251-922">次の例では、整数 1､2 および 3 を含む 1 つのセットと、整数 2 および 4 を含む 1 つのセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-922">The following example creates one set that contains the integers 1, 2, and 3, and one set that contains the integers 2 and 4.</span></span> <span data-ttu-id="50251-923">差異メソッドは、最初のセット内の 2 番目のセット (1 および 3) にない要素を含むセットを作成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-923">The difference method is used to create a set that contains the elements in the first set that are not in the second set (1 and 3).</span></span>
 
     { 
         Set is = new Set (Types::Integer); 
@@ -1968,29 +1968,29 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-intersection"></a><span data-ttu-id="7f44c-924">メソッド intersection</span><span class="sxs-lookup"><span data-stu-id="7f44c-924">Method intersection</span></span>
+### <a name="method-intersection"></a><span data-ttu-id="50251-924">メソッド intersection</span><span class="sxs-lookup"><span data-stu-id="50251-924">Method intersection</span></span>
 
-<span data-ttu-id="7f44c-925">2 つのセット内で検出される同一の値を計算して返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-925">Calculates and returns the identical values found in two sets.</span></span>
+<span data-ttu-id="50251-925">2 つのセット内で検出される同一の値を計算して返します。</span><span class="sxs-lookup"><span data-stu-id="50251-925">Calculates and returns the identical values found in two sets.</span></span>
 
     public static Set intersection(Set set1, Set set2)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-926">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-926">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-926">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-926">Parameters</span></span>
 
-<span data-ttu-id="7f44c-927">set1</span><span class="sxs-lookup"><span data-stu-id="7f44c-927">set1</span></span>  
-<span data-ttu-id="7f44c-928">比較する 2 番目のセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-928">The second set to be compared.</span></span>
+<span data-ttu-id="50251-927">set1</span><span class="sxs-lookup"><span data-stu-id="50251-927">set1</span></span>  
+<span data-ttu-id="50251-928">比較する 2 番目のセット。</span><span class="sxs-lookup"><span data-stu-id="50251-928">The second set to be compared.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-929">set2</span><span class="sxs-lookup"><span data-stu-id="7f44c-929">set2</span></span>  
-<span data-ttu-id="7f44c-930">比較する 2 番目のセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-930">The second set to be compared.</span></span>
+<span data-ttu-id="50251-929">set2</span><span class="sxs-lookup"><span data-stu-id="50251-929">set2</span></span>  
+<span data-ttu-id="50251-930">比較する 2 番目のセット。</span><span class="sxs-lookup"><span data-stu-id="50251-930">The second set to be compared.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-931">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-931">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-931">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-931">Return Value</span></span>
 
-<span data-ttu-id="7f44c-932">両方のセットで検出された要素を含むセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-932">A set containing the elements found in both sets.</span></span>
+<span data-ttu-id="50251-932">両方のセットで検出された要素を含むセット。</span><span class="sxs-lookup"><span data-stu-id="50251-932">A set containing the elements found in both sets.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-933">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-933">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-933">例</span><span class="sxs-lookup"><span data-stu-id="50251-933">Examples</span></span>
 
-<span data-ttu-id="7f44c-934">次の例では、2 つの整数セットを作成し、それらにいくつかの値を追加します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-934">The following example creates two sets of integers and adds some values to them.</span></span> <span data-ttu-id="7f44c-935">両方のセットに含まれている値の一覧を出力します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-935">It then prints a list of the values that are that is contained in both sets.</span></span>
+<span data-ttu-id="50251-934">次の例では、2 つの整数セットを作成し、それらにいくつかの値を追加します。</span><span class="sxs-lookup"><span data-stu-id="50251-934">The following example creates two sets of integers and adds some values to them.</span></span> <span data-ttu-id="50251-935">両方のセットに含まれている値の一覧を出力します。</span><span class="sxs-lookup"><span data-stu-id="50251-935">It then prints a list of the values that are that is contained in both sets.</span></span>
 
     { 
         Set is = new Set (Types::Integer); 
@@ -2006,33 +2006,33 @@ ms.locfileid: "1544189"
         print is2.toString(); 
     }
 
-### <a name="method-union"></a><span data-ttu-id="7f44c-936">メソッド union</span><span class="sxs-lookup"><span data-stu-id="7f44c-936">Method union</span></span>
+### <a name="method-union"></a><span data-ttu-id="50251-936">メソッド union</span><span class="sxs-lookup"><span data-stu-id="50251-936">Method union</span></span>
 
-<span data-ttu-id="7f44c-937">指定された 2 つのセットの和集合を計算および取得します</span><span class="sxs-lookup"><span data-stu-id="7f44c-937">Calculates and retrieves the union of two given sets.</span></span> <span data-ttu-id="7f44c-938">これは、少なくとも 1 つのセットにある値を含むセットです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-938">This is the set that contains the values found in at least one of the sets.</span></span>
+<span data-ttu-id="50251-937">指定された 2 つのセットの和集合を計算および取得します</span><span class="sxs-lookup"><span data-stu-id="50251-937">Calculates and retrieves the union of two given sets.</span></span> <span data-ttu-id="50251-938">これは、少なくとも 1 つのセットにある値を含むセットです。</span><span class="sxs-lookup"><span data-stu-id="50251-938">This is the set that contains the values found in at least one of the sets.</span></span>
 
     public static Set union(Set set1, Set set2)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-939">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-939">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-939">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-939">Parameters</span></span>
 
-<span data-ttu-id="7f44c-940">set1</span><span class="sxs-lookup"><span data-stu-id="7f44c-940">set1</span></span>  
-<span data-ttu-id="7f44c-941">比較される 2 つのセットのうちの 2 番目のセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-941">The second of the two sets that are compared.</span></span>
+<span data-ttu-id="50251-940">set1</span><span class="sxs-lookup"><span data-stu-id="50251-940">set1</span></span>  
+<span data-ttu-id="50251-941">比較される 2 つのセットのうちの 2 番目のセット。</span><span class="sxs-lookup"><span data-stu-id="50251-941">The second of the two sets that are compared.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-942">set2</span><span class="sxs-lookup"><span data-stu-id="7f44c-942">set2</span></span>  
-<span data-ttu-id="7f44c-943">比較される 2 つのセットのうちの 2 番目のセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-943">The second of the two sets that are compared.</span></span>
+<span data-ttu-id="50251-942">set2</span><span class="sxs-lookup"><span data-stu-id="50251-942">set2</span></span>  
+<span data-ttu-id="50251-943">比較される 2 つのセットのうちの 2 番目のセット。</span><span class="sxs-lookup"><span data-stu-id="50251-943">The second of the two sets that are compared.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-944">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-944">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-944">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-944">Return Value</span></span>
 
-<span data-ttu-id="7f44c-945">set1 または set2 で検出された要素を含むセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-945">The set containing elements found in set1 or set2.</span></span>
+<span data-ttu-id="50251-945">set1 または set2 で検出された要素を含むセット。</span><span class="sxs-lookup"><span data-stu-id="50251-945">The set containing elements found in set1 or set2.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-946">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-946">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-946">備考</span><span class="sxs-lookup"><span data-stu-id="50251-946">Remarks</span></span>
 
-<span data-ttu-id="7f44c-947">比較される 2 つのセットは、同じタイプでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-947">The two sets that are compared must be of the same type.</span></span>
+<span data-ttu-id="50251-947">比較される 2 つのセットは、同じタイプでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="50251-947">The two sets that are compared must be of the same type.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-948">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-948">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-948">例</span><span class="sxs-lookup"><span data-stu-id="50251-948">Examples</span></span>
 
-<span data-ttu-id="7f44c-949">次の例では、2 つの整数セットを作成し、それらにいくつかの値を追加します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-949">The following example creates two sets of integers and adds some values to them.</span></span> <span data-ttu-id="7f44c-950">セットのいずれかに含まれるすべての値を含む新しいセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-950">It then creates a new set that contains all the values that are contained in either of the sets.</span></span>
+<span data-ttu-id="50251-949">次の例では、2 つの整数セットを作成し、それらにいくつかの値を追加します。</span><span class="sxs-lookup"><span data-stu-id="50251-949">The following example creates two sets of integers and adds some values to them.</span></span> <span data-ttu-id="50251-950">セットのいずれかに含まれるすべての値を含む新しいセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-950">It then creates a new set that contains all the values that are contained in either of the sets.</span></span>
 
     { 
         Set is = new Set (Types::Integer); 
@@ -2049,24 +2049,24 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-951">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-951">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-951">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-951">Method new</span></span>
 
-<span data-ttu-id="7f44c-952">指定した型の要素を含めることができるセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-952">Creates a set that can contain elements of the specified type.</span></span>
+<span data-ttu-id="50251-952">指定した型の要素を含めることができるセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-952">Creates a set that can contain elements of the specified type.</span></span>
 
     public void new(Types Type)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-953">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-953">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-953">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-953">Parameters</span></span>
 
-<span data-ttu-id="7f44c-954">種類</span><span class="sxs-lookup"><span data-stu-id="7f44c-954">Type</span></span>  
-<span data-ttu-id="7f44c-955">セット内の要素のタイプ。</span><span class="sxs-lookup"><span data-stu-id="7f44c-955">The type of the elements within the set.</span></span>
+<span data-ttu-id="50251-954">種類</span><span class="sxs-lookup"><span data-stu-id="50251-954">Type</span></span>  
+<span data-ttu-id="50251-955">セット内の要素のタイプ。</span><span class="sxs-lookup"><span data-stu-id="50251-955">The type of the elements within the set.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-956">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-956">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-956">備考</span><span class="sxs-lookup"><span data-stu-id="50251-956">Remarks</span></span>
 
-<span data-ttu-id="7f44c-957">セットが作成された後、セットのタイプを変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-957">The type of the set cannot be changed after the set has been created.</span></span>
+<span data-ttu-id="50251-957">セットが作成された後、セットのタイプを変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="50251-957">The type of the set cannot be changed after the set has been created.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-958">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-958">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-958">例</span><span class="sxs-lookup"><span data-stu-id="50251-958">Examples</span></span>
 
-<span data-ttu-id="7f44c-959">次の例では、一連の整数とオブジェクトのセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-959">The following example creates a set of integers and a set of objects.</span></span>
+<span data-ttu-id="50251-959">次の例では、一連の整数とオブジェクトのセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-959">The following example creates a set of integers and a set of objects.</span></span>
 
     { 
         // Create a set of integers. 
@@ -2075,58 +2075,58 @@ ms.locfileid: "1544189"
         Set os = new Set (Types::Class); 
     }
 
-## <a name="class-setenumerator"></a><span data-ttu-id="7f44c-960">クラス SetEnumerator</span><span class="sxs-lookup"><span data-stu-id="7f44c-960">Class SetEnumerator</span></span>
+## <a name="class-setenumerator"></a><span data-ttu-id="50251-960">クラス SetEnumerator</span><span class="sxs-lookup"><span data-stu-id="50251-960">Class SetEnumerator</span></span>
     class SetEnumerator extends Object
 
-<span data-ttu-id="7f44c-961">SetEnumerator クラスを使用すると、セット内の要素上を移動できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-961">The SetEnumerator class lets you traverse the elements in a set.</span></span>
+<span data-ttu-id="50251-961">SetEnumerator クラスを使用すると、セット内の要素上を移動できます。</span><span class="sxs-lookup"><span data-stu-id="50251-961">The SetEnumerator class lets you traverse the elements in a set.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-962">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-962">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-962">備考</span><span class="sxs-lookup"><span data-stu-id="50251-962">Remarks</span></span>
 
-<span data-ttu-id="7f44c-963">セット列挙子は、セットの最初の要素の前に開始します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-963">Set enumerators start before the first element in the set.</span></span> <span data-ttu-id="7f44c-964">セットの最初の要素を指すようにするために SetEnumerator.moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-964">You must call the SetEnumerator.moveNext method to make it point to the first element in the set.</span></span> <span data-ttu-id="7f44c-965">ベスト プラクティスとしては、set.getEnumerator メソッドが呼び出されたときに、設定されている同じ層で列挙子が自動的に作成されるため、SetIterator クラスではなく、SetEnumerator クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-965">As a best practice, use the SetEnumerator class instead of the SetIterator class, because enumerators are automatically created on the same tier as the set when the set.getEnumerator method is called.</span></span> <span data-ttu-id="7f44c-966">これにより、Caller from としてマークされたコードの潜在的な問題を回避できます。反復子とセットは別々の層に置くことができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-966">This helps you avoid a potential problem in code that is marked as Called from, where the iterator and set can be on separate tiers.</span></span> <span data-ttu-id="7f44c-967">さらに、セット列挙子はセット反復子よりも少ないコードを必要とするためパフォーマンスが少し向上します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-967">In addition, set enumerators require less code than set iterators and therefore perform slightly better.</span></span>
+<span data-ttu-id="50251-963">セット列挙子は、セットの最初の要素の前に開始します。</span><span class="sxs-lookup"><span data-stu-id="50251-963">Set enumerators start before the first element in the set.</span></span> <span data-ttu-id="50251-964">セットの最初の要素を指すようにするために SetEnumerator.moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-964">You must call the SetEnumerator.moveNext method to make it point to the first element in the set.</span></span> <span data-ttu-id="50251-965">ベスト プラクティスとしては、set.getEnumerator メソッドが呼び出されたときに、設定されている同じ層で列挙子が自動的に作成されるため、SetIterator クラスではなく、SetEnumerator クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="50251-965">As a best practice, use the SetEnumerator class instead of the SetIterator class, because enumerators are automatically created on the same tier as the set when the set.getEnumerator method is called.</span></span> <span data-ttu-id="50251-966">これにより、Caller from としてマークされたコードの潜在的な問題を回避できます。反復子とセットは別々の層に置くことができます。</span><span class="sxs-lookup"><span data-stu-id="50251-966">This helps you avoid a potential problem in code that is marked as Called from, where the iterator and set can be on separate tiers.</span></span> <span data-ttu-id="50251-967">さらに、セット列挙子はセット反復子よりも少ないコードを必要とするためパフォーマンスが少し向上します。</span><span class="sxs-lookup"><span data-stu-id="50251-967">In addition, set enumerators require less code than set iterators and therefore perform slightly better.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-968">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-968">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-968">例</span><span class="sxs-lookup"><span data-stu-id="50251-968">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-969">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-969">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-969">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-969">Methods</span></span>
 
-| <span data-ttu-id="7f44c-970">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-970">Method</span></span>                        | <span data-ttu-id="7f44c-971">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-971">Description</span></span>                                                                                                |
+| <span data-ttu-id="50251-970">方法</span><span class="sxs-lookup"><span data-stu-id="50251-970">Method</span></span>                        | <span data-ttu-id="50251-971">説明</span><span class="sxs-lookup"><span data-stu-id="50251-971">Description</span></span>                                                                                                |
 |-------------------------------|------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-972">public AnyType current()</span><span class="sxs-lookup"><span data-stu-id="7f44c-972">public AnyType current()</span></span>      | <span data-ttu-id="7f44c-973">列挙子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-973">Retrieves the value that is pointed to by the enumerator.</span></span>                                                  |
-| <span data-ttu-id="7f44c-974">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="7f44c-974">public str definitionString()</span></span> | <span data-ttu-id="7f44c-975">列挙子の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-975">Returns a description of the enumerator.</span></span>                                                                   |
-| <span data-ttu-id="7f44c-976">public boolean moveNext()</span><span class="sxs-lookup"><span data-stu-id="7f44c-976">public boolean moveNext()</span></span>     | <span data-ttu-id="7f44c-977">列挙子が有効なセット要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-977">Determines whether the enumerator denotes a valid set element.</span></span>                                             |
-| <span data-ttu-id="7f44c-978">public str toString()</span><span class="sxs-lookup"><span data-stu-id="7f44c-978">public str toString()</span></span>         | <span data-ttu-id="7f44c-979">列挙子が現在ポイントしているセット内の要素の内容の説明を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-979">Retrieves a description of the contents of the element in the set that the enumerator currently points to.</span></span> |
-| <span data-ttu-id="7f44c-980">public void reset()</span><span class="sxs-lookup"><span data-stu-id="7f44c-980">public void reset()</span></span>           | <span data-ttu-id="7f44c-981">列挙子をセットの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-981">Moves the enumerator to the start of the set.</span></span>                                                              |
+| <span data-ttu-id="50251-972">public AnyType current()</span><span class="sxs-lookup"><span data-stu-id="50251-972">public AnyType current()</span></span>      | <span data-ttu-id="50251-973">列挙子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-973">Retrieves the value that is pointed to by the enumerator.</span></span>                                                  |
+| <span data-ttu-id="50251-974">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="50251-974">public str definitionString()</span></span> | <span data-ttu-id="50251-975">列挙子の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-975">Returns a description of the enumerator.</span></span>                                                                   |
+| <span data-ttu-id="50251-976">public boolean moveNext()</span><span class="sxs-lookup"><span data-stu-id="50251-976">public boolean moveNext()</span></span>     | <span data-ttu-id="50251-977">列挙子が有効なセット要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="50251-977">Determines whether the enumerator denotes a valid set element.</span></span>                                             |
+| <span data-ttu-id="50251-978">public str toString()</span><span class="sxs-lookup"><span data-stu-id="50251-978">public str toString()</span></span>         | <span data-ttu-id="50251-979">列挙子が現在ポイントしているセット内の要素の内容の説明を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-979">Retrieves a description of the contents of the element in the set that the enumerator currently points to.</span></span> |
+| <span data-ttu-id="50251-980">public void reset()</span><span class="sxs-lookup"><span data-stu-id="50251-980">public void reset()</span></span>           | <span data-ttu-id="50251-981">列挙子をセットの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="50251-981">Moves the enumerator to the start of the set.</span></span>                                                              |
 
-### <a name="method-current"></a><span data-ttu-id="7f44c-982">メソッド current</span><span class="sxs-lookup"><span data-stu-id="7f44c-982">Method current</span></span>
+### <a name="method-current"></a><span data-ttu-id="50251-982">メソッド current</span><span class="sxs-lookup"><span data-stu-id="50251-982">Method current</span></span>
 
-<span data-ttu-id="7f44c-983">列挙子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-983">Retrieves the value that is pointed to by the enumerator.</span></span>
+<span data-ttu-id="50251-983">列挙子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-983">Retrieves the value that is pointed to by the enumerator.</span></span>
 
     public AnyType current()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-984">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-984">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-984">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-984">Return Value</span></span>
 
-<span data-ttu-id="7f44c-985">セット内で現在指定されている値。</span><span class="sxs-lookup"><span data-stu-id="7f44c-985">The value that is currently pointed to in the set.</span></span>
+<span data-ttu-id="50251-985">セット内で現在指定されている値。</span><span class="sxs-lookup"><span data-stu-id="50251-985">The value that is currently pointed to in the set.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-986">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-986">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-986">備考</span><span class="sxs-lookup"><span data-stu-id="50251-986">Remarks</span></span>
 
-<span data-ttu-id="7f44c-987">戻り値のタイプは、セット内の項目のタイプによって決まります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-987">The type of the return value is determined by the type of items in the set.</span></span> <span data-ttu-id="7f44c-988">現在のメソッドを呼び出す前に、SetEnumerator.moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-988">You must call the SetEnumerator.moveNext method before you call the current method.</span></span>
+<span data-ttu-id="50251-987">戻り値のタイプは、セット内の項目のタイプによって決まります。</span><span class="sxs-lookup"><span data-stu-id="50251-987">The type of the return value is determined by the type of items in the set.</span></span> <span data-ttu-id="50251-988">現在のメソッドを呼び出す前に、SetEnumerator.moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-988">You must call the SetEnumerator.moveNext method before you call the current method.</span></span>
 
-### <a name="method-definitionstring"></a><span data-ttu-id="7f44c-989">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="7f44c-989">Method definitionString</span></span>
+### <a name="method-definitionstring"></a><span data-ttu-id="50251-989">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="50251-989">Method definitionString</span></span>
 
-<span data-ttu-id="7f44c-990">列挙子の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-990">Returns a description of the enumerator.</span></span>
+<span data-ttu-id="50251-990">列挙子の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-990">Returns a description of the enumerator.</span></span>
 
     public str definitionString()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-991">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-991">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-991">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-991">Return Value</span></span>
 
-<span data-ttu-id="7f44c-992">列挙子の説明を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-992">A string that contains a description of the enumerator.</span></span>
+<span data-ttu-id="50251-992">列挙子の説明を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-992">A string that contains a description of the enumerator.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-993">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-993">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-993">備考</span><span class="sxs-lookup"><span data-stu-id="50251-993">Remarks</span></span>
 
-<span data-ttu-id="7f44c-994">たとえば、整数のセットの列挙子は、int セット列挙子を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-994">For example, an enumerator for a set of integers would return "int set enumerator".</span></span>
+<span data-ttu-id="50251-994">たとえば、整数のセットの列挙子は、int セット列挙子を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-994">For example, an enumerator for a set of integers would return "int set enumerator".</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-995">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-995">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-995">例</span><span class="sxs-lookup"><span data-stu-id="50251-995">Examples</span></span>
 
-<span data-ttu-id="7f44c-996">次の例では、セットとそのセットの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-996">The following example creates a set and an enumerator for the set.</span></span> <span data-ttu-id="7f44c-997">definitionString メソッドを使用して、列挙子の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-997">The definitionString method is used to print a description of the enumerator.</span></span>
+<span data-ttu-id="50251-996">次の例では、セットとそのセットの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-996">The following example creates a set and an enumerator for the set.</span></span> <span data-ttu-id="50251-997">definitionString メソッドを使用して、列挙子の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="50251-997">The definitionString method is used to print a description of the enumerator.</span></span>
 
     { 
         Set mySet = new Set(Types::Integer); 
@@ -2143,33 +2143,33 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-movenext"></a><span data-ttu-id="7f44c-998">メソッド moveNext</span><span class="sxs-lookup"><span data-stu-id="7f44c-998">Method moveNext</span></span>
+### <a name="method-movenext"></a><span data-ttu-id="50251-998">メソッド moveNext</span><span class="sxs-lookup"><span data-stu-id="50251-998">Method moveNext</span></span>
 
-<span data-ttu-id="7f44c-999">列挙子が有効なセット要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-999">Determines whether the enumerator denotes a valid set element.</span></span>
+<span data-ttu-id="50251-999">列挙子が有効なセット要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="50251-999">Determines whether the enumerator denotes a valid set element.</span></span>
 
     public boolean moveNext()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1000">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1000">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1000">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1000">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1001">セット内の現在の職位が有効な要素を保持している場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1001">true if the current position in the set holds a valid element; otherwise, false.</span></span>
+<span data-ttu-id="50251-1001">セット内の現在の職位が有効な要素を保持している場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-1001">true if the current position in the set holds a valid element; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1002">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1002">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1002">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1002">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1003">セット列挙子は、セットの最初の要素の前に開始します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1003">Set enumerators start before the first element in the set.</span></span> <span data-ttu-id="7f44c-1004">セットの最初の要素を指すようにするために moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1004">You must call the moveNext method to make it point to the first element in the set.</span></span>
+<span data-ttu-id="50251-1003">セット列挙子は、セットの最初の要素の前に開始します。</span><span class="sxs-lookup"><span data-stu-id="50251-1003">Set enumerators start before the first element in the set.</span></span> <span data-ttu-id="50251-1004">セットの最初の要素を指すようにするために moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1004">You must call the moveNext method to make it point to the first element in the set.</span></span>
 
-### <a name="method-tostring"></a><span data-ttu-id="7f44c-1005">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="7f44c-1005">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="50251-1005">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="50251-1005">Method toString</span></span>
 
-<span data-ttu-id="7f44c-1006">列挙子が現在ポイントしているセット内の要素の内容の説明を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1006">Retrieves a description of the contents of the element in the set that the enumerator currently points to.</span></span>
+<span data-ttu-id="50251-1006">列挙子が現在ポイントしているセット内の要素の内容の説明を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1006">Retrieves a description of the contents of the element in the set that the enumerator currently points to.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1007">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1007">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1007">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1007">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1008">設定の現在の要素の説明を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1008">A string that contains a description of the current element in the set.</span></span>
+<span data-ttu-id="50251-1008">設定の現在の要素の説明を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-1008">A string that contains a description of the current element in the set.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1009">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1009">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1009">例</span><span class="sxs-lookup"><span data-stu-id="50251-1009">Examples</span></span>
 
-<span data-ttu-id="7f44c-1010">次の例では、整数のセットを作成し、最初の要素と 2 番目の要素の内容をセットに出力します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1010">The following example creates a set of integers, and then prints the content of the first and second elements in the set.</span></span>
+<span data-ttu-id="50251-1010">次の例では、整数のセットを作成し、最初の要素と 2 番目の要素の内容をセットに出力します。</span><span class="sxs-lookup"><span data-stu-id="50251-1010">The following example creates a set of integers, and then prints the content of the first and second elements in the set.</span></span>
 
     { 
         Set mySet = new Set(Types::Integer); 
@@ -2195,19 +2195,19 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-reset"></a><span data-ttu-id="7f44c-1011">メソッド reset</span><span class="sxs-lookup"><span data-stu-id="7f44c-1011">Method reset</span></span>
+### <a name="method-reset"></a><span data-ttu-id="50251-1011">メソッド reset</span><span class="sxs-lookup"><span data-stu-id="50251-1011">Method reset</span></span>
 
-<span data-ttu-id="7f44c-1012">列挙子をセットの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1012">Moves the enumerator to the start of the set.</span></span>
+<span data-ttu-id="50251-1012">列挙子をセットの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="50251-1012">Moves the enumerator to the start of the set.</span></span>
 
     public void reset()
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1013">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1013">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1013">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1013">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1014">reset メソッドは、列挙子をセットの先頭、セットの最初の要素の前に移動します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1014">The reset method moves the enumerator to the start of the set, in front of the first element in the set.</span></span> <span data-ttu-id="7f44c-1015">セットの最初の要素を指すようにするために SetEnumerator.moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1015">You must call the SetEnumerator.moveNext method to make it point to the first element in the set.</span></span>
+<span data-ttu-id="50251-1014">reset メソッドは、列挙子をセットの先頭、セットの最初の要素の前に移動します。</span><span class="sxs-lookup"><span data-stu-id="50251-1014">The reset method moves the enumerator to the start of the set, in front of the first element in the set.</span></span> <span data-ttu-id="50251-1015">セットの最初の要素を指すようにするために SetEnumerator.moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1015">You must call the SetEnumerator.moveNext method to make it point to the first element in the set.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1016">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1016">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1016">例</span><span class="sxs-lookup"><span data-stu-id="50251-1016">Examples</span></span>
 
-<span data-ttu-id="7f44c-1017">次の例では、セット作成し、そのセットの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1017">The following example creates a set and then creates an enumerator for the set.</span></span> <span data-ttu-id="7f44c-1018">reset メソッドを使用してセットの先頭に移動し、moveNext メソッドを使用してセットの最初の要素に移動します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1018">It uses the reset method to move to the start of the set and then uses the moveNext method to move to the first element in the set.</span></span>
+<span data-ttu-id="50251-1017">次の例では、セット作成し、そのセットの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1017">The following example creates a set and then creates an enumerator for the set.</span></span> <span data-ttu-id="50251-1018">reset メソッドを使用してセットの先頭に移動し、moveNext メソッドを使用してセットの最初の要素に移動します。</span><span class="sxs-lookup"><span data-stu-id="50251-1018">It uses the reset method to move to the start of the set and then uses the moveNext method to move to the first element in the set.</span></span>
 
     { 
         Set mySet = new Set(Types::Integer); 
@@ -2229,18 +2229,18 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-## <a name="class-setiterator"></a><span data-ttu-id="7f44c-1019">クラス SetIterator</span><span class="sxs-lookup"><span data-stu-id="7f44c-1019">Class SetIterator</span></span>
+## <a name="class-setiterator"></a><span data-ttu-id="50251-1019">クラス SetIterator</span><span class="sxs-lookup"><span data-stu-id="50251-1019">Class SetIterator</span></span>
     class SetIterator extends Object
 
-<span data-ttu-id="7f44c-1020">SetIterator クラスを使用すると、セット内の要素を反復処理できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1020">The SetIterator class allows you to iterate over the elements in a set.</span></span>
+<span data-ttu-id="50251-1020">SetIterator クラスを使用すると、セット内の要素を反復処理できます。</span><span class="sxs-lookup"><span data-stu-id="50251-1020">The SetIterator class allows you to iterate over the elements in a set.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1021">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1021">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1021">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1021">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1022">セットの反復子は、反復処理する対象となるセットにポインターとして表示することができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1022">Set iterators may be viewed as pointers into the sets over which they iterate.</span></span> <span data-ttu-id="7f44c-1023">繰り返しを開始し、より多くの要素が利用可能であるかどうかを決定し、さらに繰り返しによりポイントされる要素をフェッチする機能が利用可能です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1023">Functionality is available to start the iteration, to determine whether more elements are available, and to fetch the element pointed to by the iterator.</span></span> <span data-ttu-id="7f44c-1024">新しく作成されるセット反復子は、セットの最初の要素に配置されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1024">Newly created set iterators are positioned at the first element in the set.</span></span> <span data-ttu-id="7f44c-1025">繰り返し中に要素が出現する順序は、要素が挿入される順序ではなく、要素の順序によって定義されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1025">The order in which the elements occur during iteration is defined not by the sequence in which the elements are inserted, but by the ordering of the elements.</span></span> <span data-ttu-id="7f44c-1026">より下位の値の要素は、上位の値の要素の前に表示されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1026">Elements with lower values appear before elements with higher values.</span></span> <span data-ttu-id="7f44c-1027">型の通常の順序が使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1027">The usual ordering for the types is used.</span></span> <span data-ttu-id="7f44c-1028">構成要素がオブジェクトである場合、順序を指定するのにオブジェクトのアドレスが使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1028">If the constituent elements are objects; however, the addresses of the objects are used to supply the ordering.</span></span> <span data-ttu-id="7f44c-1029">特定の注文が推測される可能性はありません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1029">No specific ordering may consequently be inferred.</span></span> <span data-ttu-id="7f44c-1030">オブジェクトのアドレスは、本来、一時的です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1030">The addresses of the objects are transient by nature.</span></span> <span data-ttu-id="7f44c-1031">SetIterator クラスではなく、そのクラスを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1031">It is best practice to use the class instead of the SetIterator class.</span></span> <span data-ttu-id="7f44c-1032">これにより、別の層の反復子を使用して 1 つの層のセットにアクセスする場合に問題を回避できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1032">This avoids problems if you are accessing the set on one tier with an iterator on another tier.</span></span> <span data-ttu-id="7f44c-1033">セット反復子および反復処理するセットは、同じクライアント/サーバー側にある必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1033">Set iterators and the sets over which they iterate must be on the same client/server side.</span></span> <span data-ttu-id="7f44c-1034">SetIterator を使用し、コードが Called from としてマークされている場合、セットと反復子が別の層で終了しており、コードが失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1034">If you use SetIterator and code is marked as Called from, it is possible that the set and the iterator will end up on different tiers, and the code will fail.</span></span> <span data-ttu-id="7f44c-1035">SetEnumerator を使用する場合、列挙子はセットと同じ層に自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1035">If you use SetEnumerator, the enumerator is automatically created on the same tier as the set.</span></span> <span data-ttu-id="7f44c-1036">また、セット内の次のアイテムに移動するには、反復子セットを使用している場合は、より多くのメソッドと次のメソッドを明示的に呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1036">Also, to move to the next item in a set, you must explicitly call the more and next methods if you are using a set iterator.</span></span> <span data-ttu-id="7f44c-1037">SetEnumerator を使用する場合、moveNext メソッドを呼び出すだけです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1037">If you use SetEnumerator, you only have to call moveNext method.</span></span>
+<span data-ttu-id="50251-1022">セットの反復子は、反復処理する対象となるセットにポインターとして表示することができます。</span><span class="sxs-lookup"><span data-stu-id="50251-1022">Set iterators may be viewed as pointers into the sets over which they iterate.</span></span> <span data-ttu-id="50251-1023">繰り返しを開始し、より多くの要素が利用可能であるかどうかを決定し、さらに繰り返しによりポイントされる要素をフェッチする機能が利用可能です。</span><span class="sxs-lookup"><span data-stu-id="50251-1023">Functionality is available to start the iteration, to determine whether more elements are available, and to fetch the element pointed to by the iterator.</span></span> <span data-ttu-id="50251-1024">新しく作成されるセット反復子は、セットの最初の要素に配置されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1024">Newly created set iterators are positioned at the first element in the set.</span></span> <span data-ttu-id="50251-1025">繰り返し中に要素が出現する順序は、要素が挿入される順序ではなく、要素の順序によって定義されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1025">The order in which the elements occur during iteration is defined not by the sequence in which the elements are inserted, but by the ordering of the elements.</span></span> <span data-ttu-id="50251-1026">より下位の値の要素は、上位の値の要素の前に表示されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1026">Elements with lower values appear before elements with higher values.</span></span> <span data-ttu-id="50251-1027">型の通常の順序が使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1027">The usual ordering for the types is used.</span></span> <span data-ttu-id="50251-1028">構成要素がオブジェクトである場合、順序を指定するのにオブジェクトのアドレスが使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1028">If the constituent elements are objects; however, the addresses of the objects are used to supply the ordering.</span></span> <span data-ttu-id="50251-1029">特定の注文が推測される可能性はありません。</span><span class="sxs-lookup"><span data-stu-id="50251-1029">No specific ordering may consequently be inferred.</span></span> <span data-ttu-id="50251-1030">オブジェクトのアドレスは、本来、一時的です。</span><span class="sxs-lookup"><span data-stu-id="50251-1030">The addresses of the objects are transient by nature.</span></span> <span data-ttu-id="50251-1031">SetIterator クラスではなく、そのクラスを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="50251-1031">It is best practice to use the class instead of the SetIterator class.</span></span> <span data-ttu-id="50251-1032">これにより、別の層の反復子を使用して 1 つの層のセットにアクセスする場合に問題を回避できます。</span><span class="sxs-lookup"><span data-stu-id="50251-1032">This avoids problems if you are accessing the set on one tier with an iterator on another tier.</span></span> <span data-ttu-id="50251-1033">セット反復子および反復処理するセットは、同じクライアント/サーバー側にある必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1033">Set iterators and the sets over which they iterate must be on the same client/server side.</span></span> <span data-ttu-id="50251-1034">SetIterator を使用し、コードが Called from としてマークされている場合、セットと反復子が別の層で終了しており、コードが失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1034">If you use SetIterator and code is marked as Called from, it is possible that the set and the iterator will end up on different tiers, and the code will fail.</span></span> <span data-ttu-id="50251-1035">SetEnumerator を使用する場合、列挙子はセットと同じ層に自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1035">If you use SetEnumerator, the enumerator is automatically created on the same tier as the set.</span></span> <span data-ttu-id="50251-1036">また、セット内の次のアイテムに移動するには、反復子セットを使用している場合は、より多くのメソッドと次のメソッドを明示的に呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1036">Also, to move to the next item in a set, you must explicitly call the more and next methods if you are using a set iterator.</span></span> <span data-ttu-id="50251-1037">SetEnumerator を使用する場合、moveNext メソッドを呼び出すだけです。</span><span class="sxs-lookup"><span data-stu-id="50251-1037">If you use SetEnumerator, you only have to call moveNext method.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1038">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1038">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1038">例</span><span class="sxs-lookup"><span data-stu-id="50251-1038">Examples</span></span>
 
-<span data-ttu-id="7f44c-1039">次の例では、整数のセットを作成し、4 つの値をその中に追加します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1039">The following example creates a set of integers and then adds four values to it.</span></span> <span data-ttu-id="7f44c-1040">各セット要素に関する情報を出力しているセットを通じて反復処理します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1040">It then iterates through the set that is printing out information about each set element.</span></span>
+<span data-ttu-id="50251-1039">次の例では、整数のセットを作成し、4 つの値をその中に追加します。</span><span class="sxs-lookup"><span data-stu-id="50251-1039">The following example creates a set of integers and then adds four values to it.</span></span> <span data-ttu-id="50251-1040">各セット要素に関する情報を出力しているセットを通じて反復処理します。</span><span class="sxs-lookup"><span data-stu-id="50251-1040">It then iterates through the set that is printing out information about each set element.</span></span>
 
         Set s1 = new Set (Types::Integer); 
         int theElement; 
@@ -2266,47 +2266,47 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1041">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1041">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1041">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1041">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1042">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1042">Method</span></span>                        | <span data-ttu-id="7f44c-1043">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1043">Description</span></span>                                                                                            |
+| <span data-ttu-id="50251-1042">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1042">Method</span></span>                        | <span data-ttu-id="50251-1043">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1043">Description</span></span>                                                                                            |
 |-------------------------------|--------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1044">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1044">public str definitionString()</span></span> | <span data-ttu-id="7f44c-1045">反復子のタイプのテキスト表現を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1045">Returns a textual representation of the type of the iterator.</span></span>                                          |
-| <span data-ttu-id="7f44c-1046">public boolean more()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1046">public boolean more()</span></span>         | <span data-ttu-id="7f44c-1047">反復子が有効なセット要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1047">Determines whether the iterator denotes a valid set element.</span></span>                                           |
-| <span data-ttu-id="7f44c-1048">public str toString()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1048">public str toString()</span></span>         | <span data-ttu-id="7f44c-1049">反復子によりポイントされているセット内の現在の要素のテキスト形式を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1049">Returns a textual representation of the current element in the set that is pointed to by the iterator.</span></span> |
-| <span data-ttu-id="7f44c-1050">public AnyType value()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1050">public AnyType value()</span></span>        | <span data-ttu-id="7f44c-1051">反復子がポイントしている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1051">Retrieves the value that the iterator is pointing to.</span></span>                                                  |
-| <span data-ttu-id="7f44c-1052">public void next()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1052">public void next()</span></span>            | <span data-ttu-id="7f44c-1053">次の要素に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1053">Moves the iterator to the next element.</span></span>                                                                |
-| <span data-ttu-id="7f44c-1054">public void new(Set set)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1054">public void new(Set set)</span></span>      | <span data-ttu-id="7f44c-1055">セットに対する新しい反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1055">Creates a new iterator for a set.</span></span>                                                                      |
-| <span data-ttu-id="7f44c-1056">public void begin()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1056">public void begin()</span></span>           | <span data-ttu-id="7f44c-1057">反復子をセットの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1057">Moves the iterator to the start of the set.</span></span>                                                            |
-| <span data-ttu-id="7f44c-1058">public void delete()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1058">public void delete()</span></span>          | <span data-ttu-id="7f44c-1059">セットの反復子によってポイントされている要素を削除します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1059">Removes the element that is pointed to by the iterator of the set.</span></span>                                     |
-| <span data-ttu-id="7f44c-1060">public void end()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1060">public void end()</span></span>             | <span data-ttu-id="7f44c-1061">セットで最後の要素の後に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1061">Moves the iterator past the last element in the set.</span></span>                                                   |
+| <span data-ttu-id="50251-1044">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="50251-1044">public str definitionString()</span></span> | <span data-ttu-id="50251-1045">反復子のタイプのテキスト表現を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1045">Returns a textual representation of the type of the iterator.</span></span>                                          |
+| <span data-ttu-id="50251-1046">public boolean more()</span><span class="sxs-lookup"><span data-stu-id="50251-1046">public boolean more()</span></span>         | <span data-ttu-id="50251-1047">反復子が有効なセット要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1047">Determines whether the iterator denotes a valid set element.</span></span>                                           |
+| <span data-ttu-id="50251-1048">public str toString()</span><span class="sxs-lookup"><span data-stu-id="50251-1048">public str toString()</span></span>         | <span data-ttu-id="50251-1049">反復子によりポイントされているセット内の現在の要素のテキスト形式を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1049">Returns a textual representation of the current element in the set that is pointed to by the iterator.</span></span> |
+| <span data-ttu-id="50251-1050">public AnyType value()</span><span class="sxs-lookup"><span data-stu-id="50251-1050">public AnyType value()</span></span>        | <span data-ttu-id="50251-1051">反復子がポイントしている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1051">Retrieves the value that the iterator is pointing to.</span></span>                                                  |
+| <span data-ttu-id="50251-1052">public void next()</span><span class="sxs-lookup"><span data-stu-id="50251-1052">public void next()</span></span>            | <span data-ttu-id="50251-1053">次の要素に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="50251-1053">Moves the iterator to the next element.</span></span>                                                                |
+| <span data-ttu-id="50251-1054">public void new(Set set)</span><span class="sxs-lookup"><span data-stu-id="50251-1054">public void new(Set set)</span></span>      | <span data-ttu-id="50251-1055">セットに対する新しい反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1055">Creates a new iterator for a set.</span></span>                                                                      |
+| <span data-ttu-id="50251-1056">public void begin()</span><span class="sxs-lookup"><span data-stu-id="50251-1056">public void begin()</span></span>           | <span data-ttu-id="50251-1057">反復子をセットの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="50251-1057">Moves the iterator to the start of the set.</span></span>                                                            |
+| <span data-ttu-id="50251-1058">public void delete()</span><span class="sxs-lookup"><span data-stu-id="50251-1058">public void delete()</span></span>          | <span data-ttu-id="50251-1059">セットの反復子によってポイントされている要素を削除します。</span><span class="sxs-lookup"><span data-stu-id="50251-1059">Removes the element that is pointed to by the iterator of the set.</span></span>                                     |
+| <span data-ttu-id="50251-1060">public void end()</span><span class="sxs-lookup"><span data-stu-id="50251-1060">public void end()</span></span>             | <span data-ttu-id="50251-1061">セットで最後の要素の後に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="50251-1061">Moves the iterator past the last element in the set.</span></span>                                                   |
 
-### <a name="method-definitionstring"></a><span data-ttu-id="7f44c-1062">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="7f44c-1062">Method definitionString</span></span>
+### <a name="method-definitionstring"></a><span data-ttu-id="50251-1062">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="50251-1062">Method definitionString</span></span>
 
-<span data-ttu-id="7f44c-1063">反復子のタイプのテキスト表現を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1063">Returns a textual representation of the type of the iterator.</span></span>
+<span data-ttu-id="50251-1063">反復子のタイプのテキスト表現を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1063">Returns a textual representation of the type of the iterator.</span></span>
 
     public str definitionString()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1064">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1064">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1064">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1064">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1065">反復子のタイプを示す文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1065">A string that indicates the type of the iterator.</span></span>
+<span data-ttu-id="50251-1065">反復子のタイプを示す文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-1065">A string that indicates the type of the iterator.</span></span>
 
-### <a name="method-more"></a><span data-ttu-id="7f44c-1066">メソッド more</span><span class="sxs-lookup"><span data-stu-id="7f44c-1066">Method more</span></span>
+### <a name="method-more"></a><span data-ttu-id="50251-1066">メソッド more</span><span class="sxs-lookup"><span data-stu-id="50251-1066">Method more</span></span>
 
-<span data-ttu-id="7f44c-1067">反復子が有効なセット要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1067">Determines whether the iterator denotes a valid set element.</span></span>
+<span data-ttu-id="50251-1067">反復子が有効なセット要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1067">Determines whether the iterator denotes a valid set element.</span></span>
 
     public boolean more()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1068">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1068">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1068">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1068">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1069">反復子が有効な要素を表す場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1069">true if the iterator denotes a valid element; otherwise, false.</span></span>
+<span data-ttu-id="50251-1069">反復子が有効な要素を表す場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-1069">true if the iterator denotes a valid element; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1070">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1070">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1070">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1070">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1071">このメソッドが false を返すときに反復子が指す要素にアクセスしようとするとエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1071">Attempting to access an element that is pointed to by an iterator when this method returns false will result in an error.</span></span> <span data-ttu-id="7f44c-1072">このメソッドは、反復子が有効な要素を指しているかどうかだけをチェックします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1072">This method will check only whether the iterator points to a valid element.</span></span> <span data-ttu-id="7f44c-1073">セットにより多くの要素があるかどうかは確認されません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1073">It will not check whether there are more elements in the set.</span></span>
+<span data-ttu-id="50251-1071">このメソッドが false を返すときに反復子が指す要素にアクセスしようとするとエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="50251-1071">Attempting to access an element that is pointed to by an iterator when this method returns false will result in an error.</span></span> <span data-ttu-id="50251-1072">このメソッドは、反復子が有効な要素を指しているかどうかだけをチェックします。</span><span class="sxs-lookup"><span data-stu-id="50251-1072">This method will check only whether the iterator points to a valid element.</span></span> <span data-ttu-id="50251-1073">セットにより多くの要素があるかどうかは確認されません。</span><span class="sxs-lookup"><span data-stu-id="50251-1073">It will not check whether there are more elements in the set.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1074">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1074">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1074">例</span><span class="sxs-lookup"><span data-stu-id="50251-1074">Examples</span></span>
 
-<span data-ttu-id="7f44c-1075">次の例では、SetIterator.more メソッドを使用して、while ループを実行する前にセット内に要素があるかどうかを確認します。これにより、奇数要素がすべてセットから削除されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1075">The following example uses the SetIterator.more method to check whether there are more elements in the set before it runs through the while loop, which deletes all the odd elements from the set.</span></span>
+<span data-ttu-id="50251-1075">次の例では、SetIterator.more メソッドを使用して、while ループを実行する前にセット内に要素があるかどうかを確認します。これにより、奇数要素がすべてセットから削除されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1075">The following example uses the SetIterator.more method to check whether there are more elements in the set before it runs through the while loop, which deletes all the odd elements from the set.</span></span>
 
     { 
         Set iset = new Set (Types::Integer); 
@@ -2335,23 +2335,23 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-tostring"></a><span data-ttu-id="7f44c-1076">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="7f44c-1076">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="50251-1076">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="50251-1076">Method toString</span></span>
 
-<span data-ttu-id="7f44c-1077">反復子によりポイントされているセット内の現在の要素のテキスト形式を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1077">Returns a textual representation of the current element in the set that is pointed to by the iterator.</span></span>
+<span data-ttu-id="50251-1077">反復子によりポイントされているセット内の現在の要素のテキスト形式を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1077">Returns a textual representation of the current element in the set that is pointed to by the iterator.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1078">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1078">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1078">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1078">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1079">設定の現在の要素のテキスト形式表記である文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1079">A string that is the textual representation of the current element in the set.</span></span>
+<span data-ttu-id="50251-1079">設定の現在の要素のテキスト形式表記である文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-1079">A string that is the textual representation of the current element in the set.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1080">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1080">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1080">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1080">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1081">反復子がセット内の最初の要素を指している場合、その文字列には "(開始)\[値\]" という形式の指示が含まれます。反復子が要素を指していない場合(つまり、more() が false を返す場合)、返される文字列は "(終了)" になります。反復子が値を指す場合、文字列は "\[値\]" になります。値は要素値の文字列表現です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1081">If the iterator points to the first element in the set, the string will contain an indication of this, in the following format: "(begin)\[value\]" If the iterator does not point to an element (that is, if more() returns false), the string returned is: "(end)" If the iterator points to a value the string is: "\[value\]" where value is a string representation of the element value.</span></span>
+<span data-ttu-id="50251-1081">反復子がセット内の最初の要素を指している場合、その文字列には "(開始)\[値\]" という形式の指示が含まれます。反復子が要素を指していない場合(つまり、more() が false を返す場合)、返される文字列は "(終了)" になります。反復子が値を指す場合、文字列は "\[値\]" になります。値は要素値の文字列表現です。</span><span class="sxs-lookup"><span data-stu-id="50251-1081">If the iterator points to the first element in the set, the string will contain an indication of this, in the following format: "(begin)\[value\]" If the iterator does not point to an element (that is, if more() returns false), the string returned is: "(end)" If the iterator points to a value the string is: "\[value\]" where value is a string representation of the element value.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1082">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1082">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1082">例</span><span class="sxs-lookup"><span data-stu-id="50251-1082">Examples</span></span>
 
-<span data-ttu-id="7f44c-1083">次の例では、SetIterator.toString メソッドを使用して、反復子がセットのスキャンを開始する前にポイントする、そのセットの値の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1083">The following example uses the SetIterator.toString method to print a description of the value in the set that the iterator points to before it starts traversing the set.</span></span>
+<span data-ttu-id="50251-1083">次の例では、SetIterator.toString メソッドを使用して、反復子がセットのスキャンを開始する前にポイントする、そのセットの値の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="50251-1083">The following example uses the SetIterator.toString method to print a description of the value in the set that the iterator points to before it starts traversing the set.</span></span>
 
     { 
         Set s1 = new Set (Types::Integer); 
@@ -2376,23 +2376,23 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-value"></a><span data-ttu-id="7f44c-1084">メソッド value</span><span class="sxs-lookup"><span data-stu-id="7f44c-1084">Method value</span></span>
+### <a name="method-value"></a><span data-ttu-id="50251-1084">メソッド value</span><span class="sxs-lookup"><span data-stu-id="50251-1084">Method value</span></span>
 
-<span data-ttu-id="7f44c-1085">反復子がポイントしている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1085">Retrieves the value that the iterator is pointing to.</span></span>
+<span data-ttu-id="50251-1085">反復子がポイントしている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1085">Retrieves the value that the iterator is pointing to.</span></span>
 
     public AnyType value()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1086">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1086">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1086">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1086">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1087">反復子で示される値。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1087">The value denoted by the iterator.</span></span>
+<span data-ttu-id="50251-1087">反復子で示される値。</span><span class="sxs-lookup"><span data-stu-id="50251-1087">The value denoted by the iterator.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1088">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1088">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1088">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1088">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1089">SetIterator.more を使用して、set 要素のキー値を取得する前に要素が存在するかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1089">Use SetIterator.more to check whether an element exists before trying to retrieve the key value of the set element.</span></span>
+<span data-ttu-id="50251-1089">SetIterator.more を使用して、set 要素のキー値を取得する前に要素が存在するかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="50251-1089">Use SetIterator.more to check whether an element exists before trying to retrieve the key value of the set element.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1090">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1090">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1090">例</span><span class="sxs-lookup"><span data-stu-id="50251-1090">Examples</span></span>
 
-<span data-ttu-id="7f44c-1091">次の例では、SetIterator.value メソッドを使用して、セット内の現在の項目の値を出力します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1091">The following example uses the SetIterator.value method to print the value of the current item in the set.</span></span>
+<span data-ttu-id="50251-1091">次の例では、SetIterator.value メソッドを使用して、セット内の現在の項目の値を出力します。</span><span class="sxs-lookup"><span data-stu-id="50251-1091">The following example uses the SetIterator.value method to print the value of the current item in the set.</span></span>
 
     { 
         Set s1 = new Set (Types::Integer); 
@@ -2416,19 +2416,19 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-next"></a><span data-ttu-id="7f44c-1092">メソッド next</span><span class="sxs-lookup"><span data-stu-id="7f44c-1092">Method next</span></span>
+### <a name="method-next"></a><span data-ttu-id="50251-1092">メソッド next</span><span class="sxs-lookup"><span data-stu-id="50251-1092">Method next</span></span>
 
-<span data-ttu-id="7f44c-1093">次の要素に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1093">Moves the iterator to the next element.</span></span>
+<span data-ttu-id="50251-1093">次の要素に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="50251-1093">Moves the iterator to the next element.</span></span>
 
     public void next()
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1094">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1094">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1094">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1094">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1095">SetIterator.more を使用して、反復子が有効な要素を指しているかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1095">Use SetIterator.more to determine whether the iterator points to a valid element.</span></span>
+<span data-ttu-id="50251-1095">SetIterator.more を使用して、反復子が有効な要素を指しているかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="50251-1095">Use SetIterator.more to determine whether the iterator points to a valid element.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1096">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1096">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1096">例</span><span class="sxs-lookup"><span data-stu-id="50251-1096">Examples</span></span>
 
-<span data-ttu-id="7f44c-1097">次の例では、SetIterator.next メソッドを使用して、反復子をセット内の次の要素に移動し、別の要素が存在するかどうかをテストし、別の要素がある場合はその値をコンテナーに追加します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1097">The following example uses the SetIterator.next method to move the iterator to the next element in the set, before testing whether there is another element, and if there is another element, adding the value to a container.</span></span>
+<span data-ttu-id="50251-1097">次の例では、SetIterator.next メソッドを使用して、反復子をセット内の次の要素に移動し、別の要素が存在するかどうかをテストし、別の要素がある場合はその値をコンテナーに追加します。</span><span class="sxs-lookup"><span data-stu-id="50251-1097">The following example uses the SetIterator.next method to move the iterator to the next element in the set, before testing whether there is another element, and if there is another element, adding the value to a container.</span></span>
 
     static public void saveSequence(classId _classId, Set _sequence) 
     { 
@@ -2448,42 +2448,42 @@ ms.locfileid: "1544189"
         //... 
     }
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-1098">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-1098">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-1098">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-1098">Method new</span></span>
 
-<span data-ttu-id="7f44c-1099">セットに対する新しい反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1099">Creates a new iterator for a set.</span></span>
+<span data-ttu-id="50251-1099">セットに対する新しい反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1099">Creates a new iterator for a set.</span></span>
 
     public void new(Set set)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1100">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1100">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1100">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1100">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1101">set</span><span class="sxs-lookup"><span data-stu-id="7f44c-1101">set</span></span>  
-<span data-ttu-id="7f44c-1102">繰り返し処理するセット。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1102">The set to iterate over.</span></span>
+<span data-ttu-id="50251-1101">set</span><span class="sxs-lookup"><span data-stu-id="50251-1101">set</span></span>  
+<span data-ttu-id="50251-1102">繰り返し処理するセット。</span><span class="sxs-lookup"><span data-stu-id="50251-1102">The set to iterate over.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1103">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1103">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1103">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1103">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1104">反復子は、セットが空でない場合、セットの最初の値に配置されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1104">The iterator is positioned at the first value in the set, if the set is not empty.</span></span>
+<span data-ttu-id="50251-1104">反復子は、セットが空でない場合、セットの最初の値に配置されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1104">The iterator is positioned at the first value in the set, if the set is not empty.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1105">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1105">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1105">例</span><span class="sxs-lookup"><span data-stu-id="50251-1105">Examples</span></span>
 
-<span data-ttu-id="7f44c-1106">次の例では、整数のセットを作成し、セットの反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1106">The following example creates a set of integers and then creates an iterator for that set</span></span>
+<span data-ttu-id="50251-1106">次の例では、整数のセットを作成し、セットの反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1106">The following example creates a set of integers and then creates an iterator for that set</span></span>
 
     Set s1 = new Set (Types::Integer); 
     SetIterator it; 
     it = new SetIterator(s1);
 
-### <a name="method-begin"></a><span data-ttu-id="7f44c-1107">メソッド begin</span><span class="sxs-lookup"><span data-stu-id="7f44c-1107">Method begin</span></span>
+### <a name="method-begin"></a><span data-ttu-id="50251-1107">メソッド begin</span><span class="sxs-lookup"><span data-stu-id="50251-1107">Method begin</span></span>
 
-<span data-ttu-id="7f44c-1108">反復子をセットの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1108">Moves the iterator to the start of the set.</span></span>
+<span data-ttu-id="50251-1108">反復子をセットの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="50251-1108">Moves the iterator to the start of the set.</span></span>
 
     public void begin()
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1109">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1109">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1109">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1109">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1110">新しく作成されるセット反復子は、セットの最初の要素に配置されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1110">Newly created set iterators are positioned at the first element in the set.</span></span> <span data-ttu-id="7f44c-1111">通常はセットを反復処理する前に begin メソッドを呼び出す必要はありません。後でポインタをリセットしたい場合にのみ、その操作を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1111">Typically, you do not need to call the begin method before you start to iterate through the set; you need to do that only if you want to reset the pointer later on.</span></span>
+<span data-ttu-id="50251-1110">新しく作成されるセット反復子は、セットの最初の要素に配置されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1110">Newly created set iterators are positioned at the first element in the set.</span></span> <span data-ttu-id="50251-1111">通常はセットを反復処理する前に begin メソッドを呼び出す必要はありません。後でポインタをリセットしたい場合にのみ、その操作を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1111">Typically, you do not need to call the begin method before you start to iterate through the set; you need to do that only if you want to reset the pointer later on.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1112">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1112">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1112">例</span><span class="sxs-lookup"><span data-stu-id="50251-1112">Examples</span></span>
 
-<span data-ttu-id="7f44c-1113">次の例では、指定されたインターフェイス、つまり \_id クラスを実装するクラスのクラス ID のセットを返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1113">The following example returns set of class IDs of the classes that implement the specified interface, that is, the \_id class.</span></span> <span data-ttu-id="7f44c-1114">スーパークラスの場合、反復子は設定からクラスを削除するために使用され、\_onlyLeafClasses パラメーターは true に設定されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1114">An iterator is used to remove classes from the set if they are superclasses, and the \_onlyLeafClasses parameter is set to true.</span></span> <span data-ttu-id="7f44c-1115">開始メソッドを使用して、セットからスーパークラスが削除された後に反復子をリセットします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1115">The begin method is used to reset the iterator after the superclasses have been removed from the set.</span></span>
+<span data-ttu-id="50251-1113">次の例では、指定されたインターフェイス、つまり \_id クラスを実装するクラスのクラス ID のセットを返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1113">The following example returns set of class IDs of the classes that implement the specified interface, that is, the \_id class.</span></span> <span data-ttu-id="50251-1114">スーパークラスの場合、反復子は設定からクラスを削除するために使用され、\_onlyLeafClasses パラメーターは true に設定されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1114">An iterator is used to remove classes from the set if they are superclasses, and the \_onlyLeafClasses parameter is set to true.</span></span> <span data-ttu-id="50251-1115">開始メソッドを使用して、セットからスーパークラスが削除された後に反復子をリセットします。</span><span class="sxs-lookup"><span data-stu-id="50251-1115">The begin method is used to reset the iterator after the superclasses have been removed from the set.</span></span>
 
     public static Set getImplements( 
         classId _id,  
@@ -2531,19 +2531,19 @@ ms.locfileid: "1544189"
         return set; 
     }
 
-### <a name="method-delete"></a><span data-ttu-id="7f44c-1116">メソッド delete</span><span class="sxs-lookup"><span data-stu-id="7f44c-1116">Method delete</span></span>
+### <a name="method-delete"></a><span data-ttu-id="50251-1116">メソッド delete</span><span class="sxs-lookup"><span data-stu-id="50251-1116">Method delete</span></span>
 
-<span data-ttu-id="7f44c-1117">セットの反復子によってポイントされている要素を削除します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1117">Removes the element that is pointed to by the iterator of the set.</span></span>
+<span data-ttu-id="50251-1117">セットの反復子によってポイントされている要素を削除します。</span><span class="sxs-lookup"><span data-stu-id="50251-1117">Removes the element that is pointed to by the iterator of the set.</span></span>
 
     public void delete()
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1118">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1118">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1118">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1118">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1119">反復子は、このメソッドを呼び出した後に次の要素を指します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1119">The iterator will point to the next element after calling this method.</span></span>
+<span data-ttu-id="50251-1119">反復子は、このメソッドを呼び出した後に次の要素を指します。</span><span class="sxs-lookup"><span data-stu-id="50251-1119">The iterator will point to the next element after calling this method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1120">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1120">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1120">例</span><span class="sxs-lookup"><span data-stu-id="50251-1120">Examples</span></span>
 
-<span data-ttu-id="7f44c-1121">次の例では、すべての奇数要素をセットから削除します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1121">The following example deletes all the odd elements from the set.</span></span>
+<span data-ttu-id="50251-1121">次の例では、すべての奇数要素をセットから削除します。</span><span class="sxs-lookup"><span data-stu-id="50251-1121">The following example deletes all the odd elements from the set.</span></span>
 
     { 
         Set iset = new Set (Types::Integer); 
@@ -2571,77 +2571,77 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-end"></a><span data-ttu-id="7f44c-1122">メソッド end</span><span class="sxs-lookup"><span data-stu-id="7f44c-1122">Method end</span></span>
+### <a name="method-end"></a><span data-ttu-id="50251-1122">メソッド end</span><span class="sxs-lookup"><span data-stu-id="50251-1122">Method end</span></span>
 
-<span data-ttu-id="7f44c-1123">セットで最後の要素の後に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1123">Moves the iterator past the last element in the set.</span></span>
+<span data-ttu-id="50251-1123">セットで最後の要素の後に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="50251-1123">Moves the iterator past the last element in the set.</span></span>
 
     public void end()
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1124">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1124">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1124">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1124">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1125">このメソッドを実行した後、より多くのメソッドは false を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1125">After executing this method, the more method will return false.</span></span>
+<span data-ttu-id="50251-1125">このメソッドを実行した後、より多くのメソッドは false を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1125">After executing this method, the more method will return false.</span></span>
 
-## <a name="class-skipaosvalidationpermission"></a><span data-ttu-id="7f44c-1126">クラス SkipAOSValidationPermission</span><span class="sxs-lookup"><span data-stu-id="7f44c-1126">Class SkipAOSValidationPermission</span></span>
+## <a name="class-skipaosvalidationpermission"></a><span data-ttu-id="50251-1126">クラス SkipAOSValidationPermission</span><span class="sxs-lookup"><span data-stu-id="50251-1126">Class SkipAOSValidationPermission</span></span>
     class SkipAOSValidationPermission extends CodeAccessPermission
 
-<span data-ttu-id="7f44c-1127">SkipAOSValidationPermission クラスは、AOS 検証を省略して、特定の API のアクセス許可をチェックする機能を制御します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1127">The SkipAOSValidationPermission class controls the ability to skip AOS validation and check permissions for specific APIs.</span></span>
+<span data-ttu-id="50251-1127">SkipAOSValidationPermission クラスは、AOS 検証を省略して、特定の API のアクセス許可をチェックする機能を制御します。</span><span class="sxs-lookup"><span data-stu-id="50251-1127">The SkipAOSValidationPermission class controls the ability to skip AOS validation and check permissions for specific APIs.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1128">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1128">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1128">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1128">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1129">保護されたすべての API のリストについては、「セキュリティで保護された API」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1129">For a list of all protected APIs, see Secured APIs.</span></span> <span data-ttu-id="7f44c-1130">保護された API が実行される前に、対応する CodeAccessPermission.demand メソッドが呼び出される、通常はサーバー層である、同じ層で assert メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1130">You must call the assert method on the same tier, usually the server tier, that the corresponding CodeAccessPermission.demand method is called on before the protected API is executed.</span></span> <span data-ttu-id="7f44c-1131">次のいずれかでサーバー層のメソッドを呼び出します。サーバー静的メソッド または RunOn クラス プロパティを使用してサーバー上で実行するように設定されているクラス インスタンス メソッド。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1131">Call a method on the server tier from one of the following: A server static method –or– A class instance method that is set to run on the server by using the RunOn class property.</span></span>
+<span data-ttu-id="50251-1129">保護されたすべての API のリストについては、「セキュリティで保護された API」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="50251-1129">For a list of all protected APIs, see Secured APIs.</span></span> <span data-ttu-id="50251-1130">保護された API が実行される前に、対応する CodeAccessPermission.demand メソッドが呼び出される、通常はサーバー層である、同じ層で assert メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1130">You must call the assert method on the same tier, usually the server tier, that the corresponding CodeAccessPermission.demand method is called on before the protected API is executed.</span></span> <span data-ttu-id="50251-1131">次のいずれかでサーバー層のメソッドを呼び出します。サーバー静的メソッド または RunOn クラス プロパティを使用してサーバー上で実行するように設定されているクラス インスタンス メソッド。</span><span class="sxs-lookup"><span data-stu-id="50251-1131">Call a method on the server tier from one of the following: A server static method –or– A class instance method that is set to run on the server by using the RunOn class property.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1132">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1132">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1132">例</span><span class="sxs-lookup"><span data-stu-id="50251-1132">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1133">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1133">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1133">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1133">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1134">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1134">Method</span></span>                                                 | <span data-ttu-id="7f44c-1135">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1135">Description</span></span>                                                                                                         |
+| <span data-ttu-id="50251-1134">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1134">Method</span></span>                                                 | <span data-ttu-id="50251-1135">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1135">Description</span></span>                                                                                                         |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1136">public CodeAccessPermission copy()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1136">public CodeAccessPermission copy()</span></span>                     | <span data-ttu-id="7f44c-1137">アクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1137">Creates and returns a copy of a permission class object.</span></span>                                                            |
-| <span data-ttu-id="7f44c-1138">public boolean isSubsetOf(CodeAccessPermission target)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1138">public boolean isSubsetOf(CodeAccessPermission target)</span></span> | <span data-ttu-id="7f44c-1139">派生クラスによって上書きされたときに、現在のアクセス許可が指定されたアクセス許可のサブセットであるかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1139">Determines whether a current permission is a subset of the specified permission when overridden by a derived class.</span></span> |
-| <span data-ttu-id="7f44c-1140">public void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1140">public void new()</span></span>                                      | <span data-ttu-id="7f44c-1141">SkipAOSValidationPermission クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1141">Initializes a new instance of the SkipAOSValidationPermission class.</span></span>                                                |
+| <span data-ttu-id="50251-1136">public CodeAccessPermission copy()</span><span class="sxs-lookup"><span data-stu-id="50251-1136">public CodeAccessPermission copy()</span></span>                     | <span data-ttu-id="50251-1137">アクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1137">Creates and returns a copy of a permission class object.</span></span>                                                            |
+| <span data-ttu-id="50251-1138">public boolean isSubsetOf(CodeAccessPermission target)</span><span class="sxs-lookup"><span data-stu-id="50251-1138">public boolean isSubsetOf(CodeAccessPermission target)</span></span> | <span data-ttu-id="50251-1139">派生クラスによって上書きされたときに、現在のアクセス許可が指定されたアクセス許可のサブセットであるかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="50251-1139">Determines whether a current permission is a subset of the specified permission when overridden by a derived class.</span></span> |
+| <span data-ttu-id="50251-1140">public void new()</span><span class="sxs-lookup"><span data-stu-id="50251-1140">public void new()</span></span>                                      | <span data-ttu-id="50251-1141">SkipAOSValidationPermission クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-1141">Initializes a new instance of the SkipAOSValidationPermission class.</span></span>                                                |
 
-### <a name="method-copy"></a><span data-ttu-id="7f44c-1142">メソッド copy</span><span class="sxs-lookup"><span data-stu-id="7f44c-1142">Method copy</span></span>
+### <a name="method-copy"></a><span data-ttu-id="50251-1142">メソッド copy</span><span class="sxs-lookup"><span data-stu-id="50251-1142">Method copy</span></span>
 
-<span data-ttu-id="7f44c-1143">アクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1143">Creates and returns a copy of a permission class object.</span></span>
+<span data-ttu-id="50251-1143">アクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1143">Creates and returns a copy of a permission class object.</span></span>
 
     public CodeAccessPermission copy()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1144">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1144">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1144">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1144">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1145">現在の派生クラスオブジェクトのコピーです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1145">A copy of the derived class object.</span></span>
+<span data-ttu-id="50251-1145">現在の派生クラスオブジェクトのコピーです。</span><span class="sxs-lookup"><span data-stu-id="50251-1145">A copy of the derived class object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1146">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1146">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1146">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1146">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1147">API のセキュリティをさらに強化するプロセスの一部として、このメソッドをオーバーライドすることができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1147">You can override this method as part of the process of making an API more secure.</span></span> <span data-ttu-id="7f44c-1148">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1148">For more information, see .</span></span>
+<span data-ttu-id="50251-1147">API のセキュリティをさらに強化するプロセスの一部として、このメソッドをオーバーライドすることができます。</span><span class="sxs-lookup"><span data-stu-id="50251-1147">You can override this method as part of the process of making an API more secure.</span></span> <span data-ttu-id="50251-1148">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="50251-1148">For more information, see .</span></span>
 
-### <a name="method-issubsetof"></a><span data-ttu-id="7f44c-1149">メソッド isSubsetOf</span><span class="sxs-lookup"><span data-stu-id="7f44c-1149">Method isSubsetOf</span></span>
+### <a name="method-issubsetof"></a><span data-ttu-id="50251-1149">メソッド isSubsetOf</span><span class="sxs-lookup"><span data-stu-id="50251-1149">Method isSubsetOf</span></span>
 
-<span data-ttu-id="7f44c-1150">派生クラスによって上書きされたときに、現在のアクセス許可が指定されたアクセス許可のサブセットであるかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1150">Determines whether a current permission is a subset of the specified permission when overridden by a derived class.</span></span>
+<span data-ttu-id="50251-1150">派生クラスによって上書きされたときに、現在のアクセス許可が指定されたアクセス許可のサブセットであるかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="50251-1150">Determines whether a current permission is a subset of the specified permission when overridden by a derived class.</span></span>
 
     public boolean isSubsetOf(CodeAccessPermission target)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1151">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1151">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1151">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1151">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1152">target</span><span class="sxs-lookup"><span data-stu-id="7f44c-1152">target</span></span>  
-<span data-ttu-id="7f44c-1153">CodeAccessPermission クラス オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1153">A CodeAccessPermission class object.</span></span>
+<span data-ttu-id="50251-1152">target</span><span class="sxs-lookup"><span data-stu-id="50251-1152">target</span></span>  
+<span data-ttu-id="50251-1153">CodeAccessPermission クラス オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="50251-1153">A CodeAccessPermission class object.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1154">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1154">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1154">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1154">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1155">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1155">true if a current permission is a subset of a specified permission; otherwise, false.</span></span>
+<span data-ttu-id="50251-1155">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-1155">true if a current permission is a subset of a specified permission; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1156">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1156">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1156">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1156">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1157">API のセキュリティをさらに強化するプロセスの一部として、メソッドをオーバーライドすることができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1157">You can override the method as part of the process of making an API more secure.</span></span> <span data-ttu-id="7f44c-1158">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1158">For more information, see .</span></span>
+<span data-ttu-id="50251-1157">API のセキュリティをさらに強化するプロセスの一部として、メソッドをオーバーライドすることができます。</span><span class="sxs-lookup"><span data-stu-id="50251-1157">You can override the method as part of the process of making an API more secure.</span></span> <span data-ttu-id="50251-1158">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="50251-1158">For more information, see .</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-1159">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-1159">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-1159">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-1159">Method new</span></span>
 
-<span data-ttu-id="7f44c-1160">SkipAOSValidationPermission クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1160">Initializes a new instance of the SkipAOSValidationPermission class.</span></span>
+<span data-ttu-id="50251-1160">SkipAOSValidationPermission クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-1160">Initializes a new instance of the SkipAOSValidationPermission class.</span></span>
 
     public void new()
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1161">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1161">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1161">例</span><span class="sxs-lookup"><span data-stu-id="50251-1161">Examples</span></span>
 
-<span data-ttu-id="7f44c-1162">次のコード例は、SkipAOSValidationPermission クラスのインスタンスを作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1162">The following code example demonstrates how to create an instance of the SkipAOSValidationPermission class.</span></span>
+<span data-ttu-id="50251-1162">次のコード例は、SkipAOSValidationPermission クラスのインスタンスを作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="50251-1162">The following code example demonstrates how to create an instance of the SkipAOSValidationPermission class.</span></span>
 
     server static void main(Args args) 
     { 
@@ -2650,18 +2650,18 @@ ms.locfileid: "1544189"
         perm = new SkipAOSValidationPermission(); 
     }
 
-## <a name="class-sqldatadictionary"></a><span data-ttu-id="7f44c-1163">クラス SqlDataDictionary</span><span class="sxs-lookup"><span data-stu-id="7f44c-1163">Class SqlDataDictionary</span></span>
+## <a name="class-sqldatadictionary"></a><span data-ttu-id="50251-1163">クラス SqlDataDictionary</span><span class="sxs-lookup"><span data-stu-id="50251-1163">Class SqlDataDictionary</span></span>
     class SqlDataDictionary extends Object
 
-<span data-ttu-id="7f44c-1164">SqlDataDictionary クラスは、データ ディクショナリ保守のメソッドのコレクションを提供します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1164">The SqlDataDictionary class provides a collection of methods for data dictionary maintenance.</span></span>
+<span data-ttu-id="50251-1164">SqlDataDictionary クラスは、データ ディクショナリ保守のメソッドのコレクションを提供します。</span><span class="sxs-lookup"><span data-stu-id="50251-1164">The SqlDataDictionary class provides a collection of methods for data dictionary maintenance.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1165">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1165">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1165">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1165">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1166">この API には、実行時に呼び出される組み込み認証チェックがあります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1166">This API has a built-in authorization check that is invoked at run time.</span></span> <span data-ttu-id="7f44c-1167">開発セキュリティ キー (SysDevelopment) にアクセスせずにユーザーが SQLDataDictionary クラスのメンバーを呼び出すと、例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1167">Calls to members of the SQLDataDictionary class by users without access to the development security key (SysDevelopment) results in an exception.</span></span>
+<span data-ttu-id="50251-1166">この API には、実行時に呼び出される組み込み認証チェックがあります。</span><span class="sxs-lookup"><span data-stu-id="50251-1166">This API has a built-in authorization check that is invoked at run time.</span></span> <span data-ttu-id="50251-1167">開発セキュリティ キー (SysDevelopment) にアクセスせずにユーザーが SQLDataDictionary クラスのメンバーを呼び出すと、例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="50251-1167">Calls to members of the SQLDataDictionary class by users without access to the development security key (SysDevelopment) results in an exception.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1168">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1168">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1168">例</span><span class="sxs-lookup"><span data-stu-id="50251-1168">Examples</span></span>
 
-<span data-ttu-id="7f44c-1169">次の例では、UserInfo テーブルがデータベースに存在するかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1169">The following example checks whether the UserInfo table exists in the database.</span></span>
+<span data-ttu-id="50251-1169">次の例では、UserInfo テーブルがデータベースに存在するかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="50251-1169">The following example checks whether the UserInfo table exists in the database.</span></span>
 
     server static public void Main(Args _args) 
     { 
@@ -2676,409 +2676,409 @@ ms.locfileid: "1544189"
         } 
     }
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1170">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1170">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1170">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1170">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1171">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1171">Method</span></span>                                                                                                               | <span data-ttu-id="7f44c-1172">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1172">Description</span></span>                                                                                                                   |
+| <span data-ttu-id="50251-1171">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1171">Method</span></span>                                                                                                               | <span data-ttu-id="50251-1172">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1172">Description</span></span>                                                                                                                   |
 |----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1173">public int indexCreate(\[TableId tableId\], \[IndexId indexId\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1173">public int indexCreate(\[TableId tableId\], \[IndexId indexId\])</span></span>                                                     | <span data-ttu-id="7f44c-1174">テーブルのインデックスを SQL データベースで作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1174">Creates the indexes of a table in the SQL database.</span></span> <span data-ttu-id="7f44c-1175">このメソッドを使用してインデックスを再作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1175">You can also use this method to re-create indexes.</span></span> |
-| <span data-ttu-id="7f44c-1176">public str indexCreateDDL(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1176">public str indexCreateDDL(TableId tableId)</span></span>                                                                           | <span data-ttu-id="7f44c-1177">テーブルのインデックスを作成するのに必要な SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1177">Generates and returns the SQL statements needed to create the indexes of a table.</span></span>                      |
-| <span data-ttu-id="7f44c-1178">public int indexDrop(\[TableId tableId\], \[IndexId indexId\], \[boolean onlyNonUnique\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1178">public int indexDrop(\[TableId tableId\], \[IndexId indexId\], \[boolean onlyNonUnique\])</span></span>                            | <span data-ttu-id="7f44c-1179">テーブルのインデックスを SQL データベースでドロップします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1179">Drops the indexes of a table in the SQL database.</span></span>                                                      |
-| <span data-ttu-id="7f44c-1180">public str name(str bmsname, \[FieldId fieldId\], \[int arrayindex\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1180">public str name(str bmsname, \[FieldId fieldId\], \[int arrayindex\])</span></span>                                                | <span data-ttu-id="7f44c-1181">任意のオブジェクト名を有効な SQL データベースのオブジェクト名、つまり、現在接続されているデータベースに有効な名前に変換します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1181">Translates any object name into a valid SQL database object-name; that is, valid for the database currently connected.</span></span>        |
-| <span data-ttu-id="7f44c-1182">public int tableCreate(\[boolean indexes\], \[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1182">public int tableCreate(\[boolean indexes\], \[TableId tableId\])</span></span>                                                     | <span data-ttu-id="7f44c-1183">1 つ以上のテーブルを SQL データベース内に作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1183">Creates one or more  tables in the SQL database.</span></span> <span data-ttu-id="7f44c-1184">また、インデックス用に作成するオプションを提供します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1184">Also, provides an option to create for index.</span></span>           |
-| <span data-ttu-id="7f44c-1185">public str tableCreateDDL(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1185">public str tableCreateDDL(TableId tableId)</span></span>                                                                           | <span data-ttu-id="7f44c-1186">テーブルを作成するため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1186">Generates and returns the SQL statement to create a table.</span></span>                                             |
-| <span data-ttu-id="7f44c-1187">public int tableDrop(TableId tableId, \[boolean prompt\_before\_drop\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1187">public int tableDrop(TableId tableId, \[boolean prompt\_before\_drop\])</span></span>                                              | <span data-ttu-id="7f44c-1188">テーブルを SQL データベースでドロップします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1188">Drops the  table in the SQL database.</span></span>                                                                    |
-| <span data-ttu-id="7f44c-1189">public str tableDropDDL(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1189">public str tableDropDDL(TableId tableId)</span></span>                                                                             | <span data-ttu-id="7f44c-1190">テーブルをドロップするため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1190">Generates and returns the SQL statement to drop a table.</span></span>                                               |
-| <span data-ttu-id="7f44c-1191">public boolean tableEmpty(TableId tableId, \[str company\], \[boolean not\_this\_company\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1191">public boolean tableEmpty(TableId tableId, \[str company\], \[boolean not\_this\_company\])</span></span>                          | <span data-ttu-id="7f44c-1192">テーブルが空でない場合は true を返します。それ以外の場合は、false を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1192">Returns true if table is not empty; otherwise false.</span></span>                                                                          |
-| <span data-ttu-id="7f44c-1193">public boolean tableExist(str sqltablename, \[boolean use\_within\_transaction\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1193">public boolean tableExist(str sqltablename, \[boolean use\_within\_transaction\])</span></span>                                    | <span data-ttu-id="7f44c-1194">テーブルが存在する場合は true を返します。それ以外の場合は、false を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1194">Returns true if table exists; otherwise false.</span></span>                                                                                |
-| <span data-ttu-id="7f44c-1195">public int tableMetaData(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1195">public int tableMetaData(TableId tableId)</span></span>                                                                            | <span data-ttu-id="7f44c-1196">データ ディクショナリ メタ データで SqlDescribe テーブルを入力します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1196">Fills the SqlDescribe table with data dictionary meta data.</span></span>                                                                   |
-| <span data-ttu-id="7f44c-1197">public int tableReindex(\[TableId tableId\], \[IndexId indexId\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1197">public int tableReindex(\[TableId tableId\], \[IndexId indexId\])</span></span>                                                    | <span data-ttu-id="7f44c-1198">テーブルのインデックスを更新します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1198">Updates index for the table.</span></span>                                                                                                  |
-| <span data-ttu-id="7f44c-1199">public int tableSynchronize(TableId tableId, \[boolean update\_dict\_info\_only\], \[boolean check\_indexes\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1199">public int tableSynchronize(TableId tableId, \[boolean update\_dict\_info\_only\], \[boolean check\_indexes\])</span></span>       | <span data-ttu-id="7f44c-1200">テーブルと、SQL データベースのテーブルを同期します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1200">Synchronizes the  table and the table of the SQL database.</span></span>                                               |
-| <span data-ttu-id="7f44c-1201">public int tableTruncate(TableId tableId, \[boolean prompt\_before\_truncate\], \[boolean truncate\_system\_table\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1201">public int tableTruncate(TableId tableId, \[boolean prompt\_before\_truncate\], \[boolean truncate\_system\_table\])</span></span> | <span data-ttu-id="7f44c-1202">テーブルの切り詰め</span><span class="sxs-lookup"><span data-stu-id="7f44c-1202">Truncates the  table.</span></span>                                                                                    |
-| <span data-ttu-id="7f44c-1203">public str tableTruncateDDL(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1203">public str tableTruncateDDL(TableId tableId)</span></span>                                                                         | <span data-ttu-id="7f44c-1204">テーブルを切り詰めるため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1204">Generates and returns a SQL statement to truncate a table.</span></span>                                             |
-| <span data-ttu-id="7f44c-1205">::public static int synchronize(\[boolean synchronize\_all\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1205">::public static int synchronize(\[boolean synchronize\_all\])</span></span>                                                        | <span data-ttu-id="7f44c-1206">データ ディクショナリと、SQL データベースのデータ ディクショナリを同期します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1206">Synchronizes the  data dictionary and the data dictionary of the SQL database.</span></span>                           |
-| <span data-ttu-id="7f44c-1207">public void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1207">public void new()</span></span>                                                                                                    | <span data-ttu-id="7f44c-1208">SqlDataDictionary クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1208">Initializes a new instance of the SqlDataDictionary class.</span></span>                                                                    |
-| <span data-ttu-id="7f44c-1209">public void tableDelete(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1209">public void tableDelete(TableId tableId)</span></span>                                                                             | <span data-ttu-id="7f44c-1210">SQL データベースでテーブルを削除します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1210">Deletes the  table in the SQL database.</span></span>                                                                  |
+| <span data-ttu-id="50251-1173">public int indexCreate(\[TableId tableId\], \[IndexId indexId\])</span><span class="sxs-lookup"><span data-stu-id="50251-1173">public int indexCreate(\[TableId tableId\], \[IndexId indexId\])</span></span>                                                     | <span data-ttu-id="50251-1174">テーブルのインデックスを SQL データベースで作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1174">Creates the indexes of a table in the SQL database.</span></span> <span data-ttu-id="50251-1175">このメソッドを使用してインデックスを再作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="50251-1175">You can also use this method to re-create indexes.</span></span> |
+| <span data-ttu-id="50251-1176">public str indexCreateDDL(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="50251-1176">public str indexCreateDDL(TableId tableId)</span></span>                                                                           | <span data-ttu-id="50251-1177">テーブルのインデックスを作成するのに必要な SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1177">Generates and returns the SQL statements needed to create the indexes of a table.</span></span>                      |
+| <span data-ttu-id="50251-1178">public int indexDrop(\[TableId tableId\], \[IndexId indexId\], \[boolean onlyNonUnique\])</span><span class="sxs-lookup"><span data-stu-id="50251-1178">public int indexDrop(\[TableId tableId\], \[IndexId indexId\], \[boolean onlyNonUnique\])</span></span>                            | <span data-ttu-id="50251-1179">テーブルのインデックスを SQL データベースでドロップします。</span><span class="sxs-lookup"><span data-stu-id="50251-1179">Drops the indexes of a table in the SQL database.</span></span>                                                      |
+| <span data-ttu-id="50251-1180">public str name(str bmsname, \[FieldId fieldId\], \[int arrayindex\])</span><span class="sxs-lookup"><span data-stu-id="50251-1180">public str name(str bmsname, \[FieldId fieldId\], \[int arrayindex\])</span></span>                                                | <span data-ttu-id="50251-1181">任意のオブジェクト名を有効な SQL データベースのオブジェクト名、つまり、現在接続されているデータベースに有効な名前に変換します。</span><span class="sxs-lookup"><span data-stu-id="50251-1181">Translates any object name into a valid SQL database object-name; that is, valid for the database currently connected.</span></span>        |
+| <span data-ttu-id="50251-1182">public int tableCreate(\[boolean indexes\], \[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="50251-1182">public int tableCreate(\[boolean indexes\], \[TableId tableId\])</span></span>                                                     | <span data-ttu-id="50251-1183">1 つ以上のテーブルを SQL データベース内に作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1183">Creates one or more  tables in the SQL database.</span></span> <span data-ttu-id="50251-1184">また、インデックス用に作成するオプションを提供します。</span><span class="sxs-lookup"><span data-stu-id="50251-1184">Also, provides an option to create for index.</span></span>           |
+| <span data-ttu-id="50251-1185">public str tableCreateDDL(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="50251-1185">public str tableCreateDDL(TableId tableId)</span></span>                                                                           | <span data-ttu-id="50251-1186">テーブルを作成するため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1186">Generates and returns the SQL statement to create a table.</span></span>                                             |
+| <span data-ttu-id="50251-1187">public int tableDrop(TableId tableId, \[boolean prompt\_before\_drop\])</span><span class="sxs-lookup"><span data-stu-id="50251-1187">public int tableDrop(TableId tableId, \[boolean prompt\_before\_drop\])</span></span>                                              | <span data-ttu-id="50251-1188">テーブルを SQL データベースでドロップします。</span><span class="sxs-lookup"><span data-stu-id="50251-1188">Drops the  table in the SQL database.</span></span>                                                                    |
+| <span data-ttu-id="50251-1189">public str tableDropDDL(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="50251-1189">public str tableDropDDL(TableId tableId)</span></span>                                                                             | <span data-ttu-id="50251-1190">テーブルをドロップするため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1190">Generates and returns the SQL statement to drop a table.</span></span>                                               |
+| <span data-ttu-id="50251-1191">public boolean tableEmpty(TableId tableId, \[str company\], \[boolean not\_this\_company\])</span><span class="sxs-lookup"><span data-stu-id="50251-1191">public boolean tableEmpty(TableId tableId, \[str company\], \[boolean not\_this\_company\])</span></span>                          | <span data-ttu-id="50251-1192">テーブルが空でない場合は true を返します。それ以外の場合は、false を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1192">Returns true if table is not empty; otherwise false.</span></span>                                                                          |
+| <span data-ttu-id="50251-1193">public boolean tableExist(str sqltablename, \[boolean use\_within\_transaction\])</span><span class="sxs-lookup"><span data-stu-id="50251-1193">public boolean tableExist(str sqltablename, \[boolean use\_within\_transaction\])</span></span>                                    | <span data-ttu-id="50251-1194">テーブルが存在する場合は true を返します。それ以外の場合は、false を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1194">Returns true if table exists; otherwise false.</span></span>                                                                                |
+| <span data-ttu-id="50251-1195">public int tableMetaData(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="50251-1195">public int tableMetaData(TableId tableId)</span></span>                                                                            | <span data-ttu-id="50251-1196">データ ディクショナリ メタ データで SqlDescribe テーブルを入力します。</span><span class="sxs-lookup"><span data-stu-id="50251-1196">Fills the SqlDescribe table with data dictionary meta data.</span></span>                                                                   |
+| <span data-ttu-id="50251-1197">public int tableReindex(\[TableId tableId\], \[IndexId indexId\])</span><span class="sxs-lookup"><span data-stu-id="50251-1197">public int tableReindex(\[TableId tableId\], \[IndexId indexId\])</span></span>                                                    | <span data-ttu-id="50251-1198">テーブルのインデックスを更新します。</span><span class="sxs-lookup"><span data-stu-id="50251-1198">Updates index for the table.</span></span>                                                                                                  |
+| <span data-ttu-id="50251-1199">public int tableSynchronize(TableId tableId, \[boolean update\_dict\_info\_only\], \[boolean check\_indexes\])</span><span class="sxs-lookup"><span data-stu-id="50251-1199">public int tableSynchronize(TableId tableId, \[boolean update\_dict\_info\_only\], \[boolean check\_indexes\])</span></span>       | <span data-ttu-id="50251-1200">テーブルと、SQL データベースのテーブルを同期します。</span><span class="sxs-lookup"><span data-stu-id="50251-1200">Synchronizes the  table and the table of the SQL database.</span></span>                                               |
+| <span data-ttu-id="50251-1201">public int tableTruncate(TableId tableId, \[boolean prompt\_before\_truncate\], \[boolean truncate\_system\_table\])</span><span class="sxs-lookup"><span data-stu-id="50251-1201">public int tableTruncate(TableId tableId, \[boolean prompt\_before\_truncate\], \[boolean truncate\_system\_table\])</span></span> | <span data-ttu-id="50251-1202">テーブルの切り詰め</span><span class="sxs-lookup"><span data-stu-id="50251-1202">Truncates the  table.</span></span>                                                                                    |
+| <span data-ttu-id="50251-1203">public str tableTruncateDDL(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="50251-1203">public str tableTruncateDDL(TableId tableId)</span></span>                                                                         | <span data-ttu-id="50251-1204">テーブルを切り詰めるため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1204">Generates and returns a SQL statement to truncate a table.</span></span>                                             |
+| <span data-ttu-id="50251-1205">::public static int synchronize(\[boolean synchronize\_all\])</span><span class="sxs-lookup"><span data-stu-id="50251-1205">::public static int synchronize(\[boolean synchronize\_all\])</span></span>                                                        | <span data-ttu-id="50251-1206">データ ディクショナリと、SQL データベースのデータ ディクショナリを同期します。</span><span class="sxs-lookup"><span data-stu-id="50251-1206">Synchronizes the  data dictionary and the data dictionary of the SQL database.</span></span>                           |
+| <span data-ttu-id="50251-1207">public void new()</span><span class="sxs-lookup"><span data-stu-id="50251-1207">public void new()</span></span>                                                                                                    | <span data-ttu-id="50251-1208">SqlDataDictionary クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-1208">Initializes a new instance of the SqlDataDictionary class.</span></span>                                                                    |
+| <span data-ttu-id="50251-1209">public void tableDelete(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="50251-1209">public void tableDelete(TableId tableId)</span></span>                                                                             | <span data-ttu-id="50251-1210">SQL データベースでテーブルを削除します。</span><span class="sxs-lookup"><span data-stu-id="50251-1210">Deletes the  table in the SQL database.</span></span>                                                                  |
 
-### <a name="method-indexcreate"></a><span data-ttu-id="7f44c-1211">メソッド indexCreate</span><span class="sxs-lookup"><span data-stu-id="7f44c-1211">Method indexCreate</span></span>
+### <a name="method-indexcreate"></a><span data-ttu-id="50251-1211">メソッド indexCreate</span><span class="sxs-lookup"><span data-stu-id="50251-1211">Method indexCreate</span></span>
 
-<span data-ttu-id="7f44c-1212">テーブルのインデックスを SQL データベースで作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1212">Creates the indexes of a table in the SQL database.</span></span> <span data-ttu-id="7f44c-1213">このメソッドを使用してインデックスを再作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1213">You can also use this method to re-create indexes.</span></span>
+<span data-ttu-id="50251-1212">テーブルのインデックスを SQL データベースで作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1212">Creates the indexes of a table in the SQL database.</span></span> <span data-ttu-id="50251-1213">このメソッドを使用してインデックスを再作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="50251-1213">You can also use this method to re-create indexes.</span></span>
 
     public int indexCreate([TableId tableId], [IndexId indexId])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1214">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1214">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1214">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1214">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1215">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1215">tableId</span></span>  
-<span data-ttu-id="7f44c-1216">インデックス ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1216">The index handle (0 for all); optional.</span></span>
+<span data-ttu-id="50251-1215">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1215">tableId</span></span>  
+<span data-ttu-id="50251-1216">インデックス ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1216">The index handle (0 for all); optional.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1217">indexId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1217">indexId</span></span>  
-<span data-ttu-id="7f44c-1218">インデックス ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1218">The index handle (0 for all); optional.</span></span>
+<span data-ttu-id="50251-1217">indexId</span><span class="sxs-lookup"><span data-stu-id="50251-1217">indexId</span></span>  
+<span data-ttu-id="50251-1218">インデックス ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1218">The index handle (0 for all); optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1219">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1219">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1219">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1219">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1220">メソッドが成功した場合は 0 です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1220">0 if the method succeeds.</span></span>
+<span data-ttu-id="50251-1220">メソッドが成功した場合は 0 です。</span><span class="sxs-lookup"><span data-stu-id="50251-1220">0 if the method succeeds.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1221">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1221">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1221">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1221">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1222">このメソッドを使用すると、インデックスを再作成できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1222">This method can be used to re-create indexes.</span></span> <span data-ttu-id="7f44c-1223">パラメーターに 0 を使用すると、すべてのテーブルまたはインデックスを指定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1223">Use 0 for the parameters to indicate all tables or indexes.</span></span>
+<span data-ttu-id="50251-1222">このメソッドを使用すると、インデックスを再作成できます。</span><span class="sxs-lookup"><span data-stu-id="50251-1222">This method can be used to re-create indexes.</span></span> <span data-ttu-id="50251-1223">パラメーターに 0 を使用すると、すべてのテーブルまたはインデックスを指定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1223">Use 0 for the parameters to indicate all tables or indexes.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1224">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1224">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1224">例</span><span class="sxs-lookup"><span data-stu-id="50251-1224">Examples</span></span>
 
     { 
         SqlDataDictionary DD = new SqlDataDictionary(); 
         DD.indexCreate(TableName2Id("Address")); 
     }
 
-### <a name="method-indexcreateddl"></a><span data-ttu-id="7f44c-1225">メソッド indexCreateDDL</span><span class="sxs-lookup"><span data-stu-id="7f44c-1225">Method indexCreateDDL</span></span>
+### <a name="method-indexcreateddl"></a><span data-ttu-id="50251-1225">メソッド indexCreateDDL</span><span class="sxs-lookup"><span data-stu-id="50251-1225">Method indexCreateDDL</span></span>
 
-<span data-ttu-id="7f44c-1226">テーブルのインデックスを作成するのに必要な SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1226">Generates and returns the SQL statements needed to create the indexes of a table.</span></span>
+<span data-ttu-id="50251-1226">テーブルのインデックスを作成するのに必要な SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1226">Generates and returns the SQL statements needed to create the indexes of a table.</span></span>
 
     public str indexCreateDDL(TableId tableId)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1227">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1227">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1227">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1227">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1228">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1228">tableId</span></span>  
-<span data-ttu-id="7f44c-1229">インデックスを作成する必要があるテーブル ハンドル。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1229">The table handle that the index should be created for.</span></span>
+<span data-ttu-id="50251-1228">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1228">tableId</span></span>  
+<span data-ttu-id="50251-1229">インデックスを作成する必要があるテーブル ハンドル。</span><span class="sxs-lookup"><span data-stu-id="50251-1229">The table handle that the index should be created for.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1230">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1230">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1230">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1230">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1231">テーブルのインデックスを作成するための SQL ステートメントを返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1231">Returns SQL statements to create the indexes of the  table.</span></span>
+<span data-ttu-id="50251-1231">テーブルのインデックスを作成するための SQL ステートメントを返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1231">Returns SQL statements to create the indexes of the  table.</span></span>
 
-### <a name="method-indexdrop"></a><span data-ttu-id="7f44c-1232">メソッド indexDrop</span><span class="sxs-lookup"><span data-stu-id="7f44c-1232">Method indexDrop</span></span>
+### <a name="method-indexdrop"></a><span data-ttu-id="50251-1232">メソッド indexDrop</span><span class="sxs-lookup"><span data-stu-id="50251-1232">Method indexDrop</span></span>
 
-<span data-ttu-id="7f44c-1233">テーブルのインデックスを SQL データベースでドロップします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1233">Drops the indexes of a table in the SQL database.</span></span>
+<span data-ttu-id="50251-1233">テーブルのインデックスを SQL データベースでドロップします。</span><span class="sxs-lookup"><span data-stu-id="50251-1233">Drops the indexes of a table in the SQL database.</span></span>
 
     public int indexDrop([TableId tableId], [IndexId indexId], [boolean onlyNonUnique])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1234">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1234">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1234">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1234">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1235">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1235">tableId</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-1236">indexId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1236">indexId</span></span>  
+<span data-ttu-id="50251-1235">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1235">tableId</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1237">onlyNonUnique</span><span class="sxs-lookup"><span data-stu-id="7f44c-1237">onlyNonUnique</span></span>  
+<span data-ttu-id="50251-1236">indexId</span><span class="sxs-lookup"><span data-stu-id="50251-1236">indexId</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1238">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1238">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-1239">メソッドが成功した場合は 0。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1239">Zero if the method succeeds.</span></span>
+<span data-ttu-id="50251-1237">onlyNonUnique</span><span class="sxs-lookup"><span data-stu-id="50251-1237">onlyNonUnique</span></span>  
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1240">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1240">Remarks</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1238">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1238">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1241">パラメーターに 0 を使用すると、すべてのテーブルまたはインデックスを指定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1241">Use 0 for the parameters to indicate all tables or indexes.</span></span>
+<span data-ttu-id="50251-1239">メソッドが成功した場合は 0。</span><span class="sxs-lookup"><span data-stu-id="50251-1239">Zero if the method succeeds.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1242">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1242">Examples</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1240">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1240">Remarks</span></span>
+
+<span data-ttu-id="50251-1241">パラメーターに 0 を使用すると、すべてのテーブルまたはインデックスを指定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1241">Use 0 for the parameters to indicate all tables or indexes.</span></span>
+
+#### <a name="examples"></a><span data-ttu-id="50251-1242">例</span><span class="sxs-lookup"><span data-stu-id="50251-1242">Examples</span></span>
 
     { 
         SqlDataDictionary DD = new SqlDataDictionary(); 
         DD.indexDrop(TableName2Id("Address")); 
     }
 
-### <a name="method-name"></a><span data-ttu-id="7f44c-1243">メソッド名</span><span class="sxs-lookup"><span data-stu-id="7f44c-1243">Method name</span></span>
+### <a name="method-name"></a><span data-ttu-id="50251-1243">メソッド名</span><span class="sxs-lookup"><span data-stu-id="50251-1243">Method name</span></span>
 
-<span data-ttu-id="7f44c-1244">任意のオブジェクト名を有効な SQL データベースのオブジェクト名、つまり、現在接続されているデータベースに有効な名前に変換します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1244">Translates any object name into a valid SQL database object-name; that is, valid for the database currently connected.</span></span>
+<span data-ttu-id="50251-1244">任意のオブジェクト名を有効な SQL データベースのオブジェクト名、つまり、現在接続されているデータベースに有効な名前に変換します。</span><span class="sxs-lookup"><span data-stu-id="50251-1244">Translates any object name into a valid SQL database object-name; that is, valid for the database currently connected.</span></span>
 
     public str name(str bmsname, [FieldId fieldId], [int arrayindex])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1245">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1245">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1245">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1245">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1246">bmsname</span><span class="sxs-lookup"><span data-stu-id="7f44c-1246">bmsname</span></span>  
-<span data-ttu-id="7f44c-1247">フィールドのインデックス (適用されない場合は 0)、つまり、分析コード \[2\] などの配列フィールドの arrayindex'th エントリです (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1247">A field index (0 for not applicable), that is, an array field's arrayindex'th entry, such as Dimension\[2\]; optional.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="7f44c-1248">fieldId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1248">fieldId</span></span>  
-<span data-ttu-id="7f44c-1249">フィールドのインデックス (適用されない場合は 0)、つまり、分析コード \[2\] などの配列フィールドの arrayindex'th エントリです (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1249">A field index (0 for not applicable), that is, an array field's arrayindex'th entry, such as Dimension\[2\]; optional.</span></span>
+<span data-ttu-id="50251-1246">bmsname</span><span class="sxs-lookup"><span data-stu-id="50251-1246">bmsname</span></span>  
+<span data-ttu-id="50251-1247">フィールドのインデックス (適用されない場合は 0)、つまり、分析コード \[2\] などの配列フィールドの arrayindex'th エントリです (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1247">A field index (0 for not applicable), that is, an array field's arrayindex'th entry, such as Dimension\[2\]; optional.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1250">arrayindex</span><span class="sxs-lookup"><span data-stu-id="7f44c-1250">arrayindex</span></span>  
-<span data-ttu-id="7f44c-1251">フィールドのインデックス (適用されない場合は 0)、つまり、分析コード \[2\] などの配列フィールドの arrayindex'th エントリです (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1251">A field index (0 for not applicable), that is, an array field's arrayindex'th entry, such as Dimension\[2\]; optional.</span></span>
+<span data-ttu-id="50251-1248">fieldId</span><span class="sxs-lookup"><span data-stu-id="50251-1248">fieldId</span></span>  
+<span data-ttu-id="50251-1249">フィールドのインデックス (適用されない場合は 0)、つまり、分析コード \[2\] などの配列フィールドの arrayindex'th エントリです (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1249">A field index (0 for not applicable), that is, an array field's arrayindex'th entry, such as Dimension\[2\]; optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1252">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1252">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-1253">有効なオブジェクト名。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1253">The valid object name.</span></span>
+<span data-ttu-id="50251-1250">arrayindex</span><span class="sxs-lookup"><span data-stu-id="50251-1250">arrayindex</span></span>  
+<span data-ttu-id="50251-1251">フィールドのインデックス (適用されない場合は 0)、つまり、分析コード \[2\] などの配列フィールドの arrayindex'th エントリです (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1251">A field index (0 for not applicable), that is, an array field's arrayindex'th entry, such as Dimension\[2\]; optional.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1254">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1254">Remarks</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1252">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1252">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1255">名前は切り捨てられる可能性があるため、固有のオブジェクト識別子が指定される場合があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1255">Because names may be truncated, a unique object identifier may be supplied.</span></span> <span data-ttu-id="7f44c-1256">また、3 番目のパラメータは、メソッドが配列フィールドの個別の SQL フィールド名を返すことを可能にします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1256">Also, a third parameter enables the method to return discrete SQL field names for  array fields.</span></span>
+<span data-ttu-id="50251-1253">有効なオブジェクト名。</span><span class="sxs-lookup"><span data-stu-id="50251-1253">The valid object name.</span></span>
 
-### <a name="method-tablecreate"></a><span data-ttu-id="7f44c-1257">メソッド tableCreate</span><span class="sxs-lookup"><span data-stu-id="7f44c-1257">Method tableCreate</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1254">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1254">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1258">1 つ以上のテーブルを SQL データベース内に作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1258">Creates one or more  tables in the SQL database.</span></span> <span data-ttu-id="7f44c-1259">また、インデックス用に作成するオプションを提供します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1259">Also, provides an option to create for index.</span></span>
+<span data-ttu-id="50251-1255">名前は切り捨てられる可能性があるため、固有のオブジェクト識別子が指定される場合があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1255">Because names may be truncated, a unique object identifier may be supplied.</span></span> <span data-ttu-id="50251-1256">また、3 番目のパラメータは、メソッドが配列フィールドの個別の SQL フィールド名を返すことを可能にします。</span><span class="sxs-lookup"><span data-stu-id="50251-1256">Also, a third parameter enables the method to return discrete SQL field names for  array fields.</span></span>
+
+### <a name="method-tablecreate"></a><span data-ttu-id="50251-1257">メソッド tableCreate</span><span class="sxs-lookup"><span data-stu-id="50251-1257">Method tableCreate</span></span>
+
+<span data-ttu-id="50251-1258">1 つ以上のテーブルを SQL データベース内に作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1258">Creates one or more  tables in the SQL database.</span></span> <span data-ttu-id="50251-1259">また、インデックス用に作成するオプションを提供します。</span><span class="sxs-lookup"><span data-stu-id="50251-1259">Also, provides an option to create for index.</span></span>
 
     public int tableCreate([boolean indexes], [TableId tableId])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1260">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1260">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1260">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1260">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1261">indexes</span><span class="sxs-lookup"><span data-stu-id="7f44c-1261">indexes</span></span>  
-<span data-ttu-id="7f44c-1262">テーブル ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1262">The table handle (0 for all); optional.</span></span>
+<span data-ttu-id="50251-1261">indexes</span><span class="sxs-lookup"><span data-stu-id="50251-1261">indexes</span></span>  
+<span data-ttu-id="50251-1262">テーブル ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1262">The table handle (0 for all); optional.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1263">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1263">tableId</span></span>  
-<span data-ttu-id="7f44c-1264">テーブル ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1264">The table handle (0 for all); optional.</span></span>
+<span data-ttu-id="50251-1263">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1263">tableId</span></span>  
+<span data-ttu-id="50251-1264">テーブル ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1264">The table handle (0 for all); optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1265">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1265">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1265">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1265">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1266">メソッドが成功した場合は 0。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1266">Zero if the method succeeds.</span></span>
+<span data-ttu-id="50251-1266">メソッドが成功した場合は 0。</span><span class="sxs-lookup"><span data-stu-id="50251-1266">Zero if the method succeeds.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1267">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1267">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1267">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1267">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1268">低レベルのメンテナンスにのみ使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1268">Used for low-level maintenance only.</span></span>
+<span data-ttu-id="50251-1268">低レベルのメンテナンスにのみ使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1268">Used for low-level maintenance only.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1269">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1269">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1269">例</span><span class="sxs-lookup"><span data-stu-id="50251-1269">Examples</span></span>
 
     { 
         SqlDataDictionary DD = new SqlDataDictionary(); 
         DD.tableCreate(TableName2Id("Address")); 
     }
 
-### <a name="method-tablecreateddl"></a><span data-ttu-id="7f44c-1270">メソッド tableCreateDDL</span><span class="sxs-lookup"><span data-stu-id="7f44c-1270">Method tableCreateDDL</span></span>
+### <a name="method-tablecreateddl"></a><span data-ttu-id="50251-1270">メソッド tableCreateDDL</span><span class="sxs-lookup"><span data-stu-id="50251-1270">Method tableCreateDDL</span></span>
 
-<span data-ttu-id="7f44c-1271">テーブルを作成するため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1271">Generates and returns the SQL statement to create a table.</span></span>
+<span data-ttu-id="50251-1271">テーブルを作成するため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1271">Generates and returns the SQL statement to create a table.</span></span>
 
     public str tableCreateDDL(TableId tableId)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1272">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1272">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1272">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1272">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1273">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1273">tableId</span></span>  
-<span data-ttu-id="7f44c-1274">作成するテーブルのテーブル ハンドルです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1274">The table handle of the table to be created.</span></span>
+<span data-ttu-id="50251-1273">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1273">tableId</span></span>  
+<span data-ttu-id="50251-1274">作成するテーブルのテーブル ハンドルです。</span><span class="sxs-lookup"><span data-stu-id="50251-1274">The table handle of the table to be created.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1275">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1275">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1275">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1275">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1276">テーブルを作成する SQL ステートメント。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1276">The SQL statement to create a table.</span></span>
+<span data-ttu-id="50251-1276">テーブルを作成する SQL ステートメント。</span><span class="sxs-lookup"><span data-stu-id="50251-1276">The SQL statement to create a table.</span></span>
 
-### <a name="method-tabledrop"></a><span data-ttu-id="7f44c-1277">メソッド tableDrop</span><span class="sxs-lookup"><span data-stu-id="7f44c-1277">Method tableDrop</span></span>
+### <a name="method-tabledrop"></a><span data-ttu-id="50251-1277">メソッド tableDrop</span><span class="sxs-lookup"><span data-stu-id="50251-1277">Method tableDrop</span></span>
 
-<span data-ttu-id="7f44c-1278">テーブルを SQL データベースでドロップします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1278">Drops the  table in the SQL database.</span></span>
+<span data-ttu-id="50251-1278">テーブルを SQL データベースでドロップします。</span><span class="sxs-lookup"><span data-stu-id="50251-1278">Drops the  table in the SQL database.</span></span>
 
     public int tableDrop(TableId tableId, [boolean prompt_before_drop])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1279">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1279">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1279">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1279">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1280">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1280">tableId</span></span>  
-<span data-ttu-id="7f44c-1281">テーブルを削除する前にユーザーに確認するかどうかを示すブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1281">A boolean flag that determines whether to ask user before dropping the table; optional.</span></span> <span data-ttu-id="7f44c-1282">既定では、true です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1282">By default, true.</span></span>
+<span data-ttu-id="50251-1280">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1280">tableId</span></span>  
+<span data-ttu-id="50251-1281">テーブルを削除する前にユーザーに確認するかどうかを示すブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="50251-1281">A boolean flag that determines whether to ask user before dropping the table; optional.</span></span> <span data-ttu-id="50251-1282">既定では、true です。</span><span class="sxs-lookup"><span data-stu-id="50251-1282">By default, true.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1283">prompt\_before\_drop</span><span class="sxs-lookup"><span data-stu-id="7f44c-1283">prompt\_before\_drop</span></span>  
-<span data-ttu-id="7f44c-1284">テーブルを削除する前にユーザーに確認するかどうかを示すブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1284">A boolean flag that determines whether to ask user before dropping the table; optional.</span></span> <span data-ttu-id="7f44c-1285">既定では、true です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1285">By default, true.</span></span>
+<span data-ttu-id="50251-1283">prompt\_before\_drop</span><span class="sxs-lookup"><span data-stu-id="50251-1283">prompt\_before\_drop</span></span>  
+<span data-ttu-id="50251-1284">テーブルを削除する前にユーザーに確認するかどうかを示すブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="50251-1284">A boolean flag that determines whether to ask user before dropping the table; optional.</span></span> <span data-ttu-id="50251-1285">既定では、true です。</span><span class="sxs-lookup"><span data-stu-id="50251-1285">By default, true.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1286">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1286">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1286">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1286">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1287">メソッドが成功した場合は 0。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1287">Zero if the method succeeds.</span></span>
+<span data-ttu-id="50251-1287">メソッドが成功した場合は 0。</span><span class="sxs-lookup"><span data-stu-id="50251-1287">Zero if the method succeeds.</span></span>
 
-### <a name="method-tabledropddl"></a><span data-ttu-id="7f44c-1288">メソッド tableDropDDL</span><span class="sxs-lookup"><span data-stu-id="7f44c-1288">Method tableDropDDL</span></span>
+### <a name="method-tabledropddl"></a><span data-ttu-id="50251-1288">メソッド tableDropDDL</span><span class="sxs-lookup"><span data-stu-id="50251-1288">Method tableDropDDL</span></span>
 
-<span data-ttu-id="7f44c-1289">テーブルをドロップするため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1289">Generates and returns the SQL statement to drop a table.</span></span>
+<span data-ttu-id="50251-1289">テーブルをドロップするため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1289">Generates and returns the SQL statement to drop a table.</span></span>
 
     public str tableDropDDL(TableId tableId)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1290">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1290">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1290">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1290">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1291">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1291">tableId</span></span>  
-<span data-ttu-id="7f44c-1292">削除するテーブル。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1292">The table to be dropped.</span></span>
+<span data-ttu-id="50251-1291">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1291">tableId</span></span>  
+<span data-ttu-id="50251-1292">削除するテーブル。</span><span class="sxs-lookup"><span data-stu-id="50251-1292">The table to be dropped.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1293">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1293">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1293">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1293">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1294">指定されたテーブルを削除する SQL ステートメント。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1294">The SQL statement that drops the specified  table.</span></span>
+<span data-ttu-id="50251-1294">指定されたテーブルを削除する SQL ステートメント。</span><span class="sxs-lookup"><span data-stu-id="50251-1294">The SQL statement that drops the specified  table.</span></span>
 
-### <a name="method-tableempty"></a><span data-ttu-id="7f44c-1295">メソッド tableEmpty</span><span class="sxs-lookup"><span data-stu-id="7f44c-1295">Method tableEmpty</span></span>
+### <a name="method-tableempty"></a><span data-ttu-id="50251-1295">メソッド tableEmpty</span><span class="sxs-lookup"><span data-stu-id="50251-1295">Method tableEmpty</span></span>
 
-<span data-ttu-id="7f44c-1296">テーブルが空でない場合は true を返します。それ以外の場合は、false を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1296">Returns true if table is not empty; otherwise false.</span></span>
+<span data-ttu-id="50251-1296">テーブルが空でない場合は true を返します。それ以外の場合は、false を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1296">Returns true if table is not empty; otherwise false.</span></span>
 
     public boolean tableEmpty(TableId tableId, [str company], [boolean not_this_company])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1297">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1297">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1297">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1297">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1298">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1298">tableId</span></span>  
-<span data-ttu-id="7f44c-1299">true の場合、クエリーから会社に属するレコードを除外します: オプション。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1299">If true excludes records that belongs to the company from the query; optional.</span></span> <span data-ttu-id="7f44c-1300">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1300">By default, false.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="7f44c-1301">会社</span><span class="sxs-lookup"><span data-stu-id="7f44c-1301">company</span></span>  
-<span data-ttu-id="7f44c-1302">true の場合、クエリーから会社に属するレコードを除外します: オプション。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1302">If true excludes records that belongs to the company from the query; optional.</span></span> <span data-ttu-id="7f44c-1303">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1303">By default, false.</span></span>
+<span data-ttu-id="50251-1298">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1298">tableId</span></span>  
+<span data-ttu-id="50251-1299">true の場合、クエリーから会社に属するレコードを除外します: オプション。</span><span class="sxs-lookup"><span data-stu-id="50251-1299">If true excludes records that belongs to the company from the query; optional.</span></span> <span data-ttu-id="50251-1300">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="50251-1300">By default, false.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1304">not\_this\_company</span><span class="sxs-lookup"><span data-stu-id="7f44c-1304">not\_this\_company</span></span>  
-<span data-ttu-id="7f44c-1305">true の場合、クエリーから会社に属するレコードを除外します: オプション。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1305">If true excludes records that belongs to the company from the query; optional.</span></span> <span data-ttu-id="7f44c-1306">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1306">By default, false.</span></span>
+<span data-ttu-id="50251-1301">会社</span><span class="sxs-lookup"><span data-stu-id="50251-1301">company</span></span>  
+<span data-ttu-id="50251-1302">true の場合、クエリーから会社に属するレコードを除外します: オプション。</span><span class="sxs-lookup"><span data-stu-id="50251-1302">If true excludes records that belongs to the company from the query; optional.</span></span> <span data-ttu-id="50251-1303">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="50251-1303">By default, false.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1307">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1307">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-1308">テーブルが空の場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1308">true if the table empty; otherwise, false.</span></span>
+<span data-ttu-id="50251-1304">not\_this\_company</span><span class="sxs-lookup"><span data-stu-id="50251-1304">not\_this\_company</span></span>  
+<span data-ttu-id="50251-1305">true の場合、クエリーから会社に属するレコードを除外します: オプション。</span><span class="sxs-lookup"><span data-stu-id="50251-1305">If true excludes records that belongs to the company from the query; optional.</span></span> <span data-ttu-id="50251-1306">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="50251-1306">By default, false.</span></span>
 
-### <a name="method-tableexist"></a><span data-ttu-id="7f44c-1309">メソッド tableExist</span><span class="sxs-lookup"><span data-stu-id="7f44c-1309">Method tableExist</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1307">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1307">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1310">テーブルが存在する場合は true を返します。それ以外の場合は、false を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1310">Returns true if table exists; otherwise false.</span></span>
+<span data-ttu-id="50251-1308">テーブルが空の場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-1308">true if the table empty; otherwise, false.</span></span>
+
+### <a name="method-tableexist"></a><span data-ttu-id="50251-1309">メソッド tableExist</span><span class="sxs-lookup"><span data-stu-id="50251-1309">Method tableExist</span></span>
+
+<span data-ttu-id="50251-1310">テーブルが存在する場合は true を返します。それ以外の場合は、false を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1310">Returns true if table exists; otherwise false.</span></span>
 
     public boolean tableExist(str sqltablename, [boolean use_within_transaction])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1311">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1311">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1311">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1311">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1312">sqltablename</span><span class="sxs-lookup"><span data-stu-id="7f44c-1312">sqltablename</span></span>  
-<span data-ttu-id="7f44c-1313">トランザクションを使用するかどうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1313">A boolean flag that determines whether transactions are to be used; optional.</span></span> <span data-ttu-id="7f44c-1314">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1314">By default, false.</span></span>
+<span data-ttu-id="50251-1312">sqltablename</span><span class="sxs-lookup"><span data-stu-id="50251-1312">sqltablename</span></span>  
+<span data-ttu-id="50251-1313">トランザクションを使用するかどうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="50251-1313">A boolean flag that determines whether transactions are to be used; optional.</span></span> <span data-ttu-id="50251-1314">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="50251-1314">By default, false.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1315">use\_within\_transaction</span><span class="sxs-lookup"><span data-stu-id="7f44c-1315">use\_within\_transaction</span></span>  
-<span data-ttu-id="7f44c-1316">トランザクションを使用するかどうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1316">A boolean flag that determines whether transactions are to be used; optional.</span></span> <span data-ttu-id="7f44c-1317">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1317">By default, false.</span></span>
+<span data-ttu-id="50251-1315">use\_within\_transaction</span><span class="sxs-lookup"><span data-stu-id="50251-1315">use\_within\_transaction</span></span>  
+<span data-ttu-id="50251-1316">トランザクションを使用するかどうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="50251-1316">A boolean flag that determines whether transactions are to be used; optional.</span></span> <span data-ttu-id="50251-1317">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="50251-1317">By default, false.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1318">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1318">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1318">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1318">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1319">テーブルが存在する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1319">true if the table exists; otherwise, false.</span></span>
+<span data-ttu-id="50251-1319">テーブルが存在する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-1319">true if the table exists; otherwise, false.</span></span>
 
-### <a name="method-tablemetadata"></a><span data-ttu-id="7f44c-1320">メソッド tableMetaData</span><span class="sxs-lookup"><span data-stu-id="7f44c-1320">Method tableMetaData</span></span>
+### <a name="method-tablemetadata"></a><span data-ttu-id="50251-1320">メソッド tableMetaData</span><span class="sxs-lookup"><span data-stu-id="50251-1320">Method tableMetaData</span></span>
 
-<span data-ttu-id="7f44c-1321">データ ディクショナリ メタ データで SqlDescribe テーブルを入力します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1321">Fills the SqlDescribe table with data dictionary meta data.</span></span>
+<span data-ttu-id="50251-1321">データ ディクショナリ メタ データで SqlDescribe テーブルを入力します。</span><span class="sxs-lookup"><span data-stu-id="50251-1321">Fills the SqlDescribe table with data dictionary meta data.</span></span>
 
     public int tableMetaData(TableId tableId)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1322">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1322">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1322">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1322">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1323">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1323">tableId</span></span>  
-<span data-ttu-id="7f44c-1324">テーブル ハンドル。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1324">The table handle.</span></span>
+<span data-ttu-id="50251-1323">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1323">tableId</span></span>  
+<span data-ttu-id="50251-1324">テーブル ハンドル。</span><span class="sxs-lookup"><span data-stu-id="50251-1324">The table handle.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1325">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1325">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1325">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1325">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1326">メソッドが成功した場合は true。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1326">true if the method succeeds.</span></span>
+<span data-ttu-id="50251-1326">メソッドが成功した場合は true。</span><span class="sxs-lookup"><span data-stu-id="50251-1326">true if the method succeeds.</span></span>
 
-### <a name="method-tablereindex"></a><span data-ttu-id="7f44c-1327">メソッド tableReindex</span><span class="sxs-lookup"><span data-stu-id="7f44c-1327">Method tableReindex</span></span>
+### <a name="method-tablereindex"></a><span data-ttu-id="50251-1327">メソッド tableReindex</span><span class="sxs-lookup"><span data-stu-id="50251-1327">Method tableReindex</span></span>
 
-<span data-ttu-id="7f44c-1328">テーブルのインデックスを更新します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1328">Updates index for the table.</span></span>
+<span data-ttu-id="50251-1328">テーブルのインデックスを更新します。</span><span class="sxs-lookup"><span data-stu-id="50251-1328">Updates index for the table.</span></span>
 
     public int tableReindex([TableId tableId], [IndexId indexId])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1329">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1329">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1329">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1329">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1330">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1330">tableId</span></span>  
-<span data-ttu-id="7f44c-1331">インデックス ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1331">The index handle (0 for all); optional.</span></span> <span data-ttu-id="7f44c-1332">既定では 0 です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1332">By default, 0.</span></span>
+<span data-ttu-id="50251-1330">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1330">tableId</span></span>  
+<span data-ttu-id="50251-1331">インデックス ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1331">The index handle (0 for all); optional.</span></span> <span data-ttu-id="50251-1332">既定では 0 です。</span><span class="sxs-lookup"><span data-stu-id="50251-1332">By default, 0.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1333">indexId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1333">indexId</span></span>  
-<span data-ttu-id="7f44c-1334">インデックス ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1334">The index handle (0 for all); optional.</span></span> <span data-ttu-id="7f44c-1335">既定では 0 です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1335">By default, 0.</span></span>
+<span data-ttu-id="50251-1333">indexId</span><span class="sxs-lookup"><span data-stu-id="50251-1333">indexId</span></span>  
+<span data-ttu-id="50251-1334">インデックス ハンドル (すべて0) (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1334">The index handle (0 for all); optional.</span></span> <span data-ttu-id="50251-1335">既定では 0 です。</span><span class="sxs-lookup"><span data-stu-id="50251-1335">By default, 0.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1336">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1336">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1336">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1336">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1337">メソッドが成功した場合は 0。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1337">Zero if the method succeeds.</span></span>
+<span data-ttu-id="50251-1337">メソッドが成功した場合は 0。</span><span class="sxs-lookup"><span data-stu-id="50251-1337">Zero if the method succeeds.</span></span>
 
-### <a name="method-tablesynchronize"></a><span data-ttu-id="7f44c-1338">メソッド tableSynchronize</span><span class="sxs-lookup"><span data-stu-id="7f44c-1338">Method tableSynchronize</span></span>
+### <a name="method-tablesynchronize"></a><span data-ttu-id="50251-1338">メソッド tableSynchronize</span><span class="sxs-lookup"><span data-stu-id="50251-1338">Method tableSynchronize</span></span>
 
-<span data-ttu-id="7f44c-1339">テーブルと、SQL データベースのテーブルを同期します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1339">Synchronizes the  table and the table of the SQL database.</span></span>
+<span data-ttu-id="50251-1339">テーブルと、SQL データベースのテーブルを同期します。</span><span class="sxs-lookup"><span data-stu-id="50251-1339">Synchronizes the  table and the table of the SQL database.</span></span>
 
     public int tableSynchronize(TableId tableId, [boolean update_dict_info_only], [boolean check_indexes])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1340">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1340">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1340">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1340">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1341">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1341">tableId</span></span>  
-<span data-ttu-id="7f44c-1342">設定すると、テーブルのインデックスの再インデックスを実行; 省略可能。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1342">When set forces reindex of the table indexes; optional.</span></span> <span data-ttu-id="7f44c-1343">既定では、true です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1343">By default, true.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="7f44c-1344">update\_dict\_info\_only</span><span class="sxs-lookup"><span data-stu-id="7f44c-1344">update\_dict\_info\_only</span></span>  
-<span data-ttu-id="7f44c-1345">設定すると、テーブルのインデックスの再インデックスを実行; 省略可能。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1345">When set forces reindex of the table indexes; optional.</span></span> <span data-ttu-id="7f44c-1346">既定では、true です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1346">By default, true.</span></span>
+<span data-ttu-id="50251-1341">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1341">tableId</span></span>  
+<span data-ttu-id="50251-1342">設定すると、テーブルのインデックスの再インデックスを実行; 省略可能。</span><span class="sxs-lookup"><span data-stu-id="50251-1342">When set forces reindex of the table indexes; optional.</span></span> <span data-ttu-id="50251-1343">既定では、true です。</span><span class="sxs-lookup"><span data-stu-id="50251-1343">By default, true.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1347">check\_indexes</span><span class="sxs-lookup"><span data-stu-id="7f44c-1347">check\_indexes</span></span>  
-<span data-ttu-id="7f44c-1348">設定すると、テーブルのインデックスの再インデックスを実行; 省略可能。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1348">When set forces reindex of the table indexes; optional.</span></span> <span data-ttu-id="7f44c-1349">既定では、true です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1349">By default, true.</span></span>
+<span data-ttu-id="50251-1344">update\_dict\_info\_only</span><span class="sxs-lookup"><span data-stu-id="50251-1344">update\_dict\_info\_only</span></span>  
+<span data-ttu-id="50251-1345">設定すると、テーブルのインデックスの再インデックスを実行; 省略可能。</span><span class="sxs-lookup"><span data-stu-id="50251-1345">When set forces reindex of the table indexes; optional.</span></span> <span data-ttu-id="50251-1346">既定では、true です。</span><span class="sxs-lookup"><span data-stu-id="50251-1346">By default, true.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1350">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1350">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-1351">メソッドが成功した場合は true。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1351">true if the method succeeds.</span></span>
+<span data-ttu-id="50251-1347">check\_indexes</span><span class="sxs-lookup"><span data-stu-id="50251-1347">check\_indexes</span></span>  
+<span data-ttu-id="50251-1348">設定すると、テーブルのインデックスの再インデックスを実行; 省略可能。</span><span class="sxs-lookup"><span data-stu-id="50251-1348">When set forces reindex of the table indexes; optional.</span></span> <span data-ttu-id="50251-1349">既定では、true です。</span><span class="sxs-lookup"><span data-stu-id="50251-1349">By default, true.</span></span>
 
-### <a name="method-tabletruncate"></a><span data-ttu-id="7f44c-1352">メソッド tableTruncate</span><span class="sxs-lookup"><span data-stu-id="7f44c-1352">Method tableTruncate</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1350">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1350">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1353">テーブルの切り詰め</span><span class="sxs-lookup"><span data-stu-id="7f44c-1353">Truncates the  table.</span></span>
+<span data-ttu-id="50251-1351">メソッドが成功した場合は true。</span><span class="sxs-lookup"><span data-stu-id="50251-1351">true if the method succeeds.</span></span>
+
+### <a name="method-tabletruncate"></a><span data-ttu-id="50251-1352">メソッド tableTruncate</span><span class="sxs-lookup"><span data-stu-id="50251-1352">Method tableTruncate</span></span>
+
+<span data-ttu-id="50251-1353">テーブルの切り詰め</span><span class="sxs-lookup"><span data-stu-id="50251-1353">Truncates the  table.</span></span>
 
     public int tableTruncate(TableId tableId, [boolean prompt_before_truncate], [boolean truncate_system_table])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1354">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1354">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1354">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1354">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1355">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1355">tableId</span></span>  
-<span data-ttu-id="7f44c-1356">選択したテーブルがシステム場合に、テーブルを切り詰めるかどうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1356">A boolean flag that determines whether to truncate table in case if selected table is system; optional.</span></span> <span data-ttu-id="7f44c-1357">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1357">By default, false.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="7f44c-1358">prompt\_before\_truncate</span><span class="sxs-lookup"><span data-stu-id="7f44c-1358">prompt\_before\_truncate</span></span>  
-<span data-ttu-id="7f44c-1359">選択したテーブルがシステム場合に、テーブルを切り詰めるかどうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1359">A boolean flag that determines whether to truncate table in case if selected table is system; optional.</span></span> <span data-ttu-id="7f44c-1360">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1360">By default, false.</span></span>
+<span data-ttu-id="50251-1355">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1355">tableId</span></span>  
+<span data-ttu-id="50251-1356">選択したテーブルがシステム場合に、テーブルを切り詰めるかどうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="50251-1356">A boolean flag that determines whether to truncate table in case if selected table is system; optional.</span></span> <span data-ttu-id="50251-1357">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="50251-1357">By default, false.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1361">truncate\_system\_table</span><span class="sxs-lookup"><span data-stu-id="7f44c-1361">truncate\_system\_table</span></span>  
-<span data-ttu-id="7f44c-1362">選択したテーブルがシステム場合に、テーブルを切り詰めるかどうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1362">A boolean flag that determines whether to truncate table in case if selected table is system; optional.</span></span> <span data-ttu-id="7f44c-1363">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1363">By default, false.</span></span>
+<span data-ttu-id="50251-1358">prompt\_before\_truncate</span><span class="sxs-lookup"><span data-stu-id="50251-1358">prompt\_before\_truncate</span></span>  
+<span data-ttu-id="50251-1359">選択したテーブルがシステム場合に、テーブルを切り詰めるかどうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="50251-1359">A boolean flag that determines whether to truncate table in case if selected table is system; optional.</span></span> <span data-ttu-id="50251-1360">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="50251-1360">By default, false.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1364">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1364">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-1365">メソッドが成功した場合は 0。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1365">Zero if the method succeeds.</span></span>
+<span data-ttu-id="50251-1361">truncate\_system\_table</span><span class="sxs-lookup"><span data-stu-id="50251-1361">truncate\_system\_table</span></span>  
+<span data-ttu-id="50251-1362">選択したテーブルがシステム場合に、テーブルを切り詰めるかどうかを決定するブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="50251-1362">A boolean flag that determines whether to truncate table in case if selected table is system; optional.</span></span> <span data-ttu-id="50251-1363">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="50251-1363">By default, false.</span></span>
 
-### <a name="method-tabletruncateddl"></a><span data-ttu-id="7f44c-1366">メソッド tableTruncateDDL</span><span class="sxs-lookup"><span data-stu-id="7f44c-1366">Method tableTruncateDDL</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1364">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1364">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1367">テーブルを切り詰めるため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1367">Generates and returns a SQL statement to truncate a table.</span></span>
+<span data-ttu-id="50251-1365">メソッドが成功した場合は 0。</span><span class="sxs-lookup"><span data-stu-id="50251-1365">Zero if the method succeeds.</span></span>
+
+### <a name="method-tabletruncateddl"></a><span data-ttu-id="50251-1366">メソッド tableTruncateDDL</span><span class="sxs-lookup"><span data-stu-id="50251-1366">Method tableTruncateDDL</span></span>
+
+<span data-ttu-id="50251-1367">テーブルを切り詰めるため SQL ステートメントを生成および返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1367">Generates and returns a SQL statement to truncate a table.</span></span>
 
     public str tableTruncateDDL(TableId tableId)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1368">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1368">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1368">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1368">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1369">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1369">tableId</span></span>  
-<span data-ttu-id="7f44c-1370">切り詰めるテーブルのテーブル ハンドルです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1370">The table handle of the table to be truncated.</span></span>
+<span data-ttu-id="50251-1369">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1369">tableId</span></span>  
+<span data-ttu-id="50251-1370">切り詰めるテーブルのテーブル ハンドルです。</span><span class="sxs-lookup"><span data-stu-id="50251-1370">The table handle of the table to be truncated.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1371">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1371">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1371">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1371">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1372">テーブルを切り詰める SQL ステートメント。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1372">The SQL statement to truncate the table.</span></span>
+<span data-ttu-id="50251-1372">テーブルを切り詰める SQL ステートメント。</span><span class="sxs-lookup"><span data-stu-id="50251-1372">The SQL statement to truncate the table.</span></span>
 
-### <a name="method-synchronize"></a><span data-ttu-id="7f44c-1373">メソッド synchronize</span><span class="sxs-lookup"><span data-stu-id="7f44c-1373">Method synchronize</span></span>
+### <a name="method-synchronize"></a><span data-ttu-id="50251-1373">メソッド synchronize</span><span class="sxs-lookup"><span data-stu-id="50251-1373">Method synchronize</span></span>
 
-<span data-ttu-id="7f44c-1374">データ ディクショナリと、SQL データベースのデータ ディクショナリを同期します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1374">Synchronizes the  data dictionary and the data dictionary of the SQL database.</span></span>
+<span data-ttu-id="50251-1374">データ ディクショナリと、SQL データベースのデータ ディクショナリを同期します。</span><span class="sxs-lookup"><span data-stu-id="50251-1374">Synchronizes the  data dictionary and the data dictionary of the SQL database.</span></span>
 
     public static int synchronize([boolean synchronize_all])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1375">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1375">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1375">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1375">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1376">synchronize\_all</span><span class="sxs-lookup"><span data-stu-id="7f44c-1376">synchronize\_all</span></span>  
-<span data-ttu-id="7f44c-1377">すべてのテーブルを同期するかどうかを示すブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1377">A boolean flag that determines whether to synchronize all tables; optional.</span></span> <span data-ttu-id="7f44c-1378">True の場合、このメソッドは (カーネルによって欠陥とマークされているテーブルのみでなく) すべてのテーブルを同期します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1378">If true, this method synchronizes all tables (instead of only those marked dirty by the  kernel).</span></span> <span data-ttu-id="7f44c-1379">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1379">By default, false.</span></span>
+<span data-ttu-id="50251-1376">synchronize\_all</span><span class="sxs-lookup"><span data-stu-id="50251-1376">synchronize\_all</span></span>  
+<span data-ttu-id="50251-1377">すべてのテーブルを同期するかどうかを示すブール フラグ; オプション。</span><span class="sxs-lookup"><span data-stu-id="50251-1377">A boolean flag that determines whether to synchronize all tables; optional.</span></span> <span data-ttu-id="50251-1378">True の場合、このメソッドは (カーネルによって欠陥とマークされているテーブルのみでなく) すべてのテーブルを同期します。</span><span class="sxs-lookup"><span data-stu-id="50251-1378">If true, this method synchronizes all tables (instead of only those marked dirty by the  kernel).</span></span> <span data-ttu-id="50251-1379">既定では、false です。</span><span class="sxs-lookup"><span data-stu-id="50251-1379">By default, false.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1380">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1380">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1380">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1380">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1381">同期が成功した場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1381">true if synchronization was successful; otherwise false.</span></span>
+<span data-ttu-id="50251-1381">同期が成功した場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-1381">true if synchronization was successful; otherwise false.</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-1382">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-1382">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-1382">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-1382">Method new</span></span>
 
-<span data-ttu-id="7f44c-1383">SqlDataDictionary クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1383">Initializes a new instance of the SqlDataDictionary class.</span></span>
+<span data-ttu-id="50251-1383">SqlDataDictionary クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-1383">Initializes a new instance of the SqlDataDictionary class.</span></span>
 
     public void new()
 
-### <a name="method-tabledelete"></a><span data-ttu-id="7f44c-1384">メソッド tableDelete</span><span class="sxs-lookup"><span data-stu-id="7f44c-1384">Method tableDelete</span></span>
+### <a name="method-tabledelete"></a><span data-ttu-id="50251-1384">メソッド tableDelete</span><span class="sxs-lookup"><span data-stu-id="50251-1384">Method tableDelete</span></span>
 
-<span data-ttu-id="7f44c-1385">SQL データベースでテーブルを削除します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1385">Deletes the  table in the SQL database.</span></span>
+<span data-ttu-id="50251-1385">SQL データベースでテーブルを削除します。</span><span class="sxs-lookup"><span data-stu-id="50251-1385">Deletes the  table in the SQL database.</span></span>
 
     public void tableDelete(TableId tableId)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1386">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1386">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1386">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1386">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1387">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1387">tableId</span></span>  
+<span data-ttu-id="50251-1387">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1387">tableId</span></span>  
 
-## <a name="class-sqldatadictionarypermission"></a><span data-ttu-id="7f44c-1388">クラス SqlDataDictionaryPermission</span><span class="sxs-lookup"><span data-stu-id="7f44c-1388">Class SqlDataDictionaryPermission</span></span>
+## <a name="class-sqldatadictionarypermission"></a><span data-ttu-id="50251-1388">クラス SqlDataDictionaryPermission</span><span class="sxs-lookup"><span data-stu-id="50251-1388">Class SqlDataDictionaryPermission</span></span>
     class SqlDataDictionaryPermission extends CodeAccessPermission
 
-<span data-ttu-id="7f44c-1389">SqlDataDictionaryPermission クラスは、メソッドにアクセスする機能を制御し、特定の API のアクセス許可を確認するように設計されています。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1389">The SqlDataDictionaryPermission class controls the ability to access the methods on the and is designed to check permissions for specific APIs.</span></span> <span data-ttu-id="7f44c-1390">保護されたすべての API のリストについては、「セキュリティで保護された API」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1390">For a list of all protected APIs, see Secured APIs.</span></span>
+<span data-ttu-id="50251-1389">SqlDataDictionaryPermission クラスは、メソッドにアクセスする機能を制御し、特定の API のアクセス許可を確認するように設計されています。</span><span class="sxs-lookup"><span data-stu-id="50251-1389">The SqlDataDictionaryPermission class controls the ability to access the methods on the and is designed to check permissions for specific APIs.</span></span> <span data-ttu-id="50251-1390">保護されたすべての API のリストについては、「セキュリティで保護された API」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="50251-1390">For a list of all protected APIs, see Secured APIs.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1391">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1391">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1391">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1391">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1392">保護された API が実行される前に、対応する CodeAccessPermission::demand メソッドが呼び出される、通常はサーバー層である、同じ層で assert メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1392">You must call the assert method on the same tier, usually the server tier, that the corresponding CodeAccessPermission::demand method is called on before the protected API is executed.</span></span> <span data-ttu-id="7f44c-1393">次のいずれかでサーバー層のメソッドを呼び出します:</span><span class="sxs-lookup"><span data-stu-id="7f44c-1393">Call a method on the server tier from one of the following:</span></span>
+<span data-ttu-id="50251-1392">保護された API が実行される前に、対応する CodeAccessPermission::demand メソッドが呼び出される、通常はサーバー層である、同じ層で assert メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1392">You must call the assert method on the same tier, usually the server tier, that the corresponding CodeAccessPermission::demand method is called on before the protected API is executed.</span></span> <span data-ttu-id="50251-1393">次のいずれかでサーバー層のメソッドを呼び出します:</span><span class="sxs-lookup"><span data-stu-id="50251-1393">Call a method on the server tier from one of the following:</span></span>
 
--   <span data-ttu-id="7f44c-1394">サーバー静的メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1394">A server static method</span></span>
--   <span data-ttu-id="7f44c-1395">RunOn クラス プロパティを使用して、サーバーで実行するように設定されているクラス インスタンス メソッド。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1395">A class instance method that is set to run on the server by using the RunOn class property.</span></span>
+-   <span data-ttu-id="50251-1394">サーバー静的メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1394">A server static method</span></span>
+-   <span data-ttu-id="50251-1395">RunOn クラス プロパティを使用して、サーバーで実行するように設定されているクラス インスタンス メソッド。</span><span class="sxs-lookup"><span data-stu-id="50251-1395">A class instance method that is set to run on the server by using the RunOn class property.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1396">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1396">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1396">例</span><span class="sxs-lookup"><span data-stu-id="50251-1396">Examples</span></span>
 
-<span data-ttu-id="7f44c-1397">次の例では、xRefNames テーブルからデータを削除します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1397">The following example deletes data from the xRefNames table.</span></span> <span data-ttu-id="7f44c-1398">assert メソッドが呼び出され、コードが、ファイルに対するデータの読み取り/書き込みを行うために使用される AsciiIo クラスをインスタンス化できることが宣言されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1398">The assert method is called to declare that the code can then instantiate the AsciiIo class that is used to read and write data to a file.</span></span>
+<span data-ttu-id="50251-1397">次の例では、xRefNames テーブルからデータを削除します。</span><span class="sxs-lookup"><span data-stu-id="50251-1397">The following example deletes data from the xRefNames table.</span></span> <span data-ttu-id="50251-1398">assert メソッドが呼び出され、コードが、ファイルに対するデータの読み取り/書き込みを行うために使用される AsciiIo クラスをインスタンス化できることが宣言されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1398">The assert method is called to declare that the code can then instantiate the AsciiIo class that is used to read and write data to a file.</span></span>
 
     { 
         DictTable dictTable = new DictTable(tablenum(xRefNames)); 
@@ -3100,61 +3100,61 @@ ms.locfileid: "1544189"
         } 
     }
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1399">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1399">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1399">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1399">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1400">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1400">Method</span></span>                                                 | <span data-ttu-id="7f44c-1401">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1401">Description</span></span>                                                                      |
+| <span data-ttu-id="50251-1400">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1400">Method</span></span>                                                 | <span data-ttu-id="50251-1401">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1401">Description</span></span>                                                                      |
 |--------------------------------------------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1402">public CodeAccessPermission copy()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1402">public CodeAccessPermission copy()</span></span>                     | <span data-ttu-id="7f44c-1403">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1403">Creates and returns a copy of the current permission class object.</span></span>               |
-| <span data-ttu-id="7f44c-1404">public boolean isSubsetOf(CodeAccessPermission target)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1404">public boolean isSubsetOf(CodeAccessPermission target)</span></span> | <span data-ttu-id="7f44c-1405">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1405">Determines whether a current permission is a subset of the specified permission.</span></span> |
-| <span data-ttu-id="7f44c-1406">public void new(IdentifierName methodName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1406">public void new(IdentifierName methodName)</span></span>             | <span data-ttu-id="7f44c-1407">SQLDataDictionaryPermission クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1407">Creates a new instance of the SQLDataDictionaryPermission class.</span></span>                 |
+| <span data-ttu-id="50251-1402">public CodeAccessPermission copy()</span><span class="sxs-lookup"><span data-stu-id="50251-1402">public CodeAccessPermission copy()</span></span>                     | <span data-ttu-id="50251-1403">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1403">Creates and returns a copy of the current permission class object.</span></span>               |
+| <span data-ttu-id="50251-1404">public boolean isSubsetOf(CodeAccessPermission target)</span><span class="sxs-lookup"><span data-stu-id="50251-1404">public boolean isSubsetOf(CodeAccessPermission target)</span></span> | <span data-ttu-id="50251-1405">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1405">Determines whether a current permission is a subset of the specified permission.</span></span> |
+| <span data-ttu-id="50251-1406">public void new(IdentifierName methodName)</span><span class="sxs-lookup"><span data-stu-id="50251-1406">public void new(IdentifierName methodName)</span></span>             | <span data-ttu-id="50251-1407">SQLDataDictionaryPermission クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1407">Creates a new instance of the SQLDataDictionaryPermission class.</span></span>                 |
 
-### <a name="method-copy"></a><span data-ttu-id="7f44c-1408">メソッド copy</span><span class="sxs-lookup"><span data-stu-id="7f44c-1408">Method copy</span></span>
+### <a name="method-copy"></a><span data-ttu-id="50251-1408">メソッド copy</span><span class="sxs-lookup"><span data-stu-id="50251-1408">Method copy</span></span>
 
-<span data-ttu-id="7f44c-1409">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1409">Creates and returns a copy of the current permission class object.</span></span>
+<span data-ttu-id="50251-1409">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1409">Creates and returns a copy of the current permission class object.</span></span>
 
     public CodeAccessPermission copy()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1410">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1410">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1410">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1410">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1411">現在のアクセス許可オブジェクトのコピーです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1411">A copy of the current permission object.</span></span>
+<span data-ttu-id="50251-1411">現在のアクセス許可オブジェクトのコピーです。</span><span class="sxs-lookup"><span data-stu-id="50251-1411">A copy of the current permission object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1412">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1412">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1412">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1412">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1413">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1413">You override this method when you derive a class from the CodeAccessPermission class.</span></span> <span data-ttu-id="7f44c-1414">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1414">For more information, see .</span></span>
+<span data-ttu-id="50251-1413">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="50251-1413">You override this method when you derive a class from the CodeAccessPermission class.</span></span> <span data-ttu-id="50251-1414">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="50251-1414">For more information, see .</span></span>
 
-### <a name="method-issubsetof"></a><span data-ttu-id="7f44c-1415">メソッド isSubsetOf</span><span class="sxs-lookup"><span data-stu-id="7f44c-1415">Method isSubsetOf</span></span>
+### <a name="method-issubsetof"></a><span data-ttu-id="50251-1415">メソッド isSubsetOf</span><span class="sxs-lookup"><span data-stu-id="50251-1415">Method isSubsetOf</span></span>
 
-<span data-ttu-id="7f44c-1416">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1416">Determines whether a current permission is a subset of the specified permission.</span></span>
+<span data-ttu-id="50251-1416">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1416">Determines whether a current permission is a subset of the specified permission.</span></span>
 
     public boolean isSubsetOf(CodeAccessPermission target)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1417">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1417">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1417">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1417">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1418">target</span><span class="sxs-lookup"><span data-stu-id="7f44c-1418">target</span></span>  
-<span data-ttu-id="7f44c-1419">CodeAccessPermission クラス オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1419">A CodeAccessPermission class object.</span></span>
+<span data-ttu-id="50251-1418">target</span><span class="sxs-lookup"><span data-stu-id="50251-1418">target</span></span>  
+<span data-ttu-id="50251-1419">CodeAccessPermission クラス オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="50251-1419">A CodeAccessPermission class object.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1420">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1420">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1420">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1420">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1421">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1421">true if a current permission is a subset of a specified permission; otherwise, false.</span></span>
+<span data-ttu-id="50251-1421">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-1421">true if a current permission is a subset of a specified permission; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1422">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1422">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1422">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1422">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1423">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1423">You override this method when you derive a class from the CodeAccessPermission class.</span></span> <span data-ttu-id="7f44c-1424">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1424">For more information, see .</span></span>
+<span data-ttu-id="50251-1423">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="50251-1423">You override this method when you derive a class from the CodeAccessPermission class.</span></span> <span data-ttu-id="50251-1424">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="50251-1424">For more information, see .</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-1425">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-1425">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-1425">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-1425">Method new</span></span>
 
-<span data-ttu-id="7f44c-1426">SQLDataDictionaryPermission クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1426">Creates a new instance of the SQLDataDictionaryPermission class.</span></span>
+<span data-ttu-id="50251-1426">SQLDataDictionaryPermission クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1426">Creates a new instance of the SQLDataDictionaryPermission class.</span></span>
 
     public void new(IdentifierName methodName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1427">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1427">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1427">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1427">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1428">methodName</span><span class="sxs-lookup"><span data-stu-id="7f44c-1428">methodName</span></span>  
-<span data-ttu-id="7f44c-1429">呼び出されるメソッドの名前を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1429">The string that represents the name of the method to be called.</span></span>
+<span data-ttu-id="50251-1428">methodName</span><span class="sxs-lookup"><span data-stu-id="50251-1428">methodName</span></span>  
+<span data-ttu-id="50251-1429">呼び出されるメソッドの名前を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-1429">The string that represents the name of the method to be called.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1430">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1430">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1430">例</span><span class="sxs-lookup"><span data-stu-id="50251-1430">Examples</span></span>
 
-<span data-ttu-id="7f44c-1431">次のコード例は、xRefNames テーブルのデータを削除します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1431">The following code example deletes the data in the xRefNames table.</span></span>
+<span data-ttu-id="50251-1431">次のコード例は、xRefNames テーブルのデータを削除します。</span><span class="sxs-lookup"><span data-stu-id="50251-1431">The following code example deletes the data in the xRefNames table.</span></span>
 
     server static void main(Args _args) 
     { 
@@ -3177,21 +3177,21 @@ ms.locfileid: "1544189"
         } 
     }
 
-## <a name="class-sqlstatementexecutepermission"></a><span data-ttu-id="7f44c-1432">クラス SqlStatementExecutePermission</span><span class="sxs-lookup"><span data-stu-id="7f44c-1432">Class SqlStatementExecutePermission</span></span>
+## <a name="class-sqlstatementexecutepermission"></a><span data-ttu-id="50251-1432">クラス SqlStatementExecutePermission</span><span class="sxs-lookup"><span data-stu-id="50251-1432">Class SqlStatementExecutePermission</span></span>
     class SqlStatementExecutePermission extends CodeAccessPermission
 
-<span data-ttu-id="7f44c-1433">SQL を使用する機能をコントロールします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1433">Controls the ability to use SQL.</span></span>
+<span data-ttu-id="50251-1433">SQL を使用する機能をコントロールします。</span><span class="sxs-lookup"><span data-stu-id="50251-1433">Controls the ability to use SQL.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1434">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1434">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1434">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1434">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1435">このクラスは、特定の API のアクセス許可をチェックするように設計されています。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1435">This class is designed to check permissions for specific APIs.</span></span> <span data-ttu-id="7f44c-1436">保護されたすべての API のリストについては、「セキュリティで保護された API」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1436">For a list of all protected APIs, see Secured APIs.</span></span> <span data-ttu-id="7f44c-1437">保護された API が実行される前に、対応する CodeAccessPermission::demand メソッドが呼び出される、通常はサーバー層である、同じ層で assert メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1437">You must call the assert method on the same tier, usually the server tier, that the corresponding CodeAccessPermission::demand method is called on before the protected API is executed.</span></span> <span data-ttu-id="7f44c-1438">次のいずれかでサーバー層のメソッドを呼び出します:</span><span class="sxs-lookup"><span data-stu-id="7f44c-1438">Call a method on the server tier from one of the following:</span></span>
+<span data-ttu-id="50251-1435">このクラスは、特定の API のアクセス許可をチェックするように設計されています。</span><span class="sxs-lookup"><span data-stu-id="50251-1435">This class is designed to check permissions for specific APIs.</span></span> <span data-ttu-id="50251-1436">保護されたすべての API のリストについては、「セキュリティで保護された API」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="50251-1436">For a list of all protected APIs, see Secured APIs.</span></span> <span data-ttu-id="50251-1437">保護された API が実行される前に、対応する CodeAccessPermission::demand メソッドが呼び出される、通常はサーバー層である、同じ層で assert メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1437">You must call the assert method on the same tier, usually the server tier, that the corresponding CodeAccessPermission::demand method is called on before the protected API is executed.</span></span> <span data-ttu-id="50251-1438">次のいずれかでサーバー層のメソッドを呼び出します:</span><span class="sxs-lookup"><span data-stu-id="50251-1438">Call a method on the server tier from one of the following:</span></span>
 
--   <span data-ttu-id="7f44c-1439">サーバー静的メソッドまたは</span><span class="sxs-lookup"><span data-stu-id="7f44c-1439">A server static method –or–</span></span>
--   <span data-ttu-id="7f44c-1440">RunOn クラス プロパティを使用して、サーバーで実行するように設定されているクラス インスタンス メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1440">A class instance method that is set to run on the server by using the RunOn class property</span></span>
+-   <span data-ttu-id="50251-1439">サーバー静的メソッドまたは</span><span class="sxs-lookup"><span data-stu-id="50251-1439">A server static method –or–</span></span>
+-   <span data-ttu-id="50251-1440">RunOn クラス プロパティを使用して、サーバーで実行するように設定されているクラス インスタンス メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1440">A class instance method that is set to run on the server by using the RunOn class property</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1441">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1441">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1441">例</span><span class="sxs-lookup"><span data-stu-id="50251-1441">Examples</span></span>
 
-<span data-ttu-id="7f44c-1442">この例では、サーバー上で実行される CustTable テーブルで SQL クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1442">This example performs an SQL query on the CustTable table, which runs on the server.</span></span> <span data-ttu-id="7f44c-1443">クエリの結果は、\_resultSet オブジェクトに格納されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1443">The result of the query is stored in the \_resultSet object.</span></span> <span data-ttu-id="7f44c-1444">assert メソッドが呼び出され、コードが、ファイルに対するデータの読み取り/書き込みを行うために使用される AsciiIo クラスをインスタンス化できることが宣言されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1444">The assert method is called to declare that the code can then instantiate the AsciiIo class that is used to read and write data to a file.</span></span>
+<span data-ttu-id="50251-1442">この例では、サーバー上で実行される CustTable テーブルで SQL クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="50251-1442">This example performs an SQL query on the CustTable table, which runs on the server.</span></span> <span data-ttu-id="50251-1443">クエリの結果は、\_resultSet オブジェクトに格納されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1443">The result of the query is stored in the \_resultSet object.</span></span> <span data-ttu-id="50251-1444">assert メソッドが呼び出され、コードが、ファイルに対するデータの読み取り/書き込みを行うために使用される AsciiIo クラスをインスタンス化できることが宣言されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1444">The assert method is called to declare that the code can then instantiate the AsciiIo class that is used to read and write data to a file.</span></span>
 
     server static void main(Args _args) 
     { 
@@ -3216,61 +3216,61 @@ ms.locfileid: "1544189"
             } 
     }
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1445">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1445">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1445">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1445">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1446">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1446">Method</span></span>                                                 | <span data-ttu-id="7f44c-1447">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1447">Description</span></span>                                                                      |
+| <span data-ttu-id="50251-1446">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1446">Method</span></span>                                                 | <span data-ttu-id="50251-1447">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1447">Description</span></span>                                                                      |
 |--------------------------------------------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1448">public CodeAccessPermission copy()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1448">public CodeAccessPermission copy()</span></span>                     | <span data-ttu-id="7f44c-1449">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1449">Creates and returns a copy of the current permission class object.</span></span>               |
-| <span data-ttu-id="7f44c-1450">public boolean isSubsetOf(CodeAccessPermission target)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1450">public boolean isSubsetOf(CodeAccessPermission target)</span></span> | <span data-ttu-id="7f44c-1451">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1451">Determines whether a current permission is a subset of the specified permission.</span></span> |
-| <span data-ttu-id="7f44c-1452">public void new(str sqlStatement)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1452">public void new(str sqlStatement)</span></span>                      | <span data-ttu-id="7f44c-1453">SQLStatementExecutePermission クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1453">Creates a new instance of the SQLStatementExecutePermission class.</span></span>               |
+| <span data-ttu-id="50251-1448">public CodeAccessPermission copy()</span><span class="sxs-lookup"><span data-stu-id="50251-1448">public CodeAccessPermission copy()</span></span>                     | <span data-ttu-id="50251-1449">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1449">Creates and returns a copy of the current permission class object.</span></span>               |
+| <span data-ttu-id="50251-1450">public boolean isSubsetOf(CodeAccessPermission target)</span><span class="sxs-lookup"><span data-stu-id="50251-1450">public boolean isSubsetOf(CodeAccessPermission target)</span></span> | <span data-ttu-id="50251-1451">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1451">Determines whether a current permission is a subset of the specified permission.</span></span> |
+| <span data-ttu-id="50251-1452">public void new(str sqlStatement)</span><span class="sxs-lookup"><span data-stu-id="50251-1452">public void new(str sqlStatement)</span></span>                      | <span data-ttu-id="50251-1453">SQLStatementExecutePermission クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1453">Creates a new instance of the SQLStatementExecutePermission class.</span></span>               |
 
-### <a name="method-copy"></a><span data-ttu-id="7f44c-1454">メソッド copy</span><span class="sxs-lookup"><span data-stu-id="7f44c-1454">Method copy</span></span>
+### <a name="method-copy"></a><span data-ttu-id="50251-1454">メソッド copy</span><span class="sxs-lookup"><span data-stu-id="50251-1454">Method copy</span></span>
 
-<span data-ttu-id="7f44c-1455">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1455">Creates and returns a copy of the current permission class object.</span></span>
+<span data-ttu-id="50251-1455">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1455">Creates and returns a copy of the current permission class object.</span></span>
 
     public CodeAccessPermission copy()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1456">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1456">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1456">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1456">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1457">現在のアクセス許可オブジェクトのコピーです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1457">A copy of the current permission object.</span></span>
+<span data-ttu-id="50251-1457">現在のアクセス許可オブジェクトのコピーです。</span><span class="sxs-lookup"><span data-stu-id="50251-1457">A copy of the current permission object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1458">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1458">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1458">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1458">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1459">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1459">You override this method when you derive a class from the CodeAccessPermission class.</span></span> <span data-ttu-id="7f44c-1460">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1460">For more information, see .</span></span>
+<span data-ttu-id="50251-1459">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="50251-1459">You override this method when you derive a class from the CodeAccessPermission class.</span></span> <span data-ttu-id="50251-1460">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="50251-1460">For more information, see .</span></span>
 
-### <a name="method-issubsetof"></a><span data-ttu-id="7f44c-1461">メソッド isSubsetOf</span><span class="sxs-lookup"><span data-stu-id="7f44c-1461">Method isSubsetOf</span></span>
+### <a name="method-issubsetof"></a><span data-ttu-id="50251-1461">メソッド isSubsetOf</span><span class="sxs-lookup"><span data-stu-id="50251-1461">Method isSubsetOf</span></span>
 
-<span data-ttu-id="7f44c-1462">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1462">Determines whether a current permission is a subset of the specified permission.</span></span>
+<span data-ttu-id="50251-1462">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1462">Determines whether a current permission is a subset of the specified permission.</span></span>
 
     public boolean isSubsetOf(CodeAccessPermission target)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1463">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1463">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1463">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1463">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1464">target</span><span class="sxs-lookup"><span data-stu-id="7f44c-1464">target</span></span>  
-<span data-ttu-id="7f44c-1465">CodeAccessPermission クラス オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1465">A CodeAccessPermission class object.</span></span>
+<span data-ttu-id="50251-1464">target</span><span class="sxs-lookup"><span data-stu-id="50251-1464">target</span></span>  
+<span data-ttu-id="50251-1465">CodeAccessPermission クラス オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="50251-1465">A CodeAccessPermission class object.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1466">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1466">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1466">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1466">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1467">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1467">true if a current permission is a subset of a specified permission; otherwise false.</span></span>
+<span data-ttu-id="50251-1467">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="50251-1467">true if a current permission is a subset of a specified permission; otherwise false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1468">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1468">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1468">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1468">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1469">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1469">You override this method when you derive a class from the CodeAccessPermission class.</span></span> <span data-ttu-id="7f44c-1470">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1470">For more information, see .</span></span>
+<span data-ttu-id="50251-1469">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="50251-1469">You override this method when you derive a class from the CodeAccessPermission class.</span></span> <span data-ttu-id="50251-1470">詳細については、「」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="50251-1470">For more information, see .</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-1471">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-1471">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-1471">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-1471">Method new</span></span>
 
-<span data-ttu-id="7f44c-1472">SQLStatementExecutePermission クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1472">Creates a new instance of the SQLStatementExecutePermission class.</span></span>
+<span data-ttu-id="50251-1472">SQLStatementExecutePermission クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1472">Creates a new instance of the SQLStatementExecutePermission class.</span></span>
 
     public void new(str sqlStatement)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1473">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1473">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1473">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1473">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1474">sqlStatement</span><span class="sxs-lookup"><span data-stu-id="7f44c-1474">sqlStatement</span></span>  
-<span data-ttu-id="7f44c-1475">実行する SQL 文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1475">The SQL string to be executed.</span></span>
+<span data-ttu-id="50251-1474">sqlStatement</span><span class="sxs-lookup"><span data-stu-id="50251-1474">sqlStatement</span></span>  
+<span data-ttu-id="50251-1475">実行する SQL 文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-1475">The SQL string to be executed.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1476">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1476">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1476">例</span><span class="sxs-lookup"><span data-stu-id="50251-1476">Examples</span></span>
 
-<span data-ttu-id="7f44c-1477">次の例では、サーバー上で実行される、CustTable テーブルで SQL クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1477">The following example performs an SQL query on the CustTable table, which runs on the server.</span></span> <span data-ttu-id="7f44c-1478">クエリの結果は、resultSet オブジェクトに格納されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1478">The result of the query is stored in the resultSet object.</span></span>
+<span data-ttu-id="50251-1477">次の例では、サーバー上で実行される、CustTable テーブルで SQL クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="50251-1477">The following example performs an SQL query on the CustTable table, which runs on the server.</span></span> <span data-ttu-id="50251-1478">クエリの結果は、resultSet オブジェクトに格納されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1478">The result of the query is stored in the resultSet object.</span></span>
 
     server static void main(Args _args) 
     { 
@@ -3296,475 +3296,475 @@ ms.locfileid: "1544189"
             } 
     }
 
-## <a name="class-sqlsyncpending"></a><span data-ttu-id="7f44c-1479">クラス SqlSyncPending</span><span class="sxs-lookup"><span data-stu-id="7f44c-1479">Class SqlSyncPending</span></span>
+## <a name="class-sqlsyncpending"></a><span data-ttu-id="50251-1479">クラス SqlSyncPending</span><span class="sxs-lookup"><span data-stu-id="50251-1479">Class SqlSyncPending</span></span>
     class SqlSyncPending extends Object
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1480">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1480">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1480">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1480">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1481">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1481">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1481">例</span><span class="sxs-lookup"><span data-stu-id="50251-1481">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1482">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1482">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1482">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1482">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1483">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1483">Method</span></span>                                               | <span data-ttu-id="7f44c-1484">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1484">Description</span></span>                                             |
+| <span data-ttu-id="50251-1483">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1483">Method</span></span>                                               | <span data-ttu-id="50251-1484">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1484">Description</span></span>                                             |
 |------------------------------------------------------|---------------------------------------------------------|
-| <span data-ttu-id="7f44c-1485">public ConfigurationKeyId configurationKeyTouched()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1485">public ConfigurationKeyId configurationKeyTouched()</span></span>  |                                                         |
-| <span data-ttu-id="7f44c-1486">public boolean databaseTouched(\[boolean newValue\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1486">public boolean databaseTouched(\[boolean newValue\])</span></span> |                                                         |
-| <span data-ttu-id="7f44c-1487">public ExtendedTypeId extendedDataTypeTouched()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1487">public ExtendedTypeId extendedDataTypeTouched()</span></span>      |                                                         |
-| <span data-ttu-id="7f44c-1488">public TableId indexesTouched()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1488">public TableId indexesTouched()</span></span>                      |                                                         |
-| <span data-ttu-id="7f44c-1489">public TableId relationTouched()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1489">public TableId relationTouched()</span></span>                     |                                                         |
-| <span data-ttu-id="7f44c-1490">public TableId tableDeleted()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1490">public TableId tableDeleted()</span></span>                        |                                                         |
-| <span data-ttu-id="7f44c-1491">public TableId tableTouched()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1491">public TableId tableTouched()</span></span>                        |                                                         |
-| <span data-ttu-id="7f44c-1492">public void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1492">public void new()</span></span>                                    | <span data-ttu-id="7f44c-1493">SqlSyncPending クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1493">Initializes a new instance of the SqlSyncPending class.</span></span> |
+| <span data-ttu-id="50251-1485">public ConfigurationKeyId configurationKeyTouched()</span><span class="sxs-lookup"><span data-stu-id="50251-1485">public ConfigurationKeyId configurationKeyTouched()</span></span>  |                                                         |
+| <span data-ttu-id="50251-1486">public boolean databaseTouched(\[boolean newValue\])</span><span class="sxs-lookup"><span data-stu-id="50251-1486">public boolean databaseTouched(\[boolean newValue\])</span></span> |                                                         |
+| <span data-ttu-id="50251-1487">public ExtendedTypeId extendedDataTypeTouched()</span><span class="sxs-lookup"><span data-stu-id="50251-1487">public ExtendedTypeId extendedDataTypeTouched()</span></span>      |                                                         |
+| <span data-ttu-id="50251-1488">public TableId indexesTouched()</span><span class="sxs-lookup"><span data-stu-id="50251-1488">public TableId indexesTouched()</span></span>                      |                                                         |
+| <span data-ttu-id="50251-1489">public TableId relationTouched()</span><span class="sxs-lookup"><span data-stu-id="50251-1489">public TableId relationTouched()</span></span>                     |                                                         |
+| <span data-ttu-id="50251-1490">public TableId tableDeleted()</span><span class="sxs-lookup"><span data-stu-id="50251-1490">public TableId tableDeleted()</span></span>                        |                                                         |
+| <span data-ttu-id="50251-1491">public TableId tableTouched()</span><span class="sxs-lookup"><span data-stu-id="50251-1491">public TableId tableTouched()</span></span>                        |                                                         |
+| <span data-ttu-id="50251-1492">public void new()</span><span class="sxs-lookup"><span data-stu-id="50251-1492">public void new()</span></span>                                    | <span data-ttu-id="50251-1493">SqlSyncPending クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-1493">Initializes a new instance of the SqlSyncPending class.</span></span> |
 
-### <a name="method-configurationkeytouched"></a><span data-ttu-id="7f44c-1494">メソッド configurationKeyTouched</span><span class="sxs-lookup"><span data-stu-id="7f44c-1494">Method configurationKeyTouched</span></span>
+### <a name="method-configurationkeytouched"></a><span data-ttu-id="50251-1494">メソッド configurationKeyTouched</span><span class="sxs-lookup"><span data-stu-id="50251-1494">Method configurationKeyTouched</span></span>
 
     public ConfigurationKeyId configurationKeyTouched()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1495">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1495">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1495">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1495">Return Value</span></span>
 
-### <a name="method-databasetouched"></a><span data-ttu-id="7f44c-1496">メソッド databaseTouched</span><span class="sxs-lookup"><span data-stu-id="7f44c-1496">Method databaseTouched</span></span>
+### <a name="method-databasetouched"></a><span data-ttu-id="50251-1496">メソッド databaseTouched</span><span class="sxs-lookup"><span data-stu-id="50251-1496">Method databaseTouched</span></span>
 
     public boolean databaseTouched([boolean newValue])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1497">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1497">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1497">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1497">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1498">newValue</span><span class="sxs-lookup"><span data-stu-id="7f44c-1498">newValue</span></span>  
+<span data-ttu-id="50251-1498">newValue</span><span class="sxs-lookup"><span data-stu-id="50251-1498">newValue</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1499">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1499">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1499">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1499">Return Value</span></span>
 
-### <a name="method-extendeddatatypetouched"></a><span data-ttu-id="7f44c-1500">メソッド extendedDataTypeTouched</span><span class="sxs-lookup"><span data-stu-id="7f44c-1500">Method extendedDataTypeTouched</span></span>
+### <a name="method-extendeddatatypetouched"></a><span data-ttu-id="50251-1500">メソッド extendedDataTypeTouched</span><span class="sxs-lookup"><span data-stu-id="50251-1500">Method extendedDataTypeTouched</span></span>
 
     public ExtendedTypeId extendedDataTypeTouched()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1501">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1501">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1501">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1501">Return Value</span></span>
 
-### <a name="method-indexestouched"></a><span data-ttu-id="7f44c-1502">メソッド indexesTouched</span><span class="sxs-lookup"><span data-stu-id="7f44c-1502">Method indexesTouched</span></span>
+### <a name="method-indexestouched"></a><span data-ttu-id="50251-1502">メソッド indexesTouched</span><span class="sxs-lookup"><span data-stu-id="50251-1502">Method indexesTouched</span></span>
 
     public TableId indexesTouched()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1503">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1503">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1503">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1503">Return Value</span></span>
 
-### <a name="method-relationtouched"></a><span data-ttu-id="7f44c-1504">メソッド relationTouched</span><span class="sxs-lookup"><span data-stu-id="7f44c-1504">Method relationTouched</span></span>
+### <a name="method-relationtouched"></a><span data-ttu-id="50251-1504">メソッド relationTouched</span><span class="sxs-lookup"><span data-stu-id="50251-1504">Method relationTouched</span></span>
 
     public TableId relationTouched()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1505">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1505">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1505">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1505">Return Value</span></span>
 
-### <a name="method-tabledeleted"></a><span data-ttu-id="7f44c-1506">メソッド tableDeleted</span><span class="sxs-lookup"><span data-stu-id="7f44c-1506">Method tableDeleted</span></span>
+### <a name="method-tabledeleted"></a><span data-ttu-id="50251-1506">メソッド tableDeleted</span><span class="sxs-lookup"><span data-stu-id="50251-1506">Method tableDeleted</span></span>
 
     public TableId tableDeleted()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1507">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1507">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1507">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1507">Return Value</span></span>
 
-### <a name="method-tabletouched"></a><span data-ttu-id="7f44c-1508">メソッド tableTouched</span><span class="sxs-lookup"><span data-stu-id="7f44c-1508">Method tableTouched</span></span>
+### <a name="method-tabletouched"></a><span data-ttu-id="50251-1508">メソッド tableTouched</span><span class="sxs-lookup"><span data-stu-id="50251-1508">Method tableTouched</span></span>
 
     public TableId tableTouched()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1509">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1509">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1509">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1509">Return Value</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-1510">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-1510">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-1510">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-1510">Method new</span></span>
 
-<span data-ttu-id="7f44c-1511">SqlSyncPending クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1511">Initializes a new instance of the SqlSyncPending class.</span></span>
+<span data-ttu-id="50251-1511">SqlSyncPending クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-1511">Initializes a new instance of the SqlSyncPending class.</span></span>
 
     public void new()
 
-## <a name="class-sqlsystem"></a><span data-ttu-id="7f44c-1512">クラス SqlSystem</span><span class="sxs-lookup"><span data-stu-id="7f44c-1512">Class SqlSystem</span></span>
+## <a name="class-sqlsystem"></a><span data-ttu-id="50251-1512">クラス SqlSystem</span><span class="sxs-lookup"><span data-stu-id="50251-1512">Class SqlSystem</span></span>
     class SqlSystem extends Object
 
-<span data-ttu-id="7f44c-1513">SqlSystem クラスには、有効な SQL システムに関する情報 (通常はログイン情報) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1513">The SqlSystem class holds information about the active SQL system, typically login information.</span></span>
+<span data-ttu-id="50251-1513">SqlSystem クラスには、有効な SQL システムに関する情報 (通常はログイン情報) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="50251-1513">The SqlSystem class holds information about the active SQL system, typically login information.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1514">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1514">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1514">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1514">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1515">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1515">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1515">例</span><span class="sxs-lookup"><span data-stu-id="50251-1515">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1516">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1516">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1516">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1516">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1517">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1517">Method</span></span>                                                                                                                                   | <span data-ttu-id="7f44c-1518">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1518">Description</span></span>                                                                                             |
+| <span data-ttu-id="50251-1517">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1517">Method</span></span>                                                                                                                                   | <span data-ttu-id="50251-1518">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1518">Description</span></span>                                                                                             |
 |------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1519">public LoginProperty createLoginProperty()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1519">public LoginProperty createLoginProperty()</span></span>                                                                                               | <span data-ttu-id="7f44c-1520">データベースにログイン プロパティを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1520">Creates the login property to the  database.</span></span>                                       |
-| <span data-ttu-id="7f44c-1521">public DatabaseId databaseId()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1521">public DatabaseId databaseId()</span></span>                                                                                                           | <span data-ttu-id="7f44c-1522">SQL データベースのバックエンドとして使用されるデータベースの仕入先の ID を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1522">Returns the  ID for the database vendor used as the SQL database backend.</span></span>          |
-| <span data-ttu-id="7f44c-1523">public str databaseName()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1523">public str databaseName()</span></span>                                                                                                                | <span data-ttu-id="7f44c-1524">SQL データベースのバックエンドとして使用されるデータベースの仕入先の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1524">Returns the name of the database vendor used as the SQL database backend.</span></span>                               |
-| <span data-ttu-id="7f44c-1525">public boolean dbRequestedUnicodeEnabled()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1525">public boolean dbRequestedUnicodeEnabled()</span></span>                                                                                               | <span data-ttu-id="7f44c-1526">Unicode がデータベースでサポートされているかどうかを示す値を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1526">Retrieves the value that indicates if Unicode is supported in the database.</span></span>                             |
-| <span data-ttu-id="7f44c-1527">public str filenameDeadlocks(str Userid)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1527">public str filenameDeadlocks(str Userid)</span></span>                                                                                                 | <span data-ttu-id="7f44c-1528">デッドロックのトレース ログ ファイルに固有のユーザーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1528">Retrieves the name of the user specific deadlocks trace logfile.</span></span>                                        |
-| <span data-ttu-id="7f44c-1529">public str filenameQuerytimelimit(str Userid)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1529">public str filenameQuerytimelimit(str Userid)</span></span>                                                                                            | <span data-ttu-id="7f44c-1530">ユーザー固有の querytime 期限ログ ファイルの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1530">Retrieves the name of the user specific querytime limit logfile.</span></span>                                        |
-| <span data-ttu-id="7f44c-1531">public str filenameSqlTrace(str Userid)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1531">public str filenameSqlTrace(str Userid)</span></span>                                                                                                  | <span data-ttu-id="7f44c-1532">特定のユーザーの SQL トレース ログ ファイルのファイル名を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1532">Retrieves the filename of the SQL trace log file for specific user.</span></span>                                     |
-| <span data-ttu-id="7f44c-1533">public str filenameWarnings(str Userid)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1533">public str filenameWarnings(str Userid)</span></span>                                                                                                  | <span data-ttu-id="7f44c-1534">警告ログ ファイルに固有のユーザーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1534">Retrieves the name of the user specific warnings log file.</span></span>                                              |
-| <span data-ttu-id="7f44c-1535">public str logfileName(\[boolean fromCommandline\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1535">public str logfileName(\[boolean fromCommandline\])</span></span>                                                                                      | <span data-ttu-id="7f44c-1536">標準的な SQL エラー ログ ファイルの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1536">Retrieves the name of the standard  SQL error log file.</span></span>                            |
-| <span data-ttu-id="7f44c-1537">public str loginConnectString()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1537">public str loginConnectString()</span></span>                                                                                                          | <span data-ttu-id="7f44c-1538">ODBC の完全な接続文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1538">Retrieves the full ODBC connection string.</span></span>                                                              |
-| <span data-ttu-id="7f44c-1539">public str loginDatabase()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1539">public str loginDatabase()</span></span>                                                                                                               | <span data-ttu-id="7f44c-1540">現在接続されているデータベースの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1540">Retrieves the name of the database currently connected to.</span></span>                                              |
-| <span data-ttu-id="7f44c-1541">public str loginDSN()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1541">public str loginDSN()</span></span>                                                                                                                    | <span data-ttu-id="7f44c-1542">データベースに接続するために使用される Open Database Connectivity (ODBC) データ ソース名 (DSN) を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1542">Retrieves the open database connectivity (ODBC) data source name (DSN) used to connect to the database.</span></span> |
-| <span data-ttu-id="7f44c-1543">public str loginName()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1543">public str loginName()</span></span>                                                                                                                   | <span data-ttu-id="7f44c-1544">データベースにログインするために使用されるユーザー名を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1544">Retrieves the user name that is used to log-in to the database.</span></span>                                         |
-| <span data-ttu-id="7f44c-1545">public str loginServer()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1545">public str loginServer()</span></span>                                                                                                                 | <span data-ttu-id="7f44c-1546">現在接続されているデータベース サーバーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1546">Retrieves the name of the database server currently connected to.</span></span>                                       |
-| <span data-ttu-id="7f44c-1547">public str monocaseFmt(\[TableId tableId\], \[FieldId fieldId\], \[boolean includingFieldName\], \[boolean considerSystemVariables\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1547">public str monocaseFmt(\[TableId tableId\], \[FieldId fieldId\], \[boolean includingFieldName\], \[boolean considerSystemVariables\])</span></span>    | <span data-ttu-id="7f44c-1548">文字列を 1 つのケースにキャストするために使用される書式文字列を取得します ("NLS\_LOWER(%1)" など)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1548">Retrieves the format string that is used for casting the string to one case (e.g. "NLS\_LOWER(%1)").</span></span>    |
-| <span data-ttu-id="7f44c-1549">public str sqlLiteral(AnyType data, \[boolean forWhereClause\], \[boolean likeOperand\], \[boolean rightJustify\], \[int stringLength\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1549">public str sqlLiteral(AnyType data, \[boolean forWhereClause\], \[boolean likeOperand\], \[boolean rightJustify\], \[int stringLength\])</span></span> | <span data-ttu-id="7f44c-1550">SQL タイプを修正するため入力 AX データ型を書式設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1550">Formats the input AX datatype to correct SQL type.</span></span>                                                      |
-| <span data-ttu-id="7f44c-1551">::public static boolean clusteredIndexes()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1551">::public static boolean clusteredIndexes()</span></span>                                                                                               |                                                                                                         |
-| <span data-ttu-id="7f44c-1552">::public static str databaseBackendDesc()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1552">::public static str databaseBackendDesc()</span></span>                                                                                                |                                                                                                         |
-| <span data-ttu-id="7f44c-1553">::public static DatabaseId databaseBackendId()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1553">::public static DatabaseId databaseBackendId()</span></span>                                                                                           |                                                                                                         |
-| <span data-ttu-id="7f44c-1554">::public static str databaseBackendName()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1554">::public static str databaseBackendName()</span></span>                                                                                                |                                                                                                         |
-| <span data-ttu-id="7f44c-1555">::public static DatabaseCLI databaseCallLevelInterface()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1555">::public static DatabaseCLI databaseCallLevelInterface()</span></span>                                                                                 |                                                                                                         |
-| <span data-ttu-id="7f44c-1556">::public static int databaseHints(\[int new\_hint\_value\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1556">::public static int databaseHints(\[int new\_hint\_value\])</span></span>                                                                              |                                                                                                         |
-| <span data-ttu-id="7f44c-1557">::public static boolean functionalIndexes()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1557">::public static boolean functionalIndexes()</span></span>                                                                                              |                                                                                                         |
-| <span data-ttu-id="7f44c-1558">::public static str modelDatabaseBackendName()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1558">::public static str modelDatabaseBackendName()</span></span>                                                                                           | <span data-ttu-id="7f44c-1559">現在接続されているモデル データベース AOS の名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1559">Retrieves the name of the model database AOS currently connected to.</span></span>                                    |
-| <span data-ttu-id="7f44c-1560">::public static str managedConnectionString()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1560">::public static str managedConnectionString()</span></span>                                                                                            |                                                                                                         |
-| <span data-ttu-id="7f44c-1561">public void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1561">public void new()</span></span>                                                                                                                        | <span data-ttu-id="7f44c-1562">SqlSystem クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1562">Initializes a new instance of the SqlSystem class.</span></span>                                                      |
-| <span data-ttu-id="7f44c-1563">public void logfileWrite(str Text)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1563">public void logfileWrite(str Text)</span></span>                                                                                                       | <span data-ttu-id="7f44c-1564">テキスト文字列を標準 SQL エラー ログファイルに記述します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1564">Writes a text string into the standard  SQL error logfile.</span></span>                         |
+| <span data-ttu-id="50251-1519">public LoginProperty createLoginProperty()</span><span class="sxs-lookup"><span data-stu-id="50251-1519">public LoginProperty createLoginProperty()</span></span>                                                                                               | <span data-ttu-id="50251-1520">データベースにログイン プロパティを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1520">Creates the login property to the  database.</span></span>                                       |
+| <span data-ttu-id="50251-1521">public DatabaseId databaseId()</span><span class="sxs-lookup"><span data-stu-id="50251-1521">public DatabaseId databaseId()</span></span>                                                                                                           | <span data-ttu-id="50251-1522">SQL データベースのバックエンドとして使用されるデータベースの仕入先の ID を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1522">Returns the  ID for the database vendor used as the SQL database backend.</span></span>          |
+| <span data-ttu-id="50251-1523">public str databaseName()</span><span class="sxs-lookup"><span data-stu-id="50251-1523">public str databaseName()</span></span>                                                                                                                | <span data-ttu-id="50251-1524">SQL データベースのバックエンドとして使用されるデータベースの仕入先の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1524">Returns the name of the database vendor used as the SQL database backend.</span></span>                               |
+| <span data-ttu-id="50251-1525">public boolean dbRequestedUnicodeEnabled()</span><span class="sxs-lookup"><span data-stu-id="50251-1525">public boolean dbRequestedUnicodeEnabled()</span></span>                                                                                               | <span data-ttu-id="50251-1526">Unicode がデータベースでサポートされているかどうかを示す値を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1526">Retrieves the value that indicates if Unicode is supported in the database.</span></span>                             |
+| <span data-ttu-id="50251-1527">public str filenameDeadlocks(str Userid)</span><span class="sxs-lookup"><span data-stu-id="50251-1527">public str filenameDeadlocks(str Userid)</span></span>                                                                                                 | <span data-ttu-id="50251-1528">デッドロックのトレース ログ ファイルに固有のユーザーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1528">Retrieves the name of the user specific deadlocks trace logfile.</span></span>                                        |
+| <span data-ttu-id="50251-1529">public str filenameQuerytimelimit(str Userid)</span><span class="sxs-lookup"><span data-stu-id="50251-1529">public str filenameQuerytimelimit(str Userid)</span></span>                                                                                            | <span data-ttu-id="50251-1530">ユーザー固有の querytime 期限ログ ファイルの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1530">Retrieves the name of the user specific querytime limit logfile.</span></span>                                        |
+| <span data-ttu-id="50251-1531">public str filenameSqlTrace(str Userid)</span><span class="sxs-lookup"><span data-stu-id="50251-1531">public str filenameSqlTrace(str Userid)</span></span>                                                                                                  | <span data-ttu-id="50251-1532">特定のユーザーの SQL トレース ログ ファイルのファイル名を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1532">Retrieves the filename of the SQL trace log file for specific user.</span></span>                                     |
+| <span data-ttu-id="50251-1533">public str filenameWarnings(str Userid)</span><span class="sxs-lookup"><span data-stu-id="50251-1533">public str filenameWarnings(str Userid)</span></span>                                                                                                  | <span data-ttu-id="50251-1534">警告ログ ファイルに固有のユーザーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1534">Retrieves the name of the user specific warnings log file.</span></span>                                              |
+| <span data-ttu-id="50251-1535">public str logfileName(\[boolean fromCommandline\])</span><span class="sxs-lookup"><span data-stu-id="50251-1535">public str logfileName(\[boolean fromCommandline\])</span></span>                                                                                      | <span data-ttu-id="50251-1536">標準的な SQL エラー ログ ファイルの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1536">Retrieves the name of the standard  SQL error log file.</span></span>                            |
+| <span data-ttu-id="50251-1537">public str loginConnectString()</span><span class="sxs-lookup"><span data-stu-id="50251-1537">public str loginConnectString()</span></span>                                                                                                          | <span data-ttu-id="50251-1538">ODBC の完全な接続文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1538">Retrieves the full ODBC connection string.</span></span>                                                              |
+| <span data-ttu-id="50251-1539">public str loginDatabase()</span><span class="sxs-lookup"><span data-stu-id="50251-1539">public str loginDatabase()</span></span>                                                                                                               | <span data-ttu-id="50251-1540">現在接続されているデータベースの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1540">Retrieves the name of the database currently connected to.</span></span>                                              |
+| <span data-ttu-id="50251-1541">public str loginDSN()</span><span class="sxs-lookup"><span data-stu-id="50251-1541">public str loginDSN()</span></span>                                                                                                                    | <span data-ttu-id="50251-1542">データベースに接続するために使用される Open Database Connectivity (ODBC) データ ソース名 (DSN) を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1542">Retrieves the open database connectivity (ODBC) data source name (DSN) used to connect to the database.</span></span> |
+| <span data-ttu-id="50251-1543">public str loginName()</span><span class="sxs-lookup"><span data-stu-id="50251-1543">public str loginName()</span></span>                                                                                                                   | <span data-ttu-id="50251-1544">データベースにログインするために使用されるユーザー名を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1544">Retrieves the user name that is used to log-in to the database.</span></span>                                         |
+| <span data-ttu-id="50251-1545">public str loginServer()</span><span class="sxs-lookup"><span data-stu-id="50251-1545">public str loginServer()</span></span>                                                                                                                 | <span data-ttu-id="50251-1546">現在接続されているデータベース サーバーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1546">Retrieves the name of the database server currently connected to.</span></span>                                       |
+| <span data-ttu-id="50251-1547">public str monocaseFmt(\[TableId tableId\], \[FieldId fieldId\], \[boolean includingFieldName\], \[boolean considerSystemVariables\])</span><span class="sxs-lookup"><span data-stu-id="50251-1547">public str monocaseFmt(\[TableId tableId\], \[FieldId fieldId\], \[boolean includingFieldName\], \[boolean considerSystemVariables\])</span></span>    | <span data-ttu-id="50251-1548">文字列を 1 つのケースにキャストするために使用される書式文字列を取得します ("NLS\_LOWER(%1)" など)。</span><span class="sxs-lookup"><span data-stu-id="50251-1548">Retrieves the format string that is used for casting the string to one case (e.g. "NLS\_LOWER(%1)").</span></span>    |
+| <span data-ttu-id="50251-1549">public str sqlLiteral(AnyType data, \[boolean forWhereClause\], \[boolean likeOperand\], \[boolean rightJustify\], \[int stringLength\])</span><span class="sxs-lookup"><span data-stu-id="50251-1549">public str sqlLiteral(AnyType data, \[boolean forWhereClause\], \[boolean likeOperand\], \[boolean rightJustify\], \[int stringLength\])</span></span> | <span data-ttu-id="50251-1550">SQL タイプを修正するため入力 AX データ型を書式設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1550">Formats the input AX datatype to correct SQL type.</span></span>                                                      |
+| <span data-ttu-id="50251-1551">::public static boolean clusteredIndexes()</span><span class="sxs-lookup"><span data-stu-id="50251-1551">::public static boolean clusteredIndexes()</span></span>                                                                                               |                                                                                                         |
+| <span data-ttu-id="50251-1552">::public static str databaseBackendDesc()</span><span class="sxs-lookup"><span data-stu-id="50251-1552">::public static str databaseBackendDesc()</span></span>                                                                                                |                                                                                                         |
+| <span data-ttu-id="50251-1553">::public static DatabaseId databaseBackendId()</span><span class="sxs-lookup"><span data-stu-id="50251-1553">::public static DatabaseId databaseBackendId()</span></span>                                                                                           |                                                                                                         |
+| <span data-ttu-id="50251-1554">::public static str databaseBackendName()</span><span class="sxs-lookup"><span data-stu-id="50251-1554">::public static str databaseBackendName()</span></span>                                                                                                |                                                                                                         |
+| <span data-ttu-id="50251-1555">::public static DatabaseCLI databaseCallLevelInterface()</span><span class="sxs-lookup"><span data-stu-id="50251-1555">::public static DatabaseCLI databaseCallLevelInterface()</span></span>                                                                                 |                                                                                                         |
+| <span data-ttu-id="50251-1556">::public static int databaseHints(\[int new\_hint\_value\])</span><span class="sxs-lookup"><span data-stu-id="50251-1556">::public static int databaseHints(\[int new\_hint\_value\])</span></span>                                                                              |                                                                                                         |
+| <span data-ttu-id="50251-1557">::public static boolean functionalIndexes()</span><span class="sxs-lookup"><span data-stu-id="50251-1557">::public static boolean functionalIndexes()</span></span>                                                                                              |                                                                                                         |
+| <span data-ttu-id="50251-1558">::public static str modelDatabaseBackendName()</span><span class="sxs-lookup"><span data-stu-id="50251-1558">::public static str modelDatabaseBackendName()</span></span>                                                                                           | <span data-ttu-id="50251-1559">現在接続されているモデル データベース AOS の名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1559">Retrieves the name of the model database AOS currently connected to.</span></span>                                    |
+| <span data-ttu-id="50251-1560">::public static str managedConnectionString()</span><span class="sxs-lookup"><span data-stu-id="50251-1560">::public static str managedConnectionString()</span></span>                                                                                            |                                                                                                         |
+| <span data-ttu-id="50251-1561">public void new()</span><span class="sxs-lookup"><span data-stu-id="50251-1561">public void new()</span></span>                                                                                                                        | <span data-ttu-id="50251-1562">SqlSystem クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-1562">Initializes a new instance of the SqlSystem class.</span></span>                                                      |
+| <span data-ttu-id="50251-1563">public void logfileWrite(str Text)</span><span class="sxs-lookup"><span data-stu-id="50251-1563">public void logfileWrite(str Text)</span></span>                                                                                                       | <span data-ttu-id="50251-1564">テキスト文字列を標準 SQL エラー ログファイルに記述します。</span><span class="sxs-lookup"><span data-stu-id="50251-1564">Writes a text string into the standard  SQL error logfile.</span></span>                         |
 
-### <a name="method-createloginproperty"></a><span data-ttu-id="7f44c-1565">メソッド createLoginProperty</span><span class="sxs-lookup"><span data-stu-id="7f44c-1565">Method createLoginProperty</span></span>
+### <a name="method-createloginproperty"></a><span data-ttu-id="50251-1565">メソッド createLoginProperty</span><span class="sxs-lookup"><span data-stu-id="50251-1565">Method createLoginProperty</span></span>
 
-<span data-ttu-id="7f44c-1566">データベースにログイン プロパティを作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1566">Creates the login property to the  database.</span></span>
+<span data-ttu-id="50251-1566">データベースにログイン プロパティを作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1566">Creates the login property to the  database.</span></span>
 
     public LoginProperty createLoginProperty()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1567">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1567">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1567">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1567">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1568">作成されたログイン プロパティ。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1568">The login property that was created.</span></span>
+<span data-ttu-id="50251-1568">作成されたログイン プロパティ。</span><span class="sxs-lookup"><span data-stu-id="50251-1568">The login property that was created.</span></span>
 
-### <a name="method-databaseid"></a><span data-ttu-id="7f44c-1569">メソッド databaseId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1569">Method databaseId</span></span>
+### <a name="method-databaseid"></a><span data-ttu-id="50251-1569">メソッド databaseId</span><span class="sxs-lookup"><span data-stu-id="50251-1569">Method databaseId</span></span>
 
-<span data-ttu-id="7f44c-1570">SQL データベースのバックエンドとして使用されるデータベースの仕入先の ID を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1570">Returns the  ID for the database vendor used as the SQL database backend.</span></span>
+<span data-ttu-id="50251-1570">SQL データベースのバックエンドとして使用されるデータベースの仕入先の ID を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1570">Returns the  ID for the database vendor used as the SQL database backend.</span></span>
 
     public DatabaseId databaseId()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1571">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1571">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1571">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1571">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1572">SQL データベースのバックエンドとして使用されるデータベースの仕入先の ID。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1572">The  ID for the database vendor used as the SQL database backend.</span></span>
+<span data-ttu-id="50251-1572">SQL データベースのバックエンドとして使用されるデータベースの仕入先の ID。</span><span class="sxs-lookup"><span data-stu-id="50251-1572">The  ID for the database vendor used as the SQL database backend.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1573">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1573">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1573">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1573">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1574">データベースの仕入先が、何らかの理由で特定できない場合、列挙 DbBackend::UNKNOWN が返されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1574">If the database vendor cannot be determined for any reason, the enumeration DbBackend::UNKNOWN is returned.</span></span>
+<span data-ttu-id="50251-1574">データベースの仕入先が、何らかの理由で特定できない場合、列挙 DbBackend::UNKNOWN が返されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1574">If the database vendor cannot be determined for any reason, the enumeration DbBackend::UNKNOWN is returned.</span></span>
 
-### <a name="method-databasename"></a><span data-ttu-id="7f44c-1575">メソッド databaseName</span><span class="sxs-lookup"><span data-stu-id="7f44c-1575">Method databaseName</span></span>
+### <a name="method-databasename"></a><span data-ttu-id="50251-1575">メソッド databaseName</span><span class="sxs-lookup"><span data-stu-id="50251-1575">Method databaseName</span></span>
 
-<span data-ttu-id="7f44c-1576">SQL データベースのバックエンドとして使用されるデータベースの仕入先の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1576">Returns the name of the database vendor used as the SQL database backend.</span></span>
+<span data-ttu-id="50251-1576">SQL データベースのバックエンドとして使用されるデータベースの仕入先の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1576">Returns the name of the database vendor used as the SQL database backend.</span></span>
 
     public str databaseName()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1577">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1577">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1577">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1577">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1578">SQL データベースのバックエンドとして使用されるデータベースの仕入先の名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1578">The name of the database vendor used as the SQL database backend.</span></span>
+<span data-ttu-id="50251-1578">SQL データベースのバックエンドとして使用されるデータベースの仕入先の名前。</span><span class="sxs-lookup"><span data-stu-id="50251-1578">The name of the database vendor used as the SQL database backend.</span></span>
 
-### <a name="method-dbrequestedunicodeenabled"></a><span data-ttu-id="7f44c-1579">メソッド dbRequestedUnicodeEnabled</span><span class="sxs-lookup"><span data-stu-id="7f44c-1579">Method dbRequestedUnicodeEnabled</span></span>
+### <a name="method-dbrequestedunicodeenabled"></a><span data-ttu-id="50251-1579">メソッド dbRequestedUnicodeEnabled</span><span class="sxs-lookup"><span data-stu-id="50251-1579">Method dbRequestedUnicodeEnabled</span></span>
 
-<span data-ttu-id="7f44c-1580">Unicode がデータベースでサポートされているかどうかを示す値を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1580">Retrieves the value that indicates if Unicode is supported in the database.</span></span>
+<span data-ttu-id="50251-1580">Unicode がデータベースでサポートされているかどうかを示す値を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1580">Retrieves the value that indicates if Unicode is supported in the database.</span></span>
 
     public boolean dbRequestedUnicodeEnabled()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1581">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1581">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1581">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1581">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1582">Unicode がデータベースでサポートされているかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1582">The value that indicates if Unicode is supported in the database.</span></span>
+<span data-ttu-id="50251-1582">Unicode がデータベースでサポートされているかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="50251-1582">The value that indicates if Unicode is supported in the database.</span></span>
 
-### <a name="method-filenamedeadlocks"></a><span data-ttu-id="7f44c-1583">メソッド filenameDeadlocks</span><span class="sxs-lookup"><span data-stu-id="7f44c-1583">Method filenameDeadlocks</span></span>
+### <a name="method-filenamedeadlocks"></a><span data-ttu-id="50251-1583">メソッド filenameDeadlocks</span><span class="sxs-lookup"><span data-stu-id="50251-1583">Method filenameDeadlocks</span></span>
 
-<span data-ttu-id="7f44c-1584">デッドロックのトレース ログ ファイルに固有のユーザーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1584">Retrieves the name of the user specific deadlocks trace logfile.</span></span>
+<span data-ttu-id="50251-1584">デッドロックのトレース ログ ファイルに固有のユーザーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1584">Retrieves the name of the user specific deadlocks trace logfile.</span></span>
 
     public str filenameDeadlocks(str Userid)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1585">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1585">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1585">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1585">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1586">Userid</span><span class="sxs-lookup"><span data-stu-id="7f44c-1586">Userid</span></span>  
+<span data-ttu-id="50251-1586">Userid</span><span class="sxs-lookup"><span data-stu-id="50251-1586">Userid</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1587">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1587">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1587">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1587">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1588">デッドロックのトレース ログ ファイルに固有のユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1588">The name of the user specific to deadlocks trace log file.</span></span>
+<span data-ttu-id="50251-1588">デッドロックのトレース ログ ファイルに固有のユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="50251-1588">The name of the user specific to deadlocks trace log file.</span></span>
 
-### <a name="method-filenamequerytimelimit"></a><span data-ttu-id="7f44c-1589">メソッド filenameQuerytimelimit</span><span class="sxs-lookup"><span data-stu-id="7f44c-1589">Method filenameQuerytimelimit</span></span>
+### <a name="method-filenamequerytimelimit"></a><span data-ttu-id="50251-1589">メソッド filenameQuerytimelimit</span><span class="sxs-lookup"><span data-stu-id="50251-1589">Method filenameQuerytimelimit</span></span>
 
-<span data-ttu-id="7f44c-1590">ユーザー固有の querytime 期限ログ ファイルの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1590">Retrieves the name of the user specific querytime limit logfile.</span></span>
+<span data-ttu-id="50251-1590">ユーザー固有の querytime 期限ログ ファイルの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1590">Retrieves the name of the user specific querytime limit logfile.</span></span>
 
     public str filenameQuerytimelimit(str Userid)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1591">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1591">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1591">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1591">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1592">Userid</span><span class="sxs-lookup"><span data-stu-id="7f44c-1592">Userid</span></span>  
+<span data-ttu-id="50251-1592">Userid</span><span class="sxs-lookup"><span data-stu-id="50251-1592">Userid</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1593">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1593">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1593">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1593">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1594">ユーザー固有の querytime 期限ログ ファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1594">The name of the user specific querytime limit logfile.</span></span>
+<span data-ttu-id="50251-1594">ユーザー固有の querytime 期限ログ ファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="50251-1594">The name of the user specific querytime limit logfile.</span></span>
 
-### <a name="method-filenamesqltrace"></a><span data-ttu-id="7f44c-1595">メソッド filenameSqlTrace</span><span class="sxs-lookup"><span data-stu-id="7f44c-1595">Method filenameSqlTrace</span></span>
+### <a name="method-filenamesqltrace"></a><span data-ttu-id="50251-1595">メソッド filenameSqlTrace</span><span class="sxs-lookup"><span data-stu-id="50251-1595">Method filenameSqlTrace</span></span>
 
-<span data-ttu-id="7f44c-1596">特定のユーザーの SQL トレース ログ ファイルのファイル名を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1596">Retrieves the filename of the SQL trace log file for specific user.</span></span>
+<span data-ttu-id="50251-1596">特定のユーザーの SQL トレース ログ ファイルのファイル名を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1596">Retrieves the filename of the SQL trace log file for specific user.</span></span>
 
     public str filenameSqlTrace(str Userid)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1597">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1597">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1597">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1597">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1598">Userid</span><span class="sxs-lookup"><span data-stu-id="7f44c-1598">Userid</span></span>  
-<span data-ttu-id="7f44c-1599">ユーザー ID。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1599">The User Id.</span></span>
+<span data-ttu-id="50251-1598">Userid</span><span class="sxs-lookup"><span data-stu-id="50251-1598">Userid</span></span>  
+<span data-ttu-id="50251-1599">ユーザー ID。</span><span class="sxs-lookup"><span data-stu-id="50251-1599">The User Id.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1600">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1600">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1600">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1600">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1601">SQL 追跡ログのファイル名。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1601">The filename of SQL trace log.</span></span>
+<span data-ttu-id="50251-1601">SQL 追跡ログのファイル名。</span><span class="sxs-lookup"><span data-stu-id="50251-1601">The filename of SQL trace log.</span></span>
 
-### <a name="method-filenamewarnings"></a><span data-ttu-id="7f44c-1602">メソッド filenameWarnings</span><span class="sxs-lookup"><span data-stu-id="7f44c-1602">Method filenameWarnings</span></span>
+### <a name="method-filenamewarnings"></a><span data-ttu-id="50251-1602">メソッド filenameWarnings</span><span class="sxs-lookup"><span data-stu-id="50251-1602">Method filenameWarnings</span></span>
 
-<span data-ttu-id="7f44c-1603">警告ログ ファイルに固有のユーザーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1603">Retrieves the name of the user specific warnings log file.</span></span>
+<span data-ttu-id="50251-1603">警告ログ ファイルに固有のユーザーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1603">Retrieves the name of the user specific warnings log file.</span></span>
 
     public str filenameWarnings(str Userid)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1604">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1604">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1604">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1604">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1605">Userid</span><span class="sxs-lookup"><span data-stu-id="7f44c-1605">Userid</span></span>  
-<span data-ttu-id="7f44c-1606">関係ユーザーの識別子。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1606">The identifier of interested user.</span></span>
+<span data-ttu-id="50251-1605">Userid</span><span class="sxs-lookup"><span data-stu-id="50251-1605">Userid</span></span>  
+<span data-ttu-id="50251-1606">関係ユーザーの識別子。</span><span class="sxs-lookup"><span data-stu-id="50251-1606">The identifier of interested user.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1607">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1607">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1607">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1607">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1608">警告ログ ファイルに固有のユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1608">The name of the user specific warnings log file.</span></span>
+<span data-ttu-id="50251-1608">警告ログ ファイルに固有のユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="50251-1608">The name of the user specific warnings log file.</span></span>
 
-### <a name="method-logfilename"></a><span data-ttu-id="7f44c-1609">メソッド logfileName</span><span class="sxs-lookup"><span data-stu-id="7f44c-1609">Method logfileName</span></span>
+### <a name="method-logfilename"></a><span data-ttu-id="50251-1609">メソッド logfileName</span><span class="sxs-lookup"><span data-stu-id="50251-1609">Method logfileName</span></span>
 
-<span data-ttu-id="7f44c-1610">標準的な SQL エラー ログ ファイルの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1610">Retrieves the name of the standard  SQL error log file.</span></span>
+<span data-ttu-id="50251-1610">標準的な SQL エラー ログ ファイルの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1610">Retrieves the name of the standard  SQL error log file.</span></span>
 
     public str logfileName([boolean fromCommandline])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1611">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1611">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1611">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1611">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1612">fromCommandline</span><span class="sxs-lookup"><span data-stu-id="7f44c-1612">fromCommandline</span></span>  
-<span data-ttu-id="7f44c-1613">ブール値。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1613">A boolean value.</span></span> <span data-ttu-id="7f44c-1614">パラメーターとしてゼロ以外の値を渡すと、コマンド ラインで渡されるログファイル名が呼び出しにより返されます (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1614">Passing a non-zero value as parameter makes the call return the logfile name passed on the command line; optional.</span></span>
+<span data-ttu-id="50251-1612">fromCommandline</span><span class="sxs-lookup"><span data-stu-id="50251-1612">fromCommandline</span></span>  
+<span data-ttu-id="50251-1613">ブール値。</span><span class="sxs-lookup"><span data-stu-id="50251-1613">A boolean value.</span></span> <span data-ttu-id="50251-1614">パラメーターとしてゼロ以外の値を渡すと、コマンド ラインで渡されるログファイル名が呼び出しにより返されます (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1614">Passing a non-zero value as parameter makes the call return the logfile name passed on the command line; optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1615">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1615">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1615">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1615">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1616">標準 SQL エラー ログ ファイルのファイル名。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1616">The file name of the standard  SQL error log file.</span></span>
+<span data-ttu-id="50251-1616">標準 SQL エラー ログ ファイルのファイル名。</span><span class="sxs-lookup"><span data-stu-id="50251-1616">The file name of the standard  SQL error log file.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1617">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1617">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1617">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1617">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1618">バージョン 2.11 以降では、空の文字列が返されます (下位互換性のため)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1618">In version 2.11 or higher, an empty string is returned (for backward compatibility).</span></span> <span data-ttu-id="7f44c-1619">ログ ファイル名を取得するには、filenameSqlError メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1619">Use the filenameSqlError method to retrieve the log file name.</span></span>
+<span data-ttu-id="50251-1618">バージョン 2.11 以降では、空の文字列が返されます (下位互換性のため)。</span><span class="sxs-lookup"><span data-stu-id="50251-1618">In version 2.11 or higher, an empty string is returned (for backward compatibility).</span></span> <span data-ttu-id="50251-1619">ログ ファイル名を取得するには、filenameSqlError メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="50251-1619">Use the filenameSqlError method to retrieve the log file name.</span></span>
 
-### <a name="method-loginconnectstring"></a><span data-ttu-id="7f44c-1620">メソッド loginConnectString</span><span class="sxs-lookup"><span data-stu-id="7f44c-1620">Method loginConnectString</span></span>
+### <a name="method-loginconnectstring"></a><span data-ttu-id="50251-1620">メソッド loginConnectString</span><span class="sxs-lookup"><span data-stu-id="50251-1620">Method loginConnectString</span></span>
 
-<span data-ttu-id="7f44c-1621">ODBC の完全な接続文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1621">Retrieves the full ODBC connection string.</span></span>
+<span data-ttu-id="50251-1621">ODBC の完全な接続文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1621">Retrieves the full ODBC connection string.</span></span>
 
     public str loginConnectString()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1622">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1622">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1622">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1622">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1623">ODBC の完全な接続文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1623">The full ODBC connection string.</span></span>
+<span data-ttu-id="50251-1623">ODBC の完全な接続文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-1623">The full ODBC connection string.</span></span>
 
-### <a name="method-logindatabase"></a><span data-ttu-id="7f44c-1624">メソッド loginDatabase</span><span class="sxs-lookup"><span data-stu-id="7f44c-1624">Method loginDatabase</span></span>
+### <a name="method-logindatabase"></a><span data-ttu-id="50251-1624">メソッド loginDatabase</span><span class="sxs-lookup"><span data-stu-id="50251-1624">Method loginDatabase</span></span>
 
-<span data-ttu-id="7f44c-1625">現在接続されているデータベースの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1625">Retrieves the name of the database currently connected to.</span></span>
+<span data-ttu-id="50251-1625">現在接続されているデータベースの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1625">Retrieves the name of the database currently connected to.</span></span>
 
     public str loginDatabase()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1626">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1626">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1626">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1626">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1627">現在接続されているデータベースの名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1627">The name of the database currently connected to.</span></span>
+<span data-ttu-id="50251-1627">現在接続されているデータベースの名前。</span><span class="sxs-lookup"><span data-stu-id="50251-1627">The name of the database currently connected to.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1628">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1628">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1628">例</span><span class="sxs-lookup"><span data-stu-id="50251-1628">Examples</span></span>
 
     { 
         SqlSystem SqlSystem = new SqlSystem(); 
         print SqlSystem.loginDatabase(); 
     }
 
-### <a name="method-logindsn"></a><span data-ttu-id="7f44c-1629">メソッド loginDSN</span><span class="sxs-lookup"><span data-stu-id="7f44c-1629">Method loginDSN</span></span>
+### <a name="method-logindsn"></a><span data-ttu-id="50251-1629">メソッド loginDSN</span><span class="sxs-lookup"><span data-stu-id="50251-1629">Method loginDSN</span></span>
 
-<span data-ttu-id="7f44c-1630">データベースに接続するために使用される Open Database Connectivity (ODBC) データ ソース名 (DSN) を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1630">Retrieves the open database connectivity (ODBC) data source name (DSN) used to connect to the database.</span></span>
+<span data-ttu-id="50251-1630">データベースに接続するために使用される Open Database Connectivity (ODBC) データ ソース名 (DSN) を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1630">Retrieves the open database connectivity (ODBC) data source name (DSN) used to connect to the database.</span></span>
 
     public str loginDSN()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1631">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1631">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1631">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1631">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1632">データベースへの接続に使用される ODBC データ ソース名の名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1632">The name of the ODBC data source name that is used for connecting to the database.</span></span>
+<span data-ttu-id="50251-1632">データベースへの接続に使用される ODBC データ ソース名の名前。</span><span class="sxs-lookup"><span data-stu-id="50251-1632">The name of the ODBC data source name that is used for connecting to the database.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1633">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1633">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1633">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1633">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1634">既定の DSN は「BMSDSN」です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1634">The default DSN is "BMSDSN".</span></span>
+<span data-ttu-id="50251-1634">既定の DSN は「BMSDSN」です。</span><span class="sxs-lookup"><span data-stu-id="50251-1634">The default DSN is "BMSDSN".</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1635">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1635">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1635">例</span><span class="sxs-lookup"><span data-stu-id="50251-1635">Examples</span></span>
 
     { 
         SqlSystem SqlSystem = new SqlSystem(); 
         print SqlSystem.loginDSN(); 
     }
 
-### <a name="method-loginname"></a><span data-ttu-id="7f44c-1636">メソッド loginName</span><span class="sxs-lookup"><span data-stu-id="7f44c-1636">Method loginName</span></span>
+### <a name="method-loginname"></a><span data-ttu-id="50251-1636">メソッド loginName</span><span class="sxs-lookup"><span data-stu-id="50251-1636">Method loginName</span></span>
 
-<span data-ttu-id="7f44c-1637">データベースにログインするために使用されるユーザー名を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1637">Retrieves the user name that is used to log-in to the database.</span></span>
+<span data-ttu-id="50251-1637">データベースにログインするために使用されるユーザー名を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1637">Retrieves the user name that is used to log-in to the database.</span></span>
 
     public str loginName()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1638">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1638">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1638">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1638">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1639">データベースにログインするために使用されるユーザー名。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1639">The user name that is used to log-in to the database.</span></span>
+<span data-ttu-id="50251-1639">データベースにログインするために使用されるユーザー名。</span><span class="sxs-lookup"><span data-stu-id="50251-1639">The user name that is used to log-in to the database.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1640">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1640">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1640">例</span><span class="sxs-lookup"><span data-stu-id="50251-1640">Examples</span></span>
 
     { 
         SqlSystem SqlSystem = new SqlSystem(); 
         print SqlSystem.loginName(); 
     }
 
-### <a name="method-loginserver"></a><span data-ttu-id="7f44c-1641">メソッド loginServer</span><span class="sxs-lookup"><span data-stu-id="7f44c-1641">Method loginServer</span></span>
+### <a name="method-loginserver"></a><span data-ttu-id="50251-1641">メソッド loginServer</span><span class="sxs-lookup"><span data-stu-id="50251-1641">Method loginServer</span></span>
 
-<span data-ttu-id="7f44c-1642">現在接続されているデータベース サーバーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1642">Retrieves the name of the database server currently connected to.</span></span>
+<span data-ttu-id="50251-1642">現在接続されているデータベース サーバーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1642">Retrieves the name of the database server currently connected to.</span></span>
 
     public str loginServer()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1643">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1643">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1643">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1643">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1644">現在接続されているデータベースの名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1644">The name of the database currently connected to.</span></span>
+<span data-ttu-id="50251-1644">現在接続されているデータベースの名前。</span><span class="sxs-lookup"><span data-stu-id="50251-1644">The name of the database currently connected to.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1645">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1645">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1645">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1645">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1646">データベースがサーバーの概念をサポートしていない場合は、空の文字列が返されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1646">An empty string is returned if the database does not support a server concept.</span></span>
+<span data-ttu-id="50251-1646">データベースがサーバーの概念をサポートしていない場合は、空の文字列が返されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1646">An empty string is returned if the database does not support a server concept.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1647">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1647">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1647">例</span><span class="sxs-lookup"><span data-stu-id="50251-1647">Examples</span></span>
 
     { 
         SqlSystem SqlSystem = new SqlSystem(); 
         print SqlSystem.loginServer(); 
     }
 
-### <a name="method-monocasefmt"></a><span data-ttu-id="7f44c-1648">メソッド monocaseFmt</span><span class="sxs-lookup"><span data-stu-id="7f44c-1648">Method monocaseFmt</span></span>
+### <a name="method-monocasefmt"></a><span data-ttu-id="50251-1648">メソッド monocaseFmt</span><span class="sxs-lookup"><span data-stu-id="50251-1648">Method monocaseFmt</span></span>
 
-<span data-ttu-id="7f44c-1649">文字列を 1 つのケースにキャストするために使用される書式文字列を取得します ("NLS\_LOWER(%1)" など)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1649">Retrieves the format string that is used for casting the string to one case (e.g. "NLS\_LOWER(%1)").</span></span>
+<span data-ttu-id="50251-1649">文字列を 1 つのケースにキャストするために使用される書式文字列を取得します ("NLS\_LOWER(%1)" など)。</span><span class="sxs-lookup"><span data-stu-id="50251-1649">Retrieves the format string that is used for casting the string to one case (e.g. "NLS\_LOWER(%1)").</span></span>
 
     public str monocaseFmt([TableId tableId], [FieldId fieldId], [boolean includingFieldName], [boolean considerSystemVariables])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1650">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1650">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1650">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1650">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1651">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1651">tableId</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-1652">fieldId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1652">fieldId</span></span>  
+<span data-ttu-id="50251-1651">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-1651">tableId</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1653">includingFieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-1653">includingFieldName</span></span>  
+<span data-ttu-id="50251-1652">fieldId</span><span class="sxs-lookup"><span data-stu-id="50251-1652">fieldId</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1654">considerSystemVariables</span><span class="sxs-lookup"><span data-stu-id="7f44c-1654">considerSystemVariables</span></span>  
+<span data-ttu-id="50251-1653">includingFieldName</span><span class="sxs-lookup"><span data-stu-id="50251-1653">includingFieldName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1655">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1655">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-1656">文字列を 1 つのケースにキャストするために使用される書式文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1656">The format string that is used for casting the string to one case.</span></span>
+<span data-ttu-id="50251-1654">considerSystemVariables</span><span class="sxs-lookup"><span data-stu-id="50251-1654">considerSystemVariables</span></span>  
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1657">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1657">Remarks</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1655">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1655">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1658">プレースホルダの Finance and Operations スタイルが使用されます (「%1」など)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1658">Finance and Operations style for placeholder(s) is used (i.e. "%1").</span></span>
+<span data-ttu-id="50251-1656">文字列を 1 つのケースにキャストするために使用される書式文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-1656">The format string that is used for casting the string to one case.</span></span>
 
-### <a name="method-sqlliteral"></a><span data-ttu-id="7f44c-1659">メソッド sqlLiteral</span><span class="sxs-lookup"><span data-stu-id="7f44c-1659">Method sqlLiteral</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1657">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1657">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1660">SQL タイプを修正するため入力 AX データ型を書式設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1660">Formats the input AX datatype to correct SQL type.</span></span>
+<span data-ttu-id="50251-1658">プレースホルダの Finance and Operations スタイルが使用されます (「%1」など)。</span><span class="sxs-lookup"><span data-stu-id="50251-1658">Finance and Operations style for placeholder(s) is used (i.e. "%1").</span></span>
+
+### <a name="method-sqlliteral"></a><span data-ttu-id="50251-1659">メソッド sqlLiteral</span><span class="sxs-lookup"><span data-stu-id="50251-1659">Method sqlLiteral</span></span>
+
+<span data-ttu-id="50251-1660">SQL タイプを修正するため入力 AX データ型を書式設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1660">Formats the input AX datatype to correct SQL type.</span></span>
 
     public str sqlLiteral(AnyType data, [boolean forWhereClause], [boolean likeOperand], [boolean rightJustify], [int stringLength])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1661">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1661">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1661">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1661">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1662">データ</span><span class="sxs-lookup"><span data-stu-id="7f44c-1662">data</span></span>  
-<span data-ttu-id="7f44c-1663">文字列の長さ。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1663">The length of the string.</span></span> <span data-ttu-id="7f44c-1664">既定ではゼロに等しくなります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1664">By default equals zero.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="7f44c-1665">forWhereClause</span><span class="sxs-lookup"><span data-stu-id="7f44c-1665">forWhereClause</span></span>  
-<span data-ttu-id="7f44c-1666">文字列の長さ。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1666">The length of the string.</span></span> <span data-ttu-id="7f44c-1667">既定ではゼロに等しくなります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1667">By default equals zero.</span></span>
+<span data-ttu-id="50251-1662">データ</span><span class="sxs-lookup"><span data-stu-id="50251-1662">data</span></span>  
+<span data-ttu-id="50251-1663">文字列の長さ。</span><span class="sxs-lookup"><span data-stu-id="50251-1663">The length of the string.</span></span> <span data-ttu-id="50251-1664">既定ではゼロに等しくなります。</span><span class="sxs-lookup"><span data-stu-id="50251-1664">By default equals zero.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1668">likeOperand</span><span class="sxs-lookup"><span data-stu-id="7f44c-1668">likeOperand</span></span>  
-<span data-ttu-id="7f44c-1669">文字列の長さ。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1669">The length of the string.</span></span> <span data-ttu-id="7f44c-1670">既定ではゼロに等しくなります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1670">By default equals zero.</span></span>
+<span data-ttu-id="50251-1665">forWhereClause</span><span class="sxs-lookup"><span data-stu-id="50251-1665">forWhereClause</span></span>  
+<span data-ttu-id="50251-1666">文字列の長さ。</span><span class="sxs-lookup"><span data-stu-id="50251-1666">The length of the string.</span></span> <span data-ttu-id="50251-1667">既定ではゼロに等しくなります。</span><span class="sxs-lookup"><span data-stu-id="50251-1667">By default equals zero.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1671">rightJustify</span><span class="sxs-lookup"><span data-stu-id="7f44c-1671">rightJustify</span></span>  
-<span data-ttu-id="7f44c-1672">文字列の長さ。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1672">The length of the string.</span></span> <span data-ttu-id="7f44c-1673">既定ではゼロに等しくなります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1673">By default equals zero.</span></span>
+<span data-ttu-id="50251-1668">likeOperand</span><span class="sxs-lookup"><span data-stu-id="50251-1668">likeOperand</span></span>  
+<span data-ttu-id="50251-1669">文字列の長さ。</span><span class="sxs-lookup"><span data-stu-id="50251-1669">The length of the string.</span></span> <span data-ttu-id="50251-1670">既定ではゼロに等しくなります。</span><span class="sxs-lookup"><span data-stu-id="50251-1670">By default equals zero.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1674">stringLength</span><span class="sxs-lookup"><span data-stu-id="7f44c-1674">stringLength</span></span>  
-<span data-ttu-id="7f44c-1675">文字列の長さ。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1675">The length of the string.</span></span> <span data-ttu-id="7f44c-1676">既定ではゼロに等しくなります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1676">By default equals zero.</span></span>
+<span data-ttu-id="50251-1671">rightJustify</span><span class="sxs-lookup"><span data-stu-id="50251-1671">rightJustify</span></span>  
+<span data-ttu-id="50251-1672">文字列の長さ。</span><span class="sxs-lookup"><span data-stu-id="50251-1672">The length of the string.</span></span> <span data-ttu-id="50251-1673">既定ではゼロに等しくなります。</span><span class="sxs-lookup"><span data-stu-id="50251-1673">By default equals zero.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1677">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1677">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="7f44c-1678">書式設定された SQL 型文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1678">The formatted SQL type string.</span></span>
+<span data-ttu-id="50251-1674">stringLength</span><span class="sxs-lookup"><span data-stu-id="50251-1674">stringLength</span></span>  
+<span data-ttu-id="50251-1675">文字列の長さ。</span><span class="sxs-lookup"><span data-stu-id="50251-1675">The length of the string.</span></span> <span data-ttu-id="50251-1676">既定ではゼロに等しくなります。</span><span class="sxs-lookup"><span data-stu-id="50251-1676">By default equals zero.</span></span>
 
-### <a name="method-clusteredindexes"></a><span data-ttu-id="7f44c-1679">メソッド clusteredIndexes</span><span class="sxs-lookup"><span data-stu-id="7f44c-1679">Method clusteredIndexes</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1677">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1677">Return Value</span></span>
+
+<span data-ttu-id="50251-1678">書式設定された SQL 型文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-1678">The formatted SQL type string.</span></span>
+
+### <a name="method-clusteredindexes"></a><span data-ttu-id="50251-1679">メソッド clusteredIndexes</span><span class="sxs-lookup"><span data-stu-id="50251-1679">Method clusteredIndexes</span></span>
 
     public static boolean clusteredIndexes()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1680">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1680">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1680">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1680">Return Value</span></span>
 
-### <a name="method-databasebackenddesc"></a><span data-ttu-id="7f44c-1681">メソッド databaseBackendDesc</span><span class="sxs-lookup"><span data-stu-id="7f44c-1681">Method databaseBackendDesc</span></span>
+### <a name="method-databasebackenddesc"></a><span data-ttu-id="50251-1681">メソッド databaseBackendDesc</span><span class="sxs-lookup"><span data-stu-id="50251-1681">Method databaseBackendDesc</span></span>
 
     public static str databaseBackendDesc()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1682">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1682">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1682">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1682">Return Value</span></span>
 
-### <a name="method-databasebackendid"></a><span data-ttu-id="7f44c-1683">メソッド databaseBackendId</span><span class="sxs-lookup"><span data-stu-id="7f44c-1683">Method databaseBackendId</span></span>
+### <a name="method-databasebackendid"></a><span data-ttu-id="50251-1683">メソッド databaseBackendId</span><span class="sxs-lookup"><span data-stu-id="50251-1683">Method databaseBackendId</span></span>
 
     public static DatabaseId databaseBackendId()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1684">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1684">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1684">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1684">Return Value</span></span>
 
-### <a name="method-databasebackendname"></a><span data-ttu-id="7f44c-1685">メソッド databaseBackendName</span><span class="sxs-lookup"><span data-stu-id="7f44c-1685">Method databaseBackendName</span></span>
+### <a name="method-databasebackendname"></a><span data-ttu-id="50251-1685">メソッド databaseBackendName</span><span class="sxs-lookup"><span data-stu-id="50251-1685">Method databaseBackendName</span></span>
 
     public static str databaseBackendName()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1686">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1686">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1686">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1686">Return Value</span></span>
 
-### <a name="method-databasecalllevelinterface"></a><span data-ttu-id="7f44c-1687">メソッド databaseCallLevelInterface</span><span class="sxs-lookup"><span data-stu-id="7f44c-1687">Method databaseCallLevelInterface</span></span>
+### <a name="method-databasecalllevelinterface"></a><span data-ttu-id="50251-1687">メソッド databaseCallLevelInterface</span><span class="sxs-lookup"><span data-stu-id="50251-1687">Method databaseCallLevelInterface</span></span>
 
     public static DatabaseCLI databaseCallLevelInterface()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1688">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1688">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1688">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1688">Return Value</span></span>
 
-### <a name="method-databasehints"></a><span data-ttu-id="7f44c-1689">メソッド databaseHints</span><span class="sxs-lookup"><span data-stu-id="7f44c-1689">Method databaseHints</span></span>
+### <a name="method-databasehints"></a><span data-ttu-id="50251-1689">メソッド databaseHints</span><span class="sxs-lookup"><span data-stu-id="50251-1689">Method databaseHints</span></span>
 
     public static int databaseHints([int new_hint_value])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1690">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1690">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1690">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1690">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1691">new\_hint\_value</span><span class="sxs-lookup"><span data-stu-id="7f44c-1691">new\_hint\_value</span></span>  
+<span data-ttu-id="50251-1691">new\_hint\_value</span><span class="sxs-lookup"><span data-stu-id="50251-1691">new\_hint\_value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1692">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1692">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1692">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1692">Return Value</span></span>
 
-### <a name="method-functionalindexes"></a><span data-ttu-id="7f44c-1693">メソッド functionalIndexes</span><span class="sxs-lookup"><span data-stu-id="7f44c-1693">Method functionalIndexes</span></span>
+### <a name="method-functionalindexes"></a><span data-ttu-id="50251-1693">メソッド functionalIndexes</span><span class="sxs-lookup"><span data-stu-id="50251-1693">Method functionalIndexes</span></span>
 
     public static boolean functionalIndexes()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1694">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1694">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1694">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1694">Return Value</span></span>
 
-### <a name="method-modeldatabasebackendname"></a><span data-ttu-id="7f44c-1695">メソッド modelDatabaseBackendName</span><span class="sxs-lookup"><span data-stu-id="7f44c-1695">Method modelDatabaseBackendName</span></span>
+### <a name="method-modeldatabasebackendname"></a><span data-ttu-id="50251-1695">メソッド modelDatabaseBackendName</span><span class="sxs-lookup"><span data-stu-id="50251-1695">Method modelDatabaseBackendName</span></span>
 
-<span data-ttu-id="7f44c-1696">現在接続されているモデル データベース AOS の名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1696">Retrieves the name of the model database AOS currently connected to.</span></span>
+<span data-ttu-id="50251-1696">現在接続されているモデル データベース AOS の名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1696">Retrieves the name of the model database AOS currently connected to.</span></span>
 
     public static str modelDatabaseBackendName()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1697">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1697">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1697">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1697">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1698">現在接続されているモデル データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1698">The name of the model database currently connected to.</span></span>
+<span data-ttu-id="50251-1698">現在接続されているモデル データベースの名前。</span><span class="sxs-lookup"><span data-stu-id="50251-1698">The name of the model database currently connected to.</span></span>
 
-### <a name="method-managedconnectionstring"></a><span data-ttu-id="7f44c-1699">メソッド managedConnectionString</span><span class="sxs-lookup"><span data-stu-id="7f44c-1699">Method managedConnectionString</span></span>
+### <a name="method-managedconnectionstring"></a><span data-ttu-id="50251-1699">メソッド managedConnectionString</span><span class="sxs-lookup"><span data-stu-id="50251-1699">Method managedConnectionString</span></span>
 
     public static str managedConnectionString()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1700">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1700">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1700">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1700">Return Value</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-1701">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-1701">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-1701">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-1701">Method new</span></span>
 
-<span data-ttu-id="7f44c-1702">SqlSystem クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1702">Initializes a new instance of the SqlSystem class.</span></span>
+<span data-ttu-id="50251-1702">SqlSystem クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-1702">Initializes a new instance of the SqlSystem class.</span></span>
 
     public void new()
 
-### <a name="method-logfilewrite"></a><span data-ttu-id="7f44c-1703">メソッド logfileWrite</span><span class="sxs-lookup"><span data-stu-id="7f44c-1703">Method logfileWrite</span></span>
+### <a name="method-logfilewrite"></a><span data-ttu-id="50251-1703">メソッド logfileWrite</span><span class="sxs-lookup"><span data-stu-id="50251-1703">Method logfileWrite</span></span>
 
-<span data-ttu-id="7f44c-1704">テキスト文字列を標準 SQL エラー ログファイルに記述します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1704">Writes a text string into the standard  SQL error logfile.</span></span>
+<span data-ttu-id="50251-1704">テキスト文字列を標準 SQL エラー ログファイルに記述します。</span><span class="sxs-lookup"><span data-stu-id="50251-1704">Writes a text string into the standard  SQL error logfile.</span></span>
 
     public void logfileWrite(str Text)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1705">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1705">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1705">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1705">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1706">テキスト</span><span class="sxs-lookup"><span data-stu-id="7f44c-1706">Text</span></span>  
-<span data-ttu-id="7f44c-1707">ログファイルに書き込むテキスト (ブックマークなど)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1707">The text (for example, a bookmark) to write to the logfile.</span></span>
+<span data-ttu-id="50251-1706">テキスト</span><span class="sxs-lookup"><span data-stu-id="50251-1706">Text</span></span>  
+<span data-ttu-id="50251-1707">ログファイルに書き込むテキスト (ブックマークなど)。</span><span class="sxs-lookup"><span data-stu-id="50251-1707">The text (for example, a bookmark) to write to the logfile.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1708">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1708">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1708">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1708">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1709">あらゆる種類のエラー状況 (ログ ファイルに記録される) に従い、現在のシナリオを説明する個人用ブックマークを挿入します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1709">Following an error situation of any kind (which is logged in the logfile), you may want to insert a personal bookmark that explains the current scenario.</span></span>
+<span data-ttu-id="50251-1709">あらゆる種類のエラー状況 (ログ ファイルに記録される) に従い、現在のシナリオを説明する個人用ブックマークを挿入します。</span><span class="sxs-lookup"><span data-stu-id="50251-1709">Following an error situation of any kind (which is logged in the logfile), you may want to insert a personal bookmark that explains the current scenario.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1710">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1710">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1710">例</span><span class="sxs-lookup"><span data-stu-id="50251-1710">Examples</span></span>
 
     static void myExample(Args _args) 
     { 
@@ -3773,225 +3773,225 @@ ms.locfileid: "1544189"
         SqlSystem.logfileWrite("Recheck the returned data."); 
     }
 
-## <a name="class-ssrsreportautodesignnode"></a><span data-ttu-id="7f44c-1711">クラス SSRSReportAutoDesignNode</span><span class="sxs-lookup"><span data-stu-id="7f44c-1711">Class SSRSReportAutoDesignNode</span></span>
+## <a name="class-ssrsreportautodesignnode"></a><span data-ttu-id="50251-1711">クラス SSRSReportAutoDesignNode</span><span class="sxs-lookup"><span data-stu-id="50251-1711">Class SSRSReportAutoDesignNode</span></span>
     class SSRSReportAutoDesignNode extends SSRSReportDesignNode
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1712">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1712">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1712">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1712">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1713">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1713">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1713">例</span><span class="sxs-lookup"><span data-stu-id="50251-1713">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1714">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1714">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1714">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1714">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1715">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1715">Method</span></span>                                              | <span data-ttu-id="7f44c-1716">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1716">Description</span></span>                                                                        |
+| <span data-ttu-id="50251-1715">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1715">Method</span></span>                                              | <span data-ttu-id="50251-1716">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1716">Description</span></span>                                                                        |
 |-----------------------------------------------------|------------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1717">public str getCrossReferences()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1717">public str getCrossReferences()</span></span>                     | <span data-ttu-id="7f44c-1718">指定した SSRSReportDesignNode オブジェクトを使用することで相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1718">Retrieves the cross-references by using the specified SSRSReportDesignNode object.</span></span> |
-| <span data-ttu-id="7f44c-1719">public void setCrossReferences(str crossReferences)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1719">public void setCrossReferences(str crossReferences)</span></span> | <span data-ttu-id="7f44c-1720">指定した SSRSReportDesignNode オブジェクトを使用して相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1720">Sets the cross-references by using the specified SSRSReportDesignNode object.</span></span>      |
+| <span data-ttu-id="50251-1717">public str getCrossReferences()</span><span class="sxs-lookup"><span data-stu-id="50251-1717">public str getCrossReferences()</span></span>                     | <span data-ttu-id="50251-1718">指定した SSRSReportDesignNode オブジェクトを使用することで相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1718">Retrieves the cross-references by using the specified SSRSReportDesignNode object.</span></span> |
+| <span data-ttu-id="50251-1719">public void setCrossReferences(str crossReferences)</span><span class="sxs-lookup"><span data-stu-id="50251-1719">public void setCrossReferences(str crossReferences)</span></span> | <span data-ttu-id="50251-1720">指定した SSRSReportDesignNode オブジェクトを使用して相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1720">Sets the cross-references by using the specified SSRSReportDesignNode object.</span></span>      |
 
-### <a name="method-getcrossreferences"></a><span data-ttu-id="7f44c-1721">メソッド getCrossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1721">Method getCrossReferences</span></span>
+### <a name="method-getcrossreferences"></a><span data-ttu-id="50251-1721">メソッド getCrossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1721">Method getCrossReferences</span></span>
 
-<span data-ttu-id="7f44c-1722">指定した SSRSReportDesignNode オブジェクトを使用することで相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1722">Retrieves the cross-references by using the specified SSRSReportDesignNode object.</span></span>
+<span data-ttu-id="50251-1722">指定した SSRSReportDesignNode オブジェクトを使用することで相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1722">Retrieves the cross-references by using the specified SSRSReportDesignNode object.</span></span>
 
     public str getCrossReferences()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1723">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1723">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1723">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1723">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1724">XML 形式での相互参照。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1724">The cross-references in XML format.</span></span>
+<span data-ttu-id="50251-1724">XML 形式での相互参照。</span><span class="sxs-lookup"><span data-stu-id="50251-1724">The cross-references in XML format.</span></span>
 
-### <a name="method-setcrossreferences"></a><span data-ttu-id="7f44c-1725">メソッド setCrossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1725">Method setCrossReferences</span></span>
+### <a name="method-setcrossreferences"></a><span data-ttu-id="50251-1725">メソッド setCrossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1725">Method setCrossReferences</span></span>
 
-<span data-ttu-id="7f44c-1726">指定した SSRSReportDesignNode オブジェクトを使用して相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1726">Sets the cross-references by using the specified SSRSReportDesignNode object.</span></span>
+<span data-ttu-id="50251-1726">指定した SSRSReportDesignNode オブジェクトを使用して相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1726">Sets the cross-references by using the specified SSRSReportDesignNode object.</span></span>
 
     public void setCrossReferences(str crossReferences)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1727">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1727">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1727">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1727">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1728">crossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1728">crossReferences</span></span>  
-<span data-ttu-id="7f44c-1729">XML 形式での相互参照。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1729">The cross-references in XML format.</span></span>
+<span data-ttu-id="50251-1728">crossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1728">crossReferences</span></span>  
+<span data-ttu-id="50251-1729">XML 形式での相互参照。</span><span class="sxs-lookup"><span data-stu-id="50251-1729">The cross-references in XML format.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1730">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1730">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1730">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1730">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1731">このメソッドは、指定された SSRSReportDesignNode オブジェクトに格納されている相互参照 XML のみを更新します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1731">This method only updates the cross-reference XML stored on the specified SSRSReportDesignNode object.</span></span> <span data-ttu-id="7f44c-1732">相互参照システムは更新されません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1732">It does not update the cross-reference system.</span></span>
+<span data-ttu-id="50251-1731">このメソッドは、指定された SSRSReportDesignNode オブジェクトに格納されている相互参照 XML のみを更新します。</span><span class="sxs-lookup"><span data-stu-id="50251-1731">This method only updates the cross-reference XML stored on the specified SSRSReportDesignNode object.</span></span> <span data-ttu-id="50251-1732">相互参照システムは更新されません。</span><span class="sxs-lookup"><span data-stu-id="50251-1732">It does not update the cross-reference system.</span></span>
 
-## <a name="class-ssrsreportconceptnode"></a><span data-ttu-id="7f44c-1733">クラス SSRSReportConceptNode</span><span class="sxs-lookup"><span data-stu-id="7f44c-1733">Class SSRSReportConceptNode</span></span>
+## <a name="class-ssrsreportconceptnode"></a><span data-ttu-id="50251-1733">クラス SSRSReportConceptNode</span><span class="sxs-lookup"><span data-stu-id="50251-1733">Class SSRSReportConceptNode</span></span>
     class SSRSReportConceptNode extends xResourceNode
 
-<span data-ttu-id="7f44c-1734">SSRSReportConceptNode クラスを使うと、アプリケーション オブジェクト ツリー (AOT) の SSRS レポート、データ ソース、スタイル テンプレート、イメージを作成、読み取り、更新、削除できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1734">The SSRSReportConceptNode class lets you create, read, update, and delete SSRS reports, data sources, style templates, and images in the  Application Object Tree (AOT).</span></span>
+<span data-ttu-id="50251-1734">SSRSReportConceptNode クラスを使うと、アプリケーション オブジェクト ツリー (AOT) の SSRS レポート、データ ソース、スタイル テンプレート、イメージを作成、読み取り、更新、削除できます。</span><span class="sxs-lookup"><span data-stu-id="50251-1734">The SSRSReportConceptNode class lets you create, read, update, and delete SSRS reports, data sources, style templates, and images in the  Application Object Tree (AOT).</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1735">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1735">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1735">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1735">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1736">ユーザーがこの API を呼び出す前に、開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1736">Make sure that the user has access to the development security key (SysDevelopment) before calling this API.</span></span>
+<span data-ttu-id="50251-1736">ユーザーがこの API を呼び出す前に、開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="50251-1736">Make sure that the user has access to the development security key (SysDevelopment) before calling this API.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1737">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1737">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1737">例</span><span class="sxs-lookup"><span data-stu-id="50251-1737">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1738">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1738">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1738">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1738">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1739">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1739">Method</span></span>                                                     | <span data-ttu-id="7f44c-1740">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1740">Description</span></span>                                                                   |
+| <span data-ttu-id="50251-1739">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1739">Method</span></span>                                                     | <span data-ttu-id="50251-1740">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1740">Description</span></span>                                                                   |
 |------------------------------------------------------------|-------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1741">public str AOTgetSource()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1741">public str AOTgetSource()</span></span>                                  | <span data-ttu-id="7f44c-1742">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1742">Returns the source code of this node.</span></span>                                         |
-| <span data-ttu-id="7f44c-1743">public str getCrossReferences()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1743">public str getCrossReferences()</span></span>                            | <span data-ttu-id="7f44c-1744">指定した SSRSReportConceptNode オブジェクトによる相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1744">Retrieves the cross-references by the specified SSRSReportConceptNode object.</span></span> |
-| <span data-ttu-id="7f44c-1745">public void allowCaching(\[boolean allow\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1745">public void allowCaching(\[boolean allow\])</span></span>                |                                                                               |
-| <span data-ttu-id="7f44c-1746">public void setCrossReferences(str crossReferences)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1746">public void setCrossReferences(str crossReferences)</span></span>        | <span data-ttu-id="7f44c-1747">指定した SSRSReportConceptNode オブジェクトによる相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1747">Sets the cross-references by the specified SSRSReportConceptNode object.</span></span>      |
-| <span data-ttu-id="7f44c-1748">public void AOTsetSource(str source, \[boolean isStatic\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1748">public void AOTsetSource(str source, \[boolean isStatic\])</span></span> | <span data-ttu-id="7f44c-1749">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1749">Sets the source code of this node.</span></span>                                            |
+| <span data-ttu-id="50251-1741">public str AOTgetSource()</span><span class="sxs-lookup"><span data-stu-id="50251-1741">public str AOTgetSource()</span></span>                                  | <span data-ttu-id="50251-1742">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1742">Returns the source code of this node.</span></span>                                         |
+| <span data-ttu-id="50251-1743">public str getCrossReferences()</span><span class="sxs-lookup"><span data-stu-id="50251-1743">public str getCrossReferences()</span></span>                            | <span data-ttu-id="50251-1744">指定した SSRSReportConceptNode オブジェクトによる相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1744">Retrieves the cross-references by the specified SSRSReportConceptNode object.</span></span> |
+| <span data-ttu-id="50251-1745">public void allowCaching(\[boolean allow\])</span><span class="sxs-lookup"><span data-stu-id="50251-1745">public void allowCaching(\[boolean allow\])</span></span>                |                                                                               |
+| <span data-ttu-id="50251-1746">public void setCrossReferences(str crossReferences)</span><span class="sxs-lookup"><span data-stu-id="50251-1746">public void setCrossReferences(str crossReferences)</span></span>        | <span data-ttu-id="50251-1747">指定した SSRSReportConceptNode オブジェクトによる相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1747">Sets the cross-references by the specified SSRSReportConceptNode object.</span></span>      |
+| <span data-ttu-id="50251-1748">public void AOTsetSource(str source, \[boolean isStatic\])</span><span class="sxs-lookup"><span data-stu-id="50251-1748">public void AOTsetSource(str source, \[boolean isStatic\])</span></span> | <span data-ttu-id="50251-1749">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1749">Sets the source code of this node.</span></span>                                            |
 
-### <a name="method-aotgetsource"></a><span data-ttu-id="7f44c-1750">メソッド AOTgetSource</span><span class="sxs-lookup"><span data-stu-id="7f44c-1750">Method AOTgetSource</span></span>
+### <a name="method-aotgetsource"></a><span data-ttu-id="50251-1750">メソッド AOTgetSource</span><span class="sxs-lookup"><span data-stu-id="50251-1750">Method AOTgetSource</span></span>
 
-<span data-ttu-id="7f44c-1751">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1751">Returns the source code of this node.</span></span>
+<span data-ttu-id="50251-1751">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1751">Returns the source code of this node.</span></span>
 
     public str AOTgetSource()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1752">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1752">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1752">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1752">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1753">ソース コードが含まれている場合の文字列、それ以外の場合、nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1753">The string that contains the source code, if any; otherwise, nullNothingnullptrunita null reference (Nothing in Visual Basic).</span></span>
+<span data-ttu-id="50251-1753">ソース コードが含まれている場合の文字列、それ以外の場合、nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</span><span class="sxs-lookup"><span data-stu-id="50251-1753">The string that contains the source code, if any; otherwise, nullNothingnullptrunita null reference (Nothing in Visual Basic).</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1754">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1754">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1754">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1754">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1755">この関数はソース コードを持つノードによってオーバーライドされます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1755">This function is overridden by nodes that have source code.</span></span>
+<span data-ttu-id="50251-1755">この関数はソース コードを持つノードによってオーバーライドされます。</span><span class="sxs-lookup"><span data-stu-id="50251-1755">This function is overridden by nodes that have source code.</span></span>
 
-### <a name="method-getcrossreferences"></a><span data-ttu-id="7f44c-1756">メソッド getCrossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1756">Method getCrossReferences</span></span>
+### <a name="method-getcrossreferences"></a><span data-ttu-id="50251-1756">メソッド getCrossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1756">Method getCrossReferences</span></span>
 
-<span data-ttu-id="7f44c-1757">指定した SSRSReportConceptNode オブジェクトによる相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1757">Retrieves the cross-references by the specified SSRSReportConceptNode object.</span></span>
+<span data-ttu-id="50251-1757">指定した SSRSReportConceptNode オブジェクトによる相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1757">Retrieves the cross-references by the specified SSRSReportConceptNode object.</span></span>
 
     public str getCrossReferences()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1758">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1758">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1758">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1758">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1759">XML 形式 で指定した SSRSReportConceptNode オブジェクトによる相互参照。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1759">The cross-references by the specified SSRSReportConceptNode object in XML format.</span></span>
+<span data-ttu-id="50251-1759">XML 形式 で指定した SSRSReportConceptNode オブジェクトによる相互参照。</span><span class="sxs-lookup"><span data-stu-id="50251-1759">The cross-references by the specified SSRSReportConceptNode object in XML format.</span></span>
 
-### <a name="method-allowcaching"></a><span data-ttu-id="7f44c-1760">メソッド allowCaching</span><span class="sxs-lookup"><span data-stu-id="7f44c-1760">Method allowCaching</span></span>
+### <a name="method-allowcaching"></a><span data-ttu-id="50251-1760">メソッド allowCaching</span><span class="sxs-lookup"><span data-stu-id="50251-1760">Method allowCaching</span></span>
 
     public void allowCaching([boolean allow])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1761">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1761">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1761">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1761">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1762">allow</span><span class="sxs-lookup"><span data-stu-id="7f44c-1762">allow</span></span>  
+<span data-ttu-id="50251-1762">allow</span><span class="sxs-lookup"><span data-stu-id="50251-1762">allow</span></span>  
 
-### <a name="method-setcrossreferences"></a><span data-ttu-id="7f44c-1763">メソッド setCrossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1763">Method setCrossReferences</span></span>
+### <a name="method-setcrossreferences"></a><span data-ttu-id="50251-1763">メソッド setCrossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1763">Method setCrossReferences</span></span>
 
-<span data-ttu-id="7f44c-1764">指定した SSRSReportConceptNode オブジェクトによる相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1764">Sets the cross-references by the specified SSRSReportConceptNode object.</span></span>
+<span data-ttu-id="50251-1764">指定した SSRSReportConceptNode オブジェクトによる相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1764">Sets the cross-references by the specified SSRSReportConceptNode object.</span></span>
 
     public void setCrossReferences(str crossReferences)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1765">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1765">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1765">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1765">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1766">crossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1766">crossReferences</span></span>  
-<span data-ttu-id="7f44c-1767">XML 形式 で指定した SSRSReportConceptNode オブジェクトによる相互参照。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1767">The cross-references by the specified SSRSReportConceptNode object in XML format.</span></span>
+<span data-ttu-id="50251-1766">crossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1766">crossReferences</span></span>  
+<span data-ttu-id="50251-1767">XML 形式 で指定した SSRSReportConceptNode オブジェクトによる相互参照。</span><span class="sxs-lookup"><span data-stu-id="50251-1767">The cross-references by the specified SSRSReportConceptNode object in XML format.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1768">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1768">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1768">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1768">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1769">このメソッドは、指定された SSRSReportConceptNode オブジェクトに格納されている相互参照 XML のみを更新します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1769">This method only updates the cross-reference XML stored on the specified SSRSReportConceptNode object.</span></span> <span data-ttu-id="7f44c-1770">相互参照システムは更新されません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1770">It does not update the cross-reference system.</span></span>
+<span data-ttu-id="50251-1769">このメソッドは、指定された SSRSReportConceptNode オブジェクトに格納されている相互参照 XML のみを更新します。</span><span class="sxs-lookup"><span data-stu-id="50251-1769">This method only updates the cross-reference XML stored on the specified SSRSReportConceptNode object.</span></span> <span data-ttu-id="50251-1770">相互参照システムは更新されません。</span><span class="sxs-lookup"><span data-stu-id="50251-1770">It does not update the cross-reference system.</span></span>
 
-### <a name="method-aotsetsource"></a><span data-ttu-id="7f44c-1771">メソッド AOTsetSource</span><span class="sxs-lookup"><span data-stu-id="7f44c-1771">Method AOTsetSource</span></span>
+### <a name="method-aotsetsource"></a><span data-ttu-id="50251-1771">メソッド AOTsetSource</span><span class="sxs-lookup"><span data-stu-id="50251-1771">Method AOTsetSource</span></span>
 
-<span data-ttu-id="7f44c-1772">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1772">Sets the source code of this node.</span></span>
+<span data-ttu-id="50251-1772">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1772">Sets the source code of this node.</span></span>
 
     public void AOTsetSource(str source, [boolean isStatic])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1773">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1773">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1773">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1773">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1774">ソース</span><span class="sxs-lookup"><span data-stu-id="7f44c-1774">source</span></span>  
-<span data-ttu-id="7f44c-1775">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1775">The value that specifies whether the method is static; optional.</span></span>
+<span data-ttu-id="50251-1774">ソース</span><span class="sxs-lookup"><span data-stu-id="50251-1774">source</span></span>  
+<span data-ttu-id="50251-1775">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1775">The value that specifies whether the method is static; optional.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1776">isStatic</span><span class="sxs-lookup"><span data-stu-id="7f44c-1776">isStatic</span></span>  
-<span data-ttu-id="7f44c-1777">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1777">The value that specifies whether the method is static; optional.</span></span>
+<span data-ttu-id="50251-1776">isStatic</span><span class="sxs-lookup"><span data-stu-id="50251-1776">isStatic</span></span>  
+<span data-ttu-id="50251-1777">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1777">The value that specifies whether the method is static; optional.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1778">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1778">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1778">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1778">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1779">このメソッドは、ソース コードを持つノードによって上書きされます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1779">This method is overridden by nodes that have source code.</span></span>
+<span data-ttu-id="50251-1779">このメソッドは、ソース コードを持つノードによって上書きされます。</span><span class="sxs-lookup"><span data-stu-id="50251-1779">This method is overridden by nodes that have source code.</span></span>
 
-## <a name="class-ssrsreportdesignnode"></a><span data-ttu-id="7f44c-1780">クラス SSRSReportDesignNode</span><span class="sxs-lookup"><span data-stu-id="7f44c-1780">Class SSRSReportDesignNode</span></span>
+## <a name="class-ssrsreportdesignnode"></a><span data-ttu-id="50251-1780">クラス SSRSReportDesignNode</span><span class="sxs-lookup"><span data-stu-id="50251-1780">Class SSRSReportDesignNode</span></span>
     class SSRSReportDesignNode extends xResourceNode
 
-<span data-ttu-id="7f44c-1781">SSRSReportDesignNode クラスを使うと、アプリケーション オブジェクト ツリー (AOT) の Microsoft SQL Server Reporting Services レポート、データ ソース、スタイル テンプレート、イメージを作成、読み取り、更新、削除できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1781">The SSRSReportDesignNode class lets you create, read, update, and delete Microsoft SQL Server Reporting Services reports, data sources, style templates, and images in the  Application Object Tree (AOT).</span></span>
+<span data-ttu-id="50251-1781">SSRSReportDesignNode クラスを使うと、アプリケーション オブジェクト ツリー (AOT) の Microsoft SQL Server Reporting Services レポート、データ ソース、スタイル テンプレート、イメージを作成、読み取り、更新、削除できます。</span><span class="sxs-lookup"><span data-stu-id="50251-1781">The SSRSReportDesignNode class lets you create, read, update, and delete Microsoft SQL Server Reporting Services reports, data sources, style templates, and images in the  Application Object Tree (AOT).</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1782">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1782">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1782">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1782">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1783">ユーザーがこの API を呼び出す前に、開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1783">Make sure that the user has access to the development security key (SysDevelopment) before calling this API.</span></span>
+<span data-ttu-id="50251-1783">ユーザーがこの API を呼び出す前に、開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="50251-1783">Make sure that the user has access to the development security key (SysDevelopment) before calling this API.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1784">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1784">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1784">例</span><span class="sxs-lookup"><span data-stu-id="50251-1784">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1785">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1785">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1785">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1785">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1786">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1786">Method</span></span>                                              | <span data-ttu-id="7f44c-1787">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1787">Description</span></span>                                                                  |
+| <span data-ttu-id="50251-1786">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1786">Method</span></span>                                              | <span data-ttu-id="50251-1787">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1787">Description</span></span>                                                                  |
 |-----------------------------------------------------|------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1788">public str getCrossReferences()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1788">public str getCrossReferences()</span></span>                     | <span data-ttu-id="7f44c-1789">指定した SSRSReportDesignNode オブジェクトによる相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1789">Retrieves the cross-references by the specified SSRSReportDesignNode object.</span></span> |
-| <span data-ttu-id="7f44c-1790">public void setCrossReferences(str crossReferences)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1790">public void setCrossReferences(str crossReferences)</span></span> | <span data-ttu-id="7f44c-1791">指定した SSRSReportDesignNode オブジェクトによる相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1791">Sets the cross-references by the specified SSRSReportDesignNode object.</span></span>      |
+| <span data-ttu-id="50251-1788">public str getCrossReferences()</span><span class="sxs-lookup"><span data-stu-id="50251-1788">public str getCrossReferences()</span></span>                     | <span data-ttu-id="50251-1789">指定した SSRSReportDesignNode オブジェクトによる相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1789">Retrieves the cross-references by the specified SSRSReportDesignNode object.</span></span> |
+| <span data-ttu-id="50251-1790">public void setCrossReferences(str crossReferences)</span><span class="sxs-lookup"><span data-stu-id="50251-1790">public void setCrossReferences(str crossReferences)</span></span> | <span data-ttu-id="50251-1791">指定した SSRSReportDesignNode オブジェクトによる相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1791">Sets the cross-references by the specified SSRSReportDesignNode object.</span></span>      |
 
-### <a name="method-getcrossreferences"></a><span data-ttu-id="7f44c-1792">メソッド getCrossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1792">Method getCrossReferences</span></span>
+### <a name="method-getcrossreferences"></a><span data-ttu-id="50251-1792">メソッド getCrossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1792">Method getCrossReferences</span></span>
 
-<span data-ttu-id="7f44c-1793">指定した SSRSReportDesignNode オブジェクトによる相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1793">Retrieves the cross-references by the specified SSRSReportDesignNode object.</span></span>
+<span data-ttu-id="50251-1793">指定した SSRSReportDesignNode オブジェクトによる相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1793">Retrieves the cross-references by the specified SSRSReportDesignNode object.</span></span>
 
     public str getCrossReferences()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1794">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1794">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1794">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1794">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1795">XML 形式 で指定した SSRSReportDesignNode オブジェクトによる相互参照。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1795">The cross-references by the specified SSRSReportDesignNode object in XML format.</span></span>
+<span data-ttu-id="50251-1795">XML 形式 で指定した SSRSReportDesignNode オブジェクトによる相互参照。</span><span class="sxs-lookup"><span data-stu-id="50251-1795">The cross-references by the specified SSRSReportDesignNode object in XML format.</span></span>
 
-### <a name="method-setcrossreferences"></a><span data-ttu-id="7f44c-1796">メソッド setCrossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1796">Method setCrossReferences</span></span>
+### <a name="method-setcrossreferences"></a><span data-ttu-id="50251-1796">メソッド setCrossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1796">Method setCrossReferences</span></span>
 
-<span data-ttu-id="7f44c-1797">指定した SSRSReportDesignNode オブジェクトによる相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1797">Sets the cross-references by the specified SSRSReportDesignNode object.</span></span>
+<span data-ttu-id="50251-1797">指定した SSRSReportDesignNode オブジェクトによる相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1797">Sets the cross-references by the specified SSRSReportDesignNode object.</span></span>
 
     public void setCrossReferences(str crossReferences)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1798">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1798">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1798">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1798">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1799">crossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1799">crossReferences</span></span>  
-<span data-ttu-id="7f44c-1800">XML 形式 で指定した SSRSReportDesignNode オブジェクトによる相互参照。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1800">The cross-references by the specified SSRSReportDesignNode object in XML format.</span></span>
+<span data-ttu-id="50251-1799">crossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1799">crossReferences</span></span>  
+<span data-ttu-id="50251-1800">XML 形式 で指定した SSRSReportDesignNode オブジェクトによる相互参照。</span><span class="sxs-lookup"><span data-stu-id="50251-1800">The cross-references by the specified SSRSReportDesignNode object in XML format.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1801">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1801">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1801">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1801">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1802">このメソッドは、指定された SSRSReportDesignNode オブジェクトに格納されている相互参照 XML のみを更新します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1802">This method only updates the cross-reference XML stored on the specified SSRSReportDesignNode object.</span></span> <span data-ttu-id="7f44c-1803">相互参照システムは更新されません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1803">It does not update the cross-reference system.</span></span>
+<span data-ttu-id="50251-1802">このメソッドは、指定された SSRSReportDesignNode オブジェクトに格納されている相互参照 XML のみを更新します。</span><span class="sxs-lookup"><span data-stu-id="50251-1802">This method only updates the cross-reference XML stored on the specified SSRSReportDesignNode object.</span></span> <span data-ttu-id="50251-1803">相互参照システムは更新されません。</span><span class="sxs-lookup"><span data-stu-id="50251-1803">It does not update the cross-reference system.</span></span>
 
-## <a name="class-ssrsreportprecisiondesignnode"></a><span data-ttu-id="7f44c-1804">クラス SSRSReportPrecisionDesignNode</span><span class="sxs-lookup"><span data-stu-id="7f44c-1804">Class SSRSReportPrecisionDesignNode</span></span>
+## <a name="class-ssrsreportprecisiondesignnode"></a><span data-ttu-id="50251-1804">クラス SSRSReportPrecisionDesignNode</span><span class="sxs-lookup"><span data-stu-id="50251-1804">Class SSRSReportPrecisionDesignNode</span></span>
     class SSRSReportPrecisionDesignNode extends SSRSReportDesignNode
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1805">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1805">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1805">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1805">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1806">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1806">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1806">例</span><span class="sxs-lookup"><span data-stu-id="50251-1806">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1807">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1807">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1807">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1807">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1808">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1808">Method</span></span>                                              | <span data-ttu-id="7f44c-1809">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1809">Description</span></span>                                                                  |
+| <span data-ttu-id="50251-1808">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1808">Method</span></span>                                              | <span data-ttu-id="50251-1809">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1809">Description</span></span>                                                                  |
 |-----------------------------------------------------|------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1810">public str getCrossReferences()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1810">public str getCrossReferences()</span></span>                     | <span data-ttu-id="7f44c-1811">指定した SSRSReportDesignNode オブジェクトへの相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1811">Retrieves the cross-references to the specified SSRSReportDesignNode object.</span></span> |
-| <span data-ttu-id="7f44c-1812">public void setCrossReferences(str crossReferences)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1812">public void setCrossReferences(str crossReferences)</span></span> | <span data-ttu-id="7f44c-1813">指定した SSRSReportDesignNode オブジェクトに相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1813">Sets the cross-references to the specified SSRSReportDesignNode object.</span></span>      |
+| <span data-ttu-id="50251-1810">public str getCrossReferences()</span><span class="sxs-lookup"><span data-stu-id="50251-1810">public str getCrossReferences()</span></span>                     | <span data-ttu-id="50251-1811">指定した SSRSReportDesignNode オブジェクトへの相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1811">Retrieves the cross-references to the specified SSRSReportDesignNode object.</span></span> |
+| <span data-ttu-id="50251-1812">public void setCrossReferences(str crossReferences)</span><span class="sxs-lookup"><span data-stu-id="50251-1812">public void setCrossReferences(str crossReferences)</span></span> | <span data-ttu-id="50251-1813">指定した SSRSReportDesignNode オブジェクトに相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1813">Sets the cross-references to the specified SSRSReportDesignNode object.</span></span>      |
 
-### <a name="method-getcrossreferences"></a><span data-ttu-id="7f44c-1814">メソッド getCrossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1814">Method getCrossReferences</span></span>
+### <a name="method-getcrossreferences"></a><span data-ttu-id="50251-1814">メソッド getCrossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1814">Method getCrossReferences</span></span>
 
-<span data-ttu-id="7f44c-1815">指定した SSRSReportDesignNode オブジェクトへの相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1815">Retrieves the cross-references to the specified SSRSReportDesignNode object.</span></span>
+<span data-ttu-id="50251-1815">指定した SSRSReportDesignNode オブジェクトへの相互参照を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1815">Retrieves the cross-references to the specified SSRSReportDesignNode object.</span></span>
 
     public str getCrossReferences()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1816">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1816">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1816">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1816">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1817">XML 形式 で指定した SSRSReportDesignNode オブジェクトに対する相互参照。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1817">The cross-references to the specified SSRSReportDesignNode object in XML format.</span></span>
+<span data-ttu-id="50251-1817">XML 形式 で指定した SSRSReportDesignNode オブジェクトに対する相互参照。</span><span class="sxs-lookup"><span data-stu-id="50251-1817">The cross-references to the specified SSRSReportDesignNode object in XML format.</span></span>
 
-### <a name="method-setcrossreferences"></a><span data-ttu-id="7f44c-1818">メソッド setCrossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1818">Method setCrossReferences</span></span>
+### <a name="method-setcrossreferences"></a><span data-ttu-id="50251-1818">メソッド setCrossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1818">Method setCrossReferences</span></span>
 
-<span data-ttu-id="7f44c-1819">指定した SSRSReportDesignNode オブジェクトに相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1819">Sets the cross-references to the specified SSRSReportDesignNode object.</span></span>
+<span data-ttu-id="50251-1819">指定した SSRSReportDesignNode オブジェクトに相互参照を設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1819">Sets the cross-references to the specified SSRSReportDesignNode object.</span></span>
 
     public void setCrossReferences(str crossReferences)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1820">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1820">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1820">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1820">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1821">crossReferences</span><span class="sxs-lookup"><span data-stu-id="7f44c-1821">crossReferences</span></span>  
-<span data-ttu-id="7f44c-1822">XML 形式 で指定した SSRSReportDesignNode オブジェクトに対する相互参照。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1822">The cross-references to the specified SSRSReportDesignNode object in XML format.</span></span>
+<span data-ttu-id="50251-1821">crossReferences</span><span class="sxs-lookup"><span data-stu-id="50251-1821">crossReferences</span></span>  
+<span data-ttu-id="50251-1822">XML 形式 で指定した SSRSReportDesignNode オブジェクトに対する相互参照。</span><span class="sxs-lookup"><span data-stu-id="50251-1822">The cross-references to the specified SSRSReportDesignNode object in XML format.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1823">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1823">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1823">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1823">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1824">このメソッドは、指定された SSRSReportDesignNode オブジェクトに格納されている相互参照 XML のみを更新します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1824">This method only updates the cross-reference XML that is stored on the specified SSRSReportDesignNode object.</span></span> <span data-ttu-id="7f44c-1825">相互参照システムは更新されません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1825">It does not update the cross-reference system.</span></span>
+<span data-ttu-id="50251-1824">このメソッドは、指定された SSRSReportDesignNode オブジェクトに格納されている相互参照 XML のみを更新します。</span><span class="sxs-lookup"><span data-stu-id="50251-1824">This method only updates the cross-reference XML that is stored on the specified SSRSReportDesignNode object.</span></span> <span data-ttu-id="50251-1825">相互参照システムは更新されません。</span><span class="sxs-lookup"><span data-stu-id="50251-1825">It does not update the cross-reference system.</span></span>
 
-## <a name="class-statement"></a><span data-ttu-id="7f44c-1826">クラスの明細書</span><span class="sxs-lookup"><span data-stu-id="7f44c-1826">Class Statement</span></span>
+## <a name="class-statement"></a><span data-ttu-id="50251-1826">クラスの明細書</span><span class="sxs-lookup"><span data-stu-id="50251-1826">Class Statement</span></span>
     class Statement extends Object
 
-<span data-ttu-id="7f44c-1827">Statement クラスは、静的 SQL ステートメントを実行し、生成された結果を取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1827">The Statement class executes a static SQL statement and obtains the results it produces.</span></span>
+<span data-ttu-id="50251-1827">Statement クラスは、静的 SQL ステートメントを実行し、生成された結果を取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1827">The Statement class executes a static SQL statement and obtains the results it produces.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1828">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1828">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1828">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1828">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1829">明細書ごとに 1 つだけ、任意の時点で開くことができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1829">Only one per Statement can be open at any point in time.</span></span> <span data-ttu-id="7f44c-1830">したがって、1 つの ResultSet の読み込みが別の ResultSet の読み込みとインターリーブされている場合は、それぞれ異なるステートメントによって生成されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1830">Therefore, if the reading of one ResultSet is interleaved with the reading of another, each must have been generated by different Statements.</span></span> <span data-ttu-id="7f44c-1831">レコードとフィールド レベルのセキュリティは、明細書クラスでは適用されません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1831">Record and field level securities are not enforced on the Statement class.</span></span> <span data-ttu-id="7f44c-1832">したがって、明示的なセキュリティ検証を行わずにユーザーに返されるデータを公開していないことを、確認してください。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1832">Therefore, make sure you are not exposing data returned to the user without doing explicit security validation.</span></span> <span data-ttu-id="7f44c-1833">すべての実行可能な明細メソッドは現在 ResultSet で開いている場合明細書は暗黙的に閉じます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1833">All statement executed methods implicitly close a statement's current ResultSet if an open one exists.</span></span>
+<span data-ttu-id="50251-1829">明細書ごとに 1 つだけ、任意の時点で開くことができます。</span><span class="sxs-lookup"><span data-stu-id="50251-1829">Only one per Statement can be open at any point in time.</span></span> <span data-ttu-id="50251-1830">したがって、1 つの ResultSet の読み込みが別の ResultSet の読み込みとインターリーブされている場合は、それぞれ異なるステートメントによって生成されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1830">Therefore, if the reading of one ResultSet is interleaved with the reading of another, each must have been generated by different Statements.</span></span> <span data-ttu-id="50251-1831">レコードとフィールド レベルのセキュリティは、明細書クラスでは適用されません。</span><span class="sxs-lookup"><span data-stu-id="50251-1831">Record and field level securities are not enforced on the Statement class.</span></span> <span data-ttu-id="50251-1832">したがって、明示的なセキュリティ検証を行わずにユーザーに返されるデータを公開していないことを、確認してください。</span><span class="sxs-lookup"><span data-stu-id="50251-1832">Therefore, make sure you are not exposing data returned to the user without doing explicit security validation.</span></span> <span data-ttu-id="50251-1833">すべての実行可能な明細メソッドは現在 ResultSet で開いている場合明細書は暗黙的に閉じます。</span><span class="sxs-lookup"><span data-stu-id="50251-1833">All statement executed methods implicitly close a statement's current ResultSet if an open one exists.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1834">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1834">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1834">例</span><span class="sxs-lookup"><span data-stu-id="50251-1834">Examples</span></span>
 
     static void example() 
     { 
@@ -4011,46 +4011,46 @@ ms.locfileid: "1544189"
         } 
     }
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1835">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1835">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1835">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1835">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1836">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1836">Method</span></span>                                       | <span data-ttu-id="7f44c-1837">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1837">Description</span></span>                                                                                       |
+| <span data-ttu-id="50251-1836">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1836">Method</span></span>                                       | <span data-ttu-id="50251-1837">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1837">Description</span></span>                                                                                       |
 |----------------------------------------------|---------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1838">public ResultSet executeQuery(str statement)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1838">public ResultSet executeQuery(str statement)</span></span> | <span data-ttu-id="7f44c-1839">インスタンスの the を返す SQL ステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1839">Executes an SQL statement that returns an instance of the .</span></span>                                       |
-| <span data-ttu-id="7f44c-1840">public int executeUpdate(str statement)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1840">public int executeUpdate(str statement)</span></span>      | <span data-ttu-id="7f44c-1841">SQL INSERT、UPDATE、または DELETE ステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1841">Executes a SQL INSERT, UPDATE, or DELETE statement.</span></span>                                               |
-| <span data-ttu-id="7f44c-1842">public int getLastError()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1842">public int getLastError()</span></span>                    | <span data-ttu-id="7f44c-1843">最後の SQL 操作の SQL データベース バックエンドによって返されたエラー コードを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1843">Retrieves the error code returned by the SQL database backend for the last SQL operation.</span></span>         |
-| <span data-ttu-id="7f44c-1844">public str getLastErrorText()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1844">public str getLastErrorText()</span></span>                | <span data-ttu-id="7f44c-1845">最後の SQL 操作の SQL データベース バックエンドによって返されたエラー テキストを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1845">Retrieves the error text that is returned by the SQL database backend for the last SQL operation.</span></span> |
-| <span data-ttu-id="7f44c-1846">public int getMaxFieldSize()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1846">public int getMaxFieldSize()</span></span>                 | <span data-ttu-id="7f44c-1847">現在の列の最大サイズ制限を返します (ある場合)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1847">Returns the current maximum column size limit, if any.</span></span>                                            |
-| <span data-ttu-id="7f44c-1848">public void close()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1848">public void close()</span></span>                          | <span data-ttu-id="7f44c-1849">ステートメント オブジェクトのデータベースのリソースを解放します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1849">Releases the database resources of a statement object.</span></span>                                            |
-| <span data-ttu-id="7f44c-1850">public void setMaxFieldSize(int max)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1850">public void setMaxFieldSize(int max)</span></span>         | <span data-ttu-id="7f44c-1851">列の最大サイズ制限を設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1851">Sets the maximum column size limit.</span></span>                                                               |
+| <span data-ttu-id="50251-1838">public ResultSet executeQuery(str statement)</span><span class="sxs-lookup"><span data-stu-id="50251-1838">public ResultSet executeQuery(str statement)</span></span> | <span data-ttu-id="50251-1839">インスタンスの the を返す SQL ステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="50251-1839">Executes an SQL statement that returns an instance of the .</span></span>                                       |
+| <span data-ttu-id="50251-1840">public int executeUpdate(str statement)</span><span class="sxs-lookup"><span data-stu-id="50251-1840">public int executeUpdate(str statement)</span></span>      | <span data-ttu-id="50251-1841">SQL INSERT、UPDATE、または DELETE ステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="50251-1841">Executes a SQL INSERT, UPDATE, or DELETE statement.</span></span>                                               |
+| <span data-ttu-id="50251-1842">public int getLastError()</span><span class="sxs-lookup"><span data-stu-id="50251-1842">public int getLastError()</span></span>                    | <span data-ttu-id="50251-1843">最後の SQL 操作の SQL データベース バックエンドによって返されたエラー コードを取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1843">Retrieves the error code returned by the SQL database backend for the last SQL operation.</span></span>         |
+| <span data-ttu-id="50251-1844">public str getLastErrorText()</span><span class="sxs-lookup"><span data-stu-id="50251-1844">public str getLastErrorText()</span></span>                | <span data-ttu-id="50251-1845">最後の SQL 操作の SQL データベース バックエンドによって返されたエラー テキストを取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1845">Retrieves the error text that is returned by the SQL database backend for the last SQL operation.</span></span> |
+| <span data-ttu-id="50251-1846">public int getMaxFieldSize()</span><span class="sxs-lookup"><span data-stu-id="50251-1846">public int getMaxFieldSize()</span></span>                 | <span data-ttu-id="50251-1847">現在の列の最大サイズ制限を返します (ある場合)。</span><span class="sxs-lookup"><span data-stu-id="50251-1847">Returns the current maximum column size limit, if any.</span></span>                                            |
+| <span data-ttu-id="50251-1848">public void close()</span><span class="sxs-lookup"><span data-stu-id="50251-1848">public void close()</span></span>                          | <span data-ttu-id="50251-1849">ステートメント オブジェクトのデータベースのリソースを解放します。</span><span class="sxs-lookup"><span data-stu-id="50251-1849">Releases the database resources of a statement object.</span></span>                                            |
+| <span data-ttu-id="50251-1850">public void setMaxFieldSize(int max)</span><span class="sxs-lookup"><span data-stu-id="50251-1850">public void setMaxFieldSize(int max)</span></span>         | <span data-ttu-id="50251-1851">列の最大サイズ制限を設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1851">Sets the maximum column size limit.</span></span>                                                               |
 
-### <a name="method-executequery"></a><span data-ttu-id="7f44c-1852">メソッド executeQuery</span><span class="sxs-lookup"><span data-stu-id="7f44c-1852">Method executeQuery</span></span>
+### <a name="method-executequery"></a><span data-ttu-id="50251-1852">メソッド executeQuery</span><span class="sxs-lookup"><span data-stu-id="50251-1852">Method executeQuery</span></span>
 
-<span data-ttu-id="7f44c-1853">インスタンスの the を返す SQL ステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1853">Executes an SQL statement that returns an instance of the .</span></span>
+<span data-ttu-id="50251-1853">インスタンスの the を返す SQL ステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="50251-1853">Executes an SQL statement that returns an instance of the .</span></span>
 
     public ResultSet executeQuery(str statement)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1854">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1854">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1854">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1854">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1855">明細書</span><span class="sxs-lookup"><span data-stu-id="7f44c-1855">statement</span></span>  
-<span data-ttu-id="7f44c-1856">結果セットを取得するために使用される SQL ステートメントを含む文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1856">The string that contains the SQL statement that is used to retrieve the result set.</span></span>
+<span data-ttu-id="50251-1855">明細書</span><span class="sxs-lookup"><span data-stu-id="50251-1855">statement</span></span>  
+<span data-ttu-id="50251-1856">結果セットを取得するために使用される SQL ステートメントを含む文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-1856">The string that contains the SQL statement that is used to retrieve the result set.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1857">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1857">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1857">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1857">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1858">クエリから返されたデータを含むオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1858">The object that contains the data returned from the query.</span></span>
+<span data-ttu-id="50251-1858">クエリから返されたデータを含むオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="50251-1858">The object that contains the data returned from the query.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1859">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1859">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1859">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1859">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1860">ユーザーが executeQuery メソッドへの入力を制御すると、SQL インジェクション攻撃が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1860">If users control input to the executeQuery method, an SQL injection threat can occur.</span></span> <span data-ttu-id="7f44c-1861">したがって、このメソッドは、コード アクセス セキュリティで実行されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1861">Therefore, this method runs under Code Access Security.</span></span> <span data-ttu-id="7f44c-1862">サーバー上でこのメソッドを呼び出すには、 からのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1862">Calls to this method on the server require permission from the .</span></span> <span data-ttu-id="7f44c-1863">SQL ステートメントを実行するための安全な方法は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1863">The following are safer alternatives for executing SQL statements:</span></span>
+<span data-ttu-id="50251-1860">ユーザーが executeQuery メソッドへの入力を制御すると、SQL インジェクション攻撃が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1860">If users control input to the executeQuery method, an SQL injection threat can occur.</span></span> <span data-ttu-id="50251-1861">したがって、このメソッドは、コード アクセス セキュリティで実行されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1861">Therefore, this method runs under Code Access Security.</span></span> <span data-ttu-id="50251-1862">サーバー上でこのメソッドを呼び出すには、 からのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="50251-1862">Calls to this method on the server require permission from the .</span></span> <span data-ttu-id="50251-1863">SQL ステートメントを実行するための安全な方法は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="50251-1863">The following are safer alternatives for executing SQL statements:</span></span>
 
--   <span data-ttu-id="7f44c-1864">クエリ</span><span class="sxs-lookup"><span data-stu-id="7f44c-1864">Queries</span></span>
--   <span data-ttu-id="7f44c-1865">ビュー</span><span class="sxs-lookup"><span data-stu-id="7f44c-1865">Views</span></span>
--   <span data-ttu-id="7f44c-1866">X++ select ステートメント</span><span class="sxs-lookup"><span data-stu-id="7f44c-1866">X++ select statements</span></span>
+-   <span data-ttu-id="50251-1864">クエリ</span><span class="sxs-lookup"><span data-stu-id="50251-1864">Queries</span></span>
+-   <span data-ttu-id="50251-1865">ビュー</span><span class="sxs-lookup"><span data-stu-id="50251-1865">Views</span></span>
+-   <span data-ttu-id="50251-1866">X++ select ステートメント</span><span class="sxs-lookup"><span data-stu-id="50251-1866">X++ select statements</span></span>
 
-<span data-ttu-id="7f44c-1867">レコード レベル セキュリティは、明細書クラスでは適用されません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1867">Record level security is not enforced on the Statement class.</span></span> <span data-ttu-id="7f44c-1868">データがユーザーに公開されている場合は、明示的セキュリティ検証を実行します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1868">If data is exposed to the user, perform explicit security validation.</span></span>
+<span data-ttu-id="50251-1867">レコード レベル セキュリティは、明細書クラスでは適用されません。</span><span class="sxs-lookup"><span data-stu-id="50251-1867">Record level security is not enforced on the Statement class.</span></span> <span data-ttu-id="50251-1868">データがユーザーに公開されている場合は、明示的セキュリティ検証を実行します。</span><span class="sxs-lookup"><span data-stu-id="50251-1868">If data is exposed to the user, perform explicit security validation.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1869">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1869">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1869">例</span><span class="sxs-lookup"><span data-stu-id="50251-1869">Examples</span></span>
 
-<span data-ttu-id="7f44c-1870">次の例では、サーバー上で実行される、CustTable で SQL クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1870">The following example performs an SQL query on CustTable, which runs on the server.</span></span> <span data-ttu-id="7f44c-1871">クエリの結果は、resultSet オブジェクトに格納されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1871">The result of the query is stored in the resultSet object.</span></span>
+<span data-ttu-id="50251-1870">次の例では、サーバー上で実行される、CustTable で SQL クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="50251-1870">The following example performs an SQL query on CustTable, which runs on the server.</span></span> <span data-ttu-id="50251-1871">クエリの結果は、resultSet オブジェクトに格納されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1871">The result of the query is stored in the resultSet object.</span></span>
 
     server static void main(Args _args) 
     { 
@@ -4075,42 +4075,42 @@ ms.locfileid: "1544189"
             } 
     }
 
-### <a name="method-executeupdate"></a><span data-ttu-id="7f44c-1872">メソッド executeUpdate</span><span class="sxs-lookup"><span data-stu-id="7f44c-1872">Method executeUpdate</span></span>
+### <a name="method-executeupdate"></a><span data-ttu-id="50251-1872">メソッド executeUpdate</span><span class="sxs-lookup"><span data-stu-id="50251-1872">Method executeUpdate</span></span>
 
-<span data-ttu-id="7f44c-1873">SQL INSERT、UPDATE、または DELETE ステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1873">Executes a SQL INSERT, UPDATE, or DELETE statement.</span></span>
+<span data-ttu-id="50251-1873">SQL INSERT、UPDATE、または DELETE ステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="50251-1873">Executes a SQL INSERT, UPDATE, or DELETE statement.</span></span>
 
     public int executeUpdate(str statement)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1874">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1874">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1874">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1874">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1875">明細書</span><span class="sxs-lookup"><span data-stu-id="7f44c-1875">statement</span></span>  
-<span data-ttu-id="7f44c-1876">データベースに渡される SQL ステートメントを含む文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1876">The string that contains the SQL statement being passed to the database.</span></span>
+<span data-ttu-id="50251-1875">明細書</span><span class="sxs-lookup"><span data-stu-id="50251-1875">statement</span></span>  
+<span data-ttu-id="50251-1876">データベースに渡される SQL ステートメントを含む文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-1876">The string that contains the SQL statement being passed to the database.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1877">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1877">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1877">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1877">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1878">更新された行数。それ以外は、何も返さない SQL ステートメントの 0 (ゼロ)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1878">An updated row count; otherwise, 0 (zero) for SQL statements that return nothing.</span></span>
+<span data-ttu-id="50251-1878">更新された行数。それ以外は、何も返さない SQL ステートメントの 0 (ゼロ)。</span><span class="sxs-lookup"><span data-stu-id="50251-1878">An updated row count; otherwise, 0 (zero) for SQL statements that return nothing.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1879">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1879">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1879">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1879">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1880">SQLDDL ステートメントなど、何も返さない SQL ステートメントを実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1880">SQL statements that return nothing, such as SQLDDL statements, can also be executed.</span></span> <span data-ttu-id="7f44c-1881">ユーザーが executeUpdate メソッドへの入力を制御すると、SQL インジェクション攻撃が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1881">If users control input to the executeUpdate method, an SQL injection thread can occur.</span></span> <span data-ttu-id="7f44c-1882">したがって、このメソッドは、コード アクセス セキュリティで実行されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1882">Therefore, this method runs under Code Access Security.</span></span> <span data-ttu-id="7f44c-1883">サーバー上でこのメソッドを呼び出すには、 からのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1883">Calls to this method on the server require permission from the .</span></span> <span data-ttu-id="7f44c-1884">データベースとやり取りするための安全な方法は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1884">The following are safer alternatives for interacting with the database:</span></span>
+<span data-ttu-id="50251-1880">SQLDDL ステートメントなど、何も返さない SQL ステートメントを実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="50251-1880">SQL statements that return nothing, such as SQLDDL statements, can also be executed.</span></span> <span data-ttu-id="50251-1881">ユーザーが executeUpdate メソッドへの入力を制御すると、SQL インジェクション攻撃が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1881">If users control input to the executeUpdate method, an SQL injection thread can occur.</span></span> <span data-ttu-id="50251-1882">したがって、このメソッドは、コード アクセス セキュリティで実行されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1882">Therefore, this method runs under Code Access Security.</span></span> <span data-ttu-id="50251-1883">サーバー上でこのメソッドを呼び出すには、 からのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="50251-1883">Calls to this method on the server require permission from the .</span></span> <span data-ttu-id="50251-1884">データベースとやり取りするための安全な方法は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="50251-1884">The following are safer alternatives for interacting with the database:</span></span>
 
--   <span data-ttu-id="7f44c-1885">クエリ</span><span class="sxs-lookup"><span data-stu-id="7f44c-1885">Queries</span></span>
--   <span data-ttu-id="7f44c-1886">ビュー</span><span class="sxs-lookup"><span data-stu-id="7f44c-1886">Views</span></span>
--   <span data-ttu-id="7f44c-1887">X++ select ステートメント</span><span class="sxs-lookup"><span data-stu-id="7f44c-1887">X++ select statements</span></span>
+-   <span data-ttu-id="50251-1885">クエリ</span><span class="sxs-lookup"><span data-stu-id="50251-1885">Queries</span></span>
+-   <span data-ttu-id="50251-1886">ビュー</span><span class="sxs-lookup"><span data-stu-id="50251-1886">Views</span></span>
+-   <span data-ttu-id="50251-1887">X++ select ステートメント</span><span class="sxs-lookup"><span data-stu-id="50251-1887">X++ select statements</span></span>
 
-<span data-ttu-id="7f44c-1888">レコード レベル セキュリティは、明細書クラスでは適用されません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1888">Record level security is not enforced on the Statement class.</span></span> <span data-ttu-id="7f44c-1889">データがユーザーに公開されている場合は、明示的セキュリティ検証を実行します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1889">If data is exposed to the user, perform explicit security validation.</span></span>
+<span data-ttu-id="50251-1888">レコード レベル セキュリティは、明細書クラスでは適用されません。</span><span class="sxs-lookup"><span data-stu-id="50251-1888">Record level security is not enforced on the Statement class.</span></span> <span data-ttu-id="50251-1889">データがユーザーに公開されている場合は、明示的セキュリティ検証を実行します。</span><span class="sxs-lookup"><span data-stu-id="50251-1889">If data is exposed to the user, perform explicit security validation.</span></span>
 
-### <a name="method-getlasterror"></a><span data-ttu-id="7f44c-1890">メソッド getLastError</span><span class="sxs-lookup"><span data-stu-id="7f44c-1890">Method getLastError</span></span>
+### <a name="method-getlasterror"></a><span data-ttu-id="50251-1890">メソッド getLastError</span><span class="sxs-lookup"><span data-stu-id="50251-1890">Method getLastError</span></span>
 
-<span data-ttu-id="7f44c-1891">最後の SQL 操作の SQL データベース バックエンドによって返されたエラー コードを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1891">Retrieves the error code returned by the SQL database backend for the last SQL operation.</span></span>
+<span data-ttu-id="50251-1891">最後の SQL 操作の SQL データベース バックエンドによって返されたエラー コードを取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1891">Retrieves the error code returned by the SQL database backend for the last SQL operation.</span></span>
 
     public int getLastError()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1892">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1892">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1892">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1892">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1893">最後の SQL 操作の SQL データベース バックエンドによって返されたエラー コード。成功の場合は 0 です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1893">The error code returned by the SQL database backend for the last SQL operation; or 0 for success.</span></span>
+<span data-ttu-id="50251-1893">最後の SQL 操作の SQL データベース バックエンドによって返されたエラー コード。成功の場合は 0 です。</span><span class="sxs-lookup"><span data-stu-id="50251-1893">The error code returned by the SQL database backend for the last SQL operation; or 0 for success.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1894">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1894">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1894">例</span><span class="sxs-lookup"><span data-stu-id="50251-1894">Examples</span></span>
 
     static void StatementGetLastError()  
     { 
@@ -4142,63 +4142,63 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-getlasterrortext"></a><span data-ttu-id="7f44c-1895">メソッド getLastErrorText</span><span class="sxs-lookup"><span data-stu-id="7f44c-1895">Method getLastErrorText</span></span>
+### <a name="method-getlasterrortext"></a><span data-ttu-id="50251-1895">メソッド getLastErrorText</span><span class="sxs-lookup"><span data-stu-id="50251-1895">Method getLastErrorText</span></span>
 
-<span data-ttu-id="7f44c-1896">最後の SQL 操作の SQL データベース バックエンドによって返されたエラー テキストを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1896">Retrieves the error text that is returned by the SQL database backend for the last SQL operation.</span></span>
+<span data-ttu-id="50251-1896">最後の SQL 操作の SQL データベース バックエンドによって返されたエラー テキストを取得します。</span><span class="sxs-lookup"><span data-stu-id="50251-1896">Retrieves the error text that is returned by the SQL database backend for the last SQL operation.</span></span>
 
     public str getLastErrorText()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1897">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1897">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1897">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1897">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1898">最後の SQL 操作の SQL データベースによって提供されるエラー テキスト。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1898">The error text that is provided by the SQL database for the last SQL operation.</span></span>
+<span data-ttu-id="50251-1898">最後の SQL 操作の SQL データベースによって提供されるエラー テキスト。</span><span class="sxs-lookup"><span data-stu-id="50251-1898">The error text that is provided by the SQL database for the last SQL operation.</span></span>
 
-### <a name="method-getmaxfieldsize"></a><span data-ttu-id="7f44c-1899">メソッド getMaxFieldSize</span><span class="sxs-lookup"><span data-stu-id="7f44c-1899">Method getMaxFieldSize</span></span>
+### <a name="method-getmaxfieldsize"></a><span data-ttu-id="50251-1899">メソッド getMaxFieldSize</span><span class="sxs-lookup"><span data-stu-id="50251-1899">Method getMaxFieldSize</span></span>
 
-<span data-ttu-id="7f44c-1900">現在の列の最大サイズ制限を返します (ある場合)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1900">Returns the current maximum column size limit, if any.</span></span>
+<span data-ttu-id="50251-1900">現在の列の最大サイズ制限を返します (ある場合)。</span><span class="sxs-lookup"><span data-stu-id="50251-1900">Returns the current maximum column size limit, if any.</span></span>
 
     public int getMaxFieldSize()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1901">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1901">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1901">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1901">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1902">現在の列の最大サイズ制限。0 は無制限を意味します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1902">The current maximum column size limit; 0 means unlimited.</span></span>
+<span data-ttu-id="50251-1902">現在の列の最大サイズ制限。0 は無制限を意味します。</span><span class="sxs-lookup"><span data-stu-id="50251-1902">The current maximum column size limit; 0 means unlimited.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1903">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1903">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1903">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1903">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1904">maxFieldSize の制限 (バイト単位) は、任意の列の値に対して返されるデータの最大量です。binary、varbinary、longvarbinary、char、varchar、および longvarchar 列にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1904">The maxFieldSize limit (in bytes) is the maximum amount of data returned for any column value; it only applies to binary, varbinary, longvarbinary, char, varchar, and longvarchar columns.</span></span> <span data-ttu-id="7f44c-1905">制限を超過した場合、余分なデータは通知なしに破棄されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1905">If the limit is exceeded, the excess data is silently discarded.</span></span>
+<span data-ttu-id="50251-1904">maxFieldSize の制限 (バイト単位) は、任意の列の値に対して返されるデータの最大量です。binary、varbinary、longvarbinary、char、varchar、および longvarchar 列にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1904">The maxFieldSize limit (in bytes) is the maximum amount of data returned for any column value; it only applies to binary, varbinary, longvarbinary, char, varchar, and longvarchar columns.</span></span> <span data-ttu-id="50251-1905">制限を超過した場合、余分なデータは通知なしに破棄されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1905">If the limit is exceeded, the excess data is silently discarded.</span></span>
 
-### <a name="method-close"></a><span data-ttu-id="7f44c-1906">メソッド close</span><span class="sxs-lookup"><span data-stu-id="7f44c-1906">Method close</span></span>
+### <a name="method-close"></a><span data-ttu-id="50251-1906">メソッド close</span><span class="sxs-lookup"><span data-stu-id="50251-1906">Method close</span></span>
 
-<span data-ttu-id="7f44c-1907">ステートメント オブジェクトのデータベースのリソースを解放します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1907">Releases the database resources of a statement object.</span></span>
+<span data-ttu-id="50251-1907">ステートメント オブジェクトのデータベースのリソースを解放します。</span><span class="sxs-lookup"><span data-stu-id="50251-1907">Releases the database resources of a statement object.</span></span>
 
     public void close()
 
-### <a name="method-setmaxfieldsize"></a><span data-ttu-id="7f44c-1908">メソッド setMaxFieldSize</span><span class="sxs-lookup"><span data-stu-id="7f44c-1908">Method setMaxFieldSize</span></span>
+### <a name="method-setmaxfieldsize"></a><span data-ttu-id="50251-1908">メソッド setMaxFieldSize</span><span class="sxs-lookup"><span data-stu-id="50251-1908">Method setMaxFieldSize</span></span>
 
-<span data-ttu-id="7f44c-1909">列の最大サイズ制限を設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1909">Sets the maximum column size limit.</span></span>
+<span data-ttu-id="50251-1909">列の最大サイズ制限を設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1909">Sets the maximum column size limit.</span></span>
 
     public void setMaxFieldSize(int max)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1910">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1910">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1910">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1910">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1911">最大</span><span class="sxs-lookup"><span data-stu-id="7f44c-1911">max</span></span>  
-<span data-ttu-id="7f44c-1912">列の新しい最大サイズ制限。0 は無制限を意味します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1912">The new max column size limit; 0 means unlimited.</span></span>
+<span data-ttu-id="50251-1911">最大</span><span class="sxs-lookup"><span data-stu-id="50251-1911">max</span></span>  
+<span data-ttu-id="50251-1912">列の新しい最大サイズ制限。0 は無制限を意味します。</span><span class="sxs-lookup"><span data-stu-id="50251-1912">The new max column size limit; 0 means unlimited.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1913">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1913">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1913">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1913">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1914">maxFieldSize の制限 (バイト単位) は、任意の列の値に対して返されるデータのサイズを制限するように設定されています。binary、varbinary、longvarbinary、char、varchar、および longvarchar フィールドにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1914">The maxFieldSize limit (in bytes) is set to limit the size of data that can be returned for any column value; it only applies to binary, varbinary, longvarbinary, char, varchar, and longvarchar fields.</span></span> <span data-ttu-id="7f44c-1915">制限を超過した場合、余分なデータは通知なしに破棄されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1915">If the limit is exceeded, the excess data is silently discarded.</span></span> <span data-ttu-id="7f44c-1916">最大可搬性については、256 より大きい値を使用します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1916">For maximum portability, use values greater than 256.</span></span>
+<span data-ttu-id="50251-1914">maxFieldSize の制限 (バイト単位) は、任意の列の値に対して返されるデータのサイズを制限するように設定されています。binary、varbinary、longvarbinary、char、varchar、および longvarchar フィールドにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1914">The maxFieldSize limit (in bytes) is set to limit the size of data that can be returned for any column value; it only applies to binary, varbinary, longvarbinary, char, varchar, and longvarchar fields.</span></span> <span data-ttu-id="50251-1915">制限を超過した場合、余分なデータは通知なしに破棄されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1915">If the limit is exceeded, the excess data is silently discarded.</span></span> <span data-ttu-id="50251-1916">最大可搬性については、256 より大きい値を使用します。</span><span class="sxs-lookup"><span data-stu-id="50251-1916">For maximum portability, use values greater than 256.</span></span>
 
-## <a name="class-struct"></a><span data-ttu-id="7f44c-1917">クラス構造体</span><span class="sxs-lookup"><span data-stu-id="7f44c-1917">Class Struct</span></span>
+## <a name="class-struct"></a><span data-ttu-id="50251-1917">クラス構造体</span><span class="sxs-lookup"><span data-stu-id="50251-1917">Class Struct</span></span>
     class Struct extends Object
 
-<span data-ttu-id="7f44c-1918">構造体は、特定のエンティティに関する情報をグループ化するために、任意の X++ 型の複数値を保持します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1918">A struct holds several values of any X++ type, to group the information about a specific entity.</span></span>
+<span data-ttu-id="50251-1918">構造体は、特定のエンティティに関する情報をグループ化するために、任意の X++ 型の複数値を保持します。</span><span class="sxs-lookup"><span data-stu-id="50251-1918">A struct holds several values of any X++ type, to group the information about a specific entity.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-1919">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1919">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-1919">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1919">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1920">構造体 (略構造) は、すべての X++ 型の複数値を保持できるエンティティです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1920">A struct (short for structure) is an entity that can hold several values of any X++ type.</span></span> <span data-ttu-id="7f44c-1921">構造体は、特定のエンティティに関する情報をグループ化するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1921">Structs are used to group information about a specific entity.</span></span> <span data-ttu-id="7f44c-1922">たとえば、顧客の名前、年齢、および住所に関する情報を格納し、それからこの複合情報を 1つの項目として扱う場合があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1922">For example, you might want to store information about a customer's name, age and address and then treat this compound information as one item.</span></span> <span data-ttu-id="7f44c-1923">構造体内の項目は、データ型と名前で指定されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1923">The items in a struct are specified by a data type and a name.</span></span> <span data-ttu-id="7f44c-1924">項目は、new メソッドを使用して構造体が作成される場合に追加されるか、add メソッドを使用して構造体が作成された後に作成されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1924">Items are added when the struct is created by using the new method, or they are created after the struct has been created by using the add method.</span></span> <span data-ttu-id="7f44c-1925">Add メソッドを使用して品目を追加する場合は、同時に品目の値を指定し、この値からデータ型が推測されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1925">If you add an item by using the add method, you specify the value for the item at the same time, and the data type is inferred from this value.</span></span> <span data-ttu-id="7f44c-1926">構造体のインスタンス化中に品目を追加する場合は、値または valueIndex メソッドを使用して、値を割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1926">If you add an item during the instantiation of the struct, you need to use the value or the valueIndex method to assign a value to it.</span></span> <span data-ttu-id="7f44c-1927">構造体内の項目は、文字列型、整数型、実数型、日付型、コンテナー型、レコード型、クラス型など、型システムの列挙型にあるデータ型のいずれでもかまいません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1927">The items in a struct can be of any of the data types found in the Types system enum, including: string, integer, real, date, container, record, and class.</span></span> <span data-ttu-id="7f44c-1928">構造体内の項目は、項目名のアルファベット順に並べられます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1928">The items in a struct are arranged in alphabetical order of the item names.</span></span> <span data-ttu-id="7f44c-1929">構造体のフィールドは、fields、fieldName、および fieldType メソッドを使用してスキャンできます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1929">The fields in a struct can be traversed by using the fields, fieldName, and fieldType methods.</span></span> <span data-ttu-id="7f44c-1930">構造体は、コンテナーに梱包し、後で Struct::create メソッドを使用して復元できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1930">Structs can be packed into containers and later restored by using the Struct::create method.</span></span> <span data-ttu-id="7f44c-1931">構造体には、X++ コンテナーとのいくつかの類似点があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1931">Structs have some similarities to X++ containers.</span></span> <span data-ttu-id="7f44c-1932">ただし、コンテナーは値の型であり、X++ 言語に組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1932">However, a container is a value type and is built into the X++ language.</span></span> <span data-ttu-id="7f44c-1933">入れ子になったコンテナを作成することができますが、入れ子になった構造体は作成することができません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1933">You can create nested containers, but you cannot create nested structs.</span></span> <span data-ttu-id="7f44c-1934">X++ クラスは、構造とほぼ同じ方法で情報を保管することができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1934">X++ classes can store information in much the same way as structs.</span></span> <span data-ttu-id="7f44c-1935">クラスはデータを操作する方法を供給することができますが、構造体のための該当する機能は提供されておらず、上書きまたは拡張の概念はありません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1935">But although classes can supply methods to manipulate the data, no such facility is provided for structs, and there is no concept of overriding or extension.</span></span> <span data-ttu-id="7f44c-1936">クラスは AOT でのみ作成できますが、構造体は作成されたコードのコンテキスト内にのみ存在します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1936">Classes can only be created in the AOT, but structs exist solely in the context of the code in which they are created.</span></span> <span data-ttu-id="7f44c-1937">クラス メンバーの変数はクラス専用なので、アクセサー関数はクラスの外部から使用される値のためにコード化されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1937">Class member variables are private to the class, so accessor functions must be coded for them for the values to be used from outside the class.</span></span> <span data-ttu-id="7f44c-1938">構造体内の項目は一般にアクセス可能です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1938">The items within a struct are publicly accessible.</span></span>
+<span data-ttu-id="50251-1920">構造体 (略構造) は、すべての X++ 型の複数値を保持できるエンティティです。</span><span class="sxs-lookup"><span data-stu-id="50251-1920">A struct (short for structure) is an entity that can hold several values of any X++ type.</span></span> <span data-ttu-id="50251-1921">構造体は、特定のエンティティに関する情報をグループ化するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1921">Structs are used to group information about a specific entity.</span></span> <span data-ttu-id="50251-1922">たとえば、顧客の名前、年齢、および住所に関する情報を格納し、それからこの複合情報を 1つの項目として扱う場合があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1922">For example, you might want to store information about a customer's name, age and address and then treat this compound information as one item.</span></span> <span data-ttu-id="50251-1923">構造体内の項目は、データ型と名前で指定されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1923">The items in a struct are specified by a data type and a name.</span></span> <span data-ttu-id="50251-1924">項目は、new メソッドを使用して構造体が作成される場合に追加されるか、add メソッドを使用して構造体が作成された後に作成されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1924">Items are added when the struct is created by using the new method, or they are created after the struct has been created by using the add method.</span></span> <span data-ttu-id="50251-1925">Add メソッドを使用して品目を追加する場合は、同時に品目の値を指定し、この値からデータ型が推測されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1925">If you add an item by using the add method, you specify the value for the item at the same time, and the data type is inferred from this value.</span></span> <span data-ttu-id="50251-1926">構造体のインスタンス化中に品目を追加する場合は、値または valueIndex メソッドを使用して、値を割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1926">If you add an item during the instantiation of the struct, you need to use the value or the valueIndex method to assign a value to it.</span></span> <span data-ttu-id="50251-1927">構造体内の項目は、文字列型、整数型、実数型、日付型、コンテナー型、レコード型、クラス型など、型システムの列挙型にあるデータ型のいずれでもかまいません。</span><span class="sxs-lookup"><span data-stu-id="50251-1927">The items in a struct can be of any of the data types found in the Types system enum, including: string, integer, real, date, container, record, and class.</span></span> <span data-ttu-id="50251-1928">構造体内の項目は、項目名のアルファベット順に並べられます。</span><span class="sxs-lookup"><span data-stu-id="50251-1928">The items in a struct are arranged in alphabetical order of the item names.</span></span> <span data-ttu-id="50251-1929">構造体のフィールドは、fields、fieldName、および fieldType メソッドを使用してスキャンできます。</span><span class="sxs-lookup"><span data-stu-id="50251-1929">The fields in a struct can be traversed by using the fields, fieldName, and fieldType methods.</span></span> <span data-ttu-id="50251-1930">構造体は、コンテナーに梱包し、後で Struct::create メソッドを使用して復元できます。</span><span class="sxs-lookup"><span data-stu-id="50251-1930">Structs can be packed into containers and later restored by using the Struct::create method.</span></span> <span data-ttu-id="50251-1931">構造体には、X++ コンテナーとのいくつかの類似点があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1931">Structs have some similarities to X++ containers.</span></span> <span data-ttu-id="50251-1932">ただし、コンテナーは値の型であり、X++ 言語に組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="50251-1932">However, a container is a value type and is built into the X++ language.</span></span> <span data-ttu-id="50251-1933">入れ子になったコンテナを作成することができますが、入れ子になった構造体は作成することができません。</span><span class="sxs-lookup"><span data-stu-id="50251-1933">You can create nested containers, but you cannot create nested structs.</span></span> <span data-ttu-id="50251-1934">X++ クラスは、構造とほぼ同じ方法で情報を保管することができます。</span><span class="sxs-lookup"><span data-stu-id="50251-1934">X++ classes can store information in much the same way as structs.</span></span> <span data-ttu-id="50251-1935">クラスはデータを操作する方法を供給することができますが、構造体のための該当する機能は提供されておらず、上書きまたは拡張の概念はありません。</span><span class="sxs-lookup"><span data-stu-id="50251-1935">But although classes can supply methods to manipulate the data, no such facility is provided for structs, and there is no concept of overriding or extension.</span></span> <span data-ttu-id="50251-1936">クラスは AOT でのみ作成できますが、構造体は作成されたコードのコンテキスト内にのみ存在します。</span><span class="sxs-lookup"><span data-stu-id="50251-1936">Classes can only be created in the AOT, but structs exist solely in the context of the code in which they are created.</span></span> <span data-ttu-id="50251-1937">クラス メンバーの変数はクラス専用なので、アクセサー関数はクラスの外部から使用される値のためにコード化されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-1937">Class member variables are private to the class, so accessor functions must be coded for them for the values to be used from outside the class.</span></span> <span data-ttu-id="50251-1938">構造体内の項目は一般にアクセス可能です。</span><span class="sxs-lookup"><span data-stu-id="50251-1938">The items within a struct are publicly accessible.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-1939">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1939">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-1939">例</span><span class="sxs-lookup"><span data-stu-id="50251-1939">Examples</span></span>
 
-<span data-ttu-id="7f44c-1940">次の例では、2 つの項目を含む構造体を作成し、その項目に値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1940">The following example creates a struct with two items and then assigns values to those items.</span></span> <span data-ttu-id="7f44c-1941">Struct.add メソッドを使用して新しい項目が追加されます。項目のデータ型は割り当てられた値から推測されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1941">A new item is then added by using the Struct.add method; the data type of the item is inferred from the value assigned to it.</span></span> <span data-ttu-id="7f44c-1942">次に、構造体はコンテナーに梱包され、元の構造体のコピーである新しい構造体を作成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1942">The struct is then packed into a container and used to create a new struct, a copy of the original struct.</span></span>
+<span data-ttu-id="50251-1940">次の例では、2 つの項目を含む構造体を作成し、その項目に値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="50251-1940">The following example creates a struct with two items and then assigns values to those items.</span></span> <span data-ttu-id="50251-1941">Struct.add メソッドを使用して新しい項目が追加されます。項目のデータ型は割り当てられた値から推測されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1941">A new item is then added by using the Struct.add method; the data type of the item is inferred from the value assigned to it.</span></span> <span data-ttu-id="50251-1942">次に、構造体はコンテナーに梱包され、元の構造体のコピーである新しい構造体を作成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1942">The struct is then packed into a container and used to create a new struct, a copy of the original struct.</span></span>
 
     { 
         Struct s = new struct ("int age; str name"); 
@@ -4224,57 +4224,57 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="methods"></a><span data-ttu-id="7f44c-1943">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-1943">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-1943">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-1943">Methods</span></span>
 
-| <span data-ttu-id="7f44c-1944">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-1944">Method</span></span>                                                        | <span data-ttu-id="7f44c-1945">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-1945">Description</span></span>                                                                                   |
+| <span data-ttu-id="50251-1944">方法</span><span class="sxs-lookup"><span data-stu-id="50251-1944">Method</span></span>                                                        | <span data-ttu-id="50251-1945">説明</span><span class="sxs-lookup"><span data-stu-id="50251-1945">Description</span></span>                                                                                   |
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-1946">public boolean add(str fieldName, AnyType value)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1946">public boolean add(str fieldName, AnyType value)</span></span>              | <span data-ttu-id="7f44c-1947">構造体に新しい項目を追加し、指定した値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1947">Adds a new item to the struct and assigns the specified value to it.</span></span>                          |
-| <span data-ttu-id="7f44c-1948">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1948">public str definitionString()</span></span>                                 | <span data-ttu-id="7f44c-1949">構造体の要素の名前およびタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1949">Returns a description of the names and types of the elements in the struct.</span></span>                   |
-| <span data-ttu-id="7f44c-1950">public boolean exists(str fieldName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1950">public boolean exists(str fieldName)</span></span>                          | <span data-ttu-id="7f44c-1951">特定の項目が構造体に存在するかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1951">Determines whether a particular item exists in a struct.</span></span>                                      |
-| <span data-ttu-id="7f44c-1952">public str fieldName(int index)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1952">public str fieldName(int index)</span></span>                               | <span data-ttu-id="7f44c-1953">指定された位置にある構造体内の項目の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1953">Returns the name of the item in the struct at the specified position.</span></span>                         |
-| <span data-ttu-id="7f44c-1954">public int fields()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1954">public int fields()</span></span>                                           | <span data-ttu-id="7f44c-1955">構造体内の項目の数を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1955">Returns the number of items in the struct.</span></span>                                                    |
-| <span data-ttu-id="7f44c-1956">public Types fieldType(int index)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1956">public Types fieldType(int index)</span></span>                             | <span data-ttu-id="7f44c-1957">指定された位置にある構造体内の項目のデータ型を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1957">Returns the data type of the item in the struct at the specified position.</span></span>                    |
-| <span data-ttu-id="7f44c-1958">public int index(str fieldName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1958">public int index(str fieldName)</span></span>                               | <span data-ttu-id="7f44c-1959">名前に基づいて構造体の項目の位置を計算します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1959">Calculates the position of an item in the struct based on its name.</span></span>                           |
-| <span data-ttu-id="7f44c-1960">public container pack()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1960">public container pack()</span></span>                                       | <span data-ttu-id="7f44c-1961">Struct クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1961">Serializes the current instance of the Struct class.</span></span>                                          |
-| <span data-ttu-id="7f44c-1962">public boolean remove(str fieldName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1962">public boolean remove(str fieldName)</span></span>                          | <span data-ttu-id="7f44c-1963">構造体から品目を削除します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1963">Removes an item from a struct.</span></span>                                                                |
-| <span data-ttu-id="7f44c-1964">public str toString()</span><span class="sxs-lookup"><span data-stu-id="7f44c-1964">public str toString()</span></span>                                         | <span data-ttu-id="7f44c-1965">構造体の内容を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1965">Returns a string that describes the contents of the struct.</span></span>                                   |
-| <span data-ttu-id="7f44c-1966">public AnyType value(str fieldName, \[AnyType value\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1966">public AnyType value(str fieldName, \[AnyType value\])</span></span>        | <span data-ttu-id="7f44c-1967">構造体で指定される品目の値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1967">Gets or sets the value for a specified item in a struct.</span></span>                                      |
-| <span data-ttu-id="7f44c-1968">public str valueImage(int index)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1968">public str valueImage(int index)</span></span>                              | <span data-ttu-id="7f44c-1969">構造体内の特定の位置にある品目の値を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1969">Returns a string that describes the value of the item at a particular position in the struct.</span></span> |
-| <span data-ttu-id="7f44c-1970">public AnyType valueIndex(int index, \[AnyType value\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1970">public AnyType valueIndex(int index, \[AnyType value\])</span></span>       | <span data-ttu-id="7f44c-1971">構造体で指定される位置での品目の値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1971">Gets or sets the value of the item at a specified position in a struct.</span></span>                       |
-| <span data-ttu-id="7f44c-1972">public str xml(\[int indent\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-1972">public str xml(\[int indent\])</span></span>                                | <span data-ttu-id="7f44c-1973">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1973">Returns an XML string that represents the current object.</span></span>                                     |
-| <span data-ttu-id="7f44c-1974">::public static Struct create(container container)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1974">::public static Struct create(container container)</span></span>            | <span data-ttu-id="7f44c-1975">以前の Struct.pack の呼び出しで取得されたコンテナーから構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1975">Creates a struct from a container that is obtained from a prior call to Struct.pack.</span></span>          |
-| <span data-ttu-id="7f44c-1976">::public static Struct createFromXML(Object xmlnode)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1976">::public static Struct createFromXML(Object xmlnode)</span></span>          |                                                                                               |
-| <span data-ttu-id="7f44c-1977">::public static boolean equal(Struct struct1, Struct struct2)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1977">::public static boolean equal(Struct struct1, Struct struct2)</span></span> | <span data-ttu-id="7f44c-1978">2 つの構造体が等しいかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1978">Determines whether two structs are equal.</span></span>                                                     |
-| <span data-ttu-id="7f44c-1979">::public static Struct merge(Struct struct1, Struct struct2)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1979">::public static Struct merge(Struct struct1, Struct struct2)</span></span>  | <span data-ttu-id="7f44c-1980">2 つの構造体を組み合わせ、新しい構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1980">Combines two structs to create a new struct.</span></span>                                                  |
-| <span data-ttu-id="7f44c-1981">public void new(VarArg specifier)</span><span class="sxs-lookup"><span data-stu-id="7f44c-1981">public void new(VarArg specifier)</span></span>                             | <span data-ttu-id="7f44c-1982">構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1982">Creates a struct.</span></span>                                                                             |
+| <span data-ttu-id="50251-1946">public boolean add(str fieldName, AnyType value)</span><span class="sxs-lookup"><span data-stu-id="50251-1946">public boolean add(str fieldName, AnyType value)</span></span>              | <span data-ttu-id="50251-1947">構造体に新しい項目を追加し、指定した値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="50251-1947">Adds a new item to the struct and assigns the specified value to it.</span></span>                          |
+| <span data-ttu-id="50251-1948">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="50251-1948">public str definitionString()</span></span>                                 | <span data-ttu-id="50251-1949">構造体の要素の名前およびタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1949">Returns a description of the names and types of the elements in the struct.</span></span>                   |
+| <span data-ttu-id="50251-1950">public boolean exists(str fieldName)</span><span class="sxs-lookup"><span data-stu-id="50251-1950">public boolean exists(str fieldName)</span></span>                          | <span data-ttu-id="50251-1951">特定の項目が構造体に存在するかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1951">Determines whether a particular item exists in a struct.</span></span>                                      |
+| <span data-ttu-id="50251-1952">public str fieldName(int index)</span><span class="sxs-lookup"><span data-stu-id="50251-1952">public str fieldName(int index)</span></span>                               | <span data-ttu-id="50251-1953">指定された位置にある構造体内の項目の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1953">Returns the name of the item in the struct at the specified position.</span></span>                         |
+| <span data-ttu-id="50251-1954">public int fields()</span><span class="sxs-lookup"><span data-stu-id="50251-1954">public int fields()</span></span>                                           | <span data-ttu-id="50251-1955">構造体内の項目の数を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1955">Returns the number of items in the struct.</span></span>                                                    |
+| <span data-ttu-id="50251-1956">public Types fieldType(int index)</span><span class="sxs-lookup"><span data-stu-id="50251-1956">public Types fieldType(int index)</span></span>                             | <span data-ttu-id="50251-1957">指定された位置にある構造体内の項目のデータ型を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1957">Returns the data type of the item in the struct at the specified position.</span></span>                    |
+| <span data-ttu-id="50251-1958">public int index(str fieldName)</span><span class="sxs-lookup"><span data-stu-id="50251-1958">public int index(str fieldName)</span></span>                               | <span data-ttu-id="50251-1959">名前に基づいて構造体の項目の位置を計算します。</span><span class="sxs-lookup"><span data-stu-id="50251-1959">Calculates the position of an item in the struct based on its name.</span></span>                           |
+| <span data-ttu-id="50251-1960">public container pack()</span><span class="sxs-lookup"><span data-stu-id="50251-1960">public container pack()</span></span>                                       | <span data-ttu-id="50251-1961">Struct クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="50251-1961">Serializes the current instance of the Struct class.</span></span>                                          |
+| <span data-ttu-id="50251-1962">public boolean remove(str fieldName)</span><span class="sxs-lookup"><span data-stu-id="50251-1962">public boolean remove(str fieldName)</span></span>                          | <span data-ttu-id="50251-1963">構造体から品目を削除します。</span><span class="sxs-lookup"><span data-stu-id="50251-1963">Removes an item from a struct.</span></span>                                                                |
+| <span data-ttu-id="50251-1964">public str toString()</span><span class="sxs-lookup"><span data-stu-id="50251-1964">public str toString()</span></span>                                         | <span data-ttu-id="50251-1965">構造体の内容を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1965">Returns a string that describes the contents of the struct.</span></span>                                   |
+| <span data-ttu-id="50251-1966">public AnyType value(str fieldName, \[AnyType value\])</span><span class="sxs-lookup"><span data-stu-id="50251-1966">public AnyType value(str fieldName, \[AnyType value\])</span></span>        | <span data-ttu-id="50251-1967">構造体で指定される品目の値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1967">Gets or sets the value for a specified item in a struct.</span></span>                                      |
+| <span data-ttu-id="50251-1968">public str valueImage(int index)</span><span class="sxs-lookup"><span data-stu-id="50251-1968">public str valueImage(int index)</span></span>                              | <span data-ttu-id="50251-1969">構造体内の特定の位置にある品目の値を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1969">Returns a string that describes the value of the item at a particular position in the struct.</span></span> |
+| <span data-ttu-id="50251-1970">public AnyType valueIndex(int index, \[AnyType value\])</span><span class="sxs-lookup"><span data-stu-id="50251-1970">public AnyType valueIndex(int index, \[AnyType value\])</span></span>       | <span data-ttu-id="50251-1971">構造体で指定される位置での品目の値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-1971">Gets or sets the value of the item at a specified position in a struct.</span></span>                       |
+| <span data-ttu-id="50251-1972">public str xml(\[int indent\])</span><span class="sxs-lookup"><span data-stu-id="50251-1972">public str xml(\[int indent\])</span></span>                                | <span data-ttu-id="50251-1973">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-1973">Returns an XML string that represents the current object.</span></span>                                     |
+| <span data-ttu-id="50251-1974">::public static Struct create(container container)</span><span class="sxs-lookup"><span data-stu-id="50251-1974">::public static Struct create(container container)</span></span>            | <span data-ttu-id="50251-1975">以前の Struct.pack の呼び出しで取得されたコンテナーから構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1975">Creates a struct from a container that is obtained from a prior call to Struct.pack.</span></span>          |
+| <span data-ttu-id="50251-1976">::public static Struct createFromXML(Object xmlnode)</span><span class="sxs-lookup"><span data-stu-id="50251-1976">::public static Struct createFromXML(Object xmlnode)</span></span>          |                                                                                               |
+| <span data-ttu-id="50251-1977">::public static boolean equal(Struct struct1, Struct struct2)</span><span class="sxs-lookup"><span data-stu-id="50251-1977">::public static boolean equal(Struct struct1, Struct struct2)</span></span> | <span data-ttu-id="50251-1978">2 つの構造体が等しいかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="50251-1978">Determines whether two structs are equal.</span></span>                                                     |
+| <span data-ttu-id="50251-1979">::public static Struct merge(Struct struct1, Struct struct2)</span><span class="sxs-lookup"><span data-stu-id="50251-1979">::public static Struct merge(Struct struct1, Struct struct2)</span></span>  | <span data-ttu-id="50251-1980">2 つの構造体を組み合わせ、新しい構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1980">Combines two structs to create a new struct.</span></span>                                                  |
+| <span data-ttu-id="50251-1981">public void new(VarArg specifier)</span><span class="sxs-lookup"><span data-stu-id="50251-1981">public void new(VarArg specifier)</span></span>                             | <span data-ttu-id="50251-1982">構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-1982">Creates a struct.</span></span>                                                                             |
 
-### <a name="method-add"></a><span data-ttu-id="7f44c-1983">メソッド add</span><span class="sxs-lookup"><span data-stu-id="7f44c-1983">Method add</span></span>
+### <a name="method-add"></a><span data-ttu-id="50251-1983">メソッド add</span><span class="sxs-lookup"><span data-stu-id="50251-1983">Method add</span></span>
 
-<span data-ttu-id="7f44c-1984">構造体に新しい項目を追加し、指定した値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1984">Adds a new item to the struct and assigns the specified value to it.</span></span>
+<span data-ttu-id="50251-1984">構造体に新しい項目を追加し、指定した値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="50251-1984">Adds a new item to the struct and assigns the specified value to it.</span></span>
 
     public boolean add(str fieldName, AnyType value)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-1985">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-1985">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-1985">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-1985">Parameters</span></span>
 
-<span data-ttu-id="7f44c-1986">fieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-1986">fieldName</span></span>  
-<span data-ttu-id="7f44c-1987">新しい項目に割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1987">The value to assign to the new item.</span></span> <span data-ttu-id="7f44c-1988">この値は、アイテムのタイプを定義します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1988">This value defines the type of the item.</span></span>
+<span data-ttu-id="50251-1986">fieldName</span><span class="sxs-lookup"><span data-stu-id="50251-1986">fieldName</span></span>  
+<span data-ttu-id="50251-1987">新しい項目に割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1987">The value to assign to the new item.</span></span> <span data-ttu-id="50251-1988">この値は、アイテムのタイプを定義します。</span><span class="sxs-lookup"><span data-stu-id="50251-1988">This value defines the type of the item.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-1989">値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1989">value</span></span>  
-<span data-ttu-id="7f44c-1990">新しい項目に割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1990">The value to assign to the new item.</span></span> <span data-ttu-id="7f44c-1991">この値は、アイテムのタイプを定義します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1991">This value defines the type of the item.</span></span>
+<span data-ttu-id="50251-1989">値</span><span class="sxs-lookup"><span data-stu-id="50251-1989">value</span></span>  
+<span data-ttu-id="50251-1990">新しい項目に割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-1990">The value to assign to the new item.</span></span> <span data-ttu-id="50251-1991">この値は、アイテムのタイプを定義します。</span><span class="sxs-lookup"><span data-stu-id="50251-1991">This value defines the type of the item.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-1992">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-1992">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-1992">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-1992">Return Value</span></span>
 
-<span data-ttu-id="7f44c-1993">値が構造体に追加された場合は true。値を追加することができなかった場合は (既に構造体に存在していた場合は) false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1993">true if the value has been added to the struct; false if the value could not be added (if it already existed in the struct).</span></span>
+<span data-ttu-id="50251-1993">値が構造体に追加された場合は true。値を追加することができなかった場合は (既に構造体に存在していた場合は) false。</span><span class="sxs-lookup"><span data-stu-id="50251-1993">true if the value has been added to the struct; false if the value could not be added (if it already existed in the struct).</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-1994">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-1994">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-1994">備考</span><span class="sxs-lookup"><span data-stu-id="50251-1994">Remarks</span></span>
 
-<span data-ttu-id="7f44c-1995">値のタイプは値の内容から推測されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1995">The type of the value is inferred from content of the value.</span></span> <span data-ttu-id="7f44c-1996">構造体内の項目は、項目名に従ってアルファベット順に並べられます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1996">The items in a struct are arranged in alphabetical order according to the item names.</span></span> <span data-ttu-id="7f44c-1997">構造体の項目の値は、Struct.value メソッドまたは Struct.valueIndex メソッドを使用して変更できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1997">The value of an item in a struct can be changed by using the Struct.value or the Struct.valueIndex method.</span></span>
+<span data-ttu-id="50251-1995">値のタイプは値の内容から推測されます。</span><span class="sxs-lookup"><span data-stu-id="50251-1995">The type of the value is inferred from content of the value.</span></span> <span data-ttu-id="50251-1996">構造体内の項目は、項目名に従ってアルファベット順に並べられます。</span><span class="sxs-lookup"><span data-stu-id="50251-1996">The items in a struct are arranged in alphabetical order according to the item names.</span></span> <span data-ttu-id="50251-1997">構造体の項目の値は、Struct.value メソッドまたは Struct.valueIndex メソッドを使用して変更できます。</span><span class="sxs-lookup"><span data-stu-id="50251-1997">The value of an item in a struct can be changed by using the Struct.value or the Struct.valueIndex method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-1998">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-1998">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-1998">例</span><span class="sxs-lookup"><span data-stu-id="50251-1998">Examples</span></span>
 
-<span data-ttu-id="7f44c-1999">次の例では、名前および年齢フィールドの 2 つの項目を持つ構造体を作成し、それらの項目に値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-1999">The following example creates a struct with two items name and age fields and assigns values to those items.</span></span> <span data-ttu-id="7f44c-2000">その後、add メソッドを使用して、43 という値の shoeSize 変数が追加項目として作成されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2000">The add method is then used to create an additional item the shoeSize variable, with a value of 43.</span></span> <span data-ttu-id="7f44c-2001">値のタイプによって、新しい項目のタイプ int が決まります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2001">The type of the value determines the type of the new item, int.</span></span>
+<span data-ttu-id="50251-1999">次の例では、名前および年齢フィールドの 2 つの項目を持つ構造体を作成し、それらの項目に値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="50251-1999">The following example creates a struct with two items name and age fields and assigns values to those items.</span></span> <span data-ttu-id="50251-2000">その後、add メソッドを使用して、43 という値の shoeSize 変数が追加項目として作成されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2000">The add method is then used to create an additional item the shoeSize variable, with a value of 43.</span></span> <span data-ttu-id="50251-2001">値のタイプによって、新しい項目のタイプ int が決まります。</span><span class="sxs-lookup"><span data-stu-id="50251-2001">The type of the value determines the type of the new item, int.</span></span>
 
     { 
         Struct s = new Struct ("str name; int age"); 
@@ -4292,38 +4292,38 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-definitionstring"></a><span data-ttu-id="7f44c-2002">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="7f44c-2002">Method definitionString</span></span>
+### <a name="method-definitionstring"></a><span data-ttu-id="50251-2002">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="50251-2002">Method definitionString</span></span>
 
-<span data-ttu-id="7f44c-2003">構造体の要素の名前およびタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2003">Returns a description of the names and types of the elements in the struct.</span></span>
+<span data-ttu-id="50251-2003">構造体の要素の名前およびタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-2003">Returns a description of the names and types of the elements in the struct.</span></span>
 
     public str definitionString()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2004">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2004">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2004">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2004">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2005">構造体の定義を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2005">A string that contains a definition of the struct.</span></span>
+<span data-ttu-id="50251-2005">構造体の定義を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-2005">A string that contains a definition of the struct.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2006">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2006">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2006">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2006">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2007">definitionString メソッドを使用すると、構文 newStruct = new struct(oldStruct.definitionString()); を用いて構造体のコピーを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2007">You can use the definitionString method to create a copy of a struct by using the syntax: newStruct = new struct(oldStruct.definitionString());</span></span>
+<span data-ttu-id="50251-2007">definitionString メソッドを使用すると、構文 newStruct = new struct(oldStruct.definitionString()); を用いて構造体のコピーを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="50251-2007">You can use the definitionString method to create a copy of a struct by using the syntax: newStruct = new struct(oldStruct.definitionString());</span></span>
 
-### <a name="method-exists"></a><span data-ttu-id="7f44c-2008">メソッド exists</span><span class="sxs-lookup"><span data-stu-id="7f44c-2008">Method exists</span></span>
+### <a name="method-exists"></a><span data-ttu-id="50251-2008">メソッド exists</span><span class="sxs-lookup"><span data-stu-id="50251-2008">Method exists</span></span>
 
-<span data-ttu-id="7f44c-2009">特定の項目が構造体に存在するかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2009">Determines whether a particular item exists in a struct.</span></span>
+<span data-ttu-id="50251-2009">特定の項目が構造体に存在するかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="50251-2009">Determines whether a particular item exists in a struct.</span></span>
 
     public boolean exists(str fieldName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2010">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2010">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2010">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2010">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2011">fieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2011">fieldName</span></span>  
-<span data-ttu-id="7f44c-2012">チェックするアイテムの名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2012">The name of the item to check for.</span></span>
+<span data-ttu-id="50251-2011">fieldName</span><span class="sxs-lookup"><span data-stu-id="50251-2011">fieldName</span></span>  
+<span data-ttu-id="50251-2012">チェックするアイテムの名前。</span><span class="sxs-lookup"><span data-stu-id="50251-2012">The name of the item to check for.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2013">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2013">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2013">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2013">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2014">項目が構造体内に存在する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2014">true if the item exists in the struct; otherwise, false.</span></span>
+<span data-ttu-id="50251-2014">項目が構造体内に存在する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-2014">true if the item exists in the struct; otherwise, false.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-2015">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2015">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-2015">例</span><span class="sxs-lookup"><span data-stu-id="50251-2015">Examples</span></span>
 
-<span data-ttu-id="7f44c-2016">次の例では、特定の項目が構造体に存在するかどうかを検査し、存在しない場合は、項目を追加し、Struct.add メソッドを使用して項目に値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2016">The following example tests whether a particular item exists in a struct, and if not, it adds the item and assigns a value to it using the Struct.add method.</span></span>
+<span data-ttu-id="50251-2016">次の例では、特定の項目が構造体に存在するかどうかを検査し、存在しない場合は、項目を追加し、Struct.add メソッドを使用して項目に値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="50251-2016">The following example tests whether a particular item exists in a struct, and if not, it adds the item and assigns a value to it using the Struct.add method.</span></span>
 
     client server static void setProp( 
         Struct     properties, 
@@ -4338,28 +4338,28 @@ ms.locfileid: "1544189"
         properties.value(name,value); 
     }
 
-### <a name="method-fieldname"></a><span data-ttu-id="7f44c-2017">メソッド fieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2017">Method fieldName</span></span>
+### <a name="method-fieldname"></a><span data-ttu-id="50251-2017">メソッド fieldName</span><span class="sxs-lookup"><span data-stu-id="50251-2017">Method fieldName</span></span>
 
-<span data-ttu-id="7f44c-2018">指定された位置にある構造体内の項目の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2018">Returns the name of the item in the struct at the specified position.</span></span>
+<span data-ttu-id="50251-2018">指定された位置にある構造体内の項目の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-2018">Returns the name of the item in the struct at the specified position.</span></span>
 
     public str fieldName(int index)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2019">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2019">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2019">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2019">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2020">指数</span><span class="sxs-lookup"><span data-stu-id="7f44c-2020">index</span></span>  
-<span data-ttu-id="7f44c-2021">項目名を取得する構造体内の位置。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2021">The position in the struct at which you want to retrieve the item name.</span></span>
+<span data-ttu-id="50251-2020">指数</span><span class="sxs-lookup"><span data-stu-id="50251-2020">index</span></span>  
+<span data-ttu-id="50251-2021">項目名を取得する構造体内の位置。</span><span class="sxs-lookup"><span data-stu-id="50251-2021">The position in the struct at which you want to retrieve the item name.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2022">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2022">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2022">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2022">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2023">インデックスで指定された位置にある項目の名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2023">The name of the item at the position specified by index.</span></span>
+<span data-ttu-id="50251-2023">インデックスで指定された位置にある項目の名前。</span><span class="sxs-lookup"><span data-stu-id="50251-2023">The name of the item at the position specified by index.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2024">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2024">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2024">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2024">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2025">インデックスが見つからない場合は、空の文字列が返されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2025">If index is not found, an empty string is returned.</span></span>
+<span data-ttu-id="50251-2025">インデックスが見つからない場合は、空の文字列が返されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2025">If index is not found, an empty string is returned.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-2026">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2026">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-2026">例</span><span class="sxs-lookup"><span data-stu-id="50251-2026">Examples</span></span>
 
-<span data-ttu-id="7f44c-2027">次の例では、コンテナーから構造体を作成し、Struct.fields メソッドを使用してコンテナーの内容を反復処理します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2027">The following example creates a struct from a container and then uses the Struct.fields method to iterate through the contents of the container.</span></span> <span data-ttu-id="7f44c-2028">fieldName メソッドは、構造体の各項目の名前をテストするために使用され、この名前の値に応じて特定のアクションが実行されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2028">The fieldName method is used to test the name of each item in the struct, and a specific action is run depending on the value of this name.</span></span>
+<span data-ttu-id="50251-2027">次の例では、コンテナーから構造体を作成し、Struct.fields メソッドを使用してコンテナーの内容を反復処理します。</span><span class="sxs-lookup"><span data-stu-id="50251-2027">The following example creates a struct from a container and then uses the Struct.fields method to iterate through the contents of the container.</span></span> <span data-ttu-id="50251-2028">fieldName メソッドは、構造体の各項目の名前をテストするために使用され、この名前の値に応じて特定のアクションが実行されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2028">The fieldName method is used to test the name of each item in the struct, and a specific action is run depending on the value of this name.</span></span>
 
     boolean unpack(container packed) 
     { 
@@ -4401,23 +4401,23 @@ ms.locfileid: "1544189"
         return true; 
     }
 
-### <a name="method-fields"></a><span data-ttu-id="7f44c-2029">メソッド fields</span><span class="sxs-lookup"><span data-stu-id="7f44c-2029">Method fields</span></span>
+### <a name="method-fields"></a><span data-ttu-id="50251-2029">メソッド fields</span><span class="sxs-lookup"><span data-stu-id="50251-2029">Method fields</span></span>
 
-<span data-ttu-id="7f44c-2030">構造体内の項目の数を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2030">Returns the number of items in the struct.</span></span>
+<span data-ttu-id="50251-2030">構造体内の項目の数を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-2030">Returns the number of items in the struct.</span></span>
 
     public int fields()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2031">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2031">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2031">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2031">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2032">構造体内の項目の数。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2032">The number of items in the struct.</span></span>
+<span data-ttu-id="50251-2032">構造体内の項目の数。</span><span class="sxs-lookup"><span data-stu-id="50251-2032">The number of items in the struct.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2033">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2033">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2033">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2033">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2034">構造体内の項目の位置を見つけるには、Struct.index メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2034">To find the position of an item in a struct, use the Struct.index method.</span></span>
+<span data-ttu-id="50251-2034">構造体内の項目の位置を見つけるには、Struct.index メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="50251-2034">To find the position of an item in a struct, use the Struct.index method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-2035">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2035">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-2035">例</span><span class="sxs-lookup"><span data-stu-id="50251-2035">Examples</span></span>
 
-<span data-ttu-id="7f44c-2036">次の例では、コンテナーから構造体を作成し、フィールド メソッドを使用してコンテナーの内容を反復処理します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2036">The following example creates a struct from a container and then uses the fields method to iterate through the contents of the container.</span></span>
+<span data-ttu-id="50251-2036">次の例では、コンテナーから構造体を作成し、フィールド メソッドを使用してコンテナーの内容を反復処理します。</span><span class="sxs-lookup"><span data-stu-id="50251-2036">The following example creates a struct from a container and then uses the fields method to iterate through the contents of the container.</span></span>
 
     boolean unpack(container packed) 
     { 
@@ -4459,61 +4459,61 @@ ms.locfileid: "1544189"
         return true; 
     }
 
-### <a name="method-fieldtype"></a><span data-ttu-id="7f44c-2037">メソッド fieldType</span><span class="sxs-lookup"><span data-stu-id="7f44c-2037">Method fieldType</span></span>
+### <a name="method-fieldtype"></a><span data-ttu-id="50251-2037">メソッド fieldType</span><span class="sxs-lookup"><span data-stu-id="50251-2037">Method fieldType</span></span>
 
-<span data-ttu-id="7f44c-2038">指定された位置にある構造体内の項目のデータ型を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2038">Returns the data type of the item in the struct at the specified position.</span></span>
+<span data-ttu-id="50251-2038">指定された位置にある構造体内の項目のデータ型を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-2038">Returns the data type of the item in the struct at the specified position.</span></span>
 
     public Types fieldType(int index)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2039">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2039">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2039">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2039">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2040">指数</span><span class="sxs-lookup"><span data-stu-id="7f44c-2040">index</span></span>  
-<span data-ttu-id="7f44c-2041">データ型を取得する構造体内の位置。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2041">The position in the struct that you want to retrieve the data type for.</span></span>
+<span data-ttu-id="50251-2040">指数</span><span class="sxs-lookup"><span data-stu-id="50251-2040">index</span></span>  
+<span data-ttu-id="50251-2041">データ型を取得する構造体内の位置。</span><span class="sxs-lookup"><span data-stu-id="50251-2041">The position in the struct that you want to retrieve the data type for.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2042">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2042">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2042">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2042">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2043">インデックスで指定された位置にある項目のデータ型。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2043">The data type of the item at the position specified by index.</span></span>
+<span data-ttu-id="50251-2043">インデックスで指定された位置にある項目のデータ型。</span><span class="sxs-lookup"><span data-stu-id="50251-2043">The data type of the item at the position specified by index.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2044">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2044">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2044">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2044">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2045">可能な値は、システム列挙で提供されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2045">The possible values are supplied by the system enum.</span></span> <span data-ttu-id="7f44c-2046">インデックスが見つからない場合は、返す値は Types::void です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2046">If index is not found, the return value is Types::void.</span></span> <span data-ttu-id="7f44c-2047">Struct.index メソッドを使用することにより、構造体内の特定の品目の位置を決定することができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2047">You can determine the position of a particular item in a struct by using the Struct.index method</span></span>
+<span data-ttu-id="50251-2045">可能な値は、システム列挙で提供されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2045">The possible values are supplied by the system enum.</span></span> <span data-ttu-id="50251-2046">インデックスが見つからない場合は、返す値は Types::void です。</span><span class="sxs-lookup"><span data-stu-id="50251-2046">If index is not found, the return value is Types::void.</span></span> <span data-ttu-id="50251-2047">Struct.index メソッドを使用することにより、構造体内の特定の品目の位置を決定することができます。</span><span class="sxs-lookup"><span data-stu-id="50251-2047">You can determine the position of a particular item in a struct by using the Struct.index method</span></span>
 
-### <a name="method-index"></a><span data-ttu-id="7f44c-2048">メソッド index</span><span class="sxs-lookup"><span data-stu-id="7f44c-2048">Method index</span></span>
+### <a name="method-index"></a><span data-ttu-id="50251-2048">メソッド index</span><span class="sxs-lookup"><span data-stu-id="50251-2048">Method index</span></span>
 
-<span data-ttu-id="7f44c-2049">名前に基づいて構造体の項目の位置を計算します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2049">Calculates the position of an item in the struct based on its name.</span></span>
+<span data-ttu-id="50251-2049">名前に基づいて構造体の項目の位置を計算します。</span><span class="sxs-lookup"><span data-stu-id="50251-2049">Calculates the position of an item in the struct based on its name.</span></span>
 
     public int index(str fieldName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2050">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2050">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2050">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2050">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2051">fieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2051">fieldName</span></span>  
-<span data-ttu-id="7f44c-2052">位置を返す項目の名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2052">The name of the item for which to return the position.</span></span>
+<span data-ttu-id="50251-2051">fieldName</span><span class="sxs-lookup"><span data-stu-id="50251-2051">fieldName</span></span>  
+<span data-ttu-id="50251-2052">位置を返す項目の名前。</span><span class="sxs-lookup"><span data-stu-id="50251-2052">The name of the item for which to return the position.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2053">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2053">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2053">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2053">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2054">項目の位置。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2054">The position of the item.</span></span>
+<span data-ttu-id="50251-2054">項目の位置。</span><span class="sxs-lookup"><span data-stu-id="50251-2054">The position of the item.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2055">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2055">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2055">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2055">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2056">構造体内の項目は、項目名に従ってアルファベット順に並べられます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2056">The items in a struct are arranged in alphabetical order according to the item names.</span></span> <span data-ttu-id="7f44c-2057">fieldName という名前の項目がない場合は、0 が返されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2057">If there is no item with the name fieldName, 0 is returned.</span></span>
+<span data-ttu-id="50251-2056">構造体内の項目は、項目名に従ってアルファベット順に並べられます。</span><span class="sxs-lookup"><span data-stu-id="50251-2056">The items in a struct are arranged in alphabetical order according to the item names.</span></span> <span data-ttu-id="50251-2057">fieldName という名前の項目がない場合は、0 が返されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2057">If there is no item with the name fieldName, 0 is returned.</span></span>
 
-### <a name="method-pack"></a><span data-ttu-id="7f44c-2058">メソッド pack</span><span class="sxs-lookup"><span data-stu-id="7f44c-2058">Method pack</span></span>
+### <a name="method-pack"></a><span data-ttu-id="50251-2058">メソッド pack</span><span class="sxs-lookup"><span data-stu-id="50251-2058">Method pack</span></span>
 
-<span data-ttu-id="7f44c-2059">Struct クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2059">Serializes the current instance of the Struct class.</span></span>
+<span data-ttu-id="50251-2059">Struct クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="50251-2059">Serializes the current instance of the Struct class.</span></span>
 
     public container pack()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2060">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2060">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2060">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2060">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2061">Struct クラスの現在のインスタンスを含むコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2061">A container that contains the current instance of the Struct class.</span></span>
+<span data-ttu-id="50251-2061">Struct クラスの現在のインスタンスを含むコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="50251-2061">A container that contains the current instance of the Struct class.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2062">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2062">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2062">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2062">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2063">pack メソッドは、オブジェクトを保持する各フィールドで呼び出され、(サブ) コンテナーを生成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2063">The pack method is called on each field that holds an object, to yield a (sub) container.</span></span> <span data-ttu-id="7f44c-2064">構造体は、Struct.create メソッドを使用してコンテナーから再作成できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2064">The struct may be recreated from the container by using the Struct.create method.</span></span>
+<span data-ttu-id="50251-2063">pack メソッドは、オブジェクトを保持する各フィールドで呼び出され、(サブ) コンテナーを生成します。</span><span class="sxs-lookup"><span data-stu-id="50251-2063">The pack method is called on each field that holds an object, to yield a (sub) container.</span></span> <span data-ttu-id="50251-2064">構造体は、Struct.create メソッドを使用してコンテナーから再作成できます。</span><span class="sxs-lookup"><span data-stu-id="50251-2064">The struct may be recreated from the container by using the Struct.create method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-2065">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2065">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-2065">例</span><span class="sxs-lookup"><span data-stu-id="50251-2065">Examples</span></span>
 
-<span data-ttu-id="7f44c-2066">次の例では、2 つの項目 (名前と年齢) を持つ構造体を作成し、項目に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2066">The following example creates a struct with two items in it (name and age), and then adds values to the items.</span></span> <span data-ttu-id="7f44c-2067">構造体はコンテナーに梱包され、このコンテナーが使用されて新しい構造体が作成されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2067">The struct is packed into a container, and this container is then used to create a new struct.</span></span>
+<span data-ttu-id="50251-2066">次の例では、2 つの項目 (名前と年齢) を持つ構造体を作成し、項目に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="50251-2066">The following example creates a struct with two items in it (name and age), and then adds values to the items.</span></span> <span data-ttu-id="50251-2067">構造体はコンテナーに梱包され、このコンテナーが使用されて新しい構造体が作成されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2067">The struct is packed into a container, and this container is then used to create a new struct.</span></span>
 
     {  
         container packedStruct;  
@@ -4530,28 +4530,28 @@ ms.locfileid: "1544189"
         pause;  
     }
 
-### <a name="method-remove"></a><span data-ttu-id="7f44c-2068">メソッド remove</span><span class="sxs-lookup"><span data-stu-id="7f44c-2068">Method remove</span></span>
+### <a name="method-remove"></a><span data-ttu-id="50251-2068">メソッド remove</span><span class="sxs-lookup"><span data-stu-id="50251-2068">Method remove</span></span>
 
-<span data-ttu-id="7f44c-2069">構造体から品目を削除します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2069">Removes an item from a struct.</span></span>
+<span data-ttu-id="50251-2069">構造体から品目を削除します。</span><span class="sxs-lookup"><span data-stu-id="50251-2069">Removes an item from a struct.</span></span>
 
     public boolean remove(str fieldName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2070">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2070">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2070">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2070">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2071">fieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2071">fieldName</span></span>  
-<span data-ttu-id="7f44c-2072">削除する項目の名前。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2072">The name of the item you want to remove.</span></span>
+<span data-ttu-id="50251-2071">fieldName</span><span class="sxs-lookup"><span data-stu-id="50251-2071">fieldName</span></span>  
+<span data-ttu-id="50251-2072">削除する項目の名前。</span><span class="sxs-lookup"><span data-stu-id="50251-2072">The name of the item you want to remove.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2073">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2073">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2073">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2073">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2074">項目が見つかった (そして削除された) 場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2074">true if the item was found (and removed); otherwise, false.</span></span>
+<span data-ttu-id="50251-2074">項目が見つかった (そして削除された) 場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-2074">true if the item was found (and removed); otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2075">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2075">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2075">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2075">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2076">fieldName パラメーターに指定する名前は、構造体のインスタンス化で指定されたアイテムの名前または Struct.add メソッドを使用して追加されたアイテムの名前でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2076">The name you specify for the fieldName parameter must be the name of the item as it was specified in the instantiation of the struct or the name of the item as it was added using the Struct.add method.</span></span> <span data-ttu-id="7f44c-2077">名前は引用符 (" ") で囲む必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2077">The name must be enclosed in quotes (" ").</span></span>
+<span data-ttu-id="50251-2076">fieldName パラメーターに指定する名前は、構造体のインスタンス化で指定されたアイテムの名前または Struct.add メソッドを使用して追加されたアイテムの名前でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="50251-2076">The name you specify for the fieldName parameter must be the name of the item as it was specified in the instantiation of the struct or the name of the item as it was added using the Struct.add method.</span></span> <span data-ttu-id="50251-2077">名前は引用符 (" ") で囲む必要があります。</span><span class="sxs-lookup"><span data-stu-id="50251-2077">The name must be enclosed in quotes (" ").</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-2078">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2078">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-2078">例</span><span class="sxs-lookup"><span data-stu-id="50251-2078">Examples</span></span>
 
-<span data-ttu-id="7f44c-2079">次の例では、2 つの項目を含む構造体を作成し、これらの項目の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2079">The following example creates a struct with two items in it and prints a description of these items.</span></span> <span data-ttu-id="7f44c-2080">品目のいずれかは、メソッドの削除を使用して削除されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2080">One of the items is then removed by using the remove method.</span></span>
+<span data-ttu-id="50251-2079">次の例では、2 つの項目を含む構造体を作成し、これらの項目の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="50251-2079">The following example creates a struct with two items in it and prints a description of these items.</span></span> <span data-ttu-id="50251-2080">品目のいずれかは、メソッドの削除を使用して削除されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2080">One of the items is then removed by using the remove method.</span></span>
 
     { 
         Struct s = new Struct ("str name; int age"); 
@@ -4568,43 +4568,43 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-tostring"></a><span data-ttu-id="7f44c-2081">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="7f44c-2081">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="50251-2081">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="50251-2081">Method toString</span></span>
 
-<span data-ttu-id="7f44c-2082">構造体の内容を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2082">Returns a string that describes the contents of the struct.</span></span>
+<span data-ttu-id="50251-2082">構造体の内容を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-2082">Returns a string that describes the contents of the struct.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2083">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2083">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2083">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2083">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2084">構造体の内容を説明する文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2084">A string that describes the contents of the struct.</span></span>
+<span data-ttu-id="50251-2084">構造体の内容を説明する文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-2084">A string that describes the contents of the struct.</span></span>
 
-### <a name="method-value"></a><span data-ttu-id="7f44c-2085">メソッド value</span><span class="sxs-lookup"><span data-stu-id="7f44c-2085">Method value</span></span>
+### <a name="method-value"></a><span data-ttu-id="50251-2085">メソッド value</span><span class="sxs-lookup"><span data-stu-id="50251-2085">Method value</span></span>
 
-<span data-ttu-id="7f44c-2086">構造体で指定される品目の値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2086">Gets or sets the value for a specified item in a struct.</span></span>
+<span data-ttu-id="50251-2086">構造体で指定される品目の値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-2086">Gets or sets the value for a specified item in a struct.</span></span>
 
     public AnyType value(str fieldName, [AnyType value])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2087">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2087">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2087">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2087">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2088">fieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2088">fieldName</span></span>  
-<span data-ttu-id="7f44c-2089">項目に割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2089">The value to assign to the item; optional.</span></span>
+<span data-ttu-id="50251-2088">fieldName</span><span class="sxs-lookup"><span data-stu-id="50251-2088">fieldName</span></span>  
+<span data-ttu-id="50251-2089">項目に割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-2089">The value to assign to the item; optional.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2090">値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2090">value</span></span>  
-<span data-ttu-id="7f44c-2091">項目に割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2091">The value to assign to the item; optional.</span></span>
+<span data-ttu-id="50251-2090">値</span><span class="sxs-lookup"><span data-stu-id="50251-2090">value</span></span>  
+<span data-ttu-id="50251-2091">項目に割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-2091">The value to assign to the item; optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2092">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2092">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2092">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2092">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2093">指定項目の値。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2093">The value of the specified item.</span></span>
+<span data-ttu-id="50251-2093">指定項目の値。</span><span class="sxs-lookup"><span data-stu-id="50251-2093">The value of the specified item.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2094">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2094">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2094">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2094">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2095">構造体内で指定された名前に項目がない場合は例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2095">An exception is raised if there is no item with the specified name in the struct.</span></span> <span data-ttu-id="7f44c-2096">構造体内の項目名は、Struct.fieldName メソッドを使用して取得できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2096">The name of an item in a struct may be retrieved by using the Struct.fieldName method.</span></span> <span data-ttu-id="7f44c-2097">Struct.add メソッドを使用することにより、新しい品目を構造体に追加すると同時に値を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2097">You can add a new item to a struct and assign a value to it at the same time by using the Struct.add method.</span></span> <span data-ttu-id="7f44c-2098">構造体内の位置に基づいてアイテムに新しい値を割り当てるには、Struct.valueIndex メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2098">To assign a new value to an item based on its position in the struct, use the Struct.valueIndex method.</span></span>
+<span data-ttu-id="50251-2095">構造体内で指定された名前に項目がない場合は例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="50251-2095">An exception is raised if there is no item with the specified name in the struct.</span></span> <span data-ttu-id="50251-2096">構造体内の項目名は、Struct.fieldName メソッドを使用して取得できます。</span><span class="sxs-lookup"><span data-stu-id="50251-2096">The name of an item in a struct may be retrieved by using the Struct.fieldName method.</span></span> <span data-ttu-id="50251-2097">Struct.add メソッドを使用することにより、新しい品目を構造体に追加すると同時に値を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="50251-2097">You can add a new item to a struct and assign a value to it at the same time by using the Struct.add method.</span></span> <span data-ttu-id="50251-2098">構造体内の位置に基づいてアイテムに新しい値を割り当てるには、Struct.valueIndex メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="50251-2098">To assign a new value to an item based on its position in the struct, use the Struct.valueIndex method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-2099">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2099">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-2099">例</span><span class="sxs-lookup"><span data-stu-id="50251-2099">Examples</span></span>
 
-<span data-ttu-id="7f44c-2100">次の例では、2 つの項目を含む構造体を作成し、value メソッドを使用してこれらの 2 つの項目に値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2100">The following example creates a struct with two items in it and then uses the value method to assign values to those two items.</span></span>
+<span data-ttu-id="50251-2100">次の例では、2 つの項目を含む構造体を作成し、value メソッドを使用してこれらの 2 つの項目に値を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="50251-2100">The following example creates a struct with two items in it and then uses the value method to assign values to those two items.</span></span>
 
     { 
         Struct s = new Struct ("str name; int age"); 
@@ -4617,90 +4617,90 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-valueimage"></a><span data-ttu-id="7f44c-2101">メソッド valueImage</span><span class="sxs-lookup"><span data-stu-id="7f44c-2101">Method valueImage</span></span>
+### <a name="method-valueimage"></a><span data-ttu-id="50251-2101">メソッド valueImage</span><span class="sxs-lookup"><span data-stu-id="50251-2101">Method valueImage</span></span>
 
-<span data-ttu-id="7f44c-2102">構造体内の特定の位置にある品目の値を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2102">Returns a string that describes the value of the item at a particular position in the struct.</span></span>
+<span data-ttu-id="50251-2102">構造体内の特定の位置にある品目の値を説明する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-2102">Returns a string that describes the value of the item at a particular position in the struct.</span></span>
 
     public str valueImage(int index)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2103">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2103">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2103">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2103">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2104">指数</span><span class="sxs-lookup"><span data-stu-id="7f44c-2104">index</span></span>  
-<span data-ttu-id="7f44c-2105">説明を返す項目の位置。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2105">The position of the item that you want to return a description for.</span></span>
+<span data-ttu-id="50251-2104">指数</span><span class="sxs-lookup"><span data-stu-id="50251-2104">index</span></span>  
+<span data-ttu-id="50251-2105">説明を返す項目の位置。</span><span class="sxs-lookup"><span data-stu-id="50251-2105">The position of the item that you want to return a description for.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2106">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2106">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2106">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2106">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2107">品目の価値を説明する文字列。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2107">A string that describes the value of the item.</span></span>
+<span data-ttu-id="50251-2107">品目の価値を説明する文字列。</span><span class="sxs-lookup"><span data-stu-id="50251-2107">A string that describes the value of the item.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2108">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2108">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2108">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2108">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2109">構造体内の項目は、項目の名前に従ってアルファベット順に表示されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2109">The items in a struct are in alphabetical order according to the names of the items.</span></span> <span data-ttu-id="7f44c-2110">インデックスで指定された位置に項目がない場合は例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2110">If there is no item at the position specified by index, an exception is raised.</span></span>
+<span data-ttu-id="50251-2109">構造体内の項目は、項目の名前に従ってアルファベット順に表示されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2109">The items in a struct are in alphabetical order according to the names of the items.</span></span> <span data-ttu-id="50251-2110">インデックスで指定された位置に項目がない場合は例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="50251-2110">If there is no item at the position specified by index, an exception is raised.</span></span>
 
-### <a name="method-valueindex"></a><span data-ttu-id="7f44c-2111">メソッド valueIndex</span><span class="sxs-lookup"><span data-stu-id="7f44c-2111">Method valueIndex</span></span>
+### <a name="method-valueindex"></a><span data-ttu-id="50251-2111">メソッド valueIndex</span><span class="sxs-lookup"><span data-stu-id="50251-2111">Method valueIndex</span></span>
 
-<span data-ttu-id="7f44c-2112">構造体で指定される位置での品目の値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2112">Gets or sets the value of the item at a specified position in a struct.</span></span>
+<span data-ttu-id="50251-2112">構造体で指定される位置での品目の値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="50251-2112">Gets or sets the value of the item at a specified position in a struct.</span></span>
 
     public AnyType valueIndex(int index, [AnyType value])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2113">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2113">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2113">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2113">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2114">指数</span><span class="sxs-lookup"><span data-stu-id="7f44c-2114">index</span></span>  
-<span data-ttu-id="7f44c-2115">インデックスで指定された位置のアイテムに割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2115">The value to assign to the item at the position specified by index; optional.</span></span>
+<span data-ttu-id="50251-2114">指数</span><span class="sxs-lookup"><span data-stu-id="50251-2114">index</span></span>  
+<span data-ttu-id="50251-2115">インデックスで指定された位置のアイテムに割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-2115">The value to assign to the item at the position specified by index; optional.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2116">値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2116">value</span></span>  
-<span data-ttu-id="7f44c-2117">インデックスで指定された位置のアイテムに割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2117">The value to assign to the item at the position specified by index; optional.</span></span>
+<span data-ttu-id="50251-2116">値</span><span class="sxs-lookup"><span data-stu-id="50251-2116">value</span></span>  
+<span data-ttu-id="50251-2117">インデックスで指定された位置のアイテムに割り当てる値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="50251-2117">The value to assign to the item at the position specified by index; optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2118">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2118">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2118">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2118">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2119">インデックスで指定された位置にある項目の値。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2119">The value of the item at the position specified by index.</span></span>
+<span data-ttu-id="50251-2119">インデックスで指定された位置にある項目の値。</span><span class="sxs-lookup"><span data-stu-id="50251-2119">The value of the item at the position specified by index.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2120">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2120">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2120">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2120">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2121">インデックスで指定された位置に項目がない場合は例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2121">An exception is raised if there is no item at the position specified by index.</span></span> <span data-ttu-id="7f44c-2122">構造体内の項目の位置は、Struct.index メソッドを使用して取得できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2122">The position of an item in a struct can be retrieved by using the Struct.index method.</span></span>
+<span data-ttu-id="50251-2121">インデックスで指定された位置に項目がない場合は例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="50251-2121">An exception is raised if there is no item at the position specified by index.</span></span> <span data-ttu-id="50251-2122">構造体内の項目の位置は、Struct.index メソッドを使用して取得できます。</span><span class="sxs-lookup"><span data-stu-id="50251-2122">The position of an item in a struct can be retrieved by using the Struct.index method.</span></span>
 
-### <a name="method-xml"></a><span data-ttu-id="7f44c-2123">メソッド xml</span><span class="sxs-lookup"><span data-stu-id="7f44c-2123">Method xml</span></span>
+### <a name="method-xml"></a><span data-ttu-id="50251-2123">メソッド xml</span><span class="sxs-lookup"><span data-stu-id="50251-2123">Method xml</span></span>
 
-<span data-ttu-id="7f44c-2124">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2124">Returns an XML string that represents the current object.</span></span>
+<span data-ttu-id="50251-2124">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="50251-2124">Returns an XML string that represents the current object.</span></span>
 
     public str xml([int indent])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2125">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2125">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2126">インデント</span><span class="sxs-lookup"><span data-stu-id="7f44c-2126">indent</span></span>  
-<span data-ttu-id="7f44c-2127">返された XML 文字列のインデントの量 (省略可能)。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2127">The amount of indentation of the returned XML string; optional.</span></span>
+<span data-ttu-id="50251-2126">インデント</span><span class="sxs-lookup"><span data-stu-id="50251-2126">indent</span></span>  
+<span data-ttu-id="50251-2127">返された XML 文字列のインデントの量 (省略可能)。</span><span class="sxs-lookup"><span data-stu-id="50251-2127">The amount of indentation of the returned XML string; optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2128">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2128">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2128">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2128">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2129">現在のオブジェクトを表す XML 文字列です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2129">An XML string that represents the current object.</span></span>
+<span data-ttu-id="50251-2129">現在のオブジェクトを表す XML 文字列です。</span><span class="sxs-lookup"><span data-stu-id="50251-2129">An XML string that represents the current object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2130">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2130">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2130">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2130">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2131">このメソッドをオーバーライドして、その型に対して意味のある値を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2131">This method can be overridden to return values that are meaningful for that type.</span></span>
+<span data-ttu-id="50251-2131">このメソッドをオーバーライドして、その型に対して意味のある値を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="50251-2131">This method can be overridden to return values that are meaningful for that type.</span></span>
 
-### <a name="method-create"></a><span data-ttu-id="7f44c-2132">メソッド create</span><span class="sxs-lookup"><span data-stu-id="7f44c-2132">Method create</span></span>
+### <a name="method-create"></a><span data-ttu-id="50251-2132">メソッド create</span><span class="sxs-lookup"><span data-stu-id="50251-2132">Method create</span></span>
 
-<span data-ttu-id="7f44c-2133">以前の Struct.pack の呼び出しで取得されたコンテナーから構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2133">Creates a struct from a container that is obtained from a prior call to Struct.pack.</span></span>
+<span data-ttu-id="50251-2133">以前の Struct.pack の呼び出しで取得されたコンテナーから構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-2133">Creates a struct from a container that is obtained from a prior call to Struct.pack.</span></span>
 
     public static Struct create(container container)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2134">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2134">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2134">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2134">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2135">コンテナー</span><span class="sxs-lookup"><span data-stu-id="7f44c-2135">container</span></span>  
-<span data-ttu-id="7f44c-2136">梱包済みの構造体を含むコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2136">A container that contains the packed struct.</span></span>
+<span data-ttu-id="50251-2135">コンテナー</span><span class="sxs-lookup"><span data-stu-id="50251-2135">container</span></span>  
+<span data-ttu-id="50251-2136">梱包済みの構造体を含むコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="50251-2136">A container that contains the packed struct.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2137">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2137">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2137">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2137">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2138">特定のコンテナーに梱包されたものと同じ構造体。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2138">A struct equal to the one that was packed into the specified container.</span></span>
+<span data-ttu-id="50251-2138">特定のコンテナーに梱包されたものと同じ構造体。</span><span class="sxs-lookup"><span data-stu-id="50251-2138">A struct equal to the one that was packed into the specified container.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2139">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2139">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2139">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2139">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2140">構造体にオブジェクトが含まれている場合、これらのオブジェクトにはコンテナーからその内部状態を再設定するために呼び出されるアンパック メソッドが必要です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2140">If the struct contains objects, these objects must have an unpack method that is called to re-establish their internal state from the container.</span></span>
+<span data-ttu-id="50251-2140">構造体にオブジェクトが含まれている場合、これらのオブジェクトにはコンテナーからその内部状態を再設定するために呼び出されるアンパック メソッドが必要です。</span><span class="sxs-lookup"><span data-stu-id="50251-2140">If the struct contains objects, these objects must have an unpack method that is called to re-establish their internal state from the container.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-2141">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2141">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-2141">例</span><span class="sxs-lookup"><span data-stu-id="50251-2141">Examples</span></span>
 
-<span data-ttu-id="7f44c-2142">次の例では、2 つの項目 (名前と年齢) を持つ構造体を作成し、項目に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2142">The following example creates a struct with two items in it (name and age), and then adds values to the items.</span></span> <span data-ttu-id="7f44c-2143">構造体はコンテナーに梱包され、このコンテナーは開梱されて新しい構造体が作成されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2143">The struct is packed into a container, and this container is then unpacked to create a new struct.</span></span>
+<span data-ttu-id="50251-2142">次の例では、2 つの項目 (名前と年齢) を持つ構造体を作成し、項目に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="50251-2142">The following example creates a struct with two items in it (name and age), and then adds values to the items.</span></span> <span data-ttu-id="50251-2143">構造体はコンテナーに梱包され、このコンテナーは開梱されて新しい構造体が作成されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2143">The struct is packed into a container, and this container is then unpacked to create a new struct.</span></span>
 
     {  
         container packedStruct;  
@@ -4717,67 +4717,67 @@ ms.locfileid: "1544189"
         pause;  
     }
 
-### <a name="method-createfromxml"></a><span data-ttu-id="7f44c-2144">メソッド createFromXML</span><span class="sxs-lookup"><span data-stu-id="7f44c-2144">Method createFromXML</span></span>
+### <a name="method-createfromxml"></a><span data-ttu-id="50251-2144">メソッド createFromXML</span><span class="sxs-lookup"><span data-stu-id="50251-2144">Method createFromXML</span></span>
 
     public static Struct createFromXML(Object xmlnode)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2145">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2145">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2145">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2145">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2146">xmlnode</span><span class="sxs-lookup"><span data-stu-id="7f44c-2146">xmlnode</span></span>  
+<span data-ttu-id="50251-2146">xmlnode</span><span class="sxs-lookup"><span data-stu-id="50251-2146">xmlnode</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2147">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2147">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2147">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2147">Return Value</span></span>
 
-### <a name="method-equal"></a><span data-ttu-id="7f44c-2148">メソッド equal</span><span class="sxs-lookup"><span data-stu-id="7f44c-2148">Method equal</span></span>
+### <a name="method-equal"></a><span data-ttu-id="50251-2148">メソッド equal</span><span class="sxs-lookup"><span data-stu-id="50251-2148">Method equal</span></span>
 
-<span data-ttu-id="7f44c-2149">2 つの構造体が等しいかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2149">Determines whether two structs are equal.</span></span>
+<span data-ttu-id="50251-2149">2 つの構造体が等しいかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="50251-2149">Determines whether two structs are equal.</span></span>
 
     public static boolean equal(Struct struct1, Struct struct2)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2150">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2150">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2150">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2150">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2151">struct1</span><span class="sxs-lookup"><span data-stu-id="7f44c-2151">struct1</span></span>  
-<span data-ttu-id="7f44c-2152">比較される 2 つの構造体のうちの 2 番目の構造体。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2152">The second of the two structs to be compared.</span></span>
+<span data-ttu-id="50251-2151">struct1</span><span class="sxs-lookup"><span data-stu-id="50251-2151">struct1</span></span>  
+<span data-ttu-id="50251-2152">比較される 2 つの構造体のうちの 2 番目の構造体。</span><span class="sxs-lookup"><span data-stu-id="50251-2152">The second of the two structs to be compared.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2153">struct2</span><span class="sxs-lookup"><span data-stu-id="7f44c-2153">struct2</span></span>  
-<span data-ttu-id="7f44c-2154">比較される 2 つの構造体のうちの 2 番目の構造体。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2154">The second of the two structs to be compared.</span></span>
+<span data-ttu-id="50251-2153">struct2</span><span class="sxs-lookup"><span data-stu-id="50251-2153">struct2</span></span>  
+<span data-ttu-id="50251-2154">比較される 2 つの構造体のうちの 2 番目の構造体。</span><span class="sxs-lookup"><span data-stu-id="50251-2154">The second of the two structs to be compared.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2155">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2155">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2155">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2155">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2156">構造体が等しい場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2156">true if the structs are equal; otherwise, false.</span></span>
+<span data-ttu-id="50251-2156">構造体が等しい場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="50251-2156">true if the structs are equal; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2157">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2157">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2157">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2157">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2158">同じ数のフィールドを持ち、フィールド名が同じで、各フィールドが同じ型で同じ値を持つ場合、2 つの構造体は同等です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2158">Two structs are equal if they have the same number of fields, the field names are the same, and each field is the same type and has the same value.</span></span>
+<span data-ttu-id="50251-2158">同じ数のフィールドを持ち、フィールド名が同じで、各フィールドが同じ型で同じ値を持つ場合、2 つの構造体は同等です。</span><span class="sxs-lookup"><span data-stu-id="50251-2158">Two structs are equal if they have the same number of fields, the field names are the same, and each field is the same type and has the same value.</span></span>
 
-### <a name="method-merge"></a><span data-ttu-id="7f44c-2159">メソッド merge</span><span class="sxs-lookup"><span data-stu-id="7f44c-2159">Method merge</span></span>
+### <a name="method-merge"></a><span data-ttu-id="50251-2159">メソッド merge</span><span class="sxs-lookup"><span data-stu-id="50251-2159">Method merge</span></span>
 
-<span data-ttu-id="7f44c-2160">2 つの構造体を組み合わせ、新しい構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2160">Combines two structs to create a new struct.</span></span>
+<span data-ttu-id="50251-2160">2 つの構造体を組み合わせ、新しい構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-2160">Combines two structs to create a new struct.</span></span>
 
     public static Struct merge(Struct struct1, Struct struct2)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2161">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2161">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2161">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2161">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2162">struct1</span><span class="sxs-lookup"><span data-stu-id="7f44c-2162">struct1</span></span>  
-<span data-ttu-id="7f44c-2163">新しい構造体を作成するために最初の構造体の最後に追加される構造体。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2163">The struct that will be added to the end of the first struct to create a new struct.</span></span>
+<span data-ttu-id="50251-2162">struct1</span><span class="sxs-lookup"><span data-stu-id="50251-2162">struct1</span></span>  
+<span data-ttu-id="50251-2163">新しい構造体を作成するために最初の構造体の最後に追加される構造体。</span><span class="sxs-lookup"><span data-stu-id="50251-2163">The struct that will be added to the end of the first struct to create a new struct.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2164">struct2</span><span class="sxs-lookup"><span data-stu-id="7f44c-2164">struct2</span></span>  
-<span data-ttu-id="7f44c-2165">新しい構造体を作成するために最初の構造体の最後に追加される構造体。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2165">The struct that will be added to the end of the first struct to create a new struct.</span></span>
+<span data-ttu-id="50251-2164">struct2</span><span class="sxs-lookup"><span data-stu-id="50251-2164">struct2</span></span>  
+<span data-ttu-id="50251-2165">新しい構造体を作成するために最初の構造体の最後に追加される構造体。</span><span class="sxs-lookup"><span data-stu-id="50251-2165">The struct that will be added to the end of the first struct to create a new struct.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2166">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2166">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2166">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2166">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2167">新しい構造体。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2167">The new struct.</span></span>
+<span data-ttu-id="50251-2167">新しい構造体。</span><span class="sxs-lookup"><span data-stu-id="50251-2167">The new struct.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2168">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2168">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2168">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2168">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2169">struct2 は struct1 の最後に追加されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2169">struct2 is added to the end of struct1.</span></span> <span data-ttu-id="7f44c-2170">つまり、新しい構造体の項目の順序は、項目名のアルファベット順に並べられた struct1 のすべての項目と、項目名のアルファベット順に並べられた struct2 のすべての項目です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2170">This means that the order of the items in the new struct will be: all the items in struct1, arranged in alphabetical order of the item names, followed by all the items in struct2, arranged in alphabetical order of the item names.</span></span> <span data-ttu-id="7f44c-2171">両方の構造体に同じ名前を持つ品目が含まれている場合は、最初の構造体からの品目のみが含まれるようになります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2171">If both structs contain an item with the same name, only the item from the first struct will be included.</span></span>
+<span data-ttu-id="50251-2169">struct2 は struct1 の最後に追加されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2169">struct2 is added to the end of struct1.</span></span> <span data-ttu-id="50251-2170">つまり、新しい構造体の項目の順序は、項目名のアルファベット順に並べられた struct1 のすべての項目と、項目名のアルファベット順に並べられた struct2 のすべての項目です。</span><span class="sxs-lookup"><span data-stu-id="50251-2170">This means that the order of the items in the new struct will be: all the items in struct1, arranged in alphabetical order of the item names, followed by all the items in struct2, arranged in alphabetical order of the item names.</span></span> <span data-ttu-id="50251-2171">両方の構造体に同じ名前を持つ品目が含まれている場合は、最初の構造体からの品目のみが含まれるようになります。</span><span class="sxs-lookup"><span data-stu-id="50251-2171">If both structs contain an item with the same name, only the item from the first struct will be included.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-2172">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2172">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-2172">例</span><span class="sxs-lookup"><span data-stu-id="50251-2172">Examples</span></span>
 
-<span data-ttu-id="7f44c-2173">次の例では、person と address という 2 つの構造体を作成し、それらを allInfo という新しい構造体にマージします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2173">The following example creates two structs called person and address, and then merges them into a new struct called allInfo.</span></span>
+<span data-ttu-id="50251-2173">次の例では、person と address という 2 つの構造体を作成し、それらを allInfo という新しい構造体にマージします。</span><span class="sxs-lookup"><span data-stu-id="50251-2173">The following example creates two structs called person and address, and then merges them into a new struct called allInfo.</span></span>
 
     { 
         container packedStruct; 
@@ -4794,24 +4794,24 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-2174">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-2174">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-2174">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-2174">Method new</span></span>
 
-<span data-ttu-id="7f44c-2175">構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2175">Creates a struct.</span></span>
+<span data-ttu-id="50251-2175">構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-2175">Creates a struct.</span></span>
 
     public void new(VarArg specifier)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2176">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2176">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2176">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2176">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2177">指定子</span><span class="sxs-lookup"><span data-stu-id="7f44c-2177">specifier</span></span>  
-<span data-ttu-id="7f44c-2178">文字列として品目の名前の後には、品目のデータ型を指定した 1 つ以上の組み合わせ。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2178">One or more pairs that specify the data type of an item followed by the name of the item as a string.</span></span>
+<span data-ttu-id="50251-2177">指定子</span><span class="sxs-lookup"><span data-stu-id="50251-2177">specifier</span></span>  
+<span data-ttu-id="50251-2178">文字列として品目の名前の後には、品目のデータ型を指定した 1 つ以上の組み合わせ。</span><span class="sxs-lookup"><span data-stu-id="50251-2178">One or more pairs that specify the data type of an item followed by the name of the item as a string.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2179">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2179">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2179">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2179">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2180">項目のデータ型は、プリミティブ データ型の名前を使用するか、システム列挙を使用して指定できます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2180">The data type of the item can be specified using the name of a primitive data type or by using the system enum.</span></span> <span data-ttu-id="7f44c-2181">構造体内の項目は、文字列型、整数型、実数型、日付型、コンテナー型、レコード型、クラス型など、型システムの列挙型にあるデータ型のいずれでもかまいません。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2181">The items in a struct can be of any of the data types found in the Types system enum, including: string, integer, real, date, container, record, and class.</span></span> <span data-ttu-id="7f44c-2182">以下の例に説明されているように、Struct.definitionString メソッドを使用して新しい構造体を作成し、構造体のコピーを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2182">You can create a copy of a struct by using the Struct.definitionString method to create a new struct, as illustrated in the example below.</span></span> <span data-ttu-id="7f44c-2183">構造体を作成した後は、Struct.add メソッドを使用して新しい項目を追加し、Struct.value または Struct.valueIndex メソッドを使用して構造体に項目の値を設定することができます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2183">After you have created a struct, you can add new items using the Struct.add method and set the value of items in the struct by using the Struct.value or Struct.valueIndex method.</span></span>
+<span data-ttu-id="50251-2180">項目のデータ型は、プリミティブ データ型の名前を使用するか、システム列挙を使用して指定できます。</span><span class="sxs-lookup"><span data-stu-id="50251-2180">The data type of the item can be specified using the name of a primitive data type or by using the system enum.</span></span> <span data-ttu-id="50251-2181">構造体内の項目は、文字列型、整数型、実数型、日付型、コンテナー型、レコード型、クラス型など、型システムの列挙型にあるデータ型のいずれでもかまいません。</span><span class="sxs-lookup"><span data-stu-id="50251-2181">The items in a struct can be of any of the data types found in the Types system enum, including: string, integer, real, date, container, record, and class.</span></span> <span data-ttu-id="50251-2182">以下の例に説明されているように、Struct.definitionString メソッドを使用して新しい構造体を作成し、構造体のコピーを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="50251-2182">You can create a copy of a struct by using the Struct.definitionString method to create a new struct, as illustrated in the example below.</span></span> <span data-ttu-id="50251-2183">構造体を作成した後は、Struct.add メソッドを使用して新しい項目を追加し、Struct.value または Struct.valueIndex メソッドを使用して構造体に項目の値を設定することができます。</span><span class="sxs-lookup"><span data-stu-id="50251-2183">After you have created a struct, you can add new items using the Struct.add method and set the value of items in the struct by using the Struct.value or Struct.valueIndex method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="7f44c-2184">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2184">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="50251-2184">例</span><span class="sxs-lookup"><span data-stu-id="50251-2184">Examples</span></span>
 
-<span data-ttu-id="7f44c-2185">次の例では、同じ定義を持つ 2 つの構造体を作成し、2 つの値と追加の項目および値をその 1 つ (s1) に追加します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2185">The following example creates two structs with the same definition and then adds 2 values and an additional item and value to one of them (s1).</span></span> <span data-ttu-id="7f44c-2186">この構造体をコピーして、Struct.definitionString メソッドを使用することにより新しい構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2186">This struct is then copied to create a new struct by using the Struct.definitionString method.</span></span>
+<span data-ttu-id="50251-2185">次の例では、同じ定義を持つ 2 つの構造体を作成し、2 つの値と追加の項目および値をその 1 つ (s1) に追加します。</span><span class="sxs-lookup"><span data-stu-id="50251-2185">The following example creates two structs with the same definition and then adds 2 values and an additional item and value to one of them (s1).</span></span> <span data-ttu-id="50251-2186">この構造体をコピーして、Struct.definitionString メソッドを使用することにより新しい構造体を作成します。</span><span class="sxs-lookup"><span data-stu-id="50251-2186">This struct is then copied to create a new struct by using the Struct.definitionString method.</span></span>
 
     { 
         Struct s1, s2, s3; 
@@ -4834,588 +4834,588 @@ ms.locfileid: "1544189"
         pause; 
     }
 
-## <a name="class-surrogatefkreplacementhelper"></a><span data-ttu-id="7f44c-2187">クラス SurrogateFKReplacementHelper</span><span class="sxs-lookup"><span data-stu-id="7f44c-2187">Class SurrogateFKReplacementHelper</span></span>
+## <a name="class-surrogatefkreplacementhelper"></a><span data-ttu-id="50251-2187">クラス SurrogateFKReplacementHelper</span><span class="sxs-lookup"><span data-stu-id="50251-2187">Class SurrogateFKReplacementHelper</span></span>
     class SurrogateFKReplacementHelper extends Object
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-2188">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2188">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-2188">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2188">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-2189">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2189">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-2189">例</span><span class="sxs-lookup"><span data-stu-id="50251-2189">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-2190">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-2190">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-2190">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-2190">Methods</span></span>
 
-| <span data-ttu-id="7f44c-2191">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-2191">Method</span></span>                                                                                                                                                                                                             | <span data-ttu-id="7f44c-2192">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-2192">Description</span></span>                                     |
+| <span data-ttu-id="50251-2191">方法</span><span class="sxs-lookup"><span data-stu-id="50251-2191">Method</span></span>                                                                                                                                                                                                             | <span data-ttu-id="50251-2192">説明</span><span class="sxs-lookup"><span data-stu-id="50251-2192">Description</span></span>                                     |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <span data-ttu-id="7f44c-2193">public Map addDefaultRequiredJoins(QueryBuildDataSource foreignKeyQueryBuildDataSource, str replacementFieldGroupName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2193">public Map addDefaultRequiredJoins(QueryBuildDataSource foreignKeyQueryBuildDataSource, str replacementFieldGroupName)</span></span>                                                                                             |                                                 |
-| <span data-ttu-id="7f44c-2194">public Map addRequiredJoins(List requiredJoinsAsRelationPathList, QueryBuildDataSource foreignKeyQueryBuildDataSource, str replacementFieldGroupName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2194">public Map addRequiredJoins(List requiredJoinsAsRelationPathList, QueryBuildDataSource foreignKeyQueryBuildDataSource, str replacementFieldGroupName)</span></span>                                                              |                                                 |
-| <span data-ttu-id="7f44c-2195">public List displayBindings(str replacementFieldGroupName, \[boolean distinctBindingsOnly\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-2195">public List displayBindings(str replacementFieldGroupName, \[boolean distinctBindingsOnly\])</span></span>                                                                                                                       |                                                 |
-| <span data-ttu-id="7f44c-2196">public List displayValuesFromQueryRun(QueryRun queryRun, str replacementFieldGroupName, \[boolean isRootPrimaryKeyDataSource\], \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-2196">public List displayValuesFromQueryRun(QueryRun queryRun, str replacementFieldGroupName, \[boolean isRootPrimaryKeyDataSource\], \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span></span>                   |                                                 |
-| <span data-ttu-id="7f44c-2197">public List displayValuesFromRecID(Int64 recIDValue, str replacementFieldGroupName, \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-2197">public List displayValuesFromRecID(Int64 recIDValue, str replacementFieldGroupName, \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span></span>                                                               |                                                 |
-| <span data-ttu-id="7f44c-2198">public List displayValuesFromRootDS(QueryBuildDataSource rootQueryBuildDataSource, boolean isPrimaryKeyDataSource, str replacementFieldGroupName, \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-2198">public List displayValuesFromRootDS(QueryBuildDataSource rootQueryBuildDataSource, boolean isPrimaryKeyDataSource, str replacementFieldGroupName, \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span></span> |                                                 |
-| <span data-ttu-id="7f44c-2199">public FilterValue displayValue(Common resolvedCursor, FieldBinding displayBinding, \[boolean isRootPrimaryKeyDataSource\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-2199">public FilterValue displayValue(Common resolvedCursor, FieldBinding displayBinding, \[boolean isRootPrimaryKeyDataSource\])</span></span>                                                                                        |                                                 |
-| <span data-ttu-id="7f44c-2200">public str extendedDataType()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2200">public str extendedDataType()</span></span>                                                                                                                                                                                      |                                                 |
-| <span data-ttu-id="7f44c-2201">public Query generateResolveReferenceQuery(List requiredJoinsAsRelationPathList, List filterValuesAsFilterValueList)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2201">public Query generateResolveReferenceQuery(List requiredJoinsAsRelationPathList, List filterValuesAsFilterValueList)</span></span>                                                                                               |                                                 |
-| <span data-ttu-id="7f44c-2202">public boolean isResolvedReferenceAmbiguous(Query query)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2202">public boolean isResolvedReferenceAmbiguous(Query query)</span></span>                                                                                                                                                           |                                                 |
-| <span data-ttu-id="7f44c-2203">public str primaryKeyTableName()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2203">public str primaryKeyTableName()</span></span>                                                                                                                                                                                   |                                                 |
-| <span data-ttu-id="7f44c-2204">public Map queryBuildDataSourceBindingsForQuery(Query query, str replacementFieldGroupName, \[boolean isRootPrimaryKeyDataSource\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-2204">public Map queryBuildDataSourceBindingsForQuery(Query query, str replacementFieldGroupName, \[boolean isRootPrimaryKeyDataSource\])</span></span>                                                                                |                                                 |
-| <span data-ttu-id="7f44c-2205">public Map queryBuildDataSourceBindingsForRootDS(QueryBuildDataSource rootQueryBuildDataSource, boolean isPrimaryKeyDataSource, str replacementFieldGroupName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2205">public Map queryBuildDataSourceBindingsForRootDS(QueryBuildDataSource rootQueryBuildDataSource, boolean isPrimaryKeyDataSource, str replacementFieldGroupName)</span></span>                                                     |                                                 |
-| <span data-ttu-id="7f44c-2206">public Common resolveReference(Query query, \[boolean ignoreAmbiguousReference\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-2206">public Common resolveReference(Query query, \[boolean ignoreAmbiguousReference\])</span></span>                                                                                                                                  |                                                 |
-| <span data-ttu-id="7f44c-2207">public FieldBinding surrogateForeignKeyFieldBinding()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2207">public FieldBinding surrogateForeignKeyFieldBinding()</span></span>                                                                                                                                                              |                                                 |
-| <span data-ttu-id="7f44c-2208">::public static SurrogateFKReplacementHelper construct(FieldBinding surrogateForeignKeyBinding)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2208">::public static SurrogateFKReplacementHelper construct(FieldBinding surrogateForeignKeyBinding)</span></span>                                                                                                                    |                                                 |
-| <span data-ttu-id="7f44c-2209">::public static SurrogateFKReplacementHelper constructForEDT(str edtName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2209">::public static SurrogateFKReplacementHelper constructForEDT(str edtName)</span></span>                                                                                                                                          |                                                 |
-| <span data-ttu-id="7f44c-2210">::public static SurrogateFKReplacementHelper constructForPKTable(str pkTableName)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2210">::public static SurrogateFKReplacementHelper constructForPKTable(str pkTableName)</span></span>                                                                                                                                  |                                                 |
-| <span data-ttu-id="7f44c-2211">::public static str defaultPrimaryKeyQueryDataSourceName()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2211">::public static str defaultPrimaryKeyQueryDataSourceName()</span></span>                                                                                                                                                         |                                                 |
-| <span data-ttu-id="7f44c-2212">::public static str DEPRECATED\_WorkflowCaption(str tableName, str fieldName, Int64 recIDValue)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2212">::public static str DEPRECATED\_WorkflowCaption(str tableName, str fieldName, Int64 recIDValue)</span></span>                                                                                                                    |                                                 |
-| <span data-ttu-id="7f44c-2213">::public static str implicitReplacementFieldGroupName()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2213">::public static str implicitReplacementFieldGroupName()</span></span>                                                                                                                                                            |                                                 |
-| <span data-ttu-id="7f44c-2214">private void new(FieldBinding surrogateForeignKeyBinding)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2214">private void new(FieldBinding surrogateForeignKeyBinding)</span></span>                                                                                                                                                          | <span data-ttu-id="7f44c-2215">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2215">Initializes a new instance of the Object class.</span></span> |
+| <span data-ttu-id="50251-2193">public Map addDefaultRequiredJoins(QueryBuildDataSource foreignKeyQueryBuildDataSource, str replacementFieldGroupName)</span><span class="sxs-lookup"><span data-stu-id="50251-2193">public Map addDefaultRequiredJoins(QueryBuildDataSource foreignKeyQueryBuildDataSource, str replacementFieldGroupName)</span></span>                                                                                             |                                                 |
+| <span data-ttu-id="50251-2194">public Map addRequiredJoins(List requiredJoinsAsRelationPathList, QueryBuildDataSource foreignKeyQueryBuildDataSource, str replacementFieldGroupName)</span><span class="sxs-lookup"><span data-stu-id="50251-2194">public Map addRequiredJoins(List requiredJoinsAsRelationPathList, QueryBuildDataSource foreignKeyQueryBuildDataSource, str replacementFieldGroupName)</span></span>                                                              |                                                 |
+| <span data-ttu-id="50251-2195">public List displayBindings(str replacementFieldGroupName, \[boolean distinctBindingsOnly\])</span><span class="sxs-lookup"><span data-stu-id="50251-2195">public List displayBindings(str replacementFieldGroupName, \[boolean distinctBindingsOnly\])</span></span>                                                                                                                       |                                                 |
+| <span data-ttu-id="50251-2196">public List displayValuesFromQueryRun(QueryRun queryRun, str replacementFieldGroupName, \[boolean isRootPrimaryKeyDataSource\], \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span><span class="sxs-lookup"><span data-stu-id="50251-2196">public List displayValuesFromQueryRun(QueryRun queryRun, str replacementFieldGroupName, \[boolean isRootPrimaryKeyDataSource\], \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span></span>                   |                                                 |
+| <span data-ttu-id="50251-2197">public List displayValuesFromRecID(Int64 recIDValue, str replacementFieldGroupName, \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span><span class="sxs-lookup"><span data-stu-id="50251-2197">public List displayValuesFromRecID(Int64 recIDValue, str replacementFieldGroupName, \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span></span>                                                               |                                                 |
+| <span data-ttu-id="50251-2198">public List displayValuesFromRootDS(QueryBuildDataSource rootQueryBuildDataSource, boolean isPrimaryKeyDataSource, str replacementFieldGroupName, \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span><span class="sxs-lookup"><span data-stu-id="50251-2198">public List displayValuesFromRootDS(QueryBuildDataSource rootQueryBuildDataSource, boolean isPrimaryKeyDataSource, str replacementFieldGroupName, \[boolean trimSecuredValues\], \[boolean distinctBindingsOnly\])</span></span> |                                                 |
+| <span data-ttu-id="50251-2199">public FilterValue displayValue(Common resolvedCursor, FieldBinding displayBinding, \[boolean isRootPrimaryKeyDataSource\])</span><span class="sxs-lookup"><span data-stu-id="50251-2199">public FilterValue displayValue(Common resolvedCursor, FieldBinding displayBinding, \[boolean isRootPrimaryKeyDataSource\])</span></span>                                                                                        |                                                 |
+| <span data-ttu-id="50251-2200">public str extendedDataType()</span><span class="sxs-lookup"><span data-stu-id="50251-2200">public str extendedDataType()</span></span>                                                                                                                                                                                      |                                                 |
+| <span data-ttu-id="50251-2201">public Query generateResolveReferenceQuery(List requiredJoinsAsRelationPathList, List filterValuesAsFilterValueList)</span><span class="sxs-lookup"><span data-stu-id="50251-2201">public Query generateResolveReferenceQuery(List requiredJoinsAsRelationPathList, List filterValuesAsFilterValueList)</span></span>                                                                                               |                                                 |
+| <span data-ttu-id="50251-2202">public boolean isResolvedReferenceAmbiguous(Query query)</span><span class="sxs-lookup"><span data-stu-id="50251-2202">public boolean isResolvedReferenceAmbiguous(Query query)</span></span>                                                                                                                                                           |                                                 |
+| <span data-ttu-id="50251-2203">public str primaryKeyTableName()</span><span class="sxs-lookup"><span data-stu-id="50251-2203">public str primaryKeyTableName()</span></span>                                                                                                                                                                                   |                                                 |
+| <span data-ttu-id="50251-2204">public Map queryBuildDataSourceBindingsForQuery(Query query, str replacementFieldGroupName, \[boolean isRootPrimaryKeyDataSource\])</span><span class="sxs-lookup"><span data-stu-id="50251-2204">public Map queryBuildDataSourceBindingsForQuery(Query query, str replacementFieldGroupName, \[boolean isRootPrimaryKeyDataSource\])</span></span>                                                                                |                                                 |
+| <span data-ttu-id="50251-2205">public Map queryBuildDataSourceBindingsForRootDS(QueryBuildDataSource rootQueryBuildDataSource, boolean isPrimaryKeyDataSource, str replacementFieldGroupName)</span><span class="sxs-lookup"><span data-stu-id="50251-2205">public Map queryBuildDataSourceBindingsForRootDS(QueryBuildDataSource rootQueryBuildDataSource, boolean isPrimaryKeyDataSource, str replacementFieldGroupName)</span></span>                                                     |                                                 |
+| <span data-ttu-id="50251-2206">public Common resolveReference(Query query, \[boolean ignoreAmbiguousReference\])</span><span class="sxs-lookup"><span data-stu-id="50251-2206">public Common resolveReference(Query query, \[boolean ignoreAmbiguousReference\])</span></span>                                                                                                                                  |                                                 |
+| <span data-ttu-id="50251-2207">public FieldBinding surrogateForeignKeyFieldBinding()</span><span class="sxs-lookup"><span data-stu-id="50251-2207">public FieldBinding surrogateForeignKeyFieldBinding()</span></span>                                                                                                                                                              |                                                 |
+| <span data-ttu-id="50251-2208">::public static SurrogateFKReplacementHelper construct(FieldBinding surrogateForeignKeyBinding)</span><span class="sxs-lookup"><span data-stu-id="50251-2208">::public static SurrogateFKReplacementHelper construct(FieldBinding surrogateForeignKeyBinding)</span></span>                                                                                                                    |                                                 |
+| <span data-ttu-id="50251-2209">::public static SurrogateFKReplacementHelper constructForEDT(str edtName)</span><span class="sxs-lookup"><span data-stu-id="50251-2209">::public static SurrogateFKReplacementHelper constructForEDT(str edtName)</span></span>                                                                                                                                          |                                                 |
+| <span data-ttu-id="50251-2210">::public static SurrogateFKReplacementHelper constructForPKTable(str pkTableName)</span><span class="sxs-lookup"><span data-stu-id="50251-2210">::public static SurrogateFKReplacementHelper constructForPKTable(str pkTableName)</span></span>                                                                                                                                  |                                                 |
+| <span data-ttu-id="50251-2211">::public static str defaultPrimaryKeyQueryDataSourceName()</span><span class="sxs-lookup"><span data-stu-id="50251-2211">::public static str defaultPrimaryKeyQueryDataSourceName()</span></span>                                                                                                                                                         |                                                 |
+| <span data-ttu-id="50251-2212">::public static str DEPRECATED\_WorkflowCaption(str tableName, str fieldName, Int64 recIDValue)</span><span class="sxs-lookup"><span data-stu-id="50251-2212">::public static str DEPRECATED\_WorkflowCaption(str tableName, str fieldName, Int64 recIDValue)</span></span>                                                                                                                    |                                                 |
+| <span data-ttu-id="50251-2213">::public static str implicitReplacementFieldGroupName()</span><span class="sxs-lookup"><span data-stu-id="50251-2213">::public static str implicitReplacementFieldGroupName()</span></span>                                                                                                                                                            |                                                 |
+| <span data-ttu-id="50251-2214">private void new(FieldBinding surrogateForeignKeyBinding)</span><span class="sxs-lookup"><span data-stu-id="50251-2214">private void new(FieldBinding surrogateForeignKeyBinding)</span></span>                                                                                                                                                          | <span data-ttu-id="50251-2215">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-2215">Initializes a new instance of the Object class.</span></span> |
 
-### <a name="method-adddefaultrequiredjoins"></a><span data-ttu-id="7f44c-2216">メソッド addDefaultRequiredJoins</span><span class="sxs-lookup"><span data-stu-id="7f44c-2216">Method addDefaultRequiredJoins</span></span>
+### <a name="method-adddefaultrequiredjoins"></a><span data-ttu-id="50251-2216">メソッド addDefaultRequiredJoins</span><span class="sxs-lookup"><span data-stu-id="50251-2216">Method addDefaultRequiredJoins</span></span>
 
     public Map addDefaultRequiredJoins(QueryBuildDataSource foreignKeyQueryBuildDataSource, str replacementFieldGroupName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2217">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2217">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2217">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2217">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2218">foreignKeyQueryBuildDataSource</span><span class="sxs-lookup"><span data-stu-id="7f44c-2218">foreignKeyQueryBuildDataSource</span></span>  
+<span data-ttu-id="50251-2218">foreignKeyQueryBuildDataSource</span><span class="sxs-lookup"><span data-stu-id="50251-2218">foreignKeyQueryBuildDataSource</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2219">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2219">replacementFieldGroupName</span></span>  
+<span data-ttu-id="50251-2219">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="50251-2219">replacementFieldGroupName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2220">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2220">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2220">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2220">Return Value</span></span>
 
-### <a name="method-addrequiredjoins"></a><span data-ttu-id="7f44c-2221">メソッド addRequiredJoins</span><span class="sxs-lookup"><span data-stu-id="7f44c-2221">Method addRequiredJoins</span></span>
+### <a name="method-addrequiredjoins"></a><span data-ttu-id="50251-2221">メソッド addRequiredJoins</span><span class="sxs-lookup"><span data-stu-id="50251-2221">Method addRequiredJoins</span></span>
 
     public Map addRequiredJoins(List requiredJoinsAsRelationPathList, QueryBuildDataSource foreignKeyQueryBuildDataSource, str replacementFieldGroupName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2222">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2222">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2222">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2222">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2223">requiredJoinsAsRelationPathList</span><span class="sxs-lookup"><span data-stu-id="7f44c-2223">requiredJoinsAsRelationPathList</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-2224">foreignKeyQueryBuildDataSource</span><span class="sxs-lookup"><span data-stu-id="7f44c-2224">foreignKeyQueryBuildDataSource</span></span>  
+<span data-ttu-id="50251-2223">requiredJoinsAsRelationPathList</span><span class="sxs-lookup"><span data-stu-id="50251-2223">requiredJoinsAsRelationPathList</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2225">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2225">replacementFieldGroupName</span></span>  
+<span data-ttu-id="50251-2224">foreignKeyQueryBuildDataSource</span><span class="sxs-lookup"><span data-stu-id="50251-2224">foreignKeyQueryBuildDataSource</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2226">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2226">Return Value</span></span>
+<!-- -->
 
-### <a name="method-displaybindings"></a><span data-ttu-id="7f44c-2227">メソッド displayBindings</span><span class="sxs-lookup"><span data-stu-id="7f44c-2227">Method displayBindings</span></span>
+<span data-ttu-id="50251-2225">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="50251-2225">replacementFieldGroupName</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-2226">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2226">Return Value</span></span>
+
+### <a name="method-displaybindings"></a><span data-ttu-id="50251-2227">メソッド displayBindings</span><span class="sxs-lookup"><span data-stu-id="50251-2227">Method displayBindings</span></span>
 
     public List displayBindings(str replacementFieldGroupName, [boolean distinctBindingsOnly])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2228">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2228">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2228">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2228">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2229">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2229">replacementFieldGroupName</span></span>  
+<span data-ttu-id="50251-2229">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="50251-2229">replacementFieldGroupName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2230">distinctBindingsOnly</span><span class="sxs-lookup"><span data-stu-id="7f44c-2230">distinctBindingsOnly</span></span>  
+<span data-ttu-id="50251-2230">distinctBindingsOnly</span><span class="sxs-lookup"><span data-stu-id="50251-2230">distinctBindingsOnly</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2231">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2231">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2231">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2231">Return Value</span></span>
 
-### <a name="method-displayvaluesfromqueryrun"></a><span data-ttu-id="7f44c-2232">メソッド displayValuesFromQueryRun</span><span class="sxs-lookup"><span data-stu-id="7f44c-2232">Method displayValuesFromQueryRun</span></span>
+### <a name="method-displayvaluesfromqueryrun"></a><span data-ttu-id="50251-2232">メソッド displayValuesFromQueryRun</span><span class="sxs-lookup"><span data-stu-id="50251-2232">Method displayValuesFromQueryRun</span></span>
 
     public List displayValuesFromQueryRun(QueryRun queryRun, str replacementFieldGroupName, [boolean isRootPrimaryKeyDataSource], [boolean trimSecuredValues], [boolean distinctBindingsOnly])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2233">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2233">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2233">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2233">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2234">queryRun</span><span class="sxs-lookup"><span data-stu-id="7f44c-2234">queryRun</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-2235">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2235">replacementFieldGroupName</span></span>  
+<span data-ttu-id="50251-2234">queryRun</span><span class="sxs-lookup"><span data-stu-id="50251-2234">queryRun</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2236">isRootPrimaryKeyDataSource</span><span class="sxs-lookup"><span data-stu-id="7f44c-2236">isRootPrimaryKeyDataSource</span></span>  
+<span data-ttu-id="50251-2235">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="50251-2235">replacementFieldGroupName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2237">trimSecuredValues</span><span class="sxs-lookup"><span data-stu-id="7f44c-2237">trimSecuredValues</span></span>  
+<span data-ttu-id="50251-2236">isRootPrimaryKeyDataSource</span><span class="sxs-lookup"><span data-stu-id="50251-2236">isRootPrimaryKeyDataSource</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2238">distinctBindingsOnly</span><span class="sxs-lookup"><span data-stu-id="7f44c-2238">distinctBindingsOnly</span></span>  
+<span data-ttu-id="50251-2237">trimSecuredValues</span><span class="sxs-lookup"><span data-stu-id="50251-2237">trimSecuredValues</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2239">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2239">Return Value</span></span>
+<!-- -->
 
-### <a name="method-displayvaluesfromrecid"></a><span data-ttu-id="7f44c-2240">メソッド displayValuesFromRecID</span><span class="sxs-lookup"><span data-stu-id="7f44c-2240">Method displayValuesFromRecID</span></span>
+<span data-ttu-id="50251-2238">distinctBindingsOnly</span><span class="sxs-lookup"><span data-stu-id="50251-2238">distinctBindingsOnly</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-2239">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2239">Return Value</span></span>
+
+### <a name="method-displayvaluesfromrecid"></a><span data-ttu-id="50251-2240">メソッド displayValuesFromRecID</span><span class="sxs-lookup"><span data-stu-id="50251-2240">Method displayValuesFromRecID</span></span>
 
     public List displayValuesFromRecID(Int64 recIDValue, str replacementFieldGroupName, [boolean trimSecuredValues], [boolean distinctBindingsOnly])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2241">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2241">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2241">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2241">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2242">recIDValue</span><span class="sxs-lookup"><span data-stu-id="7f44c-2242">recIDValue</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-2243">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2243">replacementFieldGroupName</span></span>  
+<span data-ttu-id="50251-2242">recIDValue</span><span class="sxs-lookup"><span data-stu-id="50251-2242">recIDValue</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2244">trimSecuredValues</span><span class="sxs-lookup"><span data-stu-id="7f44c-2244">trimSecuredValues</span></span>  
+<span data-ttu-id="50251-2243">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="50251-2243">replacementFieldGroupName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2245">distinctBindingsOnly</span><span class="sxs-lookup"><span data-stu-id="7f44c-2245">distinctBindingsOnly</span></span>  
+<span data-ttu-id="50251-2244">trimSecuredValues</span><span class="sxs-lookup"><span data-stu-id="50251-2244">trimSecuredValues</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2246">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2246">Return Value</span></span>
+<!-- -->
 
-### <a name="method-displayvaluesfromrootds"></a><span data-ttu-id="7f44c-2247">メソッド displayValuesFromRootDS</span><span class="sxs-lookup"><span data-stu-id="7f44c-2247">Method displayValuesFromRootDS</span></span>
+<span data-ttu-id="50251-2245">distinctBindingsOnly</span><span class="sxs-lookup"><span data-stu-id="50251-2245">distinctBindingsOnly</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-2246">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2246">Return Value</span></span>
+
+### <a name="method-displayvaluesfromrootds"></a><span data-ttu-id="50251-2247">メソッド displayValuesFromRootDS</span><span class="sxs-lookup"><span data-stu-id="50251-2247">Method displayValuesFromRootDS</span></span>
 
     public List displayValuesFromRootDS(QueryBuildDataSource rootQueryBuildDataSource, boolean isPrimaryKeyDataSource, str replacementFieldGroupName, [boolean trimSecuredValues], [boolean distinctBindingsOnly])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2248">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2248">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2248">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2248">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2249">rootQueryBuildDataSource</span><span class="sxs-lookup"><span data-stu-id="7f44c-2249">rootQueryBuildDataSource</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-2250">isPrimaryKeyDataSource</span><span class="sxs-lookup"><span data-stu-id="7f44c-2250">isPrimaryKeyDataSource</span></span>  
+<span data-ttu-id="50251-2249">rootQueryBuildDataSource</span><span class="sxs-lookup"><span data-stu-id="50251-2249">rootQueryBuildDataSource</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2251">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2251">replacementFieldGroupName</span></span>  
+<span data-ttu-id="50251-2250">isPrimaryKeyDataSource</span><span class="sxs-lookup"><span data-stu-id="50251-2250">isPrimaryKeyDataSource</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2252">trimSecuredValues</span><span class="sxs-lookup"><span data-stu-id="7f44c-2252">trimSecuredValues</span></span>  
+<span data-ttu-id="50251-2251">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="50251-2251">replacementFieldGroupName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2253">distinctBindingsOnly</span><span class="sxs-lookup"><span data-stu-id="7f44c-2253">distinctBindingsOnly</span></span>  
+<span data-ttu-id="50251-2252">trimSecuredValues</span><span class="sxs-lookup"><span data-stu-id="50251-2252">trimSecuredValues</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2254">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2254">Return Value</span></span>
+<!-- -->
 
-### <a name="method-displayvalue"></a><span data-ttu-id="7f44c-2255">メソッド displayValue</span><span class="sxs-lookup"><span data-stu-id="7f44c-2255">Method displayValue</span></span>
+<span data-ttu-id="50251-2253">distinctBindingsOnly</span><span class="sxs-lookup"><span data-stu-id="50251-2253">distinctBindingsOnly</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-2254">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2254">Return Value</span></span>
+
+### <a name="method-displayvalue"></a><span data-ttu-id="50251-2255">メソッド displayValue</span><span class="sxs-lookup"><span data-stu-id="50251-2255">Method displayValue</span></span>
 
     public FilterValue displayValue(Common resolvedCursor, FieldBinding displayBinding, [boolean isRootPrimaryKeyDataSource])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2256">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2256">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2256">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2256">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2257">resolvedCursor</span><span class="sxs-lookup"><span data-stu-id="7f44c-2257">resolvedCursor</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-2258">displayBinding</span><span class="sxs-lookup"><span data-stu-id="7f44c-2258">displayBinding</span></span>  
+<span data-ttu-id="50251-2257">resolvedCursor</span><span class="sxs-lookup"><span data-stu-id="50251-2257">resolvedCursor</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2259">isRootPrimaryKeyDataSource</span><span class="sxs-lookup"><span data-stu-id="7f44c-2259">isRootPrimaryKeyDataSource</span></span>  
+<span data-ttu-id="50251-2258">displayBinding</span><span class="sxs-lookup"><span data-stu-id="50251-2258">displayBinding</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2260">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2260">Return Value</span></span>
+<!-- -->
 
-### <a name="method-extendeddatatype"></a><span data-ttu-id="7f44c-2261">メソッド extendedDataType</span><span class="sxs-lookup"><span data-stu-id="7f44c-2261">Method extendedDataType</span></span>
+<span data-ttu-id="50251-2259">isRootPrimaryKeyDataSource</span><span class="sxs-lookup"><span data-stu-id="50251-2259">isRootPrimaryKeyDataSource</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-2260">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2260">Return Value</span></span>
+
+### <a name="method-extendeddatatype"></a><span data-ttu-id="50251-2261">メソッド extendedDataType</span><span class="sxs-lookup"><span data-stu-id="50251-2261">Method extendedDataType</span></span>
 
     public str extendedDataType()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2262">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2262">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2262">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2262">Return Value</span></span>
 
-### <a name="method-generateresolvereferencequery"></a><span data-ttu-id="7f44c-2263">メソッド generateResolveReferenceQuery</span><span class="sxs-lookup"><span data-stu-id="7f44c-2263">Method generateResolveReferenceQuery</span></span>
+### <a name="method-generateresolvereferencequery"></a><span data-ttu-id="50251-2263">メソッド generateResolveReferenceQuery</span><span class="sxs-lookup"><span data-stu-id="50251-2263">Method generateResolveReferenceQuery</span></span>
 
     public Query generateResolveReferenceQuery(List requiredJoinsAsRelationPathList, List filterValuesAsFilterValueList)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2264">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2264">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2264">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2264">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2265">requiredJoinsAsRelationPathList</span><span class="sxs-lookup"><span data-stu-id="7f44c-2265">requiredJoinsAsRelationPathList</span></span>  
+<span data-ttu-id="50251-2265">requiredJoinsAsRelationPathList</span><span class="sxs-lookup"><span data-stu-id="50251-2265">requiredJoinsAsRelationPathList</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2266">filterValuesAsFilterValueList</span><span class="sxs-lookup"><span data-stu-id="7f44c-2266">filterValuesAsFilterValueList</span></span>  
+<span data-ttu-id="50251-2266">filterValuesAsFilterValueList</span><span class="sxs-lookup"><span data-stu-id="50251-2266">filterValuesAsFilterValueList</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2267">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2267">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2267">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2267">Return Value</span></span>
 
-### <a name="method-isresolvedreferenceambiguous"></a><span data-ttu-id="7f44c-2268">メソッド isResolvedReferenceAmbiguous</span><span class="sxs-lookup"><span data-stu-id="7f44c-2268">Method isResolvedReferenceAmbiguous</span></span>
+### <a name="method-isresolvedreferenceambiguous"></a><span data-ttu-id="50251-2268">メソッド isResolvedReferenceAmbiguous</span><span class="sxs-lookup"><span data-stu-id="50251-2268">Method isResolvedReferenceAmbiguous</span></span>
 
     public boolean isResolvedReferenceAmbiguous(Query query)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2269">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2269">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2269">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2269">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2270">クエリ</span><span class="sxs-lookup"><span data-stu-id="7f44c-2270">query</span></span>  
+<span data-ttu-id="50251-2270">クエリ</span><span class="sxs-lookup"><span data-stu-id="50251-2270">query</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2271">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2271">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2271">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2271">Return Value</span></span>
 
-### <a name="method-primarykeytablename"></a><span data-ttu-id="7f44c-2272">メソッド primaryKeyTableName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2272">Method primaryKeyTableName</span></span>
+### <a name="method-primarykeytablename"></a><span data-ttu-id="50251-2272">メソッド primaryKeyTableName</span><span class="sxs-lookup"><span data-stu-id="50251-2272">Method primaryKeyTableName</span></span>
 
     public str primaryKeyTableName()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2273">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2273">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2273">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2273">Return Value</span></span>
 
-### <a name="method-querybuilddatasourcebindingsforquery"></a><span data-ttu-id="7f44c-2274">メソッド queryBuildDataSourceBindingsForQuery</span><span class="sxs-lookup"><span data-stu-id="7f44c-2274">Method queryBuildDataSourceBindingsForQuery</span></span>
+### <a name="method-querybuilddatasourcebindingsforquery"></a><span data-ttu-id="50251-2274">メソッド queryBuildDataSourceBindingsForQuery</span><span class="sxs-lookup"><span data-stu-id="50251-2274">Method queryBuildDataSourceBindingsForQuery</span></span>
 
     public Map queryBuildDataSourceBindingsForQuery(Query query, str replacementFieldGroupName, [boolean isRootPrimaryKeyDataSource])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2275">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2275">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2275">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2275">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2276">クエリ</span><span class="sxs-lookup"><span data-stu-id="7f44c-2276">query</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-2277">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2277">replacementFieldGroupName</span></span>  
+<span data-ttu-id="50251-2276">クエリ</span><span class="sxs-lookup"><span data-stu-id="50251-2276">query</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2278">isRootPrimaryKeyDataSource</span><span class="sxs-lookup"><span data-stu-id="7f44c-2278">isRootPrimaryKeyDataSource</span></span>  
+<span data-ttu-id="50251-2277">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="50251-2277">replacementFieldGroupName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2279">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2279">Return Value</span></span>
+<!-- -->
 
-### <a name="method-querybuilddatasourcebindingsforrootds"></a><span data-ttu-id="7f44c-2280">メソッド queryBuildDataSourceBindingsForRootDS</span><span class="sxs-lookup"><span data-stu-id="7f44c-2280">Method queryBuildDataSourceBindingsForRootDS</span></span>
+<span data-ttu-id="50251-2278">isRootPrimaryKeyDataSource</span><span class="sxs-lookup"><span data-stu-id="50251-2278">isRootPrimaryKeyDataSource</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-2279">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2279">Return Value</span></span>
+
+### <a name="method-querybuilddatasourcebindingsforrootds"></a><span data-ttu-id="50251-2280">メソッド queryBuildDataSourceBindingsForRootDS</span><span class="sxs-lookup"><span data-stu-id="50251-2280">Method queryBuildDataSourceBindingsForRootDS</span></span>
 
     public Map queryBuildDataSourceBindingsForRootDS(QueryBuildDataSource rootQueryBuildDataSource, boolean isPrimaryKeyDataSource, str replacementFieldGroupName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2281">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2281">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2281">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2281">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2282">rootQueryBuildDataSource</span><span class="sxs-lookup"><span data-stu-id="7f44c-2282">rootQueryBuildDataSource</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-2283">isPrimaryKeyDataSource</span><span class="sxs-lookup"><span data-stu-id="7f44c-2283">isPrimaryKeyDataSource</span></span>  
+<span data-ttu-id="50251-2282">rootQueryBuildDataSource</span><span class="sxs-lookup"><span data-stu-id="50251-2282">rootQueryBuildDataSource</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2284">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2284">replacementFieldGroupName</span></span>  
+<span data-ttu-id="50251-2283">isPrimaryKeyDataSource</span><span class="sxs-lookup"><span data-stu-id="50251-2283">isPrimaryKeyDataSource</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2285">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2285">Return Value</span></span>
+<!-- -->
 
-### <a name="method-resolvereference"></a><span data-ttu-id="7f44c-2286">メソッド resolveReference</span><span class="sxs-lookup"><span data-stu-id="7f44c-2286">Method resolveReference</span></span>
+<span data-ttu-id="50251-2284">replacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="50251-2284">replacementFieldGroupName</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-2285">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2285">Return Value</span></span>
+
+### <a name="method-resolvereference"></a><span data-ttu-id="50251-2286">メソッド resolveReference</span><span class="sxs-lookup"><span data-stu-id="50251-2286">Method resolveReference</span></span>
 
     public Common resolveReference(Query query, [boolean ignoreAmbiguousReference])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2287">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2287">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2287">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2287">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2288">クエリ</span><span class="sxs-lookup"><span data-stu-id="7f44c-2288">query</span></span>  
+<span data-ttu-id="50251-2288">クエリ</span><span class="sxs-lookup"><span data-stu-id="50251-2288">query</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2289">ignoreAmbiguousReference</span><span class="sxs-lookup"><span data-stu-id="7f44c-2289">ignoreAmbiguousReference</span></span>  
+<span data-ttu-id="50251-2289">ignoreAmbiguousReference</span><span class="sxs-lookup"><span data-stu-id="50251-2289">ignoreAmbiguousReference</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2290">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2290">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2290">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2290">Return Value</span></span>
 
-### <a name="method-surrogateforeignkeyfieldbinding"></a><span data-ttu-id="7f44c-2291">メソッド surrogateForeignKeyFieldBinding</span><span class="sxs-lookup"><span data-stu-id="7f44c-2291">Method surrogateForeignKeyFieldBinding</span></span>
+### <a name="method-surrogateforeignkeyfieldbinding"></a><span data-ttu-id="50251-2291">メソッド surrogateForeignKeyFieldBinding</span><span class="sxs-lookup"><span data-stu-id="50251-2291">Method surrogateForeignKeyFieldBinding</span></span>
 
     public FieldBinding surrogateForeignKeyFieldBinding()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2292">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2292">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2292">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2292">Return Value</span></span>
 
-### <a name="method-construct"></a><span data-ttu-id="7f44c-2293">メソッド construct</span><span class="sxs-lookup"><span data-stu-id="7f44c-2293">Method construct</span></span>
+### <a name="method-construct"></a><span data-ttu-id="50251-2293">メソッド construct</span><span class="sxs-lookup"><span data-stu-id="50251-2293">Method construct</span></span>
 
     public static SurrogateFKReplacementHelper construct(FieldBinding surrogateForeignKeyBinding)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2294">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2294">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2294">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2294">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2295">surrogateForeignKeyBinding</span><span class="sxs-lookup"><span data-stu-id="7f44c-2295">surrogateForeignKeyBinding</span></span>  
+<span data-ttu-id="50251-2295">surrogateForeignKeyBinding</span><span class="sxs-lookup"><span data-stu-id="50251-2295">surrogateForeignKeyBinding</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2296">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2296">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2296">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2296">Return Value</span></span>
 
-### <a name="method-constructforedt"></a><span data-ttu-id="7f44c-2297">メソッド constructForEDT</span><span class="sxs-lookup"><span data-stu-id="7f44c-2297">Method constructForEDT</span></span>
+### <a name="method-constructforedt"></a><span data-ttu-id="50251-2297">メソッド constructForEDT</span><span class="sxs-lookup"><span data-stu-id="50251-2297">Method constructForEDT</span></span>
 
     public static SurrogateFKReplacementHelper constructForEDT(str edtName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2298">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2298">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2298">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2298">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2299">edtName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2299">edtName</span></span>  
+<span data-ttu-id="50251-2299">edtName</span><span class="sxs-lookup"><span data-stu-id="50251-2299">edtName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2300">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2300">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2300">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2300">Return Value</span></span>
 
-### <a name="method-constructforpktable"></a><span data-ttu-id="7f44c-2301">メソッド constructForPKTable</span><span class="sxs-lookup"><span data-stu-id="7f44c-2301">Method constructForPKTable</span></span>
+### <a name="method-constructforpktable"></a><span data-ttu-id="50251-2301">メソッド constructForPKTable</span><span class="sxs-lookup"><span data-stu-id="50251-2301">Method constructForPKTable</span></span>
 
     public static SurrogateFKReplacementHelper constructForPKTable(str pkTableName)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2302">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2302">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2302">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2302">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2303">pkTableName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2303">pkTableName</span></span>  
+<span data-ttu-id="50251-2303">pkTableName</span><span class="sxs-lookup"><span data-stu-id="50251-2303">pkTableName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2304">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2304">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2304">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2304">Return Value</span></span>
 
-### <a name="method-defaultprimarykeyquerydatasourcename"></a><span data-ttu-id="7f44c-2305">メソッド defaultPrimaryKeyQueryDataSourceName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2305">Method defaultPrimaryKeyQueryDataSourceName</span></span>
+### <a name="method-defaultprimarykeyquerydatasourcename"></a><span data-ttu-id="50251-2305">メソッド defaultPrimaryKeyQueryDataSourceName</span><span class="sxs-lookup"><span data-stu-id="50251-2305">Method defaultPrimaryKeyQueryDataSourceName</span></span>
 
     public static str defaultPrimaryKeyQueryDataSourceName()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2306">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2306">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2306">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2306">Return Value</span></span>
 
-### <a name="method-deprecatedworkflowcaption"></a><span data-ttu-id="7f44c-2307">メソッド DEPRECATED\_WorkflowCaption</span><span class="sxs-lookup"><span data-stu-id="7f44c-2307">Method DEPRECATED\_WorkflowCaption</span></span>
+### <a name="method-deprecated_workflowcaption"></a><span data-ttu-id="50251-2307">メソッド DEPRECATED\_WorkflowCaption</span><span class="sxs-lookup"><span data-stu-id="50251-2307">Method DEPRECATED\_WorkflowCaption</span></span>
 
     public static str DEPRECATED_WorkflowCaption(str tableName, str fieldName, Int64 recIDValue)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2308">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2308">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2308">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2308">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2309">tableName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2309">tableName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-2310">fieldName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2310">fieldName</span></span>  
+<span data-ttu-id="50251-2309">tableName</span><span class="sxs-lookup"><span data-stu-id="50251-2309">tableName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2311">recIDValue</span><span class="sxs-lookup"><span data-stu-id="7f44c-2311">recIDValue</span></span>  
+<span data-ttu-id="50251-2310">fieldName</span><span class="sxs-lookup"><span data-stu-id="50251-2310">fieldName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2312">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2312">Return Value</span></span>
+<!-- -->
 
-### <a name="method-implicitreplacementfieldgroupname"></a><span data-ttu-id="7f44c-2313">メソッド implicitReplacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="7f44c-2313">Method implicitReplacementFieldGroupName</span></span>
+<span data-ttu-id="50251-2311">recIDValue</span><span class="sxs-lookup"><span data-stu-id="50251-2311">recIDValue</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="50251-2312">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2312">Return Value</span></span>
+
+### <a name="method-implicitreplacementfieldgroupname"></a><span data-ttu-id="50251-2313">メソッド implicitReplacementFieldGroupName</span><span class="sxs-lookup"><span data-stu-id="50251-2313">Method implicitReplacementFieldGroupName</span></span>
 
     public static str implicitReplacementFieldGroupName()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2314">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2314">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2314">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2314">Return Value</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-2315">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-2315">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-2315">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-2315">Method new</span></span>
 
-<span data-ttu-id="7f44c-2316">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2316">Initializes a new instance of the Object class.</span></span>
+<span data-ttu-id="50251-2316">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-2316">Initializes a new instance of the Object class.</span></span>
 
     private void new(FieldBinding surrogateForeignKeyBinding)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2317">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2317">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2317">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2317">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2318">surrogateForeignKeyBinding</span><span class="sxs-lookup"><span data-stu-id="7f44c-2318">surrogateForeignKeyBinding</span></span>  
+<span data-ttu-id="50251-2318">surrogateForeignKeyBinding</span><span class="sxs-lookup"><span data-stu-id="50251-2318">surrogateForeignKeyBinding</span></span>  
 
-## <a name="class-sysglobalobjectcache"></a><span data-ttu-id="7f44c-2319">クラス SysGlobalObjectCache</span><span class="sxs-lookup"><span data-stu-id="7f44c-2319">Class SysGlobalObjectCache</span></span>
+## <a name="class-sysglobalobjectcache"></a><span data-ttu-id="50251-2319">クラス SysGlobalObjectCache</span><span class="sxs-lookup"><span data-stu-id="50251-2319">Class SysGlobalObjectCache</span></span>
     class SysGlobalObjectCache extends Object
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-2320">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2320">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-2320">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2320">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-2321">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2321">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-2321">例</span><span class="sxs-lookup"><span data-stu-id="50251-2321">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-2322">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-2322">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-2322">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-2322">Methods</span></span>
 
-| <span data-ttu-id="7f44c-2323">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-2323">Method</span></span>                                                                           | <span data-ttu-id="7f44c-2324">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-2324">Description</span></span>                                                   |
+| <span data-ttu-id="50251-2323">方法</span><span class="sxs-lookup"><span data-stu-id="50251-2323">Method</span></span>                                                                           | <span data-ttu-id="50251-2324">説明</span><span class="sxs-lookup"><span data-stu-id="50251-2324">Description</span></span>                                                   |
 |----------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <span data-ttu-id="7f44c-2325">public container find(GlobalObjectCacheScope scope, container key)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2325">public container find(GlobalObjectCacheScope scope, container key)</span></span>               |                                                               |
-| <span data-ttu-id="7f44c-2326">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2326">public void finalize()</span></span>                                                           |                                                               |
-| <span data-ttu-id="7f44c-2327">public void remove(GlobalObjectCacheScope scope, container key)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2327">public void remove(GlobalObjectCacheScope scope, container key)</span></span>                  |                                                               |
-| <span data-ttu-id="7f44c-2328">public void print(GlobalObjectCacheScope scope)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2328">public void print(GlobalObjectCacheScope scope)</span></span>                                  |                                                               |
-| <span data-ttu-id="7f44c-2329">public void clear(GlobalObjectCacheScope scope)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2329">public void clear(GlobalObjectCacheScope scope)</span></span>                                  |                                                               |
-| <span data-ttu-id="7f44c-2330">::public static void clearAllCaches()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2330">::public static void clearAllCaches()</span></span>                                            |                                                               |
-| <span data-ttu-id="7f44c-2331">public void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2331">public void new()</span></span>                                                                | <span data-ttu-id="7f44c-2332">SysGlobalObjectCache クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2332">Initializes a new instance of the SysGlobalObjectCache class.</span></span> |
-| <span data-ttu-id="7f44c-2333">public void insert(GlobalObjectCacheScope scope, container key, container value)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2333">public void insert(GlobalObjectCacheScope scope, container key, container value)</span></span> |                                                               |
+| <span data-ttu-id="50251-2325">public container find(GlobalObjectCacheScope scope, container key)</span><span class="sxs-lookup"><span data-stu-id="50251-2325">public container find(GlobalObjectCacheScope scope, container key)</span></span>               |                                                               |
+| <span data-ttu-id="50251-2326">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="50251-2326">public void finalize()</span></span>                                                           |                                                               |
+| <span data-ttu-id="50251-2327">public void remove(GlobalObjectCacheScope scope, container key)</span><span class="sxs-lookup"><span data-stu-id="50251-2327">public void remove(GlobalObjectCacheScope scope, container key)</span></span>                  |                                                               |
+| <span data-ttu-id="50251-2328">public void print(GlobalObjectCacheScope scope)</span><span class="sxs-lookup"><span data-stu-id="50251-2328">public void print(GlobalObjectCacheScope scope)</span></span>                                  |                                                               |
+| <span data-ttu-id="50251-2329">public void clear(GlobalObjectCacheScope scope)</span><span class="sxs-lookup"><span data-stu-id="50251-2329">public void clear(GlobalObjectCacheScope scope)</span></span>                                  |                                                               |
+| <span data-ttu-id="50251-2330">::public static void clearAllCaches()</span><span class="sxs-lookup"><span data-stu-id="50251-2330">::public static void clearAllCaches()</span></span>                                            |                                                               |
+| <span data-ttu-id="50251-2331">public void new()</span><span class="sxs-lookup"><span data-stu-id="50251-2331">public void new()</span></span>                                                                | <span data-ttu-id="50251-2332">SysGlobalObjectCache クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-2332">Initializes a new instance of the SysGlobalObjectCache class.</span></span> |
+| <span data-ttu-id="50251-2333">public void insert(GlobalObjectCacheScope scope, container key, container value)</span><span class="sxs-lookup"><span data-stu-id="50251-2333">public void insert(GlobalObjectCacheScope scope, container key, container value)</span></span> |                                                               |
 
-### <a name="method-find"></a><span data-ttu-id="7f44c-2334">メソッド find</span><span class="sxs-lookup"><span data-stu-id="7f44c-2334">Method find</span></span>
+### <a name="method-find"></a><span data-ttu-id="50251-2334">メソッド find</span><span class="sxs-lookup"><span data-stu-id="50251-2334">Method find</span></span>
 
     public container find(GlobalObjectCacheScope scope, container key)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2335">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2335">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2335">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2335">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2336">scope</span><span class="sxs-lookup"><span data-stu-id="7f44c-2336">scope</span></span>  
+<span data-ttu-id="50251-2336">scope</span><span class="sxs-lookup"><span data-stu-id="50251-2336">scope</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2337">キー</span><span class="sxs-lookup"><span data-stu-id="7f44c-2337">key</span></span>  
+<span data-ttu-id="50251-2337">キー</span><span class="sxs-lookup"><span data-stu-id="50251-2337">key</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2338">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2338">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2338">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2338">Return Value</span></span>
 
-### <a name="method-finalize"></a><span data-ttu-id="7f44c-2339">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="7f44c-2339">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="50251-2339">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="50251-2339">Method finalize</span></span>
 
     public void finalize()
 
-### <a name="method-remove"></a><span data-ttu-id="7f44c-2340">メソッド remove</span><span class="sxs-lookup"><span data-stu-id="7f44c-2340">Method remove</span></span>
+### <a name="method-remove"></a><span data-ttu-id="50251-2340">メソッド remove</span><span class="sxs-lookup"><span data-stu-id="50251-2340">Method remove</span></span>
 
     public void remove(GlobalObjectCacheScope scope, container key)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2341">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2341">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2341">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2341">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2342">scope</span><span class="sxs-lookup"><span data-stu-id="7f44c-2342">scope</span></span>  
+<span data-ttu-id="50251-2342">scope</span><span class="sxs-lookup"><span data-stu-id="50251-2342">scope</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2343">キー</span><span class="sxs-lookup"><span data-stu-id="7f44c-2343">key</span></span>  
+<span data-ttu-id="50251-2343">キー</span><span class="sxs-lookup"><span data-stu-id="50251-2343">key</span></span>  
 
-### <a name="method-print"></a><span data-ttu-id="7f44c-2344">メソッド print</span><span class="sxs-lookup"><span data-stu-id="7f44c-2344">Method print</span></span>
+### <a name="method-print"></a><span data-ttu-id="50251-2344">メソッド print</span><span class="sxs-lookup"><span data-stu-id="50251-2344">Method print</span></span>
 
     public void print(GlobalObjectCacheScope scope)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2345">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2345">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2345">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2345">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2346">scope</span><span class="sxs-lookup"><span data-stu-id="7f44c-2346">scope</span></span>  
+<span data-ttu-id="50251-2346">scope</span><span class="sxs-lookup"><span data-stu-id="50251-2346">scope</span></span>  
 
-### <a name="method-clear"></a><span data-ttu-id="7f44c-2347">メソッド clear</span><span class="sxs-lookup"><span data-stu-id="7f44c-2347">Method clear</span></span>
+### <a name="method-clear"></a><span data-ttu-id="50251-2347">メソッド clear</span><span class="sxs-lookup"><span data-stu-id="50251-2347">Method clear</span></span>
 
     public void clear(GlobalObjectCacheScope scope)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2348">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2348">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2348">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2348">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2349">scope</span><span class="sxs-lookup"><span data-stu-id="7f44c-2349">scope</span></span>  
+<span data-ttu-id="50251-2349">scope</span><span class="sxs-lookup"><span data-stu-id="50251-2349">scope</span></span>  
 
-### <a name="method-clearallcaches"></a><span data-ttu-id="7f44c-2350">メソッド clearAllCaches</span><span class="sxs-lookup"><span data-stu-id="7f44c-2350">Method clearAllCaches</span></span>
+### <a name="method-clearallcaches"></a><span data-ttu-id="50251-2350">メソッド clearAllCaches</span><span class="sxs-lookup"><span data-stu-id="50251-2350">Method clearAllCaches</span></span>
 
     public static void clearAllCaches()
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-2351">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-2351">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-2351">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-2351">Method new</span></span>
 
-<span data-ttu-id="7f44c-2352">SysGlobalObjectCache クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2352">Initializes a new instance of the SysGlobalObjectCache class.</span></span>
+<span data-ttu-id="50251-2352">SysGlobalObjectCache クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-2352">Initializes a new instance of the SysGlobalObjectCache class.</span></span>
 
     public void new()
 
-### <a name="method-insert"></a><span data-ttu-id="7f44c-2353">メソッド insert</span><span class="sxs-lookup"><span data-stu-id="7f44c-2353">Method insert</span></span>
+### <a name="method-insert"></a><span data-ttu-id="50251-2353">メソッド insert</span><span class="sxs-lookup"><span data-stu-id="50251-2353">Method insert</span></span>
 
     public void insert(GlobalObjectCacheScope scope, container key, container value)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2354">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2354">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2354">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2354">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2355">scope</span><span class="sxs-lookup"><span data-stu-id="7f44c-2355">scope</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="7f44c-2356">キー</span><span class="sxs-lookup"><span data-stu-id="7f44c-2356">key</span></span>  
+<span data-ttu-id="50251-2355">scope</span><span class="sxs-lookup"><span data-stu-id="50251-2355">scope</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2357">値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2357">value</span></span>  
+<span data-ttu-id="50251-2356">キー</span><span class="sxs-lookup"><span data-stu-id="50251-2356">key</span></span>  
 
-## <a name="class-systemmonitor"></a><span data-ttu-id="7f44c-2358">クラス SystemMonitor</span><span class="sxs-lookup"><span data-stu-id="7f44c-2358">Class SystemMonitor</span></span>
+<!-- -->
+
+<span data-ttu-id="50251-2357">値</span><span class="sxs-lookup"><span data-stu-id="50251-2357">value</span></span>  
+
+## <a name="class-systemmonitor"></a><span data-ttu-id="50251-2358">クラス SystemMonitor</span><span class="sxs-lookup"><span data-stu-id="50251-2358">Class SystemMonitor</span></span>
     class SystemMonitor extends Object
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-2359">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2359">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-2359">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2359">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-2360">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2360">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-2360">例</span><span class="sxs-lookup"><span data-stu-id="50251-2360">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="7f44c-2361">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-2361">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-2361">方法</span><span class="sxs-lookup"><span data-stu-id="50251-2361">Methods</span></span>
 
-| <span data-ttu-id="7f44c-2362">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-2362">Method</span></span>                                                                | <span data-ttu-id="7f44c-2363">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-2363">Description</span></span>                                            |
+| <span data-ttu-id="50251-2362">方法</span><span class="sxs-lookup"><span data-stu-id="50251-2362">Method</span></span>                                                                | <span data-ttu-id="50251-2363">説明</span><span class="sxs-lookup"><span data-stu-id="50251-2363">Description</span></span>                                            |
 |-----------------------------------------------------------------------|--------------------------------------------------------|
-| <span data-ttu-id="7f44c-2364">::public static container allClientCounters()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2364">::public static container allClientCounters()</span></span>                         |                                                        |
-| <span data-ttu-id="7f44c-2365">::public static container allServerCounters()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2365">::public static container allServerCounters()</span></span>                         |                                                        |
-| <span data-ttu-id="7f44c-2366">::public static int getClientCounter(SystemMonitorCounter counter)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2366">::public static int getClientCounter(SystemMonitorCounter counter)</span></span>    |                                                        |
-| <span data-ttu-id="7f44c-2367">::public static container getClientInternals()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2367">::public static container getClientInternals()</span></span>                        |                                                        |
-| <span data-ttu-id="7f44c-2368">::public static int getCounter(SystemMonitorCounter counter)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2368">::public static int getCounter(SystemMonitorCounter counter)</span></span>          |                                                        |
-| <span data-ttu-id="7f44c-2369">::public static int getServerCounter(SystemMonitorCounter counter)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2369">::public static int getServerCounter(SystemMonitorCounter counter)</span></span>    |                                                        |
-| <span data-ttu-id="7f44c-2370">::public static container getServerInternals()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2370">::public static container getServerInternals()</span></span>                        |                                                        |
-| <span data-ttu-id="7f44c-2371">::public static boolean isRunning()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2371">::public static boolean isRunning()</span></span>                                   |                                                        |
-| <span data-ttu-id="7f44c-2372">::public static boolean isServerCounter(SystemMonitorCounter counter)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2372">::public static boolean isServerCounter(SystemMonitorCounter counter)</span></span> |                                                        |
-| <span data-ttu-id="7f44c-2373">::public static container sqlDump()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2373">::public static container sqlDump()</span></span>                                   |                                                        |
-| <span data-ttu-id="7f44c-2374">::public static void systemDump(boolean includeSQL)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2374">::public static void systemDump(boolean includeSQL)</span></span>                   |                                                        |
-| <span data-ttu-id="7f44c-2375">::public static void start()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2375">::public static void start()</span></span>                                          |                                                        |
-| <span data-ttu-id="7f44c-2376">::public static void resetServer()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2376">::public static void resetServer()</span></span>                                    |                                                        |
-| <span data-ttu-id="7f44c-2377">::public static void stop()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2377">::public static void stop()</span></span>                                           |                                                        |
-| <span data-ttu-id="7f44c-2378">public void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2378">public void new()</span></span>                                                     | <span data-ttu-id="7f44c-2379">SystemMonitor クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2379">Initializes a new instance of the SystemMonitor class.</span></span> |
-| <span data-ttu-id="7f44c-2380">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2380">public void finalize()</span></span>                                                |                                                        |
-| <span data-ttu-id="7f44c-2381">::public static void reset()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2381">::public static void reset()</span></span>                                          |                                                        |
-| <span data-ttu-id="7f44c-2382">::public static void resetClient()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2382">::public static void resetClient()</span></span>                                    |                                                        |
+| <span data-ttu-id="50251-2364">::public static container allClientCounters()</span><span class="sxs-lookup"><span data-stu-id="50251-2364">::public static container allClientCounters()</span></span>                         |                                                        |
+| <span data-ttu-id="50251-2365">::public static container allServerCounters()</span><span class="sxs-lookup"><span data-stu-id="50251-2365">::public static container allServerCounters()</span></span>                         |                                                        |
+| <span data-ttu-id="50251-2366">::public static int getClientCounter(SystemMonitorCounter counter)</span><span class="sxs-lookup"><span data-stu-id="50251-2366">::public static int getClientCounter(SystemMonitorCounter counter)</span></span>    |                                                        |
+| <span data-ttu-id="50251-2367">::public static container getClientInternals()</span><span class="sxs-lookup"><span data-stu-id="50251-2367">::public static container getClientInternals()</span></span>                        |                                                        |
+| <span data-ttu-id="50251-2368">::public static int getCounter(SystemMonitorCounter counter)</span><span class="sxs-lookup"><span data-stu-id="50251-2368">::public static int getCounter(SystemMonitorCounter counter)</span></span>          |                                                        |
+| <span data-ttu-id="50251-2369">::public static int getServerCounter(SystemMonitorCounter counter)</span><span class="sxs-lookup"><span data-stu-id="50251-2369">::public static int getServerCounter(SystemMonitorCounter counter)</span></span>    |                                                        |
+| <span data-ttu-id="50251-2370">::public static container getServerInternals()</span><span class="sxs-lookup"><span data-stu-id="50251-2370">::public static container getServerInternals()</span></span>                        |                                                        |
+| <span data-ttu-id="50251-2371">::public static boolean isRunning()</span><span class="sxs-lookup"><span data-stu-id="50251-2371">::public static boolean isRunning()</span></span>                                   |                                                        |
+| <span data-ttu-id="50251-2372">::public static boolean isServerCounter(SystemMonitorCounter counter)</span><span class="sxs-lookup"><span data-stu-id="50251-2372">::public static boolean isServerCounter(SystemMonitorCounter counter)</span></span> |                                                        |
+| <span data-ttu-id="50251-2373">::public static container sqlDump()</span><span class="sxs-lookup"><span data-stu-id="50251-2373">::public static container sqlDump()</span></span>                                   |                                                        |
+| <span data-ttu-id="50251-2374">::public static void systemDump(boolean includeSQL)</span><span class="sxs-lookup"><span data-stu-id="50251-2374">::public static void systemDump(boolean includeSQL)</span></span>                   |                                                        |
+| <span data-ttu-id="50251-2375">::public static void start()</span><span class="sxs-lookup"><span data-stu-id="50251-2375">::public static void start()</span></span>                                          |                                                        |
+| <span data-ttu-id="50251-2376">::public static void resetServer()</span><span class="sxs-lookup"><span data-stu-id="50251-2376">::public static void resetServer()</span></span>                                    |                                                        |
+| <span data-ttu-id="50251-2377">::public static void stop()</span><span class="sxs-lookup"><span data-stu-id="50251-2377">::public static void stop()</span></span>                                           |                                                        |
+| <span data-ttu-id="50251-2378">public void new()</span><span class="sxs-lookup"><span data-stu-id="50251-2378">public void new()</span></span>                                                     | <span data-ttu-id="50251-2379">SystemMonitor クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-2379">Initializes a new instance of the SystemMonitor class.</span></span> |
+| <span data-ttu-id="50251-2380">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="50251-2380">public void finalize()</span></span>                                                |                                                        |
+| <span data-ttu-id="50251-2381">::public static void reset()</span><span class="sxs-lookup"><span data-stu-id="50251-2381">::public static void reset()</span></span>                                          |                                                        |
+| <span data-ttu-id="50251-2382">::public static void resetClient()</span><span class="sxs-lookup"><span data-stu-id="50251-2382">::public static void resetClient()</span></span>                                    |                                                        |
 
-### <a name="method-allclientcounters"></a><span data-ttu-id="7f44c-2383">メソッド allClientCounters</span><span class="sxs-lookup"><span data-stu-id="7f44c-2383">Method allClientCounters</span></span>
+### <a name="method-allclientcounters"></a><span data-ttu-id="50251-2383">メソッド allClientCounters</span><span class="sxs-lookup"><span data-stu-id="50251-2383">Method allClientCounters</span></span>
 
     public static container allClientCounters()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2384">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2384">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2384">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2384">Return Value</span></span>
 
-### <a name="method-allservercounters"></a><span data-ttu-id="7f44c-2385">メソッド allServerCounters</span><span class="sxs-lookup"><span data-stu-id="7f44c-2385">Method allServerCounters</span></span>
+### <a name="method-allservercounters"></a><span data-ttu-id="50251-2385">メソッド allServerCounters</span><span class="sxs-lookup"><span data-stu-id="50251-2385">Method allServerCounters</span></span>
 
     public static container allServerCounters()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2386">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2386">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2386">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2386">Return Value</span></span>
 
-### <a name="method-getclientcounter"></a><span data-ttu-id="7f44c-2387">メソッド getClientCounter</span><span class="sxs-lookup"><span data-stu-id="7f44c-2387">Method getClientCounter</span></span>
+### <a name="method-getclientcounter"></a><span data-ttu-id="50251-2387">メソッド getClientCounter</span><span class="sxs-lookup"><span data-stu-id="50251-2387">Method getClientCounter</span></span>
 
     public static int getClientCounter(SystemMonitorCounter counter)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2388">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2388">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2388">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2388">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2389">counter</span><span class="sxs-lookup"><span data-stu-id="7f44c-2389">counter</span></span>  
+<span data-ttu-id="50251-2389">counter</span><span class="sxs-lookup"><span data-stu-id="50251-2389">counter</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2390">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2390">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2390">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2390">Return Value</span></span>
 
-### <a name="method-getclientinternals"></a><span data-ttu-id="7f44c-2391">メソッド getClientInternals</span><span class="sxs-lookup"><span data-stu-id="7f44c-2391">Method getClientInternals</span></span>
+### <a name="method-getclientinternals"></a><span data-ttu-id="50251-2391">メソッド getClientInternals</span><span class="sxs-lookup"><span data-stu-id="50251-2391">Method getClientInternals</span></span>
 
     public static container getClientInternals()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2392">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2392">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2392">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2392">Return Value</span></span>
 
-### <a name="method-getcounter"></a><span data-ttu-id="7f44c-2393">メソッド getCounter</span><span class="sxs-lookup"><span data-stu-id="7f44c-2393">Method getCounter</span></span>
+### <a name="method-getcounter"></a><span data-ttu-id="50251-2393">メソッド getCounter</span><span class="sxs-lookup"><span data-stu-id="50251-2393">Method getCounter</span></span>
 
     public static int getCounter(SystemMonitorCounter counter)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2394">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2394">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2394">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2394">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2395">counter</span><span class="sxs-lookup"><span data-stu-id="7f44c-2395">counter</span></span>  
+<span data-ttu-id="50251-2395">counter</span><span class="sxs-lookup"><span data-stu-id="50251-2395">counter</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2396">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2396">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2396">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2396">Return Value</span></span>
 
-### <a name="method-getservercounter"></a><span data-ttu-id="7f44c-2397">メソッド getServerCounter</span><span class="sxs-lookup"><span data-stu-id="7f44c-2397">Method getServerCounter</span></span>
+### <a name="method-getservercounter"></a><span data-ttu-id="50251-2397">メソッド getServerCounter</span><span class="sxs-lookup"><span data-stu-id="50251-2397">Method getServerCounter</span></span>
 
     public static int getServerCounter(SystemMonitorCounter counter)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2398">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2398">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2398">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2398">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2399">counter</span><span class="sxs-lookup"><span data-stu-id="7f44c-2399">counter</span></span>  
+<span data-ttu-id="50251-2399">counter</span><span class="sxs-lookup"><span data-stu-id="50251-2399">counter</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2400">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2400">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2400">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2400">Return Value</span></span>
 
-### <a name="method-getserverinternals"></a><span data-ttu-id="7f44c-2401">メソッド getServerInternals</span><span class="sxs-lookup"><span data-stu-id="7f44c-2401">Method getServerInternals</span></span>
+### <a name="method-getserverinternals"></a><span data-ttu-id="50251-2401">メソッド getServerInternals</span><span class="sxs-lookup"><span data-stu-id="50251-2401">Method getServerInternals</span></span>
 
     public static container getServerInternals()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2402">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2402">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2402">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2402">Return Value</span></span>
 
-### <a name="method-isrunning"></a><span data-ttu-id="7f44c-2403">メソッド isRunning</span><span class="sxs-lookup"><span data-stu-id="7f44c-2403">Method isRunning</span></span>
+### <a name="method-isrunning"></a><span data-ttu-id="50251-2403">メソッド isRunning</span><span class="sxs-lookup"><span data-stu-id="50251-2403">Method isRunning</span></span>
 
     public static boolean isRunning()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2404">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2404">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2404">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2404">Return Value</span></span>
 
-### <a name="method-isservercounter"></a><span data-ttu-id="7f44c-2405">メソッド isServerCounter</span><span class="sxs-lookup"><span data-stu-id="7f44c-2405">Method isServerCounter</span></span>
+### <a name="method-isservercounter"></a><span data-ttu-id="50251-2405">メソッド isServerCounter</span><span class="sxs-lookup"><span data-stu-id="50251-2405">Method isServerCounter</span></span>
 
     public static boolean isServerCounter(SystemMonitorCounter counter)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2406">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2406">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2406">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2406">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2407">counter</span><span class="sxs-lookup"><span data-stu-id="7f44c-2407">counter</span></span>  
+<span data-ttu-id="50251-2407">counter</span><span class="sxs-lookup"><span data-stu-id="50251-2407">counter</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2408">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2408">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2408">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2408">Return Value</span></span>
 
-### <a name="method-sqldump"></a><span data-ttu-id="7f44c-2409">メソッド sqlDump</span><span class="sxs-lookup"><span data-stu-id="7f44c-2409">Method sqlDump</span></span>
+### <a name="method-sqldump"></a><span data-ttu-id="50251-2409">メソッド sqlDump</span><span class="sxs-lookup"><span data-stu-id="50251-2409">Method sqlDump</span></span>
 
     public static container sqlDump()
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2410">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2410">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2410">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2410">Return Value</span></span>
 
-### <a name="method-systemdump"></a><span data-ttu-id="7f44c-2411">メソッド systemDump</span><span class="sxs-lookup"><span data-stu-id="7f44c-2411">Method systemDump</span></span>
+### <a name="method-systemdump"></a><span data-ttu-id="50251-2411">メソッド systemDump</span><span class="sxs-lookup"><span data-stu-id="50251-2411">Method systemDump</span></span>
 
     public static void systemDump(boolean includeSQL)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2412">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2412">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2412">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2412">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2413">includeSQL</span><span class="sxs-lookup"><span data-stu-id="7f44c-2413">includeSQL</span></span>  
+<span data-ttu-id="50251-2413">includeSQL</span><span class="sxs-lookup"><span data-stu-id="50251-2413">includeSQL</span></span>  
 
-### <a name="method-start"></a><span data-ttu-id="7f44c-2414">メソッド start</span><span class="sxs-lookup"><span data-stu-id="7f44c-2414">Method start</span></span>
+### <a name="method-start"></a><span data-ttu-id="50251-2414">メソッド start</span><span class="sxs-lookup"><span data-stu-id="50251-2414">Method start</span></span>
 
     public static void start()
 
-### <a name="method-resetserver"></a><span data-ttu-id="7f44c-2415">メソッド resetServer</span><span class="sxs-lookup"><span data-stu-id="7f44c-2415">Method resetServer</span></span>
+### <a name="method-resetserver"></a><span data-ttu-id="50251-2415">メソッド resetServer</span><span class="sxs-lookup"><span data-stu-id="50251-2415">Method resetServer</span></span>
 
     public static void resetServer()
 
-### <a name="method-stop"></a><span data-ttu-id="7f44c-2416">メソッド stop</span><span class="sxs-lookup"><span data-stu-id="7f44c-2416">Method stop</span></span>
+### <a name="method-stop"></a><span data-ttu-id="50251-2416">メソッド stop</span><span class="sxs-lookup"><span data-stu-id="50251-2416">Method stop</span></span>
 
     public static void stop()
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-2417">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-2417">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-2417">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-2417">Method new</span></span>
 
-<span data-ttu-id="7f44c-2418">SystemMonitor クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2418">Initializes a new instance of the SystemMonitor class.</span></span>
+<span data-ttu-id="50251-2418">SystemMonitor クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-2418">Initializes a new instance of the SystemMonitor class.</span></span>
 
     public void new()
 
-### <a name="method-finalize"></a><span data-ttu-id="7f44c-2419">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="7f44c-2419">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="50251-2419">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="50251-2419">Method finalize</span></span>
 
     public void finalize()
 
-### <a name="method-reset"></a><span data-ttu-id="7f44c-2420">メソッド reset</span><span class="sxs-lookup"><span data-stu-id="7f44c-2420">Method reset</span></span>
+### <a name="method-reset"></a><span data-ttu-id="50251-2420">メソッド reset</span><span class="sxs-lookup"><span data-stu-id="50251-2420">Method reset</span></span>
 
     public static void reset()
 
-### <a name="method-resetclient"></a><span data-ttu-id="7f44c-2421">メソッド resetClient</span><span class="sxs-lookup"><span data-stu-id="7f44c-2421">Method resetClient</span></span>
+### <a name="method-resetclient"></a><span data-ttu-id="50251-2421">メソッド resetClient</span><span class="sxs-lookup"><span data-stu-id="50251-2421">Method resetClient</span></span>
 
     public static void resetClient()
 
-## <a name="class-systemsequence"></a><span data-ttu-id="7f44c-2422">クラス systemSequence</span><span class="sxs-lookup"><span data-stu-id="7f44c-2422">Class systemSequence</span></span>
+## <a name="class-systemsequence"></a><span data-ttu-id="50251-2422">クラス systemSequence</span><span class="sxs-lookup"><span data-stu-id="50251-2422">Class systemSequence</span></span>
     class systemSequence extends Object
 
-<span data-ttu-id="7f44c-2423">systemSequence クラスは、システム シーケンス ジェネレータを手動で制御し、すべての SQL テーブルに対して一意の RecIds を提供します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2423">The systemSequence class takes manual control of the system sequence generator and delivers unique RecIds for all SQL tables.</span></span>
+<span data-ttu-id="50251-2423">systemSequence クラスは、システム シーケンス ジェネレータを手動で制御し、すべての SQL テーブルに対して一意の RecIds を提供します。</span><span class="sxs-lookup"><span data-stu-id="50251-2423">The systemSequence class takes manual control of the system sequence generator and delivers unique RecIds for all SQL tables.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="7f44c-2424">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2424">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="50251-2424">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2424">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2425">SQL テーブルにレコードが挿入されると、各レコードが関連付けられている会社に関係なく、各レコードに一意の RecId が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2425">When records are inserted into SQL tables, a unique RecId is assigned to each record—regardless of the company each record is associated with.</span></span> <span data-ttu-id="7f44c-2426">このクラスを使用するときは十分に注意してください。データの整合性が失われる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2426">Use extreme caution when you use this class—data integrity could be destroyed.</span></span> <span data-ttu-id="7f44c-2427">このクラスは、通常、データのインポートやエクスポート ルーチン、または非常に大きなジョブに使用されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2427">This class is typically used for data import or export routines, or for very large jobs.</span></span> <span data-ttu-id="7f44c-2428">レコード ID は、int64 データ型の値です。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2428">The record ID is an int64 data type value.</span></span> <span data-ttu-id="7f44c-2429">レコード ID が割り当てられる範囲は、5637144576 から 2 ^ 63 (9223372036854775808) までです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2429">The range in which record IDs are allocated is from 5637144576 to 2^63 (9223372036854775808).</span></span> <span data-ttu-id="7f44c-2430">大きい未使用の RecId 範囲が作成された場合、途中で RecId がなくなることがあります。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2430">RecIds can be used up prematurely if large, unused ranges of RecIds are created.</span></span> <span data-ttu-id="7f44c-2431">使用されている Recid 範囲の間にある未使用の RecId 範囲を再利用するのは、非常に複雑なプロセスです。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2431">Reclaiming unused ranges of RecIds that lie between used ranges of RecIds is a very complicated process.</span></span>
+<span data-ttu-id="50251-2425">SQL テーブルにレコードが挿入されると、各レコードが関連付けられている会社に関係なく、各レコードに一意の RecId が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="50251-2425">When records are inserted into SQL tables, a unique RecId is assigned to each record—regardless of the company each record is associated with.</span></span> <span data-ttu-id="50251-2426">このクラスを使用するときは十分に注意してください。データの整合性が失われる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="50251-2426">Use extreme caution when you use this class—data integrity could be destroyed.</span></span> <span data-ttu-id="50251-2427">このクラスは、通常、データのインポートやエクスポート ルーチン、または非常に大きなジョブに使用されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2427">This class is typically used for data import or export routines, or for very large jobs.</span></span> <span data-ttu-id="50251-2428">レコード ID は、int64 データ型の値です。</span><span class="sxs-lookup"><span data-stu-id="50251-2428">The record ID is an int64 data type value.</span></span> <span data-ttu-id="50251-2429">レコード ID が割り当てられる範囲は、5637144576 から 2 ^ 63 (9223372036854775808) までです。</span><span class="sxs-lookup"><span data-stu-id="50251-2429">The range in which record IDs are allocated is from 5637144576 to 2^63 (9223372036854775808).</span></span> <span data-ttu-id="50251-2430">大きい未使用の RecId 範囲が作成された場合、途中で RecId がなくなることがあります。</span><span class="sxs-lookup"><span data-stu-id="50251-2430">RecIds can be used up prematurely if large, unused ranges of RecIds are created.</span></span> <span data-ttu-id="50251-2431">使用されている Recid 範囲の間にある未使用の RecId 範囲を再利用するのは、非常に複雑なプロセスです。</span><span class="sxs-lookup"><span data-stu-id="50251-2431">Reclaiming unused ranges of RecIds that lie between used ranges of RecIds is a very complicated process.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="7f44c-2432">例</span><span class="sxs-lookup"><span data-stu-id="7f44c-2432">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="50251-2432">例</span><span class="sxs-lookup"><span data-stu-id="50251-2432">Examples</span></span>
 
-<span data-ttu-id="7f44c-2433">次の例では、CustTable テーブルの int64max 値を予約しています。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2433">The following example reserves the int64max value for the CustTable table.</span></span>
+<span data-ttu-id="50251-2433">次の例では、CustTable テーブルの int64max 値を予約しています。</span><span class="sxs-lookup"><span data-stu-id="50251-2433">The following example reserves the int64max value for the CustTable table.</span></span>
 
     static public void Main(Args _args) 
     { 
@@ -5433,110 +5433,110 @@ ms.locfileid: "1544189"
           } 
     }
 
-### <a name="methods"></a><span data-ttu-id="7f44c-2434">メソッド</span><span class="sxs-lookup"><span data-stu-id="7f44c-2434">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="50251-2434">メソッド</span><span class="sxs-lookup"><span data-stu-id="50251-2434">Methods</span></span>
 
-| <span data-ttu-id="7f44c-2435">方法</span><span class="sxs-lookup"><span data-stu-id="7f44c-2435">Method</span></span>                                                             | <span data-ttu-id="7f44c-2436">説明</span><span class="sxs-lookup"><span data-stu-id="7f44c-2436">Description</span></span>                                                                                                                     |
+| <span data-ttu-id="50251-2435">方法</span><span class="sxs-lookup"><span data-stu-id="50251-2435">Method</span></span>                                                             | <span data-ttu-id="50251-2436">説明</span><span class="sxs-lookup"><span data-stu-id="50251-2436">Description</span></span>                                                                                                                     |
 |--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="7f44c-2437">public Int64 flushValues(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2437">public Int64 flushValues(TableId tableId)</span></span>                          | <span data-ttu-id="7f44c-2438">指定されたテーブルのシステム シーケンス キャッシュから予約された recIds をフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2438">Flushes the reserved recIds from the System Sequence cache for a given table</span></span>                                                    |
-| <span data-ttu-id="7f44c-2439">public Int64 reserveTransids(Int64 nReserved, \[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-2439">public Int64 reserveTransids(Int64 nReserved, \[TableId tableId\])</span></span> |                                                                                                                                 |
-| <span data-ttu-id="7f44c-2440">public Int64 reserveValues(Int64 nReserved, TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2440">public Int64 reserveValues(Int64 nReserved, TableId tableId)</span></span>       | <span data-ttu-id="7f44c-2441">recIds の自動割り当てが中断されている場合に、新しいレコードに割り当てることのできる recIds の範囲を事前割り当てします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2441">Preallocates a range of recIds that can be allocated to new records when the automatic assignment of recIds has been suspended.</span></span> |
-| <span data-ttu-id="7f44c-2442">public void suspendTransIds(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2442">public void suspendTransIds(TableId tableId)</span></span>                       |                                                                                                                                 |
-| <span data-ttu-id="7f44c-2443">public void suspendRecIds(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="7f44c-2443">public void suspendRecIds(TableId tableId)</span></span>                         |                                                                                                                                 |
-| <span data-ttu-id="7f44c-2444">public void removeRecIdSuspension(\[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-2444">public void removeRecIdSuspension(\[TableId tableId\])</span></span>             |                                                                                                                                 |
-| <span data-ttu-id="7f44c-2445">public void new()</span><span class="sxs-lookup"><span data-stu-id="7f44c-2445">public void new()</span></span>                                                  | <span data-ttu-id="7f44c-2446">systemSequence クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2446">Initializes a new instance of the systemSequence class.</span></span>                                                                         |
-| <span data-ttu-id="7f44c-2447">public void removeTransIdSuspension(\[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="7f44c-2447">public void removeTransIdSuspension(\[TableId tableId\])</span></span>           |                                                                                                                                 |
+| <span data-ttu-id="50251-2437">public Int64 flushValues(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="50251-2437">public Int64 flushValues(TableId tableId)</span></span>                          | <span data-ttu-id="50251-2438">指定されたテーブルのシステム シーケンス キャッシュから予約された recIds をフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="50251-2438">Flushes the reserved recIds from the System Sequence cache for a given table</span></span>                                                    |
+| <span data-ttu-id="50251-2439">public Int64 reserveTransids(Int64 nReserved, \[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="50251-2439">public Int64 reserveTransids(Int64 nReserved, \[TableId tableId\])</span></span> |                                                                                                                                 |
+| <span data-ttu-id="50251-2440">public Int64 reserveValues(Int64 nReserved, TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="50251-2440">public Int64 reserveValues(Int64 nReserved, TableId tableId)</span></span>       | <span data-ttu-id="50251-2441">recIds の自動割り当てが中断されている場合に、新しいレコードに割り当てることのできる recIds の範囲を事前割り当てします。</span><span class="sxs-lookup"><span data-stu-id="50251-2441">Preallocates a range of recIds that can be allocated to new records when the automatic assignment of recIds has been suspended.</span></span> |
+| <span data-ttu-id="50251-2442">public void suspendTransIds(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="50251-2442">public void suspendTransIds(TableId tableId)</span></span>                       |                                                                                                                                 |
+| <span data-ttu-id="50251-2443">public void suspendRecIds(TableId tableId)</span><span class="sxs-lookup"><span data-stu-id="50251-2443">public void suspendRecIds(TableId tableId)</span></span>                         |                                                                                                                                 |
+| <span data-ttu-id="50251-2444">public void removeRecIdSuspension(\[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="50251-2444">public void removeRecIdSuspension(\[TableId tableId\])</span></span>             |                                                                                                                                 |
+| <span data-ttu-id="50251-2445">public void new()</span><span class="sxs-lookup"><span data-stu-id="50251-2445">public void new()</span></span>                                                  | <span data-ttu-id="50251-2446">systemSequence クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-2446">Initializes a new instance of the systemSequence class.</span></span>                                                                         |
+| <span data-ttu-id="50251-2447">public void removeTransIdSuspension(\[TableId tableId\])</span><span class="sxs-lookup"><span data-stu-id="50251-2447">public void removeTransIdSuspension(\[TableId tableId\])</span></span>           |                                                                                                                                 |
 
-### <a name="method-flushvalues"></a><span data-ttu-id="7f44c-2448">メソッド flushValues</span><span class="sxs-lookup"><span data-stu-id="7f44c-2448">Method flushValues</span></span>
+### <a name="method-flushvalues"></a><span data-ttu-id="50251-2448">メソッド flushValues</span><span class="sxs-lookup"><span data-stu-id="50251-2448">Method flushValues</span></span>
 
-<span data-ttu-id="7f44c-2449">指定されたテーブルのシステム シーケンス キャッシュから予約された recIds をフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2449">Flushes the reserved recIds from the System Sequence cache for a given table</span></span>
+<span data-ttu-id="50251-2449">指定されたテーブルのシステム シーケンス キャッシュから予約された recIds をフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="50251-2449">Flushes the reserved recIds from the System Sequence cache for a given table</span></span>
 
     public Int64 flushValues(TableId tableId)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2450">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2450">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2450">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2450">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2451">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-2451">tableId</span></span>  
+<span data-ttu-id="50251-2451">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-2451">tableId</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2452">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2452">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2452">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2452">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2453">キャッシュからフラッシュされた recIds の数。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2453">The number of recIds flushed from the cache.</span></span>
+<span data-ttu-id="50251-2453">キャッシュからフラッシュされた recIds の数。</span><span class="sxs-lookup"><span data-stu-id="50251-2453">The number of recIds flushed from the cache.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2454">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2454">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2454">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2454">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2455">テーブルへのその後挿入によりテーブルの recId が予約され、システム シーケンス キャッシュにはテーブルの recId の予約済み範囲が入力されます。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2455">Subsequent inserts on the table reserve the recIds for the table and System Sequence cache is populated with the reserved range of recIds for the table.</span></span>
+<span data-ttu-id="50251-2455">テーブルへのその後挿入によりテーブルの recId が予約され、システム シーケンス キャッシュにはテーブルの recId の予約済み範囲が入力されます。</span><span class="sxs-lookup"><span data-stu-id="50251-2455">Subsequent inserts on the table reserve the recIds for the table and System Sequence cache is populated with the reserved range of recIds for the table.</span></span>
 
-### <a name="method-reservetransids"></a><span data-ttu-id="7f44c-2456">メソッド reserveTransids</span><span class="sxs-lookup"><span data-stu-id="7f44c-2456">Method reserveTransids</span></span>
+### <a name="method-reservetransids"></a><span data-ttu-id="50251-2456">メソッド reserveTransids</span><span class="sxs-lookup"><span data-stu-id="50251-2456">Method reserveTransids</span></span>
 
     public Int64 reserveTransids(Int64 nReserved, [TableId tableId])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2457">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2457">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2457">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2457">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2458">nReserved</span><span class="sxs-lookup"><span data-stu-id="7f44c-2458">nReserved</span></span>  
+<span data-ttu-id="50251-2458">nReserved</span><span class="sxs-lookup"><span data-stu-id="50251-2458">nReserved</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2459">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-2459">tableId</span></span>  
+<span data-ttu-id="50251-2459">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-2459">tableId</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2460">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2460">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2460">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2460">Return Value</span></span>
 
-### <a name="method-reservevalues"></a><span data-ttu-id="7f44c-2461">メソッド reserveValues</span><span class="sxs-lookup"><span data-stu-id="7f44c-2461">Method reserveValues</span></span>
+### <a name="method-reservevalues"></a><span data-ttu-id="50251-2461">メソッド reserveValues</span><span class="sxs-lookup"><span data-stu-id="50251-2461">Method reserveValues</span></span>
 
-<span data-ttu-id="7f44c-2462">recIds の自動割り当てが中断されている場合に、新しいレコードに割り当てることのできる recIds の範囲を事前割り当てします。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2462">Preallocates a range of recIds that can be allocated to new records when the automatic assignment of recIds has been suspended.</span></span>
+<span data-ttu-id="50251-2462">recIds の自動割り当てが中断されている場合に、新しいレコードに割り当てることのできる recIds の範囲を事前割り当てします。</span><span class="sxs-lookup"><span data-stu-id="50251-2462">Preallocates a range of recIds that can be allocated to new records when the automatic assignment of recIds has been suspended.</span></span>
 
     public Int64 reserveValues(Int64 nReserved, TableId tableId)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2463">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2463">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2463">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2463">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2464">nReserved</span><span class="sxs-lookup"><span data-stu-id="7f44c-2464">nReserved</span></span>  
+<span data-ttu-id="50251-2464">nReserved</span><span class="sxs-lookup"><span data-stu-id="50251-2464">nReserved</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="7f44c-2465">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-2465">tableId</span></span>  
+<span data-ttu-id="50251-2465">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-2465">tableId</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="7f44c-2466">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f44c-2466">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="50251-2466">戻り値</span><span class="sxs-lookup"><span data-stu-id="50251-2466">Return Value</span></span>
 
-<span data-ttu-id="7f44c-2467">最初に使用可能な予約済み recId。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2467">The first usable reserved recId.</span></span>
+<span data-ttu-id="50251-2467">最初に使用可能な予約済み recId。</span><span class="sxs-lookup"><span data-stu-id="50251-2467">The first usable reserved recId.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="7f44c-2468">備考</span><span class="sxs-lookup"><span data-stu-id="7f44c-2468">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="50251-2468">備考</span><span class="sxs-lookup"><span data-stu-id="50251-2468">Remarks</span></span>
 
-<span data-ttu-id="7f44c-2469">予約した recIds の範囲は、すぐに予約されています。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2469">The range of recIds that you reserved are reserved immediately.</span></span>
+<span data-ttu-id="50251-2469">予約した recIds の範囲は、すぐに予約されています。</span><span class="sxs-lookup"><span data-stu-id="50251-2469">The range of recIds that you reserved are reserved immediately.</span></span>
 
-### <a name="method-suspendtransids"></a><span data-ttu-id="7f44c-2470">メソッド suspendTransIds</span><span class="sxs-lookup"><span data-stu-id="7f44c-2470">Method suspendTransIds</span></span>
+### <a name="method-suspendtransids"></a><span data-ttu-id="50251-2470">メソッド suspendTransIds</span><span class="sxs-lookup"><span data-stu-id="50251-2470">Method suspendTransIds</span></span>
 
     public void suspendTransIds(TableId tableId)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2471">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2471">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2471">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2471">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2472">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-2472">tableId</span></span>  
+<span data-ttu-id="50251-2472">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-2472">tableId</span></span>  
 
-### <a name="method-suspendrecids"></a><span data-ttu-id="7f44c-2473">メソッド suspendRecIds</span><span class="sxs-lookup"><span data-stu-id="7f44c-2473">Method suspendRecIds</span></span>
+### <a name="method-suspendrecids"></a><span data-ttu-id="50251-2473">メソッド suspendRecIds</span><span class="sxs-lookup"><span data-stu-id="50251-2473">Method suspendRecIds</span></span>
 
     public void suspendRecIds(TableId tableId)
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2474">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2474">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2474">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2474">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2475">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-2475">tableId</span></span>  
+<span data-ttu-id="50251-2475">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-2475">tableId</span></span>  
 
-### <a name="method-removerecidsuspension"></a><span data-ttu-id="7f44c-2476">メソッド removeRecIdSuspension</span><span class="sxs-lookup"><span data-stu-id="7f44c-2476">Method removeRecIdSuspension</span></span>
+### <a name="method-removerecidsuspension"></a><span data-ttu-id="50251-2476">メソッド removeRecIdSuspension</span><span class="sxs-lookup"><span data-stu-id="50251-2476">Method removeRecIdSuspension</span></span>
 
     public void removeRecIdSuspension([TableId tableId])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2477">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2477">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2477">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2477">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2478">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-2478">tableId</span></span>  
+<span data-ttu-id="50251-2478">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-2478">tableId</span></span>  
 
-### <a name="method-new"></a><span data-ttu-id="7f44c-2479">メソッド new</span><span class="sxs-lookup"><span data-stu-id="7f44c-2479">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="50251-2479">メソッド new</span><span class="sxs-lookup"><span data-stu-id="50251-2479">Method new</span></span>
 
-<span data-ttu-id="7f44c-2480">systemSequence クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="7f44c-2480">Initializes a new instance of the systemSequence class.</span></span>
+<span data-ttu-id="50251-2480">systemSequence クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="50251-2480">Initializes a new instance of the systemSequence class.</span></span>
 
     public void new()
 
-### <a name="method-removetransidsuspension"></a><span data-ttu-id="7f44c-2481">メソッド removeTransIdSuspension</span><span class="sxs-lookup"><span data-stu-id="7f44c-2481">Method removeTransIdSuspension</span></span>
+### <a name="method-removetransidsuspension"></a><span data-ttu-id="50251-2481">メソッド removeTransIdSuspension</span><span class="sxs-lookup"><span data-stu-id="50251-2481">Method removeTransIdSuspension</span></span>
 
     public void removeTransIdSuspension([TableId tableId])
 
-#### <a name="parameters"></a><span data-ttu-id="7f44c-2482">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7f44c-2482">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="50251-2482">パラメーター</span><span class="sxs-lookup"><span data-stu-id="50251-2482">Parameters</span></span>
 
-<span data-ttu-id="7f44c-2483">tableId</span><span class="sxs-lookup"><span data-stu-id="7f44c-2483">tableId</span></span>  
+<span data-ttu-id="50251-2483">tableId</span><span class="sxs-lookup"><span data-stu-id="50251-2483">tableId</span></span>  
 
 
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
@@ -17,30 +17,30 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: df556ae837fcd84790fc664f2cddf373a1220bf0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a8cf9fe7a72e5246879800c184a2563422a34709
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544119"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833466"
 ---
-# <a name="extend-the-runbase-class"></a><span data-ttu-id="a4796-103">RunBase クラスの拡張</span><span class="sxs-lookup"><span data-stu-id="a4796-103">Extend the RunBase class</span></span>
+# <a name="extend-the-runbase-class"></a><span data-ttu-id="7b159-103">RunBase クラスの拡張</span><span class="sxs-lookup"><span data-stu-id="7b159-103">Extend the RunBase class</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a4796-104">アプリケーション スイートの機能を拡張するとき、**RunBase** クラスを拡張するクラスに遭遇します。</span><span class="sxs-lookup"><span data-stu-id="a4796-104">When you extend functionality of the application suite, you will encounter classes that extend the **RunBase** class.</span></span> <span data-ttu-id="a4796-105">このトピックでは、**RunBase** クラスをエンド・ツー・エンドで拡張する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a4796-105">This topic shows how a **RunBase** class can be augmented end to end.</span></span>
+<span data-ttu-id="7b159-104">アプリケーション スイートの機能を拡張するとき、**RunBase** クラスを拡張するクラスに遭遇します。</span><span class="sxs-lookup"><span data-stu-id="7b159-104">When you extend functionality of the application suite, you will encounter classes that extend the **RunBase** class.</span></span> <span data-ttu-id="7b159-105">このトピックでは、**RunBase** クラスをエンド・ツー・エンドで拡張する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="7b159-105">This topic shows how a **RunBase** class can be augmented end to end.</span></span>
 
-<span data-ttu-id="a4796-106">たとえば、SysUserLogCleanup クラスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="a4796-106">For example, you want to extend the SysUserLogCleanup class.</span></span> <span data-ttu-id="a4796-107">すぐに使えるこのクラスは、SysUserLog テーブルからレコードを削除できます。</span><span class="sxs-lookup"><span data-stu-id="a4796-107">Out of the box, this class can delete records from the SysUserLog table.</span></span> <span data-ttu-id="a4796-108">ただし、削除する前に、これらのレコードを別のテーブルにアーカイブします。</span><span class="sxs-lookup"><span data-stu-id="a4796-108">However, you want to archive these records to a different table before they are deleted.</span></span>
+<span data-ttu-id="7b159-106">たとえば、SysUserLogCleanup クラスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="7b159-106">For example, you want to extend the SysUserLogCleanup class.</span></span> <span data-ttu-id="7b159-107">すぐに使えるこのクラスは、SysUserLog テーブルからレコードを削除できます。</span><span class="sxs-lookup"><span data-stu-id="7b159-107">Out of the box, this class can delete records from the SysUserLog table.</span></span> <span data-ttu-id="7b159-108">ただし、削除する前に、これらのレコードを別のテーブルにアーカイブします。</span><span class="sxs-lookup"><span data-stu-id="7b159-108">However, you want to archive these records to a different table before they are deleted.</span></span>
 
-<span data-ttu-id="a4796-109">SysUserLogCleanup クラスは、**RunBase** クラスです。</span><span class="sxs-lookup"><span data-stu-id="a4796-109">The SysUserLogCleanup class is a **RunBase** class.</span></span> <span data-ttu-id="a4796-110">**RunBase** クラスには、クラスを実行する前にユーザーにパラメーターを求めるダイアログ ボックスがあります。</span><span class="sxs-lookup"><span data-stu-id="a4796-110">The **RunBase** class has a dialog box, where the user is prompted for parameters before the class is run.</span></span> <span data-ttu-id="a4796-111">この例では、ダイアログ ボックスに切り替えボタン コントロールを追加し、コントロールの値を取得して実行メソッドの値を処理し、さらに値が pack および unpack メソッドを介してシリアル化されるどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="a4796-111">For this example, we will add a toggle button control to the dialog box, get the value of the control, act on the value in the run method, and make sure that the value is serialized via the pack and unpack methods.</span></span> <span data-ttu-id="a4796-112">シリアル化により、ダイアログ ボックスを再び開いた場合にユーザーの最後の選択が再表示されることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="a4796-112">Serialization helps guarantee that the user’s last selection is presented again if the dialog box is reopened.</span></span> <span data-ttu-id="a4796-113">また、クラスがバックグラウンドで実行される場合に、設定が適用されていることを保証することもできます。</span><span class="sxs-lookup"><span data-stu-id="a4796-113">It also helps guarantee that the settings are applied if the class is run in the background.</span></span>
+<span data-ttu-id="7b159-109">SysUserLogCleanup クラスは、**RunBase** クラスです。</span><span class="sxs-lookup"><span data-stu-id="7b159-109">The SysUserLogCleanup class is a **RunBase** class.</span></span> <span data-ttu-id="7b159-110">**RunBase** クラスには、クラスを実行する前にユーザーにパラメーターを求めるダイアログ ボックスがあります。</span><span class="sxs-lookup"><span data-stu-id="7b159-110">The **RunBase** class has a dialog box, where the user is prompted for parameters before the class is run.</span></span> <span data-ttu-id="7b159-111">この例では、ダイアログ ボックスに切り替えボタン コントロールを追加し、コントロールの値を取得して実行メソッドの値を処理し、さらに値が pack および unpack メソッドを介してシリアル化されるどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="7b159-111">For this example, we will add a toggle button control to the dialog box, get the value of the control, act on the value in the run method, and make sure that the value is serialized via the pack and unpack methods.</span></span> <span data-ttu-id="7b159-112">シリアル化により、ダイアログ ボックスを再び開いた場合にユーザーの最後の選択が再表示されることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="7b159-112">Serialization helps guarantee that the user’s last selection is presented again if the dialog box is reopened.</span></span> <span data-ttu-id="7b159-113">また、クラスがバックグラウンドで実行される場合に、設定が適用されていることを保証することもできます。</span><span class="sxs-lookup"><span data-stu-id="7b159-113">It also helps guarantee that the settings are applied if the class is run in the background.</span></span>
 
-<span data-ttu-id="a4796-114">他の最終的な拡張機能との衝突を避けるために、次のベストプラクティスに従っています。</span><span class="sxs-lookup"><span data-stu-id="a4796-114">To avoid collisions with other eventual extensions, we followed these best practices:</span></span>
+<span data-ttu-id="7b159-114">他の最終的な拡張機能との衝突を避けるために、次のベストプラクティスに従っています。</span><span class="sxs-lookup"><span data-stu-id="7b159-114">To avoid collisions with other eventual extensions, we followed these best practices:</span></span>
 
-- <span data-ttu-id="a4796-115">**接頭語メンバーおよびメソッド**。</span><span class="sxs-lookup"><span data-stu-id="a4796-115">**Prefix members and methods**.</span></span> <span data-ttu-id="a4796-116">例では、接頭語「my」が使用されます。</span><span class="sxs-lookup"><span data-stu-id="a4796-116">In the example, the prefix “my” is used.</span></span> <span data-ttu-id="a4796-117">このプラクティスは、他の拡張機能と拡張されたクラスの将来のバージョンとの名前の衝突を防ぐために重要です。</span><span class="sxs-lookup"><span data-stu-id="a4796-117">This practice is important, because it helps prevent name clashes with other extensions and future versions of the augmented class.</span></span>
+- <span data-ttu-id="7b159-115">**接頭語メンバーおよびメソッド**。</span><span class="sxs-lookup"><span data-stu-id="7b159-115">**Prefix members and methods**.</span></span> <span data-ttu-id="7b159-116">例では、接頭語「my」が使用されます。</span><span class="sxs-lookup"><span data-stu-id="7b159-116">In the example, the prefix “my” is used.</span></span> <span data-ttu-id="7b159-117">このプラクティスは、他の拡張機能と拡張されたクラスの将来のバージョンとの名前の衝突を防ぐために重要です。</span><span class="sxs-lookup"><span data-stu-id="7b159-117">This practice is important, because it helps prevent name clashes with other extensions and future versions of the augmented class.</span></span>
 
-- <span data-ttu-id="a4796-118">**RunBase.packExtension() および RunBase.unpackExtension() の使用**。</span><span class="sxs-lookup"><span data-stu-id="a4796-118">**Use RunBase.packExtension() and RunBase.unpackExtension()**.</span></span> <span data-ttu-id="a4796-119">これらのメソッドは、非直列的な方法でシリアル化を提供します。</span><span class="sxs-lookup"><span data-stu-id="a4796-119">These methods provide serialization in a nonintrusive manner.</span></span> <span data-ttu-id="a4796-120">それらは同じクラスの複数の拡張のシリアル化を可能にします。</span><span class="sxs-lookup"><span data-stu-id="a4796-120">They enable serialization of multiple extensions of the same class.</span></span> <span data-ttu-id="a4796-121">これらのメソッドは、プラットフォーム Update 5 以降で使用できます。</span><span class="sxs-lookup"><span data-stu-id="a4796-121">The methods are available starting in Platform Update 5.</span></span>
+- <span data-ttu-id="7b159-118">**RunBase.packExtension() および RunBase.unpackExtension() の使用**。</span><span class="sxs-lookup"><span data-stu-id="7b159-118">**Use RunBase.packExtension() and RunBase.unpackExtension()**.</span></span> <span data-ttu-id="7b159-119">これらのメソッドは、非直列的な方法でシリアル化を提供します。</span><span class="sxs-lookup"><span data-stu-id="7b159-119">These methods provide serialization in a nonintrusive manner.</span></span> <span data-ttu-id="7b159-120">それらは同じクラスの複数の拡張のシリアル化を可能にします。</span><span class="sxs-lookup"><span data-stu-id="7b159-120">They enable serialization of multiple extensions of the same class.</span></span> <span data-ttu-id="7b159-121">これらのメソッドは、プラットフォーム Update 5 以降で使用できます。</span><span class="sxs-lookup"><span data-stu-id="7b159-121">The methods are available starting in Platform Update 5.</span></span>
 
-<span data-ttu-id="a4796-122">次の例は、このシナリオを実装する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="a4796-122">The following example shows how to implement this scenario.</span></span>
+<span data-ttu-id="7b159-122">次の例は、このシナリオを実装する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="7b159-122">The following example shows how to implement this scenario.</span></span>
 
 ```
 [ExtensionOf(classStr(SysUserLogCleanup))]

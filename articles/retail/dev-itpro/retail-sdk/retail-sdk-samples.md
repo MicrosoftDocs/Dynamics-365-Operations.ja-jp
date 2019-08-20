@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 266164
 ms.assetid: d24470fd-07ad-4c3f-b23a-3f6c1401edc6
@@ -17,38 +17,38 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 67b404233f707ef83567e24cb46e108271082889
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: b070e2a4c138a0fe8c6d3490721b5151628e88db
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577945"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833063"
 ---
-# <a name="retail-software-development-kit-sdk-samples"></a><span data-ttu-id="d3812-103">Retail ソフトウェア開発キット (SDK) のサンプル</span><span class="sxs-lookup"><span data-stu-id="d3812-103">Retail software development kit (SDK) samples</span></span>
+# <a name="retail-software-development-kit-sdk-samples"></a><span data-ttu-id="cbec7-103">Retail ソフトウェア開発キット (SDK) のサンプル</span><span class="sxs-lookup"><span data-stu-id="cbec7-103">Retail software development kit (SDK) samples</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="d3812-104">このトピックでは、2016 年 12 月に Retail SDK と共にリリースされた 3 つの新しいサンプルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="d3812-104">This topic describes three new samples that were released together with the Retail SDK in December 2016.</span></span>
+<span data-ttu-id="cbec7-104">このトピックでは、2016 年 12 月に Retail SDK と共にリリースされた 3 つの新しいサンプルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-104">This topic describes three new samples that were released together with the Retail SDK in December 2016.</span></span>
 
-## <a name="override-message-handler-sample"></a><span data-ttu-id="d3812-105">メッセージ ハンドラーのサンプルをオーバーライド</span><span class="sxs-lookup"><span data-stu-id="d3812-105">Override message handler sample</span></span>
+## <a name="override-message-handler-sample"></a><span data-ttu-id="cbec7-105">メッセージ ハンドラーのサンプルをオーバーライド</span><span class="sxs-lookup"><span data-stu-id="cbec7-105">Override message handler sample</span></span>
 
-<span data-ttu-id="d3812-106">**シナリオ:**  Fabrikam の顧客の 1 人が顧客関係管理 (CRM) システムに参加していても、Microsoft Dynamics 365 for Retail にインポートされていない場合があります。</span><span class="sxs-lookup"><span data-stu-id="d3812-106">**Scenario:** Sometimes, one of Fabrikam's customers is in the customer relationship management (CRM) system but isn't imported into Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="d3812-107">したがって、Fabrikam は、CRM システムと POS (販売時点管理) から顧客を検索したいと考えています。</span><span class="sxs-lookup"><span data-stu-id="d3812-107">Therefore, Fabrikam wants to look up the customer from the CRM system and the point of sale (POS).</span></span> <span data-ttu-id="d3812-108">業務要件を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d3812-108">Here are the business requirements:</span></span>
+<span data-ttu-id="cbec7-106">**シナリオ:**  Fabrikam の顧客の 1 人が顧客関係管理 (CRM) システムに参加していても、Microsoft Dynamics 365 for Retail にインポートされていない場合があります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-106">**Scenario:** Sometimes, one of Fabrikam's customers is in the customer relationship management (CRM) system but isn't imported into Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="cbec7-107">したがって、Fabrikam は、CRM システムと POS (販売時点管理) から顧客を検索したいと考えています。</span><span class="sxs-lookup"><span data-stu-id="cbec7-107">Therefore, Fabrikam wants to look up the customer from the CRM system and the point of sale (POS).</span></span> <span data-ttu-id="cbec7-108">業務要件を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-108">Here are the business requirements:</span></span>
 
-- <span data-ttu-id="d3812-109">CRM システムと POS から顧客を検索します。</span><span class="sxs-lookup"><span data-stu-id="d3812-109">Search for customers from the CRM system and the POS.</span></span>
-- <span data-ttu-id="d3812-110">結果をマージして、Retail Modern POS (MPOS) で統合された結果セットを表示します。</span><span class="sxs-lookup"><span data-stu-id="d3812-110">Merge the results, and show a unified result set in Retail Modern POS (MPOS).</span></span>
+- <span data-ttu-id="cbec7-109">CRM システムと POS から顧客を検索します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-109">Search for customers from the CRM system and the POS.</span></span>
+- <span data-ttu-id="cbec7-110">結果をマージして、Retail Modern POS (MPOS) で統合された結果セットを表示します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-110">Merge the results, and show a unified result set in Retail Modern POS (MPOS).</span></span>
 
-<span data-ttu-id="d3812-111">オーバーライド メッセージ ハンドラーを使用する場合があるいくつかの状況を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d3812-111">Here are some situations where you might use the override message handler:</span></span>
+<span data-ttu-id="cbec7-111">オーバーライド メッセージ ハンドラーを使用する場合があるいくつかの状況を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-111">Here are some situations where you might use the override message handler:</span></span>
 
-- <span data-ttu-id="d3812-112">在庫の更新や照会のためにサード パーティ在庫システムの使用を必要とします。</span><span class="sxs-lookup"><span data-stu-id="d3812-112">You want to use a third-party inventory system for stock updates and inquiries.</span></span>
-- <span data-ttu-id="d3812-113">税金の計算のために、外部の税システムとの統合を必要としています。</span><span class="sxs-lookup"><span data-stu-id="d3812-113">You want to integrate with an external tax system for tax calculation.</span></span>
-- <span data-ttu-id="d3812-114">サード パーティのロイヤルティ システムとの統合を必要としています。</span><span class="sxs-lookup"><span data-stu-id="d3812-114">You want to integrate with a third-party loyalty system.</span></span>
+- <span data-ttu-id="cbec7-112">在庫の更新や照会のためにサード パーティ在庫システムの使用を必要とします。</span><span class="sxs-lookup"><span data-stu-id="cbec7-112">You want to use a third-party inventory system for stock updates and inquiries.</span></span>
+- <span data-ttu-id="cbec7-113">税金の計算のために、外部の税システムとの統合を必要としています。</span><span class="sxs-lookup"><span data-stu-id="cbec7-113">You want to integrate with an external tax system for tax calculation.</span></span>
+- <span data-ttu-id="cbec7-114">サード パーティのロイヤルティ システムとの統合を必要としています。</span><span class="sxs-lookup"><span data-stu-id="cbec7-114">You want to integrate with a third-party loyalty system.</span></span>
 
-<span data-ttu-id="d3812-115">サンプルの基本的な作業を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d3812-115">Here are the basic tasks in the sample:</span></span>
+<span data-ttu-id="cbec7-115">サンプルの基本的な作業を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-115">Here are the basic tasks in the sample:</span></span>
 
-1. <span data-ttu-id="d3812-116">外部の検索が実行できるように既存の検索の動作を変更するため、既存の顧客検索要求をオーバーライドして実装します。</span><span class="sxs-lookup"><span data-stu-id="d3812-116">Override and implement the existing customer search request, because we are changing the existing search behavior so that an external search is performed.</span></span>
-2. <span data-ttu-id="d3812-117">外部検索が完了した後、標準検索の要求を呼び出し、両方の結果をマージします。</span><span class="sxs-lookup"><span data-stu-id="d3812-117">After the external search is completed, call the standard search request, and merge both results.</span></span>
+1. <span data-ttu-id="cbec7-116">外部の検索が実行できるように既存の検索の動作を変更するため、既存の顧客検索要求をオーバーライドして実装します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-116">Override and implement the existing customer search request, because we are changing the existing search behavior so that an external search is performed.</span></span>
+2. <span data-ttu-id="cbec7-117">外部検索が完了した後、標準検索の要求を呼び出し、両方の結果をマージします。</span><span class="sxs-lookup"><span data-stu-id="cbec7-117">After the external search is completed, call the standard search request, and merge both results.</span></span>
 
-<span data-ttu-id="d3812-118">これらのタスクのコードを次に示します。</span><span class="sxs-lookup"><span data-stu-id="d3812-118">Here is the code for these tasks.</span></span>
+<span data-ttu-id="cbec7-118">これらのタスクのコードを次に示します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-118">Here is the code for these tasks.</span></span>
 
 ```
 public sealed class CustomerSearchRequestHandler : SingleRequestHandler<CustomersSearchRequest, CustomersSearchResponse>
@@ -73,29 +73,29 @@ public sealed class CustomerSearchRequestHandler : SingleRequestHandler<Customer
 }
 ```
 
-<span data-ttu-id="d3812-119">完全なサンプルコードは、ソフトウェアの開発キット (SDK) の RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.CustomerSearchSample フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="d3812-119">The full sample code is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.CustomerSearchSample folder of the software development kit (SDK).</span></span>
+<span data-ttu-id="cbec7-119">完全なサンプルコードは、ソフトウェアの開発キット (SDK) の RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.CustomerSearchSample フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-119">The full sample code is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.CustomerSearchSample folder of the software development kit (SDK).</span></span>
 
-### <a name="best-practice"></a><span data-ttu-id="d3812-120">ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="d3812-120">Best practice</span></span>
+### <a name="best-practice"></a><span data-ttu-id="cbec7-120">ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="cbec7-120">Best practice</span></span>
 
-<span data-ttu-id="d3812-121">既存の要求または応答の動作を完全に変更する場合、または標準ロジックに加えてロジックを使用する場合は、標準のメッセージ ハンドラーをオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="d3812-121">If you're planning to completely change the behavior of an existing request or response, or if you want to use your logic in addition to the standard logic, override the standard message handler.</span></span>
+<span data-ttu-id="cbec7-121">既存の要求または応答の動作を完全に変更する場合、または標準ロジックに加えてロジックを使用する場合は、標準のメッセージ ハンドラーをオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="cbec7-121">If you're planning to completely change the behavior of an existing request or response, or if you want to use your logic in addition to the standard logic, override the standard message handler.</span></span>
 
-## <a name="request-handler-triggers-and-extension-properties-sample"></a><span data-ttu-id="d3812-122">要求ハンドラー トリガーおよび拡張プロパティのサンプル</span><span class="sxs-lookup"><span data-stu-id="d3812-122">Request handler triggers and extension properties sample</span></span>
+## <a name="request-handler-triggers-and-extension-properties-sample"></a><span data-ttu-id="cbec7-122">要求ハンドラー トリガーおよび拡張プロパティのサンプル</span><span class="sxs-lookup"><span data-stu-id="cbec7-122">Request handler triggers and extension properties sample</span></span>
 
-<span data-ttu-id="d3812-123">**シナリオ:** Fabrikam が電子メール マーケティングに関する顧客電子メールの基本設定を収集します。</span><span class="sxs-lookup"><span data-stu-id="d3812-123">**Scenario:** Fabrikam wants to collect customer email preferences for email marketing.</span></span> <span data-ttu-id="d3812-124">業務要件を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d3812-124">Here are the business requirements:</span></span>
+<span data-ttu-id="cbec7-123">**シナリオ:** Fabrikam が電子メール マーケティングに関する顧客電子メールの基本設定を収集します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-123">**Scenario:** Fabrikam wants to collect customer email preferences for email marketing.</span></span> <span data-ttu-id="cbec7-124">業務要件を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-124">Here are the business requirements:</span></span>
 
-- <span data-ttu-id="d3812-125">顧客の電子メールの基本設定の収集と更新をPOS から行えるようにします。</span><span class="sxs-lookup"><span data-stu-id="d3812-125">Enable a customer's email preferences to be collected and updated from the POS.</span></span>
-- <span data-ttu-id="d3812-126">顧客の電子メールの基本設定はすぐに有効になります。</span><span class="sxs-lookup"><span data-stu-id="d3812-126">A customer's email preferences should become effective immediately.</span></span>
+- <span data-ttu-id="cbec7-125">顧客の電子メールの基本設定の収集と更新をPOS から行えるようにします。</span><span class="sxs-lookup"><span data-stu-id="cbec7-125">Enable a customer's email preferences to be collected and updated from the POS.</span></span>
+- <span data-ttu-id="cbec7-126">顧客の電子メールの基本設定はすぐに有効になります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-126">A customer's email preferences should become effective immediately.</span></span>
 
-<span data-ttu-id="d3812-127">拡張機能プロパティを使用する場合があるいくつかの状況を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d3812-127">Here are some situations where you might use extension properties:</span></span>
+<span data-ttu-id="cbec7-127">拡張機能プロパティを使用する場合があるいくつかの状況を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-127">Here are some situations where you might use extension properties:</span></span>
 
-- <span data-ttu-id="d3812-128">顧客や販売注文などのエンティティの拡張を望んでいますが、新しい別のエンティティの作成を望んでいません。</span><span class="sxs-lookup"><span data-stu-id="d3812-128">You want to extend entities such as the customer and sales order, but you don't want to create a new separate entity.</span></span>
-- <span data-ttu-id="d3812-129">新しいエンティティ フィールドはデータベースから読み取り、または書き込みがおこなわれますが、commerce runtime (CRT) と POS の間で送信し、クライアントで更新される必要があります。</span><span class="sxs-lookup"><span data-stu-id="d3812-129">As new entity fields are read from or written to the database, they should be sent between the commerce runtime (CRT) and the POS, and updated in the client.</span></span>
-- <span data-ttu-id="d3812-130">カスタム ロジックの流れを管理するために使用できる、一時的な内部フラグが必要です。</span><span class="sxs-lookup"><span data-stu-id="d3812-130">You want temporary internal flags that can be used to control the flow of custom logic.</span></span>
-- <span data-ttu-id="d3812-131">レシートを生成するときにレシート カスタマイズがアクセスする、カスタム レシート フィールドを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d3812-131">You want to set custom receipt fields that the receipt customization will access when receipts are generated.</span></span>
+- <span data-ttu-id="cbec7-128">顧客や販売注文などのエンティティの拡張を望んでいますが、新しい別のエンティティの作成を望んでいません。</span><span class="sxs-lookup"><span data-stu-id="cbec7-128">You want to extend entities such as the customer and sales order, but you don't want to create a new separate entity.</span></span>
+- <span data-ttu-id="cbec7-129">新しいエンティティ フィールドはデータベースから読み取り、または書き込みがおこなわれますが、commerce runtime (CRT) と POS の間で送信し、クライアントで更新される必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-129">As new entity fields are read from or written to the database, they should be sent between the commerce runtime (CRT) and the POS, and updated in the client.</span></span>
+- <span data-ttu-id="cbec7-130">カスタム ロジックの流れを管理するために使用できる、一時的な内部フラグが必要です。</span><span class="sxs-lookup"><span data-stu-id="cbec7-130">You want temporary internal flags that can be used to control the flow of custom logic.</span></span>
+- <span data-ttu-id="cbec7-131">レシートを生成するときにレシート カスタマイズがアクセスする、カスタム レシート フィールドを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-131">You want to set custom receipt fields that the receipt customization will access when receipts are generated.</span></span>
 
-<span data-ttu-id="d3812-132">次の手順は、CRT コードの変更を示しています。</span><span class="sxs-lookup"><span data-stu-id="d3812-132">The following steps show the CRT code changes.</span></span> <span data-ttu-id="d3812-133">MPOS およびチャンネル データベースで、サンプル全体を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d3812-133">For MPOS and the channel database, see the full sample.</span></span> <span data-ttu-id="d3812-134">次のサンプルは、標準的なデータベース コンポーネントへの変更が必要となった場合に前のコードとは異なることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="d3812-134">Notice that the following samples differ from previous code, where changes to the standard database artifacts were required.</span></span> <span data-ttu-id="d3812-135">(たとえば、新しい列を拡張プロパティとして公開するには、ビューへの変更が必要になります。</span><span class="sxs-lookup"><span data-stu-id="d3812-135">(For example, to expose new columns as extension properties, changes to the view were required.</span></span> <span data-ttu-id="d3812-136">拡張機能のプロパティの一覧を受信し、これらのプロパティを標準フィールドと共に更新するには、ストアド プロシージャの変更が必要でした。最終的にインラインで変更されていないモデルに移行すると、データベースが更新されてもマージ競合は発生しません。</span><span class="sxs-lookup"><span data-stu-id="d3812-136">To receive a list of extension properties and update these properties together with standard fields, changes to the stored procedure were required.) Eventually, as we move to a model that doesn't have inline changes, merge conflicts should not occur even when the database is updated.</span></span> <span data-ttu-id="d3812-137">したがって、エンティティの読み込み、書き込み、更新のために個別のデータベース呼び出しを行うことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="d3812-137">Therefore, our new recommendation is that you make separate database calls to read, write, and update entities.</span></span>
+<span data-ttu-id="cbec7-132">次の手順は、CRT コードの変更を示しています。</span><span class="sxs-lookup"><span data-stu-id="cbec7-132">The following steps show the CRT code changes.</span></span> <span data-ttu-id="cbec7-133">MPOS およびチャンネル データベースで、サンプル全体を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cbec7-133">For MPOS and the channel database, see the full sample.</span></span> <span data-ttu-id="cbec7-134">次のサンプルは、標準的なデータベース コンポーネントへの変更が必要となった場合に前のコードとは異なることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="cbec7-134">Notice that the following samples differ from previous code, where changes to the standard database artifacts were required.</span></span> <span data-ttu-id="cbec7-135">(たとえば、新しい列を拡張プロパティとして公開するには、ビューへの変更が必要になります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-135">(For example, to expose new columns as extension properties, changes to the view were required.</span></span> <span data-ttu-id="cbec7-136">拡張機能のプロパティの一覧を受信し、これらのプロパティを標準フィールドと共に更新するには、ストアド プロシージャの変更が必要でした。最終的にインラインで変更されていないモデルに移行すると、データベースが更新されてもマージ競合は発生しません。</span><span class="sxs-lookup"><span data-stu-id="cbec7-136">To receive a list of extension properties and update these properties together with standard fields, changes to the stored procedure were required.) Eventually, as we move to a model that doesn't have inline changes, merge conflicts should not occur even when the database is updated.</span></span> <span data-ttu-id="cbec7-137">したがって、エンティティの読み込み、書き込み、更新のために個別のデータベース呼び出しを行うことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="cbec7-137">Therefore, our new recommendation is that you make separate database calls to read, write, and update entities.</span></span>
 
-1. <span data-ttu-id="d3812-138">**エンティティの読み取り**</span><span class="sxs-lookup"><span data-stu-id="d3812-138">**Read the entity.**</span></span> <span data-ttu-id="d3812-139">**GetCustomerDataRequest** の転記トリガーを実装し、チャネル データベースから値を読み取って拡張プロパティに値を追加します。</span><span class="sxs-lookup"><span data-stu-id="d3812-139">Implement the post-trigger for **GetCustomerDataRequest**, read the value from channel database, and add the value to the extension property.</span></span>
+1. <span data-ttu-id="cbec7-138">**エンティティの読み取り**</span><span class="sxs-lookup"><span data-stu-id="cbec7-138">**Read the entity.**</span></span> <span data-ttu-id="cbec7-139">**GetCustomerDataRequest** の転記トリガーを実装し、チャネル データベースから値を読み取って拡張プロパティに値を追加します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-139">Implement the post-trigger for **GetCustomerDataRequest**, read the value from channel database, and add the value to the extension property.</span></span>
 
     ```
     public class GetCustomerTriggers : IRequestTrigger
@@ -136,7 +136,7 @@ public sealed class CustomerSearchRequestHandler : SingleRequestHandler<Customer
     }
     ```
 
-2. <span data-ttu-id="d3812-140">**エンティティの書き込み。**</span><span class="sxs-lookup"><span data-stu-id="d3812-140">**Write the entity.**</span></span> <span data-ttu-id="d3812-141">**CreateOrUpdateCustomerDataRequest** のハンドラーをオーバーライドし、トランザクション スコープ内で元のリクエスト ハンドラーとカスタム ストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="d3812-141">Override the handler for **CreateOrUpdateCustomerDataRequest** to run the original request handler and the custom stored procedure inside a transaction scope.</span></span> <span data-ttu-id="d3812-142">データベース トランザクションが必要ではない場合は、ポスト トリガーで十分です。</span><span class="sxs-lookup"><span data-stu-id="d3812-142">If the database transaction isn't required, a post-trigger suffices here.</span></span>
+2. <span data-ttu-id="cbec7-140">**エンティティの書き込み。**</span><span class="sxs-lookup"><span data-stu-id="cbec7-140">**Write the entity.**</span></span> <span data-ttu-id="cbec7-141">**CreateOrUpdateCustomerDataRequest** のハンドラーをオーバーライドし、トランザクション スコープ内で元のリクエスト ハンドラーとカスタム ストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-141">Override the handler for **CreateOrUpdateCustomerDataRequest** to run the original request handler and the custom stored procedure inside a transaction scope.</span></span> <span data-ttu-id="cbec7-142">データベース トランザクションが必要ではない場合は、ポスト トリガーで十分です。</span><span class="sxs-lookup"><span data-stu-id="cbec7-142">If the database transaction isn't required, a post-trigger suffices here.</span></span>
 
     ```
     protected override SingleEntityDataServiceResponse<Customer> Process(CreateOrUpdateCustomerDataRequest request)
@@ -161,23 +161,23 @@ public sealed class CustomerSearchRequestHandler : SingleRequestHandler<Customer
     }
     ```
 
-<span data-ttu-id="d3812-143">このサンプルを実行する前に、チャネル データベースでカスタム テーブル、ビュー、およびストアド プロシージャを作成することを確認します。</span><span class="sxs-lookup"><span data-stu-id="d3812-143">Before you try this sample, be sure to create the custom tables, views, and stored procedures in the channel database.</span></span> <span data-ttu-id="d3812-144">また、MPOS に関連する変更を行います。</span><span class="sxs-lookup"><span data-stu-id="d3812-144">Additionally, make the relevant changes to MPOS.</span></span> <span data-ttu-id="d3812-145">追加のコメントと共に、完全なサンプル コードが、RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.EmailPreferenceSample フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="d3812-145">The full sample code, together with additional comments, is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.EmailPreferenceSample folder of the SDK.</span></span> <span data-ttu-id="d3812-146">カスタム データベース アーティファクトを作成する方法の詳細については、SDK の RetailSDK\\Documents\\SampleExtensionsInstructions\\EmailPreference フォルダを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d3812-146">For information about how to create custom database artifacts, see the RetailSDK\\Documents\\SampleExtensionsInstructions\\EmailPreference folder of the SDK.</span></span>
+<span data-ttu-id="cbec7-143">このサンプルを実行する前に、チャネル データベースでカスタム テーブル、ビュー、およびストアド プロシージャを作成することを確認します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-143">Before you try this sample, be sure to create the custom tables, views, and stored procedures in the channel database.</span></span> <span data-ttu-id="cbec7-144">また、MPOS に関連する変更を行います。</span><span class="sxs-lookup"><span data-stu-id="cbec7-144">Additionally, make the relevant changes to MPOS.</span></span> <span data-ttu-id="cbec7-145">追加のコメントと共に、完全なサンプル コードが、RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.EmailPreferenceSample フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-145">The full sample code, together with additional comments, is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.EmailPreferenceSample folder of the SDK.</span></span> <span data-ttu-id="cbec7-146">カスタム データベース アーティファクトを作成する方法の詳細については、SDK の RetailSDK\\Documents\\SampleExtensionsInstructions\\EmailPreference フォルダを参照してください。</span><span class="sxs-lookup"><span data-stu-id="cbec7-146">For information about how to create custom database artifacts, see the RetailSDK\\Documents\\SampleExtensionsInstructions\\EmailPreference folder of the SDK.</span></span>
 
-### <a name="best-practice"></a><span data-ttu-id="d3812-147">ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="d3812-147">Best practice</span></span>
+### <a name="best-practice"></a><span data-ttu-id="cbec7-147">ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="cbec7-147">Best practice</span></span>
 
-<span data-ttu-id="d3812-148">トリガーが連鎖されている場合トリガーの順序は保証されていないため、また内部キャッシュ メカニズムのために、プレトリガーは*要求*メッセージを変更してはならず、ポストトリガーは*応答*メッセージを変更できません。</span><span class="sxs-lookup"><span data-stu-id="d3812-148">Because the order of triggers isn't guaranteed when the triggers are chained, and because of the internal cache mechanism, the pre-triggers should not change the *request* message, and the post-triggers should not change the *response* message.</span></span> <span data-ttu-id="d3812-149">拡張プロパティは、コア プロパティが変更されていないため、許可されます。</span><span class="sxs-lookup"><span data-stu-id="d3812-149">Extension properties are allowed, because no core properties are being changed.</span></span> <span data-ttu-id="d3812-150">機能拡張プロパティを処理するには、プリトリガーとポストトリガーを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d3812-150">You should use pre-triggers and post-triggers to handle extension properties.</span></span> <span data-ttu-id="d3812-151">また、検証を行うためにプレトリガーを使用し、追加のアクションを行うためにポストトリガーを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d3812-151">You should also use pre-triggers to do validation and post-triggers to do additional actions.</span></span>
+<span data-ttu-id="cbec7-148">トリガーが連鎖されている場合トリガーの順序は保証されていないため、また内部キャッシュ メカニズムのために、プレトリガーは*要求*メッセージを変更してはならず、ポストトリガーは*応答*メッセージを変更できません。</span><span class="sxs-lookup"><span data-stu-id="cbec7-148">Because the order of triggers isn't guaranteed when the triggers are chained, and because of the internal cache mechanism, the pre-triggers should not change the *request* message, and the post-triggers should not change the *response* message.</span></span> <span data-ttu-id="cbec7-149">拡張プロパティは、コア プロパティが変更されていないため、許可されます。</span><span class="sxs-lookup"><span data-stu-id="cbec7-149">Extension properties are allowed, because no core properties are being changed.</span></span> <span data-ttu-id="cbec7-150">機能拡張プロパティを処理するには、プリトリガーとポストトリガーを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-150">You should use pre-triggers and post-triggers to handle extension properties.</span></span> <span data-ttu-id="cbec7-151">また、検証を行うためにプレトリガーを使用し、追加のアクションを行うためにポストトリガーを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-151">You should also use pre-triggers to do validation and post-triggers to do additional actions.</span></span>
 
-## <a name="custom-fields-and-custom-receipt-types-sample"></a><span data-ttu-id="d3812-152">カスタム フィールドとカスタム レシート タイプのサンプル</span><span class="sxs-lookup"><span data-stu-id="d3812-152">Custom fields and custom receipt types sample</span></span>
+## <a name="custom-fields-and-custom-receipt-types-sample"></a><span data-ttu-id="cbec7-152">カスタム フィールドとカスタム レシート タイプのサンプル</span><span class="sxs-lookup"><span data-stu-id="cbec7-152">Custom fields and custom receipt types sample</span></span>
 
-<span data-ttu-id="d3812-153">**シナリオ:** Fabrikam は保証のついた製品が販売されるたびに特別な領収書を印刷したいと考えています。</span><span class="sxs-lookup"><span data-stu-id="d3812-153">**Scenario:** Fabrikam wants to print a special receipt whenever products that have a warranty are sold.</span></span> <span data-ttu-id="d3812-154">販売レシートには、保証の有効期限日、保証 ID、およびその他の情報を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="d3812-154">Sales receipts should include the warranty expiration date, the warranty ID, and other information.</span></span> <span data-ttu-id="d3812-155">業務要件を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d3812-155">Here are the business requirements:</span></span>
+<span data-ttu-id="cbec7-153">**シナリオ:** Fabrikam は保証のついた製品が販売されるたびに特別な領収書を印刷したいと考えています。</span><span class="sxs-lookup"><span data-stu-id="cbec7-153">**Scenario:** Fabrikam wants to print a special receipt whenever products that have a warranty are sold.</span></span> <span data-ttu-id="cbec7-154">販売レシートには、保証の有効期限日、保証 ID、およびその他の情報を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-154">Sales receipts should include the warranty expiration date, the warranty ID, and other information.</span></span> <span data-ttu-id="cbec7-155">業務要件を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-155">Here are the business requirements:</span></span>
 
-- <span data-ttu-id="d3812-156">特殊な領収書を印刷します。</span><span class="sxs-lookup"><span data-stu-id="d3812-156">Print special receipts.</span></span>
-- <span data-ttu-id="d3812-157">販売レシートに、その他の保証の情報を印刷します。</span><span class="sxs-lookup"><span data-stu-id="d3812-157">Print additional warranty information on sale receipts.</span></span>
+- <span data-ttu-id="cbec7-156">特殊な領収書を印刷します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-156">Print special receipts.</span></span>
+- <span data-ttu-id="cbec7-157">販売レシートに、その他の保証の情報を印刷します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-157">Print additional warranty information on sale receipts.</span></span>
 
-<span data-ttu-id="d3812-158">次の手順は、CRT コードの変更を示しています。</span><span class="sxs-lookup"><span data-stu-id="d3812-158">The following steps show the CRT code changes:</span></span>
+<span data-ttu-id="cbec7-158">次の手順は、CRT コードの変更を示しています。</span><span class="sxs-lookup"><span data-stu-id="cbec7-158">The following steps show the CRT code changes:</span></span>
 
-1. <span data-ttu-id="d3812-159">本社 (HQ) では 2 つのカスタム レシート フィールドを作成します。保証有効期限の **EXPIRATIONDATE** と保証 ID の **WARRANTYID** です。</span><span class="sxs-lookup"><span data-stu-id="d3812-159">At the headquarters (HQ), create two custom receipt fields: **EXPIRATIONDATE** for the warranty expiration date and **WARRANTYID** for the warranty ID.</span></span> <span data-ttu-id="d3812-160">レシート形式レイアウトにこれらのフィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="d3812-160">Add these fields to the receipt format layout.</span></span>
-2. <span data-ttu-id="d3812-161">カスタム フィールドを売上票または領収書フォーマットに追加するには、次のコードに示すように **GetSalesTransactionCustomReceiptFieldServiceRequest** を実装します。</span><span class="sxs-lookup"><span data-stu-id="d3812-161">To add the custom fields to the sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest**, as shown in the following code.</span></span> <span data-ttu-id="d3812-162">このコードは、標準コードが受領フィールドを認識しない場合に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="d3812-162">This code is called every time that the standard code doesn't recognize the receipt field.</span></span>
+1. <span data-ttu-id="cbec7-159">本社 (HQ) では 2 つのカスタム レシート フィールドを作成します。保証有効期限の **EXPIRATIONDATE** と保証 ID の **WARRANTYID** です。</span><span class="sxs-lookup"><span data-stu-id="cbec7-159">At the headquarters (HQ), create two custom receipt fields: **EXPIRATIONDATE** for the warranty expiration date and **WARRANTYID** for the warranty ID.</span></span> <span data-ttu-id="cbec7-160">レシート形式レイアウトにこれらのフィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-160">Add these fields to the receipt format layout.</span></span>
+2. <span data-ttu-id="cbec7-161">カスタム フィールドを売上票または領収書フォーマットに追加するには、次のコードに示すように **GetSalesTransactionCustomReceiptFieldServiceRequest** を実装します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-161">To add the custom fields to the sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest**, as shown in the following code.</span></span> <span data-ttu-id="cbec7-162">このコードは、標準コードが受領フィールドを認識しない場合に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="cbec7-162">This code is called every time that the standard code doesn't recognize the receipt field.</span></span>
 
     ```
     public IEnumerable<Type> SupportedRequestTypes
@@ -198,7 +198,7 @@ public sealed class CustomerSearchRequestHandler : SingleRequestHandler<Customer
     }
     ```
 
-3. <span data-ttu-id="d3812-163">サンプル フィールドのロジックを追加します。</span><span class="sxs-lookup"><span data-stu-id="d3812-163">Add the logic for your sample fields.</span></span>
+3. <span data-ttu-id="cbec7-163">サンプル フィールドのロジックを追加します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-163">Add the logic for your sample fields.</span></span>
 
     ```
     private GetCustomReceiptFieldServiceResponse GetCustomReceiptFieldForSalesTransactionReceipts( GetSalesTransactionCustomReceiptFieldServiceRequest request)
@@ -222,7 +222,7 @@ public sealed class CustomerSearchRequestHandler : SingleRequestHandler<Customer
     }
     ```
 
-4. <span data-ttu-id="d3812-164">新しいレシート タイプを作成するには、**GetCustomReceiptsRequest** を実装します。</span><span class="sxs-lookup"><span data-stu-id="d3812-164">To create new receipt type, implement **GetCustomReceiptsRequest**.</span></span>
+4. <span data-ttu-id="cbec7-164">新しいレシート タイプを作成するには、**GetCustomReceiptsRequest** を実装します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-164">To create new receipt type, implement **GetCustomReceiptsRequest**.</span></span>
 
     ```
     protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)
@@ -246,11 +246,11 @@ public sealed class CustomerSearchRequestHandler : SingleRequestHandler<Customer
     }
     ```
 
-<span data-ttu-id="d3812-165">完全なサンプルコードは、ソフトウェアの開発キット (SDK) の RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="d3812-165">The full sample code is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder folder of the SDK.</span></span>
+<span data-ttu-id="cbec7-165">完全なサンプルコードは、ソフトウェアの開発キット (SDK) の RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-165">The full sample code is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder folder of the SDK.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d3812-166">クライアントから カスタム レシート タイプの印刷を指示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d3812-166">You should call the printing of the custom receipt type from the client.</span></span> <span data-ttu-id="d3812-167">詳細については、[拡張性のパターンおよびベスト プラクティス](https://youtu.be/qQkHFubENIY) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d3812-167">For more information, see [Extensibility patterns and best practices](https://youtu.be/qQkHFubENIY).</span></span>
+> <span data-ttu-id="cbec7-166">クライアントから カスタム レシート タイプの印刷を指示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbec7-166">You should call the printing of the custom receipt type from the client.</span></span> <span data-ttu-id="cbec7-167">詳細については、[拡張性のパターンおよびベスト プラクティス](https://youtu.be/qQkHFubENIY) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cbec7-167">For more information, see [Extensibility patterns and best practices](https://youtu.be/qQkHFubENIY).</span></span>
 
-### <a name="best-practice"></a><span data-ttu-id="d3812-168">ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="d3812-168">Best practice</span></span>
+### <a name="best-practice"></a><span data-ttu-id="cbec7-168">ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="cbec7-168">Best practice</span></span>
 
-<span data-ttu-id="d3812-169">各カスタム受領書フィールドに対してデータベース呼び出しを行うことは避けてください。</span><span class="sxs-lookup"><span data-stu-id="d3812-169">Avoid making database calls for each custom receipt field.</span></span> <span data-ttu-id="d3812-170">代わりに、エンティティに前に設定された拡張機能プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="d3812-170">Instead, use extension properties that were previously set on entities.</span></span> <span data-ttu-id="d3812-171">カスタムのレシート タイプは、任意のロジック (販売明細行ごと、いくつかの条件ごとに 1 回) で呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="d3812-171">Custom receipt types can be called by any logic (per sales line, one time per some condition).</span></span> <span data-ttu-id="d3812-172">包括的なシナリオのサンプルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d3812-172">See the sample for a more complete scenario.</span></span>
+<span data-ttu-id="cbec7-169">各カスタム受領書フィールドに対してデータベース呼び出しを行うことは避けてください。</span><span class="sxs-lookup"><span data-stu-id="cbec7-169">Avoid making database calls for each custom receipt field.</span></span> <span data-ttu-id="cbec7-170">代わりに、エンティティに前に設定された拡張機能プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="cbec7-170">Instead, use extension properties that were previously set on entities.</span></span> <span data-ttu-id="cbec7-171">カスタムのレシート タイプは、任意のロジック (販売明細行ごと、いくつかの条件ごとに 1 回) で呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="cbec7-171">Custom receipt types can be called by any logic (per sales line, one time per some condition).</span></span> <span data-ttu-id="cbec7-172">包括的なシナリオのサンプルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="cbec7-172">See the sample for a more complete scenario.</span></span>
