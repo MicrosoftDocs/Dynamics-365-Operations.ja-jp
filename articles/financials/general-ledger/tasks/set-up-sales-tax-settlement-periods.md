@@ -3,61 +3,63 @@ title: 消費税精算期間を設定します
 description: 売上税決済期間は、売上税の報告および支払が必要な間隔についての情報を含みます。
 author: twheeloc
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 08/05/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8304d9e8997a5d31740ee1203aa4bf0603014056
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569589"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862991"
 ---
-# <a name="set-up-sales-tax-settlement-periods"></a><span data-ttu-id="8ee46-103">消費税精算期間を設定します</span><span class="sxs-lookup"><span data-stu-id="8ee46-103">Set up sales tax settlement periods</span></span>
+# <a name="set-up-sales-tax-settlement-periods"></a><span data-ttu-id="75db6-103">消費税精算期間を設定します</span><span class="sxs-lookup"><span data-stu-id="75db6-103">Set up sales tax settlement periods</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="8ee46-104">売上税決済期間は、売上税の報告および支払が必要な間隔についての情報を含みます。</span><span class="sxs-lookup"><span data-stu-id="8ee46-104">Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid.</span></span> <span data-ttu-id="8ee46-105">決済プロセスは、特定の日付範囲の決済期間に実行できます。</span><span class="sxs-lookup"><span data-stu-id="8ee46-105">A settlement process can be run for a settlement period for a specific date interval.</span></span> <span data-ttu-id="8ee46-106">決済期間に関連付けられたすべての税コードが決済されます。</span><span class="sxs-lookup"><span data-stu-id="8ee46-106">All tax codes associated with the settlement period will be settled.</span></span> <span data-ttu-id="8ee46-107">関連する売上税所轄官庁の設定に応じて、未払税金は仕入先または総勘定元帳勘定に転記されます。</span><span class="sxs-lookup"><span data-stu-id="8ee46-107">Depending on the set up of the related Sales tax authority, the tax liability is posted either to a vendor or a General ledger account.</span></span>
+<span data-ttu-id="75db6-104">売上税決済期間は、売上税の報告および支払が必要な間隔についての情報を含みます。</span><span class="sxs-lookup"><span data-stu-id="75db6-104">Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid.</span></span> <span data-ttu-id="75db6-105">決済プロセスは、特定の日付範囲の決済期間に実行できます。</span><span class="sxs-lookup"><span data-stu-id="75db6-105">A settlement process can be run for a settlement period for a specific date interval.</span></span> <span data-ttu-id="75db6-106">決済期間に関連付けられたすべての税コードが決済されます。</span><span class="sxs-lookup"><span data-stu-id="75db6-106">All tax codes associated with the settlement period will be settled.</span></span> <span data-ttu-id="75db6-107">関連する売上税所轄官庁の設定に応じて、未払税金は仕入先または総勘定元帳勘定に転記されます。</span><span class="sxs-lookup"><span data-stu-id="75db6-107">Depending on the set up of the related Sales tax authority, the tax liability is posted either to a vendor or a General ledger account.</span></span>
 
 
 
-<span data-ttu-id="8ee46-108">このタスクでは、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-108">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="75db6-108">このタスクでは、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="75db6-108">This task uses the USMF demo company.</span></span>
 
 
 
-1. <span data-ttu-id="8ee46-109">[税] > [間接税] > [売上税] > [売上税決済期間] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-109">Go to Tax > Indirect taxes > Sales tax > Sales tax settlement periods.</span></span>
-2. <span data-ttu-id="8ee46-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8ee46-110">Click New.</span></span>
-3. <span data-ttu-id="8ee46-111">[決済期間] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-111">In the Settlement period field, type a value.</span></span>
-4. <span data-ttu-id="8ee46-112">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-112">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="8ee46-113">[所轄官庁] フィールドで、決済期間について作成されたレポートおよび支払を受け取る売上税所轄官庁を選択します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-113">In the Authority field, select the sales tax authority that receives the reports and the payments that are created for the settlement period.</span></span>
-6. <span data-ttu-id="8ee46-114">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-114">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="8ee46-115">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="8ee46-115">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="8ee46-116">[支払条件] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="8ee46-116">In the Terms of payment field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="8ee46-117">関連する売上税所轄官庁を仕入先として設定すると、売上税の決済により、未処理の仕入先請求書が作成されます。</span><span class="sxs-lookup"><span data-stu-id="8ee46-117">The related Sales tax authority can be set up as a vendor and the Sales tax settlement will create an open vendor invoice.</span></span> <span data-ttu-id="8ee46-118">支払条件では、未処理の仕入先請求書の期日を定義します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-118">The Terms of payment defines the Due date for the open vendor invoice.</span></span>  
-9. <span data-ttu-id="8ee46-119">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-119">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="8ee46-120">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="8ee46-120">In the list, click the link in the selected row.</span></span>
-11. <span data-ttu-id="8ee46-121">決済期間間隔のタイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-121">Select a type for the settlement period intervals.</span></span>
-12. <span data-ttu-id="8ee46-122">期間毎の間隔の単位の単位数を入力します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-122">Enter the number of Period interval units per period.</span></span> <span data-ttu-id="8ee46-123">たとえば、四半期は 3 か月あります。</span><span class="sxs-lookup"><span data-stu-id="8ee46-123">For example, a quarter has 3 months.</span></span>
-13. <span data-ttu-id="8ee46-124">[売上税決済にバッチ処理を使用する] のチェック ボックスをオンまたはオフにします。</span><span class="sxs-lookup"><span data-stu-id="8ee46-124">Select or clear the Use batch processing for sales tax settlement check box.</span></span>
-    * <span data-ttu-id="8ee46-125">決済期間の決済プロセスは、バックグラウンドのバッチ ジョブとして処理することができます。</span><span class="sxs-lookup"><span data-stu-id="8ee46-125">The settlement process for the settlement period can be processed as batch job in the background.</span></span> <span data-ttu-id="8ee46-126">これは、期間内に大量の税トランザクションを処理する必要があるときにお勧めします。</span><span class="sxs-lookup"><span data-stu-id="8ee46-126">This is recommended for a large number of tax transactions within a period interval.</span></span>  
-14. <span data-ttu-id="8ee46-127">相殺税トランザクションの生成を防止のチェック ボックスを選択またはクリアします。</span><span class="sxs-lookup"><span data-stu-id="8ee46-127">Select or clear the Prevent generating offset tax transactions check box.</span></span>
-    * <span data-ttu-id="8ee46-128">既定では、システムは決済プロセス中に相殺税トランザクションを生成しますが、期間内に大量の税トランザクションを処理する必要がある場合、パフォーマンスの問題を引き起こす可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8ee46-128">By default, the system generates offset tax transactions during the settlement process, which cause can performance issue if there are a large number of tax transactions within a period interval.</span></span> <span data-ttu-id="8ee46-129">相殺税トランザクションの生成を防止するために、このチェック ボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-129">Select this check box to prevent generating offset tax transactions.</span></span>
-15. <span data-ttu-id="8ee46-130">[間隔] タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-130">Expand the Period intervals tab.</span></span>
-16. <span data-ttu-id="8ee46-131">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8ee46-131">Click Add.</span></span>
-17. <span data-ttu-id="8ee46-132">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="8ee46-132">In the list, mark the selected row.</span></span>
-18. <span data-ttu-id="8ee46-133">[開始日] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-133">In the From date field, enter a date.</span></span>
-19. <span data-ttu-id="8ee46-134">[終了日] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="8ee46-134">In the To date field, enter a date.</span></span>
-20. <span data-ttu-id="8ee46-135">[新しい間隔] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8ee46-135">Click New period interval.</span></span>
-    * <span data-ttu-id="8ee46-136">最初の間隔を入力すると、新しい期間は自動的に作成することができます。</span><span class="sxs-lookup"><span data-stu-id="8ee46-136">Once the first period interval has been entered, new periods can be created automatically.</span></span> <span data-ttu-id="8ee46-137">必要に応じて、新しい間隔を後で追加することができます。</span><span class="sxs-lookup"><span data-stu-id="8ee46-137">You can come back and add new period intervals as required.</span></span>  
-21. <span data-ttu-id="8ee46-138">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="8ee46-138">Close the page.</span></span>
+1. <span data-ttu-id="75db6-109">[税] > [間接税] > [売上税] > [売上税決済期間] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="75db6-109">Go to Tax > Indirect taxes > Sales tax > Sales tax settlement periods.</span></span>
+2. <span data-ttu-id="75db6-110">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="75db6-110">Click New.</span></span>
+3. <span data-ttu-id="75db6-111">[決済期間] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="75db6-111">In the Settlement period field, type a value.</span></span>
+4. <span data-ttu-id="75db6-112">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="75db6-112">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="75db6-113">[所轄官庁] フィールドで、決済期間について作成されたレポートおよび支払を受け取る売上税所轄官庁を選択します。</span><span class="sxs-lookup"><span data-stu-id="75db6-113">In the Authority field, select the sales tax authority that receives the reports and the payments that are created for the settlement period.</span></span>
+6. <span data-ttu-id="75db6-114">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="75db6-114">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="75db6-115">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="75db6-115">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="75db6-116">[支払条件] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="75db6-116">In the Terms of payment field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="75db6-117">関連する売上税所轄官庁を仕入先として設定すると、売上税の決済により、未処理の仕入先請求書が作成されます。</span><span class="sxs-lookup"><span data-stu-id="75db6-117">The related Sales tax authority can be set up as a vendor and the Sales tax settlement will create an open vendor invoice.</span></span> <span data-ttu-id="75db6-118">支払条件では、未処理の仕入先請求書の期日を定義します。</span><span class="sxs-lookup"><span data-stu-id="75db6-118">The Terms of payment defines the Due date for the open vendor invoice.</span></span>  
+9. <span data-ttu-id="75db6-119">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="75db6-119">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="75db6-120">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="75db6-120">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="75db6-121">決済期間間隔のタイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="75db6-121">Select a type for the settlement period intervals.</span></span>
+12. <span data-ttu-id="75db6-122">期間毎の間隔の単位の単位数を入力します。</span><span class="sxs-lookup"><span data-stu-id="75db6-122">Enter the number of Period interval units per period.</span></span> <span data-ttu-id="75db6-123">たとえば、四半期は 3 か月あります。</span><span class="sxs-lookup"><span data-stu-id="75db6-123">For example, a quarter has 3 months.</span></span>
+13. <span data-ttu-id="75db6-124">[売上税決済にバッチ処理を使用する] のチェック ボックスをオンまたはオフにします。</span><span class="sxs-lookup"><span data-stu-id="75db6-124">Select or clear the Use batch processing for sales tax settlement check box.</span></span>
+    * <span data-ttu-id="75db6-125">決済期間の決済プロセスは、バックグラウンドのバッチ ジョブとして処理することができます。</span><span class="sxs-lookup"><span data-stu-id="75db6-125">The settlement process for the settlement period can be processed as batch job in the background.</span></span> <span data-ttu-id="75db6-126">これは、期間内に大量の税トランザクションを処理する必要があるときにお勧めします。</span><span class="sxs-lookup"><span data-stu-id="75db6-126">This is recommended for a large number of tax transactions within a period interval.</span></span>  
+    > [!NOTE]
+    > <span data-ttu-id="75db6-127">現在、オーストリア、ベルギー、スペイン、イタリア、日本、オランダではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="75db6-127">Currently this is not supported in Austria, Belgium, Spain, Italy, Japan, and the Netherlands.</span></span>
+14. <span data-ttu-id="75db6-128">相殺税トランザクションの生成を防止のチェック ボックスを選択またはクリアします。</span><span class="sxs-lookup"><span data-stu-id="75db6-128">Select or clear the Prevent generating offset tax transactions check box.</span></span>
+    * <span data-ttu-id="75db6-129">既定では、システムは決済プロセス中に相殺税トランザクションを生成しますが、期間内に大量の税トランザクションを処理する必要がある場合、パフォーマンスの問題を引き起こす可能性があります。</span><span class="sxs-lookup"><span data-stu-id="75db6-129">By default, the system generates offset tax transactions during the settlement process, which cause can performance issue if there are a large number of tax transactions within a period interval.</span></span> <span data-ttu-id="75db6-130">相殺税トランザクションの生成を防止するために、このチェック ボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="75db6-130">Select this check box to prevent generating offset tax transactions.</span></span>
+15. <span data-ttu-id="75db6-131">[間隔] タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="75db6-131">Expand the Period intervals tab.</span></span>
+16. <span data-ttu-id="75db6-132">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="75db6-132">Click Add.</span></span>
+17. <span data-ttu-id="75db6-133">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="75db6-133">In the list, mark the selected row.</span></span>
+18. <span data-ttu-id="75db6-134">[開始日] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="75db6-134">In the From date field, enter a date.</span></span>
+19. <span data-ttu-id="75db6-135">[終了日] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="75db6-135">In the To date field, enter a date.</span></span>
+20. <span data-ttu-id="75db6-136">[新しい間隔] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="75db6-136">Click New period interval.</span></span>
+    * <span data-ttu-id="75db6-137">最初の間隔を入力すると、新しい期間は自動的に作成することができます。</span><span class="sxs-lookup"><span data-stu-id="75db6-137">Once the first period interval has been entered, new periods can be created automatically.</span></span> <span data-ttu-id="75db6-138">必要に応じて、新しい間隔を後で追加することができます。</span><span class="sxs-lookup"><span data-stu-id="75db6-138">You can come back and add new period intervals as required.</span></span>  
+21. <span data-ttu-id="75db6-139">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="75db6-139">Close the page.</span></span>
 

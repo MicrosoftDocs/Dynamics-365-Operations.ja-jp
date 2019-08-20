@@ -1,6 +1,6 @@
 ---
 title: 小売店舗の明細書の作成、計算、および転記
-description: この手順では、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。
+description: このトピックでは、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
@@ -17,34 +17,34 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9ea30e7e008bfcce77a7ee2f4d7d01a6cf1ababc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 693d1821779d5f7af95b900daa3bb7a2c38a6354
+ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548327"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "1755526"
 ---
-# <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a><span data-ttu-id="846ec-103">小売店舗の明細書の作成、計算、および転記</span><span class="sxs-lookup"><span data-stu-id="846ec-103">Create, calculate, and post a statement for a retail store</span></span>
+# <a name="create-calculate-and-post-statements-for-a-retail-store"></a><span data-ttu-id="332aa-103">小売店舗の明細書の作成、計算、および転記</span><span class="sxs-lookup"><span data-stu-id="332aa-103">Create, calculate, and post statements for a retail store</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="846ec-104">この手順では、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。</span><span class="sxs-lookup"><span data-stu-id="846ec-104">This procedure walks through the manual steps for creating, calculating, and posting a statement for a store.</span></span> <span data-ttu-id="846ec-105">同じタスクにコンフィギュレーションできるバッチ ジョブもあります。</span><span class="sxs-lookup"><span data-stu-id="846ec-105">There are also batch jobs that can be configured for the same tasks.</span></span> <span data-ttu-id="846ec-106">他のトピックで、バッチ ジョブをコンフィギュレーションし、実行するための手順を検索できます。</span><span class="sxs-lookup"><span data-stu-id="846ec-106">The steps for configuring and running the batch jobs can be found in other topics.</span></span> <span data-ttu-id="846ec-107">この手順を完了するには、POS で完了して Dynamics AX で取り出されたトランザクションが必要です。</span><span class="sxs-lookup"><span data-stu-id="846ec-107">To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics AX.</span></span> <span data-ttu-id="846ec-108">この記録では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="846ec-108">This recording uses the USRT company in demo data.</span></span> <span data-ttu-id="846ec-109">この手順は、Microsoft Dynamics AX を参照する場合があります。</span><span class="sxs-lookup"><span data-stu-id="846ec-109">This procedure may refer to Microsoft Dynamics AX.</span></span> <span data-ttu-id="846ec-110">Dynamics AX は現在 Microsoft Dynamics 365 for Operations と呼ばれていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="846ec-110">Please note that Dynamics AX is now called Microsoft Dynamics 365 for Operations.</span></span>
+<span data-ttu-id="332aa-104">このトピックでは、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。</span><span class="sxs-lookup"><span data-stu-id="332aa-104">This topic describes the manual steps for creating, calculating, and posting a statement for a store.</span></span> <span data-ttu-id="332aa-105">同じタスクにコンフィギュレーションできるバッチ ジョブもあります。</span><span class="sxs-lookup"><span data-stu-id="332aa-105">There are also batch jobs that can be configured for the same tasks.</span></span> <span data-ttu-id="332aa-106">他のトピックで、バッチ ジョブをコンフィギュレーションし、実行するための手順を検索できます。</span><span class="sxs-lookup"><span data-stu-id="332aa-106">The steps for configuring and running the batch jobs can be found in other topics.</span></span> <span data-ttu-id="332aa-107">この手順を完了するには、POS で完了して Dynamics 365 for Finance and Operations で取り出されたトランザクションが必要です。</span><span class="sxs-lookup"><span data-stu-id="332aa-107">To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="332aa-108">この記録では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="332aa-108">This recording uses the USRT company in demo data.</span></span>
 
-1. <span data-ttu-id="846ec-111">すべてのワークスペース > .. に移動します</span><span class="sxs-lookup"><span data-stu-id="846ec-111">Go to All workspaces > ..</span></span> <span data-ttu-id="846ec-112">> 小売店舗の財務。</span><span class="sxs-lookup"><span data-stu-id="846ec-112">> Retail store financials.</span></span>
-2. <span data-ttu-id="846ec-113">[新しい明細書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="846ec-113">Click New statement.</span></span>
-3. <span data-ttu-id="846ec-114">[店舗番号] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="846ec-114">In the Store number field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="846ec-115">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="846ec-115">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="846ec-116">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="846ec-116">Click OK.</span></span>
-    * <span data-ttu-id="846ec-117">[設定グループ] には、どのトランザクションを明細書に含めるか、どのように明細行にグループ化するかを制御する設定があります。</span><span class="sxs-lookup"><span data-stu-id="846ec-117">The Setup group has the settings that control what transactions are included in the statement and how they are grouped into statement lines.</span></span> <span data-ttu-id="846ec-118">[設定グループ] を開き、これらの設定を変更することもできますが、既定値を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="846ec-118">You can open the Setup group and change these settings, or you can use the defaults.</span></span>  
-    * <span data-ttu-id="846ec-119">[明細書の方法] フィールドで明細行をグループ化する方法を定義します。</span><span class="sxs-lookup"><span data-stu-id="846ec-119">The Statement method field defines how the statement lines will be grouped.</span></span>  
-    * <span data-ttu-id="846ec-120">特定のスタッフ メンバーまたはレジスターの明細書のみ計算する場合、スタッフ メンバーまたはレジスターを選択します。</span><span class="sxs-lookup"><span data-stu-id="846ec-120">Select a staff member or a register if you want to calculate a statement only for the specific staff member or register.</span></span>  
-6. <span data-ttu-id="846ec-121">[決済方法] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="846ec-121">In the Closing method field, select an option.</span></span>
-7. <span data-ttu-id="846ec-122">[明細書の計算] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="846ec-122">Click Calculate statement.</span></span>
-8. <span data-ttu-id="846ec-123">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="846ec-123">Click Yes.</span></span>
-    * <span data-ttu-id="846ec-124">明細書を計算した後、各支払方法の合計金額と使用された明細書の方法が記された行が作成されます。</span><span class="sxs-lookup"><span data-stu-id="846ec-124">After calculating the statement, there should be lines created with total amounts for each payment method and statement method that was used.</span></span>  
-    * <span data-ttu-id="846ec-125">入力、または更新する必要がある場合、各行に計算済金額を入力します。</span><span class="sxs-lookup"><span data-stu-id="846ec-125">Enter a counted amount in each line if it needs to be entered or updated.</span></span> <span data-ttu-id="846ec-126">計算済フィールドには、POS で実行した支払/入金申告の金額が表示されます。</span><span class="sxs-lookup"><span data-stu-id="846ec-126">The counted field is populated with amounts from tender declarations done in POS.</span></span>  
-9. <span data-ttu-id="846ec-127">[明細書の転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="846ec-127">Click Post statement.</span></span>
-10. <span data-ttu-id="846ec-128">[閉じる] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="846ec-128">Click Close.</span></span>
-11. <span data-ttu-id="846ec-129">[小売りとコマース] > [チャンネル] > [小売店舗の財務] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="846ec-129">Go to Retail and commerce > Channels > Retail store financials.</span></span>
-12. <span data-ttu-id="846ec-130">[転記済明細書] のタブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="846ec-130">Click the Posted statements tab.</span></span>
+1. <span data-ttu-id="332aa-109">ホーム ページから**小売店舗の財務**を選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-109">Select **Retail store financials** from the home page.</span></span>
+2. <span data-ttu-id="332aa-110">**新しい明細書**を選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-110">Select **New statement**.</span></span>
+3. <span data-ttu-id="332aa-111">**店舗番号**フィールドで、ドロップダウンからオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-111">In the **Store number** field, select a option from the drop-down.</span></span>
+4. <span data-ttu-id="332aa-112">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-112">Select **OK**.</span></span>
+5. <span data-ttu-id="332aa-113">**設定**グループには、どのトランザクションを明細書に含めるか、どのように明細行にグループ化するかを制御する設定があります。</span><span class="sxs-lookup"><span data-stu-id="332aa-113">The **Setup** group has the settings that control what transactions are included in the statement and how they are grouped into statement lines.</span></span> <span data-ttu-id="332aa-114">**設定**グループを開き、これらの設定を変更することもできますが、既定値を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="332aa-114">You can open the **Setup** group and change these settings, or you can use the defaults.</span></span>  
+    - <span data-ttu-id="332aa-115">**明細書の方法**フィールドで明細行をグループ化する方法を定義します。</span><span class="sxs-lookup"><span data-stu-id="332aa-115">The **Statement method** field defines how the statement lines will be grouped.</span></span>  
+    - <span data-ttu-id="332aa-116">特定のスタッフ メンバーまたはレジスターの明細書のみ計算する場合、スタッフ メンバーまたはレジスターを**スタッフ/レジスター** フィールドで選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-116">Select a staff member or a register in the **staff/register** field if you want to calculate a statement only for the specific staff member or register.</span></span>  
+6. <span data-ttu-id="332aa-117">**決済方法**フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-117">In the **Closing method** field, select an option.</span></span>
+7. <span data-ttu-id="332aa-118">アクション ウィンドウから**明細書の計算**を選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-118">Select **Calculate statement** from the Action Pane.</span></span>
+8. <span data-ttu-id="332aa-119">**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-119">Select **Yes**.</span></span>
+    - <span data-ttu-id="332aa-120">明細書を計算した後、各支払方法の合計金額と使用された明細書の方法が記された行が作成されます。</span><span class="sxs-lookup"><span data-stu-id="332aa-120">After calculating the statement, there should be lines created with total amounts for each payment method and statement method that was used.</span></span>  
+    - <span data-ttu-id="332aa-121">入力、または更新する必要がある場合、各行に計算済金額を入力します。</span><span class="sxs-lookup"><span data-stu-id="332aa-121">Enter a counted amount in each line if it needs to be entered or updated.</span></span> <span data-ttu-id="332aa-122">計算済フィールドには、POS で実行した支払/入金申告の金額が表示されます。</span><span class="sxs-lookup"><span data-stu-id="332aa-122">The counted field is populated with amounts from tender declarations done in POS.</span></span>  
+9. <span data-ttu-id="332aa-123">アクション ウィンドウから**明細書の転記**を選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-123">Select **Post statement** from the Action Pane.</span></span>
+10. <span data-ttu-id="332aa-124">**閉じる**を選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-124">Select **Close**.</span></span>
+11. <span data-ttu-id="332aa-125">ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="332aa-125">Close the pane.</span></span>
+12. <span data-ttu-id="332aa-126">ホーム ページで、**小売店舗の財務**を選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-126">At the home page, select **Retail store financials**.</span></span>
+13. <span data-ttu-id="332aa-127">**転記済明細書**タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="332aa-127">Select the **Posted statements** tab.</span></span>
 
