@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
-ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
+ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625875"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849512"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>電子申告 (ER) のフォーミュラ デザイナー
 
@@ -215,12 +215,12 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 | TODAY () | 日付値として現在の Finance and Operations アプリケーション サーバーの日付を返します。 | |
 | NULLDATE () | **null** の日付値を返します。 | |
 | NULLDATETIME () | **null** の日時値を返します。 | |
-| DATETIMEFORMAT (日時, 形式) | 指定された形式の文字列に指定された日時値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)」を参照してください。) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** は、指定されたカスタム形式に基づいて、現在の Finance and Operations アプリケーション サーバーの日付 2015 年 12 月24 日を **"24-12-2015"** として返します。 |
-| DATETIMEFORMAT (日時, 形式, カルチャ) | 指定された形式および [カルチャ](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)の文字列に指定された日時値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)」を参照してください。) | **DATETIMEFORMAT (NOW(), "d", "de")** は、選択されたドイツのカルチャに基づいて、現在の Finance and Operations アプリケーション サーバーの日付 2015 年 12 月 24 日を **"24.12.2015"** として返します。 |
+| DATETIMEFORMAT (日時, 形式) | 指定された形式の文字列に指定された日時値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx)」を参照してください。) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** は、指定されたカスタム形式に基づいて、現在の Finance and Operations アプリケーション サーバーの日付 2015 年 12 月24 日を **"24-12-2015"** として返します。 |
+| DATETIMEFORMAT (日時, 形式, カルチャ) | 指定された形式および [カルチャ](https://msdn.microsoft.com/goglobal/bb896001.aspx)の文字列に指定された日時値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx)」を参照してください。) | **DATETIMEFORMAT (NOW(), "d", "de")** は、選択されたドイツのカルチャに基づいて、現在の Finance and Operations アプリケーション サーバーの日付 2015 年 12 月 24 日を **"24.12.2015"** として返します。 |
 | SESSIONTODAY () | 日付値として現在の Finance and Operations セッションの日付を返します。 | |
 | SESSIONNOW () | 日時値として現在の Finance and Operations セッションの日時を返します。 | |
 | DATEFORMAT (日付, 形式) | 指定された形式で指定された日付の文字列形式を返します。 | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy"** は、指定されたカスタム形式に基づいて、現在の Finance and Operations セッションの日付 2015 年 12 月24 日を **"24-12-2015"** として返します。 |
-| DATEFORMAT (日付, 形式, カルチャ) | 指定された形式および[カルチャ](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)の文字列に指定された日付値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)」を参照してください。) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** は、選択されたドイツのカルチャに基づいて、現在の Finance and Operations セッションの日付 2015 年 12 月 24 日を **"24.12.2015"** として返します。 |
+| DATEFORMAT (日付, 形式, カルチャ) | 指定された形式および[カルチャ](https://msdn.microsoft.com/goglobal/bb896001.aspx)の文字列に指定された日付値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx)」を参照してください。) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** は、選択されたドイツのカルチャに基づいて、現在の Finance and Operations セッションの日付 2015 年 12 月 24 日を **"24.12.2015"** として返します。 |
 | DAYOFYEAR (日付) | 1 月 1 日から指定された日までの日数の整数表現を返します。 | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** は **61** を返します。 **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** は **1** を返します。 |
 | 日 (日付 1、日付 2) | 最初に指定した日付および 2 番目に指定した日付間の日数を返します。 最初の日付が 2 番目の日付より遅い場合は正の値を返し、最初の日付が 2 番目の日付と同じである場合は **0** (ゼロ) を返します。最初の日付が 2 番目の日付より早い場合は、負の値を返します。 | **日数 (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** は **-1** を返します。 |
 
@@ -649,12 +649,12 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>NUMBERFORMAT (数値, 形式)</td>
-<td>指定された形式で指定された数値の文字列形式を返します。 (サポートされている形式の詳細については、「<a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">標準</a>」と「<a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">カスタム</a>」を参照してください)。この関数が実行されるコンテキストが、数値の書式設定に使用されるカルチャを決めます。</td>
+<td>指定された形式で指定された数値の文字列形式を返します。 (サポートされている形式の詳細については、「<a href="https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx">標準</a>」と「<a href="https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx">カスタム</a>」を参照してください)。この関数が実行されるコンテキストが、数値の書式設定に使用されるカルチャを決めます。</td>
 <td>EN-US カルチャの場合、<strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> は <strong>&quot;45.00 %&quot;</strong> を返します。 <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> は <strong>&quot;10&quot;</strong> を返します。</td>
 </tr>
 <tr>
 <td>NUMBERFORMAT (数値, 形式, カルチャ)</td>
-<td>指定された形式およびカルチャで指定された数の文字列表現を返します。 (サポートされている形式の詳細については、「<a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">標準</a>」と「<a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">カスタム</a>」を参照してください)。</td>
+<td>指定された形式およびカルチャで指定された数の文字列表現を返します。 (サポートされている形式の詳細については、「<a href="https://docs.microsoft.com/dotnet/standard/base-types/standard-numeric-format-strings">標準</a>」と「<a href="https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings">カスタム</a>」を参照してください)。</td>
 <td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong> は <strong>3,33</strong> を返し、<strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> は <strong>3.33</strong> を返します。</td>
 </tr>
 <tr>
