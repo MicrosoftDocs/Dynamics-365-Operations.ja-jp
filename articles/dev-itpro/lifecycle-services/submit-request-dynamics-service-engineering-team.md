@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 254564
 ms.assetid: 43ea0eae-34c8-4f97-8c98-c711844534d9
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: d70d28651bfe4a54893b8253b6c8abb11c666d29
-ms.sourcegitcommit: 829270861391042a03e9bd249bdecd2b922116b3
+ms.openlocfilehash: 77a1643c9b370e01ec48b41d4e1c8ac0d59da8d9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "1690400"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851819"
 ---
 # <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 

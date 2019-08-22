@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 24491
 ms.assetid: 6603a84c-00b2-4358-84a7-dd6fee3055ab
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4ce1b55f051d934ab7e852f090f9e3ef997bf5b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 927b485ea740f9eeb1171a269c3f85e6d661ad7c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548127"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848509"
 ---
 # <a name="analytics-aggregate-measurements-and-kpi-modeling"></a>分析、集計の測定、および KPI モデリング
 

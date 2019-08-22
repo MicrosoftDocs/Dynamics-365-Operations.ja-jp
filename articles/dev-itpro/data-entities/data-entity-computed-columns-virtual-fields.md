@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 17891
 ms.assetid: 88d230af-7d3d-49b3-bf19-69ecf81ed751
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95f4a9569b6cb44fc763b435dba88890afb6780d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1307987f98900e27a35e92b8fa16988a77c262db
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505923"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850451"
 ---
 # <a name="computed-columns-and-virtual-fields-in-data-entities"></a>データ エンティティの列と仮想フィールドを計算する
 

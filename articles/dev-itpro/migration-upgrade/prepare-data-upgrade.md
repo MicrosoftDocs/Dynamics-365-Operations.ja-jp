@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 106163
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 5643f86ecc842629bda864cfe91efe11dc0803f4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c20ef4c4f583a5d3b19ecd6c6e8f707b93fc5136
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560631"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851723"
 ---
 # <a name="upgrade-from-ax-2012---pre-upgrade-checklist-for-data-upgrade"></a>AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
 

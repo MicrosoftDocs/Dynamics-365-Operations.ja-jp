@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Lifecycle Services
 ms.custom: 197063
 ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 31485cd75abf65e717f75f4d6f3b1f622a2b11eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fed06d0500ed73a47ae0c3a8f5d317e1cfb1b7b1
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552508"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850593"
 ---
 # <a name="add-methodologies-to-finance-and-operations-solutions"></a>Finance and Operations のソリューションに方法を追加
 

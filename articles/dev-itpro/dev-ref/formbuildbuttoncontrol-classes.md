@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 58741
 ms.assetid: 9af62525-aa36-4d6f-b138-c9002a4b21e2
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7939c60b9ed12bf358a070c432d437b1c248d21
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: f3d3a0cf91be97b8d006caddb5d3ff45dbb91031
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595481"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833712"
 ---
 # <a name="f-classes-formbuildbuttoncontrol-to-formbuildfasttabsummaryseparator"></a>F クラス (FormBuildButtonControl から FormBuildFastTabSummarySeparator)
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-10
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 535e6c441f22d1bc60ddc894cad4c3af82deba05
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c4bed281a80ec1edebb339d355af38d8f236c91c
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550884"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833434"
 ---
 # <a name="application-extensibility-roadmap"></a>アプリケーション拡張機能ロードマップ
 

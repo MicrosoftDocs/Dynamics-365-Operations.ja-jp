@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: 08/09/2017
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b03894746209218e4b63d34710fa6de21fae27e2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3364e78d2b9a0d4ce37e1e26ba6658697f4fdb4a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554477"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851641"
 ---
 # <a name="mobile-platform-client-apis"></a>モバイル プラットフォーム クライアント API
 

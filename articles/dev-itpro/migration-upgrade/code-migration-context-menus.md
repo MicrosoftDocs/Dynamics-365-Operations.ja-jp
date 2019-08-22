@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 16301
 ms.assetid: 8f3b62f2-4de6-4ea3-b3e6-1101d0fe308e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52be3047cdd20ca7f17d9d980164c1a43bf0d2f8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1ad02adfbfaf8522abcf72b1d5aa936d4d2c1b78
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559517"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851753"
 ---
 # <a name="code-migration---context-menu-code"></a>コードの移行 - コンテキスト メニュー コード
 

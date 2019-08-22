@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7963926dd0d05e0c74819de46cd5981fbdff7b6
-ms.sourcegitcommit: c5edff04f35a067934fddebd166906edc003e7c5
+ms.openlocfilehash: 231e9687a325bc5840f8d46078f92acb11622c3f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "1605850"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848163"
 ---
 # <a name="refresh-database"></a>データベースの更新
 

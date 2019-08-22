@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 191363
 ms.assetid: dd1dd40e-6bff-47b5-bf2e-55b9a4dcde1d
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44499cad4a9acd0f6f87b0fa0865d9e09ca3c0e4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 30de56d5ac8af07720bdcf0753f5d44ec834d0e7
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544099"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833384"
 ---
 # <a name="financial-dimension-activation"></a>財務分析コードの有効化
 

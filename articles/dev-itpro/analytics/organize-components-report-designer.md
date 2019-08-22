@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4a4733dc4da7a8713ac7ddec5c96ae18c91edc18
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551746"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863674"
 ---
 # <a name="organize-report-components-in-report-designer"></a>レポート デザイナーのレポートのコンポーネントを整理
 
@@ -50,7 +50,7 @@ ms.locfileid: "1551746"
 ### <a name="create-a-report-group"></a>レポート グループの作成
 
 1. レポート デザイナーで、ナビゲーション ウィンドウの **レポート グループ** をクリックします。
-2. **ファイル** メニューで、**新規** &gt; **レポート グループの定義** をクリックしてビューア ウィンドウで新しいレポート グループを開きます。 または、ツール バーの **レポート グループ** ボタン ![レポート グループ](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "レポート グループ") をクリックします。
+2. **ファイル** メニューで、**新規** &gt; **レポート グループの定義** をクリックしてビューア ウィンドウで新しいレポート グループを開きます。 または、ツール バーの **レポート グループ** ボタン ![レポート グループ](media/report-group.gif "レポート グループ") をクリックします。
 3. **レポート グループ** タブをクリックします。 このレポートの生成の個々のレポート定義の情報を上書きするには、**個々のレポート定義の会社、詳細、日付の設定の上書き** チェック ボックスをオンにします。 会社名、詳細レベル、仮の設定および日付の情報が自動的に入力されますが、更新することができます。
 4. レポート通貨を表示する複数のレポートを生成するには、**すべてのレポート通貨を含む** チェック ボックスをオンにします。 レポートを表示するときに、Web ビューアで **通貨** ボタンをクリックすると、複数のビューにアクセスできます。
 5. **グループのレポート** フィールドで、**追加** をクリックして、レポート グループに含めるレポートを選択します。 **追加** ダイアログ ボックスの複数のレポートを選択するには、Ctrl キーを押しながら、レポートを選択します。 レポートを選択したら、**OK** をクリックします。
@@ -61,7 +61,7 @@ ms.locfileid: "1551746"
 1. レポート デザイナーで、ナビゲーション ウィンドウの **レポート グループ** をクリックします。
 2. 変更するレポート グループをダブルクリックします。
 3. **レポート グループ** タブで、必要な変更をします。
-4. **ファイル** メニューで、**保存** をクリックして変更したレポート グループを保存するか、ツール バーで **保存** ボタン ![保存](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "保存") をクリックします。
+4. **ファイル** メニューで、**保存** をクリックして変更したレポート グループを保存するか、ツール バーで **保存** ボタン ![保存](media/save.gif "保存") をクリックします。
 
 > レポートを一定の間隔で生成されるようにスケジュールした場合、これらの設定を上書きし、レポートをすばやく生成できます。
 
@@ -69,7 +69,7 @@ ms.locfileid: "1551746"
 
 1. レポート デザイナーで、ナビゲーション ウィンドウの **レポート グループ** をクリックします。
 2. 生成するレポート グループを開きます。
-3. **レポートの生成** ボタン ![レポートの生成](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "レポートの生成") をクリックして、レポートを生成します。
+3. **レポートの生成** ボタン ![レポートの生成](media/generate-report.gif "レポートの生成") をクリックして、レポートを生成します。
 
 ### <a name="delete-a-report-group"></a>レポート グループの削除
 

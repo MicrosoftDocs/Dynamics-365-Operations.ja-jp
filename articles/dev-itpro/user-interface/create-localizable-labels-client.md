@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 18531
 ms.assetid: 73615d1b-9088-496e-989e-d8996f30e76b
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bcd9580d5417780c409ef29d0214f8df9575764
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e538f3aee0ab8c8e06a60d42e375ca1a785fd39b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559792"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851217"
 ---
 # <a name="create-localizable-labels"></a>ローカライズ可能なラベルの作成
 

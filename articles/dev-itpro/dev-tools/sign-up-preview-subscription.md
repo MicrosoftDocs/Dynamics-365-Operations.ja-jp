@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: 13211
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 015c6b54948129b5e629a9c01669de5d8867dc77
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d04d3e01f9417ebd16299e28ba795cda6b94d4a2
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544129"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833508"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 

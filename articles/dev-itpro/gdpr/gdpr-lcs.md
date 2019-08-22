@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e144fee384ce55d83ac16ecf8715b3ddd2978d4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4b68025bcb504e8a32024ec3613467b0bb7d28da
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555552"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833304"
 ---
 # <a name="gdpr-data-requests-for-lifecycle-services-lcs"></a>Lifecycle Services (LCS) に対する GDPR データ要求
 

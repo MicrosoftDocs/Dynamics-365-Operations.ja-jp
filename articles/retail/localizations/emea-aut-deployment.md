@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Retail
 ms.search.region: Austria
 ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 402efc45b9c7a147be3cc9032ead8e2ea3fce683
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: b1d92d15990d0ffab607fa2d225a6a1b4f5437eb
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577915"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845664"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 

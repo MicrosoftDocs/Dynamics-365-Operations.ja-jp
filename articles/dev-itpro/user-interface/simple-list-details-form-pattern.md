@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 16242
 ms.assetid: 4c5ae424-86fe-43f1-8f94-71dfe2edfaa7
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e32d208398e6ccf4bf525c95fd36844414952dd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5828e7424ec6eb3c151f709cb8cefbc91c4c33df
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571072"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851103"
 ---
 # <a name="simple-list-and-details-form-pattern"></a>簡易リストおよび簡易詳細のフォーム パターン
 

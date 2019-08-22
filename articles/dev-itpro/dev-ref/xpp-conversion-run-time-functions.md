@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 31321
 ms.assetid: cf3e4f05-5ef0-49b1-b76e-8269913ee29d
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9997740a69f1e6ea449ee2cceaab4c0bc8753652
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7f4a6f03b96ccb9f317cbb132558a6b56660e5d9
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544177"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833634"
 ---
 # <a name="x-conversion-runtime-functions"></a>X++ 変換ランタイム関数
 

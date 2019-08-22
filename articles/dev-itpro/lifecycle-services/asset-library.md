@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 266824
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: acafaca5ae749ec1fdfb1739fde1e12d26be4a99
-ms.sourcegitcommit: f5c2cfac0411c880994376ead6691ab52f2fd12b
+ms.openlocfilehash: 6e3aa219955e5ed5ff42428c65347d2153c0b9b8
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "1720225"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850581"
 ---
 # <a name="asset-library-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のアセット ライブラリ
 

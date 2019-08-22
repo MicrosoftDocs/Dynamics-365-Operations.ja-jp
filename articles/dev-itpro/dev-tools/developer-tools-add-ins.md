@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 27521
 ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6bc858ded5e61741e1b47f25d70af7b5f7bb926
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 26752d72c4c10a1c252b615d06d568b7bbd6fd52
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544151"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833556"
 ---
 # <a name="tools-add-ins-for-visual-studio"></a>Visual Studio 用のツールおよびアドイン
 

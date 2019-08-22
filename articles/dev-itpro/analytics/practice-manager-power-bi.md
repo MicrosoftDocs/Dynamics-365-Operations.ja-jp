@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c526bc42595c20024016d0d7da78b8638b0daa4b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551674"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850100"
 ---
 # <a name="practice-manager-power-bi-content"></a>プラクティス マネージャー Power BI コンテンツ
 
@@ -54,7 +54,7 @@ ms.locfileid: "1551674"
 | EVM               | プロジェクト別の原価とスケジュール業績インデックス |
 | 時間             | <ul><li>[支払い請求可能な実績稼働時間数] 対 [支払請求可能な実績非稼動時間数] 対 [予算時間]</li><li>プロジェクト別の [支払い請求可能な実績稼働時間数] 対 [支払請求可能な実績非稼動時間数]</li><li>リソース別の [支払い請求可能な実績稼働時間数] 対 [支払請求可能な実績非稼動時間数]</li><li>プロジェクト別の請求可能な実績時間の比率</li><li>リソース別の請求可能な実績時間数の比率</li></ul> |
 
-これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成および構成](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/) を参照してください。 また、基になるデータをエクスポートする機能を使用するなら、視覚化で要約されている基になるデータをエクスポートすることができます。
+これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成および構成](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/) を参照してください。 また、基になるデータをエクスポートする機能を使用するなら、視覚化で要約されている基になるデータをエクスポートすることができます。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
@@ -62,7 +62,7 @@ ms.locfileid: "1551674"
 
 次のセクションでは、各エンティティで使用される集計の測定について説明します。
 
-### <a name="entity-projectaccountingcubeactualhourutilization"></a>エンティティ。ProjectAccountingCube\_ActualHourUtilization
+### <a name="entity-projectaccountingcube_actualhourutilization"></a>エンティティ。ProjectAccountingCube\_ActualHourUtilization
 **データ ソース:** ProjEmplTrans
 
 | キー集計の測定      | フィールド                              | 説明 |
@@ -70,7 +70,7 @@ ms.locfileid: "1551674"
 | 支払い請求可能な実績稼働時間数 | Sum(ActualUtilizationBillableRate) | 支払い請求可能な実績稼働時間数の合計。 |
 | 支払請求可能な実績非稼動時間数   | Sum(ActualBurdenBillableRate)      | 実績非稼動の比率の合計。 |
 
-### <a name="entity-projectaccountingcubeactuals"></a>エンティティ。ProjectAccountingCube\_Actuals
+### <a name="entity-projectaccountingcube_actuals"></a>エンティティ。ProjectAccountingCube\_Actuals
 **データ ソース:** ProjTransPosting
 
 | キー集計の測定 | フィールド              | 説明 |
@@ -78,14 +78,14 @@ ms.locfileid: "1551674"
 | 実績収益            | Sum(ActualRevenue) | 全トランザクションの転記済収益の合計。 |
 | 実際原価               | Sum(ActualCost)    | 全トランザクション タイプの転記済原価の合計。 |
 
-### <a name="entity-projectaccountingcubecustomer"></a>エンティティ。ProjectAccountingCube\_Customer
+### <a name="entity-projectaccountingcube_customer"></a>エンティティ。ProjectAccountingCube\_Customer
 **データ ソース:** CustTable
 
 | キー集計の測定 | フィールド                                             | 説明 |
 |---------------------------|---------------------------------------------------|-------------|
 | プロジェクト数        | COUNTA(ProjectAccountingCube\_Projects\[PROJECTS\]) | 使用可能なプロジェクトの数。 |
 
-### <a name="entity-projectaccountingcubeforecasts"></a>エンティティ。ProjectAccountingCube\_Forecasts
+### <a name="entity-projectaccountingcube_forecasts"></a>エンティティ。ProjectAccountingCube\_Forecasts
 **データ ソース:** ProjTransBudget
 
 | キー集計の測定 | フィールド                  | 説明 |
@@ -94,14 +94,14 @@ ms.locfileid: "1551674"
 | 予算収益            | Sum(BudgetRevenue)     | 未収 / 請求済み予測収益の合計。 |
 | 予算粗利       | Sum(BudgetGrossMargin) | 全予測収益の合計と全予測原価の合計の差額。 |
 
-### <a name="entity-projectaccountingcubeprojectplancostsview"></a>エンティティ。ProjectAccountingCube\_ProjectPlanCostsView
+### <a name="entity-projectaccountingcube_projectplancostsview"></a>エンティティ。ProjectAccountingCube\_ProjectPlanCostsView
 **データ ソース:** プロジェクト
 
 | キー集計の測定 | フィールド                    | 説明 |
 |---------------------------|--------------------------|-------------|
 | 予定原価              | Sum(SumOfTotalCostPrice) | 計画タスクのすべてのプロジェクト トランザクション タイプにおける合計原価価格の見積。 |
 
-### <a name="entity-projectaccountingcubeprojects"></a>エンティティ。ProjectAccountingCube\_Projects
+### <a name="entity-projectaccountingcube_projects"></a>エンティティ。ProjectAccountingCube\_Projects
 **データ ソース:** プロジェクト
 
 | キー集計の測定    | フィールド | 説明 |
@@ -112,7 +112,7 @@ ms.locfileid: "1551674"
 | 支払請求可能な実績時間数の比率  | ProjectAccountingCube\_Projects\[プロジェクトの支払い請求可能な実績稼働時間数の合計\] ÷ (ProjectAccountingCube\_Projects\[プロジェクトの支払い請求可能な実績稼働時間数の合計\] + ProjectAccountingCube\_Projects\[プロジェクトの支払い請求可能な実績非稼動時間数\]) | 実績稼働時間数と実績非稼動時間数に基づいた支払請求可能な実績時間数の合計。 |
 | 達成額                 | ProjectAccountingCube\_Projects\[プロジェクトの合計予定原価\] × ProjectAccountingCube\_Projects\[作業の完了率\] | 合計予定原価と作業の完了率の乗算。 |
 
-### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>エンティティ。ProjectAccountingCube\_TotalEstimatedCosts 
+### <a name="entity-projectaccountingcube_totalestimatedcosts"></a>エンティティ。ProjectAccountingCube\_TotalEstimatedCosts 
 **データ ソース:** ProjTable
 
 | キー集計の測定       | フィールド               | 説明 |

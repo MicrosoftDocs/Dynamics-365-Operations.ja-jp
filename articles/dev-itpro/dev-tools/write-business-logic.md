@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26821
 ms.assetid: 78f3c89c-2035-486d-9fba-35dd3c121d7d
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86259cb260d8ec7cb9c2ff0c397e50f01147bb71
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 05ca270b12d17c0ed863068b19595506e786acaf
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544124"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833500"
 ---
 # <a name="write-business-logic-by-using-c-and-x-source-code"></a>C# および X++ ソース コードを使用したビジネス ロジックを記述する
 
 [!include [banner](../includes/banner.md)]
 
-このチュートリアルの主な目的は、Microsoft Dynamics AX での C# と X++ 間で相互運用性について説明することです。 このチュートリアルでは、C# ソース コードおよび X++ ソース コードでビジネス ロジックを記述します。 
+このチュートリアルの主な目的は、 C# と X++ 間で相互運用性について説明することです。 このチュートリアルでは、C# ソース コードおよび X++ ソース コードでビジネス ロジックを記述します。 
 
 このチュートリアルでは、C\# ソース コードおよび X++ ソース コードでビジネス ロジックを記述します。 以下の経験が得られます。
 
@@ -37,13 +37,13 @@ ms.locfileid: "1544124"
 -   C\# の言語統合クエリ (LINQ) を使用してデータをフェッチする。
 
 ## <a name="prerequisite"></a>前提条件
-このチュートリアルでは、リモート デスクトップを使用して Dynamics AX 環境にアクセスし、Dynamics AX インスタンスの管理者としてプロビジョニングする必要があります。 **注記**: **ソリューション内の項目に対してのみシンボルを読み込む**チェック ボックスがオンになっている場合、\#C プロジェクトのデバッグサポートは機能しません。 このオプションが既定で選択されているため、演習を実行する前に変更する必要があります。 Visual Studio で、**Dynamics AX** &gt; **オプション**をクリックし、**ソリューション内の項目に対してのみシンボルを読み込む**のチェック ボックスをオフにします。
+このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 **注記**: **ソリューション内の項目に対してのみシンボルを読み込む**チェック ボックスがオンになっている場合、\#C プロジェクトのデバッグサポートは機能しません。 このオプションが既定で選択されているため、演習を実行する前に変更する必要があります。 Visual Studio で、 **Dynamics 365** &gt; **オプション** をクリックし、 **ソリューション内の項目に対してのみシンボルを読み込む** チェック ボックスをオフにします。
 
 ## <a name="scenario"></a>シナリオ
 危険な運転習慣の経歴を持つ運転手に、余りにも多くの車がレンタルされています。 フリート管理レンタル会社は、外部ソースからドライブ レコードを確認する必要があります。 上級管理職は、運転免許とその関連情報を管理する法人である運輸省 (DOT) が運用するサービスに加入することに決まりました。 このサービスは、指定された一意のライセンス番号の引用数を取得します。 X++ ソース コードから直接外部サービスを呼び出すことは容易ではありません。 Visual Studio にはサービスを呼び出す「コードビハインド」を (C\# で) 生成するツールがあり、これらのツールにより開発作業が簡単になります。 Visual Studio を活用してコードを記述することが当然の選択です。 ただし、このチュートリアルでは物流が簡単なラボ環境の範囲を超えているため、コードは実際に外部サービスを呼び出しません。 代わりに、サービス コールのモック実装を提供します。 このチュートリアルの目標は、C\# の現在の状態と X++ との相互運用性の理解について教えることです。
 
 ## <a name="create-a-c-class-library"></a>C\# クラス ライブラリの作成
-Dynamics AX を使用すると、Dynamics AX プロジェクトから、アセンブリを生成する C\# クラス ライブラリ、または C\# プロジェクトの別のタイプへの参照を作成できます。 このような参照は、ビルド順序に影響します。 C\# プロジェクトは、それを参照して依存する Dynamics AX プロジェクトより前にビルドされます。 Dynamics AX インフラストラクチャは参照を理解し、C\# アセンブリが実行前にクラウドに正しく配置されることを確認します。 フリート管理ソリューションで C\# クラス ライブラリを作成するには、これらの手順に従います。
+プロジェクトから、 C\# クラス ライブラリ、またはアセンブリを生成する C\# プロジェクトの別のタイプへの参照を作成できます。 このような参照は、ビルド順序に影響します。 C\# プロジェクトは、それを参照して依存するプロジェクトより前にビルドされます。 インフラストラクチャは参照を理解し、 C\# アセンブリが実行前にクラウドに正しく配置されるようにします。 フリート管理ソリューションで C\# クラス ライブラリを作成するには、これらの手順に従います。
 
 1.  Visual Studio で、**ファイル** &gt; **プロジェクト/ソリューションを開く**をクリックします。
 2.  **プロジェクトを開く**ダイアログ ボックスの**ファイル名**テキスト ボックスに次のパスを入力してから **Enter** キーを押します - *C:\\users\\public\\desktop\\FleetManagement*。
@@ -58,7 +58,7 @@ Dynamics AX を使用すると、Dynamics AX プロジェクトから、アセ�
 11. クラスへのすべての参照の名前を変更するか、確認するメッセージが表示されたら、**はい**をクリックします。 [![RenameClass\_LinqC](./media/renameclass_linqc1.png)](./media/renameclass_linqc1.png)
 
 ## <a name="write-a-c-method-named-checkdriverslicense"></a>CheckDriversLicense という名前で C\# メソッドを記述
-このセクションでは、CheckDriversLicense という名前のメソッドの C\# コードを追加します。 このメソッドでは、運転免許証を検証する必要があります。 これを行うには、メソッドは顧客テーブルに格納されている運転免許証番号を取得する必要があります。 このメソッドには、メソッドで必要な情報が含まれている顧客レコードの RecId値が与えられます。 C\# コードは、Dynamics AX LINQ プロバイダーを使用して、顧客テーブルから読み取ります。 LINQ が作動するためには、最初に LINQ アセンブリを指定している参照を追加する必要があります。 これらの参照を DriversLicenseEvaluator という名前の C\# プロジェクトに追加します。
+このセクションでは、CheckDriversLicense という名前のメソッドの C\# コードを追加します。 このメソッドでは、運転免許証を検証する必要があります。 これを行うには、メソッドは顧客テーブルに格納されている運転免許証番号を取得する必要があります。 このメソッドには、メソッドで必要な情報が含まれている顧客レコードの RecId値が与えられます。 C\# コードは、 LINQ プロバイダーを使用して、顧客テーブルから読み取ります。 LINQ が作動するためには、最初に LINQ アセンブリを指定している参照を追加する必要があります。 これらの参照を DriversLicenseEvaluator という名前の C\# プロジェクトに追加します。
 
 1.  **ソリューション エクスプローラー**で、DriversLicenseEvaluator プロジェクト ノードを展開し、**参照**を右クリックしてから**参照の追加**をクリックします。
 2.  **参照**をクリックし、次のパスを入力します: C:\\Packages\\bin
@@ -143,7 +143,7 @@ Dynamics AX を使用すると、Dynamics AX プロジェクトから、アセ�
 
 さらに C\# コードに進む前に、追加した LINQ コードを理解していることを確認してください。 LINQ の詳細については、[技術概念ガイド](developer-home-page.md)で説明されているため、以下では基本のみを説明します。
 
--   最初に、*プロバイダー*を作成します。 すべての Microsoft Dynamics AX のテーブルへのアクセスを提供します。
+-   最初に、*プロバイダー*を作成します。 すべてのテーブルへのアクセスを提供します。
 -   次に、すべての顧客の*コレクション*が作成されます。 利息のある顧客はこのコレクションから取得されます。
 -   次に、**RecId** によって要求された顧客を指定する where 句で*クエリ*が作成されます。
 -   FirstOrDefault メソッドを呼び出すと、クエリが強制的に実行されます。
@@ -159,7 +159,7 @@ Dynamics AX を使用すると、Dynamics AX プロジェクトから、アセ�
 
 ### <a name="preparatory-overview"></a>準備の概要
 
-テーブルにレコードを追加しようとすると、そのレコードがデータベースに書き込まれる前に、Dynamics AX によって OnValidateWrite イベントが発生します。 FMRental テーブルに対して OnValidateWrite イベントが発生するたびに、CheckDriversLicense メソッドが呼び出されることを必要とします。 これを行うには、イベントによって呼び出され、checkDriversLicense メソッドを呼び出す C\# メソッドを記述する必要があります。 つまり、CheckDriversLicense メソッドを呼び出すイベント ハンドラーを記述する必要があります。 イベント ハンドラー メソッドは、型のパラメーター、DataEventArgsを受け取ります。 イベント ハンドラーは、レコードを承認または拒否するかを DataEventArgs 構造の値に設定できます。 イベント ハンドラー メソッドを書き込んだ後は、イベントに割り当てて接続するか、または FMRental テーブルのメンバーである OnValidatedWrite をデリゲートして追加します。 FMRental フォームのデータ ソースの init メソッドにこの割り当てを記述します。 デリゲートへのこの割り当ては奇妙に思える場合があります。 結局のところ、既存のコード (FMRental) を変更して、ハンドラーを追加します。これはイベントが提供する予定の疎結合の主な価値提案と矛盾しています。 この割り当てステップは一時的です。 最終的に、X++ の場合と同じストーリーが C\# でも発生します。属性は、デリゲートとハンドアラーを結合するメカニズムとして、C\# イベント ハンドラーに適用されます。 **注記**: フォームが開かれると、データソースの init メソッドが呼び出されます。 技術的には、init メソッドは FormDataSource クラスから継承されます。
+テーブルにレコードを追加しようとすると、そのレコードがデータベースに書き込まれる前に、OnValidateWrite イベントが発生します。 FMRental テーブルに対して OnValidateWrite イベントが発生するたびに、CheckDriversLicense メソッドが呼び出されることを必要とします。 これを行うには、イベントによって呼び出され、checkDriversLicense メソッドを呼び出す C\# メソッドを記述する必要があります。 つまり、CheckDriversLicense メソッドを呼び出すイベント ハンドラーを記述する必要があります。 イベント ハンドラー メソッドは、型のパラメーター、DataEventArgsを受け取ります。 イベント ハンドラーは、レコードを承認または拒否するかを DataEventArgs 構造の値に設定できます。 イベント ハンドラー メソッドを書き込んだ後は、イベントに割り当てて接続するか、または FMRental テーブルのメンバーである OnValidatedWrite をデリゲートして追加します。 FMRental フォームのデータ ソースの init メソッドにこの割り当てを記述します。 デリゲートへのこの割り当ては奇妙に思える場合があります。 結局のところ、既存のコード (FMRental) を変更して、ハンドラーを追加します。これはイベントが提供する予定の疎結合の主な価値提案と矛盾しています。 この割り当てステップは一時的です。 最終的に、X++ の場合と同じストーリーが C\# でも発生します。属性は、デリゲートとハンドアラーを結合するメカニズムとして、C\# イベント ハンドラーに適用されます。 **注記**: フォームが開かれると、データソースの init メソッドが呼び出されます。 技術的には、init メソッドは FormDataSource クラスから継承されます。
 
 ### <a name="write-an-event-handler-method"></a>イベント ハンドラー メソッドの記述
 
@@ -196,11 +196,11 @@ C\# では、次のイベント ハンドラー メソッドを記述して Driv
 
 #### <a name="build-sequence"></a>ビルド順序
 
-    Your C\# DriversLicenseEvaluator project will be built before the FleetManagement Migrated project is built. This is because the added reference makes the Fleet project dependent on your project. The build sequence is easy to see if you right-click the FleetManagement solution, click **Project Build Order**, and then click **Dependencies**.
+C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated プロジェクトのビルド前にビルドされます。 これは、追加された参照によって、フリート プロジェクトがプロジェクトに依存するためです。 ビルド シーケンスを簡単に確認するには、FleetManagement ソリューションを右クリックし、 **プロジェクト ビルド順序** をクリックして、 **相互関係** をクリックします。
 
-    |                                                                                                                                                                                                                |                                                                                                                                                                                                                |
-    |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [![ProjectDependencies1\_LinqC](./media/projectdependencies1_linqc2.png)](./media/projectdependencies1_linqc2.png) | [![ProjectDependencies2\_LinqC](./media/projectdependencies2_linqc1.png)](./media/projectdependencies2_linqc1.png) |
+[![ProjectDependencies1\_LinqC](./media/projectdependencies1_linqc2.png)](./media/projectdependencies1_linqc2.png)
+
+[![ProjectDependencies2\_LinqC](./media/projectdependencies2_linqc1.png)](./media/projectdependencies2_linqc1.png)
 
 ### <a name="add-your-event-handler-to-a-delegate"></a>委任へのイベント ハンドラーの追加
 
@@ -237,7 +237,7 @@ C\# では、次のイベント ハンドラー メソッドを記述して Driv
 
 ### <a name="run-the-test"></a>テストの実行
 
-このテストでは、書き込んだ C\# コードをデバッグします。 これを行うには、Visual Studio に C\# コードを含むアセンブリのシンボルを読み込むように通知する必要があります。 **Dynamics AX &gt; オプション &gt; デバッグ**の順に移動し、**ソリューション内の項目に対してのみシンボルを読み込む**のチェック ボックスが選択されていないことを確認します。 [![Options\_LinqC](./media/options_linqc2.png)](./media/options_linqc2.png) **ヒント**: C\# コードでブレークポイントに到達できない場合、**モジュール**ウィンドウ (**デバッグ&gt;ウィンドウ&gt;モジュール**) で開けて、C\# モジュールを検索し、明示的に読み込みます。
+このテストでは、書き込んだ C\# コードをデバッグします。 これを行うには、Visual Studio に C\# コードを含むアセンブリのシンボルを読み込むように通知する必要があります。 **Dynamics 365 &gt; オプション &gt; デバッグ** の順に移動し、 **ソリューション内の項目に対してのみシンボルを読み込む** チェック ボックスが選択されていないことを確認します。 [![Options\_LinqC](./media/options_linqc2.png)](./media/options_linqc2.png) **ヒント**: C\# コードでブレークポイントに到達できない場合、**モジュール**ウィンドウ (**デバッグ&gt;ウィンドウ&gt;モジュール**) で開けて、C\# モジュールを検索し、明示的に読み込みます。
 
 1.  **デバッグ &gt; デバッグを開始**とクリックします。 これにより、フリート アプリケーションが開始され、**FMRental** フォームのブラウザー ウィンドウが表示されます。
 2.  **車両レンタル ID** をクリックすると詳細が表示されます。

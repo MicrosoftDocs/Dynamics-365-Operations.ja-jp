@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 10794
 ms.assetid: fe596786-c229-47b5-af0a-6022569ebee8
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 523877816f1f125d4283b3404cf8b6afae8af6e4
-ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
+ms.openlocfilehash: d1f9fa4f37e6a25c85505d3fa9347ffe1c5f6e8c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1729891"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851235"
 ---
 # <a name="build-workspaces"></a>ワークスペースの構築
 
@@ -451,10 +451,10 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 
     | フィールド タイプ    | フィールド名            | EDT/ 列挙型タイプ               |
     |---------------|-----------------------|-----------------------------|
-    | 文字列        | 名            | FirstName (EDT)             |
-    | 文字列        | 姓             | LastName (EDT)              |
+    | 文字列        | 名             | FirstName (EDT)             |
+    | 文字列        | 姓              | LastName (EDT)              |
     | コンテナー     | 画像                 | ビットマップ (EDT)                |
-    | Int64         | 車両               | FMTVehicleRecID (EDT)       |
+    | Int64         | 車両               | FMTVehicleRecId (EDT)       |
     | UTC 日時 | StartDate             | StartDateTime (EDT)         |
     | UTC 日時 | EndDate               | EndDateTime (EDT)           |
     | Int64         | SysDataCacheContextId | SysDataCacheContextId (EDT) |

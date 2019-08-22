@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d96fb80b19c74ab3b62115dacd1e74bb31210a43
-ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
+ms.openlocfilehash: 8a2f9a9c886807c11aac0ab8e0120d3804ae20a4
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624324"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833244"
 ---
 # <a name="single-user-testing-with-task-recorder-and-the-performance-sdk"></a>タスクレコーダーおよびパフォーマンスSDKを使用したシングルユーザーテスト
 

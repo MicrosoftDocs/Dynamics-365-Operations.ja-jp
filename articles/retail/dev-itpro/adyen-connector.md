@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 494e42a815124c2bc56fc9797ae5cb437a37ddd9
-ms.sourcegitcommit: f829b5c0e28eb228296ba65f1d6c51d8a919a7d1
+ms.openlocfilehash: 4ab7089c255e21e746f2b8531f352d8a3c5baaa8
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "1614986"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833109"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -211,8 +211,8 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 
 | スキーム | カードあり | カードなし |
 |---|:-:|:-:|
-| [ギフト カードの残高を清算する](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/gift-card-cash-out) | ✔ | |
-| [重複支払保護](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
+| [ギフト カードの残高を清算する](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/gift-card-cash-out) | ✔ | |
+| [重複支払保護](https://docs.microsoft.com/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
 | オムニ チャネルのトークン化 | ✔ | ✔ |
 | リンクされた払戻 | ✔<br>(10.0.1 以降) | ✔<br>(10.0.1 以降) |
 | [オンライン支払の保存](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(10.0.2 以降) | 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: b265d51c-52d1-45c5-b578-64c5242c592a
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a233b65581edfabc286e4fa51b5fd3968dad6f3a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7b93f3fc1236bab180369285e42eb1b814285e01
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561656"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863511"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン8.0 (2018 4 月) の新機能および変更された機能
 
@@ -30,7 +30,7 @@ ms.locfileid: "1561656"
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 と 8.0.35 です。
 
-ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース ノート](https://docs.microsoft.com/en-us/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations の新規または変更のいずれかの機能に関する詳細を提供します。
+ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース ノート](https://docs.microsoft.com/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations の新規または変更のいずれかの機能に関する詳細を提供します。
 
 ### <a name="introducing-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の導入
 

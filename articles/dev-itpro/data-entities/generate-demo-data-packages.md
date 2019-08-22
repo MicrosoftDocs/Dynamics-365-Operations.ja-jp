@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 77523
 ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 4680f221c78dd75678681821e4be149b6eb4ba36
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4574b6eea95b34ed563af3439a338326a77ebcf8
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537107"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850381"
 ---
 # <a name="generate-demo-data-by-using-data-packages"></a>データ パッケージを使用してデモ データを生成します
 

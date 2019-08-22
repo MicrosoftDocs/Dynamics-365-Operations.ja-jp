@@ -1,7 +1,7 @@
 ---
 title: 分析コード エントリ コントロールの取得
 description: 分析コード エントリ コントロールおよび関連するコントローラー クラスについて説明します。
-author: ShylaThompson
+author: robinarh
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 25551
 ms.assetid: dbc5c0af-ae97-463e-b5ff-9bfd242529ff
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c412a65a774b239cc23f91f3516712ddaa1b50
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cdf813b3f264d84a7e0981551879f9a5713a2163
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555612"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833372"
 ---
 # <a name="uptake-of-dimension-entry-controls"></a>分析コード エントリ コントロールの取得
 
@@ -188,7 +188,8 @@ DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
 <pre><code>public void delete(){super();}</code></pre>
-### Finance and Operations この方法はデータ ソースになります。 カスタム ロジックがない場合に削除することができます。
+### Finance and Operations 
+このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
 <pre><code>public void deleted(){super();}</code></pre>
@@ -216,15 +217,18 @@ DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
 <pre><code>public void writing(){super();}</code></pre>
-### Finance and Operations この方法はデータ ソースになります。 カスタム ロジックがない場合に削除することができます。
+### Finance and Operations 
+このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
 <pre><code>public void written(){super();}</code></pre>
-### Finance and Operations この方法はデータ ソースになります。 カスタム ロジックがない場合に削除することができます。
+### Finance and Operations 
+このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
 <pre><code>public boolean validateWrite(){boolean ret;ret = super();return ret;}</code></pre>
-### Finance and Operations この方法はデータ ソースになります。 カスタム ロジックがない場合に削除することができます。
+### Finance and Operations 
+このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
 <pre><code>public void pageActivated()
@@ -234,7 +238,8 @@ DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
     there is no custom implementation */
     // dimensionDefaultingController.pageActivated();
 }</code></pre>
-### Finance and Operations この方法は、分析コード エントリ コントロールを保持する TabPage またはグループになります。 カスタム ロジックがない場合は、メソッドを削除することができます。
+### Finance and Operations 
+この方法は分析コード エントリ コントロールを保持する TabPage またはグループになります。 カスタム ロジックがない場合は、メソッドを削除することができます。
 
 ## <a name="compile-errors"></a>**コンパイル エラー**
 このセクションでは、取り残される可能性のある一般的なコンパイル エラーに対処する方法について説明します。

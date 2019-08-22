@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 52291
 ms.assetid: 60d8c71b-6df4-4776-9642-ed89ab5ad46a
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f6ba5193e0c2fb14ce5e28379b5e1d92eb79839
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7d0ea9f496e8375cf57782749e4dbb5c8ae8c9bd
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544200"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833674"
 ---
 # <a name="l-classes"></a>L クラス
 

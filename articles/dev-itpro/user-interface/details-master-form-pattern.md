@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 12373
 ms.assetid: e4518f56-57b5-4cf1-b197-3fbaea7be861
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae39826e9fa5e2ee017408d5d295e2a3f2613e20
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: a558f880eeff0c0407c4f980bc1db6a2558fc2a2
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595509"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851187"
 ---
 # <a name="details-master-form-pattern"></a>詳細マスター フォーム パターン
 

@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18611
 ms.assetid: b7a8bf2b-83f6-4022-b131-4e6bba3b46a8
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: df6220a073a9c5b0d8015801ec46654fe802b3c7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4b0b7e93d00b2d7be34a350d6035748bb11b2f69
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555254"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850503"
 ---
 # <a name="request-for-proposals-rfp-responses"></a>提案依頼 (RFP) の応答
 

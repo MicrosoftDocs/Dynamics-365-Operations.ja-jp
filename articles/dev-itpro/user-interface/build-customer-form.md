@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 20401
 ms.assetid: 78199ae8-0631-4cf4-b206-b952f09b92a9
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0b71da3ba67604138cdef3ab2dc3abcf96a7647
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7b21e86899962df69a8081f2306b2c9b5d554613
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560058"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851243"
 ---
 # <a name="build-the-customer-form"></a>顧客フォームの構築
 

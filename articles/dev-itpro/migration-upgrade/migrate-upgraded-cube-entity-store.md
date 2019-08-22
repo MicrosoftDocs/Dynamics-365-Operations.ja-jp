@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 94203
 ms.assetid: e992cdd8-abe8-42d0-97ad-6165822abbba
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: b889fb0c59745cc38c8e21ee6f2d926033c76295
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 77cf20994ec31eac81284ee43a38b657ce9e1af1
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595475"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851729"
 ---
 # <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 

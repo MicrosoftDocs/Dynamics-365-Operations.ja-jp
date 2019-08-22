@@ -3,24 +3,24 @@ title: Go-Live の準備
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Dynamics 365 for Finance and Operations プロジェクトにおける go live の準備方法を説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 07/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: margoc
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d854d430460d6431a5561cafa5fac2bfc851d976
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff77eb4d3883470a45b8ee041afadf475015fc8b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569045"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851909"
 ---
 # <a name="prepare-for-go-live"></a>Go-Live の準備
 
@@ -45,7 +45,7 @@ ms.locfileid: "1569045"
 |   | 配置 | 48 時間 | 動的サービス エンジニアリング (DSE) | LCS でのステータスは、展開の進捗状況を反映しています。 要求に関する質問がある場合、コメントとしてサービス要求に転記されます。 |
 | 6 | 配置可能なパッケージ インストール要求 | セルフサービス | 顧客 | [クラウド環境への更新の適用](../../dev-itpro/deployment/apply-deployable-package-system.md)トピックの指示に従います。 |
 |   | パッケージのインストール | パッケージ数、最短 5 時間のリード タイム、およびパッケージあたり 4 時間のダウンタイムに依存する | 動的サービス エンジニアリング (DSE) | 一般に、更新の 95% が 1 時間未満で適用されますが、何らかの理由でロールバックが必要な場合、4 時間のダウンタイム ウィンドウを提供することをお勧めします。 パッケージの展開が正常に実行されると、パッケージの展開が完了するとすぐに環境が利用可能になります。つまり、ダウンタイムを長くしても、システムの可用性に悪影響は及びません。 |
-| 7 | サンドボックス要求からのデータベースのコピー (該当する場合) | セルフサービス | 顧客 | [Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)に記載された指示に正確に従う必要があります。 |
+| 7 | サンドボックス要求からのデータベースのコピー (該当する場合) | セルフサービス | 顧客 | 「[ゴールデン構成プロモーション](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)」のトピックにある手順に従ってください。 |
 |   | データベースをコピー | 5 時間のリード タイムと 2 時間のダウンタイム | 動的サービス エンジニアリング (DSE) | 一般に、データベースのコピーは 1 時間未満で完了します。 何らかの理由でロールバックが必要な場合に備えて、引き続き 2 時間のダウンタイム ウィンドウを提供することをお勧めします。 |
 | 8 | 生産準備完了 | 前の手順すべてが完了した後 | 顧客/パートナー | 顧客/パートナーが実稼動環境を制御します。 |
 |   | 切替活動 | プロジェクトによって異なります | 顧客/パートナー | |
@@ -55,7 +55,7 @@ ms.locfileid: "1569045"
 
 各実装プロジェクトにおける主要なマイルストーンは、実稼働環境への切替です。
 
-実稼働環境がライブ運用に使用されるようにするため、マイクロソフトは、LCS 手法で必要なアクティビティが完了した後、実装が運用フェーズに近づいている場合にのみ実稼働インスタンスをプロビジョニングします。 ご利用のサブスクリプションでの環境の詳細については、[ライセンス ガイド](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI) を参照してください。
+実稼働環境がライブ運用に使用されるようにするため、マイクロソフトは、LCS 手法で必要なアクティビティが完了した後、実装が運用フェーズに近づいている場合にのみ実稼働インスタンスをプロビジョニングします。 ご利用のサブスクリプションでの環境の詳細については、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。
 
 実稼動環境を要求するために使用される**構成**ボタンが利用可能になる前に、LCS 手法で分析、設計、開発、およびテスト フェーズを完了する必要があります。 LCS でフェーズを完了するには、まずそのフェーズで必要なすべてのステップを完了する必要があります。 フェーズにあるすべてのタスクが完了したら、そのフェーズ全体を完了することができます。 変更する必要がある場合、常に後からフェーズを再オープンすることができます。 ヘルプをさらに要求する場合は、「[Lifecycle Services for Finance and Operations の顧客](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)」を参照します。
 
@@ -86,20 +86,13 @@ UAT フェーズ中に、実装したすべてのビジネス プロセスおよ
 
 すべての Finance and Operations 顧客は、実稼働環境を展開する前に Microsoft FastTrack チームで、事前の Go-live レビューを完了する必要があります。 運用環境を要求する前に、この評価を正常に完了する必要があります。 Microsoft FastTrack に馴染みがあるユーザーは、「[Microsoft FastTrack for Dynamics 365 概要](../get-started/fasttrack-dynamics-365-overview.md)」を参照します。
 
-Go-Live の約 8 週間前に、FastTrack チームが Go-Live チェックリストに記入するように求めます。
+Go-Live の約 8 週間前に、FastTrack チームが Go-Live チェックリストへの記入を求めます。 
 
-- 150 以上の席数があり、Microsoft ソリューション アーキテクトが、プロジェクトに割り当てられている場合、ソリューション アーキテクトはユーザーに連絡を取ります。
-- 20–149 席を使用する場合は、チェックリストは <go-live@microsoft.com> からユーザーに送信されます。
-
-
-[FastTrack go-live 前チェックリスト](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops) の CustomerSource からチェックリストをダウンロードすることもできます。
+子のチェックリストは [Go-live 計画 TechTalk](https://aka.ms/FastTrackPreGoLiveChecklist) ページの **Dynamics 365 コミュニティ** からダウンロードできます。  
 
 プロジェクト マネージャーまたはプロジェクトの主要メンバーは、プロジェクトの Go-Live 前の段階の間に Go-Live チェックリストを完了する必要があります。 チェックリストは通常、稼働予定日の 4 ~ 6 週間前に完了し、UAT が完了したか、ほぼ完了したときです。
 
-go-live チェックリストを完了したら、次のいずれかのステップに従います。
-
-- 20–149 席を使用する場合は、チェックリストを <go-live@microsoft.com> に送信します。
-- 150 以上の席数があり、Microsoft ソリューション設計者が、プロジェクトに割り当てられている場合、ソリューション設計にチェックリストを送信します。
+Go-live チェックリストを完了したら、電子メールで**Dynamics 365 FO go live** d365fogl@microsoft.com に送信します。 電子メールには、顧客からの主な関係者と実装パートナーを必ず含めます。
 
 チェックリストが送信された後、Microsoft ソリューション アーキテクトは、プロジェクトをレビューし、潜在的なリスク、ベスト プラクティス、プロジェクトの Go-Live を成功させるための推奨事項を説明するアセスメントを提供します。 場合によっては、ソリューション アーキテクトがリスク要因を強調表示し、軽減計画を求める場合があります。 評価が完了したら、ソリューション アーキテクトは、ユーザーが LCS の実稼働環境を要求する準備が整ったことを示します。
 

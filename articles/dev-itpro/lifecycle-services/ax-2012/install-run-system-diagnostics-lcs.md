@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18861
 ms.assetid: 075b4e28-162f-47ae-8713-392d711bdaff
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: d51f75f9ebbf42d6ce0125124463dae35d3084bd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6b52065f120c911d66312348bfa8b7be3f790a4f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555285"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850555"
 ---
 # <a name="install-and-run-system-diagnostics-ax-2012"></a>システム診断のインストールと実行 (AX 2012)
 
@@ -89,8 +89,8 @@ SQL Server ビジネス データベースをホストするサーバー上の W
 <tr class="odd">
 <td>レジストリで権限を設定するには、既に存在しているアクセス特権を削減することはできません。 セキュリティの詳細設定については、以下を参照してください。
 <ul>
-<li><a href="http://technet.microsoft.com/en-us/library/jj134043.aspx">Windows Server 2012 アクセス制御と承認の概要</a></li>
-<li><a href="http://technet.microsoft.com/en-us/library/cc730772.aspx">Windows Server 2008 R2 セキュリティの詳細設定のプロパティ ページ - アクセス許可タブ</a></li>
+<li><a href="http://technet.microsoft.com/library/jj134043.aspx">Windows Server 2012 アクセス制御と承認の概要</a></li>
+<li><a href="http://technet.microsoft.com/library/cc730772.aspx">Windows Server 2008 R2 セキュリティの詳細設定のプロパティ ページ - アクセス許可タブ</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -109,7 +109,7 @@ Group Policy では、AOS のサービスをリモートで利用できるよう
 
 #### <a name="configure-windows-event-log-and-wmi-permissions"></a>Windows イベント ログおよび WMI のアクセス許可をコンフィギュレーションする
 
-サービス アカウントは、環境内の各サーバー上の Windows イベント ログを読み取ることができ、リモートで Windows Management Instrumentation 接続を監視できる必要があります。 詳細については、「[ローカル グループへのメンバーの追加](http://technet.microsoft.com/en-us/library/cc772524(v=WS.10).aspx)」を参照してください。
+サービス アカウントは、環境内の各サーバー上の Windows イベント ログを読み取ることができ、リモートで Windows Management Instrumentation 接続を監視できる必要があります。 詳細については、「[ローカル グループへのメンバーの追加](http://technet.microsoft.com/library/cc772524(v=WS.10).aspx)」を参照してください。
 
 -   環境内の各サーバーでは、サービス アカウントを**イベント ログ リーダー**ローカル グループ、**配分 COM ユーザー**ローカル グループ、および**パフォーマンス ユーザーの監視** ローカル グループに追加します。
 
@@ -140,15 +140,15 @@ AOS インスタンスまたは Microsoft Dynamics AX SQL Server ビジネス �
 
 7.  パフォーマンス モニター ユーザー グループで手順 6 を繰り返し、すべてのウィンドウを閉じます。
 
-詳細については、「[リモート WMI 接続の保護](http://msdn.microsoft.com/en-us/library/windows/desktop/aa393266(v=vs.85).aspx)」を参照してください。
+詳細については、「[リモート WMI 接続の保護](http://msdn.microsoft.com/library/windows/desktop/aa393266(v=vs.85).aspx)」を参照してください。
 
 #### <a name="configure-sql-server-permissions"></a>SQL Server のアクセス許可をコンフィギュレーションします
 
 サービス アカウントは、Microsoft Dynamics AX ビジネス データベースのデータを読み取ることができ、SQL Server の既定の動的管理ビューにアクセスできる必要があります。
 
-1.  Microsoft Dynamics AX ビジネス データベースがインストールされている SQL Server インスタンスに、ログインとしてサービス アカウントを追加します。 このステップを実行する方法の詳細については、「[ログインの作成](http://msdn.microsoft.com/en-us/library/aa337562.aspx)」を参照してください。
-2.  ビジネス データベースのユーザーとしてアカウントを追加します。 このステップを実行する方法の詳細については、「[方法: データベース ユーザーの作成](http://msdn.microsoft.com/en-us/library/aa337545.aspx)」を参照してください。
-3.  ビジネス データベースの db\_datareader ロールにサービス アカウントを追加します。 このステップを実行する方法の詳細については、「[ロールに参加](http://msdn.microsoft.com/en-us/library/ff877886.aspx)」を参照してください。
+1.  Microsoft Dynamics AX ビジネス データベースがインストールされている SQL Server インスタンスに、ログインとしてサービス アカウントを追加します。 このステップを実行する方法の詳細については、「[ログインの作成](http://msdn.microsoft.com/library/aa337562.aspx)」を参照してください。
+2.  ビジネス データベースのユーザーとしてアカウントを追加します。 このステップを実行する方法の詳細については、「[方法: データベース ユーザーの作成](http://msdn.microsoft.com/library/aa337545.aspx)」を参照してください。
+3.  ビジネス データベースの db\_datareader ロールにサービス アカウントを追加します。 このステップを実行する方法の詳細については、「[ロールに参加](http://msdn.microsoft.com/library/ff877886.aspx)」を参照してください。
 4.  サービス アカウントに SQL Server インスタンスの VIEW SERVER STATE 権限を付与します。
     1.  SQL Server Management Studio で、**データベース**を展開し、**Microsoft Dynamics AX** データベースを右クリックし、**プロパティ**をクリックします。
     2.  **アクセス許可**をクリックし、次に**サーバーのアクセス許可を表示**をクリックします。
@@ -206,7 +206,7 @@ Business Connector サービスは、Lifecycle Services 診断サービスがイ
 1.  **環境の検出** ウィンドウで初期データ収集を実行するには、**今すぐ収集** をクリックします。 初めて環境を検出した直後に最初のコレクションを実行することをお勧めします。
 2.  コレクション ジョブのスケジューリングに使用できるコレクション コマンドを生成するするには、**コレクション コマンドを生成** をクリックします。
 3.  生成されたコマンドをクリップボードにコピーします。
-4.  **Windows タスク スケジューラ**などのスケジュール エンジンを使用して実行するコマンドをスケジュール設定します。 **タスク スケジューラ**の使用の詳細については、[タスクのスケジュール](http://technet.microsoft.com/en-us/library/cc766428.aspx) を参照してください
+4.  **Windows タスク スケジューラ**などのスケジュール エンジンを使用して実行するコマンドをスケジュール設定します。 **タスク スケジューラ**の使用の詳細については、[タスクのスケジュール](http://technet.microsoft.com/library/cc766428.aspx) を参照してください
 
 ## <a name="use-same-x509-certificate-for-all-environments"></a>すべての環境で同じ X509 証明書を使用する
 

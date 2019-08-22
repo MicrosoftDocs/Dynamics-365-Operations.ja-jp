@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 266824
 ms.assetid: ac723685-f87c-4854-9bb7-b92ccf1094eb
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2a6549b5d96c0afda29f4eb5284103133f4bdf9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1c3762820814bdd2140c3fe10882e09c3cfa52cb
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544043"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850677"
 ---
 # <a name="create-or-update-methodologies"></a>方法の作成または更新
 

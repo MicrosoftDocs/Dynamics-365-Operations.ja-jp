@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 104503
 ms.assetid: 90f8562a-075d-4d5a-96ec-b0ff1ae98fb5
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d0051b098e0cdf9c17a23f769cc42362bd7d125
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e0ad111d334dba8d1e5a17b6fc35457fcd822718
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544190"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833662"
 ---
 # <a name="system-tables"></a>システム テーブル
 
@@ -275,7 +275,7 @@ DatabaseLog テーブルは、SysDatabaseLog テーブルのコンフィギュ�
 
 [xRecord クラス](x-classes.md#class-xrecord) [共通テーブル](#common) [DatabaseLog テーブル](#databaselog)
 
-## <a name="delaccessrightslist"></a>DEL\_AccessRightsList
+## <a name="del_accessrightslist"></a>DEL\_AccessRightsList
 このテーブルを使用すると、権限昇格攻撃またはサービス拒否攻撃につながるおそれがあります。 したがって、AOSAuthorization プロパティは CreateUpdateDelete の列挙値に設定されます。 Application Object Server は、現在のユーザーがそのテーブルで要求された操作を実行するためのアクセス許可を持っていることを確認することで、テーブルに対する作成、更新、および削除アクションをそれぞれ許可します。 操作を開始したユーザーが操作を実行する権限がない場合は、例外が発生します。
 
 ### <a name="fields"></a>フィールド
@@ -324,7 +324,7 @@ DatabaseLog テーブルは、SysDatabaseLog テーブルのコンフィギュ�
 
 [xRecord クラス](x-classes.md#class-xrecord) [共通テーブル](#common) DEL-AccessRightsList テーブル
 
-## <a name="delcompanydomainlist"></a>DEL_CompanyDomainList
+## <a name="del_companydomainlist"></a>DEL_CompanyDomainList
 CompanyDomainList テーブルには、DomainInfo および DataArea テーブル間の関連付けが含まれています。 ドメインごとにセキュリティ権限が付与されます。
 
 ### <a name="fields"></a>フィールド
@@ -365,7 +365,7 @@ CompanyDomainList テーブルには、DomainInfo および DataArea テーブ�
 
 [xRecord クラス](x-classes.md#class-xrecord) [共通テーブル](#common) DEL_CompanyDomainList テーブル
 
-## <a name="deldomaininfo"></a>DEL_DomainInfo
+## <a name="del_domaininfo"></a>DEL_DomainInfo
 このテーブルを使用すると、権限昇格攻撃またはサービス拒否攻撃につながるおそれがあります。 したがって、AOSAuthorization プロパティは CreateUpdateDelete の列挙値に設定されます。 Application Object Server は、現在のユーザーがそのテーブルで要求された操作を実行するためのアクセス許可を持っていることを確認することで、テーブルに対する作成、更新、および削除アクションをそれぞれ許可します。 操作を開始したユーザーが操作を実行する権限がない場合は、例外が発生します。
 
 ### <a name="fields"></a>フィールド
@@ -397,7 +397,7 @@ CompanyDomainList テーブルには、DomainInfo および DataArea テーブ�
 
 [xRecord クラス](x-classes.md#class-xrecord) [共通テーブル](#common) DEL_DomainInfo テーブル
 
-## <a name="delusergroupinfo"></a>DEL_UserGroupInfo
+## <a name="del_usergroupinfo"></a>DEL_UserGroupInfo
 UserGroupInfo テーブルには、使用可能なユーザー グループの一覧が含まれています。
 
 ### <a name="fields"></a>フィールド
@@ -425,7 +425,7 @@ UserGroupInfo テーブルには、使用可能なユーザー グループの�
 
 [xRecord クラス](x-classes.md#class-xrecord) [共通テーブル](#common) DEL_UserGroupInfo テーブル
 
-## <a name="delusergrouplist"></a>DEL_UserGroupList
+## <a name="del_usergrouplist"></a>DEL_UserGroupList
 UserGroupList テーブルには、各ユーザー グループに関連付けられているユーザーのリストが含まれています。
 
 ### <a name="fields"></a>フィールド

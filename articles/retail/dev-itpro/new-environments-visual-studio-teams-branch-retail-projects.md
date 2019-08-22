@@ -10,19 +10,19 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: ccbbbc66b5a34719f139977b0d1e29afba231866
-ms.sourcegitcommit: 3d1b0e7d0f165fbcbec9c92783e5e936b282d757
+ms.openlocfilehash: a3a573b2c3a2fcac2fd4409e18701715b86c7d1e
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "1540142"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833201"
 ---
 # <a name="set-up-new-environments-azure-devops-and-branches-for-retail-projects"></a>Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 

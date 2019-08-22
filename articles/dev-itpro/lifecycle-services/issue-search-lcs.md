@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 18881
 ms.assetid: 160b2882-c70c-44b1-9780-68dc47afb2e8
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc24c26ce0fb7d208d3f387a1d6556a4fd63875d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 811baab1b12e642f7f5dbd9bc9ebe3e7f8abcba1
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544042"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850669"
 ---
 # <a name="issue-search-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) での問題検索
 

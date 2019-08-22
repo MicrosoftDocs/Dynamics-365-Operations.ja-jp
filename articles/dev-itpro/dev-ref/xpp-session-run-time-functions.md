@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 31421
 ms.assetid: a83ec18b-cc9e-40e3-ab06-87ff1c972a6a
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9628ae5c9f5d98eb4652868e57710732afd4b8d1
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 1f721b0244a7c222b2b304be4d08054dd7380266
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595414"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833600"
 ---
 # <a name="x-session-runtime-functions"></a>X++ セッション ランタイム関数
 

@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 62603
 ms.assetid: 1e9eb4d9-3826-42f6-a917-99b3940436a7
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: fcba6bdf3a121cdc1caf60430bed9dad7e25fc22
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9b88e56d93c05f10ee14bb103a5b1db75b8edeee
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555281"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850543"
 ---
 # <a name="downloadable-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のダウンロード可能ツール
 

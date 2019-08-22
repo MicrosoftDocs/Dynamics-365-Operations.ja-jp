@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 6154
 ms.assetid: ''
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 115832c4b6bf3e05e3bc621c0254a167e549e1af
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: db265cb8b727b06385321b4b374cb1c6458db47c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555735"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851809"
 ---
 # <a name="translation-memory-files"></a>翻訳メモリ ファイル
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Translation Service (DTS) は、2 か国語 XML ローカライズ交換ファイル形式 (XLIFF) ファイルを使用して、ソース言語とターゲット言語のペアを格納します。 XLIFF は XML に基づいているため、任意のテキスト エディターで XLIFF ファイルを開くことができます。 ただし、この形式を使用するよう設計されている XLIFF エディターを使用することをお勧めします。 たとえば、[多言語アプリ ツールキット (MAT)](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit) で利用できる無料の Microsoft 多言語エディターを使用することができます。
+Microsoft Dynamics 365 Translation Service (DTS) は、2 か国語 XML ローカライズ交換ファイル形式 (XLIFF) ファイルを使用して、ソース言語とターゲット言語のペアを格納します。 XLIFF は XML に基づいているため、任意のテキスト エディターで XLIFF ファイルを開くことができます。 ただし、この形式を使用するよう設計されている XLIFF エディターを使用することをお勧めします。 たとえば、[多言語アプリ ツールキット (MAT)](https://developer.microsoft.com/windows/develop/multilingual-app-toolkit) で利用できる無料の Microsoft 多言語エディターを使用することができます。
 
 DTS では、2 つの方法で XLIFF 翻訳メモリ (TM) を入手できます。
 

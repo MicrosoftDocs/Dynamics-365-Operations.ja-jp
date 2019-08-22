@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations, Retail
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
 ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: d8c8e182d261198b8a42f7da14dbdce930914a07
-ms.sourcegitcommit: f7a1e74a639dfbe470f7d57d4fc55e3bf4c6a74a
+ms.openlocfilehash: 30043a7249368e4432b0a4869381abc2c31abb59
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "1540875"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848135"
 ---
 # <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 50211
 ms.assetid: 0a774c73-9e5d-4faa-8716-61476c1a9b6e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9aee75319bce3839671fb58c85500dd31d924df
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: da31fe2c999e681b706011c1045a2cebfa514d2d
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595508"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851177"
 ---
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 

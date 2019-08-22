@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: margoc
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 81c5b5204c0ab131e229110ff15cc62dc5c4491b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a25bfa40b34ad20c323307c75b54caa6520c9319
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566649"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850767"
 ---
 # <a name="implementation-lifecycle-management"></a>実装ライフサイクル管理
 

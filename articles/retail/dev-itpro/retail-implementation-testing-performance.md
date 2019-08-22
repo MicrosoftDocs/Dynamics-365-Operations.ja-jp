@@ -10,19 +10,19 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 90d56b480a7b940d0a2998e550915d4e271b67d7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e98a82a8ff3725bf431b07be8170c287cdf6f076
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564382"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833125"
 ---
 # <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスに関する問題
 
@@ -53,7 +53,7 @@ Retail Modern POS/クラウド POS を使用する場合は、正しいユーザ
 - 追加のチャネル データベース拡張機能。 カスタム SQL が効率的で、正しいインデックスを使用していることを確認してください。
 - 同じカスタムまたは組み込みの CRT SQL クエリを複数回実行します。 この方法ではコストがかかりすぎる場合は、CRT 要求ハンドラーでキャッシュを適切に適用することができます。
 
-詳細については、「[IT プロおよび開発者向け Microsoft Dynamics 365 for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)」を参照してください。
+詳細については、「[IT プロおよび開発者向け Microsoft Dynamics 365 for Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)」を参照してください。
 
 店舗のパフォーマンスを調査するときは、[小売チャンネル実績調査](https://dynamicsnotes.com/retail-channel-performance-investigations/)にある提案に従ってください。
 

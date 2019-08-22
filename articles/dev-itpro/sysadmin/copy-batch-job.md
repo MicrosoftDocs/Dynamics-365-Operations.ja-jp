@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: e179179602c1e8169e8065ec8a269b034945a528
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1746742d3ceb4f1ff075f850ff8e19495c36490e
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570304"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851409"
 ---
 # <a name="copy-a-batch-job"></a>バッチ ジョブのコピー
 

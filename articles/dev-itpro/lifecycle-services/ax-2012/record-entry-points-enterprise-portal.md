@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 74812
 ms.assetid: 72a6964d-e8b6-4c3a-8b74-bd6550711f2a
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 2012 R3 CU8
-ms.openlocfilehash: 9e8305fbcb38fc56bc33dcb29e78841a3cac4e5f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4bbda83dfaa0af45f5f6b25c5498c5600c942145
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544077"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850511"
 ---
 # <a name="record-entry-points-in-enterprise-portal"></a>エンタープライズ ポータルのエントリ ポイントを記録
 

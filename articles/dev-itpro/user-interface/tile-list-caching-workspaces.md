@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 16341
 ms.assetid: c84d7929-4662-4abb-b345-ccc539d809d0
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4569a016ebea7ac87d68ee0fb398d06aa09c3272
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7d3e77aabc1629fec3c929a72185eac8fcb353cd
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570987"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851051"
 ---
 # <a name="tile-and-list-caching-for-workspaces"></a>ワークスペースのタイルおよびリストのキャッシュ
 
@@ -107,7 +107,7 @@ ms.locfileid: "1570987"
         }
     }
 
-状況によっては、**parmQueryableToCacheMapping()** メソッドを実装しなければならない場合もあります。 このメソッドは、キャッシュ テーブル内の少なくとも 1 つの列名が、バッキング テーブル内の対応する列の名前と一致しない場合に必要です (たとえば、名前は同じですが異なるテーブルの 2 つのフィールドを追加する必要がある場合など)。 この場合、キャッシュ テーブルとバッキング テーブルの間で列マッピングを定義するためにこのメソッドを実装することができます。 構文は、**Query::Insert\_RecordSet()** メソッド (<https://msdn.microsoft.com/en-us/library/query.insert_recordset.aspx>) の構文と同じです。
+状況によっては、**parmQueryableToCacheMapping()** メソッドを実装しなければならない場合もあります。 このメソッドは、キャッシュ テーブル内の少なくとも 1 つの列名が、バッキング テーブル内の対応する列の名前と一致しない場合に必要です (たとえば、名前は同じですが異なるテーブルの 2 つのフィールドを追加する必要がある場合など)。 この場合、キャッシュ テーブルとバッキング テーブルの間で列マッピングを定義するためにこのメソッドを実装することができます。 構文は、**Query::Insert\_RecordSet()** メソッド (<https://msdn.microsoft.com/library/query.insert_recordset.aspx>) の構文と同じです。
 
     public Map parmQueryableToCacheMapping()
     {
@@ -156,7 +156,7 @@ ms.locfileid: "1570987"
 ## <a name="common-mistakes-and-tips-for-query-optimization"></a>クエリの最適化に関するよくある間違いやヒント
 クエリを最適化するときに考慮するいくつかの一般的なガイドラインを次に示します。 これは、クエリ最適化の広範なガイドではありませんが、いくつかの簡単なガイドラインを示しています。
 
--   **SQL プロファイラーを使用して、明細書を追跡してください。** Microsoft SQL Server プロファイラーをデータ ベースに接続し、最適化する SQL ステートメントをキャプチャします。 既定のインストールで提供されている調整テンプレートを使用することができます。 興味のある明細書を入手した際は、トレースを無効にすることを忘れないでください。 詳細については、「<https://msdn.microsoft.com/en-us/library/ms175047.aspx>」を参照してください。
+-   **SQL プロファイラーを使用して、明細書を追跡してください。** Microsoft SQL Server プロファイラーをデータ ベースに接続し、最適化する SQL ステートメントをキャプチャします。 既定のインストールで提供されている調整テンプレートを使用することができます。 興味のある明細書を入手した際は、トレースを無効にすることを忘れないでください。 詳細については、「<https://msdn.microsoft.com/library/ms175047.aspx>」を参照してください。
 -   **クエリ計画を常に確認します。** Microsoft SQL Server Management Studio で、**実際の実行計画を含む**を有効にしたことを確認します。 クエリ プランを確認し、警告に注意します。 矢印の太さは、フェッチされて次のステップに移動された行の数を示します。
 -   **CPU のミリ秒と論理 I/O を比較します。** 特定の SQL ステートメントへの変更が、ステートメントを改善したかどうかを決定する良い方法の 1 つは、論理 I/O と CPU のミリ秒を確認することです。 これらの数値を取得するには、クエリ エディターで次のステートメントを使用します。
     -   set statistics time on

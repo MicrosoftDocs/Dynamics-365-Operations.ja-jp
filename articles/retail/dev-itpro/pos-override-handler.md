@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 17771
 ms.assetid: c54d34a5-32e2-4d0d-a1c2-4a9940d95ade
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 54144a2a0e6539c2cf89a7f8e551a335dc3b3cdb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c760902d41904fa69b16deb29b81c94b50fe3f4a
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564390"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833133"
 ---
 # <a name="pos-override-request-handler-sdk"></a>POS オーバーライド要求ハンドラー (SDK)
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 266674
 ms.assetid: 7bf76862-e320-4a81-81a4-5bda7288e573
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 2654848d28ba813cf5e2fac699b3eea9525dfa14
-ms.sourcegitcommit: 829270861391042a03e9bd249bdecd2b922116b3
+ms.openlocfilehash: 5f01ceceb1bac62e0519f1e118d0a009d1afd3f6
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "1690399"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849643"
 ---
 # <a name="extend-report-menu-items-to-redirect-user-navigation"></a>レポート メニューの項目を拡張してユーザーナビゲーションをリダイレクトします。
 

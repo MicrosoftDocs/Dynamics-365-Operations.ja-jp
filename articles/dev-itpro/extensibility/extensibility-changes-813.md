@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-12-07
 ms.dyn365.ops.version: App 8.1.3
-ms.openlocfilehash: d3d40b0d17d5c042253e6d42fba289ed1e57319c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3de652350ef2a010c57de32c792c986e18e74fc7
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550888"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833446"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-813"></a>Dynamics 365 for Finance and Operations バージョン 8.1.3 の拡張機能の変更
 

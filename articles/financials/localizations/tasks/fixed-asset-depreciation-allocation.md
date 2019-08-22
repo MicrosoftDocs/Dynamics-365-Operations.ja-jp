@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetAllocationRuleSetup_CN,  AssetPosting
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: China (PRC), Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9bdc139e3a65bd11d77cbaa94ddbae1e607c55aa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 694d774ae32be09caea4c5997054fe86282286b2
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556599"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852665"
 ---
 # <a name="setup-fixed-asset-depreciation-allocation"></a>固定資産減価償却配賦の設定
 

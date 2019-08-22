@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7824b5bdf97c356525ae73bf09897e3f8aed2677
-ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
+ms.openlocfilehash: 5fb169f296acaf554db3b38f713695fa9e88c3f3
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1539450"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742575"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>仕入先コラボレーションの設定と管理
 
@@ -155,7 +155,7 @@ Finance and Operations で提供されている **仕入先見込顧客 (外部)
 
 新しいベンダー コラボレーション ユーザーの電子メール アドレスが、テナントとして Azure に登録されているドメインに属している場合 (つまり、管理対象ドメイン アカウントの場合)、電子メール アドレスは既存の Azure AD アカウントである必要があります。 それ以外の場合、プロビジョニング プロセスを実行することはできません。
 
-Azure AD アカウント管理のワークフローでの **Azure B2B ユーザー招待の送信**タスクで使用されるプロセスの詳細については、[Azure Active Directory B2B コラボレーション](https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2b-collaboration-overview/) を参照してください。
+Azure AD アカウント管理のワークフローでの **Azure B2B ユーザー招待の送信**タスクで使用されるプロセスの詳細については、[Azure Active Directory B2B コラボレーション](https://azure.microsoft.com/documentation/articles/active-directory-b2b-collaboration-overview/) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 63603
 ms.assetid: 170eb939-154e-488e-84a8-f67dd9d9a8f6
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa023dd08a1ffe09dac5572c39d4f41f0591c247
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: a08204baf11b4bbce86876d017623a9f70b1236b
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595424"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833690"
 ---
 # <a name="f-classes-formobject-to-formrealcontrol"></a>F クラス (FormObject から FormRealControl)
 

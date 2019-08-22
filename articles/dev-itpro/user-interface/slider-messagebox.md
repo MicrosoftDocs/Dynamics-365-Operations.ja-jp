@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 64253
 ms.assetid: ef0924d0-ee42-4b0d-8602-4dfe15454350
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aorth
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65823eae3ff1ca30eee6d057a9426dd9520318f5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ab54a86b8df08f3f5ceace31a48b943dac585237
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559541"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851097"
 ---
 # <a name="slider-and-messagebox-dialogs"></a>スライダー ダイアログとメッセージ ボックス ダイアログ
 

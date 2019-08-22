@@ -3,24 +3,24 @@ title: AX 2012 からのアップグレード - サンドボックス環境で�
 description: このトピックでは、サンドボックス環境で Dynamics AX 2012 から Dynamics 365 for Finance and Operations にデータ アップグレードを実行する方法を説明します。
 author: tariqbell
 manager: AnnBe
-ms.date: 06/06/2018
+ms.date: 07/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: bfa2b12898b05691ca16e9d72f05932f33691c44
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 88b2a21e01f33fd8c9511ba1fdf5cb2e64728679
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595576"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851695"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-sandbox-environments"></a>AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 
@@ -293,12 +293,14 @@ SQL データベース インスタンスへのアクセスを制限するファ
 
 ## <a name="run-the-data-upgrade-deployable-package"></a>データ アップグレード展開可能なパッケージを実行
 
-最新の Finance and Operations 更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード展開可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共用資産ライブラリから最新のバイナリ更新プログラムをダウンロードします。
+レベル 2 サンドボックス環境では、DataUpgrade パッケージを LCS 経由で実行することはできません。 最新の Finance and Operations 更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード展開可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共用資産ライブラリから最新のバイナリ更新プログラムをダウンロードします。
 
 1. [LCS](https://lcs.dynamics.com/)にサインインします。
 2. **共有資産ライブラリ** タイルを選択します。
 3. **共有アセット** ライブラリの**アセット タイプの選択**で、**ソフトウェア配置可能パッケージ**を選択します。
 4. 配置可能パッケージ ファイルの一覧で、アップグレードに対応するデータ アップグレード パッケージを検索します。 たとえば、AX 2012 からアップグレードする場合、パッケージ名は AX2012DataUpgrade から始まります。 アップグレードするリリースに対応するパッケージを選択します。 例: AX2012DataUpgrade-July2017。
+
+次に、AOS VM のリモートデスクトップを開始て手動でパッケージを実行します。 
 
 詳細については、[開発、デモ、またはサンドボックス環境でのデータのアップグレード](upgrade-data-to-latest-update.md) を参照してください。 
 

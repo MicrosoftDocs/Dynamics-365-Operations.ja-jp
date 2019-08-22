@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 21681
 ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f546233a5f33c7343f469cc6c094440999c4945
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 93add0c0b7f924f1023303bfcd1fecdd1ef0dcb8
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595302"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850631"
 ---
 # <a name="apply-countryregion-context"></a>国/地域コンテキストの適用
 

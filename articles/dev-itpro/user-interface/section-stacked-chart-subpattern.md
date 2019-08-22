@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 29251
 ms.assetid: 58fea559-4d50-46f3-9a88-4cca1d882d04
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb39a61d4c7bc4791edf84654da4af476da6271b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9e51a0ae0ada3bb8aeb3e5e73bbc423633edf384
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560797"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851113"
 ---
 # <a name="section-stacked-chart-subpattern"></a>セクション積み上げグラフのサブパターン
 

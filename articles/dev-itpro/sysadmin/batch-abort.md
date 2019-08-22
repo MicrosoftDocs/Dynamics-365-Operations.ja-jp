@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-05-08
 ms.dyn365.ops.version: Platform update 27
-ms.openlocfilehash: 41568b9ec9b45ac6f2d07a0d32cdfdc8e99fcd72
-ms.sourcegitcommit: 169b593b0d9afb228d2cfb0f3b742e4777ec81af
+ms.openlocfilehash: 5c6b32109cc8d70524b3dea2a88b39d2e2b4da71
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "1633964"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851439"
 ---
 # <a name="abort-an-executing-batch-job"></a>実行中のバッチ ジョブの中止
 [!include [banner](../includes/banner.md)]

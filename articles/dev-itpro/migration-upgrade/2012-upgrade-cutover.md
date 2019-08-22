@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: bf662bd96bd26e342e696c6de6902d2fc15636aa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1dbb58b50d1854f9c36c90ced4377b4839a2ca0c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560060"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851791"
 ---
 # <a name="upgrade-from-ax-2012---go-live-cutover"></a>AX 2012 からのアップグレード - Go live (切替)
 

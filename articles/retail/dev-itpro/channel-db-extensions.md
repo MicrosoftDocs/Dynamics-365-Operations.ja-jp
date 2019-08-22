@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: f26f18c782541470ce50407d25636f570a6443d4
-ms.sourcegitcommit: 4ae431bae554776df880a3992e21103aee7b64f0
+ms.openlocfilehash: 6b1a22d3e808d56070fe478800542b8e33ee9596
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "1694403"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833195"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -204,7 +204,7 @@ GO
 
 チャンネル データベース拡張は、1 つまたは複数の T-SQL スクリプト ファイルを作成し、[展開可能なパッケージ](./retail-sdk/retail-sdk-packaging.md)に含めることで用意されます。 このプロセスについては、[Retail SDK](./retail-sdk/retail-sdk-overview.md) ドキュメントで説明します。
 
-拡張スクリプト ファイルは、[T-SQL](https://docs.microsoft.com/en-us/sql/t-sql/language-reference) を使用して記述され、[Azure SQL データベース](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-features)と互換性があります。
+拡張スクリプト ファイルは、[T-SQL](https://docs.microsoft.com/sql/t-sql/language-reference) を使用して記述され、[Azure SQL データベース](https://docs.microsoft.com/azure/sql-database/sql-database-features)と互換性があります。
 スクリプト ファイルの末尾は *.sql* ファイル拡張子にする必要があります。その他のファイルは無視されます。または、パッケージングまたは配置障害を引き起こす可能性があります。 Retail Store Scale Unit または Modern POS の一部としてオフラインでチャネル データベース拡張機能を展開する場合、スクリプトは、それらのコンポーネントに対して使用される SQL Express または SQL Server のバージョンの両方またはいずれかと互換性があることも必要です。
 
 配置とインストール中、拡張子スクリプトは、スクリプト ファイル名に基づいたアルファベット順で実行されます。

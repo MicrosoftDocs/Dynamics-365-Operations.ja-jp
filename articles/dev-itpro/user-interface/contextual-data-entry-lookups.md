@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 13631
 ms.assetid: 5c41c565-5f83-47f9-a75e-ca5bb4b062e7
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e50e0cb4c196b26998256e24ee7d7d3e5425c331
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: df0b2ba273df22f71008de487cb2df63a0a43f9a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555235"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851227"
 ---
 # <a name="contextual-data-entry-for-lookups"></a>ルックアップのコンテキスト データ入力
 

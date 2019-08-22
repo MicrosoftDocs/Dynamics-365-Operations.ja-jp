@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 85243
 ms.assetid: 71dbc0d5-4180-41c9-b27c-0e229a0e7444
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f29e25f0e43b1e4e9d35950057a35712b229c62
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fafe5aa4e9ca8a4e49f68b9bdbb30897d160843e
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544140"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833540"
 ---
 # <a name="get-evaluation-copies"></a>ベータ評価版の入手
 

@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 8b092d2b9d3c3f5a728881cdc968eb95a57f7995
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9f8850a01008a624599d0158517a88698d8790fa
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564386"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833742"
 ---
 # <a name="device-activation-of-a-customized-retail-modern-pos"></a>カスタマイズされた Retail Modern POS のデバイスの有効化
 

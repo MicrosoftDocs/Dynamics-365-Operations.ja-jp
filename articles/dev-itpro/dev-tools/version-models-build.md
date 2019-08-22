@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26731
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56bb21583635987cff1b7f9faa83b104622baa20
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c8b154607cb7d7695da3363b65c11fe1aeb3d1b0
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550922"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833498"
 ---
 # <a name="update-model-versions-in-the-automated-build"></a>自動ビルドのモデル バージョンの更新
 
@@ -53,7 +53,7 @@ LCS で、次の手順に従い、環境にインストールされているモ�
 コードが更新されると、環境に配置できる新しいパッケージを作成するためにビルドが使用されます。 Microsoft Azure DevOps は、前回のビルド以降に各ビルドに含まれた変更を追跡します。 ビルドのバージョン番号が生成されるモデルに含まれている場合、その番号によって、特定の環境で使用できるコードの変更の徹底した追跡可能性が提供されます。 ビルド番号を見つけてから、Azure DevOps でそのビルドに含まれている変更を確認することができます。 異なる分岐でビルドを使用する、または夜間ビルド、ゲート チェックイン ビルドまたは配置ビルド用の異なるビルド定義を使用する顧客およびパートナーについては、ビルドごとに異なるバージョン スキームを持つことができます。 この方法は、展開可能なパッケージのモデルメタデータを区別し、元のビルド定義に戻します。
 
 ## <a name="setting-up-versioning"></a>バージョン管理の設定
-プラットフォーム更新プログラム 6 または新しい配置により作成されるビルド定義については、モデルにビルド バージョンを含めるためのタスクが自動的に追加され有効になります。 Azure DevOps の新しいビルド定義の既定のビルド番号は、年、月、日、およびその日のビルドの増分番号で構成されます。 Azure DevOps のビルド番号、および使用できるオプションの詳細については、Microsoft Visual Studio ドキュメント サイトの[ビルド定義オプション](https://www.visualstudio.com/en-us/docs/build/define/options#Buildnumberformat) を参照してください。
+プラットフォーム更新プログラム 6 または新しい配置により作成されるビルド定義については、モデルにビルド バージョンを含めるためのタスクが自動的に追加され有効になります。 Azure DevOps の新しいビルド定義の既定のビルド番号は、年、月、日、およびその日のビルドの増分番号で構成されます。 Azure DevOps のビルド番号、および使用できるオプションの詳細については、Microsoft Visual Studio ドキュメント サイトの[ビルド定義オプション](https://www.visualstudio.com/docs/build/define/options#Buildnumberformat) を参照してください。
 
 自動ビルドは、構築されたモデルにビルド バージョン番号を適用します。
 

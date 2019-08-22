@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: rhaertle
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 116cd847aa50eec7edbe13e7f51ed89cec290e72
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: edff0927fdf9c370fd51804e83f5240a2ceef4ad
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569276"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833067"
 ---
 # <a name="localize-retail-extension-resources-and-label-files"></a>Retail 拡張リソースおよびラベル ファイルのローカライズ
 

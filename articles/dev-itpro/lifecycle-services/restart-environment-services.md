@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-03-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: dcee37628ee3c9230c1c51bcf8956f27827d6124
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d59b4bd3f1b3289e10bf23a4733dd0ec212b39f6
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537475"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851821"
 ---
 # <a name="restart-environment-services"></a>環境サービスの再開
 

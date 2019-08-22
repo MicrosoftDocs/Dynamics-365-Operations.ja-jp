@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 65863
 ms.assetid: 539105e2-097d-4723-84a1-8084c2c32652
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2d32ee27ca157dcaaf12abbff297a6f84e8a8dbd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3b0615f85f1db18cb56a9a63a4b4b4b9150b6038
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568710"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833107"
 ---
 # <a name="implement-a-return-policy-by-using-triggers"></a>トリガーを使用して返品ポリシーを実装してください
 

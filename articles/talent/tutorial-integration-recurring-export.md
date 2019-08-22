@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Talent January 2019 update
-ms.openlocfilehash: bd6d52f207d7bf91b6e354ce8d2335eb1e2374b8
-ms.sourcegitcommit: 8cf77e9171d6cad8ae6c8bfad9e4f9a46fef6d23
+ms.openlocfilehash: 2f2bbcef37dfbd91d8fcced2625eb3deaaf64b02
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "1689036"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742622"
 ---
 # <a name="recurring-data-export-using-azure-logic-apps"></a>Azure Logic アプリを使用した定期的なデータ エクスポート
 
@@ -39,16 +39,16 @@ Microsoft Dynamics 365 統合のひとつの典型的なビジネス シナリ�
 
 このチュートリアルでは下記のテクノロジを使用します:
 
-- **[Dynamics 365 for Talent Core HR](https://dynamics.microsoft.com/en-us/talent/overview/)** – エクスポートされる作業者のマスター データ ソース。
+- **[Dynamics 365 for Talent Core HR](https://dynamics.microsoft.com/talent/overview/)** – エクスポートされる作業者のマスター データ ソース。
 - **[Azure ロジック アプリ](https://azure.microsoft.com/services/logic-apps/)** – 定期的なエクスポートのオーケストレーションとスケジュールを提供するテクノロジ。
 
-    - **[コネクタ](https://docs.microsoft.com/en-us/azure/connectors/apis-list)** – ロジック アプリを必要なエンドポイントに接続するために使用されるテクノロジ。
+    - **[コネクタ](https://docs.microsoft.com/azure/connectors/apis-list)** – ロジック アプリを必要なエンドポイントに接続するために使用されるテクノロジ。
 
         - [Azure AD の HTTP](https://docs.microsoft.com/connectors/webcontents/) コネクタ
         - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) コネクタ
 
 - **[DMF パッケージ REST API](../dev-itpro/data-entities/data-management-api.md)** – エクスポートをトリガーし、その進捗を監視するために使用されるテクノロジ。
-- **[OneDrive for Business](https://onedrive.live.com/about/en-us/business/)** – エクスポートされた作業者の宛先。
+- **[OneDrive for Business](https://onedrive.live.com/about/business/)** – エクスポートされた作業者の宛先。
 
 ## <a name="prerequisites"></a>必要条件
 

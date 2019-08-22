@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Lifecycle Services
 ms.custom: 196833
 ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: c65adb310ffcac744b8a88b1cf67f5e85993011d
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: 0a9abd17cf8e8b7de3caf197986bc21f304feace
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624850"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850601"
 ---
 # <a name="back-up-the-databases-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのデータベースのバックアップ
 

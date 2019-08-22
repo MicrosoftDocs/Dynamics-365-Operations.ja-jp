@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 102343
 ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: f17a685bd25d753ba516e4bcb825c5fdf43d2f68
-ms.sourcegitcommit: c5edff04f35a067934fddebd166906edc003e7c5
+ms.openlocfilehash: d530c1c356342451c42b0bfb0cef48d25eaf323a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "1605849"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851653"
 ---
 # <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a>最新の Finance and Operations 更新プログラムへの移行の処理
 

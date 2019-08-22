@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bff0b1b0a68eccec1cebf130bc40ec3e6d88c3a9
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: 553a4a5d25e126923576569b48414c46aab991ec
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702798"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842692"
 ---
 # <a name="cash-overview-power-bi-content"></a>現金の概要 Power BI コンテンツ
 
@@ -40,7 +40,7 @@ ms.locfileid: "1702798"
 1. **システム管理 > 設定 > システム パラメーター**に移動して、**システム通貨**および**システム為替レート**を設定します。
 2. **総勘定元帳 > 設定 > 元帳**に移動して、**会計通貨**および**為替レート タイプ**を設定します。
 2. トランザクション通貨と会計通貨、会計通貨とシステム通貨、および会計通貨と銀行通貨の間の為替レートを定義します。 これを行うには、**総勘定元帳 > 通貨 > 通貨の為替レート**に移動します。
-3. キャッシュ フロー予測をコンフィギュレーションおよび実行します。 キャッシュ フロー予測の設定方法の詳細については、<a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+3. キャッシュ フロー予測をコンフィギュレーションおよび実行します。 キャッシュ フロー予測の設定方法の詳細については、<a href="https://docs.microsoft.com/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
 ">キャッシュ フロー予測</a>を参照してください。 
 4. **システム管理 > 設定 > エンティティ格納**に移動して、**LedgerCovLiquidityMeasurement** 集計測定を更新します。
 

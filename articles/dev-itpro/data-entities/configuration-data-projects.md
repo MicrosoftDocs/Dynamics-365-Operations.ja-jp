@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 77523
 ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: a67ac88653f0a41e192435b60b36a64549b8fac3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0ad27c26778e640dc1c6f3ba5dfd8563a08af17f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544276"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850165"
 ---
 # <a name="configuration-data-projects"></a>コンフィギュレーション データ プロジェクト
 

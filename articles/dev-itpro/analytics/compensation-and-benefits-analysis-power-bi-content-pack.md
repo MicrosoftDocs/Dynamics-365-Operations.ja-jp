@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 263914
 ms.assetid: 18634bb5-3341-42f2-9cc9-7b04708b506b
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6834940b16749461066e8f1000cbb7c2d4371109
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 48c968dfacd951d571f91fdcd809454f96f27a02
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548746"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848450"
 ---
 # <a name="compensation-and-benefits-power-bi-content"></a>報酬と給付金 Power BI コンテンツ
 
@@ -31,14 +31,14 @@ ms.locfileid: "1548746"
 このトピックでは、Finance and Operations - 報酬と給付金 Power BI コンテンツについて説明します。 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>コンテンツ パックに含まれるレポート
-コンテンツ パックを Finance and Operations データに接続した後に、レポートに組織のデータが表示されます。 以前に Microsoft Power BI を使用したことがない場合、詳細については、[Power BI のガイド付き学習](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData) 参照してください。 コンテンツ パックに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
+コンテンツ パックを Finance and Operations データに接続した後に、レポートに組織のデータが表示されます。 以前に Microsoft Power BI を使用したことがない場合、詳細については、[Power BI のガイド付き学習](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData) 参照してください。 コンテンツ パックに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
 
 | レポート                      | コンテンツ                                                                                                                              |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | 報酬と給付金の分析 | 会社ごとの時給および月給払いの従業員、平均時給、平均月給、雇用タイプごとの従業員、プラン登録 |
 | 従業員手当          | 選択した給付金での従業員の登録                                                                                               |
 
-これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
+これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 Finance and Operations データを使用して、報酬と給付金コンテンツ パックにレポートを入力します。 次の表に、コンテンツ パックが基づいているエンティティを示します。

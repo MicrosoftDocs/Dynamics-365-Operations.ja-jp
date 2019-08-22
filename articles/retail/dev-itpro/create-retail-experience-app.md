@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 251594
 ms.assetid: 922881a2-f12a-41b4-8ef9-a5b31b464ef1
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 95fe489c8146760a7626e07bf08e7851ab30a07b
-ms.sourcegitcommit: ad4d378afd88028d2002633a3cc8a67313cbeddd
+ms.openlocfilehash: f809b52818de8945133053990d4aa42e4df79a73
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625342"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833165"
 ---
 # <a name="create-and-apply-branding-to-the-retail-experience-app"></a>ブランドの作成と Retail Experience アプリへの適用
 
@@ -38,7 +38,7 @@ Retail Experience アプリは、Android および iOS スマートフォン プ
 
 Xamarin は [Xamarin 用の Visual Studio Tools](https://www.xamarin.com/download) からダウンロードできます。 
 
-Windows に Xamarin をインストールする方法を示すチュートリアルについては 「[Xamarin のリソース](https://docs.microsoft.com/en-us/xamarin/get-started/installation/index?pivots=windows)」 を参照してください。
+Windows に Xamarin をインストールする方法を示すチュートリアルについては 「[Xamarin のリソース](https://docs.microsoft.com/xamarin/get-started/installation/index?pivots=windows)」 を参照してください。
 
 ### <a name="update-xamarin"></a>Xamarin の更新
 
@@ -224,4 +224,4 @@ Xamarin.iOS アプリケーションで利用可能な配布方法の詳細は�
 署名の ID と証明書を管理する方法の詳細は、[アプリの署名とは](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) を参照してください。 
 
 [!NOTE]
-> 証明書を Apple 開発者エンタープライズ プログラムの一部として使用していて、手動でアプリをインストールする場合 (テストなど) は、手動で信頼を確立する必要があります。 詳細については [iOS にカスタム エンタープライズ アプリをインストールする](https://support.apple.com/en-us/HT204460) を参照してください。
+> 証明書を Apple 開発者エンタープライズ プログラムの一部として使用していて、手動でアプリをインストールする場合 (テストなど) は、手動で信頼を確立する必要があります。 詳細については [iOS にカスタム エンタープライズ アプリをインストールする](https://support.apple.com/HT204460) を参照してください。

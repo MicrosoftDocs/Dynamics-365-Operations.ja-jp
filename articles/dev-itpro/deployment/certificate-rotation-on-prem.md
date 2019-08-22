@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 43c6109c5f8b7dfcc53654a1e0b29fbaca46113b
-ms.sourcegitcommit: 10124469f7bb183ab44de899ee671fbe2d6a9cdb
+ms.openlocfilehash: 34049703de0b1f1038c91407910b31903a736e05
+ms.sourcegitcommit: ba71ac65109be7ed1413b09b9424b5e44162f5b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "1703087"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "1787242"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -219,19 +219,19 @@ ms.locfileid: "1703087"
 
 2. **管理** を選択し、**更新の設定** を選択します。
 
-    ![](media/addf4f1d0c0a86d840a6a412f774e474.png)
+    !更新設定の適用[](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 3. 拇印を、以前にコンフィギュレーションした新しい拇印に変更します (これらの属性は、InfrastructureScripts フォルダの ConfigTemplate.xml ファイルを確認してください)。
 
-    ![](media/07da4d7e02f11878ee91c61b4f561a50.png)
+    ![配置設定の拇印](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
-    ![](media/785caaf4ee652d66c0d88cf615a57e26.png)
+    ![配置設定の拇印](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
 4. **準備**を選択します。
 
 5. ダウンロードおよび準備が完了すると、**環境の更新** ボタンが表示されます。
 
-    ![](media/0a9d43044593450f1a828c0dd7698024.png)
+    ![環境の更新ボタン](media/0a9d43044593450f1a828c0dd7698024.png)
 
 6. **環境の更新**を選択して、環境の更新を開始します。
 
@@ -241,12 +241,12 @@ ms.locfileid: "1703087"
 
     次の例では、同じ拇印の名前がいくらか異なっている例の一部です。
 
-    ![](media/038173714b2fb6cf12acc4bda2a3dde5.png)
+    ![配置設定の拇印の例](media/038173714b2fb6cf12acc4bda2a3dde5.png)
 
-    ![](media/642f6434da9cdeac3651b765acca08fa.png)
+    ![配置設定の拇印の例](media/642f6434da9cdeac3651b765acca08fa.png)
 
 ## <a name="update-other-certificates-as-needed"></a>必要に応じて他の証明書を更新する
 
-1. SQL server 証明書の有効期限が切れていないかどうかを常に確認してください。 詳細については、「[SQL Server の設定](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql)」を参照してください。
+1. SQL server 証明書の有効期限が切れていないかどうかを常に確認してください。 詳細については、「[SQL Server の設定](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql)」を参照してください。
 
 2. Active Directory フェデレーション サービス (ADFS) 証明書の有効期限が切れていないことを確認します。 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 24291
 ms.assetid: ccc9c341-a233-4bb0-93e7-399d19fdea18
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 073c13cd083f6053b1e59011dd4c8c4a57e924de
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 311a3be92543f6527e6dff529b8b770117b7ef35
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595511"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851241"
 ---
 # <a name="build-extensible-controls"></a>拡張可能なコントロールの構築
 

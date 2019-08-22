@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPostDatedChecks, CustPostDatedChecks
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 21741
 ms.assetid: 4eb7c7da-1e6b-4d35-9f41-373b66103229
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ea1cd9926f3ea55d82f9030372a15b3545ed824
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cb879103c86cd251efcb1d3efa1faf847cb5ca74
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563788"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842308"
 ---
 # <a name="postdated-checks"></a>先日付小切手
 
@@ -71,9 +71,9 @@ Microsoft Dynamics 365 for Finance and Operations は、次の表に示すよう
 </tr>
 <tr class="odd">
 <td>仕入先の先日付小切手をキャンセル</td>
-<td>これらの状況では、先日付小切手のキャンセルを取り消すことができます: - 小切手は銀行から返されます。
-- 小切手が誤った請求書に適用された場合。
-- 小切手に対して現金が支払われた場合。
+<td>これらの状況では、転記済みの先日付小切手を取り消すことができます : - 小切手は銀行から返されます。
+- 小切手は誤った請求書に適用されます。
+- 小切手に対して現金が支払われます。
   </td>
   </tr>
   <tr class="even">

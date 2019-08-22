@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 27601
 ms.assetid: 7e2031b4-a092-482e-a76d-1e582edecd86
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 286f2c6f7276f3c16541ab4e23d242cb11d69e82
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: b883d9246f35539e3bae14b0a9171e49c7534c73
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595409"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850629"
 ---
 # <a name="classification-of-localization-features"></a>ローカライズ機能の分類
 

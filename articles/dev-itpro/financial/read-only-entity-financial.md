@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 273653
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pbj
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 092f7e566c6ac14421e772f538a61af6fa0ef2d7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6f715bee95195167619b25e78bef855bb19539d5
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552516"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833358"
 ---
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 "[!include [banner](../includes/banner.md)]"

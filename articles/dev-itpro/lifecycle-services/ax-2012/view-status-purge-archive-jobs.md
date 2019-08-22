@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18771
 ms.assetid: fd4f59b6-280e-4091-b563-44315a1bb893
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 465ee69fb1024821350949c0f6757db292a78bcd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e062693c6e1fbcf984bb941bcdd4e14d174b7642
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555249"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850475"
 ---
 # <a name="view-purge-and-archive-jobs"></a>削除およびアーカイブ ジョブの表示
 

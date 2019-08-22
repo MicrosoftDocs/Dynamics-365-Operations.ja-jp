@@ -3,13 +3,13 @@ title: Finance and Operations バージョン 10.0.4 (2019 年 7 月) の新機�
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 10.0.4 の新機能または変更された機能について説明します。 このバージョンは 7 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 07/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.4
-ms.openlocfilehash: a260de1474f3fa4a88d72a844472446855ace65b
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 29fd48be3f15cb57d080516ed5dfd123d575f4ac
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731108"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863515"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-1004-july-2019"></a>Finance and Operations バージョン 10.0.4 (2019 年 7 月) の新機能および変更点
 
@@ -33,7 +33,7 @@ ms.locfileid: "1731108"
 
 
 
-## <a name="set-up-interest-distribution-for-cash-accounts"></a>現金勘定の利息配分の設定
+## <a name="set-up-interest-distribution-for-cash-accounts-public-sector"></a>現金勘定の利息配分の設定 (公的機関)
 代理店は、現金勘定の日毎の平均残高に基づいて、銀行口座の利子を特定の総勘定元帳に割り当てる (分配する) ことができます。 このプロセスを使用して、利息金額の詳細な元帳エントリを生成できます。 また、転記せずにレビュー用の利息額を生成できます。
 
 詳細については [現金勘定の利息配布](https://go.microsoft.com/fwlink/?linkid=2088607) を参照してください。
@@ -57,7 +57,7 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.4 には�
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。

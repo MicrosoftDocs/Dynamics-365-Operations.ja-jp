@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 30141
 ms.assetid: 9e67e62c-1ced-45bd-8591-941e9afb0ab1
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f68ebc44741b91cdadb7efd71acde01aa7006048
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ba63f702959ef5e0b26118378bf43dd34ec8aed4
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555211"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851225"
 ---
 # <a name="control-checklist"></a>コントロールのチェックリスト
 

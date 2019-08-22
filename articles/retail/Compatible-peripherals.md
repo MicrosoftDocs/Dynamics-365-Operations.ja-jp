@@ -9,6 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
+ms.reviewer: josaw
 ms.search.scope: ''
 ms.search.region:
 - Global for most topics. Set Country/Region name for localizations
@@ -18,12 +19,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: be071ac3b08f995387c974cb1dc604f983ae52d7
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 18baf656753e6960842b1e15ccdeb5fb5782e475
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606792"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845685"
 ---
 # <a name="peripheral-compatibility-for-retail"></a>Retail の周辺機器互換性
 

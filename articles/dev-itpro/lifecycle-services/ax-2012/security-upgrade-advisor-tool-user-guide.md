@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 30061
 ms.assetid: fda4d8e9-79a2-4ee2-831e-a90a9df2d980
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 2012 R3 CU8
-ms.openlocfilehash: 6d5545580168dcd8fb335b6ebd4ac7ace11d83e2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7a1e502ae5913e45f8162cc9303a1c56822981fb
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555252"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850491"
 ---
 # <a name="security-upgrade-advisor-tool-user-guide"></a>セキュリティ アップグレード アドバイザー ツールのユーザー ガイド
 

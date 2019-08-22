@@ -1,7 +1,7 @@
 ---
 title: セグメント化されたエントリ コントロールのための parm メソッド
 description: セグメント化されたエントリ コントロールのインスタンスで、コード内で設定できる parm メソッドについて説明します。
-author: ShylaThompson
+author: robinarh
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 25631
 ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3425372d9984fa0c078b875b6562a704e186dbb4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e51afe2296de029df1f0f9eeb11b6935f4af3019
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555580"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833320"
 ---
 # <a name="parm-methods-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールのための parm メソッド
 

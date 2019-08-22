@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 65801
 ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 908e8294701b54c3241cc486793832e44b24ac95
-ms.sourcegitcommit: df585b02224cf3812cc4fcf0d49e03f64e739980
+ms.openlocfilehash: 749e3c2bd2fdc07c9636310370c63be224eeccd1
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "1632802"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833758"
 ---
 # <a name="payments-faq"></a>支払に関してよく寄せられる質問
 
@@ -42,7 +42,7 @@ ms.locfileid: "1632802"
 
         
 ## <a name="which-payment-providers-are-supported-and-in-what-regions"></a>どの支払プロバイダーがどの地域でサポートされていますか。
-- Adyenはカードが存在する、またはカードが存在しない商取引に対応しています。 対応している地域の一覧については、 [Adyen 向け Dynamics 365 Payment Connector の概要](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。
+- Adyenはカードが存在する、またはカードが存在しない商取引に対応しています。 対応している地域の一覧については、 [Adyen 向け Dynamics 365 Payment Connector の概要](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。
 - Verifoneは、カードが存在する取引 (デバイスを使用してを実行) 、およびカードが存在しない取引 (電子商取引やコールセンター取引など) のために米国でサポートされています。
 - Mastercard Simplify は新しい顧客に対しては対応していません。
 
@@ -56,7 +56,7 @@ Verifone および Adyen などの Microsoft によって指定されたコネ�
 はい、ただしカスタマイズを使用してそれらを接続する必要があります。
 
 ## <a name="what-is-the-service-level-agreement-sla-for-out-of-box-payment-connectors-like-verifone-and-adyen"></a>Verifone および Adyen などの革新的な支払いコネクタ の サービス レベル アグリーメント (SLA) はどうなっているか ?
-Verifone のコネクタに対するSLAは、Verifoneによって管理されています。 Verifone の SLA については、Verifone のサポートにお問い合わせください。 Adyenコネクタに関して、設定に関する問題の場合は Adyenコネクタの [概要ページ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。 コネクタに関するその他の設定、または機能の問題については、Microsoftへのサポートリクエストを作成してください。 問題がデバイス本体、またはAdyenの処理サービスに起因する場合は、support-dynamics365@adyen.com Adyenのサポートに連絡してください。 
+Verifone のコネクタに対するSLAは、Verifoneによって管理されています。 Verifone の SLA については、Verifone のサポートにお問い合わせください。 Adyenコネクタに関して、設定に関する問題の場合は Adyenコネクタの [概要ページ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。 コネクタに関するその他の設定、または機能の問題については、Microsoftへのサポートリクエストを作成してください。 問題がデバイス本体、またはAdyenの処理サービスに起因する場合は、support-dynamics365@adyen.com Adyenのサポートに連絡してください。 
         
 ## <a name="if-a-supported-payment-provider-issues-an-update-will-microsoft-automatically-update-the-payment-connector-or-do-i-need-to-work-with-the-payment-provider-to-get-the-updated-payment-connector"></a>サポートされている支払プロバイダーが更新プログラムを発行した場合は、Microsoft は自動的に支払コネクタを更新してくれますか? または更新された支払コネクタを取得するために支払プロバイダーと連携する必要がありますか。
 支払いコネクターの更新プログラムが支払コネクター プロバイダーによって発行された場合、支払いコネクターの更新バージョンは Dynamics 365 for Retail の次の予定リリースに含まれます。 ただし、顧客は早期に取得するため、支払コネクタ プロバイダと直接作業することもできます。

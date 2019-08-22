@@ -3,7 +3,7 @@ title: Microsoft Flow 内のビジネス イベント
 description: このトピックでは、Finance and Operations コネクタを介して Microsoft Flow での消費に使用可能なビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 07/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: a6618491746b938ed249407e8ec57a5b0c96a0a5
-ms.sourcegitcommit: 8cf77e9171d6cad8ae6c8bfad9e4f9a46fef6d23
+ms.openlocfilehash: 09d3d4013b960be87f12e227ff6c2ae95efabe62
+ms.sourcegitcommit: 739a4f4f7dcfbdbe47e2bcf35db24ccbf6336b35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "1688989"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "1773834"
 ---
 # <a name="business-events-in-microsoft-flow"></a>Microsoft Flow 内のビジネス イベント
 
@@ -33,8 +33,7 @@ ms.locfileid: "1688989"
 ビジネス イベントについて理解することは重要です。 詳細については[ビジネス イベント](home-page.md) のドキュメントを参照してください。
 
 > [!IMPORTANT]
-> - Microsoft Flow 用 Finance and Operations コネクタはプレビュー中です。
-> - ビジネス イベントは以前のプラットフォーム リリースでは使用可能でないため、**ビジネス イベント発生時** トリガーは、Platform update 24 またはそれ以降を実行する Finance and Operations インスタンスでのみ動作します。
+> ビジネス イベントは以前のプラットフォーム リリースでは使用可能でないため、**ビジネス イベント発生時** トリガーは、Platform update 24 またはそれ以降を実行する Finance and Operations インスタンスでのみ動作します。
 
 ## <a name="subscribing-to-business-events-and-unsubscribing-from-them"></a>ビジネス イベントの購読および購読解除
 
@@ -53,6 +52,8 @@ ms.locfileid: "1688989"
 
 > [!NOTE]
 > Finance and Operationsでは、Finance and OperationsのFlow エンドポイントを手動で構成しないでください。 上記の説明に従って、エンドポイントはフローから自動的に作成されます。
+
+Microsoft Flow でビジネス イベントを使用する方法については [Microsoft Flow でビジネス イベントを消費する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow) を参照してください。 
 
 ## <a name="other-ways-to-consume-business-events-in-microsoft-flow"></a>Microsoft Flow 内のビジネス イベントを消費する他の方法
 

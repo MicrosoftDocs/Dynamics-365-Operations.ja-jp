@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: ''
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-5-31
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: 15779aec6b0a05a0bef930effa0b0410fd726b40
-ms.sourcegitcommit: 56ec43e459ba93f495bc76fed23d6737218ef37e
+ms.openlocfilehash: ca8a14148250557080f2cf9009cb04d1104f6df2
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "1591584"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1794892"
 ---
 # <a name="feature-callouts"></a>機能のコールアウト
 

@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18571
 ms.assetid: bf4110a1-c23a-4fe9-8f56-ab9ff5766f76
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 006618c4e1073cbfa00aac6e9d51fa2b9608571f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f7a403e1ba1af1f6e4190d53366ed89db50f7edb
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555278"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850541"
 ---
 # <a name="security-development-tool"></a>セキュリティ開発ツール
 

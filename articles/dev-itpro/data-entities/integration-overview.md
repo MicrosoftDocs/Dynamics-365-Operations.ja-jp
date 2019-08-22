@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2189b0488d9b65c410b3febefff1041c101b13c
-ms.sourcegitcommit: 8cf77e9171d6cad8ae6c8bfad9e4f9a46fef6d23
+ms.openlocfilehash: fdd388db9b9e1d4f07a271bc82b4d12fde25cbd7
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "1689037"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850379"
 ---
 # <a name="choose-a-data-integration-importexport-strategy"></a>データ統合方法 (インポート/エクスポート) の選択
 

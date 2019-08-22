@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 2f82c01eeec45a1bbfca319229027f4bebe41164
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9d1ce5337d8a8681cb21cbe8901249a1322e971f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551150"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850139"
 ---
 # <a name="configuration-data-packages"></a>コンフィギュレーション データ パッケージ
 

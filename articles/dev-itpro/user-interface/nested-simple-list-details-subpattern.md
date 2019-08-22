@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 14741
 ms.assetid: f71aa535-8480-4ed8-b0c9-404f3e6285dd
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8275d834f2620a5ed3bd7856dae2c7781183f7cc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0c7da3823dac06500ca6a29de47db39222310608
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1573154"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851131"
 ---
 # <a name="nested-simple-list-and-details-subpattern"></a>入れ子になった簡易リストおよび簡易詳細のサブパターン
 

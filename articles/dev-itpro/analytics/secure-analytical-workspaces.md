@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 21551
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ad0ad81f8cbf9c79559572e41da8edcbe3aea64
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3b29e33eeb0e58aafd4c7d9e1742e5a1bbf0ffdc
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544945"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849890"
 ---
 # <a name="help-secure-analytical-workspaces-and-reports-by-using-power-bi-embedded"></a>Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
 
@@ -52,7 +52,7 @@ Power BI Embedded を使用して分析ソリューションを開発する際�
     > [!NOTE]
     > これらの分析レポートは、中堅企業や大規模企業に影響を与えるデータを含むレポートを配信するために使用されることがよくあります。
 
-分析レポートを作成する方法の詳細については、[Power BI Desktop の使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。 このページは、魅力的な分析レポート作成ソリューションの作成に役立つ素晴らしいソースです。
+分析レポートを作成する方法の詳細については、[Power BI Desktop の使い方](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/)を参照してください。 このページは、魅力的な分析レポート作成ソリューションの作成に役立つ素晴らしいソースです。
 
 ## <a name="help-secure-analytical-views-that-are-provided-through-embedded-power-bi-reports"></a>埋め込み Power BI レポートを通して提供される分析ビューのセキュリティを強化する
 Power BI レポート フィルターと **フィルター** ウィンドウは、**分析** タブに埋め込まれたレポートにセッション コンテキストを渡すためのメカニズムとして機能します。**フィルター** ウィンドウの表示のオンとオフを切り替える機能は、セキュリティ機能ではありません。 Power BI レポート フィルターと、**フィルター** ウィンドウを非表示および表示する機能は、アプリケーション デザイナーが行うユーザー エクスペリエンス (UX) の決定です。

@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 24411
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d6373f83aa4c0e64addbb17d336016ebe49e36aa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4c4529bf9ca7650b4f52d98cdf842cc617f9c87c
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561353"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833750"
 ---
 # <a name="add-custom-controls-to-retail-modern-pos-mpos-transaction-pages"></a>Retail Modern POS (MPOS) トランザクション ページへのカスタム コントロールの追加
 

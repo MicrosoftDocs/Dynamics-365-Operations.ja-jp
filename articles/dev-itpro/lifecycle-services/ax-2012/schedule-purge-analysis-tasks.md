@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18631
 ms.assetid: 1ecac46c-29d5-4e5b-aa39-3daa00956820
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 7793e3c5c17a05d28e6211632cfda2f5b7212e09
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ead8731c4df8fbcbf66ec97cbb92f3d397141ac
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555253"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850529"
 ---
 # <a name="schedule-intelligent-data-management-framework-purge-and-analysis-tasks"></a>Intelligent Data Management Framework の削除および分析タスクをスケジュール
 

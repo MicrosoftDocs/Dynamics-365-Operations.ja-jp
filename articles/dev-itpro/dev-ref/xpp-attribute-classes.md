@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 150243
 ms.assetid: 9c927660-3268-4a77-9a83-97759a487483
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfeb8e739f6dc26d73501001c83eb15ee3a0fd5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5d01785db5eff5575143acaa3cf17c68ec6c6987
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544179"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833646"
 ---
 # <a name="x-attribute-classes"></a>X++ 属性クラス
 

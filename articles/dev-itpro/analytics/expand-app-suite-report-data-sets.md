@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 266594
 ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 4180126083b55d8dd72e0bdd55dbb4df6d5d832b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b8170b2d2a9be893b25d87c2ee59681783f08f2f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553965"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849673"
 ---
 # <a name="expand-application-suite-report-data-sets"></a>アプリケーション スイート レポート データ セットを展開する
 

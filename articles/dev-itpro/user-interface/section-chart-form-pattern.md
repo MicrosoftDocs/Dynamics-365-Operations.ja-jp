@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 29271
 ms.assetid: 049887b5-6277-4902-96ec-a81a3d2348c3
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a25c66c54b72f23ee4e7ecbf34b5e9c11ef09065
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7b1f875628279ecfbdc53d984437b1cebeb5b9ba
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560824"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851121"
 ---
 # <a name="section-chart-form-pattern"></a>セクション グラフのフォーム パターン
 

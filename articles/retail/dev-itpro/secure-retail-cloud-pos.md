@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 257674
 ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ee7e400ea5878ceb1cc84b10c87d0baf3ae4ec90
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: becee951e9a45bf0b3576540b153b95944113fe5
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553088"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833111"
 ---
 # <a name="security-best-practices-for-cloud-pos-in-shared-environments"></a>共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 23361
 ms.assetid: 09dbb06c-dbc7-468d-a78e-e89a97a59fe6
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32a259f093f3788d1f7c16795acf8ccb85fcc93b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9f584e0444b60cdf7dbd01a4b2f0ca16bb00b210
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544156"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833578"
 ---
 # <a name="configure-one-box-development-environments"></a>1 ボックス開発環境の構成
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform 23
-ms.openlocfilehash: f55f94516f4ac771ef60db0a8f2074aec72acb17
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 81f5fda16c0fdc39b781cce4190d55d4d622b9f1
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508237"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863409"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-23-january-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
 
@@ -87,7 +87,7 @@ public void testIndexHintRegularTable()
 更新を自分でスケジュールする代わりに、システムにエンティティ格納の更新を管理させることができます。 有効にすると、更新パターン (1 時間毎、1 日 2 回、毎日、または毎週) を選択できます。 指定すると、システムは選択されたパターンでエンティティ格納を更新します。 システムはまた、新しい更新フォームに切り替え、ここでステータスと更新の問題が通知されます。 詳細については、[エンティティ格納の自動化更新](../../dev-itpro/analytics/automated-entity-store-refresh.md)を参照してください。
 
 ## <a name="entity-store-as-a-data-lake-private-preview"></a>Data Lake としてのエンティティ格納 (プライベート プレビュー)
-プラットフォーム更新プログラム 23 では、エンティティ格納を Data Lake として選択できます。 この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。 代わりに、独自のサブスクリプションの Azure Data Lake ストレージ Gen2 アカウントに入力されます。 PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。 この機能をプレビューして使用するには、[Insider プログラム](https://experience.dynamics.com/insider)に是非ご参加ください。
+プラットフォーム更新プログラム 23 では、エンティティ格納を Data Lake として選択できます。 この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。 代わりに、独自のサブスクリプションの Azure Data Lake Storage Gen2 アカウントに入力されます。 PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。 この機能をプレビューして使用するには、[Insider プログラム](https://experience.dynamics.com/insider)に是非ご参加ください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 プラットフォーム更新プログラム 23 に含まれる[プラットフォーム拡張機能の 4 番目の波](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility4)は、2018 年 10 月リリース ノートにドキュメントされています。 6 つの強化機能が詳細に説明されており、ハイライトの 1 つはクエリ データソースへの新しいリレーションの追加です。

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 23941
 ms.assetid: 87d75162-a9dd-43d2-a316-833e2c799f08
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66572c26cf2313486d648a150bd863d5673e3f60
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d90e3c3dbbc6eaf40a3b45897b1f7810e5efd9e9
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544155"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833580"
 ---
 # <a name="code-editor-features"></a>コード エディター機能
 

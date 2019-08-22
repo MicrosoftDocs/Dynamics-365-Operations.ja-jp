@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 195943
 ms.assetid: 0c22fad3-be0a-4111-97c0-2f3fadfd5f6b
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nimak
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb112cf5e4502e9c0566c0e9739ff64ae8dca303
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 7c2edd582d6fdbc554ba2fe4aa7ffb5d9763f55a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595462"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848169"
 ---
 # <a name="troubleshoot-service-authentication-issues"></a>サービス認証問題のトラブルシューティング
 

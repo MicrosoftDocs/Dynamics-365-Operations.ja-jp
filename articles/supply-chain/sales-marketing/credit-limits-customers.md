@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fd7022eb1ed2671fcfc2861eb8ec7504ebf9f98
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 37e860a969d527a334af7524c70e5ea15be7801e
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551817"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742381"
 ---
 # <a name="credit-limits-for-customers"></a>顧客の与信限度額
 
@@ -93,7 +93,7 @@ Dynamics 365 をコンフィギュレーションして、以下のいずれか�
 
 **顧客のクレジット使用残高に関する情報はどこにありますか。**
 
-経過期間スナップショットを作成すると、顧客の残高と与信残高量に関する情報が計算されて保存され、**回収**フォームに表示されます。 **回収**フォームに表示される量には、新しい経過期間スナップショットを作成するまで、すべてのトランザクション活動は含まれない場合があります。 詳細については、「[売掛金勘定の取立と貸方転記](https://technet.microsoft.com/en-us/library/hh209221.aspx)」を参照してください。
+経過期間スナップショットを作成すると、顧客の残高と与信残高量に関する情報が計算されて保存され、**回収**フォームに表示されます。 **回収**フォームに表示される量には、新しい経過期間スナップショットを作成するまで、すべてのトランザクション活動は含まれない場合があります。 詳細については、「[売掛金勘定の取立と貸方転記](https://technet.microsoft.com/library/hh209221.aspx)」を参照してください。
 
 選択したドキュメントに応じて、販売注文、梱包明細、および顧客請求書が更新されると、顧客の残高および与信残高量に関する情報が計算されます。 使用しているドキュメントの量のために与信限度額が超過する場合、メッセージが表示されます。
 

@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 31401
 ms.assetid: f8d76054-c863-40de-b32a-73dfaa77aeff
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 134d6897b1c5aaaea04bea67e45531e66e32ec06
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a3c48225e32d0b071678b48d5d94b04ff5849935
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544166"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833598"
 ---
 # <a name="x-string-runtime-functions"></a>X++ 文字列ランタイム関数
 

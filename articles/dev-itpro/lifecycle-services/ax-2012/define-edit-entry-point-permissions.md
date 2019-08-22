@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18211
 ms.assetid: 1e7c9c30-7418-4f4a-93a3-2d043073e429
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 44eeaa4c68c4f27d9e02bf2564fe1e188505d803
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cf8fa9e5fda092146fd294149878d1a6123e564e
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555290"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850567"
 ---
 # <a name="define-or-edit-entry-point-permissions"></a>エントリ ポイントのアクセス許可の定義または編集
 

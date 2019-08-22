@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 203494
 ms.assetid: 99d70045-cde7-45ec-9817-bb6465723286
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: b77ee03e19b6266d8878857c1ccf5dfa0467bce8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 38ce018efc2e674d4bc443b42fc5386a0a45938c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548198"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848305"
 ---
 # <a name="sql-server-reporting-services-ssrs-reports-that-are-available"></a>使用可能な SQL Server Reporting Services (SSRS) レポート
 

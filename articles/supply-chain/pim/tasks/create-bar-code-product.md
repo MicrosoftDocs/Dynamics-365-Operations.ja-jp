@@ -1,53 +1,45 @@
 ---
 title: 製品のバーコードの作成
-description: この手順では、品目番号「M0001」を例として使用してバーコードを手動で作成する方法を示します。
+description: このトピックでは、品目番号 M0001 を例として使用して、バーコードを手動で作成する方法を示します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemBarcode, InventItemBarcodeLookup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ae2765a125045d60566267d01e380069d5d527c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55801b2355eeee7dc136a1812a68e825b99098a4
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568607"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844948"
 ---
 # <a name="create-a-bar-code-for-a-product"></a>製品のバーコードの作成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-この手順では、品目番号「M0001」を例として使用してバーコードを手動で作成する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。
+このトピックでは、品目番号 M0001 を例として使用して、バーコードを手動で作成する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。
 
-1. [リリース済製品の保守] をクリックします。
-2. [リリース済製品] をクリックします。
-3. 一覧で、目的のレコードを見つけ、選択します。
-4. [アクション] ウィンドウで [在庫の管理] をクリックします。
-5. [バーコード] をクリックします。
-6. [新規] をクリックします。
-7. 一覧で、選択された行をマークします。
-8. [バーコード設定] フィールドで値を入力または選択します。
-9. [バーコード] フィールドで、値を入力または選択します。
-10. [バーコード] フィールドに、値を入力します。
-    * [タブ] キーを押します。  
-11. ページを閉じます。
-12. [数量] フィールドに数値を入力します。
-13. [保存] をクリックします。
-    * [保存] をクリックすると、バーコード チェックが実行され、この場合、予測されるチェック ディジットは 8 ですが、3 が検出されたことを示すエラーが表示されます。 8 が最後になるように手動でバーコード番号を更新します。  
-14. [バーコード] フィールドで、値を入力または選択します。
-15. [バーコード] フィールドに、値を入力します。
-    * [タブ] キーを押します。  
-16. ページを閉じます。
-17. [保存] をクリックします。
-18. ページを閉じます。
+1. ホーム ページで、**リリース済製品のメンテナンス**を選択します。
+2. **リンク** セクションで、**製品 > リリース済製品**に移動します。
+3. 一覧で、目的のレコードを見つけ、選択します。 この例では、品目番号 **M0001** を選択します。
+4. アクション ウィンドウで、**在庫の管理**を選択します。
+5. **バーコード**を選択します。
+6. **新規** を選択します。
+7. 下のリストに作成された、選択した行をマークします。
+8. **バーコード設定**フィールドで値を入力または選択します。
+9. **バーコード** フィールドで、値を入力または選択します。
+10. **バーコード** フィールドに、値を入力します。  
+11. **数量**フィールドに、数値を入力します。
+12. **保存** を選択します。
+13. ページを閉じます。 
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012, Operations
 ms.custom: 62673
 ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 360511d7485046ae14748f22c2d4eeb026273b35
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: d55a1aaec67b026b0a128ae3d56b1cff89bece65
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595456"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851823"
 ---
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 

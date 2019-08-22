@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 13461
 ms.assetid: c2431895-0751-4a2a-96cb-f7df76c88f66
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 297660ccfc00617bfcaf769340da0e2c560a5a27
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 649457461cbc3a4336e9cfd80b68fd6dc801559d
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555607"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833362"
 ---
 # <a name="support-for-different-dimension-patterns"></a>異なるディメンション パターンをサポート
 

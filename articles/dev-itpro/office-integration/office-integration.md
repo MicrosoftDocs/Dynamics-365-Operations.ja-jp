@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 25511
 ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab2a8af52550f0c0275d55722c138317b98705ce
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 94b4f7f8947505c98b54ece43c9e14e53362b921
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537359"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851443"
 ---
 # <a name="office-integration-concepts-and-features"></a>Office の統合の概念と機能
 
@@ -114,7 +114,7 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 
 #### <a name="what-office-365-licenses-are-available"></a>どのような Office 365 ライセンスがありますか ?
 
-「[Office 365 ライセンス オプション](https://products.office.com/en-us/business/compare-office-365-for-business-plans)」が多数あります。 所属されている組織にとって、意味のあるライセンスを選択する必要があります。
+「[Office 365 ライセンス オプション](https://products.office.com/business/compare-office-365-for-business-plans)」が多数あります。 所属されている組織にとって、意味のあるライセンスを選択する必要があります。
 
 #### <a name="after-purchasing-an-office-365-license-what-needs-to-be-done-to-set-up-sharepoint-storage-for-attachments"></a>Office 365 のライセンスを購入した後、添付ファイル用に SharePoint ストレージを設定するために何を行う必要がありますか?
 

@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: asharchw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 2e0ffe70db059a0bddac9861c4df8b0dc095d5a8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 881be348f0e7b0bceef17b5bdc0ebbbb002df557
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556225"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833091"
 ---
 # <a name="deployment-options-for-retail-functionality"></a>小売機能の配置オプション
 

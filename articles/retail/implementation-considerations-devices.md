@@ -3,14 +3,14 @@ title: デバイス管理実装ガイダンス
 description: このトピックは、小売環境においてデバイス管理に関連する機能を実装するユーザーを対象としています。 実装を計画する際に考慮する必要がある実装上のヒントとガイダンスを示します。
 author: jashanno
 manager: AnnBe
-ms.date: 12/06/2017
+ms.date: 07/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 1d8aebb147d710760360ad5e04f10fcea5edc339
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d6f1aa39a3f0e9562b838579b41070f3e5cf692e
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572209"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845666"
 ---
 # <a name="device-management-implementation-guidance"></a>デバイス管理実装ガイダンス
 
@@ -48,7 +48,7 @@ Finance and Operations および Retail は既に、デバイス管理の基本�
 
 ## <a name="implementation-considerations"></a>実装の考慮事項
 
-このセクションでは、小売店や配送場所での在庫管理に関連する機能を実装する際に考慮すべき事項について説明します。
+このセクションでは、小売環境でデバイス管理に関連する機能の実装を計画する際に考慮する必要があるいくつかの事項を説明します。
 
 ### <a name="generate-the-physical-topology"></a>物理的トポロジを生成します
 

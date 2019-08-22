@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.region: India
 ms.search.industry: Retail
 ms.author: jiaqia
 ms.search.scope: Retail
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: a636ddaf42c4545cfd3c988d34f00e35cf714545
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afc0ee505192f20899d9abb51920468e9d3332f1
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571596"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845665"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-india"></a>インドのキャッシュ レジスターの配置ガイドライン
 

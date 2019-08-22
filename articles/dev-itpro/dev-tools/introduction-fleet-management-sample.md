@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 79892
 ms.assetid: 999b43b2-f149-4145-9d85-e2a62cd8da1e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c8225d1d40739819bef8a268b0d911f04f6f013
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c19d52f235ccdc7cc2115dd25b14a9ede34240a4
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544141"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833536"
 ---
 # <a name="fleet-management-sample-application"></a>フリート管理のサンプル アプリケーション
 

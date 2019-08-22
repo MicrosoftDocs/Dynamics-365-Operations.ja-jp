@@ -3,13 +3,13 @@ title: ワークスペースで Power BI を埋め込みます。
 description: Finance and Operations は、アプリケーション ワークスペースにシームレスに統合される、強力な対話型レポートを備えるようになります。 Power BI でサポートされているグラフィックおよびビジュアルを使用することにより、ワークスペースは、ユーザーにとって非常に視覚的でありながらインタラクティブな体験を提供することができます。
 author: TJVass
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 270794
 ms.assetid: f1d79557-2538-42b5-9ea3-4e86a61abfd4
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: dcff36c4f59f0320ab545a60fe8cacc77a16103d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fb3d7cd37575cfa82affbde123d47e5ae52c0aaf
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552850"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849803"
 ---
 # <a name="embedded-power-bi-in-workspaces"></a>ワークスペースで埋め込まれた Power BI
 
@@ -41,12 +41,19 @@ Finance and Operations は、アプリケーション ワークスペースに�
 
 ![ワークスペースでの Power BI](./media/Power-BI-in-D365-Workspace.png)
 
-### <a name="power-bi-vs-operational-workspaces"></a>Power BI 対 運用ワークスペース
+## <a name="power-bi-vs-operational-workspaces"></a>Power BI 対 運用ワークスペース
 Power BI ワークスペースは、ほぼリアルタイムの情報に基づく分析インサイトによって運用ビューを補完します。 次は、Power BI ワークスペースと運用ワークスペースを視覚的に比較したものです。
 
 次のスクリーン ショットは、操作可能なワークスペースを示しています。
 
 ![運用ワークスペース](./media/D365-Operational-Workspace.png)
+
+## <a name="edit-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースで埋め込みレポートを編集する
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3nnj4]
+
+[分析ワークスペースで埋め込みレポートを編集する方法](https://youtu.be/_8WlwmSggcQ) のビデオ (上記) は YouTube で利用可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+
 
 ## <a name="whats-next"></a>次の新機能
 今後、Power BI Embedded サービスがバンドルされた新しいクラウド配置が登場します。 開発者 ALM プロセスを説明している追加のドキュメントは、使用可能な Power BI Embedded サービス統合オプションを利用して新しいソリューションを作成するパートナーと ISV を支援するために利用可能になります。

@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 11394
 ms.assetid: 86375ca9-6c2a-47a8-badc-b713b186b4e8
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: a561ba18e20579349a1d497e33e1824be9ef8fad
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fbd7ff2d346431ce7041d2e66fd812507446a4e9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555250"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850479"
 ---
 # <a name="upgrade-analysis-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) におけるアップグレード分析
 
@@ -100,9 +100,9 @@ RDC ファイルと AOD ファイルは任意の順序でアップロードす�
 <a name="additional-resources"></a>追加リソース
 --------
 
-[Microsoft Dynamics AX の新しいバージョンにアップグレードする](https://msdn.microsoft.com/en-us/library/aa588216.aspx)
+[Microsoft Dynamics AX の新しいバージョンにアップグレードする](https://msdn.microsoft.com/library/aa588216.aspx)
 
-[シナリオ: AX 2012 R2 または AX 2012 R3 への インプレース アップグレードを実行する](https://technet.microsoft.com/en-us/library/jj733502.aspx)
+[シナリオ: AX 2012 R2 または AX 2012 R3 への インプレース アップグレードを実行する](https://technet.microsoft.com/library/jj733502.aspx)
 
 
 

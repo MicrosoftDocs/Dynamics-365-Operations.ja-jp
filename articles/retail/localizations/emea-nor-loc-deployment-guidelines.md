@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Retail
 ms.search.region: Norway
 ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: bb750d87d7531fde86f30314c46cfa5f3bad1391
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 63d17a215720f8b2d3327c1fbbc0521b2f684031
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731272"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834164"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
@@ -673,7 +673,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
         - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** コンフィギュレーション ファイル
 
     2. ファイルを、IIS Retail Server サイトがある場所の下の **\\bin** フォルダーにコピーします。
-    3. CRT用拡張機能コンフィギュレーションファイルで  CRT の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
+    3. CRT用拡張機能コンフィギュレーションファイルで CRT の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />

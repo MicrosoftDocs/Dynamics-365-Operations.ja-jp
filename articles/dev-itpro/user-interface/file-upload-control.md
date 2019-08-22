@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 54311
 ms.assetid: 82f47d4d-912c-4f85-81f9-b09c723f72fc
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74ceea39d29c5eb594f2f8b7f952f5e85cf37955
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: db24168c4c1d051a439f767c6391499f80507392
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554358"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851169"
 ---
 # <a name="file-upload-control"></a>ファイルのアップロード コントロール
 

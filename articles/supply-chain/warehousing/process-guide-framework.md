@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: d05b09aeade1f3934e43b0dbc227e706db6c9eb2
-ms.sourcegitcommit: c5edff04f35a067934fddebd166906edc003e7c5
+ms.openlocfilehash: 83ff430b04fb9e8ff48e0c4537a1afa0c64c71a5
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "1605851"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1847389"
 ---
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 
@@ -169,14 +169,18 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
 
 -   **ProdProcessGuidePromptProductionIdStep** クラスを **ProcessGuideStepName** 属性で修飾します。
 
-    ``[ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))] public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep``
+    ```X++
+    [ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))] public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep
+    ```
 
 -   コントローラー クラスで、抽象メソッド **initialStepName()** を実装して、ステップの名前を戻します。
 
-    ``protected final ProcessGuideStepName initialStepName()
+    ```X++
+    protected final ProcessGuideStepName initialStepName()
     {
         return classStr(ProdProcessGuidePromptProductionIdStep);
-     }``   
+     }
+     ````   
     
 > [!NOTE]
 > **ProcessGuideStepName** 属性の値は、上記のように、クラス名と完全に一致する必要はありません。 ただし、これを実装することにより、クラスを使用する場合の相互参照に関する均一性とタイプ セーフが生じます。 この名前付け規則を使用することをお勧めします。
@@ -273,7 +277,40 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 
 その後、**addActionControls()** が上書きされ、2 つのボタン (**OK** ボタンと、プロセスをキャンセルしてプロセスの先頭に戻る **Cancel** ボタン) を追加します。
 
-![プロセス ガイド ページ ビルダー コード](media/process-guide-page-builder-code.png)
+```X++
+/// <summary>
+/// The <c>ProdProcessGuideConfirmProductionOrderPageBuilder</c> builds a page that allows the user to see details of a production order
+/// and then confirm.
+/// </summary>
+[ProcessGuidePageBuilderName(classStr(ProdProcessGuideConfirmProductionOrderPageBuilder))]
+public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGuidePageBuilder
+{
+    protected void addDataControls(ProcessGuidePage _page)
+    {
+        WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+        ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
+        UnitOfMeasureSymbol inventUOM = InventTableModule::find(prodTable.ItemId, ModuleInventPurchSales::Invent).UnitId;
+        
+        _page.addLabel(ProcessGuideDataTypeNames::ProdIdLabelName, strFmt("@WAX1684", prodTable.ProdId), extendedTypeNum(ProdId));
+        _page.addLabel(ProcessGuideDataTypeNames::ItemInfo, this.generateItemInfoForProdId(pass.lookup(ProcessGuideDataTypeNames::ProdId)), extendedTypeNum(WHSRFUndefinedDataType));
+        _page.addLabel(ProcessGuideDataTypeNames::QtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId)), inventUOM), extendedTypeNum(WHSRFQuantityAndUOM));
+
+        if (PdsGlobal::pdsIsCWItem(prodTable.ItemId))
+        {
+            _page.addLabel(ProcessGuideDataTypeNames::InventQtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::pdsCWProposalStartupQty(prodTable.ProdId)), PdsCatchWeightItem::pdsCWUnitId(prodTable.ItemId)), extendedTypeNum(WHSRFQuantityAndUOM));
+        }
+    }
+
+    protected void addActionControls(ProcessGuidePage _page)
+    {
+        #ProcessGuideActionNames
+        _page.addButton(step.createAction(#ActionOK), true);
+        _page.addButton(step.createAction(#ActionCancelResetProcess));
+    }
+```
+
+> [!NOTE]
+> このトピックでは、X + + メソッドに対して同じソースコードをアプリケーションエクスプローラーを使用して検索できます。 クラス名をフィルター処理し、クラス名を右クリックして **コードの表示**を選択します。
 
 ### <a name="step-3-start-the-production-order"></a>ステップ 3: 製造オーダーを開始する
 
@@ -283,7 +320,28 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 
 次のコード例は、そのクラスと **doExecute()** メソッドの実装を示しています。 このメソッドは単に、、セッションの状態から注文 ID とユーザー ID を取得し、この製造オーダーを開始するメソッドを呼び出すだけです。
 
-![doExecute() メソッドの実装](media/class-and-method-implementation.png)
+```X++
+/// <summary>
+/// The <c>ProdProcessGuideStartProductionOrderStep</c> represents a step that starts a production order.
+/// </summary>
+[ProcessGuideStepName(classStr(ProdProcessGuideStartProductionOrderStep))]
+public class ProdProcessGuideStartProductionOrderStep extends ProcessGuideStepWithoutPrompt
+{
+    protected final void doExecute()
+    {
+        WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+        WHSUserId userId = pass.lookup(ProcessGuideDataTypeNames::UserId);
+        ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
+        WhsWorkExecute workExecute = WhsWorkExecute::construct();
+        workExecute.prodStartUp(prodTable.ProdId, ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId), userId);
+
+        this.addProcessCompletionMessage();
+
+        super();
+    }
+
+}
+```
 
 例外が発生した場合、フレームワーク例外処理ロジックは、前の手順でプロセスがロールバックされることを保証します。
 
@@ -295,7 +353,17 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 
 **ProcessGuideController** 基本クラスは、**ProcessGuideNavigationAgentDefault** クラスのインスタンスを作成します。これは、ソースおよび出力先のステップの簡単なマップである事前に定義されたナビゲーション工順に依存しています。 生産開始シナリオでは、条件分岐がないため、この実装で十分です。 したがって、必要があるのは、**initializeNavigationRoute()** メソッドをオーバーライドしてナビゲーション工順を定義することだけです。
 
-![メソッド コードのオーバーライド](media/override-method-code.png)
+```X++
+    protected ProcessGuideNavigationRoute initializeNavigationRoute()
+    {
+        ProcessGuideNavigationRoute navigationRoute = new ProcessGuideNavigationRoute();
+        navigationRoute.addFollowingStep(classStr(ProdProcessGuidePromptProductionIdStep), classStr(ProdProcessGuideConfirmProductionOrderStep));
+        navigationRoute.addFollowingStep(classStr(ProdProcessGuideConfirmProductionOrderStep), classStr(ProdProcessGuideStartProductionOrderStep));
+        navigationRoute.addFollowingStep(classStr(ProdProcessGuideStartProductionOrderStep), classStr(ProdProcessGuidePromptProductionIdStep));
+
+        return navigationRoute;
+    }
+```
 
 条件付き分岐が配置されるプロセスがあります (ユーザーの操作、またはその他の条件に基づく)。 このようなプロセスは、次の操作を行う必要があります。
 
@@ -311,7 +379,8 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 
 アクション クラスはユーザーの操作を表すため、この例では、 **OK** アクションを使用して、アクションの作成方法を表示します。
 
-``[ProcessGuideActionName(#ActionOK)]
+```X++
+[ProcessGuideActionName(#ActionOK)]
 public class ProcessGuideOKAction extends ProcessGuideAction
 {
     public final str label()
@@ -322,7 +391,8 @@ public class ProcessGuideOKAction extends ProcessGuideAction
      {
         step.executeOKAction();
       }
-  }``    
+  }
+  ```    
 
 クラスは 2 つの抽象メソッドを実装する必要があります。
 
@@ -332,7 +402,9 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 
 アクションは、**ProcessGuideActionName** 属性に基づいて **SysExtension** フレームワークを使用してインスタンス化されます。 ページ ビルダーのインスタンス化と同様、ステップ クラスは、既定のアクション ファクトリを実装し、それを上書きすることができます。 ページ ビルダーは、次のようにボタン コントロールを追加します。
 
-``_page.addButton(step.createAction(#ActionOK), true);``
+```X++
+_page.addButton(step.createAction(#ActionOK), true);
+```
 
 これを行うことにより、渡された名前のアクション クラスを作成するようステップに求め、そのアクションをボタンに関連付けます。
 
@@ -345,35 +417,146 @@ public class ProcessGuideOKAction extends ProcessGuideAction
     1.  **initialStepName()** を上書きして、最初のステップの名前を指定します。
     2.  **initializeNavigationRoute()** を上書きして、ナビゲーション マップを作成します。
 
-        ![ナビゲーション マップの作成](media/construct-navigation-map.png)
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuideProductionStartController</c> class is the controller class for the production order start process guide.
+        /// </summary>
+        [WHSWorkExecuteMode(WHSWorkExecuteMode::StartProdOrder)]
+        public class ProdProcessGuideProductionStartController extends ProcessGuideController
+        {
+            protected ProcessGuideStepName initialStepName()
+            {
+                return classStr(ProdProcessGuidePromptProductionIdStep);
+            }
+
+            protected ProcessGuideNavigationRoute initializeNavigationRoute()
+            {
+                ProcessGuideNavigationRoute navigationRoute = new ProcessGuideNavigationRoute();
+                navigationRoute.addFollowingStep(classStr(ProdProcessGuidePromptProductionIdStep), classStr(ProdProcessGuideConfirmProductionOrderStep));
+                navigationRoute.addFollowingStep(classStr(ProdProcessGuideConfirmProductionOrderStep), classStr(ProdProcessGuideStartProductionOrderStep));
+                navigationRoute.addFollowingStep(classStr(ProdProcessGuideStartProductionOrderStep), classStr(ProdProcessGuidePromptProductionIdStep));
+
+                return navigationRoute;
+            }
+
+        }
+        ```
 
 2.  **ProdProcessGuidePromptProductionIdStep**
 
     1.  **isComplete()** を上書きし、ステップが完了と見なされるタイミングを指定します。
     2.  **pageBuilderName()** を上書きし、使用するページ ビルダーを指定します。
 
-![ページ ビルダーの指定](media/specify-page-builder.png)
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuidePromptProductionIdStep</c> represents a step that 
+        /// that prompts the user for a production order id.
+        /// </summary>
+        [ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))]
+        public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep
+        {
+            protected boolean isComplete()
+            {
+                WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+                ProdId prodId = pass.lookup(ProcessGuideDataTypeNames::ProdId);
+
+                return (prodId != '');
+            }
+
+            protected ProcessGuidePageBuilderName pageBuilderName()
+            {
+                return classStr(ProdProcessGuidePromptProductionIdPageBuilder);
+            }
+
+        }
+        ```
 
 3.  **ProdProcessGuidePromptProductionIdPageBuilder**
 
     1.  **addDataControls()** を上書きし、**製品 ID** テキスト ボックスを追加します。
     2.  **addActionControls()** をオーバーライドして **OK** および **Cancel** ボタンを追加します。
+        
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuidePromptProductionIdPageBuilder</c> class builds a page 
+        /// that prompts the user for a production order id.
+        /// </summary>
+        [ProcessGuidePageBuilderName(classStr(ProdProcessGuidePromptProductionIdPageBuilder))]
+        public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuidePageBuilder
+        {
+            protected void addDataControls(ProcessGuidePage _page)
+            {
+                _page.addTextBox(ProcessGuideDataTypeNames::ProdId, "@SYS4398", extendedTypeNum(ProdId));
+            }
 
-        ![addActionControls のオーバーライド](media/override-add-data-controls.png)
+            protected void addActionControls(ProcessGuidePage _page)
+            {
+                #ProcessGuideActionNames
+                _page.addButton(step.createAction(#ActionOK), true);
+                _page.addButton(step.createAction(#ActionCancelExitProcess));
+            }
+
+        }
+        ```
 
 4.  **ProdProcessGuideConfirmProductionOrderStep**
 
     1.  **pageBuilderName()** を上書きし、使用するページ ビルダーを指定します。
+        
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuideConfirmProductionOrderStep</c> class represents the step for viewing production order
+        /// details and confirming the same.
+        /// </summary>
+        [ProcessGuideStepName(classStr(ProdProcessGuideConfirmProductionOrderStep))]
+        public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
+        {    
+            protected ProcessGuidePageBuilderName pageBuilderName()
+            {
+                return classStr(ProdProcessGuideConfirmProductionOrderPageBuilder);
+            }
 
-        ![pageBuilderName のオーバーライド](media/override-page-builder-name.png)
+        }
+        ```
 
 3.  **ProdProcessGuideConfirmProductionOrderPageBuilder**
 
     1.  **addDataControls()** をオーバーライドし、注文、品目、および数量情報ラベルを追加します。
 
     2.  **addActionControls()** をオーバーライドして **OK** および **Cancel** ボタンを追加します。
+        
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuideConfirmProductionOrderPageBuilder</c> builds a page that allows the user to see details of a production order
+        /// and then confirm.
+        /// </summary>
+        [ProcessGuidePageBuilderName(classStr(ProdProcessGuideConfirmProductionOrderPageBuilder))]
+        public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGuidePageBuilder
+        {
+            protected void addDataControls(ProcessGuidePage _page)
+            {
+                WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+                ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
+                UnitOfMeasureSymbol inventUOM = InventTableModule::find(prodTable.ItemId, ModuleInventPurchSales::Invent).UnitId;
 
-        ![addActionControls のオーバーライド](media/override-controls.png)
+                _page.addLabel(ProcessGuideDataTypeNames::ProdIdLabelName, strFmt("@WAX1684", prodTable.ProdId), extendedTypeNum(ProdId));
+                _page.addLabel(ProcessGuideDataTypeNames::ItemInfo, this.generateItemInfoForProdId(pass.lookup(ProcessGuideDataTypeNames::ProdId)), extendedTypeNum(WHSRFUndefinedDataType));
+                _page.addLabel(ProcessGuideDataTypeNames::QtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId)), inventUOM), extendedTypeNum(WHSRFQuantityAndUOM));
+
+                if (PdsGlobal::pdsIsCWItem(prodTable.ItemId))
+                {
+                    _page.addLabel(ProcessGuideDataTypeNames::InventQtyLabelName, strFmt("@WAX1685", WHSWorkExecuteDisplay::num2StrDisplay(ProdUpdStartUp::pdsCWProposalStartupQty(prodTable.ProdId)), PdsCatchWeightItem::pdsCWUnitId(prodTable.ItemId)), extendedTypeNum(WHSRFQuantityAndUOM));
+                }
+            }
+
+            protected void addActionControls(ProcessGuidePage _page)
+            {
+                #ProcessGuideActionNames
+                _page.addButton(step.createAction(#ActionOK), true);
+                _page.addButton(step.createAction(#ActionCancelResetProcess));
+            }
+
+        ```
 
         > [!NOTE]
         > 品目情報のラベルを生成するために使用される **generateItemInfoForProdId()** メソッドは、このトピックから除外されます。 このメソッドは、品目 ID、説明、および分析コードを取得するいくつかのテーブルを照会します。 **generateItemInfoForProdId()** についてよく理解する場合、ソース コードを確認します。
@@ -382,7 +565,28 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 
     1.  **doExecute()** を上書きして生産プロセスの開始を実行し、プロセスの完了メッセージを追加します。
 
-![ProdProcessGuideStartProductionOrderStep](media/add-process-completion-message.png)
+        ```X++
+        /// <summary>
+        /// The <c>ProdProcessGuideStartProductionOrderStep</c> represents a step that starts a production order.
+        /// </summary>
+        [ProcessGuideStepName(classStr(ProdProcessGuideStartProductionOrderStep))]
+        public class ProdProcessGuideStartProductionOrderStep extends ProcessGuideStepWithoutPrompt
+        {
+            protected final void doExecute()
+            {
+                WhsrfPassthrough pass = controller.parmSessionState().parmPass();
+                WHSUserId userId = pass.lookup(ProcessGuideDataTypeNames::UserId);
+                ProdTable prodTable = ProdTable::find(pass.lookup(ProcessGuideDataTypeNames::ProdId));
+                WhsWorkExecute workExecute = WhsWorkExecute::construct();
+                workExecute.prodStartUp(prodTable.ProdId, ProdUpdStartUp::proposalStartUpQty(prodTable.ProdId), userId);
+
+                this.addProcessCompletionMessage();
+
+                super();
+            }
+
+        }
+        ```
 
 > [!NOTE]
 > 多くの一般的なパターン (エラー時の UI の再生成、設定プロセスの完了メッセージ、**OK** および **キャンセル** 動作) がフレームワークに移動された点に注意してください。したがって、エラーの発生しやすい定型コードと、プロセス間で不整合な動作をする危険性を備えた定型コードの両方をアプリケーション開発者が記述しなくてよくなります。 ただし、共通するパスとは異なるシナリオが必要な場合、アプリケーション開発者には、適切なメソッドをオーバーライドするオプションが用意されていますが、その場合、それは明示的なかつ追跡可能な意図的な誤差です。

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 49681
 ms.assetid: 540b08dd-9af7-42fc-aa0c-ba04af1f8002
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55f1b6dc6f8bcb714982cb890cc76247bd09636a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ece881549dab4793094ccb7d3f6cbd400bfda6a2
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544161"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833568"
 ---
 # <a name="customization-analysis-report-car"></a>カスタマイズ分析のレポート (CAR)
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 24321
 ms.assetid: 3e49f8eb-d9a8-418c-a73d-687da4ca0c96
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c4ff53598a5968c59c0da627420cdc35cb63bbd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0f50bc958fcb6fc846cd217e4c2c945a37b9e40e
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545210"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851221"
 ---
 # <a name="create-shareable-secured-urls-deep-links"></a>共有可能かつセキュリティで保護された、URL (ディープ リンク ) を作成
 

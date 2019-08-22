@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 63823
 ms.assetid: f28e493d-2766-466d-a597-ef82e87cdfa6
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51a7f3ffdc9e65357b55dd70081948f3b2f6edad
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 86d901c21453e7cbfa9ba0fb6db3386708f60d1a
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595425"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833702"
 ---
 # <a name="f-classes-formgroupcontrol-to-formintcontrol"></a>F くらす (FormGroupControl から FormIntControl)
 

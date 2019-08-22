@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 31781
 ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37fce13f0383491f25df29986d1fc2df92bf546b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b8c4d5af8db47724637d02f4ce7f763e30e796a2
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550927"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833510"
 ---
 # <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の Finance and Operations のプロジェクト タイプ
 

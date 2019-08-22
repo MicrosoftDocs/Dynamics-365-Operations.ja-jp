@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rubendel
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 32170f52137b6811cab9b414b8733ffc9ed1ae0c
-ms.sourcegitcommit: 45eeca48c6cb4f3f94d61392f4f99a52dc443a97
+ms.openlocfilehash: 8ca4ad9dc5fca8581a830c2036deb55bdf4b14ee
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "1606205"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1794856"
 ---
 # <a name="saving-online-payments-with-the-adyen-connector"></a>Adyen コネクタでオンライン支払を保存する
 

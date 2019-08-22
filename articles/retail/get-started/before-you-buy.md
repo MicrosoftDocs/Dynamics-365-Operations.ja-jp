@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: dfd7ed8b8884f9497daa1526c726c8c78720c711
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 85d4af003f74cb6b9e85bbe6eb7024d40c5e36ae
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595301"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845668"
 ---
 # <a name="before-you-buy-retail"></a>Retail を購入する前に
 

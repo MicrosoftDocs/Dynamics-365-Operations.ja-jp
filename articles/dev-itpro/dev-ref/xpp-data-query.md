@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 150273
 ms.assetid: 999a5ecf-559b-4d66-8b05-9a8e477e0518
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 9a967da9ba191d80056a5b29f618b024bbb319a8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 7b7e9648c8e5b4da138db8a8f4c1451dd4f1f953
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536969"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833622"
 ---
 # <a name="x-data-selection-and-manipulation"></a>X++ データの選択と操作
 
@@ -1008,10 +1008,10 @@ ttsCommit;
 | update\_recordset | 1 回のデータベース トリップでテーブルの複数の行を更新します。                                                  |
 | delete\_from      | 1 回のデータベース トリップでデータベースから複数のレコードを削除します。                                        |
 
-## <a name="insertrecordset"></a>insert\_recordset
+## <a name="insert_recordset"></a>insert\_recordset
 **insert\_recordset** ステートメントは、1 回のサーバー トリップで、1 つ以上のソース テーブルからデータを直接 1 つのターゲット テーブルにコピーします。 配列挿入より **insert\_recordset** を使用したほうが高速です。 ただし、配列挿入は、データを挿入する前に処理する場合より柔軟になります。 **挿入\_レコード セット**はレコード セットに基づく、一度に複数のレコードに対する操作を実行する演算子です。 ただし、多くの場合レコードごとの操作に戻れます。
 
-### <a name="insertrecordset-syntax"></a>insert\_recordset 構文
+### <a name="insert_recordset-syntax"></a>insert\_recordset 構文
 
 *ListOfFields* 出力先テーブルは、ソース テーブル内のフィールドのリストと一致する必要があります。 データは、フィールドの一覧に表示されている順に転送されます。 フィールドの一覧に表示されていない出力先テーブルのフィールドは、他の領域と同じように、**0** (ゼロ) の値に割り当てられています。 **RecId** などのシステム フィールドは、出力先テーブルのカーネルによって透過的に割り当てられます。
 
@@ -1121,7 +1121,7 @@ Beth  --works on--  Project YY (From variable.).
 }
 ```
 
-## <a name="updaterecordset"></a>update\_recordset
+## <a name="update_recordset"></a>update\_recordset
 **update\_recordset** ステートメントでは、サーバーへの 1 回のアクセスで複数の行を更新することができます。 したがって、SQL Server の機能は、一部のタスクのパフォーマンスを向上させるのに役立ちます。 ****update\_recordset**** ステートメントは X++ の **delete\_from** と SQL の **update set** に似ています。 フェッチ、変更、更新によって個別に各レコードを取得しません。代わりに、データベース サーバー側で設定された SQL スタイル レコードで動作します。 **更新**メソッドがオーバーライドされた場合、実装は、一度に 1 つのレコードが更新される古典的なループ構造に戻されます。 (この動作は、削除対象の **削除の\_対象** の動作に似ています。) したがって、構築は、一時テーブルとテーブル全体 - キャッシュされたテーブルで、ループ構造を使用して動作します。
 
 ### <a name="example-update-that-is-based-on-a-calculated-value"></a>例: 計算値に基づく更新プログラム
@@ -1170,10 +1170,10 @@ static void Join22aJob(Args _args)
 }
 ```
 
-## <a name="deletefrom"></a>delete\_from
+## <a name="delete_from"></a>delete\_from
 **delete\_from** ステートメントを使用することにより、データベース テーブルから複数のレコードを削除することができます。 この方法は、一度に 1 つのレコードを削除するループで **xRecord .delete** メソッドを使用する方法よりも効率的かつ高速になります。 **delete** メソッドをオーバーライドした場合、システムは削除される各行につき 1 回 **delete\_from** ステートメントを **delete** メソッドを呼び出すコードに解釈します。
 
-### <a name="example-efficiently-deleting-records-by-using-deletefrom"></a>例: delete\_from を使用して、効率的にレコードを削除
+### <a name="example-efficiently-deleting-records-by-using-delete_from"></a>例: delete\_from を使用して、効率的にレコードを削除
 
 次の例は、複数のレコードを効率的に削除する方法を示しています。
 

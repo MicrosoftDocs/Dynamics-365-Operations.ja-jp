@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: arifk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 086449be8a41aa121a22931496bf658ab67d7c77
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 94713cea8424b6633a49f9d20743b0acc904a69a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550938"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848113"
 ---
 # <a name="on-premises-deployment-option"></a>オンプレミス配置のオプション
 
@@ -52,7 +52,7 @@ Microsoft Dynamics 365 for Finance and Operations は、オンプレミスの展
 [![ローカル ビジネス データ展開のアプリケーション ライフ サイクル管理](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)
 
 ## <a name="data-storage"></a>データ ストレージ 
-オンプレミス配置オプションは、オンプレミスのコア顧客データを格納します。 コア顧客データは、[Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/privacy/how-microsoft-defines-customer-data) で提供される顧客データ定義のサブセットです。 表 1 では、LCS、Azure Active Directory、および Microsoft Office のサインアップ ポータルなどのサービスにより、米国内にある Microsoft Azure データ センターに格納されている顧客データのカテゴリについて説明します。 コア顧客データと呼ばれる他のすべての顧客データは、オンプレミスに保管されます。  
+オンプレミス配置オプションは、オンプレミスのコア顧客データを格納します。 コア顧客データは、[Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/how-microsoft-defines-customer-data) で提供される顧客データ定義のサブセットです。 表 1 では、LCS、Azure Active Directory、および Microsoft Office のサインアップ ポータルなどのサービスにより、米国内にある Microsoft Azure データ センターに格納されている顧客データのカテゴリについて説明します。 コア顧客データと呼ばれる他のすべての顧客データは、オンプレミスに保管されます。  
 
 表 1: オンプレミス環境をサポートするサービスによって、米国内にある Microsoft Azure データ センターに格納されている顧客データ。 これらのサービスにより、サポート インシデントの初期オンボーディング、開始、追跡、サービスの更新とアップグレードが可能になります。  
 

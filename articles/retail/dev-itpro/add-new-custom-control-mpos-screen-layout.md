@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 65801
 ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f566e64ec24f90fbc9bddd9b09c6da640d5e11c3
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 439bedc3e065fa22f6a38537e6f4c989bd13c5de
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537571"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833199"
 ---
 # <a name="add-custom-controls-to-retail-modern-pos-mpos-screen-layouts"></a>Retail Modern POS (MPOS) 画面レイアウトへのカスタム コントロールの追加
 

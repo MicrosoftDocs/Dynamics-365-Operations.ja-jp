@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 ms.search.region: India
 ms.search.industry: Retail
 ms.author: v-pakris
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: 60a9f824fd3bd0d67316b7c78bb6da2fe712f322
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b757fe5a704b0fd230dad684b522929b6e648f5a
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572093"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834114"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 

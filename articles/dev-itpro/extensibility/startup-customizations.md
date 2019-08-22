@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: cda6f533e01b6bf25a8f0ac9202cc8aa2ea1b979
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a8098ea27c5d7e486ae917982740f8e13838605f
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544101"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833390"
 ---
 # <a name="customize-application-startup-by-using-delegates"></a>デリゲートを使用してアプリケーション起動をカスタマイズする
 
@@ -48,7 +48,7 @@ Dynamics AX 2012 では、クライアントが初期化中に発生したイベ
 - このイベントは、インタラクティブ セッションが作成され、使用できる状態になったときに発生します。 
 - これは、すべてのユーザーのインタラクティブ セッション作成につき 1 回発生します。
 
-## <a name="static-delegate-void-onsessioncreatedboolean-isbatch-boolean-isinteractive"></a>static delegate void onSessionCreated(boolean _isBatch, boolean _isInteractive)
+## <a name="static-delegate-void-onsessioncreatedboolean-_isbatch-boolean-_isinteractive"></a>static delegate void onSessionCreated(boolean _isBatch, boolean _isInteractive)
 - このイベントは、セッションが作成され、使用できる状態になったときに発生します。 
 - これは、すべてのユーザーのインタラクティブ セッション作成につき 1 回発生します。
 - *_isBatch* はシステムがバッチ ジョブを実行しているかどうかを指定します。

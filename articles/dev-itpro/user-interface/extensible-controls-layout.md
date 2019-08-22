@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 11354
 ms.assetid: 53d1f66a-1e69-4548-9fd2-a87a3b370882
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d04dd393685d4e4a69cee6a3b4983b1dc7bdeca
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7e9d38894a5b83da5302a36903c4467785ea94a2
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548636"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851175"
 ---
 # <a name="extensible-control-layout-guidelines"></a>拡張可能なコントロール レイアウトのガイドライン
 

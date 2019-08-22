@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: ''
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3806c9f3d3a950490bfc528349467677d1914723
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: a5e2d2e03bdaf3c1a8e2a8f0704e28cbfe80c099
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595415"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1794862"
 ---
 # <a name="default-financial-dimensions"></a>既定の財務分析コード
 [!include [banner](../includes/banner.md)]

@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 60083
 ms.assetid: a68797b9-a230-4f72-980e-43101e9b1dd2
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a19fcd01df491bbbc106bd3ebd32681bdb31c861
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 1ea449760886ca886ab47d6472f76698d28656bc
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595454"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833706"
 ---
 # <a name="f-classes-formbuildfilterpanecontrol-to-formbuildrealcontrol"></a>F クラス (FormBuildFilterPaneControl から FormBuildRealControl)
 

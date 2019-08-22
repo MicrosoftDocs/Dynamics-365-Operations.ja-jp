@@ -3,14 +3,14 @@ title: 仕入先請求書の概要
 description: このトピックでは、仕入先請求書に関する一般情報を示します。 仕入先請求書は、受領した製品とサービスに対する支払請求です。 仕入先請求書は、進行中のサービスの請求書を表すことができます。または特定の品目およびサービスの発注書に基づくことができます。
 author: abruer
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
-ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
+ms.openlocfilehash: c69291214796847af7169cf261865860998f0d27
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625082"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863326"
 ---
 # <a name="vendor-invoices-overview"></a>仕入先請求書の概要
 
 [!include [banner](../includes/banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、仕入先請求書に関する一般情報を示します。 仕入先請求書は、受領した製品とサービスに対する支払請求です。 仕入先請求書は、進行中のサービスの請求書を表すことができます。または特定の品目およびサービスの発注書に基づくことができます。
 
@@ -90,6 +90,13 @@ ms.locfileid: "1625082"
 **仕入先請求書を回復**ページを使用して、4時間以上使用されている仕入先請求書を回復またはリリースし、編集できるようにすることができます。 このページは、**定期処理タスク**ナビゲーションまたは、**仕入先請求書の入力**ワークスペースのタイルから開くことができます。 請求書が復旧した後、**仕入先請求書**ページで編集可能になります。
 
 **仕入先請求書を回復**ページにアクセスできるのは、**使用中の仕入先請求書の回復**セキュリティ職務権限と権限が割り当てられている場合のみです。 また、**買掛金勘定パラメーター**ページの**仕入れ先請求書の回復を許可**パラメーターをオンにする必要があります。
+
+## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>仕入先請求書のワークフロー ステータスを、修復不可能からドラフトにリセットする
+
+修復不可能なエラーのために停止したワークフロー インスタンスのワークフロー ステータスは**修復不可能**となります。 仕入先請求書ワークフローの状態が**修復不可能**の場合は、**取り消し**を選択して**ドラフト**にリセットできます。 その後、仕入先請求書を編集できます。 **機能管理**ページの**仕入先請求書のワークフローのステータスをドラフトにリセットする**パラメーターが有効になっている場合、 この機能を使用できます。
+
+**ワークフロー履歴**ページを使用して、ワークフロー状態を**ドラフト**にリセットできます。 このページは、**仕入先請求書**または**共通 > 照会 > ワークフロー**ナビゲーションから開くことができます。 ワークフロー状態を**ドラフト**にリセットするには、**取り消し**を選択します。 また、**仕入先請求書**または**保留中の仕入先請求書**ページの**取り消し**アクションを選択して、ワークフロー状態をドラフトにリセットすることもできます。 ワークフロー ステータスを**ドラフト**にリセットした後、**仕入先請求書**ページで編集できるようになります。
+
 
 
 ## <a name="additional-resources"></a>追加リソース

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
-ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
+ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624815"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742636"
 ---
 # <a name="retail-peripherals"></a>小売周辺機器
 
@@ -192,7 +192,7 @@ Modern POS は**専用**タイプのハードウェア ステーションを、�
 
 #### <a name="modern-pos-for-android"></a>Android 用 Modern POS
 
-現在の Dynamics 365 for Retail バージョン 8.1.3 では、Android 用 Modern POSに 組み込みの IPC ハードウェア ステーションが含まれています。 このハードウェア ステーションは、ネットワーク プリンターおよび支払コネクタとの通信をサポートします。 詳細については、[Android 用 Hybrid アプリに関する docs の記事](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app) を参照してください。 
+現在の Dynamics 365 for Retail バージョン 8.1.3 では、Android 用 Modern POSに 組み込みの IPC ハードウェア ステーションが含まれています。 このハードウェア ステーションは、ネットワーク プリンターおよび支払コネクタとの通信をサポートします。 詳細については、[Android 用 Hybrid アプリに関する docs の記事](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app) を参照してください。 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>クラウド POS および iOS 用 Modern POS
 
@@ -541,7 +541,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 
 4. **小売** &gt; **小売 IT** &gt; **配送スケジュール** の順にクリックします。
 5. 店舗に新しいハードウェア プロファイルを同期させるため、**1090** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
-6. 店舗に新しいハードウェア ステーションを同期させるため、**1040** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
+6. 店舗に新しいハードウェア ステーションを同期させるため、**1070** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 7. Windows 用 Modern POS をインストールして有効化します。
 8. Windows 用 Modern POS を起動し、接続されている周辺機器の使用を開始します。
 

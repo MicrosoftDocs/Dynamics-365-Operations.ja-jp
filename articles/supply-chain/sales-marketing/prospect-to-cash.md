@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b46ece384a28f8e78989253fcf467fbf3feaf1b7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e31994ea3cd73dcc749a02ce2cd0815be191a567
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554624"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742404"
 ---
 # <a name="prospect-to-cash"></a>見込顧客を現金化
 
@@ -81,4 +81,4 @@ ms.locfileid: "1554624"
 見込顧客を現金化するソリューションを使用するには、以下のコンポーネントをインストールする必要があります:
 
 - Dynamics 365 for Sales バージョン 1612 (8.2.1.207) (DB 8.2.1.207) オンラインまたはそれ以降のバージョン
-- Dynamics 365 for Sales バージョン 1.15.0.0またはそれ以降のバージョンの、見込顧客を現金化するソリューション。 このソリューションは、AppSource からダウンロードできます。 [Dynamics 365、見込顧客を現金化のダウンロード](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3)。
+- Dynamics 365 for Sales バージョン 1.15.0.0またはそれ以降のバージョンの、見込顧客を現金化するソリューション。 このソリューションは、AppSource からダウンロードできます。 [Dynamics 365、見込顧客を現金化のダウンロード](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3)。

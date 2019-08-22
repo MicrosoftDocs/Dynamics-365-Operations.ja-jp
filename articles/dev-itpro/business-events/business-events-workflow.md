@@ -3,7 +3,7 @@ title: ワークフロー ビジネス イベント
 description: ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 07/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 620620fbe426d5823836942488ee4458b2aeb759
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ac6a2ee4bfe953dcf6a6dff32247fc8a8877a995
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505645"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833728"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]
@@ -81,4 +81,6 @@ ms.locfileid: "1505645"
 - 作業項目に完了す準備ができている場合は、使用可能な回答オプションをユーザーに送信して、割り当てられたユーザーに回答を要求します。
 - 回答が提供された後で **WorkflowWorkItems** エンティティの **完了** メソッドを呼び出して、その回答で作業項目を完了します。 
 
-これらのシナリオのテンプレートの例は間もなく利用可能になる予定で、リンクがここで簡単に参照できるように提供されます。
+Microsoft Flow の作業項目完了のテンプレートはすぐに利用できるようになり、簡単に参照できるようにここでリンクが提供される予定です。
+
+Microsoft Flow で作業項目完了を設定する詳細なガイドは [ワークフロー承認ビジネス イベントを消費する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow) を参照してください。

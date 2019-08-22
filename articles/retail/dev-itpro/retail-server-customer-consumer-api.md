@@ -1,8 +1,9 @@
 ---
-title: Retail サーバーの顧客およびコンシューマー API
-description: この記事では、さまざまな役割で利用可能であり、さまざまなクライアントで使用できる API の概要について説明します 中心は、顧客フェーシング アプリケーション クライアントと e コマース クライアントについてです。
+title: Retail Server の顧客およびコンシューマー API
+description: このトピックでは、さまざまな役割で利用可能であり、さまざまなクライアントが使用できる API の概要について説明します 中心は、顧客フェーシング アプリケーション クライアントと e コマース クライアントについてです。
 author: mugunthanm
 manager: AnnBe
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,18 +17,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 890b472950eab43f51a6f9ca216792d91a5df4da
-ms.sourcegitcommit: 9712ff2a4eb6a436ca8c65aece2bcecdf8d61706
+ms.openlocfilehash: 3dfb1f604e7e6d7756a7680b35b1b4eb49a6643c
+ms.sourcegitcommit: ba71ac65109be7ed1413b09b9424b5e44162f5b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "1703650"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "1787270"
 ---
-# <a name="retail-server-customer-and-consumer-apis"></a>Retail サーバーの顧客およびコンシューマー API
+# <a name="retail-server-customer-and-consumer-apis"></a>Retail Server の顧客およびコンシューマー API
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、さまざまな役割で利用可能であり、さまざまなクライアントで使用できる API の概要について説明します 中心は、顧客フェーシング アプリケーション クライアントと e コマース クライアントについてです。
+このトピックでは、さまざまな役割で利用可能であり、さまざまなクライアントが使用できる API の概要について説明します 中心は、顧客フェーシング アプリケーション クライアントと e コマース クライアントについてです。
 
 <a name="overview"></a>概要
 --------
@@ -50,7 +51,7 @@ Retail サーバー (Retail プロキシ経由) へのすべての要求リク�
 匿名および顧客ロールは、電子商取引 (顧客/消費者) シナリオに適用されます。 匿名ロールは、サインインしていない電子商取引顧客を表す要求に使用されます。 顧客ロールは、認証済みでサインインしている電子商取引顧客を表す要求に使用されます。 ロール フィルターは、Retail サーバーで公開されているすべての API に適用されます。 eCommerce シナリオでは、関連する CommerceRole.Anonymous または CommerceRole.Customer のいずれかを持つ API のみを使用することができます。
 
 > [!NOTE]
-> 既定では、匿名アクセスは有効ではありません。 環境の匿名アクセスを有効にするには、[サポート](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)に問い合わせてください。
+> 既定では、匿名アクセスは有効ではありません。 環境の匿名アクセスを有効にするには、[サポート](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)に問い合わせてください。
 
 
 ## <a name="customer-controller"></a>顧客のコントロール
@@ -465,5 +466,223 @@ Retail サーバー (Retail プロキシ経由) へのすべての要求リク�
 |-------------|-----------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------|
 | 取得         |                                                                                         | PageResult\<Recommendation\>      | アプリケーション、従業員、顧客、匿名 | 推奨の一覧を取得します。                                                                    |
 | GetElements | listId string型, RecommendationCriteria criteria, QueryResultSettings queryResultSettings | PagedResult\<RecommendedElement\> | アプリケーション、従業員、顧客、匿名 | 検索条件として指定されたコンテキスト情報 (省略可能) から推奨エレメントを取得します。 |
+
+## <a name="transfer-order-controller"></a>オーダーコントローラーの転送
+
+| API                      | パラメーター                                                                                                        | 戻り値                           | 対応している商取引上の役割 | 説明                                                       |
+|--------------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------------|--------------------------|-------------------------------------------------------------------|
+| 取得                      | QueryResultSettings queryResultSettings                                                                          | PageResult&lt;transferorder&gt;        | 従業員                 | 店舗のオープン移動オーダーを取得します。                          |
+| 確定                   | 文字列 orderId                                                                                                   | 無効                                   | 従業員                 | 移動オーダーのコミット                                         |
+| GetTransferOrderJournals | 文字列 orderId, QueryResultSettings queryResultSettings                                                          | PageResult&lt;TransferOrderJournal&gt; | 従業員                 | 指定された移動オーダーの移動オーダー帳を取得します。 |
+| GetTransferOrderLines    | 文字列 orderId, QueryResultSettings queryResultSettings                                                          | PageResult&lt;TransferOrderLine&gt;    | 従業員                 | 移動オーダーの明細行を取得します。                                    |
+| CreateTransferOrderLines | 文字列 orderId、IEnumerable&lt;TransferOrderLine&gt; transferOrderLines、QueryResultSettings queryResultSettings | PageResult&lt;TransferOrderLine&gt;    | 従業員                 | 移動オーダーの明細行を作成します。                                 |
+| UpdateTransferOrderLines | 文字列 orderId、IEnumerable&lt;TransferOrderLine&gt; transferOrderLines、QueryResultSettings queryResultSettings | PageResult&lt;TransferOrderLine&gt;    | 従業員                 | 移動オーダーの明細行を転記します。                                 |
+| DeleteTransferOrderLines | 文字列 orderId、IEnumerable&lt;TransferOrderLine&gt; transferOrderLines、QueryResultSettings queryResultSettings | PageResult&lt;TransferOrderLine&gt;    | 従業員                 | 移動オーダーの明細行を削除します。                                 |
+| GetTransferOrderComments | 文字列 orderId, QueryResultSettings queryResultSettings                                                          | PageResult&lt;Comment&gt;              | 従業員                 | 指定された移動オーダーのコメントを取得します。                |
+| AddTransferOrderComment  | 文字列 orderId、文字列 commentedBy、文字列 comment                                                               | コメント                                | 従業員                 | 指定された移動オーダーのコメントを取得します。                |
+| GetTransferPackingSlip   | 文字列 orderId、文字列 voucherId、ReceiptRetrievalCriteria 基準、QueryResultSettings queryResultSettings     | PageResult&lt;Receipt&gt;              | 従業員                 | 指定の移動オーダー帳の梱包明細を取得します。   |
+| PatchEntity              | TransferOrder エンティティ                                                                                             | TransferOrder                          | 従業員                 | ローカルデータベースに移動オーダーを保存します。                     |
+| GetEntityByKey           | 文字列 orderId                                                                                                   | TransferOrder                          | 従業員                 | オーダー識別子で移動オーダーを取得します。                        |
+| DeleteEntity             | TransferOrder エンティティ                                                                                             | 無効                                   | 従業員                 | 指定の移動オーダーを削除します。                             |
+| CreateEntity             | TransferOrder エンティティ                                                                                             | TransferOrder                          | 従業員                 | 移動オーダーを作成します。                                           |
+
+## <a name="purchase-order-controller"></a>オーダー コントローラーの購入
+
+| API            | パラメーター                               | 戻り値                    | 対応している商取引上の役割 | 説明                                   |
+|----------------|-----------------------------------------|---------------------------------|--------------------------|-----------------------------------------------|
+| 取得            | QueryResultSettings queryResultSettings | PageResult&lt;PurchaseOrder&gt; | 従業員                 | 店舗のオープンな発注書を取得します。      |
+| 確定         | 文字列 orderId                          | 無効                            | 従業員                 | 発注書をコミットします。                                         |
+| PatchEntity    | PurchaseOrder エンティティ                    | PurchaseOrder                   | 従業員                 | ローカルデータベースに発注書を保存します。 |
+| GetEntityByKey | 文字列 orderId                          | PurchaseOrder                   | 従業員                 | オーダー識別子で発注書を取得します。     |
+
+## <a name="org-units-controller"></a>組織単位コントローラー
+
+| API                                | パラメーター                                                                                                                                                                         | 戻り値                          | 対応している商取引上の役割                  | 説明                                                                                             |
+|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| 取得                                | QueryResultSettings queryResultSettings                                                                                                                                           | PageResult&lt;OrgUnit&gt;             | アプリケーション、従業員、顧客、匿名 | 組織を IQueryable として取得します。                                                                    |
+| GetOrgUnitLocationsByArea          | SearchArea searchArea、QueryResultSettings queryResultSettings                                                                                                                    | PageResult&lt;OrgUnitLocation&gt;     | アプリケーション、従業員、顧客、匿名 | 定義された領域で店舗を検索します。                                                                         |
+| SearchOrgUnitLocations             | OrgUnitLocationSearchCriteria orgUnitLocationSearchCriteria、QueryResultSettings queryResultSettings                                                                              | PageResult&lt;OrgUnitLocation&gt;     | アプリケーション、従業員、顧客、匿名 | 現在のフルフィルメントグループ内に指定されたフィルタ基準を持つ店舗を検索します。                          |
+| GetAvailableInventory              | 文字列 itemId、文字列のバリエーション、文字列 barcode、QueryResultSettings queryResultSettings                                                                                          | PageResult&lt;OrgUnitAvailability&gt; | アプリケーション、従業員、顧客、匿名 | 品目 ID またはバーコードのすべての店舗で利用可能な在庫を取得します。                            |
+| GetProductAvailability             | productId long型、QueryResultSettings queryResultSettings                                                                                                                           | PageResult&lt;OrgUnitAvailability&gt; | アプリケーション、従業員、顧客、匿名 | 製品のすべての店舗で利用可能な在庫を取得します。                                                |
+| SearchProductAvailability          | productId long型、OrgUnitAvailabilitySearchCriteria orgUnitAvailabilitySearchCriteria、QueryResultSettings queryResultSettings                                                      | PageResult&lt;OrgUnitAvailability&gt; | アプリケーション、従業員、顧客、匿名 | 製品のすべての店舗で利用可能な在庫を検索します。                                             |
+| GetAvailableInventoryNearby        | IEnumerable&lt;ItemUnit&gt; itemIds、SearchArea searchArea、QueryResultSettings queryResultSettings                                                                               | PageResult&lt;OrgUnitAvailability&gt; | アプリケーション、従業員、顧客、匿名 | 定義された検索領域で指定された品目の一覧に対して、利用可能な隣接する店舗の在庫を取得します。               |
+| GetTillLayout                      | int? height, int? width                                                                                                                                                           | TillLayout                            | アプリケーション、従業員、顧客、匿名 | 単一のレジレイアウトを取得します。                                                                              |
+| GetOrgUnitConfiguration            |                                                                                                                                                                                   | ChannelConfiguration                  | アプリケーション、従業員、顧客、匿名 | 現在の組織単位の構成を取得します。                                               |
+| 検索                             | SearchStoreCriteria storeSearchCriteria、QueryResultSettings queryResultSettings                                                                                                  | PageResult&lt;OrgUnit&gt;             | アプリケーション、従業員、顧客、匿名 | 指定された検索クエリによって組織単位を検索します。                                               |
+| GetTerminalInfo                    | 文字列 orgUnitNumber、int deviceType、QueryResultSettings queryResultSettings                                                                                                     | PageResult&lt;TerminalInfo&gt;        | Employee                                 | 店舗のターミナルおよびデバイスの関連情報データを復元します。                                |
+| GetProductAvailabilityByDimensions | IEnumerable&lt;文字列&gt; inventLocationIds、productId long型、IEnumerable&lt;ProductDimensionCombination&gt; productDimensionCombinations、QueryResultSettings queryResultSettings | PageResult&lt;OrgUnitAvailability&gt; | アプリケーション、従業員、顧客、匿名 | 指定された各在庫場所で、指定された製品分析コードに基づいて、orgUnitの使用可能性を取得します。 |
+| GetStoreHours                      | 文字列 storeNumber                                                                                                                                                                | StoreHours                            | アプリケーション、従業員、顧客、匿名 | 特定の店舗番号の店舗時間を復元します。                                                      |
+| GetEntityByKey                     | 文字列 orgUnitNumber                                                                                                                                                              | OrgUnit                               | アプリケーション、従業員、顧客、匿名 | キーを使って組織エンティティを取得します。                                                                        |
+
+## <a name="catalogs-controller"></a>カタログコントローラ
+
+| API         | パラメーター                                                                | 戻り値                     | 対応している商取引上の役割                  | 説明                   |
+|-------------|--------------------------------------------------------------------------|----------------------------------|-------------------------------------------|-------------------------------|
+| GetCatalogs | channelId long型、bool activeOnly、QueryResultSettings queryResultSettings | PageResult&lt;ProductCatalog&gt; | アプリケーション、従業員、顧客、匿名 | OData クエリでカタログを取得します。 |
+
+## <a name="categories-controller"></a>カテゴリコントローラ
+
+| API           | パラメーター                                                                | 戻り値                        | 対応している商取引上の役割                  | 説明                                             |
+|---------------|--------------------------------------------------------------------------|-------------------------------------|-------------------------------------------|---------------------------------------------------------|
+| GetCategories | productId long型、QueryResultSettings queryResultSettings                  | PageResult&lt;カテゴリ&gt;          | アプリケーション、従業員、顧客、匿名 | OData クエリでカテゴリを取得します。                         |
+| GetChildren   | channelId long型, categoryId long型, QueryResultSettings queryResultSettings | PageResult&lt;カテゴリ&gt;          | アプリケーション、従業員、匿名          | 指定されたチャネル ID およびカテゴリ ID でサブカテゴリを取得します。 |
+| GetAttributes | categoryId long型、QueryResultSettings queryResultSettings                 | PageResult&lt;AttributeCategory&gt; | 応募                               | OData クエリでカテゴリの属性を取得します。             |
+| 取得           | QueryResultSettings queryResultSettings                                  | PageResult&lt;カテゴリ&gt;          | アプリケーション、従業員、匿名          | カテゴリの完全なリストを IQueryable として取得します。             |
+
+## <a name="appinfo-controller"></a>AppInfo コントローラ
+
+| API                      | パラメーター         | 戻り値 | 対応している商取引上の役割 | 説明                                           |
+|--------------------------|-------------------|--------------|--------------------------|-------------------------------------------------------|
+| UpdateApplicationVersion | 文字列 appVersion | 無効         | 従業員                 | POS デバイスの現在のアプリケーションバージョンを更新します。 |
+
+## <a name="attribute-controller"></a>属性コントローラ
+
+| API                     | パラメーター                                                                                        | 戻り値                          | 対応している商取引上の役割 | 説明                                                      |
+|-------------------------|--------------------------------------------------------------------------------------------------|---------------------------------------|--------------------------|------------------------------------------------------------------|
+| GetAttributeDefinitions | AttributeDefinitionCriteria attributeDefinitionCriteria、QueryResultSettings queryResultSettings | PageResult&lt;attributedefinition&gt; | 従業員                 | 属性グループ ID を使って属性定義を取得します。 |
+
+## <a name="attribute-group-controller"></a>属性グループコントローラ
+
+| API                          | パラメーター                                                                                                  | 戻り値                               | 対応している商取引上の役割 | 説明                                                                        |
+|------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------|--------------------------|------------------------------------------------------------------------------------|
+| GetAttributeGroupDefinitions | AttributeGroupDefinitionCriteria attributeGroupDefinitionCriteria、QueryResultSettings queryResultSettings | PageResult&lt;AttributeGroupDefinition&gt; | 従業員                 | 属性グループ ID のコレクションを使って属性グループ定義を取得します。 |
+
+## <a name="audit-event-controller"></a>監査イベントコントローラ
+
+| API                      | パラメーター             | 戻り値 | 対応している商取引上の役割                           | 説明                                |
+|--------------------------|-----------------------|--------------|----------------------------------------------------|--------------------------------------------|
+| RegisterAuditEvent       | AuditEvent auditEvent | 無効         | 従業員                                           | 監査イベントの保存操作を実行します。 |
+| RegisterAndGetAuditEvent | AuditEvent auditEvent | AuditEvent   | 匿名、顧客、デバイス、従業員、アプリケーション | 監査イベントの保存操作を実行します。 |
+
+## <a name="shifts-controller"></a>コントローラーのシフト
+
+| API                         | パラメーター                                                                              | 戻り値                    | 対応している商取引上の役割 | 説明                                                |
+|-----------------------------|----------------------------------------------------------------------------------------|---------------------------------|--------------------------|------------------------------------------------------------|
+| GetShift                    | shiftId long型、文字列 terminalId                                                        | シフト                           | 従業員                 | シフト ID とターミナル ID でシフトを取得します。                |
+| GetByStatus                 | int statusValue、QueryResultSettings queryResultSettings                               | PageResult&lt;シフト&gt;         | 従業員                 | ステータスによるシフトを取得します。                                 |
+| GetByStatusFilterByUserRole | Int statusValue、bool filterByUserRole、QueryResultSettings queryResultSettings        | PageResult&lt;シフト&gt;         | 従業員                 | ステータスによるシフトを取得します。                                 |
+| GetByRetrievalCriteria      | ShiftRetrievalCriteria shiftRetrievalCriteria、QueryResultSettings queryResultSettings | PageResult&lt;シフト&gt;         | 従業員                 | 取得条件によるシフトを取得します。                     |
+| UpsertAndValidateShifts     | shiftId long型?、文字列 terminalId、IEnumerable&lt;シフト&gt; シフト                      | ブール                            | 従業員                 | 指定したシフトを挿入または更新し、それらを検証します。          |
+| DeleteShifts                |                                                                                        | ブール                            | 従業員                 | シフトの削除はオンラインコンテキストではサポートされません。      |
+| 営業時間                        |                                                                                        | シフト                           | 従業員                 | 新しいシフトを開きます。                                         |
+| 精算                       | shiftId long型、文字列 terminalId、文字列 transactionId、bool forceClose                 | シフト                           | 従業員                 | 指定されたターミナルのシフトを閉じます。                   |
+| BlindClose                  | shiftId long型、文字列 terminalId、文字列 transactionId、bool forceClose                 | シフト                           | 従業員                 | ブラインドがシフトをクローズします。                                      |
+| ForceDelete                 | shiftId long型、文字列 terminalId、文字列 transactionId                                  | 無効                            | 従業員                 | Forcefully はシフトを削除します。 無効なシフトを削除するために使用します。 |
+| 経歴                      | shiftId long型、文字列 terminalId、文字列 cashDrawer                                     | シフト                           | 従業員                 | シフトを再開します。                                           |
+| 使用                         | shiftId long型、文字列 terminalId                                                        | シフト                           | 従業員                 | 既存のシフトを使用します。                                    |
+| 中断                     | shiftId long型、文字列 terminalId、文字列 transactionId                                  | シフト                           | 従業員                 | シフトを中断します。                                          |
+| PostShift                   | シフト シフト                                                                            | HttpResponseMessage             | 従業員                 | 新しいシフトを作成するPOST要求を処理します。                |
+| PatchShift                  | shiftId long型、文字列 terminalId、Delta&lt;シフト&gt; delta                              | シフト                           | 従業員                 | 既存のシフトを更新するパッチ要求を処理します。          |
+| GetXReport                  | shiftId long型、文字列 terminalId、文字列 transactionId、文字列 hardwareProfileId        | 受信                         | 従業員                 | X レポートの受領書を取得します。                                 |
+| GetZReport                  | 文字列 transactionId、文字列 hardwareProfileId                                         | 受信                         | 従業員                 | Z レポートの受領書を取得します。                                 |
+| ValidateCashDrawerLimit     | 文字列 shiftTerminalId、shiftId long 型                                                   | 無効                            | 従業員                 | 指定されたシフトのすべての中断中のカートを取得します。                  |
+| GetSuspendedCartsByShift    | 文字列 shiftTerminalId、shiftId long型、QueryResultSettings queryResultSettings          | PageResult&lt;SuspendedCart&gt; | 従業員                 | 指定されたシフトの中断中のトランザクションを無効にします。          |
+| VoidSuspendedCarts          | shiftId long型、文字列 shiftTerminalId                                                   | 無効                            | 従業員                 | 指定されたシフトの中断中のトランザクションを無効にします。          |
+
+## <a name="async-service-controller"></a>Async サービスコントローラー
+
+| API                        | パラメーター                                                     | 戻り値                      | 対応している商取引上の役割 | 説明                     |
+|----------------------------|---------------------------------------------------------------|-----------------------------------|--------------------------|---------------------------------|
+| GetDownloadInterval        | 文字列 dataStoreName                                          | 文字列                            | デバイス                   | ダウンロードの間隔を取得します。         |
+| GetUploadInterval          | GetUploadInterval                                             | 文字列                            | デバイス                   | アップロードの間隔を取得します。           |
+| GetTerminalDataStoreName   | 文字列 terminalId                                             | 文字列                            | デバイス                   | データストア名を取得します。           |
+| GetDownloadLink            | 文字列 dataStoreName、downloadSessionId long型                  | 文字列                            | デバイス                   | ダウンロードリンクを取得します。             |
+| GetDownloadSessions        | 文字列 dataStoreName、QueryResultSettings queryResultSettings | PageResult&lt;DownloadSession&gt; | デバイス                   | ダウンロード セッションを取得します。     |
+| GetInitialDownloadSessions | 文字列 dataStoreName、QueryResultSettings queryResultSettings | PageResult&lt;DownloadSession&gt; | デバイス                   | 初期のダウンロード セッションを取得します。 |
+| GetUploadJobDefinitions    | 文字列 dataStoreName、QueryResultSettings queryResultSettings | IEnumerable&lt;string型&gt;         | デバイス                   | ダウンロード セッションを取得します。     |
+| UpdateDownloadSession      | DownloadSession downloadSession                               | ブール                              | デバイス                   | ダウンロード セッション状態を更新します。 |
+| PostOfflineTransactions    | IEnumerable&lt;文字列&gt; offlineTransactionForMPOS           | ブール                              | デバイス                   | オフライン トランザクションを転記します。     |
+
+## <a name="card-type-controller"></a>カードタイプ コントローラー
+
+| API                          | パラメーター                               | 戻り値                   | 対応している商取引上の役割                  | 説明                                                           |
+|------------------------------|-----------------------------------------|--------------------------------|-------------------------------------------|-----------------------------------------------------------------------|
+| GetCardTypes                 | QueryResultSettings queryResultSettings | PageResult&lt;CardTypeInfo&gt; | アプリケーション、従業員、顧客、匿名 | カードタイプの一覧を返します。                                       |
+| GetSupportedPaymentCardTypes | QueryResultSettings queryResultSettings | PageResult&lt;文字列&gt;       | アプリケーション、顧客、匿名                                 | 支払コネクタでサポートされている支払カードの一覧を返します。 |
+
+## <a name="commission-sales-group-controller"></a>コミッション売上グループのコントローラー
+
+| API                         | パラメーター                                                  | 戻り値                           | 対応している商取引上の役割 | 説明                                                                       |
+|-----------------------------|------------------------------------------------------------|----------------------------------------|--------------------------|-----------------------------------------------------------------------------------|
+| GetCommissionSalesGroups    | QueryResultSettings queryResultSettings                    | PageResult&lt;CommissionSalesGroup&gt; | 従業員                 | チャネルのコミッション売上グループのコレクションを取得します。                       |
+| SearchCommissionSalesGroups | searchText string型, QueryResultSettings queryResultSettings | PageResult&lt;CommissionSalesGroup&gt; | 従業員                 | 指定された検索テキストについて、チャネルのコミッション売上グループを検索します。 |
+
+## <a name="environment-configuration-controller"></a>環境の構成コントローラー
+
+| API                         | パラメーター | 戻り値             | 対応している商取引上の役割         | 説明                                                                                                     |
+|-----------------------------|-----------|--------------------------|----------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| GetEnvironmentConfiguration |           | EnvironmentConfiguration | 匿名、従業員、アプリケーション | 単体の環境構成を取得します。                                                                        |
+| GetExtensionProfile         |           | ExtensionProfile         | 匿名、従業員、アプリケーション | 拡張機能パッケージをダウンロードし、Micro-Services と通信するために使用できる拡張機能プロファイルを取得します。 |
+
+## <a name="extension-package-definition-controller"></a>拡張機能パッケージ定義コントローラ
+
+| API                            | パラメーター                               | 戻り値                                  | 対応している商取引上の役割      | 説明                                        |
+|--------------------------------|-----------------------------------------|-----------------------------------------------|-------------------------------|----------------------------------------------------|
+| GetExtensionPackageDefinitions | QueryResultSettings queryResultSettings | IEnumerable&lt;ExtensionPackageDefinition&gt; | デバイス、従業員、アプリケーション | 構成されている拡張機能パッケージ定義を取得します。 |
+
+## <a name="extensible-enumeration-package-definition-controller"></a>拡張可能な列挙型パッケージ定義コントローラ
+
+| API                       | パラメーター                               | 戻り値                                      | 対応している商取引上の役割                                       | 説明                              |
+|---------------------------|-----------------------------------------|---------------------------------------------------|----------------------------------------------------------------|------------------------------------------|
+| GetExtensibleEnumerations | QueryResultSettings queryResultSettings | IEnumerable&lt;ExtensibleEnumerationContainer&gt; | デバイス、従業員、アプリケーション、匿名、顧客、店舗 | すべての拡張可能な列挙クラスを取得します。 |
+
+## <a name="loyalty-card-controller"></a>ロイヤルティ カード コントローラー
+
+| API                                                   | パラメーター                                                                                          | 戻り値                                 | 対応している商取引上の役割 | 説明                                                                       |
+|-------------------------------------------------------|----------------------------------------------------------------------------------------------------|----------------------------------------------|--------------------------|-----------------------------------------------------------------------------------|
+| IssueLoyaltyCard                                      | LoyaltyCard loyaltyCard                                                                            | LoyaltyCard                                  | 従業員、顧客       | 新しいロイヤルティ カードを発行します。                                                        |
+| GetLoyaltyCard                                        | 文字列 cardNumber                                                                                  | LoyaltyCard                                  | 従業員、顧客       | ロイヤルティ カードを取得します。                                                              |
+| GetCustomerLoyaltyCards                               | accountNumber  string型、QueryResultSettings queryResultSettings                                      | PageResult&lt;LoyaltyCard&gt;                | 従業員、顧客       | 顧客のロイヤルティカードを取得します。                                                  |
+| GetLoyaltyCardTransactions                            | 文字列 cardNumber、文字列 rewardPointId、QueryResultSettings queryResultSettings                   | PageResult&lt;LoyaltyCardTransaction&gt;     | 従業員、顧客       | ロイヤルティ カード トランザクションを取得します。                                               |
+| GetLoyaltyRewardPointActivityTimeline                 | 文字列 cardNumber、文字列 rewardPointId、QueryResultSettings queryResultSettings                   | PageResult&lt;LoyaltyRewardPointActivity&gt; | 従業員、顧客       | ロイヤルティカードの特典ポイントのタイムライン活動を取得します。                |
+| GetLoyaltyRewardPointActivityTimelineForExpiredPoints | 文字列 cardNumber、文字列 rewardPointId、QueryResultSettings queryResultSettings                   | PageResult&lt;LoyaltyRewardPointActivity&gt; | 従業員、顧客       | ロイヤルティカードの特典ポイントの期限切れポイントのタイムライン活動を取得します。 |
+| GetLoyaltyRewardPointsExpiringSoon                    | 文字列 cardNumber、文字列 rewardPointId、int daysToExpiry、QueryResultSettings queryResultSettings | PageResult&lt;LoyaltyRewardPointActivity&gt; | 従業員、顧客       | 有効期限が近づいたロイヤルティカードの特典ポイントを取得します。                |
+
+## <a name="non-sales-transaction-tender-operations-controller"></a>販売以外のトランザクションの支払/入金操作コントローラ
+
+| API                       | パラメーター                                                                                                    | 戻り値                          | 対応している商取引上の役割 | 説明                                                                                         |
+|---------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------|--------------------------|-----------------------------------------------------------------------------------------------------|
+| GetNonSalesTransactions   | 文字列 shiftId、文字列 shiftTerminalId、int nonSalesTenderTypeValue、QueryResultSettings queryResultSettings | PageResult&lt;NonSalesTransaction&gt; | 従業員                 | 非販売の支払/入金操作の集計金額を取得します。                                           |
+| CreateNonSalesTransaction | NonSalesTransaction nonSalesTransaction                                                                      | NonSalesTransaction                   | 従業員                 | 開始金額の申告、支払 / 入金の削除 / 釣銭入力などの工程のドロワータイプの保存を実行します。 |
+| GetAffiliations           | QueryResultSettings queryResultSettings                                                                      | PageResult&lt;Affiliation&gt;         | 従業員                 | 所属を取得。                                                                                  |
+
+## <a name="operations-controller"></a>工程コントローラー
+
+| API                            | パラメーター                                                                                          | 戻り値                                  | 対応している商取引上の役割 | 説明                                                                  |
+|--------------------------------|----------------------------------------------------------------------------------------------------|-----------------------------------------------|--------------------------|------------------------------------------------------------------------------|
+| GetOperationPermissionById     | Int operationId                                                                                    | OperationPermission                           | 従業員                 | 操作の ID を使用して、工程のアクセス許可を取得します。                     |
+| GetOperationPermissions        | QueryResultSettings queryResultSettings                                                            | PageResult&lt;OperationPermission&gt;         | 従業員                 | 操作のアクセス許可のコレクションを返します。                               |
+| SearchJournalTransactions      | TransactionSearchCriteria searchCriteria、QueryResultSettings queryResultSettings                  | PageResult&lt;Transaction&gt;                 | 従業員                 | 指定された検索条件に一致するトランザクションのコレクションを返します。 |
+| GetInventoryAvailableToPromise | long productId、文字列 itemId、文字列 inventoryLocationId、QueryResultSettings queryResultSettings | PageResult&lt;InventoryAvailableToPromise&gt; | 従業員                 | 製品のすべての店舗で利用可能な在庫を取得します。                     |
+| VoidSuspendedTransactions      | IEnumerable&lt;文字列&gt; suspendedCartIds                                                         | 無効                                          | 従業員                 | 特定のカート ID で指定された中断されたトランザクションを無効にします。                 |
+
+## <a name="shift-reconciliation-lines-controller"></a>調整行コントローラーのシフト
+
+| API                         | パラメーター                                                                                                                  | 戻り値                              | 対応している商取引上の役割 | 説明                                                                             |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|--------------------------|-----------------------------------------------------------------------------------------|
+| GetShiftReconciliationLines | ShiftReconciliationLineRetrievalCriteria shiftReconciliationLineRetrievalCriteria、QueryResultSettings queryResultSettings | PageResult&lt;ShiftReconciliationLine&gt; | 従業員                 | ダウンロードの間隔を取得します。                                                                 |
+| ReconcileLines              | IEnumerable&lt;ShiftReconciliationLine&gt; 行、文字列の説明                                                       | 無効                                      | 従業員                 | 行を調整します。                                                                   |
+| UndoReconciliation          | IEnumerable&lt;ShiftReconciliationLine&gt; 行                                                                           | 無効                                      | 従業員                 | 渡された明細行で、いずれかのグループの一部になっているすべての明細行の整合性を解除します。 |
+
+## <a name="stock-count-journal-controller"></a>在庫数履歴のコントローラ
+
+| API                                | パラメーター                                                                                                         | 戻り値                                   | 対応している商取引上の役割 | 説明                                                                                               |
+|------------------------------------|-------------------------------------------------------------------------------------------------------------------|------------------------------------------------|--------------------------|-----------------------------------------------------------------------------------------------------------|
+| 取得                                | QueryResultSettings queryResultSettings                                                                           | PageResult&lt;StockCountJournal&gt;            | 従業員                 | StockCountJournal エンティティを IQueryable として取得します。                                                            |
+| 同期                               | QueryResultSettings queryResultSettings                                                                           | PageResult&lt;StockCountJournal&gt;            | 従業員                 | AX からの在庫数仕訳帳を RetailServer DB へと同期して、DB から SC 履歴の現在のリストを取得します。 |
+| SyncTransactions                   | 文字列 journalId、QueryResultSettings queryResultSettings                                                         | PageResult&lt;StockCountJournalTransaction&gt; | 従業員                 | AX からの在庫数仕訳帳を RetailServer へと同期して、履歴取引の現在のリストを取得します。  |
+| RemoveJournal                      | 文字列 journalId                                                                                                  | 無効                                           | 従業員                 | 在庫数棚卸仕訳帳をローカルから削除します。                                                              |
+| RemoveTransaction                  | 文字列 journalId、文字列 itemId、文字列 inventSizeId、文字列 inventColorId、文字列 inventStyleId、文字列 configId | 無効                                           | 従業員                 | 在庫数仕訳帳をローカルから削除します。                                                   |
+| RemoveStockCountLineByLineId       | 文字列 journalId、stockCountLineId long型                                                                           | 無効                                           | 従業員                 | 在庫数明細行 ID によって、ローカルから在庫数仕訳帳トランザクションから削除します。                    |
+| RemoveStockCountLineByProductRecId | 文字列 journalId、productRecId long型                                                                               | 無効                                           | 従業員                 | 製品 ID によって、ローカルから在庫数仕訳帳トランザクションから削除します。                             |
+| 確定                             | 文字列 journalId                                                                                                  | 無効                                           | 従業員                 | 在庫仕訳帳トランザクションの一覧をに AX にコミットします。                                                     |
+| GetEntityByKey                     | 文字列 journalId                                                                                                  | StockCountJournal                              | 従業員                 | 仕訳帳エンティティを作成します。                                                                                   |
+| UpdateEntity                       | StockCountJournal エンティティ                                                                                          | StockCountJournal                              | 従業員                 | 仕訳帳エンティティを更新します。                                                                                   |
+| PatchEntity                        | StockCountJournal エンティティ                                                                                          | StockCountJournal                              | 従業員                 | 仕訳帳エンティティを部分的に更新します。                                                                         |
+## <a name="scan-result-controller"></a>結果コントローラのスキャン
+
+| API            | パラメーター          | 戻り値 | 対応している商取引上の役割 | 説明                        |
+|----------------|--------------------|--------------|--------------------------|------------------------------------|
+| GetEntityByKey | 文字列 scannedText | ScanResult   | 従業員                 | キーにより ScanResult エンティティを取得します。 |
 
 

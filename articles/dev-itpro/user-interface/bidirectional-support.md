@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 104543
 ms.assetid: f0d7680c-bf07-44e7-83d8-381e4471f45e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6caeaaf96bd6ee0fd01a56060541a8897e7f618
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: fbc40125a9c5c7ce8ee1600f300372275b44d3d9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595512"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851245"
 ---
 # <a name="right-to-left-language-support-and-bidirectional-text"></a>右から左へ読み書きする言語のサポートと双方向のテキスト
 

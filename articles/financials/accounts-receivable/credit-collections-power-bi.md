@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5f6b1c9338670a2f2f26ecbef1d349171457e1ac
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: 5ac47ee086569cdaaa3c30f76435432e64f8fac6
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702775"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835145"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>与信および回収管理 Power BI コンテンツ
 
@@ -72,4 +72,4 @@ ms.locfileid: "1702775"
 | 回収状態          | <ul><li>争議中</li><li>支払の約束が破棄されました</li><li>支払約束</li><li>回収状態の詳細</li><li>回収状態の金額</li><li>オープンなケース</li><li>オープンな活動</li></ul> |
 | 督促状         | <ul><li>督促状コードの金額</li><li>回収コードの量の詳細</li><li>会社別の督促状の量</li><li>顧客グループ別の督促状の量</li><li>地域ごとの督促状の量</li></ul> |
 
-これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成および構成](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/) を参照してください。 また、基になるデータのエクスポート機能を使用して、視覚化で要約されている基になるデータをエクスポートすることができます。
+これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成および構成](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/) を参照してください。 また、基になるデータのエクスポート機能を使用して、視覚化で要約されている基になるデータをエクスポートすることができます。

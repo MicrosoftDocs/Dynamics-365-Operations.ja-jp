@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: b364a31d-52de-45c5-b698-64c5262c592a
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 06799211b28944f579beb0735044c248ea1b86c9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8c13aaf96c33b90f939b5d3823a0bf503889e563
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548046"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863507"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-812-december-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
 
@@ -129,5 +129,5 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 
 これらのコンフィギュレーション バージョンは、パブリック プレビューとしてリリースされ、受け取ったフィードバックに基づいて更新されます。 これらを使用して、販売の電子形式、購買帳簿、他のシート、Facture の仕訳帳がどのように電子申告で構成されているかを参照してください。 実際の環境で派生したカスタム コンフィギュレーションの基本コンフィギュレーションとしてこれらのコンフィギュレーションを使用しないでください。
 
-詳細については、[売上帳簿、購買帳簿、および請求書 Facture 仕訳帳](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books)を参照してください。
+詳細については、[売上帳簿、購買帳簿、および請求書 Facture 仕訳帳](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books)を参照してください。
 

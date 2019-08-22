@@ -3,7 +3,7 @@ title: Finance and Operations コネクタ
 description: このトピックでは、Finance and Operations Connector for Microsoft Flow およびロジック アプリの情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: a7429d8f6d1dd9f7e198a919e1eaffe93ffd22f8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e6a9318ed86ce2dce5887726c1065949b0bf4169
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505416"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862924"
 ---
 # <a name="finance-and-operations-connector"></a>Finance and Operations コネクタ
 
@@ -31,13 +31,13 @@ Dynamics 365 for Finance and Operations Connector を使用して Microsoft Flow
 ## <a name="prerequisites"></a>必要条件
 先に進む前に、コネクタについて理解するための前提条件として、次のトピックをお読みください。
 
-- [コネクタ](https://docs.microsoft.com/en-us/connectors/) 
-- [データ管理パッケージ REST API](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=/fin-and-ops/toc.json)
-- [データ プロトコル (OData) を開く](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/fin-and-ops/toc.json) 
-- [定期統合](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
+- [コネクタ](https://docs.microsoft.com/connectors/) 
+- [データ管理パッケージ REST API](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=/fin-and-ops/toc.json)
+- [データ プロトコル (OData) を開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/fin-and-ops/toc.json) 
+- [定期統合](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
 
 ## <a name="triggers"></a>トリガー
-Finance and Operations のビジネス イベントは、*ビジネス イベントが発生した場合*にトリガーを使用して公開されます。 ビジネス イベントに関する詳細については、[Microsoft Flow](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) のビジネス イベントおよび[ビジネス イベント](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/home-page)を参照してください。
+Finance and Operations のビジネス イベントは、*ビジネス イベントが発生した場合*にトリガーを使用して公開されます。 ビジネス イベントに関する詳細については、[Microsoft Flow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) のビジネス イベントおよび[ビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page)を参照してください。
 
 ## <a name="actions"></a>アクション
 
@@ -51,7 +51,7 @@ Finance and Operations のビジネス イベントは、*ビジネス イベン
 
 *エンティティ名前*は、レコードをフェッチする必要がある Finance and Operations 内のデータ エンティティを参照します。 ドロップダウン メニューは、ターゲット環境のデータ エンティティの一覧を表示します。
 
-*オブジェクト ID* は、フェッチする必要のあるレコードを一意に識別するために指定する必要のある主キーのフィールドを参照します。 次の構文の後にキーを指定する必要があります。
+*オブジェクト ID* は、フェッチする必要のあるレコードを一意に識別するために指定する必要のある主キーのフィールドを参照します。 エンティティで定義されている順序で、コンマ区切りの値のリストとして値を指定する必要があります。
 
 **レコードの作成**
 

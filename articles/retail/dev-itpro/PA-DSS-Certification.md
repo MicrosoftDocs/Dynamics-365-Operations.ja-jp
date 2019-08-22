@@ -10,19 +10,19 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-01-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: bf8f893b9b64a84f97d79eff04528ba378f34e4a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 73b31697749c3f14f806803bc30fb08e2d22ced8
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569565"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833209"
 ---
 # <a name="payment-application-data-security-standards-pa-dss-certification"></a>支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
 

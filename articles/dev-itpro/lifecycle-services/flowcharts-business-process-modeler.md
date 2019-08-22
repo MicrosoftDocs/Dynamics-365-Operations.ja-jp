@@ -3,26 +3,26 @@ title: ビジネス プロセス モデラー (BPM) のフローチャート
 description: この記事では、Microsoft Dynamics Lifecycle Services の既定の接続フローチャートを変更し、タスク レコーダーから接続されたフローチャートを作成してアップロードし、別のライブラリからビジネス プロセス モデルのフローチャートをインポートする方法について説明します。
 author: robadawy
 manager: AnnBe
-ms.date: 01/31/2018
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.scope: AX 2012, Operations
+ms.reviewer: sericks
+ms.search.scope: Operations
 ms.custom: 11453
 ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
-ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 85da46c007d9f1aed18c60cbdd3559c172054442
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.dyn365.ops.version: 7
+ms.openlocfilehash: 145833078ce8b9300f9be77cce1b89ed20bb7f45
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544070"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850673"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 
@@ -32,7 +32,7 @@ Microsoft Dynamics Lifecycle Services (LCS) でビジネス プロセス モデ�
 
 Microsoft Dynamics 365 for Finance and Operations の既定の接続フローチャートで始め、それらを変更し、タスク レコーダーから接続されたフローチャートを作成してアップロード、または別のライブラリからビジネス プロセス モデルのフローチャートをインポートすることができます。 接続されたフローチャートを使用して、Microsoft Team Foundation Server にエクスポートするためのギャップを作成することもできます。 また、Microsoft Visio から高レベルのフローチャートを作成してアップロードすることもできます。
 
--   接続されたフローチャートは、AX 2012 タスク レコーダーに記録され、ビジネス プロセス モデラーにアップロードされたデータに基づいています。 プロパティ、セキュリティ ロール、関連情報が含まれます。 各フローチャートには、詳細な手順も含まれます。
+-   接続されたフローチャートは、Finance and Operations タスク レコーダーに記録されビジネス プロセス モデラーにアップロードされたデータに基づいています。 プロパティ、セキュリティ ロール、関連情報が含まれます。 各フローチャートには、詳細な手順も含まれます。
 -   接続されていないフローチャートは、Visio から直接アップロードされます。
 
 ## <a name="connected-flowcharts"></a>接続されたフローチャート
@@ -43,16 +43,16 @@ Microsoft Dynamics 365 for Finance and Operations の既定の接続フローチ
 | スクリプト                    | スクリプトによって実行されるアクション。                                                                                                                                    |
 | ループ                      | 反復的に実行されるアクション。                                                                                                                                   |
 | サービス                   | サービスによって実行されるアクション。                                                                                                                                   |
-| マニュアル                    | AX 2012 の外部で実行される手順。                                                                                                                               |
-| 入庫                   | サービスまたはスクリプトを使用せずに AX 2012 外から受信した情報。                                                                                  |
-| 送信                      | サービスまたはスクリプトを使用せずに AX 2012 外に送信された情報。                                                                                           |
+| マニュアル                    | Finance and Operations の外部で実行されるステップ。                                                                                                                               |
+| 入庫                   | サービスやスクリプトを使用せずに Finance and Operations 外から受信した情報。                                                                                  |
+| 送信                      | サービスやスクリプトを使用せずに Finance and Operations 外に送信した情報。                                                                                           |
 | ユーザー                      | ユーザーによって実行されるアクション。                                                                                                                                      |
 | 折りたたみ済                 | ダイアグラムに表示されていないサブプロセス。 折りたたまれたプロセスは展開できません。                                                                          |
 | 方向キー                     | プロセス ステップ間のフローの方向を示します。                                                                                                               |
 | 検証                | プロセスが進行またはループする決定ポイント。                                                                                                      |
 | プロセス開始 (円)    | プロセスの初期。                                                                                                                                    |
 | プロセス終了 (太字の円) | プロセスの終了。                                                                                                                                          |
-| ロール                     | ロール スイムレーン プロセスが完了するために複数のロールによるアクションを必要とするときに、ロールを追加します。 スイムレーンは、アクションを実行できる AX 2012 の既定のロールを一覧表示します。 |
+| ロール                     | ロール スイムレーン プロセスが完了するために複数のロールによるアクションを必要とするときに、ロールを追加します。 スイムレーンは、アクションを実行できる Finance and Operations の既定のロールを一覧表示します。 |
 
 ### 
 
@@ -108,7 +108,7 @@ LCS でギャップ機能が廃止されていることに注意してくださ�
 1.  追加したオブジェクトを選択し、右クリックします。
 2.  アプリ バーで、**ギャップではない**をクリックします。
 
-### <a name="generate-a-gap-analysis-and-export-it-to-use-with-visual-studio-team-foundation-server-tfs"></a>Visual Studio Team Foundation Server (TFS) で使用するギャップ分析を生成およびエクスポートします
+### <a name="generate-a-gap-analysis-and-export-it-to-use-with-azure-devops"></a>Azure DevOps で使用するギャップ分析を生成およびエクスポートします
 
 作業中のプロジェクトのためにギャップ解析リストを生成することができます。 ギャップ解析リストはコンマで区切られたファイルにエクスポートすることができます。 そのファイルを Visual Studio Team Foundation Server にインポートして作業項目を作成することができます。 ギャップ分析を生成してエクスポートするには、次の手順を実行します。
 1.  Lifecycle Services にサインインしてプロジェクトを開き、**ビジネス プロセス モデラー** をクリックします。
@@ -118,7 +118,7 @@ LCS でギャップ機能が廃止されていることに注意してくださ�
 5.  オプション: ギャップ分析をコンマ区切りファイルにエクスポートするには、右クリックしてアプリケーション バーを表示し、**エクスポート** をクリックします。 .csv ファイルが作成されます。 ファイルを Visual Studio Team Foundation Server にインポートして、ギャップを埋めるために必要な作業を表す作業項目を作成することができます。
 
 ## <a name="unconnected-flowcharts"></a>未接続のフローチャート
-未接続のフローチャートは、AX 2012 以外で実行される高度な業務プロセスを記述するのに非常に役立ちます。
+未接続のフローチャートは、Finance and Operations 以外で実行される高度な業務プロセスを記述するのに非常に役立ちます。
 ### <a name="upload-an-unconnected-flowchart"></a>未接続のフローチャートをアップロード
 
 1.  **自分のライブラリ** セクションで、ライブラリを開きます。

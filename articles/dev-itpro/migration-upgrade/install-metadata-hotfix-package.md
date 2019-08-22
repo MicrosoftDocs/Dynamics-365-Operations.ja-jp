@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 79822
 ms.assetid: 9b132253-1748-4b71-b128-c4b9d3a311ae
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5614b49df7ba9ab82b20718760946ecf3f012671
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3290229c087f9293591b4f7598e430b1e3814739
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557985"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851743"
 ---
 # <a name="install-metadata-hotfixes-in-development-environments"></a>開発環境でのメタデータの修正プログラムのインストール
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: ddbd50f13e92802b738bf9fd44aa332c8cb2ea7a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 31afa018e84a92ef7f136fe13a24d27df6751a79
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553265"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851375"
 ---
 # <a name="batch-manager-security-role"></a>バッチ マネージャーのセキュリティ ロール
 

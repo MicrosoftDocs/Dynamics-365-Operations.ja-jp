@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 57201
 ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d758321f7a79e1d12363bd58a7477ec0d86a4dfe
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dec83c38ec7df6668518f3bbd6bc1a8ac6adc155
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570308"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851407"
 ---
 # <a name="batch-processing-and-batch-servers"></a>バッチ処理とバッチ サーバー
 

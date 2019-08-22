@@ -3,13 +3,13 @@ title: Finance and Operations に関するビデオ
 description: このページでは、YouTube および他のサイトで使用可能な Dynamics 365 for Finance and Operations に関連する Microsoft が作成したハウツーおよび技術解説ビデオを一覧表示します。
 author: josaw1
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 5ede5bfa3b7a61461adb1514b7e96c4eba5a75c7
-ms.sourcegitcommit: fdc37a3c2ca2bac5741e7017fb225344e64f041a
+ms.openlocfilehash: d2bf2c45f6298205dbed67f6921234757a2b736a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625400"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852084"
 ---
 # <a name="videos-for-finance-and-operations"></a>Finance and Operations のビデオ
 
@@ -71,6 +71,8 @@ ms.locfileid: "1625400"
 
 #### <a name="intelligence"></a>インテリジェンス
 
+- [分析ワークスペースで埋め込みレポートを編集する方法](https://youtu.be/_8WlwmSggcQ)
+- [Dynamics 365 for Finance and Operations で PowerBI.com レポートを埋め込む方法](https://youtu.be/gGWuNJDoi-M)
 - [Dynamics 365 for Finance and Operations に自分のデータベース (BYOD) の持ち込み](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Dynamics 365 で原価管理 Power BI コンテンツを使用する方法](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 

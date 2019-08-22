@@ -3,25 +3,25 @@ title: 消費税精算期間を設定します
 description: 売上税決済期間は、売上税の報告および支払が必要な間隔についての情報を含みます。
 author: twheeloc
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 08/05/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8304d9e8997a5d31740ee1203aa4bf0603014056
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569589"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862991"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>消費税精算期間を設定します
 
@@ -50,6 +50,8 @@ ms.locfileid: "1569589"
 12. 期間毎の間隔の単位の単位数を入力します。 たとえば、四半期は 3 か月あります。
 13. [売上税決済にバッチ処理を使用する] のチェック ボックスをオンまたはオフにします。
     * 決済期間の決済プロセスは、バックグラウンドのバッチ ジョブとして処理することができます。 これは、期間内に大量の税トランザクションを処理する必要があるときにお勧めします。  
+    > [!NOTE]
+    > 現在、オーストリア、ベルギー、スペイン、イタリア、日本、オランダではサポートされていません。
 14. 相殺税トランザクションの生成を防止のチェック ボックスを選択またはクリアします。
     * 既定では、システムは決済プロセス中に相殺税トランザクションを生成しますが、期間内に大量の税トランザクションを処理する必要がある場合、パフォーマンスの問題を引き起こす可能性があります。 相殺税トランザクションの生成を防止するために、このチェック ボックスを選択します。
 15. [間隔] タブを展開します。

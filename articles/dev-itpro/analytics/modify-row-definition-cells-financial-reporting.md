@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551841"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863727"
 ---
 # <a name="modify-row-definition-cells"></a>行定義セルの変更
 
@@ -402,7 +402,7 @@ ms.locfileid: "1551841"
 2. **財務分析コードへのリンク** 列のセルをダブルクリックします。
 3. **分析コード** ダイアログ ボックスで、分析コード名の下のセルをダブルクリックします。
 4. 分析コードのダイアログ ボックスで、**個々または範囲** を選択します。
-5. **開始** フィールドに、開始分析コードを入力するか、![参照](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "参照") をクリックして使用できる分析コードを検索します。 分析コードの範囲を入力するには、**終了** フィールドに終了する分析コードを入力します。
+5. **開始** フィールドに、開始分析コードを入力するか、![参照](media/browse.gif "参照") をクリックして使用できる分析コードを検索します。 分析コードの範囲を入力するには、**終了** フィールドに終了する分析コードを入力します。
 6. **OK** をクリックして、分析コードのダイアログ ボックスを終了します。 **分析コード** ダイアログ ボックスは、更新された分析コードまたは範囲を表示します。
 7. **OK** をクリックして、**分析コード** ダイアログ ボックスを終了します。
 
@@ -479,7 +479,7 @@ ms.locfileid: "1551841"
 
 | 品目                | 説明 |
 |---------------------|-------------|
-| 個々または範囲 | **開始** フィールドに勘定名を入力するか、**参照** ボタン ![参照](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "参照") をクリックして勘定を参照します。 範囲にを選択するには、**終了** フィールドを入力するか参照します。 |
+| 個々または範囲 | **開始** フィールドに勘定名を入力するか、**参照** ボタン ![参照](media/browse.gif "参照") をクリックして勘定を参照します。 範囲にを選択するには、**終了** フィールドを入力するか参照します。 |
 | [分析コード値セット] | **名前** フィールドに、分析コード値セットの名前を入力します。 セットを作成、変更、コピー、または削除するには、**分析コード値セットの管理** をクリックします。 **式** フィールドには、**財務分析コードへのリンク** セルから、行定義内のこの分析コード値セットに対する式が挿入されます。 |
 | 勘定の集計   | **名前** フィールドに、勘定の集計の分析コードを入力または参照します。 **式** フィールドには、**財務分析コードへのリンク** セルから、レポート定義内のこの分析コード値に対する式が挿入されます。 |
 

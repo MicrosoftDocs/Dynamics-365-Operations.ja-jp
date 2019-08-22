@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 075188e507d394a1b090141d41560027cff2180b
-ms.sourcegitcommit: d940c7892b6caa6141b3bda8abf1c56e9df4687a
+ms.openlocfilehash: 214a9408cf1cf251ae0f5445df2595be11a56ed2
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "1726445"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849699"
 ---
 # <a name="parse-incoming-documents"></a>受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]

@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rschloma
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9a56dd8c5c4100b5294cb99c6778fc7bf572fe5a
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 7f0c1d425749f192ec15d218e8367aee330f453b
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595408"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833306"
 ---
 # <a name="person-search-report"></a>個人検索レポート
 
@@ -104,7 +104,7 @@ LCS からテンプレートをダウンロードすることも、7.1 以降の
 
 ## <a name="additional-resources"></a>その他のリソース
 
-GDPR の詳細については、[欧州連合の Web サイト](https://europa.eu/)、[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)  および [Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](./gdpr-guide.md) トピックの情報を参照してください。
+GDPR の詳細については、[欧州連合の Web サイト](https://europa.eu/)、[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)  および [Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](./gdpr-guide.md) トピックの情報を参照してください。
 
 
 ### <a name="disclaimer"></a>免責事項

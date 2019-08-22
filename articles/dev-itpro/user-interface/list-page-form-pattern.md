@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 14241
 ms.assetid: c70933b1-3d6a-4e26-b9ef-d9fb1e1b29a3
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34f25a2c7320a8028e2214a0a1ab1898cbac3d23
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: c48c28ed1f936feed40651cc62a5eb73621559c2
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595482"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851143"
 ---
 # <a name="list-page-form-pattern"></a>リスト ページのフォーム パターン
 

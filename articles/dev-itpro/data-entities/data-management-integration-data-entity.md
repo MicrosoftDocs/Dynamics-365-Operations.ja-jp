@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 26441
 ms.assetid: 8aa25787-5920-4277-acff-7011200133f4
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd03d9c14533324b28fe3fa363b1910de355c118
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c0b7c8526a4170e120189e4d94b035d720dc9191
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551069"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850419"
 ---
 # <a name="data-management-and-integration-by-using-data-entities"></a>データ エンティティを使用したデータ管理と統合
 

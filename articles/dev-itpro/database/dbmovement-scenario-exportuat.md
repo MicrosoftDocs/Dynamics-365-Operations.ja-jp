@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 42a6fdaf342f445f8bf61a4d6ad2b1a1096a882b
-ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
+ms.openlocfilehash: 2ffdd62adb98dacb4dc9af66ed23908fa9932ed1
+ms.sourcegitcommit: 9de43b1c2ba0291550545baecaeef52673bcdb9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1729894"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "1754733"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -206,7 +206,7 @@ LCS からのオートメーションがタイムアウトした場合、エク�
 
 ### <a name="the-export-database-takes-a-very-long-time"></a>エクスポート データベースに時間が非常にかかる
 
-最近、Azure SQL チームは、サイズが 200 GB を超えるデータベースの場合、LCS が使用するインポート/エクスポート アプリケーション プログラミング インターフェイス (API) の実行時間が変化すると発表しました。 この問題が発生した場合、[UAT データベースに直接 DevTest 環境を接続](dbmovement-scenario-debugdiag.md)するか、[レガシー ドキュメント](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/8bf1db9f2d994fc585caf380af85bb0a50eaf02b/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)に従うことができます。 ご利用の環境では、ポイントインタイム リストア機能が使用可能となっているため、バックアップ目的でのデータベースのエクスポートを推奨しません。
+最近、Azure SQL チームは、サイズが 200 GB を超えるデータベースの場合、LCS が使用するインポート/エクスポート アプリケーション プログラミング インターフェイス (API) の実行時間が変化すると発表しました。 この問題が発生した場合、[UAT データベースに直接 DevTest 環境を接続](dbmovement-scenario-debugdiag.md)するか、[レガシー ドキュメント](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/68eef5b1ef783a62f3139adab236a574457af47e/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)に従うことができます。 ご利用の環境では、ポイントインタイム リストア機能が使用可能となっているため、バックアップ目的でのデータベースのエクスポートを推奨しません。
 
 Lifecycle Services チームは、インポート/エクスポート API のパフォーマンスを改善するために Azure SQL チームと直接協力しており、LCS の将来のリリースで修正する予定です。
 

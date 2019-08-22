@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 29331
 ms.assetid: 984d7c6b-cf0a-4056-88f3-c32c92ca3401
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d797b366325b77046d8322df69981df3bce90e29
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cb9868795661c1ed80b60aae1486eedc3bc5f2b0
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560796"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851117"
 ---
 # <a name="section-related-links-subpattern"></a>セクション関連リンクのサブパターン
 

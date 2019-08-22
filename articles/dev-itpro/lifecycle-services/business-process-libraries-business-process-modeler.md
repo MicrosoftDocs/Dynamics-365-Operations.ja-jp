@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012, Operations
 ms.custom: 13301
 ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: bbdd725f4aa4dbb0cd889916d744039552ed9e9d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 641fa4844ab929652030d4267d50869a8d0aa472
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544068"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850471"
 ---
 # <a name="business-process-libraries-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ
 

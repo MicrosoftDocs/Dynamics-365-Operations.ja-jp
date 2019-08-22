@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 10254
 ms.assetid: e289504e-a1d9-44b7-8f84-f99f330321d6
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12ce6dcc1d0c5c12ff54573b6e91c2f671c97d17
-ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
+ms.openlocfilehash: d963886c29fe5ef7330c8461e60f9957ee8404d1
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1729888"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833542"
 ---
 # <a name="end-to-end-scenario-for-the-fleet-management-sample-application"></a>フリート管理のサンプル アプリケーションのエンド ツー エンドのシナリオ
 

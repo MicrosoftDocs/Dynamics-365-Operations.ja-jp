@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.assetid: 210953fb-4d5a-49e6-b4db-6f31b3472789
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 30782a9464cf7ae3a3f083807d360f27acd999f8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 223c053e3cada4eb6839cb9a285c41548073be5c
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564381"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833736"
 ---
 # <a name="retail-modern-pos-mpos-architecture"></a>Retail Modern POS (MPOS) アーキテクチャ
 

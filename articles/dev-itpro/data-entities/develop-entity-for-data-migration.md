@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 83692
 ms.assetid: ebe9c79a-029d-4f03-9bd8-d17e805baa89
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23670175ec93dcfd3062875cc45c27ca834571b1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 735ac37d7fff1b3bd28cf8f4898da780243111ee
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551068"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850413"
 ---
 # <a name="develop-entities-for-data-migration"></a>データ移行のエンティティの開発
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-09-11
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 2ee949b50e560e6df0cf0360d0282fa19cb6118f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2474f33474f07b60367ca0f789757c1d7ad6bbf5
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569562"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833205"
 ---
 # <a name="upcoming-changes-in-the-retail-sdk"></a>Retail SDK の今後の変更
 [!include [banner](../includes/banner.md)]

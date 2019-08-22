@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 6234
 ms.assetid: 551ac5d6-980c-487f-a15c-66d7ab80924a
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d16ed5b22fcea4b2e43e3b9c38930c8776ba00e4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7502e197f0cee202227ad35b21a1b38169c0113f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551072"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850449"
 ---
 # <a name="data-entity-wizard-rules"></a>データ エンティティ ウィザード ルール
 

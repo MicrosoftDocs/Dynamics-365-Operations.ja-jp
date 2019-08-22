@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 266614
 ms.assetid: acf73781-08bb-4f59-9956-8f9f295ddd02
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 8dbe341e992b0ea210077ca08f4806ec8226defd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a0d2457a58e372fd17916564ce457a1b4b27d1f5
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549737"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848357"
 ---
 # <a name="customize-app-suite-reports-by-using-extensions"></a>拡張機能を使用してアプリ スイート レポートをカスタマイズする
 

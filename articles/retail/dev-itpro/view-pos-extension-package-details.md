@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-02-25
 ms.dyn365.ops.version: AX 10.0.1
-ms.openlocfilehash: e69f850d8eb53d2a0f8c96f26c74d021e0d9a99a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 40f5831a9c6e61d35816fc17f5c510c39069ee0a
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537527"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833054"
 ---
 # <a name="view-pos-extension-package-information"></a>POS 拡張パッケージ情報の表示
 

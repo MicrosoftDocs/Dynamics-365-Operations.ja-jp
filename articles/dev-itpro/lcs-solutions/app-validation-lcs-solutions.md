@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Lifecycle Services
 ms.custom: 196913
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 6f33dbcb90fc5b1cafdbfc48152ad9847df6c555
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b7cf4086e597e9835c4ea8b8d7a733a1010c77fa
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555547"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850637"
 ---
 # <a name="validate-applications-for-finance-and-operations"></a>Finance and Operations 用のアプリケーションを検証する
 

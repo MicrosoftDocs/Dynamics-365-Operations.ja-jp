@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 13381
 ms.assetid: 6f5723b9-a2f5-40e1-9a95-2fd5f6b9fd84
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: a3f006c2c7cb37c489a3268217b0e65a1f4d39e4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58ff80f52043a6674504cc7dac346e75ea079d08
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555282"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850539"
 ---
 # <a name="license-sizing-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のライセンス数見積もりツール
 

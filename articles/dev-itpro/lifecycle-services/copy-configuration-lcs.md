@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012, Operations
 ms.custom: 15541
 ms.assetid: 54283db7-6f1a-46e8-b74d-c67d54e6e5fb
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 0bb5510a49eee25d26cc2f44d1a6d3ea04c50aa4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2593181d2ae3d4ca96bd8433fbdc2632f721814b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552503"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850681"
 ---
 # <a name="copy-configurations-by-using-configuration-manager"></a>構成マネージャーを使用して構成をコピーする
 

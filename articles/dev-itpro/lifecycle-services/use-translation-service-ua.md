@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 6154
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: a72a16c17c511d2bf2ccc1e8d05119d0d57c9b65
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 696d67e780736ac14d653149b78964b0ea9d7b04
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556425"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851807"
 ---
 # <a name="translate-documentation-files"></a>ドキュメント ファイルの翻訳
 

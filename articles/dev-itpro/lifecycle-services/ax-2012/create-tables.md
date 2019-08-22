@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 18161
 ms.assetid: 96e1f184-d049-46c3-a4ef-12641361f356
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 36ff012c58152eb3b29a346269f7f5daa1d00b8f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55fa5bc1cc74e1ec25bb7e1fbd86eec8be10fa84
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555288"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850571"
 ---
 # <a name="create-tables-by-using-the-application-object-tree-aot"></a>アプリケーション オブジェクト ツリー (AOT) を使用してテーブルを作成する
 

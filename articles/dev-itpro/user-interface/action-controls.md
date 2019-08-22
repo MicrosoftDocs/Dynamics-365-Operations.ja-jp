@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 55521
 ms.assetid: 93b61e0c-b9bc-48fc-a9b7-874a8b0aeebd
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7f108642d27a6ecc6270fa82e936251f0d91a35
-ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
+ms.openlocfilehash: 0e429dc91860d620f051a7e8eb0cb98e8d312a1c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1729890"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851249"
 ---
 # <a name="action-controls"></a>アクション コントロール
 

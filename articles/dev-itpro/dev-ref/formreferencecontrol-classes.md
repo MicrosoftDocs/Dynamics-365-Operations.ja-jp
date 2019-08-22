@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 63733
 ms.assetid: d163623b-8ae3-4f18-b804-fe890b5d2fe0
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 429e73397ae08652725ea0e9f9079a40fac8fc21
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: d2f12c33a8ea66d56066a5856ed6100ce44b09b0
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595463"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833696"
 ---
 # <a name="f-classes-formreferencecontrol-to-formstringcontrol"></a>F クラス (FormReferenceControl から FormStringControl)
 

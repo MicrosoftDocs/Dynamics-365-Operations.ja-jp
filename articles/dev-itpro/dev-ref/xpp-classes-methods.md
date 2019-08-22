@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 150303
 ms.assetid: 1b2d76d1-52d9-46b2-937f-5a3b62f2d516
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ee078c78dabcc5a0e0e36e9495b8bc9891bbc40
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6048cb923a997675b6c2e95f3db46a10c8f34781
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544180"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833644"
 ---
 # <a name="x-classes-and-methods"></a>X++ クラスおよびメソッド
 

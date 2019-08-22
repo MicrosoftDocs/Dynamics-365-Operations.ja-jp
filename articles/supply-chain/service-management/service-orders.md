@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4da0b965f3719bc16b5a73538df111ff6df071be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b4d347556d25831bb3f9175e8606e0b41d98bdd8
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555369"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743255"
 ---
 # <a name="service-orders"></a>サービス注文   
 
@@ -76,7 +76,7 @@ ms.locfileid: "1555369"
 
 ## <a name="post-from-projects"></a>プロジェクトからの転記
 
-出荷係は、特定のプロジェクトに関連付けられているすべてのサービス注文を、必要に応じて、毎週末に転記します。 その場合、出荷係は**プロジェクト**フォームの関連プロジェクトを探して、完了したサービス注文を転記します。 詳細については、[サービス注文の転記 (クラス フォーム)](https://technet.microsoft.com/en-us/library/aa574685\(v=ax.60\)) を参照してください。
+出荷係は、特定のプロジェクトに関連付けられているすべてのサービス注文を、必要に応じて、毎週末に転記します。 その場合、出荷係は**プロジェクト**フォームの関連プロジェクトを探して、完了したサービス注文を転記します。 詳細については、[サービス注文の転記 (クラス フォーム)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)) を参照してください。
 
 ## <a name="delete-service-orders"></a>サービス注文の削除
 
@@ -84,7 +84,7 @@ ms.locfileid: "1555369"
 
 ## <a name="see-also"></a>参照
 
-[サービス注文 (フォーム)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
+[サービス注文 (フォーム)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 

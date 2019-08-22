@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 77523
 ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: c95c4678951247ab882398b5658822a6e3b77123
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 77cc7cb82763b2f9b0e5c08450fee47665ac1d9b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551078"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850461"
 ---
 # <a name="copy-configuration-data-between-companies-or-legal-entities"></a>会社間または法人間のコンフィギュレーション データのコピー
 

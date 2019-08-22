@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 29191
 ms.assetid: 8e32ba2f-6cc1-4bfd-9c79-42a8392fa812
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edb31e619675fec82665b3cabdcc5ac35b918596
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3c305126dd7dce88c70f97308a5910e05adc1dfd
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571113"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851161"
 ---
 # <a name="filters-and-toolbar-subpatterns"></a>フィルターおよびツールバーのサブパターン
 

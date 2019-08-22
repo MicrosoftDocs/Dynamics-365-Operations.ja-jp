@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 196163
 ms.search.region: Global
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c639438a93c81309ea9520915bd0542aacdc89be
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a853e7bbf4d30eaa2fdaeb65bdf25030dcbd86c9
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537573"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833101"
 ---
 # <a name="add-extension-properties-to-customer-entities"></a>顧客エンティティへの拡張プロパティの追加
 

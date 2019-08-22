@@ -1,7 +1,7 @@
 ---
 title: 既定の分析コード コントロールを分析コード エントリ コントロールに移行する
 description: このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。 例として、PurchTable フォームを使用します。
-author: ShylaThompson
+author: robinarh
 manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 25531
 ms.assetid: 05e85771-44e1-4b0a-8dd2-a878be5a3309
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c5f12bc04d2b2b7298381484062b62ace81ef71
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5544f29643b4a872d1fab7c5bb77ca8669a3ed72
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555616"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833374"
 ---
 # <a name="migrate-default-dimensions-controls-to-dimension-entry-controls"></a>既定の分析コード コントロールを分析コード エントリ コントロールに移行する
 

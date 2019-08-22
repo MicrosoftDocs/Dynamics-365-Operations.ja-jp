@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b88078f802b14eaac1be57812e0905742481a6bd
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: d9fb1a7b3fa3725a3ef6cb1b657b3a51540e1e59
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1630066"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833280"
 ---
 # <a name="multi-user-testing-with-the-performance-sdk-and-azure-devops"></a>パフォーマンス SDK と Azure DevOps を使用したマルチユーザー テスト
 

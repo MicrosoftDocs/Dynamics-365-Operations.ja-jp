@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 25471
 ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42768ff7b45d9051738e0ca26e3ab3b4eb7296e6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9caaf110639ad09f4802962f0e0ee74ce2a50bca
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570563"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833238"
 ---
 # <a name="take-traces-by-using-trace-parser"></a>Trace Parser を使用してトレースを実行
 

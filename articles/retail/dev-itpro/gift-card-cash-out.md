@@ -10,7 +10,7 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.devlang: ''
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: retail
 ms.author: rapraj
 ms.search.validFrom: 2019-10-02
 ms.dyn365.ops.version: Dynamics 365 10.0
-ms.openlocfilehash: 738ac29b38fcfea0ee13687ddf3b1b8d8532637b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 56ecd0c84348988897fca94554a1ad73fe4ea046
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550757"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833147"
 ---
 # <a name="cash-out-gift-card-balance-for-a-retail-customer"></a>小売顧客のギフト カードの残高を清算します。
 

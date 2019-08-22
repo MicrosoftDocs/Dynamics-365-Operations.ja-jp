@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: rhaertle
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: ce88f17248434b50a0ce5f1460735da76ad34dd5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5f418e42aa6b26805106a5f1220e1a5e8b46edd6
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569561"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833099"
 ---
 # <a name="add-pos-operations-to-pos-layouts-by-using-button-grid-designer"></a>ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加
 

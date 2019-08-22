@@ -19,19 +19,19 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 5363c64cd1a475f0047c079d9166718ddc765f02
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fbc75702c9db1e877addc4605dcb444c344dfa5c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562368"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742450"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-finance-and-operations"></a>Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> 見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
+> 見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
 
 このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations に連絡先 (連絡先) エンティティと連絡先 (顧客) エンティティを直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 

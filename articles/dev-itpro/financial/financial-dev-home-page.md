@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 21631
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b825714bde7edce927141cce37bbeb6989c9e855
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c8783a5a5c94196efd3a66df45d937f5f5a74809
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555583"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833354"
 ---
 # <a name="financials-development-home-page"></a>財務開発ホーム ページ
 
@@ -42,3 +42,4 @@ ms.locfileid: "1555583"
 - [アプリケーション統合用の財務分析コードのコンフィギュレーション](../financial/financial-dimension-configuration-integration.md)
 - [財務分析コードの有効化](../financial/activate-financial-dimensions.md)
 - [Microsoft Excel テンプレートで財務分析コード値の検索機能を追加](../financial/add-dimensions-excel-templates.md)
+- [予算計画レイアウトの拡張](../../financials/budgeting/extending-budget-planning-layout.md)

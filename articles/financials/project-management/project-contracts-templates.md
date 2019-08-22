@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be23b99ddc224328cf067fe0bf36be93fcef4337
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561465"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846039"
 ---
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>プロジェクト契約およびプロジェクトを Project Service Automation から Finance and Operations に直接同期します
 
@@ -94,8 +94,8 @@ Project Service Automation から Finance and Operations 統合ソリューシ�
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 
 - プロジェクト契約とプロジェクトの同期を行う前に、勘定を同期する必要があります。
-- 接続の設定、**msdyn\_organizationalunits** の統合キー フィールドのマッピングを **msdyn\_名前\[名前\]** へ追加します。 最初に、接続の設定にプロジェクトを追加する必要があります。 詳細については、[Common Data Service for Apps へのデータ統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)を参照してください。
-- 接続の設定、**msdyn\_プロジェクト**の統合キー フィールドのマッピングを **msdynce\_projectnumber \[プロジェクト番号\]** へ追加します。 最初に、接続の設定にプロジェクトを追加する必要があります。 詳細については、[Common Data Service for Apps へのデータ統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)を参照してください。
+- 接続の設定、**msdyn\_organizationalunits** の統合キー フィールドのマッピングを **msdyn\_名前\[名前\]** へ追加します。 最初に、接続の設定にプロジェクトを追加する必要があります。 詳細については、[Common Data Service for Apps へのデータ統合](https://docs.microsoft.com/powerapps/administrator/data-integrator)を参照してください。
+- 接続の設定、**msdyn\_プロジェクト**の統合キー フィールドのマッピングを **msdynce\_projectnumber \[プロジェクト番号\]** へ追加します。 最初に、接続の設定にプロジェクトを追加する必要があります。 詳細については、[Common Data Service for Apps へのデータ統合](https://docs.microsoft.com/powerapps/administrator/data-integrator)を参照してください。
 - **SourceDataID** のプロジェクト契約およびプロジェクトは異なる値に更新、またはマッピングから削除することができます。 既定のテンプレート値は **Project Service Automation** です。
 - **PaymentTerms** マッピングは、Finance and Operations で有効な支払条件が反映できるように更新する必要があります。 プロジェクト タスクからマッピングを削除することもできます。 既定値のマップにはデモ データの既定値があります。 次のテーブルでは、Project Service Automation の値を示します。
 

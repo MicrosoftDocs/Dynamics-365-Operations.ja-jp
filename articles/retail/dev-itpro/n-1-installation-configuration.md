@@ -10,19 +10,19 @@ ms.service: Dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail, Core
 ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: f2dec055788ea60839ef026b18d9847c6e7442b2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e2aecccb4ed70e6a28bdb71435d5c663a358d958
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537589"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833782"
 ---
 # <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
 
@@ -64,7 +64,7 @@ ms.locfileid: "1537589"
 > [!IMPORTANT]
 > 企業全体で高いレベルのセキュリティを維持するために、このインストールに新しいクライアント ID とシークレットを作成することを強くお勧めします。 このステップでは、新しい Web アプリが必要です。
 
-1. Connector for Microsoft Dynamics AX のクライアント ID とシークレットを作成するために Azure Web App を生成します。 手順については、「[Azure Active Directory アプリケーションを作成する](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)」の「Azure Active Directory アプリケーションを作成する」セクションを参照してください。
+1. Connector for Microsoft Dynamics AX のクライアント ID とシークレットを作成するために Azure Web App を生成します。 手順については、「[Azure Active Directory アプリケーションを作成する](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)」の「Azure Active Directory アプリケーションを作成する」セクションを参照してください。
 2. 顧客 ID およびシークレットの作成が終了したら、顧客 ID を Retail で承諾する必要があります。 **システム管理 \> 設定 \> Azure Active Directory アプリケーション**の順に移動します。 クライアント ID を**クライアント ID** 列に入力し、説明のテキストを**名**列に入力、および **RetailServiceAccount** を**ユーザー ID** 列に入力します。
 
 ## <a name="configure-n-1-components"></a>N-1コンポーネントの構成
@@ -246,7 +246,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
     4. **インストール**を選択します。
 
     > [!NOTE]
-    > - クライアント ID およびシークレットを作成するため Azure Web アプリを正しく生成する方法の詳細については、「[Azure Active Directory アプリケーションを作成する](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)」で「Azure AD でアプリケーションを登録するための基本」セクションを参照してください。
+    > - クライアント ID およびシークレットを作成するため Azure Web アプリを正しく生成する方法の詳細については、「[Azure Active Directory アプリケーションを作成する](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)」で「Azure AD でアプリケーションを登録するための基本」セクションを参照してください。
     > - Web アプリを作成するとき、最初の URI と URL は特定の値である必要はありません。 作成されるアプリケーション ID (クライアント ID) とシークレットのみ重要です。
 
 5. アプリケーション ID (クライアント ID) とシークレットが作成された後、アプリケーション ID は、小売で受け入れる必要があります。 **Retail \> バック オフィス設定 \> Azure Active Directoryアプリケーション**に移動します。 アプリケーション ID を**クライアント ID** 列に入力し、説明テキストを**名**列に入力、および **RetailServiceAccount** を**ユーザー ID** 列に入力します。
@@ -273,7 +273,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 
     5. アプリケーション ID (クライアント ID) および Connector for Microsoft Dynamics AX  インストールと関連するシークレットを入力します。 その後、**インストール** を選択します。
 
-        このアプリケーション ID とシークレットは、Async Server Connector service のインストールで使用したのと同じアプリケーション ID とシークレットにできます。 クライアント ID およびシークレットを作成するため Azure Web アプリを正しく生成する方法の詳細については、「[Azure Active Directory アプリケーションを作成する](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)」で「Azure AD でアプリケーションを登録するための基本」セクションを参照してください。 Web アプリを作成するとき、最初の URI と URL は特定の値である必要はありません。 作成されるアプリケーション ID (クライアント ID) とシークレットのみ重要です。
+        このアプリケーション ID とシークレットは、Async Server Connector service のインストールで使用したのと同じアプリケーション ID とシークレットにできます。 クライアント ID およびシークレットを作成するため Azure Web アプリを正しく生成する方法の詳細については、「[Azure Active Directory アプリケーションを作成する](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)」で「Azure AD でアプリケーションを登録するための基本」セクションを参照してください。 Web アプリを作成するとき、最初の URI と URL は特定の値である必要はありません。 作成されるアプリケーション ID (クライアント ID) とシークレットのみ重要です。
 
 ## <a name="cutover-steps-to-switch-to-n-1"></a>N-1に切り替えるための切替手順
 ここでは、既存の AX 2012 R3 チャンネル環境を AX 2012 R3 バックオフィスから Dynamics 365 Retail バックオフィスに切り替えるための、推奨される詳細な手順を説明します。 これらの手順は一般的なものです。 特定のビジネスまたは技術面の要件に対応するためには、さまざまな実装がこれらの手順から逸脱する必要がある可能性があります。

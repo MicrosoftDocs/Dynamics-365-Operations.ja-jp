@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 19a5af0eb2720825865434c768a2fe042c881ce4
-ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
+ms.openlocfilehash: a46258b1996e768a810d9adc255de8755cfd1cfe
+ms.sourcegitcommit: 9de43b1c2ba0291550545baecaeef52673bcdb9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1729863"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "1754732"
 ---
 # <a name="export-a-database"></a>データベースのエクスポート
 
@@ -56,8 +56,8 @@ ms.locfileid: "1729863"
 
 ### <a name="export-ran-for-some-time-and-then-reached-a-preparation-failed-state"></a>エクスポートはしばらく実行され、「準備に失敗しました」の状態になります。
 
-エクスポート プロセスは、大規模なデータベースが関係する Azure SQL データベースではタイムアウトすることがあります。 場合によっては、LCS から **再開** アクションを使用してエクスポート プロセスを復元することができます、 Lifecycle Services チームは既知のエラー コードを認識するよう努めており、データベースのエクスポート操作のログにこれらを追加することで、ユーザーが問題を解決できるようにします。 LCS の将来のリリースでは、これらの既知のエラー コードが追加されます。 問題が発生した場合は、 [レガシードキュメント](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/8bf1db9f2d994fc585caf380af85bb0a50eaf02b/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)をエクスポートすることによって手動でのエクスポートが可能となります。
+エクスポート プロセスは、大規模なデータベースが関係する Azure SQL データベースではタイムアウトすることがあります。 場合によっては、LCS から **再開** アクションを使用してエクスポート プロセスを復元することができます、 Lifecycle Services チームは既知のエラー コードを認識するよう努めており、データベースのエクスポート操作のログにこれらを追加することで、ユーザーが問題を解決できるようにします。 LCS の将来のリリースでは、これらの既知のエラー コードが追加されます。 問題が発生した場合は、 [レガシードキュメント](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/68eef5b1ef783a62f3139adab236a574457af47e/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)をエクスポートすることによって手動でのエクスポートが可能となります。
 
 ### <a name="export-doesnt-show-any-progress-in-lcs"></a>エクスポートで LCS に進捗状況が表示されない
 
-エクスポート プロセスは、ほかのデータベースの移動処理や一般的なパッケージの配備とは異なり、runbook を使用しません。 したがって、LCS の進行状況インジケーターには、それ以外のシナリオのような出力が表示されません。 Lifecycle Services チームは、LCS の将来のリリースではこの動作が改善されるよう努めています。 問題が発生した場合は、 [レガシードキュメント](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/8bf1db9f2d994fc585caf380af85bb0a50eaf02b/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)をエクスポートすることによって手動でのエクスポートが可能となります。
+エクスポート プロセスは、ほかのデータベースの移動処理や一般的なパッケージの配備とは異なり、runbook を使用しません。 したがって、LCS の進行状況インジケーターには、それ以外のシナリオのような出力が表示されません。 Lifecycle Services チームは、LCS の将来のリリースではこの動作が改善されるよう努めています。 問題が発生した場合は、 [レガシードキュメント](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/68eef5b1ef783a62f3139adab236a574457af47e/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)をエクスポートすることによって手動でのエクスポートが可能となります。

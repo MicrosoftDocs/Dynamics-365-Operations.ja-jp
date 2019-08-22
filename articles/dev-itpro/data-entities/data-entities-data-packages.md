@@ -3,13 +3,13 @@ title: データ管理
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータ管理について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 96283
 ms.assetid: e67f5edc-1087-4867-8955-b2a40d94217f
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9885df7f0d766045d8cc57aa3e189fb8a91f026a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e62e78e505806534882518aaa128051adc305db1
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506654"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863686"
 ---
 # <a name="data-management"></a>データ管理
 
@@ -179,7 +179,7 @@ ms.locfileid: "1506654"
 ### <a name="turn-off-automatically-generated-number-sequences"></a>自動的に生成される番号シーケンスをオフにする
 多くのエンティティは、番号順序の設定に基づく ID の自動生成をサポートしています。 たとえば、製品を作成するときに、製品番号は自動で生成され、フォームで値を手動で編集することはできません。
 
-[![自動番号 sequence.png](./media/dataentitiesdatapackages15.png-300x213.jpg)](./media/dataentitiesdatapackages15.png.jpg)
+[![自動番号 sequence.png](./media/dataentitiesdatapackages15-300x213.jpg)](./media/dataentitiesdatapackages15.jpg)
 
 特定のエンティティに対する番号順序の手動割り当てを有効にできます。
 
@@ -282,20 +282,29 @@ ms.locfileid: "1506654"
 | DisablePendingRecordFromJobStatus     | インポート ジョブの最終ステータスの評価時に保留中のレコードを確実に考慮するように、修正が行われました。 実装がステータス評価ロジックに依存し、この変更が実装の重大な変更として見なされる場合、この新しいロジックをこのフライトを使用して無効にすることができます。  |
 | DMFDisableEnumFieldDefaultValueMapping     | データ パッケージの生成時に、列挙フィールドに対する高度なマッピングで設定されている既定値がデータ パッケージ マニフェスト ファイルに正常に保存されるように、修正を行いました。 このような高度なマッピングが使用されている場合、これによりデータ パッケージを統合のテンプレートとして使用できます。 この修正はこのフライトによって保護されており、以前の動作がまだ必要な場合 (データ パッケージ マニフェストで常に値を 0 に設定) は無効にできます。  |
 
-
 次の手順では、非運用環境でフライトを有効にします。 次の SQL コマンドを実行します。
 
-- INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
+実稼働環境でフライトを有効にするには、サポート案件を Microsoft に記録する必要があります。
+
 - この SQL ステートメントを実行した後、各 AOS 上の web.config ファイル内に、以下が設定されていることを確認します。
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
-- 上記の変更を行った後、すべての AOS 上で IISRESET を実行します。
+- 上記の変更を行った後、すべての AOS 上で IISReset を実行します。 
 
-パラメーターの説明は、次に示します。
- - <Flight name> は、有効または無効にする必要があるフライトの名前。
- - 有効 (1)
+```
+INSERT INTO SYSFLIGHTING
+([FLIGHTNAME]
+,[ENABLED]
+,[FLIGHTSERVICEID]
+,[PARTITION]
+,[RECID]
+,[RECVERSION]
+)
+VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
+```
+
  - パーティション - 環境のパーティション ID。レコードを照会 (選択) することで取得できます。 すべてのレコードには、ここでコピーおよび使用する必要があるパーティション ID があります。
  - RecID - パーティションと同じ ID。 ただし、複数のフライトが有効な場合、これは一意の値を持つようにするためパーティション ID + "n" にすることができます。
-    - RecVersion = 1
+ - RecVersion = 1
 
 ## <a name="additional-resources"></a>追加リソース
 - [データ エンティティ](data-entities.md)

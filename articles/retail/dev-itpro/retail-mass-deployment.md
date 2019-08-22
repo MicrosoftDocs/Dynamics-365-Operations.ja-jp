@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 515b79044364a30d24781725101d779da71d541e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7ee52e364644949ab4fa3f9d56c1b546deb506a2
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564380"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833123"
 ---
 # <a name="mass-deployment-of-retail-self-service-components"></a>Retail セルフサービス コンポーネントの一括配置
 

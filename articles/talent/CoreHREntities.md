@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-08-11
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 08758dde0b22e5d488b75b31e0b3d4690b78f66d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4872f05033ec0bc10e93772757fd2cb7d46957ed
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537109"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741932"
 ---
 # <a name="core-hr-and-common-data-service"></a>Core HR および Common Data Service
 
@@ -29,10 +29,10 @@ ms.locfileid: "1537109"
 
 Core HR は、Common Data Service を使用して、拡張性シナリオおよび統合シナリオを有効にします。
 
-Common Data Service の詳細については、[Common Data Service とは何か](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro)を参照してください。
+Common Data Service の詳細については、[Common Data Service とは何か](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)を参照してください。
 
 > [!IMPORTANT]
-> Common Data Service の以前のリリース (1.0) は、使用できなくなります。 2019 年 4 月 15 日、Core HR および Common Data Service (1.0) 間の統合がオフになります。 アップグレードの詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds)を参照してください。
+> Common Data Service の以前のリリース (1.0) は、使用できなくなります。 2019 年 4 月 15 日、Core HR および Common Data Service (1.0) 間の統合がオフになります。 アップグレードの詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds)を参照してください。
 
 次の Core HR エンティティは、Common Data Service で使用できます。
 

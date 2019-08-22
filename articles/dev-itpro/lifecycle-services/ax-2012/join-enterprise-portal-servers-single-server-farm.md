@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 27431
 ms.assetid: 05316e9d-818e-4f4b-901c-2e67fe8edfd1
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 488afaea08cf10ead1768ec888e0bd8219073a1b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f0f4e5ef01c11cb7da6dd944caa4a2aecf0fd5e7
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544081"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850545"
 ---
 # <a name="join-enterprise-portal-servers-into-a-single-server-farm"></a>エンタープライズ ポータル サーバーの 1 つのサーバー ファームへの結合
 

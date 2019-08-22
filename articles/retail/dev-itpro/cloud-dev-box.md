@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 982dd5d02bca9faedbf952575726e62330452322
-ms.sourcegitcommit: 0b9856cfc175f791898af47aa0d6fc6ac63873b0
+ms.openlocfilehash: 5df1c1c7628c4e7dd500459ff094e72844d9c7d0
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "1615654"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833197"
 ---
 # <a name="development-in-cloud-hosted-development-environments-without-admin-access"></a>管理者アクセスのないクラウド ホスト開発環境での開発
 

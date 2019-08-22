@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 63703
 ms.assetid: 7c23d29c-9408-49ca-82e7-ddb940dc8526
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f015394b59afebddbe5d770fe95d12f0a7f3ac3a
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 472caef427a20c30ec6eb1855ca01c12d8fc917a
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595427"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833692"
 ---
 # <a name="f-classes-formdataobject-to-formfasttabheadercontrol"></a>F クラス (FormDataObject から FormFastTabHeaderControl)
 

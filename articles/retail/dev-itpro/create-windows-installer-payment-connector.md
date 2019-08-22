@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 141573
 ms.assetid: 045bb979-989f-4f72-9eb1-6b963680b65e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5e36c1085d708342490a09bdd4ad88379011e4f9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 26f95754bba0823888891f5c08bfd5a54bf494a9
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556199"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833081"
 ---
 # <a name="create-windows-installers-for-payment-connectors"></a>支払コネクタ用の Windows インストーラーの作成
 

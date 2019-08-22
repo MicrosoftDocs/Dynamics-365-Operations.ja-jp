@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 03363b225c15e4ac1ceee87eaf5e6a412abdc6dd
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: a2356297fa03fea14e90f6c37badd0d690e393ef
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1629996"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741094"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
@@ -50,7 +50,7 @@ ms.locfileid: "1629996"
 
 | バージョン       | 説明 |
 |---------------|-------------|
-| 8.1 以降 | 8.1 以降のすべてのユーザーは、2018 年 11 月以降アプリケーションとプラットフォーム更新が結合された毎月の自動更新プログラムがスケジュールされています。 3 か月以内または 2 つのサービス更新プログラム以内に更新する必要があります。 更新を一時停止するには、[サービスの更新の一時停止](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates)を参照してください。 |
+| 8.1 以降 | 8.1 以降のすべてのユーザーは、2018 年 11 月以降アプリケーションとプラットフォーム更新が結合された毎月の自動更新プログラムがスケジュールされています。 3 か月以内または 2 つのサービス更新プログラム以内に更新する必要があります。 更新を一時停止するには、[サービスの更新の一時停止](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates)を参照してください。 |
 | 8.0           | 8.0 をご利用のユーザーは、毎月のプラットフォーム更新プログラム と財務報告の更新をマニュアルで適用することが可能です。 3 か月または 2 つのサービス更新以内に更新する必要があります。 2019 年 4 月で 8.0 アプリケーションのライフサイクルが終了します。 8.0 を使用している顧客は、サポートを維持するには 4 月 30 日までに更新する必要があります。 アプリケーションのサポート対象となるには、手順にに従って最新バージョンに更新する必要があります。 詳細なドキュメントについては、 [バージョン 8.0 から 8.1 への環境の更新](../../dev-itpro/migration-upgrade/appupdate-80-81.md)を参照してください。 | 
 | 7.x           | 7.x をご利用のユーザーは、毎月のプラットフォーム更新プログラム と財務報告の更新をマニュアルで適用することが可能です。 3か月以内にリリースされた2つのサービス更新プログラムを適用する必要があります。 7.x をご利用の顧客は、2019年4月30日までに更新をしない場合はサポートが失効します。 2019年4月30日以降もバージョン7.3 の顧客には、毎月自動プラットフォーム更新プログラムが送信されます。 2019年4月中までに8.1にアップグレードする必要があります (拡張機能を使用できない場合は除きます)。 市販されているオーバーレイ済のバージョンは7.3です。 
 
@@ -201,7 +201,7 @@ Finance and Operations 用の「[Regression Suite Automation Tool](https://docs.
 
 ### <a name="how-will-i-know-if-there-is-a-deprecated-feature-that-will-impact-me-if-im-not-doing-active-development-recompile-my-code"></a>現在開発中でない、またはコードを再コンパイルしない場合、推奨されない機能があるかどうかはどうすればわかりますか。 
 
-非推奨の機能については、リリースのたびに記載されます。  詳細については、[削除済みまたは非推奨の機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/fin-and-ops/toc.json) を参照してください。  
+非推奨の機能については、リリースのたびに記載されます。  詳細については、[削除済みまたは非推奨の機能](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/fin-and-ops/toc.json) を参照してください。  
 
 ## <a name="preparing-for-one-version"></a>1 つのバージョンの準備
 

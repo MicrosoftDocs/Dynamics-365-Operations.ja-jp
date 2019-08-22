@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.author: andreash
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7e6e5d0f37899269a4eb200e79074495238c4ba3
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: cf2ffc9fc149b3420249c4b592463a2d375ba315
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577944"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833732"
 ---
 # <a name="merge-the-build-systems-for-retail-and-finance-and-operations"></a>Retail および Finance and Operations 用ビルド システムのマージ
 

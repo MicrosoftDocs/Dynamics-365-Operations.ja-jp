@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 29211
 ms.assetid: 05e02e22-6b71-45f2-bacd-5e3f8ea898fb
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1488b4871bcd1d9e3c90eb85894bd80ef84fe064
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2f35f80885d789e20e64183f5ff801c7604c5b70
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560823"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851119"
 ---
 # <a name="form-part-section-list-form-patterns"></a>フォーム パート セクション リストのフォーム パターン
 

@@ -9,7 +9,7 @@ ms.prod: dynamics-ax-2012
 ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 ms.custom: 17931
 ms.assetid: 4d3e61d1-48aa-4e39-8112-6d211a1d0209
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: e31891d188146d98ae856f7d9a5c362132ba2507
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ebcd28d389cb5824bf3b7a3efd5dfacb79b0c700
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555291"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850575"
 ---
 # <a name="create-archive-objects-for-the-intelligent-data-management-framework"></a>Intelligent Data Management Framework のアーカイブ オブジェクトの作成
 

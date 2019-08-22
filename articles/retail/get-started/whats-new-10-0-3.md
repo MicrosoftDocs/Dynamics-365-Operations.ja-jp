@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 for Retail バージョン 10.0.3 の機能をプレビューする
+title: Dynamics 365 for Retail バージョン 10.0.3 の新機能および変更された機能
 description: このトピックでは Dynamics 365 for Retail のプレビュー中の機能について説明します。
 author: josaw1
 manager: AnnBe
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 30e1738fdd3ef495b3117745aff85153e629d310
-ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
+ms.openlocfilehash: 3f96798d24fefd37c0ae2c498f8cc7c9e40eac01
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "1632042"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863255"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-version-1003"></a>Dynamics 365 for Retail バージョン 10.0.3 の新機能および変更された機能
 

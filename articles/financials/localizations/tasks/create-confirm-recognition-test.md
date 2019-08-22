@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetImpairmentManageTestResult_JP, AssetImpairmentRecognition_JP
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 752e7d357575eaee681530403e3ee7eeea8f572b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9dbeb757794c2d3a065d35666d0f8175c72f0a65
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571037"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849014"
 ---
 # <a name="create-and-confirm-recognition-test"></a>認識テストの作成および確認
 

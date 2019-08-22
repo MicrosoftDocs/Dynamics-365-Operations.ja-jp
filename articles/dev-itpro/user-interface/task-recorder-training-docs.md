@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc5b0798397047d1adedfc19406a7875c853bea6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2ca39c372b50724cff2aa38c1012468489484d05
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571002"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851068"
 ---
 # <a name="create-documentation-or-training-by-using-task-recordings"></a>タスク記録を使用してドキュメントやトレーニングを作成
 
@@ -84,7 +84,7 @@ ms.locfileid: "1571002"
 
 [![画面 4](./media/screen4.png)](./media/screen4.png)
 
--   **参考ステップ**: これらの注釈は、コントロールまたはフォーム &lt; **タスク レコーダー** &lt; **参考ステップの追加**の任意の場所を右クリックすることで作成されます。参考ステップは、アクションが UI で記録されていない場合でも、どこに挿入しても番号付きの手順として表示されます。 フォーム レベル参考ステップまたはコントロールと関連付けられた参考ステップを追加できます。 参考ステップがフォームに関連付けられている場合にタスク ガイドを再生すると、タスク ガイドの「バブル」がポインタがない状態でフォームのどこかに表示されます。 参考ステップがコントロールに関連付けられている場合にタスク ガイドを再生すると、タスク ガイドの「バブル」がコントロールをポイントします。ヘルプ ウィンドウで、参考ステップの注釈が入力した任意のテキストとともに番号付きの手順として表示されます。 参考ステップは、次の手順のためのユーザーの準備、Microsoft Dynamics 365 for Finance and Operations の外部で行う必要があるステップの説明、他の記録の参照 (注釈にハイパーリンクを作成することはできませんが) に使用します。
+-   **参考ステップ**: これらの注釈は、コントロールまたはフォーム &lt; **タスク レコーダー** &lt; **参考ステップの追加 **の任意の場所を右クリックすることで作成されます。参考ステップは、アクションが UI で記録されていない場合でも、どこに挿入しても番号付きの手順として表示されます。 フォーム レベル参考ステップまたはコントロールと関連付けられた参考ステップを追加できます。 参考ステップがフォームに関連付けられている場合にタスク ガイドを再生すると、タスク ガイドの「バブル」がポインタがない状態でフォームのどこかに表示されます。 参考ステップがコントロールに関連付けられている場合にタスク ガイドを再生すると、タスク ガイドの「バブル」がコントロールをポイントします。ヘルプ ウィンドウで、参考ステップの注釈が入力した任意のテキストとともに番号付きの手順として表示されます。 参考ステップは、次の手順のためのユーザーの準備、Microsoft Dynamics 365 for Finance and Operations の外部で行う必要があるステップの説明、他の記録の参照 (注釈にハイパーリンクを作成することはできませんが) に使用します。
 
 **記録の長さを決定**
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 29431
 ms.assetid: 3e760372-e5ee-49d6-b715-c638294345de
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecdb2762e3903eb589f462d26e14e2f22fedd83a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6e3a563426bdb63f01b0873a778bb9f3ba9c6023
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560822"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851115"
 ---
 # <a name="section-power-bi-subpattern"></a>セクション Power BI のサブパターン
 

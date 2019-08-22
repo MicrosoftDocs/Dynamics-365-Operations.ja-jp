@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 14634
 ms.assetid: 38cb1058-ed69-4ffa-9bfd-4b65cc8d2a49
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2fc183e925356d8fcc559042d78bdb4ddc7c988
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b50a93ec4c4d0d09ea4c38f0feaa339fad0ea775
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571063"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851079"
 ---
 # <a name="task-single-form-pattern"></a>タスク シングルのフォーム パターン
 

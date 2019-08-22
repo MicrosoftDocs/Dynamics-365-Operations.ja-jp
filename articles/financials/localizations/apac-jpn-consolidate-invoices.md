@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustConsInvoice_JP, VendConsInvoice_JP
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 10314
 ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24
@@ -18,12 +18,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e59b4858395f3c0083f36214ee5198b94167a67e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a8041d91e72560e832ed6a0ee4b1507c7a02a364
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555186"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850724"
 ---
 # <a name="consolidated-invoices-for-japan"></a>日本向け月次締め請求書
 

@@ -1,71 +1,61 @@
 ---
 title: 詳細ルール構造の作成と割り当て
-description: このタスク ガイドでは、詳細ルール構造の作成と勘定構造への割り当てについて説明します。
+description: このトピックでは、詳細なルール構造を作成して勘定構造に割り当てる方法について説明します。
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountRuleStructure, DimensionCreateAccountRuleStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate, DimensionConfigureAccountStructure, DimensionConfigureAccountRule, DimensionCreateAccountRule, DimensionSelectAccountRuleStructure
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd62254c20cf5d77677d03c7d7335fb793d7f5f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cff07c13553ea140f537160da7f93820d5e3f77a
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558909"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834898"
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>詳細ルール構造の作成と割り当て
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-このタスク ガイドでは、詳細ルール構造の作成と勘定構造への割り当てについて説明します。 このガイドでは、USMF デモ会社を使用します。
-
+このトピックでは、詳細なルール構造を作成して勘定構造に割り当てる方法について説明します。 このガイドでは、USMF デモ会社を使用します。
 
 ## <a name="create-an-advanced-rule-structure"></a>詳細なルール構造の作成
-1. [総勘定元帳] > [勘定科目表] > [構造] > [詳細ルール構造] の順に移動します。
-2. [新規] をクリックすると、ドロップ ダイアログが開きます。
-3. [詳細ルール構造] フィールドにルール構造を説明する名前を入力します。
-4. [説明] フィールドに構造を説明する値を入力します。
-5. [OK] をクリックします。
-6. [区分の追加] をクリックします。
-7. 区分リストで、財務分析コードを選択します。
-    * たとえば [店舗] です。  
-8. [区分の追加] をクリックします。
-9. 一覧で、詳細ルール構造を表示するリンクをクリックします。
-10. [有効化] をクリックします。
-11. [有効化] をクリックします。
+1. **ナビゲーション ウィンドウ > モジュール > 一般会計 > 勘定科目表 > 構造 > 詳細なルール構造**の順に移動します。
+2. **新規**を選択すると、ドロップ ダイアログが開きます。
+3. **詳細なルール構造**フィールドにルール構造を説明する名前を入力します。
+4. **OK** を選択します。
+5. **区分の追加**を選択します。
+6. 区分リストで、財務分析コードを選択します。 たとえば**店舗**です。  
+7. **区分の追加**を選択します。
+8. **有効化** を選択します。
 
 ## <a name="apply-an-advanced-rule-structure-to-an-account-structure"></a>詳細ルール構造の勘定構造への適用
-1. フォームを閉じます。
-2. ページを閉じます。
-3. [総勘定元帳] > [勘定科目表] > [構造] > [勘定構造のコンフィギュレーション] に移動します。
-4. 一覧で、詳細ルールを適用する勘定構造を検索し選択します。
-5. 勘定構造の名前をクリックして開きます。
-6. [編集] をクリックします。
-    * [詳細ルール] をクリックすると、勘定構造を [ドラフト モード] に設定するよう要求されます。  
-7. [詳細ルール] をクリックします。
-8. [新規] をクリックすると、ドロップ ダイアログが開きます。
-9. [詳細ルール] フィールドに値を入力します。
-10. [名前] フィールドに値を入力します。
-11. [作成] をクリックします。
-12. [新しい基準の追加] をクリックします。
-13. [適用箇所] フィールドで、主勘定または財務分析コードを選択します。
-14. [演算子] フィールドで、「is between」や「includes」などのオプションを選択します。
-15. [値] フィールドに値を入力します。
-16. [終了日] フィールドに値を入力します。
-17. [追加] をクリックしてドロップ ダイアログを開きます。
-18. 一覧で、入力した基準と一致した場合に使用する詳細ルール構造を検索します。
-19. [追加] をクリックします。
-20. ページを閉じます。
-21. [有効化] をクリックします。
-22. [有効化] をクリックします。
+1. **ナビゲーション ウィンドウ > モジュール > 一般会計 > 勘定科目表 > 構造 > 勘定構造の構成**の順に移動します。
+2. 一覧で、詳細ルールを適用する勘定構造を検索し選択します。
+3. **編集**を選択します。 **詳細ルール**を選択すると、勘定構造を**ドラフト モード**に設定するよう要求されます。  
+4. **詳細ルール**を選択します。
+5. **新規**を選択すると、ドロップ ダイアログが開きます。
+6. **詳細ルール** フィールドに値を入力します。
+7. **名前**フィールドに値を入力します。
+8. **作成**を選択します。
+9. **新しい基準の追加**を選択します。
+10. **適用箇所**フィールドで、主勘定または財務分析コードを選択します。
+11. **演算子**フィールドで、**is between** や **includes** などのオプションを選択します。
+12. **値**フィールドに値を入力します。
+13. **終了日**フィールドに値を入力します。
+14. **追加**を選択してドロップ ダイアログを開きます。
+15. 一覧で、入力した基準と一致した場合に使用する詳細ルール構造を検索します。
+16. **追加**を選択します。
+17. ページを閉じます。
+18. **有効化** を選択します。
 

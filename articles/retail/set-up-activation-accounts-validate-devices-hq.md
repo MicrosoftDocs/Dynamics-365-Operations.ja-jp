@@ -10,7 +10,7 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPermission
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.custom: 20471
 ms.assetid: 5394e10c-539c-4e26-a097-504c6950cd56
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bef1fe05f26e808a603506e77a9da4fec2133e39
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b522e28dfefa025bbcb6290691b76919ad642920
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567896"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836518"
 ---
 # <a name="manage-retail-activation-accounts-and-validate-devices"></a>Retail 有効化アカウントの管理とデバイスの検証
 

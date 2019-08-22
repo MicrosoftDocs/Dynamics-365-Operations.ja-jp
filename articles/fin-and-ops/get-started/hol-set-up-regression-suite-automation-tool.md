@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: ab81e95c2e31adfefd4e5c4367a61baa7c251c43
-ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
+ms.openlocfilehash: e2287cb0281e920de219cb88d41cd69264911f93
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "1703832"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850867"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool の設定およびインストール チュートリアル
 このトピックは、RSAT および RSAT の使用に関連したツールをセットアップして開始するのに役立つチュートリアルです。 

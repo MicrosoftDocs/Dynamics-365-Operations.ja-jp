@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 89593
 ms.assetid: f3df4b82-84d9-401e-8d7f-cfd42772621c
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 284a1ab2b1cfb243c9a25e6b6927977eaa82a49b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3205f0e43412f6f7b11b6192ecadc87930af28dd
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544135"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833526"
 ---
 # <a name="turn-off-model-customization-and-deprecate-functionality"></a>カスタマイズをオフにして機能を廃止
 

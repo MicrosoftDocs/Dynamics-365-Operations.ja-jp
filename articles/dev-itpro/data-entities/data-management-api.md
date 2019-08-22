@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: 773e6d98cfd1f090613f5b11e5de606aefdd948d
-ms.sourcegitcommit: 0ae1a94c88dbf56e9b45e45ada980f7136ae640a
+ms.openlocfilehash: 98bbe292a662bf96301952ea41bffe7e8aa1a8ef
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1539153"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850421"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 

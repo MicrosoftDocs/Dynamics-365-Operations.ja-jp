@@ -1,5 +1,5 @@
 ---
-title: RCS および ER のアプリケーション固有のメタデータを準備する
+title: オプションの属性を使用して XML 形式でファイルをインポートする
 description: このトピックでは、XML 形式で受信する電子ドキュメントを解析するために XML 属性を指定する ER 形式のデザインについて説明します。
 author: NickSelin
 manager: AnnBe
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a6fc1e54444584895aa75ae91d39143f27e34d8
-ms.sourcegitcommit: d0fa7eb2166a30314205e7f70bbeaff6fbd5fb55
+ms.openlocfilehash: eb5d721784f45097ab466f75d43256495aac36ca
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "1726578"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849998"
 ---
-# <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>RCS および ER のアプリケーション固有のメタデータを準備する
+# <a name="import-files-in-xml-format-with-optional-attributes"></a>オプションの属性を使用して XML 形式でファイルをインポートする
 
 XML 形式で受信する電子ドキュメントを解析するための電子申告 (ER) 形式をデザインできます。 XML 要素の特定の属性は、デザインされた ER 形式でオプションとして指定することができます。 これにより、該当する XML 属性のある受信ファイルとない受信ファイルを正しく処理することができます。 その後、アプリケーションのデータを更新するのに、これらのファイルからの内容を使用できます。
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 77432
 ms.assetid: 9793bf54-cfb8-4ba1-bc8f-ba49ef37884a
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74f401f427ada267c0aeaf2802cd9a5f3371d5c0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d55edc83f72d52c738d0da5e215ccffd5cbcb3c9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569694"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851247"
 ---
 # <a name="add-templates-to-the-open-lines-in-excel-menu"></a>[Excel で明細行を開く] メニューへのテンプレートの追加
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 18081
 ms.assetid: 3c13fe1d-2078-4539-b865-e266b6f56e60
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3828997488c7e9f770dd8da6e8b906ea58600b51
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9ae4901342567479d4e4d834958b5713799e332b
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569560"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833203"
 ---
 # <a name="add-customer-preference-data-to-channel-databases"></a>顧客の基本設定データをチャネル データベースに追加
 

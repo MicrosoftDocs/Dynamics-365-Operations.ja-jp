@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2be628d312e623e8ea6d92eb5edce12334190d9e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 08a40d7e95ffb17a096f759b332e77aeaf96ffd6
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571078"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742258"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>返品品目の受取の登録 
 
@@ -108,7 +108,7 @@ ms.locfileid: "1571078"
 
 ## <a name="see-also"></a>参照
 
-[着荷の概要 (フォーム)](https://technet.microsoft.com/en-us/library/hh227654\(v=ax.60\))
+[着荷の概要 (フォーム)](https://technet.microsoft.com/library/hh227654\(v=ax.60\))
 
   
 

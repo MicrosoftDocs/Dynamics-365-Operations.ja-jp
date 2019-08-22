@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 31641
 ms.assetid: 6e25b63e-be1e-42fc-b1bd-c91585cd624d
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 13436f9705f03a34992bbfd1cbb129a54a2f0621
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 34f482a8d1fca6150ba9ae3360f082a2052ac91d
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569278"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833071"
 ---
 # <a name="extend-the-default-retail-server-metadata-controller"></a>既定の Retail Server メタデータ コントローラーの拡張
 

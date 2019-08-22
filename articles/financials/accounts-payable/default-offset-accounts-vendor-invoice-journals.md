@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 62093
 ms.assetid: 553933ca-928d-4031-bb8c-f9cff458320b
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cf772a0f0f9f99519322be1f37f961dc0ab2500
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c6ff4e209f1d1c41d7c05cad735aacc320bdeb83
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509109"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1837351"
 ---
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>仕入先請求仕訳帳および請求書承認仕訳帳の既定の相手勘定
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 20521
 ms.assetid: 74ffc94a-188f-4198-a4b0-f949ec4886cb
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ab30d1c679058188ef073b993a1c65f4eb5ad63
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e58d798e524e4e8da137ae53000208ec7aa108d5
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595468"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850085"
 ---
 # <a name="help-prevent-long-running-reports-from-timing-out"></a>実行時間の長いレポートがタイムアウトしないようにする
 

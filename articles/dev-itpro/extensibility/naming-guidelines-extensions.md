@@ -3,13 +3,13 @@ title: 拡張機能の名前付けのガイドライン
 description: このトピックでは、拡張機能の名前付けガイドラインについて説明します。 拡張によって追加されるアーティファクトは、インストール時にすべてのモデルで一意の名前が必要です。
 author: LarsBlaaberg
 manager: AnnBe
-ms.date: 03/19/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: c50e4b372d6b683d63120b7cf45f6613702d48ae
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8646a432cc4b0d8f9284828a5de01d2bf61fe8ee
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537391"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833400"
 ---
 # <a name="naming-guidelines-for-extensions"></a>拡張機能の名前付けガイドライン
 
@@ -53,6 +53,7 @@ ms.locfileid: "1537391"
 + 拡張クラスの名前を強化される型の名前で開始し、**\_Extension** という用語で名前を終了します。
 したがって、ContactPerson テーブルを拡張する拡張クラスは、**ContactPerson** という名前で始まり、**\_Extension** で終わる必要があります。 たとえば、1 つの拡張クラスに **ContactPersonWHS\_拡張**という名前が付けられます。
 + 拡張子要素があるモデルの名前、または拡張子が関連付けられている接頭語のいずれかを含めます。 たとえば、ウェアハウジング モジュールは ContactPerson テーブルを拡張する拡張クラスを使用し、他のすべての要素の名前で **WHS** 接頭語を使用します。 この場合、拡張クラスに **ContactPersonWHS\_Extension** という名前が付けられます。 モジュール内の他の要素に名前を付けるために使用される接頭語が、接中辞として挿入されることを確認します。 別の例として、拡張クラスがアプリケーション スイート モデルの ContactPerson テーブルのすべての拡張機能を含むことを意図している場合、アプリケーション スイート モデルの ContactPerson テーブル を増補する拡張クラスは、**ContactPersonApplicationSuite\_拡張子**という名前が付けられます。
++ コードで宣言できない要素のクラス拡張を作成する場合は、追加の要素タイプ情報を追加を検討します (Forms、DataSources、FormControls など)。 たとえば、**CustTableFormWHS\_Extension** は **CustTable** フォームの拡張です。
 + 拡張子名を **&lt;Element that is being extended&gt;\_Extension** としないでください。 たとえば、競合のリスクが大きすぎるため、InventLocation テーブルを補強する拡張クラスには、**InventLocation\_拡張子**という名前を付ける必要はありません。
 
 ## <a name="naming-fields-field-groups-indexes-relations-and-metadata-elements-added-in-extensions"></a>拡張で追加されるフィールド、フィールド グループ、インデックス、関係、およびメタデータ要素に名前を付ける

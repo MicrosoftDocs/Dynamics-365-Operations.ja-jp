@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.custom: 85493
 ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bb977cd3962725dd219ae8c7b6dabecd32e4b821
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 330c3319090d5ab055d6c218b871a01ba7c377ef
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564385"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833129"
 ---
 # <a name="retail-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Retail コンポーネント イベント
 
@@ -34,7 +34,7 @@ ms.locfileid: "1564385"
 <a name="viewing-events-in-event-viewer"></a>イベント ビューアーでのイベントの表示
 ------------------------------
 
-イベントがログされるコンピューターに対して物理的にアクセスできる場合、イベント ビューアーを使用して、Microsoft Windows を実行するコンピューター上にインストールされたコンポーネント用イベントを表示することができます。 イベント ビューアーの詳細については、TechNet の [イベント ビューアー](https://technet.microsoft.com/en-us/library/4229f239-16a6-4ecd-b3cf-aec03dc08cd5) を参照してください。 また、イベント ビューアーを使用して、ユーザーがアクセス権を持つコンピューターからリモートでイベントを表示することができます。 イベント ビューアーを使用して、リモートでイベントを表示する方法の詳細については、TechNet の [リモート コンピューターでイベント ログを使用](https://technet.microsoft.com/en-us/library/cc766438.aspx) を参照してください。 イベント ビューアは通常、次の使用例でのトラブルシューティングに使用されます。
+イベントがログされるコンピューターに対して物理的にアクセスできる場合、イベント ビューアーを使用して、Microsoft Windows を実行するコンピューター上にインストールされたコンポーネント用イベントを表示することができます。 イベント ビューアーの詳細については、TechNet の [イベント ビューアー](https://technet.microsoft.com/library/4229f239-16a6-4ecd-b3cf-aec03dc08cd5) を参照してください。 また、イベント ビューアーを使用して、ユーザーがアクセス権を持つコンピューターからリモートでイベントを表示することができます。 イベント ビューアーを使用して、リモートでイベントを表示する方法の詳細については、TechNet の [リモート コンピューターでイベント ログを使用](https://technet.microsoft.com/library/cc766438.aspx) を参照してください。 イベント ビューアは通常、次の使用例でのトラブルシューティングに使用されます。
 
 -   開発者トポロジまたはイベント ビューアーへのアクセスを提供するダウンロード可能な仮想ハードディスク (VHD) での開発
 -   会議室パイロットを実行していて、そのコンピューティングのイベント ビューアにアクセスできるときのクライアント コンポーネント
@@ -66,7 +66,7 @@ ms.locfileid: "1564385"
 [![デバッグ ログのショートカットメニューでログ コマンドを有効化](./media/enable-debugging-log.png)](./media/enable-debugging-log.png)
 
 ## <a name="viewing-events-by-using-the-f12-browser-developer-tools-console"></a>(F12) ブラウザー開発者ツール コンソールを使用してイベントを表示
-Retail Cloud POS はブラウザー ベースのコンポーネントなので、ブラウザー開発者ツール コンソールを使用してそのイベントを表示できます。 Microsoft ブラウザ開発者ツール コンソールの詳細については、MSDN の [コンソールを使用してエラーとデバッグを表示する](https://msdn.microsoft.com/en-us/library/dn255006(v=vs.85).aspx) を参照してください。 Retail Cloud POS のブラウザー開発者ツールを使用するには、サポートされているバージョンのブラウザを使用する必要があります。
+Retail Cloud POS はブラウザー ベースのコンポーネントなので、ブラウザー開発者ツール コンソールを使用してそのイベントを表示できます。 Microsoft ブラウザ開発者ツール コンソールの詳細については、MSDN の [コンソールを使用してエラーとデバッグを表示する](https://msdn.microsoft.com/library/dn255006(v=vs.85).aspx) を参照してください。 Retail Cloud POS のブラウザー開発者ツールを使用するには、サポートされているバージョンのブラウザを使用する必要があります。
 
 ### <a name="view-events-in-the-browser-developer-tools-console"></a>ブラウザー開発者ツール コンソールでのイベントの表示
 

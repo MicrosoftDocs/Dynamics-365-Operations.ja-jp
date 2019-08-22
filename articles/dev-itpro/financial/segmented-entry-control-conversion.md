@@ -1,7 +1,7 @@
 ---
 title: セグメント化されたエントリ コントロールの移行
 description: このチュートリアルでは、簡単なシナリオ (SMAServiceOrderTable フォームの場合) と複雑なシナリオ (LedgerJournalTransDaily フォームの場合) の 2 つのセグメント化エントリ管理の移行シナリオについて説明します。
-author: ShylaThompson
+author: robinarh
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 25611
 ms.assetid: 82e953d0-878e-4a3f-a91b-7375017a2810
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f17adf415ec407d6058e0bf16d204114540cdb6a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8938dd257aeb8b72f90ec15a435bb56ae5db876a
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555582"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833360"
 ---
 # <a name="migrate-segmented-entry-controls"></a>セグメント化されたエントリ コントロールの移行
 
@@ -61,7 +61,7 @@ ms.locfileid: "1555582"
 
 このメソッドはコントロールの **jumpRef()** メソッドのみを呼び出し追加の処理は実行しないため、削除できます。
 
-### <a name="expensecostledgerdimension-control"></a>ExpenseCost\_LedgerDimension コントロール
+### <a name="expensecost_ledgerdimension-control"></a>ExpenseCost\_LedgerDimension コントロール
 
 (**フォーム**タブの下にある検索バーで「ExpenseCost\_LedgerDimension」を検索してください。)
 
@@ -263,7 +263,7 @@ ms.locfileid: "1555582"
 
 このメソッドはコントロールの **jumpRef()** メソッドのみを呼び出し追加の処理は実行しないため、削除できます。
 
-### <a name="ledgerjournaltransaccountnum-control"></a>LedgerJournalTrans\_AccountNum コントロール
+### <a name="ledgerjournaltrans_accountnum-control"></a>LedgerJournalTrans\_AccountNum コントロール
 
 (**フォーム**タブの下にある検索バーで、「LedgerJournalTrans\_AccountNum」を検索してください。)
 
@@ -746,7 +746,7 @@ ms.locfileid: "1555582"
 
 このメソッドはコントロールの **validate()** メソッドのみを呼び出し追加の処理は実行しないため、削除できます。
 
-### <a name="ledgerjournaltransaccountnum1"></a>LedgerJournalTrans\_AccountNum1
+### <a name="ledgerjournaltrans_accountnum1"></a>LedgerJournalTrans\_AccountNum1
 
 (**フォーム**タブの下にある検索バーで、「LedgerJournalTrans\_AccountNum1」を検索してください。)
 
@@ -861,7 +861,7 @@ ms.locfileid: "1555582"
 
 このメソッドはコントロールの **validate()** メソッドのみを呼び出し追加の処理は実行しないため、削除できます。
 
-### <a name="ledgerjournaltransoffsetaccount1"></a>LedgerJournalTrans\_OffsetAccount1
+### <a name="ledgerjournaltrans_offsetaccount1"></a>LedgerJournalTrans\_OffsetAccount1
 
 (**フォーム**タブの下にある検索バーで、「LedgerJournalTrans\_OffsetAccount1」を検索してください。)
 
@@ -1058,7 +1058,7 @@ ms.locfileid: "1555582"
 
 このメソッドはコントロールの **validate()** メソッドのみを呼び出し追加の処理は実行しないため、削除できます。
 
-### <a name="custpaymjournalfeecustaccount"></a>CustPaymJournalFee\_CustAccount
+### <a name="custpaymjournalfee_custaccount"></a>CustPaymJournalFee\_CustAccount
 
 (**フォーム**タブの下にある検索バーで、「CustPaymJournalFee\_CustAccount」を検索してください。)
 
@@ -1226,7 +1226,7 @@ ms.locfileid: "1555582"
 
 このメソッドはコントロールの **validate()** メソッドのみを呼び出し追加の処理は実行しないため、削除できます。
 
-### <a name="group4accountnum"></a>Group4\_AccountNum
+### <a name="group4_accountnum"></a>Group4\_AccountNum
 
 (**フォーム**タブの下にある検索バーで「Group4\_AccountNum」を検索してください。)
 
@@ -1346,7 +1346,7 @@ ms.locfileid: "1555582"
 
 このメソッドはコントロールの **validate()** メソッドのみを呼び出し追加の処理は実行しないため、削除できます。
 
-### <a name="group4offsetaccount"></a>Group4\_OffsetAccount
+### <a name="group4_offsetaccount"></a>Group4\_OffsetAccount
 
 (**フォーム**タブの下にある検索バーで「Group4\_OffsetAccount」を検索してください。)
 

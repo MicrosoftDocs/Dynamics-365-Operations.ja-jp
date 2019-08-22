@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 63443
 ms.assetid: 7a521bd7-da3d-469a-8397-d8fb5e6d5ed1
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea59c91adc417461031549cc9c42d6c28731242e
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 93b7a4bbd2445a7f49eb44314d6b71b65418eb45
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595428"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833686"
 ---
 # <a name="f-classes-formtabcontrol-to-formwindowcontrol"></a>F クラス (FormTabControl から FormWindowControl)
 

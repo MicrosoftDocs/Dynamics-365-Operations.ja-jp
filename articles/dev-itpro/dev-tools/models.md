@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 83351
 ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b96446b19fe9559b3f04fc7451ade16140e8f679
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ba71fbe6a7f43e40bb17943c9159c938614be44
+ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544131"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833516"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 

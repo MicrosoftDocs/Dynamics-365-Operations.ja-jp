@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Lifecycle Services
 ms.custom: 197113
 ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 7ef04d0e05447055ee36daea0031146a88baf866
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d40ccb2f2fffd1cc154b1d7fd2d73f27d28804b9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537309"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850595"
 ---
 # <a name="process-and-consume-data-packages-in-finance-and-operations-solutions"></a>Finance and Operations ソリューションのデータ パッケージの処理と使用
 

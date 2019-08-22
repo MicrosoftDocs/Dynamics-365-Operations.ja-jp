@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e704c27d7cea658be6fa06cc078488b0d5a3b0dc
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548769"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848498"
 ---
 # <a name="benefits-power-bi-content"></a>給付金 Power BI コンテンツ
 
@@ -43,7 +43,7 @@ ms.locfileid: "1548769"
 | 給付金登録の概要 | 多くの場合そして最小の登録プランでは、従業員のグループ別に登録し、福利厚生計画のオプションを選択 |
 | 従業員手当           | 選択した給付金での従業員の登録                                                        |
 
-これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
+これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 次のデータを使用して、**給付金** Power BI コンテンツのレポートを入力します。 この表に、コンテンツが基づいているエンティティを示します。
