@@ -5,13 +5,15 @@
 - name: オンプレミス配置のシステム要件
   href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json
 - name: デモ データ
-  href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
   items:
+    - name: デモ データの概要
+      href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
     - name: データ パッケージを使用したデモ データの生成
       href: data-entities/generate-demo-data-packages.md
 - name: 開発およびカスタマイズ
-  href: dev-tools/developer-home-page.md
   items:
+    - name: 開発およびカスタマイズのホーム ページ
+      href: dev-tools/developer-home-page.md
     - name: アプリケーション スタックおよびサーバーのアーキテクチャ
       href: dev-tools/application-stack-server-architecture.md
     - name: ベータ評価版の入手
@@ -19,8 +21,9 @@
     - name: プレビュー サブスクリプションのサインアップ
       href: dev-tools/sign-up-preview-subscription.md
     - name: 開発環境の配置とアクセス
-      href: dev-tools/access-instances.md
       items:
+        - name: 開発環境
+          href: dev-tools/access-instances.md
         - name: 1 ボックス開発環境のコンフィギュレーション
           href: dev-tools/configure-developer-vm.md
         - name: 開発マシンでの新しいユーザーの作成
@@ -58,8 +61,9 @@
         - name: コード エディター機能
           href: dev-tools/code-editor.md
         - name: モデルとデータ モデル要素の作成
-          href: dev-tools/create-data-model-elements.md
           items:
+            - name: モデルとデータ モデル要素の作成の概要
+              href: dev-tools/create-data-model-elements.md
             - name: 拡張機能の名前付けガイドライン
               href: extensibility/NamingGuidelines.md
             - name: カスタマイズをオフにして機能を廃止
@@ -86,8 +90,6 @@
       items:
         - name: X++ およびデバッガーの機能
           href: dev-tools/new-x-debugger-features.md
-        - name: 生産データベースのコピーに対する X++ のデバッグ
-          href: dev-tools/debug-x-issue-against-copy-of-production.md
         - name: X++ コードのデバッグ
           href: dev-tools/debug-xpp.md
         - name: 要求または応答シナリオの EventHandlerResult クラス
@@ -104,7 +106,7 @@
           href: dev-ref/application-explorer-aot-properties.md
         - name: X++ 言語リファレンス
           items:
-            - name: X++ 言語リファレンス
+            - name: X++ 言語リファレンスの概要
               href: dev-ref/xpp-language-reference.md
             - name: 変数とデータ型
               items:
@@ -135,7 +137,19 @@
             - name: X++ 演算子の優先順位
               href: dev-ref/xpp-operator-precedence.md
             - name: X++ のクラスおよびメソッド
-              href: dev-ref/xpp-classes-methods.md
+              items:
+                - name: クラスおよびメソッド
+                  href: dev-ref/xpp-classes-methods.md
+                - name: 継承
+                  href: dev-ref/xpp-inheritance.md
+                - name: 静的クラス メンバー
+                  href: dev-ref/xpp-static-classes.md
+                - name: インターフェイス
+                  href: dev-ref/xpp-interfaces.md
+                - name: ライブラリ
+                  href: dev-ref/xpp-library-objects.md
+                - name: イベント
+                  href: dev-ref/xpp-events.md
             - name: X++ データの選択と操作
               href: dev-ref/xpp-data-query.md
             - name: SysDa API を使用したデータアクセス
@@ -149,13 +163,15 @@
             - name: X++ 構文
               href: dev-ref/xpp-syntax.md
     - name: API、クラス、およびテーブルの参照
-      href: dev-ref/api-reference.md
       items:
+        - name: API、クラス、およびテーブルのリソース
+          href: dev-ref/api-reference.md
         - name: X++ コンパイル時関数
           href: dev-ref/xpp-compile-time-functions.md
         - name: X++ ランタイム関数
-          href: dev-ref/xpp-run-time-functions.md
           items:
+            - name: X++ ランタイム関数のリソース
+              href: dev-ref/xpp-run-time-functions.md
             - name: X++ ビジネス ランタイム関数
               href: dev-ref/xpp-business-run-time-functions.md
             - name: X++ コンテナー ランタイム関数
@@ -408,9 +424,10 @@
           href: perf-test/continuous-build-test-automation.md
         - name: クラスおよびメソッドの属性を使用した SysTest フィルター処理
           href: perf-test/systest-filtering.md
-        - name: 承認テスト ライブラリ
-          href: perf-test/acceptance-test-library.md
+        - name: 承認テストのライブラリ
           items:
+            - name: 承認テスト ライブラリのリソース
+              href: perf-test/acceptance-test-library.md
             - name: ナビゲーション概念
               href: perf-test/concepts-navigation.md
             - name: テスト データ メソッド
@@ -438,8 +455,9 @@
     - name: オンプレミスの ISV ライセンス
       href: dev-tools/isv-licensing-on-prem.md
 - name: ユーザー インターフェイス開発
-  href: user-interface/user-interface-development-home-page.md
   items:
+    - name: ユーザー インターフェイス開発のホーム ページ
+      href: user-interface/user-interface-development-home-page.md
     - name: チュートリアル
       items:
         - name: レンタル料金のタイプ フォームの構築
@@ -633,18 +651,21 @@
         - name: ワークスペースのタイルおよびリストのキャッシュ
           href: user-interface/tile-list-caching-workspaces.md
     - name: タスク レコーダー
-      href: user-interface/task-recorder.md
       items:
+        - name: タスク レコーダーのリソース
+          href: user-interface/task-recorder.md
         - name: タスク レコーダーのクイック リファレンス
           href: user-interface/task-recorder-quick-reference.md
         - name: タスク レコーダーによるドキュメントやトレーニングの作成
           href: user-interface/task-recorder-training-docs.md
 - name: モバイル プラットフォーム
-  href: mobile-apps/platform/mobile-platform-home-page.md
   items:
+    - name: モバイル プラットフォームのリソース
+      href: mobile-apps/platform/mobile-platform-home-page.md
     - name: 使用開始
-      href: mobile-apps/platform/mobile-platform-getting-started.md
       items:
+        - name: モバイル プラットフォームを使い始める
+          href: mobile-apps/platform/mobile-platform-getting-started.md
         - name: アーキテクチャと設計の考慮事項
           href: mobile-apps/platform/mobile-platform-architecture.md
         - name: ビジネス ロジック イベント
@@ -678,8 +699,9 @@
         - name: クライアント側の設計 API
           href: mobile-apps/platform/scenarios/client-api-design-overview.md
         - name: クライアント API
-          href: mobile-apps/platform/client-apis/client-apis-reference.md
           items:
+            - name: クライアント API ホームページ
+              href: mobile-apps/platform/client-apis/client-apis-reference.md
             - name: PageState 列挙
               href: mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md
             - name: アプリケーション モジュール
@@ -843,11 +865,13 @@
             - name: ValueMetadata タイプ
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
 - name: 一般データ保護規則 (GDPR)
-  href: gdpr/gdpr-guide.md
   items:
-    - name: GDPR データ要求に対応するためのリソース
-      href: gdpr/gdpr-home-page.md
+    - name: 一般データ保護規則の概要
+      href: gdpr/gdpr-guide.md
+    - name: GDPR データ要求への応答
       items:
+        - name: GDPR データ要求への応答のリソース
+          href: gdpr/gdpr-home-page.md
         - name: 資産分類
           href: gdpr/gdpr-asset-classification-values.md
         - name: 個人検索レポート
@@ -862,9 +886,10 @@
           href: gdpr/gdpr-ax2012.md
         - name: LCS に対する GDPR データ要求
           href: gdpr/gdpr-lcs.md
-- name: 継続的な配信
-  href: dev-tools/continuous-delivery-home-page.md
+- name: 継続的デリバリー
   items:
+    - name: 継続的デリバリーのホーム ページ
+      href: dev-tools/continuous-delivery-home-page.md
     - name: 開発と継続的な配信に関するよく寄せられる質問
       href: dev-tools/continuous-delivery-faq.md
     - name: ビルド出力からのテスト パッケージの除外
@@ -873,6 +898,24 @@
       href: dev-tools/manage-runtime-packages.md
     - name: 自動ビルドのモデル バージョンの更新
       href: dev-tools/version-models-build.md
+- name: Regression Suite Automation Tool
+  items:
+    - name: Regression Suite Automation Tool の概要
+      href: perf-test/rsat/rsat-overview.md
+    - name: インストールとコンフィギュレーション
+      href: perf-test/rsat/rsat-install-configure.md
+    - name: テスト ケースの実行
+      href: perf-test/rsat/rsat-run.md
+    - name: 予測値の検証
+      href: perf-test/rsat/rsat-validate-expected.md
+    - name: テスト ケースのチェーン
+      href: perf-test/rsat/rsat-chain-test-cases.md
+    - name: 派生テスト ケース
+      href: perf-test/rsat/rsat-derived-test-cases.md
+    - name: ベスト プラクティス
+      href: perf-test/rsat/rsat-best-practices.md
+    - name: トラブルシューティング
+      href: perf-test/rsat/rsat-troubleshooting.md
 - name: Lifecycle Services を使用したリリースのソリューション
   items:
     - name: 開発とリリース
@@ -892,8 +935,9 @@
     - name: ソリューション データベースのバックアップ
       href: lcs-solutions/database-backup-lcs-solutions.md
     - name: ローカライズと規制の機能
-      href: lcs-solutions/country-region.md
       items:
+        - name: グローバリゼーション リソース
+          href: lcs-solutions/country-region.md
         - name: ローカリゼーション機能の分類
           href: lcs-solutions/classify-localization-features.md
         - name: 国/地域コンテキストの適用
@@ -907,8 +951,9 @@
         - name: 規制の警告の送信
           href: lcs-solutions/submit-localization-alerts.md
 - name: 財務開発
-  href: financial/financial-dev-home-page.md
   items:
+    - name: 財務開発のホーム ページ
+      href: financial/financial-dev-home-page.md
     - name: 財務分析コードのフレームワーク
       items:
         - name: 勘定科目の組み合せ
@@ -968,11 +1013,13 @@
     - name: デモ環境の配置
       href: deployment/deploy-demo-environment.md
     - name: クラウド配置
-      href: deployment/cloud-deployment-overview.md
       items:
+        - name: クラウド配置の概要
+          href: deployment/cloud-deployment-overview.md
         - name: セルフサービス配置
-          href: deployment/infrastructure-stack.md
           items:
+            - name: セルフサービス配置の概要
+              href: deployment/infrastructure-stack.md
             - name: 新しい環境の配置
               href: deployment/deployenvironment-newinfrastructure.md
             - name: 配置に関するよく寄せられる質問
@@ -1000,9 +1047,10 @@
         - name: Retail データ所在地
           href: deployment/retail-data-residency.md
     - name: オンプレミス配置
-      href: deployment/on-premises-deployment-landing-page.md
       items:
-        - name: オンプレミス配置のオプション
+        - name: オンプレミス配置のホーム ページ
+          href: deployment/on-premises-deployment-landing-page.md
+        - name: オンプレミス配置の概要
           href: deployment/on-premises-overview.md
         - name: オンプレミス配置の計画および準備
           href: deployment/plan-onprem-deployment.md
@@ -1011,8 +1059,9 @@
         - name: 設置プロジェクトの設定
           href: lifecycle-services/lbd-create-lcs-on-prem-project.md
         - name: オンプレミス環境の設定と配置
-          href: deployment/setup-deploy-on-premises-environments.md
           items:
+            - name: オンプレミス環境の設定と配置のホーム ページ
+              href: deployment/setup-deploy-on-premises-environments.md
             - name: オンプレミス環境の配置 (Platform update 12 以降)
               href: deployment/setup-deploy-on-premises-pu12.md
             - name: オンプレミス環境の配置 (Platform update 8 および 11)
@@ -1031,8 +1080,14 @@
           href: deployment/on-premises-diagnostics.md
         - name: オンプレミス配置の再配置
           href: deployment/redeploy-on-prem.md
-        - name: ローカル エージェントの更新
-          href: lifecycle-services/update-local-agent.md
+        - name: ローカル エージェント
+          items:
+            - name: AD FS Office 365 の互換性
+              href: deployment/onprem-adfscompatibility.md
+            - name: ローカル エージェントの配置前スクリプトと配置後スクリプト
+              href: lifecycle-services/pre-post-scripts.md
+            - name: ローカル エージェントの更新
+              href: lifecycle-services/update-local-agent.md
         - name: 環境の再コンフィギュレーション
           href: lifecycle-services/reconfigure-environment.md
         - name: クライアントのインターネット接続
@@ -1052,11 +1107,13 @@
         - name: パッケージ アプリケーションに関する問題のトラブルシューティング
           href: deployment/deployable-package-troubleshooting.md
 - name: アップグレード、更新プログラム、および修正プログラム
-  href: migration-upgrade/upgrade-home-page.md
   items:
-    - name: AX 2012 から Finance and Operations へのアップグレード
-      href: migration-upgrade/upgrade-overview-2012.md
+    - name: アップグレード、更新プログラム、および修正プログラムのリソース
+      href: migration-upgrade/upgrade-home-page.md
+    - name: AX 2012 からのアップグレード
       items:
+        - name: AX 2012 から Finance and Operations へのアップグレード
+          href: migration-upgrade/upgrade-overview-2012.md
         - name: AX 2012 アップグレード - アップグレード アナライザー ツールを使用した計画の策定
           href: migration-upgrade/upgrade-analyzer-tool.md
         - name: AX 2012 アップグレード - コードのアップグレード サービスを使用した工数見積
@@ -1095,9 +1152,10 @@
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
             - name: 予算計画のアップグレード
               href: migration-upgrade/upgrade-budget-planning.md
-    - name: AX 2009 から Finance and Operations へのデータ移行
-      href: migration-upgrade/data-migration-tool.md
+    - name: AX 2009 からのデータの移行
       items:
+        - name: AX 2009 から Finance and Operations へのデータ移行
+          href: migration-upgrade/data-migration-tool.md
         - name: AX 2009 の移行 － データ移行ツールのインストール
           href: migration-upgrade/install-dmt.md
         - name: AX 2009 の移行 － マップの生成
@@ -1111,8 +1169,9 @@
         - name: AX 2009 の移行 － パッケージのインポート
           href: migration-upgrade/ax2009-upgrade-import-package.md
     - name: コードの移行とアップグレード
-      href: migration-upgrade/code-migration-home-page.md
       items:
+        - name: コードの移行とホーム ページのアップグレード
+          href: migration-upgrade/code-migration-home-page.md
         - name: コード移行の準備
           href: migration-upgrade/prepare-migration.md
         - name: Azure DevOps マッピングの構成
@@ -1135,8 +1194,6 @@
           href: migration-upgrade/versions-update-policy.md
         - name: 最新のプラットフォーム更新プログラムの環境への適用
           href: migration-upgrade/upgrade-latest-platform-update.md
-        - name: 2016 年 8 月リリースへの Dynamics AX プラットフォームのアップグレード
-          href: migration-upgrade/update-platform-each-release.md
         - name: 開発環境またはデモ環境でのデータのアップグレード
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: 開発ツールの更新
@@ -1172,8 +1229,9 @@
         - name: 非推奨 API (2017 年 6 月)
           href: migration-upgrade/deprecated-apis.md
 - name: システム管理
-  href: sysadmin/system-administration-home-page.md
   items:
+    - name: システム管理ホーム ページ
+      href: sysadmin/system-administration-home-page.md
     - name: 法律条項およびプライバシーに関する声明へのリンクの追加
       href: sysadmin/legal-terms-privacy-statement.md
     - name: ライセンス コードとコンフィギュレーション キーのレポート
@@ -1186,13 +1244,14 @@
       href: sysadmin/pre-configured-system-accounts.md
     - name: B2B ユーザーの Azure AD へのエクスポート
       href: sysadmin/implement-b2b.md
-    - name: セッション アイドル タイムアウトの設定
-      href: sysadmin/session-idle-timeout.md
-    - name: ロールベース セキュリティ
-      href: sysadmin/role-based-security.md
+    - name: セキュリティ
       items:
+        - name: ロールベース セキュリティ
+          href: sysadmin/role-based-security.md
         - name: セキュリティ アーキテクチャ
           href: sysadmin/security-architecture.md
+        - name: セッション アイドル タイムアウトの設定
+          href: sysadmin/session-idle-timeout.md
         - name: 最初から用意されているセキュリティ レポート
           href: sysadmin/security-reports.md
         - name: 新規ユーザーの作成
@@ -1206,8 +1265,9 @@
         - name: ユーザーのセキュリティ ロールへの割り当て
           href: sysadmin/tasks/assign-users-security-roles.md
     - name: バッチ処理
-      href: sysadmin/batch-processing-overview.md
       items:
+        - name: バッチ処理の概要
+          href: sysadmin/batch-processing-overview.md
         - name: バッチ処理とバッチ サーバー
           href: sysadmin/batch-server-overview.md
         - name: バッチ ジョブの作成
@@ -1229,8 +1289,9 @@
         - name: 実行中のバッチ ジョブの中止
           href: sysadmin/batch-abort.md
     - name: 最適化アドバイザー
-      href: sysadmin/optimization-advisor-overview.md
       items:
+        - name: 最適化アドバイザーの概要
+          href: sysadmin/optimization-advisor-overview.md
         - name: 最適化アドバイザーのルールの作成
           href: sysadmin/create-rules-optimization-advisor.md
     - name: 稼働停止をレポート
@@ -1238,8 +1299,9 @@
 - name: Lifecycle Services
   items:
     - name: Lifecycle Services に関するリソース
-      href: lifecycle-services/lcs.md
       items:
+        - name: Lifecycle Services のリソース
+          href: lifecycle-services/lcs.md
         - name: 顧客向け LCS
           href: lifecycle-services/lcs-works-lcs.md
         - name: パートナー向け LCS
@@ -1257,8 +1319,9 @@
     - name: 問題検索
       href: lifecycle-services/issue-search-lcs.md
     - name: 構成マネージャー
-      href: lifecycle-services/configuration-manager-lcs.md
       items:
+        - name: 構成マネージャーの概要
+          href: lifecycle-services/configuration-manager-lcs.md
         - name: 構成マネージャーの設定
           href: lifecycle-services/set-up-configuration-manager-lcs.md
     - name: コード アップグレード サービスのコンフィギュレーション
@@ -1298,8 +1361,9 @@
     - name: クックブックの照会
       href: lifecycle-services/querycookbook.md
     - name: Microsoft Dynamics 365 Translation Service
-      href: lifecycle-services/translation-service-overview.md
       items:
+        - name: Dynamics 365 Translation Service の概要
+          href: lifecycle-services/translation-service-overview.md
         - name: ユーザー インタ フェース ファイルの翻訳
           href: lifecycle-services/use-translation-service.md
         - name: ドキュメント ファイルの翻訳

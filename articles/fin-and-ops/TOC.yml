@@ -1,20 +1,23 @@
 - name: Dynamics 365 for Finance and Operations
-  href: index.md
   items:
+    - name: Dynamics 365 for Finance and Operations ドキュメント
+      href: index.md
     - name: 使用開始
       items:
         - name: 購入する前に
-          href: get-started/before-you-buy.md
           items:
+            - name: ホーム ページを購入する前に
+              href: get-started/before-you-buy.md
             - name: プレビュー サブスクリプションのサインアップ
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
             - name: デモ環境の配置
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: クラウドとオンプレミスの機能比較
               href: get-started/cloud-prem-comparison.md
-            - name: 配置オプション
-              href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
+            - name: 配置に関する考慮事項
               items:
+                - name: 配置オプション
+                  href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
                 - name: クラウド配置
                   href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/fin-and-ops/toc.json
                 - name: クラウド配置のシステム要件
@@ -36,8 +39,9 @@
                 - name: Finance and Operations (on-premises) の購入
                   href: get-started/purchase-on-premises.md
         - name: 新機能および変更された機能
-          href: get-started/whats-new-changed.md
           items:
+            - name: ホーム ページの新機能および変更された機能
+              href: get-started/whats-new-changed.md
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
               href: get-started/mainstream-support-ax-2009-2012.md
             - name: 削除済みまたは非推奨の機能
@@ -140,6 +144,8 @@
                   href: get-started/new-task-guides-available-february-2016.md
         - name: ユーザー インターフェイスの操作
           items:
+            - name: ユーザー インターフェイスの要素
+              href: get-started/user-interface-elements.md
             - name: ユーザー補助機能
               href: get-started/accessibility-features.md
             - name: 機能管理の概要
@@ -197,8 +203,9 @@
         - name: Finance and Operations のビデオ
           href: get-started/videos.md
     - name: 実装ライフサイクル管理
-      href: imp-lifecycle/implementation-lifecycle.md
       items:
+        - name: 実装ライフサイクル管理ホーム ページ
+          href: imp-lifecycle/implementation-lifecycle.md
         - name: Finance and Operations のアーキテクチャ
           href: imp-lifecycle/architecture-overview.md
         - name: Microsoft FastTrack for Finance and Operations
@@ -224,8 +231,9 @@
         - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
           href: get-started/implement-multiple-projects-aad-tenant.md
     - name: 1 つのバージョンのサービス更新
-      href: ../dev-itpro/lifecycle-services/oneversion-overview.md
       items:
+        - name: 1 つのバージョンのサービス更新の概要
+          href: ../dev-itpro/lifecycle-services/oneversion-overview.md
         - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
           href: get-started/one-version.md
         - name: ソフトウェアのライフサイクル ポリシー - クラウド
@@ -244,19 +252,14 @@
           href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
         - name: データ タスクの自動化
           href: ../dev-itpro/data-entities/data-task-automation.md
-        - name: One Version を使用した ISV ソリューションの提供
+        - name: 1 つのバージョンを使用した ISV ソリューションの提供
           href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-        - name: テストの自動化
-          items:
-            - name: ユーザー受け入れテストの作成と自動化
-              href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: Regression Suite Automation Tool チュートリアルの設定
-              href: get-started/hol-set-up-regression-suite-automation-tool.md
-            - name: Regression Suite Automation Tool チュートリアルの使用
-              href: get-started/hol-use-regression-suite-automation-tool.md
+        - name: ユーザー受け入れテストの作成と自動化
+          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
     - name: ビジネス イベント
-      href: ../dev-itpro/business-events/home-page.md
       items:
+        - name: ビジネス イベントの概要
+          href: ../dev-itpro/business-events/home-page.md
         - name: アプリケーション ビジネス イベント
           href: ../dev-itpro/business-events/app-business-events.md
         - name: ワークフロー ビジネス イベント
@@ -273,22 +276,34 @@
           href: ../dev-itpro/business-events/potential-use-cases.md
         - name: チュートリアル
           items:
-            - name: Microsoft Flow でのビジネス イベントの消費
+            - name: ビジネス イベントおよび Microsoft Flow
               href: ../dev-itpro/business-events/how-to/how-to-flow.md
-            - name: Azure Event Grid を使用したビジネス イベントの消費
+            - name: ビジネス イベントおよび Azure Event Grid
               href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
-            - name: Azure Service Bus を使用したビジネス イベントの消費
+            - name: ビジネス イベントおよび Azure Service Bus
               href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
-            - name: ワークフローの承認ビジネス イベントの消費
+            - name: ビジネス イベントおよびワークフローの承認
               href: ../dev-itpro/business-events/how-to/how-to-workflow.md
-            - name: Microsoft Forms Pro でのビジネスイベントの使用
+            - name: ビジネス イベントおよび Microsoft Forms Pro
               href: ../dev-itpro/business-events/how-to/FormsPro.md
-    - name: 原価管理
-      href: ../supply-chain/cost-management/cost-management-home-page.md
+            - name: ビジネス イベントおよび Azure Event Hubs
+              href: ../dev-itpro/business-events/how-to/event-hub.md
+    - name: コンプライアンス
       items:
+        - name: 監査ポリシー ルール
+          href: ../financials/general-ledger/audit-policy-rules.md
+        - name: 監査ポリシー違反およびケース
+          href: ../financials/general-ledger/audit-policy-violations-cases.md
+        - name: 元伝票の監査ポリシーの定義
+          href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+    - name: 原価管理
+      items:
+        - name: 原価管理のホーム ページ
+          href: ../supply-chain/cost-management/cost-management-home-page.md
         - name: 標準原価の前提条件
-          href: ../supply-chain/cost-management/prerequisites-standard-costs.md
           items:
+            - name: 標準原価の前提条件の概要
+              href: ../supply-chain/cost-management/prerequisites-standard-costs.md
             - name: 標準原価換算の概要
               href: ../supply-chain/cost-management/standard-cost-conversion-overview.md
             - name: 標準原価換算の前提条件
@@ -308,8 +323,9 @@
             - name: 製造品目の標準原価を管理するための準備
               href: ../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md
         - name: 原価バージョン
-          href: ../supply-chain/cost-management/costing-versions.md
           items:
+            - name: 原価計算バージョンの概要
+              href: ../supply-chain/cost-management/costing-versions.md
             - name: 原価計算表
               href: ../supply-chain/cost-management/costing-sheets.md
             - name: 予定原価に対する原価バージョンを使用した原価変更のシミュレーション
@@ -397,8 +413,9 @@
             - name: データ管理パッケージ REST API
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: サービス エンドポイント
-              href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
               items:
+                - name: サービス エンドポイントの概要
+                  href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
                 - name: サービス認証のトラブルシューティング
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
             - name: OData
@@ -414,8 +431,9 @@
         - name: 統合のための開発
           items:
             - name: データ エンティティを使用したデータの統合
-              href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
               items:
+                - name: データ エンティティを使用したデータの統合の概要
+                  href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
                 - name: データ移行のエンティティの開発
                   href: ../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/fin-and-ops/toc.json
                 - name: 複合データ エンティティの開発
@@ -428,7 +446,7 @@
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
             - name: Common Data Service を使用したデータ統合
               items:
-                - name: データ統合の概要
+                - name: Common Data Service を使用したデータ統合の概要
                   href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
                 - name: 同期、双方向の統合
                   items:
@@ -448,9 +466,9 @@
                       href: ../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
                 - name: 非同期、単一方向の統合
                   items:
-                    - name: 見込顧客を現金化
+                    - name: 見込顧客から入金のシナリオのコンフィギュレーション
                       items:
-                        - name: 見込顧客から入金のシナリオのコンフィギュレーション
+                        - name: 見込顧客を現金化
                           href: ../supply-chain/sales-marketing/prospect-to-cash.md
                         - name: Finance and Operations の顧客への Sales の勘定の直接同期
                           href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
@@ -464,9 +482,9 @@
                           href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
                         - name: 売上請求書のヘッダーおよび明細行の Finance and Operations から Sales への直接同期
                           href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                    - name: Field Service
+                    - name: Field Service との統合のコンフィギュレーション
                       items:
-                        - name: Field Service との統合のコンフィギュレーション
+                        - name: Field Service との統合のコンフィギュレーションの概要
                           href: ../supply-chain/sales-marketing/field-service.md
                         - name: Finance and Operations の製品と Field Service の製品との同期
                           href: ../supply-chain/sales-marketing/field-service-product.md
@@ -484,11 +502,11 @@
                           href: ../supply-chain/sales-marketing/synchronize-project-list.md
                         - name: Finance and Operations から Field Service への倉庫の同期
                           href: ../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Field Service から Finance and Operations へのプロジェクトの作業指示書の同期
+                        - name: Field Service から Finance and Operations へのプロジェクトのワーク オーダーの同期
                           href: ../supply-chain/sales-marketing/synchronize-work-orders.md
-                    - name: Project Service Automation
+                    - name: Project Service Automation 統合のコンフィギュレーション
                       items:
-                        - name: Project Service Automation 統合のコンフィギュレーション
+                        - name: Project Service Automation の概要
                           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
                         - name: Project Service Automation 統合パラメーター
                           href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
@@ -507,16 +525,19 @@
         - name: 電子メッセージ
           href: ../financials/general-ledger/electronic-messaging.md
     - name: データ管理
-      href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
+        - name: データ管理の概要
+          href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
         - name: データ エンティティ
-          href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
           items:
+            - name: データ エンティティの概要
+              href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
             - name: コンフィギュレーション データ プロジェクト
               href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
             - name: 会社間または法人間のコンフィギュレーション データのコピー
-              href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: コンフィギュレーション データのコピーの概要
+                  href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
                 - name: コンフィギュレーション データ パッケージ
                   href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: コンフィギュレーション データ パッケージ (2017 年 7 月リリースのみ)
@@ -538,8 +559,9 @@
             - name: コンフィギュレーション データ パッケージ
               href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
         - name: データ インポート/エクスポート ジョブ
-          href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
           items:
+            - name: データ インポート/エクスポート ジョブの概要
+              href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
             - name: 一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: データ エンティティの開発
@@ -581,16 +603,19 @@
         - name: データ管理エラーの説明
           href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: 財務管理
-      href: ../financials/index.md
       items:
+        - name: 財務管理ホーム ページ
+          href: ../financials/index.md
         - name: 買掛金勘定
-          href: ../financials/accounts-payable/accounts-payable.md
           items:
+            - name: 買掛金勘定ホーム ページ
+              href: ../financials/accounts-payable/accounts-payable.md
             - name: 仕入先請求書の概要
               href: ../financials/accounts-payable/vendor-invoices-overview.md
             - name: 買掛金勘定のコンフィギュレーション
-              href: ../financials/accounts-payable/accounts-payable-overview.md
               items:
+                - name: 買掛金勘定のコンフィギュレーションの概要
+                  href: ../financials/accounts-payable/accounts-payable-overview.md
                 - name: 仕入先請求書を使用した買掛金勘定への請求書データの入力
                   href: ../financials/accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
                 - name: 承認仕訳帳を使用した買掛金勘定への請求書データの入力
@@ -604,8 +629,9 @@
             - name: スリーウェイ マッチング ポリシー
               href: ../financials/accounts-payable/three-way-matching-policies.md
             - name: 買掛金勘定の請求書照合
-              href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
               items:
+                - name: 買掛金勘定の請求書照合の概要
+                  href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
                 - name: 買掛金勘定の請求書照合検証の設定
                   href: ../financials/accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
             - name: 仕入先請求書の勘定配布と補助元帳仕訳
@@ -625,8 +651,9 @@
             - name: 仕入先のワークフロー
               href: ../financials/accounts-payable/vendor-workflow.md
             - name: 請求書の合計価格の照合における差異の解決
-              href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
               items:
+                - name: 請求書の合計価格の照合における差異の解決の概要
+                  href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
                 - name: 例外の調査または解決
                   href: ../financials/accounts-payable/tasks/research-resolve-exceptions.md
             - name: 仕入先転記プロファイル
@@ -688,8 +715,9 @@
                 - name: 仕入先トランザクション リスト ページ
                   href: ../financials/accounts-payable/vendor-transaction-list-page.md
         - name: 売掛金勘定
-          href: ../financials/accounts-receivable/accounts-receivable.md
           items:
+            - name: 売掛金勘定ホーム ページ
+              href: ../financials/accounts-receivable/accounts-receivable.md
             - name: 売掛金勘定の貸方転記および取立
               href: ../financials/accounts-receivable/collections-credit-accounts-receivable.md
             - name: 売掛金勘定、貸方転記および取立のコンフィギュレーション
@@ -783,8 +811,9 @@
                 - name: 顧客トランザクション リスト ページ
                   href: ../financials/accounts-receivable/customer-transactions-list-page.md
         - name: 予算作成
-          href: ../financials/budgeting/budgeting-overview.md
           items:
+            - name: 予算作成用のホーム ページ
+              href: ../financials/budgeting/budgeting-overview.md
             - name: 予算計画の概要
               href: ../financials/budgeting/budget-planning-overview-configuration.md
             - name: 予算管理の概要
@@ -808,8 +837,9 @@
             - name: 他のモジュールとの予算計画の統合
               href: ../financials/budgeting/budget-planning-integration-other-modules.md
         - name: 現金および銀行管理
-          href: ../financials/cash-bank-management/cash-bank-management.md
           items:
+            - name: 現金および銀行管理ホーム ページ
+              href: ../financials/cash-bank-management/cash-bank-management.md
             - name: キャッシュ フロー予測
               href: ../financials/cash-bank-management/cash-flow-forecasting.md
             - name: 銀行管理ワークスペース
@@ -885,8 +915,9 @@
                 - name: 銀行仕訳帳の複合エンティティの更新
                   href: ../financials/cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: 原価会計
-          href: ../financials/cost-accounting/cost-accounting-home-page.md
           items:
+            - name: 原価会計ホーム ページ
+              href: ../financials/cost-accounting/cost-accounting-home-page.md
             - name: 原価会計用語
               href: ../financials/cost-accounting/terms-cost-accounting.md
             - name: 会計カレンダー、会計年度、および会計年度期間
@@ -958,8 +989,9 @@
             - name: Finance and Operations モバイル アプリケーションでの原価管理ワークスペースの使用
               href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
         - name: 経費管理
-          href: ../financials/expense-management/expense-management.md
           items:
+            - name: 経費管理の概要
+              href: ../financials/expense-management/expense-management.md
             - name: 経費精算書の再設計
               href: ../financials/expense-management/ExpenseWorkspaceNew.md
             - name: 経費管理の計画
@@ -995,8 +1027,9 @@
             - name: 経費精算書での個人経費
               href: ../financials/expense-management/personal-expenses.md
         - name: 固定資産
-          href: ../financials/fixed-assets/fixed-assets.md
           items:
+            - name: 固定資産ホーム ページ
+              href: ../financials/fixed-assets/fixed-assets.md
             - name: 固定資産の作成
               href: ../financials/fixed-assets/tasks/create-fixed-asset.md
             - name: 固定資産への追加物の入力
@@ -1100,15 +1133,187 @@
                 - name: 耐用年数定額減価償却
                   href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
         - name: 一般会計
-          href: ../financials/general-ledger/general-ledger.md
           items:
+            - name: 一般会計の概要
+              href: ../financials/general-ledger/general-ledger.md
+            - name: アカウント
+              items:
+                - name: 見越計上の概要
+                  href: ../financials/general-ledger/accruals-overview.md
+                - name: 消去ルール
+                  href: ../financials/general-ledger/elimination-rules.md
+                - name: 勘定および分析コードの組み合わせ
+                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                - name: 単位間会計の残高調整済み仕訳帳
+                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
+                - name: 転記の定義
+                  href: ../financials/general-ledger/posting-definitions.md
+                - name: 転記の定義の例
+                  href: ../financials/general-ledger/example-posting-definitions.md
+                - name: 総勘定元帳残高
+                  href: ../financials/general-ledger/general-ledger-account-balances.md
+                - name: 財務分析コードの定義
+                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
+                - name: 財務分析コード用の既定テンプレートの管理
+                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: 勘定構造の作成
+                  href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: 財務分析コードおよび転記
+                  href: ../financials/general-ledger/default-dimensions.md
+                - name: 発生主義スキーマの作成
+                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
+                - name: 財務連結および通貨換算
+                  items:
+                    - name: 財務連結および通貨換算の概要
+                      href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+                    - name: オンラインで連結
+                      href: ../financials/general-ledger/consolidate-online.md
+                    - name: 連結された財務諸表の生成
+                      href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+                - name: 連結グループおよび追加の連結勘定の作成
+                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
+                - name: 主勘定タイプ
+                  href: ../financials/general-ledger/main-account-types.md
+                - name: 主勘定の作成
+                  href: ../financials/general-ledger/tasks/create-main-account.md
+                - name: 勘定科目表の計画
+                  href: ../financials/general-ledger/plan-chart-of-accounts.md
+                - name: 勘定科目間でのトランザクションの決済
+                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
+                - name: 勘定科目のエイリアスの設定
+                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
+                - name: 主勘定カテゴリの設定
+                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
+                - name: 会計ソース エクスプローラー
+                  href: ../financials/accounts-payable/accounting-source-explorer.md
+                - name: 勘定配布
+                  href: ../financials/accounts-payable/accounting-distributions.md
+                - name: 配賦の処理
+                  href: ../financials/general-ledger/process-allocations.md
+                - name: 財務分析コード
+                  href: ../financials/general-ledger/financial-dimensions.md
+                - name: 会計またはレポートの通貨換算
+                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
+                - name: 連結勘定グループおよび勘定
+                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: 連結と削除の概要
+                  href: ../financials/budgeting/consolidation-elimination-overview.md
+                - name: 会計カレンダー、会計年度、および会計年度期間
+                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+                - name: 勘定構造のコンフィギュレーション
+                  href: ../financials/general-ledger/configure-account-structures.md
+                - name: 二重通貨
+                  href: ../financials/general-ledger/dual-currency.md
+            - name: 仕訳帳と元帳
+              items:
+                - name: 一般仕訳帳の処理
+                  href: ../financials/general-ledger/general-journal-processing.md
+                - name: 定期処理仕訳帳の転記
+                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
+                - name: 元帳配賦仕訳帳の処理
+                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: 会社間勘定の設定
+                  href: ../financials/general-ledger/intercompany-accounting-setup.md
+                - name: 元帳配賦ルール
+                  href: ../financials/general-ledger/ledger-allocation-rules.md
+                - name: 仕訳帳の詳細なルールの作成
+                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
+                - name: 詳細ルール構造の作成と割り当て
+                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
+                - name: 仕訳元帳タイプ
+                  href: ../financials/general-ledger/ledger-journal-types.md
+                - name: 仕訳帳の作成および検証
+                  href: ../financials/general-ledger/tasks/create-validate-journals.md
+                - name: 仕訳入力またはトランザクションの表示
+                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
+                - name: 仕訳帳から関連する会社間伝票を表示
+                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                - name: テンプレートを使用した仕訳入力の作成
+                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
+                - name: 元帳見越計上トランザクションの作成
+                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Excel からの仕訳帳明細行およびドキュメントの発行
+                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
+                - name: 仕訳入力とトランザクションの表示
+                  href: ../financials/general-ledger/view-journal-entries-transactions.md
+                - name: 転記された仕訳帳の仕訳入力
+                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: 連結会社の通貨再評価
+                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
+                - name: 一般会計の外貨再評価
+                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: 通貨為替レートのインポート
+                  href: ../financials/general-ledger/import-currency-exchange-rates.md
+                - name: 1 つの伝票
+                  href: ../financials/general-ledger/one-voucher.md
+                - name: 元帳決済
+                  href: ../financials/general-ledger/ledger-settlements.md
+            - name: 期末決算
+              items:
+                - name: 期末に一般会計を決算
+                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
+                - name: 財務期間終了ワークスペース
+                  href: ../financials/general-ledger/financial-period-close-workspace.md
+                - name: 年度末決算
+                  href: ../financials/general-ledger/year-end-close.md
+                - name: 会計年度の決算
+                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
+                - name: 財務期間一括終了
+                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
+            - name: 消費税
+              items:
+                - name: 消費税の概要
+                  href: ../financials/general-ledger/indirect-taxes-overview.md
+                - name: 基準金額に基づく消費税率と計算方法
+                  href: ../financials/general-ledger/marginal-base-field.md
+                - name: 消費税支払と丸めルール
+                  href: ../financials/general-ledger/round-sales-tax-payments.md
+                - name: '[発生元] フィールドでの消費税計算方法'
+                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+                - name: 消費税コードの合計額と間隔計算オプション
+                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: 仕入先請求書の消費税の計算と調整
+                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: 消費税支払の作成
+                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
+                - name: ドキュメントの消費税トランザクションの作成
+                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
+                - name: 消費税の元帳転記グループの設定
+                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                - name: 消費税所轄官庁の設定
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
+                - name: 消費税コードを設定します
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
+                - name: 消費税グループと品目消費税グループの設定
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                - name: 消費税レポート コードの設定
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: 消費税精算期間の設定
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                - name: 源泉徴収税の設定
+                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
+                - name: 転記された消費税トランザクションの表示
+                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
+            - name: 監査ワークベンチ
+              items:
+                - name: 監査ポリシー ルール
+                  href: ../financials/general-ledger/audit-policy-rules.md
+                - name: 監査ポリシー違反およびケース
+                  href: ../financials/general-ledger/audit-policy-violations-cases.md
+                - name: 元伝票の監査ポリシーの定義
+                  href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: 公的機関
+          items:
+            - name: 公的機関ホーム ページ
+              href: ../financials/public-sector/public-sector-functionality.md
             - name: 公的機関の機能の計画
               href: ../financials/public-sector/plan-public-sector-functionality.md
             - name: 公的機関の支払レポートのカバーおよび署名ページの作成
               href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
             - name: 公的機関での買掛金勘定
-              href: ../financials/public-sector/accounts-payable-public-sector.md
               items:
+                - name: 公的機関での買掛金勘定の概要
+                  href: ../financials/public-sector/accounts-payable-public-sector.md
                 - name: 公的機関での発注書コード
                   href: ../financials/public-sector/purchase-order-codes-public-sector.md
                 - name: 公的機関の取引相手コードの作成および割り当て
@@ -1130,8 +1335,9 @@
                 - name: 公的機関の購買契約の分類の設定
                   href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
             - name: 公的機関での売掛金勘定
-              href: ../financials/public-sector/accounts-receivable-public-sector.md
               items:
+                - name: 公的機関での売掛金勘定の概要
+                  href: ../financials/public-sector/accounts-receivable-public-sector.md
                 - name: 公的機関での請求分類と請求コード
                   href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
                 - name: 公的機関の請求分類の作成
@@ -1145,8 +1351,9 @@
                 - name: 公的機関での払い戻し
                   href: ../financials/public-sector/reimbursements-public-sector.md
             - name: 公的部門での予算作成
-              href: ../financials/public-sector/budgeting-public-sector.md
               items:
+                - name: 公的部門での予算作成の概要
+                  href: ../financials/public-sector/budgeting-public-sector.md
                 - name: 公的機関の元の予算の作成および暫定予算エントリのリバース
                   href: ../financials/public-sector/tasks/create-original-budget.md
                 - name: 公的機関の暫定予算の作成
@@ -1172,8 +1379,9 @@
             - name: 公的機関の固定資産
               href: ../financials/public-sector/fixed-asset-public-sector.md
             - name: 公的機関の一般会計
-              href: ../financials/public-sector/general-ledger-public-sector.md
               items:
+                - name: 公的機関の一般会計の概要
+                  href: ../financials/public-sector/general-ledger-public-sector.md
                 - name: 公的機関の詳細な元帳エントリ
                   href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
                 - name: 公的機関の詳細な元帳エントリの作成
@@ -1199,8 +1407,9 @@
             - name: 公的機関の仕入先証明タイプの追加
               href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
         - name: 財務諸表
-          href: ../financials/general-ledger/financial-reporting-getting-started.md
           items:
+            - name: 財務諸表の概要
+              href: ../financials/general-ledger/financial-reporting-getting-started.md
             - name: 財務諸表の概要
               href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
             - name: 財務諸表コンポーネント
@@ -1236,13 +1445,15 @@
         - name: 電子メッセージ
           href: ../financials/general-ledger/electronic-messaging.md
     - name: グローバリゼーション
-      href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
+        - name: グローバリゼーション リソース
+          href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
         - name: 規制の更新
           href: ../financials/localizations/regulatory-updates.md
         - name: オーストラリア
-          href: ../financials/localizations/australia.md
           items:
+            - name: オーストラリアの概要
+              href: ../financials/localizations/australia.md
             - name: 事業活動報告書 (BAS)
               href: ../financials/localizations/apac-aus-business-activity-statement.md
             - name: レポート ボックスを追加し、BAS を生成する
@@ -1252,8 +1463,9 @@
             - name: BAS の理由コードの設定
               href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
         - name: オーストリア
-          href: ../financials/localizations/austria.md
           items:
+            - name: オーストリアの概要
+              href: ../financials/localizations/austria.md
             - name: 追加取得の半年減価償却 (半年)
               href: ../financials/localizations/emea-aut-half-year-depreciation.md
             - name: 梱包材費用
@@ -1261,8 +1473,9 @@
             - name: VAT 明細書
               href: ../financials/localizations/emea-aut-vat-statement-details.md
         - name: ベルギー
-          href: ../financials/localizations/belgium.md
           items:
+            - name: ベルギーの概要
+              href: ../financials/localizations/belgium.md
             - name: CODA 口座取引明細書
               href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
             - name: トランザクションの作成と BLWI への転送
@@ -1276,13 +1489,15 @@
             - name: PRODCOM の設定と管理
               href: ../financials/localizations/emea-bel-prodcom-report.md
         - name: ブラジル
-          href: ../financials/localizations/brazil.md
           items:
+            - name: ブラジルの概要
+              href: ../financials/localizations/brazil.md
             - name: ローカライズの範囲
               href: ../financials/localizations/latam-bra-scope.md
             - name: 会計帳簿
-              href: ../financials/localizations/latam-bra-fiscal-books.md
               items:
+                - name: ブラジル会計帳簿の概要
+                  href: ../financials/localizations/latam-bra-fiscal-books.md
                 - name: 会計帳簿のコンフィギュレーション
                   href: ../financials/localizations/latam-bra-configure-fiscal-books.md
                 - name: ICMS 税の会計ドキュメント
@@ -1350,8 +1565,9 @@
                 - name: プロジェクト借方票
                   href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
             - name: NF-e プロセス
-              href: ../financials/localizations/latam-bra-nf-e-process.md
               items:
+                - name: ブラジル NF-e プロセスの概要
+                  href: ../financials/localizations/latam-bra-nf-e-process.md
                 - name: NF-e 会計ドキュメントの自動送信
                   href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
                 - name: 承認済 NF-e の電子メールの生成と電子メールへの DANFE PDF ファイルおよび NF-e XML ファイルの添付
@@ -1396,9 +1612,10 @@
               href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
             - name: 顧客支払の利息および罰金の計算
               href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
-            - name: 税申告
-              href: ../financials/localizations/latam-bra-calculate-taxes.md
+            - name: 税金
               items:
+                - name: ブラジルの税金の概要
+                  href: ../financials/localizations/latam-bra-calculate-taxes.md
                 - name: 購買見積の税額計算
                   href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
                 - name: 課税評価の作成 - ICMS
@@ -1444,8 +1661,9 @@
                 - name: 仕入先支払の源泉徴収税
                   href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
         - name: 中国
-          href: ../financials/localizations/china.md
           items:
+            - name: 中国の概要
+              href: ../financials/localizations/china.md
             - name: 中国の 21Vianet で運用されている Finance and Operations
               href: ../dev-itpro/deployment/china-local-deployment.md
             - name: 部品表の比較
@@ -1485,8 +1703,9 @@
             - name: VAT 顧客請求書に関するよく寄せられる質問
               href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
         - name: チェコ共和国
-          href: ../financials/localizations/czech-republic.md
           items:
+            - name: チェコ共和国
+              href: ../financials/localizations/czech-republic.md
             - name: 現金割引の訂正票
               href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
             - name: 固定資産
@@ -1514,8 +1733,9 @@
             - name: 年度末決算
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: デンマーク
-          href: ../financials/localizations/denmark.md
           items:
+            - name: デンマークの概要
+              href: ../financials/localizations/denmark.md
             - name: 顧客アカウントへの支払伝票形式の割り当て
               href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
             - name: 公的機関顧客の顧客請求書の作成および転記
@@ -1539,18 +1759,21 @@
             - name: 支払伝票形式の設定
               href: ../financials/localizations/tasks/set-up-payment-slip-format.md
         - name: エストニア
-          href: ../financials/localizations/estonia.md
           items:
+            - name: エストニアの概要
+              href: ../financials/localizations/estonia.md
             - name: 個人情報の要求
               href: ../financials/localizations/emea-est-personal-info.md
             - name: VAT 明細書
               href: ../financials/localizations/emea-est-vat-statement-details.md
         - name: ヨーロッパ
-          href: ../financials/localizations/europe.md
           items:
+            - name: 欧州の概要
+              href: ../financials/localizations/europe.md
             - name: 前貸し保有者
-              href: ../financials/localizations/emea-advance-holders.md
               items:
+                - name: 前貸し保有者の概要
+                  href: ../financials/localizations/emea-advance-holders.md
                 - name: 前貸し保有者トランザクション
                   href: ../financials/localizations/emea-advance-holders-transactions.md
                 - name: 従業員への前払 (東ヨーロッパ)
@@ -1606,8 +1829,9 @@
                 - name: ISO20022 支払形式を使用した仕入先支払の作成とエクスポート
                   href: ../financials/localizations/tasks/create-export-vendor-payments-iso20022-payment-format.md
             - name: イントラスタット
-              href: ../financials/localizations/emea-intrastat.md
               items:
+                - name: イントラスタットの概要
+                  href: ../financials/localizations/emea-intrastat.md
                 - name: イントラスタットへのトランザクションの転送
                   href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
                 - name: EU 内トランザクションの船積住所の指定
@@ -1685,8 +1909,9 @@
             - name: 決済のトランザクションの表示
               href: ../financials/localizations/emea-transactions-settlement-form.md
         - name: フランス
-          href: ../financials/localizations/france.md
           items:
+            - name: 財務の概要
+              href: ../financials/localizations/france.md
             - name: 公的機関
               items:
                 - name: 公的機関会計
@@ -1740,13 +1965,15 @@
                 - name: キャッシュ レジスターの配置ガイドライン
                   href: ../retail/localizations/emea-fra-deployment.md
         - name: ドイツ
-          href: ../financials/localizations/germany.md
           items:
+            - name: ドイツの概要
+              href: ../financials/localizations/germany.md
             - name: 追加取得の減価償却
               href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
             - name: 監査ファイル
-              href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
               items:
+                - name: ドイツ語監査ファイルの概要
+                  href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
                 - name: 監査ファイルのコンフィギュレーションのカスタマイズ
                   href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
                 - name: 監査ファイルの生成
@@ -1762,8 +1989,9 @@
             - name: 電子税申告の設定
               href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
         - name: ハンガリー
-          href: ../financials/localizations/hungary.md
           items:
+            - name: ハンガリーの概要
+              href: ../financials/localizations/hungary.md
             - name: 為替レート計算
               href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
             - name: 固定資産の減価償却方法
@@ -1777,8 +2005,9 @@
             - name: 年度末決算
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: アイスランド
-          href: ../financials/localizations/iceland.md
           items:
+            - name: アイスランドの概要
+              href: ../financials/localizations/iceland.md
             - name: 仕入先勘定の作成および請求書申告カテゴリの関連付け
               href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
             - name: 仕入先の請求書申告の設定
@@ -1788,11 +2017,15 @@
             - name: 仕入先請求書申告の更新およびレポートの生成
               href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
         - name: インド
-          href: ../financials/localizations/india.md
           items:
+            - name: インドの概要
+              href: ../financials/localizations/india.md
+            - name: インドのローカライズのスコープ
+              href: ../financials/localizations/apac-ind-scope.md
             - name: 固定資産
-              href: ../financials/localizations/apac-ind-fixed-assets.md
               items:
+                - name: インドの固定資産の概要
+                  href: ../financials/localizations/apac-ind-fixed-assets.md
                 - name: 1 日に基づくカレンダーの固定資産帳簿への関連付け
                   href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
                 - name: シフト減価償却の計算
@@ -1816,8 +2049,9 @@
                 - name: 資本品目の固定資産への移動
                   href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
             - name: インドの販売税
-              href: ../financials/localizations/apac-ind-gst.md
               items:
+                - name: インド GST の概要
+                  href: ../financials/localizations/apac-ind-gst.md
                 - name: インド販売税参照グループ
                   href: ../financials/localizations/apac-ind-gst-reference-groups.md
                 - name: キャッシュ レジスターの販売税統合
@@ -1960,22 +2194,27 @@
                   href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
                 - name: キャッシュ レジスターの配置ガイドライン
                   href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-            - name: 税エンジンの概要
-              href: ../financials/general-ledger/tax-engine.md
+            - name: 税エンジン
               items:
-                - name: コンフィギュレーションのインポート
-                  href: ../financials/general-ledger/tax-engine-import-configuration.md
-                - name: 税エンジンの適用性
-                  href: ../financials/general-ledger/tax-engine-applicability.md
-                - name: 税エンジンの統合
-                  href: ../financials/general-ledger/tax-engine-integration.md
-                - name: 税エンジンの拡張
-                  href: ../financials/general-ledger/extend-tax-engine-configurations.md
+                - name: 税エンジンの概要
+                  href: ../financials/general-ledger/tax-engine.md
+                  items:
+                    - name: コンフィギュレーションのインポート
+                      href: ../financials/general-ledger/tax-engine-import-configuration.md
+                    - name: 税エンジンの適用性
+                      href: ../financials/general-ledger/tax-engine-applicability.md
+                    - name: 税エンジンの統合
+                      href: ../financials/general-ledger/tax-engine-integration.md
+                    - name: 税エンジンの拡張
+                      href: ../financials/general-ledger/extend-tax-engine-configurations.md
             - name: 税しきい値に関するよく寄せられる質問
               href: ../financials/localizations/apac-ind-tax-thresholds.md
+            - name: 在庫移動
+              href: ../financials/localizations/apac-ind-stock-transfer.md
         - name: イタリア
-          href: ../financials/localizations/italy.md
           items:
+            - name: イタリアの概要
+              href: ../financials/localizations/italy.md
             - name: VAT 明細書の詳細
               href: ../financials/localizations/emea-ita-vat-statements-details.md
             - name: ブラック リスト レポート
@@ -1997,8 +2236,9 @@
             - name: 源泉徴収税
               href: ../financials/localizations/emea-ita-withholding-tax.md
         - name: 日本
-          href: ../financials/localizations/japan.md
           items:
+            - name: 日本の概要
+              href: ../financials/localizations/japan.md
             - name: 固定資産の取得と政府助成金の申請
               href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
             - name: 資産除去責務がある固定資産の取得
@@ -2156,8 +2396,9 @@
             - name: 固定資産の分解一覧の使用
               href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
         - name: ラトビア
-          href: ../financials/localizations/latvia.md
           items:
+            - name: ラトビアの概要
+              href: ../financials/localizations/latvia.md
             - name: 固定資産会計
               href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
             - name: 固定資産の場所の変更の追跡
@@ -2169,8 +2410,9 @@
             - name: VAT 明細書の詳細
               href: ../financials/localizations/emea-lva-vat-statement-details.md
         - name: リトアニア
-          href: ../financials/localizations/lithuania.md
           items:
+            - name: リトアニアの概要
+              href: ../financials/localizations/lithuania.md
             - name: 固定資産修復明細書
               href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
             - name: 倉庫間の固定資産移動ドキュメントの生成
@@ -2180,8 +2422,9 @@
             - name: VAT 明細書の詳細
               href: ../financials/localizations/emea-ltu-vat-statement-details.md
         - name: マレーシア
-          href: ../financials/localizations/malaysia.md
           items:
+            - name: マレーシアの概要
+              href: ../financials/localizations/malaysia.md
             - name: プロジェクト販売の顧客の貸方の生成
               href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
             - name: プロジェクト販売の顧客の借方の生成
@@ -2203,8 +2446,9 @@
             - name: 販売税の控除条件の設定
               href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
         - name: メキシコ
-          href: ../financials/localizations/mexico.md
           items:
+            - name: メキシコの概要
+              href: ../financials/localizations/mexico.md
             - name: ローカライズの範囲
               href: ../financials/localizations/latam-mex-scope.md
             - name: インフレ申告レポートの調整
@@ -2233,7 +2477,7 @@
               href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
             - name: 電子請求書のパラメーターの設定
               href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
-            - name: メキシコの売上税コードの設定
+            - name: メキシコの消費税コードの設定
               href: ../financials/localizations/tasks/mx-00006-sales-tax-code.md
             - name: メキシコの法人の勘定科目表の設定
               href: ../financials/localizations/tasks/mx-00020-chart-accounts-legal-entity-mexico.md
@@ -2242,15 +2486,17 @@
             - name: 仕入先登録 ID
               href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
         - name: オランダ
-          href: ../financials/localizations/netherlands.md
           items:
+            - name: オランダの概要
+              href: ../financials/localizations/netherlands.md
             - name: 電子税申告 (EVAT)
               href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
             - name: Semansys XBRL 統合
               href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
         - name: ノルウェー
-          href: ../financials/localizations/norway.md
           items:
+            - name: ノルウェーの概要
+              href: ../financials/localizations/norway.md
             - name: 顧客および仕入先の支払形式
               href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
             - name: 支払 ID に基づいた顧客支払
@@ -2264,8 +2510,9 @@
             - name: キャッシュ レジスターの配置ガイドライン
               href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: ポーランド
-          href: ../financials/localizations/poland.md
           items:
+            - name: ポーランドの概要
+              href: ../financials/localizations/poland.md
             - name: 逆仕訳会計の有効化
               href: ../financials/localizations/emea-pol-red-storno.md
             - name: 単価からの行割引の計算
@@ -2293,8 +2540,9 @@
             - name: 売上高残高明細書
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
         - name: ロシア
-          href: ../financials/localizations/russia.md
           items:
+            - name: ロシアの概要
+              href: ../financials/localizations/russia.md
             - name: 一般会計
               items:
                 - name: 勘定の対応
@@ -2306,8 +2554,9 @@
                 - name: 通貨為替レートを CBRF からインポート
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
             - name: 前貸し保有者
-              href: ../financials/localizations/rus-advance-holders.md
               items:
+                - name: ロシアの前貸し保有者の概要
+                  href: ../financials/localizations/rus-advance-holders.md
                 - name: 前貸し保有者の作成
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: 前貸し保有者に関する日常業務
@@ -2318,18 +2567,26 @@
                   href: ../financials/localizations/rus-advance-adjustment-parameters.md
                 - name: 前貸し保有者レポート
                   href: ../financials/localizations/rus-local-management-reports-primary-forms.md
-            - name: 銀行
+            - name: 現金および銀行
               items:
                 - name: 銀行口座の設定
                   href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
                 - name: 支払指図の設定および処理
                   href: ../financials/localizations/rus-payment-order-settings-processing.md
+                - name: 為替調整
+                  href: ../financials/localizations/rus-exchange-adjustment.md
                 - name: 外貨での販売、購買、および、転送
                   href: ../financials/localizations/rus-currency-sale-purchase.md
+                - name: 小口現金
+                  href: ../financials/localizations/emea-petty-cash.md
             - name: VAT
               items:
                 - name: 仮受 VAT のローカルの特定の転記
                   href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
+                - name: 請求書 Facture の処理と印刷
+                  href: ../financials/localizations/rus-invoice-facture-process-print.md
+                - name: リビジョン Facture と修正 Facture
+                  href: ../financials/localizations/rus-revise-invoice-facture.md
                 - name: 税務代理店に対する付加価値税 (VAT)
                   href: ../financials/localizations/rus-tax-agent.md
                 - name: VAT 申告
@@ -2382,6 +2639,8 @@
                   href: ../financials/localizations/rus-not-valuable-assets.md
             - name: 買掛金勘定と売掛金勘定
               items:
+                - name: 訂正票の修正 (ロシア)
+                  href: ../financials/localizations/rus-credit-note-correction.md
                 - name: 支払の請求書
                   href: ../financials/localizations/rus-invoice-payment.md
                 - name: 決済に関する分析コード コントロールの設定
@@ -2416,7 +2675,7 @@
               items:
                 - name: 繰延の設定
                   href: ../financials/localizations/rus-set-up-deferrals.md
-                - name: 照会の作成または生成
+                - name: 繰延の作成または生成
                   href: ../financials/localizations/rus-create-generate-deferrals.md
                 - name: 繰延の受入
                   href: ../financials/localizations/rus-deferral-transactions.md
@@ -2429,20 +2688,23 @@
                 - name: 繰延のレポート
                   href: ../financials/localizations/rus-reporting-deferrals.md
         - name: サウジアラビア
-          href: ../financials/localizations/saudi-arabia.md
           items:
+            - name: サウジアラビアの概要
+              href: ../financials/localizations/saudi-arabia.md
             - name: 消費税
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: サウジアラビアのザカート レポート
               href: ../financials/localizations/emea-sau-zakat-reporting.md
         - name: シンガポール
-          href: ../financials/localizations/singapore.md
           items:
+            - name: シンガポールの概要
+              href: ../financials/localizations/singapore.md
             - name: GST-05 レポートを生成します
               href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
         - name: スペイン
-          href: ../financials/localizations/spain.md
           items:
+            - name: スペインの概要
+              href: ../financials/localizations/spain.md
             - name: 請求書での現金割引の適用
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: 受取手形オプション
@@ -2472,8 +2734,9 @@
             - name: 特殊エントリと期首表
               href: ../financials/localizations/emea-esp-opening-sheets-spain.md
         - name: スウェーデン
-          href: ../financials/localizations/sweden.md
           items:
+            - name: スウェーデンの概要
+              href: ../financials/localizations/sweden.md
             - name: 監査担当者向けの財務情報のエクスポート (スウェーデン)
               href: ../financials/localizations/emea-swe-sie-standard-report.md
             - name: 支払インポート形式
@@ -2481,13 +2744,15 @@
             - name: キャッシュ レジスター
               href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
         - name: スイス
-          href: ../financials/localizations/switzerland.md
           items:
+            - name: スイスの概要
+              href: ../financials/localizations/switzerland.md
             - name: ESR での顧客支払のインポート
               href: ../financials/localizations/emea-che-esr-customer-payments-import.md
         - name: タイ
-          href: ../financials/localizations/thailand.md
           items:
+            - name: タイの概要
+              href: ../financials/localizations/thailand.md
             - name: 在庫カード レポート
               href: ../financials/localizations/apac-tha-stock-card-reports.md
             - name: 税金請求書の代用/調整
@@ -2497,8 +2762,9 @@
             - name: 源泉徴収税
               href: ../financials/localizations/apac-tha-withholding-tax.md
         - name: 英国
-          href: ../financials/localizations/united-kingdom.md
           items:
+            - name: 英国の概要
+              href: ../financials/localizations/united-kingdom.md
             - name: 建築業スキーム
               href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
             - name: 決済割引の貸方票の作成
@@ -2507,7 +2773,7 @@
               href: ../financials/localizations/tasks/purchase-order-reverse-charge-vat.md
             - name: 受取人払い VAT 対象品目を含む販売注文の作成
               href: ../financials/localizations/tasks/gb-00002-sales-order.md
-            - name: 受取人払い VAT の品目売上税グループの設定
+            - name: 受取人払い VAT の品目消費税グループの設定
               href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
             - name: 受取人払い VAT 品目のグループ、ルール、およびパラメーターの設定
               href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
@@ -2516,15 +2782,17 @@
             - name: VAT に関する税のデジタル化
               href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
         - name: 米国
-          href: ../financials/localizations/united-states.md
           items:
+            - name: 米国の概要
+              href: ../financials/localizations/united-states.md
             - name: 米国の年度末の 1099 レポート
               href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
             - name: 公的機関向けのフォーム 1099
               href: ../financials/localizations/noam-usa-form-1099-public-sector.md
     - name: 人事管理
-      href: hr/hr-landing-page.md
       items:
+        - name: 人事管理の概要
+          href: hr/hr-landing-page.md
         - name: 人材戦略の作成
           items:
             - name: 目標の作成
@@ -2676,8 +2944,9 @@
             - name: 従業員のけが/病気の情報の管理
               href: hr/tasks/maintain-employee-injury-illness-information.md
         - name: 米国の給与
-          href: hr/localizations/noam-usa-payroll.md
           items:
+            - name: 米国の給与の概要
+              href: hr/localizations/noam-usa-payroll.md
             - name: 給与の設定
               items:
                 - name: 作業者の給与の設定
@@ -2743,13 +3012,15 @@
                 - name: 標準給与レポート
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
     - name: インテリジェンス
-      href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
       items:
+        - name: インテリジェンスのホーム ページ
+          href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
         - name: 情報へのアクセスとレポート
           href: ../dev-itpro/analytics/information-access-reporting.md?toc=/fin-and-ops/toc.json
         - name: Power BI コンテンツ
-          href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Power BI コンテンツのホーム ページ
+              href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
             - name: 実績対予算
               href: ../dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/fin-and-ops/toc.json
             - name: 福利厚生
@@ -2763,8 +3034,9 @@
             - name: 報酬と給付金
               href: ../dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
             - name: 原価会計分析
-              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
               items:
+                - name: 原価会計分析 Power BI コンテンツ
+                  href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
                 - name: 原価会計分析の Power BI コンテンツのセキュリティ設定
                   href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
             - name: 原価管理
@@ -2807,13 +3079,14 @@
               href: ../dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
         - name: ドキュメントのレポーティングおよび印刷
           items:
-            - name: Document Reporting Services の概要
+            - name: ドキュメント レポート サービスの概要
               href: ../dev-itpro/analytics/document-reporting-services.md?toc=/fin-and-ops/toc.json
             - name: オンプレミスの配置の SSRS のコンフィギュレーション
               href: ../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json
             - name: 印刷中
-              href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
               items:
+                - name: ドキュメントの印刷の概要
+                  href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
                 - name: ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
                   href: ../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json
                 - name: ドキュメント回覧エージェントのアップグレード
@@ -2910,10 +3183,8 @@
                       href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
             - name: Excel テンプレートを再適用して電子申告形式を変更する
               href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Finance and Operation バージョンに依存する ER コンフィギュレーションを設計する
-              items:
-                - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
-                  href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
+              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
             - name: 財務分析コードを使用するための ER ソリューションを設計する
               items:
                 - name: データ ソースとして財務分析コードを使用するためのデータ モデルを設計する
@@ -3032,6 +3303,8 @@
                       href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
                 - name: ER 形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
                   href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+                - name: ビジネス ドキュメント管理の概要
+                  href: ../dev-itpro/analytics/er-business-document-management.md?toc=/fin-and-ops/toc.json
             - name: ER フレームワーク API
               items:
                 - name: 電子申告機能の一覧の拡張
@@ -3081,16 +3354,19 @@
             - name: 自分のデータベースの持ち込み
               href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: 在庫管理
-      href: ../supply-chain/inventory/inventory-home-page.md
       items:
-        - name: 着荷の概要
-          href: ../supply-chain/inventory/arrival-overview.md
+        - name: 在庫管理の概要
+          href: ../supply-chain/inventory/inventory-home-page.md
+        - name: 着荷
           items:
+            - name: 着荷の概要
+              href: ../supply-chain/inventory/arrival-overview.md
             - name: 着荷の概要プロファイルの設定
               href: ../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md
         - name: 品質管理
-          href: ../supply-chain/inventory/enable-quality-management.md
           items:
+            - name: 品質管理の概要
+              href: ../supply-chain/inventory/enable-quality-management.md
             - name: 品質管理プロセス
               href: ../supply-chain/inventory/quality-management-processes.md
             - name: 不適合管理
@@ -3156,8 +3432,9 @@
             - name: 手持在庫モバイル ワークスペース
               href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
         - name: 出荷プロセス
-          href: ../supply-chain/inventory/outbound-process.md
           items:
+            - name: 出荷プロセスの概要
+              href: ../supply-chain/inventory/outbound-process.md
             - name: 在庫数量の引当
               href: ../supply-chain/inventory/reserve-inventory-quantities.md
             - name: 販売注文に対する同じバッチの引当
@@ -3265,13 +3542,141 @@
               href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
             - name: メンテナンス要求レポート
               href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
-    - name: マスター プラン
-      href: ../supply-chain/master-planning/master-planning-home-page.md
-      items:
-        - name: マスター プラン
-          href: ../supply-chain/master-planning/master-plans.md
+        - name: 作業指示書の設定
           items:
-            - name: マスター計画の設定
+            - name: メンテナンス作業タイプのカテゴリとメンテナンス作業タイプ、メンテナンス作業タイプのバリアント、メンテナンス作業の取引、およびメンテナンス チェックリスト
+              href: ../supply-chain/asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+            - name: 作業指示書ライフサイクルの状態
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+            - name: 作業指示書タイプ
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-types.md
+            - name: 作業指示書プロジェクトの設定
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-project-setup.md
+            - name: サービス レベルと説明
+              href: ../supply-chain/asset-management/setup-for-work-orders/service-level-and-description.md
+            - name: 実行予定
+              href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
+            - name: エラー管理
+              href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
+        - name: 作業指示書
+          items:
+            - name: 作業指示書の概要
+              href: ../supply-chain/asset-management/work-orders/introduction-to-work-orders.md
+            - name: 手動で作成された作業指示書
+              href: ../supply-chain/asset-management/work-orders/manually-created-workorders.md
+            - name: メンテナンス予測
+              href: ../supply-chain/asset-management/work-orders/maintenance-forecasts.md
+            - name: 調達
+              href: ../supply-chain/asset-management/work-orders/procurement.md
+            - name: 資産カウンターの手動更新
+              href: ../supply-chain/asset-management/work-orders/manual-update-of-asset-counters.md
+            - name: 資産カウンターの自動更新
+              href: ../supply-chain/asset-management/work-orders/automatic-update-of-asset-counters.md
+            - name: メンテナンス チェックリスト
+              href: ../supply-chain/asset-management/work-orders/maintenance-checklists.md
+            - name: メンテナンス ダウンタイム
+              href: ../supply-chain/asset-management/work-orders/maintenance-downtime.md
+            - name: 作業指示書へのエラーの追加
+              href: ../supply-chain/asset-management/work-orders/add-fault-to-work-order.md
+            - name: 作業指示書レポート
+              href: ../supply-chain/asset-management/work-orders/work-order-report.md
+            - name: 作業指示書プール
+              href: ../supply-chain/asset-management/work-orders/work-order-pools.md
+            - name: 有効な作業指示書のメンテナンス作業
+              href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
+            - name: 作業指示書と固定資産
+              href: ../supply-chain/asset-management/work-orders/work-orders-and-fixed-assets.md
+        - name: プロジェクト管理および会計への統合
+          items:
+            - name: 予測、作業指示書、およびプロジェクト
+              href: ../supply-chain/asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+        - name: 予防的/リアクティブ メンテナンス
+          items:
+            - name: 予防的メンテナンス
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+            - name: メンテナンス計画
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+            - name: メンテナンス計画のスケジュール
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+            - name: メンテナンス ラウンド
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+            - name: メンテナンス スケジュール
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+            - name: メンテナンス スケジュール コスト
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+            - name: 作業指示書の作成
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+            - name: メンテナンス ダウンタイム
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+        - name: 能力計画
+          items:
+            - name: 最大能力負荷の計算
+              href: ../supply-chain/asset-management/capacity-planning/calculate-capacity-load.md
+            - name: 品目予測の計算
+              href: ../supply-chain/asset-management/capacity-planning/calculate-item-forecast.md
+        - name: 作業指示書のスケジューリング
+          items:
+            - name: メンテナンス作業者のカレンダーとスケジューリング
+              href: ../supply-chain/asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+            - name: 優先メンテナンス作業者
+              href: ../supply-chain/asset-management/work-order-scheduling/preferred-maintenance-workers.md
+            - name: 作業指示書のスケジュール
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-orders.md
+            - name: 派遣の作業指示書
+              href: ../supply-chain/asset-management/work-order-scheduling/dispatch-work-order.md
+            - name: 特定の日時の作業指示書のスケジュール設定
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+            - name: スケジュール済み作業指示書のメンテナンス作業
+              href: ../supply-chain/asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+            - name: スケジュール済み作業指示書の最大能力負荷の計算
+              href: ../supply-chain/asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+        - name: 消費
+          items:
+            - name: 消費の登録
+              href: ../supply-chain/asset-management/consumption/register-consumption.md
+            - name: 消費レポートの作成
+              href: ../supply-chain/asset-management/consumption/create-consumption-reports.md
+        - name: 保証
+          items:
+            - name: 保証契約
+              href: ../supply-chain/asset-management/warranty/warranty-agreement.md
+            - name: 資産および資産タイプに対する保証
+              href: ../supply-chain/asset-management/warranty/warranty-on-assets-and-asset-types.md
+        - name: メンテナンス予算
+          items:
+            - name: メンテナンス予算
+              href: ../supply-chain/asset-management/maintenance-budgets/create-maintenance-budget.md
+            - name: メンテナンス予算の更新
+              href: ../supply-chain/asset-management/maintenance-budgets/update-maintenance-budget.md
+        - name: 管理とレポート
+          items:
+            - name: 原価および日付の管理
+              href: ../supply-chain/asset-management/controlling-and-reporting/cost-and-date-control.md
+            - name: 作業時間の管理
+              href: ../supply-chain/asset-management/controlling-and-reporting/work-hour-control.md
+            - name: 資産エラー原価管理
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-cost-control.md
+            - name: 資産エラー分析
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-analysis.md
+            - name: 資産 KPI
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-kpis.md
+            - name: 使用品目
+              href: ../supply-chain/asset-management/controlling-and-reporting/item-where-used.md
+            - name: メンテナンスの状態
+              href: ../supply-chain/asset-management/controlling-and-reporting/maintenance-status.md
+        - name: データ管理
+          items:
+            - name: ターゲット エンティティ
+              href: ../supply-chain/asset-management/data-management/target-entities.md
+    - name: マスター プラン
+      items:
+        - name: マスター プランのホーム ページ
+          href: ../supply-chain/master-planning/master-planning-home-page.md
+        - name: マスター プラン
+          items:
+            - name: マスター プランの概要
+              href: ../supply-chain/master-planning/master-plans.md
+            - name: マスター プランの設定
               href: ../supply-chain/master-planning/master-planning-setup.md
             - name: マスター プランの設定ウィザード
               href: ../supply-chain/master-planning/master-planning-setup-wizard.md
@@ -3304,8 +3709,9 @@
             - name: マスター プランのパフォーマンスの改善
               href: ../supply-chain/master-planning/master-planning-performance.md
             - name: マスター プランとマルチサイト機能
-              href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
               items:
+                - name: マスター プランとマルチサイト機能の概要
+                  href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
                 - name: マスター プラン - サイトの補充、倉庫は必須
                   href: ../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md
                 - name: マスター プラン - サイトの補充、倉庫は必須ではない
@@ -3327,8 +3733,9 @@
             - name: 社内サプライ チェーンの顧客との共同作業
               href: ../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md
         - name: 需要予測
-          href: ../supply-chain/master-planning/introduction-demand-forecasting.md
           items:
+            - name: 需要予測の概要
+              href: ../supply-chain/master-planning/introduction-demand-forecasting.md
             - name: 需要予測の設定
               href: ../supply-chain/master-planning/demand-forecasting-setup.md
             - name: 需要予測の履歴データのインポート
@@ -3349,12 +3756,14 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: 需要予測の手動変更
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: モバイル アプリ
-      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+    - name: Dynamics 365 for Unified Operations モバイル アプリ
       items:
-        - name: 利用可能なモバイル ワークスペース
-          href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
+        - name: Dynamics 365 for Unified Operations モバイル アプリのホーム ページ
+          href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+        - name: モバイル ワークスペース
           items:
+            - name: 利用可能なモバイル ワークスペース
+              href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
             - name: 会社のディレクトリ
               href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/fin-and-ops/toc.json
             - name: 原価管理
@@ -3367,11 +3776,11 @@
               href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/fin-and-ops/toc.json
             - name: 自分のチーム
               href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/fin-and-ops/toc.json
-            - name: プロジェクト モバイル アプリケーションの概要
+            - name: Project モバイル アプリケーションの概要
               href: ../financials/project-management/project-mobile-application-overview.md
             - name: プロジェクト時間の入力
               href: ../financials/project-management/project-time-entry-mobile-workspace.md
-            - name: プロジェクト タイム シート
+            - name: Project Timesheet
               href: ../financials/project-management/project-timesheet.md
             - name: 発注書の承認
               href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
@@ -3382,8 +3791,9 @@
         - name: モバイル ワークスペースの公開
           href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
     - name: Office 統合
-      href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Office 統合の概要
+          href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
         - name: Office 統合のチュートリアル
           href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
         - name: Excel でエンティティ データを開き、Excel アドインを使用して更新する
@@ -3401,25 +3811,29 @@
         - name: Office 統合のトラブルシューティング
           href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
     - name: 調達
-      href: ../supply-chain/procurement/procurement-sourcing-overview.md
       items:
+        - name: 調達の概要
+          href: ../supply-chain/procurement/procurement-sourcing-overview.md
         - name: 調達ワークフロー
           href: ../supply-chain/procurement/procurement-sourcing-workflows.md
         - name: 調達カタログ
-          href: ../supply-chain/procurement/procurement-catalogs.md
           items:
+            - name: 調達カタログの概要
+              href: ../supply-chain/procurement/procurement-catalogs.md
             - name: 調達カタログの作成
               href: ../supply-chain/procurement/tasks/create-procurement-catalog.md
             - name: 調達カテゴリ階層の設定
               href: ../supply-chain/procurement/tasks/set-up-procurement-category-hierarchy.md
         - name: 購買要求
-          href: ../supply-chain/procurement/purchase-requisitions-overview.md
           items:
+            - name: 購買要求の概要
+              href: ../supply-chain/procurement/purchase-requisitions-overview.md
             - name: 購買要求ワークフロー
               href: ../supply-chain/procurement/purchase-requisitions-workflow.md
         - name: 見積依頼 (RFQ)
-          href: ../supply-chain/procurement/request-quotations.md
           items:
+            - name: 見積依頼 (RFQ) の概要
+              href: ../supply-chain/procurement/request-quotations.md
             - name: 見積依頼の作成
               href: ../supply-chain/procurement/tasks/create-request-quotation.md
             - name: RFQ を使用する要求の作成
@@ -3471,8 +3885,9 @@
             - name: 仕入先リベート
               href: ../supply-chain/procurement/vendor-rebates.md
         - name: 購入ポリシー
-          href: ../supply-chain/procurement/purchase-policies.md
           items:
+            - name: 購入ポリシーの概要
+              href: ../supply-chain/procurement/purchase-policies.md
             - name: 購入ポリシーの作成
               href: ../supply-chain/procurement/tasks/create-purchasing-policies.md
             - name: 調達カテゴリ階層に対するポリシーの設定
@@ -3530,18 +3945,21 @@
             - name: プロジェクト予算の修正の送信および承認
               href: ../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md
     - name: 組織管理
-      href: organization-administration/organization-administration-home-page.md
       items:
+        - name: 組織管理ホーム ページ
+          href: organization-administration/organization-administration-home-page.md
         - name: 番号順序
-          href: organization-administration/number-sequence-overview.md
           items:
+            - name: 番号順序の概要
+              href: organization-administration/number-sequence-overview.md
             - name: 番号順序を個別に設定する
               href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
             - name: ウィザードを使用した番号順序の設定
               href: organization-administration/tasks/set-up-number-sequences-wizard.md
         - name: 組織と組織階層
-          href: organization-administration/organizations-organizational-hierarchies.md
           items:
+            - name: 組織と組織階層の概要
+              href: organization-administration/organizations-organizational-hierarchies.md
             - name: 組織階層の計画
               href: organization-administration/plan-organizational-hierarchy.md
             - name: 組織階層の作成
@@ -3551,8 +3969,9 @@
             - name: 作業単位の作成
               href: organization-administration/tasks/create-operating-unit.md
         - name: グローバル アドレス帳
-          href: organization-administration/overview-global-address-book.md
           items:
+            - name: グローバル アドレス帳の概要
+              href: organization-administration/overview-global-address-book.md
             - name: グローバル アドレス帳およびその他のアドレス帳の計画
               href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
             - name: グローバル アドレス帳の構成
@@ -3562,8 +3981,9 @@
             - name: アドレス帳の構成
               href: organization-administration/tasks/address-books.md
         - name: ワークフロー システム
-          href: organization-administration/overview-workflow-system.md
           items:
+            - name: ワークフロー システムの概要
+              href: organization-administration/overview-workflow-system.md
             - name: ワークフロー システムのアーキテクチャ
               href: organization-administration/workflow-system-architecture.md
             - name: ワークフロー要素
@@ -3571,8 +3991,9 @@
             - name: ワークフロー アクション
               href: organization-administration/workflow-actions.md
             - name: ワークフローの作成
-              href: organization-administration/create-workflow.md
               items:
+                - name: ワークフローの作成の概要
+                  href: organization-administration/create-workflow.md
                 - name: ワークフロー プロパティのコンフィギュレーション
                   href: organization-administration/configure-workflow-properties.md
                 - name: 手動タスクのコンフィギュレーション
@@ -3624,8 +4045,9 @@
             - name: ワークフローに関するよく寄せられる質問
               href: organization-administration/workflow-FAQ.md
         - name: 警告
-          href: get-started/alerts-overview.md
           items:
+            - name: 警告の概要
+              href: get-started/alerts-overview.md
             - name: 警告ルールの作成
               href: get-started/create-alerts.md
             - name: 警告のバッチ処理
@@ -3633,18 +4055,21 @@
             - name: 電子メールによるクライアント警告通知
               href: get-started/alert-email-notifications.md
         - name: 電子署名
-          href: organization-administration/electronic-signature-overview.md
           items:
+            - name: 電子署名の概要
+              href: organization-administration/electronic-signature-overview.md
             - name: 電子署名の設定
               href: organization-administration/tasks/set-up-electronic-signatures.md
         - name: ケース管理
-          href: organization-administration/cases.md
           items:
+            - name: ケース管理の概要
+              href: organization-administration/cases.md
             - name: ケース セキュリティ、プロセス、およびカテゴリの計画
               href: organization-administration/plan-case-management.md
         - name: レコード テンプレート
-          href: organization-administration/record-templates.md
           items:
+            - name: レコード テンプレートの概要
+              href: organization-administration/record-templates.md
             - name: レコード テンプレートの作成
               href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
             - name: レコード テンプレートを使用した新しいレコードの作成
@@ -3656,8 +4081,9 @@
         - name: 日時データとタイム ゾーン
           href: organization-administration/date-time-zones.md
     - name: 生産管理
-      href: ../supply-chain/production-control/production-process-overview.md
       items:
+        - name: 生産プロセスの概要
+          href: ../supply-chain/production-control/production-process-overview.md
         - name: 'ミックス モードの計画: 個別、プロセス、およびリーン調達の連結'
           href: ../supply-chain/production-control/mixed-mode-plan.md
         - name: 生産での外注作業の管理
@@ -3721,8 +4147,9 @@
             - name: 生産ジョブの運営
               items:
                 - name: 製造オーダーのライフサイクルの管理
-                  href: ../supply-chain/production-control/create-production-orders.md
                   items:
+                    - name: 製造オーダーのライフサイクルの概要
+                      href: ../supply-chain/production-control/create-production-orders.md
                     - name: 製造オーダーの作成
                       href: ../supply-chain/production-control/tasks/create-production-order.md
                     - name: 製造オーダーの見積
@@ -3782,8 +4209,9 @@
                 - name: 生産の転記
                   href: ../supply-chain/cost-management/production-posting.md
             - name: 時刻と出勤の登録
-              href: ../supply-chain/production-control/time-attendance-registrations.md
               items:
+                - name: 時刻と出勤の登録作業者の概要
+                  href: ../supply-chain/production-control/time-attendance-registrations.md
                 - name: 登録に基づく支払い
                   href: ../supply-chain/production-control/pay-based-on-registrations.md
                 - name: 時刻と出勤の休暇登録
@@ -3945,8 +4373,9 @@
                 - name: 生産の転記
                   href: ../supply-chain/cost-management/production-posting.md
     - name: 製品情報管理
-      href: ../supply-chain/pim/product-information.md
       items:
+        - name: 製品情報の概要
+          href: ../supply-chain/pim/product-information.md
         - name: 製品情報
           items:
             - name: 製品 ID
@@ -3972,8 +4401,9 @@
             - name: 1 つの会社に対するリリース済製品の作成
               href: ../supply-chain/pim/tasks/create-released-product-single-company.md
             - name: 製品ライフサイクルの状態
-              href: ../supply-chain/pim/product-lifecycle.md
               items:
+                - name: 製品ライフサイクル状態の概要
+                  href: ../supply-chain/pim/product-lifecycle.md
                 - name: 新しい製品ライフサイクル状態の作成
                   href: ../supply-chain/pim/tasks/new-product-lifecycle-state.md
                 - name: 既定の製品ライフサイクル状態の作成
@@ -4017,11 +4447,13 @@
             - name: BOM 計算
               href: ../supply-chain/cost-management/bom-calculations.md
         - name: 製品コンフィギュレーション
-          href: ../supply-chain/pim/build-product-configuration-model.md
           items:
+            - name: 製品コンフィギュレーションの概要
+              href: ../supply-chain/pim/build-product-configuration-model.md
             - name: 分析コードベースのコンフィギュレーションの作成
-              href: ../supply-chain/pim/dimension-based-product-configuration.md
               items:
+                - name: 分析コード ベース製品のコンフィギュレーションの概要
+                  href: ../supply-chain/pim/dimension-based-product-configuration.md
                 - name: 製品分析コード
                   href: ../supply-chain/pim/product-dimensions.md
                 - name: 分析コードベースの製品マスターの作成
@@ -4041,8 +4473,9 @@
                 - name: 分析コードベースのコンフィギュレーションの作成
                   href: ../supply-chain/pim/tasks/create-dimension-based-configurations.md
             - name: 制約ベースのコンフィギュレーションの作成
-              href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
               items:
+                - name: 製品コンフィギュレーション モデルの設定
+                  href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
                 - name: 製品コンフィギュレーション モデルの計算に関するよく寄せられる質問
                   href: ../supply-chain/pim/calculate-product-configuration-models.md
                 - name: コンフィギュレーション ルール
@@ -4072,8 +4505,9 @@
                 - name: 製品モデルのためのデータの転送
                   href: ../supply-chain/pim/tasks/transfer-data-product-models.md
     - name: プロジェクト管理および会計
-      href: ../financials/project-management/overview-project-management-accounting.md
       items:
+        - name: プロジェクト管理および会計の概要
+          href: ../financials/project-management/overview-project-management-accounting.md
         - name: 会社間請求書
           href: ../financials/project-management/intercompany-invoicing.md
         - name: 会社間プロジェクト請求のコンフィギュレーション
@@ -4099,23 +4533,25 @@
         - name: 在庫品目要求からの発注品目の入庫
           href: ../financials/project-management/tasks/receive-items-purchase-order-item-requirement.md
         - name: 作業分解構造
-          href: ../financials/project-management/work-breakdown-structures.md
           items:
-            - name: Microsoft Project クライアント統合
+            - name: 作業分解構造の概要
+              href: ../financials/project-management/work-breakdown-structures.md
+            - name: Microsoft Project Client 統合
               href: ../financials/project-management/project-integration.md
-        - name: プロジェクト モバイル アプリケーションの概要
+        - name: Project モバイル アプリケーションの概要
           href: ../financials/project-management/project-mobile-application-overview.md
         - name: プロジェクト時間入力モバイル ワークスペース
           href: ../financials/project-management/project-time-entry-mobile-workspace.md
-        - name: プロジェクト タイムシート モバイル アプリ
+        - name: Project Timesheet モバイル アプリ
           href: ../financials/project-management/project-timesheet.md
         - name: モバイル デバイスでのプロジェクト タイムシート
           href: ../financials/project-management/mobile-timesheets.md
-        - name: プロジェクト タイムシート モバイル アプリのカスタム フィールドの実装
+        - name: Project Timesheet モバイル アプリのカスタム フィールドの実装
           href: ../financials/project-management/custom-fields-mobile.md
     - name: 販売とマーケティング
-      href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:
+        - name: 販売とマーケティングの概要
+          href: ../supply-chain/sales-marketing/overview-sales-marketing.md
         - name: 販売注文
           items:
             - name: 注文納期日
@@ -4149,8 +4585,9 @@
             - name: 販売注文の確認
               href: ../supply-chain/sales-marketing/tasks/confirm-sales-orders.md
         - name: 販売契約書
-          href: ../supply-chain/sales-marketing/sales-agreements.md
           items:
+            - name: 販売契約書の概要
+              href: ../supply-chain/sales-marketing/sales-agreements.md
             - name: 販売契約書の入力
               href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
             - name: 販売契約書の履行
@@ -4184,13 +4621,15 @@
         - name: 新しい売買契約の作成
           href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
     - name: サービス管理
-      href: ../supply-chain/service-management/service-management-home-page.md
       items:
+        - name: サービス管理の概要
+          href: ../supply-chain/service-management/service-management-home-page.md
         - name: 顧客サービスの設定
           items:
             - name: サービス契約の設定
-              href: ../supply-chain/service-management/service-agreement-groups.md
               items:
+                - name: サービス契約の概要
+                  href: ../supply-chain/service-management/service-agreement-groups.md
                 - name: サービス契約の作成
                   href: ../supply-chain/service-management/create-service-agreements.md
                 - name: サービス期間
@@ -4203,14 +4642,16 @@
                   href: ../supply-chain/service-management/create-time-windows.md
                 - name: サービス テンプレート グループの作成
                   href: ../supply-chain/service-management/create-service-template-group.md
-            - name: サービス作業を設定します
-              href: ../supply-chain/service-management/service-tasks.md
+            - name: サービス作業の設定
               items:
+                - name: サービス作業の概要
+                  href: ../supply-chain/service-management/service-tasks.md
                 - name: サービス作業関係の作成
                   href: ../supply-chain/service-management/create-service-task-relations.md
-            - name: サービス対象を設定します
-              href: ../supply-chain/service-management/service-objects.md
+            - name: サービス対象の設定
               items:
+                - name: サービス対象の概要
+                  href: ../supply-chain/service-management/service-objects.md
                 - name: サービス対象の作成
                   href: ../supply-chain/service-management/create-service-task-relations.md
                 - name: サービス対象への在庫品目の添付
@@ -4230,22 +4671,24 @@
                 - name: サービス対象にテンプレートを関連付ける方法
                   href: ../supply-chain/service-management/attach-templates-service-objects.md
             - name: サービス注文の理由コードの定義
-              href: ../supply-chain/service-management/reason-codes-service-orders.md
               items:
+                - name: サービス注文の理由コード
+                  href: ../supply-chain/service-management/reason-codes-service-orders.md
                 - name: サービス注文ステージ
                   href: ../supply-chain/service-management/service-order-stages.md
-                - name: サービス注文ステージを設定します
+                - name: サービス注文ステージの設定
                   href: ../supply-chain/service-management/set-up-service-order-stages.md
                 - name: 理由コードの作成
                   href: ../supply-chain/service-management/create-reason-codes.md
             - name: サービス契約およびサービス定期売買の設定
-              href: ../supply-chain/service-management/service-level-agreements.md
               items:
+                - name: サービス レベル契約の概要
+                  href: ../supply-chain/service-management/service-level-agreements.md
                 - name: 定期売買販売価格
                   href: ../supply-chain/service-management/subscription-sales-prices.md
                 - name: 定期売買グループ
                   href: ../supply-chain/service-management/subscription-groups.md
-                - name: 定期売買グループを設定します
+                - name: 定期売買グループの設定
                   href: ../supply-chain/service-management/set-up-subscription-groups.md
                 - name: ステージ理由コードの使用
                   href: ../supply-chain/service-management/use-stage-reason-codes.md
@@ -4253,24 +4696,28 @@
                   href: ../supply-chain/service-management/integration-service-agreements-projects.md
             - name: 修復管理の設定
               href: ../supply-chain/service-management/repair-management.md
-            - name: 顧客からの返品を設定します。
-              href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
+            - name: 顧客からの返品の設定
               items:
-                - name: 廃棄コードを設定します
+                - name: 顧客からの返品の概要
+                  href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
+                - name: 廃棄コードの設定
                   href: ../supply-chain/service-management/set-up-disposition-codes.md
                 - name: 返品理由コードの設定
                   href: ../supply-chain/service-management/set-up-return-reason-code.md
                 - name: 返品品目の廃棄方法の指定
                   href: ../supply-chain/service-management/specify-how-to-dispose-of-returned-items.md
         - name: 顧客サービスの処理
-          href: ../supply-chain/service-management/working-with-customer-service.md
           items:
+            - name: 顧客サービスの処理の概要
+              href: ../supply-chain/service-management/working-with-customer-service.md
             - name: サービス契約の履行
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: サービス契約の履行の概要
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: 契約の作成および締結
-                  href: ../supply-chain/service-management/service-agreements.md
                   items:
+                    - name: サービス契約の作成および締結の概要
+                      href: ../supply-chain/service-management/service-agreements.md
                     - name: サービス契約の作成
                       href: ../supply-chain/service-management/create-service-agreements.md
                     - name: サービスの定期売買
@@ -4296,8 +4743,9 @@
                     - name: 定期売買販売価格の更新および指数化
                       href: ../supply-chain/service-management/update-and-index-subscription-sales-prices.md
             - name: 顧客の照会の処理
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: サービス契約の履行の概要
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: サービス注文の時刻記録の開始および停止
                   href: ../supply-chain/service-management/start-and-stop-time-recording-on-a-service-order.md
                 - name: サービス注文の開始時刻と期間の表示
@@ -4407,8 +4855,9 @@
                     - name: 定期売買トランザクションの請求
                       href: ../supply-chain/service-management/invoice-subscription-transactions.md
     - name: 輸送管理
-      href: ../supply-chain/transportation/transportation-management-overview.md
       items:
+        - name: 輸送管理の概要
+          href: ../supply-chain/transportation/transportation-management-overview.md
         - name: 輸送管理エンジン
           href: ../supply-chain/transportation/transportation-management-engines.md
         - name: 新しい輸送管理エンジンの作成
@@ -4420,8 +4869,9 @@
         - name: 貨物輸送ルートの計画
           href: ../supply-chain/transportation/plan-freight-transportation-routes-multiple-stops.md
         - name: ハブ連結を使用した積荷計画
-          href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
           items:
+            - name: ハブ連結を使用した積荷計画の概要
+              href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
             - name: 積荷計画ワークベンチを使用した積荷および出荷の計画
               href: ../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
         - name: 積荷のコンテナーの重量と容積を含める
@@ -4451,11 +4901,13 @@
         - name: 品目の配送制約の設定
           href: ../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md
     - name: 倉庫管理
-      href: ../supply-chain/warehousing/warehouse-management-overview.md
       items:
+        - name: 倉庫管理の概要
+          href: ../supply-chain/warehousing/warehouse-management-overview.md
         - name: 倉庫のコンフィギュレーション
-          href: ../supply-chain/warehousing/warehouse-configuration.md
           items:
+            - name: 倉庫のコンフィギュレーションの概要
+              href: ../supply-chain/warehousing/warehouse-configuration.md
             - name: 倉庫コンフィギュレーション テンプレートを使用した倉庫の設定
               href: ../supply-chain/inventory/warehouse-template.md
             - name: 作業テンプレートと場所ディレクティブを使用した管理作業
@@ -4485,8 +4937,9 @@
             - name: 移動オーダー用の倉庫の設定
               href: ../supply-chain/warehousing/transfer-orders-warehouse.md
         - name: 倉庫作業ポリシー
-          href: ../supply-chain/warehousing/warehouse-work-policies.md
           items:
+            - name: 倉庫作業ポリシーの概要
+              href: ../supply-chain/warehousing/warehouse-work-policies.md
             - name: 倉庫作業ポリシーの設定
               href: ../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
             - name: 倉庫管理における作業が関連付けられている在庫の移動
@@ -4546,8 +4999,9 @@
             - name: 在庫タグ棚卸
               href: ../supply-chain/inventory/inventory-tag-counting.md
         - name: 補充
-          href: ../supply-chain/warehousing/replenishment.md
           items:
+            - name: 補充の概要
+              href: ../supply-chain/warehousing/replenishment.md
             - name: 即時補充
               href: ../supply-chain/warehousing/immediate-replenishment.md
             - name: 引き取りかんばんを使用した補充
@@ -4555,8 +5009,9 @@
             - name: 最小/最大の補充プロセスの設定
               href: ../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md
         - name: 倉庫管理アプリのインストールとコンフィギュレーション
-          href: ../supply-chain/warehousing/install-configure-warehousing-app.md
           items:
+            - name: インストールとコンフィギュレーションの概要
+              href: ../supply-chain/warehousing/install-configure-warehousing-app.md
             - name: 倉庫管理アプリのフィールド名のコンフィギュレーション
               href: ../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md
             - name: 倉庫作業用のモバイル デバイスの設定
