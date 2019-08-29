@@ -1,9 +1,9 @@
 ---
-title: Microsoft Dynamics 365 for Finance and Operations ドキュメント
+title: Dynamics 365 for Finance and Operations ドキュメント
 description: Microsoft Dynamics 365 for Finance and Operations のドキュメント。
 author: robinarh
 manager: AnnBe
-ms.date: 04/11/2019
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f29d8c74c0e7a4384f8e071d0b9babe5c5f630c
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 56e49776acdcdd730aec3fb80ff68534e935ca10
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856308"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864845"
 ---
-# <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Microsoft Dynamics 365 for Finance and Operations ドキュメント
+# <a name="dynamics-365-for-finance-and-operations-documentation"></a>Dynamics 365 for Finance and Operations ドキュメント
 
 [!include [banner](includes/banner.md)]
 
@@ -115,7 +115,7 @@ ms.locfileid: "1856308"
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">開発</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">拡張性</a></p>
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office 統合</a></p>
-<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">継続的な配信</a></p>
+<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">継続的デリバリー</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">モバイル プラットフォーム</a></p>
 <p><a href="get-started/demo-data.md">デモ データ</a></p>
 

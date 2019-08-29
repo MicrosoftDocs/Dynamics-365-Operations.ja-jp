@@ -8,6 +8,14 @@
         - name: Talent の新機能および変更された機能
           href: whats-new.md
           items:
+            - name: 2019 年 8 月 22 日
+              href: whats-new-talent-august-21-2019.md
+            - name: 2019 年 8 月 13 日
+              href: whats-new-talent-august-15-2019.md
+            - name: 2019 年 8 月 6 日
+              href: whats-new-talent-august-7-2019.md
+            - name: 2019 年 7 月 30 日
+              href: whats-new-talent-july-31-2019.md
             - name: 2019 年 7 月 23 日
               href: whats-new-talent-july-24-2019.md
             - name: 2019 年 7 月 16 日
@@ -24,16 +32,16 @@
               href: whats-new-talent-june-11-2019.md
             - name: 2019 年 6 月 4 日
               href: whats-new-talent-june-4-2019.md
-            - name: 2019 年 5 月 28 日
-              href: whats-new-talent-may-28-2019.md
-            - name: 2019 年 5 月 21 日
-              href: whats-new-talent-may-21-2019.md
-            - name: 2019 年 5 月 13 日
-              href: whats-new-talent-may-13-2019.md
-            - name: 2019 年 5 月 6 日
-              href: whats-new-talent-may-6-2019.md
             - name: 新機能アーカイブ 2019
               items:
+                - name: 2019 年 5 月 28 日
+                  href: whats-new-talent-may-28-2019.md
+                - name: 2019 年 5 月 21 日
+                  href: whats-new-talent-may-21-2019.md
+                - name: 2019 年 5 月 13 日
+                  href: whats-new-talent-may-13-2019.md
+                - name: 2019 年 5 月 6 日
+                  href: whats-new-talent-may-6-2019.md
                 - name: 2019 年 4 月 30 日
                   href: whats-new-talent-april-30-2019.md
                 - name: 2019 年 4 月 25 日
@@ -204,6 +212,8 @@
               href: departments-jobs-positions.md
             - name: 職務のコンポーネントの設定
               href: create-job.md
+            - name: 合理化された従業員の入力とナビゲーション
+              href: streamlined-employee-entry.md
             - name: 部門の作成と部門階層への取り込み
               href: create-department-add-department-hierarchy.md
             - name: 法人間の HR パラメーターの設定
