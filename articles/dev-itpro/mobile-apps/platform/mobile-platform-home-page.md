@@ -1,9 +1,9 @@
 ---
-title: モバイル プラットフォームのホーム ページ
+title: モバイル プラットフォームのリソース
 description: モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。
 author: RobinARH
 manager: AnnBe
-ms.date: 05/29/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 4a28c447d9f59cf23e7ca7d31eadf97ade29b701
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: f6ea5632f52a45708f6b1c4232d844141155f7da
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1851469"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864312"
 ---
-# <a name="mobile-platform-home-page"></a>モバイル プラットフォームのホーム ページ
+# <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 
 [!include [banner](../../includes/banner.md)]
 

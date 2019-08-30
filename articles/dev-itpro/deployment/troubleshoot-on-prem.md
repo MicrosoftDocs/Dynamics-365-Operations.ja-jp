@@ -3,7 +3,7 @@ title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 79fdb1cef1104bc37461229543bfed514355158c
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 25886953afc047c2ac5f18983edafaaef13cd24b
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850373"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867041"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -162,8 +162,8 @@ Service Fabric エクスプローラーで、**アプリケーション ノー�
 次のスクリプトは、LocalAgent および LocalAgent の監視エージェントを除く、すべての Service Fabric アプリケーションを削除してプロビジョニング解除します。 オーケストレータ仮想マシン (VM) 上でこのスクリプトを実行する必要があります。
 
 ```powershell
-$applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring')
-$applicationTypeNamesToIgnore = @('MonitoringAgentAppType-Agent', 'LocalAgentType')
+$applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry')
+$applicationTypeNamesToIgnore = @('MonitoringAgentAppType-Agent', 'LocalAgentType', 'LBDTelemetryType-Agent')
 
 Get-ServiceFabricApplication | `
     Where-Object { $_.ApplicationName -notin $applicationNamesToIgnore } | `
@@ -294,7 +294,36 @@ LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 
 ## <a name="local-agent-errors"></a>ローカル エージェント エラー
 
-### <a name="issue"></a>出庫
+### <a name="issue"></a>問題点
+
+**エラー :** ローカル エージェントをインストールすると、次のエラーが表示されます。
+
+```stacktrace
+LocalAgentCLI.exe Error: 0 : Exception System.InvalidOperationException: unable to get settings for telemetry setup component
+    at LBDTelemetryCommon.LBDTelemetrySetupManager.GetComponentSettings()
+    at LBDTelemetryCommon.LBDTelemetrySetupManager.ApplyParameters()
+    at LocalAgentCLI.Program.Main(String[] args)
+Press any key to exit
+```
+
+**理由:** ローカル エージェント バージョン 2.3.0 またはそれ以降のバージョンをインストールしようとしていますが、使用している localagent-config.json ファイルが最新ではありません。
+
+**手順:** [オンプレミス環境の設定と配置](setup-deploy-on-premises-pu12.md#configureconnector) の 「コネクタ構成とオンプレミスのローカル エージェントのインストール」 セクションの手順に従って、localagent-config.json ファイルの新しいバージョンを LCS から入手します。
+
+localagent-configjson ファイルの **コンポーネント** セクションで次の値を手動で追加することもできます。
+```json
+{
+    "name": "LBDTelemetry",
+    "placementCriteria": "(IsOrchestratorEnabled == True)",
+    "parameters": {
+        "applicationPackagePath": {
+            "value": "Applications\\LBDTelemetry"
+        }
+    }
+},
+```
+
+### <a name="issue"></a>問題点
 
 **エラー:** 次のエラーが表示される場合があります:
 
@@ -466,7 +495,7 @@ AD DS でユーザーを再作成する場合、SID が変更されることに�
     uswedpl1catalog.blob.core.windows.net:443
     ```
 
-## <a name="restart-applications-such-as-aos"></a>アプリケーション (AOS など) を再起動
+## <a name="restartapplications"></a>アプリケーション (AOS など) を再起動
 
 Service Fabric で、**ノード** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **コード パッケージ** \> **コード**の順に展開します。 省略記号ボタン (**...**) を選択し、**再起動**を選択します。 求められたらコードを入力します。
 
@@ -1222,7 +1251,7 @@ Import-Module -Name AzureRM -RequiredVersion 5.7.0
 > エラー: event: SourceId='MonitoringAgentService', Property='ServiceState'.  
 > System.Management.Automation.RuntimeException: エラー: **渡された GUID は WMI データ プロバイダーにより有効と認識されませんでした。** (HRESULT からの例外: 0x80071068)。 スタック トレース:
 
-**手順:** この問題を解決するには、警告メッセージの原因であるアプリケーション パッケージを再起動します。 詳しくは、 [アプリケーション(AOS など)を再起動してください](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#restart-applications-such-as-aos) をご覧ください。
+**手順:** この問題を解決するには、警告メッセージの原因であるアプリケーション パッケージを再起動します。 詳しくは、 [アプリケーション(AOS など)を再起動してください](./troubleshoot-on-prem.md#restartapplications) をご覧ください。
 
 ## <a name="the-internal-time-zone-version-number-that-is-stored-in-the-database-is-higher-than-the-version-that-is-supported-by-the-kernel-1312"></a>データベースに格納されている内部タイム ゾーンのバージョン番号が、カーネル (13/12) でサポートされているバージョンよりも大きくなっています。
 

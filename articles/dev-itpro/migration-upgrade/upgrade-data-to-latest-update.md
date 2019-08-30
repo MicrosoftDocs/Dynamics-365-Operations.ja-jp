@@ -3,7 +3,7 @@ title: 開発環境またはデモ環境でデータをアップグレードす�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースを最新の更新プログラムにアップグレードするプロセスについて説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: a11860e7f1138fe5e20a6bf4ac8c3e966444b918
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 5b547b057a6b4fafeafea032bd9401b1317acf8b
+ms.sourcegitcommit: 109a6ef2d20758dc4a25c51b11e22dd2214a1cc4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595466"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886690"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 
@@ -42,18 +42,8 @@ ms.locfileid: "1595466"
 
 1. 現在のデータベースをバックアップします。
 2. Finance and Operations の最新の更新プログラムが既に正常に実行されている機能環境が必要です。
-3. Microsoft Dynamics AX 7.0 (2016 年 2 月) を Microsoft Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月) にアップグレードする場合、次の修正プログラムを**移行先の環境**にインストールします。
+3. **ソース**環境では、アップグレードする前のバージョンに応じて次の修正プログラムのいずれかをインストールする必要があります。 これらの修正プログラムは、SysSetupLog ロジックの問題を修正するため、アップグレード プロセスでアップグレード元のバージョンが検出されます。
 
-   - KB 3170386、「アップグレード スクリプト エラー: ReleaseUpdateDB70\_DMF。 updateIntegrationActivityExecutionMessageIdPreSync."
-   - KB 3180871、「無効になったコンフィギュレーション キーに関連するビューの同期時に、RTW から更新プログラム 1 にデータをアップグレードするとエラーが発生します。」
-    
-       この修正プログラムは、データベースの同期プロセスが失敗の原因となるバイナリ修正プログラムです。
-
-     2016 年 5 月リリースより新しいバージョンにアップグレードする場合は、これらの修正プログラムをインストールする必要は**ありません**。 すでに含まれています。
-
-4. **ソース**環境では、アップグレードする前のバージョンに応じて次の修正プログラムのいずれかをインストールする必要があります。 これらの修正プログラムは、SysSetupLog ロジックの問題を修正するため、アップグレード プロセスでアップグレード元のバージョンが検出されます。
-
-   - **2016 年 2 月リリースからアップグレードする場合 (RTW または 7.0 とも呼ばれる、ビルド 7.0.1265.3015):** KB 4023685、"最新のアプリケーションリリースにアップグレードすると、'ソース システムのバージョン情報が見つかりませんでした' というエラーが表示されます。"
    - **2016 年 11 月リリースからアップグレードする場合 (1611 または 7.1 とも呼ばれる、ビルド 7.1.1541.3036):** KB 4023686、"最新のアプリケーションリリースにアップグレードすると、'ソース システムのバージョン情報が見つかりませんでした' というエラーが表示されます。"
    - **2017 年 7 月リリース からアップグレードする場合 (7.2 とも呼ばれる、ビルド 7.2.11792.56024):** このバージョンに修正プログラムは必要ありません。
    - このステップで必要なアプリケーション修正プログラムをインストールした後は、完全なデータベース同期を実行します。 このステップは、ゴールデン データベース環境で特に重要です。 データベース全体の同期では、データベースをアップグレードするときに使用される SysSetupLog テーブルを設定します。 SysSetup インターフェイスはトリガーされないため、この手順で Microsoft Visual Studio からデータベース同期を実行しないでください。 SysSetup インターフェイスを起動するには、管理者の **コマンド プロンプト** ウィンドウで次のコマンドを実行します。
@@ -64,27 +54,19 @@ ms.locfileid: "1595466"
      Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\AosService\PackagesLocalDirectory" -metadatadir        J:\AosService\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
      ```
 
-5. 2017 年 7 月リリース (7.2 とも呼ばれる) (ビルド 7.2.11792.56024) にアップグレードする場合は、**移行先**環境にアプリケーション X++ 修正プログラムを適用してから、その環境内でデータのアップグレードを実行します。 これらの修正プログラムは、データのアップグレード中にさまざまなエラーが発生するのを防ぎます。
-
-    - KB 4036156 - Retail マイナー バージョン アップグレード - 'バリアント番号順序が設定されていません。'
-    
-        この修正プログラム パッケージには、KB 4035399 および KB 4035751 も含まれています。 このパッケージを使用するには、少なくとも Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition およびプラットフォーム更新プログラム 9 (2017 年 7 月) が必要です。 確信が持てない場合は、最新のバイナリをインストールします。
-
-    - KB 4045801 - 2016 年秋の更新プログラムから 2017 年 7 月の更新プログラムにアップグレードすると、「スケジューラ ジョブが失敗しました」のエラーが発生しました。
-
-6. Microsoft Dynamics AX 2012 からアップグレードする場合は、データ アップグレードを実行する前に、移行先の環境に次のアプリケーション X++ 修正プログラムをインストールします:
+4. Microsoft Dynamics AX 2012 からアップグレードする場合は、データ アップグレードを実行する前に、移行先の環境に次のアプリケーション X++ 修正プログラムをインストールします:
 
     - KB 4033183 - Dynamics AX 2012 R2 または Dynamics AX 2012 R3 Pre-CU8 non-retail アップグレードは、dbo.RETAILTILLLAYOUTZONE のオブジェクトが存在しないため失敗しました。
     - KB 4040692 - Microsoft Dynamics 365 for Operations 7.2 への Dynamics AX 2012 R3 のアップグレードは、SalesLineIdx に RetailSalesLine の重複インデックスが存在するため失敗しました。
     - KB 4035490 - GeneralJournalAccountEntry MainAccount フィールドのアップグレード スクリプトに関するパフォーマンスの問題。
 
-7. 標準デモ データのデータベースとして開始されるデータベースをアップグレードする場合も、次のスクリプトも実行する必要があります。 このステップは、デモ データにカーネル X++ クラスの不適切なレコードが含まれているため必要です。
+5. 標準デモ データのデータベースとして開始されるデータベースをアップグレードする場合も、次のスクリプトも実行する必要があります。 このステップは、デモ データにカーネル X++ クラスの不適切なレコードが含まれているため必要です。
 
     ```
     delete from classidtable where id >= 0xf000 and id <= 0xffff
     ```
 
-8. Commerce Data Exchange (CDX) のすべてのジョブが正常に実行され、チャネル データベースのクラウド バージョンで同期されていないトランザクション データがないことを確認してください。
+6. Commerce Data Exchange (CDX) のすべてのジョブが正常に実行され、チャネル データベースのクラウド バージョンで同期されていないトランザクション データがないことを確認してください。
 
 ## <a name="select-the-correct-data-upgrade-deployable-package"></a>適切なデータ アップグレード展開可能なパッケージを選択
 
@@ -98,20 +80,6 @@ ms.locfileid: "1595466"
     - Finance and Operations の以前のリリースを最新の 10.0.X リリースにアップグレードする場合、パッケージ名は **DataUpgrade-10-0** です。 
     - 以前のリリースからプレビュー リリースにアップグレードする場合は、パッケージ名に PREVIEW が含まれます。 たとえば、**DataUpgrade-10-0-2-PREVIEW** です。
 5. アップグレードする先のリリースに対応するパッケージを選択します。 
-
-
-### <a name="fix-the-duplicate-key-issue-february-2016-release-only"></a>重複する重要な問題 (2016 年 2 月リリースのみ) を修正します。
-
-このステップは、2016 年 2 月のリリース (RTW または 7.0 とも呼ばれる) からデータベースをアップグレードする場合に必要です。
-
-1. テキスト エディターで、**C:\\Temp\\DataUpgrade\\AOSService\\Scripts\\AutoDataUpgradePreReqs.ps1** ファイルを開きます。
-2. コメントにするか、次の行を削除します。
-
-    ```
-    Invoke-SQL -sqlCommand:$adjustsqlseq
-    ```
-
-3. ファイル保存します。
 
 ## <a name="upgrade-the-database"></a>データベースのアップグレード
 
@@ -357,7 +325,7 @@ UserInfom などのカーネル テーブルでデータベース ログを有�
 
 この問題を解決するのには、失敗した runbook ステップを再実行します。 次に、継続することができます。
 
-### <a name="pre-sync-or-post-sync-errors-on-releaseupdatedb71ledgerperiodclose"></a>ReleaseUpdateDB71\_LedgerPeriodClose で事前同期または事後同期エラー
+### <a name="pre-sync-or-post-sync-errors-on-releaseupdatedb71_ledgerperiodclose"></a>ReleaseUpdateDB71\_LedgerPeriodClose で事前同期または事後同期エラー
 
 **ReleaseUpdateDB71\_LedgerPeriodClose** クラスの **preSyncLedgerPeriodCloseTemplateTask**、**updateMenuItemTypeForCurrencyReval**、または**updateLedgerPeriodCloseTemplateTask** メソッドでは、次のエラー メッセージの 1 つを受け取る可能性があります。
 

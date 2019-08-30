@@ -3,7 +3,7 @@ title: 最初から用意されているセキュリティ レポート
 description: Dynamics 365 for Finance and Operations では、環境内で実行されている一連のセキュリティ ロールと、各ロールに割り当てられている一連のユーザーを理解するのに役立つ豊富なセキュリティ レポートが用意されています。
 author: maertenm
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,18 +16,20 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 55abffcc0f9f40289fca156ed53021da50c3a91b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0114cbf7e85e6b1366c73458ba2f24633ddac021
+ms.sourcegitcommit: 0a6dc4ab65f6313858ae173164ebb369d8a0ebd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547245"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874941"
 ---
 # <a name="out-of-box-security-reports"></a>最初から用意されているセキュリティ レポート
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 for Finance and Operations では、環境内で実行されている一連のセキュリティ ロールと、各ロールに割り当てられている一連のユーザーを理解するのに役立つ豊富なセキュリティ レポートが用意されています。 これらのレポートはそれぞれ、下位の **System administration \> Inquiries \> Security.** にあります。 各レポートの説明は下で用意されています。
+Dynamics 365 for Finance and Operations では、環境内で実行されている一連のセキュリティ ロールと、各ロールに割り当てられている一連のユーザーを理解するのに役立つ豊富なセキュリティ レポートが用意されています。 このトピックで説明するレポートに加えて、開発者は、すべてのロールの **Visual Studio  > Dynamics 365 > アドイン > 表示 関連のオブジェクトおよびライセンス** を使用して、すべてのロールで使用できるすべてのユーザー セキュリティ特権がすべての含まれたブックを生成できます。
+
+これらのセキュリティ レポートはそれぞれ、 **システム管理 \> 照会 \> セキュリティ** で見つかる場合があります。 各レポートの説明は下で用意されています。
 
 <a name="user-role-assignments"></a>ユーザー ロールの割り当て
 ----------------------------

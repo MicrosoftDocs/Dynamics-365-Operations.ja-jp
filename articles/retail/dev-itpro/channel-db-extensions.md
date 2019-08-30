@@ -3,7 +3,7 @@ title: チャネル データベース 拡張機能
 description: このトピックでは、チャネル データベースを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2019
+ms.date: 08/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 6b1a22d3e808d56070fe478800542b8e33ee9596
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: e0a3aa4ec83804b711d495b3556c8c43b4226508
+ms.sourcegitcommit: 6545bef4584d72dd7789f2d3935cf00ac8f489b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833195"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871043"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -31,7 +31,7 @@ ms.locfileid: "1833195"
 
 このトピックでは、さまざまなシナリオのチャネル データベースを拡張する方法について説明します。 以下の手順は、Dynamics 365 for Retail、Dynamics 365 for Finance and Operations にのみ適用します。
 
-拡張機能のさまざまなシナリオを説明する前に、チャネル DB 拡張機能の最新の機能拡張を理解することが重要です。 
+拡張機能のさまざまなシナリオを説明する前に、チャネル DB 拡張機能の最新の機能拡張を理解することが重要です。
 
 アップグレード時の拡張機能の処理の方法にいくつかの改善を加えました。 以下の環境構成のいずれかを使用することをお勧めします。
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) およびアプリケーション更新プログラム 5
@@ -44,7 +44,7 @@ ms.locfileid: "1833195"
 Dynamics 365 for Retail および Dynamics 365 Finance and Operations では、**ext スキーマ**と呼ばれる新しいスキーマを導入して拡張機能をサポートしました。 以前のバージョンでは、チャネル DB に拡張機能を追加する場合、CRT または AX スキーマに追加していました。 小売および Finance and Operations の両方のスキーマを変更CRT、AX、または DBO スキーマを変更することはできません。 すべての変更は **ext スキーマ**で行う必要があります。 CRT または AX スキーマの何かを変更すると、Lifecycle Services (LCS) での展開に失敗します。 CRT、AX、および DBO スキーマを変更する権限がありませんというエラーが報告されます。
 
 > [!NOTE]
-> いずれかのチャネル DB フィールドの長さを伸ばす場合は、LCS で拡張機能の要求を作成し、EDT の伸長または小数点以下の精度を高める必要があります。 Dynamics 365 Finance and Operations は、変更をチャネル DB に自動的にプッシュしません。また、拡張子には、チャネル DB - CRT、AXまたは DBO スキーマでなにかを変更または修正するための許可が付与されません。 CRT または AX スキーマの何かを変更すると、LCS での展開が失敗します。 
+> いずれかのチャネル DB フィールドの長さを伸ばす場合は、LCS で拡張機能の要求を作成し、EDT の伸長または小数点以下の精度を高める必要があります。 Dynamics 365 Finance and Operations は、変更をチャネル DB に自動的にプッシュしません。また、拡張子には、チャネル DB - CRT、AXまたは DBO スキーマでなにかを変更または修正するための許可が付与されません。 CRT または AX スキーマの何かを変更すると、LCS での展開が失敗します。
 
 ## <a name="best-practices-for-channel-db-extensions"></a>チャネル DB 拡張機能のためのベスト プラクティス
 
@@ -61,7 +61,7 @@ tp.PARENTRECID, tp.PROPERTYVALUE as [EMAILOPTIN], ct.ACCOUNTNUM, ct.DATAAREAID
 FROM @TVP_EXTENSIONPROPERTIESTABLETYPE tp
 JOIN [ax].CUSTTABLE ct on ct.RECID = tp.PARENTRECID  --DONT access ax schema object
 WHERE tp.PARENTRECID <> 0 and tp.PROPERTYNAME = 'EMAILOPTIN') AS SOURCE
-ON [ax].RETAILCUSTPREFERENCE.RECID = SOURCE.PARENTRECID   
+ON [ax].RETAILCUSTPREFERENCE.RECID = SOURCE.PARENTRECID
 and [ax].RETAILCUSTPREFERENCE.DATAAREAID = SOURCE.DATAAREAID --DONT access ax schema object
 and [ax].RETAILCUSTPREFERENCE.ACCOUNTNUM = SOURCE.ACCOUNTNUM
 WHEN MATCHED THEN
@@ -138,7 +138,7 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 新しい顧客属性フレームワークでは、構成を使用して、POS または HQ 内の顧客追加/編集画面または顧客詳細画面に新しいフィールドを追加することができます。 小売パラメーターで顧客属性グループを構成した後、POS や HQ はコードの変更やカスタマイズを行わずに新しい属性を自動的に表示します。 画面レイアウト設計者は、取引画面 (**顧客** パネル) に顧客属性を表示するようにも設定されます。
 
 ### <a name="order-attributes"></a>注文属性
-属性フレームワークは、現金売りトランザクション、顧客の注文、およびコール センター注文の属性をサポートするように拡張されました。 HQ または CRT で値を直接編集して設定することができます。 これらすべてはデータベースを変更せずにコンフィギュレーションを介して実行することができます。 (基本的な CRUD 操作は必要ではなく、主要なビジネス ロジックの属性値をカスタマイズすることができます。) 以前は、これを行うには、HQ とチャンネル DB に新しいテーブルを作成し、CRT を変更する必要がありました。 現在は、すべての属性の作成をコンフィギュレーションを通じて実行できるようになりました。 
+属性フレームワークは、現金売りトランザクション、顧客の注文、およびコール センター注文の属性をサポートするように拡張されました。 HQ または CRT で値を直接編集して設定することができます。 これらすべてはデータベースを変更せずにコンフィギュレーションを介して実行することができます。 (基本的な CRUD 操作は必要ではなく、主要なビジネス ロジックの属性値をカスタマイズすることができます。) 以前は、これを行うには、HQ とチャンネル DB に新しいテーブルを作成し、CRT を変更する必要がありました。 現在は、すべての属性の作成をコンフィギュレーションを通じて実行できるようになりました。
 
 ## <a name="adding-a-new-table"></a>新しいテーブルの追加
 
@@ -249,3 +249,7 @@ GO
 ### <a name="do-not-assume-that-the-channel-database-data-is-perennial"></a>チャネル データベース データが永続すると仮定しない
 
 チャネル データベースは、Retail サーバーで実行される操作の記憶域サポートを提供するトランザクション データベースです。 長期間保存する必要があるチャネル データベースに格納されるすべてのデータは、[Commerce Data Exchange](./cdx-extensibility.md) を通じて本社にアップロードする必要があります。 本社にアップロードされたデータには、[Commerce Data Exchange リアルタイム サービス](./extend-commerce-data-exchange.md)によりアクセスすることができます。
+
+### <a name="do-write-backward-compatible-channel-database-extensions"></a>後方互換性のあるチャネルデータベースの拡張機能を作成する
+
+チャネルデータベースには後方互換性がある必要があります。 これにより、チャネルデータベースのみを更新して Retail サーバー または POS の更新をしなかった場合でも、既存の Retail サーバー または POS 作業は正常に機能します。 展開を行う過程で、 Retail Cloud Scale Unitの異なるコンポーネント、 Retail Store Scale Unit、Modern POS は、決まった順番で更新処理がされます。 チャネルデータベースは、最初に更新されるコンポーネントであり、Retail サーバー や POS はその次に更新されることを意味します。 Retail サーバー や POS は正常に更新されず、各コンポーネントはこの処理がされる前の状態までロールバックされます。 このような場合であっても、データの損失を防ぐためにチャネルデータベースはロールバックされません。 ご利用の拡張機能に後方互換性がない場合、正常な展開処理が完了するまでは、これら拡張機能が正しく動作しない可能性があります。

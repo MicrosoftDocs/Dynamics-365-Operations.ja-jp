@@ -3,7 +3,7 @@ title: Dynamics 365 for Finance and Operations プラットフォーム更新プ
 description: このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 29 でプレビューされる機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
-ms.openlocfilehash: 3207dac83eb68c01d67eb62166fab20916ecf7f5
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 937363d131a9e7415208d673743bcfe8b9636d7a
+ms.sourcegitcommit: 84ad83ab693629d94422a7f64b2d995b58c16443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863647"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1876155"
 ---
 # <a name="preview-features-in-dynamics-365-for-finance-and-operations-platform-update-29-october-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 29 (2019 年 10 月) の機能をプレビューする
 
@@ -55,6 +55,8 @@ ms.locfileid: "1863647"
 
 ## <a name="visual-refresh-of-the-web-client-to-align-with-the-fluent-design-language"></a>Fluent Design言語に合わせたWeb クライアントのビジュアル更新
 Dynamics 365アプリ全体の取り組みの一環として、Web クライアントのビジュアル更新に向けて段階的に取り組んでおり、コントロールとページを Microsoft Fluent Design言語とより密接に連携させています。 プラットフォーム 更新プログラム 29 には、変更の初期セットが含まれています。 詳細については、リリース計画の [Fluent Design言語に合わせたWeb クライアントのビジュアル更新](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language) トピックを参照してください。
+
+この変更の一部として、ダッシュボードのワークスペース タイルに新しいビジュアル スタイルが追加されました。 標準ワークスペース タイルに視覚的に配置されるワークスペース タイル用の画像作成に関する更新済ガイダンスを使用するには、[ワークスペース タイル用のアイコンの作成](../../dev-itpro/user-interface/create-icons-workspace-tiles.md) を参照してください。
 
 ##  <a name="saved-views-preview"></a>保存されたビュー (プレビュー)
 保存されたビュープがプレビューで使用できるようになりました。 この機能は、個人用設定サブシステムの大幅な拡張機能であり、ユーザーは、ページごとに複数の名前を付けた個人用設定セットを持つことができます。 リストページでは、これらのビューにフィルターを含めることもできます。 ビューはセキュリティ ロールに対して公開できるので、個人用設定の管理もビューを使用することで大幅に簡単になります。 開発者環境でこの機能を有効にする方法の詳細については、 [保存されたビュー](saved-views.md) を参照してください。 また、 [保存されたビューを十分に活用するフォームの作成](../../dev-itpro/user-interface/understanding-saved-views.md) トピックも参照してください。 このプレビュー機能は、一般に使用可能になるまで進化し変更し続けることに注意してください。 
@@ -91,10 +93,13 @@ Dynamics 365アプリ全体の取り組みの一環として、Web クライア�
 - 拡張機能によって追加されたテーブル表示メソッドをルックアップ メソッドとして使用できるようにします (Ref# 243486)。
 - 拡張機能を使用して、フォーム データソースに表示メソッドを追加できるようにします (Ref# 256004) 。
 
+## <a name="codelens-for-method-references-in-the-x-editor"></a>X++ エディターのメソッド照会用 CodeLens
+X++ ソース コード エディターには、現在、Visual Studio の CodeLens 機能を利用しています。 X++ メソッドへの参照の数は、メソッド宣言線のすぐ上の CodeLens に表示されます。 参照カウントをクリックすると、そのメソッドに関するすべての参照を見つけることができます。 
+
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="platform-update-29-bug-fixes"></a>プラットフォーム アップデート 29 のバグ修正プログラム
-プラットフォーム更新 29 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、この [KB 資料](https://fix.lcs.dynamics.com)を参照してください。
+プラットフォーム更新 29 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、この [KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=348248&dbType=3&qc=71f7c009fafc56f21399d05a7062454208256c806b7f5c706a89f4452964c26e)を参照してください。
 
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?

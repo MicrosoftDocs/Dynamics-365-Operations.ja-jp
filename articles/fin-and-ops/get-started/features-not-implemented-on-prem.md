@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c9e909af7ea0f52af5cb5d383aa5151161f603b0
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 6d91c5f8f8fef35ba4c6acbb4ebe593726b65eb6
+ms.sourcegitcommit: 3f05ede8b8acdf0550240a83a013e093b4ad043d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741070"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1873166"
 ---
 # <a name="features-that-arent-implemented-in-on-premises-deployments"></a>オンプレミス配置で実装されていない機能
 
@@ -45,6 +45,7 @@ ms.locfileid: "1741070"
 | Microsoft Office 統合                                             | SharePoint オンプレミス サポートは、まだ使用できません。 SharePoint オンラインもまだサポートされていません (認証の問題のため)。<br><br>Skype for Business オンプレミスはサポートされていません。  |
 | 電子申告 (ER) と LCS の統合                   | LCS との ER 統合はサポートされません。 ER 構成は、LCS から Finance and Operations へ直接ダウンロードことはできません。                                   |
 | SharePoint との ER 統合            | SharePoint との統合はサポートされていません。 SharePoint サーバーを、ER を使用して生成された電子ドキュメントの出力先として構成することはできません。                           |
+| ビジネス ドキュメントの管理            | ビジネス ドキュメント管理機能を使用して、ビジネス ドキュメントの生成に使用するテンプレートの編集をすることはできません。 ER フレームワークのみを使用することができます。 Microsoft Office の統合は、オンプレミス展開には未対応のためです。                           |
 | OData を使用して Power BI レポートを作成する                              | Power BI デスクトップまたは Excel PowerQuery ツールを使い、OData での Power BI レポートの作成はサポートされていません。                                                                                  |
 |購買要求: 外部カタログからのパンチアウト |外部カタログから購買要求にショッピング カートをチェックアウトすることはできません。 |
 |Trace Parser および PerfTimer |これらのツールは動作していないか、このリリースで機能が制限されています。 これらの機能は、将来のリリースで実装される予定です。 |

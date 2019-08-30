@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d34fc5cc7f1657df9a4897691b4d69b6c153633f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 320ef1ce4e5adb70cddeb1f821445b244dc426ee
+ms.sourcegitcommit: c461758290d7ddc19f0b60701368937c35ef78b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561846"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864141"
 ---
 # <a name="buy-finance-and-operations-on-premises"></a>Finance and Operations (on-premises) の購入
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations (オンプレミス) では、組織のニーズに最適な幅広いライセンスの種類を取りそろえております。  Finance and Operations (オンプレミス) のライセンス取得方法を理解するには、PartnerSource の[ライセンス ガイド](https://go.microsoft.com/fwlink/?linkid=852079)にアクセスできるパートナーと協力してください。 組織のライセンスを購入する準備ができたら、パートナーと協力して、このトピックで説明している手順に従います。
+Microsoft Dynamics 365 for Finance and Operations (オンプレミス) では、組織のニーズに最適な幅広いライセンスの種類を取りそろえております。  Finance and Operations (オンプレミス) のライセンス取得方法を理解するには、PartnerSource の[ライセンス ガイド](https://mbs.microsoft.com/Files/public/365/DynamicsOperationsOnPremEnterprise.pdf)にアクセスできるパートナーと協力してください。 組織のライセンスを購入する準備ができたら、パートナーと協力して、このトピックで説明している手順に従います。
 
 > [!IMPORTANT]
 > Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置。

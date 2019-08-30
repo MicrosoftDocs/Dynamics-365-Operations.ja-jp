@@ -3,7 +3,7 @@ title: ワークフロー ビジネス イベント
 description: ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 07/31/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: ac6a2ee4bfe953dcf6a6dff32247fc8a8877a995
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: f03916aa7a962e5dd06cda58a3d7c1567ef4e63f
+ms.sourcegitcommit: e7834191b6eb14f525823075efcc1b1ab2c68463
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833728"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "1920436"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]
@@ -84,3 +84,13 @@ ms.locfileid: "1833728"
 Microsoft Flow の作業項目完了のテンプレートはすぐに利用できるようになり、簡単に参照できるようにここでリンクが提供される予定です。
 
 Microsoft Flow で作業項目完了を設定する詳細なガイドは [ワークフロー承認ビジネス イベントを消費する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow) を参照してください。
+
+## <a name="troubleshooting-workflow-business-events"></a>ワークフロー ビジネスイベントのトラブルシューティング
+
+ワークフロー ビジネスイベントにてエラーを発生させずに完了するには、正確な作業が必要になる多くの重要な要素があります:
+
+- **ワークフロー** - ワークフローが正常に動作することと、各項目が正しく作成されていることを確認します。 Finance and Operations 内のワークフローが動作しない場合で、状態の変更がされている場合、イベントは発生しません。 必要に応じてワークフローの設定を調整します。 この調整を行うには、 **ワークフローの履歴** フォームの詳細を確認してください。
+
+- **フロー** - **有効なイベント** タブの **システム管理 > 設定 > ビジネスイベント > ビジネス イベント カタログ** でフローのサブスクリプションが利用可能となっていることを確認します。フローのサブスクリプションが見当たらない場合、フローを確認し、必要に応じて再作成してください。
+
+- **ビジネス イベント** - 別のビジネス イベントをトリガーするフローを作成することで、他のビジネス イベントが発生することを確認します。 たとえば、フリー テキストのインボイス転記済イベントは、単一行のフリー テキスト インボイスを作成して転記することでトリガーできます。

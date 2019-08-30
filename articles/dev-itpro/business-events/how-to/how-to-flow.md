@@ -1,9 +1,9 @@
 ---
-title: Microsoft Flow を使用してビジネス イベントを消化する
+title: ビジネス イベントおよび Microsoft Flow
 description: このトピックでは、Finance and Operations コネクタを介して Microsoft Flow で使用可能となるビジネス イベントに関する情報を提供します。
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/31/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: imbenbou
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 1a3b0ffcb9b7aee4d0d8186e85416cd3ff2e383b
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 4af78fa4fe3c6b2cc9c7e6ab5ba9a79713bdf568
+ms.sourcegitcommit: 575987f82bb33656d246cf12546b4922b4891d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833726"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871133"
 ---
-# <a name="consume-business-events-with-microsoft-flow"></a>Microsoft Flow を使用してビジネス イベントを消化する
+# <a name="business-events-and-microsoft-flow"></a>ビジネス イベントおよび Microsoft Flow
 
 [!include[banner](../../includes/banner.md)]
 
@@ -45,7 +45,9 @@ ms.locfileid: "1833726"
      
 5.  **ビジネス イベントが発生した場合** という名称の Finance and Operations のトリガーが確認できるかと思います。 このトリガーを選択します。
 
-6.  環境インスタンス、カテゴリ、イベント名称、法的エンティティを選択します。
+6.  環境インスタンス、カテゴリ、イベント名称、法的エンティティを選択します。 
+    > [!TIP]
+    > 環境インスタンス URL の一部またはイベント名の一部のみを入力することによって、フローのオート コンプリート機能を利用できます。
 
     <img alt="Microsoft Flow buisness event trigger" src="../../media/BEF-Howto-Flow-04.png" width="50%">
 
@@ -98,3 +100,9 @@ Microsoft Flow は、自動的にFinance and Operationsを設定することが�
     <img alt="Active business events " src="../../media/BEF-Howto-Flow-14.png" width="100%">
 
 6.  最後の手順では、転記された顧客支払のビジネス イベントをトリガーし、フローの実行と顧客の支払詳細を含む電子メールを受信するかどうかをチェックします。
+
+## <a name="troubleshooting-a-flow"></a>フローのトラブルシューティング
+トラブルシューティングの推奨事項を次に示します。
+- Microsoft Flow は、実行の完全な履歴を表示します。この情報を確認することにより、失敗しているフローについてどのような問題があるかを判断できます。
+- 失敗した実行を確認する場合は、トリガーおよびアクション ブロックの入力と出力を慎重に確認してください。 
+- フローに変更が加えられたら、最後の実行または特定の実行に移動し、入力を**再送信**してフローを再度実行します。

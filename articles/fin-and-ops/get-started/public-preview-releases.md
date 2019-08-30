@@ -3,7 +3,7 @@ title: サービス更新の可用性
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の各種のリリース オプションについて説明します。
 author: meeramahabala
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 8901073cca223ba4c1c38ad3d765de85a67082ad
-ms.sourcegitcommit: 1e1d63ec5dde569aaeb352b018ac7de4648cc8b9
+ms.openlocfilehash: 7d1580ec30a757ed4126f01766e3784326db74d6
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1796547"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887241"
 ---
 # <a name="service-update-availability"></a>サービス更新の可用性
 
@@ -64,7 +64,7 @@ Microsoftは、予測可能なサービス更新を提供することを約束�
 | 10.0.3 プラットフォーム アップデート 27 | 2019年5月10日                | 2019年6月14日                     | 運用環境: 開始日 2019年7月1日            | 2019年9月9日 |
 | 10.0.4 プラットフォーム アップデート 28 | 2019年6月7日                | 2019年7月12日                     | 運用環境: 開始日 2019年8月1日          | 2019年10月14日  |
 | 10.0.5 プラットフォーム アップデート 29 | 2019 年 8 月 2 日 (パブリックプレビュー)              | 2019年9月13日                | 運用環境: 開始日 2019年10月1日         | 2019年12月2日  |
-| 10.0.6 プラットフォーム アップデート 30 | 2019年 9月6日           | 2019年10月11日                  | 運用環境: 開始日 2019年11月1日         | 2019年1月13 日  
+| 10.0.6 プラットフォーム アップデート 30 | 2019年 9月6日           | 2019年10月11日                  | 運用環境: 開始日 2019年11月1日         | 2016年 13 月 13 日  
 | 10.0.7 プラットフォーム アップデート 31 | 2019年10月25日            | 2019年11月29日                 | 運用環境: 開始日 2020年1月1日          | 2020年3月9日     |
 | 10.0.8 プラットフォーム アップデート 32 | 2019年11月29日           | 2016年 17 月 17 日                  | 運用環境: 開始日 2020年2月1日         | 2020年4月13日    |
 | 10.0.9 プラットフォーム アップデート 33 | 2020 年 2 月 1 日 (パブリックプレビュー)           | 2020年3月13日                    | 運用環境: 開始日 2020年4月1日           | 未定               |

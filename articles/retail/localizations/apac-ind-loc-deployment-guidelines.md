@@ -16,12 +16,12 @@ ms.author: jiaqia
 ms.search.scope: Retail
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: afc0ee505192f20899d9abb51920468e9d3332f1
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d3999aacbb5dde850bb88a4dd272b8eb2d9600bf
+ms.sourcegitcommit: 109a6ef2d20758dc4a25c51b11e22dd2214a1cc4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845665"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886689"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-india"></a>インドのキャッシュ レジスターの配置ガイドライン
 
@@ -38,7 +38,7 @@ ms.locfileid: "1845665"
 
 ## <a name="prerequisites"></a>必要条件
 
-Visual C++ 再頒布可能パッケージが商品及びサービス税 (GST) 計算を実行するマシン上にあることを確認します。 クラウド POS、およびオンライン モードの Modern POS の場合、このマシンは小売サーバーです。 オフライン モードの Modern POS の場合、それは Modern POS マシン自身です。 パッケージを取得するには、[Visual C++ 再頒布可能パッケージをダウンロード](https://www.microsoft.com/download/details.aspx?id=30679)を参照してください。
+Visual C++ 再頒布可能パッケージが商品及びサービス税 (GST) 計算を実行するマシン上にあることを確認します。 クラウド POS、およびオンライン モードの Modern POS の場合、このマシンは小売サーバーです。 オフライン モードの Modern POS の場合、それは Modern POS マシン自身です。 パッケージを取得するには、[Visual C++ 再頒布可能パッケージをダウンロード](https://www.microsoft.com/download/details.aspx?id=48145)を参照してください。
 
 ## <a name="development-environment"></a>開発環境
 

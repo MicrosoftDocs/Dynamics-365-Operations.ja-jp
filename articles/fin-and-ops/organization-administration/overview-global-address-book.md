@@ -1,9 +1,9 @@
 ---
-title: グローバル アドレス帳
+title: グローバル アドレス帳の概要
 description: グローバル アドレス帳は、組織に関連付けられている人と組織の関係を理解するのに役立ちます。 たとえば、顧客がマーケティング キャンペーンの仕入先である場合や、組織の作業者が仕入先である場合があります。
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 07/05/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8dd1632c028874b0a2364c45f98a8a6937c6326c
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: bbf8157fba6b11463fd6c83179efd6488b3868fa
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1851835"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865004"
 ---
-# <a name="global-address-book"></a>グローバル アドレス帳
+# <a name="global-address-book-overview"></a>グローバル アドレス帳の概要
 
 [!include [banner](../includes/banner.md)]
 

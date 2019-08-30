@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 43f460e932765e6e26806f920218d3e4bb143531
-ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
+ms.openlocfilehash: 4df1fd3f83c141b277156cd4334dee55d3d8bb2d
+ms.sourcegitcommit: f79f2249d7557e578d7d3c4d6ea83682df7362d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1863817"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874821"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
@@ -170,14 +170,16 @@ Dynamics 365 Unified Operations プラットフォームは、タスク記録に
 
 開発者は、**ビルドおよびテスト**環境のビルドおよびテスト自動化機能を使用できます。 詳細については、[継続的な配信ホーム ページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
 
-機能パワー ユーザーは、**Regression Suite Automation Tool** を使ってテスト ケースの実行を自動化できます。 ツールとユーザー マニュアルは、[ここで](https://www.microsoft.com/download/details.aspx?id=57357)ダウンロードします。
+機能パワー ユーザーは、**Regression Suite Automation Tool** を使ってテスト ケースの実行を自動化できます。 詳細については、[ツールをダウンロードする](https://www.microsoft.com/download/details.aspx?id=57357) および [Regression Suite Automation Tool](../perf-test/rsat/rsat-overview.md) を参照してください。
 
 Regression Suite Automation Toolの詳細については、次の情報を参照してください。
 
- - [-   パート 1: Regression Suite Automation Tool -- バックグラウンド & セットアップ](https://infopedia.eventbuilder.com/event?eventid=j5m3w4&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
- - [-   パート 2: Regression Suite Automation Tool -- ライフサイクル デモのテスト](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [- 第 1 部: Regression Suite Automation Tool -- 背景と設定](https://infopedia.eventbuilder.com/event?eventid=j5m3w4&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [- 第 2 部: Regression Suite Automation Tool -- ライフサイクル デモのテスト](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+-  [Regression Suite Automation Tool ドキュメント](../perf-test/rsat/rsat-overview.md)
  
 実習で使用する手順については、次のトピックを参照してください。
+
 - [Regression Suite Automation Toolの設定およびインストール](../../fin-and-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
 - [Regression Suite Automation Toolの使用](../../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md)
 

@@ -3,7 +3,7 @@ title: ビジネス イベントのトラブルシューティング
 description: このトピックでは、ビジネス イベントのトラブルシューティングについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: c6d7997ed6249e2266a90293957c9b8a86d9a5f9
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 3f23ae4d07fc52892048ccdefc493b8c3b282566
+ms.sourcegitcommit: 0a6dc4ab65f6313858ae173164ebb369d8a0ebd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862920"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874943"
 ---
 # <a name="troubleshoot-business-events"></a>ビジネス イベントのトラブルシューティング
 
@@ -30,6 +30,7 @@ ms.locfileid: "1862920"
 
 | 問題点 | 考えられる解決策 | 
 |---------------|---------------------|
+| **システム パラメーター** フォームでビジネス イベントへのナビゲーションが見つかりません | ビジネス イベントには、**システム管理 > 設定 > ビジネス イベント** の順に移動することでアクセスできます。 この変更は、ビジネス イベントがプラットフォーム更新プログラム 26 で一般に利用可能になった時点で加えられました。|
 | **エラー:** エンドポイントを構築できません。 例外メッセージ: キー コンテナー 'https://[KeyVaultName].vault.azure.net/' からのシークレット '[KeyValueSecretName]' を取得中にエラーが発生しました。AADSTS700016: 識別子を持つアプリケーションは '7e28cb03-dc28-43b5-b129-e13dcfb4b1fb' は、ディレクトリ 'ee3fe5c6-26af-42b1-9acf-5ee38e6ead6e' で見つかりませんでした。 | これは、アプリケーションがテナントの管理者によってインストールされていないか、テナントのユーザーによって同意されていない場合に発生する可能性があります。 認証要求を間違ったテナントに送信した可能性があります。|
 |**エラー:** 追跡 ID:  19dc9946-45b6-4335-9676-6a133dbf4000 相関関係 ID: ecbc8a80-f9d0-41ec-9c8f-d334d050bd64 タイムスタンプ: 2019-02-06 23:27:06Z| このエラーは、**Azure Active Directory アプリケーション ID** フィールドの値が正しくないことを意味します。 顧客の Azure ポータルの **Azure Active Directory アプリケーション ID** の値を **Azure Active Directory > アプリケーションの登録**で確認します。|
 |**エラー:** エンドポイントを構築できません。 例外メッセージ: キー コンテナー 'https://[KeyVaultName].vault.azure.net/' からシークレット '[KeyValueSecretName]' を取得中にエラーが発生しました。要求の送信中にエラーが発生しました。|このエラーは、**Key Vault DNS Name** フィールドの値が正しくないことが原因です。 これを解決するには、顧客の Azure ポータルに移動して、キー コンテナーのオブジェクトを開きます。 **概要**セクションで、**Key Vault DNS 名**値を確認します。|

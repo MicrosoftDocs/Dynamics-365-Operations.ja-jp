@@ -1,9 +1,9 @@
 ---
-title: ケース管理
+title: ケース管理の概要
 description: このトピックでは、Microsoft Dynamics AX での、計画、追跡、分析などのケース管理の概要を示します。
 author: kfend
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 38b6df64c6e3632397c18b5b428edb38d7039613
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 6310279cbb6b99b0f6bd05dd5506e57fad740a7b
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850763"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864830"
 ---
-# <a name="case-management"></a>ケース管理
+# <a name="case-management-overview"></a>ケース管理の概要
 
 [!include [banner](../includes/banner.md)]
 

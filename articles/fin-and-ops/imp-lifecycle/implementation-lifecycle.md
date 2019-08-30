@@ -1,5 +1,5 @@
 ---
-title: 実装ライフサイクル管理
+title: 実装ライフサイクル管理ホーム ページ
 description: これらのトピックでは、Microsoft Dynamics 365 for Finance and Operations プロジェクトの実装ライフサイクルに関連するプログラム、ツール、プロセスについて説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a25bfa40b34ad20c323307c75b54caa6520c9319
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 311d922497edbeedfa4476798d6afbc28c780c50
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850767"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864380"
 ---
-# <a name="implementation-lifecycle-management"></a>実装ライフサイクル管理
+# <a name="implementation-lifecycle-management-home-page"></a>実装ライフサイクル管理ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 

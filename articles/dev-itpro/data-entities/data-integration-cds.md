@@ -1,9 +1,9 @@
 ---
-title: Common Data Service を使用したデータ統合
+title: Common Data Service を使用したデータの統合の概要
 description: このトピックでは、同期と非同期の統合の仕組みについて簡単に説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 08/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f0c2529c8567d9c3d31b01b6c900cf6de51a565
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: c0e99f0c377a7e7bf43002a74a784c4d095c8b8d
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850423"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864652"
 ---
-# <a name="data-integration-by-using-common-data-service"></a>Common Data Service を使用したデータ統合
+# <a name="data-integration-using-common-data-service-overview"></a>Common Data Service を使用したデータの統合の概要
 
 [!include [banner](../includes/banner.md)]
 

@@ -3,7 +3,7 @@ title: POS ビューの拡張によるカスタム列およびアプリ バー �
 description: このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4951a8b556e0b7f59911277e02fa44ba4d97920
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 1c779a2026e6db185b641daed5f0f99fe43285ed
+ms.sourcegitcommit: e7834191b6eb14f525823075efcc1b1ab2c68463
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833131"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "1920437"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -57,8 +57,9 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | SimpleProductDetailsView        | はい                           | いいえ                           | はい                                  |
 | AddressAddEditView              | はい                           | いいえ                           | はい                                    |
 | PaymentView                     | いいえ                            | いいえ                           | はい                                  |
-| PriceCheckView                  | はい                           | いいえ                           | いいえ                                   |
-| SearchOrdersView                | 無                            | 有                          | 無                                   |
+| PriceCheckView                  | はい                           | いいえ                           | はい                                   |
+| PriceCheckViewPhone             | いいえ                            | いいえ                           | はい                                   |
+| SearchOrdersView                | いいえ                            | はい                          | いいえ                                   |
 | SearchPickingAndReceivingView   | 無                            | 有                          | 有                                   |
 | CustomerOrderHistoryView        | 無                            | 有                          | 無                                   |
 | SearchStockCountView            | 無                            | 有                          | 無                                   |

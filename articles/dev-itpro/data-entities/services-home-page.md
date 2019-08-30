@@ -1,9 +1,9 @@
 ---
-title: サービス エンドポイント
+title: サービス エンドポイント 概要
 description: このトピックでは、使用できるサービス エンドポイントについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74bf67afec68ff6bb38da06b35a9177ebba4cb52
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: cdf2a302570263caf935990994d01a5dddd1a5a2
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1848271"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864678"
 ---
-# <a name="service-endpoints"></a>サービス エンドポイント
+# <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 
 [!include [banner](../includes/banner.md)]
 

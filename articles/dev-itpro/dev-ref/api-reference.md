@@ -1,9 +1,9 @@
 ---
-title: API、クラス、およびテーブルの参照
+title: API、クラス、テーブルのリファレンス
 description: このトピックでは、Visual Studio および Microsoft のドキュメント サイトで API ドキュメントを見つける場所について説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1efb8d1764de7a77f2fb81d83c380fb36a957626
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 30154b3e51e7a52a40675bbfefd1844585e635cc
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833720"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864254"
 ---
-# <a name="api-class-and-table-reference"></a>API、クラス、およびテーブルの参照
+# <a name="api-class-and-table-resources"></a>API、クラス、テーブルのリファレンス
 
 [!include [banner](../includes/banner.md)]
 

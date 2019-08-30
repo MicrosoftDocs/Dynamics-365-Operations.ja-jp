@@ -1,9 +1,9 @@
 ---
-title: Microsoft Forms Pro でのビジネスイベントの使用
+title: ビジネスイベントと Microsoft Forms Pro
 description: このトピックでは、製品の出荷時に調査がユーザーに送信されるシナリオについて説明します。 調査情報は Microsoft Forms Pro を使用して収集されます。
 author: murrayfife
 manager: AnnBe
-ms.date: 07/10/2019
+ms.date: 08/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: mufife
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: f97b193ea885c98f73d77cc80c80a4e62f47ce93
-ms.sourcegitcommit: 7887f24a2a91b69ca68960c45a0c12c70802d639
+ms.openlocfilehash: ac18022241f5158ef2ba1c81de67c19b00442b10
+ms.sourcegitcommit: 575987f82bb33656d246cf12546b4922b4891d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738287"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871128"
 ---
-# <a name="use-microsoft-forms-pro-with-business-events"></a>Microsoft Forms Pro でのビジネスイベントの使用
+# <a name="business-events-and-microsoft-forms-pro"></a>ビジネスイベントと Microsoft Forms Pro
 
 [!include[banner](../../includes/banner.md)]
 

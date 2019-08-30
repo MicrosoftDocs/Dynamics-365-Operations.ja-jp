@@ -1,9 +1,9 @@
 ---
-title: Azure Service Bus を使用してビジネス イベントを消費する
+title: ビジネス イベントおよび Azure Service Bus
 description: このトピックでは、Microsoft Dynamics 365 Finance and Operations で Microsoft Azure Service Bus エンドポイントを構成する方法と、Service Bus からビジネス イベントを消費する方法を説明します。
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/24/2019
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: imbenbou
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: b4b5350732d65258f2cea6a08a84ed1f7593670a
-ms.sourcegitcommit: 6c4fab381c8974e9aef4421058f31c9917806a45
+ms.openlocfilehash: 77edda1761cffc58b9134f76fd61d1f99bd2d9ca
+ms.sourcegitcommit: 575987f82bb33656d246cf12546b4922b4891d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "1788350"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871127"
 ---
-# <a name="consume-business-events-by-using-azure-service-bus"></a>Azure Service Bus を使用してビジネス イベントを消費する
+# <a name="business-events-and-azure-service-bus"></a>ビジネス イベントおよび Azure Service Bus
 [!include[banner](../../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Finance and Operations と Microsoft Azure Service Bus エンドポイントを構成する方法と、Service Bus からビジネス イベントを消費する方法を説明します。

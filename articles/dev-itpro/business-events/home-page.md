@@ -1,5 +1,5 @@
 ---
-title: ビジネス イベント
+title: ビジネス イベントの概要
 description: このトピックは、外部システムが Dynamics 365 for Finance and Operations から通知を受信するためのメカニズムを提供するビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
@@ -15,14 +15,14 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 0fa49a977ba8f86ae3224cba09bfb3c104c4d92b
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: d84c82591c5f9593fbbfb47d4a60925c25772607
+ms.sourcegitcommit: a276944122e0453f790bed9e60c2abd5aa32154d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862926"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "1870099"
 ---
-# <a name="business-events"></a>ビジネス イベント
+# <a name="business-events-overview"></a>ビジネス イベントの概要
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -241,7 +241,9 @@ Azure Service Bus や Azure Event Grid に送信されるビジネス イベン�
 
 6.   上部のナビゲーション ウィンドウの **セキュリティ** メニューで **有効化**メニュー ボタンを選択してセキュリティを有効にします。 情報メッセージはセキュリティが有効か無効かを確認します。
 
-### <a name="subscribe-to-business-events-from-service"></a>サービスからビジネス イベントを購読
+7.  情報メッセージに記載されているセキュリティに基づいて、適切な権限または職務権限を追加するために必要なセキュリティ ロールを変更します。
+
+### <a name="subscribe-to-business-events-from-service"></a>サービスからビジネス イベントの登録
 
 ロールを介して権限 **サービスからビジネスイベントを購読** にアクセスできるユーザーは、ロールに割り当てられたビジネス イベントのみを表示およびサブスクライブできます。これについては以下で説明します。 存在する場合にロール ベースのセキュリティの一部として行われる組織の割り当ては、ユーザーがロールを介してアクセスできる組織のビジネス イベントのみにサブスクライブ可能にすることでビジネス イベントのコンテキストで尊重されます。 この動作は、Microsoft Flow や ロジックアプリからサービス呼び出しを使用すると効果的です。
 
