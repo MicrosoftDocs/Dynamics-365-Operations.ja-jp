@@ -1,9 +1,9 @@
 ---
-title: セルフサービス配置
+title: セルフ サービス配置の概要
 description: このトピックでは、Finance and Operations のセルフ サービス配置の概要を示します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/19/2018
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: a35b24f06745945009271168a54ed699d22e1be5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b6b7217fcd14bd5b7d2b171fa028934fce3dd9a7
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544216"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864308"
 ---
-# <a name="self-service-deployment"></a>セルフサービス配置
+# <a name="self-service-deployment-overview"></a>セルフ サービス配置の概要
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]

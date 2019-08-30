@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 330c3319090d5ab055d6c218b871a01ba7c377ef
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 74631d6301373746e48b0666f75e2c7d18ef2272
+ms.sourcegitcommit: 3f05ede8b8acdf0550240a83a013e093b4ad043d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833129"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1873141"
 ---
 # <a name="retail-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Retail コンポーネント イベント
 
@@ -126,9 +126,8 @@ AppSessionID 値および UserSessionID 値は、Retail Modern POS がインス�
 LCS ログ検索で、1 つのポータルからすべてのコンポーネントのデータを表示できます。 イベントは、(Retail サーバーなどの) クラウドでホストされたコンポーネントと (Retail Modern POS および Retail Hardware Station などの) 店舗内コンポーネントの両方からアクセスすることができます。 すべてのクラウドホストおよびストア内コンポーネントからのイベント データは、索引付けされ検索可能になる LCS ログ検索に流れます。 データは通常、記録されてから 5 分以内に利用可能です。 POS クライアントおよび Retail Hardware Station では、すべてのイベントが永続ストレージにローカルでキュー格納され、キューがいっぱいになった後にバッチでアップロードされます。 この動作により、ネットワーク トラフィックを最適化できます。  また、インターネット接続がない場合でもイベントを保存することができます。 接続が回復した後、すべての保留中のイベントがアップロードされます。 LCS ログ検索は、HA 運用トポロジに使用できます。 次の Retail のコンポーネントに使用することができます。
 
 -   Retail Modern POS
--   小売クラウド POS
--   Retail ハードウェア ステーション
--   Retail サーバー
+-   Retail Cloud POS
+-   Retail サーバー ( Retail Cloud Scale Unit の実行)
 
 LCS ログ検索に、次の Retail コンポーネントからのログは**含まれません**。
 
@@ -136,6 +135,8 @@ LCS ログ検索に、次の Retail コンポーネントからのログは**含
 -   小売受領書デザイナー
 -   Retail Modern POS のセルフ サービス インストーラー
 -   小売ハードウェア ステーション用のセルフ サービス インストーラー
+-   Retail サーバー ( Retail Store Scale Unit の実行)
+-   Retail ハードウェア ステーション
 
 ### <a name="access-lcs-log-search"></a>LCS ログ検索にアクセス
 
@@ -148,7 +149,7 @@ LCS ログ検索にアクセスするには、次の手順を実行します。
 5.  **環境の詳細**ページで、**環境の監視**をクリックします。
 6.  **環境の監視**ページで、**未加工ログの表示**をクリックします。
 7.  **ログ検索**ページで、次のいずれかのクエリを選択します。
-    -   **小売クライアント イベント** クエリには、Retail Modern POS、Retail Cloud POS、および Retail Hardware Station からのイベントが含まれています。
+    -   **小売クライアント イベント** クエリには、 Retail Modern POS 、Retail Cloud POS、および Retail サーバー ( Retail Cloud Scale Unit の実行) からのイベントが含まれています。
     -   Retail Server、Commerce Data Exchange、Commerce Data Exchange: リアルタイム サービス のデータが含まれている**すべてのログ** クエリ
 
 以下の条件でフィルター処理してクエリを調整することができます。

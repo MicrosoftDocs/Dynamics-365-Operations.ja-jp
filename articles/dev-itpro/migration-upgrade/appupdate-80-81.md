@@ -3,7 +3,7 @@ title: バージョン 8.0 から 10.0.X への環境の更新
 description: このトピックでは、既存の Finance and Operations 8.0 環境を、10.0.X アプリケーション リリースに更新するために必要な手順について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: c9a64eb0afd14fc060b0f113d5cb3722087062b5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 72ccad38629cc586d916ce71c68a954828bb4baa
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537213"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886618"
 ---
 # <a name="update-environments-from-version-80-to-100x"></a>バージョン 8.0 から 10.0.X への環境の更新
 
@@ -94,6 +94,9 @@ Lifecycle Services で、手順 1 で配置した**ビルド サーバー**に�
 アセット ライブラリでリリース候補をマークしたら、実稼働環境への展開をスケジューリングできます。  これは、他のソフトウェア展開可能パッケージの適用と同じプロセスに従います。
 
 ## <a name="known-issues"></a>既知の問題
+
+### <a name="globalupdate-script-for-service-model-aosservice-with-error-the-specified-module-cprogram-filesmicrosoft-security-clientmpprovider"></a>サービスモデルの GlobalUpdate スクリプト: AOSService のエラー 'The specified module 'C:\Program Files\Microsoft Security Client\MpProvider' 
+このエラーは一過性のものであるため、無視しても構いません。  これを無視するには、Lifecycle Services の **再開** をクリックします。
 
 ### <a name="deploying-the-100x-binary-update-to-developer-environments-causes-applicationsuite-compilation-errors"></a>10.0.X バイナリ更新プログラムを開発環境に配置すると、ApplicationSuite コンパイル エラーが発生
 パッケージを 8.0 環境に適用でき、ソース コードが更新されます。  拡張パッケージのコンパイルには影響が及びません。  オーバーレイしており、ApplicationSuite パッケージからオブジェクトを削除し、再コンパイルしようとした場合、エラーが発生する場合があります。  これが解決されるまで、開発者環境を 10.0.X に再度展開し、バージョン管理からソース コードを同期してください。

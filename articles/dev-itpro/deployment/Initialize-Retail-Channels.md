@@ -3,7 +3,7 @@ title: Retail Cloud Scale Unit の初期化
 description: このトピックでは、Retail Cloud Scale Unit を初期化する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,27 +15,25 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: a8f952e8d265be7eaea143cb647017a1330bc9b8
-ms.sourcegitcommit: 1e1d63ec5dde569aaeb352b018ac7de4648cc8b9
+ms.openlocfilehash: d71144ce58f376cc850a0e09168277ac957e3519
+ms.sourcegitcommit: c461758290d7ddc19f0b60701368937c35ef78b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1796545"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864167"
 ---
 # <a name="initialize-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit の初期化
 
 [!include[banner](../includes/banner.md)]
 
-アプリケーション バージョン 8.1.2.x 以降を持つレベル 2 サンドボックスまたは運用環境を使用している場合、販売時点管理 (POS) 操作またはクラウド内の Retail サーバーを使用する電子商取引操作に Retail チャネル機能を使用する前に、Retail Cloud Scale Unit を初期化する必要があります。 初期化は Retail Cloud Scale Unit を展開します。
+アプリケーション バージョン 8.1.2.x 以降を持つレベル 2 サンドボックスまたは運用環境を使用している場合、販売時点管理 (POS) 操作またはクラウド内の Retail サーバーを使用する電子商取引操作に Retail チャネル機能を使用する前に、Retail Cloud Scale Unit (RCSU) を初期化する必要があります。 初期化は Retail Cloud Scale Unit を展開します。
 
 このトピックでは、Retail Cloud Scale Unit を初期化するための手順について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 
 1. アプリケーション バージョン 8.1.2.x またはそれ以降を持つレベル 2 サンドボックスまたは運協環境を配置します。
-2. Microsoft Dynamics Lifecycle Services (LCS) で、サポート リクエストを作成し、**Retail Cloud Scale Unit のアクセス権の要求** と入力します。
-
-要求は、5 営業日以内に完了されます。
+2. Microsoft Dynamics Lifecycle Services (LCS) で環境ごとに 1 つを超える RCSU が必要な場合は、サポート要求を作成して、**複数の Retail Cloud Scale Unit に対するアクセス要求**を入力し、環境 ID、RCSU の数、および対応するデータ センター地域を指定します。 要求は、5 営業日以内に完了されます。 環境ごとに複数の RCSU を必要としない場合は、サポート要求を作成する必要はありません。 
 
 ## <a name="initialize-retail-cloud-scale-unit-as-part-of-a-new-environment-deployment"></a>Retail Cloud Scale Unit を新しい環境の展開の一部として初期化します
 
@@ -92,7 +90,7 @@ ms.locfileid: "1796545"
 
 クラウドでホストされた小売チャネル コンポーネントを使用する環境で最初のクラウド スケール ユニットを初期化するときに、初期化プロセスではクラウドでホストされたチャネル コンポーネントに関連付けられているチャネルを最初のスケール ユニットに移行します。 店舗スケール ユニットに関連付けられたチャンネルは影響を受けません。
 
-移行プロセスはチャネルに対して透過的です。 スケール ユニットの初期化が始まると、次の操作が自動的に実行されます:
+移行プロセスはチャネルに対して透過的です。 スケール ユニットの初期化が始まった後、次の操作が自動的に実行されます。
 
 1. 新しいクラウド スケール ユニットが作成され、環境に関連付けられます。
 2. クラウド スケール ユニットは、本社で利用可能なチャンネル データベースとして登録されます。

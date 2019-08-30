@@ -3,7 +3,7 @@ title: ゴールデン コンフィギュレーション プロモーション
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のゴールデン コンフィギュレーション プロモーションについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 3418fc37315905391b5fed45d2736152914b5be0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 14140d4bdebf7d71f1aa63dd125578a4c57c0788
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537094"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886646"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 
@@ -149,7 +149,10 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 
 ## <a name="perform-master-data-migration"></a>マスター データを移行します。
 
-UAT 環境にゴールデン コンフィギュレーションが適用され、マスター データの移行を開始することができます。 [データ エンティティを使用して](../data-entities/develop-entity-for-data-migration.md)、このデータの移行を行うことができます。 UAT 環境を生産環境にコピーする前にデータ移行アクティビティを完了することをお勧めします。トラブルシューティングのために UAT 環境のデータベースにアクセスするためです。
+UAT 環境にゴールデン コンフィギュレーションが適用され、マスター データの移行を開始することができます。 [データ エンティティを使用して](../data-entities/develop-entity-for-data-migration.md)、このデータの移行を行うことができます。 UAT 環境を生産環境にコピーする前にデータ移行アクティビティを完了することをお勧めします。トラブルシューティングのために UAT 環境のデータベースにアクセスするためです。  
+
+> [!IMPORTANT]
+> 次の手順では、添付されたドキュメントはUAT環境から運用環境にコピーされません。  稼働するにあたって添付が必要な場合は、運用環境ディレクトリにそれらをインポートすることで対応することができます。
 
 ## <a name="copy-the-sandbox-database-to-production"></a>サンドボックス データベースを生産環境にコピーします。
 
@@ -176,6 +179,8 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
 * **システム管理**\>**設定**\>**エンティティ店舗:** Microsoft Power BI レポートに必要なさまざまなエンティティを更新します。
 * **システム管理**\>**設定**\>**システム パラメーター:** タスク ガイドの LCS ヘルプ コンフィギュレーションに環境を再接続します。
 * **システム管理**\>**設定**\>**電子メール**\>**パラメータを電子メールで送信:** UAT 環境内で電子メールを使用する場合は、簡易メール転送プロトコル (SMTP) の設定を入力します。
+* **システム管理** \> **設定** \> **移行の設定** \> **Azure storage アカウント接続文字列:** ストレージの接続文字列を入力します。
+* **ドキュメントの接続** タブの **システム管理** \> **設定** \> **システムパラメータ:** に、Azure Key と アプリケーションの秘密情報を入力します。
 * **システム管理**\>**照会**\>**バッチ ジョブ:** UAT 環境で実行するジョブを選択し、ステータスを **待機中** に更新します。
 
 > [!NOTE]

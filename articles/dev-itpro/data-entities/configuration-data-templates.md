@@ -3,7 +3,7 @@ title: コンフィギュレーション データ テンプレート
 description: このトピックは、コンフィギュレーション データ テンプレートについて説明し、それらを作成する方法について説明します。
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 43d31f430ae83de6deb389dc32219a290d18fdfd
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: ec8d3a62eec153dad163176913018bdf65db2404
+ms.sourcegitcommit: a276944122e0453f790bed9e60c2abd5aa32154d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850467"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "1870101"
 ---
 # <a name="configuration-data-templates"></a>コンフィギュレーション データ テンプレート
 
@@ -30,7 +30,7 @@ ms.locfileid: "1850467"
 コンフィグレーション データ テンプレートは、データ プロジェクトで使用できる各モジュール領域のエンティティの事前定義リストです。 Microsoft Dynamics 365 for Finance and Operations の**データ管理**ワークスペース内の**テンプレート**ページを使用することにより、これらのテンプレートを作成、表示、および修正することができます。
 
 > [!IMPORTANT]
-> 既定のコンフィギュレーション テンプレートは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 7 月更新プログラムで配信されました。 コンフィギュレーション データ プロジェクト機能は、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 7 でが利用可能です。 現在の製品リリースで、自分自身のテンプレートを作成および使用することができます。
+> 標準で利用可能となっている既定の設定テンプレートは、常に最新バージョンのエンティティで構成されています。 テンプレートは、必要に応じて既存のデータプロジェクトを元にして作成することができます。
 
 ## <a name="create-a-new-configuration-data-template"></a>新しいコンフィギュレーション データ テンプレートを作成する
 **データ管理** ワークスペースの **テンプレート** ページには、エンティティのテンプレートを作成できるようにするためのツールが用意されています。 このページは設定ページに似ており、2 つの機能は同じように動作します。 新しい機能を活用するには、**拡張ビュー** を使用する必要があります。

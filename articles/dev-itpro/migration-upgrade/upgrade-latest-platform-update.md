@@ -1,9 +1,9 @@
 ---
 title: 最新のプラットフォーム更新プログラムを環境へ適用
-description: ここでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 環境に最新のプラットフォーム リリースを適用する方法について説明します。
+description: ここでは、Microsoft Dynamics 365 Finance and Operations Enterprise Edition 環境に最新のプラットフォーム リリースを適用する方法について説明します。
 author: tariqbell
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 7b1cc727194c501f5c77ef5cbcff86964f42e30a
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 8c7769e23f7608a6f632559e662e32a5c53f1cf9
+ms.sourcegitcommit: 109a6ef2d20758dc4a25c51b11e22dd2214a1cc4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1851655"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886685"
 ---
 # <a name="apply-the-latest-platform-update-to-environments"></a>最新のプラットフォーム更新プログラムを環境へ適用
 
@@ -41,7 +41,7 @@ Microsoft Dynamics 365 for Finance and Operations プラットフォーム は�
     -   Test Essentials
 
 > [!IMPORTANT]
-> 最新の Finance and Operations プラットフォームに移行するためには、Finance and Operations の実装で、プラットフォームに属する AOT パッケージのカスタマイズ (オーバーレイヤー) を行うことは**できません**。 この制限は、プラットフォーム更新 3 で導入されたため、プラットフォームにシームレスに継続的な更新を行うことができます。 プラットフォーム 更新プログラム 3 よりも古いプラットフォームで実行している場合、[以前のビルドからプラットフォーム更新プログラム 3 にアップグレードする](#upgrading-to-platform-update-3-from-an-earlier-build) というセクションを参照します。
+> 最新の Finance and Operations プラットフォームに移行するためには、Finance and Operations の実装で、プラットフォームに属する AOT パッケージのカスタマイズ (オーバーレイヤー) を行うことは**できません**。 この制限は、プラットフォーム更新 3 で導入されたため、プラットフォームにシームレスに継続的な更新を行うことができます。 
 
 ## <a name="overall-flow"></a>全体的な流れ
 次の図は、Finance and Operations プラットフォームを最新の更新プログラムにアップグレードするための全体的なプロセスを示しています。
@@ -175,39 +175,6 @@ Microsoft SQL Server の統合サービスの早期リリースに接続して�
 ### <a name="apply-the-platform-update-package"></a>プラットフォーム更新プログラム パッケージを適用
 
 更新プログラムのビルド環境を準備した後、他の環境で使用する同じメソッドでプラットフォームの更新プログラム パッケージを適用します。
-
-## <a name="upgrading-to-platform-update-3-from-an-earlier-build"></a>以前のビルドからプラットフォーム更新プログラム 3 へのアップグレード
-以前のビルドからプラットフォーム アップデート 3 にアップグレードする場合、アップデート 3 の 2 つの重要な変更のためにいくつかの非常に重要な考慮事項があります。
-
-- プラットフォーム モデル (アプリケーション プラットフォーム、アプリケーション基準、Test Essentials) をオーバーレイすることはできなくなりました。
-- すべての X++ の修正プログラムをバージョン管理下にあるプラットフォームまで削除する必要があります (下記のセクションを参照してください)
-- ディレクトリ モデルはプラットフォームには存在しなくなり、Finance and Operations リリース 1611 でアプリケーションに移動しました。
-
-これは、2 つのことを意味します。
-
-1.  プラットフォーム更新プログラム 3 のみを使用し、アプリケーションの更新プログラム (Finance and Operations バージョン 1611) を使用しない場合、次のどのモデルでもオーバーレイすることはできません。 更新プログラム 3 をインストールする前に、これらのモデルのすべてのオーバーレイヤを削除する必要があります。
-    -   アプリケーション プラットフォーム
-    -   アプリケーション基準
-    -   Test Essentials
-    -   Directory
-
-2.  ディレクトリ モデルからオーバーレイを削除できなくてもアップグレードする必要がある場合は、[Finance and Operations の最新アップデートへの移行概要](upgrade-latest-update.md)に記載されているように、プラットフォームとアプリケーション (Finance and Operations version 1611) を完全にアップグレードする必要があります。
-
-### <a name="delete-platform-metadata-hotfixes-from-your-azure-devops-project-platform-update-2-or-earlier"></a>Azure DevOps プロジェクト (プラットフォーム アップデート 2、またはそれ以前) から、プラットフォーム メタデータの修正プログラムの削除
-
-> [!NOTE]
-> このセクションは、既にプラットフォーム更新プログラム 3 および新しいプラットフォームに更新している場合には関係ありません。
-
-新しいプラットフォーム更新プログラムをインストールする前に、Microsoft Azure DevOps ソース コントロール プロジェクトをクリーンアップする必要があります。
-既存のプラットフォームにインストールしたすべての X++ またはメタデータの修正プログラムを削除します。 次の Microsoft モデルのいずれかの Azure DevOps プロジェクトでチェックされている X++ またはメタデータの修正プログラムがある場合は、Microsoft Visual Studio のソース管理エクスプローラーを使用してプロジェクトから削除します。
-
--   アプリケーション プラットフォーム
--   アプリケーション基準
--   TestEssentials
--   Directory
-
-これらの修正プログラムは、Microsoft モデルでこれらのチェックイン履歴を参照することにより見つけることができます。 たとえば、ソース管理エクスプローラーを使用して、Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation フォルダーのチェックイン履歴を参照し、チェックインされているすべての XML ファイルを削除します。
-![履歴の表示](./media/checkinhistory.png)
 
 <a name="additional-resources"></a>追加リソース
 --------

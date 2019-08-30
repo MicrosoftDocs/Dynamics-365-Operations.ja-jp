@@ -1,9 +1,9 @@
 ---
-title: Azure Event Grid を使用したビジネス イベントの消費
+title: ビジネス イベントおよび Azure イベント グリッド
 description: このトピックでは、Finance and Operations コネクタを介して Azure イベント グリッドで使用可能となるビジネス イベントに関する情報を提供します。
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/24/2019
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: imbenbou
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: f9e0a133d300648042af7f9b230121c6e90c7883
-ms.sourcegitcommit: 6c4fab381c8974e9aef4421058f31c9917806a45
+ms.openlocfilehash: 3da9a06df7d98a67d1f12af7d2e8c6881eb064f9
+ms.sourcegitcommit: 575987f82bb33656d246cf12546b4922b4891d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "1788351"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871131"
 ---
-# <a name="consume-business-events-by-using-azure-event-grid"></a>Azure Event Grid を使用したビジネス イベントの消費
+# <a name="business-events-and-azure-event-grid"></a>ビジネス イベントおよび Azure イベント グリッド
 [!include[banner](../../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations で Microsoft Azure イベント グリッド エンドポイントを構成する方法と、イベント グリッドからビジネス イベントを消費する方法について説明します。

@@ -3,7 +3,7 @@ title: X++ 文字列ランタイム関数
 description: このトピックでは、文字列ランタイム関数について説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3c48225e32d0b071678b48d5d94b04ff5849935
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 4351ac324044b44a16cb64f20af79f0f5b1cc23d
+ms.sourcegitcommit: e552111e148a80544a3468da60ea0464f02a658d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833598"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "1875334"
 ---
 # <a name="x-string-runtime-functions"></a>X++ 文字列ランタイム関数
 
@@ -52,143 +52,87 @@ ms.locfileid: "1833598"
 
 検索では大文字と小文字が区別されません。 次の特殊文字を使用して、*pattern* パラメーターのパターンを作成できます。
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>特徴</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>&lt;/td&gt;
-<td>バックスラッシュ () は、特殊文字の特別な扱いを無効にしたりエスケープしたりするため、特殊文字を通常の文字のように一致させることができます。 バックスラッシュのペアは、1 つの非特殊バックスラッシュに変換されます。 例
-<ul>
-<li><strong>照合 (&quot;ab$cd&quot;、&quot;ab$cd&quot;);</strong> は、<strong>0</strong> を返します。</li>
-<li><strong>照合 (&quot;ab$cd&quot;、&quot;ab$cd&quot;);</strong> は、<strong>0</strong> を返します。 バックスラッシュはエスケープされません。</li>
-<li><strong>照合 (&quot;ab$cd&quot;、&quot;ab$cd&quot;);</strong> は、<strong>1</strong> を返します。 バックスラッシュとドル記号はエスケープされます。</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>&lt; または ^</td>
-<td>式の先頭にある始め山かっこ (&lt;) またはサーカムフレックス (^) は、明細行の始まりと照合するために使用します。 例
-<ul>
-<li><strong>照合 (&quot;&lt;abc&quot;、&quot;abcdef&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;&lt;abc&quot;、&quot;defabc&quot;);</strong> は、<strong>0</strong> を返します。</li>
-<li><strong>照合 (&quot;^abc&quot;、&quot;abcdef&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;^abc&quot;、&quot;defabc&quot;);</strong> は、<strong>0</strong> を返します。</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>&gt; または $</td>
-<td>式の最後の終わり山かっこ (&gt;) またはドル記号 (?) は、明細行の末尾と照合するために使用されます。 例
-<ul>
-<li><strong>照合 (&quot;abc&gt;&quot;、&quot;abcdef&quot;);</strong> は、<strong>0</strong> 返します。</li>
-<li><strong>照合 (&quot;abc&gt;&quot;、&quot;defabc&quot;);</strong> は、<strong>1</strong> を返します。</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>? or .</td>
-<td>疑問符 (?) またはピリオド (.) は、同じ位置にある任意の 1 文字と一致します。 例
-<ul>
-<li><strong>照合 (&quot;abc.def&quot;、&quot;abc#def&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;colou?r&quot;、&quot;colouXr&quot;);</strong> は、<strong>1</strong> を返します。</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>:x</td>
-<td>直後の文字が示すように、コロンは、一致する文字のグループを指定します。</td>
-</tr>
-<tr class="even">
-<td>:a</td>
-<td>文字に一致を設定します。 例
-<ul>
-<li><strong>照合 (&quot;ab:acd&quot;、&quot;ab#cd&quot;);</strong> は、<strong>0</strong> を返します。</li>
-<li><strong>照合 (&quot;ab:acd&quot;、&quot;abxyzcd&quot;);</strong> は、<strong>0</strong> を返します。</li>
-<li><strong>照合 (&quot;ab:acd&quot;、&quot;abxcd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>:d</td>
-<td>数字に一致を設定します。 例
-<ul>
-<li><strong>照合 (&quot;ab:dcd&quot;、&quot;ab3cd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;ab:dcd&quot;、&quot;ab123cd&quot;);</strong> は、<strong>0</strong> を返します。</li>
-<li><strong>照合 (&quot;ab:dcd&quot;、&quot;abcd&quot;);</strong> は、<strong>0</strong> を返します。</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>:n</td>
-<td>英数字に一致を設定します。 例
-<ul>
-<li><strong>照合 (&quot;ab:ncd&quot;、&quot;ab%cd&quot;);</strong> は、<strong>0</strong> を返します。</li>
-<li><strong>照合 (&quot;ab:ncd&quot;、&quot;ab9cd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;ab:ncd&quot;、&quot;abXcd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>:SPACE</td>
-<td>SPACE は、空白文字 ( ) です。 空白、タブ、および Enter (改行文字) などの制御文字を入力するには、一致を設定します。 例
-<ul>
-<li><strong>照合 (&quot;ab: cd&quot;、&quot;ab cd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;ab: cd&quot;,&quot;ab\ncd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;ab: cd&quot;,&quot;ab\tcd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;ab: cd&quot;、&quot;ab cd&quot;);</strong> は、<strong>0</strong> を返します。 最初のスペースのみ一致します。</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><em></td>
-<td>アスタリスク (</em>) の後に続く式には、前の式に 0、1、またはそれ以上の一致が必要です。 例
-<ul>
-<li><strong>一致(&quot;abc<em>d&quot;,&quot;abcccd&quot;);</strong> <strong>1</strong>を返します。</li>
-<li><strong>照合 (&quot;abc</em>d&quot;、&quot;abcd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>一致(&quot;abc<em>d&quot;,&quot;abcccd&quot;);</strong> <strong>1</strong>を返します。</li>
-<li><strong>照合 (&quot;abc</em>d&quot;、&quot;abxd&quot;);</strong> は、<strong>0</strong> を返します。</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>+</td>
-<td>プラス記号 (+) の後に続く式には、前の式に 1 またはそれ以上の一致が必要です。 例
-<ul>
-<li><strong>照合 (&quot;abc+d&quot;、&quot;abd&quot;);</strong> は、<strong>0</strong> を返します。</li>
-<li><strong>照合 (&quot;abc+d&quot;、&quot;abcd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;abc+d&quot;、&quot;abcccd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;abc+d&quot;、&quot;abxd&quot;);</strong> は、<strong>0</strong> を返します。</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>-</td>
-<td>マイナス記号 (-) の後に続く式には、前の式に 0 または 1 を一致させる必要があります。 つまり、前の式はオプションです。 例
-<ul>
-<li><strong>照合 (&quot;colou-r&quot;、&quot;color&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;colou-r&quot;、&quot;colour&quot;);</strong> は、<strong>1</strong> を返します。</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>[]</td>
-<td>かっこで囲まれた任意の文字と 1 つの文字を照合します。 文字の範囲は、マイナス記号 (-) で区切られた 2 つの文字で指定することができます。 たとえば、<strong>[a-z]</strong>は a ～ z のすべての文字に一致し、<strong>[0-9]</strong> は数字と一致し、さらに <strong>[0-9a-f]</strong> は 16 進数に一致します。 例
-<ul>
-<li><strong>照合 (&quot;[abc]&quot;、&quot;apple&quot;);</strong> は、&quot;apple.&quot; の a が一致するので<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;[abc]&quot;,&quot;kiwi&quot;);</strong> は、&quot;kiwi&quot; に a、b、c が含まれていないため、<strong>0</strong> を返します。</li>
-<li><strong>照合 (&quot;gr[ae]y&quot;、&quot;grey&quot;);</strong> は、1 を返します。 この式は、&quot;灰色&quot;と一致します。</li>
-<li><strong>照合 (&quot;gr[ae]y&quot;、&quot;graey&quot;);</strong> は、&quot;gr&quot; と &quot;y&quot; の間で、1 つの文字だけが一致したため、<strong>0</strong> を返します。</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>[^]</td>
-<td>かっこで囲まれたテキスト内で最初の文字が曲折記号 (^) の場合は、かっこで囲まれた文字を除き、式はすべての文字と一致します。 例
-<ul>
-<li><strong>照合 (&quot;[^bc]at&quot;、&quot;bat&quot;);</strong> は、<strong>0</strong> を返します。</li>
-<li><strong>照合 (&quot;[^bc]at&quot;、&quot;hat&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;[^abc]&quot;、&quot;bat&quot;);</strong> は、<strong>1</strong> を返します。 a、b、または c 以外は一致します。 したがって、t が一致します。</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
++ **\\** バックスラッシュ (**\\**) は、特殊文字の特別な扱いを無効にしたりエスケープしたりするため、特殊文字を通常の文字のように一致させることができます。 バックスラッシュのペアは、1 つの非特殊バックスラッシュに変換されます。 例
+
+    + **照合 ("ab$cd","ab$cd");** は、**0** を返します。 
+    + **照合 ("ab\\$cd","ab$cd");** は、**0** を返します。 バックスラッシュはエスケープされません。
+    + **照合 ("ab\\\\$cd","ab$cd");** は、**1** を返します。 バックスラッシュとドル記号はエスケープされます。
+
++ **< または ^**: 式の先頭にある始め山かっこ (**<**) またはサーカムフレックス (**^**) は、明細行の始まりと照合するために使用します。 例
+
+    + **照合 ("<abc","abcdef");** は、 **1** を返します。 
+    + **照合 ("<abc","defabc");** は、**0** を返します。 
+    + **照合 ("^abc","abcdef");** は、 **1** を返します。 
+    + **照合 ("^abc","defabc");** は、**0** を返します。 
+
++ **> または $**: 式の最後の終わり山かっこ (**>**;) またはドル記号 (**$**) は、明細行の末尾と照合するために使用されます。 例
+
+    + **照合 ("abc>","abcdef");** は、**0** を返します。 
+    + **照合 ("abc>","defabc");** は、**1** を返します。 
+
++ **? または .**: 疑問符 (**?**) またはピリオド (**.**) は、同じ位置にある任意の 1 文字と一致します。 例
+
+    + **照合 ("abc.def","abc#def");** は、**1** を返します。 
+    + **照合 ("colou?r","colouXr");** は、**1** を返します。 
+
++ **:x**: コロン (**:**) は、直後の文字が示すように、一致する文字のグループを指定します。
+
++ **:a**: 文字に一致を設定します。 例
+
+    + **照合 ("ab:acd","ab#cd");** は、**0** を返します。 
+    + **照合 ("ab:acd","abxyzcd");** は、**0** を返します。 
+    + **照合 ("ab:acd","abxcd");** は、**1** を返します。 
+
++ **:d**: 数字に一致を設定します。 例
+
+    + **照合 ("ab:dcd","ab3cd");** は、**1** を返します。 
+    + **照合 ("ab:dcd","ab123cd");** は、**0** を返します。 
+    + **照合 ("ab:dcd","abcd");** は、**0** を返します。 
+
++ **:n**: 英数字に一致を設定します。 例
+
+    + **照合 ("ab:ncd","ab%cd");** は、**0** を返します。 
+    + **照合 ("ab:ncd","ab9cd");** は、**1** を返します。 
+    + **照合 ("ab:ncd","abXcd");** は、**1** を返します。 
+
++ **:SPACE**: SPACE は、空白文字 ( ) です。 空白、タブ、および Enter (改行文字) などの制御文字を入力するには、一致を設定します。 例
+
+    + **照合 ("ab: cd","ab cd");** は、**1** を返します。 
+    + **照合 ("ab: cd","ab\ncd");** は、**1** を返します。 
+    + **照合 ("ab: cd","ab\tcd");** は、**1** を返します。 
+    + **照合 ("ab: cd","ab&nbsp;&nbsp;cd");** は、**0** を返します。 最初のスペースのみ一致します。 
+
++ **\***: アスタリスク ("\*") の後に続く式には、前の式に 0、1、またはそれ以上の一致が必要です。 例
+
+    + **照合 ("abc\*d","abd");**  は、**1** を返します。 
+    + **照合 ("abc\*d","abcd");** は、**1** を返します。 
+    + **照合 ("abc\*d","abcccd");** は、**1**を返します。 
+    + **照合 ("abc\*d","abxd");** は、**0** を返します。 
+
++ **\+**: アスタリスクおよびプラス記号 ("**\+**) の後に続く式には、前の式に 1、またはそれ以上の一致が必要です。 例
+
+    + **照合 ("abc+d","abd");** は、**0** を返します。 
+    + **照合 ("abc+d","abcd");** は、**1** を返します。 
+    + **照合 ("abc+d","abcccd");** は、**1** を返します。 
+    + **照合 ("abc+d","abxd");** は、**0** を返します。 
+
++ **\-** アスタリスクおよびマイナス記号 (**\-**) の後に続く式には、前の式に 0 または 1 を一致させる必要があります。 つまり、前の式はオプションです。 例
+
+    + **照合 ("colou-r","color");** は、**1** を返します。 
+    + **照合 ("colou-r","colour");** は、**1** を返します。 
+
++ **[]**: かっこで囲まれた任意の文字と 1 つの文字を照合します。 文字の範囲は、マイナス記号 (**-**) で区切られた 2 つの文字で指定することができます。 たとえば、**[a-z]** は a ～ z のすべての文字に一致し、**[0-9]** は数字と一致し、さらに **[0-9a-f]** は 16 進数に一致します。 例
+
+    + **照合 ("[abc]","apple");** は、"apple." の a が一致するので **1** を返します。 
+    + **照合 ("[abc]","kiwi");** は、"kiwi" に a、b、または c が含まれていないため、**0** を返します。 
+    + **照合 ("gr[ae]y","grey");** は、1 を返します。 この式は、”gray.” と一致します 
+    + **照合 ("gr[ae]y","graey");** は、 "gr" and "y" の間で、1 つの文字だけが一致したため、**0** を返します。 
+
++ **[^]**: かっこで囲まれたテキスト内で最初の文字が曲折記号 (**^**) の場合は、かっこで囲まれた文字を除き、式はすべての文字と一致します。 例
+
+    + **照合("[^bc]at","bat");** は、**0** を返します。 
+    + **照合("[^bc]at","hat");** は、**1** を返します。 
+    + **照合("[^abc]","bat");** は、**1** を返します。 a、b、または c 以外は一致します。 したがって、t が一致します。 
 
 ## <a name="stralpha"></a>strAlpha
 文字列の英数字のみをコピーします。
@@ -462,20 +406,17 @@ Unicode 互換機能は、**DLL** および **DLLFunc** クラスを通じて Wi
 
 ### <a name="remarks"></a>備考
 
-文字列の最初の行には 0 のオフセットがあります。 文字列に *n* または *rn* 文字を埋め込むことにより、複数行を1 つの文字列に割り当てることができます。 また、開始引用符の直前にアット マーク (@) を使用することができ、Enter キーを使用して文字列値の一部を X++ コード エディタの複数の行に分散させることができます。
+文字列の最初の行には 0 のオフセットがあります。 文字列に *\n* または *\r\n* 文字を埋め込むことにより、複数行を1 つの文字列に割り当てることができます。 また、開始引用符の直前にアット マーク (@) を使用することができ、Enter キーを使用して文字列値の一部を X++ コード エディタの複数の行に分散させることができます。
 
 ### <a name="example"></a>例
 
-    static void strLineExample(Args _arg)
-    {
-            str mytxt = "first-linensecond-linenlast-line";
-            ;
-            // Prints "second-line".
-            print strLine(mytxt,1);
-            // Prints "last-line".
-            print strLine(mytxt,2);
-            pause;
-    }
+```X++
+str mytxt = "first-line\nsecond-line\nlast-line";
+// Prints "second-line".
+print strLine(mytxt,1);
+// Prints "last-line".
+print strLine(mytxt,2);            
+```
 
 ## <a name="strltrim"></a>strLTrim
 テキスト文字列から先行する空白を削除します。

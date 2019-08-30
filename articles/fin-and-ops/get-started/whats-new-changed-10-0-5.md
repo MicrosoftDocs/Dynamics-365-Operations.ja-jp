@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: edbb72d2bcdaa9b550c0f67b19d5bb57ea0fd830
-ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
+ms.openlocfilehash: 8967010adf6260434490a88a31d882b91cdcc6b3
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/06/2019
-ms.locfileid: "1863814"
+ms.locfileid: "1864217"
 ---
 # <a name="preview-features-in-finance-and-operations-version-1005-october-2019"></a>Finance and Operations バージョン 10.0.5 (2019 年 10 月) の機能のプレビュー
 
@@ -83,7 +83,7 @@ Microsoft Dynamics 365 for Retail の新機能と変更についての最新の�
 予測ポジションの既定の分析コードがあなたの組織の勘定科目表に対して適切であるかどうかを検証できます。 予測ポジションに対して、**予測ポジション** ページで、アクション] ウインドウで **検証** を選択して、予測ポジションの財務分析コードの設定が有効かどうかを確認します。 この検証は簡単で、予測ポジションから予算計画を生成する前にエラーを識別するのに役立ちます。 **予測ポジション** ページでは、複数の予測ポジションを同時に検証することもできます。
 
 ## <a name="deferred-put"></a>繰延プット
-繰延処理機能では、入力操作がバックグラウンドで処理されている間でも、倉庫作業者は他の作業を続行できます。 遅延処理は、多くの作業明細行を処理する必要があり、作業者がその作業を非同期に処理できるようにする場合に便利です。 また、サーバーが処理時間の増加をアドホックまたは計画外でおこない、増加した処理時間がユーザーの生産性に影響を与える可能性がある場合にも役立ちます。
+繰延処理機能では、入力操作がバックグラウンドで処理されている間でも、倉庫作業者は他の作業を続行できます。 繰延処理では、多くの作業明細行を処理する必要があり、作業者がその作業を非同期に処理できるようにする場合に便利です。 また、サーバーが処理時間の増加をアドホックまたは計画外でおこない、増加した処理時間がユーザーの生産性に影響を与える可能性がある場合にも役立ちます。
 
 詳細については、[倉庫作業の遅延処理](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/deferred-put)を参照してください。
 
@@ -93,7 +93,7 @@ Microsoft Dynamics 365 for Retail の新機能と変更についての最新の�
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="bug-fixes"></a>バグ修正
-Finance and Operations 10.0.5 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=320385&dbType=3&qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34)を参照してください。
+Finance and Operations 10.0.5 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=348248&dbType=3&qc=71f7c009fafc56f21399d05a7062454208256c806b7f5c706a89f4452964c26e)を参照してください。
 
 ### <a name="platform-update-29"></a>プラットフォーム update 29
 Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.5 には、プラットフォーム更新プログラム 29 が含まれています。 プラットフォーム更新 29 についての詳細は、[Finance and Operations プラットフォーム更新 29 (October 2019 年 10 月) の機能プレビュー](whats-new-platform-update-29.md) を参照してください。

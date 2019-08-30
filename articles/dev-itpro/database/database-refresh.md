@@ -3,7 +3,7 @@ title: データベースの更新
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースの更新を実行する方法について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 231e9687a325bc5840f8d46078f92acb11622c3f
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 93e2be3c0d83b14e12c618dc946c13c24df828fe
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1848163"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886588"
 ---
 # <a name="refresh-database"></a>データベースの更新
 
@@ -40,7 +40,6 @@ ms.locfileid: "1848163"
 2. **データベースの選択** オプションを選択し、ソース環境を選択します。
 3. 警告に注意し、ソース環境からコピーされていないデータの要素の一覧を確認します。
 4. 更新操作がすぐに開始されます。
-5. 更新操作が完了したら、パッケージ展開、データベース移動、アップグレードなどの別のサービス操作を実行する前に、工程で**サインオフ**する必要があります。
 
 ### <a name="refresh-operation-failed"></a>更新操作が失敗しました
 失敗した場合、ロールバックを実行するオプションを使用できます。  工程が最初に失敗した後に**ロールバック** オプションをクリックすると、対象となるサンドボックス環境が更新の開始前の状態に戻されます。 Azure SQL ポイントインタイム復元機能により、データベースを復元できるようになります。 新しく更新されたデータでデータベースの同期を完了できないをターゲット サンドボックスにカスタマイズがある場合は、これがよく必要になります。
@@ -56,7 +55,8 @@ ms.locfileid: "1848163"
 * SysEmailParameters テーブルの SMTP 中継サーバー。
 * PrintMgmtSettings と PrintMgmtDocInstance テーブルの印刷管理設定。
 * SysServerConfig、SysServerSessions、SysCorpNetPrinters、SysClientSessions、BatchServerConfig、および BatchServerGroup テーブル内の環境固有のレコード。
-* DocuValue テーブル内のドキュメント添付ファイル。
+* DocuValue テーブル内のドキュメント添付ファイル。 これには元の環境で無効化されたオフィスのテンプレートが含まれます。
+* PersonnellIntegrationConfiguration テーブルのの接続文字列。
 * 管理者以外のすべてのユーザーは **無効** のステータスに設定されます。
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 
@@ -70,7 +70,6 @@ web.config ファイルを別の値に変更するために環境で管理者ユ
 ### <a name="conditions-of-a-database-refresh"></a>データベース更新の条件
 データベース更新の操作の要件および条件の一覧を次に示します。
 
-- パッケージの展開や事前データベース更新など、環境の詳細ページから以前のサービス操作を*サインオフする必要があります*。
 - 更新により、ターゲット環境の既存のデータベースが消去されます。 更新が完了すると、既存のデータベースを復元することはできません。
 - 更新プロセスが完了するまで、ターゲット環境は使用できなくなります。
 - リフレッシュは、Finance and Operations and Financial Reporting データベースにのみ影響します。
@@ -85,8 +84,8 @@ web.config ファイルを別の値に変更するために環境で管理者ユ
 
 ## <a name="known-issues"></a>既知の問題
 
-### <a name="refresh-is-denied-for-environments-running-platform-update-12-or-earlier"></a>プラットフォーム アップデート 12 以前を実行する環境で更新が拒否される
-Microsoft Dynamics 365 for Finance and Operations 、Enterprise Edition のプラットフォームアップデート 12 (2017年 11月) 更新版 またはそれ以前の環境で動作している場合は、データベース更新の処理を実行することはできません。 詳細は、[現在サポートされているプラットフォーム更新の一覧](../migration-upgrade/versions-update-policy.md)を参照してください。
+### <a name="refresh-is-denied-for-environments-running-platform-update-11-or-earlier"></a>プラットフォーム アップデート 11 以前を実行する環境で更新が拒否される
+環境が Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム11 またはそれ以前で稼働している場合は、データベースの更新プロセスを完了することができません。 詳細は、[現在サポートされているプラットフォーム更新の一覧](../migration-upgrade/versions-update-policy.md)を参照してください。
 
 ### <a name="incompatible-version-of-financial-reporting-between-source-and-target-environments"></a>ソース環境とターゲット環境間での財務報告の互換性のないバージョン
 実行対象とする環境の財務報告のバージョンが実行元の環境よりも古い場合は、データベースの更新プロセス (セルフサービスまたはサービス要求経由) を正常に完了できません。 この問題を解決するには、両方の環境で財務報告が最新バージョンとなるように更新を行ってください。

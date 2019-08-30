@@ -3,7 +3,7 @@ title: 最新バージョンへのセルフサービス アップグレード
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の最新の更新バージョンに移行するプロセスについて説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7b2fa2f75d9a018b2ffe192026eb5aefe6491994
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 41bc9ffa9eaeabf77849670da76adabdd307b8fd
+ms.sourcegitcommit: 109a6ef2d20758dc4a25c51b11e22dd2214a1cc4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506202"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886687"
 ---
 # <a name="self-service-upgrade-to-the-latest-version"></a>最新バージョンへのセルフサービス アップグレード
 
@@ -29,7 +29,6 @@ ms.locfileid: "1506202"
 > [!IMPORTANT]
 > このトピックは、次の開始バージョンに適用されます:
 >
-> - Microsoft Dynamics AX 7.0 (2016 年 2 月)
 > - Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) (バージョン 7.1 とも呼ばれます)
 > - Microsoft Dynamics 365 for Finance and Operations Enterprise edition (2017 年 7 月) (バージョン 7.2 とも呼ばれます)
 > - Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3
@@ -64,6 +63,7 @@ ms.locfileid: "1506202"
 | 7.3 の PU 24 – PU 26<br>10.0.0 の PU 24 – 10.0.2 の PU 26 | 2019年5月13日の週 | 2019 年 5 月 27 日の週 |
 | 7.3 の PU 25 – PU 27<br>10.0.1 の PU 25 – 10.0.3 の PU 27 | 2019年6月10日の週 | 2019 年 6 月 24 日の週 |
 | 7.3 の PU 26 – PU 28<br>10.0.2 の PU 26 – 10.0.4 の PU 28 | 2019年7月8日の週 | 2019 年 7 月 29 日の週 |
+| 7.3 の PU 27 – PU 29<br>10.0.3 の PU 27 – 10.0.5 の PU 29 | 2019 年 10 月 7 日の週 | 2019 年 10 月 21 日の週 |
 
 ## <a name="refactor-your-customizations-as-extensions"></a>カスタマイズを拡張機能としてリファクターします
 

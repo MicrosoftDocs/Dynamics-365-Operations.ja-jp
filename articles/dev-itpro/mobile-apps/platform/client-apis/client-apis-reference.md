@@ -1,9 +1,9 @@
 ---
-title: モバイル プラットフォーム クライアント API
+title: クライアント API のホームページ
 description: モバイル プラットフォーム クライアント API
 author: shadykdc
 manager: AnnBe
-ms.date: 08/09/2017
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,26 +15,26 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: 08/09/2017
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3364e78d2b9a0d4ce37e1e26ba6658697f4fdb4a
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 3d5f1d2d3c9b48b73d46b2144c64019c1c375d62
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1851641"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864318"
 ---
-# <a name="mobile-platform-client-apis"></a>モバイル プラットフォーム クライアント API
+# <a name="client-apis-home-page"></a>クライアント API のホームページ
 
 [!include [banner](../../../includes/banner.md)]
 
-* [アプリケーション](modules/services-application.md)
+* [申請](modules/services-application.md)
 
-  * [アプリケーション](interfaces/services-application-iapplication.md)
+  * [申請](interfaces/services-application-iapplication.md)
 
   * [ApplicationMetadata](interfaces/services-application-iapplicationmetadata.md)
 
   * [main](modules/services-application.md#main)
 
-* [コントロール](modules/view-model-control-basecontrol-icontrol.md)
+* [管理](modules/view-model-control-basecontrol-icontrol.md)
 
   * [コンテナ](modules/view-model-control-container-icontainercontrol.md)
 

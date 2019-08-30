@@ -1,9 +1,9 @@
 ---
-title: グローバリゼーション
+title: グローバリゼーション リソース
 description: このトピックでは、国/地域固有の機能および提供内容について詳しく説明しているリソースの一覧を示します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d2fe0b357edf3594aa7d795eb2a15f03a886d79
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 668a24c54ded798658a136b8482823b595962306
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850618"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864969"
 ---
-# <a name="globalization"></a>グローバリゼーション
+# <a name="globalization-resources"></a>グローバリゼーション リソース
 
 ## <a name="local-and-regional-deployments"></a>ローカルおよび地域での展開
 政府規制によって、他の国/地域とは異なる方法で、データを保管またはサービスを提供することが要求される場合は、Finance and Operations を展開する際に考慮する必要がある国/地域固有の要件が存在する可能性があります。 関連する可能性のある次のリソースを検討してください。

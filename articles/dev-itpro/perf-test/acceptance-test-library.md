@@ -1,9 +1,9 @@
 ---
-title: 承認テスト ライブラリ
+title: 承認テスト ライブラリ のリソース
 description: このトピックでは承認テスト ライブラリに関する情報を提供します。
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 887f2e29d7dfc59bd8c2c141aea425fe01ac043c
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 9f71b1d13d4e2d7ad2507ff9a97e6545ca35d44b
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833302"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864220"
 ---
-# <a name="acceptance-test-library"></a>承認テスト ライブラリ
+# <a name="acceptance-test-library-resources"></a>承認テスト ライブラリ のリソース
 
 [!include [banner](../includes/banner.md)]
 

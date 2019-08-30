@@ -1,9 +1,9 @@
 ---
-title: データ管理
+title: データ管理の概要
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータ管理について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e62e78e505806534882518aaa128051adc305db1
-ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
+ms.openlocfilehash: 5f70d49bb665e7f65fe4b67d6c991a016f6ed18e
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/06/2019
-ms.locfileid: "1863686"
+ms.locfileid: "1864680"
 ---
-# <a name="data-management"></a>データ管理
+# <a name="data-management-overview"></a>データ管理の概要
 
 [!include [banner](../includes/banner.md)]
 

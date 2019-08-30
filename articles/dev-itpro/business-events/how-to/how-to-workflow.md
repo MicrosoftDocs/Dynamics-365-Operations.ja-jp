@@ -1,9 +1,9 @@
 ---
-title: ワークフロー承認ビジネス イベントの消費
+title: ビジネス イベントおよびワークフローの承認
 description: このトピックでは Microsoft Flow を使用して購買申請を承認するワークフロー ビジネス イベントを構成して使用する方法を説明します。
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/24/2019
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: imbenbou
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 31a2d7c9c79f5f32147e2f0f2a773ffc7ce9eaf1
-ms.sourcegitcommit: 6c4fab381c8974e9aef4421058f31c9917806a45
+ms.openlocfilehash: d96f5a0d1d7321f2e6459921f820b6ced4467bf1
+ms.sourcegitcommit: 575987f82bb33656d246cf12546b4922b4891d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "1788352"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871132"
 ---
-# <a name="consume-workflow-approval-business-events"></a>ワークフロー承認ビジネス イベントの消費
+# <a name="business-events-and-workflow-approvals"></a>ビジネス イベントおよびワークフローの承認
 [!include [banner](../../includes/banner.md)]
 
 このトピックでは Microsoft Flow を使用して購買申請を承認するワークフロー ビジネス イベントを構成して使用する方法を説明します。

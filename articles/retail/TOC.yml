@@ -26,9 +26,10 @@
       href: retail-support.md
     - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
       href: ../fin-and-ops/get-started/one-version.md
-- name: 実装ライフサイクルの理解
-  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+- name: 実装ライフサイクル管理
   items:
+    - name: 実装ライフサイクル管理ホーム ページ
+      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
     - name: Microsoft FastTrack for Dynamics 365
       href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
     - name: オンボード
@@ -165,6 +166,8 @@
       href: retail-hardware-station-configuration-installation.md
     - name: Retail の時刻と出勤
       href: retail-time-attendance.md
+    - name: 店舗の営業時間の作成と変更
+      href: dev-itpro/store-hours.md
 - name: Modern Point of Sale (MPOS) および Cloud POS
   items:
     - name: MPOS か Cloud POS かの選択
@@ -317,8 +320,10 @@
       href: create-manage-attributes.md
     - name: 小売製品の設定
       href: set-up-retail-products.md
-    - name: Retail 製品カテゴリおよび製品の管理
+    - name: 小売製品カテゴリおよび製品の管理
       href: category-management-product-creation.md
+    - name: 販売促進エンティティの並べ替え順序の変更
+      href: custom-order-categories-nav-retail-prod-hierarchy.md
     - name: 製品分析コード
       href: ../supply-chain/pim/product-dimensions.md
     - name: バーコードの設定
@@ -499,9 +504,10 @@
       href: tasks/use-continuity-program.md
     - name: 小売作業者のコンフィギュレーション
       href: tasks/worker.md
-- name: 小売開発と管理
-  href: dev-itpro/dev-retail-home-page.md
+- name: Retail 開発と管理
   items:
+    - name: IT プロおよび開発者向け Retail
+      href: dev-itpro/dev-retail-home-page.md
     - name: アーキテクチャ
       items:
         - name: Retail のコンポーネント
@@ -598,6 +604,8 @@
           href: dev-itpro/view-pos-extension-package-details.md
     - name: Hardware Station の拡張機能
       href: dev-itpro/hardware-station-extensibility.md
+    - name: POS と新しいハードウェア デバイスの統合
+      href: dev-itpro/hardware-device-extension.md
     - name: Retail Server の拡張機能
       items:
         - name: Retail Server OData コントローラーの拡張
@@ -655,8 +663,9 @@
         - name: 支払コネクタの重複支払保護の有効化
           href: dev-itpro/duplicate-payment-protection.md
     - name: Retail SDK
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Retail SDK アーキテクチャ
+          href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Retail SDK の今後の変更
           href: dev-itpro/UpcomingSDKChanges.md
         - name: Retail および Finance and Operations 用ビルド システムのマージ
@@ -667,9 +676,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Retail SDK サンプル
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
-          items:
-            - name: 梱包明細の拡張ポイント
-              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: 梱包明細の拡張ポイント
+          href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: チャネル データベース拡張機能
           href: dev-itpro/channel-db-extensions.md
         - name: 拡張機能を介したカスタム CDX 同期の有効化

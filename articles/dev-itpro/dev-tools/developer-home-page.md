@@ -1,9 +1,9 @@
 ---
-title: 開発およびカスタマイズ
+title: ホームページの開発とカスタマイズ
 description: このトピックでは、開発に関するトピックへのリンクを提供します。
 author: RobinARH
 manager: AnnBe
-ms.date: 04/27/2018
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 307ae1a2b855186c2029bf0dd36ec4080df9b1f4
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: f17ae523c34af3e7ee9ac3e65613d72d51912fe3
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833558"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864250"
 ---
-# <a name="develop-and-customize"></a>開発およびカスタマイズ 
+# <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
 [!include [banner](../includes/banner.md)]
 

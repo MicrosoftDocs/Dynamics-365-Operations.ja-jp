@@ -3,7 +3,7 @@ title: Adyen 向け Dynamics 365 Payment Connector
 description: このトピックでは、Adyen 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: rassadi
 manager: AnnBe
-ms.date: 05/13/2019
+ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4ab7089c255e21e746f2b8531f352d8a3c5baaa8
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: c6abf4de2da25b0cbbf48a33c138155ab3dd4b79
+ms.sourcegitcommit: b7f70ee1e54c65c19e1d33c76d2428f9c6c05c66
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833109"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "1918478"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -90,6 +90,18 @@ ms.locfileid: "1833109"
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_38p5 |
+
+# <a name="1004tab10-0-4"></a>[10.0.4](#tab/10-0-4)
+### <a name="dynamics-365-for-retail-pos-version-1004"></a>Dynamics 365 for Retail POS バージョン 10.0.4
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_38p5 | adyen_v1_38p6 |
+
+# <a name="1005tab10-0-5"></a>[10.0.5](#tab/10-0-5)
+### <a name="dynamics-365-for-retail-pos-version-1005"></a>Dynamics 365 for Retail POS バージョン 10.0.5
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_38p5 | adyen_v1_40p6 |
 
 ---
 

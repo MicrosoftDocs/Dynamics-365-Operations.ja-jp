@@ -1,9 +1,9 @@
 ---
-title: IT プロおよび開発者向けのホーム ページ
+title: IT 専門家と開発者に向けた Retail の情報
 description: このページには、IT プロと Retail をサポートする開発者が利用できるリソースが一覧表示されています。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b9a24ef3b740ad38767068e0cf4115227013461f
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: d03017df1f9300fbd7af1b52dfd913f9315d10b5
+ms.sourcegitcommit: a2e562d2871623dbc584d4fc747ee138bd1f674d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833077"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "1870129"
 ---
-# <a name="retail-for-it-pros-and-developers-home-page"></a>IT プロおよび開発者向けのホーム ページ
+# <a name="retail-for-it-pros-and-developers"></a>IT 専門家と開発者に向けた Retail の情報
 
 [!include [banner](../includes/banner.md)]
 
@@ -91,6 +91,7 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 ## <a name="retail-hardware-station"></a>Retail ハードウェア ステーション
 -   [Retail ハードウェア ステーションのコンフィギュレーションとインストール](../retail-hardware-station-configuration-installation.md)
 -   [ハードウェア ステーションの拡張性](hardware-station-extensibility.md)
+-   [POSと新しいハードウェアデバイスの統合](hardware-device-extension.md)
 
 ## <a name="retail-store-scale-unit"></a>Retail Store Scale Unit
 -   [Retail Store Scale Unit の概要](retail-store-system-begin.md)
@@ -98,7 +99,7 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 
 ## <a name="commerce-runtime"></a>Commerce Runtime
 -   [Commerce Runtime の概要](commerce-runtime-overview.md)
--   [Commerce Rumtime の拡張機能 - トリガー](commerce-runtime-extensibility-trigger.md)
+-   [Commerce Runtime の拡張機能 - トリガー](commerce-runtime-extensibility-trigger.md)
 -   [顧客の基本設定データをチャンネル データベースに追加](add-customer-preference-channel.md)
 -   [プロパティを販売注文に追加](add-properties-sales-order.md)
 

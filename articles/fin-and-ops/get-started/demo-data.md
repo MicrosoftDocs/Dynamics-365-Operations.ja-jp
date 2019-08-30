@@ -1,9 +1,9 @@
 ---
-title: デモ データ
+title: デモ データの概要
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で使用可能なデモ データの概要を示します。
 author: sericks007
 manager: AnnBe
-ms.date: 07/05/2017
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: pmantha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7e27a07c456e22f29dd891211813c6ad0a2b2db
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f237027054268f51202a5686b7e6dc6f8b982cc8
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566566"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864246"
 ---
-# <a name="demo-data"></a>デモ データ
+# <a name="demo-data-overview"></a>デモ データの概要
 
 [!include [banner](../includes/banner.md)]
 
@@ -81,7 +81,7 @@ ms.locfileid: "1566566"
 
 現金の概要 Power BI コンテンツからのレポートが、**現金の概要**および**銀行管理**ワークスペースで表示されます。
 
-データでキャッシュ フロー予測レポートを表示するには、まず、**現金および銀行管理領域** から **キャッシュ フロー予測の計算** 機能を使用して、予測計算プロセスを実行する必要があります。 これは、予測に含める会社ごとに完了する必要があります。 次に、**エンティティ格納** ページで、[LedgerCovLiquidityMeasurement] 集計メジャーを更新する必要があります。
+データでキャッシュ フロー予測レポートを表示するには、まず、**現金および銀行管理領域** から **キャッシュ フロー予測の計算** 機能を使用して、予測計算プロセスを実行する必要があります。 これは、予測に含める会社ごとに完了する必要があります。 次に、**エンティティ格納** ページで、LedgerCovLiquidityMeasurement 集計メジャーを更新する必要があります。
 
 説明するには、**データの生成**ページを**デモ データ**モジュールから使用し、キャッシュ フロー予測デモ データを追加できます。 このスクリプトは、キャッシュ フロー予測テーブルにデータを挿入して、レポートに必要な情報をすばやく入力します。
 

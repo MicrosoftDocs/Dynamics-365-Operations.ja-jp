@@ -1,9 +1,9 @@
 ---
-title: Office の統合の概念と機能
+title: オフィス統合の概要
 description: このトピックでは、Microsoft Office の統合の概念と機能について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94b4f7f8947505c98b54ece43c9e14e53362b921
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 1e211903b4edd8024e9f27ba398aee9b0d05f683
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1851443"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864928"
 ---
-# <a name="office-integration-concepts-and-features"></a>Office の統合の概念と機能
+# <a name="office-integration-overview"></a>オフィス統合の概要
 
 [!include [banner](../includes/banner.md)]
 

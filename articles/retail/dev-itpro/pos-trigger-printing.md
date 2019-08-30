@@ -3,7 +3,7 @@ title: Retail Modern POS (MPOS) のトリガーと印刷
 description: トリガーを使用すると、いずれかの Retail Modern POS の操作前後に発生するイベントを取得できます。
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 30916a0d3e953da3c7f63293b84d5cd2e83c8d68
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 31bd7cbb4bf3de3c7f0bacdcbfdd0c6109026a1e
+ms.sourcegitcommit: e7834191b6eb14f525823075efcc1b1ab2c68463
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833744"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "1920438"
 ---
 # <a name="retail-modern-pos-mpos-triggers-and-printing"></a>Retail Modern POS (MPOS) のトリガーと印刷
 
@@ -183,6 +183,12 @@ ms.locfileid: "1833744"
 | PostCartCheckoutTrigger            | キャンセル不可 | チェックアウト プロセスの完了後に実行されます。     |
 | PreRecallTransactionTrigger        | 解約可能     | 顧客の注文がリコールされる前に実行されます。       |
 | PostRecallTransactionTrigger       | キャンセル不可 | 顧客の注文がリコールされた後に実行されます。        |
+
+## <a name="reason-code-triggers"></a>理由コード トリガー
+| トリガー              | 型           | 説明                                             |
+|----------------------|----------------|---------------------------------------------------------|
+| PostGetReasonCodeLine | 解約可能 | このトリガーは、理由コードが入力された後 (理由コードがカートに追加される前) に実行されます。 |
+
 
 ## <a name="business-scenario"></a>ビジネス シナリオ
 この例では、ユーザーがトランザクションを中断したときに、カスタム レシートが印刷されます。 この例では、**PostSuspendTransactionTrigger** トリガーを実装し、既存の周辺機器 API を使用してカスタム レシートを印刷します。

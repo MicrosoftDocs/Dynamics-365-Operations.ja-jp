@@ -3,7 +3,7 @@ title: データベース ポイントインタイム復元 (PITR)
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/25/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a75100be6f5e7382d203897e84eaec86a2d0cf1b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cc45764da592865c936d3641fddb52d9e46daef9
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544240"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886614"
 ---
 # <a name="database-point-in-time-restore-pitr"></a>データベース ポイントインタイム復元 (PITR)
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用し、Dynamics 365 for Finance and Operations サンドボックス ユーザー受け入れテスト (UAT) 環境のポイントインタイム復元 (PITR) を実行できます。 
+Microsoft Dynamics Lifecycle Services (LCS) を使用し、Dynamics 365 for Finance and Operations サンドボックス ユーザー受け入れテスト (UAT) 環境のポイントインタイム復元 (PITR) を実行できます。 Microsoft は、最大で30日間、 Microsoft Azure SQL の既定の設定にしたがって [自動化バックアップ](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) を維持します。  
 
 ## <a name="self-service-point-in-time-restore"></a>セルフサービスポイントインタイム復元
 [!include [pitr](../includes/dbmovement-pitr.md)]
