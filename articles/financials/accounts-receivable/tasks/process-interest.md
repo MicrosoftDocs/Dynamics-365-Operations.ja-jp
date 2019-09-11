@@ -3,7 +3,7 @@ title: 利息の処理
 description: この手順では、利子計算書の作成、印刷、および転記の方法を示します。
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,55 +16,55 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fba25c900461fbbf4db0cd3b93847d258704ab4e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7170a7a14237058064ed3091e9437cae312e6bd5
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1842884"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916279"
 ---
-# <a name="process-interest"></a><span data-ttu-id="03d9a-103">利息の処理</span><span class="sxs-lookup"><span data-stu-id="03d9a-103">Process interest</span></span>
+# <a name="process-interest"></a><span data-ttu-id="4d8ee-103">利息の処理</span><span class="sxs-lookup"><span data-stu-id="4d8ee-103">Process interest</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="03d9a-104">この手順では、利子計算書の作成、印刷、および転記の方法を示します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-104">This procedure shows how to create, print, and post interest notes.</span></span> <span data-ttu-id="03d9a-105">このタスクでは、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-105">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="4d8ee-104">この手順では、利子計算書の作成、印刷、および転記の方法を示します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-104">This procedure shows how to create, print, and post interest notes.</span></span> <span data-ttu-id="4d8ee-105">このタスクでは、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-105">This task uses the USMF demo company.</span></span>
 
 
-## <a name="set-up-interest-on-the-posting-profile"></a><span data-ttu-id="03d9a-106">転記プロファイルの利息を設定します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-106">Set up interest on the posting profile</span></span>
-1. <span data-ttu-id="03d9a-107">[貸方転記および取立] > [設定] > [顧客転記プロファイル] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-107">Go to Credit and collections > Setup > Customer posting profiles.</span></span>
-2. <span data-ttu-id="03d9a-108">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="03d9a-108">Click Edit.</span></span>
-    * <span data-ttu-id="03d9a-109">ドロップダウン リストから利息コードを選択します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-109">Select an interest code from the drop-down list.</span></span> <span data-ttu-id="03d9a-110">この転記プロファイルを使用してトランザクションの利息を計算したくない場合、フィールドを空白のままにします。</span><span class="sxs-lookup"><span data-stu-id="03d9a-110">If you do not want interest calculated for transactions using this posting profile, leave the field blank.</span></span>  
-    * <span data-ttu-id="03d9a-111">テーブル制限タブで利息の処理方法を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-111">The Table restriction tab allows you to change the way that interest is processed.</span></span> <span data-ttu-id="03d9a-112">このフィールドが [はい] に設定されている場合、利息はこの転記プロファイルに対して作成されます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-112">If this field is set to Yes, then interest will be calculated for this posting profile.</span></span>  
+## <a name="set-up-interest-on-the-posting-profile"></a><span data-ttu-id="4d8ee-106">転記プロファイルの利息を設定します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-106">Set up interest on the posting profile</span></span>
+1. <span data-ttu-id="4d8ee-107">**ナビゲーション ウィンドウ**で、**モジュール > 貸方転記および取立 > 設定 > 顧客転記プロファイル**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-107">In the **Navigation pane**, go to **Modules > Credit and collections > Setup > Customer posting profiles**.</span></span>
+2. <span data-ttu-id="4d8ee-108">**編集** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-108">Click **Edit**.</span></span>
+3. <span data-ttu-id="4d8ee-109">**設定クイック タブ**の、**利息コード** フィールドで、ドロップダウン リストから利息コードを選択します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-109">In the **Setup fastTab**, in the **Interest code** field, select an interest code from the drop-down list.</span></span> <span data-ttu-id="4d8ee-110">この転記プロファイルを使用してトランザクションの利息を計算したくない場合、フィールドを空白のままにします。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-110">If you do not want interest calculated for transactions using this posting profile, leave the field blank.</span></span> <span data-ttu-id="4d8ee-111">**テーブル制限**クイック タブで利息の処理方法を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-111">The **Table restriction** fastTab allows you to change the way that interest is processed.</span></span> <span data-ttu-id="4d8ee-112">このフィールドが [はい] に設定されている場合、利息はこの転記プロファイルに対して作成されます。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-112">If this field is set to Yes, then interest will be calculated for this posting profile.</span></span>  
 
-## <a name="calculate-interest"></a><span data-ttu-id="03d9a-113">利息の計算</span><span class="sxs-lookup"><span data-stu-id="03d9a-113">Calculate interest</span></span>
-1. <span data-ttu-id="03d9a-114">[貸方転記および取立] > [利息] > [利子計算書の作成] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-114">Go to Credit and collections > Interest > Create interest notes.</span></span>
-    * <span data-ttu-id="03d9a-115">利息を計算するためのトランザクション タイプを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="03d9a-115">You must select the transaction types for which you will calculate interest.</span></span> <span data-ttu-id="03d9a-116">これらのタイプのすべての未処理トランザクションがこの計算に含まれます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-116">All of the open transactions for these types will be included in the calculation.</span></span>  
-    * <span data-ttu-id="03d9a-117">利息を選択すると、利子の利息を計算します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-117">If you select Interest, you will calculate interest on interest.</span></span> <span data-ttu-id="03d9a-118">これらのトランザクションを含める前に、利子の利息計算を規定する法令を確認できます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-118">You may want to check the laws governing the calculation of interest on interest before including these transactions.</span></span>  
-    * <span data-ttu-id="03d9a-119">この日付から「終了日」までの利子が計算されます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-119">Interest will be calculated from this date to the "To date".</span></span> <span data-ttu-id="03d9a-120">「開始日」を特定しない場合、すべての未転記の利子計算書はキャンセルされ、利息はトランザクションの日付から再度計算されます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-120">If you do not specific a "From date", then all unposted interest notes will be canceled and interest will be recalculated from the transaction date.</span></span>  
-2. <span data-ttu-id="03d9a-121">利子計算書の日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-121">Enter the date of the interest note.</span></span>
-    * <span data-ttu-id="03d9a-122">3 つの転記プロファイルのオプションがあります: [口座] – 各利子計算書の顧客 ID に割り当てられた転記プロファイルを使用します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-122">There are three posting profile options:   Account – Use the posting profile that is assigned to the customer account for each interest note.</span></span>   <span data-ttu-id="03d9a-123">選択 – [転記プロファイル] フィールドで選択した転記プロファイルを使用します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-123">Select – Use the posting profile that you select in the Posting profile field.</span></span>   <span data-ttu-id="03d9a-124">[トランザクション] 利子計算書ごとに利息が計算されるトランザクションから個々の転記プロファイルを使用します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-124">Transaction – Use the individual posting profile from transactions on which interest is calculated for each interest note.</span></span> <span data-ttu-id="03d9a-125">割り当てられた転記プロファイルのないトランザクションでは、[買掛金勘定パラメータ] フォーム上の [元帳と売上税] エリアで指定された転記プロファイルが使用されます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-125">Transactions that do not have an assigned posting profile will use the posting profile that is specified in the Ledger and sales tax area of the Accounts receivable parameters form.</span></span>  
-    * <span data-ttu-id="03d9a-126">[転記プロファイルの使用] を [選択] に変更した場合、転記プロファイルをここで選択します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-126">Select a posting profile here if you changed "Use posting profile from" to "Select".</span></span>  
-3. <span data-ttu-id="03d9a-127">[対象に含めるレコード] セクションを展開または折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-127">Expand or collapse the Records to include section.</span></span>
-4. <span data-ttu-id="03d9a-128">[フィルター] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="03d9a-128">Click Filter.</span></span>
-5. <span data-ttu-id="03d9a-129">[基準] フィールドに、顧客 ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-129">In the Criteria field, enter a Customer ID.</span></span> <span data-ttu-id="03d9a-130">たとえば、「US-001」と入力します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-130">For example, enter 'US-001'..</span></span>
-6. <span data-ttu-id="03d9a-131">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="03d9a-131">Click OK.</span></span>
-7. <span data-ttu-id="03d9a-132">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="03d9a-132">Click OK.</span></span>
+## <a name="calculate-interest"></a><span data-ttu-id="4d8ee-113">利息の計算</span><span class="sxs-lookup"><span data-stu-id="4d8ee-113">Calculate interest</span></span>
+1. <span data-ttu-id="4d8ee-114">**ナビゲーション ウィンドウ**で、**モジュール > 貸方転記および取立 > 利息 > 利子計算書の作成**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-114">In the **Navigation pane**, go to **Modules > Credit and collections > Interest > Create interest notes**.</span></span>
+2. <span data-ttu-id="4d8ee-115">利息を計算するためのトランザクション タイプを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-115">You must select the transaction types for which you will calculate interest.</span></span> <span data-ttu-id="4d8ee-116">これらのタイプのすべての未処理トランザクションがこの計算に含まれます。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-116">All of the open transactions for these types will be included in the calculation.</span></span>  
+3. <span data-ttu-id="4d8ee-117">**利息**を 'はい' に設定すると、利子の利息が計算されます。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-117">If you set **Interest** to 'Yes', you will calculate interest on interest.</span></span> <span data-ttu-id="4d8ee-118">これらのトランザクションを含める前に、利子の利息計算を規定する法令を確認できます。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-118">You may want to check the laws governing the calculation of interest on interest before including these transactions.</span></span>  
+4. <span data-ttu-id="4d8ee-119">**開始日**フィールドに、この利息計算が始まる日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-119">In the **From date** field, enter a date from which the interest will be calculated.</span></span> <span data-ttu-id="4d8ee-120">**開始日**を特定しない場合、すべての未転記の利子計算書はキャンセルされ、利息はトランザクションの日付から再度計算されます。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-120">If you do not specific a **From date**, then all unposted interest notes will be canceled and interest will be recalculated from the transaction date.</span></span>
+5. <span data-ttu-id="4d8ee-121">**終了日**フィールドに、この利息計算が終わる日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-121">In the **To date** field, enter a date to which the interest would be calculated.</span></span>
+6. <span data-ttu-id="4d8ee-122">**使用する転記プロファイル** フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-122">In the **Use posting profile from** field, select an option.</span></span> <span data-ttu-id="4d8ee-123">3 つの転記プロファイル オプションがあります。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-123">There are three posting profile options:</span></span>
+    - <span data-ttu-id="4d8ee-124">勘定科目 – 各利子計算書の顧客勘定に割り当てられた転記プロファイルを使用します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-124">Account – Use the posting profile that is assigned to the customer account for each interest note.</span></span> 
+    - <span data-ttu-id="4d8ee-125">選択 – [転記プロファイル] フィールドで選択した転記プロファイルを使用します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-125">Select – Use the posting profile that you select in the Posting profile field.</span></span>
+    - <span data-ttu-id="4d8ee-126">[トランザクション] 利子計算書ごとに利息が計算されるトランザクションから個々の転記プロファイルを使用します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-126">Transaction – Use the individual posting profile from transactions on which interest is calculated for each interest note.</span></span> <span data-ttu-id="4d8ee-127">割り当てられた転記プロファイルのないトランザクションでは、[買掛金勘定パラメータ] フォーム上の [元帳と売上税] エリアで指定された転記プロファイルが使用されます。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-127">Transactions that do not have an assigned posting profile will use the posting profile that is specified in the Ledger and sales tax area of the Accounts receivable parameters form.</span></span>  
+7. <span data-ttu-id="4d8ee-128">**対象に含めるレコード** クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-128">Expand the **Records to include** fastTab.</span></span>
+8. <span data-ttu-id="4d8ee-129">**フィルター**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-129">Click **Filter**.</span></span>
+9. <span data-ttu-id="4d8ee-130">**基準**フィールドに、顧客 ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-130">In the **Criteria** field, enter a Customer ID.</span></span> <span data-ttu-id="4d8ee-131">たとえば、「US-001」と入力します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-131">For example, enter 'US-001'.</span></span>
+6. <span data-ttu-id="4d8ee-132">**OK**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-132">Click **OK**.</span></span>
+7. <span data-ttu-id="4d8ee-133">**OK**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-133">Click **OK**.</span></span>
 
-## <a name="print-interest-notes"></a><span data-ttu-id="03d9a-133">利子計算書の印刷</span><span class="sxs-lookup"><span data-stu-id="03d9a-133">Print interest notes</span></span>
-1. <span data-ttu-id="03d9a-134">[貸方転記および取立] > [利息] > [利子計算書の確認と処理] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-134">Go to Credit and collections > Interest > Review and process interest notes.</span></span>
-2. <span data-ttu-id="03d9a-135">[ステータス] フィールドで [作成済] を選択します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-135">In the Status field, select 'Created'.</span></span>
-3. <span data-ttu-id="03d9a-136">[印刷済] フィールドで、「印刷せず」を選択します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-136">In the Printed field, select 'Not printed'.</span></span>
-4. <span data-ttu-id="03d9a-137">[印刷] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="03d9a-137">Click Print.</span></span>
-5. <span data-ttu-id="03d9a-138">[対象に含めるレコード] セクションを展開または折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-138">Expand or collapse the Records to include section.</span></span>
-6. <span data-ttu-id="03d9a-139">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="03d9a-139">Click OK.</span></span>
-7. <span data-ttu-id="03d9a-140">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-140">Close the page.</span></span>
+## <a name="print-interest-notes"></a><span data-ttu-id="4d8ee-134">利子計算書の印刷</span><span class="sxs-lookup"><span data-stu-id="4d8ee-134">Print interest notes</span></span>
+1. <span data-ttu-id="4d8ee-135">**ナビゲーション ウィンドウ**で、**モジュール > 貸方転記および取立 > 利息 > 利子計算書の確認と処理**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-135">In the **Navigation pane**, go to **Modules > Credit and collections > Interest > Review and process interest notes**.</span></span>
+2. <span data-ttu-id="4d8ee-136">**ステータス** フィールドで '作成済' を選択します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-136">In the **Status** field, select 'Created'.</span></span>
+3. <span data-ttu-id="4d8ee-137">**印刷済**フィールドで、'印刷せず' を選択します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-137">In the **Printed** field, select 'Not printed'.</span></span>
+4. <span data-ttu-id="4d8ee-138">**印刷** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-138">Click **Print**.</span></span>
+5. <span data-ttu-id="4d8ee-139">**対象に含めるレコード** クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-139">Expand the **Records to include** fastTab.</span></span>
+6. <span data-ttu-id="4d8ee-140">**OK**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-140">Click **OK**.</span></span>
+7. <span data-ttu-id="4d8ee-141">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-141">Close the page.</span></span>
 
-## <a name="post-the-interest-note"></a><span data-ttu-id="03d9a-141">利子計算書の転記</span><span class="sxs-lookup"><span data-stu-id="03d9a-141">Post the interest note</span></span>
-1. <span data-ttu-id="03d9a-142">転記の準備が整った利子計算書を選択します (ステータスは作成済)。</span><span class="sxs-lookup"><span data-stu-id="03d9a-142">Select an interest note that is ready to post (status is created).</span></span>
-2. <span data-ttu-id="03d9a-143">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="03d9a-143">Click Post.</span></span>
-3. <span data-ttu-id="03d9a-144">利子計算書の転記日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-144">Enter the posting date for the interest note.</span></span>
-    * <span data-ttu-id="03d9a-145">利子計算書ごとに総勘定元帳トランザクションを作成する場合は、「はい」を選択します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-145">Select Yes to create a general ledger transaction for each interest note.</span></span>     <span data-ttu-id="03d9a-146">「はい」を選択しない場合、顧客に対するすべての利子計算書の利子が累計され、1 つのトランザクションで総勘定元帳に転記されます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-146">If you do not select Yes, the interest on all interest notes to the customer is accumulated and posted to the general ledger in one transaction.</span></span>  
-4. <span data-ttu-id="03d9a-147">[対象に含めるレコード] セクションを展開または折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="03d9a-147">Expand or collapse the Records to include section.</span></span>
-5. <span data-ttu-id="03d9a-148">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="03d9a-148">Click OK.</span></span>
-6. <span data-ttu-id="03d9a-149">[ステータス] フィールドで [転記済] を選択します。</span><span class="sxs-lookup"><span data-stu-id="03d9a-149">In the Status field, select 'Posted'.</span></span>
+## <a name="post-the-interest-note"></a><span data-ttu-id="4d8ee-142">利子計算書の転記</span><span class="sxs-lookup"><span data-stu-id="4d8ee-142">Post the interest note</span></span>
+1. <span data-ttu-id="4d8ee-143">転記の準備が整った利子計算書を選択します (ステータスは作成済)。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-143">Select an interest note that is ready to post (status is created).</span></span>
+2. <span data-ttu-id="4d8ee-144">**転記** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-144">Click **Post**.</span></span>
+3. <span data-ttu-id="4d8ee-145">利子計算書の転記日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-145">Enter the posting date for the interest note.</span></span> <span data-ttu-id="4d8ee-146">利子計算書ごとに総勘定元帳トランザクションを作成する場合は、「はい」を選択します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-146">Select Yes to create a general ledger transaction for each interest note.</span></span> <span data-ttu-id="4d8ee-147">「はい」を選択しない場合、顧客に対するすべての利子計算書の利子が累計され、1 つのトランザクションで総勘定元帳に転記されます。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-147">If you do not select Yes, the interest on all interest notes to the customer is accumulated and posted to the general ledger in one transaction.</span></span>  
+4. <span data-ttu-id="4d8ee-148">**対象に含めるレコード** クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-148">Expand the **Records to include** fastTab.</span></span>
+5. <span data-ttu-id="4d8ee-149">**OK**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-149">Click **OK**.</span></span>
+6. <span data-ttu-id="4d8ee-150">**ステータス** フィールドで '転記済' を選択します。</span><span class="sxs-lookup"><span data-stu-id="4d8ee-150">In the **Status** field, select 'Posted'.</span></span>
 

@@ -1,9 +1,9 @@
 ---
 title: 購買契約書の作成
-description: この手順では、購買契約書の作成方法について説明しています。
+description: このトピックでは、購買契約書の作成方法について説明します。
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,72 +16,59 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df74eaad51fc4ef28caf96e4bcdc7b03f7e6ec3b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec792ca27bf0245ff25e59cfe28122f17caec7fc
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836365"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866853"
 ---
-# <a name="create-a-purchase-agreement"></a><span data-ttu-id="bce52-103">購買契約書の作成</span><span class="sxs-lookup"><span data-stu-id="bce52-103">Create a purchase agreement</span></span>
+# <a name="create-a-purchase-agreement"></a><span data-ttu-id="2a719-103">購買契約書の作成</span><span class="sxs-lookup"><span data-stu-id="2a719-103">Create a purchase agreement</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="bce52-104">この手順では、購買契約書の作成方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="bce52-104">This procedure guides you through the creation of a purchase agreement.</span></span> <span data-ttu-id="bce52-105">これは通常、購買マネージャが行います。</span><span class="sxs-lookup"><span data-stu-id="bce52-105">This would typically be done by a purchasing manager.</span></span> <span data-ttu-id="bce52-106">デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。</span><span class="sxs-lookup"><span data-stu-id="bce52-106">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="bce52-107">開始する前に、購買契約書の分類を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bce52-107">You need to have set up purchase agreement classifications before you start.</span></span> <span data-ttu-id="bce52-108">契約を作成すると、発注書の作成時にそれを使用できます。また、販売契約条件がヘッダーまたは任意の明細行に、その契約によって影響される順でコピーされます。</span><span class="sxs-lookup"><span data-stu-id="bce52-108">Once you've created an agreement you can use it when you create a PO, and this will copy the purchase agreement conditions to the header and to any lines in the order that are affected by the agreement.</span></span>
+<span data-ttu-id="2a719-104">このトピックでは、購買契約書の作成方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2a719-104">This topic guides you through the creation of a purchase agreement.</span></span> <span data-ttu-id="2a719-105">これは通常、購買マネージャが行います。</span><span class="sxs-lookup"><span data-stu-id="2a719-105">This would typically be done by a purchasing manager.</span></span> <span data-ttu-id="2a719-106">デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。</span><span class="sxs-lookup"><span data-stu-id="2a719-106">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="2a719-107">開始する前に、購買契約書の分類を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2a719-107">You need to have set up purchase agreement classifications before you start.</span></span> <span data-ttu-id="2a719-108">契約を作成すると、発注書の作成時にそれを使用できます。また、販売契約条件がヘッダーまたは任意の明細行に、その契約によって影響される順でコピーされます。</span><span class="sxs-lookup"><span data-stu-id="2a719-108">Once you've created an agreement you can use it when you create a PO, and this will copy the purchase agreement conditions to the header and to any lines in the order that are affected by the agreement.</span></span>
 
 
-## <a name="create-a-new-purchase-agreement"></a><span data-ttu-id="bce52-109">新しい購買契約の作成</span><span class="sxs-lookup"><span data-stu-id="bce52-109">Create a new purchase agreement</span></span>
-1. <span data-ttu-id="bce52-110"> [調達] > [購買契約書] > [購買契約書] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="bce52-110">Go to Procurement and sourcing > Purchase agreements > Purchase agreements.</span></span>
-2. <span data-ttu-id="bce52-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-111">Click New.</span></span>
-3. <span data-ttu-id="bce52-112">[仕入先] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="bce52-112">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="bce52-113">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="bce52-113">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="bce52-114">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-114">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="bce52-115">[購買契約の分類] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="bce52-115">In the Purchase agreement classification field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="bce52-116">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="bce52-116">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="bce52-117">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-117">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="bce52-118">[一般] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="bce52-118">Expand the General section.</span></span>
-10. <span data-ttu-id="bce52-119">[有効期限] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="bce52-119">In the Expiration date field, enter a date.</span></span>
-    * <span data-ttu-id="bce52-120">この有効期限は、すべての確約明細行の既定値であり、各特定の確約の有効期間を決定します。</span><span class="sxs-lookup"><span data-stu-id="bce52-120">This expiration date will be the default for all commitment lines and will determine how long each specific commitment is valid.</span></span>  
-11. <span data-ttu-id="bce52-121">[ドキュメント タイトル] フィールドに、購買契約書の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="bce52-121">In the Document title field, type a name for your purchase agreement.</span></span>
-    * <span data-ttu-id="bce52-122">[既定の確約] フィールドを、[製品数量確約] に設定したままにします (または、これに設定されていない場合は変更します)。</span><span class="sxs-lookup"><span data-stu-id="bce52-122">Leave the Default commitment field set to Product quantity commitment (or change it if it’s not set to this).</span></span>  
-    * <span data-ttu-id="bce52-123">確約の既定値により、契約項目のオプションが決まります。</span><span class="sxs-lookup"><span data-stu-id="bce52-123">The default commitment value determines your options on the agreement lines.</span></span> <span data-ttu-id="bce52-124">契約項目を作成する際に新しい確約タイプが必要な場合は、ヘッダーの確約既定値を変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bce52-124">If you need a new commitment type when you’re creating the agreement lines, you need to change the default commitment on the header.</span></span>  <span data-ttu-id="bce52-125">確約には、次の 4 つのタイプがあります。製品数量確約 - 製品の特定数量のためのものです。製品価値確約 - 製品の特定の通貨金額のためのものです。製品カテゴリ価値確約 - 金額がカタログ品目またはカタログ以外の品目である、特定の通貨金額調達カテゴリのためのものです。価値確約 - すべての製品または調達カテゴリにより満たせる特定の通貨金額のためのものです。</span><span class="sxs-lookup"><span data-stu-id="bce52-125">There are 4 types of commitments: Product quantity commitment - for a specific quantity of a product; Product value commitment - for a specific currency amount of a product; Product category value commitment - for a specific currency amount in a procurement category where the amount can be for a catalog item or a non-catalog item; Value commitment - for a specific currency amount which can be fulfilled by any product or by any procurement category.</span></span>  
-12. <span data-ttu-id="bce52-126">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-126">Click OK.</span></span>
+## <a name="create-a-new-purchase-agreement"></a><span data-ttu-id="2a719-109">新しい購買契約の作成</span><span class="sxs-lookup"><span data-stu-id="2a719-109">Create a new purchase agreement</span></span>
+1. <span data-ttu-id="2a719-110">**ナビゲーション ウィンドウ > モジュール > 調達 > 購買契約書 > 購買契約書**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="2a719-110">Go to **Navigation pane > Modules > Procurement and sourcing > Purchase agreements > Purchase agreements**.</span></span>
+2. <span data-ttu-id="2a719-111">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2a719-111">Click **New**.</span></span>
+3. <span data-ttu-id="2a719-112">**仕入先口座**フィールドで、ドロップダウン メニューを選択し、目的のレコードの行を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-112">In the **Vendor account** field, select the drop-down menu and select the row of the desired record.</span></span>
+4. <span data-ttu-id="2a719-113">**購買契約の分類**フィールドで、ドロップダウン メニューを選択し、目的のレコードの行を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-113">In the **Purchase agreement classification** field, select the drop-down menu and select the row of the desired record.</span></span>
+5. <span data-ttu-id="2a719-114">**概要** FastTab を展開します。</span><span class="sxs-lookup"><span data-stu-id="2a719-114">Expand the **General** FastTab.</span></span>
+6. <span data-ttu-id="2a719-115">**有効期限**フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="2a719-115">In the **Expiration date** field, enter a date.</span></span>
 
-## <a name="add-a-commitment"></a><span data-ttu-id="bce52-127">確約の追加</span><span class="sxs-lookup"><span data-stu-id="bce52-127">Add a commitment</span></span>
-1. <span data-ttu-id="bce52-128">[明細行の追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-128">Click Add line.</span></span>
-2. <span data-ttu-id="bce52-129">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="bce52-129">In the list, mark the selected row.</span></span>
-3. <span data-ttu-id="bce52-130">[品目番号] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="bce52-130">In the Item number field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="bce52-131">確約を追加する製品を選択します。</span><span class="sxs-lookup"><span data-stu-id="bce52-131">Select the product you want to add a commitment for.</span></span>
-5. <span data-ttu-id="bce52-132">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-132">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="bce52-133">[数量] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="bce52-133">In the Quantity field, enter a number.</span></span>
-    * <span data-ttu-id="bce52-134">これは、仕入先から購入することに合意した合計数量です。</span><span class="sxs-lookup"><span data-stu-id="bce52-134">This is the total quantity that you have agreed to buy from your vendor.</span></span>  
-7. <span data-ttu-id="bce52-135">[単価] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="bce52-135">In the Unit price field, enter a number.</span></span>
-8. <span data-ttu-id="bce52-136">[明細行の詳細] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="bce52-136">Expand the Line details section.</span></span>
-9. <span data-ttu-id="bce52-137">[最大値の適用] オプションを [はい] に設定します。</span><span class="sxs-lookup"><span data-stu-id="bce52-137">Set the Max is enforced option to Yes.</span></span>
-    * <span data-ttu-id="bce52-138">[最大値の適用] オプションは、確約の使用を制限します。</span><span class="sxs-lookup"><span data-stu-id="bce52-138">The Max is enforced option limits the use of the commitment.</span></span> <span data-ttu-id="bce52-139">購入できるのは、明細行の [数量] フィールドで指定された数量までです。</span><span class="sxs-lookup"><span data-stu-id="bce52-139">You can only purchase up to the quantity that's specified in the Quantity field for the line.</span></span>  
-10. <span data-ttu-id="bce52-140">[明細行の詳細] セクションを折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="bce52-140">Collapse the Line details section.</span></span>
+    - <span data-ttu-id="2a719-116">この有効期限は、すべての確約明細行の既定値であり、各特定の確約の有効期間を決定します。</span><span class="sxs-lookup"><span data-stu-id="2a719-116">This expiration date will be the default for all commitment lines and will determine how long each specific commitment is valid.</span></span>  
 
-## <a name="add-header-conditions"></a><span data-ttu-id="bce52-141">ヘッダー条件の追加</span><span class="sxs-lookup"><span data-stu-id="bce52-141">Add header conditions</span></span>
-1. <span data-ttu-id="bce52-142">[アクション] ウィンドウで、[オプション] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-142">On the Action Pane, click Options.</span></span>
-2. <span data-ttu-id="bce52-143">[ビューの変更] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-143">Click Change view.</span></span>
-3. <span data-ttu-id="bce52-144">[ヘッダーの表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-144">Click Header view.</span></span>
-4. <span data-ttu-id="bce52-145">[条件] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="bce52-145">Expand the Terms section.</span></span>
-5. <span data-ttu-id="bce52-146">[支払方法] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="bce52-146">In the Method of payment field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="bce52-147">仕入先からの支払条件が既定によりここに表示されます。</span><span class="sxs-lookup"><span data-stu-id="bce52-147">The payment terms from the vendor account are shown here by default.</span></span>       
-6. <span data-ttu-id="bce52-148">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="bce52-148">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="bce52-149">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-149">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="bce52-150">[荷渡方法] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="bce52-150">In the Mode of delivery field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="bce52-151">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-151">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="bce52-152">[配送条件] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="bce52-152">In the Delivery terms field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="bce52-153">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-153">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="2a719-117">**ドキュメント タイトル** フィールドに、購買契約書の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="2a719-117">In the **Document title** field, type a name for your purchase agreement.</span></span>
 
-## <a name="confirm-and-activate-the-agreement"></a><span data-ttu-id="bce52-154">契約の確認と有効化</span><span class="sxs-lookup"><span data-stu-id="bce52-154">Confirm and activate the agreement</span></span>
-1. <span data-ttu-id="bce52-155">アクション ウィンドウで、[購買契約] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-155">On the Action Pane, click Purchase agreement.</span></span>
-2. <span data-ttu-id="bce52-156">[確認] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-156">Click Confirmation.</span></span>
-    * <span data-ttu-id="bce52-157">[契約を有効としてマークします] オプションに [はい] を設定します。</span><span class="sxs-lookup"><span data-stu-id="bce52-157">Set the Mark agreement as effective option to Yes.</span></span>  
-3. <span data-ttu-id="bce52-158">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-158">Click OK.</span></span>
-4. <span data-ttu-id="bce52-159">アクション ウィンドウで、[購買契約] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-159">On the Action Pane, click Purchase agreement.</span></span>
-5. <span data-ttu-id="bce52-160">[購買契約確認] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bce52-160">Click Purchase agreement confirmations.</span></span>
-    * <span data-ttu-id="bce52-161">[プレビュー/印刷] オプションにより、仕入先に印刷または送信する購買契約書のドキュメントを生成できます。</span><span class="sxs-lookup"><span data-stu-id="bce52-161">The Preview/Print option allows you to generate a document for the purchase agreement which you can then print or send to the vendor.</span></span> <span data-ttu-id="bce52-162">契約を更新して後で再確認すると、両方のバージョンがここに表示されます。</span><span class="sxs-lookup"><span data-stu-id="bce52-162">If you update the agreement later on and re-confirm it, both versions will be shown here.</span></span>  
-6. <span data-ttu-id="bce52-163">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="bce52-163">Close the page.</span></span>
+    - <span data-ttu-id="2a719-118">**既定の確約**フィールドを、**製品数量確約**に設定したままにします (または、これに設定されていない場合は変更します)。</span><span class="sxs-lookup"><span data-stu-id="2a719-118">Leave the **Default commitment** field set to **Product quantity commitment** (or change it if it’s not set to this).</span></span>  
+    - <span data-ttu-id="2a719-119">確約の既定値により、契約項目のオプションが決まります。</span><span class="sxs-lookup"><span data-stu-id="2a719-119">The default commitment value determines your options on the agreement lines.</span></span> <span data-ttu-id="2a719-120">契約項目を作成する際に新しい確約タイプが必要な場合は、ヘッダーの確約既定値を変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2a719-120">If you need a new commitment type when you’re creating the agreement lines, you need to change the default commitment on the header.</span></span> <span data-ttu-id="2a719-121">確約には、次の 4 つのタイプがあります。**製品数量確約** - 製品の特定数量のためのものです。**製品価値確約** - 製品の特定の通貨金額のためのものです。**製品カテゴリ価値確約** - 金額がカタログ品目またはカタログ以外の品目である、特定の通貨金額調達カテゴリのためのものです。**価値確約** - すべての製品または調達カテゴリにより満たせる特定の通貨金額のためのものです。</span><span class="sxs-lookup"><span data-stu-id="2a719-121">There are 4 types of commitments: **Product quantity commitment** - for a specific quantity of a product; **Product value commitment** - for a specific currency amount of a product; **Product category value commitment** - for a specific currency amount in a procurement category where the amount can be for a catalog item or a non-catalog item; **Value commitment** - for a specific currency amount which can be fulfilled by any product or by any procurement category.</span></span>  
+
+8. <span data-ttu-id="2a719-122">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-122">Select **OK**.</span></span>
+
+## <a name="add-a-commitment"></a><span data-ttu-id="2a719-123">確約の追加</span><span class="sxs-lookup"><span data-stu-id="2a719-123">Add a commitment</span></span>
+1. <span data-ttu-id="2a719-124">**明細行の追加**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-124">Select **Add line**.</span></span>
+2. <span data-ttu-id="2a719-125">**品目番号**フィールドで、ドロップダウン メニューから目的のレコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-125">In the **Item number** field, select the desired record from the drop-down menu.</span></span>
+3. <span data-ttu-id="2a719-126">**数量**フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2a719-126">In the **Quantity** field, enter a number.</span></span> <span data-ttu-id="2a719-127">これは、仕入先から購入することに合意した合計数量です。</span><span class="sxs-lookup"><span data-stu-id="2a719-127">This is the total quantity that you have agreed to buy from your vendor.</span></span>  
+4. <span data-ttu-id="2a719-128">**単価**フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="2a719-128">In the **Unit price** field, enter a number.</span></span>
+5. <span data-ttu-id="2a719-129">**行の詳細**セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="2a719-129">Expand the **Line details** section.</span></span>
+6. <span data-ttu-id="2a719-130">**最大値の適用**オプションを**はい**に設定します。</span><span class="sxs-lookup"><span data-stu-id="2a719-130">Set the **Max is enforced** option to **Yes**.</span></span> <span data-ttu-id="2a719-131">**最大値の適用**オプションは、確約の使用を制限します。</span><span class="sxs-lookup"><span data-stu-id="2a719-131">The **Max is enforced** option limits the use of the commitment.</span></span> <span data-ttu-id="2a719-132">購入できるのは、明細行の**数量**フィールドで指定された数量までです。</span><span class="sxs-lookup"><span data-stu-id="2a719-132">You can only purchase up to the quantity that's specified in the **Quantity** field for the line.</span></span>  
+
+## <a name="add-header-conditions"></a><span data-ttu-id="2a719-133">ヘッダー条件の追加</span><span class="sxs-lookup"><span data-stu-id="2a719-133">Add header conditions</span></span>
+1. <span data-ttu-id="2a719-134">アクション ウィンドウで、**オプション**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-134">On the Action Pane, select **Options**.</span></span>
+2. <span data-ttu-id="2a719-135">**ビューの変更**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-135">Select **Change view**.</span></span>
+3. <span data-ttu-id="2a719-136">**ヘッダーの表示**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-136">Select **Header view**.</span></span>
+4. <span data-ttu-id="2a719-137">**条件**セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="2a719-137">Expand the **Terms** section.</span></span>
+5. <span data-ttu-id="2a719-138">**支払方法**フィールドで、ドロップダウン メニューから目的のレコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-138">In the **Method of payment** field, select the desired record in the drop-down menu.</span></span> <span data-ttu-id="2a719-139">仕入先からの支払条件が既定によりここに表示されます。</span><span class="sxs-lookup"><span data-stu-id="2a719-139">The payment terms from the vendor account are shown here by default.</span></span>  
+6. <span data-ttu-id="2a719-140">**荷渡方法**フィールドで、ドロップダウン メニューから目的のレコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-140">In the **Mode of delivery** field, select the desired record in the drop-down menu.</span></span>
+7. <span data-ttu-id="2a719-141">**配送条件**フィールドで、ドロップダウン ボタンを選択してルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="2a719-141">In the **Delivery terms** field, select the drop-down button to open the lookup.</span></span>
+
+## <a name="confirm-and-activate-the-agreement"></a><span data-ttu-id="2a719-142">契約の確認と有効化</span><span class="sxs-lookup"><span data-stu-id="2a719-142">Confirm and activate the agreement</span></span>
+1. <span data-ttu-id="2a719-143">アクション ウィンドウで、**購買契約**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-143">On the Action Pane, select **Purchase agreement**.</span></span>
+2. <span data-ttu-id="2a719-144">**確認**を確認します。</span><span class="sxs-lookup"><span data-stu-id="2a719-144">Select **Confirmation**.</span></span> <span data-ttu-id="2a719-145">**契約を有効としてマークする**オプションを**はい**に設定します。</span><span class="sxs-lookup"><span data-stu-id="2a719-145">Set the **Mark agreement as effective** option to **Yes**.</span></span>  
+3. <span data-ttu-id="2a719-146">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-146">Select **OK**.</span></span>
+4. <span data-ttu-id="2a719-147">アクション ウィンドウで、**購買契約**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-147">On the Action Pane, select **Purchase agreement**.</span></span>
+5. <span data-ttu-id="2a719-148">**購買契約確認**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a719-148">Select **Purchase agreement confirmations**.</span></span> <span data-ttu-id="2a719-149">**プレビュー/印刷**オプションにより、仕入先に印刷または送信する購買契約書のドキュメントを生成できます。</span><span class="sxs-lookup"><span data-stu-id="2a719-149">The **Preview/Print** option allows you to generate a document for the purchase agreement which you can then print or send to the vendor.</span></span> <span data-ttu-id="2a719-150">契約を更新して後で再確認すると、両方のバージョンがここに表示されます。</span><span class="sxs-lookup"><span data-stu-id="2a719-150">If you update the agreement later on and re-confirm it, both versions will be shown here.</span></span>  
+6. <span data-ttu-id="2a719-151">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="2a719-151">Close the page.</span></span>
 
