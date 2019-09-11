@@ -3,7 +3,7 @@ title: 機能管理の概要
 description: このトピックでは、機能管理の機能および使用方法について説明します。
 author: mikefalkner
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 6aeb5383520f799223d62420f6e0c1079c6c961f
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862941"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887114"
 ---
 # <a name="feature-management-overview"></a>機能管理の概要
 
@@ -103,8 +103,9 @@ ms.locfileid: "1862941"
 
 既定では、環境に追加されたすべての機能が、必須機能である場合を除き、オフになります。 ただし、新しい機能をすべて自動的にオンにする場合は、ワークスペース タイトルの下にあるドロップダウン リストを使用して、新しい機能が追加されたときに発生する動作を変更することができます。
 
-- **すべての新機能を既定で有効にする**を選び、新機能を環境に追加したときに自動的にオンにします。
-- **すべての新機能を既定で無効にする**を選び、新機能を環境に追加したときに自動的にオフにします。
+- **新機能を自動で有効にする**を選択して、環境に追加されるすべての新機能を自動的にオンにします。
+- **新機能を自動で有効にしない**を選択すると、環境に追加されるすべての新機能を既定でオフにします。
+
 
 すべての機能を自動的に有効にすると、**すべての機能を有効にする**ボタンをクリックしたときに、有効になるすべての機能が有効になります。 確認が必要な機能や、アクションが実行されるまで有効にできない機能は有効になりません。
 

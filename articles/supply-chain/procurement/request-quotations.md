@@ -1,9 +1,9 @@
 ---
-title: 見積依頼 (RFQs)
+title: 見積依頼 (RFQ) の概要
 description: このトピックでは、見積依頼 (RFQs) の概要を説明します。 組織は、購入する必要がある品目やサービスに対して、いくつかの仕入先を競合させてより良い条件を得ようとする場合に RFQs を発行します。
 author: mkirknel
 manager: AnnBe
-ms.date: 06/21/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a904529dccbe392793d0d108335b623bb1ed8b2
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: e2276f5296a77d620e0084c0247b1e25071fe029
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742542"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865283"
 ---
-# <a name="requests-for-quotation-rfqs"></a>見積依頼 (RFQs)
+# <a name="requests-for-quotation-rfqs-overview"></a>見積依頼 (RFQ) の概要
 
 [!include [banner](../includes/banner.md)]
 

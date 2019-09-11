@@ -3,7 +3,7 @@ title: キーボード ショートカット
 description: 以下のキーボード ショートカットは、Dynamics 365 for Finance and Operations 全体に適用されます。
 author: jasongre
 manager: AnnBe
-ms.date: 07/22/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95a6b6bd70c4a5bb684c605d364a28b85ed4e120
-ms.sourcegitcommit: d88d3d504e85c5bf6f6e9dc842488a2b644261cf
+ms.openlocfilehash: 91e3f202d479fd77893da3cc746f3d23587107b1
+ms.sourcegitcommit: 69bd97dcc191a0cabfed91f678bac0ba2aebb1b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "1780061"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "1920654"
 ---
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
@@ -155,8 +155,8 @@ ms.locfileid: "1780061"
 | 目的                                                                   | キー                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | ハイパーリンクを開く                                                           | Ctrl キー +Enter                    |
-| セッションの日付を日付フィールドに入力                                       | D + Tab                         |
-| 現在の日付を日付フィールドに入力                                       | T + Tab                         |
+| セッションの日付を日付フィールドに入力                                       | 借方                         |
+| 現在の日付を日付フィールドに入力                                       | T                         |
 | ルックアップ、コンボ ボックス、日付の選択、ドロップ ダイアログ ボックスを開く                         | Alt+ 下方向キー                |
 | ルックアップ、コンボ ボックス、日付の選択、ドロップ ダイアログ ボックスを閉じる                        | Esc キー                           |
 | ルックアップにフォーカスを移動 (ルックアップがすでに開かれている場合)                   | Alt+ 下方向キー                |

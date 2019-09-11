@@ -2,8 +2,8 @@
 title: 電子申告 (ER) のフォーミュラ デザイナー
 description: このトピックでは、電子申告 (ER) でのフォーミュラ デザイナーの使用方法を説明します。
 author: NickSelin
-manager: AnnBe
-ms.date: 05/14/2014
+manager: kfend
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 1f6caa6afd0ce36340caf237c1acca0ea343824f
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849512"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864297"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>電子申告 (ER) のフォーミュラ デザイナー
 
@@ -113,6 +113,33 @@ ER フォーミュラ デザイナーは生成する電子ドキュメントの�
 - 式は、(**TRUE** を返すことで) 少なくともレコードを 1 つ含むバッチのファイル作成プロセスを有効にします。
 
 [![ファイル管理](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+
+### <a name="documents-content-control"></a>ドキュメントのコンテンツ コントロール
+
+ER フォーミュラ デザイナーを使用して、実行時に生成される電子ドキュメントに配置されるデータを制御する式を構成できます。 式は、実行しているデータおよび構成されたロジックに応じて、フォーマットの特定の要素の出力を有効または無効にできます。 これらの式は、**ブール値**を返すロジック条件として、**オペレーション デザイナー** ページの**マッピング** タブにある、**有効**フィールドの 1 つの形式要素に対して入力できます。
+
+-   **True** が返された場合は、現在の形式要素が実行されます。
+-   **False** が返された場合は、現在の形式要素がスキップされます。
+
+次の図は、このタイプの式を示しています (Microsoft によって提供される**ISO20022 口座振替 (NO)** 形式のコンフィギュレーションの、バージョン **11.12.11** が例です)。 **XMLHeader** 形式コンポーネントは、ISO 20022 XML メッセージ標準に従って、口座振替メッセージの構造を記述するようにコンフィギュレーションされています。 **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** 形式コンポーネントは生成されたメッセージ、**Ustrd** XML 要素に追加し、送金情報を構造化されていない形式で、以下の XML 要素のテキストとして配置するようにコンフィギュレーションされています。
+
+-   **PaymentNotes** コンポーネントは、支払票のテキストを出力するために使用されます。
+-   **DelimitedSequence** コンポーネントは、現在の口座振替を決済するために使用されるコンマ区切りの請求書番号を出力します。
+
+[![オペレーション デザイナー](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+
+> [!NOTE]
+> **PaymentNotes** および **DelimitedSequence** コンポーネントは疑問符を使用してラベル付けされています。 これは、次の基準に基づいて、両方のコンポーネントの使用が条件付きであることを意味します。
+
+-   **PaymentNote**s コンポーネントに対して定義された、**@.PaymentsNotes<>""** 式では、現在の口座振替のこのテキストが空白ではない場合に、(**TRUE** を返すことによって) 支払票のテキスト **Ustrd** XML 要素に設定を有効にします。
+
+[![オペレーション デザイナー](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+
+-   **DelimitedSequence** コンポーネントに対して定義された、**@.PaymentsNotes=""** 式は、この口座振替の支払票のテキストが空白ではない場合に、(**TRUE** を返すことにより) 現在の口座振替を決済するために使用されるコンマ区切りの請求書番号 **Ustrd** XML 要素に設定を有効にします。
+
+[![オペレーション デザイナー](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+
+この設定に基づいて、各債務者の支払に対して生成されたメッセージ **Ustrd** XML 要素には、支払票のテキスト、またはそのようなテキストが空白の場合、この支払の決済に使用されるコンマ区切りのテキスト請求書番号が含まれます。
 
 ### <a name="basic-syntax"></a>基本構文
 

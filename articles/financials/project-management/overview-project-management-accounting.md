@@ -1,9 +1,9 @@
 ---
-title: プロジェクト管理および会計
+title: プロジェクト管理および会計の概要
 description: プロジェクト管理および会計機能はサービスの提供、製品の生産、または成果の実現のために、複数の業界で使用できます。
 author: KimANelson
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c30192e24f0475b5d75c90cc7457e929f4dac1ee
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7a039c168e14e92ebb266d52e00c09fa329f39ab
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838394"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865607"
 ---
-# <a name="project-management-and-accounting"></a>プロジェクト管理および会計
+# <a name="project-management-and-accounting-overview"></a>プロジェクト管理および会計の概要
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,9 +1,9 @@
 ---
-title: 人事管理
+title: 人事管理の概要
 description: 人事管理は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。 これらの領域には、従業員の採用およびつなぎ留め、給付金管理、トレーニング、勤務評価、変更管理が含まれます。
 author: andreabichsel
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8b743e667413dfc263fe640b4c6c7350e887142
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 828de71da3f16db9024b08c724eb784127b080dc
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508011"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864893"
 ---
-# <a name="human-resources"></a>人事管理
+# <a name="human-resources-overview"></a>人事管理の概要
 
 [!include [banner](../includes/banner.md)]
 

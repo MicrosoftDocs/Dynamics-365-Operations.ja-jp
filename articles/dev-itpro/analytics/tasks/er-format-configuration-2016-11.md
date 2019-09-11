@@ -1,9 +1,9 @@
 ---
 title: ER 書式設定のコンフィギュレーションの作成 (2016 年 11 月)
-description: 次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) にコンフィギュレーションの書式設定を作成する方法を説明します。
+description: このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER)の形式コンフィギュレーション作成方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 11/27/2018
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c1fd41b1724eb2e0405c0e7a7e0ff0aea4a945e0
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544774"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866805"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER 書式設定のコンフィギュレーションの作成 (2016 年 11 月)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) にコンフィギュレーションの書式設定を作成する方法を説明します。 このコンフィギュレーションの書式設定では、支払を処理するために使用される電子ドキュメントの書式を定義します。 この例では、サンプル会社 Litware、Inc. の形式コンフィギュレーションを作成します。これらの手順を完了するには、先に「選択したデータソースへのモデルのマッピング」の手順の各ステップを完了する必要があります。
+このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER)の形式コンフィギュレーション作成方法について説明します。 このコンフィギュレーションの書式設定では、支払を処理するために使用される電子ドキュメントの書式を定義します。 この例では、サンプル会社 Litware、Inc. の形式コンフィギュレーションを作成します。これらの手順を完了するには、先に「選択したデータソースへのモデルのマッピング」の手順の各ステップを完了する必要があります。
 
 
 ## <a name="create-a-new-format-configuration"></a>新しいコンフィギュレーションの書式設定の作成

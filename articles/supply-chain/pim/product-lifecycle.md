@@ -1,9 +1,9 @@
 ---
-title: 製品ライフサイクルの状態
-description: 製品ライフサイクルの状態では、リリースされた製品または製品バリアントのライフサイクルの状態をドキュメントします。
+title: 製品ライフサイクル状態の概要
+description: 製品ライフサイクルの状態は、リリースされた製品または製品バリアントのライフサイクルの状態を付記します。
 author: cvocph
 manager: AnnBe
-ms.date: 12/08/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: bf9e8fe828cae0f643bfb89c34f1d545e3993619
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83c523a23973f4fd146d8308fbb5ecb486224ad9
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546205"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865331"
 ---
-# <a name="product-lifecycle-state"></a>製品ライフサイクルの状態 
+# <a name="product-lifecycle-state-overview"></a>製品ライフサイクル状態の概要
 
 [!include [banner](../includes/banner.md)]
 
-製品ライフサイクルの状態では、リリースされた製品または製品バリアントのライフサイクルの状態をドキュメントします。 製品ライフサイクルの状態は、ユーザー、通常は製品マネージャーまたは製品マスター データのマネージャーによって定義されます。 マスター プランなどの特定の業務プロセスは、特定のライフサイクルの状態によって影響を受けることができます。   
+製品ライフサイクルの状態は、リリースされた製品または製品バリアントのライフサイクルの状態を付記します。 製品ライフサイクルの状態は、ユーザー、通常は製品マネージャーまたは製品マスター データのマネージャーによって定義されます。 マスター プランなどの特定の業務プロセスは、特定のライフサイクルの状態によって影響を受けることができます。   
 
 リリースされた製品または製品バリアントが、特定の製品または現在あるバリアントのライフサイクル状態に記載した製品ライフサイクルの状態を関連付けることができます。 都道府県名と説明を割り当てることにより、製品ライフサイクルの状態の番号を定義できます。 新しいリリース済製品の既定の状態として、1つのライフサイクルの状態を選択できます。 リリース済製品のバリエーションは、作成時にリリースされた製品マスターから、その製品ライフサイクルの状態を継承します。 リリース済製品マスターのライフサイクルの状態を変更する際、同じの元の状態にあるすべての既存のバリエーションを更新することもできます。  
 

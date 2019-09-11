@@ -3,7 +3,7 @@ title: 番号順序を個別に設定する
 description: このトピックでは、番号順序を個別に設定する方法について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58e69b680c006c814e9408135b6947161ad7c4f3
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 818e641d19444e94a287134b68b25d52a05021d0
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738884"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886603"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>番号順序を個別に設定する
 
@@ -33,7 +33,7 @@ ms.locfileid: "1738884"
 2. **番号順序**を選択します。
 3. **番号順序コード** フィールドに値を入力します。
 4. **名前**フィールドに値を入力します。
-5. **スコープ パラメーター** クイック タブで、番号順序の範囲を選択してドロップダウン リストから範囲値を選択します。 範囲によって、番号順序を使用する組織が決まります。 また、**共有**以外の範囲が指定されている番号順序に、その範囲に対応する区分を設定することもできます。 たとえば、法人の範囲の番号順序には、**法人**の区分を含めることができます。 範囲の詳細については、[番号順序の概要](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/fin-and-ops/organization-administration/number-sequence-overview.md) を参照してください。  
+5. **スコープ パラメーター** クイック タブで、番号順序の範囲を選択してドロップダウン リストから範囲値を選択します。 範囲によって、番号順序を使用する組織が決まります。 また、**共有**以外の範囲が指定されている番号順序に、その範囲に対応する区分を設定することもできます。 たとえば、法人の範囲の番号順序には、**法人**の区分を含めることができます。 範囲の詳細については、[番号順序の概要](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview) を参照してください。 
 6. **区分**セクションを展開します。
     - 区分の追加、削除、および並べ替えを行って、番号順序の形式を定義します。  
     - すべての範囲の番号順序には、*定数区分*および*英数字区分*を含めることができます。 定数区分には、一定の英数字が含まれています。 この区分タイプは、番号順序区分の間にハイフンまたはその他の区切り文字を追加する場合に使用します。 英数字区分には、番号記号 (#) とアンパサンド (&) の組み合わせが含まれています。 これらの文字は、順序の番号が使用されるたびに繰り上がる文字と数字を表します。 番号記号 (#) は数字の繰り上げに、アンパサンド (&) は文字の繰り上げに使用します。 たとえば、`#####_2014` という形式を指定した場合、`00001_2014`、`00002_2014` という順序で番号が割り当てられます。 英数字区分は少なくとも 1 つ必要です。 会社や法人などの範囲区分は必須ではありません。 ただし、形式に範囲区分を含めない場合、選択した参照先の番号は範囲ごとに生成されます。  

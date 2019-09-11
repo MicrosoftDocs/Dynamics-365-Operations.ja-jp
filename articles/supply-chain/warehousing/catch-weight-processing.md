@@ -3,7 +3,7 @@ title: 倉庫管理による CW 製品の処理
 description: このトピックでは、作業テンプレートと場所ディレクティブを使用して作業が倉庫のどこでどのように実行されるかを決定する方法を説明します。
 author: perlynne
 manager: AnnBe
-ms.date: 03/18/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ed588ea28bec3e734f9648c1fbd7551ab0b3cdda
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836120"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887138"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>倉庫管理による CW 製品の処理
 
@@ -136,7 +136,6 @@ CW タグの追跡が使用されていない場合は、各分析コードの�
 
 - 検査指示の手動作成では、CW 製品はサポートされていません。
 - 作業に関連付けしている在庫の手動による移動では、CW 製品はサポートされていません。
-- ライセンス プレートの連結では、CW 製品はサポートされていません。
 - 倉庫の在庫を初期化するためのライセンス プレートの読み込みでは、CW 製品はサポートされていません。
 - バッチ バランシングのプロセスでは、CW 製品はサポートされていません。
 - マイナスの現物在庫の処理では、CW 製品はサポートされていません。
@@ -147,7 +146,6 @@ CW タグの追跡が使用されていない場合は、各分析コードの�
 - クラスター ピッキングの機能では、CW 製品はサポートされていません。
 - ピッキングと梱包の倉庫の処理では、CW 製品はサポートされていません。
 - CW 製品では、作業テンプレートで定義されている作業を自動的に実行できます。
-- 逆仕訳作業の機能では、CW 製品はサポートされていません。
 - CW 製品では、コンテナーが終了した後に、作業が作成される手作業の梱包ステーションの処理はサポートされていません。
 - 個ごとのスキャン機能では、CW 製品はサポートされていません。
  

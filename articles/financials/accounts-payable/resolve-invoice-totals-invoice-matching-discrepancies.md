@@ -1,9 +1,9 @@
 ---
-title: 請求書の合計価格の照合における差異の解決
+title: 請求合計の照合における差異の解決の概要
 description: 合計請求書の照合により、合計請求書金額が、許容差を超えて予測金額から逸脱していないことを確認できます。
 author: abruer
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c664f0b66b41b3db8f45b4507bca39e1ffefb599
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d4a20368385ec43547ee3d29770bd83cdec47e4a
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834564"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864945"
 ---
-# <a name="resolve-discrepancies-during-invoice-totals-matching"></a>請求書の合計価格の照合における差異の解決
+# <a name="resolve-discrepancies-during-invoice-totals-matching-overview"></a>請求合計の照合における差異の解決の概要
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,9 +1,9 @@
 ---
-title: 時刻と出勤の登録
+title: 時刻と出勤の登録の概要
 description: 時間登録作業者は、さまざまなタイプの時間登録を入力できます (出勤、退勤、間接活動の登録、および休暇登録時など)。 このトピックは、登録とその計算、承認、およびタイムシートの承認プロセスに構造と自動承認を追加するためのワークフローの使用について説明します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5fac917362fe4aa2be675133528a7108647ecc00
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 0e88d64340a7f4963956d1dce3c31f3542cc30f8
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838418"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865237"
 ---
-# <a name="time-and-attendance-registration"></a>時刻と出勤の登録
+# <a name="time-and-attendance-registration-overview"></a>時刻と出勤の登録の概要
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,9 +1,9 @@
 ---
-title: 日本
+title: 日本の概要
 description: このトピックでは、日本固有の機能の概要を示します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 73e595ea0b2225ac8d0e98cbb705fd583c6678a8
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 76745e606acb6faa3d2ef2b9d0eaed22b7355e1b
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849394"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865660"
 ---
-# <a name="japan"></a>日本
+# <a name="japan-overview"></a>日本の概要
 
 [!include[banner](../includes/banner.md)]
 

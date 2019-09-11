@@ -3,7 +3,7 @@ title: 二重通貨
 description: このトピックでは、レポート通貨が Microsoft Dynamics 365 for Finance and Operations の 2 番目の会計通貨として使用されている二重通貨に関する情報を提供します。
 author: kweekley
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,31 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: dfd4c116552510ee42cd2f3e8a0f31100826b9d2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d5128ea9daaf22ee962ca5fc70a05cba05c7edb
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839405"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867514"
 ---
 # <a name="dual-currency"></a>二重通貨
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) で導入された機能は、レポート通貨の別目的での使用および 2 番目の会計通貨としての使用を有効にします。 この機能は、*二重通貨*と呼ばれます。 二重通貨の変更を、コンフィギュレーション キーまたはパラメーターを通じて無効にはできません。 レポート通貨が 2 つ目の会計通貨として使用され、転記論理でのレポート通貨の計算方法が変更されたためです。
 
-さらに、さまざまなモジュールが、さまざまなプロセスでレポート通貨を追跡、レポート、および使用するよう強化されました。 影響を受けるモジュールには、**総勘定元帳**、**財務報告**、**買掛金勘定**、**売掛金勘定**、**現金および銀行管理**、および**固定資産**が含まれます。 アップグレード後に、現金および銀行管理と固定資産の特定の手順を完了する必要があります。 したがって、このトピックの関連するセクションを必ずお読みください。
+さらに、複数のモジュールが、さまざまなプロセスでレポート通貨を追跡、レポート、および使用するよう強化されました。 影響を受けるモジュールは、次のとおりです。
+
+- 一般会計 
+- 財務諸表 
+- 買掛金勘定
+- 売掛金勘定 
+- 現金および銀行管理 
+- 固定資産 
+- 連結
+
+アップグレード後に、現金および銀行管理と固定資産の特定の手順を完了する必要があります。 したがって、このトピックの関連するセクションを必ずお読みください。
 
 ## <a name="posting-process"></a>転記プロセス
 
@@ -72,9 +83,10 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 
 - [一般会計](#general-ledger)
 - [財務報告](#financial-reporting)
 - [買掛金勘定](#accounts-payable-and-accounts-receivable)
-- [売掛金](#accounts-payable-and-accounts-receivable)
+- [売掛金勘定](#accounts-payable-and-accounts-receivable)
 - [現金および銀行管理](#cash-and-bank-management)
 - [固定資産](#fixed-assets)
+- [連結](#consolidations)
 
 ### <a name="general-ledger"></a>一般会計
 
@@ -124,6 +136,8 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 
 さらに、減価償却プロセスに重要な変更が加えられました。 これらの変更により、アップグレード後にユーザー アクションが必要になります。 固定資産をまだ使用していない場合でも、次の変更についてよく読み理解しておくことが重要です。
 
 - 減価償却プロセスがレポート通貨金額を決定する方法が変更されました。 次のシナリオでは、減価償却が以前にレポート通貨金額を決定した方法と、現在レポート通貨金額を決定する方法を比較します。
+
+
 
     **減価償却のシナリオ**
 
@@ -186,3 +200,13 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 
     - 固定資産仕訳帳で減価償却トランザクション タイプを入力すると、レポート通貨金額が新しい列に表示されます。 それらの値は変更可能です。
     - 元帳の会計通貨およびレポート通貨が同じである場合、金額が同期しています。**貸方**金額を変更すると、**レポート通貨での貸方**金額がそれに一致するよう自動で変更されます。
     - 固定資産仕訳帳で別のトランザクション タイプを入力すると、転記の前後どちらでも**レポート通貨での借方**および**レポート通貨での貸方**金額は決して表示されません。 会計通貨およびレポート通貨金額は、総勘定元帳に転記された伝票で引き続き利用できます。
+    
+### <a name="consolidations"></a>連結
+    
+Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.5 (2019 年 10 月) に導入された機能により、連結および二重通貨に対する柔軟性の向上を促す機能管理を通じて機能が有効になります。 この機能を有効にするには、**機能管理**ワークスペースに移動し、**総勘定元帳の連結で二重通貨機能を有効にする**を選択します。
+
+総勘定元帳の連結では、ソース会社からの会計通貨金額またはレポート通貨金額のいずれかを連結するため新しいオプションが追加されました。 会計通貨またはレポート通貨が、連結会社の会計通貨またはレポート通貨と同じである場合、金額は変換されるのではなく直接コピーされます。
+
+-  連結会社のトランザクション通貨として、ソース会社から会計通貨またはレポート通貨を使用するかどうかを選択できるようになります。
+
+- ソース会社からの会計通貨またはレポート通貨は、双方の通貨が同じである場合は、連結会社の会計通貨金額またはレポート通貨金額に直接コピーされます。 連結会社の会計およびレポートの通貨金額は、いずれの通貨も同じでない場合は、為替レートを使用して計算されます。
