@@ -1,9 +1,9 @@
 ---
-title: 販売契約書
+title: 販売契約書の概要
 description: このトピックでは、販売契約書について説明します。 販売契約書は、特定の数量または特定の量の製品を、一定期間に特別価格と割引で購入することを顧客と約束する契約です。
 author: omulvad
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4ab396d06383e3d6fc7bfab2e01f1afe4aa8fc4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a14801f3aa486da3af252695a3e2ccd58c0e9059
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560120"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865972"
 ---
-# <a name="sales-agreements"></a>販売契約書
+# <a name="sales-agreements-overview"></a>販売契約書の概要
 
 [!include [banner](../includes/banner.md)]
 

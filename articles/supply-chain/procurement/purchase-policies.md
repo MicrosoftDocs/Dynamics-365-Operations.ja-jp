@@ -1,9 +1,9 @@
 ---
-title: 購入ポリシー
+title: 購入ポリシーの概要
 description: この記事は、購入ポリシーに関する情報を提供します。 購入ポリシーは、要求プロセスを制御するルールのコレクションです。 購入ポリシーは調達管理者が組織の戦略購買の要求に対応するポリシー構造を作成することによって自分の調達戦略を実行できるように助けます。
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a16f365fa5a8b39dddac2886c36a8231de745a37
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7d0b925f7a6eff9f2e5b479e3a1c6adc18354383
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566343"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865259"
 ---
-# <a name="purchasing-policies"></a>購入ポリシー
+# <a name="purchasing-policies-overview"></a>購入ポリシーの概要
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,9 +1,9 @@
 ---
-title: 財務報告
+title: 財務諸表の概要
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で財務報告にアクセスする場所、および財務報告機能の使用方法について説明します。 これには、用意された既定の財務諸表の説明が含まれています。
 author: aprilolson
 manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a55c0a1ac8ac833315afa179c1b6d4eb78195fc
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e3727907c2ff5f51ef3e5132a78836b5e699221b
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839210"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865756"
 ---
-# <a name="financial-reporting"></a>財務報告
+# <a name="financial-reporting-overview"></a>財務諸表の概要
 
 [!include [banner](../includes/banner.md)]
 

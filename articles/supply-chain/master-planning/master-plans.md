@@ -1,9 +1,9 @@
 ---
-title: マスター プラン
+title: マスター プランの概要
 description: 会社の日常業務のサポート、監視を要する多様な計画戦略のシミュレーション、社内の業績や顧客満足に関するポリシーの実装など、さまざまな目的のマスター プランを使用します。
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9731ba47f449e037850c95a7873e1ae4551e2a9
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 6a3fa16e0eeb4c392a80cc16cff004cf3765bd12
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595526"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865423"
 ---
-# <a name="master-plans"></a>マスター プラン
+# <a name="master-plans-overview"></a>マスター プランの概要
 
 [!include [banner](../includes/banner.md)]
 

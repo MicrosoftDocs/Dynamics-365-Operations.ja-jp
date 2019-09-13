@@ -3,7 +3,7 @@ title: 作業単位の作成
 description: 作業単位とは、事業における経済資源と運営プロセスの管理を振り分ける際に使用する組織です。
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef03329cfe477256cfbe1dde1dc18df52137286f
-ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
+ms.openlocfilehash: 164b347e1c929f60762793799a500a7203f0f72f
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "1755572"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874906"
 ---
 # <a name="create-an-operating-unit"></a>作業単位の作成
 
@@ -40,5 +40,5 @@ ms.locfileid: "1755572"
     + 番地、郵便番号、市町村などの住所情報を入力します。 **追加**をクリックして新しい住所レコードを入力するか、編集をクリックして既存の住所レコードを変更します。   
     + 必要に応じて、**連絡先情報**セクションを展開します。  
     + 電子メール アドレス、URL と電話番号など通信方法に関する情報を入力します。 新しい通信記録を入力するには、[新規] をクリックします。 既存の通信記録を変更するには、**詳細オプション > 詳細**の順にクリックします。   
-6. **保存**をクリックします。
-
+6. 必要に応じて**作業単位数**を変更します。 この番号は、対応する**関係者**レコードに固有の ID であり、他の作業単位と同じではありません。
+7. **保存** を選択します。

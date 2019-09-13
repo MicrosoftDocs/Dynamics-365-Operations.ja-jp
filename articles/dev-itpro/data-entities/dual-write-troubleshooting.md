@@ -19,50 +19,56 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: ca62a6b3aa64ec2383ee3ded3b7bbf4650a41166
-ms.sourcegitcommit: efcc0dee8bde5f8f93f6291e7f059ad426843e57
+ms.openlocfilehash: 5e71729dafd2ad85a01b055363d1c7056b5558b2
+ms.sourcegitcommit: 3f05ede8b8acdf0550240a83a013e093b4ad043d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "1797278"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1873108"
 ---
 # <a name="troubleshooting-guide-for-data-integration"></a>データ統合のトラブルシューティング ガイド
 
-## <a name="enable-plugin-trace-in-common-data-service-and-check-the-dual-write-plugin-error-details"></a>Common Data Service のプラグイン トレースを有効にし、デュアル書き込みプラグイン エラーの詳細を確認
+## <a name="enable-plug-in-trace-logs-in-common-data-service-and-inspect-the-dual-write-plug-in-error-details"></a>Common Data Service のプラグイン トレース ログを有効にし、デュアル書き込みプラグイン エラーの詳細を検査
 
-デュアル書き込み同期で問題またはエラーが発生した場合は、トレース ログでエラーを検査できます。
+[!include [banner](../includes/banner.md)]
 
-1. エラーを検査する前に、[プラグインと登録](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs) の指示に従い、プラグイン トレースを有効にする必要があります。 これで、エラーを検査できます。
-2. Dynamics 365 for Sales にログインします。
-3. 設定アイコン (ギア) をクリックし、**詳細設定**を選びます。
-4. **設定**メニューで、**カスタマイズ > プラグイン トレース ログ**を選択します。
-5. タイプ名 **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** をクリックして、エラー詳細を表示します。
+[!include [preview](../includes/preview-banner.md)]
 
-## <a name="check-dual-write-synchronization-errors-in-finance-and-operations"></a>Finance and Operations のデュアル書き込み同期エラーを確認
+デュアル書き込み同期中に問題またはエラーが発生した場合は、これらの手順に従って追跡ログのエラーを検査します。
 
-テスト中にエラーを確認するには、次の手順を実行します。
+1. エラーを検査する前に、プラグイン トレース ログを有効にする必要があります。 手順については、[チュートリアル: プラグインの書き込みおよび登録](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs) の "トレースログの表示" を参照してください。
 
-+ LifeCycle Services (LCS) にログインします。
-+ デュアル書き込みテストを実行するために、選択した LCS プロジェクトを開きます。
-+ クラウド ホスト環境に移動します。
-+ LCS に表示されるローカル アカウントを使用して、Finance and Operations VM にデスクトップをリモートします。
-+ イベント ビューアーを開きます。 
-+ **アプリケーションとサービス ログ > Microsoft > Dynamics > AX-DualWriteSync > オペレーション**へ移動します。 エラーと詳細が表示されます。
+    これでエラーを検査できるようになります。
 
-## <a name="how-to-unlink-and-link-another-common-data-service-environment-from-finance-and-operations"></a>Finance and Operations から、別の Common Data Service 環境をリンクおよび解除の方法
+2. Microsoft Dynamics 365 for Sales へサインインします。
+3. **設定**ボタン (ギヤ記号) を選択してから、**詳細設定**を選択します。
+4. **設定**メニューで、**カスタマイズ \> プラグイン トレース ログ**を選択します。
+5. タイプ名として **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** を選択して、エラー詳細を表示します。
 
-リンクを更新する場合は、次の手順を実行します。
+## <a name="inspect-dual-write-synchronization-errors-in-finance-and-operations"></a>Finance and Operations のデュアル書き込み同期エラーを検査
 
-+ Finance and Operations 環境に移動します。
-+ データ管理を開きます。
-+ **アプリの CDS にリンク**をクリックします。
-+ 実行中のすべてのマッピングを選択し、**停止**をクリックします。 
-+ 実行中のすべてのマッピングを選択し、**削除**をクリックします。
+テスト中のエラーを検査するには、次の手順に従います。
+
+1. Microsoft Dynamics Lifecycle Services (LCS) にログインします。
+2. LCS プロジェクトを開いて、デュアル書き込みテストを実行します。
+3. **クラウド ホスト環境**を選択します。
+4. LCS に表示されるローカル アカウントを使用して、Dynamics 365 for Finance and Operations バーチャル マシン (VM) へのリモート デスクトップ接続を実行します。
+5. イベント ビューアーを開きます。 
+6. **アプリケーションとサービス ログ \> Microsoft \> Dynamics \> AX-DualWriteSync \> オペレーション**の順に移動します。 エラーと詳細が表示されます。
+
+## <a name="unlink-one-common-data-service-environment-from-finance-and-operations-and-link-another-environment"></a>1 つの Common Data Service 環境を Finance and Operations からリンク解除し、別の環境をリンクする
+
+リンクを更新するには、以下の手順を実行します。
+
+1. Finance and Operations 環境に移動します。
+2. データ管理を開きます。
+3. **アプリ用 CDS** を選択します。
+4. 実行しているすべてのマッピングを選択してから、**停止**を選択します。
+5. すべてのマッピングを選択してから、**削除**を選択します。
 
     > [!NOTE]
-    > **CustomerV3-Account** テンプレートが選択されている場合、**削除**オプションは表示されません。 必要に応じて、選択を解除します。 **CustomerV3-Account** は古いプロビジョニングされたテンプレートであり、見込み客から現金化ソリューションで動作します。 グローバルにリリースされているため、すべてのテンプレートの下に表示されます。
+    > **CustomerV3-Account** テンプレートが選択されている場合、**削除**オプションは利用できません。 必要に応じて、このテンプレートの選択をクリアします。 **CustomerV3-Account** は古いプロビジョニングされたテンプレートであり、見込み客から現金化ソリューションで動作します。 グローバルにリリースされているため、すべてのテンプレートの下に表示されます。
 
-+ **リンク解除の環境**をクリックします。
-+ **はい**をクリックし、確認します。
-+ 新しい環境をリンクするには、[インストール ガイド](https://aka.ms/dualwrite-docs) の手順に従います。
-
+6. **リンク解除の環境**を選択します。
+7. **はい**を選択して操作を確認します。
+8. 新しい環境をリンクするには、[インストール ガイド](https://aka.ms/dualwrite-docs) の手順に従います。

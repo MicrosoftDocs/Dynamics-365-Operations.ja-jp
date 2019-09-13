@@ -1,9 +1,9 @@
 ---
-title: 買掛金勘定のコンフィギュレーション
+title: 買掛金勘定のコンフィギュレーションの概要
 description: この記事は、Microsoft Dynamics 365 for Finance and Operations の買掛金勘定の基本機能およびオプション機能の設定に使用するページについて説明します。 また、買掛金勘定の設定を開始する前に実行しなければならない設定手順について説明します。
 author: abruer
 manager: AnnBe
-ms.date: 08/08/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8642b27f222ed080539e63b0608a52aefbe64e8
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ce2caf8df871ee8f577b3a1af9d71244a1dc4694
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837473"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864993"
 ---
-# <a name="configure-accounts-payable"></a>買掛金勘定のコンフィギュレーション
+# <a name="configure-accounts-payable-overview"></a>買掛金勘定のコンフィギュレーションの概要
 
 [!include [banner](../includes/banner.md)]
 

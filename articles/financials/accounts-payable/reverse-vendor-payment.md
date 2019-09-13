@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6587505fc5a729ffd82ab65aca7d5aa6ca4a265
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: db9208c8e76d963d5b8f6bee6b7c73268af68734
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837255"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867753"
 ---
 # <a name="reverse-a-vendor-payment"></a>仕入先支払の取消
 
@@ -48,7 +48,7 @@ ms.locfileid: "1837255"
 所属する組織が、**小切手**ページの**支払取消**をクリックしたときに、小切手の取消をすぐに転記したい場合。 **現金および銀行管理パラメーター** ページで **支払取消の確認プロセスを使用**オプションを**なし**に設定します。 **小切手**ページで、取り消しする小切手を選択し、**支払取消**を選択します。 日付を入力し、取消の理由を選択します。
 
 ## <a name="reverse-posted-checks-after-they-are-reviewed-in-the-check-reversal-journal"></a>小切手の取消仕訳帳で確認した後に転記済小切手を取り消す
-所属する組織が、転記する前に小切手の取消の確認を行う場合は、確認のための小切手取消仕訳帳を**現金および銀行管理パラメーター** ページで作成し、**支払取消の確認プロセスを使用**オプションを**あり**に設定します。 **小切手**ページで、取り消しする小切手を選択し、**支払取消**を選択します。 日付を入力し、取消の理由を選択します。 小切手取消仕訳帳で仕訳帳を作成するには、仕分名を選択する必要もあります。
+所属する組織が、転記する前に小切手の取消の確認を行う場合は、確認のための小切手取消仕訳帳を**現金および銀行管理パラメーター** ページで作成し、**支払取消の確認プロセスを使用**オプションを**あり**に設定します。 **小切手**ページで、取り消しする小切手を選択し、**支払取消**を選択します。 日付を入力し、取消の理由を選択します。 財務理由は、銀行タイプと仕入先タイプの両方に対して設定する必要があります。 小切手取消仕訳帳で仕訳帳を作成するには、仕分名を選択する必要もあります。
 
 ### <a name="review-a-reversal"></a>取消のレビュー
 

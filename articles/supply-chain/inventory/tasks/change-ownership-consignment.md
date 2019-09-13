@@ -3,7 +3,7 @@ title: 生産需要に基づく委託販売在庫の所有権の変更
 description: この手順は、生産中における在庫需要があるときに委託製品在庫所有者を仕入先から自らの法人に変更する方法を示します。
 author: perlynne
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9587d39801ad39649aa5fa3ff682cdeab411516e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 1cf45e838afcb55e15175811f4d38be07d7a484d
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838802"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874880"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>生産需要に基づく委託販売在庫の所有権の変更
 
@@ -30,6 +30,8 @@ ms.locfileid: "1838802"
 
 この手順は、生産中における在庫需要があるときに委託製品在庫所有者を仕入先から自らの法人に変更する方法を示します。 所有権を変更するには、在庫所有権変更仕訳を作成、転記します。 所有権変更は、既存の生産需要に基づき、この記録で示されるように手作業で作成します。 通常、現場の監督者がこの作業を実施します。 デモ データ会社 USMF でこの手順を使うか、または独自のデータを使うことができます。 自分のデータを使用する場合は、次の条件があることを確認します: 在庫所有権変更に設定された在庫仕訳、物理的に記録された仕入先所有の手持在庫品目、原材料の複数の製造オーダーライン この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
+> [!NOTE]
+> 出庫委託販売プロセスはそのままサポートされておらず、自動的な所有権仕訳のプロセスもサポートされていません。
 
 ## <a name="create-an-inventory-ownership-journal"></a>在庫所有権仕訳を作成する
 1. [在庫管理] > [仕訳入力] > [品目] > [在庫所有権変更] の順に移動します。

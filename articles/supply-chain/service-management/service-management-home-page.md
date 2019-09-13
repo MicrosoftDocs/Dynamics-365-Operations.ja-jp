@@ -1,9 +1,9 @@
 ---
-title: サービス管理
+title: サービス管理の概要
 description: サービス契約とサービスの定期売買を締結し、サービス注文および顧客の照会を処理し、顧客へのサービスの配送を管理および分析するには、サービス管理を使用します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2fc5361b1b30db29789ff67b56a15eb66a919f5
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 20751acfc012e2ac1eef99c778c5b0353baf1827
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843292"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865852"
 ---
-# <a name="service-management"></a>サービス管理 
+# <a name="service-management-overview"></a>サービス管理の概要
 
 [!include [banner](../includes/banner.md)]
 

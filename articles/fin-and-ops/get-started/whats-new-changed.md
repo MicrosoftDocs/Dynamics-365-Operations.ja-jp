@@ -1,5 +1,5 @@
 ---
-title: 新規または変更
+title: ホーム ページの新機能および変更された機能
 description: このページでは、最新バージョンの Microsoft Dynamics 365 for Finance and Operations の新しい機能について学ぶ役立つトピックを示します。
 author: josaw1
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 300db1170a9dbb6a83dd628c0430e03d7746fe53
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 9505f386cdc891c855e4ac38dffd16858d79a1ac
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863442"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865163"
 ---
-# <a name="whats-new-or-changed"></a>新機能および変更された機能
+# <a name="whats-new-or-changed-home-page"></a>ホーム ページの新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 

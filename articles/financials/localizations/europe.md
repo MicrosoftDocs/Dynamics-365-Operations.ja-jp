@@ -1,9 +1,9 @@
 ---
-title: ヨーロッパ
+title: 欧州の概要
 description: このトピックは、ヨーロッパの Microsoft Dynamics 365 for Finance and Operations のドキュメント リソースへのリンクを提供します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/10/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d748b7bf696e17d3efd7deabeb9bb1288d1585c6
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: afbb388ab32a8aac5f668afe812d9ab9d0c2dc1b
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1852320"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865678"
 ---
-# <a name="europe"></a>ヨーロッパ 
+# <a name="europe-overview"></a>欧州の概要
 
 [!include [banner](../includes/banner.md)]
 
