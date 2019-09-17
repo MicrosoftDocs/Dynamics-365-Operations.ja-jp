@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: andreabichsel
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8f488b0bf844fc04f07fedfa447073cdeabacc15
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f224114b132ae54dddb7766268c1fc5ec49e109d
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518435"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795247"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-2-2019"></a>Dynamics 365 for Talent (2019 年 4 月 2 日) の新機能や変更された機能
 
@@ -57,13 +57,13 @@ Attract と Onboard では、問題をレポートする機能を使用してエ
 このセクションに記載された変更は、ビルド番号 8.1.2216 に適用されます。
 
 ### <a name="platform-update-25"></a>プラットフォーム update 25
-プラットフォーム更新プログラム 25 の詳細については [Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25) を参照してください。
+プラットフォーム更新プログラム 25 の詳細については [Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25) を参照してください。
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>高度な報酬セキュリティ (固定および変動)
 多くの組織では、報酬および福利厚生の管理者は特定の報酬レコードにのみアクセスできます。 これには、経営幹部または地域の従業員向けのレコードが含まれます。 この変更により、HR は組織内のさまざまな従業員グループの報酬プランを管理および維持できます。 セキュリティ ロールを固定および変動プランに割り当てることができます。 これらのセキュリティ ロールによって、給与または特別償却レコードなどのプランおよび関連する従業員データへのアクセスが決定されるため、それらのロールだけが従業員グループの報酬を処理できます。
 
 ### <a name="upgrade-to-common-data-service"></a>Common Data Service へのアップグレード
-Common Data Service へのアップグレードの期限に近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、PowerApps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
+Common Data Service へのアップグレードの期限に近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、PowerApps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
 
 ## <a name="in-preview"></a>プレビュー
 

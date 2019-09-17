@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518499"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741893"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Dynamics 365 for Talent の新機能および変更された機能 (2019 年 3 月 5 日)
 
@@ -43,10 +43,10 @@ Attract には、Common Data Service 内のオプション セットである複
 ## <a name="changes-in-onboarding"></a>オンボードの変更
 
 ### <a name="private-preview-for-onboard-teams"></a>Onboard チームのプライベート プレビュー
-組織全体でテンプレートを簡単に共有して共同作業できるようになりました。 詳細については、[Onboard チームを使用して、組織全体のベスト プラクティスを共有する](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams) を参照してください。
+組織全体でテンプレートを簡単に共有して共同作業できるようになりました。 詳細については、[Onboard チームを使用して、組織全体のベスト プラクティスを共有する](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams) を参照してください。
 
 ### <a name="private-preview-for-assignee-placeholders"></a>割り当て先のプレース ホルダーのプライベート プレビュー
-活動を個人の代わりにロールに割り当てることにより、テンプレートを強化できます。 ロールは、ガイドの作成時に個人に割り当てられます。 詳細については、[活動をロールに割り当てることによってガイド管理を合理化する](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles) を参照してください。
+活動を個人の代わりにロールに割り当てることにより、テンプレートを強化できます。 ロールは、ガイドの作成時に個人に割り当てられます。 詳細については、[活動をロールに割り当てることによってガイド管理を合理化する](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles) を参照してください。
 
 ## <a name="changes-in-core-hr"></a>Core HR の変更
 **ビルド 8.1.2178**
@@ -71,7 +71,7 @@ Attract には、Common Data Service 内のオプション セットである複
 このリリースには、他のマイナーなバグ修正が含まれています。
 
 ### <a name="upgrade-to-common-data-service"></a>Common Data Service へのアップグレード
-Common Data Service へのアップグレードの期限が近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、PowerApps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
+Common Data Service へのアップグレードの期限が近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、PowerApps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
 
 ## <a name="coming-soon"></a>間もなく公開
 
@@ -79,4 +79,4 @@ Common Data Service へのアップグレードの期限が近づいています
 多くの組織で、報酬および福利厚生のマネージャーは、経営幹部または地域の従業員のレコードなど、特定の報酬レコードにのみアクセスできます。 この変更により、組織内のさまざまな従業員数の報酬プランを管理および維持できます。 固定および変動プランにはセキュリティ ロールを割り当てることができます。これは、プランへのアクセス権とプランに関連する従業員データ (給与または特別償却レコードなど) を決定します。 与えられたアクセス権を持つロールのみが、それらの従業員の報酬を処理できます。
 
 ###  <a name="platform-update-24"></a>プラットフォーム update 24
-プラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。
+プラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。

@@ -17,42 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 9c27d1810a89ed7d7a7745e41c5f118dbdfe5dda
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 936ff85a4dabb715cb83b875a5c58c9fb7a0ac26
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590485"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739820"
 ---
-# <a name="post-jobs-to-external-career-sites-from-attract"></a>Attract から外部キャリア サイトにジョブを転記
+# <a name="post-jobs-to-broadbean"></a>Broadbean への職務の投稿
 
 [!include [banner](../includes/banner.md)]
 
-できるだけ多くの資格のある候補者の前で、空いている職位を獲得する必要があります。 Broadbean などの採用サイトは、この目標を達成するのに役立ちます。 Microsoft Dynamics 365 Talent: Attract では Broadbean にジョブを転記し、Microsoft がこの領域で新製品を常に提供できるようにします。
+Microsoft Dynamics 365 for Talent: Attract は、Attract から Broadbean にジョブを直接転記させることにより、必要な人材を獲得するのに役立ちます。 [ジョブを作成](./creating-jobs-attract.md) した後、Broadbean 上で可能性のあるすべてのジョブ候補の前にジョブを配置するには、ボタンをクリックするのみです。
 
-## <a name="post-jobs-to-broadbean"></a>Broadbean へのジョブの転記
+Broadbean にジョブを転記するには、適切な Broadbean のライセンスが必要です。 Broadbean はさまざまな製品やプランを提供しています。 Broadbean ライセンスと価格に関する詳細情報については、[Broadbean にお問い合わせください](https://www.broadbean.com/contact-us/)。
 
-Broadbean にジョブを転記する前に、Broadbean との統合をコンフィギュレーションする必要があります。
+Attract と統合するために Broadbean を構成する方法に関する詳細情報を必要としている管理者は、[外部のジョブ ボードの設定の入力](./attract-admin-job-board-settings.md) を参照してください。
 
-> [!NOTE]
-> - 外部サイトへジョブを転記するには、[包括採用アドオン](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) が必要です。
-> - Attract から Broadbean にジョブを転記するには、Broadbean サブスクリプションが必要です。
-> - 現在プレビューにある機能です。 試行する場合は、[Attract 管理者の設定で有効にする](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) を実行します。
-
-### <a name="configure-broadbean-integration"></a>Broadbean との統合をコンフィギュレーションする
-
-1. Attract に管理者としてサインインします。
-2. ページの右上隅にある**設定**ボタン (ギヤ記号) を選択して、**管理者センター**を選択します。
-3. **職務ボードの設定**タブの **Broadbean との統合を有効にする**セクションで、統合を有効にします。
-4. Broadbean に連絡し、**ユーザー名、クライアント ID、暗号化トークン**の情報を入力します。
-
-> [!WARNING]
-> Broadbean の資格情報は機密性が高いものです。 したがって、責任を持ってそれらを格納および共有します。 Attract の管理者ロールを持つすべてのユーザーは、これらの資格情報を表示できます。
-
-> [!NOTE]
-> Microsoft と Attract は、これらの値を作成し管理することには関与していません。 Attract でそれらを最新の状態に保ち、Broadbean と協力してユーザーの資格情報に関連する問題を解決するのはユーザー個人の責任となりす。
-
-### <a name="post-a-job-to-broadbean"></a>Broadbean へのジョブの転記
+## <a name="post-jobs-to-broadbean"></a>Broadbean への職務の投稿
 
 Broadbean を有効にした後、採用担当者および管理者はジョブを転記できます。 職務の応募 URL が必要です。
 
@@ -80,7 +62,7 @@ Broadbean が正常に転記を完了した後、Attract の**転記**セクシ�
 ジョブを Broadbean に転記した後は、Attract から表示できます。
 
 1. Attract で、Broadbean で表示する職務を開きます。
-2. **転記**セクションで、Broadbean に対応する省略記号ボタン (**...**) を選択し、**表示**を選択します。
+2. **転記**タブで、Broadbean に対応する省略記号ボタン (**...**) を選択し、**表示**を選択します。
 
 Broadbean のジョブ転記は、新しいウィンドウに表示されます。
 
@@ -107,10 +89,16 @@ Broadbean のジョブ転記は 2 通りの方法で更新できます。
 
 Broadbean でジョブが削除された後、Attract の Broadbean 項目には**今すぐ転記**ボタンが表示されます。 このボタンが存在するということは、職務が削除されており、もう一度転記できることを示します。
 
-### <a name="troubleshoot-the-broadbean-integration"></a>Broadbean との統合のトラブルシューティング
+### <a name="troubleshoot-job-posting-to-broadbean"></a>Broadbean へのジョブ転記のトラブルシューティング
 
 Broadbean にジョブを転記できない場合は、これらの手順を実行します。
 
 1. Attract で入力した Broadbean の資格情報が有効で正しいことを確認します。
 2. 資格情報が有効で正しい場合、[Broadbean サポート](https://www.broadbean.com/resources/support/) にお問い合わせください。
 3. 問題が解消しない場合は、[Microsoft サポート](./talent-support.md) にお問い合わせください。
+
+## <a name="see-also"></a>参照
+
+[ジョブの作成](./creating-jobs-attract.md)
+
+[外部のジョブ ボードの設定の入力](./attract-admin-job-board-settings.md)

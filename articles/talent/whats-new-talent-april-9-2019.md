@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 25ef0d49c2600833aefa84d404e00c0c57cfbf52
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518437"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856427"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Dynamics 365 for Talent (2019 年 4 月 9 日) の新機能や変更された機能
 
@@ -37,10 +37,10 @@ ms.locfileid: "1518437"
 Attract と Onboard では、問題をレポートする機能を使用してエンドユーザーによって記録された問題は、顧客の LCS プロジェクトでサポートの問題を自動的に作成するようになりました。 その後、管理者は問題をトリアージし、必要に応じて Microsoft に送信することができます。 これは、Core HR がエンド ユーザーのサポートの問題を処理する方法と一致しています。
 
 ### <a name="relevance-search"></a>関連情報の検索
-人材プールで、特定のスキル、名前、または学歴について候補データベース全体を検索できるようになりました。 候補者プロファイルの検索したいセクションを指定する必要がなくなりました。 Attract はプロファイル全体を検索し、すべての一致した項目を強調表示します。 Attract はまた、候補者に利用可能なすべてのドキュメントを検索し、検索結果をインテリジェントにランク付けします。 さらに、検索結果をソース別、または銀メダリストかどうかでフィルター処理することもできます。 詳細については、[候補者プロファイルの検索および表示](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles) を参照してください。
+人材プールで、特定のスキル、名前、または学歴について候補データベース全体を検索できるようになりました。 候補者プロファイルの検索したいセクションを指定する必要がなくなりました。 Attract はプロファイル全体を検索し、すべての一致した項目を強調表示します。 Attract はまた、候補者に利用可能なすべてのドキュメントを検索し、検索結果をインテリジェントにランク付けします。 さらに、検索結果をソース別、または銀メダリストかどうかでフィルター処理することもできます。 詳細については、[候補者プロファイルの検索および表示](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles) を参照してください。
 
 ### <a name="prospect-recommendations"></a>候補者の推奨事項
-Attract は、組織の候補者データベースからインテリジェントな候補者の推奨事項を作成することで、有効にするとすぐ職務の調達に弾みをつけるのに役立ちます。 推奨事項には、関連する候補者を検索する際に特定されたスキルと教育情報が含まれます。 職務の採用プロセスで有効にした場合、これらの推奨事項は職務の下の**候補者**タブに表示されます。 詳細については、[候補者の推奨事項](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations)を参照してください。
+Attract は、組織の候補者データベースからインテリジェントな候補者の推奨事項を作成することで、有効にするとすぐ職務の調達に弾みをつけるのに役立ちます。 推奨事項には、関連する候補者を検索する際に特定されたスキルと教育情報が含まれます。 職務の採用プロセスで有効にした場合、これらの推奨事項は職務の下の**候補者**タブに表示されます。 詳細については、[候補者の推奨事項](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations)を参照してください。
 
 ### <a name="interviewer-availability-statuses"></a>面接者の使用可能状態
 面接スケジューラは面接者が効率よく働くために時間をスケジュールするのに役立つ、**外出中、他の場所からの作業**ステータスを表示するようになります。

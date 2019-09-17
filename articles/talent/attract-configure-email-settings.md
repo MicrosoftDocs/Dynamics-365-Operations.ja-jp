@@ -19,14 +19,15 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 360937b807ea149edb2f16ad6799d74791d599b5
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: a8cf59064dd2f66ee50a0b0566aa712ba1f72dea
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729789"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739498"
 ---
-# <a name="configure-email-settings-in-microsoft-dynamics-365-for-talent---attract"></a>Microsoft Dynamics 365 for Talent - Attract の電子メール設定のコンフィギュレーション
+# <a name="configure-email-settings"></a>電子メール設定のコンフィギュレーション
+
 [!include[banner](../includes/banner.md)]
 
 ブランドは信頼を確立し、候補者がポジションに応募する前に、候補者との関係を構築するのに役立ちます。 ポジティブなブランド認識は、優秀な人材を引き付け、既に在籍している従業員のロイヤルティを高めます。 Microsoft Dynamics 365 for Talent: Attract を使用すると、会社のブランドを反映するように電子メールを構成できます。 したがって、職務候補者が応募プロセスを進めていくにつれて、候補者に一貫したエクスペリエンスを提供することができます。

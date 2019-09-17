@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 38641d6a84340112ce15335533795ed7faf91123
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ee8e076174acba8e706991f3086d6299a10945ec
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518487"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742496"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-14-2019"></a>Dynamics 365 for Talent の新機能および変更された機能 (2019 年 3 月 14 日)
 
@@ -47,7 +47,7 @@ ms.locfileid: "1518487"
 この変更により、複数の従業員を選択し、それらの従業員に複数のチェックリストを一括割り当てできるようになりました。 
 
 ### <a name="platform-update-24"></a>プラットフォーム update 24
-プラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。 プラットフォーム 24 の大幅な変更は次のとおりです。 
+プラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。 プラットフォーム 24 の大幅な変更は次のとおりです。 
 
 - 人材では、警告が有効になります。
 - Office ヘッダーに対応するようになった更新済みのナビゲーション バー。

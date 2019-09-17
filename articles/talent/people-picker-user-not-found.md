@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d5a2c61fc21578d1db4c1bf0c3dfaf0c7a93298c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9c2324321baf0a313b8b7aa9701909336b5c34b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518454"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742752"
 ---
 # <a name="azure-active-directory-users-not-found-in-people-picker"></a>Azure Active Directory ユーザーが人員ピッカーで見つからない
 
@@ -36,9 +36,9 @@ ms.locfileid: "1518454"
 
 特定のユーザー タイプは、現在 Attract および Onboard アプリケーションでサポートされていません。 ユーザーが Azure AD 企業間 (B2B) ゲスト ユーザーではないことを確認します。 「ユーザー タイプ」の情報は、Azure ポータルの Azure Active Directory ブレードにあります。
 
-Azure B2B の詳細については、[Azure Active Directory B2B のゲスト ユーザー アクセスとは](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b)を参照してください。
+Azure B2B の詳細については、[Azure Active Directory B2B のゲスト ユーザー アクセスとは](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)を参照してください。
 
-B2B 以外のユーザーの場合、**ユーザー** オブジェクトに未完了の「ユーザー タイプ」プロパティを持つ可能性のある特定のユーザーがいます。 これは、Azure AD Powershell モジュールを使用して検証および修正できます。 詳細については、「[Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0)」を参照してください。
+B2B 以外のユーザーの場合、**ユーザー** オブジェクトに未完了の「ユーザー タイプ」プロパティを持つ可能性のある特定のユーザーがいます。 これは、Azure AD Powershell モジュールを使用して検証および修正できます。 詳細については、「[Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0)」を参照してください。
 
 ## <a name="resolution"></a>解像度
 

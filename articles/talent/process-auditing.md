@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 803c935493a4080b8c1d0ef92bbe7db601f3ca03
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 448fceccb507bec5b60b686043a303c1997a9ac0
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518460"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742676"
 ---
 # <a name="track-changes-in-recruiting-data"></a>採用データの変更の追跡
 
 監査プロセスを使用して、求人、職務申請、またはジョブアプリケーションに加えられた変更を追跡できます。 これは、レポートやコンプライアンスのために役立ちます。
 
-OData コネクタを使用して、Power BI で追跡データを表示できます。 詳細については、[Power BI Desktop で OData フィードに接続する](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata)を参照してください。
+OData コネクタを使用して、Power BI で追跡データを表示できます。 詳細については、[Power BI Desktop で OData フィードに接続する](https://docs.microsoft.com/power-bi/desktop-connect-odata)を参照してください。
 
 ## <a name="track-changes"></a>追跡の変更
 採用データの変更履歴を設定するには、次の手順に従います。

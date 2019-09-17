@@ -1,6 +1,6 @@
 ---
-title: 人材グループを使用するソースの候補者
-description: このトピックでは、Attract の人材プールを作成および設定する方法について説明します。
+title: Microsoft Dynamics 365 for Talent - Attract の人材プールを使用した候補者のソーシング
+description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract の人材プールを作成および設定する方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/28/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
-ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
+ms.openlocfilehash: 98b93f69c4f4c8ca6c9a0fc2530578afed4b967c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "1711297"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741870"
 ---
-# <a name="source-candidates-by-using-talent-pools"></a>人材グループを使用するソースの候補者
+# <a name="source-candidates-with-talent-pools"></a>人材プールを使用した候補者のソーシング
 
 [!include[banner](../includes/banner.md)]
 
@@ -79,7 +79,7 @@ ms.locfileid: "1711297"
 ## <a name="search-and-view-candidate-profiles"></a>候補者プロファイルの検索および表示
 
 > [!NOTE] 
-> 現在プレビューにある機能です。 試行する場合は、[Attract 管理者の設定で有効にする](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature) を実行します。 
+> 現在プレビューにある機能です。 試行する場合は、[Attract 管理者の設定で有効にする](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) を実行します。 
 
 人材管理グループは、候補者のプロファイル、LinkedIn 情報、書類関連およびアプリケーションの履歴の閲覧を許可します。 決算済および有効な申請者を含むすべての人材プールに追加される候補者のデータベース全体を、検索することができます。
 
@@ -116,7 +116,7 @@ ms.locfileid: "1711297"
 
     ドキュメントを表示するには、ドキュメント リストでドキュメント名を選択します。 Microsoft Office 365 を使用して、アプリケーションの Microsoft Word ドキュメントを表示できます。 各ドキュメントの**ダウンロード**オプションを使用して、ドキュメントをローカル コンピューターにダウンロードすることもできます。
 
-- **LinkedIn** タブを使用して、候補者の LinkedIn 情報を表示します。 このタブを使用するには、ユーザー設定で LinkedIn アカウントを接続する必要があり、自身の環境 LinkedIn Recruiter の接続は確立されている必要があります。 詳細については、[LinkedIn Recruiter によるソーシング](./attract-linked-in-recruiter.md) を参照してください。
+- **LinkedIn** タブを使用して、候補者の LinkedIn 情報を表示します。 このタブを使用するには、ユーザー設定で LinkedIn アカウントを接続する必要があり、自身の環境 LinkedIn Recruiter の接続は確立されている必要があります。 詳細については、[LinkedIn Recruiter によるソーシング](./attract-linkedin-recruiter.md) を参照してください。
 
 > [!NOTE]
 > 候補者だけが、自分のスキル、学歴、および業務経験を更新できます。

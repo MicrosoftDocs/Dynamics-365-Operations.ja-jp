@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: cb9e01316f4b154a3e9a73042eaf0492f016c46c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617346"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742717"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Dynamics 365 for Talent から Dynamics 365 for Finance and Operations への統合に関する FAQ
 
@@ -38,7 +38,7 @@ Attract および Onboard に関しては、すべてのデータが Common Data
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>テンプレートを使用せずに新しいマップを作成できますか。
 
-テンプレートは、開始点です。 独自のテンプレートを作成できますが、テンプレートは統合プロジェクトを作成する際に常に必要です。 データ統合 (DI)、テンプレート、およびプロジェクトの詳細については、「[Common Data Service へデータを統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)」を参照してください。
+テンプレートは、開始点です。 独自のテンプレートを作成できますが、テンプレートは統合プロジェクトを作成する際に常に必要です。 データ統合 (DI)、テンプレート、およびプロジェクトの詳細については、「[Common Data Service へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator)」を参照してください。
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Talent および Finance and Operations 間で転送する財務分析コードをマップできますか。
 
@@ -133,7 +133,7 @@ Finance and Operations への統合には 2 つのステップがあります。
 
 Common Data Service で予定どおりにデータが表示されない場合は、エンティティが統合でサポートされていることを確認します。 Common Data Service に追加データを含めるには、Microsoft 側で変更が必要です。
 
-エンティティがサポートされデータが Common Data Service で使用できる場合は、データ統合でマッピングが正しいことを確認します。 インテグレーター マッピングが正常に見える場合、データ管理ジョブが正常に実行されたことを確認します。 バッチ ジョブの実行中にエラーが発生する可能性があります。 データ管理の詳細については、「[データ管理](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)」を参照してください。
+エンティティがサポートされデータが Common Data Service で使用できる場合は、データ統合でマッピングが正しいことを確認します。 インテグレーター マッピングが正常に見える場合、データ管理ジョブが正常に実行されたことを確認します。 バッチ ジョブの実行中にエラーが発生する可能性があります。 データ管理の詳細については、「[データ管理](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)」を参照してください。
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Finance and Operations にインポートした後、従業員の住所が正しくありません。 何をする必要がありますか。
 
@@ -145,7 +145,7 @@ Talent の実装中に、番号順序が Talent および Finance and Operations
 
 接続を作成するときは、Dynamics 365 for Finance and Operations (現在のプレビュー) および Common Data Service を選択していることを確認してください。
 
-## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>雇用を同期する際、エラーが発生します。「CompanyInfo_FK が存在しません」または「フィールド '雇用終了日' の値 '12/31/2154 11:59:59 pm' が、関連するテーブル '雇用' で見つかりません。」何をする必要がありますか。
+## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>雇用を同期する際、エラーが発生します。「CompanyInfo_FK が存在しません」または「フィールド '雇用終了日' の値 '12/31/2154 11:59:59 pm' が、関連するテーブル '雇用' で見つかりません。」何をする必要がありますか。
 
 正しい法人にマッピングしていることを確認します。 法人の同期は既定のテンプレートの一部ではないため、Talent や Common Data Service に存在する各法人が Finance and Operations にも存在することが予想されます。
 また、関連付けられている接続設定に対して正しい法人を選択していることを確認してください。
@@ -160,12 +160,12 @@ Talent の実装中に、番号順序が Talent および Finance and Operations
 
 - データ統合 (DI): 
 
-  - [データを Common Data Service に統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [データを Common Data Service に統合](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 
-  - [データ統合エラーの管理とトラブルシューティング](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
+  - [データ統合エラーの管理とトラブルシューティング](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [PowerApps、Microsoft Flow、および Common Data Service でシステムにより生成されたログの DSR 要求への応答](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [PowerApps、Microsoft Flow、および Common Data Service でシステムにより生成されたログの DSR 要求への応答](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - データ管理:
 
-  - [データ管理](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [データ管理](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)

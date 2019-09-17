@@ -18,26 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: ebc82ada31d2803800358cd9aecfe389ada8f0dc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2cfa180f992a4f7a9b2e21e0fb3e0845c7546c94
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518492"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742721"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>候補者のプロファイルおよび応募のソースの追跡 
+# <a name="track-candidate-sources"></a>候補者のソースの追跡
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE] 
-> このトピックに記載されている機能は、プレビュー レビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 この機能を使用するには、Attract の**管理者設定**を使用して有効にするよう管理者に依頼してください。 将来のリリースでは、ソース追跡レポートを提供します。 詳細については、[Talent のプレビュー機能の利用](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature) を参照してください。
+> このトピックに記載されている機能は、プレビュー レビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 この機能を使用するには、Attract の**管理者設定**を使用して有効にするよう管理者に依頼してください。 将来のリリースでは、ソース追跡レポートを提供します。 詳細については、[Talent のプレビュー機能の利用](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) を参照してください。
 
 候補者が職務に応募すると、Attract は自動的に申請のソースを追跡し、採用活動に役立つ貴重な情報を提供します。 採用担当者および採用マネージャーは、職務または人材プールに候補者を手動で追加するときに、アプリケーション ソースを選択できます。
 
 アプリケーション ソースは、**活動**タブ下のアプリケーション活動の詳細、および人材プールの**プロファイル**で利用可能なアプリケーション履歴を確認できます。 アプリケーションおよび人材プールの**プロファイル**タブの候補者の詳細から、候補者のプロファイルソースを検索できます。
 
 > [!NOTE] 
-> プロセス テンプレートについては、[包括採用アドオン](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring) を参照してください。
+> プロセス テンプレートについては、[包括採用アドオン](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) を参照してください。
 
 ## <a name="pre-configured-sources"></a>構成済みのソース
 
@@ -93,7 +93,7 @@ ms.locfileid: "1518492"
 
 ## <a name="customize-the-source-list"></a>ソース リストをカスタマイズする 
 
-追加のアプリケーション ソースを含めるようにソース リストを拡張することができます。 リストをカスタマイズするには、[Attract のオプション セットの拡張する](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract) の手順に従います。 追加のソース含めるために **TalentSource** エンティティを編集する。 
+追加のアプリケーション ソースを含めるようにソース リストを拡張することができます。 リストをカスタマイズするには、[Attract のオプション セットの拡張する](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract) の手順に従います。 追加のソース含めるために **TalentSource** エンティティを編集する。 
 
 ユーザー インターフェイス (UI) への悪影響を回避するため、以下の場合、**TalentCategory** 列挙値（名前ではない）を編集または削除しないでください。
 

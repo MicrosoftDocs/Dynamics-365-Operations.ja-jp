@@ -3,7 +3,7 @@ title: 給付金プログラムの定義および管理
 description: 人事管理は、給付金、控除、および組織が作業者に対して提供または処理する作業者の報酬プランを設定および管理するのに使用できる一連のツールを提供します。 この記事は、管理された給付金を設定する方法に関する情報を提供します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 07/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 033377f7d45bfa2b798c098be2dde0c21739bb51
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5c54e5fccd7ddc5f8f024e692bb46f4140134578
+ms.sourcegitcommit: 282f05635a7b933fe9bdda7a8187f322ed5ede17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518509"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "1755400"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>給付金プログラムの定義および管理
 
@@ -39,6 +39,7 @@ ms.locfileid: "1518509"
 [![給付金プロセス フロー](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## <a name="benefit-elements"></a>給付金の要素
+
 給付金の作成を開始し、作業者を登録する前に、給付金を構成する要素、つまり、タイプ、計画およびオプションを定義する必要があります。
 
 -   **タイプ** – 医療または駐車料金など、固有の給付金計画の集合。
