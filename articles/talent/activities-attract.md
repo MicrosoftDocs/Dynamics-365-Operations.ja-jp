@@ -1,9 +1,9 @@
 ---
-title: プロセスの活動
-description: このトピックでは、採用プロセスで使用できるさまざまなタイプの活動に関する情報を提供します。
+title: Microsoft Dynamics 365 for Talent - Attract におけるプロセスの活動
+description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract における採用プロセスで使用可能なさまざまなタイプの活動に関する情報を提供します。
 author: hasrivas
 manager: AnnBe
-ms.date: 04/10/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c975b95e4195c795ec4c816b1f3a50461715feea
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518498"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739721"
 ---
-# <a name="activities-in-the-hiring-processes"></a>採用プロセスの活動
+# <a name="activities-in-hiring-processes"></a>採用プロセスの活動
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,6 +37,9 @@ Microsoft Dynamics 365 for Talent: Attract の採用プロセスの一部とし�
 ## <a name="prospect-activity"></a>候補者活動
 
 候補者活動は、見込顧客をジョブに追加できるかどうかを制御します。 既定値では、見込顧客をジョブに追加できます。 候補者活動をオフにするには、**候補者の有効化**オプションを**オフ**に設定します。 候補者活動をオンにすると、採用マネージャーは見込顧客を追加して表示することができ、**候補者**タブがジョブに表示されます。
+
+> [!NOTE]
+> 応募者を LinkedIn からジョブに追加できるようにするには、**候補者の有効化**オプションを**オン**にする必要があります。
 
 ## <a name="application-activity"></a>アプリケーションの活動
 

@@ -1,6 +1,6 @@
 ---
-title: Attract での管理者設定
-description: このトピックでは、Attract 内のユーザーおよび組織との機能を有効にする方法について説明します。
+title: Microsoft Dynamics 365 for Talent - Attract における会社情報のコンフィギュレーション
+description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract の会社情報およびブランドをコンフィギュレーションする方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0de215103306ef7115ba390b1b4855179979c77b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c5b051497777a01ab304736f1d454391b5d98e63
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518501"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739567"
 ---
-# <a name="admin-settings-in-attract"></a>Attract での管理者設定
+# <a name="configure-company-information"></a>会社情報のコンフィギュレーション
 [!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Talent: Attract には、構成設定、統合オプション、および Attract アプリケーションの設定オプションが含まれています。
@@ -36,7 +36,7 @@ Microsoft Dynamics 365 for Talent: Attract には、構成設定、統合オプ�
 
 ## <a name="linkedin-integration"></a>LinkedIn の統合
 
-統合と LinkedIn Recruiter System Connect (RSC) を設定。 LinkedIn の資格情報を使い、LinkedIn に接続した後は、応募者の LinkedIn プロファイル、アプリケーション、面接フィードバック、および雇用チームのメモを同期できます。 LinkedIn 採用担当者のフル ライセンスが必要です。 LinkedIn Recruiter については、[Recruiter System Connect (RSC) – FAQ](https://www.linkedin.com/help/recruiter/answer/90483) を参照してください。
+統合と LinkedIn Recruiter System Connect(RSC) を設定。 LinkedIn の資格情報を使い、LinkedIn に接続した後は、応募者の LinkedIn プロファイル、アプリケーション、面接フィードバック、および雇用チームのメモを同期できます。 LinkedIn 採用担当者のフル ライセンスが必要です。 LinkedIn Recruiter については、[Recruiter System Connect (RSC) – FAQ](https://www.linkedin.com/help/recruiter/answer/90483) を参照してください。
 
 ## <a name="user-permissions"></a>ユーザーのアクセス許可
 

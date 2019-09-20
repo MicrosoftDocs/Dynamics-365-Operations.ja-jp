@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620623"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741755"
 ---
 # <a name="intelligent-recommendations"></a>インテリジェントな推奨
 
@@ -32,7 +32,7 @@ ms.locfileid: "1620623"
 機械学習は、採用担当者および雇用責任者がすばやく職位のトップ候補者を特定するのに役立ちます。 候補者が自分のプロファイルや関心事項に最も適した職位を見つけることにも役立ちます。 これらの機能が使用され、フィードバックが提供されると、推奨事項が改善されます。
 
 > [!NOTE] 
-> - インテリジェントな推奨機能は、[包括採用アドオン](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring) でのみ使用できます。
+> - インテリジェントな推奨機能は、[包括採用アドオン](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) でのみ使用できます。
 > - このトピックに記載されている機能は、プレビュー レビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 この機能を使用するには、Attract の**管理者センター**を使用して有効にするよう管理者に依頼してください。 **推奨候補者**、**推奨職務**、および**候補者の推奨事項**を**オン**に設定します。 詳細については、[Talent のプレビュー機能の利用](./access-preview-feature.md) を参照してください。 
 
 

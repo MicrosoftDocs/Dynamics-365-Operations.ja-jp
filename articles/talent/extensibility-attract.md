@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichsew
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 52790fbe500d9f55bc9cc86fba5d54f30b11e559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505867"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795223"
 ---
 # <a name="extensibility-in-attract"></a>Attract での拡張性
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 for Talent は、Common Data Service プラットフォ�
 
 ## <a name="extending-option-sets-in-attract"></a>Attract のオプション セットの拡張
 
-**オプション セット** (候補リスト) は、エンティティに含めることができるフィールドのタイプです。 これは一連のオプションを定義します。 オプション セットがフォームに表示される場合、ドロップダウン リスト コントロールを使用します。  Attract には、オプション セットである複数のフィールドがあります。  不採用理由フィールド、雇用タイプフィールド、および勤続タイプフィールドをはじめとするオプション セットを拡張するための機能を導入します。   また、追加するオプションに対して、ローカライズされた表示ラベルを追加することができます。 詳細については、[オプション セット ラベルのカスタマイズ](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages)を参照してください。
+**オプション セット** (候補リスト) は、エンティティに含めることができるフィールドのタイプです。 これは一連のオプションを定義します。 オプション セットがフォームに表示される場合、ドロップダウン リスト コントロールを使用します。  Attract には、オプション セットである複数のフィールドがあります。  不採用理由フィールド、雇用タイプフィールド、および勤続タイプフィールドをはじめとするオプション セットを拡張するための機能を導入します。   また、追加するオプションに対して、ローカライズされた表示ラベルを追加することができます。 詳細については、[オプション セット ラベルのカスタマイズ](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages)を参照してください。
 
 > [!NOTE]
 > LinkedIn 機能へのジョブ求人転記には、**ジョブの詳細**ページの**雇用タイプ**および**勤続タイプ**フィールドの使用が必要です。 これらのフィールドの既定値は LinkedIn でサポートされ、ジョブが転記されるときに表示されます。 そのため、LinkedIn にジョブ求人を転記していて、これらのフィールドの既存のオプション セット値を変更した場合、ジョブ求人は転記されますが、LinkedIn はカスタム**雇用タイプ**および**勤続タイプ**の値を表示しません。  
@@ -62,15 +62,15 @@ Attract からのすべてのデータは Common Data Service に存在するた
 
 PowerApps を使用して、Attract データに接続し、Microsoft Excel の式のような式を使用してロジックを追加するアプリを簡単に構築できます。 PowerApps を使用して構築するアプリは、Web、Apple iOS、Google Android デバイスで実行できます。
 
-たとえば、履歴書をスキャンして候補者を Attract の位置にフィードする軽量アプリを構築することで、採用者にとって大学のキャリアフェアを簡単にすることができます。 または、組織のコンプライアンスのニーズを満たすのに役立つアプリを構築できます。 PowerApps およびアプリの構築にそれを使用する方法の詳細については、[Common Data Service へのデータの統合](https://docs.microsoft.com/en-us/powerapps)を参照してください。
+たとえば、履歴書をスキャンして候補者を Attract の位置にフィードする軽量アプリを構築することで、採用者にとって大学のキャリアフェアを簡単にすることができます。 または、組織のコンプライアンスのニーズを満たすのに役立つアプリを構築できます。 PowerApps およびアプリの構築にそれを使用する方法の詳細については、[Common Data Service へのデータの統合](https://docs.microsoft.com/powerapps)を参照してください。
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Microsoft Flow を使用して、Attract データの上で実行するワークフローを自動作成できます。 コードの書き込みなしで、数百の人気のアプリおよびサービスに簡単に接続できます。 Common Data Service Attract ジョブ、候補者、アプリケーション エンティティとやりとりするフローを構築することで、さまざまな活動を自動化できます。 たとえば、候補者がオファーを受け入れると、オンボード チームに通知を送信でき、または Twitter にニュースが発表されます。 フローの詳細については、[Microsoft Flow の開発者ドキュメント](https://docs.microsoft.com/en-us/flow/) を参照してください。
+Microsoft Flow を使用して、Attract データの上で実行するワークフローを自動作成できます。 コードの書き込みなしで、数百の人気のアプリおよびサービスに簡単に接続できます。 Common Data Service Attract ジョブ、候補者、アプリケーション エンティティとやりとりするフローを構築することで、さまざまな活動を自動化できます。 たとえば、候補者がオファーを受け入れると、オンボード チームに通知を送信でき、または Twitter にニュースが発表されます。 フローの詳細については、[Microsoft Flow の開発者ドキュメント](https://docs.microsoft.com/flow/) を参照してください。
 
 ### <a name="power-bi"></a>Power BI
 
-Power BI を使用すると、Attract データへのより深い洞察を与えるカスタム レポートおよびダッシュボードを構築し表示できます。 Power BI および対話型レポートとダッシュボードの作成方法の詳細については、[Power BI ドキュメント](https://docs.microsoft.com/en-us/power-bi/) を参照してください。
+Power BI を使用すると、Attract データへのより深い洞察を与えるカスタム レポートおよびダッシュボードを構築し表示できます。 Power BI および対話型レポートとダッシュボードの作成方法の詳細については、[Power BI ドキュメント](https://docs.microsoft.com/power-bi/) を参照してください。
 
 ### <a name="custom-activities"></a>カスタム活動 
 

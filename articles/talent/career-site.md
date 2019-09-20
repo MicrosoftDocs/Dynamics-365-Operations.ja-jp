@@ -1,6 +1,6 @@
 ---
-title: Attract のキャリア サイト機能
-description: このトピックでは、Attract の候補者向けキャリア サイト機能の概要について説明します。
+title: Microsoft Dynamics 365 for Talent - Attract でのキャリア サイトの設定
+description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract の候補者向けキャリア サイト機能の概要について説明します。
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729706"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739774"
 ---
-# <a name="career-site-functionality-in-attract"></a>Attract のキャリア サイト機能
+# <a name="set-up-your-career-site"></a>キャリア サイトの設定
 
 [!include[banner](../includes/banner.md)]
 
@@ -131,7 +131,7 @@ LinkedIn を通じて適用を許可するよう Attract を構成すること�
 1. Attract に管理者としてサインインします。
 2. ページの右上隅にある**設定**ボタン (ギヤ記号) を選択して、**管理者センター**を選択します。
 3. **LinkedIn 統合**タブを選び、LinkedIn Recruiter アカウントに接続します。
-4. **LinkedIn Recruiter System Connect 統合**セクションで、**LinkedIn を適用**設定の**有効**を選択します。
+4. **LinkedIn Recruiter System Connect統合**セクションで、**LinkedIn を適用**設定の**有効**を選択します。
 
 設定を有効にした後、候補者は既存の LinkedIn プロファイル データを使用して応募できます。 候補者が **LinkedIn に適用**ボタンをえらび応募するとき、まだログインしていないと、LinkedIn で認証を行うよう求められます。 認証後、LinkedIn プロファイルはアプリケーション ページに表示される既存プロファイル データに置き換えられます。 候補者は、必要に応じて情報を編集して、申請を送信することができます。 ジョブを申請せずにページから移動した場合、自分のプロファイル データを Attract で更新することはできません。
 

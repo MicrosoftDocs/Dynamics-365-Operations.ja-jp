@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.openlocfilehash: be76f29dc9d38cdf3c2d56120a830acae69937a4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3327939137486038b9002029c7c9e8d65dfa2f64
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518430"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742612"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-august-2018"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 8 月)
 
@@ -81,7 +81,7 @@ ms.locfileid: "1518430"
 
 ドキュメント テンプレートは Core HR 全体で有効になります。 この機能により、作成した Word テンプレートに基づく文字およびレポートを作成できます。
 
-この機能に関する追加情報は、[Office 統合のチュートリアル](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json) で参照できます。
+この機能に関する追加情報は、[Office 統合のチュートリアル](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json) で参照できます。
 
 
 ## <a name="other-fixes"></a>その他の修正

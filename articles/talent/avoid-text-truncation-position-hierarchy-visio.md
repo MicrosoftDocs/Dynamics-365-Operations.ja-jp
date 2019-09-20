@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 87d1c1994b14fac45fa305a9223ed45ee363a70c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 07a972bc1c6dd4076932248edb314992cb7297e5
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518428"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741824"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>職位階層および Visio へのエクスポートでのテキストの切り捨てを回避します。
 
@@ -40,7 +40,7 @@ ms.locfileid: "1518428"
 
 **解像度**
 
-残念ながら、ユーザーがテキストのサイズを簡単に変更することはできません。 ただし、Talent から職位階層をエクスポートし、Microsoft Visio にインポートすることはできます。 次の記事は Microsoft Dynamics AX 2012 用に書かれたものですが、そのプロセスは Talent にも適用されます: [Microsoft Visio に職位階層をエクスポートする](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio)。
+残念ながら、ユーザーがテキストのサイズを簡単に変更することはできません。 ただし、Talent から職位階層をエクスポートし、Microsoft Visio にインポートすることはできます。 次の記事は Microsoft Dynamics AX 2012 用に書かれたものですが、そのプロセスは Talent にも適用されます: [Microsoft Visio に職位階層をエクスポートする](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio)。
 
 Visio にエクスポートするには、次の手順を実行します。
 

@@ -1,6 +1,6 @@
 ---
-title: プロセス インサイトの採用に分析レポートを使用する
-description: このトピックでは、Attract の分析レポートについて説明します。
+title: Microsoft Dynamics 365 for Talent - Attract の分析レポートを使用
+description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract でのプロセス インサイトの採用に関する分析レポートについて説明します。
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: 33ed6072a9ad99144fb96ad19389a57461324f71
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516563"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742891"
 ---
-# <a name="use-analytic-reports-for-hiring-process-insights"></a>プロセス インサイトの採用に分析レポートを使用する
+# <a name="use-analytic-reports"></a>分析レポートの使用
 
 Attract の分析レポートは、プロセス インサイトを採用するためにそのまま使用できる (OOTB) ソリューションを提供します。 利用可能な機能は次のとおりです。
 
@@ -81,8 +81,8 @@ Attract レポートには、管理者、すべて読み取り、採用担当者
 
 ## <a name="cross-filter"></a>クロス フィルター
 
-Power BI の優れた機能の 1 つは、レポート ページのすべてのビジュアルを連結できることです。 いずれかのビジュアルでデータ ポイントを選択すると、その選択に基づいて、そのデータを含むページ上の他のすべてのビジュアルが変更されます。 詳細については、[Power BI レポートでのビジュアルのクロス フィルター](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-interactions)の例を参照してください。
+Power BI の優れた機能の 1 つは、レポート ページのすべてのビジュアルを連結できることです。 いずれかのビジュアルでデータ ポイントを選択すると、その選択に基づいて、そのデータを含むページ上の他のすべてのビジュアルが変更されます。 詳細については、[Power BI レポートでのビジュアルのクロス フィルター](https://docs.microsoft.com/power-bi/consumer/end-user-interactions)の例を参照してください。
 
 ## <a name="export-to-excel"></a>Excel にエクスポート
 
-レポート データを Excel で表示するには、ビジュアル上のオプション メニュー (3 つのドット) をクリックし、**基になるデータのエクスポート**を選択します。 エクスポートされたデータは、Attract ユーザーのアクセス許可に従い、フィルタリングされ、エクスポートされます。 詳細については[視覚エフェクトからのデータのエクスポート](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data)を参照してください。
+レポート データを Excel で表示するには、ビジュアル上のオプション メニュー (3 つのドット) をクリックし、**基になるデータのエクスポート**を選択します。 エクスポートされたデータは、Attract ユーザーのアクセス許可に従い、フィルタリングされ、エクスポートされます。 詳細については[視覚エフェクトからのデータのエクスポート](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data)を参照してください。

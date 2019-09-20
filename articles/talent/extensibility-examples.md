@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
+ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577798"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1781445"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>PowerApps と Microsoft Flow を使用した Talent の拡張 - シナリオ例
 
@@ -101,24 +101,15 @@ PowerApps を使用して作成されたアプリケーションは、Attract �
 
 **フロー – SharePoint 統合** テンプレートをダウンロードするには、Microsoft ダウンロード センターの [フロー – SharePoint 統合](https://go.microsoft.com/fwlink/?linkid=2082109) に移動します。
 
-## <a name="admin-console-to-manage-talent-pools"></a>人材プールの管理するための管理コンソール
+## <a name="referral-app"></a>照会アプリ
+照会アプリを使用すると、共有された人材プールに候補者を追加することができます。 候補者を送信するときに、参照元に**名**、**姓**、**電子メール**、および**リンクトイン URL** を入力できます。 これにより、候補者のソース メタデータに、参照元の情報が設定されます。
 
-LinkedIn との統合を有効にすると、自動的に LinkedIn の人材プールを作成します。 採用担当者は LinkedIn を介して InMail を新入社員と交換すると、新入社員にはプロファイルが作成され、Llinkedin 人材プールのメンバーとなります。 この PowerApps アプリは、スキルに基づいて人材プールの候補者を再編成する場合に便利です。
+このアプリは、参照を送信するための従業員セルフサービス (ESS) に埋め込むことも、社内ポータルでハイパーリンクとして使用してスタンドアロン アプリとして実行することもできます。
 
-次のタスクを実行するには、この PowerApps アプリを管理コンソールとして実行します。
-
-- 人材プールに候補者をリスト
-- 人材プールから候補者を追加および削除
-- 候補者を別のプールへ移動
-- 候補者を移動する前に、その候補者が人材プールの一部であるかどうかを判断
-- 別の人材プールに移動する前に、その候補者のスキルを確認
-
-この PowerApps アプリは多対多リレーションシップを使用するため、多対多リレーションシップを持つレコードを抽出する必要がある他のシナリオのテンプレートとして使用できます。
-
-**人材プールを扱う管理コンソール**テンプレートをダウンロードするには、Microsoft Download Center で[人材プールを扱う管理コンソール](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) へ移動します。
+**照会アプリ**をダウンロードするには、Microsoft ダウンロード センターの [Dynamics 365 for Talent拡張機能ソリューション : 照会アプリ](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d)に移動します。 このアプリをインポートしてカスタマイズし、機能を追加することができます。
 
 ## <a name="additional-resources"></a>追加リソース
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
 
-[テナントと環境間でのアプリケーションの移行](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration)
+[テナントと環境間でのアプリケーションの移行](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
