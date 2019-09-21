@@ -24,7 +24,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 08/01/2019
 ms.locfileid: "1833618"
 ---
-# <a name="exception-handling-throw-trycatch-finally-and-retry"></a>例外処理: スロー、トライ、キャッチ、最後に再トライ
+# <a name="exception-handling-throw-trycatch-finally-and-retry"></a>例外処理: throw、try...catch、finally、および retry
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "1833618"
 
     throw Exception::error;
 
-列挙値をスローするのではなく、**Global::error** メソッドの出力を**スロー**のオペランドとして使用することがベスト プラクティスです。
+列挙値をスローするのではなく、**Global::error** メソッドの出力を**throw**のオペランドとして使用することがベスト プラクティスです。
 
     throw Global::error("The parameter value is invalid.");
 
@@ -48,9 +48,9 @@ ms.locfileid: "1833618"
 
     error("My message.");
 
-## <a name="try-catch-finally-and-retry-statements"></a>try ステートメント、catch ステートメント、最後に retry ステートメント
+## <a name="try-catch-finally-and-retry-statements"></a>try ステートメント、catch ステートメント、finally、および retry ステートメント
 
-例外がスローされると、その例外は、もっとも内側の <strong>try</strong> ブロックの <strong>キャッチ</strong> リストによって最初に処理されます。 スローされている例外の種類を処理する <strong>catch</strong> ブロックが見つかった場合、プログラム コントロールはその <strong>キャッチ</strong> ブロックにジャンプします。 <strong>catch</strong> リストに例外を指定するブロックがない場合は、システムは、次の一番内側の <strong>try</strong> ブロックの<strong>catch</strong> リストに例外を渡します。 <strong>catch</strong> ステートメントは、コードに表示されているのと同じ順序で処理されます。 最初の <strong>catch</strong> ステートメントで <strong>Exception::Error</strong> 列挙値を処理することが一般的です。 1 つの方法は、最後の <strong>catch</strong> ステートメントの例外タイプを未指定のままにすることです。 この場合、前回の <strong>catch</strong> ステートメントは、前のいずれかの <strong>catch</strong> ステートメントで処理されていないすべての例外を処理します。 この戦略は、最も外側の <strong>try</strong> ... <strong>catch</strong>ブロックに適しています。 <strong>try</strong>...<strong>catch</strong> ステートメントにオプションの *<strong><em>finally</em></strong>* 句を含めることができます。 <strong>finally</strong> 節のセマンティクスは、C\# と同じです。 <strong>finally</strong> 句のステートメントは、通常または例外を介してコントロールが <strong>try</strong> ブロックを離れるときに実行されます。 <strong>retry</strong> ステートメントは、<strong>catch</strong> ブロックでのみ書き込むことができます。 <strong>retry</strong> ステートメントは、関連付けられている <strong>try</strong> ブロックの最初のコード行までコントロールをジャンプさせます。 <strong>retry</strong> ステートメントは、例外の原因を <strong>catch</strong> ブロック内のコードにより修正できる場合に使用されます。 <strong>retry</strong> ステートメントは、<strong>try</strong> ブロック内のコードに成功するための別の機会を与えます。 <strong>retry</strong> ステートメントは、プログラム コントロールが <strong>try</strong> ブロックに入ってから情報ログに書き込まれたすべてのメッセージを消去します。 <strong>注記:</strong> <strong>再試行</strong>ステートメントにより、無限ループが発生しないことを確認する必要があります。 ベスト プラクティスとして、<strong>試行</strong>ブロックは、ループ中であるかを確認するテストができる変数を含める必要があります。
+例外がスローされると、その例外は、もっとも内側の <strong>try</strong> ブロックの <strong>キャッチ</strong> リストによって最初に処理されます。 スローされている例外の種類を処理する <strong>catch</strong> ブロックが見つかった場合、プログラム コントロールはその <strong>キャッチ</strong> ブロックにジャンプします。 <strong>catch</strong> リストに例外を指定するブロックがない場合は、システムは、次の一番内側の <strong>try</strong> ブロックの<strong>catch</strong> リストに例外を渡します。 <strong>catch</strong> ステートメントは、コードに表示されているのと同じ順序で処理されます。 最初の <strong>catch</strong> ステートメントで <strong>Exception::Error</strong> 列挙値を処理することが一般的です。 1 つの方法は、最後の <strong>catch</strong> ステートメントの例外タイプを未指定のままにすることです。 この場合、前回の <strong>catch</strong> ステートメントは、前のいずれかの <strong>catch</strong> ステートメントで処理されていないすべての例外を処理します。 この戦略は、最も外側の <strong>try</strong> ... <strong>catch</strong>ブロックに適しています。 <strong>try</strong>...<strong>catch</strong> ステートメントにオプションの *<strong><em>finally</em></strong>* 句を含めることができます。 <strong>finally</strong> 節のセマンティクスは、C\# と同じです。 <strong>finally</strong> 句のステートメントは、通常または例外を介してコントロールが <strong>try</strong> ブロックを離れるときに実行されます。 <strong>retry</strong> ステートメントは、<strong>catch</strong> ブロックでのみ書き込むことができます。 <strong>retry</strong> ステートメントは、関連付けられている <strong>try</strong> ブロックの最初のコード行までコントロールをジャンプさせます。 <strong>retry</strong> ステートメントは、例外の原因を <strong>catch</strong> ブロック内のコードにより修正できる場合に使用されます。 <strong>retry</strong> ステートメントは、<strong>try</strong> ブロック内のコードに成功するための別の機会を与えます。 <strong>retry</strong> ステートメントは、プログラム コントロールが <strong>try</strong> ブロックに入ってから情報ログに書き込まれたすべてのメッセージを消去します。 <strong>注記:</strong> <strong>retry</strong>ステートメントにより、無限ループが発生しないことを確認する必要があります。 ベスト プラクティスとして、<strong>try</strong>ブロックは、ループ中であるかを確認するテストができる変数を含める必要があります。
 
     try 
     { 
@@ -229,7 +229,7 @@ ms.locfileid: "1833618"
     **********/
     }
 
-### <a name="using-a-retry-statement"></a>再試行ステートメントの使用
+### <a name="using-a-retry-statement"></a>retry ステートメントの使用
 
 次のコード例では、**retry** ステートメントを使用しています。
 
@@ -389,19 +389,19 @@ ms.locfileid: "1833618"
 
 | リテラルの例外                 | 説明                                                                                                                                                         |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 分割                             | ユーザーは Break または Ctrl+C を押しました。                                                                                                                                   |
+| Break                             | ユーザーは Break または Ctrl+C を押しました。                                                                                                                                   |
 | CLRError                          | CLR 機能の使用中にエラーが発生しました。                                                                                                       |
 | CodeAccessSecurity                | **CodeAccessPermission.demand** メソッドを使用中にエラーが発生しました。                                                                                  |
 | DDEerror                          | **DDE** システム クラスを使用中にエラーが発生しました。                                                                                                    |
-| デッドロック                          | 複数のトランザクションが相互に待機しているため、データベースのデッドロックが発生しました。                                                                              |
+| Deadlock                          | 複数のトランザクションが相互に待機しているため、データベースのデッドロックが発生しました。                                                                              |
 | DuplicateKeyException             | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 トランザクションは再試行できます (**catch** ブロックで **retry** ステートメントを使用します)。 |
 | DuplicateKeyExceptionNotRecovered | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
-| エラー                             | 致命的なエラーが発生しました。 トランザクションは停止されました。                                                                                                           |
-| 情報                              | この例外リテラルは、ユーザーのメッセージを保持します。 **情報**例外をスローしないでください。                                                                             |
-| 内部                          | 開発システムで内部エラーが発生しました。                                                                                                               |
-| 数値                           | **str2int**、**str2int64**、または **str2num** 機能を使用中にエラーが発生しました。                                                                     |
-| 順番                          |                                                                                                                                                                     |
+| Error                             | 致命的なエラーが発生しました。 トランザクションは停止されました。                                                                                                           |
+| Info                              | この例外リテラルは、ユーザーのメッセージを保持します。 **情報**例外をスローしないでください。                                                                             |
+| Internal                          | 開発システムで内部エラーが発生しました。                                                                                                               |
+| Numeric                           | **str2int**、**str2int64**、または **str2num** 機能を使用中にエラーが発生しました。                                                                     |
+| Sequence                          |                                                                                                                                                                     |
 | UpdateConflict                    | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 トランザクションは再試行できます (**catch** ブロックで **retry** ステートメントを使用します)。 |
 | UpdateConflictNotRecovered        | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
-| 警告                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告**例外をスローしないでください。                         |
+| Warning                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告**例外をスローしないでください。                         |
 | [TransientSqlConnectionError](sql-connection-error.md)       | クエリ実行時にエラーが発生しました。 トランザクションはキャンセルされます。 この例外は、トランザクション内では検出されません。 |
