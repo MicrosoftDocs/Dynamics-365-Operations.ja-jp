@@ -1,2 +1,0 @@
-> [!IMPORTANT]
-> <span data-ttu-id="5e247-101">この機能は、Platform update 15 (7.0.4841) 以降でのみ利用できます。</span><span class="sxs-lookup"><span data-stu-id="5e247-101">This feature is available in Platform update 15 (7.0.4841) or later.</span></span> <span data-ttu-id="5e247-102">この更新プログラムは現在、対象顧客に対してのみ提供されています。2018 年 6 月に、すべてのユーザーに対して提供される予定です。</span><span class="sxs-lookup"><span data-stu-id="5e247-102">This update is currently available for targeted customers and will be available to all users June 2018.</span></span>

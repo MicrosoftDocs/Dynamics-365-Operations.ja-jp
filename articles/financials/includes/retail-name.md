@@ -1,2 +1,0 @@
-> [!NOTE]
-> <span data-ttu-id="196f4-101">このトピックは Dynamics 365 for Finance and Operations と Dynamics 365 for Retail の両方に適用されます。</span><span class="sxs-lookup"><span data-stu-id="196f4-101">This topic applies to both Dynamics 365 for Finance and Operations and to Dynamics 365 for Retail.</span></span> 
