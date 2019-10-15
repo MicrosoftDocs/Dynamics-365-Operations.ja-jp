@@ -1,6 +1,6 @@
 ---
 title: 小売トランザクションの整合性チェック
-description: このトピックでは、Microsoft Dynamics 365 for Retail の小売トランザクションの整合性チェック機能について説明します。
+description: このトピックでは、Dynamics 365 Retail の小売トランザクションの整合性チェック機能について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790424"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018419"
 ---
 # <a name="retail-transaction-consistency-checker"></a>小売トランザクションの整合性チェック
 
@@ -31,9 +31,9 @@ ms.locfileid: "1790424"
 [!include [banner](includes/banner.md)]
 [!include [preview banner](includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3 に導入された小売トランザクションの整合性チェック機能について説明します。 整合性チェックは、矛盾するトランザクションを特定し、明細書転記プロセスによって収集される前に隔離します。
+このトピックでは、小売トランザクションの整合性チェック機能について説明します。 整合性チェックは、矛盾するトランザクションを特定し、明細書転記プロセスによって収集される前に隔離します。
 
-明細書が Microsoft Dynamics 365 for Retail に転記される際、小売トランザクション テーブルのデータ不整合が原因で転記が失敗する場合があります。 データの不整合は、販売時点管理 (POS) アプリケーションでの予期しない問題によって、またはトランザクションがサード パーティの POS システムから正しくインポートされなかった場合に起こります。 こうした不整合は、次のような形で表れます。 
+明細書が Retail に転記される際、小売トランザクション テーブルのデータ不整合が原因で転記が失敗する場合があります。 データの不整合は、販売時点管理 (POS) アプリケーションでの予期しない問題によって、またはトランザクションがサード パーティの POS システムから正しくインポートされなかった場合に起こります。 こうした不整合は、次のような形で表れます。 
 
 - ヘッダー テーブルのトランザクションの合計が、明細行のトランザクションの合計と一致しない。
 - ヘッダー テーブルの行数が、トランザクション テーブルの行数と一致しない。

@@ -1,9 +1,9 @@
 ---
-title: サプライ チェーン マネジメントのホーム ページ
-description: このページでは、Microsoft Dynamics 365 for Finance and Operations のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。
-author: ShylaThompson
+title: Supply Chain Management のヘルプ リソース
+description: このページでは、Supply Chain Management 機能に関するヘルプ トピックとその他のリソースの一覧を示します。
+author: josaw1
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 10/01/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557595"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278327"
 ---
-# <a name="supply-chain-management-home-page"></a>サプライ チェーン マネジメントのホーム ページ
+# <a name="help-resources-for-supply-chain-management"></a>Supply Chain Management のヘルプ リソース
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。 
+このトピックでは、Dynamics 365 Supply Chain Management に関するヘルプ トピックとその他のリソースの一覧を示します。 
 
 ## <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 リリースされた新機能と開発中の新機能については、<a href="https://roadmap.dynamics.com/">Dynamics 365 ロードマップ</a>を参照してください。 
@@ -38,6 +38,7 @@ ms.locfileid: "1557595"
 
 機能領域を選択すると詳細が表示されます。
 
+- [資産管理](asset-management/index.md)
 - [原価会計](../financials/cost-accounting/cost-accounting-home-page.md)
 - [原価管理](cost-management/cost-management-home-page.md)  
 - [在庫管理](inventory/inventory-home-page.md)
@@ -49,6 +50,10 @@ ms.locfileid: "1557595"
 - [サービス管理](service-management/service-management-home-page.md)
 - [輸送管理](transportation/transportation-management-overview.md)
 - [倉庫管理](warehousing/warehouse-configuration.md)
+
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
+
+Dynamics 365 Finance の詳細については、[Dynamics 365 Finance のヘルプ リソース](../finance/index.md) ページを参照してください。
 
 ## <a name="videos"></a>ビデオ
 
@@ -113,6 +118,6 @@ ms.locfileid: "1557595"
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Microsoft Dynamics 365 for Finance and Operations によって促進される倉庫内のモビリティ</a>
 
 ## <a name="elearning-courses"></a>eLearning コース
-Microsoft Dynamics 365 for Finance and Operations のトレーニングの詳細については、<a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics ラーニング ポータル</a>を参照してください。 (CustomerSource アカウントが必要です) 
+Dynamics 365 のトレーニングの詳細については、<a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics ラーニング ポータル</a>を参照してください。 (CustomerSource アカウントが必要です) 
 
 
