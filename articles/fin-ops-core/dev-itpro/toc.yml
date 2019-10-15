@@ -1,0 +1,1628 @@
+- name: Finance and Operations の開発と管理
+  items:
+    - name: Finance and Operations の開発と管理
+      items:
+        - name: Finance and Operations の開発と管理
+          href: index.md
+        - name: 新機能および変更された機能
+          items:
+            - name: Platform update 30 のプレビュー機能 (2019 年 11 月)
+              href: ../fin-ops/get-started/whats-new-platform-update-30.md
+            - name: Platform update 29 (2019 年 10 月)
+              href: ../fin-ops/get-started/whats-new-platform-update-29.md
+            - name: Platform update 28 (2019 年 7 月)
+              href: ../fin-ops/get-started/whats-new-platform-update-28.md
+            - name: Platform update 27 (2019 年 6 月)
+              href: ../fin-ops/get-started/whats-new-platform-update-27.md
+            - name: Platform update 26 (2019 年 5 月)
+              href: ../fin-ops/get-started/whats-new-platform-update-26.md
+            - name: Platform update 25 (2019 年 4 月)
+              href: ../fin-ops/get-started/whats-new-platform-25.md
+            - name: Platform update 24 (2019 年 3 月)
+              href: ../fin-ops/get-started/whats-new-platform-update-24.md
+            - name: Platform update 23 (2019 年 1 月)
+              href: ../fin-ops/get-started/whats-new-platform-update-23.md
+            - name: Platform update 22 (2018 年 12 月)
+              href: ../fin-ops/get-started/whats-new-platform-update-22.md
+            - name: Platform update 21 (2018 年 11 月)
+              href: ../fin-ops/get-started/whats-new-platform-update-21.md
+            - name: Platform update 20 (2018 年 9 月)
+              href: ../fin-ops/get-started/whats-new-platform-update-20.md
+            - name: Platform update 15 (2018 年 3 月)
+              href: ../fin-ops/get-started/whats-new-platform-update-15.md
+        - name: ビジネス イベント
+          items:
+            - name: ビジネス イベントの概要
+              href: business-events/home-page.md
+            - name: アプリケーション ビジネス イベント
+              href: business-events/app-business-events.md
+            - name: ワークフロー ビジネス イベント
+              href: business-events/business-events-workflow.md
+            - name: ビジネス イベントとしての警告
+              href: business-events/alerts-business-events.md
+            - name: Microsoft Flow 内のビジネス イベント
+              href: business-events/business-events-flow.md
+            - name: ビジネス イベント開発者ドキュメント
+              href: business-events/business-events-dev-doc.md
+            - name: ビジネス イベントのトラブルシューティング
+              href: business-events/troubleshooting.md
+            - name: ビジネス イベントのユースケース
+              href: business-events/potential-use-cases.md
+            - name: チュートリアル
+              items:
+                - name: ビジネス イベントおよび Microsoft Flow
+                  href: business-events/how-to/how-to-flow.md
+                - name: ビジネス イベントおよび Azure Event Grid
+                  href: business-events/how-to/how-to-eventgrid.md
+                - name: ビジネス イベントおよび Azure Service Bus
+                  href: business-events/how-to/how-to-servicebus.md
+                - name: ビジネス イベントおよびワークフローの承認
+                  href: business-events/how-to/how-to-workflow.md
+                - name: ビジネス イベントおよび Microsoft Forms Pro
+                  href: business-events/how-to/FormsPro.md
+                - name: ビジネス イベントおよび Azure Event Hubs
+                  href: business-events/how-to/event-hub.md
+        - name: 継続的デリバリー
+          items:
+            - name: 継続的デリバリーのホーム ページ
+              href: dev-tools/continuous-delivery-home-page.md
+            - name: 開発と継続的な配信に関するよく寄せられる質問
+              href: dev-tools/continuous-delivery-faq.md
+            - name: ビルド出力からのテスト パッケージの除外
+              href: dev-tools/exclude-test-packages.md
+            - name: ソース コントロールを使用したサード パーティ モデルとランタイム パッケージの管理
+              href: dev-tools/manage-runtime-packages.md
+            - name: 自動ビルドのモデル バージョンの更新
+              href: dev-tools/version-models-build.md
+        - name: データ統合
+          items:
+            - name: データ統合方法 (インポート/エクスポート) の選択
+              href: data-entities/integration-overview.md
+            - name: データ統合 API
+              items:
+                - name: データ管理パッケージ REST API
+                  href: data-entities/data-management-api.md
+                - name: サービス エンドポイント
+                  items:
+                    - name: サービス エンドポイントの概要
+                      href: data-entities/services-home-page.md
+                    - name: サービス認証のトラブルシューティング
+                      href: data-entities/troubleshoot-service-authentication.md
+                - name: OData
+                  href: data-entities/odata.md
+                - name: 顧客サービスの開発
+                  href: data-entities/custom-services.md
+                - name: 定期統合
+                  href: data-entities/recurring-integrations.md
+                - name: サード パーティ ユーティリティを使用したテスト サービス
+                  href: data-entities/third-party-service-test.md
+            - name: Finance and Operations コネクタ
+              href: data-entities/fin-ops-connector.md
+            - name: 統合のための開発
+              items:
+                - name: データ エンティティを使用したデータの統合
+                  items:
+                    - name: データ エンティティを使用したデータの統合の概要
+                      href: data-entities/data-management-integration-data-entity.md
+                    - name: データ移行のエンティティの開発
+                      href: data-entities/develop-entity-for-data-migration.md
+                    - name: 複合データ エンティティの開発
+                      href: data-entities/develop-composite-data-entities.md
+                    - name: 会社間財務データ共有のコンフィギュレーション
+                      href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
+                    - name: データ入力を容易にするレコード テンプレートの作成
+                      href: data-entities/tasks/create-record-template-facilitate-data-entry.md
+                    - name: レコード テンプレートを使用したレコードの作成
+                      href: data-entities/tasks/use-record-template-new-record.md
+                - name: Common Data Service を使用したデータ統合
+                  items:
+                    - name: Common Data Service を使用したデータ統合の概要
+                      href: data-entities/data-integration-cds.md
+                    - name: 同期、双方向の統合
+                      items:
+                        - name: ほぼリアルタイムのデータ統合
+                          href: data-entities/dual-write-overview.md
+                        - name: Common Data Service の組織階層
+                          href: data-entities/dual-write-organization.md
+                        - name: Common Data Service での会社の概念
+                          href: data-entities/dual-write-company.md
+                        - name: 統合された顧客マスター
+                          href: data-entities/dual-write-customer.md
+                        - name: 統一された製品経験
+                          href: data-entities/dual-write-product.md
+                        - name: 統合された仕入先マスター
+                          href: data-entities/dual-write-vendor.md
+                        - name: 統合されたサイトおよび倉庫
+                          href: data-entities/dual-write-sites-and-warehouses.md
+                        - name: 初期同期
+                          href: data-entities/dual-write-initial.md
+                        - name: データ統合のトラブルシューティング
+                          href: data-entities/dual-write-troubleshooting.md
+                    - name: 非同期、単一方向の統合
+                      items:
+                        - name: 見込顧客から入金のシナリオのコンフィギュレーション
+                          items:
+                            - name: 見込顧客を現金化
+                              href: ../../supply-chain/sales-marketing/prospect-to-cash.md
+                            - name: Finance and Operations の顧客への Sales の勘定の直接同期
+                              href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                            - name: Sales 製品への Finance and Operations の製品の直接同期
+                              href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
+                            - name: Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期
+                              href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                            - name: 販売見積書のヘッダーおよび明細行の Sales から Finance and Operations への直接同期
+                              href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                            - name: 販売注文の Sales と Finance and Operations の間の直接同期
+                              href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                            - name: 売上請求書のヘッダーおよび明細行の Finance and Operations から Sales への直接同期
+                              href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                        - name: Field Service との統合のコンフィギュレーション
+                          items:
+                            - name: Field Service との統合のコンフィギュレーションの概要
+                              href: ../../supply-chain/sales-marketing/field-service.md
+                            - name: Finance and Operations の製品と Field Service の製品との同期
+                              href: ../../supply-chain/sales-marketing/field-service-product.md
+                            - name: Field Service のワーク オーダーと Finance and Operations の販売注文との同期
+                              href: ../../supply-chain/sales-marketing/field-service-work-order.md
+                            - name: Field Service の契約の請求書と Finance and Operations の自由書式の請求書との同期
+                              href: ../../supply-chain/sales-marketing/field-service-invoice.md
+                            - name: Field Service から Finance and Operations への在庫振替および在庫調整の同期
+                              href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                            - name: Finance and Operations から Field Service への在庫レベル情報の同期
+                              href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                            - name: Finance and Operations から Field Service への製品在庫単位の同期
+                              href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                            - name: Finance and Operations から Field Service へのプロジェクト リストの同期
+                              href: ../../supply-chain/sales-marketing/synchronize-project-list.md
+                            - name: Finance and Operations から Field Service への倉庫の同期
+                              href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
+                            - name: Field Service から Finance and Operations へのプロジェクトのワーク オーダーの同期
+                              href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
+                        - name: Project Service Automation 統合のコンフィギュレーション
+                          items:
+                            - name: Project Service Automation の概要
+                              href: ../../finance/project-management/PSA-integration.md
+                            - name: Project Service Automation 統合パラメーター
+                              href: ../../finance/project-management/PSA-parameters.md
+                            - name: プロジェクト契約とプロジェクトの同期
+                              href: ../../finance/project-management/project-contracts-templates.md
+                            - name: プロジェクト タスクの同期
+                              href: ../../finance/project-management/project-tasks-template.md
+                            - name: プロジェクト経費カテゴリの同期
+                              href: ../../finance/project-management/project-categories-templates.md
+                            - name: プロジェクト見積のプロジェクト予測への同期
+                              href: ../../finance/project-management/project-estimates-templates.md
+                            - name: プロジェクト実績のプロジェクト統合仕訳帳への同期
+                              href: ../../finance/project-management/project-actuals-templates.md
+            - name: 外部 Web サービスの使用
+              href: data-entities/consume-external-web-service.md
+            - name: 電子メッセージ
+              href: ../../finance/general-ledger/electronic-messaging.md
+        - name: データ管理
+          items:
+            - name: データ管理の概要
+              href: data-entities/data-entities-data-packages.md
+            - name: データ エンティティ
+              items:
+                - name: データ エンティティの概要
+                  href: data-entities/data-entities.md
+                - name: コンフィギュレーション データ プロジェクト
+                  href: data-entities/configuration-data-projects.md
+                - name: 会社間または法人間のコンフィギュレーション データのコピー
+                  items:
+                    - name: コンフィギュレーション データのコピーの概要
+                      href: data-entities/copy-configuration.md
+                    - name: コンフィギュレーション データ パッケージ
+                      href: data-entities/configuration-data-packages.md
+                    - name: コンフィギュレーション データ パッケージ (2017 年 7 月リリースのみ)
+                      href: data-entities/configuration-data-packages.md
+                    - name: エンティティ格納を Data Lake として使用可能にする
+                      href: data-entities/entity-store-data-lake.md
+                - name: コンフィギュレーション データ テンプレート
+                  href: data-entities/configuration-data-templates.md
+                - name: エンティティの変更の追跡
+                  href: data-entities/entity-change-track.md
+                - name: 標準データ エンティティに関する情報の検索
+                  href: data-entities/data-entities-report.md
+                - name: 複数のワークシート付きデータ テンプレート
+                  href: data-entities/excel-template-multiple.md
+                - name: エンティティの変更追跡の有効化
+                  href: data-entities/entity-change-track.md
+                - name: コンフィギュレーション キーおよびデータ エンティティ
+                  href: data-entities/config-key-entities.md
+                - name: コンフィギュレーション データ パッケージ
+                  href: data-entities/configuration-data-packages.md
+            - name: データ インポート/エクスポート ジョブ
+              items:
+                - name: データ インポート/エクスポート ジョブの概要
+                  href: data-entities/data-import-export-job.md
+                - name: 一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
+                  href: data-entities/tips-tricks-import-general-journal-entity.md
+            - name: データ エンティティの開発
+              items:
+                - name: データ エンティティに関する設計原則とベスト プラクティス
+                  href: dev-tools/design-best-practices.md
+                - name: 新しいデータ エンティティの作成
+                  href: data-entities/build-consuming-data-entities.md
+                - name: データ エンティティのプロパティ
+                  href: data-entities/behavioral-properties-data-entities.md
+                - name: 計算列と仮想フィールドの作成
+                  href: data-entities/data-entity-computed-columns-virtual-fields.md
+                - name: 会社間動作
+                  href: data-entities/cross-company-behavior.md
+                - name: 国/地域コードの処理
+                  href: data-entities/countryregion-codes-configuration-keys.md
+                - name: 継承パターン
+                  href: data-entities/support-super-type-sub-type.md
+                - name: データ エンティティ ウィザード ルール
+                  href: data-entities/data-entity-wizard-rules.md
+                - name: メタデータのプロパティ
+                  href: data-entities/behavioral-properties-data-entities.md
+                - name: 検証、既定値、およびマップされていないフィールド
+                  href: data-entities/validations-defaults-unmapped-fields.md
+                - name: セキュリティとデータ エンティティ
+                  href: data-entities/security-data-entities.md
+                - name: サード パーティ サービス テスト ユーティリティの使用
+                  href: data-entities/third-party-service-test.md
+                - name: 財務分析コードを公開する読み取り専用エンティティの作成
+                  href: financial/read-only-entity-financial.md
+            - name: 自分のデータベースの持ち込み
+              href: analytics/export-entities-to-your-own-database.md
+            - name: 自動化エンティティ格納更新
+              href: analytics/automated-entity-store-refresh.md
+            - name: データ タスクの自動化
+              href: data-entities/data-task-automation.md
+            - name: データ検証チェックリスト ワークスペース
+              href: user-interface/data-validation-workspace.md
+            - name: データ管理エラーの説明
+              href: data-entities/dm-error-descriptions.md
+        - name: データベース移動操作
+          items:
+            - name: 概要
+              href: database/dbmovement-operations.md
+            - name: クイック スタート ガイド
+              items:
+                - name: データベースの更新
+                  href: database/database-refresh.md
+                - name: データベースのエクスポート
+                  href: database/export-database.md
+                - name: データベースのインポート
+                  href: database/import-database.md
+                - name: データベース ポイントインタイム復元
+                  href: database/database-point-in-time-restore.md
+            - name: チュートリアル
+              items:
+                - name: トレーニング用の更新
+                  href: database/dbmovement-scenario-general-refresh.md
+                - name: 生産データベースのコピーのデバッグ
+                  href: database/dbmovement-scenario-debugdiag.md
+                - name: 標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
+                  href: database/dbmovement-scenario-exportuat.md
+                - name: ゴールデン コンフィギュレーション プロモーション
+                  href: database/dbmovement-scenario-goldenconfig.md
+                - name: 破壊試験
+                  href: database/dbmovement-scenario-destructivetests.md
+        - name: デモ データ
+          items:
+            - name: デモ データの概要
+              href: ../fin-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
+            - name: データ パッケージを使用したデモ データの生成
+              href: data-entities/generate-demo-data-packages.md
+        - name: 配置
+          items:
+            - name: デモ環境の配置
+              href: deployment/deploy-demo-environment.md
+            - name: クラウド配置
+              items:
+                - name: クラウド配置の概要
+                  href: deployment/cloud-deployment-overview.md
+                - name: セルフサービス配置
+                  items:
+                    - name: セルフサービス配置の概要
+                      href: deployment/infrastructure-stack.md
+                    - name: 新しい環境の配置
+                      href: deployment/deployenvironment-newinfrastructure.md
+                    - name: 配置に関するよく寄せられる質問
+                      href: deployment/deploymentFAQ.md
+                    - name: セルフサービス配置に関する既知の問題
+                      href: deployment/known-issues-new-deployment-experience.md
+                    - name: 配置の保守操作
+                      href: deployment/maintenanceoperationsguide-newinfrastructure.md
+                    - name: 環境の更新
+                      href: deployment/updateenvironment-newinfrastructure.md
+                    - name: セルフサービス配置で配置された環境のトラブルシューティング
+                      href: deployment/troubleshoot-newinfrastructure.md
+                - name: Azure Resource Manager の研修の完了
+                  href: deployment/arm-onboarding.md
+                - name: Azure ExpressRoute および Finance and Operations の購入
+                  href: deployment/expressroute.md
+                - name: Finance and Operations のアーキテクチャ
+                  href: ../fin-ops/imp-lifecycle/architecture-overview.md
+                - name: クラウド環境への更新プログラムの適用
+                  href: deployment/apply-deployable-package-system.md
+                - name: クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
+                  href: deployment/Update-retail-channel.md
+                - name: Retail Cloud Scale Unit の初期化
+                  href: deployment/Initialize-Retail-Channels.md
+                - name: Retail データ所在地
+                  href: deployment/retail-data-residency.md
+            - name: オンプレミス配置
+              items:
+                - name: オンプレミス配置のホーム ページ
+                  href: deployment/on-premises-deployment-landing-page.md
+                - name: オンプレミス配置の概要
+                  href: deployment/on-premises-overview.md
+                - name: オンプレミス配置の計画および準備
+                  href: deployment/plan-onprem-deployment.md
+                - name: ハードウェアのサイズ要件
+                  href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+                - name: 設置プロジェクトの設定
+                  href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                - name: オンプレミス環境の設定と配置
+                  items:
+                    - name: オンプレミス環境の設定と配置のホーム ページ
+                      href: deployment/setup-deploy-on-premises-environments.md
+                    - name: オンプレミス環境の配置 (Platform update 12 以降)
+                      href: deployment/setup-deploy-on-premises-pu12.md
+                    - name: オンプレミス環境の配置 (Platform update 8 および 11)
+                      href: deployment/setup-deploy-on-premises-pu8-pu11.md
+                    - name: オンプレミス環境での小売チャネルのコンポーネントのインストール手順
+                      href: deployment/deploy-retail-onprem.md
+                - name: カスタム モデルの開発とオンプレミス環境への配置
+                  href: deployment/develop-deploy-custom-models-on-premises.md
+                - name: オンプレミス環境との PowerBI.com の統合
+                  href: analytics/entity-store-on-prem.md
+                - name: オンプレミス環境用リバース プロキシの構成
+                  href: deployment/onprem-reverseproxy.md
+                - name: オンプレミス配置への更新プログラムの適用
+                  href: deployment/apply-updates-on-premises.md
+                - name: オンプレミス診断
+                  href: deployment/on-premises-diagnostics.md
+                - name: オンプレミス配置の再配置
+                  href: deployment/redeploy-on-prem.md
+                - name: ローカル エージェント
+                  items:
+                    - name: AD FS Office 365 の互換性
+                      href: deployment/onprem-adfscompatibility.md
+                    - name: ローカル エージェントの配置前スクリプトと配置後スクリプト
+                      href: lifecycle-services/pre-post-scripts.md
+                    - name: ローカル エージェントの更新
+                      href: lifecycle-services/update-local-agent.md
+                - name: 環境の再コンフィギュレーション
+                  href: lifecycle-services/reconfigure-environment.md
+                - name: クライアントのインターネット接続
+                  href: user-interface/client-disconnected.md
+                - name: オンプレミス配置のトラブルシューティング
+                  href: deployment/troubleshoot-on-prem.md
+                - name: 証明書のローテーション
+                  href: deployment/certificate-rotation-on-prem.md
+            - name: カスタム コードの配置
+              items:
+                - name: 配置可能なモデル パッケージの作成
+                  href: deployment/create-apply-deployable-package.md
+                - name: コマンド ラインからの配置可能なパッケージのインストール
+                  href: deployment/install-deployable-package.md
+                - name: パッケージのアンインストール
+                  href: deployment/uninstall-deployable-package.md
+                - name: パッケージ アプリケーションに関する問題のトラブルシューティング
+                  href: deployment/deployable-package-troubleshooting.md
+        - name: 開発およびカスタマイズ
+          items:
+            - name: 開発およびカスタマイズのホーム ページ
+              href: dev-tools/developer-home-page.md
+            - name: アプリケーション スタックおよびサーバーのアーキテクチャ
+              href: dev-tools/application-stack-server-architecture.md
+            - name: ベータ評価版の入手
+              href: dev-tools/get-evaluation-copy.md
+            - name: プレビュー サブスクリプションのサインアップ
+              href: dev-tools/sign-up-preview-subscription.md
+            - name: 開発環境の配置とアクセス
+              items:
+                - name: 開発環境
+                  href: dev-tools/access-instances.md
+                - name: 1 ボックス開発環境のコンフィギュレーション
+                  href: dev-tools/configure-developer-vm.md
+                - name: 開発マシンでの新しいユーザーの作成
+                  href: dev-tools/enable-development-machine.md
+                - name: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
+                  href: sysadmin/VMs-no-admin-access.md
+                - name: Azure DevOps にアクセスするためのローカル環境の名前変更
+                  href: migration-upgrade/vso-machine-renaming.md
+                - name: 開発システム要件
+                  href: dev-tools/development-system-requirements.md
+            - name: バージョン コントロール、メタデータ検索、およびナビゲーション
+              href: dev-tools/version-control-metadata-navigation.md
+            - name: フリート管理のサンプル アプリケーション
+              items:
+                - name: フリート管理のサンプル アプリケーションのためのエンド ツー エンドのシナリオ
+                  href: dev-tools/fleet-management-sample.md
+                - name: フリート管理のサンプル アプリケーション
+                  href: dev-tools/introduction-fleet-management-sample.md
+            - name: Visual Studio ツール
+              items:
+                - name: 開発ツール
+                  href: dev-tools/development-tools-overview.md
+                - name: 開発ツールのチュートリアル
+                  href: dev-tools/introduction-visual-studio.md
+                - name: アプリケーション チェッカー
+                  items:
+                    - name: アプリケーション チェッカーに対する BaseX のインストール
+                      href: dev-tools/install-basex.md
+                - name: アプリケーション エクスプローラー
+                  href: dev-tools/application-explorer.md
+                - name: プロジェクトのビルドおよびデバッグ
+                  href: dev-tools/build-debug-project.md
+                - name: ビルド操作
+                  href: dev-tools/build-operations.md
+                - name: コード エディター機能
+                  href: dev-tools/code-editor.md
+                - name: モデルとデータ モデル要素の作成
+                  items:
+                    - name: モデルとデータ モデル要素の作成の概要
+                      href: dev-tools/create-data-model-elements.md
+                    - name: 拡張機能の名前付けガイドライン
+                      href: extensibility/NamingGuidelines.md
+                    - name: カスタマイズをオフにして機能を廃止
+                      href: dev-tools/lock-models.md
+                - name: カスタマイズ分析のレポート
+                  href: dev-tools/customization-analysis-report.md
+                - name: 要素デザイナー
+                  href: dev-tools/element-designers.md
+                - name: 要素の使用を決定するためのコマンド
+                  href: dev-tools/element-usage.md
+                - name: モデルのエクスポートとインポート
+                  href: dev-tools/models-export-import.md
+                - name: Visual Studio でのメタデータの検索
+                  href: dev-tools/metadata-search-visual-studio.md
+                - name: モデルとパッケージ
+                  href: dev-tools/models.md
+                - name: Finance and Operations のプロジェクト タイプ
+                  href: dev-tools/projects.md
+                - name: Visual Studio 用のツールおよびアドイン
+                  href: dev-tools/developer-tools-add-ins.md
+                - name: Visual Studio 開発ツールの更新
+                  href: dev-tools/update-development-tools.md
+            - name: X++ プログラミング言語
+              items:
+                - name: X++ およびデバッガーの機能
+                  href: dev-tools/new-x-debugger-features.md
+                - name: X++ コードのデバッグ
+                  href: dev-tools/debug-xpp.md
+                - name: 要求または応答シナリオの EventHandlerResult クラス
+                  href: dev-tools/event-handler-result-class.md
+                - name: 'C# および X++ ソース コードを使用したビジネス ロジックの記述'
+                  href: dev-tools/write-business-logic.md
+                - name: X++ と X++ コンパイラの変更
+                  href: dev-tools/programming-language-support.md
+                - name: 'C# の LINQ プロバイダー'
+                  href: dev-tools/linq-provider-c.md
+                - name: ベスト プラクティス ルールの記述
+                  href: dev-tools/author-best-practice-rules.md
+                - name: アプリケーション エクスプローラーのプロパティ
+                  href: dev-ref/application-explorer-aot-properties.md
+                - name: X++ 言語リファレンス
+                  items:
+                    - name: X++ 言語リファレンスの概要
+                      href: dev-ref/xpp-language-reference.md
+                    - name: 変数とデータ型
+                      items:
+                        - name: 変数
+                          href: dev-ref/xpp-variables-data-types.md
+                        - name: プリミティブ データ型
+                          href: dev-ref/xpp-data-primitive.md
+                        - name: 複合データ型
+                          href: dev-ref/xpp-data-composite.md
+                        - name: コレクション クラス
+                          href: dev-ref/xpp-data-collection.md
+                        - name: 拡張データ型
+                          href: dev-ref/xpp-data-edt.md
+                    - name: ステートメント、ループ、および例外処理
+                      items:
+                        - name: コメント、使用、および印刷
+                          href: dev-ref/xpp-statements-loops.md
+                        - name: 条件付きステートメント
+                          href: dev-ref/xpp-conditional.md
+                        - name: ループ ステートメント
+                          href: dev-ref/xpp-loops.md
+                        - name: 例外処理
+                          href: dev-ref/xpp-exceptions.md
+                    - name: X++ の SQL 接続エラー例外
+                      href: dev-ref/sql-connection-error.md
+                    - name: X++ 演算子
+                      href: dev-ref/xpp-operators.md
+                    - name: X++ 演算子の優先順位
+                      href: dev-ref/xpp-operator-precedence.md
+                    - name: X++ のクラスおよびメソッド
+                      items:
+                        - name: クラスおよびメソッド
+                          href: dev-ref/xpp-classes-methods.md
+                        - name: 継承
+                          href: dev-ref/xpp-inheritance.md
+                        - name: 静的クラス メンバー
+                          href: dev-ref/xpp-static-classes.md
+                        - name: インターフェイス
+                          href: dev-ref/xpp-interfaces.md
+                        - name: ライブラリ
+                          href: dev-ref/xpp-library-objects.md
+                        - name: イベント
+                          href: dev-ref/xpp-events.md
+                    - name: X++ データの選択と操作
+                      href: dev-ref/xpp-data-query.md
+                    - name: SysDa API を使用したデータアクセス
+                      href: dev-ref/sysda.md
+                    - name: X++ マクロ
+                      href: dev-ref/xpp-macros.md
+                    - name: X++ 属性クラス
+                      href: dev-ref/xpp-attribute-classes.md
+                    - name: 'X++ と C# の比較'
+                      href: dev-ref/xpp-cs-comparison.md
+                    - name: X++ 構文
+                      href: dev-ref/xpp-syntax.md
+            - name: API、クラス、およびテーブルの参照
+              items:
+                - name: API、クラス、およびテーブルのリソース
+                  href: dev-ref/api-reference.md
+                - name: X++ コンパイル時関数
+                  href: dev-ref/xpp-compile-time-functions.md
+                - name: X++ ランタイム関数
+                  items:
+                    - name: X++ ランタイム関数のリソース
+                      href: dev-ref/xpp-run-time-functions.md
+                    - name: X++ ビジネス ランタイム関数
+                      href: dev-ref/xpp-business-run-time-functions.md
+                    - name: X++ コンテナー ランタイム関数
+                      href: dev-ref/xpp-container-run-time-functions.md
+                    - name: X++ 変換ランタイム関数
+                      href: dev-ref/xpp-conversion-run-time-functions.md
+                    - name: X++ 日付ランタイム関数
+                      href: dev-ref/xpp-date-run-time-functions.md
+                    - name: X++ 数学ランタイム関数
+                      href: dev-ref/xpp-math-run-time-functions.md
+                    - name: X++ リフレクション ランタイム関数
+                      href: dev-ref/xpp-reflection-run-time-functions.md
+                    - name: X++ セッション ランタイム関数
+                      href: dev-ref/xpp-session-run-time-functions.md
+                    - name: X++ 文字列ランタイム関数
+                      href: dev-ref/xpp-string-run-time-functions.md
+                - name: システム テーブル
+                  href: dev-ref/system-tables.md
+                - name: システム クラス
+                  items:
+                    - name: A クラス
+                      href: dev-ref/a-classes.md
+                    - name: B クラス
+                      href: dev-ref/b-classes.md
+                    - name: C クラス
+                      href: dev-ref/c-classes.md
+                    - name: D クラス
+                      href: dev-ref/d-classes.md
+                    - name: E クラス
+                      href: dev-ref/e-classes.md
+                    - name: F クラス (FormBuildAnimateControl への FieldBinding)
+                      href: dev-ref/fieldbinding-classes.md
+                    - name: F クラス (FormBuildFastTabSummarySeparator への FormBuildButtonControl)
+                      href: dev-ref/formbuildbuttoncontrol-classes.md
+                    - name: F クラス (FormBuildRealControl への FormBuildFilterPaneControl)
+                      href: dev-ref/formbuildfilterpanecontrol-classes.md
+                    - name: F クラス (FormButtonSeparatorControl への FormBuildReferenceControl)
+                      href: dev-ref/formbuildreferencecontrol-classes.md
+                    - name: F クラス (FormControlEventArgs への FormChangeTracker)
+                      href: dev-ref/formchangetracker-classes.md
+                    - name: F クラス (FormFastTabHeaderControl への FormDataObject)
+                      href: dev-ref/formdataobject-classes.md
+                    - name: F クラス (FormGridControl への FormFastTabSummarySeparator)
+                      href: dev-ref/formfasttabsummaryseparator-classes.md
+                    - name: F クラス (FormIntControl への FormGroupControl)
+                      href: dev-ref/formgroupcontrol-classes.md
+                    - name: F クラス (FormNotifyEventArgs への FormListBoxControl)
+                      href: dev-ref/formlistboxcontrol-classes.md
+                    - name: F クラス (FormRealControl への FormObject)
+                      href: dev-ref/formobject-classes.md
+                    - name: F クラス (FormStringControl への FormReferenceControl)
+                      href: dev-ref/formreferencecontrol-classes.md
+                    - name: F クラス (FormWindowControl への FormTabControl)
+                      href: dev-ref/formtabcontrol-classes.md
+                    - name: G クラス
+                      href: dev-ref/g-classes.md
+                    - name: H クラス
+                      href: dev-ref/h-classes.md
+                    - name: I クラス
+                      href: dev-ref/i-classes.md
+                    - name: J クラス
+                      href: dev-ref/j-classes.md
+                    - name: K クラス
+                      href: dev-ref/k-classes.md
+                    - name: L クラス
+                      href: dev-ref/l-classes.md
+                    - name: M クラス
+                      href: dev-ref/m-classes.md
+                    - name: N クラス
+                      href: dev-ref/n-classes.md
+                    - name: O クラス
+                      href: dev-ref/o-classes.md
+                    - name: P クラス
+                      href: dev-ref/p-classes.md
+                    - name: Q クラス
+                      href: dev-ref/q-classes.md
+                    - name: R クラス
+                      href: dev-ref/r-classes.md
+                    - name: S クラス
+                      href: dev-ref/s-classes.md
+                    - name: T クラス
+                      href: dev-ref/t-classes.md
+                    - name: U クラス
+                      href: dev-ref/u-classes.md
+                    - name: V クラス
+                      href: dev-ref/v-classes.md
+                    - name: W クラス
+                      href: dev-ref/w-classes.md
+                    - name: X クラス
+                      href: dev-ref/x-classes.md
+            - name: 拡張性
+              items:
+                - name: 拡張機能のホーム ページ
+                  href: extensibility/extensibility-home-page.md
+                - name: 概要と使用開始
+                  items:
+                    - name: アプリケーション機能拡張計画
+                      href: extensibility/extensibility-roadmap.md
+                    - name: 拡張性の要求
+                      href: extensibility/extensibility-requests.md
+                    - name: 拡張性に関するよく寄せられる質問
+                      href: extensibility/app-sealing-faq.md
+                    - name: オーバーレイから拡張機能への移行
+                      href: extensibility/migrate-overlayer-extension.md
+                    - name: 拡張機能によるモデル要素のカスタマイズ (チュートリアル)
+                      href: extensibility/customize-model-elements-extensions.md
+                    - name: 拡張機能およびオーバーレイによるカスタマイズ
+                      href: extensibility/customization-overlayering-extensions.md
+                - name: 新機能
+                  items:
+                    - name: 拡張性の新機能および変更された機能
+                      href: extensibility/extensibility-new.md
+                    - name: 拡張機能の変更 (バージョン 10.0.3)
+                      href: extensibility/extensibility-changes-10-3.md
+                    - name: 拡張機能の変更 (バージョン 10.0.2)
+                      href: extensibility/extensibility-changes-10-2.md
+                    - name: 拡張機能の変更 (バージョン 10.0.1)
+                      href: extensibility/extensibility-changes-10-1.md
+                    - name: 拡張機能の変更 (バージョン 10.0)
+                      href: extensibility/extensibility-changes-10.md
+                    - name: 拡張機能の変更 (バージョン 8.1.3)
+                      href: extensibility/extensibility-changes-813.md
+                    - name: 拡張機能の変更 (バージョン 8.1.2)
+                      href: extensibility/extensibility-changes-812.md
+                    - name: 拡張機能の変更 (バージョン 8.1.1)
+                      href: extensibility/extensibility-changes-811.md
+                    - name: 拡張機能の変更 (バージョン 8.1)
+                      href: extensibility/extensibility-changes-81.md
+                    - name: 拡張機能の変更 (バージョン 8.0.4)
+                      href: extensibility/extensibility-changes-804.md
+                    - name: 拡張機能の変更 (バージョン 8.0.3)
+                      href: extensibility/extensibility-changes-803.md
+                    - name: 拡張機能の変更 (バージョン 8.0.2)
+                      href: extensibility/extensibility-changes-802.md
+                    - name: 拡張機能の変更 (バージョン 8.0.1)
+                      href: extensibility/extensibility-changes-801.md
+                    - name: バージョン 8.0 の拡張機能の変更
+                      href: extensibility/changes-80.md
+                    - name: バージョン 7.3 の拡張機能の変更
+                      href: extensibility/extensibility-changes-73.md
+                    - name: 拡張機能の変更 (2017 年 7 月)
+                      href: extensibility/changes-july-2017.md
+                - name: 基本
+                  items:
+                    - name: 侵入的なカスタマイズ
+                      href: extensibility/intrusive-customizations.md
+                    - name: クラス拡張モデル
+                      href: extensibility/class-extensions.md
+                    - name: メソッドのラッピングとコマンド チェーンによるクラスの拡張
+                      href: extensibility/method-wrapping-coc.md
+                    - name: 拡張機能の名前付けガイドライン
+                      href: extensibility/naming-guidelines-extensions.md
+                    - name: オーバーレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
+                      href: extensibility/refactoring-over-layering.md
+                - name: 拡張機能の作成
+                  items:
+                    - name: 列挙への値の追加
+                      href: extensibility/add-enum-value.md
+                    - name: 拡張データ型の変更
+                      href: extensibility/modify-edt.md
+                    - name: ファクトリ メソッドのサブクラスの登録
+                      href: extensibility/register-subclass-factory-methods.md
+                    - name: EventHandlerResult を使用した応答
+                      href: extensibility/respond-event-handler-result.md
+                    - name: RunBase クラスの拡張
+                      href: extensibility/extend-runbase-class.md
+                    - name: 委任を使用したアプリケーション起動のカスタマイズ
+                      href: extensibility/startup-customizations.md
+                    - name: テーブルの既存のフィールドの変更
+                      href: extensibility/modify-existing-field.md
+                    - name: フィールドのテーブルへの追加
+                      href: extensibility/add-field-extension.md
+                    - name: インデックスのテーブルへの追加
+                      href: extensibility/add-index.md
+                    - name: テーブルへの関係の追加
+                      href: extensibility/add-relation.md
+                    - name: テーブルのプロパティの変更
+                      href: extensibility/modify-properties.md
+                    - name: テーブルへのメソッドの追加
+                      href: extensibility/add-method-table.md
+                    - name: テーブル レコードの有効期間中の業務処理の実行
+                      href: extensibility/subscribe-table-events.md
+                    - name: フォームへのデータ ソースの追加
+                      href: extensibility/add-datasource.md
+                    - name: フォーム キャプションの変更
+                      href: extensibility/change-caption-form.md
+                    - name: フォーム コントロールのプロパティの変更
+                      href: extensibility/modify-control-properties.md
+                    - name: 番号順序のスコープの拡張
+                      href: extensibility/extend-number-sequence-scope.md
+                    - name: 新規在庫分析コードの追加
+                      href: extensibility/inventory-dimensions.md
+                    - name: 価格と割引の拡張性
+                      href: extensibility/pricing-app73.md
+                    - name: テーブル マップ拡張
+                      href: extensibility/map-extensions.md
+                    - name: インターフェイスとして使用されるテーブル マップの拡張
+                      href: extensibility/maps-as-interfaces.md
+                    - name: バージョン管理で使用されるテーブル マップの拡張
+                      href: extensibility/maps-with-versioning.md
+                    - name: 選択したデータ型の小数点以下の精度の拡張
+                      href: extensibility/decimal-point-precision.md
+                - name: 拡張可能なソリューションの作成
+                  items:
+                    - name: 拡張可能なコードの書き込み
+                      href: extensibility/writing-extensible-code.md
+                    - name: クラス
+                      href: extensibility/extensible-classes.md
+                    - name: メソッド
+                      href: extensibility/extensible-methods.md
+                    - name: フォーム
+                      href: extensibility/extensible-forms.md
+                    - name: 拡張データ型
+                      href: extensibility/extensible-edts.md
+                    - name: 拡張可能な列挙
+                      href: extensibility/extensible-enums.md
+                    - name: 委任
+                      href: extensibility/extensible-code-delegates.md
+                    - name: テーブル
+                      href: extensibility/extensible-tables.md
+                    - name: メソッドの拡張属性
+                      href: extensibility/extensibility-attributes.md
+                    - name: 変更の分割
+                      href: extensibility/breaking-changes.md
+            - name: パフォーマンス
+              items:
+                - name: Trace Parser を使用したトレースの実行
+                  href: perf-test/trace-trace-tutorial.md
+                - name: タスク レコーダーおよびパフォーマンス SDK を使用したシングル ユーザー テスト
+                  href: perf-test/single-user-test-perf-sdk.md
+                - name: パフォーマンス SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト
+                  href: perf-test/multi-user-testing-local-test-controller.md
+                - name: パフォーマンス SDK および Azure DevOps を使用したマルチ ユーザー テスト
+                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+                - name: パフォーマンス SDK を使用したシングル ユーザーまたはマルチ ユーザー テストのトラブルシューティング ガイド
+                  href: perf-test/troubleshoot-perf-sdk-user-testing.md
+                - name: オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
+                  href: perf-test/perfsdk-tutorial-lbd.md
+                - name: Trace Parser を使用した問題点の診断およびパフォーマンスの分析
+                  href: perf-test/trace-parser.md
+                - name: パフォーマンス タイマー
+                  href: perf-test/performance-timer.md
+            - name: Visual Studio でのテストのサポート
+              items:
+                - name: テストと検証
+                  href: perf-test/testing-validation.md
+                - name: Visual Studio でのプロジェクトのテスト
+                  href: perf-test/testing-support.md
+                - name: 継続的なビルドおよびテストの自動化をサポートする環境の配置
+                  href: perf-test/continuous-build-test-automation.md
+                - name: クラスおよびメソッドの属性を使用した SysTest フィルター処理
+                  href: perf-test/systest-filtering.md
+                - name: 承認テストのライブラリ
+                  items:
+                    - name: 承認テスト ライブラリのリソース
+                      href: perf-test/acceptance-test-library.md
+                    - name: ナビゲーション概念
+                      href: perf-test/concepts-navigation.md
+                    - name: テスト データ メソッド
+                      href: perf-test/test-data-methods.md
+                    - name: 承認テスト ライブラリのエンティティ
+                      href: perf-test/concepts-entities.md
+                    - name: 承認テスト ライブラリのコマンド
+                      href: perf-test/concepts-commands.md
+                    - name: 承認テスト ライブラリの作成者
+                      href: perf-test/concepts-creators.md
+                    - name: 承認テスト ライブラリのクエリ
+                      href: perf-test/concepts-queries.md
+                    - name: 詳細のクラス
+                      href: perf-test/concepts-specifications.md
+                    - name: 承認テスト ライブラリ コード生成ウィザード
+                      href: perf-test/code-generation-wizard.md
+                    - name: 承認テスト ライブラリのベスト プラクティス
+                      href: perf-test/atl-best-practices.md
+                    - name: よく寄せられる質問
+                      href: perf-test/atl-faq.md
+            - name: 日付の有効期間
+              href: dev-tools/date-effectivity.md
+            - name: ISV ライセンス
+              href: dev-tools/isv-licensing.md
+            - name: オンプレミスの ISV ライセンス
+              href: dev-tools/isv-licensing-on-prem.md
+        - name: 一般データ保護規則 (GDPR)
+          items:
+            - name: 一般データ保護規則の概要
+              href: gdpr/gdpr-guide.md
+            - name: GDPR データ要求への応答
+              items:
+                - name: GDPR データ要求への応答のリソース
+                  href: gdpr/gdpr-home-page.md
+                - name: 資産分類
+                  href: gdpr/gdpr-asset-classification-values.md
+                - name: 個人検索レポート
+                  href: gdpr/gdpr-person-search-report.md
+                - name: 個人検索レポートの拡張
+                  href: gdpr/gdpr-extend-person-search-report.md
+                - name: 機密データへのアクセスを管理
+                  href: gdpr/gdpr-auditing-sensitive-data.md
+                - name: Talent を使用した個人データ要求への対応
+                  href: gdpr/respond-dsr-request-talent.md
+                - name: AX 2012 の個人データ要求への対応
+                  href: gdpr/gdpr-ax2012.md
+                - name: LCS に対する GDPR データ要求
+                  href: gdpr/gdpr-lcs.md
+        - name: Lifecycle Services
+          items:
+            - name: Lifecycle Services に関するリソース
+              items:
+                - name: Lifecycle Services のリソース
+                  href: lifecycle-services/lcs.md
+                - name: 顧客向け LCS
+                  href: lifecycle-services/lcs-works-lcs.md
+                - name: パートナー向け LCS
+                  href: lifecycle-services/getting-started-lcs.md
+                - name: 新機能
+                  href: lifecycle-services/whats-new-lcs.md
+                - name: 既知の問題
+                  href: lifecycle-services/known-issues.md
+            - name: Lifecycle Services ユーザー ガイド
+              href: lifecycle-services/lcs-user-guide.md
+            - name: サブスクリプション見積もりツール
+              href: lifecycle-services/subscription-estimator.md
+            - name: セキュリティのコンフィギュレーション
+              href: lifecycle-services/configure-lcs-security.md
+            - name: 問題検索
+              href: lifecycle-services/issue-search-lcs.md
+            - name: 構成マネージャー
+              items:
+                - name: 構成マネージャーの概要
+                  href: lifecycle-services/configuration-manager-lcs.md
+                - name: 構成マネージャーの設定
+                  href: lifecycle-services/set-up-configuration-manager-lcs.md
+            - name: コード アップグレード サービスのコンフィギュレーション
+              href: lifecycle-services/configure-execute-code-upgrade.md
+            - name: 方法の作成または更新
+              href: lifecycle-services/create-methodology.md
+            - name: ビジネス プロセス モデラー
+              href: lifecycle-services/bpm-overview.md
+            - name: ビジネス プロセス モデラーの業務プロセス ライブラリ
+              href: lifecycle-services/business-process-libraries-business-process-modeler.md
+            - name: ビジネス プロセス モデラー ライブラリの作成、編集、参照
+              href: lifecycle-services/creating-editing-browsing.md
+            - name: ビジネス プロセス モデラーでのタスクの完了
+              href: lifecycle-services/complete-tasks-bpm.md
+            - name: BPM ライブラリの活動ダイアグラムでの作業
+              href: lifecycle-services/using-activity-diagrams.md
+            - name: BPM ライブラリと Azure DevOps の同期
+              href: lifecycle-services/synchronize-bpm-vsts.md
+            - name: タスク ガイドと BPM を使用したユーザー承認テスト ライブラリの作成
+              href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+            - name: ビジネス プロセス モデラーのフローチャート
+              href: lifecycle-services/flowcharts-business-process-modeler.md
+            - name: カスタムの業務プロセスのビジネス プロセス モデラーへのアップロード
+              href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: モニタリングおよび診断
+              href: lifecycle-services/monitoring-diagnostics.md
+            - name: 環境サービスの再開
+              href: lifecycle-services/restart-environment-services.md
+            - name: 稼働停止をレポート
+              href: lifecycle-services/report-production-outage.md
+            - name: ユーザー サインインの追跡
+              href: lifecycle-services/user-logins.md
+            - name: 資産ライブラリ
+              href: lifecycle-services/asset-library.md
+            - name: LCS 内のツールを使用した、パフォーマンスのトラブルシューティング
+              href: lifecycle-services/performancetroubleshooting.md
+            - name: クックブックの照会
+              href: lifecycle-services/querycookbook.md
+            - name: Microsoft Dynamics 365 Translation Service
+              items:
+                - name: Dynamics 365 Translation Service の概要
+                  href: lifecycle-services/translation-service-overview.md
+                - name: ユーザー インタ フェース ファイルの翻訳
+                  href: lifecycle-services/use-translation-service.md
+                - name: ドキュメント ファイルの翻訳
+                  href: lifecycle-services/use-translation-service-ua.md
+                - name: 翻訳メモリ ファイル
+                  href: lifecycle-services/use-translation-service-tm.md
+        - name: モバイル プラットフォーム
+          items:
+            - name: モバイル プラットフォームのリソース
+              href: mobile-apps/platform/mobile-platform-home-page.md
+            - name: 使用開始
+              items:
+                - name: モバイル プラットフォームを使い始める
+                  href: mobile-apps/platform/mobile-platform-getting-started.md
+                - name: アーキテクチャと設計の考慮事項
+                  href: mobile-apps/platform/mobile-platform-architecture.md
+                - name: ビジネス ロジック イベント
+                  href: mobile-apps/platform/business-logic-events-overview.md
+                - name: ページ デザインのガイドライン
+                  href: mobile-apps/platform/page-design-guidelines.md
+                - name: アクション デザインのガイドライン
+                  href: mobile-apps/platform/action-design-guidelines.md
+                - name: フォーム デザインの要件
+                  href: mobile-apps/platform/form-design-requirements.md
+            - name: 一般的なタスク
+              items:
+                - name: SysAppWorkspace クラスを使用したワークスペースのコンフィギュレーション
+                  href: mobile-apps/platform/scenarios/mobile-workspace-configuration.md
+                - name: クリック可能なモバイル アプリ ページ上でのフィールドの作成
+                  href: mobile-apps/platform/scenarios/make-workspace-field-clickable.md
+                - name: フィールドの数の表示
+                  href: mobile-apps/platform/scenarios/display-count-workspace.md
+                - name: モバイル ワークスペースのセキュリティの強化
+                  href: mobile-apps/platform/scenarios/secure-mobile-workspace.md
+                - name: モバイル ワークスペースのローカライズ
+                  href: mobile-apps/platform/scenarios/localize-workspaces-on-server.md
+                - name: ワークスペースのクラスを使用してフィールドを必須にする
+                  href: mobile-apps/platform/scenarios/make-field-mandatory.md
+            - name: サーバー側の開発のリファレンス
+              items:
+                - name: サーバー側の開発 (ワークスペース X++ API)
+                  href: mobile-apps/platform/mobile-workspace-server-apis.md
+            - name: クライアント側の開発のリファレンス
+              items:
+                - name: クライアント側の設計 API
+                  href: mobile-apps/platform/scenarios/client-api-design-overview.md
+                - name: クライアント API
+                  items:
+                    - name: クライアント API ホームページ
+                      href: mobile-apps/platform/client-apis/client-apis-reference.md
+                    - name: PageState 列挙
+                      href: mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md
+                    - name: アプリケーション モジュール
+                      href: mobile-apps/platform/client-apis/modules/services-application.md
+                    - name: 延期モジュール
+                      href: mobile-apps/platform/client-apis/modules/defer.md
+                    - name: イベント モジュール
+                      href: mobile-apps/platform/client-apis/modules/event-ievent.md
+                    - name: 管理モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md
+                    - name: コンテナー モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md
+                    - name: フィールド モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md
+                    - name: ファイル アップローダー モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-fileuploader-ifileuploader.md
+                    - name: グループ モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-group-igroup.md
+                    - name: ハイパーリンク モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-hyperlink-ihyperlink.md
+                    - name: 画像モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-image-iimage.md
+                    - name: 入力モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-iinputcontrol.md
+                    - name: リスト モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-list-ilist.md
+                    - name: 参照モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-lookup-ilookup.md
+                    - name: マルチ参照モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup.md
+                    - name: ページ モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-ipage.md
+                    - name: ページリンク モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink.md
+                    - name: パート モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-part-ipart.md
+                    - name: サービス モジュール
+                      href: mobile-apps/platform/client-apis/modules/services-business-logic-services.md
+                    - name: 値モジュール
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue.md
+                    - name: Application タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/services-application-iapplication.md
+                    - name: ApplicationMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata.md
+                    - name: AsyncService タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-iasyncservice.md
+                    - name: CacheService タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-icacheservice.md
+                    - name: CompleteEventArgs タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-icompleteeventargs.md
+                    - name: ContainerControl タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md
+                    - name: ContainerControlDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md
+                    - name: ContainerControlMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata.md
+                    - name: ControlMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md
+                    - name: DataService タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice.md
+                    - name: Deferred タイプ<T>
+                      href: mobile-apps/platform/client-apis/interfaces/defer-ideferred.md
+                    - name: Design タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign.md
+                    - name: EventHook タイプ<T>
+                      href: mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook.md
+                    - name: Field タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield.md
+                    - name: FieldDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign.md
+                    - name: FieldMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifieldmetadata.md
+                    - name: FileUploader タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploader.md
+                    - name: FileUploaderDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploaderdesign.md
+                    - name: FileUploaderMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md
+                    - name: GenericValue タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue.md
+                    - name: getDataSource タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol.md
+                    - name: Group タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup.md
+                    - name: GroupDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign.md
+                    - name: GroupMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupmetadata.md
+                    - name: HyperLink タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlink.md
+                    - name: HyperLinkDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign.md
+                    - name: HyperLinkMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md
+                    - name: Image タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage.md
+                    - name: ImageDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign.md
+                    - name: ImageMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagemetadata.md
+                    - name: InputControl タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md
+                    - name: InputControlDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md
+                    - name: InputControlMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md
+                    - name: List タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist.md
+                    - name: ListDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign.md
+                    - name: ListMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata.md
+                    - name: Lookup タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup.md
+                    - name: LookupDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign.md
+                    - name: LookupMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md
+                    - name: MetadataService タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-imetadataservice.md
+                    - name: MultiLookup タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookup.md
+                    - name: MultiLookupDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md
+                    - name: MultiLookupMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md
+                    - name: NavigationArgs タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs.md
+                    - name: NumberSequenceConfig タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md
+                    - name: Page タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage.md
+                    - name: PageData タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md
+                    - name: PageLink タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink.md
+                    - name: PageLinkDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md
+                    - name: PageLinkMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md
+                    - name: PageMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagemetadata.md
+                    - name: PageOptions タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipageoptions.md
+                    - name: PageSubmitArgs タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs.md
+                    - name: PageTarget タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget.md
+                    - name: Part タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart.md
+                    - name: PartDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md
+                    - name: PartMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md
+                    - name: Row タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md
+                    - name: 値のタイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md
+                    - name: ValueDesign タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
+                    - name: ValueMetadata タイプ
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: Regression Suite Automation Tool
+          items:
+            - name: Regression Suite Automation Tool の概要
+              href: perf-test/rsat/rsat-overview.md
+            - name: インストールとコンフィギュレーション
+              href: perf-test/rsat/rsat-install-configure.md
+            - name: Regression Suite Automation Tool を使用したデータに依存しないテスト
+              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+            - name: テスト ケースの実行
+              href: perf-test/rsat/rsat-run.md
+            - name: 予測値の検証
+              href: perf-test/rsat/rsat-validate-expected.md
+            - name: テスト ケースのチェーン
+              href: perf-test/rsat/rsat-chain-test-cases.md
+            - name: 派生テスト ケース
+              href: perf-test/rsat/rsat-derived-test-cases.md
+            - name: Regression Suite Automation Tool チュートリアルの使用
+              href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
+            - name: ベスト プラクティス
+              href: perf-test/rsat/rsat-best-practices.md
+            - name: トラブルシューティング
+              href: perf-test/rsat/rsat-troubleshooting.md
+        - name: Lifecycle Services を使用したリリースのソリューション
+          items:
+            - name: 開発とリリース
+              href: lcs-solutions/lcs-solutions-app-source.md
+            - name: ステージおよび公開
+              href: lcs-solutions/marketing-content-lcs-solutions.md
+            - name: 方法の追加
+              href: lcs-solutions/methodologies-lcs-solutions.md
+            - name: ビジネス プロセス モデラー ライブラリの設定
+              href: lcs-solutions/business-process-modeler-libraries-lcs-solutions.md
+            - name: コードの移行
+              href: lcs-solutions/code-migration-lcs-solutions.md
+            - name: アプリケーションの検証
+              href: lcs-solutions/app-validation-lcs-solutions.md
+            - name: データ パッケージの処理と使用
+              href: lcs-solutions/process-data-packages-lcs-solutions.md
+            - name: ソリューション データベースのバックアップ
+              href: lcs-solutions/database-backup-lcs-solutions.md
+            - name: ローカライズと規制の機能
+              items:
+                - name: グローバリゼーション リソース
+                  href: lcs-solutions/country-region.md
+                - name: ローカリゼーション機能の分類
+                  href: lcs-solutions/classify-localization-features.md
+                - name: 国/地域コンテキストの適用
+                  href: lcs-solutions/apply-country-context.md
+                - name: 機能タイトルの規制証明情報
+                  href: lcs-solutions/regulatory-certifications.md
+                - name: 規制の更新
+                  href: lcs-solutions/regulatory-watch-communication.md
+                - name: ローカライズ モデルの分類
+                  href: lcs-solutions/separate-localization-models.md
+                - name: 規制の警告の送信
+                  href: lcs-solutions/submit-localization-alerts.md
+        - name: サポート
+          items:
+            - name: Finance and Operations および Lifecycle Services のサポートの取得
+              href: lifecycle-services/lcs-support.md
+            - name: Dynamics 365 のサポートの概要
+              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/dev-itpro/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+            - name: 中国の 21Vianet で運用される Finance and Operations に対するサポートの取得
+              href: lifecycle-services/21vianet-support.md
+            - name: Dynamics サービス エンジニアリング チームへの要求の送信
+              href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+            - name: Finance and Operations の技術サポートの設定
+              href: lifecycle-services/support-experience.md
+            - name: 予定された保守ウィンドウに関するよく寄せられる質問
+              href: lifecycle-services/planned-maintenance-window-faq.md
+            - name: クラウドの工程とサービス
+              href: lifecycle-services/cloud-operations-servicing.md
+            - name: Finance and Operations サポート エクスペリエンスの管理
+              href: lifecycle-services/cloud-powered-support-lcs.md
+        - name: システム管理
+          items:
+            - name: システム管理ホーム ページ
+              href: sysadmin/system-administration-home-page.md
+            - name: 法律条項およびプライバシーに関する声明へのリンクの追加
+              href: sysadmin/legal-terms-privacy-statement.md
+            - name: ライセンス コードとコンフィギュレーション キーのレポート
+              href: sysadmin/license-codes-configuration-keys-report.md
+            - name: 会社間データ共有
+              href: sysadmin/cross-company-data-sharing.md
+            - name: メンテナンス モード
+              href: sysadmin/maintenance-mode.md
+            - name: コンフィギュレーション済みのシステム アカウント
+              href: sysadmin/pre-configured-system-accounts.md
+            - name: B2B ユーザーの Azure AD へのエクスポート
+              href: sysadmin/implement-b2b.md
+            - name: セキュリティ
+              items:
+                - name: ロールベース セキュリティ
+                  href: sysadmin/role-based-security.md
+                - name: セキュリティ アーキテクチャ
+                  href: sysadmin/security-architecture.md
+                - name: セッション アイドル タイムアウトの設定
+                  href: sysadmin/session-idle-timeout.md
+                - name: 最初から用意されているセキュリティ レポート
+                  href: sysadmin/security-reports.md
+                - name: 新規ユーザーの作成
+                  href: sysadmin/tasks/create-new-users.md
+                - name: ユーザーの一括インポート
+                  href: sysadmin/tasks/import-bulk-users.md
+                - name: 職務分掌の設定
+                  href: sysadmin/tasks/set-up-segregation-duties.md
+                - name: 職務分掌の競合の識別と解決
+                  href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
+                - name: ユーザーのセキュリティ ロールへの割り当て
+                  href: sysadmin/tasks/assign-users-security-roles.md
+            - name: バッチ処理
+              items:
+                - name: バッチ処理の概要
+                  href: sysadmin/batch-processing-overview.md
+                - name: バッチ処理とバッチ サーバー
+                  href: sysadmin/batch-server-overview.md
+                - name: バッチ ジョブの作成
+                  href: sysadmin/tasks/create-batch-job.md
+                - name: バッチ ジョブのコピー
+                  href: sysadmin/copy-batch-job.md
+                - name: 有効なバッチ期間
+                  href: sysadmin/activeperiod.md
+                - name: バッチ マネージャーのセキュリティ ロール
+                  href: sysadmin/runby.md
+                - name: SQL インデックスの最適化を処理するためのバッチ ジョブ
+                  href: sysadmin/batch-job-SQL-defragmentation.md
+                - name: バッチ警告のコンフィギュレーション
+                  href: sysadmin/alerts.md
+                - name: 拡張バッチ フォーム
+                  href: sysadmin/enhanced-forms.md
+                - name: バッチ履歴のクリーンアップ
+                  href: sysadmin/batch-history-cleanup.md
+                - name: 実行中のバッチ ジョブの中止
+                  href: sysadmin/batch-abort.md
+            - name: 最適化アドバイザー
+              items:
+                - name: 最適化アドバイザーの概要
+                  href: sysadmin/optimization-advisor-overview.md
+                - name: 最適化アドバイザーのルールの作成
+                  href: sysadmin/create-rules-optimization-advisor.md
+            - name: 稼働停止をレポート
+              href: lifecycle-services/report-production-outage.md
+        - name: アップグレード、更新プログラム、および修正プログラム
+          items:
+            - name: アップグレード、更新プログラム、および修正プログラムのリソース
+              href: migration-upgrade/upgrade-home-page.md
+            - name: AX 2012 からのアップグレード
+              items:
+                - name: AX 2012 から Finance and Operations へのアップグレード
+                  href: migration-upgrade/upgrade-overview-2012.md
+                - name: AX 2012 アップグレード - アップグレード アナライザー ツールを使用した計画の策定
+                  href: migration-upgrade/upgrade-analyzer-tool.md
+                - name: AX 2012 アップグレード - コードのアップグレード サービスを使用した工数見積
+                  href: migration-upgrade/analyze-code-upgrade.md
+                - name: 'AX 2012 アップグレード: 分析のためのデモ環境の展開'
+                  href: migration-upgrade/analysis-sandbox.md
+                - name: AX 2012 アップグレード - 開発環境でのデータ アップグレード
+                  href: migration-upgrade/data-upgrade-2012.md
+                - name: AX 2012 アップグレード - データ アップグレードのためのアップグレード前のチェックリスト
+                  href: migration-upgrade/prepare-data-upgrade.md
+                - name: AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード
+                  href: migration-upgrade/upgrade-data-sandbox.md
+                - name: AX 2012 アップグレード - 切替テスト
+                  href: migration-upgrade/upgrade-cutover-testing.md
+                - name: AX 2012 アップグレード - アップグレード後のタスク
+                  href: migration-upgrade/app-validation-process.md
+                - name: AX 2012 アップグレード - 機能テスト合格
+                  href: migration-upgrade/upgrade-functional-validation.md
+                - name: AX 2012 アップグレード - Go-Live の準備
+                  href: migration-upgrade/upgrade-go-live-prep.md
+                - name: AX 2012 アップグレード - Go-Live
+                  href: migration-upgrade/2012-upgrade-cutover.md
+                - name: AX 2012 からのアップグレードに影響する変更
+                  items:
+                    - name: 勘定科目表の区切り記号を一意にする
+                      href: migration-upgrade/chart-accounts-delimiter-unique.md
+                    - name: 単一伝票仕訳帳と通貨再評価のアップグレード
+                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
+                    - name: プロジェクト リソースのスケジューリング データ モデル
+                      href: migration-upgrade/data-model-changes-resource-management.md
+                    - name: ワークフロー サブシステムの変更
+                      href: migration-upgrade/workflow-subsystem.md
+                    - name: 分析キューブの代わりに使用する集計モデル
+                      href: migration-upgrade/in-memory-real-time-aggregate-models.md
+                    - name: アップグレードした販売キューブのエンティティ格納への移行
+                      href: migration-upgrade/migrate-upgraded-cube-entity-store.md
+                    - name: 予算計画のアップグレード
+                      href: migration-upgrade/upgrade-budget-planning.md
+            - name: AX 2009 からのデータの移行
+              items:
+                - name: AX 2009 から Finance and Operations へのデータ移行
+                  href: migration-upgrade/data-migration-tool.md
+                - name: AX 2009 の移行 － データ移行ツールのインストール
+                  href: migration-upgrade/install-dmt.md
+                - name: AX 2009 の移行 － マップの生成
+                  href: migration-upgrade/generate-maps.md
+                - name: AX 2009 の移行 － テンプレートの作成
+                  href: migration-upgrade/create-package-templates-dmt.md
+                - name: AX 2009 の移行 － 移行グループの作成
+                  href: migration-upgrade/create-definition.md
+                - name: AX 2009 の移行 － パッケージのエクスポート
+                  href: migration-upgrade/ax2009-upgrade-export-package.md
+                - name: AX 2009 の移行 － パッケージのインポート
+                  href: migration-upgrade/ax2009-upgrade-import-package.md
+            - name: コードの移行とアップグレード
+              items:
+                - name: コードの移行とホーム ページのアップグレード
+                  href: migration-upgrade/code-migration-home-page.md
+                - name: コード移行の準備
+                  href: migration-upgrade/prepare-migration.md
+                - name: Azure DevOps マッピングの構成
+                  href: migration-upgrade/configure-vso-solution.md
+                - name: 分割されたモデル
+                  href: dev-tools/model-split.md
+                - name: デリゲートを使用したモデル間の依存関係の解決
+                  href: migration-upgrade/delegates-migration.md
+            - name: 最新の更新プログラムへのアップグレード (クラウド)
+              items:
+                - name: 最新の更新プログラムに移行するためのプロセス
+                  href: migration-upgrade/upgrade-latest-update.md
+                - name: 1 つのバージョンへのパス
+                  items:
+                    - name: 最新バージョンへのセルフサービス アップグレード
+                      href: migration-upgrade/self-service-upgrade.md
+                    - name: 再構築して最新バージョンに更新
+                      href: migration-upgrade/appupdate-80-81.md
+                - name: ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
+                  href: migration-upgrade/versions-update-policy.md
+                - name: 最新のプラットフォーム更新プログラムの環境への適用
+                  href: migration-upgrade/upgrade-latest-platform-update.md
+                - name: 開発環境またはデモ環境でのデータのアップグレード
+                  href: migration-upgrade/upgrade-data-to-latest-update.md
+                - name: 開発ツールの更新
+                  href: dev-tools/update-development-tools.md
+                - name: 最新の更新プログラムに対してコードをコンパイルするための計画と準備
+                  href: migration-upgrade/compile-considerations.md
+            - name: 最新の更新プログラムへのアップグレード (オンプレミス)
+              items:
+                - name: オンプレミス配置への更新プログラムの適用
+                  href: deployment/apply-updates-on-premises.md
+                - name: オンプレミス配置の再配置
+                  href: deployment/redeploy-on-prem.md
+                - name: オンプレミスの 7.x から 8.1 へのインプレース アップグレード
+                  href: migration-upgrade/on-prem-upgrade.md
+            - name: 修正プログラム
+              items:
+                - name: Lifecycle Services から更新プログラムを入手
+                  href: migration-upgrade/download-hotfix-lcs.md
+                - name: クラウド環境への更新プログラムの適用
+                  href: deployment/apply-deployable-package-system.md
+                - name: 開発環境でのメタデータ修正プログラムのインストール
+                  href: migration-upgrade/install-metadata-hotfix-package.md
+                - name: 1 ボックス環境の Reporting Services への修正プログラムの適用
+                  href: migration-upgrade/patch-reporting-service-environment.md
+                - name: Visual Studio 開発ツールの更新
+                  href: dev-tools/update-development-tools.md
+            - name: 廃止
+              items:
+                - name: 削除済みまたは非推奨の機能
+                  href: migration-upgrade/deprecated-features.md
+                - name: 方法とメタデータの要素の廃止
+                  href: migration-upgrade/deprecation-deletion-apis.md
+                - name: 非推奨 API
+                  href: migration-upgrade/deprecated-apis.md
+        - name: ユーザー インターフェイス開発
+          items:
+            - name: ユーザー インターフェイス開発のホーム ページ
+              href: user-interface/user-interface-development-home-page.md
+            - name: チュートリアル
+              items:
+                - name: レンタル料金のタイプ フォームの構築
+                  href: user-interface/build-rental-charge-type-form.md
+                - name: 顧客フォームの構築
+                  href: user-interface/build-customer-form.md
+                - name: ナビゲーションの構築
+                  href: user-interface/build-navigation.md
+                - name: ワークスペースの構築
+                  href: user-interface/build-workspace.md
+            - name: フォーム
+              items:
+                - name: ナビゲーション概念
+                  href: user-interface/page-navigation.md
+                - name: Web クライアントのページ レイアウト
+                  href: user-interface/page-layout.md
+                - name: Dynamics Symbol フォント
+                  href: user-interface/symbol-font.md
+                - name: 保存されているビュー
+                  href: ../fin-ops/get-started/saved-views.md
+                - name: 保存されたビューを十分に活用するフォームの作成
+                  href: user-interface/understanding-saved-views.md
+                - name: カスタム パターンを使用するテスト フォーム
+                  href: user-interface/testing-forms-custom-patterns.md
+                - name: セキュリティ保護された共有可能な URL (ディープ リンク) の作成
+                  href: user-interface/create-deep-links.md
+                - name: フォーム、製品、およびコントロールのユーザー補助機能
+                  href: user-interface/enable-accessibility.md
+                - name: フィールドの説明のカスタマイズ
+                  href: user-interface/customize-field-help.md
+            - name: コントロール
+              items:
+                - name: アクション コントロール
+                  href: user-interface/action-controls.md
+                - name: 入力コントロールとグリッド列のサイズ
+                  href: user-interface/sizing-input-controls-grid-columns.md
+                - name: ツリー コントロールでのチェック ボックスのサポート
+                  href: user-interface/check-box-tree-controls.md
+                - name: フィルター処理のオプション
+                  href: user-interface/filtering.md
+                - name: PowerApps ホスト コントロール
+                  href: user-interface/powerapps-host-control.md
+            - name: ウィンドウの管理
+              items:
+                - name: コンテキスト メニュー コードの移行
+                  href: migration-upgrade/code-migration-context-menus.md
+                - name: マウス ダブルクリック ロジックの移行
+                  href: migration-upgrade/code-migration-double-click.md
+                - name: ルックアップのコンテキスト データ入力
+                  href: user-interface/contextual-data-entry-lookups.md
+                - name: HierarchyViewer コントロール
+                  href: user-interface/hierarchy-viewer-control.md
+                - name: ルックアップ コントロール
+                  href: user-interface/lookups-controls.md
+                - name: ファイルのアップロード コントロール
+                  href: user-interface/file-upload-control.md
+                - name: システム定義ボタン
+                  href: user-interface/system-defined-buttons.md
+                - name: ページまたはグリッドの画像
+                  href: user-interface/images-form-grid.md
+                - name: 入力、テーブル、およびグリッド コントロール用のフォントと背景
+                  href: user-interface/specify-color-font-background-controls.md
+                - name: 右から左へ読み書きする言語のサポートと双方向のテキスト
+                  href: user-interface/bidirectional-support.md
+                - name: ワークスペース タイル用のアイコンの作成
+                  href: user-interface/create-icons-workspace-tiles.md
+                - name: 拡張可能なコントロールのためのパブリック JavaScript API
+                  href: user-interface/public-javascript-apis.md
+                - name: コントロールのチェックリスト
+                  href: user-interface/control-checklist.md
+            - name: メッセージ
+              items:
+                - name: 機能のコールアウト
+                  href: user-interface/feature-callouts.md
+                - name: スライダー ダイアログとメッセージ ボックス ダイアログ
+                  href: user-interface/slider-messagebox.md
+                - name: メッセージ センター、メッセージ バー、およびメッセージ詳細 API
+                  href: user-interface/messaging-api-center-bar-details.md
+                - name: メッセージ センター、メッセージ バー、およびメッセージ詳細に関するよく寄せられる質問
+                  href: user-interface/messaging-user.md
+            - name: フォーム パターンのガイドライン
+              items:
+                - name: 移行後のフォームのフォーム パターン
+                  href: user-interface/select-form-pattern.md
+                - name: フォームのスタイルとパターン
+                  href: user-interface/form-styles-patterns.md
+                - name: フォーム パターンをサポートしている Visual Studio アドイン
+                  href: user-interface/form-pattern-add-ins.md
+            - name: フォーム パターン
+              items:
+                - name: フォームの全般的なガイドライン
+                  href: user-interface/general-form-guidelines.md
+                - name: 詳細マスター フォーム パターン
+                  href: user-interface/details-master-form-pattern.md
+                - name: 詳細トランザクション フォーム パターン
+                  href: user-interface/details-transaction-form-pattern.md
+                - name: フォーム パターン セクション リストのフォーム パターン
+                  href: user-interface/section-list-form-pattern.md
+                - name: リスト ページのフォーム パターン
+                  href: user-interface/list-page-form-pattern.md
+                - name: 簡易詳細のフォーム パターン
+                  href: user-interface/simple-details-form-pattern.md
+                - name: 簡易リストおよび簡易詳細のフォーム パターン
+                  href: user-interface/simple-list-details-form-pattern.md
+                - name: 簡易リストのフォーム パターン
+                  href: user-interface/simple-list-form-pattern.md
+                - name: 目次のフォーム パターン
+                  href: user-interface/table-of-contents-form-pattern.md
+                - name: タスク ダブルのフォーム パターン
+                  href: user-interface/task-double-form-pattern.md
+                - name: タスク シングルのフォーム パターン
+                  href: user-interface/task-single-form-pattern.md
+                - name: ウィザードのフォーム パターン
+                  href: user-interface/wizard-form-pattern.md
+                - name: ワークスペースのフォーム パターン
+                  href: user-interface/workspace-form-pattern.md
+            - name: 副次フォーム パターン
+              items:
+                - name: 高度な選択のフォーム パターン
+                  href: user-interface/advanced-selection-form-pattern.md
+                - name: ダイアログのフォーム パターン
+                  href: user-interface/dialog-form-pattern.md
+                - name: ダイアログ削除のフォーム パターン
+                  href: user-interface/drop-dialog-form-pattern.md
+                - name: ルックアップのフォーム パターン
+                  href: user-interface/lookup-form-pattern.md
+                - name: 情報ボックスのフォーム パターン
+                  href: user-interface/factbox-form-patterns.md
+            - name: サブ パターン
+              items:
+                - name: カスタム フィルター グループのサブパターン
+                  href: user-interface/custom-filter-group-subpattern.md
+                - name: 分析コード エントリ コントロールのサブパターン
+                  href: financial/dimension-entry-control-subpattern.md
+                - name: 分析コード式ビルダーのサブパターン
+                  href: financial/dimension-expression-builder-subpattern.md
+                - name: フィールドおよびフィールド グループのサブパターン
+                  href: user-interface/fields-field-groups-subpattern.md
+                - name: フィルターおよびツールバーのサブパターン
+                  href: user-interface/filters-toolbar-subpattern.md
+                - name: テキスト入力のサブパターン
+                  href: user-interface/fill-text-subpattern.md
+                - name: 水平フィールドおよびボタン グループのサブパターン
+                  href: user-interface/horizontal-fields-buttons-group-subpattern.md
+                - name: 画像のプレビューのサブパターン
+                  href: user-interface/image-preview-subpattern.md
+                - name: リスト パネルのサブパターン
+                  href: user-interface/list-panel-subpattern.md
+                - name: 入れ子になった簡易リストおよび簡易詳細のサブパターン
+                  href: user-interface/nested-simple-list-details-subpattern.md
+                - name: セクション グラフのフォーム パターン
+                  href: user-interface/section-chart-form-pattern.md
+                - name: セクション Power BI のサブパターン
+                  href: user-interface/section-powerbi-subpattern.md
+                - name: セクション関連リンクのサブパターン
+                  href: user-interface/section-related-links-subpattern.md
+                - name: セクション積み上げグラフのサブパターン
+                  href: user-interface/section-stacked-chart-subpattern.md
+                - name: セクション タブ付きリストのサブパターン
+                  href: user-interface/section-tabbed-list-subpattern.md
+                - name: セクション タイルのサブパターン
+                  href: user-interface/section-tiles-subpattern.md
+                - name: 表形式フィールドのサブパターン
+                  href: user-interface/tabular-fields-subpattern.md
+                - name: ツールバーおよびフィールドのサブパターン
+                  href: user-interface/toolbar-fields-subpattern.md
+                - name: ツールバーおよびリストのサブパターン
+                  href: user-interface/toolbar-list-subpattern.md
+                - name: ワークスペース ページ フィルター グループのサブパターン
+                  href: user-interface/workspace-filter-group-subpattern.md
+            - name: コントロールの拡張機能
+              items:
+                - name: 拡張可能なコントロールの構築
+                  href: user-interface/build-extensible-control.md
+                - name: 拡張可能なコントロールのためのキーボード ショートカット
+                  href: user-interface/keyboard-shortcuts-controls.md
+                - name: 拡張可能なコントロールのプログラミング リファレンス
+                  href: user-interface/extensible-control-programming-reference.md
+                - name: コントロールの拡張機能
+                  href: user-interface/control-extensibility.md
+                - name: ローカライズ可能なラベルの作成
+                  href: user-interface/create-localizable-labels-client.md
+                - name: 拡張可能なコントロール レイアウトのガイドライン
+                  href: user-interface/extensible-controls-layout.md
+                - name: コントロールに対してタスク レコーダーが生成するテキストの制御
+                  href: user-interface/task-recorder-control-text.md
+            - name: ワークスペースの構築
+              items:
+                - name: 運用ワークスペースの構築
+                  href: user-interface/build-workspaces.md
+                - name: ワークスペースのタイルおよびリストのキャッシュ
+                  href: user-interface/tile-list-caching-workspaces.md
+            - name: タスク レコーダー
+              items:
+                - name: タスク レコーダーのリソース
+                  href: user-interface/task-recorder.md
+                - name: タスク レコーダーのクイック リファレンス
+                  href: user-interface/task-recorder-quick-reference.md
+                - name: タスク レコーダーによるドキュメントやトレーニングの作成
+                  href: user-interface/task-recorder-training-docs.md
+    - name: Dynamics 365 Supply Chain Management
+      href: ../../supply-chain/index.md
+    - name: Dynamics 365 Finance
+      href: ../../finance/index.md
+    - name: Dynamics 365 Retail
+      href: ../../retail/index.md
