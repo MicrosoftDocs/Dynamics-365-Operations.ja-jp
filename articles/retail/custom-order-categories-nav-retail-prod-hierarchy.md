@@ -1,7 +1,7 @@
 ---
 title: 販売促進エンティティの並べ替え順序の変更
-description: このトピックでは、Microsoft Dynamics 365 for Retail で、販売促進に関連したさまざまなエンティティに対する表示順序の制御に関連する概念について説明します。
-author: ashishharchwani
+description: このトピックでは、Dynamics 365 Retail で、販売促進に関連したさまざまなエンティティに対する表示順序の制御に関連する概念について説明します。
+author: josaw1
 manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
@@ -18,16 +18,16 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2be3c1198ac6fff851be1bead2f0995202f1f0e7
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c159ff869d6c504fdebbef1fa68115a410c81d85
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866164"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019419"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>販売促進エンティティの並べ替え順序の変更
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 小売業者は、製品の検出を、すべての小売チャンネルでの顧客とのやり取りにおける主要なツールと考えています。 さまざまな機能により、顧客が製品を簡単に検索できるようになります。 たとえば、カテゴリ、検索、およびフィルターを参照できます。
@@ -38,7 +38,7 @@ ms.locfileid: "1866164"
 
 販売促進に関連したさまざまなエンティティを並べ替えるためのサポートが強化されました。 このサポートにより、以前には実装パートナーからの拡張を必要としていた既存の顧客シナリオとの整合性が向上しました。
 
-バージョン 10.0.5 よりも前の Microsoft Dynamics 365 for Retail のバージョンでは、ナビゲーション階層でのカテゴリの並べ替え順序はアルファベット順になっていました。 新しいカスタム並べ替え順序機能を使用すると、販売促進マネージャーは、すべてのエンド ユーザー クライアントでの販売促進に関連したさまざまなエンティティの並べ替え順序をコンフィギュレーションできます。 これらのクライアントには、本社 (HQ) およびコール センターが含まれます。
+バージョン 10.0.5 よりも前の Retail のバージョンでは、ナビゲーション階層でのカテゴリの並べ替え順序はアルファベット順になっていました。 新しいカスタム並べ替え順序機能を使用すると、販売促進マネージャーは、すべてのエンド ユーザー クライアントでの販売促進に関連したさまざまなエンティティの並べ替え順序をコンフィギュレーションできます。 これらのクライアントには、本社 (HQ) およびコール センターが含まれます。
 
 ## <a name="configure-the-display-order-for-categories-in-the-retail-product-hierarchy"></a>小売製品階層でのカテゴリに対する表示順序のコンフィギュレーション
 

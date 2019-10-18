@@ -1,6 +1,6 @@
 ---
 title: コール センターの配送モードと費用の構成
-description: このトピックでは、デリバリー モードの設定方法および Microsoft Dynamics 365 for Retail のコール センターの注文料金を定義します。
+description: このトピックでは、デリバリー モードの設定方法および Dynamics 365 Retail のコール センターの注文料金を定義します。
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b67a1d91e41e1a4c21e0e877c06812dededbe731
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553602"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019488"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>コール センターの配送モードと費用の構成
 
 [!INCLUDE [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail で販売注文が発注される時、販売注文を入力した担当者がコール センター チャネルにリンクされている場合、配送のモード (配送モード) を検証し、注文の費用を計算するためにロジックとルールが使用されます。
+Dynamics 365 Retail で販売注文が発注される時、販売注文を入力した担当者がコール センター チャネルにリンクされている場合、配送のモード (配送モード) を検証し、注文の費用を計算するためにロジックとルールが使用されます。
 
 販売注文を作成する場合、販売注文ヘッダーおよび販売注文明細行で配送モードを選択できます。 既定では、ヘッダーで選択される配送モードがすべての販売注文明細行で使用されます。 ただし、必要に応じて個々の販売明細行の既定の配送モードを上書きすることができます。 顧客レコードに配送モードを定義することもできます。 その後、顧客に対して注文が作成された場合、その配送モードが既定で販売注文明細行で使用されます。
 

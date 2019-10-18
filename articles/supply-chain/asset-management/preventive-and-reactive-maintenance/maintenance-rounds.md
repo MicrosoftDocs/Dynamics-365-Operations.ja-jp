@@ -3,7 +3,7 @@ title: メンテナンス ラウンド
 description: このトピックでは、資産管理におけるメンテナンス ラウンドについて説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a0ac4820d2efa37387382c2890e3ddc7dbc0878b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875753"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922025"
 ---
 # <a name="maintenance-rounds"></a>メンテナンス ラウンド
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 **資産管理**で、定期的に同様のタスクを実行する必要があるさまざまな資産に対してメンテナンス ラウンドを作成することができます。 たとえば、同じ間隔内で複数の機械に実行する必要がある潤滑ジョブまたは安全検査ジョブがあります。 最初のステップは、同じフォームのメンテナンス ジョブを必要とする資産を含む、メンテナンス ラウンドを作成することです。 次に、メンテナンス ラウンドをスケジュールします。 メンテナンス ラウンド スケジュールを完了すると、**すべてのメンテナンス スケジュール**および**未処理のメンテナンス スケジュール明細行**のラウンドに関連するすべてのジョブ レコードが表示されます。
 
@@ -83,6 +81,8 @@ ms.locfileid: "1875753"
 >[!NOTE]
 >**ヘッダー** クイック タブの**詳細**グループに位置する**資産**および**明細行**フィールドに、選択したメンテナンス ラウンドに関連する資産および明細行の合計数が表示されます。
 
+次の図は、3 つの資産を含むメンテナンス ラウンドの例を表示します。
+
 ![図 1](media/13-preventive-maintenance.png)
 
 
@@ -106,6 +106,8 @@ ms.locfileid: "1875753"
 6. **OK**をクリックします。
 
 7. **資産管理** > **共通** > **メンテナンス スケジュール** > **すべてのメンテナンス スケジュール**または**未処理のメンテナンス スケジュール明細行**でメンテナンス ラウンド作業を表示することができます。 スケジュールされたラウンドが作業指示書プールに関連付けられている場合は、**未処理のメンテナンス スケジュール プール**でメンテナンス スケジュールの明細行も表示されます。 ラウンドから作成されたメンテナンス スケジュールの明細行の参照タイプは「メンテナンス ラウンド」になります。
+
+以下の 2 つの図では、**メンテナンス ラウンドのスケジュール**ダイアログのスケジュール ジョブと、そのスケジュールジョブに基ずく**全てのメンテナンス スケジュール**で作成されたメンテナンス スケジュールの明細行を表示します。
 
 ![図 2](media/14-preventive-maintenance.png)
 

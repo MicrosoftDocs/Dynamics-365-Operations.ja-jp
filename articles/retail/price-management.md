@@ -1,6 +1,6 @@
 ---
 title: 小売販売の価格管理
-description: このトピックでは、Microsoft Dynamics 365 for Retail で販売価格を作成および管理するための概念について説明します。
+description: このトピックでは、Dynamics 365 Retail で販売価格を作成および管理するための概念について説明します。
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -17,18 +17,18 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 813547f522f5c69920eadf9df61e7f01b13ecd36
-ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
+ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624792"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025221"
 ---
 # <a name="retail-sales-price-management"></a>Retail 販売価格の管理
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail における販売価格の作成と管理のプロセスについて情報を提供します。 このプロセスに含まれる概念、および販売価格のさまざまなコンフィギュレーション オプションへの影響に焦点を当てます。
+このトピックでは、Dynamics 365 Retail における販売価格の作成と管理のプロセスについて情報を提供します。 このプロセスに含まれる概念、および販売価格のさまざまなコンフィギュレーション オプションへの影響に焦点を当てます。
 
 ## <a name="terminology"></a>用語
 

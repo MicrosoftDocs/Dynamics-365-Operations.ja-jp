@@ -1,6 +1,6 @@
 ---
-title: 新機能と変更点および Dynamics 365 for Retail
-description: このページでは、最新リリースの Microsoft Dynamics 365 for Retail の新しい機能について学ぶ役立つリソースを示します。
+title: 新機能と変更点および Dynamics 365 Retail
+description: このページでは、最新リリースの Microsoft Dynamics 365 Retail の新しい機能について学ぶ役立つリソースを示します。
 author: sericks007
 manager: AnnBe
 ms.date: 10/20/2018
@@ -16,24 +16,24 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 23156e4f19beaf1bfe6ab9a66a326d55e7d85213
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d0f89cc5ec0a0a1bb174a031aa9b6c059d608be4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845712"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025494"
 ---
-# <a name="whats-new-and-changed-in-dynamics-365-for-retail"></a>Dynamics 365 for Retail の新機能および変更された機能
+# <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Dynamics 365 Retail の新機能および変更された機能
 
 [!include [banner](../../includes/banner.md)]
 
-このページでは、最新リリースの Microsoft Dynamics 365 for Retail の新しい機能および変更について学ぶ役立つリソースを示します。
+このページでは、最新リリースの Microsoft Dynamics 365 Retail の新しい機能および変更について学ぶ役立つリソースを示します。
 
 [!include [release notes](../includes/release-notes.md)]
 
-## <a name="releases-of-dynamics-365-for-retail"></a>Dynamics 365 for Retail のリリース
+## <a name="releases-of-dynamics-365-retail"></a>Dynamics 365 Retail のリリース
 
-| リリース | ビルド番号 | 在庫状態 | 詳細情報 |
+| リリース | ビルド番号 | 在庫状態 | 詳細 |
 |---------|--------------|--------------|------------|
 | Dynamics 365 for Finance & Operations - Retail - 7.3.5 | 7.3.11971.64930 | 2018 年 9 月 | [KB 4464337 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.5、(バイナリ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4464337&bugId=244892&qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450)、[KB 4463127 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.5. (X++ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4463127&bugId=244893&qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450) |
 | Dynamics 365 for Finance & Operations - Retail - 7.3.4 | 7.3.11971.64556 | 2018 年 8 月 | [KB 4467783 Microsoft Dynamics 365 for Retail - バージョン 7.3.5 - BugFix パッケージ 2\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4467783&bugId=257914&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |

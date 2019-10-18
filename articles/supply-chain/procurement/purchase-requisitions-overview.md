@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e571f5c83affa56c230e1f597e219eb60973225
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572028"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248883"
 ---
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 
@@ -38,7 +38,7 @@ ms.locfileid: "1572028"
 ## <a name="creating-purchase-requisitions"></a>購買要求の作成
 **自分の購買要求**ページで購買要求を作成して、必要な品目とサービスを選択できます。 組織が作成した調達カタログから品目を選択するか、またはそのカタログに品目が見つからなかった場合は、調達カテゴリを選択し、製品の詳細を入力して品目を請求できます。  
 
-購買要求をレビューのために送信する前に、Microsoft Dynamics 365 for Finance and Operations でワークフローを構成する必要があります。 ワークフローを使用して、確認プロセスを介して購買要求を**ドラフト**の最初のステータスから**承認済**の最後のステータスへ移動します。
+購買要求をレビューのために送信する前に、ワークフローを構成する必要があります。 ワークフローを使用して、確認プロセスを介して購買要求を**ドラフト**の最初のステータスから**承認済**の最後のステータスへ移動します。
 
 ### <a name="purchase-requisition-statuses"></a>購買要求のステータス
 
@@ -141,7 +141,7 @@ ms.locfileid: "1572028"
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>消費目的の要求
 
-消費目的の要求は、組織で内部的に使用される品目またはサービスの需要を表します。 この種類の要求によって作成される需要は、常に発注書によって満たされます。 Microsoft Dynamics 365 for Finance and Operations が発注書を自動的に生成するように設定されている場合、購買要求が承認された後に発注書が作成されます。
+消費目的の要求は、組織で内部的に使用される品目またはサービスの需要を表します。 この種類の要求によって作成される需要は、常に発注書によって満たされます。 Supply Chain Management が発注書を自動的に作成するように設定されている場合、購買要求が承認された後に発注書が作成されます。
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>補充目的の要求
 

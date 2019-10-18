@@ -1,6 +1,6 @@
 ---
 title: 店舗の品揃えに含まれない製品の販売および返品
-description: Dynamics 365 for Retail で、品揃えの範囲外の製品を販売および返品ができます。
+description: Dynamics 365 Retail で、品揃えの範囲外の製品を販売および返品ができます。
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ae6bac983ddb4d4a217fe83c8f68c5a87ccd6a47
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567914"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024940"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>店舗の品揃えに含まれない製品の販売および返品
 
@@ -37,7 +37,7 @@ ms.locfileid: "1567914"
 + 小売業者は、店舗内に特定の製品を抱えたり、顧客が訪れた店舗に在庫を持ったりしませんが、製品を他の店舗で使用できます。 店舗スタッフは、その他の店舗の製品を検索または表示することで顧客を支援し、カートに追加して、配送方法を選択することにより、チェック アウトを完了できます。
 + 小売業者が特定の市町村または郵便番号コードで多数の店舗を所有していれば、購入した同じ店舗への製品の返品を顧客に強制したくはありません。 代わりに、顧客は、どの店舗にも製品を返品することができます。
 
-これらの一般的なシナリオは、Dynamics 365 for Retail を使用している小売業者が使用できます。 Retail では次のことができます。
+これらの一般的なシナリオは、Retail を使用している小売業者が使用できます。 Retail では次のことができます。
 
 + 他の店舗で製品を検索や表示します。
 + すべてリリースされた製品を検索や表示します。

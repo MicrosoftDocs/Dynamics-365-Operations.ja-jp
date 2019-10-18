@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742636"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025056"
 ---
 # <a name="retail-peripherals"></a>小売周辺機器
 
@@ -116,9 +116,9 @@ OPOS ドライバを使用して、1 つの USB 磁気ストライプ リーダ�
 
 ### <a name="opos"></a>OPOS
 
-できるだけ多くのデバイスが Microsoft Dynamics 365 for Retail で使用できることを保証するため、POS 業界標準用 OLE が Microsoft Dynamics 365 for Retail の基本小売周辺機器プラットフォームです。 POS 業界標準用 OLE は、小売周辺機器の業界標準の通信プロトコルを設定する National Retail Federation (NRF) により作成されました。 OPOS は、POS標準用 OLE の実装として広く採用されています。 これは 90 年代半ばに作成され、それ以降、数回更新されています。 OPOS は、Windows ベースの POS システムに POS ハードウェアを簡単に統合できるデバイス ドライバ アーキテクチャを提供します。 OPOSは、互換性のある POS ハードウェアとソフトウェアの間の処理通信を制御します。 OPOS コントロールは、2 つ部分から構成されます:
+できるだけ多くのデバイスで Retail が使用できることを保証するため、サポートされる基本小売周辺機器プラットフォームは POS 業界標準用の OLE です。 POS 業界標準用 OLE は、小売周辺機器の業界標準の通信プロトコルを設定する National Retail Federation (NRF) により作成されました。 OPOS は、POS標準用 OLE の実装として広く採用されています。 これは 90 年代半ばに作成され、それ以降、数回更新されています。 OPOS は、Windows ベースの POS システムに POS ハードウェアを簡単に統合できるデバイス ドライバ アーキテクチャを提供します。 OPOSは、互換性のある POS ハードウェアとソフトウェアの間の処理通信を制御します。 OPOS コントロールは、2 つ部分から構成されます:
 
-- **コントロール オブジェクト** – デバイス クラス (ライン ディスプレイなど) のコントロール オブジェクトは、ソフトウェアプログラムにインターフェイスを提供します。 Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) は、コモン コントロール オブジェクト (CCO) と呼ばれる標準化された一式の OPOS コントロール オブジェクトを提供します。 CCO は、Microsoft Dynamics 365 for Retail の POS コンポーネントをテストするのに使用されます。 したがって、メーカーが OPOS 用にサービス オブジェクトを作成する限り、Microsoft Dynamics 365 for Retail が OPOS によってデバイス クラスをサポートなら、このテストにより多くのデバイス タイプがサポートされることを保証します。 各デバイス タイプを明示的にテストする必要はありません。
+- **コントロール オブジェクト** – デバイス クラス (ライン ディスプレイなど) のコントロール オブジェクトは、ソフトウェアプログラムにインターフェイスを提供します。 Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) は、コモン コントロール オブジェクト (CCO) と呼ばれる標準化された一式の OPOS コントロール オブジェクトを提供します。 CCO は、Retail の POS コンポーネントをテストするのに使用されます。 したがって、このテストにより、Retail が OPOS によってデバイス クラスをサポートする場合、メーカーは OPOS 用に作成されたサービス オブジェクトを提供できるように多くのデバイス タイプがサポートまたは提供されることが保証されます。 各デバイス タイプを明示的にテストする必要はありません。
 - **サービス オブジェクト** – サービス オブジェクトはコントロール オブジェクト (CCO) とデバイス間の通信を提供します。 通常、デバイスのサービス オブジェクトはデバイス メーカーによって提供されます。 ただし、場合によっては、製造元のサイトからサービス オブジェクトをダウンロードする必要があるかもしれません。 たとえば、最新のサービス オブジェクトが利用可能かもしれません。 メーカーの Web サイトのアドレスを特定するには、ハードウェアのドキュメントを参照してください。
 
 [![コントロール オブジェクトとサービス オブジェクト](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -126,7 +126,7 @@ OPOS ドライバを使用して、1 つの USB 磁気ストライプ リーダ�
 POS 用 OLE の OPOS での実装をサポートすることで、デバイス メーカーと POS のパブリッシャーが標準を正しく実装している限り、以前に組み合わせテストされていない POS システムとサポート デバイスの組み合わせでも正しく動作することが保証されます。
 
 > [!NOTE]
-> OPOS サポートは、OPOS ドライバーがあるすべてのデバイスのサポートを保証するものではありません。 Microsoft Dynamics 365 for Retail は最初に OPOS によりそのデバイス タイプまたはクラスをサポートする必要があります。 また、サービス オブジェクトが最新バージョンの CCO に対応した最新のものではないかもしれません。 一般に、サービス オブジェクトのクオリティには差異があります。
+> OPOS サポートは、OPOS ドライバーがあるすべてのデバイスのサポートを保証するものではありません。 Retail は最初に OPOS によりそのデバイス タイプまたはクラスをサポートする必要があります。 また、サービス オブジェクトが最新バージョンの CCO に対応した最新のものではないかもしれません。 一般に、サービス オブジェクトのクオリティには差異があります。
 
 ### <a name="windows"></a>ウィンドウ(&W)
 
@@ -136,7 +136,7 @@ POS レシートの印刷は、OPOS に最適化されています。 一般に�
 - プリンターを通して接続されているデバイス (「デイジー チェーン」) は 、Windows ドライバーを使用している間、正しく動作しないかもしれません。 たとえば、キャッシュ ドロワーが開かないかもしれず、伝票プリンタが指示通り動かないかもしれません。
 - OPOS は、紙切断または伝票印刷など小売レシート プリンターに特有の広範な変数をサポートします。
 
-使用している Windows プリンターで OPOS コントロールが使用できる場合、Microsoft Dynamics 365 for Retail でプリンターを正しく使用できるはずです。
+使用している Windows プリンターで OPOS コントロールが使用できる場合、Retail でプリンターを正しく使用できるはずです。
 
 ### <a name="universal-windows-platform"></a>Universal Windows Platform
 
@@ -192,7 +192,7 @@ Modern POS は**専用**タイプのハードウェア ステーションを、�
 
 #### <a name="modern-pos-for-android"></a>Android 用 Modern POS
 
-現在の Dynamics 365 for Retail バージョン 8.1.3 では、Android 用 Modern POSに 組み込みの IPC ハードウェア ステーションが含まれています。 このハードウェア ステーションは、ネットワーク プリンターおよび支払コネクタとの通信をサポートします。 詳細については、[Android 用 Hybrid アプリに関する docs の記事](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app) を参照してください。 
+現在の Retail バージョン 8.1.3 では、Android 用 Modern POS アプリケーションに組み込みの IPC ハードウェア ステーションが含まれています。 このハードウェア ステーションは、ネットワーク プリンターおよび支払コネクタとの通信をサポートします。 詳細については、[Android 用 Hybrid アプリに関する docs の記事](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app) を参照してください。 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>クラウド POS および iOS 用 Modern POS
 
@@ -526,7 +526,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 ハードウェア プロファイルの作成方法の詳細については、[レジスターとハードウェア ステーションを含むチャネル クライアントの定義と管理](define-maintain-channel-clients-registers-hw-stations.md)を参照してください。
 
 > [!NOTE]
-> Microsoft Dynamics 365 for Retail バージョン 1611 では、ハードウェア ステーションのプロファイルは使用されなくなりました。 これまでハードウェア ステーションのプロファイルで設定されていた属性は、ハードウェア ステーション自体の一部になりました。
+> Retail バージョン 1611 では、ハードウェア ステーションのプロファイルは使用されなくなりました。 これまでハードウェア ステーションのプロファイルで設定されていた属性は、ハードウェア ステーション自体の一部になりました。
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>IPC (組み込み) ハードウェア ステーションを含む Windows 用 Modern POS
 

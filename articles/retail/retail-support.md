@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Retail に関するサポートの利用
-description: この記事では、Microsoft Dynamics 365 for Retail のヘルプを入手する方法について説明します。
+title: Dynamics 365 Retail に関するサポートの利用
+description: この記事では、Microsoft Dynamics 365 Retail のヘルプを入手する方法について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 225b39bb03fa3bbd0b3c3a24e4eb09a114d01904
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577847"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025009"
 ---
-# <a name="get-support-for-dynamics-365-for-retail"></a>Dynamics 365 for Retail に関するサポートの利用
+# <a name="get-support-for-dynamics-365-retail"></a>Dynamics 365 Retail に関するサポートの利用
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Dynamics 365 for Retail のヘルプを入手する方法について説明します。
+この記事では、Dynamics 365 Retail のヘルプを入手する方法について説明します。
 
 ## <a name="contact-support"></a>サポートへの問い合わせ
 
@@ -48,7 +48,7 @@ Retail のサポートを得るには、次の表にあるリソースを使用�
 <tbody>
 <tr>
 <td>コミュニティに質問します。</td>
-<td><a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> コミュニティ ページに移動して Dynamics コミュニティから質問のヘルプを検索します。</td>
+<td><a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a> コミュニティ ページに移動して Dynamics コミュニティから質問のヘルプを検索します。</td>
 </tr>
 <tr>
 <td>問題検索ツールを使用します。</td>
@@ -74,7 +74,7 @@ Retail のサポートを得るには、次の表にあるリソースを使用�
 CustomerSource へのサインインやアクセス、e ラーニング、検索、サポート技術情報、ファイル ダウンロードおよびページまたはシステム エラーに関連する技術的な質問については、<a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Web サイト サポート</a>にアクセスしてください。</td>
 </tr>
 <tr>
-<td>Retail または Finance and Operations のライセンスに関する質問のヘルプを入手します。</td>
+<td>ライセンスに関する質問のヘルプを入手します。</td>
 <td>パートナー、ラージ アカウント リセラー (LAR)、または Microsoft 販売担当者に問い合わせます。</td>
 </tr>
 <tr>

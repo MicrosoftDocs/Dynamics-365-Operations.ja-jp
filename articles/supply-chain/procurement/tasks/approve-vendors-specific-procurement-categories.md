@@ -1,6 +1,6 @@
 ---
 title: 特定の調達カテゴリに対する仕入先の承認
-description: このトピックでは、Dynamics 365 for Finance and Operations の特定の調達カテゴリの仕入先を承認する方法について説明します。
+description: このトピックでは、Dynamics 365 Supply Chain Management の特定の調達カテゴリの仕入先を承認する方法について説明します。
 author: mkirknel
 manager: AnnBe
 ms.date: 07/30/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1583a2eedc535f81b84e3094fee1574451f6f209
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: e47124e22dd6c0e756bf42429327254f966b48a2
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867152"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018092"
 ---
 # <a name="approve-vendors-for-specific-procurement-categories"></a>特定の調達カテゴリに対する仕入先の承認
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations の特定の調達カテゴリの仕入先を承認する方法について説明します。 購買要求が作成されると、承認仕入先または優先仕入先を選択する必要があり、それは購入ポリシーの設定方法によって異なります。 この手順では、特定の調達カテゴリに対して仕入先が承認、または優先されるよう指定する方法を示します。 通常、このタスクを実行するのは、調達担当者です。 デモ データの会社 USMF でこの手順を使用できます。
+このトピックでは、Dynamics 365 Supply Chain Management の特定の調達カテゴリの仕入先を承認する方法について説明します。 購買要求が作成されると、承認仕入先または優先仕入先を選択する必要があり、それは購入ポリシーの設定方法によって異なります。 この手順では、特定の調達カテゴリに対して仕入先が承認、または優先されるよう指定する方法を示します。 通常、このタスクを実行するのは、調達担当者です。 デモ データの会社 USMF でこの手順を使用できます。
 
 1. ナビゲーション ウィンドウで、**モジュール > 調達 > 仕入先 > すべての仕入先**の順に移動します。
 2. カテゴリで承認仕入先または優先仕入先として設定する仕入先を選択します。

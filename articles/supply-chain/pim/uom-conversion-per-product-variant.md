@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 36fc98c44625cce03945d76973de67021d53353e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844372"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249451"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>製品バリアントごとの測定単位の変換
 
@@ -90,6 +90,6 @@ ms.locfileid: "1844372"
 
 ### <a name="using-excel-to-update-the-unit-conversions"></a>Excel を使用した単位変換の更新
 
-製品に異なる単位変換を持つ製品バリアントが多くある場合、**単位変換**ページから Excel スプレッドシートに単位変換をエクスポートして変換を更新し、Finance and Operations に再度発行することをお勧めします。
+製品に異なる単位変換を持つ製品バリアントが多くある場合、**単位変換**ページから Excel スプレッドシートに単位変換をエクスポートして変換を更新し、Supply Chain Mangement に再度発行することをお勧めします。
 
-Excel にエクスポートし、編集を再度 Finance and Operations に発行するオプションは、**単位変換**ページのアクション ペインの **Microsoft office で開く**メニューから有効にすることができます。
+Excel にエクスポートし、編集を再度 Supply Chain Mangement に発行するオプションは、**単位変換**ページのアクション ペインの **Microsoft office で開く**メニューから有効にできます。

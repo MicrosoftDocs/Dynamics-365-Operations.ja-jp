@@ -1,6 +1,6 @@
 ---
 title: 小売階層
-description: この記事は、Microsoft Dynamics 365 for Retail の小売階層について説明します。
+description: この記事は、Dynamics 365 Retail の小売階層について説明します。
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 198c8da336f3e225c5d6da2eb02c86581dc9b4d6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cb383c5bc5ad5d641db6f30e915ea43ba5980005
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568025"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025080"
 ---
 # <a name="retail-hierarchies"></a>小売階層
 
 [!include [banner](includes/banner.md)]
 
-この記事は、Microsoft Dynamics 365 for Retail の小売階層について説明します。
+この記事は、Dynamics 365 Retail の小売階層について説明します。
 
 小売カテゴリ階層を作成して、小売チャンネルを使用して販売する製品を整理することができます。 小売製品階層を使用して、製品を分類またはグループ化できます。 その後、これらの製品を使用して、製品の品揃えと顧客ロイヤルティ プログラムを作成できます。 また、製品の属性またはプロパティの割り当て、価格決定構造の割り当て、製品プロモーションへの製品の挿入、およびレポートでの製品の使用を行うこともできます。 1 つの小売カテゴリ階層を作成して組織のすべての製品およびカテゴリを表し、複数の目的にその小売カテゴリ階層を使用することができます。 また、製品のプロモーションなどの特殊な目的に複数の小売カテゴリ階層を作成できます。 小売製品階層を作成する際に、カテゴリ階層の目的を識別するためにカテゴリ階層タイプを割り当てる必要があります。 たとえば、**小売のナビゲーション階層**タイプが割り当てられている製品階層のみが、製品をカテゴリごとにオンラインで、または販売時点管理 (POS) で表示する場合に参照されます。
 

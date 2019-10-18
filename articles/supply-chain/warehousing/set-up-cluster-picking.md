@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7adec850cfb473b0bfc9536dcb1ef1cfd74129a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 84b6d3c3caa09b9601701ca4ac1992b151c0b8d4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559003"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249753"
 ---
 [!include[banner](../includes/banner.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "1559003"
 
 ワーク オーダーが倉庫にリリースされると、作業者はモバイル デバイスを使用してクラスターにオーダーを割り当てることができます。 クラスターは、作業者のピッキング作業を整理します。 ワーク オーダーがクラスターに割り当てられると、作業者はクラスター ピッキングを使用して、そのオーダーのピッキング作業を実行する必要があります。 作業者は、他のピッキング方法を使用できません。 ワーク オーダーがクラスターに誤って割り当てられた場合、作業者はクラスターを破棄して、クラスターを再作成する必要があります。
 
-必要に応じて、作業者は別の作業者にクラスターを渡すことができます。 これにより、クラスターの状態が [引渡済み] に変わります。 作業者がモバイル デバイスを使用してピッキングとプット アウェイ作業が完了したことを示したとき、出荷または積荷を Dynamics 365 for Finance and Operations クライアントで確認する必要があります。
+必要に応じて、作業者は別の作業者にクラスターを渡すことができます。 これにより、クラスターの状態が [引渡済み] に変わります。 作業者がモバイル デバイスを使用してピッキングとプット アウェイ作業が完了したことを示したとき、出荷または積荷をクライアントで確認する必要があります。
 
 ## <a name="set-up-cluster-picking"></a>クラスター ピッキングの設定
 

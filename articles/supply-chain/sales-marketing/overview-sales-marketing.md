@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10c8b548f2e295bf344459370ab6eecd577a0efb
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 5d55dfe26cd298372701aeb98a6aafc49977f381
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865996"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248634"
 ---
 # <a name="sales-and-marketing-overview"></a>販売とマーケティングの概要
 
@@ -41,7 +41,7 @@ ms.locfileid: "1865996"
 
 ### <a name="campaigns"></a>キャンペーン
 
-キャンペーンは、見込顧客、潜在顧客、営業案件、およびキャンペーンに参加するように選択されているお客様の連絡先をターゲットとします。 Microsoft Dynamics 365 for Finance and Operations では、潜在的な顧客を最大化するため、テレマーケティング、メーリングおよびメールでのキャンペーンなどのキャンペーンのいくつかの種類を作成できます。 キャンペーンが進行して積極的な反応を受け取ると、キャンペーンに積極的に反応したこれらの受信者への営業プロセスを開始できます。
+キャンペーンは、見込顧客、潜在顧客、営業案件、およびキャンペーンに参加するように選択されているお客様の連絡先をターゲットとします。 Supply Chain Management では、潜在的な顧客を最大化するため、テレマーケティング、メーリングおよびメールでのキャンペーンなどのキャンペーンのいくつかの種類を作成できます。 キャンペーンが進行して積極的な反応を受け取ると、キャンペーンに積極的に反応したこれらの受信者への営業プロセスを開始できます。
 
 ## <a name="sales"></a>販売注文
 販売機能を使用して、見積、新規および既存のお客様のアップセル/クロスセルを作成し、販売注文の作成および顧客の売上請求書を作成します。 次のプロセス フローは、販売の業務プロセスを表しています。 [![販売の業務プロセス](./media/sales01.jpg)](./media/sales01.jpg)

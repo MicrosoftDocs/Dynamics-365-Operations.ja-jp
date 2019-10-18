@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 609f5f13f3af4a7621fe7ee152800dac4d68a9fc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572052"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025152"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>販売時点管理 (POS) の在庫検索
 
@@ -52,7 +52,7 @@ ms.locfileid: "1572052"
 場所のリストには、エンティティの 2 つのタイプが含まれます。
 
 - **小売店舗** – Retail で現在の店舗に対する店舗ロケーター グループを使用してコンフィギュレーションされる店舗の一覧を示します。
-- **物流センター** – 物流センター (倉庫など) のさまざまなタイプを Microsoft Dynamics 365 for Retail でコンフィギュレーションできます。 ただし、一覧は **標準** 既定のタイプの物流センターに対してのみ使用可能な在庫情報を表示します。
+- **物流センター** – 物流センター (倉庫など) のさまざまなタイプを Retail でコンフィギュレーションできます。 ただし、一覧は **標準** 既定のタイプの物流センターに対してのみ使用可能な在庫情報を表示します。
 
     > [!NOTE]
     > 使用可能な在庫情報は、POS の **輸送**、**検査**、および **ルートの商品** タイプの倉庫に対しては表示されません。

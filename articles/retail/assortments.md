@@ -1,6 +1,6 @@
 ---
 title: 品揃え管理
-description: このトピックでは、Microsoft Dynamics 365 for Retail での品揃え管理の基本概念について説明し、プロジェクトの実装に関する考慮事項を提供します。
+description: このトピックでは、Dynamics 365 Retail での品揃え管理の基本概念について説明し、プロジェクトの実装に関する考慮事項を提供します。
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4652641be0a1edaac919d36c7f127cd62c355a57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558831"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025843"
 ---
 # <a name="assortment-management"></a>品揃え管理
 
@@ -28,7 +28,7 @@ ms.locfileid: "1558831"
 
 ## <a name="overview"></a>概要
 
-Microsoft Dynamics 365 for Retail では、チャンネル間で製品の可用性を管理できる*品揃え*を提供しています。 品揃えでは、特定の店舗および特定の期間に利用可能な商品が決まります。
+Dynamics 365 Retail では、チャンネル間で製品の可用性を管理できる*品揃え*を提供しています。 品揃えでは、特定の店舗および特定の期間に利用可能な商品が決まります。
 
 小売で、品揃えは 1 つまたは複数のチャネル (または組織階層が使用される場合は一連のチャネル) を 1 つまたは複数の製品 (またはカテゴリ階層を使用する場合は製品のグループ) にマッピングします。
 

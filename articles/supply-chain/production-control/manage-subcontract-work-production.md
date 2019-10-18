@@ -1,6 +1,6 @@
 ---
 title: 生産における外注作業の管理
-description: このトピックでは、委託された操作が Microsoft Dynamics 365 for Finance and Operations でどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
+description: このトピックでは、委託された操作が Dynamics 365 Supply Chain Management でどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ea2feccf9f74c0f035b8a46dc87eb41bdf85900a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569756"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023544"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>生産における外注作業の管理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、委託された操作が Microsoft Dynamics 365 for Finance and Operations でどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
+このトピックでは、委託された操作が Dynamics 365 Supply Chain Management でどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
 
 [生産プロセス](production-process-overview.md) では、ベンダーが所有または管理するリソースによって作業を行うことができます。 通常ベンダーのリソースは、会社自身のリソースの利用可能なキャパシティを超過する需要超過を定期的に均等化するために使用されます。 ベンダーは特定の [リソースの能力](resource-capabilities.md) またはリソースを、低価格で提供することもできます。  
 
@@ -40,7 +40,7 @@ ms.locfileid: "1569756"
 
 内部リソースの場合、通常固定費率が一定期間割り当てられます。 対照的に、外注されたリソースのコストは、関連サービスの購入価格に基づいています。 このサービスは別の製品として定義されており、特定の外注作業の調達および購入プロセスを推進するために使用されます。  
 
-現在、Microsoft Dynamics 365 for Finance and Operations では、半製品の明示的な概念はありません。 原材料を完成製品に変換するために複数の操作を必要とする製品の受注の場合、完成製品は最後の操作時にのみ在庫に転記されます。 以前の作業で生成された半製品は、進行中の作業 (WIP) で会計処理されますが、在庫に転記されたり追跡されたりしません。 ルートと材料の請求書 (BOM) を複数のより小さな単位に分割できますが、この方法は管理する必要がある製品の数、BOM、およびルートの数が増加します。  
+現在、Supply Chain Management にて半製品の明示的な概念はありません。 原材料を完成製品に変換するために複数の操作を必要とする製品の受注の場合、完成製品は最後の操作時にのみ在庫に転記されます。 以前の作業で生成された半製品は、進行中の作業 (WIP) で会計処理されますが、在庫に転記されたり追跡されたりしません。 ルートと材料の請求書 (BOM) を複数のより小さな単位に分割できますが、この方法は管理する必要がある製品の数、BOM、およびルートの数が増加します。  
 
 生産作業のための外注作業のモデリングには 2 つの方法があります。 これらの方法は、外注プロセスをモデル化できる方法、半製品がプロセスで表される方法、および原価管理が管理される方法によって異なります。
 
