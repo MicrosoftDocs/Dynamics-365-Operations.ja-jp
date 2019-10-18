@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent - Onboard へようこそ
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Onboard アプリについて紹介します。 オンボードは、新しい従業員のために素晴らしい研修エクスペリエンスを作成するのに役立ちます。
+title: Dynamics 365 Talent - Onboard へようこそ
+description: このトピックでは、Microsoft Dynamics 365 Talent - Onboard アプリについて紹介します。 オンボードは、新しい従業員のために素晴らしい研修エクスペリエンスを作成するのに役立ちます。
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/24/2019
@@ -18,13 +18,13 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-04-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e58b1b73c84c2ec5650d8af92a13f4ed51664f95
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: d91fbb0454855de614427321fe49f858ef3c65fb
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731541"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010501"
 ---
-# <a name="welcome-to-dynamics-365-for-talent-onboard"></a><span data-ttu-id="ba7c8-104">Dynamics 365 for Talent: Onboard へようこそ</span><span class="sxs-lookup"><span data-stu-id="ba7c8-104">Welcome to Dynamics 365 for Talent: Onboard</span></span>
+# <a name="welcome-to-dynamics-365-talent-onboard"></a><span data-ttu-id="03a3d-104">Dynamics 365 Talent: Onboard へようこそ</span><span class="sxs-lookup"><span data-stu-id="03a3d-104">Welcome to Dynamics 365 Talent: Onboard</span></span>
 
 [!include[banner](../includes/banner.md)]

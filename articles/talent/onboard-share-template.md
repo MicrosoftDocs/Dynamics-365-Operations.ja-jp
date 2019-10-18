@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent - Onboard で他の投稿者とコンテンツを共有する
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Onboard アプリで研修用ガイドおよびテンプレートを他の投稿者と共有する方法について説明します。
+title: Dynamics 365 Talent - Onboard で他の投稿者とコンテンツを共有する
+description: このトピックでは、Microsoft Dynamics 365 Talent - Onboard アプリで研修用ガイドおよびテンプレートを他の投稿者と共有する方法について説明します。
 author: andreabichsel
 manager: ''
 ms.date: 05/20/2019
@@ -16,58 +16,58 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8524f9ec502bed829522ab90c7c7976c2814a1b6
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: d07879ff31127788ebfee5bc8b42442a26987651
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731538"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010755"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-for-talent-onboard"></a><span data-ttu-id="6cbdc-103">Dynamics 365 for Talent: Onboard で他の投稿者とコンテンツを共有する</span><span class="sxs-lookup"><span data-stu-id="6cbdc-103">Share content with other contributors in Dynamics 365 for Talent: Onboard</span></span>
+# <a name="share-content-with-other-contributors"></a><span data-ttu-id="8d732-103">他の投稿者とコンテンツを共有する</span><span class="sxs-lookup"><span data-stu-id="8d732-103">Share content with other contributors</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="6cbdc-104">Microsoft Dynamics 365 for Talent: Onboard では、研修用ガイドおよびテンプレートを他の投稿者と共有して、ドキュメントを確認したり変更を加えることができます。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-104">Microsoft Dynamics 365 for Talent: Onboard lets you share onboarding guides and templates with other contributors so that they can review the documents and make changes.</span></span>
+<span data-ttu-id="8d732-104">Microsoft Dynamics 365 Talent: Onboard では、研修用ガイドおよびテンプレートを他の投稿者と共有して、ドキュメントを確認したり変更を加えることができます。</span><span class="sxs-lookup"><span data-stu-id="8d732-104">Microsoft Dynamics 365 Talent: Onboard lets you share onboarding guides and templates with other contributors so that they can review the documents and make changes.</span></span>
 
-## <a name="share-an-onboarding-guide-with-other-contributors"></a><span data-ttu-id="6cbdc-105">他の投稿者と研修用ガイドを共有する</span><span class="sxs-lookup"><span data-stu-id="6cbdc-105">Share an onboarding guide with other contributors</span></span>
+## <a name="share-an-onboarding-guide-with-other-contributors"></a><span data-ttu-id="8d732-105">他の投稿者と研修用ガイドを共有する</span><span class="sxs-lookup"><span data-stu-id="8d732-105">Share an onboarding guide with other contributors</span></span>
 
-1. <span data-ttu-id="6cbdc-106">左側のメニューで、**ガイド**を選択してから、共有するガイドを選択します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-106">On the left menu, select **Guides**, and then select the guide that you want to share.</span></span>
-2. <span data-ttu-id="6cbdc-107">ページの右上隅にある**詳細**ボタン (縦の 3 つの点) を選択してから、**共有**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-107">Select the **More** button (the three vertical dots) in the upper-right corner of the page, and then select **Share**.</span></span>
+1. <span data-ttu-id="8d732-106">左側のメニューで、**ガイド**を選択してから、共有するガイドを選択します。</span><span class="sxs-lookup"><span data-stu-id="8d732-106">On the left menu, select **Guides**, and then select the guide that you want to share.</span></span>
+2. <span data-ttu-id="8d732-107">ページの右上隅にある**詳細**ボタン (縦の 3 つの点) を選択してから、**共有**を選択します。</span><span class="sxs-lookup"><span data-stu-id="8d732-107">Select the **More** button (the three vertical dots) in the upper-right corner of the page, and then select **Share**.</span></span>
 
-    ![[<span data-ttu-id="6cbdc-108">他の投稿者と研修用ガイドを共有する</span><span class="sxs-lookup"><span data-stu-id="6cbdc-108">Sharing an onboarding guide with other contributors</span></span>](./media/onboard-share-guide.png)](./media/onboard-share-guide.png)
+    ![[<span data-ttu-id="8d732-108">他の投稿者と研修用ガイドを共有する</span><span class="sxs-lookup"><span data-stu-id="8d732-108">Sharing an onboarding guide with other contributors</span></span>](./media/onboard-share-guide.png)](./media/onboard-share-guide.png)
 
-3. <span data-ttu-id="6cbdc-109">**共有先**で、受信者がガイドを変更できるようにする必要がある場合は、**これらのユーザーは編集できますか**オプションを**オン**に設定します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-109">Under **Share with**, if recipients should be able to revise the guide, set the **Can these people make edits?** option to **On**.</span></span> <span data-ttu-id="6cbdc-110">ガイドを共有したことを受信者に電子メールで通知する必要がある場合は、**電子メール通知を受信者に送信する**オプションを**オン**に設定します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-110">If recipients should be notified by email that you've shared the guide with them, set the **Send email notification to recipients** option to **On**.</span></span>
+3. <span data-ttu-id="8d732-109">**共有先**で、受信者がガイドを変更できるようにする必要がある場合は、**これらのユーザーは編集できますか**オプションを**オン**に設定します。</span><span class="sxs-lookup"><span data-stu-id="8d732-109">Under **Share with**, if recipients should be able to revise the guide, set the **Can these people make edits?** option to **On**.</span></span> <span data-ttu-id="8d732-110">ガイドを共有したことを受信者に電子メールで通知する必要がある場合は、**電子メール通知を受信者に送信する**オプションを**オン**に設定します。</span><span class="sxs-lookup"><span data-stu-id="8d732-110">If recipients should be notified by email that you've shared the guide with them, set the **Send email notification to recipients** option to **On**.</span></span>
 
-    ![[<span data-ttu-id="6cbdc-111">研修用ガイドのアクセスおよび電子メールの基本設定を設定する</span><span class="sxs-lookup"><span data-stu-id="6cbdc-111">Setting access and email preferences for an onboarding guide</span></span>](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
+    ![[<span data-ttu-id="8d732-111">研修用ガイドのアクセスおよび電子メールの基本設定を設定する</span><span class="sxs-lookup"><span data-stu-id="8d732-111">Setting access and email preferences for an onboarding guide</span></span>](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
 
-4. <span data-ttu-id="6cbdc-112">名前または電子メール アドレスを入力し、ドロップダウン リストで目的の受信者を選択します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-112">Enter a name or email address, and select the desired recipient in the drop-down list.</span></span>
-5. <span data-ttu-id="6cbdc-113">**アクセスの管理**タブで、受信者がガイドで実行できる操作を確認または変更できます。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-113">On the **Manage access** tab, you can review or change what recipients can do with the guide.</span></span> <span data-ttu-id="6cbdc-114">受信者のアクセスを変更するには、受信者名の横にあるドロップダウン リストで、必要に応じて**表示可能**、**編集可能**、または**削除**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-114">To change a recipient's access, in the drop-down list next to the recipient's name, select **Can View**, **Can edit**, or **Remove**, as appropriate.</span></span>
-6. <span data-ttu-id="6cbdc-115">受信者の追加または変更が完了したら、**更新**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-115">When you've finished adding or modifying recipients, select **Update**.</span></span>
+4. <span data-ttu-id="8d732-112">名前または電子メール アドレスを入力し、ドロップダウン リストで目的の受信者を選択します。</span><span class="sxs-lookup"><span data-stu-id="8d732-112">Enter a name or email address, and select the desired recipient in the drop-down list.</span></span>
+5. <span data-ttu-id="8d732-113">**アクセスの管理**タブで、受信者がガイドで実行できる操作を確認または変更できます。</span><span class="sxs-lookup"><span data-stu-id="8d732-113">On the **Manage access** tab, you can review or change what recipients can do with the guide.</span></span> <span data-ttu-id="8d732-114">受信者のアクセスを変更するには、受信者名の横にあるドロップダウン リストで、必要に応じて**表示可能**、**編集可能**、または**削除**を選択します。</span><span class="sxs-lookup"><span data-stu-id="8d732-114">To change a recipient's access, in the drop-down list next to the recipient's name, select **Can View**, **Can edit**, or **Remove**, as appropriate.</span></span>
+6. <span data-ttu-id="8d732-115">受信者の追加または変更が完了したら、**更新**を選択します。</span><span class="sxs-lookup"><span data-stu-id="8d732-115">When you've finished adding or modifying recipients, select **Update**.</span></span>
 
-## <a name="share-an-onboarding-template-with-other-contributors"></a><span data-ttu-id="6cbdc-116">他の投稿者と研修用テンプレートを共有する</span><span class="sxs-lookup"><span data-stu-id="6cbdc-116">Share an onboarding template with other contributors</span></span>
+## <a name="share-an-onboarding-template-with-other-contributors"></a><span data-ttu-id="8d732-116">他の投稿者と研修用テンプレートを共有する</span><span class="sxs-lookup"><span data-stu-id="8d732-116">Share an onboarding template with other contributors</span></span>
 
-1. <span data-ttu-id="6cbdc-117">左側のメニューで、**テンプレート**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-117">On the left menu, select **Templates**.</span></span>
-2. <span data-ttu-id="6cbdc-118">**自分のテンプレート**で、共有するテンプレートの右上隅にある**詳細**ボタン (省略記号 \[**...**\]) を選択してから、**共有**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-118">Under **My templates**, select the **More** button (the ellipsis \[**...**\]) in the upper-right corner of the template that you want to share, and then select **Share**.</span></span>
+1. <span data-ttu-id="8d732-117">左側のメニューで、**テンプレート**を選択します。</span><span class="sxs-lookup"><span data-stu-id="8d732-117">On the left menu, select **Templates**.</span></span>
+2. <span data-ttu-id="8d732-118">**自分のテンプレート**で、共有するテンプレートの右上隅にある**詳細**ボタン (省略記号 \[**...**\]) を選択してから、**共有**を選択します。</span><span class="sxs-lookup"><span data-stu-id="8d732-118">Under **My templates**, select the **More** button (the ellipsis \[**...**\]) in the upper-right corner of the template that you want to share, and then select **Share**.</span></span>
 
-    <span data-ttu-id="6cbdc-119">[![他の投稿者とテンプレートを共有する](./media/onboard-share-template.png)](./media/onboard-share-template.png)</span><span class="sxs-lookup"><span data-stu-id="6cbdc-119">[![Sharing a template with other contributors](./media/onboard-share-template.png)](./media/onboard-share-template.png)</span></span>
+    <span data-ttu-id="8d732-119">[![他の投稿者とテンプレートを共有する](./media/onboard-share-template.png)](./media/onboard-share-template.png)</span><span class="sxs-lookup"><span data-stu-id="8d732-119">[![Sharing a template with other contributors](./media/onboard-share-template.png)](./media/onboard-share-template.png)</span></span>
 
-3. <span data-ttu-id="6cbdc-120">**受信者**で、受信者がテンプレートを変更できるようにする必要がある場合は、**これらのユーザーは編集できますか**オプションを**オン**に設定します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-120">Under **Recipient**, if recipients should be able to revise the template, set the **Can these people make edits?** option to **On**.</span></span> <span data-ttu-id="6cbdc-121">テンプレートを共有したことを受信者に電子メールで通知する必要がある場合は、**電子メール通知を受信者に送信する**オプションを**オン**に設定します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-121">If recipients should be notified by email that you've shared the template with them, set the **Send email notification to recipients** option to **On**.</span></span>
+3. <span data-ttu-id="8d732-120">**受信者**で、受信者がテンプレートを変更できるようにする必要がある場合は、**これらのユーザーは編集できますか**オプションを**オン**に設定します。</span><span class="sxs-lookup"><span data-stu-id="8d732-120">Under **Recipient**, if recipients should be able to revise the template, set the **Can these people make edits?** option to **On**.</span></span> <span data-ttu-id="8d732-121">テンプレートを共有したことを受信者に電子メールで通知する必要がある場合は、**電子メール通知を受信者に送信する**オプションを**オン**に設定します。</span><span class="sxs-lookup"><span data-stu-id="8d732-121">If recipients should be notified by email that you've shared the template with them, set the **Send email notification to recipients** option to **On**.</span></span>
 
-    [!テンプレートのアクセスおよび電子メールの基本設定を設定する]<span data-ttu-id="6cbdc-122">(./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)</span><span class="sxs-lookup"><span data-stu-id="6cbdc-122">(./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)</span></span>
+    [!テンプレートのアクセスおよび電子メールの基本設定を設定する]<span data-ttu-id="8d732-122">(./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)</span><span class="sxs-lookup"><span data-stu-id="8d732-122">(./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)</span></span>
 
-4. <span data-ttu-id="6cbdc-123">名前または電子メール アドレスを入力し、ドロップダウン リストで目的の受信者を選択します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-123">Enter a name or email address, and select the desired recipient in the drop-down list.</span></span>
-5. <span data-ttu-id="6cbdc-124">**アクセスの管理**タブで、受信者がテンプレートで実行できる操作を確認または変更できます。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-124">On the **Manage access** tab, you can review or change what recipients can do with the template.</span></span> <span data-ttu-id="6cbdc-125">受信者のアクセスを変更するには、受信者名の横にあるドロップダウン リストで、必要に応じて**表示可能**、**編集可能**、または**削除**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-125">To change a recipient's access, in the drop-down list next to the recipient's name, select **Can View**, **Can edit**, or **Remove**, as appropriate.</span></span>
-6. <span data-ttu-id="6cbdc-126">受信者の追加または変更が完了したら、**更新**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6cbdc-126">When you've finished adding or modifying recipients, select **Update**.</span></span>
+4. <span data-ttu-id="8d732-123">名前または電子メール アドレスを入力し、ドロップダウン リストで目的の受信者を選択します。</span><span class="sxs-lookup"><span data-stu-id="8d732-123">Enter a name or email address, and select the desired recipient in the drop-down list.</span></span>
+5. <span data-ttu-id="8d732-124">**アクセスの管理**タブで、受信者がテンプレートで実行できる操作を確認または変更できます。</span><span class="sxs-lookup"><span data-stu-id="8d732-124">On the **Manage access** tab, you can review or change what recipients can do with the template.</span></span> <span data-ttu-id="8d732-125">受信者のアクセスを変更するには、受信者名の横にあるドロップダウン リストで、必要に応じて**表示可能**、**編集可能**、または**削除**を選択します。</span><span class="sxs-lookup"><span data-stu-id="8d732-125">To change a recipient's access, in the drop-down list next to the recipient's name, select **Can View**, **Can edit**, or **Remove**, as appropriate.</span></span>
+6. <span data-ttu-id="8d732-126">受信者の追加または変更が完了したら、**更新**を選択します。</span><span class="sxs-lookup"><span data-stu-id="8d732-126">When you've finished adding or modifying recipients, select **Update**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="6cbdc-127">次のステップ</span><span class="sxs-lookup"><span data-stu-id="6cbdc-127">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="8d732-127">次のステップ</span><span class="sxs-lookup"><span data-stu-id="8d732-127">Next steps</span></span>
 
-- [<span data-ttu-id="6cbdc-128">他の投稿者とコンテンツを共有する</span><span class="sxs-lookup"><span data-stu-id="6cbdc-128">Share content with other contributors</span></span>](./onboard-share-template.md)
-- [<span data-ttu-id="6cbdc-129">タスクと研修中の従業員の状態の表示</span><span class="sxs-lookup"><span data-stu-id="6cbdc-129">View the status of tasks and onboarding employees</span></span>](./onboard-view-status.md)
-- [<span data-ttu-id="6cbdc-130">Onboard での採用チームの作成</span><span class="sxs-lookup"><span data-stu-id="6cbdc-130">Create hiring teams in Onboard</span></span>](./onboard-create-team.md)
+- [<span data-ttu-id="8d732-128">他の投稿者とコンテンツを共有する</span><span class="sxs-lookup"><span data-stu-id="8d732-128">Share content with other contributors</span></span>](./onboard-share-template.md)
+- [<span data-ttu-id="8d732-129">タスクと研修中の従業員の状態の表示</span><span class="sxs-lookup"><span data-stu-id="8d732-129">View the status of tasks and onboarding employees</span></span>](./onboard-view-status.md)
+- [<span data-ttu-id="8d732-130">Onboard での採用チームの作成</span><span class="sxs-lookup"><span data-stu-id="8d732-130">Create hiring teams in Onboard</span></span>](./onboard-create-team.md)
 
-### <a name="see-also"></a><span data-ttu-id="6cbdc-131">参照</span><span class="sxs-lookup"><span data-stu-id="6cbdc-131">See also</span></span>
+### <a name="see-also"></a><span data-ttu-id="8d732-131">参照</span><span class="sxs-lookup"><span data-stu-id="8d732-131">See also</span></span>
 
-- [<span data-ttu-id="6cbdc-132">Onboard アプリを試すか購入する</span><span class="sxs-lookup"><span data-stu-id="6cbdc-132">Try or buy the Onboard app</span></span>](https://dynamics.microsoft.com/talent/onboard/)
-- [<span data-ttu-id="6cbdc-133">新機能</span><span class="sxs-lookup"><span data-stu-id="6cbdc-133">What's new</span></span>](./whats-new.md)
-- [<span data-ttu-id="6cbdc-134">リリース ノート</span><span class="sxs-lookup"><span data-stu-id="6cbdc-134">Release notes</span></span>](https://docs.microsoft.com/business-applications-release-notes/index)
-- [<span data-ttu-id="6cbdc-135">サポートの利用</span><span class="sxs-lookup"><span data-stu-id="6cbdc-135">Get support</span></span>](./talent-support.md)
+- [<span data-ttu-id="8d732-132">Onboard アプリを試すか購入する</span><span class="sxs-lookup"><span data-stu-id="8d732-132">Try or buy the Onboard app</span></span>](https://dynamics.microsoft.com/talent/onboard/)
+- [<span data-ttu-id="8d732-133">新機能</span><span class="sxs-lookup"><span data-stu-id="8d732-133">What's new</span></span>](./whats-new.md)
+- [<span data-ttu-id="8d732-134">リリース ノート</span><span class="sxs-lookup"><span data-stu-id="8d732-134">Release notes</span></span>](https://docs.microsoft.com/business-applications-release-notes/index)
+- [<span data-ttu-id="8d732-135">サポートの利用</span><span class="sxs-lookup"><span data-stu-id="8d732-135">Get support</span></span>](./talent-support.md)
