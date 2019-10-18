@@ -3,7 +3,7 @@ title: メンテナンス スケジュール コスト
 description: このトピックでは、資産管理におけるメンテナンス スケジュール コストについて説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71b958839a914d90a86a0dcd16a09285ca6dcfa4
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: b2f53a4a64b06efc9269c607bfe1fc3a41c90cdd
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875746"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922071"
 ---
 # <a name="maintenance-schedule-cost"></a>メンテナンス スケジュール コスト
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 資産管理で、メンテナンス スケジュールの明細行に関する予算原価を計算することができます。 たとえば、来年の予定された予防的メンテナンス ジョブに関連する原価など、予定原価の概要を知りたい場合に役立ちます 計算は、「メンテナンス計画」、「メンテナンス ラウンド」、および「メンテナンス要求」タイプの既存のメンテナンス スケジュールの明細行に基づいて行われます。
 
@@ -48,10 +46,11 @@ ms.locfileid: "1875746"
 
 5. **OK** をクリックして、原価計算を開始します。
 
-6. **グループ化**アクション ウィンドウ グループの**メンテナンス スケジュール コスト** タブ > で該当するボタンをクリックし、原価計算に必要な詳細レベルを表示します。 選択したアクション ウィンドウ グループ ボタンが青色で強調表示されます。 ボタンをクリックして、有効または無効にします。
+6. **グループ化**アクション ウィンドウ グループの**メンテナンス スケジュール コスト** タブ > で該当するボタンをクリックし、原価計算に必要な詳細レベルを表示します。 選択したアクション ウィンドウ グループが強調表示されます。 ボタンをクリックして、有効または無効にします。
 
 7. 新しい原価計算を実行する場合、**原価計算**ボタンをクリックします。
 
+次の図では、メンテナンス スケジュールの原価計算の結果を表示します。
 
 ![図 1](media/17-preventive-maintenance.png)
 

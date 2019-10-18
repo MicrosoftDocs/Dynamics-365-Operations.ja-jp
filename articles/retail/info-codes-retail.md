@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c9cd9197f395b69f65137a59392a4d83d692f6fa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6939ed56944ecafb29c1cadd2744b5746b19cb46
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572130"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023367"
 ---
 # <a name="info-codes-and-info-code-groups"></a>情報コードおよび情報コード グループ
 
@@ -42,7 +42,7 @@ ms.locfileid: "1572130"
 
 ## <a name="info-codes-group"></a>情報コード グループ
 
-Dynamics 365 for Retail で、情報コード グループを作成できます。 情報コード グループは、少ない情報コードを定義してより多目的な方法で情報コードを使用できるようにすることによって、柔軟性を増加させます。 情報コード グループは次の方法で使用できます。
+Retail で、情報コード グループを作成できます。 情報コード グループは、少ない情報コードを定義してより多目的な方法で情報コードを使用できるようにすることによって、柔軟性を増加させます。 情報コード グループは次の方法で使用できます。
 
 - 少ない情報コードを定義して、簡単に再利用します。 情報コード グループに含まれる情報コードは、他の情報コードとは定義済みの依存関係はありません。 同じ情報コードを複数の情報コード グループに含め、次に優先順位を使用してどの特定の状態でも意味の通る順序で同じ情報コードを表示できます。
 - 情報コードをそのほかの情報コードまたは情報コード グループに関連付けて、シナリオごとに個別の情報コードまたはリンク情報コードを定義することなく必要とする方法で、製品またはトランザクションに関する情報を収集します。

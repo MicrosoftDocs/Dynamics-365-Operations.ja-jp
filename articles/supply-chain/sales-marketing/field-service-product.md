@@ -1,6 +1,6 @@
 ---
-title: Field Service 製品への Finance and Operations の製品の同期
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Field Service に製品を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+title: Supply Chain Management の製品と Field Service の製品との同期
+description: このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に製品を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
@@ -19,34 +19,34 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 06d7ff272ecb79abded3c3d3ade1f6bc0ef1f095
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: f5f6d41f3e65a3cf5b8c7c96f54b1c8c6cdfaefb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742358"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249776"
 ---
-# <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a>Finance and Operations の製品と Field Service の製品との同期
+# <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>Supply Chain Management の製品と Field Service の製品との同期
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Field Service に製品を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に製品を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-使用されている **Field Service 製品 (Finance and Operations から Field Service)** テンプレートは、見込顧客を現金化の**製品 (Finance and Operations から Sales) – 直接**テンプレートに基づきます。 詳細については、次を参照してください [製品 (Finance and Operations から Sales) - 直接](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct)。
+使用されている **Field Service 製品 (Supply Chain Management から Field Service)** テンプレートは、見込顧客を現金化の**製品 (Supply Chain Management から Sales) – 直接**テンプレートに基づきます。 詳細については、[製品 (Supply Chain Management から Sales) - 直接](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct) を参照してください。
 
-このトピックでは、**Field Service 製品 (Finance and Operations から Field Service)** および**製品 (Finance and Operations から Sales) – 直接**テンプレートの間の違いのみを説明します。
+このトピックでは、**Field Service 製品 (Supply Chain Management から Field Service)** および**製品 (Supply Chain Management から Sales) – 直接**テンプレートの間の違いのみを説明します。
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
-**データ統合でのテンプレートの名前:**
+**データ統合でのテンプレートの名前**
 
-- Field Service 製品 (Finance and Operations から Field Service)
+- Field Service 製品 (Supply Chain Management から Field Service)
 
-**データ統合プロジェクトのタスク名:**
+**データ統合プロジェクトのタスク名**
 
 - 製品 - 製品
 
-**Field Service 製品 (Finance and Operations から Field Service)** テンプレートは、**製品 (Finance and Operations から Sales) – 直接**テンプレートに含まれていないマッピングを含んでいます。 このマッピングは、必要な Field Service 固有のフィールド **サービス製品タイプ** が正しく設定されるようにします。
+**Field Service 製品 (Supply Chain Management から Field Service)** テンプレートは、**製品 (Supply Chain Management から Sales) – 直接**テンプレートに含まれていないマッピングに基づきます。 このマッピングは、必要な Field Service 固有のフィールド **サービス製品タイプ** が正しく設定されるようにします。
 
 ```
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
@@ -60,7 +60,7 @@ nonInventory  :  690970001
 service       :  690970002 
 ```
 
-Finance and Operations で、**販売可能なリリース済製品**データ エンティティ上の **Field Service 製品タイプ**の値は次のように計算されます。
+Supply Chain Management で、**販売可能なリリース済製品**データ エンティティ上の **Field Service 製品タイプ**の値は次のように計算されます。
 
 - **在庫:** 製品タイプ = 製品および品目モデル グループ、在庫製品 = True
 - **在庫なし:** 製品タイプ = 製品および品目モデル グループ、在庫製品 = False
@@ -70,6 +70,6 @@ Finance and Operations で、**販売可能なリリース済製品**データ �
 
 次の図は、データ統合のテンプレート マッピングを示しています。
 
-### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>Field Service 製品 (Finance and Operations から Field Service): 製品 - 製品
+### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Field Service 製品 (Supply Chain Management から Field Service) : 製品 - 製品
 
 [![データ統合のテンプレートのマッピング](./media/FSProduct.png)](./media/FSProduct.png)

@@ -1,6 +1,6 @@
 ---
 title: POS で URL を開く
-description: このトピックでは、Microsoft Dynamics 365 for Retail の製品および顧客検索機能に加えられた改良の概要を示します。
+description: このトピックでは、Dynamics 365 Retail の製品および顧客検索機能に加えられた改良の概要を示します。
 author: AamirAllaq
 manager: AnnBe
 ms.date: 01/28/2019
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 729caf9fad9097a3ecbf7d546c8f8a96f67aec92
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 406dad1709dc837f7f87817241d7062f6b08d8fd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845686"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025889"
 ---
 # <a name="open-url-in-pos"></a>POS で URL を開く
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、小売販売時点管理 (POS) のボタンをコンフィギュレーションして URL を開く方法について説明します。 この機能はコードのカスタマイズを必要とせず、開発者以外のロールのユーザーがコンフィギュレーションすることもできます。 この機能は、Dynamics 365 for Finance and Operations バージョン 8.1.3 リリース (ビルド 8.1.227.10014) 以降の一部として使用可能です。 
+このトピックでは、小売販売時点管理 (POS) のボタンをコンフィギュレーションして URL を開く方法について説明します。 この機能はコードのカスタマイズを必要とせず、開発者以外のロールのユーザーがコンフィギュレーションすることもできます。 
 
 この機能では、ボタン グリッド デザイナーを使用して URL を開くことで、POS のボタンをコンフィギュレーションすることができます。 現時点では、これは次のコンフィギュレーションでサポートされています:
 

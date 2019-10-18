@@ -1,6 +1,6 @@
 ---
 title: 販売のトレンドとパターンの分析
-description: Microsoft Dynamics 365 for Retail でリアルタイムに販売動向とパターンを検索できます。
+description: Dynamics 365 Retail でリアルタイムに販売動向とパターンを検索できます。
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ea5efd1fcde233145e97aea30d312bbe70b20ac
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c54e707d312d7ac3bbcad71a914e528859038a13
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557903"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025820"
 ---
 # <a name="analyze-sales-trends-and-patterns"></a>販売のトレンドとパターンの分析
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail でリアルタイムに販売動向とパターンを検索できます。
+Dynamics 365 Retail でリアルタイムに販売動向とパターンを検索できます。
 
-Dynamics 365 for Retail の一部として、そのままで使用できる**年別チャネル売上**レポートを使用して、年の期間における組織階層のさまざまなレベルでリアルタイムに販売のトレンドとパターンを調査できます。 次の場所のいずれかからこのレポートを開くことができます。
+Retail の一部として、そのままで使用できる**年別チャネル売上レポート**を使用して、年の期間における組織階層のさまざまなレベルでリアルタイムに販売のトレンドとパターンを調査できます。 次の場所のいずれかからこのレポートを開くことができます。
 
 - **小売店舗管理**ワークスペース &gt; **小売** &gt; **チャンネル** &gt; **小売店舗管理** &gt; **レポート** &gt; **年別チャネル売上レポート**
 - **小売店舗の財務**ワークスペース &gt; **小売** &gt; **チャンネル** &gt; **小売店舗の財務** &gt; **レポート** &gt; **年別チャネル売上レポート**

@@ -19,29 +19,29 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 07eea8fd7af4da611b4bd0c9340923f8894fab2c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d9f36da025528272b1a95456acf597dd5d923819
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1526018"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025175"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>ヘッダーの諸費用を一致する販売明細行に比例配分する
 
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、ヘッダー レベルの自動請求をグループ化して、小売販売明細行に比例配分する機能について説明します。 この機能は、Microsoft Dynamics 365 for Retail バージョン 10.0.1 の販売時点管理 (POS) で作成されたトランザクションと、Microsoft Dynamics 365 for Retail バージョン 10.0.2 のコール センターで作成された販売で使用できます。
+このトピックでは、ヘッダー レベルの自動請求をグループ化して、小売販売明細行に比例配分する機能について説明します。 この機能は、Retail バージョン 10.0.1 の販売時点管理 (POS) で作成されたトランザクションと、Retail バージョン 10.0.2 のコール センターで作成された販売で使用できます。
 
 この機能は、[高度な自動請求](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) 機能が**小売パラメーター**ページのオプションを使用して有効になっている場合にのみ使用できます。 さらに、自動請求の拡張された計算方法は、小売チャネル (POS、コール センター、および Dynamics E コマース プラットフォーム) で作成した小売販売注文にのみ適用できます。
 
 この新しい機能により、ヘッダー レベルの自動請求が計算され小売販売トランザクションに適用されるという点で組織はさらに柔軟になります。
 
-バージョン 10.0.1 よりも前の Microsoft Dynamics 365 for Retail のバージョンでは、特定の荷渡方法リレーションを持つヘッダーレベルの自動請求は、販売注文ヘッダーで定義されている荷渡方法と一致する場合にのみ計算されます。
+バージョン 10.0.1 よりも前の Retail のバージョンでは、特定の荷渡方法リレーションを持つヘッダーレベルの自動請求は、販売注文ヘッダーで定義されている荷渡方法と一致する場合にのみ計算されます。
 
 たとえば、ヘッダー レベルの自動請求は荷渡方法 **99** および荷渡方法 **11** に対して定義されます。 販売注文が作成されると、荷渡方法 **99** は、注文ヘッダーで定義されます。 ただし、一部の販売注文明細行は荷渡方法 **11** を使用して出荷されるように設定されています。 この場合、荷渡方法 **99** に関連付けられているヘッダー レベルの請求金額のみが考慮され、販売注文に適用されます。
 
-Dynamics 365 for Retail のヘッダー レベルの請求金額には、注文金額に基づいた[階層型費用のコンフィギュレーション](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) を定義することのできる追加の機能があります。 たとえば、注文金額が $50.00 から $200.00 である場合、組織は $5.00 の配送料を請求する場合があります。 しかし、注文金額が $200.01 から $500.00 である場合は、配送料を $4.00 にするかもしれません。
+Retail のヘッダー レベルの請求金額には、注文金額に基づいた [階層型費用のコンフィギュレーション](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) を定義することのできる追加の機能があります。 たとえば、注文金額が $50.00 から $200.00 である場合、組織は $5.00 の配送料を請求する場合があります。 しかし、注文金額が $200.01 から $500.00 である場合は、配送料を $4.00 にするかもしれません。
 
 一部の組織は、ヘッダー レベルの請求金額で提供される階層型費用の計算の利点を求めています。 ただし、さまざまな荷渡方法が関係するシナリオの場合、計算される請求金額が各販売明細行で定義されている荷渡方法との一致に基づいていることを確認する必要もあります。
 

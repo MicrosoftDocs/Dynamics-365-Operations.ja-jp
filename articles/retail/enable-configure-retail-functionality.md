@@ -1,6 +1,6 @@
 ---
 title: 新しい Retail 環境でのシード データの初期化
-description: この記事では、Microsoft Dynamics 365 for Retail の初期化プロセスの一部として作成されるデータについて説明します。
+description: この記事では、Dynamics 365 Retail の初期化プロセスの一部として作成されるデータについて説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 49b21d81437ebd7cc55076444ee71ae1143bfac0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556901"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025519"
 ---
 # <a name="initialize-seed-data-in-new-retail-environments"></a>新しい Retail 環境でのシード データの初期化
 
 [!include [banner](includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Retail の初期化プロセスの一部として作成されるデータについて説明します。
+この記事では、Dynamics 365 Retail の初期化プロセスの一部として作成されるデータについて説明します。
 
 小売ソリューションが Microsoft Dynamics Lifecycle Services (LCS) によって配置された後、基本的なコンフィギュレーション データを作成するために、小売コンフィギュレーションを初期化する必要があります。
 
@@ -39,7 +39,7 @@ ms.locfileid: "1556901"
 
 小売のコンフィギュレーションを初期化するには、次の手順に従います。
 
-1. Dynamics 365 for Retail クライアントを起動します。
+1. Retail クライアントを起動します。
 2. **小売** &gt; **本社の設定** &gt; **パラメーター** &gt; **小売パラメーター**をクリックします。
 3. **初期化**をクリックします。
 
@@ -57,7 +57,7 @@ ms.locfileid: "1556901"
 - エンティティ検証テンプレート
 - Commerce Data Exchange セッション履歴を削除するバッチ ジョブ
 
-また、Payment Card Industry (PCI) に関連付けられるログが Dynamics 365 for Retail データベースに対して有効になります。
+また、Payment Card Industry (PCI) に関連付けられるログが Retail データベースに対して有効になります。
 
 > [!NOTE]
 > 別々に小売用スケジューラをコンフィギュレーションするオプションがあります。 このオプションで、小売用スケジューラのコンフィギュレーションを既定の設定にリセットすることができます。

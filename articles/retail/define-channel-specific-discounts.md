@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a136e245beaf8dfd8bcf19d49f8a355c8871cde7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a23176cefde1f4d119828c9b124750d6106a3bfa
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568071"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019350"
 ---
 # <a name="define-channel-specific-discounts"></a>チャンネル固有の割引の定義
 
@@ -36,7 +36,7 @@ ms.locfileid: "1568071"
 
 小売業者は、多くの場合、異なるチャンネルでさまざまな割引を提供します。 それらは、国内市場の状況に合わせて行われたり、競合の小売業者に対処するために行われる場合があります。
 
-Microsoft Dynamics 365 for Retail は、チャネル固有の割引を定義するために価格グループを使用します。 価格グループは、次のエンティティーの 1 つ以上に割り当てることができます: チャンネル、カタログ、加盟者、ロイヤルティー プログラム。 この記事ではチャンネルについて説明しますが、カタログ割引、加盟者割引、ロイヤルティー割引に対しても同じ概念が適用できます。
+Retail は、チャネル固有の割引を定義するために価格グループを使用します。 価格グループは、次のエンティティーの 1 つ以上に割り当てることができます: チャンネル、カタログ、加盟者、ロイヤルティー プログラム。 この記事ではチャンネルについて説明しますが、カタログ割引、加盟者割引、ロイヤルティー割引に対しても同じ概念が適用できます。
 
 ## <a name="price-groups"></a>価格グループ
 

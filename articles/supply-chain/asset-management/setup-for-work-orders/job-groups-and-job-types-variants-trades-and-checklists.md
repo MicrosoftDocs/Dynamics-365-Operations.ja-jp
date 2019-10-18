@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9efbd9651f6a2fa57e761238c6acfe6111e986e6
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874765"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249612"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>メンテナンス作業タイプ カテゴリとメンテナンス作業タイプ、メンテナンス作業タイプ バリアント、メンテナンス作業取引、およびメンテナンス チェックリスト
 
@@ -225,7 +225,7 @@ ms.locfileid: "1874765"
 26. 選択したメンテナンス作業タイプの既定の明細行に対する関連付けを設定するには、**ドキュメントの関連付け**を選択します。 メンテナンス作業タイプの既定の明細行で設定された関連付けは、そのメンテナンス作業タイプの既定の明細行を使用する作業指示書明細行に自動的に含まれます。
 27. **新規**を選択してから、ドキュメント タイプを選択します。
 28. ドキュメントまたはファイルをアップロードします。
-29. **関連付け**ページのフィールドを設定します。 関連付けの設定では、Microsoft Dynamics 365 for Finance and Operations の標準ドキュメント設定機能が使用されます。
+29. **関連付け**ページのフィールドを設定します。 関連付けの設定では、 標準ドキュメント設定機能が使用されます。
 30. **保存**を選択して関連付けを保存します。
 
     > [!NOTE]
@@ -261,7 +261,7 @@ ms.locfileid: "1874765"
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>メンテナンス作業タイプの予測の自動更新
 
-資産管理では、Finance and Operations の他のモジュールで更新された時間原価、品目原価、および経費について、メンテナンス作業タイプの予測に対する変更を自動的に更新できます。 このようにして、メンテナンス作業タイプの予測が常に最新の原価価格を使用することを保証できます。
+資産管理では、F他のモジュールで更新された時間原価、品目原価、および経費について、メンテナンス作業タイプの予測に対する変更を自動的に更新できます。 このようにして、メンテナンス作業タイプの予測が常に最新の原価価格を使用することを保証できます。
 
 1. **資産管理** \> **定期処理** \> **予測** \> **メンテナンス作業タイプの予測の更新**を選択します。
 2. **メンテナンス作業タイプの予測の更新**ダイアログ ボックスの**対象に含めるレコード** クイック タブに、必要に応じて特定のメンテナンス作業タイプの選択を追加できます。 **フィルター**を選択し、**選択**を選択して選択を行います。

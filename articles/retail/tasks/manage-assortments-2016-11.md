@@ -17,18 +17,19 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f96c79558c3248406a1b5988f9c9dc9783db4406
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 099c1d97db97659d55070b1058f3e0b5b44df107
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564361"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024732"
 ---
 # <a name="manage-assortments-november-2016"></a>品揃えの管理 (2016 年 11 月)
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-この手順では、新製品の品揃えを作成し発表する方法およびデモデータ企業USRTの使用方法を示します。 この手順を実施するには、Dynamics AX アプリケーション 7.0.1 以降および Dynamics AX プラットフォーム 7.1が必要です。  
+この手順では、新製品の品揃えを作成し発表する方法およびデモデータ企業USRTの使用方法を示します。 
+
 
 1. [カテゴリと製品の管理] をクリックします。
 
