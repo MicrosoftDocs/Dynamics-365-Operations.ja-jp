@@ -1,6 +1,6 @@
 ---
 title: 研修中の従業員の状態とタスクの表示
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Onboard アプリを使用して、新規採用者が研修プロセスのどこにいるのかを追跡する方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Talent - Onboard アプリを使用して、新規採用者が研修プロセスのどこにいるのかを追跡する方法について説明します。
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 0e17c572b4d3b5cee3687b25fb340ad9f98247ed
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: fe6da4599940a0b7812dc9d3f66157715c45f62d
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731539"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009834"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>研修中の従業員の状態とタスクの表示
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard により、新規採用者の研修活動の進行状況を表示することができます。 また、研修ガイドから割り当てられているタスクを表示することもできます。
+Microsoft Dynamics 365 Talent: Onboard により、新規採用者の研修活動の進行状況を表示することができます。 また、研修ガイドから割り当てられているタスクを表示することもできます。
 
 ## <a name="view-the-status-of-onboarding-employees"></a>研修中の従業員の状態の表示
 

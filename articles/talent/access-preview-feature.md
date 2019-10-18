@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent のプレビュー機能にアクセス
-description: このトピックでは、管理者が Microsoft Dynamics 365 for Talent のプレビュー機能を有効にできる方法について説明し、プレビューで現在有効な機能を一覧表示します。
+title: Microsoft Dynamics 365 Talent のプレビュー機能にアクセス
+description: このトピックでは、管理者が Microsoft Dynamics 365 Talent のプレビュー機能を有効にできる方法について説明し、プレビューで現在有効な機能を一覧表示します。
 author: tracykeya
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 6a5aa8d6ea72ec3d3910edea291c4340ab607326
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: e607c2ba4b544d60c97d98bd49b07d912d83ebc6
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739590"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008705"
 ---
 # <a name="manage-preview-features"></a>プレビュー機能の管理
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent の人事管理サービス (HCM) 機能の継続的なロールアウトの一環として、お客様にできるだけ早く新しい機能を体験していただきたいと思います。 管理者はそれぞれの環境でプレビュー機能を表示し使用することができます。 これらの機能は、一般的な使用可能性の準備がほぼ整い、および徹底したテストを経ています。 一般提供にリリースする前に、顧客フィードバックおよび検証の最終ラウンドを探しています。
+Microsoft Dynamics 365 Talent の人事管理サービス (HCM) 機能の継続的なロールアウトの一環として、お客様にできるだけ早く新しい機能を体験していただきたいと思います。 管理者はそれぞれの環境でプレビュー機能を表示し使用することができます。 これらの機能は、一般的な使用可能性の準備がほぼ整い、および徹底したテストを経ています。 一般提供にリリースする前に、顧客フィードバックおよび検証の最終ラウンドを探しています。
 
-このトピックでは、プレビュー機能を有効にできる方法について説明し、プレビューで現在使用可能な機能を一覧表示します。 このリストは、一般提供にリリースされる機能およびプレビューにリリースされる新しい機能として更新されます。 プレビューに新しい機能がリリースされるときに、通知は表示されません。 ユーザーは、機能を確認し始めます。 Talent の新機能に関する詳細は、[Dynamics 365 for Talent の新機能と変更](./whats-new.md) および [Dynamics 365 と Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes) を参照してください。
+このトピックでは、プレビュー機能を有効にできる方法について説明し、プレビューで現在使用可能な機能を一覧表示します。 このリストは、一般提供にリリースされる機能およびプレビューにリリースされる新しい機能として更新されます。 プレビューに新しい機能がリリースされるときに、通知は表示されません。 ユーザーは、機能を確認し始めます。 Talent の新機能に関する詳細は、[Dynamics 365 Talent の新機能と変更](./whats-new.md) および [Dynamics 365 と Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes) を参照してください。
 
 ## <a name="enable-or-disable-preview-features"></a>プレビュー機能の有効化または無効化
 
@@ -40,9 +40,9 @@ Microsoft Dynamics 365 for Talent の人事管理サービス (HCM) 機能の継
 > [!IMPORTANT]
 > **プレビュー機能**設定をオンにして、その環境内の組織にいるすべてのユーザーに対してプレビュー機能を有効にします。 設定をオフにして、プレビュー機能を無効にし、ユーザーがアクセスできないようにします。 プレビュー機能は、Talent でサポートが制限されます。 プライバシーとセキュリティ対策の使用は少なく、Talent サービス レベル契約 (SLA) には含まれません。 個人のデータ (つまり、ユーザーを識別する任意の情報)、または法律上または規制順守要件の対象となるその他のデータを処理するプレビュー機能を使用しないでください。
 
-### <a name="attract"></a>人材の獲得
+### <a name="attract"></a>Attract
 
-1. Microsoft Dynamics 365 for Talent: Attract にサインインします。
+1. Microsoft Dynamics 365 Talent: Attract にサインインします。
 2. 右上隅の**設定**メニュー (ギヤ記号) で、**管理センター**を選択します。
 3. **機能管理**タブで**プレビュー機能**の横のオプションを選択すると、青色に変わり**オン**になります。
 
@@ -69,11 +69,11 @@ Microsoft Dynamics 365 for Talent の人事管理サービス (HCM) 機能の継
 
 ### <a name="onboard"></a>研修
 
-現在、Microsoft Dynamics 365 for Talent: Onboard で使用できるプレビュー機能はありません。
+現在、Microsoft Dynamics 365 Talent: Onboard で使用できるプレビュー機能はありません。
 
 ## <a name="features-that-are-currently-in-preview"></a>現在プレビューにある機能
 
-### <a name="attract"></a>人材の獲得
+### <a name="attract"></a>Attract
 
 - [推奨候補者](./intelligent-recommendations.md#candidate-recommendations) – 10 名以上の候補者が履歴書やプロファイルを持っている場合は,仕事の要件を最も満たす候補者がジョブ ページの**考慮する応募者**セクションに表示されます。
 - [推奨職務](./intelligent-recommendations.md#job-recommendations) – キャリアサイトに 10 以上のジョブが転記されている場合、Attract が推奨職務を提案します。

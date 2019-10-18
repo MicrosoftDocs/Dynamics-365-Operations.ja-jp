@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d908b9e58da06646e07ddc5fc4d937cc1f1849cd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 883337979201b3059b301b7aebf9952a70016989
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563600"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250625"
 ---
 # <a name="product-configuration-models-overview"></a>製品コンフィギュレーション モデルの概要
 
@@ -118,7 +118,7 @@ ms.locfileid: "1563600"
 </tr>
 </tbody>
 </table>
-システム定義のテーブル制約は、属性タイプと Finance and Operations テーブルのフィールドとの間のマッピングを表します。 システム定義のテーブル制約は、属性タイプとフィールドを動的にリンクさせます。 このリンクを使用すると、製品コンフィギュレーション モデルの属性が、フィールドのデータを [Finance and Operations] テーブルに反映させることができます。</td>
+システム定義のテーブル制約は、属性タイプと Finance and Operations テーブルのフィールドとの間のマッピングを表します。 システム定義のテーブル制約は、属性タイプとフィールドを動的にリンクさせます。 このリンクを使用すると、製品コンフィギュレーション モデルの属性が、フィールドのデータを Supply Chain Management テーブルに反映させることができます。</td>
 </tr>
 <tr class="odd">
 <td>計算</td>

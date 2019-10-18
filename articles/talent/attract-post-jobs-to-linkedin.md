@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent - Attract から LinkedIn への職務の転記
-description: このトピックでは、Dynamics 365 for Talent - Attract を使用して LinkedIn に職務を転記する方法について説明します。
+title: Microsoft Dynamics 365 Talent - Attract から LinkedIn への職務の投稿
+description: このトピックでは、Dynamics 365 Talent - Attract を使用して LinkedIn に職務を転記する方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: f2109f5e90321598eb2317140eef6bcd86ab82f5
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 014202ca49e5bd6204d450b2a43c7372ed84ff33
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756179"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008246"
 ---
 # <a name="post-jobs-to-linkedin"></a>LinkedIn への職務の投稿
 
 [!include [banner](../includes/banner.md)]
 
-LinkedIn は最大のオンライン プロフェッショナル ネットワークで、世界の最高の人材へのアクセスを提供します。 Microsoft Dynamics 365 for Talent: Attract では、Attract から LinkedIn に職務を直接転記できるため、必要な人材を獲得するのに役立ちます。
+LinkedIn は最大のオンライン プロフェッショナル ネットワークで、世界の最高の人材へのアクセスを提供します。 Microsoft Dynamics 365 Talent: Attract では、Attract から LinkedIn に職務を直接転記できるため、必要な人材を獲得するのに役立ちます。
 
 Attract を使用すると、追加料金なしで LinkedIn に制限付き一覧を転記できます。 これらの一覧は、Attract などの LinkedIn ソフトウェア パートナーを通じてのみ利用可能です。 会社の LinkedIn ページの**キャリア** パネルには有料の一覧しか表示されないため、この一覧は表示されません。 ただし、潜在的な候補者が使用可能なすべての職務を表示する際には表示されます。 制限付き一覧は、LinkedIn の職務検索でも表示されます。
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent - Attract における Broadbean 統合の有効化
-description: このトピックでは、Broadbean などの外部の職務ボードへジョブを転記するための Microsoft Dynamics 365 for Talent - Attract のコンフィギュレーション方法について説明します。
+title: Microsoft Dynamics 365 Talent - Attract における Broadbean 統合の有効化
+description: このトピックでは、Broadbean などの外部の職務ボードへジョブを転記するための Microsoft Dynamics 365 Talent - Attract のコンフィギュレーション方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 2334c2bd0edccf3000f8d91651afafd4619ad0b8
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 808f91fb4b68ba9b5cee54d86423d23232df23a4
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739682"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008596"
 ---
 # <a name="enable-broadbean-integration"></a>Broadbean との統合を有効にする
 
 [!include[banner](../includes/banner.md)]
 
-できるだけ多くの資格のある候補者の前で、空いている職位を獲得する必要があります。 Broadbean などの採用サイトは、この目標を達成するのに役立ちます。 Microsoft Dynamics 365 for Talent: Attract では Broadbean にジョブを転記し、Microsoft がこの領域で新製品を常に提供できるようにします。
+できるだけ多くの資格のある候補者の前で、空いている職位を獲得する必要があります。 Broadbean などの採用サイトは、この目標を達成するのに役立ちます。 Microsoft Dynamics 365 Talent: Attract では Broadbean にジョブを転記し、Microsoft がこの領域で新製品を常に提供できるようにします。
 
 > [!NOTE]
 > - 外部サイトへジョブを転記するには、[包括採用アドオン](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) が必要です。

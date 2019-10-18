@@ -1,6 +1,6 @@
 ---
 title: Attract でのセキュリティおよびロール管理
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract におけるデータ エンティティのセキュリティについて説明します。
+description: このトピックでは、Microsoft Dynamics 365 Talent - Attract におけるデータ エンティティのセキュリティについて説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 3f804b5f79b813cf504c3deb4a95e678c6fcbf87
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ad94a7511afef0c68fb8f2a70402babb80b0f9ad
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739843"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024205"
 ---
 # <a name="set-user-permissions"></a>ユーザーのアクセス許可の設定
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract はロールベース セキュリティを使用します。 つまり、個々のユーザーではなく、ユーザーが割り当てられているセキュリティ ロールに対してアクセスを許可します。 セキュリティ ロールに割り当てられているユーザーは、そのロールに関連付けられている一連の権限にアクセスできます。
+Microsoft Dynamics 365 Talent: Attract はロールベース セキュリティを使用します。 つまり、個々のユーザーではなく、ユーザーが割り当てられているセキュリティ ロールに対してアクセスを許可します。 セキュリティ ロールに割り当てられているユーザーは、そのロールに関連付けられている一連の権限にアクセスできます。
 
 Attract では 5 つの基本ユーザー ロールが提供されます。
 
@@ -52,7 +52,7 @@ Attract では 5 つの基本ユーザー ロールが提供されます。
 
 ## <a name="administrator"></a>管理者
 
-管理者ロールに割り当てられているユーザーは、Attract 内のすべてのデータへのアクセスおよび変更をすることができます。 管理者はデータの作成、読み取り、更新、および削除を行えます。 また、管理センターにアクセスし、Attract アプリケーションの構成およびユーザー情報の設定を行うこともできます。 少なくとも 1 人の個人を管理者ロールに割り当てることをお勧めします。 既定では、Microsoft PowerApps の環境管理者が Attract の管理者として設定されます。 Attract のトライアル バージョンにサインアップする場合、管理者ロールが自動的に自分に割り当てられます。 現在、職務を作成するには、管理者ロールを持つユーザーに採用担当者ロールまたは採用マネージャー ロールのいずれかが必要です。
+管理者ロールに割り当てられているユーザーは、Attract 内のすべてのデータへのアクセスおよび変更をすることができます。 管理者はデータの作成、読み取り、更新、および削除を行えます。 また、管理センターにアクセスし、Attract の構成およびユーザー情報の設定を行うこともできます。 少なくとも 1 人の個人を管理者ロールに割り当てることをお勧めします。 既定では、Microsoft PowerApps の環境管理者が Attract の管理者として設定されます。 Attract のトライアル バージョンにサインアップする場合、管理者ロールが自動的に自分に割り当てられます。 現在、職務を作成するには、管理者ロールを持つユーザーに採用担当者ロールまたは採用マネージャー ロールのいずれかが必要です。
 
 ## <a name="hiring-manager"></a>採用マネージャー
 

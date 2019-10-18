@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent - Onboard における研修用ガイドの更新
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Onboard で研修用ガイドを更新する方法、および既存のガイドの変更をプッシュする方法について説明します。
+title: Dynamics 365 Talent - Onboard における研修用ガイドの更新
+description: このトピックでは、Microsoft Dynamics 365 Talent - Onboard で研修用ガイドを更新する方法、および既存のガイドの変更をプッシュする方法について説明します。
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d2be450685724510db2f0fd2af8545f8f40278e7
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731544"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010732"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-for-talent-onboard"></a>Dynamics 365 for Talent:Onboard における研修用ガイドの更新
+# <a name="update-onboarding-guides"></a>研修用ガイドの更新
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard の研修用ガイドを変更する必要がある場合、ガイドを既に送信していても、変更の更新およびプッシュを行うことができます。 研修用ガイドを更新するには 2 つのオプションがあります。
+Microsoft Dynamics 365 Talent: Onboard の研修用ガイドを変更する必要がある場合、ガイドを既に送信していても、変更の更新およびプッシュを行うことができます。 研修用ガイドを更新するには 2 つのオプションがあります。
 
 - 研修用ガイドを直接編集し、変更を保存します。
 - 研修テンプレートを編集し、作成されたすべての研修ガイドへの変更をプッシュします。

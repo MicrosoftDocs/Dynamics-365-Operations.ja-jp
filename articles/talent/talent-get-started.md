@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 0993119de785d5e3826075778c018bdfa50071e2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518491"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024255"
 ---
 # <a name="get-started-with-talent"></a>Talent の使用を開始する
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent では、簡単にユーザー インターフェイスを変更したり、ニーズにもっと直観的に答えることのできるオプションを設定したりできます。 このトピックには、ユーザー インターフェイスを基本設定に変更する方法に関する情報を提供するトピックへのリンクが含まれます。 トピックには、効率的で正確なシステムで情報を検索する際に役立つ情報へのリンクも含まれます。 
+Microsoft Dynamics 365 Talent では、簡単にユーザー インターフェイスを変更したり、ニーズにもっと直観的に答えることのできるオプションを設定したりできます。 このトピックには、ユーザー インターフェイスを基本設定に変更する方法に関する情報を提供するトピックへのリンクが含まれます。 トピックには、効率的で正確なシステムで情報を検索する際に役立つ情報へのリンクも含まれます。 
 
 > [!NOTE] 
-> 次の製品は密接に関係しています: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 このため、主に Retail に関連するトピックの場合、製品名は Dynamics 365 for Retail になります。主に Talent に関連するトピックの場合、製品名は Dynamics 365 for Talent になります。さらにコア製品に関連するトピックの場合、製品名は Dynamics 365 for Finance and Operations になります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
+> 次の製品は密接に関係しています: Dynamics 365 Finance; Dynamics 365 Retail; および Dynamics 365 Talent。 3 つすべての製品で同じ機能が表示される可能性があります。 このため、主に Retail に関連するトピックの場合、製品名は Dynamics 365 Retail になります。主に Talent に関連するトピックの場合、製品名は Dynamics 365 Talent になります。さらにコア製品に関連するトピックの場合、製品名は Dynamics 365 Finance になります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
 
 ## <a name="personalizing-talent"></a>Talent をカスタマイズ 
-次のトピックでは、Dynamics 365 for Talent で適切なタイミングで作業しやすくする多くの機能を設定する方法を説明します。 
+次のトピックでは、Talent で適切なタイミングで作業しやすくする多くの機能を設定する方法を説明します。 
 
 -   [ユーザー エクスペリエンスのカスタマイズ](../fin-and-ops/get-started/personalize-user-experience.md) - このトピックでは、Talent をカスタマイズしたり、一部の製品をより基本設定に合致するように変更するさまざまな方法について説明しています。
 
@@ -51,7 +51,7 @@ Microsoft Dynamics 365 for Talent では、簡単にユーザー インターフ
 
 -   [[高度なフィルター処理とクエリ構文](../fin-and-ops/get-started/advanced-filtering-query-options.md)] - このトピックでは、フィルタ処理とクエリ オプションについて説明します。[フィルタ/並べ替えの編集] ダイアログで、"matches" (一致) 演算子を使うときに利用できます。
 
--   [ナビゲーション検索](../fin-and-ops/get-started/navigation-search.md)-このトピックでは、検索機能を使用して他のページに移動する方法を説明します。 Talent アプリケーションには、さまざまなタスクを実行するのに役立ついくつかの領域とページが含まれています。 ナビゲーション検索機能を使用し、タスクを完了するために必要なページをすばやく見つけることができます。 
+-   [ナビゲーション検索](../fin-and-ops/get-started/navigation-search.md)-このトピックでは、検索機能を使用して他のページに移動する方法を説明します。 Talent には、さまざまなタスクを実行するのに役立ついくつかの領域とページが含まれています。 ナビゲーション検索機能を使用し、タスクを完了するために必要なページをすばやく見つけることができます。 
 
 -   [アクション検索](../fin-and-ops/get-started/action-search.md) - このトピックでは、アクション検索機能について説明します。 アクション検索でページのアクションを検索して実行できます。 製品のページでは、ページの上部に表示される標準アクション ウィンドウおよびページのさまざまなセクションに表示されるツール バーの両方のアクション ウィンドウでコマンドが主として公開されます。
 
@@ -61,7 +61,7 @@ Microsoft Dynamics 365 for Talent では、簡単にユーザー インターフ
 リリースされた新機能と開発中の新機能については、「[Microsoft Dynamics 365 ロードマップ](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80)」を参照してください。
 
 ### <a name="blogs"></a>ブログ
-買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、「[Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent)」を参照してください。 
+買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、「[Dynamics 365 Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent)」を参照してください。 
 
 ### <a name="videos"></a>ビデオ
 「[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)」のハウツー ビデオをご覧ください。

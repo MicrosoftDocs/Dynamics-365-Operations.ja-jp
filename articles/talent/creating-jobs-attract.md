@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
-ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
+ms.openlocfilehash: 64871eb5f7175701cfe1c9fefcc04b9da488748b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773262"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008458"
 ---
 # <a name="create-a-job"></a>職務の作成
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Talent: Attract でのジョブ求人の要素について説明します。 ジョブ求人を作成する方法についても説明します。
+このトピックでは、Microsoft Dynamics 365 Talent: Attract: でのジョブ求人の要素について説明します。 ジョブ求人を作成する方法についても説明します。
 
 ## <a name="job-creation"></a>職務の作成
 
@@ -74,7 +74,7 @@ Attract には、既定の一連の**会社の業種**が含まれます。 フ�
 
 ## <a name="postings"></a>転記
 
-ジョブ求人が有効になった後に、転記できます。 採用担当者と管理者だけが、ジョブ求人を転記できます。 ジョブ求人は、Talent Careers (Microsoft Dynamics 365 for Talent キャリア サイト) または LinkedIn のいずれかに転記できます。 Attract チームは、継続的にジョブ ボード アグリゲーターと提携していきます。 このリストは時間の経過に伴い展開されます。 ジョブが内部のみに転記される場合、候補者はジョブを表示および申請するための AAD アカウントが必要です。 ジョブが一般公開される場合、候補者はすべての認証オプションを使い、ジョブを表示および申請が可能です。 
+ジョブ求人が有効になった後に、転記できます。 採用担当者と管理者だけが、ジョブ求人を転記できます。 ジョブ求人は、Talent Careers (Dynamics 365 Talent キャリア サイト) または LinkedIn のいずれかに転記できます。 Attract チームは、継続的にジョブ ボード アグリゲーターと提携していきます。 このリストは時間の経過に伴い展開されます。 ジョブが内部のみに転記される場合、候補者はジョブを表示および申請するための AAD アカウントが必要です。 ジョブが一般公開される場合、候補者はすべての認証オプションを使い、ジョブを表示および申請が可能です。 
 
 ジョブ求人の転記の詳細については、[Attractでキャリア サイト機能](career-site.md) を参照してください。
 

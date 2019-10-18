@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent - Attract のどのバージョン
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract の異なるバージョンでの機能について説明します。
+title: Microsoft Dynamics 365 Talent - Attract のどのバージョン
+description: このトピックでは、Microsoft Dynamics 365 Talent - Attract の異なるバージョンでの機能について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/04/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 59ab9f418c4d9039ca08a71de0dba0f96216aabb
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 59f3e78efa8801c81dccff2f45751b47fb30481f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739716"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009949"
 ---
 # <a name="which-version-of-attract"></a>Attract のどのバージョンですか。
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent バージョン: 権限のある Attract は組織のサイズと必要性に依存します。 Attract の基本バージョンでは、より小さなチームまたは採用マネージャーが主要なユーザーである組織を対象とした機能のサブセットを提供します。 1 つまたは複数のライセンスをもつ Attract の基本バージョンを使いはじめることができます。
+権限のある Microsoft Dynamics 365 Talent: Attract バージョンは組織のサイズと必要性に依存します。 Attract の基本バージョンでは、より小さなチームまたは採用マネージャーが主要なユーザーである組織を対象とした機能のサブセットを提供します。 1 つまたは複数のライセンスをもつ Attract の基本バージョンを使いはじめることができます。
 
 包括採用アドオンの Attract では、大規模なチームまたは採用担当者や人材スペシャリストが主要なユーザーである組織を中間に対象としています。 包括採用アドオンでは、[Microsoft Dynamics 365 パートナー](https://dynamics.microsoft.com/partners/find-a-partner/) を通じて購入したライセンスが必要です。
 

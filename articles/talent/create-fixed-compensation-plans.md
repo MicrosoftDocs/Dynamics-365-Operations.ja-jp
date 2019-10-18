@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 0a31ea7d1df33d3f42e95d5e1152f00687954b04
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3a6e7556705249296d4f5e5fb56f25b444f8f71a
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518422"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008154"
 ---
 # <a name="create-fixed-compensation-plans"></a>固定報酬計画の作成
 
@@ -31,7 +31,7 @@ ms.locfileid: "1518422"
 
 固定報酬は、従業員の通常の全体の給与や賃金を示します。 このトピックは、固定報酬プランを作成し、従業員を登録する前に設定する必要があるコンポーネントを説明します。
 
-固定報酬金額は、パフォーマンス、地域、昇給予算などの係数に基づいて、従業員に対して計算できます。 Microsoft Talent では、ステップ、等級、およびバンド報酬のタイプがサポートされます。
+固定報酬金額は、パフォーマンス、地域、昇給予算などの係数に基づいて、従業員に対して計算できます。 Dynamics 365 Talent では、ステップ、等級、およびバンド報酬のタイプがサポートされます。
 
 ## <a name="fixed-compensation-components"></a>固定報酬コンポーネント
 ### <a name="compensation-levels"></a>報酬レベル

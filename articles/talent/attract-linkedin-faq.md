@@ -1,6 +1,6 @@
 ---
 title: LinkedIn に関するよく寄せられる質問との Attract 統合
-description: このトピックは、LinkedIn と Microsoft Dynamics 365 for Talent - Attract 間の統合に関する質問に回答します。
+description: このトピックは、LinkedIn と Microsoft Microsoft Dynamics 365 Talent - Attract 間の統合に関する質問に回答します。
 author: hasrivas
 manager: AnnBe
 ms.date: 07/08/2019
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c49181fe7e9359fb9d7d43f479273080f90542f4
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: d66ebc01597f8038a38b46a9f1b70feaa5dc505e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756202"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008642"
 ---
 # <a name="linkedin-integration-faq"></a>LinkedIn の統合に関するよく寄せられる質問
 
 [!include [banner](includes/banner.md)]
 
-LinkedIn は、世界最大規模のオンライン プロフェッショナル ネットワークです。 Talent に関する Microsoft Dynamics: LinkedIn と Attract 統合を使用すると、世界の優秀な人材にアクセスできるようになります。 Attract では、ジョブを LinkedIn に直接転記したり、LinkedIn から Attract へ候補者情報を作成することもできます。
+LinkedIn は、世界最大規模のオンライン プロフェッショナル ネットワークです。 Microsoft Dynamics Talent: Attract と LinkedIn の統合により、世界の優秀な人材にアクセスできるようになります。 Attract では、ジョブを LinkedIn に直接転記したり、LinkedIn から Attract へ候補者情報を作成することもできます。
 
 ## <a name="for-recruiters-and-hiring-managers"></a>採用担当者および採用マネージャー向け
 

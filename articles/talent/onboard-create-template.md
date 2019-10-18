@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent - Onboard を使用した研修テンプレートの作成
-description: このトピックでは、Dynamics 365 for Talent - Onboard アプリを使用して新規採用者向けの研修用ガイドのテンプレートを作成する方法について説明します。 このタスクは、人事管理 (HCM) の採用から退職までの戦略における重要な第一歩です。
+title: Dynamics 365 Talent - Onboard を使用した研修テンプレートの作成
+description: このトピックでは、Dynamics 365 Talent - Onboard アプリを使用して新規採用者向けの研修用ガイドのテンプレートを作成する方法について説明します。 このタスクは、人事管理 (HCM) の採用から退職までの戦略における重要な第一歩です。
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c53c24b2913e3ca30cfc6491556b49d5d9230128
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 63f13380f3d2c31c4cc9009142f320ad8a41e8ee
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731545"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009880"
 ---
-# <a name="create-an-onboarding-template-by-using-dynamics-365-for-talent-onboard"></a>Dynamics 365 for Talent: Onboard を使用した研修テンプレートの作成
+# <a name="create-an-onboarding-template"></a>研修テンプレートの作成
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard には、できるだけ早く研修用ガイドを作成するのに役立つさまざまなテンプレートが用意されています。 これらのテンプレートを 1 つ以上使用することも、独自のテンプレートを作成することもできます。 Onboard には、独自のテンプレートを作成するときに使用できるサンプル テキストが用意されています。 そのため、ゼロから始めてもプロセスは簡単です。
+Microsoft Dynamics 365 Talent: Onboard には、できるだけ早く研修用ガイドを作成するのに役立つさまざまなテンプレートが用意されています。 これらのテンプレートを 1 つ以上使用することも、独自のテンプレートを作成することもできます。 Onboard には、独自のテンプレートを作成するときに使用できるサンプル テキストが用意されています。 そのため、ゼロから始めてもプロセスは簡単です。
 
 ## <a name="create-an-onboarding-template-from-an-existing-template"></a>既存のテンプレートからの採用テンプレートの作成
 

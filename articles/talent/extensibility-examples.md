@@ -1,13 +1,13 @@
 ---
 title: PowerApps と Microsoft Flow を使用した Talent の拡張 - シナリオ例
-description: このトピックでは、Microsoft PowerApps および Microsoft Flow を使用する Microsoft Dynamics 365 for Talent の拡張性シナリオのいくつかの例を説明します。
+description: このトピックでは、Microsoft PowerApps および Microsoft Flow を使用する Microsoft Dynamics 365 Talent の拡張性シナリオのいくつかの例を説明します。
 author: negudava
 manager: Annbe
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
+ms.technology: Dynamics 365 Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
-ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
+ms.openlocfilehash: 7bc3a18327f2d32770176eddcb7200681f0fb0da
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "1781445"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008062"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>PowerApps と Microsoft Flow を使用した Talent の拡張 - シナリオ例
 
-このトピックでは、Microsoft PowerApps および Microsoft Flow を使用する Microsoft Dynamics 365 for Talent の拡張性シナリオのいくつかの例を説明します。 各例に関連付けられているソリューション パッケージを PowerApps 環境にインポートすることができます。 次に、そのパッケージをガイダンスもしくは組織に適用できるシナリオを実装するための開始点として使用できます。
+このトピックでは、Microsoft PowerApps および Microsoft Flow を使用する Microsoft Dynamics 365 Talent の拡張性シナリオのいくつかの例を説明します。 各例に関連付けられているソリューション パッケージを PowerApps 環境にインポートすることができます。 次に、そのパッケージをガイダンスもしくは組織に適用できるシナリオを実装するための開始点として使用できます。
 
 > [!IMPORTANT]
 > このトピックで説明されているテンプレートおよびアプリを「そのまま」使用する場合は、それらをテストして、実装に固有のすべてのシナリオをカバーしていることを確認してください。
@@ -79,7 +79,7 @@ PowerApps を使用して作成されたアプリケーションは、Attract �
 
 このテンプレートを拡張して、採用プロセス全体を通して候補者ステージの変更を追跡し、採用チームと候補者に通知を送信することができます。
 
-一般に、Common Data Service に格納されているエンティティの場合、Core HR、Attract、または Dynamics 365 Talent: Onboard で発生したイベントに関する通知を送信するようにフローを設定できます。
+一般に、Common Data Service に格納されているエンティティの場合、Core HR、Attract、または Onboard で発生したイベントに関する通知を送信するようにフローを設定できます。
 
 **フロー – 電子メール通知**テンプレートをダウンロードするには、Microsoft ダウンロード センターの [フロー – 電子メール通知](https://go.microsoft.com/fwlink/?linkid=2082103) に移動します。
 
@@ -106,7 +106,7 @@ PowerApps を使用して作成されたアプリケーションは、Attract �
 
 このアプリは、参照を送信するための従業員セルフサービス (ESS) に埋め込むことも、社内ポータルでハイパーリンクとして使用してスタンドアロン アプリとして実行することもできます。
 
-**照会アプリ**をダウンロードするには、Microsoft ダウンロード センターの [Dynamics 365 for Talent拡張機能ソリューション : 照会アプリ](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d)に移動します。 このアプリをインポートしてカスタマイズし、機能を追加することができます。
+**照会アプリ**をダウンロードするには、Microsoft ダウンロード センターの [Dynamics 365 Talent拡張機能ソリューション : 照会アプリ](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d)に移動します。 このアプリをインポートしてカスタマイズし、機能を追加することができます。
 
 ## <a name="additional-resources"></a>追加リソース
 

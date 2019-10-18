@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent (2019 年 4 月 30 日) の新機能および変更された機能
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent (2019 年 4 月 30 日) の新機能および変更された機能
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/30/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 112146ac46193e37b33bf429dc5a359f8cfaca94
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 38158948dbcf8966edf49bcce5b1e5da7eddb8dc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505378"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026042"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-30-2019"></a>Dynamics 365 for Talent (2019 年 4 月 30 日) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-30-2019"></a>Dynamics 365 Talent (2019 年 4 月 30 日) の新機能および変更された機能
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 
@@ -100,4 +100,4 @@ ms.locfileid: "1505378"
 
 ### <a name="email-support-for-alerts"></a>アラートの電子メールサポート
 
-プラットフォーム更新プログラム 26 では、あるイベントによって通知がトリガーされた時、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。
+Finance and Operations のプラットフォーム更新プログラム 26 では、あるイベントによって通知がトリガーされた時、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。

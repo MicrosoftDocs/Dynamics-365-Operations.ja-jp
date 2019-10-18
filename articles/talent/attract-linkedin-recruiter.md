@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent - Attract の LinkedIn Recruiter を使用した候補者のソーシング
-description: Microsoft Dynamics 365 for Talent - Attract が提供する LinkedIn 統合を使用して、LinkedIn Recruiter から職務候補者をソース化します。
+title: Microsoft Dynamics 365 Talent - Attract の LinkedIn Recruiter を使用した候補者のソーシング
+description: Microsoft Dynamics 365 Talent - Attract が提供する LinkedIn 統合を使用して、LinkedIn Recruiter から職務候補者をソース化します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -19,17 +19,17 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 14aba16fa81a8f25d0f88247319254407d428b2a
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 366dc2be6e35098dba4b26a34bb75a84913549f5
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739452"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008573"
 ---
 # <a name="source-candidates-with-linkedin-recruiter"></a>LinkedIn Recruiter を使用した候補者のソーシング
 [!include[banner](../includes/banner.md)]
 
-LinkedIn は世界最大のオンライン プロフェッショナル ネットワークで、世界の最高の人材へのアクセスを提供します。 Microsoft Dynamics 365 for Talent: Attract では LinkedIn から直接候補者をソース化できます。 したがって、空いている職位を埋めるために必要な人材を見つけるのはこれまで以上に簡単です。 Attract を通じて LinkedIn との接続を設定した後、ワンクリックで職位の LinkedIn 候補者を表示し、Attract にエクスポートできます。
+LinkedIn は世界最大のオンライン プロフェッショナル ネットワークで、世界の最高の人材へのアクセスを提供します。 Microsoft Dynamics 365 Talent: Attract では LinkedIn から直接候補者をソース化できます。 したがって、空いている職位を埋めるために必要な人材を見つけるのはこれまで以上に簡単です。 Attract を通じて LinkedIn との接続を設定した後、ワンクリックで職位の LinkedIn 候補者を表示し、Attract にエクスポートできます。
 
 この機能がないようであれば、管理者にお問い合わせください。Attract から LinkedIn Recruiter を利用する前に、管理者は [LinkedIn との統合を設定](./attract-admin-linkedin.md) する必要があります。 その後、LinkedIn Recruiter との接続を設定し、候補者の検索を開始できます。
 

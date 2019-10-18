@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27f574be865ca5f7474e11c7aae1a110f66298c8
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 944d43279a6753b73b9dfe89429b2c9d6c80b5df
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865475"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250786"
 ---
 # <a name="inventory-management-overview"></a>在庫管理の概要
 
@@ -53,10 +53,8 @@ ms.locfileid: "1865475"
 ### <a name="inventory-accounting"></a>在庫会計 
 詳細については、[原価管理における在庫会計](../cost-management/inventory-close.md) を参照してください。
 
-### <a name="manufacturing-and-supply-chain-management-blogs"></a>製造およびサプライチェーン管理のブログ
+### <a name="manufacturing-and-supply-chain-management-blogs"></a>製造および Supply Chain Management のブログ
 [Dynamics AX Manufacturing R&D Team Blog (Dynamics AX 製造研究開発チーム ブログ)](https://blogs.msdn.microsoft.com/axmfg) および [Supply Chain Management in Dynamics AX R&D Team Blog (Dynamics AX のサプライ チェーン マネジメント研究開発チーム ブログ)](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、在庫管理やその他のソリューションに関する意見、ニュース、その他の情報を見つけることができます。
 
 ### <a name="task-guides"></a>タスク ガイド
-Finance and Operations には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、各ページの**ヘルプ**ボタンをクリックします。
-
-
+追加のヘルプは、タスク ガイドとして使用できます。 タスク ガイドにアクセスするには、ページの**ヘルプ** ボタンをクリックします

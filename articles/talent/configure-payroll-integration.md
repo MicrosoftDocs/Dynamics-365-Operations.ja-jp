@@ -1,6 +1,6 @@
 ---
 title: Talent と Dayforce 間での給与統合のコンフィギュレーション
-description: このトピックでは、Microsoft Dynamics 365 for Talent と Ceridian Dayforce 間での統合をコンフィギュレーションして、支払実行を処理する方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Talent と Ceridian Dayforce 間での統合をコンフィギュレーションして、支払実行を処理する方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/24/2019
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c26dfed9909b0dbd05fc18c206e5adc947feaef5
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: ec1d14cb14ab709dfc1bead4be0785904efcce4e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742918"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251042"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Talent と Dayforce 間の給与統合のコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent および Ceridian Dayforce 間での統合は、このトピックで説明するいくつかのコンフィギュレーション手順に依存します。 支払の実行を処理する前に、Talent および Dayforce の両方で、統合をコンフィギュレーションする必要があります。
+Microsoft Dynamics 365 Talent および Ceridian Dayforce 間での統合は、このトピックで説明するいくつかのコンフィギュレーション手順に依存します。 支払の実行を処理する前に、Talent および Dayforce の両方で、統合をコンフィギュレーションする必要があります。
 
 支払の実行を完了するため Dayforce などのサービスを使用する場合、Talent 内の統合を有効にする必要があります。 統合には Talent からの固有データが必要です。 したがって、Dayforce にマップされているデータが、統合をサポートする方法で Talent 内でコンフィギュレーションされていることを確認する必要があります。 統合は次の広範なデータ カテゴリを使用します。
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 for Talent および Ceridian Dayforce 間での統合は
 
 ## <a name="enable-the-integration"></a>統合の有効化
 
-Talent 内で統合を有効にし、Dayforce に接続するコンフィギュレーション情報を入力する必要があります。 生成される一般会計トランザクションを Microsoft Dynamics 365 for Finance and Operations にインポートしたい場合、Microsoft Azure ストレージ アカウントを設定し、Finance and Operations 内で、Azure Storage の接続文字列を入力する必要もあります。
+Talent 内で統合を有効にし、Dayforce に接続するコンフィギュレーション情報を入力する必要があります。 生成される一般会計トランザクションを Microsoft Dynamics 365 Finance にインポートしたい場合、Microsoft Azure ストレージ アカウントを設定し、Finance 内で、Azure Storage の接続文字列を入力する必要もあります。
 
 Talent 内で統合を有効にするには、次の手順に従います。
 

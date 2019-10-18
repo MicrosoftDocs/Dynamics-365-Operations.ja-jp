@@ -1,6 +1,6 @@
 ---
-title: ユーザーは Core HR にアクセスできるが、Onboard または Attract アプリにはアクセスできない
-description: このトピックでは、ユーザーが Microsoft Dynamics 365 for Talent Core HR にはアクセスできるが、Attract または Onboard アプリにはアクセスできない問題を解決する方法について説明します。
+title: ユーザーが Core HR にアクセスできるが、Onboard または Attract にアクセスできない
+description: このトピックでは、ユーザーが Microsoft Dynamics 365 Talent - Core HR にはアクセスできるが、Attract または Onboard にはアクセスできない問題を解決する方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6fc27a4c137fef2f8d204d90366c316389da08e6
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 80b1f8aeabfd033f393463f4be5a61447377f2d9
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741723"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009309"
 ---
-# <a name="user-can-access-core-hr-but-not-the-onboard-or-attract-app"></a>ユーザーが Core HR にアクセスできるが、Onboard または Attract アプリにアクセスできない
+# <a name="user-can-access-core-hr-but-not-onboard-or-attract"></a>ユーザーが Core HR にアクセスできるが、Onboard または Attract にアクセスできない
 
 [!include [banner](includes/banner.md)]
 
 **環境の詳細**
 
 - Microsoft Dynamics Lifecycle Services (LCS) の配置がユーザー A によって実行されました。
-- ユーザー A は、Microsoft Dynamics 365 for Talent Core HR にユーザーとしてユーザー B を追加します。
+- ユーザー A は、Microsoft Dynamics 365 Talent: Core HR にユーザーとしてユーザー B を追加します。
 
-**払出**
+**問題点**
 
 ユーザー B は、Core HR にアクセスできますが、Talent に: Attract または Talent に: Onboard アプリにアクセスできません。 ユーザーが**エクスペリエンス アプリ**に移動しようとすると、代わりに試用環境に移動してしまいます。
 

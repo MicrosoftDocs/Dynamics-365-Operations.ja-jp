@@ -1,6 +1,6 @@
 ---
-title: Sales から Finance and Operations への販売見積ヘッダーおよび明細行の直接同期
-description: このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations に販売見積ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
+title: 販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期
+description: このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に販売見積ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,33 +19,33 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 0894f4728d3f1df21db130cd9e87d9881726e7fa
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: ddc81aa7ff462304cb6e22c919221217f7a1e019
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743374"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251250"
 ---
-# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-finance-and-operations"></a>販売見積書のヘッダーおよび明細行の Sales から Finance and Operations への直接同期
+# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations に販売見積ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
+このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に販売見積ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
 > [!NOTE]
 > 見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
 
 ## <a name="data-flow-in-prospect-to-cash"></a>見込み客の現金化へのデータフロー
 
-見込み客の現金化ソリューションは、Finance and Operations と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートにより、Finance and Operations と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れが可能になります。 次の図は、Finance and Operations と Sales の間でデータを同期させる方法を示しています。
+見込み客の現金化ソリューションは、Supply Chain Management と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートにより、Supply Chain Management と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れが可能になります。 次の図は、Supply Chain Management と Sales の間でデータを同期させる方法を示しています。
 
 [![見込み客の現金化へのデータフロー](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>テンプレートおよびタスク
 
-Sales から Finance and Operations への販売見積ヘッダーと明細行の直接同期には、以下のテンプレートと基本的なタスクが使用されます。
+Sales から Supply Chain Management への販売見積ヘッダーと明細行の直接同期には、以下のテンプレートと基本的なタスクが使用されます。
 
-- **データ統合における テンプレートの名前** 販売見積 (Finance and Operations から Sales)- 直接
+- **データ統合における テンプレートの名前:** 販売見積 (Sales から Supply Chain Management)- 直接
 - **データ統合プロジェクトのタスク名:**
 
     - QuoteHeader
@@ -53,20 +53,20 @@ Sales から Finance and Operations への販売見積ヘッダーと明細行�
 
 販売見積ヘッダーと明細行を同期させるには、次の同期タスクが必要です。
 
-- 製品 (Finance and Operations から Sales) - 直接
-- 勘定 (Sales から Finance and Operations) - 直接(使用されている場合)
-- 顧客への連絡先 (Sales から Finance and Operations) - ダイレクト (使用されている場合)
+- 製品 (Supply Chain Management から Sales) - 直接
+- 勘定 (Sales から Supply Chain Management) - ダイレクト (使用する場合)
+- 顧客への連絡先 (Sales から Supply Chain Management) - ダイレクト (使用する場合)
 
 ## <a name="entity-set"></a>エンティティ セット
 
-| 売上        | Finance and Operations     |
+| 販売注文        | Finance and Operations     |
 |--------------|----------------------------|
 | 引用       | CDS 販売見積ヘッダー |
 | QuoteDetails | CDS 販売見積明細行  |
 
 ## <a name="entity-flow"></a>エンティティのフロー
 
-販売見積が Sales で作成され Finance and Operations に同期されます。
+販売見積が Sales で作成され、Supply Chain Management に同期されます。
 
 Sales からの販売見積は、次の条件が満たされた場合にのみに同期されます。
 
@@ -75,13 +75,13 @@ Sales からの販売見積は、次の条件が満たされた場合にのみ�
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション
 
-**外部で管理された製品のみ**フィールドが**見積**エンティティに追加され、販売見積が完全に外部管理製品から構成されているかどうか一貫して追跡されます。 販売見積に外部で管理された製品のみがある場合、製品は Finance and Operations で管理されます。 この動作は、Finance and Operations で不明な製品を含む販売見積明細行を同期させないことを保証するのに役立ちます。
+**外部で管理された製品のみ**フィールドが**見積**エンティティに追加され、販売見積が完全に外部管理製品から構成されているかどうか一貫して追跡されます。 販売見積に外部で管理された製品のみがある場合、製品は Supply Chain Management で管理されます。 この動作は、Supply Chain Management で不明な製品を含む販売見積明細行を同期させないことを保証するのに役立ちます。
 
 販売見積書のすべての見積製品は、販売見積書ヘッダーからの**外部で管理される製品のみ**情報で更新されます。 この情報は、**QuoteDetails**エンティティの**外部で管理される製品のみの見積**フィールドに記載されています。
 
-割引は、見積製品に追加することができ、Finance and Operations と同期されます。 **割引**、**請求**、および **税** フィールドは、ヘッダーで Finance and Operations の設定によって制御されます。 今現在、この設定では、統合マッピングはサポートされていません。 現在の設計では、**価格**、**割引**、**請求金額**、および **税** の各フィールドは、Finance and Operations によって維持され、処理されます。
+割引は、見積製品に追加することができ、Supply Chain Management と同期されます。 **割引**、**請求**、および **税** フィールドは、ヘッダーで Supply Chain Management の設定によって制御されます。 今現在、この設定では、統合マッピングはサポートされていません。 現在の設計では、**価格**、**割引**、**請求金額**、および **税** の各フィールドは、FSupply Chain Management によって維持され、処理されます。
 
-Sales では、値が Finance and Operations に同期されていないため、このソリューションでは次のフィールドを読み取り専用にします。
+Sales では、値が Supply Chain Management に同期されていないため、このソリューションでは次のフィールドを読み取り専用にします。
 
 - 販売見積ヘッダーの読み取り専用フィールド: **割引率**、**割引**、**貨物量**
 - 見積製品の読み取り専用フィールド: **税**
@@ -111,20 +111,20 @@ Sales では、値が Finance and Operations に同期されていないため�
 
 #### <a name="quoteline"></a>QuoteLine
 
-- Finance and Operations の**SalesUnitSymbol**に必要な値マップが存在することを確認して下さい。
+- Supply Chain Management の **SalesUnitSymbol** に必要な値マップが存在することを確認して下さい。
 - Sales に必要な単位が定義されていることを確認します。
 
     値マップを持つテンプレート値が**oumid.name**から**SalesUnitSymbol**まで定義されています。
 
-- オプション： 次のマッピングを追加して、顧客または製品からの既定の情報がない場合、販売見積明細行を Finance and Operations にインポートすることができます。
+- オプション： 次のマッピングを追加して、顧客または製品からの既定の情報がない場合、販売見積明細行を Supply Chain Management にインポートすることができます。
 
-    - **SiteId** – Finance and Operations で見積書および販売注文を生成するにはサイトが必要です。 **SiteId** に対する既定のテンプレート値はありません。
-    - **WarehouseId** – Finance and Operations で見積書および販売注文を処理するには倉庫が必要です。 **WarehouseId** に対する既定のテンプレート値はありません。
+    - **SiteId** – Supply Chain Management で見積書および販売注文を生成するにはサイトが必要です。 **SiteId** に対する既定のテンプレート値はありません。
+    - **WarehouseId** – Supply Chain Management で見積書および販売注文を処理するには倉庫が必要です。 **WarehouseId** に対する既定のテンプレート値はありません。
 
 ## <a name="template-mapping-in-data-integrator"></a>データ インテグレーターでテンプレートのマッピング
 
 > [!NOTE]
-> - **割引**、**請求**、および **税** フィールドは、Finance and Operations の複雑な設定によって制御されます。 今現在、この設定では、統合マッピングはサポートされていません。 現在の設計では、**価格**、**割引**、**請求金額**、および **税** の各フィールドは、Finance and Operations によって処理されます。
+> - **割引**、**請求**、および **税** フィールドは、Supply Chain Management 内の複雑な設定によって制御されています。 今現在、この設定では、統合マッピングはサポートされていません。 現在の設計では、**価格**、**割引**、**請求金額**、および **税** の各フィールドは、Supply Chain Management によって処理されます。
 > - **支払条件**、**運賃条件**、**配送条件**、**送付方法**、および **配送モード** フィールドは、既定のマッピングの一部ではありません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
 
 次の図は、データ インテグレーターのテンプレート マッピングの例を示しています。

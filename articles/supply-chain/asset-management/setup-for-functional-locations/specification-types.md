@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b3247f693f5934b3fbf83b7b831c7ed221514cb
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 067d1085d9afa04cb76b78393a8a8b9834ce4d8c
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783398"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250947"
 ---
 # <a name="maintenance-attribute-types"></a>属性タイプの管理
 
@@ -42,10 +42,10 @@ ms.locfileid: "1783398"
 
 ## <a name="create-attribute-types"></a>属性タイプの作成
 
-独自の属性タイプを作成できます。 また、Microsoft Dynamics 365 for Finance and Operations から**属性タイプ** ページに製品分析コードを転送できます。
+独自の属性タイプを作成できます。 また、**属性タイプ** ページに製品分析コードを転送できます。
 
 1. **資産管理** \> **設定** \> **属性タイプ**選択します。
-2. 属性タイプを初めて設定する場合は、**製品分析コードの作成**を選択し、標準の Finance and Operations 製品分析コードを自動的に転送します。
+2. 属性タイプを初めて設定する場合は、**製品分析コードの作成**を選択し、標準の製品分析コードを自動的に転送します。
 3. **新規作成**を選択して、新しい属性タイプを作成します。
 4. **属性タイプ** フィールドに、属性タイプの名前を入力します。
 5. **説明**フィールドに説明を入力します。

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent の新機能または変更された機能 (2019 年 7 月 9 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent の新機能または変更された機能 (2019 年 7 月 9 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 07/09/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e5bb02a7128cb920a79a5f04ac910be205aeed41
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: b3eb53943546166eee845749a070ed2fca1a03b8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856380"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023956"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-9-2019"></a>Dynamics 365 for Talent の新機能または変更された機能 (2019 年 7 月 9 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 7 月 9 日)
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 
@@ -48,9 +48,9 @@ ms.locfileid: "1856380"
 
 このセクションに記載された変更は、ビルド番号 8.1.2374 に適用されます。
 
-### <a name="platform-update-28"></a>プラットフォーム update 28
+### <a name="platform-update-28-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 28
 
-プラットフォーム更新プログラム 28 に関する詳細については [Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 28 (2019 年 7 月) のプレビュー機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28) を参照してください。
+Finance and Operations のプラットフォーム更新プロフラム 28 の詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プロフラム 28 (2019 年 7 月) のプレビュー機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28) を参照してください。
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Common Data Service のカスタム フィールドに対するエンティティのサポート 
 

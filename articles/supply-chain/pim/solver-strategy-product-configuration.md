@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4a548d3536bbc0056ee22c07c464af062029da81
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560304"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250579"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>製品コンフィギュレーションのソルバー戦略
 
@@ -45,7 +45,7 @@ ms.locfileid: "1560304"
 
 製品コンフィギュレーション モデルは、[制約充足問題 (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf) として作成できます。 Microsoft Solver Foundation (MSF) では、製品コンフィギュレーション モデルから使用できる CSPs を解決するために、ソルバー戦略の 2 つのタイプを提供します。 これらのソルバー戦略は、[ヒューリスティック](https://techterms.com/definition/heuristic) に依存しています。これらは、問題が解決されたときに CSPs の変数が考慮される順序を決定するために使用されます。 ヒューリスティックは、問題または問題のクラスが解決されているときに、パフォーマンスに大きな影響を与える可能性があります。
 
-Finance and Operations において、製品コンフィギュレーション モデルのソルバー戦略は、どのソルバーがヒューリスティックで使用されているかを決定します。 **既定の**、**最小ドメインを先頭にする**、および **トップダウン** の戦略は MSF から 2 つのソルバーを使用します。一方、**Z3** 戦略は Z3 ソルバーを使用します。 
+製品コンフィギュレーション モデルのソルバー戦略は、どのソルバーがヒューリスティックで使用されているかを決定します。 **既定の**、**最小ドメインを先頭にする**、および **トップダウン** の戦略は MSF から 2 つのソルバーを使用します。一方、**Z3** 戦略は Z3 ソルバーを使用します。 
 
 実際の顧客実装調査によると、製品コンフィギュレーション モデルのソルバー戦略の変更が、応答時間を数分から数ミリ秒に短縮することが可能だと示しています。 したがって、製品コンフィギュレーション モデルの最も効率的な戦略を見つけるため、さまざまなソルバー戦略に挑戦する価値はあります。
 

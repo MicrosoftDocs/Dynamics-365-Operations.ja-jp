@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent の新機能および変更された機能 (2019 年 3 月 14 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent の新機能および変更された機能 (2019 年 3 月 14 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/14/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ee8e076174acba8e706991f3086d6299a10945ec
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 5c3beef9ef4e73eaf76f861735bb154fa630703f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742496"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023910"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-14-2019"></a>Dynamics 365 for Talent の新機能および変更された機能 (2019 年 3 月 14 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-14-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 3 月 14 日)
 
 [!include [banner](includes/banner.md)]
 
@@ -46,8 +46,8 @@ ms.locfileid: "1742496"
 ### <a name="mass-assign-checklists-to-workers"></a>作業員へのチェックリストを一括割り当てしてください。
 この変更により、複数の従業員を選択し、それらの従業員に複数のチェックリストを一括割り当てできるようになりました。 
 
-### <a name="platform-update-24"></a>プラットフォーム update 24
-プラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。 プラットフォーム 24 の大幅な変更は次のとおりです。 
+### <a name="platform-update-24-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 24
+Finance and Operations のプラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。 プラットフォーム 24 の大幅な変更は次のとおりです。 
 
 - 人材では、警告が有効になります。
 - Office ヘッダーに対応するようになった更新済みのナビゲーション バー。
@@ -67,7 +67,7 @@ Common Data Service エンティティは、Common Data Service を使用して�
 多くの組織では、報酬および福利厚生の管理者は特定の報酬レコードにのみアクセスできます。 これらは、経営幹部または地域の従業員向けのものである可能性があります。 この変更により、HR は組織内のさまざまな従業員グループの報酬プランを管理および維持できます。 固定および変動プランにはセキュリティ ロールを割り当てることができます。これは、プランへのアクセス権とプランに関連する従業員データ (給与または特別償却レコードなど) を決定します。 アクセス権を持つロールのみが、それらの従業員の報酬を処理できます。
 
 ###  <a name="email-support-for-alerts"></a>アラートの電子メールサポート
-プラットフォーム更新プログラム 24 を使用すると、あるイベントによってトリガーされたときに、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。
+Finance and Operations のプラットフォーム更新プログラム 24 では、あるイベントによってトリガーされた時、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。
 
 ### <a name="duplicate-employee-check-interface-changes"></a>重複する従業員チェック: インターフェイスの変更
 この変更により、名前のフィールドを入力すると重複が検出され、見つかった数がステータスに表示されるようになります。 提供されたリンクを選択して新しいページを開き、検出された一致を使用するかどうかを評価できます。 データ入力の中断を回避するため、重複フォームは自動的に開きません。

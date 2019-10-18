@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent - Attract の分析レポートを使用
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract でのプロセス インサイトの採用に関する分析レポートについて説明します。
+title: Microsoft Dynamics 365 Talent - Attract の分析レポートを使用
+description: このトピックでは、Microsoft Dynamics 365 Talent - Attract でのプロセス インサイトの採用に関する分析レポートについて説明します。
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: be62fe9a5021cfa83a465d316b182c0a154c0c50
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742891"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010015"
 ---
 # <a name="use-analytic-reports"></a>分析レポートの使用
 
-Attract の分析レポートは、プロセス インサイトを採用するためにそのまま使用できる (OOTB) ソリューションを提供します。 利用可能な機能は次のとおりです。
+Microsoft Dynamics 365 Talent: Attract の分析レポートは、プロセス インサイトを採用するためにそのまま使用できる (OOTB) ソリューションを提供します。 利用可能な機能は次のとおりです。
 
 - **職務分析 :** 職務申請者に関するメトリックスについては、職務内の**分析**タブをクリックします。
 - **分析ハブ :** 職務間で集計されたメトリックスについては、左側のナビゲーションで**分析**をクリックしてください。

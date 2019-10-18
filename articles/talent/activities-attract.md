@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent - Attract におけるプロセスの活動
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract における採用プロセスで使用可能なさまざまなタイプの活動に関する情報を提供します。
+title: Microsoft Dynamics 365 Talent - Attract におけるプロセスの活動
+description: このトピックでは、Microsoft Dynamics 365 Talent - Attract における採用プロセスで使用可能なさまざまなタイプの活動に関する情報を提供します。
 author: hasrivas
 manager: AnnBe
 ms.date: 05/28/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 2e40250bb801f6222d16400b2698e5b0df47a404
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739721"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008688"
 ---
 # <a name="activities-in-hiring-processes"></a>採用プロセスの活動
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract の採用プロセスの一部として活動を追加することができます。 活動はプロセス テンプレートに追加することも、ジョブ内の採用プロセスに直接追加することもできます。 ジョブが定義されると、プロセス テンプレートが選択され、テンプレートに含まれている活動がジョブに適用されます。 テンプレートが選択されていない場合は、既定のテンプレートが使用されます。 採用プロセスは、テンプレートが適用された後にジョブに変更することもできます。
+Microsoft Dynamics 365 Talent: Attract の採用プロセスの一部として活動を追加することができます。 活動はプロセス テンプレートに追加することも、ジョブ内の採用プロセスに直接追加することもできます。 ジョブが定義されると、プロセス テンプレートが選択され、テンプレートに含まれている活動がジョブに適用されます。 テンプレートが選択されていない場合は、既定のテンプレートが使用されます。 採用プロセスは、テンプレートが適用された後にジョブに変更することもできます。
 
 > [!NOTE] 
 > プロセス テンプレートは、包括採用アドオンで利用できます。 詳細については、[Attract の包括採用アドオン機能](./attract-comprehensive-hiring.md) を参照してください。
@@ -51,7 +51,7 @@ Microsoft Dynamics 365 for Talent: Attract の採用プロセスの一部とし�
 
 ## <a name="powerapps-activity"></a>PowerApps 活動
 
-PowerApps 活動では、Microsoft PowerApps アプリを採用プロセスに埋め込むことができます。 アプリは、すべての申請者、内部申請者、外部申請者、または申請者には必要ありません。 アプリが必要とマークされている場合、ステージを進める前に完了する必要があります。 完了とみなされると、**JobApplicationStatus** フィールドは**完了**に設定する必要があります。 このフィールドは JobApplicationActivity エンティティに位置するので、PowerApps アプリは、ステージを進めることが出来る前に、フィールドを更新する必要があります。 アプリが必要とマークされていない場合、活動はオプションのステップであり、アプリが完了していなくてもステージを進めることができます。
+PowerApps 活動では、Microsoft PowerApps アプリを採用プロセスに埋め込むことができます。 アプリは、すべての申請者、内部申請者、外部申請者、または申請者には必要ありません。 アプリが必要とマークされている場合、ステージを進める前に完了する必要があります。 完了とみなされると、**JobApplicationStatus** フィールドは**完了**に設定する必要があります。 このフィールドは JobApplicationActivity エンティティに位置するので、PowerApps アプリは、ステージを進める前に、フィールドを更新する必要があります。 アプリが必要とマークされていない場合、活動はオプションのステップであり、アプリが完了していなくてもステージを進めることができます。
 
 PowerApps 活動を採用プロセスに保存するには、PowerApps ID を入力する必要があります。 PowerApps ID を検索するには [PowerApps](https://web.powerapps.com) に移動して、**アプリ**を選択し、**詳細**を選択します。
 

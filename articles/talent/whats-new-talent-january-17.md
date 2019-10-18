@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2019 年 1 月 17 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent - Core HR (2019 年 1 月 17 日) の新機能および変更された機能
+description: このトピックでは、Microsoft Dynamics 365 Talent - Core HR の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 01/18/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-17
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d2c09bfb1ca96183541c937a3b641064fe82f8c6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 724093f13298d44160e3713e7fbc3bc71da75e33
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518431"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010363"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-january-17-2019"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2019 年 1 月 17 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-january-17-2019"></a>Dynamics 365 Talent: Core HR (2019 年 1 月 17 日) の新機能および変更された機能
 
 [!include [banner](includes/banner.md)]
 

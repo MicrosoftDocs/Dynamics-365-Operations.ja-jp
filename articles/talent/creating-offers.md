@@ -1,6 +1,6 @@
 ---
 title: オファーの作成、承認、および署名
-description: このトピックでは、Dynamics 365 for Talent を使用して候補者へのオファーを作成、承認、および署名する方法について説明します。
+description: このトピックでは、Dynamics 365 Talent を使用して候補者へのオファーを作成、承認、および署名する方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8c5f95f1d3be22a73cc42cb3667b793490f2a136
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: b9ccd22e218137637cc0bbde0d4ad19a28591731
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739636"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008108"
 ---
 # <a name="create-approve-and-sign-offers"></a>オファーの作成、承認、および署名
 
@@ -110,7 +110,7 @@ Attract 管理者により設定されたテンプレートを使用して、オ
 Adobe Sign が電子署名の優先メソッドとして選択されている場合は、オファー作成者は、この段階で Adobe Sign ライセンスに接続する必要があります。 
 
 ### <a name="docusign"></a>DocuSign
-DocuSign が電子署名の優先メソッドとして選択されている場合は、オファー作成者は、DocuSign ライセンスに接続する必要があります。 サインインすると、ユーザーの DocuSign プロファイルに関連付けられている既定のアカウントおよびアクセス許可が Talent Attract に接続されます。 
+DocuSign が電子署名の優先メソッドとして選択されている場合は、オファー作成者は、DocuSign ライセンスに接続する必要があります。 サインインすると、ユーザーの DocuSign プロファイルに関連付けられている既定のアカウントおよびアクセス許可が Talent: Attract に接続されます。 
 
 -  必要に応じて、電子メール テンプレートを表示および編集できます。
 

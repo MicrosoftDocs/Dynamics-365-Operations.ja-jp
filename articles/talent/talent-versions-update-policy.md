@@ -1,6 +1,6 @@
 ---
 title: Talent システム要件と更新ポリシー
-description: このトピックは、Dynamics 365 for Talent の要件を一覧表示します。 同様に、その更新ポリシーについても説明します。
+description: このトピックは、Dynamics 365 Talent の要件を一覧表示します。 同様に、その更新ポリシーについても説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/02/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6c881bf25e7145228ccf7ef73a7ef3637c115a49
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741778"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024163"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Talent システム要件と更新ポリシー
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Attract、Onboard、および Core HR を含め、Microsoft Dynamics 365 for Talent の要件について説明します。 また、Talent が利用可能な国および地域、Talent データの言語とローカライズの概要について説明します。 さらに、このトピックでは Talent の更新ポリシーについて説明します。
+このトピックでは、Attract、Onboard、および Core HR を含め、Microsoft Dynamics 365 Talent の要件について説明します。 また、Talent が利用可能な国および地域、Talent データの言語とローカライズの概要について説明します。 さらに、このトピックでは Talent の更新ポリシーについて説明します。
 
 ## <a name="supported-web-browsers"></a>サポートされている Web ブラウザー
 
-Microsoft Dynamics 365 for Talent Web アプリケーションは、指定されたオペレーティング システムで実行される次のすべての Web ブラウザで実行できます。 
+Microsoft Dynamics 365 Talent は、指定されたオペレーティング システムで実行される次のすべての Web ブラウザで実行できます。 
 
 *   Windows 10 の Microsoft Edge (公開されている最新のバージョン)
 *   Windows 10、Windows 8.1、または Windows 7 の Internet Explorer 11
@@ -46,11 +46,11 @@ Microsoft Dynamics 365 for Talent Web アプリケーションは、指定され
 > * ワークフロー エディターは ClickOnce アプリケーションとして起動されます。 Microsoft Edge と Internet Explorer (Microsoft Windows のサポートされているバージョン) のみが、ClickOnce アプリケーションをサポートします。 ワークフロー エディタ ClickOnce アプリケーションには、64 ビットの互換性のあるオペレーティング システムが必要です。
 > * PDF ファイルをプレビューするには、Windows 10 の Microsoft Edge (公開されている最新のバージョン)、もしくは Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン) などの最新のブラウザを使用することをお勧めします。
 >   ネットワーク要件
-> * Dynamics 365 for Talent は、待機時間が 250 ～ 300 ミリ秒 (ms) 以下のネットワーク用に設計されています。 これは、ブラウザー クライアントから Dynamics 365 for Talent をホストする Microsoft Azure データ センターまでの待機時間のことです。 [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test") でネットワーク待機時間をテストすることをお勧めします。
-> * Dynamics 365 for Talent に対する帯域幅の要件は、シナリオによって異なります。 最も一般的なシナリオでは、毎秒 50 キロバイト (KBps) 以上の帯域幅が必要です。
+> * Dynamics 365 Talent は、待機時間が 250 ～ 300 ミリ秒 (ms) 以下のネットワーク用に設計されています。 これは、ブラウザー クライアントから Talent をホストする Microsoft Azure データ センターまでの待機時間のことです。 [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test") でネットワーク待機時間をテストすることをお勧めします。
+> * Talent に対する帯域幅の要件は、シナリオによって異なります。 最も一般的なシナリオでは、毎秒 50 キロバイト (KBps) 以上の帯域幅が必要です。
 > 
 > [!WARNING]
-> ユーザー数に帯域幅要件の最小値を掛けてクライアントの場所からの帯域幅要件を計算しないでください。 特定の場所の同時使用は非常に計算が困難です。 帯域幅の要件について懸念する顧客には、Dynamics 365 for Talent のトライアル バージョンを使用します。
+> ユーザー数に帯域幅要件の最小値を掛けてクライアントの場所からの帯域幅要件を計算しないでください。 特定の場所の同時使用は非常に計算が困難です。 帯域幅の要件について懸念する顧客には、Talent のトライアル バージョンを使用します。
 
 ## <a name="supported-microsoft-office-applications"></a>サポートされる Microsoft Office アプリケーション
 
@@ -68,6 +68,6 @@ Talent がサポートする国、地域、および言語に関する PDF フ�
 
 ## <a name="update-policy"></a>更新ポリシー
 
-Microsoft Dynamics 365 for Talent はクラウドの提供としてサービスされます。 Dynamics 365 for Talent の更新は、Microsoft によって連続的かつ自動的に適用されます。
+Talent はクラウドの提供としてサービスされます。 Talent の更新は、Microsoft によって連続的かつ自動的に適用されます。
 
-更新プログラムは一定の調子でリリースされ、すべての環境で行われます。 Dynamics 365 for Talent は、[Microsoft Support Lifecycle ポリシー](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle") に従ってサポートされています。ここでは、製品サポートの使用可能性における一貫した予測可能なガイドラインを提供します。
+更新プログラムは一定の調子でリリースされ、すべての環境で行われます。 Talent は、[Microsoft Support Lifecycle ポリシー](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle") に従ってサポートされています。ここでは、製品サポートの使用可能性における一貫した予測可能なガイドラインを提供します。

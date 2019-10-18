@@ -1,6 +1,6 @@
 ---
-title: Attract から外部キャリア サイトにジョブを転記
-description: このトピックでは、外部採用サイトにジョブを転記するための Dynamics 365 for Talent - Attract の使用方法について説明します。
+title: Attract から外部キャリア サイトへの求人の投稿
+description: このトピックでは、外部採用サイトにジョブを転記するための Dynamics 365 Talent - Attract の使用方法について説明します。
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 936ff85a4dabb715cb83b875a5c58c9fb7a0ac26
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 919cec773d5e57e8f5429e31872db7ed658e969b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739820"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008085"
 ---
 # <a name="post-jobs-to-broadbean"></a>Broadbean への職務の投稿
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract は、Attract から Broadbean にジョブを直接転記させることにより、必要な人材を獲得するのに役立ちます。 [ジョブを作成](./creating-jobs-attract.md) した後、Broadbean 上で可能性のあるすべてのジョブ候補の前にジョブを配置するには、ボタンをクリックするのみです。
+Microsoft Dynamics 365 Talent: Attract は、Attract から Broadbean にジョブを直接転記させることにより、必要な人材を獲得するのに役立ちます。 [ジョブを作成](./creating-jobs-attract.md) した後、Broadbean 上で可能性のあるすべてのジョブ候補の前にジョブを配置するには、ボタンをクリックするのみです。
 
 Broadbean にジョブを転記するには、適切な Broadbean のライセンスが必要です。 Broadbean はさまざまな製品やプランを提供しています。 Broadbean ライセンスと価格に関する詳細情報については、[Broadbean にお問い合わせください](https://www.broadbean.com/contact-us/)。
 
