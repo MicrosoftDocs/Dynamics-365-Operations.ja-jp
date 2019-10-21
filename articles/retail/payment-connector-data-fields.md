@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
-ms.openlocfilehash: d3227a96be078ff8b289f616d91279d7afa38dbc
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 1f37c9761bc35478781a277c6cc616a91da0ca9f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577993"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018027"
 ---
 # <a name="dynamics-365-payment-data-use"></a>Dynamics 365 支払データの使用
 
@@ -55,7 +55,7 @@ ms.locfileid: "1577993"
 
 | フィールド | 説明 |
 |---|---|
-| merchantInformation | Microsoft Dynamics 365 for Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
+| merchantInformation | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
 | invoiceNumber | POS が販売トランザクションを追跡するために生成する一意の請求書番号。 |
 
 #### <a name="updatelineitemspaymentterminaldevicerequest"></a>UpdateLineItemsPaymentTerminalDeviceRequest

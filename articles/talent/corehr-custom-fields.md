@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: jcart
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b84746f4ba83b6ee732fb85efeba18fe26bb78a2
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 15ccd553135338c5104d066bc6e93f3f328537ef
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741729"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008443"
 ---
 # <a name="custom-fields-in-core-hr"></a>Core HR のカスタム フィールド
 
 [!include [banner](includes/banner.md)]
 
-ユーザー設定フィールドを Dynamics 365 for Talent : Core HR 内のページに追加することが可能です。 ページ内にカスタム フィールドを作成する方法の詳細については、「 [ブログ記事のカスタム フィールドの操作](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)」を参照してください。
+ユーザー設定フィールドを Dynamics 365 Talent: Core HR 内のページに追加することが可能です。 ページ内にカスタム フィールドを作成する方法の詳細については、「 [ブログ記事のカスタム フィールドの操作](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)」を参照してください。
 
 Common Data Service の次のエンティティは、Core HRで作成したユーザー設定のフィールドに対応しています。
 

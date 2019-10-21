@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d03017df1f9300fbd7af1b52dfd913f9315d10b5
-ms.sourcegitcommit: a2e562d2871623dbc584d4fc747ee138bd1f674d
+ms.openlocfilehash: 3468ff9da06603836631a540b96522636a9e0da0
+ms.sourcegitcommit: c457251855e9a05c530e37959f942fbb077a5f51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "1870129"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "2237357"
 ---
 # <a name="retail-for-it-pros-and-developers"></a>IT 専門家と開発者に向けた Retail の情報
 
@@ -30,10 +30,8 @@ ms.locfileid: "1870129"
 
 このページには、IT プロと Retail をサポートする開発者が利用できるリソースが一覧表示されています。
 
-Retail は、Finance and Operations に依存しています。 中核となる[配置と開発コンテンツ](../../dev-itpro/index.md)を把握しておくことをお勧めします。
-
 ## <a name="retail-components-and-architecture"></a>小売コンポーネントとアーキテクチャ
--   [Dynamics 365 for Retail のコンポーネント](../retail-components.md)
+-   [Dynamics 365 Retail のコンポーネント](../retail-components.md)
 -   [MPOS アーキテクチャ](retail-modern-pos-architecture.md)
 -   [レポート サーバーのアーキテクチャ](retail-server-architecture.md)
 -   [小売オンライン ストア発行アーキテクチャ](retail-online-store-publishing-architecture.md)
@@ -78,11 +76,12 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 - [Retail Modern POS 非画面デザイナー ベース ビューへのカスタム コントロールの追加](pos-control-non-screen.md)
 - [POS および E コマース用 Retail プロキシの生成](pos-generate-retail-proxy.md)
 - [クラウド ホストのデベロップメント ボックスで作業している Retail 開発者向けのコンフィギュレーション手順](cloud-dev-box.md)
+- [Retail Cloud POS 用のレコーダーおよRegression Suite Automation Tool のテスト](pos-rsat.md)
 
 ## <a name="integrating-retail"></a>Retail の統合
 -   [小売エクスペリエンス アプリの作成](create-retail-experience-app.md)
 
-## <a name="retail-server"></a>Retail サーバー
+## <a name="retail-server"></a>Retail server
 -   [Retail Server OData コントローラーの拡張](extend-retail-server-odata-controller.md)
 -   [メタデータの拡張](extend-metadata.md)
 -   [Web API および OData コントローラー](odata-controllers-api.md)
@@ -102,6 +101,7 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 -   [Commerce Runtime の拡張機能 - トリガー](commerce-runtime-extensibility-trigger.md)
 -   [顧客の基本設定データをチャンネル データベースに追加](add-customer-preference-channel.md)
 -   [プロパティを販売注文に追加](add-properties-sales-order.md)
+-   [小売チャネルのシークレットを管理](manage-secrets.md)
 
 ## <a name="retail-sdk"></a>Retail SDK
 - [Retail SDK の概要](retail-sdk/retail-sdk-overview.md)
@@ -121,7 +121,8 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 - [Retail Modern POS のトリガーと印刷](pos-trigger-printing.md)
 - [Retail Modern POS 非画面デザイナー ベース ビューへのカスタム コントロールの追加](pos-control-non-screen.md)
 - [POS および E コマース用 Retail プロキシの生成](pos-generate-retail-proxy.md)
-- [クラウド ホストのデベロップメント ボックスで作業している Retail 開発者向けのコンフィギュレーション手順](cloud-dev-box.md)
+- [コード署名証明書を使用して MPOS に署名する](pos-app-signing-certificate.md)
+- [POS のカスタム通知の表示](extend-pos-notification.md)
 
 ## <a name="ecommerce"></a>eCommerce
 -   [E コマース プラットフォーム](ecommerce-platform.md)
@@ -130,7 +131,7 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 
 ## <a name="payment-connectors"></a>支払コネクタ
 - [支払ターミナルとの支払の統合](end-to-end-payment-extension.md)
-- [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+- [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf)
 -   [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 -   [支払コネクタの配置](deploy-payment-connector.md)
 

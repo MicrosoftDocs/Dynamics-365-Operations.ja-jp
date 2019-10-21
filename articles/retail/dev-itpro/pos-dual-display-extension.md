@@ -16,18 +16,18 @@ ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 564eb72d5d4af0df2fe5a828739176e2aec21162
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: eb527f813089193c00d5aa7eec9988de214e50c8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833137"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025535"
 ---
 # <a name="extend-the-point-of-sale-pos-dual-display-view"></a>販売時点管理 (POS) デュアル ディスプレイ ビューの拡張
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、ユーザー情報が表示されるように、販売時点管理 (POS) デュアル ディスプレイ ビューを拡張する方法について説明します。 このトピックでは、Microsoft Dynamics 365 for Finance and Operations 7.2 または Microsoft Dynamics 365 for Retail 7.2 および KB 4091080 とそれ以降のバージョンが適用されます。
+このトピックでは、ユーザー情報が表示されるように、販売時点管理 (POS) デュアル ディスプレイ ビューを拡張する方法について説明します。 このトピックでは、Microsoft Dynamics 365 for Finance and Operations 7.2 または Microsoft Dynamics 365 Retail 7.2 および KB 4091080 とそれ以降のバージョンが適用されます。
 
 POS デュアル ディスプレイ ビューを拡張するには、カスタム コントロールを追加します。 カスタム コントロールでは、カスタム情報を表示する画像、POS データ リスト、ラベルなどを追加できます。
 

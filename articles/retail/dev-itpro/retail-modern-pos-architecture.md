@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 223c053e3cada4eb6839cb9a285c41548073be5c
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 777517ee80c0851319fe3f89fdb833859935d422
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833736"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018026"
 ---
 # <a name="retail-modern-pos-mpos-architecture"></a>Retail Modern POS (MPOS) アーキテクチャ
 
@@ -33,7 +33,7 @@ ms.locfileid: "1833736"
 <a name="retail-modern-pos-topology"></a>Retail Modern POS トポロジー
 --------------------------
 
-Retail Modern 販売時点管理 (POS) のユーザーは、サポートされているラップトップ、タブレット、および電話上で、さまざまな小売タスクを実行できます。 これらのタスクには、販売取引の処理、顧客の注文の表示、日常業務と在庫の管理、ロール ベースのレポートの表示などが含まれます。 Retail POS およびクラウド POS の両方は Microsoft Dynamics 365 for Retail で使用できます。  Cloud POS は、POS アプリケーションのホストされているバージョンです。 両方の POS クライアントは、業務機能またはデータ処理を実行しません。 すべてのビジネス機能は Retail サーバーにより提供されています。 Retail Modern POS および Cloud POS クライアントは、クラウドに配置される Retail サーバーと通信できます。 Retail Modern POS クライアントは、Hardware Station を使用することで、キャッシュ ドロワー、クレジット カード リーダー、プリンタなどの周辺機器とも通信できます。 ハードウェア ステーションは、店舗内で配置される必要があり、すべての Retail Modern POS クライアントが同じハードウェア ステーションに接続できます。 次の図は、高レベルのトポロジを示しています。 
+Retail Modern 販売時点管理 (POS) のユーザーは、サポートされているラップトップ、タブレット、および電話上で、さまざまな小売タスクを実行できます。 これらのタスクには、販売取引の処理、顧客の注文の表示、日常業務と在庫の管理、ロール ベースのレポートの表示などが含まれます。 Retail POS およびクラウド POS の両方は Microsoft Dynamics 365 Retail で使用できます。  Cloud POS は、POS アプリケーションのホストされているバージョンです。 両方の POS クライアントは、業務機能またはデータ処理を実行しません。 すべてのビジネス機能は Retail サーバーにより提供されています。 Retail Modern POS および Cloud POS クライアントは、クラウドに配置される Retail サーバーと通信できます。 Retail Modern POS クライアントは、Hardware Station を使用することで、キャッシュ ドロワー、クレジット カード リーダー、プリンタなどの周辺機器とも通信できます。 ハードウェア ステーションは、店舗内で配置される必要があり、すべての Retail Modern POS クライアントが同じハードウェア ステーションに接続できます。 次の図は、高レベルのトポロジを示しています。 
 
 [![小売トポロジ](./media/retail-topology-1024x606.png)](./media/retail-topology.png)
 

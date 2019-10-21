@@ -1,6 +1,6 @@
 ---
 title: Commerce Rumtime (CRT) の拡張機能とトリガー
-description: この記事では、Microsoft Dynamics AX commerce ランタイム (CRT) のトリガー サポートについて説明します。 CRTは、すべての要求に対してプレトリガーおよびポストトリガーをサポートしています。
+description: この記事では、Microsoft Dynamics AX commerce ランタイム (CRT) のトリガー サポートについて説明します。 CRT は、すべての要求に対してプレ トリガーおよびポスト トリガーをサポートしています。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f859f486757aa2c408dabc6537892cacf0dfa8ba
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: ed77f127d38c7437752f248834db33fee37cfbca
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833085"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025759"
 ---
 # <a name="commerce-runtime-crt-extensibility-and-triggers"></a>Commerce Rumtime (CRT) の拡張機能とトリガー
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Dynamics 365 for Retail commerce ランタイム (CRT) のトリガー サポートについて説明します。 CRTは、すべての要求に対してプレトリガーおよびポストトリガーをサポートしています。
+この記事では、Dynamics 365 Retail commerce ランタイム (CRT) のトリガー サポートについて説明します。 CRT は、すべての要求に対してプレトリガーおよびポストトリガーをサポートしています。
 
 ## <a name="crt-trigger-overview"></a>CRT トリガーの概要
 

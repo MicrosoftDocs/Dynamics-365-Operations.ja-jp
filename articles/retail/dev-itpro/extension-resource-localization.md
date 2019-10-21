@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: edff0927fdf9c370fd51804e83f5240a2ceef4ad
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: d0fbf878f74cab90f65a1de5ef77f30e455cf70d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833067"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023464"
 ---
 # <a name="localize-retail-extension-resources-and-label-files"></a>Retail 拡張リソースおよびラベル ファイルのローカライズ
 
@@ -30,7 +30,7 @@ ms.locfileid: "1833067"
 
 このトピックでは、販売時点管理 (POS) ユーザー インターフェイス (UI)、POS メッセージ (エラー、警告、および情報)、入庫ラベル、および Retail サーバーまたは Commerce Runtime のサービス (CRT) のエラー メッセージの点にラベルを変更する方法について説明します。 Retail サーバーまたは CRT のカスタム エラー メッセージを、同じ方法で追加することもできます。 ただし、新しい POS 拡張ラベルの場合は、POS 拡張のローカライズ フレームワークを使用します。
 
-このトピックは、 最新の更新プログラムが適用された Microsoft Dynamics 365 for Finance and Operations 7.2、最新の更新プログラムが適用された Microsoft Dynamics 365 for Retail 7.2 とそれ以降のバージョンに適用されます。
+
 
 ## <a name="retail-pos-labels-and-messages-error-warning-and-information"></a>Retail POS ラベルおよびメッセージ (エラー、警告、および情報)
 
@@ -40,7 +40,7 @@ ms.locfileid: "1833067"
 
 **言語テキスト** ページの言語テキスト エントリを使用して、POS の既定の文字列を上書きすることができます。 POS 文字列を変更するには、次の手順を実行します。
 
-1. Retail または Finance and Operations へのサインイン
+1. Retail へサインインします。
 2. **小売 &gt; チャネル設定 &gt; POS 設定 &gt; POS プロファイル &gt; 言語テキスト**の順に移動します。
 3. **言語テキスト**ページの、**POS** タブの **POS 言語テキスト**グリッドで、**追加**ボタンを選択して言語 ID、テキスト ID、および上書きする文字列のテキストを追加します。
 
@@ -85,7 +85,7 @@ POS 文字列のテキスト ID を取得するには、デバッグ モード�
 
 ### <a name="override-retail-server-or-crt-error-messages-or-receipt-strings"></a>Retail サーバーや CRT エラー メッセージ、または入庫文字列を上書き
 
-1. Retail または Finance and Operations へのサインイン
+1. Retail へサインインします。
 2. **小売 \> チャネル設定 \> POS 設定 \> POS プロファイル \> 言語テキスト**の順に移動します。
 3. **言語テキスト**ページの、**Retail サーバー**タブの **Retail サーバー言語テキスト**グリッドで、**追加**ボタンをクリックして言語 ID、テキスト ID、および上書きする文字列のテキストを追加します。
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: a9c8ce73a8eafb99c0fe65d88fecfeb1acc61230
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: d701629db166dae3f07825e69c96e28e0c6c8eaa
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833139"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025537"
 ---
 # <a name="add-custom-columns-to-a-point-of-sale-pos-transaction-grid"></a>販売時点管理 (POS) トランザクション グリッドへのカスタム列の追加
 
@@ -30,10 +30,10 @@ ms.locfileid: "1833139"
 このトピックでは、画面レイアウト デザイナーを使用して POS トランザクション ページに新しいカスタム列を追加する方法について説明します。 カスタム列フィーチャーを使用して、トランザクション ページにさらに情報を追加することができます。 カスタム列は、画面レイアウト デザイナーを使用して、トランザクションのページ入庫グリッドに追加できます。 デザイナーを使用して、列の幅および配置を調整することができます。 拡張シナリオのレイアウトには、10 個のカスタム列があります。 10 のすべてを 1 つのレイアウトで使用することができます。 カスタム列は既にデザイナーのメタデータに追加されています。 レイアウトに列を追加した後、トランザクション ページで列が表示できるように配送ジョブを実行します。
 
 > [!NOTE]
-> このトピックでは Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリ更新プログラム 4 修正プログラムが適用されます。
+> このトピックでは Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 Retail プラットフォーム更新 8 と Retail アプリ更新プログラム 4 修正プログラムが適用されます。
 
 ## <a name="add-a-custom-column-to-the-page"></a>ページへのカスタム列の追加
-1. Dynamics 365 for Retail へサインインします。
+1. Dynamics 365 Retail へサインインします。
 2. **Retail** > **チャネル設定** > **POS 設定** > **POS** > **画面レイアウト**と移動します。 または、検索ばーで **画面レイアウト** を検索します。
 3. **F3MGR** 画面レイアウト ID を選択した後、アクション バーで **デザイナー** ボタンをクリックします。
 4. デザイナーを起動する Azure Active Directory (AAD) の資格情報をインストールおよび入力するよう求められる場合、指示に従ってください。

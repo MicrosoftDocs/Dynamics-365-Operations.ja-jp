@@ -1,6 +1,6 @@
 ---
 title: Commerce Data Exchange と小売チャネルのコミュニケーション
-description: このトピックでは、Commerce Data Exchange とその要素の概要を示します。 ここでは、Microsoft Dynamics 365 for Retail と小売チャネルとの間でのデータの転送で各コンポーネントが果たす役割について説明します。
+description: このトピックでは、Commerce Data Exchange とその要素の概要を示します。 ここでは、Microsoft Dynamics 365 Retail および小売チャネルとの間でのデータの転送において各コンポーネントが果たす役割について説明します。
 author: athinesh99
 manager: AnnBe
 ms.date: 11/14/2017
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0866580946d5c58c9ad3d804e0de1a9bb43514bd
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: f5b3c446df69613e14f3363d42e7b79553e2736d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833083"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025733"
 ---
 # <a name="commerce-data-exchange-and-retail-channel-communications"></a>Commerce Data Exchange と小売チャネルのコミュニケーション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Commerce Data Exchange とその要素の概要を示します。 ここでは、Microsoft Dynamics 365 for Retail バックオフィスと小売チャネルとの間でのデータの転送で各コンポーネントが果たす役割について説明します。
+このトピックでは、Commerce Data Exchange とその要素の概要を示します。 ここでは、Microsoft Dynamics 365 Retail Headquarters と小売チャネルとの間でのデータの転送において各コンポーネントが果たす役割について説明します。
 
 <a name="overview"></a>概要
 --------

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 7ee52e364644949ab4fa3f9d56c1b546deb506a2
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 72494b3ef6802cf55e66d5f19081f733c7aca6f2
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833123"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018053"
 ---
 # <a name="mass-deployment-of-retail-self-service-components"></a>Retail セルフサービス コンポーネントの一括配置
 
@@ -30,7 +30,8 @@ ms.locfileid: "1833123"
 
 ## <a name="delimiters-for-mass-deployment"></a>一括配置の区切り記号
 
-次のテーブルに、一括配置の実行コマンドで現在使用できる区切り記号を示します。 これらの区切り文字は、アプリケーションの更新プログラム 3、2017 年 7 月版以降に適用されます。
+次のテーブルに、一括配置の実行コマンドで現在使用できる区切り記号を示します。 
+
 
 | 区切り記号                 | 説明 |
 |---------------------------|-------------|
@@ -41,12 +42,13 @@ ms.locfileid: "1833123"
 | -SkipPrerequisiteCheck    | 前提条件および必須コンポーネントのインストールのチェックをスキップします。<p><p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
 | -SkipSystemInfoCollection | インストールの開始時にシステム情報を収集するプロセスをスキップします。<p><p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
 | -SkipMerchantInfo         | ハードウェア ステーションのセルフ サービス インストーラーの終わりにマーチャント アカウント情報のインストールをスキップします。<p><p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
+| -SkipAppxInstallation         | Dynamics 365 の2018 年 10 月のリリースから、この区切り記号は APPX Retail Modern POS アプリケーションのインストールをスキップします。  この区切り記号は、システム アカウントまたはサービス アカウント (ユーザー プロファイルがないアカウント) を使用してアプリケーションのインストールを実行するために必要です。</p> |
 
 ## <a name="silent-servicing"></a>サイレント サービス
 
 ### <a name="before-you-begin"></a>準備
 
-この機能を使用するには、アプリケーションの更新プログラム 3 の 2017 年 7 月のバージョン以降を使用する必要があります。 サイレント サービスが現在インストールされているすべてのコンポーネントを維持していることに注意してください。 任意のコンフィギュレーションがまだ必要な場合は、このトピックの手順を開始する前に実行します。
+サイレント サービスが現在インストールされているすべてのコンポーネントを維持していることに注意してください。 任意のコンフィギュレーションがまだ必要な場合は、このトピックの手順を開始する前に実行します。
 
 ### <a name="examples-of-commands-for-silent-servicing"></a>サイレント サービスのコマンド例
 

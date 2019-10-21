@@ -10,24 +10,24 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
-ms.search.scope: Retail
+ms.search.scope: Retail, Core, Operations
 ms.search.region: France
 ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: a8d3b850311a23b652eb28a1763780bf8a06382d
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: bf43681bf8209e0849de492a054d3e7f85705f5a
+ms.sourcegitcommit: 25c45428162194c5db8feb3ab53d8df9551b0301
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845663"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "2559797"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 for Retail のフランスでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、小売コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 フランスの小売ローカライズの詳細については、[フランスのキャッシュ レジスター](./emea-fra-cash-registers.md)を参照してください。
+このトピックは、Dynamics 365 Retail のフランスでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、小売コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 フランスの小売ローカライズの詳細については、[フランスのキャッシュ レジスター](./emea-fra-cash-registers.md)を参照してください。
 
 このローカライズは、小売ソフトウェア開発キット (SDK) の一部です。 リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 

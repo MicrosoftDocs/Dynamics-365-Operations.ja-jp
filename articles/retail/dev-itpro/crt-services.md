@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-18-05
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.openlocfilehash: aa3aa29fa4cf04cadc9f9a8107f9204ba4416a20
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: f2314818a5222ddfd7d5824510ee9473752f4899
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833168"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023579"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 
@@ -87,7 +87,7 @@ CRT の多くのサービスは、小売チャンネルおよび店舗運営の�
 | ShippingService            | このサービスは、送料を計算し、現在の注文の出荷オプションを決定します。 |
 | StockCountService          | このサービスは在庫仕訳帳を作成し、コミット、および同期します。 |
 | StoreOperationService      | このサービスは、保存と削除、支払/入金申告、および仕訳帳の検索など店舗関連の工程のサービスを管理します。 |
-| TaxService                 | このサービスは、現在の注文に対する売上税を計算します。 Microsoft Dynamics 365 for Finance and Operations からの売上税情報を、またはサード パーティ売上税サービスからの売上税情報を使用できます。 |
+| TaxService                 | このサービスは、現在の注文に対する売上税を計算します。 提供された売上情報、またはサード パーティ売上税サービスからの売上税情報を使用できます。 |
 | TotalingService            | このサービスは、販売トランザクションおよび販売明細行の合計を計算します。 |
 
 拡張シナリオでは、サービス クラス内の要求のいずれかを上書きできます。 たとえば、顧客の検索フローを変更するには、**CustomerService** サービスから、**CustomersSearchServiceRequest** リクエストを拡張します。

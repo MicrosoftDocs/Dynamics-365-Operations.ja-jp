@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-ms.openlocfilehash: e3c4476a54aaf3edaed87fc20fe835a3b36c31c0
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 801f6903c1128ad324e0d99baa90c3845a68fc15
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833052"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025531"
 ---
 # <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>Typescript および小売販売時点管理 (POS) の C# プロキシ
 
@@ -47,7 +47,7 @@ Typescript プロキシを生成する手順と C# プロキシを生成する�
 ## <a name="generate-the-typescript-proxy"></a>Typescript プロキシを生成します
 
 > [!IMPORTANT]
-> 次の手順は Microsoft Dynamics 365 for Retail (2017 年 7 月リリース) および Microsoft Dynamics 365 for Finance and Operation にのみ適用されます。
+> 次の手順は Microsoft Dynamics 365 Retail (2017 年 7 月リリース) および Microsoft Dynamics 365 for Finance and Operation にのみ適用されます。
 
 POS の Typescript プロキシを生成するには、Retail SDK\\Reference フォルダーから CommerceProxyGenerator.exe ファイルを使用します。
 

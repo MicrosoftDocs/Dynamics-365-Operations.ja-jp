@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent - Onboard アプリのプロビジョニング
-description: このトピックでは、スタンドアロン Dynamics 365 for Talent - Onboard アプリをプロビジョニングする方法について説明します。
+title: Dynamics 365 Talent - Onboard アプリのプロビジョニング
+description: このトピックでは、スタンドアロン Dynamics 365 Talent - Onboard アプリをプロビジョニングする方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/16/2019
@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
-ms.openlocfilehash: f90778a7259632f9e78725a93d8d3f2163e94976
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 7d541a315b4e25e4cece990792fa48f02f980d30
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742762"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550356"
 ---
-# <a name="provisioning-for-the-onboard-app"></a>Onboard アプリのプロビジョニング
+#  <a name="provisioning-for-the-dynamics-365-talent---onboard-app"></a>Dynamics 365 Talent - Onboard アプリのプロビジョニング
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent の完全版には、中核人事 (Core HR) 機能に加えて Attract と Onboard が含まれており、社内の 採用と オンボードのプロセス を認識することができます。 また、オンボード アプリのスタンドアロンバージョンを購入することもできます。 Talent の完全版とスタンドアロンのオンボードアプリのどちらを購入したかによって、プロビジョニング内容が若干異なります。
+Microsoft Dynamics 365 Talent の完全版には、中核人事 (Core HR) 機能に加えて Attract と Onboard が含まれており、社内の 採用と オンボードのプロセス を認識することができます。 また、オンボード アプリのスタンドアロンバージョンを購入することもできます。 Talent の完全版とスタンドアロンのオンボードアプリのどちらを購入したかによって、プロビジョニング内容が若干異なります。
 
 オンボードアプリは、試用版を起動するか、またはオンラインで購入したときに自動的に準備されます。 完全版の Talent を使用するにはプロビジョニングのために Microsoft Dynamics Lifecycle Services (LCS) が必要となりますが、スタンドアロンの Onboard アプリには LCS は必要ありません。
 
 スタンドアロンの Onboard アプリでは、プロビジョニングの対象を選択をすることはありません。 そのかわりに、以下の要素によって Onboard がプロビジョニングされる場所が決まります。
 
 - Microsoft PowerApps 環境が存在する場合は同環境の場所を参照します
-- PowerApps 環境が存在しない場合は、テナントの場所を参照します
+- PowerApps 環境が存在しない場合は、組織の既存のテナントの場所を参照します
 - Talent が現在対応しているデータ センター
 
 Onboard アプリは、対応する国または地域でのみで提供しています。 サポートされている国と地域は Microsoft Trust Center for Talent データ透過性で定義されています。 サポートされている国と地域の一覧は、『[Microsoft Dynamics 365 の国際可用性ガイド](https://docs.microsoft.com/dynamics365/get-started/availability)』を参照してください。

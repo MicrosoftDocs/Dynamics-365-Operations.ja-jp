@@ -10,24 +10,24 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
-ms.search.scope: Retail
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Austria
 ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b1d92d15990d0ffab607fa2d225a6a1b4f5437eb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 03c551cb06d90be1b9a8f06c42791c28a2d007fe
+ms.sourcegitcommit: 25c45428162194c5db8feb3ab53d8df9551b0301
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845664"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "2559796"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 
 [!include[banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 for Retail のオーストラリアでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、小売コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷し、追加の監査イベントを登録し、EFSTA システムと Electronical 会計登録ソフトウェアとの統合サンプルを含めることができます。 オーストリアの小売ローカライズの詳細については、[オーストリアの会計登録サービス統合サンプル](./emea-aut-fi-sample.md)を参照してください。
+このトピックは、Dynamics 365 Retail のオーストラリアでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、小売コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷し、追加の監査イベントを登録し、EFSTA システムと Electronical 会計登録ソフトウェアとの統合サンプルを含めることができます。 オーストリアの小売ローカライズの詳細については、[オーストリアの会計登録サービス統合サンプル](./emea-aut-fi-sample.md)を参照してください。
 
 統合サンプルは、会計統合フレームワークに基づいて作成されました。 会計統合機能に関する詳細は、[小売チャンネルの会計統合](fiscal-integration-for-retail-channel.md)を参照してください。これらのサンプルは、小売ソフトウェア開発キット (SDK) の一部です。 リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 

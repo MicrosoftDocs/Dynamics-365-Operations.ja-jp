@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a853e7bbf4d30eaa2fdaeb65bdf25030dcbd86c9
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 28272e15cc5ebe04a6fcc0a7dfbf5c6d2e77f1bd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833101"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019309"
 ---
 # <a name="add-extension-properties-to-customer-entities"></a>顧客エンティティへの拡張プロパティの追加
 
@@ -33,7 +33,7 @@ ms.locfileid: "1833101"
 
 このチュートリアルでは、拡張プロパティを使用してエンティティを拡張する方法を示します。 
 
-このチュートリアルでは、エンティティが Microsoft 365 for Retail で拡張され、Retail とチャネル データベースの両方で保持されます。 これにより、販売時点管理 (POS) ユーザー インターフェイス (UI) で値にアクセスできます。 また、新しい値は、Commerce Data Exchange (CDX) 取引サービスを介して Dynamics AX に同期的に書き込まれます。 拡張機能プロパティは自動的にフローするため、Commerce Runtime または Retail サーバーに必要なカスタマイズはありません。 フォーム、テーブル、Real-time Service (RTS) クライアント、CDX、チャネル データベース、POS (Retail Modern POS およびクラウド POS の両方) の変更が必要です。 このチュートリアルでは、オフライン モードをサポートしていません。
+このチュートリアルでは、エンティティが Microsoft 365 Retail で拡張され、Retail とチャネル データベースの両方で保持されます。 これにより、販売時点管理 (POS) ユーザー インターフェイス (UI) で値にアクセスできます。 また、新しい値は、Commerce Data Exchange (CDX) 取引サービスを介して Dynamics AX に同期的に書き込まれます。 拡張機能プロパティは自動的にフローするため、Commerce Runtime または Retail サーバーに必要なカスタマイズはありません。 フォーム、テーブル、Real-time Service (RTS) クライアント、CDX、チャネル データベース、POS (Retail Modern POS およびクラウド POS の両方) の変更が必要です。 このチュートリアルでは、オフライン モードをサポートしていません。
 
 <a name="create-a-new-dynamics-ax-project"></a>新しい Dynamics AX プロジェクトを作成します
 --------------------------------
@@ -77,7 +77,7 @@ ms.locfileid: "1833101"
 
 7.  すべての変更を保存し、プロジェクトを再度ビルドします。
 8.  **iisreset** を実行します。
-9.  Dynamics 365 for Retail で、**売掛金勘定** &gt; **共通** &gt; **顧客** &gt; **すべての顧客** の順にクリックします。
+9.  Dynamics 365 Retail で、**売掛金勘定** &gt; **共通** &gt; **顧客** &gt; **すべての顧客** の順にクリックします。
 10. 顧客レコードを編集します。 **小売**クイック タブで、**電子メール申し込み**チェック ボックスをオンにし、変更を保存します。
 
 ## <a name="customize-the-existing-retailtransactionservice-class-so-that-it-handles-the-new-data-correctly"></a>新しいデータが正しく処理できるように、既存の RetailTransactionService クラスをカスタマイズします
@@ -189,7 +189,7 @@ ms.locfileid: "1833101"
 4.  プロジェクトをコンパイルします。
 
 ## <a name="configure-cdx-to-sync-the-new-table"></a>新しいテーブルを同期させる CDX をコンフィギュレーションします。
-1.  Dynamics 365 for Retail で、**Retail** &gt; **設定** &gt; **小売用スケジューラ** &gt; **小売チャネル** **スキーマ** と移動し、新しいテーブルを追加してチャネル スキーマを編集します。
+1.  Dynamics 365 Retail で、**Retail** &gt; **設定** &gt; **小売用スケジューラ** &gt; **小売チャネル** **スキーマ** と移動し、新しいテーブルを追加してチャネル スキーマを編集します。
     1.  **チャネル テーブル**、**新規**の順にクリックします。
     2.  テーブルに **ax.RetailCustPreference** と名前を付けて保存します。
     3.  次のフィールドを追加します: **ACCOUNTNUM**、**DATAAREAID**、**EMAILOPTIN**、**RECID**。

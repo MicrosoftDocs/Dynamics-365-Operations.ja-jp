@@ -1,6 +1,6 @@
 ---
 title: 支払の FAQ
-description: このトピックでは、Dynamics 365 for Retail で使用できる支払いオプションについて説明します。
+description: このトピックでは、Dynamics 365 Retail で使用できる支払いオプションについて説明します。
 author: athinesh99
 manager: AnnBe
 ms.date: 06/16/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 749e3c2bd2fdc07c9636310370c63be224eeccd1
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: ac374e7965c819d45eace18b253744479fe96e67
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833758"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025539"
 ---
 # <a name="payments-faq"></a>支払に関してよく寄せられる質問
 
@@ -59,7 +59,7 @@ Verifone および Adyen などの Microsoft によって指定されたコネ�
 Verifone のコネクタに対するSLAは、Verifoneによって管理されています。 Verifone の SLA については、Verifone のサポートにお問い合わせください。 Adyenコネクタに関して、設定に関する問題の場合は Adyenコネクタの [概要ページ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。 コネクタに関するその他の設定、または機能の問題については、Microsoftへのサポートリクエストを作成してください。 問題がデバイス本体、またはAdyenの処理サービスに起因する場合は、support-dynamics365@adyen.com Adyenのサポートに連絡してください。 
         
 ## <a name="if-a-supported-payment-provider-issues-an-update-will-microsoft-automatically-update-the-payment-connector-or-do-i-need-to-work-with-the-payment-provider-to-get-the-updated-payment-connector"></a>サポートされている支払プロバイダーが更新プログラムを発行した場合は、Microsoft は自動的に支払コネクタを更新してくれますか? または更新された支払コネクタを取得するために支払プロバイダーと連携する必要がありますか。
-支払いコネクターの更新プログラムが支払コネクター プロバイダーによって発行された場合、支払いコネクターの更新バージョンは Dynamics 365 for Retail の次の予定リリースに含まれます。 ただし、顧客は早期に取得するため、支払コネクタ プロバイダと直接作業することもできます。
+支払いコネクターの更新プログラムが支払コネクター プロバイダーによって発行された場合、支払いコネクターの更新バージョンは Dynamics 365 Retail の次の予定リリースに含まれます。 ただし、顧客は早期に取得するため、支払コネクタ プロバイダと直接作業することもできます。
 
         
 関連トピック: 

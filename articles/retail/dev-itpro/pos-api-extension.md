@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: fa1117a6247b21c12cea4ef00f9fc93f7db9b0f1
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 520cd8575917dcae6b48e0eec9d1f56a7b1391da
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833756"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023469"
 ---
 # <a name="call-point-of-sale-pos-apis-or-operations-from-pos-extensions"></a>販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
 
@@ -29,7 +29,7 @@ ms.locfileid: "1833756"
 
 Retail POS API を使用すると、拡張機能を構築したり、POS に新しい機能を追加したりすることができます。 たとえば、製品の詳細を取得し、価格を変更し、またはカートに品目を追加する新しい機能を追加する場合は、その作業を行うための POS API を呼び出します。 POS API は、拡張子パターンを合理化し、拡張機能を構築するために継続的なサポートを提供します。Commerce Runtime (RT)、POS、およびハードウェア ステーションの拡張パターンはすべて、要求/応答パターンを使用します。 
 
-このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。  
+このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。  
 
 ## <a name="scenarios"></a>シナリオ
 POS API は、3 つのさまざまなシナリオに分類されます。

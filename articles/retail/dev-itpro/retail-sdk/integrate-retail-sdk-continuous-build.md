@@ -1,6 +1,6 @@
 ---
-title: Retail と Finance and Operations のビルド システムのマージ
-description: この記事では、Azure DevOps を使用して Dynamics 365 for Finance and Operations および Dynamics 365 for Retail の両方のビルド システムをマージするためのステップを説明します。
+title: Retail and Finance 用ビルド システムのマージ
+description: このトピックでは、Azure DevOps を使用して Dynamics 365 Retail および Dynamics 365 Finance の両方のビルド システムをマージするためのステップを説明します。
 author: andreash1
 manager: AnnBe
 ms.date: 02/06/2019
@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: andreash
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cf2ffc9fc149b3420249c4b592463a2d375ba315
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: efa61d874c8d7423356e8446b3cbe09db49906e2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833732"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248717"
 ---
-# <a name="merge-the-build-systems-for-retail-and-finance-and-operations"></a>Retail および Finance and Operations 用ビルド システムのマージ
+# <a name="merge-the-build-systems-for-retail-and-finance"></a>Retail and Finance 用ビルド システムのマージ
 
 [!include [banner](../../includes/banner.md)]
 
-この記事では、Dynamics 365 for Finance and Operations および Dynamics 365 for Retail の両方のビルド システムをマージするためのステップを説明します。 Lifecycle Services (LCS) に統合されたビルド エクスペリエンスは、コードのアップグレードと新しいプロジェクトの両方をサポートします。 Retail SDK は、自己完結型の MSBuild ベースのビルド システムです。 多くのカスタマイザーは、Microsoft Dynamics 365 for Finance and Operations および Retail の両方のコンポーネントに生産的な変更を加えます。 この記事では、Azure DevOps を使用して両方のビルド システムをマージするための手動のステップを概説します。 
+
+このトピックでは、Dynamics 365 Retail および Dynamics 365 Finance のビルド システムをマージするためのステップを説明します。 Lifecycle Services (LCS) に統合されたビルド エクスペリエンスは、コードのアップグレードと新しいプロジェクトの両方をサポートします。 Retail SDK は、自己完結型の MSBuild ベースのビルド システムです。 多くのカスタマイザーは、両方の Microsoft Finance and Retail のコンポーネントに生産的な変更を加えます。 このトピックでは、Azure DevOps を使用して両方のビルド システムをマージするための手動のステップを概説します。 
+
 
 ## <a name="enable-the-build-system"></a>ビルド システムの有効化
 
@@ -63,7 +65,7 @@ Retail SDK の場所が含まれるように、ビルド定義を編集します
 
 このビルド ステップでは、Microsoft がファイル/バイナリを共有する場合、Microsoft は Retail bin フォルダに最新の構築済み Retail バイナリをコピーできます。 前のセクションで説明したように、Retail SDK のビルド ステップを追加した直後にこのステップを完了することを確認します。
 
-[![Retail SDK から Dynamics 365 for Retail ビルドへのバイナリのコピー ステップの追加](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
+[![Retail SDK から Dynamics 365 Retail ビルドへのバイナリのコピー ステップの追加](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
 
 ## <a name="add-a-copy-step-for-all-retail-packages"></a>すべての Retail パッケージのコピー ステップの追加
 

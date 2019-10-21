@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 2c340f9bccc0f5f5f6d4032bae35d2f77ab76a02
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 2ab206ab04cfe71c4d6091e05f5d9a3a3e331316
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833135"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023458"
 ---
 # <a name="run-the-retail-point-of-sale-pos-samples"></a>小売販売時点管理 (POS) サンプルを実行
 
@@ -29,7 +29,7 @@ ms.locfileid: "1833135"
 
 小売用拡張機能を示す Retail SDK にはいくつかのサンプルがあります。 このトピックでは、これらのサンプルを実行する方法について説明します。 
 
-このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。
+
 
 ## <a name="run-the-sampleextensions-in-pos"></a>POS で SampleExtensions を実行
 1. **Retail SDK\\POS** フォルダーから **ModernPos.Sln** あるいは **CloudPos.sln** を開きます。

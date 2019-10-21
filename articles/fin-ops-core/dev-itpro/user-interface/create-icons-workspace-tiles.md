@@ -1,0 +1,99 @@
+---
+title: ワークスペース タイル用のアイコンの作成
+description: このトピックでは、アイコンを作成してカスタム ワークスペース タイルに割り当てるためのガイドラインと推奨事項について説明します。
+author: jasongre
+manager: AnnBe
+ms.date: 08/12/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: sericks
+ms.search.scope: Operations
+ms.custom: 141853
+ms.assetid: 4f78c3a4-011f-4ebd-bada-98e77d43821e
+ms.search.region: Global
+ms.author: jasongre
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: Platform update 1
+ms.openlocfilehash: 60ee0822c6814e7211a6e7c2c1b18e185e5b4efc
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2191782"
+---
+# <a name="create-icons-for-workspace-tiles"></a>ワークスペース タイル用のアイコンの作成
+
+[!include [banner](../includes/banner.md)]
+
+このトピックでは、アイコンを作成してカスタム ワークスペース タイルに割り当てるためのガイドラインと推奨事項について説明します。  
+
+ダッシュボードには、ユーザーがアクセスできる一連のワークスペース タイルが含まれています。 これらのタイルにはそれぞれ、ワークスペースに固有のアイコンが含まれます。 Microsoft により提供された追加設定なしのワークスペースについては、ワークスペースタイルで使用されるアイコンは一般的に [記号フォント](symbol-font.md) からの記号に対応します。 このトピックでは、Microsoft 認定パートナーまたは個別のユーザーが作成したワークスペースに、アイコンの作成とタイルの割り当てをするにあたってのガイドラインと推奨事項について説明します。
+
+## <a name="implementation-details"></a>実装詳細
+ワークスペースのアイコンとしては、 AOT リソースのアイコンを使用することを推奨します。 既成のシンボルは機能しますが、複数のワークスペースが同じアイコンを使用することがないように、独自のシンボルを作成することをお勧めします。 アイコンが必要となるワークスペースについては、以下のガイドラインに従って新しいイメージファイルを作成します。 製品の新しいバージョンに対する推奨ガイダンスが変更されたことに留意してください。
+
+### <a name="modeling-details"></a>モデリングの詳細
+
+ワークフローのタイルを作成する際には、以下のイドラインに従う必要があります:
+
+-   新しいアイコンごとに AOTResource を追加します。
+-   ワークスペースに対応するタイルで、次のプロパティを設定します。
+    -   ImageLocation=AOTResource
+    -   NormalImage=&lt;AOTResource の名前&gt;
+
+## <a name="icon-creation"></a>アイコン作成
+カスタム ワークスペース タイルのイメージ作成についてのガイドラインは以下のとおりです。 推奨している画像のサイズとアイコンは、標準のワークスペースアイコンをもとにしています。 他の画像サイズも許容されますが、画像全体の相対的なサイズと位置は、画像サイズに関係なく維持される必要があります。  
+
+これらの推奨事項に従って、ワーク スペースのアイコンのスタイルとサイズが、他のワーク スペースのアイコンと同一のものであり、ワーク スペースのアイコンの内容が画像に適用されている CSS によって加工されないようことに留意してください。
+
+### <a name="images-for-platform-update-29-or-later"></a>プラットフォーム更新プログラム 29 またはそれ以降における画像
+-   イメージ ファイルは、縦横比が 1:1 の PNG ファイルである必要があります。
+-   推奨する画像サイズは 50 x 50 ピクセルで、アイコンは中央部分の **30 x 30 px** ピクセルに収まるように配置します (以下の図を参照してください)。
+-   アイコンは、 **白い背景で透明性のあるコンテンツ**となっている必要があります。 
+-   フレームワークによって、イメージの透明な部分に既定の背景色が設定され、既存のユーザーのテーマに一致します。
+
+### <a name="images-for-platform-update-28-or-earlier"></a>プラットフォーム更新プログラム 28 またはそれ以前における画像
+-   イメージ ファイルは、縦横比が 1:1 の PNG ファイルである必要があります。
+-   推奨する画像サイズは 50 x 50 ピクセルで、アイコンは中央部分の **21 x 21 px** ピクセルに収まるように配置します (以下の図を参照してください)。
+-   アイコンは、 **透明性のある背景で白いコンテンツ**となっている必要があります。
+-   フレームワークによって、イメージの透明な部分に既定の背景色が設定され、既存のユーザーのテーマに一致します。
+
+## <a name="example"></a>例 
+新しいワークスペースに使用される次のイメージ/アイコンを検討します。 
+
+[![newLogo3](./media/newlogo3.png)](./media/newlogo3.png) 
+
+### <a name="platform-update-29-or-later"></a>プラットフォーム更新プログラム 29 またはそれ以降 
+
+このアイコンは、 **白い背景と透明性のあるコンテンツを持つ** 画像に変換され、アイコンは以下の図のように大きなイメージキャンバスの中央に配置されます。  
+
+![新しいガイダンスに従った ワークスペース アイコン](./media/baseIcon_img_PU29.png) 
+
+これが推奨サイズ設定とどのように関連しているかを理解するには、以下の新しい推奨サイズ設定を合成したワークスペース アイコンを参照してください。   
+
+![newIcon\_guides](./media/baseIcon_Guides_PU29.png) 
+
+この画像をワークスペース タイルで使用すると、ダッシュ ボードには次の結果が得られます。 
+
+[![newWorkspaceIcon](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
+
+
+### <a name="platform-update-28-or-earlier"></a>プラットフォーム更新プログラム 28 またはそれ以前
+旧バージョンの製品では、アイコンは透明な背景と白いコンテンツを持つ画像に変換され、アイコンは以下の図のようにイメージキャンバスの中央に配置されます。 
+
+![古いのバージョンのワークスペース アイコン](./media/newicon.png) 
+
+これが推奨サイズ設定とどのように関連しているかを理解するには、以下の古い推奨サイズ設定を合成したワークスペース アイコンを参照してください。   
+
+![newIcon\_guides](./media/newicon_guides.png) 
+
+この画像をワークスペース タイルで使用すると、ダッシュ ボードには次の結果が得られます。 
+
+[![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
+
+
+
+

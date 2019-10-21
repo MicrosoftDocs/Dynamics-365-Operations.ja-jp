@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e2df3186237034d97c503b8ec56a78f625c0baed
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: b493d23a69da593890406369194cbd617889591b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833734"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018051"
 ---
 # <a name="retail-online-store-publishing-architecture"></a>小売オンライン ストア発行アーキテクチャ
 
@@ -33,7 +33,7 @@ ms.locfileid: "1833734"
 <a name="publish-a-retail-online-store-channel"></a>Retail オンライン ストア チャネルを発行
 -------------------------------------
 
-小売オンライン店舗チャネルを公開するとき、Microsoft Dynamics 365 for Retail と SharePoint 間でオンライン ストアの基本構造をレプリケートします。 **小売** モジュールのオンライン ストア チャンネルの基本構造を作成します。 オンライン ストア チャネルを公開する前に、以下の設定タスクを実行する必要があります。
+小売オンライン店舗チャネルを公開するとき、Microsoft Dynamics 365 Retail と SharePoint 間でオンライン ストアの基本構造をレプリケートします。 **小売** モジュールのオンライン ストア チャンネルの基本構造を作成します。 オンライン ストア チャネルを公開する前に、以下の設定タスクを実行する必要があります。
 
 1.  組織階層にオンライン ストアを追加します。
 2.  オンライン ストアを作成し、プロパティをコンフィギュレーションします。

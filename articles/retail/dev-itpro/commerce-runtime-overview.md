@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 21803437841c22d8873a467c5557e7e9466542d1
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 1c36a6f8fa541871906c685195e4ac7831643d6d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833191"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025758"
 ---
 # <a name="commerce-runtime-crt-architecture-and-configuration"></a>Commerce Runtime (CRT) のアーキテクチャおよびコンフィギュレーション
 
@@ -33,13 +33,13 @@ ms.locfileid: "1833191"
 <a name="commerce-runtime-architecture"></a>Commerce Runtime のアーキテクチャ
 -----------------------------
 
-次の図は、Microsoft Dynamics 365 for RetailCommerce ランタイム (CRT) のコンポーネントを示しています。 
+次の図は、Microsoft Dynamics 365 Retail Commerce Runtime ランタイム (CRT) のコンポーネントを示しています。 
 
-[![コマース ランタイム コンポーネント](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
+[![Commerce Runtime コンポーネント](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
 
 ### <a name="data-access"></a>データ アクセス
 
-データベースの上は、データ アクセス レイヤーです。 データ アクセス レイヤーでは、生データがメモリ内のオブジェクトに変換されます。 たとえば、オブジェクトは、製品である可能性があります。 製品は、価格や色などの属性を持ちます。 データ アクセス レイヤーには、オブジェクトを操作するための機能があります。 ストアド プロシージャは、サービスとワークフローで使用できるデータ エンティティにデータベースからデータのパケットを渡します。 データのパケットを更新して、Dynamics 365 for Retail に追加する新しいフィールドを含めることができます。
+データベースの上は、データ アクセス レイヤーです。 データ アクセス レイヤーでは、生データがメモリ内のオブジェクトに変換されます。 たとえば、オブジェクトは、製品である可能性があります。 製品は、価格や色などの属性を持ちます。 データ アクセス レイヤーには、オブジェクトを操作するための機能があります。 ストアド プロシージャは、サービスとワークフローで使用できるデータ エンティティにデータベースからデータのパケットを渡します。 データのパケットを更新して、Dynamics 365 Retail に追加する新しいフィールドを含めることができます。
 
 ### <a name="services"></a>サービス
 
@@ -47,7 +47,7 @@ ms.locfileid: "1833191"
 
 ### <a name="workflows"></a>ワークフロー
 
-サービス レイヤーの上は、ワークフロー レイヤーです。 ワークフローは、業務プロセスを定義するサービスとビジネス ロジックの集合です。 たとえば、顧客がカートに品目を追加すると、価格の取得、検証の実行、在庫数量の確認、出荷費用の計算、税計算、および割引計算をするためワークフローを使用できます。 Dynamics 365 for Retail に含まれているワークフローを使用することも、新しいワークフローを作成することもできます。 ワークフローを使用して、業務プロセスの一部としてサードパーティ製システムに接続することもできます。
+サービス レイヤーの上は、ワークフロー レイヤーです。 ワークフローは、業務プロセスを定義するサービスとビジネス ロジックの集合です。 たとえば、顧客がカートに品目を追加すると、価格の取得、検証の実行、在庫数量の確認、出荷費用の計算、税計算、および割引計算をするためワークフローを使用できます。 Dynamics 365 Retail に含まれているワークフローを使用することも、新しいワークフローを作成することもできます。 ワークフローを使用して、業務プロセスの一部としてサードパーティ製システムに接続することもできます。
 
 ### <a name="api"></a>API
 

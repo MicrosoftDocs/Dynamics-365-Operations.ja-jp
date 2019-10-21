@@ -1,6 +1,6 @@
 ---
 title: Azure Logic アプリを使用した定期的なデータ エクスポート
-description: このチュートリアルでは Dynamics 365 for Talent から定期的なスケジュールでデータをエクスポートする Azure ロジック アプリを作成する方法を説明します。
+description: このチュートリアルでは Dynamics 365 Talent から定期的なスケジュールでデータをエクスポートする Azure ロジック アプリを作成する方法を説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/19/2019
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Talent January 2019 update
-ms.openlocfilehash: 2f2bbcef37dfbd91d8fcced2625eb3deaaf64b02
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cb88b5099b969fc3b714a6d9ae58afc9f80919b9
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742622"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010534"
 ---
 # <a name="recurring-data-export-using-azure-logic-apps"></a>Azure Logic アプリを使用した定期的なデータ エクスポート
 
 [!include[banner](../includes/banner.md)]
 
-このチュートリアルでは Microsoft Dynamics 365 for Talent Core HR から定期的なスケジュールでデータをエクスポートする Microsoft Azure ロジック アプリを作成する方法を説明します。 このチュートリアルでは Core HR の DMF パッケージ REST アプリケーション プログラミング インターフェイス (API) を利用して、データをエクスポートします。 データがエクスポートされた後、ロジック アプリはエクスポートされたデータ パッケージを Microsoft OneDrive for Business のフォルダーに保存します。
+このチュートリアルでは Microsoft Dynamics 365 Talent: Core HR から定期的なスケジュールでデータをエクスポートする Microsoft Azure ロジック アプリを作成する方法を説明します。 このチュートリアルでは Core HR の DMF パッケージ REST アプリケーション プログラミング インターフェイス (API) を利用して、データをエクスポートします。 データがエクスポートされた後、ロジック アプリはエクスポートされたデータ パッケージを Microsoft OneDrive for Business のフォルダーに保存します。
 
 ## <a name="business-scenario"></a>ビジネス シナリオ
 
-Microsoft Dynamics 365 統合のひとつの典型的なビジネス シナリオでは、データは定期的なスケジュールで下流システムにエクスポートされる必要があります。 このチュートリアルでは Microsoft Dynamics 365 for Talent からすべての作業者レコードをエクスポートし、OneDrive for Business のフォルダーに作業者のリストを保存する方法を示します。
+Microsoft Dynamics 365 統合のひとつの典型的なビジネス シナリオでは、データは定期的なスケジュールで下流システムにエクスポートされる必要があります。 このチュートリアルでは Microsoft Dynamics 365 Talent からすべての作業者レコードをエクスポートし、OneDrive for Business のフォルダーに作業者のリストを保存する方法を示します。
 
 > [!TIP]
 > このチュートリアルでエクスポートされる特定のデータと、エクスポートされたデータの宛先は単なる例です。 ビジネスのニーズに合わせてそれらを簡単に変更できます。
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 統合のひとつの典型的なビジネス シナリ�
 
 このチュートリアルでは下記のテクノロジを使用します:
 
-- **[Dynamics 365 for Talent Core HR](https://dynamics.microsoft.com/talent/overview/)** – エクスポートされる作業者のマスター データ ソース。
+- **[Dynamics 365 Talent: Core HR](https://dynamics.microsoft.com/talent/overview/)** – エクスポートされる作業者のマスター データ ソース。
 - **[Azure ロジック アプリ](https://azure.microsoft.com/services/logic-apps/)** – 定期的なエクスポートのオーケストレーションとスケジュールを提供するテクノロジ。
 
     - **[コネクタ](https://docs.microsoft.com/azure/connectors/apis-list)** – ロジック アプリを必要なエンドポイントに接続するために使用されるテクノロジ。

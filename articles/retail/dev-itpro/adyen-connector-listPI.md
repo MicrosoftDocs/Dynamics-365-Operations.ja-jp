@@ -18,14 +18,14 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8ca4ad9dc5fca8581a830c2036deb55bdf4b14ee
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 49fe8dc579faa4611b5e1db8a54992f578ef5127
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1794856"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550498"
 ---
-# <a name="saving-online-payments-with-the-adyen-connector"></a>Adyen コネクタでオンライン支払を保存する
+# <a name="saving-online-payment-instruments-with-the-adyen-connector"></a>オンライン支払手段を Adyen コネクタで保存
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "1794856"
 
 リスト PI 機能には次の要素が必要です:
 
-- 電子商取引と Microsoft Dynamics 365 for Retail の統合
+- 電子商取引と Microsoft Dynamics 365 Retail の統合
 - リスト PI 機能と互換性のある支払コネクタ
 - 顧客がその支払プロセッサに保存させたい支払手段に一意の顧客 ID をマッピングする支払プロセッサ
 

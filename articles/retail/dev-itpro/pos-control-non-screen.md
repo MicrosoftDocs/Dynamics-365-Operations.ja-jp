@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: fbdde3f1ff90c7e4b2ba1a37e768d94ad29c0e30
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 79bb81a1461a2c37e125d188839326c1d6c6263f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833752"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023463"
 ---
 # <a name="add-custom-controls-to-pos-views-that-arent-screen-layout-designer-based"></a>デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します
 
 [!include [banner](../../includes/banner.md)]
 
-カスタム コントロールを追加することにより、Dynamics 365 for Retail POS ビューに表示される情報を拡張することができます。 カスタム コントロールを使用すると、POS の既存のビューにカスタム情報を追加できます。 カスタム コントロールは、POS 拡張フレームワークを使用して実装できます。 現時点では、実行時にカスタム コントロールを目的の場所に配置することはできません。POS は POS を固定位置にロードします。
+カスタム コントロールを追加することにより、Dynamics 365 Retail POS ビューに表示される情報を拡張することができます。 カスタム コントロールを使用すると、POS の既存のビューにカスタム情報を追加できます。 カスタム コントロールは、POS 拡張フレームワークを使用して実装できます。 現時点では、実行時にカスタム コントロールを目的の場所に配置することはできません。POS は POS を固定位置にロードします。
 
-このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。 
+このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。 
 
 次のテーブルに、カスタム コントロールをサポートする非画面レイアウト デザイナーベース ビューを示します。
 

@@ -1,6 +1,6 @@
 ---
 title: 新しい輸送管理エンジンの作成
-description: この記事では、Microsoft Dynamics 365 for Finance and Operations で新しい輸送管理エンジンを作成する方法について説明します。
+description: このトピックでは、Dynamics 365 Supply Chain Management で新しい輸送管理エンジンを作成する方法について説明します。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,25 +18,25 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 745aaac9c69b885d9893a6a4bdb9c6ef33240dae
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c33f9aeb8d388b8c1140fd951359cd96594fc88a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555026"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251098"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>新しい輸送管理エンジンの作成
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations で新しい輸送管理エンジンを作成する方法について説明します。 
+このトピックでは、Dynamics 365 Supply Chain Management で新しい輸送管理エンジンを作成する方法について説明します。 
 
-輸送管理 (TMS) エンジンは、輸送管理で配送率を生成およびプロセスするために使用するロジックを定義します。 Microsoft Dynamics 365 for Finance and Operations は、レート、輸送時間、および輸送中に越えるゾーンの数などのさまざまなパラメーターを計算する複数の異なるエンジン タイプを提供します。 この記事では、Microsoft Visual Studio 開発環境と Finance and Operations 開発ツールを使用して新しい TMS エンジンを作成して展開する方法と、次に Operations でエンジンを設定する方法について説明します。 Finance and Operations が提供するエンジンの詳細については、[輸送管理エンジン](transportation-management-engines.md) を参照してください。
+輸送管理 (TMS) エンジンは、輸送管理で配送率を生成およびプロセスするために使用するロジックを定義します。 Supply Chain Management は、レート、輸送時間、および輸送中に越えるゾーンの数などのさまざまなパラメーターを計算する複数の異なるエンジン タイプを提供します。 この記事では、Microsoft Visual Studio 開発環境と Supply Chain Management 開発ツールを使用して新しい TMS エンジンを作成して展開する方法と、次に Operations でエンジンを設定する方法について説明します。 エンジンに関する詳細については、[輸送管理エンジン](transportation-management-engines.md) を参照してください。
 
 ## <a name="create-a-new-tms-engine"></a>新しい TMS エンジンを作成する
-このセクションでは、TMS エンジン実装を持つクラス ライブラリを作成する方法と、Finance and Operations モデルからクラス ライブラリを参照する方法について説明します。
+このセクションでは、TMS エンジン実装を持つクラス ライブラリを作成する方法と、Supply Chain Management モデルからクラス ライブラリを参照する方法について説明します。
 
-1. 新しいエンジンを配置するには、エンジンを含む財務および工程のモデルが必要です。新しいエンジンを展開するには、エンジンを含む Finance and Operations モデルが必要です。 **Dynamics 365**&gt; **モデル管理**メニューで、**モデルの作成**をクリックして、新しいモデルを作成します。 **モデルの作成**ウィザードの最初のページで、モデル名を **TMSEngines** にします。 
+1. 新しいエンジンを配置するには、エンジンを含めるモデルが必要です。 **Dynamics 365**&gt; **モデル管理**メニューで、**モデルの作成**をクリックして、新しいモデルを作成します。 **モデルの作成**ウィザードの最初のページで、モデル名を **TMSEngines** にします。 
 
    [![モデルの作成](./media/012.png)](./media/012.png)
 
@@ -52,10 +52,10 @@ ms.locfileid: "1555026"
 
    [![モデル作成の完了](./media/042.png)](./media/042.png)
 
-5. 新しいソリューションで、新しい Finance and Operations プロジェクトを作成し、**TMSThirdParty** と名前を付けます。 プロジェクト プロパティで、プロジェクトのモデルを **TMSEngines** に設定します。
+5. 新しいソリューションで、新しい Supply Chain Management プロジェクトを作成し、**TMSThirdParty** と名前を付けます。 プロジェクト プロパティで、プロジェクトのモデルを **TMSEngines** に設定します。
 6. ソリューションに新しい C\# クラス ライブラリを追加し、**ThirdPartyTMSEngines** という名前をつけます。
-7. ThirdPartyTMSEngines プロジェクトで、Finance and Operations 固有のアセンブリへの参照を追加します。
-   -   X++ タイプの参照を有効にするアプリケーション アセンブリ。 これらのアセンブリは、次の場所にあります。 \[パッケージ ルート\] は、C:\\パッケージなど、展開された Dynamics 365 for Finance and Operations アセンブリが配置されている場所のバスです。
+7. ThirdPartyTMSEngines プロジェクトで、Supply Chain Management 固有のアセンブリへの参照を追加します。
+   -   X++ タイプの参照を有効にするアプリケーション アセンブリ。 これらのアセンブリは、次の場所にあります。 \[パッケージ ルート\] は、C:\\Packages など、展開されたアセンブリが配置されている場所のパスです。
 
            [Packages root]\ApplicationPlatform\bin\Dynamics.AX.ApplicationPlatform.dll
            [Packages root]\ApplicationFoundation\bin\Dynamics.AX.ApplicationFoundation.dll
@@ -109,7 +109,7 @@ ms.locfileid: "1555026"
     [![アプリケーション エクスプ ローラーの参照ノード内の新しいライブラリ](./media/061.png)](./media/061.png)
 
 ## <a name="deploy-the-tms-engine-as-a-package"></a>TMS エンジンをパッケージとして配置する
-サードパーティの TMS エンジンを配置する 1 つの方法は、配置パッケージを介することです。 実稼働環境では、この方法をお勧めします。 開発環境では、次のセクション「Finance and Operations で TMS エンジンを設定する」で説明するように手動でアセンブリをコピーできます。 エンジンをパッケージとして展開するには、次の手順を実行します。
+サードパーティの TMS エンジンを配置する 1 つの方法は、配置パッケージを介することです。 実稼働環境では、この方法をお勧めします。 開発環境では、次のセクション「Supply Chain Management で TMS エンジンを設定する」で説明するように手動でアセンブリをコピーできます。 エンジンをパッケージとして展開するには、次の手順を実行します。
 
 1. **Dynamics 365** &gt; **配置** メニューで、<strong>配置パッケージの作成</strong> をクリックします。
 2. **配置パッケージの作成**ダイアログ ボックスで、TMSEngines モデルを選択し、パッケージ ファイルを格納する場所のパスを入力します。 
@@ -118,17 +118,17 @@ ms.locfileid: "1555026"
 
 3. パッケージをターゲット環境に展開することができるようになりました。 チュートリアルについては、[配置可能パッケージのインストール](../../dev-itpro/deployment/install-deployable-package.md) を参照してください。
 
-## <a name="set-up-the-tms-engine-in-finance-and-operations"></a>Finance and Operations で TMS エンジンを設定
-このセクションでは、TMS エンジンを使用するために Finance and Operations を設定する方法と、作成した新しいエンジンをレート ショッピングに使用する方法を示します。 このセクションの例では、USMF デモ データ会社を使用しています。
+## <a name="set-up-the-tms-engine-in-supply-chain-management"></a>Supply Chain Management での TMS エンジンの設定
+このセクションでは、TMS エンジンを使用するために Supply Chain Management を設定する方法、および作成した新しいエンジンをレート ショッピングで使用する方法を示します。 このセクションの例では、USMF デモ データ会社を使用しています。
 
 1. 「新しい TMS エンジンの作成」の説明に従って、新しいエンジンを作成します。
 2. ソリューションを構築します。
-3. 結果のアセンブリを Finance and Operations サーバーのバイナリの場所、\[AOSWebRoot\]bin にコピーします。 **注記:** このステップは、開発環境にのみ関連します。 実稼働環境では、配置パッケージを介して配置する必要があります。 手順については、前のセクションの「パッケージとして TMS エンジンを配置する」を参照してください。
-4. Finance and Operations では、**レート エンジン** ページで新しい評価エンジンを作成します。 エンジンは、実装したエンジン クラス ライブラリとエンジン クラスを作成して生成されたエンジン アセンブリを指す必要があります。 
+3. 結果のアセンブリを Supply Chain Management サーバーのバイナリの場所、\[AOSWebRoot\]bin にコピーします。 **注記:** このステップは、開発環境にのみ関連します。 実稼働環境では、配置パッケージを介して配置する必要があります。 手順については、前のセクションの「パッケージとして TMS エンジンを配置する」を参照してください。
+4. Supply Chain Management では、**レート エンジン** ページで新しい評価エンジンを作成します。 エンジンは、実装したエンジン クラス ライブラリとエンジン クラスを作成して生成されたエンジン アセンブリを指す必要があります。 
 
    [![レート エンジン ページで新規評価エンジンの作成](./media/081.png)](./media/081.png)
 
-5. サンプル レート エンジンを使用する配送業者を作成します。 当社のエンジンは Finance and Operations においていかなるデータも使用しないため、レート マスターを割り当てる必要はありません。 
+5. サンプル レート エンジンを使用する配送業者を作成します。 当社のエンジンはいかなるデータも使用しないため、レート マスターを割り当てる必要はありません。 
 
    [![新規出荷の配送業者の作成](./media/092.png)](./media/092.png)
 
@@ -137,10 +137,7 @@ ms.locfileid: "1555026"
    [![工順ワークベンチの評価](./media/101.png)](./media/101.png)
 
 ## <a name="tips-and-tricks"></a>ヒントや秘訣
--   Finance and Operations の開発ツールを使用している場合、ソリューションに新しい Finance and Operations プロジェクトを追加すると便利です。 このプロジェクトをスタートアップ プロジェクトとして設定した場合、デバッグ セッションを開始すると、同じデバッグ セッションで X++ と C\# コードの両方のコードをデバッグできます。
--   ThirdPartyTMSEngines プロジェクトを変更して再コンパイルするたびに、アセンブリの結果を Finance and Operations バイナリの場所に手動でコピーするか、展開パッケージを通じて展開する必要があります。 それ以外の場合、古いアセンブリを使用して実行される場合があります。
--   Finance and Operations で TMS 固有の操作を実行した後、Internet Information Services (IIS) ワーカー プロセスによって ThirdPartyTMSEngines アセンブリが、ロックされアセンブリを更新することができなくなることがあります。 この場合、w3svc プロセスを再起動します。
-
-
-
+-   Supply Chain Management の開発ツールを使用している場合、ソリューションに新しいプロジェクトを追加すると便利です。 このプロジェクトをスタートアップ プロジェクトとして設定した場合、デバッグ セッションを開始すると、同じデバッグ セッションで X++ と C\# コードの両方のコードをデバッグできます。
+-   ThirdPartyTMSEngines プロジェクトを変更して再コンパイルするたびに、アセンブリの結果をバイナリの場所に手動でコピーするか、展開パッケージを通じて展開する必要があります。 それ以外の場合、古いアセンブリを使用して実行される場合があります。
+-   Supply Chain Management で TMS 固有の操作を実行した後、Internet Information Services (IIS) ワーカー プロセスによって ThirdPartyTMSEngines アセンブリが、ロックされアセンブリを更新することができなくなることがあります。 この場合、w3svc プロセスを再起動します。
 

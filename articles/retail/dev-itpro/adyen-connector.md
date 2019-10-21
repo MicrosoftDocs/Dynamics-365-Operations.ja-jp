@@ -3,7 +3,7 @@ title: Adyen 向け Dynamics 365 Payment Connector
 description: このトピックでは、Adyen 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: rassadi
 manager: AnnBe
-ms.date: 08/23/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6abf4de2da25b0cbbf48a33c138155ab3dd4b79
-ms.sourcegitcommit: b7f70ee1e54c65c19e1d33c76d2428f9c6c05c66
+ms.openlocfilehash: 6107c54552623c496a4ae3344c61742f3a70b865
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918478"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019306"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -35,7 +35,7 @@ ms.locfileid: "1918478"
 
 | 相談 | 説明 |
 |---|---|
-| 支払コネクタ | Microsoft Dynamics 365 for Retail (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 このトピックで説明されているコネクタは、標準の支払ソフトウェア開発キット (SDK) を使用して実装されました。 |
+| 支払コネクタ | Microsoft Dynamics 365 Retail (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 このトピックで説明されているコネクタは、標準の支払ソフトウェア開発キット (SDK) を使用して実装されました。 |
 | カードあり | Dynamics 365 販売時点管理への支払ターミナル コネクタで物理的なカードが提示および使用される支払トランザクションを参照します。 |
 | カードなし | 電子商取引またはコール センター シナリオなど、現物カードが提示されない支払トランザクションを参照します。 これらのシナリオでは、支払に関連する情報は、電子商取引Webサイト、コール センター フロー、または販売時点管理上または支払ターミナルで手動で入力されます。 |
 
@@ -54,51 +54,51 @@ ms.locfileid: "1918478"
 ### <a name="supported-versions"></a>サポートされているバージョン
 
 #### <a name="microsoft-dynamics-365-supported-versions"></a>Microsoft Dynamics 365 のサポートされているバージョン
-ファーストパーティーの独創的な Adyen 向け Dynamics 365 Payment Connector は Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) またはそれ以降、および Microsoft Dynamics 365 for Retail バージョン 8.1.3 またはそれ以降でサポートされます。 ただし、サード パーティは Microsoft Dynamics 365 の初期バージョンのために他の Adyen 用支払コネクタを開発することができます。
+ファーストパーティーの独創的な Adyen 向け Dynamics 365 Payment Connector は Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) またはそれ以降、および Microsoft Dynamics 365 Retail バージョン 8.1.3 またはそれ以降でサポートされます。 ただし、サード パーティは Microsoft Dynamics 365 の初期バージョンのために他の Adyen 用支払コネクタを開発することができます。
 
 #### <a name="supported-adyen-firmware-versions"></a>サポートされている Adyen ファームウェアバージョン
-次の表は、Microsoft Dynamics 365 for Retail POS の各バージョンでサポートされている最小および最大の Adyen ファームウェア バージョンを示しています。
+次の表は、Microsoft Dynamics 365 Retail POS の各バージョンでサポートされている最小および最大の Adyen ファームウェア バージョンを示しています。
 
 ---
 
 # <a name="813tab8-1-3"></a>[8.1.3](#tab/8-1-3)
-### <a name="dynamics-365-for-retail-pos-version-813"></a>Dynamics 365 for Retail POS バージョン 8.1.3
+### <a name="dynamics-365-retail-pos-version-813"></a>Dynamics 365 Retail POS バージョン 8.1.3
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # <a name="100tab10-0"></a>[10.0](#tab/10-0)
-### <a name="dynamics-365-for-retail-pos-version-100"></a>Dynamics 365 for Retail POS バージョン 10.0
+### <a name="dynamics-365-retail-pos-version-100"></a>Dynamics 365 Retail POS バージョン 10.0
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # <a name="1001tab10-0-1"></a>[10.0.1](#tab/10-0-1)
-### <a name="dynamics-365-for-retail-pos-version-1001"></a>Dynamics 365 for Retail POS バージョン 10.0.1
+### <a name="dynamics-365-retail-pos-version-1001"></a>Dynamics 365 Retail POS バージョン 10.0.1
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # <a name="1002tab10-0-2"></a>[10.0.2](#tab/10-0-2)
-### <a name="dynamics-365-for-retail-pos-version-1002"></a>Dynamics 365 for Retail POS バージョン 10.0.2
+### <a name="dynamics-365-retail-pos-version-1002"></a>Dynamics 365 Retail POS バージョン 10.0.2
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_38p5 |
 
 # <a name="1003tab10-0-3"></a>[10.0.3](#tab/10-0-3)
-### <a name="dynamics-365-for-retail-pos-version-1003"></a>Dynamics 365 for Retail POS バージョン 10.0.3
+### <a name="dynamics-365-retail-pos-version-1003"></a>Dynamics 365 Retail POS バージョン 10.0.3
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_38p5 |
 
 # <a name="1004tab10-0-4"></a>[10.0.4](#tab/10-0-4)
-### <a name="dynamics-365-for-retail-pos-version-1004"></a>Dynamics 365 for Retail POS バージョン 10.0.4
+### <a name="dynamics-365-retail-pos-version-1004"></a>Dynamics 365 Retail POS バージョン 10.0.4
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_38p5 | adyen_v1_38p6 |
 
 # <a name="1005tab10-0-5"></a>[10.0.5](#tab/10-0-5)
-### <a name="dynamics-365-for-retail-pos-version-1005"></a>Dynamics 365 for Retail POS バージョン 10.0.5
+### <a name="dynamics-365-retail-pos-version-1005"></a>Dynamics 365 Retail POS バージョン 10.0.5
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_38p5 | adyen_v1_40p6 |
@@ -332,7 +332,7 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
     | ローカル Cryptor バージョン | Adyen ゲートウェイとやり取りするときに使用する Adyen cryptor バージョンを入力します。 このフィールドは **1** にセットする必要があります。 | 有 | 有 | 1 |
     | クラウド API キー | このフィールドは、カードあり支払統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |
     | サポートされている通貨 | コネクタが処理する必要がある通貨を入力します。 カードありのシナリオでは、トランザクション要求が支払端末に送信された後、Adyen は[動的通過換算](https://www.adyen.com/pos-payments/dynamic-currency-conversion)を使用した追加通過をすることができることに注意してください。 サポートされている通貨の一覧を取得するには、Adyen サポートに問い合わせてください。 | 有 | 有 | USD;EUR |
-    | サポートされている支払/入金タイプ | コネクタが処理する必要がある支払/入金タイプを入力します。 | 有 | 有 | Visa;MasterCard;Amex;Discover;Debit |
+    | サポートされている支払/入金タイプ | コネクタが処理する必要がある支払/入金タイプを入力します。 これらの値は、大文字と小文字を区別します。 | はい | はい | Visa;MasterCard;Amex;Discover;Debit |
     | ギフト カード プロバイダー | ギフト カードの処理にコネクタが使用する必要があるギフト カード プロバイダーを入力します。 可能な値は **SVS** および **GIVEX** です。 | 無 | 無 | SVS |
 
 4. アクション ウィンドウで、**保存**を選択します。
@@ -355,7 +355,7 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
 4. **プロファイル** セクションの **ハードウェア プロファイル** フィールドでは、以前構成したハードウェア プロファイルを選択します。
 5. 変更を保存します。
 6. アクション ウィンドウで、**レジスター** タブの、**ハードウェア** グループで、**IP アドレスのコンフィギュレーション** を選択します。
-7. **IP アドレスのコンフィギュレーション** ページの、**PIN パッド** クイックタブの、**IP アドレス** フィールドで、端末の IP アドレスを以下の書式で入力します: `https://<IP address>:8443/nexo/<POIID>`。 ここで、**\<IP アドレス\>** および **\<POIID\>** は、Adyen 支払端末をオンボードしたときに記録した値です。 次に例を示します: `https://192.168.1.3:8443/nexo/MX925-123456789`。
+7. **IP アドレスのコンフィギュレーション** ページの、**PIN パッド** クイックタブの、**IP アドレス** フィールドで、端末の IP アドレスを以下の書式で入力します: `https://<IP address>:8443/nexo/<POIID>`。 ここで、**\<IP アドレス\>** および **\<POIID\>** は、Adyen 支払端末をオンボードしたときに記録した値です。 次に例を示します: `https://192.168.1.3:8443/nexo/MX925-123456789`。 この URL の値は大文字と小文字を区別することに注意してください。
 
 #### <a id="update-the-modern-pos-or-iis-hardware-station-configuration"></a>Modern POS または IIS ハードウェア ステーションのコンフィギュレーションの更新
 

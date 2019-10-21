@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 31bd7cbb4bf3de3c7f0bacdcbfdd0c6109026a1e
-ms.sourcegitcommit: e7834191b6eb14f525823075efcc1b1ab2c68463
+ms.openlocfilehash: 2b45b806a2aabda5d933cd25edcea9bc87d67e38
+ms.sourcegitcommit: 2555acfd855fc18ff3ba432ba2cf7633a8f1653c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "1920438"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "2238560"
 ---
 # <a name="retail-modern-pos-mpos-triggers-and-printing"></a>Retail Modern POS (MPOS) のトリガーと印刷
 
@@ -32,7 +32,6 @@ ms.locfileid: "1920438"
 - 操作を続行またはキャンセルします。 たとえば、検証が失敗するかまたはエラーが返される場合、前のトリガーで操作をキャンセルできます。 ポスト トリガーはキャンセル可能ではありません。
 - 標準ロジックが実行された後にカスタム メッセージを表示するか、カスタム フィールドを挿入するシナリオでは、ポスト トリガーを使用します。 
 
-このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。 
 
 次のテーブルは、使用可能なトリガーをリストし、それらを取り消すことができるかどうかを示しています。
 
@@ -68,14 +67,21 @@ ms.locfileid: "1920438"
 
 | トリガー                   | 種類                    | 説明                                                        |
 |---------------------------|-------------------------|--------------------------------------------------------------------|
-| PreCustomerAddTrigger     | 解約可能              | 新しい顧客を作成する前に実行されます。             |
-| PostCustomerAddTrigger    | キャンセル不可          | 新しい顧客を作成した後に実行されます。              |
-| PreCustomerClearTrigger   | PreCustomerClearTrigger | 顧客がカートから削除する前に実行されます。 |
+| PreCustomerAddTrigger     | 解約可能              | トランザクションに顧客を追加する前に実行されます。             |
+| PostCustomerAddTrigger    | キャンセル不可          | トランザクションに顧客を追加した後に実行されます。              |
+| PreCustomerClearTrigger   | 解約可能              | 顧客がカートから削除する前に実行されます。 |
 | PostCustomerClearTrigger  | キャンセル不可          | 顧客がカートから削除した後に実行されます。 |
 | PreCustomerSetTrigger     | 解約可能              | 顧客がカートに追加される前に実行されます。            |
 | PreCustomerSearchTrigger  | 解約可能              | 顧客検索が行われる前に実行されます。      |
 | PostCustomerSearchTrigger | キャンセル不可          | 顧客検索が行われた後に実行されます。       |
 | PostIssueLoyaltyCardTrigger  | キャンセル不可          | ロイヤルティ カードが発行された後に実行されます。       |
+| PreCustomerSaveTrigger  | 解約可能          | 顧客を作成する前に実行されます。       |
+| PostCustomerSaveTrigger  | キャンセル不可          | 顧客を作成した後に実行されます。       |
+| PreGetLoyaltyCardBalanceTrigger  | 解約可能          | ロイヤルティ カード残高を取得する前に実行されます。       |
+| PostGetLoyaltyCardBalanceTrigger  | キャンセル不可          | ロイヤルティ カード残高を取得した後に実行されます。       |
+| PreDisplayLoyaltyCardBalanceTrigger  | 解約可能          | ロイヤルティ カード残高を表示する前に実行されます。       |
+
+
 
 ## <a name="discount-triggers"></a>割引のトリガー
 
@@ -389,7 +395,9 @@ ms.locfileid: "1920438"
 
 ## <a name="override-the-crt-receipt-request-to-generate-the-receipt-data"></a>受領書データを生成するために CRT 受領要求を上書きする
 
-このセクションでは、中断されたトランザクションのレシートを印刷するために既存の CRT 要求を上書きする方法について説明します。 このセクションでは、Microsoft Dynamics 365 for Finance and Operations または Microsoft Dynamics 365 for Retail プラットフォーム更新プログラム 8 に適用されます。
+
+このセクションでは、中断されたトランザクションのレシートを印刷するために既存の CRT 要求を上書きする方法について説明します。 
+
 
 1. Visual Studio 2015 を起動します。
 2. **ファイル**メニューで、**開く \> プロジェクト/ソリューション**を選択します。 テンプレート プロジェクト (**SampleCRTExtension.csproj**) を検索します。
@@ -650,7 +658,7 @@ ms.locfileid: "1920438"
 
 ## <a name="add-the-custom-receipt-layout"></a>カスタム レシート レイアウトの追加
 
-1. Dynamics 365 for Finance and Operations Enterprise Edition を開きます。
+1. Dynamics 365 Retail を開きます。
 2. **小売** > **チャンネル設定** > **POS 設定** > **POS** > **受領書フォーマット**の順に移動します。
 3. **受領書フォーマット**内の**新規**をクリックします。
 4. **提出した受領書フォーマット** フィールドに、**中断**という形式名を入力します。 **受領書タイプ** フィールドで、**CustomReceiptType7** を選択します。

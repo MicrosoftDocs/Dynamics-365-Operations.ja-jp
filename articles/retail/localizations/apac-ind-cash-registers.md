@@ -3,7 +3,7 @@ title: インド向けキャッシュ レジスターの商品及びサービス
 description: このトピックでは、インドで使用可能なキャッシュ レジスター機能の概要を示します。 また、機能を設定するためのガイドラインを示します。
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 01/31/2018
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,21 +16,20 @@ ms.search.industry: Retail
 ms.author: v-pakris
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: b757fe5a704b0fd230dad684b522929b6e648f5a
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c4f49a7af34eaf752545b37d7b977b3cdab885c8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834114"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023378"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail に関連するフィーチャのチュートリアルを提供します。 また、さまざまな種類の小売業務取引に対する GST の影響をハイライトして、レシートが販売時点管理 (POS) で印刷される小売り取引の会計および転記を示します。
 
-> [!NOTE]
-> このトピックは、Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail の両方に適用されます。
+このトピックでは、関連するフィーチャのチュートリアルを提供します。 また、さまざまな種類の小売業務取引に対する GST の影響をハイライトして、レシートが販売時点管理 (POS) で印刷される小売り取引の会計および転記を示します。
+
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -53,7 +52,7 @@ ms.locfileid: "1834114"
 | 税設定                           | 小売 \> チャネル設定 \> 売上税 \> 税コンフィギュレーション \> 税設定      |
 
 > [!NOTE]
-> 小売でのインドの税エンティティ用ナビゲーション パスは、Finance and Operations でのナビゲーション パスと異なります。 Finance and Operations のナビゲーション パスの詳細については、[インドの商品及びサービス税 (GST)](../../financials/localizations/apac-ind-gst.md) を参照してください。
+> Retail でのインドの税エンティティ用ナビゲーション パスは、Finance でのナビゲーション パスと異なります。 Finance のナビゲーション パスの詳細については、[インドの商品及びサービス税 (GST)](../../financials/localizations/apac-ind-gst.md) を参照してください。
 
 ## <a name="validate-tax-information-for-the-retail-store"></a>小売店舗の税情報の検証
 
@@ -419,3 +418,33 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 
     5. **税務書類** を選択します。
     6. 返品領収書番号が取引 ID として更新されたことを確認します。
+
+## <a name="update-retail-credit-notes-with-references-to-original-invoices"></a>元の請求書に関連する小売の訂正票の更新
+
+> [!NOTE]
+> この機能は、アプリケーション更新プログラム 10.0.3 以降で使用できます。
+
+GSTR レポートに正しく反映されるためには、売上訂正票に元の売上請求書への参照が含まれている必要があります。 小売明細書をにより小売店舗のトランザクションを転記すると、小売の返品トランザクションに対してこの参照を確立できない場合があります。 **元の請求書に関連する訂正票の更新**手順を使用して、訂正票の**元の GST トランザクション ID** のリンクを更新し、リンクが関連付けられている元の売上請求書を正しく参照するようにすることができます。 この手順は、**小売 > 小売 IT > POS の転記**メニューにあります。
+
+また、**小売パラメーター** ページの**返品を集計しない**パラメーターを有効にすることをお勧めします。 この場合、小売明細書を転記する時、各返品トランザクションは別の販売注文として転記されます。 このオプションは、小売トランザクション集計が有効になっている場合にのみ使用可能です。
+
+## <a name="manage-customer-registration-numbers-from-pos"></a>POS からの顧客登録番号の管理
+
+> [!NOTE]
+> この機能は、アプリケーション更新プログラム 10.0.6 以降で使用可能です。
+
+顧客マスター レコードおよび顧客住所レコードを POS で作成または編集する場合、GSTIN、VAT 番号 (TIN)、および PAN 番号などの顧客登録番号を指定することができます。 顧客登録番号は領収書に印刷されるか、POS で顧客を検索するために使用されます。
+
+### <a name="configure-printing-customer-registration-numbers-in-receipts"></a>領収書の顧客登録番号印刷のコンフィギュレーション
+
+領収書への顧客登録番号の印刷を有効にするには、[言語テキストおよびカスタム フィールドのコンフィギュレーション](#configure-language-texts-and-custom-fields) セクションで説明されている次の手順に従ってください。 次の名前を使用して言語テキストおよびカスタム フィールドを追加します。
+
+- **TAXREGISTRATIONGST_IN** GST 登録番号用。
+- **TAXREGISTRATIONTIN_IN** VAT 登録番号用。
+- **TAXREGISTRATIONPAN_IN** PAN 登録番号用。
+
+領収書プロファイルへカスタム フィールドを追加します。
+
+### <a name="enable-searching-customers-by-tax-registration-numbers-in-pos"></a>POS での税務登録番号による顧客検索を有効にする
+
+POS での税務登録番号による顧客検索を有効にするには、**小売パラメーター** ページの **POS 検索基準**タブにおいて、**顧客検索基準**クイック タブにレコードを追加し、**顧客検索基準**ドロップダウン リスト内の**税務登録番号**を選択します。 **絞り込み可能**チェック ボックスはオフにし、**ショートカットとして表示**チェック ボックスを選択します。 **配送スケジュール** ページで、1110 のジョブを実行します。

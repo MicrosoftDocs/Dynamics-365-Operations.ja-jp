@@ -16,14 +16,14 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-08-11
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4872f05033ec0bc10e93772757fd2cb7d46957ed
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 7a0142f472e4777d465f1dbd4f5ab66b6bfd9371
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741932"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2552199"
 ---
-# <a name="core-hr-and-common-data-service"></a>Core HR および Common Data Service
+# <a name="core-hr-entities-in-common-data-service"></a>Common Data Service の Core HR エンティティ
 
 [!include [banner](includes/banner.md)]
 
