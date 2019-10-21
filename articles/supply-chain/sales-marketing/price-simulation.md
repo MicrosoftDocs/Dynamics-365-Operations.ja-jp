@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fe8c4bc8f2efb06de4cb6fd727df93ba1a5d14bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554647"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251348"
 ---
 # <a name="price-simulation"></a>価格のシミュレーション
 
@@ -51,7 +51,7 @@ ms.locfileid: "1554647"
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>売買契約の割引タイプ
 
-Microsoft Dynamics 365 for Finance and Operations の売買契約では、4 タイプの価格割引が扱われます。 これらの割引は異なる品目、顧客、または価格グループに対して設定でき、割引を日付で制限できます。 価格シミュレーションの実行時に計算ミスを防ぐには、売買契約を考慮する必要があります。 売買契約で扱う 4 タイプの割引は次のとおりです。
+Supply Chain Management の売買契約では、4 タイプの価格割引が扱われます。 これらの割引は異なる品目、顧客、または価格グループに対して設定でき、割引を日付で制限できます。 価格シミュレーションの実行時に計算ミスを防ぐには、売買契約を考慮する必要があります。 売買契約で扱う 4 タイプの割引は次のとおりです。
 
 -   **販売価格** – 品目に対して別個の販売価格を指定できます。 見積書明細行が作成されると、品目の正確な販売価格が検索され、見積書明細行に転送されます。 したがって、この種類の割引がある売買契約は価格シミュレーションに影響しません。 見積書明細行で使用される販売価格には、売買契約が反映されます。
 -   **行割引** – 注文された数量により、品目に特別割引が指定されます。 明細行の量は、通常は価格シミュレーション実行前に行割引によって減らされます。 したがって、この種類の割引がある売買契約は価格シミュレーションに影響します。

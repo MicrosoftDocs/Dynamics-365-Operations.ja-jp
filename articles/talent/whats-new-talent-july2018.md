@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 7 月)
-description: このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent - Core HR (2018 年 7 月) の新機能および変更された機能
+description: このトピックでは、Microsoft Dynamics 365 Talent - Core HR の新機能または変更された機能について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/31/2018
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: c0867fcf6203c303a700723d8c190378f495dac0
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: ba06183f32e9a788432bae640d1997f2ffb127f1
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856260"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010225"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-july-2018"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 7 月)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-july-2018"></a>Dynamics 365 Talent: Core HR (2018 年 7 月) の新機能または変更された機能
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。
+このトピックでは、Microsoft Dynamics 365 Talent: Core HR の新機能または変更された機能について説明します。
 
 ## <a name="powerapps-personalization"></a>PowerApps の個人用設定
 
-Microsoft Dynamics 365 for Talent は Microsoft PowerApps サービスとの統合をサポートします。 PowerApps では開発者と技術者以外のユーザーの両方がコードの記述なしでモバイル デバイス、タブレット、および Web のカスタム ビジネス アプリを構築できます。 PowerApps を使用するユーザー、組織、またはより幅広いエコシステム開発のアプリは、Talent のクライアントに組み込み、製品の機能を拡張することができます。 たとえば、別のシステムから取得した情報で Talent を追加するアプリを構築する可能性があります。
+Talent は Microsoft PowerApps サービスとの統合をサポートします。 PowerApps では開発者と技術者以外のユーザーの両方がコードの記述なしでモバイル デバイス、タブレット、および Web のカスタム ビジネス アプリを構築できます。 PowerApps を使用するユーザー、組織、またはより幅広いエコシステム開発のアプリは、Talent のクライアントに組み込み、製品の機能を拡張することができます。 たとえば、別のシステムから取得した情報で Talent を追加するアプリを構築する可能性があります。
 
 詳細については、[PowerApps の埋め込みアプリ](../fin-and-ops/get-started/embed-power-apps.md) を参照してください。
 

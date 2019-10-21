@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent の新機能および変更された機能 (2019 年 3 月 26 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent の新機能および変更された機能 (2019 年 3 月 26 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/26/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24070d1efa3299c378d7a4a328531817a598d272
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741570"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023887"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-26-2019"></a>Dynamics 365 for Talent の新機能および変更された機能 (2019 年 3 月 26 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 3 月 26 日)
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 
@@ -53,7 +53,7 @@ ms.locfileid: "1741570"
 
 ### <a name="custom-field-support-available-for-select-entities-in-common-data-service"></a>Common Data Service でエンティティに選択可能なカスタム フィールド サポート 
 
-次の Common Data Service エンティティは、Dynamics 365 for Talent で作成した顧客のフィールドに対応するようになりました。
+次の Common Data Service エンティティは、Talent で作成した顧客のフィールドに対応するようになりました。
 
 - ワーカー
 - 出身民族
@@ -72,7 +72,7 @@ ms.locfileid: "1741570"
 今回のリリースでは、会社ごとにセキュリティを制限している場合、固定報酬プランが表示されるようになりました。 すべてのセキュリティ設定が遵守され、ユーザーにアクセス許可がある会社に対しては固定プランが表示されます。 
 
 ### <a name="cant-delete-job-records-using-open-in-excel-option-in-talent"></a>Talent の Excel で開くオプションを使用してジョブ レコードを削除できない
-このリリースでは、Dynamics 365 for Talent の **Excel で開く**オプションを使用して、ジョブレコードを削除できるようになりました。
+このリリースでは、Talent の **Excel で開く**オプションを使用して、ジョブ レコードを削除できるようになりました。
 
 ### <a name="upgrade-to-common-data-service"></a>Common Data Service へのアップグレード
 Common Data Service へのアップグレードの期限が近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、PowerApps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
@@ -93,7 +93,7 @@ Common Data Service へのアップグレードの期限が近づいています
 多くの組織では、報酬および福利厚生の管理者は特定の報酬レコードにのみアクセスできます。 これらは、経営幹部または地域の従業員向けのものである可能性があります。 この変更により、HR は組織内のさまざまな従業員グループの報酬プランを管理および維持できます。 固定および変動プランにはセキュリティ ロールを割り当てることができます。これは、プランへのアクセス権とプランに関連する従業員データ (給与または特別償却レコードなど) を決定します。 アクセス権を付与されたロールのみが、これらの従業員の報酬を処理できます。
 
 ###  <a name="email-support-for-alerts"></a>アラートの電子メールサポート
-プラットフォーム更新プログラム 25 を使用すると、あるイベントによってトリガーされたときに、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。 
+Finance and Operations のプラットフォーム更新プログラム 25 では、あるイベントによってトリガーされた時、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。 
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>重複する従業員チェック : ユーザー インターフェイスの変更
 この変更により、名前のフィールドを入力すると重複が検出され、見つかった重複の数がステータスに表示されるようになります。 提供されたリンクを選択して新しいページを開き、検出された一致を使用するかどうかを評価できます。 データ入力の中断を回避するために、重複フォームは自動的に開きません。

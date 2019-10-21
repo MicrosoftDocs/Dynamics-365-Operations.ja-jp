@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 1b55b91246b22951f4e1d148f59444423e1d8a3d
-ms.sourcegitcommit: e54607a2c80bec4db05045825914f50947f6e31e
+ms.openlocfilehash: 811d499a3eb8133e5ffd29bb4ae6a0c57708accd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1917515"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023445"
 ---
 # <a name="create-and-update-store-hours"></a>店舗の営業時間の作成と更新
 
@@ -36,7 +36,7 @@ ms.locfileid: "1917515"
 
 顧客が別の店舗の集荷注文を持っている場合、レジ担当者はその店舗で集荷できる日付を選択できます。 店舗ルックアップでは、日付と店舗の営業時間を参照できます。 レジ担当者は日付と場所を選択でき、店舗の営業時間を含む集荷受入を印刷することもできます。
 
-この機能は、Microsoft Dynamics 365 for Retail バージョン 8.1.2 以降で使用できます。
+この機能は、Microsoft Dynamics 365 Retail バージョン 8.1.2 以降で使用できます。
 
 ## <a name="configure-store-hours"></a>店舗の営業時間のコンフィギュレーション
 

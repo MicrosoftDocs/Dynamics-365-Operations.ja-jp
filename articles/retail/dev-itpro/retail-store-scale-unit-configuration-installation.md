@@ -19,18 +19,21 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb40f9981ffd1f0e81aa6e67c7b452c1dbe283f9
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 8c39a694a0300c58b3791e9e16e6d29b27c7906d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833121"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025533"
 ---
 # <a name="configure-and-install-retail-store-scale-unit"></a>Retail Store Scale Unit のコンフィギュレーションとインストール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、セルフ サービスを使用して、Microsoft Dynamics 365 for Retail バックオフィスで Retail Store Scale Unit を構成し、ダウンロードして、実店舗の 1 台以上のコンピューターにインストールする方法について説明します。 Retail Store Scale Unit は、Retail チャネル データベース、Retail Async Client、Retail Server、Retail Cloud 販売時点管理 (POS) コンポーネントを組み合わせます。 Microsoft Dynamics 365 for Retail 環境では、これらのコンポーネントが既に提供されています。 ただし、単一コンピューターのセットアップ (既定のオプション) または複数コンピューターのセットアップのいずれかで、ストア内でローカルに動作するように構成できるようになりました。 このトピックは、Retail Store Scale Unit のアンインストールとトラブルシューティングの方法についても説明します。
+このトピックでは、セルフ サービスを使用して、Microsoft Dynamics 365 Retail バックオフィスで Retail Store Scale Unit を構成し、ダウンロードして、実店舗の 1 台以上のコンピューターにインストールする方法について説明します。 Retail Store Scale Unit は、Retail チャネル データベース、Retail Async Client、Retail Server、Retail Cloud 販売時点管理 (POS) コンポーネントを組み合わせます。 Microsoft Dynamics 365 Retail 環境では、これらのコンポーネントが既に提供されています。 ただし、単一コンピューターのセットアップ (既定のオプション) または複数コンピューターのセットアップのいずれかで、ストア内でローカルに動作するように構成できるようになりました。 このトピックは、Retail Store Scale Unit のアンインストールとトラブルシューティングの方法についても説明します。
+
+> [!IMPORTANT]
+> このコンポーネントは、Azure Service to Service 認証に加えてサーバー証明書を利用することに注意してください。  生成された Azure Web アプリケーション キー (旧シークレット) とサーバー証明書の両方が、有効期限に対して管理されている必要があります。  既定では、証明書と生成された Azure web アプリケーション キーは 1 つの暦年 (365日) で期限切れになります。
 
 ## <a name="before-you-begin"></a>準備
 
@@ -417,5 +420,5 @@ Microsoft Windows でコントロール パネルを使用して Retail Store �
 
 1. Windows ロゴ キーを押し、検索ボックスに**コントロール パネル**と入力します。 検索結果で、**コントロール パネル**を選択します。
 2. コントロール パネルで、**プログラム** &gt; **プログラムのアンインストール**を選択します。
-3. **プログラムと機能**ウィンドウで、**Microsoft Dynamics 365 for Retail ストア システム**を選択してから、プログラムの一覧で**アンインストール**を選択します。
+3. **プログラムと機能**ウィンドウで、**Microsoft Dynamics 365 Retail Store システム**を選択してから、プログラムの一覧で**アンインストール**を選択します。
 4. アンインストールがプログラムの削除を完了するまで待ちます。

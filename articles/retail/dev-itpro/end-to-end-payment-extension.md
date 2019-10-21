@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c21c5f2354cfd2786852f4a48ea2bbe31e018108
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 5c117e6a967864609dfd075cf694e8c94ee74393
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863309"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023468"
 ---
 # <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払端末のエンド・ツー・エンド支払統合を作成する
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、支払ゲートウェイと直接通信できる支払端末向けに Microsoft Dynamics 365 for Retail Modern POS とクラウド POS (POS) の支払統合を記述する方法について説明します。
+このトピックでは、支払ゲートウェイと直接通信できる支払端末向けに Microsoft Dynamics 365 Retail Modern POS とクラウド POS (POS) の支払統合を記述する方法について説明します。
 
 ## <a name="key-terms"></a>重要な用語
 
@@ -82,7 +82,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 }
 ```
 
-**HandlerName** 文字列は、Microsoft Dynamics 365 for Finance and Operations クライアントを通して特定の POS で使用される支払コネクタを構成するために使用されます (このトピックの後半の情報を参照してください)。
+**HandlerName** 文字列は、クライアントを通して特定の POS で使用される支払コネクタを構成するために使用されます (このトピックの後半の情報を参照してください)。
 
 #### <a name="implement-supported-payment-requests"></a>サポートされている支払要求の実装
 支払関連フローを処理するには、支払コネクタが処理できる、サポートされている要求タイプを定義する必要があります。 また、**実行**メソッドは、コネクタが指定されたメソッドをサポートする各要求をルーティングするために実装する必要があります。 次の例は、サポートされている要求のタイプの完全な一覧と、特定の要求 (すなわち、承認要求) の例を示しています。
@@ -198,8 +198,8 @@ public OpenPaymentTerminalDeviceRequest(string token, string deviceName, Setting
 | 変動 | 説明 |
 |---|---|
 | token | 支払い端末が最初のトランザクションのためにロックされたときに生成される一意のトークン値。 |
-| deviceName | Finance and Operations クライアントの **POS hardware profile** ページで定義されている、デバイスの名前。 |
-| terminalSettings | Finance and Operations クライアントで定義された支払端末固有の構成プロパティのセット。シグネチャ取り込みの最小額やデビット キャッシュバック限度などです。 |
+| deviceName | クライアントの **POS ハードウェア プロファイル** ページで定義されている、デバイスの名前。 |
+| terminalSettings | クライアントで定義された支払端末固有の構成プロパティのセット。署名キャプチャの最小額やデビット キャッシュバック限度などです。 |
 | deviceConfig | ネットワーク端末の場合の IP アドレスやポートなど、名前/値のペアの形式の支払端末固有の設定プロパティのセット。 |
 | extensionTransactionProperties | 名前/値のペアの形式の拡張構成プロパティのセット。 |
 
@@ -215,7 +215,7 @@ public BeginTransactionPaymentTerminalDeviceRequest(string token, string payment
 |---|---|
 | token | 支払い端末が最初のトランザクションのためにロックされたときに生成される一意のトークン値。 |
 | paymentConnectorName | 支払フローの一部として使用される支払コネクタの名前。 この変数は、**IPaymentProcessor** インターフェイスを使用する支払フローと統合する予定がある場合に使用されます。 |
-| merchantInformation | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
+| merchantInformation | クライアントの **POS ハードウェア プロファイル** ページで定義されている商社情報。 |
 | invoiceNumber | POS が販売トランザクションを追跡するために生成する一意の請求書番号。 |
 | isTestMode | 支払コネクタがテスト モードで使用されているかどうかを示す値。 |
 | extensionTransactionProperties | 名前/値のペアの形式の拡張構成プロパティのセット。 |
@@ -555,27 +555,27 @@ public ExecuteTaskPaymentTerminalDeviceRequest(string token, string task, Extens
 </hardwareStationExtension>
 ```
 
-### <a name="configure-the-payment-connector-on-the-pos-hardware-profile-page-in-the-finance-and-operations-client"></a>Finance and Operations クライアントの POS ハードウェア プロファイル ページで支払コネクタをコンフィギュレーション
-POS にロードする正しい支払コネクタを決定するには、次の図に示すように、Finance and Operations クライアントの **POSハードウェア プロファイル** ページの **PINパッド** FastTab で、**デバイス名** フィールドの **PaymentTerminalDevice** プロパティの値を設定する必要があります。
+### <a name="configure-the-payment-connector-on-the-pos-hardware-profile-page-in-the-client"></a>クライアントの POS ハードウェア プロファイル ページで支払コネクタをコンフィギュレーションする
+POS にロードする正しい支払コネクタを決定するには、次の図に示すように、クライアントの **POS ハードウェア プロファイル** ページの **PIN パッド** クイック タブで、**デバイス名**フィールドの **PaymentTerminalDevice** プロパティの値を設定する必要があります。
 
-![Finance and Operations クライアントの POS ハードウェア プロファイル ページで支払コネクタをコンフィギュレーション](media/PAYMENTS/PAYMENT-TERMINAL/SamplePaymentDeviceConfigurInAx.jpg)
+![クライアントの POS ハードウェア プロファイル ページで支払コネクタをコンフィギュレーションする](media/PAYMENTS/PAYMENT-TERMINAL/SamplePaymentDeviceConfigurInAx.jpg)
 
 ## <a name="write-a-payment-processor"></a>支払プロセッサの記述
-通常は、支払ゲートウェイへの直接接続が確立された場合にのみ、支払プロセスが使用されます。 このシナリオは、カードが存在しない販売取引またはより複雑なカードが存在するシナリオで最も頻繁に発生します。 また、支払プロセッサは、Finance and Operations クライアントの **POS ハードウェア プロファイル** ページを使用してコンフィギュレーションされている商社プロパティを処理するために使用されます。
+通常は、支払ゲートウェイへの直接接続が確立された場合にのみ、支払プロセスが使用されます。 このシナリオは、カードが存在しない販売取引またはより複雑なカードが存在するシナリオで最も頻繁に発生します。 また、支払プロセッサは、クライアントの **POS ハードウェア プロファイル** ページを使用してコンフィギュレーションされている商社プロパティを処理するために使用されます。
 
 > [!NOTE]
 > 支払プロセッサは、支払要求がすべて支払ターミナルを使用して直接処理され、商社プロパティを POS を使用して設定する必要がない場合でも、現在のところは必要です。
 
 ### <a name="understanding-the-merchant-properties-flows"></a>商社プロパティ フローを理解する
-次のセクションでは、Finance and Operations クライアントの **POS ハードウェア プロファイル** ページでの商社プロパティの設定方法と、POS での支払フロー中に支払コネクタにこれらのプロパティを渡す方法について説明します。
+次のセクションでは、クライアントの **POS ハードウェア プロファイル** ページでの商社プロパティの設定方法と、POS での支払フロー中に支払コネクタにこれらのプロパティを渡す方法について説明します。
 
 #### <a name="set-merchant-properties-on-the-pos-hardware-profile-page-in-the-finance-and-operations-client"></a>Finance and Operations クライアントの POS ハードウェア プロファイル ページで商社プロパティを設定
-次の図は、Finance and Operations クライアントの **POS ハードウェア プロファイル** ページで商社プロパティを設定する方法を示しています。 マーチャントプロパティを設定するには、**IPaymentProcessor** ライブラリで定義されている **Microsoft.Dynamics.Retail.PaymentSDK** インターフェイスを実装する必要があります。 **GetMerchantAccountPropertyMetadata** と **ValidateMerchantAccount** の 2 つのインターフェイス メソッドが必要です。
+次の図は、クライアントの **POS ハードウェア プロファイル** ページで商社プロパティを設定する方法を示しています。 マーチャントプロパティを設定するには、**IPaymentProcessor** ライブラリで定義されている **Microsoft.Dynamics.Retail.PaymentSDK** インターフェイスを実装する必要があります。 **GetMerchantAccountPropertyMetadata** と **ValidateMerchantAccount** の 2 つのインターフェイス メソッドが必要です。
 
-![Finance and Operations クライアントの POS ハードウェア プロファイル ページで商社プロパティを設定](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)
+![クライアントの POS ハードウェア プロファイル ページで商社プロパティを設定する](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)
 
 #### <a name="set-merchant-properties-on-payment-connector-during-pos-sales-transaction"></a>POS 販売トランザクションの間に支払コネクタで商社プロパティを設定
-次の図は、**BeginTransactionPaymentTerminalDeviceRequest** 要求の間に Retail サーバーを介して Finance and Operations データベースから商社プロパティを取得して支払コネクタに渡す仕組みを示しています。
+次の図は、**BeginTransactionPaymentTerminalDeviceRequest** 要求の間に Retail サーバーを介してデータベースから商社プロパティを取得して支払コネクタに渡す仕組みを示しています。
 
 ![POS 支払フロー時に支払コネクタに商社プロパティを設定](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesPOSFlow.jpg)
 

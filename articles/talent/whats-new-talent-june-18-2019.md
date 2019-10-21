@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent の新機能または変更された機能 (2019 年 6 月 18 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent の新機能または変更された機能 (2019 年 6 月 18 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/18/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-18
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: bfc90d6eec27e55364d4bf2279ffd32fb8d53ca8
-ms.sourcegitcommit: f21b2349967feb3db2016c8ff83a2b11957f8863
+ms.openlocfilehash: 059a0bad2f56b97a1708b64eab9d2adda6d2c8ad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "1691973"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009056"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-18-2019"></a>Dynamics 365 for Talent の新機能または変更された機能 (2019 年 6 月 18 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-18-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 6 月 18 日)
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 

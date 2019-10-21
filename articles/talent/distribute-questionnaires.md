@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c9392263e8c113c541b64e8e79853520a13d11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518418"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026259"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>アンケートの配布およびスケジューリング
 
@@ -83,7 +83,7 @@ ms.locfileid: "1518418"
 
 参照タイプを使用して、アンケートをいつスケジューリングするかを選択できる回答者の条件を入力できます。 
 
-**参照タイプ**ページを使用してアンケートの参照タイプを設定します。 各参照タイプは Microsoft Dynamics 365 for Finance and Operations のテーブルに対応します。 アンケート スケジュールを作成すると、テーブル内の個々のレコードや、アンケートが関連付けられるレコードの範囲を指定できます。 
+**参照タイプ**ページを使用してアンケートの参照タイプを設定します。 各参照タイプは Microsoft Dynamics 365 Finance のテーブルに対応します。 アンケート スケジュールを作成すると、テーブル内の個々のレコードや、アンケートが関連付けられるレコードの範囲を指定できます。 
 
 たとえば、コース テーブルを選択した場合、アンケートが使用される特定のコースを決定できます。 コース テーブルの参照を設定すると、**コース**ページの一部のフィールドおよびボタンが使用できるようになります。
 

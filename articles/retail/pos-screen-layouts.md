@@ -1,6 +1,6 @@
 ---
 title: 販売時点管理 (POS) の画面レイアウト
-description: このトピックでは、Microsoft Dynamics 365 for Retail POS (販売時点管理) の画面レイアウトに関する情報を提供します。
+description: このトピックでは、Dynamics 365 Retail POS (販売時点管理) の画面レイアウトに関する情報を提供します。
 author: jblucher
 manager: AnnBe
 ms.date: 05/20/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1607043"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025278"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>販売時点管理 (POS) の画面レイアウト
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail POS (販売時点管理) の画面レイアウトに関する情報を提供します。
+このトピックでは、Dynamics 365 Retail POS (販売時点管理) の画面レイアウトに関する情報を提供します。
 
 Retail POS のユーザー インターフェイス (UI) は、店舗、レジスター、および/またはユーザーに割り当てられた視覚プロファイルと画面レイアウトの組み合わせを使用してコンフィギュレーションできます。
 
@@ -50,7 +50,7 @@ Retail POS のユーザー インターフェイス (UI) は、店舗、レジ�
 - **説明** – 状況に合った正しいプロファイルを特定するのに役立つ、わかりやすい名前を指定できます。
 - **テーマ** – Light または Dark アプリケーション テーマを選択できます。 テーマは、アプリケーション全体で、フォントと背景の色に影響します。
 - **アクセント色** – アクセント色は、タイル、コマンド ボタン、またはハイパーリンクなどの固有の視覚要素を、区別または強調表示するために POS 全体で使用されます。 通常、これらの要素は実行可能です。
-- **ヘッダーの色** – 小売業者のブランドの要件を満たすようにページ ヘッダーの色をコンフィギュレーションすることができます。 この機能は Microsoft Dynamics 365 for Retail バージョン 1611 でのみ使用することができます。
+- **ヘッダーの色** – 小売業者のブランドの要件を満たすようにページ ヘッダーの色をコンフィギュレーションすることができます。 この機能は Retail バージョン 1611 でのみ使用することができます。
 - **日時を表示** – 有効な場合、現在の日時が POS ヘッダーに表示されます。
 - **ログイン バックグラウンド** – サインイン画面の背景画像を指定できます。 大容量のファイルの保存と読み込みは、アプリケーションの動作やパフォーマンスに影響を与える可能性があるため、背景画像のファイル サイズはできるだけ小さくする必要があります。
 - **アプリケーションの背景** - アプリケーション全体で無地のテーマ色の代わりに使用されている背景画像を指定できます。 ログイン バックグラウンドに関しては、ファイル サイズをできる限り小さくする必要があります。

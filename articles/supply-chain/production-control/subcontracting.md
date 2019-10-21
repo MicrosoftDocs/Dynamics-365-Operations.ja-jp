@@ -1,6 +1,6 @@
 ---
 title: 外注
-description: このトピックは、Microsoft Dynamics 365 for Finance and Operations で製造での外注のチュートリアルの構築に役立ちます。
+description: このトピックは、Dynamics 365 Supply Chain Management で製造での外注のチュートリアルの構築に役立ちます。
 author: christophernread
 manager: AnnBe
 ms.date: 09/28/2018
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 55b516f928eadea9b7ddbb1192db79f3ab7fa204
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d1d7adf91c246ecad574043cbb60ca260bb328
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568396"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249916"
 ---
 # <a name="subcontracting"></a>外注
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 for Finance and Operations で製造での外注のチュートリアルの構築に役立ちます。 このトピックの最初の部分では、データの設定について説明します。 2 番目の部分では、チュートリアルの手順が示されます。
+このトピックは、Microsoft Dynamics 365 Supply Chain Management で製造での外注のチュートリアルの構築に役立ちます。 このトピックの最初の部分では、データの設定について説明します。 2 番目の部分では、チュートリアルの手順が示されます。
 
 ## <a name="target-audience"></a>対象者
 

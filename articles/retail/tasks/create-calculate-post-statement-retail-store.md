@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 693d1821779d5f7af95b900daa3bb7a2c38a6354
-ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
+ms.openlocfilehash: 4517b9ddeb648b3d789773fc0dcb1ecd3c8be85c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "1755526"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024801"
 ---
 # <a name="create-calculate-and-post-statements-for-a-retail-store"></a>小売店舗の明細書の作成、計算、および転記
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-このトピックでは、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。 同じタスクにコンフィギュレーションできるバッチ ジョブもあります。 他のトピックで、バッチ ジョブをコンフィギュレーションし、実行するための手順を検索できます。 この手順を完了するには、POS で完了して Dynamics 365 for Finance and Operations で取り出されたトランザクションが必要です。 この記録では、デモ データの会社 USRT を使用します。
+このトピックでは、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。 同じタスクにコンフィギュレーションできるバッチ ジョブもあります。 他のトピックで、バッチ ジョブをコンフィギュレーションし、実行するための手順を検索できます。 この手順を完了するには、POS で完了して Dynamics 365 Retail で取り出されたトランザクションが必要です。 この記録では、デモ データの会社 USRT を使用します。
 
 1. ホーム ページから**小売店舗の財務**を選択します。
 2. **新しい明細書**を選択します。

@@ -1,6 +1,6 @@
 ---
 title: 配置可能小売パッケージの作成
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配置可能小売パッケージを作成する方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Retail の配置可能小売パッケージを作成する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 03/25/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5375b0f97e69ec4079671d5c39b6c05a2aac8eb5
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 290bab2aac7881568e64febebd53a9d15170e087
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833730"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023455"
 ---
 # <a name="create-retail-deployable-packages"></a>配置可能な小売パッケージの作成
 
@@ -46,7 +46,7 @@ ms.locfileid: "1833730"
 小売可能なパッケージは、配置に必要なすべてのメタデータと共に、すべてのカスタマイズを含む 1 つの結合されたパッケージです。 この小売展開可能パッケージを使用して、カスタマイズをさまざまな環境に展開できます。 LCS で自動フローを使用して、配置を行うことができます。またはパッケージ内に用意されているスクリプトを使用して手動で行うことができます。 このトピックでは、配置可能小売パッケージを生成するプロセスを説明します。
 
 > [!IMPORTANT]
-> Retail コンポーネントのすべてのカスタマイズは、1 つの配置可能なパッケージとして提供されます。 Finance and Operations は、Modern POS、Cloud POS、Retail Store Scale Unit、CRT、Retail Server といった、個々の Retail コンポーネントの個別のパッケージをサポートしていません。 独立したソフトウェア ベンダー (ISV) またはさまざまなパートナーの拡張機能をマージまたは結合する必要がある場合でも、すべての拡張機能を単一の小売展開可能パッケージとしてパッケージする必要があります。
+> Retail コンポーネントのすべてのカスタマイズは、1 つの配置可能なパッケージとして提供されます。 Modern POS、Cloud POS、Retail Store Scale Unit、CRT、および Retail Server といった、個々の Retail コンポーネントの個別パッケージはサポートされていません。 独立したソフトウェア ベンダー (ISV) またはさまざまなパートナーの拡張機能をマージまたは結合する必要がある場合でも、すべての拡張機能を単一の小売展開可能パッケージとしてパッケージする必要があります。
 >
 > アプリケーション バージョン 7.1.1541.3036 よりも古い Retail ソフトウェア開発キット (SDK) のバージョンを使用して、カスタマイズが個々の Retail コンポーネント パッケージとして構築されパッケージ化された場合、パッケージは LCS の展開に対してサポートされなくなりました。 [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download) で修正プログラムを取得する必要があります。その際、カスタマイズはリビルドおよび再梱包されます。
 

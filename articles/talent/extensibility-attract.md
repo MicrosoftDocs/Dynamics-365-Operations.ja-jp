@@ -1,6 +1,6 @@
 ---
 title: Attract での拡張性
-description: このトピックでは、Microsoft Power Platform を使用して Microsoft Dynamics 365 for Talent - Attract を拡張する方法について説明します。
+description: このトピックでは、Microsoft Power Platform を使用して Microsoft Dynamics 365 Talent - Attract を拡張する方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/18/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 5db954d8847c252bee1c8e50acae546852ae9b94
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795223"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026236"
 ---
 # <a name="extensibility-in-attract"></a>Attract での拡張性
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent は、Common Data Service プラットフォームの上に構築され、Microsoft Power Platform および Common Data Service が提供する機能を使用してさまざまな方法で拡張できます。 したがって、Microsoft PowerApps および Microsoft Flow を使用して、システムをコンフィギュレーションおよびカスタマイズできます。 Microsoft Power BI を使用して、人々に関する追加の分析を取得することもできます。 さらに、PowerApps および Web コンテンツ (iframe) 活動などの新しいカスタム活動は、採用プロセスをこれまで以上に適応しやすくします。 これらの活動を使用することにより、採用プロセスをビジネス ニーズとプロセスに合わせることができ、採用チームと候補者の両方にシームレスでカスタマイズされた経験があることを確認できます。
+Microsoft Dynamics 365 Talent は、Common Data Service 上に構築され、Microsoft Power Platform および Common Data Service が提供する機能を使用してさまざまな方法で拡張できます。 したがって、Microsoft PowerApps および Microsoft Flow を使用して、システムをコンフィギュレーションおよびカスタマイズできます。 Microsoft Power BI を使用して、人々に関する追加の分析を取得することもできます。 さらに、PowerApps および Web コンテンツ (iframe) 活動などの新しいカスタム活動は、採用プロセスをこれまで以上に適応しやすくします。 これらの活動を使用することにより、採用プロセスをビジネス ニーズとプロセスに合わせることができ、採用チームと候補者の両方にシームレスでカスタマイズされた経験があることを確認できます。
 
 ## <a name="extending-option-sets-in-attract"></a>Attract のオプション セットの拡張
 
@@ -40,7 +40,7 @@ Microsoft Dynamics 365 for Talent は、Common Data Service プラットフォ�
 
 下の一覧は、**不採用理由**フィールドと業務に固有の値を更新する手順です。  
 
-1. **不採用理由**オプション セットを拡張するには、[PowerApps 管理 Web サイト](https://admin.powerapps.com)に移動します。
+1. **不採用理由**オプション セットを拡張するには、[PowerApps 管理 Web サイト](https://admin.powerapps.com) に移動します。
 2. アカウントにサインインするよう求められる可能性があります。 Dynamics365 や Office365 にサインインするために使用する userID およびパスワードの資格情報を指定し、**次へ**をクリックします。
 3. **環境**タブで管理する環境を選択し、ダブルクリックして**詳細**タブにアクセスします。
 4. **詳細**タブで **Dynamics 365 管理センター**を選択します。
@@ -54,7 +54,7 @@ Microsoft Dynamics 365 for Talent は、Common Data Service プラットフォ�
 12. **保存** を選択します。
 13. ページ上部の**発行**を選択します。
 
-## <a name="take-advantage-of-the-microsoft-power-platform"></a>Microsoft Power Platform を活用 
+## <a name="take-advantage-of-the-microsoft-power-platform"></a>Microsoft Power Platform を活用する 
 
 Attract からのすべてのデータは Common Data Service に存在するため、Microsoft Power Platform からのツールを使用して Attract に固有のビジネス ニーズを組み込むことができます。
 
@@ -62,7 +62,7 @@ Attract からのすべてのデータは Common Data Service に存在するた
 
 PowerApps を使用して、Attract データに接続し、Microsoft Excel の式のような式を使用してロジックを追加するアプリを簡単に構築できます。 PowerApps を使用して構築するアプリは、Web、Apple iOS、Google Android デバイスで実行できます。
 
-たとえば、履歴書をスキャンして候補者を Attract の位置にフィードする軽量アプリを構築することで、採用者にとって大学のキャリアフェアを簡単にすることができます。 または、組織のコンプライアンスのニーズを満たすのに役立つアプリを構築できます。 PowerApps およびアプリの構築にそれを使用する方法の詳細については、[Common Data Service へのデータの統合](https://docs.microsoft.com/powerapps)を参照してください。
+たとえば、履歴書をスキャンして候補者を Attract の位置にフィードする軽量アプリを構築することで、採用者にとって大学のキャリアフェアを簡単にすることができます。 または、組織のコンプライアンスのニーズを満たすのに役立つアプリを構築できます。 PowerApps およびアプリの構築にそれを使用する方法の詳細については、[Common Data Service へのデータの統合](https://docs.microsoft.com/powerapps) を参照してください。
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 

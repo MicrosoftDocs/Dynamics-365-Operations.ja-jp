@@ -1,6 +1,6 @@
 ---
 title: Retail を購入する前に
-description: Dynamics 365 for Retail を体験するのは初めてですか。 お客様が購入を検討されているか、または購入の準備が整っているかにかかわらず、お客様の役に立つガイダンスを作成しました。
+description: Dynamics 365 Retail を体験するのは初めてですか。 お客様が購入を検討されているか、または購入の準備が整っているかにかかわらず、お客様の役に立つガイダンスを作成しました。
 author: jblucher
 manager: AnnBe
 ms.date: 09/28/2017
@@ -16,28 +16,28 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 85d4af003f74cb6b9e85bbe6eb7024d40c5e36ae
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 49b25d2f0933ade627ec22b917de9077f39c2f54
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845668"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023407"
 ---
 # <a name="before-you-buy-retail"></a>Retail を購入する前に
 
 [!include [banner](../../includes/banner.md)]
 
-Dynamics 365 for Retail を体験するのは初めてですか。 お客様が購入を検討されているか、または購入の準備が整っているかにかかわらず、お客様の役に立つガイダンスを作成しました。
+Dynamics 365 Retail を体験するのは初めてですか。 お客様が購入を検討されているか、または購入の準備が整っているかにかかわらず、お客様の役に立つガイダンスを作成しました。
 
 ## <a name="step-1-try-out-retail-free-for-30-days"></a>手順 1: Retail を 30 日間無料で試す
 
-Dynamics 365 for Retail は、簡単な電子メールでのサインアップ プロセスを通じて 30 日間お試しいただけます。 評価版には、実行中の特定のシナリオを表示することによりステップ バイ ステップの手順が記載されている「はじめに」のタスク ガイドが含まれています。 この製品は、シナリオを通じての探索や作業には使用できますが、カスタマイズすることはできません。 デモ データは、製品をよりよく理解し、経験をより意味のあるものになるために役立ちます。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 詳細については、[www.microsoft.com/dynamics365/retail](https://www.microsoft.com/dynamics365/retail) に移動します。
+Retail は、簡単な電子メールでのサインアップ プロセスを通じて 30 日間お試しいただけます。 評価版には、実行中の特定のシナリオを表示することによりステップ バイ ステップの手順が記載されている「はじめに」のタスク ガイドが含まれています。 この製品は、シナリオを通じての探索や作業には使用できますが、カスタマイズすることはできません。 デモ データは、製品をよりよく理解し、経験をより意味のあるものになるために役立ちます。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 詳細については、[www.microsoft.com/dynamics365/retail](https://www.microsoft.com/dynamics365/retail) に移動します。
 
 ## <a name="step-2-buy-and-manage-a-subscription"></a>手順 2: 定期売買の購入と管理
 
 定期売買のオプションを表示するには、[Dynamics 365](https://www.microsoft.com/dynamics365/pricing) の価格ページに移動します。 このページには、組織のニーズに合わせて複数の異なる計画が含まれています。
 
-Dynamics 365 for Retail のサブスクリプションにはオプションが 2 つあります:
+Dynamics 365 Retail のサブスクリプションにはオプションが 2 つあります:
 
 - パートナーを通じて購入し、ボリューム ライセンスを使用します。
 - クラウド ソリューション プロバイダーを通して購入します。
@@ -46,7 +46,7 @@ Dynamics 365 for Retail のサブスクリプションにはオプションが 2
 
 組織に 250 を超える Dynamics 365 のユーザーがいる場合、[ボリューム ライセンス契約書](https://www.microsoft.com/licensing/how-to-buy/how-to-buy.aspx) をお勧めします。
 
-ボリューム ライセンスでは、Dynamics 365 for Retail は以下を通じて使用可能です。
+ボリューム ライセンスでは、Dynamics 365 Retail は以下を通じて使用可能です。
 
 - エンタープライズ契約
 - エンタープライズ契約の定期売買

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 00facce5913fb82f67c5844d74d29032735db707
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d95429dde38a7a528b1c1d9036194a3bf8e6f986
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506106"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009448"
 ---
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>会社固有の人事管理 (HR) パラメーターの設定
 
@@ -34,7 +34,7 @@ ms.locfileid: "1506106"
 2 つのページが人事管理 (HR) のパラメータの設定に使用されます。 会社間で共有されるパラメータに、**人事管理の共有パラメーター**ページを使用します。 会社固有のパラメータ (つまり、設定を単一の会社に適用する場合) に、**人事管理パラメータ**ページを使用します。 **人事管理パラメーター**ページで、設定は 6 つのタブに分割されます:
 
 -   一般
--   採用 - これは Dynamics 365 for Talent には含まれていません
+-   採用 - これは Dynamics 365 Talent には含まれていません
 -   報酬
 -   番号順序
 -   育児介護休業法 (FMLA)
@@ -49,7 +49,7 @@ ms.locfileid: "1506106"
 ### <a name="previously-released-functionality"></a>以前にリリースされた機能
 **番号順序**タブの設定により、申請、休暇登録、報酬プロセス結果、ケース番号、コース、およびコースの議題などの人事管理の品目に ID を自動的に割り当てるのに使用される順序が決まります。 番号順序およびコードを管理するには、**番号順序** リスト ページを使用します。(**組織管理** &gt; **番号順序** &gt; **番号順序** の順にクリックします)。
 
-### <a name="if-youre-using-dynamics-365-for-talent"></a>Dynamics 365 for Talent を使用している場合
+### <a name="if-youre-using-dynamics-365-talent"></a>Dynamics 365 Talent を使用している場合
 **番号順序**タブの設定により、申請、休暇登録、報酬プロセス結果、ケース番号、コース、およびコースの議題などの人事管理の品目に ID を自動的に割り当てるのに使用される順序が決まります。 番号順序およびコードを管理するには、**番号順序** リスト ページを使用します (**システム管理** &gt; **リンク タブ** &gt; **番号順序** &gt; **番号順序** の順にクリックします)。 
 
 **FMLA** タブの設定で、FMLA 給付金を受給できるために従業員が働く必要がある時間、適格性に必要な雇用期間、および雇用期間の決定に使用される雇用開始日を定義します。 設定は、従業員に権利がある FMLA 時間数、および従業員が使用した FMLA 時間の計算に使用される FMLA 休暇カレンダーも定義します。 **FMLA** タブは、米国の会社にのみ使用できます。 

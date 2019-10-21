@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f03b7fa073c4e5338b7b5681ba7b8c9fe00a657b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 95fe394d22f9fe81511c230a2cf7b8ddf00d896f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875750"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250832"
 ---
 # <a name="work-orders-and-fixed-assets"></a>作業指示書と固定資産
 
@@ -33,7 +33,7 @@ ms.locfileid: "1875750"
 [!include [banner](../../includes/preview-banner.md)]
 
 
-資産管理では、資産を固定資産に関連付けることができます。またこれらの資産の作業指示書を作成することもできます。 この機能を使用する場合、**プロジェクト管理および会計**モジュールと Dynamics 365 for Finance and Operations の**固定資産**モジュールで、固定資産、関連する投資プロジェクトおよび投資プロジェクトに登録されている原価の概要を完全に取得できます。
+資産管理では、資産を固定資産に関連付けることができます。またこれらの資産の作業指示書を作成することもできます。 この機能を使用する場合、**プロジェクト管理および会計**モジュールと**固定資産**モジュールで、固定資産、関連する投資プロジェクトおよび投資プロジェクトに登録されている原価の概要を完全に取得できます。
 
 >[!NOTE]
 >**固定資産番号**フィールドは、作業指示書ジョブ プロジェクトでプロジェクト タイプとして "投資" タイプが選択されている場合にのみ、作業指示書ジョブ プロジェクトに入力されます。

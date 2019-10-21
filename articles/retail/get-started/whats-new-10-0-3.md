@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Retail バージョン 10.0.3 の新機能および変更された機能
-description: このトピックでは Dynamics 365 for Retail のプレビュー中の機能について説明します。
+description: このトピックでは Dynamics 365 Retail のプレビュー中の機能について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 06/14/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 3f96798d24fefd37c0ae2c498f8cc7c9e40eac01
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 2c288b24339e765674ea7703365de7e4da4f382e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863255"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023406"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-version-1003"></a>Dynamics 365 for Retail バージョン 10.0.3 の新機能および変更された機能
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail 10.0.3 の新機能または変更された機能について説明します。 
+このトピックでは、Dynamics 365 Retail の新機能または変更された機能について説明します。 
 
 Microsoft Dynamics 365 for Finance and Operations の機能については [Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能と変更点](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3)を参照してください。
 
@@ -40,7 +40,7 @@ Microsoft Dynamics 365 for Finance and Operations の機能については [Fina
 
 ## <a name="hq-extensions"></a>HQ 拡張機能 
 
-このリリースは Dynamics 365 for Retail のカスタマイズがより簡単となる多数の拡張ポイントを追加します。 カスタム拡張シナリオをサポートするために、次の拡張ポイントが追加されました。
+このリリースは Retail のカスタマイズがより簡単となる多数の拡張ポイントを追加します。 カスタム拡張シナリオをサポートするために、次の拡張ポイントが追加されました。
 
 - Retail Headquarters: 拡張性をサポートするためにリファクターされたメソッド。 これらのメソッドはリファクターされ、コマンド チェーン、デリゲート、またはメンバーへのアクセスの提供によって、拡張性をサポートします。
 - メソッド:

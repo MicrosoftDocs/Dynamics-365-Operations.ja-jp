@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 for Talent から Dynamics 365 for Finance and Operations への統合に関する FAQ
-description: このトピックでは、Talent および Finance and Operations の統合でどのデータが同期されるのかについて説明します。
+title: Dynamics 365 Talent から Dynamics 365 Finance への統合に関する FAQ
+description: このトピックでは、Talent および Finance の統合でどのデータが同期されるのかについて説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 01/09/2019
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: cb9e01316f4b154a3e9a73042eaf0492f016c46c
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 5bb855e6dd7ff236b7bda9e59e12ed8cc8ab9bc9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742717"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251017"
 ---
-# <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Dynamics 365 for Talent から Dynamics 365 for Finance and Operations への統合に関する FAQ
+# <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Dynamics 365 Talent から Dynamics 365 Finance への統合に関する FAQ
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Talent が Dynamics 365 for Finance and Operations に統合される際にどのデータが同期されるかに関連した一般的な質問に回答します。
+このトピックでは、Dynamics 365 Talent が Dynamics 365 Finance に統合される際にどのデータが同期されるかに関連した一般的な質問に回答します。
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>すべてのデータが同期された、または一部のデータ エンティティだけが同期されましたか。
 
-Core Human Resources (HR) で、データのサブセットが同期されます。 すべてのエンティティの一覧については、「[Dynamics 365 for Talent から Dynamics 365 for Finance and Operations への統合](talent-financeandoperations-integration.md)」を参照してください。
+Core HR に関しては、データのサブセットが同期されます。 すべてのエンティティの一覧については、「[Dynamics 365 Talent から Dynamics 365 Finance への統合](talent-financeandoperations-integration.md)」を参照してください。
 
 Attract および Onboard に関しては、すべてのデータが Common Data Service にネイティブです。
 
@@ -40,15 +40,15 @@ Attract および Onboard に関しては、すべてのデータが Common Data
 
 テンプレートは、開始点です。 独自のテンプレートを作成できますが、テンプレートは統合プロジェクトを作成する際に常に必要です。 データ統合 (DI)、テンプレート、およびプロジェクトの詳細については、「[Common Data Service へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator)」を参照してください。
 
-## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Talent および Finance and Operations 間で転送する財務分析コードをマップできますか。
+## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance"></a>Talent および Finance 間で転送する財務分析コードをマップできますか。
 
 財務分析コードは、現在 Common Data Service にはなく、結果として既定のテンプレートの一部ではありません。 このエンティティは計画されていますが、現在利用可能なリリース タイムラインはありません。
 
-Finance and Operations で存在しますが、Talent では存在しないデータに関しては、Talent の**リンクの構成**を使用して 2 つのシステムを相互にリンクします。 Talent および Finance and Operations 間のリンクを構成する方法の詳細については、「[Dynamics 365 for Talent Core HR (2018 年 10月 31日) の新機能および変更された機能](whats-new-talent-october-31.md)」を参照してください。
+Finance で存在しますが、Talent では存在しないデータに関しては、Talent の**リンクの構成**を使用して 2 つのシステムを相互にリンクします。 Talent および Finance 間のリンクを構成する方法の詳細については、「[Dynamics 365 Talent: Core HR (2018 年 10 月 31日) の新機能および変更された機能](whats-new-talent-october-31.md)」を参照してください。
 
 ![財務分析コードのマップ](media/MapFinancialDimensions.png)
 
-## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>場合によっては、従業員をインポートする場合 Finance and Operations の無効な作業者に入ってしまいます。 なぜですか。
+## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>場合によっては、従業員をインポートする場合 Finance の無効な作業者に入ってしまいます。 なぜですか。
 
 従業員が Talent に有効な雇用詳細レコードがない場合、このエラーが発生する可能性があります。 この問題を解決するには、**人事管理 \> 従業員 \> 雇用履歴 \> 日付マネージャー**に移動し、有効な雇用詳細レコードがあることを確認します。
 
@@ -62,7 +62,7 @@ Finance and Operations で存在しますが、Talent では存在しないデ�
 
 ![有効な作業者の高度なクエリ](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
-## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>特定のエンティティの Finance and Operations に送信するフィールドを指定できますか。
+## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>特定のエンティティの Finance に送信するフィールドを指定できますか。
 
 フィールドは、統合タスクから追加または削除できます。 Common Data Service エンティティに存在するすべてのデータ フィールドが、Core HR から入力されるわけではありません。
 追加のデータは、PowerApps 経由で入力されます。
@@ -75,7 +75,7 @@ Finance and Operations で存在しますが、Talent では存在しないデ�
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>双方向の統合を設定できますか。
 
-いいえ、統合は現在一方向です (Talent から Finance and Operations)。 ただし、Talent から Finance and Operations にデータを送信可能な既定のテンプレートがあります。
+いいえ、統合は現在一方向です (Talent から Finance and Operations)。 ただし、Talent から Finance にデータを送信可能な既定のテンプレートがあります。
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>自分の統合の一部として、レコードの削除を許可できますか。
 
@@ -93,13 +93,13 @@ Finance and Operations で存在しますが、Talent では存在しないデ�
 
 ## <a name="if-i-have-n-number-of-legal-entities-where-workers-have-employments-do-i-need-to-create-a-mapping-for-each-of-them"></a>作業者の雇用がある法人の N 番号がある場合、それぞれに対するマップを作成する必要がありますか。
 
-はい、Finance and Operations の各法人に対して、データ統合の統合プロジェクトを分ける必要があります。
+はい、Finance の各法人に対して、データ統合の統合プロジェクトを分ける必要があります。
 
 ## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a>Microsoft により提供された既定のテンプレートの一部ではないデータを転送する必要があります。 これを実行できますか ?
 
 はい、フィールドは既存のテンプレートから追加または削除できます。 テンプレートを変更して、他の Common Data Service のエンティティからの追加データを含めます。 エンティティは、テンプレートに含まれる Common Data Service である必要があります。 
 
-## <a name="i-just-created-new-finance-and-operations-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>新しい Finance and Operations、および Talent 環境を作成しましたが、エラーが発生しました。「データ値が、整合性制約に違反しています。」 なぜですか。
+## <a name="i-just-created-new-finance-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>新しい Finance および Talent 環境を作成しましたが、エラーが発生しました。「データ値が、整合性制約に違反しています。」 なぜですか。
 
 このエラーが発生する理由には以下が含まれます。
 
@@ -109,9 +109,9 @@ Finance and Operations で存在しますが、Talent では存在しないデ�
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>実行エラーがあり従業員 ID が同期しなかった場合、失敗した従業員レコードがある履歴ジョブをどのように見つけますか。
 
-データ統合は、Finance and Operations で複数のプロジェクトを作成します。 データ統合タスクと Finance and Operations プロジェクトとの関係は、1 対 1 です。
+データ統合は、Finance で複数のプロジェクトを作成します。 データ統合タスクと Finance プロジェクトとの関係は、1 対 1 です。
 
-データ統合実行履歴からの時間を追跡し、Finance and Operations でインデックス -1 プロジェクトを検索します。 データ統合でタスク番号が 9 の場合、Finance and Operations のインデックスは 8 です。
+データ統合実行履歴からの時間を追跡し、Finance でインデックス -1 プロジェクトを検索します。 データ統合でタスク番号が 9 の場合、Finance のインデックスは 8 です。
 
 1. データ統合からタスク インデックスをキャプチャします (この例では「9」)。
 
@@ -121,13 +121,13 @@ Finance and Operations で存在しますが、Talent では存在しないデ�
 
 ![プロジェクトの実行時間の追跡](media/CaptureTimeOfExecution.png)
 
-3. Finance and Operations で、インデックス - 1 を識別します。 この例では、接尾語「8」でインデックス「0」プロジェクトの実行時間を持つプロジェクトは、ステップ 2 の実行時間と一致します。
+3. Finance では、インデックス - 1 を識別します。 この例では、接尾語「8」でインデックス「0」プロジェクトの実行時間を持つプロジェクトは、ステップ 2 の実行時間と一致します。
 
 ![インデックスの識別](media/IdentifyIndex.png)
 
-## <a name="after-integrating-talent-and-finance-and-operations-i-dont-see-my-talent-data-in-finance-and-operations-what-do-i-do"></a>Talent および Finance and Operations を統合した後、Finance and Operations で Talent データが表示されません。 何をしたらいいですか ?
+## <a name="after-integrating-talent-and-finance-i-dont-see-my-talent-data-in-finance-what-do-i-do"></a>Talent および Finance を統合した後、Finance で Talent データが表示されません。 何をしたらいいですか ?
 
-Finance and Operations への統合には 2 つのステップがあります。 まず、Talent データが更新済で、Common Data Service で利用可能であることを確認します。 これはほぼリアルタイムの同期であり、データ エンティティ内のデータを参照して PowerApps で検証できます。
+Finance への統合には 2 つのステップがあります。 まず、Talent データが更新済で、Common Data Service で利用可能であることを確認します。 これはほぼリアルタイムの同期であり、データ エンティティ内のデータを参照して PowerApps で検証できます。
 
 ![Common Data Service 内のデータ](media/DataInCDS.png)
 
@@ -135,24 +135,24 @@ Common Data Service で予定どおりにデータが表示されない場合は
 
 エンティティがサポートされデータが Common Data Service で使用できる場合は、データ統合でマッピングが正しいことを確認します。 インテグレーター マッピングが正常に見える場合、データ管理ジョブが正常に実行されたことを確認します。 バッチ ジョブの実行中にエラーが発生する可能性があります。 データ管理の詳細については、「[データ管理](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)」を参照してください。
 
-## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Finance and Operations にインポートした後、従業員の住所が正しくありません。 何をする必要がありますか。
+## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Finance にインポートした後、従業員の住所が正しくありません。 何をする必要がありますか。
 
-**場所 ID** の番号順序は、Talent および Finance and Operations の両方で同じパターンを使用します。 Common Data Service から Finance and Operations にデータを統合する場合、アドレスの衝突がないように、番号順序は両側で一意である必要があります。
+**場所 ID** の番号順序は、Talent および Finance の両方で同じパターンを使用します。 Common Data Service から Finance and Operations にデータを統合する場合、アドレスの衝突がないように、番号順序は両側で一意である必要があります。
 
-Talent の実装中に、番号順序が Talent および Finance and Operations で同じではないことを確認します。 データが両方のシステムで維持される可能性がある場合は、すべての番号順序が同一でないことを検証します。
+Talent の実装中に、番号順序が Talent および Finance で同じではないことを確認します。 データが両方のシステムで維持される可能性がある場合は、すべての番号順序が同一でないことを検証します。
 
 ## <a name="when-creating-my-connection-set-i-am-unable-to-see-the-connection-in-the-connection-drop-down-list-what-do-i-do"></a>接続設定を作成する際に、接続ドロップダウン リストで接続が確認できません。 何をしたらいいですか ?
 
-接続を作成するときは、Dynamics 365 for Finance and Operations (現在のプレビュー) および Common Data Service を選択していることを確認してください。
+接続を作成するときは、Dynamics 365 Finance および Common Data Service を選択していることを確認してください。
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>雇用を同期する際、エラーが発生します。「CompanyInfo_FK が存在しません」または「フィールド '雇用終了日' の値 '12/31/2154 11:59:59 pm' が、関連するテーブル '雇用' で見つかりません。」何をする必要がありますか。
 
-正しい法人にマッピングしていることを確認します。 法人の同期は既定のテンプレートの一部ではないため、Talent や Common Data Service に存在する各法人が Finance and Operations にも存在することが予想されます。
+正しい法人にマッピングしていることを確認します。 法人の同期は既定のテンプレートの一部ではないため、Talent や Common Data Service に存在する各法人が Finance にも存在することが予想されます。
 また、関連付けられている接続設定に対して正しい法人を選択していることを確認してください。
 
-## <a name="after-setting-up-my-project-the-field-mapping-for-finance-and-operations-appears-to-be-empty-what-should-i-do"></a>プロジェクトの設定後、Finance and Operations のフィールド マッピングは空のようです。 何をする必要がありますか。
+## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>プロジェクトの設定後、Finance のフィールド マッピングは空のようです。 何をする必要がありますか。
 
-**データ管理 \> フレームワーク パラメーター \> エンティティ設定 \> エンティティ リストの更新**に移動して、Finance and Operations のデータ エンティティを更新します。 これは数分で完了し、それらのマッピングを表示できます。 新しいプロジェクトが作成されたときに、この問題が発生します。
+**データ管理 \> フレームワーク パラメーター \> エンティティ設定 \> エンティティ リストの更新**に移動して、Finance のデータ エンティティを更新します。 これは数分で完了し、それらのマッピングを表示できます。 新しいプロジェクトが作成されたときに、この問題が発生します。
 
 ![フィールド マッピングがありません](media/MissingFieldMapping.png)
 

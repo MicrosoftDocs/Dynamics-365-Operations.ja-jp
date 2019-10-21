@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d238bb31537a21f46c252fbee400fe61901e650
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: dfd62a18d6b4cfc8c41d9025a8fc5deb8768ed3f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790511"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250924"
 ---
 # <a name="maintenance-requests"></a>メンテナンス要求
 
@@ -31,7 +31,7 @@ ms.locfileid: "1790511"
 
 [!include [banner](../../includes/preview-banner.md)]
 
-社内で使用するさまざまなタイプの要求を設定できます。 メンテナンス要求は 1 つのタイプです。 メンテナンス要求は、特定のジョブに対してワーク オーダーが必要であることを要求するために使用されます。 メンテナンス要求は Microsoft Dynamics 365 for Finance and Operations の資産管理の機能にアクセスできるすべてのユーザーが作成できます。 プランナーまたはマネージャーは、メンテナンス要求をワーク オーダーに変換するか、または独自のライフサイクルを完了する必要があるかどうかを決定できます。
+社内で使用するさまざまなタイプの要求を設定できます。 メンテナンス要求は 1 つのタイプです。 メンテナンス要求は、特定のジョブに対してワーク オーダーが必要であることを要求するために使用されます。 メンテナンス要求は、資産管理の機能にアクセスできるすべてのユーザーが作成できます。 プランナーまたはマネージャーは、メンテナンス要求をワーク オーダーに変換するか、または独自のライフサイクルを完了する必要があるかどうかを決定できます。
 
 ## <a name="view-maintenance-requests"></a>メンテナンス要求の表示
 

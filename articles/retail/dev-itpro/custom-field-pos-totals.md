@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: cf868d1e0f4c6eee465c27b54837a0f88f62354a
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 6951e5bf163c90128ddba821fe0e95fcb61185a2
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833078"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025734"
 ---
 # <a name="add-custom-fields-to-the-point-of-sale-pos-totals-panel"></a>販売時点管理 (POS) Totals パネルへカスタム フィールドを追加
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、画面レイアウト デザイナーを使用して、POS トランザクション画面の**合計**パネルに新しいカスタム フィールドを追加する方法について説明します。 このトピックは、Microsoft Dynamics 365 for Finance and Operations 7.3 およびそれ以降と、Microsoft Dynamics 365 for Retail 7.3 およびそれ以降に適用されます。
+このトピックでは、画面レイアウト デザイナーを使用して、POS トランザクション画面の**合計**パネルに新しいカスタム フィールドを追加する方法について説明します。 このトピックは、Microsoft Dynamics 365 for Finance and Operations 7.3 以降、および Microsoft Dynamics 365 Retail 7.3 以降に適用されます。
 
 **カスタム フィールド**ページの**合計**パネルに追加するカスタム フィールドが、デザイナーに表示されます。 次に、左右の列にあるカスタム フィールドを選択することができます。 カスタム フィールドのロジックは、販売時点管理 (POS) 拡張機能でコーディングされる必要があります。
 
@@ -47,7 +47,7 @@ POS の拡張機能プロジェクトでは、この手順を行う必要があ�
 
 - ビジネス ロジックをカスタム フィールドへ追加します。
 
-## <a name="configure-retail-headquarters"></a>Retail Headquarters のコンフィギュレーション
+## <a name="configure-retail-headquarters"></a>Headquarters のコンフィギュレーション
 
 1. Retail へサインインします。
 2. **小売 \> チャネル設定 \> POS 設定 \> POS プロファイル \> 言語テキスト**の順に移動します。

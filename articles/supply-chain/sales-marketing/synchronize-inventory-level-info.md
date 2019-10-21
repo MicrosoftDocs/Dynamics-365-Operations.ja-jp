@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations から Field Service への在庫レベル情報の同期
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Field Service に在庫レベル情報を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+title: Supply Chain Management から Field Service への在庫レベル情報の同期
+description: このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に在庫レベル情報を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 05/07/2019
@@ -19,37 +19,37 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b56eb545f87c31ef30d6a897f48539068583486
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: eefbfd1f8d7aa73cbb3330433b08efd889232818
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843436"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251204"
 ---
-# <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Finance and Operations から Field Service への在庫レベル情報の同期 
+# <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service への在庫レベル情報の同期 
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Field Service に在庫レベル情報を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に在庫レベル情報を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-[![Finance and Operations および Field Service 間の業務プロセスの同期](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
-次のテンプレートと基本的なタスクは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Field Service への手持在庫レベルの同期を実行するために使用されます。
+次のテンプレートと基本的なタスクは、Supply Chain Management から Field Service に手持在庫レベルの同期を実行するために使用されます。
 
 **データ統合でのテンプレート**
-- 製品在庫 (Fin and Ops から Field Service)
+- 製品在庫 (Supply Chain Management から Field Service)
   
 **データ統合プロジェクトのタスク**
 - 製品在庫
 
 在庫レベルの同期が処理される前に、次の同期タスクが必要です。
-- 倉庫 (Finance and Operations から Field Service) 
-- 在庫単位のある Field Service 製品 (Fin and Ops から Sales) 
+- 倉庫 (Supply Chain Management から Field Service) 
+- 在庫単位のある Field Service 製品 (Supply Chain Management から Sales) 
 
 ## <a name="entity-set"></a>エンティティ セット
 
-| Field Service                      | Finance and Operations                 |
+| Field Service                      | サプライ チェーン マネジメント                |
 |------------------------------------|----------------------------------------|
 | msdynce_externalproductinventories | CDS 倉庫別手持在庫     |
 
@@ -61,17 +61,17 @@ Finance and Operations からの在庫レベル情報は、選択した製品の
 
 この情報は、各倉庫にリリースされた製品ごとにキャプチャされ、在庫レベルが変更されると、変更追跡に基づいて同期されます。
 
-Field Service では、統合ソリューションがデルタ用の在庫仕訳帳を作成し、Field Service のレベルを Finance and Operations のレベルと一致するようにします。
+Field Service では、統合ソリューションがデルタ用の在庫仕訳帳を作成し、Field Service のレベルを Supply Chain Management のレベルと一致するようにします。
 
-Finance and Operations は、在庫レベルのマスターとして機能します。 したがって、この機能を Finance and Operations からの在庫レベルの同期と共に Field Service で使用する場合は、ワーク オーダー、振替および調整を、Field Service から Finance and Operations に統合設定することが重要です。
+Supply Chain Management は、在庫レベルのマスターとして機能します。 したがって、この機能を Supply Chain Management からの在庫レベルの同期と共に Field Service で使用する場合は、ワーク オーダー、振替および調整を Field Service から Supply Chain Management に統合設定することが重要です。
 
-在庫レベルが Finance and Operations から習得されている製品および倉庫は、高度なクエリおよびフィルタリング (Power Query) で制御できます。
+在庫レベルが Supply Chain Management から習得されている製品および倉庫は、高度なクエリおよびフィルタリング (Power Query) で制御できます。
 
 > [!NOTE]
-> Field Services で複数の倉庫を作成し (**外部で管理 = いいえ**)、Finance and Operations で高度なクエリおよびフィルター処理を使用して 1 つの倉庫にマッピングすることができます。 これは、Field service に詳細な在庫レベルを習得させ、Finance and Operations に更新を送信するだけの場合に使用されます。 この場合、Field service は、Finance and Operations からの在庫レベルの更新は受信しません。 追加情報については、「[Field Service から Finance and Operations への在庫調整の同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments)」および「[Field Service でのワーク オーダーを Finance and Operations のプロジェクトにリンクされている販売注文に同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)」を参照してください。
+> Field Services で複数の倉庫を作成し (**外部で管理 = いいえ**)、Supply Chain Management で高度なクエリおよびフィルター処理を使用して 1 つの倉庫にマッピングすることができます。 これは、Field service に詳細な在庫レベルを習得させ、Supply Chain Management に更新を送信するだけの場合に使用されます。 この場合、Field service では、Supply Chain Management からの在庫レベルの更新は受信しません。 追加情報については、「[Field Service から Supply Chain Management への在庫調整の同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments)」および「[Field Service でのワーク オーダーを Supply Chain Management のプロジェクトにリンクされている販売注文に同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)」を参照してください。
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM ソリューション
-**外部の製品在庫**エンティティは、統合へのバックエンドのみに使用されます。 このエンティティは統合内の Finance and Operations から在庫レベルの値を受け取り、次のそれらの値を Manuel 在庫仕訳帳に変換します。これにより、倉庫の在庫製品が変更されます。
+**外部の製品在庫**エンティティは、統合へのバックエンドのみに使用されます。 このエンティティは統合内の Supply Chain Management から在庫レベルの値を受け取り、次のそれらの値を Manuel 在庫仕訳帳に変換します。これにより、倉庫の在庫製品が変更されます。
 
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 
@@ -84,10 +84,10 @@ Finance and Operations は、在庫レベルのマスターとして機能しま
       - msdynce_warehouseid (倉庫 ID)
       
 ### <a name="data-integration-project"></a>データ統合プロジェクト
-フィルターを高度なクエリおよびフィルタリングに適用し、特定の製品および倉庫のみが在庫レベル情報を Finance and Operations から Field Service に送信するようにします。
+フィルターを高度なクエリおよびフィルタリングに適用し、特定の製品および倉庫のみが在庫レベル情報を Supply Chain Management から Field Service に送信するようにします。
 
 ## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
 
-### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>製品在庫 (Fin and Ops から Field Service): 製品在庫
+### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>製品在庫 (Supply Chain Management から Field Service): 製品在庫
 
 [![データ統合のテンプレートのマッピング](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

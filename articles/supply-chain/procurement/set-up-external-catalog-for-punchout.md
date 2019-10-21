@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595614"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249393"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>パンチアウト eProcurement の外部カタログの設定
 
@@ -37,12 +37,12 @@ ms.locfileid: "1595614"
 
 ## <a name="setting-up-an-external-catalog"></a>外部カタログの設定
 
-外部カタログにより、購買要求を入力した従業員は、製品を選択するために外部サイトにリダイレクトされます。 従業員が外部カタログから選択した製品は、最新の価格情報を使用して、Dynamics 365 for Finance and Operations に返され、ここから購買要求に追加することができます。 従業員による外部サイトからの注文を可能にすることは意図していません。 外部カタログを設定するときは、外部カタログがアクセスできるサイトの目的が見積もり情報を収集することであり、実際の注文を行わないことを確認する必要があります。
+外部カタログにより、購買要求を入力した従業員は、製品を選択するために外部サイトにリダイレクトされます。 従業員が外部カタログから選択した製品は、最新の価格情報を使用して返され、ここから購買要求に追加することができます。 従業員による外部サイトからの注文を可能にすることは意図していません。 外部カタログを設定するときは、外部カタログがアクセスできるサイトの目的が見積もり情報を収集することであり、実際の注文を行わないことを確認する必要があります。
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>外部仕入先カタログを設定するには、次の作業を行います。:
 
 1. 調達カテゴリ階層を設定します。 詳細については、[調達カテゴリ階層に対するポリシーの設定](tasks/set-up-policies-procurement-category-hierarchies.md) を参照してください。
-2. 仕入先を Finance and Operations に登録します。 外部仕入先のカタログにアクセスするコンフィギュレーションを設定する前に、仕入先と仕入先の連絡先を Microsoft Dynamics 365 で設定する必要があります。 外部カタログの仕入先は、選択した調達カテゴリにも追加する必要があります。 Microsoft Dynamics 365 で仕入先を登録することに関する詳細については、「[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)」を参照してください。 仕入先を調達カテゴリに割り当てる方法については、「[特定の調達カテゴリに対する仕入先の承認](tasks/approve-vendors-specific-procurement-categories.md)」を参照してください。
+2. 仕入先を Supply Chain Management に登録します。 外部仕入先のカタログにアクセスするコンフィギュレーションを設定する前に、仕入先と仕入先の連絡先を Microsoft Dynamics 365 で設定する必要があります。 外部カタログの仕入先は、選択した調達カテゴリにも追加する必要があります。 仕入先を登録することに関する詳細については、[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md) を参照してください。 仕入先を調達カテゴリに割り当てる方法については、「[特定の調達カテゴリに対する仕入先の承認](tasks/approve-vendors-specific-procurement-categories.md)」を参照してください。
 3. ベンダーが使用する測定単位と通貨が設定されていることを確認します。 測定単位を作成する方法の詳細については、[測定単位の管理](../pim/tasks/manage-unit-measure.md) を参照してください。
 4. 仕入先の外部カタログ サイトの要件に基づいて、外部仕入先カタログをコンフィギュレーションします。 このタスクの詳細については、「[外部仕入先カタログを構成する](#configure-the-external-vendor-catalog)」を参照してください。
 5. 仕入先の外部カタログのコンフィギュレーションをテストして、設定が有効であることと、仕入先の外部カタログにアクセスできることを確認します。 **設定の検証**アクションを使用して、定義した要求の設定メッセージを検証します。 このメッセージにより、仕入先の外部カタログ サイトがブラウザー ウィンドウで開かれるはずです。 検証中は、仕入先からアイテムやサービスを注文することはできません。 品目およびサービスを注文するには、購買要求を通じて仕入先のカタログにアクセスする必要があります。
@@ -90,9 +90,9 @@ ms.locfileid: "1595614"
 cXML プロトコルの詳細については、[cXML.org Web サイト](http://cxml.org/) を参照してください。
 
 ## <a name="post-back-message"></a>メッセージのポスト バック
-ポスト バック メッセージは、ユーザーが外部サイトからチェックアウトし、Finance and Operations に戻るときに仕入先から受け取ったメッセージです。 ポスト バック メッセージは設定できません。 メッセージは cXML プロトコル定義に基づいています。要求行で受け取ったポスト バック メッセージの一部となる情報は次のとおりです。
+ポスト バック メッセージは、ユーザーが外部サイトからチェックアウトし、Supply Chain Management に戻るときに仕入先から受け取ったメッセージです。 ポスト バック メッセージは設定できません。 メッセージは cXML プロトコル定義に基づいています。要求明細行で受け取ったポスト バック メッセージの一部となる情報は次のとおりです。
 
-| 仕入先から受け取ったメッセージ | Finance and Operations の要求明細行にコピーされる|
+| 仕入先から受け取ったメッセージ | 要求明細行にコピー済|
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |件数|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|外部品目 ID|

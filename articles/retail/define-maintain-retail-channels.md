@@ -1,6 +1,6 @@
 ---
 title: 小売チャンネルの定義と管理
-description: このトピックでは、Microsoft Dynamics 365 for Retail では小売店舗とも呼ばれる、従来型の店舗を設定するプロセスの概要を提供します。 ここでは、小売店舗を設定する前と後の、実施する必要のあるタスクについて説明します。
+description: このトピックでは、Dynamics 365 Retail では小売店舗とも呼ばれる、従来型の店舗を設定するプロセスの概要を提供します。 ここでは、小売店舗を設定する前と後の、実施する必要のあるタスクについて説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/14/2017
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 53ba6cdb2378ce9011c6e7e3ce4e67c789adb1e6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f55099ad283e665965aad0684b3c9d87223d5ed7
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560352"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019373"
 ---
 # <a name="define-and-maintain-retail-channels"></a>小売チャンネルの定義と管理
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail では小売店舗とも呼ばれる、従来型の店舗を設定するプロセスの概要を提供します。 ここでは、小売店舗を設定する前と後の、実施する必要のあるタスクについて説明します。
+このトピックでは、Dynamics 365 Retail では小売店舗とも呼ばれる、従来型の店舗を設定するプロセスの概要を提供します。 ここでは、小売店舗を設定する前と後の、実施する必要のあるタスクについて説明します。
 
-Dynamics 365 for Retail は、オンライン ストア、コール センターと従来型の店舗などの、複数の小売チャネルをサポートします。 従来型の店舗は、小売店舗とも呼ばれます。 各小売店舗は、独自の支払方法、価格グループ、POS レジスタ、収入/経費勘定、およびスタッフを持つことができます。 作成する前に、小売店舗のこれらすべての要素を設定する必要があります。 小売店舗を作成したら、店舗に配送される製品を割り当てます。 また、店舗への従業員、レジスター、および顧客の割り当ても行います。 最後に、組織階層に新しい店舗を追加します。
+Retail は、オンライン ストア、コール センター、実店舗などの複数の小売チャネルをサポートします。 従来型の店舗は、小売店舗とも呼ばれます。 各小売店舗は、独自の支払方法、価格グループ、POS レジスタ、収入/経費勘定、およびスタッフを持つことができます。 作成する前に、小売店舗のこれらすべての要素を設定する必要があります。 小売店舗を作成したら、店舗に配送される製品を割り当てます。 また、店舗への従業員、レジスター、および顧客の割り当ても行います。 最後に、組織階層に新しい店舗を追加します。
 
 ## <a name="setting-up-retail-stores"></a>小売店舗の設定
 
-Dynamics 365 for Retail で小売店舗を設定する前に必要な作業を行う必要があります。 その後、小売店舗を作成し、詳細を追加できます。
+Retail で小売店舗を設定する前に必要な作業を行う必要があります。 その後、小売店舗を作成し、詳細を追加できます。
 
 ### <a name="prerequisites"></a>必要条件
 
@@ -55,7 +55,7 @@ Dynamics 365 for Retail で小売店舗を設定する前に必要な作業を�
 11. スタッフ メンバーを設定します。
 
     > [!NOTE]
-    > Dynamics 365 for Retail for Retail POS システムを使用してサインインし、タスクを実行できるように、作業者に適切なアクセス許可を割り当てる必要があります。
+    > Retail POS システムを使用してサインインし、タスクを実行できるように、作業者に適切なアクセス許可を割り当てる必要もあります。
 
 12. 店舗に割り当てる Retail POS のプロファイルをコンフィギュレーションします。 タスクには、登録設定、オフライン プロファイルの設定、レシートの形式とプロファイルの設定などの多くのタスクが含まれます。
 

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent の新機能または変更された機能 (2019 年 6 月 11 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent の新機能または変更された機能 (2019 年 6 月 11 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/11/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a1413ea43e852c78ede227b69c0f49c07944a872
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b06dc0556bd1461573cd56abed602d72333a3f39
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741623"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023933"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-11-2019"></a>Dynamics 365 for Talent の新機能または変更された機能 (2019 年 6 月 11 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 6 月 11 日)
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 
 ### <a name="search-engine-optimization-for-job-posts"></a>人材募集のための検索エンジンの最適化
 
-Dynamics 365 for Talent: Attract 管理センターで**検索エンジン最適化**が有効にされた後、Attract は Google インデックス作成アプリケーション プログラミング インターフェイス (API) に、新しいジョブの有効化およびポスト時、または既存のジョブが更新された時に Web ページのクローリングを行うよう通知します。 このようにして、ジョブは Google および他の検索エンジンの検索結果に表示されます。
+Dynamics 365 Talent: Attract 管理センターで**検索エンジン最適化**が有効にされた後、Attract は Google インデックス作成アプリケーション プログラミング インターフェイス (API) に、新しいジョブの有効化およびポスト時、または既存のジョブが更新された時に Web ページのクローリングを行うよう通知します。 このようにして、ジョブは Google および他の検索エンジンの検索結果に表示されます。
 
 同様に、ジョブをアンポストした場合、Attract はインデックス作成 API に通知し、アンポストされたジョブは検索結果に表示されなくなります。
 
@@ -50,15 +50,15 @@ Dynamics 365 for Talent: Attract 管理センターで**検索エンジン最適
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 
-今回のリリースには、Dynamics 365 for Talent: Onboard のマイナーなバグ修正が含まれています。
+今回のリリースには、Dynamics 365 Talent: Onboard のマイナーなバグ修正が含まれています。
 
 ## <a name="changes-in-core-hr"></a>Core HR の変更
 
 このセクションに記載された変更は、ビルド番号 8.1.2337 に適用されます。
 
-### <a name="platform-update-27"></a>プラットフォーム update 27
+### <a name="platform-update-27-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 27
 
-プラットフォーム更新プログラム 27 に関する詳細については [Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27) を参照してください。
+Finance and Operations のプラットフォーム更新プロフラム 27 の詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プロフラム 27 (2019 年 6 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27) を参照してください。
 
 ### <a name="feature-management-workspace-in-talent"></a>Talent における機能管理ワークスペース
 

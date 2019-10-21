@@ -1,6 +1,6 @@
 ---
 title: 現金管理の改善
-description: このトピックでは、Dynamics 365 for Retail の POS で現金管理の改善について説明します。
+description: このトピックでは、Dynamics 365 Retail の POS で現金管理の改善について説明します。
 author: anpurush
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 845cba3b536b0f800b7c7c4eecee46a068ca8cff
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 49d70a8d983bf3475e01f8fcb80d569b13568485
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1630056"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019534"
 ---
 # <a name="cash-management-improvements"></a>現金管理の改善
 
@@ -32,9 +32,11 @@ ms.locfileid: "1630056"
 
 現金管理は、現物店舗の小売業者にとって重要な機能です。 小売業者は、店舗内のレジスターとレジ担当者間にて、現金の完全なトレーサビリティと責任、および動きが分かるシステムを店舗に必要としています。 すべての相違点を調整し、説明責任を決定を可能にする必要があります。
 
-Microsoft Dynamics 365 for Retail は、販売時点管理 (POS) アプリケーションでの現金管理機能を備えています。 ただし、バージョン 10.0.3 よりも前のバージョンの小売では、現金管理機能は店舗での現金移動を完全に追跡できないほど堅牢ではありません。 小売業者は店舗の現金を調整できますが、現金不一致が発生した場合には、説明責任を正確に判断することはできません。
 
-Microsoft Dynamics 365 for Retail バージョン 10.0.3 以降、小売業者は現金の処理に関するトレーサビリティを取得します。 このトレーサビリティの一部として、小売業者は安全を定義し、両面の現金トランザクションを作成し、現金管理トランザクションを調整することができます。
+Microsoft Dynamics 365 Retail は、販売時点管理 (POS) アプリケーションでの現金管理機能を備えています。 ただし、バージョン 10.0.3 よりも前のバージョンの小売では、現金管理機能は店舗での現金移動を完全に追跡できないほど堅牢ではありません。 小売業者は店舗の現金を調整できますが、現金不一致が発生した場合には、説明責任を正確に判断することはできません。
+
+
+Retail バージョン 10.0.3 以降、小売業者は現金の処理に関するトレーサビリティを取得します。 このトレーサビリティの一部として、小売業者は安全を定義し、両面の現金トランザクションを作成し、現金管理トランザクションを調整することができます。
 
 ## <a name="set-up-traceability-and-define-safes"></a>トレーサビリティの設定と安全の定義
 

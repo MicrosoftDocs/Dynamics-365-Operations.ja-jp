@@ -1,6 +1,6 @@
 ---
 title: 返品注文に対する交換のコンフィギュレーションとプロセス
-description: このトピックでは、Microsoft Dynamics 365 for Retail で返品に対する交換のコンフィギュレーションを行う方法について説明します。
+description: このトピックでは、Dynamics 365 Retail で返品に対する交換のコンフィギュレーションを行う方法について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 11/12/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ce327a918159771df0acab276b1169d2ad77825
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561390"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025382"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>返品注文に対する交換のコンフィギュレーションとプロセス
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail の以前のバージョンでは、Retail Headquarters で返品注文ドキュメントを使用することにより、顧客注文に対する返品が処理されていました。 ただし、返品注文ドキュメントを使用できるのは、返品されている製品の処理のみです。 返品された製品は、返品注文明細行の数量が負の数になっていることでわかります。 これに対して、売上は、数量が正の数になっています。 ただし、返品注文ドキュメントでは、負の数量はサポートされていません。 この制限があるため、以前のバージョンの Retail では、返品注文ドキュメントを使用して製品の交換を行うシナリオはサポートされていませんでした。
+Dynamics 365 Retail の以前のバージョンでは、Retail Headquarters で返品注文ドキュメントを使用することにより、顧客注文に対する返品が処理されていました。 ただし、返品注文ドキュメントを使用できるのは、返品されている製品の処理のみです。 返品された製品は、返品注文明細行の数量が負の数になっていることでわかります。 これに対して、売上は、数量が正の数になっています。 ただし、返品注文ドキュメントでは、負の数量はサポートされていません。 この制限があるため、以前のバージョンの Retail では、返品注文ドキュメントを使用して製品の交換を行うシナリオはサポートされていませんでした。
 
 しかし、返品注文で交換を行うシナリオをサポートする機能が追加されました。 現在の Retail では、返品注文ドキュメントではなく、販売注文ドキュメントを使用してこれらのタイプのトランザクションを処理します。
 

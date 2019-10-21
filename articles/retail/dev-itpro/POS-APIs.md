@@ -18,19 +18,20 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 1977c824fb71e5ceb2ec7d43ee2f19edccd82bc6
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 8b0393c78f0c8a350174f51bd0a808c9da0dd112
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833103"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019313"
 ---
 # <a name="retail-pos-apis"></a>Retail POS API
 [!include [banner](../includes/banner.md)]
 
 Retail POS API を使用すると、簡単に POS アプリに拡張機能または新しい機能を構築することができます。 たとえば、製品の詳細の取得、価格の変更、買い物カゴへの品目の追加を行うための新しい機能を追加するために Retail POS アプリケーションを拡張する場合です。 これを実現する API を使用できます。 これを行うには、作業を実行する API を呼び出す必要があるだけです。 POS API は、拡張子パターンを合理化し、拡張機能を構築するために継続的なサポートを提供します。
 
-拡張パターンは、要求/応答のパターンに従って Commerce Runtime (CRT)、POS、ハードウェア ステーション (HWS) 間で統合されています。 すべての POS API は、CRT や HWS のような要求/応答として公開されます。 このトピックでは、Dynamics 365 for Finance and Operations または Dynamics 365 for Retail 最新修正プログラムが適用されます。 
+拡張パターンは、要求/応答のパターンに従って Commerce Runtime (CRT)、POS、ハードウェア ステーション (HWS) 間で統合されています。 すべての POS API は、CRT や HWS のような要求/応答として公開されます。 このトピックは、Dynamics 365 for Finance and Operations アプリケーションまたは Dynamics 365 Retail に適用されます。 
+
 
 POS API は、3 つのさまざまなシナリオに分類されます。
 

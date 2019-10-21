@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 5f418e42aa6b26805106a5f1220e1a5e8b46edd6
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 26ca7fd7440aa6c7bda85f60ccb613e081fe3583
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833099"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250357"
 ---
 # <a name="add-pos-operations-to-pos-layouts-by-using-button-grid-designer"></a>ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加
 
@@ -28,8 +28,8 @@ ms.locfileid: "1833099"
 
 このトピックでは、新しい販売時点管理 (POS) 工程を作成し、ボタン グリッド デザイナーを使用して POS レイアウトに追加する方法について説明します。 このトピックは、プラットフォーム更新プログラム 8 とアプリケーション更新プログラム 4 修正プログラムがインストールされている次のアプリケーションに適用されます。
 
-- Microsoft Dynamics 365 for Finance and Operations
-- Microsoft Dynamics 365 for Retail
+- 財務
+- Dynamics 365 Retail
 
 ユーザーがボタンをクリックしたときに POS でビジネス ロジックを実行したい場合は、POS 操作を作成する必要があります。 POS 操作では複数の活動およびワークフローを実行できます。 たとえば、新しいビューを開いたり、ユーザーの入力を求めたり、ビジネス ロジックを実行したりすることができます。 すべての標準およびカスタム POS 操作では、プレ トリガーおよびポスト トリガーをサポートします。
 

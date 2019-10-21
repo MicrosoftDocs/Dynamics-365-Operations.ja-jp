@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Retail バージョン 10.0.1 の新機能および変更された機能
-description: このトピックでは Dynamics 365 for Retail のプレビュー中の機能について説明します。
+description: このトピックでは Dynamics 365 Retail のプレビュー中の機能について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 03/08/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 9951fec370ba3654aa9ff70bf99eb4df253a2325
-ms.sourcegitcommit: bbc9aa0d6b94a942e1f4d5b038601509dcc87937
+ms.openlocfilehash: 2f0c3f16e274dd50adc421dd0819205f145862eb
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1619181"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017424"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-version-1001"></a>Dynamics 365 for Retail バージョン 10.0.1 の新機能および変更された機能
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail の新機能または変更された機能について説明します。 
+このトピックでは、Dynamics 365 Retail の新機能または変更された機能について説明します。 
 
 Microsoft Dynamics 365 for Finance and Operations の機能については [Finance and Operations バージョン 10.0.1 (2019 年 4 月) の新機能と変更点](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-1)を参照してください。
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 for Finance and Operations の機能については [Fina
 
 ## <a name="loyalty-changes"></a>ロイヤリティの変更
 
-Dynamics 365 for Retail のロイヤリティ機能を強化するための機能が追加されました。
+Retail のロイヤリティ機能を強化するための機能が追加されました。
 
 詳細については、[ロイヤリティの概要](../../retail/set-up-customer-loyalty-program.md) を参照してください。
 

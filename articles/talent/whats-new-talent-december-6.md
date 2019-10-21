@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 6 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent Core HR (2018 年 12 月 6 日) の新機能および変更された機能
+description: このトピックでは、Microsoft Dynamics 365 Talent - Core HR の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f3d53440c5d19dd52fbab17305c3e99a73e570be
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 73e0875c3e072bc29050a096888459c6e4bb1b7b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742589"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025959"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 6 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-december-6-2018"></a>Dynamics 365 Talent: Core HR (2018 年 12 月 6 日) の新機能および変更された機能
 
 [!include [banner](includes/banner.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "1742589"
 このトピックでは、Core HR の新機能または変更された機能について説明します。
 
 
-## <a name="platform-update-22"></a>プラットフォーム update 22
+## <a name="platform-update-22-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 22
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>最大 100 万行を Excel にエクスポート
 
@@ -42,7 +42,7 @@ Excel へのエクスポート機能は、Talent のグリッドから最大 100
 
 ### <a name="restyled-personalization-toolbar"></a>個人用設定ツールバーの再編成
 
-個人用設定ツールバーがプラットフォーム更新プログラム 22 で再編成され、ユーザーが Talent でエクスペリエンスを簡単にカスタマイズできるようになりました。 次の変更が加えられました。 
+個人用設定ツールバーが Finance and Operations のプラットフォーム更新 22 で再編成され、ユーザーが Talent でエクスペリエンスを簡単にカスタマイズできるようになりました。 次の変更が加えられました。 
 
 -  各個人用設定ツールの名前がアイコンと共に表示されるようになったため、ユーザーが使おうと思っているツールをすばやく認識できます。
 -  現在のツールを使用する方法についての説明も表示され、必要な個人用設定を行う方法を理解するのに役立ちます。  
@@ -50,19 +50,19 @@ Excel へのエクスポート機能は、Talent のグリッドから最大 100
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>「次の値のいずれか」のフィルタリング結果を最適化
 
-「次の値のいずれか」フィルター演算子は、フィルター ウィンドウおよびグリッド ヘッダーのドロップダウン リストを使用する場合にほとんどのフィールドで使用できます。 この演算子により、複数の値に基づいてフィールドをフィルター処理できます。 「次の値のいずれか」演算子の新機能と向上したエクスペリエンスはプラットフォーム更新 22 で利用可能です。 詳しくは、[「次の値のいずれか」のフィルタリング結果の最適化](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering)をご覧ください。
+「次の値のいずれか」フィルター演算子は、フィルター ウィンドウおよびグリッド ヘッダーのドロップダウン リストを使用する場合にほとんどのフィールドで使用できます。 この演算子により、複数の値に基づいてフィールドをフィルター処理できます。 「次の値のいずれか」演算子の新機能と向上したエクスペリエンスは Finance and Operations のプラットフォーム更新 22 で利用可能です。 詳しくは、[「次の値のいずれか」のフィルタリング結果の最適化](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering)をご覧ください。
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>"次の値のいずれか" 演算子を使って Excel からフィルター フィールドにリストを貼り付け
 
 一部のタスクでは、Talent でデータのフィルター処理に使用する値の一覧が Excel に表示されることがあります。 たとえば、人事管理ユーザーは、システムで追加の調査を必要とする一連の従業員をレポートから特定している可能性があり、このユーザーが Excel から Talent のフィルター フィールドに直接リストをコピーできると最適な場合があります。
 
-プラットフォーム更新 22 以降では、フィルター ウィンドウおよびグリッド列フィルターの「次の値のいずれか」演算子が、フィルター フィールドに直接貼り付けることができるように、Excel からコピーされたリストを認識するようになりました。 これには、Excel のさまざまな行と列からコピーされた値のコレクションが含まれます。 この機能の詳細については、["次の値のいずれか" 演算子を使用して Excel からフィルター フィールドに一覧を貼り付ける](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel)を参照してください。
+Finance and Operations のプラットフォーム更新 22 以降では、フィルター ウィンドウおよびグリッド列フィルターの「次の値のいずれか」演算子が、フィルター フィールドに直接貼り付けることができるように、Excel からコピーされたリストを認識するようになりました。 これには、Excel のさまざまな行と列からコピーされた値のコレクションが含まれます。 この機能の詳細については、["次の値のいずれか" 演算子を使用して Excel からフィルター フィールドに一覧を貼り付ける](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel)を参照してください。
 
 ## <a name="in-preview"></a>プレビュー
 
 ### <a name="configure-uk-payroll-integration-between-talent-and-dayforce"></a>Talent と Dayforce 間の UK 給与統合のコンフィギュレーション
 
-Microsoft Dynamics 365 for Talent および Ceridian Dayforce の統合は、英国のプレビューで利用可能です。 詳細については、次のトピックを参照してください。[Talent と Dayforce の間での給与統合のコンフィギュレーション](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration)
+Talent および Ceridian Dayforce の統合は、英国のプレビューで利用可能です。 詳細については、次のトピックを参照してください。[Talent と Dayforce の間での給与統合のコンフィギュレーション](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration)
 
 ## <a name="coming-soon"></a>間もなく公開
 
@@ -90,9 +90,9 @@ Microsoft Dynamics 365 for Talent および Ceridian Dayforce の統合は、英
 
 ## <a name="known-issues"></a>既知の問題
 
-### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Finance and Operations との統合のマッピング エラー
+### <a name="mapping-errors-in-the-integration-with-finance"></a>Finance との統合のマッピング エラー
 
-次の問題は Finance and Operations と人材を統合するための現在のテンプレートで識別されています。 新しいテンプレートは、間もなく公開され、作成されたすべての新しい統合プロジェクトに適用されます。 既存の統合プロジェクトのために、タスク マッピングを更新できます。 更新されたマッピングについては、次の表を参照してください。 
+次の問題は、Talent を Finance と統合するための現在のテンプレートで識別されています。 新しいテンプレートは、間もなく公開され、作成されたすべての新しい統合プロジェクトに適用されます。 既存の統合プロジェクトのために、タスク マッピングを更新できます。 更新されたマッピングについては、次の表を参照してください。 
 
 >[!NOTE]
 > ジョブ職位から職位親ジョブ割り当てタスクはデータが統合されていません。 この問題は現在調査中です。 現在のマッピングに回避策はありません。 

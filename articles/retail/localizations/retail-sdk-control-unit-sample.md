@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 5fe04faea78bc13442e753ffdec7559d285a73eb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 01966f56dba1dc9e83b9f246eae44899b7c4c059
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834016"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025396"
 ---
 # <a name="sample-for-retail-pos-integration-with-control-units-for-sweden"></a>スウェーデン用の管理単位との Retail POS の統合
 
@@ -33,14 +33,14 @@ ms.locfileid: "1834016"
 
 **技術サポートは提供されません。コード配布を許可する Microsoft の使用許諾契約がない限り、このコードを配布することはできません。**
 
-このサンプルでは、Retail Modern POS または クラウド POS を会計登録と統合する Microsoft Dynamics 365 for Retail 拡張機能を作成する方法を示します。 特に、このサンプルには Microsoft Dynamics for Retail POS をスウェーデンの管理単位と統合するコードが含まれています。 たとえば、このサンプルでは Retail Innovation HTT AB の CleanCash® Type A 管理単位のアプリケーション プログラミング インターフェイス (API) を使用します。 CleanCash® API のバージョン1.1.4 が使用されます。 API およびドキュメントを含む統合パッケージについては、デバイスの製造元に問い合わせてください。
+このサンプルでは、Retail Modern POS または クラウド POS を会計登録と統合する Dynamics 365 Retail 拡張機能を作成する方法を示します。 特に、このサンプルには Retail POS をスウェーデンの管理単位と統合するコードが含まれています。 たとえば、このサンプルでは Retail Innovation HTT AB の CleanCash® Type A 管理単位のアプリケーション プログラミング インターフェイス (API) を使用します。 CleanCash® API のバージョン1.1.4 が使用されます。 API およびドキュメントを含む統合パッケージについては、デバイスの製造元に問い合わせてください。
 
 このサンプルは、Retail ソフトウェア開発キット (SDK) の一部です。 Retail SDK をダウンロードして使用する方法については、[Retail SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
 このサンプルは、ハードウェア ステーション、Commerce Runtime (CRT)、および 販売時点管理 (POS) で構成されます。 このサンプルを実行するには、ハードウェア ステーション、CRT、および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
 
 > [!NOTE]
-> 使用している Microsoft Dynamics 365 for Retail のバージョンによって、このトピックの手順の一部が異なります。 詳細については、 [Dynamics 365 for Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
+> 使用しているバージョンによって、このトピックの手順の一部が異なります。 詳細については、 [Dynamics 365 for Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
 
 ## <a name="development-environment"></a>開発環境
 

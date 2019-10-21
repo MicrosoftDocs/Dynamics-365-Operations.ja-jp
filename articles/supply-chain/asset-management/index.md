@@ -1,6 +1,6 @@
 ---
 title: 資産管理の概要
-description: このトピックでは、Dynamics 365 for Finance and Operations の資産管理の機能について説明します。
+description: このトピックでは、Dynamics 365 Supply Chain Management の資産管理の機能について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 07/24/2019
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b8a619d787a2d43e843b574edf77b3153d53005
-ms.sourcegitcommit: 829b6dc145197cc565d40469f6a1522f8dccac9f
+ms.openlocfilehash: f98185fbabefedd2a545bd1c3e15b9e180363469
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "1788283"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024709"
 ---
 # <a name="asset-management-overview"></a>資産管理の概要
 
@@ -32,7 +32,7 @@ ms.locfileid: "1788283"
 [!include [banner](../includes/preview-banner.md)]
 
 
-資産管理は、Microsoft Dynamics 365 for Finance and Operations の資産およびメンテナンス ジョブを管理するための高度なモジュールです。 資産管理は、Finance and Operations のいくつかのモジュールとシームレスに統合しています。 
+資産管理は、Dynamics 365 Supply Chain Management の資産およびメンテナンス ジョブを管理するための高度なモジュールです。 資産管理は、Finance and Operations のいくつかのモジュールとシームレスに統合しています。 
 
 以下の図は、Finance and Operations の他のモジュールへのインターフェイスの図です。
 

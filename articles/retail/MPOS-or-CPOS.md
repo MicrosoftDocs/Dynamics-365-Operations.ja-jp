@@ -1,6 +1,6 @@
 ---
 title: Retail Modern POS (MPOS) かクラウド POS かの選択
-description: このトピックでは、Retail Modern POS およびクラウド POS の主な違いについて説明します。 Microsoft Dynamics 365 for Retail を実装する小売業者が、要件に対して最適な選択ができるよう考慮すべきさまざまな要因についても説明します。
+description: このトピックでは、Retail Modern POS およびクラウド POS の主な違いについて説明します。 Dynamics 365 Retail を実装する小売業者が、要件に対して最適な選択ができるよう考慮すべきさまざまな要因についても説明します。
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 69cf6d2b7a9bb09a848f2a0c870f5e7e59c61e91
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557017"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025912"
 ---
 # <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS (MPOS) かクラウド POS かの選択
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail を配置する際に考慮すべき要因に対する追加のバックグラウンド、ヒント、およびガイダンスを実装者に与えます。 配置プロセスの一部としてこのガイドを確認し従うことにより、実装者は、ユーザーの満足度またはパフォーマンスに影響を与える可能性がある問題を回避することができます。
+このトピックでは、Dynamics 365 Retail を配置する際に考慮すべき要因に対する追加のバックグラウンド、ヒント、およびガイダンスを実装者に与えます。 配置プロセスの一部としてこのガイドを確認し従うことにより、実装者は、ユーザーの満足度またはパフォーマンスに影響を与える可能性がある問題を回避することができます。
 
 ## <a name="insights"></a>インサイト
 
@@ -76,9 +76,9 @@ Windows、iOS、または Android デバイスの MPOS は、デバイスでパ�
 | iOS または Android 用 MPOS | クラウドまたは RSSU | 無                |
 | クラウド POS               | クラウドまたは RSSU | 無                |
 
-#### <a name="retail-server"></a>Retail サーバー
+#### <a name="retail-server"></a>Retail server
 
-Retail サーバーは、CRTをホストするコンポーネントです。 CRT は、POS が使用するすべてのビジネス ロジックを含み、チャネル データベースへのアクセスを提供します。 オンライン中、店舗内のすべての POS クライアントは Retail サーバーを使用します。 クラウドまたは店舗 (RSSU) 内のいずれかで、Retail サーバーを展開することができます。
+小売サーバーは、CRT をホストするコンポーネントです。 CRT は、POS が使用するすべてのビジネス ロジックを含み、チャネル データベースへのアクセスを提供します。 オンライン中、店舗内のすべての POS クライアントは Retail サーバーを使用します。 クラウドまたは店舗 (RSSU) 内のいずれかで、Retail サーバーを展開することができます。
 
 #### <a name="offline-mode"></a>オフライン モード
 

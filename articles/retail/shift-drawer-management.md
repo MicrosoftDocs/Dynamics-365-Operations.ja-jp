@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e600e1d2bb4bc1a49d55fb58b3e74fa7e13fc2af
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556441"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017900"
 ---
 # <a name="shift-and-cash-drawer-management"></a>シフトとキャッシュ ドロワーの管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "1556441"
 
 このトピックでは、小売販売時点管理 (POS) のシフトの設定および使用方法について説明します。
 
-Microsoft Dynamics 365 for Retail で、*シフト*という用語は 2 つの時点間の POS トランザクション データと活動のコレクションを示します。 各シフトについて、予測される金額は、カウントおよび申告された金額に対して比較されます。
+Dynamics 365 Retail で、*シフト*という用語は 2 つの時点間の POS トランザクション データと活動のコレクションを示します。 各シフトについて、予測される金額は、カウントおよび申告された金額に対して比較されます。
 
 通常、シフトは営業日の開始時に開かれます。 その時点で、ユーザーはキャッシュ ドロワーにある開始金額を申告します。 それから、販売トランザクションは終日にわたって実行されます。 最後に、その日の終わりにドロワーをカウントし、終了金額を申告します。 シフトは閉じられ、Z レポートが生成されます。 Z レポートは過不足があるかどうかを示します。
 
@@ -69,7 +69,7 @@ Retail は、複数のコンフィギュレーション オプションおよび
 
 ## <a name="shift-and-drawer-operations"></a>シフトとドロワーの操作
 
-さまざまな操作によってシフトの状態の変更、またはキャッシュ ドロワーの合計金額の増減を実行することができます。 このセクションでは、Modern POS および Cloud POS に対する Microsoft Dynamics 365 for Retail のこれらのシフト操作について説明します。
+さまざまな操作によってシフトの状態の変更、またはキャッシュ ドロワーの合計金額の増減を実行することができます。 このセクションでは、Retail Modern POS および Cloud POS に対するこれらのシフト操作について説明します。
 
 ### <a name="open-shift"></a>オープン シフト
 

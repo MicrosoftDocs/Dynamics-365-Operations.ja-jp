@@ -1,6 +1,6 @@
 ---
 title: Microsoft Dynamics 365 アプリ (Common Data Service 1.0) で Talent が表示されない
-description: このトピックでは、顧客が Microsoft Dynamics 365 アプリの中で Microsoft Dynamics 365 for Talent アプリを表示できない場合の対処方法について説明します。
+description: このトピックでは、顧客が Microsoft Dynamics 365 アプリの中で Microsoft Dynamics 365 Talent アプリを表示できない場合の対処方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ad5add2b572ccb6bff175806b965f63b53986152
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 956af80a8ab2f454d9f523d3c74dda754ef0f793
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518507"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009379"
 ---
 # <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a>Microsoft Dynamics 365 アプリ (Common Data Service 1.0) で Talent が表示されない
 
@@ -30,7 +30,7 @@ ms.locfileid: "1518507"
 
 **問題点**
 
-顧客は、Microsoft Dynamics 365 アプリの中で Microsoft Dynamics 365 for Talent アプリを表示できません。
+顧客は、Microsoft Dynamics 365 アプリの中で Microsoft Dynamics 365 Talent アプリを表示できません。
 
 **解像度**
 

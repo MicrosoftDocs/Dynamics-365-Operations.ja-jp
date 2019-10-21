@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent - Onboard を使用した研修用ガイドの作成と送信
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Onboard アプリを使用して新規採用者向けの研修用ガイドを作成する方法について説明します。 このタスクは、人事管理 (HCM) の採用から退職までの戦略における重要な第一歩です。
+title: Dynamics 365 Talent - Onboard を使用した研修用ガイドの作成と送信
+description: このトピックでは、Microsoft Dynamics 365 Talent - Onboard アプリを使用して新規採用者向けの研修用ガイドを作成する方法について説明します。 このタスクは、人事管理 (HCM) の採用から退職までの戦略における重要な第一歩です。
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: de5d584e3b7edba2751aa0c83b0465df2c3e4f7d
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: e4dbfcc3b3fd611eea36109a516a7b9361a9f654
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731547"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009857"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-for-talent-onboard"></a>Dynamics 365 for Talent: Onboard を使用した研修用ガイドの作成と送信
+# <a name="create-and-send-an-onboarding-guide"></a>研修用ガイドの作成と送信
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard では、自分で作成したテンプレートもしくはギャラリーで使用できるテンプレートから、または最初から研修用ガイドを作成できます。
+Microsoft Dynamics 365 Talent: Onboard では、自分で作成したテンプレートもしくはギャラリーで使用できるテンプレートから、または最初から研修用ガイドを作成できます。
 
 研修用ガイドを作成したら、新規採用者に送信できます。 または、Onboard アプリからダウンロードした Microsoft Excel ファイルで指定した複数の新規採用者に送信することもできます。
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 9f8850a01008a624599d0158517a88698d8790fa
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: a8e834e8e251849f111c6ac56885158e8993ddd0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833742"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025538"
 ---
 # <a name="device-activation-of-a-customized-retail-modern-pos"></a>カスタマイズされた Retail Modern POS のデバイスの有効化
 
@@ -28,10 +28,7 @@ ms.locfileid: "1833742"
 
 このトピックでは、カスタマイズした Retail Modern POS アプリケーションを使用する場合に、デバイスの有効化が正常に動作するように、Microsoft Dynamics 365 バックオフィスを設定する方法について説明します。 カスタマイズされた返信アドレスを取得し、バックオフィスでその値を入力するために必要な手順を説明します。
 
-> [!NOTE]
-> このセキュリティおよび機能拡張がは、2017 年 7 月 (7.2) リリースで導入され、その前の 1611 (7.1) リリースに追加されました。
-
-Retail Modern POS は、Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail のクライアント側コンポーネントです。 Retail Modern POS を使用するには、デバイスの有効化を実行する必要があります。 デバイスの有効化は、ユーザーを認証する Azure Active Directory (Azure AD) を使用します。 この領域の拡張機能は、Web アカウント マネージャー サービスを活用するためにデバイスの有効化のフローを変更しました。 この拡張の一部として、認証承認プロセスのセキュリティが強化されました。 このセキュリティ強化では、コールバック URI に特定の一意の値が必要になるため、Retail Modern POS のカスタマイズ時に、Dynamics 365 バックオフィスで追加設定が必要です。 (コールバック URI は、返信 URI とも呼ばれます。)
+Retail Modern POS は、Microsoft Dynamics 365 Retail のクライアント側コンポーネントです。 Retail Modern POS を使用するには、デバイスの有効化を実行する必要があります。 デバイスの有効化は、ユーザーを認証する Azure Active Directory (Azure AD) を使用します。 この領域の拡張機能は、Web アカウント マネージャー サービスを活用するためにデバイスの有効化のフローを変更しました。 この拡張の一部として、認証承認プロセスのセキュリティが強化されました。 このセキュリティ強化では、コールバック URI に特定の一意の値が必要になるため、Retail Modern POS のカスタマイズ時に、Dynamics 365 バックオフィスで追加設定が必要です。 (コールバック URI は、返信 URI とも呼ばれます。)
 
 既定では、Retail Modern POS はこのコールバック URI に既に登録されています。 ただし、Retail Modern POS をカスタマイズするとき、コールバック URI が変更されます。 したがって、再度動作するように正しく構成する必要があります。 このトピックでは、この構成を完了するために従う必要がある手順について説明します。 この構成が完了しない場合、カスタマイズされた Retail Modern POS アプリケーションでデバイスの有効化を実行しようとすると、エラー メッセージが表示されます。 このエラー メッセージは次のようになります。
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1a416bbb79be3f25998d3c0da8d231d0df808685
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875759"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024502"
 ---
 # <a name="maintenance-forecasts"></a>メンテナンス予測
 
@@ -104,7 +104,7 @@ ms.locfileid: "1875759"
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>作業指示書予測の自動更新
 
-資産管理では、Dynamics 365 for Finance and Operations の他のモジュールで更新された時間原価、品目原価、および経費に関するいて、作業指示書予測の変更を自動的に更新できます。 これは、最新の原価価格が常に作業指示書予測に使用されるようにするために行われます。 [メンテナンス作業タイプの予測](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) についても、同様の更新を行うことができます。
+資産管理では、他のモジュールで更新された時間原価、品目原価、および経費に関するいて、作業指示書予測の変更を自動的に更新できます。 これは、最新の原価価格が常に作業指示書予測に使用されるようにするために行われます。 [メンテナンス作業タイプの予測](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) についても、同様の更新を行うことができます。
 
 1. **資産管理** > **定期処理** > **予測** > **作業指示書予測の更新**をクリックします。
 

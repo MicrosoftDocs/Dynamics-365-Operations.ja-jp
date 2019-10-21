@@ -17,18 +17,20 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 3470f0b0dd2128c3cfb0748e0d00f3a8b6f7fbe4
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 19cf326c31ed0883ecf13e893327df1d8388b418
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833207"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019311"
 ---
 # <a name="upgrade-the-retail-channel-extension-to-the-latest-retail-sdk"></a>Retail チャネル拡張機能を最新の Retail SDK にアップグレード
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、以前のリリースから Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。 プロセス全体とサポートされるシナリオの情報が含まれていますが、このトピックではプロセスの各ステップに関する詳細な指示は提示しません。 このトピックは、Dynamics 365 for Retail および Dynamics 365 for Finance and Operations 7.3 バージョンおよびそれ以上に適用されます。
+このトピックでは、以前のリリースから Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。 プロセス全体とサポートされるシナリオの情報が含まれていますが、このトピックではプロセスの各ステップに関する詳細な指示は提示しません。 このトピックは、Dynamics 365 Retail および Dynamics 365 Finance に適用されます。
+
+
 以下のセクションは新しい Retail SDK に拡張機能を手動で移動する方法を説明しますが、Azure DevOps または Git などのソース管理システムを使用してこれを行うことができます。
 
 ## <a name="update-the-retail-sdk"></a>Retail SDK の更新

@@ -1,2 +1,2 @@
 > [!NOTE]
-> このトピックは Dynamics 365 for Finance and Operations と Dynamics 365 for Retail の両方に適用されます。 
+> このトピックは、Finance、Supply Chain Management、および Retail に適用されます。 

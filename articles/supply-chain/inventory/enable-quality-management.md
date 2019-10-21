@@ -1,6 +1,6 @@
 ---
 title: 品質管理の概要
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。
+description: このトピックでは、Dynamics 365 Supply Chain Management で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
@@ -19,24 +19,24 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1630d13437d7e930fdf32ed5fdc61fc62bc33817
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c9600e165da76948bb53a0188ec0b212a0fed84a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557503"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249586"
 ---
 # <a name="quality-management-overview"></a>品質管理の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。
+このトピックでは、Dynamics 365 Supply Chain Management で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。
 
-品質管理で、不適合製品を処理する際に原産地に関係なく応答時間を管理することができます。 診断タイプは修正レポートにリンクされているため、Microsoft Dynamics 365 for Finance and Operations では、問題を修正して再発を防ぐためのタスクをスケジュールできます。
+品質管理で、不適合製品を処理する際に原産地に関係なく応答時間を管理することができます。 診断タイプは修正レポートにリンクされているため、Finance and Operations では、問題を修正して再発を防ぐためのタスクをスケジュールできます。
 
 不適合を管理するための機能に加えて、品質管理には、問題タイプ (内部の問題も含む) で問題を追跡し、短期または長期でソリューションを識別する機能が含まれています。 主要業績評価指標 (KPI) に関する統計で、以前の不適合問題の履歴と修正に使用されたソリューションを分析できます。 履歴データを使用して、以前の品質尺度の有効性を確認し、今後使用する適切な尺度を決定することができます。
 
-品質関連を設定すると、Finance および Operations でさまざまな業務プロセス、イベントおよび条件の品質指示を生成できます。 品質アソシエーションは、特定の品目、特定の品目のグループ、またはすべての品目をカバーできます。
+品質関連を設定すると、Supply Chain Management でさまざまな業務プロセス、イベントおよび条件の品質指示を生成できます。 品質アソシエーションは、特定の品目、特定の品目のグループ、またはすべての品目をカバーできます。
 
 ## <a name="examples-of-the-use-of-quality-management"></a>品質管理の使用例
 品質管理は柔軟で、サプライ チェーン工程の特定のレベルの要件を満たすさまざまな方法で実行できます。 次の例では、これらの機能で可能な使用方法について説明します。

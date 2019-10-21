@@ -18,17 +18,17 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-09-11
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 2474f33474f07b60367ca0f789757c1d7ad6bbf5
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: ff70e0cd672292d99d424ef9f1b0a9ac6b8f322b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833205"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023578"
 ---
 # <a name="upcoming-changes-in-the-retail-sdk"></a>Retail SDK の今後の変更
 [!include [banner](../includes/banner.md)]
 
-将来の Dynamics 365 for Retail のリリースでは、新しい一連の機能によって、小売チャネル カスタマイズの開発およびサービス プロセスが簡略化される予定です。 これらのいくつかの機能を取り込むため、構築した拡張機能をアップグレード、再コンパイル、または一部のマイナー コードの変更を行う必要がある場合があります。 拡張子ロジック ファイルや作成したマニフェストに変更は必要ありません。 ただし、新しいテンプレートに拡張機能ファイルを移動する、パッケージ モデルを更新する、および Commerce Runtime、プロキシ、Retail サーバー拡張機能を再コンパイルして新しいライブラリ参照モデルと統合開発環境 (IDE) にマップする必要があります。
+将来の Dynamics 365 Retail のリリースでは、新しい一連の機能によって、小売チャネル カスタマイズの開発およびサービス プロセスが簡略化される予定です。 これらのいくつかの機能を取り込むため、構築した拡張機能をアップグレード、再コンパイル、または一部のマイナー コードの変更を行う必要がある場合があります。 拡張子ロジック ファイルや作成したマニフェストに変更は必要ありません。 ただし、新しいテンプレートに拡張機能ファイルを移動する、パッケージ モデルを更新する、および Commerce Runtime、プロキシ、Retail サーバー拡張機能を再コンパイルして新しいライブラリ参照モデルと統合開発環境 (IDE) にマップする必要があります。
 
 Microsoft は、新しい機能の計画を行って取り込む準備ができるように、新しい機能がリリースされる前にこのトピックを公開します。
 

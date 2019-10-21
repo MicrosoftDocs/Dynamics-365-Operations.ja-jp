@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent の新機能および変更された機能 (2019 年 2 月 27 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent の新機能および変更された機能 (2019 年 2 月 27 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/27/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f175c6e60cf87c7dcbde0eaf35357130fa035712
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518450"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024002"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Dynamics 365 for Talent の新機能および変更された機能 (2019 年 2 月 27 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 2 月 27 日)
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 
@@ -77,9 +77,9 @@ ms.locfileid: "1518450"
 
 多くの組織では、報酬および福利厚生の管理者は特定の報酬レコードにのみアクセスできます。 これらのレコードは、経営幹部または地域の従業員向けのものである可能性があります。 この変更により、人事管理 (HR) は組織内のさまざまな従業員数の報酬プランを管理および維持できます。 固定および変動プランに割り当てることができるセキュリティ ロールは、それらのプランへのアクセス権とそれらに関連する従業員データ (たとえば給与情報や特別償却レコードなど) を決定します。 指定されたアクセス権を持つロールのみが、それらの従業員の報酬を処理できます。
 
-### <a name="platform-update-24"></a>プラットフォーム update 24
+### <a name="platform-update-24-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 24
 
-Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新 24 (2019 年 3 月) の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) のプレビュー](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。
+Microsoft Dynamics 365 Finance and Operations のプラットフォーム更新プログラム 24 (2019 年 3 月) の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>従業員の固定報酬を将来の職位の割り当てに使用できるようにする
 
@@ -87,10 +87,10 @@ Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新
 
 ## <a name="known-issues"></a>既知の問題
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Core HR 統合テンプレートに対する変更 (Talent Common Data Service から Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance"></a>Core HR 統合テンプレートに対する変更 (Talent Common Data Service から Finance)
 Core HR のテンプレートは、「高度なクエリ テンプレート」に更新されています。 したがって、既定では、高度なクエリはこのテンプレートを使用して作成されたプロジェクトに使用できます。 さらに、既定のマッピング機能は、高度なクエリ エディターでのみ表示されます。 (既定のマッピング機能は「FN」としてマッピングに表示されます)。
 
-マッピング エラーの詳細については、[Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年12月14 日)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14) を参照してください。
+マッピング エラーの詳細については、[Dynamics 365 Talent: Core HR (2018 年 12 月 14 日) の新機能および変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14) を参照してください。
 
 新しいテンプレートを使用するには、新しいプロジェクトを作成し、新しい Talent 統合テンプレートを選択します。
 

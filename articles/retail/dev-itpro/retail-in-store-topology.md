@@ -1,6 +1,6 @@
 ---
 title: ストア内トポロジを選択します。
-description: このトピックでは、様々な Dynamics 365 for Retail の実店舗構成図を提供します。
+description: このトピックでは、様々な Dynamics 365 Retail の実店舗構成図を提供します。
 author: rassadi
 manager: AnnBe
 ms.date: 05/13/2019
@@ -16,18 +16,18 @@ ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: ad80bf639acd19263a958c28d55e3fadd6f6a3a8
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 10050ebfba79248c17eeff6164a7f39598ddec72
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833738"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018077"
 ---
 # <a name="select-an-in-store-topology"></a>ストア内トポロジを選択します。
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、様々な Dynamics 365 for Retail の実店舗構成図の概要を提供します。 
+このトピックでは、様々な Dynamics 365 Retail の実店舗構成図の概要を提供します。 
 
 <a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![店舗の構成図で右の小売りを選択します。](media/CHANNEL/INSTORE/Topology.jpg)</a>
 

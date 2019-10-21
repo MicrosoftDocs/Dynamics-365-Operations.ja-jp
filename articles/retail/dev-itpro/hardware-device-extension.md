@@ -17,16 +17,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update
-ms.openlocfilehash: dc143666855fb860da67d331225c83cee2e166c1
-ms.sourcegitcommit: a2e562d2871623dbc584d4fc747ee138bd1f674d
+ms.openlocfilehash: ee2a7ec21f9bc75ec661febd45b39453a3cb5e73
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "1870199"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023459"
 ---
 # <a name="integrate-pos-with-a-new-hardware-device"></a>POS と新しいハードウェア デバイスの統合
 
-このトピックでは、新しいハードウェア デバイスに POS を統合する方法について説明します。 このトピックの情報は Dynamics 365 for Finance and Operations と Dynamics 365 for Retail プラットフォーム アップデート 8 のみに適用されます。
+
+このトピックでは、新しいハードウェア デバイスに POS を統合する方法について説明します。 
+
 
 POS からハードウェア ステーションを呼び出すには、要求と応答を使用する必要があります。
 

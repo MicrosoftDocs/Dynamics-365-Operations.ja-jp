@@ -3,7 +3,7 @@ title: Retail ソフトウェア開発キット (SDK) のサンプル
 description: このトピックでは、2016 年 12 月に Retail SDK と共にリリースされた 3 つの新しいサンプルについて説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: b070e2a4c138a0fe8c6d3490721b5151628e88db
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 3044cfcff334294570c547396b17027ca1b3b877
+ms.sourcegitcommit: 2555acfd855fc18ff3ba432ba2cf7633a8f1653c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833063"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "2238559"
 ---
 # <a name="retail-software-development-kit-sdk-samples"></a>Retail ソフトウェア開発キット (SDK) のサンプル
 
@@ -32,7 +32,7 @@ ms.locfileid: "1833063"
 
 ## <a name="override-message-handler-sample"></a>メッセージ ハンドラーのサンプルをオーバーライド
 
-**シナリオ:**  Fabrikam の顧客の 1 人が顧客関係管理 (CRM) システムに参加していても、Microsoft Dynamics 365 for Retail にインポートされていない場合があります。 したがって、Fabrikam は、CRM システムと POS (販売時点管理) から顧客を検索したいと考えています。 業務要件を次に示します。
+**シナリオ:** Fabrikam の顧客の 1 人が顧客関係管理 (CRM) システムに参加していても、Microsoft Dynamics 365 Retail にインポートされていない場合があります。 したがって、Fabrikam は、CRM システムと POS (販売時点管理) から顧客を検索したいと考えています。 業務要件を次に示します。
 
 - CRM システムと POS から顧客を検索します。
 - 結果をマージして、Retail Modern POS (MPOS) で統合された結果セットを表示します。
@@ -162,6 +162,9 @@ public sealed class CustomerSearchRequestHandler : SingleRequestHandler<Customer
     ```
 
 このサンプルを実行する前に、チャネル データベースでカスタム テーブル、ビュー、およびストアド プロシージャを作成することを確認します。 また、MPOS に関連する変更を行います。 追加のコメントと共に、完全なサンプル コードが、RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.EmailPreferenceSample フォルダーにあります。 カスタム データベース アーティファクトを作成する方法の詳細については、SDK の RetailSDK\\Documents\\SampleExtensionsInstructions\\EmailPreference フォルダを参照してください。
+
+> [!NOTE]
+> 上記のコード サンプルと RetailSDK\\Documents\\SampleExtensionsInstructions\\emailpreference フォルダー内のサンプル スクリプトでは、[crt].EXTENSIONPROPERTIESTABLETYPE が使用されます。 バージョン 7.3 以降では、ext スキーマで crt または ax スキーマのオブジェクト/データ型の使用がサポートされなくなりました。 ext スキーマで、カスタム拡張テーブル プロパティ型を作成して使用する必要があります。
 
 ### <a name="best-practice"></a>ベスト プラクティス
 

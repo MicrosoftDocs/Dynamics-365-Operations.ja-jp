@@ -1,6 +1,6 @@
 ---
 title: 外部ギフト カードのサポート
-description: このトピックでは、Microsoft Dynamics 365 for Retail で現在利用できる外部ギフト カードのサポートについて説明します。
+description: このトピックでは、Microsoft Dynamics 365 Retail で現在利用できる外部ギフト カードのサポートについて説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 10/10/2017
@@ -19,12 +19,12 @@ ms.search.industry: retail
 ms.author: ivanv
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 04a1518bb0d10010079be118dac8241bf9103cba
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 72b6c1e767068b92b2c99f1ec7547ce1ab056eed
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833065"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023465"
 ---
 # <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 
@@ -32,7 +32,7 @@ ms.locfileid: "1833065"
 
 顧客にシームレスなエクスペリエンスを提供するために、小売業者はさまざまな支払方法を受け入れることができることを望んでいます。 ギフト カードは、現金やクレジット カードの次に最も頻繁に使用される支払方法の 1 つです。 多くの小売業者にとっての重要な要件は、販売時点管理 (POS) でさまざまなタイプのギフト カードを各種プロバイダーから受け入れることです。
 
-Microsoft Dynamics 365 for Retail は現在、外部ギフト カードをサポートします。 したがって、小売業者は、GiveX などのギフト カード プロバイダーからのサードパーティ ギフト カードを POS を使用して受け入れられます。 この機能を活用するには、外部のギフト カード サービス プロバイダのアカウントが必要です。 この機能は、ソリューションが提供していた標準のギフト カード サポートとは異なります。
+Microsoft Dynamics 365 Retail は現在、外部ギフト カードをサポートします。 したがって、小売業者は、GiveX などのギフト カード プロバイダーからのサードパーティ ギフト カードを POS を使用して受け入れられます。 この機能を活用するには、外部のギフト カード サービス プロバイダのアカウントが必要です。 この機能は、ソリューションが提供していた標準のギフト カード サポートとは異なります。
 
 最初から用意されている Verifone Payment コネクタもアップデートされ、外部ギフト カードの機能をサポートしています。 最初の更新で GiveX との統合が可能になりました。
 

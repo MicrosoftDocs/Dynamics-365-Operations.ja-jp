@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics AX 2012 から Finance and Operations への倉庫管理のアップグレード
+title: 倉庫管理を Microsoft Dynamics AX 2012 から Supply Chain Management にアップグレードする
 description: このトピックでは、製品および倉庫管理の移行オプションの概要を示します。
 author: perlynne
 manager: AnnBe
@@ -18,29 +18,29 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c3dcb75653743d0d135eda197c6330f3ee9c5383
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554049"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251434"
 ---
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Microsoft Dynamics AX 2012 から Finance and Operations への倉庫管理のアップグレード
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>倉庫管理を Microsoft Dynamics AX 2012 から Supply Chain Management にアップグレードする 
 
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、WMSII モジュールを実行している Microsoft Dynamics AX 2012 R3 から Microsoft Dynamics 365 for Finance and Operations にアップグレードするプロセスの概要を示します。
+このトピックでは、WMSII モジュールを実行している Microsoft Dynamics AX 2012 R3 から Supply Chain Management にアップグレードするプロセスの概要を示します。
 
-Finance and Operations は、Microsoft Dynamics AX 2012 のレガシ **WMSII** モジュールをサポートしていません。 代わりに、**倉庫管理**モジュールが使用できます。 WMSII モジュールでは、場所とパレット ID の在庫分析コードを資産在庫用に選択することができます。ただし、パレット ID の在庫分析コードは、Finance and Operations の資産在庫で使用することはできません。
+Supply Chain Management は、Microsoft Dynamics AX 2012 からのレガシ **WMSII** モジュールをサポートしていません。 代わりに、**倉庫管理**モジュールが使用できます。 WMSII モジュールでは、場所とパレット ID の在庫分析コードを資産在庫用に選択することができます。ただし、パレット ID の在庫分析コードは、Supply Chain Management の資産在庫で使用することはできません。
 
 アップグレード時に、パレット ID の在庫分析コードを使用する保管分析コード グループに関連付けられているすべての製品が識別され、ブロック済としてマークされますが、アップグレード用にはプロセスされません。
 
-## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>AX 2012 R3 WMSII を使用している場合、Finance and Operations にアップグレードします。
+## <a name="upgrading-to-supply-chain-management-when-ax-2012-r3-wmsii-is-used"></a>AX 2012 R3 WMSII が使用されている場合の Supply Chain Management へのアップグレード
 アップグレード後、**品目の保管分析コード グループの変更**フォームの一連のオプションを使用して、アップグレード中にブロックされた製品のブロック解除、およびそれらの製品のトランザクションの処理ができます。
 
-### <a name="enabling-items-in-finance-and-operations"></a>Finance および Operations の有効な品目
-Finance および Operations では、品目の追跡は倉庫管理プロセスに含まれているため、この変更が必要になります。 これらのプロセスのために、すべての倉庫およびその場所は、場所プロファイルに関連づける必要があります。 倉庫管理プロセスを使用する場合は、以下がコンフィギュレーションされている必要があります。
+### <a name="enabling-items-in-supply-chain-management"></a>Supply Chain Management で品目を有効化する 
+Supply Chain Management では、品目の追跡が倉庫管理プロセスに含まれているため、この変更が必要になります。 これらのプロセスのために、すべての倉庫およびその場所は、場所プロファイルに関連づける必要があります。 倉庫管理プロセスを使用する場合は、以下がコンフィギュレーションされている必要があります。
 -   既存の倉庫は、倉庫管理プロセスを使用するために有効にする必要があります 
 -   既存のリリース済製品は、倉庫管理プロセスを使用する保管分析コード グループと関連付ける必要があります 
 

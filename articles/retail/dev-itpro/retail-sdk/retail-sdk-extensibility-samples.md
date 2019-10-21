@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a04260b98c65c2dfe268caedc76b5aea493e524d
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: b67c2c49963cc368e685c470719514f5e430bf59
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833115"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023471"
 ---
 # <a name="retail-software-development-kit-sdk-extensibility-samples"></a>Retail ソフトウェア開発キット (SDK) の拡張機能サンプル
 
@@ -54,7 +54,7 @@ Retail ソフトウェアの開発キット (SDK) には、機能拡張のサン
 </tr>
 <tr>
 <td>EmailPreference</td>
-<td>この例では、拡張プロパティを使用してエンティティを拡張する方法を示します。 拡張エンティティは、Microsoft Dynamics 365 for Retail とチャネル データベースの両方に保持され、POS クライアントは値へのアクセスを可能にします。 新しい値は、RetailRealtimeTransaction サービスを介して Retail に同期的に書き込まれます。 拡張機能プロパティは自動的にフローするため、CRT または Retail サーバーに必要なカスタマイズはありません。 ページ、テーブル、Real-time Service (RTS) クライアント、Commerce Data Exchange (CDX)、チャネル データベース、POS (Modern POS と Cloud POS の両方) に変更があります。 オフライン モードに関しては、この例では扱いません。</td>
+<td>この例では、拡張プロパティを使用してエンティティを拡張する方法を示します。 拡張エンティティは、Microsoft Dynamics 365 Retail とチャネル データベースの両方に保持され、POS クライアントは値へのアクセスを可能にします。 新しい値は、RetailRealtimeTransaction サービスを介して Retail に同期的に書き込まれます。 拡張機能プロパティは自動的にフローするため、CRT または Retail サーバーに必要なカスタマイズはありません。 ページ、テーブル、Real-time Service (RTS) クライアント、Commerce Data Exchange (CDX)、チャネル データベース、POS (Modern POS と Cloud POS の両方) に変更があります。 オフライン モードに関しては、この例では扱いません。</td>
 <td>
 <ul>
 <li>既存の Modern POS/クラウド POS の表示またはページを変更します。</li>

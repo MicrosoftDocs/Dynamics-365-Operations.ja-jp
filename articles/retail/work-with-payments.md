@@ -1,6 +1,6 @@
 ---
 title: コール センターでの支払方法
-description: このトピックでは、Microsoft Dynamics 365 for Retail のコール センターで使用できる、さまざまな支払方法を説明します。
+description: このトピックでは、Dynamics 365 Retail のコール センターで使用できる、さまざまな支払方法を説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 825ad4ba3e72e5b34c2ff29f36f88a518810ce49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 551a3cc9c0def1c67ab930dbff7cd1c0d296bd21
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571522"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018231"
 ---
 # <a name="payment-methods-in-call-centers"></a>コール センターでの支払方法
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail では、コール センター チャネルのコンフィギュレーションに、**オーダー完了の有効化** という名前の設定が含まれます。 この設定は、チャンネルのユーザーが作成したすべての注文が、承認済の許容範囲内の前払または事前承認された支払がある場合にのみ、注文処理にリリースされることを保証するのに役立ちます。 **オーダー完了の有効化** 設定が有効の場合、コール センター ユーザーは、コール センターの支払処理機能を使用して顧客の販売注文に対する支払を入力できます。 設定が無効になっている場合、コール センター ユーザーはコール センター支払処理機能を使用できませんが、引き続き標準の売掛金勘定機能を使用して前払を販売注文に適用することができます。
+Dynamics 365 Retail では、コール センター チャネルのコンフィギュレーションに、**オーダー完了の有効化** という名前の設定が含まれます。 この設定は、チャンネルのユーザーが作成したすべての注文が、承認済の許容範囲内の前払または事前承認された支払がある場合にのみ、注文処理にリリースされることを保証するのに役立ちます。 **オーダー完了の有効化** 設定が有効の場合、コール センター ユーザーは、コール センターの支払処理機能を使用して顧客の販売注文に対する支払を入力できます。 設定が無効になっている場合、コール センター ユーザーはコール センター支払処理機能を使用できませんが、引き続き標準の売掛金勘定機能を使用して前払を販売注文に適用することができます。
 
 チャンネルのコンフィギュレーションの一部として、会社はコール センター チャネルに許可されている支払方法を定義できます。 コール センター チャネルは、小売用店舗のチャンネルに定義されているのと同じ支払方法を使用します。
 

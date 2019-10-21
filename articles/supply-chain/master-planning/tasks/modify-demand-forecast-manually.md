@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ec1edb861619bae2ae3c211720b55e170b83ec9
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: ec51c1a500b5c9ff2c363cfb69cc1d404e939df9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916625"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250648"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>需要予測の手動変更
 
@@ -41,5 +41,5 @@ ms.locfileid: "1916625"
 
 ## <a name="modify-the-forecast-in-excel"></a>Excel での予測の編集
 1. Microsoft Office で**開く**をクリックします。
-2. Excel で**需要予測の編集**をクリックします。 Excel では、需要予測明細行を追加、削除、および編集できます。 Excel でデータを参照できない場合、[サインインしたままにする] オプションを有効にして Microsoft Dynamics 365 for Finance and Operations Enterprise Edition にサインインし、そのデータ接続アプリを信頼する必要があります。  
+2. Excel で**需要予測の編集**をクリックします。 Excel では、需要予測明細行を追加、削除、および編集できます。 Excel でデータを検索できない場合、「サインインしたままにする」オプションを有効化することによってサイン インし、データ接続のアプリを信頼する必要があります。  
 

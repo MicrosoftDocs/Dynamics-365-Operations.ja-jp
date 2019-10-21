@@ -16,36 +16,36 @@ ms.search.industry: Retail
 ms.author: dmakimo
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e0b95c3f5d4a822100fb4343bf50ea79780faaaa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5407976f48750951fcf5766576c6c48b0df69058
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549011"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023379"
 ---
 # <a name="support-for-upgrade-and-n-1-for-india"></a>インドにおけるアップグレードおよび N-1 のサポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、インドでの Phased Rollout (N-1) 小売コンポーネントの設定および使用に必要な手順を説明します。 N-1 のアップグレード手順およびワークフローは、基本的に一般的な Microsoft Dynamics 365 for Retail 環境のものと同じです。 N-1 のインストールおよび使用の一般的な情報は、[Retail のアップグレードおよび N-1 のサポート](../dev-itpro/overview-upgrade-n-minus1.md)を参照してください。
+このトピックでは、インドでの Phased Rollout (N-1) 小売コンポーネントの設定および使用に必要な手順を説明します。 N-1 のアップグレード手順およびワークフローは、基本的に一般的な Dynamics 365 Retail 環境のものと同じです。 N-1 のインストールおよび使用の一般的な情報は、[Retail のアップグレードおよび N-1 のサポート](../dev-itpro/overview-upgrade-n-minus1.md)を参照してください。
 
 さらに、次の手順はアップグレードのために重要です。
 
-- Microsoft Dynamics 365 for Retail バックオフィスおよび AX 2012 Retail コンポーネントの両方が商品及びサービス税 (GST) 計算をサポートしている必要があります。 詳細については、[必要条件](#prerequisites) セクションを参照してください。
-- AX 2012 チャネル側で Microsoft Dynamics 365 for Retail のために準備されたコンフィギュレーションを使用するには、GST コンフィギュレーションのダウングレードが必要です。
-- 配送スケジュールには、Microsoft Dynamics 365 for Retail バックオフィスと AX 2012 チャンネル間で GST コンフィギュレーションおよび税計算結果を同期するために必要な、追加のアップロード ジョブおよびダウンロード ジョブが含まれます。
+- Dynamics 365 Retail Headquarters および AX 2012 Retail コンポーネントの両方が商品及びサービス税 (GST) 計算をサポートしている必要があります。 詳細については、[必要条件](#prerequisites) セクションを参照してください。
+- AX 2012 チャネル側で Dynamics 365 Retail のために準備されたコンフィギュレーションを使用するには、GST コンフィギュレーションのダウングレードが必要です。
+- 配送スケジュールには、Dynamics 365 Retail Headquarters と AX 2012 チャンネル間で GST コンフィギュレーションおよび税計算結果を同期するために必要となる、追加のアップロード ジョブおよびダウンロード ジョブが含まれます。
 
 ## <a name="prerequisites"></a>必要条件
 
 - AX 2013 R3 小売コンポーネントを GST Update 2、[KB4058327](https://fix.lcs.dynamics.com/Issue/Details?kb=4058327&bugId=3898178&qc=acbe1a0b3f5d9240d56a94a633fa69fbfe4be0cf98587fd05a7807e082210a12)、またはそれ以降に更新します。 詳細については、[インド GST 更新 2 - リリース ノート](https://mbs.microsoft.com/Files/customer/AX/Downloads/Taxupdates/Release-Note-India-GST-Update-2.pdf)を参照してください。
 - 基本的な N-1 環境を設定します。 詳細については、[Phased Rollout (N-1) のインストール、コンフィギュレーション、および切替ガイド](../dev-itpro/n-1-installation-configuration.md)を参照してください。
-- [インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合](./apac-ind-cash-registers.md) ガイドに基づき、Microsoft Dynamics 365 for Retail でインド向け小売用商品及びサービス税 (GST) を設定します。
+- [インド向けキャッシュ レジスターの商品およびサービス税 (GST) の統合](./apac-ind-cash-registers.md) ガイドに基づき、Dynamics 365 Retail Headquarters でインド向けの Retail 用商品とサービス税 (GST) を設定します。
 
 ## <a name="periodic-procedure-to-downgrade-tax-configuration"></a>税コンフィギュレーションをダウングレードする定期処理
 
-GST コンフィギュレーションは AX 2012 および Dynamics 365 for Retail のバージョン間で異なります。 データを変換するには、特別な定期処理手順を実行する必要があります。 この手順を実行するには、以下の内容を実行します:
+GST コンフィギュレーションは AX 2012 および Dynamics 365 Retail のバージョン間で異なります。 データを変換するには、特別な定期処理手順を実行する必要があります。 この手順を実行するには、以下の内容を実行します:
 
-1. Retail Headquarters にサインインして、**小売 \> Retail IT \> N-1 から税構成を処理する** に移動します。
+1. Retail Headquarters にサインインして、**小売 \> Retail IT \> N-1 から税構成を処理する**に移動します。
 2. **OK**をクリックします。
 
 税構成の変更が行われて確定するたび、データを AX 2012 チャネルに送信する間に上記の操作を実行する必要があります。

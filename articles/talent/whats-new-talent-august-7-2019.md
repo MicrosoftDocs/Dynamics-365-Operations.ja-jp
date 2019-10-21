@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent の新機能または変更された機能 (2019 年 8 月 6 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent の新機能または変更された機能 (2019 年 8 月 6 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/6/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 90bac5aa9565549b2e257b0f6804a1bad53f2e9a
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: b642b5745daa6aa06450cf82abee2c51c60ff9a6
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867682"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024048"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-6-2019"></a>Dynamics 365 for Talent の新機能または変更された機能 (2019 年 8 月 6 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-august-6-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 8 月 6 日)
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 
@@ -59,6 +59,6 @@ Talent の新しいインスタンスをプロビジョニングする時に、�
 
 ## <a name="coming-soon"></a>間もなく公開
 
-### <a name="platform-update-29"></a>プラットフォーム update 29
+### <a name="platform-update-29-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 29
 
-プラットフォーム更新プログラム 29 に関する詳細については [Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 29 (2019 年 10 月) のプレビュー機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29) を参照してください。
+Finance and Operations のプラットフォーム更新プロフラム 29 の詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プロフラム 29 (2019 年 10 月) のプレビュー機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29) を参照してください。

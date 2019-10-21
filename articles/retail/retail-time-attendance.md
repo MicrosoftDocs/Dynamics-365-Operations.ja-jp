@@ -1,6 +1,6 @@
 ---
 title: Retail での時間と出勤管理
-description: このトピックでは、Microsoft Dynamics 365 for Retail の時間と出勤管理でサポートされているシナリオについて説明します。
+description: このトピックでは、Dynamics 365 Retail の時間と出勤管理でサポートされているシナリオについて説明します。
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4c54909a02376a62a72a986e634649fa0ae54284
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d541de550df41b7d4616492960bd4f2aae46d45e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567956"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024986"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Retail での時間と出勤管理
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail の時間と出勤管理でサポートされているシナリオについて説明します。
+このトピックでは、Dynamics 365 Retail の時間と出勤管理でサポートされているシナリオについて説明します。
 
 ## <a name="manage-worker-setup-and-scheduling"></a>作業者設定およびスケジュールの管理
 
@@ -125,7 +125,7 @@ POS で:
 
 ## <a name="process-and-manage-time-registrations"></a>時間登録の処理と管理
 
-Dynamics 365 for Retail ユーザーは、計算、承認および給与への時間登録の転送のためのワークフローに従います。
+Retail ユーザーは、計算、承認および給与への時間登録の転送のためのワークフローに従います。
 
 ### <a name="primary-operations"></a>基本工程
 

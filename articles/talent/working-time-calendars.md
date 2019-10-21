@@ -1,6 +1,6 @@
 ---
 title: 作業時間カレンダー
-description: このトピックでは、カレンダーの設定方法と共に、Dynamics 365 for Talent -- Core HR での作業時間カレンダーについて説明します。
+description: このトピックでは、カレンダーの設定方法と共に、Dynamics 365 Talent - Core HR での作業時間カレンダーについて説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 09/12/2018
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: a1e7bc0098556f42321b6a8883b59aa4fd9a8abd
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 270048e10c6c0b20023467662acfdcd1b255588e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518471"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008964"
 ---
 # <a name="working-time-calendars"></a>作業時間カレンダー
 

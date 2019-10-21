@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent - Onboard アプリの取得
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Onboard アプリのスタンドアロン バージョンまたは包括採用アドオンを含むバージョンを取得する方法について説明します。
+title: Dynamics 365 Talent - Onboard アプリを入手
+description: このトピックでは、Microsoft Dynamics 365 Talent - Onboard アプリのスタンドアロン バージョンまたは包括採用アドオンを含むバージョンを取得する方法について説明します。
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,30 +16,30 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: e83bbd71089b145c6c99780ea9516793c5238b33
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 7bf2e421445e5ca92e995ef581bf61c7978746d2
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731546"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010778"
 ---
-# <a name="get-the-dynamics-365-for-talent-onboard-app"></a>Dynamics 365 for Talent: Onboard アプリを入手する
+# <a name="get-the-dynamics-365-talent-onboard-app"></a>Dynamics 365 Talent: Onboard アプリの取得
 
 [!include [banner](includes/banner.md)]
 
-[Onboard 製品ページ](https://dynamics.microsoft.com/talent/onboard/) からデモを表示し、Microsoft Dynamics 365 for Talent: Onboard アプリを無料で試すことができます。
+[Onboard 製品ページ](https://dynamics.microsoft.com/talent/onboard/) からデモを表示し、Microsoft Dynamics 365 Talent: Onboard アプリを無料で試すことができます。
 
 > [!NOTE]
 > 無料試用版には、ビジネス用電子メール アカウントが必要です。
 
-Onboard のサブスクリプションは、スタンドアロン アプリまたは Dynamics 365 for Talent の一部として購入できます。 Talent は、Dynamics 365 for Talent: Attract、Onboard、および Core HR を含む包括的な人事管理 (HCM) システムです。 Onboard の購入方法の詳細については、[Onboard 製品ページ](https://dynamics.microsoft.com/talent/onboard/) を参照してください。
+Onboard のサブスクリプションは、スタンドアロン アプリまたは Dynamics 365 Talent の一部として購入できます。 Talent は、Dynamics 365 Talent: Attract、Onboard、および Core HR を含む包括的な人事管理 (HCM) システムです。 Onboard の購入方法の詳細については、[Onboard 製品ページ](https://dynamics.microsoft.com/talent/onboard/) を参照してください。
 
 試用版または購入プロセス中に、Microsoft 365 の電子メール アドレスとパスワードを設定します。 これらの値を記録しておいてください。
 
 > [!WARNING]
 > 試用版から有料サブスクリプション環境にデータを移行することはできません。 <!--Reviewers: please verify.-->
 
-Talent の新機能について確認するには、[Dynamics 365 for Talent の新機能と変更](./whats-new.md) および [Dynamics 365 と Power Platform リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index) を参照してください。 Onboard で新機能をプレビューする場合は、[Talent のプレビュー機能の利用](./access-preview-feature.md) を参照してください。
+Talent の新機能について確認するには、[Dynamics 365 Talent の新機能と変更](./whats-new.md) および [Dynamics 365 と Power Platform リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index) を参照してください。 Onboard で新機能をプレビューする場合は、[Talent のプレビュー機能の利用](./access-preview-feature.md) を参照してください。
 
 IT プロフェッショナルで、Onboard アプリの 2 つのバージョンがプロビジョニングされる方法の詳細を知りたい場合は、[Onboard アプリのプロビジョニング](./modular-app-tech-faq.md) を参照してください。
 

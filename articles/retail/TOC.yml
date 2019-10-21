@@ -1,712 +1,1412 @@
-- name: Dynamics 365 for Retail へようこそ
-  href: index.md
-- name: 使用開始
+- name: Dynamics 365 Retail
   items:
-    - name: 新機能および変更された機能
-      href: get-started/whats-new.md
-    - name: Dynamics 365 for Retail 10.0.5 の機能のプレビュー
-      href: get-started/whats-new-10-0-5.md
-    - name: Dynamics 365 for Retail 10.0.3 の新機能または変更された機能
-      href: get-started/whats-new-10-0-3.md
-    - name: Dynamics 365 for Retail 10.0.2 の新機能または変更された機能
-      href: get-started/whats-new-10-0-2.md
-    - name: Dynamics 365 for Retail 10.0.1 の新機能または変更された機能
-      href: get-started/whats-new-10-0-1.md
-    - name: Dynamics 365 for Retail の新機能または変更された機能 (2019 年 4 月)
-      href: get-started/april-whats-new.md
-    - name: Retail 購入前に
-      href: get-started/before-you-buy.md
-    - name: プレビュー サブスクリプションのサインアップ
-      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-    - name: デモ環境の配置
-      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
-    - name: 配置オプション
-      href: dev-itpro/choose-deployment.md
-    - name: Retail に関するサポートの利用
-      href: retail-support.md
-    - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
-      href: ../fin-and-ops/get-started/one-version.md
-- name: 実装ライフサイクル管理
-  items:
-    - name: 実装ライフサイクル管理ホーム ページ
-      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
-    - name: Microsoft FastTrack for Dynamics 365
-      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
-    - name: オンボード
-      href: ../fin-and-ops/imp-lifecycle/onboard.md
-    - name: Go-Live の準備
-      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
-    - name: Go-Live に関するよく寄せられる質問
-      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
-    - name: サービス要求の送信
-      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
-    - name: サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
-      href: ../fin-and-ops/get-started/subscription-overview.md
-    - name: データ センター間で環境を移動する
-      href: ../fin-and-ops/get-started/move-environments-data-center.md
-    - name: 契約タイプ間でライセンスを移動する
-      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md
-    - name: LCS 実装プロジェクトを別の Azure Active Directory テナントに移動する
-      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
-    - name: 複数の LCS プロジェクトと実稼働環境を同じ Azure Active Directory テナント上に実装する
-      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
-    - name: Finance and Operations Retail プロジェクトの実装
-      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
-      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-    - name: Retail プロジェクトのコードと環境の更新
-      href: dev-itpro/updating-environments.md
-    - name: テストおよびパフォーマンスに関する問題
-      href: dev-itpro/retail-implementation-testing-performance.md
-- name: 配分済み注文の管理 (DOM)
-  items:
-    - name: DOM 概要
-      href: dom.md
-    - name: 原価コンフィギュレーション
-      href: cost.md
-- name: 支払
-  items:
-    - name: 支払方法
-      href: payment-methods.md
-    - name: クレジット カードの設定、認証、および取得
-      href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: POS の現金貨幣単位の構成
-      href: cash-denominations.md
-    - name: Adyen 向け Dynamics 365 Payment Connector
-      href: dev-itpro/adyen-connector.md
-    - name: オンライン支払手段を Adyen コネクタで保存
-      href: dev-itpro/adyen-connector-listPI.md
-    - name: 請求書の支払シナリオを設定する
-      href: payinvoice.md
-    - name: 支払に関してよく寄せられる質問
-      href: dev-itpro/payments-retail.md
-    - name: 重複支払の防止
-      href: duplicate-payment-protection.md
-- name: 発注書
-  items:
-    - name: 発注書の概要
-      href: ../supply-chain/procurement/purchase-order-overview.md
-    - name: 発注書の作成
-      href: ../supply-chain/procurement/purchase-order-creation.md
-    - name: 発注書に対する製品受領書
-      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
-    - name: 発注書の承認と確認
-      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
-    - name: 発注書承認モバイル ワークスペース
-      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
-- name: 明細書
-  items:
-    - name: 小売明細書
-      href: retail-statements.md
-    - name: 小売トランザクションの整合性チェック
-      href: valid-checker.md
-    - name: 小売店舗の明細書の作成、計算、および転記
-      href: tasks/create-calculate-post-statement-retail-store.md
-    - name: 明細書転記機能に関する強化事項
-      href: statement-posting-EOD.md
-    - name: バッチ追跡品目の処理の改善
-      href: batch.md
-    - name: 小売明細書に影響を及ぼす 小売パラメーターのコンフィギュレーション
-      href: tasks/parameter-configurations-retail-statements.md
-    - name: 小売明細書に影響を及ぼす支払方法設定のコンフィギュレーション
-      href: tasks/payment-configurations-retail-statements.md
-    - name: 明細書を計算するジョブのコンフィギュレーションおよび実行
-      href: tasks/run-job-calculate-statements.md
-    - name: 明細書を転記するジョブのコンフィギュレーションおよび実行
-      href: tasks/run-job-post-statements.md
-    - name: 小売明細書に影響を及ぼす店舗設定のコンフィギュレーション
-      href: tasks/store-configurations-retail-statements.md
-- name: 消費税
-  items:
-    - name: 消費税の概要
-      href: ../financials/general-ledger/indirect-taxes-overview.md
-    - name: '[発生元] フィールドでの消費税計算方法'
-      href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-    - name: 売上税の割り当ておよび上書き
-      href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
-    - name: 消費税コードの合計額と間隔計算オプション
-      href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-- name: オムニ チャネル支払の概要
-  href: omni-channel-payments.md
-- name: オムニ チャネルの高度な自動請求
-  items:
-    - name: 高度な自動請求のコンフィギュレーションおよび使用
-      href: omni-auto-charges.md
-    - name: ヘッダー請求金額を一致する販売明細行に比例配分する
-      href: pro-rate-charges-matching-lines.md
-- name: コール センター
-  items:
-    - name: コール センターの販売機能
-      href: call-center-functionality.md
-    - name: コール センターのカタログ
-      href: call-center-catalogs.md
-    - name: 出荷モードと雑費のコンフィギュレーション
-      href: configure-call-center-delivery.md
-    - name: 詐欺警告の設定および使用
-      href: set-up-fraud-alerts.md
-    - name: コール センター チャネルの設定
-      href: set-up-order-processing-options.md
-    - name: コール センターの連続プログラムの設定
-      href: set-up-continuity-program.md
-    - name: コール センターの注文保留のコンフィギュレーションおよび作業
-      href: work-with-order-holds.md
-    - name: 支払方法
-      href: work-with-payments.md
-- name: チャネルの設定と管理
-  items:
-    - name: 新しい Retail 環境でのシード データの初期化
-      href: enable-configure-retail-functionality.md
-    - name: 小売チャネルの定義と管理
-      href: define-maintain-retail-channels.md
-    - name: 品揃え管理
-      href: assortments.md
-    - name: オンライン ストアの設定
-      href: online-stores.md
-    - name: Retail Hardware Station のコンフィギュレーションおよびインストール
-      href: retail-hardware-station-configuration-installation.md
-    - name: Retail の時刻と出勤
-      href: retail-time-attendance.md
-    - name: 店舗の営業時間の作成と変更
-      href: dev-itpro/store-hours.md
-- name: Modern Point of Sale (MPOS) および Cloud POS
-  items:
-    - name: MPOS か Cloud POS かの選択
-      href: MPOS-or-CPOS.md
-    - name: オンラインおよびオフラインの POS 操作
-      href: pos-operations.md
-    - name: カスタマイズされた Retail MPOS のデバイスの有効化
-      href: dev-itpro/retail-POS-activation-changes.md
-    - name: MPOS および Cloud POS のデモ データ画面レイアウト
-      href: demo-data.md
-    - name: POS での製品および顧客の検索
-      href: POS-search-improvements.md
-    - name: 現金管理の改善
-      href: cash-mgmt.md
-    - name: POS での在庫検索
-      href: product-variants-POS.md
-    - name: POS でのトランザクションの中断および再開
-      href: pos-suspend-recall-transactions.md
-    - name: ハードウェア周辺機器
+    - name: Dynamics 365 Retail
       items:
-        - name: Retail 周辺機器
-          href: retail-peripherals-overview.md
-        - name: Retail 周辺機器シミュレーター
-          href: dev-itpro/retail-peripheral-simulator.md
-        - name: POS への周辺機器の接続
-          href: define-maintain-channel-clients-registers-hw-stations.md
-    - name: 画面レイアウト
-      items:
-        - name: MPOS/CPOS のデモ データ画面レイアウト
-          href: demo-data.md
-        - name: POS の画面レイアウト
-          href: pos-screen-layouts.md
-        - name: Retail POS のレイアウト デザイナーのインストール
-          href: install-pos-layout-designer.md
-        - name: 通知設定の選択
-          href: Notifications-POS.md
-        - name: POS アプリケーションとユーザー言語設定
-          href: pos-application-user-language-settings.md
-        - name: MPOS のイメージの設定および管理
-          href: set-up-manage-images-retail-mpos.md
-    - name: 情報コードおよび情報コード グループ
-      href: info-codes-retail.md
-    - name: シリアル化された製品の POS 改善
-      href: serialized-inventory.md
-    - name: 製品推奨事項
-      items:
-        - name: カスタマイズされた製品推奨事項
-          href: personalized-product-recommendations.md
-        - name: POS デバイスでの推奨事項コントロールの追加
-          href: add-recommendations-control-pos-screen.md
-    - name: オフライン POS 機能
-      href: pos-offline-functionality.md
-    - name: シフトとキャッシュ ドロワーの管理
-      href: shift-drawer-management.md
-    - name: ギフト カードのキャッシュ アウト残高
-      href: dev-itpro/gift-card-cash-out.md
-    - name: 顧客注文
-      items:
-        - name: MPOS の顧客注文
-          href: customer-orders-overview.md
-        - name: ハイブリッド顧客注文
-          href: hybrid-customer-orders.md
-    - name: 店員
-      items:
-        - name: 売上グループを使用した POS でのコミッションの追跡
-          href: pos-sales-groups-track-commissions.md
-    - name: 別の店舗からの注文の出荷
-      href: charge-send.md
-    - name: デバイスの有効化
-      items:
-        - name: MPOS のインストール、コンフィギュレーション、有効化
-          href: retail-modern-pos-device-activation.md
-        - name: MPOS および Cloud POS の拡張ログオン機能の設定
-          href: extended-logon.md
-        - name: Retail アクティベーション アカウントの管理とデバイスの検証
-          href: set-up-activation-accounts-validate-devices-hq.md
-    - name: 受領書
-      items:
-        - name: 受領書フォーマットの設定およびデザイン
-          href: receipt-templates-printing.md
-        - name: MPOS からの電子メール レシートの送信
-          href: email-receipts.md
-    - name: MPOS および Cloud POS のタスク レコーダーとヘルプ
-      href: task-recorder-retail-pos.md
-- name: 注文のフルフィルメント
-  items:
-    - name: 店舗注文のフルフィルメント
-      href: Order-fulfillment-overview.md
-    - name: 店舗における注文のフルフィルメントの設定
-      href: Order-fulfillment-POS-setup.md
-    - name: POS の注文通知の表示
-      href: Notifications-POS.md
-- name: 返品
-  items:
-    - name: リンクされた払戻
-      href: dev-itpro/linked-refunds.md
-    - name: 店舗の品揃えに含まれていない製品の販売および返品
-      href: sell-return-outside-assortments.md
-    - name: 返品注文に対する交換のコンフィギュレーションとプロセス
-      href: orderexchanges.md
-    - name: レシートのない返品の支払方法の制限
-      href: payment-methods-restrictions.md
-    - name: 複数の顧客注文および請求書間での品目の返品
-      href: multireturn.md
-- name: 監視と分析
-  items:
-    - name: 販売と利益幅のパフォーマンスの監視
-      href: monitor-sales-margin-performance.md
-    - name: 販売のトレンドとパターンの分析
-      href: analyze-sales-trends-patterns.md
-    - name: 製品別の売上実績の評価
-      href: sales-performance-products.md
-    - name: 顧客と製品の収益性の評価
-      href: assess-customer-product-profitability.md
-    - name: 店舗のパフォーマンスの分析
-      href: store-performance-information.md
-    - name: 最新、頻度、金額 (RFM) 分析の設定
-      href: set-up-rfm-analysis.md
-- name: 小売価格レポート
-  href: price-report.md
-- name: 価格決定と割引
-  items:
-    - name: 小売割引
-      href: retail-discounts-overview.md
-    - name: 小売販売価格の管理
-      href: price-management.md
-    - name: 価格調整および割引
-      href: price-adjustments-discounts.md
-    - name: 製品に対する複数の割引の適用
-      href: Apply-multiple-retail-discounts.md
-    - name: 重複する割引の最適な組み合わせの決定
-      href: optimal-combination-overlapping-discounts.md
-    - name: チャネル固有の割引の定義
-      href: define-channel-specific-discounts.md
-    - name: 小売製品の割引を回避するためのオプション
-      href: prevent-discounts.md
-    - name: 出荷割引の概要
-      href: retail-shipping-discount.md
-    - name: 小売販売のクーポンの設定
-      href: retail-coupons.md
-- name: 製品と販売促進
-  items:
-    - name: 製品情報の概要
-      href: ../supply-chain/pim/product-information.md
-    - name: 小売階層
-      href: retail-hierarchies.md
-    - name: 属性および属性グループ
-      href: attribute-attributegroups-lifecycle.md
-    - name: 属性の作成と管理
-      href: create-manage-attributes.md
-    - name: 小売製品の設定
-      href: set-up-retail-products.md
-    - name: 小売製品カテゴリおよび製品の管理
-      href: category-management-product-creation.md
-    - name: 販売促進エンティティの並べ替え順序の変更
-      href: custom-order-categories-nav-retail-prod-hierarchy.md
-    - name: 製品分析コード
-      href: ../supply-chain/pim/product-dimensions.md
-    - name: バーコードの設定
-      href: set-up-bar-codes.md
-    - name: バーコード マスクの設定
-      href: set-up-bar-code-masks.md
-    - name: 品揃えの設定
-      href: set-up-assortments.md
-    - name: 店舗の品揃えに含まれていない製品の販売および返品
-      href: sell-return-outside-assortments.md
-    - name: 分析コードおよび製品バリアントの既定の注文設定
-      href: ../supply-chain/production-control/default-order-settings.md
-    - name: 注文入力時の製品および製品バリアントの検索
-      href: ../supply-chain/pim/search-products-product-variants.md
-- name: ロイヤルティ
-  items:
-    - name: ロイヤルティの概要
-      href: set-up-customer-loyalty-program.md
-- name: 在庫
-  items:
-    - name: 店舗在庫管理
-      href: work-with-store-inventory.md
-    - name: 販売プロセスでのシリアル番号の登録
-      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
-    - name: 在庫仕訳帳
-      href: ../supply-chain/inventory/inventory-journals.md
-    - name: 在庫タグ棚卸
-      href: ../supply-chain/inventory/inventory-tag-counting.md
-    - name: 現物価格とマーキングを使用した先入れ先出し (FIFO)
-      href: ../supply-chain/cost-management/fifo-physical-value-marking.md
-    - name: 現物価格とマーキングを使用した後入れ先出し (LIFO) 日付
-      href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md
-    - name: 現物価格とマーキングを使用した後入れ先出し (LIFO)
-      href: ../supply-chain/cost-management/lifo-physical-value-marking.md
-    - name: 加重平均日付
-      href: ../supply-chain/cost-management/weighted-average-date.md
-    - name: 現物価格とマーキングを使用した加重平均
-      href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md
-    - name: 検査指示
-      href: ../supply-chain/inventory/quarantine-orders.md
-    - name: 移動平均原価価格
-      href: ../supply-chain/cost-management/running-average-cost-price.md
-    - name: 在庫分析コード当たりの移動平均原価の追跡
-      href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
-- name: 人事管理
-  items:
-    - name: 部門、職務、職位を使用した従業員の編成
-      href: ../talent/departments-jobs-positions.md
-    - name: 職務のコンポーネントの設定
-      href: ../talent/create-job.md
-- name: ローカライズと規制の機能
-  items:
-    - name: 小売チャネルの会計統合の概要
-      href: localizations/fiscal-integration-for-retail-channel.md
-    - name: 小売チャネルの会計統合の設定
-      href: localizations/setting-up-fiscal-integration-for-retail-channel.md
-    - name: オーストリア
-      items:
-        - name: オーストリア向け会計登録サービス統合サンプル
-          href: localizations/emea-aut-fi-sample.md
-    - name: 東ヨーロッパ
-      items:
-        - name: 東ヨーロッパにおける Retail の事前請求書
-          href: localizations/emea-eeu-advance-invoices-for-retail.md
-        - name: 東ヨーロッパにおける Retail の小口現金管理
-          href: localizations/emea-eeu-petty-cash-for-retail.md
-        - name: 東ヨーロッパ諸国での Retail 顧客請求書および返品販売注文
-          href: localizations/emea-eeu-retail-invoices.md
-        - name: チェコ共和国、ハンガリー、およびポーランドのキャッシュ レジスターの配置ガイドライン
-          href: localizations/emea-eeu-deployment.md
-        - name: ポーランド向け会計プリンター統合サンプル
-          href: localizations/emea-pol-fpi-sample.md
-        - name: チェコ共和国向け会計登録サービス統合サンプル
-          href: localizations/emea-cze-fi-sample.md
-    - name: フランス
-      items:
-        - name: キャッシュ レジスター機能
-          href: localizations/emea-fra-cash-registers.md
-        - name: キャッシュ レジスターの配置ガイドライン
-          href: localizations/emea-fra-deployment.md
-    - name: インド
-      items:
-        - name: キャッシュ レジスターの商品及びサービス税 (GST) 統合
-          href: localizations/apac-ind-cash-registers.md
-        - name: キャッシュ レジスターの配置ガイドライン
-          href: localizations/apac-ind-loc-deployment-guidelines.md
-        - name: インド向けアップグレードと N-1 のサポート
-          href: localizations/apac-ind-n-1-for-india.md
-    - name: イタリア
-      items:
-        - name: イタリア向け会計プリンター統合サンプル
-          href: localizations/emea-ita-fpi-sample.md
-    - name: メキシコ
-      items:
-        - name: メキシコ向けグローバル CFDI 電子請求書
-          href: ../financials/localizations/latam-mex-global-cfdi-3-3.md
-    - name: ノルウェー
-      items:
-        - name: キャッシュ レジスター機能
-          href: localizations/emea-nor-cash-registers.md
-        - name: キャッシュ レジスターの配置ガイドライン
-          href: localizations/emea-nor-loc-deployment-guidelines.md
-    - name: スウェーデン
-      items:
-        - name: キャッシュ レジスター機能
-          href: localizations/emea-swe-cash-registers.md
-        - name: 管理単位との Retail POS の統合サンプル
-          href: localizations/retail-sdk-control-unit-sample.md
-- name: Retail タスク
-  items:
-    - name: 製品の作成
-      href: ../supply-chain/pim/tasks/create-product.md
-    - name: リンクされた製品のコンフィギュレーション
-      href: ../supply-chain/pim/tasks/configure-linked-products.md
-    - name: 法人に対する製品/製品マスターのリリース
-      href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
-    - name: チャネル固有の売買契約の作成
-      href: tasks/base-price-trade-agreements.md
-    - name: カテゴリの価格決定ルールを使用した売買契約の作成
-      href: tasks/category-pricing-rules-trade-agreements.md
-    - name: クレジット カード処理のコンフィギュレーション
-      href: tasks/configure-credit-card-processing.md
-    - name: 販売担当者の機能プロファイルのコンフィギュレーション
-      href: tasks/configure-functionality-profile-sales-representative.md
-    - name: 機械学習を利用する製品の推奨事項のコンフィギュレーション
-      href: tasks/configure-machine-learning-product-recommendations.md
-    - name: デバイスの作成およびレジスターとの関連付け
-      href: tasks/create-associate-device.md
-    - name: Hardware Station の作成
-      href: tasks/create-associate-hardware-station.md
-    - name: POS レジスターの作成
-      href: tasks/create-associate-registers.md
-    - name: コール センター注文の作成
-      href: tasks/create-call-center-orders.md
-    - name: POS レジスターの財務分析コードの作成とレジスターの分析コード値のコンフィギュレーション
-      href: tasks/create-financial-dimensions-pos.md
-    - name: 小売チャネルの財務分析コードの作成と店舗の分析コード値のコンフィギュレーション
-      href: tasks/create-financial-dimensions-retail-channels.md
-    - name: オンライン チャネルの作成とチャネルの属性の定義
-      href: tasks/create-online-channel-define-channel-attributes.md
-    - name: POS アクセス許可グループの作成
-      href: tasks/create-pos-permission-groups.md
-    - name: POS 視覚プロファイルの作成
-      href: tasks/create-pos-visual-profile-2016-02.md
-    - name: 発注書の製品パッケージの作成
-      href: tasks/create-product-packages-purchase-orders.md
-    - name: コール センター チャネルの作成およびチャネル属性の定義
-      href: tasks/define-call-center-channel-channel-attributes.md
-    - name: チャネル属性の定義
-      href: tasks/define-channel-attributes.md
-    - name: 連続スケジュールの定義
-      href: tasks/define-continuity-schedules.md
-    - name: ロイヤルティ プログラムの定義
-      href: tasks/define-loyalty-programs.md
-    - name: ロイヤルティ報酬ポイントの定義
-      href: tasks/define-loyalty-reward-points.md
-    - name: ロイヤルティ スキーマの定義
-      href: tasks/define-loyalty-schemes.md
-    - name: 組織単位間のリレーションシップのデザイン
-      href: tasks/design-relationships-between-organizational-units.md
-    - name: 品揃えの管理
-      href: tasks/manage-assortments-2016-11.md
-    - name: セルフサービスを使用した Hardware Station のダウンロード
-      href: tasks/perform-self-service-download-hardware-station.md
-    - name: オンラインの販売と支払の転記
-      href: tasks/posting-online-sales-payments.md
-    - name: ロイヤルティ報酬ポイントの処理の調整
-      href: tasks/process-loyalty-reward-point-adjustments.md
-    - name: 集中的購買を介した物流センターから店舗への製品の配送
-      href: tasks/push-products-distribution-center-store-buyers-push.md
-    - name: 小売価格調整の作成
-      href: tasks/retail-price-adjustments.md
-    - name: 最初から用意されているレポートの生成および実行
-      href: tasks/run-out-box-reports.md
-    - name: クロス ドッキングおよび集中的購買のルールとパラメーターの設定
-      href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
-    - name: 連続プログラムの販売と販売注文の処理
-      href: tasks/use-continuity-program.md
-    - name: 小売作業者のコンフィギュレーション
-      href: tasks/worker.md
-- name: Retail 開発と管理
-  items:
-    - name: IT プロおよび開発者向け Retail
-      href: dev-itpro/dev-retail-home-page.md
-    - name: アーキテクチャ
-      items:
-        - name: Retail のコンポーネント
-          href: retail-components.md
-        - name: Retail Server のアーキテクチャ
-          href: dev-itpro/retail-server-architecture.md
-        - name: ストア内トポロジを選択します。
-          href: dev-itpro/retail-in-store-topology.md
-        - name: Commerce Data Exchange と小売チャネルのコミュニケーション
-          href: dev-itpro/define-retail-channel-communications-cdx.md
-        - name: Retail Modern POS のアーキテクチャ
-          href: dev-itpro/retail-modern-pos-architecture.md
-        - name: Retail オンライン ストア発行アーキテクチャ
-          href: dev-itpro/retail-online-store-publishing-architecture.md
-        - name: Retail Channel Performance Power BI コンテンツ
-          href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
-        - name: 支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
-          href: dev-itpro/PA-DSS-Certification.md
-        - name: オンプレミス配置で使用できる小売機能
-          href: retail-onprem.md
-    - name: 配置と修正プログラム
-      items:
-        - name: Retail Store Scale Unit
-          href: dev-itpro/retail-store-system-begin.md
-        - name: Retail Store Scale Unit のコンフィギュレーションとインストール
-          href: dev-itpro/retail-store-scale-unit-configuration-installation.md
-        - name: Retail Modern POS のコンフィギュレーションとインストール
-          href: retail-modern-pos-device-activation.md
-        - name: 本社からの Retail アカウントとデバイスの管理
-          href: set-up-activation-accounts-validate-devices-hq.md
-        - name: Retail POS デバイスのライセンス認証
-          href: dev-itpro/retail-device-activation.md
-        - name: 共有環境の Cloud POS のセキュリティ保護
-          href: dev-itpro/secure-retail-cloud-pos.md
-        - name: Retail Hardware Station のコンフィギュレーションとインストール
-          href: retail-hardware-station-configuration-installation.md
-        - name: Retail セルフサービス コンポーネントの一括配置
-          href: dev-itpro/retail-mass-deployment.md
-        - name: 診断とトラブルシューティングの Retail コンポーネント イベント
-          href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
-        - name: 配置可能パッケージの適用
-          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
-    - name: アップグレードおよび N-1 のサポート
-      items:
-        - name: Retail のアップグレードおよび N-1 のサポート
-          href: dev-itpro/overview-upgrade-n-minus1.md
-        - name: Phased Rollout (N-1) のインストール、構成、切替
-          href: dev-itpro/n-1-installation-configuration.md
-        - name: Retail チャネル拡張機能を最新の Retail SDK にアップグレード
-          href: dev-itpro/retailSDK-update.md
-    - name: 実装ガイダンス
-      items:
-        - name: デバイス管理実装ガイダンス
-          href: implementation-considerations-devices.md
-    - name: 環境のコンフィギュレーション
-      items:
-        - name: 組織の法律条項およびプライバシーに関する声明へのリンクの追加
-          href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
-        - name: Bing地図の管理
-          href: dev-itpro/manage-bing-maps.md
-    - name: Retail 拡張リソースおよびラベル ファイルのローカライズ
-      href: dev-itpro/extension-resource-localization.md
-    - name: 販売時点管理の拡張機能
-      items:
-        - name: Retail POS 画面レイアウト
-          href: pos-screen-layouts.md
-        - name: POS で URL を開く
-          href: Open-URL-in-POS.md
-        - name: POS のレイアウト デザイナーのインストール
-          href: install-pos-layout-designer.md
-        - name: オフライン モードの Retail Modern POS
-          href: dev-itpro/retail-modern-pos-offline.md
-        - name: POS Dual ディスプレイ ビューの拡張
-          href: dev-itpro/pos-dual-display-extension.md
-        - name: Retail Modern POS およびクラウド POS のトリガー拡張機能
-          href: dev-itpro/modern-pos-trigger-extensibility.md
-        - name: POS ビューへのカスタム コントロールの追加
-          href: dev-itpro/pos-custom-control.md
-        - name: ボタン グリッド デザイナーを使用して POS 操作を POS レイアウトに追加
-          href: dev-itpro/add-POS-operations.md
-        - name: Retail POS API
-          href: dev-itpro/POS-APIs.md
-        - name: POS 支払拡張機能
-          href: dev-itpro/pos-payment-extension.md
-        - name: 外部ギフト カードのサポート
-          href: dev-itpro/gift-card.md
-        - name: ブランドの作成と Retail Experience アプリへの適用
-          href: dev-itpro/create-retail-experience-app.md
-        - name: Android および iOS での POS Hybrid アプリのセットアップ
-          href: dev-itpro/hybridApp.md
-        - name: POS 要求ハンドラーのオーバーライド
-          href: dev-itpro/pos-handler.md
-        - name: POS 拡張パッケージ情報の表示
-          href: dev-itpro/view-pos-extension-package-details.md
-    - name: Hardware Station の拡張機能
-      href: dev-itpro/hardware-station-extensibility.md
-    - name: POS と新しいハードウェア デバイスの統合
-      href: dev-itpro/hardware-device-extension.md
-    - name: Retail Server の拡張機能
-      items:
-        - name: Retail Server OData コントローラーの拡張
-          href: dev-itpro/extend-retail-server-odata-controller.md
-        - name: Retail Server 用 Web API コント ローラーの作成
-          href: dev-itpro/odata-controllers-api.md
-        - name: Retail Server の顧客およびコンシューマー API
-          href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: 既定の Retail Server メタデータ コントローラーの拡張
-          href: dev-itpro/extend-metadata.md
-        - name: オフライン モードでの CRT サービスの呼び出し
-          href: dev-itpro/call-crt-service-offline.md
-    - name: Commerce Runtime (CRT) の拡張機能
-      items:
-        - name: CRT のアーキテクチャと構成
-          href: dev-itpro/commerce-runtime-overview.md
-        - name: CRT サービス
-          href: dev-itpro/crt-services.md
-        - name: CRT および Retail Server の拡張機能
-          href: dev-itpro/commerce-runtime-extensibility.md
-        - name: 顧客の基本設定データをチャネル データベースに追加
-          href: dev-itpro/add-customer-preference-channel.md
-        - name: プロパティを販売注文に追加
-          href: dev-itpro/add-properties-sales-order.md
-        - name: CRT の拡張機能およびトリガー
-          href: dev-itpro/commerce-runtime-extensibility-trigger.md
-        - name: トリガーを使用したトランザクションのブロック
-          href: dev-itpro/trigger-example-blocking-transaction.md
-        - name: トリガーを使用する返品ポリシーの実装
-          href: dev-itpro/trigger-example-return-policy.md
-    - name: E コマースの拡張機能
-      items:
-        - name: オンライン ストアのコンフィギュレーション
-          href: dev-itpro/configure-online-store.md
-        - name: 認証プロバイダーのコンフィギュレーション
-          href: dev-itpro/configure-authentication-providers.md
-        - name: E コマース プラットフォーム
-          href: dev-itpro/ecommerce-platform.md
-        - name: E コマース プラットフォーム SDK
-          href: dev-itpro/ecommerce-platform-sdk.md
-    - name: 支払コネクタの拡張機能
-      items:
-        - name: 支払ターミナルの支払統合の作成
-          href: dev-itpro/end-to-end-payment-extension.md
-        - name: 支払コネクタと支払デバイスの実装 (ホワイト ペーパー)
-          href: 'http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx'
-        - name: 支払コネクタの配置
-          href: dev-itpro/deploy-payment-connector.md
-        - name: 支払ターミナルの拡張機能向けにローカライズされたカスタム エラー メッセージの作成
-          href: dev-itpro/payment-custom-error-messages.md
-        - name: 支払コネクタ用の Windows インストーラーの作成
-          href: dev-itpro/create-windows-installer-payment-connector.md
-        - name: 支払データの使用
-          href: payment-connector-data-fields.md
-        - name: 支払コネクタの重複支払保護の有効化
-          href: dev-itpro/duplicate-payment-protection.md
-    - name: Retail SDK
-      items:
-        - name: Retail SDK アーキテクチャ
-          href: dev-itpro/retail-sdk/retail-sdk-overview.md
-        - name: Retail SDK の今後の変更
-          href: dev-itpro/UpcomingSDKChanges.md
-        - name: Retail および Finance and Operations 用ビルド システムのマージ
-          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
-        - name: Retail SDK の拡張機能サンプル
-          href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-        - name: 配置可能な小売パッケージの作成
-          href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-        - name: Retail SDK サンプル
-          href: dev-itpro/retail-sdk/retail-sdk-samples.md
-        - name: 梱包明細の拡張ポイント
-          href: dev-itpro/extensions-shipping-carrier-integration.md
-        - name: チャネル データベース拡張機能
-          href: dev-itpro/channel-db-extensions.md
-        - name: 拡張機能を介したカスタム CDX 同期の有効化
-          href: dev-itpro/cdx-extensibility.md
-        - name: POS Totals パネルへのカスタム フィールドの追加
-          href: dev-itpro/custom-field-pos-totals.md
-        - name: 注文属性の定義および設定
-          href: dev-itpro/order-attributes.md
-        - name: 顧客属性
-          href: dev-itpro/customer-attributes.md
-        - name: 'Retail Typescript と C# プロキシ'
-          href: dev-itpro/typescript-proxy-retail-pos.md
-        - name: Retail POS サンプルの実行
-          href: dev-itpro/pos-run-samples.md
-        - name: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
-          href: dev-itpro/pos-view-extension.md
-        - name: Retail Modern POS トランザクション ページへのカスタム コントロールの追加
-          href: dev-itpro/pos-custom-transaction.md
-        - name: POS トランザクション グリッドへのカスタム列の追加
-          href: dev-itpro/pos-custom-transaction-column.md
-        - name: POS 拡張機能からの POS API または POS 操作の呼び出し
-          href: dev-itpro/pos-api-extension.md
-        - name: Retail Modern POS のトリガーと印刷
-          href: dev-itpro/pos-trigger-printing.md
-        - name: 非画面デザイナー ベース POS ビューへのカスタム コントロールの追加
-          href: dev-itpro/pos-control-non-screen.md
-        - name: 管理者のアクセス権を使用しないクラウド ホスト開発環境での開発
-          href: dev-itpro/cloud-dev-box.md
-    - name: Commerce Runtime
-      items:
-        - name: ロイヤルティの拡張機能
-          href: dev-itpro/retail-sdk/loyalty-extension-sample.md
+        - name: Dynamics 365 Retail
+          href: index.md
+        - name: 使用開始
+          items:
+            - name: 購入する前に
+              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: プレビュー サブスクリプションのサインアップ
+              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 1 つのバージョンのサービス更新
+              items:
+                - name: 1 つのバージョンのサービス更新の概要
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
+                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ソフトウェアのライフサイクル ポリシー - クラウド
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ソフトウェアのライフサイクル ポリシー - オンプレミス
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: サービス更新の可用性
+                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: クラウド環境への更新プログラムの適用
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: サービスの更新のコンフィギュレーション
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: サービスの更新の一時停止
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: サービスの更新に関する通知を受け取る
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: データ タスクの自動化
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 1 つのバージョンを使用した ISV ソリューションの提供
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ユーザー受け入れテストの作成と自動化
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: デモ環境の配置
+              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 配置に関する考慮事項
+              items:
+                - name: 配置オプション
+                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: クラウド配置
+                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: クラウド配置のシステム要件
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: オンプレミス配置
+                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: オンプレミス配置のシステム要件
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Finance + Operations (on-premises) の購入
+                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 中国の 21Vianet で運用されている Finance and Operations アプリ
+                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: フランスの Finance and Operations アプリ
+                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 新機能および変更された機能
+              items:
+                - name: Retail ホーム ページの新機能および変更された機能
+                  href: get-started/whats-new.md
+                - name: Retail 10.0.6 の機能のプレビュー
+                  href: get-started/whats-new-10-0-6.md
+                - name: Retail 10.0.5
+                  href: get-started/whats-new-10-0-5.md
+                - name: Finance and Operations の新機能および変更された機能
+                  items:
+                    - name: Finance and Operations ホーム ページの新機能および変更された機能
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
+                    - name: Finance and Operations アプリ 10.0.6 (2019 年 11 月) の機能のプレビュー
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Finance and Operations アプリ 10.0.5 (2019 年 10 月)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Finance and Operations 10.0.4 (2019 年 7 月)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 'Finance and Operations, Enterprise Edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 削除済みまたは非推奨の機能
+                  items:
+                    - name: Finance and Operations の削除済みまたは非推奨の機能
+                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 延期された AX 2012 の機能
+                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: オンプレミス配置に実装されない機能
+                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
+                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 伝票リソース
+              items:
+                - name: ヘルプ システム
+                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ヘルプ システムに接続する
+                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: カスタム ヘルプ サイトに接続する
+                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: フィールドの説明の表示およびエクスポート
+                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: タスク レコーダー
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: タスク レコーダーを使用したドキュメントやトレーニングの作成
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ビデオ
+                  href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 用語集
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ラーニング カタログ
+              items:
+                - name: ラーニング カタログのホームページ
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 業務意志決定者
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ビジネス ユーザー
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 実装プロジェクト マネージャー
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 管理者
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 開発者
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: パートナー販売とマーケティング
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 機能コンサルタント
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ソリューション アーキテクト
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ユーザー インターフェイスの操作
+              items:
+                - name: ユーザー インターフェイスの要素
+                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ユーザー補助機能
+                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 機能管理の概要
+                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: クライアント FAQ
+                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: アクション検索
+                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 高度なフィルター処理とクエリ構文
+                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ワークスペースのコンフィギュレーションとフィルター処理
+                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: '[新しいウィンドウで開く] 機能を使用してページを並べて表示する'
+                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: キーボード ショートカット
+                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 法人のバナーまたはロゴ画像の変更
+                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ナビゲーション検索
+                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ユーザー エクスペリエンスのパーソナライズ
+                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 保存されているビュー
+                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: カスタム フィールドの作成と操作
+                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: PowerApps アプリの埋め込み
+                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ルックアップを使用した情報の検索
+                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: セッションの日付変更
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ユーザーの優先タイム ゾーンの設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Lifecycle Services の理解
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 実装ライフサイクル管理
+              items:
+                - name: 実装ライフサイクル管理ホーム ページ
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Finance and Operations アプリのアーキテクチャ
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Microsoft FastTrack for Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 実装プロジェクトの研修
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 環境計画
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Go-Live の準備
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Go-Live に関するよく寄せられる質問
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: サービス要求の送信
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: サブスクリプション、LCS プロジェクト、Azure AD テナントに関するよく寄せられる質問
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: データ センター間で環境を移動する
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 契約タイプ間でライセンスを移動する
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: LCS 実装プロジェクトを別の Azure AD テナントに移動する
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Finance and Operations Retail プロジェクトの実装
+                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+                - name: Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
+                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+                - name: Retail プロジェクトのコードと環境の更新
+                  href: dev-itpro/updating-environments.md
+                - name: テストおよびパフォーマンスに関する問題
+                  href: dev-itpro/retail-implementation-testing-performance.md
+        - name: インテリジェンス
+          items:
+            - name: インテリジェンスのホーム ページ
+              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 情報へのアクセスとレポート
+              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Power BI コンテンツ
+              items:
+                - name: Power BI コンテンツのホーム ページ
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 実績対予算
+                  href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 福利厚生
+                  href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 現金の概要
+                  href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md
+                - name: CFO 概要
+                  href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 報酬
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 報酬と給付金
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 原価会計分析
+                  items:
+                    - name: 原価会計分析 Power BI コンテンツ
+                      href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 原価会計分析の Power BI コンテンツのセキュリティ設定
+                      href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 原価管理
+                  href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 与信および回収管理
+                  href: ../finance/accounts-receivable/credit-collections-power-bi.md
+                - name: 従業員のコンピテンシーと開発
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 従業員の育成
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 経費管理 Power BI コンテンツ
+                  href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 財務パフォーマンス
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 財務インサイト
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 固定資産管理
+                  href: ../finance/fixed-assets/Fixed-asset-management-workspace.md
+                - name: 学習
+                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 組織トレーニング
+                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: プラクティス マネージャー
+                  href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 生産パフォーマンス
+                  href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 購買と支出の分析
+                  href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 採用
+                  href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 小売チャネルの実績
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 販売と収益性のパフォーマンス
+                  href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 仕入先支払
+                  href: ../finance/accounts-payable/Vendor-payments-workspace.md
+                - name: 倉庫のパフォーマンス
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 要員指標
+                  href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ドキュメントのレポーティングおよび印刷
+              items:
+                - name: ドキュメント レポート サービスの概要
+                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: オンプレミスの配置の SSRS のコンフィギュレーション
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 印刷中
+                  items:
+                    - name: ドキュメントの印刷の概要
+                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
+                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ドキュメント回覧エージェントのアップグレード
+                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+                    - name: オンプレミス環境でのネットワーク プリンター デバイスのインストール
+                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: オンプレミス配置でのドキュメントの生成、発行、印刷
+                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ドキュメント回覧エージェントを Windows サービスとして実行する
+                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 実行時間の長いレポートがタイムアウトしないようにする
+                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 利用可能な SQL Server Reporting Services のレポート
+                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: レポート ソリューションの作成
+                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: レポートのデザイン テンプレートをインストールする
+                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 拡張機能を使用してアプリケーション スイート レポートをカスタマイズする
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: アプリケーション スイート レポート データ セットを展開する
+                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: レポートのメニュー項目を拡張してユーザー ナビゲーションをリダイレクトする
+                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ビジネス ドキュメントのカスタム デザインを作成する
+                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 埋め込みビューアを使用して PDF ドキュメントをプレビューする
+                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 電子申告
+              items:
+                - name: 電子申告の概要
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: コンフィギュレーション
+                  items:
+                    - name: コンフィギュレーションの作成
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 電子申告ソリューションのコンポーネントを準備する
+                      items:
+                        - name: ドメイン固有のデータ モデルを設計する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: アプリケーション固有のメタデータを準備する
+                          items:
+                            - name: (ER) RCS で使用するアプリケーション メタデータを準備する
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+                            - name: (RCS) ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/unified-operations/retail/toc.json
+                            - name: (RCS) 接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: モデル マッピングを定義し、データ ソースを選択する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: 選択したデータ ソースにデータ モデルをマップする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: 形式コンフィギュレーションを作成する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: 作成された形式のコンポーネントをデータ モデル要素にマッピングする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 準備された ER ソリューションをターゲット アプリケーションでテストする
+                      items:
+                        - name: (ER) コンフィギュレーションを RCS からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: 形式コンフィギュレーションを使用して支払の電子ドキュメントを生成する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 形式の新しい基準バージョンを採用してその形式をアップグレードする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 電子申告のフォーミュラ デザイナー
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 個別の ER コンフィギュレーションで ER モデル マッピングを管理する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 形式を作成するときにデータ モデル定義を選択する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: コンテンツを XML のままで追加してレポートを生成する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: (ER) 電子申告における会社間データ ソース
+                  href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: さまざまな形式で送信電子ドキュメントを生成するための ER 形式を設計する
+                  items:
+                    - name: (ER) OPENXML 形式でレポートを生成するためのコンフィギュレーションを設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: (ER) Word 形式のレポートを生成するためのコンフィギュレーションを設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: PDF テンプレートを入力するためのコンフィギュレーションを設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 画像や図形を埋め込む
+                  items:
+                    - name: (ER) 生成するドキュメントに画像や図形を埋め込む
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 画像や図形の埋め込み例
+                      items:
+                        - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを設計する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを確認する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: 画像が埋め込まれた Office 形式でレポートを生成する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Excel テンプレートを再適用して電子申告形式を変更する
+                  href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 財務分析コードを使用するための ER ソリューションを設計する
+                  items:
+                    - name: データ ソースとして財務分析コードを使用するためのデータ モデルを設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: データ ソースとして財務分析コードを使用するためのモデルをマップする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: データ ソースとして財務分析コードを使用するためのレポートを設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 財務分析コードをデータ ソースとして使用するレポートを実行する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 生成された出力からの情報を使用して棚卸および集計を行うための ER 形式を設計する
+                  items:
+                    - name: 棚卸および集計を行うための形式を作成する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 棚卸および集計を行うための形式を構成する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 棚卸および集計の出力を生成するための計算を使用する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 棚卸および集計を行うための形式を実行する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 水平に拡張された範囲として列を Excel レポートに動的に追加する
+                  items:
+                    - name: 水平に拡張された範囲として列を Excel レポートに動的に追加するための形式を設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 水平に拡張された範囲として列を Excel レポートに動的に追加するための形式を実行する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 形式出力でドキュメント管理ファイルを使用する
+                  items:
+                    - name: ER 出力でドキュメント管理ファイルを使用するためのデータ モデルを準備する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ER 出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ER 出力でドキュメント管理ファイルを使用するための形式を作成する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ER 出力でドキュメント管理ファイルを使用するための形式を実行する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ER 出力でドキュメント管理ファイルを使用するための形式を変更して実行する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 電子申告を使用してアプリケーション データを更新する
+                  items:
+                    - name: 電子ドキュメントを生成してアプリケーション データを更新する
+                      href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションをインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションを設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: アプリケーション データを含むドキュメントを生成するためのモデルとマッピングを変更する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: アプリケーション データを含むドキュメントを生成するための形式を変更する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: アプリケーション データを含むドキュメントを生成する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ER ソリューションを使用して受信ファイルからデータをインポートする
+                  items:
+                    - name: 異なる形式で着信ドキュメントを解析する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 手動で選択したファイルからのデータのインポートを構成する
+                      items:
+                        - name: 外部 XML ファイルからデータをインポートするためのコンフィギュレーションを作成する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: SharePoint にあるファイルからのバッチ モードのデータのインポートを構成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: XML 形式のファイルをインポートする
+                      items:
+                        - name: オプションの属性を使用して XML 形式でファイルをインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: オプションの属性を含む XML 形式のファイルをインポートするための ER 形式を構成する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 計算フィールド型の ER データ ソースのパラメーター化された呼び出しをサポートする
+                  href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: コンフィギュレーション ライフサイクル
+                  items:
+                    - name: コンフィギュレーション ライフサイクルの管理
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: コンフィギュレーションを Lifecycle Services にアップロードする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: コンフィギュレーションを Lifecycle Services からインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: コンフィギュレーションを Lifecycle Services からダウンロードする
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: コンフィギュレーションをインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ER コンフィギュレーションを RCS リポジトリからダウンロードする
+                      items:
+                        - name: RCS タイプの ER リポジトリからコンフィギュレーションをダウンロードする
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: コンフィギュレーションを RCS からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Finance and Operations で電子申告ソリューションを使用する
+                  items:
+                    - name: フレームワークのコンフィギュレーション
+                      items:
+                        - name: 電子申告フレームワークのコンフィギュレーション
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: 電子申告テンプレートのバックアップと復元
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: コンフィギュレーション プロバイダーを作成し、有効としてマークする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 行先
+                      items:
+                        - name: 行先の概要
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: 行先のコンフィギュレーション
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 生成されたレポートの自動検証
+                      items:
+                        - name: 生成されたレポート結果を追跡し、ベースライン値と比較する
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: 生成された ER レポートの追跡結果およびベースライン値との比較における改善
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: 電子申告を使用したテストの自動化
+                          href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 電子申告コンフィギュレーションを使用して業務プロセスを自動化する
+                      items:
+                        - name: Power BI にデータをプルするよう電子申告を構成する
+                          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/unified-operations/retail/toc.json
+                        - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
+                          href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ER 形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ビジネス ドキュメント管理の概要
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ER フレームワーク API
+                  items:
+                    - name: 電子申告機能の一覧の拡張
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Application update 7.3 での電子申告フレームワーク API の変更
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 生成されるドキュメントに対するカスタム ストレージ場所を指定する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 埋め込み型の解析ソリューション
+              items:
+                - name: ワークスペースの埋め込み Power BI
+                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/retail/toc.json
+                - name: Power BI Embedded 統合
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/retail/toc.json
+                - name: 分析ワークスペースで埋め込みレポートをカスタマイズする
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/retail/toc.json
+            - name: PowerBI.com でのパーソナル化オプション
+              items:
+                - name: Power BI 統合を通じて利用できる機能やサービス
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/retail/toc.json
+                - name: Power BI レポートをワークスペースにピン留めする
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/retail/toc.json
+                - name: PowerBI.com から分析ワークスペースを選択する
+                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/retail/toc.json
+            - name: ソリューションの作成および拡張のためのツール
+              items:
+                - name: 分析、集計の測定、および KPI モデリング
+                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Power BI Desktop を使用した分析レポートの作成
+                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 集計データのモデリング
+                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 集計の測定への財務分析コードの追加
+                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Power BI Embedded を使用したワークスペースへの分析の追加
+                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
+                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Power ユーザー管理ツール
+              items:
+                - name: エンティティ格納と Power BI の統合
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: エンティティ格納のメンテナンス後に問題を解決する
+                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
+                - name: ワークスペースの Power BI 統合のコンフィギュレーション
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 自分のデータベースの持ち込み
+                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: モバイル アプリ
+          items:
+            - name: モバイル アプリのホーム ページ
+              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: モバイル ワークスペース
+              items:
+                - name: 利用可能なモバイル ワークスペース
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 資産管理
+                  href: ../supply-chain/asset-management/asset-management-mobile-workspace.md
+                - name: 会社のディレクトリ
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 原価管理
+                  href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 経費管理
+                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 手持在庫
+                  href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 請求書の承認
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 自分のチーム
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Project モバイル アプリケーションの概要
+                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: プロジェクト時間の入力
+                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/retailtoc.json
+                - name: Project Timesheet
+                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 発注書の承認
+                  href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 販売注文
+                  href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 仕入先コラボレーション
+                  href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: モバイル ワークスペースの公開
+              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Office 統合
+          items:
+            - name: Office 統合の概要
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Office 統合のチュートリアル
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Excel でエンティティ データを開き、Excel アドインを使用して更新する
+              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: '[Excel で開く] エクスペリエンスの作成'
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: '[Excel で明細行を開く] メニューへのテンプレートの追加'
+              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: '[Microsoft Office で開く] メニューのカスタマイズ'
+              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 電子メールのコンフィギュレーションと送信
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 電子メール体験を向上させる
+              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Office 統合のトラブルシューティング
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 組織管理
+          items:
+            - name: 組織管理ホーム ページ
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 番号順序
+              items:
+                - name: 番号順序の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 番号順序を個別に設定する
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ウィザードを使用した番号順序の設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 組織と組織階層
+              items:
+                - name: 組織と組織階層の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 組織階層の計画
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 組織階層の作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 法人の作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 作業単位の作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: グローバル アドレス帳
+              items:
+                - name: グローバル アドレス帳の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: グローバル アドレス帳およびその他のアドレス帳の計画
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: グローバル アドレス帳の構成
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: アドレス帳に関するよく寄せられる質問
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: アドレス帳の構成
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ワークフロー システム
+              items:
+                - name: ワークフロー システムの概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ワークフロー システムのアーキテクチャ
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ワークフロー要素
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ワークフロー アクション
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ワークフローの作成
+                  items:
+                    - name: ワークフローの作成の概要
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ワークフロー プロパティのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 手動タスクのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 自動化タスクのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 承認プロセスのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 承認ステップのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 手動決定のコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 条件付き意思決定のコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 並列活動のコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 並列分岐のコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 品目ワークフローのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ワークフローの作業項目をデリゲート
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ワークフロー履歴の表示
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ユーザーにワークフローに関連する電子メールを送信するシステムのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ワークフロー タイプ
+                  items:
+                    - name: ワークフロー タイプの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ワークフロー タイプのチェックリスト
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ワークフローカテゴリの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ワークフロー タイプのクエリの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: 新しいワークフロー タイプの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ワークフロー ドキュメント クラスの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: SubmitToWorkflow クラスの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: ワークフロー ドキュメント クラスとワークフロー タイプの関連付け
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ワークフロー タイプのレポート
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ワークフローに関するよく寄せられる質問
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 警告
+              items:
+                - name: 警告の概要
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 警告ルールの作成
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 警告のバッチ処理
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 電子メールによるクライアント警告通知
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 電子署名
+              items:
+                - name: 電子署名の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 電子署名の設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ケース管理
+              items:
+                - name: ケース管理の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ケース セキュリティ、プロセス、およびカテゴリの計画
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: レコード テンプレート
+              items:
+                - name: レコード テンプレートの概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: レコード テンプレートの作成
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: レコード テンプレートを使用した新しいレコードの作成
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ドキュメント管理のコンフィギュレーション
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 電子メールのコンフィギュレーションと送信
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 日時データとタイム ゾーン
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: チャネルの設定と管理
+          items:
+            - name: チャネル設定
+              items:
+                - name: 新しい Retail 環境でのシード データの初期化
+                  href: enable-configure-retail-functionality.md
+                - name: 小売チャネルの設定
+                  href: define-maintain-retail-channels.md
+                - name: オンライン ストアの設定
+                  href: online-stores.md
+                - name: コール センター チャネルの設定
+                  href: set-up-order-processing-options.md
+                - name: 小売階層のコンフィギュレーション
+                  href: retail-hierarchies.md
+                - name: 品揃え管理
+                  href: assortments.md
+                - name: Retail Hardware Station のコンフィギュレーションおよびインストール
+                  href: retail-hardware-station-configuration-installation.md
+                - name: オンライン チャネルの作成とチャネルの属性の定義
+                  href: tasks/create-online-channel-define-channel-attributes.md
+            - name: 小売チャネル管理
+              items:
+                - name: Retail の時刻と出勤
+                  href: retail-time-attendance.md
+                - name: 店舗の営業時間の作成と変更
+                  href: dev-itpro/store-hours.md
+            - name: コール センター チャネルの管理
+              items:
+                - name: コール センターの販売機能
+                  href: call-center-functionality.md
+                - name: コール センターのカタログ
+                  href: call-center-catalogs.md
+                - name: 出荷モードと雑費のコンフィギュレーション
+                  href: configure-call-center-delivery.md
+                - name: 詐欺警告の設定および使用
+                  href: set-up-fraud-alerts.md
+                - name: コール センターの連続プログラムの設定
+                  href: set-up-continuity-program.md
+                - name: コール センターの注文保留のコンフィギュレーションおよび作業
+                  href: work-with-order-holds.md
+                - name: 支払方法
+                  href: work-with-payments.md
+        - name: 製品と販売促進
+          items:
+            - name: 製品情報の概要
+              href: ../supply-chain/pim/product-information.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 小売階層
+              href: retail-hierarchies.md
+            - name: 属性および属性グループ
+              href: attribute-attributegroups-lifecycle.md
+            - name: 属性の作成と管理
+              href: create-manage-attributes.md
+            - name: 小売製品の設定
+              href: set-up-retail-products.md
+            - name: 製品の作成
+              href: ../supply-chain/pim/tasks/create-product.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: リンクされた製品のコンフィギュレーション
+              href: ../supply-chain/pim/tasks/configure-linked-products.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 法人に対する製品/製品マスターのリリース
+              href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
+            - name: 小売製品カテゴリおよび製品の管理
+              href: category-management-product-creation.md
+            - name: 販売促進エンティティの並べ替え順序の変更
+              href: custom-order-categories-nav-retail-prod-hierarchy.md
+            - name: 製品分析コード
+              href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 品揃えの設定
+              href: set-up-assortments.md
+            - name: バーコードの設定
+              href: set-up-bar-codes.md
+            - name: バーコード マスクの設定
+              href: set-up-bar-code-masks.md
+            - name: 店舗の品揃えに含まれていない製品の販売および返品
+              href: sell-return-outside-assortments.md
+            - name: 分析コードおよび製品バリアントの既定の注文設定
+              href: ../supply-chain/production-control/default-order-settings.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 注文入力時の製品および製品バリアントの検索
+              href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 小売価格レポート
+              href: price-report.md
+            - name: 最初から用意されているレポートの生成および実行
+              href: tasks/run-out-box-reports.md
+        - name: 価格決定と割引
+          items:
+            - name: 小売割引
+              href: retail-discounts-overview.md
+            - name: 小売販売価格の管理
+              href: price-management.md
+            - name: 価格調整および割引
+              href: price-adjustments-discounts.md
+            - name: 製品に対する複数の割引の適用
+              href: Apply-multiple-retail-discounts.md
+            - name: 重複する割引の最適な組み合わせの決定
+              href: optimal-combination-overlapping-discounts.md
+            - name: チャネル固有の割引の定義
+              href: define-channel-specific-discounts.md
+            - name: 小売製品の割引を回避するためのオプション
+              href: prevent-discounts.md
+            - name: 出荷割引の概要
+              href: retail-shipping-discount.md
+            - name: 小売販売のクーポンの設定
+              href: retail-coupons.md
+            - name: 小売価格調整の作成
+              href: tasks/retail-price-adjustments.md
+        - name: ロイヤルティ
+          items:
+            - name: ロイヤルティの概要
+              href: set-up-customer-loyalty-program.md
+        - name: 支払
+          items:
+            - name: 支払方法
+              href: payment-methods.md
+            - name: クレジット カードの設定、認証、および取得
+              href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: POS の現金貨幣単位の構成
+              href: cash-denominations.md
+            - name: クレジット カード処理のコンフィギュレーション
+              href: tasks/configure-credit-card-processing.md
+            - name: Adyen 向け Dynamics 365 Payment Connector
+              href: dev-itpro/adyen-connector.md
+            - name: オンライン支払手段を Adyen コネクタで保存
+              href: dev-itpro/adyen-connector-listPI.md
+            - name: 請求書の支払シナリオを設定する
+              href: payinvoice.md
+            - name: 重複支払の防止
+              href: duplicate-payment-protection.md
+            - name: オムニ チャネル支払の概要
+              href: omni-channel-payments.md
+            - name: 支払に関してよく寄せられる質問
+              href: dev-itpro/payments-retail.md
+        - name: 高度な自動請求
+          items:
+            - name: 高度な自動請求のコンフィギュレーションおよび使用
+              href: omni-auto-charges.md
+            - name: ヘッダー請求金額を一致する販売明細行に比例配分する
+              href: pro-rate-charges-matching-lines.md
+        - name: 消費税
+          items:
+            - name: 消費税の概要
+              href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: '[発生元] フィールドでの消費税計算方法'
+              href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 消費税の割り当ておよび上書き
+              href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 消費税コードの合計額と間隔計算オプション
+              href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 発注書
+          items:
+            - name: 発注書の概要
+              href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 発注書の作成
+              href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 発注書に対する製品受領書
+              href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 発注書の承認と確認
+              href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 発注書承認モバイル ワークスペース
+              href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 在庫
+          items:
+            - name: 店舗在庫管理
+              href: work-with-store-inventory.md
+            - name: 販売プロセスでのシリアル番号の登録
+              href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 在庫仕訳帳
+              href: ../supply-chain/inventory/inventory-journals.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 在庫タグ棚卸
+              href: ../supply-chain/inventory/inventory-tag-counting.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 現物価格とマーキングを使用した先入れ先出し (FIFO)
+              href: ../supply-chain/cost-management/fifo-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 現物価格とマーキングを使用した後入れ先出し (LIFO) 日付
+              href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 現物価格とマーキングを使用した後入れ先出し (LIFO)
+              href: ../supply-chain/cost-management/lifo-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 加重平均日付
+              href: ../supply-chain/cost-management/weighted-average-date.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 現物価格とマーキングを使用した加重平均
+              href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 検査指示
+              href: ../supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 移動平均原価価格
+              href: ../supply-chain/cost-management/running-average-cost-price.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 在庫分析コード当たりの移動平均原価の追跡
+              href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 明細書
+          items:
+            - name: 小売明細書
+              href: retail-statements.md
+            - name: 小売トランザクションの整合性チェック
+              href: valid-checker.md
+            - name: 小売店舗の明細書の作成、計算、および転記
+              href: tasks/create-calculate-post-statement-retail-store.md
+            - name: 明細書転記機能に関する強化事項
+              href: statement-posting-EOD.md
+            - name: バッチ追跡品目の処理の改善
+              href: batch.md
+            - name: 小売明細書に影響を及ぼす 小売パラメーターのコンフィギュレーション
+              href: tasks/parameter-configurations-retail-statements.md
+            - name: 小売明細書に影響を及ぼす支払方法設定のコンフィギュレーション
+              href: tasks/payment-configurations-retail-statements.md
+            - name: 明細書を計算するジョブのコンフィギュレーションおよび実行
+              href: tasks/run-job-calculate-statements.md
+            - name: 明細書を転記するジョブのコンフィギュレーションおよび実行
+              href: tasks/run-job-post-statements.md
+            - name: 小売明細書に影響を及ぼす店舗設定のコンフィギュレーション
+              href: tasks/store-configurations-retail-statements.md
+        - name: 分散型注文管理 (DOM)
+          items:
+            - name: DOM 概要
+              href: dom.md
+            - name: 原価コンフィギュレーション
+              href: cost.md
+        - name: 注文のフルフィルメント
+          items:
+            - name: 店舗注文のフルフィルメント
+              href: Order-fulfillment-overview.md
+            - name: 店舗における注文のフルフィルメントの設定
+              href: Order-fulfillment-POS-setup.md
+            - name: POS の注文通知の表示
+              href: Notifications-POS.md
+        - name: 返品
+          items:
+            - name: リンクされた払戻
+              href: dev-itpro/linked-refunds.md
+            - name: 店舗の品揃えに含まれていない製品の販売および返品
+              href: sell-return-outside-assortments.md
+            - name: 返品注文に対する交換のコンフィギュレーションとプロセス
+              href: orderexchanges.md
+            - name: レシートのない返品の支払方法の制限
+              href: payment-methods-restrictions.md
+            - name: 複数の顧客注文および請求書間での品目の返品
+              href: multireturn.md
+        - name: Modern Point of Sale (MPOS) および Cloud POS
+          items:
+            - name: MPOS か Cloud POS かの選択
+              href: MPOS-or-CPOS.md
+            - name: オンラインおよびオフラインの POS 操作
+              href: pos-operations.md
+            - name: カスタマイズされた Retail MPOS のデバイスの有効化
+              href: dev-itpro/retail-POS-activation-changes.md
+            - name: MPOS および Cloud POS のデモ データ画面レイアウト
+              href: demo-data.md
+            - name: POS での製品および顧客の検索
+              href: POS-search-improvements.md
+            - name: 現金管理の改善
+              href: cash-mgmt.md
+            - name: POS での在庫検索
+              href: product-variants-POS.md
+            - name: POS でのトランザクションの中断および再開
+              href: pos-suspend-recall-transactions.md
+            - name: 情報コードおよび情報コード グループ
+              href: info-codes-retail.md
+            - name: シリアル化された製品の POS 改善
+              href: serialized-inventory.md
+            - name: オフライン POS 機能
+              href: pos-offline-functionality.md
+            - name: シフトとキャッシュ ドロワーの管理
+              href: shift-drawer-management.md
+            - name: ギフト カードのキャッシュ アウト残高
+              href: dev-itpro/gift-card-cash-out.md
+            - name: 別の店舗からの注文の出荷
+              href: charge-send.md
+            - name: MPOS および Cloud POS のタスク レコーダーとヘルプ
+              href: task-recorder-retail-pos.md
+            - name: ハードウェア周辺機器
+              items:
+                - name: 小売り用周辺機器
+                  href: retail-peripherals-overview.md
+                - name: Retail 周辺機器シミュレーター
+                  href: dev-itpro/retail-peripheral-simulator.md
+                - name: POS への周辺機器の接続
+                  href: define-maintain-channel-clients-registers-hw-stations.md
+            - name: 画面レイアウト
+              items:
+                - name: MPOS/CPOS のデモ データ画面レイアウト
+                  href: demo-data.md
+                - name: POS の画面レイアウト
+                  href: pos-screen-layouts.md
+                - name: Retail POS のレイアウト デザイナーのインストール
+                  href: install-pos-layout-designer.md
+                - name: 通知設定の選択
+                  href: Notifications-POS.md
+                - name: POS アプリケーションとユーザー言語設定
+                  href: pos-application-user-language-settings.md
+                - name: MPOS のイメージの設定および管理
+                  href: set-up-manage-images-retail-mpos.md
+                - name: POS のクライアント イメージ
+                  href: pos-image.md
+            - name: 製品推奨事項
+              items:
+                - name: POS デバイスでの推奨事項コントロールの追加
+                  href: add-recommendations-control-pos-screen.md
+            - name: 顧客注文
+              items:
+                - name: MPOS の顧客注文
+                  href: customer-orders-overview.md
+                - name: ハイブリッド顧客注文
+                  href: hybrid-customer-orders.md
+            - name: 店員
+              items:
+                - name: 売上グループを使用した POS でのコミッションの追跡
+                  href: pos-sales-groups-track-commissions.md
+            - name: デバイスの有効化
+              items:
+                - name: MPOS のインストール、コンフィギュレーション、有効化
+                  href: retail-modern-pos-device-activation.md
+                - name: MPOS および Cloud POS の拡張ログオン機能の設定
+                  href: extended-logon.md
+                - name: Retail アクティベーション アカウントの管理とデバイスの検証
+                  href: set-up-activation-accounts-validate-devices-hq.md
+            - name: 受領書
+              items:
+                - name: 受領書フォーマットの設定およびデザイン
+                  href: receipt-templates-printing.md
+                - name: MPOS からの電子メール レシートの送信
+                  href: email-receipts.md
+        - name: 人事管理
+          items:
+            - name: 部門、職務、職位を使用した従業員の編成
+              href: ../talent/departments-jobs-positions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 職務のコンポーネントの設定
+              href: ../talent/create-job.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 監視と分析
+          items:
+            - name: 販売と利益幅のパフォーマンスの監視
+              href: monitor-sales-margin-performance.md
+            - name: 販売のトレンドとパターンの分析
+              href: analyze-sales-trends-patterns.md
+            - name: 製品別の売上実績の評価
+              href: sales-performance-products.md
+            - name: 顧客と製品の収益性の評価
+              href: assess-customer-product-profitability.md
+            - name: 店舗のパフォーマンスの分析
+              href: store-performance-information.md
+            - name: 最新、頻度、金額 (RFM) 分析の設定
+              href: set-up-rfm-analysis.md
+        - name: ローカライズと規制の機能
+          items:
+            - name: 小売チャネルの会計統合の概要
+              href: localizations/fiscal-integration-for-retail-channel.md
+            - name: 小売チャネルの会計統合の設定
+              href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: オーストリア
+              items:
+                - name: オーストリア向け会計登録サービス統合サンプル
+                  href: localizations/emea-aut-fi-sample.md
+            - name: 東ヨーロッパ
+              items:
+                - name: 東ヨーロッパにおける Retail の事前請求書
+                  href: localizations/emea-eeu-advance-invoices-for-retail.md
+                - name: 東ヨーロッパにおける Retail の小口現金管理
+                  href: localizations/emea-eeu-petty-cash-for-retail.md
+                - name: 東ヨーロッパ諸国での Retail 顧客請求書および返品販売注文
+                  href: localizations/emea-eeu-retail-invoices.md
+                - name: チェコ共和国、ハンガリー、およびポーランドのキャッシュ レジスターの配置ガイドライン
+                  href: localizations/emea-eeu-deployment.md
+                - name: ポーランド向け会計プリンター統合サンプル
+                  href: localizations/emea-pol-fpi-sample.md
+                - name: チェコ共和国向け会計登録サービス統合サンプル
+                  href: localizations/emea-cze-fi-sample.md
+            - name: フランス
+              items:
+                - name: キャッシュ レジスター機能
+                  href: localizations/emea-fra-cash-registers.md
+                - name: キャッシュ レジスターの配置ガイドライン
+                  href: localizations/emea-fra-deployment.md
+            - name: インド
+              items:
+                - name: キャッシュ レジスターの商品及びサービス税 (GST) 統合
+                  href: localizations/apac-ind-cash-registers.md
+                - name: キャッシュ レジスターの配置ガイドライン
+                  href: localizations/apac-ind-loc-deployment-guidelines.md
+                - name: インド向けアップグレードと N-1 のサポート
+                  href: localizations/apac-ind-n-1-for-india.md
+            - name: イタリア
+              items:
+                - name: イタリア向け会計プリンター統合サンプル
+                  href: localizations/emea-ita-fpi-sample.md
+            - name: メキシコ
+              items:
+                - name: メキシコ向けグローバル CFDI 電子請求書
+                  href: ../finance/localizations/latam-mex-global-cfdi-3-3.md
+            - name: ノルウェー
+              items:
+                - name: キャッシュ レジスター機能
+                  href: localizations/emea-nor-cash-registers.md
+                - name: キャッシュ レジスターの配置ガイドライン
+                  href: localizations/emea-nor-loc-deployment-guidelines.md
+            - name: スウェーデン
+              items:
+                - name: キャッシュ レジスター機能
+                  href: localizations/emea-swe-cash-registers.md
+                - name: 管理単位との Retail POS の統合サンプル
+                  href: localizations/retail-sdk-control-unit-sample.md
+        - name: Retail タスク
+          items:
+            - name: チャネル固有の売買契約の作成
+              href: tasks/base-price-trade-agreements.md
+            - name: カテゴリの価格決定ルールを使用した売買契約の作成
+              href: tasks/category-pricing-rules-trade-agreements.md
+            - name: 販売担当者の機能プロファイルのコンフィギュレーション
+              href: tasks/configure-functionality-profile-sales-representative.md
+            - name: デバイスの作成およびレジスターとの関連付け
+              href: tasks/create-associate-device.md
+            - name: Hardware Station の作成
+              href: tasks/create-associate-hardware-station.md
+            - name: POS レジスターの作成
+              href: tasks/create-associate-registers.md
+            - name: コール センター注文の作成
+              href: tasks/create-call-center-orders.md
+            - name: POS レジスターの財務分析コードの作成とレジスターの分析コード値のコンフィギュレーション
+              href: tasks/create-financial-dimensions-pos.md
+            - name: 小売チャネルの財務分析コードの作成と店舗の分析コード値のコンフィギュレーション
+              href: tasks/create-financial-dimensions-retail-channels.md
+            - name: POS アクセス許可グループの作成
+              href: tasks/create-pos-permission-groups.md
+            - name: POS 視覚プロファイルの作成
+              href: tasks/create-pos-visual-profile-2016-02.md
+            - name: 発注書の製品パッケージの作成
+              href: tasks/create-product-packages-purchase-orders.md
+            - name: コール センター チャネルの作成およびチャネル属性の定義
+              href: tasks/define-call-center-channel-channel-attributes.md
+            - name: チャネル属性の定義
+              href: tasks/define-channel-attributes.md
+            - name: 連続スケジュールの定義
+              href: tasks/define-continuity-schedules.md
+            - name: ロイヤルティ プログラムの定義
+              href: tasks/define-loyalty-programs.md
+            - name: ロイヤルティ報酬ポイントの定義
+              href: tasks/define-loyalty-reward-points.md
+            - name: ロイヤルティ スキーマの定義
+              href: tasks/define-loyalty-schemes.md
+            - name: 組織単位間のリレーションシップのデザイン
+              href: tasks/design-relationships-between-organizational-units.md
+            - name: 品揃えの管理
+              href: tasks/manage-assortments-2016-11.md
+            - name: セルフサービスを使用した Hardware Station のダウンロード
+              href: tasks/perform-self-service-download-hardware-station.md
+            - name: オンラインの販売と支払の転記
+              href: tasks/posting-online-sales-payments.md
+            - name: ロイヤルティ報酬ポイントの処理の調整
+              href: tasks/process-loyalty-reward-point-adjustments.md
+            - name: 集中的購買を介した物流センターから店舗への製品の配送
+              href: tasks/push-products-distribution-center-store-buyers-push.md
+            - name: クロス ドッキングおよび集中的購買のルールとパラメーターの設定
+              href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+            - name: 連続プログラムの販売と販売注文の処理
+              href: tasks/use-continuity-program.md
+            - name: 小売作業者のコンフィギュレーション
+              href: tasks/worker.md
+        - name: Retail 開発と管理
+          items:
+            - name: Retail の開発と管理の概要
+              href: dev-itpro/dev-retail-home-page.md
+            - name: アーキテクチャ
+              items:
+                - name: Retail のコンポーネント
+                  href: retail-components.md
+                - name: Retail Server のアーキテクチャ
+                  href: dev-itpro/retail-server-architecture.md
+                - name: ストア内トポロジを選択します。
+                  href: dev-itpro/retail-in-store-topology.md
+                - name: Commerce Data Exchange と小売チャネルのコミュニケーション
+                  href: dev-itpro/define-retail-channel-communications-cdx.md
+                - name: Retail Modern POS のアーキテクチャ
+                  href: dev-itpro/retail-modern-pos-architecture.md
+                - name: Retail オンライン ストア発行アーキテクチャ
+                  href: dev-itpro/retail-online-store-publishing-architecture.md
+                - name: Retail Channel Performance Power BI コンテンツ
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
+                  href: dev-itpro/PA-DSS-Certification.md
+                - name: オンプレミス配置で使用できる小売機能
+                  href: retail-onprem.md
+            - name: 配置と修正プログラム
+              items:
+                - name: Retail Store Scale Unit
+                  href: dev-itpro/retail-store-system-begin.md
+                - name: Retail Store Scale Unit のコンフィギュレーションとインストール
+                  href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+                - name: Retail Modern POS のコンフィギュレーションとインストール
+                  href: retail-modern-pos-device-activation.md
+                - name: 本社からの Retail アカウントとデバイスの管理
+                  href: set-up-activation-accounts-validate-devices-hq.md
+                - name: Retail POS デバイスのライセンス認証
+                  href: dev-itpro/retail-device-activation.md
+                - name: 共有環境の Cloud POS のセキュリティ保護
+                  href: dev-itpro/secure-retail-cloud-pos.md
+                - name: Retail Hardware Station のコンフィギュレーションとインストール
+                  href: retail-hardware-station-configuration-installation.md
+                - name: Retail セルフサービス コンポーネントの一括配置
+                  href: dev-itpro/retail-mass-deployment.md
+                - name: 診断とトラブルシューティングの Retail コンポーネント イベント
+                  href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
+                - name: 配置可能パッケージの適用
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: アップグレードおよび N-1 のサポート
+              items:
+                - name: Retail のアップグレードおよび N-1 のサポート
+                  href: dev-itpro/overview-upgrade-n-minus1.md
+                - name: Phased Rollout (N-1) のインストール、構成、切替
+                  href: dev-itpro/n-1-installation-configuration.md
+                - name: Retail チャネル拡張機能を最新の Retail SDK にアップグレード
+                  href: dev-itpro/retailSDK-update.md
+            - name: 実装ガイダンス
+              items:
+                - name: デバイス管理実装ガイダンス
+                  href: implementation-considerations-devices.md
+            - name: 環境のコンフィギュレーション
+              items:
+                - name: 組織の法律条項およびプライバシーに関する声明へのリンクの追加
+                  href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Bing地図の管理
+                  href: dev-itpro/manage-bing-maps.md
+            - name: Retail 拡張リソースおよびラベル ファイルのローカライズ
+              href: dev-itpro/extension-resource-localization.md
+            - name: 販売時点管理の拡張機能
+              items:
+                - name: Retail POS 画面レイアウト
+                  href: pos-screen-layouts.md
+                - name: POS で URL を開く
+                  href: Open-URL-in-POS.md
+                - name: POS のレイアウト デザイナーのインストール
+                  href: install-pos-layout-designer.md
+                - name: オフライン モードの Retail Modern POS
+                  href: dev-itpro/retail-modern-pos-offline.md
+                - name: POS Dual ディスプレイ ビューの拡張
+                  href: dev-itpro/pos-dual-display-extension.md
+                - name: Retail Modern POS およびクラウド POS のトリガー拡張機能
+                  href: dev-itpro/modern-pos-trigger-extensibility.md
+                - name: POS ビューへのカスタム コントロールの追加
+                  href: dev-itpro/pos-custom-control.md
+                - name: ボタン グリッド デザイナーを使用して POS 操作を POS レイアウトに追加
+                  href: dev-itpro/add-POS-operations.md
+                - name: Retail POS API
+                  href: dev-itpro/POS-APIs.md
+                - name: POS 支払拡張機能
+                  href: dev-itpro/pos-payment-extension.md
+                - name: 外部ギフト カードのサポート
+                  href: dev-itpro/gift-card.md
+                - name: ブランドの作成と Retail Experience アプリへの適用
+                  href: dev-itpro/create-retail-experience-app.md
+                - name: Android および iOS での POS Hybrid アプリのセットアップ
+                  href: dev-itpro/hybridApp.md
+                - name: POS 要求ハンドラーのオーバーライド
+                  href: dev-itpro/pos-handler.md
+                - name: POS 拡張パッケージ情報の表示
+                  href: dev-itpro/view-pos-extension-package-details.md
+                - name: Retail Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
+                  href: dev-itpro/pos-rsat.md
+            - name: Hardware Station の拡張機能
+              href: dev-itpro/hardware-station-extensibility.md
+            - name: POS と新しいハードウェア デバイスの統合
+              href: dev-itpro/hardware-device-extension.md
+            - name: Retail Server の拡張機能
+              items:
+                - name: Retail Server OData コントローラーの拡張
+                  href: dev-itpro/extend-retail-server-odata-controller.md
+                - name: Retail Server 用 Web API コント ローラーの作成
+                  href: dev-itpro/odata-controllers-api.md
+                - name: Retail Server の顧客およびコンシューマー API
+                  href: dev-itpro/retail-server-customer-consumer-api.md
+                - name: 既定の Retail Server メタデータ コントローラーの拡張
+                  href: dev-itpro/extend-metadata.md
+                - name: オフライン モードでの CRT サービスの呼び出し
+                  href: dev-itpro/call-crt-service-offline.md
+                - name: 新しい Retail サーバー拡張機能の作成
+                  href: dev-itpro/retail-server-extension.md
+            - name: Commerce Runtime (CRT) の拡張機能
+              items:
+                - name: CRT のアーキテクチャと構成
+                  href: dev-itpro/commerce-runtime-overview.md
+                - name: CRT サービス
+                  href: dev-itpro/crt-services.md
+                - name: CRT および Retail Server の拡張機能
+                  href: dev-itpro/commerce-runtime-extensibility.md
+                - name: 顧客の基本設定データをチャネル データベースに追加
+                  href: dev-itpro/add-customer-preference-channel.md
+                - name: Retail チャンネルのシークレットの管理
+                  href: dev-itpro/manage-secrets.md
+                - name: プロパティを販売注文に追加
+                  href: dev-itpro/add-properties-sales-order.md
+                - name: CRT の拡張機能およびトリガー
+                  href: dev-itpro/commerce-runtime-extensibility-trigger.md
+                - name: トリガーを使用したトランザクションのブロック
+                  href: dev-itpro/trigger-example-blocking-transaction.md
+                - name: トリガーを使用する返品ポリシーの実装
+                  href: dev-itpro/trigger-example-return-policy.md
+            - name: E コマースの拡張機能
+              items:
+                - name: オンライン ストアのコンフィギュレーション
+                  href: dev-itpro/configure-online-store.md
+                - name: 認証プロバイダーのコンフィギュレーション
+                  href: dev-itpro/configure-authentication-providers.md
+                - name: E コマース プラットフォーム
+                  href: dev-itpro/ecommerce-platform.md
+                - name: E コマース プラットフォーム SDK
+                  href: dev-itpro/ecommerce-platform-sdk.md
+            - name: 支払コネクタの拡張機能
+              items:
+                - name: 支払ターミナルの支払統合の作成
+                  href: dev-itpro/end-to-end-payment-extension.md
+                - name: 支払コネクタと支払デバイスの実装 (ホワイト ペーパー)
+                  href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
+                - name: 支払コネクタの配置
+                  href: dev-itpro/deploy-payment-connector.md
+                - name: 支払ターミナルの拡張機能向けにローカライズされたカスタム エラー メッセージの作成
+                  href: dev-itpro/payment-custom-error-messages.md
+                - name: 支払コネクタ用の Windows インストーラーの作成
+                  href: dev-itpro/create-windows-installer-payment-connector.md
+                - name: 支払データの使用
+                  href: payment-connector-data-fields.md
+                - name: 支払コネクタの重複支払保護の有効化
+                  href: dev-itpro/duplicate-payment-protection.md
+            - name: Retail SDK
+              items:
+                - name: Retail SDK アーキテクチャ
+                  href: dev-itpro/retail-sdk/retail-sdk-overview.md
+                - name: Retail SDK の今後の変更
+                  href: dev-itpro/UpcomingSDKChanges.md
+                - name: Retail および Finance and Operations 用ビルド システムのマージ
+                  href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+                - name: Retail SDK の拡張機能サンプル
+                  href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+                - name: 配置可能な小売パッケージの作成
+                  href: dev-itpro/retail-sdk/retail-sdk-packaging.md
+                - name: Retail SDK サンプル
+                  href: dev-itpro/retail-sdk/retail-sdk-samples.md
+                - name: 梱包明細の拡張ポイント
+                  href: dev-itpro/extensions-shipping-carrier-integration.md
+                - name: チャネル データベース拡張機能
+                  href: dev-itpro/channel-db-extensions.md
+                - name: 拡張機能を介したカスタム CDX 同期の有効化
+                  href: dev-itpro/cdx-extensibility.md
+                - name: POS Totals パネルへのカスタム フィールドの追加
+                  href: dev-itpro/custom-field-pos-totals.md
+                - name: 注文属性の定義および設定
+                  href: dev-itpro/order-attributes.md
+                - name: 顧客属性
+                  href: dev-itpro/customer-attributes.md
+                - name: 'Retail Typescript と C# プロキシ'
+                  href: dev-itpro/typescript-proxy-retail-pos.md
+                - name: Retail POS サンプルの実行
+                  href: dev-itpro/pos-run-samples.md
+                - name: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
+                  href: dev-itpro/pos-view-extension.md
+                - name: Retail Modern POS トランザクション ページへのカスタム コントロールの追加
+                  href: dev-itpro/pos-custom-transaction.md
+                - name: POS トランザクション グリッドへのカスタム列の追加
+                  href: dev-itpro/pos-custom-transaction-column.md
+                - name: POS 拡張機能からの POS API または POS 操作の呼び出し
+                  href: dev-itpro/pos-api-extension.md
+                - name: Retail Modern POS のトリガーと印刷
+                  href: dev-itpro/pos-trigger-printing.md
+                - name: 非画面デザイナー ベース POS ビューへのカスタム コントロールの追加
+                  href: dev-itpro/pos-control-non-screen.md
+                - name: 管理者のアクセス権を使用しないクラウド ホスト開発環境での開発
+                  href: dev-itpro/cloud-dev-box.md
+                - name: POS でカスタム通知を表示する
+                  href: dev-itpro/extend-pos-notification.md
+                - name: コード署名証明書を使用した MPOS の署名
+                  href: dev-itpro/pos-app-signing-certificate.md
+            - name: Commerce Runtime
+              items:
+                - name: ロイヤルティの拡張機能
+                  href: dev-itpro/retail-sdk/loyalty-extension-sample.md
+    - name: Finance and Operations アプリの開発と管理
+      href: ../fin-ops-core/dev-itpro/index.md
+    - name: Dynamics 365 Finance
+      href: ../finance/index.md
+    - name: Dynamics 365 Supply Chain Management
+      href: ../supply-chain/index.md

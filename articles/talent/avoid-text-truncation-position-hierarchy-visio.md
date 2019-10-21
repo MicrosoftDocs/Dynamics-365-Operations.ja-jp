@@ -1,6 +1,6 @@
 ---
 title: 職位階層および Visio へのエクスポートでのテキストの切り捨てを回避します。
-description: このトピックでは、顧客が Microsoft Dynamics 365 for Talent で職位階層を表示したときに、個人名と職位の名前が切り捨てられる問題を解決する方法について説明します。 テキストの切り捨ては、スクリーン ショットを取ったり、階層を印刷するのを難しくする可能性があります。
+description: このトピックでは、顧客が Microsoft Dynamics 365 Talent で職位階層を表示したときに、個人名と職位の名前が切り捨てられる問題を解決する方法について説明します。 テキストの切り捨ては、スクリーン ショットを取ったり、階層を印刷するのを難しくする可能性があります。
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 07a972bc1c6dd4076932248edb314992cb7297e5
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: e151818f29ac37ff449daaf1dc02e44b8fb317c3
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741824"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008503"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>職位階層および Visio へのエクスポートでのテキストの切り捨てを回避します。
 
@@ -30,7 +30,7 @@ ms.locfileid: "1741824"
 
 **払出**
 
-顧客が Microsoft Dynamics 365 for Talent で職位階層を表示するとき、個人名と職位の名前は切り捨てられます。 したがって、スクリーン ショットを取ったり、階層を印刷および配布することが難しくなります。
+顧客が Microsoft Dynamics 365 Talent で職位階層を表示するとき、個人名と職位の名前は切り捨てられます。 したがって、スクリーン ショットを取ったり、階層を印刷および配布することが難しくなります。
 
 ![職位階層](media/position-h.png)
 

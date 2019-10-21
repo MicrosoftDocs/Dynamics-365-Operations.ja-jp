@@ -1,6 +1,6 @@
 ---
 title: 合理化された従業員の入力とナビゲーション
-description: Dynamics 365 for Talent の作業者データの入力が拡張され、過去、有効、または未来のすべての従業員に対して簡単な入力ができるようになりました。 簡易/連結ナビゲーション モデルが更新され、関連情報をすばやく検索し、必要な更新の表示と実行を行うことができるようになりました。
+description: Dynamics 365 Talent の作業者データの入力が拡張され、過去、有効、または未来のすべての従業員に対して簡単な入力ができるようになりました。 簡易/連結ナビゲーション モデルが更新され、関連情報をすばやく検索し、必要な更新の表示と実行を行うことができるようになりました。
 author: andreabichsel
 manager: AnnBe
 ms.date: 08/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: be0253ffc4396f36050ef02c51a20d378e44473d
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918209"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009425"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>合理化された従業員の入力とナビゲーション
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 for Talent により、従業員および雇用データを効率的に入力できます。 過去、有効、および未来の従業員および契約社員の作業履歴情報をすばやく更新できます。
+Dynamics 365 Talent により、従業員および雇用データを効率的に入力できます。 過去、有効、および未来の従業員および契約社員の作業履歴情報をすばやく更新できます。
 
 また、簡易ナビゲーション エクスペリエンスを有効にして、関連情報をすばやく検索し、必要な変更を行うこともできます。 この機能は、サンドボックス環境で使用可能になりました。 この機能を有効にするには、**システム管理 > リンク > 設定 > システム パラメーター > プレビュー機能**に移動します。 **拡張された作業者フォームおよびナビゲーション**を選択します。 これにより、これらの変更がすべてのユーザーに対して有効になります。 このオプションはいつでもオフにすることができます。
 

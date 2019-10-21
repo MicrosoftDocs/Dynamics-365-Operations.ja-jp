@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 14 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent - Core HR (2018 年 12 月 14 日) の新機能および変更された機能
+description: このトピックでは、Microsoft Dynamics 365 Talent - Core HR の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/14/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c2d209cac52665053b664a93bfb6c35e171b0948
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 36eb5722a7bd98c404fb6c8f5bde407ab38ec28d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518441"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024025"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 14 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-december-14-2018"></a>Dynamics 365 Talent: Core HR (2018 年 12 月 14 日) の新機能および変更された機能
 
 [!include [banner](includes/banner.md)]
 
@@ -94,9 +94,9 @@ ms.locfileid: "1518441"
 
 ## <a name="known-issue"></a>既知の問題
 
-### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Finance and Operations との統合のマッピング エラー
+### <a name="mapping-errors-in-the-integration-with-finance"></a>Finance との統合のマッピング エラー
 
-次の問題は、Dynamics 365 for Finance and Operations を統合するための現在のテンプレートで識別されています。 新しいテンプレートは、間もなく公開され、作成されたすべての新しい統合プロジェクトに適用されます。 既存の統合プロジェクトのために、タスク マッピングを更新できます。 更新されたマッピングについては、次の表を参照してください。 
+次の問題は、Dynamics 365 Finance を統合するための現在のテンプレートで識別されています。 新しいテンプレートは、間もなく公開され、作成されたすべての新しい統合プロジェクトに適用されます。 既存の統合プロジェクトのために、タスク マッピングを更新できます。 更新されたマッピングについては、次の表を参照してください。 
 
 >[!NOTE]
 > ジョブ職位から職位親ジョブ割り当てタスクはデータが統合されていません。 この問題は現在調査中です。 現在のマッピングに回避策はありません。 

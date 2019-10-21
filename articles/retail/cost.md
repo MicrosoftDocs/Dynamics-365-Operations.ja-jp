@@ -1,6 +1,6 @@
 ---
 title: 配分済み注文の管理 (DOM) の原価コンフィギュレーション
-description: このトピックでは、Microsoft Dynamics 365 for Retail の配分済み注文の管理 (DOM) 機能の原価コンフィギュレーションについて説明します。
+description: このトピックでは、Dynamics 365 Retail の配分済み注文の管理 (DOM) 機能の原価コンフィギュレーションについて説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 12/05/2018
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80e7a033467c3d94d55f06daa05f99bd27e19a29
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: b5e3e1997f3d3b61b7b3c7486f5531e386293537
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606782"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019442"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>配分済み注文の管理 (DOM) の原価コンフィギュレーション
 
@@ -31,7 +31,7 @@ ms.locfileid: "1606782"
 
 組織は、注文のフルフィルメントに最適な場所を決定するために、複数の原価コンポーネントを考慮します。 これらの原価コンポーネントには、出荷コスト、取扱コスト、梱包コストなどがあります。 これらの原価の組み合わせを計算して、フルフィルメント場所を決定します。
 
-Microsoft Dynamics 365 for Retail の配分済み注文の管理 (DOM) の最初のイテレーションで、注文をフルフィルメント場所に割り当てることが最適化されている場合、このイテレーションでは距離のみが考慮されます。 距離は原価に関連付けることができますが、原価と同じではありません。 たとえば、翌日配送方式では、同じ距離に対して、3 日間配送または 7 日間配送の場合より費用が多くかかります。
+Dynamics 365 Retail の配分済み注文の管理 (DOM) の最初のイテレーションで、注文をフルフィルメント場所に割り当てることが最適化されている場合、このイテレーションでは距離のみが考慮されます。 距離は原価に関連付けることができますが、原価と同じではありません。 たとえば、翌日配送方式では、同じ距離に対して、3 日間配送または 7 日間配送の場合より費用が多くかかります。
 
 原価コンフィギュレーション機能を使用すると、小売業者は、注文明細行のフルフィルメントに最適な場所を決定するために計算および考慮する追加の原価コンポーネントを定義および構成することができます。
 

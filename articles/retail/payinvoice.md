@@ -1,6 +1,6 @@
 ---
 title: 請求書の支払シナリオを設定する
-description: このトピックでは、請求書の支払に関するさまざまなシナリオに対応できるように、Dynamics 365 for Retail を構成する方法について説明します。
+description: このトピックでは、請求書の支払に関するさまざまなシナリオに対応できるように、Dynamics 365 Retail を構成する方法について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 11/14/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb9101843396e489e4d7b63879e9df35e52fe64
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564973"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018016"
 ---
 # <a name="set-up-pay-invoice-scenarios"></a>請求書の支払シナリオを設定する
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 for Retail の請求書の支払機能は拡張され、以下の機能がサポートされています。
+Dynamics 365 Retail の請求書の支払機能は拡張され、以下の機能がサポートされています。
 
 - 1 回の POS トランザクションでの複数の販売注文の請求書の支払。
 - 自由書式の請求書、プロジェクト ベースの請求書、訂正表を含む、さまざまな種類の顧客請求書の支払。

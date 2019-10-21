@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent (2019 年 4 月 16 日) の新機能および変更された機能
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent (2019 年 4 月 16 日) の新機能および変更された機能
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/16/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: adf8f470b00a565c62a27f857d490c6c000b21d8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 0781a479ebf37334d8eba18ea6d69d7cfb9db9ea
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518439"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024140"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-16-2019"></a>Dynamics 365 for Talent (2019 年 4 月 16 日) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Dynamics 365 Talent (2019 年 4 月 16 日) の新機能および変更された機能
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 
@@ -47,11 +47,11 @@ ms.locfileid: "1518439"
 
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Common Data Service の報酬地域、報酬レベル、福利厚生オプションおよびスキル タイプのエンティティは、顧客フィールドのサポートを含むように更新されました。
 
-このリリースでは、これらの Common Data Service のエンティティが、Talent (Core HR) によって追加されたカスタム フィールドを含める機能を持つように更新されました。
+このリリースでは、これらの Common Data Service のエンティティが、Talent: Core HR によって追加されたカスタム フィールドを含める機能を持つように更新されました。
 
 ### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>新しい Common Data Service エンティティは、報酬給付ルール、変動報酬プラン、変動報酬に対してサポートされます。
 
-このリリースでは、報酬給付ルール、変動報酬プラン、および変動報酬エンティティが Common Data Service に追加されました。 これらのエンティティは、Talent (Core HR) によって追加されたカスタム フィールドもサポートします。
+このリリースでは、報酬給付ルール、変動報酬プラン、および変動報酬エンティティが Common Data Service に追加されました。 これらのエンティティは、Talent: Core HR によって追加されたカスタム フィールドもサポートします。
 
 ### <a name="powerbi-refresh-issues-314342"></a>PowerBI の更新に関する問題 (314342)
 
@@ -95,6 +95,6 @@ ms.locfileid: "1518439"
 
 ### <a name="email-support-for-alerts"></a>アラートの電子メールサポート
 
-プラットフォーム更新プログラム 25 を使用すると、あるイベントによってトリガーされたときに、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。
+Finance and Operations のプラットフォーム更新プログラム 25 では、あるイベントによってトリガーされた時、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。
 
 

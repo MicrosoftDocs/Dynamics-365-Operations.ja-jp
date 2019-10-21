@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-01-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 73b31697749c3f14f806803bc30fb08e2d22ced8
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 23762c16c057ed5f7fb09b34c16c8064f5a238f5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833209"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019312"
 ---
 # <a name="payment-application-data-security-standards-pa-dss-certification"></a>支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
 
@@ -48,18 +48,18 @@ ms.locfileid: "1833209"
 | ----------------------------|---------------------- | ----------- |
 | Microsoft Dynamics 365 for Operations | [1611](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/installation-setup-guides/PADSSImplementationguide365Operations) | 7.1  |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [2017 年 7 月 *](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide)  | 7.2 |
-| Microsoft Dynamics 365 for Retail | [2017 年 7 月](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide) | 7.2  |
+| Microsoft Dynamics 365 Retail | [2017 年 7 月](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide) | 7.2  |
 
-\*このリンクの PDF ドキュメントは、Dynamics 365 for Retail (記載されている通り) *および* Dynamics 365 for Finance and Operations、Enterprise edition の両方に適用されます。
+\*このリンクの PDF ドキュメントは、Dynamics 365 Retail (記載されている通り) *および* Dynamics 365 for Finance and Operations、Enterprise edition の両方に適用されます。
 
 ## <a name="certification-in-progress"></a>進行中の証明書
 
 | リリース  | バージョン | ビルド |
 | ---------------------------|----------------------- | ----------- |
-| Microsoft Dynamics 365 for Finance and Operations、Enterprise edition | [7.3](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide73) | 7.3 |
-| Microsoft Dynamics 365 for Retail | [7.3](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide73) | 7.3 |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [7.3](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide73) | 7.3 |
+| Microsoft Dynamics 365 Retail | [7.3](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide73) | 7.3 |
 | Microsoft Dynamics 365 for Finance and Operations | [8.0](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/installation-setup-guides/msd365PADSSImplGuide8) | 8.0 |
-| Microsoft Dynamics 365 for Retail | [8.0](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/installation-setup-guides/msd365PADSSImplGuide8)  | 8.0 |
-| Microsoft Dynamics 365 for Finance and Operations、Enterprise edition | 8.1 | 8.1 |
-| Microsoft Dynamics 365 for Retail | 8.1  | 8.1 |
+| Microsoft Dynamics 365 Retail | [8.0](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/installation-setup-guides/msd365PADSSImplGuide8)  | 8.0 |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 8.1 | 8.1 |
+| Microsoft Dynamics 365 Retail | 8.1  | 8.1 |
 

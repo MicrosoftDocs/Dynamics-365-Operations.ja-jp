@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8138b6144cc6ba09834f2bfb61cc7334767307d6
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 45d3d962958d0487c9e65910a2dce24097a83773
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916556"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017761"
 ---
 # <a name="base-price-and-trade-agreements"></a>基準価格と売買契約
 
@@ -56,7 +56,7 @@ ms.locfileid: "1916556"
 24. **売買契約**をクリックします。
 25. **新規** をクリックします。
 26. **名前**フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-27. 一覧で、[小売] を選択します。 デモ データで、「小売」仕訳帳名の既定のリレーションは「価格 (販売) 」です。 これは、作成されたすべての新しい明細行が、販売価格の売買契約の既定値であることを意味します。  
+27. 一覧で、**Retail** を選択します。 デモ データで、**Retail** 仕訳帳名の既定のリレーションは**価格 (販売)** です。 これは、作成されたすべての新しい明細行が、販売価格の売買契約の既定値であることを意味します。  
 28. **アクション ウィンドウ**で、**明細行**をクリックします。
 29. **アカウント コード** フィールドで 'グループ' を選択します。
 30. **勘定の選択**フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。

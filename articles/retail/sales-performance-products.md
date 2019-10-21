@@ -1,6 +1,6 @@
 ---
 title: 製品別の売上実績の評価
-description: Microsoft Dynamics 365 for Retail を使用して、上位 10 製品の収益性を調査できます。
+description: Dynamics 365 Retail を使用して、上位 10 製品の収益性を調査できます。
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7796aa830c99bd0fd5784ff95e509767a3b55b44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546389"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024962"
 ---
 # <a name="assess-sales-performance-by-product"></a>製品別の売上実績の評価
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail を使用して、上位 10 製品の収益性を調査できます。
+Dynamics 365 Retail を使用して、上位 10 製品の収益性を調査できます。
 
-Dynamics 365 for Retail の一環として、ユーザーは次の基準の一つに基づいて、組織階層のさまざまなレベルで上位製品 (10 ~ 100) の収益性を調査できます:
+Retail の一環として、ユーザーは次の基準の一つに基づいて、組織階層のさまざまなレベルで上位製品 (10 ~ 100) の収益性を調査できます。
 
 - 売上金額
 - 件数

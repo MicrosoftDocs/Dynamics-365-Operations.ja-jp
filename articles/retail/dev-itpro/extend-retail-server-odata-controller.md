@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f01bec33a206af80983cc27fef2e8ea23443a2cc
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: eed7a7d9fb24a9dd9625362f1c5eb95250f82c8d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833069"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023466"
 ---
 # <a name="extend-a-retail-server-odata-controller"></a>Retail Server OData コントローラーの拡張
 
@@ -30,7 +30,7 @@ ms.locfileid: "1833069"
 
 このトピックでは、CustomersController クラスを拡張するコードを説明します。
 
-コントローラーは、commerce エンティティ タイプの作成、読み取り、更新、および削除 (CRUD) の動作とアクションをコントロールする commerce エンティティのマッピングです。 各コマース エンティティには、対応するコントローラーが必要です。 Microsoft Dynamics 365 for Retail に含まれるコントローラーを拡張して、業務上の要件を満たすように新しい業務処理を追加することができます。 既存のコント ローラーを拡張するには、既存のコントローラー クラスを拡張する新しいクラスを定義する必要があります。 既存のコント ローラーを拡張する新しいコント ローラーを作成するときは、新しいコントローラーは拡張されるコントローラーで新しいメソッドを作成するか既存のメソッドをオーバーライドできます。 オーバーライドされていない拡張コントローラー内のすべてのメソッドは、引き続き同じように機能します。 この例では、**ExtendedCustomersController** クラスは **CustomersController** クラスを拡張し、**CustomersController**クラスは **Customers** エンティティ タイプのコントローラーです。  Retail サーバー Web.config ファイルの **extensionComposition** セクションを更新する必要があります。 詳細については、[Commerce Runtime ((CRT) および Retail サーバー拡張機能](commerce-runtime-extensibility.md)の **MPOS/クラウド POS から新しい Retail サーバー API を呼び出す方法** セクションを参照してください。 サンプル コードは、Retail ソフトウェアの開発キット (SDK) 内のこのトピックから見つけることができます。 
+コントローラーは、commerce エンティティ タイプの作成、読み取り、更新、および削除 (CRUD) の動作とアクションをコントロールする commerce エンティティのマッピングです。 各コマース エンティティには、対応するコントローラーが必要です。 Microsoft Dynamics 365 Retail に含まれるコントローラーを拡張して、業務上の要件を満たすように新しい業務処理を追加することができます。 既存のコント ローラーを拡張するには、既存のコントローラー クラスを拡張する新しいクラスを定義する必要があります。 既存のコント ローラーを拡張する新しいコント ローラーを作成するときは、新しいコントローラーは拡張されるコントローラーで新しいメソッドを作成するか既存のメソッドをオーバーライドできます。 オーバーライドされていない拡張コントローラー内のすべてのメソッドは、引き続き同じように機能します。 この例では、**ExtendedCustomersController** クラスは **CustomersController** クラスを拡張し、**CustomersController**クラスは **Customers** エンティティ タイプのコントローラーです。  Retail サーバー Web.config ファイルの **extensionComposition** セクションを更新する必要があります。 詳細については、[Commerce Runtime ((CRT) および Retail サーバー拡張機能](commerce-runtime-extensibility.md)の **MPOS/クラウド POS から新しい Retail サーバー API を呼び出す方法** セクションを参照してください。 サンプル コードは、Retail ソフトウェアの開発キット (SDK) 内のこのトピックから見つけることができます。 
 
 ```csharp
 using System.Web.Http;

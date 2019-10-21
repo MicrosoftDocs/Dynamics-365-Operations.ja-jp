@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7024104dfc76a33735199ad0871fe7ce29f8e011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570391"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248936"
 ---
 # <a name="purchase-agreements"></a>購買契約
 
@@ -78,7 +78,7 @@ ms.locfileid: "1570391"
 発注書を作成すると、購買契約書を適用できます。 支払条件、配送条件、および配送先住所などの契約条件の情報は発注書ヘッダーにコピーされます。 契約の対象となる製品またはカテゴリの明細行が発注書に 1 つ以上含まれている場合は、購買契約書の価格と割引はその明細行に使用されます。 注文明細行の金額または数量は購買契約書の確約の履行に使用されます。 同一の発注書に、購買契約書に関連しない明細行と購買契約書の確約がある明細行の両方を含めることができます。  
 
 発注書を再作成しているときにのみ購買契約書を選択できます。 発注書が作成された後に購買契約書を選択できません。  
-発注書が間接的に作成される場合には、Finance and Operations が適切な購買契約書を自動的に検索するかどうかを制御できます。 たとえば、自動的に計画発注書を確定したり、販売注文に基づいて発注書を作成したりするときに、この制御を行う場合があります。
+発注書が間接的に作成される場合には、Supply Chain Management が適切な購買契約書を自動的に検索するかどうかを制御できます。 たとえば、自動的に計画発注書を確定したり、販売注文に基づいて発注書を作成したりするときに、この制御を行う場合があります。
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>購買契約書と会社間取引
 会社間取引関係は、異なる法人の仕入先勘定と顧客勘定の間で作成できます。 関係者の 1 つに販売注文または発注書が作成されると、会社間注文チェーンが作成されます。 注文チェーンでは、販売注文と発注書が適切な法人で作成されます。  

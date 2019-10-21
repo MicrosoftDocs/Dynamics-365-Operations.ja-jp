@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent の新機能または変更された機能 (2019 年 6 月 4 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent の新機能または変更された機能 (2019 年 6 月 4 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/04/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e19e5d3f1cb2305e5a4153de3e4d0e8f4c7d31ac
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 32b168eca210b1371db129c05f7035237eb35c38
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856332"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008987"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-4-2019"></a>Dynamics 365 for Talent の新機能または変更された機能 (2019 年 6 月 4 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-4-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 6 月 4 日)
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 
-今回のリリースには、Dynamics 365 for Talent: Attract のマイナーなバグ修正が含まれています。
+今回のリリースには、Dynamics 365 Talent: Attract のマイナーなバグ修正が含まれています。
 
 ## <a name="coming-soon-in-attract"></a>Attract で間もなく公開
 
@@ -43,7 +43,7 @@ ms.locfileid: "1856332"
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 
-今回のリリースには、Dynamics 365 for Talent: Onboard のマイナーなバグ修正が含まれています。
+今回のリリースには、Dynamics 365 Talent: Onboard のマイナーなバグ修正が含まれています。
 
 ## <a name="changes-in-core-hr"></a>Core HR の変更
 
@@ -67,7 +67,7 @@ ms.locfileid: "1856332"
 
 ### <a name="deleting-a-record-from-talent-doesnt-remove-the-record-from-common-data-service"></a>Talent からレコードを削除しても、Common Data Service からは削除されません。
 
-Talent Core HR から削除されたレコードは、Common Data Service からも削除されるようになりました。
+Talent: Core HR から削除されたレコードは、Common Data Service からも削除されるようになりました。
 
 ### <a name="variable-compensation-plan-valid-fromto-dates-arent-being-honored"></a>変動報酬プランの有効期限の開始日と終了日は反映されません。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85afddb34f29e13e17f2b93bb2633183a78e31f7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 462d35ebf1015ace032c523a4efe92bc7594ba3c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559811"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026961"
 ---
 # <a name="mobile-bar-code-support"></a>モバイル バー コードのサポート
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559811"
 Android はオープン ソース プロジェクトであるため、ウェアハウス バーコード スキャナー用のハードウェアを製造するすべてのメーカーは、Android オペレーティング システムを実行するためのデバイスを構築できます。 デバイスは、Android 実行環境用に作成されたアプリを実行できるのであれば、Android 互換のデバイスのみとなります。
 ただし、ハードウェア ベンダーは、ハードウェア上で動作する Android バージョンのオーバーレイを変更して作成することができます。 Microsoft は、Android 用モバイル バーコード スキャニング アプリが、メーカーのバーコード スキャニング ハードウェアおよびその上で動作する Android バージョンと互換性があることを確認する責任は負いません。 
 
-Microsoft Dynamics 365 for Finance and Operations の倉庫管理アプリは、バーコード スキャン用の Android 搭載端末でテストされています。 これらのテストでは、市場で利用可能なデバイスのサンプルのみカバーしています。
+Dynamics 365 Supply Chain Management - Warehousing アプリは、バーコード スキャン用の Android 搭載端末でテストされています。 これらのテストでは、市場で利用可能なデバイスのサンプルのみカバーしています。
 
 顧客は購入するハードウェアを決定する前に、選択したハードウェアで倉庫モバイル スキャンのアプリケーションをテストすることをお勧めします。
 

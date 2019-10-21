@@ -1,6 +1,6 @@
 ---
 title: 店舗パフォーマンスの分析
-description: この記事では、アクセスしたり、参照したり、Microsoft Dynamics 365 for Retail データに基づいて、店舗パフォーマンスについての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。
+description: この記事では、アクセスしたり、参照したり、Dynamics 365 Retail データに基づいて、店舗パフォーマンスについての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c975c021b6db49d1e25fd036f4955c7223e438ea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b2ea6ad2e3d9589face06cd5f950973209c17d41
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569266"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017785"
 ---
 # <a name="analyze-store-performance"></a>店舗のパフォーマンスの分析
 
 [!include [banner](includes/banner.md)]
 
-この記事では、アクセスしたり、参照したり、Microsoft Dynamics 365 for Retail データに基づいて、店舗パフォーマンスについての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。
+この記事では、アクセスしたり、参照したり、Dynamics 365 Retail データに基づいて、店舗パフォーマンスについての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。
 
-Dynamics 365 for Retail の一部として、次の場所のいずれかから最初から用意されている**チャンネル概要**レポートを開くことにより、選択した期間における組織階層のさまざまなレベルでリアルタイムに店舗パフォーマンスを調査できます。
+Retail の一部として、次の場所のいずれかの最初から用意されている**チャンネル概要**レポートを開くことにより、選択した期間における組織階層のさまざまなレベルでリアルタイムに店舗パフォーマンスを調査できます。
 
 - **小売店舗管理** ワークスペース &gt; **小売** &gt; **チャンネル** &gt; **小売店舗管理** &gt; **レポート** &gt; **チャンネルの集計レポート**
 - **小売店舗の財務** ワークスペース &gt; **小売** &gt; **チャンネル** &gt; **小売店舗の財務** &gt; **レポート** &gt; **チャンネルの集計レポート**

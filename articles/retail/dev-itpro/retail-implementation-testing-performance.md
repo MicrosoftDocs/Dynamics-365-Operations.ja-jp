@@ -1,6 +1,6 @@
 ---
 title: テストおよびパフォーマンスの問題
-description: このトピックでは、Microsoft Dynamics 365 for Retail のテスティングおよびパフォーマンスの推奨事項について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Retail 実装プロジェクトのテスティングおよびパフォーマンスの推奨事項について説明します。
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: e98a82a8ff3725bf431b07be8170c287cdf6f076
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: e442d03b4555155173463b33c7f33f30ddfada6e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833125"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018078"
 ---
 # <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスに関する問題
 
@@ -53,12 +53,14 @@ Retail Modern POS/クラウド POS を使用する場合は、正しいユーザ
 - 追加のチャネル データベース拡張機能。 カスタム SQL が効率的で、正しいインデックスを使用していることを確認してください。
 - 同じカスタムまたは組み込みの CRT SQL クエリを複数回実行します。 この方法ではコストがかかりすぎる場合は、CRT 要求ハンドラーでキャッシュを適切に適用することができます。
 
-詳細については、「[IT プロおよび開発者向け Microsoft Dynamics 365 for Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)」を参照してください。
+詳細については、[IT プロおよび開発者向け Microsoft Dynamics 365 Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) トピックを参照してください。
 
 店舗のパフォーマンスを調査するときは、[小売チャンネル実績調査](https://dynamicsnotes.com/retail-channel-performance-investigations/)にある提案に従ってください。
 
 ### <a name="using-telemetry-data-to-find-performance-issues"></a>テレメトリ データを使用してパフォーマンスの問題を検索する
-Microsoft Dynamics 365 for Retail および Microsoft Dynamics 365 for Finance and Operations のパフォーマンスのトラブルシューティングを行う必要がある場合 (特に速度が低下する SQL クエリまたは SQL デッドロック)、Microsoft Dynamics Lifecycle Services (LCS) の環境診断ページでは、貴重な遠隔測定データが表示されます。 このデータを使用して、コード、構成、またはデザインの潜在的なパフォーマンスの問題を見つけることができます。 詳細については、[環境監視未加工ログの使用方法](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/)を参照してください。 その情報により、いくつかのバッチ処理またはフォームの読み込みが遅い理由が明らかになります。
+
+パフォーマンスのトラブルシューティングを行う必要がある場合 (特に速度が低下する SQL クエリまたは SQL デッドロック)、Microsoft Dynamics Lifecycle Services (LCS) の環境診断ページでは、貴重な遠隔測定データが表示されます。 このデータを使用して、コード、構成、またはデザインの潜在的なパフォーマンスの問題を見つけることができます。 詳細については、[環境監視未加工ログの使用方法](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/)を参照してください。 その情報により、いくつかのバッチ処理またはフォームの読み込みが遅い理由が明らかになります。
+
 
 ### <a name="performance-testing"></a>パフォーマンス テスト
 
@@ -66,15 +68,15 @@ Microsoft Dynamics 365 for Retail および Microsoft Dynamics 365 for Finance a
 
 ボトルネックが発生するいくつかの理由は以下の通りです。
 
-- Finance and Operations でのリソース集中型の計算は、明細書の転記、チャネル データ同期の計算変更など、大規模な製品品揃えを含む倉庫管理の操作、および MRP (Material Requirements Planning) の実行
+- 明細書の転記、チャネル データ同期の計算変更、大規模な製品品揃えを含む倉庫管理の操作、および MRP (Material Requirements Planning) の実行などのリソース集中型の計算
 - いくつかの Retail サーバー (クラウド内または Retail Store Scale Unit のいずれか) で実行する、複数の端末またはストア用の複雑な小売ビジネス ロジック
-- 統合されたサード パーティ システム (Finance and Operations または Retail サーバーのいずれかから統合)
+- 統合されたサード パーティ システム (Retail または Retail サーバーのいずれかから統合)
 - Retail サーバーから頻繁に呼び出されるリアル タイム トランザクション サービス。
 - 非標準または拡張された標準機能 (たとえば、カスタム WHS コードを使用する拡張明細書転記)
 
 一般的に、既定および非リアルタイム POS 操作は、専用のリソース (POS がインストールまたは実行されているコンピューター) を持っているため、ボトルネックとはみなされません。 パフォーマンスの問題は、通常、ビジネス ロジックまたは Retail サーバーへの「Chatty」呼び出しによって発生します。
 
-パフォーマンス テストはこのトピックで前述した情報を使用して、既にいくつかの初期最適化を完了した後に行う方が理想的です。 単一のユーザーまたはプロセスでシステムが正常に動作しない場合、同時ユーザーまたはプロセスでは正常に動作しません。 詳細については、[Retail Channel Performance](https://dynamicsnotes.com/retail-channel-performance-investigations/) を参照してください。 さらに、Finance and Operations ドキュメントで、「PerfSdk」または「Trace parser」を検索します。
+パフォーマンス テストはこのトピックで前述した情報を使用して、既にいくつかの初期最適化を完了した後に行う方が理想的です。 単一のユーザーまたはプロセスでシステムが正常に動作しない場合、同時ユーザーまたはプロセスでは正常に動作しません。 詳細については、[Retail Channel Performance](https://dynamicsnotes.com/retail-channel-performance-investigations/) を参照してください。 さらに、Finance ドキュメントで、「PerfSdk」または「Trace parser」を検索します。
 
 すべてのプロジェクトは異なっているため、実行する必要のある正確なパフォーマンス テストについての一般的な回答は困難です。 たとえば、トランザクションの販売明細行が少ない (すべての店舗で 1 日あたり 10 万未満) 場合、および明細書転記にカスタム拡張コードが追加されていない場合は、転記にパフォーマンス テストを行う必要はありません。 ただし、販売明細行が大幅に高い場合、または主要なカスタム変更が加えられた場合は、パフォーマンス テストを転記することをお勧めします。
 

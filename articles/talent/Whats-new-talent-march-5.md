@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent の新機能および変更された機能 (2019 年 3 月 5 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent の新機能および変更された機能 (2019 年 3 月 5 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/05/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: c7ee8f4cf14197d6bd4549741058fc5fe95ae55d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741893"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026673"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Dynamics 365 for Talent の新機能および変更された機能 (2019 年 3 月 5 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 3 月 5 日)
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、 Talent の新機能または変更された機能について説明します
+このトピックでは、 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 
@@ -78,5 +78,5 @@ Common Data Service へのアップグレードの期限が近づいています
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>高度な報酬セキュリティ (固定および変動)
 多くの組織で、報酬および福利厚生のマネージャーは、経営幹部または地域の従業員のレコードなど、特定の報酬レコードにのみアクセスできます。 この変更により、組織内のさまざまな従業員数の報酬プランを管理および維持できます。 固定および変動プランにはセキュリティ ロールを割り当てることができます。これは、プランへのアクセス権とプランに関連する従業員データ (給与または特別償却レコードなど) を決定します。 与えられたアクセス権を持つロールのみが、それらの従業員の報酬を処理できます。
 
-###  <a name="platform-update-24"></a>プラットフォーム update 24
-プラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。
+###  <a name="platform-update-24-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 24
+Finance and Operations のプラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。

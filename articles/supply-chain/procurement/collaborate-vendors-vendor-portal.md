@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07fbc5fea1fd44769a29bcc40297ffd02812a1e5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555159"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248983"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>仕入先ポータルを使用した仕入先とのコラボレーション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、購買担当者が仕入先ポータルを使用して、発注書の確認プロセス中に外部仕入先と連携して作業する方法について説明します。 この情報は、2016 年 2 月 &amp; 2016 年 5 月バージョン Dynamics AX にのみ適用されます。
+このトピックでは、購買担当者が仕入先ポータルを使用して、発注書の確認プロセス中に外部仕入先と連携して作業する方法について説明します。 この情報は、2016 年 2 月および 2016 年 5 月バージョン Dynamics AX にのみ適用されます。
 
-このトピックの情報は、2016 年 2 月および 2016 年 5 月バージョンの Dynamics AX にのみ適用されます。 仕入先のポータルの機能は、Dynamics 365 for Operations バージョン 1611 で拡張された仕入先コラボレーション機能に変わりました。 新しい仕入先コラボレーション機能の詳細については、「[仕入先コラボレーションでの外部仕入先との連携](vendor-collaboration-work-external-vendors.md)」を参照してください。  
+このトピックの情報は、2016 年 2 月および 2016 年 5 月バージョンの Dynamics AX にのみ適用されます。 新しい仕入先コラボレーション機能の詳細については、「[仕入先コラボレーションでの外部仕入先との連携](vendor-collaboration-work-external-vendors.md)」を参照してください。  
 
 仕入先ポータルは、発注書 (PO) の情報を交換するための Microsoft Dynamics AX の電子データ交換 (EDI) の統合がない仕入先向けです。 ポータルでは、購買担当者は発注書を仕入先に送信でき、Dynamics AX から、確認または拒否の応答を直接受け取ることができます。  
 

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2019 年 1 月 23 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent - Core HR の新機能および変更された機能 (2019 年 1 月 23 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent - Core HR の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 01/23/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4e492095d5269ec81c0c22145b7af356937c256b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: f1983d5a58fb2e6b1984727e1d7b44803b94cdce
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742519"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023979"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-january-23-2019"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2019 年 1 月 23 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-january-23-2019"></a>Dynamics 365 Talent: Core HR (2019 年 1 月 23 日) の新機能および変更された機能
 
 [!include [banner](includes/banner.md)]
 
@@ -53,5 +53,5 @@ ms.locfileid: "1742519"
 ### <a name="probation-period-and-calendar-are-not-displayed-for-future-hired-employees"></a>猶予期間およびカレンダーは、将来採用される従業員には表示されません。
 この変更により、**猶予期間**および**カレンダー** フィールドが**変更の管理**ページに追加され、将来および過去の従業員のデータデータ入力が可能になりました。
 
-### <a name="platform-update-23"></a>プラットフォーム update 23
-マイナーなバグ修正は、プラットフォーム更新プログラム 23 の一部として含まれています。 詳細については、[新機能および変更された機能 Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (1月2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23) を参照してください。 
+### <a name="platform-update-23-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 23
+マイナーなバグ修正は、Finance and Operations のプラットフォーム更新プログラム 23 の一部として含まれています。 詳細については、[新機能および変更された機能 Dynamics 365 Finance and Operations プラットフォーム更新プログラム 23 (1月2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23) を参照してください。 

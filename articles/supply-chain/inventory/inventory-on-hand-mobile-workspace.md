@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 68b285ba78a9bd654e7bfcfe8d4c6b0207346eab
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 05881b6e6e501ff3ac5a622d99fd1aaa311727a1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845597"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249520"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>手持ち在庫モバイル ワークスペース
 
@@ -31,7 +31,7 @@ ms.locfileid: "1845597"
 
 このトピックでは、**手持ち在庫** モバイル ワークスペースに関する情報を提供します。 このワークスペースは、予約済みの在庫や利用可能な在庫に関するモバイル情報を、いつでも、どこでも取得するのに役立ちます。
 
-このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations Mobile アプリで使用するためのものです。
+このモバイル ワークスペースは、Finance and Operations モバイル アプリで使用するためのものです。
 
 ## <a name="overview"></a>概要
 通常、企業は毎日複数の出荷と在庫の複数の領収書を持っています。 これらの動きは、常に手持ちの在庫ステータスを変更します。 **手持ち在庫** モバイル ワークスペースにより、社内の手持ちの在庫状態を把握し、選択したモバイル デバイス上で在庫データに関する最新の情報を取得できます。 倉庫、購買、営業、製造または管理のいずれで作業していようがそれ以外の役割を担っていようが関係なく、いつでもどこでも手持ちの在庫データにアクセスすることができます。 
@@ -58,11 +58,11 @@ ms.locfileid: "1845597"
 ## <a name="prerequisites"></a>必要条件
 組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations を使用する場合の前提条件 
-Microsoft Dynamics 365 for Finance and Operations を組織に配置している場合、システム管理者は**手持在庫**モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+### <a name="prerequisites-if-you-use-finance-and-operations"></a>Finance and Operations を使用する場合の前提条件 
+Supply Chain Management が組織に配置されている場合、システム管理者は**手持在庫**モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を使用する場合の前提条件
-Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
+### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a>プラットフォーム 更新プログラム 3 以降を使用する場合の前提条件 
+プラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
 
 <table>
 <thead>
@@ -96,7 +96,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 
 ## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
 
-Dynamics 365 for Unified Operations モバイル アプリをダウンロードしてインストールします。
+Finance and Operations モバイル アプリをダウンロードしてインストールします。
 
 -   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)

@@ -18,19 +18,19 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: cf81823de46da9a834f0214896b9e634989cac0e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9f85b1d1f0b1c2378dd3f278640d984c31923c35
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569779"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017877"
 ---
 # <a name="import-vendor-catalogs"></a>仕入先カタログのインポート
 [!include[banner](../includes/banner.md)]
 
 ## <a name="vendor-catalogs-import"></a>仕入先カタログのインポート
 
-Microsoft Dynamics 365 for Finance and Operations では、購買担当者が、会社の従業員が内部で使用する品目およびサービスを注文する際に使用できるカタログの作成および管理を行えます。 調達カタログを作成するには、製品カタログ データをインポートするか、製品カタログ データを手動で製品マスターに追加することにより、従業員が使用できるようになる品目とサービスを追加できます。 
+Dynamics 365 Supply Chain Management では、購買担当者が、会社の従業員が内部で使用する品目およびサービスを注文する際に使用できるカタログの作成および管理を行えます。 調達カタログを作成するには、製品カタログ データをインポートするか、製品カタログ データを手動で製品マスターに追加することにより、従業員が使用できるようになる品目とサービスを追加できます。 
 
 Microsoft Dynamics 365 クライアントから、仕入先より送信されたカタログ データをアップロードすることができます。
 
@@ -52,7 +52,7 @@ Microsoft Dynamics 365 クライアントから、仕入先より送信された
 
 6.  CMR ファイルをアップロードします。
 
-7.  仕入先カタログで製品を確認、承認または却下します。 製品は、Dynamics 365 for Finance and Operations で調達カテゴリに自動的にマップされます。 
+7.  仕入先カタログで製品を確認、承認または却下します。 製品は、調達カテゴリに自動的にマップされます。 
     
 承認済製品は、製品マスターに追加され、選択した法人にリリースされます。 承認済製品のみ調達カタログに追加できます。
 

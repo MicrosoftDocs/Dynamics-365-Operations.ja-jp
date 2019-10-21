@@ -1,6 +1,6 @@
 ---
 title: 倉庫作業の繰延処理
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で倉庫作業の繰延処理を使用可能にする機能について説明します。
+description: このトピックでは、Dynamics 365 Supply Chain Management で倉庫作業の繰延処理を使用可能にする機能について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 06/17/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4905084f9bc28e55c307921280733c6acb80db86
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863589"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026929"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>倉庫作業の繰延処理
 
@@ -29,7 +29,8 @@ ms.locfileid: "1863589"
 
 [!include [banner](../includes/pivate-preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations で倉庫作業の繰延処理を使用可能にする機能について説明します。
+このトピックでは、Dynamics 365 Supply Chain Management で倉庫作業の繰延処理を使用可能にする機能について説明します。
+
 
 繰延処理機能では、プット工程がバックグラウンドで処理されている間でも、倉庫作業者は他の作業を続行できます。 繰延処理では、多くの作業明細行を処理する必要があり、作業者がその作業を非同期に処理できるようにする場合に便利です。 また、サーバーの処理時間がアドホックまたは予定外で増加する場合、さらに増加した処理時間がユーザーの生産性に影響を与える可能性がある場合にも役立ちます。
 

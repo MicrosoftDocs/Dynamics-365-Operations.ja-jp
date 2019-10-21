@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent - Attract の機能
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract が新たな人材の採用プロセスを管理するために提供する機能について説明します。
+title: Microsoft Dynamics 365 Talent - Attract の機能
+description: このトピックでは、Microsoft Dynamics 365 Talent - Attract が新たな人材の採用プロセスを管理するために提供する機能について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/30/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e22cddcd1845cc06f5948bcc062d044995c1cbd
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: dd16ad19fc6b64912dda77d1bc479ef642418594
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739613"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008527"
 ---
 # <a name="attract-features-and-capabilities"></a>Attract の機能
 

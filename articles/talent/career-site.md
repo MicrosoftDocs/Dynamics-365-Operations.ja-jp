@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent - Attract でのキャリア サイトの設定
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract の候補者向けキャリア サイト機能の概要について説明します。
+title: Microsoft Dynamics 365 Talent - Attract でのキャリア サイトの設定
+description: このトピックでは、Microsoft Dynamics 365 Talent - Attract の候補者向けキャリア サイト機能の概要について説明します。
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ec5fe31c6547b008b29e656729c35863d90bffc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739774"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026282"
 ---
 # <a name="set-up-your-career-site"></a>キャリア サイトの設定
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Talent: Attract の候補者向けキャリア サイト機能の概要について説明します。 さらに、この機能の設定方法についても説明します。
+このトピックでは、Microsoft Dynamics 365 Talent: Attract の候補者向けキャリア サイト機能の概要について説明します。 さらに、この機能の設定方法についても説明します。
 
 Attract ではテナントの環境ごとに 1 つのキャリア サイトが提供されます。 たとえば、組織に開発環境およびテスト環境がある場合、1 つのキャリア サイトが開発環境に対してプロビジョニングされ、別のキャリア サイトがテスト環境に対してプロビジョニングされます。 各キャリア サイトは完全に独立しており、独自の認証メカニズムがあります。 ジョブおよび候補者プロファイルは、キャリア サイト間では共有されません。
 
@@ -62,7 +62,7 @@ Attract ではテナントの環境ごとに 1 つのキャリア サイトが�
 
 -   **キャリア サイトのホーム ページの URL** - キャリア サイトのホームページの URL を表示するには、管理者として Attract にサインインし、**設定**メニューで**管理センター**を選択してから、**キャリア サイトの管理** タブを選択します。
 
--   **個別の人材募集 応募 URL** - 初めて[外部の人材募集](Creating-jobs-Attract.md#postings) をする場合、Attract アプリケーションから**応募**リンクをコピーできます。 このリンクの URL は、次の形式になります: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+-   **個別の人材募集 応募 URL** - 初めて[外部の人材募集](Creating-jobs-Attract.md#postings) をする場合、Attract から**応募**リンクをコピーできます。 このリンクの URL は、次の形式になります: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
 -   **個別の人材募集 URL** - 人材募集の URL は、応募 URL のサブ文字列です。 ジョブ番号に至るまですべてから構成されています。 したがって、前の応募 URL に関しては、人材募集は [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e) です。
 

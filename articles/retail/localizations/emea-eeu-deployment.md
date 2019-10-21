@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: anmukh
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3803d51578e8f5301b851d1c8b1e12d0a1c3385f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ad9630684ccf2f25df0ef95415377c18be5fdf9f
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572038"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550472"
 ---
-# <a name="deployment-guidelines-for-cash-registers-for-czech-republic-hungary-and-poland"></a>チェコ共和国、ハンガリー、およびポーランドのキャッシュ レジスターの配置ガイドライン
+# <a name="deployment-guidelines-for-advance-invoice-report-printing-for-czech-republic-hungary-and-poland"></a>チェコ共和国、ハンガリー、およびポーランドの事前請求書レポート印刷の配置ガイドライン
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、チェコ共和国、ハンガリー、およびポーランドで Microsoft Dynamics 365 for Retail のローカライゼーションを有効にする方法を示します。 ローカライズは、小売コンポーネントのいくつかの拡張機能で構成されます。 これらの拡張機能は、販売時点管理 (POS) から**事前請求書**レポートを印刷できるようにします。 チェコ共和国、ハンガリー、およびポーランド Retail ローカライズの詳細については、次を参照してください。[東ヨーロッパの小売り業向け事前請求書](./emea-eeu-advance-invoices-for-retail.md)
+このトピックでは、チェコ共和国、ハンガリー、およびポーランドで Dynamics 365 Retail のローカライゼーションを有効にする方法を示します。 ローカライズは、小売コンポーネントのいくつかの拡張機能で構成されます。 これらの拡張機能は、販売時点管理 (POS) から**事前請求書**レポートを印刷できるようにします。 チェコ共和国、ハンガリー、およびポーランド Retail ローカライズの詳細については、次を参照してください。[東ヨーロッパの小売り業向け事前請求書](./emea-eeu-advance-invoices-for-retail.md)
 
 ローカライズは、小売ソフトウェア開発キット (SDK) の一部です。 リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 

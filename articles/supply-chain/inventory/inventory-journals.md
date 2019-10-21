@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7acf4e5397ee7276b0f881f4859267371266de0
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553441"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249543"
 ---
 # <a name="inventory-journals"></a>在庫仕訳帳
 
@@ -33,7 +33,7 @@ ms.locfileid: "1553441"
 
 このトピックでは、在庫仕訳帳を使用してさまざまなタイプの物理在庫トランザクションを転記する方法について説明します。
 
-Microsoft Dynamics 365 for Finance and Operations の在庫仕訳帳は、払出と入荷の転記、在庫移動、部品表 (BOM) の作成など、さまざまなタイプの現物在庫トランザクション転記に使用されます。 これらの在庫仕訳帳はすべて同様の方法で使用されますが、異なるタイプに分類されます。
+Supply Chain Management の在庫仕訳帳は、払出と入荷の転記、在庫移動、部品表 (BOM) の作成、現物在庫の調整など、さまざまなタイプの現物在庫トランザクション転記に使用されます。 これらの在庫仕訳帳はすべて同様の方法で使用されますが、異なるタイプに分類されます。
 
 ## <a name="types-of-inventory-journals"></a>在庫仕訳帳のタイプ
 次の在庫仕訳帳タイプを使用できます。
@@ -68,7 +68,7 @@ BOM を完了済と報告する場合、BOM 仕訳帳を作成できます。 BO
 
 ### <a name="item-arrival"></a>品目到着
 
-着荷仕訳帳を使用して、品目の入庫を登録することができます (たとえば、発注書から)。 着荷仕訳帳は、**着荷の概要**ページから着荷管理の一部として作成するか、**品目到着**ページから手動で仕訳入力を作成できます。 着荷仕訳帳名を有効にしてピッキング場所を確認する場合、Finance and Operations は受け取った品目の場所を検索し、スペースがある場合、受入品目の行先の場所を生成します。
+着荷仕訳帳を使用して、品目の入庫を登録することができます (たとえば、発注書から)。 着荷仕訳帳は、**着荷の概要**ページから着荷管理の一部として作成するか、**品目到着**ページから手動で仕訳入力を作成できます。 着荷仕訳帳名を有効にしてピッキング場所を確認する場合、Supply Chain Management は受け取った品目の場所を検索し、スペースがある場合、受入品目の行先の場所を生成します。
 
 ### <a name="production-input"></a>生産入力
 
@@ -103,7 +103,7 @@ BOM を完了済と報告する場合、BOM 仕訳帳を作成できます。 BO
 詳細については、「[データ エンティティ](../../dev-itpro/data-entities/data-entities.md)」を参照してください。
 
 > [!NOTE]
-> すべての在庫仕訳帳で OData が有効な訳ではないため、データを発行し、更新し、および Dynamics 365 for Finance and Operations に再インポートするための Excel データ コネクターを使用することはできません。 
+> すべての在庫仕訳帳が OData 対応ではないため、Excel データ コネクタを使用してデータを発行し、更新し、Supply Chain Management に再インポートすることはできません。 
 
 仕訳帳データ エンティティ間の別の違いは、ヘッダーと明細行のデータの両方を含む複合エンティティを使用する機能です。 現時点では、複合エンティティを以下のものに使用することができます。
 -   在庫調整仕訳帳

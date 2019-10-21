@@ -1,6 +1,6 @@
 ---
 title: Onboard の使用を開始する
-description: このトピックは、Microsoft Dynamics 365 for Talent - Onboard を使い始めるのに役立ちます。 Onboard は、新規採用者に研修プロセスをスムーズに進めるためのガイドを提供することで、良いスタートを切ることを手助けします。
+description: このトピックは、Microsoft Dynamics 365 Talent - Onboard を使い始めるのに役立ちます。 Onboard は、新規採用者に研修プロセスをスムーズに進めるためのガイドを提供することで、良いスタートを切ることを手助けします。
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 6526f320be7d18af92406149633b3e15d0be2291
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731216"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008131"
 ---
 # <a name="get-started-with-onboard"></a>Onboard の使用を開始する
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard を使用すると、新規採用者は仕事の効率性を高めつつ、新しい役割に帰属意識を覚えることができます。 効果的な研修プロセスは、新規採用者が新しい役割を理解するのに役立ちます。 また、新規採用者は成功に役立つ関係を確立する点で有利なスタートを切ることになります。
+Microsoft Dynamics 365 Talent: Onboard を使用すると、新規採用者は仕事の効率性を高めつつ、新しい役割に帰属意識を覚えることができます。 効果的な研修プロセスは、新規採用者が新しい役割を理解するのに役立ちます。 また、新規採用者は成功に役立つ関係を確立する点で有利なスタートを切ることになります。
 
 Onboard では、新規採用者を歓迎し、組織への参加を楽しみにさせるための研修用ガイドをすばやく作成できます。
 

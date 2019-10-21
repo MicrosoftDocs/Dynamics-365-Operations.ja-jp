@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d0644372944b4c9d472ff738258665544fccbad4
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cb55d7d00e5676fc5a1326d77889b4adb86c3ca6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742473"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248960"
 ---
 # <a name="manage-vendor-collaboration-users"></a>仕入先コラボレーション ユーザーの管理
 
@@ -31,7 +31,7 @@ ms.locfileid: "1742473"
 
 このトピックでは、新しい仕入先コラボレーション ユーザーのプロビジョニングの要求方法、および新しい仕入先コラボレーションの連絡先を追加する方法について説明します。 
 
-Microsoft Dynamics 365 for Finance and Operations の仕入先コラボレーション インターフェイスは、発注書、請求書、委託販売在庫に関する情報を外部仕入先に公開します。 **仕入先管理者 (外部)** セキュリティ ロールまたは同様の権限を持つ外部仕入先として作業する場合は、新しい仕入先コラボレーションの連絡先を作成して、新しいユーザーがプロビジョニングされるように要求できます。 調達担当者として作業する場合、これらのタスクを実行することもできます。 このトピックでは、このロールは Finance and Operations のインスタンスを所有する会社内で作業している調達担当者を指します。 外部仕入先である場合の、仕入先コラボレーションの使用方法の詳細については、「[顧客に対する仕入先](vendor-collaboration-work-customers-dynamics-365-operations.md)」を参照してください。  
+Dynamics 365 Supply Chain Management の仕入先コラボレーション インターフェイスは、発注書、請求書、委託販売在庫に関する情報を外部仕入先に公開します。 **仕入先管理者 (外部)** セキュリティ ロールまたは同様の権限を持つ外部仕入先として作業する場合は、新しい仕入先コラボレーションの連絡先を作成して、新しいユーザーがプロビジョニングされるように要求できます。 調達担当者として作業する場合、これらのタスクを実行することもできます。 このトピックでは、このロールは Supply Chain Management のインスタンスを所有する会社内で作業している調達担当者を指します。 外部仕入先である場合の、仕入先コラボレーションの使用方法の詳細については、「[顧客に対する仕入先](vendor-collaboration-work-customers-dynamics-365-operations.md)」を参照してください。  
 
 調達担当者である場合は、仕入先コラボレーションの使用方法の詳細について、「[外部仕入先との仕入先コラボレーション](vendor-collaboration-work-external-vendors.md)」を参照してください。
 
@@ -60,12 +60,12 @@ Microsoft Dynamics 365 for Finance and Operations の仕入先コラボレーシ
 新しいユーザーがプロビジョニングを要求する前に、そのユーザーは、1 つ以上の仕入先勘定として設定する必要があります。 新しい仕入先コラボレーションのユーザー要求の作成:
 
 1. **すべての連絡先** ページで、**ベンダー ユーザーのプロビジョニング** をクリックします。
-2. ユーザーの電子メール アドレスを入力します。 このアドレスは、Finance and Operations にログオンするユーザーによって使用されます。 電子メール アドレスが Microsoft Azure でテナントとして登録されているドメインに属する場合、プロビジョニング プロセスが正常に完了するためには、電子メール アドレスが既存の Azure Active Directory (AAD) のアカウントである必要があります。 電子メール アドレスが Microsoft Azure で登録されているドメインに属さない場合は、プロビジョニング プロセスの一部として AAD アカウントが作成され、新しいユーザーは招待メールを受信します。 @hotmail.com、@gmail.com、@comcast.net などのドメインを含む消費者向け電子メール アドレスは、Finance and Operations ユーザーを登録するためには使用できません。
+2. ユーザーの電子メール アドレスを入力します。 このアドレスは、ユーザーによって Supply Chain Management にログインするために使用されます。 電子メール アドレスが Microsoft Azure でテナントとして登録されているドメインに属する場合、プロビジョニング プロセスが正常に完了するためには、電子メール アドレスが既存の Azure Active Directory (AAD) のアカウントである必要があります。 電子メール アドレスが Microsoft Azure で登録されているドメインに属さない場合は、プロビジョニング プロセスの一部として AAD アカウントが作成され、新しいユーザーは招待メールを受信します。 @hotmail.com、@gmail.com、@comcast.net などのドメインを含む消費者向け電子メール アドレスは、ユーザーを登録するためには使用できません。
 3. **仕入先コラボレーションへのアクセスの許可** オプションで、ユーザーがアクセスを必要とするすべての法人で **はい** を設定します。
 4. **ユーザー ロールの割り当て** セクションで、新しいユーザーが持つ必要のあるセキュリティ ロールの **割り当て** チェック ボックスを選択します。
 5. **送信** をクリックします。
 
-仕入先ユーザーが送信を要求する場合、**仕入先コラボレーションへのアクセスの許可** フィールドは、選択された仕入先アカウントのために **はい** に設定され、ユーザー要求のワークフローは開始されます。 ワークフローの一部として、新しいユーザーは Finance and Operations で作成し、セキュリティ ロールが割り当てられます。 また、Azure B2B サービスは、Azure ポータルでインタラクションを開始することを有効化し、Finance and Operations ユーザー アカウントで関連する新しいもしくは既存の AAD アカウントを関連付けます。 詳細については、[Azure AD B2B コラボレーションとは何ですか。](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) を参照してください。
+仕入先ユーザーが送信を要求する場合、**仕入先コラボレーションへのアクセスの許可** フィールドは、選択された仕入先アカウントのために **はい** に設定され、ユーザー要求のワークフローは開始されます。 ワークフローの一部として、新しいユーザーは作成され、セキュリティ ロールが割り当てられます。 また、Azure B2B サービスは、Azure ポータルでインタラクションを開始することを有効化し、Supply Chain Management ユーザー アカウントで関連する新しいもしくは既存の AAD アカウントを関連付けます。 詳細については、[Azure AD B2B コラボレーションとは何ですか。](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) を参照してください。
 
 ### <a name="inactivate-a-user"></a>ユーザーの無効化
 

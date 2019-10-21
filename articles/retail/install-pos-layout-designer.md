@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 98784c11c7393bb4c3e022d5bff4cca2daa1636e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572083"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025452"
 ---
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Retail 販売時点管理 (POS) のレイアウト デザイナーのインストール
 
@@ -36,11 +36,11 @@ MPOS、またはクラウド POS のグラフィカル デザイン インター
 
 ## <a name="install-the-one-click-designer"></a>ワンクリック デザイナーをインストールする
 
-1. Microsoft Dynamics 365 for Retail では、左上のメニューを使って、**小売** **とコマース** &gt; **チャネル設定** &gt; **POS 設定** &gt; **POS** &gt; **画面レイアウト**の順に移動します。
+1. Retail では、左上のメニューを使って、**小売** **とコマース** &gt; **チャネル設定** &gt; **POS 設定** &gt; **POS** &gt; **画面レイアウト**の順に移動します。
 2. **Windows のモダン POS** または**クラウド POS**のアプリケーション タイプを持つレイアウトを選択し、**レイアウト デザイナー** をクリックします。
 3. ワンクリック デザイナーをインストールする場合、Internet Explorer ウィンドウの下部に表示される通知バーの**開始**をクリックします。 (通知バーは、他のブラウザでは別の場所に表示される場合があります。)
 4. 表示される **アプリケーションの実行 - セキュリティの警告** メッセージ ボックスで、**実行** をクリックし、Retail デザイナー ホストをインストールします。 インストールの進捗状況を進捗状況インジケータが表示します。
-5. インストールが完了したら、**サインイン**ページで Microsoft Dynamics 365 for Retail のユーザー名とパスワードを入力し、**サインイン**をクリックしてデザイナーを開始します。
+5. インストールが完了したら、**サインイン** ページで Retail のユーザー名とパスワードを入力し、**サインイン**をクリックしてデザイナーを開始します。
 6. ログイン情報が認証されデザイナーを開始した後に、独自のレイアウトを作成するか、または既存のレイアウトを変更することができます。
 
     [![ワンクリック デザイナーでレイアウトする](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
@@ -52,11 +52,11 @@ MPOS、またはクラウド POS のグラフィカル デザイン インター
     **ソリューション**
 
     - Internet Explorer で、ポップアップ ブロックがこのサイトに対して無効であることを確認します。 **設定** &gt; **オプション** &gt; **プライバシー** &gt; **ポップアップ ブロッカーを探す** をクリックし、変更が必要な場合は設定を変更します。
-    - Internet Explorer で、Dynamics 365 for Retail の URL を信頼済みサイトに追加します。 **設定** &gt; **オプション** &gt; **セキュリティ** &gt; **信頼済みサイト** &gt; **サイト** &gt; **追加** をクリックします。
+    - Internet Explorer で、Retail の URL を信頼済みサイトに追加します。 **設定** &gt; **オプション** &gt; **セキュリティ** &gt; **信頼済みサイト** &gt; **サイト** &gt; **追加** をクリックします。
 
 - プログラムが起動せず、仕入先に連絡するように指示されます。
 
-    **ソリューション:** Internet Explorer で、Dynamics 365 for Retail の URL を信頼済みサイトに追加します。 **設定** &gt; **オプション** &gt; **セキュリティ** &gt; **信頼済みサイト** &gt; **サイト** &gt; **追加**をクリックします。
+    **ソリューション:** Internet Explorer で、Retail の URL を信頼済みサイトに追加します。 **設定** &gt; **オプション** &gt; **セキュリティ** &gt; **信頼済みサイト** &gt; **サイト** &gt; **追加**をクリックします。
 
 **既知の問題:** Google Chrome と Mozilla Firefox ブラウザでデザイナーが正しく作動しません。 問題を修正中です。
 

@@ -1,6 +1,6 @@
 ---
 title: 複数の顧客注文および請求書間での品目の返品
-description: このトピックでは、複数の顧客注文および請求書をまたいだ返品を有効にする Microsoft Dynamics 365 for Retail の機能について説明します。
+description: このトピックでは、複数の顧客注文および請求書をまたいだ返品を有効にする Dynamics 365 Retail の機能について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 03/05/2019
@@ -18,19 +18,19 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c201311028b11121d626e93859a2b98497c047d1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 25a1081e5f903076e23089c41dda7437f8a70124
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565303"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017992"
 ---
 # <a name="return-items-across-multiple-customer-orders-and-invoices"></a>複数の顧客注文および請求書間での品目の返品
 
 [!include [banner](includes/banner.md)]
 
 
-以前のリリースでは、一度に 1 つの請求書の返品しか処理できませんでしたが、Dynamics 365 for Finance and Operations バージョン 10.0 では、複数の注文および請求書をまたいだ返品の処理が可能です。 
+複数の顧客注文および請求書間で返品が可能です。 
 
 ## <a name="configure-retail-to-support-returns-across-multiple-customer-order-and-invoices"></a>複数の顧客注文および請求書をまたいだ返品をサポートするように Retail を構成する
 

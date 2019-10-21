@@ -1,6 +1,6 @@
 ---
 title: ファントム品目
-description: このトピックでは、部品表 (BOM) の明細行および Microsoft Dynamics 365 for Finance and Operations のフォーミュラで、ファントム明細行タイプを使用する方法を詳細に説明します。
+description: このトピックでは、部品表 (BOM) の明細行および Dynamics 365 Supply Chain Management のフォーミュラで、ファントム明細行タイプを使用する方法を詳細に説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f01a0321740365c23cbc117be42c0a5137960af7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7c39b0ac2eb8a2293c828fee23ed6a78cb5fe2c9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843892"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250015"
 ---
 # <a name="phantom-items"></a>ファントム品目
 
@@ -51,7 +51,7 @@ ms.locfileid: "1843892"
 
 2 つの操作シートがあったエンジニアリング BOM とは異なり、製造 BOM には 1 つの操作シートのみがあります。 パーツ G にリンクされた梱包操作も上昇し、製品 H の操作シートの一部になりました。電気単位のアセンブリは最初の操作です。 この単位は次の操作である機械アセンブリに使用されるため、この順序は理にかなっています。 最後の操作は、2 つの梱包材 (C と D) を消費する梱包操作です。
 
-Microsoft Dynamics 365 for Finance and Operations、ファントム BOM 明細行タイプを通してエンジニアリング BOM と製造 BOM 間での移行が有効になります。 「ファントム」という用語が示すように、パーツ F および G が 2 つの BOM タイプ間の移行中に実在しなくなりました。 この例では、エンジニアリング BOM で、ファントム明細行タイプがパーツ F および G の BOM 明細行に適用されます。 製造オーダーまたはバッチ オーダーが作成されると、エンジニアリング BOM は製造オーダーまたはバッチ オーダーにコピーされます。 次に、前の図に示すように、オーダーの見積時にエンジニアリング BOM から製造 BOM への移行が発生します。 2 番目の図の操作シートから、操作用に梱包材 C および D が入力されます。 
+ファントム BOM 明細行タイプを通して、エンジニアリング BOM と製造 BOM 間での移行が有効になります。 「ファントム」という用語が示すように、パーツ F および G が 2 つの BOM タイプ間の移行中に実在しなくなりました。 この例では、エンジニアリング BOM で、ファントム明細行タイプがパーツ F および G の BOM 明細行に適用されます。 製造オーダーまたはバッチ オーダーが作成されると、エンジニアリング BOM は製造オーダーまたはバッチ オーダーにコピーされます。 次に、前の図に示すように、オーダーの見積時にエンジニアリング BOM から製造 BOM への移行が発生します。 2 番目の図の操作シートから、操作用に梱包材 C および D が入力されます。 
 
 ## <a name="multilevel-phantom-bom-structures"></a>複数レベルのファントム BOM 構造
 次の図に示すように、ファントム明細行タイプは複数レベルの BOM 構造で使用できます。 この図では、(a) は製品 G の BOM、(b) はパーツ E と F および製品 G の工順シートです。 

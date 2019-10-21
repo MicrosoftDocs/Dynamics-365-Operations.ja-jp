@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 63cad6b2f7240bb14fe7a9237498c0140df77774
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568002"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025032"
 ---
 # <a name="retail-statements"></a>小売明細書
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail では、クラウド販売時点管理 (POS) または Modern POS (MPOS) で発生するトランザクションに対して、明細書の転記プロセスが使用されます。 明細書の転記プロセスでは、配送スケジュールを使用して、一連の POS トランザクションを本社 (HQ) クライアントに引き渡します。 **小売パラメーター** および **店舗** ページで定義されているパラメーターは、個々のステートメントに引き込まれたトランザクションを選択するために使用されます。
+Dynamics 365 Retail では、クラウド販売時点管理 (POS) または Modern POS (MPOS) で発生するトランザクションに対して、明細書の転記プロセスが使用されます。 明細書の転記プロセスでは、配送スケジュールを使用して、一連の POS トランザクションを本社 (HQ) クライアントに引き渡します。 **小売パラメーター** および **店舗** ページで定義されているパラメーターは、個々のステートメントに引き込まれたトランザクションを選択するために使用されます。
 
 次の図は、明細書の転記プロセスを示しています。 このプロセスでは、POS に記録されているトランザクションは、小売り用スケジューラを使用してクライアントに送信されます。 クライアントがトランザクションを受け入れた後、ストアのトランザクション明細書を作成し、計算および転記できます。
 
@@ -85,6 +85,6 @@ Microsoft Dynamics 365 for Retail では、クラウド販売時点管理 (POS) 
 明細書を転記すると、小売り販売用の販売注文および請求書が明細書内に作成されます。
 
 - 現金払いの販売は、店舗に割り当てられている既定の顧客の 1 つの販売注文に集計されて請求されます。
-- Microsoft Dynamics 365 for Retail POS のトランザクションに顧客が追加された小売販売により、個別の販売注文と請求書が固有の顧客ごとに 1 つずつ生成されます。
+- Retail POS のトランザクションに顧客が追加された小売販売により、個別の販売注文と請求書が固有の顧客ごとに 1 つずつ生成されます。
 
 支払仕訳帳は明細書の支払に対して自動的に作成され、在庫は POS 店舗に更新されます。

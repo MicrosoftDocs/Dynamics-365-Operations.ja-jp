@@ -1,6 +1,6 @@
 ---
 title: 小売の周辺機器シミュレーター
-description: このトピックでは、Dynamics 365 for Retail で提供される周辺機器シミュレーター ツールについて説明します。
+description: このトピックでは、Dynamics 365 Retail で提供される周辺機器シミュレーター ツールについて説明します。
 author: rubencdelgado
 manager: AnnBe
 ms.date: 03/22/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9178f355aa8e19b82ab997e2e346ffd9b6ed6d5a
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 3d4c4a646e3cc8755658c899546674d283c7aaff
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833127"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018052"
 ---
 # <a name="peripheral-simulator-for-retail"></a>小売の周辺機器シミュレーター
 
 [!include [banner](../includes/banner.md)]
 
-小売の周辺機器シミュレーターは、Microsoft Dynamics 365 for Retail の一部として、またスタンドアロン ユーティリティとして、Microsoft が提供しているユーティリティです。 ユーティリティには 2 つの主要コンポーネント、*仮想周辺機器シミュレーター* および *販売時点管理シミュレーター* があります。
+小売の周辺機器シミュレーターは、Microsoft Dynamics 365 Retail の一部として、またスタンドアロン ユーティリティとして、Microsoft が提供しているユーティリティです。 ユーティリティには 2 つの主要コンポーネント、*仮想周辺機器シミュレーター* および *販売時点管理シミュレーター* があります。
 
 仮想周辺機器シミュレーターは主に、通常は物理的に POS 周辺機器が必要なシナリオのテストをサポートするために提供されます。 POS シミュレーターでは、POS クライアントを配置しなくても Retail の物理的な周辺機器との互換性をテストするために使用されます。
 

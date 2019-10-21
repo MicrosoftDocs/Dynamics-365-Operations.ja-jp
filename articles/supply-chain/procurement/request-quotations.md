@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2276f5296a77d620e0084c0247b1e25071fe029
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: bb5255236fc48132d4d68dc6f515f32e7ec71dae
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865283"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248845"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>見積依頼 (RFQ) の概要
 
@@ -48,16 +48,13 @@ RFQ プロセスは次のタスクで構成されています。
 
 RFQケースを準備し、仕入先を追加したら、RFQ ケース上の **送信** (**送信および公開** 公的機関向け) を選択します。 RFQ 仕訳は、RFQ を送った各仕入先ごとに生成されます。 各仕入先のレポートをアーカイブに印刷するか、または各仕入先の電子メール アドレスにレポートを送信するように、送信アクションの印刷オプションを構成できます。 さらに、各仕入先の RFQ 仕訳帳を、後でその仕入先に送信または再送信するレポートを生成することにも使用できます。 また、仕入先で入力できる返信シートを生成するように、送信アクションを構成することもできます。
 
-このトピックでは、仕入先コラボレーションが使用されていない際の RFQs を処理するプロセスを説明します。 システムが仕入先コレボレーションに設定される場合、仕入先は直接 Microsoft Dynamics 365 for Finance and Operations に入札できます。 詳細は、[顧客と仕入先の協力](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) および [外部仕入先と仕入先の協力](vendor-collaboration-work-external-vendors.md) をご覧ください。
+このトピックでは、仕入先コラボレーションが使用されていない際の RFQs を処理するプロセスを説明します。 システムが仕入先コレボレーションに設定される場合、仕入先は直接 Supply Chain Management に入札できます。 詳細は、[顧客と仕入先の協力](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) および [外部仕入先と仕入先の協力](vendor-collaboration-work-external-vendors.md) をご覧ください。
 
 送信後に RFQ を修正する必要がある場合は、作成と確定の 2 つの修正アクションを使い、終了した時に RFQ を仕入先へ再送品することができます。+
 
 電子メールで入札を受信すると、**見積依頼** ページで入札を処理できます。
 
 仕入先から 2 回目の返信が必要な場合、**見積依頼** ページで **返信** を選択します。 返信アクションにより新しい仕訳帳とレポートが生成され、印刷設定に従って印刷、アーカイブおよび送信されます。
-
-> [!NOTE]
-> **見積依頼** ページの名前は変更されました。 Dynamics 365 for Finance and Operations 以前のリリースでは、**見積依頼の返信**ページと呼ばれます。
 
 RFQ ケースにスコア基準を追加した場合、RFQ ケースにはスコアを入力できるパネルが現れます。 **回答の比較** ページで回答を比較する時に、RFQ 上で合計のスコアが表示されます。 **回答の比較** ページには、明細行の価格、出荷日、および価格の合計などの他のデータ回答を比較できます。
 

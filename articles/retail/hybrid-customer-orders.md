@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a00e69a589ffe744f88edb6a8b3709c4029fc1ec
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 92be01210b677228f4c096ffef09d7109ba2b332
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572246"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023396"
 ---
 # <a name="hybrid-customer-orders"></a>ハイブリッド顧客注文
 
@@ -31,7 +31,7 @@ ms.locfileid: "1572246"
 
 ハイブリッド顧客注文は 1 つの注文で、顧客によって店舗で処理できる製品と、集配や後日出荷される製品を含みます。
 
-Microsoft Dynamics 365 for Retail では、顧客注文のすべての製品または選択された製品の処理を選択できます。 注文が作成されると、処理としてマークされた製品ラインが自動的に請求され、これは注文が作成された後集荷される注文の場合も同じです。 ハイブリッド注文の支払金額は、処理行の総額のある集荷および出荷製品ラインに預金率を追加することによって決まります。 ハイブリッド注文の場合、システムは顧客注文モードと現金売りモードとを次のように切り替えます。
+Retail では、顧客注文のすべての製品または選択された製品の処理を選択できます。 注文が作成されると、処理としてマークされた製品ラインが自動的に請求され、これは注文が作成された後集荷される注文の場合も同じです。 ハイブリッド注文の支払金額は、処理行の総額のある集荷および出荷製品ラインに預金率を追加することによって決まります。 ハイブリッド注文の場合、システムは顧客注文モードと現金売りモードとを次のように切り替えます。
 
 - カート内の全製品を **配送実行** に設定する場合、注文は現金売りトランザクションとして処理されます。
 - カート内のいくつかまたはすべての製品を **集配** または **出荷配送** に設定する場合、注文は顧客注文トランザクションとして処理されます。

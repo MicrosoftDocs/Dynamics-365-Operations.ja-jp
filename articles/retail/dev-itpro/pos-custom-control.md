@@ -1,6 +1,6 @@
 ---
 title: POS ビューへのカスタム コントロールの追加
-description: このトピックでは、カスタム コントロールを追加することで、Dynamics 365 for Retail の POS ビューに表示される情報を改善する方法について説明します。
+description: このトピックでは、カスタム コントロールを追加することで、Dynamics 365 Retail の POS ビューに表示される情報を改善する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/15/2017
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 4cf1f94009886f648ab550b6537872f6ef5e78bf
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 44103014460d7341b6faa77173f2a6947cf6f17e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833754"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023462"
 ---
 # <a name="add-custom-controls-to-pos-views"></a>POS ビューへのカスタム コントロールの追加
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail POS のビューに表示される情報を改善するために、カスタム コントロールを追加することができます。 カスタム コントロールを使用すると、既存の POS のビューにカスタム情報を追加できます。 カスタム コントロールは、POS 拡張フレームワークを使用して実装できます。
+Microsoft Dynamics 365 Retail POS のビューに表示される情報を改善するために、カスタム コントロールを追加することができます。 カスタム コントロールを使用すると、既存の POS のビューにカスタム情報を追加できます。 カスタム コントロールは、POS 拡張フレームワークを使用して実装できます。
 
 カート ビューでは、POS 画面レイアウト デザイナーを使用してカスタム コントロールを追加できます。 この場合、カスタム コントロールを任意の場所までドラッグして、コントロールの高さと幅を設定することもできます。 次に、拡張機能プロジェクトに拡張機能ロジックを記述します。
 
@@ -51,8 +51,8 @@ Microsoft Dynamics 365 for Retail POS のビューに表示される情報を改
 
 > [!NOTE]
 > カスタム コントロールは、次の製品バージョンでのみサポートされます。
-> - **画面レイアウト デザイナーに基づかないビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 3 と Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 3
-> - **画面レイアウト デザイナーに基づくビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 4 と Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 4
+> - **画面レイアウト デザイナーに基づかないビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 3 と Microsoft Dynamics 365 Retail アプリケーション更新プログラム 3
+> - **画面レイアウト デザイナーに基づくビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 4 と Microsoft Dynamics 365 Retail アプリケーション更新プログラム 4
 
 ## <a name="create-a-custom-control"></a>カスタム コントロールの作成
 

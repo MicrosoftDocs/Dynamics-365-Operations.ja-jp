@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent (2019 年 4 月 23 日) の新機能および変更された機能
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent (2019 年 4 月 23 日) の新機能および変更された機能
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/23/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5ec10820761cb22cbff6229babe8a250848214b7
-ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
+ms.openlocfilehash: 1a70be88e3ab65bb0bdd844347e8ba69e4ba61a5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624584"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024117"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-23-2019"></a>Dynamics 365 for Talent (2019 年 4 月 23 日) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-23-2019"></a>Dynamics 365 Talent (2019 年 4 月 23 日) の新機能および変更された機能
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
-今回のリリースには、Dynamics 365 for Talent: Attract のマイナーなバグ修正が含まれています。
+今回のリリースには、Dynamics 365 Talent: Attract のマイナーなバグ修正が含まれています。
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
-今回のリリースには、Dynamics 365 for Talent: Onboard のマイナーなバグ修正が含まれています。
+今回のリリースには、Dynamics 365 Talent: Onboard のマイナーなバグ修正が含まれています。
 
 ## <a name="changes-in-core-hr"></a>Core HR の変更
 このセクションに記載された変更は、ビルド番号 8.1.2253 に適用されます。 かっこ内の数字は、Lifecycle Services (LCS) のサポート番号を参照しています。
@@ -79,4 +79,4 @@ ms.locfileid: "1624584"
 ## <a name="known-issues"></a>既知の問題
 
 ### <a name="email-support-for-alerts"></a>アラートの電子メールサポート
-プラットフォーム更新プログラム 26 を使用すると、あるイベントによってトリガーされたときに、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。
+Finance and Operations のプラットフォーム更新プログラム 26 では、あるイベントによってトリガーされた時、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。

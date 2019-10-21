@@ -1,6 +1,6 @@
 ---
 title: オファー管理の設定
-description: このトピックでは、Talent でのオファーの設定方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Talent でのオファーの設定方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/04/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa0e5d30c06db16e105631e492af022acfcfd66
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518453"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010847"
 ---
 # <a name="set-up-offer-management"></a>オファー管理の設定 
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 for Talent: Attract で候補者がオファー ステージに進む場合、候補者のオファーを迅速に作成し、必要に応じて承認し、候補者に送付することを確認する必要があります。 ほとんどのオファーが標準なので、再利用可能なテンプレートから作成することができます。 Attract では、すべてのオファーは 1 つまたは複数のオファー ドキュメントのコレクションであるオファー パッケージにロールアップされます 
+Dynamics 365 Talent: Attract で候補者がオファー ステージに進む場合、候補者のオファーを迅速に作成し、必要に応じて承認し、候補者に送付することを確認する必要があります。 ほとんどのオファーが標準なので、再利用可能なテンプレートから作成することができます。 Attract では、すべてのオファーは 1 つまたは複数のオファー ドキュメントのコレクションであるオファー パッケージにロールアップされます 
 
 このトピックでは、Attract 管理者が Attract のオファー管理機能の一部としてさまざまなオファー パッケージ テンプレートを設定するために必要なすべての手順を示します。 管理者以外のユーザーには、これらの機能に対するアクセス許可がありません。
 

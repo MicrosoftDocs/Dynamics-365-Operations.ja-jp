@@ -1,6 +1,6 @@
 ---
 title: 輸送管理の概要
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配送管理機能の概要が示されます。
+description: このトピックでは、Finance and Operations の配送管理機能の概要が示されます。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 918167a3ab72b3d3665cf710d8e509417b94a056
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d976ec4d3c294f0ce8e9732b21b9a429f1e47315
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561172"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2027064"
 ---
 # <a name="transportation-management-overview"></a>輸送管理の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配送管理機能の概要が示されます。
+このトピックでは、Finance and Operations の配送管理機能の概要が示されます。
 
-輸送管理では、会社の配送の送受信オーダーの仕入先とルート指定の解決策の識別を使用できるようになります。 たとえば、出荷用の最速のルートまたは最低費用レートを識別できます。 次の表では、Microsoft Dynamics 365 for Finance and Operations で輸送管理を使用する主要なシナリオについて説明します。
+輸送管理では、会社の配送の送受信オーダーの仕入先とルート指定の解決策の識別を使用できるようになります。 たとえば、出荷用の最速のルートまたは最低費用レートを識別できます。 次の表では、輸送管理を使用する主要なシナリオについて説明します。
 
 <table>
 <colgroup>

@@ -3,7 +3,7 @@ title: 拡張機能を介したカスタム Commerce Data Exchange 同期の有�
 description: このトピックでは、Retail 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/15/2017
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 284c2737715e6294e1d4f8480325a04c0cf40dba
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: dba9fdb97aeef1b1adbc59bd82fd2565f288015a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833095"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019307"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Retail 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。 この拡張機能では、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 8 または Microsoft Dynamics 365 for Retail プラットフォーム更新プログラム 8 で追加された新しい拡張ポイントを使用します。
+このトピックでは、Retail 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。 この拡張機能では、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 8 または Microsoft Dynamics 365 Retail プラットフォーム更新プログラム 8 で追加された新しい拡張ポイントを使用します。
 
 CDX は、小売用バックオフィス (小売 HQ)、およびオンライン ストア、実際の店舗などの小売チャンネルの間でデータを転送するシステムです。 Retail HQ とチャネル データベース間のデータ転送は、スケジューラ ジョブによって制御されます。 各スケジューラ ジョブには、スケジューラ サブジョブの一覧が含まれています。 スケジューラ サブジョブには、ソース テーブルと出力先テーブルの名前と、それらのテーブルの転送フィールド マッピングが含まれています。 Retail HQ とチャネル データベース間のデータ同期を設定するには、2 つの方法があります。
 
@@ -93,7 +93,7 @@ Retail HQ とチャネル データベース間のデータ転送には、さま
     </RetailCdxSeedData>
 ```
 
-既定では、ターゲット テーブルの名前がここでは指定されていません。 システムでは、チャネル側のターゲット表の名前が Finance and Operations 側のソース テーブルの名前 (**AXTableName**) と同じであることが前提です。 ただし、チャンネル側のターゲット テーブルの名前は、時に Finance and Operations 側にあるソース テーブルの名前とは異なる場合があります。 この場合、**&lt;サブジョブ&gt;** ノードで **&lt;TargetTableName&gt;** 属性を使用してチャネル側でターゲット テーブルの名前を設定できます。
+既定では、ターゲット テーブルの名前がここでは指定されていません。 システムでは、チャネル側のターゲット表の名前が Finance and Operations 側のソース テーブルの名前 (**AXTableName**) と同じであることが前提です。 ただし、チャンネル側のターゲット テーブルの名前は、時にソース テーブルの名前とは異なる場合があります。 この場合、**&lt;サブジョブ&gt;** ノードで **&lt;TargetTableName&gt;** 属性を使用してチャネル側でターゲット テーブルの名前を設定できます。
 
 同様に、マッピング セクションでは、Finance and Operations 側にあるフィールドの名前だけが指定されています (**AxFields**)。 既定では、同じフィールド名がチャネル側でも使用されていると想定します。 ただし、対応するチャンネル テーブルのフィールド名は、時に Finance and Operations 側にあるフィールド名とは異なる場合があります。 この場合、マッピングで **&lt;フィールド&gt;** ノードの **ToName** 属性を使用してチャネル側でフィールドの名前を設定できます。
 
@@ -113,13 +113,13 @@ Retail HQ とチャネル データベース間のデータ転送には、さま
     }
     ```
 
-    > [注記] システムに CDX シード データに対して 2 つの定義があるため、生成する CDX シード データが拡張の対象のバージョンである場合にのみ、拡張 CDX データが追加されるように指定する必要があります。 **if** 条件が削除されている場合、拡張 CDX シード データが N-1 CDX シード データの上にも適用され、意図しない結果が生じる可能性があります。
+> [注記] システムに CDX シード データに対して 2 つの定義があるため、生成する CDX シード データが拡張の対象のバージョンである場合にのみ、拡張 CDX データが追加されるように指定する必要があります。 **if** 条件が削除されている場合、拡張 CDX シード データが N-1 CDX シード データの上にも適用され、意図しない結果が生じる可能性があります。 ベスト プラクティスとして、X++ の CDX/Retail スケジューラ同期フレームワーク クラスのその他のカスタマイズを回避することをお勧めします。 追加の処理が実行される場合、これによりデータ フローが影響を受けることがあります。 提案されるパターンは、別のクラスおよびバッチ ジョブによりアップロードされたデータを処理させることです。
 
-    後で言及されるさまざまなシナリオの個別のリソース ファイルを作成する必要はありません。 1 つのファイルにすべてのカスタム ジョブ情報を含め、拡張機能クラスからそのファイルを登録することができます。
+> 後で言及されるさまざまなシナリオの個別のリソース ファイルを作成する必要はありません。 1 つのファイルにすべてのカスタム ジョブ情報を含め、拡張機能クラスからそのファイルを登録することができます。
 
-    Retail 初期化クラスが実行されるときはいつでも、このクラスはこのハンドラーを実装する拡張機能を検索します。 拡張子が見つかった場合、ランタイムはリソース ファイルに含まれるカスタム情報も初期化します。
+> Retail の初期化クラスが実行される場合、このクラスはこのハンドラーを実装する拡張機能を検索します。 拡張子が見つかった場合、ランタイムはリソース ファイルに含まれるカスタム情報も初期化します。
 
-9. **Retail > 本社の設定 > 小売用スケジューラ > 小売用スケジューラの初期化**と移動します。
+9. **小売 > 本社の設定 > 小売用スケジューラ > 小売用スケジューラの初期化**に移動します。
 10. **小売用スケジューラの初期化** ダイアログをクリックして、Retail CDX の初期化を実行します。
 
 ## <a name="pull-data-from-a-new-channel-database-table-to-a-new-retail-hq-table-by-using-a-push-job"></a>プッシュ ジョブを使用して新しい Retail HQ テーブルに新しいチャンネル データベース テーブルからのデータを取り込む
@@ -219,7 +219,7 @@ Retail HQ とチャネル データベース間のデータ転送には、さま
 ```
 
 ## <a name="cdx-sample---pull-new-columns-to-an-existing-table"></a>CDX サンプル - 新しい列を既存のテーブルにプルする
-Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 5 では、RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
+Microsoft Dynamics 365 Retail アプリケーション更新プログラム 5 では、RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
 
 次のセクションでは、拡張テーブルを使用して Retail トランザクション テーブルをカスタマイズする手順とベスト プラクティスについて説明します。 もう 1 つのセクションでは、CDX をカスタマイズしてチャネル側のカスタマイズされた (拡張子) テーブルを Finance and Operations にアップロードする方法を示します。 また、カスタマイズのテスト方法を説明するセクションも含めました。
 

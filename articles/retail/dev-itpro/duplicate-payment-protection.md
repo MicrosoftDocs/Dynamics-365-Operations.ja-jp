@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f8fd423ae9609801c19ad0d14548a50652b44365
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 9fa96c9fd18a33f0449742c840f86a20db686c1d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863311"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023577"
 ---
 #  <a name="enable-duplicate-payment-protection-for-payment-connector"></a>支払コネクタの重複支払保護の有効化
 
@@ -50,7 +50,7 @@ ms.locfileid: "1863311"
 重複支払保護のサポートを有効にするために、対応する支払端末または支払ゲートウェイ/プロセッサは固有のトランザクション スコープのサポートを提供する必要があります。 通常、このサポートは支払端末で生成される固有の支払参照識別子を通して、または支払が処理される前に支払ゲートウェイ/プロセッサにより処理されています。 一意の識別子のサポートなしでは、コネクタは先に開始された取引を、正常に行われた支払の承認と一意に対応付けることができず、これが重複支払保護が失敗する元となります。
 
 ## <a name="understanding-duplicate-payment-protection-flows"></a>重複支払保護フローを理解します。
-Dynamics 365 for RetailPOSが拡張され、支払コネクタに**承認**を出す直前など、POS 全体の様々なシナリオで新しい要求である `GetTransactionReferencePaymentTerminalDeviceRequest` および `GetTransactionByTransactionReferencePaymentTerminalDeviceRequest` を呼び出すようになりました。 これらの新しい要求の目的は、新しい支払要求を実行する前に、支払コネクタを通して正常に処理された支払を検出し、復元するものです。 次の図は、支払要求は支払コネクタを通して正常に処理されたものの、応答を受信する前にPOS がクラッシュしたというシンプルなシナリオを示しています。 その後、POS は重複支払保護機能により、前の処理済の支払を復元することができます。 
+Dynamics 365 RetailPOSが拡張され、支払コネクタに**承認**を出す直前など、POS 全体の様々なシナリオで新しい要求である `GetTransactionReferencePaymentTerminalDeviceRequest` および `GetTransactionByTransactionReferencePaymentTerminalDeviceRequest` を呼び出すようになりました。 これらの新しい要求の目的は、新しい支払要求を実行する前に、支払コネクタを通して正常に処理された支払を検出し、復元するものです。 次の図は、支払要求は支払コネクタを通して正常に処理されたものの、応答を受信する前にPOS がクラッシュしたというシンプルなシナリオを示しています。 その後、POS は重複支払保護機能により、前の処理済の支払を復元することができます。 
 
 ![重複支払保護フロー](media/PAYMENTS/DUPLICATE-PAYMENT-PROTECTION/DuplicatePaymentProtectionFlow.jpg)
 
@@ -128,7 +128,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 ### <a name="gettransactionreferencepaymentterminaldevicerequest--gettransactionreferencepaymentterminaldeviceresponse"></a>GetTransactionReferencePaymentTerminalDeviceRequest / GetTransactionReferencePaymentTerminalDeviceResponse
 
 #### <a name="description"></a>説明
-`GetTransactionReferencePaymentTerminalDeviceRequest` は、支払取引の開始時に Dynamics 365 for Retail POS に呼び出され、支払のスコープを設定します。 この要求のスコープは、支払明細行が正常にカートに追加されるか、もしくはカードが使用できず、支払コネクタから戻らないことを表示するエラーが出ると終了します。 対応する `GetTransactionReferencePaymentTerminalDeviceResponse` 応答には、支払取引を検索するために支払コネクタによって生成される対応する一意の識別子が含まれます。 ID はアプリケーションの再起動後も維持される必要があり、通常、支払ゲートウェイによって ID が生成されるべきなので、支払コネクタの実装は生成された ID をキャッシュしてはいけないことに注意してください。
+`GetTransactionReferencePaymentTerminalDeviceRequest` は、支払取引の開始時に Dynamics 365 Retail POS に呼び出され、支払のスコープを設定します。 この要求のスコープは、支払明細行が正常にカートに追加されるか、もしくはカードが使用できず、支払コネクタから戻らないことを表示するエラーが出ると終了します。 対応する `GetTransactionReferencePaymentTerminalDeviceResponse` 応答には、支払取引を検索するために支払コネクタによって生成される対応する一意の識別子が含まれます。 ID はアプリケーションの再起動後も維持される必要があり、通常、支払ゲートウェイによって ID が生成されるべきなので、支払コネクタの実装は生成された ID をキャッシュしてはいけないことに注意してください。
 
 #### <a name="request-signature"></a>署名の要求
 ``` csharp
@@ -153,7 +153,7 @@ public GetTransactionReferencePaymentTerminalDeviceResponse(string id);
 | id | 支払取引のスコープに使用する一意の識別子。 |
 
 ### <a name="paymenttransactionreferencedata"></a>PaymentTransactionReferenceData 
-`GetTransactionReferencePaymentTerminalDeviceRequest` が実行された後、Dynamics 365 for Retail POS は `PaymentTransactionReferenceData` クラスの新しいインスタンスを生成し、重複支払保護スコープを維持するために POS に必要なコンテキスト データを実行します。 この変数は POS で格納および管理され、キーの支払操作時に既存の取引を確認するために使用します。 
+`GetTransactionReferencePaymentTerminalDeviceRequest` が実行された後、Dynamics 365 Retail POS は `PaymentTransactionReferenceData` クラスの新しいインスタンスを生成し、重複支払保護スコープを維持するために POS に必要なコンテキスト データを実行します。 この変数は POS で格納および管理され、キーの支払操作時に既存の取引を確認するために使用します。 
 
 #### <a name="properties"></a>プロパティ
 | 変数 | 説明 |
@@ -170,7 +170,7 @@ public GetTransactionReferencePaymentTerminalDeviceResponse(string id);
 `AuthorizePaymentTerminalDeviceRequest` パラメーターは、新しい要求である `PaymentTransactionReferenceData` をサポートする新しいコンストラクターを提供するよう拡張されています。 このパラメーターの目的は、コンテキスト参照データを管理し、また支払コネクタによって生成され、重複支払を識別し、後でのクエリのために POS により使用される一意の識別子と支払端末または支払ゲートウェイ/プロセッサへの承認要求にスタンプすることです。 
 
 ### <a name="gettransactionbytransactionreferencepaymentterminaldevicerequest--gettransactionbytransactionreferencepaymentterminaldeviceresponse"></a>GetTransactionByTransactionReferencePaymentTerminalDeviceRequest / GetTransactionByTransactionReferencePaymentTerminalDeviceResponse
-既存の支払取引が支払端末または支払ゲートウェイ/プロセッサですでに呼び出され、かつ処理されたかどうかをし区別するため、特定の支払いに関連した操作の直前に、Dynamics 365 for Retail POS は `GetTransactionByTransactionReferencePaymentTerminalDeviceRequest` を呼び出します。 既存のトランザクションが支払コネクタにより復旧すると、新しい取引をトリガーするためコネクタに返され、短い回路の続く呼び出しがあります。
+既存の支払取引が支払端末または支払ゲートウェイ/プロセッサですでに呼び出され、かつ処理されたかどうかをし区別するため、特定の支払いに関連した操作の直前に、Dynamics 365 Retail POS は `GetTransactionByTransactionReferencePaymentTerminalDeviceRequest` を呼び出します。 既存のトランザクションが支払コネクタにより復旧すると、新しい取引をトリガーするためコネクタに返され、短い回路の続く呼び出しがあります。
 
 #### <a name="request-signature"></a>署名の要求
 ``` csharp

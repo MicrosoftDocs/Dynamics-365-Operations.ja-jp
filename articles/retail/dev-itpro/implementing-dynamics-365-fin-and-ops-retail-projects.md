@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations Retail プロジェクトの実装
-description: このトピックでは、Microsoft Dynamics 365 for Retail実装プロジェクトのための推奨事項について説明します。
+title: 実装 Retail プロジェクト
+description: このトピックでは、Microsoft Dynamics 365 Retail 実装プロジェクトのための推奨事項について説明します。
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -17,22 +17,22 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: d2331e86723bdf9aaecfedf1dab55cc5a4beccd6
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 905902e52febb3ba4832f9e765191a613aa90936
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833159"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023461"
 ---
-# <a name="implement-finance-and-operations-retail-projects"></a>Finance and Operations Retail プロジェクトの実装
+# <a name="implement-retail-projects"></a>実装 Retail プロジェクト
 
 [!include [banner](../../includes/banner.md)]
 
 このトピックでは、Retail プロジェクトの新しい実装者が複雑さを回避することができるように、実装プロセスの重要な側面について役立つその他のトピックへのリンクを提供します。 記載されているガイドラインは、以前の実装プロジェクト中に収集されたベスト プラクティスです。 したがって、実装者は手順で行き詰まることく、実際の機能に焦点を合わせることができます。
 
-<https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/index> や <https://dynamicsnotes.com> などのブログや他の場所のページからでも、トピックの一部の情報を見つけることができます。 それらのブログとページを個別に読むことができます。また、最初から最後までこのトピックを読んで、実装プロセス中にサブトピック内のリンクされたドキュメントを確認することもできます。
+これらのトピックの情報については、[Finance and Operations の開発と管理](../../dev-itpro/index.md) and <https://dynamicsnotes.com> などのブログや他の場所のページからも見つけることができます。 それらのブログとページを個別に読むことができます。また、最初から最後までこのトピックを読んで、実装プロセス中にサブトピック内のリンクされたドキュメントを確認することもできます。
 
-Retail 機能を含む Microsoft Dynamics 365 for Finance and Operations の実装に焦点をあてた情報です。
+Retail 機能を含む Finance and Operations アプリの実装に焦点をあてた情報です。
 
 [Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 

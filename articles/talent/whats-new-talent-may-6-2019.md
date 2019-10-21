@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent の新機能および変更された機能 (2019 年 5 月 6 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent の新機能および変更された機能 (2019 年 5 月 6 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/06/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c541bac532e878c8493a60d95c05c9104d4b96e1
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 6a4571abdb0e104af0a0657c75bf5a6b5764345a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741547"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023864"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-6-2019"></a>Dynamics 365 for Talent の新機能および変更された機能 (2019 年 5 月 6 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-may-6-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 5 月 6 日)
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 
@@ -45,9 +45,9 @@ ms.locfileid: "1741547"
 
 このセクションに記載された変更は、ビルド番号 8.1.2282 に適用されます。 ヘッダーにあるかっこ内の数字は、Microsoft Dynamics Lifecycle Services (LCS) のサポート番号を参照していることがあります。
 
-### <a name="platform-update-26"></a>プラットフォーム update 26
+### <a name="platform-update-26-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 26
 
-プラットフォーム更新プログラム 26 に関する追加情報については [Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26) を参照してください。 
+Finance and Operations のプラットフォーム更新プロフラム 26 に関する追加情報については、[Dynamics 365 Finance and Operations プラットフォーム更新プロフラム 26 (2019 年 5 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26) を参照してください。 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>カスタム フィールドに対する Common Data Service エンティティのサポート
 
@@ -67,7 +67,7 @@ ms.locfileid: "1741547"
 
 ### <a name="worker-address-created-in-common-data-service-isnt-synced-to-talent-317555"></a>Common Data Service で作成された作業者の住所が Talent に同期されない (317555)
 
-この変更により、Common Data Service で作成された住所が Talent Core HR で更新されるようになります。
+この変更により、Common Data Service で作成された住所が Talent: Core HR で更新されるようになります。
 
 
 ## <a name="in-preview"></a>プレビュー

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent の新機能または変更された機能 (2019 年 8 月 20 日)
-description: このトピックでは、Microsoft Dynamics 365 for Talent の新機能または変更された機能について説明します。
+title: Dynamics 365 Talent の新機能または変更された機能 (2019 年 8 月 20 日)
+description: このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f437dbbb786456cd335d5fb85e271d224e0a1383
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918210"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024071"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-20-2019"></a>Dynamics 365 for Talent の新機能または変更された機能 (2019 年 8 月 20 日)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 8 月 20 日)
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Talent の新機能または変更された機能について説明します。
+このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
 ## <a name="changes-in-attract"></a>Attract の変更
 
@@ -43,11 +43,11 @@ ms.locfileid: "1918210"
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 
-今回のリリースには、Dynamics 365 for Talent: Onboard のマイナーなバグ修正が含まれています。
+今回のリリースには、Dynamics 365 Talent: Onboard のマイナーなバグ修正が含まれています。
 
 ## <a name="changes-in-core-hr"></a>Core HR の変更
 
-今回のリリースには、Dynamics 365 for Talent: Core HR のマイナーなバグ修正が含まれています。 このセクションに記載された変更は、ビルド番号 8.1.2429 に適用されます。
+今回のリリースには、Dynamics 365 Talent: Core HR のマイナーなバグ修正が含まれています。 このセクションに記載された変更は、ビルド番号 8.1.2429 に適用されます。
 
 ### <a name="in-preview"></a>プレビュー
 
@@ -69,6 +69,6 @@ Talent の新しいインスタンスをプロビジョニングする時に、�
 
 ### <a name="coming-soon"></a>間もなく公開
 
-#### <a name="platform-update-29"></a>プラットフォーム update 29
+#### <a name="platform-update-29-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 29
 
-プラットフォーム更新プログラム 29 に関する詳細については [Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 29 (2019 年 10 月) のプレビュー機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29) を参照してください。
+Finance and Operations のプラットフォーム更新プロフラム 29 の詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プロフラム 29 (2019 年 10 月) のプレビュー機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29) を参照してください。

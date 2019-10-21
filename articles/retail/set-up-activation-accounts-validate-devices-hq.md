@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b522e28dfefa025bbcb6290691b76919ad642920
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d0a42f5d85473721a666281b3656a560f6a65fc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836518"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024903"
 ---
 # <a name="manage-retail-activation-accounts-and-validate-devices"></a>Retail 有効化アカウントの管理とデバイスの検証
 
@@ -36,7 +36,7 @@ ms.locfileid: "1836518"
 
 この手順は、クラウド POS を有効化する前に完了する必要があります。
 
-1. Microsoft Dynamics 365 for Retail では、**作業者**ページから作業者の**作業者の詳細**ページを開き、AAD 有効化権限を割り当てます。 **編集** をクリックします。
+1. Retail では、**作業者**ページから、作業者の**作業者の詳細**ページを開き、AAD 有効化権限を割り当てます。 **編集** をクリックします。
 2. **小売**タブで、**POS アクセス許可**リンクをクリックします。 作業者がマネージャー アクセス許可グループにあるか、**デバイスの管理**が作業者に対して**はい**に設定されていることを確認します。
 3. **小売**タブの、**外部 ID** で、次のフィールドの値を更新します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "1836518"
 3. 作業者は、AAD アカウント (**外部 ID** 下) にマップする必要があります。
 4. マッピングする AAD アカウントは、同じテナントに属している必要があります。
 5. 作業者を AAD アカウントにマップするには、Microsoft Dynamics Lifecycle Services (LCS) の管理者アカウントを使用して HQ に サインインします。
-6. 作業者がマネージャー ロール内の Dynamics 365 for Retail ユーザーとして設定されていることを確認します (検証でチェックされます)。
+6. 作業者がマネージャー ロール内の Retail ユーザーとして設定されていることを確認します (検証でチェックされます)。
 7. チャネル データがチャネル データベースに存在することを確認します。
 8. **登録** &gt; **登録** (検証によって確認) でハードウェア プロファイルを設定します。
 9. レジスターおよび店舗に画面レイアウトがあることを確認します (検証でチェックされます)。

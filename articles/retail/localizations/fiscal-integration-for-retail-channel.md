@@ -1,6 +1,6 @@
 ---
 title: 小売チャネルの会計統合の概要
-description: このトピックでは、Microsoft Dynamics 365 for Retail で使用できる会計統合の機能の概要を提供します。
+description: このトピックでは、Dynamics 365 Retail で使用できる会計統合の機能の概要を提供します。
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516241"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025410"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>小売チャネルの会計統合の概要
 
@@ -30,13 +30,13 @@ ms.locfileid: "1516241"
 
 ## <a name="introduction"></a>はじめに
 
-このトピックは、Microsoft Dynamics 365 for Retail で使用できる会計統合の機能についての概要です。 会計統合には、小売業界での税金の詐欺防止を目的とした地方の会計法に従って、小売販売の会計登録を可能にするさまざまな会計デバイスおよびサービスとの統合が含まれます。 会計統合を使用してカバーすることができる典型的なシナリオを以下に示します:
+このトピックは、Dynamics 365 Retail で使用できる会計統合の機能についての概要です。 会計統合には、小売業界での税金の詐欺防止を目的とした地方の会計法に従って、小売販売の会計登録を可能にするさまざまな会計デバイスおよびサービスとの統合が含まれます。 会計統合を使用してカバーすることができる典型的なシナリオを以下に示します:
 
 - 会計プリンターのような、Retail POS (販売時点管理) に接続している会計デバイスに小売販売を登録してから、顧客に会計レシートを印刷します。
 - Retail POS で完了した販売と返品に関する情報を、税務当局が運営する外部の Web サービスに安全に送信します。
 - デジタル署名での販売トランザクション データの改ざん防止を保証するのに役立ちます。
 
-Retail の会計統合機能は、Retail POS と会計デバイスおよび会計サービスとの統合のさらなる開発とカスタマイズのための共通のソリューションを提供するフレームワークです。 この機能には、特定の国または地域の基本的な小売シナリオをサポートし、特定の会計デバイスまたはサービスと連携する会計統合サンプルも含まれています。 会計統合サンプルは、Retail コンポーネントのいくつかの拡張機能で構成され、Retail ソフトウェア開発キット (SDK) が含まれます。 Retail SDK で使用できる会計統合サンプルの詳細については、[Retail SDK の会計統合サンプル](#fiscal-integration-samples-in-the-retail-sdk) を参照してください。 Retail SDK をダウンロードして使用する方法については、[Retail SDK の概要](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
+会計統合機能は、Retail POS と会計デバイスおよび会計サービスとの統合のさらなる開発とカスタマイズのための共通のソリューションを提供するフレームワークです。 この機能には、特定の国または地域の基本的な小売シナリオをサポートし、特定の会計デバイスまたはサービスと連携する会計統合サンプルも含まれています。 会計統合サンプルは、Retail コンポーネントのいくつかの拡張機能で構成され、ソフトウェア開発キット (SDK) が含まれます。 会計統合のサンプルの詳細については、「[Retail SDK の会計統合のサンプル](#fiscal-integration-samples-in-the-retail-sdk)」を参照してください。 Retail SDK をダウンロードして使用する方法については、[Retail SDK の概要](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
 他の会計デバイスまたはサービスと Retail POS を統合する、または他の国や地域の要件をカバーするために、会計統合サンプルでサポートされていない他のシナリオをサポートするには、既存の会計統合サンプルを拡張するか、例として既存のサンプルを使用することによって新しいサンプルを作成する必要があります。
 
@@ -132,7 +132,7 @@ Retail POS の会計登録プロセスは、1 つまたは複数のステップ�
 
 ## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Retail SDK の会計統合サンプル
 
-次の会計統合サンプルは、Reatail でリリースされた Retail SDK で現在使用できます:
+次の会計統合サンプルは、Retail SDK で現在使用できます:
 
 - [イタリア向け会計プリンター統合サンプル](emea-ita-fpi-sample.md)
 - [ポーランド向け会計プリンター統合サンプル](emea-pol-fpi-sample.md)

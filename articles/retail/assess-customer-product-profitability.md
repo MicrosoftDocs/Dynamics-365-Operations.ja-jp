@@ -1,6 +1,6 @@
 ---
 title: 顧客と製品の収益性の評価
-description: この記事では、アクセスしたり、参照したり、Microsoft Dynamics 365 for Retail データから顧客と製品の収益性についての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。
+description: この記事では、アクセスしたり、参照したり、Dynamics 365 Retail データから顧客と製品の収益性についての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 28d4eeaa3fcae33f817690ad496b4b123a5838ce
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5a9bebf948bd4602556f70a5a79690621a03261e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561367"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023593"
 ---
 # <a name="assess-customer-and-product-profitability"></a>顧客と製品の収益性の評価
 
 [!include [banner](includes/banner.md)]
 
-この記事では、アクセスしたり、参照したり、Microsoft Dynamics 365 for Retail データから顧客と製品の収益性についての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。
+この記事では、アクセスしたり、参照したり、Dynamics 365 Retail データから顧客と製品の収益性についての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。
 
-Dynamics 365 for Retail の一部として、ユーザーは、次の基準の 1 つに基づいて、組織階層のさまざまなレベルで上位顧客 (10 ～ 100) の収益性を調査できます。
+Retail の一部として、ユーザーは、次の基準の 1 つに基づいて、組織階層のさまざまなレベルで上位顧客 (10 ～ 100) の収益性を調査できます。
 
 - 売上金額
 - 件数

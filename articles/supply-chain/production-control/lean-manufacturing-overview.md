@@ -1,6 +1,6 @@
 ---
 title: リーン生産の概要
-description: この記事では、Dynamics 365 for Finance and Operations のリーン生産の機能の概要と説明を提供します。
+description: この記事では、Dynamics 365 Supply Chain Management のリーン生産の機能の概要と説明を提供します。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,29 +19,29 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6db940548018c9d6bbb31891c21f7c334ba8956
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d338318d3f7a1b56fe98e5c093ccbe795bd8de44
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562395"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250075"
 ---
 # <a name="lean-manufacturing-overview"></a>リーン生産の概要
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations のリーン生産の機能の概要と説明を提供します。
+この記事では、Dynamics 365 Supply Chain Management のリーン生産の機能の概要と説明を提供します。
 
 Lean manufacturing は、リーン操作をモデル化するために使用できるツールを提供します。 これらのツールは、以下のコンセプトおよびビジネス活動をサポートし推進します。
 -   生産および物流を生産フローとしてモデリングすることにより、lean manufacturing の土台を作成します。
 -   かんばんを使用して要望要求シグナルを送り、リーン プル システムを実行します。
 -   かんばん作業を監視および管理します。
 
-Finance and Operations のリーン生産構造は、生産フロー、活動、およびかんばんルールで構成されます。 これらの構造は Finance and Operations プロセスと完全に統合されます。 さまざまな供給品、生産、および調達の戦略を組み合わせるミックス モードの製造環境で lean manufacturing を使用できます。 これらの戦略には、製造オーダー、プロセス産業のバッチ オーダー、発注書、および転送オーダーが含まれます。
+リーン生産構造は、生産フロー、活動、およびかんばんルールで構成されます。 これらの構造は Supply Chain Management プロセスと完全に統合されます。 さまざまな供給品、生産、および調達の戦略を組み合わせるミックス モードの製造環境で lean manufacturing を使用できます。 これらの戦略には、製造オーダー、プロセス産業のバッチ オーダー、発注書、および転送オーダーが含まれます。
 
 | **重要**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Finance and Operations を使用してかんばんのリーン生産の実装をサポートできます。 ただし、リーン原則の正常に実装は、使用する内部ビジネス プロセス、および実際の生産状況および環境により異なります。 |
+| Supply Chain Management を使用してかんばんのリーン生産の実装をサポートできます。 ただし、リーン原則の正常に実装は、使用する内部ビジネス プロセス、および実際の生産状況および環境により異なります。 |
 
 ## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a>製造および物流プロセスの生産フローとしてのモデリング
 lean manufacturing の土台を作成するには、生産および物流プロセスを生産フローとしてモデリングします。 この活動は次のタスクで構成されています。
@@ -69,8 +69,8 @@ Lean manufacturing は、かんばんルールで管理される製造および�
 -   配送ジョブのかんばんボード – このボードでは、現在の配送ジョブの概要を提供します。 ピッキング リストの更新および登録、配送ジョブの開始および完了、および他のタスクを実行できます。
 -   プロセス ジョブのかんばんボード – このボードは通常生産フローをサポートし、1 つまたは複数の作業セルに現在のステータスの概要を示すように設計されています。 このボードからかんばんは優先順位付け、ピッキング、または製造ができます。 かんばんボードには、かんばんをレポートするためのバーコードのスキャンをサポートするように設計されています。
 
-## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>かんばん作業と Finance and Operations プロセスとの統合
-かんばん作業は Finance and Operations の在庫トランザクションのための現在のプロセスと完全に統合されます。
+## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>かんばん作業および Supply Chain Management プロセスとの統合
+かんばん作業は Supply Chain Management の在庫トランザクションのための現在のプロセスと完全に統合されます。
 -   ピッキング活動を実行し、かんばん作業の条件を満たすために使用される材料を補充できます。
 -   かんばんカード、循環かんばんカード、およびピッキング リストを印刷して、かんばんの使用をサポートできます。 これらのドキュメントは、倉庫および生産のフロアのかんばん作業を説明、追跡、および登録するために使用されます。
 -   バーコードをスキャンして、在庫のピッキングおよび配送活動を登録できます。

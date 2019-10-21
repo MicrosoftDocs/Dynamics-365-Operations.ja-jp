@@ -1,6 +1,6 @@
 ---
 title: オムニ チャネル支払の概要
-description: このトピックでは、Microsoft Dynamics 365 for Retail でのオムニ チャネルの支払概要を示します。
+description: このトピックでは、Dynamics 365 Retail でのオムニ チャネルの支払概要を示します。
 author: rubendel
 manager: AnnBe
 ms.date: 05/12/2019
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 78a4538d5b4854a4c87417acc156bcfb7c0da01d
-ms.sourcegitcommit: 45eeca48c6cb4f3f94d61392f4f99a52dc443a97
+ms.openlocfilehash: b16b0cedaa2b908d2707eb7076f82f3513d00b62
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "1606195"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017577"
 ---
 # <a name="omni-channel-payments-overview"></a>オムニ チャネル支払の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail でのオムニ チャネルの支払概要を示します。 ここには、サポートされるシナリオの包括的な一覧、機能、セットアップ、トラブルシューティングについての情報、および一般的な問題の説明が含まれています。
+このトピックでは、Dynamics 365 Retail でのオムニ チャネルの支払概要を示します。 ここには、サポートされるシナリオの包括的な一覧、機能、セットアップ、トラブルシューティングについての情報、および一般的な問題の説明が含まれています。
 
 ## <a name="key-terms"></a>重要な用語
 

@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> このトピックは Dynamics 365 for Retail と Dynamics 365 for Finance and Operations に適用されます。
+> このトピックは Dynamics 365 Retail と Dynamics 365 Commerce (プレビュー) に適用されます。

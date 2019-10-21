@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1c779a2026e6db185b641daed5f0f99fe43285ed
-ms.sourcegitcommit: e7834191b6eb14f525823075efcc1b1ab2c68463
+ms.openlocfilehash: 796b2c2aeddc333ac7b594db25fd88fc467c22e3
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "1920437"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023456"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -29,8 +29,7 @@ ms.locfileid: "1920437"
 
 このトピックでは、既存の [販売時点管理 (POS)] ビューを拡張する方法について説明します。 **トランザクション** 画面および **ようこそ** 画面を拡張するには、画面レイアウト デザイナーを使用します。 **顧客の追加/編集** 画面など、他のすべての POS ビューを拡張するには、Retail ソフトウェア開発キット (SDK) を使用します。 このトピックでは、Retail SDK による既存の POS ビューの拡張について説明します。
 
-> [!NOTE]
-> このトピックでは Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリ更新プログラム 4 修正プログラムが適用されます。
+
 
 POS ビューでは、次の拡張ポイントとパターンがサポートされます。
 

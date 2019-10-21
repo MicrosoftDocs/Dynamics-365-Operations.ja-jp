@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 75a38b99fe0aee7d4dd386191be236e54097e867
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b7f5d61ade071e75d53d5036a47fea438d8afbe6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561272"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249428"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>発注書の承認モバイル ワークスペース
 
@@ -35,13 +35,13 @@ ms.locfileid: "1561272"
 ## <a name="overview"></a>概要 
 承認が必要な発注書は、承認ワークフローを経由します。 ワークフローには、1 人以上の人員のアクションが必要なさまざま手順を含めることができます。 たとえば、ある人物がタスクの完了または発注書の承認を行う必要があるとします。 
 
-**発注書の承認**モバイル ワークスペースで、モバイル デバイスから簡単に発注書の確認および対応ができます。 また、このワークスペースを使用して、Microsoft Dynamics 365 for Finance and Operations の Web クライアントからできるものと同じワークフロー アクションを実行することもできます。
+**発注書の承認**モバイル ワークスペースで、モバイル デバイスから簡単に発注書の確認および対応ができます。 また、このワークスペースを使用して、Web クライアントからできるものと同じワークフロー アクションを実行することもできます。
 
 ## <a name="prerequisites"></a>必要条件
-組織に配置されている Finance and Operations のバージョンによって、前提条件は異なります。
+組織に配置されている Supply Chain Management のバージョンによって、前提条件は異なります。
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations を使用する場合の前提条件 
-Microsoft Dynamics 365 for Finance and Operations を組織に配置している場合、システム管理者は**発注書承認**モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Management を使用する場合の前提条件 
+Finance and Operations を組織に配置している場合、システム管理者は**発注書承認**モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を使用する場合の前提条件
 Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
@@ -75,7 +75,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
-Microsoft Dynamics 365 for Unified Operations Mobile アプリをダウンロードしてインストールします。
+Finance and Operations モバイル アプリをダウンロードしてインストールします。
 
 - [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
 - [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd94ae4c5ea855139fd1c41060de7db455ffab06
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dd51fa667fd48b7bab64c3566b616631c6f9bcd1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557645"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249635"
 ---
 # <a name="cost-management-home-page"></a>原価管理ホーム ページ
 
@@ -69,5 +69,5 @@ ms.locfileid: "1557645"
 [Dynamics AX 製造研究開発チーム ブログ](https://blogs.msdn.microsoft.com/axmfg) および [Dynamics AX の Supply Chain Management の研究開発チーム ブログ](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、原価管理に関する意見、ニュース、その他の情報を見つけることができます。 これらの投稿の一部は原価管理の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
 
 #### <a name="task-guides"></a>タスク ガイド
-Finance and Operations には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
+追加のヘルプは、タスク ガイドとして使用できます。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
 

@@ -1,5 +1,5 @@
 ---
-title: Retail ソフトウェア開発キット (SDK)
+title: POS オーバーライド要求ハンドラー (SDK)
 description: このトピックでは、Retail SDK に関する一般情報を提供します。 Retail SDK は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。
 author: RobinARH
 manager: AnnBe
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: c760902d41904fa69b16deb29b81c94b50fe3f4a
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 085f803147aefc3b84b3293e11f5b6356a19a536
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833133"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550497"
 ---
 # <a name="pos-override-request-handler-sdk"></a>POS オーバーライド要求ハンドラー (SDK)
 

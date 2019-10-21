@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 47829a6fcae37e03510929dc46b942455016df0b
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 829fa771003de7759b237d4499aa038040b46a3f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577872"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018041"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omni チャンネルの高度な自動請求
 
@@ -34,7 +34,7 @@ ms.locfileid: "1577872"
 
 高度な自動請求機能が有効になっていると、サポートされている任意の小売チャネル (販売時点管理 (POS)、コール センター、およびオンライン) で作成された注文は、ERP アプリケーションで定義された[自動請求](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services)設定を、ヘッダーおよび明細行レベルに関連する請求両方に使用できます。
 
-Dynamics 365 for Retail バージョン 10.0 以前のリリースでは、[自動請求](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services)設定は、E コマースおよびコール センター チャネルで作成された注文によってのみアクセス可能です。 バージョン 10.0 以降では、POS で作成された注文は、自動請求のコンフィギュレーションを使用できます。 これにより、追加の雑費は、販売トランザクションに体系的に追加することができます。
+小売バージョン 10.0 以前のリリースでは、[自動請求](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) 構成は、E コマースおよびコール センター チャネルで作成された注文によってのみアクセス可能です。 バージョン 10.0 以降では、POS で作成された注文は、自動請求のコンフィギュレーションを使用できます。 これにより、追加の雑費は、販売トランザクションに体系的に追加することができます。
 
 バージョン 10.0 より前のリリースを使用すると、POS ユーザーは、「すべて出荷」または「選択された出荷」 POS トランザクションの作成中に、配送料を手動で入力するように求められます。 アプリケーションの雑費機能は、請求金額が注文にどのように書き込まれるかに関して使用されますが、体系的な計算は提供されません。計算は、請求金額の値を決定するためのユーザーの入力に依存します。 請求金額は単一の「出荷」関連費用コードとしてのみ追加でき、作成後に POS で簡単に編集または変更することはできません。
 

@@ -1,6 +1,6 @@
 ---
-title: Talent 0 Attract の Microsoft Dynamics にあるジョブを閉じる
-description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract にあるジョブの閉じ方について説明します。
+title: Microsoft Dynamics Talent - Attract のジョブを閉じる
+description: このトピックでは、Microsoft Dynamics 365 Talent - Attract にあるジョブの閉じ方について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/10/2019
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2010-07-10
 ms.dyn365.ops.version: Talent 2019 Wave 1 update
-ms.openlocfilehash: ec1b4d1fcd02bad329030b37a491b52a7c9c0a30
-ms.sourcegitcommit: 42589141431a5f357804b7e9ea9c781d594ef09d
+ms.openlocfilehash: 632db42b12d0a442b8e1f35dbc784d252ffde399
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773543"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008619"
 ---
 # <a name="close-a-job"></a>職務の終了
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract、**ジョブがキャンセルされました**または**職位は採用済みです**のいずれかのジョブを閉じることができます。 ジョブはいつでもキャンセルできます。
+Microsoft Dynamics 365 Talent: Attract、**ジョブがキャンセルされました**または**職位は採用済みです**のいずれかのジョブを閉じることができます。 ジョブはいつでもキャンセルできます。
 
 職位が入力されたことを示す場合、応募者はその職務の申し出を受諾する必要があります。
 

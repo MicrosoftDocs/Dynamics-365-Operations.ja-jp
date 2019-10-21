@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-02-25
 ms.dyn365.ops.version: AX 10.0.1
-ms.openlocfilehash: 40f5831a9c6e61d35816fc17f5c510c39069ee0a
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: a13b4dbd0c01b1d20885a1f25e115cf166a607c3
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833054"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025530"
 ---
 # <a name="view-pos-extension-package-information"></a>POS 拡張パッケージ情報の表示
 
@@ -28,8 +28,7 @@ ms.locfileid: "1833054"
 [!include [banner](../includes/banner.md)]
 
 
-> [!NOTE]
-> このトピックは Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.1 以降、および Microsoft Dynamics 365 for Retail バージョン 10.0.1 以降に適用されます。
+
 
 販売時点管理 (POS) の **設定** ビューでは、**拡張パッケージ** セクションにコア POS の一部として含まれている POS 拡張パッケージのリストが表示されます。 各パッケージのタイルには、そのパッケージの状態が表示されます。 パッケージの状態は、拡張機能がロードされたのか、ロードできなかったのか、またはスキップされたのかを示します。
 

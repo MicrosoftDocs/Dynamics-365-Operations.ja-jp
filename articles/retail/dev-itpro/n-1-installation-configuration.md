@@ -1,6 +1,6 @@
 ---
 title: 段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
-description: このトピックでは、Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 for Retail バックオフィスを使用できるように、段階的なロールアウト (N-1) のコンポーネントを設定する方法について説明します。
+description: このトピックでは、Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 Retail Headquarters を使用できるように、段階的なロールアウト (N-1) のコンポーネントを設定する方法について説明します。
 author: jashanno
 manager: AnnBe
 ms.date: 07/31/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: e2aecccb4ed70e6a28bdb71435d5c663a358d958
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 7b07a2a8c3b8316ede4ab5bbecf85ef822ac347a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833782"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025543"
 ---
 # <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
 
 [!include [banner](../../includes/banner.md)]
 
-ここでは、Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) および Retail サーバー、または Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS) などの Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 for Retail バックオフィスを使用できるように、段階的ロールアウト (N-1) のコンポーネントを設定する方法について説明します。
+ここでは、Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) および Retail サーバー、または Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS) などの Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 Retail Headquarters を使用できるように、段階的ロールアウト (N-1) のコンポーネントを設定する方法について説明します。
 
 ## <a name="key-terms"></a>重要な用語
 | 相談 | 説明 |
@@ -42,7 +42,7 @@ ms.locfileid: "1833782"
 - **[Azure AD アカウントを設定](#set-up-azure-ad-accounts)** – このセクションでは、小売用バックオフィスに接続するために使用する N-1 コンポーネントの Microsoft Azure Active Directory (Azure AD) アカウントの設定方法について説明します。
 - **[N-1コンポーネントを構成する](#configure-n-1-components)** – このセクションでは、小売用バックオフィスで N-1コンポーネントを構成する方法について説明します。
 - **[N-1 コンポーネントのインストール](#install-n-1-components)** – このセクションでは既存の AX 2012 R3 環境で N-1 コンポーネントをダウンロードおよびインストールする方法について説明します。
-- **[N-1 に切り替えるための切替手順](#cutover-steps-to-switch-to-n-1)** – このセクションでは、既存の AX 2012 R3 環境を AX 2012 R3 バックオフィスから Dynamics 365 小売用バックオフィスに切り替えるために、新しい N-1 コンポーネントを使用する方法について説明します。
+- **[N-1 に切り替えるための切替手順](#cutover-steps-to-switch-to-n-1)** – このセクションでは、既存の AX 2012 R3 環境を AX 2012 R3 バックオフィスから Dynamics 365 Retail Headquarters に切り替えるために、新しい N-1 コンポーネントを使用する方法について説明します。
 - **[トラブルシューティングの手順](#troubleshooting-steps)** – このセクションでは、一般的な問題のトラブルシューティングの手順について説明します。
 - **[N-1 に必要な KB](#required-kbs-for-n-1)** – このセクションでは、N-1 環境を設定するために必要な Microsoft サポート技術情報の記事番号 (KB) が一覧で表示されます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "1833782"
 ![段階的なロールアウト (N-1) アーキテクチャ](media/CDX/N-1/Overview.jpg)
 
 ## <a name="verify-that-the-n-1-license-key-is-turned-on"></a>N-1 ライセンス キーが有効であることを確認します。
-コンフィギュレーションおよび N-1 コンポーネントのインストールを開始する前に、対応するライセンス キーが有効であることを確認してください。 このライセンス キーは、AX 2012 R3 から Microsoft Dynamics 365 for Retail へのアップグレード中に自動的にオンになります。 ただし、次の手順でこのキーが必要となるため、続行する前にオンになっていることを確認する必要があります。
+コンフィギュレーションおよび N-1 コンポーネントのインストールを開始する前に、対応するライセンス キーが有効であることを確認してください。 このライセンス キーは、AX 2012 R3 から Microsoft Dynamics 365 Retail へのアップグレード中に自動的にオンになります。 ただし、次の手順でこのキーが必要となるため、続行する前にオンになっていることを確認する必要があります。
 
 1. 小売用バックオフィスにサインインし、**システム管理\>設定\>ライセンス コンフィギュレーション**に移動します。
 2. **コンフィギュレーション キー** タブで、**小売**キーを展開し、**小売用スケジューラ**キーを展開し、**Retail Data Commerce Exchange 下位互換性**キーのチェック ボックスがオンであることを確認します。
@@ -276,15 +276,15 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
         このアプリケーション ID とシークレットは、Async Server Connector service のインストールで使用したのと同じアプリケーション ID とシークレットにできます。 クライアント ID およびシークレットを作成するため Azure Web アプリを正しく生成する方法の詳細については、「[Azure Active Directory アプリケーションを作成する](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)」で「Azure AD でアプリケーションを登録するための基本」セクションを参照してください。 Web アプリを作成するとき、最初の URI と URL は特定の値である必要はありません。 作成されるアプリケーション ID (クライアント ID) とシークレットのみ重要です。
 
 ## <a name="cutover-steps-to-switch-to-n-1"></a>N-1に切り替えるための切替手順
-ここでは、既存の AX 2012 R3 チャンネル環境を AX 2012 R3 バックオフィスから Dynamics 365 Retail バックオフィスに切り替えるための、推奨される詳細な手順を説明します。 これらの手順は一般的なものです。 特定のビジネスまたは技術面の要件に対応するためには、さまざまな実装がこれらの手順から逸脱する必要がある可能性があります。
+ここでは、既存の AX 2012 R3 チャンネル環境を AX 2012 R3 バックオフィスから Dynamics 365 Retail Headquarters に切り替えるための、推奨される詳細な手順を説明します。 これらの手順は一般的なものです。 特定のビジネスまたは技術面の要件に対応するためには、さまざまな実装がこれらの手順から逸脱する必要がある可能性があります。
 
 ### <a name="prerequisites"></a>前提条件
 切り替えの環境を準備するのにはこれらの手順に従います。
 
 | ステップ | 詳細情報 | タイムライン |
 |---|---|---|
-| 1. 小売用バックオフィスを配置します。 | 小売用バックオフィスを稼働します。 Microsoft Dynamics 365 for Retail クラウド POS (CPOS) は、環境内の機能を検証するために使用できます。 | 切替前の数週間または数か月 |
-| 2. Microsoft Dynamics 365 for Retail アプリケーション (X++) KB をインストールします。 | N-1 に関連するすべての問題が解決されていることを確認するには、[N-1 に必要な KB](#required-kbs-for-n-1) セクションに記載されている KB をインストールします。 | 切替前の数週間または数か月 |
+| 1. 小売用バックオフィスを配置します。 | 小売用バックオフィスを稼働します。 Microsoft Dynamics 365 Retail クラウド POS (CPOS) は、環境内の機能を検証するために使用できます。 | 切替前の数週間または数か月 |
+| 2. Microsoft Dynamics 365 Retail アプリケーション (X++) KB をインストールします。 | N-1 に関連するすべての問題が解決されていることを確認するには、[N-1 に必要な KB](#required-kbs-for-n-1) セクションに記載されている KB をインストールします。 | 切替前の数週間または数か月 |
 | 3. Azure AD アカウントを設定します。 | [Set up Azure AD アカウントの設定](#set-up-azure-ad-accounts) セクションの指示に従い、N-1 コンポーネントに必要なアカウントを作成し、小売用バックオフィスに対して認証します。 | 切替前の数週間または数か月 |
 | 4. 小売用バックオフィスのコンフィギュレーション | [N-1 コンポーネントを構成する](#configure-n-1-components) セクションの指示に従い、N-1 コンポーネントをインストールする前にすべての設定を構成します。 | 切替前の数週間または数か月 |
 | 5. N-1 コンポーネントのインストール。 | [N-1 コンポーネントのインストール](#install-n-1-components) セクションの指示に従い、N-1 コンポーネントをインストールします。 N-1 Async Server Connector Service コンポーネントはインストールする必要がありますが、AX 2012 R3 と Dynamics 365 CDX パッケージが混在しないようにするには、すぐに無効にする必要があることに注意してください。 | 切替前の数週間または数か月 |
@@ -294,7 +294,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 
 | ステップ | 詳細情報 | タイムライン | この手順を実行されたことを検証する方法 |
 |---|---|---|---|
-| 1. AX 2012 R3 のすべてのダウンロード ジョブを停止します。 | AX2012 R3 のバック オフィスですべての AX 2012 R3 ダウンロード ジョブが停止していることを確認してください。 | 切替前に少なくとも数日間 | アップロード ジョブの AX 2012 R3 ネットワーク共有内のすべてのパッケージが処理され、新たに表示されるパッケージはありません。 |
+| 1. AX 2012 R3 のすべてのダウンロード ジョブを停止します。 | AX 2012 R3 のバック オフィスですべての AX 2012 R3 ダウンロード ジョブが停止していることを確認してください。 | 切替前に少なくとも数日間 | アップロード ジョブの AX 2012 R3 ネットワーク共有内のすべてのパッケージが処理され、新たに表示されるパッケージはありません。 |
 | 2. 小売用バックオフィスですべての **AX63** CDX ダウンロード ジョブを完全に同期させます。 | CXD ダウンロード ジョブを実行してパッケージが生成され、Azure Blob storage の Blob に削除されていることを確認し、N-1 非同期サーバー コネクタ サービスが切替中にそれらを使用できるようにします。 | 切替前に少なくとも数日間 | CDX ダウンロード ジョブは、小売用バックオフィス内の**ダウンロード セッション**にて**利用可能**になります。 |
 
 ### <a name="cutover-steps"></a>切替手順
@@ -389,7 +389,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 ## <a name="required-kbs-for-n-1"></a>N-1 に必要な KB
 次の図では、正常に動作するために N-1 を必要とする全ての KB を表しています。
 
-### <a name="dynamics-365-for-retail--microsoft-dynamics-365-72-headquarters"></a>Dynamics 365 for Retail – Microsoft Dynamics 365 7.2 バック オフィス
+### <a name="dynamics-365-retail--microsoft-dynamics-365-72-headquarters"></a>Dynamics 365 Retail – Microsoft Dynamics 365 7.2 バック オフィス
 | KB 番号 | 肩書き |
 |---|---|
 | 4095190 | 顧客が 6.3 から D365 にデータを移動するための公式アップグレード プロセスに従わなかった場合に N-1 機能を有効化するのに必要なため、RetailSharedParameters フォームの RetailSharedParameter の TransactionServiceProfileID を公開します。 |

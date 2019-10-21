@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 69d8454c5ab4232382b8ddb8d45ea25facdf9289
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: aabac7d8dacc8e91526713f1075c65549676fdc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833764"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025541"
 ---
 # <a name="retail-modern-pos-mpos-and-cloud-pos-trigger-extensibility"></a>Retail Modern POS (MPOS) およびクラウド POS のトリガー拡張機能
 
@@ -36,7 +36,7 @@ ms.locfileid: "1833764"
 <a name="trigger-overview"></a>トリガーの概要
 ----------------
 
-トリガーは、Microsoft Dynamics 365 for Retailfor Retail POS によって発生するイベントです。 トリガーを使用すると、操作の前後にカスタム コードを挿入できます。 トリガーには事前トリガーと事後トリガーの 2 種類があります。
+トリガーは、Microsoft Dynamics 365 Retail for Retail POS によって発生するイベントです。 トリガーを使用すると、操作の前後にカスタム コードを挿入できます。 トリガーには事前トリガーと事後トリガーの 2 種類があります。
 
 | プレトリガー                                                                                                                                                                                                                                                    | ポスト トリガー                                                                                                                                                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

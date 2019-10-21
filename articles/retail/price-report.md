@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 72f4d248f3ac49bbfd8e5a7a12352d92b89bb0eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb02bdeca2d71d84ebdddfd16d471a532823e42
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564950"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025198"
 ---
 # <a name="retail-price-reports"></a>小売価格レポート
 
 [!include [banner](includes/banner.md)]
 
 
-顧客に競争力のある価格を提供するために、小売業者はしばしば製品の価格を変更します。 店舗マネージャーは、店舗の棚に表示されている価格を更新するために必要なリソースを計画できるように、最新または今後の価格変更に簡単にアクセスできる機能を求めています。 Dynamics 365 for Retail リリース 10.0 で店舗マネージャーが**価格**レポートを開くには、**すべての小売店舗 \> 店舗 \> 価格レポート**に移動し、その店舗に関連する製品の更新された価格を表示します。 
+顧客に競争力のある価格を提供するために、小売業者はしばしば製品の価格を変更します。 店舗マネージャーは、店舗の棚に表示されている価格を更新するために必要なリソースを計画できるように、最新または今後の価格変更に簡単にアクセスできる機能を求めています。 Retail リリース 10.0 で店舗マネージャーが**価格**レポートを開くには、**すべての小売店舗 \> 店舗 \> 価格レポート**に移動し、その店舗に関連する製品の更新された価格を表示します。 
 
 価格レポートを有効にするには、**小売店舗の価格レポートを有効にする**パラメーターをオンにする必要があります。 このパラメーターは、**小売パラメーター\>割引\> その他**タブにあります。**価格レポート**ページを開くと、さまざまな構成のダイアログ ボックスが表示されます。 使用可能な構成は次のとおりです。
 
