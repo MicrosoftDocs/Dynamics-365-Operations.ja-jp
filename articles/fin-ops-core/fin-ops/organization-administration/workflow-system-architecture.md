@@ -1,0 +1,62 @@
+---
+title: ワークフロー システムのアーキテクチャ
+description: この記事では、ワークフロー システムのアーキテクチャについて説明します。
+author: sericks007
+manager: AnnBe
+ms.date: 08/18/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Developer, IT Pro
+ms.reviewer: sericks
+ms.search.scope: Core, Operations
+ms.custom: 56351
+ms.assetid: 107a3f9f-aa1d-4087-9b35-196d8b82b0fb
+ms.search.region: Global
+ms.author: tjvass
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ac6c65f455e04fe51fd91de39a7cc4843a826260
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2191713"
+---
+# <a name="workflow-system-architecture"></a><span data-ttu-id="7eaad-103">ワークフロー システムのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="7eaad-103">Workflow system architecture</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="7eaad-104">この記事では、ワークフロー システムのアーキテクチャについて説明します。</span><span class="sxs-lookup"><span data-stu-id="7eaad-104">This article describes the architecture of the workflow system.</span></span>
+
+<span data-ttu-id="7eaad-105">ワークフロー インフラストラクチャは、Application Object Server (AOS) でホストされる 2 つのコンポーネント (X++ ワークフロー ランタイムおよび管理ワークフロー ランタイム) から構成されます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-105">The workflow infrastructure consists of two components that are hosted on Application Object Server (AOS): the X++ workflow runtime and the managed workflow runtime.</span></span>
+
+<span data-ttu-id="7eaad-106">X++ ワークフロー ランタイムは、次のコンポーネントで構成されます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-106">The X++ workflow runtime consists of the following components:</span></span>
+
+- <span data-ttu-id="7eaad-107">ワークフロー ランタイム アプリケーション プログラミング インターフェイス (API)</span><span class="sxs-lookup"><span data-stu-id="7eaad-107">Workflow runtime application programming interface (API)</span></span>
+- <span data-ttu-id="7eaad-108">メッセージング バッチ ジョブ</span><span class="sxs-lookup"><span data-stu-id="7eaad-108">A messaging batch job</span></span>
+- <span data-ttu-id="7eaad-109">メッセージ キュー</span><span class="sxs-lookup"><span data-stu-id="7eaad-109">A message queue</span></span>
+
+<span data-ttu-id="7eaad-110">必要に応じて、メッセージング バッチ ジョブまたはワークフロー ランタイム API のいずれかがアプリケーション コードを呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-110">Either the messaging batch job or the workflow runtime API can invoke the application code, if it's required.</span></span> <span data-ttu-id="7eaad-111">X++ ワークフロー ランタイムは、Microsoft .NET フレームワークの CIL (共通中間言語) にコンパイルされます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-111">The X++ workflow runtime is compiled into the Common Intermediate Language (CIL) of the Microsoft .NET Framework.</span></span>
+
+<span data-ttu-id="7eaad-112">管理ワークフロー ランタイムは、Windows Workflow Foundation および Finance and Operations アプリの拡張機能で構成されます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-112">The managed workflow runtime consists of the Windows Workflow Foundation and Finance and Operations apps extensions.</span></span>
+
+<span data-ttu-id="7eaad-113">論理的には、ワークフロー インフラストラクチャは拡張であり、ユーザーにとって透過的です。</span><span class="sxs-lookup"><span data-stu-id="7eaad-113">Logically, the workflow infrastructure is an extension and is transparent to users.</span></span> <span data-ttu-id="7eaad-114">物理的には、X++ ワークフローおよび管理ワークフローのランタイムは両方とも AOS でホストされます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-114">Physically, both the X++ workflow and the managed workflow runtimes are hosted on AOS.</span></span> <span data-ttu-id="7eaad-115">ワークフロー インフラストラクチャは AOS と .NET Interop でバッチ処理を使用して、その 2 つのサブシステムを統合し、片方のサブシステムからもう一方のサブシステムにメッセージを渡します。</span><span class="sxs-lookup"><span data-stu-id="7eaad-115">The workflow infrastructure uses batch processing on AOS and .NET Interop to integrate both subsystems, and to pass messages from one subsystem to the other.</span></span> <span data-ttu-id="7eaad-116">バッチ プロセッサで実行される X++ コードは、.NET CIL にコンパイルされます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-116">The X++ code that is run in the batch processor is compiled to .NET CIL.</span></span> <span data-ttu-id="7eaad-117">バッチ処理は、.NET 共通言語ランタイム (CLR) で実行されます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-117">The batch processing runs in the .NET common language runtime (CLR).</span></span>
+
+<span data-ttu-id="7eaad-118">次の図に、ワークフロー インフラストラクチャの高レベル アーキテクチャの概要を示します。</span><span class="sxs-lookup"><span data-stu-id="7eaad-118">The following figure shows the high-level architecture of the workflow infrastructure.</span></span>
+
+<span data-ttu-id="7eaad-119">[![ワークフロー\_architecturediagram2016](./media/workflow_architecturediagram2016.png)](./media/workflow_architecturediagram2016.png)</span><span class="sxs-lookup"><span data-stu-id="7eaad-119">[![workflow\_architecturediagram2016](./media/workflow_architecturediagram2016.png)](./media/workflow_architecturediagram2016.png)</span></span>
+
+<span data-ttu-id="7eaad-120">ユーザーは、 ワークフロー ページとコントロールを使用して、業務プロセスに参加できます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-120">Users can use workflow pages and controls to participate in business processes.</span></span>
+
+<span data-ttu-id="7eaad-121">開発者は、追加済のオブジェクトのワークフローを作成できます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-121">Developers can create workflows for the objects that they have added.</span></span> <span data-ttu-id="7eaad-122">次の表は、ユーザーが経費精算書を承認のためにワークフロー システムに提出したときに発生するワークフロー ステップを示します。</span><span class="sxs-lookup"><span data-stu-id="7eaad-122">The following table describes the workflow steps that occur when a user submits an expense report to the workflow system for approval.</span></span>
+
+| <span data-ttu-id="7eaad-123">ステップ</span><span class="sxs-lookup"><span data-stu-id="7eaad-123">Step</span></span> | <span data-ttu-id="7eaad-124">ランタイム</span><span class="sxs-lookup"><span data-stu-id="7eaad-124">Runtime</span></span>                  | <span data-ttu-id="7eaad-125">活動</span><span class="sxs-lookup"><span data-stu-id="7eaad-125">Activity</span></span> |
+|------|--------------------------|----------|
+| <span data-ttu-id="7eaad-126">1</span><span class="sxs-lookup"><span data-stu-id="7eaad-126">1</span></span>    | <span data-ttu-id="7eaad-127">X++ ワークフロー ランタイム</span><span class="sxs-lookup"><span data-stu-id="7eaad-127">X++ workflow runtime</span></span>     | <span data-ttu-id="7eaad-128">ユーザーは、ワークフローのいずれかの制御で **送信** をクリックして、経費精算書を送信します。</span><span class="sxs-lookup"><span data-stu-id="7eaad-128">A user submits an expense report by clicking the **Submit** button on one of the workflow controls.</span></span> <span data-ttu-id="7eaad-129">このアクションにより、X++ コードはワークフロー ランタイム API を呼び出し、ワークフロー インスタンスが有効になります。</span><span class="sxs-lookup"><span data-stu-id="7eaad-129">This action causes X++ code to activate a workflow instance by calling the workflow runtime API.</span></span> <span data-ttu-id="7eaad-130">ワークフロー ランタイム API は、メッセージをメッセージ キューに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-130">The workflow runtime API posts a message to the message queue.</span></span> <span data-ttu-id="7eaad-131">メッセージング バッチ ジョブは、メッセージを読み取り、ワークフローのアクティブ化要求を管理ワークフロー ランタイムに送信します。</span><span class="sxs-lookup"><span data-stu-id="7eaad-131">The messaging batch job reads the message and sends a workflow activation request to the managed workflow runtime.</span></span><blockquote>[!NOTE] <span data-ttu-id="7eaad-132">メッセージング バッチ ジョブは 1 分間隔でメッセージ キューを処理します。</span><span class="sxs-lookup"><span data-stu-id="7eaad-132">The messaging batch job processes the message queue at one-minute intervals.</span></span></blockquote> |
+| <span data-ttu-id="7eaad-133">2</span><span class="sxs-lookup"><span data-stu-id="7eaad-133">2</span></span>    | <span data-ttu-id="7eaad-134">管理されるワークフロー ランタイム</span><span class="sxs-lookup"><span data-stu-id="7eaad-134">Managed workflow runtime</span></span> | <span data-ttu-id="7eaad-135">X++ からの .NET Interop は、メッセージを受け取り、新しいワークフロー インスタンスを Windows Workflow Foundation 経由で開始します。</span><span class="sxs-lookup"><span data-stu-id="7eaad-135">.NET Interop from X++ receives the message and starts a new workflow instance via Windows Workflow Foundation.</span></span> <span data-ttu-id="7eaad-136">このワークフロー インスタンスは、X++ への.NET Interop CIL 経由でX++ ワークフロー ランタイム API のコールバックを実行し、ワークフローが起動されたことを示すメッセージを書き込みます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-136">This workflow instance performs a callback to the X++ workflow runtime API via .NET Interop to X++ CIL and posts a message that the workflow has started.</span></span><p><span data-ttu-id="7eaad-137">メッセージが転記されると、管理ワークフロー ランタイムは、アイドル状態のワークフロー インスタンスをデータベースに保存します。</span><span class="sxs-lookup"><span data-stu-id="7eaad-137">After the message is posted, the managed workflow runtime saves the idle workflow instance to the database.</span></span> <span data-ttu-id="7eaad-138">その後、ランタイムはメモリからワークフロー インスタンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="7eaad-138">The runtime then removes the workflow instance from memory.</span></span> <span data-ttu-id="7eaad-139">管理ワークフロー ランタイムが、このワークフロー インスタンスに対する別のメッセージを X++ ワークフロー ランタイムから受け取ると、ワークフロー インスタンスはメモリーに復元され、再開されます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-139">When the managed workflow runtime receives another message from the X++ workflow runtime for this workflow instance, it restores the workflow instance to memory and resumes it.</span></span></p><p><span data-ttu-id="7eaad-140">各ワークフロー インスタンスは固有です。</span><span class="sxs-lookup"><span data-stu-id="7eaad-140">Each workflow instance is unique.</span></span> <span data-ttu-id="7eaad-141">2 人のユーザーが承認のために経費精算書を提出すると、2 つのワークフロー インスタンスが開始されます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-141">If two users submit their expense reports for approval, two workflow instances are started.</span></span></p> |
+| <span data-ttu-id="7eaad-142">3</span><span class="sxs-lookup"><span data-stu-id="7eaad-142">3</span></span>    | <span data-ttu-id="7eaad-143">X++ ワークフロー ランタイム</span><span class="sxs-lookup"><span data-stu-id="7eaad-143">X++ workflow runtime</span></span>     | <span data-ttu-id="7eaad-144">メッセージング バッチ ジョブが、**ワークフローで開始された**メッセージをメッセージ キューから読み取り、**ワークフローで開始された**イベントを処理するアプリケーション イベント ハンドラーを開始します。</span><span class="sxs-lookup"><span data-stu-id="7eaad-144">The messaging batch job reads the **workflow started** message from the message queue and invokes the application event handler to process a **workflow started** event.</span></span> <span data-ttu-id="7eaad-145">次に、バッチ ジョブは、イベントが処理されたことを示す確認メッセージを書き込みます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-145">The batch job then posts an acknowledgment message that the event was processed.</span></span> |
+| <span data-ttu-id="7eaad-146">4</span><span class="sxs-lookup"><span data-stu-id="7eaad-146">4</span></span>    | <span data-ttu-id="7eaad-147">両方</span><span class="sxs-lookup"><span data-stu-id="7eaad-147">Both</span></span>                     | <span data-ttu-id="7eaad-148">この同じメッセージング パターンが、ワークフロー インスタンスのライフサイクル全体で必要に応じて繰り返されます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-148">This same messaging pattern is repeated, as required, throughout the lifecycle of the workflow instance.</span></span> |
+
+<span data-ttu-id="7eaad-149">このワークフロー アーキテクチャは、信頼できる堅牢なメッセージ システムを提供し、また、ワークフローの状態とアプリケーションの状態を常に同期させるために役立ちます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-149">The workflow architecture helps provide a reliable and durable messaging system, and also helps guarantee that the state of the workflow is always synchronized with the state of the application.</span></span> <span data-ttu-id="7eaad-150">ハードウェアやソフトウェアに予期しない障害が発生すると、ワークフロー インスタンスの状態は最後に保存された既知の点まで戻され、メッセージはキュー内に保持されます。</span><span class="sxs-lookup"><span data-stu-id="7eaad-150">If an unexpected hardware or software failure occurs, the workflow instance state is returned to its last known saved point, and the message stays in the queue.</span></span> <span data-ttu-id="7eaad-151">したがって、アーキテクチャから見ると、復旧モデルは、問題の解決とワークフローの再開です。</span><span class="sxs-lookup"><span data-stu-id="7eaad-151">Therefore, from an architecture perspective, the recovery model is to fix the problem and resume the workflow.</span></span>

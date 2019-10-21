@@ -16,69 +16,51 @@ ms.search.industry: Retail
 ms.author: anmukh
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3803d51578e8f5301b851d1c8b1e12d0a1c3385f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ad9630684ccf2f25df0ef95415377c18be5fdf9f
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572038"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550472"
 ---
-# <a name="deployment-guidelines-for-cash-registers-for-czech-republic-hungary-and-poland"></a><span data-ttu-id="f4163-103">チェコ共和国、ハンガリー、およびポーランドのキャッシュ レジスターの配置ガイドライン</span><span class="sxs-lookup"><span data-stu-id="f4163-103">Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland</span></span>
+# <a name="deployment-guidelines-for-advance-invoice-report-printing-for-czech-republic-hungary-and-poland"></a><span data-ttu-id="31ec3-103">チェコ共和国、ハンガリー、およびポーランドの事前請求書レポート印刷の配置ガイドライン</span><span class="sxs-lookup"><span data-stu-id="31ec3-103">Deployment guidelines for Advance Invoice report printing for Czech Republic, Hungary, and Poland</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="f4163-104">このトピックでは、チェコ共和国、ハンガリー、およびポーランドで Microsoft Dynamics 365 for Retail のローカライゼーションを有効にする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f4163-104">This topic shows how to enable the Microsoft Dynamics 365 for Retail localization for Czech Republic, Hungary, and Poland.</span></span> <span data-ttu-id="f4163-105">ローカライズは、小売コンポーネントのいくつかの拡張機能で構成されます。</span><span class="sxs-lookup"><span data-stu-id="f4163-105">The localization consists of several extensions of Retail components.</span></span> <span data-ttu-id="f4163-106">これらの拡張機能は、販売時点管理 (POS) から**事前請求書**レポートを印刷できるようにします。</span><span class="sxs-lookup"><span data-stu-id="f4163-106">These extensions let you print the **Advance Invoice** report from Point of Sale (POS).</span></span> <span data-ttu-id="f4163-107">チェコ共和国、ハンガリー、およびポーランド Retail ローカライズの詳細については、次を参照してください。[東ヨーロッパの小売り業向け事前請求書](./emea-eeu-advance-invoices-for-retail.md)</span><span class="sxs-lookup"><span data-stu-id="f4163-107">For more information about the Retail localization for Czech Republic, Hungary, and Poland, see [Advance invoices for Retail for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).</span></span>
+<span data-ttu-id="31ec3-104">このトピックでは、チェコ共和国、ハンガリー、およびポーランドで Dynamics 365 Retail のローカライゼーションを有効にする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-104">This topic shows how to enable the Dynamics 365 Retail localization for Czech Republic, Hungary, and Poland.</span></span> <span data-ttu-id="31ec3-105">ローカライズは、小売コンポーネントのいくつかの拡張機能で構成されます。</span><span class="sxs-lookup"><span data-stu-id="31ec3-105">The localization consists of several extensions of Retail components.</span></span> <span data-ttu-id="31ec3-106">これらの拡張機能は、販売時点管理 (POS) から**事前請求書**レポートを印刷できるようにします。</span><span class="sxs-lookup"><span data-stu-id="31ec3-106">These extensions let you print the **Advance Invoice** report from Point of Sale (POS).</span></span> <span data-ttu-id="31ec3-107">チェコ共和国、ハンガリー、およびポーランド Retail ローカライズの詳細については、次を参照してください。[東ヨーロッパの小売り業向け事前請求書](./emea-eeu-advance-invoices-for-retail.md)</span><span class="sxs-lookup"><span data-stu-id="31ec3-107">For more information about the Retail localization for Czech Republic, Hungary, and Poland, see [Advance invoices for Retail for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).</span></span>
 
-<span data-ttu-id="f4163-108">ローカライズは、小売ソフトウェア開発キット (SDK) の一部です。</span><span class="sxs-lookup"><span data-stu-id="f4163-108">The localization is part of the Retail software development kit (SDK).</span></span> <span data-ttu-id="f4163-109">リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f4163-109">For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).</span></span>
+<span data-ttu-id="31ec3-108">ローカライズは、小売ソフトウェア開発キット (SDK) の一部です。</span><span class="sxs-lookup"><span data-stu-id="31ec3-108">The localization is part of the Retail software development kit (SDK).</span></span> <span data-ttu-id="31ec3-109">リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="31ec3-109">For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).</span></span>
 
-<span data-ttu-id="f4163-110">ローカライズは、Commerce runtime (CRT) と POS に対する拡張機能で構成されます。</span><span class="sxs-lookup"><span data-stu-id="f4163-110">The localization consists of extensions for the Commerce runtime (CRT) and POS.</span></span> <span data-ttu-id="f4163-111">このローカライズを有効にするには、CRT コンフィギュレーション ファイルを変更しおよび変更し、POS プロジェクトを構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4163-111">To enable this localization, you must modify the CRT configuration file and modify and build POS projects.</span></span> <span data-ttu-id="f4163-112">このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="f4163-112">We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic.</span></span> <span data-ttu-id="f4163-113">また Microsoft Visual Studio チーム サービスといった、どのファイルも変更されていないソース管理システムを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="f4163-113">We also recommend that you use a source control system, such as Microsoft Visual Studio Team Services, where no files have been changed yet.</span></span>
+<span data-ttu-id="31ec3-110">ローカライズは、Commerce runtime (CRT) と POS に対する拡張機能で構成されます。</span><span class="sxs-lookup"><span data-stu-id="31ec3-110">The localization consists of extensions for the Commerce runtime (CRT) and POS.</span></span> <span data-ttu-id="31ec3-111">このローカライズを有効にするには、CRT コンフィギュレーション ファイルを変更しおよび変更し、POS プロジェクトを構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="31ec3-111">To enable this localization, you must modify the CRT configuration file and modify and build POS projects.</span></span> <span data-ttu-id="31ec3-112">このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="31ec3-112">We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic.</span></span> <span data-ttu-id="31ec3-113">また Microsoft Visual Studio チーム サービスといった、どのファイルも変更されていないソース管理システムを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="31ec3-113">We also recommend that you use a source control system, such as Microsoft Visual Studio Team Services, where no files have been changed yet.</span></span>
 
-## <a name="development-environment"></a><span data-ttu-id="f4163-114">開発環境</span><span class="sxs-lookup"><span data-stu-id="f4163-114">Development environment</span></span>
+## <a name="development-environment"></a><span data-ttu-id="31ec3-114">開発環境</span><span class="sxs-lookup"><span data-stu-id="31ec3-114">Development environment</span></span>
 
-<span data-ttu-id="f4163-115">開発環境を設定するこれらの手順を完了し、機能をテストできるようにします。</span><span class="sxs-lookup"><span data-stu-id="f4163-115">Complete these procedures to set up a development environment, so that you can test the functionality.</span></span>
+<span data-ttu-id="31ec3-115">開発環境を設定するこれらの手順を完了し、機能をテストできるようにします。</span><span class="sxs-lookup"><span data-stu-id="31ec3-115">Complete these procedures to set up a development environment, so that you can test the functionality.</span></span>
 
-### <a name="crt-extension-components"></a><span data-ttu-id="f4163-116">CRT 拡張コンポーネント</span><span class="sxs-lookup"><span data-stu-id="f4163-116">CRT extension components</span></span>
+### <a name="crt-extension-components"></a><span data-ttu-id="31ec3-116">CRT 拡張コンポーネント</span><span class="sxs-lookup"><span data-stu-id="31ec3-116">CRT extension components</span></span>
 
-1. <span data-ttu-id="f4163-117">CRT 向け拡張機能のコンフィギュレーション ファイルを検索します。</span><span class="sxs-lookup"><span data-stu-id="f4163-117">Find the extensions configuration file for CRT.</span></span>
+1. <span data-ttu-id="31ec3-117">CRT 向け拡張機能のコンフィギュレーション ファイルを検索します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-117">Find the extensions configuration file for CRT.</span></span>
 
-    <span data-ttu-id="f4163-118">ファイル名は **commerceruntime.ext.config** で、IIS 小売サーバー サイトの下の **bin\\ext** フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="f4163-118">The file is named **commerceruntime.ext.config**, and is located in the **bin\\ext** folder under the IIS Retail Server site location.</span></span>
+    <span data-ttu-id="31ec3-118">ファイル名は **commerceruntime.ext.config** で、IIS 小売サーバー サイトの下の **bin\\ext** フォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="31ec3-118">The file is named **commerceruntime.ext.config**, and is located in the **bin\\ext** folder under the IIS Retail Server site location.</span></span>
 
-2. <span data-ttu-id="f4163-119">拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。</span><span class="sxs-lookup"><span data-stu-id="f4163-119">Register the CRT change in the extensions configuration file.</span></span>
+2. <span data-ttu-id="31ec3-119">拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-119">Register the CRT change in the extensions configuration file.</span></span>
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.UseAdvanceInvoice" />
     ```
 
     > [!WARNING]
-    > <span data-ttu-id="f4163-120">commerceruntime.config ファイルは編集しては**いけません**。</span><span class="sxs-lookup"><span data-stu-id="f4163-120">Do **not** edit the commerceruntime.config file.</span></span> <span data-ttu-id="f4163-121">このファイルは、カスタマイズのためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="f4163-121">This file isn't intended for any customizations.</span></span>
+    > <span data-ttu-id="31ec3-120">commerceruntime.config ファイルは編集しては**いけません**。</span><span class="sxs-lookup"><span data-stu-id="31ec3-120">Do **not** edit the commerceruntime.config file.</span></span> <span data-ttu-id="31ec3-121">このファイルは、カスタマイズのためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="31ec3-121">This file isn't intended for any customizations.</span></span>
 
-### <a name="modern-pos-extension-components"></a><span data-ttu-id="f4163-122">Modern POS 拡張コンポーネント</span><span class="sxs-lookup"><span data-stu-id="f4163-122">Modern POS extension components</span></span>
+### <a name="modern-pos-extension-components"></a><span data-ttu-id="31ec3-122">Modern POS 拡張コンポーネント</span><span class="sxs-lookup"><span data-stu-id="31ec3-122">Modern POS extension components</span></span>
 
-1. <span data-ttu-id="f4163-123">**RetailSdk\\POS\\ModernPOS.sln** でソリューションを開き、エラーなくコンパイルできるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="f4163-123">Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure that it can be compiled without errors.</span></span> <span data-ttu-id="f4163-124">また、**Run** コマンドを使用して、Microsoft Visual Studio から Modern POS を実行できることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f4163-124">Additionally, make sure that you can run Modern POS from Microsoft Visual Studio by using the **Run** command.</span></span>
+1. <span data-ttu-id="31ec3-123">**RetailSdk\\POS\\ModernPOS.sln** でソリューションを開き、エラーなくコンパイルできるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-123">Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure that it can be compiled without errors.</span></span> <span data-ttu-id="31ec3-124">また、**Run** コマンドを使用して、Microsoft Visual Studio から Modern POS を実行できることを確認します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-124">Additionally, make sure that you can run Modern POS from Microsoft Visual Studio by using the **Run** command.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="f4163-125">Modern POS をカスタマイズしないでください。</span><span class="sxs-lookup"><span data-stu-id="f4163-125">Modern POS must not be customized.</span></span> <span data-ttu-id="f4163-126">ユーザー アカウント制御 (UAC) を有効にして、要求に応じて以前にインストールした Modern POS のインスタンスをアンインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4163-126">You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.</span></span>
+    > <span data-ttu-id="31ec3-125">Modern POS をカスタマイズしないでください。</span><span class="sxs-lookup"><span data-stu-id="31ec3-125">Modern POS must not be customized.</span></span> <span data-ttu-id="31ec3-126">ユーザー アカウント制御 (UAC) を有効にして、要求に応じて以前にインストールした Modern POS のインスタンスをアンインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="31ec3-126">You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.</span></span>
 
-2. <span data-ttu-id="f4163-127">適切な場所に次の行を追加して、**InternalExtensions\extensions.json** で拡張機能が読み込まれるようにします。</span><span class="sxs-lookup"><span data-stu-id="f4163-127">Enable the extensions to be loaded in **extensions.json** by adding the following lines in the appropriate location.</span></span>
-
-    ``` json
-    {
-        "extensionPackages": [
-            {
-                "baseUrl": "Microsoft/AdvanceInvoice"
-            }
-        ]
-    }
-    ```
-
-3. <span data-ttu-id="f4163-128">ソリューションをリビルドします。</span><span class="sxs-lookup"><span data-stu-id="f4163-128">Rebuild the solution.</span></span>
-4. <span data-ttu-id="f4163-129">デバッガーで Modern POS を実行し、機能をテストします。</span><span class="sxs-lookup"><span data-stu-id="f4163-129">Run Modern POS in the debugger and test the functionality.</span></span>
-
-### <a name="cloud-pos-extension-components"></a><span data-ttu-id="f4163-130">クラウド POS 拡張コンポーネント</span><span class="sxs-lookup"><span data-stu-id="f4163-130">Cloud POS extension components</span></span>
-
-1. <span data-ttu-id="f4163-131">**RetailSdk\\POS\\CloudPOS.sln** でソリューションを開き、エラーなくコンパイルできるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="f4163-131">Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and make sure that it can be compiled without errors.</span></span>
-2. <span data-ttu-id="f4163-132">適切な場所に次の行を追加して、**InternalExtensions\extensions.json** で拡張機能が読み込まれるようにします。</span><span class="sxs-lookup"><span data-stu-id="f4163-132">Enable the extensions to be loaded in **extensions.json** by adding the following lines in the appropriate location.</span></span>
+2. <span data-ttu-id="31ec3-127">適切な場所に次の行を追加して、**InternalExtensions\extensions.json** で拡張機能が読み込まれるようにします。</span><span class="sxs-lookup"><span data-stu-id="31ec3-127">Enable the extensions to be loaded in **extensions.json** by adding the following lines in the appropriate location.</span></span>
 
     ``` json
     {
@@ -90,25 +72,43 @@ ms.locfileid: "1572038"
     }
     ```
 
-3. <span data-ttu-id="f4163-133">ソリューションをリビルドします。</span><span class="sxs-lookup"><span data-stu-id="f4163-133">Rebuild the solution.</span></span>
-4. <span data-ttu-id="f4163-134">デバッガーでクラウド POS を実行し、機能をテストします。</span><span class="sxs-lookup"><span data-stu-id="f4163-134">Run Cloud POS in the debugger and test the functionality.</span></span>
+3. <span data-ttu-id="31ec3-128">ソリューションをリビルドします。</span><span class="sxs-lookup"><span data-stu-id="31ec3-128">Rebuild the solution.</span></span>
+4. <span data-ttu-id="31ec3-129">デバッガーで Modern POS を実行し、機能をテストします。</span><span class="sxs-lookup"><span data-stu-id="31ec3-129">Run Modern POS in the debugger and test the functionality.</span></span>
 
-### <a name="set-up-required-parameters-in-retail-headquarters"></a><span data-ttu-id="f4163-135">小売用バックオフィスで要求されるパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="f4163-135">Set up required parameters in Retail headquarters</span></span>
+### <a name="cloud-pos-extension-components"></a><span data-ttu-id="31ec3-130">クラウド POS 拡張コンポーネント</span><span class="sxs-lookup"><span data-stu-id="31ec3-130">Cloud POS extension components</span></span>
 
-<span data-ttu-id="f4163-136">詳細な情報は、[東ヨーロッパにおける小売向け事前請求書](./emea-eeu-advance-invoices-for-retail.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f4163-136">For more information, see [Advance invoices for Retail for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).</span></span>
+1. <span data-ttu-id="31ec3-131">**RetailSdk\\POS\\CloudPOS.sln** でソリューションを開き、エラーなくコンパイルできるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-131">Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and make sure that it can be compiled without errors.</span></span>
+2. <span data-ttu-id="31ec3-132">適切な場所に次の行を追加して、**InternalExtensions\extensions.json** で拡張機能が読み込まれるようにします。</span><span class="sxs-lookup"><span data-stu-id="31ec3-132">Enable the extensions to be loaded in **extensions.json** by adding the following lines in the appropriate location.</span></span>
 
-## <a name="production-environment"></a><span data-ttu-id="f4163-137">実稼働環境</span><span class="sxs-lookup"><span data-stu-id="f4163-137">Production environment</span></span>
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AdvanceInvoice"
+            }
+        ]
+    }
+    ```
 
-<span data-ttu-id="f4163-138">以下の手順に従い、小売コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを実稼働環境で適用します。</span><span class="sxs-lookup"><span data-stu-id="f4163-138">Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.</span></span>
+3. <span data-ttu-id="31ec3-133">ソリューションをリビルドします。</span><span class="sxs-lookup"><span data-stu-id="31ec3-133">Rebuild the solution.</span></span>
+4. <span data-ttu-id="31ec3-134">デバッガーでクラウド POS を実行し、機能をテストします。</span><span class="sxs-lookup"><span data-stu-id="31ec3-134">Run Cloud POS in the debugger and test the functionality.</span></span>
 
-1. <span data-ttu-id="f4163-139">**クラウド POS 拡張コンポーネント**、またはこのトピックで既に見た**Modern POS 拡張コンポーネント**セクションで手順を完了します。</span><span class="sxs-lookup"><span data-stu-id="f4163-139">Complete the steps in the **Cloud POS extension components** or **Modern POS extension components** sections earlier in this topic.</span></span>
-2. <span data-ttu-id="f4163-140">**RetailSdk\\Assets** フォルダーの下にあるパッケージ構成ファイルに、次の変更を加えます。</span><span class="sxs-lookup"><span data-stu-id="f4163-140">Make the following change in the package configuration files under the **RetailSdk\\Assets** folder.</span></span>
+### <a name="set-up-required-parameters-in-retail-headquarters"></a><span data-ttu-id="31ec3-135">小売用バックオフィスで要求されるパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-135">Set up required parameters in Retail headquarters</span></span>
 
-    <span data-ttu-id="f4163-141">**Commerceruntime.ext.config** コンフィギュレーション ファイルで、**構成**セクションに次の行を追加します。</span><span class="sxs-lookup"><span data-stu-id="f4163-141">In the **commerceruntime.ext.config** configuration files, add the following lines to the **composition** section.</span></span>
+<span data-ttu-id="31ec3-136">詳細な情報は、[東ヨーロッパにおける小売向け事前請求書](./emea-eeu-advance-invoices-for-retail.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="31ec3-136">For more information, see [Advance invoices for Retail for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).</span></span>
+
+## <a name="production-environment"></a><span data-ttu-id="31ec3-137">実稼働環境</span><span class="sxs-lookup"><span data-stu-id="31ec3-137">Production environment</span></span>
+
+<span data-ttu-id="31ec3-138">以下の手順に従い、小売コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを実稼働環境で適用します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-138">Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.</span></span>
+
+1. <span data-ttu-id="31ec3-139">**クラウド POS 拡張コンポーネント**、またはこのトピックで既に見た**Modern POS 拡張コンポーネント**セクションで手順を完了します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-139">Complete the steps in the **Cloud POS extension components** or **Modern POS extension components** sections earlier in this topic.</span></span>
+2. <span data-ttu-id="31ec3-140">**RetailSdk\\Assets** フォルダーの下にあるパッケージ構成ファイルに、次の変更を加えます。</span><span class="sxs-lookup"><span data-stu-id="31ec3-140">Make the following change in the package configuration files under the **RetailSdk\\Assets** folder.</span></span>
+
+    <span data-ttu-id="31ec3-141">**Commerceruntime.ext.config** コンフィギュレーション ファイルで、**構成**セクションに次の行を追加します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-141">In the **commerceruntime.ext.config** configuration files, add the following lines to the **composition** section.</span></span>
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.UseAdvanceInvoice" />
     ```
 
-3. <span data-ttu-id="f4163-142">Retail SDK で **msbuild** を実行し、配置可能なパッケージを作成します。</span><span class="sxs-lookup"><span data-stu-id="f4163-142">Run **msbuild** for the Retail SDK to create deployable packages.</span></span>
-4. <span data-ttu-id="f4163-143">Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。</span><span class="sxs-lookup"><span data-stu-id="f4163-143">Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually.</span></span> <span data-ttu-id="f4163-144">詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f4163-144">For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).</span></span>
+3. <span data-ttu-id="31ec3-142">Retail SDK で **msbuild** を実行し、配置可能なパッケージを作成します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-142">Run **msbuild** for the Retail SDK to create deployable packages.</span></span>
+4. <span data-ttu-id="31ec3-143">Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。</span><span class="sxs-lookup"><span data-stu-id="31ec3-143">Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually.</span></span> <span data-ttu-id="31ec3-144">詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="31ec3-144">For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).</span></span>

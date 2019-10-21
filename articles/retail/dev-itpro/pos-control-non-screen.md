@@ -16,50 +16,50 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: fbdde3f1ff90c7e4b2ba1a37e768d94ad29c0e30
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 79bb81a1461a2c37e125d188839326c1d6c6263f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833752"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023463"
 ---
-# <a name="add-custom-controls-to-pos-views-that-arent-screen-layout-designer-based"></a><span data-ttu-id="196cf-103">デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します</span><span class="sxs-lookup"><span data-stu-id="196cf-103">Add custom controls to POS views that aren't screen layout designer-based</span></span>
+# <a name="add-custom-controls-to-pos-views-that-arent-screen-layout-designer-based"></a><span data-ttu-id="86b3b-103">デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します</span><span class="sxs-lookup"><span data-stu-id="86b3b-103">Add custom controls to POS views that aren't screen layout designer-based</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="196cf-104">カスタム コントロールを追加することにより、Dynamics 365 for Retail POS ビューに表示される情報を拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="196cf-104">You can enhance the information displayed on a Dynamics 365 for Retail POS view by adding custom controls.</span></span> <span data-ttu-id="196cf-105">カスタム コントロールを使用すると、POS の既存のビューにカスタム情報を追加できます。</span><span class="sxs-lookup"><span data-stu-id="196cf-105">A custom control allows you to add your own custom information to the existing POS views.</span></span> <span data-ttu-id="196cf-106">カスタム コントロールは、POS 拡張フレームワークを使用して実装できます。</span><span class="sxs-lookup"><span data-stu-id="196cf-106">Custom controls can be implemented by using the POS extension framework.</span></span> <span data-ttu-id="196cf-107">現時点では、実行時にカスタム コントロールを目的の場所に配置することはできません。POS は POS を固定位置にロードします。</span><span class="sxs-lookup"><span data-stu-id="196cf-107">Currently, you cannot place the custom control in the desired location, at runtime, POS will load it in a fixed position.</span></span>
+<span data-ttu-id="86b3b-104">カスタム コントロールを追加することにより、Dynamics 365 Retail POS ビューに表示される情報を拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="86b3b-104">You can enhance the information displayed on a Dynamics 365 Retail POS view by adding custom controls.</span></span> <span data-ttu-id="86b3b-105">カスタム コントロールを使用すると、POS の既存のビューにカスタム情報を追加できます。</span><span class="sxs-lookup"><span data-stu-id="86b3b-105">A custom control allows you to add your own custom information to the existing POS views.</span></span> <span data-ttu-id="86b3b-106">カスタム コントロールは、POS 拡張フレームワークを使用して実装できます。</span><span class="sxs-lookup"><span data-stu-id="86b3b-106">Custom controls can be implemented by using the POS extension framework.</span></span> <span data-ttu-id="86b3b-107">現時点では、実行時にカスタム コントロールを目的の場所に配置することはできません。POS は POS を固定位置にロードします。</span><span class="sxs-lookup"><span data-stu-id="86b3b-107">Currently, you cannot place the custom control in the desired location, at runtime, POS will load it in a fixed position.</span></span>
 
-<span data-ttu-id="196cf-108">このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。</span><span class="sxs-lookup"><span data-stu-id="196cf-108">This topic applies to Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail with Platform update 8, and Retail Application update 4 hotfix.</span></span> 
+<span data-ttu-id="86b3b-108">このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。</span><span class="sxs-lookup"><span data-stu-id="86b3b-108">This topic applies to Dynamics 365 for Finance and Operations, and Dynamics 365 Retail with Platform update 8, and Retail Application update 4 hotfix.</span></span> 
 
-<span data-ttu-id="196cf-109">次のテーブルに、カスタム コントロールをサポートする非画面レイアウト デザイナーベース ビューを示します。</span><span class="sxs-lookup"><span data-stu-id="196cf-109">The following table lists the non-screen layout designer-based views that support custom controls.</span></span>
+<span data-ttu-id="86b3b-109">次のテーブルに、カスタム コントロールをサポートする非画面レイアウト デザイナーベース ビューを示します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-109">The following table lists the non-screen layout designer-based views that support custom controls.</span></span>
 
-| <span data-ttu-id="196cf-110">POS ビュー</span><span class="sxs-lookup"><span data-stu-id="196cf-110">POS views</span></span>              | <span data-ttu-id="196cf-111">カスタム コントロールのサポート</span><span class="sxs-lookup"><span data-stu-id="196cf-111">Support custom control</span></span> | <span data-ttu-id="196cf-112">カスタム コントロールの数</span><span class="sxs-lookup"><span data-stu-id="196cf-112">Number of custom controls</span></span> |
+| <span data-ttu-id="86b3b-110">POS ビュー</span><span class="sxs-lookup"><span data-stu-id="86b3b-110">POS views</span></span>              | <span data-ttu-id="86b3b-111">カスタム コントロールのサポート</span><span class="sxs-lookup"><span data-stu-id="86b3b-111">Support custom control</span></span> | <span data-ttu-id="86b3b-112">カスタム コントロールの数</span><span class="sxs-lookup"><span data-stu-id="86b3b-112">Number of custom controls</span></span> |
 |------------------------|------------------------|--------------------------|
-| <span data-ttu-id="196cf-113">顧客の追加/編集表示</span><span class="sxs-lookup"><span data-stu-id="196cf-113">Customer Add/Edit view</span></span> | <span data-ttu-id="196cf-114">有</span><span class="sxs-lookup"><span data-stu-id="196cf-114">Yes</span></span>                    | <span data-ttu-id="196cf-115">倍数</span><span class="sxs-lookup"><span data-stu-id="196cf-115">Multiple</span></span>                 |
-| <span data-ttu-id="196cf-116">アドレスの追加/編集表示</span><span class="sxs-lookup"><span data-stu-id="196cf-116">Address Add/Edit view</span></span>  | <span data-ttu-id="196cf-117">有</span><span class="sxs-lookup"><span data-stu-id="196cf-117">Yes</span></span>                    | <span data-ttu-id="196cf-118">倍数</span><span class="sxs-lookup"><span data-stu-id="196cf-118">Multiple</span></span>                 |
-| <span data-ttu-id="196cf-119">顧客の詳細表示</span><span class="sxs-lookup"><span data-stu-id="196cf-119">Customer details view</span></span>  | <span data-ttu-id="196cf-120">有</span><span class="sxs-lookup"><span data-stu-id="196cf-120">Yes</span></span>                    | <span data-ttu-id="196cf-121">倍数</span><span class="sxs-lookup"><span data-stu-id="196cf-121">Multiple</span></span>                 |
-| <span data-ttu-id="196cf-122">製品詳細表示</span><span class="sxs-lookup"><span data-stu-id="196cf-122">Product details view</span></span>   | <span data-ttu-id="196cf-123">有</span><span class="sxs-lookup"><span data-stu-id="196cf-123">Yes</span></span>                    | <span data-ttu-id="196cf-124">倍数</span><span class="sxs-lookup"><span data-stu-id="196cf-124">Multiple</span></span>                 |
-| <span data-ttu-id="196cf-125">価格の確認ビュー</span><span class="sxs-lookup"><span data-stu-id="196cf-125">Price check view</span></span>       | <span data-ttu-id="196cf-126">有</span><span class="sxs-lookup"><span data-stu-id="196cf-126">Yes</span></span>                    | <span data-ttu-id="196cf-127">倍数</span><span class="sxs-lookup"><span data-stu-id="196cf-127">Multiple</span></span>                 |
+| <span data-ttu-id="86b3b-113">顧客の追加/編集表示</span><span class="sxs-lookup"><span data-stu-id="86b3b-113">Customer Add/Edit view</span></span> | <span data-ttu-id="86b3b-114">有</span><span class="sxs-lookup"><span data-stu-id="86b3b-114">Yes</span></span>                    | <span data-ttu-id="86b3b-115">倍数</span><span class="sxs-lookup"><span data-stu-id="86b3b-115">Multiple</span></span>                 |
+| <span data-ttu-id="86b3b-116">アドレスの追加/編集表示</span><span class="sxs-lookup"><span data-stu-id="86b3b-116">Address Add/Edit view</span></span>  | <span data-ttu-id="86b3b-117">有</span><span class="sxs-lookup"><span data-stu-id="86b3b-117">Yes</span></span>                    | <span data-ttu-id="86b3b-118">倍数</span><span class="sxs-lookup"><span data-stu-id="86b3b-118">Multiple</span></span>                 |
+| <span data-ttu-id="86b3b-119">顧客の詳細表示</span><span class="sxs-lookup"><span data-stu-id="86b3b-119">Customer details view</span></span>  | <span data-ttu-id="86b3b-120">有</span><span class="sxs-lookup"><span data-stu-id="86b3b-120">Yes</span></span>                    | <span data-ttu-id="86b3b-121">倍数</span><span class="sxs-lookup"><span data-stu-id="86b3b-121">Multiple</span></span>                 |
+| <span data-ttu-id="86b3b-122">製品詳細表示</span><span class="sxs-lookup"><span data-stu-id="86b3b-122">Product details view</span></span>   | <span data-ttu-id="86b3b-123">有</span><span class="sxs-lookup"><span data-stu-id="86b3b-123">Yes</span></span>                    | <span data-ttu-id="86b3b-124">倍数</span><span class="sxs-lookup"><span data-stu-id="86b3b-124">Multiple</span></span>                 |
+| <span data-ttu-id="86b3b-125">価格の確認ビュー</span><span class="sxs-lookup"><span data-stu-id="86b3b-125">Price check view</span></span>       | <span data-ttu-id="86b3b-126">有</span><span class="sxs-lookup"><span data-stu-id="86b3b-126">Yes</span></span>                    | <span data-ttu-id="86b3b-127">倍数</span><span class="sxs-lookup"><span data-stu-id="86b3b-127">Multiple</span></span>                 |
 
-<span data-ttu-id="196cf-128">次のテーブルに、カスタム コントロールをサポートする画面レイアウト デザイナー ベースビューを示します。</span><span class="sxs-lookup"><span data-stu-id="196cf-128">The following table lists the screen layout designer based-views that support custom controls.</span></span>
+<span data-ttu-id="86b3b-128">次のテーブルに、カスタム コントロールをサポートする画面レイアウト デザイナー ベースビューを示します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-128">The following table lists the screen layout designer based-views that support custom controls.</span></span>
 
-| <span data-ttu-id="196cf-129">POS ビュー</span><span class="sxs-lookup"><span data-stu-id="196cf-129">POS views</span></span> | <span data-ttu-id="196cf-130">カスタム コントロールのサポート</span><span class="sxs-lookup"><span data-stu-id="196cf-130">Support custom control</span></span> | <span data-ttu-id="196cf-131">カスタム コントロールの数</span><span class="sxs-lookup"><span data-stu-id="196cf-131">Number of custom controls</span></span> |
+| <span data-ttu-id="86b3b-129">POS ビュー</span><span class="sxs-lookup"><span data-stu-id="86b3b-129">POS views</span></span> | <span data-ttu-id="86b3b-130">カスタム コントロールのサポート</span><span class="sxs-lookup"><span data-stu-id="86b3b-130">Support custom control</span></span> | <span data-ttu-id="86b3b-131">カスタム コントロールの数</span><span class="sxs-lookup"><span data-stu-id="86b3b-131">Number of custom controls</span></span> |
 |-----------|------------------------|--------------------------|
-| <span data-ttu-id="196cf-132">カート ビュー</span><span class="sxs-lookup"><span data-stu-id="196cf-132">Cart view</span></span> | <span data-ttu-id="196cf-133">有</span><span class="sxs-lookup"><span data-stu-id="196cf-133">Yes</span></span>                    | <span data-ttu-id="196cf-134">10</span><span class="sxs-lookup"><span data-stu-id="196cf-134">10</span></span>                       |
+| <span data-ttu-id="86b3b-132">カート ビュー</span><span class="sxs-lookup"><span data-stu-id="86b3b-132">Cart view</span></span> | <span data-ttu-id="86b3b-133">有</span><span class="sxs-lookup"><span data-stu-id="86b3b-133">Yes</span></span>                    | <span data-ttu-id="86b3b-134">10</span><span class="sxs-lookup"><span data-stu-id="86b3b-134">10</span></span>                       |
 
-## <a name="create-the-custom-control"></a><span data-ttu-id="196cf-135">カスタム コントロールの作成</span><span class="sxs-lookup"><span data-stu-id="196cf-135">Create the custom control</span></span>
+## <a name="create-the-custom-control"></a><span data-ttu-id="86b3b-135">カスタム コントロールの作成</span><span class="sxs-lookup"><span data-stu-id="86b3b-135">Create the custom control</span></span>
 
-<span data-ttu-id="196cf-136">次の例では、拡張機能を使用して既存の POS ビューの 1 つにカスタム コントロールを追加する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="196cf-136">The following example demonstrates how to add a custom control to one of the  existing POS views using extensions.</span></span> <span data-ttu-id="196cf-137">たとえば、4 つの列を持つ、カスタム データのリストを追加することによって製品の詳細ビューで製品の使用可能な情報を表示したとします - 場所、在庫、引当済、および注文済。</span><span class="sxs-lookup"><span data-stu-id="196cf-137">For example, suppose  you want to show the product availability information in the product details view by adding custom data list that has four columns - Location, Inventory, Reserved, and Ordered.</span></span>
+<span data-ttu-id="86b3b-136">次の例では、拡張機能を使用して既存の POS ビューの 1 つにカスタム コントロールを追加する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="86b3b-136">The following example demonstrates how to add a custom control to one of the  existing POS views using extensions.</span></span> <span data-ttu-id="86b3b-137">たとえば、4 つの列を持つ、カスタム データのリストを追加することによって製品の詳細ビューで製品の使用可能な情報を表示したとします - 場所、在庫、引当済、および注文済。</span><span class="sxs-lookup"><span data-stu-id="86b3b-137">For example, suppose  you want to show the product availability information in the product details view by adding custom data list that has four columns - Location, Inventory, Reserved, and Ordered.</span></span>
 
-<span data-ttu-id="196cf-138">カスタム コントロールは、カスタム情報を表示する HTML ページです。</span><span class="sxs-lookup"><span data-stu-id="196cf-138">A custom control is an HTML page with the custom information to be displayed.</span></span> <span data-ttu-id="196cf-139">対応する Typescript ファイルには、コントロールのロジックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="196cf-139">A corresponding Typescript file contains the logic for the control.</span></span> 
+<span data-ttu-id="86b3b-138">カスタム コントロールは、カスタム情報を表示する HTML ページです。</span><span class="sxs-lookup"><span data-stu-id="86b3b-138">A custom control is an HTML page with the custom information to be displayed.</span></span> <span data-ttu-id="86b3b-139">対応する Typescript ファイルには、コントロールのロジックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="86b3b-139">A corresponding Typescript file contains the logic for the control.</span></span> 
 
-1. <span data-ttu-id="196cf-140">管理者モードで Visual Studio 2015 を開きます。</span><span class="sxs-lookup"><span data-stu-id="196cf-140">Open Visual Studio 2015 in administrator mode.</span></span>
-2. <span data-ttu-id="196cf-141">**\RetailSDK\POS** から Modern POS を開きます。</span><span class="sxs-lookup"><span data-stu-id="196cf-141">Open Modern POS from **\RetailSDK\POS**.</span></span>
-3. <span data-ttu-id="196cf-142">**POS.Extensions** プロジェクトで、**ProdDetailsCustomColumnExtensions** という名前の新しいフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="196cf-142">Under the **POS.Extensions** project, create a new folder named **ProdDetailsCustomColumnExtensions**.</span></span>
-4. <span data-ttu-id="196cf-143">**ProdDetailsCustomColumnExtensions** の下で **ViewExtensions** という名前の新しいフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="196cf-143">Under **ProdDetailsCustomColumnExtensions**, create a new folder named **ViewExtensions**.</span></span>
-5. <span data-ttu-id="196cf-144">**ViewExtensions** の下で **SimpleProductDetails** という名前の新しいフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="196cf-144">Under **ViewExtensions**, create new folder named **SimpleProductDetails**.</span></span>
-6. <span data-ttu-id="196cf-145">**SimpleProductDetails** フォルダー内に新しい HTML ファイルを追加し、**ProductAvailabilityPanel.html** という名前をつけます。</span><span class="sxs-lookup"><span data-stu-id="196cf-145">Add a new HTML file inside the **SimpleProductDetails** folder and name it **ProductAvailabilityPanel.html**.</span></span>  
-7. <span data-ttu-id="196cf-146">**ProductAvailabilityPanel.html** を開き、次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="196cf-146">Open **ProductAvailabilityPanel.html** and add the following code.</span></span> <span data-ttu-id="196cf-147">このコードは、POS データ リスト コントロールを追加して、製品の可用性情報とコントロールの幅を表示します。</span><span class="sxs-lookup"><span data-stu-id="196cf-147">The code adds a POS data list control to show the product availability information and the width of the control.</span></span>
+1. <span data-ttu-id="86b3b-140">管理者モードで Visual Studio 2015 を開きます。</span><span class="sxs-lookup"><span data-stu-id="86b3b-140">Open Visual Studio 2015 in administrator mode.</span></span>
+2. <span data-ttu-id="86b3b-141">**\RetailSDK\POS** から Modern POS を開きます。</span><span class="sxs-lookup"><span data-stu-id="86b3b-141">Open Modern POS from **\RetailSDK\POS**.</span></span>
+3. <span data-ttu-id="86b3b-142">**POS.Extensions** プロジェクトで、**ProdDetailsCustomColumnExtensions** という名前の新しいフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-142">Under the **POS.Extensions** project, create a new folder named **ProdDetailsCustomColumnExtensions**.</span></span>
+4. <span data-ttu-id="86b3b-143">**ProdDetailsCustomColumnExtensions** の下で **ViewExtensions** という名前の新しいフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-143">Under **ProdDetailsCustomColumnExtensions**, create a new folder named **ViewExtensions**.</span></span>
+5. <span data-ttu-id="86b3b-144">**ViewExtensions** の下で **SimpleProductDetails** という名前の新しいフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-144">Under **ViewExtensions**, create new folder named **SimpleProductDetails**.</span></span>
+6. <span data-ttu-id="86b3b-145">**SimpleProductDetails** フォルダー内に新しい HTML ファイルを追加し、**ProductAvailabilityPanel.html** という名前をつけます。</span><span class="sxs-lookup"><span data-stu-id="86b3b-145">Add a new HTML file inside the **SimpleProductDetails** folder and name it **ProductAvailabilityPanel.html**.</span></span>  
+7. <span data-ttu-id="86b3b-146">**ProductAvailabilityPanel.html** を開き、次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-146">Open **ProductAvailabilityPanel.html** and add the following code.</span></span> <span data-ttu-id="86b3b-147">このコードは、POS データ リスト コントロールを追加して、製品の可用性情報とコントロールの幅を表示します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-147">The code adds a POS data list control to show the product availability information and the width of the control.</span></span>
     ```html
     <!DOCTYPE html>
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -78,8 +78,8 @@ ms.locfileid: "1833752"
     </body>
     </html>
     ```
-8. <span data-ttu-id="196cf-148">**SimpleProductDetails** フォルダーに、新しい Typescript ファイルを追加し、**ProductAvailabilityPanel.ts** と名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="196cf-148">In the **SimpleProductDetails** folder, add a new typescript file and name it **ProductAvailabilityPanel.ts**.</span></span>
-9. <span data-ttu-id="196cf-149">次の **import** 明細書を追加して、関連するエンティティおよびコンテキストをインポートします。</span><span class="sxs-lookup"><span data-stu-id="196cf-149">Add the following **import** statements to import the relevant entities and context.</span></span>
+8. <span data-ttu-id="86b3b-148">**SimpleProductDetails** フォルダーに、新しい Typescript ファイルを追加し、**ProductAvailabilityPanel.ts** と名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="86b3b-148">In the **SimpleProductDetails** folder, add a new typescript file and name it **ProductAvailabilityPanel.ts**.</span></span>
+9. <span data-ttu-id="86b3b-149">次の **import** 明細書を追加して、関連するエンティティおよびコンテキストをインポートします。</span><span class="sxs-lookup"><span data-stu-id="86b3b-149">Add the following **import** statements to import the relevant entities and context.</span></span>
     ```typescript
     import {
 
@@ -94,11 +94,11 @@ ms.locfileid: "1833752"
     import { ArrayExtensions } from "PosApi/TypeExtensions";
     import { DataList, SelectionMode } from "PosUISdk/Controls/DataList";
     ```
-10. <span data-ttu-id="196cf-150">**ProductAvailabilityPanel** という名前の新しいクラスを作成し、**SimpleProductDetailsCustomControlBase** から拡張します。</span><span class="sxs-lookup"><span data-stu-id="196cf-150">Create a new class named **ProductAvailabilityPanel** and extend it from **SimpleProductDetailsCustomControlBase**.</span></span>
+10. <span data-ttu-id="86b3b-150">**ProductAvailabilityPanel** という名前の新しいクラスを作成し、**SimpleProductDetailsCustomControlBase** から拡張します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-150">Create a new class named **ProductAvailabilityPanel** and extend it from **SimpleProductDetailsCustomControlBase**.</span></span>
     ```typescript
     export default class ProductAvailabilityPanel extends SimpleProductDetailsCustomControlBase { }
     ```
-11. <span data-ttu-id="196cf-151">クラス内で、状態およびデータ リスト情報に対して次の変数を宣言します。</span><span class="sxs-lookup"><span data-stu-id="196cf-151">Inside the class, declare the following variables for state and data list information.</span></span>
+11. <span data-ttu-id="86b3b-151">クラス内で、状態およびデータ リスト情報に対して次の変数を宣言します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-151">Inside the class, declare the following variables for state and data list information.</span></span>
     ```typescript
     private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_ProductAvailabilityPanel";
     public readonly orgUnitAvailabilities: ObservableArray<ProxyEntities.OrgUnitAvailability>;
@@ -106,7 +106,7 @@ ms.locfileid: "1833752"
     public readonly title: Observable<string>;
     private _state: ISimpleProductDetailsCustomControlState;
     ```
-12. <span data-ttu-id="196cf-152">クラスのコンストラクターメソッドを追加して、データ リストの列を初期化します。</span><span class="sxs-lookup"><span data-stu-id="196cf-152">Add a class constructor method to initialize the data list columns.</span></span>
+12. <span data-ttu-id="86b3b-152">クラスのコンストラクターメソッドを追加して、データ リストの列を初期化します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-152">Add a class constructor method to initialize the data list columns.</span></span>
     ```typescript
     constructor(id: string, context: ISimpleProductDetailsCustomControlContext) {
 
@@ -168,7 +168,7 @@ ms.locfileid: "1833752"
 
     }
     ```
-13. <span data-ttu-id="196cf-153">HTML コントロールをバインドする **OnReady** メソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="196cf-153">Add the **OnReady** method to bind the HTML control.</span></span>
+13. <span data-ttu-id="86b3b-153">HTML コントロールをバインドする **OnReady** メソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-153">Add the **OnReady** method to bind the HTML control.</span></span>
     ```typescript
     public onReady(element: HTMLElement): void {
 
@@ -182,7 +182,7 @@ ms.locfileid: "1833752"
         });
     }
     ```
-14. <span data-ttu-id="196cf-154">**init** メソッドを追加して、ページが読み込まれたときに製品使用可能性の詳細を取得し、データがフェッチされ、データ リストで更新されるようにします。</span><span class="sxs-lookup"><span data-stu-id="196cf-154">Add the **init** method to get the product availability details so when the page loads, the data is fetched and updated in the data list.</span></span>
+14. <span data-ttu-id="86b3b-154">**init** メソッドを追加して、ページが読み込まれたときに製品使用可能性の詳細を取得し、データがフェッチされ、データ リストで更新されるようにします。</span><span class="sxs-lookup"><span data-stu-id="86b3b-154">Add the **init** method to get the product availability details so when the page loads, the data is fetched and updated in the data list.</span></span>
     ```typescript
     public init(state: ISimpleProductDetailsCustomControlState): void {
 
@@ -209,7 +209,7 @@ ms.locfileid: "1833752"
 
     }
     ```
-    <span data-ttu-id="196cf-155">コード例全体を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="196cf-155">The entire code example is shown below.</span></span>
+    <span data-ttu-id="86b3b-155">コード例全体を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-155">The entire code example is shown below.</span></span>
     ```typescript
     import {
         SimpleProductDetailsCustomControlBase,
@@ -332,8 +332,8 @@ ms.locfileid: "1833752"
         }
     }
     ```
-15. <span data-ttu-id="196cf-156">新しい .json ファイルを **ProdDetailsCustomColumnExtensions** フォルダーの下に作成し、**manifest.json** という名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="196cf-156">Create a new .json file and under the **ProdDetailsCustomColumnExtensions** folder and name it **manifest.json**.</span></span>
-16. <span data-ttu-id="196cf-157">**manifest.json** ファイルに次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="196cf-157">In the **manifest.json** file, add the following code.</span></span>
+15. <span data-ttu-id="86b3b-156">新しい .json ファイルを **ProdDetailsCustomColumnExtensions** フォルダーの下に作成し、**manifest.json** という名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="86b3b-156">Create a new .json file and under the **ProdDetailsCustomColumnExtensions** folder and name it **manifest.json**.</span></span>
+16. <span data-ttu-id="86b3b-157">**manifest.json** ファイルに次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-157">In the **manifest.json** file, add the following code.</span></span>
     ```typescript
      {
 
@@ -363,7 +363,7 @@ ms.locfileid: "1833752"
         }
     }
     ```
-17. <span data-ttu-id="196cf-158">**extensions.json** ファイルを **POS.Extensions** プロジェクトで開いて、**ProdDetailsCustomColumnExtensions** サンプルを追加し、実行時に POS に拡張機能が含まれるようにします。</span><span class="sxs-lookup"><span data-stu-id="196cf-158">Open the **extensions.json** file under the **POS.Extensions** project and add the **ProdDetailsCustomColumnExtensions** samples, so during runtime POS will include the extension.</span></span>
+17. <span data-ttu-id="86b3b-158">**extensions.json** ファイルを **POS.Extensions** プロジェクトで開いて、**ProdDetailsCustomColumnExtensions** サンプルを追加し、実行時に POS に拡張機能が含まれるようにします。</span><span class="sxs-lookup"><span data-stu-id="86b3b-158">Open the **extensions.json** file under the **POS.Extensions** project and add the **ProdDetailsCustomColumnExtensions** samples, so during runtime POS will include the extension.</span></span>
     ```typescript
      {
         "extensionPackages": [
@@ -376,7 +376,7 @@ ms.locfileid: "1833752"
         ]
     }
     ```
-18. <span data-ttu-id="196cf-159">**tsconfig.json** を開いて、拡張パッケージ フォルダーを除外リストからコメント アウトします。</span><span class="sxs-lookup"><span data-stu-id="196cf-159">Open the **tsconfig.json** and comment out the extension package folders from the exclude list.</span></span> <span data-ttu-id="196cf-160">POS では、このファイルを使用して、拡張機能を追加または除外します。</span><span class="sxs-lookup"><span data-stu-id="196cf-160">POS uses this file to include or exclude extensions.</span></span> <span data-ttu-id="196cf-161">既定では、リストに除外された拡張リストが含まれています。</span><span class="sxs-lookup"><span data-stu-id="196cf-161">By default, the list contains the excluded extensions list.</span></span> <span data-ttu-id="196cf-162">POS の一部である拡張子を含める場合は、拡張子フォルダー名を追加し、以下のように拡張子リストから拡張子をコメント アウトする必要があります。</span><span class="sxs-lookup"><span data-stu-id="196cf-162">If you want to include any extension part of the POS, then you need add the extension folder name and comment out the extension from the extension list as shown.</span></span>
+18. <span data-ttu-id="86b3b-159">**tsconfig.json** を開いて、拡張パッケージ フォルダーを除外リストからコメント アウトします。</span><span class="sxs-lookup"><span data-stu-id="86b3b-159">Open the **tsconfig.json** and comment out the extension package folders from the exclude list.</span></span> <span data-ttu-id="86b3b-160">POS では、このファイルを使用して、拡張機能を追加または除外します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-160">POS uses this file to include or exclude extensions.</span></span> <span data-ttu-id="86b3b-161">既定では、リストに除外された拡張リストが含まれています。</span><span class="sxs-lookup"><span data-stu-id="86b3b-161">By default, the list contains the excluded extensions list.</span></span> <span data-ttu-id="86b3b-162">POS の一部である拡張子を含める場合は、拡張子フォルダー名を追加し、以下のように拡張子リストから拡張子をコメント アウトする必要があります。</span><span class="sxs-lookup"><span data-stu-id="86b3b-162">If you want to include any extension part of the POS, then you need add the extension folder name and comment out the extension from the extension list as shown.</span></span>
     ```typescript
      "exclude": [
         "AuditEventExtensionSample",
@@ -391,9 +391,9 @@ ms.locfileid: "1833752"
         //"ProdDetailsCustomColumnExtensions"
     ],
     ```
-19. <span data-ttu-id="196cf-163">プロジェクトをコンパイル、およびリビルドします。</span><span class="sxs-lookup"><span data-stu-id="196cf-163">Compile and rebuild the project.</span></span>
+19. <span data-ttu-id="86b3b-163">プロジェクトをコンパイル、およびリビルドします。</span><span class="sxs-lookup"><span data-stu-id="86b3b-163">Compile and rebuild the project.</span></span>
 
-## <a name="validate-the-customization"></a><span data-ttu-id="196cf-164">カスタマイズの検証</span><span class="sxs-lookup"><span data-stu-id="196cf-164">Validate the customization</span></span>
+## <a name="validate-the-customization"></a><span data-ttu-id="86b3b-164">カスタマイズの検証</span><span class="sxs-lookup"><span data-stu-id="86b3b-164">Validate the customization</span></span>
 
-1. <span data-ttu-id="196cf-165">**F5** キーを押し、POS を展開してカスタマイズをテストします。</span><span class="sxs-lookup"><span data-stu-id="196cf-165">Press **F5** and deploy the POS to test your customization.</span></span>
-2. <span data-ttu-id="196cf-166">POS の起動後、POS にログインします。</span><span class="sxs-lookup"><span data-stu-id="196cf-166">After POS launches, login to POS.</span></span> <span data-ttu-id="196cf-167">任意の製品を検索し、製品詳細ビュー移動します。</span><span class="sxs-lookup"><span data-stu-id="196cf-167">Search for any product and navigate to the product details view.</span></span> <span data-ttu-id="196cf-168">追加したカスタム コントロールが表示されます。</span><span class="sxs-lookup"><span data-stu-id="196cf-168">You should see the custom control that you added.</span></span>
+1. <span data-ttu-id="86b3b-165">**F5** キーを押し、POS を展開してカスタマイズをテストします。</span><span class="sxs-lookup"><span data-stu-id="86b3b-165">Press **F5** and deploy the POS to test your customization.</span></span>
+2. <span data-ttu-id="86b3b-166">POS の起動後、POS にログインします。</span><span class="sxs-lookup"><span data-stu-id="86b3b-166">After POS launches, login to POS.</span></span> <span data-ttu-id="86b3b-167">任意の製品を検索し、製品詳細ビュー移動します。</span><span class="sxs-lookup"><span data-stu-id="86b3b-167">Search for any product and navigate to the product details view.</span></span> <span data-ttu-id="86b3b-168">追加したカスタム コントロールが表示されます。</span><span class="sxs-lookup"><span data-stu-id="86b3b-168">You should see the custom control that you added.</span></span>
