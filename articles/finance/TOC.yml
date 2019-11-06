@@ -42,6 +42,8 @@
               items:
                 - name: 配置オプション
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/finance/toc.json
+                - name: クラウドとオンプレミスの機能比較
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/finance/toc.json
                 - name: クラウド配置
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/finance/toc.json
                 - name: クラウド配置のシステム要件
@@ -60,16 +62,20 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: 新機能および変更された機能
               items:
-                - name: ホーム ページの新機能および変更された機能
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations アプリ 10.0.6 (2019 年 11 月) の機能のプレビュー
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations アプリ 10.0.5 (2019 年 10 月)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations 10.0.4 (2019 年 7 月)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/finance/toc.json
-                - name: 'Finance and Operations, Enterprise Edition 7.3'
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/finance/toc.json
+                - name: Finance バージョン 10.0.7 のプレビュー機能 (2020 年 1 月)
+                  href: get-started/whats-new-changed-10-0-7.md
+                - name: Finance バージョン 10.0.6 (2019 年 11 月)
+                  href: get-started/whats-new-finance-10-0-6.md
+                - name: 以前のバージョンの新機能および変更された機能
+                  items:
+                    - name: Finance and Operations ホーム ページの新機能および変更された機能
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+                    - name: Finance and Operations アプリ 10.0.5 (2019 年 10 月)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/finance/toc.json
+                    - name: Finance and Operations 10.0.4 (2019 年 7 月)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Finance and Operations, Enterprise Edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/finance/toc.json
                 - name: 削除済みまたは非推奨の機能
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
                 - name: 延期された AX 2012 の機能
@@ -306,6 +312,12 @@
               href: accounts-receivable/tasks/review-collections-information.md
             - name: 収益認識の概要
               href: accounts-receivable/revenue-recognition-overview.md
+            - name: 収益認識の設定
+              href: accounts-receivable/revenue-recognition-setup.md
+            - name: 繰延収益の認識
+              href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
+            - name: 販売注文の収益認識
+              href: accounts-receivable/revenue-recognition-so-basics.md
             - name: 定期請求書の設定と処理
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: 自由書式の請求書の勘定配布と補助元帳仕訳
@@ -736,6 +748,8 @@
                   href: general-ledger/posting-definitions.md
                 - name: 転記の定義の例
                   href: general-ledger/example-posting-definitions.md
+                - name: 自動転記の既定の説明を設定する
+                  href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
                 - name: 総勘定元帳残高
                   href: general-ledger/general-ledger-account-balances.md
                 - name: 財務分析コードの定義
@@ -794,6 +808,8 @@
                   href: general-ledger/general-journal-processing.md
                 - name: 定期処理仕訳帳の転記
                   href: general-ledger/tasks/post-periodic-journals.md
+                - name: 仕訳帳の転記の取消
+                  href: general-ledger/reverse-journal-posting.md
                 - name: 元帳配賦仕訳帳の処理
                   href: general-ledger/tasks/process-ledger-allocation-journal.md
                 - name: 会社間勘定の設定
@@ -856,8 +872,12 @@
                   href: general-ledger/sales-tax-calculation-methods-origin-field.md
                 - name: 消費税コードの合計額と間隔計算オプション
                   href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: 一般仕訳帳明細行での消費税計算
+                  href: general-ledger/sales-tax-calculation-on-general-journal.md
                 - name: 仕入先請求書の消費税の計算と調整
                   href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: 仕訳帳の遅延税計算の有効化
+                  href: general-ledger/enable-delayed-tax-calculation.md
                 - name: 消費税支払の作成
                   href: general-ledger/tasks/create-sales-tax-payment.md
                 - name: ドキュメントの消費税トランザクションの作成
@@ -940,6 +960,10 @@
               href: public-sector/plan-public-sector-functionality.md
             - name: 公的機関の支払レポートのカバーおよび署名ページの作成
               href: public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
+            - name: 予測職位の配布
+              href: public-sector/forecast-positions.md
+            - name: 公的部門の予測職位レポート
+              href: public-sector/forecast-position-reports.md
             - name: 公的機関での買掛金勘定
               items:
                 - name: 公的機関での買掛金勘定の概要
@@ -1016,6 +1040,8 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: 公的機関の詳細な元帳エントリの作成
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
+                - name: 現金管理制限の使用
+                  href: public-sector/cash-control.md
                 - name: 公的機関での期末処理
                   href: public-sector/year-end-processing-public-sector.md
                 - name: 公的機関の派生財務分析階層
@@ -1214,6 +1240,8 @@
                   href: localizations/latam-bra-sped-ecd.md
                 - name: SPED-Reinf 税明細書
                   href: localizations/latam-bra-sped-reinf.md
+                - name: SPED 会計解決 13/2019 RJ
+                  href: localizations/latam-bra-resolution-13-2019-RJ.md
                 - name: 法人用パラメーター
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: 法人パラメーターの設定
@@ -1863,8 +1891,12 @@
                   href: localizations/emea-ita-packing-slip.md
                 - name: 消費税帳簿
                   href: localizations/emea-ita-fiscal-books.md
+                - name: 税ポイントの日付による VAT 管理および報告書 (VAT 登録の日付)
+                  href: localizations/emea-ita-vat-management.md
                 - name: 政府/自治体に対して発行された請求書の分割支払
                   href: localizations/emea-ita-split-payment-invoices-issued-public-administration.md
+                - name: 請求の貸方記入 (イタリア)
+                  href: localizations/emea-ita-credit-invoicing.md
                 - name: 源泉徴収税
                   href: localizations/emea-ita-withholding-tax.md
             - name: 日本
@@ -2221,6 +2253,8 @@
                       href: localizations/rus-VAT-declaration.md
                     - name: 売上帳簿、購買帳簿、請求書 Facture 仕訳帳
                       href: localizations/rus-sales-books-purchase-books.md
+                    - name: 前払管理
+                      href: localizations/rus-prepayments-management.md
                 - name: 固定資産
                   items:
                     - name: 固定資産の管理
@@ -2277,6 +2311,8 @@
                       href: ../supply-chain/localizations/rus-goods-transit-postponed.md
                     - name: キャッシュ フロー管理
                       href: localizations/rus-cash-flow.md
+                    - name: 重量と容積に比例した雑費の配賦
+                      href: localizations/rus-miscellaneous-charges.md
                 - name: レポート
                   items:
                     - name: 財務諸表

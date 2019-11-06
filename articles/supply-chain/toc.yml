@@ -42,6 +42,8 @@
               items:
                 - name: 配置オプション
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: クラウドとオンプレミスの機能比較
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/supply-chain/toc.json
                 - name: クラウド配置
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: クラウド配置のシステム要件
@@ -60,16 +62,20 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: 新機能および変更された機能
               items:
-                - name: ホーム ページの新機能および変更された機能
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                - name: Finance and Operations アプリ 10.0.6 (2019 年 11 月) の機能のプレビュー
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations アプリ 10.0.5 (2019 年 10 月)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations 10.0.4 (2019 年 7 月)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Finance and Operations, Enterprise Edition 7.3'
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Supply Chain Management のバージョン 10.0.7 のプレビュー機能 (2019 年 12 月)
+                  href: get-started/whats-new-scm-10-0-7.md
+                - name: Supply Chain Management 10.0.6 (2019 年 11 月)
+                  href: get-started/whats-new-scm-10-0-6.md
+                - name: 以前のバージョンの新機能および変更された機能
+                  items:
+                    - name: Finance and Operations ホーム ページの新機能および変更された機能
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations アプリ 10.0.5 (2019 年 10 月)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations 10.0.4 (2019 年 7 月)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Finance and Operations, Enterprise Edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 削除済みまたは非推奨の機能
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 延期された AX 2012 の機能
@@ -1685,10 +1691,8 @@
                       href: production-control/releasing-bom-and-formula-lines-to-warehouse.md
                     - name: モバイル デバイスを使用して材料消費を登録する
                       href: production-control/register-material-consumption-hand-held-device.md
-                    - name: 消費ルールを使用して原材料消費を管理する
+                    - name: 部品消費ルールを使用して原材料消費を管理する
                       href: production-control/flushing-principles.md
-                    - name: 製造オーダーから出荷ドックへのクロスドッキング
-                      href: production-control/cross-docking-opportunities.md
                     - name: 完成品の生産出荷の場所を設定する
                       href: production-control/production-output-location.md
                     - name: BOM を完了として報告する
@@ -2285,6 +2289,12 @@
                   href: warehousing/manage-warehouse-workers.md
                 - name: 倉庫作業の繰延処理
                   href: warehousing/deferred-put.md
+            - name: クロスドッキング
+              items:
+                - name: 製造オーダーから出荷ドックへのクロスドッキング
+                  href: production-control/cross-docking-opportunities.md
+                - name: クロスドッキングのための自動リリース出荷
+                  href: warehousing/auto-release-shipment-for-cross-docking.md
             - name: 部分的リリースおよび部分的出荷
               items:
                 - name: 輸送積荷の部分的出荷
@@ -2311,6 +2321,8 @@
                   href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
                 - name: 品目再配賦の未処理ピッキングの設定
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                - name: 例外処理のために倉庫作業をキャンセル
+                  href: warehousing/cancel-warehouse-work.md
             - name: 在庫棚卸
               items:
                 - name: 在庫棚卸の理由コード

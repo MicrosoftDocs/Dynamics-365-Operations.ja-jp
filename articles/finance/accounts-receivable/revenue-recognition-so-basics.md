@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: f0a5e4c01b34b2adb8e7e0af967af2c2562b4d87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f7d2cfb8e58221004ae5662aae3850adc577dc88
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176000"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570313"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>販売注文の収益認識
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> 収益認識機能は、機能管理を使用して有効にすることはまだできません。 現時点では、コンフィギュレーション キーを使用して有効にする必要があります。
+> 収益認識機能は、機能管理を使用して有効にすることはできません。 現時点では、コンフィギュレーション キーを使用して有効にする必要があります。
 
 このトピックでは、販売注文と請求書の収益を認識するための基本的な機能について説明します。 収益認識は、販売注文と、販売注文から作成された対応する請求書で使用できます。 時間/実費払プロジェクトを使用して販売注文を作成することもできます。
 

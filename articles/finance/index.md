@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b48313e93573e3214de0ee02c4894b000dc18f67
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175994"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570128"
 ---
 # <a name="financial-management-home-page"></a>財務管理ホーム ページ
 
@@ -68,5 +68,9 @@ Finance and Operations には、タスク ガイドとして使用できる追�
 
 ### <a name="countryregion-functionality"></a>国/地域の機能
 
-それぞれの国や地域における法規は、税金の設定や財務管理のその他の領域に影響があります。 特定の国や地域に固有の機能については、ヘルプ コンテンツにある[ローカライズと規制の機能](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) のセクションを参照してください。
+それぞれの国や地域における法規は、税金の設定や財務管理のその他の領域に影響があります。 特定の国や地域に固有の機能については、ヘルプ コンテンツにある [ローカライズと規制の機能](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) のセクションを参照してください。
+
+### <a name="additional-content"></a>追加のコンテンツ
+
+Supply Chain Management 機能は、企業が購買する商品やサービスの要求、注文、入荷、請求、支払を含む、仕入から支払プロセスの一部をカバーします。 購買、在庫、製造の管理機能に関する情報は、[!Supply Chain Management のホームぺージ](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) を参照してください。 
 

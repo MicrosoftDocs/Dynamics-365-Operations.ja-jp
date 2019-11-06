@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> このトピックは Dynamics 365 Retail と Dynamics 365 Commerce (プレビュー) に適用されます。
+> このトピックは [Dynamics 365 Retail](../index.md) と [Dynamics 365 Commerce (プレビュー)](../../commerce/index.md) に適用されます。

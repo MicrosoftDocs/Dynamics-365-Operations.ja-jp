@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 510a36668bf131b48733e486a43f1d630ae9f3ea
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278327"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653697"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Supply Chain Management のヘルプ リソース
 
@@ -39,7 +39,7 @@ ms.locfileid: "2278327"
 機能領域を選択すると詳細が表示されます。
 
 - [資産管理](asset-management/index.md)
-- [原価会計](../financials/cost-accounting/cost-accounting-home-page.md)
+- [原価会計](../finance/cost-accounting/cost-accounting-home-page.md)
 - [原価管理](cost-management/cost-management-home-page.md)  
 - [在庫管理](inventory/inventory-home-page.md)
 - [マスター プラン](master-planning/master-planning-home-page.md)
@@ -109,7 +109,7 @@ Dynamics 365 Finance の詳細については、[Dynamics 365 Finance のヘル�
 -  [Transportation management (TMS) in the new Microsoft Dynamics AX (新しい Microsoft Dynamics AX の輸送管理 (TMS))](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>ブログ
-<a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog (Dynamics AX 製造研究開発チーム ブログ)</a> および <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog (Dynamics AX のサプライ チェーン マネジメント研究開発チーム ブログ)</a> には、製造およびサプライ チェーン マネジメントに関する多くのトピックがあります。 これらの投稿のほとんどは、以前のバージョンの Finance and Operations について書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。 
+<a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX 製造研究開発チーム ブログ</a> および <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/"> Dynamics AX 研究開発チーム ブログの Supply Chain Management </a>には、製造およびサプライ チェーン マネジメントに関する多くのトピックがあります。 これらの投稿のほとんどは、以前のバージョンについて書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。 
 
 ## <a name="white-papers"></a>ホワイト ペーパー
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs (原価会計の演習)</a> 
