@@ -17,89 +17,91 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a15919250f7a492b28ef5db8d1c053b3348444f0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 80e338aaa16b459c581e810ccc1a45d17cff3677
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191755"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658823"
 ---
-# <a name="tabular-fields-subpattern"></a><span data-ttu-id="e5322-104">表形式フィールドのサブパターン</span><span class="sxs-lookup"><span data-stu-id="e5322-104">Tabular Fields subpattern</span></span>
+# <a name="tabular-fields-subpattern"></a><span data-ttu-id="dda49-104">表形式フィールドのサブパターン</span><span class="sxs-lookup"><span data-stu-id="dda49-104">Tabular Fields subpattern</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="e5322-105">この記事では、表形式フィールドのサブパターンに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="e5322-105">This article provides information about the Tabular Fields subpattern.</span></span> <span data-ttu-id="e5322-106">このサブパターンは、情報を表形式で効率的に表示するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="e5322-106">This subpattern is used to show information efficiently in a tabular format.</span></span> 
+<span data-ttu-id="dda49-105">この記事では、表形式フィールドのサブパターンに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="dda49-105">This article provides information about the Tabular Fields subpattern.</span></span> <span data-ttu-id="dda49-106">このサブパターンは、情報を表形式で効率的に表示するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="dda49-106">This subpattern is used to show information efficiently in a tabular format.</span></span> 
 
-<a name="usage"></a><span data-ttu-id="e5322-107">用途</span><span class="sxs-lookup"><span data-stu-id="e5322-107">Usage</span></span>
+<a name="usage"></a><span data-ttu-id="dda49-107">用途</span><span class="sxs-lookup"><span data-stu-id="dda49-107">Usage</span></span>
 -----
 
-<span data-ttu-id="e5322-108">このサブパターンは、情報を表形式で効率的に表示するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="e5322-108">This subpattern is used to show information efficiently in a tabular format.</span></span> <span data-ttu-id="e5322-109">フィールドは、行と列を含む表に配置され、オプションで列ヘッダー、行ラベル、キャプション、およびフッターが含まれます。</span><span class="sxs-lookup"><span data-stu-id="e5322-109">The fields are arranged in a table that contains rows and columns, and that optionally contains column headers, row labels, a caption, and a footer.</span></span> <span data-ttu-id="e5322-110">表形式フィールド サブパターンは、次のコントロールに対して適用できます。</span><span class="sxs-lookup"><span data-stu-id="e5322-110">The Tabular Fields subpattern can be applied on the following controls:</span></span>
+<span data-ttu-id="dda49-108">このサブパターンは、情報を表形式で効率的に表示するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="dda49-108">This subpattern is used to show information efficiently in a tabular format.</span></span> <span data-ttu-id="dda49-109">フィールドは、行と列を含む表に配置され、オプションで列ヘッダー、行ラベル、キャプション、およびフッターが含まれます。</span><span class="sxs-lookup"><span data-stu-id="dda49-109">The fields are arranged in a table that contains rows and columns, and that optionally contains column headers, row labels, a caption, and a footer.</span></span> <span data-ttu-id="dda49-110">表形式フィールド サブパターンは、次のコントロールに対して適用できます。</span><span class="sxs-lookup"><span data-stu-id="dda49-110">The Tabular Fields subpattern can be applied on the following controls:</span></span>
 
--   <span data-ttu-id="e5322-111">TabPage コントロール</span><span class="sxs-lookup"><span data-stu-id="e5322-111">TabPage control</span></span>
--   <span data-ttu-id="e5322-112">グループ コントロール</span><span class="sxs-lookup"><span data-stu-id="e5322-112">Group control</span></span>
+-   <span data-ttu-id="dda49-111">TabPage コントロール</span><span class="sxs-lookup"><span data-stu-id="dda49-111">TabPage control</span></span>
+-   <span data-ttu-id="dda49-112">グループ コントロール</span><span class="sxs-lookup"><span data-stu-id="dda49-112">Group control</span></span>
 
-## <a name="wireframes"></a><span data-ttu-id="e5322-113">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="e5322-113">Wireframes</span></span>
-### <a name="tabularfields1mediatabularfields1pngmediatabularfields1pngstructural-wireframe"></a><span data-ttu-id="e5322-114">[![TabularFields(1)](./media/tabularfields1.png)](./media/tabularfields1.png)構造ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="e5322-114">[![TabularFields(1)](./media/tabularfields1.png)](./media/tabularfields1.png)Structural wireframe</span></span>
+## <a name="wireframes"></a><span data-ttu-id="dda49-113">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="dda49-113">Wireframes</span></span>
+### <a name="wireframe-for-tabular-fieldsmediatabularfields1pngmediatabularfields1png"></a><span data-ttu-id="dda49-114">[![表形式フィールドのワイヤーフレーム](./media/tabularfields1.png)](./media/tabularfields1.png)</span><span class="sxs-lookup"><span data-stu-id="dda49-114">[![Wireframe for Tabular Fields](./media/tabularfields1.png)](./media/tabularfields1.png)</span></span>
 
-<span data-ttu-id="e5322-115">[![TabularFields(2)](./media/tabularfields2.png)](./media/tabularfields2.png)</span><span class="sxs-lookup"><span data-stu-id="e5322-115">[![TabularFields(2)](./media/tabularfields2.png)](./media/tabularfields2.png)</span></span>
+<span data-ttu-id="dda49-115">構造のワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="dda49-115">Structural wireframe</span></span>
 
-## <a name="pattern-changes"></a><span data-ttu-id="e5322-116">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="e5322-116">Pattern changes</span></span>
-<span data-ttu-id="e5322-117">Microsoft Dynamics AX の以前のリリースでは、このパターンをモデル化するための正式に許容された方法はありませんでした。</span><span class="sxs-lookup"><span data-stu-id="e5322-117">In previous releases of Microsoft Dynamics AX, there was no formally accepted way to model this pattern.</span></span> <span data-ttu-id="e5322-118">したがって、このパターンは、現在のパターンと一致するように変更する必要がある、一貫性のない多くの方法でモデル化されました。</span><span class="sxs-lookup"><span data-stu-id="e5322-118">Therefore, this pattern was modeled in many inconsistent ways that must be modified to match the current pattern.</span></span> <span data-ttu-id="e5322-119">このパターンをモデル化する最も一般的な方法は、列にグループを使用することでした。</span><span class="sxs-lookup"><span data-stu-id="e5322-119">The most common way to model this pattern was to use groups for columns.</span></span> <span data-ttu-id="e5322-120">ただし、グループが行に使用されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="e5322-120">However, groups are now used for the rows.</span></span> <span data-ttu-id="e5322-121">この変更の主な理由は HTML/CSS コンストラクトにより適合することでした。この変更は、テーブルのタブ順とセマンティクスの保持にも役立ちます。</span><span class="sxs-lookup"><span data-stu-id="e5322-121">The primary reason for this change was to better match the HTML/CSS constructs, and it also helps keep the tab sequence and semantics of a table.</span></span>
+<span data-ttu-id="dda49-116">[![表形式フィールドのワイヤーフレーム](./media/tabularfields2.png)](./media/tabularfields2.png)</span><span class="sxs-lookup"><span data-stu-id="dda49-116">[![Wireframe for Tabular Fields](./media/tabularfields2.png)](./media/tabularfields2.png)</span></span>
 
-## <a name="model"></a><span data-ttu-id="e5322-122">モデル</span><span class="sxs-lookup"><span data-stu-id="e5322-122">Model</span></span>
-### <a name="high-level-structure"></a><span data-ttu-id="e5322-123">高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="e5322-123">High-level structure</span></span>
+## <a name="pattern-changes"></a><span data-ttu-id="dda49-117">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="dda49-117">Pattern changes</span></span>
+<span data-ttu-id="dda49-118">Microsoft Dynamics AX の以前のリリースでは、このパターンをモデル化するための正式に許容された方法はありませんでした。</span><span class="sxs-lookup"><span data-stu-id="dda49-118">In previous releases of Microsoft Dynamics AX, there was no formally accepted way to model this pattern.</span></span> <span data-ttu-id="dda49-119">したがって、このパターンは、現在のパターンと一致するように変更する必要がある、一貫性のない多くの方法でモデル化されました。</span><span class="sxs-lookup"><span data-stu-id="dda49-119">Therefore, this pattern was modeled in many inconsistent ways that must be modified to match the current pattern.</span></span> <span data-ttu-id="dda49-120">このパターンをモデル化する最も一般的な方法は、列にグループを使用することでした。</span><span class="sxs-lookup"><span data-stu-id="dda49-120">The most common way to model this pattern was to use groups for columns.</span></span> <span data-ttu-id="dda49-121">ただし、グループが行に使用されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="dda49-121">However, groups are now used for the rows.</span></span> <span data-ttu-id="dda49-122">この変更の主な理由は HTML/CSS コンストラクトにより適合することでした。この変更は、テーブルのタブ順とセマンティクスの保持にも役立ちます。</span><span class="sxs-lookup"><span data-stu-id="dda49-122">The primary reason for this change was to better match the HTML/CSS constructs, and it also helps keep the tab sequence and semantics of a table.</span></span>
 
-- <span data-ttu-id="e5322-124">TabularFields (グループ\*)</span><span class="sxs-lookup"><span data-stu-id="e5322-124">TabularFields (Group\*)</span></span>
+## <a name="model"></a><span data-ttu-id="dda49-123">モデル</span><span class="sxs-lookup"><span data-stu-id="dda49-123">Model</span></span>
+### <a name="high-level-structure"></a><span data-ttu-id="dda49-124">高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="dda49-124">High-level structure</span></span>
 
-    - <span data-ttu-id="e5322-125">CaptionGroup (Group)</span><span class="sxs-lookup"><span data-stu-id="e5322-125">CaptionGroup (Group)</span></span>
+- <span data-ttu-id="dda49-125">TabularFields (グループ\*)</span><span class="sxs-lookup"><span data-stu-id="dda49-125">TabularFields (Group\*)</span></span>
 
-        - <span data-ttu-id="e5322-126">*TableCaption (StaticText) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="e5322-126">*TableCaption (StaticText) \[Optional\]*</span></span>
+    - <span data-ttu-id="dda49-126">CaptionGroup (Group)</span><span class="sxs-lookup"><span data-stu-id="dda49-126">CaptionGroup (Group)</span></span>
 
-    - <span data-ttu-id="e5322-127">TableHeaderRow (グループ)</span><span class="sxs-lookup"><span data-stu-id="e5322-127">TableHeaderRow (Group)</span></span>
+        - <span data-ttu-id="dda49-127">*TableCaption (StaticText) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="dda49-127">*TableCaption (StaticText) \[Optional\]*</span></span>
 
-        - <span data-ttu-id="e5322-128">*Column0Label (静的テキスト) \[オプション\]* – **注記:** この静的テキストは、col0、空白の row0 で入力されます。</span><span class="sxs-lookup"><span data-stu-id="e5322-128">*Column0Label (StaticText) \[Optional\]* – **Note:** This static text fills col0, row0 with a blank.</span></span>
-        - <span data-ttu-id="e5322-129">ColumnLabels (StaticText) \[1..N\] – **注記:** これらは通常の列ヘッダーです。</span><span class="sxs-lookup"><span data-stu-id="e5322-129">ColumnLabels (StaticText) \[1..N\] – **Note:** These are the normal column headers.</span></span>
+    - <span data-ttu-id="dda49-128">TableHeaderRow (グループ)</span><span class="sxs-lookup"><span data-stu-id="dda49-128">TableHeaderRow (Group)</span></span>
 
-    - <span data-ttu-id="e5322-130">TableRows (グループ) \[1..N\]</span><span class="sxs-lookup"><span data-stu-id="e5322-130">TableRows (Group) \[1..N\]</span></span>
+        - <span data-ttu-id="dda49-129">*Column0Label (静的テキスト) \[オプション\]* – **注記:** この静的テキストは、col0、空白の row0 で入力されます。</span><span class="sxs-lookup"><span data-stu-id="dda49-129">*Column0Label (StaticText) \[Optional\]* – **Note:** This static text fills col0, row0 with a blank.</span></span>
+        - <span data-ttu-id="dda49-130">ColumnLabels (StaticText) \[1..N\] – **注記:** これらは通常の列ヘッダーです。</span><span class="sxs-lookup"><span data-stu-id="dda49-130">ColumnLabels (StaticText) \[1..N\] – **Note:** These are the normal column headers.</span></span>
 
-        - <span data-ttu-id="e5322-131">*RowLabel (StaticText) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="e5322-131">*RowLabel (StaticText) \[Optional\]*</span></span>
-        - <span data-ttu-id="e5322-132">RowValues ($Field) \[1..N\] または SecondaryColumnLabel (StaticText) \[1..N\]</span><span class="sxs-lookup"><span data-stu-id="e5322-132">RowValues ($Field) \[1..N\] OR SecondaryColumnLabel (StaticText) \[1..N\]</span></span>
+    - <span data-ttu-id="dda49-131">TableRows (グループ) \[1..N\]</span><span class="sxs-lookup"><span data-stu-id="dda49-131">TableRows (Group) \[1..N\]</span></span>
 
-    - <span data-ttu-id="e5322-133">TableFooterGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="e5322-133">TableFooterGroup (Group)</span></span>
+        - <span data-ttu-id="dda49-132">*RowLabel (StaticText) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="dda49-132">*RowLabel (StaticText) \[Optional\]*</span></span>
+        - <span data-ttu-id="dda49-133">RowValues ($Field) \[1..N\] または SecondaryColumnLabel (StaticText) \[1..N\]</span><span class="sxs-lookup"><span data-stu-id="dda49-133">RowValues ($Field) \[1..N\] OR SecondaryColumnLabel (StaticText) \[1..N\]</span></span>
 
-        - <span data-ttu-id="e5322-134">*Column0Label (StaticText) \[オプション\]* – **注記:** この静的テキストは、col0、空白のフッターで入力されます。</span><span class="sxs-lookup"><span data-stu-id="e5322-134">*Column0Label (StaticText) \[Optional\]* – **Note:** This static text fills col0, footer with a blank.</span></span>
-        - <span data-ttu-id="e5322-135">*RowValues ($ フィールド)\[0..N\]* – **注記:** すべてのフッター フィールドは表示モードです。</span><span class="sxs-lookup"><span data-stu-id="e5322-135">*RowValues ($Field) \[0..N\]* – **Note:** All the footer fields are in view mode.</span></span>
+    - <span data-ttu-id="dda49-134">TableFooterGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="dda49-134">TableFooterGroup (Group)</span></span>
 
-<span data-ttu-id="e5322-136">表の最上位レベルのフィールドにある 4 つのグループは必須となる構造的な要素であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e5322-136">Note that the four groups in the top-level tabular fields are mandatory structural elements.</span></span> <span data-ttu-id="e5322-137">ただし、それらすべてのグループ例外の行 (グループ) の内容はオプションです。</span><span class="sxs-lookup"><span data-stu-id="e5322-137">However, the contents of all those groups exception the Rows (Group) are optional.</span></span> <span data-ttu-id="e5322-138">また、表形式のフィールドは TabPage コントロールで使用することもできることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e5322-138">Additionally, note that Tabular Fields can also be used on a TabPage control.</span></span> <span data-ttu-id="e5322-139">構造はここに示す構造と同じです。</span><span class="sxs-lookup"><span data-stu-id="e5322-139">The structure is the same as the structure that is shown here.</span></span>
+        - <span data-ttu-id="dda49-135">*Column0Label (StaticText) \[オプション\]* – **注記:** この静的テキストは、col0、空白のフッターで入力されます。</span><span class="sxs-lookup"><span data-stu-id="dda49-135">*Column0Label (StaticText) \[Optional\]* – **Note:** This static text fills col0, footer with a blank.</span></span>
+        - <span data-ttu-id="dda49-136">*RowValues ($ フィールド)\[0..N\]* – **注記:** すべてのフッター フィールドは表示モードです。</span><span class="sxs-lookup"><span data-stu-id="dda49-136">*RowValues ($Field) \[0..N\]* – **Note:** All the footer fields are in view mode.</span></span>
 
-### <a name="core-components"></a><span data-ttu-id="e5322-140">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="e5322-140">Core components</span></span>
+<span data-ttu-id="dda49-137">表の最上位レベルのフィールドにある 4 つのグループは必須となる構造的な要素であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="dda49-137">Note that the four groups in the top-level tabular fields are mandatory structural elements.</span></span> <span data-ttu-id="dda49-138">ただし、それらすべてのグループ例外の行 (グループ) の内容はオプションです。</span><span class="sxs-lookup"><span data-stu-id="dda49-138">However, the contents of all those groups exception the Rows (Group) are optional.</span></span> <span data-ttu-id="dda49-139">また、表形式のフィールドは TabPage コントロールで使用することもできることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="dda49-139">Additionally, note that Tabular Fields can also be used on a TabPage control.</span></span> <span data-ttu-id="dda49-140">構造はここに示す構造と同じです。</span><span class="sxs-lookup"><span data-stu-id="dda49-140">The structure is the same as the structure that is shown here.</span></span>
 
-<span data-ttu-id="e5322-141">トップレベルのグループやタブ ページに表形式フィールドのパターンを適用します。</span><span class="sxs-lookup"><span data-stu-id="e5322-141">Apply the Tabular Fields pattern on the top-level group or tab page.</span></span> <span data-ttu-id="e5322-142">パターン エラーと問題に対処します。</span><span class="sxs-lookup"><span data-stu-id="e5322-142">Address the pattern errors and problems.</span></span>
+### <a name="core-components"></a><span data-ttu-id="dda49-141">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="dda49-141">Core components</span></span>
 
-## <a name="ux-guidelines"></a><span data-ttu-id="e5322-143">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="e5322-143">UX guidelines</span></span>
-<span data-ttu-id="e5322-144">手動での検証は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="e5322-144">No manual verification is required.</span></span>
+<span data-ttu-id="dda49-142">トップレベルのグループやタブ ページに表形式フィールドのパターンを適用します。</span><span class="sxs-lookup"><span data-stu-id="dda49-142">Apply the Tabular Fields pattern on the top-level group or tab page.</span></span> <span data-ttu-id="dda49-143">パターン エラーと問題に対処します。</span><span class="sxs-lookup"><span data-stu-id="dda49-143">Address the pattern errors and problems.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e5322-145">例</span><span class="sxs-lookup"><span data-stu-id="e5322-145">Examples</span></span>
-<span data-ttu-id="e5322-146">フォーム: **LedgerJournalTransVendPaym** **(残高)** (**買掛金勘定** &gt; **仕訳帳** &gt; **支払仕訳帳** &gt; **明細行**)</span><span class="sxs-lookup"><span data-stu-id="e5322-146">Form: **LedgerJournalTransVendPaym** **(Balances)** (**Accounts payable** &gt; **Journals** &gt; **Payment journal** &gt; **Lines**)</span></span> 
+## <a name="ux-guidelines"></a><span data-ttu-id="dda49-144">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="dda49-144">UX guidelines</span></span>
+<span data-ttu-id="dda49-145">手動での検証は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="dda49-145">No manual verification is required.</span></span>
 
-<span data-ttu-id="e5322-147">[![TabularFields(3)](./media/tabularfields3.png)](./media/tabularfields3.png)</span><span class="sxs-lookup"><span data-stu-id="e5322-147">[![TabularFields(3)](./media/tabularfields3.png)](./media/tabularfields3.png)</span></span>
+## <a name="examples"></a><span data-ttu-id="dda49-146">例</span><span class="sxs-lookup"><span data-stu-id="dda49-146">Examples</span></span>
+<span data-ttu-id="dda49-147">フォーム: **LedgerJournalTransVendPaym** **(残高)** (**買掛金勘定** &gt; **仕訳帳** &gt; **支払仕訳帳** &gt; **明細行**)</span><span class="sxs-lookup"><span data-stu-id="dda49-147">Form: **LedgerJournalTransVendPaym** **(Balances)** (**Accounts payable** &gt; **Journals** &gt; **Payment journal** &gt; **Lines**)</span></span> 
 
-## <a name="resources"></a><span data-ttu-id="e5322-148">リソース</span><span class="sxs-lookup"><span data-stu-id="e5322-148">Resources</span></span>
-### <a name="typically-used-by-patterns"></a><span data-ttu-id="e5322-149">通常、パターンによって使用される</span><span class="sxs-lookup"><span data-stu-id="e5322-149">Typically used by patterns</span></span>
+<span data-ttu-id="dda49-148">[![表形式フィールドの例](./media/tabularfields3.png)](./media/tabularfields3.png)</span><span class="sxs-lookup"><span data-stu-id="dda49-148">[![Example of Tabular Fields](./media/tabularfields3.png)](./media/tabularfields3.png)</span></span>
 
--   [<span data-ttu-id="e5322-150">簡易リストと詳細</span><span class="sxs-lookup"><span data-stu-id="e5322-150">Simple List and Details</span></span>](simple-list-details-form-pattern.md)
--   [<span data-ttu-id="e5322-151">目次</span><span class="sxs-lookup"><span data-stu-id="e5322-151">Table of Contents</span></span>](table-of-contents-form-pattern.md)
--   [<span data-ttu-id="e5322-152">詳細マスター</span><span class="sxs-lookup"><span data-stu-id="e5322-152">Details Master</span></span>](details-master-form-pattern.md)
--   [<span data-ttu-id="e5322-153">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="e5322-153">Details Transaction</span></span>](details-transaction-form-pattern.md)
+## <a name="resources"></a><span data-ttu-id="dda49-149">リソース</span><span class="sxs-lookup"><span data-stu-id="dda49-149">Resources</span></span>
+### <a name="typically-used-by-patterns"></a><span data-ttu-id="dda49-150">通常、パターンによって使用される</span><span class="sxs-lookup"><span data-stu-id="dda49-150">Typically used by patterns</span></span>
 
-## <a name="appendix"></a><span data-ttu-id="e5322-154">付録</span><span class="sxs-lookup"><span data-stu-id="e5322-154">Appendix</span></span>
-### <a name="frequently-asked-questions"></a><span data-ttu-id="e5322-155">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="e5322-155">Frequently asked questions</span></span>
+-   [<span data-ttu-id="dda49-151">簡易リストと詳細</span><span class="sxs-lookup"><span data-stu-id="dda49-151">Simple List and Details</span></span>](simple-list-details-form-pattern.md)
+-   [<span data-ttu-id="dda49-152">目次</span><span class="sxs-lookup"><span data-stu-id="dda49-152">Table of Contents</span></span>](table-of-contents-form-pattern.md)
+-   [<span data-ttu-id="dda49-153">詳細マスター</span><span class="sxs-lookup"><span data-stu-id="dda49-153">Details Master</span></span>](details-master-form-pattern.md)
+-   [<span data-ttu-id="dda49-154">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="dda49-154">Details Transaction</span></span>](details-transaction-form-pattern.md)
 
-<span data-ttu-id="e5322-156">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="e5322-156">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
+## <a name="appendix"></a><span data-ttu-id="dda49-155">付録</span><span class="sxs-lookup"><span data-stu-id="dda49-155">Appendix</span></span>
+### <a name="frequently-asked-questions"></a><span data-ttu-id="dda49-156">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="dda49-156">Frequently asked questions</span></span>
 
--   <span data-ttu-id="e5322-157">**表形式のフィールド レイアウトの作成方法を変更する理由は何ですか?**</span><span class="sxs-lookup"><span data-stu-id="e5322-157">**Why are we changing how the tabular field layout is created?**</span></span>
-    -   <span data-ttu-id="e5322-158">HTML でレイアウトを実現するには、HTML レイアウトの動作方法に合わせる必要があります。</span><span class="sxs-lookup"><span data-stu-id="e5322-158">To accomplish the layout in HTML, we must align with the way that HTML layout works.</span></span> <span data-ttu-id="e5322-159">HTML レイアウトは、列ごとではなく行ごとにグループ化します。</span><span class="sxs-lookup"><span data-stu-id="e5322-159">HTML layout groups by rows, not by columns.</span></span>
+<span data-ttu-id="dda49-157">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="dda49-157">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
 
-### <a name="open-issues"></a><span data-ttu-id="e5322-160">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="e5322-160">Open issues</span></span>
+-   <span data-ttu-id="dda49-158">**表形式のフィールド レイアウトの作成方法を変更する理由は何ですか?**</span><span class="sxs-lookup"><span data-stu-id="dda49-158">**Why are we changing how the tabular field layout is created?**</span></span>
+    -   <span data-ttu-id="dda49-159">HTML でレイアウトを実現するには、HTML レイアウトの動作方法に合わせる必要があります。</span><span class="sxs-lookup"><span data-stu-id="dda49-159">To accomplish the layout in HTML, we must align with the way that HTML layout works.</span></span> <span data-ttu-id="dda49-160">HTML レイアウトは、列ごとではなく行ごとにグループ化します。</span><span class="sxs-lookup"><span data-stu-id="dda49-160">HTML layout groups by rows, not by columns.</span></span>
 
--   <span data-ttu-id="e5322-161">None</span><span class="sxs-lookup"><span data-stu-id="e5322-161">None</span></span>
+### <a name="open-issues"></a><span data-ttu-id="dda49-161">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="dda49-161">Open issues</span></span>
+
+-   <span data-ttu-id="dda49-162">None</span><span class="sxs-lookup"><span data-stu-id="dda49-162">None</span></span>
