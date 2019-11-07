@@ -3,7 +3,7 @@ title: オンプレミス環境の設定と配置 (Platform update 12 以降)
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 以降を計画、設定、展開する方法について説明します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: d052ec2ae18da492c6d81ce254f9e7bd47c42b45
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 93ba63f9e92ca546c3417480d21aee100ecb4d02
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536929"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627576"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -341,8 +341,8 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 インフラストラクチャの設定 スクリプトは、次のコンフィギュレーション ファイルを使用して設定を実行します。
 - infrastructure\ConfigTemplate.xml
-- infrastructure\D365FO-OP\NodeTopologyDefintion.xml
-- infrastructure\D365FO-OP\DatabaseTopologyDefintion.xml
+- infrastructure\D365FO-OP\NodeTopologyDefinition.xml
+- infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml
 
 >[!NOTE]
 >セットアップ スクリプトが正しく機能するには、環境に基づいてコンフィギュレーション ファイルを更新する必要があります。 これらのファイルは、設定に基づいて適切なコンピューター名、IP アドレス、サービス アカウントおよびドメインで更新してください。

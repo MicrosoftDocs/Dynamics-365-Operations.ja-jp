@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e538f3aee0ab8c8e06a60d42e375ca1a785fd39b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4d727d43cbb02c1caa18cfb4460044b8aa2b100d
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183061"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627572"
 ---
 # <a name="create-localizable-labels"></a>ローカライズ可能なラベルの作成
 
@@ -30,7 +30,7 @@ ms.locfileid: "2183061"
 
 この記事では、クライアント コンポーネントと HTML/JavaScript コントロールのローカライズ可能なラベルを作成する方法について説明します。
 
-この記事では、クライアント コンポーネントと HTML/JavaScript コントロールの**ローカライズ可能な**ラベルを作成するプロセスについて詳しく説明します。 このプロセスでは、既存のローカライズ ツールとラベル用のプロセスを使用して、クライアント コンポーネントと HMTL/JavaScript コントロールのローカライズ  サポートを提供します。 次のプロセスでは、クライアント コンポーネントと HTML/JavaScript コントロールでラベルを使用できるように、ラベル ファイルを JavaScript に相当するものにシリアル化できるラベル リソース コントローラーが使用されています。 ラベル リソース コントローラーは自動的に配置されます。 /Resources/Labels エンドポイントに配置されている MVC サービスです。
+この記事では、クライアント コンポーネントと HTML/JavaScript コントロールの**ローカライズ可能な**ラベルを作成するプロセスについて詳しく説明します。 このプロセスでは、既存のローカライズ ツールとラベル用のプロセスを使用して、クライアント コンポーネントと HTML/JavaScript コントロールのローカライズ  サポートを提供します。 次のプロセスでは、クライアント コンポーネントと HTML/JavaScript コントロールでラベルを使用できるように、ラベル ファイルを JavaScript に相当するものにシリアル化できるラベル リソース コントローラーが使用されています。 ラベル リソース コントローラーは自動的に配置されます。 /Resources/Labels エンドポイントに配置されている MVC サービスです。
 
 ## <a name="1-create-a-label-file"></a>1. ラベル ファイルの作成
 開発者ツールを使用して、コントロールの領域に新しいラベル ファイルを作成するか、コントロールの領域に既存のラベル ファイルを使用します。 コントロールの領域は、チームによって決定されます。

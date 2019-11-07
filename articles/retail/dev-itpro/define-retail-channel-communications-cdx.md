@@ -18,25 +18,23 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f5b3c446df69613e14f3363d42e7b79553e2736d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: bcf44b7c8e8bdfd9883664fb2a76bc4461eb21bc
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025733"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578305"
 ---
 # <a name="commerce-data-exchange-and-retail-channel-communications"></a>Commerce Data Exchange と小売チャネルのコミュニケーション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Commerce Data Exchange とその要素の概要を示します。 ここでは、Microsoft Dynamics 365 Retail Headquarters と小売チャネルとの間でのデータの転送において各コンポーネントが果たす役割について説明します。
+このトピックでは、Commerce Data Exchange とその要素の概要を示します。 ここでは、Microsoft Dynamics 365 Retail Headquarters および小売チャネルとの間でのデータの転送において各コンポーネントが果たす役割について説明します。
 
 <a name="overview"></a>概要
 --------
 
 Commerce Data Exchange は、小売用バックオフィスと、オンライン ストア、実際の店舗などの小売チャネルの間でデータを転送するシステムです。 小売チャンネルのデータを格納するデータベースは、小売りデータベースとは別にあります。 チャンネルのデータベースは、小売トランザクションに必要なデータのみ格納します。 マスター データが小売用バックオフィスでコンフィギュレーションされ、チャネルに配分されます。 トランザクション データは販売時点管理 (POS) システムまたはオンライン店舗で作成され、小売用バックオフィスにアップロードされます。 データ配送は非同期です。 つまり、データを収集してソースでパッケージングするプロセスは、データを取得して適用するプロセスとは別に行われます。 価格および在庫検索などのシナリオの場合、データはリアルタイムに取得する必要があります。 これらのシナリオをサポートするために、Commerce Data Exchange には、小売用バックオフィスとチャネル間のリアルタイム通信を可能にするサービスが含まれます。 
-
-[![更新済小売グラフィック](./media/updated-retail-graphic.png)](./media/updated-retail-graphic.png)  
 
 ## <a name="async-service"></a>非同期サービス
 小売データベースの Microsoft SQL Server 変更追跡は、チャネルに送信する必要のあるデータの変更内容を特定するのに使用されます。 配送スケジュールに基づいて、小売用バックオフィスはそのデータをパッケージングして中央の保存場所 (Azure blob storage) に保存します。 別のバッチ処理は、このデータ パッケージをチャネルのデータベースに挿入するために Commerce Data Exchange: Async Client ライブラリを使用します。 

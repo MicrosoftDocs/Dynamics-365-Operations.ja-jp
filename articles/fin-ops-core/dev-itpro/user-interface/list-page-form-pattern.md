@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c48c28ed1f936feed40651cc62a5eb73621559c2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 18c2c5ed4c64317a3487689bc33f9418d332b771
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191769"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658838"
 ---
 # <a name="list-page-form-pattern"></a>リスト ページのフォーム パターン
 
@@ -138,4 +138,4 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
-[![AX 2012 の例](./media/listpage3-1024x671.png)](./media/listpage3.png)
+[![例](./media/listpage3-1024x671.png)](./media/listpage3.png)

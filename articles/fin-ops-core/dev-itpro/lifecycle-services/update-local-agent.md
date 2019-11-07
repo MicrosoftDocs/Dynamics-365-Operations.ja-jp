@@ -3,7 +3,7 @@ title: ローカル エージェントの更新
 description: このトピックでは、ローカル エージェントを更新する方法について説明します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/05/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4809a135fd641f2f81f18be9aa02529e29991bd9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4af48d8d7dbd4114858ecfc617426a7caf05b663
+ms.sourcegitcommit: c6c0f698588477f2a5c52972716e5ebc40e5cb9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183182"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "2567035"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンはバージョン 2.3.0 で、2019 年 8 月にリリースされました。
+このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンはバージョン 2.3.1 で、2019 年 9 月にリリースされました。
 
 | ローカル エージェントのバージョン | 能力 | 
 |---------------------|------------|

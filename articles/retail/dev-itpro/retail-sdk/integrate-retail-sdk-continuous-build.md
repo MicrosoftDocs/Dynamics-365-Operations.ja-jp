@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: andreash
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: efa61d874c8d7423356e8446b3cbe09db49906e2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3bfb92daa628108ce038769410a41360058bba56
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248717"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570597"
 ---
 # <a name="merge-the-build-systems-for-retail-and-finance"></a>Retail and Finance 用ビルド システムのマージ
 
@@ -65,7 +65,7 @@ Retail SDK の場所が含まれるように、ビルド定義を編集します
 
 このビルド ステップでは、Microsoft がファイル/バイナリを共有する場合、Microsoft は Retail bin フォルダに最新の構築済み Retail バイナリをコピーできます。 前のセクションで説明したように、Retail SDK のビルド ステップを追加した直後にこのステップを完了することを確認します。
 
-[![Retail SDK から Dynamics 365 Retail ビルドへのバイナリのコピー ステップの追加](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
+[![Retail SDK から Retail ビルドへのバイナリのコピー ステップの追加](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
 
 ## <a name="add-a-copy-step-for-all-retail-packages"></a>すべての Retail パッケージのコピー ステップの追加
 

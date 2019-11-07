@@ -3,7 +3,7 @@ title: POS ビューの拡張によるカスタム列およびアプリ バー �
 description: このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/26/2019
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 796b2c2aeddc333ac7b594db25fd88fc467c22e3
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b0ff3afc24796c40189814f26d6834880a322927
+ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023456"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564181"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -74,6 +74,9 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | TransferOrderDetailsView        | いいえ                            | いいえ                           | はい                               |
 | FulfillmentLineView             | いいえ                            | はい                          | いいえ                               |
 | ReturnTransactionView           | いいえ                            | はい                          | はい                               |
+| PickingAndReceivingDetailsView  | いいえ                            | はい                          | はい                    |
+| PickingAndReceivingDetailsView (高度な倉庫)  | いいえ                            | はい                          | はい           |
+
 
 
 > [!NOTE]

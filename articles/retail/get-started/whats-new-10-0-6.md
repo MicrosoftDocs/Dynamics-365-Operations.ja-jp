@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Retail バージョン 10.0.6 の機能をプレビューする
+title: Dynamics 365 Retail バージョン 10.0.6 の新機能および変更された機能
 description: このトピックでは Dynamics 365 Retail のプレビュー中の機能について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 10/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: fb54dda7f0ce26dd1005e0fc947888d2b15b5a83
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: db10bee3acf8e41fa586c0de88a8d1f0e1d3d281
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550496"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570595"
 ---
-# <a name="preview-features-in-dynamics-365-retail-version-1006"></a>Dynamics 365 Retail バージョン 10.0.6 の機能をプレビューする
+# <a name="whats-new-or-changed-in-dynamics-365-retail-version-1006"></a>Dynamics 365 Retail バージョン 10.0.6 の新機能および変更された機能
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Retail 10.0.6 の新機能または変更された機能について説明します。 
 
-Finance and Operations アプリケーションの機能については、[Finance and Operations バージョン 10.0.6 (November 2019 年 11 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6) を参照してください。
+Finance and Operations アプリケーションの機能については、[Finance and Operations バージョン 10.0.6 (November 2019 年 11 月) の新機能および変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6) を参照してください。
 
 ## <a name="new-inventory-availability-apis-for-e-commerce-use"></a>E コマース用の新しい引当可能在庫数 API
 4 つの新しいAPIが利用可能になり、E コマースまたはサード パーティのソリューションに要求された品目と倉庫に対する手持在庫の見積を提供します。  これらの API は、現在市場にある既存の GetProductAvailabilities および GetAvailableInventoryNearby API と置き換えることを目的としています。   これらの新しい API では、パフォーマンスを向上させるための計算ロジックとキャッシングが向上します。  新しい API の名前は次のとおりです。

@@ -3,7 +3,7 @@ title: パフォーマンス SDK とローカル テスト コントローラー
 description: このトピックでは、タスク レコーダーから生成されたパフォーマンス テスト スクリプトと共に Microsoft Visual Studio とパフォーマンス SDK を使用してマルチユーザー テストを行う方法を説明します。
 author: hasaid
 manager: AnnBe
-ms.date: 06/4/2019
+ms.date: 10/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 449f2aebe052a80721efb1945dd28c43ab3d8208
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 41822bf83253037075bf5a2a0e742199ef0ffee2
+ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183093"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2572705"
 ---
 # <a name="multi-user-testing-with-the-performance-sdk-and-a-local-test-controller"></a>パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト
 
@@ -86,7 +86,7 @@ ms.locfileid: "2183093"
 
     [![PerfSDK の証明書 \\ PerfS フォルダー](./media/multi-user-test-local-05.png)](./media/multi-user-test-local-05.png)
 
-6. 次のコマンドを実行して **Visual Studio Online** フォルダーの **setup.md** ファイルを置き換えます。
+6. 以下で、**Visual Studio Online** フォルダーの **setup.md** ファイルを置き換えます。
 
     ```
     setx testroot "%DeploymentDirectory%"

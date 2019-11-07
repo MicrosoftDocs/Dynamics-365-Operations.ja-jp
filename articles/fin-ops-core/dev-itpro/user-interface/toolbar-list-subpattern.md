@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90f6378ccc7cc2f290baecd497fa7c946498b953
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 99a658263fea1014270c63cdd011588a604dff94
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191751"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658798"
 ---
 # <a name="toolbar-and-list-subpattern"></a>ツールバーおよびリストのサブパターン
 
@@ -41,16 +41,16 @@ ms.locfileid: "2191751"
 ## <a name="wireframes"></a>ワイヤーフレーム
 ### <a name="toolbar-and-list"></a>ツールバーおよびリスト
 
-[![ToolbarList(1)](./media/toolbarlist1.png)](./media/toolbarlist1.png)
+[![ツールバーとリストのフォームのワイヤーフレーム](./media/toolbarlist1.png)](./media/toolbarlist1.png)
 
 ### <a name="toolbar-and-list-double"></a>ツールバーおよびリスト (ダブル)
 
-[![ToolbarList(2)](./media/toolbarlist2.png)](./media/toolbarlist2.png)
+[![ツールバーとリスト (ダブル) のフォームのワイヤーフレーム](./media/toolbarlist2.png)](./media/toolbarlist2.png)
 
 ## <a name="model"></a>モデル
 ### <a name="toolbar-and-list--high-level-structure"></a>ツールバーおよびリスト - 高度なレベル構造
 
-- \[コンテナ\]
+- \[コンテナー\]
 
     - *ツールバー (ActionPane、スタイル = ストリップ) \[オプション\]*
     - *CustomFilterGroup (グループ) \[オプション\]*
@@ -96,13 +96,13 @@ ms.locfileid: "2191751"
 
 フォーム: **VendTable (TabCommunication)** 
 
-[![ToolbarList(3)](./media/toolbarlist3.png)](./media/toolbarlist3.png)
+[![ツールバーおよびリストの例](./media/toolbarlist3.png)](./media/toolbarlist3.png)
 
 ### <a name="toolbar-and-list-double"></a>ツールバーおよびリスト (ダブル)
 
 フォーム: **SalesQuickQuote (TabPageExistingItems)** 
 
-[![ToolbarList(4)](./media/toolbarlist4.png)](./media/toolbarlist4.png)
+[![ツールバーおよびリスト (ダブル) の例](./media/toolbarlist4.png)](./media/toolbarlist4.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -128,4 +128,4 @@ ms.locfileid: "2191751"
 
 **VendTable** 
 
-[![ToolbarList(5)](./media/toolbarlist5.png)](./media/toolbarlist5.png)
+[![以前のバージョンの例](./media/toolbarlist5.png)](./media/toolbarlist5.png)

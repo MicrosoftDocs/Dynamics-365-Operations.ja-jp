@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: a440ff04dc2a405144f2c243ff37b5fd1b15ec06
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b998298fee72ec545df579b564a99d4b7e229d17
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191722"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627567"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-6-april-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の新機能および変更された機能
 
@@ -72,7 +73,7 @@ Dynamics 365 for Operations アイデア フォーラムは、 [アイデア ポ
 
 Dynamics 365 for Operations フォーラムに移動するには**アイデア**のリンクをクリックします。
 
-[![ideas-page](./media/ideas-page.png)](./media/ideas-page.png)
+
 
 - フォーラムには既存のアイデアがあらかじめ設定されているため、顧客やパートナーはすぐに新しいアイデアを投票したり提案したりすることができます。
 - 状態および時間を使用してアイデアをフィルター処理することができます。 上位のアイデア、話題のアイデア、および新しいアイデアを素早く表示することもできます。

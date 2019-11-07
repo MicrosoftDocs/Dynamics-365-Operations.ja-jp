@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 48136938e5887bed6c9c84579076d5cda37d2902
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: f206206767095cf4caa009cf9c84f15352cb120d
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553202"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570484"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1005-october-2019"></a>Finance and Operations アプリ バージョン 10.0.5 (2019 年 10 月) の新機能および変更された機能
 
@@ -32,10 +32,10 @@ ms.locfileid: "2553202"
 このトピックでは、Microsoft Dynamics 365 Finance および Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.5 を含む Finance and Operations アプリの新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.197 です。 一般提供開始日は 10 月ですが、新機能は 8 月の初期リリースで使用できます。 バージョン 10.0.5 の詳細については [追加リソース](whats-new-changed-10-0-5.md#additional-resources) を参照してください。
 
 
-Dynamics 365 Retail の新機能と変更についての最新のリリースでについては、[Dynamics 365 for Retail バージョン 10.0.5 の機能のプレビュー](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5) を参照してください。
+最新のリリースの Dynamics 365 Retail の新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.5 の新機能と変更](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5) を参照してください。
 
 
-## <a name="revenue-recognition"></a>収益認識基準
+## <a name="revenue-recognition"></a>収益認識
 
 収益認識基準は、米国内の一般的に認められている会計原則 (GAAP) および国際財務報告基準 (IFRS) 要件を満たすための、ハードウェア、ソフトウェア、サポート、およびサブスクリプションの収益価格と収益スケジュールを定義することができます。
 

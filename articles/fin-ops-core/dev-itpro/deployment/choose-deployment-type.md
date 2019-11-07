@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 45ab79cd094a292d467228d9db0ecb43351350f3
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 3359ce7303a85fe5f124ddee4fff354b3670e1a6
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536960"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578256"
 ---
 # <a name="deployment-options"></a>配置オプション
 
@@ -34,7 +34,7 @@ Finance and Operations アプリをクラウドまたはオンプレミスで展
 
 次のテーブルは、2 つの配置オプションによって提供される機能の比較を示しています。
 
-[![配置オプション テーブル](./media/deployment-options.PNG)](./media/deployment-options.PNG)
+[![配置オプション テーブル](./media/deployment-options.png)](./media/deployment-options.png)
 
 
 ## <a name="why-cloud"></a>クラウドを使用する理由

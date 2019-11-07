@@ -3,7 +3,7 @@ title: ワークスペースの Power BI 統合のコンフィギュレーショ
 description: このトピックでは、PowerBI.com との統合をサポートする新しい Finance and Operations 環境を構成する方法を説明します。 このコンフィギュレーションにより、ワークスペースに Power BI コントロールが表示され、ユーザーはワークスペースに視覚エフェクトをピン留めすることができます。
 author: MilindaV2
 manager: AnnBe
-ms.date: 07/31/2019
+ms.date: 10/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b51d1fa80f59f3e4131afedbd260d5263f30c1b9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: edbd9276dd3d191eab949483bb8bf9403340ef14
+ms.sourcegitcommit: 496c81b866fad0737bc027e793a4be803924a061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174578"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2652564"
 ---
 # <a name="configure-power-bi-integration-for-workspaces"></a>ワークスペースの Power BI 統合のコンフィギュレーション
 
@@ -121,7 +121,7 @@ ms.locfileid: "2174578"
 | エラー                                                       | 解像度 |
 |-------------------------------------------------------------|------------|
 | Power BI サービスを使用できません。                        | この問題は頻繁には発生しませんが、Power BI サービスに到達できないことがあります。 再登録する必要はありません。 後でタイルをワークスペースに固定してみてください。 |
-| アプリケーションにアクセスすることはできません。                           | 登録プロセス中に、**手順 3 アクセスする API** の下のすべてのチェック ボックスが選択されなかった可能性があります。 Power BI を起動し、登録プロセスを再実行します。 |
+| アプリケーションにアクセスすることはできません。                           | 登録プロセス中に、**登録プロセスの手順 8** にあるすべてのチェック ボックスが選択されなかった可能性があります。 Power BI を起動し、登録プロセスを再実行します。 |
 | Power BI タイル ページが空です (コンテンツが表示されません)。     | PowerBI.com アカウントに、ダッシュ ボードまたはタイルがない可能性があります。 サンプル ダッシュ ボードなどのダッシュボードを追加して、もう一度をタイルをピン留めしてみてください。 |
 | Power BI の承認時にエラー                             | Azure 管理者ダッシュボードの、**ユーザーおよびグループ \> ユーザー設定** の下で、**ユーザーはアプリが会社のデータにアクセスすることに同意できる** オプションが **はい** に設定されていることを確認します。 |
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb9868795661c1ed80b60aae1486eedc3bc5f2b0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 28269e84bb4570085eea0926ee6220effaf46c54
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191762"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658831"
 ---
 # <a name="section-related-links-subpattern"></a>セクション関連リンクのサブパターン
 
@@ -36,7 +36,7 @@ ms.locfileid: "2191762"
 セクション関連リンク サブパターンは、他のフォームへのリンクのセットを含む最後のパノラマ セクション専用の運用ワークスペース パターンの一部として使用されます。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![sectionRelatedLinksWireframe](./media/sectionrelatedlinkswireframe.png)](./media/sectionrelatedlinkswireframe.png)
+[![セクション関連リンクのワイヤーフレーム](./media/sectionrelatedlinkswireframe.png)](./media/sectionrelatedlinkswireframe.png)
 
 ## <a name="pattern-changes-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
@@ -65,7 +65,7 @@ ms.locfileid: "2191762"
 ## <a name="examples"></a>例
 フォーム: **PurchOrderProcessReceiptsWorkspace** (**すべてのワークスペース** &gt; **発注書入庫とフォローアップ** (**リンク**セクションを参照してください) 
 
-[![sectionRelatedLinksExample](./media/sectionrelatedlinksexample.png)](./media/sectionrelatedlinksexample.png)
+[![セクション関連リンクの例](./media/sectionrelatedlinksexample.png)](./media/sectionrelatedlinksexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

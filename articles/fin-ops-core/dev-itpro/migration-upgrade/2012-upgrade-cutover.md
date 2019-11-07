@@ -3,7 +3,7 @@ title: AX 2012 からのアップグレード - Go live (切替)
 description: このトピックでは、Dynamics AX 2012 をオフにしてから、Finance and Operations でコードとデータベースのアップグレード バージョンの実行が完了するまでの最終的な切替えプロセスについて説明します。
 author: robadawy
 manager: AnnBe
-ms.date: 06/06/2018
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 5208829737d42ad00dc1a61b3e51555a949c5f4d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4107d42d06b24fdb54e0d33924b1a0189c348d53
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191892"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622787"
 ---
 # <a name="upgrade-from-ax-2012---go-live-cutover"></a>AX 2012 からのアップグレード - Go live (切替)
 
@@ -62,6 +62,6 @@ ms.locfileid: "2191892"
 -   アップグレードをスケジュールするには、[AX 2012 からのアップグレード- 切替テスト (切替モック)](./upgrade-cutover-testing.md) に説明されているように、LCS から「その他」のタイプのサービスリクエストを送信して、DSE チームにタイムスロットを要求します。 これは、優先タイム スロットが使用できるようにすることです。 週末の間などスロットの需要が大幅に高くなるため注意してください。できるだけ早くこれらを要求することにより優先スケジュールを達成できます。
 
 ## <a name="related-articles"></a>関連記事
-- [Onboarding](../../fin-and-ops/imp-lifecycle/onboard.md)
+- [Onboarding](../../fin-ops/imp-lifecycle/onboard.md)
 - [サービス要求を送信する](../lifecycle-services/submit-request-dynamics-service-engineering-team.md)
 - [AX 2012 からのアップグレード - 切替テスト](./upgrade-cutover-testing.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-5-31
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: ca8a14148250557080f2cf9009cb04d1104f6df2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4da3ab6dd87ed97877eb429197e4d5cbf191586e
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183055"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578296"
 ---
 # <a name="feature-callouts"></a>機能のコールアウト
 
@@ -34,7 +34,7 @@ ms.locfileid: "2183055"
 
 このトピックでは、機能のコールアウトの作成に使用される API について詳しく説明します。   
 
-![プラットフォーム更新プログラム 22 でリリースされた、ナビゲーション ウィンドウの機能のコールアウトの変更](./media/cli_featureCallout_noLink.png "プラットフォーム更新プログラム 22 でリリースされた、ナビゲーション ウィンドウの機能のコールアウトの変更")
+![ナビゲーション ウィンドウの機能のコールアウトの変更](./media/cli_featureCallout_noLink.png "プラットフォーム更新プログラム 22 でリリースされた、ナビゲーション ウィンドウの機能のコールアウトの変更")
   
 ## <a name="the-got-it-button"></a>"了解" ボタン
 機能のコールアウトがトリガーされたら、ユーザは **了解** ボタンをただクリックしてポップアップを閉じることができます。 これにより、この機能コールアウトの状態が個人用設定サブシステムに保存され、特定の機能コールアウトが再度トリガーされるのを防ぎます。 

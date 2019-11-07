@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-pakris
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: c4f49a7af34eaf752545b37d7b977b3cdab885c8
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 89b78aaf91269ceb0b689ed857ce7c085eb3876b
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023378"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653360"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 
@@ -33,7 +33,7 @@ ms.locfileid: "2023378"
 
 ## <a name="prerequisites"></a>必要条件
 
-- Finance and Operations でのインド向け GST を設定します。 詳細については、[インドの商品及びサービス税 (GST)](../../financials/localizations/apac-ind-gst.md) を参照してください。
+- インドの GST を設定します。 詳細については、[インドの商品及びサービス税 (GST)](../../financials/localizations/apac-ind-gst.md) を参照してください。
 - 小売チャネル コンポーネントを構成します。 インド固有の機能を有効にするには、小売チャネル コンポーネントの拡張機能を構成する必要があります。 詳細については、[配置ガイドライン](./apac-ind-loc-deployment-guidelines.md)を参照してください。
 
 ## <a name="india-tax-entities-for-retail"></a>小売り業向けインドの税エンティティ

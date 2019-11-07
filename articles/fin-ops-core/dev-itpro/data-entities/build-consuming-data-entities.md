@@ -3,7 +3,7 @@ title: データ エンティティのビルドおよび使用
 description: このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb0260d7990d0cdcaaf6b8ddbb9858ee4671c363
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b2eab1803e8fb8d41122b8863ef2c620f6ae6402
+ms.sourcegitcommit: e16b8c248fc2c2a60dc7b803320f942a35b443c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191546"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2577509"
 ---
 # <a name="build-and-consume-data-entities"></a>データ エンティティのビルドおよび使用
 
@@ -36,7 +36,7 @@ ms.locfileid: "2191546"
 このチュートリアルでは、baseUrl はインスタンスのベース URL を指します。
 
 - クラウド環境では、ベース URL は Microsoft Dynamics Lifecycle Services (LCS) から取得されます。
-- ローカル仮想マシン (VM) の、基準 URL は https://usnconeboxax1aos.cloud.onebox.dynamics.com です。
+- ローカル仮想マシン (VM) の、基準 URL は `https://usnconeboxax1aos.cloud.onebox.dynamics.com` です。
 
 ## <a name="key-concepts"></a>重要な概念
 - Microsoft Visual Studio のデータ エンティティの開発

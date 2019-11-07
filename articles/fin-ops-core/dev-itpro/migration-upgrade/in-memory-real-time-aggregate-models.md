@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b349aca4f14cb7bdfac324a5c256c3238407e817
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 06c30a2b89745c1a41e5896c9234c98910ebd36a
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183164"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570544"
 ---
 # <a name="transition-from-analysis-services-cubes-to-aggregate-models"></a>Analysis Services キューブから集計モデルへの移行
 
@@ -46,7 +46,7 @@ Finance and Operations のユーザー エクスペリエンスで重要な役�
 -   PowerBI にデータを公開します。
 -   AXQuery オブジェクトを使用してプログラムでデータにアクセス。
 
-[![how-perspectives-are-used](./media/how-perspectives-are-used.png)](./media/how-perspectives-are-used.png)  
+[![how-perspectives-are-used](./../media/how-perspectives-are-used.png)](./../media/how-perspectives-are-used.png)  
 
 
 

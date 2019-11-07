@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 96759ba9eea4e46f0afc44eeb9bd5b417bbb8f83
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f8f68af727b241c80bb04a9ad662d4dea806c73b
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191855"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658890"
 ---
 # <a name="hyperlinkdesign-type"></a>HyperLinkDesign タイプ
 
@@ -100,7 +100,7 @@ color: string (optional)
 この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。<br>
 注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。<br>
 使用可能な色は次のとおりです。 <br>
-![サンプル画像](../../../media/colors.PNG)
+![使用可能な色の画像](../../../media/colors.PNG)
 
 > [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color) から継承
 

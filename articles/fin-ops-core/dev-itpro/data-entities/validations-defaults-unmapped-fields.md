@@ -3,7 +3,7 @@ title: 検証、既定値、およびマップされていないフィールド
 description: このトピックでは、データ エンティティの値を検証する方法、既定値を設定する方法、およびデータ ソース値にマップされないが、代わりに仮想または計算のデータが含まれるフィールド (マップされていないフィールド) を使用する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dc7dc68ceb5986e4a4f1a80552d9a9c81f5ef3e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: db251b813a99983cf3b8383a2fcea61a8f818881
+ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183466"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2666844"
 ---
 # <a name="validations-default-values-and-unmapped-fields"></a>検証、既定値、およびマップされていないフィールド
 
@@ -133,7 +133,7 @@ ms.locfileid: "2183466"
 
 ### <a name="defaultrow"></a>DefaultRow
 
-**DataEntity.DefaultRow: DataEntity.DefaultRow** は、**defaultField** および **getDefaultDependencies** と組み合わせて使用され、既定値を提供します。 X++ またはフォーム エンジンによって自動的に呼び出されません。 **Table.DefaultRow: Table.DefaultRow** は、データソースの挿入と検証の前に、マッピングが完了した後データソースに対して自動的に呼び出されます。
+**DataEntity.DefaultRow: DataEntity.DefaultRow** は、**defaultField** および **getDefaultingDependencies** と組み合わせて使用され、既定値を提供します。 X++ またはフォーム エンジンによって自動的に呼び出されません。 **Table.DefaultRow: Table.DefaultRow** は、データソースの挿入と検証の前に、マッピングが完了した後データソースに対して自動的に呼び出されます。
 
 [![Captureb](./media/captureb.png)](./media/captureb.png)
 

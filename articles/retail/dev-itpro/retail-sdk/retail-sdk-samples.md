@@ -3,7 +3,7 @@ title: Retail ソフトウェア開発キット (SDK) のサンプル
 description: このトピックでは、2016 年 12 月に Retail SDK と共にリリースされた 3 つの新しいサンプルについて説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/26/2019
+ms.date: 10/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 3044cfcff334294570c547396b17027ca1b3b877
-ms.sourcegitcommit: 2555acfd855fc18ff3ba432ba2cf7633a8f1653c
+ms.openlocfilehash: a88dddd6d4ceb105a3f29c750fd1c72d43441ff6
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "2238559"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652000"
 ---
 # <a name="retail-software-development-kit-sdk-samples"></a>Retail ソフトウェア開発キット (SDK) のサンプル
 
@@ -252,7 +252,7 @@ public sealed class CustomerSearchRequestHandler : SingleRequestHandler<Customer
 完全なサンプルコードは、ソフトウェアの開発キット (SDK) の RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder フォルダーにあります。
 
 > [!NOTE]
-> クライアントから カスタム レシート タイプの印刷を指示する必要があります。 詳細については、[拡張性のパターンおよびベスト プラクティス](https://youtu.be/qQkHFubENIY) を参照してください。
+> クライアントから カスタム レシート タイプの印刷を指示する必要があります。 詳細については、[POS からのカスタム レシートの印刷](https://docs.microsoft.com/dynamics365/retail/dev-itpro/pos-trigger-printing) を参照してください。
 
 ### <a name="best-practice"></a>ベスト プラクティス
 

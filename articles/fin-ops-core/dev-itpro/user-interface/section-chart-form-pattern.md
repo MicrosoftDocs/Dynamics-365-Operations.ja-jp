@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c29b7cab905e5189804d0fbd91fef73f48414881
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f69f2d44796e57f453b365a940ef0cc6ca4c1e7d
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183042"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658832"
 ---
 # <a name="section-chart-form-pattern"></a>セクション グラフのフォーム パターン
 
@@ -36,7 +36,7 @@ ms.locfileid: "2183042"
 セクション グラフ フォーム パターンは、主に運用ワークスペース パターンと組み合わせて使用することを意図しています。 具体的には、グラフ セクションまたは集計セクションに、グラフが含まれるフォームをポイントするフォーム パーツ コントロールが含まれます。 これらの参照されるフォームは、セクション グラフ パターンを使用することを意図しています。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![sectionChartWireframe](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
+[![セクション グラフのフォーム パターンのワイヤーフレーム](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
 
 ## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
@@ -64,7 +64,7 @@ ms.locfileid: "2183042"
 ## <a name="examples"></a>例
 フォーム: **FmBiChartPart\_VehicleByModel** (**すべてのワークスペース** &gt; **予約管理** (**統計**セクションを参照してください) 
 
-[![sectionChartExample](./media/sectionchartexample.png)](./media/sectionchartexample.png)
+[![セクション グラフのフォーム パターンの例](./media/sectionchartexample.png)](./media/sectionchartexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

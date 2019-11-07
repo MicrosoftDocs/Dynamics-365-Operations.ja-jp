@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e3534ba4ccc2a3b086732d22b0bb74e10d3f2a6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a3855a2d9f7cbcee8c11ef4eb5a720378d4bacb6
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191760"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658826"
 ---
 # <a name="section-tabbed-list-subpattern"></a>セクション タブ付きリストのサブパターン
 
@@ -36,7 +36,7 @@ ms.locfileid: "2191760"
 セクション タブ付きリストのサブパターンは、それぞれにデータのフィルタ処理されたリストを含む垂直タブセットが入ったパノラマ セクション専用の、運用ワークスペース パターンの一部として使用されます。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![sectionTabbedListWireframe](./media/sectiontabbedlistwireframe.png)](./media/sectiontabbedlistwireframe.png)
+[![セクション タブ付きリストのワイヤーフレーム](./media/sectiontabbedlistwireframe.png)](./media/sectiontabbedlistwireframe.png)
 
 ## <a name="pattern-changes-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
@@ -71,7 +71,7 @@ ms.locfileid: "2191760"
 ## <a name="examples"></a>例
 フォーム: **PurchOrderMaintainWorkspace** (**すべてのワークスペース** &gt; **発注書の準備**) 
 
-[![tabbedListSectionExample](./media/tabbedlistsectionexample.png)](./media/tabbedlistsectionexample.png)
+[![タブ付きリストのセクションの例](./media/tabbedlistsectionexample.png)](./media/tabbedlistsectionexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

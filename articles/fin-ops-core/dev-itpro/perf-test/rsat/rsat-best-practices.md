@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 013c788098e531a7c2ff1f46062e6748db957549
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c7dcafed51fbd841df91728e1e9aa801c4716b44
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191809"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570538"
 ---
 # <a name="regression-suite-automation-tool-best-practices"></a>Regression Suite Automation Tool ベスト プラクティス
 
@@ -50,9 +50,10 @@ ms.locfileid: "2191809"
 
 4. 固有値を必要とするテスト パラメーター、たとえば、 **製品受領書** フォームの製品受領書番号や **仕入先請求書** フォームの請求書番号などの場合は、 **RandBetween (a, b)** Excel 関数を使用して、テスト ケースが実行されるたびに一意の番号を生成します。
 5. Excel の既定値は、タスクの記録から取得されます。 保管分析コードや追跡用分析コードなどの **参照グループ** コントロールでは、たとえば、 **SiteWH** の代わりに **2** のように、値の代わりにルックアップのキーを格納します。 Excelでこれらのフィールドを実際の値で更新して、テストの堅牢性と変更に対する耐性を高めることをお勧めします。
-6. RSAT を実行する前に、環境の**言語**および**日付、時刻、数字の形式**の設定に対して同じロケールを設定することをお勧めします。 これらの値に不整合があると、検証エラーが発生する可能性があります。   
+6. RSAT を実行する前に、環境の**言語**および**日付、時刻、数字の形式**の設定に対して同じロケールを設定することをお勧めします。 これらの値に不整合があると、検証エラーが発生する可能性があります。  
 
-    ![ロケール、日付、時刻、数字の形式を設定する](media/locale.png)
+  
+   ![ロケール、日付、時刻、数字の形式を設定する](media/locale.png)
 
 次に、一般的な使用順序を示します。
 

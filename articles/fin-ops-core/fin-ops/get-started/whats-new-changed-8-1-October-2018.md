@@ -3,11 +3,12 @@ title: Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/06/2018
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1
-ms.openlocfilehash: 966290c3100127fa38b90aacc595f63a3dbd3fce
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 18952d570dcf9132ae1297ccac6a70aacafb8370
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191732"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627626"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-81-october-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能
 
@@ -42,7 +43,7 @@ Retail の新機能または変更された機能についての最新のリリ�
 
 共有番号順序を使用して、顧客 ID または仕入先 ID を割り当てることができます。 また、共有番号順序を使用して、同じ顧客 ID または仕入先 ID を維持したまま、法人間で顧客をコピーすることもできます。
 
-追加の詳細については、[共有番号順序を使用して顧客をコピー](../../financials/accounts-receivable/copy-customer.md)および[共有番号順序を使用して仕入先をコピー](../../financials/accounts-payable/vendor-copy.md)を参照してください。
+追加の詳細については、[共有番号順序を使用して顧客をコピー](../../../finance/accounts-receivable/copy-customer.md)および[共有番号順序を使用して仕入先をコピー](../../../finance/accounts-payable/vendor-copy.md)を参照してください。
 
 ## <a name="customer-transactions-list-page"></a>顧客トランザクション リスト ページ
 
@@ -54,7 +55,7 @@ Retail の新機能または変更された機能についての最新のリリ�
 
 オープン顧客トランザクションの期日および割引日を更新することもでき、**顧客トランザクション**リスト ページに期日を追加できます。
 
-詳細については、[顧客トランザクション リスト ページ](../../financials/accounts-receivable/customer-transactions-list-page.md)を参照してください。
+詳細については、[顧客トランザクション リスト ページ](../../../finance/accounts-receivable/customer-transactions-list-page.md)を参照してください。
 
 ## <a name="vendor-transaction-list-page"></a>仕入先トランザクション リスト ページ
 
@@ -66,7 +67,7 @@ Retail の新機能または変更された機能についての最新のリリ�
 
 未処理の顧客トランザクションのために、期日および割引の日付を更新することもできます。 リリース 8.1 では、**仕入先トランザクション** リスト ページに期日を追加できるようにエクスペリエンスが改善されました。
 
-詳細については、[仕入先トランザクション リスト ページ](../../financials/accounts-payable/vendor-transaction-list-page.md)を参照してください。
+詳細については、[仕入先トランザクション リスト ページ](../../../finance/accounts-payable/vendor-transaction-list-page.md)を参照してください。
 
 ## <a name="financial-dimensions"></a>財務分析コード
 
@@ -76,13 +77,13 @@ Retail の新機能または変更された機能についての最新のリリ�
 
 エンティティを使用して、派生分析コードのセグメントと値を設定することができます。
 
-詳細については、「[財務分析コード](../../financials/general-ledger/financial-dimensions.md)」を参照してください。
+詳細については、「[財務分析コード](../../../finance/general-ledger/financial-dimensions.md)」を参照してください。
 
 ## <a name="dual-currency"></a>二重通貨
 
 レポート通貨は、2 つ目の会計通貨として転用できるようになりました。 この機能は、二重通貨と呼ばれます。 二重通貨の変更を、コンフィギュレーション キーまたはパラメーターを通じて無効にはできません。 レポート通貨が 2 つ目の会計通貨として使用され、転記論理でのレポート通貨の計算方法が変更されたためです。
 
-詳細については、[二重通貨](../../financials/general-ledger/dual-currency.md)を参照してください。
+詳細については、[二重通貨](../../../finance/general-ledger/dual-currency.md)を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
@@ -92,13 +93,13 @@ Finance and Operations の今回のリリースでは、コマンド チェー�
 
 ファントム明細行タイプは、部品表 (BOM) および複数レベルの BOM 構造の明細行に対して使用できます。 ファントム BOM は、工順ネットワークのある BOM にも使用できます。
 
-詳細については、[ファントム品目](../../supply-chain/production-control/phantom-items.md)を参照してください。
+詳細については、[ファントム品目](../../../supply-chain/production-control/phantom-items.md)を参照してください。
 
 ## <a name="russian-localization"></a>ロシア語のローカライズ
 
 Dynamics 365 for Finance and Operations では、ロシアの必須規制要件がサポートされるようになりました (オンプレミス展開のみ)。 ロシア語ローカライズのこのリリースは、以下の機能領域が対象となっています: 買掛金勘定、売掛金勘定、前貸しホルダー、銀行および現金、クライアント銀行インターフェイスのエクスポート部分、固定資産、総勘定元帳と G/L 報告、財務報告書の電子報告、在庫、アドレス/FIAS、現金の移動、商品の移動、経費の評価、遅延経費、為替差異、仕掛品分野における VAT および利益税登録。
 
-詳細については、[ロシア](../../financials/localizations/russia.md)を参照してください。
+詳細については、[ロシア](../../../finance/localizations/russia.md)を参照してください。
 
 ## <a name="vat-reporting-for-the-united-arab-emirates"></a>アラブ首長国連邦の VAT レポート
 

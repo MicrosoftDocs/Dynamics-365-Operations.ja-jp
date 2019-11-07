@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53cd3cd8b953740d7b4a4e30be464b4b74a8bff4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7a3acb1d2304b743da0fc35a7ddcc9ea77e5e848
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248820"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578309"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-apps-partners"></a>Lifecycle Services (LCS) for Finance and Operations アプリのパートナー
 
@@ -45,7 +45,7 @@ Finance and Operations パートナーとして、[Finance and Operations サブ
 
 #### <a name="migrate-create-solutions-and-learn-the-project-for-finance-and-operations-apps"></a>ソリューションを移行および作成し、Finance and Operations アプリのプロジェクトについて学ぶ 
 
-Microsoft Dynamics AX 2012 プロジェクト ワークスペースを作成します。 プロジェクトは、Dynamics AX 2012 から現在のバージョンへのアップグレードをサポートするために使用できます。 また、現在のバージョンの使用方法および Microsoft Dynamics AX Lifecycle Services (LCS) でソリューションの作成方法を学習するために、プロジェクトを使用することもできます。 [![lcsforpartnersbrandingupdateart](./media/lcsforpartnersbrandingupdateart.png)](./media/lcsforpartnersbrandingupdateart.png)
+Microsoft Dynamics AX 2012 プロジェクト ワークスペースを作成します。 プロジェクトは、Dynamics AX 2012 から現在のバージョンへのアップグレードをサポートするために使用できます。 また、現在のバージョンの使用方法および Microsoft Dynamics AX Lifecycle Services (LCS) でソリューションの作成方法を学習するために、プロジェクトを使用することもできます。
 
 ### <a name="projects-for-customers-in-lcs"></a>LCS における顧客のプロジェクト
 

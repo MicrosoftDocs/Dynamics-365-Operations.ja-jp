@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09dd1fed0f2ff9ca059a8f9d1e50b0aec4e4196e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8cf78128b3238359476dc30db2c6fc7acc354f0b
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191789"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578302"
 ---
 # <a name="advanced-selection-form-pattern"></a>高度な選択のフォーム パターン
 
@@ -58,7 +58,7 @@ ms.locfileid: "2191789"
 ## <a name="example"></a>例
 フォーム: **ProcCategoryAddVendor** (**調達** &gt; **調達カテゴリ**をクリックします。 **仕入先**クイック タブで、**追加**をクリックします)。 
 
-[![advancedSelectionExample](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
+[![高度な選択の例](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

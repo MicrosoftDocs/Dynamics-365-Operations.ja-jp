@@ -3,7 +3,7 @@ title: 管理者アクセスを許可しない開発用 VM および ビルド�
 description: このトピックでは、管理者アクセスを許可しない仮想マシンに関するよくある質問 (FAQ) への回答を示します。
 author: yukonpeegs
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 10/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: c4a209cc8c196eb206e3162f47a5813d3899ea5a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: def6b19f9b3345962560fbd6b1a5a4e5e84b6f8c
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183082"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570535"
 ---
 # <a name="development-and-build-vms-that-dont-allow-admin-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
@@ -109,4 +109,4 @@ Lifecyle Services (LCS) の 2018 年 2 月リリースと同じく、開発環�
 [開発、デモ、またはサンドボックス環境でのデータのアップグレード](../migration-upgrade/upgrade-data-to-latest-update.md) で説明されているプロセスは、コマンド ラインからのデータ アップグレード パッケージを実行します。 これを行うには、VM の管理者である必要があります。
 
 ## <a name="what-do-i-need-to-know-if-i-am-developing-for-retail"></a>Retail の開発をしている場合、何を把握する必要がありますか。
-Dynamics 365 Retail を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストの開発環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../retail/dev-itpro/cloud-dev-box.md) に記載されています。
+Dynamics 365 Retail を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストの開発環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../../retail/dev-itpro/cloud-dev-box.md) に記載されています。

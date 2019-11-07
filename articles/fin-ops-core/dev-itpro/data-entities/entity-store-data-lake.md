@@ -3,7 +3,7 @@ title: エンティティ格納を Data Lake として使用可能にする
 description: このトピックでは、エンティティ格納を Microsoft Azure Data Lake として使用可能にする方法について説明します。
 author: MilindaV2
 manager: AnnBe
-ms.date: 12/27/2018
+ms.date: 10/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2018-12-03
 ms.dyn365.ops.version: Platform Update 23
-ms.openlocfilehash: e541f037d8f427a021b1f1333e645c6db84cffdb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7aa8d5047776716e291c41d9b6b62dc43bc3c8c7
+ms.sourcegitcommit: 69eaadfb65c5d098b241dfb22f49278683c9e187
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191538"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "2631351"
 ---
 # <a name="make-entity-store-available-as-a-data-lake"></a>エンティティ格納を Data Lake として使用可能にする
 
@@ -31,13 +31,13 @@ ms.locfileid: "2191538"
 [!include [banner](../includes/private-preview-banner.md)]
 
 > [!IMPORTANT]
-> このシナリオへのアクセスは、フライティングを通じて利用できます。 シナリオは、複数のプラットフォームの更新プログラムを通じてリリースされます。
+> この機能は現在パブリック プレビューにあります。 この機能は、次のコンポーネントで構成されています。
 >
-> - **自動化されたエンティティ格納の更新:** プラットフォーム更新 23 で利用可
-> - **Microsoft Azure Data Lake (フル プッシュ) のエンティティ格納データ:** プラットフォーム更新 23 (制限付き) で利用可
-> - **PowerBI.com にあるエンティティ格納スキーマの DataFlows :** 将来のプラットフォーム更新で使用可能
-> - **Azure Data Lake (トリクル フィード) のエンティティ格納データ:** 将来のプラットフォーム更新で利用可
-> - **PowerBI.comを 使用して分析ワークスペースを拡張:** 将来のプラットフォーム更新で使用可能
+> - **自動化されたエンティティ格納の更新** - プラットフォーム更新 23 で利用可。
+> - **Microsoft Azure Data Lake (フル プッシュ) のエンティティ格納データ** - プラットフォーム更新 26 で利用可。 
+> - **PowerBI.com にあるエンティティ格納スキーマの DataFlows** - 将来のプラットフォーム更新で使用可能。
+> - **Azure Data Lake (トリクル フィード) のエンティティ格納データ** - プラットフォーム更新 28 で利用可。
+> - **PowerBI.comを 使用して分析ワークスペースを拡張** - 将来のプラットフォーム更新で使用可能。
 
 ## <a name="automated-entity-store-refresh"></a>自動化エンティティ格納更新
 Date Lake 統合を有効にする前に、自動のエンティティ店舗更新を有効にする必要があります。 
@@ -72,7 +72,7 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
 ## <a name="entity-store-data-in-azure-data-lake-full-push"></a>Azure Data Lake 内のエンティティ格納データ (フル プッシュ)
 
 > [!IMPORTANT]
-> この制限機能は、フライティング経由でオンにします。 この機能は、環境がフライトに含まれている場合にのみ使用できます。
+> この機能は現在パブリック プレビューにあります。 運用環境では、この機能を有効にしないでください。
 
 この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。 代わりに、独自のサブスクリプションの Azure Data Lake Storage Gen2 アカウントに入力されます。 PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。
 

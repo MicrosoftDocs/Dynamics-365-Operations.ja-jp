@@ -3,7 +3,7 @@ title: 予定された保守ウィンドウのよく寄せられる質問
 description: このトピックでは、Microsoft の計画されたメンテナンス ウィンドウに関するよくある質問に対する回答を示します。
 author: manalidongre
 manager: AnnBe
-ms.date: 08/29/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a88328908d4ad7d4c5a5a7288ab2d0863c8d09d2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 581356bff68b25f49f215aac71bd79b2bda1df6c
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183194"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626121"
 ---
 # <a name="planned-maintenance-window-faq"></a>予定された保守ウィンドウのよく寄せられる質問
 [!include [banner](../includes/banner.md)]
 
 ### <a name="what-is-a-planned-maintenance-window"></a>計画されているメンテナンス期間とは何ですか ?
-メンテナンス予定期間は、機器設備や [サービス](../../fin-and-ops/get-started/one-version.md) に関する重要な更新を適用するために Microsoft がスケジュール設定をした時間枠です。
+メンテナンス予定期間は、機器設備や [サービス](../../fin-ops/get-started/one-version.md) に関する重要な更新を適用するために Microsoft がスケジュール設定をした時間枠です。
 
 ### <a name="how-does-a-planned-maintenance-window-work"></a>計画されているメンテナンス ウィンドウはどのように機能しますか。
 レベル 2 からレベル 5 のサンドボックス環境および実稼働環境でスケジュールされた計画的保守については、パッチ適用を開始する **5 日前**に Microsoft がすべての利害関係者に通知を送信します。 パッチ適用枠は環境にパッチが適用される期間です。 それは地理的な地域によって定義されます。 保守活動に関する詳細は、関係者に送信される通知に含まれます。 Microsoft が管理するレベル 1 の環境では、更新前に通知は送信されません。 
@@ -57,7 +57,7 @@ ms.locfileid: "2183194"
 Microsoft はサービスのダウンタイムの必要性を減らすよう継続的に努力しており、多くの定期的な保守作業ではダウンタイムを発生しません。 しかし、予測可能性を保証するため、Microsoft はゼロ ダウンタイムですべてのパッチを実行することはまだできません。
 
 ## <a name="microsoft-service-updates"></a>Microsoft のサービス更新プログラム 
-別のよく寄せられる質問 (FAQ) に Microsoft によって行われるサービス更新プログラムに関する詳細が記載されています。 [1 つのバージョンのサービス更新プログラムに関してよく寄せられる質問](../../fin-and-ops/get-started/one-version.md) を参照してください。
+別のよく寄せられる質問 (FAQ) に Microsoft によって行われるサービス更新プログラムに関する詳細が記載されています。 [1 つのバージョンのサービス更新プログラムに関してよく寄せられる質問](../../fin-ops/get-started/one-version.md) を参照してください。
 
 ## <a name="infrastructure-updates"></a>機器設備の更新 
 
@@ -93,10 +93,9 @@ Microsoft はサービスのダウンタイムの必要性を減らすよう継�
 ### <a name="will-i-be-compensated-if-the-update-takes-longer-than-the-scheduled-maintenance-window"></a>更新プログラムが予定メンテナンス ウインドウより時間がかかる場合は補償されますか。
 更新が予定された保守ウィンドウよりも長い場合は、余分な時間は予定外のダウンタイムと見なされ、一般的なサービス レベル アグリーメント (SLA) の対象となります。
 
-### <a name="can-i-reschedule-the-planned-maintenance"></a>計画的なメンテナンスを再スケジューリングできますか。
-Microsoft は計画的なメンテナンスを再スケジュールするためのオプションを提供していません。 ただし、現在の月の保守サイクルから除外するように選択できます。 
+### <a name="how-do-i-reschedule-security-maintenance-activities"></a>セキュリティ管理活動を再スケジュールする方法
+セキュリティ メンテナンスは、安全な環境の確保するのに役立ちます。メンテナンスを行わないと、回避可能なセキュリティ リスクを招く可能性があります。 
 
-### <a name="how-do-i-opt-out-of-the-current-maintenance-cycle"></a>現在のメンテナンス サイクルを停止するにはどうすればよいですか。
-レベル 2 からレベル 5 のサンドボックス環境および実稼働環境での現在のメンテナンス サイクルをオプトアウトするには、Microsoft にサポート チケットを提出してください。 無効化の要求をするサポートチケットの提出期限は、通知メールに記載されています。 無効化の要求は、締め切りを過ぎて送信された場合には受け付けられません。 ご利用の環境は当月のメンテナンスサイクルの対象から除外されますが、翌月には再度更新されます。
+絶対的なビジネス ニーズがあり、上記の期間中にこのメンテナンスを行うことができない場合は、Microsoft にサポート チケットを提出することにより、第 2 層から第 5 層のサンドボックス環境と実稼働環境の現在のメンテナンス活動の再スケジュールを要求できます。 再スケジュール要求をするサポート チケットの提出期限は、通知メールに記載されています。 どんな要求も、締め切りを過ぎて送信された場合には受け付けられません。 
 
-Microsoft が管理するレベル 1 環境でスケジュールされたパッチをオプトアウトすることはできません。
+Microsoft が管理する第 1 層の環境では、セキュリティ管理活動を再スケジューリングすることはできません。

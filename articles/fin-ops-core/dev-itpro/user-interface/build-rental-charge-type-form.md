@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58a07639562acfc92326b281718d0f38131ebb7f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6a81af42f7f932219c7130184726767c8beb7f69
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183066"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578265"
 ---
 # <a name="build-the-rental-charge-type-form"></a>レンタル料金のタイプ フォームの構築
 
@@ -38,7 +38,7 @@ ms.locfileid: "2183066"
 ## <a name="overview"></a>概要
 フォームを作成するには、既存のフォーム **FmtChargeType** から開始します。 このフォームは、簡易リストのパターンを使用します。 次の図は、**FmtChargeType** フォームと簡易リスト パターンからの必要なコントロールを示しています。 
 
-[![rentalcharge1](./media/rentalcharge1.png)](./media/rentalcharge1.png) 
+[![FmtChargeType フォームのスクリーン ショット](./media/rentalcharge1.png)](./media/rentalcharge1.png) 
 
 フォーム パターンに従うことによって、この簡易リストのフォームは、他の簡易リストのフォームと同じ構造とレイアウトを持つようになります。
 
@@ -61,9 +61,9 @@ Visual Studio を使用してチュートリアル プロジェクトをイン�
 6.  **プロジェクト ファイルの場所**テキスト ボックスに、C:\FMLab と入力します。
 7.  **要素の上書き** オプションをオンにし、**現在のソリューション** ラジオ オプションをオンにします。 次の図は、完了した **インポート プロジェクト** ダイアログ ボックスを示しています。 
 
-    [![rentalcharge2](./media/rentalcharge2.png)](./media/rentalcharge2.png)
+    [![完了したプロジェクトのインポート ダイアログ ボックスのスクリーン ショット](./media/rentalcharge2.png)](./media/rentalcharge2.png)
 
-8.  **OK** をクリックします。
+8.  **OK**をクリックします。
 9.  デザイナー**ソリューション エクスプローラー**で、**クラス**を展開して、**FMTutorial** プロジェクトで **FMTDataHelper** を右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。
 10. **ビルド**メニューで、**ソリューションの再構築**をクリックします。 タイムスタンプに関係なく、プロジェクトのすべてのファイルを確実に作成するには、リビルドを使用します。 **出力** ウィンドウでビルドの進行状況を表示できます。
 11. ビルドが完了すると、**Ctrl + F5** を押してプロジェクトを実行します。 ブラウザーが開き、データをインポートするクラスが実行されます。
@@ -92,7 +92,7 @@ Visual Studio を使用して **FmtChargeType** フォームを作成します�
 
     次の図は、**FMTChargeType** テーブルを追加した後の **データソース**を示しています。 
 
-    [![rentalcharge3](./media/rentalcharge3.png)](./media/rentalcharge3.png)
+    [![FMTChargeType テーブルを追加した後のデータ ソースのスクリーン ショット](./media/rentalcharge3.png)](./media/rentalcharge3.png)
 
 6.  フォーム デザイナーで、**デザイン**をクリックします。 **プロパティ** ウィンドウで、次のプロパティに指定された値を設定します。
 
@@ -109,7 +109,7 @@ Visual Studio を使用して **FmtChargeType** フォームを作成します�
 
 10. 選択したフィールドを右ウィンドウの**デザイン** &gt; **グリッド**にドラッグします。 次の図は、グリッド ノードが展開され、2 つのフィールドが追加された後のグリッドを示しています。 
 
-    [![rentalcharge4](./media/rentalcharge4.png)](./media/rentalcharge4.png)
+    [![グリッド ノードが展開された後のグリッドを示すスクリーン ショット](./media/rentalcharge4.png)](./media/rentalcharge4.png)
 
 11. フォーム デザイナーで、**デザイン &gt; CustomFilterGroup &gt; QuickFilter** をクリックします。
 12. **プロパティ** ウィンドウで、**TargetControl** をクリックしてから**グリッド**を選択して **QuickFilter** コントロールをフォームのグリッドにバインドします。
@@ -130,7 +130,7 @@ Visual Studio を使用して、**FmtChargeType** フォームをビルドして
 5.  アクション ウィンドウで、**保存**をクリックします。
 6.  ブラウザーを更新して、一覧に新しいレコードを表示します。 次の図は、フォームの外観を示しています。
 
-    [![rentalcharge5](./media/rentalcharge5.png)](./media/rentalcharge5.png)
+    [![フォームの外観のスクリーン ショット](./media/rentalcharge5.png)](./media/rentalcharge5.png)
 
 7.  表示モードでフォームを開きます。 アクション ウィンドウの**編集**をクリックして、フォームを編集モードに切り替えます。 表示モードに戻るには、**オプション** をクリックしてから **読み取りモード** をクリックします。
 

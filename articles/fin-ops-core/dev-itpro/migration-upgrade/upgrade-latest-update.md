@@ -3,7 +3,7 @@ title: 最新の Finance and Operations 更新プログラムへの移行の処�
 description: このトピックでは、Finance and Operations の最新の更新バージョンに移行するプロセスについて説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 10/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 44e346286a04176342cc0d9c31f5c9f5ec23fbe0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 93bd6fe625ce4375026c2c516681a3febe7d5d74
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191873"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570543"
 ---
 # <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a>最新の Finance and Operations 更新プログラムへの移行の処理
 
@@ -30,7 +30,7 @@ ms.locfileid: "2191873"
 
 このトピックでは、Finance and Operations の最新のリリースに更新またはアップグレードするプロセスについて説明します。 プロセス全体とサポートされるシナリオを説明しますが、プロセスの各ステップに関する詳細な指示は提示しません。
 
-Finance and Operations の各リリースの内容については、[新機能と変更点](../../fin-and-ops/get-started/whats-new-changed.md)を参照してください。
+Finance and Operations の各リリースの内容については、[新機能と変更点](../../fin-ops/get-started/whats-new-changed.md)を参照してください。
 
 1 つのバージョンのサービス更新の詳細については、[1 つのバージョンのサービス更新の概要](../lifecycle-services/oneversion-overview.md) を参照してください。
 

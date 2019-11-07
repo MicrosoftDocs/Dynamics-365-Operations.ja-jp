@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: f92a045357aa8fbb1c29361847b5ce309d3bd0d3
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 6007eacf94ed688287bff6c26f0e0b46752e6804
+ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553176"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564952"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -155,7 +155,7 @@ ms.locfileid: "2553176"
 ![サブスクリプション見積](./media/environment-planning-4-subscription-estimate.png)
 
 > [!IMPORTANT]
-> レベル 2 以上の環境の将来の管理者ロックダウンがあると、サーバーへのリモート デスクトップ プロトコル (RDP) 接続ができなくなります。 Microsoft ロードマップの一環として、RDP アクセスが必要な最も一般的なアクションは LCS でのセルフ サービス タスクによって置き換えられます。 たとえば、「[Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする](../../dev-itpro/database/copy-operations-database.md)」で現在説明されている手順は、Microsoft からサービスとして利用できます。 したがって、データベースを SQL Server から Azure SQL データベース環境にコピーするには、LCS でサービス要求を作成する必要があります。 詳しくは、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/)と[ドキュメント](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/)をご覧ください。
+> レベル 2 以上の環境の将来の管理者ロックダウンがあると、サーバーへのリモート デスクトップ プロトコル (RDP) 接続ができなくなります。 Microsoft ロードマップの一環として、RDP アクセスが必要な最も一般的なアクションは LCS でのセルフ サービス タスクによって置き換えられます。 たとえば、Finance and Operations データベースを SQL Server から Azure SQL Database 環境にコピーする手順は、Microsoft からサービスとして利用できます。 したがって、データベースを SQL Server から Azure SQL データベース環境にコピーするには、LCS でサービス要求を作成する必要があります。 詳しくは、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/)と[ドキュメント](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/)をご覧ください。
 
 ### <a name="purchasing-add-on-environments"></a>アドオン環境の購入
 

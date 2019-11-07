@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 74c7b506398b45b6b5dc79ad4318522f9f30c41e
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: aa71946e7e4e3472b1ffd5bbb420a5b10c95ea14
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833740"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570598"
 ---
 # <a name="retail-point-of-sale-pos-device-activation"></a>小売販売時点管理 (POS) デバイスのライセンス認証
 
@@ -58,25 +58,27 @@ ms.locfileid: "1833740"
 1.  Modern POS またはクラウド POS 用の初期デバイスの有効化ページを開きます。 サインインするように求められます。
 2.  **始める前に**ページで、指示に従い、**次へ**をクリックします。
 
-    ![p24](./media/p24.png)
+    ![POS ウィザード (ページを開始する前に)](./media/p24.png)
 
 3.  Cloud POS または Modern POS を起動します。
 4.  AAD 資格情報を使用してサインインします。 AAD アカウントが既にマッピングされている必要があります。 手順については、[Retail Modern POS セルフ サービスとデバイスのライセンス認証](../retail-modern-pos-device-activation.md) を参照してください。 クラウド POS で、サーバー URL は、アドレス バーに自動的に入力されます。 Modern POS で、サーバー URL をコピーし貼り付ける必要があります。
 
-    [![p18](./media/p18.png)](./media/p18.png)
+    [![POS ウィザード、サーバー URL ページの追加](./media/p18.png)](./media/p18.png)
 
 5.  店舗のリストを入力するには、**次へ**をクリックします。
 6.  一覧で適切な店舗を選択します。
 
-    [![p20](./media/p20.png)](./media/p20.png)
+    [![POS ウィザード、店舗ページの選択](./media/p20.png)](./media/p20.png)
 
-7.  適切なレジスターとデバイスを選択します。 **注記:** このデバイスは**保留中**、**非有効化**、または**有効化**とすることができます。 または、Retail HQ **デバイスをストアからレジスターに関連付ける**設定を有効にする場合は、関連付けられているデバイスを持たないレジスターの一覧を表示する可能性があります。 
+7.  適切なレジスターとデバイスを選択します。 
 
-    [![p22](./media/p22.png)](./media/p22.png)
+    **注記:** このデバイスは**保留中**、**非有効化**、または**有効化**とすることができます。 または、Retail HQ **デバイスをストアからレジスターに関連付ける**設定を有効にする場合は、関連付けられているデバイスを持たないレジスターの一覧を表示する可能性があります。 
+
+    [![POS ウィザード、レジスターおよびデバイス ページの選択](./media/p22.png)](./media/p22.png)
 
 8.  **有効化** をクリックします。 デバイスを有効化する必要があります。 
 
-    [![p23](./media/p23.png)](./media/p23.png)
+    [![POS ウィザード、有効化されたデバイスのページ](./media/p23.png)](./media/p23.png)
 
 ## <a name="create-a-device-id-from-modern-pos-and-cloud-pos"></a>モダン POS とクラウド POS からデバイス ID を作成する
 Modern POS または Cloud POS からデバイスを作成する (すなわち、自動的にデバイス ID を生成する) 機能を追加しました。これにより、デバイスがまだマップされていないレジスターにデバイスを関連付けることができます。 この機能は、HQ の設定を次のように設定した場合にのみ Modern POS で使用できます。
@@ -102,9 +104,9 @@ Modern POS は手動入力モードで起動し、Retail サーバー URL、デ�
 ## <a name="activate-the-device-for-cloud-pos-by-using-syntactic-sugar"></a>糖衣構文を使用して Cloud POS のデバイスを有効化します。
 IT プロフェッショナルは、Cloud POS URL の一部として、デバイス ID とレジスター ID を提供することで、Cloud POS のデバイス アクティベーションを設定できるようになりました。 **デバイス** ページの **クラウド POS URL** フィールドにリンクがあります。 (**小売** &gt; **チャネル設定** &gt; **POS 設定** &gt; **デバイス**)。 
 
-[![クラウド POS URL フィールド](./media/p15_11_16.png)](./media/p15_11_16.png) 
-
 クラウド POS は手動入力モードで起動し、Retail サーバー URL、デバイス ID、およびレジスター IDは、有効化のために事前設定されています。
+
+[![クラウド POS URL フィールド](./media/p15_11_16.png)](./media/p15_11_16.png) 
 
 
 

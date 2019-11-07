@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5828e7424ec6eb3c151f709cb8cefbc91c4c33df
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e524b81fc6c6b118e29267dc33ac4961bd3dd393
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191758"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578259"
 ---
 # <a name="simple-list-and-details-form-pattern"></a>簡易リストおよび簡易詳細のフォーム パターン
 
@@ -46,7 +46,7 @@ ms.locfileid: "2191758"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![ワイヤーフレーム](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
+[![簡易リストおよび詳細のワイヤーフレーム](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。

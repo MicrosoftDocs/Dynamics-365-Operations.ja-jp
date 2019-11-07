@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e51a0ae0ada3bb8aeb3e5e73bbc423633edf384
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5b0668632e8b0894a4eb528466fb09aad32a12b9
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183040"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658828"
 ---
 # <a name="section-stacked-chart-subpattern"></a>セクション積み上げグラフのサブパターン
 
@@ -36,7 +36,7 @@ ms.locfileid: "2183040"
 セクション積み上げグラフのサブパターンは、1 つ以上のグラフを含むパノラマ セクション専用の運用ワークスペース パターンの一部として使用されます。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![sectionStackedChartWireframe](./media/sectionstackedchartwireframe.png)](./media/sectionstackedchartwireframe.png)
+[![セクション積み上げグラフのワイヤーフレーム](./media/sectionstackedchartwireframe.png)](./media/sectionstackedchartwireframe.png)
 
 ## <a name="pattern-changes-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
@@ -68,7 +68,7 @@ ms.locfileid: "2183040"
 ## <a name="examples"></a>例
 フォーム: **FmClerkWorkspace** (**すべてのワークスペース** &gt; **予約管理**) 
 
-[![sectionStackedChartExample](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)
+[![セクション積み上げグラフの例](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

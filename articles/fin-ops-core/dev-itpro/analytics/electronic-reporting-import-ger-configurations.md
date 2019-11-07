@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: c3548490d45b2fc05cf3e61daa6656a5eeb550ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f636bed4f03d830786105c01cf0dc08084f470f8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183392"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569073"
 ---
 # <a name="import-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションのインポート
 
@@ -45,7 +45,6 @@ ms.locfileid: "2183392"
 
 4. 選択したタイルで、**リポジトリ**をクリックします。
 
-    ![ER プロバイダー タブのリポジトリ ボタン](media/ger-providers-tiles.png)
 
 5. **コンフィギュレーション リポジトリ**ページのグリッドで、**ファイル システム**タイプの既存のリポジトリを選択します。 このリポジトリがグリッドに表示されない場合は、次の手順に従います。
 
@@ -57,12 +56,8 @@ ms.locfileid: "2183392"
     6. **OK** をクリックして、新しいリポジトリを確認および保存します。
     7. グリッドで、**ファイル システム** タイプの新しいリポジトリを選択します。
 
-    ![グリッドのファイル システム タイプのリポジトリ](media/ger-file-repository.png)
-
 6. ブラウザーで、別のタブを開き、LCS にサインインします。
 7. 共有アセット ライブラリで、**GER コンフィギュレーション** アセット タイプを選択してから**すべてダウンロード**をクリックします。
-
-    ![共有アセット ライブラリで全てのボタンをダウンロード](media/ger-lcs-shared-asset-library.png)
 
     > [!NOTE]
     > すべての ER コンフィギュレーションはダウンロードのため ZIP ファイルに入れられます。

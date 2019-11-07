@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: dba9fdb97aeef1b1adbc59bd82fd2565f288015a
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b6b6fd5a124f8017743ca506b54c21358e238d79
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019307"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653288"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
@@ -93,9 +93,9 @@ Retail HQ とチャネル データベース間のデータ転送には、さま
     </RetailCdxSeedData>
 ```
 
-既定では、ターゲット テーブルの名前がここでは指定されていません。 システムでは、チャネル側のターゲット表の名前が Finance and Operations 側のソース テーブルの名前 (**AXTableName**) と同じであることが前提です。 ただし、チャンネル側のターゲット テーブルの名前は、時にソース テーブルの名前とは異なる場合があります。 この場合、**&lt;サブジョブ&gt;** ノードで **&lt;TargetTableName&gt;** 属性を使用してチャネル側でターゲット テーブルの名前を設定できます。
+既定では、ターゲット テーブルの名前がここでは指定されていません。 システムでは、チャネル側のターゲット表の名前が Retail 側のソース テーブルの名前 (**AXTableName**) と同じであることが前提です。 ただし、チャンネル側のターゲット テーブルの名前は、時にソース テーブルの名前とは異なる場合があります。 この場合、**&lt;サブジョブ&gt;** ノードで **&lt;TargetTableName&gt;** 属性を使用してチャネル側でターゲット テーブルの名前を設定できます。
 
-同様に、マッピング セクションでは、Finance and Operations 側にあるフィールドの名前だけが指定されています (**AxFields**)。 既定では、同じフィールド名がチャネル側でも使用されていると想定します。 ただし、対応するチャンネル テーブルのフィールド名は、時に Finance and Operations 側にあるフィールド名とは異なる場合があります。 この場合、マッピングで **&lt;フィールド&gt;** ノードの **ToName** 属性を使用してチャネル側でフィールドの名前を設定できます。
+同様に、マッピング セクションでは、Retail 側にあるフィールドの名前だけが指定されています (**AxFields**)。 既定では、同じフィールド名がチャネル側でも使用されていると想定します。 ただし、対応するチャンネル テーブルのフィールド名は、時に Retail 側にあるフィールド名とは異なる場合があります。 この場合、マッピングで **&lt;フィールド&gt;** ノードの **ToName** 属性を使用してチャネル側でフィールドの名前を設定できます。
 
 4. プロジェクトを右クリックし、**追加** &gt; **新しい項目** を選択します。
 5. **新しい項目の追加**ダイアログ ボックスで、**リソース**を選択し、リソース ファイルに **RetailCDXSeedDataAX7_Custom** と名前を付けてから、**追加**を選択します。
@@ -219,15 +219,15 @@ Retail HQ とチャネル データベース間のデータ転送には、さま
 ```
 
 ## <a name="cdx-sample---pull-new-columns-to-an-existing-table"></a>CDX サンプル - 新しい列を既存のテーブルにプルする
-Microsoft Dynamics 365 Retail アプリケーション更新プログラム 5 では、RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
+Microsoft Dynamics 365 Retail アプリ更新プログラム 5 では、RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
 
-次のセクションでは、拡張テーブルを使用して Retail トランザクション テーブルをカスタマイズする手順とベスト プラクティスについて説明します。 もう 1 つのセクションでは、CDX をカスタマイズしてチャネル側のカスタマイズされた (拡張子) テーブルを Finance and Operations にアップロードする方法を示します。 また、カスタマイズのテスト方法を説明するセクションも含めました。
+次のセクションでは、拡張テーブルを使用して Retail トランザクション テーブルをカスタマイズする手順とベスト プラクティスについて説明します。 もう 1 つのセクションでは、CDX をカスタマイズしてチャネル側のカスタマイズされた (拡張子) テーブルを Retail にアップロードする方法を示します。 また、カスタマイズのテスト方法を説明するセクションも含めました。
 
 ### <a name="setup-steps"></a>設定手順
 
 変更していない Retail ソフトウェア開発キット (SDK) にこれらの変更を実装することをお勧めします。 または、SDK を Microsoft Azure DevOps などのソース管理下で配置することにより、どのステップでも変更を簡単に元に戻すことができます。 まず、SDK にある .axpp パッケージをインポートします。 次に、チャンネル データベースで、SQL 更新スクリプトを実行します。
 
-1. カスタマイズ コードを含む Finance and Operations 側にパッケージをインポートします。
+1. カスタマイズ コードを含む Retail 側にパッケージをインポートします。
 
     1. ExtensionTablesAndCDXCustomization.axpp ファイルをRetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables フォルダーからコピーし、拡張プロジェクト フォルダーに貼り付けます。
     2. Microsoft Visual Studio を起動します。
@@ -248,9 +248,9 @@ Microsoft Dynamics 365 Retail アプリケーション更新プログラム 5 �
 
       このステップでは、トランザクション テーブルをカスタマイズするために必要な拡張テーブルとビューを作成します。 スクリプトはその他のサンプル シナリオに使用されるその他のテーブルも作成することに注意してください。
 
-### <a name="extend-the-finance-and-operations-data-in-the-sample"></a>サンプルの Finance and Operations データを拡張
+### <a name="extend-the-retail-data-in-the-sample"></a>サンプルで Retail データを拡張する
 
-Finance and Operations 側のテーブル拡張は、サンプルですでに作成されています。 手動で作成するには、次の手順を実行します。
+Retail 側のテーブル拡張は、サンプルですでに作成されています。 手動で作成するには、次の手順を実行します。
 
 1. Visual Studio を起動します。
 2. メニューで、**表示** > **アプリケーション エクスプローラー**を選択します。
@@ -274,7 +274,7 @@ Retail SDK フォルダーから SQL Server **ContosoRetailExtensionTablesUpdate
 
 + 外部キーとカスタム (拡張子) フィールドを含む **[ext].ContosoRetailTransactionTable** テーブルが作成されます。 テーブルに追加した拡張列に加えて、チャネル側の拡張テーブルにはチャネル側にある元のテーブルと同じ主キー列が必要です。 したがって、[ext].RetailTransactionTable_ContosoRetailExtension には、[ax].RetailTransactionTable で使用される 4 つの主キー列があります。 ベスト プラクティスは、チャンネル側の拡張子テーブルに主キー列を追加するときに、列の名前を元のテーブルの主キー列の名前と同じにしておきます。 
 
-+ CDXは、チャネル拡張テーブルのカスタム列をアップロードして Finance and Operations に戻すように構成されています。 RetailCDXSeedDataAX7 リソースには、Finance and Operations からチャネル データベースへのテーブル マッピングの情報が含まれています。 CDX はこの情報を使用して、必要なデータ転送スケジューラのジョブとサブジョブを作成します。 データ転送に新しい拡張テーブルまたは列を含めるには、CDX データ転送のカスタマイズを指定するリソース ファイルを提供する必要があります。 ベスト プラクティスは、競合を防ぐため次のような名前付け規則を使用します。 **RetailCDXSeedDataAX7_ContosoRetailExtension**。 (ここでは、**ContosoRetail** は、固有の拡張機能です。)
++ CDXは、チャネル拡張テーブルのカスタム列をアップロードして Retail に戻すように構成されています。 RetailCDXSeedDataAX7 リソースには、Retail からチャネル データベースへのテーブル マッピングの情報が含まれています。 CDX はこの情報を使用して、必要なデータ転送スケジューラのジョブとサブジョブを作成します。 データ転送に新しい拡張テーブルまたは列を含めるには、CDX データ転送のカスタマイズを指定するリソース ファイルを提供する必要があります。 ベスト プラクティスは、競合を防ぐため次のような名前付け規則を使用します。 **RetailCDXSeedDataAX7_ContosoRetailExtension**。 (ここでは、**ContosoRetail** は、固有の拡張機能です。)
 
 Retail SDK のサンプル CDX リソース ファイルには、追加のカスタマイズが含まれています。 ただし、RetailTransactionTable 拡張子の例では、次のコードのセクションは、チャンネル側から Retail HQ にデータを引き出すために必要な唯一のセクションです。
 

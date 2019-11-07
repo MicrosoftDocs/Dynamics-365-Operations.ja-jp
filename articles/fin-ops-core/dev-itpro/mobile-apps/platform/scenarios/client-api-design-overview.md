@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 0fc203ed8c82b9ceb9ab35ba4ad0e02925512102
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e5034a6fcc88d09268063af4a2e54df263edc7df
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183105"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570541"
 ---
 # <a name="client-side-design-apis"></a>クライアント側の設計 API
 
@@ -117,4 +117,4 @@ ms.locfileid: "2183105"
 
 次の図は、前のコードで生成された顧客画像、顧客名、フォント、背景色などを示しています。
 
-![サンプル画像](media/detail-page.png)
+![前のコードにより生成された情報を示す画像](media/detail-page.png)

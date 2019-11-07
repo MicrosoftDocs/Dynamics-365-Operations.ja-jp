@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da31fe2c999e681b706011c1045a2cebfa514d2d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 793de48badfa1dfd79e9bc2e99fc74db8bdf1eab
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191778"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658846"
 ---
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 
@@ -36,7 +36,7 @@ ms.locfileid: "2191778"
 このドキュメントには、文書化されている各 API の使用方法を示す小さなコード スニペットが含まれています。 これらの API の多くを活用する完成したコントロールのより完全な例は Github で確認できます。 [Github での拡張可能コントロールの例](https://github.com/Microsoft/Dynamics-AX-Extensible-Control-Samples)
 
 ## <a name="control-block-diagram"></a>コントロール ブロック図
-この高度な図は、拡張可能なコントロールの主要コンポーネントと、それらが相互にやり取りする方法を示しています。 拡張可能なコントロール ソリューションには、コントロールを実装する 2 つの X++ クラスが含まれます。 ランタイム クラスは、ランタイム データ、プレゼンテーション、コントロールの動作を実装します。 ビルド クラスは、コントロールがフォーム デザイナー、プロパティ ウィンドウ、およびアプリケーション エクスプローラーでどのように表示されるかを定義します。 [![ExtensibilityArchitecture](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
+この高度な図は、拡張可能なコントロールの主要コンポーネントと、それらが相互にやり取りする方法を示しています。 拡張可能なコントロール ソリューションには、コントロールを実装する 2 つの X++ クラスが含まれます。 ランタイム クラスは、ランタイム データ、プレゼンテーション、コントロールの動作を実装します。 ビルド クラスは、コントロールがフォーム デザイナー、プロパティ ウィンドウ、およびアプリケーション エクスプローラーでどのように表示されるかを定義します。 [![Extensibility アーキテクチャ](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
 
 <a name="x"></a>X++
 ---
@@ -1100,4 +1100,4 @@ console.log($dyn.label("greeting"));
 ## <a name="control-lifecycle-diagrams"></a>制御ライフサイクル図
 
 ### <a name="control-instantiation"></a>インスタンス化の制御
-[![ExtensibilityProcess](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
+[![Extensibility プロセス](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)

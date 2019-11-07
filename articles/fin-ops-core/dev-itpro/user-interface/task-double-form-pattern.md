@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 75b4de24af7155f42e447a8c1a9a6e28650c04b2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b0c57bae8cea05994fa00c85e95d94432be14477
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183033"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578306"
 ---
 # <a name="task-double-form-pattern"></a>タスク ダブルのフォーム パターン
 
@@ -37,7 +37,7 @@ ms.locfileid: "2183033"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![patternTaskDouble](./media/patterntaskdouble.png)](./media/patterntaskdouble.png)[](./media/taskdouble1.png)
+[![タスク ダブルのフォームのワイヤーフレーム](./media/patterntaskdouble.png)](./media/patterntaskdouble.png)[](./media/taskdouble1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。

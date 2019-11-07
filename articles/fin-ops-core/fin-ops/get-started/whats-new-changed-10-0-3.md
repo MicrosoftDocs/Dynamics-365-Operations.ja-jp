@@ -3,11 +3,12 @@ title: Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機�
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 10.0.3 の新機能または変更された機能について説明します。 このバージョンは 6 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/14/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.3
-ms.openlocfilehash: 312bd7b9b5dc24508170b61f6f27d9941f9633dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2a860bfbf610744ef90d81a5545774dfa9ec74e5
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191737"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627631"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-1003-june-2019"></a>Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更点
 
@@ -63,7 +64,7 @@ Retail の最新のリリースの新機能と変更については、[Dynamics 
 Finance and Operations の今回のリリースでは、 **税設定パラメータ** ページに新たなパラメータが追加されました。これにより、インポート/エクスポートを行う注文に対して、税金を計算する通貨を選択できます。 既定では、 **トランザクション通貨** を使用して、インポート/エクスポートを行う注文に対し、計算する税金の通貨を選択できます。 既定では、 **トランザクション通貨** は元のシステム動作と同じです。 **会計通貨** を選択すると、システムが会計通貨の課税金額に基づいて税金を計算します。
 
 ## <a name="regulatory-updates"></a>規制の更新
-Finance and Operations の規制の更新については、[ローカライズおよび規制機能 – 規制の更新](../../financials/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
+Finance and Operations の規制の更新については、[ローカライズおよび規制機能 – 規制の更新](../../../finance/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
 
 ## <a name="additional-resources"></a>追加リソース
 

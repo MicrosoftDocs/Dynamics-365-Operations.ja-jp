@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d55edc83f72d52c738d0da5e215ccffd5cbcb3c9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3e98dfa95d74163339dc114724b8a4f96b53719f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183069"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570485"
 ---
 # <a name="add-templates-to-the-open-lines-in-excel-menu"></a>[Excel で明細行を開く] メニューへのテンプレートの追加
 
@@ -33,7 +33,11 @@ ms.locfileid: "2183069"
 頻繁に使用される一部のテンプレートは、仕訳帳テンプレートです。 これらの仕訳帳テンプレートの一部はプロモーションされたため、**Excel で明細行を開く** メニューに既定で表示されます。 しかし、システムに新しいテンプレートを追加するときに、既定では、**Office で開く** メニューで利用可能です。 テンプレートを **Excel で行を開く** メニューで利用できるようにするには、次の手順に従います。
 
 1.  Microsoft Excel テンプレートを作成し、ローカルに保存します。 詳細については、「Excel で開くエクスペリエンスの作成」の記事を参照してください。
-2.  Microsoft Visual Studio で、ApplicationSuite モデルへの参照を含むモデルに新しいプロジェクトを作成します。 [![Visual Studio で新しいプロジェクトを作成する](./media/110-1024x523.png)](./media/110.png)
+
+2.  Microsoft Visual Studio で、ApplicationSuite モデルへの参照を含むモデルに新しいプロジェクトを作成します。 
+
+       [![Visual Studio で新しいプロジェクトを作成する](./media/110-1024x523.png)](./media/110.png)
+
 3.  新しいクラスを作成し、**LedgerIJournalExcelTemplate** インターフェイスを実装し、**DocuTemplateRegistrationBase** を拡張します。 実装 (仕訳帳タイプなどによってサポートされる) では、「Excel で開く」エクスペリエンスで、テンプレートをオプションとして使用できるコンテキストが定義されます。 この例では、LedgerJournalHeaderEntity と LedgerJournalLineEntity を使用していますが、これらのエンティティに限定されません。 エンティティが仕訳帳ヘッダー/明細行のエンティティ パターンに従うという条件で、自分自身のエンティティを定義することができます。 **LedgerDailyJournalExcelTemplate** クラスからの例を次に示します。
 
         using Microsoft.Dynamics.Platform.Integration.Office;  
@@ -175,7 +179,7 @@ ms.locfileid: "2183069"
 
 4.  新しいリソースを含むプロジェクト/モデルを構築します。 新しいリソース 1 つと、新しいクラス 1 つが必要です。 
 
-        [![Built project/model](./media/22.png)](./media/22.png)
+       [![構築されたプロジェクト](./media/22.png)](./media/22.png)
 
 5.  クライアントで、**共通** &gt; **共通** &gt; **Office 統合** &gt; **ドキュメント テンプレート** &gt; **システム テンプレートの再読み込み**と移動します。 一覧に新しいテンプレートが表示され、そのテンプレートを仕訳帳ページに追加した場合、そのテンプレートは **Excel で明細行を開く** メニューにも表示されます。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e05be085f0efdc8956fc945f27571e8243ea004
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f2fe51ec19b3be55cd98fb61e5e6b3ef79726495
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183100"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658881"
 ---
 # <a name="create-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスの作成
 
@@ -40,7 +40,7 @@ Excel と Word を Office エクスペリエンスで開く機能について学
 
 次の図は、**Excel アドイン** が仕訳入力に使用されている様子を示しています。
 
-[![off101a](./media/off101a.png)](./media/off101a.png)
+[![Excel アドインの例](./media/off101a.png)](./media/off101a.png)
 
 ## <a name="where-are-the-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスが存在する場所は
 Excel で開くエクスペリエンスは、通常Microsoft Office で開くメニューのExcel で開くセクションの下にありますが、これらのエクスペリエンスには明示的なボタンを追加することができます。
@@ -53,7 +53,7 @@ Excel にエクスポート オプションおよびエクスペリエンスは�
 
 次の図は、**フリート顧客**フォームの **Microsoft Office で開く**メニューをテンプレート **Excel で開く**オプション、生成された **Excel で開く**オプション、および静的な **Excel にエクスポート**オプションと共に示しています。
 
-[![off101b](./media/off101b.png)](./media/off101b.png)
+[![Microsoft Office メニューで開く](./media/off101b.png)](./media/off101b.png)
 
 ## <a name="when-will-an-entity-show-as-an-open-in-excel-option"></a>エンティティはいつ [Excel で開く] オプションとして表示されますか ?
 エンティティにフォームと同じルート データ ソース (テーブル) が存在するとき、そのデータソースは、Microsoft Office で開くメニューの Excel で開くセクションのオプションとして追加されます。 これは、「生成済み」オプションと呼ばれます。
@@ -61,12 +61,12 @@ Excel にエクスポート オプションおよびエクスペリエンスは�
 ## <a name="what-fields-will-be-shown-in-the-workbook"></a>ブックに何というフィールドが表示されますか ?
 ワークブックに追加される既定のフィールドは、エンティティのキー フィールドと必須フィールドです。 デフォルトで別のフィールドセットを提供する必要がある場合は、これらのフィールドをエンティティの**自動レポートのフィールド グループ**に追加できます。 次の図は、FMCustomerEntity の AutoReport フィールド グループの Visual Studio  ビューを示しています。
 
-[![off101c](./media/off101c.png)](./media/off101c.png)
+[![AutoReport フィールド グループの Visual Studio ビュー](./media/off101c.png)](./media/off101c.png)
 
 ## <a name="what-fields-will-be-shown-when-an-entity-is-the-target-of-a-lookup"></a>エンティティが検索の対象のとき、何というフィールドが表示されますか ?
 2 つのエンティティ間のリレーションシップが定義されると、1 つのエンティティの識別子が他のエンティティに表示されている場合、そのルックアップに表示されるフィールドは、キー フィールドであるか、または **AutoLookup フィールド グループ** が空でない場合はそのグループ内のフィールドです。 関係の参照は現在サポートされていませんが、最終的に列挙のルックアップを同様の方法でアプリに表示されます。 列挙ルックアップを持つ Excel アドインを次に示します。
 
-[![off101d](./media/off101d.png)](./media/off101d.png)
+[![列挙型ルックアップによる Excel アドイン](./media/off101d.png)](./media/off101d.png)
 
 ## <a name="what-should-be-done-to-make-an-entity-ready-for-use-in-excel"></a>エンティティを Excel で使用できるようにするには何を行う必要がありますか ?
 AutoReport および AutoLookup フィールド グループを定義し、Excel アプリ デザイン エクスペリエンスを使用してテストします。
@@ -120,16 +120,14 @@ Excel アドインは、生成された [Excel で開く] エクスペリエン�
 
 次の図は、**Excel ブック デザイナー** フォームを示しています。
 
-[![off101e](./media/off101e.png)](./media/off101e.png) 
+[![Excel ブック デザイナー フォーム](./media/off101e.png)](./media/off101e.png) 
 
-Excel アドインを含むワークブックを取得すると、追加のデータソースは、**デザイン** ボタンを使用して追加することができます。 現在、データ ソースを削除することはできません。 次の図は、**デザイン** ボタンが強調表示された Excel アドインを示しています。
-
-[![off101f](./media/off101f.png)](./media/off101f.png)
+Excel アドインを含むワークブックを取得すると、追加のデータソースは、**デザイン** ボタンを使用して追加することができます。 現在、データ ソースを削除することはできません。 
 
 ## <a name="when-will-a-template-show-as-an-open-in-excel-option"></a>テンプレートはいつ [Excel で開く] オプションとして表示されますか ?
 **共通** &gt; **共通** &gt; **Office 統合** &gt; **ドキュメント テンプレート** フォーム (DocuTemplate) に表示されているテンプレートで、ShowInOpenInOfficeMenu が "はい" に設定されていて、ルート データ ソース (テーブル) が現在のフォームと同じとき、そのテンプレートは、Microsoft Office で開くメニューの Excel で開くセクションのオプションとして追加されます。 次の図は、**ドキュメント テンプレート** フォームを示しています。
 
-[![off101g](./media/off101g.png)](./media/off101g.png)
+[![ドキュメント テンプレート フォーム](./media/off101g.png)](./media/off101g.png)
 
 ## <a name="will-a-filter-be-added-to-the-template"></a>フィルターはテンプレートに追加されますか。
 **ドキュメント テンプレート** フォームでは、「現在のレコード」の標準フィルターを有効または無効にします。 テンプレートが Excel で開くオプションとして呼び出されたときにフィルターがオンになっている場合、現在のレコードのフィルターがワークブックに追加されます。 フィルターはキー フィールドとその値になります。
@@ -146,7 +144,7 @@ LedgerJournalLineEntryTemplateRegistration および FMTemplateRegistrations ク
 ## <a name="how-do-templates-get-loaded-into-a-fresh-deployment"></a>テンプレートはどのように新しい展開に読み込まれますか？
 システム定義のテンプレートを読み込むには、次に示すように、**Common**&gt;**Common**&gt;**Office 統合**&gt;**ドキュメント テンプレート** フォームの **システム テンプレートを再読込み** ボタンをクリックします。
 
-[![off101h](./media/off101h.png)](./media/off101h.png) 
+[![システム テンプレート ボタンの再読み込み](./media/off101h.png)](./media/off101h.png) 
 
 今後、配置の際にそのボタンのクリックに相当する操作を実行します。
 
@@ -228,7 +226,7 @@ Excel で開くエクスペリエンスに明示的なボタンを追加でき�
         }
 
 次の図は、**総勘定元帳** &gt; **仕訳帳** &gt; **一般仕訳帳** フォームを強調表示された **Excel で明細行を開く**ボタンと共に示しています。 
-[![off101i](./media/off101i.png)](./media/off101i.png)
+[![Excel ボタンで開いた明細行を強調表示]](./media/off101i.png)](./media/off101i.png)
 
 作成された Open in Excel オプションとテンプレートの Open in Excel オプションをプログラムで追加するには、ExportToExcelIGeneratedCustomExport および ExportToExcelITemplateCustomExport インターフェイスを実装して、Open in Excel オプションを追加します。 これにより、エンティティまたはテンプレートがルート データ ソースと同じテーブルを持たないフォームにオプションを追加できます。 この機能を使用する場合の例としてはデータソースのないフォーム、フォーム パーツのコレクションのみを含む可能性があります。 次の例では、**FMRental** フォームに、生成されたテンプレートと ExcelのOpen in Excel オプションをプログラムによって追加します。
 
@@ -298,11 +296,11 @@ Excel で開く オプション テンプレートは、ExportToExcelITemplateCu
 
 フィルターがプログラムで追加された後、結果のフィルターは、**フィルター** ボタンを使用して Excel アドインで表示できます。 次の図は、**フィルター** ボタンが強調表示された Excel アドインを示しています。
 
-[![off101j](./media/off101j.png)](./media/off101j.png) 
+[![強調表示されたフィルター ボタン](./media/off101j.png)](./media/off101j.png) 
 
 次の図は、**フィルター** ダイアログ ボックスが強調表示された Excel アドインを示しています。
 
-[![off101k](./media/off101k.png)](./media/off101k.png)
+[![開いたフィルター ダイアログ ボックス](./media/off101k.png)](./media/off101k.png)
 
 ## <a name="how-do-i-enable-relationship-lookups-in-excel"></a>Excel でリレーションシップ ルックアップをどのように有効にしますか。
 Excel データ コネクタでリレーションシップ ルックアップを有効にするには、次のメタデータが設定されていることを確認する必要があります。
@@ -392,26 +390,22 @@ Excel データ コネクタでリレーションシップ ルックアップを
 
 エンティティへの参照が、プライベート エンティティ名 (DataEntity.Name) からパブリック エンティティ名 (DataEntity.PublicEntityName) に変更されました。 エンティティのパブリックおよびプライベート名が異なっており、Excel テンプレートまたはブックで使用されている場合、「エラー検索エンティティ」というメッセージが Excel アプリに表示されます。 詳細: エンティティ "&lt;DataEntity.Name&gt;" は見つかりません"。
 
-[![off101l](./media/off101l.png)](./media/off101l.png) 
-
 これを解決するには、影響を受けるテンプレートのバインド情報を変更して、DataEntity.Name の代わりに DataEntity.PublicEntityName を指すようにします。
 
 1.  置き換える必要のある DataEntity.Name については、DataEntity.PublicEntityName を決定し、たとえば FMCustomerEntity を FleetCustomer に置き換えます。
 2.  影響を受けるテンプレートを検索します。
 3.  テンプレートのファイル拡張子を .xlsx から .zip に変更します。
-    [![off101m](./media/off101m.png)](./media/off101m.png)
+    [![ダイアログ ボックス名を変更](./media/off101m.png)](./media/off101m.png)
 4.  変更するファイルは、2015-05-25-FleetCustomersWithLocations.zipxlwebextensionswebextension2.xml など、xlwebextensions ディレクトリ内の webextension\*.xml ファイルのいずれかになります。
 5.  ファイルを開き、適切な場所であることを確認します。
 6.  FMCustomerEntity などの、DataEntity.Name を検索します。
-    [![off101n](./media/off101n.png)](./media/off101n.png)
+    [![DataEntity.Name を検索](./media/off101n.png)](./media/off101n.png)
 7.  ZIP ファイルを抽出します。
-    [![off101o](./media/off101o.png)](./media/off101o.png)
 8.  webextension xml ファイルを開きます。
 9.  DataEntity.Name を対応する DataEntity.PublicEntityName に置き換えます。
 10. webextension .xml ファイルの変更を保存します。
 11. たとえば、古い zip ファイルの名前を変更し、名前に ".old" を追加します。
 12. 以前に抽出したすべてのコンテンツの新しい ZIP ファイルを作成します。 これは通常、アーカイブ/zip フォルダ内のコンテンツを強調表示し、そのコンテンツを使用して zip フォルダを作成する必要があります。
-    [![off101p](./media/off101p.png)](./media/off101p.png)
 13. ZIP ファイルには ZIP ファイルのルートに \_rels"、"docProps"、および "xl" の各フォルダがあることを確認します。
 14. 必要に応じて zip ファイルの名前を変更します。たとえば、ファイル 2015-05-25-FleetCustomersWithLocations.zip の名前を変更します。
 15. zip ファイル拡張子を .xlsx に変更します。

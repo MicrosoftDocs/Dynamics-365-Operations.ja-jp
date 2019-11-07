@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 15db63d71967b40561dd963f0dd3c7f0219a2bdb
-ms.sourcegitcommit: 2c0b27b7571408c629c14749c4bf8f37435aaa77
+ms.openlocfilehash: 604e392f53d3e6a55350c941cb4cc6940eb1e6d4
+ms.sourcegitcommit: 9e11c35e3a749758b2c06ed7fad617f6c731b3af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2238637"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2657341"
 ---
 # <a name="deploy-a-demo-environment"></a>デモ環境の配置
 
@@ -31,7 +31,7 @@ ms.locfileid: "2238637"
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。 このトピックは、以下のデモ環境の配置に適用されます。
 
 - Dynamics 365 Finance
-- Dynamice 365 Supply Chain Management
+- Dynamics 365 Supply Chain Management
 - Dynamics 365 Retail
 
 ## <a name="prerequisites"></a>必要条件

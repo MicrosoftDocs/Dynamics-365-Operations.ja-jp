@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3be41f671d82bcc9b57e4b8f8411c75a2455dee0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4ee2660acf022dc4a60b51894424a1e07654a78b
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191773"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658843"
 ---
 # <a name="form-styles-and-patterns"></a>フォームのスタイルとパターン
 
@@ -106,13 +106,13 @@ Microsoft Dynamics AX 2012 では、いくつかのフォームのスタイル�
 
 フォームでパターンが適用されていなければならないコンテナ コントロールを検索するには、フォーム デザイナーで “unspecified” を検索します。 この検索では、 **: &lt;未指定&gt;** の指定を持つフォーム内のすべてのノードが強調表示されます。 各コンテナを別々に調べて、最も適切なサブパターンを適用することができます。 
 
-![FormFaq2](media/formfaq2.png)
+![「未指定」の指定を持つノードの検索結果](media/formfaq2.png)
 
 ### <a name="how-do-i-check-whether-more-pattern-work-must-still-be-done-on-a-form"></a>フォームでより多くのパターン作業を実行する必要があるかどうかをどのように確認しますか。
 
 開いているフォームでさらにパターン作業を行う必要があるかどうかを確認するには、デザイナーでフォームを右クリックし、**アドイン**&gt;**フォーム統計情報** を選択します。 **Pattern = Unspecified** カウントが 0 (ゼロ) を超える場合、フォームには適用されるパターンに必要なコンテナーがまだ含まれています。 理想的には、すべてのフォームには**パターン = カスタム**のカウントが 0 (ゼロ)、**パターン カバレッジ**の値が 100 パーセントである必要があります。 これらの値は、フォームがパターンによって完全にカバーされていることを示します。 
 
-![formStatistics](media/formstatistics.png)
+![パターンによって完全にカバーされているフォームを示す値のダイアログ ボックス](media/formstatistics.png)
 
 ### <a name="why-isnt-static-text-allowed-inside-the-fields-and-field-groups-subpattern-isnt-static-text-allowed-in-forms-any-longer-what-do-i-do-with-the-static-text-that-the-fields-and-field-groups-subpattern-doesnt-accept-how-can-i-show-user-help-instead-of-static-text"></a>フィールドおよびフィールド グループのサブパターン内で静的テキストが使用できないのはなぜですか。 今後フォームで静的テキストは許可されませんか。 フィールドおよびフィールド グループのサブパターンが受け入れない静的テキストは、どうすればよいでしょうか。 静的テキストではなく、ユーザー ヘルプを表示する方法はありますか。
 
@@ -142,7 +142,7 @@ Microsoft Dynamics AX 2012 では、いくつかのフォームのスタイル�
 
 グループとコントロールまたは、任意のコントロールがパターンにより許可されていない場合、それらは**パターン情報**パネルで「不一致」と表示されます。 
 
-![FormFaq5](media/formfaq5.png)
+![一致しないコントロールの例](media/formfaq5.png)
 
 フィールドとフィールド グループの各サブパターンに、グループが「一致しない」と表示される典型的な理由は 2 つあります。
 

@@ -3,7 +3,7 @@ title: Retail Modern POS (MPOS) のトリガーと印刷
 description: トリガーを使用すると、いずれかの Retail Modern POS の操作前後に発生するイベントを取得できます。
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/26/2019
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 2b45b806a2aabda5d933cd25edcea9bc87d67e38
-ms.sourcegitcommit: 2555acfd855fc18ff3ba432ba2cf7633a8f1653c
+ms.openlocfilehash: 3bf04344b95a6cb1a18f0cb789e4f5883d8e01ca
+ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "2238560"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564182"
 ---
 # <a name="retail-modern-pos-mpos-triggers-and-printing"></a>Retail Modern POS (MPOS) のトリガーと印刷
 
@@ -77,6 +77,7 @@ ms.locfileid: "2238560"
 | PostIssueLoyaltyCardTrigger  | キャンセル不可          | ロイヤルティ カードが発行された後に実行されます。       |
 | PreCustomerSaveTrigger  | 解約可能          | 顧客を作成する前に実行されます。       |
 | PostCustomerSaveTrigger  | キャンセル不可          | 顧客を作成した後に実行されます。       |
+| PreSaveCustomerAddressTrigger      | 解約可能              | 顧客の住所が保存される前に実行されます。            |
 | PreGetLoyaltyCardBalanceTrigger  | 解約可能          | ロイヤルティ カード残高を取得する前に実行されます。       |
 | PostGetLoyaltyCardBalanceTrigger  | キャンセル不可          | ロイヤルティ カード残高を取得した後に実行されます。       |
 | PreDisplayLoyaltyCardBalanceTrigger  | 解約可能          | ロイヤルティ カード残高を表示する前に実行されます。       |
@@ -150,10 +151,14 @@ ms.locfileid: "2238560"
 | PreRecallCustomerOrderTrigger     | 解約可能     | 顧客の注文がリコールされる前に実行されます。 |
 | PostRecallCustomerOrderTrigger    | キャンセル不可 | 顧客の注文がリコールされた後に実行されます。  |
 | PrePickUpCustomerOrderLinesTrigger    | 解約可能     | 顧客注文明細行が選択される前に実行されます。  |
-| PreChangeShippingOriginTrigger    | 解約可能     | 顧客先発注時に出荷元が変更される前に実行されます。|
-| PreShipFulfillmentLinesTrigger    | 解約可能     | 出荷ボタンをクリックすることで、注文フルフィルメント ビューから出荷が行われる前に実行されます。|
-| PreMarkFulfillmentLinesAsPackedTrigger    | 解約可能     | 梱包ボタンをクリックすることで、注文フルフィルメント ビューから梱包としてマーク オプションがトリガーされる前に実行されます。|
-| PreCreatePackingSlipTrigger   | 解約可能     | 梱包明細の作成オプションがトリガーされる前に、注文フルフィルメント ビューから梱包ボタンをクリックして実行されます。|
+| PreChangeShippingOriginTrigger    | 解約可能     | 顧客注文時に出荷元が変更される前に実行されます。|
+| PreGetFulfillmentLinesTrigger     | 解約可能     | 注文フルフィルメント明細行が注文フルフィルメント ビューに読み込まれる前に実行されます。|
+| PreShipFulfillmentLinesTrigger    | 解約可能     | **出荷**ボタンを選択することで、注文フルフィルメント ビューから出荷が行われる前に実行されます。|
+| PostShipFulfillmentLinesTrigger   | キャンセル不可     | **出荷**ボタンを選択することで、注文フルフィルメント ビューから出荷が行われた後に実行されます。|
+| PreMarkFulfillmentLinesAsPackedTrigger    | 解約可能     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包オプションとしてマークがトリガーされる前に実行されます。|
+| PostMarkFulfillmentLinesAsPackedTrigger   | キャンセル不可     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包オプションとしてマークがトリガーされた後に実行されます。|
+| PreCreatePackingSlipTrigger   | 解約可能     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包明細オプションがトリガーされる前に実行されます。|
+| PostCreatePackingSlipTrigger  | キャンセル不可     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包明細オプションがトリガーされた後に実行されます。|
 
 
 ## <a name="shift-triggers"></a>シフト トリガー

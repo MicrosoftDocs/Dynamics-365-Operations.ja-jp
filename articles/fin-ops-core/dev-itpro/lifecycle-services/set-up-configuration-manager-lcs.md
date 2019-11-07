@@ -3,7 +3,7 @@ title: 構成マネージャーの設定
 description: このトピックでは、構成マネージャーの設定方法について説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: d55a1aaec67b026b0a128ae3d56b1cff89bece65
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3fd550e065683aa46f4f774a8c1d3ce4c098e9a1
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183188"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627566"
 ---
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 
@@ -35,7 +35,7 @@ ms.locfileid: "2183188"
 開始する前に、環境には次のコンポーネントが含まれている必要があります。
 
 - 業務に合わせてコンフィギュレーションされた実行中の AX 2012 R3 のバージョン。 AX 2012 R3 のインストール方法の詳細については、[Microsoft Dynamics AX 2012 のインストール](https://technet.microsoft.com/library/fbe52b68-1294-4398-b233-f8ec37c6d531(AX.60).aspx)を参照してください。
-- 実行中のデータのインポート/エクスポート フレームワークのインスタンス。 データのインポート/エクスポート フレームワークをインストールする方法の詳細については、[データのインポート/エクスポート フレームワークをインストール (AX 2012)](./ax-2012/install-dixf.md) を参照してください。 
+- 実行中のデータのインポート/エクスポート フレームワークのインスタンス。 データのインポート/エクスポート フレームワークをインストールする方法の詳細については、[データのインポート/エクスポート フレームワークをインストール (AX 2012 R#)](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/install-the-data-import-export-framework-ax-2012-r3) を参照してください。 
 
     > [!IMPORTANT]
     > データのインポート/エクスポート フレームワークへ接続するためには、構成マネージャー (ベータ) を有効にする DMFEntityExecutionStatusService および DMFService サービス グループを配置する必要があります。

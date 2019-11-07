@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b8bc397a81318e3ddaa339e0c48c757c1cbdbea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 84c2cb8536c7f2e37ede9287940baa08422a06d3
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191776"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578263"
 ---
 # <a name="factbox-form-patterns"></a>情報ボックスのフォーム パターン
 
@@ -44,11 +44,11 @@ ms.locfileid: "2191776"
 ## <a name="wireframe"></a>ワイヤーフレーム
 ### <a name="form-part-factbox-grid"></a>フォーム パート 情報ボックス グリッド
 
-[![情報ボックス (1)](./media/factbox1.png)](./media/factbox1.png)
+[![フォーム パート情報ボックス グリッドの図](./media/factbox1.png)](./media/factbox1.png)
 
 ### <a name="form-part-factbox-card"></a>フォーム パート 情報ボックス カード
 
-[![情報ボックス (2)](./media/factbox2.png)](./media/factbox2.png)
+[![フォーム パート情報ボックス カードの図](./media/factbox2.png)](./media/factbox2.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -115,13 +115,13 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 フォーム: **CustTable** &gt; **ContactsInfoPart** 
 
-[![情報ボックス (3)](./media/factbox3.png)](./media/factbox3.png)
+[![フォーム パート情報ボックス グリッドの例](./media/factbox3.png)](./media/factbox3.png)
 
 ### <a name="form-part-factbox-card"></a>フォーム パート 情報ボックス カード
 
 フォーム: **CustTable** &gt; **CustStatisticsStatistics** 
 
-[![情報ボックス (4)](./media/factbox4.png)](./media/factbox4.png)
+[![フォーム パート情報ボックス カードの例](./media/factbox4.png)](./media/factbox4.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -156,4 +156,4 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 **CustTable** &gt; **ContactsInfoPart** 
 
-[![情報ボックス (5)](./media/factbox5.png)](./media/factbox5.png)
+[![情報ボックスの例](./media/factbox5.png)](./media/factbox5.png)

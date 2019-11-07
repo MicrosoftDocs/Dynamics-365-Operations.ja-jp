@@ -3,7 +3,7 @@ title: Retail セルフサービス コンポーネントの一括配置
 description: このトピックでは、セルフ サービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 10/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 72494b3ef6802cf55e66d5f19081f733c7aca6f2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 036b9458e9fa6c6f57a9db26706ca3e6784858e9
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2018053"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658895"
 ---
 # <a name="mass-deployment-of-retail-self-service-components"></a>Retail セルフサービス コンポーネントの一括配置
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、セルフ サービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。 このトピックは、機能が開発され、より多くの機能が利用可能になると更新されます。 現在、サイレント サービス更新の機能のみが利用可能です。
 
@@ -37,12 +38,12 @@ ms.locfileid: "2018053"
 |---------------------------|-------------|
 | -S または -サイレント             | インストーラーをサイレントで実行します。 グラフィカル ユーザー インターフェイス (GUI) を使用しません。 **-Q** および **-Quiet** 区切り記号には同じ効果があり、使用することもできます。 |
 | -C または -Config             | このインストールの一部として使用するコンフィギュレーション ファイルの場所とファイル名を指定します。 |
-| -FilePath                 | カスタム インストールの場所を指定します。<p><p>標準のインストールにこの区切り記号を使用することをお勧めしません。</p> |
-| -LogFile                  | インストール ログのカスタム ファイルの場所を指定します。<p><p>標準のインストールにこの区切り記号を使用することをお勧めしません。</p> |
-| -SkipPrerequisiteCheck    | 前提条件および必須コンポーネントのインストールのチェックをスキップします。<p><p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
-| -SkipSystemInfoCollection | インストールの開始時にシステム情報を収集するプロセスをスキップします。<p><p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
-| -SkipMerchantInfo         | ハードウェア ステーションのセルフ サービス インストーラーの終わりにマーチャント アカウント情報のインストールをスキップします。<p><p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
-| -SkipAppxInstallation         | Dynamics 365 の2018 年 10 月のリリースから、この区切り記号は APPX Retail Modern POS アプリケーションのインストールをスキップします。  この区切り記号は、システム アカウントまたはサービス アカウント (ユーザー プロファイルがないアカウント) を使用してアプリケーションのインストールを実行するために必要です。</p> |
+| -FilePath                 | カスタム インストールの場所を指定します。<p>標準のインストールにこの区切り記号を使用することをお勧めしません。</p> |
+| -LogFile                  | インストール ログのカスタム ファイルの場所を指定します。<p>標準のインストールにこの区切り記号を使用することをお勧めしません。</p> |
+| -SkipPrerequisiteCheck    | 前提条件および必須コンポーネントのインストールのチェックをスキップします。<p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
+| -SkipSystemInfoCollection | インストールの開始時にシステム情報を収集するプロセスをスキップします。<p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
+| -SkipMerchantInfo         | ハードウェア ステーションのセルフ サービス インストーラーの終わりにマーチャント アカウント情報のインストールをスキップします。<p>この区切り記号は、開発とテストに対してのみ使用する必要があります。 標準のインストールにそれを使用することをお勧めしません。</p> |
+| -SkipAppxInstallation     | Dynamics 365 の2018 年 10 月のリリースから、この区切り記号は APPX Retail Modern POS アプリケーションのインストールをスキップします。 この区切り記号は、システム アカウントまたはサービス アカウント (ユーザー プロファイルがないアカウント) を使用してアプリケーションのインストールを実行するために必要です。 |
 
 ## <a name="silent-servicing"></a>サイレント サービス
 
@@ -85,7 +86,9 @@ StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipP
 
 #### <a name="silently-install-retail-modern-pos"></a>Retail Modern POS のサイレント インストール
 
-次のコマンドは、Retail Modern POS の現在のインストールをサイレント更新します。 このコマンドには、現在インストールされているコンポーネントのサイレント サービスに使用される標準的なコマンド構造があります。 この構造は **&lt;InstallerName&gt;.exe** の基本値とサイレント インストールのコマンド **-S** を使用します。 このコマンドは、構成ファイルが存在する場合は、インストーラーと同じファイルの場所にある構成ファイルを使用します。 このコマンドは、複数の構成ファイルを選択できる場合には使用しないでください。
+次のコマンドにより、Retail Modern POS がサイレントでインストール (または更新) されます。 現在インストールされているコンポーネントのサイレント サービスに使用される標準的なコマンド構造があります。 この構造は **&lt;InstallerName&gt;.exe** の基本値とサイレント インストールのコマンド **-S** を使用します。
+
+このコマンドは、構成ファイルが存在する場合、インストーラーの実行可能ファイルと同じ場所にある構成ファイルを使用します。 複数の構成ファイルが使用可能な場合は使用しないでください。
 
 ```
 ModernPOSSetup_V73.exe -S
@@ -100,4 +103,26 @@ ModernPOSSetup_V73.exe -S
 
 ```
 ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
+```
+
+#### <a name="silently-install-retail-hardware-station"></a>Retail ハードウェア ステーションのサイレント インストール
+
+> [!NOTE]
+> Retail ハードウェア ステーションをインストールすのに、**-SkipMerchantInfo** の区切り記号が必要です。 GUI ベースのハードウェア ステーションのインストールの最後に開く、Merchant Account Information Utility を使用する必要はありません。 機能上の理由で、Retail Modern POS がハードウェア ステーションにペアリングされている場合、最新のマーチャント口座情報もコンポーネントにプッシュされます。
+
+次のコマンドにより、Retail ハードウェア ステーションがサイレントでインストール (または更新) されます。 現在インストールされているコンポーネントのサイレント サービスに使用される標準的なコマンド構造があります。 この構造は **&lt;InstallerName&gt;.exe** の基本値とサイレント インストールのコマンド **-S** を使用します。 また、**-SkipMerchantInfo** の区切り記号を使用して、ユーティリティを通じたマーチャント口座情報のダウンロードをスキップすることもできます。 このコマンドは、インストーラーの実行可能ファイルと同じ場所にある構成ファイルを使用します。
+
+```
+HardwareStationSetup_V10.exe -S -SkipMerchantInfo
+```
+
+> [!NOTE]
+> Retail ハードウェア ステーションをサイレントで配置するのに、構成ファイルが必要です。
+
+#### <a name="silently-install-retail-hardware-station-by-using-a-specific-configuration-file"></a>特定の構成ファイルを使用して Retail ハードウェア ステーションをサイレント インストール
+
+次のコマンドは、特定のコンフィギュレーション ファイルを使用して、Retail ハードウェア ステーションの現在のインストールをサイレント インストールします。 この構成ファイルは、インストーラーの実行可能ファイルと同じ場所にないか、複数の構成ファイルが使用可能な場合があります。
+
+```
+HardwareStationSetup_V10.exe -S -SkipMerchantInfo -C "C:\Temp\HardwareStationSetup_V10__20-19-35.xml"
 ```

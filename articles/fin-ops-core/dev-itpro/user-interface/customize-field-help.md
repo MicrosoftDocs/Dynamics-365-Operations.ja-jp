@@ -3,7 +3,7 @@ title: フィールドの説明をカスタマイズする
 description: この記事では、既存のフィールドの説明をカスタマイズし、独自の説明を追加する方法について説明します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3525bcd56fe68e59a2d4a1d4c15517b5709cebe0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 81a0be33120af76be640430e7a604716c0677e31
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183060"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622781"
 ---
 # <a name="customize-field-descriptions"></a>フィールドの説明をカスタマイズする
 
@@ -57,7 +57,7 @@ Microsoft が提供するフィールドの説明は、別のラベル ファイ
 
 [クライアントでローカライズ可能なラベルを作成する](create-localizable-labels-client.md)
 
-[フィールド説明の表示およびエクスポート](../../fin-and-ops/get-started/view-export-field-descriptions.md)
+[フィールド説明の表示およびエクスポート](../../fin-ops/get-started/view-export-field-descriptions.md)
 
 
 

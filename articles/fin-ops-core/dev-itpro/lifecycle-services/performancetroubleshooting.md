@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f9f11e507431ad5a7100e5392531365d929982b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 830d5242c436a18b29a9dcbb64e8157fd44a581d
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183195"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578303"
 ---
 # <a name="performance-troubleshooting-using-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内のツールを使用した、パフォーマンスのトラブルシューティング
 
@@ -40,26 +40,26 @@ LCS のすべての SQL パフォーマンス ツールは、特定の環境の 
 
 - **ライブ ビュー** – 現在の DTU、実行中のステートメント、ブロックしているステートメントを示しています。 パフォーマンスの問題を示す現在の **SQL Now** ページは、**ライブ ビュー**に置き換えられます。
 
-    [![ライブ ビュー](./media/LiveView.JPG)](./media/LiveView.JPG)
+    [![ライブ ビュー](./media/LiveView.jpg)](./media/LiveView.jpg)
 
 - **クエリ** – 必要に応じてメトリックを取得するために使用される定義済みのクエリの一覧を表示します。 クエリの例には、現在のブロック ツリー、有効な計画ガイドのリスト、および最も高価なクエリの一覧が含まれています。
 
-    [![クエリ](./media/Queries.JPG)](./media/Queries.JPG)
+    [![クエリ](./media/Queries.jpg)](./media/Queries.jpg)
  
     > [!IMPORTANT]
     > クエリ結果が即座に返されることを保証するために、ほとんどのクエリは同期的に実行されます。 ただし、パフォーマンスに問題が発生している場合は、同期クエリの実行によってタイム アウト エラーが発生する可能性があります。 この問題に対処するために、新しい **高速クエリの使用** オプションが追加されました。 既定で、ほとんどのクエリでこのオプションが有効になっています。 クエリの実行後にタイム アウト エラーが発生する場合は、**高速クエリの使用** オプションをオフにして再度クエリの実行を試みます。 クエリは非同期に実行されます。
 
 - **アクション** – サンド ボックスと製造環境での問題を緩和するために実行する必要がある定義済みアクションの一覧を表示します。 アクションの例としては、インデックスの追加または削除、テーブルでの統計の更新、インデックスの再構築、ブロック ステートメントの終了があります。 アクションを実行するといつでも、環境の環境履歴に実行されるアクションの記録が表示されます。 履歴レコードは、クエリの実行時ではなく、アクションにのみ作成されます。 
 
-    [![アクション](./media/Actions.JPG)](./media/Actions.JPG)
+    [![アクション](./media/Actions.jpg)](./media/Actions.jpg)
 
 - **パフォーマンス メトリックス** - 論理入出力、実行カウント、期間、CPU 時間、および待機数に基づいて、選択した期間にシステムで実行された最もコストのかかったクエリが表示されます。 このデータは SQL クエリ ストアからクエリされます。 データは 30 日間保持され、ツールは毎日、協定世界時 (UTC) の午後 10 時にデータ収集を実行します。 ツールを使用するには、過去 30 日間の期間を選択します。 クエリ結果が表示されたら、期間グラフ内のバーを選択して、クエリが他の基準に該当する場所を強調表示します。 **ステートメント**タブで、クエリを表示、またはクエリの実行計画をダウンロードします。
 
-    [![パフォーマンス メトリックス](./media/perfmetrics.JPG)](./media/perfmetrics.JPG)
+    [![パフォーマンス メトリックス](./media/perfmetrics.jpg)](./media/perfmetrics.jpg)
 
 - **インデックス分析** – ユーザーのスキャン、ユーザーのシーク、ユーザーの更新プログラム、および行の数に基づいて、集計インデックスとテーブル情報が表示されます。 パフォーマンス測定基準と同様に、このツールは追加のテーブル メトリックスと共に選択したインデックスのトレンドを表示します。
 
-    [![インデックス分析](./media/IndexAnalysis.JPG)](./media/IndexAnalysis.JPG)
+    [![インデックス分析](./media/IndexAnalysis.jpg)](./media/IndexAnalysis.jpg)
 
 - **クエリ** タブと **アクション** タブ – **クエリ** および **アクション** タブに表示されるクエリの詳細については、[クックブックの照会](querycookbook.md) を参照してください。
 

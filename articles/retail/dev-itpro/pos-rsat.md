@@ -3,7 +3,7 @@ title: Retail Cloud POS 用のレコーダーおよRegression Suite Automation T
 description: このトピックでは、POS テスト レコーダーと Regression Suite Automation Tool (RSAT) を使用して、ユーザー受け入れテスト (UAT) を自動化する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/04/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6eb379396a68a907a0880e630ee99fd9480cf01c
-ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
+ms.openlocfilehash: 0a11c11bea7071fbe80d5cf8631f854b7859c35c
+ms.sourcegitcommit: 7e953d28ff570ca5e71361ca43aefb10526bc681
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "2559202"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "2635295"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-retail-cloud-pos"></a>Retail Cloud POS 用のレコーダーおよRegression Suite Automation Tool のテスト
 
@@ -34,7 +34,7 @@ ms.locfileid: "2559202"
 このトピックは、Dynamics 365 Retail および Dynamics 365 Finance バージョン 10.0.5 (2019 年 10 月) 以降に適用されます。
 
 > [!NOTE]
-> テスト レコーダーは、Google Chrome Web ブラウザーを使用している場合にのみ、Retail Cloud POS でサポートされます。 その他の Web ブラウザーおよびデバイス タイプのサポートは、今後追加されます。
+> テスト レコーダーは、Google Chrome Web ブラウザーを使用している場合にのみ、Retail Cloud POS でサポートされます。 その他の Web ブラウザーおよびデバイス タイプのサポートは、今後追加されます。 現在、POS RSAT がプレビュー中です。 これは、パブリック ダウンロード バージョンでは使用できないことを意味します。 プレビュー バージョンを試したい場合は、サポート チケットを作成してください。
 
 ## <a name="test-recorder"></a>テスト レコーダー
 
@@ -205,9 +205,15 @@ Retail POS で記録のテスト機能を有効にするには、Retail Headquar
 
 記録セッションを終了した後、**このPC に保存**を選択することにより、記録をダウンロードできます。
 
-[![テスト レコーダーの出力ファイルの保存](./media/Save.png)](./media/Save.png)
+> [!div class="mx-imgBorder"]
+> ![テスト レコーダーの出力ファイルの保存](media/Save.png)
 
-Recording.xml ファイルは、ローカル ファイル システムに保存されます。 このファイルは、手動で LCS または Azure DevOps にアップロードする必要があります。 その後、ファイル システムから削除するか、セキュリティで保護する必要があります。
+.axtr ファイルは、ローカル ファイル システムに保存されます。 このファイルを LCS または Azure DevOps に手動でアップロードしてから、ファイル システムから削除するか、セキュリティで保護する必要があります。 
+
+Azure Dev Ops に直接アップロードするには、次の操作を行います。
+1. .axtr ファイル拡張子を .zip に変更します。
+2. .zip パッケージを開きます。 
+3. パッケージの内部には、Recording.xml という名前のファイルがあります。 Recording.xml を Azure DevOps のテスト ケースにアップロードします。 .zip または .axtr パッケージ全体をアップロードしないようにします。
 
 ## <a name="install-rsat"></a>RSAT をインストールする
 
@@ -234,13 +240,17 @@ POS RSAT のプレビュー バージョンを使用している場合、RSAT �
 
     + **Cloud POS URL** – テストを実行する Retail Cloud POS 環境の URL を入力します。
     + **Retail サーバー URL** – デバイスがまだ有効化されていない場合にデバイスの有効化に使用する、Retail サーバー URL を入力します。
-    + **AAD ユーザー電子メール** - デバイスの有効化に使用する Azure Active Directory (Azure AD) ユーザーの電子メール アドレスを入力します。 Azure AD ユーザーは、デバイスを有効にするアクセス許可を持っている必要があります。
-    + **AAD パスワード** - デバイスの有効化に使用する Azure AD ユーザーのパスワードを入力します。
-    + **店舗** - テストを実行する店舗 (小売チャネル) の ID を入力します。
-    + **デバイス** - テストを実行するデバイスの ID を入力します。
-    + **既定の待機時間** - いずれの要素も見つからなかった場合に、テスト ケースが失敗するまでの待機時間を秒単位で入力します。 テストの実行中、再生エンジンは、この既定の待機時間が経過するまで検索要素の検索を試行し続けます。 その後、テスト ケースに失敗し、記録されていた要素が見つからなかったか、再生用に読み込まれなかったことを通知します。
 
-    [![再生環境](./media/Setting.png)](./media/Setting.png)
+> [!NOTE]
+> クラウド POS と Retail サーバー URL は、Finance and Operations 環境から取得できます。 **Retail > チャネルの設定 > チャネル プロファイル**に移動します。 LCS 環境ページから URL を取得することもできます。
+   
+   + **AAD ユーザー電子メール** - デバイスの有効化に使用する Azure Active Directory (Azure AD) ユーザーの電子メール アドレスを入力します。 Azure AD ユーザーは、デバイスを有効にするアクセス許可を持っている必要があります。
+   + **AAD パスワード** - デバイスの有効化に使用する Azure AD ユーザーのパスワードを入力します。
+   + **登録番号** - テストを実行する登録番号 (小売チャネル) の ID を入力します。
+   + **デバイス** - テストを実行するデバイスの ID を入力します。
+   + **既定の待機時間** - いずれの要素も見つからなかった場合に、テスト ケースが失敗するまでの待機時間を秒単位で入力します。 テストの実行中、再生エンジンは、この既定の待機時間が経過するまで検索要素の検索を試行し続けます。 その後、テスト ケースに失敗し、記録されていた要素が見つからなかったか、再生用に読み込まれなかったことを通知します。
+
+ [![再生環境](./media/Settings.PNG)](./media/Settings.PNG)
 
 5. **POS ログイン資格情報**タブを選択します。
 
@@ -347,3 +357,19 @@ RSAT で、**実行**を選択して、選択したテスト ケースを実行�
 + キー操作の記録のパフォーマンスは遅くなる可能性があります。すべてのイベントが正しくキャプチャされるように、記録中はゆっくり入力してください。
 + 現在、周辺機器のエミュレーションはサポートされていません。キーボード ウェッジ ベースのデバイスを使用してください。
 + 複数のキー プレス イベントが記録される可能性があるため、記録中にキーを押したままにしないでください。
+
+## <a name="troubleshooting-guides"></a>トラブルシューティング ガイド
+
+### <a name="chrome-driver"></a>Chrome ドライバー
+
+点滅して再生に失敗する (再生を開始せずにブラウザが複数回開いたり閉じたりする) 場合、これは Chrome ドライバーのバージョンに関連している可能性があります。 RSAT ツールのエラー ログを確認してください。 Chrome ドライバーのバージョンがサポートされていないというエラーが発生した場合は、エラー メッセージに記載されているサポートされている chromedriver.exe バージョンをダウンロードし、…\Regression Suite Automation Tool\Common\External\Selenium フォルダーに貼り付けます。  Chrome ドライバーは、[ChromeDriver](https://chromedriver.chromium.org/downloads) からダウンロードできます。
+
+### <a name="net-standard-error"></a>.NET 標準エラー
+
+次のような 'netstandard' エラーが表示される場合は、.NET Framework 4.8 ランタイムをインストールしてください。 .NET ランタイムは、[SDK をダウンロード](https://dotnet.microsoft.com/download/visual-studio-sdks)からダウンロードできます。
+
+ハンドルされない例外: System.IO.FileNotFoundException: ファイルまたはアセンブリ 'netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'、あるいはその依存関係のうちのいずれか 1 つを読み込めませんでした。 システムは、Microsoft.Dynamics.Commerce.PosPlayback.RecordingsRunner.Program.Main(String[] args).Multifactor 認証で指定されたファイルを見つかることができません。
+
+### <a name="multifactor-authentication"></a>マルチファクター認証
+
+デバイス アクティベーション ユーザーに対してマルチファクター認証が有効になっている場合、再生が失敗する可能性があります。 可能な場合は、アクティベーション ユーザーのマルチファクター認証を一時的に無効にします。 有効化が完了したら、マルチファクター認証を再度有効にします。 有効化は、初回の再生時にのみ要求されます。 この変更を行う前に、この方法についてセキュリティの専門家に相談することをお勧めします。

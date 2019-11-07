@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aabac7d8dacc8e91526713f1075c65549676fdc1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 9cd7963f9d7c6c0c06f86167b552a194af07b492
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025541"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570599"
 ---
 # <a name="retail-modern-pos-mpos-and-cloud-pos-trigger-extensibility"></a>Retail Modern POS (MPOS) およびクラウド POS のトリガー拡張機能
 
@@ -36,7 +36,7 @@ ms.locfileid: "2025541"
 <a name="trigger-overview"></a>トリガーの概要
 ----------------
 
-トリガーは、Microsoft Dynamics 365 Retail for Retail POS によって発生するイベントです。 トリガーを使用すると、操作の前後にカスタム コードを挿入できます。 トリガーには事前トリガーと事後トリガーの 2 種類があります。
+トリガーは、Retail POS の Microsoft Microsoft Dynamics 365 Retail によって発生するイベントです。 トリガーを使用すると、操作の前後にカスタム コードを挿入できます。 トリガーには事前トリガーと事後トリガーの 2 種類があります。
 
 | プレトリガー                                                                                                                                                                                                                                                    | ポスト トリガー                                                                                                                                                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -160,7 +160,7 @@ Modern POS およびクラウド POS では、トリガーはキャンセル可�
 2.  実装クラス内の **実行** メソッドにトリガー ビジネス ロジックを記述します。
 3.  **DOMContentLoad** イベントで **PostLogonTrigger** 実装の一部としてトリガーを登録します。 
 
-[![Trigger01](./media/trigger01.png)](./media/trigger01.png)
+    [![トリガー フローのダイアグラム](./media/trigger01.png)](./media/trigger01.png)
 
 **目的:** 最新の POS / Cloud POS を、会計登録に接続されているときに、スウェーデン語のローカライズ要件を実装して同じトランザクションに売却と返品の両方の行が含まれないようにカスタマイズします。 Modern POS プロジェクトを開き、トリガーの実装を追加するために新しい TypeScript (.ts) ファイルを追加します。 弊社のカスタマイズを製品コードから切り離してアップグレードを管理しやすくするために、カスタマイズ用の新しい TypeScript ファイルを作成します。
 
@@ -171,7 +171,7 @@ Modern POS およびクラウド POS では、トリガーはキャンセル可�
 
 3.  POS.Core\\Triggers\\ に、**TriggerSample.ts** という名前の新しい TypeScript ファイルを作成します。 
 
-[![Trigger02](./media/trigger02-1024x411.png)](./media/trigger02.png)
+    [![TypeScript ファイルのサンプル](./media/trigger02-1024x411.png)](./media/trigger02.png)
 
 4.  TriggerSample.ts ファイルに次のコードを追加します。
 

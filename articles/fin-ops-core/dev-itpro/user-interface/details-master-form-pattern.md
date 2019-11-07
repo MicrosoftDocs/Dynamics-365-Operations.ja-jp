@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a558f880eeff0c0407c4f980bc1db6a2558fc2a2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 55a3bae4ca372074ab039b8b932217b081652acc
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183059"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658849"
 ---
 # <a name="details-master-form-pattern"></a>詳細マスター フォーム パターン
 
@@ -51,15 +51,15 @@ ms.locfileid: "2183059"
 
 [![詳細マスター ワイヤーフレーム: グリッド ビュー](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)
 
-### <a name="details-master-wstandard-tabs"></a>詳細マスター / 標準タブ
+### <a name="details-master-with-standard-tabs"></a>標準タブによる詳細マスター
 
 #### <a name="details-view"></a>詳細ビュー
 
-[![詳細マスター / 標準タブ ワイヤーフレーム: 詳細ビュー](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)
+[![標準タブ ワイヤーフレームによる詳細マスター: 詳細ビュー](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)
 
 #### <a name="grid-view"></a>グリッド ビュー
 
-[![詳細マスター / 標準タブ ワイヤーフレーム: グリッド ビュー](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)
+[![標準タブ ワイヤーフレームによる詳細マスター: グリッド ビュー](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -109,7 +109,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
             - MainGrid (グリッド)
             - MainGridDefaultAction (CommandButton)
 
-### <a name="details-master-wstandard-tabs--high-level-structure"></a>詳細マスター / 標準タブの詳細 – 高度な構造
+### <a name="details-master-with-standard-tabs--high-level-structure"></a>標準タブの詳細による詳細マスター – 高度な構造
 
 - デザイン
 
@@ -217,7 +217,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 [![詳細マスター (基本) の例: グリッド ビュー](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)
 
-### <a name="details-master-wstandard-tabs"></a>詳細マスター / 標準タブ
+### <a name="details-master-with-standard-tabs"></a>標準タブによる詳細マスター
 
 フォーム: **HcmWorker**
 
@@ -227,11 +227,11 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="details-view-navigation-list-on"></a>詳細ビュー (ナビゲーション リスト オン)
 
-[![詳細マスター / 標準タブの例: 詳細ビュー (ナビゲーション リスト オン)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)
+[![標準タブの例による詳細マスター: 詳細ビュー (ナビゲーション リスト オン)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)
 
 #### <a name="grid-view"></a>グリッド ビュー
 
-[![詳細マスター / 標準タブ例: グリッド ビュー](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)
+[![標準タブ例による詳細マスター: グリッド ビュー](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -255,11 +255,11 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 [![AX 2012 の例: 詳細マスター (基本) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)
 
-##### <a name="details-master-wstandard-tabs"></a>詳細マスター / 標準タブ
+##### <a name="details-master-with-standard-tabs"></a>標準タブによる詳細マスター
 
-[![AX 2012 の例: 詳細マスターと標準タブ 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
+[![AX 2012 の例: 標準タブ 1 による詳細マスター](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
 
-[![AX 2012 の例: 詳細マスターと標準タブ 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
+[![AX 2012 の例: 標準タブ 2 による詳細マスター](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
 
 
 

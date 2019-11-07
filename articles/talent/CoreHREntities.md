@@ -3,7 +3,7 @@ title: Common Data Service の Core HR エンティティ
 description: Core HR は、Common Data Service を使用して、拡張性シナリオおよび統合シナリオを有効にします。
 author: andreabichsel
 manager: AnnBe
-ms.date: 11/15/2018
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-08-11
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a0142f472e4777d465f1dbd4f5ab66b6bfd9371
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b7dbd3fff48adb5d6699c1ebb6c861ad3f0db815
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552199"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2572095"
 ---
 # <a name="core-hr-entities-in-common-data-service"></a>Common Data Service の Core HR エンティティ
 

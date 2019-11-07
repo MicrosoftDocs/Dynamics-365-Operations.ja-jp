@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a53fe7addbc8fb01082cc1e1c6b1b42c7029018b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bc7524dc46c7ed9c9a115d2e692d3936868db2c1
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180519"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658797"
 ---
 # <a name="wizard-form-pattern"></a>ウィザードのフォーム パターン
 
@@ -37,7 +37,7 @@ ms.locfileid: "2180519"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![ワイヤーフレーム](./media/wizard1-1024x574.png)](./media/wizard1.png)
+[![ウィザード フォームのワイヤーフレーム](./media/wizard1-1024x574.png)](./media/wizard1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -95,7 +95,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **WrkCtrBulkResReqEditWizard** 
 
-[![wizardExample](./media/wizardexample.png)](./media/wizardexample.png)[](./media/wizard2.png)
+[![ウィザードの例](./media/wizardexample.png)](./media/wizardexample.png)[](./media/wizard2.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -115,4 +115,4 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
-[![AX 2012 の例](./media/wizard3.png)](./media/wizard3.png)
+[![以前のバージョンの例](./media/wizard3.png)](./media/wizard3.png)

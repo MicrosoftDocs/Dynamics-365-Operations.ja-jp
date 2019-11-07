@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: Talent January 2019 update
-ms.openlocfilehash: c830685495e0ee30bc2e15f4ff1c4f4728258833
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 58394d8fd858d920585079a4ea7516d29dca4663
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251028"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622732"
 ---
 # <a name="data-integration-guidance-for-dynamics-365-talent"></a>Dynamics 365 Talent のデータ統合ガイド
 
@@ -55,6 +55,8 @@ Common Data Service エンティティおよび関連付けられている API �
 
 > [!NOTE]
 > Common Data Service を Talent: Core HR の優先データインターフェイスにする決定が比較的新しい場合、統合に必要な Core HR データ エンティティを Common Data Service<sup>1</sup> で使用できない場合があります。 統合に必要な Core HR エンティティをまだ使用できない場合は、データ エンティティが利用できるまで待つか、または以下に示すその他の統合テクノロジのいずれかを使用する必要があります。
+> 
+> 既定では、提供されたデモ データを含まない新しい環境では、Common Data Service 統合はオフになっています。 デモ データが含まれる新しい環境ではオンになっており、環境はデータの準備時にデータとの同期を開始します。 データと同期する準備が整ったら、[Common Data Service コンフィギュレーション ページ](https://docs.microsoft.com/dynamics365/talent/hr-cds-admin-form) で統合をオンにすることができます。
 
 <sup>1</sup>Common Data Service で利用できる Core HR エンティティの一覧については、[Core HR および Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities) を参照してください。 Attract と Onboard については、すべてのエンティティが Common Data Service で利用可能です。
 
@@ -125,7 +127,7 @@ Power Query は、リッチな M formula language を含む、強力で柔軟な
 |------------------------|------------------------------------------|---------------------------------------------|-------------------------------------------|------------------------------------------------------------|-------------------------------------|
 | Common Data Service エンティティ           | データ インテグレーターまたはミドルウェアを使用します | 同期、非同期、バッチ (データ インテグレーターを使用) | Dynamics 365 Web API (OData) を使用 | ユース ケースによって異なります (対話型の使用に対してページングをサポート) | 改善<sup>2</sup>                       |
 | DMF エンティティ           | ミドルウェアを使用してスケジュール        | 非同期、バッチ                                | DMF パッケージ REST API を使用         | 高 (数十万のレコード)                    | 高                                |
-| DMF パッケージ REST API   | ミドルウェアを使用してスケジュール        | 非同期、バッチ                                | 有                                       | 高 (数十万のレコード)                    | API はすべての DMF エンティティをサポートします       |
+| DMF パッケージ REST API   | ミドルウェアを使用してスケジュール        | 非同期、バッチ                                | はい                                       | 高 (数十万のレコード)                    | API はすべての DMF エンティティをサポートします       |
 | BYOD                   | 管理者による Talent でのスケジュール        | 非同期、バッチ                                | いいえ<sup>3</sup>                                    | 高 (数十万のレコード)                    | すべての DMF エンティティをサポートします           |
 | OData 対応エンティティ | ミドルウェアを使用                    | 同期                                        | Talent データ サービス (OData) を通じて  | ユース ケースによって異なります (対話型の使用に対してページングをサポート) | 高                                |
 | Excel アドイン           | 無                                       | 同期                                        | 無                                        | 中間 (数十万のレコード)                      | すべての OData 対応エンティティをサポートします |
@@ -136,7 +138,7 @@ Power Query は、リッチな M formula language を含む、強力で柔軟な
 <sup>3</sup>SQL データベースにプログラムを使用してアクセスできます。
 
 ## <a name="summary"></a>集計
-業務データは重要な資産ですが、特定の目的 (レポート、データ マッシュ アップ、またはカスタム アプリケーションなど) にデータを使用することが困難な場合、その価値は大幅に減少する可能性があります。 Dynamics 365 Talent は、Talent アプリケーションのユーザー インターフェイス (UI) の外部にあるデータを操作するための複数のテクノロジを提供して、そのデータへの統合アプリケーション アクセスを可能にします。 このトピックでは、使用可能な統合テクノロジとその主要な特性の一部について説明しました。
+業務データは重要な資産ですが、特定の目的 (レポート、データ マッシュ アップ、またはカスタム アプリケーションなど) にデータを使用することが困難な場合、その価値は大幅に減少する可能性があります。 Dynamics 365 Talent は、Talent アプリケーションのユーザー インターフェイス (UI) の外部にあるデータを操作するための複数のテクノロジを提供し、そのデータへの統合アプリケーション アクセスを可能にします。 このトピックでは、使用可能な統合テクノロジとその主要な特性の一部について説明しました。
 この情報は、統合プロジェクトに活用する方法に対してより良い決定するのに役立ちます。
 
 

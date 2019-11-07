@@ -3,7 +3,7 @@ title: ビジネス イベント開発者ドキュメント
 description: このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 09/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 3aeb9e2d21fe2bd6f8bd78d286a57f2ab6d0372a
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6a405b2182f288de1cb79c92d5ab4b3365e6783c
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249342"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578254"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 

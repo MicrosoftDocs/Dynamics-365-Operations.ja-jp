@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec528d4831cd2682c247c830fcf9e6d3105247c2
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: b0e18ccb611815935696b1128b7f515ae6233292
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553203"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578261"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -62,12 +62,10 @@ ms.locfileid: "2553203"
     ![この画像は、タスク レコーダーを開くために使用するタスク レコーダー メニュー ボタンの場所を示しています。](./media/taskrecorderguide-taskrecordermenubutton.png)
     
 4.  **タスク レコーダー ウィンドウ**が開きます。 ユーザーは、右上の **X** をクリックして **タスク レコーダー ウィンドウ** を閉じ、新しい記録を開始できます。 前の手順に従って、ウィンドウを再度開くことができます。
-    [![この画像は、タスク レコーダー メイン メニューを示しています。](./media/taskrecorderguide-taskrecordermainmenu.png)](./media/taskrecorderguide-taskrecordermainmenu.png)
-    
+        
 5.  **新しい記録の作成**をクリックします。
 6.  記録名を入力し、**開始**をクリックします。 記録は、**開始** がクリックされると開始されます。 このチュートリアルのフリート例については、名前「新しいレンタル予約の作成」を使用します。
-    [![このイメージは、記録名を指定することができるメニューを記録する新しいタスクを示します。](./media/taskrecorderguide-taskrecordercreatemenu.png)](./media/taskrecorderguide-taskrecordercreatemenu.png) 
-    
+        
     記録中、右上隅の "**X**" をクリックすると、記録を停止することなく、ウィンドウが非表示になります。 画面の上部に表示される **タスク レコーダー** メニュー ボタンをクリックして、ウィンドウを再度開くことができます。 このアイコンは、記録中にのみ表示されます。 
     
     [![この画像は、記録中にタスク レコーダー ウィンドウを開けられるタスク レコーダー ツールバー ボタンを示しています。](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
@@ -80,17 +78,14 @@ ms.locfileid: "2553203"
 ## <a name="record-a-fleet-management-scenario"></a>フリート管理シナリオの記録
 1.  **タスク レコーダー ウィンドウ**で、**タスクの開始**をクリックします。
 2.  **名前** を [新しい顧客でレンタルの作成] に設定します。 **コメント** フィールドは空白のままにします。
-3.  **OK** をクリックします。 
-[![この画像は、録画中にタスクを開始するために使用するメニューを示しています。](./media/taskrecorderguide-taskrecorderaddingatask.png)](./media/taskrecorderguide-taskrecorderaddingatask.png)
+3.  **OK**をクリックします。 
 4.  タスクは**ステップ リスト**に追加されます。 
-**[![この画像は、タスクが追加された後のステップ リストを示しています。](./media/taskrecorderguide-taskrecordertaskadded.png)](./media/taskrecorderguide-taskrecordertaskadded.png)**
 5.  **ダッシュ ボード &gt; フリート管理 &gt; 予約管理**の順に移動します。
 6.  **集計**タブで**すべての顧客**に移動します。
 7.  アクション ウィンドウで、**新規**をクリックします。
 8.  顧客の名と姓を入力します。
 9.  **保存**をクリックします。
 10. **タスク レコーダー ウィンドウ**で、**タスクの終了**をクリックします。 
-**[![この画像は、いくつかのステップを記録した後のステップ リストの外観を示しています。](./media/taskrecorderguide-taskrecordertaskended.png)](./media/taskrecorderguide-taskrecordertaskended.png)**
 11. ブラウザーの戻るボタンを 2 回クリックして**引当管理**ワークスペースに戻ります。
 12. **タスク レコーダー ウィンドウ**で、**タスクの開始**をクリックします。 タスクに「新規顧客に車両をレンタル」と名前を付けます。 **開始** をクリックします。
 13. **集計**の下の (**+**) **レンタル**をクリックします。
@@ -110,7 +105,8 @@ ms.locfileid: "2553203"
 ### <a name="stop"></a>停止
 
 **停止**は記録セッションを終了するのに使用します。 録音セッションの終了は元に戻すことができないため、**停止**をクリックする前に、録音が完了していることを確認する必要があります。 **停止**をクリックすると、ユーザーはダウンロード オプション画面に移動します。
-[![TaskRecorderGuide-TaskRecorderToolbarStop](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
+
+[![コントロールの停止](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
 
 ### <a name="startend-task"></a>タスクの開始/終了
 
@@ -130,7 +126,7 @@ ms.locfileid: "2553203"
 > [!NOTE]
 > **削除**ボタンの動作は、**メンテナンス モード**で変更されます。 **メンテナンス モード** で保留中/未実行のステップを削除するとき、削除されたステップが実行された場合の位置を通り越して再生が進んだ後は、そのステップを復元することはできません。 たとえば、メンテナンス モードで、3 つの手順を含む記録を読み込みます。 再生を開始する前に、ステップ 2 を削除します。 再生がステップ 3 を実行していない限り、ステップ 2 を復元することができます。 再生を開始した後、再生が手順 2 を「スキップ」 (削除したため) し手順 3 を実行すると、手順 2 を復元することはできません。 これは、ステップ 2 が実行されていないために記録されていないためであり、前の位置の記録に遡って追加することはできないからです。 
 
-[![TaskRecorderGuide-TaskRecorderRecordingControlsDelete](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)
+[![ボタンの削除](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)
 
 
 ### <a name="add-validation"></a>検証の追加
@@ -263,11 +259,11 @@ LCS ライブラリに記録を保存すると、指定されたビジネス プ
 
    タスク レコーダーがステップを挿入するには、正しいページを開いておく必要があります。 新しいステップが発生するページが正しいページです。 タスク レコーダーには、アクティブなページが何であるかを判断するメカニズムがあり、正しいページが開かれていない場合は、機能が無効になります。 
 
-   [![taskguide1](./media/taskguide1.png)](./media/taskguide1.png)
+   [![ステップ機能の挿入](./media/taskguide1.png)](./media/taskguide1.png)
 
    正しいページを開いている場合は、**ステップの挿入** が利用可能になります。
 
-   [![taskguide2](./media/taskguide2-231x300.png)](./media/taskguide2.png)
+   [![適切なページで使用可能なステップの挿入](./media/taskguide2-231x300.png)](./media/taskguide2.png)
 
 2.  **ステップの挿入** をクリックします。
 
@@ -285,7 +281,7 @@ LCS ライブラリに記録を保存すると、指定されたビジネス プ
 1.  移動するステップまたはサブタスク ステップを選択します。 ステップが強調表示されていることを確認します。
 2.  **… &gt; ステップを後に移動**をクリックします。
 
-    [![taskguide3](./media/taskguide3.png)](./media/taskguide3.png)
+    [![ステップを後に移動の例](./media/taskguide3.png)](./media/taskguide3.png)
 
 3.  ステップまたはサブタスク ステップを移動した後に移動するステップまたはサブタスク ステップを選択します。 タスク レコーダーはステップを移動します。
 4.  エンド サブタスク ステップを移動するには、それを選択し、**… &gt;ステップを後に移動**をクリックします。その後、エンド サブタスク ステップ の前に配置するステップを選択します。
@@ -297,7 +293,7 @@ LCS ライブラリに記録を保存すると、指定されたビジネス プ
 
 **記録の名前** および **記録の説明** フィールドを展開して折りたたむことができます。 これらのフィールドが折りたたまれると、詳細なステップが、タスク レコーダーの編集ウィンドウに表示されます。 
 
-[![taskguide4](./media/taskguide4-300x252.png)](./media/taskguide4.png)
+[![記録の名前と説明の展開と折りたたみ](./media/taskguide4-300x252.png)](./media/taskguide4.png)
 
 ## <a name="advanced-recording-options"></a>高度な記録オプション
 
@@ -380,8 +376,6 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 4.  **展開された拡張子の読み込み**をクリックします。
 5.  タスク レコーダー拡張子を含むフォルダーを参照し、フォルダーを選択して、**OK** をクリックします。 内線電話番号を読み込みます。 **有効化**ボックスが、拡張機能をオンにするために選択されるよう確認します。 ローカルでホストされた開発者マシンでは、拡張機能は &lt;ローカル ディスク&gt;FMLabTaskRecorderScreenshot に配置する必要があります。 それ以外の場合、<https://github.com/Microsoft/FMLab> で GitHub からの拡張子を含む FMLab フォルダーをダウンロードします。
 
-    [![この画像は、スクリーンショット拡張子が読み込まれた後の拡張機能の設定ページを示しています。](./media/taskrecorderguide-googlechromeextensionsmenu1.png)](./media/taskrecorderguide-googlechromeextensionsmenu1.png)
-
 6.  Chrome を再起動します。
 
 タスク レコーダーは、クライアントを実行しているタブのスクリーンショットを取得するようになりました。 これらのスクリーンショットについては、記録が再生された後の一定期間のみ参照できます。 プラットフォーム更新 16 以降は、スクリーンショットは再生後 1 週間使用可能です。 それより前は、スクリーンショットは 15 分のみ使用可能です。 スクリーンショットの期限が切れている場合、タスク記録をもう一度再生して再生成できます。  
@@ -401,9 +395,9 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 3.  **タスクの記録をインポート** メニューで、**参照**ボタンを使用して以前にダウンロードした記録ファイルを検索します。
 4.  必要に応じて、生成されたテスト コードをスタートアップ プロジェクトに追加することを選択します。 これには、プロジェクトを含むソリューションがスタートアップ プロジェクトとして設定されている必要があります。 これにより、生成された X++ テストがプロジェクトと同じモデルになります。
 5.  新しいプロジェクトの作成時にプロジェクト モデルを選択します。 生成された X++ テストがこのモデルに配置されます。 モデルは、生成されたテストが正常に構築されるために TestEssentials モデルへの参照を持つ必要があります。
-6.  **インポート** をクリックします。
+6.  **インポート**をクリックします。
 
-[![ImportNewProject\_TaskRecorderGuide](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
+    [![インポート タスク記録 ダイアログ ボックス](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
 
 7.  **新しいプロジェクト**ダイアログ ボックスで、プロジェクトの名前を指定します。
 8.  プロジェクトが作成されると、ユーザーは生成されたコードを開き検査することができます。

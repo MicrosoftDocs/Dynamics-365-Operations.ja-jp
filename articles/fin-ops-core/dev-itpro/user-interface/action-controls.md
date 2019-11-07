@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97c26d5900b6f064e44d2f58556d8d3675e6b7c1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e542625c405da01e27ea06611057e98c1dee1fd5
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191790"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658875"
 ---
 # <a name="action-controls"></a>アクション コントロール
 
@@ -91,14 +91,14 @@ ms.locfileid: "2191790"
 
 | スタイル           | 例                                                                                                                                                      | 説明                                                                          |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| 標準 (自動) | [![11\_コントロール](./media/11_control.png)](./media/11_control.png) | 従来のボタンの外観                                                    |
-| コマンド リンク    | [![12\_コントロール](./media/12_control.png)](./media/12_control.png) | 小さな四角いブロックまたは左の画像と、右のラベルの組み合わせ |
-| リンク            | [![13\_コントロール](./media/13_control.png)](./media/13_control.png) | ハイパーリンクの外観を備えたボタン                                      |
+| 標準 (自動) | [![標準ボタン スタイルの例](./media/11_control.png)](./media/11_control.png) | 従来のボタンの外観                                                    |
+| コマンド リンク    | [![コマンド リンクのボタン スタイルの例](./media/12_control.png)](./media/12_control.png) | 小さな四角いブロックまたは左の画像と、右のラベルの組み合わせ |
+| リンク            | [![リンクのボタン スタイルの例](./media/13_control.png)](./media/13_control.png) | ハイパーリンクの外観を備えたボタン                                      |
 
 ## <a name="standard-action-panes"></a>標準アクション ウィンドウ
 標準アクション ペインは、ページ レベル アクションの主要な場所です。 システムで定義されたアクション (明示的にモデル化されていないが、フレームワークによって自動的に追加されたアクション) と開発者によって定義されたアクション (アクション ウィンドウのタブまたはボタン グループのいずれかで明示的にモデル化されたアクション) の両方で構成されます。 開発者は、アクション ウィンドウの直下にあるボタン グループをモデリングすることによって、最も頻繁に使用されるアクションを標準のアクション ウィンドウに直接レベル上げできます。 ただし、アクション ウィンドウ タブはアクションをグループ化するのに使用され、ポップアップによるアクセスも提供します。 次の図は、システム定義ボタン、開発者定義アクションの 2 つ、アクション ウィンドウのタブのセットを含む標準アクション ウィンドウを示しています。 
-[![1\_コントロール](./media/1_control.png)](./media/1_control.png)次の図は、アクション ペイン タブがクリックされたとき、追加のコマンドが見えるように表示するポップアップを示しています。 
-[![コントロール\_2](./media/control_2.png)](./media/control_2.png)
+[![標準アクション ウィンドウの図](./media/1_control.png)](./media/1_control.png) 次の図は、アクション ウィンドウ タブがクリックされたとき、追加のコマンドが見えるように表示するポップアップを示しています。 
+[![アクション ウィンドウ ポップアップを示す図](./media/control_2.png)](./media/control_2.png)
 
 ### <a name="system-defined-buttons"></a>システム定義ボタン
 
@@ -106,16 +106,16 @@ ms.locfileid: "2191790"
 
 | ボタン                                                                                                                                                              | 氏名                     | 備考                                                               |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|------------------------------------------------------------------------|
-| [![newButton](./media/newbutton.png)](./media/newbutton.png)            | 新規                      | 最初のマスター データ ソースの新しいレコードを作成します。                  |
-| [![deleteButton](./media/deletebutton.png)](./media/deletebutton.png)   | 消去                   | 最初のマスター データ ソースの現在選択されているレコードを削除します。 |
-| [![editButton](./media/editbutton.png)](./media/editbutton.png)         | 編集                     | **編集** モードに切り替えます。                                               |
-| [![filterButton](./media/filterbutton.png)](./media/filterbutton.png)   | フィルターの表示             | **フィルター** ウィンドウを開きます。                                              |
-| [![listButton](./media/listbutton.png)](./media/listbutton.png)         | リストを表示                | 詳細ページのナビゲーション リストの表示/非表示を切り替えます。         |
-| [![attachButton](./media/attachbutton.png)](./media/attachbutton.png)   | 添付                   | ドキュメントを添付します。                                                     |
-| [![attachButton](./media/refreshbutton.png)](./media/refreshbutton.png) | 更新反映                  | ページ上のすべてのデータを更新                                       |
-| [![closeButton](./media/closebutton.png)](./media/closebutton.png)      | 終了                    | ページを閉じます (ブラウザーの**戻る**に相当するボタンをクリック)。 |
-| [![officeButton](./media/officebutton.png)](./media/officebutton.png)   | Microsoft Office で開く | 開くか Microsoft Excel にエクスポートします。 さらなる Office 統合が計画されています。 |
-| [![popoutButton](./media/popoutbutton.png)](./media/popoutbutton.png)   | ポップアウト                   | 新しい動的リンク ウィンドウに現在のフォームを表示します。                 |
+| [![新しいボタン](./media/newbutton.png)](./media/newbutton.png)            | 新規                      | 最初のマスター データ ソースの新しいレコードを作成します。                  |
+| [![ボタンの削除](./media/deletebutton.png)](./media/deletebutton.png)   | Delete                   | 最初のマスター データ ソースの現在選択されているレコードを削除します。 |
+| [![[編集] ボタン](./media/editbutton.png)](./media/editbutton.png)         | 編集                     | **編集** モードに切り替えます。                                               |
+| [![フィルター ボタン](./media/filterbutton.png)](./media/filterbutton.png)   | フィルターの表示             | **フィルター** ウィンドウを開きます。                                              |
+| [![リスト ボタン](./media/listbutton.png)](./media/listbutton.png)         | リストを表示                | 詳細ページのナビゲーション リストの表示/非表示を切り替えます。         |
+| [![添付ボタン](./media/attachbutton.png)](./media/attachbutton.png)   | 添付                   | ドキュメントを添付します。                                                     |
+| [![[更新] ボタン](./media/refreshbutton.png)](./media/refreshbutton.png) | 更新反映                  | ページ上のすべてのデータを更新                                       |
+| [![閉じるボタン](./media/closebutton.png)](./media/closebutton.png)      | 精算                    | ページを閉じます (ブラウザーの**戻る**に相当するボタンをクリック)。 |
+| [![Office ボタンで開く](./media/officebutton.png)](./media/officebutton.png)   | Microsoft Office で開く | 開くか Microsoft Excel にエクスポートします。 さらなる Office 統合が計画されています。 |
+| [![ポップアウト ボタン](./media/popoutbutton.png)](./media/popoutbutton.png)   | ポップアウト                   | 新しい動的リンク ウィンドウに現在のフォームを表示します。                 |
 
 ### <a name="pinning-the-action-pane"></a>アクション ウィンドウの固定
 標準のアクション ペインでは、ユーザーがアクション ペインを必要に応じて「固定」または「固定解除」する機能がサポートされています。 
@@ -154,7 +154,7 @@ ms.locfileid: "2191790"
 ## <a name="keyboard-shortcuts"></a>キーボード ショートカット
 キーボード ショートカットは、いくつかのアクションをトリガーするための別のメカニズムです。 Dynamics AX 2012 のショートカットがある多数のアクションは、Operations でショートカットを保持し続けます。 ただし、ブラウザーの制限のため、特定のアクションをトリガするために使用されるキーの組み合わせが異なる可能性があります。 
 
-次のテーブルに、使用可能な重要なキーボード ショートカットを示します。 現在のキーボード ショートカットの完全な一覧については、[ショートカット キー](../../fin-and-ops/get-started/shortcut-keys.md) を参照してください。 今後、開発者およびエンド ユーザーも他のアクションのショートカットを定義できるようにメカニズムを提供する予定です。
+次のテーブルに、使用可能な重要なキーボード ショートカットを示します。 現在のキーボード ショートカットの完全な一覧については、[ショートカット キー](../../fin-ops/get-started/shortcut-keys.md) を参照してください。 今後、開発者およびエンド ユーザーも他のアクションのショートカットを定義できるようにメカニズムを提供する予定です。
 
 | キーの組み合わせ     | アクション              | コメント                                                                                                                                                                                                                           |
 |---------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

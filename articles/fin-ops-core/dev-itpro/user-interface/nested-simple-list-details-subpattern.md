@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db74a84b6e7088c65c14eaffb47570ac7b97f424
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5a5c9924454f9dc8c69ff17bc7e10d7df08f01e5
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191766"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658833"
 ---
 # <a name="nested-simple-list-and-details-subpattern"></a>入れ子になった簡易リストおよび簡易詳細のサブパターン
 
@@ -40,7 +40,7 @@ ms.locfileid: "2191766"
 -   NSL+D サブパターンの詳細部分は、SL+D パターンよりも単純です。 NSL + D サブパターンはグループのみ使用しますが、SL+D パターンはコンテンツをクイック タブに整理します。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![patternNSLD](./media/patternnsld.png)](./media/patternnsld.png)[](./media/nestedsimplelistanddetails1.png)
+[![簡易リストと詳細パターンのワイヤーフレーム](./media/patternnsld.png)](./media/patternnsld.png)[](./media/nestedsimplelistanddetails1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -116,4 +116,4 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![AX 2012 の例](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
+[![例](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)

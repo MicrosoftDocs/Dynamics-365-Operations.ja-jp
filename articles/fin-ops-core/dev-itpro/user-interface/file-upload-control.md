@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db24168c4c1d051a439f767c6391499f80507392
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0bd0d90d324872304bb1b171910ec5c7c958287a
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183054"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658845"
 ---
 # <a name="file-upload-control"></a>ファイルのアップロード コントロール
 
@@ -35,7 +35,7 @@ ms.locfileid: "2183054"
 
 ファイル アップロード コントロールを使用してユーザーはファイルをアップロードできます。 また、これにより開発者は要件に基づいてアップロード処理を制御し、アップロードされたファイルを管理します。 
 
-[![FileUpload001](./media/fileupload001.png)](./media/fileupload001.png) 
+[![ファイル アップロード コントロールの図](./media/fileupload001.png)](./media/fileupload001.png) 
 
 ファイル アップロード コントロールには 3 つのスタイルがあります。 スタイルを制御するには、**スタイル** プロパティを使用します。
 
@@ -65,7 +65,6 @@ ms.locfileid: "2183054"
 ## <a name="sequence-diagram"></a>シーケンス図
 ファイル アップロード コントロールは、クライアントのファイルとアップロード方法を受け入れ、ファイル サービスに送信します。 ファイル サービスは新しいセッションを開始し、戦略クラスのインスタンスを作成し、**uploadFile** メソッドを呼び出します。 **uploadFile** メソッドがデータ ソース内へのファイルの格納を完了したとき、ファイルのアップロード結果クラスがファイル サービスへを返されます。 このクラスはクライアントに送り返され、後処理に対処する **OnUploadCompleted** イベントをトリガーする可能性があります。 
 
-[![FileUploadControlUsageAndDesign1](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
-
+[![ファイル アップロード シーケンス ダイアグラム](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
 

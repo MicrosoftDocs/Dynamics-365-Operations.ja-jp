@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57722ce9c8339922385da42737fde5897d8d6f61
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1eb2e4552dfc1f06f17c1aa54a2b04675917f1e2
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191611"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627575"
 ---
 # <a name="q-classes"></a>Q クラス
 
@@ -165,6 +165,7 @@ ms.locfileid: "2191611"
 | public void addContains(str containsValue, \[boolean prefixSearch\])                                                                                                   |                                                                                                                                           |
 | public void resetValidTimeStateQueryType()                                                                                                                             |                                                                                                                                           |
 | public void validTimeStateDateTimeRange(\[DateTime fromDateTime\], \[DateTime toDateTime\])                                                                            |                                                                                                                                           |
+| public boolean skipAutoOrderBy(\[boolean value\])                                                                                                                           | Order By フィールドが明示的に指定されていない場合、Order By 句の自動生成をスキップすることができます。                                             |
 
 ### <a name="method-addbasequery"></a>メソッド addBaseQuery
 
@@ -4282,7 +4283,14 @@ sourceCursor
 
 isForward  
 
+### <a name="method-skipautoorderby"></a>メソッド skipAutoOrderBy
 
-
-
-
+    Specifies whether an Order By clause will be generated, in case no Order By field was specified.
+    public boolean skipAutoOrderBy([boolean value])
+    
+#### <a name="parameters"></a>パラメーター
+金額
+#### <a name="return-value"></a>戻り値
+パラメーターが指定されていない場合は現在の値、パラメーターが指定されている場合は新しい値です。
+#### <a name="remarks"></a>備考
+既定では SkipAutoOrderBy は false で、プラットフォーム更新プログラム 31 以降で使用可能です。

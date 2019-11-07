@@ -3,7 +3,7 @@ title: Dynamics Service Engineering チームへのサービス要求の送信
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics サービス エンジニアリング チームにサービス要求を直接送信する方法について説明します。
 author: manalidongre
 manager: AnnBe
-ms.date: 06/29/2019
+ms.date: 10/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 4869532a99d8bbab8e433cf4dc13ea249983ef62
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e23d37a14df4fc65d317748c7679e6d871dc0114
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183187"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570545"
 ---
 # <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 
@@ -78,7 +78,7 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
 1. **作業項目**ページの、**サービス要求**タブで、**追加**を選択します。
 2. **要求の作成**ダイアログ ボックスで、作成するサービス要求のタイプを選択します。 ページのオプションは、選択した特定のタイプの要求を反映します。
 
-   - **サンドボックス ポイントインタイム復元要求** - *非実稼働* データベースを特定の時点に復元するには、この要求タイプを選択します。 詳細については、[ポイントインタイム復元要求](../database/request-point-in-time-restore.md) を参照してください。
+   - **サンドボックス ポイントインタイム復元要求** - *非実稼働* データベースを特定の時点に復元するには、この要求タイプを選択します。 詳細については、[データベース移動操作ホーム ページ](../database/dbmovement-operations.md) を参照してください。
 
         > [!NOTE]
         > 切替フェーズで *実稼働* データベースを以前の特定時点に復元する必要がある場合は、**実稼働ポイントインタイム復元要求** タイプを選択してください。 すでに運用中の運用データベースを復元する必要がある場合は、LCS を介してサポート チケットを提出します。
@@ -88,7 +88,7 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
         > [!NOTE]
         > 切替フェーズでサンドボックス環境から実稼働環境にデータベースをリフレッシュする必要がある場合は、**サンドボックスから実稼働** タイプを選択します。
 
-    - **サンドボックスから生産** - 切り替えフェーズで、コンフィギュレーション データの実稼働環境へのデータベース更新を実行します。 詳細については、[Finance and Operations アプリ データベースを SQL Server から Azure SQL データベース環境にコピー](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database) の "データベースのコピーにサービス要求を送信する" セクションを参照してください。
+    - **サンドボックスから生産** - 切り替えフェーズで、コンフィギュレーション データの実稼働環境へのデータベース更新を実行します。 詳細については、[データベース移動操作ホーム ページ](../database/dbmovement-operations.md) を参照してください。
 
    - **その他の要求** – **その他の要求** タイプをここで説明されているとおりに使用する必要があります。 DSE チームに明確ではない方法でリクエストを言葉で言うと、チームは説明を求めるコメントを入力し、リクエストが遅れます。 下記に記載されていないリクエストに対して**その他の要求**タイプを使用すると、リクエストは拒否されます。 DSE チームが次のアクションのいずれかを実行することを要求するには、この要求タイプを選択します。
 

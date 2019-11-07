@@ -3,7 +3,7 @@ title: セキュリティ アークテクチャ
 description: このトピックでは、Finance and Operations のセキュリティ アーキテクチャの概要を示します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/30/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,22 +18,21 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aea02328d187a1d0804871f59ef46a3ead7bd4f9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c0d3d06331e7ee0f4be41eaf4cd77e3b64ab5d76
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191794"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658851"
 ---
 # <a name="security-architecture"></a>セキュリティ アーキテクチャ
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance and Operations のセキュリティ アーキテクチャの概要を示します。
 
 セキュリティ アーキテクチャを理解すると、業務の要件に合わせてセキュリティを容易にカスタマイズできます。 次の図は、セキュリティ アーキテクチャの高レベルな概要を示しています。 
 
-[![security-architecture](./media/security-architecture.png)](./media/security-architecture.png)
+[![セキュリティ アークテクチャの概要を示す図](./media/security-architecture.png)](./media/security-architecture.png)
 
 ## <a name="authentication"></a>認証
 既定では、ユーザー権利を持つ認証済みユーザーのみが接続を確立できます。 

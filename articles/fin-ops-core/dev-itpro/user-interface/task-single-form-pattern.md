@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b50a93ec4c4d0d09ea4c38f0feaa339fad0ea775
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: acd66322b3ad861911a9d936d7a9cf48e76c6f82
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191753"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658824"
 ---
 # <a name="task-single-form-pattern"></a>タスク シングルのフォーム パターン
 
@@ -36,7 +36,7 @@ ms.locfileid: "2191753"
 このタイプのフォームは、データが複数のレコードを持つ単一のデータ ソースから発生したとユーザーが認識することを表す場合に使用されました。 新しいフォームの推奨パターンではありません。 このパターンを使用する新しいフォームを作成する必要はありません。 このパターンは、レガシー フォームの構造と安定性を提供し、より現代的なフォーム パターンへの移行パスも提供します。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![ワイヤーフレーム](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)
+[![タスク シングルのフォームのワイヤーフレーム](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -115,4 +115,4 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![AX 2012 視覚例](./media/tasksingle4.png)](./media/tasksingle4.png)
+[![前のバージョンのビジュアルの例](./media/tasksingle4.png)](./media/tasksingle4.png)

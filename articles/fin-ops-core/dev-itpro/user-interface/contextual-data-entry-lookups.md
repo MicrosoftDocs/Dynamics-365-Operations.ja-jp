@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df0b2ba273df22f71008de487cb2df63a0a43f9a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4c10ddb84d54ece70c94cbda64c859b623db499e
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191784"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578297"
 ---
 # <a name="contextual-data-entry-for-lookups"></a>ルックアップのコンテキスト データ入力
 
@@ -35,7 +35,7 @@ ms.locfileid: "2191784"
 
 データ入力のシナリオでは、そのエンティティが番号順序などの統合キーによって正式に識別される場合、ユーザーは詳細な内容を示す属性や自然言語属性でエンティティを識別しようとすることが一般的です。 ユーザーは、通常、Sales Order の作成時に**顧客口座**の**アカウント ID** の代わりに**アカウント名**を入力しようとします。 これは、顧客とのほとんどのやり取りは、何らかの統合識別子の代わりに実際の名前を使用して行われるためです。 ただし、**顧客 ID** コントロールの基礎となる外部キーが、合成キー (数字のシーケンス) であるフィールドに関連するため、**アカウント名**を入力しようとすると失敗します。AX 2012 (およびそれ以前) は、入力された値を常に直接検証しようとします。 したがって、正しい **アカウント ID** を特定するために、**顧客アカウント** コントロールのルックアップを開き、**アカウント名** 列をフィルタリングするなど、**アカウント ID** がユーザーに知られていない場合、ユーザーは何らかのタイプの検索ステップを実行することを余儀なくされます (次の画像を参照)。 
 
-[![HowToContextualLookups(3)](./media/howtocontextuallookups-3.png)](./media/howtocontextuallookups-3.png) 
+[![正しいアカウント ID を識別するためのアカウント名でのフィルタリングの例](./media/howtocontextuallookups-3.png)](./media/howtocontextuallookups-3.png) 
 
 このユーザー エクスペリエンスは最適ではないため、データ入力の効率性と生産性によって対処されています。 このプラットフォームは、コンテキスト データ入力の初期サポートを追加します。コンテキスト データ入力では、システムは、ユーザーが入力したデータがキー フィールドであるか、あるいはその他のより記述的またはよく分かっているフィールドであるかという状況を理解し、それを適切に処理することを自動的に試みます。 **このドキュメントの残りの部分では、これらのタイプのフィールドをそれぞれ ID (統合) フィールドと NAME (内容を示す) フィールドと総称して参照します。**
 

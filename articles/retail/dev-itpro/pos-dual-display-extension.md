@@ -16,18 +16,18 @@ ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: eb527f813089193c00d5aa7eec9988de214e50c8
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: bd256fa633a41ab3b646b9c370f80c1a6e8173c0
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025535"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653264"
 ---
 # <a name="extend-the-point-of-sale-pos-dual-display-view"></a>販売時点管理 (POS) デュアル ディスプレイ ビューの拡張
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、ユーザー情報が表示されるように、販売時点管理 (POS) デュアル ディスプレイ ビューを拡張する方法について説明します。 このトピックでは、Microsoft Dynamics 365 for Finance and Operations 7.2 または Microsoft Dynamics 365 Retail 7.2 および KB 4091080 とそれ以降のバージョンが適用されます。
+このトピックでは、ユーザー情報が表示されるように、販売時点管理 (POS) デュアル ディスプレイ ビューを拡張する方法について説明します。 このトピックは、Microsoft Dynamics 365 for Finance and Operations 7.2 または Microsoft Dynamics 365 Retail 7.2 (KB 4091080) とそれ以降のバージョンに適用されます。
 
 POS デュアル ディスプレイ ビューを拡張するには、カスタム コントロールを追加します。 カスタム コントロールでは、カスタム情報を表示する画像、POS データ リスト、ラベルなどを追加できます。
 
@@ -50,7 +50,7 @@ POS デュアル ディスプレイ ビューにカスタム コントロール�
 
 ## <a name="configure-the-hardware-profile-to-enable-dual-display"></a>デュアル ディスプレイを有効にするハードウェア プロファイルをコンフィギュレーションします
 
-1. Retail または Finance and Operations へのサインイン
+1. クライアントにサイン インします。
 2. **小売 \> チャネル設定 \> POS 設定 \> POS プロファイル \> ハードウェア プロファイル**の順に移動します。
 3. レジスタにリンクしているハードウェア プロファイルを選択します。
 4. **デュアル ディスプレイ**タブで、**デュアル ディスプレイの使用**オプションを**はい**に設定します。

@@ -3,7 +3,7 @@ title: 電子メールのコンフィギュレーションと送信
 description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 07/24/2019
+ms.date: 10/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 372ed3717ab4850a2bc17e6a5965de7fe6133377
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 18ff662141024ae4aae3261512c3164df2630bfe
+ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249714"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2572628"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
@@ -260,7 +260,8 @@ SysEmail フレームワークを介して有効になっている電子メー�
 4. Office 365 管理センターで、電子メールの送信に使用されるすべてのユーザー メール アカウントに、構成された SMTP アカウントに対する **Send As** と **Send On Behalf Of** アクセス許可があることを確認します。 詳細については、[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)を参照してください。
 5. 有効かつログインできることを確認するために、すべてのユーザー メールボックスにログインします。
 6. **システム管理** \> **設定** \> **電子メール** \> **電子メールのパラメータ** \> **テスト電子メール** を使用してテスト電子メールを送信します。
-7. SMTP を介して電子メールを送信すると問題が発生する場合は、[SMTPer.net](https://www.smtper.net/) のようなツールに SMTP アカウント情報を入力して SMTP サーバーとアカウントが有効で正しく機能していることを確認します。
+7. SMTP 設定を別の環境から移行した場合は、パスワード フィールドをクリアしてパスワードを再入力し、フィールドの暗号化が保存された値に悪影響を与えていないことを確認します。
+8. SMTP を介して電子メールを送信すると問題が発生する場合は、[SMTPer.net](https://www.smtper.net/) のようなツールに SMTP アカウント情報を入力して SMTP サーバーとアカウントが有効で正しく機能していることを確認します。
 
 ## <a name="troubleshoot-the-exchange-mail-provider"></a>Exchange メール プロバイダーのトラブルシューティング
 
