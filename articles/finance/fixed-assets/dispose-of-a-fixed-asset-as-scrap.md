@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: de105e061712540fc8e3d720a65c029f865b8948
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 42eaa3df5ab09278ed96506d17e1b42d4fc2a9e1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187294"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570267"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>固定資産の仕損としての処分
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、仕損として処分された固定資産のトランザクションを除去するプロセスについて説明します。 削除できるトランザクションタイプには、資産の取得、減価償却トランザクションなどの固定資産トランザクションが含まれます。 これらのトランザクションが削除されると、取得原価調整、減価償却調整、再評価、評価増および評価減の勘定など、貸借対照表の勘定に影響を与えます。
 

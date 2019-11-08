@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a260be0f8659106907b26bf69bee3b33b09d0c24
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181338"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578221"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>生成された ER レポートのトレース結果およびベースライン値との比較における改善
 
@@ -71,9 +71,6 @@ ms.locfileid: "2181338"
 5. **ID を入力**フィールドで、**1** と入力します。
 6. **ベースライン ファイルの作成**オプションを**はい**に設定します。
 7. **OK** を選択します。
-
-    ![電子レポート パラメーター ダイアログ ボックス](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG " 電子レポート パラメーター ダイアログ ボックスのスクリーンショット")
-
 8. **ベースライン**を選択します。
 
     ![電子申告形式のベースライン ページ](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "電子申告形式のベースライン ページのスクリーンショット")
@@ -140,9 +137,6 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 
 1. **置換**クイックタブの**構成**ページで、**コンポーネントの選択**を選択します。
 2. 形式のコンポーネント ツリーで、**出力**を展開して、**出力\\ドキュメント**を展開し、**出力\\ドキュメント\\ProcessingDateTime** のチェック ボックスを選択します。
-
-    ![コンポーネント ダイアログ ボックスの選択](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "コンポーネント ダイアログ ボックスの選択のスクリーンショット")
-
 3. **OK** を選択します。
 
 ![電子申告形式のベースライン ページ](media/GER-BaselineSample-AddBaseline4.PNG "電子申告形式のベースライン ページのスクリーンショット")
@@ -162,19 +156,14 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 1. **構成**ページのアクション ウィンドウの**構成**タブで、**ユーザー パラメーター**を選択します。
 2. **ベースラインの警告を非表示にする**オプションを**はい**に設定して、**OK** を選択します。
 
-![ユーザー パラメーター ダイアログ ボックス](media/GER-BaselineSample-ERUserParameters1.png "ユーザー パラメーター ダイアログ ボックスのスクリーンショット")
-
 ### <a name="review-the-generated-baseline-file"></a>生成したベースライン ファイルを確認します。
 
 1. **組織管理** \> **電子申告** \> **構成**の順に移動します。
 2. **ベースライン**を選択します。
 3. **添付ファイル**を選択します。
-
-    ![添付ファイル ページ](media/GER-BaselineSample-AttachedBaselineFile.PNG "添付ファイル ページのスクリーンショット")
-
     > [!NOTE]
     > 生成されるファイルには、形式のバインドではなく、追加したベースラインで構成されたバインドからの処理日時テキスト (**"#"**) が含まれます。
-
+    
 4. **添付ファイル** ページを閉じます。
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>デザインされた ER 形式を実行し、ログを確認して結果を分析する

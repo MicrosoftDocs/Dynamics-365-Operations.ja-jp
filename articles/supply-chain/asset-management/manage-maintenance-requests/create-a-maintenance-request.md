@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 7fc9ec2f6a9a8a11d824e4b5c13d5aa173541454
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024640"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571924"
 ---
 # <a name="create-maintenance-requests"></a>メンテナンス要求の作成
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 メンテナンス要求は、メンテナンス作業者または生産作業者が機器の修理が必要であることを発見したが、修理作業をすぐに実行できない場合に使用できます。
 
@@ -55,7 +55,7 @@ ms.locfileid: "2024640"
 11. **メモ** フィールドに、必要な追加のメモを入力します。
 12. **OK** を選択します。
 
-![図 1](media/03-manage-maintenance-requests.png)
+![メンテナンス要求の作成](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>メンテナンス要求の後続プロセス
 
@@ -70,7 +70,7 @@ ms.locfileid: "2024640"
 - メンテナンス作業タイプを選択し、この情報が関連する場合は、関連するメンテナンス作業バリアントおよび作業トレードを選択します。
 - **緯度**フィールドと**経度**フィールドに地理座標を入力します。 メンテナンス要求に追加された座標は、関連する作業指示書に自動的に転送されます。 
 
-![図 2](media/04-manage-maintenance-requests.png)
+![メンテナンス要求の更新](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > メンテナンス要求の作成時に資産を選択した場合は、資産に 1 つのエラーを追加できます。 メンテナンス要求を作成したら、必要に応じてさらにエラーを追加できます。 エラーを追加するには、**すべてのメンテナンス要求**ページの**資産エラー**を選択します。

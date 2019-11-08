@@ -3,7 +3,7 @@ title: マスター プランのセットアップ ウィザード
 description: このトピックでは、マスター プランの設定に使用される各種重要な戦略およびパラメーターについて説明します。
 author: t-benebo
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 0310ac55d35421d8ad9080739fc5a393660ce520
-ms.sourcegitcommit: 261dc882710f29303b14f9be8a26d71d85d25345
+ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
+ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "1999537"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "2635129"
 ---
 # <a name="master-planning-setup-wizard"></a>マスター プランのセットアップ ウィザード
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、**マスター プランのセットアップ ウィザード**に関するガイドを提供します。 パラメーターの提案が計算される方法について説明し、また異なる会社がマスター プラン パラメータ候補の計算方法について説明し、ビジネス ニーズに基づいてさまざまな企業がビジネス ニーズに基づいてマスター プランを設定する方法を示す例も示します。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+
+[Dynamics 365 Supply Chain Management のマスター プランのセットアップ ウィザード](https://youtu.be/c-e6n-8rZb4) ビデオ (上記参照) は、YouTube で入手可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+
 
 ## <a name="specific-requirements-of-your-company"></a>会社の特定の要件
 

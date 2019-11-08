@@ -3,7 +3,7 @@ title: 消費税の概要
 description: このトピックは、売上税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2741eb51f93f2f0b627dd8676629077b6df0f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
+ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186466"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2666833"
 ---
 # <a name="sales-tax-overview"></a>消費税の概要
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 このトピックは、売上税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。
 
@@ -94,5 +92,8 @@ ms.locfileid: "2186466"
 
 ただし、条件付売上税を使用する場合は、7 月 30 日に顧客からの支払を受け取るときに税務当局に対して決済します。
 
+### <a name="postdated-check"></a>先日付小切手
+
+支払方法として先日付小切手を使用する場合、支払が作成されても、銀行口座はクリアされません。 一部の国では、銀行での支払が精算されると、その VAT が「現金化」負債になります。この場合、先日付小切手が決済されます。 この機能を有効にするには、**先日付小切手が引き落とされるときに、条件付け税を現金化**を選択します。これは**現金および銀行管理 > 設定 > 現金および銀行管理パラメーター > 条件付税**にあります。
 
 詳細については、「[源泉徴収税の設定](tasks/set-up-withholding-tax.md)」を参照してください。

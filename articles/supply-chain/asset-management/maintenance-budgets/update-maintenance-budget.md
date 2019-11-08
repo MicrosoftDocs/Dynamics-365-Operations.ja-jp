@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 486782968816cc585d9cf2d753f32e82f85e4f7e
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 8f3b771319eeb602a371500fdc69c68f88afe341
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874788"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571740"
 ---
 # <a name="update-maintenance-budgets"></a>メンテナンス予算の更新
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 **メンテナンス予算明細行** ページには、**メンテナンス予算**ページで選択した予算に対して作成されたすべての予算明細行が表示されます。 詳細については、[メンテナンス予算の作成](create-maintenance-budget.md)を参照してください。メンテナンス予算が承認されるまで、メンテナンス予算明細行を再計算および調整できます。 予算期間が過ぎ、原価が資産管理に転記された後は、実際原価で予算明細行を更新することもできます。
 

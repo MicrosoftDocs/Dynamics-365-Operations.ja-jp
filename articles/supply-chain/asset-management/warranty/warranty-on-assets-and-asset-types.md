@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b13f8aba7e1d2448495f97a4772eb573e08c025
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 6e69b471af0853159ba807af5f39db64dbbb04f8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874604"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569711"
 ---
-# <a name="warranty-on-assets-and-asset-types"></a>資産および資産タイプに対する保証
+# <a name="warranties-on-assets-and-asset-types"></a>資産および資産タイプに対する保証
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 このトピックでは、資産管理で資産および資産タイプの保証を設定する方法について説明します。
@@ -50,7 +50,7 @@ ms.locfileid: "1874604"
     > [!IMPORTANT]
     > ワーク オーダーの**保証開始日**フィールドで日付が選択されている場合、保証はその日付のワーク オーダーに対して有効になります。 ワーク オーダーを作成すると、**保証開始日**フィールドは自動的に作成日に設定されます。 ただし、この日付は、保証契約の開始日などに変更することができます。
     >
-    > ![図 1](media/02-warranty.png)
+    > ![ワーク オーダー ページ](media/02-warranty.png)
 
 > [!NOTE]
 > 仕入先保証の対象となる資産のワーク オーダーを作成する場合、そのワーク オーダーの期間中に予定された開始日があると、保証契約に関する通知が表示されます。 その後、必要に応じて、ワーク オーダーをキャンセルできます。

@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 366dc2be6e35098dba4b26a34bb75a84913549f5
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8f2e95e74bbc8d78ed5d970f29b61150a45c6740
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008573"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551567"
 ---
-# <a name="source-candidates-with-linkedin-recruiter"></a>LinkedIn Recruiter を使用した候補者のソーシング
+# <a name="source-candidates-with-linkedin-recruiter-in-microsoft-dynamics-365-talent---attract"></a>Microsoft Dynamics 365 Talent - Attract の LinkedIn Recruiter を使用した候補者のソーシング
 [!include[banner](../includes/banner.md)]
 
 LinkedIn は世界最大のオンライン プロフェッショナル ネットワークで、世界の最高の人材へのアクセスを提供します。 Microsoft Dynamics 365 Talent: Attract では LinkedIn から直接候補者をソース化できます。 したがって、空いている職位を埋めるために必要な人材を見つけるのはこれまで以上に簡単です。 Attract を通じて LinkedIn との接続を設定した後、ワンクリックで職位の LinkedIn 候補者を表示し、Attract にエクスポートできます。

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0e6306698d351d33cae627e3741ad9a2eb6d893
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 30145a56de4f7e3dce039968791d2fc9b960077f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783417"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571533"
 ---
 # <a name="move-replace-and-install-assets"></a>資産の移動、置換、およびインストール
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 このトピックでは、資産管理で資産を移動、置換、およびインストールする方法について説明します。 他の資産との関係を持たない個別資産を作成することも、親資産 (最上位レベルの資産) と関連する子資産 (下位資産) を含む資産構造を作成することもできます。 資産管理では、資産の場所を移動および変更する 3 つのアプローチがあります。
 

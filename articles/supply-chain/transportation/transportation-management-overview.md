@@ -1,6 +1,6 @@
 ---
 title: 輸送管理の概要
-description: このトピックでは、Finance and Operations の配送管理機能の概要が示されます。
+description: このトピックでは、Supply Chain Management の配送管理機能の概要が示されます。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d976ec4d3c294f0ce8e9732b21b9a429f1e47315
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: fa59a8e6e4744c776ec0e1dc84b1f004dbd796f6
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2027064"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653582"
 ---
 # <a name="transportation-management-overview"></a>輸送管理の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations の配送管理機能の概要が示されます。
+このトピックでは、Supply Chain Management の配送管理機能の概要が示されます。
 
 輸送管理では、会社の配送の送受信オーダーの仕入先とルート指定の解決策の識別を使用できるようになります。 たとえば、出荷用の最速のルートまたは最低費用レートを識別できます。 次の表では、輸送管理を使用する主要なシナリオについて説明します。
 
@@ -67,23 +67,23 @@ ms.locfileid: "2027064"
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-finance-and-operations"></a>Finance および Operations の配送計画
+## <a name="planning-transportation-in-supply-chain-management"></a>Supply Chain Management の配送計画
 輸送管理では、 輸送計画は注文またはその注文に基づいて作成された出荷に基づきます。 出荷は特定の時点で常に存在しますが、輸送計画に必要ではありません。 移動オーダーは出荷シナリオの一部で、販売注文と共に計画できます。 
 
 ![積荷図面](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>入庫輸送
-仕入先から品目を発注し、その品目を倉庫に配達する必要がある場合は、品目の輸送を自分で手配することができます。 入庫積荷の輸送および入庫の計画に、Finance および Operations を使用できます。 次の図は、入庫積荷用の輸送を計画するための業務プロセス フローを示します。 
+仕入先から品目を発注し、その品目を倉庫に配達する必要がある場合は、品目の輸送を自分で手配することができます。 入庫積荷の輸送および入庫の計画に、Supply Chain Management を使用できます。 次の図は、入庫積荷用の輸送を計画するための業務プロセス フローを示します。 
 
 ![積荷の入庫輸送の業務プロセス フロー](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>出庫輸送
-会社の倉庫から顧客に特定の品目を出荷する場合は、出荷積荷を計画および処理できます。 出庫積荷の輸送および出荷の計画に、Finance および Operations を使用できます。 次の図は、出荷用の出荷積荷を計画および処理するための業務プロセス フローを示します。 
+会社の倉庫から顧客に特定の品目を出荷する場合は、出荷積荷を計画および処理できます。 出庫積荷の輸送および出荷の計画に、Supply Chain Management を使用できます。 次の図は、出荷用の出荷積荷を計画および処理するための業務プロセス フローを示します。 
 
 ![出庫積荷の計画および処理](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>積荷構築
-Finance および Operations には、容積ベースの積荷構築戦略という積荷構築戦略が用意されています。 この戦略を使用すると、積荷テンプレートの高さと重量に対して指定される最大値を使用できるし、または新しい値を入力して設定を上書きできます。 この戦略を使用するには、**積荷構築ワークベンチ** ページの **設定** クイック タブの **積荷構築戦略** フィールドで戦略を選択します。 また、アプリケーション オブジェクト ツリー (AOT) で新しいクラスを作成して、独自の積荷構築戦略を追加できます。
+Supply Chain Management には、容積ベースの積荷構築戦略という積荷構築戦略が用意されています。 この戦略を使用すると、積荷テンプレートの高さと重量に対して指定される最大値を使用できるし、または新しい値を入力して設定を上書きできます。 この戦略を使用するには、**積荷構築ワークベンチ** ページの **設定** クイック タブの **積荷構築戦略** フィールドで戦略を選択します。 また、アプリケーション オブジェクト ツリー (AOT) で新しいクラスを作成して、独自の積荷構築戦略を追加できます。
 
 
 

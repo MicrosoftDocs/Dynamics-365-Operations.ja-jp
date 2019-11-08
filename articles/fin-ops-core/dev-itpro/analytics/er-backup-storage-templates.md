@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8b4e783f79b02c77a27fc59c2f4be8a192f2f476
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248703"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553094"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER テンプレートのバックアップストレージ
 
@@ -33,7 +33,7 @@ ms.locfileid: "2248703"
 
 ER ソリューションの一部として、構成された各形式を公開できます。 各 ER ソリューションは、Finance and Operations の 1 つのインスタンスからエクスポートして、別のインスタンスにインポートできます。
 
-ER フレームワークでは、[ドキュメント管理フレームワーク](../../fin-and-ops/organization-administration/configure-document-management.md)を使用して、現在の Finance and Operations インスタンスに必要なテンプレートを保持します。 ER フレームワークの設定に応じて、Microsoft Azure Blob ストレージまたは Microsoft SharePoint フォルダをテンプレートの物理的なプライマリ ストレージの場所として選択できます。 詳細については、[ER フレームワークの構成](electronic-reporting-er-configure-parameters.md)を参照してください。DocuValue テーブルには、各テンプレートの個々のレコードが保持されます。 各レコードの **AccessInformation** フィールドには、構成されている保管場所にあるテンプレートファイルのパスが格納されます。
+ER フレームワークでは、[ドキュメント管理フレームワーク](../../fin-ops/organization-administration/configure-document-management.md)を使用して、現在の Finance and Operations インスタンスに必要なテンプレートを保持します。 ER フレームワークの設定に応じて、Microsoft Azure Blob ストレージまたは Microsoft SharePoint フォルダをテンプレートの物理的なプライマリ ストレージの場所として選択できます。 詳細については、[ER フレームワークの構成](electronic-reporting-er-configure-parameters.md)を参照してください。DocuValue テーブルには、各テンプレートの個々のレコードが保持されます。 各レコードの **AccessInformation** フィールドには、構成されている保管場所にあるテンプレートファイルのパスが格納されます。
 
 Finance and Operations インスタンスを管理する場合、現在のインスタンスを別の場所に移行する決定をする場合があります。 たとえば、本番インスタンスを新しいサンドボックス環境に移行するかもしれません。 テンプレートを Blob ストレージに保存するように ER フレームワークを構成した場合、新しいサンドボックス環境の DocuValue テーブルは、本番環境の Blob ストレージのインスタンスを参照します。 ただし、移行プロセスでは、Blob ストレージ内のアーティファクトの移行をサポートしていないため、このインスタンスにサンドボックス環境からアクセスすることはできません。 したがって、テンプレートを使用して ER 形式を実行してビジネスドキュメントを生成すると、例外が発生し、テンプレートが欠落していることについて通知されます。 また、ER クリーンアップ ツールを使用して、テンプレートを含む ER 形式の構成を削除してから再インポートする方法も紹介しています。 ER 形式の構成が複数存在する場合があるため、このプロセスには時間がかかる場合があります。
 

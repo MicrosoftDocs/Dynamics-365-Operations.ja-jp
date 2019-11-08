@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 4a7c57452b2f639b1f1b76bc79959c620c58ace1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922186"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571303"
 ---
 # <a name="maintenance-downtime"></a>メンテナンス ダウンタイム
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 メンテナンス ダウンタイムは、特定の期間、特定の資産に対してメンテナンス ジョブを実行するために必要な能力の概要を取得するために使用されます。 たとえば、生産サイト 02 の生産 Hall 29-A の生産ライン 10 に対して、メンテナンス ダウンタイム登録を作成することができます。 メンテナンス ダウンタイムの登録には、メンテナンスによる停止に関係する資産が生産を行えなくなる期間を示す開始時刻と終了時刻が含まれます。
 

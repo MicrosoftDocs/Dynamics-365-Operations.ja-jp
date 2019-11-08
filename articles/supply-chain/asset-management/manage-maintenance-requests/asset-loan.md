@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8680241b1300aceda3280893982a1eff3d2e09e0
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: 9a365fb5b1e0126b9de56bcc84a14f2352208d4f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847485"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571717"
 ---
 # <a name="asset-loans"></a>資産ローン
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 会社が内部の場所または顧客から、修理またはメンテナンス ジョブ用の資産を受け取り、それらの場所または顧客に資産を一時的に貸与する場合、資産管理は資産ローンを追跡できます。
 
@@ -47,7 +47,7 @@ ms.locfileid: "1847485"
 
 他の場所または顧客に貸与したすべての資産の一覧を表示するには、**資産管理** \> **共通** \> **資産ローン** \> **すべての資産ローン**を選択します。 資産に対して**終了**チェック ボックスがオンの場合、資産は会社に返却済として登録されています。
 
-![図 1](media/06-manage-maintenance-requests.png)
+![メンテナンス要求の管理](media/06-manage-maintenance-requests.png)
 
 **有効な資産ローン** ページで、会社に返却されていないすべてのローン資産の一覧を表示できます。
 

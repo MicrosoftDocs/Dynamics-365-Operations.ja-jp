@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f38253317ed8f06318fc501511ca5263a614e20
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 5c2a4052f9beca554932d7f2547288e02358b603
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783401"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571510"
 ---
 # <a name="multi-level-assets"></a>複数レベル資産
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 このトピックでは、複数レベル資産の作成および削除する方法について説明します。 階層ツリー構造内で資産および関連する下位資産を作成できます。 この方法で、資産間の依存関係を表示できます。 メンテナンス ジョブは、ツリー構造のすべてのレベルに関連付けることができます。 統計は、個々のレベルまたはすべての下位資産レベルの合計として作成することもできます。
 

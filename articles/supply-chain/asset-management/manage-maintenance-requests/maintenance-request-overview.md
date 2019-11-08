@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 56d4abee451e6e22b9b9cc2fd36a13648202e7df
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: b19a92924d73847d9d2c09cd0ed111a9cbfdccbf
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847439"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571648"
 ---
 # <a name="maintenance-requests"></a>メンテナンス要求
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 メンテナンス要求は、ワーク オーダーを作成せずに、資産がメンテナンスまたは修復作業を必要とする可能性があることをマネージャーまたはプランナーに通知するために作成されたメモまたは申告です。 メンテナンス要求の内容が有効と見なされる場合は、メンテナンス要求に基づいてワーク オーダーを作成することができます。
 
@@ -45,7 +45,7 @@ ms.locfileid: "1847439"
 
 メンテナンス要求を表示するには、**資産管理**\>**共通**\>**メンテンナンス要求**\>**すべてのメンテナンス要求**、**有効なメンテナンス要求**、または**個人用の機能的な場所のメンテナンス要求**を選択します。 各リスト ページには、メンテナンス要求に関連する情報の一部が表示されます。
 
-![図 1](media/01-manage-maintenance-requests.png)
+![メンテナンス要求の表示](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > **個人用の機能的な場所のメンテナンス要求**リスト ページを使用して、作業者として関連付けられている機能的な場所、またはその機能的な場所に導入されている資産を含むメンテナンス要求のリストを表示します。 (メンテナンス作業者の機能的な場所を設定する方法については、[メンテナンス作業者および作業者グループ](../setup-for-objects/workers-and-worker-groups.md) を参照してください。)
@@ -54,7 +54,7 @@ ms.locfileid: "1847439"
 
 レコードの詳細ビューを開くには、**すべてのメンテナンス要求**リスト ページのグリッド ビューで、**メンテナンス要求**列のリンクを選択します。
 
-![図 2](media/02-manage-maintenance-requests.png)
+![メンテナンス要求の詳細の表示](media/02-manage-maintenance-requests.png)
 
 アクション ウィンドウのボタンはタブで整理されます。 次のテーブルで、資産管理に関連するボタンについて簡単に説明します。
 

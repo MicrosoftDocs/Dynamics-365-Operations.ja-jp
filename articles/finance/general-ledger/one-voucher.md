@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 2b755dcfbcdf41ada0302fc04f527ce7c309f4bb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186397"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553190"
 ---
 # <a name="one-voucher"></a>1 つの伝票
 
@@ -51,7 +51,7 @@ ms.locfileid: "2186397"
 
 ## <a name="issues-with-one-voucher"></a>1 つの伝票に関する問題
 
-1 つの伝票機能により、決済、税計算、トランザクションの取消、補助元帳の総勘定元帳への調整、財務報告などの間に問題が発生します。 たとえば、決済時に発生する可能性がある問題についての詳細については、[複数の顧客または仕入先レコードを持つ単一伝票](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records)を参照してください。 正しく作業しレポートするために、これらのプロセスとレポートにはトランザクションの詳細が必要です。 組織の設定に基づいて、いくつかのシナリオが正しく機能する場合もありますが、1 つの伝票に複数のトランザクションが入力された場合によく問題が発生します。
+1 つの伝票機能により、決済、税計算、トランザクションの取消、補助元帳の総勘定元帳への調整、財務報告などの間に問題が発生します。 たとえば、決済時に発生する可能性がある問題についての詳細については、[複数の顧客または仕入先レコードを持つ単一伝票](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records)を参照してください。 正しく作業しレポートするために、これらのプロセスとレポートにはトランザクションの詳細が必要です。 組織の設定に基づいて、いくつかのシナリオが正しく機能する場合もありますが、1 つの伝票に複数のトランザクションが入力された場合によく問題が発生します。
 
 たとえば、次の複数行の伝票を転記します。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 143cd51a3ea34a6b05da049d87819b3dfee95725
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b40f9a5677fd5375d7a19a75400d4305a8850392
+ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181522"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564940"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>SharePoint からのデータ インポートをコンフィギュレーションする
 
@@ -62,9 +62,9 @@ ms.locfileid: "2181522"
 > 仕入先トランザクションをインポートするための形式が既定のモデル マッピングとして選択されます。 したがって、**1099 支払モデル**のモデル マッピングを実行し、そのモデル マッピングが**宛先**タイプの場合、モデル マッピングは外部ファイルからデータをインポートするこの形式を実行します。 続いてそのデータを使用して、アプリケーション テーブルを更新します。
 
 ## <a name="configure-access-to-sharepoint-for-file-storage"></a>ファイル ストレージの SharePoint へのアクセスをコンフィギュレーションする
-電子レポート ファイルを SharePoint の場所に保管するには、現在の会社によって使用される SharePoint Server のインスタンスへのアクセスをコンフィギュレーションする必要があります。 この例では、会社は USMF です。 手順については、[SharePoint ストレージのコンフィギュレーション](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) を参照してください。
+電子レポート ファイルを SharePoint の場所に保管するには、現在の会社によって使用される SharePoint Server のインスタンスへのアクセスをコンフィギュレーションする必要があります。 この例では、会社は USMF です。 手順については、[SharePoint ストレージのコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) を参照してください。
 
-1. [SharePoint ストレージのコンフィギュレーション](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) で手順を完了します。
+1. [SharePoint ストレージのコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) で手順を完了します。
 2. コンフィギュレーションされた SharePoint サイトを開きます。
 3. 受信した電子申告ファイルを保存できる次のフォルダーを作成します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "2181522"
     - ファイル エラー フォルダー - このフォルダーはインポートに失敗したファイル用です。
 
 4. **組織管理 > ドキュメント管理 > ドキュメント タイプ**へ移動します。
-5. 先ほど作成した SharePoint フォルダーにアクセスするために使用される次のドキュメント タイプを作成します。 手順については、[ドキュメント タイプのコンフィギュレーション](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types) を参照してください。
+5. 先ほど作成した SharePoint フォルダーにアクセスするために使用される次のドキュメント タイプを作成します。 手順については、[ドキュメント タイプのコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) を参照してください。
 
 |文書種類       | グループ化              | 保管場所      | SharePoint フォルダー      |
 |--------------------|--------------------|---------------|------------------------|

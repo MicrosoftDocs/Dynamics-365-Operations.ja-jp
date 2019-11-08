@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 067d1085d9afa04cb76b78393a8a8b9834ce4d8c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c07f303b72f286c33979181fca1592b47efa1303
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250947"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571234"
 ---
 # <a name="maintenance-attribute-types"></a>属性タイプの管理
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 このトピックでは、資産管理で属性タイプを作成する方法について説明します。 属性は、さまざまな要素のプロパティを記述するために使用されます。 次の要素の属性を設定できます。
 

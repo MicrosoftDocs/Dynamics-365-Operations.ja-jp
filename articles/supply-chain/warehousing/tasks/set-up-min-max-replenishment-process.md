@@ -3,7 +3,7 @@ title: 最小/最大の補充プロセスの設定
 description: この手順では、最小/最大の補充方法を使用する新しい補充プロセスを設定する方法を示します。
 author: perlynne
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef3c33125850662cfb0dfba6e6349ce32ceda0af
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: e9002b1d9f8507af42277ccc47621d92a4a00f62
+ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924450"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "2559192"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>最小/最大の補充プロセスの設定
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-この手順では、最小/最大の補充方法を使用する新しい補充プロセスを設定する方法を示します。 在庫が最小レベルを下回った場合、場所を補充するために作業が作成されます。 手順では、在庫が最小レベルを下回った場合でも補充を許可する固定のピッキング場所の使用方法や、バッチ ジョブを使用して定期的に補充プロセスを実行できるようにする方法も示します。 通常、これらのタスクを実施するのは、倉庫マネージャーです。 メモの例の値を使用するデモ データの会社 USMF でこの手順を実行したり、独自のデータで実行したりできます。 独自のデータを使用している場合、倉庫管理プロセスに有効な倉庫があることを確認します。
+この手順では、最小/最大の補充方法を使用する新しい補充プロセスを設定する方法を示します。 在庫が最小レベルを下回った場合、場所を補充するために作業が作成されます。 手順では、在庫が最小レベルを下回った場合でも補充を許可する固定のピッキング場所の使用方法や、バッチ ジョブを使用して定期的に補充プロセスを実行できるようにする方法も示します。 通常、これらのタスクを実施するのは、倉庫マネージャーです。 以下の例の値を使用するデモ データの会社 USMF でこの手順を実行したり、独自のデータで実行したりできます。 独自のデータを使用している場合、倉庫管理プロセスに有効な倉庫があることを確認します。
 
 
 ## <a name="create-a-fixed-picking-location"></a>固定のピッキング場所の作成

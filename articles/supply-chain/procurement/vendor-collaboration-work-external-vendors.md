@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250206"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653605"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>外部仕入先との仕入先コラボレーション
 
@@ -190,7 +190,7 @@ ms.locfileid: "2250206"
 仕入先は、仕入先コラボレーション インターフェイスを使用して発注書を確認する必要はありません。 また、電子メールを送信するか、またはそのほかのチャンネルで、発注書の受入を伝達することができます。 注文を手動で確認できます。 この場合、仕入先から反応がない場合でも、注文が確認されようとしていることについて警告が届きます。 発注書はその後、確認履歴に未応答の確認済の注文として表示されます。 この時点で、仕入先には発注書を確認または否認するオプションがなくなります。
 
 > [!NOTE]
-> Finance and Operations で他のプロセスに使用できる発注書のバージョンは、そのバージョンがまだ仕入先コラボレーション インターフェイスで登録されていない場合でも、常に最新バージョンです。
+> Supply Chain Management で他のプロセスに使用できる発注書のバージョンは、そのバージョンがまだ仕入先コラボレーション インターフェイスで登録されていない場合でも、常に最新バージョンです。
 
 ### <a name="versions-and-statuses-if-you-use-change-management"></a>変更管理を使用する場合のバージョンおよびステータス
 

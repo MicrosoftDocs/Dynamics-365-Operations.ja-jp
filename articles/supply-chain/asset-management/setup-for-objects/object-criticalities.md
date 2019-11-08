@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660038060826ade9301e50143e49b53ba3fcd3ab
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f96fcc7ebb8928c6d6b17b30465ad1625d9b5be4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783409"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571073"
 ---
-# <a name="asset-criticalities"></a>資産の重要度
+# <a name="asset-criticality-types"></a>資産の重要度タイプ
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 このトピックでは、資産管理の資産の重要度タイプについて説明します。 資産の重要度は資産に関連し、ワーク オーダーに転送されます。 ワーク オーダーでは変更できません。 資産の重要度は、ワーク オーダー スケジューリング中にワーク オーダーの重要度を計算するために使用されます。 つまり、資産のどのメンテナンス ジョブが会社の生産スケジュールと生産性にどの程度影響するかを計算するために使用されます。 ワーク オーダー スケジューリングの評価スコアの計算に関連する設定の詳細については、[資産管理パラメーター](../setup-for-objects/enterprise-asset-management-parameters.md) を参照してください。
 
@@ -43,7 +43,7 @@ ms.locfileid: "1783409"
 4. **名前**フィールドに、重要度タイプの名前を入力します。
 5. **係数**フィールドに係数を入力します。 この係数は、ワーク オーダー スケジューリングの計算中に使用され、重要度レコードが使用されるべきかを決定します。 (最も高い係数を持つレコードは常に使用されます。) この設定は、次の図に示すように、同じ重要度値を持つ重要度明細行が作成されている場合に関係します。
 
-    ![図 1](media/23-setup-for-objects.png)
+    ![重大度タイプ ページ](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>資産の重要度の設定
 

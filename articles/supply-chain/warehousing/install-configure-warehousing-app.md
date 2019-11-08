@@ -1,6 +1,6 @@
 ---
-title: 倉庫管理アプリのインストールとコンフィギュレーションの概要
-description: このトピックでは、Dynamics 365 Supply Chain Management - Warehousing アプリをインストールおよびコンフィギュレーションする方法について説明します。
+title: Warehousing アプリのインストールとコンフィギュレーションの概要
+description: このトピックでは、Dynamics 365 for Finance and Operations – Warehousing アプリをインストールおよびコンフィギュレーションする方法について説明します。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b8eb8dee88d8664391d2dcf485dff9dee4722cac
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
+ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251503"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2548971"
 ---
-# <a name="install-and-configure-the-warehousing-app-overview"></a>倉庫管理アプリのインストールとコンフィギュレーションの概要
+# <a name="install-and-configure-the-warehousing-app-overview"></a>Warehousing アプリのインストールとコンフィギュレーションの概要
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "2251503"
 > このトピックでは、クラウド配置の倉庫管理の構成方法について説明します。 オンプレミス配置の倉庫管理の構成方法を検索する場合、[オンプレミス配置の倉庫管理](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md) を参照してください。
 
 
-このトピックでは、Dynamics 365 Supply Chain Management - Warehousing アプリをインストールおよびコンフィギュレーションする方法について説明します。
+このトピックでは、Dynamics 365 for Finance and Operations – Warehousing アプリをインストールおよびコンフィギュレーションする方法について説明します。
 
 倉庫管理アプリは Google Play ストアおよび Windows ストアで利用可能です。 Dynamics 365 Supply Chain Management の現在のバージョンでは、このアプリはスタンドアロン コンポーネントとして提供されています。つまり、倉庫のタスクに使用されるデバイスに自己展開することを意味します。 このアプリを使用するには、各デバイスでアプリをダウンロードし、Supply Chain Management 環境に接続するように設定する必要があります。 このトピックでは、デバイスにアプリをインストールする方法について説明します。 また、Supply Chain Management 環境に接続するようにアプリを設定する方法についても説明します。
 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f68e11a1cd14bc35282b957a4262cbecdd627b3b
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 151db9ca8a121759e39b690ec296b36a18dc1729
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790514"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571165"
 ---
-# <a name="maintenance-request-states"></a>メンテナンス要求の状態
+# <a name="maintenance-request-lifecycle-states"></a>メンテナンス要求のライフサイクルの状態
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 メンテナンス要求のイフサイクルの状態は、要求を実施できるステージを定義します。 **作成済**、**有効**、および**終了**などがその例です。 メンテナンス要求が作業指示書に変換される場合、メンテナンス要求のライフサイクルの状態を**終了**または**終了済**に更新して、メンテナンス要求がアクティブでなくなったことを示す必要があります。 **すべてのメンテナンス要求**リスト ページで、ライフサイクルの状態に関係なく、すべてのメンテナンス要求を表示できます。
@@ -51,7 +51,7 @@ ms.locfileid: "1790514"
 
 次の図は、**メンテナンス要求のライフサイクルの状態**ページの例を示しています。
 
-![図 1](media/02-setup-for-requests.png)
+![メンテナンス要求のライフサイクルの状態のページ](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > メンテナンス要求のライフサイクルの状態、ライフサイクルの状態グループ、およびタイプは、ワーク オーダー ライフサイクルの状態、ライフサイクルの状態グループ、およびタイプに関連し、同じように使用されます。 
@@ -80,4 +80,4 @@ ms.locfileid: "1790514"
 
 次の図は、**メンテナンス要求のライフサイクル モデル** ページの例を示しています。
 
-![図 2](media/06-setup-for-requests.png)
+![メンテナンス要求のライフサイクル モデルのページ](media/06-setup-for-requests.png)

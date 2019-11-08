@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb758f9ef205c06cbb9d18b498a5cd7c36012714
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 74ccda77a97d1e104940bb10a605d3ebbf45af75
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783414"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571257"
 ---
 # <a name="functional-location-types"></a>機能的な場所のタイプ
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 このトピックでは、資産管理で機能的な場所のタイプを作成する方法について説明します。 機能的な場所のタイプは、機能的な場所への資産の導入方法など、機能的な場所の要件を管理するために使用されます。 特定の機能的な場所のタイプを使用する機能的な場所で使用するための資産タイプ、メンテナンス計画、機能的な場所の属性、および資産属性要件を設定することができます。 機能的な場所を作成する場合、機能的な場所のタイプは必須です。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: a8183dd834b1f39773d25fa7c546d5db1c7b7749
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 219bb1b5ac8360acf267fb792b8e23f961096abc
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249029"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553071"
 ---
 # <a name="mobile-app-home-page"></a>モバイル アプリのホーム ページ
 
@@ -90,12 +90,12 @@ ms.locfileid: "2249029"
 <td>詳細については、次のトピックを参照してください。
 <ul>
 
-<li><a href="../../financials/cost-accounting/cost-controlling-mobile-workspace.md">コスト管理モバイル ワークスペース</a></li>
-<li><a href="../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">手持在庫モバイル ワークスペース</a></li>
-<li><a href="../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">販売注文モバイル ワークスペース</a></li>
-<li><a href="../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">仕入先コラボレーションのモバイル ワークスペース</a></li>
-<li><a href="../../financials/project-management/project-time-entry-mobile-workspace.md">プロジェクト時間入力モバイル ワークスペース</a></li>
-<li><a href="../../financials/expense-management/expense-management-mobile-workspace.md">経費管理モバイル ワークスペース</a></li>
+<li><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">コスト管理モバイル ワークスペース</a></li>
+<li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">手持在庫モバイル ワークスペース</a></li>
+<li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">販売注文モバイル ワークスペース</a></li>
+<li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">仕入先コラボレーションのモバイル ワークスペース</a></li>
+<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">プロジェクト時間入力モバイル ワークスペース</a></li>
+<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">経費管理モバイル ワークスペース</a></li>
 
 </ul></td>
 </tr>

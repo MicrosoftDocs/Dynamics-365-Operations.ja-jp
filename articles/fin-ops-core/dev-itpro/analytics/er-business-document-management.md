@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c84b08ec45dfa7aa9c7b913087a2518bfeedf87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
+ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181568"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2652620"
 ---
 # <a name="business-document-management-overview"></a>ビジネス ドキュメント管理の概要
 
@@ -120,7 +120,7 @@ ER コンフィギュレーションのインポートの詳細については�
 
 ![機能管理ワークスペース](./media/BDM-Overview-FMEnabling.png)
 
-新規機能の有効化についての詳細は、[機能管理の概要](../../fin-and-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
+新規機能の有効化についての詳細は、[機能管理の概要](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
 
 ## <a name="configure-parameters"></a>パラメータのコンフィギュレーション
 
@@ -137,7 +137,7 @@ ER コンフィギュレーションのインポートの詳細については�
 | グループ化               | ファイル                  |
 | 保管場所            | SharePoint            |
 
-必要なドキュメント管理パラメータおよびドキュメント タイプの設定方法については、[ドキュメント管理のコンフィギュレーション](../../fin-and-ops/organization-administration/configure-document-management.md) を参照してください。
+必要なドキュメント管理パラメータおよびドキュメント タイプの設定方法については、[ドキュメント管理のコンフィギュレーション](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) を参照してください。
 
 ![ドキュメント管理のドキュメント タイプを設定](./media/BDM-Overview-DMSetting.png)
 

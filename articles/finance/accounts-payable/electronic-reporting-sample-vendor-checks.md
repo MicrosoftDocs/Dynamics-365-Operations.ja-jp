@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 61d558ab0337e124065d194f42e0a81465d96a45
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ae42c9012a430aeeed6adb78b33776c727e4a3f8
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178732"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551152"
 ---
 [!include [banner](../includes/banner.md)]
 
-# <a name="electronic-reporting-sample-check-formats"></a>電子レポートのサンプル小切手フォーマット
+# <a name="electronic-reporting-sample-vendor-checks"></a>電子レポートのサンプル仕入先小切手
 
 電子レポート (ER) を使用して仕入先小切手をフォーマットすることができます。 市場では多くの銀行固有の、および小切手プロバイダー固有の小切手フォーマットが使用可能です。 サンプル小切手フォーマットは、ER ツール リポジトリの支払小切手モデルに含まれています。 これらのサンプル小切手には、**小切手中央 (米国)** および**小切手上控え下 (米国)** というラベルが付いています。
 

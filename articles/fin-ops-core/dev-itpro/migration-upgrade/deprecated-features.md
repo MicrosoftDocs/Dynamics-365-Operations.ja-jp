@@ -3,7 +3,7 @@ title: Finance and Operations の削除済みまたは推奨されない機能
 description: このトピックでは、削除された、または削除される予定の機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70bb8404c5b0e2422948d0b89311c384e3686710
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181085"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658693"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Finance and Operations の削除済みまたは推奨されない機能
 
@@ -38,13 +38,42 @@ ms.locfileid: "2181085"
 > [!NOTE]
 > Finance and Operations 2017 年 7 月リリースおよびプラットフォーム更新プログラム 8 から始まり、削除または削除予定の機能ごとに、展開のタイプが記録されます。 このトピックに記載されているすべての以前のリリースは、クラウド配置のみサポートされています。
 
-> Finance and Operations 内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations の各バージョンで変更または削除されたオブジェクトについて確認することができます。
+Finance and Operations 内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations の各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
+## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 プラットフォーム更新プログラム 31
+
+### <a name="chinese-voucher-types-without-account-groups-selection"></a>勘定グループを選択しない中国の伝票タイプ
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 勘定グループを選択する機能に変更されました。 |
+| **別の機能で置き換えられているか?**   | はい |
+| **影響を受ける製品領域**         | 申請 |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: 2020 年 12 月 1 日までに、勘定グループを選択せずに中国の伝票タイプ設定をサポートしなくなります。 新しい機能デザインの詳細については、10.0.7 の新機能を参照してください。 |
 
 ## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations 10.0.6 プラットフォーム更新プログラム 30
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.6 プラットフォーム更新プログラム 30 は、プレビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](../../fin-and-ops/get-started/public-preview-releases.md) を参照してください。
+
+### <a name="dimensionhashgethashstr-_message"></a>DimensionHash.getHash(str _message)
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Windows では、[SHA1 証明書の Windows 施行](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx) で記載されているように、SHA1 の使用を非推奨にしています。  |
+| **別の機能で置き換えられているか?**   | はい |
+| **影響を受ける製品領域**         | 申請 |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: 2020 年 4 月 1 日までに、開発者は新しい API を使用する必要があります。 |
+
+### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(string message)
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Windows では、[SHA1 証明書の Windows 施行](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx) で記載されているように、SHA1 の使用を非推奨にしています。  |
+| **別の機能で置き換えられているか?**   | はい |
+| **影響を受ける製品領域**         | プラットフォーム |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: 2020 年 4 月 1 日までに、開発者は新しい API を使用する必要があります。 |
+
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()
 
@@ -308,7 +337,7 @@ ms.locfileid: "2181085"
 ## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations Enterprise Edition 7.3 プラットフォーム更新プログラム 12
 
 ### <a name="personalized-product-recommendations"></a>カスタマイズされた製品推奨事項 
-2018 年 2 月 15 日より、小売業者は販売時点管理 (POS) デバイスで、カスタマイズされた製品の推奨事項を表示できなくなります。 詳細については、[カスタマイズされた製品の推奨事項](../../retail/personalized-product-recommendations.md)を参照してください。  
+2018 年 2 月 15 日より、小売業者は販売時点管理 (POS) デバイスで、カスタマイズされた製品の推奨事項を表示できなくなります。 詳細については、[製品推奨事項の概要](../../../commerce/product-recommendations.md) を参照してください。  
 
 |   |  |
 |------------|--------------------|
@@ -413,7 +442,7 @@ ER 式ビルダーで使用されるカスタム機能を導入する可能性�
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
 ### <a name="personalized-product-recommendations"></a>カスタマイズされた製品推奨事項 
-2018 年 2 月 15 日より、小売業者は販売時点管理 (POS) デバイスで、カスタマイズされた製品の推奨事項を表示できなくなります。 詳細については、[カスタマイズされた製品の推奨事項](../../retail/personalized-product-recommendations.md)を参照してください。  
+2018 年 2 月 15 日より、小売業者は販売時点管理 (POS) デバイスで、カスタマイズされた製品の推奨事項を表示できなくなります。 詳細については、[製品推奨事項の概要](../../../commerce/product-recommendations.md) を参照してください。  
 
 |   |  |
 |------------|--------------------|
@@ -445,7 +474,7 @@ ER 式ビルダーで使用されるカスタム機能を導入する可能性�
 |   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 機能の重複。       |
-| **別の機能での置き換え?**   | はい。 この機能は Finance and Operations - Warehousing で置き換えられました。 設定、および前提条件の詳細については、[Microsoft Dynamics 365 for Finance and Operations- Warehousing のインストールと構成](../../supply-chain/warehousing/install-configure-warehousing-app.md) を参照してください。 |
+| **別の機能での置き換え?**   | はい。 この機能は Finance and Operations - Warehousing で置き換えられました。 設定、および前提条件の詳細については、[Microsoft Dynamics 365 for Finance and Operations- Warehousing のインストールと構成](../../../supply-chain/warehousing/install-configure-warehousing-app.md) を参照してください。 |
 | **影響を受ける製品領域**         | 倉庫管理、輸送管理     |
 | **配置オプション**              | 倉庫モバイル デバイス ポータル (WMDP) は、オンプレミス自己展開を目的としたスタンドアロン コンポーネントでした。               |
 | **ステータス**                         | 非推奨: 機能を削除するターゲットのタイムフレームは 2019 年 第 4 四半期です。   |
@@ -1215,7 +1244,7 @@ Dynamics AX 2012 は、未実現税に対するメキシコ固有の機能を使
 |   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | プロダクト ビルダーは、エンドユーザーに X++ コードを公開しており、Dynamics AX の現在のバージョンではサポートされていません。 かなりの重複するコード ベースにおける保守活動の重複を回避するために削除されました。  |
-| **別の機能での置き換え?**   | はい。 制約ベースのコンフィギュレーションは、将来のバージョンでプロダクト ビルダーの減価償却がすでに発表されている Dynamics AX 2012 で導入されました。 コンフィギュレーションを有効にするために、製品マスターに対して制約ベースのコンフィギュレーション テクノロジが選択されています。 詳細については次を参照してください。[製品コンフィギュレーション モデルの構築](../../supply-chain/pim/build-product-configuration-model.md) |
+| **別の機能での置き換え?**   | はい。 制約ベースのコンフィギュレーションは、将来のバージョンでプロダクト ビルダーの減価償却がすでに発表されている Dynamics AX 2012 で導入されました。 コンフィギュレーションを有効にするために、製品マスターに対して制約ベースのコンフィギュレーション テクノロジが選択されています。 詳細については次を参照してください。[製品コンフィギュレーション モデルの構築](../../../supply-chain/pim/build-product-configuration-model.md) |
 | **影響を受ける製品領域**         | 製品情報管理、販売とマーケティング  |
 | **ステータス**                         | Dynamics AX 7.0 から削除されました。      |
 

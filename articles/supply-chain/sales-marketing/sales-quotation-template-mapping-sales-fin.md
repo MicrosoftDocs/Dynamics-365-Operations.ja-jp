@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: ddc81aa7ff462304cb6e22c919221217f7a1e019
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6b4f0006e4cacc2897d2b6c9c9dde88d0aafa4ad
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251250"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653182"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期
 
@@ -59,7 +59,7 @@ Sales から Supply Chain Management への販売見積ヘッダーと明細行�
 
 ## <a name="entity-set"></a>エンティティ セット
 
-| 販売注文        | Finance and Operations     |
+| 販売注文        | サプライ チェーン マネジメント     |
 |--------------|----------------------------|
 | 引用       | CDS 販売見積ヘッダー |
 | QuoteDetails | CDS 販売見積明細行  |

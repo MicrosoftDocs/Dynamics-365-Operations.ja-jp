@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bf90dc4823599ed6ff8e81986fc35f2210b66b0c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e6bc6c60fda3c3e4772d26d94c4c87fb2a3102c
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560278"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570728"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>注文入力時に製品および製品のバリアントを検索する
 
 [!include [banner](../includes/banner.md)]
-
-[!include [Retail name](../includes/retail-name.md)]
 
 手動で販売注文明細行または購買注文明細行を作成する場合、**品目番号** フィールドを使用して製品と製品バリアントを検索します。  これにより、コンフィギュレーションの文字列のみがある場合、または製品分析コードの 1 つが利用可能な場合に、製品バリアントをすばやく検索することが可能になります。
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 94fb6720152cbf6aec58d2b8d9d02fc5343c05e2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: b55a0b9e54eabdcdbd3f858cf3725b8fe833f65d
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251181"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653397"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service への倉庫の同期
 
@@ -52,14 +52,14 @@ ms.locfileid: "2251181"
 Supply Chain Management で作成および管理されている倉庫は、Common Data Service (CDS) データの統合プロジェクトを通して Field Service に同期することができます。 Field Service に同期する倉庫は、プロジェクトの高度なクエリおよびフィルター処理で制御することができます。 Supply Chain Management から同期する倉庫は Field Service で作成され、**外部で管理**フィールドを**はい**に設定することにより、レコードは読み取り専用になります。
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM ソリューション
-Field Service および Finance and Operations の統合をサポートするために、Field Service CRM からの追加機能が必要です。 ソリューションとして、**外部で管理**フィールドが、**倉庫 (msdyn_warehouses)** エンティティに追加されました。 このフィールドは、倉庫が Supply Chain Management から処理されているのか、または Field Service にのみ存在するのかを識別するのに役立ちます。 このフィールドの設定は以下のとおりです。
+Field Service および Supply Chain Management の統合をサポートするために、Field Service CRM からの追加機能が必要です。 ソリューションとして、**外部で管理**フィールドが、**倉庫 (msdyn_warehouses)** エンティティに追加されました。 このフィールドは、倉庫が Supply Chain Management から処理されているのか、または Field Service にのみ存在するのかを識別するのに役立ちます。 このフィールドの設定は以下のとおりです。
 - **はい** – 倉庫は Supply Chain Management に由来し、Sales では編集できません。
 - **いいえ** – 倉庫は Field Service で直接入力されており、ここで管理されます。
 
 **外部で管理**フィールドは、在庫レベル、調整、移動およびワーク オーダーの使用状況の同期を制御します。 **外部で管理**が**はい**に設定された倉庫のみ、その他のシステムの同じ倉庫に直接同期するのに使用されます。 
 
 > [!NOTE]
-> Field Service で複数の倉庫を作成し (**外部で管理** = いいえ)、Finance and Operations で高度なクエリおよびフィルター処理を使用して 1 つの倉庫にマッピングすることができます。 これは、Field service に詳細な在庫レベルを習得させ、Finance and Operations に更新を送信するだけの場合に使用されます。 この場合、Field service は、Finance and Operations からの在庫レベルの更新は受信しません。 追加情報については、「[Field Service から Finance and Operations への在庫調整の同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments)」および「[Field Service でのワーク オーダーを Finance and Operations のプロジェクトにリンクされている販売注文に同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)」を参照してください。
+> Field Service で複数の倉庫を作成し (**外部で管理** = いいえ)、高度なクエリおよびフィルター処理を使用して 1 つの倉庫にマッピングすることができます。 これは、Field service に詳細な在庫レベルを習得させ、Supply Chain Management に更新を送信するだけの場合に使用されます。 この場合、Field service では、Supply Chain Management からの在庫レベルの更新は受信しません。 追加情報については、「[Field Service から Finance and Operations への在庫調整の同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments)」および「[Field Service でのワーク オーダーを Finance and Operations のプロジェクトにリンクされている販売注文に同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)」を参照してください。
 
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 ### <a name="data-integration-project"></a>データ統合プロジェクト

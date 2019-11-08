@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 4c9a2fee7d43142f8bb17f4e819c9949a2a20c41
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922025"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570033"
 ---
 # <a name="maintenance-rounds"></a>メンテナンス ラウンド
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 **資産管理**で、定期的に同様のタスクを実行する必要があるさまざまな資産に対してメンテナンス ラウンドを作成することができます。 たとえば、同じ間隔内で複数の機械に実行する必要がある潤滑ジョブまたは安全検査ジョブがあります。 最初のステップは、同じフォームのメンテナンス ジョブを必要とする資産を含む、メンテナンス ラウンドを作成することです。 次に、メンテナンス ラウンドをスケジュールします。 メンテナンス ラウンド スケジュールを完了すると、**すべてのメンテナンス スケジュール**および**未処理のメンテナンス スケジュール明細行**のラウンドに関連するすべてのジョブ レコードが表示されます。
 
