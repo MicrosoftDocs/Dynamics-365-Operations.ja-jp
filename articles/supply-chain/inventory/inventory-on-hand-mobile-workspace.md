@@ -18,115 +18,115 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 05881b6e6e501ff3ac5a622d99fd1aaa311727a1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f4f6de139d0399263fa19507d63e9521f489dcbd
+ms.sourcegitcommit: 38ce9f4ef499ad208f2fbbc51bc21b12c67dfa16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249520"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2574802"
 ---
-# <a name="inventory-on-hand-mobile-workspace"></a><span data-ttu-id="124ab-104">手持ち在庫モバイル ワークスペース</span><span class="sxs-lookup"><span data-stu-id="124ab-104">Inventory on-hand mobile workspace</span></span>
+# <a name="inventory-on-hand-mobile-workspace"></a><span data-ttu-id="76eb9-104">手持ち在庫モバイル ワークスペース</span><span class="sxs-lookup"><span data-stu-id="76eb9-104">Inventory on-hand mobile workspace</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="124ab-105">このトピックでは、**手持ち在庫** モバイル ワークスペースに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="124ab-105">This topic provides information about the **Inventory on-hand** mobile workspace.</span></span> <span data-ttu-id="124ab-106">このワークスペースは、予約済みの在庫や利用可能な在庫に関するモバイル情報を、いつでも、どこでも取得するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="124ab-106">This workspace helps you gain insights into reserved and available inventory anytime and anywhere.</span></span>
+<span data-ttu-id="76eb9-105">このトピックでは、**手持ち在庫** モバイル ワークスペースに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-105">This topic provides information about the **Inventory on-hand** mobile workspace.</span></span> <span data-ttu-id="76eb9-106">このワークスペースは、予約済みの在庫や利用可能な在庫に関するモバイル情報を、いつでも、どこでも取得するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-106">This workspace helps you gain insights into reserved and available inventory anytime and anywhere.</span></span>
 
-<span data-ttu-id="124ab-107">このモバイル ワークスペースは、Finance and Operations モバイル アプリで使用するためのものです。</span><span class="sxs-lookup"><span data-stu-id="124ab-107">This mobile workspace is intended to be used with the Finance and Operations mobile app.</span></span>
+<span data-ttu-id="76eb9-107">このモバイル ワークスペースは、Finance and Operations モバイル アプリで使用するためのものです。</span><span class="sxs-lookup"><span data-stu-id="76eb9-107">This mobile workspace is intended to be used with the Finance and Operations mobile app.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="124ab-108">概要</span><span class="sxs-lookup"><span data-stu-id="124ab-108">Overview</span></span>
-<span data-ttu-id="124ab-109">通常、企業は毎日複数の出荷と在庫の複数の領収書を持っています。</span><span class="sxs-lookup"><span data-stu-id="124ab-109">Typically, companies have multiple shipments and multiple receipts of inventory every day.</span></span> <span data-ttu-id="124ab-110">これらの動きは、常に手持ちの在庫ステータスを変更します。</span><span class="sxs-lookup"><span data-stu-id="124ab-110">These movements constantly change the on-hand inventory status.</span></span> <span data-ttu-id="124ab-111">**手持ち在庫** モバイル ワークスペースにより、社内の手持ちの在庫状態を把握し、選択したモバイル デバイス上で在庫データに関する最新の情報を取得できます。</span><span class="sxs-lookup"><span data-stu-id="124ab-111">The **Inventory on-hand** mobile workspace lets you see the cross-company on-hand inventory status, so that you can gain the latest insights into inventory data on the mobile device of your choice.</span></span> <span data-ttu-id="124ab-112">倉庫、購買、営業、製造または管理のいずれで作業していようがそれ以外の役割を担っていようが関係なく、いつでもどこでも手持ちの在庫データにアクセスすることができます。</span><span class="sxs-lookup"><span data-stu-id="124ab-112">Regardless of whether you work in the warehouse, purchasing, sales, manufacturing, or management, or have other roles, you can access on-hand inventory data anytime and anywhere.</span></span> 
+## <a name="overview"></a><span data-ttu-id="76eb9-108">概要</span><span class="sxs-lookup"><span data-stu-id="76eb9-108">Overview</span></span>
+<span data-ttu-id="76eb9-109">通常、企業は毎日複数の出荷と在庫の複数の領収書を持っています。</span><span class="sxs-lookup"><span data-stu-id="76eb9-109">Typically, companies have multiple shipments and multiple receipts of inventory every day.</span></span> <span data-ttu-id="76eb9-110">これらの動きは、常に手持ちの在庫ステータスを変更します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-110">These movements constantly change the on-hand inventory status.</span></span> <span data-ttu-id="76eb9-111">**手持ち在庫** モバイル ワークスペースにより、社内の手持ちの在庫状態を把握し、選択したモバイル デバイス上で在庫データに関する最新の情報を取得できます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-111">The **Inventory on-hand** mobile workspace lets you see the cross-company on-hand inventory status, so that you can gain the latest insights into inventory data on the mobile device of your choice.</span></span> <span data-ttu-id="76eb9-112">倉庫、購買、営業、製造または管理のいずれで作業していようがそれ以外の役割を担っていようが関係なく、いつでもどこでも手持ちの在庫データにアクセスすることができます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-112">Regardless of whether you work in the warehouse, purchasing, sales, manufacturing, or management, or have other roles, you can access on-hand inventory data anytime and anywhere.</span></span> 
 
-<span data-ttu-id="124ab-113">モバイル ワークスペースは、複数の設備の手持ち状態のインスタント ビューを提供します。</span><span class="sxs-lookup"><span data-stu-id="124ab-113">The mobile workspace provides an instant view of the on-hand status across facilities.</span></span> <span data-ttu-id="124ab-114">複数の設備での手持ち在庫、現在の原料の予約、および予約されていない手持ち在庫を表示できます。</span><span class="sxs-lookup"><span data-stu-id="124ab-114">It lets you view on-hand inventory across facilities, current material reservations, and unreserved on-hand inventory.</span></span> <span data-ttu-id="124ab-115">また、品目番号を入力して手持ち在庫を照会したり、手持ち製品やバリアントのフィルター検索を行うこともできます。</span><span class="sxs-lookup"><span data-stu-id="124ab-115">You can also enter item numbers to query on-hand inventory, and can do a filtered search for on-hand products or variants.</span></span> 
+<span data-ttu-id="76eb9-113">モバイル ワークスペースは、複数の設備の手持ち状態のインスタント ビューを提供します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-113">The mobile workspace provides an instant view of the on-hand status across facilities.</span></span> <span data-ttu-id="76eb9-114">複数の設備での手持ち在庫、現在の原料の予約、および予約されていない手持ち在庫を表示できます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-114">It lets you view on-hand inventory across facilities, current material reservations, and unreserved on-hand inventory.</span></span> <span data-ttu-id="76eb9-115">また、品目番号を入力して手持ち在庫を照会したり、手持ち製品やバリアントのフィルター検索を行うこともできます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-115">You can also enter item numbers to query on-hand inventory, and can do a filtered search for on-hand products or variants.</span></span> 
 
-<span data-ttu-id="124ab-116">具体的には、モバイル ワークスペースは次の機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="124ab-116">Specifically, the mobile workspace provides these features:</span></span>
+<span data-ttu-id="76eb9-116">具体的には、モバイル ワークスペースは次の機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-116">Specifically, the mobile workspace provides these features:</span></span>
 
--   <span data-ttu-id="124ab-117">製品番号または製品名で検索し、手持ちの在庫状況を表示して、製品を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="124ab-117">You can search by product number or product name to find products to view the on-hand inventory status for.</span></span>
--   <span data-ttu-id="124ab-118">選択された製品に対して、次の情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="124ab-118">For the selected products, you can view the following information:</span></span>
+-   <span data-ttu-id="76eb9-117">製品番号または製品名で検索し、手持ちの在庫状況を表示して、製品を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-117">You can search by product number or product name to find products to view the on-hand inventory status for.</span></span>
+-   <span data-ttu-id="76eb9-118">選択された製品に対して、次の情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-118">For the selected products, you can view the following information:</span></span>
 
-    -   <span data-ttu-id="124ab-119">サイトごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="124ab-119">On-hand inventory per site</span></span>
-    -   <span data-ttu-id="124ab-120">倉庫ごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="124ab-120">On-hand inventory per warehouse</span></span>
-    -   <span data-ttu-id="124ab-121">場所ごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="124ab-121">On-hand inventory per location</span></span>
-    -   <span data-ttu-id="124ab-122">バッチごとの手持ち在庫 (バッチ管理されている製品の場合)</span><span class="sxs-lookup"><span data-stu-id="124ab-122">On-hand inventory per batch (for batch-controlled products)</span></span>
-    -   <span data-ttu-id="124ab-123">在庫状態ごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="124ab-123">On-hand inventory per inventory status</span></span>
+    -   <span data-ttu-id="76eb9-119">サイトごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="76eb9-119">On-hand inventory per site</span></span>
+    -   <span data-ttu-id="76eb9-120">倉庫ごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="76eb9-120">On-hand inventory per warehouse</span></span>
+    -   <span data-ttu-id="76eb9-121">場所ごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="76eb9-121">On-hand inventory per location</span></span>
+    -   <span data-ttu-id="76eb9-122">バッチごとの手持ち在庫 (バッチ管理されている製品の場合)</span><span class="sxs-lookup"><span data-stu-id="76eb9-122">On-hand inventory per batch (for batch-controlled products)</span></span>
+    -   <span data-ttu-id="76eb9-123">在庫状態ごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="76eb9-123">On-hand inventory per inventory status</span></span>
     
--   <span data-ttu-id="124ab-124">製品の手持ち在庫は、次の方法で表示されます:</span><span class="sxs-lookup"><span data-stu-id="124ab-124">Product on-hand inventory is shown in the following ways:</span></span>
+-   <span data-ttu-id="76eb9-124">製品の手持ち在庫は、次の方法で表示されます:</span><span class="sxs-lookup"><span data-stu-id="76eb9-124">Product on-hand inventory is shown in the following ways:</span></span>
 
-    -   <span data-ttu-id="124ab-125">現物在庫による (このビューは、合計金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="124ab-125">By physical inventory (This view represents the total amount.)</span></span>
-    -   <span data-ttu-id="124ab-126">現物引当済による (このビューは、引当済金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="124ab-126">By physical reserved (This view represents the reserved amount.)</span></span>
-    -   <span data-ttu-id="124ab-127">引当可能現物数による (このビューは予約がない使用可能な残りの金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="124ab-127">By available physical (This view represents available amount that has no reservations.)</span></span>
+    -   <span data-ttu-id="76eb9-125">現物在庫による (このビューは、合計金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="76eb9-125">By physical inventory (This view represents the total amount.)</span></span>
+    -   <span data-ttu-id="76eb9-126">現物引当済による (このビューは、引当済金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="76eb9-126">By physical reserved (This view represents the reserved amount.)</span></span>
+    -   <span data-ttu-id="76eb9-127">引当可能現物数による (このビューは予約がない使用可能な残りの金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="76eb9-127">By available physical (This view represents available amount that has no reservations.)</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="124ab-128">必要条件</span><span class="sxs-lookup"><span data-stu-id="124ab-128">Prerequisites</span></span>
-<span data-ttu-id="124ab-129">組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。</span><span class="sxs-lookup"><span data-stu-id="124ab-129">The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="76eb9-128">必要条件</span><span class="sxs-lookup"><span data-stu-id="76eb9-128">Prerequisites</span></span>
+<span data-ttu-id="76eb9-129">組織に配置されている Supply Chain Management のバージョンによって、前提条件は異なります。</span><span class="sxs-lookup"><span data-stu-id="76eb9-129">The prerequisites differ, based on the version of Supply Chain Management that has been deployed for your organization.</span></span>
 
-### <a name="prerequisites-if-you-use-finance-and-operations"></a><span data-ttu-id="124ab-130">Finance and Operations を使用する場合の前提条件</span><span class="sxs-lookup"><span data-stu-id="124ab-130">Prerequisites if you use Finance and Operations</span></span> 
-<span data-ttu-id="124ab-131">Supply Chain Management が組織に配置されている場合、システム管理者は**手持在庫**モバイル ワークスペースを公開する必要があります。</span><span class="sxs-lookup"><span data-stu-id="124ab-131">If Supply Chain Managementhas been deployed for your organization, the system administrator must publish the **Inventory on-hand** mobile workspace.</span></span> <span data-ttu-id="124ab-132">手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="124ab-132">For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).</span></span>
+### <a name="prerequisites-if-you-use-supply-chain-management"></a><span data-ttu-id="76eb9-130">Supply Chain Management を使用する場合の前提条件</span><span class="sxs-lookup"><span data-stu-id="76eb9-130">Prerequisites if you use Supply Chain Management</span></span>
+<span data-ttu-id="76eb9-131">Supply Chain Management が組織に配置されている場合、システム管理者は**手持在庫**モバイル ワークスペースを公開する必要があります。</span><span class="sxs-lookup"><span data-stu-id="76eb9-131">If Supply Chain Management has been deployed for your organization, the system administrator must publish the **Inventory on-hand** mobile workspace.</span></span> <span data-ttu-id="76eb9-132">手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="76eb9-132">For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).</span></span>
 
-### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a><span data-ttu-id="124ab-133">プラットフォーム 更新プログラム 3 以降を使用する場合の前提条件</span><span class="sxs-lookup"><span data-stu-id="124ab-133">Prerequisites if you use Platform update 3 or later</span></span> 
-<span data-ttu-id="124ab-134">プラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。</span><span class="sxs-lookup"><span data-stu-id="124ab-134">If Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites.</span></span> 
+### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a><span data-ttu-id="76eb9-133">プラットフォーム 更新プログラム 3 以降を使用する場合の前提条件</span><span class="sxs-lookup"><span data-stu-id="76eb9-133">Prerequisites if you use Platform update 3 or later</span></span> 
+<span data-ttu-id="76eb9-134">プラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。</span><span class="sxs-lookup"><span data-stu-id="76eb9-134">If Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites.</span></span> 
 
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="124ab-135">前提条件</span><span class="sxs-lookup"><span data-stu-id="124ab-135">Prerequisite</span></span></th>
-<th><span data-ttu-id="124ab-136">役割</span><span class="sxs-lookup"><span data-stu-id="124ab-136">Role</span></span></th>
-<th><span data-ttu-id="124ab-137">説明</span><span class="sxs-lookup"><span data-stu-id="124ab-137">Description</span></span></th>
+<th><span data-ttu-id="76eb9-135">前提条件</span><span class="sxs-lookup"><span data-stu-id="76eb9-135">Prerequisite</span></span></th>
+<th><span data-ttu-id="76eb9-136">役割</span><span class="sxs-lookup"><span data-stu-id="76eb9-136">Role</span></span></th>
+<th><span data-ttu-id="76eb9-137">説明</span><span class="sxs-lookup"><span data-stu-id="76eb9-137">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="124ab-138">KB 4013633 を実装します。</span><span class="sxs-lookup"><span data-stu-id="124ab-138">Implement KB 4013633.</span></span></td>
-<td><span data-ttu-id="124ab-139">システム管理者</span><span class="sxs-lookup"><span data-stu-id="124ab-139">System administrator</span></span></td>
+<td><span data-ttu-id="76eb9-138">KB 4013633 を実装します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-138">Implement KB 4013633.</span></span></td>
+<td><span data-ttu-id="76eb9-139">システム管理者</span><span class="sxs-lookup"><span data-stu-id="76eb9-139">System administrator</span></span></td>
 
-<td><span data-ttu-id="124ab-140">KB 4013633 は、<strong>手持ち在庫</strong> モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。</span><span class="sxs-lookup"><span data-stu-id="124ab-140">KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Inventory on-hand</strong> mobile workspace.</span></span> <span data-ttu-id="124ab-141">KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="124ab-141">To implement KB 4013633, your system administrator must follow these steps.</span></span>
+<td><span data-ttu-id="76eb9-140">KB 4013633 は、<strong>手持ち在庫</strong> モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。</span><span class="sxs-lookup"><span data-stu-id="76eb9-140">KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Inventory on-hand</strong> mobile workspace.</span></span> <span data-ttu-id="76eb9-141">KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="76eb9-141">To implement KB 4013633, your system administrator must follow these steps.</span></span>
 <ol>
-<li><span data-ttu-id="124ab-142"><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Microsoft Dynamics Lifecycle Services (LCS)</a> からメタデータ修正プログラムをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="124ab-142"><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</span></span></li>
-<li><span data-ttu-id="124ab-143"><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">メタデータ修正プログラムをインストールします。</a></span><span class="sxs-lookup"><span data-stu-id="124ab-143"><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Install the metadata hotfix</a>.</span></span></li>
-<li><span data-ttu-id="124ab-144"><strong>SCMMobile</strong> モデルを含む<a href="../../dev-itpro/deployment/create-apply-deployable-package.md">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</span><span class="sxs-lookup"><span data-stu-id="124ab-144"><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</span></span></li>
-<li><span data-ttu-id="124ab-145"><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">配置可能パッケージを適用します</a>。</span><span class="sxs-lookup"><span data-stu-id="124ab-145"><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Apply the deployable package</a>.</span></span></li>
+<li><span data-ttu-id="76eb9-142"><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Microsoft Dynamics Lifecycle Services (LCS)</a> からメタデータ修正プログラムをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="76eb9-142"><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</span></span></li>
+<li><span data-ttu-id="76eb9-143"><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">メタデータ修正プログラムをインストールします。</a></span><span class="sxs-lookup"><span data-stu-id="76eb9-143"><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Install the metadata hotfix</a>.</span></span></li>
+<li><span data-ttu-id="76eb9-144"><strong>SCMMobile</strong> モデルを含む<a href="../../dev-itpro/deployment/create-apply-deployable-package.md">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</span><span class="sxs-lookup"><span data-stu-id="76eb9-144"><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</span></span></li>
+<li><span data-ttu-id="76eb9-145"><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">配置可能パッケージを適用します</a>。</span><span class="sxs-lookup"><span data-stu-id="76eb9-145"><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Apply the deployable package</a>.</span></span></li>
 
 </ol></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="124ab-146"><strong>手持在庫</strong> モバイル ワークスペースを公開します。</span><span class="sxs-lookup"><span data-stu-id="124ab-146">Publish the <strong>Inventory on-hand</strong> mobile workspace.</span></span></td>
-<td><span data-ttu-id="124ab-147">システム管理者</span><span class="sxs-lookup"><span data-stu-id="124ab-147">System administrator</span></span></td>
-<td><span data-ttu-id="124ab-148">「<a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">モバイル ワークスペースの公開</a>」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="124ab-148">See <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publish a mobile workspace</a>.</span></span></td>
+<td><span data-ttu-id="76eb9-146"><strong>手持在庫</strong> モバイル ワークスペースを公開します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-146">Publish the <strong>Inventory on-hand</strong> mobile workspace.</span></span></td>
+<td><span data-ttu-id="76eb9-147">システム管理者</span><span class="sxs-lookup"><span data-stu-id="76eb9-147">System administrator</span></span></td>
+<td><span data-ttu-id="76eb9-148">「<a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">モバイル ワークスペースの公開</a>」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="76eb9-148">See <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publish a mobile workspace</a>.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="124ab-149">モバイル アプリのダウンロードとインストール</span><span class="sxs-lookup"><span data-stu-id="124ab-149">Download and install the mobile app</span></span>
+## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="76eb9-149">モバイル アプリのダウンロードとインストール</span><span class="sxs-lookup"><span data-stu-id="76eb9-149">Download and install the mobile app</span></span>
 
-<span data-ttu-id="124ab-150">Finance and Operations モバイル アプリをダウンロードしてインストールします。</span><span class="sxs-lookup"><span data-stu-id="124ab-150">Download and install the Finance and Operations mobile app:</span></span>
+<span data-ttu-id="76eb9-150">Finance and Operations モバイル アプリをダウンロードしてインストールします。</span><span class="sxs-lookup"><span data-stu-id="76eb9-150">Download and install the Finance and Operations mobile app:</span></span>
 
--   [<span data-ttu-id="124ab-151">Android フォン用</span><span class="sxs-lookup"><span data-stu-id="124ab-151">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
--   [<span data-ttu-id="124ab-152">iPhone 用</span><span class="sxs-lookup"><span data-stu-id="124ab-152">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
+-   [<span data-ttu-id="76eb9-151">Android フォン用</span><span class="sxs-lookup"><span data-stu-id="76eb9-151">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [<span data-ttu-id="76eb9-152">iPhone 用</span><span class="sxs-lookup"><span data-stu-id="76eb9-152">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="124ab-153">モバイル アプリにログインします。</span><span class="sxs-lookup"><span data-stu-id="124ab-153">Sign in to the mobile app</span></span>
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="76eb9-153">モバイル アプリにログインします。</span><span class="sxs-lookup"><span data-stu-id="76eb9-153">Sign in to the mobile app</span></span>
 
-1.  <span data-ttu-id="124ab-154">モバイル デバイスでアプリを起動します。</span><span class="sxs-lookup"><span data-stu-id="124ab-154">Start the app on your mobile device.</span></span>
-2.  <span data-ttu-id="124ab-155">Dynamics 365 の URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="124ab-155">Enter your Dynamics 365 URL.</span></span>
-3.  <span data-ttu-id="124ab-156">初めてサインインすると、ユーザー名とパスワードを要求されます。</span><span class="sxs-lookup"><span data-stu-id="124ab-156">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="124ab-157">資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="124ab-157">Enter your credentials.</span></span>
-4.  <span data-ttu-id="124ab-158">サインインすると、使用可能な会社のワークスペースが表示されます。</span><span class="sxs-lookup"><span data-stu-id="124ab-158">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="124ab-159">なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="124ab-159">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
+1.  <span data-ttu-id="76eb9-154">モバイル デバイスでアプリを起動します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-154">Start the app on your mobile device.</span></span>
+2.  <span data-ttu-id="76eb9-155">Dynamics 365 の URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-155">Enter your Dynamics 365 URL.</span></span>
+3.  <span data-ttu-id="76eb9-156">初めてサインインすると、ユーザー名とパスワードを要求されます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-156">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="76eb9-157">資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-157">Enter your credentials.</span></span>
+4.  <span data-ttu-id="76eb9-158">サインインすると、使用可能な会社のワークスペースが表示されます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-158">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="76eb9-159">なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="76eb9-159">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
 
-    <span data-ttu-id="124ab-160">[![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="124ab-160">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
+    <span data-ttu-id="76eb9-160">[![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="76eb9-160">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
 
-## <a name="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace"></a><span data-ttu-id="124ab-161">手持ち在庫モバイル ワークスペースを使用して、製品の手持ち在庫を表示します。</span><span class="sxs-lookup"><span data-stu-id="124ab-161">View the on-hand inventory for a product by using the Inventory on-hand mobile workspace</span></span>
+## <a name="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace"></a><span data-ttu-id="76eb9-161">手持ち在庫モバイル ワークスペースを使用して、製品の手持ち在庫を表示します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-161">View the on-hand inventory for a product by using the Inventory on-hand mobile workspace</span></span>
 
-1.  <span data-ttu-id="124ab-162">モバイル デバイスで、**手持ち在庫** ワークスペースを選択します。</span><span class="sxs-lookup"><span data-stu-id="124ab-162">On your mobile device, select the **Inventory on-hand** workspace.</span></span>
+1.  <span data-ttu-id="76eb9-162">モバイル デバイスで、**手持ち在庫** ワークスペースを選択します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-162">On your mobile device, select the **Inventory on-hand** workspace.</span></span>
 
-2.  <span data-ttu-id="124ab-163">**品目の手持ち在庫の確認** を選択します。</span><span class="sxs-lookup"><span data-stu-id="124ab-163">Select **Check on-hand for an item**.</span></span> <span data-ttu-id="124ab-164">オフラインで使用する場合のために、アプリにロードされた製品のリストが表示されます。</span><span class="sxs-lookup"><span data-stu-id="124ab-164">You see a list of the products that are loaded into your app for offline use.</span></span> <span data-ttu-id="124ab-165">既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。</span><span class="sxs-lookup"><span data-stu-id="124ab-165">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="124ab-166">詳細については、開発者は [モバイル プラットフォーム](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md) を確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="124ab-166">For more information, developers should see [Mobile platform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md).</span></span>
-3.  <span data-ttu-id="124ab-167">品目が一覧にない場合は、**検索を続ける** を選択します。</span><span class="sxs-lookup"><span data-stu-id="124ab-167">If your item isn't in the list, select **Search more**.</span></span> <span data-ttu-id="124ab-168">製品番号で検索するか、または製品名での検索に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="124ab-168">Search by product number, or switch to a search by product name.</span></span>
+2.  <span data-ttu-id="76eb9-163">**品目の手持ち在庫の確認** を選択します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-163">Select **Check on-hand for an item**.</span></span> <span data-ttu-id="76eb9-164">オフラインで使用する場合のために、アプリにロードされた製品のリストが表示されます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-164">You see a list of the products that are loaded into your app for offline use.</span></span> <span data-ttu-id="76eb9-165">既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-165">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="76eb9-166">詳細については、開発者は [モバイル プラットフォーム](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md) を確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="76eb9-166">For more information, developers should see [Mobile platform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md).</span></span>
+3.  <span data-ttu-id="76eb9-167">品目が一覧にない場合は、**検索を続ける** を選択します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-167">If your item isn't in the list, select **Search more**.</span></span> <span data-ttu-id="76eb9-168">製品番号で検索するか、または製品名での検索に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-168">Search by product number, or switch to a search by product name.</span></span>
 
-4.  <span data-ttu-id="124ab-169">製品を選択します。</span><span class="sxs-lookup"><span data-stu-id="124ab-169">Select a product.</span></span> <span data-ttu-id="124ab-170">品目に画像が含まれる場合、画像が表示されます。</span><span class="sxs-lookup"><span data-stu-id="124ab-170">If the item has an image, the image is shown.</span></span>
-5.  <span data-ttu-id="124ab-171">手持ち在庫の状態を表示するために次のオプションの 1 つを選択します。</span><span class="sxs-lookup"><span data-stu-id="124ab-171">Select one of the following options to view the status of on-hand inventory:</span></span>
+4.  <span data-ttu-id="76eb9-169">製品を選択します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-169">Select a product.</span></span> <span data-ttu-id="76eb9-170">品目に画像が含まれる場合、画像が表示されます。</span><span class="sxs-lookup"><span data-stu-id="76eb9-170">If the item has an image, the image is shown.</span></span>
+5.  <span data-ttu-id="76eb9-171">手持ち在庫の状態を表示するために次のオプションの 1 つを選択します。</span><span class="sxs-lookup"><span data-stu-id="76eb9-171">Select one of the following options to view the status of on-hand inventory:</span></span>
 
-    -   <span data-ttu-id="124ab-172">サイトごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="124ab-172">View on-hand per site</span></span>
-    -   <span data-ttu-id="124ab-173">倉庫ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="124ab-173">View on-hand per warehouse</span></span>
-    -   <span data-ttu-id="124ab-174">場所ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="124ab-174">View on-hand per location</span></span>
-    -   <span data-ttu-id="124ab-175">バッチ (バッチで制御された製品に対して) ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="124ab-175">View on-hand per batch (for batch-controlled products)</span></span>
-    -   <span data-ttu-id="124ab-176">在庫の状態ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="124ab-176">View on-hand per inventory status</span></span>
+    -   <span data-ttu-id="76eb9-172">サイトごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="76eb9-172">View on-hand per site</span></span>
+    -   <span data-ttu-id="76eb9-173">倉庫ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="76eb9-173">View on-hand per warehouse</span></span>
+    -   <span data-ttu-id="76eb9-174">場所ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="76eb9-174">View on-hand per location</span></span>
+    -   <span data-ttu-id="76eb9-175">バッチ (バッチで制御された製品に対して) ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="76eb9-175">View on-hand per batch (for batch-controlled products)</span></span>
+    -   <span data-ttu-id="76eb9-176">在庫の状態ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="76eb9-176">View on-hand per inventory status</span></span>
 
-    <span data-ttu-id="124ab-177">製品の手持ち在庫は、次の方法で表示されます:</span><span class="sxs-lookup"><span data-stu-id="124ab-177">Product on-hand inventory is shown in the following ways:</span></span>
-    -   <span data-ttu-id="124ab-178">現物在庫による (このビューは、合計金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="124ab-178">By physical inventory (This view represents the total amount.)</span></span>
-    -   <span data-ttu-id="124ab-179">現物引当済による (このビューは、引当済金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="124ab-179">By physical reserved (This view represents the reserved amount.)</span></span>
-    -   <span data-ttu-id="124ab-180">物理的に利用可能ごと (この表示は予約なしの利用可能な金額を表します。)</span><span class="sxs-lookup"><span data-stu-id="124ab-180">By available physical (This view represents the available amount that has no reservations.)</span></span>
+    <span data-ttu-id="76eb9-177">製品の手持ち在庫は、次の方法で表示されます:</span><span class="sxs-lookup"><span data-stu-id="76eb9-177">Product on-hand inventory is shown in the following ways:</span></span>
+    -   <span data-ttu-id="76eb9-178">現物在庫による (このビューは、合計金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="76eb9-178">By physical inventory (This view represents the total amount.)</span></span>
+    -   <span data-ttu-id="76eb9-179">現物引当済による (このビューは、引当済金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="76eb9-179">By physical reserved (This view represents the reserved amount.)</span></span>
+    -   <span data-ttu-id="76eb9-180">物理的に利用可能ごと (この表示は予約なしの利用可能な金額を表します。)</span><span class="sxs-lookup"><span data-stu-id="76eb9-180">By available physical (This view represents the available amount that has no reservations.)</span></span>

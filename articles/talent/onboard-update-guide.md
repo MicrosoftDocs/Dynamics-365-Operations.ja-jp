@@ -16,39 +16,39 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 071aa79ea75e9a94187dd74dabab940e2cce0f92
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010732"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551959"
 ---
-# <a name="update-onboarding-guides"></a><span data-ttu-id="10c33-103">研修用ガイドの更新</span><span class="sxs-lookup"><span data-stu-id="10c33-103">Update onboarding guides</span></span>
+# <a name="update-onboarding-guides-in-dynamics-365-talent---onboard"></a><span data-ttu-id="6ae07-103">Dynamics 365 Talent - Onboard における研修用ガイドの更新</span><span class="sxs-lookup"><span data-stu-id="6ae07-103">Update onboarding guides in Dynamics 365 Talent - Onboard</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="10c33-104">Microsoft Dynamics 365 Talent: Onboard の研修用ガイドを変更する必要がある場合、ガイドを既に送信していても、変更の更新およびプッシュを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="10c33-104">If you must make changes to onboarding guides in Microsoft Dynamics 365 Talent: Onboard, you can update them and push the changes, even if you've already sent the guides.</span></span> <span data-ttu-id="10c33-105">研修用ガイドを更新するには 2 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="10c33-105">You have two options for updating an onboarding guide:</span></span>
+<span data-ttu-id="6ae07-104">Microsoft Dynamics 365 Talent: Onboard の研修用ガイドを変更する必要がある場合、ガイドを既に送信していても、変更の更新およびプッシュを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="6ae07-104">If you must make changes to onboarding guides in Microsoft Dynamics 365 Talent: Onboard, you can update them and push the changes, even if you've already sent the guides.</span></span> <span data-ttu-id="6ae07-105">研修用ガイドを更新するには 2 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="6ae07-105">You have two options for updating an onboarding guide:</span></span>
 
-- <span data-ttu-id="10c33-106">研修用ガイドを直接編集し、変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="10c33-106">Edit the onboarding guide directly, and save your changes.</span></span>
-- <span data-ttu-id="10c33-107">研修テンプレートを編集し、作成されたすべての研修ガイドへの変更をプッシュします。</span><span class="sxs-lookup"><span data-stu-id="10c33-107">Edit the onboarding template, and then push the changes to all the onboarding guides that were created from it.</span></span>
+- <span data-ttu-id="6ae07-106">研修用ガイドを直接編集し、変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="6ae07-106">Edit the onboarding guide directly, and save your changes.</span></span>
+- <span data-ttu-id="6ae07-107">研修テンプレートを編集し、作成されたすべての研修ガイドへの変更をプッシュします。</span><span class="sxs-lookup"><span data-stu-id="6ae07-107">Edit the onboarding template, and then push the changes to all the onboarding guides that were created from it.</span></span>
 
-## <a name="edit-an-onboarding-guide-directly"></a><span data-ttu-id="10c33-108">研修ガイドを直接編集する</span><span class="sxs-lookup"><span data-stu-id="10c33-108">Edit an onboarding guide directly</span></span>
+## <a name="edit-an-onboarding-guide-directly"></a><span data-ttu-id="6ae07-108">研修ガイドを直接編集する</span><span class="sxs-lookup"><span data-stu-id="6ae07-108">Edit an onboarding guide directly</span></span>
 
-1. <span data-ttu-id="10c33-109">左側のメニューで、**ガイド**を選択します。</span><span class="sxs-lookup"><span data-stu-id="10c33-109">On the left menu, select **Guides**.</span></span>
-2. <span data-ttu-id="10c33-110">編集するガイドを選択します。</span><span class="sxs-lookup"><span data-stu-id="10c33-110">Select the guide that you want to edit.</span></span>
-3. <span data-ttu-id="10c33-111">必要な変更をすべて行い、**保存**ボタン (ディスクのアイコン) を選択します。</span><span class="sxs-lookup"><span data-stu-id="10c33-111">Make all the desired changes, and then select the **Save** button (the disk symbol).</span></span>
+1. <span data-ttu-id="6ae07-109">左側のメニューで、**ガイド**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6ae07-109">On the left menu, select **Guides**.</span></span>
+2. <span data-ttu-id="6ae07-110">編集するガイドを選択します。</span><span class="sxs-lookup"><span data-stu-id="6ae07-110">Select the guide that you want to edit.</span></span>
+3. <span data-ttu-id="6ae07-111">必要な変更をすべて行い、**保存**ボタン (ディスクのアイコン) を選択します。</span><span class="sxs-lookup"><span data-stu-id="6ae07-111">Make all the desired changes, and then select the **Save** button (the disk symbol).</span></span>
 
-    ![[<span data-ttu-id="10c33-112">研修ガイドへの変更の保存</span><span class="sxs-lookup"><span data-stu-id="10c33-112">Saving changes to an onboarding guide</span></span>](./media/onboard-save.png)](./media/onboard-save.png)
+    ![[<span data-ttu-id="6ae07-112">研修ガイドへの変更の保存</span><span class="sxs-lookup"><span data-stu-id="6ae07-112">Saving changes to an onboarding guide</span></span>](./media/onboard-save.png)](./media/onboard-save.png)
 
-<span data-ttu-id="10c33-113">Onboard は新規採用者に変更内容を示す電子メールを自動的に送信します。</span><span class="sxs-lookup"><span data-stu-id="10c33-113">Onboard will automatically send the new hire an email that indicates what the changes are.</span></span> <span data-ttu-id="10c33-114">識別しやすいように、変更のたびに赤い**新規**タグが横に表示されます。</span><span class="sxs-lookup"><span data-stu-id="10c33-114">For easy identification, a red **New** tag will appear next to each change.</span></span>
+<span data-ttu-id="6ae07-113">Onboard は新規採用者に変更内容を示す電子メールを自動的に送信します。</span><span class="sxs-lookup"><span data-stu-id="6ae07-113">Onboard will automatically send the new hire an email that indicates what the changes are.</span></span> <span data-ttu-id="6ae07-114">識別しやすいように、変更のたびに赤い**新規**タグが横に表示されます。</span><span class="sxs-lookup"><span data-stu-id="6ae07-114">For easy identification, a red **New** tag will appear next to each change.</span></span>
 
-## <a name="update-multiple-guides-by-editing-the-onboarding-template"></a><span data-ttu-id="10c33-115">研修テンプレートを編集して複数のガイドを更新する</span><span class="sxs-lookup"><span data-stu-id="10c33-115">Update multiple guides by editing the onboarding template</span></span>
+## <a name="update-multiple-guides-by-editing-the-onboarding-template"></a><span data-ttu-id="6ae07-115">研修テンプレートを編集して複数のガイドを更新する</span><span class="sxs-lookup"><span data-stu-id="6ae07-115">Update multiple guides by editing the onboarding template</span></span>
 
-1. <span data-ttu-id="10c33-116">左側のメニューで、**テンプレート**を選択します。</span><span class="sxs-lookup"><span data-stu-id="10c33-116">On the left menu, select **Templates**.</span></span>
-2. <span data-ttu-id="10c33-117">**自分のテンプレート**で、編集するテンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="10c33-117">Under **My templates**, select the template that you want to edit.</span></span>
-3. <span data-ttu-id="10c33-118">必要な変更をすべて行い、**保存**ボタン (ディスクのアイコン) を選択します。</span><span class="sxs-lookup"><span data-stu-id="10c33-118">Make all the desired changes, and then select the **Save** button (the disk symbol).</span></span>
-4. <span data-ttu-id="10c33-119">テンプレートに基づくすべてのガイドに変更をプッシュするには、**これらの変更をプッシュ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="10c33-119">To push your changes to all the guides that are based on the template, select **Push these changes**.</span></span>
+1. <span data-ttu-id="6ae07-116">左側のメニューで、**テンプレート**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6ae07-116">On the left menu, select **Templates**.</span></span>
+2. <span data-ttu-id="6ae07-117">**自分のテンプレート**で、編集するテンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="6ae07-117">Under **My templates**, select the template that you want to edit.</span></span>
+3. <span data-ttu-id="6ae07-118">必要な変更をすべて行い、**保存**ボタン (ディスクのアイコン) を選択します。</span><span class="sxs-lookup"><span data-stu-id="6ae07-118">Make all the desired changes, and then select the **Save** button (the disk symbol).</span></span>
+4. <span data-ttu-id="6ae07-119">テンプレートに基づくすべてのガイドに変更をプッシュするには、**これらの変更をプッシュ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6ae07-119">To push your changes to all the guides that are based on the template, select **Push these changes**.</span></span>
 
-    ![[<span data-ttu-id="10c33-120">作成されたすべての研修ガイドへ研修テンプレートの変更をプッシュ</span><span class="sxs-lookup"><span data-stu-id="10c33-120">Pushing the changes in an onboarding template to all guides that were created from it</span></span>](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
+    ![[<span data-ttu-id="6ae07-120">作成されたすべての研修ガイドへ研修テンプレートの変更をプッシュ</span><span class="sxs-lookup"><span data-stu-id="6ae07-120">Pushing the changes in an onboarding template to all guides that were created from it</span></span>](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
-<span data-ttu-id="10c33-121">変更は、研修ガイドを開く新規採用者に表示されます。</span><span class="sxs-lookup"><span data-stu-id="10c33-121">The changes will be visible to new hires who open the onboarding guides.</span></span> <span data-ttu-id="10c33-122">ただし、Onboard は、新規採用者に研修ガイドが変更されたことを知らせる電子メールアラートを送信しません。</span><span class="sxs-lookup"><span data-stu-id="10c33-122">However, Onboard won't send email alerts to new hires to let them know that their onboarding guide has changed.</span></span> <span data-ttu-id="10c33-123">識別しやすいように、変更のたびに赤い**新規**タグが横に表示されます。</span><span class="sxs-lookup"><span data-stu-id="10c33-123">For easy identification, a red **New** tag will appear next to each change.</span></span> 
+<span data-ttu-id="6ae07-121">変更は、研修ガイドを開く新規採用者に表示されます。</span><span class="sxs-lookup"><span data-stu-id="6ae07-121">The changes will be visible to new hires who open the onboarding guides.</span></span> <span data-ttu-id="6ae07-122">ただし、Onboard は、新規採用者に研修ガイドが変更されたことを知らせる電子メールアラートを送信しません。</span><span class="sxs-lookup"><span data-stu-id="6ae07-122">However, Onboard won't send email alerts to new hires to let them know that their onboarding guide has changed.</span></span> <span data-ttu-id="6ae07-123">識別しやすいように、変更のたびに赤い**新規**タグが横に表示されます。</span><span class="sxs-lookup"><span data-stu-id="6ae07-123">For easy identification, a red **New** tag will appear next to each change.</span></span> 

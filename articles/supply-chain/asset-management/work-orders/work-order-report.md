@@ -3,7 +3,7 @@ title: 作業指示書レポート
 description: このトピックでは資産管理の作業指示書レポートについて説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,41 +16,38 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d2843a57aad7cc8525a689d4643875970849e31
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 6eb5c5156898fc826376ae35745ff4a7451d00c6
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875749"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626388"
 ---
-# <a name="work-order-report"></a><span data-ttu-id="5e080-103">作業指示書レポート</span><span class="sxs-lookup"><span data-stu-id="5e080-103">Work order report</span></span>
-
+# <a name="work-order-report"></a><span data-ttu-id="56c25-103">作業指示書レポート</span><span class="sxs-lookup"><span data-stu-id="56c25-103">Work order report</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
+<span data-ttu-id="56c25-104">選択した 1 つ以上の作業指示書に関する詳細情報を示す作業指示書レポートを生成できます。</span><span class="sxs-lookup"><span data-stu-id="56c25-104">You can generate a work order report that shows detailed information about one or more work orders that you select.</span></span>
 
-<span data-ttu-id="5e080-104">作業指示書に関する詳細情報を示す作業指示書レポートを生成できます。</span><span class="sxs-lookup"><span data-stu-id="5e080-104">You can generate a work order report that shows detailed information about a work order.</span></span> <span data-ttu-id="5e080-105">レポート内に表示する 1 つまたは複数の作業指示書を選択することが可能です。</span><span class="sxs-lookup"><span data-stu-id="5e080-105">It is possible to select one or several work orders to be displayed in the report.</span></span>
+1. <span data-ttu-id="56c25-105">**資産管理** > **レポート** > **作業指示書** > **作業指示書レポート**を選択します。</span><span class="sxs-lookup"><span data-stu-id="56c25-105">Select **Asset management** > **Reports** > **Work orders** > **Work order report**.</span></span>
 
-1. <span data-ttu-id="5e080-106">**資産管理** > **レポート** > **作業指示書** > **作業指示書レポート**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e080-106">Click **Asset management** > **Reports** > **Work orders** > **Work order report**.</span></span>
+2. <span data-ttu-id="56c25-106">レポートに含める詳細を決定するために、必要に応じて切り替えボタンの「はい」/「いいえ」を選択します。</span><span class="sxs-lookup"><span data-stu-id="56c25-106">Select "Yes"/"No" on the toggle buttons as you require, to determine the details to be included in the report.</span></span>  
+    - <span data-ttu-id="56c25-107">**印刷設定**セクションでは、関連するメンテナンス作業タイプの設定から添付ファイルを含めるかどうかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="56c25-107">In the **Print settings** section, you can select whether to include attachments from the setup of the related maintenance job type.</span></span>
 
-2. <span data-ttu-id="5e080-107">レポートに含める詳細を決定するために、切り替えボタンの「はい」/「いいえ」を選択し、必要に応じてフィールドに入力します。</span><span class="sxs-lookup"><span data-stu-id="5e080-107">Select "Yes"/"No" on the toggle buttons and fill out fields as required, to determine the details to be included in the report.</span></span>  
-  <span data-ttu-id="5e080-108">a.</span><span class="sxs-lookup"><span data-stu-id="5e080-108">a.</span></span> <span data-ttu-id="5e080-109">**印刷設定**セクションでは、関連するメンテナンス作業タイプの設定から添付ファイルを印刷に含めるかどうかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="5e080-109">In the **Print settings** section, you can select if you want to include attachments from the related maintenance job type setup in the print.</span></span>
+3. <span data-ttu-id="56c25-108">クイックタブを**含めるレコード**では、**作業指示書**別にレポートのコンテンツをフィルタリングできます。</span><span class="sxs-lookup"><span data-stu-id="56c25-108">On the **Records to include** FastTab, you can filter the contents of the report by **Work order**.</span></span>
 
-3. <span data-ttu-id="5e080-110">クイックタブを**含めるレコード**では、**作業指示書**別にレポートのコンテンツをフィルタリングできます。</span><span class="sxs-lookup"><span data-stu-id="5e080-110">On the **Records to include** FastTab, you can filter the contents of the report by **Work order**.</span></span>
+4. <span data-ttu-id="56c25-109">**バックグラウンドで実行**クイック タブでは、必要に応して作業指示書レポートの生成をバッチ ジョブとして設定できます。</span><span class="sxs-lookup"><span data-stu-id="56c25-109">On the **Run in the background** FastTab, you can set up generation of the work order report as a batch job, as you require.</span></span>
 
-4. <span data-ttu-id="5e080-111">必要に応じて、**バックグラウンドで実行**クイックタブでフィールドに入力することにより、作業指示書レポート生成をバッチジョブとして設定できます。</span><span class="sxs-lookup"><span data-stu-id="5e080-111">If required, you can set up work order report generation as a batch job by filling out the fields on the **Run in the background** FastTab.</span></span>
+5. <span data-ttu-id="56c25-110">**OK** を選択してレポートを生成します。</span><span class="sxs-lookup"><span data-stu-id="56c25-110">Select **OK** to generate the report.</span></span>
 
-5. <span data-ttu-id="5e080-112">**OK** をクリックしてレポートを生成します。</span><span class="sxs-lookup"><span data-stu-id="5e080-112">Click **OK** to generate the report.</span></span>
-
-<span data-ttu-id="5e080-113">以下の例では、パラメーターの設定方法と、関連する作業指示書レポートについて説明します。</span><span class="sxs-lookup"><span data-stu-id="5e080-113">Below you see an example of how parameters can be set up, and the related work order report.</span></span>
+<span data-ttu-id="56c25-111">次の図は、レポート パラメーターの設定方法の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="56c25-111">The following illustration shows an example of how the report parameters can be set up.</span></span>
 
 ![図 1](media/20-work-orders.png)
 
+<span data-ttu-id="56c25-113">次の図は、その設定に基づいて生成される作業指示書レポートの例を示しています。</span><span class="sxs-lookup"><span data-stu-id="56c25-113">The following illustration shows an example of a work order report that is generated based on that setup.</span></span>
 
 ![図 2](media/21-work-orders.png)
-
 
