@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8d9c8afc139c96e32efb3161d35fde685b8abcc5
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 89e13179e17b7cf075d631bc65d82da5f24da624
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874673"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569849"
 ---
 # <a name="scheduled-execution"></a>実行予定
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 ワーク オーダーのサービス レベルを使用して、実行予定を設定できます。 (ワーク オーダーのサービス レベルの詳細については、[サービス レベルおよび説明](service-level-and-description.md)を参照してください。) 実行予定により、メンテナンス作業者の作業計画に柔軟性がもたらされます。これは、ワーク オーダーを完了する間隔について、より詳細な要件または詳細度の低い要件を設定できるためです。 たとえば、生産施設で予定よりも早く作業を完了するメンテナンス作業者は、現在の週に計画されていますが、当日とは限らない別の近い作業に進むことができます。 このアプローチでは、作業者の計画とジョブの完了を最適化できます。
 
@@ -42,4 +42,4 @@ ms.locfileid: "1874673"
 5. **実行予定**フィールドで、時間間隔を選択します。
 6. **保存** を選択します。
 
-![図 1](media/20-setup-for-work-orders.png)
+![実行予定](media/20-setup-for-work-orders.png)

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f7af87f359cfe3a606c8be857dd905bfef75e97
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: c42f259a57675c3dbac829d6d671e91982ef9011
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847462"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571694"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>メンテナンス要求からの作業指示書の作成
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 メンテナンス要求を作成した後、それらを簡単に作業指示書に変換できます。 このトピックでは、メンテナンス要求を処理し、複数のメンテナンス要求を同時更新してから、複数のメンテナンス要求の作業指示書を同時に作成する最も簡単な方法について説明します。 **有効なメンテナンス要求**または**個人用の機能的な場所のメンテナンス要求**ページで、一度に 1 つのメンテナンス依頼を処理し、1 つのメンテナンス依頼を作業指示書に変換することもできます。
@@ -53,5 +53,5 @@ ms.locfileid: "1847462"
 
 6. **資産管理** \> **共通** \> **作業指示書** \> **すべての作業指示書**の順に選択し、新しい作業指示書を開きます。
 
-    ![図 1](media/05-manage-maintenance-requests.png)
+    ![新しい作業指示書を開く](media/05-manage-maintenance-requests.png)
 

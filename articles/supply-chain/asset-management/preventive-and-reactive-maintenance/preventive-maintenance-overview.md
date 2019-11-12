@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 02ea3affca727802b241f87b801e0742ac0aa41a
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 2d079c10331360c035ff800650ed3102c2cc3ad4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922094"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569987"
 ---
 # <a name="preventive-maintenance-overview"></a>予防的メンテナンスの概要
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 このトピックでは、資産管理における予防的メンテナンスについて説明します。 予防的メンテナンスは、通常のサービス、調整、検査など、計画されたメンテナンス作業を含む訓練分野です。 **資産管理**で、メンテナンス計画を作成し、資産と機能の場所に設定することができます。 メンテナンス ラウンドを機能の場所に設定することもできます。 資産のメンテナンス計画は、資産が導入されている場所に関係なく有効です。 機能の場所にあるメンテナンス計画とメンテナンス ラウンドは、現在その場所に導入されている資産に対して有効です。 資産に対してメンテナンス計画を設定したり、機能の場所にメンテナンス ラウンドを設定する代わりに、同じ作業ルーティンのメンテナンス作業タイプに関連して実行する必要のある複数の資産が含まれるメンテナンス ラウンドを作成することができます。 (機能の場所で作成される代わりに) 資産から作成されたメンテナンス ラウンドの場合、1 つのメンテナンス ラウンドに対して、同じ機能の場所に導入されていない、複数の資産を選択することができます。
 

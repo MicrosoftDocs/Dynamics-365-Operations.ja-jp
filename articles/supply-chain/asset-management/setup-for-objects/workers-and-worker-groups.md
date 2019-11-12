@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c85fc24cdf0b3cd1a188ccf0f477ffbfa5fab960
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f0a8fcf26da02bd42f6ee45687c585091e3b945e
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783394"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570981"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>メンテナンス作業者および作業者グループ
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 このトピックでは、資産管理のメンテナンス作業者および作業者グループについて説明します。 資産管理では、メンテナンス作業者を機能的な場所に接続することができます。 (機能的な場所の詳細については、[機能的な場所の作成](../functional-locations/create-functional-locations.md)を参照してください。) このメンテナンス機能は、たとえば、機能的な場所 01 にあるマシンでメンテナンス ジョブをスケジュールし、同じ場所からメンテナンス作業者を割り当ててジョブを実行する場合に役立ちます。
 

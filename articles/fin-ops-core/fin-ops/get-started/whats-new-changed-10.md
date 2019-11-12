@@ -3,11 +3,12 @@ title: Finance and Operations バージョン 10.0 (2019 年 4 月) の新機能
 description: このトピックでは Microsoft Dynamics 365 for Finance and Operations バージョン 10.0 のプレビュー中の機能について説明します。 このバージョンは、2019 年 4 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 28cf1ec8649cbf99fd0780d06e50326879d4b929
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 90f1d97cbfadf61c981a9fc3a712b2bc14fc40c8
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191735"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627630"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-100-april-2019"></a>Finance and Operations バージョン 10.0 (2019 年 4 月) の新機能および変更された機能
 
@@ -39,7 +40,7 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 ## <a name="catch-weight-product-processing-with-warehouse-management"></a>倉庫管理による CW 製品の処理
 この機能を使用すると、倉庫管理プロセス内の CW 製品を使用できます。 この機能は、今回のリリースの制限対象者のみに提供できます。 
 
-詳細については、[倉庫管理の CW 製品処理](../../supply-chain/warehousing/catch-weight-processing.md) を参照してください。
+詳細については、[倉庫管理の CW 製品処理](../../../supply-chain/warehousing/catch-weight-processing.md) を参照してください。
 
 ## <a name="master-planning-stability-and-recovery-improvements"></a>マスター プランの安定性と復元性の改善
 
@@ -55,7 +56,7 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 
 ## <a name="realize-the-conditional-tax-when-postdated-checks-are-drawn"></a>先日付小切手が引き落とされたときに条件付税を現金化する
 
-条件付加税とは、一部の国/地域で必要とされる現金対象の付加価値税 (VAT) です。 請求書の支払を行うまでは、この税を差し引くことができます。 支払方法が先日付小切手の場合は、支払いの際、または先日付小切手が引き落とされる際に税金を現金化するオプションがあります。 このオプションを有効にするには **現金および銀行管理パラメーター > 先日付小切手 > 先日付小切手が引き落とされるときに、条件付け税を現金化** に移動します。 詳細については、「 [条件付消費税](../../financials/general-ledger/indirect-taxes-overview.md#conditional-sales-tax) 」を参照してください。 
+条件付加税とは、一部の国/地域で必要とされる現金対象の付加価値税 (VAT) です。 請求書の支払を行うまでは、この税を差し引くことができます。 支払方法が先日付小切手の場合は、支払いの際、または先日付小切手が引き落とされる際に税金を現金化するオプションがあります。 このオプションを有効にするには **現金および銀行管理パラメーター > 先日付小切手 > 先日付小切手が引き落とされるときに、条件付け税を現金化** に移動します。 詳細については、「 [条件付消費税](../../../finance/general-ledger/indirect-taxes-overview.md#conditional-sales-tax) 」を参照してください。 
 
 ## <a name="non-gst-transactions-for-india"></a>インド向けの非販売税トランザクション 
 この機能を使用すると、税エンジンを使用して非販売税トランザクションを作成できます。 非販売税トランザクションを作成するには、それぞれの課税対象トランザクション行の **税情報** で **非販売税** チェック ボックスを選択します。 また、**参照番号順序グループ** に **供給の請求** の **番号順序コード** があることも確認する必要があります。 これらのトランザクションは、販売税還付 (GSTR) で非販売税トランザクションとして識別されます。 
@@ -110,7 +111,7 @@ Finance and Operations の税分類とコードを管理することも可能で
 - BaiWangが提供するソフトとの間に新たなインターフェイスが実装されており、BaiWangのソフトウェアから出力された .TXT形式と.XML形式のファイルをインポートでき、発行されたインボイスを .XML形式で出力することができます。
 - 発行するインボイスの構成が更新されたため、Aisinoが提供するソフトウェアに .TXT ファイルをインポートして連携することが可能となりました。
 
-詳細については、 [中国の税統合の構成](../../financials/localizations/apac-chn-tax-integration.md) を参照してください。
+詳細については、 [中国の税統合の構成](../../../finance/localizations/apac-chn-tax-integration.md) を参照してください。
 
 ## <a name="electronic-reporting-er"></a>電子申告 (ER)
 
@@ -161,7 +162,7 @@ Finance and Operations の税分類とコードを管理することも可能で
 - 会社の現金持高を管理する
 - 集中管理方式で会社のキャッシュ フローを管理する
 
-詳細については、「 [キャッシュ フローの管理 (ロシア) ](../../financials/localizations/rus-cash-flow.md) 」を参照してください。
+詳細については、「 [キャッシュ フローの管理 (ロシア) ](../../../finance/localizations/rus-cash-flow.md) 」を参照してください。
 
 ### <a name="other-incomes-and-expenses-profit-tax-registers"></a>その他の収入/支出 収益税 の登録
 
@@ -185,7 +186,7 @@ Finance and Operations の税分類とコードを管理することも可能で
 Finance and Operations 10.0 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://go.microsoft.com/fwlink/?linkid=2080156)を参照してください。 
 
 ## <a name="regulatory-updates"></a>規制の更新
-Finance and Operations の規制の更新については、[ローカライズおよび規制機能 – 規制の更新](../../financials/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
+Finance and Operations の規制の更新については、[ローカライズおよび規制機能 – 規制の更新](../../../finance/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
 
 ### <a name="platform-update-24"></a>プラットフォーム update 24
 Microsoft Dynamics 365 for Finance and Operations バージョン 10.0 には、プラットフォーム更新プログラム 24 が含まれています。 プラットフォーム更新プロフラム 24 については [Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](whats-new-platform-update-24.md) を参照してください。

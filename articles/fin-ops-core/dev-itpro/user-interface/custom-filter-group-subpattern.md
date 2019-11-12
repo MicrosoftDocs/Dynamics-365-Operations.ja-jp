@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f2825933a8a52c6a9e4c76b31f7e245d713a1bd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fd6d356f879d50407dc31cd2f7060d1c7df39761
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191781"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658848"
 ---
 # <a name="custom-filter-group-subpattern"></a>カスタム フィルター グループのサブパターン
 
@@ -46,11 +46,11 @@ ms.locfileid: "2191781"
 -   **カスタムおよびクイック フィルター**  – このサブパターンでは、QuickFilter コントロールは必須です。
 
 ## <a name="wireframes"></a>ワイヤーフレーム
-### <a name="custom-filterscustomfiltergroup1mediacustomfiltergroup1pngmediacustomfiltergroup1png"></a>カスタム フィルター [![CustomFilterGroup(1)](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
+### <a name="custom-filterscustom-filtersmediacustomfiltergroup1pngmediacustomfiltergroup1png"></a>カスタム フィルター [カスタム フィルター](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
 
 ### <a name="custom-and-quick-filters"></a>カスタムおよびクイック フィルター
 
-![CustomFilterGroup(2)](./media/customfiltergroup2.png)
+![カスタムおよびクイック フィルター](./media/customfiltergroup2.png)
 
 ## <a name="model"></a>モデル
 ### <a name="custom-filters-high-level-structure"></a>カスタム フィルタ – 高レベルの構造
@@ -107,13 +107,13 @@ None
 
 フォーム: **LedgerJournalTable (TopFields)** 
 
-![CustomFilterGroup(3)](./media/customfiltergroup3.png)
+![カスタム フィルター](./media/customfiltergroup3.png)
 
 ### <a name="custom-and-quick-filters"></a>カスタムおよびクイック フィルター
 
 フォーム: **CustTable** **(CustomFilterGroup)** 
 
-[![CustomFilterGroup(4)](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
+[![カスタムおよびクイック フィルター](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-form-patterns"></a>通常、フォームのパターンによって使用される
@@ -151,4 +151,4 @@ None
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
-[![CustomFilterGroup(5)](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
+[![例](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)

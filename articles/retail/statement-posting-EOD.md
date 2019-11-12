@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c22137ad29bf947bc7a9e4c9a4d1332e03b1298
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 1e3fc0e8cb5c9a6cc7729dfbddd5d918a1d6bdb5
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606967"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653374"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>明細書転記機能の改良
 
@@ -37,7 +37,7 @@ ms.locfileid: "1606967"
 
 新しい**小売明細書**コンフィギュレーション キーが有効になると、**小売明細書**という新しいメニュー項目が使用できます。 このメニュー項目は手動で作成、計算、および明細書の転記をすることができます。 バッチの転記プロセスを使用する際にエラーが生じるステートメントは、このメニュー項目を通して使用可能にもなります。 (新しい**小売明細書 (従来)** コンフィギュレーション キーが有効になると、メニュー項目は**未処理の明細書**と呼ばれます。)
 
-Finance and Operations には、これらのコンフィギュレーション キーに関連付けられている以下の検証が含まれています。
+Retail には、これらのコンフィギュレーション キーに関連付けられている以下の検証が含まれています。
 
 - 両方のコンフィギュレーション キーを、同時に有効にすることはできません。
 - ライフサイクル (作成、計算、消去、転記など) の間に指定された明細書上で実行されるすべての工程に対して、同じコンフィギュレーション キーを使用する必要があります 。 たとえば、**小売明細書 (従来)** コンフィギュレーション キーが有効である間は、明細書の計算やを作成することはできません。さらに**小売明細書**コンフィギュレーション キーが有効である間は、同じ明細書を転記しようとします。

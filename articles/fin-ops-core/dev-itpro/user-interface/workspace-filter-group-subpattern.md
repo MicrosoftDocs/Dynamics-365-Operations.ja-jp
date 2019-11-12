@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35bd291adcfc34e801f7f655ff42fda502404223
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 646f97b91501044439df09159de1404636920fc7
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191749"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658796"
 ---
 # <a name="workspace-page-filter-group-subpattern"></a>ワークスペース ページ フィルター グループのサブパターン
 
@@ -37,7 +37,7 @@ ms.locfileid: "2191749"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![workspacePageFilterGroupWireframe](./media/workspacepagefiltergroupwireframe.png)](./media/workspacepagefiltergroupwireframe.png)
+[![ワークスペース ページ フィルター グループのサブパターンのワイヤーフレーム](./media/workspacepagefiltergroupwireframe.png)](./media/workspacepagefiltergroupwireframe.png)
 
 ## <a name="pattern-changes-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 には存在しませんでした。
@@ -68,7 +68,7 @@ ms.locfileid: "2191749"
 ## <a name="examples"></a>例
 フォーム: **ReqCreatePlanWorkspace** (**すべてのワークスペース** &gt; **マスター プラン**) 
 
-[![workspacePageFilterGroupExample](./media/workspacepagefiltergroupexample.png)](./media/workspacepagefiltergroupexample.png)
+[![ワークスペース ページ フィルター グループの例](./media/workspacepagefiltergroupexample.png)](./media/workspacepagefiltergroupexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

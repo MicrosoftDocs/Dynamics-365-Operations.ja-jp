@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03e200a5b5679d6e68592fbdba2354ae9f7f1b75
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2becf8213cfa46e2c0cf0c553f0b5e503dfc3704
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178614"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570243"
 ---
 # <a name="general-journal-processing"></a>一般仕訳帳の処理
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ内部コントロールが悪影響を受けていないことを確認する手助けとなる機能について説明します。  
 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3336a3357578b25522e1ac457a48349f88b7318d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b3ccbb7eed643abf613f8b75ae78854246d20f6d
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024571"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569879"
 ---
 # <a name="asset-management-parameters"></a>資産管理パラメーター
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 資産管理では、資産、ワーク オーダー、およびワーク オーダーのスケジューリングに関連する一般的なパラメーターを設定する必要があります。 このトピックでは、それらを設定する方法について説明します。 **資産管理** > **設定** > **資産管理パラメーター**を選択し、フォームを開きます。
 

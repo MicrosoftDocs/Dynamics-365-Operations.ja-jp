@@ -1,5 +1,5 @@
 ---
-title: AMicrosoft Dynamics 365 Talent - Attract の Linkedln との統合の設定
+title: Microsoft Dynamics 365 Talent - Attract の LinkedIn との統合の設定
 description: このトピックでは、Attract から Linkedln にジョブを簡単に転記し、採用担当者が候補者の Linkedln プロファイルと採用情報を同期できるように、Microsoft Dynamics 365 Talent - Attract の Linkedln 統合のコンフィギュレーション方法を説明します。
 author: andreabichsel
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 6b86cafdf364f2de051f3d8ceab7413c2c13c3a5
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 5cdce69396d6972d810e65e15b27c79119a0a9e6
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009973"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2552120"
 ---
-# <a name="set-up-linkedin-integration"></a>LinkedIn 統合の設定
+# <a name="set-up-integration-with-linkedin-for-microsoft-dynamics-365-talent---attract"></a>Microsoft Dynamics 365 Talent - Attract の LinkedIn との統合の設定
 
 [!include[banner](../includes/banner.md)]
 

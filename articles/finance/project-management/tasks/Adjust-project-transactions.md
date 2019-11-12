@@ -1,5 +1,5 @@
 ---
-title: トランザクションの調整
+title: プロジェクト トランザクションの調整
 description: このタスク ガイドでは、プロジェクトのトランザクションを調整する方法を説明します。
 author: KimANelson
 manager: AnnBe
@@ -16,12 +16,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f693e8d2cbe197b2bdbb5c3961e8b17424908f77
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d3412b4f9b2d25072628eb50f5c763f5a7bce793
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185454"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551175"
 ---
 # <a name="adjust-project-transactions"></a>プロジェクト トランザクションの調整
 

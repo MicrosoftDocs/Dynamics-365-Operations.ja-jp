@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfd62a18d6b4cfc8c41d9025a8fc5deb8768ed3f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 609146ebc5a31e5b28ca9ed6e04ed82b6bb1b03e
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250924"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571119"
 ---
 # <a name="maintenance-requests"></a>メンテナンス要求
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 社内で使用するさまざまなタイプの要求を設定できます。 メンテナンス要求は 1 つのタイプです。 メンテナンス要求は、特定のジョブに対してワーク オーダーが必要であることを要求するために使用されます。 メンテナンス要求は、資産管理の機能にアクセスできるすべてのユーザーが作成できます。 プランナーまたはマネージャーは、メンテナンス要求をワーク オーダーに変換するか、または独自のライフサイクルを完了する必要があるかどうかを決定できます。
 
@@ -41,4 +41,4 @@ ms.locfileid: "2250924"
 
 次の図は、**すべてのメンテナンス要求**リスト ページの例を示しています。
 
-![図 1](media/01-setup-for-requests.png)
+![すべてのメンテナンス要求リスト ページ](media/01-setup-for-requests.png)

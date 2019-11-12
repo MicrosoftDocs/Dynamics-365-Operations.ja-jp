@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 05881b6e6e501ff3ac5a622d99fd1aaa311727a1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f4f6de139d0399263fa19507d63e9521f489dcbd
+ms.sourcegitcommit: 38ce9f4ef499ad208f2fbbc51bc21b12c67dfa16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249520"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2574802"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>手持ち在庫モバイル ワークスペース
 
@@ -56,9 +56,9 @@ ms.locfileid: "2249520"
     -   引当可能現物数による (このビューは予約がない使用可能な残りの金額を表します)。
 
 ## <a name="prerequisites"></a>必要条件
-組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
+組織に配置されている Supply Chain Management のバージョンによって、前提条件は異なります。
 
-### <a name="prerequisites-if-you-use-finance-and-operations"></a>Finance and Operations を使用する場合の前提条件 
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Management を使用する場合の前提条件
 Supply Chain Management が組織に配置されている場合、システム管理者は**手持在庫**モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a>プラットフォーム 更新プログラム 3 以降を使用する場合の前提条件 

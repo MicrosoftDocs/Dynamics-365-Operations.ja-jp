@@ -1,6 +1,6 @@
 ---
 title: 標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
-description: このトピックでは、Finance and Operations アプリケーションに対してデータベースをエクスポートするシナリオついて説明します。
+description: このトピックでは、Finance and Operations に対してデータベースをエクスポートするシナリオついて説明します。
 author: LaneSwenka
 manager: AnnBe
 ms.date: 07/08/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 992d277b74f776d8a1be9777a0e058ac6d30be90
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 2dfd69256becc410a12de8496543f1a67c69c70a
+ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249075"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2572704"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -37,6 +37,9 @@ ms.locfileid: "2249075"
 > * データベースをインポートし、開発者環境で使用できるようにそれを準備します。
 
 このシナリオの例として、既に稼働している顧客が、生産トランザクションの最新のコピーを開発環境に読み込もうとしているということがあります。 これにより、顧客は特定のトランザクションをデバッグしたり、または実際的なデータセットを使用して新しい機能とレポートを開発できます。
+
+> [!IMPORTANT]
+> ビルド環境へのデータベースのコピーはサポートされていません。 詳細については、[ビルド環境](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments) で確認してください
 
 ## <a name="known-limitations"></a>既知の制限
 

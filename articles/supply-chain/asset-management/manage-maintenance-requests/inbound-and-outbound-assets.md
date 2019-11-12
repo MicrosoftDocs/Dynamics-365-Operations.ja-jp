@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62998da7f541379296d5ac325ae29f24a42f9b7c
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: bb318c24424c291f08ba7527b2258c0da4cba9a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847554"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571671"
 ---
 # <a name="inbound-and-outbound-assets"></a>入庫および出庫資産
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 会社が他の場所または顧客から受け取った資産の修復作業またはメンテナンス作業をする場合、資産管理は、会社に向かう途中の入庫資産と返される出庫資産の両方を追跡できます。
 
@@ -45,7 +45,7 @@ ms.locfileid: "1847554"
 3. **メンテナンス要求の状態の更新**を選択します。
 4. **入庫** (または入庫資産用に作成した別のライフサイクル状態) を選択し、**OK** を選択します。
 
-![図 1](media/07-manage-maintenance-requests.png)
+![資産を入庫として登録する](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>入庫資産を入庫済として登録する
 
@@ -54,7 +54,7 @@ ms.locfileid: "1847554"
 3. **資産の受入**を選択します。
 4. **受入済**フィールドで、日時を入力します。 その後、**OK** を選択します。 レコードは、**入庫資産**リスト ページから削除されます。
 
-![図 2](media/08-manage-maintenance-requests.png)
+![入庫資産を入庫済として登録する](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>資産を出庫として登録する
 

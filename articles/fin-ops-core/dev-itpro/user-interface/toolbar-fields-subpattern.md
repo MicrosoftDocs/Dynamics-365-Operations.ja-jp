@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8483c28d3b5b1fda719a7798bacfa01be942eb98
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a94273fcb9b0ce46929b04c55f6b917352368ee
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183029"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658799"
 ---
 # <a name="toolbar-and-fields-subpattern"></a>ツールバーおよびフィールドのサブパターン
 
@@ -37,12 +37,12 @@ ms.locfileid: "2183029"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![ToolbarFields(1)](./media/toolbarfields1.png)](./media/toolbarfields1.png)
+[![ツール バーおよびフィールドのサブパターンのワイヤーフレーム](./media/toolbarfields1.png)](./media/toolbarfields1.png)
 
 ## <a name="model"></a>モデル
 ### <a name="high-level-structure"></a>高レベル構造体
 
-- \[コンテナ\]
+- \[コンテナー\]
 
     - ツールバー (ActionPane、スタイル=ストライプ)
     - ContentGroup (グループ) – **注記:** フィールドのサブパターンが使用されます。
@@ -79,7 +79,7 @@ ms.locfileid: "2183029"
 
 フォーム: **HcmPosition** **(WorkerAssignmentTabPage)** 
 
-[![ToolbarFields(2)](./media/toolbarfields2-1024x131.png)](./media/toolbarfields2.png)
+[![ツール バーおよびフィールドのサブパターンの例](./media/toolbarfields2-1024x131.png)](./media/toolbarfields2.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -103,4 +103,4 @@ ms.locfileid: "2183029"
 
 **HcmPosition** 
 
-![ToolbarFields(3)](./media/toolbarfields3.png)
+![以前のバージョンのツール バーおよびフィールド](./media/toolbarfields3.png)

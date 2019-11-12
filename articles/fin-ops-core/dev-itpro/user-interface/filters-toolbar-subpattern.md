@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d57142136d2edefe94b379465c02bd5170f74c57
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 85bf41c63897b43196ce34a101b362ef5f0c0fc3
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191774"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658844"
 ---
 # <a name="filters-and-toolbar-subpatterns"></a>フィルターおよびツールバーのサブパターン
 
@@ -50,11 +50,11 @@ ms.locfileid: "2191774"
 ## <a name="wireframe"></a>ワイヤーフレーム
 ### <a name="filters-and-toolbar---inline"></a>フィルターおよびツールバー - インライン
 
-[![filterToolbarInlineWireframe](./media/filtertoolbarinlinewireframe.png)](./media/filtertoolbarinlinewireframe.png)
+[![フィルターとツール バーのワイヤフレーム -- インライン](./media/filtertoolbarinlinewireframe.png)](./media/filtertoolbarinlinewireframe.png)
 
 ### <a name="filters-and-toolbar---stacked"></a>フィルターおよびツールバー - 積み上げ
 
-[![filterToolbarStackedWireframe](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
+[![フィルターとツール バーのワイヤフレーム -- 積み上げ](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
 
 ## <a name="model"></a>モデル
 ### <a name="filters-and-toolbar---inline-high-level-structure"></a>フィルターおよびツールバー - インライン: 高度なレベル構造
@@ -108,13 +108,13 @@ ms.locfileid: "2191774"
 
 フォーム: **HcmWorkforceManagement** &gt; **HcmOpenPositionsPart** (**すべてのワークスペース** &gt; **要員管理**) 
 
-[![filterToolbarInline](./media/filtertoolbarinline.png)](./media/filtertoolbarinline.png)
+[![フィルターとツールバーの例 -- インライン](./media/filtertoolbarinline.png)](./media/filtertoolbarinline.png)
 
 ### <a name="filters-and-toolbar---stacked"></a>フィルターおよびツールバー - 積み上げ
 
 フォーム: **HcmWorkforceManagement** &gt; **HcmWorkerOnLeaveListPart** (**すべてのワークスペース** &gt; **要員管理**) 
 
-[![filterToolbarStacked](./media/filtertoolbarstacked.png)](./media/filtertoolbarstacked.png)
+[![フィルターとツールバーの例 -- 積み上げ](./media/filtertoolbarstacked.png)](./media/filtertoolbarstacked.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

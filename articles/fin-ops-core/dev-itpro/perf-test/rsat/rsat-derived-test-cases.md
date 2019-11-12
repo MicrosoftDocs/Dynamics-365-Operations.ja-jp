@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95252fdd36a8ac2b24e5a6d2c757ac7fff416fdb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d485eb8088af8a962e32ab0eb42232e49b5e78d2
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191808"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570537"
 ---
 # <a name="derived-test-cases"></a>派生テスト ケース
 
@@ -31,11 +31,11 @@ Regression Suite Automation Tool を使用すると、複数のコンフィギ�
 
 次の図では、 **仕入先の作成** というテスト ケースから派生テスト ケースが作成されています。
 
-![](media/derived-test-case.png)
+![仕入先の作成という名前のテスト ケースから作成された派生テスト ケースの例](media/derived-test-case.png)
  
 派生テスト ケースは、 Azure DevOps で自動的に作成されます。 これは、 **仕入先の作成 テスト** ケースの子品目であり、特別なキーワード **RSAT: DerivedTestSteps** でタグ付けされています。
 
-![](media/derived-1.png)
+![自動的に作成された派生テスト ケースの例](media/derived-1.png)
  
 派生テスト ケースを実行 (再生) すると、親テスト ケースの記録と Excel パラメーター ファイルのコピーが使用されます。 これにより、複数の記録を維持することなく、異なるパラメーターで同じテストを実行できます。
 

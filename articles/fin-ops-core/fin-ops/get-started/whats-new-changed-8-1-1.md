@@ -3,11 +3,12 @@ title: Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 1
 description: このトピックでは、Dynamics 365 for Finance and Operations version 8.1.1 の新機能または変更された機能について説明します。 このバージョンは 2018 年 11 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/09/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1.1
-ms.openlocfilehash: f665041cbb496195f8ed71e8a974b9413e79d6ab
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7c24843c9ccb0850e03c647c36555307ef466a99
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180499"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627637"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-811-november-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 11 月) の新機能および変更された機能
 
@@ -48,11 +49,11 @@ Microsoft Dynamics 365 for Finance and Operations バージョン8.1.1には、�
 
 ## <a name="ledger-settlements"></a>元帳決済
 
-元帳決済では、一般会計の借方および貸方トランザクションを照合し、決済済としてマークすることができます。 この方法で、関連するトランザクションがクリアされていることを確認することができます。 誤って行われた決済を取り消すこともできます。 詳細については、[元帳決済](../../financials/general-ledger/ledger-settlements.md)を参照してください。
+元帳決済では、一般会計の借方および貸方トランザクションを照合し、決済済としてマークすることができます。 この方法で、関連するトランザクションがクリアされていることを確認することができます。 誤って行われた決済を取り消すこともできます。 詳細については、[元帳決済](../../../finance/general-ledger/ledger-settlements.md)を参照してください。
 
 ## <a name="prevent-generating-offset-tax-transactions-during-tax-settlement"></a>税決済時の相殺税トランザクションの生成を防止
 
-税決済プロセス中、システムは相殺税トランザクションを生成しますが、一定期間内に大量の税トランザクションを処理する必要がある場合、パフォーマンスの問題を引き起こす可能性があります。 これが発生しないように、**相殺税トランザクションを生成しないようにする** チェック ボックスが **売上税決済期間** ページに追加されました。 詳細については、「[消費税清算期間の設定](../../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md)」を参照してください。
+税決済プロセス中、システムは相殺税トランザクションを生成しますが、一定期間内に大量の税トランザクションを処理する必要がある場合、パフォーマンスの問題を引き起こす可能性があります。 これが発生しないように、**相殺税トランザクションを生成しないようにする** チェック ボックスが **売上税決済期間** ページに追加されました。 詳細については、「[消費税清算期間の設定](../../../finance/general-ledger/tasks/set-up-sales-tax-settlement-periods.md)」を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 

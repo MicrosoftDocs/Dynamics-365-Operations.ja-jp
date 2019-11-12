@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63e5ec5b2a47706763df8105932d722986535a9b
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: fa458d95592741eacc86ce96b794a7216b37ec84
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783403"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571418"
 ---
 # <a name="asset-view"></a>資産表示
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 このトピックでは、資産管理の資産表示について説明します。 **資産表示**ページには、ツリー ビューに有効な資産と機能的な場所が表示されます。 したがって、機能的な場所への資産関係の概要を簡単に取得できます。 さらに、機能的な場所、資産、および関連する部品表 (BOMs) に関する詳細情報を表示できます。 また、資産に関連する有効なメンテナンス要求とワーク オーダーの概要をすばやく取得することもできます。
 

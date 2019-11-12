@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cdefb4302ae9af1674e1e5c1de14e11120f349b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bbc6f5ba851bd1981b01641e11394b8a942e7bf4
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191787"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578301"
 ---
 # <a name="build-navigation"></a>ナビゲーションの構築
 
@@ -82,7 +82,7 @@ ms.locfileid: "2191787"
 
 プロジェクトをビルドして実行すると、フリート管理係ワークスペースが起動します。 作成した **テスト タイル** という名前の新しいタイルは、タイルのセットの最後にある、ワークスペースの最初のセクションに含まれます。 
 
-[![Nav1](./media/nav1.png)](./media/nav1.png) 
+[![タイル セットのスクリーン ショット](./media/nav1.png)](./media/nav1.png) 
 
 > [!NOTE]
 > タイルがクリックされたとき、どこにも移動しません。 これを有効にするには、**ソリューション エクスプローラー** の**タイル**の下にあるメニュー項目名を FMTAllCustomersTile に定義します。
@@ -126,11 +126,11 @@ ms.locfileid: "2191787"
 6.  **FMTutorial** を右クリックし、**再ビルド** をクリックします。
 7.  **Ctrl+F5** キーを押してプロジェクトを実行します。 プロジェクトをビルドして実行すると、ナビゲーション ウィンドウに新しいワークスペースへのリンクが含まれます。 アプリケーション ウィンドウの右上にある、ナビゲーション ウィンドウのボタン (3 つの明細行) をクリックして、ナビゲーション ウィンドウを開きます。 
 
-    [![Nav2](./media/nav2.png)](./media/nav2.png)
+    [![ナビゲーション ウィンドウ ボタンのスクリーン ショット](./media/nav2.png)](./media/nav2.png)
 
 8.  ナビゲーション ウィンドウを開いたら、**すべてのワークスペース** を選択し、それを開いた後、一覧を下方向にスクロールします。 以下の新しい予約管理チュートリアル ワークスペースが一覧に表示されます。 
 
-    [![Nav3](./media/nav3.png)](./media/nav3.png)
+    [![リストで予約管理チュートリアルを示すスクリーン ショット](./media/nav3.png)](./media/nav3.png)
 
 ### <a name="add-the-form-to-the-main-menu-structure"></a>メイン メニュー構造へのフォームの追加
 
@@ -174,11 +174,11 @@ ms.locfileid: "2191787"
 18. **Ctrl+F5** キーを押してプロジェクトを実行します。
 19. 変更したメイン メニューのセクションに移動します。 ナビゲーション ウィンドウを開いて、新しいトップレベルの**フリート管理のチュートリアル**メニューが表示されるまでスクロールします。 **Ctrl+F5** を押して、ブラウザー キャッシュをクリアすることが必要な場合があります。 
 
-    [![Nav4](./media/nav4.png)](./media/nav4.png)
+    [![ナビゲーション ウィンドウでのフリート管理のチュートリアル メニューのスクリーン ショット](./media/nav4.png)](./media/nav4.png)
 
 20. そのサブメニューを展開するには、**フリート管理のチュートリアル** &gt; **ワークスペース**とクリックします。 ナビゲーション ウィンドウは、次のようになります。 
 
-    [![Nav5](./media/nav5.png)](./media/nav5.png) 
+    [![ナビゲーション ウィンドウのスクリーン ショット](./media/nav5.png)](./media/nav5.png) 
 
     **一般的な** サブメニューをクリックすると、モデル化されているメニュー項目が表示されます。 これらのリンクのいずれかをクリックして、参照を正しく設定したか確認することができます。 参照を正しく設定した場合は、作成中のチュートリアル ワークスペースをクリックすると、開きます。
 

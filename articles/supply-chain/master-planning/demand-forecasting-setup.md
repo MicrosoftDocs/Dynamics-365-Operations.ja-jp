@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdfc5eda1ebf78abe823908324ed9c35215e562e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249573"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653514"
 ---
 # <a name="demand-forecasting-setup"></a>需要予測の設定
 
@@ -72,7 +72,7 @@ ms.locfileid: "2249573"
 
 **注:** カスタム ストレージ アカウントを使用している場合にのみ、Azure ストレージ アカウントの名前とキーが必要です。 オンプレミス バージョンを展開する場合、Machine Learning サービスを履歴データにアクセスできるようにするため、Azure のカスタム ストレージ アカウントが必要です。 
 
-要求予測を作成する場合、Machine Learning Studio または Supply Chain Management の需要予測実験を使用して自分のサービスを配置できます。 需要予測実験を Web サービスとして展開するための手順は、Finance and Operations で入手可能です。 **需要予測パラメーター**ページで、**Azure Machine Learning** タブをクリックします。
+要求予測を作成する場合、Machine Learning Studio または Supply Chain Management の需要予測実験を使用して自分のサービスを配置できます。 需要予測実験を Web サービスとして展開するための手順は、Supply Chain Management で入手可能です。 **需要予測パラメーター**ページで、**Azure Machine Learning** タブをクリックします。
 
 ## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>需要予測 Machine Learning サービスの設定
 需要予測サービスでコンフィギュレーションできるパラメーターを表示するには、**マスター プラン** &gt; **設定** &gt; **需要予測** &gt; **予測アルゴリズム パラメーター**の順に移動します。 **予測アルゴリズム パラメーター**ページでは、パラメーターの既定値を示します。 これらのパラメーターを**需要予測パラメーター**ページで上書きできます。 **一般**タブを使用してパラメーターをグローバルに上書きするか、**品目配賦キー**タブを使用して品目配賦キーごとにパラメーターを上書きします。 品目配賦キーで上書きされるパラメーターの影響を受けるのは、その品目配賦キーによって関連付けられる品目の予測のみです。

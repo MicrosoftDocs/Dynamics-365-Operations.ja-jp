@@ -1,5 +1,5 @@
 ---
-title: 機能コンサルタント学習カタログ
+title: 機能アプリケーション コンサルタント学習カタログ
 description: このトピックでは、さまざまな障害を持つユーザーが Dynamics 365 for Finance and Operations と Dynamics 365 for Retail、および Dynamics 365 for Talent を使用することを支援するようにデザインされた機能について説明します。
 author: margoc
 manager: AnnBe
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 712a8e4d63803f0d9a7a3a76978c2e14ecd997af
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5405b65eac595b078733211bbfd28acb4829e5df
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180602"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550983"
 ---
 # <a name="functional-application-consultant-learning-catalog"></a>機能アプリケーション コンサルタント学習カタログ
 
@@ -47,7 +47,7 @@ ms.locfileid: "2180602"
 | [オンプレミス (ローカル ビジネス データ) 配置 (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017)                                                                     | Dynamics 365 for Finance and Operations Enterprise Edition のオンプレミス配置オプションの概要については、この Tech Talk に参加してください。 このセッションでは、オンプレミス配置のソリューション アーキテクチャ、ALM の側面、システム要件、および Life Cycle Services プロジェクトをプロビジョニングする方法について説明します。                                                                                                                                                                              | Tech Talk (録画されたウェビナー)                                                   | 48 分 |
 | [Go-Live 計画 (DYN458PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/go-live-planning-8-9-18)                                                                                                                                    | Go-Live プロセスについて詳しく説明し、お客様、パートナー、および Microsoft にとって可能な限りスムーズにするために、どのように準備できるかについて説明します。                                                                                                                                                                                                                                                                                                                                            | Tech Talk (録画されたウェビナー)                                                   | 60 分 |
 | [環境計画 (DYN450PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/environment-planning-may-23-2018)                                                                                                                       | 環境計画に関するこの Tech Talk にご参加ください。 標準環境、必要になる可能性のある他の環境、取得および配置のためのオプションとタイミング、および環境間で予想されるコードとデータ フローについて学習します。                                                                                                                                                                                                                                                | Tech Talk (録画されたウェビナー)                                                   | 53 分 |
-| [Finance and Operations: 機能の管理 (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019)                                                                             | 機能管理エクスペリエンスに関する Tech Talk。 各リリースで提供されている機能を表示、有効化、無効化、およびスケジュールできるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 この会議に参加すると、10.0.3 で提供される内容と、今後のリリースの計画を確認できます。                                                                                                               | Tech Talk (録画されたウェビナー)                                                   | 47 分 |
+| [Finance and Operations: 機能の管理 (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019)                                                                             | 機能管理エクスペリエンスに関する技術解説。 各リリースで提供されている機能を表示、有効化、無効化、およびスケジュールできるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 この会議に参加すると、10.0.3 で提供される内容と、今後のリリースの計画を確認できます。                                                                                                               | Tech Talk (録画されたウェビナー)                                                   | 47 分 |
 | [Finance And Operations: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019)                                         | Finance and Operations の継続的な更新頻度が開始されました ! この時間帯に参加して、Microsoft 管理の継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定についてご相談ください。                                                                                                                                                                                                                                                                 | Tech Talk (録画されたウェビナー)                                                   | 61 分 |
 | [Microsoft 管理の継続的な更新プログラム: 新機能 (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18)                                                                 | この 1 時間の間に、Microsoft 管理の継続的な更新に関する最初の発表以来の新機能について説明します。 更新の頻度、プロセスに関する貴重なフィードバックへの対応を説明し、今後の Lifecycle Services のユーザー エクスペリエンスを確認します。これにより、更新を管理できるようになります。                                                                                                                                               | Tech Talk (録画されたウェビナー)                                                   | 56 分 |
 | [Finance And Operations: Microsoft 管理の継続的な更新プログラム: 新機能 - 2018 年 11 月 1 日 (DYN533cust)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18)                      | この 1 時間の間に、Microsoft 管理の継続的な更新頻度に対する更新について説明し、Lifecycle Services におけるユーザー エクスペリエンスを確認します。                                                                                                                                                                                                                                                                                                                                             | Tech Talk (録画されたウェビナー)                                                   | 59 分 |

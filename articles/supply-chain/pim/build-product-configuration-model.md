@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f8e0e98cf1a953355515f9145483aed8cbaa2ad2
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249497"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653651"
 ---
 # <a name="product-configuration-overview"></a>製品コンフィギュレーションの概要
 
@@ -73,7 +73,7 @@ ms.locfileid: "2249497"
 
 ユーザー定義のテーブル制約は、ユーザーによって構築されます。 ユーザーは属性タイプの組み合わせを選択して、テーブルの列を表し、選択した属性タイプのドメインから値を入力して、テーブル制約の行を作ります。  
 
-システム定義のテーブル制約は参照として使用するテーブルを選択することによって定義され、このテーブルからフィールドを選択して、制限の列を作ります。 テーブル制約の行は、コンフィギュレーション時に存在する [Finance and Operations] テーブルの行です。  
+システム定義のテーブル制約は参照として使用するテーブルを選択することによって定義され、このテーブルからフィールドを選択して、制限の列を作ります。 テーブル制約の行は、コンフィギュレーション時に存在する Supply Chain Management テーブルの行です。  
 
 テーブル制約は、テーブル制約定義を参照し、モデルの中で該当する属性をテーブル制限の列へマッピングすることによって製品コンフィギュレーション モデルに含まれます。
 

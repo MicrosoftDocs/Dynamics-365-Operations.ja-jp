@@ -17,42 +17,43 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: efb1ba4d890cbf02296994179efd8198a306505f
-ms.sourcegitcommit: 2555acfd855fc18ff3ba432ba2cf7633a8f1653c
+ms.openlocfilehash: ec6b510e28053c74f2f56b29fd79f1c1764da6e7
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "2238561"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653193"
 ---
 # <a name="sign-mpos-with-a-code-signing-certificate"></a>コード署名証明書を使用して MPOS に署名する
 
 [!include [banner](../includes/banner.md)]
 
-Windows に Modern POS (MPOS) をインストールするには、信頼されたプロバイダーからの署名証明書を使用して MPOS アプリに署名する必要があります。 証明書を使用して MPOS アプリに署名するためのオプションが以下の場所にいくつかあります **Retail SDK\\ビルド ツール\\Customization.settings** ファイル:
+Modern POS (MPOS) をインストールするには、信頼されたプロバイダーからの署名証明書を使用して MPOS アプリに署名する必要があります。 証明書を使用して MPOS アプリに署名するために、**Retail SDK\\ビルド ツール\\Customization.settings** ファイルにあるオプションのいずれかを使用します。
 
-- Azure DevOps ビルド ステップのセキュリティで保護されたファイル タスク部分を追加し、証明書をアップロードしてファイル タスクをセキュリティ保護し、セキュリティで保護されたファイル タスクの出力パス変数を Customization.settings ファイルのパラメータとして使用します。
+- Azure DevOps ビルド ステップのセキュア ファイル タスク部分を追加して、証明書をアップロードしてファイル タスクを保護します。 セキュア ファイル タスクの出力パス変数を Customization.settings ファイルのパラメーターとして使用します。
+
     > [!NOTE] 
-    > セキュリティで保護されたファイル タスクは、パスワードで保護された証明書をサポートしていません。 このタスクにアップロードする前にパスワードを削除する必要があります。 証明書は、Microsoft Azure のセキュリティで保護されたファイル システム タスクにアップロードされるため、このステップのパスワードのみを削除することができます。 パスワードの削除についてセキュリティの専門家と話し合って、これがプロジェクトにとって正しいアクションであるかどうかを判断する必要があります。 ビルド タスクにアップロードされた証明書は、ビルド フロー中にビルド パイプラインによってのみアクセスできます。他のプロセスがアクセスすることはできません。 セキュリティで保護されたファイル タスクを使用すると、ビルド署名プロセス中にパスワード セキュリティの追加レイヤーは必要ありません。 他のシナリオの証明書のパスワードは削除しないでください。
-- ファイル システムに配置された証明書を使用します。証明書をダウンロードまたは生成し、ビルドを実行しているファイル システムに配置します。 VSO エージェントまたはビルド ユーザーは、このパスとファイルにアクセスできる必要があります。
-- 拇印を使用してストア内の証明書を検索し、その証明書で署名します。
+    > セキュリティで保護されたファイル タスクは、パスワードで保護された証明書をサポートしていません。 このタスクをアップロードする前にパスワードを削除する必要があります。 証明書は、Azure のセキュリティで保護されたファイル システム タスクにアップロードされるため、このステップのパスワードのみを削除することができます。 ただし、パスワードの削除についてはセキュリティの専門家と話し合って、これがプロジェクトにとって正しいアクションであるかどうかを判断する必要があります。 ビルド タスクにアップロードされた証明書は、ビルド フロー中にビルド パイプラインによってのみアクセスできます。他のプロセスがアクセスすることはできません。 セキュリティで保護されたファイル タスクを使用する場合、パスワード セキュリティの追加レイヤーは必要ありませんが、これはビルド署名プロセス中に限ります。 他のシナリオの証明書のパスワードは削除しないでください。
+- ファイル システムにある証明書を使用してください。 これを行うには、証明書をダウンロードまたは生成し、ビルドが実行されているファイル システムに配置します。 Visual Studio Online エージェントまたはビルド ユーザーは、このパスとファイルにアクセスできる必要があります。
+- 拇印を使用してストア内の証明書を検索し、その証明書でサインインします。
 
-## <a name="using-a-secure-file-task-is-the-recommended-approach-for-uwp-app-signing"></a>セキュリティで保護されたファイル タスクの使用は、UWP アプリの署名に推奨される方法です。
+## <a name="use-a-secure-file-task-for-universal-windows-platform-app-signing"></a>Universal Windows Platform アプリの署名にセキュリティで保護されたファイル タスクを使用する
 
-パッケージ署名については、[パッケージ署名の構成](https://docs.microsoft.com/en-us/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing)を参照してください。 プロセスを次の図に示します。
+セキュリティで保護されたファイル タスクの使用は、Universal Windows Platform (UWP) アプリの署名に推奨される方法です。 パッケージ署名の詳細については、[パッケージ署名の構成](https://docs.microsoft.com/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing)を参照してください。 このプロセスを次の図に示します。
 
 ![MPOS アプリ署名フロー](media/POSSigningFlow.png)
 
 ## <a name="steps-to-configure-the-certificate-for-signing"></a>署名のために証明書を構成する手順
 
-### <a name="certificate-in-the-file-systemsecure-location"></a>ファイル システム / 安全な場所の証明書:
+### <a name="certificate-in-the-file-systemsecure-location"></a>ファイル システム / 安全な場所の証明書
 
-[ファイル タスクをダウンロード](https://docs.microsoft.com/en-us/visualstudio/msbuild/downloadfile-task?view=vs-2019)して、ビルド プロセスの最初の手順として追加します。 セキュア ファイル タスクを使用する利点は、ビルド中にファイルが暗号化されてディスクに配置されることであり、ビルド パイプラインが成功、失敗、またはキャンセルされたかどうかに関係なく、ファイルはビルド プロセスの完了後にダウンロード場所から削除されます。
+[ダウンロードファイル タスク](https://docs.microsoft.com/visualstudio/msbuild/downloadfile-task?view=vs-2019)をダウンロードして、ビルド プロセスの最初の手順として追加します。 セキュリティで保護されたファイルのタスクを使用する利点は、ビルド パイプラインが成功したか、失敗したか、またはキャンセルされたかに関係なく、ビルド時にファイルが暗号化されてディスクに格納されることです。 このファイルは、ビルド プロセスの完了後にダウンロード場所から削除されます。
 
-1. Azure DevOps ビルド パイプラインの最初のステップとして、セキュア ファイル タスクをダウンロードして追加します。 セキュア ファイル タスクは、 [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile) からダウンロードできます。
+1. Azure DevOps ビルド パイプラインの最初のステップとして、セキュア ファイル タスクをダウンロードして追加します。 セキュア ファイル タスクは、[DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile) からダウンロードできます。
 2. 次の図に示すように、証明書をセキュア ファイル タスクにアップロードし、出力変数で参照名を設定します。
     > [!div class="mx-imgBorder"]
     > ![セキュア ファイル タスク](media/SecureFile.png)
-3. **変数**タブの下の**新しい変数**ボタンをクリックして、Azure DevOps に新しい変数を作成します。
+3. **変数**タブの下の**新しい変数**をクリックして、Azure DevOps パイプラインに新しい変数を作成します。
 4. 値フィールド **$(MySigningCert.secureFilePath)** に、**CertFile** などの変数の名前を指定します。
 5. 変数を保存します。
 6. **RetailSDK\\BuildTools** から **Customization.settings** ファイルを開き、**ModernPOSPackageCertificateKeyFile** を Azure DevOps パイプラインで作成された変数で更新します (手順 3)。 例:
@@ -60,19 +61,19 @@ Windows に Modern POS (MPOS) をインストールするには、信頼され�
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(CertFile</ModernPOSPackageCertificateKeyFile>
     ```
 
-## <a name="downloaded-or-generated-certificate-to-sign-the-mpos-app"></a>MPOS アプリに署名するためにダウンロードまたは生成された証明書
+## <a name="download-or-generate-a-certificate-to-sign-the-mpos-app"></a>MPOS アプリに署名するために証明書をダウンロードまたは生成する
 
 ダウンロードまたは生成された証明書を使用して MPOS アプリに署名する場合、**BuildTools\\Customization.settings** ファイルの **ModernPOSPackageCertificateKeyFile** ノードを更新して、pfx ファイルの場所 (**$(SdkReferencesPath)\\appxsignkey.pfx**) を指すようにします。 例:
 
 <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(SdkReferencesPath)\\appxsignkey.pfx</ModernPOSPackageCertificateKeyFile>
 
-この場合、証明書ファイル名は **appxsignkey.pfx** であり、**Retail SDK\\参照**フォルダーに配置されます。
+この場合、証明書ファイル名は **appxsignkey.pfx** であり、**Retail SDK\\ 参照**フォルダーに配置されます。
 
-## <a name="thumbprint-to-sign-the-mpos-app"></a>MPOS アプリに署名するための拇印
+## <a name="use-thumbprint-to-sign-the-mpos-app"></a>拇印を使用して MPOS アプリに署名する
 
-拇印を使用して MPOS アプリに署名する場合、証明書をローカルにインストールし、**BuildTools\\Customization.settings** ファイルの **ModernPOSPackageCertificateThumbprint** ノードの拇印の値を更新します。
+拇印を使用して MPOS アプリに署名する場合は、証明書をローカルにインストールします。 **BuildTools\\Customization.settings** ファイルにある **ModernPOSPackageCertificateThumbprint** ノードで、拇印の値を更新します。
 
-ビルド ユーザーがローカル ユーザーの場合、このオプションは正常に機能しますが、Azure DevOps/VSO エージェントを使用してビルドを生成している場合、エージェントは証明書ストアにアクセスして署名に証明書を使用する権限を持たないか、ビルド マシンに証明書がインストールされない可能性があります。 この場合の回避策は、ビルド ユーザーをローカル ユーザーに変更し、このボックスに証明書をインストールすることですが、このボックスに管理者としてアクセスする権限がない場合は、このオプションは正しく機能しません。
+このオプションは、ビルド ユーザーがローカル ユーザーの場合に機能します。 ただし、Azure DevOps/Visual Studio Online エージェントを使用してビルドを生成している場合、エージェントは証明書ストアにアクセスして署名に証明書を使用する権限を持たないか、ビルド マシンに証明書がインストールされない可能性があります。 この場合、ビルド ユーザーをローカル ユーザーに変更し、そのボックスに証明書をインストールすることをお勧めします。 ただし、ボックスへの管理者アクセス権限がない場合は、このオプションは使用できません。
 
 > [!NOTE]
-> .pfx ファイルまたはセキュア ファイル タスク オプションを使用してアプリに署名する場合は、**Customization.settings** ファイルの **ModernPOSPackageCertificateThumbprint** ノードを空のままにし、拇印オプションを使用する場合は **ModernPOSPackageCertificateKeyFile** を空にします。 両方の値を更新すると、ビルドが失敗します。
+> pfx file またはセキュア ファイル タスク オプションを使用してアプリに署名する場合は、**Customization.settings** ファイルの **ModernPOSPackageCertificateThumbprint**ノードを空のままにします。 拇印オプションが使用されている場合、**ModernPOSPackageCertificateKeyFile** を空のままにします。 両方の値を更新すると、ビルドが失敗します。

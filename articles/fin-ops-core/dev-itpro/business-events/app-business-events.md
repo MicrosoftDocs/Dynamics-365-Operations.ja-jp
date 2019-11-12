@@ -3,7 +3,7 @@ title: アプリケーション ビジネス イベント
 description: このトピックでは、アプリケーション ビジネス イベントを一覧します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/23/2019
+ms.date: 09/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 5bfa0d8313c06211aa999b5904c4e50bc6575e23
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 013fdc094586c6513458a1a56940830d4d7a0157
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183446"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578255"
 ---
 # <a name="application-business-events"></a>アプリケーション ビジネス イベント
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9a9e2529ca5e9a71ea06d0caf67b9ac855e41e24
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5e8d378329ff5ea0d5932271888f3489ec9ace91
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174574"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569072"
 ---
 # <a name="document-reporting-services"></a>ドキュメントの Reporting Services
 
@@ -37,8 +37,6 @@ ms.locfileid: "2174574"
 ### <a name="service-deployment--local-vs-cloud"></a>サービスの展開 - ローカルとクラウド
 
 1 ボックス環境では、開発者は Microsoft Visual Studio 2015 を使用して、エンド ツー エンドでレポートを作成、変更、およびプレビューできます。 アプリケーションのメタデータ ストアにレポートを追加するために、別のプロセスは必要ありません。 レポートの変更は、他のソリューションの更新と一緒にパッケージ化され、ローカル環境での開発が完了した後にクラウドに展開されます。
-
-[![document-reporting-services-topology](./media/document-reporting-services-topology.png)](./media/document-reporting-services-topology.png)
 
 ### <a name="viewing-reports"></a>レポートを表示する 
 

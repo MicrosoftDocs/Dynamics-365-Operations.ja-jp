@@ -3,7 +3,7 @@ title: 継続的な配信ホーム ページ
 description: 以下のトピックでは、ソリューションのアプリケーション ライフサイクル管理と継続的な配信に関連するツールとガイドラインについて説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 02/13/2018
+ms.date: 10/16/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 250f5123cca46fc244a9e31d2546056150755fd7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0a35962ebffbe079ae56362053d34691d0fa2a3a
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191699"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627565"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 
@@ -38,8 +38,7 @@ ms.locfileid: "2191699"
 ## <a name="build-and-test-automation"></a>ビルドおよびテストの自動化
 - [継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md)
 - [テストと検証](../perf-test/testing-validation.md)
-- [PERF103: Visual Studio Online を使用した PerfSDK およびマルチユーザー テストの概要](../perf-test/perfsdk-tutorial.md)
-- [Retail SDK を継続的ビルド システム (Azure DevOps) と統合](../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Retail SDK を継続的ビルド システム (Azure DevOps) と統合](../../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [クラスおよびメソッドの属性を使用した SysTest フィルター処理](../perf-test/systest-filtering.md)
 - [承認テスト ライブラリ](../perf-test/acceptance-test-library.md)
 

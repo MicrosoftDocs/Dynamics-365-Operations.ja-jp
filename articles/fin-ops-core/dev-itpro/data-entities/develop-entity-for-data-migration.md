@@ -3,7 +3,7 @@ title: データ移行のエンティティの開発
 description: このチュートリアルでは、Microsoft Visual Studio でデータ エンティティを開発し、データ移行に使用する方法を示します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 284ffe0a48aef1c5c282ec9d974ca616ea707832
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 51fb9d443b61b207d586342d12066267c786422b
+ms.sourcegitcommit: e16b8c248fc2c2a60dc7b803320f942a35b443c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191539"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2577485"
 ---
 # <a name="develop-entities-for-data-migration"></a>データ移行のエンティティの開発
 
@@ -42,7 +42,7 @@ ms.locfileid: "2191539"
 このチュートリアルでは、「ベース URL」はインスタンスのベース URL を指します。
 
 - クラウド環境では、ベース URL は Microsoft Dynamics Lifecycle Services (LCS) から取得されます。
-- ローカル仮想マシン (VM) の、基準 URL は https://usnconeboxax1aos.cloud.onebox.dynamics.com です。
+- ローカル仮想マシン (VM) の、基準 URL は `https://usnconeboxax1aos.cloud.onebox.dynamics.com` です。
 
 ## <a name="developing-an-entity-in-visual-studio-and-enabling-it-for-data-export"></a>Visual Studio でエンティティを開発し、データをエクスポートできるようにする
 ### <a name="business-problem"></a>ビジネスの問題

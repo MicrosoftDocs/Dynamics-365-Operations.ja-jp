@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 1f6949060d1db7efe4c50f36a18bf5457ca2279f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 9a3ddc97307ae4fc94cf6fdf0509cd72c3f3d5a2
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248796"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578304"
 ---
 # <a name="one-version-service-updates-overview"></a>1 つのバージョンのサービス更新の概要
 
@@ -28,9 +28,9 @@ ms.locfileid: "2248796"
 
 次の一連のトピックでは Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) 以降 のサービス更新に関連する情報を提供しています。 これはクラウド リリースにのみ適用されます。
 
-- [サービス更新の可用性](../../fin-and-ops/get-started/public-preview-releases.md) – このトピックはリリース頻度およびリリース プロセスに関する情報を提供します。
+- [サービス更新の可用性](../../fin-ops/get-started/public-preview-releases.md) – このトピックはリリース頻度およびリリース プロセスに関する情報を提供します。
 - [ソフトウェアのライフサイクル ポリシーおよびクラウド リリース](../migration-upgrade/versions-update-policy.md) – このトピックはサービスの更新、可用性、およびサービス終了についての情報を提供します。
-- [1 つのバージョンのサービス更新に関するよく寄せられる質問](../../fin-and-ops/get-started/one-version.md) – このトピックは更新プロセス、ツール、計画、および小売サービスの更新に関する質問に回答します。
+- [1 つのバージョンのサービス更新に関するよく寄せられる質問](../../fin-ops/get-started/one-version.md) – このトピックは更新プロセス、ツール、計画、および小売サービスの更新に関する質問に回答します。
 
 サービス更新の経験は 4 つの異なるステップから構成されています: 
 
@@ -55,7 +55,7 @@ ms.locfileid: "2248796"
 
 さらに、通知電子メールが 5 日前に送信され、次の図に示すように更新の直前に通知が LCS に表示されます。
 
-[![LCS の次回の更新プログラムの通知](./media/Notification-bar.PNG)](./media/Notification-bar.PNG)
+[![LCS の次回の更新プログラムの通知](./media/Notification-bar.png)](./media/Notification-bar.png)
 
 ## <a name="update"></a>更新
 

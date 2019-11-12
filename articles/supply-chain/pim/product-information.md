@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4e378bc0a72e05f940ae352ad0f1c0709d9d3a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 21ee0b835cbe6cc3a238247be29f8a8d3de42a8d
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249474"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570751"
 ---
 # <a name="product-information-overview"></a>製品情報の概要
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 このトピックでは、製品情報の管理に関する情報を提供します。 製品情報の管理では、すべての法人の製品定義、カテゴリ、識別子、および製品の特定のコンフィギュレーションを業務プロセスに合わせて共有します。 
 

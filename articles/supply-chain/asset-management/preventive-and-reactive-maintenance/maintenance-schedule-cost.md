@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b2f53a4a64b06efc9269c607bfe1fc3a41c90cdd
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: b30fa3c142057b43202a8f5a323c0b425865e971
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922071"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571326"
 ---
 # <a name="maintenance-schedule-cost"></a>メンテナンス スケジュール コスト
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 資産管理で、メンテナンス スケジュールの明細行に関する予算原価を計算することができます。 たとえば、来年の予定された予防的メンテナンス ジョブに関連する原価など、予定原価の概要を知りたい場合に役立ちます 計算は、「メンテナンス計画」、「メンテナンス ラウンド」、および「メンテナンス要求」タイプの既存のメンテナンス スケジュールの明細行に基づいて行われます。
 

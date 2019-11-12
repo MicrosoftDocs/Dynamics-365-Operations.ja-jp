@@ -1,5 +1,5 @@
 ---
-title: チャートの「'」区切り記号を一意にする
+title: 勘定科目表の区切り記号を一意にする
 description: このトピックでは、勘定科目表と分析コード値に同じ区切り記号を所有できない方法について説明します。 アップグレード後に区切り記号値を変更する必要があります。
 author: ryansandness
 manager: AnnBe
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 2622245c7ce7213665ab32f4020c282df28cb886
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 5861bcaa42f7bc5ec20916fe1a44418bdd9c2ffe
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248783"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550911"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>勘定科目表の区切り記号を一意にする
 

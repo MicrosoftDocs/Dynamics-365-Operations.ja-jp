@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0f818c4c3b669cc94e37cba1e3571c57b5c0dd1b
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 634bbb4326d560848d36f579a1179187d8369087
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887368"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652037"
 ---
 # <a name="schedule-work-order-on-specific-date-and-time"></a>特定の日時のワーク オーダーのスケジュール設定
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 ワーク オーダーを特定の日*および*時間にスケジュール設定する必要がある場合は、資産管理の標準スケジューリング プロセスを上書きして、特定のスケジュールを作成できます。
 
@@ -41,13 +41,13 @@ ms.locfileid: "1887368"
 
 4. **ワーク オーダー ヘッダー** クイック タブで、**予定開始**および**予定終了**フィールドに、開始日時と終了日時を挿入します。
 
-![図 1](media/05-work-order-scheduling.png)
+    ![図 1](media/05-work-order-scheduling.png)
 
-5. **全般**タブで、**スケジュール**をクリックして標準スケジュール プロセスを使用するか、特定の作業者にワーク オーダーをスケジュールする場合は、**派遣**をクリックします。
+5. **全般**タブで、**スケジュール**をクリックして標準スケジュール プロセスを使用するか、特定の作業者にワーク オーダーを割り当てる場合は、**派遣**をクリックします。
 
 6. 既定の確保済能力を上書きして、ワーク オーダーが予定期間内にスケジュールされるようにするには、**ワーク オーダーのスケジュール設定**ダイアログ > **無限能力**セクションで下の図が示すように選択を行います。 これは、予定された開始時刻にワーク オーダーを開始する必要があるため、スケジューリング プロセスは既存の確保済能力を無視することを意味します。
 
-![図 2](media/06-work-order-scheduling.png)
+    ![図 2](media/06-work-order-scheduling.png)
 
 7. **OK** をクリックしてスケジューリングを開始します。
 

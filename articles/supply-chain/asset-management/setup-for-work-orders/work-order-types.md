@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 57120b51c069e49697f8ec4357265974a0d3afb4
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 3e813bd4f2d47b928b6184bb063d9afa45695727
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874581"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569734"
 ---
 # <a name="work-order-types"></a>作業指示書タイプ
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 作業指示書タイプは、作業指示書を分類するために使用されます。 例えば、予防的メンテナンスおよび修繕メンテナンスに関連する作業指示書があるとします。
 
@@ -51,4 +51,4 @@ ms.locfileid: "1874581"
 
 8. **保存** を選択します。
 
-![図 1](media/16-setup-for-work-orders.png)
+![作業指示書タイプ](media/16-setup-for-work-orders.png)

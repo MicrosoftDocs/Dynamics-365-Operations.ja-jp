@@ -3,11 +3,12 @@ title: Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 1
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.2 の新機能または変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 9bfaa33c2ebedf8d36f581a76f53fc4d96a96c7b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 743800d6c3efa80b947136b212ac836ad0057982
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191733"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627628"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-812-december-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
 
@@ -53,7 +54,7 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 
 ## <a name="derived-dimension-values"></a>派生分析コード値
 
-今回のリリースには、派生した分析コード値の変更を防止し、派生した分析コード値で既存の分析コード値を上書きできるようにする機能が含まれています。 詳細については、「[財務分析コード](../../financials/general-ledger/financial-dimensions.md)」を参照してください。
+今回のリリースには、派生した分析コード値の変更を防止し、派生した分析コード値で既存の分析コード値を上書きできるようにする機能が含まれています。 詳細については、「[財務分析コード](../../../finance/general-ledger/financial-dimensions.md)」を参照してください。
 
 ## <a name="resume-master-planning"></a>マスター プランの再開
 このリリースには、メイン スレッドが予期せず停止した場合にマスター プランのバッチ ジョブが自動的に再開するための、強化された計画エンジン機能が含まれています。 これは、何らかの理由でマスター プランの実行中にバッチ サーバー接続が失われた場合に発生する可能性があります。 この機能が実装される前に、マスター プランの完全な再実行が必要でした。 これで、マスター プランのバッチ ジョブは自動的に再開され、中断された場所から続行されます。 マスター プラン履歴ログから、プランナーはメイン スレッドが予期せずに停止したこと、およびプロセスが再開されたことを確認できます。
@@ -64,13 +65,13 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 今回のリリースには、2019 年の報告に適用されるベルギーの XML イントラスタット形式への変更が含まれています。 新しい形式を適用するには、LCS 共有資産ライブラリから ER コンフィギュレーションの次のバージョン (またはそれ以降のバージョン) をインポートする必要があります: Intrastat (BE).version.2.6.xml。 コンフィギュレーションをインポートする方法の詳細については、[Lifecycle Services からコンフィギュレーションをインポートする](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md)を参照してください。 
 
 ## <a name="india-specific-features"></a>インド固有の機能
-このリリースでは、[GTE](../../financials/general-ledger/tax-engine.md) が法人に対して有効になっている場合、一部のグローバル フィールドとボタンがユーザー インターフェイスから非表示になります。 これは、GTE が使用されているときには適用されない発注書や販売注文のような課税対象文書のフィールドやボタンを非表示にすることで、ユーザーのユーザー インターフェースを簡素化します。 GTE が有効な場合、以下のフィールドやボタンが非表示になります。
+このリリースでは、[GTE](../../../finance/general-ledger/tax-engine.md) が法人に対して有効になっている場合、一部のグローバル フィールドとボタンがユーザー インターフェイスから非表示になります。 これは、GTE が使用されているときには適用されない発注書や販売注文のような課税対象文書のフィールドやボタンを非表示にすることで、ユーザーのユーザー インターフェースを簡素化します。 GTE が有効な場合、以下のフィールドやボタンが非表示になります。
 
  - 消費税グループ
  - 品目消費税グループ
  - 売上税ボタン
  
-現在の標準 GST 構成には VAT が含まれておらず、そのためビジネスで VAT を処理する必要がある場合は、VAT を使用するように構成を拡張する必要があります。 詳細については [税エンジン構成の拡張](../../financials/general-ledger/extend-tax-engine-configurations.md) を参照してください。
+現在の標準 GST 構成には VAT が含まれておらず、そのためビジネスで VAT を処理する必要がある場合は、VAT を使用するように構成を拡張する必要があります。 詳細については [税エンジン構成の拡張](../../../finance/general-ledger/extend-tax-engine-configurations.md) を参照してください。
 
 ## <a name="russian-specific-features"></a>ロシア固有の機能
 今回のリリースには、ロシアの固有の次の機能が含まれています。

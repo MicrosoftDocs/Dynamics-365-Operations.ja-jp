@@ -3,11 +3,12 @@ title: Finance and Operations バージョン 10.0.2 (2019 年 5 月) の新機�
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 10.0.2 の新機能または変更された機能について説明します。 このバージョンは 5 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 76f44a5096f0bab9d38f1c3edac67b9339c0d6f3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 97b3494fb191cc296f9f87f9a6feb0295e8b0f97
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180502"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627639"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-1002-may-2019"></a>Finance and Operations バージョン 10.0.2 (2019 年 5 月) の新機能および変更点
 
@@ -39,7 +40,7 @@ Retail の最新のリリースの新機能と変更については、[Dynamics 
 
 **仕入先請求書を回復** ページを使用して、4 時間以上使用されている仕入先請求書を回復またはリリースし、編集可能にします。 このページは、**定期処理タスク** ナビゲーション リンクまたは、**仕入先請求書の入力** ワークスペースのタイルから開くことができます。 請求書が復旧した後、**仕入先請求書** ページで編集可能になります。
 
-詳細については [仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md) を参照してください。
+詳細については [仕入先請求書の概要](../../../finance/accounts-payable/vendor-invoices-overview.md) を参照してください。
   
 ## <a name="bank-foreign-currency-revaluation"></a>銀行の外貨再評価
 
@@ -58,7 +59,7 @@ Retail の最新のリリースの新機能と変更については、[Dynamics 
 この開発者向け機能を使用すると、販売注文、顧客、品目などの何百ものエンティティを含む豊富なドメイン固有言語を使用して、単体テストおよびコンポーネント テストを効率的に作成できます。 詳細については [承認テスト ライブラリ](../../dev-itpro/perf-test/acceptance-test-library.md) を参照してください。  
 
 ## <a name="regulatory-updates"></a>規制の更新
-Finance and Operations の規制の更新については、[ローカライズおよび規制機能 – 規制の更新](../../financials/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
+Finance and Operations の規制の更新については、[ローカライズおよび規制機能 – 規制の更新](../../../finance/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 

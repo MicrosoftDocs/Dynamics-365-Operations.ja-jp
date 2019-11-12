@@ -3,7 +3,7 @@ title: ビジネス プロセス モデラー ライブラリの活動ダイア�
 description: このトピックでは、BPM ライブラリでアクティビティ図を使用する方法について説明します。
 author: kfend
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 58367f0702d70b346e0a15a8da02ef51792b1bab
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c779d8e3effbb11f05c77f795354cd03f8b42cca
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249064"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627573"
 ---
 # <a name="work-with-activity-diagrams-in-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 
@@ -57,7 +57,7 @@ BPM ライブラリ内の **図** 列は、特定の業務プロセスがアク�
 
 
 ## <a name="activity-diagrams-that-are-created-from-task-recordings"></a>タスク記録から作成された活動ダイアグラム
-環境でタスク記録を作成して、Microsoft Dynamics Lifecycle Services (LCS) に直接保存することができます。 この方法で、タスク記録を BPM ライブラリ内の業務プロセスと関連付けることができます。 詳細については、[ヘルプ システムに接続する](../../fin-and-ops/get-started/help-connect.md) および [ドキュメントの作成またはタスク記録を使用してトレーニングする](../user-interface/task-recorder-training-docs.md) を参照してください。
+環境でタスク記録を作成して、Microsoft Dynamics Lifecycle Services (LCS) に直接保存することができます。 この方法で、タスク記録を BPM ライブラリ内の業務プロセスと関連付けることができます。 詳細については、[ヘルプ システムに接続する](../../fin-ops/get-started/help-connect.md) および [ドキュメントの作成またはタスク記録を使用してトレーニングする](../user-interface/task-recorder-training-docs.md) を参照してください。
 
 タスク レコーダー ツールを使用すると、配布可能な記録ファイルを作成できます。 記録ファイルは、.axtr ファイル名拡張子を持ちます。 手動で記録ファイルをアップロードすることにより、BPM 内の業務プロセスをタスク記録に関連付けることができます。 
 
@@ -65,7 +65,7 @@ BPM ライブラリ内の **図** 列は、特定の業務プロセスがアク�
 
 BPM は作成されたすべてのタスク記録の活動ダイアグラムと詳細なプロセスの手順を自動的に生成します。 次の図は、例を示します。
 
-![タスク記録の活動ダイアグラムとプロセスの手順の例](./media/NEWBPM_BlogPost17-1024x483.png "タスク記録の活動ダイアグラムとプロセスの手順の例")
+![活動ダイアグラムおよびタスク記録プロセスの手順の例](./media/NEWBPM_BlogPost17-1024x483.png "活動ダイアグラムおよびタスク記録プロセスの手順の例")
 
 ## <a name="edit-activity-diagrams"></a>活動ダイアグラムを編集
 アクティビティ図を編集するには、フローチャートの空白部分を右クリックし、下部のツールバーで **編集** を選択します。 BPM フローチャートの詳細については、[ビジネス プロセス モデラーのフローチャート](flowcharts-business-process-modeler.md) を参照してください。

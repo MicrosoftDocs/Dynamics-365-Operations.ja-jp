@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 432a235668bbd969f497003a98b7f66390e5308f
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 63f436ffd01ac56bb4bc0021e226dad46d7c3377
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790512"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569918"
 ---
 # <a name="responsible-maintenance-workers"></a>メンテナンス担当作業者
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 メンテナンス担当作業者は、資産タイプ、資産、機能的な場所、メンテナンス作業タイプ カテゴリ、メンテナンス作業タイプ、メンテナンス作業タイプ バリアント、および取引に関連付けることができます。 作業指示書およびメンテナンス要求で使用し、作業指示書を担当するメンテナンス作業者に関する基本設定を指定することができます。 (ただし、これらのメンテナンス作業者は、必ずしも作業指示を実行する予定の作業員と同じではありません。) この機能の使用はオプションです。 たとえば、特定の作業タイプまたは作業領域の担当作業者または作業者グループを選択するために使用できます。
 
@@ -53,4 +53,4 @@ ms.locfileid: "1790512"
 
 次の図は、**メンテナンス担当作業者**ページの例を示しています。
 
-![図 1](media/08-setup-for-requests.png)
+![担当メンテナンス作業者ページ](media/08-setup-for-requests.png)

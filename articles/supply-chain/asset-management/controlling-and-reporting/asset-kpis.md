@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4fc32d337be1f71932555fcb062a8d05c9ca9bda
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 1aee14c869d84bef38a738bfe78fd09ee7f82d94
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918421"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652382"
 ---
 # <a name="asset-kpis"></a>資産 KPI
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 資産管理では、資産および資産タイプに対してさまざまな主要業績評価指標 (KPI) を計算できます。 KPI を使用すると、たとえば稼働時間、ダウンタイム、修復時間、平均故障間隔 (MTBF) などに関連する資産のパフォーマンスの概要を取得できます。
 
@@ -85,7 +85,7 @@ ms.locfileid: "1918421"
 
 次の図は、4 つの資産に対する KPI 計算のスクリーンショットを示します。
 
-![図 1](media/11-controlling-and-reporting.png)
+![4 つの資産の KPI 計算のスクリーンショット](media/11-controlling-and-reporting.png)
 
 - **すべての資産**で複数の資産を選択し、**一般**タブの**資産 KPI** ボタンをクリックできます。次に、**資産 KPI の計算**ダイアログで **OK** をクリックして、選択した資産の KPI を計算します。  
 - KPI 計算の結果は、メンテナンス ダウンタイム理由コードの設定および使用に応じて、[メンテナンス ダウンタイム登録](../work-orders/maintenance-downtime.md) を含む場合と含まない場合があります。 

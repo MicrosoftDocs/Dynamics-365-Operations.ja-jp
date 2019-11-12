@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71905d5b362c80d48b78210b59cacfb1e7899757
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: da60d098aff96780ca1e40832db34e3c9cc835e7
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874696"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569688"
 ---
 # <a name="warranty-agreements"></a>保証契約
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 資産管理では、資産または資産タイプに関連付けることができる保証条件を設定できます。 保証条件は特定の期間に対して作成されます。 保証は、完全補償または部分補償を行うように設定したり、時間、経費、および品目に関連する条件を設定したりすることができます。
@@ -54,4 +54,4 @@ ms.locfileid: "1874696"
     3. **間隔**フィールドに数値を入力します。 このフィールドでは、保証が有効な期間数を定義します。
     4. **割合**フィールドに、保証明細行の補償割合を入力します。 この割合は、会社の補償範囲を示します。
 
-![図 1](media/01-warranty.png)
+![保証ページ](media/01-warranty.png)

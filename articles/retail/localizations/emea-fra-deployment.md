@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: bf43681bf8209e0849de492a054d3e7f85705f5a
-ms.sourcegitcommit: 25c45428162194c5db8feb3ab53d8df9551b0301
+ms.openlocfilehash: d4c46877d3896a9be9e2708f983e9c55a9512a88
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "2559797"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653336"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 
@@ -95,7 +95,7 @@ Azure Key Vault を操作する方法の詳細については、次を参照し�
 - **ビルド番号**- POS アプリケーションのソフトウェアのバージョン。 既定では、この値は、Microsoft が POS アプリケーションに割り当てた POS ビルド番号と等しくなります。
 - **証明書のカテゴリ**および**証明書の番号** - アプリケーションの認定証明を発行するカテゴリとコンプライアンスの証明書の数。 既定では、値はカテゴリとMicrosoft に与えられた証明書の数に等しい。
 
-    - Microsoft Dynamics 365 for Finance and Operations:
+    - Microsoft Dynamics 365 for Retail:
 
         - **証明書のカテゴリ:** C
         - **証明書番号:** 18/0202
@@ -106,7 +106,7 @@ Azure Key Vault を操作する方法の詳細については、次を参照し�
         - **証明書番号:** 18/0203
 
     > [!NOTE]
-    > 既定では、証明書のカテゴリとFinance and Operationsに割り当てられている番号が印刷されます。 小売を実装する場合は、証明書のカテゴリと番号を上書きする必要があります。
+    > 既定では、証明書のカテゴリと小売に割り当てられている番号が印刷されます。 小売を実装する場合は、証明書のカテゴリと番号を上書きする必要があります。
 
 POS アプリケーションをカスタマイズしていて、そのカスタマイズがアプリケーションのコンプライアンスに影響を与える場合は、認定機関にコンプライアンスの新しい証明書を要求する必要があります。 この場合、ビルド番号、および証明書のカテゴリ、および番号を上書きする必要があります。 それ以外の場合、証明書のカテゴリおよび番号の既定値が印刷されますが、Microsoft が POS アプリケーションに割り当てた POS ビルド番号も指定する必要があります。
 

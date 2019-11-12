@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 60ee0822c6814e7211a6e7c2c1b18e185e5b4efc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3c8f337d91a5a3b82c0aebd0f48c2c4364fcdb21
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191782"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658876"
 ---
 # <a name="create-icons-for-workspace-tiles"></a>ワークスペース タイル用のアイコンの作成
 
@@ -64,7 +64,7 @@ ms.locfileid: "2191782"
 ## <a name="example"></a>例 
 新しいワークスペースに使用される次のイメージ/アイコンを検討します。 
 
-[![newLogo3](./media/newlogo3.png)](./media/newlogo3.png) 
+[![新しいワークスペースに使用されるアイコン](./media/newlogo3.png)](./media/newlogo3.png) 
 
 ### <a name="platform-update-29-or-later"></a>プラットフォーム更新プログラム 29 またはそれ以降 
 
@@ -74,11 +74,11 @@ ms.locfileid: "2191782"
 
 これが推奨サイズ設定とどのように関連しているかを理解するには、以下の新しい推奨サイズ設定を合成したワークスペース アイコンを参照してください。   
 
-![newIcon\_guides](./media/baseIcon_Guides_PU29.png) 
+![新しい推奨サイズ設定のワークスペース アイコン](./media/baseIcon_Guides_PU29.png) 
 
 この画像をワークスペース タイルで使用すると、ダッシュ ボードには次の結果が得られます。 
 
-[![newWorkspaceIcon](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
+[![ワークスペース タイルで画像を使用するときのダッシュボードでの結果](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
 
 
 ### <a name="platform-update-28-or-earlier"></a>プラットフォーム更新プログラム 28 またはそれ以前
@@ -88,11 +88,11 @@ ms.locfileid: "2191782"
 
 これが推奨サイズ設定とどのように関連しているかを理解するには、以下の古い推奨サイズ設定を合成したワークスペース アイコンを参照してください。   
 
-![newIcon\_guides](./media/newicon_guides.png) 
+![古い推奨サイズ設定のワークスペース アイコン](./media/newicon_guides.png) 
 
 この画像をワークスペース タイルで使用すると、ダッシュ ボードには次の結果が得られます。 
 
-[![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
+[![ワークスペース タイルで画像を使用するときのダッシュボードでの結果](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
 
 
 

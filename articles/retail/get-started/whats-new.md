@@ -1,5 +1,5 @@
 ---
-title: 新機能と変更点および Dynamics 365 Retail
+title: Dynamics 365 Retail の新機能および変更された機能
 description: このページでは、最新リリースの Microsoft Dynamics 365 Retail の新しい機能について学ぶ役立つリソースを示します。
 author: sericks007
 manager: AnnBe
@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: d0f89cc5ec0a0a1bb174a031aa9b6c059d608be4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 3190a8978932ad8f8b22c9038625fe2dcdb43fce
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025494"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550486"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Dynamics 365 Retail の新機能および変更された機能
 

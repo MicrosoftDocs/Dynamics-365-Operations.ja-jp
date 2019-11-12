@@ -3,7 +3,7 @@ title: ビジネス イベントのトラブルシューティング
 description: このトピックでは、ビジネス イベントのトラブルシューティングについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/14/2019
+ms.date: 10/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 3f23ae4d07fc52892048ccdefc493b8c3b282566
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9c175eef661d12ceaf089ab4c3c60cbf5e01fbb8
+ms.sourcegitcommit: 496c81b866fad0737bc027e793a4be803924a061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191547"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2652563"
 ---
 # <a name="troubleshoot-business-events"></a>ビジネス イベントのトラブルシューティング
 
@@ -40,3 +40,5 @@ ms.locfileid: "2191547"
 |**エラー:** テストイベントをエンドポイントに送信できません。 例外メッセージ: 要求の送信中にエラーが発生しました。|**エンドポイント URL** フィールドのエンドポイントの指定された値が正しくない可能性があります。 Azure ポータルの**イベント グリッド**オブジェクトに移動し、**イベント グリッド**を開きます。 **概要**セクションで、この値が**トピック エンドポイント**になります。|
 |ビジネス イベントはカタログに表示されません|ビジネス イベント カタログは、データベース全体の同期中に作成されます。その結果、以下に示すように、新しいビジネス イベントを確認するためにカタログを手動で更新する必要がある使用例がいくつかあります。 手動更新は **管理 > ビジネス イベント カタログの再構築** に移動することによってカタログから呼び出すことができます。<br><br>Visual Studio でビジネス イベントを実装中のときは、新しくコード化されたビジネス イベントがカタログに表示されない場合があります。<br><br>ワークフロー要素やステップなどの新しいワークフローが構成されていると、ビジネス イベント カタログに表示されない場合があります。<br><br>他の状況では、特定のビジネス イベントが表示されない場合、手動更新を行うと問題が解決する可能性があります。|
 |- 0 はバンドルのサイズが無効です。<br>- ビジネスイベントはトリガーされません。<br>- Microsoft Flow は、ビジネスイベントによってトリガーされていません。<br>- 構成されたエンドポイントが上限の 0 に達したため、ビジネス イベントをコンフィギュレーションできません。 |この問題が発生する理由のひとつは、**BusinessEventsParameters** テーブルで特定のパラメータが予想どおりに設定されていない場合です。 これは、一部のビジネス イベント パラメータが正しく設定されていない更新プログラムによるものです。<br><br>非生産環境では、**BusinessEventsParamters** テーブルを更新して、Enabled =1; ProcessorThreads = 1; EndPointRetryCount = 3; BundleSize = 50; EndPointsPerEvent = 10 とする必要があります。 この更新を行った後、バッチサービスを再起動し、IISResetを実行して最新の値を取得してください。<br><br>生産環境では、Microsoft にサポート リクエストを記録し、更新された情報を入手してください。
+|アダプター クラスの addProperties メソッド コマンド チェーン (CoC) の介した強化による顧客のペイロード コンテキスト フィールド作成時の、プラットフォーム更新プログラム 30 コンパイラの警告 **クラス 'BusinessEventsServiceBusAdapter' はモデル 'ApplicationFoundation' の内部にあり、拡張することはできません**。  |これは、内部 API が拡張されないようにするコンパイラの変更です。 これはバグとして追跡中で、カスタム プロパティを追加するための代替方法が提供されます。
+|**エラー:** 要求された 1 つ以上のタイプを読み込めません。 詳細については、LoaderExceptions プロパティを取得してください。|通常、有効なビジネス イベントのエラー タブに表示されるこのエラー メッセージは、カタログを再構築することによって解決できます。

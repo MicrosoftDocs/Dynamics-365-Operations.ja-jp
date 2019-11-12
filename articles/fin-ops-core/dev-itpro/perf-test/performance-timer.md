@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0274a5b984b4f56dc436fbc70c230acf7ab0a01
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2c64e0a6b727efc57a8c04f1c637ed52a4e79ff5
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183092"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578267"
 ---
 # <a name="performance-timer"></a>パフォーマンス タイマー
 
@@ -30,13 +30,13 @@ ms.locfileid: "2183092"
 
 このトピックでは、パフォーマンス タイマーの概要を示します。このタイマーは、システムのパフォーマンスが低下する原因を特定するのに役立つツールです。 
 
-パフォーマンス タイマーを開くには、追加パラメータ debug=develop: https://<em>yoursite</em>.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop を使用して Web ページを開きます。**注:** デバッグ モードで実行すると、パフォーマンスが低下することがわかります。 F12 キーを押して、ブラウザーで使用可能なデバッグ ツールを使用し、パフォーマンスの大半の問題の概要を素早く取得することができます。 タイマーはここで表示されます。 
+パフォーマンス タイマーを開くには、追加パラメーター debug=develop: https://<em>yoursite</em>.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop を使用して Web ページを開きます。注: デバッグ モードで実行すると、パフォーマンスが低下することがわかります。 F12 キーを押して、ブラウザーで使用可能なデバッグ ツールを使用し、パフォーマンスの大半の問題の概要を素早く取得することができます。 タイマーはここで表示されます。 
 
-[![タイマー](./media/timer.png)](./media/timer.png) 
+[![画面上部に配置されたタイマーの例](./media/timer.png)](./media/timer.png) 
 
 発注書一覧ページなどの一覧ページを開くには、[パフォーマンス タイマー] をクリックします。 次のスクリーン ショットは、クライアント時間とサーバー時間の区切り、および合計時間を示しています。 また、一連のパフォーマンス カウンターと高価なサーバー呼び出しを確認できます。 
 
-[![2\_タイマー](./media/2_timer.png)](./media/2_timer.png) 
+[![サーバー パフォーマンス カウンターを示すスクリーン ショット](./media/2_timer.png)](./media/2_timer.png) 
 
 サーバー パフォーマンス カウンターの詳細については、リンクのいずれかをクリックします。
 
@@ -47,7 +47,8 @@ ms.locfileid: "2183092"
 
 詳細については、リンクをクリックしてください。 次の画面で、個別の呼び出しによってトリガーされた SQL クエリの数、および価値が高い SQL クエリを表示できます。 
 
-[![3\_タイマー](./media/3_timer.png)](./media/3_timer.png) 
+[![呼び出しによってトリガーされた SQL クエリのリストの例](./media/3_timer.png)](./media/3_timer.png) 
+
 
 この情報は、トレースする内容とトラブルシューティングの開始場所の理解に役立ちます。 
 

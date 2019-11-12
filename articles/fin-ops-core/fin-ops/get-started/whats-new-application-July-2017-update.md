@@ -3,11 +3,12 @@ title: Dynamics 365 for Finance and Operations、Enterprise Edition (2017 7 月)
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。
 author: tonyafehr
 manager: AnnBe
-ms.date: 05/14/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 520c4308fdb679dc64a02e73712b56673320448f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b1825b425f2bb2dadb8a756ffa4a82bc6ca198c2
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180503"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627640"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations、Enterprise Edition (2017 7 月) の新機能および変更された機能
 
@@ -40,7 +41,7 @@ ms.locfileid: "2180503"
 
 買掛金勘定では、2 つの既定チェック形式のテンプレートが用意されています。 これらのチェック テンプレートは、電子レポート ツールの Excel 機能を使用して作成されています。 これらのチェック テンプレートは、米国のチェック フォーマットと互換性があります。
 
-詳細については、「[電子レポートのサンプル小切手フォーマット](../../financials/accounts-payable/electronic-reporting-sample-vendor-checks.md)」を参照してください。
+詳細については、「[電子レポートのサンプル小切手フォーマット](../../../finance/accounts-payable/electronic-reporting-sample-vendor-checks.md)」を参照してください。
 
 ### <a name="budget-control-data-maintenance"></a>予算管理データの管理
 
@@ -72,7 +73,7 @@ CFO やアカウント マネージャーは、CFO 概要ワークスペース�
 
 ### <a name="delete-a-main-account-and-dimension-value"></a>主勘定とディメンション値を削除する
 
-会社が稼働すると、不要になった主勘定や分析コード値が存在することがよくあります。 財務分析コードをいつ削除できるかについての詳細は [財務分析コード](../../financials/general-ledger/financial-dimensions.md) を参照してください。
+会社が稼働すると、不要になった主勘定や分析コード値が存在することがよくあります。 財務分析コードをいつ削除できるかについての詳細は [財務分析コード](../../../finance/general-ledger/financial-dimensions.md) を参照してください。
 
 ### <a name="display-payment-information-for-an-expense"></a>経費の支払情報を表示
 
@@ -100,7 +101,7 @@ CFO やアカウント マネージャーは、CFO 概要ワークスペース�
 - 承認および払い戻しのために経費精算書を提出します。
 - 承認者として従業員に割り当てられた経費精算書を承認または却下します。
 
-詳細については、[経費管理モバイル ワークスペース](../../financials/expense-management/expense-management-mobile-workspace.md) を参照してください。
+詳細については、[経費管理モバイル ワークスペース](../../../finance/expense-management/expense-management-mobile-workspace.md) を参照してください。
 
 ### <a name="expense-management-configuration-related-to-employees-card-id"></a>経費管理: 従業員のカード ID に関連するコンフィギュレーション
 
@@ -207,7 +208,7 @@ CFO やアカウント マネージャーは、CFO 概要ワークスペース�
 
 新しいモバイル機能を使用すると、モバイル デバイスを使用してワークフローで送信した仕入先請求書を確認して承認できます。
 
-詳細については、[モバイルによる請求書承認](../../financials/accounts-payable/mobile-invoice-approvals.md) を参照してください。
+詳細については、[モバイルによる請求書承認](../../../finance/accounts-payable/mobile-invoice-approvals.md) を参照してください。
 
 ### <a name="configuration-data-packages"></a>コンフィギュレーション データ パッケージ
 
@@ -244,7 +245,7 @@ SharePoint にレポートを送信するための標準機能は、財務報告
 - 請求書の例外処理です。 これは、作成に失敗した請求書を管理するためのわかりやすい業務の UI です。
 - 例外処理フォーム、保留中の請求書、請求書仕訳帳照会で、請求書の添付ファイルを並べるビューアー。
 
-詳細については、[仕入先請求書の自動化](../../financials/accounts-payable/vendor-invoice-automation.md) を参照してください。
+詳細については、[仕入先請求書の自動化](../../../finance/accounts-payable/vendor-invoice-automation.md) を参照してください。
 
 ### <a name="view-detailed-workflow-history-for-an-expense-report"></a>経費精算書の詳細なワークフロー履歴の表示
 
@@ -256,7 +257,7 @@ SharePoint にレポートを送信するための標準機能は、財務報告
 
 この機能を使用すると、Dynamics AX 2012 R3 CU11 以降のインスタンスのデータを Dynamics 365 for Finance and Operations に接続することにより、同じバージョンの異なるバージョンまたはインスタンスで複数の法人を実行できます。 法人の境界を越えて、組織および法定レポートの両方のニーズに取り組むことができます。
 
-詳細については、[原価計算の概要](../../financials/cost-accounting/cost-accounting-home-page.md) を参照してください。
+詳細については、[原価計算の概要](../../../finance/cost-accounting/cost-accounting-home-page.md) を参照してください。
 
 ### <a name="cost-accounting-allocation-bases"></a>原価会計の配賦ベース
 
@@ -268,13 +269,13 @@ SharePoint にレポートを送信するための標準機能は、財務報告
 - **フォーミュラの配賦基準** - フォーミュラには、任意のタイプの 1 つまたは複数の配賦基準を含めることができ、ユーザー定義の定数を含めることができます。 使用できる演算子は次のとおりです: +、-、\*、=、\<、\>、( , )
 - **階層配賦基準** - 任意のタイプの配賦基準を原価オブジェクト分析コード階層ノードと組み合わせて範囲を制限します。
 
-詳細については、「[配賦基準](../../financials/cost-accounting/allocation-bases.md)」を参照してください。
+詳細については、「[配賦基準](../../../finance/cost-accounting/allocation-bases.md)」を参照してください。
 
 ### <a name="cost-accounting-dimension-hierarchies"></a>原価計算分析コード階層
 
 原価計算分析コード階層は、階層ノードを階層内の新しい親ノードに移動する方法や、**上へ移動**または**下へ移動**ボタンを使用して親ノード内のノードを単純に並べ替える方法を提供します。 これにより、分析コード階層の維持に費やされる時間が大幅に削減されます。
 
-詳細については、「[分析コード階層](../../financials/cost-accounting/dimension-hierarchy.md)」を参照してください。
+詳細については、「[分析コード階層](../../../finance/cost-accounting/dimension-hierarchy.md)」を参照してください。
 
 ### <a name="cost-accounting-get-started-wizard"></a>原価会計の使用開始ウィザード
 
@@ -312,7 +313,7 @@ GDPdU\\GoBD サンプル電子レポート構成には、次の拡張機能が�
 - Index.xml ファイルのエンコードが更新されます。
 - DTD の添付ファイルは、コンフィギュレーションの書式設定に埋め込まれます。
 
-詳細については、[ドイツの監査ファイル (GDPdU/GoBD)](../../financials/localizations/emea-deu-gdpdu-audit-data-export.md) を参照してください。
+詳細については、[ドイツの監査ファイル (GDPdU/GoBD)](../../../finance/localizations/emea-deu-gdpdu-audit-data-export.md) を参照してください。
 
 ### <a name="global-coverage--configurable-electronic-reporting"></a>グローバル補充 - コンフィギュレーション可能な電子申告
 
@@ -356,13 +357,13 @@ GDPdU\\GoBD サンプル電子レポート構成には、次の拡張機能が�
 
 Retail POS と会計デバイス (制御ユニット) の統合の例に加えて、キャッシュ レジスターの継続的使用に対する一般要件などのキャッシュ レジスターの現地要件をサポートするため、スウェーデンの規制の小売機能が追加されました。
 
-詳細については、「[スウェーデンのキャッシュ レジスター](../../retail/localizations/emea-swe-cash-registers.md)」を参照してください。
+詳細については、「[スウェーデンのキャッシュ レジスター](../../../retail/localizations/emea-swe-cash-registers.md)」を参照してください。
 
 ### <a name="reverse-charge-functionality-for-european-countriesregions"></a>ヨーロッパの国/地域の逆請求機能
 
 ドキュメントの種類 (購買/販売注文、仕入先請求書、自由書式の請求書など) ごとに、および品目、品目グループ、購買/販売カテゴリを組み合わせた逆請求グループごとに、逆請求の適用ルールをコンフィギュレーションできます。 適用ルールは、有効日です。 売上税グループにある個々の売上税コードを、適切な逆請求としてマークすることもできます。 売上請求書レポートは、逆請求を適用した詳細を表示するよう調整されます。 機能は、すべてのヨーロッパの国/地域で使用できます。
 
-詳細については、「[逆請求](../../financials/localizations/emea-reverse-charge.md)」を参照してください。
+詳細については、「[逆請求](../../../finance/localizations/emea-reverse-charge.md)」を参照してください。
 
 ### <a name="substitutionadjustment-invoices-for-thailand"></a>請求書の代用/調整 (タイ用)
 
@@ -475,7 +476,7 @@ Finance and Operations により提供される柔軟性の高い総合的な分
 
 将来のキャッシュ インフローとキャッシュ アウトフローを、高レベルの概要および詳細レベルの両方で分析することができます。 黒字額と不足分を把握するために、法人、銀行口座、および通貨ごとにキャッシュ インフローを分析することができます。 全般的に、ギャップの一時的なビューを取得し、それらに事前に対処できます。
 
-詳細については、「[キャッシュ フロー予測](../../financials/cash-bank-management/cash-flow-forecasting.md)」を参照してください。
+詳細については、「[キャッシュ フロー予測](../../../finance/cash-bank-management/cash-flow-forecasting.md)」を参照してください。
 
 ### <a name="cost-accounting-power-bi-reports"></a>原価会計 Power BI レポート
 
@@ -493,7 +494,7 @@ Finance and Operations により提供される柔軟性の高い総合的な分
 
 このツールを使用すると、顧客のコレクション パフォーマンスについて勘定および販売マネージャに豊富な見識を提供して貴重な顧客を識別できるようにします。 データで裏付けられた価値あるパートナーシップを追求するよう顧客と接するスタッフを励まし、価格と条件の適正な組み合わせにより製品とサービスを促進するよう販売担当者を励ますことができます。 Power BI レポートは、例外の管理のマスターとなるのに役立ちます。 与信限度額を超えているまたは近づいている顧客を識別して、支払い遅延の可能性と過去の支払い期限を理解し、遅くなりすぎる前に介入することができます。 レポートを使うと、過去の期限切れステージに到達する前に支払および顧客グループを検出できるため、期限切れの支払の可能性について理解し、例外発生時に通知するアラート条件を定義できるようになります。 Power BI に組み込まれた包括的なレポート作成およびダッシュボード機能により、コレクションとアカウント管理チームは積極的に顧客を管理できます。 
 
-詳細については、[与信および回収管理 Power BI コンテンツ](../../financials/accounts-receivable/credit-collections-power-bi.md) を参照してください。
+詳細については、[与信および回収管理 Power BI コンテンツ](../../../finance/accounts-receivable/credit-collections-power-bi.md) を参照してください。
 
 ### <a name="embedded-power-bi-reports-licensed-for-all-users"></a>すべてのユーザーに許可された埋め込み Power BI レポート
 
@@ -521,7 +522,7 @@ Finance and Operations アプリケーションに埋め込まれたこれらの
 
 正味簿価額 (NBV.md)、減価償却、および資産のカテゴリおよび場所別の減価償却累計額などの主要な資産帳簿の有効期間メトリックを表示することができます。 パターンに注目してデータの下に隠されている傾向を理解し、積極的なメジャー アップグレードおよびプラントの機器の再据え付けなどの、戦略的決定を下すことができます。
 
-詳細については、[固定資産管理ワークスペース](../../financials/fixed-assets/fixed-asset-management-workspace.md) を参照してください。
+詳細については、[固定資産管理ワークスペース](../../../finance/fixed-assets/fixed-asset-management-workspace.md) を参照してください。
 
 ### <a name="power-bi-reporting-with-financial-dimensions"></a>財務分析コードの Power BI レポート
 
@@ -581,7 +582,7 @@ Power BI に組み込まれた包括的なレポート作成およびダッシ�
 
 仕入先支払分析の Power BI レポートにより、未処理の請求書や転記済の仕入先支払が明確になり、買掛金勘定プロセスに対して適切な意思決定ができるようになります。 割引履歴だけでなく、延滞請求書、将来支払いがなされる次回の請求書を分析することができます。
 
-詳細については、[仕入先の支払ワークスペース](../../financials/accounts-payable/Vendor-payments-workspace.md) を参照してください。
+詳細については、[仕入先の支払ワークスペース](../../../finance/accounts-payable/Vendor-payments-workspace.md) を参照してください。
 
 ### <a name="warehousing-power-bi-reports"></a>倉庫 Power BI レポート
 
@@ -701,7 +702,7 @@ Finance and Operations では、最新の状態にして継続的なイノベー
 - [更新: AX 2012 データ更新タスク](../../dev-itpro/migration-upgrade/data-upgrade-2012.md)
 - [アップグレード: サンドボックス環境でのデータ アップグレード](../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md)
 - [検証: アップグレード プロセス後に完了するタスク](../../dev-itpro/migration-upgrade/app-validation-process.md)
-- 「[検証: 切替テスト](../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md)」
+- [検証: 切替テスト](../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md)
 - [検証: 機能テスト](../../dev-itpro/migration-upgrade/upgrade-functional-validation.md)
 - [検証: Go-Live の準備](../../dev-itpro/migration-upgrade/upgrade-go-live-prep.md)
 
@@ -739,7 +740,7 @@ Finance and Operations では、最新の状態にして継続的なイノベー
 - プロジェクトに支払請求可能または非請求可能として時間を記録します。
 - 必要に応じて外部または内部コメントを入力します。
 
-**プロジェクト タイム エントリ**モバイル ワークスペースを実装するには、docs.microsoft.com で Microsoft Dynamics 365 for Operations の関連ドキュメントを参照してください。 詳細については、[プロジェクト時間入力モバイル ワークスペース](../../financials/project-management/project-time-entry-mobile-workspace.md) を参照してください。
+**プロジェクト タイム エントリ**モバイル ワークスペースを実装するには、docs.microsoft.com で Microsoft Dynamics 365 for Operations の関連ドキュメントを参照してください。 詳細については、[プロジェクト時間入力モバイル ワークスペース](../../../finance/project-management/project-time-entry-mobile-workspace.md) を参照してください。
 
 ### <a name="rename-project-stages"></a>プロジェクト ステージの名前の変更
 
@@ -851,11 +852,11 @@ Retail の周辺機器シミュレーターでは、以前にリリースされ�
 
 サポートされているデバイスごとに、POS シミュレーターは、カードの読み取りまたはライン ディスプレイにテキストの特定の文字列を表示するなどの、アドホック テストというデバイス固有能力をテストする機能を提供します。 サポートされている各デバイスには、公式デバイス互換性テストに使用される特定の自己テスト ルーチンがあります。 互換性テストの結果は、Retail の新しい展開に承認済みとしてリストするため、Microsoft に送信できます。
 
-周辺機器シミュレーターの説明については、[小売の周辺機器シミュレーター](../../retail/dev-itpro/retail-peripheral-simulator.md) を参照してください。
+周辺機器シミュレーターの説明については、[小売の周辺機器シミュレーター](../../../retail/dev-itpro/retail-peripheral-simulator.md) を参照してください。
 
 互換性プログラムおよび参加方法の詳細については、<drpc@microsoft.com> に問い合わせてください。
 
-Microsoft により以前にテストされた周辺機器の詳細については、[Microsoft でテストされた周辺機器](../../retail/retail-peripherals-overview.md) にアクセスしてください。 このページは、そのページが利用可能になるとすぐに、POS シミュレータでテストされたデバイスへのリンクとともに更新されます。
+Microsoft により以前にテストされた周辺機器の詳細については、[Microsoft でテストされた周辺機器](../../../retail/retail-peripherals-overview.md) にアクセスしてください。 このページは、そのページが利用可能になるとすぐに、POS シミュレータでテストされたデバイスへのリンクとともに更新されます。
 
 ### <a name="omni-channel-coupons"></a>Omni チャネル クーポン
 
@@ -863,7 +864,7 @@ Microsoft により以前にテストされた周辺機器の詳細について�
 
 コール センター クーポンは、小売割引とマージされ、すべての小売チャネルでクーポンを管理および承諾する統一されたエクスペリエンスを提供します。 合わさった経験は、クーポンのコードとバーコードを使用して小売割引の割引値を適用します。
 
-クーポンの詳細については、[小売販売のクーポンの作成](../../retail/retail-coupons.md) を参照してください。
+クーポンの詳細については、[小売販売のクーポンの作成](../../../retail/retail-coupons.md) を参照してください。
 
 ### <a name="discounts--quantity-limit-and-exclude-discount-lines"></a>割引 - 数量の制限および割引の明細行を除外
 
@@ -871,7 +872,7 @@ Microsoft により以前にテストされた周辺機器の詳細について�
 
 また、割引明細行に対してプロパティを含めるか除外することができます。 割引明細行の含有および除外の組み合わせを使用して、割引を適用する製品のセットを定義することができます。 たとえば、**ファッション**カテゴリの 1 つ目の割引明細行を**含む**に設定する、および製品 **81327** の 2 つ目の割引明細行を**除外**に設定している割引があります。 この割引は、製品 **81327** を除く**ファッション** カテゴリ ツリーのすべての製品に適用されます。 すべて既存の割引ラインは**含める**に設定されます。 これにより、マーチャンダイジングがいくつかのシナリオで割引を定義することが容易になります。
 
-割引の詳細については、[価格調整と割引](../../retail/price-adjustments-discounts.md) を参照してください。
+割引の詳細については、[価格調整と割引](../../../retail/price-adjustments-discounts.md) を参照してください。
 
 ### <a name="pos-inventory-visibility-improvements"></a>POS 在庫可視性の向上
 
@@ -896,7 +897,7 @@ Retail ユーザーは、Dynamics AX 2012 R3 CU11 以上を使用している場
 
 N-1 サポートを有効にするには、Dynamics AX 2012 R3 CU 11 または CU12 ストアを新しい HQ に接続するための N-1 コンポーネントをインストールする必要があります。 顧客は、事前 CU 11バージョンを使用している場合、少なくとも Dynamics AX 2012 R3 CU 1 にアップグレードし、N-1 サポートを利用する必要があります。
 
-小売のアップグレードおよび N-1 のサポートの詳細については、[アップグレードおよび N-1 のサポートの概要](../../retail/dev-itpro/overview-upgrade-n-minus1.md) および [N-1のインストールおよびコンフィギュレーション](../../retail/dev-itpro/overview-upgrade-n-minus1.md) を参照してください。
+小売のアップグレードおよび N-1 のサポートの詳細については、[アップグレードおよび N-1 のサポートの概要](../../../retail/dev-itpro/overview-upgrade-n-minus1.md) および [N-1のインストールおよびコンフィギュレーション](../../../retail/dev-itpro/overview-upgrade-n-minus1.md) を参照してください。
 
 ## <a name="supply-chain-management"></a>サプライ チェーン マネジメント
 
@@ -904,7 +905,7 @@ N-1 サポートを有効にするには、Dynamics AX 2012 R3 CU 11 または C
 
 バッチの確認とライセンス プレートの確認が Finance and Operations の今回のリリースに追加されました。 この拡張機能では、モバイル デバイスを使用して、適切なバッチまたはライセンス プレートが選択されていることを確認することができます。
 
-以前のバージョンでは、項目のバッチおよびライセンス プレートの確認がサポートされていませんでした。 詳細については、[バッチおよびライセンス プレートの確認](../../supply-chain/warehousing/batch-and-license-plate-confirmation.md) を参照してください。
+以前のバージョンでは、項目のバッチおよびライセンス プレートの確認がサポートされていませんでした。 詳細については、[バッチおよびライセンス プレートの確認](../../../supply-chain/warehousing/batch-and-license-plate-confirmation.md) を参照してください。
 
 ### <a name="consignment-inventory"></a>委託販売在庫
 
@@ -928,13 +929,13 @@ N-1 サポートを有効にするには、Dynamics AX 2012 R3 CU 11 または C
 
 以前のバージョンでは、たとえば、品目のバーコードをスキャンしてピッキングするために品目の数量を確認したり、大きな数量のバーコードをスキャンしたりできませんでした。
 
-詳細については、「[ピース ピッキング確認](../../supply-chain/warehousing/piece-picking-confirmation.md)」を参照してください。
+詳細については、「[ピース ピッキング確認](../../../supply-chain/warehousing/piece-picking-confirmation.md)」を参照してください。
 
 ### <a name="product-work-confirmation-for-cluster-picking"></a>クラスター ピッキングの製品動作の確認
 
 Dynamics 365 for Finance and Operations では、クラスター ピッキング フローで品目をスキャンし、検証をサポートします。
 
-クラスタ ピッキングが適用される場合、クラスタに追加される品目を確認するための品目確認書は重要です。 クラスター ピッキング プロセス中にクラスター ピッキングの品目を確認することができるようになりました。 以前のバージョンでは、品目バーコードを確認し、バーコード スキャナーを使用して品目を検証できませんでした。 詳細については、[クラスター ピッキングの製品の確認](../../supply-chain/warehousing/cluster-picking-item-confirmation.md) を参照してください。
+クラスタ ピッキングが適用される場合、クラスタに追加される品目を確認するための品目確認書は重要です。 クラスター ピッキング プロセス中にクラスター ピッキングの品目を確認することができるようになりました。 以前のバージョンでは、品目バーコードを確認し、バーコード スキャナーを使用して品目を検証できませんでした。 詳細については、[クラスター ピッキングの製品の確認](../../../supply-chain/warehousing/cluster-picking-item-confirmation.md) を参照してください。
 
 ### <a name="prospect-to-cash-integration-capabilities"></a>見込顧客リストから現金化への統合
 
@@ -961,7 +962,7 @@ Dynamics 365 for Finance and Operations では、クラスター ピッキング
 
 統合に豊富なソリューションを付属して、エクスペリエンスを最適化し、Dynamics 365 for Sales と Dynamics 365 for Finance and Operations 間の複雑なプロセス フローを許可します。 Finance and Operations は拡張されたエンティティで整合性をサポートするため最適化されており、Dynamics 365 for Sales はソリューションで最適化されています。
 
-追加情報については、 [見込顧客を現金化](../..//supply-chain/sales-marketing/prospect-to-cash.md) を参照してください。
+追加情報については、 [見込顧客を現金化](../../..//supply-chain/sales-marketing/prospect-to-cash.md) を参照してください。
 
 ### <a name="punch-out-to-external-catalog-from-purchase-requisition"></a>購買要求から外部カタログへのパンチアウト
 
@@ -971,7 +972,7 @@ Dynamics 365 for Finance and Operations では、クラスター ピッキング
 
 cXML プロトコルは、Finance and Operations と仕入先のシステムに存在する外部カタログ間の通信に使用されます。
 
-詳細については、[パンチアウト eProcurement の外部カタログの使用](../../supply-chain/procurement/use-external-catalogs-for-punchout.md) を参照してください。
+詳細については、[パンチアウト eProcurement の外部カタログの使用](../../../supply-chain/procurement/use-external-catalogs-for-punchout.md) を参照してください。
 
 ### <a name="system-grouping-on-an-open-work-list"></a>オープン作業一覧のシステム グループ化
 
@@ -988,7 +989,7 @@ cXML プロトコルは、Finance and Operations と仕入先のシステムに�
 
 両方の改善により、購買部門で費やされる時間が短縮され調達担当者がタスクをより効率的に処理できるようになります。
 
-詳細については、[外部仕入先との仕入先コラボレーション](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md) を参照してください。
+詳細については、[外部仕入先との仕入先コラボレーション](../../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md) を参照してください。
 
 ### <a name="warehousing"></a>倉庫管理
 

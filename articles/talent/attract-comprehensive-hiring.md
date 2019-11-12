@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 59f3e78efa8801c81dccff2f45751b47fb30481f
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 54f206aed196be5bbfa0de5b632f20519c2680ea
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009949"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550439"
 ---
-# <a name="which-version-of-attract"></a>Attract のどのバージョンですか。
+# <a name="which-version-of-microsoft-dynamics-365-talent---attract"></a>Microsoft Dynamics 365 Talent - Attract のどのバージョン
 
 [!include[banner](../includes/banner.md)]
 

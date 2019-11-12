@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 704330d136afee08fcee36db19acf72297fddac8
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: dd10c24045fae5db00e88f3b84d4dea7b2c82c37
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624864"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571096"
 ---
 # <a name="inventory-tag-counting"></a>在庫タグ棚卸
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 このトピックでは、倉庫の実際の内容と手持在庫の比較に使用する、タグ棚卸に関する情報を提供します。
 

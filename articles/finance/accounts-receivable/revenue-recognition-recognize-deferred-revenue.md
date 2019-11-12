@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 244321e1eb246c46260326a8892924d9d9da75d3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175999"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570359"
 ---
 # <a name="recognize-deferred-revenue"></a>繰延収益の認識
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> 収益認識機能は、機能管理を使用して有効にすることはまだできません。 現時点では、コンフィギュレーション キーを使用して有効にする必要があります。
+> 収益認識機能は、機能管理を使用して有効にすることはできません。 現時点では、コンフィギュレーション キーを使用して有効にする必要があります。
 
 このトピックでは、収益認識のスケジュールで収益を認識するプロセスについて説明します。 販売注文の請求書が転記された後で、収益のスケジュールが設定された販売注文明細行ごとに収益認識スケジュールが作成されます。 明細行の収益スケジュールは、明細行の収益を遅延するかどうかを決定するために使用されます。
 

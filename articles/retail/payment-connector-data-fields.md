@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
-ms.openlocfilehash: 1f37c9761bc35478781a277c6cc616a91da0ca9f
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 29cfae70e5c82382ec7231ad44e1a39f8afe9b89
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2018027"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653407"
 ---
 # <a name="dynamics-365-payment-data-use"></a>Dynamics 365 支払データの使用
 
@@ -227,7 +227,7 @@ ms.locfileid: "2018027"
 #### <a name="l2-data"></a>L2 データ
 
 > [!NOTE]
-> この動作が Finance and Operations クライアント内の対応するコネクタ構成を通じて明示的に構成されている場合にのみ、L2 データがコネクタに送信されます。
+> この動作が Retail クライアント内の対応するコネクタ構成を通じて明示的に構成されている場合にのみ、L2 データがコネクタに送信されます。
 
 | 名前空間 | フィールド | 説明 |
 |---|---|---|
@@ -287,7 +287,7 @@ ms.locfileid: "2018027"
 #### <a name="l3-data"></a>L3 データ
 
 > [!NOTE]
-> この動作が Finance and Operations クライアント内の対応するコネクタ構成を通じて明示的に構成されている場合にのみ、L3 データがコネクタに送信されます。
+> この動作が Retail クライアント内の対応するコネクタ構成を通じて明示的に構成されている場合にのみ、L3 データがコネクタに送信されます。
 
 | 名前空間 | フィールド | 説明 |
 |---|---|---|

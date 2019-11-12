@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11f784e4c17ad5b764cadd914f4959f4be160913
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: d4804d5f38fb65aa8ab3eafceccbbc6f52f2e81b
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783399"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569941"
 ---
 # <a name="functional-location-lifecycle-states"></a>機能的な場所のライフサイクルの状態
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 このトピックでは、資産管理に機能的な場所のライフサイクルの状態とライフサイクル モデルを設定する方法について説明します。 機能的な場所のライフサイクルの状態は、機能的な場所が経由できる状態 (作成、アクティブ、終了など) を定義します。 **すべての機能的な場所**のリスト ページで、ライフサイクルの状態に関係なく、すべての機能的な場所を表示することができます。 機能的な場所の状態を変更するには、**すべての機能的な場所**リスト ページで機能場所の状態を選択し、**機能的な場所の状態を更新**を選択します。
 

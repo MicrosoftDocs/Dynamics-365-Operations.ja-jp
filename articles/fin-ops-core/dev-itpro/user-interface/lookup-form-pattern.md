@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 201a9804b13d81eaefa1a4464cdfb62cfc63b462
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 695997f9ed2f96a05f5f025c39fe22dc30336d45
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191768"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658836"
 ---
 # <a name="lookup-form-pattern"></a>ルックアップのフォーム パターン
 
@@ -42,15 +42,15 @@ ms.locfileid: "2191768"
 ## <a name="wireframe"></a>ワイヤーフレーム
 ### <a name="lookup-basic"></a>基本のルックアップ
 
-[![LookupForm(1)](./media/lookupform1.png)](./media/lookupform1.png)
+[![基本ルックアップ フォームのワイヤーフレーム](./media/lookupform1.png)](./media/lookupform1.png)
 
-### <a name="lookup-wtabs"></a>タブ付きルックアップ
+### <a name="lookup-with-tabs"></a>タブ付きルックアップ
 
-[![LookupForm(2)](./media/lookupform2.png)](./media/lookupform2.png)
+[![タブ付きルックアップ フォームのワイヤーフレーム](./media/lookupform2.png)](./media/lookupform2.png)
 
-### <a name="lookup-wpreview"></a>プレビュー付きルックアップ
+### <a name="lookup-with-preview"></a>プレビューによるルックアップ
 
-[![LookupForm(3)](./media/lookupform3.png)](./media/lookupform3.png)
+[![プレビューによるルックアップ フォームのワイヤーフレーム](./media/lookupform3.png)](./media/lookupform3.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変更を次に示します。
@@ -126,19 +126,19 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変�
 
 フォーム: **SysLanguageLookup** (ナビゲーション バーで**設定** &gt; **ユーザー設定**をクリックします。) 
 
-[![LookupForm(4)](./media/lookupform4.png)](./media/lookupform4.png)
+[![基本ルックアップの例](./media/lookupform4.png)](./media/lookupform4.png)
 
-### <a name="lookup-wtabs"></a>タブ付きルックアップ
+### <a name="lookup-with-tabs"></a>タブ付きルックアップ
 
 フォーム: **CaseCategoryLookup** (**共通** &gt; **共通** &gt; **ケース** &gt; **すべてのケース**の順にクリックして、詳細に移動するケースを選択します。) 
 
-![LookupForm(5)](./media/lookupform5.png)
+![タブ付きルックアップ フォームの例](./media/lookupform5.png)
 
-### <a name="lookup-wpreview"></a>プレビュー付きルックアップ
+### <a name="lookup-with-preview"></a>プレビューによるルックアップ
 
 フォーム: **HcmWorkerLookup** (**人事管理** &gt; **共通** &gt; **組織** &gt; **職位** &gt; **職位**の順にクリックし、詳細に移動するレコードをクリックします。 **作業者の割り当て** FastTab を展開し、**新規**をクリックして、次に**ワーカー**フィールドにドロップダウンの矢印をクリックします。 
 
-[![LookupForm(6)](./media/lookupform6.png)](./media/lookupform6.png)
+[![プレビューによるルックアップ フォームの例](./media/lookupform6.png)](./media/lookupform6.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -166,12 +166,12 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変�
 
 **SysLanguageLookup (基本のルックアップ)** 
 
-![LookupForm(7)](./media/lookupform7.png) 
+![基本ルックアップ フォームの例](./media/lookupform7.png) 
 
 **CaseCategoryLookup (タブ付きルックアップ)** 
 
-[![LookupForm(8)](./media/lookupform8.png)](./media/lookupform8.png) 
+[![タブ付きルックアップ フォームの例](./media/lookupform8.png)](./media/lookupform8.png) 
 
-**HcmWorkerLookup (プレビュー付きのルックアップ)** 
+**HcmWorkerLookup (プレビューによるルックアップ)** 
 
-![LookupForm(9)](./media/lookupform9.png)
+![プレビューによるルックアップ フォームの例](./media/lookupform9.png)

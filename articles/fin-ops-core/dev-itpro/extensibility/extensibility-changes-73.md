@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: da8d8fd9994d43f2333d9bdf84ac69b823c7caa9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 90ec082ad4ca769be5693175204fc7e502cc60f1
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191643"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627577"
 ---
 # <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-73"></a>Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更
 

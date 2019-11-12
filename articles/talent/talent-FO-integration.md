@@ -3,7 +3,7 @@ title: Dynamics 365 Talent から Dynamics 365 Finance への統合に関する 
 description: このトピックでは、Talent および Finance の統合でどのデータが同期されるのかについて説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5bb855e6dd7ff236b7bda9e59e12ed8cc8ab9bc9
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8b9fa6b8d5109f873c784d384d49f685f94da228
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251017"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622771"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Dynamics 365 Talent から Dynamics 365 Finance への統合に関する FAQ
 
@@ -35,6 +35,10 @@ ms.locfileid: "2251017"
 Core HR に関しては、データのサブセットが同期されます。 すべてのエンティティの一覧については、「[Dynamics 365 Talent から Dynamics 365 Finance への統合](talent-financeandoperations-integration.md)」を参照してください。
 
 Attract および Onboard に関しては、すべてのデータが Common Data Service にネイティブです。
+
+## <a name="why-dont-i-see-any-data-synced-to-common-data-service"></a>Common Data Service に同期されたデータを表示できないのはなぜですか?
+
+既定では、Common Data Service の統合は、提供されているデモ データが含まれていない新しい環境ではオフになっています。 既定では、デモ データが含まれている新しい環境ではオンになっており、環境の準備時にデータの同期が開始されます。 データと同期する準備が整ったら、統合をオンにすることができます。 詳細については、[Common Data Service 統合のコンフィギュレーション](hr-common-data-service-integration.md) を参照してください。
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>テンプレートを使用せずに新しいマップを作成できますか。
 

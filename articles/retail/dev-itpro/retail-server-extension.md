@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: e7ae9545cd17fbde1dd01165ac3091d1f6128c56
-ms.sourcegitcommit: 2699f8c74cf57dcc7893d00276ab8a86ad682928
+ms.openlocfilehash: bce65b42c6d87fd57e7fc1d45eca5d6afe9610c7
+ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995727"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622586"
 ---
 # <a name="create-a-new-retail-server-extension"></a>新しい Retail Server 拡張機能の作成
 
@@ -167,4 +167,4 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
 
 10. クライアントで Retail Server 拡張機能を呼び出すには、Retail プロキシを生成する必要があります。 その後、プロキシを使用して、クライアントから新しい Retail Server API を呼び出すことができます。
 
-    Retail プロキシの生成方法については、[Retail プロキシの生成](typescript-proxy-retail-pos) を参照してください。
+    Retail プロキシの生成方法については、[Retail プロキシの生成](typescript-proxy-retail-pos.md) を参照してください。

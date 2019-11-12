@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54c4b08feb0aeadcd236db4432221663071bb195
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ac51cda77ab609713c201924dee2ecac74140477
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183050"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658841"
 ---
 # <a name="hierarchyviewer-control"></a>HierarchyViewer コントロール
 
@@ -35,7 +35,7 @@ ms.locfileid: "2183050"
 
 HierarchyViewer コントロールを使用して、人、製品、または組織の階層関係を表現できます。 これは主に、従来の上から順の階層構造の関係を理解するのに役立つ視覚的な方法、およびフォーカスされたノードで表されるエンティティに移動する方法として使用されます。 HierarchyViewer コントロールを使用すると、わずかなスペースで深く入れ子になった複数レベルの内容を精査できます。 コントロールは、表示されているツリー構造の部分を制御するために、ノードを展開したり折りたたんだりします。 非連結コントロールであるため、HierarchyViewer データは抽象化クラスによって管理され、主に単純なツリー リレーションシップでデータを視覚化する方法として使用されます。 従来のツリーでの階層データについては、標準のツリー コントロールがあります。 
 
-[![HierarchyViewer\_Page](./media/hierarchyviewer_page.png)](./media/hierarchyviewer_page.png) 
+[![HierarchyViewer コントロールのツリー構造を示すダイアグラム](./media/hierarchyviewer_page.png)](./media/hierarchyviewer_page.png) 
 
 HierarchyViewer コントロールは、常に単一ブランチで最大 3 つのレベルを示します。 階層リンク証跡は、現在のツリーの分岐下にある親のパスを示します。 最上位レベルは現在の上位ノードを示し、常に 1 つのメンバーを持ちます。 このメンバーは必ずしも root である必要はありません。 第 2 レベルである子ノードは、不定数のメンバー ノードを有することができます。 既定では、これらのメンバー ノードの 3 つは各ページに表示されます。 表示されるメンバー ノードの数は、**子供の数** プロパティを使用して設定できます。 コントロールは、子レベルのメンバーの右と左に表示されます。 最後のレベルである孫ノードは、不定数のメンバー ノードを持つことができます。 可視メンバー ノードの数は、**孫の数** プロパティによって制御されます。 HierarchyViewer コントロールは、孫レベルのメンバーの上と下に表示されます。 ノードの対話型の表示にはビジネス ロジックは必要ありません。
 
@@ -59,7 +59,7 @@ HierarchyViewer インスタンスを作成するには、次のようにしま�
 1.  フォーム デザイナーで、フォームに HierarchyViewer のインスタンスを追加します。
 2.  **プロパティ** ウィンドウで、表示されている子および孫の既定値を承認するか、新しい値を設定します。 
 
-![HierarchyViewer\_プロパティ](./media/hierarchyviewer_properties-256x300.png)
+![プロパティ ウィンドウのスクリーン ショット](./media/hierarchyviewer_properties-256x300.png)
 
 HierarchyViewer コントロールは、主に静的な方法でノードを移動および調査する視覚的で対話的な方法です。 HierarchyViewer コントロールは、データ ソースにバインドされていません。 代わりに、コントロールは基準 **HierarcyDesignerBase** を拡張する対応したコントローラー クラスによって管理されます。 データを含むそのクラスの初期化し、コントロール インスタンスおよび HierarchyViewer ノードの表示フィールドにバインドします。
 

@@ -3,7 +3,7 @@ title: 支払アプリケーション データ セキュリティ標準 (PA-DSS
 description: このトピックでは、PA-DSS 認証の過去、現在、および保留中の一覧について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 02/06/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-01-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 23762c16c057ed5f7fb09b34c16c8064f5a238f5
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 041a9bfd794d4f712eda8a9e1e92ea7eff2ca6ed
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019312"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653240"
 ---
 # <a name="payment-application-data-security-standards-pa-dss-certification"></a>支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
 

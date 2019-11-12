@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anniels
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 6799df7484cff3c804c0c63c918d2c4fe2846541
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2618130279f3d48456dc9dfa5367f83663327e87
+ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191683"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "2635092"
 ---
 # <a name="install-basex-for-application-checker"></a>アプリケーション チェッカーに対する BaseX のインストール
 
@@ -83,8 +83,6 @@ BaseX をダウンロードするには、[BaseX Web サイト](http://basex.org
 ダウンロード ページから、zip パッケージをダウンロードします。
 
 ---
-
-現時点では、最新バージョンは、9.1.2です。
 
 ## <a name="install-basex"></a>BaseXをインストール
 

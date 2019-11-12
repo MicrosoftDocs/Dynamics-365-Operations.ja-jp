@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a15919250f7a492b28ef5db8d1c053b3348444f0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 80e338aaa16b459c581e810ccc1a45d17cff3677
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191755"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658823"
 ---
 # <a name="tabular-fields-subpattern"></a>表形式フィールドのサブパターン
 
@@ -39,9 +39,11 @@ ms.locfileid: "2191755"
 -   グループ コントロール
 
 ## <a name="wireframes"></a>ワイヤーフレーム
-### <a name="tabularfields1mediatabularfields1pngmediatabularfields1pngstructural-wireframe"></a>[![TabularFields(1)](./media/tabularfields1.png)](./media/tabularfields1.png)構造ワイヤーフレーム
+### <a name="wireframe-for-tabular-fieldsmediatabularfields1pngmediatabularfields1png"></a>[![表形式フィールドのワイヤーフレーム](./media/tabularfields1.png)](./media/tabularfields1.png)
 
-[![TabularFields(2)](./media/tabularfields2.png)](./media/tabularfields2.png)
+構造のワイヤーフレーム
+
+[![表形式フィールドのワイヤーフレーム](./media/tabularfields2.png)](./media/tabularfields2.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX の以前のリリースでは、このパターンをモデル化するための正式に許容された方法はありませんでした。 したがって、このパターンは、現在のパターンと一致するように変更する必要がある、一貫性のない多くの方法でモデル化されました。 このパターンをモデル化する最も一般的な方法は、列にグループを使用することでした。 ただし、グループが行に使用されるようになりました。 この変更の主な理由は HTML/CSS コンストラクトにより適合することでした。この変更は、テーブルのタブ順とセマンティクスの保持にも役立ちます。
@@ -82,7 +84,7 @@ Microsoft Dynamics AX の以前のリリースでは、このパターンをモ�
 ## <a name="examples"></a>例
 フォーム: **LedgerJournalTransVendPaym** **(残高)** (**買掛金勘定** &gt; **仕訳帳** &gt; **支払仕訳帳** &gt; **明細行**) 
 
-[![TabularFields(3)](./media/tabularfields3.png)](./media/tabularfields3.png)
+[![表形式フィールドの例](./media/tabularfields3.png)](./media/tabularfields3.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される

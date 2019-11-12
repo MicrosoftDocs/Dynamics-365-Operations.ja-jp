@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 761364c8c58258baf2268f917cb174ac300c4528
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 02686c97a19fa86c3ea93d7c400067f0855b5c4d
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783416"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571487"
 ---
 # <a name="asset-boms"></a>資産 BOM
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 このトピックでは、資産管理の資産部品表 (BOM) について説明します。 **資産 BOM** ページは、全有効期間中に使用される資産すべての品目の一覧 (予備部品およびその他の品目) を表示します。 新しい資産を作成するときは、設定手順の一部として資産 BOM の設定を考慮する必要があります。 これにより、作成日から資産の品目履歴を追跡することができます。
 

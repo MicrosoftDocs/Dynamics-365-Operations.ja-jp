@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a1c41cd4440eaf70f720bfd64884e6ef4662f87a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f65118b6a7393ced9d80c30fad7540a7b27da6c7
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181476"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569087"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>生成されたドキュメント用にカスタマイズされた保存先を指定します
 
@@ -56,7 +56,7 @@ ms.locfileid: "2181476"
 
 ER フォーマットが生成するドキュメントのルーティング方法を指定するには、[ER の送信先](electronic-reporting-destinations.md) を構成する必要があります。 生成するドキュメントをファイルとして保存するように構成する各 ER の送信先では、ドキュメントのドキュメント タイプを指定する必要があります。 異なる ER フォーマットが生成するドキュメントをルーティングするには、異なるドキュメント タイプが使用できます。
 
-1. 前に作成またはインポートした ER フォーマット用に、新しい [ドキュメント タイプ](../../fin-and-ops/organization-administration/configure-document-management.md) を追加します。 次の図では、ドキュメント タイプは **FileX** です。
+1. 前に作成またはインポートした ER フォーマット用に、新しい [ドキュメント タイプ](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) を追加します。 次の図では、ドキュメント タイプは **FileX** です。
 2. このドキュメント タイプをその他のドキュメント タイプから区別するには、名前に特定のキーワードを含めます。 たとえば、次の図では、名前は **(ローカル) フォルダー**です。
 3. **クラス** フィールドには、**ファイルの添付**を指定します。
 4. **グループ** フィールドには、**ファイル**を指定します。

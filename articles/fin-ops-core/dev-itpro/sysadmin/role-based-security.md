@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 755936d1350b4e3fcc62684ee3d276794ec2a73d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eea2fff2e44097c158757a790534962af7917422
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183072"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578266"
 ---
 # <a name="role-based-security"></a>ロールベース セキュリティ
 
@@ -44,7 +44,7 @@ Finance and Operations アプリでは、ロール ベース セキュリティ�
 
 次の図は、ロールベースのセキュリティとそれらの関係の要素を示しています。 
 
-[![ロールベースの AX 7 のセキュリティ フレームワーク](./media/rbs.png)](./media/rbs.png)
+[![ロールベースのセキュリティ フレームワークの例](./media/rbs.png)](./media/rbs.png)
 
 <a name="security-roles"></a>セキュリティ ロール
 --------------

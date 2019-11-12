@@ -3,7 +3,7 @@ title: 契約タイプ間でライセンスを移動する
 description: このトピックでは、契約タイプの間のライセンスを移動する方法について説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 06/05/2018
+ms.date: 10/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 54db72096bdae6de8f5d3f41d5bb654af11682aa
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: bfa8b442e57ead9b12fbd16cf2f498cedacbb4c4
+ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553201"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2572629"
 ---
 # <a name="move-licenses-between-agreement-types"></a>契約タイプ間でライセンスを移動する
 
@@ -63,7 +63,7 @@ ms.locfileid: "2553201"
     - **Microsoft SQL Server に基づくレベル 1 環境データベース:** データベースのバックアップを作成します。
     - **Azure SQL データベースに基づくレベル 2 およびそれ以上の環境:** 次のオプションのいずれかを使用します。
 
-        - **オプション 1:** [Azure SQL データベースから SQL Server 環境にデータベースをコピー](../../dev-itpro/database/copy-operations-database.md)に記載されている手順に従います。
+        - **オプション 1:** [標準のユーザー受け入れテスト (UAT) データベースのコピーをエキスポート](../../dev-itpro/database/dbmovement-scenario-exportuat.md) で説明されている手順に従ってください。
         - **オプション 2:** Azure サブスクリプションを持っている場合、サブスクリプションの下に Azure SQL データベースのコピーを保存してください。
         - **オプション 3:** Azure SQL データベース環境を複数持ってる場合、1 つの環境を再配置し、古い環境をデータ センターに残してから、環境間でデータベース更新の要求をします。
         - **オプション 4:** データ パッケージとしてデータを保存し、再配置が完了した後にパッケージをインポートします。

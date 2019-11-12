@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1e4540832046b34c96d4a9fb3723970f8349fba0
-ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
+ms.openlocfilehash: d4a8a3b905ab147a85f1cb6baeab6071000c17c8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1864407"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570596"
 ---
 # <a name="retail-software-development-kit-sdk-architecture"></a>Retail ソフトウェア開発キット (SDK) アーキテクチャ
 
@@ -188,13 +188,13 @@ Retail SDK の更新が必要な場合、潜在的なコード結合が必要で
 
 SDK の C\# ソース コードは、Contoso 名前空間を使用します。 したがって、Microsoft が Microsoft.Dynamics を使用するため、Microsoft の型と独自の型を区別する方が簡単です。 Microsoft バイナリからタイプを参照している場合は、Microsoft.Dynamics を参照します。 そのようにして、Retail SDK からではなく、参照先のバイナリからであることがわかります。 
 
-[![RetailSDK02](./media/retailsdk02.png)](./media/retailsdk02.png)
+[![タイプを参照するコード サンプル](./media/retailsdk02.png)](./media/retailsdk02.png)
 
 ### <a name="dependencies-build-order-and-full-build"></a>相互関係、ビルド順序、およびフル ビルド
 
 次の図は、Retail SDK 内の高レベルの論理的な依存関係ツリーを示しています。 すべての Microsoft ファイルまたはアセットへの参照は示されません。 これらを確認するには、Visual Studio プロジェクトとソリューション ファイルを詳しく見てください。 
 
-[![RetailSDK03](./media/retailsdk03.png)](./media/retailsdk03.png) 
+[![高レベルの論理的な依存関係ツリーの図](./media/retailsdk03.png)](./media/retailsdk03.png) 
 
 次の重要な点を考慮してください。
 
@@ -203,17 +203,17 @@ SDK の C\# ソース コードは、Contoso 名前空間を使用します。 �
 - すべてのプロジェクトを含む単一の Visual Studio ソリューションはありません。 さまざまな Visual Studio プロジェクト間にいくつかの結合があるため、複数のプロジェクトまたはソリューションを並べて開くことができ、変更後に適切なプロジェクトをコンパイルできます。
 - すべてのコンポーネントをカスタマイズしなくても、最終的な配置パッケージを入手する最も簡単な方法は、Retail SDK 全体を構築することです。 これを行うには、**VS2015 の MSBuild コマンド プロンプト** ウィンドウを開き、**msbuild** (または非デバッグ バージョンでは、**msbuild /p:Configuration=Release**) を入力します。 
 
-[![RetailSDK04](./media/retailsdk04.png)](./media/retailsdk04.png)
+[![MSBuild コマンド プロンプトのスクリーンショット](./media/retailsdk04.png)](./media/retailsdk04.png)
 
 このコマンドはすべてのプロジェクトをビルドします。 この方法は、実装やコードのバグがないことを確認する優れた方法も提供します。  バグがある場合は、ビルドが失敗し、コマンド プロンプト ウィンドウに失敗した内容が表示されます (この出力は Visual Studio の表示と似ています)。 
 
-[![RetailSDK05](./media/retailsdk05.png)](./media/retailsdk05.png)
+[![サンプル コードを含む MSBuild コマンド プロンプトのスクリーンショット](./media/retailsdk05.png)](./media/retailsdk05.png)
 
 MSBuild の詳細なヘルプについては、 [https://msdn.microsoft.com/library/0k6kkbsd.aspx](https://msdn.microsoft.com/library/0k6kkbsd.aspx)を参照してください。 
 
 ビルドによって作成されるバイナリは、SDK リファレンス フォルダーに自動的にコピーされます。 References フォルダーには、その他のすべてのバイナリも含まれます。 DLL には、すべて Customization.settings で定義できる名前 (この場合は「Contoso」) が接頭語にあるため上書きされないことに注意します。 
 
-[![RetailSDK06](./media/retailsdk06.png)](./media/retailsdk06.png)
+[![Retail SDK の参照ファイルのスクリーンショット](./media/retailsdk06.png)](./media/retailsdk06.png)
 
 ### <a name="minimal-required-configuration"></a>最小限必要なコンフィギュレーション
 
@@ -223,11 +223,11 @@ Retail SDK をすばやくビルドしたり、デモ マシンでデバッガ�
 
 BuildTools\\Customization.settings には SDK のほとんどのコンフィギュレーション値が保持されています。 次の図の強調表示された項目はグローバル値です。 これらの値は、ビルド バイナリ、コンポーネント、パッケージの名前付け、バージョン管理、コード署名の方法を制御します。 
 
-[![RetailSDK07](./media/retailsdk07.png)](./media/retailsdk07.png)
+[![BuildTools のカスタマイズ設定のコードのスクリーンショット](./media/retailsdk07.png)](./media/retailsdk07.png)
 
 必須ではありませんが、厳密名でアセンブリに署名することをお勧めします。 独自のキー ファイルをまだ作成していない場合に作成する方法については、[[https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx)] を参照してください。 正しくビルドするには、アプリ パッケージの署名証明書を作成する必要があります。 [https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) で PFX ファイルを作成するこれらの指示に従ってください。 厳密な名前のキー ファイルとアプリ パッケージの署名証明書の両方を BuildTools フォルダー内に保存することができます。 **RetailServerLibraryPathForProxyGeneration** プロパティは、プロキシ生成で異なる RetailServer DLL を設定するために使用することができます。 Customization.settings は、バイナリー、コンフィギュレーション ファイル、SQL 更新スクリプトなどの新しいカスタマイズ資産を定義する場所でもあります。 拡張子、バイナリ、および資産をここで指定した後、ファイルは作成された配置可能パッケージに追加されます。 
 
-[![RetailSDK08](./media/retailsdk08.png)](./media/retailsdk08.png)
+[![追加ファイルのコードのスクリーンショット](./media/retailsdk08.png)](./media/retailsdk08.png)
 
 ### <a name="customizing-the-build"></a>ビルドのカスタマイズ
 
@@ -235,13 +235,13 @@ BuildTools\\Customization.settings には SDK のほとんどのコンフィギ�
 
 簡単に新しいプロジェクトを Retail SDK のビルド システムに追加することができます。 多くの既存のプロジェクトのいずれかを複製するか、新しいプロジェクトを開始することができます。 次の図に示すように、テキスト エディタでいくつかの調整を加える必要があるだけです。 **Import** 要素の相対パスを調整する必要があり、**AssemblyName** 要素は定義済みの **AssemblyNamePrefix** プロパティを使用する必要があります。 これらの調整は、バージョン管理、コード署名、統一されたアセンブリ命名、[参照] フォルダーへの自動ドロップ、その他のタスクを無料で行うために必要です。 
 
-[![RetailSDK09](./media/retailsdk09.png)](./media/retailsdk09.png)
+[![新しいプロジェクトを追加するコードのスクリーンショット](./media/retailsdk09.png)](./media/retailsdk09.png)
 
 #### <a name="changing-the-build-order-or-adding-to-the-build"></a>ビルド順序の変更またはビルドへの追加
 
 Retail SDK のディレクトリ ツリー全体は、MSBuild トラバーサル ファイル (dirs.proj ファイル) サポートを受けて構築されています。 次の図は、Retail SDK の主なトラバーサルファイルを示しています。 類似したファイルは、サブディレクトリにも存在する場合があります。 Visual Studio ソリューション ファイル (.sln ファイル) がトラバーサル ファイルに非常に類似していることに注意します。 どちらもMSBuild エンジンに対して、他のビルド スクリプトを処理するよう "命令"します。 
 
-[![RetailSDK10](./media/retailsdk10.png)](./media/retailsdk10.png) 
+[![ビルド順序の変更またはビルドへの追加のコードのスクリーンショット](./media/retailsdk10.png)](./media/retailsdk10.png) 
 
 新しいコードを追加した後、そのほとんどは、新しいフォルダーに配置する必要があります (詳細は、「コード実装のベスト プラクティス」を参照してください)。また、1 つまたは複数の dirs.proj ファイルに追加することによって、トラバーサル構造に追加する必要があります。 拡張フォルダーは、前述の図の 10 行目で強調表示されています。 新しい dirs.proj ファイルを開始する最も簡単な方法は、既存のファイルをコピーし、**Import** 要素のパスを修正して、**ItemGroup** 要素の **ProjectFiles** 要素を更新することです。
 
@@ -253,7 +253,7 @@ Retail SDK のディレクトリ ツリー全体は、MSBuild トラバーサル
 
 この記事の前半のアーキテクチャ図に示すように、いくつかのものは RetailServer インターフェイスによって異なります。 他のユーザーがこのインターフェイスを変更することがあります。 開発者のトポロジ マシンでは、誰かがすぐに変更を試してみることができます。 この場合、任意の CommerceRuntime および RetailServer 拡張 DLL をローカルにインストールされた RetailServer Web アプリケーションの bin フォルダーにコピーする必要があります。 ユーザーは、Customization.setting ファイルをコンフィギュレーションして、これらのファイルの新しいバージョンがビルドされるたびに、DLL がローカルの RetailServer Web アプリケーションの bin フォルダーに自動的にコピーされるようにできます。 
 
-[![RetailSDK11](./media/retailsdk11.png)](./media/retailsdk11.png)
+[![新しい DLL を自動的に追加するコードのスクリーンショット](./media/retailsdk11.png)](./media/retailsdk11.png)
 
 ### <a name="application-lifecycle-management"></a>アプリケーション ライフサイクル管理
 
@@ -265,7 +265,7 @@ Retail SDK のディレクトリ ツリー全体は、MSBuild トラバーサル
 
 チームで効率的に仕事をしたり、過去に行ったいくつかの変更を確認できるようにするには、適正な分岐戦略とバージョン管理の規範が必要です。 次の図は、ほとんどのチームでうまくいく単純な分岐戦略を示しています。 バージョン番号は、架空のものです。
 
-[![RetailSDK12](./media/retailsdk12.png)](./media/retailsdk12.png)
+[![分岐と統合の図](./media/retailsdk12.png)](./media/retailsdk12.png)
 
 #### <a name="retail-sdk-mirror-branch"></a>Retail SDK のミラー分岐
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 04630b308a1fcf92c18eb2567fc888b7f8a279bc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e30d333f1d6144bdae824e7b2cf6d815b461e0ba
+ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191744"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564953"
 ---
 # <a name="move-environments-between-data-centers"></a>データ センター間で環境を移動する
 
@@ -49,7 +49,7 @@ Microsoft により同じデータ センターですべての環境を維持す
 - **Microsoft SQL Server に基づくレベル 1 環境データベース:** データベースのバックアップを作成します。
 - **Azure SQL データベースに基づくレベル 2 およびそれ以上の環境:** 次のオプションのいずれかを選択します。
 
-    - **オプション 1:** [Azure SQL データベースから SQL Server 環境にデータベースをコピー](../../dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)に記載されている手順に従います。
+    - **オプション 1:** [データベース 移動工程のホームページ](../../dev-itpro/database/dbmovement-operations.md) のトピックに一覧表示されているプロセスを確認します。
     - **オプション 2:** Azure サブスクリプションを持っている場合、サブスクリプションの下に Azure SQL データベースのコピーを保存してください。
     - **オプション 3:** Azure SQL データベース環境を複数持ってる場合、1 つの環境を再配置し、古い環境をデータ センターに残してから、環境間でデータベース更新の要求をします。
     - **オプション 4:** データ パッケージとしてデータを保存し、再配置が完了した後にパッケージをインポートします。

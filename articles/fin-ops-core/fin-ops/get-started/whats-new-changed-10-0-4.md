@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.4
-ms.openlocfilehash: 6b20490978fd7e9dc4ea48ec7d27c672edb3f886
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 81412344e888cbe6ca1d2e8e27c419c6f821c126
+ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553200"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564950"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-1004-july-2019"></a>Finance and Operations バージョン 10.0.4 (2019 年 7 月) の新機能および変更点
 
@@ -36,7 +36,7 @@ ms.locfileid: "2553200"
 ## <a name="set-up-interest-distribution-for-cash-accounts-public-sector"></a>現金勘定の利息配分の設定 (公的機関)
 代理店は、現金勘定の日毎の平均残高に基づいて、銀行口座の利子を特定の総勘定元帳に割り当てる (分配する) ことができます。 このプロセスを使用して、利息金額の詳細な元帳エントリを生成できます。 また、転記せずにレビュー用の利息額を生成できます。
 
-詳細については [現金勘定の利息配布](https://go.microsoft.com/fwlink/?linkid=2088607) を参照してください。
+詳細については [現金勘定の利息配布の設定](https://go.microsoft.com/fwlink/?linkid=2088607) を参照してください。
 
 ## <a name="budget-analysis-report-public-sector"></a>予算分析レポート (公共部門)
 予算分析の照会と同様に、新しい **予算分析** レポートを使用して、予算金額を指定期間中の実績費用および収益活動と比較する集計レポートを生成します。 勘定科目ごとに、予算金額、実績費用または収益、発注からの予算引当金額および購買依頼からの予算引当金額がレポート上で一覧表示されます。 さらに、このレポートには、各勘定科目および資金の予算残高が一覧表示されます。

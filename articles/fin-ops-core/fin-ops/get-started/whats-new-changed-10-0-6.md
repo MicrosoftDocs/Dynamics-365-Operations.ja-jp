@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の機能のプレビュー
+title: Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の新機能および変更された機能
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.6 の新機能または変更された機能について説明します。 このバージョンは 10 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: e89c99f718badbf94bc6a30bbde723e18643bfb8
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 2ee343c282653a9f31d1ce0837cae392d0f23f11
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249310"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578258"
 ---
-# <a name="preview-features-in-finance-and-operations-apps-version-1006-november-2019"></a>Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の機能のプレビュー
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1006-november-2019"></a>Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Finance および Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.6 を含む Finance and Operations アプリの新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.234 です。 一般提供開始日は 11 月ですが、新機能は 10 月の初期リリースで使用できます。 バージョン 10.0.6 の詳細については [追加リソース](whats-new-changed-10-0-6.md#additional-resources) を参照してください。
 
-Microsoft Dynamics 365 Retail の新機能と変更についての最新のリリースについては、[Dynamics 365 Retail バージョン 10.0.6 の機能のプレビュー](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-6) を参照してください。
+Microsoft Dynamics 365 Retail の最新のリリースの新機能と変更については、[Dynamics 365 Retail バージョン 10.0.6 の新機能と変更](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-6) を参照してください。
 
 ## <a name="product-configuration-models-v2-data-entity"></a>製品コンフィギュレーション モデル V2 データ エンティティ
 
@@ -45,7 +44,7 @@ Microsoft Dynamics 365 Retail の新機能と変更についての最新のリ�
 ## <a name="feature-management-enhancements"></a>機能管理の拡張
 機能管理を使用すると、既定ですべての新機能を有効にできます。それには機能を有効にするための確認と、まだ有効になっていないすべての機能を有効にすることが必要です。 
 
-## <a name="project-contact-committed-detail"></a>プロジェクト連絡先の確定済詳細
+## <a name="project-contract-committed-detail"></a>プロジェクト契約の確定済詳細
 プロジェクト契約の資金調達ソースで確定された金額の詳細にドリルダウンして、確定された金額を構成する活動をユーザーが簡単に確認できるようになりました。
 
 ## <a name="purchase-agreement-responsible-party"></a>購買契約責任者
@@ -60,7 +59,7 @@ Microsoft Dynamics 365 Retail の新機能と変更についての最新のリ�
 バージョン 10.0.6 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7) を参照してください。
 
 ### <a name="platform-update-30"></a>プラットフォーム update 30
-バージョン 10.0.6 には、プラットフォーム更新プログラム 30 が含まれています。 プラットフォーム更新プログラム 30 に関する詳細については、[プラットフォーム更新プログラム 30 (2019 年 11 月) のプレビュー機能](whats-new-platform-update-30.md) を参照してください。
+バージョン 10.0.6 には、プラットフォーム更新プログラム 30 が含まれています。 プラットフォーム更新プログラム 30 については、[プラットフォーム更新プログラム 30 (2019 年 11 月) の新機能と変更](whats-new-platform-update-30.md) を参照してください。
 
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?

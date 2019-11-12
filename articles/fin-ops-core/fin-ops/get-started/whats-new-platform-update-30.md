@@ -1,9 +1,9 @@
 ---
-title: Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の機能のプレビュー
-description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 30 でプレビューされる機能について説明します。
+title: Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
+description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 30 の新機能または変更された機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 10/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 1a7b9872d1a8f8593b0b5a9e8a7bebe34458118f
-ms.sourcegitcommit: 0dd8d0510214f92936a9dd214b404c5c8103587b
+ms.openlocfilehash: 860bb8a01066b064771970c7545a2a5a17cf315d
+ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2419139"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2652583"
 ---
-# <a name="preview-features-in-platform-update-30-for-finance-and-operations-apps-november-2019"></a>Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の機能のプレビュー
+# <a name="whats-new-or-changed-in-platform-update-30-for-finance-and-operations-apps-november-2019"></a>Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 30 の新機能または変更されたプレビュー機能について説明します。 このバージョンのビルド番号は 7.0.5407 です。 一般提供開始日は 11 月ですが、新機能は 9 月の初期リリースで使用できます。 プラットフォーム更新プログラム 30 の詳細については [追加リソース](whats-new-platform-update-30.md#additional-resources) を参照してください。
+このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 30 用の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5407 です。 一般提供開始日は 11 月ですが、新機能は 9 月の初期リリースで使用できます。 プラットフォーム更新プログラム 30 の詳細については [追加リソース](whats-new-platform-update-30.md#additional-resources) を参照してください。
 
 ## <a name="readable-date-time-format-for-datetime-fields-in-business-event-payload"></a>ビジネス イベント ペイロードの dateTime フィールドに対する読み取り可能な日時形式
 新しいビジネス イベントがコード化されると、dateTime フィールドを有効にして、ビジネス イベント ペイロード人が判読可能な形式で値を出力することができます。 また、既存のビジネス イベントを変更して、ペイロードに読み取り可能な dateTime フィールドを含めることにより、互換性を維持することもできます。 開発者ドキュメントについては、[ビジネス イベント開発者ドキュメント](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc) で説明されています。
@@ -58,7 +57,7 @@ ms.locfileid: "2419139"
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="platform-update-30-bug-fixes"></a>プラットフォーム アップデート 30 のバグ修正プログラム
-プラットフォーム更新 30 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、この [KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7)を参照してください。
+プラットフォーム更新 30 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、この [KB 資料](https://fix.lcs.dynamics.com/Issue/Details/1092654?kb=4520346&bugId=369591&dbType=3&qc=a1f7377056b8d98314a62c745da88565f03531d15de24c4a538132d68118059c)を参照してください。
 
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?

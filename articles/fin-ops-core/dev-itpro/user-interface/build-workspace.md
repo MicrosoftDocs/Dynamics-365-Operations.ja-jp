@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1f9fa4f37e6a25c85505d3fa9347ffe1c5f6e8c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ccd63d63b4842538e6549248b89dc3e0f4ed9d56
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191786"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658877"
 ---
 # <a name="build-workspaces"></a>ワークスペースの構築
 
@@ -53,9 +53,9 @@ Microsoft Visual Studio を使用してチュートリアル プロジェクト�
 5.  **インポートするファイルの選択**ダイアログ ボックスで、**ダウンロード** フォルダーを参照して **FMTutorialDataModel.axpp** をクリックしてから**開く**をクリックします。
 6.  **要素の上書き** チェック ボックスをオンにし、**現在のソリューション** オプションをオンにします。 次の図は、完了した **インポート プロジェクト** ダイアログ ボックスを示しています。 
 
-    [![プロジェクトのインポート](./media/importproject1.png)](./media/importproject1.png)
+    [![完了したプロジェクトのインポート ダイアログ ボックス](./media/importproject1.png)](./media/importproject1.png)
 
-7.  **OK** をクリックします。
+7.  **OK**をクリックします。
 8.  ソリューション エクスプローラーで**クラス**を展開して、**FMTutorial** プロジェクトで **FMTDataHelper** を右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。
 9.  **ビルド**メニューで、**ソリューションの再構築**をクリックします。 タイムスタンプに関係なく、プロジェクトのすべてのファイルを確実に作成するには、リビルドを使用します。 **出力** ウィンドウでビルドの進行状況を表示できます。
 10. ビルドが完了した後、**Ctrl + F5** を押してプロジェクトを実行します。 ブラウザーが開き、データをインポートするクラスが実行されます。
@@ -206,9 +206,6 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 
 1. ナビゲーション バーのナビゲーション検索フィールドをクリックします。
 2. **タイル データ** を入力し、検索結果の **タイル データ キャッシュ構成** をクリックします。 
-
-   [![タイル キャッシュ 検索](./media/tilecachesearch.png)](./media/tilecachesearch.png)
-
 3. **FMTCurrentRentalsTile** レコードを検索します。 
 
    [![タイル キャッシュ パラメーター](./media/tilecacheparams-1024x328.png)](./media/tilecacheparams.png)

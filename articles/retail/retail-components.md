@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a240175afe9b5eb98763e729f121b90bc9b062aa
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c54a3e2d0903648b54fe16452467ae97c85430cd
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025138"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570569"
 ---
 # <a name="retail-components"></a>Retail のコンポーネント
 
@@ -91,4 +91,4 @@ Retail は、中規模市場および大規模小売業者に、オンライン�
 </tbody>
 </table>
 
-![SystemArchitecture](./media/Dynamics-365-for-Retail-System-Architecture.PNG)
+![システム アーキテクチャ](./media/Dynamics-365-for-Retail-System-Architecture.png)

@@ -3,7 +3,7 @@ title: ワークフロー ビジネス イベント
 description: ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 61687eb098c021e72d464b99b912dc98aa2950f2
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 08d362d9a11458443da48902a5cb07db7f20ef8e
+ms.sourcegitcommit: 69eaadfb65c5d098b241dfb22f49278683c9e187
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536962"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "2631350"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "2536962"
 
 ワークフロー ビジネス イベントには 5 つの異なるカテゴリがあります。 カテゴリが Microsoft Flow に表示され、イベントを選択できます。
 
-![Microsoft Flow のビジネス イベント カテゴリ](media/Business-event-category.png  "Microsoft Flow のビジネス イベント カテゴリ")
+![Microsoft Flow でのビジネス イベント カテゴリ](media/Business-event-category.png  "Microsoft Flow でのビジネス イベント カテゴリ")
 - **カテゴリ: ワークフロー タイプ** 
      - これらのイベントは、開始および完了などのワークフロー イベントで発生します。 すべてのワークフロー インスタンスはこのカテゴリに相当します。
      - **ID の形式** - "Workflow_" + ワークフロー名 + ワークフロー インスタンス ID、たとえば、"Workflow_BudgetPlanReview_000002"
@@ -81,9 +81,15 @@ ms.locfileid: "2536962"
 - 作業項目に完了す準備ができている場合は、使用可能な回答オプションをユーザーに送信して、割り当てられたユーザーに回答を要求します。
 - 回答が提供された後で **WorkflowWorkItems** エンティティの **完了** メソッドを呼び出して、その回答で作業項目を完了します。 
 
-Microsoft Flow の作業項目完了のテンプレートはすぐに利用できるようになり、簡単に参照できるようにここでリンクが提供される予定です。
-
 Microsoft Flow で作業項目完了を設定する詳細なガイドは [ワークフロー承認ビジネス イベントを消費する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow) を参照してください。
+
+## <a name="templates-for-work-item-completion-in-microsoft-flow"></a>Microsoft Flow での作業項目完了のテンプレート
+
+Microsoft Flow での作業項目完了に関する次のテンプレートが使用できます。
+- [Dynamics 365 for Finance and Operations ワークフロー作業項目 (PU26) を完了](https://flow.microsoft.com/en-us/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
+- [Dynamics 365 for Finance and Operations ワークフロー作業項目 (PU29) を完了](https://flow.microsoft.com/en-us/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
+
+プラットフォーム更新プログラム 29 バージョンは、ビジネス イベント ペイロードから完了オプションを取得します。 これらのオプションはプラットフォーム更新プログラム 29 で追加され、承認アクションによりユーザーに表示されます。 
 
 ## <a name="troubleshooting-workflow-business-events"></a>ワークフロー ビジネスイベントのトラブルシューティング
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba6d9dd397a4aefa0b24ae4f2d42df7ee9301a9e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6b93cb484cb7b63202f6d2a27edd1e04ca5c973c
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183038"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658825"
 ---
 # <a name="simple-details-form-pattern"></a>簡易詳細のフォーム パターン
 
@@ -42,7 +42,7 @@ ms.locfileid: "2183038"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![ワイヤーフレーム](./media/simpledetails1-1024x578.png)](./media/simpledetails1.png)
+[![簡易詳細のワイヤーフレーム](./media/simpledetails1-1024x578.png)](./media/simpledetails1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 現在のバージョンの Microsoft Dynamics AX にこのパターンを使用するための計画された変更はありません。

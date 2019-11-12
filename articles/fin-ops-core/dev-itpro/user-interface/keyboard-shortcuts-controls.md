@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinarh
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 2e14ba9b3330156456cd1fcb42b6665727525729
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 31e66922bd98ff832b172d3928dd910aa5bb2071
+ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249311"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564133"
 ---
 # <a name="keyboard-shortcuts-for-extensible-controls"></a>拡張可能なコントロールのキーボード ショートカット
 
@@ -50,7 +50,7 @@ ms.locfileid: "2249311"
 ### <a name="keyboard-shortcut-links"></a>キーボード ショートカットのリンク
 Finance and Operations アプリおよびサポートされているブラウザーに記載されているキーボード ショートカットへのリンクを次に示します。
 
-- <a href="../../fin-and-ops/get-started/shortcut-keys.md">キーボード ショートカット</a>
+- <a href="../../fin-ops/get-started/shortcut-keys.md">キーボード ショートカット</a>
 - <a href="https://support.microsoft.com/help/13805">Microsoft Edge</a>
 - <a href="https://support.google.com/chrome/answer/157179">Google Chrome</a>
 - <a href="https://support.microsoft.com/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a>

@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b86e934a0ac25b1fe77a3359b74e707fb372ae6b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a8e5fd05f3114eb99b7e8b4390827d5ccd52832a
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549339"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2572212"
 ---
 # <a name="purchase-order-overview"></a>発注書の概要
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 この記事では、発注書 (PO) の概要について説明し、発注書が実行するさまざまなステージに関連する追加の記事へのリンクが提供されます。
 

@@ -3,7 +3,7 @@ title: コードの移行とホーム ページのアップグレード
 description: このトピックでは、コードの移行に関するトピックへのリンクを提供します。
 author: RobinARH
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 780d92147372bae686d6ef299069f50cd684212c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6e2356e32f8f3c2cda4312a559b093075d6c22f4
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191887"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622788"
 ---
 # <a name="code-migration-and-upgrade-home-page"></a>コードの移行とホーム ページのアップグレード
 
@@ -48,8 +48,6 @@ Dynamics AX 2012 から Dynamics 365 Finance、Supply Chain Management または
 
 - [移行の委任](delegates-migration.md)
 - [SQL Server Analysis Services プロジェクトを AOT にインポートする方法](https://technet.microsoft.com/library/dn754850.aspx)
-- [データベース同期](../dev-tools/database-synchronization.md)
-<!--- [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)-->
 - [アップグレードおよび移行](upgrade-home-page.md)
 - [ワークフロー サブシステムのアップデート](workflow-subsystem.md)
 - [アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティ格納へ移行する](migrate-upgraded-cube-entity-store.md)

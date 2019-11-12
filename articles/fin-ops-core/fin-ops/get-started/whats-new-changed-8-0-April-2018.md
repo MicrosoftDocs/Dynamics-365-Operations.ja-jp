@@ -3,11 +3,12 @@ title: Dynamics 365 for Finance and Operations バージョン8.0 (2018 4 月) �
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.0 の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/28/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 7b93f3fc1236bab180369285e42eb1b814285e01
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0e67cf48b3e032705a22cc22c69efef44ad20fea
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191734"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627629"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン8.0 (2018 4 月) の新機能および変更された機能
 
@@ -129,7 +130,7 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 
 ### <a name="vendor-collaboration--rfq-process"></a>仕入先コラボレーション - RFQ プロセス
 
-機能強化により、誰が入札したかを容易に把握できます (仕入先または調達部門)。 詳細については、「[見積依頼 (RFQ)](../../supply-chain/procurement/request-quotations.md)」を参照してください。
+機能強化により、誰が入札したかを容易に把握できます (仕入先または調達部門)。 詳細については、「[見積依頼 (RFQ)](../../../supply-chain/procurement/request-quotations.md)」を参照してください。
 
 ### <a name="partial-shipment-of-a-load-split-load"></a>積荷の部分的出荷 (分割積荷)
 
@@ -137,15 +138,15 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 
 ### <a name="immediate-replenishment-of-locations"></a>場所の即時補充
 
-補充テンプレートのある場所ディレクティブの明細行の配賦に失敗した場合、ウェーブ実行中に使用されます。 即時補充の詳細については、[即時補充](../../supply-chain/warehousing/immediate-replenishment.md) を参照してください。
+補充テンプレートのある場所ディレクティブの明細行の配賦に失敗した場合、ウェーブ実行中に使用されます。 即時補充の詳細については、[即時補充](../../../supply-chain/warehousing/immediate-replenishment.md) を参照してください。
 
 ### <a name="reason-codes-added-to-warehouse-counting-and-adjustment"></a>倉庫の棚卸と調整に追加された理由コード
 
-棚卸を実行するとき、および調整を行うときに理由コードを追加できます。 理由コードの詳細については、[在庫棚卸の理由コード](../../supply-chain/warehousing/reason-codes-for-counting-journals.md) を参照してください。
+棚卸を実行するとき、および調整を行うときに理由コードを追加できます。 理由コードの詳細については、[在庫棚卸の理由コード](../../../supply-chain/warehousing/reason-codes-for-counting-journals.md) を参照してください。
 
 ### <a name="batch-balancing-enabled-for-advanced-warehousing-processes"></a>高度な倉庫管理プロセスが有効になっているバッチ バランシング
 
-倉庫管理プロセスに対して設定されている製品にバッチ バランシング プロセスを利用できるようになりました (以前のリリースでは、倉庫管理プロセスに対して設定されていない製品にのみバッチ バランシング プロセスが有効になっていました)。 この機能拡張により、バッチ バランシング プロセスが完了した後に、ユーザーがピッキングに原料をリリースすることが可能になります。 バッチ バランシングの詳細については、「[バッチ バランシング](../../supply-chain/production-control/batch-balancing.md)」を参照してください。
+倉庫管理プロセスに対して設定されている製品にバッチ バランシング プロセスを利用できるようになりました (以前のリリースでは、倉庫管理プロセスに対して設定されていない製品にのみバッチ バランシング プロセスが有効になっていました)。 この機能拡張により、バッチ バランシング プロセスが完了した後に、ユーザーがピッキングに原料をリリースすることが可能になります。 バッチ バランシングの詳細については、「[バッチ バランシング](../../../supply-chain/production-control/batch-balancing.md)」を参照してください。
 
 ### <a name="analytical-workspaces-with-embedded-power-bi-for-cost-management"></a>原価管理のための Power BI が埋め込まれた分析ワークスペースです。
 
@@ -165,7 +166,7 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 
 ### <a name="improved-delivery-of-platform-and-financial-reporting-updates"></a>プラットフォームおよび財務レポート更新のデリバリーの強化
 
-プラットフォームおよび財務レポートの更新は、オプションの更新プログラムではなく、Microsoft によって管理される継続的な更新になります。 この変更は、サービスの信頼性と可用性を向上させるとともに、最新の改善と修正を顧客に確実に提供することを目的としています。  プラットフォームと財務レポートの更新には、下位互換性があります。 詳細については、[Finance and Operations クラウド プラットフォームの毎月の更新に関するよく寄せられる質問](../../dev-itpro/sysadmin/faq-platform-monthly-updates.md) を参照してください。
+プラットフォームおよび財務レポートの更新は、オプションの更新プログラムではなく、Microsoft によって管理される継続的な更新になります。 この変更は、サービスの信頼性と可用性を向上させるとともに、最新の改善と修正を顧客に確実に提供することを目的としています。  プラットフォームと財務レポートの更新には、下位互換性があります。 詳細については、[Finance and Operations クラウド プラットフォームの毎月の更新に関するよく寄せられる質問](../../../dev-itpro/sysadmin/faq-platform-monthly-updates.md) を参照してください。
 
 ### <a name="upgrade-automation"></a>自動アップグレード
 

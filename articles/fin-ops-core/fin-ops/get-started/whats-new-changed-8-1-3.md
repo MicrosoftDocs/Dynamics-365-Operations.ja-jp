@@ -3,11 +3,12 @@ title: Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.3 の新機能または変更された機能について説明します。 このバージョンは、2019 年 1 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/02/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: d9d00dcc2664451d3f867769d361acc1516d43b5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: aac59e81463b098a0fb17cba2a060434eb26d2b0
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180498"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627627"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-813-january-2019"></a>Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) の新機能および変更された機能
 
@@ -52,11 +53,11 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 
 ## <a name="collection-letters"></a>督促状
 
-各トランザクションの督促状コードが追跡されるが、顧客に保存されている単一の督促状レベルに基づいて督促状の処理が行われるように、顧客レベルで督促状を設定することができるようになりました。 詳細については、[督促状の処理](../../financials/accounts-receivable/tasks/process-collection-letters.md)を参照してください。
+各トランザクションの督促状コードが追跡されるが、顧客に保存されている単一の督促状レベルに基づいて督促状の処理が行われるように、顧客レベルで督促状を設定することができるようになりました。 詳細については、[督促状の処理](../../../finance/accounts-receivable/tasks/process-collection-letters.md)を参照してください。
 
 ## <a name="settle-remainder"></a>残余決済
 
-その金額を勘定科目または他の顧客に適用することで、決済活動から残りの金額を決済することができます。 仕訳帳に入力された金額を決済するとき、または未処理トランザクションのみを決済するときに、残りの部分を決済できます。 詳細については、[残余決済](../../financials/cash-bank-management/settle-remainder.md)を参照してください。
+その金額を勘定科目または他の顧客に適用することで、決済活動から残りの金額を決済することができます。 仕訳帳に入力された金額を決済するとき、または未処理トランザクションのみを決済するときに、残りの部分を決済できます。 詳細については、[残余決済](../../../finance/cash-bank-management/settle-remainder.md)を参照してください。
 
 ## <a name="globalization"></a>グローバリゼーション
 

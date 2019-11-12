@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: e1bddb65fd5fd73e879d8a95decc9f3e4f7f37e4
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249393"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653444"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>パンチアウト eProcurement の外部カタログの設定
 
 [!include [banner](../includes/banner.md)]
 
-外部カタログを使用することにより、Dynamics 365 for Finance and Operations 2017 年 7 月の更新で処理される製品および価格情報が、正確かつ最新のものであることを保証することができます。 要求は承認され、発注書に変換され、注文は仕入先に配置することができます。
+外部カタログを使用することにより、Supply Chain Management で処理される製品および価格情報が、正確かつ最新のものであることを保証することができます。 要求は承認され、発注書に変換され、注文は仕入先に配置することができます。
 
 外部カタログが設定され、従業員が依頼を準備しているときは、外部サイト、外部カタログにリダイレクトし、外部サイトで作成された買い物カゴを返すオプションがあります。 この通信は cXML プロトコルに基づいており、購買システムと販売組織の間で設定する必要があります。
 

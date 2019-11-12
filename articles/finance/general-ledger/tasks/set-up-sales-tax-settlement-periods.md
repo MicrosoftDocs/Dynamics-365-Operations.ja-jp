@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cff84f8f6c42fd064258b8ca53e24acc8059977
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c17a0240c29dad58c958ab1ce844ee5d8384bd1f
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175506"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658932"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>売上税精算期間の設定
 
@@ -42,7 +42,7 @@ ms.locfileid: "2175506"
 9. 期間毎の間隔の単位の単位数を入力します。 たとえば、四半期は 3 か月あります。
 10. **売上税決済にバッチ処理を使用する**のチェック ボックスをオンまたはオフにします。 決済期間の決済プロセスは、バックグラウンドのバッチ ジョブとして処理することができます。 これは、期間内に大量の税トランザクションを処理する必要があるときにお勧めします。  
     > [!NOTE]
-    > 現在、オーストリア、ベルギー、スペイン、イタリア、日本、オランダではサポートされていません。
+    > 現在、スペイン、日本、およびオランダではサポートされていません。
 11. **相殺税トランザクションの生成を防止**のチェック ボックスを選択またはクリアします。 既定では、システムは決済プロセス中に相殺税トランザクションを生成しますが、期間内に大量の税トランザクションを処理する必要がある場合、パフォーマンスの問題を引き起こす可能性があります。 相殺税トランザクションの生成を防止するために、このチェック ボックスを選択します。
 12. **間隔**タブを展開します。
 13. **追加**を選択します。

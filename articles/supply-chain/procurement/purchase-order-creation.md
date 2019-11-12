@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb703ff7419a59aa174e16d8d988a96814e4fec6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5454b9003105e4b44ec7577e5f8989c75554aeb9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572676"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2572217"
 ---
 # <a name="create-purchase-orders"></a>販売注文の作成
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 この資料では、発注書を手動で作成する場合の手順、およびオプションを説明します。
 
@@ -94,7 +92,7 @@ ms.locfileid: "1572676"
 
 [発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
 
-[仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
+[仕入先請求書の概要](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

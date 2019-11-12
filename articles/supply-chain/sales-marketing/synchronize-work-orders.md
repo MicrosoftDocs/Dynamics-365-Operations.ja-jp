@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 3678fbca8244ae6dcd050f6a91ff3b35d90e1064
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 5c57b8d1e09fd57611accec83ec3da4bc596fd00
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251710"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627554"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Field Service から Supply Chain Management へのプロジェクトの作業指示書の同期
 
@@ -40,7 +40,7 @@ ms.locfileid: "2251710"
 - **ワーク オーダーとプロジェクト (Field Service から Supply Chain Management)**
 - **ワーク オーダー (Field Service から Supply Chain Management)**
 
-主な違いは、このテンプレートには Field Service のワーク オーダーに割り当てられたプロジェクト番号のマッピングが含まれており、Supply Chain Management で作成された販売注文にプロジェクト番号が含まれ、関連付けられているプロジェクトの請求が確実に行われるようにしていることです。 これに加え、テンプレートは高度なクエリおよびフィルター処理を使用します。
+主な違いは、このテンプレートには Field Service のワーク オーダーに割り当てられたプロジェクト番号のマッピングが含まれており、Supply Chain Management で作成された販売注文にはプロジェクト番号が含まれ、関連付けられているプロジェクトの請求が確実に行われるようにしていることです。 これに加え、テンプレートは高度なクエリおよびフィルター処理を使用します。
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 

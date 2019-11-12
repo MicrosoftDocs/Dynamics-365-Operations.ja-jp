@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 694835d20e3401aaeb22aa19082a2cd0e3a0163a
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010709"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622721"
 ---
-# <a name="create-a-process-template"></a>プロセス テンプレートの作成
+# <a name="create-a-process-template-in-attract"></a>Attract でのプロセス テンプレートの作成
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "2010709"
 
 ## <a name="create-a-process-template"></a>プロセス テンプレートの作成
 
-管理者、採用担当者、および採用マネージャーがプロセス テンプレートを作成できます。 プロセス テンプレートは、*ステージ*および*活動*で構成されます。 ステージは 1 つまたは複数の活動をグループ化します。 既定では、各プロセス テンプレートには、見込顧客、アプリケーション、およびオファー活動があります。 これらの活動を含むステージの名前を変更することができます。 **+ 新規ステージ**を選択して、さらにステージを追加することができます。 適切なステージにドラッグするか、活動リストでダブルクリックすることによって、活動をステージにすることができます。
+管理者、採用担当者、および採用マネージャーがプロセス テンプレートを作成できます。 プロセス テンプレートは、*ステージ*および*活動*で構成されます。 ステージは 1 つまたは複数の活動をグループ化します。 既定では、各プロセス テンプレートには、見込顧客、アプリケーション、およびオファー活動があります。 これらの活動を含むステージの名前を変更することができます。 **+ 新規ステージ**を選択して、さらにステージを追加することができます。 適切なステージにドラッグするか、活動リストでダブルクリックすることによって、活動をステージに追加することができます。
 
 > [!NOTE]
 > **応募のステータス**のページで、ステージ名が候補者に表示されます。 ステージ名を選択する際には、このことを考慮する必要があります。

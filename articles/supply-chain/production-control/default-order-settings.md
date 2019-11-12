@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e6d4e9a3ac5635e292b20eba60fe4f010562fdba
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d13aabfb36e8af4a32de8bc8949e8b164075532a
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250098"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570705"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>分析コードおよび製品バリアントの既定の注文設定
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Dynamics 365 Supply Chain Management の既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 既定の注文設定は、発注書、販売注文、移動オーダー、在庫仕訳帳の登録時、および計画オーダーを生成するマスタープランを作成時に使用されます。 既定の注文設定は、品目固有、サイト固有、製品バリアント固有、または製品分析コード固有です。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0127eec37bdc893d74d6c00990dd6f65926f3a54
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: edae31400431b0d9d7d0cc2e12c6bd4df94a20b1
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180518"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658749"
 ---
 # <a name="workspace-form-pattern"></a>ワークスペースのフォーム パターン
 
@@ -44,11 +44,11 @@ ms.locfileid: "2180518"
 
 ### <a name="operational-workspace"></a>運用ワークスペース
 
-[![ワークスペース (1)](./media/workspace1.png)](./media/workspace1.png)
+[![運用ワークスペースのワイヤーフレーム](./media/workspace1.png)](./media/workspace1.png)
 
 ### <a name="tabbed-workspace"></a>タブ付きワークスペース
 
-[![ワークスペース (2)](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
+[![タブ付きワークスペースのワイヤーフレーム](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
 
 ## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations のパターンの変更
 Microsoft Dynamics AX 2012 ロール センターは、アクティビティに特化した複数のワークスペースで置き換えられました。
@@ -128,7 +128,7 @@ Microsoft Dynamics AX 2012 ロール センターは、アクティビティに�
 
 フォーム: **FMClerkWorkspace** 
 
-[![ワークスペース (3)](./media/workspace3.png)](./media/workspace3.png)
+[![運用ワークスペースの例](./media/workspace3.png)](./media/workspace3.png)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -147,4 +147,4 @@ Microsoft Dynamics AX 2012 ロール センターは、アクティビティに�
 
 ### <a name="ax-2012-example"></a>AX 2012 の例
 
-[![ワークスペース (5)](./media/workspace5.png)](./media/workspace5.png)
+[![前のバージョンのワークスペースの例](./media/workspace5.png)](./media/workspace5.png)

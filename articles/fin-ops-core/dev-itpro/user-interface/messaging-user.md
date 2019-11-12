@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80093af4ad98c2e098a39c6cc539e079ad3af7f7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 303efc5e8f39d8d2c50f4f57dbf16231620fee0d
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183045"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658834"
 ---
 # <a name="message-center-message-bar-and-message-details-faq"></a>メッセージ センター、メッセージ バー、およびメッセージ詳細に関するよく寄せられる質問
 
@@ -70,12 +70,14 @@ AX 2012 では、ユーザーが無効とみなされるデータを入力また
 
 従来の **info()**、**warning()**、および **error()** API はまだサポートされています。 ただし、これらの API がフレームワークの新しいメッセージング システム上に配置されるようになり、宛先が確定的になります。 簡単に言うと、API の使用がページから生成された場合、そのメッセージが同じページ上のメッセージ バーで表示されます。 (ドロップ ダイアログおよびスライダー ダイアログはどちらもページとみなされます。) 次の図は、ページ アクションに対応する**情報**、**警告**/**checkfailed**、および**エラー**のメッセージ バーまたは、**info()**、**warning()**、および**error()** から同期作成したメッセージを示しています。 
 
-[![Messaging\_MessageBarTypes](./media/messaging_messagebartypes.jpg)](./media/messaging_messagebartypes.jpg) 
+[![メッセージ バー タイプ](./media/messaging_messagebartypes.jpg)](./media/messaging_messagebartypes.jpg) 
 
 **注記:** スライダー ダイアログからメッセージング API が呼び出されても、メッセージが表示される前にそのスライダー ダイアログが閉じられると、メッセージはスライダー ダイアログの親ページのメッセージ バーに表示されます。 メッセージが表示される前にそのスライダー ダイアログ ボックスを閉じ、親ページが存在しない場合 (つまり、親とは、ワークスペース)、メッセージは、メッセージ センターにルーティングされます。 メッセージング API は必ずメッセージを表示します。 適切なホスト ページが見つからない場合は、メッセージがメッセージ センターに送信されます。
 
 ## <a name="the-message-api-for-explicit-add-and-remove-messages"></a>明示的なメッセージの追加および削除の Message() API
-メッセージング システムは、従来の検証メッセージ API (**info()**、**warning()**/**checkfailed()**、および **error()**) をサポートしており、メッセージを確定的にメッセージバーまたはメッセージセンターに送信します。 メッセージング システムは、検証が再実行されたときにデータ検証に関連するメッセージ バー メッセージもクリアします。 また、メッセージング システムには、開発者が明示的にメッセージを追加したり削除したりする新しい **Message()** API が含まれます。 この API は、データ検証に必ずしも関連しないユーザー エクスペリエンスに関する情報メッセージを表示するのに便利です。 この場合、メッセージは現在のレコードが表示されるときに表示する必要があります。 ![メッセージング\_SingleMessageBarInfo](./media/messaging_singlemessagebarinfo.jpg)
+メッセージング システムは、従来の検証メッセージ API (**info()**、**warning()**/**checkfailed()**、および **error()**) をサポートしており、メッセージを確定的にメッセージバーまたはメッセージセンターに送信します。 メッセージング システムは、検証が再実行されたときにデータ検証に関連するメッセージ バー メッセージもクリアします。 また、メッセージング システムには、開発者が明示的にメッセージを追加したり削除したりする新しい **Message()** API が含まれます。 この API は、データ検証に必ずしも関連しないユーザー エクスペリエンスに関する情報メッセージを表示するのに便利です。 この場合、メッセージは現在のレコードが表示されるときに表示する必要があります。
+
+![情報メッセージに使用されるメッセージ API の例](./media/messaging_singlemessagebarinfo.jpg)
 
     messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive");
 
@@ -89,7 +91,7 @@ AX 2012 では、ユーザーが無効とみなされるデータを入力また
 ## <a name="the-messaging-api-and-batch-jobsasynchronouslong-running-background-tasks"></a>メッセージング API とバッチジョブ (非同期/実行時間の長いバックグラウンド タスク)
 **info()**、**warning()**/**checkfailed()**、または **error()** が非同期プロセス (たとえば、SysOp を使用するバッチ ジョブ) から呼び出された場合、考慮するページ コンテキストはありません。 したがって、メッセージはメッセージ センターにルーティングされます。 
 
-![Messaging\_EmptyMessageCenter](./media/messaging_emptymessagecenter.jpg)
+![空のメッセージ センターの例](./media/messaging_emptymessagecenter.jpg)
 
 ### <a name="the-message-center"></a>メッセージ センター
 
@@ -102,7 +104,7 @@ AX 2012 では、ユーザーが無効とみなされるデータを入力また
 ## <a name="error-should-i-interrupt-the-user"></a>エラー: ユーザーを中断する必要がありますか。
 (バッチ ジョブまたはその他の操作) のタスクが失敗した場合は、ユーザーに受動的に通知することが適切な場合があります。 ユーザーはいつでも問題を修正して操作を再試行できるので、すぐに通知する必要はありません。 そのような場合、**error()** API は適切であり、ユーザーは割り込みダイアログを受け取りません。 ただし、それ以外の場合、ユーザーは問題が修正されるまでは続行できません。 たとえば、まだ無効なデータを保持しているページをユーザーが保存しようとする場合、クライアントはエラー ダイアログを表すことにより、ユーザーを中断させます。 これらのケースでは、ダイアログを提示することにより、ユーザーを中断させる方が適切である場合、**box::** を使用する必要があります。 
 
-![Messaging\_BoxAPI](./media/messaging_boxapi.jpg)
+![Box API の例](./media/messaging_boxapi.jpg)
 
 ## <a name="the-message-center--messages-from-asynchronous-tasks"></a>メッセージ センター - 非同期タスクからのメッセージ
 メッセージ センターは、ナビゲーション ウィンドウに表示されます。 ユーザーによる迅速なアクションを必要とせず、現在の作業を続行するために必要ではないメッセージが含まれています。 一般的な例にとしては、バッチ ジョブやレポート完了などのバック グラウンド処理からのフィードバックがあります。 メッセージ センターでは、**情報**、**警告**、および**エラー**のステータスを表示できます。 開かれる前に、メッセージ センターは前回開いたときから受信したメッセージの数を示します。
@@ -121,7 +123,7 @@ AX 2012 では、ユーザーが無効とみなされるデータを入力また
 
 **プレゼンテーション** 
 
-![Messaging\_MessageBarTypes](./media/messaging_messagebartypes.jpg)
+![メッセージ バーのスクリーン ショット](./media/messaging_messagebartypes.jpg)
 
 ## <a name="message-boxes--errors-and-immediate-notification-completed-synchronous-operations"></a>メッセージ ボックス – エラーや即時の通知 (完了した同期操作)
 メッセージ ボックスを使用して、すぐに注意が必要な問題についてユーザーに警告します。 メッセージ ボックスはメッセージが読み取られたり消されるまでユーザーの続行が妨げられるため、ユーザーが後で処理できないメッセージに対してのみ使用する必要があります。 メッセージ ボックスに表示されるエラー メッセージに次の情報を含めます。
@@ -143,7 +145,7 @@ AX 2012 では、ユーザーが無効とみなされるデータを入力また
 
 **プレゼンテーション** 
 
-![Messaging\_BoxAPI](./media/messaging_boxapi.jpg) 
+![エラー メッセージの例](./media/messaging_boxapi.jpg) 
 
 **エラー** タイプのメッセージでは、メッセージを含むモーダルの「明るい色のボックス」で現在のページにオーバーレイすることでユーザーの操作をブロックします。
 
@@ -168,24 +170,24 @@ AX 2012 では、ユーザーが無効とみなされるデータを入力また
 ## <a name="detailed-multi-result-messaging-that-uses-setprefix-and-the-message-details-pane"></a>SetPrefix() とメッセージの詳細ウィンドウを使用する詳細な複数結果のメッセージング
 **SetPrefix()** の結果は、積極的にユーザーを中断しません。 代わりに、結果は収集され、保存されて、メッセージ バーまたはメッセージ センターの通知がユーザーに表示されます。 このメッセージ バーまたはメッセージ センターの通知は、関連するタスクが完了し、ユーザーが確認するメッセージがある可能性があることを示します。 *結果の通知*メッセージは、タスクによる **SetPrefix()** の最初の呼び出しを使ってメッセージをフレーム化します。 (この動作は、最初の呼び出しが結果の "タイトル" である Dynamics AX 2012 の動作に似ています。) 次の例では、テキスト「転記の結果」が **SetPrefix()** の最初の呼び出しから取得されます。 
 
-![Messaging\_MessageDetailsMessageBar](./media/messaging_messagedetailsmessagebar.jpg) 
+![SetPrefix の例](./media/messaging_messagedetailsmessagebar.jpg) 
 
 ユーザーは、メッセージ バーの **メッセージの詳細** リンクをクリックして、**メッセージの詳細** ウィンドウを開くことができます。 
 
-![Messaging\_MessageDetailsPane](./media/messaging_messagedetailspane.jpg)
+![メッセージの詳細ウィンドウ](./media/messaging_messagedetailspane.jpg)
 
 ## <a name="setprefix--creating-a-collection-of-related-messages"></a>SetPrefix() – 関連メッセージのコレクションの作成
 **SetPrefix()** を使用して、関連メッセージのコレクションを作成します。 この API は主に下位互換性がありますが、中断のない方法で表示されます。 結果ウィンドウは、直接開かれません。 代わりに、ユーザーは、結果メッセージをコレクションにグループ化するために **SetPrefix()** API を使用するタスクを開始したページにメッセージ バーを表示することで受動的に中断されます。 ユーザーにメッセージ コレクションの存在を通知するメッセージ バーには、コレクション内の最も重要なメッセージの重大度が反映されます。 たとえば、コレクションにエラーまたは警告が含まれていない場合、メッセージ バーは**情報**タイプです。 
 
-![Messaging\_MessageDetailsMessageBar](./media/messaging_messagedetailsmessagebar.jpg) 
+![情報タイプ メッセージ バーの例](./media/messaging_messagedetailsmessagebar.jpg) 
 
 コレクションに 1 つまたは複数の **warning()** への呼び出しが含まれている場合、メッセージ バーは、**警告**タイプです。 
 
-![Messaging\_MessageDetailsWarningMessageBar](./media/messaging_messagedetailswarningmessagebar.jpg) 
+![警告タイプ メッセージ バーの例](./media/messaging_messagedetailswarningmessagebar.jpg) 
 
 コレクションに 1 つまたは複数の **error()** への呼び出しが含まれている場合、メッセージ バーは、**エラー** タイプです。 
 
-![Messaging\_MessageDetailsErrorMessageBar](./media/messaging_messagedetailserrormessagebar.jpg) 
+![エラー タイプ メッセージ バーの例](./media/messaging_messagedetailserrormessagebar.jpg) 
 
 **例**
 

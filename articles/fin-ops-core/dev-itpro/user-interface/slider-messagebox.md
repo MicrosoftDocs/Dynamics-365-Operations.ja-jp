@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aorth
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab54a86b8df08f3f5ceace31a48b943dac585237
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 93c2b11f74266a9cac3198df0525dca59cc64666
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183036"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578308"
 ---
 # <a name="slider-and-messagebox-dialogs"></a>スライダー ダイアログとメッセージ ボックス ダイアログ
 
@@ -40,7 +40,7 @@ ms.locfileid: "2183036"
 ## <a name="slider"></a>スライダー
 スライダーまたはスライダーダイアログは、画面の右端からアクティブなページのコンテンツの上に「スライド」するダイアログ ボックスです。 次のスクリーン ショットでは、スライダーはウィンドウの右側の**レンタル開始**というキャプションがある白い領域です。 ユーザーがスライダーの下にあるページは操作できないことを理解できるように、スライダーの左側の領域がグレー表示になっていることに注意します。 
 
-[![slidermessagebox](./media/slidermessagebox.png)](./media/slidermessagebox.png) 
+[![スライダー ダイアログ ボックスのスクリーン ショット](./media/slidermessagebox.png)](./media/slidermessagebox.png) 
 
 スライダーを開いた後、ユーザーは 2 つの方法で閉じることができます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "2183036"
 ## <a name="messagebox"></a>MessageBox
 MessageBox は、既存のページ上に「ライト ボックス」として表示されるダイアログのタイプです。 MessageBox は全幅モーダル ポップアップとして表示されます。 次のスクリーン ショットは、メッセージ ボックスの例を示しています。 
 
-[![2\_ダイアログ](./media/2_dialog.png)](./media/2_dialog.png) 
+[![メッセージ ボックス ダイアログの例](./media/2_dialog.png)](./media/2_dialog.png) 
 
 MessageBox は、重要な状況について通知するためユーザーを中断させる必要がある場合に使用する正しいメカニズムです。 たとえば、ユーザーにメッセージ センターのエラー メッセージを表示するため、メッセージ ボックスが使用されます。 MessageBox はモーダルなので、ユーザーはその MessageBox が処理されるか、または却下されるまで MessageBox の下のページとやりとりができません。 前のスクリーン ショットで、ページが MessageBox によって見えづらくなっていることを確認します。 また、メッセージ ボックスの上下にある領域は、ページが現在インタラクションのために使用可能でないことをユーザーが理解するのを助けるために影付きで表示されます。 スライダーとは異なり、ユーザーは斜線領域の外側をクリックして MessageBox を閉じることはできません。 MessageBox は、Box アプリケーション プログラミング インターフェイス (API)、またはエラーの表示をトリガーするために前述したメソッドのいずれかを使用してトリガーできます。 詳細については、[メッセージ API: メッセージ センター、メッセージ バー、メッセージの詳細](messaging-api-center-bar-details.md) を参照してください。
 

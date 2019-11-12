@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0408c226532a832655ff92fe3908103bb59ed93
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7241a6a9163de5a16237ef13b288c58af235be81
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191771"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658840"
 ---
 # <a name="horizontal-fields-and-buttons-group-subpattern"></a>水平フィールドおよびボタン グループのサブパターン
 
@@ -41,7 +41,7 @@ ms.locfileid: "2191771"
 -   1-3 ボタン
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![HorizontalFieldsButtons(1)](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
+[![水平フィールドとボタン グループ フォーム サブパターンのワイヤーフレーム](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -81,7 +81,9 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     -   最大 3 つのボタンが必要です。 最後のボタンはメニュー ボタンです。
 
 ## <a name="examples"></a>例
-フォーム: **SalesTable (GroupHeaderAddressHeaderOverview)** [![HorizontalFieldsButtons(2)](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
+フォーム: **SalesTable (GroupHeaderAddressHeaderOverview)** 
+
+[![フォーム例](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -101,5 +103,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 -   なし
 
 ### <a name="dynamics-ax-2012-content"></a>Dynamics AX 2012 コンテンツ
+**SalesTable** 
 
-**SalesTable** [![HorizontalFieldsButtons(3)](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+[![フォーム例](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)

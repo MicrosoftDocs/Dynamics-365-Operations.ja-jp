@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0a348bc9b7f5a24c5a3ac57113d430a92020b893
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 6e910b2400106baf9f9dc06f6bc0d3daee8e4a43
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922117"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570079"
 ---
 # <a name="creating-work-orders"></a>作業指示書の作成
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 予防的メンテナンス ジョブがスケジュールされている場合は、次の手順でジョブの作業指示書を作成します。 これは、メンテナンス スケジュールのいずれかで行われます。 メンテナンス スケジュールのスケジュールされたジョブには、異なる参照タイプがあります。
 

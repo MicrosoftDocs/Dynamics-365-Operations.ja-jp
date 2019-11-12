@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fcd54b7f1f6dc3b01cb1effaaf90abae8458f498
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d04d4d334f54fddecb4a238237c240c8772d847a
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183132"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658889"
 ---
 # <a name="imagedesign-type"></a>ImageDesign タイプ
 
@@ -103,7 +103,7 @@ color: string (optional)
 この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。<br>
 注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。<br>
 使用可能な色は次のとおりです。 <br>
-![サンプル画像](../../../media/colors.PNG)
+![使用可能な色の画像](../../../media/colors.PNG)
 
 > [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color) から継承
 

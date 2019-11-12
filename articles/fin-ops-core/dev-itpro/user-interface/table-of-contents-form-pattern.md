@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd1967add1619e6ad23891f6db69e3234d78abf6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5e09599c0839dcc8b67fca3933d7114b632e19b2
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183034"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578307"
 ---
 # <a name="table-of-contents-form-pattern"></a>目次のフォーム パターン
 
@@ -37,7 +37,7 @@ ms.locfileid: "2183034"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![TOC(1)](./media/toc1.png)](./media/toc1.png)
+[![目次のワイヤーフレーム](./media/toc1.png)](./media/toc1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -108,7 +108,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **CustParameters** 
 
-[![TOC(2)](./media/toc2.png)](./media/toc2.png)
+[![目次の例](./media/toc2.png)](./media/toc2.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -126,6 +126,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![TOC(3)](./media/toc3.png)](./media/toc3.png)
+[![例](./media/toc3.png)](./media/toc3.png)
 
-[![TOC(4)](./media/toc4.png)](./media/toc4.png)
+[![例](./media/toc4.png)](./media/toc4.png)

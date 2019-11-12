@@ -3,7 +3,7 @@ title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 08/06/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8719ca8ffa1963c267f2ec2400989c6d4a71eb45
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e45ba410912b5948a27b4c5631d588a6c6d89299
+ms.sourcegitcommit: aca7527330e0a6011c42e07c7e50ec309dc953a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191716"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "2567110"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -191,3 +191,8 @@ Azure Blob Storage に格納されている添付ファイルが誤って削除�
 ### <a name="is-there-an-option-to-export-all-document-attachments-from-the-system"></a>すべてのドキュメントの添付ファイルをシステムからエクスポートするか選択できますか。
 
 添付ファイルをエクスポートできますが、標準の添付ファイル エンティティが存在しないため、その機能は標準の機能ではありません。 特定のビジネス ドキュメントやレコードに対する添付ファイルを提供するエンティティを作成する必要があります。
+
+### <a name="how-can-attachments-be-extracted-from-the-system"></a>どのようにシステムから添付ファイルを抽出できますか。
+
+添付ファイルを抽出するには、特定のビジネス ドキュメントやレコードに対する添付ファイル エンティティが作成される必要があります。 各レコード タイプの ID が異なるため、標準の添付ファイル エンティティがありません。 添付ファイル エンティティを作成する方法については、**AOT > データモデル > データ エンティティ** ノードの下にある "添付ファイル" を検索して、アプリケーション エクスプローラーの例を参照してください。
+

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 719c93cdda219d9aba53f0628dc3d2b19f22f018
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 887653b053ed1dba2e473b91f44c8eba995bdf25
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183047"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658839"
 ---
 # <a name="list-panel-subpattern"></a>リスト パネルのサブパターン
 
@@ -39,7 +39,7 @@ ms.locfileid: "2183047"
 -   グループ コントロール
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![ListPanel(1)](./media/listpanel1-1024x339.png)](./media/listpanel1.png)
+[![リスト パネルのワイヤーフレーム](./media/listpanel1-1024x339.png)](./media/listpanel1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -98,7 +98,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **SalesSummaryParameters (GroupQuotation)** 
 
-[![ListPanel(3)](./media/listpanel3.png)](./media/listpanel3.png)
+[![リスト パネルの例](./media/listpanel3.png)](./media/listpanel3.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -120,4 +120,4 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![ListPanel(4)](./media/listpanel4.png)](./media/listpanel4.png)
+[![リスト パネルの例](./media/listpanel4.png)](./media/listpanel4.png)

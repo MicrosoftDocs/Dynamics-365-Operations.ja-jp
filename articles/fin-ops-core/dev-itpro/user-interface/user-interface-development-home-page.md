@@ -3,7 +3,7 @@ title: ユーザー インターフェイス開発ホーム ページ
 description: このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
 author: RobinARH
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e992762f01119462569da1da72446c3dea841a4d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 932a0b2c1956951cc6230d5205b113fb427c6abb
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191750"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622783"
 ---
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
 
@@ -30,7 +30,7 @@ ms.locfileid: "2191750"
 
 このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
 
-Finance and Operation アプリケーションのユーザー インターフェイスは、 Microsoft Dynamics AX 2012 のインターフェイスと大きく異なります。 Dynamics AX 2012 のクライアントは、ActiveX、WinForm、または WPF コントロールを使用する拡張機能を備えた Microsoft Win32 アプリケーションです。 X++ アプリケーション ロジックが、フォーム メソッドおよびテーブル メソッドに対してクライアントで実行され、何らかのロジックがサーバー上で発生します。 コントロールについては、X++ ロジック アプリケーション プログラミング インターフェイス (API) および現物 Win32 コントロールの両方が、クライアントで密に接続されます。 クライアントは、すべての主要なブラウザーで動作する HTML Web クライアントです。 これらのブラウザーには、Microsoft Edge、Internet Explorer 11、Chrome、および Safari が含まれます ([システム要件](../../fin-and-ops/get-started/system-requirements.md) を参照)。 Web クライアントへの移行により、クライアントのフォームとコントロールに以下の変更が加えられました。
+Finance and Operation アプリケーションのユーザー インターフェイスは、 Microsoft Dynamics AX 2012 のインターフェイスと大きく異なります。 Dynamics AX 2012 のクライアントは、ActiveX、WinForm、または WPF コントロールを使用する拡張機能を備えた Microsoft Win32 アプリケーションです。 X++ アプリケーション ロジックが、フォーム メソッドおよびテーブル メソッドに対してクライアントで実行され、何らかのロジックがサーバー上で発生します。 コントロールについては、X++ ロジック アプリケーション プログラミング インターフェイス (API) および現物 Win32 コントロールの両方が、クライアントで密に接続されます。 クライアントは、すべての主要なブラウザーで動作する HTML Web クライアントです。 これらのブラウザーには、Microsoft Edge、Internet Explorer 11、Chrome、および Safari が含まれます ([システム要件](../../fin-ops/get-started/system-requirements.md) を参照)。 Web クライアントへの移行により、クライアントのフォームとコントロールに以下の変更が加えられました。
 
 -   フォームとコントロールの物理的な表現は、現在は、ブラウザー内の HTML、JavaScript、および CSS です。
 -   フォーム コントロールは、論理的および物理的な部分に分割されます。 X++ 論理 API および関連する状態は、サーバーで実行されます。
@@ -55,7 +55,7 @@ Finance and Operation アプリケーションのユーザー インターフェ
 -   [入力コントロールとグリッド列のサイズ変更](sizing-input-controls-grid-columns.md)
 -   [ツリー コントロールでのチェック ボックスのサポート](check-box-tree-controls.md)
 -   [フィルター処理](filtering.md)
--   [[新しいウィンドウで開く] アイコンを使用してページを並べて表示する](../../fin-and-ops/get-started/display-pages-side-by-side.md)
+-   [[新しいウィンドウで開く] アイコンを使用してページを並べて表示する](../../fin-ops/get-started/display-pages-side-by-side.md)
 -   [コードの移行 - コンテキスト メニュー](../migration-upgrade/code-migration-context-menus.md)
 -   [コードの移行 - マウス ダブルクリック](../migration-upgrade/code-migration-double-click.md)
 -   [ルックアップのコンテキスト データ入力](contextual-data-entry-lookups.md)

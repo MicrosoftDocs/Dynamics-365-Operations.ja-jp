@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations と Common Data Service 間のほぼリアル タイム データの統合
+title: ほぼリアルタイムの Common Data Service とのデータ統合
 description: このトピックでは、Finance and Operations と Common Data Service 間の統合の概要を提供します。
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b7d9e6be6fb2fef85bcf1182f89b8e370abea3d6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d70bce4e47c05a7974c1b974fdca17682e5370aa
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184488"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550860"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>ほぼリアルタイムの Common Data Service とのデータ統合
 

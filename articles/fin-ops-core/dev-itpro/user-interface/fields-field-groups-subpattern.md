@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ec5c7e35a934f023df1e72af4c7145484d72d44
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d3f4f3694d134406957ec8bc32e20319eabb644d
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191777"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578262"
 ---
 # <a name="fields-and-field-groups-subpattern"></a>フィールドおよびフィールド グループのサブパターン
 
@@ -43,7 +43,7 @@ ms.locfileid: "2191777"
     -   水平フィールドおよびボタン グループ
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![FieldsFieldGroups(1)](./media/fieldsfieldgroups1.png)](./media/fieldsfieldgroups1.png)
+[![フィールドとフィールド グループのワイヤフレーム](./media/fieldsfieldgroups1.png)](./media/fieldsfieldgroups1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -80,13 +80,13 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 -   **標準フォーム ガイドライン:**
     -   標準フォーム ガイドラインは、[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 -   **フィールドおよびフィールド グループのガイドライン:**
-    -   グループ内のフィールドは、ページ全体を越えて移動する必要があります。 [![FieldsFieldGroups(2)](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)
+    -   グループ内のフィールドは、ページ全体を越えて移動する必要があります。 [![ページ間を通過するグループのフィールド例](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)
     -   可能な場合は、不要なフィールド グループのラベルを削除します。
     -   フィールドが分かりやすくグループ分けされていることを確認します。
     -   すべてのフィールドがラベルを持つグループにあるか、またはグループ ラベルを表示しないかです。
 
 ## <a name="examples"></a>例
-フォーム: **InventLocation (LocationNames)** [![FieldsFieldGroups(3)](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)
+フォーム: **InventLocation (LocationNames)** [![フォーム例](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -107,4 +107,4 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-**InventLocation** [![FieldsFieldGroups(4)](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)
+**InventLocation**[![フォーム例](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)

@@ -3,7 +3,7 @@ title: ホームページの開発とカスタマイズ
 description: このトピックでは、開発に関するトピックへのリンクを提供します。
 author: RobinARH
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 773043e16192acf4cedba78e4dd3ef3227f64108
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: b5b11029451fb2ebaf16abdc92d4d8aee38aafc1
+ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249312"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "2627601"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
@@ -118,7 +118,6 @@ Finance and Operations アプリケーションは、Microsoft から提供さ�
 
 ## <a name="performance"></a>パフォーマンス
 - [Trace Parser でトレースを実行し、分析する](../perf-test/trace-trace-tutorial.md)
-- [PerfSDKの概要および Visual Studio Onlineを使用したマルチユーザー テスト](../perf-test/perfsdk-tutorial.md)
 - [問題点の診断およびパフォーマンス問題の分析にTrace Parser のデスクトップ バージョンを使用する](../perf-test/trace-parser.md)
 - [パフォーマンス タイマー](../perf-test/performance-timer.md)
 <!-- [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
@@ -167,7 +166,7 @@ Finance and Operations アプリケーションは、Microsoft から提供さ�
 
 ## <a name="supply-chain-management"></a>サプライ チェーン マネジメント
 - [ガント作成ガイド](../user-interface/gantt-development-guide.md)
-- [新しい輸送管理エンジンの作成](../../supply-chain/transportation/create-new-transportation-management-engine.md)
+- [新しい輸送管理エンジンの作成](../../../supply-chain/transportation/create-new-transportation-management-engine.md)
 
 ## <a name="additional-resources"></a>その他のリソース
 [開発のための内部者向けヒント](https://community.dynamics.com/ax/b/newdynamicsax)
