@@ -3,7 +3,7 @@ title: 収益認識の概要
 description: このトピックでは、収益認識機能に関する情報を提供します。 この機能により、複数要素注文の収益価格と収益スケジュールの両方を認識するための会社固有のルールを定義できる、柔軟なフレームワークが提供されます。
 author: kweekley
 manager: aolson
-ms.date: 08/24/2018
+ms.date: 11/11/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 0681636853b38895e4b8875150ea42baadd7b951
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 8743183c46463395cad3138261860442701e0178
+ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570382"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "2781899"
 ---
 # <a name="revenue-recognition-overview"></a>収益認識の概要
 
@@ -36,6 +36,10 @@ ms.locfileid: "2570382"
 
 * 複数要素注文のコンポーネントの価値に基づいて適切な収益価格が確実に認識されるように、収益を配賦します。
 * 時間の経過と共に収益を認識するための契約期間と割合を表す収益スケジュールに基づいて、収益を繰り延べます。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44iER]
+
+上記の [Dynamics 365 Finance で収益認識を使用する方法](https://youtu.be/v3amIsiqvoo) ビデオは、YouTube で視聴できる [Finance and Operations のプレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
 収益認識機能、収益価格と収益スケジュールの両方を認識するための会社固有のルールを定義できる、柔軟なフレームワークを提供します。
 

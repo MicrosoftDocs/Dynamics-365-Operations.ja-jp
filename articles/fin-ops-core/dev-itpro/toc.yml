@@ -2,6 +2,8 @@
   items:
     - name: Finance and Operations アプリの開発と管理
       items:
+        - name: Finance and Operations アプリケーションのドキュメント
+          href: ../fin-ops/index.md
         - name: Finance and Operations アプリの開発と管理
           href: index.md
         - name: 新機能および変更された機能
@@ -128,16 +130,28 @@
                           href: data-entities/dual-write-overview.md
                         - name: Common Data Service の組織階層
                           href: data-entities/dual-write-organization.md
-                        - name: Common Data Service での会社の概念
-                          href: data-entities/dual-write-company.md
+                        - name: 会社統合
+                          items:
+                            - name: Common Data Service での会社の概念
+                              href: data-entities/dual-write-company.md
+                            - name: 会社データを使用したブートストラップ
+                              href: data-entities/dual-write-bootstrap.md
                         - name: 統合された顧客マスター
                           href: data-entities/dual-write-customer.md
+                        - name: 統合された元帳
+                          href: data-entities/dual-write-ledger.md
                         - name: 統一された製品経験
                           href: data-entities/dual-write-product.md
-                        - name: 統合された仕入先マスター
-                          href: data-entities/dual-write-vendor.md
+                        - name: 仕入先の統合
+                          items:
+                            - name: 統合された仕入先マスター
+                              href: data-entities/dual-write-vendor.md
+                            - name: 仕入先デザインの切り替え
+                              href: data-entities/dual-write-vendor-switch.md
                         - name: 統合されたサイトおよび倉庫
                           href: data-entities/dual-write-sites-and-warehouses.md
+                        - name: 統合された税マスター
+                          href: data-entities/dual-write-tax.md
                         - name: 初期同期
                           href: data-entities/dual-write-initial.md
                         - name: データ統合のトラブルシューティング
@@ -418,6 +432,8 @@
                   href: user-interface/client-disconnected.md
                 - name: オンプレミス配置のトラブルシューティング
                   href: deployment/troubleshoot-on-prem.md
+                - name: オンプレミス環境の問題を解決するスクリプト
+                  href: deployment/onprem-tsg-implementations.md
                 - name: 証明書のローテーション
                   href: deployment/certificate-rotation-on-prem.md
             - name: カスタム コードの配置

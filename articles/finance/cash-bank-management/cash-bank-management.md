@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51a27f5ecdb4d4903ac0b76c5682ea7f9ab0d8c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1d074b9450a4dfc72f60f97ccaf03610ce54315d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175998"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772585"
 ---
 # <a name="cash-and-bank-management-home-page"></a>現金および銀行管理ホーム ページ
 
@@ -49,36 +49,36 @@ ms.locfileid: "2175998"
 ### <a name="bank-reconciliation"></a>口座調整
 
 -   [詳細な口座調整の概要](advanced-bank-reconciliation-overview.md)
--   [詳細な口座調整のコンフィギュレーション](configure-advanced-bank-reconciliation.md)
--   [詳細な口座調整のインポートの設定](set-up-advanced-bank-reconciliation-import-process.md)
+-   [詳細な口座調整の設定プロセス](configure-advanced-bank-reconciliation.md)
+-   [詳細な口座調整のインポート処理の設定](set-up-advanced-bank-reconciliation-import-process.md)
 -   [詳細な口座調整を使用した口座取引明細書の調整](reconcile-bank-statements-advanced-bank-reconciliation.md)
 -   [口座調整照合ルールの設定](set-up-bank-reconciliation-matching-rules.md)
 
 
 ## <a name="accounts-payable-payments-and-settlements"></a>買掛金勘定の支払と決済
 -   [買掛金勘定の集中支払](../accounts-payable/centralized-payments-accounts-payable.md)
--   [支払提案を使用した仕入先請求書の作成](../accounts-payable/create-vendor-payments-payment-proposal.md)
+-   [支払提案を使用した仕入先支払の作成](../accounts-payable/create-vendor-payments-payment-proposal.md)
 -   [仕入先支払の取消](../accounts-payable/reverse-vendor-payment.md)
 -   [一部金額の仕入先支払](../accounts-payable/vendor-payments-partial-amount.md)
--   [前払請求書と前払の概要](../accounts-payable/prepayments-invoices-vs-prepayments.md)
--   [シナリオ: 一部仕入先支払を決済し、割引日より前に最終支払を全額決済](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
--   [シナリオ: 割引日よりも前に一部仕入先支払を決済し割引日後に最終支払](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
--   [シナリオ: 仕入先訂正票に割引がある一部仕入先支払を決済](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
--   [シナリオ: 複数の割引期間を持つ一部仕入先支払を決済](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
--   [シナリオ: 仕入先支払に計算された割引よりも大きい割引を適用](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
--   [シナリオ: 現金割引期間外に現金割引を適用](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
+-   [前払請求書と前払](../accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [一部の仕入先支払の決済、および割引日より前の全額最終支払](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
+-   [割引日よりも前に一部仕入先支払を決済し割引日後に最終支払](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [仕入先訂正票で割引がある一部の仕入先支払の決済](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+-   [複数の割引期間を持つ一部の仕入先支払の決済](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
+-   [仕入先支払の計算済割引より大幅な割引の適用](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
+-   [現金割引期間外の現金割引の適用](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 
 ## <a name="accounts-receivable-payments-and-settlements"></a>売掛金勘定の支払と決済
 -   [売掛金勘定の集中支払](../accounts-receivable/centralized-payments-accounts-receivable.md)
 -   [一部金額の顧客支払](../accounts-receivable/customer-payments-partial-amount.md)
 -   [顧客への払戻し](../accounts-receivable/reimburse-customers.md)
--   [シナリオ: 自動決済と優先順位付け](../accounts-receivable/automatic-settlement-prioritization.md)
--   [シナリオ: 過剰支払の場合の現金割引の処理](../cash-bank-management/cash-discount-handling-overpayments.md)
--   [シナリオ: 一部顧客支払を決済し、割引日より前に最終支払を全額決済](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
--   [シナリオ: 割引日よりも前に一部顧客支払を決済し割引日後に最終支払](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
--   [シナリオ: 訂正票に割引がある一部顧客支払を決済](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
--   [シナリオ: 複数の割引期間を持つ一部顧客支払を決済](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
--   [シナリオ: 複数の割引期間にまたがる複数の請求書を決済するための 1 つの顧客支払の使用](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+-   [自動決済と優先順位付け](../accounts-receivable/automatic-settlement-prioritization.md)
+-   [過剰支払の場合の現金割引の処理](../cash-bank-management/cash-discount-handling-overpayments.md)
+-   [一部の顧客支払の決済、および割引日より前の全額最終支払](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [割引日後の最終支払での割引日よりも前の一部の顧客支払の決済](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+-   [訂正票で割引がある一部の顧客支払の決済](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
+-   [複数の割引期間を持つ一部の仕入先支払の決済](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
+-   [複数の割引期間にまたがる複数の請求書を決済するための顧客支払の使用](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
 
 
@@ -86,7 +86,7 @@ ms.locfileid: "2175998"
 
 #### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
-予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース ノート](https://go.microsoft.com/fwlink/?linkid=2010158)を参照してください。 
+予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース プラン](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。 
 
 #### <a name="blogs"></a>ブログ
 

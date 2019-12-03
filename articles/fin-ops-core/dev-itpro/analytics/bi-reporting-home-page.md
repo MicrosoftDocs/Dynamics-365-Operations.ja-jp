@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92fec444834be8ca4943932730b94beb8a1902e7
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536850"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771567"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>ビジネス インテリジェンス (BI) およびレポート作成のホーム ページ
 
@@ -48,7 +48,7 @@ ms.locfileid: "2536850"
 - [Power BI Embedded 統合](power-bi-embedded-integration.md)
 - [Power BI Embedded を使用したワークスペースへの分析の追加](add-analytics-tab-workspaces.md)
 - [Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護](secure-analytical-workspaces.md)
-- [Finance and Operations 向けの Power BI コンテンツ](power-bi-home-page.md)
+- [Power BI コンテンツのホーム ページ](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>ビジネス ドキュメントと印刷
 レポート ソリューションは多くの場合、業務トランザクションの詳細を把握し、伝えるために使用されます。 したがって、レポート ソリューションは、ネットワーク プリンターなどの既存のデバイスを使用して業務データを物理的に表現することが求められます。 ビジネス ドキュメントの例には、売上請求書、顧客明細書、小切手などがあります。
@@ -57,9 +57,9 @@ ms.locfileid: "2536850"
 
 詳細については、次のトピックを参照してください。
 
-- [Document Reporting Services の概要](document-reporting-services.md)
-- [Finance and Operations アプリケーションでの印刷](print-documents.md)
-- [プリンター デバイスを有効にするためにドキュメント ルーティング エージェントをインストールする](install-document-routing-agent.md)
+- [ドキュメント レポート サービス](document-reporting-services.md)
+- [ドキュメントの印刷の概要](print-documents.md)
+- [ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>電子申告
 電子申告 (ER) は、さまざまな国や地域の法的要件に従って電子ドキュメントの形式を構成できるツールです。 電子申告の対象には、会計監査、税金の申告、電子請求があります。
@@ -68,9 +68,9 @@ ms.locfileid: "2536850"
 
 詳細については、次のトピックを参照してください。
 
-- [電子申告の概要](general-electronic-reporting.md)
-- [電子申告コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)
-- [電子申告コンフィギュレーションの作成](electronic-reporting-configuration.md)
+- [電子申告 (ER) の概要](general-electronic-reporting.md)
+- [電子申告 (ER) コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [電子申告 (ER) コンフィギュレーションの作成](electronic-reporting-configuration.md)
 
 ## <a name="financial-reporting"></a>財務諸表
 既定の主勘定カテゴリを使用した標準の財務諸表が提供されます。 レポート デザイナーを使用すると、損益計算書や貸借対照表など、従来型の財務諸表を作成、変更できます。 その後、完成した財務諸表を組織の他のメンバーと共有することができます。 財務諸表の例として、1 年間の貸借対照表、キャッシュ フロー、集計試算表があります。
@@ -79,14 +79,14 @@ ms.locfileid: "2536850"
 
 詳細については、次のトピックを参照してください。
 
-- [Finance and Operations の財務諸表](financial-reporting-intro.md)
+- [財務諸表](financial-reporting-intro.md)
 - [財務諸表の生成](generate-financial-report.md)
 - [財務諸表コンポーネント](financial-report-components.md)
 
 ## <a name="technical-reference-reports"></a>技術参照レポート
 次のレポートにより、オブジェクトに関する参照情報を確認できます。
 
-- [データ エンティティ レポート](../data-entities/data-entities-report.md)
+- [標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md)
 - [ライセンス コードとコンフィギュレーション キーのレポート](../sysadmin/license-codes-configuration-keys-report.md)
-- [SQL Server Reporting Services レポートに関するレポート](SSRS-report.md)
+- [利用できる SQL Server Reporting Services (SSRS) レポート](SSRS-report.md)
 - [ワークフロー タイプのレポート](../../fin-ops/organization-administration/workflow-types-report.md)

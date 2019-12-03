@@ -3,7 +3,7 @@ title: バッチ追跡品目の処理の改善
 description: このトピックでは、小売明細書転記プロセス時のバッチ追跡品目のバッチの処理に対して行われた改善について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 11/04/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,19 +18,17 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 70d78f86f1df057d14d821a8c967e62eeeb4ff92
-ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
+ms.openlocfilehash: 5bbddf649f66ded9588cdb1e3f43c75630dc248a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622553"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770166"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>バッチ追跡品目の処理の改善
 
 
 [!include [banner](includes/banner.md)]
-
-[!include [banner](includes/preview-banner.md)]
 
 
 Retail 販売時点管理 (POS) では、バッチ追跡品目のバッチ番号を販売時に取得することはできません。 ただし、特定の構成では、顧客の注文または明細書の転記を通じて販売が本社に転記されるとき、Microsoft Dynamics システムは、バッチ追跡品目に対して有効なバッチ番号が存在することと、請求プロセスで有効なバッチ番号が使用されることを想定しています。

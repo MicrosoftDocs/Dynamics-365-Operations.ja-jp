@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5493c46183e7b599e82153f5b3ac36c81faa4955
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f850b28c4d6ed6ce13438f4de87ef0c04065c7f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174699"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770236"
 ---
 # <a name="public-sector-home-page"></a>公的機関ホーム ページ
 
@@ -43,12 +43,12 @@ ms.locfileid: "2174699"
   詳細については、次のトピックを参照してください。
 
 - [公的機関の機能の計画](plan-public-sector-functionality.md)
-- [公的機関での買掛金勘定](accounts-payable-public-sector.md)
-- [公的機関での売掛金勘定](accounts-receivable-public-sector.md)
-- [公的部門での予算作成](budgeting-public-sector.md)
+- [公的機関での買掛金勘定の概要](accounts-payable-public-sector.md)
+- [公的機関での売掛金勘定の概要](accounts-receivable-public-sector.md)
+- [公的部門での予算作成の概要](budgeting-public-sector.md)
 - [公的機関の固定資産](fixed-asset-public-sector.md)
-- [フランスの規制に関する機能](../localizations/emea-fra-public-sector-accounting.md)
-- [公的機関の一般会計](general-ledger-public-sector.md)
+- [フランスの公的機関の会計](../localizations/emea-fra-public-sector-accounting.md)
+- [公的機関の一般会計の概要](general-ledger-public-sector.md)
 - [公的機関での調達](procurement-sourcing-public-sector.md)
 - [公的機関のセキュリティ ロール](security-roles-public-sector.md)
 

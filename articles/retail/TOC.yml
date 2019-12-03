@@ -850,6 +850,8 @@
           items:
             - name: ロイヤルティの概要
               href: set-up-customer-loyalty-program.md
+            - name: クライアンテリングの概要
+              href: clienteling-overview.md
         - name: 支払
           items:
             - name: 支払方法
@@ -1268,8 +1270,6 @@
                   href: Open-URL-in-POS.md
                 - name: POS のレイアウト デザイナーのインストール
                   href: install-pos-layout-designer.md
-                - name: オフライン モードの Retail Modern POS
-                  href: dev-itpro/retail-modern-pos-offline.md
                 - name: POS Dual ディスプレイ ビューの拡張
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: Retail Modern POS およびクラウド POS のトリガー拡張機能
@@ -1314,7 +1314,7 @@
                   href: dev-itpro/retail-server-extension.md
             - name: Commerce Runtime (CRT) の拡張機能
               items:
-                - name: CRT のアーキテクチャと構成
+                - name: CRT のアーキテクチャとコンフィギュレーション
                   href: dev-itpro/commerce-runtime-overview.md
                 - name: CRT サービス
                   href: dev-itpro/crt-services.md
@@ -1332,6 +1332,8 @@
                   href: dev-itpro/trigger-example-blocking-transaction.md
                 - name: トリガーを使用する返品ポリシーの実装
                   href: dev-itpro/trigger-example-return-policy.md
+                - name: 拡張イベントを Application Insights に記録
+                  href: dev-itpro/commerce-application-insights.md
             - name: E コマースの拡張機能
               items:
                 - name: オンライン ストアのコンフィギュレーション
