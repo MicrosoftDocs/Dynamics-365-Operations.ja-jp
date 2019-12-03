@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: プレビュー サブスクリプションのサインアップ
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+            - name: 顧客支払に関するインサイト (プレビュー)
+              href: accounts-receivable/payment-insights-overview.md
             - name: 1 つのバージョンのサービス更新
               items:
                 - name: 1 つのバージョンのサービス更新の概要
@@ -2239,6 +2241,8 @@
                       href: localizations/rus-currency-sale-purchase.md
                     - name: 小口現金
                       href: localizations/emea-petty-cash.md
+                    - name: 現金 - ローカル基本フォームおよび統合レポート
+                      href: localizations/rus-local-primary-forms-and-unified-reports.md
                 - name: VAT
                   items:
                     - name: 仮受 VAT のローカルの特定の転記
@@ -2255,6 +2259,8 @@
                       href: localizations/rus-sales-books-purchase-books.md
                     - name: 前払管理
                       href: localizations/rus-prepayments-management.md
+                    - name: 入金 VAT の還付
+                      href: localizations/rus-incoming-VAT-restoring.md
                 - name: 固定資産
                   items:
                     - name: 固定資産の管理
@@ -2313,6 +2319,14 @@
                       href: localizations/rus-cash-flow.md
                     - name: 重量と容積に比例した雑費の配賦
                       href: localizations/rus-miscellaneous-charges.md
+                    - name: サード パーティ雑費の転記
+                      href: localizations/rus-third-party-misc-charges.md
+                - name: 在庫
+                  items:
+                    - name: 仕入先からの輸送中の商品
+                      href: localizations/rus-goods-transit-vendor.md
+                    - name: 関税申告番号
+                      href: localizations/rus-custom-declaration-number.md
                 - name: レポート
                   items:
                     - name: 財務諸表
@@ -2335,6 +2349,8 @@
                       href: localizations/rus-officials.md
                     - name: 会社の部門
                       href: localizations/rus-company-divisions.md
+                    - name: ロシア語の住所形式と FIAS からのインポート
+                      href: localizations/rus-russian-address-format-and-import-from-FIAS.md
                 - name: 繰延
                   items:
                     - name: 繰延の設定
@@ -2869,6 +2885,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: コンフィギュレーションを RCS からインポートする
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: チュートリアル
+                  items:
+                    - name: JOIN データ ソースを使用して、電子申告 (ER) モデル マッピングの複数のアプリケーション テーブルからデータを取得する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                    - name: 国のコンテキスト依存 ER モデル マッピングを構成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
                 - name: Finance and Operations で電子申告ソリューションを使用する
                   items:
                     - name: フレームワークのコンフィギュレーション
@@ -2903,6 +2925,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: ビジネス ドキュメント管理の概要
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                    - name: Microsoft Excel のビジネス ドキュメント テンプレートに新しいフィールドを追加する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
                 - name: ER フレームワーク API
                   items:
                     - name: 電子申告機能の一覧の拡張
