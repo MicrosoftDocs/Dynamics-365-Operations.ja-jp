@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 176eeb2ddb145d21f7ff9fd94a9a56e173caee59
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 944b27754e87d80584b7fdfffa46d8af112227e3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555087"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813572"
 ---
 # <a name="vendor-portal-user-security"></a>仕入先ポータルのユーザー セキュリティ
 
@@ -43,10 +43,10 @@ ms.locfileid: "1555087"
 
 同じ担当者が複数の仕入先の仕入先ポータルへアクセスする必要がある場合 (おそらく、異なる法人に対して)、その人のユーザー アカウントのそれぞれが、同じ登録済の連絡担当者と関連付けられている必要があります。 **仕入先 (外部)** ロールには、仕入先ポータルで使用できる機能を使用するために必要な、すべての基本機能が含まれます。 この設定により、外部ユーザーに表示されるユーザー インターフェイスは対象とするシナリオのみにフォーカスするようにできます。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[仕入先コラボレーション](collaborate-vendors-vendor-portal.md)
+[仕入先ポータルを使用して、仕入先と連携](collaborate-vendors-vendor-portal.md)
 
 
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 92be01210b677228f4c096ffef09d7109ba2b332
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ef99a75d29b8fce46943213804239b237d384b07
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023396"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811905"
 ---
 # <a name="hybrid-customer-orders"></a>ハイブリッド顧客注文
 
@@ -38,6 +38,6 @@ Retail では、顧客注文のすべての製品または選択された製品�
 
 カート行が選択され、**選択されたピッキング**、**選択された出荷**、または **選択対象の実行** が選択されている場合、特定のカート行はその配送方法で設定されます。 この場合、工程の下流の流れは通常どおり続きます。 ただし、選択されているカート行がない状態で **選択されたピッキング**、**選択された出荷**、または **選択対象の実行** が選択された場合、すべてのカート行を一覧化する新しいページが開きます。 この画面で、一度に複数行を選択して、配送方法を設定できます。 選択している行にその方法を使用する場合、行に割り当てられた前の配送方法は上書きされます。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[顧客注文の概要](customer-orders-overview.md)
+[Retail Modern POS (MPOS) での顧客注文](customer-orders-overview.md)

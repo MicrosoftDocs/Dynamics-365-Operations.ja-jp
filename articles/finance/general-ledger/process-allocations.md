@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf889169357ea0598a3fe24b09a6eb565209b9c0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 32271e967da2e7f3702b0c6c2dcdba460aa1b382
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186351"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770623"
 ---
 # <a name="process-allocations"></a>配賦の処理
 
@@ -33,7 +33,7 @@ ms.locfileid: "2186351"
 
 このプロセスをサポートする機能は次のとおりです。
 
--   勘定配布で分割アクションを使用する、またはドキュメントに財務分析コードの既定のテンプレートを適用することにより、トランザクション金額を手動で割り当てます。 詳細については、「[勘定配布](../accounts-payable/accounting-distributions.md)」を参照してください。
+-   勘定配布で分割アクションを使用する、またはドキュメントに財務分析コードの既定のテンプレートを適用することにより、トランザクション金額を手動で割り当てます。 詳細については、[勘定配布](../accounts-payable/accounting-distributions.md) を参照してください。
 -   個別の主勘定で定義された配賦条件に基づいてトランザクション金額を自動的に割り当てます。 配賦勘定項目は、勘定項目がソースの勘定科目に定義した条件を満たす場合に、割合と相手方の勘定科目に基づいて仕訳帳ごとに生成されます。
 -   元帳配賦ルールに基づいて元帳残高または固定金額を自動的に割り当てます。 元帳配賦ルールは、配賦仕訳帳を使用して定期的に処理されます。 
 

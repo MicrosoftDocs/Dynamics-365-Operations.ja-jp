@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c585bce468f87a32204893ea20ce6954e92b0e38
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 8619c6cde484c41ec01e96eb4626366f1955b5d4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571809"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811829"
 ---
 # <a name="install-assets-on-functional-locations"></a>機能的な場所に資産を導入する
 
@@ -31,7 +31,7 @@ ms.locfileid: "2571809"
 
  
 
-機能的な場所の構造を作成したら、次の手順で、関連する機能的な場所に資産を導入します。 このトピックでは、資産管理でそれらの機能的な場所に資産を導入する方法について説明します。 資産の作成方法については、[資産](../objects/introduction-to-objects.md) を参照してください。
+機能的な場所の構造を作成したら、次の手順で、関連する機能的な場所に資産を導入します。 このトピックでは、資産管理でそれらの機能的な場所に資産を導入する方法について説明します。 資産の作成方法については、[資産の概要](../objects/introduction-to-objects.md) を参照してください。
 
 資産構造を作成した場合は、資産構造全体を機能的な場所に導入する必要があります。 したがって、機能的な場所で選択できるのは、親資産 (親資産を持たない上位レベルの資産) のみです。 関連するすべての子資産 (下位資産) も、機能的な場所に導入されます。 機能的な場所に資産を導入すると、機能的な場所に対して選択された機能的な場所タイプの設定に応じて、機能的な場所の財務分析コードが自動的に転送される場合があります。 機能的な場所タイプの設定方法の詳細については、[機能的な場所のタイプ](../setup-for-functional-locations/functional-location-types.md) を参照してください。
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: b5c54d921e2955bc866ffd1ca516169790d33127
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c8655af567ef56c535ce0e43cb76c28c58dc1eb3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024237"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814608"
 ---
 # <a name="questionnaires"></a>アンケート
 
@@ -44,17 +44,17 @@ Microsoft Dynamics 365 Finance で使用できるさまざまな機能の組み�
 | トピック| 説明|
 |------|------------|
 | [アンケートのデザイン](design-questionnaires.md)  | この記事は、アンケートを設計する方法について説明します。 デザイン プロセスは、前提条件、回答、質問を設定し、それらをアンケートに組み合わせることを前提にしています。 |
-| [アンケートの配布および記入](distribute-questionnaires.md)  | この記事は、アンケートを回答者に配布する方法と、アンケートを記入する方法について説明します。                                                                       |
-| [アンケートの結果を表示および評価](evaluate-questionnaire-results.md) | この記事は、完了したアンケートの結果を表示および評価する方法について説明します。                                                                                        |
+| [アンケートの配布とスケジューリング](distribute-questionnaires.md)  | この記事は、アンケートを回答者に配布する方法と、アンケートを記入する方法について説明します。                                                                       |
+| [アンケート結果の表示と評価](evaluate-questionnaire-results.md) | この記事は、完了したアンケートの結果を表示および評価する方法について説明します。                                                                                        |
 
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [アンケートのデザイン](design-questionnaires.md)
 
-[アンケートの配布および記入](distribute-questionnaires.md)
+[アンケートの配布とスケジューリング](distribute-questionnaires.md)
 
-[アンケート結果を表示して評価する](evaluate-questionnaire-results.md)
+[アンケート結果の表示と評価](evaluate-questionnaire-results.md)
 

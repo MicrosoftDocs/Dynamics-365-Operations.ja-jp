@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
-ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
+ms.openlocfilehash: df0bc9ff2405cc2f370ea777a70e005a1ff338a0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2548971"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814953"
 ---
 # <a name="install-and-configure-the-warehousing-app-overview"></a>Warehousing アプリのインストールとコンフィギュレーションの概要
 
@@ -62,15 +62,32 @@ ms.locfileid: "2548971"
 
 1.  Web ブラウザーで、<https://portal.azure.com>に移動します。
 2.  Azure サブスクリプションにアクセス可能なユーザーの名前とパスワードを入力します。
-3.  Azure Portal の左のナビゲーション ウィンドウで、**Azure Active Directory** をクリックします。[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+3.  Azure ポータルの左のナビゲーション ウィンドウで、**Azure Active Directory** をクリックします。
+
+    [![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+
 4.  Supply Chain Management で使用されている Active Directory のインスタンスであることを確認してください。
-5.  ボックスの一覧で、**アプリの登録** をクリックします。 [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+5.  ボックスの一覧で、**アプリの登録** をクリックします。 
+
+    [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+
 6.  上部ウィンドウで、**新しい登録**をクリックしてください。 **アプリケーションの登録ウィザード**が起動します。
-7.  アプリケーションの名前を入力し、**この組織ディレクトリのアカウントのみ**を選択します。 **登録**をクリックします。  [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
-8.  新しいアプリの登録が開きます。 [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+7.  アプリケーションの名前を入力し、**この組織ディレクトリのアカウントのみ**を選択します。 **登録**をクリックします。  
+
+    [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+
+8.  新しいアプリの登録が開きます。 
+
+    [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+
 9.  後で必要になりますので、**申請 ID** 値を忘れないようにしてください **申請 ID** は後で、**クライアント ID** として参照されます。
-10. **管理**ウィンドウの**証明書 & シークレット**をクリックします。 **新しいクライアント シークレット**をクリックします。 [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
-11. **パスワード** セクションでキーの説明および期間を入力してキーを作成します。 **追加** をクリックし、 キーをコピーします。 このキーは、後で**クライアント シークレット**と呼ばれます。 [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
+10. **管理**ウィンドウの**証明書 & シークレット**をクリックします。 **新しいクライアント シークレット**をクリックします。 
+
+    [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
+
+11. **パスワード** セクションでキーの説明および期間を入力してキーを作成します。 **追加** をクリックし、 キーをコピーします。 このキーは、後で**クライアント シークレット**と呼ばれます。 
+
+    [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Supply Chain Management でユーザー アカウントを作成および設定する
 Supply Chain Management で Azure AD アプリケーションを使用可能にするには、次の構成手順を完了する必要があります:
@@ -78,28 +95,47 @@ Supply Chain Management で Azure AD アプリケーションを使用可能に�
 1.  倉庫管理アプリ ユーザー資格情報に対応するユーザーを作成します。
     1.  **システム管理** &gt; **共通** &gt; **ユーザー**の順に移動します。
     2.  新規ユーザーを作成します。
-    3.  次のスクリーンショットに示すとおり、倉庫モバイル デバイス ユーザーを割り当てます。 [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
+    3.  次のスクリーンショットに示すとおり、倉庫モバイル デバイス ユーザーを割り当てます。 
+    
+        [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
 2.  Azure Active Directory アプリケーションと倉庫保管アプリ ユーザーを関連付けます。
     1.  Supply Chain Management で、**システム管理** &gt; **設定** &gt; **Azure Active Directory アプリケーション**に移動します。
     2.  新しい行を作成します。
-    3.  **クライアント ID** (前のセクションで取得したもの) を入力し、名前を設定し、以前に作成したユーザーを選択します。 Supply Chain Management へのアクセスを紛失した場合に備えて、このページから簡単に削除できるように、すべてのデバイスにタグを付けることをお勧めします。 [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
+    3.  **クライアント ID** (前のセクションで取得したもの) を入力し、名前を設定し、以前に作成したユーザーを選択します。 Supply Chain Management へのアクセスを紛失した場合に備えて、このページから簡単に削除できるように、すべてのデバイスにタグを付けることをお勧めします。 
+    
+        [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
 
 ## <a name="configure-the-application"></a>アプリケーションのコンフィギュレーション
 Azure AD アプリケーションを使用して Supply Chain Management サーバーに接続するには、デバイス上でアプリをコンフィギュレーションする必要があります。 それには、次の手順を完了します。
 
 1.  アプリで、**接続設定** に移動します。
-2.  **デモ モード** フィールドをクリアします。 <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+2.  **デモ モード** フィールドをクリアします。 <br>
+
+    [![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+
 3.  次の情報を入力します。 
     + **Azure Active Directory クライアント ID** - クライアント ID は「Active Directory に Web サービス アプリケーションを作成する」のステップ 9 で取得します。 
     + **Azure Active Directory クライアント シークレット** - クライアント シークレットは「Active Directory に Web サービス アプリケーションを作成する」のステップ 11 で取得します。 
-    + **Azure Active Directory リソース** - Azure AD Directory リソースは Supply Chain Management のルート URL を示します。 **注**: スラッシュ (/) でこのフィールドを終了しないでください。 
-    + **Azure Active directory テナント** - Supply Chain Management サーバーで使用される Azure AD Directory のテナント: `https://login.windows.net/your-AD-tenant-ID`。 例: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
-    <br>**注**: スラッシュ (/) でこのフィールドを終了しないでください。 
-    + **会社** - Supply Chain Management に、アプリケーションが接続する法的エンティティを入力します。 <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
-4.  アプリケーションの左上隅にある **戻る** ボタンを選択します。 アプリケーションは Supply Chain Management サーバーに接続し、倉庫作業者のログイン画面が表示されます。 <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+    + **Azure Active Directory リソース** - Azure AD Directory リソースは Supply Chain Management のルート URL を示します。 
+    
+        > [!NOTE]
+        > スラッシュ (/) でこのフィールドを終了しないでください。 
 
-モバイル デバイスのカメラを使用してバーコードをスキャンするために倉庫管理アプリを設定する方法の詳細については、[Dynamics 365 for Finance and Operations – Warehousing でカメラを使用してバーコードをスキャンする](scan-bar-codes-using-a-camera.md) を参照してください。
+    + **Azure Active directory テナント** - Supply Chain Management サーバーで使用される Azure AD Directory のテナント: `https://login.windows.net/your-AD-tenant-ID`。 例: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
+    
+        > [!NOTE]
+        > スラッシュ (/) でこのフィールドを終了しないでください。 
+    
+    + **会社** - Supply Chain Management に、アプリケーションが接続する法的エンティティを入力します。 <br>
+    
+    [![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
+
+4.  アプリケーションの左上隅にある **戻る** ボタンを選択します。 アプリケーションは Supply Chain Management サーバーに接続し、倉庫作業者のログイン画面が表示されます。
+
+    [![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+
+モバイル デバイスのカメラを使用してバーコードをスキャンするために倉庫管理アプリを設定する方法の詳細については、[Dynamics 365 for Finance and Operations - Warehousing アプリでカメラを使用してバーコードをスキャンする](scan-bar-codes-using-a-camera.md) を参照してください。
 
 ## <a name="remove-access-for-a-device"></a>デバイスへのアクセスを削除する
 デバイスの紛失またはセキュリティが侵害された場合、デバイスの Supply Chain Management へのアクセスを削除する必要があります。 次の手順では、アクセスを削除するための推奨プロセスについて説明します。

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e39328c73fe3dd101e32ec04d895483335184ae7
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 54f07e7037f818862db4a44f9ad3e3fe8545f6f9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627654"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811485"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0 (2016 年 2 月) の新機能および変更された機能
 
@@ -322,7 +322,7 @@ ms.locfileid: "2627654"
 <tr>
 <td><strong>ヘルプ</strong> をクリックして、ガイド付きの手順を追ったヘルプ (タスク ガイド) および概念に関するトピックにアクセスします。</td>
 <td>AX 2012 のヘルプ システムは、ローカル Web サーバーに保存されている HTML トピックをポイントしています。 顧客およびパートナーは独自のヘルプを作成できます。</td>
-<td>Dynamics AX の現在のバージョンのヘルプ システムは、Microsoft Dynamics Lifecycle Services (LCS) BPM に格納されているタスク ガイドを表示します。 ヘルプ システムでは、Microsoft docs サイトからトピックの表示もします。 詳細については、<a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Dynamics AX ヘルプ - はじめに</a>と<a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">利用可能な新しいタスク ガイド (2016 年 2 月)</a> を参照してください。</td>
+<td>Dynamics AX の現在のバージョンのヘルプ システムは、Microsoft Dynamics Lifecycle Services (LCS) BPM に格納されているタスク ガイドを表示します。 ヘルプ システムでは、Microsoft docs サイトからトピックの表示もします。 詳細については、<a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">ヘルプ システム</a>および<a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">新しいタスク ガイド (2016 年 2 月)</a> を参照してください。</td>
 <td>タスク ガイドでは、ガイド付きでインタラクティブな方法によって、タスクまたは業務プロセスの手順が説明されています。 Microsoft が提供するタスク ガイドをダウンロードおよびカスタマイズできます。 トピックでは、製品ドキュメントをより迅速かつ柔軟に作成、配布、および更新する方法を提供します。 したがって、最新の技術情報にアクセスできることを保証するために役立ちます。</td>
 </tr>
 </tbody>
@@ -1031,6 +1031,6 @@ Lifecycle Services (LCS) は、サインアップから日常業務までのシ�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[新機能および変更された機能](whats-new-changed.md)
+[Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
 
-[利用可能な新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
+[新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)

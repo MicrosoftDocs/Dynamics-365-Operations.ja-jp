@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0714314b68651e4b96f83d1073c4e35f5b27b013
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b4cad11bcd1b1674055a07b5093093e33d3ac556
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551636"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771802"
 ---
 # <a name="general-ledger-and-financial-reporting-overview"></a>一般会計と財務諸表の概要
 
@@ -55,7 +55,7 @@ ms.locfileid: "2551636"
 
 #### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
-計画されている新機能については、[Microsoft Dynamics 365 リリース ノート](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。 
+予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース プラン](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。 
 
 #### <a name="blogs"></a>ブログ
 

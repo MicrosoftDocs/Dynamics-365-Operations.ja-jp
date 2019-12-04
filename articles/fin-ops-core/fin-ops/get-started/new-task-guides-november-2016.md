@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 15a645c98fe38e8ddaa34c0c21581eac6636502f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190974"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811604"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>新規または更新されたタスク ガイド (2016 年 11 月)
 
@@ -30,7 +30,7 @@ ms.locfileid: "2190974"
 
 このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 11 月 – すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 
-APQC 統合ライブラリ (2016 年 11 月 – すべての言語) には、Microsoft Dynamics 365 for Operations、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 3、Microsoft DynamicsAX プラットフォーム更新プログラム 2、Dynamics AX 2016 年 5 月更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、[新規または変更](whats-new-changed.md)を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
+APQC 統合ライブラリ (2016 年 11 月 – すべての言語) には、Microsoft Dynamics 365 for Operations、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 3、Microsoft DynamicsAX プラットフォーム更新プログラム 2、Dynamics AX 2016 年 5 月更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、[Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md) を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、[ヘルプ システム](help-overview.md) を参照してください。
 
 > [!NOTE]
 > ビジネス プロセス モデラー (BPM) 行のタイトルの横にあるアスタリスク (\*) は、そのビジネス プロセスのタスク ガイド  Dynamics 365 for Operations 2016 年 11 月更新のために作成されたことを示しており、Microsoft Dynamics AX の以前のバージョンではサポートされていません。
@@ -543,8 +543,8 @@ APQC 統合ライブラリ (2016 年 11 月 – すべての言語) には、Mic
 
 ## <a name="additional-resources"></a>追加リソース
 
-[利用可能な新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
+[新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
 
-[利用可能な新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
+[新規または更新されたタスク ガイド (2016年 5月)](new-updated-task-guides-available-may-2016.md)
 
-[利用可能な新規または更新されたタスク ガイド (2016 年 8 月](new-updated-task-guides-available-august-2016.md)
+[新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)

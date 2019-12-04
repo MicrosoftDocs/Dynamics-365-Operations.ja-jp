@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 159320dcbdf257862378b347172ef71832e293dc
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 496603731eb343a64be1e8d9482ac8d42e6aa79a
+ms.sourcegitcommit: 7ef9e61f0388b5241894d40ff39f84a112232a5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626065"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2694409"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-8-2019"></a>Dynamics 365 Talent (2019 年 10 月 8 日) の新機能および変更された機能
 
@@ -57,15 +57,15 @@ Microsoft では、[Core HR ドライブのオペレーショナル エクセレ
 
 詳細については、Dynamics 365: 2019 リリース ウェーブ 2 プラン[合理化された従業員のデータ入力](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/streamlined-employee-data-entry)を参照してください。
 
-### <a name="issue-attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>問題: Attract および Onboard により、無効な作業者が Core HR に作成される (380517)
+### <a name="attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>Attract および Onboard により、無効な作業者が Core HR に作成される (380517)
 
 今週のリリースでは、Attract および Onboard により無効な作業者が Core HR に作成されるという問題が修正されます。
 
-### <a name="issue-the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>問題: 従業員の退職に際してマネージャーが別の会社にサインインすると、ワークフローが失敗する (346852)
+### <a name="the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>従業員の退職に際してマネージャーが別の会社にサインインすると、ワークフローが失敗する (346852)
 
 マネージャーがサインインしている法人に基づいてワークフローが失敗することはなくなりました。
 
-### <a name="issue-missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>問題: HcmOnboardingWorkerChecklistTaskEntity に関する情報が不足している (349591)
+### <a name="missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>HcmOnboardingWorkerChecklistTaskEntity に関する情報が不足している (349591)
 
 このリリースには、**HcmOnboardingWorkerChecklistTaskEntity** に関する追加情報が含まれています。 次にいくつか例を挙げます。
 
@@ -73,35 +73,35 @@ Microsoft では、[Core HR ドライブのオペレーショナル エクセレ
 - **従業員名** 割り当てられたタイプが**従業員**の場合
 - **マネージャー名** 割り当てられたタイプが**マネージャー**の場合
 
-### <a name="issue-entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>問題: Common Data Service 管理においてエンティティがアルファベット順にリストされていない (377414)
+### <a name="entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Common Data Service 管理においてエンティティがアルファベット順にリストされていない (377414)
 
 エンティティは、**CDS 管理**ページにアルファベット順にリストされるようになりました。
 
-### <a name="issue-changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>問題: 未来の日付で雇用タイプを変更しても、職位割り当てが許可されない (339958)
+### <a name="changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>未来の日付で雇用タイプを変更しても、職位割り当てが許可されない (339958)
 
 この変更により、作業者タイプが変更された場合 (たとえば、従業員から契約社員へ) に職位割り当てが可能になります。
 
-### <a name="issue-updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>問題: Common Data Service 休暇バンク トランザクション エンティティを更新すると、Talent に新しいレコードが作成される (352938)
+### <a name="updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>Common Data Service 休暇バンク トランザクション エンティティを更新すると、Talent に新しいレコードが作成される (352938)
 
 休暇バンク トランザクションの Common Data Service が更新されると、休暇トランザクションが更新されるようになりました。
 
-### <a name="issue-the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>問題: フィードバック項目の添付ファイルのタイトルに、フィードバックの説明が表示される (343765)
+### <a name="the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>フィードバック項目の添付ファイルのタイトルに、フィードバックの説明が表示される (343765)
 
 フィードバックの説明は、添付ファイルのタイトルに表示されなくなります。
 
-### <a name="issue-compensation-workflow-comments-field-shows-incorrect-content-339297"></a>問題: 報酬ワークフローのコメント フィールドに正しくない内容が表示される (339297)
+### <a name="compensation-workflow-comments-field-shows-incorrect-content-339297"></a>報酬ワークフローのコメント フィールドに正しくない内容が表示される (339297)
 
 この変更により、**%HcmActionState.HcmWorkerActionComment.Comments%** フィールドの内容が表示されます。
 
-### <a name="issue-workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>問題: WorkCalendarEntity と WorkCalendarDayEntity が OData を通して公開されていない (376329)
+### <a name="workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>WorkCalendarEntity と WorkCalendarDayEntity が OData を通して公開されていない (376329)
 
 このリリースでは、**WorkCalendarEntity** および **WorkCalendarDayEntity** がオープン データ プロトコル (OData) を通して使用できるようになりました。
 
-### <a name="issue-hcmworkerentity-is-slow-when-odata-is-used-375221"></a>問題: OData が使用されると HCMWorkerEntity の速度が低下する (375221)
+### <a name="hcmworkerentity-is-slow-when-odata-is-used-375221"></a>OData が使用されると HCMWorkerEntity の速度が低下する (375221)
 
 変更により、Microsoft Excel ブック デザイナーが使用される場合、**HCMWorkerEntity** のパフォーマンスは向上します。
 
-### <a name="issue-manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>問題: 業績仕訳帳を削除して新しい仕訳帳を作成した後に、マネージャー業績仕訳帳入力でエラーが表示される (336061)
+### <a name="manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>業績仕訳帳を削除して新しい仕訳帳を作成した後に、マネージャー業績仕訳帳入力でエラーが表示される (336061)
 
 このリリースでは、1 つの業績仕訳帳が削除され、その後すぐに新しい仕訳帳が作成された場合に発生する問題が修正されています。 この修正により、マネージャーのセルフサービスの動作が変更されます。
 

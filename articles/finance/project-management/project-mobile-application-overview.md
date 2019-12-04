@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 521fdc98c8af51f6f244f9aa606ce047d014edf1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3cb3b25503b559f21c45c0232a8c0abd3e415eb3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250441"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773625"
 ---
 # <a name="project-mobile-applications-overview"></a>Project モバイル アプリケーションの概要
 
@@ -45,4 +45,7 @@ Dynamics 365 プロジェクト タイムシート モバイル アプリを使�
 
 ## <a name="for-more-information"></a>詳細情報
 
-詳細については、[Microsoft Dynamics 365 Project Timesheet モバイル アプリケーション](project-timesheet.md)、[プロジェクト タイム エントリ]( project-time-entry-mobile-workspace.md)、[モバイル デバイスの Project Timesheet](Mobile-timesheets.md)、および[Project Timesheet モバイル アプリのカスタム フィールドの実装](custom-fields-mobile.md) を参照してください。
+- [プロジェクト タイムシート モバイル アプリケーション](project-timesheet.md)
+- [プロジェクト時間の入力]( project-time-entry-mobile-workspace.md)
+- [モバイル デバイスでのプロジェクト タイムシート](Mobile-timesheets.md)
+- [iOS および Android 用 Microsoft Dynamics 365 Project Timesheet モバイル アプリのカスタム フィールドの実装](custom-fields-mobile.md)

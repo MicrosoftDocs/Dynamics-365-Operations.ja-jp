@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a548d3536bbc0056ee22c07c464af062029da81
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 241e1ae9bfd347695d7a2dbb7b3e71a7d49c2b93
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250579"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814539"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>製品コンフィギュレーションのソルバー戦略
 
@@ -66,9 +66,9 @@ ms.locfileid: "2250579"
 | トップダウン             | **最小限ドメインを先頭にする**および**トップダウン** 戦略は、密接な関係です。 顧客実装調査は、**トップダウン**戦略が、**最小ドメインを先頭にする**戦略より優れていることを示しています。 ただし、**最小ドメインを先頭にする**戦略は下位互換性の製品に保管されています。 これら両方のソルバー戦略は、テーブル制約が使用されないくつかの算術式を含むモデルを解くことでより効率的であることが示されています。 ただし、場合により、**既定** 戦略はこれら 2 つの戦略より優れています。 そのため、それぞれの戦略を試してください。 |
 | Z3                   | 既定のソルバー戦略として、**Z3** 戦略の使用をお勧めします。 パフォーマンスとスケーラビリティがについて考慮する場合は、その他の戦略を評価することができます。 |
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[製品コンフィギュレーション モデルの構築](build-product-configuration-model.md)
+[製品コンフィギュレーションの概要](build-product-configuration-model.md)
 
 [ヒューリスティック](https://techterms.com/definition/heuristic)
 

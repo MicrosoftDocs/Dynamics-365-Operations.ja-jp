@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b45c6f20bf5b6fb02379f71b5806c6c147789e73
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a8e283038a0cc1c9834a827c453f2951e9e87bcf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189755"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772286"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>買掛金勘定の請求書照合の概要
 
@@ -189,7 +189,7 @@ ms.locfileid: "2189755"
 -   元の発注書には記載されていなかった請求金額を入力して、請求書情報を仕入先から受け取った請求書と照合する。 発注書の請求金額は請求書の請求金額と比較できます。 必要に応じて、請求書に請求金額を追加して、請求明細行に割り当てることができます。
 -   請求書の正味単価と発注書の正味単価の間の価格照合不一致を表示して承認する。 法人、仕入先、品目に品目を価格の許容率を設定できます。 仕入先請求書の明細行価格が価格許容範囲外にある場合は、転記の承認が得られるまで、あるいは仕入先から訂正を受け取るまで、請求書を保存できます。
 
-詳細については、[3状況照合ポリシー](three-way-matching-policies.md) および [買掛金請求書照合の検証の設定](tasks/set-up-accounts-payable-invoice-matching-validation.md)を参照してください。 
+詳細については、[スリーウェイ マッチング ポリシー](three-way-matching-policies.md) および [買掛金請求書照合の検証の設定](tasks/set-up-accounts-payable-invoice-matching-validation.md)を参照してください。 
 
 
 

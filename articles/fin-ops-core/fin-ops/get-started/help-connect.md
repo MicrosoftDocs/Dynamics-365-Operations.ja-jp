@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 491024c9c3d6c7d20ef212e167ceab6abac8dac7
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537858"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812583"
 ---
 # <a name="connect-the-help-system"></a>ヘルプ システムに接続する
 
@@ -54,7 +54,7 @@ ms.locfileid: "2537858"
 > [!IMPORTANT]
 > 初めて **ヘルプ** タブを開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクをクリックし、接続されるまで待機し、ダイアログ ボックスを閉じ、**OK** をクリックして**システム パラメーター**ページを取得します。
 >
-> [![LCS への接続](./media/connect-to-lcs-crop-1024x365.png "LCS への接続")](./media/connect-to-lcs-crop.png)
+> [![LCS に接続](./media/connect-to-lcs-crop-1024x365.png "LCS に接続")](./media/connect-to-lcs-crop.png)
 
 1. 接続する Lifecycle Services プロジェクトを選択します。
 2. タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。
@@ -80,7 +80,7 @@ ms.locfileid: "2537858"
 
 実装を反映するタスク記録を作成して LCS 業務プロセス ライブラリに保存することで、財務、Supply Chain Management、および小売のカスタム ヘルプを作成できます。 [Talent] のカスタム タスク ガイドを作成することはできません。
 
-パートナーの場合、ライブラリを会社のライブラリに昇格してソリューションに含める場合、顧客が使用できます。 APQC 統合グローバル ライブラリのコピーを作成して開き、タスクの記録を開いて変更し、変更がある記録を保存します。 詳細については、「[ドキュメントやトレーニングとして使用するタスク記録の作成方法](../../dev-itpro/user-interface/task-recorder.md)」を参照してください。
+パートナーの場合、ライブラリを会社のライブラリに昇格してソリューションに含める場合、顧客が使用できます。 APQC 統合グローバル ライブラリのコピーを作成して開き、タスクの記録を開いて変更し、変更がある記録を保存します。 詳細については、[タスク レコーダーのリソース](../../dev-itpro/user-interface/task-recorder.md) を参照してください。
 
 ### <a name="connect-a-custom-site"></a>カスタム サイトを接続する
 
@@ -91,8 +91,8 @@ Microsoft は、カスタム ヘルプのサイトを作成およびヘルプ �
 
 ## <a name="additional-resources"></a>追加リソース
 
-[ヘルプの概要](help-overview.md)
+[ヘルプ システム](help-overview.md)
 
-[タスク レコーダーの概要](../../dev-itpro/user-interface/task-recorder.md)
+[タスク レコーダー リソース](../../dev-itpro/user-interface/task-recorder.md)
 
-[ドキュメントやトレーニングとして使用するタスク記録の作成方法](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[タスク レコーダーを使用したドキュメントやトレーニングの作成](../../dev-itpro/user-interface/task-recorder-training-docs.md)

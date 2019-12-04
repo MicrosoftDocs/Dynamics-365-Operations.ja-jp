@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0aeaa1ee4c35ca42a5382b3c7ff3519cba52996c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 302ac0f456dd8a24dc02948ee657e359f5a9c844
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250533"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770338"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>プロジェクト実績を、Project Service Automation から Finance and Operations へ転記する統合仕訳帳に、直接同期させます。
 
@@ -50,7 +50,7 @@ Project Service Automation の Finance への統合ソリューションは、�
 
 ### <a name="template-and-tasks"></a>テンプレートおよびタスク
 
-使用可能なテンプレートにアクセスするには、Microsoft PowerApps の管理者センターで**プロジェクト**を選択、次に右上隅にある**新規プロジェクト**を選択しパブリック テンプレートを選択します。
+使用可能なテンプレートにアクセスするには、Microsoft Power Apps の管理者センターで**プロジェクト**を選択、次に右上隅にある**新規プロジェクト**を選択しパブリック テンプレートを選択します。
 
 次のテンプレートおよび基本的なタスクは Project Service Automation から Finance プロジェクト 実績を同期させるために使用されます。
 

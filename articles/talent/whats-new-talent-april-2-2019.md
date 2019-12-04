@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 9cc45a3ed468541fc0a5c8e80e745854148165e4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 86d81d60fcbc77375f3b8c525e8c084e3a3d8a99
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026077"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773696"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Dynamics 365 Talent (2019 年 4 月 2 日) の新機能や変更された機能
 
@@ -63,7 +63,7 @@ Finance and Operations のプラットフォーム更新プロフラム 25 の�
 多くの組織では、報酬および福利厚生の管理者は特定の報酬レコードにのみアクセスできます。 これには、経営幹部または地域の従業員向けのレコードが含まれます。 この変更により、HR は組織内のさまざまな従業員グループの報酬プランを管理および維持できます。 セキュリティ ロールを固定および変動プランに割り当てることができます。 これらのセキュリティ ロールによって、給与または特別償却レコードなどのプランおよび関連する従業員データへのアクセスが決定されるため、それらのロールだけが従業員グループの報酬を処理できます。
 
 ### <a name="upgrade-to-common-data-service"></a>Common Data Service へのアップグレード
-Common Data Service へのアップグレードの期限に近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、PowerApps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
+Common Data Service へのアップグレードの期限に近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、Microsoft Power Apps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
 
 ## <a name="in-preview"></a>プレビュー
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d303b08ed39232a1154c5170bf585a7c25e43f8d
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 11d5613f23805993b2a83d007c818c80de6a4b9b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550462"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814286"
 ---
 # <a name="forecast-reduction-keys"></a>予測下方修正キー
 
@@ -226,4 +226,4 @@ ms.locfileid: "2550462"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[マスター プラン](master-plans.md)
+[マスター プランの概要](master-plans.md)

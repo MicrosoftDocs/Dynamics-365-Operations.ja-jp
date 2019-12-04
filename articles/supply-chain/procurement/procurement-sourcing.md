@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 461c89a220ec75f3f693da6f52291ebb498e7a05
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cce822f76323b6ce514d3793ce19f0160957e7a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558222"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813389"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>調達ホーム ページ
 
@@ -36,17 +36,17 @@ ms.locfileid: "1558222"
 -   [購買要求の概要](purchase-requisitions-overview.md)
 -   [消費要求の作成](tasks/create-requisition-consumption.md)
 -   [RFQ を使用する要求の作成](tasks/create-requisition-uses-rfq.md)
--   [誰かの代わりに製品注文のアクセス許可を設定する](tasks/set-up-permissions-ordering-products.md)
+-   [誰かの代わりに製品を注文するためのアクセス許可の設定](tasks/set-up-permissions-ordering-products.md)
 
 ## <a name="requests-for-quotation"></a>見積依頼
--   [見積依頼](request-quotations.md)
+-   [見積依頼 (RFQ) の概要](request-quotations.md)
 -   [見積依頼の作成](tasks/create-request-quotation.md)
--   [RFQ 入札価格を入力し、比較し、契約を授与してください。](tasks/enter-compare-rfq-bids-award-contracts.md)
+-   [RFQ 入札価格の入力と比較および契約の授与](tasks/enter-compare-rfq-bids-award-contracts.md)
 -   [RFQ のスコア方法を作成](tasks/create-scoring-method-rfqs.md)
--   [入札タイプ、および RFQ に対するスコア基準の作成](tasks/create-solicitation-types-scoring-criteria-rfqs.md)
+-   [RFQ の入札タイプとスコア基準の作成](tasks/create-solicitation-types-scoring-criteria-rfqs.md)
 
-## <a name="vendor-management-and-collaboration"></a>仕入先管理と共同作業
--   [仕入先勘定の設定](set-up-vendor-accounts.md)
+## <a name="vendor-management-and-collaboration"></a>仕入先管理とコラボレーション
+-   [仕入先の設定](set-up-vendor-accounts.md)
 -   [仕入先勘定の作成](tasks/create-vendor-account.md)
 -   [仕入先銀行口座の作成](tasks/create-vendor-bank-account.md)
 -   [仕入先の検索](tasks/search-vendors.md)
@@ -57,13 +57,13 @@ ms.locfileid: "1558222"
 -   [仕入先コラボレーションの設定と管理](set-up-maintain-vendor-collaboration.md)
 -   [委託販売在庫デモ スクリプトの (受信) Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(ホワイト ペーパー)
 -   [仕入先コラボレーションを使用した委託販売在庫の監視](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
--   [仕入先ポータルを使用して、仕入先と連携](collaborate-vendors-vendor-portal.md)  (Dynamics AX の 2016 年 2 月と 2016 年 ５ 月バージョンのみ)
--   [ 仕入先のポータル ユーザー向けのセキュリティのコンフィギュレーション](configure-security-vendor-portal-users.md) (Finance and Operations の 2016 年および 2016 年 5 月バージョンのみ)
--   [Microsoft Dynamics 365 for Finance and Operations アプリケーションの仕入先コラボレーション モバイル ワークスペース](vendor-collaboration-mobile-workspace.md)
+-   [仕入先ポータルを使用して、仕入先と連携する](collaborate-vendors-vendor-portal.md)  (Dynamics AX の 2016 年 2 月と 2016 年 ５ 月バージョンのみ)
+-   [ 仕入先ポータルのユーザー セキュリティ](configure-security-vendor-portal-users.md) (Finance and Operations の 2016 年および 2016 年 5 月バージョンのみ)
+-   [仕入先コラボレーションのモバイル ワークスペース](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>調達製品管理
--   [調達カタログ](procurement-catalogs.md)
--   [調達カタログの作成](tasks/create-procurement-catalog.md)
+-   [調達カタログの概要](procurement-catalogs.md)
+-   [発注書の作成](tasks/create-procurement-catalog.md)
 -   [仕入先カタログのインポート](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (ブログ投稿)
 -   [調達カテゴリ階層の設定](tasks/set-up-procurement-category-hierarchy.md)
 -   [調達カテゴリ階層に対するポリシーの設定](tasks/set-up-policies-procurement-category-hierarchies.md)
@@ -72,7 +72,7 @@ ms.locfileid: "1558222"
 ## <a name="procurement"></a>調達
 -   [発注書の概要](purchase-order-overview.md)
 -   [発注書の作成](purchase-order-creation.md)
--   [発注書の承認および確認](purchase-order-approval-confirmation.md)
+-   [発注書の承認と確認](purchase-order-approval-confirmation.md)
 -   [発注書の作成](tasks/create-purchase-order.md)
 -   [リピート発注書の作成](tasks/create-repeat-purchase-order.md)
 -   [販売注文からの発注書の作成](../sales-marketing/tasks/create-purchase-order-sales-order.md)
@@ -99,11 +99,8 @@ ms.locfileid: "1558222"
 -   [発注書に記載されている商品の受取の記録](tasks/record-receipt-goods-purchase-order.md)
 -   [購買要求ワークフロー](purchase-requisitions-workflow.md)
 -   [購買要求のビジネス プロセスのワークフローの定義](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (ホワイト ペーパー)
--   [購入ポリシー](purchase-policies.md)
+-   [購入ポリシーの概要](purchase-policies.md)
 -   [購入ポリシーの作成](tasks/create-purchasing-policies.md)
-
-
-
 
 
 

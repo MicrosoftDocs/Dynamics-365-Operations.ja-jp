@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d461b85f89eff63c8747fb17b3ee34ebfeb2218
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 79e12f39589f9cf3f4b1515fa3ab10bb10ffb97f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185638"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770362"
 ---
 # <a name="project-management-and-accounting-overview"></a>プロジェクト管理および会計の概要
 
@@ -72,7 +72,7 @@ ms.locfileid: "2185638"
 
 WBS の詳細の程度は、見積に必要な正確性のレベルとこれらの見積に対して必要な追跡のレベルに依存します。 スケジュールまたは原価のずれに対する許容範囲が非常に低いプロジェクトは、通常、より詳細な WBS、および WBS に対する作業の進捗と原価の入念な追跡も必要です。 
 
-詳細については、「[作業分解構造](work-breakdown-structures.md)」を参照してください。
+詳細については、「[作業分解構造の概要](work-breakdown-structures.md)」を参照してください。
 
 ### <a name="create-project-forecasts-and-budgets"></a>プロジェクト予測および予算の作成
 
@@ -134,7 +134,7 @@ WBS の詳細の程度は、見積に必要な正確性のレベルとこれら�
 
 WBS は、プロジェクトで完了した作業の説明です。 WBS は、タスクの階層です。 各タスクの作業だけではなく、タスクのサイズ、原価、期間を表します。 
 
-詳細については、「[作業分解構造](work-breakdown-structures.md)」を参照してください。
+詳細については、「[作業分解構造の概要](work-breakdown-structures.md)」を参照してください。
 
 ### <a name="manage-project-forecasts-and-budgets"></a>プロジェクト予測と予算の管理
 

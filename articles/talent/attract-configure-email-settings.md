@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent - Attract の電子メール設定のコンフィギュレーション
+title: Attract の電子メール設定のコンフィギュレーション
 description: このトピックでは、Microsoft Dynamcis 365 Talent - Attract で送信される電子メールのコンフィギュレーション方法について説明します。
 author: andreabichsel
 manager: AnnBe
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a457deec757a5d5a3e01c6903b2dd7a9d975ef0b
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: c1ebfaeb2e9bc2836bb70e87afa93484c829b6cb
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551544"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833118"
 ---
-# <a name="configure-email-settings-in-microsoft-dynamics-365-talent---attract"></a>Microsoft Dynamics 365 Talent - Attract の電子メール設定のコンフィギュレーション
+# <a name="configure-email-settings-in-attract"></a>Attract の電子メール設定のコンフィギュレーション
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ブランドは信頼を確立し、候補者がポジションに応募する前に、候補者との関係を構築するのに役立ちます。 ポジティブなブランド認識は、優秀な人材を引き付け、既に在籍している従業員のロイヤルティを高めます。 Microsoft Dynamics 365 Talent: Attract を使用すると、会社のブランドを反映するように電子メールを構成できます。 したがって、職務候補者が応募プロセスを進めていくにつれて、候補者に一貫したエクスペリエンスを提供することができます。
 

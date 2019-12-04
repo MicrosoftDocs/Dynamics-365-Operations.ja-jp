@@ -17,14 +17,15 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d84dd9c22738a1b4fc5edb5331d4aa213b82facb
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: a6d916f87ca30aa7405a51841e56ab31bbe31ac8
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551936"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832607"
 ---
 # <a name="user-not-found-in-people-picker-in-attract-or-onboard"></a>ユーザーが Attract または Onboard の人員ピッカーで見つからない
+
 [!include [banner](includes/banner.md)]
 
 ## <a name="issue"></a>問題点

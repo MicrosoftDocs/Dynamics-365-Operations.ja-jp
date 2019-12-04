@@ -19,20 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: c16268338085d414468f17362294fb7e933d1b57
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 35c0a1e6342008bc2ee6ff25a1663e199c8cb985
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249112"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771028"
 ---
 # <a name="troubleshooting-guide-for-data-integration"></a>データ統合のトラブルシューティング ガイド
 
 ## <a name="enable-plug-in-trace-logs-in-common-data-service-and-inspect-the-dual-write-plug-in-error-details"></a>Common Data Service のプラグイン トレース ログを有効にし、デュアル書き込みプラグイン エラーの詳細を検査
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 デュアル書き込み同期中に問題またはエラーが発生した場合は、これらの手順に従って追跡ログのエラーを検査します。
 

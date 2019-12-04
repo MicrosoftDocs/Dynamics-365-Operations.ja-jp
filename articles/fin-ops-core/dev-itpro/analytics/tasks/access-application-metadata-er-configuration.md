@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2bfe007995c894d6cc86d07ef2b52da65e32e950
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: aa8444b081650e3d375e6f28f47866c8d4853721
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182741"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772466"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>ER コンフィギュレーションを使用したアプリケーション メタデータへのアクセス
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-次の手順では、システム管理者または電子申告開発者ロールの Regulatory configuration service (RCS) ユーザーが、 アプリケーションのメタデータを使用して、電子申告 (ER) モデルのマッピングをデザインする方法を説明します。 アプリケーション メタデータには、対外貿易トランザクションにアクセスするためのサンプル メタデータ セットを含む ER メタデータ コンフィギュレーションを使用してアクセスされます。 これらの手順を完了するには、RCS で最初に[コンフィギュレーション プロバイダーを作成して有効とマークする](er-configuration-provider-mark-it-active-2016-11.md)のトピックにある手順を実行する必要があります。 次に、トピック [(ER) RCS で使用するアプリケーション メタデータの準備](prepare-application-metadata-rcs.md)の手順を完了します。
+次の手順では、システム管理者または電子申告開発者ロールの Regulatory configuration service (RCS) ユーザーが、 アプリケーションのメタデータを使用して、電子申告 (ER) モデルのマッピングをデザインする方法を説明します。 アプリケーション メタデータには、対外貿易トランザクションにアクセスするためのサンプル メタデータ セットを含む ER メタデータ コンフィギュレーションを使用してアクセスされます。 これらの手順を完了するには、RCS で最初に[コンフィギュレーション プロバイダーを作成して有効とマークする](er-configuration-provider-mark-it-active-2016-11.md)のトピックにある手順を実行する必要があります。 次に、トピック [RCS で使用するアプリケーション メタデータの準備](prepare-application-metadata-rcs.md)の手順を完了します。
 
 ## <a name="prerequisites"></a>必要条件
 1. **すべてのワークスペース** > **電子申告**の順に移動します。 
@@ -35,7 +35,7 @@ ms.locfileid: "2182741"
 
 ## <a name="import-metadata-configuration"></a>メタデータ コンフィギュレーションのインポート 
 1. **メタデータ コンフィギュレーション**をクリックします。 
-2. メタデータを含む ER メタデータ コンフィギュレーションをインポートします。これは対外貿易ビジネスのための電子ドキュメントを生成するようコンフィギュレーションされています。 この ER メタデータ コンフィギュレーションは、[(ER) RCS で使用されるアプリケーション メタデータを準備する](prepare-application-metadata-rcs.md) の手順が完了した時に、XML ファイルとしてエクスポートされました。 
+2. メタデータを含む ER メタデータ コンフィギュレーションをインポートします。これは対外貿易ビジネスのための電子ドキュメントを生成するようコンフィギュレーションされています。 この ER メタデータ コンフィギュレーションは、[RCS で使用されるアプリケーション メタデータを準備する](prepare-application-metadata-rcs.md) の手順が完了した時に、XML ファイルとしてエクスポートされました。 
 3. **交換**をクリックします。 
 4. **XML ファイルから読み込む**をクリックします。 
 5. **参照**をクリックし、「対外貿易 metadata.xml」ファイルを選択します。 

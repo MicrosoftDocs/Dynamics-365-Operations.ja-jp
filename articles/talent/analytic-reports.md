@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent - Attract の分析レポートを使用
+title: Attract の分析レポートを使用
 description: このトピックでは、Microsoft Dynamics 365 Talent - Attract でのプロセス インサイトの採用に関する分析レポートについて説明します。
 author: fewatson
 manager: AnnBe
@@ -19,14 +19,16 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: 5a4d160e8c90725d5ea129a76fd48da1c5af7900
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4ae608bbca111313d8c77e63f6a7a95813f6e5cd
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551521"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833234"
 ---
-# <a name="use-analytic-reports-in-microsoft-dynamics-365-talent---attract"></a>Microsoft Dynamics 365 Talent - Attract の分析レポートを使用
+# <a name="use-analytic-reports-in-attract"></a>Attract の分析レポートを使用
+
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attract の分析レポートは、プロセス インサイトを採用するためにそのまま使用できる (OOTB) ソリューションを提供します。 利用可能な機能は次のとおりです。
 

@@ -17,12 +17,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c16ee7dddc1c077bb71e8c62f2790af801dc0ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7dac9e8eca7ff3e181ad6761c93dff9da19f21d3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175793"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772880"
 ---
 # <a name="set-up-reduction-entries-for-fixed-assets"></a>固定資産の圧縮記帳の設定
 
@@ -87,7 +87,7 @@ ms.locfileid: "2175793"
 
 ## <a name="depreciate-fixed-assets-with-reduction-entry-posted"></a>圧縮記帳が転記されている固定資産の減価償却
 
-[圧縮記帳が転記されている固定資産の減価償却](./tasks/depreciation-fixed-assets-reduction-entry-posted.md)を参照してください。
+[圧縮記帳の転記が存在する固定資産の減価償却](./tasks/depreciation-fixed-assets-reduction-entry-posted.md) を参照してください。
 
 ## <a name="create-and-assign-a-reduction-entry-document-for-a-government-grant-subsidy"></a>政府助成金の圧縮記帳ドキュメントの作成および割り当て
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c4a2696b015611f4430ad5dfa1c61c1c4f913a9
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c6774a41887e74bfdb1fa6a9221264b0c8454c70
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570797"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814355"
 ---
 # <a name="inventory-journals"></a>在庫仕訳帳
 
@@ -74,7 +74,7 @@ BOM を完了済と報告する場合、BOM 仕訳帳を作成できます。 BO
 
 ### <a name="counting"></a>棚卸
 
-棚卸仕訳帳によって、品目や品目グループに登録される現在の手持在庫を修正でき、実際の現物棚卸を転記して、差を調整するために必要な調整を行えます。 さまざまな特性を持つ品目を棚卸仕訳帳に含められるように、棚卸ポリシーを棚卸グループと関連付けて、これらの品目をグループ化できます。 たとえば、棚卸グループを設定して、特定の頻度を持つ品目の棚卸や、在庫が特定のレベルまで落ちた場合の品目の棚卸が可能です。 棚卸グループを定義する方法の詳細については、「[在庫棚卸プロセスの定義 (タスク ガイド)](tasks/define-inventory-counting-processes.md)」を参照してください。
+棚卸仕訳帳によって、品目や品目グループに登録される現在の手持在庫を修正でき、実際の現物棚卸を転記して、差を調整するために必要な調整を行えます。 さまざまな特性を持つ品目を棚卸仕訳帳に含められるように、棚卸ポリシーを棚卸グループと関連付けて、これらの品目をグループ化できます。 たとえば、棚卸グループを設定して、特定の頻度を持つ品目の棚卸や、在庫が特定のレベルまで落ちた場合の品目の棚卸が可能です。 棚卸グループを定義する方法の詳細については、「[在庫棚卸プロセスの定義](tasks/define-inventory-counting-processes.md)」を参照してください。
 
 ### <a name="tag-counting"></a>タグ棚卸
 

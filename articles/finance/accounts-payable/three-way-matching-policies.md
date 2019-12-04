@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9c177f7a7b713e7b8490b718650daafeca0e937
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d84e3ed050bacf7632d03cf0123f682c43fd7b58
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189387"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772746"
 ---
 # <a name="three-way-matching-policies"></a>スリーウェイ マッチング ポリシー
 
@@ -141,7 +141,7 @@ Contoso の請求書には次の情報が含まれています。
 請求書照合が不一致の請求書の転記の承認が必要な場合、価格照合エラーと数量の照合エラーのある請求書を転記できるようにするには、その前に [請求書照合の詳細] ページで [照合不一致を伴う転記の承認] の切替えを選択しておく必要があります。 承認が必要でない場合、他の転記エラーがなければ、請求書の処理を続行できます。
 
 
-詳細については、「[買掛金請求書照合](accounts-payable-invoice-matching.md)」 を参照してください。
+詳細については、[買掛金請求書照合の概要](accounts-payable-invoice-matching.md) を参照してください。
 
 
 

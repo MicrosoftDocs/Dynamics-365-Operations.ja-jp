@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 168c2fb9edfc994617ef6764a5b9f5949d599882
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4e66a62007025964b3d58ff0620ebecd6d9769f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186328"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771755"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>売上税の支払と丸めのルール
 
@@ -125,9 +125,9 @@ ms.locfileid: "2186328"
 
 詳細については、次のトピックを参照してください。
 - [消費税の概要](indirect-taxes-overview.md)
-- [売上税支払の作成](tasks/create-sales-tax-payment.md)
-- [ドキュメントの売上トランザクションの作成](tasks/create-sales-tax-transactions-documents.md)
-- [転記された売上税トランザクションの表示](tasks/view-posted-sales-tax-transactions.md)
+- [消費税支払の作成](tasks/create-sales-tax-payment.md)
+- [ドキュメントの消費税トランザクションの作成](tasks/create-sales-tax-transactions-documents.md)
+- [転記された消費税トランザクションの表示](tasks/view-posted-sales-tax-transactions.md)
 - [round 関数](https://msdn.microsoft.com/library/aa850656.aspx)
 
 

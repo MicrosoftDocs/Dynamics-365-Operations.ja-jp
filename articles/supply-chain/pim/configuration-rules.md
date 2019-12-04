@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13f37cb4e472e91862e963a4952adcf61e6adcea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2d81bb8e570b61d214ab3f6b7c40c1135977f9ee
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555934"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813641"
 ---
 # <a name="configuration-rules"></a>コンフィギュレーション ルール
 
@@ -39,10 +39,10 @@ ms.locfileid: "1555934"
 
 **注意:** **選択**メソッドでは、派生するコンフィギュレーション グループ、品目番号、およびコンフィギュレーションが自動的に選択されます。 **選択解除**メソッドでは、派生するコンフィギュレーション グループ、品目番号、およびコンフィギュレーションを選択できません。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[分析コード ベースの製品コンフィギュレーション](dimension-based-product-configuration.md)
+[分析コード ベース製品のコンフィギュレーションの概要](dimension-based-product-configuration.md)
 
 
 

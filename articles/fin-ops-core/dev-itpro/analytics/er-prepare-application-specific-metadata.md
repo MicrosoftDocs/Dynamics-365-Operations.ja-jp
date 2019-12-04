@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74750397dc344d74c018c27114357d3d05b95b7e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 89d36c305bc9210f7906cd4288e33e5028baecdb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550110"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771263"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>RCS および ER のアプリケーション固有のメタデータを準備する
 
@@ -54,14 +54,14 @@ ms.locfileid: "2550110"
     > [!NOTE]
     > アプリケーション全体に対して、または選択したモデル、モジュールに対して、すべてのメタデータを選択することができます。 どちらの場合も、レコードのテーブル、列挙体、および拡張データ型 (EDTs) のメタデータが自動的に追加されることに注意してください。 メタデータの追加のタイプが必要な場合、手動で追加する必要があります。
 
-対外貿易トランザクションに関連付けられたメタデータをいくつか追加し、手動でメタデータ項目を選択する必要があります。
+    対外貿易トランザクションに関連付けられたメタデータをいくつか追加し、手動でメタデータ項目を選択する必要があります。
 
 9. **データソースを追加 \> テーブル レコード**を選択します。
 10. **名前**フィールドにある**イントラスタット**の値をフィルタ処理します。
 11. **イントラスタット** テーブル レコードを選択します。
 12. **OK** を選択します。
 
-イントラスタットのレコード テーブルに関するメタデータ情報を追加する必要があります。
+    イントラスタットのレコード テーブルに関するメタデータ情報を追加する必要があります。
 
 13. ツリーで、**テーブル レコード イントラスタット\> \>リレーション \> イントラスタットコモディティ (テーブル レコード EcoResCategory)** を選択します。
 14. **メタデータの追加**を選択します。
@@ -95,7 +95,7 @@ ms.locfileid: "2550110"
 
 これを完了する前に、ます次の手順を完了する必要があります。
 
-- [コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md)
+- [コンフィギュレーション プロバイダーを作成し、有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md)
 - [RCS で使用できるアプリケーション メタデータを準備する](#prepare-application-metadata-that-can-be-used-in-rcs)
 
 1. **すべてのワークスペース \> 電子申告**の順に移動します。
@@ -201,7 +201,7 @@ ms.locfileid: "2550110"
 
 次の手順は、**システム管理者**または**電子レポート開発者**のロールを持つ RCS ユーザーが、アプリケーションのメタデータを使用して新しい ER モデル マッピングをデザインする方法について説明しています。 アプリケーションのメタデータは、RCS 接続されたアプリケーションを使用してオンラインでアクセスできます。 サンプル ER モデルマッピングは、対外貿易トランザクションにアクセスするようにコンフィギュレーションされます。
 
-この手順を完了するには、まず RCS にある [コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md)の手順を完了する必要があります。 このトピックの前の部分にある [ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする](#access-application-metadata-by-using-an-er-configuration)の手順をまだ完了していない場合は、[Dynamics 365 for Finance and Operations 8.1 電子レポート タスク ガイド](https://go.microsoft.com/fwlink/?linkid=2082739)のページに移動し、次の ER コンフィギュレーション ファイルを事前にダウンロードし、ローカルに保存してください : **対外貿易メタデータ .xml**、**対外貿易モデル .xml**、および**対外貿易マッピング .xml**
+この手順を完了するには、まず RCS にある [コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md) の手順を完了する必要があります。 このトピックの前の部分にある [ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする](#access-application-metadata-by-using-an-er-configuration)の手順をまだ完了していない場合は、[Dynamics 365 for Finance and Operations 8.1 電子レポート タスク ガイド](https://go.microsoft.com/fwlink/?linkid=2082739)のページに移動し、次の ER コンフィギュレーション ファイルを事前にダウンロードし、ローカルに保存してください : **対外貿易メタデータ .xml**、**対外貿易モデル .xml**、および**対外貿易マッピング .xml**
 
 
 ### <a name="get-required-er-configurations"></a>必要な ER コンフィギュレーションの取得

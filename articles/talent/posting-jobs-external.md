@@ -1,6 +1,6 @@
 ---
-title: Attract から外部キャリア サイトへの求人の投稿
-description: このトピックでは、外部採用サイトにジョブを転記するための Dynamics 365 Talent - Attract の使用方法について説明します。
+title: Attract から Broadbean への職務の投稿
+description: このトピックでは、Dynamics 365 Talent - Attract を使用して Broadbean に職務を転記する方法について説明します。
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 2c822a1f799144bb9240fc0cbdeb6c5441e278af
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 41fa057606887069a9ea0f1f2178eeaff59f33ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551406"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832660"
 ---
-# <a name="post-jobs-to-external-career-sites-from-attract"></a>Attract から外部キャリア サイトへの求人の投稿
+# <a name="post-jobs-to-broadbean-from-attract"></a>Attract から Broadbean への職務の投稿
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attract は、Attract から Broadbean にジョブを直接転記させることにより、必要な人材を獲得するのに役立ちます。 [ジョブを作成](./creating-jobs-attract.md) した後、Broadbean 上で可能性のあるすべてのジョブ候補の前にジョブを配置するには、ボタンをクリックするのみです。
 
 Broadbean にジョブを転記するには、適切な Broadbean のライセンスが必要です。 Broadbean はさまざまな製品やプランを提供しています。 Broadbean ライセンスと価格に関する詳細情報については、[Broadbean にお問い合わせください](https://www.broadbean.com/contact-us/)。
 
-Attract と統合するために Broadbean を構成する方法に関する詳細情報を必要としている管理者は、[外部のジョブ ボードの設定の入力](./attract-admin-job-board-settings.md) を参照してください。
+管理者として、Broadbean と Attract の統合を構成する方法の詳細が必要な場合は、[Microsoft Dynamics 365 Talent - Attract での、Broadbean との統合の設定](./attract-admin-job-board-settings.md) を参照してください。
 
 ## <a name="post-jobs-to-broadbean"></a>Broadbean への職務の投稿
 
@@ -74,7 +74,7 @@ Broadbean のジョブ転記は 2 通りの方法で更新できます。
 2. **転記**セクションで、Broadbean に対応する**転記を更新**ボタンを選択します。
 3. Broadbean ウィンドウで、転記を編集します。
 
-- または -
+    - または -
 
 1. Attract で、Broadbean で表示する職務を開きます。
 2. **転記**セクションで、Broadbean に対応する省略記号ボタン (**...**) を選択し、**表示**を選択します。
@@ -99,6 +99,6 @@ Broadbean にジョブを転記できない場合は、これらの手順を実�
 
 ## <a name="see-also"></a>参照
 
-[ジョブの作成](./creating-jobs-attract.md)
+[Attract でジョブ求人の作成、承認、および投稿](./creating-jobs-attract.md)
 
-[外部のジョブ ボードの設定の入力](./attract-admin-job-board-settings.md)
+[Microsoft Dynamics 365 Talent - Attract における Broadbean 統合の有効化](./attract-admin-job-board-settings.md)

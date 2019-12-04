@@ -1,5 +1,5 @@
 ---
-title: 候補者のプロファイルおよび応募のソースの追跡
+title: Attract における候補者のソースの追跡
 description: このトピックでは、候補者のプロファイルおよびアプリケーションのソースの追跡に関する情報を提供します。
 author: hachandr
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5b368e97a716cd1ce4f668c2a97326877a2d3dff
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 8860f508eebc377042c4e101eeb08a14a737ba0c
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551890"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832666"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>候補者のプロファイルおよび応募のソースの追跡
+# <a name="track-candidate-sources-in-attract"></a>Attract における候補者のソースの追跡
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 > [!NOTE] 
 > このトピックに記載されている機能は、プレビュー レビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 この機能を使用するには、Attract の**管理者設定**を使用して有効にするよう管理者に依頼してください。 将来のリリースでは、ソース追跡レポートを提供します。 詳細については、[Talent のプレビュー機能の利用](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) を参照してください。

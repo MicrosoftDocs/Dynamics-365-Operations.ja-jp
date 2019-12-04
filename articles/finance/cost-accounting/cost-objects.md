@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 90d9176a2ca37b581ef82306cc1ceef515ceb624
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6c15402993568c53eda8e03351fc2fccbcd82ab8
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187892"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770830"
 ---
 # <a name="cost-object-dimensions"></a>原価オブジェクト分析コード
 
@@ -37,7 +37,7 @@ ms.locfileid: "2187892"
 ## <a name="cost-object-dimensions-and-cost-object-dimension-members"></a>原価オブジェクト分析コードと原価オブジェクト分析コード メンバー
 原価オブジェクトは、*原価オブジェクト分析コード*として知られています。 原価オブジェクト分析コードが参照するエンティティを決定した後、個々の分析コード値を指定するか、またはそれらを他のソース システムから原価オブジェクトにインポートする必要があります。 これらの個別の分析コード値は*原価オブジェクト分析コード メンバ*と呼ばれます。 たとえば、原価オブジェクト分析コードとして原価部門として知られる財務分析コードを使用するとします。 個々の原価部門にどのように原価が流れるかを確認するには、原価オブジェクト分析コード メンバをインポートする必要があります。 この場合、原価オブジェクト分析コード メンバは、販売、生産、管理、地理的な場所などの実際の原価部門です。 次のスクリーン ショットは、原価オブジェクト分析コード メンバーとしての実際の原価部門である原価オブジェクト分析コードとしての原価部門の例を示しています。 
 
-[![原価オブジェクト分析コード](./media/cost-object-dimensions.png)](./media/cost-object-dimensions.png)
+[![原価オブジェクト分析コードとして原価部門を表示するスクリーンショット](./media/cost-object-dimensions.png)](./media/cost-object-dimensions.png)
 
 ## <a name="import-cost-object-dimension-members-through-data-connectors"></a>データ コネクタを使用して原価オブジェクト分析コード メンバーをインポートする
 原価オブジェクト分析コードメンバーのインポートを容易にするために、データ コネクタを使用して、原価オブジェクト分析コードとして使用するエンティティから値を取得します。 ビルド済のデータ コネクタ、または構築するカスタム データ コネクタを使用できます。

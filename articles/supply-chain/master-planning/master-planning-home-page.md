@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0588ad24cb28a32557361e1a2e5391502a8b46d7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250694"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814264"
 ---
 # <a name="master-planning-home-page"></a>マスター プランのホーム ページ
 
@@ -39,9 +39,9 @@ ms.locfileid: "2250694"
 
 3 つの主要な計画プロセスは次のとおりです。
 
--  **マスター プラン** - マスター プランは正味必要量を計算します。 実際の現在の注文に基づき、会社が在庫補充を短期的、日常的なベースで管理できるようにします。 これを説明する別の用語は、*正味必要量プラン*です。 詳細については [マスター プラン](master-plans.md) を参照してください。 
+-  **マスター プラン** - マスター プランは正味必要量を計算します。 実際の現在の注文に基づき、会社が在庫補充を短期的、日常的なベースで管理できるようにします。 これを説明する別の用語は、*正味必要量プラン*です。 詳細については、[マスター プランの概要](master-plans.md) を参照してください。 
 
--  **予測計画** - 予測スケジュールは総必要量を計算します。 将来の予想 (または予測) に基づき、会社が材料と能力の長期計画を実行できるようにします。 詳細については [予測計画](introduction-demand-forecasting.md) を参照してください。 
+-  **予測計画** - 予測スケジュールは総必要量を計算します。 将来の予想 (または予測) に基づき、会社が材料と能力の長期計画を実行できるようにします。 詳細については、[需要予測の概要](introduction-demand-forecasting.md) を参照してください。 
 
 -  **会社間マスタ計画** - 会社間マスター プランは法人間の正味必要量を計算します。 会社間の需要および供給を、短期的な確定需要と供給だけでなく、長期的で計画された (まだ確定されてはいない) 需要と供給を関連付けます。 詳細については、[会社間マスター プラン](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (e ラーニング) (CustomerSource アカウントが必要です) を参照してください。 
 
@@ -57,18 +57,18 @@ ms.locfileid: "2250694"
 
 ## <a name="quick-links"></a>クイック リンク
 
-- [マスター プラン](master-plans.md)  
+- [マスター プランの概要](master-plans.md)  
 - [制約付き計画の生成](./tasks/constrained-plan.md)
 - [連産品の材料計画の作成](./tasks/create-material-plan-co-products.md)
-- [マスタ プランとマルチサイト機能](master-plan-multisite-functionality.md)
+- [マスター プランとマルチサイト機能の概要](master-plan-multisite-functionality.md)
 - [会社間計画の作成](./tasks/create-intercompany-plan.md)
 - [需要予測の概要](introduction-demand-forecasting.md)
-- [下方修正キー](reduction-keys.md)
+- [予測下方修正キー](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="roadmaps"></a>ロードマップ
-リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。
+リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 ロードマップ](https://roadmap.dynamics.com/)を参照してください。
 
 ### <a name="blogs"></a>ブログ
 [Dynamics AX Manufacturing R&D Team Blog (Dynamics AX 製造研究開発チーム ブログ)](https://blogs.msdn.microsoft.com/axmfg) および [Supply Chain Management in Dynamics AX R&D Team Blog (Dynamics AX のサプライ チェーン マネジメント研究開発チーム ブログ)](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、マスター プランやその他のソリューションに関する意見、ニュース、その他の情報を見つけることができます。

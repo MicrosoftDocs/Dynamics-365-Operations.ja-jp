@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a4945f47c86d490f40a6b00cb823e6a6005e0ee4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e38d0bd75ad865b7885182f798beb43551576beb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550512"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770899"
 ---
 # <a name="add-location-and-party-relationship-types"></a>場所と関係者のリレーションシップ タイプの追加 
 
@@ -41,7 +41,7 @@ ms.locfileid: "2550512"
 
     1.  **LogisticsLocationRoleType** 列挙型に拡張を作成し、新規ロールを追加します。 
   
-        ![LogisticsLocationRoleType](media/Logistics.PNG)
+        ![LogisticsLocationRoleType 列挙の拡張](media/Logistics.PNG)
 
     2. 新規ロールのリソース ファイルを新たに作成し、そのプロパティの値を割り当てます。
      
@@ -69,7 +69,7 @@ ms.locfileid: "2550512"
 
     2. この新規タイプの初期化子を作成します。 コア コードで複数の例を見つけることができます。そのうちの 1 つが **DirRelationshipTypeChildInitialize** です。 これは、関係者のリレーションシップ タイプが「子ども」の初期化子のクラスです。 このコードをコピーして貼り付けることで、初期化子を使って開始し、強調表示されたエリアを更新することができます。
     
-    ![DirRelationshipChild](media/DirRelationship.PNG)
+    ![DirRelationshipChild 初期化子](media/DirRelationship.PNG)
 
     3.  新規リレーションシップ タイプの設定をテストするには、実行可能なクラスを作成し、Main() の DirDataPopulation::insertDirRelationshipTypes() を呼び出します。 **DirRelationshipTypeTable** に新規リレーションシップ タイプが表示され、**リレーションシップ タイプ**ページでこの新規リレーションシップ タイプが利用可能となります。
 

@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11ed2101304c4e09744bbd10e94e9cd2a8db4da5
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578244"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771076"
 ---
 # <a name="electronic-reporting-er-overview"></a>電子申告 (ER) の概要
 
@@ -71,7 +71,7 @@ ER では**データ モデル**および**形式**の 2 つのコンポーネ�
 
 - 異なるデータ型をデータ モデルのデータ ソースとして使用できます。 たとえば、テーブル、データ エンティティ、メソッド、または列挙型を使用できます。
 - 実行時にデータを指定する必要がある時にデータ モデルのデータ ソースとして定義できるユーザー入力パラメーターをサポートします。
-- 必要とされるグループへのデータの変換をサポートします。 フィルター、並べ替え、データ集計、Microsoft Excel のような式を使用してデザインされた、論理計算されたフィールドの追加をすることもできます。 (詳細については、「[電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)」を参照してください)。
+- 必要とされるグループへのデータの変換をサポートします。 フィルター、並べ替え、データ集計、Microsoft Excel のような式を使用してデザインされた、論理計算されたフィールドの追加をすることもできます。 詳細については、[電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md) を参照してください)。
 
 
 電子ドキュメントの受信をサポートするモデル マッピングには、次の機能があります。
@@ -360,7 +360,7 @@ ER により、現在の派生コンポーネントのドラフト バージョ�
 |                                                  |                       | 仕入先請求書申告 (IS)                   | アイスランドの仕入先請求書申告の形式                      |
 |                                                  |                       | 仕入先請求書申告レポート (IS)            | アイスランドの仕入先請求書申告のレポート                      |
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-- [ローカリゼーションの要件は、電子申告トのコンフィギュレーションを作成することです。](electronic-reporting-configuration.md)
-- [電子申告コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [電子申告 (ER) コンフィギュレーションを作成する](electronic-reporting-configuration.md)
+- [電子申告 (ER) コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)

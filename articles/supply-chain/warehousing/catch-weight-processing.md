@@ -3,7 +3,7 @@ title: 倉庫管理による CW 製品の処理
 description: このトピックでは、作業テンプレートと場所ディレクティブを使用して作業が倉庫のどこでどのように実行されるかを決定する方法を説明します。
 author: perlynne
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 5800f95de0ec773f40c506662a031887810b8c92
+ms.sourcegitcommit: db222a1719d4756d9ccb73fc71e7eaf4521c23a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887138"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2696642"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>倉庫管理による CW 製品の処理
 
@@ -181,7 +181,7 @@ CW タグの追跡が使用されていない場合は、各分析コードの�
 - 在庫ステータスが倉庫アプリケーションを使用して変更処理されたとき。
 - 倉庫アプリケーションを使用して倉庫移動が行われたとき。
 - 倉庫アプリケーション経由で調整を出し入れしたとき。
-- ピッキング作業が販売と在庫移動の作業に対して処理されたとき。 (CW タグは、製造コンポーネントのピッキングに記録されません。)
+- ピッキング作業が販売、転送、および生産ラインに対して処理されたとき。
 - コンテナーが使用されているかどうかにかかわらず、ピッキング済数量が積荷明細行から減らされたとき。
 - 製品が梱包ステーションでコンテナーに梱包されるとき。
 - コンテナーが再度開くとき。

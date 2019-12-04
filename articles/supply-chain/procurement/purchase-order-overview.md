@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8e5fd05f3114eb99b7e8b4390827d5ccd52832a
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c527735ea65dad84c5d3d405eac2ead35d3c792d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572212"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815368"
 ---
 # <a name="purchase-order-overview"></a>発注書の概要
 
@@ -42,8 +42,8 @@ ms.locfileid: "2572212"
 次の記事では、発注書が実行するさまざまなステージの概要について説明します。
 
 -   [発注書の作成](purchase-order-creation.md)
--   [発注書の承認および確認](purchase-order-approval-confirmation.md)
--   [発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
+-   [発注書の承認と確認](purchase-order-approval-confirmation.md)
+-   [発注書に対する製品受領書](product-receipt-against-purchase-orders.md)
 -   [仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>発注書のタイプ
@@ -79,14 +79,14 @@ PO には次の 3 つのタイプがあります。 注文書を作成すると�
 -   **確認済** – 注文が確認された後に、このステータスが割り当てられます。 通常、このステータスは注文に割り当てられる最後の承認のステータスです。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [発注書の作成](purchase-order-creation.md)
 
-[発注書の承認および確認](purchase-order-approval-confirmation.md)
+[発注書の承認と確認](purchase-order-approval-confirmation.md)
 
-[発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
+[発注書に対する製品受領書](product-receipt-against-purchase-orders.md)
 
 [仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2e5144517a880c41cf04998ed53a826a75ecefb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3d1d8952324bb16bcfa6a8b42fc4f157edb75cf1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178748"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811321"
 ---
 # <a name="electronic-signatures-overview"></a>電子署名の概要
 
@@ -44,7 +44,7 @@ ms.locfileid: "2178748"
 
 重要なビジネス プロセスに電子署名を使用できます。 組み込みの電子署名機能を持つプロセスもあります。 任意のデータベース テーブルおよびフィールド用にカスタム署名要求を作成することもできます。
 
-電子署名には組み込みのデジタル署名機能があります。 ドキュメントに署名する各ユーザーは、有効な暗号証明書を取得する必要があります。 ドキュメントに署名するときに、その証明書に関連付けられたプライベート キーが検証されます。 電子署名の情報は、監査証跡を提供するためにログに記録されます。 電子署名を設定するには、「[電子署名の設定 (タスク ガイド)](tasks/set-up-electronic-signatures.md)」を参照してください。
+電子署名には組み込みのデジタル署名機能があります。 ドキュメントに署名する各ユーザーは、有効な暗号証明書を取得する必要があります。 ドキュメントに署名するときに、その証明書に関連付けられたプライベート キーが検証されます。 電子署名の情報は、監査証跡を提供するためにログに記録されます。 電子署名を設定するには、「[電子署名の設定](tasks/set-up-electronic-signatures.md)」を参照してください。
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>電子署名へのアクセスを必要とするユーザー
 

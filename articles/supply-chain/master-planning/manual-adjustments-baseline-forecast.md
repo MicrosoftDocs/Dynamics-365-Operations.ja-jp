@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df9692dc168e9efb653b20c677cd6e3bb0bd8756
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8897e0fe01e7ed5af9a8d5b99de6b9b4506554f1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250717"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815137"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>ベースライン予測に対して手動調整を行う
 
@@ -66,7 +66,7 @@ ms.locfileid: "2250717"
 -   手動で調整されている新しい需要予測の値および金額。
 -   予測された値の信頼区間。
 -   予測を生成するのに使用された予測モデル。 集計データを表示している場合、集計されたすべてのタイム シリーズに使用されたすべての方法の一覧が表示されます。
--   内部モデル精度 (MAPE)。 予測精度に関する詳細については、[予測精度の監視](monitor-forecast-accuracy.md)を参照してください。
+-   内部モデル精度 (MAPE)。 予測精度に関する詳細については、[予測精度の監視](monitor-forecast-accuracy.md) を参照してください。
 
 **メモ :**
 
@@ -75,7 +75,7 @@ ms.locfileid: "2250717"
 
 また、**予測** セクションの **予測** 行の値を変更することによって、**需要予測の詳細** ページで予測に手動調整を加えることもできます。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [予測精度の監視](monitor-forecast-accuracy.md)

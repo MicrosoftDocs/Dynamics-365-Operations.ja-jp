@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a3e2178dbc60582d6167898c4c3446feac49dd04
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024071"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814493"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 8 月 20 日)
 
@@ -35,7 +35,7 @@ ms.locfileid: "2024071"
 
 ### <a name="simplified-apply-experience-for-candidates"></a>候補者のための簡易申請エクスペリエンス 
 
-候補者のための簡易申請エクスペリエンスが、パブリック プレビューで使用可能になりました。 有効にすると、**LinkedIn で応募する** (有効な場合) または既存のアプリケーション フォームを使用して、候補者は経歴書を使用するジョブに応募することができます。 これらの変更により、候補者は手動入力を必要とする最小限のフィールドで、すばやく求人応募を送信することができます。 この機能を有効にする方法の詳細については、[プレビュー機能の有効化または無効化](./access-preview-feature.md#enable-or-disable-preview-features) を参照してください。
+候補者のための簡易申請エクスペリエンスが、パブリック プレビューで使用可能になりました。 有効にすると、**LinkedIn で応募する** (有効な場合) または既存のアプリケーション フォームを使用して、候補者は経歴書を使用するジョブに応募することができます。 これらの変更により、候補者は手動入力を必要とする最小限のフィールドで、すばやく求人応募を送信することができます。 この機能の有効化についての詳細は、[Microsoft Dynamics 365 Talent のプレビュー機能の利用](./access-preview-feature.md#enable-or-disable-preview-features) を参照してください。
 
 ### <a name="view-rejection-comments-as-part-of-application-activity"></a>アプリケーション活動の一部として却下コメントを表示
 

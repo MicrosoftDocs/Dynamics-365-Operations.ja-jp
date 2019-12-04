@@ -19,12 +19,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0383f78ea5cfa42183e0bfe8a96d7d3866766e7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 484471c6bbda1d7396dfcfa34c33f50d247dad98
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547725"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812675"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>標準原価の原価計算バージョンの制限
 
@@ -45,9 +45,9 @@ ms.locfileid: "1547725"
 <a name="related-topics"></a>関連トピック
 --------
 
-[原価バージョン](costing-versions.md)
+[原価計算バージョンの概要](costing-versions.md)
 
-[非製造環境での標準原価を更新](update-standard-costs-non-manufacturing-environment.md)
+[非製造環境での標準原価の更新](update-standard-costs-non-manufacturing-environment.md)
 
 [製造品目の標準原価を管理するための準備](update-standard-costs-manufacturing-environment.md)
 

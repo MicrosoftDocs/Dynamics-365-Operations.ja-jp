@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2becf8213cfa46e2c0cf0c553f0b5e503dfc3704
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570243"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771825"
 ---
 # <a name="general-journal-processing"></a>一般仕訳帳の処理
 
@@ -85,7 +85,7 @@ ms.locfileid: "2570243"
 勘定構造および詳細ルールの構造は、財務報告に必要とされるデータおよびパフォーマンスの追跡が、一般仕訳帳の処理とドキュメンテーションの間にキャプチャされることを確認するために非常に重要です。 勘定構造および詳細ルール構造により、データ入力経験のカスタマイズが可能になります。 それぞれの状況に該当する財務分析コードに対してのみデータ入力を許可し、必要かつ正確なデータを常にキャプチャするという要件を適用することもできます。
 
 詳細については、次のトピックを参照してください。
-- [計画: 勘定科目表](plan-chart-of-accounts.md)。 
+- [勘定科目表の計画](plan-chart-of-accounts.md) 
 - [仕訳帳の詳細なルールの作成](tasks/create-advanced-rules-journals.md)
 - [テンプレートを使用した仕訳入力の作成](tasks/create-journal-entry-template.md)
 - [仕訳帳の作成および検証](tasks/create-validate-journals.md)

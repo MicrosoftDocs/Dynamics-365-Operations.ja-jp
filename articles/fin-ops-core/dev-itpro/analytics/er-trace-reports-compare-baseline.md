@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1643e7fb3128faf6ad638d4cdad313b3667463b1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6cdfbbd7d4f41503e97620b8738679ad572b2a4a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181683"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771240"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>生成されたレポート結果を追跡し、ベースライン値と比較する
 
@@ -44,10 +44,10 @@ ms.locfileid: "2181683"
 
 この手順では、ER 形式の実行に関する情報を収集し、それらの実行の結果を評価するように ER フレームワークを構成する方法について説明します。 この評価の一部として、生成されたドキュメントがベースライン ファイルと比較されます。 この例では、サンプル会社 Litware, Inc. に必要な ER 構成を作成します。 この手順は、「システム管理者」または「電子レポート開発者」ロールが割り当てられているユーザーを対象としています。 これらのステップは、任意のデータ セットを使用することによって完了できます。
 
-この例の手順を完了するには、まず[コンフィギュレーションプロバイダーを作成し、それを有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md)にある手順を完了する必要があります。
+この例の手順を完了するには、まず、[コンフィギュレーション プロバイダーを作成し、それを有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) にある手順を完了する必要があります。
 
 1. **組織管理** \> **ワークスペース** \> **電子申告**の順に移動します。
-2. **ローカライズの構成**ページの **構成プロバイダー** セクションで、Litware, Inc. サンプル会社の構成 プロバイダーが一覧に表示されていること、および**アクティブ**とマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、[コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md)のステップに従います。
+2. **ローカライズの構成**ページの **構成プロバイダー** セクションで、Litware, Inc. サンプル会社の構成 プロバイダーが一覧に表示されていること、および**アクティブ**とマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、[コンフィギュレーション プロバイダーを作成し、それを有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) の手順に従います。
 
 ### <a name="configure-document-management-parameters"></a>ドキュメント管理パラメーターのコンフィギュレーション
 
@@ -68,7 +68,7 @@ ms.locfileid: "2181683"
 
 2. **ベースライン** フィールドの**添付ファイル** タブで、作成したドキュメント タイプを入力または選択します。
 
-    ![電子申告パラメーター ページの添付ファイルタブ](media/GER-BaselineSample-ERParameters.PNG "電子申告パラメーター ページの添付ファイルタブのスクリーンショット")
+    ![電子申告パラメーター ページの添付ファイルタブ](media/GER-BaselineSample-ERParameters.PNG "電子申告パラメーターのスクリーンショット")
 
 3. **保存**を選択して、**電子申告パラメーター** ページを閉じます。
 
@@ -93,7 +93,7 @@ ms.locfileid: "2181683"
 8. **ステータスの変更**を選択します。
 9. **完了**を選択し、**OK** を選択します。
 
-![構成ページ](media/GER-BaselineSample-ModelComplete.PNG " 構成ページのスクリーンショット")
+![構成ページ](media/GER-BaselineSample-ModelComplete.PNG "構成ページのスクリーンショット")
 
 ### <a name="add-a-new-er-format-configuration"></a>新しい ER 形式コンフィギュレーションを追加する
 
@@ -131,7 +131,7 @@ ms.locfileid: "2181683"
     2. **名前**フィールドに、**ID** と入力します。
     3. **OK** を選択します。
 
-    ![形式デザイナー ページ](media/GER-BaselineSample-FormatLayoutDesign.PNG "形式デザイナー ページのスクリーンショット")
+    ![形式デザイナーのページ](media/GER-BaselineSample-FormatLayoutDesign.PNG "形式デザイナー ページのスクリーンショット")
 
 8. **マッピング** タブで、**削除** を選択します。
 9. **ルートの追加**を選択します。
@@ -144,7 +144,7 @@ ms.locfileid: "2181683"
 11. ツリーで、**出力\\ドキュメント\\ID** を選択します。
 12. **バインド**を選択してから、**保存**を選択します。
 
-![形式デザイナー ページ](media/GER-BaselineSample-FormatMappingDesign.PNG "形式デザイナー ページのスクリーンショット")
+![形式デザイナーのページ](media/GER-BaselineSample-FormatMappingDesign.PNG "形式デザイナー ページのスクリーンショット")
 
 デザインされた構造に基づいて、構成された形式が XML ファイルを生成します。 この XML には、ユーザーが ER ランタイム ダイアログ ボックスに入力した値に設定された **ID** 属性を持つ**ルート**要素が含まれています。
 
@@ -154,7 +154,7 @@ ms.locfileid: "2181683"
 2. **ID を入力**フィールドで、**1** と入力します。
 3. **OK** を選択します。
 
-    ![電子レポート パラメーター ダイアログ ボックス](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG " 電子レポート パラメーター ダイアログ ボックスのスクリーンショット")
+    ![電子申告パラメーター ダイアログ ボックス](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "電子レポート パラメーター ダイアログ ボックスのスクリーンショット")
 
 4. 生成された **out.Admin.xml** ファイルのローカル コピーを保存して、後でこの ER 形式のベースラインとして使用できるようにします。
 
@@ -243,4 +243,4 @@ ms.locfileid: "2181683"
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [ER フレームワークの構成](electronic-reporting-er-configure-parameters.md)
+- [電子申告 (ER) フレームワークの構成](electronic-reporting-er-configure-parameters.md)

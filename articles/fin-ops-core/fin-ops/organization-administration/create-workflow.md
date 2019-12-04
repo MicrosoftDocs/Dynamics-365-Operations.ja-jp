@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2168b33c8495eab61ec0c8262b042cd16420031c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a643be553f3fcdfbe53f2024982a596e498830a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190100"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811299"
 ---
 # <a name="create-workflows-overview"></a>ワークフローの作成の概要
 
@@ -54,21 +54,21 @@ ms.locfileid: "2190100"
 
 1. どのワークフロー要素も選択されていないようにするため、キャンバスをクリックします。
 2. **プロパティ**をクリックして、ワークフローの**プロパティ**ページを開きます。
-3. [ワークフローのプロパティのコンフィギュレーション](configure-workflow-properties.md) トピックで示されている次の手順に従います。
+3. [ワークフロー プロパティのコンフィギュレーション](configure-workflow-properties.md) トピックで示されている次の手順に従います。
 
 ## <a name="configure-the-elements-of-the-workflow"></a>ワークフローの要素のコンフィギュレーション
 
 キャンバスにドラッグした各要素をコンフィギュレーションします。 各ワークフロー要素をコンフィギュレーションする方法については、次のトピックを参照してください。
 
-- [手動タスクのコンフィギュレーション](configure-manual-task-workflow.md)
-- [自動化タスクのコンフィギュレーション](configure-automated-task-workflow.md)
-- [承認プロセスのコンフィギュレーション](configure-approval-process-workflow.md)
-- [承認ステップのコンフィギュレーション](configure-approval-step-workflow.md)
-- [手動決定のコンフィギュレーション](configure-manual-decision-workflow.md)
-- [条件付き意思決定のコンフィギュレーション](configure-conditional-decision-workflow.md)
-- [並列活動のコンフィギュレーション](configure-parallel-activity-workflow.md)
+- [ワークフローでの手動タスクのコンフィギュレーション](configure-manual-task-workflow.md)
+- [ワークフローでの自動化タスクのコンフィギュレーション](configure-automated-task-workflow.md)
+- [ワークフローでの承認プロセスのコンフィギュレーション](configure-approval-process-workflow.md)
+- [ワークフローでの承認ステップのコンフィギュレーション](configure-approval-step-workflow.md)
+- [ワークフローでの手動決定のコンフィギュレーション](configure-manual-decision-workflow.md)
+- [ワークフローでの条件付き意思決定のコンフィギュレーション](configure-conditional-decision-workflow.md)
+- [ワークフロー内の並列分岐のコンフィギュレーション](configure-parallel-activity-workflow.md)
 - [並列分岐のコンフィギュレーション](configure-parallel-branch-workflow.md)
-- [行項目ワークフローのコンフィギュレーション](configure-line-item-workflow.md)
+- [品目ワークフローのコンフィギュレーション](configure-line-item-workflow.md)
 
 ## <a name="resolve-any-errors-or-warnings"></a>エラーまたは警告の解決
 

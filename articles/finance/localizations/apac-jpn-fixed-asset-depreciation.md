@@ -17,12 +17,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 897227046eb2707a188d7f220d9c7c829485bd3c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b3067b63961e525b376ddfaf9260b86289ba22b6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183757"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772883"
 ---
 # <a name="fixed-asset-depreciation-for-japan-faq"></a>日本の固定資産減価償却のよく寄せられる質問
 
@@ -138,7 +138,7 @@ ms.locfileid: "2183757"
 
 インポートする減価償却率スケジュールは、固定資産に使用する減価償却方法のタイプによって異なります。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 - [均等償却を使用した一括比例配分減価償却資産の作成](./tasks/create-lump-sum-depreciation-assets-equally-divided-method.md)
 - [帳簿の資産耐用年数期間中の減価償却方法の変更](./tasks/change-depreciation-method-during-asset-life-book.md)
@@ -148,7 +148,7 @@ ms.locfileid: "2183757"
 - [割増償却を使用する固定資産の作成](./tasks/create-fixed-asset-additional-depreciation.md)
 - [特別償却プロファイルのある固定資産の作成](./tasks/create-fixed-asset-special-depreciation-profile.md)
 - [増加償却ドキュメントの作成および使用状況データの入力](./tasks/create-accelerated-depreciation-document-enter-usage-data.md)
-- [増加償却プロファイルの作成および帳簿への割り当て](./tasks/create-accelerated-depreciation-profile-assign-it-book.md)
+- [加速減価償却プロファイルを作成し、帳簿に割り当てる](./tasks/create-accelerated-depreciation-profile-assign-it-book.md)
 - [資産のアイドル期間の定義および減価償却プロセスの検証](./tasks/define-asset-idle-period-validate-depreciation-process.md)
 - [償却率表の入力および減価償却プロファイルへの関連付け](./tasks/enter-depreciation-rate-schedule.md)
 - [償却超過額/償却不足額の定期決済](./tasks/periodic-settlement-over-under-depreciation.md)

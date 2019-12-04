@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 76c62f3a503ff2a8c93143390fc91ef81fbf7d0f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: b44fc116f1dcaa1275b2262487ef9114bce639c6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250464"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773857"
 ---
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>プロジェクト契約およびプロジェクトを Project Service Automation から Finance and Operations に直接同期します
 
@@ -42,11 +42,11 @@ Project Service Automation の Finance への統合ソリューションは、�
 
 次の図は、データが Project Service Automation と Finance との間で同期される方法を示しています。
 
-[![Project Service Automation と Finance の統合のデータ フロー](./media/ProjectsAndContractsFlow.JPG)](./media/ProjectsAndContractsFlow.JPG)
+[![Project Service Automation と Finance の統合のデータ フロー](./media/ProjectsAndContractsFlow_upd.JPG)](./media/ProjectsAndContractsFlow.JPG)
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
-使用可能なテンプレートにアクセスするには、Microsoft PowerApps の管理者センターで**プロジェクト**を選択、次に右上隅にある**新規プロジェクト**を選択しパブリック テンプレートを選択します。
+使用可能なテンプレートにアクセスするには、Microsoft Power Apps の管理者センターで**プロジェクト**を選択、次に右上隅にある**新規プロジェクト**を選択しパブリック テンプレートを選択します。
 
 次のテンプレートおよび基本的なタスクは Project Service Automation から Finance へプロジェクト契約とプロジェクトを同期させるために使用されます。
 

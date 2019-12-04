@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f1320d0adaad783f856ed6404039e7954920340
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c3370db28f551b5ce4a9b49342cb0c0b2f3945c0
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187340"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769503"
 ---
 # <a name="depreciation-methods-and-conventions"></a>減価償却方法
 
@@ -71,7 +71,7 @@ ms.locfileid: "2187340"
 
 [耐用年数定額減価償却](Straight-line-service-life-depreciation.md)
 
-[減価償却費残高の削減](reduce-balance-depreciation.md)
+[逓減残高による減価償却](reduce-balance-depreciation.md)
 
 [手動減価償却](manual-depreciation.md)
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: fa2772db63332319c399999bd5f747b2ac729d9e
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: fb5073fe8db0b51c4ea378cac57097e15e88bf83
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653278"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814055"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>売上請求書のヘッダーおよび明細行の Finance and Operations から Sales への直接同期
 
@@ -40,7 +40,7 @@ ms.locfileid: "2653278"
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
-利用可能なテンプレートにアクセスするには、[PowerApps 管理者センター](https://preview.admin.powerapps.com/dataintegration) を開きます。 **プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
+利用可能なテンプレートにアクセスするには、[Power Apps 管理者センター](https://preview.admin.powerapps.com/dataintegration)を開きます。 **プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
 
 Supply Chain Management から Sales への販売請求書ヘッダーと明細行の同期には、以下のテンプレートと基本的なタスクが使用されます。
 
@@ -137,4 +137,4 @@ Supply Chain Management から Sales への販売請求書ヘッダーと明細�
 
 [Supply Chain Management の連絡先または顧客への Sales の連絡先の直接同期](contacts-template-mapping-direct.md)
 
-[販売注文のヘッダーおよび明細行の Supply Chain Management から Sales への直接同期](sales-order-template-mapping-direct-two-ways.md)
+[販売注文の Sales と Supply Chain Management の間の直接同期](sales-order-template-mapping-direct-two-ways.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 2bb5dd5e29559807e40b66ad7f9c061bf510ed67
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba0d11efe868d57c74f6ae4b069d1cb8351f7213
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026144"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773060"
 ---
 # <a name="provision-talent"></a>Talent のプロビジョニング
 
@@ -49,12 +49,12 @@ LCS プロジェクトを作成した後は、環境に Talent をプロビジ�
 1. LCS プロジェクトでは、**Talent アプリの管理** タイルを選択します。
 2. これが人材のサンドボックスまたは実稼働インスタンスであるかどうかを示します。 初期のプレビュー機能をサンドボックス インスタンスで使用することにより、早期のフィードバックおよびテストを行うことができます。 
     > [!NOTE]
-    > Talent のインスタンス タイプは、PowerApps 管理センターで設定された PowerApps 環境のインスタンス タイプとは異なります。
+    > Talent のインスタンス タイプは、Power Apps 管理センターで設定された Microsoft Power Apps 環境のインスタンス タイプとは異なります。
 3. Talent テスト ドライブ エクスペリエンスで使用される同じデモ データのセットを環境に含める場合は、**デモ データを含む**オプションをオンにします。 これは長期的なデモまたはトレーニング環境に便利であり、稼動環境で使用されることはありません。  初期展開時にこのオプションを選択する必要があることに注意してください。 後で、既存の配置を更新することはできません。
-4. Talent は、Microsoft PowerApps の環境に常にプロビジョニングされていて、これにより PowerApps の統合および拡張機能が有効になります。 続行する前に、このトピックの「PowerApps 環境の選択」を参照してください。 まだ PowerApps 環境を持っていない場合は、LCS で環境の管理を選択するか、または PowerApps 管理センターに移動します。 次に、以下の手順に従って、[PowerApps 環境を作成します](https://docs.microsoft.com/powerapps/administrator/create-environment)。
+4. Talent は、Microsoft Power Apps の環境に常にプロビジョニングされていて、これにより Power Apps の統合および拡張機能が有効になります。 続行する前に、このトピックの「Power Apps 環境の選択」を参照してください。 まだ Power Apps 環境を持っていない場合は、LCS で環境の管理を選択するか、または Power Apps 管理センターに移動します。 次に、以下の手順に従って、[Power Apps 環境を作成します](https://docs.microsoft.com/powerapps/administrator/create-environment)。
 
     > [!NOTE]
-    > 既存の環境を表示、または新しい環境を作成するために、Talent をプロビジョニングするテナント管理者は PowerApps P2 ライセンスに割り当てられる必要があります。 組織に PowerApps P2 ライセンスがない場合、CSP または [PowerApps 価格ページ](https://powerapps.microsoft.com/pricing/) から入手することができます。
+    > 既存の環境を表示、または新しい環境を作成するために、Talent をプロビジョニングするテナント管理者は Power Apps P2 ライセンスに割り当てられる必要があります。 組織に Power Apps P2 ライセンスがない場合、CSP または [Power Apps 価格ページ](https://powerapps.microsoft.com/pricing/) から入手することができます。
 
 5. 人材を供給する環境を選択します。
 6. 使用条件に同意、および展開を開始するために **はい** を選択します。
@@ -68,19 +68,19 @@ LCS プロジェクトを作成した後は、環境に Talent をプロビジ�
 
     > Talent 定期売買の一部として 2 つの LCS 環境のみが許可されるため、60 日間無料 [Talent 試用環境](https://dynamics.microsoft.com/talent/overview/) の活用を考慮するかもしれません。 試用環境は要求したユーザーにより所有されていますが、Core HR のシステム管理経験を通じて他のユーザーも招待できます。 試用環境には、安全にプログラムを活用するために使用する架空のデータが含まれます。 これらは実稼動環境として使用するものではありません。 試用環境が 60 日後に期限が切れると、その中にあるすべてのデータが削除され復元できないことに注意してください。 既存の環境の期限が切れた後、新しい試用環境に登録することができます。
 
-## <a name="select-a-powerapps-environment"></a>PowerApps 環境の選択
+## <a name="select-a-power-apps-environment"></a>Power Apps 環境の選択
 
-Talent と PowerApps 環境との統合では、PowerApps ツールを使用して Talent データの使用を統合および拡張することができます。 PowerApps 環境の目的を理解することで、Talent を拡張するためのアプリを構築するために役立つだけでなく、Talent プロビジョニングするときに正しい環境を選択するのにも役立ちます。 環境スコープ、環境アクセス、および環境の作成および選択を含む、PowerApps 環境の詳細については、[PowerApps 環境の発表](https://powerapps.microsoft.com/blog/powerapps-environments/) をご覧ください。 
+Talent と Power Apps 環境との統合では、Power Apps ツールを使用して Talent データの使用を統合および拡張することができます。 Power Apps 環境の目的を理解することで、Talent を拡張するためのアプリを構築するために役立つだけでなく、Talent プロビジョニングするときに正しい環境を選択するのにも役立ちます。 環境スコープ、環境アクセス、および環境の作成および選択を含む、Power Apps 環境の詳細については、[Power Apps 環境の発表](https://powerapps.microsoft.com/blog/powerapps-environments/) をご覧ください。 
 
-Talent を配置する PowerApps 環境を決定する際には、次のガイダンスを参考にしてください。 
+Talent を配置する Power Apps 環境を決定する際には、次のガイダンスを参考にしてください。 
 
-1. LCS で**環境の管理**を選択するか、または PowerApps 管理者センターに直接移動して、既存の環境を表示および新しい環境を作成できます。
-2. 1 つの Talent 環境は、1 つの PowerApps 環境にマップされます。
-3. PowerApps 環境には、対応する PowerApps、フロー、および Common Data Service アプリケーションと共に、Talent アプリケーションが含まれています。 PowerApps 環境を削除すると、その中のアプリも削除されます。 Talent 環境をプロビジョニングする場合、**試用版**または**製品版**環境のいずれかをプロビジョニングできます。 環境の使用方法に基づいて環境のタイプを選択します。 
-4. サンドボックス、UAT、または生産などのデータの統合およびテスト戦略を考慮する必要があります。 PowerApps 環境にマッピングされている Talent 環境を後になって変更することは容易ではないため、配置へのさまざまな影響について考慮することをお勧めします。
-5. 次の PowerApps 環境は Talent に対しては使用できず、LCS 内の選択リストからもフィルター処理されます。
+1. LCS で**環境の管理**を選択するか、または Power Apps 管理者センターに直接移動して、既存の環境を表示および新しい環境を作成できます。
+2. 1 つの Talent 環境は、1 つの Power Apps 環境にマップされます。
+3. Power Apps 環境には、対応する Power Apps、Power Automate、および Common Data Service アプリケーションと共に、Talent アプリケーションが含まれています。 Power Apps 環境を削除すると、その中のアプリも削除されます。 Talent 環境をプロビジョニングする場合、**試用版**または**製品版**環境のいずれかをプロビジョニングできます。 環境の使用方法に基づいて環境のタイプを選択します。 
+4. サンドボックス、UAT、または生産などのデータの統合およびテスト戦略を考慮する必要があります。 Power Apps 環境にマッピングされている Talent 環境を後になって変更することは容易ではないため、配置へのさまざまな影響について考慮することをお勧めします。
+5. 次の Power Apps 環境は Talent に対しては使用できず、LCS 内の選択リストからもフィルター処理されます。
  
-    - **既定の PowerApps 環境** - 各テナントは、既定の PowerApps 環境で自動的にプロビジョニングされますが、すべてのテナント ユーザーは PowerApps 環境にアクセスすることができ、PowerApps または Flow 統合を使用してテストや調査を行う際に意図せずに生産データが壊れる可能性があるため、Talent でそれらを使用することはお勧めしません。
+    - **既定の Power Apps 環境** - 各テナントは、既定の Power Apps 環境で自動的にプロビジョニングされますが、すべてのテナント ユーザーは Power Apps 環境にアクセスすることができ、Power Apps または Power Automate 統合を使用してテストや調査を行う際に意図せずに生産データが壊れる可能性があるため、Talent でそれらを使用することはお勧めしません。
    
     - **試用環境** - これらの環境は有効期限付きで作成され、その期間が経過すると有効期限切れになり、環境およびその中に含まれるすべての Talent インスタンスは自動的に削除されます。
    

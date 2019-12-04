@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 266c594fda1609e4efdc8cdcd79767d94b755187
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 566b1ecef3f9e540c651fe214accadcf32f4fbed
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188536"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772056"
 ---
 # <a name="consolidation-and-elimination-overview"></a>連結と削除の概要
 
@@ -87,6 +87,6 @@ ms.locfileid: "2188536"
 **会社の残高のエクスポート**オプションを使用して、1 つのインスタンスからエクスポートし、次に他のインスタンスで**インポートして連結**オプションを使用してデータを連結できます。
 
 
-詳細については、「[連結会社の通貨再評価](../general-ledger/currency-revaluation-consolidation-company.md)」を参照してください。
+詳細については、[連結会社の通貨再評価](../general-ledger/currency-revaluation-consolidation-company.md)を参照してください。
 
 

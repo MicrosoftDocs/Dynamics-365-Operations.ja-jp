@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 956af80a8ab2f454d9f523d3c74dda754ef0f793
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 7f0cc1c7ec1234b7eedaade0ffadb66965ed2121
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009379"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772991"
 ---
 # <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a>Microsoft Dynamics 365 アプリ (Common Data Service 1.0) で Talent が表示されない
 
@@ -34,9 +34,9 @@ ms.locfileid: "2009379"
 
 **解像度**
 
-ユーザーは、Microsoft PowerApps の環境の、環境メーカー ロールに追加される必要があります。
+ユーザーは、Microsoft Power Apps の環境の、環境メーカー ロールに追加される必要があります。
 
-1. PowerApps プラン 2 ライセンスを持つ管理者ユーザーは、[PowerApps 管理ポータル](https://preview.admin.powerapps.com/) を開く必要があります。
+1. Power Apps プラン 2 ライセンスを持つ管理者ユーザーは、[Power Apps 管理ポータル](https://preview.admin.powerapps.com/) を開く必要があります。
 2. **環境**を選択してから、Talent の正しい環境を選択します。
 3. **セキュリティ**タブの、**環境ロール**タブで、**環境メーカー**を選択します。
 

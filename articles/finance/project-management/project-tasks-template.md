@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 977037f0e2b313ebf05a3e1616d34567f82e82d7
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ba475721b69e7c75dfd2197597b54050a3598d37
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250395"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770269"
 ---
 # <a name="synchronize-project-tasks-directly-from-project-service-automation-to-finance-and-operations"></a>プロジェクトタスクを Project Service Automation から Finance and Operations に直接同期します
 
@@ -45,7 +45,7 @@ Project Service Automation の Finance への統合ソリューションは、�
 
 ## <a name="template-and-task"></a>テンプレートおよびタスク
 
-テンプレートにアクセスするには、Microsoft PowerApps の管理者センターで**プロジェクト**を選択、次に右上隅にある**新規プロジェクト**を選択しパブリック テンプレートを選択します。
+テンプレートにアクセスするには、Microsoft Power Apps の管理者センターで**プロジェクト**を選択、次に右上隅にある**新規プロジェクト**を選択しパブリック テンプレートを選択します。
 
 次のテンプレートおよび基本的なタスクは Project Service Automation から Finance プロジェクト タスクを同期させるために使用されます。
 

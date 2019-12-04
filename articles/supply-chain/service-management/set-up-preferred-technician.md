@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3175d7e604671901674975ee6fd1debd5955e8b1
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 43327b5c9077ab6cbde23fe069cccfc74a0edf88
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743144"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815022"
 ---
 # <a name="set-up-a-preferred-technician"></a>優先技術者の設定 
 
@@ -60,7 +60,7 @@ ms.locfileid: "1743144"
 
 ## <a name="see-also"></a>参照
 
-[サービス合意 ](service-agreements.md)
+[サービス契約の作成および締結の概要](service-agreements.md)
 
 [サービス注文の手動作成](create-service-orders-manually.md)
 

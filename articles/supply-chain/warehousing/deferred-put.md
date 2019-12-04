@@ -3,7 +3,7 @@ title: 倉庫作業の繰延処理
 description: このトピックでは、Dynamics 365 Supply Chain Management で倉庫作業の繰延処理を使用可能にする機能について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b67b3899a506c02b581d04f51691cb4408ee012e
+ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026929"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815791"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>倉庫作業の繰延処理
 
@@ -30,7 +30,6 @@ ms.locfileid: "2026929"
 [!include [banner](../includes/pivate-preview-banner.md)]
 
 このトピックでは、Dynamics 365 Supply Chain Management で倉庫作業の繰延処理を使用可能にする機能について説明します。
-
 
 繰延処理機能では、プット工程がバックグラウンドで処理されている間でも、倉庫作業者は他の作業を続行できます。 繰延処理では、多くの作業明細行を処理する必要があり、作業者がその作業を非同期に処理できるようにする場合に便利です。 また、サーバーの処理時間がアドホックまたは予定外で増加する場合、さらに増加した処理時間がユーザーの生産性に影響を与える可能性がある場合にも役立ちます。
 
@@ -50,6 +49,8 @@ ms.locfileid: "2026929"
 | 作業処理方法          | 作業明細行の処理に使用されるメソッド。 メソッドが**即時**に設定されている場合、動作は明細行の処理に作業処理ポリシーが使用されていない場合の動作に似ています。 メソッドが**繰延**に設定されている場合は、バッチ フレームワークを使用する繰延処理が使用されます。 |
 | 繰延処理のしきい値   | **0**(ゼロ) の値は、しきい値がないことを示します。 この場合、繰延処理を使用できる場合は、それが使用されます。 特定のしきい値の計算がしきい値を下回っている場合は、即時メソッドが使用されます。 それ以外の場合は、繰延メソッドが使用されます。 販売と移動に関連する作業では、しきい値は作業に対して処理されている関連したソース積荷明細行の数として計算されます。 補充作業では、しきい値は作業によって補充されている作業明細行の数として計算されます。 しきい値を設定することによって、たとえば販売に対する **5**、初期ソース積荷明細行が 5 未満の小さな作業は繰延処理を使用しませんが、大きな作業では使用されます。 しきい値は、作業処理メソッドが**繰延**に設定されている場合にのみ影響があります。 |
 | 遅延処理バッチ グループ |処理に使用されるバッチ グループ。 |
+
+繰延プット処理では、販売注文、移動オーダーの出庫、および補充の各作業指示タイプがサポートされます。
 
 ## <a name="assigning-the-work-creation-policy"></a>作業作成ポリシーの割り当て
 
@@ -99,7 +100,7 @@ ms.locfileid: "2026929"
 - 作業の手動完了が使用されます。
 - 作業は、自動完了を使用して完了します。
 - 監査テンプレートが使用されます。
-- 作業では、コンテナーを使用します。
+
 
 ## <a name="monitoring-the-deferred-processing-tasks-from-the-outbound-work-monitoring-workspace"></a>出庫作業監視ワークスペースからの繰延処理タスクの監視
 

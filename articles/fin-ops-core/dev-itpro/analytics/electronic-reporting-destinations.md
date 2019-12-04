@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5b52e1765d3afbe1730e96f58b601aebccd12787
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7154a6e8aff62b1ebf79edfecb1e1b99048f7c44
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181269"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771472"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -122,7 +122,7 @@ Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに
 
 ### <a name="power-bi-destination"></a>Power BI 出力先
 
-**有効**を**はい**に設定し、ER コンフィギュレーションを使用してインスタンスから Microsoft Power BI サービスへのデータ転送を調整します。 転送されたファイルは、その目的にコンフィギュレーションされている Microsoft SharePoint Server インスタンスに保存されます。 詳細については、[Finance からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md) を参照してください。
+**有効**を**はい**に設定し、ER コンフィギュレーションを使用してインスタンスから Microsoft Power BI サービスへのデータ転送を調整します。 転送されたファイルは、その目的にコンフィギュレーションされている Microsoft SharePoint Server インスタンスに保存されます。 詳細については、[データを Power BI にプルする電子申告 (ER) の構成](general-electronic-reporting-report-configuration-get-data-powerbi.md)を参照してください。
 
 > [!TIP]
 > 既定の動作を上書きする (つまり、構成のダイアログ ボックス) には、送信先の参照および主な出力コンポーネントのファイル保存先を作成し、すべての送信先を無効にします。
@@ -161,6 +161,6 @@ Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに
 
 前提条件では、電子申告の構成で利用可能な形式である必要があります。 自分の形式を持っている場合、**電子申告の送信先** ページを開き、この構成に新しい参照を作成します。 出力の各コンポーネントに 1 つずつ、4 つの出力先が必要です。 最初のファイルの出力先を作成し、**フォルダー** のように名前を付け、構成でフォルダーを表すファイル名を選択します。 それから **設定** をクリックし、すべての出力先が無効になっているかどうかを確認します。 このファイルの出力先にはフォルダーは作成されません。 既定では、ファイルと親フォルダーの階層構造の依存関係のため、ファイルは同じように動作します。 つまり、それらはどこにも送信されません。 既定動作を上書きするには、各ファイルに 1 つずつ、ファイルの出力先をさらに 3 つ作成する必要があります。 それぞれの出力先の設定では、ファイルが送信される出力先を有効にする必要があります。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[電子申告の概要](general-electronic-reporting.md)
+[電子申告 (ER) の概要](general-electronic-reporting.md)

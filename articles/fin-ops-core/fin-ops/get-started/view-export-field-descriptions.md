@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 974f99632738cfc6eec5ff85965f4e9f9608a8b5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3e110c7fe6881825fe2b075c1795bc4f7e938da4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178779"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811510"
 ---
 # <a name="view-and-export-field-descriptions"></a>フィールドの説明を表示およびエクスポートする
 
@@ -35,7 +35,7 @@ ms.locfileid: "2178779"
 
 すべてのページにフィールドの説明があるわけではありません。 より複雑なフィールドだけに説明を提供し、フィールドの使用が明確な場合は提供しません。 したがって、一部のページは、任意のフィールドの説明がない、一部のページには説明がある、多くのパラメーターのページなど複雑なページには多くの説明があります。
 
-開発環境に対するアクセス権を持つ場合、新しいフィールドの説明を追加して既存の説明をカスタマイズすることができます。 たとえば、フィールドの説明に会社固有の情報を追加できます。 詳細については、「[のフィールド ヘルプのカスタマイズ](../../dev-itpro/user-interface/customize-field-help.md)」を参照してください。
+開発環境に対するアクセス権を持つ場合、新しいフィールドの説明を追加して既存の説明をカスタマイズすることができます。 たとえば、フィールドの説明に会社固有の情報を追加できます。 詳細については、[フィールド説明のカスタマイズ](../../dev-itpro/user-interface/customize-field-help.md) を参照してください。
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>ユーザー インターフェイスのフィールドの説明を参照してください。
 
@@ -105,6 +105,6 @@ ms.locfileid: "2178779"
 
 ページを検索するさまざまな方法については、この記事の前半の「ページを検索」を参照してください。 ページの正確な名前を入力した場合、同じ名前のページが複数ある場合、フィールドの説明が表示されない場合があります。 **ページの選択** フィールド内の矢印をクリックして、使用できるページのフィルター処理されたリストを開きます。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[フィールド ヘルプのカスタマイズ](../../dev-itpro/user-interface/customize-field-help.md)
+[フィールドの説明のカスタマイズ](../../dev-itpro/user-interface/customize-field-help.md)

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88d52031f4c916f5ec3e970f38864977e69a9d9a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 91eb5f166633f5be0ad68c039d3e538e4060ea0b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546264"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815068"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>製品コンフィギュレーション モデルでの式の制約とテーブルの制約
 
@@ -245,12 +245,12 @@ ms.locfileid: "1546264"
 -   目標
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[製品コンフィギュレーション モデルへ式の制約の作成 (タスク ガイド)](tasks/add-expression-constraint-product-configuration-model.md)
+[式の制約の作成](tasks/add-expression-constraint-product-configuration-model.md)
 
-[製品コンフィギュレーション モデルへの計算の追加 (タスク ガイド)](tasks/add-calculation-product-configuration-model.md)
+[製品コンフィギュレーション モデルへの計算の追加](tasks/add-calculation-product-configuration-model.md)
 
 
 

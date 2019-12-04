@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef630ca56888eb61ab0519a29c89c3ccb2f24a87
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537835"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811675"
 ---
 # <a name="help-system"></a>ヘルプ システム
 
@@ -82,7 +82,7 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/](https://docs.mic
 
 タスク ガイドは、制御された、ガイド付きでインタラクティブな方法による、タスクまたは業務プロセスの手順の説明です。 [ヘルプ] ウィンドウからタスク ガイドを開く (再生する) ことができます。 最初にタスク ガイドをクリックすると、[ヘルプ] ウィンドウには、タスクのステップ バイ ステップの手順が表示されます。 ローカライズされたタスク ガイドが利用可能になりました。
 
-Microsoft は、2017 年 12 月までの Dynamics 365 for Finance and Operations のリリースのタスク ガイド ライブラリを出荷しました。 [ヘルプ ウィンドウからタスク ガイドへのアクセス](help-overview.md#accessing-task-guides-from-the-help-pane) セクションでは、製品の正しいタスク ガイドを検索する方法について説明します。
+Microsoft は、2017 年 12 月までの Dynamics 365 for Finance and Operations のリリースのタスク ガイド ライブラリを出荷しました。 [ヘルプ システム](help-overview.md#accessing-task-guides-from-the-help-pane) セクションでは、製品の正しいタスク ガイドを検索する方法について説明します。
 
 ![タスク ガイドの読み取りビュー](./media/task-guide-ops.png)
 
@@ -93,7 +93,7 @@ Microsoft は、2017 年 12 月までの Dynamics 365 for Finance and Operations
 > [!IMPORTANT]
 > タスク ガイドの再生時には、実際のデータを入力します。 実稼働環境である場合、データは現在使用している会社で入力されます。
 
-タスク レコーダーを使用して、独自のカスタム タスク ガイドを作成することができます。 詳細については、[タスク記録を使用したドキュメントやトレーニングの作成](../../dev-itpro/user-interface/task-recorder-training-docs.md) を参照してください。
+タスク レコーダーを使用して、独自のカスタム タスク ガイドを作成することができます。 詳細については、[タスク レコーダーを使用したドキュメントやトレーニングの作成](../../dev-itpro/user-interface/task-recorder-training-docs.md) を参照してください。
 
 ## <a name="in-product-help"></a>製品内ヘルプ
 
@@ -144,13 +144,12 @@ Microsoft は、2017 年 12 月までの Dynamics 365 for Finance and Operations
 
 カスタム タスク ガイドを作成することで、ユーザーへのヘルプを作成したり、自分の Web サイトをヘルプ ウィンドウに接続したりすることができます。 詳細については、以下を参照してください。
 
-- [ドキュメントやトレーニングとして使用するタスク記録の作成方法](../../dev-itpro/user-interface/task-recorder.md)。
+- [タスク レコーダー リソース](../../dev-itpro/user-interface/task-recorder.md)。
 - [カスタム ヘルプの作成 (ホワイトペーパー)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [タスク レコーダー](../../dev-itpro/user-interface/task-recorder.md)
-- [タスク記録を使用してドキュメントやトレーニングを作成](../../dev-itpro/user-interface/task-recorder.md)
+- [タスク レコーダー リソース](../../dev-itpro/user-interface/task-recorder.md)
 
 次の表に Web サイトの一覧を示します。 名前の横にアスタリスク (\*) のあるサイトには、サービス計画と関連付けられたアカウントでサインインする必要があります。
 

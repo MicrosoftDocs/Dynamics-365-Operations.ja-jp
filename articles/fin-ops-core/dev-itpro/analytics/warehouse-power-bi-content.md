@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c5d07cb9fbb32a2d9b8be11179dbba00ee73d28b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b5fbe5ffa74953588a2357948319f5cf21f7ad36
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184580"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769764"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>倉庫のパフォーマンス Power BI コンテンツ
 
@@ -78,7 +78,7 @@ ms.locfileid: "2184580"
 | 出荷パフォーマンス        | サイト / 倉庫別出荷              | サイトまたは倉庫別に期日前、期限内、または遅延出荷される割合。 |
 
 ## <a name="understanding-the-data-model-and-calculations"></a>データ モデルと計算の理解
-次のデータは、**倉庫パフォーマンス** Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、[エンティティ格納と Power BI の統合の概要](power-bi-integration-entity-store.md) を参照してください。
+次のデータは、**倉庫パフォーマンス** Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、[エンティティ格納と Power BI の統合](power-bi-integration-entity-store.md) を参照してください。
 
 以下のキー集計の測定は、コンテンツの基準として使用されます。
 

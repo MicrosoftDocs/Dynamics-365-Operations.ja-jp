@@ -1,5 +1,5 @@
 ---
-title: Attract でジョブ求人の作成、承認、および転記
+title: Attract での職務の作成
 description: このトピックでは、Attract でのジョブ求人の要素について説明します。 ジョブ求人を作成する方法についても説明します。
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: db725c230de5e3dfe971098249b280d9da47ae20
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9dcdbcea995285c879f91c0bff435103865cc10f
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551075"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832934"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Attract でジョブ求人の作成、承認、および投稿
+# <a name="create-a-job-in-attract"></a>Attract での職務の作成
 
 [!include [banner](includes/banner.md)]
 
@@ -49,7 +49,7 @@ Attract でのジョブ求人には、職務の詳細、採用チーム、採用
 > [!NOTE]
 > 職位管理は、 包括採用アドオンで使用できます。
 
-採用プロセスのオファー アクティビティでの設定に応じて、職位数は 1 つのオファーに対して 2 回使用できます。 詳細については、[採用プロセス](./activities-attract.md) を参照してください。
+採用プロセスのオファー アクティビティでの設定に応じて、職位数は 1 つのオファーに対して 2 回使用できます。 詳細については、[採用プロセスの活動](./activities-attract.md)を参照してください。
 
 Attract には、既定の一連の**スキル**が含まれます。 これらのスキルは、入力する際の提案として表示されます。 フィールドに新しいスキル テキストを入力し、Enter キーを押して、スキルをさらに追加できます。
 
@@ -67,7 +67,7 @@ Attract には、既定の一連の**会社の業種**が含まれます。 フ�
 
 採用プロセスに関する既定の情報は、ジョブ求人が作成されたときに選択されたプロセス テンプレートに基づきます。 その時点で特定のテンプレートが選択されなかった場合には、既定のテンプレートが使用されます。 採用プロセスを定義する場合、候補者、応募、およびオファー ステージ以外のさまざまなステージを追加または削除できます。 候補者のステージを削除できませんが、無効にはできます。 各ステージ内では、1 つまたは複数の事前に定義された活動を追加または削除できます。
 
-採用プロセスに追加できる活動に関する詳細については、[Attract での採用プロセス活動](./activities-attract.md) を参照してください。
+採用プロセスに追加できる活動の詳細については、[採用プロセス活動](./activities-attract.md)を参照してください。
 
 > [!NOTE]
 > ジョブ求人が有効になった後は、採用のプロセスを更新できません。
@@ -76,7 +76,7 @@ Attract には、既定の一連の**会社の業種**が含まれます。 フ�
 
 ジョブ求人が有効になった後に、転記できます。 採用担当者と管理者だけが、ジョブ求人を転記できます。 ジョブ求人は、Talent Careers (Dynamics 365 Talent キャリア サイト) または LinkedIn のいずれかに転記できます。 Attract チームは、継続的にジョブ ボード アグリゲーターと提携していきます。 このリストは時間の経過に伴い展開されます。 ジョブが内部のみに転記される場合、候補者はジョブを表示および申請するための AAD アカウントが必要です。 ジョブが一般公開される場合、候補者はすべての認証オプションを使い、ジョブを表示および申請が可能です。 
 
-ジョブ求人の転記の詳細については、[Attractでキャリア サイト機能](career-site.md) を参照してください。
+ジョブ求人の転記の詳細については、[Microsoft Dynamics 365 Talent - Attract でのキャリア サイトの設定](career-site.md)を参照してください。
 
 > [!NOTE]
 > ジョブ求人の転記機能は、Attract の包括採用アドオンでのみ使用できます。
@@ -90,7 +90,7 @@ Attract には、既定の一連の**会社の業種**が含まれます。 フ�
 
 ## <a name="prospects-and-applicants"></a>候補者および申請者
 
-ジョブ求人に候補者を追加するオプションは、採用プロセスの [候補者活動](./activities-attract.md#prospect-activity) で設定されます。 ジョブ求人を有効にする前に、このオプションを設定する必要があります。 ジョブ求人が有効になった後、候補者および申請者を追加できます。
+ジョブ求人に候補者を追加するオプションは、採用プロセスの [採用プロセスの活動](./activities-attract.md#prospect-activity)で設定されます。 ジョブ求人を有効にする前に、このオプションを設定する必要があります。 ジョブ求人が有効になった後、候補者および申請者を追加できます。
 
 ## <a name="approvals"></a>承認
 

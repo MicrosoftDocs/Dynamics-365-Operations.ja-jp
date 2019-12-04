@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 2a5c3e49f09bf4f1f90449db10d439f563ecc2c0
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: cf1c4cbc18728b6094f862792d20a893b2a8d6ea
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249845"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815275"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Microsoft Dynamics 365 Field Service との統合の概要
 
@@ -41,9 +41,9 @@ Field Service および Supply Chain Management の統合の第 1 のフェー�
 
 Field Service および Supply Chain Management 統合の第 1 のフェーズは、次の項目の同期を有効にします。
 
-- [製品タイプ情報を含む Field Service の製品への Supply Chain Management の製品](field-service-product.md)
-- [Field Service のワーク オーダーから Supply Chain Management の販売注文](field-service-work-order.md)
-- [Field Service の請求書から Supply Chain Management の自由書式の請求書](field-service-invoice.md)
+- [Supply Chain Management の製品と Field Service の製品との同期](field-service-product.md)
+- [Field Service のワーク オーダーと Supply Chain Management の販売注文との同期](field-service-work-order.md)
+- [Field Service の契約の請求書と Supply Chain Management の自由書式の請求書との同期](field-service-invoice.md)
 
 Field Service および Supply Chain Management 間のワーク オーダーを同期する方法の例を表示するには、短い YouTube ビデオ [ワーク オーダーを Microsoft Dynamics 365 の統合に同期する方法](https://www.youtube.com/watch?v=46ylO7raZAo) をご覧ください。
 

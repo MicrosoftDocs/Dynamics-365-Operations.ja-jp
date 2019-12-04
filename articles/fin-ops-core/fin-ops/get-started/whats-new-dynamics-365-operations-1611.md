@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4b0397b7120769969c4c7aae16dd2a2b3ec97371
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 03e7fcc2041363f9ddee8fdda9c4ea30bf89a9cb
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627591"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812477"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) の新機能および変更された機能
 
@@ -943,6 +943,6 @@ ms.locfileid: "2627591"
 </tbody>
 </table>
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[新機能および変更された機能](whats-new-changed.md)
+[Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)

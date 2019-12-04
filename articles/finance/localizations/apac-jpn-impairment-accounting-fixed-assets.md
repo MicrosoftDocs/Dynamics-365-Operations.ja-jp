@@ -17,12 +17,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e730804b2b31cbdadeeb05a0e48e2daa2b8a92f8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: aec3abb8a4d9d8156c2b2fdd6c1085b3a92acd5e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183755"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772879"
 ---
 # <a name="impairment-accounting-for-fixed-assets-for-japan"></a>日本の固定資産の減損会計
 
@@ -63,8 +63,8 @@ ms.locfileid: "2183755"
 -   固定資産減損トランザクション レポート
 -   減損損失レポートのための固定資産の確認
 
-## <a name="additional-resources"></a>その他のリソース
-- [キャッシュ生成単位の固定資産の減損会計](apac-jpn-impairment-accounting-cash-generating-unit.md)
+## <a name="additional-resources"></a>追加リソース
+- [日本のキャッシュ生成単位の固定資産減損会計](apac-jpn-impairment-accounting-cash-generating-unit.md)
 - [個別資産の減損インジケーターの管理](./tasks/maintain-impairment-indicators-individual-assets.md)
 - [バッチごとの減損損失の提案と転記](./tasks/propose-post-impairment-amount-batch.md)
 - [固定資産仕訳帳を使用した減損損失の提案と転記](./tasks/propose-post-impairment-amount-fixed-asset-journal.md)

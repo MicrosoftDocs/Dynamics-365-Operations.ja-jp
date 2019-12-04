@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc1e1eb9d8ede1d07a873ca98a1c385cf0126c3f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5985042567a29f5a9cac38912cbf9c3c0eb9c8bd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557527"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814470"
 ---
 # <a name="nonconformance-management"></a>不適合管理
 
@@ -46,11 +46,11 @@ ms.locfileid: "1557527"
 6.  不適合に割り当てられる、関連する工程を定義します。 **工程**ページを使用して、承認済の不適合に対して実行される作業の分類を定義します。 関連する工程を不適合に割り当てるときに、関連する材料、労働時間、雑費など、その工程を実行するために必要な条件についての詳細情報を指定することもできます。 この情報は、工程の見積原価を計算するのに使用されます。 詳細情報および見積原価は、参考目的で提供されます。 品質に関連する工程は、生産工順に対して定義できる工程とは異なります。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[不適合 (タスク ガイド) を作成して処理する](tasks/create-process-non-conformance.md)
+[不適合の作成および処理](tasks/create-process-non-conformance.md)
 
 [品質管理プロセス](quality-management-processes.md)
 
-[不適合管理の前提条件の確認 (タスク ガイド)](tasks/set-up-prerequisites-nonconformance-management.md)
+[不適合管理の前提条件を設定する](tasks/set-up-prerequisites-nonconformance-management.md)

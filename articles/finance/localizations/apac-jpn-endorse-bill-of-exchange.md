@@ -17,12 +17,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33bb0bfe2c350d8f9a32f3daab29c734f8f62785
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e3b58c7f09ba4ed6cc5869fa691c02b8a0b55d56
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183758"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772884"
 ---
 # <a name="pay-a-vendor-by-endorsing-a-bill-of-exchange-for-japan"></a>日本での受取手形の裏書による仕入先への支払
 
@@ -47,6 +47,6 @@ BOE の状態が**裏書済**の場合、裏書引当を行うことができま
 ## <a name="additional-resources"></a>その他のリソース
 - [顧客の受取手形の裏書による仕入先トランザクションの支払](./tasks/pay-vendor-transaction.md)
 - [裏書済受取手形の取消](./tasks/reverse-endorsed-bill-exchange.md)
-- [顧客受取手形の裏書による日本の支払の設定](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
+- [顧客の為替手形の裏書きによって日本の支払を設定します](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
 - [裏書済受取手形の決済](./tasks/settle-endorsed-bill-exchange.md)
 

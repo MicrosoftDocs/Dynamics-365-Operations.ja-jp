@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13744df950040056ba03a3847d84f93e266ea6c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181453"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771309"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>PDF テンプレートに入力する ER コンフィギュレーションのデザイン
 
@@ -300,5 +300,5 @@ ms.locfileid: "2181453"
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [ER は、OPENXML 形式でレポートを生成するコンフィギュレーションを設計する](tasks/er-design-reports-openxml-2016-11.md)
-- [Microsoft WORD 形式でレポートを生成するための ER コンフィギュレーションのデザイン](tasks/er-design-configuration-word-2016-11.md)
+- [OPENXML 形式でレポートを生成する ER コンフィギュレーションを設計する (2016 年 11 月)](tasks/er-design-reports-openxml-2016-11.md)
+- [Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン](tasks/er-design-configuration-word-2016-11.md)

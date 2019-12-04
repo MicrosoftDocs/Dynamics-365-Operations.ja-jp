@@ -1,5 +1,5 @@
 ---
-title: LinkedIn に関するよく寄せられる質問との Attract 統合
+title: LinkedIn の統合に関するよく寄せられる質問
 description: このトピックは、LinkedIn と Microsoft Microsoft Dynamics 365 Talent - Attract 間の統合に関する質問に回答します。
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: b77ad598ba209dbbd73765c49947e84a3995153d
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 35428da709f480e1d3842b7e92deacba200326ee
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550370"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833095"
 ---
-# <a name="attract-integration-with-linkedin-faq"></a>LinkedIn に関するよく寄せられる質問との Attract 統合
+# <a name="linkedin-integration-faq"></a>LinkedIn の統合に関するよく寄せられる質問
 
 [!include [banner](includes/banner.md)]
 
@@ -41,8 +41,8 @@ LinkedIn は、世界最大規模のオンライン プロフェッショナル 
 LinkedIn との Attract 統合により、次のタスクを実行できます。
 
 - [LinkedIn にジョブを転記](./attract-post-jobs-to-linkedin.md) (無料の制限付き一覧として)。
-- [LinkedIn から Attract へ応募者情報をエクスポート](./attract-linkedin-recruiter.md#export-linkedin-candidates-to-attract-with-one-click)。
-- [LinkedIn とのジョブを適用する職務候補者を許可](./attract-admin-linkedin.md#set-up-apply-with-linkedin-in-attract)。
+- [Microsoft Dynamics 365 Talent - Attract の LinkedIn Recruiter を使用した候補者のソーシング](./attract-linkedin-recruiter.md#export-linkedin-candidates-to-attract-with-one-click).
+- [Microsoft Dynamics 365 Talent - Attract の LinkedIn との統合の設定](./attract-admin-linkedin.md#set-up-apply-with-linkedin-in-attract).
 
 ### <a name="what-do-i-need-before-i-can-post-jobs-to-linkedin"></a>ジョブを LinkedIn に転記する前に何が必要ですか。
 
@@ -50,17 +50,17 @@ LinkedIn との Attract 統合により、次のタスクを実行できます�
 
 ### <a name="how-do-i-post-jobs-to-linkedin-from-attract"></a>Attract から LinkedIn へ、どのようにジョブを転記しますか。
 
-Attract にジョブを作成した後、LinkedIn に対応する**今すぐ転記**ボタンを選択するだけです。 詳細については、[Attract から LinkedIn にジョブを転記](./attract-post-jobs-to-linkedin.md#post-jobs-to-linkedin) を参照してください。
+Attract にジョブを作成した後、LinkedIn に対応する**今すぐ転記**ボタンを選択するだけです。 詳細については、[Microsoft Dynamics 365 Talent - Attract から LinkedIn にジョブを転記](./attract-post-jobs-to-linkedin.md#post-jobs-to-linkedin) を参照してください。
 
 ### <a name="can-i-get-candidate-information-from-linkedin-into-attract"></a>Linkedln から Attract に応募者情報を取得できますか。
 
-はい。 LinkedIn に良い候補者が表示された場合、Attract に応募者の情報を簡単にエクスポートすることができます。 詳細については、[LinkedIn Recruiter で候補者をソーシング](attract-linkedin-recruiter.md) を参照してください。
+はい。 LinkedIn に良い候補者が表示された場合、Attract に応募者の情報を簡単にエクスポートすることができます。 詳細については、[Microsoft Dynamics 365 Talent - Attract での、LinkedIn Recruiter を使用した候補者のソーシング](attract-linkedin-recruiter.md) を参照してください。
 
 ### <a name="how-can-i-get-help-accessing-linkedin-from-attract"></a>Attract から LinkedIn にアクセスする方法を教えてください。
 
-Attract から LinkedIn へのジョブをサイン インまたは転記に問題がある場合は、[LinkedIn で統合によるトラブルシューティング](./attract-troubleshoot-linkedin.md) を参照してください。
+サイン インまたは Attract から LinkedIn へのジョブ転記に問題がある場合は、[LinkedIn と Microsoft Dynamics 365 Talent - Attract の統合に関するトラブルシューティング](./attract-troubleshoot-linkedin.md) を参照してください。
 
-その他の問題については、[Talent のサポートを取得](./talent-support.md) を参照してください。 LinkedIn のヘルプについては、[Linkedln サポート ページ](https://www.linkedin.com/help) を参照してください。
+その他の問題については、[Microsoft Dynamics 365 Talent のサポートを取得](./talent-support.md) を参照してください。 LinkedIn のヘルプについては、[Linkedln サポート ページ](https://www.linkedin.com/help) を参照してください。
 
 ## <a name="for-admins-and-developers"></a>管理者および開発者向け
 
@@ -68,11 +68,11 @@ Attract から LinkedIn へのジョブをサイン インまたは転記に問�
 
 ### <a name="how-do-i-configure-attract-so-that-recruiters-and-hiring-managers-can-post-jobs-to-linkedin"></a>採用担当者および採用マネージャーが LinkedIn にジョブを転記できるようにするには、どのようにして Attract をコンフィギュレーションしますか。
 
-使用可能なオプションを、管理者センターの **LinkedIn 統合**タブでコンフィギュレーションできます。 詳細については、[LinkedIn との統合設定](./attract-admin-linkedin.md) を参照してください。
+使用可能なオプションを、管理者センターの **LinkedIn 統合**タブでコンフィギュレーションできます。 詳細については、[Microsoft Dynamics 365 Talent - Attract への LinkedIn の統合の設定](./attract-admin-linkedin.md) を参照してください。
 
 ### <a name="can-i-export-candidate-information-from-linkedin"></a>Linkedln から応募者情報をエクスポートできますか。
 
-はい、しかし LinkedIn Recruiter との統合を最初にコンフィギュレーションする必要があります。 詳細については、[LinkedIn との統合設定](./attract-admin-linkedin.md) を参照してください。
+はい、しかし LinkedIn Recruiter との統合を最初にコンフィギュレーションする必要があります。 詳細については、[Microsoft Dynamics 365 Talent - Attract への LinkedIn の統合の設定](./attract-admin-linkedin.md) を参照してください。
 
 ### <a name="how-can-i-post-jobs-to-premium-job-slots-on-linkedin"></a>LinkedIn のプレミアム ジョブ スロットにジョブを転記するにはどうすればよいですか。
 
@@ -103,17 +103,17 @@ LinkedIn は、1 日に 1 回 Attract からバッチでジョブ転記が行わ
 | **LinkedIn がどのくらいの頻度でジョブを転記しますか。** | 1 日 1 回 | 1 日 1 回 | API によって定義されているように 1 日に複数回 |
 | **LinkedIn で推奨されましたか。** | いいえ | はい | いいえ |
 | **何が必要ですか。** | Attract の購買 | LinkedIn との求人ラッピング契約とプレミアム ジョブ スロットの購入 | LinkedIn との API 契約 | 
-| **どこで詳細情報を得られますか。** | [LinkedIn との統合の設定](./attract-admin-linkedin.md) | [LinkedIn Recruiter から求人ラッピング - 概要](https://www.linkedin.com/help/recruiter/answer/79037) | [Recruiter System Connect](https://docs.microsoft.com/linkedin/talent/recruiter-system-connect) |
+| **どこで詳細情報を得られますか。** | [Microsoft Dynamics 365 Talent - Attract の LinkedIn との統合の設定](./attract-admin-linkedin.md) | [LinkedIn Recruiter から求人ラッピング - 概要](https://www.linkedin.com/help/recruiter/answer/79037) | [Recruiter System Connect](https://docs.microsoft.com/linkedin/talent/recruiter-system-connect) |
 
 > [!NOTE]
 > Attract でジョブを Linkedln に転記する LinkedIn Recruiter System Connect ライセンスは必要ありません。
 
 ## <a name="see-also"></a>参照
 
-[LinkedIn との統合の設定](./attract-admin-linkedin.md)
+[Microsoft Dynamics 365 Talent - Attract の LinkedIn との統合の設定](./attract-admin-linkedin.md)
 
-[Attract から LinkedIn への職務の投稿](./attract-post-jobs-to-linkedin.md)
+[Microsoft Dynamics 365 Talent - Attract から LinkedIn への職務の投稿](./attract-post-jobs-to-linkedin.md)
 
-[LinkedIn Recruiter 候補者のソーシング](./attract-linkedin-recruiter.md)
+[Microsoft Dynamics 365 Talent - Attract の LinkedIn Recruiter を使用した候補者のソーシング](./attract-linkedin-recruiter.md)
 
-[LinkedIn との統合のトラブルシューティング](./attract-troubleshoot-linkedin.md)
+[LinkedIn と Microsoft Dynamics 365 Talent - Attract との統合のトラブルシューティング](./attract-troubleshoot-linkedin.md)

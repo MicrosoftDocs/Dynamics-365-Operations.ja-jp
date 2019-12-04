@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11b541c3e159b2c38e4dd2fa9f2ad08e4c1e4500
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 14b4410a0bd177159817cd5116a5a0d959992ad5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178749"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812412"
 ---
 # <a name="configure-parallel-activities-in-a-workflow"></a>ワークフローでの並列活動のコンフィギュレーション
 
@@ -53,4 +53,4 @@ ms.locfileid: "2178749"
     > [!NOTE]
     > 並列活動の分岐はすべて同時に実行されるため、分岐の順序は重要ではありません。
 
-3. 各分岐をコンフィギュレーションするには、[並列分岐のコンフィギュレーション](configure-parallel-branch-workflow.md)を参照してください。
+3. 各分岐をコンフィギュレーションするには、[ワークフロー内の並列分岐のコンフィギュレーション](configure-parallel-branch-workflow.md)を参照してください。

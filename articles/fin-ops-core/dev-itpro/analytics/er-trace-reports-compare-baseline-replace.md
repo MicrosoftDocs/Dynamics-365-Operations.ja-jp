@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 45c0e3b569ca733ae3b70187633d2e84db5ecd87
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578221"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771169"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>生成された ER レポートのトレース結果およびベースライン値との比較における改善
 
@@ -120,7 +120,7 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 
 15. **フォーミュラ デザイナー** ページを閉じて、**保存**を選択します。
 
-    ![形式デザイナー ページ](media/GER-BaselineSample-FormatMappingDesign2.PNG "形式デザイナー ページのスクリーンショット")
+    ![形式デザイナーのページ](media/GER-BaselineSample-FormatMappingDesign2.PNG "形式デザイナー ページのスクリーンショット")
 
 16. **形式デザイナー** ページを閉じます。
 
@@ -207,4 +207,4 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 ## <a name="additional-resources"></a>追加リソース
 
 - [生成されたレポート結果を追跡し、ベースライン値と比較する](er-trace-reports-compare-baseline.md)
-- [タスク レコーダー](../user-interface/task-recorder.md)
+- [タスク レコーダー リソース](../user-interface/task-recorder.md)
