@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba01f0d16341eb9b0ec0918798e458626b5ef90e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025056"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811196"
 ---
 # <a name="retail-peripherals"></a>小売周辺機器
 
@@ -35,11 +35,17 @@ ms.locfileid: "2025056"
 
 ### <a name="pos-registers"></a>POS レジスター
 
-ナビゲーション: **小売** &gt; **チャネル設定** &gt; **POS 設定** &gt; **レジスター** をクリックします。 販売時点管理 (POS) レジは、POS の特定のインスタンスの特性を定義するのに使用するエンティティです。 これらの特性には、レジスターで使用される小売周辺機器のハードウェア プロファイルまたはセットアップ、レジスターがマップされているストア、そのレジスターにログオンしているユーザーのビジュアル エクスペリエンスが含まれます。
+ナビゲーション: **小売** &gt; **チャネル設定** &gt; **POS 設定** &gt; **レジスター** をクリックします。 
+
+販売時点管理 (POS) レジは、POS の特定のインスタンスの特性を定義するのに使用するエンティティです。 これらの特性には、レジスターで使用される小売周辺機器のハードウェア プロファイルまたはセットアップ、レジスターがマップされているストア、そのレジスターにログオンしているユーザーのビジュアル エクスペリエンスが含まれます。
 
 ### <a name="devices"></a>デバイス
 
-ナビゲーション: **小売** &gt; **チャネル設定** &gt; **POS 設定** &gt; **デバイス** をクリックします。 デバイスとは、POS レジスターにマップされているデバイスの物理的なインスタンスを表すエンティティです。 デバイスが作成されると、POS レジスターにマップされます。 デバイス エンティティは、POS レジスターが有効化された時間、使用しているクライアントのタイプ、および特定のデバイスに配置されているアプリケーション パッケージに関する情報を追跡します。 デバイスは、次のアプリケーション タイプにマップすることができます: Retail Modern POS、Retail Cloud POS、Retail Modern POS – Windows Phone、Retail Modern POS – Android、および Retail Modern POS – iOS。
+ナビゲーション: **小売** &gt; **チャネル設定** &gt; **POS 設定** &gt; **デバイス** をクリックします。 
+
+デバイスとは、POS レジスターにマップされているデバイスの物理的なインスタンスを表すエンティティです。 デバイスが作成されると、POS レジスターにマップされます。 デバイス エンティティは、POS レジスターが有効化された時間、使用しているクライアントのタイプ、および特定のデバイスに配置されているアプリケーション パッケージに関する情報を追跡します。 
+
+デバイスは、次のアプリケーション タイプにマップすることができます: Retail Modern POS、Retail Cloud POS、Retail Modern POS – Windows Phone、Retail Modern POS – Android、および Retail Modern POS – iOS。
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -63,11 +69,15 @@ POS 周辺機器は、POS 機能用に明示的にサポートされているデ
 
 ### <a name="hardware-station"></a>Hardware Station
 
-ナビゲーション: **小売** &gt; **チャネル** &gt; **小売店舗** &gt; **すべての小売店舗**をクリックします。 店舗を選択して、**ハードウェア ステーション** クイック タブをクリックします。 **ハードウェア ステーション** 設定は、小売周辺機器ロジックを配置するインスタンスを定義するのに使用されるチャンネル レベルの設定です。 チャンネル レベルのこの設定は、ハードウェア ステーションの特性を決定するのに使用されます。 また、特定の店舗で Modern POS インスタンスに使用するハードウェア ステーションを一覧表示するために使用されます。 ハードウェア ステーションは、Windows 用 Modern POS プログラムに組み込まれています。 ハードウェア ステーションは、Microsoft インターネット インフォメーション サービス (IIS) のスタンドアロン プログラムとして別に配置することもできます。 この場合は、ネットワークからアクセスできます。
+ナビゲーション: **小売** &gt; **チャネル** &gt; **小売店舗** &gt; **すべての小売店舗**をクリックします。 
+
+店舗を選択して、**ハードウェア ステーション** クイック タブをクリックします。 **ハードウェア ステーション** 設定は、小売周辺機器ロジックを配置するインスタンスを定義するのに使用されるチャンネル レベルの設定です。 チャンネル レベルのこの設定は、ハードウェア ステーションの特性を決定するのに使用されます。 また、特定の店舗で Modern POS インスタンスに使用するハードウェア ステーションを一覧表示するために使用されます。 ハードウェア ステーションは、Windows 用 Modern POS プログラムに組み込まれています。 ハードウェア ステーションは、Microsoft インターネット インフォメーション サービス (IIS) のスタンドアロン プログラムとして別に配置することもできます。 この場合は、ネットワークからアクセスできます。
 
 ### <a name="hardware-profile"></a>ハードウェア プロファイル
 
-ナビゲーション: **小売** &gt; **チャネル設定** &gt; **POS 設定** &gt; **POS プロファイル** &gt; **ハードウェア プロファイル** をクリックします。 ハードウェア プロファイルは、POS レジスター用またはハードウェア ステーション用にコンフィギュレーションされているデバイスのリストです。 ハードウェア プロファイルは、POS レジスターまたはハードウェア ステーションに直接マップできます。
+ナビゲーション: **小売** &gt; **チャネル設定** &gt; **POS 設定** &gt; **POS プロファイル** &gt; **ハードウェア プロファイル** をクリックします。 
+
+ハードウェア プロファイルは、POS レジスター用またはハードウェア ステーション用にコンフィギュレーションされているデバイスのリストです。 ハードウェア プロファイルは、POS レジスターまたはハードウェア ステーションに直接マップできます。
 
 ## <a name="devices-classes"></a>デバイス クラス
 POS 周辺機器は、クラスに分けられています。 このセクションでは、Modern POS をサポートするデバイスの概要について説明します。
@@ -202,11 +212,11 @@ Modern POS は**専用**タイプのハードウェア ステーションを、�
 
 ### <a name="hardware-station-installation"></a>ハードウェア ステーションのインストール
 
-詳細については、 [Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
+詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Windows 用 Modern POS の設定とコンフィギュレーション
 
-詳細については、「[Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md)」を参照してください。
+詳細については、[Retail Modern POS (MPOS) の構成、インストール、有効化](retail-modern-pos-device-activation.md)を参照してください。
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS デバイスの設定とコンフィギュレーション
 
@@ -523,7 +533,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 
 ## <a name="configuration-for-supported-scenarios"></a>サポートされるシナリオのコンフィギュレーション
 
-ハードウェア プロファイルの作成方法の詳細については、[レジスターとハードウェア ステーションを含むチャネル クライアントの定義と管理](define-maintain-channel-clients-registers-hw-stations.md)を参照してください。
+ハードウェア プロファイルの作成方法の詳細については、[販売時点管理 (POS) への周辺機器の接続](define-maintain-channel-clients-registers-hw-stations.md) を参照してください。
 
 > [!NOTE]
 > Retail バージョン 1611 では、ハードウェア ステーションのプロファイルは使用されなくなりました。 これまでハードウェア ステーションのプロファイルで設定されていた属性は、ハードウェア ステーション自体の一部になりました。
@@ -567,7 +577,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 5. 店舗に新しいハードウェア プロファイルを同期させるため、**1090** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 6. 店舗に新しいハードウェア ステーションを同期させるため、**1040** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 7. ハードウェア ステーションをインストールします。 ハードウェア ステーションをインストールする方法の詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
-8. Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、「[Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md)」を参照してください。
+8. Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、[Retail Modern POS (MPOS) のコンフィギュレーション、インストールおよび有効化](retail-modern-pos-device-activation.md)を参照してください。
 9. Modern POS にサイン インするには、**非ドロワー操作の実行** を選択します。
 10. **ハードウェア ステーションの管理**操作を開始します。
 11. **管理** をクリックします。
@@ -596,7 +606,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 6. 店舗に新しいハードウェア プロファイルを同期させるため、**1090** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 7. 店舗に新しいハードウェア ステーションを同期させるため、**1040** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 8. 手順 2 と 3 で設定したハードウェア ステーションを、各ホスト コンピューターにインストールします。 ハードウェア ステーションをインストールする方法の詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
-9. Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、「[Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md)」を参照してください。
+9. Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、[Retail Modern POS (MPOS) のコンフィギュレーション、インストールおよび有効化](retail-modern-pos-device-activation.md)を参照してください。
 10. Modern POS にサイン インするには、**非ドロワー操作の実行** を選択します。
 11. **ハードウェア ステーションの管理**操作を開始します。
 12. **管理** をクリックします。
@@ -655,7 +665,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 
 ## <a name="peripheral-simulator"></a>周辺機器シミュレーター
 
-詳細については、[Retail 周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md) を参照してください。
+詳細については、[Retail の周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md) を参照してください。
 
 ## <a name="microsoft-tested-peripheral-devices"></a>マイクロソフトでテストされた周辺機器
 
@@ -894,6 +904,6 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
     5. 各 DLL ホストを選択し、**タスクの終了** をクリックします。
     6. DLL ホストが終了したら、Modern POS を再起動します。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 [小売の周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md)

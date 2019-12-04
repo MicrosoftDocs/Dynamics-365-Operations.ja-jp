@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c29adc87b9ef435b714a46ba1a96ef8226759b6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8fac49cde1a6098b99e6373bf9221d3357a053a2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550687"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814516"
 ---
 # <a name="system-defined-and-user-defined-table-constraints"></a>システム定義およびユーザー定義のテーブル制約
 
@@ -60,10 +60,10 @@ ms.locfileid: "1550687"
 
 テーブルの制約を製品コンフィギュレーション モデルで有効にするには、モデルのコンポーネントの 1 つの制約にテーブルの制約を含める必要があります。 手順としては、新しい制約を作成し、テーブルの制約タイプを選択し、それから使用するテーブルの制約定義を選択します。 最後に、テーブルの制約のすべてのフィールドを、製品コンフィギュレーション モデルの属性にマップする必要があります。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[製品コンフィギュレーション モデルの重要な概念](product-configuration-models.md)
+[製品コンフィギュレーション モデルの概要](product-configuration-models.md)
 
 
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 010d68b79300d15292dbcd4754eed8aac115cdce
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551452"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812836"
 ---
 # <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Dynamics 365 Talent - Onboard で他の投稿者とコンテンツを共有する
 
@@ -53,7 +53,7 @@ Microsoft Dynamics 365 Talent: Onboard では、研修用ガイドおよびテ�
 
 3. **受信者**で、受信者がテンプレートを変更できるようにする必要がある場合は、**これらのユーザーは編集できますか**オプションを**オン**に設定します。 テンプレートを共有したことを受信者に電子メールで通知する必要がある場合は、**電子メール通知を受信者に送信する**オプションを**オン**に設定します。
 
-    [!テンプレートのアクセスおよび電子メールの基本設定を設定する](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
+    [![テンプレートのアクセスと電子メールの基本設定の設定](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
 
 4. 名前または電子メール アドレスを入力し、ドロップダウン リストで目的の受信者を選択します。
 5. **アクセスの管理**タブで、受信者がテンプレートで実行できる操作を確認または変更できます。 受信者のアクセスを変更するには、受信者名の横にあるドロップダウン リストで、必要に応じて**表示可能**、**編集可能**、または**削除**を選択します。
@@ -68,6 +68,6 @@ Microsoft Dynamics 365 Talent: Onboard では、研修用ガイドおよびテ�
 ### <a name="see-also"></a>参照
 
 - [Onboard アプリを試すか購入する](https://dynamics.microsoft.com/talent/onboard/)
-- [新機能](./whats-new.md)
-- [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index)
-- [サポートの利用](./talent-support.md)
+- [Dynamics 365 Talent の新機能および変更された機能](./whats-new.md)
+- [リリース計画](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft Dynamics 365 Talent に関するサポートの利用](./talent-support.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a73f49064911a2b28c742cfc19469f4bf95e74
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: b77605070387871335c480e25cbe23af1155d6e8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569964"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812171"
 ---
 # <a name="asset-manufacturers-and-models"></a>資産メーカーとモデル
 
@@ -45,7 +45,7 @@ ms.locfileid: "2569964"
 8. **資産タイプ**フィールドで、メーカー モデルが関連する資産タイプを選択します。
 
     > [!NOTE]
-    > **資産タイプ**ルックアップで、資産タイプ、メーカー、およびモデルの関係を設定することもできます。 詳細については、[資産タイプの作成](../setup-for-objects/object-types.md)を参照してください。
+    > **資産タイプ**ルックアップで、資産タイプ、メーカー、およびモデルの関係を設定することもできます。 詳細については、[資産タイプ](../setup-for-objects/object-types.md)を参照してください。
 
     **詳細**クイック タブ、**モデル**フィールドには、選択した資産メーカーで設定されている資産モデルの数が表示されます。 **資産**フィールドには、選択したメーカーを使用している資産の数が表示されます。
     

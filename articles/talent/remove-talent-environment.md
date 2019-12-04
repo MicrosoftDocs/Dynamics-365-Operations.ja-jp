@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d608ee3ad90d23279557e5e9be4d398ffac3a266
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: bbc65a77b7c3df6545dfd7aa2109aba5c4e1b57b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010618"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773038"
 ---
 # <a name="remove-talent-environments"></a>Talent 環境の削除
 
@@ -34,7 +34,7 @@ ms.locfileid: "2010618"
 
 Talent テスト ドライブは、60 日間の有効期限ポリシーでプロビジョニングされます。 ただし、テスト ドライブ環境の所有者には、次の手順に従って早期にトライアルを終了するオプションがあります。 
 
-1. [PowerApps 管理センター](https://admin.businessplatform.microsoft.com/) に移動します。
+1. [Power Apps 管理センター](https://admin.businessplatform.microsoft.com/) に移動します。
 2. **環境**を選択します。
 3. テスト ドライブ環境を選択します。これには、次のような命名パターンがあります: TestDrive - alias@domain
 4. **削除**を選択し、決定内容を確認します。 
@@ -45,14 +45,14 @@ Talent テスト ドライブは、60 日間の有効期限ポリシーでプロ
 
 このトピックでは、Talent をクラウド ソリューション プロバイダー、またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 
 
-ひとつの Talent 環境がひとつの PowerApps 環境内に「含まれている」ため、2 つのオプションを考慮できます。 最初のオプションは、PowerApps 環境全体を削除することです。2 番目のオプションは、Talent のみを削除することです。 最初のオプションは、Talent をプロビジョニングする目的で特別に PowerApps 環境を作成し、実装を開始したばかりの場合、または既存の統合がない場合に優先されます。 2 つめのオプションは、PowerApps およびフローで活用されている豊富なデータが格納された PowerApps 環境が確立されている場合に適しています。
+ひとつの Talent 環境がひとつの Power Apps 環境内に「含まれている」ため、2 つのオプションを考慮できます。 最初のオプションは、Power Apps 環境全体を削除することです。2 番目のオプションは、Talent のみを削除することです。 最初のオプションは、Talent をプロビジョニングする目的で特別に Power Apps 環境を作成し、実装を開始したばかりの場合、または既存の統合がない場合に優先されます。 2 つめのオプションは、Power Apps および Power Automate で活用されている豊富なデータが格納された Power Apps 環境が確立されている場合に適しています。
 
 > [!Important]
-> PowerApps 環境を削除する前に、それが Talent のスコープ外の豊富なデータ統合に使用されていないことを確認してください。 また、既定の PowerApps 環境を削除することはできないので注意してください。 
+> Power Apps 環境を削除する前に、それが Talent のスコープ外の豊富なデータ統合に使用されていないことを確認してください。 また、既定の Power Apps 環境を削除することはできないので注意してください。 
 
-Talent や関連付けられたアプリ、およびフローを含む PowerApps 環境全体を削除するには:
+Talent や関連付けられたアプリ、およびフローを含む Power Apps 環境全体を削除するには:
 
-1. [PowerApps 管理センター](https://admin.businessplatform.microsoft.com/) に移動します。
+1. [Power Apps 管理センター](https://admin.businessplatform.microsoft.com/) に移動します。
 2. **環境**を選択します。
 3. 削除する環境を選択してください。
 4. **削除**を選択し、決定内容を確認します。 
@@ -63,7 +63,7 @@ Talent や関連付けられたアプリ、およびフローを含む PowerApps
 9. 削除するインスタンスを選択します。 
 10. **インスタンスの削除**を選択して決定内容を確認します。  
 
-既存の PowerApps 環境から Talent 環境を削除するには、以下の手順を実行します。 Talent DevOps チームのサポートおよび連絡を含む必要性が、LCS で直接この機能が有効になるまでの一時的なものであることに注意してください。
+既存の Power Apps 環境から Talent 環境を削除するには、以下の手順を実行します。 Talent DevOps チームのサポートおよび連絡を含む必要性が、LCS で直接この機能が有効になるまでの一時的なものであることに注意してください。
 
 1. サポートに連絡し、削除要求を開始してください。
 2. サポート チームはTalent DevOps チームの削除リクエストを開始します。 

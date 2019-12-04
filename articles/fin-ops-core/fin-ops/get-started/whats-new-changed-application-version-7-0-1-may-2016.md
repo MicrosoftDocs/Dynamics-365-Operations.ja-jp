@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4524eb14ff06561ad186cf63654e6a716632a3f4
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 715e0f8d08c6abbde35eb917cddc4ecf4b7b67ed
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627616"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811459"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Dynamics AX application version 7.0.1 (2016 年 5 月) の新機能および変更された機能
 
@@ -102,8 +102,8 @@ ms.locfileid: "2627616"
 </tbody>
 </table>
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[新機能および変更された機能](whats-new-changed.md)
+[Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
 
 [新規または更新されたタスク ガイド (2016年 5月)](new-updated-task-guides-available-may-2016.md)

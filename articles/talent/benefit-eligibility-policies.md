@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 55ba685e36878e57fa0496191fbd24a052c073f9
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b44287bf22f0b6c4e33a29b4b86aaae934505a43
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742868"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814700"
 ---
 # <a name="benefit-eligibility-policies"></a>給付金の適格性ポリシー
 
@@ -48,10 +48,10 @@ ms.locfileid: "1742868"
 
 ポリシー内のルールの範囲を定義します。 たとえば、**経営幹部**という名前の給付金の適格性ポリシー ルール タイプを作成する場合、そのポリシー内にどのようなルールがあるかを指定できます。 この例は、そのルールでは、「経営幹部」という言葉を含んだ肩書きがルールに含まれていることを示しています。 ルールのパラメーターまたはポリシーに含まれるルールを定義した後、給付金に特定のルールを割り当てることができます。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[給付金プログラムの定義および管理](manage-benefit-program.md)
+[福利厚生プログラムの定義および管理](manage-benefit-program.md)
 
 
 

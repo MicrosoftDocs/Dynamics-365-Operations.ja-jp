@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0734db6f777de2bcd6ea024c9255f589c155e44f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ec2874fb21184ccbf4f7039acf20db399e5cf5fb
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569825"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813342"
 ---
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>パンチアウト eProcurement の外部カタログの使用
 
@@ -41,7 +41,7 @@ ms.locfileid: "1569825"
 
 アクセス許可に応じて、要求者、購買組織、および受取作業単位を変更します。 それらの値の変更により、要求者に使用可能な外部カタログのリストが変わる可能性があります。 使用可能な外部カタログは、購買組織あるいは受取作業単位の現在有効な購買ポリシーによって異なります。 これらのポリシーは、特定の調達カテゴリへのアクセスを許可したり禁止したりすることができます。 したがって、これらの調達カテゴリにマップされている外部カタログのリストが影響を受ける可能性があります。
 
-ポリシーの詳細については、「[購買ポリシー](../procurement/purchase-policies.md)」を参照してください。
+ポリシーの詳細については、[購買ポリシーの概要](../procurement/purchase-policies.md) を参照してください。
 
 - 特定の調達カテゴリの外部カタログを検索するには、カタログ検索フィールドにテキストを入力します。
 - 仕入先の Web サイトで仕入先の外部カタログから製品を追加するには、その外部カタログをクリックします。 その後、製品をショッピング カートに追加し、チェックアウトします。ショッピング カート明細行が Microsoft Dynamics 365 に転送されます。

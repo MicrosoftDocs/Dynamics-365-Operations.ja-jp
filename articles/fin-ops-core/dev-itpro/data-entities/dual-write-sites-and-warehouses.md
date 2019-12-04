@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: 093f33e313bfb194ef932dffe9c9b5bcb84ae762
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 4cf402e2811aaf92ddfa78eaf6d8887d88d93cbc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569228"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770994"
 ---
 # <a name="integrated-sites-and-warehouses"></a>統合されたサイトおよび倉庫
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 このトピックでは、Finance and Operations と Common Data Service 間のサイトおよび倉庫データの統合について説明します。 運営サイトおよび倉庫は、Supply Chain Management における共通の概念です。 これらは会社のサプライ チェーンをモデル化するために使用されます。
 
@@ -38,119 +36,14 @@ ms.locfileid: "2569228"
 
 Common Data Service との統合により、これらの概念とすべての関連情報は、次の表のサイトおよび倉庫データ エンティティを使用する Common Data Service で使用可能です。
 
-Finance and Operations アプリ | その他の Dynamics 365 アプリ
---------------------------|---------------------------------
-サイト                     | msdyn_operationalsites
-倉庫                | 倉庫
+Finance and Operations アプリ | その他の Dynamics 365 アプリ | 説明
+--------------------------|---------------------------|---
+サイト | msdyn_operationalsites | 
+倉庫 | msdyn_warehouses | 
 
-[!include [banner](../includes/dual-write-symbols.md)]
+[!include [symbols](../includes/dual-write-symbols.md)]
 
-## <a name="operational-sites"></a>運営サイト
+[!include [operational sites](dual-write/InventOperationalSiteEntity-msdyn-operationalsite.md)]
 
-運営サイトは、次のマッピングを使用して Common Data Service で使用可能です。
+[!include [warehouses](dual-write/InventWarehouseEntity-msdyn-warehouse.md)]
 
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-SITENAME | >< | msdyn_name
-DEFAULTFINANCIALDIMENSIONVALUE | >< | msdyn_defaultfinancialdimensionvalue
-DEFAULTINVENTORYSTATUSID | >< | msdyn_defaultinventorystatusid
-ISRECEIVINGWAREHOUSEOVERRIDEALLOWED | >< | msdyn_isreceivingwarehouseoverrideallowed
-SITEID | >< | msdyn_siteid
-SITENAME | >< | msdyn_sitename
-TAXBRANCHCODE | >< | msdyn_taxbranchcode
-FISCALESTABLISHMENTID | >< | msdyn_fiscalestablishmentid
-ISPRIMARYADDRESSASSIGNED | >< | msdyn_isprimaryaddressassigned
-PRIMARYADDRESSCITY | >< | msdyn_primaryaddresscity
-PRIMARYADDRESSCOUNTRYREGIONID | >< | msdyn_primaryaddresscountryregionid
-PRIMARYADDRESSCOUNTYID | >< | msdyn_primaryaddresscountyid
-PRIMARYADDRESSDISTRICTNAME | >< | msdyn_primaryaddressdistrictname
-PRIMARYADDRESSLATITUDE | >< | msdyn_primaryaddresslatitude
-PRIMARYADDRESSLOCATIONROLES | >< | msdyn_primaryaddresslocationrole
-PRIMARYADDRESSLOCATIONSALESTAXGROUPCODE | >< | msdyn_primaryaddresslocationsalestaxgroupcode
-PRIMARYADDRESSLONGITUDE | >< | msdyn_primaryaddresslongitude
-PRIMARYADDRESSSTATEID | >< | msdyn_primaryaddressstateid
-PRIMARYADDRESSSTREET | >< | msdyn_primaryaddressstreet
-PRIMARYADDRESSZIPCODE | >< | msdyn_primaryaddresszipcode
-PRIMARYADDRESSBUILDINGCOMPLIMENT | >< | msdyn_primaryaddressbuildingcompliment
-PRIMARYADDRESSCITYINKANA | >< | msdyn_primaryaddresscityinkana
-PRIMARYADDRESSSTREETINKANA | >< | msdyn_primaryaddressstreetinkana
-PRIMARYADDRESSDESCRIPTION | >< | msdyn_primaryaddressdescription
-FORMATTEDPRIMARYADDRESS | >< | msdyn_formattedprimaryaddress
-WILLMASTERPLANNEDINTRASITEMOVEMENTSUSETRANSFERJOURNALS | >< | msdyn_masterplannedusestransferjournal
-PRIMARYADDRESSPOSTBOX | >< | msdyn_primaryaddresspostbox
-PRIMARYADDRESSSTREETNUMBER | >< | msdyn_primaryaddressstreetnumber
-
-
-## <a name="warehouses"></a>倉庫
-
-倉庫は、次のマッピングを使用して使用可能です。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-DEFAULTCONTAINERTYPEID | >> | msdyn_defaultcontainertypeid
-AREITEMSCOVERAGEPLANNEDMANUALLY | >> | msdyn_areitemscoverageplannedmanually
-ARELABORSTANDARDSALLOWED | >> | msdyn_arelaborstandardsallowed
-PRIMARYADDRESSBUILDINGCOMPLIMENT | >> | msdyn_primaryaddressbuildingcompliment
-PRIMARYADDRESSPOSTBOX | >> | msdyn_primaryaddresspostbox
-PRIMARYADDRESSSTREETNUMBER | >> | msdyn_primaryaddressstreetnumber
-AREWAREHOUSELOCATIONCHECKDIGITSUNIQUE | >> | msdyn_arewarehouselocationcheckdigitsunique
-INVENTORYCOUNTINGREASONCODEPOLICYNAME | >> | msdyn_inventorycountingreasoncodepolicyname
-AUTOUPDATESHIPMENTRULE | >> | msdyn_autoupdateshipmentrule
-WAREHOUSERELEASERESERVATIONREQUIREMENTRULE | >> | msdyn_warehousereleasereservationrequirement
-EXTERNALLYLOCATEDWAREHOUSEVENDORACCOUNTNUMBER | >> | msdyn_externallylocatedwarehousevendoraccountnu
-INVENTORYSTATUSCHANGERESERVATIONREMOVALLEVEL | >> | msdyn_inventorystatuschangereservationremoval
-WAREHOUSEWORKPROCESSINGPOLICYNAME | >> | msdyn_warehouseworkprocessingpolicyname
-ISFALLBACKWAREHOUSE | >> | msdyn_isfallbackwarehouse
-ISFINANCIALNEGATIVERETAILSTOREINVENTORYALLOWED | >> | msdyn_financialnegativestoreinventoryallowed
-ISPALLETMOVEMENTDURINGCYCLECOUNTINGALLOWED | >> | msdyn_palletmovementduringcyclecountingallowed
-ISPHYSICALNEGATIVERETAILSTOREINVENTORYALLOWED | >> | msdyn_physicalnegativestoreinventoryallowed
-ISREFILLEDFROMMAINWAREHOUSE | >> | msdyn_isrefilledfrommainwarehouse
-ISRETAILSTOREWAREHOUSE | >> | msdyn_isretailstorewarehouse
-MAINREFILLINGWAREHOUSEID | >> | msdyn_mainrefillingwarehouseid.msdyn_warehouseid
-MASTERPLANNINGWORKCALENDARDID | >> | msdyn_masterplanningworkcalendarid
-MAXIMUMBATCHPICKINGLISTQUANTITY | >> | msdyn_maximumbatchpickinglistquantity
-MAXIMUMPICKINGLISTLINEQUANTITY | >> | msdyn_maximumpickinglistlinequantity
-OPERATIONALSITEID | >> | msdyn_operationalsiteid.msdyn_siteid
-QUARANTINEWAREHOUSEID | >> | msdyn_quarantinewarehouseid.msdyn_warehouseid
-RETAILSTOREQUANTITYALLOCATIONREPLENISMENTRULEWEIGHT | > | msdyn_storeqtyallocationreplenishmentweight
-SHOULDWAREHOUSELOCATIONIDINCLUDEAISLEID | >> | msdyn_shouldwarehouselocationincludeaisleid
-TRANSITWAREHOUSEID | >> | msdyn_transitwarehouseid.msdyn_warehouseid
-WAREHOUSEID | >> | msdyn_warehouseid
-WAREHOUSELOCATIONIDBINIDFORMAT | >> | msdyn_warehouselocationidbinidformat
-WAREHOUSELOCATIONIDRACKIDFORMAT | >> | msdyn_warehouselocationidrackidformat
-WAREHOUSELOCATIONIDSHELFIDFORMAT | >> | msdyn_warehouselocationidshelfidformat
-WAREHOUSENAME | >> | msdyn_name
-WAREHOUSENAME | >> | msdyn_warehousename
-WAREHOUSESPECIFICDEFAULTINVENTORYSTATUSID | >> | msdyn_warehousespecificdefaultinventorystatusid
-WAREHOUSETYPE | >> | msdyn_warehousetype
-ISPRIMARYADDRESSASSIGNED | >> | msdyn_isprimaryaddressassigned
-PRIMARYADDRESSCITY | >> | msdyn_primaryaddresscity
-PRIMARYADDRESSCOUNTRYREGIONID | >> | msdyn_primaryaddresscountryregionid
-PRIMARYADDRESSCOUNTYID | >> | msdyn_primaryaddresscountyid
-PRIMARYADDRESSDISTRICTNAME | >> | msdyn_primaryaddressdistrictname
-PRIMARYADDRESSLATITUDE | >> | msdyn_primaryaddresslatitude
-PRIMARYADDRESSLONGITUDE | >> | msdyn_primaryaddresslongitude
-PRIMARYADDRESSLOCATIONROLES | >> | msdyn_primaryaddresslocationroles
-PRIMARYADDRESSLOCATIONSALESTAXGROUPCODE | >> | msdyn_primaryaddresslocationsalestaxgroupcode
-PRIMARYADDRESSSTATEID | >> | msdyn_primaryaddressstateid
-PRIMARYADDRESSSTREET | >> | msdyn_primaryaddressstreet
-PRIMARYADDRESSZIPCODE | >> | msdyn_primaryaddresszipcode
-EXTERNALLYLOCATEDWAREHOUSECUSTOMERACCOUNTNUMBER | >> | msdyn_externallylocatedwarehousecustomeraccount
-PRIMARYADDRESSCITYINKANA | >> | msdyn_primaryaddresscityinkana
-PRIMARYADDRESSSTREETINKANA | >> | msdyn_primaryaddressstreetinkana
-PRIMARYADDRESSDESCRIPTION | >> | msdyn_primaryaddressdescription
-AREADVANCEDWAREHOUSEMANAGEMENTPROCESSESENABLED | >> | msdyn_uesadvancedwarehousemanagementprocesses
-AREPICKINGLISTSDELIVERYMODESPECIFIC | >> | msdyn_arepickinglistsdeliverymodespecific
-AREPICKINGLISTSSHIPMENTSPECIFICONLY | >> | msdyn_arepickinglistshipmentspecificonly
-FORMATTEDPRIMARYADDRESS | >> | msdyn_formattedprimaryaddress
-ISBILLOFLADINGPRINTINGBEFORESHIPMENTCONFIRMATIONENABLED | >> | msdyn_printbillofladingbeforeshipconfirmation
-RAWMATERIALPICKINGINVENTORYISSUESTATUS | >> | msdyn_rawmaterialpickinginventoryissuestatus
-WILLAUTOMATICLOADRELEASERESERVEINVENTORY | >> | msdyn_willautomaticloadreleaseinventory
-WILLINVENTORYSTATUSCHANGEREMOVEBLOCKING | >> | msdyn_willinventorystatuschangeremoveblocking
-WILLMANUALLOADRELEASERESERVEINVENTORY | >> | msdyn_willmanualloadreleasereserveinventory
-WILLORDERRELEASINGCONSOLIDATESHIPMENTS | >> | msdyn_willorderreleasingconsolidateshipments
-WILLPRODUCTIONBOMSRESERVEWAREHOUSELEVELONLY | >> | msdyn_productionbomsreservewarehouselevel
-WILLSHIPPINGCANCELLATIONDECREMENTLOADQUANITY | >> | msdyn_shippingcanceldecrementloadquantity
-WILLWAREHOUSELOCATIONIDINCLUDEBINIDBYDEFAULT | >> | msdyn_warehouselocationidincludeblindid
-WILLWAREHOUSELOCATIONIDINCLUDERACKIDBYDEFAULT | >> | msdyn_warehouselocationincluderackidbydefault
-WILLWAREHOUSELOCATIONIDINCLUDESHELFIDBYDEFAULT | >> | msdyn_warehouselocationidincludeshelfid

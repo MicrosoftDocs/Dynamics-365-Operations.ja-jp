@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178613"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770692"
 ---
 # <a name="generate-consolidated-financial-statements"></a>連結財務諸表の生成
 
@@ -49,11 +49,11 @@ ms.locfileid: "2178613"
 
 また、必要な数のレベルを含む複数レベルのレポート ツリーを作成することもできます。 次の図は、世界中の地域ごとにロール アップのある複数レベル レポート ツリー定義を示します。
 
-![地域ごとのロールアップによる複数レベルのレポート ツリー](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "地域ごとのロールアップによる複数レベルのレポート ツリー")
+![地域ごとのロール アップによる複数レベルのレポート ツリー定義](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "地域ごとのロール アップによる複数レベルのレポート ツリー定義")
 
 次の図は、関数ごとのロール アップのある複数レベルのレポート ツリー定義を示します。
 
-![関数ごとのロールアップによる複数レベルのレポート ツリー](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "関数ごとのロールアップによる複数レベルのレポート ツリー")
+![関数ごとのロール アップによる複数レベルのレポート ツリー定義](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "関数ごとのロール アップによる複数レベルのレポート ツリー定義")
 
 ### <a name="viewing-companies-side-by-side"></a>会社を並べて表示
 多くの顧客は、会社が並べて表示されているレポートと、列に連結合計が表示されているレポートを使用します。 この形式は、レポート ツリーを作成した後で簡単に実現します。 連結財務諸表上で、会社を並べて表示する大まかな手順を示します。
@@ -69,7 +69,7 @@ ms.locfileid: "2178613"
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>法人から作成された組織構造を使用する連結
 分析コードまたは法人が含まれる組織階層では、動的に財務諸表でレポート ツリー定義が作成されます。 連結を簡素化する簡単な方法は、財務諸表でレポートに組織階層を追加することです。 報告日に基づいて、財務諸表は次の図に示すように、有効日前に組織階層を選択します。
 
-![レポート ツリー定義を動的に作成](./media/dynamically-create-reporting-tree-definitions.png "レポート ツリー定義を動的に作成")
+[![レポート ツリー定義を動的に作成](./media/dynamically-create-reporting-tree-definitions.png "レポート ツリー定義を動的に作成")]
 
 ## <a name="consolidations-that-involve-eliminations"></a>削除を含む連結
 削除トランザクションは、連結プロセスの共通パーツです。 この例では、連結時に 5 つのアカウントを削除します: 142600、211400、401420、401180、および 510820。 会社は、会社間勘定を別に設定できます。 たとえば、会社間トランザクションで勘定を使用している場合、最後の桁を 9 に設定する会社もあります。 その方法にかかわらず、会社間勘定を知っている場合は、連結された財務諸表に消去を表示することができます。
@@ -111,7 +111,7 @@ ms.locfileid: "2178613"
 
 次の図に示されているように、行定義での **IF THEN ELSE** ステートメントおよび列の制限は、財務諸表の少数株主持分を計算するために使用できます。
 
-![連結レポートの所有権を個別の行として表示](./media/Showing-ownership-separate-row-consolidated-report.png "連結レポートの所有権を個別の行として表示")
+![連結レポートに所有権を別の行として表示](./media/Showing-ownership-separate-row-consolidated-report.png "連結レポートに所有権を別の行として表示")
 
 ## <a name="multiple-charts-of-accounts-across-legal-entities"></a>法人間での複数の勘定科目表
 多くの場合、別の法人はさまざまな勘定科目表を持っていますが、引き続き連結財務諸表を作成します。 この場合、財務諸表を使用してデータを連結できるように、連結財務レポートを生成できます。 さまざまな勘定科目表が法人間で存在する場合に連結するための、高レベルの手順を示します。
@@ -221,6 +221,6 @@ ms.locfileid: "2178613"
 
 ## <a name="additional-resources"></a>その他のリソース
 
-連結および通貨換算の詳細については、このトピックの親トピック [財務連結および通貨換算](./financial-consolidations-currency-translation.md) を参照してください。
+連結および通貨換算の詳細については、このトピックの親トピック、[財務連結および通貨換算の概要](./financial-consolidations-currency-translation.md) を参照してください。
 
-オンライン連結の詳細を入力する方法については、[オンラインで連結](./consolidate-online.md)を参照してください。
+オンライン連結の詳細を入力する方法については、[オンライン財務連結](./consolidate-online.md) を参照してください。

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f7d98d7ab9b375bfeb8784596753ca956f96e36
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e9f185ac95371bb841e55184650b8089040676c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189732"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772263"
 ---
 # <a name="accounting-distributions"></a>勘定配布
 
@@ -55,6 +55,6 @@ ms.locfileid: "2189732"
 -   **配分の表示** – ドキュメントのすべての明細行と金額の勘定配布を表示します。 このビューでは、勘定配布は変更できません。
 
 
-詳細については、「[自由書式の請求書の勘定配布と補助元帳仕訳](accounting-distributions-subledger-journal-entries-vendor-invoices.md)」を参照してください。
+詳細については、[仕入先の請求書の勘定配布と補助元帳仕訳](accounting-distributions-subledger-journal-entries-vendor-invoices.md) を参照してください。
 
 

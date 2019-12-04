@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: efaa837ef39d8e0daf561fe385f22ed7b0acd305
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 8090fafc891d874c3f4fb646fe22a2b783ce37aa
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552039"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814838"
 ---
 # <a name="create-a-hiring-team-by-using-dynamics-365-talent---onboard"></a>Dynamics 365 Talent - Onboard を使用した採用チームの作成
 
@@ -72,6 +72,6 @@ Microsoft Dynamics 365 Talent: Onboard では、採用チームを作成でき�
 ### <a name="see-also"></a>参照
 
 - [Onboard アプリを試すか購入する](https://dynamics.microsoft.com/talent/onboard/)
-- [新機能](./whats-new.md)
-- [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index)
-- [サポートの利用](./talent-support.md)
+- [Dynamics 365 Talent の新機能および変更された機能](./whats-new.md)
+- [リリース計画](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft Dynamics 365 Talent に関するサポートの利用](./talent-support.md)

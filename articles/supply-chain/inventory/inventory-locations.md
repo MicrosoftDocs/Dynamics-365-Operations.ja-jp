@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 789272e1ee02c7f5dbab4e325cefe56425a3d1a7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ce1e33fab6704dd3387f0c2034a8a950a858b2e0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549958"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814309"
 ---
 # <a name="inventory-locations"></a>在庫場所
 
@@ -62,7 +62,7 @@ ms.locfileid: "1549958"
 
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[新しい倉庫レイアウトの作成 (タスク ガイド)](tasks/create-new-warehouse-layout.md)
+[新しい倉庫レイアウトの作成](tasks/create-new-warehouse-layout.md)

@@ -1,6 +1,6 @@
 ---
-title: オファーの作成、承認、および署名
-description: このトピックでは、Dynamics 365 Talent を使用して候補者へのオファーを作成、承認、および署名する方法について説明します。
+title: Attract でのオファーの作成、承認、および署名
+description: このトピックでは、Dynamics 365 Talent - Attract を使用して候補者へのオファーを作成、承認、および署名する方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: acc484ea57ce13d8a7c48a0ca7a2aa8723558dc9
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: dee545b6ca5d2791dea6609b4e1b25eba128f8b7
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551052"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832910"
 ---
-# <a name="create-approve-and-sign-offers"></a>オファーの作成、承認、および署名
+# <a name="create-approve-and-sign-offers-in-attract"></a>Attract でのオファーの作成、承認、および署名
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 多くの場合、候補者へのオファー パッケージの準備は迅速なプロセスである必要があります。
 Attract 管理者により設定されたテンプレートを使用して、オファー作成者は候補者にオファーを準備および送信するための時間と労力を短縮できます。

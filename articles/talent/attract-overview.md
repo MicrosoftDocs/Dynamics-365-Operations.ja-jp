@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent - Attract の機能
+title: Attract の機能
 description: このトピックでは、Microsoft Dynamics 365 Talent - Attract が新たな人材の採用プロセスを管理するために提供する機能について説明します。
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c8860602bd293c158aa33ea22b5f73de15a6b6f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4186dddc471de676cc6d26050f16711f581da7ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552074"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833072"
 ---
-# <a name="microsoft-dynamics-365-talent---attract-features-and-capabilities"></a>Microsoft Dynamics 365 Talent - Attract の機能
+# <a name="attract-features-and-capabilities"></a>Attract の機能
 
 [!include [banner](includes/banner.md)]
 
@@ -48,4 +48,4 @@ Attract は、申請、審査、面接、およびオファーという 4 つの
 候補者は、職務に追加されしだい、Web アプリを取得するリンク付きの電子メールを受信します。 Web アプリは候補者に職務の詳細を提供し、また採用チームとのコミュニケーションとして使用されます。 また、候補者は面接についての自分の都合を提出することにも使用できます。
 
 ## <a name="analytic-reports"></a>分析レポート
-採用チームは、[Attract の分析レポート](analytic-reports.md)を使用して、1 つのジョブまたはすべてのジョブにまたがって集計された採用プロセス メトリックスを使用できます。 これは[包括採用アドオン](attract-comprehensive-hiring.md)を持つ顧客向けに[プレビュー](access-preview-feature.md)にある機能です。
+採用チームは、[Attract の分析レポート](analytic-reports.md)を使用して、1 つのジョブまたはすべてのジョブにまたがって集計された採用プロセス メトリックスを使用できます。 この機能は現在[プレビュー](access-preview-feature.md)で、[Microsoft Dynamics 365 Talent - Attract のどのバージョンですか](attract-comprehensive-hiring.md) を参照しているユーザー向けに表示されます。

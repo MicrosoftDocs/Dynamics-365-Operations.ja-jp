@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c7ee8f4cf14197d6bd4549741058fc5fe95ae55d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 561b6fad0facad86e9a7bc8f36218ab98fcec73c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026673"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773268"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 3 月 5 日)
 
@@ -71,7 +71,7 @@ Attract には、Common Data Service 内のオプション セットである複
 このリリースには、他のマイナーなバグ修正が含まれています。
 
 ### <a name="upgrade-to-common-data-service"></a>Common Data Service へのアップグレード
-Common Data Service へのアップグレードの期限が近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、PowerApps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
+Common Data Service へのアップグレードの期限が近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、Power Apps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
 
 ## <a name="coming-soon"></a>間もなく公開
 

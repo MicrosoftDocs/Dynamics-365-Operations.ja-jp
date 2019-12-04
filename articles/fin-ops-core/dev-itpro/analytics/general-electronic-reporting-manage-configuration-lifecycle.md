@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6206b3a1ac298af98e4b69b6800b9a493658c4ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ecaeb80f3cda2ee24533ed263df63cc10c5ffc65
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181292"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771099"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>電子申告 (ER) コンフィギュレーション ライフサイクルの管理
 
@@ -33,7 +33,7 @@ ms.locfileid: "2181292"
 
 ## <a name="overview"></a>概要
 
-電子申告 (ER) は、法律の要件および国固有の電子ドキュメントをサポートするエンジンです。 一般に、ER は、各電子ドキュメントに関して次のタスクの実行を想定しています。 詳細については、「[電子申告の概要](general-electronic-reporting.md)」を参照してください。
+電子申告 (ER) は、法律の要件および国固有の電子ドキュメントをサポートするエンジンです。 一般に、ER は、各電子ドキュメントに関して次のタスクの実行を想定しています。 詳細については、[電子申告 (ER) の概要](general-electronic-reporting.md) を参照してください。
 
 - 電子ドキュメントのテンプレートを設計します:
 
@@ -85,6 +85,6 @@ ER に関連する次の理由から、個別の Finance and Operations イン�
 
 ![ER コンフィギュレーション ライフサイクル](./media/ger-configuration-lifecycle.png)
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[電子申告の概要](general-electronic-reporting.md)
+[電子申告 (ER) の概要](general-electronic-reporting.md)

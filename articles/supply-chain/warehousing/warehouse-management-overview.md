@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abb78c9ac43dad80e45729f4b42651d9807f71f1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f50b950b8588f2b17611889e0cb0eeb6da359886
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251065"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813020"
 ---
 # <a name="warehouse-management-overview"></a>倉庫管理の概要
 
@@ -36,7 +36,7 @@ ms.locfileid: "2251065"
 
 業務要件に従って入庫/出庫の倉庫プロセスワークフローをコンフィギュレーションする必要があります。 コンフィギュレーションする必要がある最も重要なコンポーネントは、ウェーブ テンプレート、作業テンプレート、作業プールと場所のディレクティブです。
 
-- [倉庫のコンフィギュレーション](warehouse-configuration.md)
+- [倉庫のコンフィギュレーションの概要](warehouse-configuration.md)
 - [作業テンプレートと場所ディレクティブを使用した倉庫作業の制御](control-warehouse-location-directives.md)
 - [倉庫作業用のモバイル デバイスの設定](configure-mobile-devices-warehouse.md)
 - [発注書のプット アウェイ場所のディレクティブの設定](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)

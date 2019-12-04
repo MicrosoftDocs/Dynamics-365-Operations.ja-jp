@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b09d09464eae932bf9caf4f2ea38cbbb3b4f0162
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4032d5e56b9dd014ec0472abfc1b2ad4a15ff1d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190215"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811384"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>ワークフローでの承認プロセスのコンフィギュレーション
 
@@ -182,4 +182,4 @@ ms.locfileid: "2190215"
 
 1. ワークフロー エディターで、承認プロセスをダブルクリックします。 ワークフロー エディターに承認プロセスのステップが表示されます。
 2. 承認ステップを追加するには、**ワークフロー要素**領域からキャンバスにステップをドラッグします。
-3. 承認ステップをコンフィギュレーションするには、[承認ステップのコンフィギュレーション](configure-approval-step-workflow.md)を参照してください。
+3. 承認ステップをコンフィギュレーションするには、[ワークフローの承認ステップのコンフィギュレーション](configure-approval-step-workflow.md)を参照してください。

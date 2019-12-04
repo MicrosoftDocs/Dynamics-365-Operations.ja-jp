@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c16082bb18ac5c170aab30f1a2033e0790cbacc1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026008"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812698"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 3 月 20 日)
 
@@ -43,7 +43,7 @@ ms.locfileid: "2026008"
 候補者が保存または電子メールで送信されたリンクを開いているときに、求人に応募するために使用した社会資格情報を忘れた場合、プロバイダー名とユーザー名（難読化済）のヒントが表示されます。 これにより、適切な資格情報を使用して、求人応募にアクセスすることができます。
 
 ### <a name="help-internal-candidates-explore-internal-jobs"></a>内部の候補者が内部職務を確認するヘルプ
-外部の候補者が採用担当者または採用マネージャの名前を確認できてしまうという問題が修正されました。 内部の候補者のみ、採用チームのメンバーを参照することができるようになりました。 内部の候補者が内部の職務を簡単に確認および応募することができます。 候補者が内部専用の職務を表示または適用するためにリンクにアクセスしようとすると、Azure Active Directory 資格情報の認証が求められます。 内部の候補者はまた、採用チームのメンバーに連絡して、関心を示したり、職務についての詳細を知ることができます。 この機能は、内部の候補者だけが使用できます。 詳細については、[Attract でキャリア サイト機能](./career-site.md) を参照してください。
+外部の候補者が採用担当者または採用マネージャの名前を確認できてしまうという問題が修正されました。 内部の候補者のみ、採用チームのメンバーを参照することができるようになりました。 内部の候補者が内部の職務を簡単に確認および応募することができます。 候補者が内部専用の職務を表示または適用するためにリンクにアクセスしようとすると、Azure Active Directory 資格情報の認証が求められます。 内部の候補者はまた、採用チームのメンバーに連絡して、関心を示したり、職務についての詳細を知ることができます。 この機能は、内部の候補者だけが使用できます。 詳細については、[Microsoft Dynamics 365 Talent - Attract でのキャリア サイトの設定](./career-site.md)を参照してください。
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>将来の職位に価値の高い申請者を割り当てるため、銀メダリストを指定します。
 採用担当者や採用マネージャーは、多くの場合、その役職に適した申請者の現在のリストを保持していますが、その役職はすでに埋められているため、オファーを拡張することはできません。 銀メダリストと呼ばれるそのような申請者は、次回類似の職務が空いたときに採用する時間を短縮することができるので価値があります。 申請者がオファー ステージに進んだ場合、Attract では、採用担当者と採用マネージャーが申請者リストの銀メダリストを指名できるようになりました。 銀メダリストの指定は、職務の申請者リストに表示されますが、これらの申請者が採用担当者または採用マネージャーのプールのメンバーである場合は人材プールビューにも表示されます。 また、その指定は、候補者の人材プールプロファイルの一部として職歴に表示されます。 この機能をプレビューするには、[管理センターの機能の管理](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) を使用して管理者を有効にします。

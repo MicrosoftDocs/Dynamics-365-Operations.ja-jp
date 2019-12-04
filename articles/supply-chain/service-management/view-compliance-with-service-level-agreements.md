@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6184653b1296ed22254f6811bb58135639d70ca9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8db522552165f51bd45a90cb38983d9bdf47ce21
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551769"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813089"
 ---
 # <a name="view-compliance-with-service-level-agreements"></a>サービス レベル契約に準拠しているかどうかの表示    
 
@@ -38,13 +38,13 @@ ms.locfileid: "1551769"
 
 
 > [!TIP]
-> <P><STRONG>コンプライアンス</STRONG>フィールドの値が 100 より大きい場合は、既にサービス レベル アグリーメントの期限に達しています。</P>
+> <STRONG>コンプライアンス</STRONG>フィールドの値が 100 より大きい場合は、既にサービス レベル アグリーメントの期限に達しています。
 
 
 
 ## <a name="see-also"></a>参照
 
-[サービス レベル契約](service-level-agreements.md)
+[サービス レベル契約の概要](service-level-agreements.md)
 
   
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa49b70b07ac3dc6cbc5989b11981098f22be89c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0f5b9866fc7afba205b84b372c6a204ec4c8f64d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189157"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772723"
 ---
 # <a name="create-a-customer-invoice"></a>顧客請求書の作成
 
@@ -37,9 +37,9 @@ ms.locfileid: "2189157"
 
 [自由書式の請求書の作成](../accounts-receivable/create-free-text-invoice-new.md)
 
-[自由書式のテンプレートの作成](../accounts-receivable/create-free-text-invoice-template-new.md)
+[自由書式の請求書テンプレートの作成](../accounts-receivable/create-free-text-invoice-template-new.md)
 
-[顧客への自由書式の請求書テンプレートの割り当て](tasks/assign-free-text-invoice-template-customer.md)
+[自由書式の請求書のテンプレートを顧客へ割り当てる](tasks/assign-free-text-invoice-template-customer.md)
 
 [定期的な自由書式の請求書の生成と転記](tasks/post-recurring-free-text-invoices.md)
 

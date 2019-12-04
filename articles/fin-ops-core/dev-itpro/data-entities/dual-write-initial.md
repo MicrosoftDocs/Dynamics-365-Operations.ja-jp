@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3110cb809558d168e9d97f640701b249caf73f6c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cf444ef1192fed3a6a49282da37374dd8c443356
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184511"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769640"
 ---
 # <a name="execution-order-for-initial-synchronization-of-finance-and-operations-apps-and-common-data-service"></a>Finance and Operations アプリおよび Common Data Service の初期同期の実行順序
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 データ統合を使用する前に、顧客、仕入先、および取引先担当者に必要な初期データを作成する必要があります。 たとえば、新しい**仕入先グループ**の品目を作成し、**支払条件**の値を **Net30** に設定するとします。 この場合、**仕入先グループ**の品目を作成する前に、**Net30** がアプリケーションおよび Common Data Service の両方に存在することを確認する必要があります。 (将来的には、Microsoft は初期同期と呼ばれるデュアル書き込みプラットフォーム機能をリリースする予定です。この機能によりデュアル書き込みセットアップの一部としてアプリケーションおよび Common Data Service 間で 1 回限りのデータ同期が行われます。)
 

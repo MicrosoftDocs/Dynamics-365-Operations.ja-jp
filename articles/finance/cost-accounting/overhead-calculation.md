@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 6c045f82f3288dba193721dd80c90e68750af9a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 954e0669c3d24bcc20fe667c22b7dcc367aba1e7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178671"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770807"
 ---
 # <a name="overhead-calculation"></a>間接費の計算
 
@@ -167,7 +167,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>未分類</td>
 <td>-10,000.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC099</td>
@@ -176,7 +176,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>1,000.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC099</td>
@@ -185,7 +185,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>9,000.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 </tbody>
 </table>
@@ -338,7 +338,7 @@ ms.locfileid: "2178671"
 </thead>
 <tbody>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>CC099</td>
 <td>既定のコスト センター</td>
 <td>10001</td>
@@ -347,7 +347,7 @@ ms.locfileid: "2178671"
 <td>1,000.00</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>CC099</td>
 <td>既定のコスト センター</td>
 <td>10001</td>
@@ -378,7 +378,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>-1,000.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC001</td>
@@ -387,7 +387,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>500.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC002</td>
@@ -396,7 +396,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>500.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC099</td>
@@ -405,7 +405,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>-9,000.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC001</td>
@@ -414,7 +414,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>1,285.71</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC002</td>
@@ -423,7 +423,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>7,714.29</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 </tbody>
 </table>
@@ -550,13 +550,13 @@ ms.locfileid: "2178671"
 </thead>
 <tbody>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>プロジェクト 1</td>
 <td>内部プロジェクト 1</td>
 <td>3.00</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>プロジェクト 2</td>
 <td>内部プロジェクト 2</td>
 <td>1.00</td>
@@ -584,7 +584,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>-30.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>プロジェクト 1</td>
@@ -593,7 +593,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>30.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC001</td>
@@ -602,7 +602,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>-10.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>プロジェクト 2</td>
@@ -611,7 +611,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>10.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 </tbody>
 </table>
@@ -969,7 +969,7 @@ ms.locfileid: "2178671"
 </thead>
 <tbody>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>CC001</td>
 <td>HR</td>
 <td>10001</td>
@@ -978,7 +978,7 @@ ms.locfileid: "2178671"
 <td>500.00</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>CC001</td>
 <td>HR</td>
 <td>10001</td>
@@ -987,7 +987,7 @@ ms.locfileid: "2178671"
 <td>1,245.71</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>CC002</td>
 <td>財務</td>
 <td>10001</td>
@@ -996,7 +996,7 @@ ms.locfileid: "2178671"
 <td>675.00</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>CC002</td>
 <td>財務</td>
 <td>10001</td>
@@ -1005,7 +1005,7 @@ ms.locfileid: "2178671"
 <td>8,150.29</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>CC003</td>
 <td>組み立て</td>
 <td>10001</td>
@@ -1014,7 +1014,7 @@ ms.locfileid: "2178671"
 <td>713.75</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>CC003</td>
 <td>組み立て</td>
 <td>10001</td>
@@ -1023,7 +1023,7 @@ ms.locfileid: "2178671"
 <td>5,982.83</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>CC003</td>
 <td>梱包業</td>
 <td>10001</td>
@@ -1032,7 +1032,7 @@ ms.locfileid: "2178671"
 <td>286.25</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>CC003</td>
 <td>梱包業</td>
 <td>10001</td>
@@ -1041,7 +1041,7 @@ ms.locfileid: "2178671"
 <td>2,977.17</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>製品 1</td>
 <td>製品 1</td>
 <td>10001</td>
@@ -1050,7 +1050,7 @@ ms.locfileid: "2178671"
 <td>776.36</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>製品 1</td>
 <td>製品 1</td>
 <td>10001</td>
@@ -1059,7 +1059,7 @@ ms.locfileid: "2178671"
 <td>6,994.21</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>製品 2</td>
 <td>製品 1</td>
 <td>10001</td>
@@ -1068,7 +1068,7 @@ ms.locfileid: "2178671"
 <td>223.64</td>
 </tr>
 <tr>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 <td>製品 2</td>
 <td>製品 1</td>
 <td>10001</td>
@@ -1099,7 +1099,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>-500.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC002</td>
@@ -1108,7 +1108,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>175.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC003</td>
@@ -1117,7 +1117,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>275.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC004</td>
@@ -1126,7 +1126,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>50,00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC001</td>
@@ -1135,7 +1135,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>-1,245.71</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC002</td>
@@ -1144,7 +1144,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>436.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC003</td>
@@ -1153,7 +1153,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>685.14</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC004</td>
@@ -1162,7 +1162,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>124.57</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC002</td>
@@ -1171,7 +1171,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>-675.00</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC003</td>
@@ -1180,7 +1180,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>438.75</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC004</td>
@@ -1189,7 +1189,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>236.25</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC002</td>
@@ -1198,7 +1198,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>-8,150.29</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC003</td>
@@ -1207,7 +1207,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>5,297.69</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC004</td>
@@ -1216,7 +1216,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>2,852.60</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC003</td>
@@ -1225,7 +1225,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>-713.75</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>製品 1</td>
@@ -1234,7 +1234,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>535.31</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>製品 2</td>
@@ -1243,7 +1243,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>178.44</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC003</td>
@@ -1252,7 +1252,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>-5,982.83</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>製品 1</td>
@@ -1261,7 +1261,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>4,487.12</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>製品 2</td>
@@ -1270,7 +1270,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>1,495.71</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC003</td>
@@ -1279,7 +1279,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>-286.25</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>製品 1</td>
@@ -1288,7 +1288,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>241.05</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>製品 2</td>
@@ -1297,7 +1297,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>固定費</td>
 <td>45.20</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>CC003</td>
@@ -1306,7 +1306,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>-2,977.17</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>製品 1</td>
@@ -1315,7 +1315,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>2,507.09</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 <tr>
 <td>製品 2</td>
@@ -1324,7 +1324,7 @@ ms.locfileid: "2178671"
 <td>電気</td>
 <td>変動費</td>
 <td>470.08</td>
-<td>2017年 31 月 31 日</td>
+<td>2017年 1 月 31 日</td>
 </tr>
 </tbody>
 </table>
@@ -1396,7 +1396,7 @@ ms.locfileid: "2178671"
 <tr>
 <td style="text-align: right;"></td>
 <td style="text-align: left;">変動費</td>
-<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">000</td>
 <td style="text-align: right;">0.00</td>
 <td style="text-align: right;">0.00</td>
 <td style="text-align: right;">0.00</td>
@@ -1411,7 +1411,7 @@ ms.locfileid: "2178671"
 </table>
 
 > [!NOTE]
-> このトピックでは、主要コスト要素である 10001 電気がどのようにコスト オブジェクトをフローするかを示します。 したがって、この間接費は組織の最下位レベルに配賦されます。 つまり、最下位レベルのコスト オブジェクトがそのコストを負担します。 コスト オブジェクト間のコストの視覚的なフローが必要な場合は、コスト ロールアップ ポリシー ルールを使用して、コストのフローを視覚化できます。 詳細については、「[原価ロールアップ](cost-rollup.md)」を参照してください。
+> このトピックでは、主要コスト要素である 10001 電気がどのようにコスト オブジェクトをフローするかを示します。 したがって、この間接費は組織の最下位レベルに配賦されます。 つまり、最下位レベルのコスト オブジェクトがそのコストを負担します。 コスト オブジェクト間のコストの視覚的なフローが必要な場合は、コスト ロールアップ ポリシー ルールを使用して、コストのフローを視覚化できます。 詳細については、[原価ロールアップ ポリシーおよび間接費の計算](cost-rollup.md) を参照してください。
 
 
 

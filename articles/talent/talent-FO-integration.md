@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8b9fa6b8d5109f873c784d384d49f685f94da228
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 747922294eaf971795177beeb73839d453f6475a
+ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622771"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "2830189"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Dynamics 365 Talent から Dynamics 365 Finance への統合に関する FAQ
 
@@ -48,7 +48,7 @@ Attract および Onboard に関しては、すべてのデータが Common Data
 
 財務分析コードは、現在 Common Data Service にはなく、結果として既定のテンプレートの一部ではありません。 このエンティティは計画されていますが、現在利用可能なリリース タイムラインはありません。
 
-Finance で存在しますが、Talent では存在しないデータに関しては、Talent の**リンクの構成**を使用して 2 つのシステムを相互にリンクします。 Talent および Finance 間のリンクを構成する方法の詳細については、「[Dynamics 365 Talent: Core HR (2018 年 10 月 31日) の新機能および変更された機能](whats-new-talent-october-31.md)」を参照してください。
+Finance で存在しますが、Talent では存在しないデータに関しては、Talent の**リンクの構成**を使用して 2 つのシステムを相互にリンクします。 Talent および Finance 間のリンクを構成する方法の詳細については、[Dynamics 365 Talent - Core HR (2018 年 10 月 31日) の新機能および変更された機能](whats-new-talent-october-31.md) を参照してください。
 
 ![財務分析コードのマップ](media/MapFinancialDimensions.png)
 
@@ -69,7 +69,7 @@ Finance で存在しますが、Talent では存在しないデータに関し�
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>特定のエンティティの Finance に送信するフィールドを指定できますか。
 
 フィールドは、統合タスクから追加または削除できます。 Common Data Service エンティティに存在するすべてのデータ フィールドが、Core HR から入力されるわけではありません。
-追加のデータは、PowerApps 経由で入力されます。
+追加のデータは、Power Apps 経由で入力されます。
 
 ![統合タスクへ (から) フィールドを追加または削除します](media/SpecifyFieldsIncludedInIntegration.png)
 
@@ -119,19 +119,19 @@ Finance で存在しますが、Talent では存在しないデータに関し�
 
 1. データ統合からタスク インデックスをキャプチャします (この例では「9」)。
 
-![データ統合からタスク インデックスをキャプチャします。](media/CaptureTaskIndex.png)
+    ![データ統合からタスク インデックスをキャプチャします。](media/CaptureTaskIndex.png)
 
 2. プロジェクトの実行時間を追跡します。
 
-![プロジェクトの実行時間の追跡](media/CaptureTimeOfExecution.png)
+    ![プロジェクトの実行時間の追跡](media/CaptureTimeOfExecution.png)
 
 3. Finance では、インデックス - 1 を識別します。 この例では、接尾語「8」でインデックス「0」プロジェクトの実行時間を持つプロジェクトは、ステップ 2 の実行時間と一致します。
 
-![インデックスの識別](media/IdentifyIndex.png)
+    ![インデックスの識別](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-talent-and-finance-i-dont-see-my-talent-data-in-finance-what-do-i-do"></a>Talent および Finance を統合した後、Finance で Talent データが表示されません。 何をしたらいいですか ?
 
-Finance への統合には 2 つのステップがあります。 まず、Talent データが更新済で、Common Data Service で利用可能であることを確認します。 これはほぼリアルタイムの同期であり、データ エンティティ内のデータを参照して PowerApps で検証できます。
+Finance への統合には 2 つのステップがあります。 まず、Talent データが更新済で、Common Data Service で利用可能であることを確認します。 これはほぼリアルタイムの同期であり、データ エンティティ内のデータを参照して Power Apps で検証できます。
 
 ![Common Data Service 内のデータ](media/DataInCDS.png)
 
@@ -168,7 +168,7 @@ Talent の実装中に、番号順序が Talent および Finance で同じで�
 
   - [データ統合エラーの管理とトラブルシューティング](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [PowerApps、Microsoft Flow、および Common Data Service でシステムにより生成されたログの DSR 要求への応答](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Power Apps、Microsoft Power Automate、および Common Data Service でシステムにより生成されたログの DSR 要求への応答](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - データ管理:
 

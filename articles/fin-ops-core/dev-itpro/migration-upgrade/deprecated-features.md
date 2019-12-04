@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658693"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811996"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Finance and Operations の削除済みまたは推奨されない機能
 
@@ -270,7 +270,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **ステータス**                         | 非推奨: 今後、警告はコンパイル時のエラーになります。 現在、プラットフォーム更新プログラム 30 を対象にしています。 |
 
 #### <a name="complete-list"></a>完全なリスト
-推奨されない API の完全なリストにアクセスするには、[メソッドおよびメタ データ要素の廃止](deprecation-deletion-apis.md) を参照してください。
+推奨されない API の完全なリストにアクセスするには、[メソッドおよびメタ データ要素の廃止](deprecation-deletion-apis.md)を参照してください。
 
 ## <a name="finance-and-operations-81-with-platform-update-20"></a>Finance and Operations 8.1 プラットフォーム更新プログラム 20
 
@@ -348,7 +348,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **ステータス**                         |2018 年 2 月 15 日から削除されました。 これは、Dynamics 365 for Operations 1611 以降を使用しているユーザーに影響します。  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>電子申告 (ER) 関数の一覧の拡張子
-ER 式ビルダーで使用されるカスタム機能を導入する可能性は (詳細については、次を参照してください。[電子申告機能の一覧の拡張](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) もはやサポートされていません。 ER API の変更により、ER の式から組み込み関数を呼び出す API は内部的になり、拡張することはできません。
+ER 式ビルダーで使用されるカスタム機能を導入する可能性は (詳細については、次を参照してください。[電子申告 (ER) 機能の一覧の拡張](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) もはやサポートされていません。 ER API の変更により、ER の式から組み込み関数を呼び出す API は内部的になり、拡張することはできません。
 
 |   |  |
 |------------|--------------------|
@@ -474,7 +474,7 @@ ER 式ビルダーで使用されるカスタム機能を導入する可能性�
 |   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 機能の重複。       |
-| **別の機能での置き換え?**   | はい。 この機能は Finance and Operations - Warehousing で置き換えられました。 設定、および前提条件の詳細については、[Microsoft Dynamics 365 for Finance and Operations- Warehousing のインストールと構成](../../../supply-chain/warehousing/install-configure-warehousing-app.md) を参照してください。 |
+| **別の機能での置き換え?**   | はい。 この機能は Finance and Operations - Warehousing で置き換えられました。 設定、および前提条件の詳細については、[Warehousing アプリのインストールとコンフィギュレーションの概要](../../../supply-chain/warehousing/install-configure-warehousing-app.md)を参照してください。 |
 | **影響を受ける製品領域**         | 倉庫管理、輸送管理     |
 | **配置オプション**              | 倉庫モバイル デバイス ポータル (WMDP) は、オンプレミス自己展開を目的としたスタンドアロン コンポーネントでした。               |
 | **ステータス**                         | 非推奨: 機能を削除するターゲットのタイムフレームは 2019 年 第 4 四半期です。   |
@@ -1244,7 +1244,7 @@ Dynamics AX 2012 は、未実現税に対するメキシコ固有の機能を使
 |   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | プロダクト ビルダーは、エンドユーザーに X++ コードを公開しており、Dynamics AX の現在のバージョンではサポートされていません。 かなりの重複するコード ベースにおける保守活動の重複を回避するために削除されました。  |
-| **別の機能での置き換え?**   | はい。 制約ベースのコンフィギュレーションは、将来のバージョンでプロダクト ビルダーの減価償却がすでに発表されている Dynamics AX 2012 で導入されました。 コンフィギュレーションを有効にするために、製品マスターに対して制約ベースのコンフィギュレーション テクノロジが選択されています。 詳細については次を参照してください。[製品コンフィギュレーション モデルの構築](../../../supply-chain/pim/build-product-configuration-model.md) |
+| **別の機能での置き換え?**   | はい。 制約ベースのコンフィギュレーションは、将来のバージョンでプロダクト ビルダーの減価償却がすでに発表されている Dynamics AX 2012 で導入されました。 コンフィギュレーションを有効にするために、製品マスターに対して制約ベースのコンフィギュレーション テクノロジが選択されています。 詳細については、[製品コンフィギュレーションの概要](../../../supply-chain/pim/build-product-configuration-model.md)を参照してください。 |
 | **影響を受ける製品領域**         | 製品情報管理、販売とマーケティング  |
 | **ステータス**                         | Dynamics AX 7.0 から削除されました。      |
 

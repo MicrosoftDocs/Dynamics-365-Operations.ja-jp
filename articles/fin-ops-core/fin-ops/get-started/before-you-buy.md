@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9b7cd06d820522d8db83b5b1480b95db1400e9cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f8017ab23ce77a03469a6a6c82bc22986ec4478
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191250"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812629"
 ---
 # <a name="before-you-buy"></a>購入する前に
 
@@ -41,8 +41,8 @@ Dynamics 365 for Finance and Operations は、簡単な電子メールでのサ�
 
 - クラウド認証 で使用できない規制およびコンプライアンスのニーズ
 - アプリケーション ライフサイクル管理の Microsoft Dynamics Lifecycle Services (LCS) にアクセスするのに必要な断続的なインターネット接続を持つ、未接続の業務プロセス
-- [オンプレミス配置で現在実装されていない機能](features-not-implemented-on-prem.md)
-- [最小限のインフラストラクチャ要件](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+- [オンプレミス配置に実装されない機能](features-not-implemented-on-prem.md)
+- [オンプレミス配置のシステム要件](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
 > Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置。
@@ -78,7 +78,7 @@ Microsoft クラウド ソリューション プロバイダーはお客様と�
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Dynamics パートナー (オンプレミス) から購入
 
-Finance and Operations オンプレミスを購入するにはパートナーと協力する必要があります。 詳細については、[Dynamics 365 for Finance and Operations (オンプレミス) の購入](purchase-on-premises.md)を参照してください。
+Finance and Operations オンプレミスを購入するにはパートナーと協力する必要があります。 詳細については、[Finance + Operations (オンプレミス) の購入](purchase-on-premises.md) を参照してください。
 
 ### <a name="choose-your-support-option"></a>サポート オプションの選択
 
@@ -91,7 +91,7 @@ Microsoft は柔軟性の高い、業界をリードするサポート、サー�
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>ステップ 4: FastTrack について学び、展開を計画する
 
-Microsoft FastTrack for Dynamics 365 は、ビジネス上の価値をより速く達成できるように、Dynamics 365 を円滑かつ確実に移行できるように設計されています。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 さらに、Dynamics 365 でのお客様の経験を成功させるために尽力している Microsoft エンジニアリング リソースにアクセスできます。 詳細については、[Microsoft FastTrack for Dynamics 365 の概要](fasttrack-dynamics-365-overview.md)を参照してください。
+Microsoft FastTrack for Dynamics 365 は、ビジネス上の価値をより速く達成できるように、Dynamics 365 を円滑かつ確実に移行できるように設計されています。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 さらに、Dynamics 365 でのお客様の経験を成功させるために尽力している Microsoft エンジニアリング リソースにアクセスできます。 詳細: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md)
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>AX 2012 からアップグレードまたは AX 2009 から移行する場合
 

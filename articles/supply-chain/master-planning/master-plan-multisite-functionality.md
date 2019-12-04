@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f05e3efd1716a27a659ae40145f37bb0b3d977f
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: d0b715e0c17263519a9bb1b3780170812271d93d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865410"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813756"
 ---
 # <a name="master-planning-and-multisite-functionality-overview"></a>マスター プランとマルチサイト機能の概要
 
@@ -48,7 +48,7 @@ ms.locfileid: "1865410"
 
 [マスター プラン - サイトの補充、倉庫は必須ではない](master-plan-site-coverage-warehouse-not-mandatory.md)
 
-[マスター プラン - BOM バージョンを決定する方法](master-plan-bom-version-determined.md)
+[BOM バージョンの決定](master-plan-bom-version-determined.md)
 
 
 

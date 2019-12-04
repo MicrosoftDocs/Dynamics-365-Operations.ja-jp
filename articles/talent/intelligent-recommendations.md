@@ -1,6 +1,6 @@
 ---
-title: インテリジェントな推奨
-description: このトピックでは、機械学習を使用して、職務および職務候補者の推奨事項を提供する方法について説明します。
+title: Attract でのインテリジェントな推奨
+description: この記事では、機械学習を使用して、Microsoft Dynamics 365 Talent - Attract の職務および職務候補者の推奨事項を提供する方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/16/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: fa06821c98e42dcd8590a764db9beb4a5c33fca2
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741755"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832794"
 ---
-# <a name="intelligent-recommendations"></a>インテリジェントな推奨
+# <a name="intelligent-recommendations-in-attract"></a>Attract でのインテリジェントな推奨
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 機械学習は、採用担当者および雇用責任者がすばやく職位のトップ候補者を特定するのに役立ちます。 候補者が自分のプロファイルや関心事項に最も適した職位を見つけることにも役立ちます。 これらの機能が使用され、フィードバックが提供されると、推奨事項が改善されます。
 
 > [!NOTE] 
 > - インテリジェントな推奨機能は、[包括採用アドオン](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) でのみ使用できます。
-> - このトピックに記載されている機能は、プレビュー レビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 この機能を使用するには、Attract の**管理者センター**を使用して有効にするよう管理者に依頼してください。 **推奨候補者**、**推奨職務**、および**候補者の推奨事項**を**オン**に設定します。 詳細については、[Talent のプレビュー機能の利用](./access-preview-feature.md) を参照してください。 
+> - このトピックに記載されている機能は、プレビュー レビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 この機能を使用するには、Attract の**管理者センター**を使用して有効にするよう管理者に依頼してください。 **推奨候補者**、**推奨職務**、および**候補者の推奨事項**を**オン**に設定します。 詳細については、[Microsoft Dynamics 365 Talent のプレビュー機能にアクセス](./access-preview-feature.md) を参照してください。 
 
 
 ## <a name="candidate-recommendations"></a>推奨候補者

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 074132af2111debee4bea894b559744b4470454d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78b3b20ed56cbb6404f5526e90fdcefcaec9bf3f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178666"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771964"
 ---
 # <a name="cost-accounting-home-page"></a>原価会計ホーム ページ
 
@@ -39,17 +39,17 @@ ms.locfileid: "2178666"
 
 |      |   |
 |------|---|
-|  [基本エンティティ (e ラーニング) のコンフィギュレーション](https://mbspartner.microsoft.com/Home) (CustomerSource アカウントが必要です)  |[分析コードの作成](cost-elements.md)  |
-|  [分析コード階層の作成](dimension-hierarchy.md)  |[基本設定の作成](./tasks/define-cost-control-units.md)| 
-| [配賦基準の定義](allocation-bases.md)|[ポリシーの定義](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
-| [データ ソースとデータ プロバイダー](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [データ ソースとデータ プロバイダー](./tasks/process-trace-source-data.md)     | 
-|[間接費の計算](overhead-calculation.md)  | [分析とレポート作成](cost-control-workspace.md)   |
+|  [基本エンティティ (e ラーニング) のコンフィギュレーション](https://mbspartner.microsoft.com/Home) (CustomerSource アカウントが必要です)  |[原価要素分析コード](cost-elements.md)  |
+|  [分析コード階層](dimension-hierarchy.md)  |[原価管理単位の定義](./tasks/define-cost-control-units.md)| 
+| [配賦基準](allocation-bases.md)|[原価配賦ポリシーの作成と原価管理単位への割り当て](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [原価会計元帳のデータ ソースの管理](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [ソース データの処理および追跡](./tasks/process-trace-source-data.md)     | 
+|[間接費の計算](overhead-calculation.md)  | [原価管理ワークスペース](cost-control-workspace.md)   |
 
 ## <a name="get-started-videosbr"></a>使用開始のビデオ<br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
 | [原価会計の使用を開始する](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [原価会計モバイル ワークスペース](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [原価会計分析のための Excel の使用](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
-|  |  |                             |
+
 
 

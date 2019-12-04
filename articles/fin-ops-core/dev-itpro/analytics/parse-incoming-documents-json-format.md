@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 92ef83bc1783b00a4d7d9739ca1c17e863c7ff44
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8be4e225507a18a92d642ff0f3a6ca3d0ff68564
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185270"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772538"
 ---
 # <a name="parse-incoming-documents-in-json-format"></a>JSON 形式で受信したドキュメントを解析する
 
@@ -46,7 +46,7 @@ JavaScript に基づくテキスト形式 (つまり、JavaScript Object Notatio
 - JSON 配列は、オブジェクトのプロパティ要素に入れ子になった要素にのみなることができます。
 - JSON 配列には JSON オブジェクトのみ含めることができます。 文字列、数値、および入れ子になった配列を直接含めることはできません。 これらの配列の要素は、形式内で指定されている順序で解析されます。 各 JSON オブジェクトの多様性の設定が考慮されます。
 
-また、まだ完了していない場合は、[外部ファイルから電子申告にデータをインポートするのに必要なコンフィギュレーションの ER 作成](tasks/er-required-configurations-import-data.md) タスク ガイドを完了する必要があります。 タスクガイドを完成させるには、次のファイルをダウンロードしてください。
+また、まだ完了していない場合は、[外部ファイルからデータをインポートするのに必要なコンフィギュレーションの ER 作成](tasks/er-required-configurations-import-data.md) タスク ガイドを完了する必要があります。 タスクガイドを完成させるには、次のファイルをダウンロードしてください。
 
 | 肩書き                  | ファイル名 |
 |------------------------|-----------|

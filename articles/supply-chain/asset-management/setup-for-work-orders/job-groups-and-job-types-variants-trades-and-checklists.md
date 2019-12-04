@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bdfd8ca5e4feb236bc1b4e88a4dd3817a07e8a3f
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2a5da707069966ea0dac282b2a0b2074ec5a41ff
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571004"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812240"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>メンテナンス作業タイプ カテゴリとメンテナンス作業タイプ、メンテナンス作業タイプ バリアント、メンテナンス作業取引、およびメンテナンス チェックリスト
 
@@ -33,7 +33,7 @@ ms.locfileid: "2571004"
 
 資産タイプはすべての資産に関連付けられています。 資産タイプは、資産に対して実行できるメンテナンス作業タイプ (およびメンテナンス ジョブ) を定義します。 作業指示書を作成するときにメンテナンス作業タイプを選択する必要があります。 選択できるのは、資産に対して使用される資産タイプの設定に関連付けられているメンテナンス作業タイプだけです。
 
-資産とメンテナンス作業タイプのグラフィカルな概要、および作業指示書への接続については、[資産と作業指示書](../overview/functional-locations-and-objects.md) を参照してください。
+資産とメンテナンス作業タイプのグラフィカルな概要、および作業指示書への接続については、[機能の場所と資産](../overview/functional-locations-and-objects.md) を参照してください。
 
 メンテナンス作業タイプ バリアントは、メンテナンス作業タイプで設定できます。 メンテナンス作業タイプ バリアントは、サイズ (小、中、または大)、期間 (週単位、隔週、1 か月、3 か月)、および構成 (低標準、柔軟、または高パフォーマンス) などの作業タイプのバリエーションを定義します。
 

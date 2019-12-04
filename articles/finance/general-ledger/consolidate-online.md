@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: eadf0af285213a972cac83d7b6fc6a47317b21bb
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551660"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770738"
 ---
 # <a name="online-financial-consolidations"></a>オンライン財務連結
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、一般会計でのオンライン財務連結について説明します。 このトピックの読み取る前に、[財務連結および通貨換算](financial-consolidations-currency-translation.md) のトピックを必ず読んでください。
+このトピックでは、一般会計でのオンライン財務連結について説明します。 このトピックの読み取る前に、[財務連結および通貨換算の概要](financial-consolidations-currency-translation.md)のトピックを必ず読んでください。
 
 セットアップを完了した後、**連結 [オンライン]** ページで連結の詳細を入力します。 完了したら、**OK** または**バッチ**をクリックして連結を処理することができます。
 
@@ -69,7 +69,7 @@ ms.locfileid: "2551660"
 
 ![法人タブ](./media/legal-entities-cons.png "法人タブ")
 
-![自動トランザクションの勘定ページ](./media/accounts-for-automatic-cons.png "自動トランザクションの勘定ページ")
+![自動トランザクション ページの勘定](./media/accounts-for-automatic-cons.png "自動トランザクション ページの勘定")
 
 ## <a name="elimination"></a>消去
 **消去**タブには、消去を処理するための 3 つのオプションがあります。
@@ -89,10 +89,10 @@ ms.locfileid: "2551660"
 - **トランザクション日付** – 各トランザクションの日付は、為替レートを選択するのに使用されます。 ほとんどの場合、このオプションは固定資産に使用され、多くの場合、過去のレートとして参照されます。 勘定範囲内のさまざまなトランザクションには多くのレートがあるため、レートのプレビューは表示できません。
 - **ユーザー定義レート** – このオプションを選択した後、為替レートを入力することができます。 このオプションは平均為替レートに対して、または固定為替レートと引き換えに連結する場合に役立ちます。
 
-![通貨変換タブ](./media/currency-translation-cons-online.png "通貨変換タブ")
+![為替換算タブ](./media/currency-translation-cons-online.png "為替換算タブ")
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-連結および通貨換算の詳細については、このトピックの親トピック [財務連結および通貨換算](./financial-consolidations-currency-translation.md) を参照してください。
+連結および通貨換算の詳細については、このトピックの親トピック、[財務連結および通貨換算の概要](./financial-consolidations-currency-translation.md) を参照してください。
 
 連結財務諸表を生成するシナリオの詳細については、[連結財務諸表の生成](./generating-consolidated-financial-statements.md) を参照してください。

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 902db94164b35077a876c8041c038af36561a634
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 2e44770af4a30f539e56d38b21c897cacd2707e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025774"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812342"
 ---
 # <a name="call-center-sales-functionality"></a>コール センターの販売機能
 
@@ -44,13 +44,13 @@ Dynamics 365 Retail では、コール センターはアプリケーション�
 
 ## <a name="configure-the-call-center"></a>コール センターのコンフィギュレーション
 
-[注文処理オプションの設定](set-up-order-processing-options.md)
+[コール センター チャネルの設定](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>注文処理のコンフィギュレーション
 
-[詐欺警告の設定](set-up-fraud-alerts.md)
+[コール センターの詐欺警告の設定および使用](set-up-fraud-alerts.md)
 
-[手動の注文保留](work-with-order-holds.md)
+[コール センターの注文保留のコンフィギュレーションおよび作業](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>支払処理のコンフィギュレーション
 
@@ -64,7 +64,7 @@ Dynamics 365 Retail では、コール センターはアプリケーション�
 
 [コール センターのカタログ](call-center-catalogs.md)
 
-[最新/頻度/金額 (RFM) 分析の設定](set-up-rfm-analysis.md)
+[最新、頻度、金額 (RFM) 分析の設定](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>連続プログラムのコンフィギュレーション
 

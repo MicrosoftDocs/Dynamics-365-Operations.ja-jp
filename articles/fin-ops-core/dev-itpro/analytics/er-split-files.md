@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: cde95430022d94c42bdd985b5e4a8f9f5147d000
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 804878150f035adc051e89ec6be44457ad58e87e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181361"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771194"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
 
@@ -44,7 +44,7 @@ XML ELEMENT および XML SEQUENCE 形式要素を使用して生成されるフ
 - [ER モデル コンフィギュレーション - XmlFilesSplittingModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER 形式コンフィギュレーション - XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 
-## <a name="additional-resources"></a>その他のリソース
-[電子申告の送信先](electronic-reporting-destinations.md)
+## <a name="additional-resources"></a>追加リソース
+[電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 
-[電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
+[電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)

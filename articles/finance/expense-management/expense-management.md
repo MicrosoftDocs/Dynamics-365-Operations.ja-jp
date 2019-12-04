@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03d62e3475b4336e86e203bbd347d110704eba07
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7066a021390e3403c4312a7cfe8488a989b9aaa3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178658"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771941"
 ---
 # <a name="expense-management-overview"></a>経費管理の概要
 
@@ -37,7 +37,7 @@ ms.locfileid: "2178658"
 
 ### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
-予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース ノート](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。
+予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース プラン](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。
 
 #### <a name="expense-report-entry"></a>経費精算書エントリ
 

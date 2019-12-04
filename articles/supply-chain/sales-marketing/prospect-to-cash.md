@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1a96b7cfa57ec72b25f21d94fadb2fbf9bc6ea3b
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: fb5abb983811ce736e3494bc85e8d9b23a2e373c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251364"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814078"
 ---
 # <a name="prospect-to-cash"></a>見込顧客を現金化
 
@@ -36,12 +36,12 @@ ms.locfileid: "2251364"
 
 現在のバージョンでは、見込顧客を現金化するソリューションは次のタイプの直接同期を提供します:
 
-- [Sales でアカウントの管理、および Sales から Supply Chain Management への直接同期](accounts-template-mapping-direct.md)
-- [Supply Chain Management での製品の管理、および Sales への直接同期](products-template-mapping-direct.md)
-- [Sales の連絡先の管理、および Supply Chain Management の連絡先または顧客への直接同期](contacts-template-mapping-direct.md)
-- [販売見積の Sales から Supply Chain Management への直接同期](sales-quotation-template-mapping-sales-fin.md)
+- [Supply Chain Management の顧客への Sales の勘定の直接同期](accounts-template-mapping-direct.md)
+- [製品を Supply Chain Management から Sales の製品に直接同期する](products-template-mapping-direct.md)
+- [Supply Chain Management の連絡先または顧客への Sales の連絡先の直接同期](contacts-template-mapping-direct.md)
+- [販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期](sales-quotation-template-mapping-sales-fin.md)
 - [販売注文の Sales と Supply Chain Management の間の直接同期](sales-order-template-mapping-direct-two-ways.md)
-- [販売請求書の Supply Chain Management から Sales への直接同期](sales-invoice-template-mapping-direct.md)
+- [売上請求書のヘッダーおよび明細行の Supply Chain Management から Sales への直接同期](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-supply-chain-management"></a>Supply Chain Management のシステム要件
 見込顧客の現金化は次のバージョンでサポートされています。

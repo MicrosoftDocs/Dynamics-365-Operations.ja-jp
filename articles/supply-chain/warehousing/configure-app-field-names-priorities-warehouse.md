@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3251368e92eb2e24eb9e64bb615027d038ff660
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 11f6c96cc07c63d2c0c6a94385916b3396a77ed5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251088"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814976"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>倉庫アプリのアプリ フィールド名のコンフィギュレーション
 
@@ -32,7 +32,8 @@ ms.locfileid: "2251088"
 
 このトピックでは、Dynamics 365 Supply Chain Management の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。 
 
-**注記:** このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 Warehousing は倉庫作業の実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Warehousing での使用方法について説明します。 FWarehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル「[Warehousing のインストールと構成](install-configure-warehousing-app.md)」を参照してください。
+> [!NOTE]
+> このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 Warehousing は倉庫作業の実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Warehousing での使用方法について説明します。 FWarehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル [Warehousing アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)を参照してください。
 
 ## <a name="configure-warehouse-app-field-names"></a>倉庫アプリ フィールド名のコンフィギュレーション
 
@@ -142,4 +143,4 @@ Warehousing をモバイル デバイスで使用するときに、**倉庫ア�
 <a name="additional-resources"></a>追加リソース
 --------
 
-[Microsoft Dynamics 365 for Finance and Operations のインストールとコンフィギュレーション – 倉庫管理](install-configure-warehousing-app.md)
+[Warehousing アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)
