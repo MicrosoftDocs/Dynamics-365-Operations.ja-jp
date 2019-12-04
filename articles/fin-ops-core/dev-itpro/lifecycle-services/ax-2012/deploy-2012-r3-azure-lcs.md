@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 904e0ca794504910eded2ff2ec59c4b642de8705
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2d637db0fe86c1395facf7946a30183a3f584c90
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183260"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812070"
 ---
 # <a name="deploy-ax-2012-r3-on-azure-by-using-lifecycle-services-lcs"></a>Lifecycle Services (LCS) を使用して Azure に Dynamics AX 2012 R3 を配置する
 
@@ -47,10 +47,14 @@ Azure は Software-as-a-Service (SaaS)、 Platform-as-a-Service (PaaS)、およ�
 | サービスとしてのプラットフォーム (PaaS)       | ビルド      | ネットワーク、サーバー、またはオペレーティング システムを管理したり、制御しないでください。 PaaS は、複数の開発者向けです。 これにより、アプリケーションのビジネス ロジックに注目し、アプリケーションをコンセプトから起動にすばやく移すことができます。 |
 | サービスとしてのインフラストラクチャ (IaaS) | ホスト       | 仮想マシンやネットワーク構成を制御しますが、ハードウェアについて心配する必要はありません。                                                                                                     |
 
-AX 2012 R3 を Azure に配置するときは、IaaS オファリングを使用します。 つまり、Azure は仮想マシン、ストレージ、およびネットワーキング機能を提供します。 オペレーティング システム、アプリケーション、および仮想マシンにインストールされたデータを管理し、セキュリティで保護する必要があります。 [![DeployAXonAzureUsingLCS1](./media/deployaxonazureusinglcs1.jpg)](./media/deployaxonazureusinglcs1.jpg)
+AX 2012 R3 を Azure に配置するときは、IaaS オファリングを使用します。 つまり、Azure は仮想マシン、ストレージ、およびネットワーキング機能を提供します。 オペレーティング システム、アプリケーション、および仮想マシンにインストールされたデータを管理し、セキュリティで保護する必要があります。 
+
+[![DeployAXonAzureUsingLCS1](./media/deployaxonazureusinglcs1.jpg)](./media/deployaxonazureusinglcs1.jpg)
 
 ## <a name="architecture-of-ax-2012-r3-on-azure"></a>Azure 上の AX 2012 R3 のアーキテクチャ
-Azure に AX 2012 R3 を展開するには、Microsoft Dynamics Lifecycle Services を使用できます。 Lifecycle Services は、顧客およびパートナーが Microsoft Dynamics AX プロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。 Lifecycle Services Web サイトで利用できるクラウド ホスト環境ツールを使用すると、Azure 上に AX 2012 R3 環境を配置できます。 クラウド ホスト環境ツールを使用して配置するとき、デモまたは開発/テスト環境などの、Azure 上に配置する環境のタイプを選択する必要があります。 この選択に基づいて、クラウド ホスト環境ツールは Azure での仮想マシンの適切な数を提供します。 これらの仮想マシンには、AX 2012 R3 コンポーネント (およびそれらの必要物すべて) がインストール済みです。 たとえば、AX 2012 R3 テスト環境を配置する場合、アーキテクチャは次のようになります: [![DeployAXonAzureUsingLCS2](./media/deployaxonazureusinglcs2.jpg)](./media/deployaxonazureusinglcs2.jpg)   
+Azure に AX 2012 R3 を展開するには、Microsoft Dynamics Lifecycle Services を使用できます。 Lifecycle Services は、顧客およびパートナーが Microsoft Dynamics AX プロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。 Lifecycle Services Web サイトで利用できるクラウド ホスト環境ツールを使用すると、Azure 上に AX 2012 R3 環境を配置できます。 クラウド ホスト環境ツールを使用して配置するとき、デモまたは開発/テスト環境などの、Azure 上に配置する環境のタイプを選択する必要があります。 この選択に基づいて、クラウド ホスト環境ツールは Azure での仮想マシンの適切な数を提供します。 これらの仮想マシンには、AX 2012 R3 コンポーネント (およびそれらの必要物すべて) がインストール済みです。 たとえば、 AX 2012 R3 テスト環境を配置する場合、アーキテクチャは次のようになります: 
+
+[![DeployAXonAzureUsingLCS2](./media/deployaxonazureusinglcs2.jpg)](./media/deployaxonazureusinglcs2.jpg)   
 
 クラウド ホスト環境ツールを使用して、次のタイプの AX 2012 R3 環境を Azure 上に配置することができます。
 
@@ -79,7 +83,7 @@ Azure に AX 2012 R3 を展開するには、Microsoft Dynamics Lifecycle Servic
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 高可用性 | この環境を配置して、高可用性のためにコンフィギュレーションできる環境で AX 2012 R3 を使用します。 この環境には、既定で 14 台の仮想マシンが含まれます。 これらの仮想マシンには、Windows Server と、AX 2012 R3 を使用するために必要なソフトウェアが既にインストールされています。 注記: この環境を配置すると、この環境の AX 2012 R3 CU8 バージョンが既定で配置されます。 AX 2012 R3 RTM バージョンの配置を希望する場合は、配置中にそのバージョンを選択できます。 |
 
-仮想マシン、およびこれらの環境で各仮想マシンにインストールされているソフトウェアの詳細については、[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md) を参照してください。
+仮想マシン、およびこれらの環境で各仮想マシンにインストールされているソフトウェアの詳細については、 [Azure で AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md) を参照してください。
 
 ## <a name="the-process-for-deploying-ax-2012-r3-on-azure"></a>Azure に AX 2012 R3 を配置するためのプロセス
 Azure に AX 2012 R3 を配置するためのプロセスは複雑であり、以下の経験を持つシステム実装担当者が遂行する必要があります。

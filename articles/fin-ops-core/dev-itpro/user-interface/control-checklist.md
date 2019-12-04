@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba63f702959ef5e0b26118378bf43dd34ec8aed4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 61b9b4ce0afc381696dd45d05eb9bba271667b2d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183063"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812031"
 ---
 # <a name="control-checklist"></a>コントロールのチェックリスト
 
@@ -105,7 +105,7 @@ ms.locfileid: "2183063"
 
 -   JavaScript コード全体が無名関数にラップされています。
 -   ローカライズ可能な文字列は、カルチャ情報のグローバル化オブジェクトに格納されます。
--   ローカライズ可能な文字列は、[クライアントでローカライズ可能なラベルの作成および使用](create-localizable-labels-client.md)にある指示に従ってラベル ファイルに格納されます。
+-   ローカライズ可能な文字列は、 [ローカライズ可能なラベルの作成](create-localizable-labels-client.md) に記載の指示に従ってラベル ファイルに格納されます。
 -   コンストラクター内で初期化されていないすべてのプロパティに対して、既定値が提供されます。
 -   JavaScript コンストラクターは、コントロール JavaScript 名前空間に追加されます。
 -   **これ**への参照は、**本人**という名前のオブジェクトに格納され、コンストラクター全体で**これ**の代わりに**本人**が使用されます。
@@ -148,7 +148,7 @@ ms.locfileid: "2183063"
 
 #### <a name="localizable-labels"></a>ローカライズ可能なラベル
 
--   コントロールは、クライアント側でのみ使用される UI テキスト用のラベル ファイルを使用します (X++ では使用されません)。 これらのラベルを作成および使用する方法については、[クライアントでローカライズ可能なラベルを作成および使用する方法](create-localizable-labels-client.md) を参照してください。
+-   コントロールは、クライアント側でのみ使用される UI テキスト用のラベル ファイルを使用します (X++ では使用されません)。 これらのラベルを作成および使用する方法については、 [ローカライズ可能なラベルを作成する](create-localizable-labels-client.md) を参照してください。
 
 ### <a name="task-recorder-compatibility"></a>タスク レコーダーの互換性
 
@@ -200,7 +200,7 @@ ms.locfileid: "2183063"
 #### <a name="javascript"></a>JavaScript
 
 -   **スクリプト カプセル化** 各コントロールは、匿名関数では、すべての JavaScript をラップする必要があります。 この要件は、フレームワークのグローバル JavaScript 名前空間にコントロール固有のロジックが設定されないようにします。
--   **ローカライズ可能な文字列** 各コントロールは、コントロールの JavaScript によって使用される文字列メッセージを保存するグローバリゼーション API を使用する必要があります。 したがって、コントロールの JavaScript は、UI に表示される文字列をハードコードするべきではありません。 代わりに、JavaScript はグローバリゼーション API 経由で保存されている文字列メッセージを参照する必要があります。 グローバリゼーション・オブジェクトの文字列を HTML および JavaScript で読み込むには、$dyn.label API を使用し、ラベルの識別子を渡します。 詳細については、[クライアントでローカライズ可能なラベルの作成および使用](create-localizable-labels-client.md) を参照してください。
+-   **ローカライズ可能な文字列** 各コントロールは、コントロールの JavaScript によって使用される文字列メッセージを保存するグローバリゼーション API を使用する必要があります。 したがって、コントロールの JavaScript は、UI に表示される文字列をハードコードするべきではありません。 代わりに、JavaScript はグローバリゼーション API 経由で保存されている文字列メッセージを参照する必要があります。 グローバリゼーション・オブジェクトの文字列を HTML および JavaScript で読み込むには、$dyn.label API を使用し、ラベルの識別子を渡します。 詳細については、 [ローカライズ可能なラベルを作成する](create-localizable-labels-client.md) を参照してください。
 -   **既定値**各コントロールは、JavaScript で初期化されていないプロパティの既定値を提供する必要があります。 したがって、初期化時に値が JavaScript コンストラクターに渡されるプロパティ (つまり、X++ ランタイム クラスの FormProperties) は、これらのプロパティの既定値辞書を提供する必要があります。
 -   **JavaScript コンストラクター** 各コントロールは、コントロールの名前空間にコンストラクターを実装する必要があります。 このコンストラクターは、コントロールがクライアントにロードされたときに実行される最初のコード行です。 コンストラクターを完了した後、コンストラクターの関連付けられたオブジェクト、*これ*は、既定のデータ コンテキストとして HTML に渡されます。
 -   **基本コントロールの継承** 各コントロールのコンストラクターは、基本の JavaScript コントロールクラスから「継承」する必要があります。 基本の JavaScript コントロール クラスには、各コントロールに必要な動作が含まれています。
@@ -226,7 +226,7 @@ ms.locfileid: "2183063"
 -   プロパティを使用して値の設定可能にするコントロールについては、X++ で値が設定されるときに **SysTaskRecorder::addPropertyUserAction** が呼び出される必要があります。 このメソッド呼び出しは、プロパティの設定を記録するようにタスク レコーダーに指示します。
 -   コマンドに対して同様のメソッドが存在します (**SysTaskRecorder::addCommandUserAction**)。
 
-詳細については、[コントロールに対してタスク レコーダーが生成するテキストの決定](task-recorder-control-text.md) を参照してください。
+詳細については、 [コントロールに対してタスク レコーダーが生成するテキストの制御](task-recorder-control-text.md) を参照してください。
 
 #### <a name="task-recorder-playback-support"></a>タスク レコーダー再生サポート
 

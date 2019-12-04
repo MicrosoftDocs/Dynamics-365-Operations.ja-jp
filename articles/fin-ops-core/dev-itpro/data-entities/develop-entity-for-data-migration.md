@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51fb9d443b61b207d586342d12066267c786422b
-ms.sourcegitcommit: e16b8c248fc2c2a60dc7b803320f942a35b443c5
+ms.openlocfilehash: 9021e218698fb4ab4bc9e5c42ced04bfdb411897
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2577485"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771061"
 ---
 # <a name="develop-entities-for-data-migration"></a>データ移行のエンティティの開発
 
@@ -33,7 +33,7 @@ ms.locfileid: "2577485"
 このチュートリアルは、2 つのセクションと 4 つの演習に分かれています。 最初のセクションでは、Visual Studio で**プロジェクト カテゴリ** エンティティを構築します。 次に、このエンティティを使用して、データをエクスポートします。 2 番目のセクションで、新しいデータのインポート/エクスポート フレームワークを使用することで、**顧客グループ**および**顧客**エンティティを使用して複数のセットのファイルをインポートします。
 
 > [!NOTE]
-> このチュートリアルは、[データ エンティティの構築と消費](build-consuming-data-entities.md)よりもさらに少し難しく設計されています。 ステップ バイ ステップのガイドを提供するのではなく、シナリオ練習を設けて、期待される結果を示します。 エンティティをすでに理解していることを前提としています。
+> このチュートリアルは、 [データ エンティティの構築と使用](build-consuming-data-entities.md)よりも少し難しく設計されています。 ステップ バイ ステップのガイドを提供するのではなく、シナリオ練習を設けて、期待される結果を示します。 エンティティをすでに理解していることを前提としています。
 
 ## <a name="prerequisites"></a>前提条件
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスする必要があります。 インスタンスに管理者としてプロビジョニングする必要があります。

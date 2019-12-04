@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7857e1b646f69b2d3ce6668d5452a2978f0c279d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5f6f586dc4f5dc908c5658c0191fb98f356db7f1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183086"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812035"
 ---
 # <a name="validate-expected-values"></a>予測値を検証する
 
@@ -31,7 +31,7 @@ ms.locfileid: "2183086"
 
 ![メニュー項目の検証](media/validate-test-case.png)
  
-タスク記録の作成方法に関する詳細については、[タスク レコーダー](../../user-interface/task-recorder.md)を参照してください。
+タスク の作成方法についての詳細は、[タスク レコーダー リソース](../../user-interface/task-recorder.md)を参照してください。
 
 ## <a name="validate-expected-values-using-operators"></a>演算子を使用して予測値を検証する
 

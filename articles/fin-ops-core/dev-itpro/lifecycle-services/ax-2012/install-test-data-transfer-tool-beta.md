@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 16ae6a0f5fded1702a1131592511b36ff568b86e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c07d3c939741a12c01e0af87cbc27aa9e2d6039e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183247"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812061"
 ---
 # <a name="install-the-test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ) のインストール
 
@@ -47,9 +47,9 @@ Microsoft SQL Server の使用経験がある開発者またはデータベー�
 <a name="additional-resources"></a>追加リソース
 --------
 
-[Microsoft Dynamics AX 2012 用のテスト データ転送ツール (ベータ)](test-data-transfer-tool-beta-2012.md)
+[テスト データ転送ツール (ベータ)](test-data-transfer-tool-beta-2012.md)
 
-[Microsoft Dynamics AX 用のテスト データ転送ツール (ベータ) の実行](run-test-data-transfer-tool-beta.md)
+[テスト データ転送ツール (ベータ) の実行](run-test-data-transfer-tool-beta.md)
 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcb3f4fc96944e0feabcc88c6081d3f32a5102d9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d707b5ac280a18a20b10021703359e57bfec51e4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183271"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812075"
 ---
 # <a name="separation-of-localization-models"></a>ローカライズ モデルの分離
 
@@ -34,7 +34,7 @@ ms.locfileid: "2183271"
 
 時間の経過とともにモデルの数は増加すると予想されます。 モノシリック コード ベースを分割すると、スケーラビリティ、管理性、および保守性の向上など、多くの利点が提供されます。 ローカライズ ソリューションをより詳細なモデルに分割するためのローカライズ要件は、この作業に基づいています。 目標は、多国籍の顧客に同じ利益を提供することです。 
 
-機能を規制または競争のいずれかに分類した後、[ローカライズ機能の分類](classify-localization-features.md) で説明せれているように、これらの機能のコードを少なくとも 2 つのモデルに分割し、1 つのモデルは規制機能のため、また少なくとも 1 つのモデルは競合機能となります。 競合機能をさらに分割することができる場合 (たとえば、小売に関連する機能や固定資産に関連する機能など)、分割することをお勧めします。 ただし、さらに分割する必要はありません。 スタックを複数のモデルに分割する方法の詳細については、[モデルの分割を理解する](../dev-tools/model-split.md) を参照してください。
+機能を規制または競争のいずれかに分類した後、[ローカライズ機能の分類](classify-localization-features.md) で説明されているように、これらの機能のコードを少なくとも 2 つのモデルに分割し、1 つのモデルは規制機能、また少なくとも 1 つのモデルは競合機能となります。 競合機能をさらに分割することができる場合 (たとえば、小売に関連する機能や固定資産に関連する機能など)、分割することをお勧めします。 ただし、さらに分割する必要はありません。 スタックを複数のモデルに分割する方法の詳細については、[モデルの分割](../dev-tools/model-split.md) を参照してください。
 
 
 

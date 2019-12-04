@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 682235ee9e9ebdc23178954cff9e12b1d7151198
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 19006d94c9a5dc05c03eae724b7e54c4a8f50f7f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248721"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812006"
 ---
 # <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 
@@ -92,7 +92,7 @@ ms.locfileid: "2248721"
 - Azure でホストされた開発マシン (モバイル デバイスで指定できます)
 
 #### <a name="steps-to-debug-the-client-side"></a>クライアント側をデバッグする手順
-1. Azure でホストされた開発マシンで公開されている Web クライアントで、Finance and Operations アプリ用に公開されたモバイル ワークスペースがあることを確認します。 モバイル ワークスペースを公開する方法については、[モバイル ワークスペースの公開](../publish-mobile-workspace.md) を参照してください。
+1. Azure でホストされた開発マシンで公開されている Web クライアントで、Finance and Operations アプリ用に公開されたモバイル ワークスペースがあることを確認します。 モバイル ワークスペースを公開する方法については、 [モバイル ワークスペースの公開](../publish-mobile-workspace.md) を参照してください。
 
 2. Android デバイスで Finance and Operations アプリの Android デバッグ apk をインストールします。
     - 1 回のみ、apk ファイルのインストールを許可 -  **メニュー** > **設定** > **セキュリティ**の順に移動し、電話が Google Play ストア以外のソースからアプリをインストールするのを許可するよう**未知のソース**を確認します。
@@ -129,7 +129,7 @@ ms.locfileid: "2248721"
 - Azure でホストされた開発マシン (モバイル デバイスで指定できます)
 
 #### <a name="steps-to-debug-the-server-side"></a>サーバー側をデバッグする手順
-1. Azure でホストされた開発マシンで公開されている Web クライアントで、Finance and Operations アプリ用に公開されたモバイル ワークスペースがあることを確認します。 モバイル ワークスペースを公開する方法については、[モバイル ワークスペースの公開](../publish-mobile-workspace.md) を参照してください。
+1. Azure でホストされた開発マシンで公開されている Web クライアントで、Finance and Operations アプリ用に公開されたモバイル ワークスペースがあることを確認します。 モバイル ワークスペースを公開する方法については、 [モバイル ワークスペースの公開](../publish-mobile-workspace.md) を参照してください。
 
 2. アプリをデバイスで開いて、Azure でホストされた開発マシンを参照し、サインインします。
 

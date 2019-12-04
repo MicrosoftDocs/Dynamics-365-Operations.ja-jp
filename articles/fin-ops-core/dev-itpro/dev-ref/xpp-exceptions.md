@@ -3,7 +3,7 @@ title: X++ 例外処理
 description: このトピックでは、X++の例外処理について説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,22 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 691c17b33cf302b4972cc67db7a5760a8685ca36
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: bd12535768a989c78ae016931078e783398b7bf6
+ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550123"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "2778689"
 ---
 # <a name="x-exception-handling"></a>X++ 例外処理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++の例外処理について説明します。 使用してエラーを処理するには、**throw**、**try**...**catch**、**finally**、および **retry** ステートメントを使用して例外を生成して処理します。 *例外*はプログラム実行の順序から離れて規制ジャンプします。 プログラムの実行が再開する指示は、**try**...**catch** ブロックとスローされる例外のタイプによって決まります。 例外は**例外**列挙の値で表されます。 多くの場合スローされる 1 つの例外は、**例外::エラー**列挙値です。 一般的には、例外がスローされる前に infolog に診断情報を書き込みます。 **Global::error** メソッドは多くの場合、情報ログに診断情報を書き込む最善の方法です。 たとえば、メソッドは無効な入力パラメーター値を受け取る場合があります。 この場合、メソッドは例外をスローして、このエラー状況を処理するためのロジックを含む **catch** コード ブロックにすぐにコントロールを転送します。 例外がスローされる場合、コントロールを受け取る **Catch** ブロックの場所を必ずしも知る必要はありません。
+このトピックでは、X++の例外処理について説明します。 使用してエラーを処理するには、**throw**、**try**...**catch**、**finally**、および **retry** ステートメントを使用して例外を生成して処理します。 
+
+*例外*はプログラム実行の順序から離れて規制ジャンプします。 プログラムの実行が再開する指示は、**try**...**catch** ブロックとスローされる例外のタイプによって決まります。 例外は**例外**列挙の値で表されます。 多くの場合スローされる 1 つの例外は、**例外::エラー**列挙値です。 一般的には、例外がスローされる前に infolog に診断情報を書き込みます。 
+
+**Global::error** メソッドは多くの場合、情報ログに診断情報を書き込む最善の方法です。 たとえば、メソッドは無効な入力パラメーター値を受け取る場合があります。 この場合、メソッドは例外をスローして、このエラー状況を処理するためのロジックを含む **catch** コード ブロックにすぐにコントロールを転送します。 例外がスローされる場合、コントロールを受け取る **Catch** ブロックの場所を必ずしも知る必要はありません。
 
 ## <a name="throw-statements"></a>throw ステートメント
 
@@ -50,7 +54,16 @@ ms.locfileid: "2550123"
 
 ## <a name="try-catch-finally-and-retry-statements"></a>try ステートメント、catch ステートメント、最後に retry ステートメント
 
-例外がスローされると、その例外は、もっとも内側の <strong>try</strong> ブロックの <strong>キャッチ</strong> リストによって最初に処理されます。 スローされている例外の種類を処理する <strong>catch</strong> ブロックが見つかった場合、プログラム コントロールはその <strong>キャッチ</strong> ブロックにジャンプします。 <strong>catch</strong> リストに例外を指定するブロックがない場合は、システムは、次の一番内側の <strong>try</strong> ブロックの<strong>catch</strong> リストに例外を渡します。 <strong>catch</strong> ステートメントは、コードに表示されているのと同じ順序で処理されます。 最初の <strong>catch</strong> ステートメントで <strong>Exception::Error</strong> 列挙値を処理することが一般的です。 1 つの方法は、最後の <strong>catch</strong> ステートメントの例外タイプを未指定のままにすることです。 この場合、前回の <strong>catch</strong> ステートメントは、前のいずれかの <strong>catch</strong> ステートメントで処理されていないすべての例外を処理します。 この戦略は、最も外側の <strong>try</strong> ... <strong>catch</strong>ブロックに適しています。 <strong>try</strong>...<strong>catch</strong> ステートメントにオプションの *<strong><em>finally</em></strong>* 句を含めることができます。 <strong>finally</strong> 節のセマンティクスは、C\# と同じです。 <strong>finally</strong> 句のステートメントは、通常または例外を介してコントロールが <strong>try</strong> ブロックを離れるときに実行されます。 <strong>retry</strong> ステートメントは、<strong>catch</strong> ブロックでのみ書き込むことができます。 <strong>retry</strong> ステートメントは、関連付けられている <strong>try</strong> ブロックの最初のコード行までコントロールをジャンプさせます。 <strong>retry</strong> ステートメントは、例外の原因を <strong>catch</strong> ブロック内のコードにより修正できる場合に使用されます。 <strong>retry</strong> ステートメントは、<strong>try</strong> ブロック内のコードに成功するための別の機会を与えます。 <strong>retry</strong> ステートメントは、プログラム コントロールが <strong>try</strong> ブロックに入ってから情報ログに書き込まれたすべてのメッセージを消去します。 <strong>注記:</strong> <strong>再試行</strong>ステートメントにより、無限ループが発生しないことを確認する必要があります。 ベスト プラクティスとして、<strong>試行</strong>ブロックは、ループ中であるかを確認するテストができる変数を含める必要があります。
+例外がスローされると、その例外は、もっとも内側の <strong>try</strong> ブロックの <strong>キャッチ</strong> リストによって最初に処理されます。 スローされている例外の種類を処理する <strong>catch</strong> ブロックが見つかった場合、プログラム コントロールはその <strong>キャッチ</strong> ブロックにジャンプします。 <strong>catch</strong> リストに例外を指定するブロックがない場合は、システムは、次の一番内側の <strong>try</strong> ブロックの<strong>catch</strong> リストに例外を渡します。 <strong>catch</strong> ステートメントは、コードに表示されているのと同じ順序で処理されます。 
+
+最初の <strong>catch</strong> ステートメントで <strong>Exception::Error</strong> 列挙値を処理することが一般的です。 1 つの方法は、最後の <strong>catch</strong> ステートメントの例外タイプを未指定のままにすることです。 この場合、前回の <strong>catch</strong> ステートメントは、前のいずれかの <strong>catch</strong> ステートメントで処理されていないすべての例外を処理します。 この戦略は、最も外側の <strong>try</strong> ... <strong>catch</strong>ブロックに適しています。 
+
+<strong>try</strong>...<strong>catch</strong> ステートメントにオプションの *<strong><em>finally</em></strong>* 句を含めることができます。 <strong>finally</strong> 節のセマンティクスは、C\# と同じです。 <strong>finally</strong> 句のステートメントは、通常または例外を介してコントロールが <strong>try</strong> ブロックを離れるときに実行されます。 
+
+<strong>retry</strong> ステートメントは、<strong>catch</strong> ブロックでのみ書き込むことができます。 <strong>retry</strong> ステートメントは、関連付けられている <strong>try</strong> ブロックの最初のコード行までコントロールをジャンプさせます。 <strong>retry</strong> ステートメントは、例外の原因を <strong>catch</strong> ブロック内のコードにより修正できる場合に使用されます。 <strong>retry</strong> ステートメントは、<strong>try</strong> ブロック内のコードに成功するための別の機会を与えます。 <strong>retry</strong> ステートメントは、プログラム コントロールが <strong>try</strong> ブロックに入ってから情報ログに書き込まれたすべてのメッセージを消去します。 
+
+> [!NOTE] 
+> **再試行**ステートメントにより、無限ループが発生しないことを確認する必要があります。 ベスト プラクティスとして、**試行**ブロックは、ループ中であるかを確認するテストができる変数を含める必要があります。
 
     try 
     { 
@@ -106,7 +119,7 @@ ms.locfileid: "2550123"
 
 - <strong>SysInfoLogStr</strong> txt は、メッセージ テキストの <strong>str</strong> です。 また、<strong>strFmt("@SYS12345", strThingName)</strong> などのラベルの参照にもなります。
 - **URL** helpUrl は、アプリケーション エクスプローラーのヘルプ トピックの場所への参照です (**"KernDoc:\\\\\\\\Functions\\\\substr"**)。 \_sysInfoAction が提供された場合、このパラメータは無視されます。
-- **SysInfoAction** \_sysInfoAction は、**SysInfoAction** クラスを拡張するクラスのインスタンスです。 **description** メソッド、**run** メソッド、**pack** メソッド、および **unpack** メソッドは、子クラスに対して推奨されるメソッドのオーバーライドです。
+- **SysInfoAction** は、**SysInfoAction** クラスを拡張するクラスのインスタンスです。 **description** メソッド、**run** メソッド、**pack** メソッド、および **unpack** メソッドは、子クラスに対して推奨されるメソッドのオーバーライドです。
 
 ### <a name="globalinfo-method"></a>Global::info メソッド
 
@@ -114,11 +127,11 @@ ms.locfileid: "2550123"
 
 ### <a name="globalexceptiontextfallthrough-method"></a>Global::exceptionTextFallThrough メソッド
 
-場合によっては、**catch** ブロック内で何もしない場合があります。 ただし、空の **catch** ブロックがある場合、X++ コンパイラは警告が生成されます。 この警告を避けるためには、**catch** ブロック内の **Global::exceptionTextFallThrough** メソッドを呼び出します。 このメソッドは何もしませんが、コンパイラを満たします。
+場合によっては、**catch** ブロック内で何もしない場合があります。 ただし、空の **catch** ブロックがある場合、X++ コンパイラは警告が生成されます。 この警告を避けるためには、**catch** ブロック内の **Global::exceptionTextFallThrough** メソッドを呼び出します。 このメソッドは何もしませんが、コンパイラを満たし、意図を明示的に述べます。
 
 ## <a name="exceptions-inside-transactions"></a>トランザクション内の例外
 
-例外がトランザクションの内部でスローされる場合は、トランザクションが自動的にキャンセル (つまり、**ttsAbort** 操作が発生) されます。 この動作は、手動でスローされる例外とシステムがスローする例外の両方に適用されます。 **ttsBegin**-**ttsCommit** トランザクション ブロック内で例外がスローされるとき、そのトランザクション ブロック内の **catch** ステートメントは例外を処理できます。 代わりに、トランザクション ブロックの外部にある最も内側の **catch** ステートメントが、最初にテストされる **catch** ステートメントです。
+例外がトランザクションの内部でスローされる場合は、トランザクションが自動的にキャンセル (つまり、**ttsAbort** 操作が発生) されます。 この動作は、手動でスローされる例外とシステムがスローする例外の両方に適用されます。 **ttsBegin**-**ttsCommit** トランザクション ブロック内で例外がスローされるとき、そのトランザクション ブロック内の **catch** ステートメントは例外を処理できます。(ただし、**UpdateConflict** または **DuplicateKeyException** 以外の場合に限ります)。 代わりに、トランザクション ブロックの外部にある最も内側の **catch** ステートメントが、最初にテストされる **catch** ステートメントです。
 
 ## <a name="examples-of-exception-handling"></a>例外処理の例
 
@@ -332,7 +345,16 @@ ms.locfileid: "2550123"
 
 ### <a name="using-globalerror-with-a-sysinfoaction-parameter"></a>SysInfoAction パラメーターでの Global::error の使用
 
-コードが例外をスローすると、情報ログにメッセージを書き込むことができます。 **SysInfoAction** クラスを使用すると、これらの情報ログ メッセージをさらに便利にすることができます。 次の例では、**SysInfoAction** パラメーターは **Global::error** メソッドに渡されます。 **error** メソッドは、情報ログにメッセージを書き込みます。 ユーザーが情報ログ メッセージをダブルクリックすると、**SysInfoAction.run** メソッドが実行されます。 **run** メソッドでは、診断を支援したり、例外が発生した問題を解決したりするコードを書き込めます。 **Global::error** メソッドに渡されるオブジェクトは、**SysInfoAction** を拡張して記述するクラスから構築されます。 次のコード例は 2 つの部分で示されています。 最初の部分は、**Global::error** メソッドを呼び出して、返された値をスローするジョブを示しています。 **SysInfoAction\_PrintWindow\_Demo** クラスのインスタンスが**エラー** メソッドに渡されます。 2 番目の部分は、**SysInfoAction\_PrintWindow\_Demo** クラスを示します。
+コードが例外をスローすると、情報ログにメッセージを書き込むことができます。 **SysInfoAction** クラスを使用すると、これらの情報ログ メッセージをさらに便利にすることができます。 
+
+次の例では、**SysInfoAction** パラメーターは **Global::error** メソッドに渡されます。 **error** メソッドは、情報ログにメッセージを書き込みます。 ユーザーが情報ログ メッセージをダブルクリックすると、**SysInfoAction.run** メソッドが実行されます。 
+
+**run** メソッドでは、診断を支援したり、例外が発生した問題を解決したりするコードを書き込めます。 **Global::error** メソッドに渡されるオブジェクトは、**SysInfoAction** を拡張して記述するクラスから構築されます。 
+
+次のコード例は 2 つの部分で示されています。 
+
+- 最初の部分は、**Global::error** メソッドを呼び出して、返された値をスローするジョブを示しています。 **SysInfoAction\_PrintWindow\_Demo** クラスのインスタンスが**エラー** メソッドに渡されます。 
+- 2 番目の部分は、**SysInfoAction\_PrintWindow\_Demo** クラスを示します。
 
 #### <a name="part-1-calling-globalerror"></a>パート 1: Global::error を呼び出す
 
@@ -404,4 +426,4 @@ ms.locfileid: "2550123"
 | UpdateConflict                    | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 トランザクションは再試行できます (**catch** ブロックで **retry** ステートメントを使用します)。 |
 | UpdateConflictNotRecovered        | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
 | 警告                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告**例外をスローしないでください。                         |
-| [TransientSqlConnectionError](sql-connection-error.md)       | クエリ実行時にエラーが発生しました。 トランザクションはキャンセルされます。 この例外は、トランザクション内では検出されません。 |
+| [X++ の SQL 接続エラー例外](sql-connection-error.md)       | クエリ実行時にエラーが発生しました。 トランザクションはキャンセルされます。 この例外は、トランザクション内では検出されません。 |

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: bfa8b442e57ead9b12fbd16cf2f498cedacbb4c4
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: e2b2f26917894b7a7045b0d39d4ae23c1fbaeada
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2572629"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811615"
 ---
 # <a name="move-licenses-between-agreement-types"></a>契約タイプ間でライセンスを移動する
 
@@ -33,7 +33,7 @@ ms.locfileid: "2572629"
 契約の 1 つのタイプから別のタイプへの定期売買契約の移動のプロセスは、主に商業プロセスです。 LCS 実装プロジェクトの技術的影響は最小限に抑えられています。
 
 > [!NOTE]
-> 契約タイプ間のサブスクリプションの移動は、Azure Active Directory (Azure AD) テナントの移動と同じではありません。 契約の契約上の変更により、Azure AD テナントを移動する必要がある場合は、「[LCS 実装プロジェクトを別の Azure Active Directory テナントに移動する](move-lcs-implementation-project-tenant.md)」に記載されているプロセスにも従う必要があります。
+> 契約タイプ間のサブスクリプションの移動は、Azure Active Directory (Azure AD) テナントの移動と同じではありません。 契約の契約上の変更により、 Azure AD テナントを移動する必要がある場合は、 [LCS 実装プロジェクトを別の Azure AD テナントに移動する](move-lcs-implementation-project-tenant.md) に記載されているプロセスにも従う必要があります。
 
 3 つの標準環境に付属している定期売買: 製造環境、レベル 2 スタンダード承認テスト環境、およびレベル 1 開発者環境。 これらの環境は、契約タイプ間のサブスクリプションの移動の影響を受けません。 アクションは、顧客が追加アドオン環境を持っている場合にのみ、LCS で必要な場合があります。 この場合、アドオン環境に関連付けられているアクションには、パートナーまたは顧客リソースの側で最小限の作業量が必要になります。 環境間でデータの移動を効率化するには、最適な順序を決定するために前もって計画を作成する必要があります。
 
@@ -104,4 +104,4 @@ ms.locfileid: "2572629"
 
 > [!NOTE]
 > - サンド ボックス環境では、Azure BLOB ストレージに格納されているファイルの移動はサポートされていません。
-> - 小売顧客は、移動後に小売コンポーネントが正常に機能するため追加の手順が必要であることに注意する必要があります。 詳細については、[データ管理](../../dev-itpro/data-entities/data-entities-data-packages.md)を参照してください。
+> - 小売顧客は、移動後に小売コンポーネントが正常に機能するため追加の手順が必要であることに注意する必要があります。 詳細については、 [データ管理の概要](../../dev-itpro/data-entities/data-entities-data-packages.md) を参照してください。

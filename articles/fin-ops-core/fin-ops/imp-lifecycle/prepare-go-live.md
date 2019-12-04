@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 21f4685ab7dd2306488e8dbbb3ef32bcc92149ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1dd9c1b972fb452519fab08847d652d934d01c2d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180483"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812422"
 ---
 # <a name="prepare-for-go-live"></a>Go-Live の準備
 
@@ -57,7 +57,7 @@ ms.locfileid: "2180483"
 
 実稼働環境がライブ運用に使用されるようにするため、マイクロソフトは、LCS 手法で必要なアクティビティが完了した後、実装が運用フェーズに近づいている場合にのみ実稼働インスタンスをプロビジョニングします。 ご利用のサブスクリプションでの環境の詳細については、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。
 
-実稼動環境を要求するために使用される**構成**ボタンが利用可能になる前に、LCS 手法で分析、設計、開発、およびテスト フェーズを完了する必要があります。 LCS でフェーズを完了するには、まずそのフェーズで必要なすべてのステップを完了する必要があります。 フェーズにあるすべてのタスクが完了したら、そのフェーズ全体を完了することができます。 変更する必要がある場合、常に後からフェーズを再オープンすることができます。 ヘルプをさらに要求する場合は、[Finance and Operations アプリ顧客用の Lifecycle Services](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。
+実稼動環境を要求するために使用される**構成**ボタンが利用可能になる前に、LCS 手法で分析、設計、開発、およびテスト フェーズを完了する必要があります。 LCS でフェーズを完了するには、まずそのフェーズで必要なすべてのステップを完了する必要があります。 フェーズにあるすべてのタスクが完了したら、そのフェーズ全体を完了することができます。 変更する必要がある場合、常に後からフェーズを再オープンすることができます。 さらにヘルプが必要な場合は、 [Finance and Operations アプリの顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。
 
 ステップを完了するプロセスは 2 つの部分で成り立っています。
 
@@ -84,7 +84,7 @@ UAT フェーズ中に、実装したすべてのビジネス プロセスおよ
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack Go-live 評価
 
-すべての顧客は、実稼働環境を展開する前に Microsoft FastTrack チームとの Go-live レビューを完了する必要があります。 運用環境を要求する前に、この評価を正常に完了する必要があります。 Microsoft FastTrack に馴染みがあるユーザーは、「[Microsoft FastTrack for Dynamics 365 概要](../get-started/fasttrack-dynamics-365-overview.md)」を参照します。
+すべての顧客は、実稼働環境を展開する前に Microsoft FastTrack チームとの Go-live レビューを完了する必要があります。 運用環境を要求する前に、この評価を正常に完了する必要があります。 Microsoft FastTrack に馴染みがない場合は、 [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md) を参照してください。
 
 Go-Live の約 8 週間前に、FastTrack チームが Go-Live チェックリストへの記入を求めます。 
 

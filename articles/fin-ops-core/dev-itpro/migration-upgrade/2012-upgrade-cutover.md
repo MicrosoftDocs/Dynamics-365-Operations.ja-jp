@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 4107d42d06b24fdb54e0d33924b1a0189c348d53
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: cc41db964103786c7bf41a364cb4dfad74778f10
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622787"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811692"
 ---
 # <a name="upgrade-from-ax-2012---go-live-cutover"></a>AX 2012 からのアップグレード - Go live (切替)
 
@@ -41,7 +41,7 @@ ms.locfileid: "2622787"
 
 ## <a name="overall-process"></a>全体的なプロセス
 
-実稼動環境のアップグレード プロセスの高レベルの手順は切替モック プロセスと同じであり、詳細な指示については [切替テスト](./upgrade-cutover-testing.md) を参照してください。
+実稼動環境のアップグレード プロセスの高レベルの手順は切替モック プロセスと同じであり、詳細な指示については [AX 2012 からのアップグレード - 切替テスト (切替モック)](./upgrade-cutover-testing.md) を参照してください。
 
 
 1. AX 2012 AOS インスタンスをオフにします。
@@ -62,6 +62,6 @@ ms.locfileid: "2622787"
 -   アップグレードをスケジュールするには、[AX 2012 からのアップグレード- 切替テスト (切替モック)](./upgrade-cutover-testing.md) に説明されているように、LCS から「その他」のタイプのサービスリクエストを送信して、DSE チームにタイムスロットを要求します。 これは、優先タイム スロットが使用できるようにすることです。 週末の間などスロットの需要が大幅に高くなるため注意してください。できるだけ早くこれらを要求することにより優先スケジュールを達成できます。
 
 ## <a name="related-articles"></a>関連記事
-- [Onboarding](../../fin-ops/imp-lifecycle/onboard.md)
-- [サービス要求を送信する](../lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-- [AX 2012 からのアップグレード - 切替テスト](./upgrade-cutover-testing.md)
+- [オンボード](../../fin-ops/imp-lifecycle/onboard.md)
+- [Dynamics サービス エンジニア リング チームへのサービス要求の送信](../lifecycle-services/submit-request-dynamics-service-engineering-team.md).
+- [AX 2012 からのアップグレード - 切替テスト (切替モック)](./upgrade-cutover-testing.md)

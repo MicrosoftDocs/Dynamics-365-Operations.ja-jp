@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-4-12
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: b9e7bdc2984deea70f930fe4b027098352e0914d
-ms.sourcegitcommit: 2c0b27b7571408c629c14749c4bf8f37435aaa77
+ms.openlocfilehash: 78f5de8f7c81fbfc9487d713b04951353ff7b082
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2238662"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812154"
 ---
 # <a name="delivering-isv-solutions-using-one-version"></a>1 つのバージョンを使用した ISV ソリューションの提供
 
@@ -128,13 +128,13 @@ ISV ソリューションでも同様のアプローチに従うことを推奨�
 
 拡張性のあるソリューションを設計するには、標準アプリケーションを拡張してカスタマイズする方法だけでなく、顧客やパートナーによる ISV ソリューションのカスタマイズを有効にする方法についても考慮する必要があります。
 
-カスタマイズが邪魔ではなく加算的であることを確認し、[拡張機能のホーム ページ](../extensibility/extensibility-home-page.md) のガイダンスに従います。
+カスタマイズが侵入的ではなく加算的であることを確認し、 [拡張機能のホーム ページ](../extensibility/extensibility-home-page.md) のガイダンスに従います。
 
 独自のカスタマイズを構築する方法について過度にクリエイティブにならないでください。 そうでなければ、疑わしい API を拡張してしまい、後の更新でソリューションが壊れるリスクが増します。 代わりに [拡張機能の要求](../extensibility/extensibility-requests.md) をログに記録して、Microsoft が破損に対してより弾力があるはっきりした API を作成するよう依頼してください。
 
 拡張可能なソリューションを設計します。 インスピレーションを得るには [拡張可能なコードを書く](../extensibility/writing-extensible-code.md) を参照してください。
 
-顧客の実装を壊すことを防ぐために下位互換性を考慮して設計します。 良い戦略は、拡張コードをフックやラップするために、何を提供するかを明確にすることです。 メソッドを装飾する方法によって、どのメソッドに対して拡張機能を有効にするかを細かく制御できます。 詳細については [メソッドを拡張可能にする属性](../extensibility/extensibility-attributes.md) を参照してください。
+顧客の実装を壊すことを防ぐために下位互換性を考慮して設計します。 良い戦略は、拡張コードをフックやラップするために、何を提供するかを明確にすることです。 メソッドを装飾する方法によって、どのメソッドに対して拡張機能を有効にするかを細かく制御できます。 詳細については、 [メソッドを拡張可能にする属性](../extensibility/extensibility-attributes.md) を参照してください。
 
 ### <a name="data-upgrade"></a>データ アップグレード
 
@@ -182,7 +182,7 @@ Microsoft には検証をサポートする広範なテスト スイートがあ
 
 開発者向けの SysTest 自動化フレームワークに加えて、[Regression Suite Automation Tool (RSAT)](using-task-guides-and-bpm-to-create-user-acceptance-tests.md) ではコードを記述する必要なく業務プロセスを自動化できます。 機能のユーザーは RSAT を使用して重要なテストを記録し、UAT の一部を自動化できます。 テストの自動化の構築を開始するときも RSAT を使用できます。
 
-最近 Microsoft は [承認テスト ライブラリ (ATL) 自動化フレームワーク](../perf-test/acceptance-test-library.md) と、付随するライブラリをリリースしました。 このフレームワークは開発者を対象にしており、単体テストよりも包括的なテストを構築できます。 フレームワークに付随するライブラリは、テスト スイートの構築をシームレスな方法にします。
+最近、Microsoft は [承認テスト ライブラリのリソース](../perf-test/acceptance-test-library.md) と、付随するライブラリをリリースしました。 このフレームワークは開発者を対象にしており、単体テストよりも包括的なテストを構築できます。 フレームワークに付随するライブラリは、テスト スイートの構築をシームレスな方法にします。
 
 ### <a name="currently-released-products--testing-binary-and-functional-compatibility"></a>現在リリースされている製品 - バイナリと機能の互換性のテスト
 

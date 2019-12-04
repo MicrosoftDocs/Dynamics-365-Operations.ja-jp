@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: b54f3ca25a1a96fff09688f963b5a7b3ebbb8b50
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 33d6bd1bfa4eca7daddb3680fcf06c368ff57486
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174576"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771530"
 ---
 # <a name="create-custom-designs-for-business-documents"></a>ビジネス ドキュメントのカスタム デザインを作成する
 
@@ -44,7 +44,7 @@ Microsoft Dynamics 365 Finance には、カスタム レポート ソリュー�
 ## <a name="customize-a-business-document"></a>ビジネス ドキュメントのカスタマイズ
 次のチュートリアルでは、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを導入し、次に印刷管理を使用して新しいデザインを選択するプロセスを示します。 このソリューションには、Application Suite モデルの一部として標準アプリケーションで提供される**販売の確認**レポートのカスタム設計定義が含まれています。 アプリケーションのカスタマイズ内容は、拡張モデルで定義されます。
 
-1. **アプリケーション カスタマイズの新しいモデルを作成します。** 拡張モデルに関する詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md) を参照してください。 この例では、**アプリケーション スイート拡張子**というモデルを追加し、それはアプリケーション スイート、アプリケーション プラットフォーム、およびアプリケーション基盤パッケージを参照します。
+1. **アプリケーション カスタマイズの新しいモデルを作成します。** 拡張モデルに関する詳細については、 [拡張機能およびオーバーレイによるカスタマイズ](../extensibility/customization-overlayering-extensions.md) を参照してください。 この例では、**アプリケーション スイート拡張子**というモデルを追加し、それはアプリケーション スイート、アプリケーション プラットフォーム、およびアプリケーション基盤パッケージを参照します。
 2. **Microsoft Visual Studio で、新しいプロジェクトを作成します。** プロジェクトが拡張モデルに関連付けられていることを確認します。 次の図はプロジェクト設定を示します。
 
     [![Visual Studio でのプロジェクト設定](./media/app-extension-vs-project-settings.png)](./media/app-extension-vs-project-settings.png)

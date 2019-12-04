@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a94e02ce6ff9099c659af29143a4ef5859e6358
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 01c6a4290cd99484741916308ff42f55d1a127b0
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183421"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771012"
 ---
 # <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 
@@ -92,7 +92,7 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 
     ![環境クイック表示](./media/postman12.png)
 
-14. OData サービスを介して、目的のデータ エンティティに対して作成、読み取り、更新、または削除 (CRUD) 操作を実行する要求を作成します。 必要に応じて URL を作成します。 詳細については、「[Odata](odata.md)」を参照してください。 前に示したように、環境に格納されている変数を使用して、要求をパラメーター化することが便利であることがわかる場合があります。 次の GET クエリの例では、**Customer Account** パラメーターが使用されています。 クエリは、環境変数で指定された顧客アカウントの名前とアドレスの詳細を返します。 特殊文字は、URL に正しくエンコードされる必要があることに注意してください。
+14. OData サービスを介して、目的のデータ エンティティに対して作成、読み取り、更新、または削除 (CRUD) 操作を実行する要求を作成します。 必要に応じて URL を作成します。 詳細については、[データ プロトコル (OData) を開く](odata.md) を参照してください。 前に示したように、環境に格納されている変数を使用して、要求をパラメーター化することが便利であることがわかる場合があります。 次の GET クエリの例では、**Customer Account** パラメーターが使用されています。 クエリは、環境変数で指定された顧客アカウントの名前とアドレスの詳細を返します。 特殊文字は、URL に正しくエンコードされる必要があることに注意してください。
 
     ```
     https://[Finance and Operations instance URL]/data/Customers?$format=json&$filter=CustomerAccount%20eq%20%27{{custAccount}}%27&$select=CustomerAccount,Name,AddressDescription,FullPrimaryAddress

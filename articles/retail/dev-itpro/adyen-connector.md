@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: beae1be71bdb761fcc0c45b8ea553286c0a633f2
-ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
+ms.openlocfilehash: 67a3594b4c235912817d1ca2113a1b716feeccfd
+ms.sourcegitcommit: 7ef9e61f0388b5241894d40ff39f84a112232a5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2666843"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2694419"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -114,6 +114,7 @@ ms.locfileid: "2666843"
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_38p5 | adyen_v1_45p3 |
+
 ---
 
 ### <a name="supported-payment-terminals"></a>サポートされる支払端末

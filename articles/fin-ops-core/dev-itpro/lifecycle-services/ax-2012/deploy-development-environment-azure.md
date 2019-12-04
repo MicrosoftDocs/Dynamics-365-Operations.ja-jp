@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 9904b69252bd839a8ee3b17250a65e5d58bbb623
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: df28d81831799e0e37e987e250d99ab951400700
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183258"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812067"
 ---
 # <a name="deploy-development-environments-on-azure"></a>Azure での開発環境の配置
 
@@ -36,7 +36,7 @@ ms.locfileid: "2183258"
 |                |                                                                                                                                                                 |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **カテゴリ**   | **前提条件**                                                                                                                                                |
-| 必要なタスク | [Azure 上での Microsoft Dynamics AX 2012 R3 の配置計画](plan-2012-r3-deployment-azure.md) |
+| 必要なタスク | [Azure で AX 2012 R3 の配置を計画する](plan-2012-r3-deployment-azure.md) |
 
 ## <a name="1-log-on-to-lifecycle-services"></a>1. ライフサイクル サービスにログオンする
 Microsoft Dynamics Lifecycle Services は、顧客およびパートナーが Microsoft Dynamics AX の管理に使用できるクラウドベースの共同ワークスペースです。 Azure に AX 2012 R3 を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。 [Lifecycle Services にログオン](https://lcs.dynamics.com/en/)
@@ -120,7 +120,7 @@ Active Directory は Azure 仮想ネットワークに必須です。 Active Dir
 <td>&lt;DomainName&gt;DynamicsInstallUser</td>
 <td>AX 2012 R3 インストール アカウント 
 
-    Note: This account must have permission to join computers to the domain. To give this account permission, complete the following steps:
+**注記:** このアカウントは、コンピューターをドメインに参加させるためのアクセス許可を持つ必要があります。 このアカウントにアクセス許可を与えるには、次の手順を実行します。
 <ol>
 <li><strong>開始</strong>をクリックし、dsa.msc 型で<strong>実行</strong>をクリックし、 <strong>OK</strong> をクリックします。</li>
 <li>作業ウィンドウで、ドメイン ノードを展開します。</li>
@@ -252,7 +252,7 @@ Azure に開発環境を配置するには、以下の手順に従ってくだ�
 
 11. **完了**をクリックします。 **環境の展開** パネルが再表示されます。
 12. 配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。
-    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md)」を参照してください。
+    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、 [Azure 上での AX 2012 R3の 配置計画](plan-2012-r3-deployment-azure.md) を参照してください。
     -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 13. ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
@@ -264,7 +264,7 @@ Azure に開発環境を配置するには、以下の手順に従ってくだ�
 
 ### <a name="log-on-to-the-aos-virtual-machine"></a>AOS 仮想マシンへのログオン
 
-AOS-&lt;GUID&gt; 仮想マシンに &lt;DomainName&gt;DynamicsInstallUser アカウントを使用してログオンします。 手順については、「仮想マシンにどのようにログオンしますか?」を参照してください。 [Azure での Microsoft Dynamics AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md)という記事を参照してください。
+AOS-&lt;GUID&gt; 仮想マシンに &lt;DomainName&gt;DynamicsInstallUser アカウントを使用してログオンします。 手順については、「仮想マシンにどのようにログオンしますか?」を参照してください。 [Azure で AX 2012 R3 配置を管理する](manage-2012-r3-deployment-azure.md) を参照してください。
 
 ### <a name="compile-ax-2012-r3"></a>AX 2012 R3 のコンパイル
 
@@ -278,13 +278,14 @@ AX 2012 R3 クライアントを開いて、初期化チェックリストを完
 
 サンプル データを環境にインストールする場合は、次の手順を実行します。
 
-1.  SQL-&lt;GUID&gt; 仮想マシンにログオンします。 DynamicsInstallUser アカウントを使用して仮想マシンにログオンします。 手順については、「仮想マシンにどのようにログオンしますか?」を参照してください。 [Azure での Microsoft Dynamics AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md)という記事を参照してください。
+1.  SQL-&lt;GUID&gt; 仮想マシンにログオンします。 DynamicsInstallUser アカウントを使用して仮想マシンにログオンします。 手順については、「仮想マシンにどのようにログオンしますか?」を参照してください。 [Azure で AX 2012 R3 配置を管理する](manage-2012-r3-deployment-azure.md) を参照してください。
 2.  仮想マシンで次の場所に移動します: F:TestTransferTool
-3.  テスト データ転送ツールをインストールします。 手順については、[Microsoft Dynamics AX 用のテスト データ転送ツール (ベータ版) をインストールする](install-test-data-transfer-tool-beta.md)を参照してください。
+3.  テスト データ転送ツールをインストールします。 手順については、 [テスト データ転送ツール (ベータ版) をインストールする](install-test-data-transfer-tool-beta.md) を参照してください。
 4.  コマンド プロンプトを開いて、次の場所にアクセスします: C:\Program Files (x86) \Microsoft Dynamics AX 2012 テスト データ確認転送ツール (ベータ)
 5.  次のコマンドを実行します: dp.exe import F:DemoData MicrosoftDynamicsAx
 
-**注:** サンプル データには、AX 2012 R3 の試用版のライセンス キーが含まれています。 サンプル データをインストールしないように選択する場合は、開発またはテスト用の試用版ライセンス キーを [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) または [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898#FileId=57028) からダウンロードすることができます
+> [!NOTE]
+> サンプル データには、AX 2012 R3 の試用版のライセンス キーが含まれています。 サンプル データをインストールしないように選択する場合は、開発またはテスト用の試用版ライセンス キーを [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) または [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898#FileId=57028) からダウンロードすることができます
 
 ### <a name="give-users-access"></a>ユーザーのアクセス許可を付与します
 
@@ -293,7 +294,8 @@ AX 2012 R3 クライアントを開いて、初期化チェックリストを完
 -   CLI- &lt;GUID&gt; 仮想マシンのリモート デスクトップ ユーザー グループに各ユーザーのドメイン アカウントを追加します。
 -   ユーザーに AX 2012 R3 へのアクセス許可を付与します。 手順については、[Microsoft Dynamics AX で新しいユーザーを作成する](https://technet.microsoft.com/library/aa548139.aspx)を参照してください。
 
-**注:** VPN 接続とドメイン信頼を作成しない場合でも、ユーザーに AX 2012 R3 へのアクセス権を与えることができます。 これを行うには、ドメイン コントローラとして機能する仮想マシンにログオンし、各ユーザーのドメイン アカウントを作成する必要があります。 その後、上記の 2 つのタスクを完了する必要があります。
+> [!NOTE]
+> VPN接続とドメインの信頼を作成しない場合でも、ユーザーに AX 2012 R3 へのアクセス権を与えることができます。 これを行うには、ドメイン コントローラとして機能する仮想マシンにログオンし、各ユーザーのドメイン アカウントを作成する必要があります。 その後、上記の 2 つのタスクを完了する必要があります。
 
 ### <a name="set-up-and-configure-ax-2012-r3"></a>AX 2012 R3 の設定およびコンフィギュレーション
 
@@ -398,7 +400,8 @@ Azure 上で AX 2012 R3 を設定およびコンフィギュレーションす�
 | <DomainName>BCProxyUser         | ビジネス コネクタ プロキシとして使用されるアカウント。                                                                                                                                                                                                                                                                                                       |
 | <DomainName>AXServiceUser       | AOS<GUID> 仮想マシンで次のサービスを実行するためにアカウントが使用されます: Microsoft Dynamics AX Data Import/Export Framework Service および Microsoft Dynamics ERP RapidStart Connector。 アカウントは、次のサービスを CLI-<GUID> 仮想マシンで実行するためにも使用されます: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client。 |
 
-注記: パスワードは、[Lifecycle Services](https://lifecycleservices.dynamics.com/en/) のクラウド ホスト環境ページに表示されます。
+> [!NOTE] 
+> パスワードは、[Lifecycle Services](https://lifecycleservices.dynamics.com/en/) のクラウド ホスト環境ページに表示されます。
 
 ### <a name="local-administrator-accounts"></a>ローカル管理者アカウント
 

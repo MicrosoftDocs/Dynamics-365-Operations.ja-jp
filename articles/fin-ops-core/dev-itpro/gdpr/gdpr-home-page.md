@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecc4be67deafc4d14386c0ac9eb136feb5f10462
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 9fc5ba83fb5e15555617a9d8ff0e26d1137a527c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248825"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812103"
 ---
 # <a name="respond-to-gdpr-data-requests-resources"></a>GDPR データ要求への応答のリソース
 
@@ -34,17 +34,17 @@ ms.locfileid: "2248825"
 ## <a name="overview"></a>概要
 
 - [一般データ保護規則の概要](gdpr-guide.md)
-- [個人検索レポートを使用](gdpr-person-search-report.md)
+- [個人検索レポート](gdpr-person-search-report.md)
 - [個人検索レポートの拡張](gdpr-extend-person-search-report.md)
-- [組織内で機密データへのアクセス権があるロールをレビューする](gdpr-auditing-sensitive-data.md)
+- [機密データへのアクセスを管理](gdpr-auditing-sensitive-data.md)
 
 
 ## <a name="product-specific-considerations"></a>製品固有の考慮事項
 
-- [Microsoft Dynamics AX 2012 からの DSR データ要求に対応する](gdpr-ax2012.md)
-- [Mircosoft Dynamics 365 Talent からの DSR データ要求に対応する](respond-dsr-request-talent.md)
+- [AX 2012 の個人データ要求への対応](gdpr-ax2012.md)
+- [Talent での個人データ要求に対応](respond-dsr-request-talent.md)
 - [一般データ保護規則の概要](gdpr-guide.md)
-- [Lifecycle Services の GDPR データ要求](gdpr-lcs.md)
+- [Lifecycle Services (LCS) に対する GDPR データ要求](gdpr-lcs.md)
 
 ## <a name="compliance-manager"></a>コンプライアンス マネージャー
 コンプライアンス マネージャーは、組織が GDPR のような複雑なコンプライアンス責務を満たすのを支援するために設計された、クロス Microsoft クラウド サービス ソリューションです。 これにより、Microsoft クラウド サービスを使用する場合、推奨される操作およびステップ バイ ステップ ガイダンスと共に、データ保護規制に対するコンプライアンス方針を反映するリアルタイムのリスク評価が実行されます。
@@ -55,17 +55,17 @@ ms.locfileid: "2248825"
 ### <a name="resources"></a>リソース
 コンプライアンス マネージャーの詳細と、複雑なコンプライアンス義務を満たすためにどのようにコンプライアンス マネージャーが役に立つかについて学習できるリソースは数多くあります。
 
-> [Microsoft 365 - コンプライアンス マネージャー プレビュー](https://blogs.office.com/2017/11/16/microsoft-365-helps-businesses-increase-trust-and-innovation-through-compliance-with-compliance-manager-preview/) (Office、2017 年 11 月)
-> 
-> [コンプライアンス マネージャー プレビューが閲覧可能になりました](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Compliance-Manager-Preview-is-now-available/ba-p/124662) (Tech Community 2017 年 11 月)
-> 
-> [新しいサービス信頼ポータルについて理解する](https://blogs.technet.microsoft.com/scottschnoll/2017/11/21/get-to-know-the-new-service-trust-portal/) (TechNet 2017 年 11 月) 
-> 
-> [コンプライアンス マネージャーの発表](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Manage-Your-Compliance-from-One-Place-Announcing-Compliance/ba-p/106493) (Tech Community 2017 年 9 月)
-> 
-> [現代の職場に力を与えるために、インテリジェンス、管理、セキュリティを強化する](https://blogs.office.com/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office 2017 年 9 月)
-> 
-> [GDPR コンプライアンス を迅速化する新しい Microsoft 365 機能](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (マイクロソフト セキュリティ、2017 年 9 月)
+- [Microsoft 365 - コンプライアンス マネージャー プレビュー](https://blogs.office.com/2017/11/16/microsoft-365-helps-businesses-increase-trust-and-innovation-through-compliance-with-compliance-manager-preview/) (Office、2017 年 11 月)
+
+- [コンプライアンス マネージャー プレビューが閲覧可能になりました](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Compliance-Manager-Preview-is-now-available/ba-p/124662) (Tech Community 2017 年 11 月)
+
+- [新しいサービス信頼ポータルについて理解する](https://blogs.technet.microsoft.com/scottschnoll/2017/11/21/get-to-know-the-new-service-trust-portal/) (TechNet 2017 年 11 月) 
+
+- [コンプライアンス マネージャーの発表](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Manage-Your-Compliance-from-One-Place-Announcing-Compliance/ba-p/106493) (Tech Community 2017 年 9 月)
+
+- [現代の職場に力を与えるために、インテリジェンス、管理、セキュリティを強化する](https://blogs.office.com/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office 2017 年 9 月)
+
+- [GDPR コンプライアンス を迅速化する新しい Microsoft 365 機能](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (マイクロソフト セキュリティ、2017 年 9 月)
 
 
 ## <a name="additional-resources"></a>その他のリソース

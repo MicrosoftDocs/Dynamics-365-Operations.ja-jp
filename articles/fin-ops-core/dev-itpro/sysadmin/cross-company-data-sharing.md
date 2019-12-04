@@ -3,7 +3,7 @@ title: 会社間データ共有
 description: このトピックでは、企業間のデータ共有について説明します。 会社間共有は、Finance and Operations 配置において、参照およびグループ データを会社間で共有するためのメカニズムです。
 author: aprilolson
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 11/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7a952668da0850a3120be991f5f945d150a68576
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e1e4a3f245c226cc040580a80baa8d221728e7ac
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183077"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811944"
 ---
 # <a name="cross-company-data-sharing"></a>会社間データ共有
 
@@ -55,7 +55,8 @@ ms.locfileid: "2183077"
 -   複製されるフィールド
 -   レプリケーションに参加するエンティティ
 
-**重要:** 顧客は、LCS から使用可能な Microsoft データ テンプレートを変更できますが、このシナリオはサポートされていません。
+> [!IMPORTANT]
+> 顧客は、LCS から使用可能な Microsoft データ テンプレートを変更できますが、このシナリオには対応していません。
 
 ### <a name="conflict-resolution"></a>競合の解決
 
@@ -84,8 +85,8 @@ Microsoft データ パッケージの複数のエンティティに、エンテ
 -   サブタイプ/スーパータイプ テーブルまたは日付の有効性ルールを持つテーブルの複製などの複雑なシナリオ
 -   マスター データの管理
 
-## <a name="customer-and-vendor-master-data-sharing-preview"></a>顧客および仕入先のマスター データ共有 (プレビュー)
-顧客および仕入先のマスタ データ共有により、複数の会社間で顧客および仕入先のデータを共有することができます。 この機能は、バージョン 8.0 およびそれ以降の顧客が、制限のある状態で使用できます。 この機能のプレビュー プログラムに登録する場合は、調査票 [データ共有申請](https://aka.ms/MSDYN365FODataSharing) に記入し、製品サポートに問い合わせてください。
+## <a name="customer-and-vendor-master-data-sharing"></a>顧客および仕入先のマスター データ共有
+顧客および仕入先のマスタ データ共有により、複数の会社間で顧客および仕入先のデータを共有することができます。 この機能は、バージョン 8.0 およびそれ以降の顧客が使用できます。 この機能に関してご検討されている場合は、以下のアンケートに記入し、 [データ共有申請](https://aka.ms/MSDYN365FODataSharing)  サポートに問い合わせてください。
 
 > [!NOTE]
 > 顧客または仕入先に対する既定の分析コードの設定は、会社間で共有することはできません。 会社間のデータ共有用に顧客または仕入先レコードの構成すると、**DefaultDimension**フィールドが無効になり、データ共有ポリシーに含まれることができません。
@@ -98,7 +99,7 @@ Microsoft データ パッケージの複数のエンティティに、エンテ
 3.  **資産タイプ** リストで、**データ パッケージ**をクリックします。
 4.  使用可能なデータ パッケージ ファイルのいずれかをクリックしてダウンロードします。
 
-テンプレートの使用方法の詳細については、[会社間財務データ共有のコンフィギュレーション (タスク ガイド)](../data-entities/tasks/configure-financial-cross-company-data-sharing.md) を参照してください。
+テンプレートの使用方法の詳細については、 [会社間で財務データの共有を構成する](../data-entities/tasks/configure-financial-cross-company-data-sharing.md) を参照してください。
 
 ## <a name="currently-supported-cross-company-data-sharing-templates"></a>現時点では、会社間のデータ共有テンプレートがサポートされています
 <table>

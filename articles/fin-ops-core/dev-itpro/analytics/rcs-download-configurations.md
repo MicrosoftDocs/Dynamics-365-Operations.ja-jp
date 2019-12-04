@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f0d1ebb6874eefca44ce208e53172d6809b2aaf4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5d62e6393885d51f5ac5626b98d247ed0fad1566
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183452"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772477"
 ---
 # <a name="import-electronic-reporting-er-configurations-from-regulatory-configuration-services-rcs"></a>規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
 
@@ -35,10 +35,10 @@ ms.locfileid: "2183452"
 
 この例では、システム管理者または電子報告開発者ロールのユーザーが RCS から ER コンフィギュレーションの新しいバージョンをインポートする方法を示します。 この例では、RCS インスタンスで構成されている ER コンフィギュレーションの目的のバージョンを選択して、Litware, Inc. というサンプル企業の現在のインスタンスにそのバージョンをインポートします。ER コンフィギュレーションは会社間で共有されるため、すべての会社でこれらの手順を完了することができます。
 
-この例の手順を完了するには、まず[コンフィギュレーションプロバイダーを作成し、それを有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md)にある手順を完了する必要があります。 **完了**または**共有**のステータスを持つ 1 つ以上の ER 構成を含む RCS インスタンスへのアクセスも必要です。
+この例の手順を完了するには、まず、[コンフィギュレーション プロバイダーを作成し、それを有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) にある手順を完了する必要があります。 **完了**または**共有**のステータスを持つ 1 つ以上の ER 構成を含む RCS インスタンスへのアクセスも必要です。
 
 1. **組織管理  \> ワークスペース \> 電子申告** の順に移動します。
-2. **ローカライズのコンフィギュレーション** ページの **構成プロバイダー** セクションで、Litware, Inc. サンプル会社のコンフィギュレーション プロバイダーが一覧に表示されていること、および**アクティブ**とマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、[コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md)のステップに従います。
+2. **ローカライズのコンフィギュレーション** ページの **構成プロバイダー** セクションで、Litware, Inc. サンプル会社のコンフィギュレーション プロバイダーが一覧に表示されていること、および**アクティブ**とマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、[コンフィギュレーション プロバイダーを作成し、それを有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) の手順に従います。
 3. RCS 環境が会社に対してプロビジョニングされていない場合、**外部リンク** セクションの **規制サービス - 構成** を選択します。 次に、RCS 環境をプロビジョニングする指示に従います。
 4. **関連するリンク** セクションで、**電子申告のパラメーター** を選択します。
 5. **電子申告のパラメーター** ページで、**RCS** タブを選択します。
@@ -66,4 +66,4 @@ ms.locfileid: "2183452"
 
 ## <a name="additional-resource"></a>その他のリソース
 
-- [電子申告の概要](general-electronic-reporting.md)
+- [電子申告 (ER) の概要](general-electronic-reporting.md)

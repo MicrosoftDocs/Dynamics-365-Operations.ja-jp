@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-8
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ffb4c1c2f2ecb0958c013011ee8a30bda6a89cd5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: e00b78793a76e469058b8df5713228e8fa60c0d4
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251003"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832687"
 ---
 # <a name="integration-from-dynamics-365-talent-to-dynamics-365-finance"></a>Dynamics 365 Talent から Dynamics 365 Finance への統合
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 このトピックでは、Dynamics 365 Talent および Dynamics 365 Finance から統合できる機能について説明します。 [データ インテグレーター](https://docs.microsoft.com/powerapps/administrator/data-integrator) と共に使用可能な Talent から Finance へのテンプレートにより、ジョブ、職位、および作業者のデータのフローが可能になります。 Talent から Finance へのデータ フロー。 テンプレートでは、Finance から Talent にデータを戻す機能は提供されません。 
 
@@ -45,7 +45,7 @@ Talent から Finance へのソリューションは、次のタイプのデー�
 ## <a name="template-and-tasks"></a>テンプレートおよびタスク
 
 テンプレートにアクセスするには、次の操作を行います。
-1. [PowerApps 管理センター](https://admin.powerapps.com/) を開きます。 
+1. [Power Apps 管理センター](https://admin.powerapps.com/) を開きます。 
 1. **プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。 新しいプロジェクトは、Finance に統合する法人ごとに作成する必要があります。
 
 Talent から Finance にレコードを同期するには、次のテンプレートを使用します。

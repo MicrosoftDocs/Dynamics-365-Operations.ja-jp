@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 717ec352997df3c87bbdc3dc836ec8da0bade13a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 03cba235e34fa2e241d878e90763519ac84c9d29
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183302"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812105"
 ---
 # <a name="support-for-segmented-entry-controls-on-dialogs"></a>ダイアログ上のセグメント化されたエントリ コントロールをサポート
 
@@ -62,16 +62,16 @@ ms.locfileid: "2183302"
 -   勘定構造選択のサポート。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[セグメント化されたエントリ コントロールのメタデータ詳細](segmented-entry-control-metadata-specification.md)
+[セグメント化されたエントリ コントロールのデザイン時メタデータ](segmented-entry-control-metadata-specification.md)
 
-[セグメント化されたエントリ コントロールの Parm メソッド詳細](segmented-entry-control-parm-method-specification.md)
+[セグメント化されたエントリ コントロールの Parm メソッド](segmented-entry-control-parm-method-specification.md)
 
 [セグメント化されたエントリ コントロールの移行](segmented-entry-control-conversion.md)
 
-[セグメント化されたエントリ コントロール - 移行のガイダンス](segmented-entry-control-migration-guidance.md)
+[セグメント化されたエントリ コントロールに関する移行ガイダンス](segmented-entry-control-migration-guidance.md)
 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5942e44a1488eb12b5386b137658ef3a708eb42a
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 62276463120f4bdc6d7d4b229a6bd8d34fc0e2e2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570536"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812034"
 ---
 # <a name="diagnose-issues-and-analyze-performance-by-using-trace-parser"></a>Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 
@@ -41,10 +41,16 @@ ms.locfileid: "2570536"
 
 -   ローカルのインストールからイベントをキャプチャします。
     -   **トレースの選択**ウィンドウが開いていない場合、**ファイル** メニューに移動し、**トレースを開く**をクリックします。 **追跡の選択**ウィンドウで、**イベントのキャプチャ**をクリックします。 プロバイダーを選択して、**開始**をクリックします。 Trace Parser ツールは、すべてのプロバイダーのリッスンとイベントのキャプチャを開始します。 **停止およびインポート**をクリックするとキャプチャは停止します。
--   Logman などのツールを使用してキャプチャされた、既存の ETL(Windows イベント) ファイルを開きます。 [![開いている Windows イベントのファイルの例](./media/1_desktop.png)](./media/1_desktop.png)
+-   Logman などのツールを使用してキャプチャされた、既存の ETL(Windows イベント) ファイルを開きます。 
+
+    [![開いている Windows イベントのファイルの例](./media/1_desktop.png)](./media/1_desktop.png)
 
 ## <a name="viewing-traces"></a>トレースの表示
-**タイムライン ビュー** タイムライン タブは、Trace Parser にトレースをインポートした後に表示される最初のタブです。 このタブは、次の図に表示されます。 [![タイムライン タブの情報の例](./media/2_desktop.png)](./media/2_desktop.png) **タイムライン** タブには次の主要なコンポーネントがあります。
+**タイムライン ビュー** タイムライン タブは、Trace Parser にトレースをインポートした後に表示される最初のタブです。 このタブは、次の図に表示されます。 
+
+[![[タイムライン] タブの情報の例](./media/2_desktop.png)](./media/2_desktop.png) 
+
+**タイムライン** タブには、次の主要なコンポーネントがあります。
 
 -   **グループ化を選択** ドロップダウンでは、さまざまなカテゴリ (顧客 ID、ユーザー名、セッション名など) に基づいてグループ化できます。[グループ化] には、イベントの最大および最小タイムスタンプ、イベントの合計数、グループ内の最下位イベント レベルが表示されます。
 -   スレッドまたはスレッドではないビューのすべてのイベントのリスト。
@@ -53,12 +59,16 @@ ms.locfileid: "2570536"
 -   イベントのフィルター処理。
 -   セッション分析メモ。
 
-**呼び出しツリーの表示** **呼び出しツリー**タブを選択すると、すべての X++ メソッドの呼び出しツリーが表示されます。 タブは、次に示します。 [呼び出しツリー タブに表示される情報の例](./media/3_desktop.png)](./media/3_desktop.png) 同様に、**X++** タブを表示して、すべてのX++ メソッドの一覧を表示することができます。 包括的/排他的な期間、RPC、データベース呼び出しなどのフィールドでソートされます。 これらは Trace Parser の対応するタブに類似しており、同じ動作をすることに注意してください。
+**呼び出しツリーの表示** **呼び出しツリー**タブを選択すると、すべての X++ メソッドの呼び出しツリーが表示されます。 タブは、次に示します。 
 
-<a name="additional-resources"></a>その他のリソース
+[呼び出しツリー タブ](./media/3_desktop.png)に表示される情報の例 (./media/3_desktop.png) 
+
+デスクトップ同様に、**X++** タブを表示し、すべての X++ メソッドの一覧を表示することができます。 包括的/排他的な期間、RPC、データベース呼び出しなどのフィールドでソートされます。 これらは Trace Parser の対応するタブに類似しており、同じ動作をすることに注意してください。
+
+<a name="additional-resources"></a>追加リソース
 --------
 
-[開発者ホーム ページ](../dev-tools/developer-home-page.md)
+[開発およびカスタマイズのホーム ページ](../dev-tools/developer-home-page.md)
 
 
 

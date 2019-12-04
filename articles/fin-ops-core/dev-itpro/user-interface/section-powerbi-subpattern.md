@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5feb2caaf7e6dbe84d85ee2a75a71d75fb35014
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 8f314cb1e6ac14e1e44b9733a0bd19bf43d0e0ea
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658830"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811686"
 ---
 # <a name="section-power-bi-subpattern"></a>セクション Power BI のサブパターン
 
@@ -63,19 +63,19 @@ None
 ## <a name="appendix"></a>付録
 ### <a name="related-articles"></a>関連記事
 
--   [ワークスペースの PowerBI 統合の構成](../analytics/configure-power-bi-integration.md)
--   [Dynamics AX での Power BI 統合](../analytics/power-bi-integration.md)
+-   [ワークスペース用に Power BI 統合を構成する](../analytics/configure-power-bi-integration.md)
+-   [Power BI 統合を通して利用可能な機能とサービス](../analytics/power-bi-integration.md)
 
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。
 
 -   **ワークスペースとの統合のために PowerBI をどのようにコンフィギュレーションしますか。**
-    -   [ワークスペースの PowerBI 統合のコンフィギュレーション](../analytics/configure-power-bi-integration.md)を参照してください。
+    -   [ワークスペースの Power BI 統合の構成](../analytics/configure-power-bi-integration.md) を参照してください。
 
 ### <a name="open-issues"></a>未処理の問題
 
-None
+なし
 
 
 

@@ -15,12 +15,12 @@ ms.custom: 196953
 ms.assetid: 6e7h6896-edef-4739-98ad-c9ea12880972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: ce4ee19002e054e43a0d0b1283b50d29228154be
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8d49906a7e9630dff52de2540045873273e80d93
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183281"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811710"
 ---
 # <a name="business-process-modeler-library-updated-bpm-experience"></a>ビジネス プロセス モデラーのライブラリ (更新された BPM エクスペリエンス )
 
@@ -43,9 +43,11 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
 
 2.  新しいライブラリを作成するには、任意のライブラリを右クリックし、ウィンドウの左下隅にある**作成**を選択します。 既存のライブラリをコピーするには、そのライブラリを右クリックし、ウィンドウの左下隅にある**コピー**を選択します。
 
-    [![コピー ボタンの位置](./media/bpm_03.png)](./media/bpm_03.png)
-=======
-    -   **グローバル ライブラリ** – 産業間の標準の業務プロセス。 [![業務プロセス ライブラリページの 3 種類のライブラリ](./media/bpm_02.png)](./media/bpm_02.png)
+    [![コピー ボタンの場所](./media/bpm_03.png)](./media/bpm_03.png)
+
+    -   **グローバル ライブラリ** – 産業間の標準の業務プロセス。 
+    
+    [![業務プロセス ライブラリページの 3 種類のライブラリ](./media/bpm_02.png)](./media/bpm_02.png)
 
 3.  ライブラリ名を入力します。
 
@@ -93,7 +95,7 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
 
 ## <a name="create-a-task-recording-and-associate-it-with-a-business-process"></a>タスク記録を作成し、業務プロセスに関連付ける
 
-カスタム データとカスタマイズを持つ環境では、タスク記録を作成する必要があります。 タスク レコーダーの詳細については、[タスク レコーダー](../user-interface/task-recorder.md) を参照してください。
+カスタム データとカスタマイズを持つ環境では、タスク記録を作成する必要があります。 タスク レコーダーの詳細については、 [タスク レコーダー の リソース](../user-interface/task-recorder.md) を参照してください。
 
 ### <a name="create-a-task-recording"></a>タスク記録の作成
 
@@ -136,4 +138,4 @@ LCS の業務プロセス ライブラリで記録するタスクを表示でき
 <a name="additional-resources"></a>追加リソース
 --------
 
-[AppSource のアプリを公開](lcs-solutions-app-source.md)
+[AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)

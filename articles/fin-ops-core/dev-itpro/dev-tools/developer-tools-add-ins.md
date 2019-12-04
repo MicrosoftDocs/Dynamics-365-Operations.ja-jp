@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26752d72c4c10a1c252b615d06d568b7bbd6fd52
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ea3f360cfca23682dcc6a4ccbb968aa694013ed3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191692"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812028"
 ---
 # <a name="tools-add-ins-for-visual-studio"></a>Visual Studio 用のツールおよびアドイン
 
@@ -38,5 +38,5 @@ ms.locfileid: "2191692"
 独自のアドインを簡単に作成できるようにするには、Visual Studioで新規プロジェクトを作成するときに **Dynamics 開発者ツール アドイン** プロジェクト タイプを選択します。 このプロジェクト タイプには、アドインを実装するために必要なインフラストラクチャがあります。
 
 アドインの詳細については、以下を参照してください。
-- [フォーム パターン アドイン](../user-interface/form-pattern-add-ins.md)
+- [フォーム パターンに対応している Visual Studio アドイン](../user-interface/form-pattern-add-ins.md)
 

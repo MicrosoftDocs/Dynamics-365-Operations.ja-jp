@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 0c96b3cf5706e4ade0fcc3dc9d6df0dfa3254259
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0be723a0765a0deeafe1ca4353fe2091cb928447
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191875"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812043"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-sandbox-environments"></a>AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 
@@ -30,13 +30,13 @@ ms.locfileid: "2191875"
 
 このタスクの出力は、サンドボックス環境で使用できるデータベースのアップグレードです。 このトピックでは、*サンドボックス*という用語は、SQL Azure データベースに接続されている標準またはプレミア承認テスト (レベル 2/3)、またはより高度な環境を示します。 この環境では、ビジネス ユーザーと機能チームのメンバーがアプリケーション機能を検証できます。 この機能には、カスタマイズ内容や Microsoft Dynamics AX 2012 から継承されたデータが含まれます。
 
-この方法は、データを正常にアップグレードするのに必要な全体的な時間の短縮に役立つため、共有サンドボックス環境で実行する前に開発環境でデータ アップグレード プロセスを実行することを強くお勧めします。 詳細については、[開発環境でのデータ アップグレード](prepare-data-upgrade.md) を参照してください。
+この方法は、データを正常にアップグレードするのに必要な全体的な時間の短縮に役立つため、共有サンドボックス環境で実行する前に開発環境でデータ アップグレード プロセスを実行することを強くお勧めします。 詳細については[AX 2012からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト](prepare-data-upgrade.md) を参照してください。
 
 > [!NOTE]
 > このプロセスを開始する前に、SQL Server Management Studio の最新バージョンをインストールすることが非常に重要です。[SQL Server Management Studio のダウンロード](/sql/ssms/download-sql-server-management-studio-ssms). 
 
 ## <a name="overview-of-the-sandbox-data-upgrade-process"></a>サンドボックス データ アップグレード プロセスの概要
-サンドボックス環境でのデータのアップグレードを開始する前に、[開発環境でのデータ アップグレード](prepare-data-upgrade.md) で説明しているように、開発環境で既にデータがアップグレードされています。 2 つのプロセスはよく似ています。 主な違いは、サンドボックス環境では Microsoft Azure SQL データベースをデータ保管に使用し、開発環境では Microsoft SQL Server を使用する点です。 このデータベース レイヤーの技術的な違いにより、AX 2012 データベース インスタンスからのバックアップを SQL データベースに復元できないため、サンドボックス環境でデータのアップグレード手順を少し変更する必要があります。
+サンドボックス環境でのデータのアップグレードを開始する前に、[AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト](prepare-data-upgrade.md)で説明しているように、開発環境で既にデータがアップグレードされています。 2 つのプロセスはよく似ています。 主な違いは、サンドボックス環境では Microsoft Azure SQL データベースをデータ保管に使用し、開発環境では Microsoft SQL Server を使用する点です。 このデータベース レイヤーの技術的な違いにより、AX 2012 データベース インスタンスからのバックアップを SQL データベースに復元できないため、サンドボックス環境でデータのアップグレード手順を少し変更する必要があります。
 
 ![サンドボックス データのアップグレード プロセス](./media/data-upgrade-sandbox.png)
 
@@ -302,7 +302,7 @@ SQL データベース インスタンスへのアクセスを制限するファ
 
 次に、AOS VM のリモートデスクトップを開始て手動でパッケージを実行します。 
 
-詳細については、[開発、デモ、またはサンドボックス環境でのデータのアップグレード](upgrade-data-to-latest-update.md) を参照してください。 
+詳細については、 [開発、デモ、サンドボックス環境でのデータの更新](upgrade-data-to-latest-update.md) を参照してください。 
 
 ### <a name="upgrade-a-copy-of-the-database-in-a-development-environment"></a>データベースのコピーを開発環境でアップグレードする
 

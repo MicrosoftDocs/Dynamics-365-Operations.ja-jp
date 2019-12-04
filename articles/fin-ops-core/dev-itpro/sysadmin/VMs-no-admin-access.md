@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: def6b19f9b3345962560fbd6b1a5a4e5e84b6f8c
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 6284de23e456078a2af8fb57ffc83368ead5fd50
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570535"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811947"
 ---
 # <a name="development-and-build-vms-that-dont-allow-admin-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
@@ -32,7 +32,7 @@ ms.locfileid: "2570535"
 ## <a name="how-can-i-install-a-deployable-package"></a>どのように配置可能パッケージをインストールできますか。
 可能な限り、Microsoft Dynamics Lifecyle Services (LCS) を使用して、配置可能なパッケージをインストールします。 **-devinstall** オプションを使用して、展開可能なパッケージをインストールすることができます。 このオプションには手動データベース同期が必要な点に留意してください。
 
-配置可能パッケージをインストールする方法の詳細については、[配置可能パッケージのインストール](../deployment/install-deployable-package.md) を参照してください。
+配置可能パッケージをインストールする方法の詳細については、 [コマンド ラインからの配置可能なパッケージのインストール](../deployment/install-deployable-package.md)を参照してください。
 
 ## <a name="is-the-finance-and-operations-website-accessible-when-visual-studio-isnt-running"></a>Visual Studio が実行されていないときに Finance and Operations の Web サイトはアクセス可能ですか。
 はい、Microsoft Visual Studio が実行されていない時に Finance and Operations Web サイトにアクセスできます。 Microsoft Internet Information Services (IIS) Express は、ユーザーとして実行する .exe ファイルです。 ただし、Visual Studio を終了すると、XPPC エージェントが終了する前に通常の IIS (IIS Express ではなく) が起動します。 この動作により、サインアウトした場合やマシンを再起動した場合でも、Application Object Server (AOS) インスタンスと Web サイトにリモートでアクセスできるようになります。 多くのユーザーがこのような開発者用マシンをテスト用マシンとして使用してていること、また彼らが常に AOS インスタンスが実行されていることを期待していることを認識しています。 ただし、IIS Express は、この動作をサポートしていません。
@@ -106,7 +106,7 @@ Visual Studio に直接プロダクト キーを入力することはサポー�
 ## <a name="can-i-upgrade-my-database-to-a-new-application-release"></a>新しいアプリケーションのリリースに、データベースをアップグレードすることはできますか？
 Lifecyle Services (LCS) の 2018 年 2 月リリースと同じく、開発環境の LCS 環境ページからデータ アップグレード パッケージを実行できます。 LCS からのデータ アップグレード パッケージの実行では、VM の管理者である必要はありません。
 
-[開発、デモ、またはサンドボックス環境でのデータのアップグレード](../migration-upgrade/upgrade-data-to-latest-update.md) で説明されているプロセスは、コマンド ラインからのデータ アップグレード パッケージを実行します。 これを行うには、VM の管理者である必要があります。
+[開発環境またはデモ環境でのデータのアップグレード](../migration-upgrade/upgrade-data-to-latest-update.md) で説明されているプロセスは、コマンド ラインからのデータ アップグレード パッケージを実行します。 これを行うには、VM の管理者である必要があります。
 
 ## <a name="what-do-i-need-to-know-if-i-am-developing-for-retail"></a>Retail の開発をしている場合、何を把握する必要がありますか。
 Dynamics 365 Retail を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストの開発環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../../retail/dev-itpro/cloud-dev-box.md) に記載されています。

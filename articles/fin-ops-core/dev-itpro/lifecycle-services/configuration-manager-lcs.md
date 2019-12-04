@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 0f8c9bb40746bbd1ff0f5956999e707cee5e7f6b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c524023eb0029690042d7e73b8eb80ac8429149a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183217"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812150"
 ---
 # <a name="configuration-in-lifecycle-services-overview"></a>Lifecycle Services の設定の概要
 
@@ -33,13 +33,12 @@ ms.locfileid: "2183217"
 -   システム診断の実行
 -   データのインポート/エクスポート フレームワークの実行中
 
-| **重要**                                                                                                                                                                                                                                                                                                     |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| この機能は、運用上の用途ではサポートされて**いません**。  構成マネージャー (ベータ) は、環境内のデータのインポート/エクスポート フレームワークからのエンティティに依存します。 これらのエンティティには現在 AX 2012 R3 のすべての機能が含まれていないため、一部の構成データは環境間でコピーされません。 |
+> [!IMPORTANT]
+> この機能は、運用上の用途ではサポートされて**いません**。  構成マネージャー (ベータ) は、環境内のデータのインポート/エクスポート フレームワークからのエンティティに依存します。 これらのエンティティには現在 AX 2012 R3 のすべての機能が含まれていないため、一部の構成データは環境間でコピーされません。
 
 詳細については、以下を参照してください。
--   [構成マネージャーの設定 (Lifecycle Services、LCS)](set-up-configuration-manager-lcs.md)
--   [コンフィギュレーションのコピー (Lifecycle Services、LCS)](copy-configuration-lcs.md)
+-   [構成マネージャーの設定](set-up-configuration-manager-lcs.md)
+-   [構成マネージャーを使用して構成をコピーする](copy-configuration-lcs.md)
 
 
 

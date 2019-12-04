@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 9872cc516b13f3f082b48b1faff8d4d4b439efb7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d3641b663a5b721604a119a259ad0d5e03e11ccc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183321"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812114"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
@@ -42,15 +42,15 @@ Dynamics 365 Finance、Supply Chain、および Retail は、パートナー、�
 
 ## <a name="whats-new"></a>新機能
 
-2017 年 7 月以降に行われた拡張性関連の更新については [拡張性の新機能](extensibility-new.md) を参照してください。
+2017 年 7 月以降に行われた拡張性関連の更新については [拡張性の新機能および変更された機能](extensibility-new.md) を参照してください。
 
 ## <a name="getting-started"></a>はじめに
 
 このセクションのトピックは、拡張機能の構築を開始するのに役立ちます。 また、オーバーレイ コードに基づいた現在のソリューションを、拡張機能ベースのソリューションに移行する上でも参考になる内容です。 このセクションには、簡単なカスタマイズについて説明した実践ラボが含まれています。
 
 + [オーバーレイから拡張機能への移行](migrate-overlayer-extension.md)
-+ [拡張機能を使用したモデル要素のカスタマイズ (チュートリアル)](customize-model-elements-extensions.md)
-+ [カスタマイズ: オーバーレイと機能拡張](customization-overlayering-extensions.md)
++ [拡張機能によってモデル要素をカスタマイズする](customize-model-elements-extensions.md)
++ [拡張機能およびオーバーレイによるカスタマイズ](customization-overlayering-extensions.md)
 <!--+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)-->
 
 ## <a name="fundamentals-on-extensions"></a>拡張機能の基本
@@ -58,45 +58,45 @@ Dynamics 365 Finance、Supply Chain、および Retail は、パートナー、�
 このセクションでは、拡張機能の作成に関する基本や原則、手法について説明します。 以下のトピックの指針では、拡張機能を使用してカスタマイズに取り組む方法について説明します。 この原則には、名前付けのガイドラインが含まれています。 また、これらのトピックでは、拡張機能やコマンド チェーンなど、基盤となるフレームワークについても説明します。
 
 + [侵入的なカスタマイズ](intrusive-customizations.md)
-+ [クラスの拡張機能](class-extensions.md)
-+ [クラスの拡張機能: メソッドのラッピングとコマンド チェーン](method-wrapping-coc.md)
-+ [名前付けのガイドライン](naming-guidelines-extensions.md)
-+ [オーバレイを拡張機能にリファクタリングできるように、モデルの制限を緩和する](refactoring-over-layering.md)
++ [X++ の拡張モデルのクラス](class-extensions.md)
++ [クラスの拡張機能 - メソッドのラッピングとコマンド チェーン](method-wrapping-coc.md)
++ [拡張機能の名前付けガイドライン](naming-guidelines-extensions.md)
++ [オーバーレイを拡張機能にリファクタリングするため、モデルの制限を緩和する](refactoring-over-layering.md)
 
 ## <a name="how-do-i-create-extensions"></a>拡張機能の作成方法
 
 このセクションは "方法" を含みます トピックが含まれています。 このトピックのほとんどは、簡潔で要点を押さえた内容となっています。 ここには多くのトピックがあるため、特定のトピックを検索すると便利にご利用いただける場合があります。
 
 ### <a name="data-types"></a>データ型
-+ [列挙値の追加](add-enum-value.md)
-+ [拡張データ型の変更](modify-edt.md) 
++ [拡張機能を使用して列挙体に値を追加](add-enum-value.md)
++ [拡張機能を通じて拡張データ型 (EDT) を変更する](modify-edt.md) 
 
 ### <a name="classes"></a>クラス
 + [ファクトリ メソッドのサブクラスの登録](register-subclass-factory-methods.md)
-+ [EventHandlerResult を使用した応答](respond-event-handler-result.md)
++ [EventHandlerResult を使用して応答](respond-event-handler-result.md)
 + [RunBase クラスの拡張](extend-runbase-class.md)
-+ [デリゲートを使用したアプリケーション起動のカスタマイズ](startup-customizations.md)
++ [デリゲートを使用してアプリケーション起動をカスタマイズする](startup-customizations.md)
 
 ### <a name="tables"></a>テーブル
-+ [テーブルの既存のフィールドの変更](modify-existing-field.md)
-+ [既存のテーブルへの新しいフィールドの追加](add-field-extension.md)
-+ [既存のテーブルへのインデックスの追加](add-index.md)
-+ [既存のテーブルへのリレーションの追加](add-relation.md)
-+ [既存のテーブルのプロパティの変更](modify-properties.md)
-+ [テーブルへのメソッドの追加](add-method-table.md)
++ [拡張機能を使用したテーブル内の既存のフィールドの変更(modify-existing-field.md)
++ [拡張機能を使用してテーブルにフィールドを追加](add-field-extension.md)
++ [拡張機能を使用してテーブルにインデックスを追加](add-index.md)
++ [拡張機能を使用してテーブルに関係を追加](add-relation.md)
++ [拡張機能を使用して、テーブルのプロパティを変更する](modify-properties.md)
++ [拡張機能を使用してテーブルにメソッドを追加](add-method-table.md)
 + [テーブル レコードの有効期間中の業務処理の実行](subscribe-table-events.md)
 
 ### <a name="forms"></a>フォーム
 + [フォームへの新しいデータ ソースの追加](add-datasource.md)
-+ [フォームのキャプションの変更](change-caption-form.md)
-+ [フォーム コントロールのプロパティの変更](modify-control-properties.md)
++ [拡張機能によって、フォームのキャプションを変更します。](change-caption-form.md)
++ [拡張機能を使用して、フォーム コントロールのプロパティを変更する](modify-control-properties.md)
 
 ### <a name="others"></a>その他
-+ [小数点以下の精度の拡張](decimal-point-precision.md)
++ [選択したデータ型の小数点以下の精度の拡張](decimal-point-precision.md)
 
 ### <a name="reports"></a>レポート
-+ [電子申告機能の一覧の拡張](../analytics/general-electronic-reporting-formulas-list-extension.md)
-+ [アプリ スイート レポートのカスタマイズ](../analytics/customize-app-suite-reports-with-extensions.md)
++ [電子申告 (ER) 関数の一覧の拡張](../analytics/general-electronic-reporting-formulas-list-extension.md)
++ [拡張機能を使用してアプリケーション スイート レポートをカスタマイズする](../analytics/customize-app-suite-reports-with-extensions.md)
 
 ### <a name="blog-posts"></a>ブログの投稿
 
@@ -117,7 +117,7 @@ Dynamics 365 Finance、Supply Chain、および Retail は、パートナー、�
 
 このセクションでは、コードのユーザーがソリューションを拡張できるように、拡張可能なソリューションを作成する方法や、ソリューションを拡張可能にする方法に関するベスト プラクティスについて説明します。
 
-+ [拡張可能なコードの記述](writing-extensible-code.md)
++ [拡張可能なコードの書き込み](writing-extensible-code.md)
 + [クラス](extensible-classes.md)
 + [メソッド](extensible-methods.md)
 + [フォーム](extensible-forms.md)
@@ -125,7 +125,7 @@ Dynamics 365 Finance、Supply Chain、および Retail は、パートナー、�
 + [拡張可能な列挙](extensible-enums.md)
 + [委任](extensible-code-delegates.md)
 + [テーブル](extensible-tables.md)
-+ [メソッドの拡張属性](extensibility-attributes.md)
++ [メソッドを拡張可能にする属性](extensibility-attributes.md)
 
-## <a name="breaking-changes"></a>重大な変更
+## <a name="breaking-changes"></a>変更の分割
 ソリューションを拡張可能にすると、後で拡張ポイントを壊さずに済むことにもなります。 消費者に重大な影響が及ぶのを防ぐ指針に関しては、[重大な変更](breaking-changes.md) をご覧ください。

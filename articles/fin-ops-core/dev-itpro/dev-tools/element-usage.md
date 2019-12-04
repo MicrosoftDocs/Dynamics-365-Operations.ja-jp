@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d762651e5f876674533d79ea602cfedbf001f142
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 23d2fab21731dcf664b0e89f78b43cd6ab26fbc1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191687"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812026"
 ---
 # <a name="commands-for-determining-how-elements-are-used"></a>要素の使用方法を決定するためのコマンド
 
@@ -34,15 +34,19 @@ ms.locfileid: "2191687"
 
 ## <a name="finding-where-elements-are-used"></a>要素が使用されている場所を検索
 
-ビルド操作中に、要素の使用方法を示すために使用できる相互参照情報が生成されます。 要素を右クリックしてから **参照の検索** をクリックし、要素が使用される場所の一覧を表示することができます。 リスト内の品目のいずれかをクリックすると、要素のデザイナーが開きます。 [![23\_DevoToolsConcept](./media/23_devotoolsconcept.png)](./media/23_devotoolsconcept.png)
+ビルド操作中に、要素の使用方法を示すために使用できる相互参照情報が生成されます。 要素を右クリックしてから **参照の検索** をクリックし、要素が使用される場所の一覧を表示することができます。 リスト内の品目のいずれかをクリックすると、要素のデザイナーが開きます。 
+
+[![23\_DevoToolsConcept](./media/23_devotoolsconcept.png)](./media/23_devotoolsconcept.png)
 
 ## <a name="viewing-a-reference-diagram"></a>参照ダイアグラムの表示
 
-テーブルなどの上位レベルの要素を右クリックすると、**参照の表示**コマンドを使用できます。 このコマンドは、現在の要素に関連する要素を示すグラフィックを作成します。 グラフィック内の項目を右クリックしてから **定義に移動** をクリックし、これらの要素に移動することができます。 [![24\_DevoToolsConcept](./media/24_devotoolsconcept.png)](./media/24_devotoolsconcept.png)
+テーブルなどの上位レベルの要素を右クリックすると、**参照の表示**コマンドを使用できます。 このコマンドは、現在の要素に関連する要素を示すグラフィックを作成します。 グラフィック内の項目を右クリックしてから **定義に移動** をクリックし、これらの要素に移動することができます。 
 
-## <a name="additional-resources"></a>その他のリソース
+[![24\_DevoToolsConcept](./media/24_devotoolsconcept.png)](./media/24_devotoolsconcept.png)
 
-[開発ツールの概要](development-tools-overview.md)
+## <a name="additional-resources"></a>追加リソース
+
+[Visual Studioの開発ツール](development-tools-overview.md)
 
 [要素デザイナー](element-designers.md)
 

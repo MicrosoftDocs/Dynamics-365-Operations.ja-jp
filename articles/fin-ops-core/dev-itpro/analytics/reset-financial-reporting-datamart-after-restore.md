@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9fef84d3149525d71dc57d1ce5d38575f7e7fac0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9f97778cfff9b482b659d179cc847e6300e54e32
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183451"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769960"
 ---
 # <a name="reset-the-financial-reporting-data-mart"></a>財務報告のデータ マートのリセット
 
@@ -149,7 +149,7 @@ ms.locfileid: "2183451"
 
 #### <a name="download-the-latest-minorversiondataupgradezip-package"></a>最新の MinorVersionDataUpgrade.zip パッケージをダウンロードする
 
-最新の MinorVersionDataUpgrade.zip パッケージをダウンロードします。 データ アップグレード パッケージの正しいバージョンを検索およびダウンロードする方法については、開発、デモ、またはサンド ボックス環境でデータのアップグレード トピックのセクション [適切なデータ アップグレード配置可能パッケージを選択](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) を参照してください。
+最新の MinorVersionDataUpgrade.zip パッケージをダウンロードします。 データ更新パッケージの正しいバージョンを検索およびダウンロードする方法については、開発、デモ、またはサンド ボックス環境でデータを更新するトピックの [開発環境またはデモ環境でデータを更新する](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) を参照してください。
 
 MinorVersionDataUpgrade.zip パッケージをダウンロードするためにアップグレードは必要ありません。 したがって、そのトピックにある「最新のデータ アップグレード配置可能パッケージをダウンロードする」セクションの手順に従ってください。 トピックのその他のすべての手順をスキップできます。
 

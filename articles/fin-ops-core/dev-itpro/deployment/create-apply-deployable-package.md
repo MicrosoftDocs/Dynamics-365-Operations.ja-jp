@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ccd4ef3b3d2ba83ef7325687ff2581439f0a035
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0f9a7aee52ba422b177ed15890242b209fd050d6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174582"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772350"
 ---
 # <a name="create-deployable-packages-of-models"></a>モデルの配置可能パッケージを作成する
 
@@ -56,7 +56,7 @@ AOT パッケージは、環境に適用することのできる、1 つまた�
 4.  先ほど作成した展開可能なパッケージをアップロードします。
 
 ## <a name="apply-a-deployable-package"></a>配置可能パッケージの適用
-展開可能なパッケージを環境に適用する方法については、[[展開可能なパッケージの適用](apply-deployable-package-system.md)] を参照してください。
+展開可能なパッケージを環境に適用する方法については、 [クラウド環境に更新を適用する](apply-deployable-package-system.md) を参照してください。
 
 ## <a name="remove-a-deployable-package"></a>配置可能パッケージの削除
-環境から配置可能パッケージをアンインストールしたり、削除したりするには、[モジュール (パッケージ) のアンインストール (削除)](uninstall-deployable-package.md)の記事を参照してください。
+環境から配置可能パッケージをアンインストールしたり、削除したりするには、 [パッケージ のアンインストール](uninstall-deployable-package.md) の記事を参照してください。

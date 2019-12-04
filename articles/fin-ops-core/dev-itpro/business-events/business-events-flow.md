@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow 内のビジネス イベント
-description: このトピックでは、アプリケーション コネクタを介して Microsoft Flow で使用可能となるビジネス イベントに関する情報を提供します。
+title: Microsoft Power Automate の ビジネス イベント
+description: このトピックでは、アプリケーション コネクタを介して Microsoft Power Automate で使用可能となるビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 07/19/2019
@@ -15,18 +15,18 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 529b6d32f33b6b235c451e9f0dd33ffe8d85b4f3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 29928d4ab04ae64d4d075f15d2eb9f09adbfd2ff
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183445"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769774"
 ---
-# <a name="business-events-in-microsoft-flow"></a>Microsoft Flow 内のビジネス イベント
+# <a name="business-events-in-microsoft-power-automate"></a>Microsoft Power Automate の ビジネス イベント
 
 [!include[banner](../includes/banner.md)]
 
-ビジネス イベントは アプリケーション コネクタを介して Microsoft Flow で使用することができます。 コネクタには**ビジネス イベントの発生時**という名前のトリガーがあります。 このトリガーは、アプリケーションのターゲット インスタンスで使用可能なビジネス イベントの購読に使用することができます。
+ビジネス イベントは アプリケーション コネクタを介して Microsoft Power Automate で使用することができます。 コネクタには**ビジネス イベントの発生時**という名前のトリガーがあります。 このトリガーは、アプリケーションのターゲット インスタンスで使用可能なビジネス イベントの購読に使用することができます。
 
 ## <a name="prerequisite"></a>前提条件
 
@@ -51,14 +51,14 @@ ms.locfileid: "2183445"
 複数のフローは、同一もしくは異なる法人内の同じビジネス イベントを購読することができます。
 
 > [!NOTE]
-> Flow エンドポイントは、手動でコンフィギュレーションすることはできません。 上記の説明に従って、エンドポイントはフローから自動的に作成されます。
+> Power Automate エンドポイントは、手動で構成することはできません。 上記の説明に従って、エンドポイントは Power Automate で自動的に作成されます。
 
 Microsoft Flow でビジネス イベントを使用する方法については [Microsoft Flow でビジネス イベントを消費する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow) を参照してください。 
 
-## <a name="other-ways-to-consume-business-events-in-microsoft-flow"></a>Microsoft Flow 内のビジネス イベントを消費する他の方法
+## <a name="other-ways-to-consume-business-events-in-power-automate"></a>Power Automate 内のビジネス イベントを消費する他の方法
 
-前のセクションでは、コネクタ内でトリガーを使用することにより Microsoft Flow から直接ビジネス イベントを購読する方法について説明しました。 ただし、[Microsoft Flow 用イベント グリッド コネクタ](https://docs.microsoft.com/connectors/azureeventgrid/) を使用することにより、Microsoft Azure Event Grid から Microsoft Flow 内のビジネス イベントを消費することもできます。
+前のセクションでは、コネクタ内でトリガーを使用することにより Power Automate から直接ビジネス イベントを購読する方法について説明しました。 ただし、 [Microsoft Power Automateのイベント グリッド コネクタ](https://docs.microsoft.com/connectors/azureeventgrid/) を使用して、 Microsoft Azure のイベント グリッド から Microsoft Power Automate のビジネス イベントを使用することもできます。
 
-実装内の他の統合で既に使用されている場合、イベント グリッドは Microsoft Flow 内のビジネス イベントを消費するための実行可能なアプローチである可能性があります。 同じ法人内のビジネス イベントが複数のフローをトリガする必要がある場合、イベント グリッドからビジネス イベントを消費することを検討する必要があります。
+実装内の他の統合で既に使用されている場合、イベント グリッドは Power Automate 内のビジネス イベントを消費するための実行可能なアプローチである可能性があります。 同じ法人内のビジネス イベントが複数のフローをトリガする必要がある場合、イベント グリッドからビジネス イベントを消費することを検討する必要があります。
 
-このアプローチは、コネクタが Microsoft Flow 内のビジネス イベントで使用可能である場合、ビジネス イベントのエンドポイントとして使用されるメッセージングまたはイベント プラットフォームに対して適用することができます。
+このアプローチは、コネクタが Power Automate 内のビジネス イベントで使用可能である場合、ビジネス イベントのエンドポイントとして使用されるメッセージングまたはイベント プラットフォームに対して適用することができます。

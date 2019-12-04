@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73222604a285afa92899a61eb05071b1aa48abc9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 85db2a96003fb45c0699cd16f6be6b69859c4802
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183032"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772830"
 ---
 # <a name="task-recorder-quick-reference"></a>タスク レコーダーのクイック リファレンス
 
@@ -40,15 +40,15 @@ ms.locfileid: "2183032"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="./media/trquick01.png"><img src="./media/trquick01.png" alt="TRQuick01" class="alignnone size-full wp-image-290291" width="206" height="199" /></a></td>
+<td><a href="./media/Task-recorder-menu-create-play-edit-playback.png"><img src="./media/Task-recorder-menu-create-play-edit-playback.png" alt="Task recorder menu" class="alignnone size-full wp-image-290291" width="206" height="199" /></a></td>
 <td><h3 id="create-recording">記録の作成</h3>
 新しい記録の作成を開始するには、このオプションを選択します。
 <h3 id="play-recording-as-guide">記録をガイドとして再生</h3>
 このオプションを選択すると、ヘルプ トピックとして表示されたり、タスク ガイドとして再生されたときのレコードの概要を確認できます。
-<h3 id="change-recording-text">テキストの記録の変更</h3>
+<h3 id="change-recording-text">記録の編集</h3>
 ステップで表示される記録名、説明、またはテキストを変更する必要がある場合は、このオプションを選択します。
-<h3 id="update-recording-steps">記録のステップの更新</h3>
-手順を追加または削除する必要がある場合は、このオプションを選択します。 このモードを使用して記録を自動的に再生することができます。</td>
+<h3 id="playback-recording">記録の再生</h3>
+手順を追加または削除する必要がある場合は、このオプションを選択します。 このモードを使用して記録を自動的に再生することもできます。</td>
 </tr>
 </tbody>
 </table>
@@ -61,15 +61,19 @@ ms.locfileid: "2183032"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td> <a href="./media/trquick02.png"><img src="./media/trquick02.png" alt="TRQuick02" class="alignnone size-full wp-image-290301" width="157" height="120" /></a><a href="./media/trquick03.png"><img src="./media/trquick03.png" alt="TRQuick03" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
+<td> <a href="./media/Update-recording-steps-menu"><img src="./media/Update-recording-steps-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290301" width="197" height="136" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
 <td><h3 id="opensave-fromto-this-pc">開く/保存/この PC に</h3>
 これらのオプションを使用すると、コンピューターに保存されている記録を開くか、コンピューターに記録を保存できます。
-<h3 id="opensave-fromto-lcs">開く/保存/LCS に</h3>
-このオプションを使用すると、LCS ライブラリに保存されているレコーディングを開くか、LCS ライブラリにレコーディングを保存できます。
+<h3 id="opensave-fromto-lcs">Lifecycle Services を開き保存する</h3>
+このオプションを使用すると、Lifecycle Services ライブラリに保存されているレコーディングを開くか、Lifecycle Services ライブラリにレコーディングを保存できます。
 <h3 id="open-from-recents">最新から開く</h3>
 このオプションを使用すると、最近作成したタスク記録のリストから選択できます。
-<h3 id="export-as-work-document">作業ドキュメントとしてエクスポート</h3>
-このオプションを使用すると、記録のステップのリストを含む Word 文書をダウンロードできます。</td>
+<h3 id="export-as-work-document">Word ドキュメントとしてエクスポート</h3>
+このオプションを使用すると、記録のステップのリストを含む Word 文書をダウンロードできます。
+<h3 id="publish-for-mobile-application">モバイル アプリケーション用に発行する</h3>
+このオプションを使用すると、モバイル アプリケーションのタスク記録を発行することができます。
+<h3 id="save-as-developer-recording">開発者の記録として保存</h3>
+このオプションを使用すると、開発者の記録としてタスクの記録を保存することができます。</td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +86,7 @@ ms.locfileid: "2183032"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="./media/trquick04.png"><img src="./media/trquick04.png" alt="TRQuick04" class="alignnone size-full wp-image-290321" width="177" height="116" /></a><a href="./media/trquick05.png"><img src="./media/trquick05.png" alt="TRQuick05" class="alignnone size-full wp-image-290331" width="208" height="120" /></a></td>
+<td><a href="./media/playback-controls-menu-Playnext-Playall.png"><img src="./media/playback-controls-menu-Playnext-Playall.png" alt="Play next and Play all" class="alignnone size-full wp-image-290321" width="208" height="120" /></a><a href="./media/Playback-controls-menu-Pause.png"><img src="./media/Playback-controls-menu-Pause.png" alt="Pause" class="alignnone size-full wp-image-290331" width="208" height="120" /></a></td>
 <td><h3 id="play-next-pending-step">次の保留中のステップの再生</h3>
 このオプションを使用すると、ステップ リストの矢印で示す、次の保留中のステップがタスク レコーダーで実行および記録されます。
 <h3 id="play-to-selected-step">選択したステップまで再生</h3>
@@ -103,7 +107,7 @@ ms.locfileid: "2183032"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="./media/trquick06.png"><img src="./media/trquick06.png" alt="TRQuick06" class="alignnone size-full wp-image-290341" width="225" height="98" /></a><a href="./media/trquick07.png"><img src="./media/trquick07.png" alt="TRQuick07" class="alignnone size-full wp-image-290351" width="223" height="99" /></a></td>
+<td><a href="./media/Steps-menu-Delete-step.png"><img src="./media/Steps-menu-Delete-step.png" alt="Delete step" class="alignnone size-full wp-image-290341" width="225" height="98" /></a><a href="./media/Steps-menu-Restore-step.png"><img src="./media/Steps-menu-Restore-step.png" alt="Restore step" class="alignnone size-full wp-image-290351" width="223" height="99" /></a></td>
 <td><h3 id="start-sub-taskend-sub-task">サブ タスク/終了サブ タスクを開始</h3>
 これらのオプションを使用すると、録音に特別な手順を追加できます。 これらの特別なステップはタスク ステップであり、これらを使用してサブ タスクが開始および終了されるタイミングを示します。 これらのオプションは、再生の進行中は無効になっています。
 <h3 id="delete-steprestore-step">ステップの削除/復元ステップ</h3>
@@ -113,47 +117,71 @@ ms.locfileid: "2183032"
 </table>
 
 ## <a name="steps-list"></a>ステップ リスト
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><a href="./media/trquick08.png"><img src="./media/trquick08.png" alt="TRQuick08" class="alignnone wp-image-290361 size-full" width="288" height="509" /></a></td>
-<td><h3 id="step-counter">ステップ カウンター</h3>
-<a href="./media/trquick09.png"><img src="./media/trquick09.png" alt="TRQuick09" class="alignnone size-full wp-image-290371" width="229" height="45" /></a>これにより、記録されたステップの数が記録されます。 これには、再生コントロールを使用して実行されるステップと、クライアントで実行するアクションによって記録されたステップが含まれます。
-<h3 id="pending-steps">保留中の手順</h3>
-<a href="./media/trquick10.png"><img src="./media/trquick10.png" alt="TRQuick10" class="alignnone size-full wp-image-290381" width="223" height="67" /></a>この記号は、保留中でまだ記録されていないステップを表します。 保留中の手順は、再生コントロールを使用して再生できます。 保留中のステップが正常に再生されたとき、そのステップが記録され、シンボルが適切に更新されます。 <em>保留中のステップは、記録を保存するときに記録に含まれません。</em> 記録できるように、保留中のステップを最初に再生する必要があります。 手順が再生され、正常に記録されている場合、手順は記録の保存時に含まれます。
-<h3 id="next-pending-step">次の保留中のステップ</h3>
-<a href="./media/trquick11.png"><img src="./media/trquick11.png" alt="TRQuick11" class="alignnone size-full wp-image-290391" width="263" height="64" /></a>この記号は、次の保留中のステップを表します。 再生を開始する場合、これが再生される最初の手順になります。
-<h3 id="queued-pending-steps">キューに入っている保留中の手順</h3>
-<a href="./media/trquick12.png"><img src="./media/trquick12.png" alt="TRQuick12" class="alignnone size-full wp-image-290401" width="250" height="57" /></a>この記号は再生待ちの保留中のステップを表します。 再生が一時停止されるとき、またはキューに入っている保留中のステップが再生されるとき、この記号は更新されます。
-<h3 id="recorded-action-steps">記録されたアクションの手順</h3>
-<a href="./media/trquick13.png"><img src="./media/trquick13.png" alt="TRQuick13" class="alignnone size-full wp-image-290411" width="232" height="66" /></a>この記号は、再生されたかまたは手動で記録されたかのいずれかで、正常に記録されたステップを表します。
-<h3 id="recorded-info-steps">記録された情報の手順</h3>
-<a href="./media/recordedinfosteps.png"><img src="./media/recordedinfosteps.png" alt="RecordedInfoSteps" class="alignnone size-full wp-image-290491" width="208" height="70" /></a>この記号は、再生され、記録された情報ステップを表します。 情報ステップは、アプリケーションでのアクションの実行にはつながりません。
-<h3 id="recorded-beginend-sub-task-steps">記録の開始/終了サブタスク手順</h3>
-<a href="./media/trquick15.png"><img src="./media/trquick15.png" alt="TRQuick15" class="alignnone size-full wp-image-290431" width="226" height="66" /></a><a href="./media/trquick16.png"><img src="./media/trquick16.png" alt="TRQuick16" class="alignnone size-full wp-image-290441" width="230" height="64" /></a>これらの記号は、サブタスクの開始と終了を示します。 サブタスク ステップは、アプリケーションでのアクションの実行にはつながりません。
-<h3 id="deleted-recorded-steps">記録された手順を削除しました</h3>
-<a href="./media/deletedrecordedsteps.png"><img src="./media/deletedrecordedsteps.png" alt="DeletedRecordedSteps" class="alignnone size-full wp-image-290501" width="233" height="69" /></a>この記号は、削除対象としてマークした正常に記録されたステップを表します。 削除対象としてマークされている記録された手順は、記録を保存するときに含められません。 ステップを削除するときにステップが正常に記録されていれば、記録を保存する前に削除されたステップを復元することができます。
-<h3 id="deleted-pending-steps">保留中の手順を削除しました</h3>
-<a href="./media/trquick18.png"><img src="./media/trquick18.png" alt="TRQuick18" class="alignnone size-full wp-image-290461" width="218" height="63" /></a>保留中のステップを削除すると、再生されるまで保留中の記号が保持されます。 再生時にそれはスキップされます。 再生およびスキップされていない限り、保留中のステップを復元することができます。
-<h3 id="skipped-steps">省略した手順</h3>
-<a href="./media/trquick19.png"><img src="./media/trquick19.png" alt="TRQuick19" class="alignnone size-full wp-image-290471" width="220" height="67" /></a>この記号は、保留中に削除され、再生中にスキップされたステップを表します。 省略した手順は、再生されず、記録されません。 スキップされたステップは記録されないため、記録を保存する際には含まれません。 スキップされたステップを復元することはできません。
-<h3 id="error-steps">エラー ステップ</h3>
-<a href="./media/trquick20.png"><img src="./media/trquick20.png" alt="TRQuick20" class="alignnone size-full wp-image-290481" width="191" height="66" /></a>この記号は、再生システムによって試行されたものの、再生に失敗したステップを表します。 エラー ステップは記録されません。また、記録を保存する際には含まれません。 エラー ステップを復元することはできません。 エラー手順が発生したときに再生が自動的に一時停止します。 これにより、再生を続行する前に交換ステップを記録できます。 エラー ステップは次の理由で発生する可能性があります。
+
+![ステップ一覧の例](media/example-step-list.png)
+
+### <a name="step-counter"></a>ステップ カウンター
+<img src="media/step-counter.png" alt="Step counter"/>
+
+これにより、記録されたステップの数が記録されます。 これには、再生コントロールを使用して実行されるステップと、クライアントで実行するアクションによって記録されたステップが含まれます。
+
+### <a name="pending-step"></a>保留中のステップ
+<img src="media/pending-step.png" alt="Pending-step"/>
+
+この記号は、保留中でまだ記録されていないステップを表します。 保留中の手順は、再生コントロールを使用して再生できます。 保留中のステップが正常に再生されたとき、そのステップが記録され、シンボルが適切に更新されます。 <em>保留中のステップは、記録を保存するときに記録に含まれません。</em> 記録できるように、保留中のステップを最初に再生する必要があります。 手順が再生され、正常に記録されている場合、手順は記録の保存時に含まれます。
+
+### <a name="next-pending-steptd"></a>次の保留中のステップ</td>
+<img src="media/next-pending-step.png" alt="Next pending step"/>
+
+この記号は、次の保留中のステップを表します。 再生を開始する場合、これが再生される最初の手順になります。
+
+### <a name="queued-pending-step"></a>キューに入っている保留中のステップ
+<img src="media/queued-pending-step.png" alt="Queued pending step"/>
+
+この記号は再生待ちの保留中のステップを表します。 再生が一時停止されるとき、またはキューに入っている保留中のステップが再生されるとき、この記号は更新されます。
+
+### <a name="recorded-action-step"></a>記録されたアクションのステップ
+<img src="media/recorded-action-step.png" alt="Recorded action step"/>
+
+この記号は、再生されたかまたは手動で記録されたかのいずれかで、正常に記録されたステップを表します。
+
+### <a name="recorded-info-step"></a>記録された情報のステップ
+<img src="media/recorded-info-step.png" alt="Recorded info step"/>
+
+この記号は、再生され、記録された情報ステップを表します。 情報ステップは、アプリケーションでのアクションの実行にはつながりません。
+
+### <a name="recorded-begin-sub-task-step"></a>記録の開始サブタスク ステップ
+<img src="media/recorded-begin-sub-task-step.png" alt="Recorded begin sub-task step"/>
+
+このシンボルは、サブタスクの開始を示します。 サブタスク ステップは、アプリケーションでのアクションの実行にはつながりません。
+
+### <a name="recorded-end-sub-task-step"></a>記録の終了サブタスク ステップ
+<img src="media/recorded-end-sub-task-step.png" alt="Recorded end sub-task step"/>
+
+このシンボルは、サブタスクの終了を示します。 サブタスク ステップは、アプリケーションでのアクションの実行にはつながりません。
+
+### <a name="deleted-recorded-step"></a>削除された記録されたステップ
+<img src="media/deleted-recorded-step.png" alt="Deleted recorded step"/>
+
+この記号は、削除対象としてマークした正常に記録されたステップを表します。 削除対象としてマークされている記録された手順は、記録を保存するときに含められません。 ステップを削除するときにステップが正常に記録されていれば、記録を保存する前に削除されたステップを復元することができます。
+
+### <a name="deleted-pending-step"></a>削除された保留中のステップ
+<img src="media/deleted-pending-step.png" alt="Deleted pending step"/>
+
+保留中のステップを削除すると、再生されるまで保留中の記号が保持されます。 再生時にそれはスキップされます。 再生およびスキップされていない限り、保留中のステップを復元することができます。
+
+### <a name="skipped-step"></a>スキップされたステップ
+<img src="media/skipped-step.png" alt="Skipped step"/>
+
+この記号は、保留中に削除され、再生中にスキップされたステップを表します。 省略した手順は、再生されず、記録されません。 スキップされたステップは記録されないため、記録を保存する際には含まれません。 スキップされたステップを復元することはできません。
+
+### <a name="error-step"></a>エラー ステップ
+<img src="media/error-step.png" alt="Error step"/>
+
+この記号は、再生システムによって試行されたものの、再生に失敗したステップを表します。 エラー ステップは記録されません。また、記録を保存する際には含まれません。 エラー ステップを復元することはできません。 エラー手順が発生したときに再生が自動的に一時停止します。 これにより、再生を続行する前に交換ステップを記録できます。 エラー ステップは次の理由で発生する可能性があります。
 <ul>
 <li>ステップで必要なフォームまたはルックアップが開いていないため、ステップを再生できませんでした。</li>
 <li>ステップで必要なボタンまたはフィールドが無効になっているか、表示されていないか、フォームに表示されていないため、ステップを再生できませんでした。</li>
 <li>フォームの名前またはコントロールの名前が変更されたため、ステップが再生できませんでした。</li>
 <li>このステップは、コントロールへのフレームワークの変更のために再生できませんでした。</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
+</ul>

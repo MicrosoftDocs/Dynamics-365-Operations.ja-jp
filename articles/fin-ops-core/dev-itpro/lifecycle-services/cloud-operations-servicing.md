@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a795a7bfd540b7fa84677e3f150527e0807aa43a
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 1d51f80b8bdaeb13a02436d04e659697e32f911a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550881"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811699"
 ---
 # <a name="cloud-operations-and-servicing"></a>クラウドの工程とサービス
 
@@ -31,7 +31,7 @@ ms.locfileid: "2550881"
 この試みで顧客、パートナー、および Microsoft が成功するには、例外を管理する Microsoft Dynamics サービス エンジニアリング (DSE) チームに対して、アクションのほとんどが確実にセルフ サービスとなるようにする必要があります。 このセルフサービス モードを実現するために、マイクロソフト製品チームは、環境の運用に必要なさまざまな機能の自動化を推し進めています。
 
 ## <a name="monitor-and-troubleshoot-the-health-of-your-environment"></a>環境の正常性の監視およびトラブルシューティング
-クラウド サービスに対する正常なオンボード体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 Finance and Operations の管理者センターである Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、[モニタリングおよび診断](monitoring-diagnostics.md) を参照してください。
+クラウド サービスに対する正常なオンボード体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 Finance and Operations の管理者センターである Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、 [Lifecycle Services (LCS) の監視および診断ツール](monitoring-diagnostics.md)を参照してください。
 
 ## <a name="update-your-environment"></a>環境の更新
 Go-Live の後、実稼働環境は定期的に更新する必要があります。 Lifecycle Services (LCS) では、環境を継続的に更新するセルフ サービス エクスペリエンスが提供されます。
@@ -59,11 +59,11 @@ Microsoft は環境のインフラストラクチャの管理について責任�
 
 ### <a name="search-for-and-apply-an-update-in-lifecycle-services"></a>Lifecycle Services で更新プログラムを検索して適用
 更新は、配置可能パッケージとして環境に適用されます。 デプロイ可能なパッケージは、プロジェクトのすべての環境への更新を適用するために使用される形式です。 実稼動環境で問題が発生したときは、修正プログラムをすばやく検索して、すべての環境 (開発/サンド ボックス、および実稼働) にそれを適用できます。
-- **検索および更新プログラムをダウンロード** LCS で、[問題検索](issue-search-lcs.md) または [更新ポータル](../migration-upgrade/download-hotfix-lcs.md) を使用して更新を検索することができます。 更新プログラムを準備する手順は更新タイプによって異なるため、更新プログラムがダウンロードされた後、次のリストを使用して準備を続行する方法を決定してください。
+- LCSで **更新プログラムを検索してダウンロードする** には、 [Lifecycle Services (LCS) の問題を検索する](issue-search-lcs.md) 、または [Lifecycle Services (LCS) からダウンロードした更新プログラムを使用します](../migration-upgrade/download-hotfix-lcs.md) を使用して更新プログラムを検索してください。 更新プログラムを準備する手順は更新タイプによって異なるため、更新プログラムがダウンロードされた後、次のリストを使用して準備を続行する方法を決定してください。
   - プラットフォーム更新プログラム: プラットフォーム更新プログラムは累積的かつバイナリです。 つまり、環境に直接適用できるということです。 更新プログラムがダウンロードされた後、アセット ライブラリを自動的に環境に適用させアップロードすることができます。
-  - アプリケーションの修正プログラム: アプリケーションの修正プログラムはコードの変更です。 アプリケーションの修正プログラムをダウンロードした後、開発環境に適用して、配置可能なパッケージを生成する必要があります。 詳細については、[配置可能なパッケージの作成と適用](../deployment/create-apply-deployable-package.md) および [メタデータ修正プログラムのインストール](../migration-upgrade/install-metadata-hotfix-package.md) を参照してください。
+  - アプリケーションの修正プログラム: アプリケーションの修正プログラムはコードの変更です。 アプリケーションの修正プログラムをダウンロードした後、開発環境に適用して、配置可能なパッケージを生成する必要があります。 詳細については、 [モデルの配備可能なパッケージを作成する](../deployment/create-apply-deployable-package.md) および [開発環境でメタデータ修正をインストールする](../migration-upgrade/install-metadata-hotfix-package.md) を参照してください。
   - アプリケーションのカスタマイズ: ISV またはパートナーが作成するカスタマイズです。 これらは展開可能なパッケージで、アセット ライブラリにアップロードされ、そこから適用することができます。
-- **更新の適用** [環境での配置可能パッケージの適用](../deployment/apply-deployable-package-system.md) トピック内の情報を使用して、配置可能パッケージを適用する手順を説明します。 更新パッケージは、アプリケーション オブジェクト サーバー (AOS) のバイナリ修正プログラムまたは開発環境で作成された展開可能パッケージです。
+- **更新の適用** [クラウド環境に更新を適用する](../deployment/apply-deployable-package-system.md) トピック内の情報を使用して、配置可能なパッケージを適用する手順を参照してください。 更新パッケージは、アプリケーション オブジェクト サーバー (AOS) のバイナリ修正プログラムまたは開発環境で作成された展開可能パッケージです。
 - **更新の検証**更新の適用後、アプリケーションを検証する必要があります。
   - 更新プログラムが適用された問題を解決することを確認します。
   - 更新プログラムの適用によって回帰が発生していないことを確認します。
@@ -72,7 +72,7 @@ Microsoft は環境のインフラストラクチャの管理について責任�
     - アプリケーションの更新プログラムで、修正プログラムを含むモデルのバージョンを確認します。 たとえば、アプリケーション スイートで修正があった場合、アプリケーション スイートのバージョンが更新されます。
 
 ## <a name="upgrade-your-environment"></a>環境のアップグレード
-最新バージョンにアップグレードする方法の詳細については、[Finance and Operations の最新更新への移行の概要](../migration-upgrade/upgrade-latest-update.md) および [新機能および変更された機能](../../fin-ops/get-started/whats-new-changed.md) を参照してください。
+最新バージョンにアップグレードする方法の詳細については、 [Finance and Operations の最新版への移行概要](../migration-upgrade/upgrade-latest-update.md) および [新機能と変更された機能](../../fin-ops/get-started/whats-new-changed.md) を参照してください。
 
 ## <a name="environment-data-management"></a>環境データ管理
 これらは、ある環境から別の環境にデータベースをコピーする機能や、データベースを以前の状態に復元する機能など、データベースを管理するためのオプションです。 詳細については、[データベース移動操作ホーム ページ](../database/dbmovement-operations.md) を参照してください。

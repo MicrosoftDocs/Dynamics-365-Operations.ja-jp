@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 7d2733cc616aec1be45956044b0aaa80ca2d9839
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 052e67af7b3827883b672d4999b75eae0a668e7b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627633"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812449"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-9-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 (2017 年 7 月) の新機能および変更された機能
 
@@ -99,7 +99,7 @@ Print c.method1(33);
 
 ## <a name="odata-batch-request-size-configuration"></a>OData バッチ要求サイズの構成
 
-既定の OData バッチ要求サイズは、1,000 レコードです。 Microsoft は、顧客の OData バッチ要求のサイズを変更できるようになりました。 バッチ サイズを最大 5,000 レコードまで増やすには、LCS を介して Dynamics サービス エンジニアリング チーム (DSE) にサポート リクエストを記録する必要があります。 詳細については、[DSE チームへの要求の送信](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) を参照してください
+既定の OData バッチ要求サイズは、1,000 レコードです。 Microsoft は、顧客の OData バッチ要求のサイズを変更できるようになりました。 バッチ サイズを最大 5,000 レコードまで増やすには、LCS を介して Dynamics サービス エンジニアリング チーム (DSE) にサポート リクエストを記録する必要があります。 詳細については、[Dynamics サービス エンジニア リング チームへのサービス要求の送信](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)を参照してください。
 
 ## <a name="system-startup-performance-for-virtual-machines"></a>仮想マシンのシステム起動パフォーマンス
 

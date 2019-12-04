@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: d701629db166dae3f07825e69c96e28e0c6c8eaa
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b18e58e7ec0abdaa9c5b087350c4fe8345950746
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025537"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811939"
 ---
 # <a name="add-custom-columns-to-a-point-of-sale-pos-transaction-grid"></a>販売時点管理 (POS) トランザクション グリッドへのカスタム列の追加
 
@@ -42,8 +42,10 @@ ms.locfileid: "2025537"
 7. インストール後、AAD 資格情報を入力してデザイナーを起動します。
 8. デザイナーで、トランザクション グリッド (受領書グリッド) を右クリックし、**カスタマイズ**を選択します。
 9. **カスタマイズ – 入庫**ウィンドウで、ピボット パネルのドロップダウン メニューの**明細行**を選択します。
+
    > [!NOTE]
    > 同様に、**支払および配送**タブにカスタム列を追加できます。
+   
 10. **使用可能な列**ウィンドウで、**カスタム列 1** を選択してから、**> (矢印)** ボタンをクリックして**選択済**列に列を移動します。
 11. **OK** をクリックして保存し、ウィンドウを閉じます。
 12. **画面レイアウト** デザイナーを使用してトランザクション グリッドの列幅を調整します。 列が表示されていることを確認します。
@@ -205,7 +207,7 @@ ms.locfileid: "2025537"
 17. プロジェクトをコンパイル、およびリビルドします。
 
 > [!NOTE]
->  カスタム列のサンプルは [Retail SDK](./retail-sdk/retail-sdk-overview.md) で見つけることができます。
+>  カスタム列のサンプルは [Retail ソフトウェア開発キット (SDK) アーキテクチャ](./retail-sdk/retail-sdk-overview.md) で見つけることができます。
 
 ## <a name="validate-the-customization"></a>カスタマイズの検証
 

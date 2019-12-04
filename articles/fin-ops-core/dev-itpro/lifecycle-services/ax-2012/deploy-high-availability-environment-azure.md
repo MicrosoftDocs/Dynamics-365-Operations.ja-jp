@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: a8af02f2e15cc67a49ee87d0b7f1a58395f793d8
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: dd23135eb56b030e666eff7ed0e0155d9f5954d2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658633"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812066"
 ---
 # <a name="deploy-high-availability-environments-on-azure"></a>Azure での高可用性環境の配置
 
@@ -37,12 +37,12 @@ ms.locfileid: "2658633"
 
 | カテゴリ   | 前提条件                                                                                                                                                |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 必要なタスク | [Azure 上での Microsoft Dynamics AX 2012 R3 の配置計画](plan-2012-r3-deployment-azure.md) |
+| 必要なタスク | [Azure で AX 2012 R3 の配置を計画する](plan-2012-r3-deployment-azure.md) |
 
 
 
 ## <a name="1-use-azure-premium-storage"></a>1. Azure premium storage を使用する
-Azure Premium Storage は、Azure 仮想マシン (VM) 上で実行される I/O 集約型ワークロードに対して高パフォーマンス、待機時間が短いディスク サポートを提供します。 Premium Storage では、アプリケーションは VM ごとに 32 TB までのストレージを持つことができ、VM ごとに 50,000 IOPS (秒単位の入力/出力オペレーション) を達成し、読み取り操作での待機時間は非常に短くなります。 一貫したパフォーマンスを確保するため、Azure で AX 2012 R3 を実行するには Premium Storage をお勧めします。 Premium Storage の使用方法の詳細については、[Azure で Microsoft Dynamics AX 2012 R3 の配置を計画](plan-2012-r3-deployment-azure.md)を参照してください。
+Azure Premium Storage は、Azure 仮想マシン (VM) 上で実行される I/O 集約型ワークロードに対して高パフォーマンス、待機時間が短いディスク サポートを提供します。 Premium Storage では、アプリケーションは VM ごとに 32 TB までのストレージを持つことができ、VM ごとに 50,000 IOPS (秒単位の入力/出力オペレーション) を達成し、読み取り操作での待機時間は非常に短くなります。 一貫したパフォーマンスを確保するため、Azure で AX 2012 R3 を実行するには Premium Storage をお勧めします。 Premium Storage の使用方法の詳細については、 [Azure で AX 2012 R3 の配置を計画する](plan-2012-r3-deployment-azure.md) を参照してください。
 
 ## <a name="2-log-on-to-lifecycle-services"></a>2. ライフサイクル サービスにログオンする
 Microsoft Dynamics Lifecycle Services は、顧客およびパートナーが Microsoft Dynamics AX の管理に使用できるクラウドベースの共同ワークスペースです。 Azure に AX 2012 R3 を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。 [Lifecycle Services にログオン](https://lcs.dynamics.com/en/)
@@ -187,7 +187,7 @@ Azure に高可用性環境を配置するには、以下の手順に従って�
 2. **環境のトポロジの選択**パネルで、**高可用性**を選択します。
 3. **高可用性**をクリックします。
 4. **環境名**フィールドに、配置される環境の名前を入力します。
-5. Lifecycle Services でインフラストラクチャ見積もりツールを使用して実稼働環境の見積もりを作成した場合、**見積**リストが表示されます。 この一覧から見積もりを選択します。 配置する仮想マシンの数とサイズは、選択した見積に基づいて変更されます。 見積を作成する方法の詳細については、[インフラストラクチャ見積もりツール (Lifecycle Services、LCS)](infrastructure-estimator-lcs.md) を参照してください。
+5. Lifecycle Services でインフラストラクチャ見積もりツールを使用して実稼働環境の見積もりを作成した場合、**見積**リストが表示されます。 この一覧から見積もりを選択します。 配置する仮想マシンの数とサイズは、選択した見積に基づいて変更されます。 見積を作成する方法の詳細については、 [Lifecycle Services(LCS) の インフラストラクチャ見積もりツール](infrastructure-estimator-lcs.md) を参照してください。
 6. **詳細設定**をクリックします。
 7. ドメイン設定をカスタマイズするには、**ドメイン設定をカスタマイズ** をクリックします。 情報を入力するには、次の表を使用してください。
 
@@ -223,7 +223,7 @@ Azure に高可用性環境を配置するには、以下の手順に従って�
 
 9. 使用を希望する AX 2012 R3 のバージョンを選択するには、**サポートされているバージョン**をクリックします。 既定では、この環境の AX 2012 R3 CU8 バージョンが配置されます。 CU8 バージョンを使用しない場合は、**Dynamics ERP 2012 R3 RTM** をリストから選択します。
 10. 仮想マシン名をカスタマイズするには、**仮想マシン名をカスタマイズ** をクリックします。 一般的な IT 名前付けガイドラインをサポートするために、仮想マシンに名前を付ける機能がほとんどの配置トポロジの**詳細設定**に用意されています。 名前を定義することに加えて、各仮想マシン タイプに開始インデックスを選択できます。 インデックスは、配置される仮想マシン タイプのインスタンスごとに増加します。 仮想マシン名は 13 文字またはそれ以下にする必要があります。 インデックスはマシン名とハイフン (-) で区切られ、その後に最大 2 桁のインデックスが続きます。 例: ACustomVMName-99。仮想マシン インスタンスが最初の展開後に環境へ追加されると、展開サービスは中断した仮想マシン名のインクリメントを開始します。 たとえば、2 で始まるインデックスを持つ 4 つの AOS 仮想マシンを展開する場合、最後の AOS インスタンス名は AOS-6 になります。 もう 2 つ AOS インスタンスを追加する場合は、AOS-7 と AOS 8 になります。 展開内の仮想マシン タイプの 1 つがカスタマイズされている場合は、すべての仮想マシン名をカスタマイズする必要があります。 これは、仮想マシン名が誤って紛失してしまったため、長期的な展開が発生しないようにするためです。
-11. SQL Server 構成オプションを入力するには、**SQL Server 構成のカスタマイズ** をクリックします。 使用する SQL Server イメージと、SQL Server 仮想マシンに関連付けるディスクの数とサイズを選択します。 詳細については、[Azure で Microsoft Dynamics AX 2012 R3 の配置を計画](plan-2012-r3-deployment-azure.md)を参照してください。
+11. SQL Server 構成オプションを入力するには、**SQL Server 構成のカスタマイズ** をクリックします。 使用する SQL Server イメージと、SQL Server 仮想マシンに関連付けるディスクの数とサイズを選択します。 詳細については、 [Azure で AX 2012 R3 の配置を計画する](plan-2012-r3-deployment-azure.md) を参照してください。
 12. リモート デスクトップ サービスの仮想マシンを配置することを選択した場合、**リモート デスクトップ サービスをカスタマイズ**をクリックし、ユーザーが web 経由で AX 2012 R3 にアクセスする方法を指定します。 次のオプションのいずれかを選択します。
 
     -   **リモート デスクトップ:** このオプションはユーザーの完全なリモート デスクトップへのログインを有効にします。
@@ -304,7 +304,7 @@ Azure に高可用性環境を配置するには、以下の手順に従って�
 14. **完了** をクリックします。 **環境の展開** パネルが再表示されます。
 15. 配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。
  
-    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md) の記事の高可用性環境セクションを参照してください。
+    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、 [Azure で AX 2012 R3 配置を計画する](plan-2012-r3-deployment-azure.md) の記事内に記載されている高可用性環境のセクションを参照してください。
     -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](https://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 16. ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
@@ -316,7 +316,7 @@ Azure に高可用性環境を配置するには、以下の手順に従って�
 
 ### <a name="log-on-to-an-aos-virtual-machine"></a>AOS 仮想マシンにログオンします。
 
-DynamicsInstallUser アカウントを使用して AOS 仮想マシンにログオンします。 手順については、「仮想マシンにどのようにログオンしますか」を参照してください。 [Azure での Microsoft Dynamics AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md)という記事を参照してください。
+DynamicsInstallUser アカウントを使用して AOS 仮想マシンにログオンします。 手順については、「仮想マシンにどのようにログオンしますか」を参照してください。 [Azure で AX 2012 R3 配置を管理する](manage-2012-r3-deployment-azure.md) を参照してください。
 
 ### <a name="compile-ax-2012-r3"></a>AX 2012 R3 のコンパイル
 
@@ -330,9 +330,9 @@ AX 2012 R3 クライアントを開いて、初期化チェックリストを完
 
 サンプル データを環境にインストールする場合は、次の手順を実行します。
 
-1.  SQL-&lt;GUID&gt; 仮想マシンにログオンします。 DynamicsInstallUser アカウントを使用して仮想マシンにログオンします。 手順については、「仮想マシンにどのようにログオンしますか」を参照してください。 [Azure での Microsoft Dynamics AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md)という記事を参照してください。
+1.  SQL-&lt;GUID&gt; 仮想マシンにログオンします。 DynamicsInstallUser アカウントを使用して仮想マシンにログオンします。 手順については、「仮想マシンにどのようにログオンしますか」を参照してください。 [Azure で AX 2012 R3 配置を管理する](manage-2012-r3-deployment-azure.md) を参照してください。
 2.  仮想マシンで次の場所に移動します: F:TestTransferTool
-3.  テスト データ転送ツールをインストールします。 手順については、[Microsoft Dynamics AX 用のテスト データ転送ツール (ベータ版) をインストールする](install-test-data-transfer-tool-beta.md)を参照してください。
+3.  テスト データ転送ツールをインストールします。 手順については、 [テスト データ転送ツール (ベータ版) をインストールする](install-test-data-transfer-tool-beta.md) を参照してください。
 4.  コマンド プロンプトを開いて、次の場所にアクセスします: C:\Program Files (x86) \Microsoft Dynamics AX 2012 テスト データ確認転送ツール (ベータ)
 5.  次のコマンドを実行します: dp.exe import F:DemoData MicrosoftDynamicsAx
 
@@ -428,7 +428,7 @@ Azure 上で AX 2012 R3 を設定およびコンフィギュレーションす�
 
 ### <a name="join-enterprise-portal-servers-in-a-single-server-farm"></a>エンタープライズ ポータル サーバーの 1 つのサーバー ファームへの結合
 
-Lifecycle Services でエンタープライズ ポータル サーバーが配置されると、各サーバーは独自のサーバー ファームに配置されます。 単一のサーバー ファーム内のすべてのエンタープライズ ポータル サーバーに参加するには、[[単一サーバー ファーム内のエンタープライズ ポータル サーバーに参加する](join-enterprise-portal-servers-single-server-farm.md)] を参照してください。
+Lifecycle Services でエンタープライズ ポータル サーバーが配置されると、各サーバーは独自のサーバー ファームに配置されます。 すべての エンタープライズ ポータル サーバー を単一のサーバーファームに参加させるには、 [エンタープライズ ポータル サーバーを単一のサーバーファームに参加させる](join-enterprise-portal-servers-single-server-farm.md) を参照してください。
 
 ### <a name="configure-the-environment-for-optimal-performance"></a>最適なパフォーマンスを得るための環境をコンフィギュレーションする
 

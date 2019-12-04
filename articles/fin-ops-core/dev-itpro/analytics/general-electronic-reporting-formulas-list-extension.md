@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 988ef1e79e73c8c75b0fd8c8531b9052bb9a07bd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7dd3d0b01dafc536f760af2ffd2cb97feae92a27
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183391"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770045"
 ---
 # <a name="extend-the-list-of-electronic-reporting-er-functions"></a>電子申告 (ER) 関数の一覧の拡張
 
@@ -46,7 +46,7 @@ ms.locfileid: "2183391"
 
             - **SysOperationLabelAttribute** – この属性は、関数の名前を定義します。
             - **SysOperationHelpTextAttribute** – この属性は、関数のヘルプ テキストを定義します。
-            - **ERComponentGroupAttribute** - この属性は、この機能が属するグループを定義します。 (詳細については、「[電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)」を参照してください。)
+            - **ERComponentGroupAttribute** - この属性は、この機能が属するグループを定義します。 (詳細については、 [電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md) を参照してください。)
 
         - 引数を提供します。
 
@@ -112,6 +112,6 @@ class ERExpressionStringMid extends ERExpressionString
 
 ## <a name="additional-resources"></a>追加リソース
 
-[電子申告の概要](general-electronic-reporting.md)
+[電子申告 (ER) の概要](general-electronic-reporting.md)
 
-[電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
+[電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)

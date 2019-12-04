@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c62ff64fabfdc5474435e31015525dabad8580d2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c680d6eb96efde12ce07a7502483ecac091cdce1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183331"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812020"
 ---
 # <a name="customize-model-elements-through-extension"></a>拡張機能によってモデル要素をカスタマイズする
 
@@ -50,7 +50,7 @@ ms.locfileid: "2183331"
 
 ### <a name="vehicles"></a>車両及び運搬具
 
-車両は主として価格が異なり、車両の*クラス*に比例します。 車両に関する情報を格納するテーブルの名前は、「FMVehicle」で始まります。**
+車両は主として価格が異なり、車両の*クラス*に比例します。 車両に関する情報を格納するテーブルの名前は、 **FMVehicle**で始まります。
 
 ### <a name="reservations-and-rentals"></a>引当とレンタル
 
@@ -88,7 +88,10 @@ ms.locfileid: "2183331"
 
 1.  VM で、Internet Explorer を開き、アプリケーションのベース URL に移動します。
 2.  サインインします。
-3.  ダッシュ ボードで、ナビゲーション ウィンドウを開き、**フリート管理 &gt; 設定 &gt; フリート設定**に移動します。 [![フリート設定 > カスタマイズ モデル](./media/fleetsetup_customizemodel.png)](./media/fleetsetup_customizemodel.png)
+3.  ダッシュ ボードで、ナビゲーション ウィンドウを開き、**フリート管理 &gt; 設定 &gt; フリート設定**に移動します。 
+
+    [![フリート設定 > カスタマイズ モデル](./media/fleetsetup_customizemodel.png)](./media/fleetsetup_customizemodel.png)
+
 4.  **デモ データの設定**をクリックします。 
 
     [![コンフィギュレーション > モデルをカスタマイズする](./media/configuration_customizemodel.png)](./media/configuration_customizemodel.png)
@@ -100,7 +103,7 @@ ms.locfileid: "2183331"
 9.  処理が完了するまで待機します。 進行中の処理は、一連の移動するドットによってページの上部に示されます。 インジケータが消えて、**前回処理時刻** フィールドが更新されると、処理が完了します。
 
 ## <a name="open-the-fmrental-form-on-the-one-box-environment"></a>1 ボックス環境で FMRental フォームを開く
-1.  VM で、Internet Explorer を開き、Dynamics AX アプリケーションのベース URL に移動します。 詳細については、「[Microsoft Dynamics AX インスタンスにアクセス ](../dev-tools/access-instances.md)」を参照してください。
+1.  VM で、Internet Explorer を開き、Dynamics AX アプリケーションのベース URL に移動します。 詳細については、トピック [開発環境の配置とアクセス](../dev-tools/access-instances.md) を参照してください。
 2.  求められた場合にログインします。
 3.  **予約管理**タイルを検索し、予約管理ワークスペースを開くためそれをクリックします。 
 
@@ -190,7 +193,10 @@ ms.locfileid: "2183331"
 
 [![FMRentalChargeCode](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png) 
 
-このクラスには、**FMRentalCharge** テーブルの**更新**および**挿入**イベントに登録するイベント ハンドラーの実装が含まれています。 Microsoft Dynamics AX では、テーブルおよび他の種類で発生する可能性のあるデータ イベントが導入されます。 基本 X++ コードをオーバーレイせずにビジネス ロジックを拡張するアプリケーションを有効にする、テーブルのデータ イベントを申し込むことができます。 このチュートリアルの後半で、簡単にテーブル イベントをサブスクライブする方法について説明します。 **注記:** このクラスが拡張クラス (\_拡張子の接尾辞によって示される) であることを確認します。 任意のクラスでイベント ハンドラーを作成することができます。このクラスは拡張クラスである必要はありません。 拡張子クラスは、拡張メソッドを作成するために必要です。 拡張メソッドの詳細については、[X++ デバッガーの機能](../dev-tools/new-x-debugger-features.md) 記事の「拡張メソッド」セクションを参照してください。
+このクラスには、**FMRentalCharge** テーブルの**更新**および**挿入**イベントに登録するイベント ハンドラーの実装が含まれています。 Microsoft Dynamics AX では、テーブルおよび他の種類で発生する可能性のあるデータ イベントが導入されます。 基本 X++ コードをオーバーレイせずにビジネス ロジックを拡張するアプリケーションを有効にする、テーブルのデータ イベントを申し込むことができます。 このチュートリアルの後半で、簡単にテーブル イベントをサブスクライブする方法について説明します。 
+
+> [!NOTE]
+> このクラスが拡張クラス ( \_拡張子の接尾辞によって示される) であることを確認します。 任意のクラスでイベント ハンドラーを作成することができます。このクラスは拡張クラスである必要はありません。 拡張子クラスは、拡張メソッドを作成するために必要です。 拡張メソッドの詳細については、[X++ デバッガーの機能](../dev-tools/new-x-debugger-features.md) 記事の「拡張メソッド」セクションを参照してください。
 
 ### <a name="view-the-plug-in-classes"></a>プラグイン クラスの表示
 
@@ -249,7 +255,8 @@ ms.locfileid: "2183331"
 
     [![イベント ノード](./media/eventsnode_customizemodel.png)](./media/eventsnode_customizemodel.png)
 
-    **注記**: テーブルのイベント、フォームイベント、フォーム データ ソース イベント、フォーム コントロール イベントなど、異なるフレームワーク イベントが、さまざまなタイプの要素とサブ要素のデザイナーに公開されています。
+    > [!NOTE]
+    > テーブルのイベント、フォームイベント、フォーム データ ソース イベント、フォーム コントロール イベントなど、異なるフレームワーク イベントが、さまざまなタイプの要素とサブ要素のデザイナーに公開されています。
 12. onValidatedWrite を右クリックし、**イベント ハンドラー メソッドをコピー** を選択します。 
 
     [![onValidateWrite](./media/onvalidatewrite_customizemodel.png)](./media/onvalidatewrite_customizemodel.png) 
@@ -290,7 +297,10 @@ ms.locfileid: "2183331"
                 }
             }
 
-17. FMVehicleEventHandlers クラスを保存 **ヒント**: モデルの任意のクラスで、イベント ハンドラーを貼り付けて定義できます。 クラス FMVehicleEventHandlers は、例としてのみ使用されます。
+17. FMVehicleEventHandlers クラス を保存する 
+
+    >[!TIP]
+    > モデルの任意の クラス にイベント ハンドラー を貼り付けて定義することができます。 クラス FMVehicleEventHandlers は、例としてのみ使用されます。
 
 ### <a name="extend-the-fmvehicle-form"></a>FMVehicle フォームを拡張
 

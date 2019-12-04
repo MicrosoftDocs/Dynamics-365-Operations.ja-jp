@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 20189-XX-XX
 ms.dyn365.ops.version: Platform 24
-ms.openlocfilehash: dbec280baf5cb7ff8d5a53ba05f8c067a29f24fe
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4d1a6b7f909a0393fc013b205ac1e640623b33f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180492"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812460"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-platform-update-24-march-2019"></a>Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
 
@@ -38,10 +38,10 @@ ms.locfileid: "2180492"
 - GenerateImportTargetErrorKeysFile
 - GetImportStagingErrorFileUrl 
 
-詳細については、[データ管理パッケージ REST API](../../dev-itpro/data-entities/data-management-api.md) を参照してください。
+詳細については、[データ管理パッケージ REST API](../../dev-itpro/data-entities/data-management-api.md)を参照してください。
 
 ## <a name="clear-identification-of-preview-builds"></a>プレビュー ビルドの明確な ID
-一部のパートナー、ISV、および顧客は、Preview Early Access Program (PEAP) に参加することによって、またはサービスの公開プレビューを使用することによって、Finance and Operations の運用前ビルドにアクセスできます。 このプレビュー フェーズは、最新の機能についてのフィードバックおよびカスタマイズ検証のメカニズムとなることを意図しています。 ただし、これらの初期リリースは実稼働環境での使用を許可されていません。 Finance and Operations のリリース プロセスの詳細については [標準および最初のリリース サービス更新](public-preview-releases.md) を参照してください。
+一部のパートナー、ISV、および顧客は、Preview Early Access Program (PEAP) に参加することによって、またはサービスの公開プレビューを使用することによって、Finance and Operations の運用前ビルドにアクセスできます。 このプレビュー フェーズは、最新の機能についてのフィードバックおよびカスタマイズ検証のメカニズムとなることを意図しています。 ただし、これらの初期リリースは実稼働環境での使用を許可されていません。 [サービス更新の可用性](public-preview-releases.md)を参照してください。
 
 **プレビュー** ステータスをユーザーに明確にするために、各運用前ビルドは 2 つの異なる方法でタグ付けされます。 
 
@@ -61,7 +61,7 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 
 次の図は、プラットフォーム更新プログラム 24 の更新済のナビゲーション バーを表示します。
 
-![プラットフォーム更新プログラム 24 の更新済ナビゲーション バー](media/updatedNavBar.png  "プラットフォーム更新プログラム 24 の更新済ナビゲーション バー")
+![プラットフォーム更新プログラム 24 の更新済のナビゲーション バー](media/updatedNavBar.png  "プラットフォーム更新プログラム 24 の更新済のナビゲーション バー")
 
 次の図は、プラットフォーム更新プログラム 23 でナビゲーション バーがどのように表示されるかを示します。
 
@@ -80,7 +80,7 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 この新しい機能により、Finance and Operations の業務プロセスが実行されるときにビジネス イベントをキャプチャし、そのイベントを外部システムまたはアプリケーションに送信できるフレームワークが提供されます。
 
 > [!Note]
-> この機能はプライベート プレビューとして使用できます。 その機能が一般に利用可能になる時期については [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features) を参照してください。 
+> この機能はプライベート プレビューとして使用できます。 その機能が一般に利用可能になる時期については[リリース計画](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features)を参照してください。 
 
 これにより、たとえば、発注書の承認によって、仕入先組織でのフルフィルメントがすぐにトリガーされるようになります。また破損部品の受領書 1 枚で、仕入先クレーム処理をリアルタイムでトリガーすることもできます。 これらのイベントは業務プロセスのコンテキストで発生するため、*ビジネス イベント*と呼ばれ、*業務プロセスの統合*が可能になります。
 
@@ -98,9 +98,9 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 
 -   高度な統合シナリオのための Azure イベント グリッドおよび Azure Service Bus ですぐに使える統合。
 
--   Microsoft Flow でビジネス イベントを「トリガー」として公開する。
+-   Microsoft Power Automateでビジネス イベントを「トリガー」として公開する。
 
-詳細については[ビジネス イベント](../../dev-itpro/business-events/home-page.md)を参照してください。
+詳細については、[ビジネス イベントの概要](../../dev-itpro/business-events/home-page.md)を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 ### <a name="platform-update-24-bug-fixes"></a>プラットフォーム アップデート 24 のバグ修正プログラム
@@ -114,12 +114,12 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 [2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックでは、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

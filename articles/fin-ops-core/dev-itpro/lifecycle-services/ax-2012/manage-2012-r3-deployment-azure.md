@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 0c503216bd92df68b35a310de9443677828987c0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0a998079d04decc9458eddb581da39f996c02113
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183243"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812057"
 ---
 # <a name="manage-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 の 配置管理
 
@@ -84,7 +84,7 @@ AX 2012 R3 環境内の仮想マシンにログオンするには、次の手順
 4.  仮想マシンを追加する環境を選択します。
 5.  フォームの先頭の近くにある編集 (鉛筆) アイコンをクリックします。
 6.  環境に追加する仮想マシンの数を示します。 次に、それらの仮想マシンのサイズを指定します。
-    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md)」を参照してください。
+    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、 [Azure 上での AX 2012 R3の 配置計画](plan-2012-r3-deployment-azure.md) を参照してください。
     -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 7.  ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
@@ -145,14 +145,15 @@ Azure に展開した AX 2012 R3 環境をシャット ダウンする場合は�
 
 1. [Azure 管理ポータル](https://manage.windowsazure.com/)にログオンします。
 2. 左のナビゲーション ウィンドウで、**仮想マシン**をクリックします。 **仮想マシン** ページが表示されます。
-3. <strong>名前</strong>および<strong>場所</strong>の列の情報を使用して、プロジェクトの AX 2012 R3 環境に関連付けられている仮想マシンを特定します。 プロジェクトには複数の仮想マシンが関連付けられている場合がありますが、必要なのは選択するだけです。 <strong>注記: **適切な仮想マシンを見つけたかどうかを確認するには、このページに表示されている名前と、[Lifecycle Services](https://lcs.dynamics.com/en/) の**クラウド ホスト環境</strong>ページに一覧表示されている仮想マシンの名前を比較してください。
+3. <strong>名前</strong>および<strong>場所</strong>の列の情報を使用して、プロジェクトの AX 2012 R3 環境に関連付けられている仮想マシンを特定します。 プロジェクトには複数の仮想マシンが関連付けられている場合がありますが、必要なのは選択するだけです。 
+
+    > [!NOTE]
+    > 適切な仮想マシンを見つけたかどうかを確認するには、このページに表示されている名前と、 [Lifecycle Services](https://lcs.dynamics.com/en/) の **クラウド ホスト環境** ページに一覧表示されている仮想マシンの名前を比較してください。
+    
 4. 仮想マシンの名前の横にある矢印をクリックします。
 5. ページ上部の**ダッシュボード**をクリックします。
 6. ページの **ディスク** セクションまで下にスクロールします。
-7. <strong>VHD</strong> 列にある情報を表示します。 GUID をご確認下さい。 このGUIDは、他の関連するコンポーネントの特定に役立ちます。 URL は、次のようになります。 
-
-```https://dyn&lt;GUID&gt;.blob.core.windows.net/dynamicsdeployments... 
-```
+7. <strong>VHD</strong> 列にある情報を表示します。 GUID をご確認下さい。 このGUIDは、他の関連するコンポーネントの特定に役立ちます。 URL は、次のようになります。`https://dyn&lt;GUID&gt;.blob.core.windows.net/dynamicsdeployments...`
 
 ### <a name="2-delete-the-environments-in-the-project"></a>2. プロジェクトで環境を削除する
 
@@ -160,7 +161,10 @@ Azure に展開した AX 2012 R3 環境をシャット ダウンする場合は�
 
 ### <a name="3-delete-the-image-files-that-were-used-to-create-virtual-machines"></a>3. 仮想マシンを作成するために使用されたイメージ ファイルを削除する
 
-イメージ ファイルを削除するには、次の手順を実行します。 これらの画像ファイルは、Lifecycle Services プロジェクトで AX 2012 R3 環境用の仮想マシンを作成するために使用されました。 **注:** このプロジェクトから配置される唯一の環境のタイプが AX 2012 R3 デモ環境であった場合、削除するイメージ ファイルがない可能性があります。
+イメージ ファイルを削除するには、次の手順を実行します。 これらの画像ファイルは、Lifecycle Services プロジェクトで AX 2012 R3 環境用の仮想マシンを作成するために使用されました。 
+
+> [!NOTE]
+> このプロジェクトから配置される唯一の環境のタイプが AX 2012 R3 デモ環境であった場合、削除するイメージ ファイルがない可能性があります。
 
 1.  [Azure 管理ポータル](https://manage.windowsazure.com/)にログオンします。
 2.  左のナビゲーション ウィンドウで、**仮想マシン**をクリックします。 **仮想マシン** ページが表示されます。
@@ -224,7 +228,11 @@ Lifecycle Services プロジェクトに関連付けられている管理証明�
 Lifecycle Services プロジェクトを削除するには、次の手順を実行します。
 
 1.  [Lifecycle Services](https://lcs.dynamics.com/en/) にログオンします。
-2.  **すべてのプロジェクト**をクリックします。 **プロジェクト** 一覧のページが表示されます。 **注記:** プロジェクトが 1 つしかない場合は、そのプロジェクトが開きます。 Lifecycle Services の戻るアイコンをクリックして、**プロジェクト** リスト ページを表示します。
+2.  **すべてのプロジェクト**をクリックします。 **プロジェクト** 一覧のページが表示されます。 
+
+    > [!NOTE]
+    > プロジェクトが 1 つしかない場合は、そのプロジェクトが開きます。 Lifecycle Services の戻るアイコンをクリックして、**プロジェクト** リスト ページを表示します。
+
 3.  削除するプロジェクトの行を選択します。
 4.  ページの下部にある**削除**をクリックします。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 5cffef8128a73479818204ec599a22460d3abea4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cba62175bacf809eeb7a32530e35e24d8b71b941
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191589"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772353"
 ---
 # <a name="develop-and-deploy-custom-models-to-on-premises-environments"></a>カスタム モデルの開発とオンプレミス環境への配置
 
@@ -42,7 +42,7 @@ ms.locfileid: "2191589"
 ## <a name="development-tools-and-platform"></a>開発ツールおよびプラットフォーム
 クラウド アプリケーションまたはオンプレミス アプリケーションの開発、拡張、またカスタマイズに関係なく、開発プラットフォーム、ツール、および環境 (仮想マシン [VM]) は同じです。 ターゲットのランタイム環境がクラウド環境またはオンプレミス環境にあるかどうかに関係なく、カスタム コードは同じ開発用 VM 上で開発されます。
 
-開発の詳細については、[開発者ホーム ページ](../dev-tools/developer-home-page.md) を参照してください。 拡張機能やカスタマイズの詳細については、[拡張機能のホーム ページ](../extensibility/extensibility-home-page.md) を参照してください。 構築、テスト、および継続的な配信の詳細については、[継続的な配信ホームページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
+開発の詳細については、 [ホーム ページの開発とカスタマイズ](../dev-tools/developer-home-page.md) を参照してください。 拡張機能やカスタマイズの詳細については、[拡張機能のホーム ページ](../extensibility/extensibility-home-page.md) を参照してください。 構築、テスト、および継続的なデリバリーについての詳細については、 [継続的なデリバリーのホームページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
 
 ## <a name="deploy-development-and-build-environments"></a>開発環境とビルド環境の配備
 Azure サブスクリプションを使用することにより、オンプレミス LCS プロジェクトを使用し、Microsoft Azure 上にビルドおよび配置環境を配置することができます。 または、ローカル開発用の仮想ハード ディスク (VHD) をダウンロードすることができます。
@@ -60,7 +60,7 @@ Azure サブスクリプションに開発環境またはビルド環境を展�
 2. **Azure** または **ローカル** を選択します。 **ローカル** を選択した場合、開発 VHDを検索し、ダウンロードします。 **Azure** を選択した場合、次の 3 つのトポロジー、**ビルドおよびテスト**、**デモ**または**開発**から 1 つを選択するように求められます。
 3. 配置の手順を完了し、Azure サブスクリプションに VM を配置します。
 
-ローカルの開発 VHD をコンフィギュレーショする方法の詳細については、[アクセス インスタンス](../dev-tools/access-instances.md#vm-that-is-running-on-premises) を参照してください。
+ローカルの開発 VHD を構成する方法の詳細については、 [開発環境の配置とアクセス](../dev-tools/access-instances.md#vm-that-is-running-on-premises) を参照してください。
 
 > [!NOTE]
 > 独自の Azure サブスクリプションに環境を展開するには、少なくとも 1 つの Azure コネクタを設定する必要があります。 Azure コネクタを設定するには、LCS で **プロジェクト設定** ページを開き、**Azure コネクタ** タブをクリックします。 その後、指示に従って Azure コネクタを追加します。 手順を完了するには、組織のテナント管理者でなければなりません。  
@@ -69,7 +69,7 @@ Azure サブスクリプションに開発環境またはビルド環境を展�
 ## <a name="create-and-upload-a-deployable-package-to-the-lcs-asset-library"></a>展開可能なパッケージを作成して LCS アセット ライブラリにアップロードする
 開発のフェーズを完了し、サンド ボックスまたは実稼働環境にコードを配置する準備ができたら、モデルからアプリケーション配置可能パッケージを作成する必要があります。 このプロセスは、クラウド環境のプロセスと違いはありません。
 
-自動ビルド (ビルド環境) を使用している場合、ビルド プロセスがアプリケーション配置可能パッケージを作成します。 また、ユーザーの開発環境で、Microsoft Visual Studio からアプリケーション展開可能パッケージを作成することもできます。 開発環境で配置可能なパッケージのアプリケーションを作成する方法の詳細については、[配置可能なパッケージの作成と適用](../deployment/create-apply-deployable-package.md) を参照してください。
+自動ビルド (ビルド環境) を使用している場合、ビルド プロセスがアプリケーション配置可能パッケージを作成します。 また、ユーザーの開発環境で、Microsoft Visual Studio からアプリケーション展開可能パッケージを作成することもできます。 開発環境でアプリケーションの配備可能なパッケージを作成する方法の詳細については、 [モデルの展開可能なパッケージの作成](../deployment/create-apply-deployable-package.md) を参照してください。
 
 配置可能なパッケージの準備ができたら、以下の手順に従って、そのパッケージを LCS プロジェクトの資産ライブラリにアップロードします。
 

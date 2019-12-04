@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98ac3c38be33c3896a7036902d6086b931fe0eb0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 357c58bed8360a4371e90e0767fe63c0aaebd147
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183099"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812038"
 ---
 # <a name="office-integration-tutorial"></a>Office 統合のチュートリアル
 
@@ -36,7 +36,7 @@ ms.locfileid: "2183099"
 このチュートリアルでは、Microsoft Excel、Microsoft Word、ドキュメント管理および電子メールが関係する Microsoft Office 統合エクスペリエンスを使用して構築します。 Excel と Word がデータ エンティティをシステムへのエントリ ポイントとして使用する方法、Excel がユーザー エクスペリエンスの中核になれる方法、Excel と Word を一時的な簡易レポートとして使用できる方法を確認します。 ドキュメント管理機能と電子メール機能を使用してファイルを格納および共有する方法も表示されます。
 
 ## <a name="prerequisites"></a>前提条件
-このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、「[開発インスタンスへのアクセス](../dev-tools/access-instances.md)」を参照してください。 仮想マシン (VM) で Internet Explorer を実行している場合は、**インターネット オプション** &gt; **セキュリティ** &gt; **レベルのカスタマイズ**の順にフォントとファイルのダウンロードを有効にする必要があります。 Microsoft Visual Studio 2015 は VM で実行され、メタデータとコンパイル ファイルを上書きできるように、管理者として実行する必要があります。 Visual Studio が管理者として実行されるようにするには、プログラムを検索してタスクバーに固定します。 その後、タスクバーのショートカットを右クリックして、**Visual Studio 2015** を右クリックし、**プロパティ** &gt; **詳細**をクリックして、**管理者として実行**チェック ボックスをオンにします。 Visual Studio は、タスク バーのショートカットの 1 回の左クリックで、管理者として実行されるようになりました。
+このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、トピック [開発環境の配置とアクセス](../dev-tools/access-instances.md) を参照してください。 仮想マシン (VM) で Internet Explorer を実行している場合は、**インターネット オプション** &gt; **セキュリティ** &gt; **レベルのカスタマイズ**の順にフォントとファイルのダウンロードを有効にする必要があります。 Microsoft Visual Studio 2015 は VM で実行され、メタデータとコンパイル ファイルを上書きできるように、管理者として実行する必要があります。 Visual Studio が管理者として実行されるようにするには、プログラムを検索してタスクバーに固定します。 その後、タスクバーのショートカットを右クリックして、**Visual Studio 2015** を右クリックし、**プロパティ** &gt; **詳細**をクリックして、**管理者として実行**チェック ボックスをオンにします。 Visual Studio は、タスク バーのショートカットの 1 回の左クリックで、管理者として実行されるようになりました。
 
 ## <a name="key-concepts"></a>重要な概念
 -   **エンティティと OData** - Microsoft Dynamics Excel データ コネクタ アプリ (Excel App) を使用して、作成、読み取り、更新、および削除を行います。 コネクタは、デフォルト状態の「public」(**DataEntity.Public**=**Yes**) のまま残されているエンティティに対して作成された OData サービスを使用します。
@@ -467,10 +467,10 @@ SysEmail フレームワークを介して有効になっている電子メー�
 
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[Office 統合](office-integration.md)
+[Office 統合の概要](office-integration.md)
 
 [Office 統合のトラブルシューティング](office-integration-troubleshooting.md)
 

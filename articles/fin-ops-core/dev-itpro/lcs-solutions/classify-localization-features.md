@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b883d9246f35539e3bae14b0a9171e49c7534c73
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ecb64bac8e27f8bccf61209ef6abdbdb0cac99fe
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183280"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812101"
 ---
 # <a name="classification-of-localization-features"></a>ローカライズ機能の分類
 
@@ -50,9 +50,9 @@ BPM ライブラリが構築されているときは、ローカライズ ソリ
 | フィーチャー タイプ        | REG または COMP | 機能のタイプ                                                                                                           | REG                     |
 | フィーチャー名        | テキスト        | 機能がどのように使用されているかを説明する短い機能タイトル                                                             | 直接売上税レポート |
 
-BPM の詳細については、[BPM に業務プロセスをアップロード](../lifecycle-services/upload-business-processes-bpm-task-recorder.md) を参照してください。
+BPMの詳細については、 [ユーザー定義の業務プロセスをビジネス プロセス モデラー (BPM) にアップロードする](../lifecycle-services/upload-business-processes-bpm-task-recorder.md) を参照してください。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-- [ローカライズと規制の機能](country-region.md)
+- [グローバリゼーション リソース](country-region.md)
 

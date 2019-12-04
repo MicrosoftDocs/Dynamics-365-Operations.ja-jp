@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 15
-ms.openlocfilehash: c6447ca59f0d4f9b561d38f5fe37da7931435798
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5b04fceeaf3f345f6af57fcc8433a9448ff43de3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180495"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811421"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-15-march-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能
 
@@ -61,11 +61,11 @@ Dynamics 365 for Finance and Operations の重大なイベントの通知シス�
 
 ## <a name="data-entity-behavior-with-configuration-keys"></a>コンフィギュレーション キーを持つデータ エンティティの動作
 
-データ管理では、データ エンティティ、テーブル、およびフィールドで設定されている構成キーに従います。 これらのコンポーネントの階層構造のため、データ管理では、それ自体およびその親コンフィグレーション キーが使用可能になっている場合、階層内の子を使用することができます。 親コンフィギュレーション キーが無効の場合、どの子もインポートおよびエクスポートに使用できなくなります。 この動作の詳細については、[データ エンティティおよびコンフィギュレーション キー](../../dev-itpro/data-entities/config-key-entities.md)を参照してください。
+データ管理では、データ エンティティ、テーブル、およびフィールドで設定されている構成キーに従います。 これらのコンポーネントの階層構造のため、データ管理では、それ自体およびその親コンフィグレーション キーが使用可能になっている場合、階層内の子を使用することができます。 親コンフィギュレーション キーが無効の場合、どの子もインポートおよびエクスポートに使用できなくなります。 この動作の詳細については、[コンフィギュレーション キーおよびデータ エンティティ](../../dev-itpro/data-entities/config-key-entities.md)を参照してください。
 
-## <a name="embed-powerapps"></a>埋め込み PowerApps
+## <a name="embed-power-apps"></a>埋め込み Power Apps
 
-Microsoft PowerAppsは、開発者や技術者以外のユーザーがコードを記述することなくカスタム ビジネス アプリを構築できるようにするサービスで、現在サポートされています。 埋め込み PowerApp はページに追加できるだけでなく、編集、削除、または共有することができます。 また、Finance and Operations からのデータを活用する PowerApp を構築することができます。 詳細については、[埋め込み PowerApps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps) を参照してください。
+Microsoft Power Appsは、開発者や技術者以外のユーザーがコードを記述することなくカスタム ビジネス アプリを構築できるようにするサービスで、現在サポートされています。 埋め込み PowerApp はページに追加できるだけでなく、編集、削除、または共有することができます。 また、Finance and Operations からのデータを活用する PowerApp を構築することができます。 詳細については、[埋め込み Power Apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps) を参照してください。
 
 ## <a name="extension-and-overlayering-options-in-visual-studio"></a>Visual Studio の拡張子およびオーバーレイヤ オプション
 
@@ -94,7 +94,7 @@ Dynamics 365 Talent では、「はじめに」のワークブックが提供さ
 
 開発、テスト、およびコード ライフ サイクル管理のために開発者が操作する必要があるため、カスタマイズは高価です。 カスタマイズは、ある環境から別の環境にも管理および移行する必要があります。
 
-Dynamics 365 for Finance and Operations ではカスタム フィールドへの追加が簡単になりました。 開発者向けのカスタマイズは不要になりました。 代わりに、パワー ユーザーはカスタム フィールドをテーブルに追加してから、個人用設定を使用してフォームにそのフィールドを配置できます。 IT 管理者は個人用設定を組織内で他のユーザーと共有できます。 カスタム フィールドを作成および管理する方法の詳細については、[カスタム フィールド](user-defined-fields.md) を参照してください。
+Dynamics 365 for Finance and Operations ではカスタム フィールドへの追加が簡単になりました。 開発者向けのカスタマイズは不要になりました。 代わりに、パワー ユーザーはカスタム フィールドをテーブルに追加してから、個人用設定を使用してフォームにそのフィールドを配置できます。 IT 管理者は個人用設定を組織内で他のユーザーと共有できます。 カスタム フィールドを作成および管理する方法の詳細については、[カスタム フィールドの作成と操作](user-defined-fields.md)を参照してください。
 
 ## <a name="sr-10-certifications-for-dynamics-365-for-finance-and-operations"></a>(SR 10) Dynamics 365 for Finance and Operations の証明書
 

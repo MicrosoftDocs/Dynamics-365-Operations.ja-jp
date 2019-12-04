@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anmukh
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: ad9630684ccf2f25df0ef95415377c18be5fdf9f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 0489d3e69df4acfdac1aab21e534890759277c70
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550472"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811865"
 ---
 # <a name="deployment-guidelines-for-advance-invoice-report-printing-for-czech-republic-hungary-and-poland"></a>チェコ共和国、ハンガリー、およびポーランドの事前請求書レポート印刷の配置ガイドライン
 
@@ -30,7 +30,7 @@ ms.locfileid: "2550472"
 
 このトピックでは、チェコ共和国、ハンガリー、およびポーランドで Dynamics 365 Retail のローカライゼーションを有効にする方法を示します。 ローカライズは、小売コンポーネントのいくつかの拡張機能で構成されます。 これらの拡張機能は、販売時点管理 (POS) から**事前請求書**レポートを印刷できるようにします。 チェコ共和国、ハンガリー、およびポーランド Retail ローカライズの詳細については、次を参照してください。[東ヨーロッパの小売り業向け事前請求書](./emea-eeu-advance-invoices-for-retail.md)
 
-ローカライズは、小売ソフトウェア開発キット (SDK) の一部です。 リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
+ローカライズは、小売ソフトウェア開発キット (SDK) の一部です。 小売 SDK のダウンロードと使用方法については、 [小売 ソフトウェアの開発キット(SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
 ローカライズは、Commerce runtime (CRT) と POS に対する拡張機能で構成されます。 このローカライズを有効にするには、CRT コンフィギュレーション ファイルを変更しおよび変更し、POS プロジェクトを構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Microsoft Visual Studio チーム サービスといった、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 
@@ -111,4 +111,4 @@ ms.locfileid: "2550472"
     ```
 
 3. Retail SDK で **msbuild** を実行し、配置可能なパッケージを作成します。
-4. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
+4. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、 [小売の配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md)を参照してください。

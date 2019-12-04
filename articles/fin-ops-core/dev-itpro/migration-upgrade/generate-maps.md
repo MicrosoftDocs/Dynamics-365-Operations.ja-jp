@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: a58a05160f9102f3b2e0cdb1b8f86239a65923ce
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 768ec7fe4fe66cb843794057714209acda26e15a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183165"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811691"
 ---
 # <a name="ax-2009-migration--generate-maps"></a>AX 2009 の移行 － マップの生成
 
@@ -34,7 +34,7 @@ Microsoft Dynamics AX 2009 から Finance and Operations へデータを移行�
 > Azure ポータルの Microsoft Azure Active Directory (Azure AD) で新しいアプリケーションを作成するとき、2 つのオプション **Web API** と **ネイティブ** があります。 **ネイティブ**を選択し、ネイティブ Azure AD アプリケーションへのアクセス許可を付与します。
 
 ## <a name="prerequisites"></a>必要条件
-ソース環境とターゲット環境間でデータ マップを生成する前に、データ移行ツール (DMT) をインストールする必要があります。 詳細については、[データ移行ツールーのインストール](install-dmt.md)を参照してください。
+ソース環境とターゲット環境間でデータ マップを生成する前に、データ移行ツール (DMT) をインストールする必要があります。 詳細については、 [AX 2009 の移行 - データ移行ツールのインストール](install-dmt.md) を参照してください。
 
 ## <a name="generate-maps"></a>マップの生成
 データ移行のためのマップを生成するには、次の手順に従ってください。

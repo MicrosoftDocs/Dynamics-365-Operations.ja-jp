@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: a39ff8d425033bffa653c7d7e06eb0a2cf93e66b
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: ea569ba866ebeaf4c8c9f4d5c429df3adac769eb
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627634"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812451"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-7-may-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 7 (2017 年 5 月) の新機能および変更された機能
 
@@ -37,7 +37,7 @@ ms.locfileid: "2627634"
 
 ## <a name="static-export-to-excel-limit-increase-from-2k-to-10k"></a>Excel への静的エクスポートの制限が 2000 から10000 に増加
 
-静的な Excel エクスポートの制限が 2 kから 10k に増加し、より多くの行がグリッドからエクスポートされるようになりました。 グリッド内のデータを表すエンティティがある場合、ハード行の制限がないため、Excel の Open と Excel Add-in を使用することをお勧めします。 さらに、エンティティが存在し、ユーザーに管理者特権がある場合、DIXF (データ管理) もオプションとなります。 詳細については、[Excel アドインの使用](../../dev-itpro/office-integration/use-excel-add-in.md) を参照してください。
+静的な Excel エクスポートの制限が 2 kから 10k に増加し、より多くの行がグリッドからエクスポートされるようになりました。 グリッド内のデータを表すエンティティがある場合、ハード行の制限がないため、Excel の Open と Excel Add-in を使用することをお勧めします。 さらに、エンティティが存在し、ユーザーに管理者特権がある場合、DIXF (データ管理) もオプションとなります。 詳細については、[Excel でエンティティ データを開き、Excel アドインを使用して更新する](../../dev-itpro/office-integration/use-excel-add-in.md)を参照してください。
 
 ## <a name="development-tooling--new-tabbed-workspace-pattern"></a>開発ツール - 新しいタブ付きワークスペース パターン
 
@@ -55,7 +55,7 @@ Dynamics 365 for Operations 開発ツールおよびランタイム プラット
 
 ## <a name="development-and-customization--validating-events-on-form-data-sources-and-form-data-source-fields"></a>開発およびカスタマイズ - フォーム データ ソースとフォーム データ ソース フィールドのイベントの検証
 
-フォーム データ ソース (FormDataSourceEventType) とフォーム データ ソース フィールド (FormDataFieldEventType) の検証イベントは、ユーザー指定の値の無効化をサポートするようになりました。 詳細については、[拡張機能を使用してモデル要素をカスタマイズする](../../dev-itpro/extensibility/customize-model-elements-extensions.md) を参照してください。
+フォーム データ ソース (FormDataSourceEventType) とフォーム データ ソース フィールド (FormDataFieldEventType) の検証イベントは、ユーザー指定の値の無効化をサポートするようになりました。 詳細については、[拡張機能によるモデル要素のカスタマイズ](../../dev-itpro/extensibility/customize-model-elements-extensions.md)を参照してください。
 
 次の例は、この機能を示しています。 この例では、**abTable** という名前のデータソース、および **FieldInt1** という名前のフィールドを含む **MyForm** と言う名前のフォームを使用します。
 

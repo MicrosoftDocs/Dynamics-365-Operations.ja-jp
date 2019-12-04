@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a612dbabe5747f4b1646fd4a4b69f80154154f1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b75583795a08b9f14865a405d6f76c6754c68f2b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183454"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769985"
 ---
 # <a name="features-and-services-available-through-power-bi-integration"></a>Power BI 統合を通じて利用できる機能やサービス
 
@@ -76,9 +76,9 @@ PowerBI.com マーケットプレースには Power BI コンテンツ パック
 
 エンティティ格納を使用して作成されるレポートは、DirectQuery テクノロジを利用します。 この技術により、大量のデータに対するレポートを作成できます。 DirectQuery テクノロジを使用して作成されるレポートは、PowerBI.com サービスにデータをキャッシュしません。 代わりに、データは常にアプリケーションに格納されます。
 
-エンティティ格納と Power BI 統合の概要については、「[エンティティ格納と Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。
+エンティティ格納と Power BI 統合の概要については、 [エンティティ格納と Power BI の統合](power-bi-integration-entity-store.md) を参照してください。
 
-Microsoft Dynamics AX 2012 をアップグレードする場合は、エンティティ格納を使用する集計測定にキューブをアップグレードすることができます。 エンティティ格納を使用して、Power BI レポートを作成することができます。 詳細については、「[アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティ格納へ移行する](../migration-upgrade/migrate-upgraded-cube-entity-store.md)」を参照してください。
+Microsoft Dynamics AX 2012 をアップグレードする場合は、エンティティ格納を使用する集計測定にキューブをアップグレードすることができます。 エンティティ格納を使用して、Power BI レポートを作成することができます。 詳細については、 [アップグレードした AX 2012 R3 販売キューブをエンティティ格納へ移行する](../migration-upgrade/migrate-upgraded-cube-entity-store.md) を参照してください。
 
 ### <a name="creating-power-bi-reports-by-using-excel"></a>Exel を使用して Power BI レポートを作成する
 Power BI desktop オーサリング ツールの使用に加えて、Excel に採用されている「Power ツール」を使用して視覚エフェクトを作成できます。 組織には、既に Excel を毎日使用している多くのユーザーが存在する可能性があります。 クイック「1 回限り」レポートでは、Excel はこれらのユーザーに対して最適なオプションである可能性があります。

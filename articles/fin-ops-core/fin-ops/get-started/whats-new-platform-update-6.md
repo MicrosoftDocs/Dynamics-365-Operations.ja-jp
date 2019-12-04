@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: b998298fee72ec545df579b564a99d4b7e229d17
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: ed4e254c9da3a3cea0b8a6a49bae87b4cf7c5213
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627567"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812452"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-6-april-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の新機能および変更された機能
 
@@ -31,9 +31,9 @@ ms.locfileid: "2627567"
 
 このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 6 の新機能または変更された機能について説明します。 このバージョンは 2017 年 4 月にリリースされ、ビルド番号は 7.0.4509.16180 です。
 
-## <a name="browser-framework--powerapps-host-control"></a>ブラウザー フレームワーク – PowerApps ホスト コントロール
+## <a name="browser-framework--power-apps-host-control"></a>ブラウザー フレームワーク – Power Apps ホスト コントロール
 
-Dynamics 365 for Operations は、開発者に対して新しいコントロールである PowerApps ホスト コントロールを導入します。 このコントロールにより、開発者は Dynamics 365 for Operations フォーム内で PowerApp をホストまたは埋め込むことができます。 詳細については、[PowerApps ホスト コントロール](../../dev-itpro/user-interface/powerapps-host-control.md) を参照してください。
+Dynamics 365 for Operations は、開発者に対して新しいコントロールである Microsoft Power Apps ホスト コントロールを導入します。 このコントロールにより、開発者は Dynamics 365 for Operations フォーム内で PowerApp をホストまたは埋め込むことができます。 詳細については、[Power Apps ホスト コントロール](../../dev-itpro/user-interface/powerapps-host-control.md) を参照してください。
 
 ## <a name="browser-client--ability-to-model-toolbar-actions-in-the-overflow-menu"></a>ブラウザー クライアント - オーバーフロー メニューのツール バー アクションをモデル化する機能
 
@@ -49,11 +49,11 @@ Dynamics 365 for Operations は、開発者に対して新しいコントロー�
 
 ## <a name="document-management--attachment-storage-cleanup"></a>ドキュメント管理 - ストレージ クリーンアップの添付ファイル
 
-Dynamics AX 7.0 がリリースされたとき、添付ファイル用のデータベースの記憶領域が使用されなくなりました。ただし、移行する必要のあるプラットフォーム機能が一部残っています。 Dynamics 365 for Operations プラットフォーム更新プログラム 6 では、最後に残ったプラットフォーム使用状況が削除され、移行ボタンが**ドキュメント管理パラメーター** フォームに追加されました。 移行ボタンを使用して、アップグレード後にデータベースに残っている可能性のあるファイルをクリーンアップすることができます。 移行により、データベースに格納されている添付ファイルが BLOB ストレージに移行されます。 詳細については、[最新のプラットフォーム更新プログラムにアップグレード](../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md) を参照してください。
+Dynamics AX 7.0 がリリースされたとき、添付ファイル用のデータベースの記憶領域が使用されなくなりました。ただし、移行する必要のあるプラットフォーム機能が一部残っています。 Dynamics 365 for Operations プラットフォーム更新プログラム 6 では、最後に残ったプラットフォーム使用状況が削除され、移行ボタンが**ドキュメント管理パラメーター** フォームに追加されました。 移行ボタンを使用して、アップグレード後にデータベースに残っている可能性のあるファイルをクリーンアップすることができます。 移行により、データベースに格納されている添付ファイルが BLOB ストレージに移行されます。 詳細については、[最新のプラットフォーム更新プログラムの環境への適用](../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md)を参照してください。
 
 ## <a name="number-sequence-scope-extensibility"></a>番号順序スコープの拡張性
 
-拡張機能を通じて番号シーケンス スコープを拡張することができるようになりました。 数字シーケンスの範囲は、数字シーケンスを使用する組織を定義します。 スコープを会計年度期間と組み合わせて、さらに特定の数値シーケンスを作成することができます。 詳細については、「[番号順序スコープの拡張](../../dev-itpro/extensibility/extend-number-sequence-scope.md)」を参照してください。
+拡張機能を通じて番号シーケンス スコープを拡張することができるようになりました。 数字シーケンスの範囲は、数字シーケンスを使用する組織を定義します。 スコープを会計年度期間と組み合わせて、さらに特定の数値シーケンスを作成することができます。 詳細については、[番号順序のスコープの拡張](../../dev-itpro/extensibility/extend-number-sequence-scope.md)を参照してください。
 
 ## <a name="mobile"></a>携帯電話
 

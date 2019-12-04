@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: mufife
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 2642f8355269fabda56e42489caddb6b5576c8d4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fc244b1f3b67bac89197df8cdc9e5eec16a7d9f0
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191553"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769747"
 ---
 # <a name="business-events-and-microsoft-forms-pro"></a>ビジネスイベントと Microsoft Forms Pro
 
@@ -50,7 +50,7 @@ Forms Pro を使用したことがない場合は、まず [Forms Pro のドキ�
 
     シナリオに必要な顧客の電子メール アドレスとその他の情報は、ビジネス イベント ペイロードに含まれる必要があります。 ペイロードにこのデータがない場合は、適切なフィールドが含まれるように拡張できます。 詳細については [ビジネス イベント開発者ドキュメント](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc) を参照してください。
 
-4. このシナリオの調整には Microsoft Flow が使用されるため、アプリケーションで**変更ベースのアラートが発生した場合**ビジネス イベントを有効化しないでください。 代わりに、ビジネス イベントを直接サブスクライブするように Microsoft Flow を設定します。
+4. このシナリオの調整には Microsoft Power Automate が使用されるため、アプリケーションで **変更ベースのアラートが発生した場合** ビジネス イベントを有効化しないでください。 代わりに、ビジネス イベントを直接サブスクライブするように Power Automate を設定します。
 
     ![Flow](../../media/Flow1.png)
 

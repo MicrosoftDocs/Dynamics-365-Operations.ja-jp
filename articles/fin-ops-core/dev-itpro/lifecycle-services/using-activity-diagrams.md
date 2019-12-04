@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: c779d8e3effbb11f05c77f795354cd03f8b42cca
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 832c4121be697a2a30eb8a47628b8775ce634b2d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627573"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812122"
 ---
 # <a name="work-with-activity-diagrams-in-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 
@@ -57,7 +57,7 @@ BPM ライブラリ内の **図** 列は、特定の業務プロセスがアク�
 
 
 ## <a name="activity-diagrams-that-are-created-from-task-recordings"></a>タスク記録から作成された活動ダイアグラム
-環境でタスク記録を作成して、Microsoft Dynamics Lifecycle Services (LCS) に直接保存することができます。 この方法で、タスク記録を BPM ライブラリ内の業務プロセスと関連付けることができます。 詳細については、[ヘルプ システムに接続する](../../fin-ops/get-started/help-connect.md) および [ドキュメントの作成またはタスク記録を使用してトレーニングする](../user-interface/task-recorder-training-docs.md) を参照してください。
+環境でタスク記録を作成して、Microsoft Dynamics Lifecycle Services (LCS) に直接保存することができます。 この方法で、タスク記録を BPM ライブラリ内の業務プロセスと関連付けることができます。 詳細については、[ヘルプ システムの接続](../../fin-ops/get-started/help-connect.md) および [タスク レコーダーを使用したドキュメントやトレーニングの作成](../user-interface/task-recorder-training-docs.md) を参照してください。
 
 タスク レコーダー ツールを使用すると、配布可能な記録ファイルを作成できます。 記録ファイルは、.axtr ファイル名拡張子を持ちます。 手動で記録ファイルをアップロードすることにより、BPM 内の業務プロセスをタスク記録に関連付けることができます。 
 
@@ -76,7 +76,7 @@ BPM は作成されたすべてのタスク記録の活動ダイアグラムと�
 Visio ファイルを表示またはアップロードするには、次の手順を実行します。
 
 1. 業務プロセスを選択し、右ウィンドウの **概要** タブで **図** を選択します。
-2. **フローチャート**ページで、**Visio** タブを選択します。詳細については、[ビジネス プロセス モデラー](flowcharts-business-process-modeler.md) の「未接続のフローチャート」セクションを参照してください。
+2. **フローチャート**ページで、**Visio** タブを選択します。詳細については、[ビジネス プロセス モデラーのフローチャート (BPM)](flowcharts-business-process-modeler.md) の未接続のフローチャート セクションを参照してください。
 
 ## <a name="edit-process-steps"></a>プロセスの手順を編集
 1. プロセス手順を編集するには、フローチャートの空白部分を右クリックし、下部のツールバーで **編集** を選択します。

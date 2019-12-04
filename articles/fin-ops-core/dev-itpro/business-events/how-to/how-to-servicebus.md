@@ -3,7 +3,7 @@ title: ビジネス イベントおよび Azure Service Bus
 description: このトピックでは、Microsoft Azure Service Bus エンドポイントを構成する方法と、Service Bus からビジネス イベントを消費する方法を説明します。
 author: ibenbouzid
 manager: AnnBe
-ms.date: 08/13/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: imbenbou
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 30412ba27efce40ee1f10eeb69a6cc06c3e1d8c0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b3daa4b911f0f368e0a47d3dd05e3b30cec9e9a9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191550"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772451"
 ---
 # <a name="business-events-and-azure-service-bus"></a>ビジネス イベントおよび Azure Service Bus
 [!include[banner](../../includes/banner.md)]
@@ -73,6 +73,9 @@ ms.locfileid: "2191550"
 4. 新しい **送信** ポリシーを選択して **プライマリ接続文字列** 値をコピーして保存します。 この値は後で使用します。
 
     <img alt="Service Bus connection string" src="../../media/BEF-Howto-servicebus-06.png" width="70%">
+
+  > [!NOTE]
+  > 共有アクセス ポリシーは、トピック レベルではなく、名前空間レベルにある必要があります。 トピック レベルの共有アクセスポリシーを使用する場合は、ビジネス イベント用のエンドポイントをコンフィギュレーションするときに、末尾にセミコロン EntityPath = を付加した文字列を含めることはできません。
 
 ## <a name="create-a-new-key-vault"></a>新しい Key Vault の作成
 

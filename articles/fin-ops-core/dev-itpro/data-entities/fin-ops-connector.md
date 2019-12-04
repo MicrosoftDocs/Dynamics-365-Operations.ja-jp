@@ -1,6 +1,6 @@
 ---
 title: アプリケーション コネクタ
-description: このトピックでは、Microsoft Flow およびロジック アプリのアプリケーション コネクタに関する情報を提供します。
+description: このトピックでは、Microsoft Power Automate およびロジック アプリのアプリケーション コネクタに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 08/05/2019
@@ -15,18 +15,18 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 51bc33800c7f93ca93444fd5bb455e00b8d93272
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 3d3b14aa6fa9e70a16dd7626481bd04da363020b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550870"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769624"
 ---
 # <a name="application-connector"></a>アプリケーション コネクタ
 
 [!include[banner](../includes/banner.md)]
 
-アプリケーション コネクタを使用して Microsoft Flow、PowerApps、データ インテグレーター、およびロジック アプリを Finance and Operations と統合できます。 外部アプリケーションは、有効なトリガーとアクションを使用することで、それらと統合することできます。
+アプリケーション コネクタを使用して Microsoft Power Automate、 Power Apps、データ インテグレーター、およびロジック アプリを Finance and Operations と統合できます。 外部アプリケーションは、有効なトリガーとアクションを使用することで、それらと統合することできます。
 
 ## <a name="prerequisites"></a>必要条件
 先に進む前に、コネクタについて理解するための前提条件として、次のトピックをお読みください。
@@ -37,7 +37,7 @@ ms.locfileid: "2550870"
 - [定期統合](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
 
 ## <a name="triggers"></a>トリガー
-ビジネス イベントは、*ビジネス イベントが発生した場合*にトリガーを使用して公開されます。 ビジネス イベントに関する詳細については、[Microsoft Flow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) のビジネス イベントおよび[ビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page)を参照してください。
+ビジネス イベントは、*ビジネス イベントが発生した場合*にトリガーを使用して公開されます。 ビジネス イベントに関する詳細については、 [Microsoft Power Automate のビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) および [ビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page) を参照してください。
 
 ## <a name="actions"></a>アクション
 
@@ -47,7 +47,7 @@ ms.locfileid: "2550870"
 
 このアクションは、ターゲット インスタンスから特定のデータ エンティティのレコードをフェッチするために使用できます。
 
-*インスタンス*は、コネクタが接続するアプリケーションのターゲット インスタンスの URL を参照します。 予測値は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Microsoft Flow、PowerApps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
+*インスタンス*は、コネクタが接続するアプリケーションのターゲット インスタンスの URL を参照します。 予測値は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
 
 *エンティティ名*は、レコードをフェッチする必要があるデータ エンティティを参照します。 ドロップダウン メニューは、ターゲット環境のデータ エンティティの一覧を表示します。
 
@@ -57,7 +57,7 @@ ms.locfileid: "2550870"
 
 このアクションを使用して、データ エンティティのデータ レコードを作成できます。
 
-*インスタンス*は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Microsoft Flow、PowerApps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
+*インスタンス*は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
 
 *エンティティ名*は、レコードを作成する必要があるデータ エンティティを参照します。 ドロップダウン メニューは、ターゲット環境のデータ エンティティの一覧を表示します。
 
@@ -75,7 +75,7 @@ ms.locfileid: "2550870"
 
 このアクションを使用して、ビジネス アクションを実行するメソッドをデータ エンティティ上で呼び出すことができます。
 
-*インスタンス*は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Microsoft Flow、PowerApps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
+*インスタンス*は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
 
 *アクション*は、実行する必要があるデータ エンティティ上のメソッドを参照します。 表示されるフィールドの一覧は、選択したメソッドに基づいて異なります。 これらのフィールドは、選択したメソッドのパラメーターを表します。
 
@@ -83,4 +83,4 @@ ms.locfileid: "2550870"
 
 このアクションを使用してエンティティの一覧を取得し、開発中のアプリで使用することができます。
 
-*インスタンス*は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Microsoft Flow、PowerApps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
+*インスタンス*は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。

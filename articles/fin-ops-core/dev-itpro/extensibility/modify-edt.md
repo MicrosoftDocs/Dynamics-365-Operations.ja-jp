@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 1b41878ddc870c32ff0798138a69c4d623b2ee00
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 003ddd227a9217b90934c0e0cebd6284c6ffc086
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183315"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812112"
 ---
 # <a name="modify-extended-data-types-edts-through-extension"></a>拡張機能を通じて拡張データ型 (EDT) を変更する
 
@@ -37,7 +37,7 @@ ms.locfileid: "2183315"
     + EDT が別の EDT から拡張されない場合、値のみを修正することができます。
     + 新しい文字列のサイズは、基準 EDT 値に等しい値または超える値にのみセットすることができます。
 - 小数点以下の桁数 (NoOfDecimalsプロパティ)
-    + 詳細については、 [拡張データ型の小数点以下桁数の拡張](decimal-point-precision.md) を参照してください。
+    + 詳細については、 [選択したデータ型の小数点以下の精度の拡張](decimal-point-precision.md) を参照してください。
 
 プロパティ シートを使用して、新たに追加された要素のと同様にプロパティを変更します。
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e45ba410912b5948a27b4c5631d588a6c6d89299
-ms.sourcegitcommit: aca7527330e0a6011c42e07c7e50ec309dc953a6
+ms.openlocfilehash: 02114c975d26718ff2df0feee1ed625954f0eeca
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "2567110"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811370"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -144,7 +144,7 @@ Finance + Operations において、既定のクラウド ベースの WOPI サ�
 
 ドキュメント管理では、メモ、ドキュメント、および他のファイルを追加し記録できます。
 
-印刷管理では選択したレポートの印刷設定を制御することができます。 印刷設定には、コピー数、印刷先、およびレポートに含めることができる多言語テキストが含まれます。 詳細については、[Document Reporting Services の概要](../../dev-itpro/analytics/document-reporting-services.md) を参照してください。
+印刷管理では選択したレポートの印刷設定を制御することができます。 印刷設定には、コピー数、印刷先、およびレポートに含めることができる多言語テキストが含まれます。 詳細については、 [ドキュメント レポーティング サービス](../../dev-itpro/analytics/document-reporting-services.md) を参照してください。
 
 ### <a name="what-is-the-difference-between-document-types-and-file-types"></a>ドキュメント タイプとファイル タイプの違いは何ですか。
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 03c551cb06d90be1b9a8f06c42791c28a2d007fe
-ms.sourcegitcommit: 25c45428162194c5db8feb3ab53d8df9551b0301
+ms.openlocfilehash: b226c9f0cea4e187ef7acf1ddda7b921745a7311
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "2559796"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811866"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 
@@ -29,7 +29,7 @@ ms.locfileid: "2559796"
 
 このトピックは、Dynamics 365 Retail のオーストラリアでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、小売コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷し、追加の監査イベントを登録し、EFSTA システムと Electronical 会計登録ソフトウェアとの統合サンプルを含めることができます。 オーストリアの小売ローカライズの詳細については、[オーストリアの会計登録サービス統合サンプル](./emea-aut-fi-sample.md)を参照してください。
 
-統合サンプルは、会計統合フレームワークに基づいて作成されました。 会計統合機能に関する詳細は、[小売チャンネルの会計統合](fiscal-integration-for-retail-channel.md)を参照してください。これらのサンプルは、小売ソフトウェア開発キット (SDK) の一部です。 リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
+統合サンプルは、会計統合フレームワークに基づいて作成されました。 会計統合機能の詳細については、 [小売チャンネルの財政統合の概要](fiscal-integration-for-retail-channel.md) を参照してください。これらのサンプルは、市販ソフトウェア開発キット (SDK)の一部です。 小売 SDK のダウンロードと使用方法については、 [小売 ソフトウェアの開発キット(SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
 このローカライズは、Commerce runtime (CRT)、ハードウェア ステーション、および POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、ハードウェア ステーション、および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 
@@ -174,7 +174,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 #### <a name="set-up-the-registration-process"></a>登録プロセスの設定
 
-登録プロセスを有効にするには、次の手順を使用して Retail Headquarters を設定します。 詳細については、[会計登録プロセスの設定方法](./setting-up-fiscal-integration-for-retail-channel.md)を参照してください。
+登録プロセスを有効にするには、次の手順を使用して Retail Headquarters を設定します。 詳細については、[小売チャネルの会計統合の設定](./setting-up-fiscal-integration-for-retail-channel.md) を参照してください。
 
 1. **小売共有パラメーター** を開き、**全般** タブで **会計統合** を有効にします。
 2. **小売 \> チャンネル設定 \> 会計統合 \> 会計コネクタ** メニューを開きます。 RetailSdk からコネクタ構成を読み込みます。 ファイルは、SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml の下に保存されています。
@@ -227,5 +227,5 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
         ```
 
 4. Visual Studio utility 用に、MSBuild コマンド プロンプトを起動し 、Retail SDK フォルダーの下で **msbuild** を実行し、配置可能なパッケージを作成します。
-5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
+5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、 [小売の配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md)を参照してください。
 6. [Retail Headquartersにおいて設定が必要なパラメーター](#set-up-required-parameters-in-retail-headquarters)の入力を完了します

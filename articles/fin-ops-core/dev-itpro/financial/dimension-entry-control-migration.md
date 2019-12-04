@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5544f29643b4a872d1fab7c5bb77ca8669a3ed72
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fee68ed016f95cd0a066d1f6770c3e43bc46bb48
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191571"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812016"
 ---
 # <a name="migrate-default-dimensions-controls-to-dimension-entry-controls"></a>既定の分析コード コントロールを分析コード エントリ コントロールに移行する
 
@@ -36,7 +36,7 @@ ms.locfileid: "2191571"
 1.  **アプリケーション エクスプローラー**で **PurchTable** フォームを検索します。
 2.  現在のプロジェクトにフォームを追加します。
 3.  デザイナーとコード エディタ ビューで、フォームを開きます。
-4.  フォームのデザイン ビューで
+4.  フォームのデザイン ビューでは:
     1.  コントロール ツリーから手動で、または**ファイル** タブ下の検索バーで「DimensionEntry」を検索して、分析コード エントリ コントロール (DEC) を検索します。
     2.  最初の **DEC** (DimensionEntryControlHeader) を選択し、以下を確認します。
         -   コントロールの横にある括弧で指定されたコントロールのタイプは、Dimension Entry Control です。
@@ -129,10 +129,10 @@ ms.locfileid: "2191571"
 
 
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 - [分析コード エントリ コントロールの取得](dimension-entry-control-uptake.md)
-- [分析コード エントリ コントロール ダイアログのサポート](dimension-entry-control-dialog-support.md)
+- [ダイアログの分析コード エントリ コントロールのサポート](dimension-entry-control-dialog-support.md)
 
 
 

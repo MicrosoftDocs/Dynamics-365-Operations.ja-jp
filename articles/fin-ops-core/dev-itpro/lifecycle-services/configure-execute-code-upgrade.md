@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0f1616cf929a46e1f9b896abba919440b240042
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b3148e3bec6d628cb8d57c2691725822747c8f1c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183216"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811695"
 ---
 # <a name="configure-the-code-upgrade-service-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) で、コード アップグレード サービスを構成する
 
@@ -37,9 +37,9 @@ ms.locfileid: "2183216"
 コードのアップグレード ツールは、Azure DevOps プロジェクトに接続し、トランク\\メインブランチを検索し、リリース\\\<バージョン番号\>という名前の新しいブランチに分岐してから、コードのアップグレードを実行します。 このプロセスが完了した後、開発環境を、リリース \\\<バージョン番号\> 下の新しいブランチに同期させ、競合を解決できます。 アップグレード後のコードをコンパイルしてテストしたとき、新しいブランチを Visual Studio のソース管理エクスプ ローラーを使用して Trunk\\Main にマージすると、プロセスが完了します。
 
 
-Dynamics 365 for Finance and Operations バージョン 8.0 およびそれ以降では、Microsoft モデルをオーバーレイしてカスタマイズすることはできません。 アップグレードする前に、カスタマイズを拡張機能にリファクターする計画が必要です。 詳細については、[拡張機能のホームページ](../extensibility/extensibility-home-page.md)および [8.0 環境でオーバーレイをリファクタリングする](../extensibility/refactoring-over-layering.md)を参照してください。
+Dynamics 365 for Finance and Operations バージョン 8.0 およびそれ以降では、Microsoft モデルをオーバーレイしてカスタマイズすることはできません。 アップグレードする前に、カスタマイズを拡張機能にリファクターする計画が必要です。 詳細については [拡張機能のホーム ページ](../extensibility/extensibility-home-page.md) および [モデルの制限を緩和して、オーバレイを拡張機能にリファクタリングする](../extensibility/refactoring-over-layering.md) を参照してください。
 
-## <a name="process"></a>プロセス
+## <a name="process"></a>処理
 ### <a name="create-the-trunkmain-folder-structure"></a>トランク\\メイン フォルダー構造を作成する
 
 ソース コードを識別するコード アップグレード サービスについては、Azure DevOps プロジェクトには Team Foundation バージョン管理 (TFVC) コード リポジトリが含まれている必要があります。 さらに、コード リポジトリ フォルダー構造は、次の厳密なパターンに準拠している必要があります。 
@@ -50,13 +50,12 @@ Dynamics 365 for Finance and Operations バージョン 8.0 およびそれ以�
  新しいフォルダーは、Azure DevOps Web インターフェイスの **リポジトリ** で直接作成できます。
  
  
- > [!NOTE]
- > フォルダー名は大文字と小文字を区別していて、つまり、メインおよびメインでない、またはコードのアップグレード サービスはフォルダーを認識しません。
- 
- > Azure DevOps プロジェクトは、既定で Git バージョン管理を使用します。 TFVC リポジトリを追加する必要があります。
- >    プロジェクト設定へ移動し、リポジトリに移動します。
- >    [新しいリポジトリ] を選択します。
- >    [種類] フィールドで、[TFVC] を選択し、[作成] をクリックします。
+> [!NOTE]
+> - フォルダー名は大文字と小文字を区別していて、つまり、メインおよびメインでない、またはコードのアップグレード サービスはフォルダーを認識しません。
+> - Azure DevOps プロジェクトは、既定で Git バージョン管理を使用します。 TFVC リポジトリを追加する必要があります。
+>     1. プロジェクト設定へ移動し、リポジトリに移動します。
+>     2. [新しいリポジトリ] を選択します。
+>     3. [種類] フィールドで [TFVC] を選択し、[作成] をクリックします。
 
 
 ### <a name="create-a-personal-access-token"></a>個人用アクセス トークンを作成する
@@ -83,18 +82,17 @@ Azure DevOps プロジェクトに接続するために、LCS は個人用アク
    [![LCS トークン](./media/lcstoken.png)](./media/lcstoken.png)
 
 3. 接続する Azure DevOps アカウント内のプロジェクトを選択し、**続行** を選択します。 
+   
    [![LCS がプロジェクトを選択](./media/lcs_selectproject.png)](./media/lcs_selectproject.png)
 
 4. **確認および保存**ページで、**保存**をクリックします。
 
 ### <a name="create-an-ax7version-file"></a>ax7.version ファイルを作成します
 
-
 > [!NOTE]
 > AX 2012 から移行する場合は、この手順を省略できます。
 
 LCS のコードのアップグレード タイルは、移行元のバージョンを自動的に検出します。ソース管理のメイン フォルダの ax7.version ファイルを参照してください。 以下に示すように、Visual Studio または Azure DevOps Web ポータルを通じて、このファイルを手動で作成する必要があります。 Dynamics AX 2012 R3 またはそれ以前のバージョンからコードを移行する場合、このファイルは必要ありません。 ここに入力するバージョン番号は、アプリケーションのバージョン (プラットフォームのバージョンではない) である必要があります。 このファイルに無効なバージョン番号を入力するとしてのコード アップグレードの実行に失敗する可能性があるため、ここには必ず正しいバージョン番号を入力してください。
-
 
 [![ax7 バージョン ファイル](./media/ax7_versionfile.png)](./media/ax7_versionfile.png) 
 
@@ -120,8 +118,8 @@ LCS のコードのアップグレード タイルは、移行元のバージョ
 
 ### <a name="merge-releases-back-into-trunkmain"></a>リリースを Trunk\\Main にマージ
 
-リリース\\\<バージョン番号\>のアップグレードされたコードが正常にコンパイルされ、コード移行とテストを完了したら、このブランチをトランク\\メインにマージする準備が整いました。 これを行うには、Visual Studio の開発環境で、ソース管理エクスプローラー ウィンドウを開き、**リリース\\\<バージョン番号\>** 分岐を右クリックし、コンテキスト メニューで**分岐とマージ**に進み、サブ メニューで**マージ**を選択します。
+リリース\\\<バージョン番号\>のアップグレードされたコードが正常にコンパイルされ、コード移行とテストを完了したら、このブランチをトランク\\メインにマージする準備が整いました。 これを行うには、 Visual Studio の開発環境で、ソース管理エクスプローラー ウィンドウを開き、 **リリース\\\<バージョン番号\>** の分岐を右クリックし、コンテキスト メニューで **分岐とマージ** に進み、サブ メニューで **マージ** を選択します。
 
 [![リリース ブランチのマージ](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)
 
-これにより、[[ソース管理マージ ウィザード](https://www.visualstudio.com/docs/tfvc/merge-folders-files#sourcecontrolwizard)] が開きます。これは、リリース\\\<のバージョン番号\>のブランチをトランク\\メインにマージする手順を案内します。 
+[ソース管理マージ ウィザード](https://www.visualstudio.com/docs/tfvc/merge-folders-files#sourcecontrolwizard) が開きます。ここでは、リリース\\\<バージョン番号\> ブランチを トランク\\メイン にマージする手順が示されます。 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 2f2e1dbd403b52e77ee43e48e863af4e7ecdfa16
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c27ad9758505c0f95fb65d5e9054fd430ae544c3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183242"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812155"
 ---
 # <a name="methodologies-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) での方法
 
@@ -59,10 +59,10 @@ LCS の方法では、さらなる反復可能で予測可能な実装プロジ�
 
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[Lifecycle Services のセキュリティのコンフィギュレーション](../configure-lcs-security.md)
+[Lifecycle Services (LCS) のセキュリティの構成](../configure-lcs-security.md)
 
 
 

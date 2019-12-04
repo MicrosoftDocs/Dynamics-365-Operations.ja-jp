@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71b1b092e8e2b24b453ddd32ba3420ef629652ee
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5da63b3313aa5fc5bf53f576b9bd0da148faaa31
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174573"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771482"
 ---
 # <a name="create-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションを作成する
 
@@ -162,8 +162,8 @@ GER は、ユーザーが電子フォーマット構造を定義できるよう�
 | 再配置競合  | リベース アクション中に検出された競合。新しいベース バージョンには派生のバージョンで調整されている形式/マッピング要素 (名前、プロパティなど) の調整も含まれています。 |
 | 重複競合 | リベース アクション中に検出された競合。新しいベース バージョンには派生バージョンにも入力されている要素と同じ形式要素 (つまり、同じ名前と子コンポーネントを持つ) が導入されています。 |
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[電子申告の概要](general-electronic-reporting.md)
+[電子申告 (ER) の概要](general-electronic-reporting.md)
 
-[電子申告コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)
+[電子申告 (ER) コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 217d5cd6de5d4ad65e8c30c91a562ce2c33ff373
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 623cfbde9a650697c37de382f1acf8a7a27c3b24
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627571"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812450"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-8-june-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能
 
@@ -41,7 +41,7 @@ ms.locfileid: "2627571"
 
 ## <a name="development-and-customization--changing-the-extended-data-type-edt-on-a-table-field-using-table-extensions"></a>開発およびカスタマイズ - テーブル拡張を使用してテーブル フィールドの拡張データ タイプ (EDT) を変更する
 
-開発者は、テーブル拡張機能を使用して、テーブル フィールドの **拡張データ型** (EDT) プロパティを変更できます。 開発者は、現在のものから派生した EDT のみを選択できます。 詳細については、[拡張機能およびオーバーレイによってカスタマイズする](../../dev-itpro/extensibility/customization-overlayering-extensions.md) を参照してください。
+開発者は、テーブル拡張機能を使用して、テーブル フィールドの **拡張データ型** (EDT) プロパティを変更できます。 開発者は、現在のものから派生した EDT のみを選択できます。 詳細については、[拡張機能およびオーバーレイによるカスタマイズ](../../dev-itpro/extensibility/customization-overlayering-extensions.md)を参照してください。
 
 ## <a name="improved-viewing-experience-for-application-reports"></a>アプリケーション レポートの表示エクスペリエンスの強化
 

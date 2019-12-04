@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 68213fae402b28d460c9bfef1393411e513701e4
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: abb20824a34b1241afe742dc951355827dbc1de4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627569"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812487"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-platform-update-2-august-2016"></a>Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月) の新機能および変更された機能
 
@@ -35,7 +35,7 @@ ms.locfileid: "2627569"
 
 | 何ができますか。 | これは、なぜ重要ですか。 |
 |------------------|------------------------|
-| Dynamics AX の Azure Resource Manager (ARM) 配置を有効にします。 | この機能はパブリック プレビューになりました。 ARM 展開を使用して、Azure の最新機能を利用できるようになりました。 詳細については、[Azure リソース マネージャーの研修](../../dev-itpro/deployment/arm-onboarding.md) を参照してください。 |
+| Dynamics AX の Azure Resource Manager (ARM) 配置を有効にします。 | この機能はパブリック プレビューになりました。 ARM 展開を使用して、Azure の最新機能を利用できるようになりました。 詳細については、[Azure Resource Manager (ARM) の研修プロセスの完了](../../dev-itpro/deployment/arm-onboarding.md)を参照してください。 |
 
 ## <a name="development-and-customization"></a>開発とカスタマイズ
 
@@ -134,6 +134,6 @@ ms.locfileid: "2627569"
 |------------------|------------------------|
 | データ エンティティへの差分更新のエクスポートを有効にします。 | 定期的なデータ プロジェクトの設定で、増分更新がサポートされるようになりました。 つまり、ユーザーは、そのエンティティに対する変更を定期的にエクスポートするエクスポート データ プロジェクトを設定できます。 |
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[新機能および変更された機能](whats-new-changed.md)
+[Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)

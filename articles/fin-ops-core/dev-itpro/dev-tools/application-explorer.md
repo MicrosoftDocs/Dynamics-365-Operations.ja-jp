@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae57f3a952d4ee43cadc5fce2c6ab0b5535bf909
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 22f325961c460ca03525b7a0bb9cea4e34e7a5be
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249066"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772344"
 ---
 # <a name="application-explorer"></a>アプリケーション エクスプローラー
 
@@ -115,12 +115,12 @@ ms.locfileid: "2249066"
 
 これらのアクションは、フィルター結果が単一のモデルに限定されている場合にのみ使用できます。 クエリに、**モデル:** "*モデル名*" 条件を含めて、特定のモデルにフィルターを制限する必要があります、
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[技術概念ガイド](developer-home-page.md)
+[開発およびカスタマイズのホーム ページ](developer-home-page.md)
 
-[開発ツールの概要](development-tools-overview.md)
+[Visual Studio の開発ツール](development-tools-overview.md)
 
 
 

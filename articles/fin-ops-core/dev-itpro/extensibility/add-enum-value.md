@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 1f0265c0db777e03b1c5c0715c5c019773aef7bc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b7738f2ea1565078d7bb92f6f5871dc8b76d2e2a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191653"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812117"
 ---
 # <a name="add-values-to-enums-through-extension"></a>拡張機能を使用して列挙体に値を追加
 
@@ -45,7 +45,7 @@ ms.locfileid: "2191653"
     - Switch ブロックに、既定の case ブロックまたは例外が発生しない既定のケース ブロックがない場合、デリゲートが指定されている場合、デリゲートを購読することにより拡張の列挙値を処理します。 それ以外の場合、メソッドにポストイベント ハンドラーを追加します。 
     - 列挙型に例外をスローする既定のケース ブロックを持つスイッチが使用されている場合、Microsoft に問い合わせ、デリゲートを要求します。
 
-+ 列挙型に、列挙型を処理する関連付けられたクラス階層がある場合は、列挙型固有の実装に対してサブクラスを作成し、必要に応じて基本クラスにコンストラクターを取り込みます。 詳細については、[ファクトリ メソッドのサブクラスの登録](register-subclass-factory-methods.md) を参照してください。
++ 列挙型に、列挙型を処理する関連付けられたクラス階層がある場合は、列挙型固有の実装に対してサブクラスを作成し、必要に応じて基本クラスにコンストラクターを取り込みます。 詳細については、[ファクトリ メソッドのサブクラスを登録](register-subclass-factory-methods.md) を参照してください。
     
 ## <a name="extend-an-enum"></a>列挙型を拡張します。
 

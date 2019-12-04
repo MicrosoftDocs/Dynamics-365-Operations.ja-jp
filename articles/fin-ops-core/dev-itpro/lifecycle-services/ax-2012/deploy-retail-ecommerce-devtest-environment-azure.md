@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: fa14aa4821fb472386cf3fedb7325ff10ff4f5ab
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 62ae241bc8da345988e4f9caec227703ff22538c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183256"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812063"
 ---
 # <a name="deploy-retail-e-commerce-devtest-environments-on-azure"></a>Azure での Retail E-commerce 開発/テスト環境の配置
 
@@ -37,7 +37,7 @@ ms.locfileid: "2183256"
 
 | カテゴリ       | 前提条件                                                                                                                                                    |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 必要なタスク | [Azure 上での Microsoft Dynamics AX 2012 R3 の配置計画](plan-2012-r3-deployment-azure.md) |
+| 必要なタスク | [Azure で AX 2012 R3 の配置を計画する](plan-2012-r3-deployment-azure.md) |
 
 ## <a name="1-log-on-to-lifecycle-services"></a>1. ライフサイクル サービスにログオンする
 
@@ -101,14 +101,14 @@ Azure に Retail e-commerce 開発/テスト環境を配置するには、以下
    <tr class="odd">
    <td>Azure で環境用に新しいドメインを作成する</td>
    <td><ol>
-   <li><strong><span class="label">新規ドメイン</span></strong>をクリックします。</li>
+   <li><strong>新規ドメイン</strong>をクリックします。</li>
    <li>ドメイン名を入力します。 既定では、ドメインは <em>contoso.com</em> と呼ばれます。</li>
    </ol></td>
    </tr>
    <tr class="even">
    <td>Azure の既存のドメインへの環境の追加</td>
    <td><ol>
-   <li><strong><span class="label">既存のドメイン</span></strong>をクリックします。</li>
+   <li><strong>既存のドメイン</strong>をクリックします。</li>
    <li>ドメイン名を入力します。 たとえば、<em>contoso.com</em>。</li>
    </ol></td>
    </tr>
@@ -137,23 +137,23 @@ Azure に Retail e-commerce 開発/テスト環境を配置するには、以下
     <tr class="odd">
     <td>Azure で環境用に新しい仮想ネットワークを作成する</td>
     <td><ol>
-    <li><strong><span class="label">新しい仮想ネットワーク</span></strong>をクリックします。</li>
+    <li><strong>新しい仮想ネットワーク</strong>をクリックします。</li>
     <li>仮想ネットワーク名を入力します。</li>
     </ol></td>
     </tr>
     <tr class="even">
     <td>Azure の既存の仮想ネットワークへの環境の追加</td>
     <td><ol>
-    <li><strong><span class="label">既存の仮想ネットワーク</span></strong>をクリックします。</li>
+    <li><strong>既存の仮想ネットワーク</strong>をクリックします。</li>
     <li>使用する既存の仮想ネットワークの名前を選択してください。</li>
-    <li><strong><span class="label">アドレス空間</span></strong> フィールドには、適切な値が自動的に表示されます。 提供された値を選択します。</li>
-    <li><strong><span class="label">アプリケーション サブネット名</span></strong>フィールドには、使用可能なオプションが表示されます。 Lifecycle Services によって以前に展開した広告に配置する場合は、選択した <strong><span class="label"><em>APPNET</em></span></strong> 値を選択します。</li>
+    <li><strong>アドレス空間</strong> フィールドには、適切な値が自動的に表示されます。 提供された値を選択します。</li>
+    <li><strong>アプリケーション サブネット名</strong> フィールドには、使用可能なオプションが表示されます。 Lifecycle Servicesによって以前に展開した広告に配置する場合は、選択した <strong>APPNET</strong> 値を選択します。</li>
     <li><strong>Active Directory サブネット</strong>を入力する必要があり、ターゲットとする AD の Azure 管理ポータルにある Active Directory サブネット IP/範囲と一致している必要があります。
     <ol>
     <li><a href="https://ms.portal.azure.com/">Azure ポータル</a>にログオンします。</li>
-    <li>左のナビゲーション ウィンドウで、<strong><span class="label">仮想ネットワーク</span></strong>をクリックします。</li>
+    <li>左のナビゲーション ウィンドウで、 <strong>仮想ネットワーク</strong> をクリックします。</li>
     <li>使用する仮想ネットワークの名前をクリックします。</li>
-    <li><strong><span class="label">構成</span></strong>をクリックします。 仮想ネットワークに関する詳細は、ページに記載されています。</li>
+    <li><strong>構成</strong>をクリックします。 仮想ネットワークに関する詳細は、ページに記載されています。</li>
     </ol></li>
     </ol></td>
     </tr>
@@ -162,7 +162,7 @@ Azure に Retail e-commerce 開発/テスト環境を配置するには、以下
 
 11. **完了** をクリックします。 **環境の展開** パネルが再表示されます。
 12. 配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。
-    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md)」を参照してください。
+    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、 [Azure 上での AX 2012 R3の 配置計画](plan-2012-r3-deployment-azure.md) を参照してください。
     -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 13. ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
@@ -178,7 +178,7 @@ Azure に Retail e-commerce 開発/テスト環境を配置するには、以下
 | 前提条件                                                                                                                                                    | 詳細                                                                                                                                                                                                                                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dynamics AX アプリケーション オブジェクト サーバー (AOS)、データベース、およびクライアントを設定して構成します。 前述のように、AX 2012 R3 はオンプレミスまたは Azure にインストールできます。 | [Microsoft Dynamics AX のシステム設定](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                             |
-| Dynamics AX にデータをインポートします。                                                                                                                                   | Dynamics AX 環境にサンプル データをインストールする場合は、テスト データ転送ツールを使用してサンプル データをインストールします。 手順については、[Microsoft Dynamics AX 2012 R3 用のテスト データ転送ツール (ベータ版)](test-data-transfer-tool-beta-2012.md) を参照してください。 |
+| Dynamics AX にデータをインポートします。                                                                                                                                   | Dynamics AX 環境にサンプル データをインストールする場合は、テスト データ転送ツールを使用してサンプル データをインストールします。 手順については、 [データ転送ツール (ベータ版) をテストする](test-data-transfer-tool-beta-2012.md) を参照してください。 |
 | Async Server を設定およびコンフィギュレーションします。                                                                                                                              | [Commerce Data Exchange: Async Server](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)                                                                                                                                                                                               |
 | Real-time Service を設定およびコンフィギュレーションします。                                                                                                                         | [Commerce Data Exchange Real-time Service](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)                                                                                                                                                                                          |
 | Commerce Data Exchange のメタデータの同期                                                                                                                       | [小売用スケジューラのパラメーターを入力する](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)                                                                                                                                                                                              |

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d40028bf62162f7e7502f5d6a88da6ee77fac65
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 711f8e83fc59d746f51c719f46c91c50651bafe0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183301"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811714"
 ---
 # <a name="design-time-metadata-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールのためのデザイン時メタデータ
 
@@ -151,16 +151,16 @@ LedgerDimensionDefaultAccount: はい
 LedgerDimensionAccountAlias: いいえ
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[セグメント化されたエントリ コントロールのダイアログのサポート](segmented-entry-control-dialog-support.md)
+[ダイアログのセグメント化されたエントリ コントロールのサポート](segmented-entry-control-dialog-support.md)
 
-[セグメント化されたエントリ コントロールの Parm メソッド詳細](segmented-entry-control-parm-method-specification.md)
+[セグメント化されたエントリ コントロールの Parm メソッド](segmented-entry-control-parm-method-specification.md)
 
 [セグメント化されたエントリ コントロールの移行](segmented-entry-control-conversion.md)
 
-[セグメント化されたエントリ コントロール - 移行のガイダンス](segmented-entry-control-migration-guidance.md)
+[セグメント化されたエントリ コントロールに関する移行ガイダンス](segmented-entry-control-migration-guidance.md)
 
 
 

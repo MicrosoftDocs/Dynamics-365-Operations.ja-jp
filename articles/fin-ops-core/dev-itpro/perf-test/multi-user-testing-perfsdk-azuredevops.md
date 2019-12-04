@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50d87a763e72b4db8813af400cafcf2599f6a162
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a0ac6531025bb191d4ab3c4bbc39e098042f1c5c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191811"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811951"
 ---
 # <a name="multi-user-testing-with-the-performance-sdk-and-azure-devops"></a>パフォーマンス SDK と Azure DevOps を使用したマルチユーザー テスト
 
@@ -40,7 +40,7 @@ ms.locfileid: "2191811"
 - 自身の Microsoft Azure サブスクリプションに、プラットフォーム更新プログラム 21 以降の開発環境があります。
 - 開発環境に Microsoft Visual Studio 2015 Enterprise edition がある
 - 開発環境と同じリリース (アプリケーション バージョンとプラットフォーム更新プログラム) の階層 2 以上のサンドボックスがあります。
-- [タスク レコーダーとパフォーマンス SDK を使用したシングル ユーザー テスト](single-user-test-perf-sdk.md) のすべての手順と、[パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト](multi-user-testing-local-test-controller.md) の "ローカル テスト コントローラーを使用したマルチユーザー テストの実行" を除くすべての手順を完了しました。
+- [タスク レコーダーおよびパフォーマンス SDK を使用したシングル ユーザー テスト](single-user-test-perf-sdk.md) のすべての手順と、 [パフォーマンス SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト](multi-user-testing-local-test-controller.md) の "ローカル テスト コントローラーを使用したマルチユーザー テストの実行" を除くすべての手順を完了しました。
 
 ## <a name="prepare-the-perfsdksample-solution-for-multi-user-testing"></a>マルチユーザー テスト用の PerfSDKSample ソリューションの準備
 
@@ -58,7 +58,7 @@ ms.locfileid: "2191811"
 3. Visual Studio が開いたら、管理者として実行していることを確認します。そうでない場合は、それを閉じて管理者として再度開いてください。
 4. K:\PerfSDK\PerfSDKLocalDirectory\SampleProject に移動して、ファイル、**vsonline.testsettings** を変更します。
 5. **テストの設定** ダイアログ ボックスの **一般** タブで、**Visual Studio Team Services を使用したテストの実行** オプションを選択します。
-6. **配置** タブで [パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト](multi-user-testing-local-test-controller.md) で設定されていたようにすべてのフィールド設定を残して下さい。
+6. **配置** タブで、 すべてのフィールド設定を [パフォーマンス SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト](multi-user-testing-local-test-controller.md) で設定したままにします。
 
     [![配置タブ](./media/perfsdk-azuredevops-04.png)](./media/perfsdk-azuredevops-04.png)
 
@@ -66,7 +66,7 @@ ms.locfileid: "2191811"
 
     [![設定とクリーンアップ スクリプト タブ](./media/perfsdk-azuredevops-05.png)](./media/perfsdk-azuredevops-05.png)
 
-8. **追加設定** タブで [パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト](multi-user-testing-local-test-controller.md) で設定されていたようにすべてのフィールド設定を残して下さい。
+8. **追加設定** タブで、すべてのフィールド設定を [パフォーマンス SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト](multi-user-testing-local-test-controller.md) で設定したままにします。
 
     [![追加設定タブ](./media/perfsdk-azuredevops-06.png)](./media/perfsdk-azuredevops-06.png)
 
@@ -99,4 +99,4 @@ ms.locfileid: "2191811"
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-パフォーマンス SDK を使用したシングルユーザーまたはマルチユーザー テストの詳細は [トラブルシューティング ガイド](troubleshoot-perf-sdk-user-testing.md) を参照してください。
+パフォーマンス SDK を使用するシングル ユーザーまたはマルチ ユーザーのテストの詳細については、[パフォーマンス SDK によるシングルユーザーまたはマルチユーザーのテストに関するトラブルシューティングガイド](troubleshoot-perf-sdk-user-testing.md) を参照してください。

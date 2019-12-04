@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: amarshall
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e165cf8841567a7c149d5bcfca824d9b5d07726a
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 14b5447c7902333c80ad78becc27c3e68841424d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550921"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811952"
 ---
 # <a name="download-updates-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から更新プログラムをダウンロード
 
@@ -126,4 +126,4 @@ X++ 更新プログラムをダウンロードするには、LCS で次の手順
 
 ## <a name="additional-resources"></a>追加リソース
 - [クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md)
-- [メタデータ修正プログラムのインストール](./install-metadata-hotfix-package.md) 
+- [開発環境でのメタデータ修正プログラムのインストール](./install-metadata-hotfix-package.md) 

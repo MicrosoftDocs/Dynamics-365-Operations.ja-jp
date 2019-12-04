@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 08a0c34eb18d84a7a154f7bbab867301f113d16b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 67625a33e620c8806fbaf651fdc82689ac3d50a2
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183407"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769599"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -181,7 +181,7 @@ ms.locfileid: "2183407"
 
 ### <a name="service-fabric-with-or-without-expired-certificates-cluster-not-accessible"></a>期限が切れた証明書 (クラスターにアクセスできない)を含むまたは含まないサービスファブリック
 
-[既存の環境をクリーンアップして再配置する](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy)まで、このプロセスを続行します。
+このプロセスを続行するには、 [オンプレミスの展開のトラブルシューティング](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy) を行ってください。
 
 ## <a name="localagent-certificate-update-if-needed"></a>LocalAgent 証明書の更新 (必要な場合)
 

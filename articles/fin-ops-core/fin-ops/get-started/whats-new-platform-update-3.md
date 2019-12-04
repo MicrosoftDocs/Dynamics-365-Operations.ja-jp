@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: ff929e3e9f73b05915758e993482dc7c1f654f04
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: e72a4b423413fb5d89513b90810b6d54aaca9100
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627568"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812455"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-3-november-2016"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能
 
@@ -127,7 +127,7 @@ ms.locfileid: "2627568"
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
-Lifecycle Services (LCS) は、毎月の新しい機能をリリースします。 新機能の詳細については、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/) にアクセスしてください。 検索語「リリース ノート」を使用して、毎月のリリースと新機能情報を検索して表示します。
+Lifecycle Services (LCS) は、毎月の新しい機能をリリースします。 新機能の詳細については、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/) にアクセスしてください。 検索語「リリース計画」を使用して、毎月のリリースと新機能情報を検索して表示します。
 
 ## <a name="client"></a>クライアント
 
@@ -140,7 +140,7 @@ Lifecycle Services (LCS) は、毎月の新しい機能をリリースします�
 
 | 実行可能事項 | これは、なぜ重要ですか |
 |-----------------|-----------------------|
-| 移動中にユーザーが生産性を維持できるようにモバイル ワークスペースを設計する。 | Dynamics 365 for Operations は、携帯電話アプリをサポートします (iPhone の iTunes App Store、Android 電話の Google Play Store および Window 電話の Windows Store で使用可能)。 モバイル アプローチにより、リッチなオフラインおよびモバイルのやりとりを可能にしながら、ビジネス ロジックとモデリングを製品から再利用でき、使いやすいデザイナー体験が可能になります。 開発者は、Microsoft Visual Studio で簡単なフォームを作成し、この機能を公開するモバイル ページを設計することができます。 このモバイル ソリューションを使用すると、フォームやモバイル アプリの定義を簡単に変更して、製品のカスタマイズを組み込むことができます。 詳細については、[モバイル プラットフォーム](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md) を参照してください。 |
+| 移動中にユーザーが生産性を維持できるようにモバイル ワークスペースを設計する。 | Dynamics 365 for Operations は、携帯電話アプリをサポートします (iPhone の iTunes App Store、Android 電話の Google Play Store および Window 電話の Windows Store で使用可能)。 モバイル アプローチにより、リッチなオフラインおよびモバイルのやりとりを可能にしながら、ビジネス ロジックとモデリングを製品から再利用でき、使いやすいデザイナー体験が可能になります。 開発者は、Microsoft Visual Studio で簡単なフォームを作成し、この機能を公開するモバイル ページを設計することができます。 このモバイル ソリューションを使用すると、フォームやモバイル アプリの定義を簡単に変更して、製品のカスタマイズを組み込むことができます。 詳細については、[モバイル プラットフォームのリソース](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)を参照してください。 |
 
 ## <a name="analytics"></a>分析
 
@@ -193,4 +193,4 @@ Lifecycle Services (LCS) は、毎月の新しい機能をリリースします�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[新機能および変更された機能](whats-new-changed.md)
+[Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)

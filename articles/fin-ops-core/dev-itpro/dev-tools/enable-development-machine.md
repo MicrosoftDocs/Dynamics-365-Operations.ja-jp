@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6e6d3e5cc7029dea16847d90bf051215cc6bca4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 50162d709a69c1e9ee5d88c89a2c99727c995bed
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191688"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811721"
 ---
 # <a name="create-new-users-on-development-machines"></a>開発マシンでの新しいユーザーの作成
 
@@ -37,7 +37,7 @@ ms.locfileid: "2191688"
 
 
 ## <a name="prerequisites"></a>前提条件
-新しいユーザー アカウントが VM で開発できるようにするには、ユーザー アカウントが VM の管理者である必要があります。 また、既定の開発者アカウントの資格情報を使用して VM にログオンする必要があります。 VM が Microsoft Azure VM である場合は、この勘定の情報は LCS の環境のページで使用できます。 VM がダウンロードした VHD 上で実行されるローカル VM である場合は、ローカル管理者アカウントを使用します。 詳細については、「[アクセス インスタンス](../dev-tools/access-instances.md)」を参照してください。
+新しいユーザー アカウントが VM で開発できるようにするには、ユーザー アカウントが VM の管理者である必要があります。 また、既定の開発者アカウントの資格情報を使用して VM にログオンする必要があります。 VM が Microsoft Azure VM である場合は、この勘定の情報は LCS の環境のページで使用できます。 VM がダウンロードした VHD 上で実行されるローカル VM である場合は、ローカル管理者アカウントを使用します。 詳細については、トピック [開発環境の配置とアクセス](../dev-tools/access-instances.md) を参照してください。
 
 ## <a name="steps"></a>ステップ
 1.  スクリプト ProvisionAxDeveloper.ps1 をダウンロードしてください。スクリプトは、<https://github.com/Microsoft/Dynamics-AX-Scripts> で利用可能です。
@@ -54,8 +54,10 @@ ms.locfileid: "2191688"
         > ProvisionAxDeveloper.ps1 -databaseservername RDXP00DB20RAINM -users RDXP00DB20RAINM\username1,RDXP00DB20RAINM\username2
 
 4.  1 つ以上のユーザー アカウントが同じバージョン管理ワークスペース上で開発されている場合、ワークスペースをパブリックにする必要があります。
-    1.  Visual Studio で、**ソース管理エクスプローラー**を開き、ワークスペース ドロップダウンを選択し、**ワークスペースの管理**を選択します。
-    2.  アプリケーション ワークスペースを選択して、**編集** をクリックし、**詳細** をクリックしてワークスペースを **パブリック ワークスペース**.[![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png) にせっていします
+    1.  Visual Studio で、 **ソース管理エクスプローラー**を開き、ワークスペース ドロップダウンから **ワークスペースの管理**を選択します。
+    2.  アプリケーション ワークスペースを選択して、 **編集** をクリックし、 **詳細** をクリックしてワークスペースを **パブリック ワークスペース** に設定します。
+    
+    [![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png)
 
 
 

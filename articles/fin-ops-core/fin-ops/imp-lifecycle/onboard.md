@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 1a3eb2697574506f38a119342c6fafc68bd7a2e2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9308f06d922416320b7249bae7738c7fac5b16ec
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191717"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811417"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 
@@ -44,7 +44,7 @@ ms.locfileid: "2191717"
    > [!NOTE]
    > テナント管理者が実装に参加していない場合は、少なくとも 1 人の追加のプロジェクト所有者を実装プロジェクトに割り当てる必要があります。
 
-   ユーザーに割り当てることができるセキュリティ ロールなど、LCS ユーザー管理の概要については、[プロジェクト セキュリティの構成](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security)を参照してください。
+   ユーザーに割り当てることができるセキュリティ ロールを含む、LCS ユーザー管理の概要については、 [Lifecycle Services (LCS) のセキュリティのコンフィギュレーション](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security) を参照してください。
 
 ## <a name="lcs-implementation-project-workspace"></a>LCS 実装プロジェクト ワークスペース
 
@@ -52,11 +52,11 @@ ms.locfileid: "2191717"
 
 LCS で完了する最初の手順は、**プロジェクトのオンボード**です。 この手順は、Microsoft が管理するすべての環境を展開する前に、**2019 年 8 月 22 日 (PST) またはそれ以降**に作成されたすべての LCS 実装プロジェクトに必要です。 **プロジェクトのオンボード**機能には、アクション センターの通知または LCS 実装プロジェクト メニューを使用してアクセスできます。 LCS の**プロジェクト オンボード**にアクセスするには、プロジェクト所有者セキュリティ ロールに割り当てられている必要があります。
 
-LCS を開始するには、「[Lifecycle Services for Finance and Operations の顧客](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)」を参照します。 
+LCS を開始するには、 [Finance and Operations アプリの顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。 
 
 ## <a name="fasttrack-onboarding-services"></a>FastTrack オンボード サービス
 
-LCS  **実装プロジェクト** ワークスペースがプロビジョニングされたら、Microsoft FastTrack チームはオンボードの進捗状況を監視します。 FastTrack プログラムおよび提供サービスの詳細については、[Dynamics 365 の Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md) を参照してください。
+LCS  **実装プロジェクト** ワークスペースがプロビジョニングされたら、Microsoft FastTrack チームはオンボードの進捗状況を監視します。 FastTrack プログラムおよび提供されるサービスの詳細については、 [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md) を参照してください。
 
 すべてのLCS **実装プロジェクト** は、プロジェクトのオンボードを正常に完了した後に、そのサービスを歓迎する FastTrack チームからの電子メールを受け取ります。 LCS **実装プロジェクト**を作成してから数週間以内にプロジェクトのオンボードを完了しなかった場合、プロジェクト チームにアラームが送信されます。
 

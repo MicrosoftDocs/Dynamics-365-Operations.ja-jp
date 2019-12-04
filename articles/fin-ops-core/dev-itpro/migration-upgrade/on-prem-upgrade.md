@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c375cd2b540af9f71c75a2d8dd1b60260d800dd8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 191e55d8972c5e6a5d8fa907152cf6e300093640
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191878"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812046"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
@@ -113,7 +113,7 @@ ms.locfileid: "2191878"
      
     d.  データベースを構成する必要があります。 [Finance and Operations データベースを構成](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database)の手順に従います。
 
-    e.  LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定するデータベースは手順 13 c (通常は AXDB) で作成したものにする必要があります。
+    e.  LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 配置する場合、指定するデータベースは手順 13 c (通常は AXDB) で作成したものにする必要があります。
 
     f.  独自のカスタマイズと同様に ISV/VAR モジュールを、新たに作成された 8.1 環境に適用します。 それ以外の場合、この環境が最初にデータベースと同期される時に、カスタマイズまたは拡張機能の関連データが削除されます。
 
@@ -127,7 +127,7 @@ ms.locfileid: "2191878"
 
     a.  (省略可) 既存のデータベース (通常は AXDBold) の名前を変更し、新しいデータベース (通常は AXDB) の名前を変更します。 次の手順で、アップグレードされたデータベースの名前を入力することを確認します。
 
-    b.  LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。
+    b.  LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。
 
 15. (省略可) 新しい環境 (通常 AXDB) を使用しているデータベースでの財務レポート モジュールが失敗したために配置が失敗した場合は、次のコマンドを実行します。
 
@@ -196,7 +196,7 @@ ms.locfileid: "2191878"
 
     d.  データベースを構成する必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
 
-    e.  LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定する必要があるデータベースは手順 12 c (通常は AXDB) で作成したものにする必要があります。
+    e.  LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 配置する場合、指定する必要があるデータベースは手順 12 c (通常は AXDB) で作成したものにする必要があります。
 
     f.  独自のカスタマイズと同様に ISV/VAR モジュールを、新たに作成された 8.1 環境に適用します。 それ以外の場合、この環境が最初にデータベースと同期される時に、カスタマイズまたは拡張機能の関連データが削除されます。
 
@@ -210,7 +210,7 @@ ms.locfileid: "2191878"
 
     a.  (省略可) 既存のデータベース (通常は AXDBold) の名前を変更し、新しいデータベース (通常は AXDB) の名前を変更します。 次の手順で、アップグレードされたデータベースの名前を入力することを確認します。
 
-    b.  新しい環境を設定し、バージョン 8.1 で配置します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。
+    b.  新しい環境を設定し、バージョン 8.1 で配置します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。
 
 14. (省略可) 新しい環境 (通常 AXDB) を使用しているデータベースでの財務レポート モジュールが失敗したために配置が失敗した場合は、次のコマンドを実行します。
 
@@ -321,7 +321,7 @@ ms.locfileid: "2191878"
 
 16. データベースを構成する必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
 
-17. LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定する必要があるデータベースは手順 15 (通常は AXDB) で作成したものにする必要があります。
+17. LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 配置する場合、指定する必要があるデータベースは手順 15 (通常は AXDB) で作成したものにする必要があります。
 
 18. 独自のカスタマイズと同様に ISV/VAR モジュールを、新たに作成された 8.1 環境に適用します。 それ以外の場合、この環境が最初にデータベースと同期される時に、カスタマイズまたは拡張機能の関連データが削除されます。
 
@@ -396,7 +396,7 @@ ms.locfileid: "2191878"
 
 15. データベースを構成する必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
 
-16. LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定する必要があるデータベースは手順 14 (通常は AXDB) で作成したものにする必要があります。
+16. LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 配置する場合、指定する必要があるデータベースは手順 14 (通常は AXDB) で作成したものにする必要があります。
 
 17. 独自のカスタマイズと同様に ISV/VAR モジュールを、新たに作成された 8.1 環境に適用します。 それ以外の場合、この環境が最初にデータベースと同期される時に、カスタマイズまたは拡張機能の関連データが削除されます。
 

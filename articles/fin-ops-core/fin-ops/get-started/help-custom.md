@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2018-11-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 022ae438b4802ff272544b6ea69c3791207dfb59
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8ceb1b1dcabe60ef8c2829d51d3fd4715d045ef2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250293"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812546"
 ---
 # <a name="connect-a-custom-help-site"></a>カスタム ヘルプ サイトに接続する
 
@@ -40,4 +40,4 @@ Microsoft は、カスタム ヘルプを作成およびヘルプ ウィンド�
 
 ## <a name="see-also"></a>参照
 
-[タスク記録を使用してドキュメントやトレーニングを作成](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[タスク レコーダーを使用したドキュメントやトレーニングの作成](../../dev-itpro/user-interface/task-recorder-training-docs.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0e67cf48b3e032705a22cc22c69efef44ad20fea
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 147a93337837564581b178f28ffc6077dcd5315e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627629"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812489"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン8.0 (2018 4 月) の新機能および変更された機能
 
@@ -31,7 +31,7 @@ ms.locfileid: "2627629"
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 と 8.0.35 です。
 
-ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース ノート](https://docs.microsoft.com/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations の新規または変更のいずれかの機能に関する詳細を提供します。
+ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース計画](https://docs.microsoft.com/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations の新規または変更のいずれかの機能に関する詳細を提供します。
 
 ### <a name="introducing-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の導入
 
@@ -90,13 +90,13 @@ Finance and Operations 内で担当者および個人データを検索するこ
 
 お客様は、必要なシナリオのために製品に拡張サポートを追加するよう Microsoft に依頼することができます。 今回のリリースでは、この機能は Lifecycle Services (LCS) に移動されています。
 
-### <a name="embedding-powerapps-in-workspaces-and-forms"></a>ワークスペースおよびフォームに PowerApps を埋め込む
+### <a name="embedding-microsoft-power-apps-in-workspaces-and-forms"></a>ワークスペースおよびフォームに Microsoft Power Apps を埋め込む
 
-PowerApps を使用して、外部ソースからのデータを Finance and Operations のデータに埋め込みます。 Finance and Operations ページで PowerApp を埋め込む方法の詳細については、[PowerApps の埋め込み](embed-power-apps.md) を参照してください。
+Microsoft Power Apps を使用して、外部ソースからのデータを Finance and Operations のデータに埋め込みます。 Finance and Operations ページで PowerApp を埋め込む方法の詳細については、[PowerApps の埋め込み](embed-power-apps.md) を参照してください。
 
 ### <a name="custom-fields"></a>カスタム フィールド
 
-組織は、コードなしの機能拡張経験を使用し、カスタム フィールドを追加してビジネス要件に合わせて自社アプリケーションをカスタマイズできます。 カスタム フィールドを追加する方法の詳細については、[カスタム フィールド](user-defined-fields.md) を参照してください。
+組織は、コードなしの機能拡張経験を使用し、カスタム フィールドを追加してビジネス要件に合わせて自社アプリケーションをカスタマイズできます。 カスタム フィールドを作成および管理する方法の詳細については、[カスタム フィールドの作成と操作](user-defined-fields.md)を参照してください。
 
 ## <a name="integration"></a>統合 
 

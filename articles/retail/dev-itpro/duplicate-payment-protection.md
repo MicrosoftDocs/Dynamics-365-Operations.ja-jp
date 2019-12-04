@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9fa96c9fd18a33f0449742c840f86a20db686c1d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 85d02c938c07e2f8e2e96854e228424e86a4fa64
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023577"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812327"
 ---
 #  <a name="enable-duplicate-payment-protection-for-payment-connector"></a>支払コネクタの重複支払保護の有効化
 
@@ -41,7 +41,7 @@ ms.locfileid: "2023577"
 指定された支払コネクタで重複支払保護を有効にする前に次のトピックを必ず読むようにしてください。
 
 - [支払端末のエンド・ツー・エンド支払統合を作成する](end-to-end-payment-extension.md) - 重複支払保護機能は、このトピックで説明されている支払端末の支払統合に基づいています。
-- [支払の保護の複製](duplicate-payment-protection.md) - このトピックでは重複支払保護機能の鍵となる機能要素について説明します。
+- [支払コネクタの重複支払保護の有効化](duplicate-payment-protection.md) - このトピックでは、重複支払保護機能の主な機能について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 支払コネクタの実装で重複支払保護を有効にする前に、次の前提条件が満たされる必要があります。

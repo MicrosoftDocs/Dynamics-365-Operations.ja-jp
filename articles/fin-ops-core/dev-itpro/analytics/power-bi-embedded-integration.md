@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 2db6d8d7500dff94df4430d53961bae77f990060
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: a3ad07de286f851f2ed52021ed4f6c84c21ea4ab
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249344"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770011"
 ---
 # <a name="power-bi-embedded-integration"></a>Power BI Embedded 統合
 
@@ -37,7 +37,7 @@ ms.locfileid: "2249344"
 - 会社または日付の範囲など、ユーザーとセッション コンテキスト情報に基づいたレポート フィルター
 - Power BI レポートの特定のタブにメニュー項目から直接移動する機能
 
-拡張機能を使用するカスタマイズに関する詳細については、[カスタマイズ: オーバーレイおよび拡張機能 ](../extensibility/customization-overlayering-extensions.md) を参照してください。
+拡張機能を使用するカスタマイズに関する詳細については、 [拡張機能およびオーバーレイによるカスタマイズ](../extensibility/customization-overlayering-extensions.md) を参照してください。
 
 ## <a name="advantages-of-power-bi-embedded"></a>Power BI Embedded のメリット
 - **アプリケーションで Power BI ワークスペースとレポートを配信します。** ユーザーが power user またはビジネス アナリストである場合は、Power BI ツールを使用して既製のレポートを調整したり、新しいレポートを作成することができます。 開発者は、ワークスペースを通じて製品の豊富なナビゲーション エクスペリエンスを提供するためにユーザーが作成したレポートを使用できます。 パートナーおよび ISV コミュニティにいる場合は、Power BI エクスペリエンスを含む豊富なワークスペースを構築し、そのワークスペースをソリューションの一部としてリリースすることができます。
@@ -57,7 +57,7 @@ Power BI Embedded サービスの詳細については、「[Power BI FAQ](https
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="can-i-customize-the-power-bi-embedded-reports"></a>Power BI の埋め込まれたレポートをカスタマイズすることはできますか。
-はい。 Power BI の埋め込みレポートをカスタマイズするには、Power BI Desktop をワンボックス環境にインストールし、[エンティティ ストアで Power BI レポートを作成して配布する](author-distribute-power-bi-reports.md)の手順に従います。
+はい。 Power BI Embedded レポートをカスタマイズするには、 Power BI Desktop をワンボックス環境にインストールし、 [Power BI Desktop を使用した分析レポートの作成](author-distribute-power-bi-reports.md) の手順に従います。
  
 ### <a name="do-customers-have-to-purchase-a-separate-power-bi-license-to-use-the-new-embedded-analytics"></a>顧客は、新しい埋め込み分析を使用する個別 Power BI ライセンスを購入する必要があるか。
 いいえ、顧客は、新しい埋め込み分析を使用する個別 Power BI ライセンスを購入する必要はありません。 ただし、DirectQuery を使用して PowerBI.com からエンティティ ストアに接続するためには Power BI Pro ライセンスが必要です。

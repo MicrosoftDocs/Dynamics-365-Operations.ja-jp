@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 932a0b2c1956951cc6230d5205b113fb427c6abb
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 1f8379d65eb41a82b97ed7471620bae4d891f857
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622783"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811687"
 ---
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
 
@@ -40,34 +40,34 @@ Finance and Operation アプリケーションのユーザー インターフェ
 フォーム メタモデルは、コントロールとアプリケーション ロジックを定義するために引き続き使用されます。 この方法は、ほとんどすべての既存の Form、Form DataSource、および Form Control のメタモデルと X++ のオーバーライドメソッドをサポートしています。 ただし、新しいプラットフォームでの互換性またはパフォーマンス上の理由から、一部のコントロール タイプ、プロパティ、およびオーバーライド メソッドは削除されました。 たとえば、ActiveX および ManagedHost コントロールは、HTML プラットフォームと互換性がないため、カスタム コントロールを追加するためには使用できなくなります。 代わりに、新しい拡張可能コントロール フレームワークが追加され、さらにコントロールを追加できます。
 
 ## <a name="tutorials"></a>チュートリアル
--   [レンタル料金のタイプ フォームの作成](build-rental-charge-type-form.md)
--   [顧客フォームの作成](build-customer-form.md)
+-   [レンタル料金のタイプ フォームの構築](build-rental-charge-type-form.md)
+-   [顧客フォームの構築](build-customer-form.md)
 
 ## <a name="forms"></a>フォーム
 -   [ナビゲーション概念](page-navigation.md)
 <!---   [The new user experience](https://mix.office.com/watch/1ohsrrpsd02e1)-->
--   [レイアウト](page-layout.md)
--   [Symbol フォント](symbol-font.md)
--   [カスタム パターンを使用したテスト フォーム](testing-forms-custom-patterns.md)
+-   [Web クライアントのページ レイアウト](page-layout.md)
+-   [Dynamics Symbol フォント](symbol-font.md)
+-   [カスタム パターンを使用するテスト フォーム](testing-forms-custom-patterns.md)
 
 ## <a name="controls"></a>コントロール
 -   [アクション コントロール](action-controls.md)
--   [入力コントロールとグリッド列のサイズ変更](sizing-input-controls-grid-columns.md)
+-   [入力コントロールとグリッド列のサイズ](sizing-input-controls-grid-columns.md)
 -   [ツリー コントロールでのチェック ボックスのサポート](check-box-tree-controls.md)
--   [フィルター処理](filtering.md)
+-   [フィルター処理のオプション](filtering.md)
 -   [[新しいウィンドウで開く] アイコンを使用してページを並べて表示する](../../fin-ops/get-started/display-pages-side-by-side.md)
--   [コードの移行 - コンテキスト メニュー](../migration-upgrade/code-migration-context-menus.md)
--   [コードの移行 - マウス ダブルクリック](../migration-upgrade/code-migration-double-click.md)
+-   [コードの移行 - コンテキスト メニュー コード](../migration-upgrade/code-migration-context-menus.md)
+-   [コードの移行 - マウス ダブルクリック ロジック](../migration-upgrade/code-migration-double-click.md)
 -   [ルックアップのコンテキスト データ入力](contextual-data-entry-lookups.md)
 -   [HierarchyViewer コントロール](hierarchy-viewer-control.md)
 -   [ルックアップ コントロール](lookups-controls.md)
 -   [ファイルのアップロード コントロール](file-upload-control.md)
--   [方法: システム定義ボタン](system-defined-buttons.md)
--   [画像の使用](images-form-grid.md)
--   [入力、テーブル、およびグリッド コントロールのフォントと背景色を指定する](specify-color-font-background-controls.md)
--   [右から左へ読み書きする言語のサポート: 双方向テキストの入門書](bidirectional-support.md)
+-   [システム定義ボタン](system-defined-buttons.md)
+-   [ページまたはグリッドの画像](images-form-grid.md)
+-   [入力、テーブル、およびグリッド コントロール用のフォントと背景](specify-color-font-background-controls.md)
+-   [右から左へ読み書きする言語のサポートと双方向のテキスト](bidirectional-support.md)
 -   [ワークスペース タイル用のアイコンの作成](create-icons-workspace-tiles.md)
--   [拡張可能なコントロールのキーボード ショートカット](keyboard-shortcuts-controls.md)
+-   [拡張可能なコントロールのためのキーボード ショートカット](keyboard-shortcuts-controls.md)
 -   [拡張可能なコントロール – パブリック JavaScript API](public-javascript-apis.md)
 
 ## <a name="messaging"></a>メッセージング
@@ -88,7 +88,7 @@ Finance and Operation アプリケーションのユーザー インターフェ
 -   [拡張可能コントロールの構築](build-extensible-control.md)
 -   [拡張可能なコントロールのプログラミング リファレンス](extensible-control-programming-reference.md)
 -   [コントロールの拡張機能](control-extensibility.md)
--   [ローカライズ可能なラベルを拡張可能なコントロールに追加する](create-localizable-labels-client.md)
+-   [ローカライズ可能なラベルの作成](create-localizable-labels-client.md)
 -   [拡張可能なコントロール レイアウトのガイドライン](extensible-controls-layout.md)
 -   [コントロールに対してタスク レコーダーが生成するテキストの制御](task-recorder-control-text.md)
 

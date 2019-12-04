@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 5f53894780c6b0c8f1691746b42b2ea92a09df31
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: a071839c98d55ca79d153d6d5edb3921d7eaecf9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627574"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812461"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-12-november-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) の新機能および変更された機能
 
@@ -66,7 +66,7 @@ BYOD とも呼ばれる「自分のデータベースの持ち込み」機能に
 - Azure AD で B2B 招待サービス アプリケーションを設定します。
 - Finance and Operations で B2B 招待サービスの設定のコンフィギュレーションをします。
 
-詳細については、[Azure AD に B2B ユーザーをエクスポート](../../dev-itpro/sysadmin/implement-b2b.md)を参照してください。
+詳細については、[企業間 (B2B) ユーザーを Azure Active Directory](../../dev-itpro/sysadmin/implement-b2b.md)を参照してください。
 
 ## <a name="personalizations-can-easily-be-shared-with-one-or-more-roles-in-your-organization"></a>個人用設定は、組織の 1 つまたは複数の役割と簡単に共有できます。
 
@@ -81,7 +81,7 @@ BYOD とも呼ばれる「自分のデータベースの持ち込み」機能に
 ドキュメント回覧エージェントは、さらにネットワーク プリンター デバイスをサポートできるように拡張されています。 最大 50 のネットワーク プリンターをサポートする機能により、クライアントは一般的な印刷作業負荷を処理するための準備ができています。 インテリジェントなドキュメント キュー管理を活用する最新のプラットフォーム更新プログラムを展開した後、ドキュメント回覧エージェントをアップグレードするだけです。
 
 > [!NOTE]
-> 最新バージョンのドキュメント ルーティング エージェントを、会社のドメインでホストされているローカルのプリント サーバーに配置するには、次のインストールの指示を参照してください。[プリンター デバイスを有効にするためにドキュメント ルーティング エージェントをインストールする](../../dev-itpro/analytics/install-document-routing-agent.md)。
+> 最新バージョンのドキュメント ルーティング エージェントを、会社のドメインでホストされているローカルのプリント サーバーに配置するには、次のインストールの指示を参照してください。[ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする](../../dev-itpro/analytics/install-document-routing-agent.md)。
 
 ## <a name="table-extension--previewpartref-property"></a>テーブル拡張 - PreviewPartRef プロパティ
 

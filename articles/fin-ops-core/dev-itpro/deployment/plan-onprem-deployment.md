@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: a0b559073c51a842e378d9e5fa1f69a7a0521a6e
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: e00d7abc5dab238d4e7d48ff66d6b45fc3b99a4a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536930"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772346"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -39,8 +39,8 @@ Dynamics 365 Finance + Operations (オンプレミス) は、顧客データ セ
 クラウド展開とオンプレミス展開の機能は異なります。 これらの違いは、計画に影響します。 違いについては、次のトピックで説明します。
 - [配置オプション](choose-deployment-type.md)
 - [クラウドとオンプレミスの機能比較](../../fin-ops/get-started/cloud-prem-comparison.md)
-- [オンプレミス配置で実装されていない機能](../../fin-ops/get-started/features-not-implemented-on-prem.md)
-- [削除済みまたは推奨されない機能](../migration-upgrade/deprecated-features.md)
+- [オンプレミス配置に実装されない機能](../../fin-ops/get-started/features-not-implemented-on-prem.md)
+- [Finance and Operations の削除済みまたは推奨されない機能](../migration-upgrade/deprecated-features.md)
 
 ## <a name="how-lcs-is-used-with-on-premises-deployments"></a>オンプレミス配置で LCS を使用する方法
 Microsoft Dynamics Lifecycle Services (LCS) は、アプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。 顧客とパートナーは LCS を使用して、クラウドとオンプレミスの両方の導入を管理します。 以下のタスクに対して LCS を使用することができます。
@@ -50,19 +50,19 @@ Microsoft Dynamics Lifecycle Services (LCS) は、アプリケーション ラ�
 - 製品の問題や規制機能を検索します。
 - サポートを受けます。
 
-LCS の詳細については、[Lifecycle Services](../lifecycle-services/lcs.md) を参照してください。
+LCS の詳細については、 [Lifecycle Services のリソース](../lifecycle-services/lcs.md) を参照してください。
 
 ## <a name="environments"></a>環境
 計画する必要のある環境には 4 つのタイプがあります。 このセクションでは、4 つの環境と、それらにアクセスして展開する方法について説明します。
 
 ### <a name="demo-environment"></a>デモ環境
-デモ環境にサインアップして、システムについて学習することができます。 デモ環境は、クラウドとオンプレミスの両方の展開に適用されます。 詳細については、[プレビュー サブスクリプションのサインアップ](../dev-tools/sign-up-preview-subscription.md) を参照してください。
+デモ環境にサインアップして、システムについて学習することができます。 デモ環境は、クラウドとオンプレミスの両方の展開に適用されます。 詳細については、 [プレビュー サブスクリプションのサインアップ](../dev-tools/sign-up-preview-subscription.md) を参照してください。
 
 ### <a name="developer-environment"></a>開発者環境
-開発経験は、クラウドとオンプレミスの配置で同じです。 開発者環境にアクセスするには、[[インスタンスのアクセス](../dev-tools/access-instances.md)] を参照してください。
+開発経験は、クラウドとオンプレミスの配置で同じです。 開発者環境にアクセスするには、 [開発環境の配置とアクセス](../dev-tools/access-instances.md) を参照してください。
 
 ### <a name="sandbox-environment"></a>サンドボックス環境
-ビジネス ユーザーと機能チームのメンバーは、サンドボックス環境を使用してアプリケーション機能を検証します。 この機能には、カスタマイズ内容や Microsoft Dynamics AX 2012 環境から継承されたデータが含まれます。 オンプレミス サンドボックス環境を展開するには、[[オンプレミス環境のセットアップと展開](setup-deploy-on-premises-environments.md)] を参照してください。
+ビジネス ユーザーと機能チームのメンバーは、サンドボックス環境を使用してアプリケーション機能を検証します。 この機能には、カスタマイズ内容や Microsoft Dynamics AX 2012 環境から継承されたデータが含まれます。 オンプレミス サンドボックス環境を展開するには、 [オンプレミス環境の設定と配置のホーム ページ](setup-deploy-on-premises-environments.md) を参照してください。
 
 少なくとも、オンプレミスのサンドボックス環境には次のものが必要です。
 - 環境オーケストレータを実行している 3 台のコンピューター
@@ -73,7 +73,7 @@ LCS の詳細については、[Lifecycle Services](../lifecycle-services/lcs.md
 - SQL Server を実行している 1 台のコンピューター
 
 ### <a name="production-environment"></a>実稼働環境
-実働環境は、ユーザーや顧客がアクセスできる実際の展開です。 実稼働環境を展開するには、[[オンプレミス環境のセットアップと展開](setup-deploy-on-premises-environments.md)] を参照してください。
+実働環境は、ユーザーや顧客がアクセスできる実際の展開です。 実稼働環境を展開するには、 [オンプレミス環境の設定と配置のホーム ページ](setup-deploy-on-premises-environments.md) を参照してください。
 
 少なくとも、オンプレミスの実稼動環境には次のものが必要です。
 - 環境オーケストレータを実行している 3 台のコンピューター
@@ -106,7 +106,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 [オンプレミス展開のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md)でシステム要件を確認し、オンプレミス展開が必要なコンピューターの台数を確認します。
 
 ## <a name="hardware-sizing"></a>ハードウェアのサイズ
-オンプレミス環境におけるハードウェアおよびインフラストラクチャのサイズ設定のプロセスを開始する前に、[システム要件](../../fin-ops/get-started/system-requirements-on-prem.md)および[セットアップおよび配置の指示](setup-deploy-on-premises-environments.md)に精通し、基盤となるインフラストラクチャを確実に把握します。 最適なパフォーマンスを得るには、システム設定のベストプラクティスに十分注意します。 ドキュメントを確認した後、トランザクションと同時実行ユーザー量の見積および平均コア スループットに基づいて、環境のサイズを変更するプロセスを開始できます。
+オンプレミス環境におけるハードウェアおよびインフラストラチャのサイズ設定のプロセスを開始する前に、 [オンプレミス配置のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md) および [オンプレミス環境の設定と配置のホーム ページ](setup-deploy-on-premises-environments.md) に精通し、基盤となるインフラストラクチャを確実に把握します。 最適なパフォーマンスを得るには、システム設定のベストプラクティスに十分注意します。 ドキュメントを確認した後、トランザクションと同時実行ユーザー量の見積および平均コア スループットに基づいて、環境のサイズを変更するプロセスを開始できます。
 
 ### <a name="factors-that-affect-sizing"></a>サイズ設定に影響する要因
 サイズに影響を与える主な要因は次のとおりです。
@@ -230,6 +230,6 @@ Finance + Operations のオンプレミス配置オプションは、オンプ�
 
 ## <a name="next-steps"></a>次のステップ
 
-このトピックに記載されている計画活動を完了した後、[Onboard](on-premises-deployment-landing-page.md#onboard) のセクションで [オンプレミス配置 ランディング ページ](on-premises-deployment-landing-page.md) に記載されているリストの手順に従って開始することができます。
+このトピックに記載されている計画活動を完了した後、 [オンプレミス配置のホーム ページ](on-premises-deployment-landing-page.md) の [研修](on-premises-deployment-landing-page.md#onboard) セクションにリストされている手順を開始することができます。
 
-計画、展開、メンテナンス、およびトラブルシューティングの詳細については、実装を通じて [オンプレミス配置 ランディング ページ](on-premises-deployment-landing-page.md) を参照してください。
+計画、展開、メンテナンス、およびトラブルシューティングの詳細については、実装を通じて [オンプレミス配置のホーム ページ](on-premises-deployment-landing-page.md) を参照してください。

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18ff662141024ae4aae3261512c3164df2630bfe
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: bd046cfb3a0a98c4d707c68ffd6b2ae8c00574d1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2572628"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812423"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 

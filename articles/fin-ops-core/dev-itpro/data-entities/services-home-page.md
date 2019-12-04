@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2614d56364cf042971c983c882292730199558b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c0a32f777f56cb505752afde85e2f001fba68616
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183469"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769625"
 ---
 # <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 
@@ -46,8 +46,8 @@ ms.locfileid: "2183469"
 
 このトピックは、サービスと、REST メタデータ サービスの認証について説明します。 次のリンクでは、以下のための詳細なドキュメントを提供します。
 
-- [顧客サービス](custom-services.md)
-- [OData サービス](odata.md)
+- [顧客サービスの開発](custom-services.md)
+- [データ プロトコル (OData) を開く](odata.md)
 
 ## <a name="authentication"></a>認証
 OData サービス、JSON ベース顧客サービス、および REST メタデータ サービスは、標準の OAuth 2.0 認証をサポートします。
@@ -62,7 +62,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 詳細については、以下を参照してください。
 
 - [OAuth 2.0 および Azure Active Directory を使用して web アプリケーションへのアクセスを許可する](https://msdn.microsoft.com/library/azure/dn645545.aspx)
-- [サービス認証のトラブルシューティング](troubleshoot-service-authentication.md)
+- [サービス認証問題のトラブルシューティング](troubleshoot-service-authentication.md)
 
 次の図は、認証コードの付与フローに対して認証を設定する方法について説明します。
 

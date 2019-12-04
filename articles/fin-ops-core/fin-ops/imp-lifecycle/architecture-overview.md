@@ -3,7 +3,7 @@ title: Finance and Operations アプリケーションのアーキテクチャ
 description: このトピックでは、Finance and Operations アプリケーション アーキテクチャの概要を示します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 06/04/2018
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc60cd87df54762d3db04283824b8e0c2ed68edb
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 543e0559a15501bd439d2a3a1ccaf0b027e1bf85
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249715"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812424"
 ---
 # <a name="finance-and-operations-application-architecture"></a>Finance and Operations アプリケーションのアーキテクチャ
 
@@ -48,15 +48,15 @@ Finance and Operations アプリケーション クラウド アーキテクチ�
 - **Office 365 管理者センター** – Office 365 管理者センターは、Office 365 が管理者に提供する定期売買管理ポータルです。 ユーザー (AAD) および定期売買の管理機能を提供するのに使用されます。 これらの管理機能の一部として、サービスの正常性に関する情報を提供します。 詳細については、[Office 365 管理センターについて](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23)を参照してください。
 
     > [!NOTE]
-    > Finance and Operations アプリを配置するために Office 365 ライセンスを取得する必要はありません。 ただし、特定の Office 統合シナリオのライセンスが必要な場合があります。 詳細については、[Office 統合](../../dev-itpro/office-integration/office-integration.md)を参照してください。
+    > Finance and Operations アプリを配置するために Office 365 ライセンスを取得する必要はありません。 ただし、特定の Office 統合シナリオのライセンスが必要な場合があります。 詳細については、 [Office 統合の概要](../../dev-itpro/office-integration/office-integration.md)を参照してください。
 
-- **Microsoft Dynamics Lifecycle Services (LCS)** - LCS は、実装のアプリケーション ライフサイクルの管理に役立つ環境と定期的に更新される一連のサービスを提供するコラボレーション ポータルです。 詳細については、[Lifecycle Services for Finance and Operations](../../dev-itpro/lifecycle-services/lcs.md) を参照してください。 Finance and Operations アプリを購入してサブスクリプションを有効化した後、**実装プロジェクト**ワークスペースでテナント管理者が初めてサインインすると、LCS にプロビジョニングされます。
+- **Microsoft Dynamics Lifecycle Services (LCS)** - LCS は、実装のアプリケーション ライフサイクルの管理に役立つ環境と定期的に更新される一連のサービスを提供するコラボレーション ポータルです。 詳細については、 [Lifecycle Services のリソース](../../dev-itpro/lifecycle-services/lcs.md) を参照してください。 Finance and Operations アプリを購入してサブスクリプションを有効化した後、**実装プロジェクト**ワークスペースでテナント管理者が初めてサインインすると、LCS にプロビジョニングされます。
 
     > [!NOTE]
-    > 実装プロジェクトは、クラウド サービスの LCS プロジェクトです。 Microsoft パートナーとして、目的に合わせて非実装 LCS プロジェクトを準備することもできます。 詳細については、[Lifecycle Services for Finance and Operations アプリのパートナー](../../dev-itpro/lifecycle-services/getting-started-lcs.md) を参照してください。
+    > 実装プロジェクトは、クラウド サービスの LCS プロジェクトです。 Microsoft パートナーとして、目的に合わせて非実装 LCS プロジェクトを準備することもできます。 詳細については、 [Lifecycle Services (LCS) for Finance and Operations アプリのパートナー](../../dev-itpro/lifecycle-services/getting-started-lcs.md) を参照してください。
 
 - **Finance and Operations アプリ** – Finance and Operations アプリは、LCS を通じて展開されます。 開発/テスト/ビルド、受入れテスト、パフォーマンス テスト、高可用性生産など、さまざまなトポロジが利用できます。 さまざまなトポロジの詳細については、 [Dynamics 365 の価格設定からの最新の Microsoft Dynamics 365 ライセンス ガイド](https://dynamics.microsoft.com/pricing/)をダウンロードしてください。
-- **Microsoft Azure DevOps** – Azure DevOps は、主にコードのバージョン管理に使用され、ビルド環境を配置します。 Azure DevOps は、クラウドを利用したサポートを通じて Microsoft に送信される Azure DevOps の作業項目などのサポート インシデントの追跡や、ビジネス プロセス モデラー (BPM) ライブラリ階層を作業項目の階層として Azure DevOps プロジェクトに統合するのにも使用されます。 Azure DevOps はコードのアップグレード時にも使用されます。
+- **Microsoft Azure DevOps** – Azure DevOps は、主にコードのバージョン管理、開発、ビルド環境を配置に使用されます。 Azure DevOps は、クラウドを利用したサポートを通じて Microsoft に送信される Azure DevOps の作業項目などのサポート インシデントの追跡や、ビジネス プロセス モデラー (BPM) ライブラリ階層を作業項目の階層として Azure DevOps プロジェクトに統合するのにも使用されます。 Azure DevOps はコードのアップグレード時にも使用されます。
 
 Finance and Operations アプリでは、Azure ストレージ、ネットワーク、監視、Azure SQL データベースなど、Azure プラットフォームの多くの機能を使用しています。 共有サービスが工程に移り、参加者の環境のアプリケーション ライフサイクルが調整されます。 Azure の機能と LCS があいまって、堅牢なクラウド サービスを提供します。
 

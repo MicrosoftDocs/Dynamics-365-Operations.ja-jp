@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f1e6af3afbd04581fc2ae6ac9cda71379e2a0b75
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0ed38161ffff8f77a8d15400728beacee8431607
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191556"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769984"
 ---
 # <a name="document-generation-publishing-and-printing-in-on-premises-deployments"></a>オンプレミス配置でのドキュメントの生成、発行、および印刷
 
@@ -45,7 +45,7 @@ Microsoft Dynamics AX 2012 SQL Reporting Services フレームワーク上で構
 
 ![ドキュメント公開サービス](media/document-publishing-services.png)
 
-クラウド ホスト環境ソリューションで使用できる情報アクセスのオプションの高レベルの概要については、[アプリケーションで印刷](print-documents.md) を参照してください。
+クラウド ホスト型ソリューションで使用できる情報アクセスのオプションの高いレベルの概要については、[ドキュメント印刷の概要](print-documents.md) を参照してください。
 
 ## <a name="comparing-the-cloud-hosted-and-on-premises-services"></a>クラウド ホスト サービスとオンプレミス サービスの比較
 クラウド ホスト サービスとは異なり、オンプレミス パブリッシング サービスではドキュメントは PDF ファイルとして生成され、自動的にブラウザにダウンロードされます。 したがって、ローカル接続デバイスを使用してドキュメントを保存したり、ハード コピーを印刷することができます。 管理者は、組み込み管理ページを使用して、アプリケーションから直接ネットワーク プリンターへのアクセスを管理できます。 必要に応じてレポートを操作したり、定期的にドキュメントを安全に生成して配布するための自動ジョブをスケジュールできます。

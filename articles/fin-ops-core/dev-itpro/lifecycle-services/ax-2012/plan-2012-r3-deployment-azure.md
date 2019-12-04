@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 624f7ec6c93928077cb4cd2b1ec42f7a96debd68
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 43f39eb44d3e01662e71f0c319ae549aba52488a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183239"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812056"
 ---
 # <a name="plan-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3の 配置計画
 
@@ -36,7 +36,7 @@ Azure 上の AX 2012 R3 の配備は、Microsoft が次のシナリオでサポ�
    - SQL は、(SQL クラスタリング/Always On を使用して) 可用性トポロジに配置されます。
    - Azure に配置するために、[Azure 仮想マシンでの SQL Server のパフォーマンス ベスト プラクティス](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance)を使用して、SQL のベスト プラクティスに従っています。 
    - [SQL サーバーおよび記憶域の設定のコンフィギュレーション (TechNet)](https://technet.microsoft.com/library/dd309734.aspx) によって指定された AX 2012 の SQL Server コンフィギュレーションのベスト プラクティスに従っています。 
-   - [システム診断](system-diagnostics-lcs.md)で指定されているように、システム診断ツールがインストールされ、ベスト プラクティスに従います。 
+   - [Lifecycle Services (LCS) のシステム診断](system-diagnostics-lcs.md) で指定されているように、システム診断ツールがインストールされ、ベスト プラクティスに従います。 
 
 > [!NOTE]
 > Azure 環境でサポートされていない AX 2012 R3 に問題があり、LCS 経由で Azure に展開された、またはローカルに展開された AX 2012 R3 環境で同じ問題を再現することができる場合、Microsoft がサポートを提供できます。
@@ -101,7 +101,7 @@ Azure 管理ポータルは、開発者および IT プロフェッショナル�
 -   仮想マシンに接続します。
 -   AX 2012 R3 環境の正常性および状態を監視します。
 
-Azure サブスクリプションを購入した後、[ここ。](https://manage.windowsazure.com/?whr=live.com) をクリックして管理ポータルにアクセスできます。 次の図は、管理ポータルを示しています。 [![PlanYouAXR3DeploymentonAzure1](./media/planyouaxr3deploymentonazure1.jpg)](./media/planyouaxr3deploymentonazure1.jpg)  
+Azure サブスクリプションを購入した後、 [ここ](https://manage.windowsazure.com/?whr=live.com) をクリックして管理ポータルにアクセスできます。 次の図は、管理ポータルを示しています。 [![PlanYouAXR3DeploymentonAzure1](./media/planyouaxr3deploymentonazure1.jpg)](./media/planyouaxr3deploymentonazure1.jpg)  
 
 ## <a name="become-familiar-with-the-azure-vm-agent"></a>Azure VM エージェントを使いこなせるようになります
 Azure VM エージェントは、Lifecycle Services を通じて展開されたすべての VM で自動的に配置されます。 Azure VM エージェントは、Azure 仮想マシン拡張 (VM 拡張) インストール、コンフィギュレーション、管理、実行するために使用されます。 VM 拡張機能は、VM を監視および管理するのに役立ちます。
@@ -119,7 +119,9 @@ Azure VM エージェントは、Lifecycle Services を通じて展開された�
 | DS      | 標準 DS の\[すべての DS シリーズ\] |
 | G       | 標準 G の\[すべての G シリーズ\]   |
 
-Version-Topology-EnvironmentName-SKU-GUID という名前付けスキームを含むクラウド サービスが作成されます。必要に応じて、配置のためのクラウド サービス リソース要件を検討し、Azure サポートから Azure サブスクリプションの追加クラウド サービス能力を要求してください。
+次の名前付けスキームを含むクラウド サービスが作成されます: Version-Topology-EnvironmentName-SKU-GUID 
+
+必要に応じて、配置のためのクラウド サービス リソース要件を検討し、Azure サポートから Azure サブスクリプションの追加クラウド サービス キャパシティを要求してください。
 
 ## <a name="plan-for-storage-accounts"></a>ストレージ アカウントの計画
 Lifecycle Services で作成された各プロジェクトについては、1 つまたは複数の個別のストレージ アカウントが Azure 定期売買で作成されます。 ストレージ アカウントは、プロジェクトを Azure サブスクリプションに接続すると作成されます。 このストレージ アカウントは、ローカル冗長ストレージ (LRS) アカウントであり、展開に必要なスクリプトと VHD を格納するために使用されます。 最初の Premium ストレージ有効トポロジがプロジェクトから配置されると、各プロジェクトが作成され Premium ストレージ アカウントが追加されます。 ストレージ アカウントは、配置が同じ Azure サブスクリプションに行われる場合でも、Lifecycle Services プロジェクト間で共有されません。 Premium ストレージ アカウントが作成されると、それもまた LRS として作成されます。 ストレージの詳細については、[ここ](http://azure.microsoft.com/pricing/details/storage) をクリックしてください。 同じ Lifecycle Services (LCS) プロジェクトと Azure コネクタに展開されるトポロジと環境の数を検討します。 Premium ストレージ アカウントとは別に、既定では、LCS プロジェクトおよび Azure コネクタごとにストレージ アカウントが 1 つ存在します。 Azure Storage には[限度](https://azure.microsoft.com/documentation/articles/azure-subscription-service-limits/#storage-limits)があるので注意してください。具体的には、標準ストレージ アカウントあたり 20,000 IOPS (秒単位の入力/出力オペレーション) です。 VHD あたり 500 IOPS と組み合わせると、調整が発生する前に約 40 個の***利用効率が高い*** VHDが残されます。 これを軽減するには、複数の Azure コネクタや複数の LCS プロジェクトを活用することをお勧めします。 たとえば、1 つの LCS プロジェクトで製造環境を、別で開発/テスト環境を検討します。 
@@ -172,14 +174,17 @@ TempDB とログは、パフォーマンスの向上のために記憶域上に�
 -   トレース フラグの有効  -T1204、 -T1222。
 
 ## <a name="estimate-costs-and-understand-the-azure-billing-process"></a>減価を見積もり、Azure 請求プロセスに同意
-Azure での AX 2012 R3 の展開コストを見積もるには、[Azure 価格計算ツール](http://azure.microsoft.com/pricing/calculator/)を使用します。 Azure に AX 2012 R3 を配置する前に、Azure 請求プロセスについて理解することも重要です。 サンプル請求書、および現在の請求期間に対する毎日の使用データをダウンロードする方法に関する情報にリンクする Azure 請求プロセスの概要については、[請求書を理解する](http://azure.microsoft.com/support/understand-your-bill/) を参照してください。 **注記:** 使用されていないときに Azure 上に配置されている AX 2012 R3 環境をシャット ダウンすることができることに留意してください。 たとえば、コスト削減のため週末に環境をシャット ダウンする場合があります。 環境をシャット ダウンすると、その環境はまだ存在します。ただし、その環境内の仮想マシンはシャット ダウンされます。 仮想マシンが実行されていないときは、それに対して課金されません。 詳細については、「環境をシャット ダウンする方法とは」を参照してください。 [Azure での Microsoft Dynamics AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md)という記事の中です。
+Azure での AX 2012 R3 の展開コストを見積もるには、[Azure 価格計算ツール](http://azure.microsoft.com/pricing/calculator/)を使用します。 Azure に AX 2012 R3 を配置する前に、Azure 請求プロセスについて理解することも重要です。 サンプル請求書、および現在の請求期間に対する毎日の使用データをダウンロードする方法に関する情報にリンクする Azure 請求プロセスの概要については、[請求書を理解する](http://azure.microsoft.com/support/understand-your-bill/) を参照してください。 
+
+> [!NOTE]
+> 使用されていないときに Azure 上に配置されている AX 2012 R3 環境をシャット ダウンすることができます。 たとえば、コスト削減のため週末に環境をシャット ダウンする場合があります。 環境をシャット ダウンすると、その環境はまだ存在します。ただし、その環境内の仮想マシンはシャット ダウンされます。 仮想マシンが実行されていないときは、それに対して課金されません。 詳細については、「環境をシャット ダウンする方法とは」を参照してください。 [Azure 上の AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md) という記事の中です。
 
 ## <a name="consider-legal-and-regulatory-requirements"></a>法的および規制要件を考慮する
 Microsoft は、複数の地域や税務署にわたる一般的な運用方法と機能で Azure サービスを実行します。 ただし、Microsoft サービスがユーザーの規制の必要を満たしているかどうかを判断するのは、最終的にはユーザー次第となります。 最新の情報を提供するために、[Azure セキュリティ センター](http://azure.microsoft.com/support/trust-center/) はセキュリティ、プライバシー、コンプライアンスに関する以下の情報を提供します。
 
--   **セキュリティ**、[Azure セキュリティ ページ](http://www.windowsazure.com/support/trust-center/security/) は地理的に分散されているデータ センター内に安全な環境を提供するために Microsoft が取っている条項の概要を示します。 セキュリティ関連リソースの広範なリストの中で、[情報の要求についての標準応答: セキュリティおよびプライバシー](https://www.microsoft.com/download/details.aspx?id=26647) ホワイト ペーパーがどのように Azure の提案されたプリンシパルを満たし、国際標準化機構 (ISO) 27001:2005 および ISO 27002 にマップされているかを概説します。
--   **プライバシー** [Azure プライバシー ページ](http://www.windowsazure.com/support/trust-center/privacy/) Azure 環境のプライバシーに関する取り組みを説明する複数のリソースへのリンクが含まれています。 [Azure のプライバシーに関する声明](http://www.windowsazure.com/support/legal/privacy-statement/)へのリンクが含まれています。
--   **コンプライアンス** [Azure コンプライアンス ページ](http://www.windowsazure.com/support/trust-center/compliance/)は、独自の業界に適用される特定の法律および規制を順守し、シナリオを使用するためのリソースを提供します。
+-   **セキュリティ:** [Azure セキュリティ ページ](http://www.windowsazure.com/support/trust-center/security/) は地理的に分散されているデータ センター内に安全な環境を提供するために Microsoft が取っている条項の概要を示します。 セキュリティ関連リソースの広範なリストの中で、[情報の要求についての標準応答: セキュリティおよびプライバシー](https://www.microsoft.com/download/details.aspx?id=26647) ホワイト ペーパーがどのように Azure の提案されたプリンシパルを満たし、国際標準化機構 (ISO) 27001:2005 および ISO 27002 にマップされているかを概説します。
+-   **プライバシー:** [Azure プライバシー ページ](http://www.windowsazure.com/support/trust-center/privacy/) は、Azure 環境のプライバシーに関する取り組みを説明する複数のリソースへのリンクが含まれています。 [Azure のプライバシーに関する声明](http://www.windowsazure.com/support/legal/privacy-statement/)へのリンクが含まれています。
+-   **コンプライアンス:** [Azure コンプライアンス ページ](http://www.windowsazure.com/support/trust-center/compliance/) は、独自の業界に適用される特定の法律および規制を順守し、シナリオを使用するためのリソースを提供します。
 
 ## <a name="consider-licensing-requirements"></a>ライセンス供与の要件の検討
 AX 2012 R3 仮想マシン環境のさまざまなコンポーネントのライセンス供与は、重要な考慮事項です。 Azure での展開は、 Azure に固有な特別なライセンス条項であるか、およびそれらの条項がソリューションの全体的な適合性を備えているかを評価します。 ライセンス供与の要件は、Azure に配置する AX 2012 R3 仮想マシン環境の種類によって異なります。 次のテーブルに詳細を示します。
@@ -213,9 +218,10 @@ AX 2012 R3 仮想マシン環境のさまざまなコンポーネントのライ
 <li><a href="http://go.microsoft.com/fwlink/?LinkID=507496&amp;amp;clcid=0x409">5. Retail Essentials 開発/テスト環境のソフトウェア ライセンス条項</a></li>
 <li><a href="http://go.microsoft.com/fwlink/?LinkID=507494">5. Retail E-commerce 開発/テスト環境のソフトウェア ライセンス条項</a></li>
 <li><a href="http://go.microsoft.com/fwlink/?LinkID=507496">5. Retail Mobility 開発/テスト環境のソフトウェア ライセンス条項</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkId=397363">高可用性環境のソフトウェア ライセンス条項</a>ライセンス条項と要件を確認する際には、Azure に配置するために特に適用される条項、および使用目的に適用される条項に特に注意する必要があります。 たとえば、Microsoft Office は Azure に固有の条件を持ちますが、これらの条件は、開発またはテスト目的で Office を配置するか、または生産目的で Office を配置するかどうかによって異なります。</li>
+<li><a href="http://go.microsoft.com/fwlink/?LinkId=397363">高可用性環境のソフトウェア ライセンス条項</a> </li>
 </ul>
-開始するうえで役立ついくつかのリソースを以下のリンクに示します。 以下にリンクされているリソースのほとんどに、複数の製品およびシナリオの詳細な情報へのリンクが含まれています。ただし、追加の情報を確認しなければならない場合があります。 この情報は、ライセンスを取得した製品の承認済みの使用に関するガイドに役立つ情報です。 同意ではありません。 ボリューム ライセンス契約にもとづいてライセンスされている製品の使用は、その契約の条件によって支配されます。 ここにリンクされている情報と契約に矛盾がある場合、契約の使用条件が有効となります。
+<p>ライセンス条項と要件を確認する際には、Azure に配置するために特に適用される条項、および使用目的に適用される条項に特に注意する必要があります。 たとえば、Microsoft Office は Azure に固有の条件を持ちますが、これらの条件は、開発またはテスト目的で Office を配置するか、または生産目的で Office を配置するかどうかによって異なります。</p>
+<p>開始するうえで役立ついくつかのリソースを以下のリンクに示します。 以下にリンクされているリソースのほとんどに、複数の製品およびシナリオの詳細な情報へのリンクが含まれています。ただし、追加の情報を確認しなければならない場合があります。 この情報は、ライセンスを取得した製品の承認済みの使用に関するガイドに役立つ情報です。 同意ではありません。 ボリューム ライセンス契約にもとづいてライセンスされている製品の使用は、その契約の条件によって支配されます。 ここにリンクされている情報と契約に矛盾がある場合、契約の使用条件が有効となります。</p>
 <ul>
 <li><strong>仮想マシン ライセンスによく寄せられる質問</strong> Azure 仮想マシンのライセンスに関するよくある質問は、<a href="http://www.windowsazure.com/pricing/licensing-faq/">このページ</a>で回答されています。</li>
 <li><strong>Microsoft 製品の使用権限と製品リスト</strong>ビジネス上の意思決定を効果的にし、IT 購入価値を最大化するために、<a href="http://go.microsoft.com/fwlink/?LinkId=397363">このページ</a>で、Microsoft ボリューム ライセンス製品のライセンスモデル、プログラム、シナリオ、および使用条件について詳細を確認します。</li>
@@ -251,12 +257,6 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 > 各環境に含まれる仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>既定で配置される仮想マシンの数</strong></td>
@@ -267,7 +267,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>1</td>
 <td>デモ マシン</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>DEMO-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> DEMO-&lt;GUID&gt;</td>
 <td><ul>
 <li>次を含む Windows Server2012 R2:
 <ul>
@@ -370,12 +370,6 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 > この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>既定で配置される仮想マシンの数</strong></td>
@@ -386,7 +380,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>1</td>
 <td>Retail Essentials デモ コンピューター</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>DEMO-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> DEMO-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SQL Server 2014 のコンポーネント:
@@ -447,12 +441,6 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 > この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。 データのインポート/エクスポート フレームワーク (DIXF) コンポーネントは既定ではインストールされていません。 DIXF を使用する場合は、独自の SQL Server インストール メディアを使用して、SQL Server マシンに SQL Server Integration Services (SSIS) をインストールする必要があります。 SSIS をインストールした後は、Dynamics AX CD (VM 内の接続されたドライブで利用可能) を使用し、DIXF コンポーネントを AOS およびクライアント マシンにインストールできます。
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>既定で配置される仮想マシンの数</strong></td>
@@ -463,7 +451,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>1</td>
 <td>ドメイン コントローラー</td>
-<td><strong>サイズ:</strong>D1: 基本的な計算層 (1 コア、3.5 GB メモリ) <strong>既定名:</strong>AD-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D1: 基本的な計算層 (1 コア、3.5 GB メモリ)</br><strong>既定名:</strong> AD-&lt;GUID&gt;</td>
 <td><ul>
 <li>次を含む Windows Server2012 R2:
 <ul>
@@ -475,7 +463,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="odd">
 <td>1</td>
 <td>AOS サーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>AOS-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> AOS-&lt;GUID&gt;</td>
 <td><ul>
 <li>次を含む Windows Server2012 R2:
 <ul>
@@ -523,7 +511,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>1</td>
 <td>データベース サーバー/BIサーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>SQL-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> SQL-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SQL Server 2014 のコンポーネント:
@@ -550,7 +538,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="odd">
 <td>0</td>
 <td>エンタープライズ ポータル サーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>EP-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> EP-&lt;GUID&gt;</td>
 <td><ul>
 <li>次を含む Windows Server2012 R2:
 <ul>
@@ -596,7 +584,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>1</td>
 <td>クライアント コンピューター</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>CLI-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> CLI-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft Visual Studio 2013</li>
@@ -635,7 +623,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="odd">
 <td>0</td>
 <td>リモート デスクトップ サービス サーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>RDS-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> RDS-&lt;GUID&gt;</td>
 <td><ul>
 <li>次を含む Windows Server2012 R2:
 <ul>
@@ -657,12 +645,6 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 > この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>既定で配置される仮想マシンの数</strong></td>
@@ -673,7 +655,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>1</td>
 <td>Retail Essentials サーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>ESSEN-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> ESSEN-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SQL Server 2014 のコンポーネント:
@@ -723,12 +705,6 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 > この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>既定で配置される仮想マシンの数</strong></td>
@@ -739,7 +715,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>1</td>
 <td>Retail E-commerce サーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>E-COM-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> E-COM-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SharePoint Server 2013</li>
@@ -766,12 +742,6 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 > この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>既定で配置される仮想マシンの数</strong></td>
@@ -782,7 +752,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>1</td>
 <td>Retail サーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>MOBIL-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> MOBIL-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>AX 2012 R3 のコンポーネント:
@@ -808,15 +778,9 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 この環境を配置して、高可用性のためにコンフィギュレーションできる環境で AX 2012 R3 を使用します。 この環境には、数台の仮想マシンが含まれます。 これらの仮想マシンには、Windows Server と、AX 2012 R3 を使用するために必要なソフトウェアが既にインストールされています。 次のテーブルは、既定の高可用性環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 
 > [!NOTE]
-> Azure Premium Storage は高可用性環境が必要です。 詳細については、[Azure での高可用性環境の配置](deploy-high-availability-environment-azure.md) を参照してください。 この環境の仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となります。 データのインポート/エクスポート フレームワーク (DIXF) コンポーネントは既定ではインストールされていません。 DIXF を使用する場合は、独自の SQL Server インストール メディアを使用して、SQL Server マシンに SQL Server Integration Services (SSIS) をインストールする必要があります。 SSIS をインストールした後は、Dynamics AX CD (VM 内の接続されたドライブで利用可能) を使用し、DIXF コンポーネントを AOS およびクライアント マシンにインストールできます。
+> Azure Premium Storage は高可用性環境が必要です。 詳細については、 [Azure での高可用性環境の配置](deploy-high-availability-environment-azure.md) を参照してください。 この環境の仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となります。 データのインポート/エクスポート フレームワーク (DIXF) コンポーネントは既定ではインストールされていません。 DIXF を使用する場合は、独自の SQL Server インストール メディアを使用して、SQL Server マシンに SQL Server Integration Services (SSIS) をインストールする必要があります。 SSIS をインストールした後は、Dynamics AX CD (VM 内の接続されたドライブで利用可能) を使用し、DIXF コンポーネントを AOS およびクライアント マシンにインストールできます。
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>既定で配置される仮想マシンの数</strong></td>
@@ -827,7 +791,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>3 <strong>注記:</strong> 3 つのドメイン コントローラがこの環境に配置されています。 1 つのドメイン コントローラーが失敗すると、Azure の<a href="http://azure.microsoft.com/support/legal/sla/">サービス レベル同意書</a>に準拠するために、2 つのオンライン ドメイン コントローラーを残しておく必要があります。</td>
 <td>ドメイン コントローラー</td>
-<td><strong>サイズ:</strong>D1: 基本的な計算層 (1 コア、3.5 GB メモリ) <strong>既定名:</strong>AD-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D1: 基本的な計算層 (1 コア、3.5 GB メモリ)</br><strong>既定名:</strong> AD-&lt;GUID&gt;</td>
 <td><ul>
 <li>次を含む Windows Server2012 R2:
 <ul>
@@ -839,7 +803,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="odd">
 <td>2</td>
 <td>AOS サーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>AOS-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> AOS-&lt;GUID&gt;</td>
 <td><ul>
 <li>次を含む Windows Server2012 R2:
 <ul>
@@ -887,7 +851,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>2</td>
 <td>データベース サーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>SQL-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> SQL-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SQL Server 2014 のコンポーネント:
@@ -922,7 +886,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="odd">
 <td>2</td>
 <td>ビジネス インテリジェンス (BI) サーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>BI-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> BI-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SQL Server 2014 のコンポーネント:
@@ -957,7 +921,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>0</td>
 <td>エンタープライズ ポータル サーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>EP-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> EP-&lt;GUID&gt;</td>
 <td><ul>
 <li>次を含む Windows Server2012 R2:
 <ul>
@@ -1003,7 +967,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="odd">
 <td>2</td>
 <td>クライアント コンピューター</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>CLI-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> CLI-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft Visual Studio 2013</li>
@@ -1042,7 +1006,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <tr class="even">
 <td>2</td>
 <td>リモート デスクトップ サービス サーバー</td>
-<td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>RDS-&lt;GUID&gt;</td>
+<td><strong>サイズ:</strong> D3: 標準計算層 (4 コア、14 GB メモリ)</br><strong>既定名:</strong> RDS-&lt;GUID&gt;</td>
 <td><ul>
 <li>次を含む Windows Server2012 R2:
 <ul>
@@ -1058,11 +1022,11 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 
 
 ## <a name="next-steps"></a>次のステップ
-- [Azure に AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置します](deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md) 
+- [Azure に AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置する](deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md) 
 - [Azure での Retail Essentials デモ環境の配置](deploy-retail-essentials-demo-environment-azure.md) 
 - [Azure での開発環境の配置](deploy-development-environment-azure.md) 
 - [Azure でのテスト環境の配置](deploy-test-environment-azure.md) 
 - [Azure での Retail Essentials 開発/テスト環境の配置](deploy-retail-essentials-devtest-environment-azure.md) 
 - [Azure での Retail E-commerce 開発/テスト環境の配置](deploy-retail-ecommerce-devtest-environment-azure.md) 
 - [Azure での Retail Mobility 開発/テスト環境の配置](deploy-retail-mobility-devtest-environment-azure.md) 
-- [Azure に高可用性環境を配置する](deploy-high-availability-environment-azure.md)
+- [Azure での高可用性環境の配置](deploy-high-availability-environment-azure.md)

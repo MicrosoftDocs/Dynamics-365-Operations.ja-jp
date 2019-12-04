@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96426ee5b1a817c91745d67ffc59cbf8bb7198ff
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 932784068f12a21335b3a2d90c5125abf1d65b76
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183178"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812123"
 ---
 # <a name="translate-user-interface-files"></a>ユーザー インタ フェース ファイルの翻訳
 
@@ -30,12 +30,12 @@ ms.locfileid: "2183178"
 
 このトピックでは、Microsoft Dynamics 製品またはソリューションのユーザー インターフェイス (UI) ファイルを変換する方法について説明します。
 
-Microsoft Dynamics 365 Translation Service (DTS) に関する詳細については、[Dynamics 365 - Translation Service の概要](translation-service-overview.md) を参照してください。 ドキュメント ファイルを翻訳する方法については、[Dynamics 365 - 翻訳サービス ユーザー ガイド - ドキュメント ファイルの翻訳](use-translation-service-ua.md) を参照してください。
+Microsoft Dynamics 365 Translation Service (DTS) に関する詳細については、[Dynamics 365 - Translation Service の概要](translation-service-overview.md) を参照してください。 ドキュメント ファイルを翻訳する方法については、[ドキュメント ファイルの翻訳](use-translation-service-ua.md) を参照してください。
 
 ## <a name="create-a-translation-request"></a>翻訳要求を作成する
 1. Microsoft Dynamics Lifecycle Services (LCS) で、DTS ダッシュボードの**追加**を選択して新しい翻訳要求を作成します。
 
-    ![追加ボタン](./media/dts-request1.png "追加ボタン")
+    ![ボタンの追加](./media/dts-request1.png "ボタンの追加")
 
     LCS ホーム ページから、またはプロジェクト内から、DTS ダッシュ ボードを開くことができます。 詳細については、[DTS にアクセス](./translation-service-overview.md#accessing-dts) を参照してください。
 
@@ -51,7 +51,7 @@ Microsoft Dynamics 365 Translation Service (DTS) に関する詳細について�
 
 ![言語を選択する](./media/dts-target-lang.png "言語を選択する")
 
-3. **作成** を選択します。 要求の詳細が正しく選択されていることを確認し、**はい** をクリックして続行します。 
+3. **作成**を選択します。 要求の詳細が正しく選択されていることを確認し、**はい** をクリックして続行します。 
 
 
     > [!NOTE]
@@ -71,9 +71,9 @@ Microsoft Dynamics 365 Translation Service (DTS) に関する詳細について�
 翻訳元のソース言語ですべての UI ファイルを含むひとつの ZIP ファイルを作成します。 ファイル タイプが製品でサポートされている場合、zip ファイルに異なるファイル タイプを含めることができます。 サポートされるファイル タイプの詳細については、[サポートされている製品](translation-service-overview.md#supported-products) を参照してください。 DTS はアップロードするソース ファイルを変更しないことに注意してください。 ソースファイルは、要求した対応するターゲット言語でファイルを作成するためにのみ使用されます。
 
 ### <a name="upload-xliff-translation-memory-files-optional"></a>XLIFF 翻訳メモリファイル (オプション) のアップロード
-以前の UI 翻訳要求の XLIFF TM ファイルがある場合、または[整列ツール](use-translation-service-tm.md)を使用し、XLIFF TM を作成した場合、それらをアップロードする前にすべての TM ファイルを含む zip ファイルを作成します。 その後、製品バージョン間の整合性を保証するために一致する文字列が再利用されます。 XLIFF TM の詳細については、[Microsoft Dynamics 365 Translation service - 翻訳メモリ](use-translation-service-tm.md) を参照してください。
+以前の UI 翻訳要求の XLIFF TM ファイルがある場合、または[整列ツール](use-translation-service-tm.md)を使用し、XLIFF TM を作成した場合、それらをアップロードする前にすべての TM ファイルを含む zip ファイルを作成します。 その後、製品バージョン間の整合性を保証するために一致する文字列が再利用されます。 XLIFF TM の詳細については、[翻訳メモリ ファイル](use-translation-service-tm.md) を参照してください。
 
-![TM アップロード](./media/dts-tm-upload.png "TM アップロード")
+![TM アップロード:](./media/dts-tm-upload.png "TM アップロード:")
 
 複数のターゲット言語の翻訳依頼を作成した場合は、TM ファイルがどのターゲット言語用であるかを選択する必要があります。 
 
@@ -110,7 +110,7 @@ UI 翻訳の要求では、翻訳プロセスが完了した後、出力ファ�
 個々のファイル リンクまたはダウンロード リンクをクリックして、1 つのファイル、1 つのターゲット言語のすべてのファイル、またはすべてのターゲット言語のすべてのファイルを、便利なように 1 つの zip でダウンロードします。  
 
 ### <a name="review-and-edit-the-translations-in-the-xliff-file"></a>XLIFF ファイル内の翻訳を確認し、編集
-DTS が提供する XLIFF ファイル内の翻訳をレビューおよび編集して、翻訳出力が製品の品質基準を満たしていることを確認することをお勧めします。 XLIFF ファイルを編集する方法の詳細については、[XLIFF 翻訳メモリの編集](use-translation-service-tm.md#editing-an-xliff-translation-memory) を参照してください。
+DTS が提供する XLIFF ファイル内の翻訳をレビューおよび編集して、翻訳出力が製品の品質基準を満たしていることを確認することをお勧めします。 XLIFF ファイルを編集する方法の詳細については、[翻訳メモリ ファイル](use-translation-service-tm.md#editing-an-xliff-translation-memory) を参照してください。
 
 ### <a name="regenerate-output-files"></a>出力ファイルの再生成
 XLIFF での翻訳ファイルのレビューと編集が完了したら、次に翻訳されたネイティブ形式ファイルを再生成する必要があります。 最新の翻訳 (つまり、ユーザーが編集したバージョンの翻訳) をターゲット言語で UI ファイルに適用することができます。 ターゲット言語ごとに出力ファイル セットから任意の数のファイルを再生成することができます。  

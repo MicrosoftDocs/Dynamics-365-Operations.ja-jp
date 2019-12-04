@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 696d67e780736ac14d653149b78964b0ea9d7b04
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 54b7705d7d04cae3fa9e4fac00541d12cc564752
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183179"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812051"
 ---
 # <a name="translate-documentation-files"></a>ドキュメント ファイルの翻訳
 
@@ -33,7 +33,7 @@ ms.locfileid: "2183179"
 ## <a name="create-a-translation-request"></a>翻訳要求を作成する
 1. Microsoft Dynamics Lifecycle Services (LCS) で、DTS ダッシュボードの**追加**を選択して新しい翻訳要求を作成します。
 
-    ![追加ボタン](./media/dts-request1.png "追加ボタン")
+    ![ボタンの追加](./media/dts-request1.png "ボタンの追加")
 
     LCS ホーム ページから、またはプロジェクト内から、DTS ダッシュ ボードを開くことができます。 詳細については、[DTS にアクセス](./translation-service-overview.md#accessing-dts) を参照してください。
 
@@ -49,7 +49,7 @@ ms.locfileid: "2183179"
 
     ![言語を選択する](./media/dts-target-lang.png "言語を選択する")
 
-3. **作成** を選択します。
+3. **作成**を選択します。
 
 
     > [!NOTE]
@@ -72,7 +72,7 @@ ms.locfileid: "2183179"
 ### <a name="upload-xliff-or-tmx-translation-memory-files-optional"></a>XLIFF または TMX 翻訳メモリ ファイルのアップロード (オプション)
 以前の DTS リクエストからの Translation Memory eXchange (TMX) 形式の TM を使用している場合、または UI ファイル変換の XLIFF TM を使用している場合、これらの TM が、再提出する新しいドキュメントにリサイクルできるようにするために、これらの TM を添付できます。 すべての TM ファイルを含む ZIP ファイルを作成します。 zip ファイルは 1 つのみアップロードすることができます。 複数のターゲット言語の翻訳依頼を作成した場合は、TM ファイルがどのターゲット言語用であるかを選択する必要があります。 
 
-![TM アップロード](./media/dts-tm-upload.png "TM アップロード")
+![TM アップロード:](./media/dts-tm-upload.png "TM アップロード:")
 
 指定した翻訳メモリ ファイルを使用して、それでトレーニングされたカスタム MT システムを作成するかどうかを決定できます。 このオプションでは、要求を完了するまで時間がかかることがあります。 TM ファイルのアップロードを続行するには、[はい] または [いいえ] を選択する必要があります。  
 
@@ -120,4 +120,4 @@ DTS は .docx 形式の翻訳レビュー ファイルを提供します。 要�
 
 必要に応じて何度でも再生成プロセスを繰り返すことができます。
 
-Microsoft Dynamics 365 Translation Service (DTS) に関する詳細については、[Microsoft Dynamics Dynamics 365 - Translation Service の概要](./translation-service-overview.md) を参照してください。 ユーザー インターフェイス (UI) ファイルを翻訳する方法については、[Microsoft Dynamics 365 Translation Service  - ユーザー インターフェイス ファイルの翻訳](./use-translation-service.md) を参照してください。
+Microsoft Dynamics 365 Translation Service (DTS) に関する詳細については、[Dynamics 365 - Translation Service の概要](./translation-service-overview.md) を参照してください。 ユーザー インターフェイス (UI) ファイルを翻訳する方法については、[ユーザー インタ フェース ファイルの翻訳](./use-translation-service.md)を参照してください。

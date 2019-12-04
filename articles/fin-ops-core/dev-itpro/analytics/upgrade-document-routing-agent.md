@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f33afb444654c23007b9a22d25d5871f81fa6c30
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3a97172812db02e264b01c75e180d60dffe5c75e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191555"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769798"
 ---
 # <a name="upgrade-the-document-routing-agent"></a>ドキュメント回覧エージェントのアップグレード
 

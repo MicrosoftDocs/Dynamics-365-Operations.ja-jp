@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b676432fe0af2d4463660f0a7eca9dbd5ca560f5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 52492c89ca8d20419d53c899568567295a04446c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183255"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812157"
 ---
 # <a name="deploy-retail-essentials-demo-environments-on-azure"></a>Azure での Retail Essentials デモ環境の配置
 
@@ -35,7 +35,7 @@ ms.locfileid: "2183255"
 
 | カテゴリ       | 前提条件                                                                                                                                            |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 必要なタスク | [Azure での Microsoft Dynamics AX 配置計画](plan-2012-r3-deployment-azure.md) |
+| 必要なタスク | [Azure で AX 2012 R3 の配置を計画する](plan-2012-r3-deployment-azure.md) |
 
 ## <a name="1-log-on-to-lifecycle-services"></a>1. ライフサイクル サービスにログオンする
 Microsoft Dynamics Lifecycle Services は、顧客およびパートナーが Microsoft Dynamics AX の管理に使用できるクラウドベースの共同ワークスペースです。 Azure に Dynamics AX を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。 [Lifecycle Services にログオン](https://lcs.dynamics.com/)
@@ -100,20 +100,20 @@ Azure に Retail Essentials デモ環境を配置するには、以下の手順�
     <tr class="odd">
     <td>Azure で環境用に新しい仮想ネットワークを作成する</td>
     <td><ol>
-    <li><strong><span class="label">新しい仮想ネットワーク</span></strong>をクリックします。</li>
+    <li><strong>新しい仮想ネットワーク</strong>をクリックします。</li>
     <li>仮想ネットワーク名を入力します。</li>
     </ol></td>
     </tr>
     <tr class="even">
     <td>Azure の既存の仮想ネットワークへの環境の追加</td>
     <td><ol>
-    <li><strong><span class="label">既存の仮想ネットワーク</span></strong>をクリックします。</li>
-    <li>使用する既存の仮想ネットワークの名前を選択してください。 <span class="label"><strong>アプリケーション サブネット</strong><strong>名</strong></span> および <strong><span class="label">アドレス スペース</span></strong> フィールドには、選択した仮想ネットワークに基づいて適切な情報が自動的に表示されます。 これらのフィールドの情報を確認する場合は、次の操作を行います。 <ol>
+    <li><strong>既存の仮想ネットワーク</strong>をクリックします。</li>
+    <li>使用する既存の仮想ネットワークの名前を選択してください。 <strong>アプリケーションのサブネット名</strong> および <strong>アドレス スペース</strong> フィールドには、選択した仮想ネットワークに基づいて適切な情報が自動的に表示されます。 これらのフィールドの情報を確認する場合は、次の操作を行います。 <ol>
     <li><a href="https://ms.portal.azure.com/">Azure ポータル</a>にログオンします。</li>
-    <li>左のナビゲーション ウィンドウで、<strong><span class="label">仮想ネットワーク</span></strong>をクリックします。</li>
+    <li>左のナビゲーション ウィンドウで、 <strong>仮想ネットワーク</strong> をクリックします。</li>
     <li>使用する仮想ネットワークの名前をクリックします。</li>
-    <li><strong><span class="label">構成</span></strong>をクリックします。 仮想ネットワークに関する詳細は、ページに記載されています。</li>
-    <li><strong><span class="label">完了</span></strong>をクリックします。 <strong><span class="label">環境の展開</span></strong> パネルが再表示されます。</li>
+    <li><strong>構成</strong>をクリックします。 仮想ネットワークに関する詳細は、ページに記載されています。</li>
+    <li><strong>完了</strong> をクリックします。 <strong>環境の展開</strong> パネルが再表示されます。</li>
     <li>配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。</li>
     </ol></li>
     </ol></td>
@@ -121,7 +121,7 @@ Azure に Retail Essentials デモ環境を配置するには、以下の手順�
     </tbody>
     </table>
 
-    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、[Azure での Microsoft Dynamics AX 配置の計画](plan-2012-r3-deployment-azure.md)を参照してください。
+    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、 [Azure 上での AX 2012 R3の 配置計画](plan-2012-r3-deployment-azure.md) を参照してください。
     -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 8.  ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。

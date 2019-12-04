@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: e609f26776df20743df05617cfeea4102a120c27
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6bc41d6d17fce5ec212cb65a09afbc4a4180b4c2
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183460"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772349"
 ---
 # <a name="refresh-for-training-purposes"></a>トレーニング用の更新
 
@@ -58,7 +58,7 @@ LCS を通して手動でユーザーに通知するには、以下の手順を�
 
 ### <a name="programmatically-send-a-broadcast-message"></a>プログラムによりブロードキャスト メッセージを送信
 
-次のサンプル コードをコンソール アプリケーションに示されたとおりに使用するか、Microsoft Azure の機能など、オンデマンドで呼び出せる他のサービスと連携するように変更できます。 このサンプル コードが動作するには、[カスタム サービスの認証方法](../data-entities/services-home-page.md)の説明に従ってアプリケーション登録を設定する必要があります。
+次のサンプル コードをコンソール アプリケーションに示されたとおりに使用するか、Microsoft Azure の機能など、オンデマンドで呼び出せる他のサービスと連携するように変更できます。 このサンプル コードが動作するには、 [サービス エンドポイントの概要](../data-entities/services-home-page.md)に記載の説明に従ってアプリケーション登録を設定する必要があります。
 
 ```csharp
 [Serializable]
@@ -115,7 +115,7 @@ public class Program
 
 ソース環境の規模によっては、即座に更新プロセスを開始することをお勧めします。 ソース データベースが大きいほど、ターゲット Azure SQL データベース インスタンスへのコピーに時間がかかります。 コピーの進行中も、対象となる環境はオンラインになります。 コピーが完了した後、ダウンタイムが開始されます。
 
-このプロセスは、LCS 経由で手動で行うことができます。 最新の手順については、[データベースの更新クイックスタート](database-refresh.md)を参照してください。 LCS の将来のリリースでは、RESTful API 経由でこのプロセスがトリガーすることもできるようになります。
+このプロセスは、LCS 経由で手動で行うことができます。 最新の手順については、 [データベースの更新](database-refresh.md) を参照してください。 LCS の将来のリリースでは、RESTful API 経由でこのプロセスがトリガーすることもできるようになります。
 
 ## <a name="reconfigure-environment-specific-settings"></a>環境の固有の設定を変更
 

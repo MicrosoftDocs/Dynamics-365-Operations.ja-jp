@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51d29e1f143a8da7c690e7662ede41a8657a80b2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eaa6d6c3546072974740701205af349d0484b72e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191660"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812021"
 ---
 # <a name="changes-in-x-and-the-x-compiler"></a>X++ と X++ コンパイラの変更
 
@@ -107,9 +107,9 @@ X++ は .NET の世界でファーストクラスの住民になりました。 
 <a name="additional-resources"></a>追加リソース
 --------
 
-[C# で使用する Dynamics AX LINQ プロバイダー](linq-provider-c.md)
+[C# の統合言語クエリ (LINQ) プロバイダー](linq-provider-c.md)
 
-[技術概念ガイド](developer-home-page.md)
+[開発およびカスタマイズのホーム ページ](developer-home-page.md)
 
 
 

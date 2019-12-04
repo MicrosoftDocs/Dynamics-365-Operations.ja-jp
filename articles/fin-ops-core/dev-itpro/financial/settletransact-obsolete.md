@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: markskun
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: AX 10.0.4
-ms.openlocfilehash: 1368d58d3d0dcaeefe4531ce40a49c499d5eeac9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 95b44e65659045e5db28da1c67a660e2357249c0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183298"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812102"
 ---
 # <a name="settle-transactions-by-using-custtranssettletransaction"></a>CustTrans::settleTransaction を使用したトランザクションの決済
 
@@ -134,6 +134,6 @@ CustTrans::settleTransaction(
 
 ### <a name="testing"></a>テスト
 
-この機能はフライトを使用します。 このテストを行うには、非稼働環境にてフライトを有効にする必要があります。 非稼動環境でフライトをオンにする方法については、 [データ管理でフライトされる機能とフライトされた機能の有効化](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).を参照してください。
+この機能はフライトを使用します。 このテストを行うには、非稼働環境にてフライトを有効にする必要があります。 非稼動環境でフライトをオンにする方法については、[データ管理の概要](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).を参照してください。
 
 フライトの名称は **EnableCustTransSettleTransaction**です。

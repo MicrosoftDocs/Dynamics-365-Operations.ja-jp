@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 96bb376b4117b584a2f8c55f65f0c74f1b322b7f
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 023aa314da09a94c76d6e0f2bbb72d998d8eea71
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833151"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812328"
 ---
 # <a name="deploy-payment-connectors"></a>支払コネクタの配置
 
@@ -34,7 +34,7 @@ ms.locfileid: "1833151"
 
 このトピックでガイドretail ITプロフェッショナルまたは支払コネクタを適切なコンポーネントに展開するプロセスを通じて付加価値再販業者 (Var)。このトピックでは、小売 IT プロフェッショナルまたは付加価値再販業者 (VARs) が支払コネクタを適切なコンポーネントに展開するプロセスについて説明します。 支払コネクタが支払プロバイダーまたは支払独立系ソフトウェア ベンダー (ISV) によって実装されてテスト済みであり、また顧客環境での検証とそれに続く実稼働配置の準備ができていると仮定します。
 
-このトピックには、Retail ソフトウェア開発キット (SDK) を使用して支払コネクタをパッケージ化する方法に関する情報は含まれていません。 SDK をダウンロードする方法については、[Retail SDK 概要](retail-sdk/retail-sdk-overview.md)を参照してください。 支払コネクタをパッケージ化する方法のガイドラインについては、ダウンロードした SDK の Retail SDK パッケージ ドキュメントを参照してください。 
+このトピックには、Retail ソフトウェア開発キット (SDK) を使用して支払コネクタをパッケージ化する方法に関する情報は含まれていません。 SDK のダウンロード方法に関する詳細は、 [Retail ソフトウエア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md) を参照してください。 支払コネクタをパッケージ化する方法のガイドラインについては、ダウンロードした SDK の Retail SDK パッケージ ドキュメントを参照してください。 
 
 このトピックには、支払 Web アプリケーション、支払フロントエンド プロセッサ、または支払バックエンド プロセッサの配置方法に関する情報も含まれています。それは、これらのアプリケーションが支払プロバイダーまたは支払 ISV によって管理されているためです。 Microsoft Dynamics AX 7.0 (2016 年 2 月) を使用している場合は、配置可能小売パッケージを作成する前に KB 3183058 を適用する必要があります。
 
@@ -70,7 +70,7 @@ Retail デプロイ可能なパッケージは、LCS デプロイメント サ�
 
 -   **RetailDeployablePackage** – このタイプのパッケージは、以下のコンポーネントに 1 つまたは複数の支払いコネクタを配置します。
 
-    -  Retail サーバー、Commerce Runtime、およびデータベース スクリプト
+    -  Retail サーバー、Commerce runtime、およびデータベース スクリプト
     -   クラウド POS
     -   次のインストールを可能にするセルフ サービス インストーラー:
 
@@ -96,7 +96,7 @@ Retail デプロイ可能なパッケージは、LCS デプロイメント サ�
 
 #### <a name="download-and-run-installers-on-client-computers"></a>クライアント コンピューターでインストーラーをダウンロードして実行
 
-セルフサービス パッケージには、ハードウェア ステーションと Modern POS の両方のインストーラーが含まれています。 配置可能パッケージが環境に適用された後、更新されたハードウェア ステーションと Modern POS インストーラーをダウンロードすることができます。 ハードウェア ステーションおよび Modern POS をダウンロードし、クライアント コンピューターにインストールする方法については、[Retail Modern POS のコンフィギュレーションとインストール](../retail-modern-pos-device-activation.md)を参照してください。
+セルフサービス パッケージには、ハードウェア ステーションと Modern POS の両方のインストーラーが含まれています。 配置可能パッケージが環境に適用された後、更新されたハードウェア ステーションと Modern POS インストーラーをダウンロードすることができます。 ハードウェア ステーションおよび Modern POS をダウンロードし、クライアント コンピューターにインストールする方法については、 [ Retail Modern POS (MPOS) の構成、インストールと有効化](../retail-modern-pos-device-activation.md)を参照してください。
 
 ## <a name="manual-deployment"></a>手動での配置
 このセクションでは、支払コネクタを手動で展開する方法について説明します。 手動による展開を使用して、開発環境でローカルにテストすることができます。 この開発環境は、クラウドホスト型でも、ダウンロード可能な仮想ハード ディスク (VHD) 上でも構いません。
@@ -133,4 +133,4 @@ E コマース サイトは、LCS の管理された環境では配置されて�
 
 [支払コネクタと支払デバイスの実装ガイド](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 
-[Retail SDK 小売パッケージ](retail-sdk/retail-sdk-packaging.md)
+[配置可能な小売パッケージの作成](retail-sdk/retail-sdk-packaging.md)

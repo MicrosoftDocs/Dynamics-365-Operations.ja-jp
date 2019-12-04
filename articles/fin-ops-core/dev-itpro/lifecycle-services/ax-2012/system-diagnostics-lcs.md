@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: murtazac
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 108b723a2e42fb712d27c3f3d90a44cee9106213
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c2e7800321e12b464c57298be860eb515fcbbd82
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183231"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811702"
 ---
 # <a name="system-diagnostics-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のシステム診断
 
@@ -38,7 +38,9 @@ Microsoft Dynamics Lifecycle Services で、システム診断は管理者が 1 
 データは、事前定義されたスケジュールで実行されるジョブを使用して収集されます。 次の図は、システム診断プログラムとローカルにインストールされたコンポーネントがどのようにやり取りするかを示しています。
 システム診断サービス
 
-![システム診断サービス (Lifecycle Services)](./media/systemdiagnosticservicelifecycleservices.png) システム診断では、Microsoft Dynamics AX の次のバージョンがサポートされています。
+![システム診断サービス (Lifecycle Services)](./media/systemdiagnosticservicelifecycleservices.png) 
+
+システム診断では、Microsoft Dynamics AX の次のバージョンがサポートされています。
 -   Microsoft Dynamics AX 2012 R2
 -   Microsoft Dynamics AX 2012 Feature Pack
 -   Microsoft Dynamics AX 2012
@@ -52,10 +54,7 @@ Microsoft Dynamics Lifecycle Services で、システム診断は管理者が 1 
 
 ## <a name="getting-started"></a>はじめに
 次のトピックでは、システム診断をインストールして使用する方法について説明します。
--   [システム診断のインストールと実行 (Lifecycle Services)](install-run-system-diagnostics-lcs.md)
--   [システム診断を使用する (Lifecycle Services)](system-diagnostics-lcs.md)
-
-
-
+-   [システム診断のインストールと実行](install-run-system-diagnostics-lcs.md)
+-   [Lifecycle Services (LCS) のシステム診断](system-diagnostics-lcs.md)
 
 

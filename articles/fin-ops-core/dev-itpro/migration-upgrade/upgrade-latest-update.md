@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 93bd6fe625ce4375026c2c516681a3febe7d5d74
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: dbe18bcea718296dfd9f9b846060350ef6cf9baf
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570543"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812008"
 ---
 # <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a>最新の Finance and Operations 更新プログラムへの移行の処理
 
@@ -35,7 +35,7 @@ Finance and Operations の各リリースの内容については、[新機能�
 1 つのバージョンのサービス更新の詳細については、[1 つのバージョンのサービス更新の概要](../lifecycle-services/oneversion-overview.md) を参照してください。
 
 > [!Note]
-> Microsoft Dynamics AX 2012 から Finance and Operations へのアップグレードを検討している方は、[AX2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md) をご覧ください。
+> Microsoft Dynamics AX 2012 から Finance and Operations へのアップグレードを検討している方は、[AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md) をご覧ください。
 
 ## <a name="definitions"></a>定義
 
@@ -51,19 +51,19 @@ Finance and Operations の最新バージョンを導入するには 3 つの基
 *スコープ: 複雑*<br/>
 このパスには拡張機能へのコード リファクタリング、そして DevTest、サンドボックス、そして最終的には実稼働環境でのデータ アップグレードが含まれます。 
 
-[セルフサービス アップグレードの実行](../migration-upgrade/self-service-upgrade.md).
+[最新バージョンへのセルフサービス アップグレード](../migration-upgrade/self-service-upgrade.md)
 
 ### <a name="rebuild-and-update"></a>再構築と更新
 *適用可能な開始バージョン: Microsoft Dynamics 365 for Finance and Operations 8.0*<br/>
 *スコープ: 中程度*<br/>
 このパスは Microsoft X++ 修正プログラムを削除し、マージされた更新プログラム パッケージを作成します。
 
-[再構築と更新](../migration-upgrade/appupdate-80-81.md)。
+[バージョン 8.0 から 10.0.X への環境の更新](../migration-upgrade/appupdate-80-81.md)
 
 ### <a name="automatic-update"></a>自動更新
 *適用可能な開始バージョン: Finance and Operations 8.1.0+*<br/>
 *スコープ: 簡易*<br/>
 このパスはプロジェクトを継続的に更新するように構成します。
 
-[サービスの更新のコンフィギュレーション](../lifecycle-services/configure-service-updates.md)。
+[Lifecycle Services (LCS) によるサービスの更新の構成](../lifecycle-services/configure-service-updates.md)
 

@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Talent January 2019 update
-ms.openlocfilehash: cb88b5099b969fc3b714a6d9ae58afc9f80919b9
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: a8cdf02aa5d976d504a727932297be1a36e5df37
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010534"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832686"
 ---
 # <a name="recurring-data-export-using-azure-logic-apps"></a>Azure Logic アプリを使用した定期的なデータ エクスポート
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 このチュートリアルでは Microsoft Dynamics 365 Talent: Core HR から定期的なスケジュールでデータをエクスポートする Microsoft Azure ロジック アプリを作成する方法を説明します。 このチュートリアルでは Core HR の DMF パッケージ REST アプリケーション プログラミング インターフェイス (API) を利用して、データをエクスポートします。 データがエクスポートされた後、ロジック アプリはエクスポートされたデータ パッケージを Microsoft OneDrive for Business のフォルダーに保存します。
 
@@ -47,7 +47,7 @@ Microsoft Dynamics 365 統合のひとつの典型的なビジネス シナリ�
         - [Azure AD の HTTP](https://docs.microsoft.com/connectors/webcontents/) コネクタ
         - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) コネクタ
 
-- **[DMF パッケージ REST API](../dev-itpro/data-entities/data-management-api.md)** – エクスポートをトリガーし、その進捗を監視するために使用されるテクノロジ。
+- **[DMF パッケージ REST API](../dev-itpro/data-entities/data-management-api.md)**  – エクスポートをトリガーし、その進捗を監視するために使用されるテクノロジ。
 - **[OneDrive for Business](https://onedrive.live.com/about/business/)** – エクスポートされた作業者の宛先。
 
 ## <a name="prerequisites"></a>必要条件
@@ -87,7 +87,7 @@ Core HR で、作業者をエクスポートするデータ エクスポート �
 
     ![定期ダイアログ ボックス](media/integration-logic-app-recurrence-step.png)
 
-4. [ExportToPackage](../dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API を呼び出して、データ パッケージのエクスポートをスケジュールします。
+4. [ExportToPackage DMF](../dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API を呼び出して、データ パッケージのエクスポートをスケジュールします。
 
     1. Azure AD コネクタで HTTP から **HTTP 要求を呼び出す** アクションを使用します。
 
@@ -95,12 +95,12 @@ Core HR で、作業者をエクスポートするデータ エクスポート �
         - **Azure AD リソース URI:** `http://hr.talent.dynamics.com`
 
         > [!NOTE]
-        > **ExportToPackage** のような DMF パッケージ REST API を構成するすべての API を公開するコネクタを、Core HR サービスはまだ提供していません。 代わりに、Azure AD コネクタで HTTP を経由して、未加工の HTTPS 要求を使用して API を呼び出す必要があります。 このコネクターは Talent に対する認証および承認に Azure Active Directory (Azure AD) を使用します。
+        > **ExportToPackage** などの DMF パッケージ を構成するすべての API を公開するコネクタを、Core HR サービスはまだ提供していません。 代わりに、Azure AD コネクタで HTTP を経由して、未加工の HTTPS 要求を使用して API を呼び出す必要があります。 このコネクターは Talent に対する認証および承認に Azure Active Directory (Azure AD) を使用します。
 
         ![Azure AD コネクタの HTTP](media/integration-logic-app-http-aad-connector-step.png)
 
     2. Azure AD コネクタの HTTP 経由で Talent 環境にサインインします。
-    3. HTTP **POST** 要求をセットアップして **ExportToPackage** DMF REST API を呼び出します。
+    3. HTTP **POST** 要求をセットアップして **ExportToPackage DMF** REST API を呼び出します。
 
         - **メソッド:** POST
         - **要求のUrl:** https://\<ホスト名\>/名前空間/\<名前空間\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
@@ -135,7 +135,7 @@ Core HR で、作業者をエクスポートするデータ エクスポート �
         > [!NOTE]
         > エクスポートが完了するまで最大 75 秒 (15 イテレーション × 5 秒) 待つには、制限カウントを **15** に設定します。 さらにエクスポートに時間がかかる場合は、必要に応じて制限カウントを調整してください。        
 
-    3. **HTTP 要求の呼び出し** アクションを追加して [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API を呼び出し、 **ExecutionStatus** 変数を **GetExecutionSummaryStatus** 応答の結果に設定します。
+    3. **IHTTP 要求の呼び出し**  アクションを追加して [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF  REST API を呼び出し、**ExecutionStatus** 変数を **GetExecutionSummaryStatus** 応答の結果に設定します。
 
         > このサンプルはエラー チェックを実行しません。 **GetExecutionSummaryStatus** API は成功しなかった端末状態 (つまり、**"成功"** 以外の状態) を返す可能性があります。 詳細については [API のドキュメント](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) を参照してください。
 
@@ -155,7 +155,7 @@ Core HR で、作業者をエクスポートするデータ エクスポート �
 
 7. エクスポートしたパッケージのダウンロード URL を取得します。
 
-    - **HTTP 要求の呼び出し** アクションを追加して [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API を呼び出します。
+    - **HTTP 要求の呼び出し アクション**を追加して  [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST AP を呼び出します。
 
         - **メソッド:** POST
         - **要求のUrl:** https://\<ホスト名\>/名前空間/\<名前空間\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: b4ecdea954ec1fc09679b9da9f9b699da42b524e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 959edf1bf4dec70b335d012758c205e6a05a28f9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191740"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812519"
 ---
 # <a name="subscriptions-lcs-projects-and-azure-active-directory-tenants-faq"></a>サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
-顧客が Microsoft ボリューム ライセンス契約または Microsoft クラウド ソリューション プロバイダー (CSP) 契約を通じて加入すると、通常、Microsoft Azure Active Directory (Azure AD) テナント、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクト、および任意の数のサンドボックス環境とがあります。それらは顧客が選択した 1 つのデータ センターおよび 1 つの実稼働環境に展開されています。 これらのコア概念の詳細については、[アーキテクチャの概要](../imp-lifecycle/architecture-overview.md) を参照してください。 この設定は、ほとんどのプロジェクトで適切に動作しますが、さらに高度なシナリオが必要な場合もあります。または、導入ライフサイクル中の変更に対応する必要もあります。
+顧客が Microsoft ボリューム ライセンス契約または Microsoft クラウド ソリューション プロバイダー (CSP) 契約を通じて加入すると、通常、Microsoft Azure Active Directory (Azure AD) テナント、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクト、および任意の数のサンドボックス環境とがあります。それらは顧客が選択した 1 つのデータ センターおよび 1 つの実稼働環境に展開されています。 これらのコア概念の詳細については、[Finance and operations アプリケーション アーキテクチャ](../imp-lifecycle/architecture-overview.md)を参照してください。 この設定は、ほとんどのプロジェクトで適切に動作しますが、さらに高度なシナリオが必要な場合もあります。または、導入ライフサイクル中の変更に対応する必要もあります。
 
 このトピックでは、定期売買およびライセンス、Azure AD テナントおよび LCS 実装プロジェクトに関するよく寄せられる質問に対する回答を提供します。
 
@@ -34,8 +34,8 @@ ms.locfileid: "2191740"
 
 - [データ センター間で環境を移動する](move-environments-data-center.md)
 - [契約タイプ間でライセンスを移動する](move-licenses-between-agreement-types.md)
-- [LCS 実装プロジェクトを別の Azure Active Directory テナントに移動する](move-lcs-implementation-project-tenant.md)
-- [複数の LCS プロジェクトと実稼働環境を同じ Azure Active Directory テナント上に実装する](implement-multiple-projects-aad-tenant.md)
+- [LCS 実装プロジェクトを別の Azure AD テナントに移動する](move-lcs-implementation-project-tenant.md)
+- [1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境](implement-multiple-projects-aad-tenant.md)
 
 ## <a name="do-i-have-to-move-azure-ad-tenants-when-i-move-from-a-csp-agreement-to-a-volume-licensing-agreement"></a>CSP 契約からボリューム ライセンス契約に移行する際、Azure AD テナントを移行する必要がありますか？
 

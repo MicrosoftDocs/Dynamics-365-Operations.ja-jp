@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2019-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00e5ae5c07c25fbf4cb8e79a4875bf5a2e710e16
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 87c4c91fcb0d0d94f0502184ddd3fb224774ff83
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183396"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771457"
 ---
 # <a name="powerbicom-integration-with-on-premises-environments"></a>オンプレミス環境との PowerBI.com の統合
 
@@ -42,7 +42,7 @@ ms.locfileid: "2183396"
 
 ## <a name="enable-entity-store-on-premises"></a>エンティティストアをオンプレミスにて有効化する
 
-このトピックでは [、オンプレミス環境の設定および配置](../deployment/setup-deploy-on-premises-pu12.md) についてのトピックを補足します。 以下のセクション番号は、該当するトピックのセクション番号に対応しています。
+このトピックでは [、オンプレミス環境の設定および配置 (プラットフォーム プラットフォーム 12 および それ以降)](../deployment/setup-deploy-on-premises-pu12.md) についての補足事項を提供します。 以下のセクション番号は、該当するトピックのセクション番号に対応しています。
 
 ### <a name="3-plan-your-users-and-service-accountsdeploymentsetup-deploy-on-premises-pu12mdplansvcacct"></a>[3. ユーザーとサービスのアカウントを準備する](../deployment/setup-deploy-on-premises-pu12.md#plansvcacct)
 

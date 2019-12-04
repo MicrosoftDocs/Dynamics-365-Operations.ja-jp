@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: b948d99f4b6a106bf5147afd14872eecb3679242
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 69bbbe96c37d1377ed3619cdb5614f5ea8a742a9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183162"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812013"
 ---
 # <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 
@@ -52,7 +52,7 @@ ms.locfileid: "2183162"
 1.  Visual Studio を起動し、アプリケーション スイートで新しいプロジェクトを作成します。
 
     > [!NOTE]
-    > モデルを作成し、カスタマイズされた集計測定をそのモデルに含めることができます。 詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md) を参照してください。
+    > モデルを作成し、カスタマイズされた集計測定をそのモデルに含めることができます。 詳細については、 [拡張機能およびオーバーレイによるカスタマイズ](../extensibility/customization-overlayering-extensions.md) を参照してください。
 
 2.  アプリケーション エクスプローラを開きます。 **分析** &gt; **分析視点** &gt; **集計の測定**の順に移動します。 現在のバージョンに同梱されている測定だけでなく、Dynamics AX 2012 R3 からアップグレードされた集計の測定のセットが表示されます。
 3.  **SalesCube** を選択します。 右クリックし、**プロジェクトで複製** を選択します。
@@ -108,26 +108,26 @@ ms.locfileid: "2183162"
 1.  **SalesCubeV2\_CustomerInvoices** エンティティの横にある省略記号 (...) アイコンを選択します。 右クリックし、**新しい列** を選択します。
 2.  **フォーミュラ エディタ**ウィンドウに次の式を入力します。
 
-```
-FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_CustomerInvoices[DATAAREAID], "-"), SalesCubeV2_CustomerInvoices[ORDERACCOUNT])
-```
+    ```
+    FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_CustomerInvoices[DATAAREAID], "-"), SalesCubeV2_CustomerInvoices[ORDERACCOUNT])
+    ```
 
-> [!NOTE]
-> フィールド名または関数の最初の数文字を入力すると、エディターに候補フィールドの一覧が表示されます。 これは、先行入力機能と呼ばれます。 この式をコピーして貼り付けるか、タイプ先行機能を使用することができます。
+    > [!NOTE]
+    > フィールド名または関数の最初の数文字を入力すると、エディターに候補フィールドの一覧が表示されます。 これは、先行入力機能と呼ばれます。 この式をコピーして貼り付けるか、タイプ先行機能を使用することができます。
 
-1.  完了すると、式は次のようになるはずです。
+3.  完了すると、式は次のようになるはずです。
 
-[![Power BI フォーミュラ](./media/powerbiformula.png)](./media/powerbiformula.png)
+    [![Power BI フォーミュラ](./media/powerbiformula.png)](./media/powerbiformula.png)
 
-1.  新しいフィールド **FKCustomer** が **SalesCubeV2\_CustomerInvoices** テーブルのフィールドの一覧に表示されていることに注意します。 このフィールドは 2 つのテーブルを関連付けるために使用されるので、フィールドを右クリックして**非表示**オプションを選択するとエンド ユーザーから非表示にすることができます。
-2.  次に、**SalesCubeV2\_Customer** テーブルに類似したフィールドを作成します。 **SalesCubeV2\_Customer** エンティティの横にある省略記号 (...) アイコンを選択します。 右クリックし、**新しい列** を選択します。
-3.  **フォーミュラ エディタ**ウィンドウに次の式を入力します。
+4.  新しいフィールド **FKCustomer** が **SalesCubeV2\_CustomerInvoices** テーブルのフィールドの一覧に表示されていることに注意します。 このフィールドは 2 つのテーブルを関連付けるために使用されるので、フィールドを右クリックして**非表示**オプションを選択するとエンド ユーザーから非表示にすることができます。
+5.  次に、**SalesCubeV2\_Customer** テーブルに類似したフィールドを作成します。 **SalesCubeV2\_Customer** エンティティの横にある省略記号 (...) アイコンを選択します。 右クリックし、**新しい列** を選択します。
+6.  **フォーミュラ エディタ**ウィンドウに次の式を入力します。
 
-```
-FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), SalesCubeV2_Customer[CUSTOMER])
-```
+    ```
+    FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), SalesCubeV2_Customer[CUSTOMER])
+    ```
 
-1.  フィールド **FKCustomer** が **SalesCubeV2\_Customer** テーブルのフィールドの一覧に表示されていることに注意します。 このフィールドは 2 つのテーブルの関連付けに使用されるため、フィールドを右クリックして**非表示**オプションを選択するとエンド ユーザーから非表示にすることができます。
+7.  フィールド **FKCustomer** が **SalesCubeV2\_Customer** テーブルのフィールドの一覧に表示されていることに注意します。 このフィールドは 2 つのテーブルの関連付けに使用されるため、フィールドを右クリックして**非表示**オプションを選択するとエンド ユーザーから非表示にすることができます。
 
 ### <a name="relate-invoices-and-customers"></a>請求書および顧客を関連付ける
 
@@ -145,12 +145,12 @@ FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), Sal
 1.  顧客グループによる売上を示すレポートを作成するには、**SalesCubeV2\_CustomerIncoices** テーブルから **CustomerInvoiceAmountAccountingCurrency** フィールドをドラッグして、Power BI デスクトップ キャンバスにドロップします。 次に、**SalesCubeV2\_Customer** テーブルの **CustomerGroupName** フィールドを同じグリッドにドラッグします。
 2.  グラフの種類をドーナツ グラフに変更します。 次のようなレポートが表示されます。
 
-[![Power BI ドーナツ グラフ](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)
+    [![Power BI ドーナツ グラフ](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)
 
-1.  Power BI デスクトップを使用して、追加のビジュアルを作成することができます。 保存するとき、ファイルに **PBIX** 拡張子が付いていることがわかります。
-2.  レポートをデスクトップに保存します。
-3.  この時点でレポートは (環境のデータで) 完全に機能しており、Power BI デスクトップを引き続き使用するか、このレポートを PowerBI.com にアップロードしてデータの検索を続行できます。
-4.  次に、LCS を使用してこのレポートを実稼働環境に移行し、生産データとともにこのレポートを表示して、他のユーザーと共有できるようにします。
+3.  Power BI デスクトップを使用して、追加のビジュアルを作成することができます。 保存するとき、ファイルに **PBIX** 拡張子が付いていることがわかります。
+4.  レポートをデスクトップに保存します。
+5.  この時点でレポートは (環境のデータで) 完全に機能しており、Power BI デスクトップを引き続き使用するか、このレポートを PowerBI.com にアップロードしてデータの検索を続行できます。
+6.  次に、LCS を使用してこのレポートを実稼働環境に移行し、生産データとともにこのレポートを表示して、他のユーザーと共有できるようにします。
 
 ## <a name="publish-the-report-and-the-model"></a>レポートおよびモデルを公開
 レポートとモデルの発行には、Lifecycle Services へのレポートのアップロード、集計単位の実稼動環境への移行、適切な LCS ライブラリをポイントするためのクライアントの構成、実稼働環境でのレポートの発行が必要です。
@@ -207,7 +207,7 @@ Microsoft Dynamics Lifecycle Services (LCS) は、開発者から実稼働環境
 <a name="additional-resources"></a>追加リソース
 --------
 
-[集計データのモデリングと使用](../analytics/model-aggregate-data.md)
+[集計データのモデリング](../analytics/model-aggregate-data.md)
 
 
 

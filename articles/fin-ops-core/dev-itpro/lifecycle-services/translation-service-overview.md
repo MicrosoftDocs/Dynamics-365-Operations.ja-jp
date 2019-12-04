@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01ac70b35e415b4fdd5fff6bbbdb5b46ee877327
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 785739c2d7b7794dc4dc8506251d40a81684c3e2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248794"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812052"
 ---
 # <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service 概要
 
@@ -37,7 +37,7 @@ DTS は、翻訳出力の品質を最大限に高めるために [Microsoft 一�
 ![DTS のしくみ](./media/dts-overview.png "DTS のしくみ")
 
 ## <a name="recycling-existing-translations"></a>既存の翻訳をリサイクル
-既存の言語資産は、ローカライズ交換ファイル形式 (XLIFF) を使用する翻訳メモリ (TM) ファイルを含む zip ファイルに資産がアップロードされた場合にのみ再利用できます。 詳細については、[XLIFF 翻訳メモリ (TM)](./use-translation-service-tm.md) を参照してください。
+既存の言語資産は、ローカライズ交換ファイル形式 (XLIFF) を使用する翻訳メモリ (TM) ファイルを含む zip ファイルに資産がアップロードされた場合にのみ再利用できます。 詳細については、[翻訳メモリ ファイル](./use-translation-service-tm.md) を参照してください。
 
 ## <a name="custom-trained-mt-system"></a>カスタム トレーニングされた MT システム
 DTSは Microsoft Translator サービスとカスタム トランスレーターを使用して、Microsoft Dynamics 製品向けに Microsoft Translator の高度なニューラル機械翻訳をカスタマイズします。 カスタム トレーニングを受けた MT システムは、パートナーが 10,000 を超える翻訳単位 (TU) を含む XLIFF TM ファイルをアップロードしない限り、GA 言語でのみ使用できます。 (TU には、通常、ソース文字列、翻訳、状態、状態識別子、およびメモが含まれています。) そのような場合、DTS は、XLIFF TM ファイルが提出される翻訳要求に固有のカスタムトレーニング MT システムを作成します。
@@ -102,5 +102,5 @@ DTS には 2 つのプレビュー機能があります。
 | TU | 単位の変換です。 TU には通常、ソース文字列、翻訳、状態、状態識別子、およびメモが含まれています。 |
 
 
-DTS の使用方法の詳細については、[Microsoft Dynamics 365 Translation Service - ユーザー インターフェイス ファイルの翻訳](use-translation-service.md) および [Microsoft Dynamics 365 Translation Service - ドキュメント ファイルの変換](use-translation-service-ua.md) を参照してください。
+DTSの使用方法の詳細については、[ユーザー インタ フェース ファイルの翻訳](use-translation-service.md)と[ドキュメント ファイルの翻訳](use-translation-service-ua.md)を参照してください。
 

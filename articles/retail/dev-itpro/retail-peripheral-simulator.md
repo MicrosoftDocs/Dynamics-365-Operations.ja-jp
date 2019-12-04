@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3d4c4a646e3cc8755658c899546674d283c7aaff
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 67eef55a254d31d9fbf7ee454a5b3206db7ccf5d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2018052"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811181"
 ---
 # <a name="peripheral-simulator-for-retail"></a>小売の周辺機器シミュレーター
 
@@ -251,7 +251,7 @@ POS シミュレーターは、次のデバイスをサポートしています�
 - 支払ターミナル
 
     > [!NOTE]
-    > 支払ターミナルには、支払コネクタが必要です。 詳細については、[支払ターミナルと支払の統合](end-to-end-payment-extension.md)を参照してください。
+    > 支払ターミナルには、支払コネクタが必要です。 詳細については、[支払ターミナルのためのエンド・ツー・エンドの支払統合を作成する](end-to-end-payment-extension.md) を参照してください。
 
 サポートされているデバイスの一覧に**設定**タブがあります。**設定**タブを使用して、POS シミュレーターとテストされているデバイスとの通信方法を指定できます。 **ランタイム**を選択すると、POS シミュレーターがデバイスと通信するのに使用する方法は、組み込みハードウェア局を持つ MPOS が通信する方法と類似するようになります。 **Win32** が選択されている場合、POS シミュレーターはデバイスと直接通信します。 この通信方法は、スタンドアロン ハードウェア ステーションが通信する方法に似ています。
 
@@ -533,4 +533,4 @@ Retail との互換性を一覧表示できるようにデバイスを送信す�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[小売周辺機器の概要](../retail-peripherals-overview.md)
+[小売り用周辺機器](../retail-peripherals-overview.md)

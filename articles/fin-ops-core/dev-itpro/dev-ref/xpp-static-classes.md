@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf9a54b7a29748d488501b588e392213b5a24685
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 332af4c36cd3780252945a66cba03c1af9ea77d2
+ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550073"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "2778681"
 ---
 # <a name="x-static-classes"></a>X++ 静的クラス
 
@@ -36,7 +36,9 @@ ms.locfileid: "2550073"
 
 ### <a name="static-methods"></a>静的メソッド
 
-このセクションでは、違法コピーを防止するためにソフトウェア キー タイプを使用するシナリオについて説明します。 ソフトウェア キーの各インスタンスには、固有の値を持つことが可能です。 ただし、すべてのソフトウェア キーはソフトウェア キー設計のルールに準拠する必要があるため、ソフトウェア キーへの適合をテストするロジックはすべてのソフトウェア キーに対して同じです。 したがって、適合性検証ロジックを含むメソッドは静的でなければなりません。 **静的**キーワード使用して宣言されるメソッドの例を次に示します。
+このセクションでは、違法コピーを防止するためにソフトウェア キー タイプを使用するシナリオについて説明します。 ソフトウェア キーの各インスタンスには、固有の値を持つことが可能です。 ただし、すべてのソフトウェア キーはソフトウェア キー設計のルールに準拠する必要があるため、ソフトウェア キーへの適合をテストするロジックはすべてのソフトウェア キーに対して同じです。 したがって、適合性検証ロジックを含むメソッドは静的でなければなりません。 
+
+**静的**キーワード使用して宣言されるメソッドの例を次に示します。
 
 ```X++
 public class SoftwareKey

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 5eacf010dbba525eff3412ded91144738ebeb79c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 683ce7435f97dc258eb048c4ca2d1388af738d6d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183108"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811953"
 ---
 # <a name="architecture-and-design-considerations-for-the-mobile-platform"></a>モバイル プラットフォームのアーキテクチャと設計の考慮事項
 
@@ -53,7 +53,7 @@ ms.locfileid: "2183108"
 ## <a name="using-the-mobile-app-designer"></a>モバイル アプリ デザイナーの使用
 モバイル アプリ デザイナーでは、モバイル アプリに表示されるフォームから特定のデータ フィールドを選択できます。 
 
-**モバイル ワークスペースは、デザイナーを通じて、X++ 属性 API、またはその両方の組み合わせを使用して作成することができます。モバイルワークスペースの構築に X++ API を使用する方法の詳細については**、[ワークスペース クラスの概要](scenarios/mobile-workspace-configuration.md) を参照してください。
+**モバイル ワークスペースは、デザイナーを通じて、X++ 属性 API、またはその両方の組み合わせを使用して作成することができます。モバイルワークスペースの構築に X++ API を使用する方法の詳細については、 [SysAppWorkspace クラスを使用したワークスペースのコンフィギュレーション](scenarios/mobile-workspace-configuration.md) を参照してください。**
 
 ![モバイル アプリ デザイナー](media/mobileappdesigner.png)
 

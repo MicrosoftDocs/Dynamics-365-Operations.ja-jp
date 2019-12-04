@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c98cd0fd87ddef033bf0c138c9100eb400aead8a
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: a9cae97802eace368efc9cdaf62695b19f2c6561
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553204"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812494"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-73"></a>Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能および変更された機能
 
@@ -48,7 +48,7 @@ ms.locfileid: "2553204"
 
 Dynamics 365 for Project Service Automation から Dynamics 365 for Finance and Operations への統合の最初のフェーズは、プライベート プレビューで利用できるようになりました。
 
-Project Service Automation から Finance and Operations の統合ソリューションは、データの統合を使用して、Common Data Service (CDS) 経由で Microsoft Dynamics 365 for Finance and Operations および Dynamics 365 for Project Service Automation インスタンス間でデータを同期します。 データ統合 機能で利用できる統合テンプレートは、Project Service Automation から Finance and Operations へのプロジェクト、プロジェクト契約、プロジェクト契約ラインの流れを有効にします。 Common Data Service データ統合の詳細については、PowerApps ドキュメントの [アプリ用 Common Data Service へのデータ統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) を参照してください。
+Project Service Automation から Finance and Operations の統合ソリューションは、データの統合を使用して、Common Data Service (CDS) 経由で Microsoft Dynamics 365 for Finance and Operations および Dynamics 365 for Project Service Automation インスタンス間でデータを同期します。 データ統合 機能で利用できる統合テンプレートは、Project Service Automation から Finance and Operations へのプロジェクト、プロジェクト契約、プロジェクト契約ラインの流れを有効にします。 Common Data Service データ統合の詳細については、Power Apps ドキュメントの [アプリ用 Common Data Service へのデータ統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) を参照してください。
 
 このソリューションは、次の領域で直接同期を提供します。
 
@@ -275,7 +275,7 @@ Power BI を使用した財務報告についての追加情報を表示する�
 
 - [税エンジンの概要](../../../finance/general-ledger/tax-engine.md)
 - [税エンジンの統合](../../../finance/general-ledger/tax-engine-integration.md)
-- [税エンジンの拡張](../../../finance/general-ledger/extend-tax-engine-configurations.md)
+- [税エンジン コンフィギュレーションの拡張](../../../finance/general-ledger/extend-tax-engine-configurations.md)
 
 ## <a name="vendor-collaboration"></a>仕入先コラボレーション
 

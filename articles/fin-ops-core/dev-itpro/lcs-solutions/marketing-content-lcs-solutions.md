@@ -15,12 +15,12 @@ ms.custom: 196873
 ms.assetid: 80b0cc44-ffbe-400e-b902-60518a930b0d
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 2898e91517acb4595eb54d541fd490b1a9c64ebd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 01ce6c9e8aea06c9e99e039a85738d31403efe09
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183276"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811704"
 ---
 # <a name="stage-and-publish-solutions-for-finance-and-operations-apps"></a>Finance and Operations アプリのソリューションのステージおよび発行 
 
@@ -45,4 +45,4 @@ Cloud Partner Portal から新しい提案を作成して公開する手順に�
 <a name="additional-resources"></a>追加リソース
 --------
 
-[AppSource のアプリを公開](lcs-solutions-app-source.md)
+[AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)

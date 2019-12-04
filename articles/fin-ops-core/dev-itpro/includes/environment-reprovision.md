@@ -8,7 +8,7 @@
 4. 先ほどアップロードした **環境再プロビジョニング** ツールを選択し、 **適用** を選択してパッケージを適用します。
 5. パッケージの配置の進捗を監視します。
 
-配置可能パッケージを適用する方法の詳細については、 [配置可能パッケージの適用](../deployment/create-apply-deployable-package.md)を参照してください。 配置可能パッケージを手動で適用する方法の詳細については、 [配置可能パッケージのインストール](../deployment/install-deployable-package.md)を参照してください。
+配置可能なパッケージの適用方法についての詳細は、 [配置可能なパッケージを作成する](../deployment/create-apply-deployable-package.md)を参照してください。 配置可能パッケージを手動で適用する方法の詳細については、 [配置可能 な パッケージ を コマンド ライン から インストール する](../deployment/install-deployable-package.md)を参照してください。
 
 > [!IMPORTANT]
 > いくつかの環境固有のレコードは、データベースと一緒にソース環境からターゲット環境に移動できません。 次のレコードはターゲット環境に移動されません:
@@ -19,7 +19,7 @@
 
 データベース更新の一部として (チャネル データベース フォームで) スケール ユニット チャネル データベース レコードは、環境固有のコンフィギュレーションを表すので、環境を越えて移動できません。
 
-**Retail Cloud Scale Units** の場合は、LCS でスケール ユニットの再展開を発行して、チャネル データベース レコードを再生成できます。 詳細については [データベースの更新](../database/database-refresh.md) と [Retail Cloud Scale Unit の初期化](../deployment/Initialize-Retail-Channels.md) を参照してください。
+**Retail Cloud Scale Units** の場合は、LCS でスケール ユニットの再展開を発行して、チャネル データベース レコードを再生成できます。 詳細については [データベースの更新](../database/database-refresh.md) と [Retail Cloud Scale Unitの初期化](../deployment/Initialize-Retail-Channels.md) を参照してください。
 
 ### <a name="database-refresh-and-retail-self-service-installers"></a>データベース更新と小売セルフサービスのインストーラー
 

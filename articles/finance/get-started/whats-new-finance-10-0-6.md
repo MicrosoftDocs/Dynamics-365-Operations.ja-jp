@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 5b3ac1fb05688709fe44940a403d163e3b35c650
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: eed85ba6d1858ddd0c583f7008cd7e3938866516
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572413"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771693"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-1006-november-2019"></a>Dynamics 365 Finance 10.0.6 (2019 年 11 月) の新機能および変更された機能
 
@@ -91,7 +91,7 @@ ms.locfileid: "2572413"
 10.0.6 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7) を参照してください。
 
 ### <a name="platform-update-30"></a>プラットフォーム update 30
-Dynamics 365 Finance 10.0.6 には、プラットフォーム更新プログラム 30 が含まれています。 プラットフォーム更新プロフラム 30 についての詳細は、[プラットフォーム更新プログラム 30 の新機能と変更](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-30.md) をご覧ください。
+Dynamics 365 Finance 10.0.6 には、プラットフォーム更新プログラム 30 が含まれています。 プラットフォーム更新プロフラム 30 についての詳細は、 [Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-30.md) を参照してください。
 
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
@@ -99,7 +99,7 @@ Dynamics 365 Finance 10.0.6 には、プラットフォーム更新プログラ�
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックでは、Dynamics 365 forfin-ops-core/ Finance and Operations で削除または推奨されない機能について説明します。
+[Finance and Operations の削除済みまたは推奨されない機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックでは、Dynamics 365 forfin-ops-core/ Finance and Operations で削除または推奨されない機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。

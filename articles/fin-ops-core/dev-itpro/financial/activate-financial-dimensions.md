@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 479bcec6d3b1c97ee8aced959a139814013e856a
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 1beb80774da506e51840c65c7a44ce2644b2d2c5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537038"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812018"
 ---
 # <a name="financial-dimension-activation"></a>財務分析コードの有効化
 
@@ -42,9 +42,9 @@ ms.locfileid: "2537038"
 
 **財務分析コードを再構築** オプションは、初期有効化プロセス中予期しない結果が発生した場合にのみ実行されるプロセスであるため、既定で **いいえ** に設定されます。 これにより、すべての財務分析コードと値がドロップされ、テーブルに再追加されます。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[財務分析コード を設定する (タスク ガイド)](../../../finance/general-ledger/tasks/define-financial-dimensions.md)
+[財務分析コードの定義](../../../finance/general-ledger/tasks/define-financial-dimensions.md)
 
 [メンテナンス モード](../sysadmin/maintenance-mode.md)
 

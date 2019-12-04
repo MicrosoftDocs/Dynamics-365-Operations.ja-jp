@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23f218128d26a111e96ff0771328a0445b5e57cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a030f0fead9c1ad5088d707083aae65208f4b35e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183273"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812073"
 ---
 # <a name="regulatory-certification-information-in-feature-titles"></a>機能タイトルの規制認証情報
 
@@ -44,12 +44,14 @@ ms.locfileid: "2183273"
 | フィーチャー タイプ        | REG     | 機能のタイプ                                                                                                           | REG                               |
 | 証明の名前  | テキスト    | 証明書とそのアプリケーションを説明する短いタイトル                                                            | 会計プリンターの証明 |
 
-BPM の業務プロセス ライブラリでは、**APQC レベル 8.0 財務リソースの管理 (10009)** に認証を配置する必要があります。 **例**
+BPM の業務プロセス ライブラリでは、**APQC レベル 8.0 財務リソースの管理 (10009)** に認証を配置する必要があります。 
+
+**例**
 
 -   APQC レベル 8.0 財務リソースの管理 (10009)
     -   PT-REG-会計プリンターの証明
 
-BPM の詳細については、[BPM フローチャート](../lifecycle-services/flowcharts-business-process-modeler.md) を参照してください。
+BPM の詳細については、[ビジネス プロセス モデラー (BPM) のフローチャート](../lifecycle-services/flowcharts-business-process-modeler.md) を参照してください。
 
 
 

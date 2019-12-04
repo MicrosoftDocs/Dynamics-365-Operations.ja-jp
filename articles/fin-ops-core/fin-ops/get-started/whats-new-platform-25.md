@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25
-ms.openlocfilehash: ce293704f419b27281c34654a7b207c09459eb29
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0d44c26bd5e095a790c0e2feffd33782b4b15893
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180497"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811422"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-25-april-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能および変更点
 
@@ -60,20 +60,20 @@ ms.locfileid: "2180497"
 ## <a name="azure-blob-storage-as-an-endpoint-for-business-events-private-preview"></a>ビジネス イベントのエンド ポイントとしての Azure Blob Storage (プライベート プレビュー)
 Azure Blob Storage はビジネス イベントのエンド ポイントとして構成することができます。 これによりサポートされている既存の Azure エンドポイントの種類のセットが追加され、統合シナリオの選択肢が広がります。
 
-ビジネス イベントについての詳細は [ビジネス イベント](../../dev-itpro/business-events/home-page.md) を参照してください。 
+ビジネス イベントについての詳細は [ビジネス イベントの概要](../../dev-itpro/business-events/home-page.md) を参照してください。 
 
 > [!Note]
-> ビジネス イベント機能はプライベート プレビューとして使用できます。 その機能が一般に利用可能になる時期については [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features) を参照してください。 
+> ビジネス イベント機能はプライベート プレビューとして使用できます。 その機能が一般に利用可能になる時期については[リリース計画](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features)を参照してください。 
 
 ## <a name="batch-jobs-single-scheduler"></a>バッチ ジョブの単一スケジューラ
 バッチ フレームワークでは、バッチ スケジューリング機能を最適化するための改善が行われています。 一度に有効になるバッチスケジューラは１つだけであり、これによってバッチテーブルの競合が減少し、スループットが向上する場合があります。 これはプラットフォーム更新プログラム 25 では既定で有効です。
 
 ## <a name="batch-jobs-enhanced-forms"></a>バッチ ジョブ拡張フォーム
-**バッチ ジョブ** フォームは生産性の向上し、ユーザー エクスペリエンスを高めるために拡張されています。 ユーザーは拡張形式とレガシ形式を切り替えることができます。 詳細については [バッチ拡張フォーム](../../dev-itpro/sysadmin/enhanced-forms.md) を参照してください。
-さらに、保存されているビューに対するサポートが追加され、将来のプラットフォーム更新プログラムでリリースされる予定です。 保存されているビューについては [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views) を参照してください。
+**バッチ ジョブ** フォームは生産性の向上し、ユーザー エクスペリエンスを高めるために拡張されています。 ユーザーは拡張形式とレガシ形式を切り替えることができます。 詳細については、[拡張バッチ フォーム](../../dev-itpro/sysadmin/enhanced-forms.md)を参照してください。
+さらに、保存されているビューに対するサポートが追加され、将来のプラットフォーム更新プログラムでリリースされる予定です。 保存されているビューについては [リリース計画](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views)を参照してください。
 
 ## <a name="batch-jobs-alerts-and-notifications"></a>バッチ ジョブの警告および通知
-アクション センターでバッチ ジョブの通知を確認できます。 これらの通知はバッチ イベントについて欠かさず知らせます。 バッチ ジョブが終了したとき、エラーで終了したとき、またはキャンセルされたときに警告ルールを有効化できます。 警告を電子メールで送信するか、アクション センターにポップアップ通知として表示するかどうかを選択できます。 詳細については [警告](../../dev-itpro/sysadmin/alerts.md) を参照してください。
+アクション センターでバッチ ジョブの通知を確認できます。 これらの通知はバッチ イベントについて欠かさず知らせます。 バッチ ジョブが終了したとき、エラーで終了したとき、またはキャンセルされたときに警告ルールを有効化できます。 警告を電子メールで送信するか、アクション センターにポップアップ通知として表示するかどうかを選択できます。 詳細については、[警告の設定](../../dev-itpro/sysadmin/alerts.md) 参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -86,11 +86,11 @@ Azure Blob Storage はビジネス イベントのエンド ポイントとし�
 [2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックでは、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。

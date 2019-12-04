@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ac066fb8c8d492c9342619e18a69f16b7683d19
-ms.sourcegitcommit: 7e953d28ff570ca5e71361ca43aefb10526bc681
+ms.openlocfilehash: c532425ae6b186b9df5923adc17350f85888c4ef
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635294"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769568"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -62,7 +62,7 @@ ms.locfileid: "2635294"
 4. 設定を指定し、**保存** を選択します。
     ![配置設定](media/access-instances-7.jpeg)
 
-顧客には、Microsoft の Azure サブスクリプションでホストされている無料の「開発とテスト」環境が 1 つ提供されます。 「開発およびテスト」には、**開発**と**ビルドおよびテスト**の 2 種類の環境があります。 開発およびカスタマイズ活動については、**開発**環境をコンフィギュレーションします。 **ビルドおよびテスト**標準的な開発活動では環境はサポートされていません。 代わりに、日単位ビルドおよびテストの自動化に使用されます。 詳細については、[ビルドとテストの自動化](../perf-test/continuous-build-test-automation.md) を参照してください。  
+顧客には、Microsoft の Azure サブスクリプションでホストされている無料の「開発とテスト」環境が 1 つ提供されます。 「開発およびテスト」には、**開発**と**ビルドおよびテスト**の 2 種類の環境があります。 開発およびカスタマイズ活動については、**開発**環境をコンフィギュレーションします。 **ビルドおよびテスト**標準的な開発活動では環境はサポートされていません。 代わりに、日単位ビルドおよびテストの自動化に使用されます。 詳細については、[継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md) を参照してください。  
 
 追加の開発とビルド環境は、ユーザー自身の Azure サブスクリプションで購入またはホストすることができます。 独自のサブスクリプションに環境を展開するには、**クラウド ホスト環境** ページに移動します。
 
@@ -213,7 +213,7 @@ Retail もコンフィギュレーションしている場合は、このセク�
 
 ### <a name="base-url-of-the-local-application"></a>ローカル アプリケーションの基本 URL
 
-ユーザーが管理者としてプロビジョニングされた後、ユーザーは次のベース URL に移動してコンピュータ上のインスタンスにアクセスできます: https://usnconeboxax1aos.cloud.onebox.dynamics.com。 バージョン管理を使用しており、複数の開発 VMs を同じ Azure DevOps プロジェクトに接続する予定がある場合は、ローカル VM 名を変更してください。 手順については、[Azure DevOps へのアクセスを有効化するには、ローカルの名前を変更してください](../migration-upgrade/vso-machine-renaming.md) を参照してください。
+ユーザーが管理者としてプロビジョニングされた後、ユーザーは次のベース URL に移動してコンピュータ上のインスタンスにアクセスできます: https://usnconeboxax1aos.cloud.onebox.dynamics.com。 バージョン管理を使用しており、複数の開発 VMs を同じ Azure DevOps プロジェクトに接続する予定がある場合は、ローカル VM 名を変更してください。 手順については、[ローカル開発 (VHD) 環境の名前変更](../migration-upgrade/vso-machine-renaming.md) を参照してください。
 
 #### <a name="retail-configuration"></a>Retail コンフィギュレーション
 
@@ -238,8 +238,8 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 ### <a name="retail-configuration"></a>Retail コンフィギュレーション
 
 Retail ソフトウェア開発キット (SDK) は、C:\RetailSDK にあります。 小売アプリケーションの使用およびカスタマイズ方法の詳細については、次のトピックを参照してください。
--   [Retail SDK の概要](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
--   [Retail POS デバイスのライセンス認証](../../../retail/dev-itpro/retail-device-activation.md)
+-   [Retail ソフトウェア開発キット (SDK) アーキテクチャ](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
+-   [小売販売時点管理 (POS) デバイスのライセンス認証](../../../retail/dev-itpro/retail-device-activation.md)
 
 ## <a name="redeploying-or-restarting-the-runtime-on-the-vm"></a>VM でのランタイムの再配置または再起動
 ローカルのランタイムを再起動して、すべてのパッケージを再配置するには、次の手順を実行します。
