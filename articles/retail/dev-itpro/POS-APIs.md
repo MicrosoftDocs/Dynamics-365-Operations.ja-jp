@@ -3,7 +3,7 @@ title: Retail POS API
 description: このトピックでは、使用可能な POS API の一覧とそれらにアクセスする方法を示します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/24/2019
+ms.date: 11/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,61 +18,61 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 8b0393c78f0c8a350174f51bd0a808c9da0dd112
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4024cc54b17b5fda266e664ea1aa8855bec42eb0
+ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019313"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815801"
 ---
-# <a name="retail-pos-apis"></a><span data-ttu-id="05cfa-103">Retail POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-103">Retail POS APIs</span></span>
+# <a name="retail-pos-apis"></a><span data-ttu-id="2c9ae-103">Retail POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-103">Retail POS APIs</span></span>
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="05cfa-104">Retail POS API を使用すると、簡単に POS アプリに拡張機能または新しい機能を構築することができます。</span><span class="sxs-lookup"><span data-stu-id="05cfa-104">Retail POS APIs help you to easily build extensions or new features to the POS app.</span></span> <span data-ttu-id="05cfa-105">たとえば、製品の詳細の取得、価格の変更、買い物カゴへの品目の追加を行うための新しい機能を追加するために Retail POS アプリケーションを拡張する場合です。</span><span class="sxs-lookup"><span data-stu-id="05cfa-105">For example, if you are extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart.</span></span> <span data-ttu-id="05cfa-106">これを実現する API を使用できます。</span><span class="sxs-lookup"><span data-stu-id="05cfa-106">you can consume APIs that will do the work for you.</span></span> <span data-ttu-id="05cfa-107">これを行うには、作業を実行する API を呼び出す必要があるだけです。</span><span class="sxs-lookup"><span data-stu-id="05cfa-107">To do this, you need to simply call the APIs to do the work.</span></span> <span data-ttu-id="05cfa-108">POS API は、拡張子パターンを合理化し、拡張機能を構築するために継続的なサポートを提供します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-108">The POS API simplifies the extension pattern and provides continuous support to build the extensions.</span></span>
+<span data-ttu-id="2c9ae-104">Retail POS API を使用すると、簡単に POS アプリに拡張機能または新しい機能を構築することができます。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-104">Retail POS APIs help you to easily build extensions or new features to the POS app.</span></span> <span data-ttu-id="2c9ae-105">たとえば、製品の詳細の取得、価格の変更、買い物カゴへの品目の追加を行うための新しい機能を追加するために Retail POS アプリケーションを拡張する場合です。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-105">For example, if you are extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart.</span></span> <span data-ttu-id="2c9ae-106">これを実現する API を使用できます。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-106">you can consume APIs that will do the work for you.</span></span> <span data-ttu-id="2c9ae-107">これを行うには、作業を実行する API を呼び出す必要があるだけです。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-107">To do this, you need to simply call the APIs to do the work.</span></span> <span data-ttu-id="2c9ae-108">POS API は、拡張子パターンを合理化し、拡張機能を構築するために継続的なサポートを提供します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-108">The POS API simplifies the extension pattern and provides continuous support to build the extensions.</span></span>
 
-<span data-ttu-id="05cfa-109">拡張パターンは、要求/応答のパターンに従って Commerce Runtime (CRT)、POS、ハードウェア ステーション (HWS) 間で統合されています。</span><span class="sxs-lookup"><span data-stu-id="05cfa-109">Extension patterns have been unified across commerce runtime (CRT), POS, and Hardware station (HWS) by following the request/response pattern.</span></span> <span data-ttu-id="05cfa-110">すべての POS API は、CRT や HWS のような要求/応答として公開されます。</span><span class="sxs-lookup"><span data-stu-id="05cfa-110">All the POS APIs are exposed as request/response like CRT and HWS.</span></span> <span data-ttu-id="05cfa-111">このトピックは、Dynamics 365 for Finance and Operations アプリケーションまたは Dynamics 365 Retail に適用されます。</span><span class="sxs-lookup"><span data-stu-id="05cfa-111">This topic is applicable for Dynamics 365 for Finance and Operations applications or Dynamics 365 Retail.</span></span> 
+<span data-ttu-id="2c9ae-109">拡張パターンは、要求/応答のパターンに従って Commerce Runtime (CRT)、POS、ハードウェア ステーション (HWS) 間で統合されています。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-109">Extension patterns have been unified across commerce runtime (CRT), POS, and Hardware station (HWS) by following the request/response pattern.</span></span> <span data-ttu-id="2c9ae-110">すべての POS API は、CRT や HWS のような要求/応答として公開されます。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-110">All the POS APIs are exposed as request/response like CRT and HWS.</span></span> <span data-ttu-id="2c9ae-111">このトピックは、Dynamics 365 for Finance and Operations アプリケーションまたは Dynamics 365 Retail に適用されます。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-111">This topic is applicable for Dynamics 365 for Finance and Operations applications or Dynamics 365 Retail.</span></span> 
 
 
-<span data-ttu-id="05cfa-112">POS API は、3 つのさまざまなシナリオに分類されます。</span><span class="sxs-lookup"><span data-stu-id="05cfa-112">POS APIs are categorized into three different scenarios:</span></span>
+<span data-ttu-id="2c9ae-112">POS API は、3 つのさまざまなシナリオに分類されます。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-112">POS APIs are categorized into three different scenarios:</span></span>
 
-- <span data-ttu-id="05cfa-113">**消費** - 拡張機能のパブリック API を使用します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-113">**Consume** – Consume public APIs in your extension.</span></span>
+- <span data-ttu-id="2c9ae-113">**消費** - 拡張機能のパブリック API を使用します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-113">**Consume** – Consume public APIs in your extension.</span></span>
 
-- <span data-ttu-id="05cfa-114">**拡張** - 一部の追加ロジックを実行するパブリック API をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="05cfa-114">**Extend** – Override public APIs to do some additional logic.</span></span>
+- <span data-ttu-id="2c9ae-114">**拡張** - 一部の追加ロジックを実行するパブリック API をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-114">**Extend** – Override public APIs to do some additional logic.</span></span>
 
-- <span data-ttu-id="05cfa-115">**作成** - 公開された POS インターフェイスを使用して新しい API を作成します。それは拡張機能全体で使用できます。</span><span class="sxs-lookup"><span data-stu-id="05cfa-115">**Create** – Create new APIs using the exposed POS interface, which can be used across extensions.</span></span>
+- <span data-ttu-id="2c9ae-115">**作成** - 公開された POS インターフェイスを使用して新しい API を作成します。それは拡張機能全体で使用できます。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-115">**Create** – Create new APIs using the exposed POS interface, which can be used across extensions.</span></span>
 
-<span data-ttu-id="05cfa-116">API の多くは、拡張機能で消費できます。</span><span class="sxs-lookup"><span data-stu-id="05cfa-116">Many APIs can be consumed in extensions.</span></span> <span data-ttu-id="05cfa-117">たとえば、外部の Web サービス コールに基づいて品目の価格を変更する場合は、品目の価格を変更する PriceOverrideOperationRequest を呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="05cfa-117">For example, if you want to change the price of the item based on an external web service call, you can call PriceOverrideOperationRequest to change the price of the item.</span></span> <span data-ttu-id="05cfa-118">消費では、API は買い物カゴ、周辺機器、店舗運営のようなモジュールごとにサブカテゴリに入れられます。</span><span class="sxs-lookup"><span data-stu-id="05cfa-118">Within the consume, the APIs are sub categorized by module like cart, peripherals, store operations, etc.</span></span>
+<span data-ttu-id="2c9ae-116">API の多くは、拡張機能で消費できます。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-116">Many APIs can be consumed in extensions.</span></span> <span data-ttu-id="2c9ae-117">たとえば、外部の Web サービス コールに基づいて品目の価格を変更する場合は、品目の価格を変更する PriceOverrideOperationRequest を呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-117">For example, if you want to change the price of the item based on an external web service call, you can call PriceOverrideOperationRequest to change the price of the item.</span></span> <span data-ttu-id="2c9ae-118">消費では、API は買い物カゴ、周辺機器、店舗運営のようなモジュールごとにサブカテゴリに入れられます。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-118">Within the consume, the APIs are sub categorized by module like cart, peripherals, store operations, etc.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="05cfa-119">すべての API の一覧は、**Pos.Api.d.ts** にあります。これは、Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts) の一部です。</span><span class="sxs-lookup"><span data-stu-id="05cfa-119">A list of the all of the APIs is available in **Pos.Api.d.ts**, which is part of the Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts).</span></span> <span data-ttu-id="05cfa-120">拡張機能は、公開されている要求と、POS.Api.d.ts からの応答のみを使用する必要があり、Pos.Api.d.ts を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="05cfa-120">Extensions must consume only the exposed request and response from the POS.Api.d.ts and no modification is allowed to Pos.Api.d.ts.</span></span> <span data-ttu-id="05cfa-121">拡張機能は、POS API、プロパティ、メソッド、またはハンドラーを、POS Commerce またはセッション オブジェクトから直接使用したり更新したりすることはできません。</span><span class="sxs-lookup"><span data-stu-id="05cfa-121">Extensions should not consume or update any POS APIs, properties, methods, or handlers directly from POS commerce or sessions objects.</span></span> 
+> <span data-ttu-id="2c9ae-119">すべての API の一覧は、**Pos.Api.d.ts** にあります。これは、Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts) の一部です。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-119">A list of the all of the APIs is available in **Pos.Api.d.ts**, which is part of the Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts).</span></span> <span data-ttu-id="2c9ae-120">拡張機能は、公開されている要求と、POS.Api.d.ts からの応答のみを使用する必要があり、Pos.Api.d.ts を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-120">Extensions must consume only the exposed request and response from the POS.Api.d.ts and no modification is allowed to Pos.Api.d.ts.</span></span> <span data-ttu-id="2c9ae-121">拡張機能は、POS API、プロパティ、メソッド、またはハンドラーを、POS Commerce またはセッション オブジェクトから直接使用したり更新したりすることはできません。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-121">Extensions should not consume or update any POS APIs, properties, methods, or handlers directly from POS commerce or sessions objects.</span></span> 
 
-## <a name="how-to-consume-apis-in-your-extension"></a><span data-ttu-id="05cfa-122">拡張機能で API を使用する方法</span><span class="sxs-lookup"><span data-stu-id="05cfa-122">How to consume APIs in your extension</span></span>
+## <a name="how-to-consume-apis-in-your-extension"></a><span data-ttu-id="2c9ae-122">拡張機能で API を使用する方法</span><span class="sxs-lookup"><span data-stu-id="2c9ae-122">How to consume APIs in your extension</span></span>
 
-<span data-ttu-id="05cfa-123">拡張機能で Retail API を利用するには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-123">Use the following steps to consume Retail APIs in your extensions.</span></span>
+<span data-ttu-id="2c9ae-123">拡張機能で Retail API を利用するには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-123">Use the following steps to consume Retail APIs in your extensions.</span></span>
 
-1.  <span data-ttu-id="05cfa-124">拡張機能ファイルで API をインポートします。</span><span class="sxs-lookup"><span data-stu-id="05cfa-124">Import the API in your extension file.</span></span>
+1.  <span data-ttu-id="2c9ae-124">拡張機能ファイルで API をインポートします。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-124">Import the API in your extension file.</span></span>
 
-    <span data-ttu-id="05cfa-125">たとえば、拡張機能の買い物カゴ API で保存属性を使用する場合、次のインポート ステートメントを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="05cfa-125">For example, if you want to consume the save attribute on cart API in your extension, then you need to add the following import statements.</span></span>
+    <span data-ttu-id="2c9ae-125">たとえば、拡張機能の買い物カゴ API で保存属性を使用する場合、次のインポート ステートメントを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-125">For example, if you want to consume the save attribute on cart API in your extension, then you need to add the following import statements.</span></span>
 
- <span data-ttu-id="05cfa-126">パターンは、"PosApi/Consume/Module name" からの {api name} のインポートです。</span><span class="sxs-lookup"><span data-stu-id="05cfa-126">The pattern is import { api name } from "PosApi/Consume/Module name";</span></span>
+ <span data-ttu-id="2c9ae-126">パターンは、"PosApi/Consume/Module name" からの {api name} のインポートです。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-126">The pattern is import { api name } from "PosApi/Consume/Module name";</span></span>
 ```Typescript
  import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
 ```
 
-2.  <span data-ttu-id="05cfa-127">必要な場合は、クライアントのエンティティとプロキシ エンティティをインポートします。</span><span class="sxs-lookup"><span data-stu-id="05cfa-127">Import the client entities and proxy entities if required.</span></span>
+2.  <span data-ttu-id="2c9ae-127">必要な場合は、クライアントのエンティティとプロキシ エンティティをインポートします。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-127">Import the client entities and proxy entities if required.</span></span>
 
 ```Typescript
     import { ClientEntities } from "PosApi/Entities";
 
     import { ProxyEntities } from "PosApi/Entities";
 ```
-3.  <span data-ttu-id="05cfa-128">API 変数を宣言し、POS ランタイムを使用して実行します。これには、this.context.runtime.executeAsync("api name") を使用してランタイムにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="05cfa-128">Declare the API variable and execute it using the POS runtime, which you can access the runtime by using: this.context.runtime.executeAsync("api name")</span></span>
+3.  <span data-ttu-id="2c9ae-128">API 変数を宣言し、POS ランタイムを使用して実行します。これには、this.context.runtime.executeAsync("api name") を使用してランタイムにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-128">Declare the API variable and execute it using the POS runtime, which you can access the runtime by using: this.context.runtime.executeAsync("api name")</span></span>
 
 ```Typescript
     executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
 ```
 
- <span data-ttu-id="05cfa-129">たとえば、支払/入金の削除を実行する場合は、SaveAttributesOnCartClientRequest api を使用し、次の手順を参照してください。</span><span class="sxs-lookup"><span data-stu-id="05cfa-129">For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.</span></span>
+ <span data-ttu-id="2c9ae-129">たとえば、支払/入金の削除を実行する場合は、SaveAttributesOnCartClientRequest api を使用し、次の手順を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-129">For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.</span></span>
 ```Typescript
 let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
 
@@ -89,9 +89,9 @@ new SaveAttributesOnCartClientRequest(attributeValues);
 result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
 
 ```
-### <a name="samples-showing-how-to-access-apis"></a><span data-ttu-id="05cfa-130">API にアクセスする方法を示すサンプル</span><span class="sxs-lookup"><span data-stu-id="05cfa-130">Samples showing how to access APIs</span></span>
+### <a name="samples-showing-how-to-access-apis"></a><span data-ttu-id="2c9ae-130">API にアクセスする方法を示すサンプル</span><span class="sxs-lookup"><span data-stu-id="2c9ae-130">Samples showing how to access APIs</span></span>
 
-<span data-ttu-id="05cfa-131">**現在の買い物カゴを取得**</span><span class="sxs-lookup"><span data-stu-id="05cfa-131">**Get Current cart**</span></span>
+<span data-ttu-id="2c9ae-131">**現在の買い物カゴを取得**</span><span class="sxs-lookup"><span data-stu-id="2c9ae-131">**Get Current cart**</span></span>
 ```
 // Gets the current cart.
 
@@ -106,7 +106,7 @@ result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
 currentCart = getCurrentCartClientResponse.data.result;
 
 ```
-<span data-ttu-id="05cfa-132">**買い物カゴに追加された現在の顧客を取得**</span><span class="sxs-lookup"><span data-stu-id="05cfa-132">**Get Current customer added to cart**</span></span>
+<span data-ttu-id="2c9ae-132">**買い物カゴに追加された現在の顧客を取得**</span><span class="sxs-lookup"><span data-stu-id="2c9ae-132">**Get Current customer added to cart**</span></span>
 ```
  // Gets the current customer.
 
@@ -126,7 +126,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 }
 ```
-<span data-ttu-id="05cfa-133">**強制無効トランザクション**</span><span class="sxs-lookup"><span data-stu-id="05cfa-133">**Force void transaction**</span></span>
+<span data-ttu-id="2c9ae-133">**強制無効トランザクション**</span><span class="sxs-lookup"><span data-stu-id="2c9ae-133">**Force void transaction**</span></span>
 ```
  // Force void tarnsaction.
 ```Typescript
@@ -145,287 +145,290 @@ currentCart = getCurrentCartClientResponse.data.result;
  });
 ```
 
-### <a name="cart"></a><span data-ttu-id="05cfa-134">カート</span><span class="sxs-lookup"><span data-stu-id="05cfa-134">Cart</span></span>
+### <a name="cart"></a><span data-ttu-id="2c9ae-134">カート</span><span class="sxs-lookup"><span data-stu-id="2c9ae-134">Cart</span></span>
 
-<span data-ttu-id="05cfa-135">次に、買い物カゴに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-135">The following is a list of APIs exposed to perform cart-related functionality.</span></span>
+<span data-ttu-id="2c9ae-135">次に、買い物カゴに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-135">The following is a list of APIs exposed to perform cart-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-136">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-136">POS API</span></span>                                         |
+| <span data-ttu-id="2c9ae-136">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-136">POS API</span></span>                                         |
 |-------------------------------------------------|
-| <span data-ttu-id="05cfa-137">AddPreprocessedTenderLineToCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-137">AddPreprocessedTenderLineToCartClientRequest</span></span>    |
-| <span data-ttu-id="05cfa-138">AddTenderLineToCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-138">AddTenderLineToCartClientRequest</span></span>                |
-| <span data-ttu-id="05cfa-139">ConcludeTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-139">ConcludeTransactionClientRequest</span></span>                |
-| <span data-ttu-id="05cfa-140">GetCurrentCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-140">GetCurrentCartClientRequest</span></span>                     |
-| <span data-ttu-id="05cfa-141">GetCurrentCartClientResponse</span><span class="sxs-lookup"><span data-stu-id="05cfa-141">GetCurrentCartClientResponse</span></span>                    |
-| <span data-ttu-id="05cfa-142">GetKeyedInPriceClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-142">GetKeyedInPriceClientRequest</span></span>                    |
-| <span data-ttu-id="05cfa-143">GetPickupDateClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-143">GetPickupDateClientRequest</span></span>                      |
-| <span data-ttu-id="05cfa-144">GetReasonCodeLinesClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-144">GetReasonCodeLinesClientRequest</span></span>                 |
-| <span data-ttu-id="05cfa-145">GetReceiptEmailAddressClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-145">GetReceiptEmailAddressClientRequest</span></span>             |
-| <span data-ttu-id="05cfa-146">GetShippingDateClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-146">GetShippingDateClientRequest</span></span>                    |
-| <span data-ttu-id="05cfa-147">RefreshCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-147">RefreshCartClientRequest</span></span>                        |
-| <span data-ttu-id="05cfa-148">ResumeSuspendedCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-148">ResumeSuspendedCartClientRequest</span></span>                |
-| <span data-ttu-id="05cfa-149">SaveAttributesOnCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-149">SaveAttributesOnCartClientRequest</span></span>               |
-| <span data-ttu-id="05cfa-150">SaveAttributesOnCartLinesClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-150">SaveAttributesOnCartLinesClientRequest</span></span>          |
-| <span data-ttu-id="05cfa-151">SaveExtensionPropertiesOnCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-151">SaveExtensionPropertiesOnCartClientRequest</span></span>      |
-| <span data-ttu-id="05cfa-152">SaveExtensionPropertiesOnCartLinesClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-152">SaveExtensionPropertiesOnCartLinesClientRequest</span></span> |
-| <span data-ttu-id="05cfa-153">SaveReasonCodeLinesOnCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-153">SaveReasonCodeLinesOnCartClientRequest</span></span>          |
-| <span data-ttu-id="05cfa-154">SaveReasonCodeLinesOnCartLinesClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-154">SaveReasonCodeLinesOnCartLinesClientRequest</span></span>     |
-| <span data-ttu-id="05cfa-155">SelectSalesLinesForPickUpClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-155">SelectSalesLinesForPickUpClientRequest</span></span>          |
-| <span data-ttu-id="05cfa-156">SetCartAttributesClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-156">SetCartAttributesClientRequest</span></span>                  |
-| <span data-ttu-id="05cfa-157">ShowChangeDueClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-157">ShowChangeDueClientRequest</span></span>                      |
-| <span data-ttu-id="05cfa-158">AddAffiliationOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-158">AddAffiliationOperationRequest</span></span>                  |
-| <span data-ttu-id="05cfa-159">AddItemToCartOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-159">AddItemToCartOperationRequest</span></span>                   |
-| <span data-ttu-id="05cfa-160">CalculateTotalOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-160">CalculateTotalOperationRequest</span></span>                  |
-| <span data-ttu-id="05cfa-161">ChangeCartLineUnitOfMeasureOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-161">ChangeCartLineUnitOfMeasureOperationRequest</span></span>     |
-| <span data-ttu-id="05cfa-162">CreateCustomerOrderOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-162">CreateCustomerOrderOperationRequest</span></span>             |
-| <span data-ttu-id="05cfa-163">CreateCustomerQuoteOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-163">CreateCustomerQuoteOperationRequest</span></span>             |
-| <span data-ttu-id="05cfa-164">CustomerAccountDepositOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-164">CustomerAccountDepositOperationRequest</span></span>          |
-| <span data-ttu-id="05cfa-165">DepositOverrideOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-165">DepositOverrideOperationRequest</span></span>                 |
-| <span data-ttu-id="05cfa-166">EditCustomerOrderOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-166">EditCustomerOrderOperationRequest</span></span>               |
-| <span data-ttu-id="05cfa-167">LineDiscountAmountOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-167">LineDiscountAmountOperationRequest</span></span>              |
-| <span data-ttu-id="05cfa-168">LineDiscountPercentOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-168">LineDiscountPercentOperationRequest</span></span>             |
-| <span data-ttu-id="05cfa-169">OverrideLineTaxFromListOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-169">OverrideLineTaxFromListOperationRequest</span></span>         |
-| <span data-ttu-id="05cfa-170">OverrideLineTaxOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-170">OverrideLineTaxOperationRequest</span></span>                 |
-| <span data-ttu-id="05cfa-171">OverrideTransactionTaxOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-171">OverrideTransactionTaxOperationRequest</span></span>          |
-| <span data-ttu-id="05cfa-172">PickupAllOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-172">PickupAllOperationRequest</span></span>                       |
-| <span data-ttu-id="05cfa-173">PriceOverrideOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-173">PriceOverrideOperationRequest</span></span>                   |
-| <span data-ttu-id="05cfa-174">SetCartLineCommentOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-174">SetCartLineCommentOperationRequest</span></span>              |
-| <span data-ttu-id="05cfa-175">SetCartLineQuantityOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-175">SetCartLineQuantityOperationRequest</span></span>             |
-| <span data-ttu-id="05cfa-176">SetCustomerOnCartOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-176">SetCustomerOnCartOperationRequest</span></span>               |
-| <span data-ttu-id="05cfa-177">SetTransactionCommentOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-177">SetTransactionCommentOperationRequest</span></span>           |
-| <span data-ttu-id="05cfa-178">SuspendCurrentCartOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-178">SuspendCurrentCartOperationRequest</span></span>              |
-| <span data-ttu-id="05cfa-179">TotalDiscountAmountOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-179">TotalDiscountAmountOperationRequest</span></span>             |
-| <span data-ttu-id="05cfa-180">TotalDiscountPercentOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-180">TotalDiscountPercentOperationRequest</span></span>            |
-| <span data-ttu-id="05cfa-181">VoidCartLineOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-181">VoidCartLineOperationRequest</span></span>                    |
-| <span data-ttu-id="05cfa-182">VoidTenderLineOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-182">VoidTenderLineOperationRequest</span></span>                  |
-| <span data-ttu-id="05cfa-183">VoidTransactionOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-183">VoidTransactionOperationRequest</span></span>                 |
-| <span data-ttu-id="05cfa-184">CreateEmptyCartServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-184">CreateEmptyCartServiceRequest</span></span>                   |
-| <span data-ttu-id="05cfa-185">GetTaxOverridesServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-185">GetTaxOverridesServiceRequest</span></span>                   |
-| <span data-ttu-id="05cfa-186">UpdateTenderLineSignatureServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-186">UpdateTenderLineSignatureServiceRequest</span></span>         |
-| <span data-ttu-id="05cfa-187">CarryoutSelectedProductsOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-187">CarryoutSelectedProductsOperationRequest</span></span> |
-| <span data-ttu-id="05cfa-188">AddCouponsOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-188">AddCouponsOperationRequest</span></span> |
-| <span data-ttu-id="05cfa-189">CreateNonSalesTransactionServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-189">CreateNonSalesTransactionServiceRequest</span></span> |
-| <span data-ttu-id="05cfa-190">ReturnTransactionOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-190">ReturnTransactionOperationRequest</span></span> |
-| <span data-ttu-id="05cfa-191">AddLoyaltyCardToCartOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-191">AddLoyaltyCardToCartOperationRequest</span></span> |
+| <span data-ttu-id="2c9ae-137">AddPreprocessedTenderLineToCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-137">AddPreprocessedTenderLineToCartClientRequest</span></span>    |
+| <span data-ttu-id="2c9ae-138">AddTenderLineToCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-138">AddTenderLineToCartClientRequest</span></span>                |
+| <span data-ttu-id="2c9ae-139">ConcludeTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-139">ConcludeTransactionClientRequest</span></span>                |
+| <span data-ttu-id="2c9ae-140">GetCurrentCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-140">GetCurrentCartClientRequest</span></span>                     |
+| <span data-ttu-id="2c9ae-141">GetCurrentCartClientResponse</span><span class="sxs-lookup"><span data-stu-id="2c9ae-141">GetCurrentCartClientResponse</span></span>                    |
+| <span data-ttu-id="2c9ae-142">GetKeyedInPriceClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-142">GetKeyedInPriceClientRequest</span></span>                    |
+| <span data-ttu-id="2c9ae-143">GetPickupDateClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-143">GetPickupDateClientRequest</span></span>                      |
+| <span data-ttu-id="2c9ae-144">GetReasonCodeLinesClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-144">GetReasonCodeLinesClientRequest</span></span>                 |
+| <span data-ttu-id="2c9ae-145">GetReceiptEmailAddressClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-145">GetReceiptEmailAddressClientRequest</span></span>             |
+| <span data-ttu-id="2c9ae-146">GetShippingDateClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-146">GetShippingDateClientRequest</span></span>                    |
+| <span data-ttu-id="2c9ae-147">RefreshCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-147">RefreshCartClientRequest</span></span>                        |
+| <span data-ttu-id="2c9ae-148">ResumeSuspendedCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-148">ResumeSuspendedCartClientRequest</span></span>                |
+| <span data-ttu-id="2c9ae-149">SaveAttributesOnCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-149">SaveAttributesOnCartClientRequest</span></span>               |
+| <span data-ttu-id="2c9ae-150">SaveAttributesOnCartLinesClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-150">SaveAttributesOnCartLinesClientRequest</span></span>          |
+| <span data-ttu-id="2c9ae-151">SaveExtensionPropertiesOnCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-151">SaveExtensionPropertiesOnCartClientRequest</span></span>      |
+| <span data-ttu-id="2c9ae-152">SaveExtensionPropertiesOnCartLinesClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-152">SaveExtensionPropertiesOnCartLinesClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-153">SaveReasonCodeLinesOnCartClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-153">SaveReasonCodeLinesOnCartClientRequest</span></span>          |
+| <span data-ttu-id="2c9ae-154">SaveReasonCodeLinesOnCartLinesClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-154">SaveReasonCodeLinesOnCartLinesClientRequest</span></span>     |
+| <span data-ttu-id="2c9ae-155">SelectSalesLinesForPickUpClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-155">SelectSalesLinesForPickUpClientRequest</span></span>          |
+| <span data-ttu-id="2c9ae-156">SetCartAttributesClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-156">SetCartAttributesClientRequest</span></span>                  |
+| <span data-ttu-id="2c9ae-157">ShowChangeDueClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-157">ShowChangeDueClientRequest</span></span>                      |
+| <span data-ttu-id="2c9ae-158">AddAffiliationOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-158">AddAffiliationOperationRequest</span></span>                  |
+| <span data-ttu-id="2c9ae-159">AddItemToCartOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-159">AddItemToCartOperationRequest</span></span>                   |
+| <span data-ttu-id="2c9ae-160">CalculateTotalOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-160">CalculateTotalOperationRequest</span></span>                  |
+| <span data-ttu-id="2c9ae-161">ChangeCartLineUnitOfMeasureOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-161">ChangeCartLineUnitOfMeasureOperationRequest</span></span>     |
+| <span data-ttu-id="2c9ae-162">CreateCustomerOrderOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-162">CreateCustomerOrderOperationRequest</span></span>             |
+| <span data-ttu-id="2c9ae-163">CreateCustomerQuoteOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-163">CreateCustomerQuoteOperationRequest</span></span>             |
+| <span data-ttu-id="2c9ae-164">CustomerAccountDepositOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-164">CustomerAccountDepositOperationRequest</span></span>          |
+| <span data-ttu-id="2c9ae-165">DepositOverrideOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-165">DepositOverrideOperationRequest</span></span>                 |
+| <span data-ttu-id="2c9ae-166">EditCustomerOrderOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-166">EditCustomerOrderOperationRequest</span></span>               |
+| <span data-ttu-id="2c9ae-167">LineDiscountAmountOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-167">LineDiscountAmountOperationRequest</span></span>              |
+| <span data-ttu-id="2c9ae-168">LineDiscountPercentOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-168">LineDiscountPercentOperationRequest</span></span>             |
+| <span data-ttu-id="2c9ae-169">OverrideLineTaxFromListOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-169">OverrideLineTaxFromListOperationRequest</span></span>         |
+| <span data-ttu-id="2c9ae-170">OverrideLineTaxOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-170">OverrideLineTaxOperationRequest</span></span>                 |
+| <span data-ttu-id="2c9ae-171">OverrideTransactionTaxOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-171">OverrideTransactionTaxOperationRequest</span></span>          |
+| <span data-ttu-id="2c9ae-172">PickupAllOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-172">PickupAllOperationRequest</span></span>                       |
+| <span data-ttu-id="2c9ae-173">PriceOverrideOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-173">PriceOverrideOperationRequest</span></span>                   |
+| <span data-ttu-id="2c9ae-174">SetCartLineCommentOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-174">SetCartLineCommentOperationRequest</span></span>              |
+| <span data-ttu-id="2c9ae-175">SetCartLineQuantityOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-175">SetCartLineQuantityOperationRequest</span></span>             |
+| <span data-ttu-id="2c9ae-176">SetCustomerOnCartOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-176">SetCustomerOnCartOperationRequest</span></span>               |
+| <span data-ttu-id="2c9ae-177">SetTransactionCommentOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-177">SetTransactionCommentOperationRequest</span></span>           |
+| <span data-ttu-id="2c9ae-178">SuspendCurrentCartOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-178">SuspendCurrentCartOperationRequest</span></span>              |
+| <span data-ttu-id="2c9ae-179">TotalDiscountAmountOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-179">TotalDiscountAmountOperationRequest</span></span>             |
+| <span data-ttu-id="2c9ae-180">TotalDiscountPercentOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-180">TotalDiscountPercentOperationRequest</span></span>            |
+| <span data-ttu-id="2c9ae-181">VoidCartLineOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-181">VoidCartLineOperationRequest</span></span>                    |
+| <span data-ttu-id="2c9ae-182">VoidTenderLineOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-182">VoidTenderLineOperationRequest</span></span>                  |
+| <span data-ttu-id="2c9ae-183">VoidTransactionOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-183">VoidTransactionOperationRequest</span></span>                 |
+| <span data-ttu-id="2c9ae-184">CreateEmptyCartServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-184">CreateEmptyCartServiceRequest</span></span>                   |
+| <span data-ttu-id="2c9ae-185">GetTaxOverridesServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-185">GetTaxOverridesServiceRequest</span></span>                   |
+| <span data-ttu-id="2c9ae-186">UpdateTenderLineSignatureServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-186">UpdateTenderLineSignatureServiceRequest</span></span>         |
+| <span data-ttu-id="2c9ae-187">CarryoutSelectedProductsOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-187">CarryoutSelectedProductsOperationRequest</span></span> |
+| <span data-ttu-id="2c9ae-188">AddCouponsOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-188">AddCouponsOperationRequest</span></span> |
+| <span data-ttu-id="2c9ae-189">CreateNonSalesTransactionServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-189">CreateNonSalesTransactionServiceRequest</span></span> |
+| <span data-ttu-id="2c9ae-190">ReturnTransactionOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-190">ReturnTransactionOperationRequest</span></span> |
+| <span data-ttu-id="2c9ae-191">AddLoyaltyCardToCartOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-191">AddLoyaltyCardToCartOperationRequest</span></span> |
+| <span data-ttu-id="2c9ae-192">ReturnCartLineOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-192">ReturnCartLineOperationRequest</span></span> |
+| <span data-ttu-id="2c9ae-193">ReturnItemOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-193">ReturnItemOperationRequest</span></span> |
 
-### <a name="payments"></a><span data-ttu-id="05cfa-192">支払</span><span class="sxs-lookup"><span data-stu-id="05cfa-192">Payments</span></span>
 
-<span data-ttu-id="05cfa-193">次に、支払に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-193">The following is a list of APIs exposed to perform payment-related functionality.</span></span>
+### <a name="payments"></a><span data-ttu-id="2c9ae-194">支払</span><span class="sxs-lookup"><span data-stu-id="2c9ae-194">Payments</span></span>
 
-| <span data-ttu-id="05cfa-194">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-194">POS API</span></span>                                   |
+<span data-ttu-id="2c9ae-195">次に、支払に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-195">The following is a list of APIs exposed to perform payment-related functionality.</span></span>
+
+| <span data-ttu-id="2c9ae-196">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-196">POS API</span></span>                                   |
 |-------------------------------------------|
-| <span data-ttu-id="05cfa-195">GetGiftCardByIdServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-195">GetGiftCardByIdServiceRequest</span></span>             |
-| <span data-ttu-id="05cfa-196">GetPaymentCardTypeByBinRangeClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-196">GetPaymentCardTypeByBinRangeClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-197">GetGiftCardByIdServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-197">GetGiftCardByIdServiceRequest</span></span>             |
+| <span data-ttu-id="2c9ae-198">GetPaymentCardTypeByBinRangeClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-198">GetPaymentCardTypeByBinRangeClientRequest</span></span> |
 
-### <a name="peripherals"></a><span data-ttu-id="05cfa-197">周辺機器</span><span class="sxs-lookup"><span data-stu-id="05cfa-197">Peripherals</span></span>
+### <a name="peripherals"></a><span data-ttu-id="2c9ae-199">周辺機器</span><span class="sxs-lookup"><span data-stu-id="2c9ae-199">Peripherals</span></span>
 
-<span data-ttu-id="05cfa-198">次に、周辺機器に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-198">The following is a list of APIs exposed to perform peripheral-related functionality.</span></span>
+<span data-ttu-id="2c9ae-200">次に、周辺機器に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-200">The following is a list of APIs exposed to perform peripheral-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-199">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-199">POS API</span></span>                                                |
+| <span data-ttu-id="2c9ae-201">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-201">POS API</span></span>                                                |
 |--------------------------------------------------------|
-| <span data-ttu-id="05cfa-200">CardPaymentAuthorizePaymentRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-200">CardPaymentAuthorizePaymentRequest</span></span>                     |
-| <span data-ttu-id="05cfa-201">CardPaymentBeginTransactionRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-201">CardPaymentBeginTransactionRequest</span></span>                     |
-| <span data-ttu-id="05cfa-202">CardPaymentCapturePaymentRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-202">CardPaymentCapturePaymentRequest</span></span>                       |
-| <span data-ttu-id="05cfa-203">CardPaymentEndTransactionRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-203">CardPaymentEndTransactionRequest</span></span>                       |
-| <span data-ttu-id="05cfa-204">CardPaymentEnquireGiftCardBalancePeripheralRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-204">CardPaymentEnquireGiftCardBalancePeripheralRequest</span></span>     |
-| <span data-ttu-id="05cfa-205">CardPaymentExecuteTaskRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-205">CardPaymentExecuteTaskRequest</span></span>                          |
-| <span data-ttu-id="05cfa-206">CardPaymentRefundPaymentRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-206">CardPaymentRefundPaymentRequest</span></span>                        |
-| <span data-ttu-id="05cfa-207">CardPaymentVoidPaymentRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-207">CardPaymentVoidPaymentRequest</span></span>                          |
-| <span data-ttu-id="05cfa-208">CashDrawerIsOpenRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-208">CashDrawerIsOpenRequest</span></span>                                |
-| <span data-ttu-id="05cfa-209">HardwareStationDeviceActionRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-209">HardwareStationDeviceActionRequest</span></span>                     |
-| <span data-ttu-id="05cfa-210">HardwareStationStatusRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-210">HardwareStationStatusRequest</span></span>                           |
-| <span data-ttu-id="05cfa-211">LineDisplayDisplayLinesRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-211">LineDisplayDisplayLinesRequest</span></span>                         |
-| <span data-ttu-id="05cfa-212">PaymentTerminalAuthorizePaymentActivityRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-212">PaymentTerminalAuthorizePaymentActivityRequest</span></span>         |
-| <span data-ttu-id="05cfa-213">PaymentTerminalAuthorizePaymentRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-213">PaymentTerminalAuthorizePaymentRequest</span></span>                 |
-| <span data-ttu-id="05cfa-214">PaymentTerminalBeginTransactionRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-214">PaymentTerminalBeginTransactionRequest</span></span>                 |
-| <span data-ttu-id="05cfa-215">PaymentTerminalCancelOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-215">PaymentTerminalCancelOperationRequest</span></span>                  |
-| <span data-ttu-id="05cfa-216">PaymentTerminalCapturePaymentRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-216">PaymentTerminalCapturePaymentRequest</span></span>                   |
-| <span data-ttu-id="05cfa-217">PaymentTerminalEndTransactionRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-217">PaymentTerminalEndTransactionRequest</span></span>                   |
-| <span data-ttu-id="05cfa-218">PaymentTerminalEnquireGiftCardBalancePeripheralRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-218">PaymentTerminalEnquireGiftCardBalancePeripheralRequest</span></span> |
-| <span data-ttu-id="05cfa-219">PaymentTerminalExecuteTaskRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-219">PaymentTerminalExecuteTaskRequest</span></span>                      |
-| <span data-ttu-id="05cfa-220">PaymentTerminalRefundPaymentActivityRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-220">PaymentTerminalRefundPaymentActivityRequest</span></span>            |
-| <span data-ttu-id="05cfa-221">PaymentTerminalRefundPaymentRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-221">PaymentTerminalRefundPaymentRequest</span></span>                    |
-| <span data-ttu-id="05cfa-222">PaymentTerminalUpdateLinesRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-222">PaymentTerminalUpdateLinesRequest</span></span>                      |
-| <span data-ttu-id="05cfa-223">PaymentTerminalVoidPaymentRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-223">PaymentTerminalVoidPaymentRequest</span></span>                      |
-| <span data-ttu-id="05cfa-224">PrinterPrintRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-224">PrinterPrintRequest</span></span>                                    |
-| <span data-ttu-id="05cfa-225">ScaleReadRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-225">ScaleReadRequest</span></span>                                       |
+| <span data-ttu-id="2c9ae-202">CardPaymentAuthorizePaymentRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-202">CardPaymentAuthorizePaymentRequest</span></span>                     |
+| <span data-ttu-id="2c9ae-203">CardPaymentBeginTransactionRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-203">CardPaymentBeginTransactionRequest</span></span>                     |
+| <span data-ttu-id="2c9ae-204">CardPaymentCapturePaymentRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-204">CardPaymentCapturePaymentRequest</span></span>                       |
+| <span data-ttu-id="2c9ae-205">CardPaymentEndTransactionRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-205">CardPaymentEndTransactionRequest</span></span>                       |
+| <span data-ttu-id="2c9ae-206">CardPaymentEnquireGiftCardBalancePeripheralRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-206">CardPaymentEnquireGiftCardBalancePeripheralRequest</span></span>     |
+| <span data-ttu-id="2c9ae-207">CardPaymentExecuteTaskRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-207">CardPaymentExecuteTaskRequest</span></span>                          |
+| <span data-ttu-id="2c9ae-208">CardPaymentRefundPaymentRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-208">CardPaymentRefundPaymentRequest</span></span>                        |
+| <span data-ttu-id="2c9ae-209">CardPaymentVoidPaymentRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-209">CardPaymentVoidPaymentRequest</span></span>                          |
+| <span data-ttu-id="2c9ae-210">CashDrawerIsOpenRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-210">CashDrawerIsOpenRequest</span></span>                                |
+| <span data-ttu-id="2c9ae-211">HardwareStationDeviceActionRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-211">HardwareStationDeviceActionRequest</span></span>                     |
+| <span data-ttu-id="2c9ae-212">HardwareStationStatusRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-212">HardwareStationStatusRequest</span></span>                           |
+| <span data-ttu-id="2c9ae-213">LineDisplayDisplayLinesRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-213">LineDisplayDisplayLinesRequest</span></span>                         |
+| <span data-ttu-id="2c9ae-214">PaymentTerminalAuthorizePaymentActivityRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-214">PaymentTerminalAuthorizePaymentActivityRequest</span></span>         |
+| <span data-ttu-id="2c9ae-215">PaymentTerminalAuthorizePaymentRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-215">PaymentTerminalAuthorizePaymentRequest</span></span>                 |
+| <span data-ttu-id="2c9ae-216">PaymentTerminalBeginTransactionRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-216">PaymentTerminalBeginTransactionRequest</span></span>                 |
+| <span data-ttu-id="2c9ae-217">PaymentTerminalCancelOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-217">PaymentTerminalCancelOperationRequest</span></span>                  |
+| <span data-ttu-id="2c9ae-218">PaymentTerminalCapturePaymentRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-218">PaymentTerminalCapturePaymentRequest</span></span>                   |
+| <span data-ttu-id="2c9ae-219">PaymentTerminalEndTransactionRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-219">PaymentTerminalEndTransactionRequest</span></span>                   |
+| <span data-ttu-id="2c9ae-220">PaymentTerminalEnquireGiftCardBalancePeripheralRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-220">PaymentTerminalEnquireGiftCardBalancePeripheralRequest</span></span> |
+| <span data-ttu-id="2c9ae-221">PaymentTerminalExecuteTaskRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-221">PaymentTerminalExecuteTaskRequest</span></span>                      |
+| <span data-ttu-id="2c9ae-222">PaymentTerminalRefundPaymentActivityRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-222">PaymentTerminalRefundPaymentActivityRequest</span></span>            |
+| <span data-ttu-id="2c9ae-223">PaymentTerminalRefundPaymentRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-223">PaymentTerminalRefundPaymentRequest</span></span>                    |
+| <span data-ttu-id="2c9ae-224">PaymentTerminalUpdateLinesRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-224">PaymentTerminalUpdateLinesRequest</span></span>                      |
+| <span data-ttu-id="2c9ae-225">PaymentTerminalVoidPaymentRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-225">PaymentTerminalVoidPaymentRequest</span></span>                      |
+| <span data-ttu-id="2c9ae-226">PrinterPrintRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-226">PrinterPrintRequest</span></span>                                    |
+| <span data-ttu-id="2c9ae-227">ScaleReadRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-227">ScaleReadRequest</span></span>                                       |
 
-### <a name="scanresults"></a><span data-ttu-id="05cfa-226">ScanResults</span><span class="sxs-lookup"><span data-stu-id="05cfa-226">ScanResults</span></span>
+### <a name="scanresults"></a><span data-ttu-id="2c9ae-228">ScanResults</span><span class="sxs-lookup"><span data-stu-id="2c9ae-228">ScanResults</span></span>
 
-<span data-ttu-id="05cfa-227">次に、スキャン結果に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-227">The following is a list of APIs exposed to perform scan results-related functionality.</span></span>
+<span data-ttu-id="2c9ae-229">次に、スキャン結果に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-229">The following is a list of APIs exposed to perform scan results-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-228">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-228">POS API</span></span>                    |
+| <span data-ttu-id="2c9ae-230">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-230">POS API</span></span>                    |
 |----------------------------|
-| <span data-ttu-id="05cfa-229">GetScanResultClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-229">GetScanResultClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-231">GetScanResultClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-231">GetScanResultClientRequest</span></span> |
 
-### <a name="customer"></a><span data-ttu-id="05cfa-230">顧客</span><span class="sxs-lookup"><span data-stu-id="05cfa-230">Customer</span></span>
+### <a name="customer"></a><span data-ttu-id="2c9ae-232">顧客</span><span class="sxs-lookup"><span data-stu-id="2c9ae-232">Customer</span></span>
 
-<span data-ttu-id="05cfa-231">次に、顧客に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-231">The following is a list of APIs exposed to perform customer-related functionality.</span></span>
+<span data-ttu-id="2c9ae-233">次に、顧客に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-233">The following is a list of APIs exposed to perform customer-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-232">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-232">POS API</span></span>                  |
+| <span data-ttu-id="2c9ae-234">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-234">POS API</span></span>                  |
 |--------------------------|
-| <span data-ttu-id="05cfa-233">GetCustomerClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-233">GetCustomerClientRequest</span></span> |
-|<span data-ttu-id="05cfa-234">CreateCustomerServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-234">CreateCustomerServiceRequest</span></span> |
-|<span data-ttu-id="05cfa-235">UpdateCustomerServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-235">UpdateCustomerServiceRequest</span></span> |
-|<span data-ttu-id="05cfa-236">SelectCustomerClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-236">SelectCustomerClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-235">GetCustomerClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-235">GetCustomerClientRequest</span></span> |
+|<span data-ttu-id="2c9ae-236">CreateCustomerServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-236">CreateCustomerServiceRequest</span></span> |
+|<span data-ttu-id="2c9ae-237">UpdateCustomerServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-237">UpdateCustomerServiceRequest</span></span> |
+|<span data-ttu-id="2c9ae-238">SelectCustomerClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-238">SelectCustomerClientRequest</span></span> |
 
 
-### <a name="authentication"></a><span data-ttu-id="05cfa-237">認証</span><span class="sxs-lookup"><span data-stu-id="05cfa-237">Authentication</span></span>
+### <a name="authentication"></a><span data-ttu-id="2c9ae-239">認証</span><span class="sxs-lookup"><span data-stu-id="2c9ae-239">Authentication</span></span>
 
-<span data-ttu-id="05cfa-238">次に、認証に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-238">The following is a list of APIs exposed to perform authentication-related functionality.</span></span>
+<span data-ttu-id="2c9ae-240">次に、認証に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-240">The following is a list of APIs exposed to perform authentication-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-239">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-239">POS API</span></span>                |
+| <span data-ttu-id="2c9ae-241">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-241">POS API</span></span>                |
 |------------------------|
-| <span data-ttu-id="05cfa-240">LogOffOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-240">LogOffOperationRequest</span></span> |
+| <span data-ttu-id="2c9ae-242">LogOffOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-242">LogOffOperationRequest</span></span> |
 
-### <a name="dataservice"></a><span data-ttu-id="05cfa-241">DataService</span><span class="sxs-lookup"><span data-stu-id="05cfa-241">DataService</span></span>
+### <a name="dataservice"></a><span data-ttu-id="2c9ae-243">DataService</span><span class="sxs-lookup"><span data-stu-id="2c9ae-243">DataService</span></span>
 
-<span data-ttu-id="05cfa-242">次に、データ サービスに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-242">The following is a list of APIs exposed to perform data service-related functionality.</span></span>
+<span data-ttu-id="2c9ae-244">次に、データ サービスに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-244">The following is a list of APIs exposed to perform data service-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-243">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-243">POS API</span></span>            |
+| <span data-ttu-id="2c9ae-245">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-245">POS API</span></span>            |
 |--------------------|
-| <span data-ttu-id="05cfa-244">DataServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-244">DataServiceRequest</span></span> |
+| <span data-ttu-id="2c9ae-246">DataServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-246">DataServiceRequest</span></span> |
 
-### <a name="device"></a><span data-ttu-id="05cfa-245">デバイス</span><span class="sxs-lookup"><span data-stu-id="05cfa-245">Device</span></span>
+### <a name="device"></a><span data-ttu-id="2c9ae-247">デバイス</span><span class="sxs-lookup"><span data-stu-id="2c9ae-247">Device</span></span>
 
-<span data-ttu-id="05cfa-246">次に、デバイスに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-246">The following is a list of APIs exposed to perform device-related functionality.</span></span>
+<span data-ttu-id="2c9ae-248">次に、デバイスに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-248">The following is a list of APIs exposed to perform device-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-247">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-247">POS API</span></span>                               |
+| <span data-ttu-id="2c9ae-249">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-249">POS API</span></span>                               |
 |---------------------------------------|
-| <span data-ttu-id="05cfa-248">GetDeviceConfigurationClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-248">GetDeviceConfigurationClientRequest</span></span>   |
-| <span data-ttu-id="05cfa-249">GetExtensionProfileClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-249">GetExtensionProfileClientRequest</span></span>      |
-| <span data-ttu-id="05cfa-250">GetHardwareProfileClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-250">GetHardwareProfileClientRequest</span></span>       |
-| <span data-ttu-id="05cfa-251">GetAuthenticationTokenClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-251">GetAuthenticationTokenClientRequest</span></span>   |
-| <span data-ttu-id="05cfa-252">GetConnectionStatusClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-252">GetConnectionStatusClientRequest</span></span>      |
-| <span data-ttu-id="05cfa-253">GetActiveHardwareStationClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-253">GetActiveHardwareStationClientRequest</span></span> |
-| <span data-ttu-id="05cfa-254">GetApplicationVersionClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-254">GetApplicationVersionClientRequest</span></span>    |
-| <span data-ttu-id="05cfa-255">GetChannelConfigurationClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-255">GetChannelConfigurationClientRequest</span></span>  |
+| <span data-ttu-id="2c9ae-250">GetDeviceConfigurationClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-250">GetDeviceConfigurationClientRequest</span></span>   |
+| <span data-ttu-id="2c9ae-251">GetExtensionProfileClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-251">GetExtensionProfileClientRequest</span></span>      |
+| <span data-ttu-id="2c9ae-252">GetHardwareProfileClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-252">GetHardwareProfileClientRequest</span></span>       |
+| <span data-ttu-id="2c9ae-253">GetAuthenticationTokenClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-253">GetAuthenticationTokenClientRequest</span></span>   |
+| <span data-ttu-id="2c9ae-254">GetConnectionStatusClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-254">GetConnectionStatusClientRequest</span></span>      |
+| <span data-ttu-id="2c9ae-255">GetActiveHardwareStationClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-255">GetActiveHardwareStationClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-256">GetApplicationVersionClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-256">GetApplicationVersionClientRequest</span></span>    |
+| <span data-ttu-id="2c9ae-257">GetChannelConfigurationClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-257">GetChannelConfigurationClientRequest</span></span>  |
 
-### <a name="diagnostics"></a><span data-ttu-id="05cfa-256">診断</span><span class="sxs-lookup"><span data-stu-id="05cfa-256">Diagnostics</span></span> 
+### <a name="diagnostics"></a><span data-ttu-id="2c9ae-258">診断</span><span class="sxs-lookup"><span data-stu-id="2c9ae-258">Diagnostics</span></span> 
 
-<span data-ttu-id="05cfa-257">次に、診断に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-257">The following is a list of APIs exposed to perform diagnostics-related functionality.</span></span>
+<span data-ttu-id="2c9ae-259">次に、診断に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-259">The following is a list of APIs exposed to perform diagnostics-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-258">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-258">POS API</span></span>                     |
+| <span data-ttu-id="2c9ae-260">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-260">POS API</span></span>                     |
 |-----------------------------|
-| <span data-ttu-id="05cfa-259">GetSessionInfoClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-259">GetSessionInfoClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-261">GetSessionInfoClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-261">GetSessionInfoClientRequest</span></span> |
 
-### <a name="dialog"></a><span data-ttu-id="05cfa-260">ダイアログ</span><span class="sxs-lookup"><span data-stu-id="05cfa-260">Dialog</span></span>
+### <a name="dialog"></a><span data-ttu-id="2c9ae-262">ダイアログ</span><span class="sxs-lookup"><span data-stu-id="2c9ae-262">Dialog</span></span>
 
-<span data-ttu-id="05cfa-261">次に、ダイアログに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-261">The following is a list of APIs exposed to perform dialog-related functionality.</span></span>
+<span data-ttu-id="2c9ae-263">次に、ダイアログに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-263">The following is a list of APIs exposed to perform dialog-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-262">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-262">POS API</span></span>                                  |
+| <span data-ttu-id="2c9ae-264">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-264">POS API</span></span>                                  |
 |------------------------------------------|
-| <span data-ttu-id="05cfa-263">ShowMessageDialogClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-263">ShowMessageDialogClientRequest</span></span>           |
-| <span data-ttu-id="05cfa-264">IAlphanumericInputDialogResult</span><span class="sxs-lookup"><span data-stu-id="05cfa-264">IAlphanumericInputDialogResult</span></span>           |
-| <span data-ttu-id="05cfa-265">ShowAlphanumericInputDialogClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-265">ShowAlphanumericInputDialogClientRequest</span></span> |
-| <span data-ttu-id="05cfa-266">ShowNumericInputDialogClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-266">ShowNumericInputDialogClientRequest</span></span>      |
-| <span data-ttu-id="05cfa-267">ShowListInputDialogClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-267">ShowListInputDialogClientRequest</span></span>         |
-| <span data-ttu-id="05cfa-268">ShowTextInputDialogClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-268">ShowTextInputDialogClientRequest</span></span>         |
+| <span data-ttu-id="2c9ae-265">ShowMessageDialogClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-265">ShowMessageDialogClientRequest</span></span>           |
+| <span data-ttu-id="2c9ae-266">IAlphanumericInputDialogResult</span><span class="sxs-lookup"><span data-stu-id="2c9ae-266">IAlphanumericInputDialogResult</span></span>           |
+| <span data-ttu-id="2c9ae-267">ShowAlphanumericInputDialogClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-267">ShowAlphanumericInputDialogClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-268">ShowNumericInputDialogClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-268">ShowNumericInputDialogClientRequest</span></span>      |
+| <span data-ttu-id="2c9ae-269">ShowListInputDialogClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-269">ShowListInputDialogClientRequest</span></span>         |
+| <span data-ttu-id="2c9ae-270">ShowTextInputDialogClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-270">ShowTextInputDialogClientRequest</span></span>         |
 
-### <a name="employee"></a><span data-ttu-id="05cfa-269">従業員</span><span class="sxs-lookup"><span data-stu-id="05cfa-269">Employee</span></span>
+### <a name="employee"></a><span data-ttu-id="2c9ae-271">従業員</span><span class="sxs-lookup"><span data-stu-id="2c9ae-271">Employee</span></span>
 
-<span data-ttu-id="05cfa-270">次に、従業員に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-270">The following is a list of APIs exposed to perform employee-related functionality.</span></span>
+<span data-ttu-id="2c9ae-272">次に、従業員に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-272">The following is a list of APIs exposed to perform employee-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-271">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-271">POS API</span></span>                          |
+| <span data-ttu-id="2c9ae-273">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-273">POS API</span></span>                          |
 |----------------------------------|
-| <span data-ttu-id="05cfa-272">GetLoggedOnEmployeeClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-272">GetLoggedOnEmployeeClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-274">GetLoggedOnEmployeeClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-274">GetLoggedOnEmployeeClientRequest</span></span> |
 
-### <a name="formatters"></a><span data-ttu-id="05cfa-273">フォーマッター</span><span class="sxs-lookup"><span data-stu-id="05cfa-273">Formatters</span></span>
+### <a name="formatters"></a><span data-ttu-id="2c9ae-275">フォーマッター</span><span class="sxs-lookup"><span data-stu-id="2c9ae-275">Formatters</span></span>
 
-<span data-ttu-id="05cfa-274">次に、フォーマッターに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-274">The following is a list of APIs exposed to perform formatter-related functionality.</span></span>
+<span data-ttu-id="2c9ae-276">次に、フォーマッターに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-276">The following is a list of APIs exposed to perform formatter-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-275">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-275">POS API</span></span>                             |
+| <span data-ttu-id="2c9ae-277">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-277">POS API</span></span>                             |
 |-------------------------------------|
-| <span data-ttu-id="05cfa-276">IBooleanFormatter</span><span class="sxs-lookup"><span data-stu-id="05cfa-276">IBooleanFormatter</span></span>                   |
-| <span data-ttu-id="05cfa-277">ICurrencyFormatter</span><span class="sxs-lookup"><span data-stu-id="05cfa-277">ICurrencyFormatter</span></span>                  |
-| <span data-ttu-id="05cfa-278">IDateFormatter</span><span class="sxs-lookup"><span data-stu-id="05cfa-278">IDateFormatter</span></span>                      |
-| <span data-ttu-id="05cfa-279">ITransactionTypeFormatter</span><span class="sxs-lookup"><span data-stu-id="05cfa-279">ITransactionTypeFormatter</span></span>           |
-| <span data-ttu-id="05cfa-280">IPurchaseTransferOrderTypeFormatter</span><span class="sxs-lookup"><span data-stu-id="05cfa-280">IPurchaseTransferOrderTypeFormatter</span></span> |
+| <span data-ttu-id="2c9ae-278">IBooleanFormatter</span><span class="sxs-lookup"><span data-stu-id="2c9ae-278">IBooleanFormatter</span></span>                   |
+| <span data-ttu-id="2c9ae-279">ICurrencyFormatter</span><span class="sxs-lookup"><span data-stu-id="2c9ae-279">ICurrencyFormatter</span></span>                  |
+| <span data-ttu-id="2c9ae-280">IDateFormatter</span><span class="sxs-lookup"><span data-stu-id="2c9ae-280">IDateFormatter</span></span>                      |
+| <span data-ttu-id="2c9ae-281">ITransactionTypeFormatter</span><span class="sxs-lookup"><span data-stu-id="2c9ae-281">ITransactionTypeFormatter</span></span>           |
+| <span data-ttu-id="2c9ae-282">IPurchaseTransferOrderTypeFormatter</span><span class="sxs-lookup"><span data-stu-id="2c9ae-282">IPurchaseTransferOrderTypeFormatter</span></span> |
 
-### <a name="orgunits"></a><span data-ttu-id="05cfa-281">OrgUnits</span><span class="sxs-lookup"><span data-stu-id="05cfa-281">OrgUnits</span></span>
+### <a name="orgunits"></a><span data-ttu-id="2c9ae-283">OrgUnits</span><span class="sxs-lookup"><span data-stu-id="2c9ae-283">OrgUnits</span></span>
 
-<span data-ttu-id="05cfa-282">次に、組織単位に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-282">The following is a list of APIs exposed to perform org units-related functionality.</span></span>
+<span data-ttu-id="2c9ae-284">次に、組織単位に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-284">The following is a list of APIs exposed to perform org units-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-283">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-283">POS API</span></span>                              |
+| <span data-ttu-id="2c9ae-285">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-285">POS API</span></span>                              |
 |--------------------------------------|
-| <span data-ttu-id="05cfa-284">GetOrgUnitConfigurationClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-284">GetOrgUnitConfigurationClientRequest</span></span> |
-| <span data-ttu-id="05cfa-285">GetOrgUnitTenderTypesClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-285">GetOrgUnitTenderTypesClientRequest</span></span>   |
-| <span data-ttu-id="05cfa-286">InventoryLookupOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-286">InventoryLookupOperationRequest</span></span>      |
+| <span data-ttu-id="2c9ae-286">GetOrgUnitConfigurationClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-286">GetOrgUnitConfigurationClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-287">GetOrgUnitTenderTypesClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-287">GetOrgUnitTenderTypesClientRequest</span></span>   |
+| <span data-ttu-id="2c9ae-288">InventoryLookupOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-288">InventoryLookupOperationRequest</span></span>      |
 
-### <a name="products"></a><span data-ttu-id="05cfa-287">製品</span><span class="sxs-lookup"><span data-stu-id="05cfa-287">Products</span></span>
+### <a name="products"></a><span data-ttu-id="2c9ae-289">製品</span><span class="sxs-lookup"><span data-stu-id="2c9ae-289">Products</span></span>
 
-<span data-ttu-id="05cfa-288">次に、製品に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-288">The following is a list of APIs exposed to perform products-related functionality.</span></span>
+<span data-ttu-id="2c9ae-290">次に、製品に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-290">The following is a list of APIs exposed to perform products-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-289">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-289">POS API</span></span>                                    |
+| <span data-ttu-id="2c9ae-291">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-291">POS API</span></span>                                    |
 |--------------------------------------------|
-| <span data-ttu-id="05cfa-290">GetProductsByIdsClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-290">GetProductsByIdsClientRequest</span></span>              |
-| <span data-ttu-id="05cfa-291">GetCurrentProductCatalogStoreClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-291">GetCurrentProductCatalogStoreClientRequest</span></span> |
-| <span data-ttu-id="05cfa-292">SelectProductVariantClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-292">SelectProductVariantClientRequest</span></span>          |
-| <span data-ttu-id="05cfa-293">GetSerialNumberClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-293">GetSerialNumberClientRequest</span></span>               |
-| <span data-ttu-id="05cfa-294">GetRefinerValuesByTextServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-294">GetRefinerValuesByTextServiceRequest</span></span>       |
-| <span data-ttu-id="05cfa-295">SelectProductClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-295">SelectProductClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-292">GetProductsByIdsClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-292">GetProductsByIdsClientRequest</span></span>              |
+| <span data-ttu-id="2c9ae-293">GetCurrentProductCatalogStoreClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-293">GetCurrentProductCatalogStoreClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-294">SelectProductVariantClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-294">SelectProductVariantClientRequest</span></span>          |
+| <span data-ttu-id="2c9ae-295">GetSerialNumberClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-295">GetSerialNumberClientRequest</span></span>               |
+| <span data-ttu-id="2c9ae-296">GetRefinerValuesByTextServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-296">GetRefinerValuesByTextServiceRequest</span></span>       |
+| <span data-ttu-id="2c9ae-297">SelectProductClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-297">SelectProductClientRequest</span></span> |
 
-### <a name="salesorders"></a><span data-ttu-id="05cfa-296">SalesOrders</span><span class="sxs-lookup"><span data-stu-id="05cfa-296">SalesOrders</span></span>
+### <a name="salesorders"></a><span data-ttu-id="2c9ae-298">SalesOrders</span><span class="sxs-lookup"><span data-stu-id="2c9ae-298">SalesOrders</span></span>
 
-<span data-ttu-id="05cfa-297">次に、販売注文に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-297">The following is a list of APIs exposed to perform sales orders-related functionality.</span></span>
+<span data-ttu-id="2c9ae-299">次に、販売注文に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-299">The following is a list of APIs exposed to perform sales orders-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-298">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-298">POS API</span></span>                                          |
+| <span data-ttu-id="2c9ae-300">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-300">POS API</span></span>                                          |
 |--------------------------------------------------|
-| <span data-ttu-id="05cfa-299">GetReceiptsClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-299">GetReceiptsClientRequest</span></span>                         |
-| <span data-ttu-id="05cfa-300">RegisterPrintReceiptCopyEventRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-300">RegisterPrintReceiptCopyEventRequest</span></span>             |
-| <span data-ttu-id="05cfa-301">GetSalesOrderDetailsByTransactionIdClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-301">GetSalesOrderDetailsByTransactionIdClientRequest</span></span> |
-| <span data-ttu-id="05cfa-302">GetGiftReceiptsClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-302">GetGiftReceiptsClientRequest</span></span>                     |
-| <span data-ttu-id="05cfa-303">RegisterPrintReceiptCopyEventRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-303">RegisterPrintReceiptCopyEventRequest</span></span>             |
-| <span data-ttu-id="05cfa-304">MarkAsPickedServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-304">MarkAsPickedServiceRequest</span></span>                       |
-| <span data-ttu-id="05cfa-305">PrintPackingSlipClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-305">PrintPackingSlipClientRequest</span></span>                    |
-| <span data-ttu-id="05cfa-306">PickUpCustomerOrderLinesClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-306">PickUpCustomerOrderLinesClientRequest</span></span>            |
+| <span data-ttu-id="2c9ae-301">GetReceiptsClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-301">GetReceiptsClientRequest</span></span>                         |
+| <span data-ttu-id="2c9ae-302">RegisterPrintReceiptCopyEventRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-302">RegisterPrintReceiptCopyEventRequest</span></span>             |
+| <span data-ttu-id="2c9ae-303">GetSalesOrderDetailsByTransactionIdClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-303">GetSalesOrderDetailsByTransactionIdClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-304">GetGiftReceiptsClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-304">GetGiftReceiptsClientRequest</span></span>                     |
+| <span data-ttu-id="2c9ae-305">RegisterPrintReceiptCopyEventRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-305">RegisterPrintReceiptCopyEventRequest</span></span>             |
+| <span data-ttu-id="2c9ae-306">MarkAsPickedServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-306">MarkAsPickedServiceRequest</span></span>                       |
+| <span data-ttu-id="2c9ae-307">PrintPackingSlipClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-307">PrintPackingSlipClientRequest</span></span>                    |
+| <span data-ttu-id="2c9ae-308">PickUpCustomerOrderLinesClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-308">PickUpCustomerOrderLinesClientRequest</span></span>            |
 
 
-### <a name="shifts"></a><span data-ttu-id="05cfa-307">シフト</span><span class="sxs-lookup"><span data-stu-id="05cfa-307">Shifts</span></span>
+### <a name="shifts"></a><span data-ttu-id="2c9ae-309">シフト</span><span class="sxs-lookup"><span data-stu-id="2c9ae-309">Shifts</span></span>
 
-<span data-ttu-id="05cfa-308">次に、シフトに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-308">The following is a list of APIs exposed to perform shifts-related functionality.</span></span>
+<span data-ttu-id="2c9ae-310">次に、シフトに関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-310">The following is a list of APIs exposed to perform shifts-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-309">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-309">POS API</span></span>                    |
+| <span data-ttu-id="2c9ae-311">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-311">POS API</span></span>                    |
 |----------------------------|
-| <span data-ttu-id="05cfa-310">CloseShiftOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-310">CloseShiftOperationRequest</span></span> |
-| <span data-ttu-id="05cfa-311">CloseShiftOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-311">CloseShiftOperationRequest</span></span> |
+| <span data-ttu-id="2c9ae-312">CloseShiftOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-312">CloseShiftOperationRequest</span></span> |
+| <span data-ttu-id="2c9ae-313">CloseShiftOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-313">CloseShiftOperationRequest</span></span> |
 
-### <a name="stockcountjournals"></a><span data-ttu-id="05cfa-312">StockCountJournals</span><span class="sxs-lookup"><span data-stu-id="05cfa-312">StockCountJournals</span></span>
+### <a name="stockcountjournals"></a><span data-ttu-id="2c9ae-314">StockCountJournals</span><span class="sxs-lookup"><span data-stu-id="2c9ae-314">StockCountJournals</span></span>
 
-<span data-ttu-id="05cfa-313">次に、在庫数仕訳帳に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-313">The following is a list of APIs exposed to perform stock count journals-related functionality.</span></span>
+<span data-ttu-id="2c9ae-315">次に、在庫数仕訳帳に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-315">The following is a list of APIs exposed to perform stock count journals-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-314">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-314">POS API</span></span>                                |
+| <span data-ttu-id="2c9ae-316">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-316">POS API</span></span>                                |
 |----------------------------------------|
-| <span data-ttu-id="05cfa-315">SyncAllStockCountJournalsClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-315">SyncAllStockCountJournalsClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-317">SyncAllStockCountJournalsClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-317">SyncAllStockCountJournalsClientRequest</span></span> |
 
-### <a name="storeoperations"></a><span data-ttu-id="05cfa-316">StoreOperations</span><span class="sxs-lookup"><span data-stu-id="05cfa-316">StoreOperations</span></span>
+### <a name="storeoperations"></a><span data-ttu-id="2c9ae-318">StoreOperations</span><span class="sxs-lookup"><span data-stu-id="2c9ae-318">StoreOperations</span></span>
 
-<span data-ttu-id="05cfa-317">次に、店舗運営に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="05cfa-317">The following is a list of APIs exposed to perform store operations-related functionality.</span></span>
+<span data-ttu-id="2c9ae-319">次に、店舗運営に関連する機能を実行する公開されている API の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="2c9ae-319">The following is a list of APIs exposed to perform store operations-related functionality.</span></span>
 
-| <span data-ttu-id="05cfa-318">POS API</span><span class="sxs-lookup"><span data-stu-id="05cfa-318">POS API</span></span>                                         |
+| <span data-ttu-id="2c9ae-320">POS API</span><span class="sxs-lookup"><span data-stu-id="2c9ae-320">POS API</span></span>                                         |
 |-------------------------------------------------|
-| <span data-ttu-id="05cfa-319">DeclareStartingAmountClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-319">DeclareStartingAmountClientRequest</span></span>              |
-| <span data-ttu-id="05cfa-320">GetSalesOrdersWithNoFiscalTransactionsRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-320">GetSalesOrdersWithNoFiscalTransactionsRequest</span></span>   |
-| <span data-ttu-id="05cfa-321">RegisterCustomAuditEventClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-321">RegisterCustomAuditEventClientRequest</span></span>           |
-| <span data-ttu-id="05cfa-322">GetOfflinePendingTransactionCountClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-322">GetOfflinePendingTransactionCountClientRequest</span></span>  |
-| <span data-ttu-id="05cfa-323">SaveFiscalTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-323">SaveFiscalTransactionClientRequest</span></span>              |
-| <span data-ttu-id="05cfa-324">SafeDropOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-324">SafeDropOperationRequest</span></span>                        |
-| <span data-ttu-id="05cfa-325">TenderDeclarationOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-325">TenderDeclarationOperationRequest</span></span>               |
-| <span data-ttu-id="05cfa-326">TenderRemovalOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-326">TenderRemovalOperationRequest</span></span>                   |
-| <span data-ttu-id="05cfa-327">CreateBankDropTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-327">CreateBankDropTransactionClientRequest</span></span>          |
-| <span data-ttu-id="05cfa-328">CreateFloatEntryTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-328">CreateFloatEntryTransactionClientRequest</span></span>        |
-| <span data-ttu-id="05cfa-329">CreateStartingAmountTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-329">CreateStartingAmountTransactionClientRequest</span></span>    |
-| <span data-ttu-id="05cfa-330">CreateTenderDeclarationTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-330">CreateTenderDeclarationTransactionClientRequest</span></span> |
-| <span data-ttu-id="05cfa-331">CreateTenderRemovalTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-331">CreateTenderRemovalTransactionClientRequest</span></span>     |
-| <span data-ttu-id="05cfa-332">GetDenominationTotalsClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-332">GetDenominationTotalsClientRequest</span></span>              |
-| <span data-ttu-id="05cfa-333">SelectZipCodeInfoClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-333">SelectZipCodeInfoClientRequest</span></span>                  |
-| <span data-ttu-id="05cfa-334">CreateSafeDropTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-334">CreateSafeDropTransactionClientRequest</span></span>          |
-| <span data-ttu-id="05cfa-335">GetTenderDetailsClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-335">GetTenderDetailsClientRequest</span></span>                   |
-| <span data-ttu-id="05cfa-336">LoyaltyCardPointsBalanceOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-336">LoyaltyCardPointsBalanceOperationRequest</span></span>        |
-| <span data-ttu-id="05cfa-337">GetCommissionSalesGroupsServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-337">GetCommissionSalesGroupsServiceRequest</span></span>          |
-| <span data-ttu-id="05cfa-338">GetCurrenciesServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-338">GetCurrenciesServiceRequest</span></span>                     |
-| <span data-ttu-id="05cfa-339">GetSrsReportDataSetServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-339">GetSrsReportDataSetServiceRequest</span></span>               |
-| <span data-ttu-id="05cfa-340">SearchCommissionSalesGroupsServiceRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-340">SearchCommissionSalesGroupsServiceRequest</span></span>       |
-| <span data-ttu-id="05cfa-341">IssueLoyaltyCardOperationRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-341">IssueLoyaltyCardOperationRequest</span></span>                |
-| <span data-ttu-id="05cfa-342">GetPickingAndReceivingOrdersClientRequest</span><span class="sxs-lookup"><span data-stu-id="05cfa-342">GetPickingAndReceivingOrdersClientRequest</span></span>       |
+| <span data-ttu-id="2c9ae-321">DeclareStartingAmountClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-321">DeclareStartingAmountClientRequest</span></span>              |
+| <span data-ttu-id="2c9ae-322">GetSalesOrdersWithNoFiscalTransactionsRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-322">GetSalesOrdersWithNoFiscalTransactionsRequest</span></span>   |
+| <span data-ttu-id="2c9ae-323">RegisterCustomAuditEventClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-323">RegisterCustomAuditEventClientRequest</span></span>           |
+| <span data-ttu-id="2c9ae-324">GetOfflinePendingTransactionCountClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-324">GetOfflinePendingTransactionCountClientRequest</span></span>  |
+| <span data-ttu-id="2c9ae-325">SaveFiscalTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-325">SaveFiscalTransactionClientRequest</span></span>              |
+| <span data-ttu-id="2c9ae-326">SafeDropOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-326">SafeDropOperationRequest</span></span>                        |
+| <span data-ttu-id="2c9ae-327">TenderDeclarationOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-327">TenderDeclarationOperationRequest</span></span>               |
+| <span data-ttu-id="2c9ae-328">TenderRemovalOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-328">TenderRemovalOperationRequest</span></span>                   |
+| <span data-ttu-id="2c9ae-329">CreateBankDropTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-329">CreateBankDropTransactionClientRequest</span></span>          |
+| <span data-ttu-id="2c9ae-330">CreateFloatEntryTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-330">CreateFloatEntryTransactionClientRequest</span></span>        |
+| <span data-ttu-id="2c9ae-331">CreateStartingAmountTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-331">CreateStartingAmountTransactionClientRequest</span></span>    |
+| <span data-ttu-id="2c9ae-332">CreateTenderDeclarationTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-332">CreateTenderDeclarationTransactionClientRequest</span></span> |
+| <span data-ttu-id="2c9ae-333">CreateTenderRemovalTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-333">CreateTenderRemovalTransactionClientRequest</span></span>     |
+| <span data-ttu-id="2c9ae-334">GetDenominationTotalsClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-334">GetDenominationTotalsClientRequest</span></span>              |
+| <span data-ttu-id="2c9ae-335">SelectZipCodeInfoClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-335">SelectZipCodeInfoClientRequest</span></span>                  |
+| <span data-ttu-id="2c9ae-336">CreateSafeDropTransactionClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-336">CreateSafeDropTransactionClientRequest</span></span>          |
+| <span data-ttu-id="2c9ae-337">GetTenderDetailsClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-337">GetTenderDetailsClientRequest</span></span>                   |
+| <span data-ttu-id="2c9ae-338">LoyaltyCardPointsBalanceOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-338">LoyaltyCardPointsBalanceOperationRequest</span></span>        |
+| <span data-ttu-id="2c9ae-339">GetCommissionSalesGroupsServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-339">GetCommissionSalesGroupsServiceRequest</span></span>          |
+| <span data-ttu-id="2c9ae-340">GetCurrenciesServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-340">GetCurrenciesServiceRequest</span></span>                     |
+| <span data-ttu-id="2c9ae-341">GetSrsReportDataSetServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-341">GetSrsReportDataSetServiceRequest</span></span>               |
+| <span data-ttu-id="2c9ae-342">SearchCommissionSalesGroupsServiceRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-342">SearchCommissionSalesGroupsServiceRequest</span></span>       |
+| <span data-ttu-id="2c9ae-343">IssueLoyaltyCardOperationRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-343">IssueLoyaltyCardOperationRequest</span></span>                |
+| <span data-ttu-id="2c9ae-344">GetPickingAndReceivingOrdersClientRequest</span><span class="sxs-lookup"><span data-stu-id="2c9ae-344">GetPickingAndReceivingOrdersClientRequest</span></span>       |
 
 

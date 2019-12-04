@@ -17,15 +17,15 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 3eecc87c4d2aa9c03b2c1c925e5c0e030624e0f0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 919b4b5e95fa3acaeb958ef8dd4354082d1e83ac
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191825"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812041"
 ---
-# <a name="mobile-platform"></a><span data-ttu-id="a0b4d-103">モバイル プラットフォーム</span><span class="sxs-lookup"><span data-stu-id="a0b4d-103">Mobile platform</span></span>
+# <a name="mobile-platform"></a><span data-ttu-id="163e7-103">モバイル プラットフォーム</span><span class="sxs-lookup"><span data-stu-id="163e7-103">Mobile platform</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="a0b4d-104">このトピックは、[[モバイル プラットフォームの基本情報](mobile-platform-getting-started.md)] および [[モバイル アプリ プラットフォームのアーキテクチャと設計に関する考慮事項](mobile-platform-architecture.md)] のトピックに置き換えられました。</span><span class="sxs-lookup"><span data-stu-id="a0b4d-104">This topic has been replaced with the [Getting started with the mobile platform](mobile-platform-getting-started.md) and [Architecture and design considerations for the mobile app platform](mobile-platform-architecture.md) topics.</span></span>
+<span data-ttu-id="163e7-104">このトピックは、 [モバイル プラットフォームを使い始める](mobile-platform-getting-started.md) および [モバイル プラットフォームのアーキテクチャと設計の考慮事項](mobile-platform-architecture.md) のトピックに置き換えられました。</span><span class="sxs-lookup"><span data-stu-id="163e7-104">This topic has been replaced with the [Get started with the mobile platform](mobile-platform-getting-started.md) and [Architecture and design considerations for the mobile platform](mobile-platform-architecture.md) topics.</span></span>

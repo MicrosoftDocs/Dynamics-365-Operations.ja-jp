@@ -17,19 +17,20 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 6505f766e539a538a6f1d00f250fd8e26795dd66
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e7c3952334d256b7c92748becd59026d8bcb8439
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183266"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812071"
 ---
-# <a name="code-upgrade-service-user-guide"></a><span data-ttu-id="95ae9-104">コード アップグレード サービス ユーザー ガイド</span><span class="sxs-lookup"><span data-stu-id="95ae9-104">Code Upgrade Service user guide</span></span>
+# <a name="code-upgrade-service-user-guide"></a><span data-ttu-id="f14b2-104">コード アップグレード サービス ユーザー ガイド</span><span class="sxs-lookup"><span data-stu-id="f14b2-104">Code Upgrade Service user guide</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="95ae9-105">コード アップグレード サービスは使用されなくなりました。</span><span class="sxs-lookup"><span data-stu-id="95ae9-105">The Code Upgrade Service has been deprecated.</span></span> <span data-ttu-id="95ae9-106">アップグレード分析ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="95ae9-106">Use the Upgrade analysis tool.</span></span> <span data-ttu-id="95ae9-107">詳細については、[アップグレード分析 (Lifecycle Services, LCS)](upgrade-analysis-lcs.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="95ae9-107">For more information, see [Upgrade analysis (Lifecycle Services, LCS)](upgrade-analysis-lcs.md).</span></span>
-<span data-ttu-id="95ae9-108">[Lifecycle Services に移動](https://lcs.dynamics.com).</span><span class="sxs-lookup"><span data-stu-id="95ae9-108">[Go to Lifecycle Services](https://lcs.dynamics.com).</span></span>
+<span data-ttu-id="f14b2-105">コード アップグレード サービスは使用されなくなりました。</span><span class="sxs-lookup"><span data-stu-id="f14b2-105">The Code Upgrade Service has been deprecated.</span></span> <span data-ttu-id="f14b2-106">アップグレード分析ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="f14b2-106">Use the Upgrade analysis tool.</span></span> <span data-ttu-id="f14b2-107">詳細については、 [Lifecycle Services (LCS) におけるアップグレード分析](upgrade-analysis-lcs.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f14b2-107">For more information, see [Upgrade analysis in Lifecycle Services (LCS)](upgrade-analysis-lcs.md).</span></span>
+
+<span data-ttu-id="f14b2-108">[Lifecycle Services に移動](https://lcs.dynamics.com).</span><span class="sxs-lookup"><span data-stu-id="f14b2-108">[Go to Lifecycle Services](https://lcs.dynamics.com).</span></span>
 
 
 

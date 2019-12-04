@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b6e009e60100d32e3e96fa9d63fbfc447bf3dcf9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 93d54a0c8d36b1e089212b6f5715c7ab8689891b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183267"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811707"
 ---
-# <a name="cloud-hosted-environments-in-lifecycle-services-lcs"></a><span data-ttu-id="54b01-103">Lifecycle Services (LCS) のクラウド ホスト環境</span><span class="sxs-lookup"><span data-stu-id="54b01-103">Cloud-hosted environments in Lifecycle Services (LCS)</span></span>
+# <a name="cloud-hosted-environments-in-lifecycle-services-lcs"></a><span data-ttu-id="e98c0-103">Lifecycle Services (LCS) のクラウド ホスト環境</span><span class="sxs-lookup"><span data-stu-id="e98c0-103">Cloud-hosted environments in Lifecycle Services (LCS)</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="54b01-104">Microsoft Dynamics Lifecycle Services では、クラウド ホスト環境は、Microsoft Azure 上に Microsoft Dynamics AX 環境を配置するツールです。</span><span class="sxs-lookup"><span data-stu-id="54b01-104">In Microsoft Dynamics Lifecycle Services, Cloud-hosted environments is a tool that you can use to deploy Microsoft Dynamics AX environments on Microsoft Azure.</span></span>
+<span data-ttu-id="e98c0-104">Microsoft Dynamics Lifecycle Services では、クラウド ホスト環境は、Microsoft Azure 上に Microsoft Dynamics AX 環境を配置するツールです。</span><span class="sxs-lookup"><span data-stu-id="e98c0-104">In Microsoft Dynamics Lifecycle Services, Cloud-hosted environments is a tool that you can use to deploy Microsoft Dynamics AX environments on Microsoft Azure.</span></span>
 
-<span data-ttu-id="54b01-105">クラウド ホスト環境ツールを使用するとき、デモまたは開発者/テスト環境などの、配置する Microsoft Dynamics AX 環境のタイプを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="54b01-105">When you use the Cloud-hosted environments tool, you’ll need to select the type of Microsoft Dynamics AX environment that you want to deploy, such as a demo or developer/test environment.</span></span> <span data-ttu-id="54b01-106">この選択に基づいて、クラウド ホスト環境ツールは Azure の仮想マシンの適切な番号を提供します。</span><span class="sxs-lookup"><span data-stu-id="54b01-106">Based on your selection, the Cloud-hosted environments tool provisions the appropriate number of virtual machines in Azure.</span></span> <span data-ttu-id="54b01-107">これらの仮想マシンには、 Microsoft Dynamics AX コンポーネント (および前もって必要な物すべて) がインストール済みです。</span><span class="sxs-lookup"><span data-stu-id="54b01-107">These virtual machines have Microsoft Dynamics AX components (and all of their prerequisites) already installed on them.</span></span> <span data-ttu-id="54b01-108">Azure 上に Microsoft Dynamics AX 環境を配置する方法の詳しい手順については、[Lifecycle Services (LCS) を使用して Azure 上に Microsoft Dynamics AX 2012 R3 を配置する](deploy-2012-r3-azure-lcs.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="54b01-108">For detailed instructions about how to deploy Microsoft Dynamics AX environments on Azure, see [Deploy Microsoft Dynamics AX 2012 R3 on Azure using Lifecycle Services (LCS)](deploy-2012-r3-azure-lcs.md).</span></span>
+<span data-ttu-id="e98c0-105">クラウド ホスト環境ツールを使用するとき、デモまたは開発者/テスト環境などの、配置する Microsoft Dynamics AX 環境のタイプを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e98c0-105">When you use the Cloud-hosted environments tool, you’ll need to select the type of Microsoft Dynamics AX environment that you want to deploy, such as a demo or developer/test environment.</span></span> <span data-ttu-id="e98c0-106">この選択に基づいて、クラウド ホスト環境ツールは Azure の仮想マシンの適切な番号を提供します。</span><span class="sxs-lookup"><span data-stu-id="e98c0-106">Based on your selection, the Cloud-hosted environments tool provisions the appropriate number of virtual machines in Azure.</span></span> <span data-ttu-id="e98c0-107">これらの仮想マシンには、 Microsoft Dynamics AX コンポーネント (および前もって必要な物すべて) がインストール済みです。</span><span class="sxs-lookup"><span data-stu-id="e98c0-107">These virtual machines have Microsoft Dynamics AX components (and all of their prerequisites) already installed on them.</span></span> <span data-ttu-id="e98c0-108">Azure 上に Microsoft Dynamics AX 環境を配置する方法の詳しい手順については、 [Lifecycle Services (LCS) を使用して Azure 上に AX 2012 R3 を配置する](deploy-2012-r3-azure-lcs.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e98c0-108">For detailed instructions about how to deploy Microsoft Dynamics AX environments on Azure, see [Deploy AX 2012 R3 on Azure by using Lifecycle Services (LCS)](deploy-2012-r3-azure-lcs.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="54b01-109">Dynamics AX 2012 R3 は、オンプレミスにも配置できます。</span><span class="sxs-lookup"><span data-stu-id="54b01-109">Dynamics AX 2012 R3 can also be deployed on-premises.</span></span> <span data-ttu-id="54b01-110">詳細については [Microsoft Dynamics AX 2012 のインストール](https://technet.microsoft.com/library/dd362138.aspx) のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="54b01-110">For details, see the topic [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/library/dd362138.aspx)</span></span>
+> <span data-ttu-id="e98c0-109">Dynamics AX 2012 R3 は、オンプレミスにも配置できます。</span><span class="sxs-lookup"><span data-stu-id="e98c0-109">Dynamics AX 2012 R3 can also be deployed on-premises.</span></span> <span data-ttu-id="e98c0-110">詳細については [Microsoft Dynamics AX 2012 のインストール](https://technet.microsoft.com/library/dd362138.aspx) のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e98c0-110">For details, see the topic [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/library/dd362138.aspx)</span></span>
 
 
 
