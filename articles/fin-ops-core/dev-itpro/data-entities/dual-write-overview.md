@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d70bce4e47c05a7974c1b974fdca17682e5370aa
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550860"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772390"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>ほぼリアルタイムの Common Data Service とのデータ統合
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 現在のデジタル世界では、ビジネス エコシステムが全体として Microsoft Dynamics 365 アプリケーションを使用しています。 人材、顧客、運用、およびインターネット オブ シングス (IoT) デバイスからのデータが 1 つのソースに流れ込むため、デジタル フィードバック ループの営業案件があります。 このエクスペリエンスを実現するには、Finance and Operations アプリとその他の Dynamics 365 アプリケーション間の統合が不可欠です。 一部のアプリケーションは、Common Data Service の上に構築されています。 Finance and Operations アプリのデータと Common Data Service 間の統合は、他のアプリケーションが Finance and Operations に一貫して流ちょうに通信できるようにします。
 
@@ -38,13 +36,16 @@ Finance and Operations アプリと Common Data Service は、デュアル書き
 
 ![アーキテクチャの概要図](media/dual-write-overview.jpg)
 
-お客様には、以下のバリュー プロポジションを利用できます。
+以下のバリュー プロポジションを利用できます。
 
 + [Common Data Service の組織階層](dual-write-organization.md)
 + [Common Data Service 企業理念](dual-write-company.md)
 + [統合済み顧客マスター](dual-write-customer.md)
++ [統合された元帳](dual-write-ledger.md)
++ [統一された製品経験](dual-write-product.md)
 + [統合済み仕入先マスター](dual-write-vendor.md)
-+ 統合製品マスター
++ [統合されたサイトおよび倉庫](dual-write-sites-and-warehouses.md)
++ [統合された税マスター](dual-write-tax.md)
 
 ## <a name="system-requirements"></a>システム要件
 

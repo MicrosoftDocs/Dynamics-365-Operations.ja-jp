@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b014e4d9f1036bf393a1dae0115fbabf370d8a77
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2af454f1efc2b4f13e62ca872ec0eec0e521efe1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183228"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811700"
 ---
 # <a name="troubleshoot-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 配置のトラブルシューティング
 
@@ -71,7 +71,7 @@ Dynamics AX クライアントは、再起動後または最初のログイン�
 カーネルは累積型であるため、最新のカーネルはこちらを参照してください。<https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/>
 
 ## <a name="how-do-i-monitor-for-storage-account-throttling"></a>ストレージ アカウントのスロットルを監視するにはどうすればよいですか。
-ストレージ アカウントのスロットルを監視するには、[[ストレージ アカウントのスロットルを監視する方法](https://blogs.msdn.microsoft.com/mast/2014/08/02/how-to-monitor-for-storage-account-throttling/)] を参照してください。 ストレージが制限されているときに通知するには、警告および通知を利用できます。 これが発生している場合、複数の Azure コネクタや LCS プロジェクトの活用に関する情報については、[Azure で Microsoft Dynamics AX 2012 R3 の展開を計画](plan-2012-r3-deployment-azure.md) というトピックを参照します。
+ストレージ アカウントのスロットルを監視するには、[[ストレージ アカウントのスロットルを監視する方法](https://blogs.msdn.microsoft.com/mast/2014/08/02/how-to-monitor-for-storage-account-throttling/)] を参照してください。 ストレージが制限されているときに通知するには、警告および通知を利用できます。 これが発生している場合、複数の Azure コネクタや LCS プロジェクトの活用に関する情報については、[Azure で AX 2012 R3 の配置を計画する](plan-2012-r3-deployment-azure.md)というトピックを参照します。
 
 ## <a name="how-do-i-contact-support"></a>サポートに連絡するにはどうすればよいですか。
 ライセンスまたは技術的な質問で Microsoft に連絡する必要がある場合は、最初にどのサポート チームに連絡するかを決める必要があります。 以下の情報を参考にして、最良の担当サポート チームを見つけてください。

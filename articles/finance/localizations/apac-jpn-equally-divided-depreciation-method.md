@@ -18,12 +18,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98bbff9aaf1bbd1a112cbae4dd5ed905ecd0c25a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c74075e730f986b633ecc81ea39c8f3e0839ae61
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175797"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772882"
 ---
 # <a name="equally-divided-depreciation-method-for-japan"></a>日本の均等償却方法
 
@@ -100,8 +100,8 @@ Finance が均等減価償却法を使用して減価償却を計算する場合
 ## <a name="can-i-change-the-depreciation-period-for-an-equally-divided-depreciation-profile"></a>均等減価償却法プロファイルの減価償却期間を変更できますか。
 一連番号 **減価償却簿**ページで均等減価償却法プロファイルを選択した場合、減価償却プロファイルの**減価償却プロファイル**ページの**均等償却年数**フィールドの値は変更できません。
 
-## <a name="additional-resources"></a>その他のリソース
-- [固定資産減価償却の FAQ](apac-jpn-fixed-asset-depreciation.md)
+## <a name="additional-resources"></a>追加リソース
+- [日本の固定資産減価償却のよく寄せられる質問](apac-jpn-fixed-asset-depreciation.md)
 - [均等償却を使用した一括比例配分減価償却資産の作成](./tasks/create-lump-sum-depreciation-assets-equally-divided-method.md)
 
 

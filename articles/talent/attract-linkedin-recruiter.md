@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent - Attract の LinkedIn Recruiter を使用した候補者のソーシング
+title: Attract の LinkedIn Recruiter を使用した候補者のソーシング
 description: Microsoft Dynamics 365 Talent - Attract が提供する LinkedIn 統合を使用して、LinkedIn Recruiter から職務候補者をソース化します。
 author: andreabichsel
 manager: AnnBe
@@ -19,15 +19,16 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8f2e95e74bbc8d78ed5d970f29b61150a45c6740
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e05b902d745c26c08d1bac133991f51fd58c3e93
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551567"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833049"
 ---
-# <a name="source-candidates-with-linkedin-recruiter-in-microsoft-dynamics-365-talent---attract"></a>Microsoft Dynamics 365 Talent - Attract の LinkedIn Recruiter を使用した候補者のソーシング
-[!include[banner](../includes/banner.md)]
+# <a name="source-candidates-with-linkedin-recruiter-in-attract"></a>Attract の LinkedIn Recruiter を使用した候補者のソーシング
+
+[!include [banner](includes/banner.md)]
 
 LinkedIn は世界最大のオンライン プロフェッショナル ネットワークで、世界の最高の人材へのアクセスを提供します。 Microsoft Dynamics 365 Talent: Attract では LinkedIn から直接候補者をソース化できます。 したがって、空いている職位を埋めるために必要な人材を見つけるのはこれまで以上に簡単です。 Attract を通じて LinkedIn との接続を設定した後、ワンクリックで職位の LinkedIn 候補者を表示し、Attract にエクスポートできます。
 
@@ -100,12 +101,12 @@ LinkedIn Recruiter では、候補者が組織内の他の職務に応募した�
 
 ## <a name="see-also"></a>参照
 
-[LinkedIn に関するよく寄せられる質問](./attract-linkedin-faq.md)
+[LinkedIn に関するよく寄せられる質問との Attract 統合](./attract-linkedin-faq.md)
 
-[LinkedIn との統合の設定](./attract-admin-linkedin.md)
+[Microsoft Dynamics 365 Talent - Attract の LinkedIn との統合の設定](./attract-admin-linkedin.md)
 
-[職務の作成](./creating-jobs-attract.md)
+[Attract でジョブ求人の作成、承認、および投稿](./creating-jobs-attract.md)
 
-[Attract から LinkedIn への職務の投稿](./attract-post-jobs-to-linkedin.md)
+[Microsoft Dynamics 365 Talent - Attract から LinkedIn への職務の投稿](./attract-post-jobs-to-linkedin.md)
 
-[LinkedIn との統合のトラブルシューティング](./attract-troubleshoot-linkedin.md)
+[LinkedIn と Microsoft Dynamics 365 Talent - Attract との統合のトラブルシューティング](./attract-troubleshoot-linkedin.md)

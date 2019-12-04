@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37bb02dfc9cfcb3e2c1dcda446be3945563d6594
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: d326480cc03d80d1ce27f8762e300dca3b0d325e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570583"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770646"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>[発生元] フィールドでの売上税計算方法
 
@@ -122,12 +122,12 @@ SALESTAX: [発生元] = [正味金額の割合]。[売上税の前に計算] オ
 
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[[基準金額] および [計算方法] フィールドに基づいた、売上税の税率の決定](marginal-base-field.md)
+[基準金額および計算方法に基づいた、売上税の税率](marginal-base-field.md)
 
-[売上税コードの合計額と間隔計算オプション](whole-amount-interval-options-sales-tax-codes.md)
+[消費税コードの合計額と間隔計算オプション](whole-amount-interval-options-sales-tax-codes.md)
 
 
 

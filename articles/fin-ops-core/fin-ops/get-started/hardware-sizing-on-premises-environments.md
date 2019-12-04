@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 6e83a2607f4840139143fb473ef7d6daf4b8b7ad
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180671"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812560"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>オンプレミス環境のハードウェアのサイズ設定要件
 
 [!include [banner](../includes/banner.md)]
 
-オンプレミス環境におけるハードウェアおよびインフラストラチャのサイズ設定のプロセスを開始する前に、[システム要件](system-requirements.md)および[セットアップおよび配置の指示](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md)に精通し、基盤となるインフラストラクチャを確実に把握します。
+オンプレミス環境におけるハードウェアおよびインフラストラチャのサイズ設定のプロセスを開始する前に、[クラウド配置のシステム要件](system-requirements.md) および[セットアップおよび配置の指示](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) に精通し、基盤となるインフラストラクチャを確実に把握します。
 
 > [!NOTE]
 > 最適なパフォーマンスを得るには、システム設定のベストプラクティスに十分注意します。

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 88979dcce14c9159ac47f8c029e6ecb335c86510
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 19701aa44f0db17b4f1dc4cca06a0e6f0cd31ec3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025542"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811945"
 ---
 # <a name="set-up-new-environments-azure-devops-and-branches-for-retail-projects"></a>Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 
@@ -340,6 +340,6 @@ LCS から配置する際、**PRODREL1** をエージェント プールの名�
 
 ## <a name="additional-resources"></a>その他のリソース
 
-[コードおよび小売プロジェクトの環境の更新](./updating-environments.md)
+[Retail プロジェクトのコードと環境の更新](./updating-environments.md)
 
-[テストおよびパフォーマンス](./retail-implementation-testing-performance.md)
+[テストおよびパフォーマンスに関する問題](./retail-implementation-testing-performance.md)

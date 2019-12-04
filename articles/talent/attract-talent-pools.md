@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent - Attract の人材プールを使用した候補者のソーシング
+title: Attract の人材プールを使用した候補者のソーシング
 description: このトピックでは、Microsoft Dynamics 365 Talent - Attractの人材プールを作成および設定する方法について説明します。
 author: andreabichsel
 manager: AnnBe
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 454ba987eef924d520af17e8b9ae694fe9b82ec2
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ea10ccd5e4b1f1ffbb8f736e886240e223a4eeb3
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551121"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833026"
 ---
-# <a name="source-candidates-with-talent-pools-in-microsoft-dynamics-365-talent---attract"></a>Microsoft Dynamics 365 Talent - Attract の人材プールを使用した候補者のソーシング
+# <a name="source-candidates-with-talent-pools-in-attract"></a>Attract の人材プールを使用した候補者のソーシング
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 採用担当者および採用マネージャーは、Attract の人材プール機能を使用して、その候補者を整理することができます。 人材プールは、番号の追跡を助け、社内のジョブに対して適用されるすべての候補者と連携を可能にします。
 
@@ -116,7 +115,7 @@ ms.locfileid: "2551121"
 
     ドキュメントを表示するには、ドキュメント リストでドキュメント名を選択します。 Microsoft Office 365 を使用して、アプリケーションの Microsoft Word ドキュメントを表示できます。 各ドキュメントの**ダウンロード**オプションを使用して、ドキュメントをローカル コンピューターにダウンロードすることもできます。
 
-- **LinkedIn** タブを使用して、候補者の LinkedIn 情報を表示します。 このタブを使用するには、ユーザー設定で LinkedIn アカウントを接続する必要があり、自身の環境 LinkedIn Recruiter の接続は確立されている必要があります。 詳細については、[LinkedIn Recruiter によるソーシング](./attract-linkedin-recruiter.md) を参照してください。
+- **LinkedIn** タブを使用して、候補者の LinkedIn 情報を表示します。 このタブを使用するには、ユーザー設定で LinkedIn アカウントを接続する必要があり、自身の環境 LinkedIn Recruiter の接続は確立されている必要があります。 詳細については、[Microsoft Dynamics 365 Talent - Attract での、LinkedIn Recruiter を使用した候補者のソーシング](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > 候補者だけが、自分のスキル、学歴、および業務経験を更新できます。

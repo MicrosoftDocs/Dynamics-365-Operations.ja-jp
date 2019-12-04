@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 2b34c5a16314ade90dfb01639a6dc76ef79c907a
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 785a29f442feb173ef26ddb1ad87974cf3363698
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627602"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812463"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-platform-update-1-may-2016"></a>Dynamics AX プラットフォーム更新プログラム 1 (2016 年 5 月) の新機能および変更された機能
 
@@ -237,10 +237,10 @@ ms.locfileid: "2627602"
 
 | 何ができますか。 | これは、なぜ重要ですか。 |
 |------------------|------------------------|
-| 新規または更新されたタスク ガイドへのアクセス | タスク ガイドでは、ガイド付きでインタラクティブな方法によって、タスクまたは業務プロセスの手順が説明されています。 Microsoft が提供するタスク ガイドをダウンロードおよびカスタマイズできます。 新規または更新されたタスク ガイドの一覧を表示するには、[[利用可能な新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)] を参照してください。 |
+| 新規または更新されたタスク ガイドへのアクセス | タスク ガイドでは、ガイド付きでインタラクティブな方法によって、タスクまたは業務プロセスの手順が説明されています。 Microsoft が提供するタスク ガイドをダウンロードおよびカスタマイズできます。 新規または更新されたタスク ガイドの一覧を表示するには、[新規または更新されたタスク ガイド (2016年 5月)](new-updated-task-guides-available-may-2016.md) を参照してください。 |
 
 ## <a name="additional-resources"></a>追加リソース
 
-[新機能および変更された機能](whats-new-changed.md)
+[Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
 
-[利用可能な新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
+[新規または更新されたタスク ガイド (2016年 5月)](new-updated-task-guides-available-may-2016.md)

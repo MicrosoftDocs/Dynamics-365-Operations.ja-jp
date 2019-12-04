@@ -15,12 +15,12 @@ ms.custom: 196913
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: dfb63f6309c9cc858fdd66c588c3e0d9b73c68bc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6be3e640f77834a374f0bc54bc815fedd541644f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183284"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811711"
 ---
 # <a name="validate-applications-for-finance-and-operations-apps"></a>Finance and Operations アプリ用のアプリケーションを検証する
 
@@ -98,4 +98,4 @@ AppSource で発行されている生成されたソリューションを使用�
 <a name="additional-resources"></a>追加リソース
 --------
 
-[AppSource のアプリを公開](lcs-solutions-app-source.md)
+[AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)

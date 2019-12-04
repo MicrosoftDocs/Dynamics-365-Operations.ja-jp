@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 10dddaf951abb6acf4027e095745df353edea783
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bf20e2690d42e4d7241eeeb732dcf0132b593864
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183222"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811701"
 ---
 # <a name="business-process-modeler-bpm-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 
@@ -36,7 +36,7 @@ BPM は次のプログラムと互換性があります。
 - **Microsoft Visio** – 業務プロセスのマップを Visio ファイルにエクスポートできます。
 
 > [!NOTE]
-> このトピックに記載されている情報は、Finance and Operations アプリにのみ適用されます。 ビジネス プロセス モデラーおよび Microsoft Dynamics AX 2012 の詳細については、[ビジネス プロセス モデラー](ax-2012/business-process-modeler-lcs.md)を参照してください。 
+> このトピックに記載されている情報は、Finance and Operations アプリにのみ適用されます。 ビジネス プロセス モデラーおよび Microsoft Dynamics AX 2012 の詳細については、 [Lifecycle Services (LCS) における ビジネス プロセス モデラー (BPM)](ax-2012/business-process-modeler-lcs.md)を参照してください。 
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -60,11 +60,11 @@ BPM にアクセスするには、これらの手順に従います。
 
 次のトピックでは、BPM ライブラリを使用して作業する方法について詳しく説明します。
 
-- [BPM ライブラリの作成、編集、または参照](creating-editing-browsing.md)
+- [ビジネス プロセス モデラー (BPM) のライブラリを作成、編集、および参照](creating-editing-browsing.md)
 - [BPM ライブラリと Azure DevOps の同期](synchronize-bpm-vsts.md)
-- [BPM のタスクの完了](complete-tasks-bpm.md)
-- [BPM 付き活動ダイアグラムを使用する](using-activity-diagrams.md)
-- [ビジネス プロセス モデラーの業務プロセス ライブラリ](business-process-libraries-business-process-modeler.md)
-- [ビジネス プロセス モデラーのフローチャート](flowcharts-business-process-modeler.md)
+- [ビジネス プロセス モデラー (BPM) でのタスクの完了](complete-tasks-bpm.md)
+- [ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する](using-activity-diagrams.md)
+- [ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ](business-process-libraries-business-process-modeler.md)
+- [ビジネス プロセス モデラー (BPM) のフローチャート](flowcharts-business-process-modeler.md)
 
 

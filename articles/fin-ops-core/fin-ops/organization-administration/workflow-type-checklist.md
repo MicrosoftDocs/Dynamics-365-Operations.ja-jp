@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 8836a17f8f0f9f8301c15de15900a57766edffc6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0f8b02aa858898501f042200b27e296dced981e8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180476"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811276"
 ---
 # <a name="workflow-type-checklist"></a>ワークフロー タイプ チェックリスト
 
@@ -41,7 +41,7 @@ ms.locfileid: "2180476"
 1. ワークフロー ドキュメント クラスを作成し、ワークフローに使用するクエリをクラスにバインドします。 詳細については、 [新しいワークフロー ドキュメント クラスの作成](workflow-type-document-create.md) を参照してください。
 2. ワークフロー ドキュメント クラスをワークフロー タイプにバインドします。 詳細については、 [ワークフロー ドキュメント クラスとワークフロー タイプの関連付け](workflow-type-associate-document.md) を参照してください。
 3. 開始、完了、コンフィギュレーションの変更、およびキャンセルされたイベントのワークフロー イベント ハンドラーを作成し、イベント ハンドラーをワークフロー タイプにバインドします。 詳細については、 [新しいワークフロー イベント ハンドラーの作成](https://docs.microsoft.com/dynamicsax-2012/developer/how-to-create-a-workflow-event-handler) を参照してください。
-4. **SubmitToWorkflowMenuItem** のクラスを作成します。 必要に応じて、 **CancelMenuItem** のクラスを作成します。 次のステップで作成するアクション メニュー項目にクラスをバインドします。 詳細については、 [Classes in X++](../../dev-itpro/dev-ref/xpp-classes-methods.md) を参照してください。
+4. **SubmitToWorkflowMenuItem** のクラスを作成します。 必要に応じて、 **CancelMenuItem** のクラスを作成します。 次のステップで作成するアクション メニュー項目にクラスをバインドします。 詳細については、[クラスおよびメソッド](../../dev-itpro/dev-ref/xpp-classes-methods.md) を参照してください。
 5. **SubmitToWorkflowMenuItem** ワークフロー プロパティのアクション メニュー項目を作成します。 必要に応じて、 **CancelMenuItem** プロパティのアクション メニュー項目を作成します。 アクションをワークフロー タイプにバインドします。 詳細については、 [新しいワークフロー タイプの作成](workflow-type-create-new.md) を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
@@ -54,6 +54,6 @@ ms.locfileid: "2180476"
 
 [ワークフローでの手動タスクのコンフィギュレーション](configure-manual-task-workflow.md)
 
-[ワークフローで自動化タスクのコンフィギュレーション](configure-automated-task-workflow.md)
+[ワークフローでの自動化タスクのコンフィギュレーション](configure-automated-task-workflow.md)
 
 [ワークフローでの承認プロセスのコンフィギュレーション](configure-approval-process-workflow.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f5cb5cccd4ada8b3ed9419f8e10fb57b3c6b27dc
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 9edb9c924737565959d0d13b8d6818f74b32a3b7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536936"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770933"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-8-and-11"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)
 
@@ -31,7 +31,7 @@ ms.locfileid: "2536936"
 このトピックでは、展開を計画し、インフラストラクチャを設定し、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス)、プラットフォーム更新プログラム 8 および 11 を展開する方法について説明します。
 
 > [!IMPORTANT]
-> このトピックは、プラットフォーム更新プログラム 8 および 11 にオンプレミス環境を展開する場合にのみ適用されます。 プラットフォーム更新プログラム 12 への配置方法の詳細については、[オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12)](setup-deploy-on-premises-pu12.md) を参照してください。
+> このトピックは、プラットフォーム更新プログラム 8 および 11 にオンプレミス環境を展開する場合にのみ適用されます。 プラットフォーム更新 12 への展開に関する詳細については、[オンプレミス環境の設定と配置 (プラットフォーム更新 12 以降)](setup-deploy-on-premises-pu12.md) を参照してください。
 
 ## <a name="finance-and-operations-components"></a>Finance and Operations のコンポーネント
 
@@ -65,7 +65,7 @@ Finance and Operations アプリケーションは、次の 3 つの主要なコ
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
-Finance and Operations のビットは、Microsoft Dynamics Lifecycle Services (LCS) を通じて配布されます。 配置する前に、[エンタープライズ契約](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) チャンネルを通じてライセンス キーを購入し、LCS でオンプレミス プロジェクトを設定します。 LCS からのみ配置を開始することができます。 LCS でオンプレミス プロジェクトを設定する方法の詳細については、[Lifecycle Services でのオンプレミス プロジェクトの作成](../lifecycle-services/lbd-create-lcs-on-prem-project.md) を参照してください。
+Finance and Operations のビットは、Microsoft Dynamics Lifecycle Services (LCS) を通じて配布されます。 配置する前に、[エンタープライズ契約](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) チャンネルを通じてライセンス キーを購入し、LCS でオンプレミス プロジェクトを設定します。 LCS からのみ配置を開始することができます。 LCS でオンプレミス プロジェクトを設定する方法の詳細については、[Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定](../lifecycle-services/lbd-create-lcs-on-prem-project.md) を参照してください。
 
 ## <a name="authentication"></a>認証
 
@@ -97,11 +97,11 @@ Finance and Operations は、Windows Server に基づく Hyper-V 仮想化環境
 - ストレージ用の Server Message Block (SMB) バージョン 3 のファイル共有
 - オプション: Microsoft Office Server 2017
 
-詳細については、[システム要求](../../fin-ops/get-started/system-requirements-on-prem.md) およびサイジングのガイドラインを参照してください。
+詳細については、[オンプレミス配置のためのシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md) およびサイジングのガイドラインを参照してください。
 
 ### <a name="hardware-layout"></a>ハードウェア レイアウト
 
-[オンプレミス環境のハードウェア サイジング](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md) で推奨されるサイジングに基づいて、インフラストラクチャと Service Fabric クラスターを計画します。 Service Fabric クラスターを計画する方法の詳細については、[Service Fabric のスタンドアロン クラスター展開の計画と準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) を参照してください。
+[オンプレミス環境のハードウェア サイジング要件](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md) で推奨されるサイジングに基づいて、インフラストラクチャと Service Fabric Cluster を計画します。 Service Fabric クラスターを計画する方法の詳細については、[Service Fabric のスタンドアロン クラスター展開の計画と準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) を参照してください。
 
 次のテーブルは、ハードウェア レイアウトの例を示しています。 この例は、設定を説明するためにこのトピック全体で使用されています。
 
@@ -785,7 +785,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 1. LCS で、オンプレミス プロジェクトに移動し、**環境** > **サンドボックス**に移動してから**構成**を選択します。
 2. 新しい展開では、環境のトポロジを選択し、展開を開始するウィザードを完了します。
-3. 既存の展開がある場合は、「[設置環境を再配置](redeploy-on-prem.md)」というトピックを参照します。
+3. 既存の配置がある場合は、[オンプレミス環境の再配置](redeploy-on-prem.md) のトピックを参照します。
 4. ローカル エージェントは配置要求を受け取り、配置を開始し、環境の準備ができたら LCS に再度通知します。
 
 展開に失敗した場合、LCS のお客様の環境では、**再設定**ボタンは利用可能になります。 基になる問題を修正し、**再コンフィギュレーション**をクリックして、任意のコンフィギュレーションの変更を更新し、**配置**をクリックして配置を再試行します。
@@ -794,6 +794,6 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのドキュメントの[ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 - [オンプレミス配置への更新プログラムの適用](apply-updates-on-premises.md)
-- [オンプレミス配置の再配置](redeploy-on-prem.md)
+- [オンプレミス環境の再配置](redeploy-on-prem.md)

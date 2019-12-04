@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a35962ebffbe079ae56362053d34691d0fa2a3a
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 8cfce182c6026aa73bcc14646332dd7f7848153b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627565"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811719"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 
@@ -40,20 +40,20 @@ ms.locfileid: "2627565"
 - [テストと検証](../perf-test/testing-validation.md)
 - [Retail SDK を継続的ビルド システム (Azure DevOps) と統合](../../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [クラスおよびメソッドの属性を使用した SysTest フィルター処理](../perf-test/systest-filtering.md)
-- [承認テスト ライブラリ](../perf-test/acceptance-test-library.md)
+- [承認テスト ライブラリのリソース](../perf-test/acceptance-test-library.md)
 
 ### <a name="advanced-topics-in-build-automation"></a>ビルド自動化に関する詳細
-- [ビルド出力からテスト パッケージを除外](exclude-test-packages.md)
+- [ビルド出力からのテスト パッケージの除外](exclude-test-packages.md)
 - [ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理](manage-runtime-packages.md)
-- [自動ビルドのバージョン モデル](version-models-build.md)
+- [自動ビルドのモデル バージョンの更新](version-models-build.md)
 
 ### <a name="blogs"></a>ブログ
 
 - [開発とカスタマイズに関する内部者向けヒント (ブログ)](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax)
 
 ## <a name="servicing"></a>サービス
-- [Lifecycle Services からの修正プログラムのダウンロード](../migration-upgrade/download-hotfix-lcs.md)
-- [バイナリ修正プログラムのインストールまたは展開可能なパッケージのインストール](../deployment/apply-deployable-package-system.md)
-- [アプリケーション メタデータの修正プログラムのインストール](../migration-upgrade/install-metadata-hotfix-package.md)
-- [Reporting Service の修正](../migration-upgrade/patch-reporting-service-environment.md)
-- [Visual Studio 開発ツールの更新](update-development-tools.md)
+- [Lifecycle Services (LCS) から更新プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md)
+- [クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md)
+- [開発環境でのメタデータ修正プログラムのインストール](../migration-upgrade/install-metadata-hotfix-package.md)
+- [1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用](../migration-upgrade/patch-reporting-service-environment.md)
+- [ Visual Studio の開発ツールを更新する](update-development-tools.md)

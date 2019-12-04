@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: 6ed1e4afcaeee03474d4c0ce20ac7864fb11ce78
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5538aef6599eeffee6d9b075f1b9630d55cf982a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551775"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812721"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-july-2018"></a>Dynamics 365 Talent - Core HR (2018 年 7 月) の新機能および変更された機能
 
@@ -31,11 +31,11 @@ ms.locfileid: "2551775"
 
 このトピックでは、Microsoft Dynamics 365 Talent: Core HR の新機能または変更された機能について説明します。
 
-## <a name="powerapps-personalization"></a>PowerApps の個人用設定
+## <a name="power-apps-personalization"></a>Power Apps の個人用設定
 
-Talent は Microsoft PowerApps サービスとの統合をサポートします。 PowerApps では開発者と技術者以外のユーザーの両方がコードの記述なしでモバイル デバイス、タブレット、および Web のカスタム ビジネス アプリを構築できます。 PowerApps を使用するユーザー、組織、またはより幅広いエコシステム開発のアプリは、Talent のクライアントに組み込み、製品の機能を拡張することができます。 たとえば、別のシステムから取得した情報で Talent を追加するアプリを構築する可能性があります。
+Talent は Microsoft Power Apps サービスとの統合をサポートします。 Power Apps では開発者と技術者以外のユーザーの両方がコードの記述なしでモバイル デバイス、タブレット、および Web のカスタム ビジネス アプリを構築できます。 Power Apps を使用するユーザー、組織、またはより幅広いエコシステム開発のアプリは、Talent のクライアントに組み込み、製品の機能を拡張することができます。 たとえば、別のシステムから取得した情報で Talent を追加するアプリを構築する可能性があります。
 
-詳細については、[PowerApps の埋め込みアプリ](../fin-and-ops/get-started/embed-power-apps.md) を参照してください。
+詳細については、[Power Apps の埋め込みアプリ](../fin-and-ops/get-started/embed-power-apps.md) を参照してください。
 
 ## <a name="ceridian-payroll-integration"></a>Ceridian 給与統合
 
@@ -46,7 +46,7 @@ Talent は Microsoft PowerApps サービスとの統合をサポートします�
 - 支払サイクル、支払期間、および所得コードなどの給与データ
 - 作業者データ
 
-詳細については、[給与統合のコンフィギュレーション](configure-payroll-integration.md) を参照してください。
+詳細については、[Talent と Dayforce 間の給与統合のコンフィギュレーション](configure-payroll-integration.md) を参照してください。
 
 ## <a name="worker-tax-regions-have-been-expanded-beyond-the-us"></a>作業者の税地域が米国を超えて拡張されました
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 43c2f7f865fb7c9b7656938496dbd7066e2ef41d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c5fcaa057fbb1200b9a71378d463243b4706f025
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025540"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811941"
 ---
 # <a name="upgrade-and-n-1-support-for-retail"></a>Retail のアップグレードおよび N-1 のサポート
 
@@ -49,4 +49,4 @@ N-1 サポートで、顧客は、小売用バックオフィスで N-1 パッ�
 
 小売用バックオフィスをアップグレードし、N-1 セットアップを完了した後、N-1 店舗のコンポーネントは、小売用バック オフィスと通信できます。 N-1 のサポートのためにインストールが必要なチャネル側コンポーネントはありません。 ただし、小売用バックオフィスと通信する N-1店舗を有効にし、レジ担当者は初めてサインインするそのパスワードを変更する必要があります。
  
-N-1 インストール手順については、[Microsoft Dynamics 365 Retail で使用する N-1 コンポーネントのインストール](n-1-installation-configuration.md)を参照してください。
+N-1インストールの手順については、 [段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド](n-1-installation-configuration.md) を参照してください。

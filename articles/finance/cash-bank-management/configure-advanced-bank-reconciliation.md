@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2922b00dffe8e99f8331d7aaa7e2f1b7dc4f9ea6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 405af4e3e122953bbfa74e7e91d2feef8f068708
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178686"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772631"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>詳細な口座調整の設定プロセス
 
@@ -31,7 +31,7 @@ ms.locfileid: "2178686"
 
 詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 Finance での銀行トランザクションに合わせて自動的に調整することができます。 この資料では、調整のプロセスの設定について説明します。  
 
-詳細な口座調整機能を使用する前に設定する必要のあるいくつかの要素があります。 口座取引明細書のインポートの設定の情報については、「[口座取引明細書のインポート プロセスの設定](set-up-advanced-bank-reconciliation-import-process.md)」を参照してください。  調整プロセスの設定の要件は、次のとおりです。
+詳細な口座調整機能を使用する前に設定する必要のあるいくつかの要素があります。 口座取引明細書のインポート設定の情報については、[詳細な口座調整のインポート処理の設定](set-up-advanced-bank-reconciliation-import-process.md)を参照してください。  調整プロセスの設定の要件は、次のとおりです。
 
 ## <a name="transaction-codes"></a>トランザクション コード
 トランザクション コードは、銀行調整の照合ルールの一部として使用できます。 トランザクション コードは Finance と口座取引明細書間の同じタイプのトランザクションのみの照合に役立ちます。 このタイプの照合を行うには、まず Finance の銀行トランザクションに使用するトランザクション タイプを定義し、銀行で使用する明細書の取引コードにそれらのタイプをマップします。 銀行トランザクションのトランザクション タイプは、**銀行トランザクション タイプ**ページで定義されます。 またこれによって、トランザクション タイプに関連付けられた転記に使用する主勘定を定義します。 

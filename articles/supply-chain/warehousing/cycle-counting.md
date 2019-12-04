@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d7ec95b230c5ea17f208bc1288c10fce15631a5d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251526"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813066"
 ---
 # <a name="cycle-counting"></a>循環棚卸
 
@@ -135,8 +135,8 @@ ms.locfileid: "2251526"
 
 棚卸の値の差異を調整し、棚卸の値を**循環棚卸の検討保留**ページで受け入れることができます。 品目の数量の変更済み総数は、**保管場所ごとの手持在庫**ページで確認できます。 差異を承認できない場合、棚卸の値は否認されます。
 
-## <a name="additional-resources"></a>その他のリソース
-[倉庫作業のモバイル デバイスの構成](configure-mobile-devices-warehouse.md)
+## <a name="additional-resources"></a>追加リソース
+[倉庫作業用のモバイル デバイスの設定](configure-mobile-devices-warehouse.md)
 
 
 

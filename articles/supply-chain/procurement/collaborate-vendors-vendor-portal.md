@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 96cd2fc988df11c616faf06cf0905acd6b3d6dcc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248983"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813526"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>仕入先ポータルを使用した仕入先とのコラボレーション
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248983"
 
 このトピックでは、購買担当者が仕入先ポータルを使用して、発注書の確認プロセス中に外部仕入先と連携して作業する方法について説明します。 この情報は、2016 年 2 月および 2016 年 5 月バージョン Dynamics AX にのみ適用されます。
 
-このトピックの情報は、2016 年 2 月および 2016 年 5 月バージョンの Dynamics AX にのみ適用されます。 新しい仕入先コラボレーション機能の詳細については、「[仕入先コラボレーションでの外部仕入先との連携](vendor-collaboration-work-external-vendors.md)」を参照してください。  
+このトピックの情報は、2016 年 2 月および 2016 年 5 月バージョンの Dynamics AX にのみ適用されます。 新しい仕入先コラボレーション機能の詳細については、[外部仕入先との仕入先コラボレーション](vendor-collaboration-work-external-vendors.md)を参照してください。  
 
 仕入先ポータルは、発注書 (PO) の情報を交換するための Microsoft Dynamics AX の電子データ交換 (EDI) の統合がない仕入先向けです。 ポータルでは、購買担当者は発注書を仕入先に送信でき、Dynamics AX から、確認または拒否の応答を直接受け取ることができます。  
 
@@ -95,10 +95,10 @@ Dynamics AX で発注書が作成されます。 **承認済**ステータスの
 |                           仕入先ポータルに発注書の新しいバージョンを送信します。                            |                                                                                                                                                                    新しいバージョンが仕入先ポータルに登録され、ステータスが<strong>外部で確認中</strong>に変更されます。                                                                                                                                                                     |
 |                                仕入先は、新しいバージョンの発注書を承認します                                 |                                                                                                                                                     状態は、自動的に、または仕入先からの応答を受信して確認したときに、<strong>確認済</strong>に変更されます。                                                                                                                                                     |
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[仕入先コラボレーション ユーザーのセキュリティのコンフィギュレーション](configure-security-vendor-portal-users.md)
+[仕入先ポータル ユーザー セキュリティ](configure-security-vendor-portal-users.md)
 
 [仕入先コラボレーションの請求ワークスペース](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
 

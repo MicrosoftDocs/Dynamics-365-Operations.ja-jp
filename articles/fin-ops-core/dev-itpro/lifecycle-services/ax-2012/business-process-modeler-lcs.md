@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 137b1df4eac9cd20dd86845e713cdce9cea5fa66
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b47d493d01ac5d54f125a4fdaa99d57733b7cba5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183268"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812072"
 ---
 # <a name="business-process-modeler-bpm-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 
@@ -58,12 +58,12 @@ Microsoft Dynamics Lifecycle Services では、ビジネス プロセス モデ�
 4.  ビジネス プロセス ライブラリが **自分のライブラリ** セクションに追加された後、タイルをクリックしてビジネス プロセス ライブラリを表示します。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[ビジネス プロセス モデラーの業務プロセス ライブラリ](../business-process-libraries-business-process-modeler.md)
+[ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ](../business-process-libraries-business-process-modeler.md)
 
-[ビジネス プロセス モデラーのフローチャート](../flowcharts-business-process-modeler.md)
+[ビジネス プロセス モデラー (BPM) のフローチャート](../flowcharts-business-process-modeler.md)
 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2eab1803e8fb8d41122b8863ef2c620f6ae6402
-ms.sourcegitcommit: e16b8c248fc2c2a60dc7b803320f942a35b443c5
+ms.openlocfilehash: 1cbc9120814d54a59922e5e90c882879518d26a7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2577509"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769743"
 ---
 # <a name="build-and-consume-data-entities"></a>データ エンティティのビルドおよび使用
 
@@ -91,7 +91,7 @@ FMLabCustomerEntity
 
     [![データ エンティティ ウィザード](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 
-5. **次へ** をクリックします。 各プロパティ機能の詳細については、[データ エンティティ](data-entities.md)の「エンティティのカテゴリ」および「エンティティの作成」を参照してください。
+5. **次へ** をクリックします。 各プロパティ機能の詳細については、 [データ エンティティ の概要](data-entities.md) 内の「エンティティのカテゴリ」および「エンティティの作成」を参照してください。
 6. 次のスクリーン ショットに示すように、データ ソースから新しいエンティティにフィールドを追加します。 主要なデータ ソース、**FMCustomer** からフィールドを追加することができます。 このエンティティについては、テストを効率化するため**画像**および **LicenseImage** コンテナー タイプのチェック ボックスをオフにします。
 7. データ エンティティのフィールドの名前を、パブリック データ コントラクト標準を反映するように変更するか、**ラベルをフィールド名に変換** をクリックして既存のラベルから名前を生成します。
 8. **DriverLicense** フィールドの行で、**必須**チェック ボックスを選択します。 このフィールドはエンティティのナチュラル キーとして使用されます。
@@ -426,6 +426,6 @@ Internet Explorer  を使用して一部の OData URI を表示できるよう�
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
 ```
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[エンティティを開発してデータ移行に使用する](develop-entity-for-data-migration.md)
+[データ移行のエンティティの開発](develop-entity-for-data-migration.md)

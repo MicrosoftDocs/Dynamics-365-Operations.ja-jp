@@ -8,6 +8,14 @@
         - name: Talent の新機能および変更された機能
           href: whats-new.md
           items:
+            - name: 2019 年 11 月 19 日
+              href: whats-new-talent-november-19-2019.md
+            - name: 2019 年 11 月 12 日
+              href: whats-new-talent-november-12-2019.md
+            - name: 2019 年 11 月 5 日
+              href: whats-new-talent-november-5-2019.md
+            - name: 2019 年 10 月 29 日
+              href: whats-new-talent-oct-29-2019.md
             - name: 2019 年 10 月 23 日
               href: whats-new-talent-october-23-2019.md
             - name: 2019 年 10 月 8 日
@@ -26,18 +34,18 @@
               href: whats-new-talent-august-15-2019.md
             - name: 2019 年 8 月 6 日
               href: whats-new-talent-august-7-2019.md
-            - name: 2019 年 7 月 30 日
-              href: whats-new-talent-july-31-2019.md
-            - name: 2019 年 7 月 23 日
-              href: whats-new-talent-july-24-2019.md
-            - name: 2019 年 7 月 16 日
-              href: whats-new-talent-july-16-2019.md
-            - name: 2019 年 7 月 9 日
-              href: whats-new-talent-july-9-2019.md
-            - name: 2019 年 7 月 2 日
-              href: whats-new-talent-july-2-2019.md
             - name: 新機能アーカイブ 2019
               items:
+                - name: 2019 年 7 月 30 日
+                  href: whats-new-talent-july-31-2019.md
+                - name: 2019 年 7 月 23 日
+                  href: whats-new-talent-july-24-2019.md
+                - name: 2019 年 7 月 16 日
+                  href: whats-new-talent-july-16-2019.md
+                - name: 2019 年 7 月 9 日
+                  href: whats-new-talent-july-9-2019.md
+                - name: 2019 年 7 月 2 日
+                  href: whats-new-talent-july-2-2019.md
                 - name: 2019 年 6 月 25 日
                   href: whats-new-talent-june-25-2019.md
                 - name: 2019 年 6 月 18 日
@@ -116,10 +124,14 @@
                   href: whats-new-talent-august2018.md
                 - name: 2018 年 7 月
                   href: whats-new-talent-july2018.md
-        - name: システム要件と更新ポリシー
+        - name: システム要件
           href: talent-versions-update-policy.md
+        - name: Talent の更新
+          href: talent-updates.md
         - name: Talent のプロビジョニング
           href: provisioning-talent.md
+        - name: Core HR インスタンスのコピー
+          href: hr-copy-instance.md
         - name: Talent 環境の削除
           href: remove-talent-environment.md
         - name: Onboard アプリのプロビジョニング
@@ -439,6 +451,18 @@
           href: extensibility-attract.md
         - name: Core HR のカスタム フィールド
           href: corehr-custom-fields.md
+        - name: エンティティ API 照会
+          items:
+            - name: 認証
+              href: api-odata-authentication.md
+            - name: エンティティ
+              items:
+                - name: MyLeaveRequests
+                  items:
+                    - name: MyLeaveRequests の概要
+                      href: api-myleaverequests-overview.md
+                    - name: 休暇申請をワークフローに送信する
+                      href: api-myleaverequests-submit.md
     - name: Talent のトラブルシューティング
       items:
         - name: 自動クリーンアップ タスクを使用したパフォーマンスの最適化

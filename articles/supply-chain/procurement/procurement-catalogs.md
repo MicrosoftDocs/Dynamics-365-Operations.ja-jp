@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06713d4f1ca1fe1c3feafe314da3a155fa7cd126
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c0059c152d2ac498a12095d636d0dc0bbf045995
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865307"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813480"
 ---
 # <a name="procurement-catalogs-overview"></a>調達カタログの概要
 
@@ -69,10 +69,10 @@ ms.locfileid: "1865307"
 -   **両方** – **静的**を既定の更新タイプとした製品カテゴリを含むカタログは、これらのカテゴリの更新時に手動で更新する必要があります。 **動的** を既定の更新タイプにした製品カテゴリを含むカタログは、カタログが変更されるたびに自動的に更新されます。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[調達カテゴリ階層の設定 (タスク ガイド)](tasks/set-up-procurement-category-hierarchy.md)
+[調達カテゴリ階層の設定](tasks/set-up-procurement-category-hierarchy.md)
 
 
 

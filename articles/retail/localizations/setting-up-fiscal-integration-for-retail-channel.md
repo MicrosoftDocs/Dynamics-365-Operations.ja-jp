@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: a987e75834ddde486421a425a621e66f0b6e063f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577903"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811168"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>小売チャネルの会計統合の設定
 
@@ -210,7 +210,7 @@ ms.locfileid: "1577903"
 
 会計 X/Z レポートの POS での実行を有効にするには、POS レイアウトに新しいボタンを追加する必要があります。
 
-- **ボタン グリッド** ページで、[小売用バック オフィス内の POS レイアウトにカスタム操作ボタンを追加](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) の手順に従って、デザイナーをインストールし、POS レイアウトを更新します。
+- **ボタン グリッド** ページで、[ボタン グリッド デザイナーを使用して POS レイアウトに POS 操作を追加する](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) の手順に従って、デザイナーをインストールし、POS レイアウトを更新します。
 
     1. 更新するレイアウトを選択します。 
     2. 新しいボタンを追加し、**会計 X を印刷**ボタン プロパティを設定します。
@@ -221,7 +221,7 @@ ms.locfileid: "1577903"
 
 延期された会計登録の手動実行を有効にするには、POS レイアウトに新しいボタンを追加する必要があります。
 
-- **ボタン グリッド** ページで、[小売用バック オフィス内の POS レイアウトにカスタム操作ボタンを追加](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) の手順に従って、デザイナーをインストールし、POS レイアウトを更新します。
+- **ボタン グリッド** ページで、[ボタン グリッド デザイナーを使用して POS レイアウトに POS 操作を追加する](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) の手順に従って、デザイナーをインストールし、POS レイアウトを更新します。
 
     1. 更新するレイアウトを選択します。
     2. 新しいボタンを追加し、**会計登録のプロセスを完了**ボタン プロパティを設定します。

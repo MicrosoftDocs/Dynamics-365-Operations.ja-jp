@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0adc43f3ed238a7a49cde44dd5f2d3bd55201cb4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 88b73c206218030ce49e54609582c38c05b1c7c2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559630"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813319"
 ---
 # <a name="purchase-requisition-workflow"></a>購買要求ワークフロー
 
@@ -105,10 +105,10 @@ ms.locfileid: "1559630"
 
 ワークフローで設定した支出確認者のうちの 1 人を使用するには、関連するワークフロー要素の**割り当て**プロパティーの**参加者のタイプ**オプションを**支出実行者**に設定する必要があります。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[消費の要求の作成 (タスク ガイド)](tasks/create-requisition-consumption.md)
+[消費要求の作成](tasks/create-requisition-consumption.md)
 
 [購買要求のビジネス プロセスのワークフローの定義](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 

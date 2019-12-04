@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 94243f83121a1306d8f9ae9be23d24e5c9b63a2d
-ms.sourcegitcommit: 07e109dec176a93eff0df8a37ba5d875f212e9f1
+ms.openlocfilehash: 66419d9093cff68aa6109b22ab57bcb46ac6c718
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "2662668"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772899"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Dynamics 365 Talent (2019 年 10 月 23 日) の新機能および変更された機能
 
@@ -47,7 +47,7 @@ ms.locfileid: "2662668"
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>福利厚生の自由登録プレビュー機能を削除する
 
-Microsoft では、Core HR ドライブのオペレーショナル エクセレンスのブログ投稿における戦略的投資におけるお知らせと共に、2019 年 10 月 18 日のパブリック プレビューから自由登録機能を削除しています。 代わりに、新しい機能が将来リリースされます。 現在パブリック プレビューにある福利厚生の自由登録機能は、運用上の用途ではサポートされません。
+Microsoft では、[Core HR ドライブのオペレーショナル エクセレンスにおける戦略的投資](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence)ブログ投稿におけるお知らせと共に、2019 年 10 月 18 日のパブリック プレビューから自由登録機能を削除しています。 代わりに、新しい機能が将来リリースされます。 現在パブリック プレビューにある福利厚生の自由登録機能は、運用上の用途ではサポートされません。
 
 ### <a name="error-while-selecting-the-countryregion-on-the-worker-form-a-second-time-350294"></a>作業者フォームで国/地域を 2 回選択すると発生するエラー (350294)
 
@@ -69,7 +69,7 @@ Microsoft では、Core HR ドライブのオペレーショナル エクセレ�
 
 このリリースでは、選択した従業員の雇用条件のみが Excel で開きます。 会社のセキュリティもすべて尊重されます。
 
-### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service---324178"></a>作業カレンダーの休日エンティティと作業カレンダーのエンティティの間の関連付けが Common Data Service にない - (324178)
+### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service-324178"></a>作業カレンダーの休日エンティティと作業カレンダーのエンティティの間の関連付けが Common Data Service にない (324178)
 
 この関係は、リリースによって追加されています。 この変更により、従業員の稼働日が PowerApps に表示されるようになります。 
 

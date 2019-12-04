@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653514"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813802"
 ---
 # <a name="demand-forecasting-setup"></a>需要予測の設定
 
@@ -70,7 +70,8 @@ ms.locfileid: "2653514"
 -   Azure ストレージ アカウント名
 -   Azure ストレージ アカウント キー
 
-**注:** カスタム ストレージ アカウントを使用している場合にのみ、Azure ストレージ アカウントの名前とキーが必要です。 オンプレミス バージョンを展開する場合、Machine Learning サービスを履歴データにアクセスできるようにするため、Azure のカスタム ストレージ アカウントが必要です。 
+> [!NOTE]
+> カスタム ストレージ アカウントを使用している場合にのみ、Azure ストレージ アカウントの名前とキーが必要です。 オンプレミス バージョンを展開する場合、Machine Learning サービスを履歴データにアクセスできるようにするため、Azure のカスタム ストレージ アカウントが必要です。 
 
 要求予測を作成する場合、Machine Learning Studio または Supply Chain Management の需要予測実験を使用して自分のサービスを配置できます。 需要予測実験を Web サービスとして展開するための手順は、Supply Chain Management で入手可能です。 **需要予測パラメーター**ページで、**Azure Machine Learning** タブをクリックします。
 
@@ -97,7 +98,7 @@ ms.locfileid: "2653514"
 
 [統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)
 
-[ベースライン予測の手動調整の実施](manual-adjustments-baseline-forecast.md)
+[ベースライン予測に対して手動調整を行う](manual-adjustments-baseline-forecast.md)
 
 
 

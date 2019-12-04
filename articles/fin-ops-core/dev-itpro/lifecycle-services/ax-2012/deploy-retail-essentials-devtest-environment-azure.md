@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: f336fcafb7681b9660f07f0714039852ae6c1b5e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 741001c5801604bf72ac18f0fec4be47d6c08f05
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183254"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812065"
 ---
 # <a name="deploy-retail-essentials-devtest-environments-on-azure"></a>Azure での Retail Essentials 開発/テスト環境の配置
 
@@ -37,7 +37,7 @@ ms.locfileid: "2183254"
 
 | カテゴリ       | 前提条件                                                                                                                                                    |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 必要なタスク | [Azure 上での Microsoft Dynamics AX 2012 R3 の配置計画](plan-2012-r3-deployment-azure.md) |
+| 必要なタスク | [Azure で AX 2012 R3 の配置を計画する](plan-2012-r3-deployment-azure.md) |
 
 ## <a name="1-log-on-to-lifecycle-services"></a>1. ライフサイクル サービスにログオンする
 Microsoft Dynamics Lifecycle Services (LCS) は、顧客およびパートナーが Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。 Azure に Dynamics AX を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。詳細については、[Lifecycle Services にログオン](https://lcs.dynamics.com/en/) を参照してください。
@@ -100,14 +100,14 @@ Azure に Retail Essentials 開発/テスト環境を配置するには、以下
    <tr class="odd">
    <td>Azure で環境用に新しいドメインを作成する</td>
    <td><ol>
-   <li><strong><span class="label">新規ドメイン</span></strong>をクリックします。</li>
+   <li><strong>新規ドメイン</strong>をクリックします。</li>
    <li>ドメイン名を入力します。 既定では、ドメインは <em>contoso.com</em> と呼ばれます。</li>
    </ol></td>
    </tr>
    <tr class="even">
    <td>Azure の既存のドメインへの環境の追加</td>
    <td><ol>
-   <li><strong><span class="label">既存のドメイン</span></strong>をクリックします。</li>
+   <li><strong>既存のドメイン</strong>をクリックします。</li>
    <li>ドメイン名を入力します。 たとえば、<em>contoso.com</em>。</li>
    </ol></td>
    </tr>
@@ -136,23 +136,23 @@ Azure に Retail Essentials 開発/テスト環境を配置するには、以下
     <tr class="odd">
     <td>Azure で環境用に新しい仮想ネットワークを作成する</td>
     <td><ol>
-    <li><strong><span class="label">新しい仮想ネットワーク</span></strong>をクリックします。</li>
+    <li><strong>新しい仮想ネットワーク</strong>をクリックします。</li>
     <li>仮想ネットワーク名を入力します。</li>
     </ol></td>
     </tr>
     <tr class="even">
     <td>Azure の既存の仮想ネットワークへの環境の追加</td>
     <td><ol>
-    <li><strong><span class="label">既存の仮想ネットワーク</span></strong>をクリックします。</li>
+    <li><strong>既存の仮想ネットワーク</strong>をクリックします。</li>
     <li>使用する既存の仮想ネットワークの名前を選択してください。</li>
-    <li><strong><span class="label">アドレス空間</span></strong> フィールドには、適切な値が自動的に表示されます。 提供された値を選択します。</li>
-    <li><span class="label"><strong>アプリケーション サブネット名</strong></span>フィールドには、使用可能なオプションが表示されます。 Lifecycle Services によって以前に展開した広告に配置する場合は、選択した <strong><span class="label"><em>APPNET</em></span></strong> 値を選択します。</li>
+    <li><strong>アドレス空間</strong> フィールドには、適切な値が自動的に表示されます。 提供された値を選択します。</li>
+    <li><strong>アプリケーション サブネット名</strong> フィールドには、使用可能なオプションが表示されます。 Lifecycle Servicesによって以前に展開した広告に配置する場合は、選択した <strong>APPNET</strong> 値を選択します。</li>
     <li>Active Directory サブネットを入力する必要があり、ターゲットとする AD の Azure 管理ポータルにある Active Directory サブネット IP/範囲と一致している必要があります。
     <ol>
     <li><a href="https://ms.portal.azure.com/">Azure ポータル</a>にログオンします。</li>
-    <li>左のナビゲーション ウィンドウで、<strong><span class="label">仮想ネットワーク</span></strong>をクリックします。</li>
+    <li>左のナビゲーション ウィンドウで、 <strong>仮想ネットワーク</strong> をクリックします。</li>
     <li>使用する仮想ネットワークの名前をクリックします。</li>
-    <li><strong><span class="label">構成</span></strong>をクリックします。 仮想ネットワークに関する詳細は、ページに記載されています。</li>
+    <li><strong>構成</strong>をクリックします。 仮想ネットワークに関する詳細は、ページに記載されています。</li>
     </ol></li>
     </ol></td>
     </tr>
@@ -161,7 +161,7 @@ Azure に Retail Essentials 開発/テスト環境を配置するには、以下
 
 11. **完了** をクリックします。 **環境** **の展開** パネルが再表示されます。
 12. 配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。
-    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md)」を参照してください。
+    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、 [Azure 上での AX 2012 R3の 配置計画](plan-2012-r3-deployment-azure.md) を参照してください。
     -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 13. ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
@@ -173,7 +173,7 @@ Retail Essentials 環境が Azure に配置されたので、これを設定し�
 
 ### <a name="log-on-to-the-retails-essentials-virtual-machine"></a>Retail Essentials 仮想マシンにログオンします。
 
-ESSEN-&lt;GUID&gt; 仮想マシンに &lt;DomainName&gt;DynamicsInstallUser アカウントを使用してログオンします。 手順については、「仮想マシンにどのようにログオンしますか?」を参照してください。 トピック [Azure での Microsoft Dynamics AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md) を参照してください。
+ESSEN-&lt;GUID&gt; 仮想マシンに &lt;DomainName&gt;DynamicsInstallUser アカウントを使用してログオンします。 手順については、「仮想マシンにどのようにログオンしますか?」を参照してください。 トピック [Azure で AX 2012 R3 配置を管理する](manage-2012-r3-deployment-azure.md) を参照してください。
 
 ### <a name="compile-dynamics-ax-2012-r3"></a>Dynamics AX 2012 R3 のコンパイル
 
@@ -188,11 +188,12 @@ Dynamics AX 2012 R3 クライアントを開いて、初期化チェックリス
 サンプル データを環境にインストールする場合は、次の手順を実行します。
 
 1.  次の場所に移動します: F:TestTransferTool
-2.  テスト データ ツールをインストールします。 手順については、[Microsoft Dynamics AX 用のテスト データ転送ツール (ベータ版) をインストールする](install-test-data-transfer-tool-beta.md)を参照してください。
+2.  テスト データ ツールをインストールします。 手順については、 [テスト データ転送ツール (ベータ版) をインストールする](install-test-data-transfer-tool-beta.md) を参照してください。
 3.  コマンド プロンプトを開いて、次の場所に移動します: C:\Program Files (x86) \Microsoft Dynamics AX 2012 R3 Test Data Transfer Tool (Beta)
 4.  次のコマンドを実行します: dp.exe import F:DemoData MicrosoftDynamicsAx
 
-**注記:** サンプル データには、Dynamics AX の試用版のライセンス キーが含まれています。 サンプル データをインストールしないように選択する場合は、開発またはテスト用の試用版ライセンス キーを [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) または [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898#FileId=57028) からダウンロードすることができます
+> [!NOTE]
+> サンプル データには、Dynamics AX の試用版のライセンス キーが含まれています。 サンプル データをインストールしないように選択する場合は、開発またはテスト用の試用版ライセンス キーを [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) または [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898#FileId=57028) からダウンロードすることができます
 
 ### <a name="set-up-retail-essentials"></a>Retail Essentials の設定
 

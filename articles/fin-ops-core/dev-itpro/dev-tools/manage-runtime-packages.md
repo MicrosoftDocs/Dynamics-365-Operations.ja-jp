@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e3315f82d48c6457e5fd7b31cfe53283cd924ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3439c2273fe9aeeae897dbc64cfe657246be2c92
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191663"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811717"
 ---
 # <a name="manage-third-party-models-and-runtime-packages-by-using-source-control"></a>ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "2191663"
 ## <a name="models-from-third-parties"></a>サード パーティからのモデル
 サード パーティから受け取ったソース コードは、バイナリにコンパイルし、配置可能パッケージに含める必要があります。 モデルは、開発仮想マシン (VM) にインストールしてソース管理に追加する必要があります。 そこからは、ビルド VM はソース コードをピッキング、構築、および配置可能パッケージに含めることができます。 他の開発者は、Microsoft Azure DevOps のモデルをそのまま開発 VM に同期できます。 手動でインストールする必要はありません。
 
-開発 VM でモデルをインストールする方法の詳細については、[モデルのエクスポートとインポート](models-export-import.md) を参照してください。
+開発 VM でモデルをインストールする方法の詳細については、 [モデルのエクスポートとインポート](models-export-import.md) を参照してください。
 
 モデルをインストールしたら、以下の手順に従いソース管理に新しいモデルを追加します。
 
@@ -57,7 +57,7 @@ ms.locfileid: "2191663"
 ## <a name="deployable-packages-from-third-parties"></a>サード パーティから展開可能なパッケージ
 サード パーティの展開可能パッケージを開発用 VM に手動でインストールし、インストールされたコンポーネントをソース管理に追加することができます。 その後、ローカル ワークスペースを同期させることで、他の開発者が、展開可能なパッケージをインストールしなくても、VM 上でランタイム パッケージを受け取ることができます。 ビルド VM でのビルド プロセスは、ビルド VM 上で拡張機能やその他の依存関係のランタイム パッケージを使用できるようにするのに役立ちます。 プラットフォーム更新プログラム 6 以降では、既定でビルド VM から作成される最終的な配置可能パッケージにこれらのランタイム パッケージが含まれます。 詳細については、このトピックの後半の [サード パーティ コードを展開する](#deploying-third-party-code) セクションを参照してください。
 
-開発 VM で配置可能パッケージをインストールする方法の詳細については、[配置可能パッケージのインストール](../deployment/install-deployable-package.md) を参照してください。
+開発 VM で配置可能なパッケージをインストールする方法の詳細については、 [コマンド ラインからの配置可能なパッケージのインストール](../deployment/install-deployable-package.md) を参照してください。
 
 > [!NOTE]
 > ビルド VM にソフトウェア配置可能パッケージを直接インストールしないでください。 このトピックで説明するソース管理を使用します。 バイナリ更新プログラムのみビルド VM にインストールする必要があります。

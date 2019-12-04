@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 629275d997b611b4041c842d36fd01c3d908a356
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 5e831cb380f55afe835e68c9c7027ad614d16030
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249341"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769748"
 ---
 # <a name="business-events-overview"></a>ビジネス イベントの概要
 
@@ -34,7 +34,7 @@ ms.locfileid: "2249341"
 
 ## <a name="prerequisites"></a>必要条件
 
-ビジネス イベントは Microsoft Flow およびAzureメッセージング サービスにて利用できます。 したがって、ビジネス イベントを使用する際には、顧客が該当するアセットのサブスクリプションを契約している必要があります。
+ビジネス イベントは Microsoft Power Automate および Azure メッセージング サービスにて利用できます。 したがって、ビジネス イベントを使用する際には、顧客が該当するアセットのサブスクリプションを契約している必要があります。
 
 > [!IMPORTANT]
 > ビジネス イベントを、エクスポート用データのメカニズムと考えることはできません。 定義上は、ビジネス イベントは簡易で軽快であることになっています。 データ エクスポートのシナリオを実行するために大量のペイロードを搭載することは想定していません。
@@ -77,7 +77,7 @@ ms.locfileid: "2249341"
 - Azure Event Grid
 - Azure イベント ハブ
 - HTTPS
-- Microsoft Flow
+- Microsoft Power Automate
 
 消費者にビジネス イベントを組織化して配布するため、複数のエンドポイントが必要になる場合があります。 このようなシナリオをサポートするため、複数のエンドポイントを作成することができます。
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: andreash
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3bfb92daa628108ce038769410a41360058bba56
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 6554d0ce58dcca1e64592ef3048c143d8682c264
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570597"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811891"
 ---
 # <a name="merge-the-build-systems-for-retail-and-finance"></a>Retail and Finance 用ビルド システムのマージ
 
@@ -38,7 +38,7 @@ ms.locfileid: "2570597"
 
 ### <a name="getting-the-retail-sdk"></a>Retail SDK の取得
 
-同じ Microsoft Azure DevOps プロジェクトで Retail ソフトウェア開発キット (SDK) がない場合は、ここで追加します。 どの開発者トポロジまたはビルド トポロジでも、Retail SDK が存在します。 [Retail SDK の概要](retail-sdk-overview.md) の分岐ドキュメントに従います。 この時点で、Retail SDK ミラーと Retail SDK カスタマイズ分岐を作成することをお勧めします。 Retail SDK カスタマイズ分岐が準備できた後、Retail と同じ Azure DevOps プロジェクトで送信され開始できます。
+同じ Microsoft Azure DevOps プロジェクトで Retail ソフトウェア開発キット (SDK) がない場合は、ここで追加します。 どの開発者トポロジまたはビルド トポロジでも、Retail SDK が存在します。 [Retail ソフトウェア開発キット (SDK) アーキテクチャ](retail-sdk-overview.md) の分岐ドキュメントに従います。 この時点で、Retail SDK ミラーと Retail SDK カスタマイズ分岐を作成することをお勧めします。 Retail SDK カスタマイズ分岐が準備できた後、Retail と同じ Azure DevOps プロジェクトで送信され開始できます。
 
 ## <a name="install-nugetexe"></a>NuGet.exe のインストール 
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e77fd279ddec5eb02e226776eecb1223283313c3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278109"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811929"
 ---
 # <a name="help-resources-for-dynamics-365-retail"></a>Dynamics 365 Retail のヘルプ リソース
 
@@ -81,7 +81,7 @@ MPOS は、PC、タブレット、および電話用の POS アプリケーシ�
 
 環境のカスタマイズを要求されている場合や、システムの展開と管理を担当している場合は、Retail 専用の開発者およびシステム管理者向けコンテンツと、一般的なコンテンツを確認してください。
 
-- [Dynamics 365 Retail IT プロおよび開発者向け](dev-itpro/dev-retail-home-page.md)
+- [IT プロおよび開発者向け Retail](dev-itpro/dev-retail-home-page.md)
 - [Dynamics 365 Finance の開発と管理](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>追加リソース

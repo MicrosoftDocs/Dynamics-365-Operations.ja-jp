@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4491722c9607e00ea02a34a100654e308d65a4e
-ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
+ms.openlocfilehash: 126ee308b00ed9c9629e5bea0c4fd4a8927410c1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2548957"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811959"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 
@@ -47,18 +47,18 @@ Microsoft Dynamics Lifecycle Services (LCS) は、Finance and Operations 実装�
 
 実装のライフサイクルは、複数回、反復展開しながら、販売前から分析、設計と開発、テスト、配置、運用までのさまざまな段階に及んでいます。 管理されたクラウドまたはオンプレミスなど、プロジェクトおよび選択された配置モデルの範囲と複雑さに基づいて、数か月から数年にわたって継続できます。 
 
-実装の管理には、顧客およびパートナー組織、特にマイクロソフトのクラウド ホスト型配置モデルのさまざまなステークホルダーが関係します。 この実装は、LCS 上で提供されるツールと、[FastTrack for Dynamics program](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md) 内で定義されたプロセスとパートナーの実装方法を通じてサポートされます。 
+実装の管理には、顧客およびパートナー組織、特にマイクロソフトのクラウド ホスト型配置モデルのさまざまなステークホルダーが関係します。 この実装は、LCS 上で提供されるツールと、[Microsoft FastTrac](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md) 内で定義されたプロセスとパートナーの実装方法を通じてサポートされます。 
 
-- [Lifecycle Services for Finance and Operations](../lifecycle-services/lcs.md)
-- [Dynamics Lifecycle Services ユーザー ガイド](../lifecycle-services/lcs-user-guide.md)
+- [Lifecycle Services のリソース](../lifecycle-services/lcs.md)
+- [Lifecycle Services (LCS) ユーザー ガイド](../lifecycle-services/lcs-user-guide.md)
 
 ## <a name="deployment"></a>配置
 クラウドまたはオンプレミスを配置できます。 クラウド展開では、Microsoft が完全に管理するエンタープライズ リソース プランニング (ERP) サービスが提供されます。 オンプレミス配置は、顧客のデータ センターにローカルに配置されます。
 
-- [オンライン サービスおよびオンプレミス ソフトウェアのライフサイクル ポリシー](../migration-upgrade/versions-update-policy.md)
-- [Dynamics 365 Finance and Operations クラウド配置の概要](../deployment/cloud-deployment-overview.md)
+- [ソフトウェアのライフサイクル ポリシーおよびクラウド リリース](../migration-upgrade/versions-update-policy.md)
+- [クラウド配置の概要](../deployment/cloud-deployment-overview.md)
 - [クラウド配置のシステム要件](../../fin-ops/get-started/system-requirements.md)
-- [オンプレミス配置のランディング ページ](../deployment/on-premises-deployment-landing-page.md)
+- [オンプレミス配置のホーム ページ](../deployment/on-premises-deployment-landing-page.md)
 - [オンプレミス配置のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md)
 
 ## <a name="upgrade"></a>アップグレード
@@ -66,7 +66,7 @@ Microsoft Dynamics Lifecycle Services (LCS) は、Finance and Operations 実装�
 
 アップグレードの各タイプのプロセスは似ていますが、開始する前に特定のタスクのトピックを確認するだけで十分です。
 
-- [ホーム ページのアップグレード](../migration-upgrade/upgrade-home-page.md)
+- [アップグレード、更新プログラム、および修正プログラムのリソース](../migration-upgrade/upgrade-home-page.md)
 
 ## <a name="database-management"></a>データベース管理
 データベースを新しい環境に移動し、データベースを特定の時点に復元する方法ついての情報は、「[データベース移動操作ホーム ページ](../database/dbmovement-operations.md)」を参照してください。
@@ -85,7 +85,7 @@ Finance and Operations アプリは、ロール ベースのセキュリティ�
 多くのタスクをバッチ ジョブの一部として実行できます。 たとえば、バッチ ジョブには、レポートの印刷、管理の実行、電子ドキュメントの送信などのタスクを含めることができます。 バッチ ジョブを使用すると、通常の就業時間内におけるコンピュータまたはサーバーの処理速度の低下を回避できます。
 
 - [バッチ処理の概要](batch-processing-overview.md)
-- [バッチ サーバーの概要](batch-server-overview.md)
+- [バッチ処理とバッチ サーバー](batch-server-overview.md)
 
 ## <a name="optimization-advisor"></a>最適化アドバイザー
 - [最適化アドバイザーの概要](optimization-advisor-overview.md)
@@ -95,9 +95,9 @@ Finance and Operations アプリは、ロール ベースのセキュリティ�
 ## <a name="office-integration"></a>Office 統合
 Microsoft Office との統合により、Microsoft Office スイートを活用する、生産性の高い、コラボレーション、および統合ユーザー エクスペリエンスが提供されます。 この機能は、組織がより効率的かつ効果的になるのに役立ちます。
 
-- [Office 統合](../office-integration/office-integration.md)
+- [Office 統合の概要](../office-integration/office-integration.md)
 - [Office 統合のチュートリアル](../office-integration/office-integration-tutorial.md)
-- [Excel アドインの使用](../office-integration/use-excel-add-in.md)
+- [Excel でエンティティ データを開き、Excel アドインを使用して更新する](../office-integration/use-excel-add-in.md)
 - [[Excel で開く] エクスペリエンスの作成](../office-integration/office-integration-edit-excel.md)
 - [[Excel で明細行を開く] メニューへのテンプレートの追加](../user-interface/add-templates-open-lines-excel-menu.md)
 - [Microsoft Office で開くメニューのカスタマイズ](../office-integration/customize-open-office-menu.md)
@@ -108,7 +108,7 @@ Microsoft Office との統合により、Microsoft Office スイートを活用�
 Finance and Operations モバイル アプリにより、組織は業務プロセスをモバイル デバイスで使用できるようになります。 組織用のモバイル ワークスペースを有効にすると、ユーザーはアプリにサイン インしてすぐにモバイル デバイスからビジネス プロセスへ実行を開始できます。
 
 - [モバイル アプリのホーム ページ](../mobile-apps/Mobile-app-home-page.md)
-- [モバイル ワークスペース](../mobile-apps/mobile-workspaces-released.md)
+- [利用可能なモバイル ワークスペース](../mobile-apps/mobile-workspaces-released.md)
 
 ## <a name="general-administration"></a>一般管理
 - [デモ データの概要](../../fin-ops/get-started/demo-data.md)
@@ -117,5 +117,5 @@ Finance and Operations モバイル アプリにより、組織は業務プロ�
 - [ライセンス コードとコンフィギュレーション キーのレポート](license-codes-configuration-keys-report.md)
 - [メンテナンス モード](maintenance-mode.md)
 - [コンフィギュレーション済みのシステム アカウント](pre-configured-system-accounts.md)
-- [B2B ユーザーの Azure AD へのエクスポート](implement-b2b.md)
+- [企業間 (B2B) ユーザーを Azure Active Directory にエクスポートする](implement-b2b.md)
 - [セッション アイドル タイムアウトの設定](session-idle-timeout.md)

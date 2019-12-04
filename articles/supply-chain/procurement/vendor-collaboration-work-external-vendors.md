@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 733ecc7cfb4fee325560f5a6fe11612bb8ba57ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653605"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815298"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>外部仕入先との仕入先コラボレーション
 
@@ -218,7 +218,7 @@ ms.locfileid: "2653605"
 
 ## <a name="working-with-rfqs-when-you-use-vendor-collaboration"></a>仕入先コラボレーションを使用する場合の見積依頼の処理
 
-このセクションでは、RFQ プロセス中の、顧客および仕入先間の相互関係を説明します。 また、仕入先に情報を伝達する方法についても説明します。 RFQ プロセス用サポートの基本的な概要については、[見積依頼 (RFQ)](request-quotations.md)を参照してください。
+このセクションでは、RFQ プロセス中の、顧客および仕入先間の相互関係を説明します。 また、仕入先に情報を伝達する方法についても説明します。 RFQ プロセス用サポートの基本的な概要については、[見積依頼 (RFQ) の概要](request-quotations.md)を参照してください。
 
 ### <a name="alternates-attachments-amendments-and-returns"></a>代替、添付ファイル、修正、および返品
 

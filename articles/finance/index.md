@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 5b5ed05e9c53b17632e94e913f7f3663676c3e91
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570128"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770577"
 ---
 # <a name="financial-management-home-page"></a>財務管理ホーム ページ
 
@@ -44,8 +44,8 @@ ms.locfileid: "2570128"
         - [経費管理](expense-management/expense-management.md)
         - [財務諸表](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [固定資産](fixed-assets/fixed-assets.md)
-        - [一般会計](general-ledger/general-ledger.md) 
-        - [プロジェクト管理](project-management/overview-project-management-accounting.md)
+        - [総勘定元帳と財務諸表](general-ledger/general-ledger.md) 
+        - [プロジェクト管理および会計](project-management/overview-project-management-accounting.md)
         - [公的機関](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -72,5 +72,5 @@ Finance and Operations には、タスク ガイドとして使用できる追�
 
 ### <a name="additional-content"></a>追加のコンテンツ
 
-Supply Chain Management 機能は、企業が購買する商品やサービスの要求、注文、入荷、請求、支払を含む、仕入から支払プロセスの一部をカバーします。 購買、在庫、製造の管理機能に関する情報は、[!Supply Chain Management のホームぺージ](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) を参照してください。 
+Supply Chain Management 機能は、企業が購買する商品やサービスの要求、注文、入荷、請求、支払を含む、仕入から支払プロセスの一部をカバーします。 購買、在庫、製造の管理機能に関する情報は、[Supply Chain Management のホームぺージ](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) を参照してください。 
 

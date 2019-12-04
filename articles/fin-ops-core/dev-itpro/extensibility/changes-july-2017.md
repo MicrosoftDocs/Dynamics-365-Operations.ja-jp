@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: d6834971cb50a7379a43320ac386e9294717f2f3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 056694597007e6707edf7e6dd5d42c43cb965c07
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191649"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812116"
 ---
 # <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-july-2017"></a>Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
 
-これは、Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) に実装された拡張機能の一覧です。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。 拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。
+これは、Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) に実装された拡張機能の一覧です。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。 拡張性をサポートする変更スケジュールの詳細については、 [アプリケーション機能拡張ロードマップ](extensibility-roadmap.md)を参照してください。
 
 ## <a name="soft-sealed-application-models"></a>ソフト シールされたアプリケーション モデル
 
@@ -85,7 +85,7 @@ ms.locfileid: "2191649"
 
 列挙の拡張をサポートするために以下の変更が行われました。
 - 標準アプリケーションの多くの列挙が拡張可能になりました。 列挙を拡張可能にするには、列挙に関する 2 つのプロパティを設定します。 **IsExtensible** プロパティは **はい** に、**UseEnumValue** プロパティは **いいえ** に設定されます。 
-- 一部の列挙型は状態を表します。 拡張機能によって列挙値の追加を可能にする新しいファサード メソッドが追加されました。 列挙型を拡張する方法については、「[列挙値の追加](add-enum-value.md)」を参照してください。
+- 一部の列挙型は状態を表します。 拡張機能によって列挙値の追加を可能にする新しいファサード メソッドが追加されました。 列挙型を拡張する方法については、 [拡張機能を使用した列挙値の追加](add-enum-value.md)を参照してください。
 - 拡張機能をサポートするために、列挙を使用する一部のアプリケーション コードが変更されました。 一般的な変更の内容は以下の通りです。
     + ポストイベント サブスクリプションを許可するための、switch の default ケースの **throw** 例外ステートメントの削除。
     + 拡張機能の **SysExtension** サポートの追加。

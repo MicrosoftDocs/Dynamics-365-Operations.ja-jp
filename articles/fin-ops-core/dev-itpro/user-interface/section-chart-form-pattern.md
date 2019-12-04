@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f69f2d44796e57f453b365a940ef0cc6ca4c1e7d
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 2ad5dbf75a2d550e198ac8e1338505a12755f526
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658832"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811688"
 ---
 # <a name="section-chart-form-pattern"></a>セクション グラフのフォーム パターン
 
@@ -55,7 +55,7 @@ ms.locfileid: "2658832"
 
 ### <a name="related-container-patterns"></a>関連するコンテナー パターン
 
--   [運用ワークスペース](workspace-form-pattern.md)
+-   [ワークスペース](workspace-form-pattern.md)
 -   [セクション積み上げグラフ](section-stacked-chart-subpattern.md)
 
 ## <a name="ux-guidelines"></a>UX ガイドライン

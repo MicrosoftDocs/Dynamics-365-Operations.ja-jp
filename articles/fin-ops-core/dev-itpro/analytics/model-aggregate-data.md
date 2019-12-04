@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 747b32e3e604881fcf707d3bf32f0e170fc0edf4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c6ec1db2eba22801ca7e2b0c56e399d8faaf63f6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183457"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772571"
 ---
 # <a name="model-aggregate-data"></a>データの集計モデル
 
@@ -32,7 +32,7 @@ ms.locfileid: "2183457"
 
 ## <a name="prerequisites"></a>前提条件
 
-このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、管理者としてプロビジョニングする必要があります。 詳細については、[Microsoft Dynamics 365 Finance and Operations アプリのインスタンスにアクセス](../dev-tools/access-instances.md)というトピックを参照してください。
+このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、管理者としてプロビジョニングする必要があります。 詳細については、 [開発環境の配置とアクセス](../dev-tools/access-instances.md) というトピックを参照してください。
 
 ## <a name="key-concepts"></a>重要な概念
 - **集計の測定**は、以前のバージョンの**分析視点**および**キューブ**と同様に、集計データをモデル化して使用することができます。

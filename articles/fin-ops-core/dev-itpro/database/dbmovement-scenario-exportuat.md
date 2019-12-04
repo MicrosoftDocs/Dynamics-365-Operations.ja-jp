@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 2dfd69256becc410a12de8496543f1a67c69c70a
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: b834c3481d526126103aaa68b389e39e88ce5a0b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2572704"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770964"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -39,7 +39,7 @@ ms.locfileid: "2572704"
 このシナリオの例として、既に稼働している顧客が、生産トランザクションの最新のコピーを開発環境に読み込もうとしているということがあります。 これにより、顧客は特定のトランザクションをデバッグしたり、または実際的なデータセットを使用して新しい機能とレポートを開発できます。
 
 > [!IMPORTANT]
-> ビルド環境へのデータベースのコピーはサポートされていません。 詳細については、[ビルド環境](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments) で確認してください
+> ビルド環境へのデータベースのコピーはサポートされていません。 詳細については、 [ビルドの環境](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments) を確認してください
 
 ## <a name="known-limitations"></a>既知の制限
 
@@ -176,7 +176,7 @@ ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION =
 
 ### <a name="reset-the-financial-reporting-database"></a>財務報告データベースのリセット
 
-財務報告を使用する場合は、[データベースを復元した後の財務報告のデータ マートのリセット](../analytics/reset-financial-reporting-datamart-after-restore.md)の手順に従って、財務報告データベースをリセットする必要があります。 (財務報告は以前は Management Reporter という名前でした)
+財務報告を使用する場合は、データベースを復元した後の財務報告のデータ マートのリセットの手順に従って、 [財務報告データベースをリセットする](../analytics/reset-financial-reporting-datamart-after-restore.md) 必要があります。 (財務報告は以前は Management Reporter という名前でした)
 
 ## <a name="reenter-data-from-encrypted-and-environment-specific-fields-in-the-target-database"></a>ターゲット データベースの暗号化された環境固有のフィールドからデータを再入力
 

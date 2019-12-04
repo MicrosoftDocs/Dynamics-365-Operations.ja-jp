@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77c8ae42131a3af93112dbc059ec0d890ce29257
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: d9bb7df83ec7501e5e5df5580d1e4bd31e00af57
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658609"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772426"
 ---
 # <a name="data-management-overview"></a>データ管理の概要
 
@@ -307,4 +307,4 @@ VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
  - RecVersion = 1
 
 ## <a name="additional-resources"></a>追加リソース
-- [データ エンティティ](data-entities.md)
+- [データ エンティティの概要](data-entities.md)

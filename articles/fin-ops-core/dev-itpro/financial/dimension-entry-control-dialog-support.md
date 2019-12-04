@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cb572242d0e80657e06375f44b06e9c34992f7c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9dee44a49b63e84fe72488da82d198e178d7032e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191572"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812017"
 ---
 # <a name="support-for-dimension-entry-controls-on-dialogs"></a>ダイアログ上の分析コード エントリ コントロールをサポート
 
@@ -54,9 +54,9 @@ ms.locfileid: "2191572"
 
 `addToDialog` の 2 番目のパラメーターでは、ダイアログの要件を満たすコントローラー クラスを選択します。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[分析コード エントリ コントロールのチュートリアル](dimension-entry-control-migration.md)
+[既定の分析コード コントロールの分析コード エントリ コントロールへの移行](dimension-entry-control-migration.md)
 
 [分析コード エントリ コントロールの取得](dimension-entry-control-uptake.md)
 

@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 96e3aa74e513a2421b04bac049400cf71042e2c8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3dbf5807a213e425b24d5a4809df694393faeb9b
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518446"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832771"
 ---
 # <a name="leave-and-absence-concepts"></a>休暇と欠勤の概念
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 このトピックで説明されている概念と用語は、従業員に休暇を付与する方法、およびその従業員の休暇残高をどのように計算するかを判断するのに役立ちます。 休暇と欠勤の管理の詳細については、[休暇と欠勤の管理](https://docs.microsoft.com/dynamics365/unified-operations/talent/leave-absence-overview) を参照してください。
 

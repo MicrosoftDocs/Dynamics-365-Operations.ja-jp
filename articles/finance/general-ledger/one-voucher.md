@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
+ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553190"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "2810702"
 ---
 # <a name="one-voucher"></a>1 つの伝票
 
@@ -83,6 +83,9 @@ ms.locfileid: "2553190"
 
 次のシナリオは、1 つの伝票機能を使用することによってのみ実行できます。 組織にこれらのシナリオがある場合には、**総勘定元帳パラメーター** ページの、**1 つの伝票内で複数のトランザクションを許可する**パラメーターの設定を変更し、伝票に複数のトランザクションを入力できるようにする必要があります。 これらの機能のギャップは、以降にリリースされる他の機能によって解決されます。
 
+> [!Note]
+> [次の各シナリオでは、**一般会計パラメーター** ページの**一般**クイック タブで、バウチャー内の**1つの伝票内の複数のトランザクションを許可する**フィールドを はいに設定する必要があります。]
+
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>銀行口座に要約形式で仕入先または顧客支払を転記
 
 **シナリオ** 組織は仕入先と金額のリストを銀行に伝え、銀行は、このリストを使用して、組織の代わりに仕入先に支払います。 銀行は、支払いの合計を 1 回の引き落としとして銀行口座に転記します。
@@ -120,6 +123,9 @@ ms.locfileid: "2553190"
 - 資産が分割されます。
 - 処分時の減価償却を計算するためのパラメーターは有効になり、資産が処分されます。
 - 資産利用開始日は、取得日付より前になります。 したがって、減価償却調整額が転記されます。
+
+> [!Note]
+> トランザクションを入力するときは、すべてのトランザクションが同じ固定資産に適用されることを確認します。 **新しい伝票**フィールドが、一般会計の**仕訳帳名**ページでのみ 1 つの伝票番号に設定されている場合でも、複数の固定資産が含まれていると、伝票は転記されません。 伝票に複数の固定資産を含めると、**1 つの伝票に対して指定できる固定資産トランザクションは 1 つのみです**というメッセージが表示され、伝票を転記することはできません。  
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a>為替手形および約束手形
 支払の状態に基づいて、トランザクションは顧客または仕入先残高を 1 つの売掛金/買掛金元帳口座から別の口座に移動するために、為替手形および約束手形は、1 つの伝票を使用する必要があります。

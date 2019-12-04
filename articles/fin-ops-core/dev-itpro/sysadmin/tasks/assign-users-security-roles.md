@@ -3,7 +3,7 @@ title: ユーザーのセキュリティ ロールへの割り当て
 description: Finance and Operations アプリにアクセスするには、ユーザーをセキュリティ ロールに割り当てる必要があります。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 11/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4daecc1acd589cd1656402244e5325382a407e7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e4f4ef4535de9e371829c2d86d4fdc1400510c7b
+ms.sourcegitcommit: 6aa74f66f1abd3a7977050a5339b0b17e62ff053
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180970"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "2807999"
 ---
 # <a name="assign-users-to-security-roles"></a>ユーザーのセキュリティ ロールへの割り当て
 
@@ -37,6 +37,9 @@ ms.locfileid: "2180970"
 5. **メンバーシップ ルール名**一覧で、選択された行のリンクをクリックします。
 6. **クエリの編集**をクリックします。 必要に応じてクエリを編集します。  
 7. **OK**をクリックします。
+8. **自動ロール割り当ての実行**をクリックします。
+9. ナビゲーション ウィンドウ **> モジュール > システム管理 > ユーザー > ユーザー** の順に進みます (別のブラウザー タブで行うことが望ましい)。
+10. さまざまなユーザーに割り当てられているロールを確認して、ロール割り当てクエリが正しいことを確認します。 必要に応じて調整して再実行します。
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>自動ロール割り当てからのユーザーの除外
 1. ページを閉じます。

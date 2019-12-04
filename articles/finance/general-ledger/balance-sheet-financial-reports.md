@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9dcac902118c643b9a9d783c12f02fa5c90827b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e96552447182f3692a19d4cfd962afbcb28e5508
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178624"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771872"
 ---
 # <a name="balance-sheet-financial-reports"></a>貸借対照表の会計報告書
 
@@ -71,10 +71,10 @@ ms.locfileid: "2178624"
 
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[財務報告](financial-reporting-getting-started.md)
+[財務諸表の概要](financial-reporting-getting-started.md)
 
 [財務諸表の表示](view-financial-reports.md)
 

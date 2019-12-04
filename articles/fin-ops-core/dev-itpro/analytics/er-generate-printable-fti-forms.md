@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 731b6a61bd78388f3db0a7007478e3a5e9629a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181430"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771286"
 ---
 # <a name="generate-printable-fti-forms"></a>印刷可能な FTI フォームを生成する
 
@@ -41,7 +41,7 @@ Microsoft SQL Server Reporting Services (SSRS) を使用して印刷可能な FT
 印刷可能な FTI フォームのカスタマイズされたソリューションの一部として、ER コンフィギュレーションのセットを作成する必要があります。
 
 ### <a name="configure-the-er-data-model"></a>ER データ モデルのコンフィギュレーション
-アプリケーションには、顧客請求ビジネス ドメインを説明するデータ モデルを含む ER データ モデルのコンフィギュレーションを含める必要があります。 要件として、データ モデルの名前は **CustomersInvoicing** である必要があります。 ER データ モデルを設計する方法の詳細については、[電子申告 (ER) 用にドメイン固有のデータ モデルを設計](tasks/er-design-domain-specific-data-model-2016-11.md)を参照してください。
+アプリケーションには、顧客請求ビジネス ドメインを説明するデータ モデルを含む ER データ モデルのコンフィギュレーションを含める必要があります。 要件として、データ モデルの名前は **CustomersInvoicing** である必要があります。 ER データ モデルを設計する方法の詳細については、[ER 設計ドメイン固有のデータ モデル](tasks/er-design-domain-specific-data-model-2016-11.md)を参照してください。
 
 ### <a name="configure-the-er-model-mapping"></a>ER データ マッピングのコンフィギュレーション
 アプリケーションには、CustomersInvoicing データ モデルの ER モデル マッピングを含める必要があります。 モデル マッピングは、ER データ モデル コンフィギュレーションまたは ER モデル マッピング コンフィギュレーションのいずれかにすることができます。 ただし、モデル マッピングのルート記述子の名前は **FreeTextInvoice** である必要があります。
@@ -62,7 +62,7 @@ Microsoft SQL Server Reporting Services (SSRS) を使用して印刷可能な FT
 
 ER フレームワークとのアプリケーション統合の詳細については、アプリケーションのソース コードの**ERPrintMgmtReportFormatSubscriber** クラス (ER アプリケーション スイート統合モデル) を参照してください。
 
-ER モデル マッピングの設計に関する詳細については、[モデル マッピングの定義および電子申告 (ER) のデータ ソースの選択](tasks/er-define-model-mapping-select-data-sources-2016-11.md) を参照してください。
+ER モデル マッピングの設計に関する詳細については、[ER モデル マッピングの定義およびそのデータ ソースの選択](tasks/er-define-model-mapping-select-data-sources-2016-11.md) を参照してください。
 
 ### <a name="configure-the-er-format"></a>ER 形式のコンフィギュレーション
 アプリケーション インスタンスには、FTI フォームを生成するために使用される ER 形式のコンフィギュレーションが必要です。 
@@ -70,7 +70,7 @@ ER モデル マッピングの設計に関する詳細については、[モデ
 > [!NOTE]
 > この形式のコンフィギュレーションは CustomersInvoicing データ モデル用に作成され、**FreeTextInvoice** ルート記述子があるモデル マッピングを使用する必要があります。
 
-ER 形式をコンフィギュレーションする方法の詳細については、[電子申告 (ER) 用の形式のコンフィギュレーションの作成](tasks/er-format-configuration-2016-11.md) を参照してください。 OpenXML 形式でレポートを生成するために ER 形式を設計する方法の詳細については、[電子申告 (ER) 用に OpenXML 形式でレポートを生成するためのコンフィギュレーションの設計](tasks/er-design-reports-openxml-2016-11.md) を参照してください。
+ER 形式をコンフィギュレーションする方法の詳細については、[ER 書式設定のコンフィギュレーションの作成 (2016 年 11 月)](tasks/er-format-configuration-2016-11.md) を参照してください。 OpenXML 形式でレポートを生成するために ER 形式を設計する方法の詳細については、[OPENXML 形式でレポートを生成する ER コンフィギュレーションを設計する (2016 年 11 月)](tasks/er-design-reports-openxml-2016-11.md) を参照してください。
 
 ## <a name="configure-print-management"></a>印刷管理のコンフィギュレーション
 ER フレームワークを使用して FTI フォームを生成するために、SSRS レポートを割り当てる場合と同じ方法で ER 形式を割り当てることができます。 ER 形式とすべての売掛金勘定 FTI を関連付けるには、**売掛金勘定** \> **設定** \> **フォーム** \> **フォームの設定** \> **一般** \> **印刷管理** \> **自由書式の請求書** \> **オリジナル**に移動します。 ER 形式と特定の顧客または請求書を関連付けるには、次の手順に従います。
@@ -94,7 +94,7 @@ FTI フォームを生成するために、範囲または選択のいずれか�
 
 ![請求書の確認](media/FTIbyGER-InvoiceExcelPreview.png)
 
-この方法で FTI フォームを印刷するために ER 形式を使用する場合、既定の ER ファイル出力先が使用されます。 出力先は変更できません。 ER 形式の ER 出力先をコンフィギュレーションする方法の詳細については、[電子申告の出力先](electronic-reporting-destinations.md) を参照してください。
+この方法で FTI フォームを印刷するために ER 形式を使用する場合、既定の ER ファイル出力先が使用されます。 出力先は変更できません。 ER 形式の ER 出力先をコンフィギュレーションする方法の詳細については、[電子申告 (ER) の出力先](electronic-reporting-destinations.md) を参照してください。
 
 **請求書の印刷**を有効にし、また**印刷管理の出力先の使用**を無効にすることによって、FTI の転記時に FTI フォームを生成することもできます。
 
@@ -223,5 +223,5 @@ ER フレームワークは現在、生成されたドキュメントのため�
 
 ![電子メール](media/FTIbyGER-Email.PNG)
 
-## <a name="additional-resources"></a>その他のリソース
-[電子申告の概要](general-electronic-reporting.md)
+## <a name="additional-resources"></a>追加リソース
+[電子申告 (ER) の概要](general-electronic-reporting.md)

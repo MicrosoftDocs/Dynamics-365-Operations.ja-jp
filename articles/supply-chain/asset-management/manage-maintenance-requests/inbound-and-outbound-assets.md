@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb318c24424c291f08ba7527b2258c0da4cba9a8
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 53100a897dc71758b8920672fea1e684817cb4b7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571671"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812286"
 ---
 # <a name="inbound-and-outbound-assets"></a>入庫および出庫資産
 
@@ -34,7 +34,7 @@ ms.locfileid: "2571671"
 会社が他の場所または顧客から受け取った資産の修復作業またはメンテナンス作業をする場合、資産管理は、会社に向かう途中の入庫資産と返される出庫資産の両方を追跡できます。
 
 > [!NOTE]
-> 入庫および出庫のライフサイクル状態を使用して、入庫および出庫される資産を管理する場合は、これらのアクションをサポートするライフスタイル モデルを設定する必要があります。 詳細については、[メンテナンス要求の設定](../setup-for-maintenance-requests/requests.md) を参照してください。
+> 入庫および出庫のライフサイクル状態を使用して、入庫および出庫される資産を管理する場合は、これらのアクションをサポートするライフスタイル モデルを設定する必要があります。 詳細については、[メンテナンス要求](../setup-for-maintenance-requests/requests.md) を参照してください。
 
 資産管理の設定によって、入庫資産と出庫資産を操作できるかどうかが決まります。
 

@@ -1,9 +1,9 @@
 ---
 title: AX 2012 からのアップグレード - アップグレード後のタスク
-description: このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Finance and Operations で実行する必要がある作業について説明します。
+description: このトピックでは、 Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Finance and Operations アプリで実行する必要がある作業について説明します。
 author: tariqbell
 manager: AnnBe
-ms.date: 10/15/2019
+ms.date: 11/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: ac113abf7f5ebe6661e1df119ebeefb61a1886c8
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 1b256b50f396426c19ce5462ce7cc329736b71ce
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622785"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811956"
 ---
 # <a name="upgrade-from-ax-2012---post-upgrade-tasks"></a>AX 2012 からのアップグレード - アップグレード後のタスク
 
@@ -30,17 +30,19 @@ ms.locfileid: "2622785"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Finance and Operations で実行する必要がある作業について説明します。 Microsoft Dynamics Lifecycle Services (LCS) で使用可能なプロセス データ パッケージ (PDP) には、次のメニュー項目へのリンクが含まれています。 この PDP は、**データ検証チェックリスト** ワークスペースに入力します。 **データ検証チェックリスト** ワークスペースでは、ユーザーがプロジェクトを追跡し、それを実行するために必要なタスクを監視できます。
+このトピックでは、 Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、 Dynamics 365 Finance や Dynamics 365 Supply Chain Management などの Finance and Operations アプリで実行する必要がある作業について説明します。 Microsoft Dynamics Lifecycle Services (LCS) で使用可能なプロセス データ パッケージ (PDP) には、次のメニュー項目へのリンクが含まれています。 この PDP は、**データ検証チェックリスト** ワークスペースに入力します。 **データ検証チェックリスト** ワークスペースでは、ユーザーがプロジェクトを追跡し、それを実行するために必要なタスクを監視できます。
 
 ## <a name="document-management"></a>ドキュメント管理
 
-ドキュメント管理を使用する場合は、データベースに格納されている既存のドキュメントまたは添付ファイルを Microsoft Azure Blob ストレージに移行する必要があります。 この移行を完了するには、**ドキュメント管理パラメーター** ページの **ファイルを移行** タブで **ファイルを移行** ボタンを使用します。
+ドキュメント管理を使用する場合は、データベースに格納されている既存のドキュメントや添付ファイルを Microsoft Azure Blob ストレージに移行する必要があります。 この移行を完了するには、**ドキュメント管理パラメーター** ページの **ファイルを移行** タブで **ファイルを移行** ボタンを使用します。 ドキュメント管理ではデータベースに格納されているファイルに引き続きアクセスできるため、この操作は重要ではありませんが、ファイルはかなりのデータベース記憶域を消費する可能性があり、取得の効率が低下します。 ファイル移行プロセスでは、可能性のあるすべてのデータベースファイルが Microsoft Azure Blob ストレージ に移行されます。発生したエラーは報告され、処理は続行されます。 エラーが報告された場合は、ファイル移行プロセスを再度実行します。
+
+ファイルの移行プロセスが正常に完了しない場合、データベースに保存されているファイルに Microsoft が修復できない損傷があることが考えられます。 その場合は、業務に不可欠とならないサポート案件を開いて、添付ファイルをメモ レコードに変換できるようにすることができます。これにより、以前のメモとデータベースに保存されたファイルの名前が保持されます。 ファイル自体の回復はできないことに留意してください。
 
 ## <a name="print-management"></a>印刷管理
 
-印刷管理を使用する場合、AX 2012 のネットワーク プリンタへの参照は無効になります。 **ドキュメント回覧** ページのネットワーク プリンターを設定して参照する必要があります。 詳細については、[ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](../analytics/install-document-routing-agent.md) を参照してください。
+印刷管理を使用する場合、AX 2012 のネットワーク プリンタへの参照は無効になります。 **ドキュメント回覧** ページのネットワーク プリンターを設定して参照する必要があります。 詳細については、 [ドキュメント ルーティング エージェントをインストールしてネットワーク印刷を有効にする](../analytics/install-document-routing-agent.md) を参照してください。
 
-## <a name="retail"></a>小売
+## <a name="retail"></a>Retail
 
 AX 2012 からアップグレードを完了すると、レジスターおよびデバイスを構成する必要があります。
 
@@ -64,4 +66,4 @@ AX 2012 からのアップグレードが完了した後、予算計画の列と
 
 また、各予算ステージに適切なレイアウトを使用するための予算計画プロセスを更新する必要があります。 予算計画プロセスを更新するには、**予算作成** > **設定** > **予算計画** > **予算計画プロセス**をクリックします。
 
-予算計画のアップグレードの詳細については、 [Microsoft Dynamics AX 2012 から予算計画にアップグレードする](upgrade-budget-planning.md)を参照してください。
+予算計画の更新に関する詳細については、 [予算計画の更新](upgrade-budget-planning.md) を参照してください。

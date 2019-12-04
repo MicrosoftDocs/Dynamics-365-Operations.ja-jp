@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: 6007eacf94ed688287bff6c26f0e0b46752e6804
-ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
+ms.openlocfilehash: f2fd9e13edfbc2893dbb94f0c70af0dae5e916de
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564952"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811419"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -94,7 +94,7 @@ ms.locfileid: "2564952"
 
 生産システムの準備には、次の条件が含まれますがこれに限定されません。
 
-- 最新のサブスクリプションの見積が「[サブスクリプション見積もりツール](../../dev-itpro/lifecycle-services/subscription-estimator.md)」の説明に従って有効になっている。
+- 最新のサブスクリプション見積もりが有効化されます。これについては [Lifecycle Services (LCS) のサブスクリプション見積もりツール](../../dev-itpro/lifecycle-services/subscription-estimator.md) で解説されています。
 - コード、構成、およびデータの切替準備が整っている。
 - エンジニアリング プロセスが重要な修正プログラムを管理するために配置されている。
 - 顧客は、ソリューションと UAT にサインオフしている。

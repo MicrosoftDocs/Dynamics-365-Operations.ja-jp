@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sshashi
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c13b33525b2d277a06bb4c8b09390d1e3e53b91b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7c46c43fb316d89f2caa2b93543a1b6392ec09d7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180484"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812425"
 ---
 # <a name="go-live-for-implementation-projects-faq"></a>実装プロジェクト FAQ の Go-live
 
@@ -36,7 +36,7 @@ ms.locfileid: "2180484"
 
 ## <a name="what-are-the-prerequisites-to-deploy-a-production-environment"></a>実稼働環境を配置するための前提条件
 
-前提条件の一覧については、[Go-Live の準備](prepare-go-live.md) を参照してください。
+前提条件の一覧については、 [Go-Live の準備](prepare-go-live.md) を参照してください。
 
 ## <a name="what-is-a-go-live-assessmentreview-and-why-is-it-required"></a>起動の評価/レビューとは何ですか、またそれがなぜ必要ですか ?
 
@@ -47,7 +47,7 @@ FastTrack ソリューション アーキテクトがプロジェクトに割り
 
 ## <a name="the-production-button-isnt-available-in-lcs-how-do-i-request-my-production-environment"></a>生産ボタンは、LCS では使用できません。 実稼働環境を要求するにはどうすればよいですか。
 
-LCS の **生産** ボタンは、LCS 実装方法の **分析**、**デザイン & 開発**、および**テスト** フェースを完了した後にのみ使用可能です。 これらのフェーズを完了する方法の詳細については、「[メソドロジ タスクおよびフェーズ](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)」を参照してください。
+LCS の **生産** ボタンは、LCS 実装方法の **分析**、**デザイン & 開発**、および**テスト** フェースを完了した後にのみ使用可能です。 これらのフェーズを完了する方法の詳細については、 [Finance and Operations アプリの顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。
 
 > [!NOTE]
 > 実稼働環境は、運用の評価/レビューが完了するまで配置されません。
@@ -56,7 +56,7 @@ LCS の **生産** ボタンは、LCS 実装方法の **分析**、**デザイ�
 
 一連番号 サンド ボックス環境と異なるバージョンにある実稼働環境に対する要求をすべて拒否します。 実稼働環境をコンフィギュレーションするときは、選択したバージョンが、ソリューションを承認したサンド ボックス環境のバージョンと一致する必要があります。 したがって、まず最新の更新プログラムをサンドボックス環境に適用してテストし、サインオフする必要があります。
 
-詳細については、「[バージョンと更新ポリシー](../../dev-itpro/migration-upgrade/versions-update-policy.md)」を参照してください。
+詳細については、 [ソフトウェアのライフサイクル ポリシーおよびクラウド リリース](../../dev-itpro/migration-upgrade/versions-update-policy.md) を参照してください。
 
 ## <a name="our-sandbox-environments-are-deployed-in-the-central-us-datacenter-but-we-want-our-production-environments-to-be-deployed-in-the-west-us-datacenter-can-i-select-west-us-as-the-datacenter-in-my-production-configuration"></a>サンドボックス環境は、米国中部データセンターに配置されますが、生産環境は米国西部データセンターに配置する予定です。 本番構成で、データ センターとして米国西部を選択できますか？
 
@@ -103,7 +103,7 @@ Microsoft FastTrack チームによる Go-live アセスメントが完了し、
 
 はい。 LCS で、配置可能パッケージを実稼働環境に適用するサービス要求を送信することができます。 1 つの配置可能パッケージのアプリケーションを実稼動環境に関与させると、5 時間のリード タイムと約 5 時間のダウンタイムになります。
 
-詳細については、[配置可能パッケージの適用](../../dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
+詳細については、[クラウド環境への更新プログラムの適用](../../dev-itpro/deployment/apply-deployable-package-system.md)を参照してください。
 
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>実稼働環境がダウンした場合はどうすればよいでしょうか ?
 

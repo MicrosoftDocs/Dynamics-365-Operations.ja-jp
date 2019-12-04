@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: dd88537506521fd37aa170c7e8f43bcf5a106836
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1a357c4623f4f9dc441fe328ec0d5481c14ae4af
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174354"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771636"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Power BI Embedded を使用したワークスペースへの分析の追加
 
@@ -102,7 +102,7 @@ Dynamics 365 リソースとして .pbix ファイルを追加したため、ワ
 > [!NOTE]
 > 埋め込みのワークスペースについては、ページの一貫性を保つため、拡張機能を使用して、**フィルタ ウィンドウ**および**タブ**ページを非表示にすることをお勧めします。
 
-これでアプリケーション フォームの定義を拡張するためのタスクが完了しました。 カスタマイズを行うために拡張機能を使用する方法に関する詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md) を参照してください。
+これでアプリケーション フォームの定義を拡張するためのタスクが完了しました。 カスタマイズを行うために拡張機能を使用する方法に関する詳細については、[拡張機能およびオーバーレイによるカスタマイズ](../extensibility/customization-overlayering-extensions.md) を参照してください。
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>ビューアー コントロールを埋め込むための X++ ビジネス ロジックの追加
 これらの手順に従い、**引当管理** ワークスペースに埋め込まれているレポート ビューアー コントロールを初期化するビジネス ロジックを追加します。

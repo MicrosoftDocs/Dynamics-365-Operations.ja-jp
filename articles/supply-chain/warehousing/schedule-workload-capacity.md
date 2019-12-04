@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d5d878b0fe4e6b65aa2439d7ef7312eda1895823
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559038"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814930"
 ---
 # <a name="schedule-workload-capacity"></a>ワークロード能力のスケジューリング
 
@@ -30,7 +30,7 @@ ms.locfileid: "1559038"
 
 倉庫に対して作業負荷能力をスケジューリングすることも、倉庫ごとに作業者の現在および将来の作業負荷を予測することもできます。 倉庫全体の作業負荷を予測することも、入荷作業負荷および出荷作業負荷を個別に予測することもできます。
 
-選択した倉庫の作業負荷出力を予測するには、マスター スケジューリング データがそれらの倉庫に対して使用可能である必要があります。 詳細については、[マスタ プラン](../master-planning/master-plans.md)を参照してください。
+選択した倉庫の作業負荷出力を予測するには、マスター スケジューリング データがそれらの倉庫に対して使用可能である必要があります。 詳細については、[マスター プランの概要](../master-planning/master-plans.md) を参照してください。
 
 ## <a name="schedule-and-view-workloads-for-a-warehouse"></a>倉庫の作業負荷のスケジューリングおよび表示
 

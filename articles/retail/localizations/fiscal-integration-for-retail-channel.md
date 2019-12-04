@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025410"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812310"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>小売チャネルの会計統合の概要
 
@@ -36,7 +36,7 @@ ms.locfileid: "2025410"
 - Retail POS で完了した販売と返品に関する情報を、税務当局が運営する外部の Web サービスに安全に送信します。
 - デジタル署名での販売トランザクション データの改ざん防止を保証するのに役立ちます。
 
-会計統合機能は、Retail POS と会計デバイスおよび会計サービスとの統合のさらなる開発とカスタマイズのための共通のソリューションを提供するフレームワークです。 この機能には、特定の国または地域の基本的な小売シナリオをサポートし、特定の会計デバイスまたはサービスと連携する会計統合サンプルも含まれています。 会計統合サンプルは、Retail コンポーネントのいくつかの拡張機能で構成され、ソフトウェア開発キット (SDK) が含まれます。 会計統合のサンプルの詳細については、「[Retail SDK の会計統合のサンプル](#fiscal-integration-samples-in-the-retail-sdk)」を参照してください。 Retail SDK をダウンロードして使用する方法については、[Retail SDK の概要](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
+会計統合機能は、Retail POS と会計デバイスおよび会計サービスとの統合のさらなる開発とカスタマイズのための共通のソリューションを提供するフレームワークです。 この機能には、特定の国または地域の基本的な小売シナリオをサポートし、特定の会計デバイスまたはサービスと連携する会計統合サンプルも含まれています。 会計統合サンプルは、Retail コンポーネントのいくつかの拡張機能で構成され、ソフトウェア開発キット (SDK) が含まれます。 会計統合のサンプルの詳細については、「[Retail SDK の会計統合のサンプル](#fiscal-integration-samples-in-the-retail-sdk)」を参照してください。 小売 SDK のダウンロードと使用方法については、[小売 ソフトウェアの開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
 他の会計デバイスまたはサービスと Retail POS を統合する、または他の国や地域の要件をカバーするために、会計統合サンプルでサポートされていない他のシナリオをサポートするには、既存の会計統合サンプルを拡張するか、例として既存のサンプルを使用することによって新しいサンプルを作成する必要があります。
 
@@ -141,6 +141,6 @@ Retail POS の会計登録プロセスは、1 つまたは複数のステップ�
 
 次の会計統合機能は、Retail SDK でも利用可能ですが、現在は会計統合フレームワークを利用していません。 この機能の会計統合フレームワークへの移行は、今後の更新で予定されています。
 
-- [フランス向けデジタル署名](emea-fra-cash-registers.md)
-- [ノルウェー向けデジタル署名](emea-nor-cash-registers.md)
-- [スウェーデン向け制御ユニットの統合サンプル](./retail-sdk-control-unit-sample.md)
+- [フランスのキャッシュ レジスター機能](emea-fra-cash-registers.md)
+- [ノルウェイのキャッシュ レジスター機能](emea-nor-cash-registers.md)
+- [スウェーデン用の管理単位との Retail POS の統合](./retail-sdk-control-unit-sample.md)

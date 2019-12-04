@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c40877bc6557a81adc5c1b8d10afbbd26322b200
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3677db634366ecfe6a26f2f5e01532ce5a087593
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249937"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815252"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>BOM とフォーミュラ明細行を倉庫にリリース
 
@@ -31,7 +31,7 @@ ms.locfileid: "2249937"
 このトピックでは、部品表 (BOM) 明細行とフォーミュラ明細行の原材料消費を倉庫にリリースするプロセスについて説明します。 BOM またはフォーミュラの明細行を倉庫にリリースする際、そのシステムは材料が製造工程で消費される作業現場の生産入力場所で、材料が既に利用可能かどうかを最初に判断します。
 
 - 材料が生産入庫の場所で使用可能な場合は、シグナルが倉庫への材料のリリースのために与えられ、直ちにその場所からピッキングされます。
-- 材料が生産入庫の場所で使用できない場合、材料のリリースは、材料を倉庫内の場所から生産入庫の場所に移動する必要があることを示します。 材料は、原材料のピッキング倉庫作業経由で移動されます。 したがって、原材料ピッキングの倉庫プロセスはコンフィギュレーションされている必要があります。 詳細については、[補充](../warehousing/replenishment.md) および [作業テンプレートと場所ディレクティブを使い倉庫作業を管理](../warehousing/control-warehouse-location-directives.md) を参照してください。
+- 材料が生産入庫の場所で使用できない場合、材料のリリースは、材料を倉庫内の場所から生産入庫の場所に移動する必要があることを示します。 材料は、原材料のピッキング倉庫作業経由で移動されます。 したがって、原材料ピッキングの倉庫プロセスはコンフィギュレーションされている必要があります。 詳細については、[補充の概要](../warehousing/replenishment.md) および [作業テンプレートと場所ディレクティブを使用した倉庫作業の管理](../warehousing/control-warehouse-location-directives.md) を参照してください。
 
 ## <a name="methods-for-releasing-bom-and-formula-lines"></a>BOM とフォーミュラ明細行をリリースする方法
 

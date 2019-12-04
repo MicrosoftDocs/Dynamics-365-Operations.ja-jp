@@ -3,7 +3,7 @@ title: Retail チャネル拡張機能を最新の Retail SDK にアップグレ
 description: このトピックでは、以前のリリースから Retail チャネル拡張機能を Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/29/2018
+ms.date: 11/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 19cf326c31ed0883ecf13e893327df1d8388b418
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 72af9b668f5af21d5a1208b685ce922a6c3e96b4
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019311"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824482"
 ---
 # <a name="upgrade-the-retail-channel-extension-to-the-latest-retail-sdk"></a>Retail チャネル拡張機能を最新の Retail SDK にアップグレード
 
@@ -59,6 +59,9 @@ Retail SDK の更新は、主に次のコンポーネントで構成されます
   - 最新のアプリケーション リリースにアップグレードする。
 
 SDK アップグレード プロセスは、バージョンによって異なります。 バージョン 7.3 以降では、すべての Retail コンポーネントがシールされており、拡張点を使用してのみカスタマイズを完了する必要があります。 これにより、コード アップグレード作業が容易になります。 ただし、7.0、7.1、または 7.2 からアップグレードした場合と、インライン変更を行った場合、インラインを拡張機能に移動する必要があります。 これには追加の作業が必要になります。
+
+> [!NOTE] 
+> 新しいバージョンにアップグレードする場合、既存の Retail サーバー、Commerce Runtime、プロキシ、ハードウェア ステーション、CDX、またはデータベース拡張機能コード / API は一切削除しないでください。 POS クライアントはこのコードに依存しているため、削除するとランタイム例外エラーが発生します。 コード更新中にそれを削除したい場合は、クライアント コードもこの変更をサポートするように更新する必要があり、これをおこなわないとランタイムエラーが発生します。 ベスト プラクティスとして、拡張コードは、常に下位互換性があることを示す方法で記述する必要があります。
 
 次の表では、コードがシールされているバージョンに関する一部の概要情報を提供します。 アンシールド バージョンからシールド バージョンにアップグレードする場合は、すべてのカスタマイズを識別し、拡張機能にインライン カスタマイズを移動する必要があります。 インライン カスタマイズを移動するには、これを行うために必要な拡張ポイントがすべてあることを確認します。 ない場合は、拡張機能の要求を送信します。 
 

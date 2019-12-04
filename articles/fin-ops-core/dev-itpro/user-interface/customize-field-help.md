@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 81a0be33120af76be640430e7a604716c0677e31
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: c599c3b231f99cefb70662cd724414eebe6a6804
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622781"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812030"
 ---
 # <a name="customize-field-descriptions"></a>フィールドの説明をカスタマイズする
 
@@ -30,7 +30,7 @@ ms.locfileid: "2622781"
 
 この記事では、既存のフィールドの説明をカスタマイズし、独自の説明を追加する方法について説明します。
 
-より複雑なフィールドの説明がいくつかあります。 フィールド上に置くと、これらの説明が表示されます。 会社固有の情報を追加する場合などに、これらの説明をカスタマイズすることができます。 また、追加フィールドの説明を追加することもできます。 フィールドの説明を作成するには、フィールド コントロールの **HelpText** プロパティを使用します。 **HelpText** プロパティは、以前のバージョンのように、テーブル フィールドとデータ型に指定されなくなりました。 また、データ型とテーブル フィールドからフォーム コントロールへの **HelpText** プロパティの継承は廃止されました。 フィールドの説明は、他のコントロールおよびページで使用可能な情報のコンテキストである、個々のフィールドに対して固有のものです。 フィールドの説明を追加およびカスタマイズするには、開発環境へのアクセスが必要です。 その他のメタデータの変更と同様に、Operations の新しいバージョンがリリースされるとき、新しい説明は上書きされるを防ぐために新しいモデルに追加する必要があります。 詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md) を参照してください。
+より複雑なフィールドの説明がいくつかあります。 フィールド上に置くと、これらの説明が表示されます。 会社固有の情報を追加する場合などに、これらの説明をカスタマイズすることができます。 また、追加フィールドの説明を追加することもできます。 フィールドの説明を作成するには、フィールド コントロールの **HelpText** プロパティを使用します。 **HelpText** プロパティは、以前のバージョンのように、テーブル フィールドとデータ型に指定されなくなりました。 また、データ型とテーブル フィールドからフォーム コントロールへの **HelpText** プロパティの継承は廃止されました。 フィールドの説明は、他のコントロールおよびページで使用可能な情報のコンテキストである、個々のフィールドに対して固有のものです。 フィールドの説明を追加およびカスタマイズするには、開発環境へのアクセスが必要です。 その他のメタデータの変更と同様に、Operations の新しいバージョンがリリースされるとき、新しい説明は上書きされるを防ぐために新しいモデルに追加する必要があります。 詳細については、 [拡張機能およびオーバーレイによるカスタマイズ](../extensibility/customization-overlayering-extensions.md) を参照してください。
 
 ## <a name="customize-a-field-description-or-add-a-new-description"></a>フィールドの説明をカスタマイズするか、新しい説明を追加する
 同じ手順を使用して、既存のフィールド記述をカスタマイズし、新しいフィールド記述を追加します。 ただし、既存の説明をカスタマイズする場合に、既存のラベルの参照を置き換えます。
@@ -52,12 +52,12 @@ Microsoft が提供するフィールドの説明は、別のラベル ファイ
 - @FieldDescriptions\_ProcurementAndSourcing:PurchLineBackOrder\_LinkViewCheckBox は、<strong>発注残購買注文明細行</strong> (PurchLineBackOrder) ページ内の<strong>変更ビューのリンク</strong> (LinkViewCheckBox) オプションのラベルの ID です。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[クライアントでローカライズ可能なラベルを作成する](create-localizable-labels-client.md)
+[ローカライズ可能なラベルの作成](create-localizable-labels-client.md)
 
-[フィールド説明の表示およびエクスポート](../../fin-ops/get-started/view-export-field-descriptions.md)
+[フィールドの説明の表示およびエクスポート](../../fin-ops/get-started/view-export-field-descriptions.md)
 
 
 

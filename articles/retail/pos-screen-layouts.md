@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c4636f5a023786e3871eb5d907e2e9546181827a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025278"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811783"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>販売時点管理 (POS) の画面レイアウト
 
@@ -171,7 +171,7 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 
     - **アクション** – 該当する POS の操作の一覧で、POS でボタンがクリックされるときに呼び出される操作を選択します。
 
-        サポートされている POS 操作の一覧については、[オンラインおよびオフラインでの POS 操作](pos-operations.md)を参照してください。
+        サポートされている POS 操作の一覧については、[オンラインおよびオフラインでの販売時点管理 (POS) の操作](pos-operations.md)を参照してください。
 
     - **アクション パラメーター** – 一部の POS 操作は呼び出されるとき、追加のパラメーターを使用します。 たとえば、製品の追加の操作の際、ユーザーは追加する製品を指定できます。
     - **ボタン テキスト** – POS のボタンに表示されるテキストを指定します。
@@ -191,6 +191,6 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 
 ![POS でのボタン グリッドの例](../retail/media/Example-Button-Grid-In-POS.png)
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[Retail POS のレイアウト デザイナーのインストール](install-pos-layout-designer.md)
+[Retail 販売時点管理 (POS) のレイアウト デザイナーのインストール](install-pos-layout-designer.md)

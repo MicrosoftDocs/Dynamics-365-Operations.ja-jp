@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22372bd2d42b526d10e39174e7fb5ec5281d1b73
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 544721af404775a6d8b65628848caa84ceaebe30
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572791"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813831"
 ---
 # <a name="quality-management-processes"></a>品質管理プロセス
 
@@ -87,17 +87,17 @@ ms.locfileid: "1572791"
 
 **ドキュメント タイプ** ページを使用して修正の一意のドキュメント タイプを定義することができます。 **レポートの設定** ページを使用して、修正レポートにこのドキュメント タイプのコメントを印刷するかどうかを定義できます。 印刷された修正レポートには、不適合に関する情報および関連する不適合におけるメモを表示されます。 レポートには、診断タイプや関連する修正メモなどの修正情報が含まれます。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[品質管理の有効化](enable-quality-management.md)
+[品質管理の概要](enable-quality-management.md)
 
-[不適合管理の有効化](enable-nonconformance-management.md)
+[不適合管理](enable-nonconformance-management.md)
 
 [在庫ブロック](inventory-blocking.md)
 
 [検査指示](quarantine-orders.md)
 
-[品質指示の設定 (タスク ガイド)](tasks/set-up-quality-orders.md)
+[品質指示の設定](tasks/set-up-quality-orders.md)
 
-[商品の品質の調査 (タスク ガイド)](tasks/inspect-quality-goods.md)
+[商品の品質の調査](tasks/inspect-quality-goods.md)

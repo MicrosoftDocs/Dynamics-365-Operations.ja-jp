@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
-ms.openlocfilehash: 310f0c31d6a9a0d3aa8f163d9820469b04c48319
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9d8aa9eaf1876a98749b91dc78bef6f173364dfc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180514"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811685"
 ---
 # <a name="microsoft-fasttrack"></a>Microsoft FastTrack 
 
@@ -53,9 +53,9 @@ Microsoft Dynamics Lifecycle Services (LCS) で**実装プロジェクト** ワ�
 - [ワーク ショップ](#workshops)
 
 > [!NOTE]
-> FastTrack チームは、プロセスおよびガイダンスのドキュメントを常に増加しています。 詳細については、[実装ライフサイクルの理解](../imp-lifecycle/implementation-lifecycle.md)を参照してください。
+> FastTrack チームは、プロセスおよびガイダンスのドキュメントを常に増加しています。 詳細については、 [実装ライフサイクル管理ホーム ページ](../imp-lifecycle/implementation-lifecycle.md) を参照してください。
 
-## <a name="techtalks"></a>TechTalks
+## <a name="techtalks"></a>技術解説
 
 TechTalks は、対象となるサブジェクト領域固有の技術解説およびベスト プラクティスを提供して、顧客とパートナーの両方をサポートすることに焦点を当てます。 これらの説明では、利用可能なツールと機能の概要を提供することがよくあります。 TechTalks は、最後に質問と応答 (Q&A) セッションを含む有効な Web キャスト形式で配信されます。 それらは要求に応じてアクセスすることができ、公開されています。 すべての Tech Talk を表示し、将来の Tech Talk にサインアップするには、[Microsoft Dynamics 365 FastTrack Tech Talks](https://learning.eventbuilder.com/Dynamics365FastTrackTechTalks) を参照してください。
 
@@ -70,7 +70,7 @@ FastTrack コミュニティでは、顧客およびパートナーが質問を�
 
 ### <a name="onboarding-workshop"></a>研修ワークショップ
 
-オンボード ワーク ショップは、FastTrack サービスを紹介および最大の成功を保証するのに役立つ実装トピックのセットに関する入門ガイダンスの提供を行うように設計されています。 詳細については、[プロジェクトをオンボードする](../imp-lifecycle/onboard.md) を参照してください。 ワークショップで対応できると思われるトピックのいくつかは以下の通りです。
+オンボード ワーク ショップは、FastTrack サービスを紹介および最大の成功を保証するのに役立つ実装トピックのセットに関する入門ガイダンスの提供を行うように設計されています。 詳細については、 [実装プロジェクトの研修](../imp-lifecycle/onboard.md) を参照してください。 ワークショップで対応できると思われるトピックのいくつかは以下の通りです。
 
 - チームの紹介
 - FastTrack の概要 

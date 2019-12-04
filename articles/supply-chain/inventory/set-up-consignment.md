@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 24500ff46cc77ca8fa59c0c16427d9f05f33a87e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 04b3fb3038a1373e203ec240a0163cf67de655cc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550010"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813856"
 ---
 # <a name="set-up-consignment"></a>委託販売の設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "1550010"
 
 このトピックでは、入庫委託販売在庫工程をコンフィギュレーションする方法を説明します。
 
-委託販売在庫は、仕入先によって所有されているが、サイトで保管されている在庫です。 在庫を消費するか、または使用する準備ができたら、在庫の所有権を引き継ぎます。 このトピックでは、委託販売プロセスを有効にするのに必要な設定について説明します。 委託販売プロセスに関する詳細については、「[委託販売](consignment.md)」を参照してください。
+委託販売在庫は、仕入先によって所有されているが、サイトで保管されている在庫です。 在庫を消費するか、または使用する準備ができたら、在庫の所有権を引き継ぎます。 このトピックでは、委託販売プロセスを有効にするのに必要な設定について説明します。 委託販売プロセスに関する詳細については、[委託販売の設定](consignment.md) を参照してください。
 
 ## <a name="inventory-owners"></a>在庫所有者
 現物入庫の委託販売の在庫を記録するには、仕入先の所有者を定義する必要があります。 これは、**在庫所有者**のページで行われます。 **仕入先口座**を選択すると、**名前**と**所有者**のフィールドの規定値が生成されます。 **所有者**フィールドの値が仕入先に表示されるので、仕入先口座名が外部ユーザーに認識されにくい場合は変更することができます。 **所有者**フィールドを編集できますが、**在庫所有者**記録を保存する時点までです。 **名前**フィールドには、仕入先口座が関連付けられている当事者名を入力できますが、変更できません。
@@ -49,4 +49,4 @@ ms.locfileid: "1550010"
 [![在庫所有権変更仕訳](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>委託販売プロセスでの仕入先コラボレーション
-仕入先コラボレーション インターフェイスを使用している仕入れ先は、サイトで在庫の消費を監視するために、これを使用することもできます。 仕入先コラボレーションを使用する仕入先の設定については、「[仕入先コラボレーション ユーザーのセキュリティのコンフィギュレーション](../procurement/configure-security-vendor-portal-users.md)」を参照してください。
+仕入先コラボレーション インターフェイスを使用している仕入れ先は、サイトで在庫の消費を監視するために、これを使用することもできます。 仕入先コラボレーションを使用する仕入先の設定については、[仕入先ポータルのユーザー セキュリティ](../procurement/configure-security-vendor-portal-users.md) を参照してください。

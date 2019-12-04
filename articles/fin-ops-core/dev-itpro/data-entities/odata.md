@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13191dbc85571101e6a8fe34adf06fcda8a2e0bb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e31a6a8b633dd62a19dc598e0b5ce527642430c0
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183468"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771014"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -242,7 +242,7 @@ OData は、データベースに対して豊富なクエリを作成できる S
 OData プロトコルは、エンティティで多くの似たフィルター処理とクエリ オプションをサポートします。 クエリ オプションの完全なセットについては、[Windows Communication Foundation](https://msdn.microsoft.com/library/ff478141.aspx) を参照してください。
 
 ## <a name="authentication"></a>認証
-OData は、サーバーと同じ認証スタック上に配置されます。 認証の詳細については、[サービス エンドポイント](services-home-page.md) を参照してください。
+OData は、サーバーと同じ認証スタック上に配置されます。 認証の詳細については、 [サービス エンドポイントの概要](services-home-page.md) を参照してください。
 
 ## <a name="tips-and-tricks"></a>ヒントや秘訣
 

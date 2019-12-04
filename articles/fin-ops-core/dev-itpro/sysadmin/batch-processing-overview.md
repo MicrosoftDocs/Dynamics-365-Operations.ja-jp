@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 365d35ebf6f7a935aa5a4b6e42e072d6eb26319c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 74829a9586aae6983bf952027151cfde01cd47e2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183079"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811946"
 ---
 # <a name="batch-processing-overview"></a>バッチ処理の概要
 
@@ -52,11 +52,11 @@ Finance and Operations では、多くのタスクをバッチ ジョブの一�
 管理者およびバッチ マネージャーは、バッチ ジョブの作成とコピー、バッチ ジョブ ユーザーの変更、ジョブを実行しない期間の指定などの一般的なタスクを実行できます。 これらのタスクの詳細については、次のトピックを参照してください。
 
 -  [バッチ ジョブの作成](tasks/create-batch-job.md)
--  [バッチ マネージャー ロール](runby.md)
--  [バッチ アクティブ期間](activeperiod.md)
+-  [バッチ マネージャーのセキュリティ ロール](runby.md)
+-  [有効なバッチ期間](activeperiod.md)
 -  [バッチ ジョブのコピー](copy-batch-job.md)
--  [バッチ警告のコンフィギュレーション](alerts.md)
--  [バッチ化された フォーム](enhanced-forms.md)
--  [バッチ履歴のクリーンアップ](batch-history-cleanup.md)
+-  [警告の設定](alerts.md)
+-  [拡張バッチ フォーム](enhanced-forms.md)
+-  [バッチジョブ履歴のクリーンアップ](batch-history-cleanup.md)
 -  [実行中のバッチ ジョブの中止](batch-abort.md)
 

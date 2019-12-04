@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08141615e36c7bfe8b8a7984322dbb985568ee51
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178696"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772079"
 ---
 # <a name="budget-planning-data-allocation"></a>予算計画データの配賦
 
@@ -36,10 +36,10 @@ ms.locfileid: "2178696"
 ## <a name="allocation-methods"></a>配賦方法
 3 つの配賦方法 (複数の期間に割り当て、分析コードへの配賦、および元帳配賦ルールの使用) で、同じ予算計画明細行に基づく予算計画明細行を作成できます。 3 つの他の方法 (集計、配分、および予算計画からのコピー) で、他の予算計画での予算計画明細行を作成できます。 すべての 6 つの配賦方法では、ターゲット シナリオを指定します。 ターゲット シナリオは、ソース シナリオと同じ場合も異なる場合もあります。 また、新しい明細行を予算計画に追加するか、予算計画の現在の明細行を置き換えるか指定できます。
 
-[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+[![配賦方法を複数の期間に割り当てる](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **複数の期間に割り当て** – 期間割り当てカテゴリを使用して、ソース予算計画シナリオの予算計画明細行を、ターゲット シナリオの期間全域に配賦します。 当初起票額は、期間割り当てカテゴリで定義された割合と日付に基づいて、ターゲット シナリオの複数の明細行に割り当てられます。         
 
-[![分析コードへの配賦](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
+[![分析コード配賦方法への配賦](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **分析コードへの配賦** – 選択した予算配賦条件で定義された割合および財務分析コードに基づいて、ソース予算計画シナリオからターゲット シナリオの 1 つ以上の明細行に予算計画明細行を配賦します。           
 
 ![集計チャート](./media/aggregatechart-300x230.png)
@@ -57,7 +57,7 @@ ms.locfileid: "2178696"
 ## <a name="using-allocation-methods-in-a-budget-plan"></a>予算計画の配賦方法を使用
 予算計画ページで配賦を実行するには、配賦する明細行を選択し、**予算の配賦**をクリックします。
 
-[![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
+[![予算配賦ボタン](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 次に、配賦方法を選択します。 残りのフィールドが選択した方法に基づいて設定されます。 これらのフィールドでは、予算計画データのソースとターゲット、および目標金額が作成される際に指定した係数をソースに掛けられる、バルク調整を簡単にするためのオプションが含まれます。 **計画への追加**オプションも設定できます。 **いいえ**を選択して既存の予算計画明細行を置き換えるか、**はい**を選択して既存の予算計画明細行をそのままにし、配賦済金額の新しい明細行を追加します。
 
@@ -70,7 +70,7 @@ ms.locfileid: "2178696"
 
 最後に、目的のワークフロー ステージで予算計画ステージ配賦の自動化タスクを追加します。 次の例では、2 つの予算計画ステージ配賦 (赤に示されています) がワークフローに挿入されます。
 
-[![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+[![予算計画ステージ配賦](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
 
 
 

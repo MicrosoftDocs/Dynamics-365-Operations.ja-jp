@@ -3,7 +3,7 @@ title: 出荷の自動更新
 description: このトピックでは、出荷の自動更新機能の概要を示します。
 author: josaw1
 manager: AnnBe
-ms.date: 08/13/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,15 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 160ad55a12d13fdb64e55effaabb1848179e71cf
-ms.sourcegitcommit: c35dfce2c0605d6f46365ce5d985c22187d21761
+ms.openlocfilehash: e42e7f19311adee7cc48f0ad0b59a4d0d54df9aa
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "1986120"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773546"
 ---
 # <a name="shipment-auto-updates"></a>出荷の自動更新
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 自動更新出荷機能を使用すると、出荷に関連付けられている積荷を倉庫にリリースした後に、出荷に関連付けられている積荷明細行の数量 (増加と減少の両方) が自動的に更新されます。 この機能は、出荷または積荷の積荷明細行がウェーブで処理されるまで有効です。 この機能を使用すると、注文の更新が自動的に倉庫にフローするため、倉庫作業が作成されるまで、手動による操作は必要ありません。

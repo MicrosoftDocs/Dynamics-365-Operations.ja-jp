@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c48a4dc865d8b0e405ac768e647950d8ecf7e9cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4007ef865c24fce7524297fc100726267efb9598
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191718"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811418"
 ---
 # <a name="implementation-lifecycle-management-home-page"></a>実装ライフサイクル管理ホーム ページ
 
@@ -30,13 +30,13 @@ ms.locfileid: "2191718"
 
 ## <a name="programs"></a>プログラム
 
-[Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md)
+[Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md)
 
 ## <a name="tools"></a>ツール
 
 [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com)
 
-[顧客向け Lifecycle Services の概要](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
+[Finance and Operations アプリの顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
 ## <a name="processes"></a>プロセス
 
@@ -46,4 +46,4 @@ ms.locfileid: "2191718"
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-[Go-Live に関するよく寄せられる質問](go-live-faq.md)
+[実装プロジェクト FAQ の Go-live](go-live-faq.md)

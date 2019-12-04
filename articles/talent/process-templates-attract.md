@@ -1,6 +1,6 @@
 ---
-title: Attract でのプロセス テンプレートの作成
-description: このトピックでは、Attract でプロセス テンプレートを作成する方法についての情報を提供します。
+title: Attract での採用プロセス テンプレートの作成
+description: このトピックでは、Attract で採用プロセス テンプレートを作成する方法についての情報を提供します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 82046d43cf7366b760c140bdb8b017337b4f41da
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622721"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832561"
 ---
-# <a name="create-a-process-template-in-attract"></a>Attract でのプロセス テンプレートの作成
+# <a name="create-a-hiring-process-template-in-attract"></a>Attract での採用プロセス テンプレートの作成
 
 [!include [banner](includes/banner.md)]
 
@@ -48,7 +48,7 @@ ms.locfileid: "2622721"
 > [!NOTE]
 > **応募のステータス**のページで、ステージ名が候補者に表示されます。 ステージ名を選択する際には、このことを考慮する必要があります。
 
-活動に関する詳細については、[Attract での採用プロセス活動](./activities-attract.md)を参照してください。
+活動に関する詳細については、[採用プロセスの活動](./activities-attract.md) を参照してください。
 
 採用プロセス テンプレートを作成するには、次の手順に従います。
 

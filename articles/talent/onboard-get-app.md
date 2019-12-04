@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 28ed12bd8cf2df7c25e14a25465cad1229676cfd
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5849de38962967f0614ff7afd40296c0f12ff476
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551982"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812859"
 ---
 # <a name="get-the-dynamics-365-talent---onboard-app"></a>Dynamics 365 Talent - Onboard アプリを入手
 
@@ -39,9 +39,9 @@ Onboard のサブスクリプションは、スタンドアロン アプリま�
 > [!WARNING]
 > 試用版から有料サブスクリプション環境にデータを移行することはできません。 <!--Reviewers: please verify.-->
 
-Talent の新機能について確認するには、[Dynamics 365 Talent の新機能と変更](./whats-new.md) および [Dynamics 365 と Power Platform リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index) を参照してください。 Onboard で新機能をプレビューする場合は、[Talent のプレビュー機能の利用](./access-preview-feature.md) を参照してください。
+Talent の新機能について確認するには、[Dynamics 365 Talent の新機能と変更](./whats-new.md) および [Dynamics 365 と Power Platform リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index) を参照してください。 Onboard で新機能をプレビューする場合は、[Microsoft Dynamics 365 Talent のプレビュー機能の利用](./access-preview-feature.md) を参照してください。
 
-IT プロフェッショナルで、Onboard アプリの 2 つのバージョンがプロビジョニングされる方法の詳細を知りたい場合は、[Onboard アプリのプロビジョニング](./modular-app-tech-faq.md) を参照してください。
+IT プロフェッショナルで、Onboard アプリの 2 つのバージョンがプロビジョニングされる方法の詳細を知りたい場合は、[Dynamics 365 Talent - Onboard アプリのプロビジョニング](./modular-app-tech-faq.md) を参照してください。
 
 ## <a name="get-started-with-onboard"></a>Onboard の使用を開始する
 
@@ -89,6 +89,6 @@ Onboard にサインアップする際に既定のドメイン名を受け入れ
 ### <a name="see-also"></a>参照
 
 - [Onboard アプリを試すか購入する](https://dynamics.microsoft.com/talent/onboard/)
-- [新機能](./whats-new.md)
-- [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index)
-- [サポートの利用](./talent-support.md)
+- [Dynamics 365 Talent の新機能および変更された機能](./whats-new.md)
+- [リリース計画](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft Dynamics 365 Talent に関するサポートの利用](./talent-support.md)

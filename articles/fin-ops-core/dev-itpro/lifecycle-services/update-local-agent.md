@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4af48d8d7dbd4114858ecfc617426a7caf05b663
-ms.sourcegitcommit: c6c0f698588477f2a5c52972716e5ebc40e5cb9b
+ms.openlocfilehash: 11c171ef25e086a1b1b8b6fe34b8fcfaafa4d9ab
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "2567035"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811693"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
@@ -35,7 +35,7 @@ ms.locfileid: "2567035"
 | Null                | この初期バージョンでは、Platform update 8 が導入されています。 |
 | 1.0.0               | このバージョンでは、展開が失敗した場合のために[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)が有効になります。 |
 | 1.1.0               | このバージョンでは、正常に展開するために[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)が有効になり、複数モデルのパッケージ展開が可能になり、プラットフォーム更新プログラム 8 および 11 が展開されます。 | 
-| 200               | このバージョンでは、サービス フローが可能になり、プラットフォーム更新プログラム 12 が展開されます。 |
+| 2.0.0               | このバージョンでは、サービス フローが可能になり、プラットフォーム更新プログラム 12 が展開されます。 |
 | 2.1.0               | このバージョンでは、**準備**および**更新**が 2 つの個別のステップである 2 段階サービスが可能になります。 |
 | 2.1.1               | このバージョンはダウンロードが失敗したときに発生する LCS 管理ボタンが利用できない問題を修正します。 その他の変更には、Azure Storage との通信を改善し TLS 1.2 を有効にする Azure Storage ライブラリの更新を含みます。  |
 | 2.1.2               | このバージョンには、更新されたAzure依存関係が含まれており、ダウンロードの安定性を向上し、ファイルがダウンロードされた場合に正しく評価するロジックを使用 これにより、ファイルが完全にダウンロードされるという問題が修正されますが、論理上数バイトが不足していると見なされ、ダウンロードに失敗します。  |
@@ -50,7 +50,7 @@ ms.locfileid: "2567035"
 - このリリースでは、監視エージェントを削除して LBDTelemetry という新しいサービスを導入し、これを ETWManifests のインストールの際に使用します。
 
 > [!IMPORTANT]
-> このリリースでは、LCS から新しいローカル エージェント構成ファイルをダウンロードする必要があります。 問題が発生した場合は、[Finance + Operations 配置のトラブルシューティング](../../dev-itpro/deployment/troubleshoot-on-prem.md) トピックを参照してください。 
+> このリリースでは、LCS から新しいローカル エージェント構成ファイルをダウンロードする必要があります。 問題が発生した場合は、[オンプレミス配置のトラブルシューティング](../../dev-itpro/deployment/troubleshoot-on-prem.md) を参照してください。 
 
 ## <a name="whats-new-in-local-agent-210"></a>Local agent 2.1.0 の新機能
 - ローカル エージェント 2.1.0 では、**環境の準備**および**環境の更新**が 2 つの異なる手順および明示的アクションである 2 フェーズのサービスを有効にします。 事前準備を行い、ユーザーが準備中に環境を使用できるようにし、実際の更新環境アクションが発生する際にダウンタイムを通知することで、オンプレミス環境に更新プログラムを適用する場合に顧客が取る必要があるダウンタイムの合計が削減されます。

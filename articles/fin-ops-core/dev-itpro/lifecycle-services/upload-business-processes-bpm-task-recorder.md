@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66055b308aee2fe34e019ddc34dcd69c916da08f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0ae6dd8d680ca9cd0f9ec9b7b2d365df35dd90ba
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183181"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812050"
 ---
 # <a name="upload-custom-business-processes-to-business-process-modeler-bpm"></a>独自の業務プロセスからビジネス プロセス モデラー (BPM) へのアップロード
 
@@ -46,14 +46,14 @@ Microsoft Dynamics Lifecycle Services では、タスク レコーダーの更�
 4.  業務プロセスのファイルをアップロードした後、**業務プロセスのライブラリ** ページから業務プロセス フレームワークを表示できます。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[ビジネス プロセス モデラー (Lifecycle Services、LCS)](./ax-2012/business-process-modeler-lcs.md)
+[Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)](./ax-2012/business-process-modeler-lcs.md)
 
-[ビジネス プロセス モデラーの業務プロセス ライブラリ](business-process-libraries-business-process-modeler.md)
+[ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ](business-process-libraries-business-process-modeler.md)
 
-[ビジネス プロセス モデラーのフローチャート](flowcharts-business-process-modeler.md)
+[ビジネス プロセス モデラー (BPM) のフローチャート](flowcharts-business-process-modeler.md)
 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: c85dcf892276083c5cc83303dd8a391c23fdacb9
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 3e37a97fb543587a6a0a59d8c2908414b3c2bfde
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551138"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811106"
 ---
 # <a name="show-custom-notifications-in-pos"></a>POS のカスタム通知の表示
 
@@ -143,7 +143,7 @@ namespace Contoso
 7. 変更を完了すると、プロジェクトをビルドし、**\RetailServer\webroot\bin\Ext** に出力ライブラリをドロップします。
 8. **CommerceRuntime.Ext.config** に出力ライブラリを登録します。
 9. CRT 拡張機能で使用されているのと同じ操作 ID を使用して、POS で新しい操作を作成します。 この例の場合、**5000** です。 5000 より大きい操作 ID を使用します。
-    ユーザーが通知タイルをクリックすると、POS フレームワークは使用される操作 ID の操作ハンドラーを呼び出します。 ハンドラー内で、POS ユーザーが通知をクリックしたときに行われる動作について、必要なロジックを追加します。 新しい POS 操作要求、応答、およびハンドラーの作成方法については、[ボタン グリッド デザイナーを使用して POS 操作を POS レイアウトに追加](add-POS-operations.md) を参照してください。
+    ユーザーが通知タイルをクリックすると、POS フレームワークは使用される操作 ID の操作ハンドラーを呼び出します。 ハンドラー内で、POS ユーザーが通知をクリックしたときに行われる動作について、必要なロジックを追加します。 POS 操作要求、応答、およびハンドラーの作成方法については、 [販売時点管理 (POS) での注文通知の表示](add-POS-operations.md) を参照してください。
     > [!NOTE]
     > 通知の詳細エンティティのアクション プロパティが POS 操作要求に送信され、そのアクション プロパティを使用して通知サービスから POS にカスタム情報が渡されます。
 10. [販売時点管理 (POS) での注文通知の表示](../notifications-pos.md) の指示に従って、通知スケジューラをコンフィギュレーションします。

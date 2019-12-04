@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7be41e724cb715e4b7c9077bb30d26b2bd4899dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5401f310138d19f78412dff318959414c31a191
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181913"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770026"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Power BI にデータをプルするよう電子申告 (ER) を構成する
 
@@ -184,7 +184,7 @@ Power BI レポートで使用されるビジネス データのソースとし�
     [![更新されたマップ](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance"></a>財務で Power BI レポートへのアクセス
-統合と Power BI を設定します。 詳細については、[ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md) を参照してください。
+統合と Power BI を設定します。 詳細については、「[ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md)」を参照してください。
 
 1. Power BI 統合 (**組織管理** &gt; **ワークスペース** &gt; **電子申告ワークスペース**) をサポートする**電子申告**ワークスペース ページで、**オプション** &gt; **レポート カタログを開く**をクリックします。
 2. 作成した**インポートとエクスポートの詳細** Power BI レポートを選択して、選択されたページでアクション項目としてレポートを表示します。
@@ -194,6 +194,6 @@ Power BI レポートで使用されるビジネス データのソースとし�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[電子申告の送信先](electronic-reporting-destinations.md)
+[電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 
-[電子申告の概要](general-electronic-reporting.md)
+[電子申告 (ER) の概要](general-electronic-reporting.md)

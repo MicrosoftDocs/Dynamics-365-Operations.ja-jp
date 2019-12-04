@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b23860a7eda0ec9d75cca04728b7fc11d01bf967
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023887"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812744"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 3 月 26 日)
 
@@ -75,11 +75,11 @@ ms.locfileid: "2023887"
 このリリースでは、Talent の **Excel で開く**オプションを使用して、ジョブ レコードを削除できるようになりました。
 
 ### <a name="upgrade-to-common-data-service"></a>Common Data Service へのアップグレード
-Common Data Service へのアップグレードの期限が近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、PowerApps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
+Common Data Service へのアップグレードの期限が近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、Power Apps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
 
 ## <a name="in-preview"></a>プレビュー
 
-プレビュー機能の有効化については、[Talent のプレビュー機能の利用](./access-preview-feature.md) を参照してください。
+プレビュー機能の有効化については、[Microsoft Dynamics 365 Talent のプレビュー機能の利用](./access-preview-feature.md) を参照してください。
 
 ### <a name="allow-reason-codes-to-be-specified-on-leave-types"></a>理由コードを休暇タイプに指定できるようにする
 組織は、休暇申請に関連する追加情報が必要な場合があります。 この情報を取得するには、従業員は休暇申請に理由コードを含める必要があります。 このリリースでは、休暇タイプに関連付けられている理由コードを指定し、従業員が休暇申請で理由コードを選択できるようになりました。

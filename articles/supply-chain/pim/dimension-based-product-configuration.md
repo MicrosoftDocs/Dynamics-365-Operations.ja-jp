@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7e5555a242c10d2268182ed440e686a1dc46ad
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: ad8c2c82f9104a350d37534e4d70372da82f40a7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865355"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815045"
 ---
 # <a name="dimension-based-product-configuration-overview"></a>分析コード ベース製品コンフィギュレーションの概要
 
@@ -79,12 +79,12 @@ BOM は、分析コード ベースの製品コンフィギュレーションの
 
 以下の 8 つのタスク ガイドは、実行する必要のある順番で一覧表示されています。 
 
-1.  [分析コードベースの製品マスターの作成 (タスク ガイド)](tasks/create-dimension-based-product-master.md)
-2.  [分析コードベースの製品マスターのリリース (タスク ガイド)](tasks/release-dimension-based-product-master.md)
-3.  [リリース済み製品マスターの基本設定の完了 (タスク ガイド)](tasks/complete-basic-setup-released-product-master.md)
-4.  [コンフィギュレーション グループの定義 (タスク ガイド)](tasks/define-configuration-groups.md)
-5.  [分析コード ベースの製品マスターの部品表の作成 (タスク ガイド)](tasks/create-bill-materials-dimension-based-product-master.md)
-6.  [コンフィギュレーション工順の定義 (タスク ガイド)](tasks/define-configuration-route.md)
-7.  [コンフィギュレーション ルールの作成 (タスク ガイド)](tasks/create-configuration-rules.md)
-8.  [分析コードベースのコンフィギュレーションの作成 (タスク ガイド)](tasks/create-dimension-based-configurations.md)
+1.  [分析コードベースの製品マスターの作成](tasks/create-dimension-based-product-master.md)
+2.  [分析コードベースの製品マスターのリリース](tasks/release-dimension-based-product-master.md)
+3.  [リリース済み製品マスターの基本設定の完了](tasks/complete-basic-setup-released-product-master.md)
+4.  [コンフィギュレーション グループの定義](tasks/define-configuration-groups.md)
+5.  [分析コードベースの製品マスターの部品表の作成](tasks/create-bill-materials-dimension-based-product-master.md)
+6.  [コンフィギュレーション ルートの定義](tasks/define-configuration-route.md)
+7.  [コンフィギュレーション ルールの作成](tasks/create-configuration-rules.md)
+8.  [分析コードベースのコンフィギュレーションの作成](tasks/create-dimension-based-configurations.md)
 

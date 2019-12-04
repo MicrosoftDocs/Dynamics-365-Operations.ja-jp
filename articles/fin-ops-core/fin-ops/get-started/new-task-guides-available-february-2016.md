@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b220dfc90d4b850c774ff638c5b766f650dcef9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4c912e8364a2503b98e511cbf22884528e467f0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190951"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811629"
 ---
 # <a name="new-task-guides-february-2016"></a>新しいタスク ガイド (2016 年 2 月)
 
@@ -32,9 +32,9 @@ ms.locfileid: "2190951"
 
 ## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 2 月)
 
-APQC 統合ライブラリ (2016 年 2 月) には、Dynamics AX 7.0.0 リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのタスク ガイドのローカライズされたバージョンが必要な場合、Microsoft Dynamics AX 用の APQC 統合ライブラリ (2016 年 5 月) が利用可能です。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
+APQC 統合ライブラリ (2016 年 2 月) には、Dynamics AX 7.0.0 リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのタスク ガイドのローカライズされたバージョンが必要な場合、Microsoft Dynamics AX 用の APQC 統合ライブラリ (2016 年 5 月) が利用可能です。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、[ヘルプ システム](help-overview.md) を参照してください。
 
-### <a name="accounts-payable"></a>買掛金管理
+### <a name="accounts-payable"></a>買掛金勘定
 
 | BPM ライン                                                  | 国/地域 |
 |-----------------------------------------------------------|----------------|
@@ -639,9 +639,9 @@ APQC 統合ライブラリ (2016 年 2 月) には、Dynamics AX 7.0.0 リリー
 | プロジェクトの概要                                  | グローバル         |
 | チャンネルの設定およびコンフィギュレーション                      | グローバル         |
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
+[新規または更新されたタスク ガイド (2016年 5月)](new-updated-task-guides-available-may-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)
 

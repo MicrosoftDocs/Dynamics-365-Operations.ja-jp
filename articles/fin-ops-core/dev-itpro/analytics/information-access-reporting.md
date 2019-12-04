@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 0a0e20c88a9bfd8dfd3b9a19ec7f424f5ffc8fe6
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 89dfd993f572d3ba5e111b9ba7bbdc7b5161f56a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536790"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770012"
 ---
 # <a name="information-access-and-reporting"></a>情報へのアクセスとレポート
 
@@ -134,7 +134,7 @@ ms.locfileid: "2536790"
 - フォーム データ ソースは、ネイティブ コントロールを使用して分析ビューの集計クエリをサポートするようになりました。
 
 ## <a name="analytical-tools-and-visualizations"></a>分析ツールおよび視覚エフェクト
-分析データに基づく埋め込みビジュアルでは、ユーザーが集計ビュー間でそれらに影響を与えるトランザクションの詳細までナビゲートすることができます。 Power BI サービス統合は、データにアクセスするための組み込みサポートを備えたトップクラスの分析ツールを提供します。 これらのツールは、「市民開発者」が必要なレポートを作成し、そのレポートを組織内の他の人と共有できるようにします。 Lifecycle Services で使用可能な Power BI コンテンツ パックを使用して開始します。 Power BI 統合の詳細については「[Power BI統合](power-bi-integration.md)」で確認してください。 分析ツールと視覚エフェクトの申請例には、四半期ごとの顧客売上、地域別の総収入、在庫切り換えなどがあります。
+分析データに基づく埋め込みビジュアルでは、ユーザーが集計ビュー間でそれらに影響を与えるトランザクションの詳細までナビゲートすることができます。 Power BI サービス統合は、データにアクセスするための組み込みサポートを備えたトップクラスの分析ツールを提供します。 これらのツールは、「市民開発者」が必要なレポートを作成し、そのレポートを組織内の他の人と共有できるようにします。 Lifecycle Services で使用可能な Power BI コンテンツ パックを使用して開始します。 Power BI 統合の詳細については、 [Power BI 統合を通じて利用可能な機能およびサービス](power-bi-integration.md) で確認してください。 分析ツールと視覚エフェクトの申請例には、四半期ごとの顧客売上、地域別の総収入、在庫切り換えなどがあります。
 
 [![supplier-quality-analysis-report](./media/supplier-quality-analysis-report.png)](./media/supplier-quality-analysis-report.png)
 
@@ -159,7 +159,7 @@ ms.locfileid: "2536790"
 - ビジュアルはユーザーとの対話に対して応答性が高く、データ ソースへのダイレクト クエリ アクセス使用するときに、ほぼリアルタイムの結果を提供します。
 
 ## <a name="business-documents"></a>ビジネス ドキュメント
-これらのレポート ソリューションは多くの場合、業務トランザクションの詳細を把握し、伝えるために使用されます。 したがって、レポート ソリューションはネットワーク プリンターなどの既存のデバイスを使用して業務データを物理的に表現することが求められます。 [Document Reporting Services の概要](document-reporting-services.md)で Document Reporting Services に対する機能拡張の詳細について確認します。 ビジネス ドキュメントの申請例には、売上請求書、顧客明細書、小切手などがあります。
+これらのレポート ソリューションは多くの場合、業務トランザクションの詳細を把握し、伝えるために使用されます。 したがって、レポート ソリューションはネットワーク プリンターなどの既存のデバイスを使用して業務データを物理的に表現することが求められます。 [ドキュメント レポート サービスの概要](document-reporting-services.md) でドキュメント レポート サービスに対する機能拡張の詳細について確認します。 ビジネス ドキュメントの申請例には、売上請求書、顧客明細書、小切手などがあります。
 
 [![image-of-business-documents](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
@@ -184,7 +184,7 @@ ms.locfileid: "2536790"
 - 標準のソリューションへの変更は、メタデータの変更として管理する必要があります。
 
 ## <a name="electronic-reporting"></a>電子申告
-電子申告 (ER) は、さまざまな国/地域の法的要件に従って電子ドキュメントの形式を構成するために使用するツールです。 電子申告ツールの詳細については、[電子申告の概要](general-electronic-reporting.md) を参照してください。 電子申告の申請例には、会計監査、税金の申告、電子請求があります。
+電子申告 (ER) は、さまざまな国/地域の法的要件に従って電子ドキュメントの形式を構成するために使用するツールです。 電子申告ツールの詳細については、 [電子申告 (ER) の概要](general-electronic-reporting.md) を参照してください。 電子申告の申請例には、会計監査、税金の申告、電子請求があります。
 
 [![electronic-reporting-example](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
@@ -201,7 +201,7 @@ ms.locfileid: "2536790"
 - 数式を使用して、データ変換を集計データと論理計算を含むグループに定義します。
 
 ## <a name="financial-reporting"></a>財務諸表
-既定の主勘定カテゴリを使用した標準の財務諸表が提供されます。 レポート デザイナーを使用して、損益計算書や貸借対照表などの従来の財務諸表を作成または変更し、組織の他のメンバーと結果を共有します。 財務諸表ツールに関する詳細については、[財務諸表](../../../finance/general-ledger/general-ledger.md)を参照してください。 財務諸表の申請例には、前年比の貸借対照表、キャッシュ フロー、集計試算表があります。
+既定の主勘定カテゴリを使用した標準の財務諸表が提供されます。 レポート デザイナーを使用して、損益計算書や貸借対照表などの従来の財務諸表を作成または変更し、組織の他のメンバーと結果を共有します。 財務諸表ツールに関する詳細については、 [一般会計と財務諸表の概要](../../../finance/general-ledger/general-ledger.md) を参照してください。 財務諸表の申請例には、前年比の貸借対照表、キャッシュ フロー、集計試算表があります。
 
 [![financial-reporting-example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 

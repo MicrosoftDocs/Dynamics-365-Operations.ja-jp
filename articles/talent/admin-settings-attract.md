@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent - Attractにおける会社情報のコンフィギュレーション
+title: Attract における会社情報のコンフィギュレーション
 description: このトピックでは、Microsoft Dynamics 365 Talent - Attract の会社情報およびブランドをコンフィギュレーションする方法について説明します。
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7013065a9494cb407020de2ebcad4058dd57c6c4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: db3ec965f3a52810d5f310697b9ed830c3abe681
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551601"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833257"
 ---
-# <a name="configure-company-information-in-microsoft-dynamics-365-talent---attract"></a>Microsoft Dynamics 365 Talent - Attractにおける会社情報のコンフィギュレーション
-[!include[banner](../includes/banner.md)]
+# <a name="configure-company-information-in-attract"></a>Attract における会社情報のコンフィギュレーション
+
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attract には、構成設定、統合オプション、および Attract アプリケーションの設定オプションが含まれています。
 
@@ -48,11 +49,11 @@ Microsoft Dynamics 365 Talent: Attract には、構成設定、統合オプシ�
 
 ## <a name="template-management"></a>テンプレート管理
 
-プロセス テンプレートには、ジョブの採用プロセスの一部として必要なすべての活動が含まれています。 組織は、すべてのチーム メンバーまたは採用プロセス テンプレートを作成する管理者のどちらかを許可できます。 チーム メンバーが独自の採用プロセス テンプレートの作成を許可するには、テンプレートの管理機能を有効にします。 プロセス テンプレートの詳細については、[Attract のプロセス テンプレート](./process-templates-attract.md) を参照してください。
+プロセス テンプレートには、ジョブの採用プロセスの一部として必要なすべての活動が含まれています。 組織は、すべてのチーム メンバーまたは採用プロセス テンプレートを作成する管理者のどちらかを許可できます。 チーム メンバーが独自の採用プロセス テンプレートの作成を許可するには、テンプレートの管理機能を有効にします。 プロセス テンプレートの詳細については、[Attract でプロセス テンプレートの作成](./process-templates-attract.md) を参照してください。
 
 ## <a name="email-template-settings"></a>電子メール テンプレート設定
 
-組織では、さまざまなシナリオの電子メール テンプレートを作成できます。 電子メール テンプレートに含める場合は、ヘッダーの画像を選択することができます。 選択したヘッダーは、すべての電子メール テンプレートに表示されます。 テンプレートのフッターでは、組織のプライバシーに関する声明と通信の使用条件にリンクを追加できます。 詳細については、[Attract の電子メール テンプレート](./email-templates.md) を参照してください。
+組織では、さまざまなシナリオの電子メール テンプレートを作成できます。 電子メール テンプレートに含める場合は、ヘッダーの画像を選択することができます。 選択したヘッダーは、すべての電子メール テンプレートに表示されます。 テンプレートのフッターでは、組織のプライバシーに関する声明と通信の使用条件にリンクを追加できます。 テンプレートの詳細については、[電子メール テンプレート](./email-templates.md)を参照してください。
 
 ## <a name="offer-process"></a>オファーのプロセス
 

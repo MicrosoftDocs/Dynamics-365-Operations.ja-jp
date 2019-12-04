@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nimak
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c2edd582d6fdbc554ba2fe4aa7ffb5d9763f55a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5b15302e5ed5dec2bfd9e876301d26fdb6d722f8
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183420"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771013"
 ---
 # <a name="troubleshoot-service-authentication-issues"></a>サービス認証問題のトラブルシューティング
 
@@ -67,7 +67,7 @@ ms.locfileid: "2183420"
     - アプリケーションとサービス ログ &gt; Microsoft &gt; Dynamics &gt; AX-SystemRuntime &gt; Channel:Operational (Microsoft-Dynamics-AX-SystemRuntime/運用)
 
 ## <a name="other-approaches"></a>その他の方法
-- OAuth がコンフィギュレーションされる方法の詳細については、[サービス エンドポイント](services-home-page.md) を参照してください。
+- OAuth がコンフィギュレーションされる方法の詳細については、[サービス エンドポイント概要](services-home-page.md) を参照してください。
 - また、自分自身のクライアント コードを使用して、並列でサービスの呼び出しを試みることができます。 公開されたサンプル コードは <https://github.com/Microsoft/Dynamics-AX-Integration> で入手できます。
 - 2 番目のメソッドが動作する場合は、それぞれのメソッドで JWT を比較できます。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97d193b588e54668cf6a7d6c5941b5cd6beb1cdc
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 2c8221850384e317cf94a6707c3158294a16e9df
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658879"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811943"
 ---
 # <a name="build-extensible-controls"></a>拡張可能なコントロールの構築
 
@@ -33,7 +33,7 @@ ms.locfileid: "2658879"
 <a name="prerequisites"></a>必要条件
 -------------
 
-このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、「[開発インスタンスへのアクセス](../dev-tools/access-instances.md)」を参照してください。
+このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、トピック [開発環境の配置とアクセス](../dev-tools/access-instances.md) を参照してください。
 
 ## <a name="overview"></a>概要
 コントロール拡張フレームワークを使用すると、新しいアプリケーション コントロールを作成できます。 Microsoft では、グラフ コントロールなど、プログラムで既に記述されている制御を構築するために使用するのと同じツールを使用することができます。 拡張可能なコントロールを開発するプロセスには、次の 3 つの重要なアーティファクトが含まれます。
@@ -129,7 +129,7 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 2.  子デザイン コンポーネントを FMTBuildContactControl クラスに追加します。 子デザイン コンポーネントを使用すると、フォームにコントロールを設置した開発者は、コントロールに表示されるイメージを指定することができます。 この手順では、**FormDesignComponentAttribute** 属性を追加して、プロパティ シートに新しいエントリを作成します。 次に、**FormDesignPropertyDataFieldAttribute** 属性を追加します。この属性は、新しいデザイナー プロパティがデータ フィールドの選択を使用可能にすることを示します。
     1.  クラスの申告に次の強調表示されたコードを追加します。 このコードは、**FMTBuildContactControl** クラスが使用している X++ に **FormBindingDataField** フィールドを追加します。 
 
-    [![FormBindingDataField フィールドを追加するコードの例](./media/x4.png)](./media/x4.png)
+        [![FormBindingDataField フィールドを追加するコードの例](./media/x4.png)](./media/x4.png)
 
     2.  **FMTBuildContactControl** クラスに、次のコードを追加します。 データ ソースのデザイナー プロパティの後に、このメソッドを追加します。 
 

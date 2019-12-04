@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 250e60a444d01c3f8f62d0b8b1dfa9847055f09e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 975ed0ba3b74c0fe0c1a8c649f572987eb9912e4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248822"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811713"
 ---
 # <a name="respond-to-requests-for-personal-data-in-talent"></a>Talent での個人データ要求に対応
 
@@ -39,7 +39,7 @@ Talent で、Microsoft はプロセッサとして動作します。 データ �
 
 + 担当者検索レポートを使用して、DSR 要求の対象となる個人データを検索および収集します。 このレポートの使用の詳細については、[個人検索レポート](gdpr-person-search-report.md) トピックを参照してください。  
 + 高度な検索とフィルターを使用して、特定の個人データを検索し、Microsoft Office のエクスポート機能を使用してそのデータをエクスポートします。
-+ 既存のエンティティを追加して、担当者検索レポートを拡張します。 レポートを拡張するのに役立つ情報の詳細については、[独自のデータで個人検索レポートを拡張](gdpr-extend-person-search-report.md) を参照してください。
++ 既存のエンティティを追加して、担当者検索レポートを拡張します。 レポートを拡張するのに役立つ情報の詳細については、[個人検索レポートを拡張](gdpr-extend-person-search-report.md) を参照してください。
 
 ### <a name="right-to-modify"></a>修正するには右\*
 

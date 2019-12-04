@@ -3,7 +3,7 @@ title: Dynamics 365 Retail バージョン 10.0.7 の機能をプレビューす
 description: このトピックでは Dynamics 365 Retail のプレビュー中の機能について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 11/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,19 +17,25 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 8f2142745d0f04831f22b3f146d4072bb6d60bc2
-ms.sourcegitcommit: 381ea71cf22898587ca6af4700b51ad1b4d1a397
+ms.openlocfilehash: db79b4cdd19cf50e69abab523350004bde1f12fb
+ms.sourcegitcommit: 22904808753f5b19d5eed71c943586f1cc60db26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "2660823"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "2805511"
 ---
 # <a name="preview-features-in-dynamics-365-retail-version-1007"></a>Dynamics 365 Retail バージョン 10.0.7 の機能をプレビューする
 
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Retail 10.0.7 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.283 です。 一般提供開始日は 2020 年 1 月ですが、新機能は 10 月の初期リリースで使用できます。 バージョン 10.0.7 の詳細については [追加リソース](whats-new-10-0-7.md#additional-resources) を参照してください。
+このトピックでは、Microsoft Dynamics 365 Retail 10.0.7 の新機能または変更された機能について説明します。 このバージョンには 10.0.283 のビルド番号が含まれており、次のように使用できます。
+
+- プレビューリリースは 2019 年 10 月です。
+- Ga (自動更新) は 2019 年 11 月です。
+- 自動更新は 2020 年 1 月です。
+
+バージョン 10.0.7 の詳細については [追加リソース](whats-new-10-0-7.md#additional-resources) を参照してください。
 
 ## <a name="clienteling"></a>クライアンテリング
 多くの小売業者、特にハイエンドの専門小売業者は、店員に主な顧客との長期的な関係を形成させます。 店員は、顧客の好き嫌い、購買履歴、製品の好み、記念日や誕生日などの重要な日について知っていることが期待されています。店員はそのような情報をキャプチャし、必要な時に簡単に情報を見つけられる必要があります。 この情報が 1 つのビューで使用可能になると、店員は、ハンドバッグを購入したい顧客や、誕生日、記念日、卒業式などの生活の重要なイベントが近づいている顧客など、特定の基準に一致する顧客を簡単にターゲットにすることができます。 Dynamics 365 Retail の新しいクライアンテリング機能により、そのような関係の構築および管理を簡単に関連付けることができます。
@@ -50,14 +56,14 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.7 には、プラットフ�
 
 
 ### <a name="bug-fixes"></a>バグ修正 
-10.0.7 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 記事](https://https://fix.lcs.dynamics.com/Issue/Details?bugId=386529&dbType=3&qc=e03ced97fa18dc4439f36de17b00da7257dc15869a72e5b2435fec0acec0c493) を参照してください。
+10.0.7 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=386529&dbType=3&qc=e03ced97fa18dc4439f36de17b00da7257dc15869a72e5b2435fec0acec0c493) を参照してください。
 
 
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

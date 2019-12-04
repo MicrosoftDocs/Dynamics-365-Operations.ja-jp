@@ -16,19 +16,19 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: fd74c7d1b5a4e3db263627d83451239293e66dc5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7ef35227b3b7d2c872c2050ac99c48b13c678481
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191548"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769749"
 ---
 # <a name="configuration-data-packages"></a>コンフィギュレーション データ パッケージ
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> このトピックは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースにのみ適用されます。 今後のリリースを実行している場合、「[コンフィギュレーションのコピー](copy-configuration.md)」というトピックを参照します。 
+> このトピックは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースにのみ適用されます。 それ以降にリリースされたバージョンを実行している場合は、 [会社間または法人間での構成データのコピー](copy-configuration.md) のトピックを参照してください。 
 
 コンフィギュレーション データ パッケージは、Microsoft Dynamics Lifecycle Services (LCS) からプロセス データ パッケージとして入手できます。 これらのデータ パッケージは、実装の再現性を向上させ、構成を高速化させます。
 
@@ -53,7 +53,7 @@ LCS から構成データ パッケージにアクセスすることができま
 
 この時点で**消費**関数を使用してプロセス データ パッケージを LCS 環境に適用することができます。 
 
-また、個々のデータ パッケージ ファイルを **データ パッケージ** 領域からダウンロードすることができます。 **データ管理**ワークスペースを使用して、LCS からデータ パッケージをインポートします。 コンフィギュレーションをインポートおよびエクスポートする方法の詳細については、[会社間でのコンフィギュレーション データのコピー](copy-configuration.md) を参照してください。
+また、個々のデータ パッケージ ファイルを **データ パッケージ** 領域からダウンロードすることができます。 **データ管理**ワークスペースを使用して、LCS からデータ パッケージをインポートします。 構成のインポートおよびエクスポート方法の詳細については、 [会社間または法人間での構成データのコピー](copy-configuration.md) を参照してください。
 
 ## <a name="special-considerations"></a>特別な注意事項
 ### <a name="system-setup"></a>システム設定

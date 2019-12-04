@@ -16,12 +16,12 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: f38e566ffa74d58742665bfba27135646eccc74b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6d23e00c3859fba6c9eb65bc443cf14ffa3c9d5a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175678"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771741"
 ---
 # <a name="tax-engine-integration"></a>税エンジンの統合
 
@@ -558,4 +558,4 @@ Finance の既存の実装では、この機能を処理するために **PurchT
 ## <a name="additional-resources"></a>追加リソース
 
 - [税エンジンの概要](tax-engine.md)
-- [税エンジンの拡張](extend-tax-engine-configurations.md)
+- [税エンジン コンフィギュレーションの拡張](extend-tax-engine-configurations.md)

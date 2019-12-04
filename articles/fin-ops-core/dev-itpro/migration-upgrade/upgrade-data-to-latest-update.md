@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 4cf34e639f57cb8a1cf3ed7907a2211e17720b01
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ec3976a451b7a57732d5c03f46ff2d5992be2c43
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183156"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812009"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 
@@ -103,7 +103,7 @@ ms.locfileid: "2183156"
 
 4. 元のデータベースに戻す必要がある場合に備えて、ソース データベースのバックアップを作成します。 次のステップでソース データベースを変更するためこのステップは重要です。
 
-5. **c:\\Temp\\DataUpgrade** フォルダー (展開可能なパッケージを以前に展開した場所) からデータ アップグレード パッケージを実行します。 データ アップグレード パッケージの実行は、ソフトウェア展開可能パッケージのインストールと同様です。 詳細な指示については、[配置可能パッケージのインストール](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology) を参照してください。 **トポロジから Runbook を生成します** というセクションで開始し、**配置可能パッケージのインストール** セクションの手順を実行します。 
+5. **c:\\Temp\\DataUpgrade** フォルダー (展開可能なパッケージを以前に展開した場所) からデータ アップグレード パッケージを実行します。 データ アップグレード パッケージの実行は、ソフトウェア展開可能パッケージのインストールと同様です。 詳細な指示については、[コマンド ラインからの配置可能なパッケージのインストール](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology)を参照してください。 **トポロジから Runbook を生成します** というセクションで開始し、**配置可能パッケージのインストール** セクションの手順を実行します。 
 
 > [!NOTE]
 > 開発環境上のデータベースをアップグレードする場合は、代わりに **管理 > 適用更新** サービス機能を使用して、LCS 環境ページから直接データ アップグレード パッケージを実行できます。 これは、ユーザーが開発用 VM のローカル管理者である必要はありません。 これは LCS の[2 月](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/)リリースから利用可能です。 

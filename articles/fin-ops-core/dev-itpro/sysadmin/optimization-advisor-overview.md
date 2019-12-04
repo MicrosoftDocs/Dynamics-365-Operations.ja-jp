@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4e47aea3a9d1ce62a85aac9a4acce398b5847f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4bcc6937da0e9f66014d9c00668e0c6790433ba8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191411"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811973"
 ---
 # <a name="optimization-advisor-overview"></a>最適化アドバイザーの概要
 
@@ -38,7 +38,7 @@ ms.locfileid: "2191411"
 
 **最適化アドバイザー** ワークスペースは、Power Users、業務アナリスト、機能コンサルタント、IT サポート機能がモジュールのコンフィギュレーションや業務データの問題を識別できるようにするツールです。 最適化アドバイザーは、モジュールのコンフィギュレーションのベスト プラクティスを提案し、古い形式または間違っている業務データを識別します。
 
-最適化アドバイザーは定期的に一連のベスト プラクティス ルールを実行します。 既定のルールは利用可能ですが、ユーザーは、独立系ソフトウェア ベンダー (ISV)、およびビジネス データから、カスタマイズ、ソリューションに固有のルールも作成できます。 ルールを作成する方法の詳細については、[新しいルールを作成](./create-rules-optimization-advisor.md) を参照してください。
+最適化アドバイザーは定期的に一連のベスト プラクティス ルールを実行します。 既定のルールは利用可能ですが、ユーザーは、独立系ソフトウェア ベンダー (ISV)、およびビジネス データから、カスタマイズ、ソリューションに固有のルールも作成できます。 ルールを作成する方法の詳細については、[最適化アドバイザーのルールの作成](./create-rules-optimization-advisor.md) を参照してください。
 
 ルールの違反が検出されると、最適化の機会が生成され、**最適化アドバイザー** ワークスペースに表示されます。 ユーザーは、**最適化アドバイザー** ワークスペースから直接適切な修正アクションを実行することができます。
 
@@ -92,6 +92,6 @@ ms.locfileid: "2191411"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[新しいルールの作成](./create-rules-optimization-advisor.md)
+[最適化アドバイザーのルールの作成](./create-rules-optimization-advisor.md)
 
 [Dynamics 365 for Finance and Operations の最適化アドバイザー (ビデオ)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

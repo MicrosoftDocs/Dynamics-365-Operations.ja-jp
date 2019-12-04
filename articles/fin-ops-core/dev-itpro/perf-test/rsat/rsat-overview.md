@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52e9ed223384ecb1ad54c531522c108a23022a4c
-ms.sourcegitcommit: 69f8233e86b32347474a25d83b4ac5920f60407d
+ms.openlocfilehash: c4121f0fc76076f0d50cd6f317561bae5aac0520
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2538467"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811950"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 
@@ -71,7 +71,7 @@ Regression Suite Automation Tool は、ビジネス サイクル テストおよ
 ![単体テスト、コンポーネント テスト、複数のコンポーネントテスト、ビジネス サイクルテスト](media/business-cycle.png)
 
 ### <a name="unit-and-component-testing"></a>ユニットおよびコンポーネント テスト
-単体テストの場合は、RSAT を使用しないことを推奨します。 代わりに、SysTest フレームワークとビルド / テスト自動化ツールを使用します。 コンポーネント テストでは、[受け入れテスト ライブラリ](../acceptance-test-library.md) (ATL) を活用します。 ATL は、 X++ テスト ヘルパーのライブラリです。 SysTest フレームワークを使用すると、次の利点があります。
+単体テストの場合は、RSAT を使用しないことを推奨します。 代わりに、SysTest フレームワークとビルド / テスト自動化ツールを使用します。 コンポーネント テストでは、[受け入れテスト ライブラリ リソース](../acceptance-test-library.md) (ATL) を活用します。 ATL は、 X++ テスト ヘルパーのライブラリです。 SysTest フレームワークを使用すると、次の利点があります。
 + 一貫したテスト データを作成できます。
 + テスト コードが読みやすくなります。
 + テスト データの作成に使用されているメソッドの発見可能性が向上します。

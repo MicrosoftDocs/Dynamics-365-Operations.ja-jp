@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9c1cc5513a720b373378c35872041b4fbaf57f47
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ec8e6b5134df17e8ccb2f52b077e08691fd86d7e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248831"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815331"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>仕入先コラボレーションの設定と管理
 
@@ -82,7 +82,7 @@ Supply Chain Management で提供される**仕入先管理者 (外部)** およ
 
 見込み仕入先の登録要求によって開始されるオンボードの仕入先には、外部のセキュリティ ロールを設定する必要があります。 このロールは、**ユーザー リクエスト ワークフロー (プラットフォーム)** タイプのワークフローによって制御されるプロビジョニングのプロセス中に新規ユーザーに割り当てられます。 詳細については、このトピックで後述の [仕入先コラボレーションのユーザー要求を処理するワークフローの設定](#set-up-workflows-to-process-vendor-collaboration-user-requests) を参照してください。
 
-見込み仕入先のオンボードを行う方法の詳細については、[仕入先のオンボーディング](vendor-onboarding.md) を参照してください。
+見込み仕入先のオンボードを行う方法の詳細については、[仕入先のオンボード](vendor-onboarding.md) を参照してください。
 
 ### <a name="set-up-a-security-role-that-is-used-when-a-new-prospective-vendor-user-request-is-submitted"></a>新しい見込み仕入先ユーザー要求が送信されたときに使用されるセキュリティ ロールの設定
 
@@ -159,6 +159,6 @@ Azure AD アカウント管理のワークフローでの **Azure B2B ユーザ�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[外部仕入先との作業のために仕入先コラボレーションを使用する](vendor-collaboration-work-external-vendors.md)
+[外部仕入先との仕入先コラボレーション](vendor-collaboration-work-external-vendors.md)
 
 仕入先のオンボーディング プロセスの簡単なビデオ[新しい仕入先の搭載](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)をご覧ください。

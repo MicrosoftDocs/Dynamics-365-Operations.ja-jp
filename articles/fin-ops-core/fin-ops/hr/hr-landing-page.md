@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9db36b528de097aae613a5fbf5ee94f4cc79a0f
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: f701a61a718469023dfa57c160229108afeb421c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553166"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812439"
 ---
 # <a name="human-resources-overview"></a>人事管理の概要
 
@@ -43,11 +43,11 @@ ms.locfileid: "2553166"
 
 ## <a name="develop-a-human-resources-strategy"></a>人材戦略の作成
 
-人事管理の仕事では、部門、職務、職位などの要素を使用して、組織の構造を設計する必要があります。 これらの要素は、人事管理において構成する基本要素に含まれます。 個々の従業員は、ジョブに関連付けられている職位に割り当てられます。
+人事管理の仕事では、部門、職務、職位などの要素を使用して、組織の構造を設計する必要があります。 これらの要素は、人事管理において構成する基本要素に含まれます。 個々の従業員は、職務に関連付けられている職位に割り当てられます。
 
 - [部門、職務、職位を使用した従業員の編成](../../../talent/departments-jobs-positions.md)
-- [会社固有の HR パラメーターの設定](../../../talent/set-up-company-specific-hr-parameters.md)
-- [法人間の HR パラメーターの設定](../../../talent/set-up-hr-parameters-across-legal-entities.md)
+- [会社固有の人事管理 (HR) パラメーターの設定](../../../talent/set-up-company-specific-hr-parameters.md)
+- [法人間の人事管理 (HR) パラメーターの設定](../../../talent/set-up-hr-parameters-across-legal-entities.md)
 
 ## <a name="recruit-hire-and-motivate-employees"></a>従業員の募集、雇用、および動機付け
 
@@ -68,23 +68,23 @@ ms.locfileid: "2553166"
 
 - [パフォーマンス管理](../../../talent/performance-management-overview.md)
 - [要員のスキルとビジネス ニーズの調整](../../../talent/skills.md)
-- [コースを通じたトレーニングの管理](../../../talent/courses.md)
+- [トレーニング コースの設定](../../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>福利厚生の作成と維持
 
 賃金、給与、賞与といった従業員への報酬のほかに、健康保険、退職後の計画などの福利厚生プログラムを作成できます。 また、貸与プログラムなど、会社が従業員にコンピューターや電話などのアイテムを貸与する福利厚生を管理することもできます。
 
-- [福利厚生プログラムの管理](../../../talent/manage-benefit-program.md)
+- [福利厚生プログラムの定義および管理](../../../talent/manage-benefit-program.md)
 - [給付金の適格性ポリシー](../../../talent/benefit-eligibility-policies.md)
-- [作業者への貸与品目の管理](../../../talent/loan-items.md)
+- [作業者へ貸与された品目の管理](../../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>職場の安全性とコンプライアンスの管理
 
 Microsoft Dynamics AX は、アメリカ障害者法 (Americans with Disabilities Act)、移民帰化に関する法律を始めとする法律に準拠した、安全な作業環境の維持に役立ちます。 たとえば、特定の職務への身体的要件の管理や、職場でのスキルを組織が最適化できるよう調整するための要望を追跡できます。
 
 - [フォーム I-9 の検証](localizations/noam-usa-form-i-9-verification.md)
-- [アメリカ障害者法 (Americans with Disabilities Act) への準拠](localizations/noam-usa-comply-ada.md)
-- [FMLA の休暇の追跡](localizations/noam-usa-track-time-for-fmla.md)
+- [アメリカ障害者法 (ADA) への準拠](localizations/noam-usa-comply-ada.md)
+- [育児介護休業法 (FMLA) の休暇の追跡](localizations/noam-usa-track-time-for-fmla.md)
 
 ## <a name="gather-information-using-questionnaires"></a>アンケートによる情報の収集
 
@@ -92,5 +92,5 @@ Microsoft Dynamics AX は、アメリカ障害者法 (Americans with Disabilitie
 
 - [アンケート](../../../talent/questionnaires.md)
 - [アンケートのデザイン](../../../talent/design-questionnaires.md)
-- [アンケートの配布と記入](../../../talent/distribute-questionnaires.md)
+- [アンケートの配布とスケジューリング](../../../talent/distribute-questionnaires.md)
 - [アンケート結果の表示と評価](../../../talent/evaluate-questionnaire-results.md)

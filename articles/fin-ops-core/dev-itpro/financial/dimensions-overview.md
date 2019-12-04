@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d056616f6dfb51a0bdd58c484095d28c883c9a48
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e8340173a885ce1383fc2e89f0f3320b9c2495c7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191567"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812014"
 ---
 # <a name="add-dimensions-to-excel-templates"></a>Excel テンプレートへの分析コードの追加
 
@@ -55,29 +55,29 @@ ms.locfileid: "2191567"
 5. **departmentValue** という名前の str を返す新しいプライベート静的メソッドを作成します。 
 6. この方法では、**DimensionAttributeValueCombination** から分析コードの値を取得する必要があります。 最終的な方法はこのようになります。
 
-```
-/// <summary>
-/// This method returns the value of Department.
-/// </summary>
-private static str departmentValue()
-{     
-    Name dimensionName = 'Department';
-    str sqlStatement;
+    ```
+    /// <summary>
+    /// This method returns the value of Department.
+    /// </summary>
+    private static str departmentValue()
+    {     
+        Name dimensionName = 'Department';
+        str sqlStatement;
 
-    DimensionAttribute dimensionAttribute = DimensionAttribute::findByName(dimensionName);
+        DimensionAttribute dimensionAttribute = DimensionAttribute::findByName(dimensionName);
 
-    if (!dimensionAttribute)
-    {
-        sqlStatement = SysComputedColumn::returnLiteral('');
+        if (!dimensionAttribute)
+        {
+            sqlStatement = SysComputedColumn::returnLiteral('');
+        }
+        else
+        {
+            sqlStatement = strFmt('SELECT TOP 1 T1.%1 ', dimensionAttribute.DimensionValueColumnName);
+        }
+
+        return sqlStatement;
     }
-    else
-    {
-        sqlStatement = strFmt('SELECT TOP 1 T1.%1 ', dimensionAttribute.DimensionValueColumnName);
-    }
-
-    return sqlStatement;
-}
-```
+    ```
 
 7. エンティティに新しい「マップされていない文字列フィールド」を作成します。
 
@@ -95,14 +95,14 @@ private static str departmentValue()
 
 10. これで、カスタマイズは完了です。 次のステートメントを使用して、SQL でテストすることができます。
 
-```
-select * from DIMENSIONCOMBINATIONENTITY
-```
+    ```
+    select * from DIMENSIONCOMBINATIONENTITY
+    ```
 
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[分析コード エントリ コントロールのチュートリアル](dimension-entry-control-migration.md)
+[既定の分析コード コントロールの分析コード エントリ コントロールへの移行](dimension-entry-control-migration.md)
 
 [分析コード エントリ コントロールの取得](dimension-entry-control-uptake.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9eef9d8c58d19b05901035f4c679ee7d9902819
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178635"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771923"
 ---
 # <a name="set-up-fixed-assets"></a>固定資産の設定
 
@@ -51,7 +51,7 @@ ms.locfileid: "2178635"
 
 基本減価償却プロファイルは、各帳簿に割り当てられます。 プロファイルのこのタイプが適用される場合は、帳簿には、減価償却プロファイルの代替または切り替えがあります。 固定資産帳簿を減価償却の実行に自動的に含めるには、**減価償却の計算** オプションを有効にする必要があります。 このオプションが資産に対して有効でない場合、減価償却の提案は資産をスキップします。
 
-派生帳簿を設定することもできます。 指定された派生トランザクションは、派生帳簿に対する基本トランザクションの正確なコピーとして転記されます。 したがって、派生トランザクションは、通常、減価償却トランザクションではなく、所得および処分として設定されます。 詳細については、[帳簿の設定](tasks/set-up-value-models.md) を参照してください。
+派生帳簿を設定することもできます。 指定された派生トランザクションは、派生帳簿に対する基本トランザクションの正確なコピーとして転記されます。 したがって、派生トランザクションは、通常、減価償却トランザクションではなく、所得および処分として設定されます。 詳細については、[価値モデルの設定](tasks/set-up-value-models.md) を参照してください。
 
 ## <a name="fixed-asset-posting-profiles"></a>固定資産転記プロファイル
 

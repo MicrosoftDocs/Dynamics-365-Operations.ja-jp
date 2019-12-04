@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 058adaef91a7b30e25bea603625116e97009cf55
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 795e9f5b843ba8e50dc091949c9732b8b033355e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537027"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812091"
 ---
 # <a name="globalization-resources"></a>グローバリゼーション リソース
 
@@ -45,10 +45,10 @@ Dynamics 365 Finance and Operations アプリには、[製品のローカライ�
 
 ### <a name="developing-localized-solutions"></a>ローカライズ版ソリューションの開発
 以下のリソースは、国/地域に固有のカスタマイズを作成しているか、または Microsoft によってサポートされていない国向けのソリューションを作成している開発者および ISV にとって有益なガイダンスと情報を提供します。
--   [個別のローカライズ モデル](separate-localization-models.md)
+-   [ローカライズ モデルの分類](separate-localization-models.md)
 -   [国/地域コンテキストの適用](apply-country-context.md)
--   [規制認証](regulatory-certifications.md)
--   [ローカライズ機能の分類](classify-localization-features.md)
+-   [機能タイトルの規制証明情報](regulatory-certifications.md)
+-   [ローカリゼーション機能の分類](classify-localization-features.md)
 -   [国コード - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
 ### <a name="regulatory-updates-and-communication"></a>規制の更新と通知
@@ -57,36 +57,36 @@ Dynamics 365 Finance and Operations アプリには、[製品のローカライ�
 #### <a name="regulatory-updates"></a>規制の更新
 -   [規制の更新](../../../finance/localizations/regulatory-updates.md)
 -   [ローカライズ ポータル](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (毎週更新)
--   [LCS 問題検索](../lifecycle-services/issue-search-lcs.md) (毎日更新)
+-   [Lifecycle Services (LCS) の問題検索](../lifecycle-services/issue-search-lcs.md) (毎日更新)
 
 #### <a name="communication-and-alerts"></a>コミュニケーションと警告
 -   [規制の監視と規制の更新の通知](regulatory-watch-communication.md)
--   [国/地域の規制警告の Microsoft への通知および規制機能のステータスの追跡](submit-localization-alerts.md)
+-   [国または地域固有の規制機能に関わる通知を送信](submit-localization-alerts.md)
 
-#### <a name="dynamics-365-release-notes"></a>Dynamics 365 リリース ノート
-[Dynamics 365 リリース ノート](https://docs.microsoft.com/business-applications-release-notes/) では、Dynamics 365 のビジネス アプリケーションとアプリケーション プラットフォームに対して予定されている新機能と拡張機能について説明します。 
+#### <a name="dynamics-365-release-plans"></a>Dynamics 365 リリース プラン
+[Dynamics 365 リリース プラン](https://docs.microsoft.com/business-applications-release-notes/) では、Dynamics 365 のビジネス アプリケーションとアプリケーション プラットフォームに対して予定されている新機能と拡張機能について説明します。 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations アプリの新機能
-[新機能のコンテンツ](../../fin-ops/get-started/whats-new-changed.md)では、Finance and Operations アプリのリリースに含まれる機能を紹介しています。
+[Finance and Operations ホーム ページの新機能および変更された機能](../../fin-ops/get-started/whats-new-changed.md) では、Finance and Operations アプリのリリースに含まれる機能を紹介しています。
 
 ### <a name="electronic-reporting"></a>電子申告
 電子申告 (ER) ツールを使用すると、さまざまな国/地域の法的要件に従って電子ドキュメントの形式を構成できます。 ER では、これらの形式をライフ サイクル中に管理できます。 詳細については、次のいずれかのトピックを参照してください。
--   [電子申告の概要](../analytics/general-electronic-reporting.md)
--   [電子申告コンフィギュレーション ライフサイクルの管理](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
--   [電子申告コンフィギュレーションの作成](../analytics/electronic-reporting-configuration.md)
--   [電子申告機能の一覧の拡張](../analytics/general-electronic-reporting-formulas-list-extension.md)
--   [電子申告の送信先](../analytics/electronic-reporting-destinations.md)
+-   [電子申告 (ER) の概要](../analytics/general-electronic-reporting.md)
+-   [電子申告 (ER) コンフィギュレーション ライフサイクルの管理](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
+-   [電子申告 (ER) コンフィギュレーションの作成](../analytics/electronic-reporting-configuration.md)
+-   [電子申告 (ER) 機能の一覧の拡張](../analytics/general-electronic-reporting-formulas-list-extension.md)
+-   [電子申告 (ER) の送信先](../analytics/electronic-reporting-destinations.md)
 -   [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../analytics/download-electronic-reporting-configuration-lcs.md)
--   [電子申告コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
--   [Power BI にデータをプルするよう電子申告を構成する](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [電子申告ツールを使用して電子ドキュメントを生成し、アプリケーション データを更新](../analytics/generate-electronic-documents-update-application-data.md)
+-   [電子申告 (ER) コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
+-   [Power BI にデータをプルするよう電子申告 (ER) を構成する](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [ER を使用して電子ドキュメントを生成し、アプリケーション データを更新する](../analytics/generate-electronic-documents-update-application-data.md)
 
 ### <a name="task-guides"></a>タスク ガイド
 タスク ガイドは製品のヘルプ ペインから入手でき、主要ビジネス プロセスの手順を段階的に説明します。 タスク ガイドを開いてビジネス プロセスの手順を読むか、タスク ガイドを再生してビジネス プロセスのウォークスルーを行って、データを入力することができます。
 
 タスク ガイドを検索するには、アプリケーション内のページに移動してヘルプをクリックします。 そのページを使用しているタスク ガイドがヘルプ ペインに表示されます。 ヘルプ ペインを使用して、タスク ガイドをタイトルで検索することもできます。
 
-詳細については、[タスク ガイド](../../fin-ops/get-started/help-overview.md#task-guides)を参照してください。
+詳細は [ヘルプ システム](../../fin-ops/get-started/help-overview.md#task-guides) を参照してください。
 
 
 ### <a name="countryregion-specific-help-content"></a>国/地域固有のヘルプ コンテンツ

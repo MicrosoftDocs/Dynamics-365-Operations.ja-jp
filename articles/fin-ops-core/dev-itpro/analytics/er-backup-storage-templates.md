@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553094"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771424"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER テンプレートのバックアップストレージ
 
 [!include [banner](../includes/banner.md)]
 
-[電子申告 (ER) フレームワーク](general-electronic-reporting.md)を使用して、ビジネス ユーザーはさまざまな国/地域の法的要件に従って発信ドキュメントの形式を構成できます。 構成された ER 形式では、定義済みのテンプレートを使用して Microsoft Excel、workbooks、Microsoft Word ドキュメント、PDF ドキュメントなど、さまざまな形式で送信ドキュメントを生成できます。 テンプレートには、生成されたドキュメントに対して構成されたデータフローに必要なデータが入力されます。
+[電子申告 (ER) の概要](general-electronic-reporting.md) を使用して、ビジネス ユーザーはさまざまな国/地域の法的要件に従って発信ドキュメントの形式を構成できます。 構成された ER 形式では、定義済みのテンプレートを使用して Microsoft Excel、workbooks、Microsoft Word ドキュメント、PDF ドキュメントなど、さまざまな形式で送信ドキュメントを生成できます。 テンプレートには、生成されたドキュメントに対して構成されたデータフローに必要なデータが入力されます。
 
 ER ソリューションの一部として、構成された各形式を公開できます。 各 ER ソリューションは、Finance and Operations の 1 つのインスタンスからエクスポートして、別のインスタンスにインポートできます。
 
-ER フレームワークでは、[ドキュメント管理フレームワーク](../../fin-ops/organization-administration/configure-document-management.md)を使用して、現在の Finance and Operations インスタンスに必要なテンプレートを保持します。 ER フレームワークの設定に応じて、Microsoft Azure Blob ストレージまたは Microsoft SharePoint フォルダをテンプレートの物理的なプライマリ ストレージの場所として選択できます。 詳細については、[ER フレームワークの構成](electronic-reporting-er-configure-parameters.md)を参照してください。DocuValue テーブルには、各テンプレートの個々のレコードが保持されます。 各レコードの **AccessInformation** フィールドには、構成されている保管場所にあるテンプレートファイルのパスが格納されます。
+ER フレームワークでは、[ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md) を使用して、現在の Finance and Operations インスタンスに必要なテンプレートを保持します。 ER フレームワークの設定に応じて、Microsoft Azure Blob ストレージまたは Microsoft SharePoint フォルダをテンプレートの物理的なプライマリ ストレージの場所として選択できます。 (詳細については、[電子申告 (ER) フレームワークの構成](electronic-reporting-er-configure-parameters.md) を参照してください。) DocuValue テーブルには、各テンプレートの個々のレコードが保持されます。 各レコードの **AccessInformation** フィールドには、構成されている保管場所にあるテンプレートファイルのパスが格納されます。
 
 Finance and Operations インスタンスを管理する場合、現在のインスタンスを別の場所に移行する決定をする場合があります。 たとえば、本番インスタンスを新しいサンドボックス環境に移行するかもしれません。 テンプレートを Blob ストレージに保存するように ER フレームワークを構成した場合、新しいサンドボックス環境の DocuValue テーブルは、本番環境の Blob ストレージのインスタンスを参照します。 ただし、移行プロセスでは、Blob ストレージ内のアーティファクトの移行をサポートしていないため、このインスタンスにサンドボックス環境からアクセスすることはできません。 したがって、テンプレートを使用して ER 形式を実行してビジネスドキュメントを生成すると、例外が発生し、テンプレートが欠落していることについて通知されます。 また、ER クリーンアップ ツールを使用して、テンプレートを含む ER 形式の構成を削除してから再インポートする方法も紹介しています。 ER 形式の構成が複数存在する場合があるため、このプロセスには時間がかかる場合があります。
 
@@ -94,6 +94,6 @@ Finance and Operations バージョン 10.0.5 では、ER テンプレートの�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[電子申告の概要](general-electronic-reporting.md)
+[電子申告 (ER) の概要](general-electronic-reporting.md)
 
-[電子申告フレームワークのコンフィギュレーション](electronic-reporting-er-configure-parameters.md)
+[電子申告 (ER) フレームワークの構成](electronic-reporting-er-configure-parameters.md)

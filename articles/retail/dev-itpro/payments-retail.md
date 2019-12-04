@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ac374e7965c819d45eace18b253744479fe96e67
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 023a51c9ebe5d1aee7239f018878ef89ad8e9c0a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025539"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811940"
 ---
 # <a name="payments-faq"></a>支払に関してよく寄せられる質問
 
@@ -42,7 +42,7 @@ ms.locfileid: "2025539"
 
         
 ## <a name="which-payment-providers-are-supported-and-in-what-regions"></a>どの支払プロバイダーがどの地域でサポートされていますか。
-- Adyenはカードが存在する、またはカードが存在しない商取引に対応しています。 対応している地域の一覧については、 [Adyen 向け Dynamics 365 Payment Connector の概要](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。
+- Adyenはカードが存在する、またはカードが存在しない商取引に対応しています。 対応している地域の一覧については、 [Adyen 向け Dynamics 365 Payment Connector の概要ページ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。
 - Verifoneは、カードが存在する取引 (デバイスを使用してを実行) 、およびカードが存在しない取引 (電子商取引やコールセンター取引など) のために米国でサポートされています。
 - Mastercard Simplify は新しい顧客に対しては対応していません。
 
@@ -63,7 +63,7 @@ Verifone のコネクタに対するSLAは、Verifoneによって管理されて
 
         
 関連トピック: 
-- [支払ターミナルとの支払の統合](end-to-end-payment-extension.md)
+- [支払端末のエンド・ツー・エンド支払統合を作成する](end-to-end-payment-extension.md)
 - [支払コネクタの配置](deploy-payment-connector.md)
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 - [Verifone 支払コネクタ](https://dynamics.verifone.com/repo/)

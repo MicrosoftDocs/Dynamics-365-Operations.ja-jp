@@ -1,6 +1,6 @@
 ---
 title: コードおよび小売プロジェクトの環境の更新
-description: このトピックでは、Microsoft Dynamics 365 Retail の更新コード、および環境の推奨事項について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Retail 実装プロジェクトの更新コード、および環境の推奨事項について説明します。
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: c34b0693546efa58ec6486d22632914dd1f6b9e5
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 1bf179036f0408426b1521a1a249f6a3ace49992
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653289"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811180"
 ---
 # <a name="update-code-and-environments-for-retail-projects"></a>Retail プロジェクトのコードと環境の更新
 
@@ -70,7 +70,7 @@ ms.locfileid: "2653289"
 2. バッチ サービスが実行中であることを確認してください。
 3. 環境再プロビジョニング ツールを実行します。 (LCS のグローバル共有資産ライブラリで最新バージョンを見つけて、**Maintain** 関数を使用して展開します。)
 4. ツールが成功し、小売チャネル プロファイルが正しい URL で最新であり、既定のデータ グループのデータ同期ジョブが成功したことを確認します。
-5. Microsoft Dynamics 365 Retail では、古いデータを削除するために**小売用スケジューラの初期化**ジョブ (古いデータを削除するために選択) を実行します。 この手順では、すべての Commerce Data Exchange (CDX) コンフィギュレーションの変更がリソース ファイルを使用して自動化されていることを前提としています。 CDX のコンフィギュレーションの変更が自動化されていない場合、およびテーブル、サブジョブ、およびジョブが手動で小売チャネルのスキーマで作成された場合、既存のコンフィギュレーションを削除するオプションを選択しないでください。 CDX のコンフィギュレーションの変更を自動化することをお勧めします。 
+5. Microsoft Dynamics 365 Retail では、古いデータを削除するために **小売用スケジューラの初期化**ジョブ (古いデータを削除するために選択) を実行します。 この手順では、すべての Commerce Data Exchange (CDX) コンフィギュレーションの変更がリソース ファイルを使用して自動化されていることを前提としています。 CDX のコンフィギュレーションの変更が自動化されていない場合、およびテーブル、サブジョブ、およびジョブが手動で小売チャネルのスキーマで作成された場合、既存のコンフィギュレーションを削除するオプションを選択しないでください。 CDX のコンフィギュレーションの変更を自動化することをお勧めします。 
 
 ## <a name="taking-updates-frequently"></a>頻繁にプログラムを更新
 
@@ -193,4 +193,4 @@ Finance および小売カスタマイズ パッケージは、ビルド環境�
 
 [Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
-[テストおよびパフォーマンス](./retail-implementation-testing-performance.md)
+[テストおよびパフォーマンスに関する問題](./retail-implementation-testing-performance.md)

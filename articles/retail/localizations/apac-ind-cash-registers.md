@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-pakris
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: 89b78aaf91269ceb0b689ed857ce7c085eb3876b
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 5fed17420c020f35000f8d732f3d5804dd466825
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653360"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812324"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 
@@ -90,7 +90,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 
 ## <a name="create-the-receipt-format"></a>受領書フォーマットの作成
 
-受領書フォーマット デザイナーを使用して、適切な領収書セクションにカスタム フィールドを追加することができます。 詳細については、[レシートのテンプレートおよび印刷](../receipt-templates-printing.md)を参照してください。
+受領書フォーマット デザイナーを使用して、適切な領収書セクションにカスタム フィールドを追加することができます。 詳細については、[受領書フォーマットの設定しデザインします](../receipt-templates-printing.md) を参照してください。
 
 1. **小売** \> **チャネル設定** \> **POS 設定** \> **POS プロファイル** \> **受領書フォーマット**の順に移動します。
 2. **レシート** 領収書タイプのために領収書書式を選択して、必要な変更を加えます。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8cf78128b3238359476dc30db2c6fc7acc354f0b
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 1d866be21deb82dffe9984b2230743aeb08d8262
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578302"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812032"
 ---
 # <a name="advanced-selection-form-pattern"></a>高度な選択のフォーム パターン
 
@@ -41,14 +41,14 @@ ms.locfileid: "2578302"
 
 ### <a name="related-patterns"></a>関連するパターン
 
--   [リスト パネル](list-panel-subpattern.md)
--   [ダイアログ](dialog-form-pattern.md)
+-   [リスト パネルのサブパターン](list-panel-subpattern.md)
+-   [ダイアログのフォーム パターン](dialog-form-pattern.md)
 
 ## <a name="ux-guidelines"></a>UX ガイドライン
 検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。 このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。 ブラウザーでフォームを開いて、これらの手順を確認します。
 
 -   **標準フォーム ガイドライン:**
-    -   標準フォーム ガイドラインは、[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+    -   標準フォーム ガイドラインは、[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 -   **高度な選択のガイドライン:**
     -   既定では、クイック フィルターは名前または説明列を使用する必要があります。
     -   リストには最大 15 の列を表示できます。 **注記:** このガイドラインは Microsoft Dynamics AX 2012 から緩和されています。

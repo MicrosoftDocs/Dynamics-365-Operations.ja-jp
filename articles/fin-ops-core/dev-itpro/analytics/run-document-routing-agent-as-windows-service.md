@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 77cce002a1d2d1157f99a1409ec8e08b7d9538f9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: df65e86e33dbfab158ca10701f2781955c1fd487
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183449"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772452"
 ---
 # <a name="run-the-document-routing-agent-as-a-windows-service"></a>ドキュメント回覧エージェントを Windows サービスとして実行する
 
@@ -49,7 +49,7 @@ ms.locfileid: "2183449"
 ## <a name="install-the-latest-build"></a>最新ビルドのインストール
 1. 現在のドキュメント回覧エージェント構成ファイルのコピーを保存します。 このファイルは、C:\\Users\\&lt;UserID&gt;\\AppData\\Local\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing\\Microsoft.Dynamics.AX.Framework.DocumentRouting.config にあります。このパスでは、&lt;UserID&gt;は、ドキュメント ルーティング エージェントがインストールされた Active Directory Domain Services (AD DS) のユーザー名です。
 2. ドキュメント回覧エージェントの現在のバージョンをアンインストールします。
-3. [ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](install-document-routing-agent.md)の手順に従ってドキュメント回覧エージェントの最新バージョンをインストールします。
+3. [ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする](install-document-routing-agent.md)の手順に従って、ドキュメント回覧エージェントの最新バージョンをインストールします。
 
     > [!NOTE]
     > この時点でアプリケーションをインストールしますが、まだ実行しないでください。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: b68f047f580f7e5214a6523b8e7dba6708c747fb
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 949694a498aa3007ff018af3dfb1321fc18bd352
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025506"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773393"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-april-2019"></a>Dynamics 365 for Retail の新機能または変更された機能 (2019 年 4 月)
 
@@ -68,7 +68,7 @@ Retail には、POS の統合サンプルおよびポーランドの会計プリ
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
+### <a name="dynamics-365-april-19-release-plans"></a>Dynamics 365 2019 年 4 月 リリース計画
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 

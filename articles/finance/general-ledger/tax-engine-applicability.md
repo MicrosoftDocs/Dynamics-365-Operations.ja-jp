@@ -16,12 +16,12 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2d24a329a84cb6448b4c448c00995538d6fb7270
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 49bdeb012ac85cdd6a5758a3774e4094a040d078
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175679"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771765"
 ---
 # <a name="tax-engine-applicability"></a>税エンジンの適用性
 
@@ -33,7 +33,7 @@ ms.locfileid: "2175679"
 > 税エンジン機能は、インドに基本住所がある法人に対してのみ使用可能です。
 
 ## <a name="prerequisites"></a>必要条件                                               
-このドキュメントでは、インドの商品及びサービス税のコンフィギュレーションを使用して、税の適用について説明します。 詳細については、[インドの商品及びサービス税](../localizations/apac-ind-gst.md) を参照してください。
+このドキュメントでは、インドの商品及びサービス税のコンフィギュレーションを使用して、税の適用について説明します。 詳細については、[インドの商品及びサービス税 (GST) の概要](../localizations/apac-ind-gst.md) を参照してください。
 
 ## <a name="overview"></a>概要
 税の適用性とは、税タイプ、税コンポーネント、または税率が適用される条件です。 たとえば、インドの GST では、ある州から別の州に商品を販売する場合、IGST を請求する必要があります。販売している商品によって税率が決まります。 税エンジンは 2 種類の方法で、税の適用、ルックアップおよび条件を処理します。 ルックアップは主に動的適用ルールを処理するために使用され、条件は静的適用ルールを処理するために使用されます。
@@ -156,7 +156,7 @@ OR(
 
 ここでは、CGST レートを決定する方法を確認しましょう。 **CGST > レート**の順に選択し、**ルックアップ**をクリックします。
 
-![CGST > レート ルックアップ](media/gte-tax-document-applicability-dynamic-lookups.png)
+![CGST、レート、ルックアップの選択](media/gte-tax-document-applicability-dynamic-lookups.png)
 
 ランタイム データは税率を決定するために必要なので、システムは**ソース タイプ**と**ユーザー データ**の値を隠します。
 
@@ -167,6 +167,6 @@ OR(
 
 **列**をクリックします。 左側に**使用可能な列**がすべてあります。 構造は、参照モデルがないことを除けば、フォーミュラ デザイナーの**データ ソース**と同じです。
 
-![CGST > レート 変更 ルックアップ](media/gte-tax-document-applicability-change-lookups.png)
+![ルックアップ列](media/gte-tax-document-applicability-change-lookups.png)
 
 **使用可能な列**で**品目 ID**を選択し、商品を一意に決定します。 右矢印アイコンをクリックして、**選択された列**側に追加します。 HSN が不要な場合は、**選択された列**で **HSN コード**を選択し、左矢印アイコンをクリックして削除できます。 

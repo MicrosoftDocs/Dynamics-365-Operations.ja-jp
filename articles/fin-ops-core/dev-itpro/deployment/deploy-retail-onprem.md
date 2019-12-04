@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 5062416dbe0f7e749a0f0fbb3ff36c363b1737d3
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: cd83bbe73faba1fc50ad71cc529eee2f838d5ffe
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536931"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770960"
 ---
 # <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での小売チャネルのコンポーネントのインストール手順
 
@@ -70,7 +70,7 @@ ms.locfileid: "2536931"
   > [!NOTE]
   > パラメーター **-RetailSelfServicePackages** は、この手順の最初で作成したフル パスの場所です (**C:/selfservicepackages**)。
 
-5.  Retailインストーラーを使用するには、LCSから適切なバイナリ更新をダウンロードしてください。 手順については、[Lifecycle Services (LCS) から更新プログラムを入手](../migration-upgrade/download-hotfix-lcs.md)を参照してください。
+5.  Retailインストーラーを使用するには、LCSから適切なバイナリ更新をダウンロードしてください。 手順については、 [Lifecycle Services (LCS) から更新プログラムをダウンロードする](../migration-upgrade/download-hotfix-lcs.md) を参照してください。
 6.  ZIP ファイルを展開し、すべてのセルフ サービス インストーラーを、手順 2 において各 AOS コンピューターで定義および作成された **C:/selfservicepackages** フォルダーにコピーします。 6 つのセルフ サービス インストーラーは次のとおりです。 
     - AsyncServerConnectorServiceSetup.exe
     - RealtimeServiceAX63Setup.exe

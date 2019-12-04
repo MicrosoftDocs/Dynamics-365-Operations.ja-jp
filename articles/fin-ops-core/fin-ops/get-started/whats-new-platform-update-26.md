@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-XX-XX
 ms.dyn365.ops.version: Platform 26
-ms.openlocfilehash: 2034de89c25262ab51e100cd588122fdbb4c5402
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 42960d8b4d63276fc7cc2fcbd085f6aab45acbd1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191725"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812459"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-26-may-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019年 5月) の新機能および変更点
 
@@ -33,11 +33,11 @@ ms.locfileid: "2191725"
 ## <a name="business-events-generally-available"></a>一般的に利用可能なビジネス イベント
 [ビジネス イベント](../../dev-itpro/business-events/home-page.md) は現在一般に利用できます。 これは、ビジネス イベントがプレビュー外であり、フライトを有効にすることなく既定で利用可能なことを意味します。 
 
-## <a name="1n-support-for-microsoft-flow-to-subscribe-to-business-events"></a>Microsoft Flow の 1:N サポートでビジネス イベントを購読する
-複数のフロー アプリが、同じ法人内の同じビジネス イベントを購読することができます。 [Microsoft Flow のビジネス イベント](../../dev-itpro/business-events/business-events-flow.md) は通知の送信や承認フローのトリガーなどのタスクに活用できます。 
+## <a name="1n-support-for-microsoft-power-automate-to-subscribe-to-business-events"></a>Microsoft Power Automate の 1:N サポートでビジネス イベントを購読する
+複数の Power Automate アプリが、同じ法人内の同じビジネス イベントを購読することができます。 [Microsoft Power Automate のビジネス イベント](../../dev-itpro/business-events/business-events-flow.md) は通知の送信や承認フローのトリガーなどのタスクに活用できます。 
 
 ## <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
-[ワークフロー ビジネス イベント](../../dev-itpro/business-events/business-events-workflow.md) は承認フローのトリガーに特に優れたターゲットです。 **ワークフロー作業項目** イベントは、フローの作業項目の完了を容易にするために、validate および OData 完了アクションと組み合わせて使用できます。 作業項目の完成を促進するフロー テンプレートは進行中であり、関連するより多くの情報が近い将来 [ワークフロー ビジネス イベント](../../dev-itpro/business-events/business-events-workflow.md) ページで利用可能になります。
+[ワークフロー ビジネス イベント](../../dev-itpro/business-events/business-events-workflow.md) は承認フローのトリガーに特に優れたターゲットです。 **ワークフロー作業項目** イベントは、 Power Automate の作業項目の完了を容易にする目的で、検証 および OData 完了アクションと組み合わせて使用できます。 作業項目の完成を促進する Power Automate テンプレートは進行中であり、関連するより多くの情報が近い将来 [ワークフロー ビジネス イベント](../../dev-itpro/business-events/business-events-workflow.md)ページで利用可能になります。
 
 ## <a name="business-events-are-idempotent"></a>ビジネス イベントは、べき等です
 ビジネス イベントは、べき等です。 これはビジネス イベントのペイロードは、ControlNumber と呼ばれる一意で増え続ける番号を持つことを意味します。 この制御番号は、イベントの堅牢な処理を確実にするため、重複検出ロジックと故障出荷検出ロジックの適用に顧客が使用できます。
@@ -62,11 +62,11 @@ Finance and Operations に対して新しい機能が定期的に開発されて
 [2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックでは、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。

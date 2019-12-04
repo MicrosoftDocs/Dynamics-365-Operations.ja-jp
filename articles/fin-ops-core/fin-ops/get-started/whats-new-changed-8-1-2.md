@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 743800d6c3efa80b947136b212ac836ad0057982
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 8ab7bdff41d1c21e173f377f3f60ec16ce3d1dd5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627628"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812488"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-812-december-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
 
@@ -46,7 +46,7 @@ Retail の新機能または変更された機能についての最新のリリ�
 
 ## <a name="platform-update-22"></a>プラットフォーム update 22
 
-Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.2 には、プラットフォーム更新プログラム 22 が含まれています。 プラットフォーム更新プログラム 22 については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 11 月) の新機能と変更](whats-new-platform-update-22.md)を参照してください。
+Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.2 には、プラットフォーム更新プログラム 22 が含まれています。 プラットフォーム更新プログラム 22 については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能と変更](whats-new-platform-update-22.md)を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
@@ -62,7 +62,7 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 再開は 1 回だけ実行されます。 つまり、メイン スレッドが再開中に予期せずに再び停止した場合、ログに失敗としてマークされ、再開はしません。 また、再開は、少なくともマスター プラン計算の適用範囲に達した再生成およびジョブにのみ適用されます。 ヘルパー スレッドが突然停止した場合は、プランは残りのヘルパーで続行されます。
 
 ## <a name="intrastat-format-changes-for-belgium"></a>ベルギーのイントラスタット形式の変更
-今回のリリースには、2019 年の報告に適用されるベルギーの XML イントラスタット形式への変更が含まれています。 新しい形式を適用するには、LCS 共有資産ライブラリから ER コンフィギュレーションの次のバージョン (またはそれ以降のバージョン) をインポートする必要があります: Intrastat (BE).version.2.6.xml。 コンフィギュレーションをインポートする方法の詳細については、[Lifecycle Services からコンフィギュレーションをインポートする](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md)を参照してください。 
+今回のリリースには、2019 年の報告に適用されるベルギーの XML イントラスタット形式への変更が含まれています。 新しい形式を適用するには、LCS 共有資産ライブラリから ER コンフィギュレーションの次のバージョン (またはそれ以降のバージョン) をインポートする必要があります: Intrastat (BE).version.2.6.xml。 コンフィギュレーションをインポートする方法の詳細については、[Lifecycle Services からのコンフィギュレーションの ER インポート](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md)を参照してください。 
 
 ## <a name="india-specific-features"></a>インド固有の機能
 このリリースでは、[GTE](../../../finance/general-ledger/tax-engine.md) が法人に対して有効になっている場合、一部のグローバル フィールドとボタンがユーザー インターフェイスから非表示になります。 これは、GTE が使用されているときには適用されない発注書や販売注文のような課税対象文書のフィールドやボタンを非表示にすることで、ユーザーのユーザー インターフェースを簡素化します。 GTE が有効な場合、以下のフィールドやボタンが非表示になります。

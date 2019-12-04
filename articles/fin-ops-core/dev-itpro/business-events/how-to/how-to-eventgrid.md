@@ -3,7 +3,7 @@ title: ビジネス イベントおよび Azure Event Grid
 description: このトピックでは、Microsoft Azure イベント グリッド エンドポイントを構成する方法と、イベント グリッドからビジネス イベントを消費する方法について説明します。
 author: ibenbouzid
 manager: AnnBe
-ms.date: 08/13/2019
+ms.date: 10/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: imbenbou
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 1ef92ee2ab1fca26f66eacc853a707cc329ce590
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6ab7c0081fec1688cdd57cdbfea10040813b5f51
+ms.sourcegitcommit: b6ecc60e33deef76b7248466c5747ac6f20d30ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191549"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "2691549"
 ---
 # <a name="business-events-and-azure-event-grid"></a>ビジネス イベントおよび Azure Event Grid
 [!include[banner](../../includes/banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "2191549"
 
     <img alt="Key vault DNS name" src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
 
-4. **BE-Key Vault \> シークレット \> 生成/インポート** を選択します。 シークレットの名前を入力し、先に保存した Service Bus 接続文字列を貼り付けます。
+4. **BE-Key Vault \> シークレット \> 生成/インポート** を選択します。 シークレットの名前を入力し、先に保存したイベント グリッド接続文字列を貼り付けます。
 
     <img alt="Key vault secret " src="../../media/BEF-Howto-Keyvault-04.png" width="70%">
 

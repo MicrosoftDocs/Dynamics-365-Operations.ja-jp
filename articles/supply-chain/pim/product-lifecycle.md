@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 83c523a23973f4fd146d8308fbb5ecb486224ad9
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865331"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813549"
 ---
 # <a name="product-lifecycle-state-overview"></a>製品ライフサイクル状態の概要
 
@@ -107,9 +107,9 @@ ms.locfileid: "1865331"
 
 ## <a name="related-topics"></a>関連トピック
 
--  [新製品のライフサイクル状態の作成 (タスク ガイド)](tasks/new-product-lifecycle-state.md)
--  [既定の製品のライフサイクル状態の作成 (タスク ガイド)](tasks/default-product-lifecycle-state.md)
--  [リリース済製品マスターに製品ライフサイクル状態を割り当てる (タスク ガイド)](tasks/product-lifecycle-state-released-product-master.md)
--  [リリース済製品に製品ライフサイクル状態を割り当てる (タスク ガイド)](tasks/product-lifecycle-state-released-product.md)
--  [古い形式の製品バリアントを検索し、製品ライフサイクルの状態を割り当てる (タスク ガイド)](tasks/obsolete-product-variants.md)
--  [マスター プランから製品を除外するよう製品ライフサイクルの状態を作成 (タスク ガイド)](tasks/exclude-products-master-planning.md)
+-  [新しい製品ライフサイクル状態の作成](tasks/new-product-lifecycle-state.md)
+-  [既定の製品ライフサイクル状態の作成](tasks/default-product-lifecycle-state.md)
+-  [リリース済製品マスターに製品ライフサイクル状態を割り当てる](tasks/product-lifecycle-state-released-product-master.md)
+-  [リリース済製品に製品ライフサイクル状態を割り当てる](tasks/product-lifecycle-state-released-product.md)
+-  [古い形式の製品バリアントを検索して、製品ライフサイクルの状態を割り当てる](tasks/obsolete-product-variants.md)
+-  [マスター プランから製品を除外する場合は、製品ライフサイクルの状態を作成](tasks/exclude-products-master-planning.md)

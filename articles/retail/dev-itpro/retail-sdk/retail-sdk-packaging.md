@@ -3,7 +3,7 @@ title: 配置可能小売パッケージの作成
 description: このトピックでは、Microsoft Dynamics 365 Retail の配置可能小売パッケージを作成する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 11/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 290bab2aac7881568e64febebd53a9d15170e087
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c4dcac0c767b4e80c6cbae4faab89dca5863883d
+ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023455"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "2830175"
 ---
 # <a name="create-retail-deployable-packages"></a>配置可能な小売パッケージの作成
 
@@ -50,7 +50,7 @@ ms.locfileid: "2023455"
 >
 > アプリケーション バージョン 7.1.1541.3036 よりも古い Retail ソフトウェア開発キット (SDK) のバージョンを使用して、カスタマイズが個々の Retail コンポーネント パッケージとして構築されパッケージ化された場合、パッケージは LCS の展開に対してサポートされなくなりました。 [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download) で修正プログラムを取得する必要があります。その際、カスタマイズはリビルドおよび再梱包されます。
 
-Retail SDK の詳細情報は、[Retail SDK 概要](retail-sdk-overview.md) を参照してください。
+Retail SDK に関する詳細については、[Retail ソフトウエア開発キット (SDK) アーキテクチャ](retail-sdk-overview.md) を参照してください。
 
 ### <a name="steps-to-create-a-retail-deployable-package"></a>小売展開可能パッケージを作成する手順
 
@@ -85,46 +85,49 @@ Retail SDK の詳細情報は、[Retail SDK 概要](retail-sdk-overview.md) を�
 
 - **ItemGroup** セクションには、次の設定が含まれます。
 
-    - **ISV\_CommerceRuntime\_CustomizableFile** – すべてのカスタマイズされた CRT アセンブリの詳細を指定します。 各 CRT アセンブリに対して 1 つずつ、複数のエントリを持つことができます。
+    - **ISV\_CommerceRuntime\_CustomizableFile** – すべてのカスタマイズされた CRT および依存アセンブリの詳細を指定します。 各アセンブリに対して 1 つずつ、複数のエントリを持つことができます。
+    
+> [!NOTE]
+> 拡張機能が Newtonsoft.Json.Portable またはその他のアセンブリに依存している場合は、明示的に追加します。 帯域外 (OOB) Retail サーバーまたは CRT が使用しているため、これらのアセンブリが、既定でパッケージまたは Retail サーバー フォルダーに含まれるとは仮定しないでください。 今後、OOB 機能でこれらのアセンブリを使用していない場合は、削除することができます。 その結果、すべての拡張機能に依存するアセンブリを明示的に常に含めることによって、それらを適切なフォルダにパッケージ化して配置する必要があります。
 
-        **例**
+**例**
 
-        ```
+```
         ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtension.dll"
-        ```
+```
 
-    - **ISV\_RetailServer\_CustomizableFile** – カスタマイズされたすべての Retail サーバー アセンブリの詳細を指定します。 各 Retail サーバー アセンブリに対して 1 つの、複数のエントリを持つことができます。
+- **ISV\_RetailServer\_CustomizableFile** – カスタマイズされたすべての Retail サーバー アセンブリの詳細を指定します。 各 Retail サーバー アセンブリに対して 1 つの、複数のエントリを持つことができます。
 
-        **例**
+**例**
 
-        ```
+```
         ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension.dll"
         ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension2.dll"
-        ```
+```
 
-    - **ISV\_RetailProxy\_CustomizableFile** – カスタマイズされたすべての Retail プロキシ アセンブリの詳細を指定します。 各 Retail プロキシ アセンブリに対して 1 つの、複数のエントリを持つことができます。 
+- **ISV\_RetailProxy\_CustomizableFile** – カスタマイズされたすべての Retail プロキシ アセンブリの詳細を指定します。 各 Retail プロキシ アセンブリに対して 1 つの、複数のエントリを持つことができます。 
 
-        **例**
+**例**
 
-        ```
+```
         ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExtension.dll"
-        ```
+```
 
-    - **ISV\_HardwareStation\_CustomizableFile** – カスタマイズされたすべてのハードウェア ステーション アセンブリの詳細を指定します。 カスタマイズされた各ハードウェア ステーション アセンブリに対して 1 つずつ、複数のエントリを持つことができます。
+- **ISV\_HardwareStation\_CustomizableFile** – カスタマイズされたすべてのハードウェア ステーション アセンブリの詳細を指定します。 カスタマイズされた各ハードウェア ステーション アセンブリに対して 1 つずつ、複数のエントリを持つことができます。
 
-        **例**
+**例**
 
-        ```
-        ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
-        ```
+```
+   ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
+```
 
-    - **ISV\_CustomDatabaseFile\_アップグレード\_カスタム** – カスタマイズされたすべてのデータベース スクリプトの詳細を指定します。
+- **ISV\_CustomDatabaseFile\_アップグレード\_カスタム** – カスタマイズされたすべてのデータベース スクリプトの詳細を指定します。
 
-        **例**
+ **例**
 
-        ```
-        ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
-        ```
+ ```
+     ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
+```
 
 > [!IMPORTANT]
 > ビルド プロセスを開始する前に、拡張アセンブリを \\Retail SDK\\References に、カスタム データベース スクリプトを \\RetailSDK\\Database\Upgrade\\Custom に配置する必要があります。
@@ -141,11 +144,15 @@ CRT、Retail Server、ハードウェア ステーション、またはプロキ
 
 パッケージを行う前に、次の構成ファイルを更新する必要があります (この領域でカスタマイズがある場合)。
 
-- **CommerceRuntime.Ext.config** – すべての CRT 拡張アセンブリを登録します。
+- **CommerceRuntime.Ext.config** – すべての CRT 拡張および依存アセンブリを登録します。 また、この場所には、Retail サーバー拡張機能の依存アセンブリを含める必要があります。
 
-    **例**
+> [!NOTE]
+> 拡張機能が Newtonsoft.Json.Portable またはその他のアセンブリに依存している場合は、明示的に追加します。 帯域外 (OOB) Retail サーバーまたは CRT が使用しているため、これらのアセンブリが、既定でパッケージまたは Retail サーバー フォルダーに含まれるとは仮定しないでください。 今後、OOB 機能でこれらのアセンブリを使用していない場合は、削除することができます。 その結果、すべての拡張機能に依存するアセンブリを明示的に常に含めることによって、それらを適切なフォルダにパッケージ化して配置する必要があります。
 
-    ```C#
+
+**例**
+
+ ```C#
     <?xml version="1.0" encoding="utf-8"?>
     <commerceRuntimeExtensions>
         <composition>
@@ -153,11 +160,11 @@ CRT、Retail Server、ハードウェア ステーション、またはプロキ
             <add source="assembly" value="my custom library" />
         </composition>
     </commerceRuntimeExtensions>
-    ```
+```
 
-- **CommerceRuntime.MPOSOffline.Ext.config** – オフラインで、すべての CRT 拡張機能を登録します。
+- **ommerceRuntime.MPOSOffline.Ext.config** – すべての CRT 拡張および依存アセンブリを登録します。
 
-    **例**
+**例**
 
     ```C#
     <?xml version="1.0" encoding="utf-8"?>
@@ -171,9 +178,9 @@ CRT、Retail Server、ハードウェア ステーション、またはプロキ
 
 - **HardwareStation.Extension.config** – すべてのハードウェア ステーション拡張機能を登録します。
 
-    **例**
+**例**
 
-    ```C#
+```C#
     <?xml version="1.0" encoding="utf-8"?>
     <hardwareStationExtension>
         <composition>
@@ -181,11 +188,11 @@ CRT、Retail Server、ハードウェア ステーション、またはプロキ
             <add source="assembly" value=" my custom library" />
         </composition>
     </hardwareStationExtension>
-    ```
+ ```
 
 - **RetailProxy.MPOSOffline.ext.config** – すべての小売プロキシ拡張機能を登録します。
 
-    **例**
+ **例**
 
     ```C#
     <?xml version="1.0" encoding="utf-8"?>
@@ -205,8 +212,26 @@ CRT、Retail Server、ハードウェア ステーション、またはプロキ
 
 [![Retail サーバーの Web.config ファイル](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)
 
+### <a name="shared-hardware-station-webconfig"></a>共有されたハードウェア ステーション Web コンフィギュレーション
+
+従来の支払コネクタを使用していない場合は、従来の支払コネクタをコメントして、web.構成ファイル内の非従来型コネクタを有効にします。 既定では、共有されたハードウェア ステーションの web.config で、従来の支払コネクタが有効になっています。
+
+**例** 従来のコネクタを無効にするには、\RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin から web.config ファイルを開き、従来のコネクタをコメントします。 次のサンプル コードに示すように、合成セクションで非従来型のコネクタを有効にします。
+
 > [!NOTE]
-> 上記の例、またはチャネル構成ファイルのいずれかで、カスタム設定を追加したり変更したりしないでください。 対応している変更は、構成セクションでのカスタム アセンブリの詳細の追加のみです。
+> web.config フォルダー パス (\RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin) の x.x.x.x はバージョン番号です。 これは、Retail SDK のバージョン番号によって異なります。
+
+```C#
+    <composition>
+      <!-- Defaulting to legacy payment devices.
+ <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Legacy.PaymentDeviceAdapter"/>
+      -->
+      <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.PaymentDeviceAdapter" />
+    </composition>
+```
+
+> [!NOTE]
+> 上記の例、またはチャネル構成ファイルのいずれかで、カスタム設定を追加したり変更したりしないでください。 サポートされている変更は、合成セクションでのカスタム アセンブリの詳細の追加のみです。
 >
 > また、拡張機能またはパッケージの一部として、構成ファイルのいずれも編集しないでください。 これらの構成ファイルは、配置の際にコア Microsoft パッケージの最新のファイルで更新され、変更内容は失われます。
 >

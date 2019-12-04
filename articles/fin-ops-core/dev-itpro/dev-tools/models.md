@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ba71fbe6a7f43e40bb17943c9159c938614be44
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cdbce8062b5f45393bc25f532e7041ea3755825d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191661"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812024"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 
@@ -92,11 +92,11 @@ ms.locfileid: "2191661"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[開発ツールの概要](development-tools-overview.md)
+[Visual Studio の開発ツール](development-tools-overview.md)
 
-[開発者ホーム ページ](developer-home-page.md)
+[開発およびカスタマイズのホーム ページ](developer-home-page.md)
 
-[モデルの配分: モデル ファイルをエクスポートおよびインポートする方法](models-export-import.md)
+[モデルのエクスポートとインポート](models-export-import.md)
 
 
 

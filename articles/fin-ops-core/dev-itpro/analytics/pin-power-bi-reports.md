@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: de4318cc85493bf580fefba7d5d711a539ab1fb8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e2d4b15590ddc4cac63d01c0aefeb27dc88d27b1
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183455"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772524"
 ---
 # <a name="pin-power-bi-reports-to-workspaces"></a>Power BI レポートをワークスペースにピン留めする
 
@@ -30,7 +30,7 @@ ms.locfileid: "2183455"
 
 Microsoft Dynamics 365 Finance では、データ検索に Power BI が使用されます。 このトピックでは、ワークスペースにページ全体の Power BI レポートを配置して、ユーザーにインタラクティブなデータ探索エクスペリンスを提供する方法について説明します。
 
-このトピックは、Microsoft Power BI タイルをワークスペースにピン留めする機能に精通しているものと仮定します。 詳細については、「[Power BI 統合](power-bi-integration.md)」を参照してください。 ユーザーがワークスペースを作成している開発者であり、ユーザーに Power BI をワークスペースにピン留め並べしてもらうには、Power BI コントロールを埋め込みます。
+このトピックは、Microsoft Power BI タイルをワークスペースにピン留めする機能に精通しているものと仮定します。 詳細については、 [Power BI 統合を通じて利用可能な機能およびサービス](power-bi-integration.md) を参照してください。 ユーザーがワークスペースを作成している開発者であり、ユーザーに Power BI をワークスペースにピン留め並べしてもらうには、Power BI コントロールを埋め込みます。
 
 ## <a name="pin-power-bi-reports-to-workspaces"></a>Power BI レポートをワークスペースにピン留めする
 Microsoft Dynamics AX プラットフォーム更新プログラム 1 (2016 年 5 月) では、Power BI レポートをワークスペースに固定する機能が導入されました。 Power BI レポートは、**リンク** セクションが含まれる任意のワークスペースに追加できます。 つまり、製品に含まれた最初から用意されているワークスペースのほとんどにレポートを追加できます。 Power BI レポートおよびタイルを有効にするには、アプリケーションと動作するように Power BI を構成する必要があります。 この 1 回のみの操作は、 環境の管理者によって完了する必要があります。 手順については、「[ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md)」を参照してください。 アプリケーションと連携するように Power BI を構成したら、クライアントで**元帳予算および予測**ワークスペースを開きます。 ワークスペースで、**オプション** タブをクリックします。このタブには (Power BI) タイル カタログと (Power BI) レポート カタログを開くボタンが含まれています。 **レポート カタログを開く**をクリックします。 レポートの一覧を示すダイアログ ボックスが表示されます。 レポートのリストは、Power BI アカウントにあるレポートから取得されます。 ブラウザーで PowerBI.com を開くと、Power BI ダッシュボード全体で同じレポートのリストが使用されていることがわかります。 次の図のように、一部のレポートを選択し、**OK** をクリックして続行します。

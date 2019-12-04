@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bea02c6fe7b8e50be22be89eeb43a913851ddbfb
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 27c9bf32a88858ec2d2214f18ff96138c29e59bc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653536"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815160"
 ---
 # <a name="demand-forecasting-overview"></a>需要予測の概要
 
@@ -71,20 +71,20 @@ Supply Chain Management を使用してベースラインの予測を視覚化�
 ## <a name="limitations"></a>制限
 需要予測は、予測プロセスを作成する製造業界の顧客を支援するツールです。 需要予測ソリューションの核となる機能を提供し、簡単に拡張できるように設計されています。 需要予測は、小売業、卸売業、倉庫保管、輸送業、または他の専門的なサービス産業の顧客には最適ではない場合があります。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [需要予測の設定](demand-forecasting-setup.md)
 
 [統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)
 
-[ベースライン予測の手動調整の実施](manual-adjustments-baseline-forecast.md)
+[ベースライン予測に対して手動調整を行う](manual-adjustments-baseline-forecast.md)
 
-[調整された予測の承認](authorize-adjusted-forecast.md)
+[調整された需要予測の承認](authorize-adjusted-forecast.md)
 
 [予測精度の監視](monitor-forecast-accuracy.md)
 
-[需要予測を計算するときにトランザクション履歴データから異常値を削除する](remove-historical-outliers-calculating-demand-forecast.md)
+[需要予測を計算するときに、トランザクション履歴データから異常値を削除](remove-historical-outliers-calculating-demand-forecast.md)
 
 [Extend the demand forecasting functionality (需要予測機能の拡張)](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 

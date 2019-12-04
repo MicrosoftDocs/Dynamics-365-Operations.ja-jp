@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6b7d0ca1b8f93af1fb8fcfcf72a2078b3488dddf
-ms.sourcegitcommit: 1febba80b5a5f089d8f9c6929e07a356daa3aa86
+ms.openlocfilehash: 582c5d84fe1b3630584d452caa79df62a1a1a40a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2655199"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812044"
 ---
 # <a name="self-service-upgrade-to-the-latest-version"></a>最新バージョンへのセルフサービス アップグレード
 
@@ -80,9 +80,9 @@ ms.locfileid: "2655199"
 
 アップグレード対象のリリースを実行している開発環境でこのプロセスを実行します。 このステップは、開発者によって行われる検証プロセスです。 これにより、手動操作を必要とせずに環境でカスタマイズの特定のセットを使用することで、データのアップグレードを完了できることの確認に役立ちます。
 
-実稼働データベースのコピーを作成するには [標準ユーザー受け入れテスト (UAT) データベースのコピーをエクスポートする](../database/dbmovement-scenario-exportuat.md) の手順に従ってください。
+生産データベースのコピーを作成するには、[標準ユーザー受け入れテスト (UAT) データベースのコピーをエクスポートする](../database/dbmovement-scenario-exportuat.md) の手順に従ってください。
 
-データのアップグレード プロセスを実行するには、[開発環境やデモ環境でデータをアップグレードする](../migration-upgrade/upgrade-data-to-latest-update.md) の手順に従います。
+データのアップグレード プロセスを実行するには、[開発環境またはデモ環境でデータをアップグレードする](../migration-upgrade/upgrade-data-to-latest-update.md) の手順に従います。
 
 > [!IMPORTANT]
 > - 開発環境でのデータのアップグレードは必須ステップです。 これにより、サンドボックス UAT と実稼働環境をアップグレードする際に、後のダウンタイムの延長やアップグレード エラーのリスクを軽減できます。
@@ -208,7 +208,7 @@ ms.locfileid: "2655199"
 
 ### <a name="upgrade-additional-environments"></a>追加の環境のアップグレード
 
-同じ方法で追加のサンドボックス環境をアップグレードできます。 その他のサンドボックス環境の割り当てを解除して削除し、新しいバージョンで再展開できます。 [データベースの更新](../database/database-refresh.md)セルフサービス アクションを使用することで、別のサンドボックスまたは実稼働環境からアップグレードするデータベースにコピーできます。
+同じ方法で追加のサンドボックス環境をアップグレードできます。 その他のサンドボックス環境の割り当てを解除して削除し、新しいバージョンで再展開できます。 [データベースを最新の情報に更新](../database/database-refresh.md) セルフサービス アクションを使用することで、別のサンドボックスまたは実稼働環境からアップグレードするデータベースにコピーできます。
 
 ### <a name="known-issues"></a>既知の問題
 

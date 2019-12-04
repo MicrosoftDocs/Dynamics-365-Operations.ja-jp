@@ -3,7 +3,7 @@ title: 計画オーダーの管理
 description: このトピックでは、計画オーダーの管理方法について説明します。 計画オーダーの状態の更新と確定、選択した計画オーダーとして同じ状態である計画オーダーをフィルター処理する方法について説明します。
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ddf2c7b4c67bec6c29387c78d1fdb021d85d702
-ms.sourcegitcommit: 620e15555d176eec3905b48d5001af1c50107ce6
+ms.openlocfilehash: 68bccb632255eac975dc150cf322d4c579ff2f24
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "1993443"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813779"
 ---
 # <a name="maintain-planned-orders"></a>計画オーダーの管理
 
@@ -39,7 +39,7 @@ ms.locfileid: "1993443"
 
 -   マスター プランによって計画オーダーが生成されたとき、計画オーダーのステータスは **未処理** になります。
 -   計画オーダーを確定しない場合は、ステータスを **完了済み** に設定できます。
--   計画済オーダーを確定する場合は、ステータスを**承認済**に変更できます。 **承認済**ステータスがある計画済オーダーは、マスタープランで尊重されるため、変更または削除されることはありません。 
+-   計画済オーダーを確定する場合は、ステータスを**承認済**に変更できます。 **承認済**ステータスがある計画済オーダーは、マスター プランで尊重されるため、後でマスター プランの実行中に変更または削除されることはありません。 
 
 ## <a name="firming-planned-orders"></a>計画済オーダーの確定 
 計画済オーダーを確定することによって、実際の注文が作成されます。 これらは、*リリース済*または*オープン注文*としても認識されます。 計画オーダーが確定されると、関連するモジュールの注文セクションにその計画オーダーが移動します。
@@ -62,7 +62,7 @@ ms.locfileid: "1993443"
 <a name="additional-resources"></a>追加リソース
 --------
 
-[マスター プラン](master-plans.md)
+[マスター プランの概要](master-plans.md)
 
 
 

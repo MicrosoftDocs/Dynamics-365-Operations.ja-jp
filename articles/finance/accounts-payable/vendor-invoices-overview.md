@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 616d3f5560d18c7fdd8a092c3fbca0fde44be069
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: b9708c37f10cd08e6b98167fe24d9ae0380c3dac
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570428"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772171"
 ---
 # <a name="vendor-invoices-overview"></a>仕入先請求書の概要
 
@@ -101,7 +101,7 @@ ms.locfileid: "2570428"
 ## <a name="additional-resources"></a>追加リソース
 
 - [仕入先請求ポリシーの設定](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
-- [仕入先請求書を使用した買掛金勘定への請求書データの入力](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+- [仕入先請求書を使用した AP システムの主請求書データ](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 - [承認仕訳帳を使用した買掛金勘定への請求書データの入力](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [請求管理グループを使用した AP システムへの請求書データの入力](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [請求仕訳帳の仕入先請求書の記録](tasks/record-vendor-invoice-invoice-journal.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 604e392f53d3e6a55350c941cb4cc6940eb1e6d4
-ms.sourcegitcommit: 9e11c35e3a749758b2c06ed7fad617f6c731b3af
+ms.openlocfilehash: 6063698690c4d0b80984747099d6e1f40d3a0d7b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2657341"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772348"
 ---
 # <a name="deploy-a-demo-environment"></a>デモ環境の配置
 
@@ -39,7 +39,7 @@ ms.locfileid: "2657341"
 
 - Azure サブスクリプションがあり、そのサブスクリプションの共同管理者であることを確認します。
 - LCS プロジェクトへのアクセスが可能であり、環境を展開するためのアクセス許可があることを確認します。
-- [Azure Resource Manager オンボード](arm-onboarding.md) のトピックを使用して、Azure サブスクリプションが LCS プロジェクトに接続済みであることを確認します。
+- [Azure Resource Managerr (ARM) オンボード プロセス を完了する](arm-onboarding.md) に記載された情報を参考に、Azure のサブスクリプションが LCS プロジェクトに接続済みであることを確認します。
 
 ## <a name="deploy-a-demo-environment"></a>デモ環境の配置
 LCS を使用して Azure でデモ環境を配置するには、この手順を使用します。 
@@ -53,10 +53,9 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
 5. 仮想マシン (VM) のサイズを選択します。 ARM 用に有効になっている VM のすべてのサイズは、v2 で終わります。 Finance and Operations のワークロードには、D* v2 サイズを使用する必要があります。 D12v2 をお勧めします。
 6. **インスタンス** フィールドを 1 に設定します。
 
+    > [!NOTE] 
+    > VM のサイズ と インスタンス の数は、サブスクリプションのコストに影響します。 詳細については、 [Azure の価格設定](https://azure.microsoft.com/pricing/) を参照してください。
 
-~~~
-**Note:** The size of the VM and the number of instances affect the cost of your subscription. For more information, see [Azure pricing](https://azure.microsoft.com/pricing/).
-~~~
 
 7. **詳細設定**をクリックし、配置にカスタマイズを追加します。 デモ環境では、既定の設定のままにすることをお勧めします。
 8. ライセンスおよび価格条件に同意し、 **次へ**をクリックします。

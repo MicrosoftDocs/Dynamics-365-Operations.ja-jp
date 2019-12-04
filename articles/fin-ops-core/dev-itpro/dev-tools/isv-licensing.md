@@ -3,7 +3,7 @@ title: 独立系ソフトウェア ベンダー (ISV) ライセンス
 description: このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。 これには、ISV のライセンス機能の長所および機能に関する情報が含まれており、ISV ソリューションのライセンスを有効にする方法、パッケージの作成方法、顧客固有のライセンスの生成方法およびテスト目的で自己署名証明書を作成する方法について説明しています。
 author: robadawy
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bccf09360b91bd58958b55436d098d64fd081246
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b2391cf7fdfec391e09fc6dc3739233943c9e39b
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191680"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824508"
 ---
 # <a name="independent-software-vendor-isv-licensing"></a>独立系ソフトウェア ベンダー (ISV) ライセンス
 
@@ -196,7 +196,7 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 ![コンフィギュレーション モードのテンプレート パッケージの場所](./media/isv21.png)
 
 1.  パッケージ テンプレートのコピーを作成します。
-2.  パッケージ テンプレート内の次のフォルダーにライセンス ファイルを配置: ImportISVLicense.zipAosServiceScriptsLicense
+2.  パッケージ テンプレート内の次のフォルダーにライセンス ファイルを配置: ImportISVLicense.zip\\AosService\\Scripts\\License
 
 一度に複数のライセンスをインストールすることができます。 別のライセンスがいずれかに依存する場合は、それに応じた名前を確認します。 (ライセンスはアルファベット順にインストールされます。)
 

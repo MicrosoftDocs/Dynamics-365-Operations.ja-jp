@@ -3,7 +3,7 @@ title: Retail Modern POS (MPOS) のトリガーと印刷
 description: トリガーを使用すると、いずれかの Retail Modern POS の操作前後に発生するイベントを取得できます。
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/07/2019
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 3bf04344b95a6cb1a18f0cb789e4f5883d8e01ca
-ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
+ms.openlocfilehash: 0d9ed7f6816d307b337789d72cf72767dcd73620
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564182"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824533"
 ---
 # <a name="retail-modern-pos-mpos-triggers-and-printing"></a>Retail Modern POS (MPOS) のトリガーと印刷
 
@@ -51,6 +51,7 @@ ms.locfileid: "2564182"
 | PreElevateUserTrigger      | 解約可能 | マネージャー オーバーライドの前に実行されます。   | 
 | PreRegisterAuditEventTrigger      | 解約可能 | 監査イベントの前に実行されます。   | 
 | PostRegisterAuditEventTrigger      | キャンセル不可 | 監査イベントの後に実行されます。   | 
+| PreOpenUrlTrigger      | 解約可能 | URLを開く操作の前に実行されます。   | 
 
 
 ## <a name="cash-management-triggers"></a>現金管理トリガー
@@ -159,16 +160,18 @@ ms.locfileid: "2564182"
 | PostMarkFulfillmentLinesAsPackedTrigger   | キャンセル不可     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包オプションとしてマークがトリガーされた後に実行されます。|
 | PreCreatePackingSlipTrigger   | 解約可能     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包明細オプションがトリガーされる前に実行されます。|
 | PostCreatePackingSlipTrigger  | キャンセル不可     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包明細オプションがトリガーされた後に実行されます。|
+| PostReturnInvoicedSalesLinesTrigger   | キャンセル不可     | 返品対象として 1 つ以上の請求書が選択された後に実行されます。|
 
 
 ## <a name="shift-triggers"></a>シフト トリガー
 | トリガー              | 型           | 説明                                             |
 |----------------------|----------------|---------------------------------------------------------|
 | PostOpenShiftTrigger | キャンセル不可 | このトリガーは、新しいシフトが開かれた後に実行されます。 |
+| PreCloseShiftTrigger | 解約可能 | このトリガーは、シフトが開かれる前に実行されます。 |
 
 ## <a name="tax-override-triggers"></a>税上書きトリガー
 
-| トリガー                           | 種類           | 説明                                                                                     |
+| トリガー                           | 型           | 説明                                                                                     |
 |-----------------------------------|----------------|---------------|
 | PreOverrideLineProductTaxTrigger  | 解約可能     | 税額またはコードがカート行に上書きされる前に実行されます。           |
 | PostOverrideLineProductTaxTrigger | キャンセル不可 | 税額またはコードがカート行に上書きされた後に実行されます。            |
@@ -199,6 +202,12 @@ ms.locfileid: "2564182"
 | トリガー              | 型           | 説明                                             |
 |----------------------|----------------|---------------------------------------------------------|
 | PostGetReasonCodeLine | 解約可能 | このトリガーは、理由コードが入力された後 (理由コードがカートに追加される前) に実行されます。 |
+
+## <a name="transfer-order-triggers"></a>移動オーダー トリガー
+| トリガー              | 型           | 説明                                             |
+|----------------------|----------------|---------------------------------------------------------|
+| PreCreateTransferOrderTrigger | 解約可能 | このトリガーは、移動オーダーが作成される前に実行 (注文入力後に実行) されます。 |
+| PreUpdateTransferOrderTrigger | 解約可能 | このトリガーは、移動オーダーが更新される前に実行されます。 |
 
 
 ## <a name="business-scenario"></a>ビジネス シナリオ

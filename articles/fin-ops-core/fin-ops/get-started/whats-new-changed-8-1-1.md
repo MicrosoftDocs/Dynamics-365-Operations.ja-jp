@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1.1
-ms.openlocfilehash: 7c24843c9ccb0850e03c647c36555307ef466a99
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: a91c9dcdfa3b878ed42f38e315c4e6163aec860d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627637"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811469"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-811-november-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 11 月) の新機能および変更された機能
 
@@ -45,7 +45,7 @@ Finance and Operations 8.1.1 の一部である更新プログラムのそれぞ
 
 ## <a name="platform-update-21"></a>プラットフォーム update 21
 
-Microsoft Dynamics 365 for Finance and Operations バージョン8.1.1には、プラットフォーム更新プログラム 21 が含まれています。 プラットフォーム更新プロフラム 21 については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 10 月) の新機能と変更](whats-new-platform-update-21.md) をご覧ください。
+Microsoft Dynamics 365 for Finance and Operations バージョン8.1.1には、プラットフォーム更新プログラム 21 が含まれています。 プラットフォーム更新プログラム 21 については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 11 月) の新機能と変更](whats-new-platform-update-21.md)を参照してください。
 
 ## <a name="ledger-settlements"></a>元帳決済
 

@@ -3,7 +3,7 @@ title: クラウド環境へ更新プログラムを適用
 description: このトピックでは、Lifecycle Services (LCS) を使用して、バイナリ更新プログラムまたはアプリケーション (AOT) 展開可能なパッケージをクラウド環境に適用する方法について説明します。
 author: manalidongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 11/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: b857553e5b7525ebd6a3b35f7cf5db3620439839
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 78eae2e0241bdde551964411b4b101491426d0e2
+ms.sourcegitcommit: 9bc94ef205aab58cea4a6a4453434e7ed2f3eb9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536933"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2774387"
 ---
 # <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 
@@ -57,7 +57,7 @@ Lifecycle Services を使用して配置されるすべての環境がサポー�
 > [!NOTE] 
 > バイナリ パッケージおよび小売展開可能パッケージは、同じ結合済パッケージにまとめることはできません。
 
-> LCS から更新をダウンロードする方法と、環境のバージョンに基づくタイルに表示される内容については、[Lifecycle Services から更新プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md)を参照してください。
+> LCS から更新をダウンロードする方法と、環境のバージョンに基づくタイルに表示される内容については、[Lifecycle Services (LCS) から更新プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md) を参照してください。
 
 > 環境がアプリケーション バージョン 8.1 以上の場合、**プラットフォーム更新パッケージ**は環境に適用されません。 8.1 以降のリリースでは、**アプリケーションおよびプラットフォームのバイナリ更新パッケージ**は、アプリケーションとプラットフォームが 1 つの累積的なパッケージにまとめられ、Microsoft によってリリースされてから適用されます。 細かい X++ 修正プログラムを適用する必要はなくなり、すべてのアプリケーションとプラットフォーム更新がまとめて取得される点にも注意してください。 つまり、環境の詳細ページで**詳細バージョン情報を表示**をクリックしても、細かい修正プログラムまたは KB に関する詳細情報が表示されません。適用する方法がないからです。 
 
@@ -79,7 +79,7 @@ Lifecycle Services を使用して配置されるすべての環境がサポー�
 
 開始する前に、配置可能パッケージが LCS のアセット ライブラリにアップロードされていることを確認します。
 
-1. バイナリ更新プログラムで、資産ライブラリに直接パッケージをアップロードします。 LCS から更新プログラムをダウンロードする方法の詳細については、[Lifecycle Services から更新プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md) を参照してください。 X++ 修正プログラムまたはアプリケーション カスタマイズおよび拡張機能からの結果であるアプリケーション (AOT) 配置可能パッケージについては、開発またはビルド環境で配置可能パッケージを作成し、資産ライブラリにアップロードします。
+1. バイナリ更新プログラムで、資産ライブラリに直接パッケージをアップロードします。 LCS から更新プログラムをダウンロードする方法の詳細については、[Lifecycle Services (LCS) から更新プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md) を参照してください。 X++ 修正プログラムまたはアプリケーション カスタマイズおよび拡張機能からの結果であるアプリケーション (AOT) 配置可能パッケージについては、開発またはビルド環境で配置可能パッケージを作成し、資産ライブラリにアップロードします。
 2. 更新プログラムを適用する環境の **環境の詳細** ビューを開きます。
 3. **メンテナンス** &gt; **更新プログラムの適用**をクリックし、更新プログラムを適用します。
 4. パッケージを選択して適用します。 上部にあるフィルターを使用してパッケージを探します。
@@ -113,7 +113,7 @@ Lifecycle Services を使用して配置されるすべての環境がサポー�
 
 ## <a name="applying-retail-updates-and-extensions"></a>小売用の更新および拡張機能を適用する
 
-アプリケーション バージョン 8.1.2.x 以降でレベル 2 サンドボックスまたは運用環境を更新し、クラウドで Retail チャンル コンポーネントの短縮ダウンタイム更新を有効にした場合は、Retail チャネル コンポーネントも更新する必要があります。 詳細については、[クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用](Update-retail-channel.md)を参照してください。
+アプリケーション バージョン 8.1.2.x 以降でレベル 2 サンドボックスまたは運用環境を更新し、Retail Cloud Scale Unit を初期化した場合は、Retail チャネル コンポーネントも更新する必要があります。 詳細については、[Retail Cloud Scale Unit の更新](Update-retail-channel.md) を参照してください。
 
 環境内で更新プログラムと拡張機能を適用した後に、小売コンポーネント (Retail Modern POS など) を使用している場合、店舗内コンポーネントも更新する必要があります。 詳細については、[Retail Modern POS (MPOS) の構成、インストール、有効化](../../../retail/retail-modern-pos-device-activation.md)を参照してください。
 

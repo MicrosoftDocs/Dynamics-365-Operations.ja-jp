@@ -1,5 +1,5 @@
 ---
-title: 面接のスケジューリングおよびフィードバック
+title: Attract で面接をスケジュール
 description: このトピックでは、Attract での面接のスケジューリングとフィードバック活動に関する情報を提供します。
 author: hasrivas
 manager: AnnBe
@@ -14,18 +14,18 @@ ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
 ms.author: shielas
-ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 33eba9796ca997fde4be9a46050207d313551bde
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518451"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832748"
 ---
-# <a name="interview-scheduling-and-feedback"></a>面接のスケジューリングおよびフィードバック
+# <a name="schedule-interviews-in-attract"></a>Attract で面接をスケジュール
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-## <a name="scheduler-activity"></a>スケジューラの活動
+## <a name="scheduler-activity"></a>スケジューラ活動
 
 スケジューラ活動はオプションであり、2 つのコンポーネントがあります: 候補者の面接可能日の要求およびスケジュールです。 候補者の面接可能日コンポーネントにより、電子メールを使用して、候補者の面接可能日を要求することができます。 スケジュール コンポーネントでは、候補者と採用チームとの面接をスケジュールする機能を提供します。
 

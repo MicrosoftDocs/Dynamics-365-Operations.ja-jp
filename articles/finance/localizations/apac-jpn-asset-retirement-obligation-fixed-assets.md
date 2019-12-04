@@ -17,12 +17,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce6fb1625acf39e6b1dee843be4083b913abf966
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e4d3179ad299db60e0f1a0ed920012bbafc9e8b9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552359"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772885"
 ---
 # <a name="set-up-asset-retirement-obligation-for-fixed-assets-for-japan"></a>日本の固定資産の資産償却責務を設定します。
 
@@ -58,7 +58,7 @@ ARO を使用するには、次の設定手順を完了する必要がありま�
 -   **処分する ARO** のトランザクション タイプである固定資産を転記する際に、トランザクション金額の取得元の勘定を設定します
 
 ## <a name="set-up-asset-retirement-obligation-documents-and-enter-aro-amount-on-a-fixed-asset"></a>資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力
-[資産除去責務ドキュメントの設定](./tasks/set-up-asset-retirement-obligation.md)を参照してください。
+[資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力](./tasks/set-up-asset-retirement-obligation.md) を参照してください。
 
 ## <a name="technical-information-for-system-administrators"></a>システム管理者向け技術情報
 このタスクを完了するために使用するページに対するアクセス権限がない場合は、システム管理者に連絡し、次の表に示される情報を提供します。

@@ -1,7 +1,7 @@
 ---
 title: ロールベース セキュリティ
 description: このトピックでは、ロールベースのセキュリティの要素の概要を提供します。
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 07/18/2019
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 15211
 ms.assetid: 48cfdd5a-7d04-4969-93ac-6cd6d10d5a09
 ms.search.region: Global
-ms.author: sericks
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eea2fff2e44097c158757a790534962af7917422
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 0a5ff11e56d7ce739236171bd386a3690652c0b7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578266"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772319"
 ---
 # <a name="role-based-security"></a>ロールベース セキュリティ
 

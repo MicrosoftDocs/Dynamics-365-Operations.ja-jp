@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a21394daeb797995418c3b139191dd700c129e12
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 3f0180f63c32f3e88d7f5e245716ccc908cc026d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019396"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811243"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>販売時点管理 (POS) への周辺機器の接続
 
@@ -33,7 +33,7 @@ ms.locfileid: "2019396"
 このトピックでは、Retail POS に周辺機器を接続する方法について説明します。
 
 > [!NOTE]
-> 具体的なインストール手順については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) と [Retail Modern POS セルフ サービス ダウンロードとインストール、および Modern POS と Cloud POS のデバイスの有効化](retail-modern-pos-device-activation.md) を参照してください。
+> 具体的なインストール手順については、[Retail Hardware Station のコンフィギュレーションおよびインストール](retail-hardware-station-configuration-installation.md)および [Retail Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](retail-modern-pos-device-activation.md)を参照してください。
 
 ## <a name="key-components"></a>主要コンポーネント
 
@@ -139,7 +139,7 @@ POS レジスターは、主にレジスター自体を介して管理され、�
 
 - **情報コード**クイック タブ:
 
-    - POS で情報コードを管理する方法のすべての側面。 詳細については、「[情報コード](info-codes-retail.md)」を参照してください。
+    - POS で情報コードを管理する方法のすべての側面。 詳細については、[情報コードおよび情報コード グループ](info-codes-retail.md)を参照してください。
 
 - **レシート番号**クイック タブ:
 

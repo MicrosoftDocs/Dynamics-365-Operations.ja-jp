@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: db265cb8b727b06385321b4b374cb1c6458db47c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 613d60b945cbce9eedd94c128d663f70c8e24dfb
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183180"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811694"
 ---
 # <a name="translation-memory-files"></a>翻訳メモリ ファイル
 
@@ -41,7 +41,7 @@ XLIFF ファイルにはソース ファイルから抽出された一連の翻�
 
 次の図は、多言語エディターで同じTU (青色で強調表示) を示しています。
 
-![多言語エディタでの XLIFF 翻訳単位](./media/dts-editor3.png "多言語エディタでの XLIFF 翻訳単位")
+![多言語エディターでのXLIFF翻訳単位](./media/dts-editor3.png "多言語エディターでのXLIFF翻訳単位")
 
 ## <a name="state"></a>行政単位 (区画)
 XLIFF ファイルの各移動は、状態値に関連付けられます。 DTS が各翻訳に割り当てる状態値は、文字列の変換方法によって異なります。 アライン ツールを使用して XLIFF TM が作成されると、アラインされた TU は以前の製品バージョンなどの既知の適正な翻訳から生成されるので、すべての翻訳に **変換済み** のマークが付きます。
@@ -93,7 +93,7 @@ TM として使用する前に、整合された XLIFF ファイルを確認し�
 
 多言語エディタで XLIFF ファイルを開くと、次の図のようになります。
 
-![多言語エディタでの XLIFF ファイル](./media/dts-editor1.png "多言語エディタでの XLIFF ファイル")
+![多言語エディターでのXLIFF翻訳単位](./media/dts-editor1.png "多言語エディターでのXLIFF翻訳単位")
 
 各行の冒頭に円があることに確認します。 円の色は翻訳の状態を示します。 DTS は、文字列の出所に応じて、これらの状態を自動的に割り当てます。
 
@@ -106,8 +106,8 @@ TM として使用する前に、整合された XLIFF ファイルを確認し�
 
 翻訳を確認するには、**要確認** 状態にある文字列のみを表示するフィルターを適用します。
 
-![要レビュー状態での文字列](./media/dts-editor2.png "要レビュー状態でのファイル")
+![要レビュー状態での文字列](./media/dts-editor2.png "要レビュー状態での文字列")
 
 確認された文字列は **翻訳済み**、**最終**、または**サインオフ**とマークされ、再利用することができます。 **要レビュー**としてマークされている翻訳はリサイクルには含まれません。
 
-XLIFF TM を編集した後、DTS はリフレッシュされた出力ファイルをソース形式で再生成します。 ファイルを再生成する方法の詳細については、[出力ファイルの再生成](./use-translation-service.md#regenerate-output-files) を参照してください。
+XLIFF TM を編集した後、DTS はリフレッシュされた出力ファイルをソース形式で再生成します。 ファイルを再生成する方法の詳細については、[ユーザー インターフェイス ファイルの翻訳](./use-translation-service.md#regenerate-output-files) を参照してください。

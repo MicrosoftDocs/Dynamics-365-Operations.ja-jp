@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: aa503f2ce3ae8ff6b221ea1d26a1c62d0ba37646
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653421"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814907"
 ---
 # <a name="warehouse-configuration-overview"></a>倉庫のコンフィギュレーションの概要
 
@@ -31,7 +31,8 @@ ms.locfileid: "2653421"
 
 この記事は、倉庫をコンフィギュレーションする方法について説明します。 これには、倉庫レイアウトおよび倉庫プロセスを有効にする方法に関する情報が含まれます。
 
-**メモ:** この記事は、**倉庫管理**モジュールの機能が対象です (詳細な倉庫保管)。 **在庫管理**モジュールの倉庫機能は対象外です。
+> [!NOTE]
+> この記事は、**倉庫管理**モジュールの機能が対象です (詳細な倉庫保管)。 **在庫管理**モジュールの倉庫機能は対象外です。
 
 ## <a name="warehouse-layout"></a>倉庫レイアウト
 Supply Chain Management の倉庫管理システムは、最適な倉庫効率を達成できるよう、変化するニーズを満たす倉庫レイアウトを定義する柔軟な方法を提供します。
@@ -111,10 +112,10 @@ Supply Chain Management で倉庫管理を使用するには、倉庫を作成�
 
 場所ディレクティブの明細行と関連付けられるアクションの定義をすばやく、容易にするには、事前に定義された戦略の 1 つを使用します。 たとえば、**作業を受け取らない空の場所** 戦略を使用して倉庫の空いている場所を検索したり、出荷販売ピッキングに対して **FEFO バッチ引当** 戦略を使用できます。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[WMS が有効な倉庫での位置の構成 (タスク ガイド)](tasks/configure-locations-wms-enabled-warehouse.md)
+[WMS に対応した倉庫の場所のコンフィギュレーション](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5182bc14a07a0972602d2ff55a1f39934acf73a6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 11edbebcbd1e0b04a8d8417ed5e6d333eb83234f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191812"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811954"
 ---
 # <a name="deploy-and-use-an-environment-that-supports-continuous-build-and-test-automation"></a>継続的なビルドとテストの自動化をサポートする環境を配置して使用する
 
@@ -64,9 +64,7 @@ Azure DevOps をセットアップするには、次の手順に従います。
 1. [個人用アクセス トークンの作成](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops). トークンはすべての LCS バックグラウンド アクションに使用されます。 これらのアクションにはアップグレードと配置が含まれます。 ユーザーが LCS からアクションを起動すると、LCS はこれらのユーザーが Azure DevOps に追加されることを期待しています。 ユーザーは彼らのために Azure DevOps への LCS アクセスを認可する必要があります。
 1. [LCS の構成](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops)。
 
-LCS の Azure DevOps へのアクセスを承認するまで、アクション センターに次のメッセージが表示されます。
-
-![LCS エラーでの VSTS 設定](./media/vsts-setup-in-lcs_may27.jpg)
+LCS の Azure DevOps へのアクセスを承認するまで、「設定が完了していません」 というメッセージが表示されます。
 
 ### <a name="suspend-current-builds"></a>現在のビルドの中断
 
@@ -86,13 +84,11 @@ LCS では、開発およびビルド / テスト環境を展開するオプシ�
    > [!NOTE]
    > 現在のところ、VSTF をソース コントロールとしてサポートしていますが、Git をサポートしていません。 
 
-[![VSTS](./media/vsts-1024x792.jpg)](./media/vsts.jpg)
-
 ### <a name="check-in-migrated-or-new-module-code-into-azure-devops"></a>Azure DevOps に移行または新しいモジュールコードをチェックイン
 
 コードの移行プロセスまたは開発活動の一環として、モデル ソース ファイルと関連するテスト モデル ソース ファイルを Azure DevOps にチェックインすることをお勧めします。 LCS 移行サービスを使用してコードを移行した場合、自動的に行われます。 Azure DevOps にコードをチェックインせずに直接チェックインする場合は、Azure DevOps フォルダ構造の特定のガイドラインに従う必要があります。 これは、適切なビルド定義の設定に役立ちます。 すべてのモジュールをルート フォルダー**メタデータ**に追加する必要があります。 各モジュールにはフォルダーが 2 つ必要です。 1 つのフォルダーには、すべてのモデルが含まれています。 他のフォルダーには、そのモジュールの記述子 XML が含まれている必要があります。 
 
-![VSTS フォルダー構造](media/build-trunk-main-metadata.png)
+![Azure DevOps フォルダー構造](media/build-trunk-main-metadata.png)
 
 ### <a name="deploy-a-build-environment"></a>ビルド環境の展開
 
@@ -105,15 +101,14 @@ LCS では、開発およびビルド / テスト環境を展開するオプシ�
    2.  ビルド エージェント プール: ビルド マシンの配置に使用するビルド エージェント プール名を指定します。 Azure DevOps に少なくとも 1 つのエージェント プールが含まれていることを確認します。 既定では、既定のプールがあります。 既定のプールを削除した場合は、ビルド配置は失敗します。
    3.  分岐名: ビルド VM の既定のソース コード同期場所になる Azure DevOps ソース コード ブランチを指定します。 既定の分岐は、「メイン」です。
 
-   ![設定](media/settings.jpg)
-
+   
 ## <a name="test-integration-with-the-build"></a>ビルドとのテスト統合
 テストと検証のためのビルド プロセスの一部としてテストを統合するには、2 つの方法があります。
 
 -   単位とコンポーネントのレベル テストに基づく SysTest フレームワーク。
 -   自動化されたテストの実行の XML を記録するタスク レコーダーから、コードを生成します。
 
-これら 2 つの方法の詳細については、[テストと検証](testing-validation.md) を参照してください。テストおよび検証の戦略についてはこの記事を確認してください。
+これらの2つの方法の詳細については、 [テストと検証](testing-validation.md) の記事で説明しています。 テストおよび検証の手順については、この資料を参照してください。
 
 ## <a name="use-the-build-vm-environment"></a>ビルド VM 環境の使用
 LCS を通じて開発者トポロジにビルド VM が配置されると、それは事前に構成され、ビルドを開始する準備ができます。 Visual Studio IDE または Azure DevOps インターフェイスから、いつでも既定の構成を変更することができます。 ビルド VM では、簡単なビルドのセットアップのために、モジュール ソース コードがビルド コンピューターに同期されます。 ビルド マシンは、ビルド エージェント、ビルド コントローラー、ビルド プロセス テンプレート、ビルド定義のデフォルト設定で自動構成されています。 ビルドに成功したら、ビルド定義と統合されているテストが実行されます。
@@ -122,35 +117,35 @@ LCS を通じて開発者トポロジにビルド VM が配置されると、そ
 
 ビルド VM には、TFS 2015 の一部としてリリースされた vNext ビルド エージェントが含まれています。 ビルド VM を配置するときは、既定では Azure DevOps プロジェクトと接続して同期するようにビルド エージェントが構成されます。 ビルド VM 構成の一部として、以下に示すようにデフォルトのビルド定義も作成および構成されます。 
 
-[![Build1](./media/build1-1024x488.jpg)](./media/build1.jpg) 
+[![既定のビルド定義](./media/build1-1024x488.jpg)](./media/build1.jpg) 
 
 既定のビルド定義には、以下で説明するように、特定の操作を実行する複数のタスクが含まれています。
 
 1.  ビルドに渡す事前定義済の変数パラメータをコンフィギュレーションします。 ビルド実行ごとにクリーンなデータベースを設定するには、**DatabaseBackupToRestore**変数のデータベース バックアップ ファイルの名前を指定します。 パッケージ フォルダーは、すべてのビルド時にクリーン パッケージ フォルダーのコピーで復元されます。
 
-    [![build2](./media/build2-1024x678.jpg)](./media/build2.jpg)
+    [![定義済み変数ウィンドウ一覧](./media/build2-1024x678.jpg)](./media/build2.jpg)
 
 2.  以下のように、「トランク/メイン」ブランチにあるすべてのモジュールを検出して構築するためにソリューションをビルドします。
 
-    [![Build3](./media/build3-1024x456.jpg)](./media/build3.jpg)
+    [![ソリューション ウィンドウ を ビルド します。](./media/build3-1024x456.jpg)](./media/build3.jpg)
 
 3.  「レポートの展開」タスクを使用して、レポートを生成し、ビルド VM に展開します。
 4.  「データベース同期」タスクを使用して、データベースをビルド VM 上のローカル SQL に同期させます。
 5.  ビルドが成功した後、サンドボックス/ステージング環境を更新するために使用できる配置可能なパッケージを作成します。
 
-    [![Build4](./media/build4-1024x462.jpg)](./media/build4.jpg)
+    [![パッケージ ウィンドウ を生成します](./media/build4-1024x462.jpg)](./media/build4.jpg)
 
 6.  「ビルド コンポーネントのコピーと発行」は、配置可能パッケージを Azure DevOps コンポーネントの場所にアップロードします。
 
-    [![build5](./media/build5-1024x439.jpg)](./media/build5.jpg)
+    [![成果物ウィンドウを公開する](./media/build5-1024x439.jpg)](./media/build5.jpg)
 
 7.  テストの実行については、3 つの既定のタスク「テスト設定」、「テストの実行」、および「テストの終了」があります。
 
-    [![build7](./media/build7-1024x457.jpg)](./media/build7.jpg)
+    [![テスト実行ウィンドウ](./media/build7-1024x457.jpg)](./media/build7.jpg)
 
 8.  既定のビルドでは毎日午後 5 時に開始される予定です。 チームの必要性に従って、各チェックインでトリガーを「継続」に変更することができます。
 
-    [![build8](./media/build8-1024x491.jpg)](./media/build8.jpg)
+    [![既定のビルド スケジュール](./media/build8-1024x491.jpg)](./media/build8.jpg)
 
 既定の構成に変更を加えて、そのビルド VM がビルドをトリガーできるようにすることができます。
 
@@ -164,14 +159,12 @@ LCS を通じて開発者トポロジにビルド VM が配置されると、そ
 5.  左側のパネルで、既定のビルド定義インスタンスを選択します。
 6.  右クリックし、**キュー ビルド** を選択して Azure DevOps ソース管理に既にチェックインしているモジュールおよびテスト モジュールのビルドをトリガーします。
 
-[![image045](./media/image045.png)](./media/image045.png) 
-
 次の例に示すように、ビルドの成功または失敗が表示されます。 すべてのビルドを表示します。 
 
-[![build9](./media/build9-1024x443.jpg)](./media/build9.jpg) 
+[![ビルドの成功または失敗を表示](./media/build9-1024x443.jpg)](./media/build9.jpg) 
 
 特定の完了したビルドとビューの成功/失敗の詳細を選択します。 
 
-[![build10](./media/build10-1024x446.jpg)](./media/build10.jpg) テストリンクをクリックして、テスト実行の失敗を視覚化します。 
+[![ビルドの成功または失敗の詳細を表示する](./media/build10-1024x446.jpg)](./media/build10.jpg) テストのリンクをクリックすると、テストの実行の失敗が表示されます。 
 
-[![build11](./media/build11-1024x455.jpg)](./media/build11.jpg)
+[![テスト実行エラーの可視化](./media/build11-1024x455.jpg)](./media/build11.jpg)

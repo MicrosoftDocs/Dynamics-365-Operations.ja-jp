@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce6ce9c3c08a165ca19eb8d83643fd87b970f1ca
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658739"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772240"
 ---
 # <a name="accounts-payable-home-page"></a>買掛金勘定ホーム ページ
 
@@ -41,7 +41,7 @@ ms.locfileid: "2658739"
 
 仕入先グループ、仕入先、転記プロファイル、各種の支払オプションのほか、仕入先、請求金額、出荷と出荷先、支払手形、他のタイプの買掛金勘定情報に関するパラメーターを設定します。 
 
-[買掛金勘定のコンフィギュレーション](accounts-payable-overview.md)
+[買掛金勘定のコンフィギュレーションの概要](accounts-payable-overview.md)
 
 [仕入先請求書の勘定配布と補助元帳仕訳](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
@@ -51,7 +51,7 @@ ms.locfileid: "2658739"
 
 買掛金勘定を使用して、請求書および仕入先への支出を追跡します。
 
-[買掛金勘定の請求書照合](accounts-payable-invoice-matching.md)
+[買掛金勘定の請求書照合の概要](accounts-payable-invoice-matching.md)
 
 [仕入先転記プロファイル](vendor-posting-profiles.md)
 
@@ -61,7 +61,7 @@ ms.locfileid: "2658739"
 
 [請求書照合と会社間発注書](invoice-matching-intercompany-purchase-orders.md)
 
-[請求書の合計価格の照合における差異の解決](resolve-invoice-totals-invoice-matching-discrepancies.md)
+[請求書の合計価格の照合における差異の解決の概要](resolve-invoice-totals-invoice-matching-discrepancies.md)
 
 [仕入先請求仕訳帳および請求書承認仕訳帳の既定の相手勘定](default-offset-accounts-vendor-invoice-journals.md)
 
@@ -93,11 +93,11 @@ ms.locfileid: "2658739"
 
 [現金割引期間外の現金割引の適用](take-cash-discount-outside-cash-discount-timeframe.md)
 
-[仕入先小切手の電子申告](electronic-reporting-sample-vendor-checks.md)
+[仕入先小切手の電子申告サンプル](electronic-reporting-sample-vendor-checks.md)
 
 [仕入先支払の取消](reverse-vendor-payment.md)
 
-[前払請求書と前払の概要](prepayments-invoices-vs-prepayments.md)
+[前払請求書と前払](prepayments-invoices-vs-prepayments.md)
 
 [買掛金勘定の集中支払](centralized-payments-accounts-payable.md)
 
@@ -107,13 +107,13 @@ ms.locfileid: "2658739"
 
 [決済のコンフィギュレーション](../cash-bank-management/configure-settlement.md)
 
-[割引日よりも前の一部の仕入先支払の決済](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+[割引日よりも前に一部仕入先支払を決済し割引日後に最終支払](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
 [仕入先訂正票で割引がある一部の仕入先支払の決済](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 
 [複数の割引期間を持つ一部の仕入先支払の決済](settle-partial-vendor-payment-multiple-discount-periods.md)
 
-[割引前の一部の仕入先支払または最終支払の決済](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+[一部の仕入先支払の決済、および割引日より前の全額最終支払](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 
 [複数の顧客または仕入先レコードを持つ単一伝票](single-voucher-multiple-customer-vendor-records.md)
 
@@ -123,7 +123,7 @@ ms.locfileid: "2658739"
 
 #### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
-予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース ノート](https://go.microsoft.com/fwlink/?linkid=2010158)を参照してください。 
+予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース プラン](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。 
 
 #### <a name="blogs"></a>ブログ
 

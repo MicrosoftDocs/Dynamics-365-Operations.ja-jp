@@ -3,7 +3,7 @@ title: オンプレミス配置のシステム要件
 description: このトピックでは、オンプレミス配置のシステム要件を一覧表示します。
 author: kfend
 manager: AnnBe
-ms.date: 09/12/2019
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: dbca1f66bdaf8bdb80e69c3793eb9b8813cfb8bf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 49cdd6bb1d3189ce216b53a0dca7ba2d91b224e9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191741"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812518"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 
@@ -212,7 +212,7 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
 </tbody>
 </table>
 
-\*SQL Server サイズは、ワークロードに大きく依存します。 詳細については、[オンプレミス環境のハードウェアのサイズ変更](hardware-sizing-on-premises-environments.md) を参照してください。 サンド ボックスと生産環境の 個別 SQL Server 機械を使用する必要があります。 ただし、すべてのサンド ボックス環境で、SQL Server を共有できます。
+\*SQL Server サイズは、ワークロードに大きく依存します。 詳細については、[オンプレミス環境のハードウェアのサイズ変更要件](hardware-sizing-on-premises-environments.md) を参照してください。 サンド ボックスと生産環境の 個別 SQL Server 機械を使用する必要があります。 ただし、すべてのサンド ボックス環境で、SQL Server を共有できます。
 
 ## <a name="storage"></a>保管
 
@@ -223,7 +223,7 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
     - オンライン トランザクション 処理 (OLTP) スループットに対して最適化された SAN
     - 高パフォーマンス直接接続ストレージ (DAS)
 
-- **SQL サーバーとデータの管理 IOPS** – データ管理と SQL Server の両方のストレージには、少なくとも 1 秒あたり 2,000 IOPS が必要です。 生産 IOPS はさまざまな要因に依存します。 詳細については、[オンプレミス環境のハードウェアのサイズ変更](hardware-sizing-on-premises-environments.md) を参照してください。
+- **SQL サーバーとデータの管理 IOPS** – データ管理と SQL Server の両方のストレージには、少なくとも 1 秒あたり 2,000 IOPS が必要です。 生産 IOPS はさまざまな要因に依存します。 詳細については、[オンプレミス環境のハードウェアのサイズ変更要件](hardware-sizing-on-premises-environments.md) を参照してください。
 - **VM IOPS** – 各 VM は少なくともt 100 書き込み IOPS が必要です。
 
 ## <a name="virtual-host-requirements"></a>仮想ホストの要件
@@ -292,7 +292,7 @@ Windows Server 2016 の Active Directory Federation Services (AD FS) は必要�
 
 次の Microsoft Office アプリケーションは、オンプレミス配置でサポートされています。
 
-- Microsoft Excel と Microsoft Word のアドインを実行するには、Windows 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合トラブルシューティング](../../dev-itpro/office-integration/office-integration-troubleshooting.md) を参照してください。
+- Microsoft Excel と Microsoft Word のアドインを実行するには、Windows 用の Microsoft Office 2016 (またはそれ以降) をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合に関するトラブルシューティング](../../dev-itpro/office-integration/office-integration-troubleshooting.md) を参照してください。
 - Excel にエクスポートまたはWord にエクスポート機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
 
 ## <a name="hardware-and-software-requirements-for-retail-components"></a>小売コンポーネントのハードウェアおよびソフトウェア要件

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78fc5a86b9e827b13a71d173e551d7041fa74c0d
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: ba56cd8d1ae2f798c3fb2a67a4eb5e6b4d388e95
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578269"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812037"
 ---
 # <a name="office-integration-overview"></a>オフィス統合の概要
 
@@ -122,7 +122,7 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Office 統合ラボとチュートリアル](office-integration-tutorial.md)
+[Office 統合のチュートリアル](office-integration-tutorial.md)
 
 [Office 統合のトラブルシューティング](office-integration-troubleshooting.md)
 

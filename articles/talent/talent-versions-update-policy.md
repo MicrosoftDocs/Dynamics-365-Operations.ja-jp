@@ -1,9 +1,9 @@
 ---
-title: Talent システム要件と更新ポリシー
-description: このトピックは、Dynamics 365 Talent の要件を一覧表示します。 同様に、その更新ポリシーについても説明します。
+title: Talent のシステム要件
+description: このトピックは、Dynamics 365 Talent の要件を一覧表示します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
+ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024163"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2818482"
 ---
-# <a name="talent-system-requirements-and-update-policy"></a>Talent システム要件と更新ポリシー
+# <a name="talent-system-requirements"></a>Talent のシステム要件
 
 [!include [banner](includes/banner.md)]
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Talent は、指定されたオペレーティング シ�
 > * ワークフロー エディターは ClickOnce アプリケーションとして起動されます。 Microsoft Edge と Internet Explorer (Microsoft Windows のサポートされているバージョン) のみが、ClickOnce アプリケーションをサポートします。 ワークフロー エディタ ClickOnce アプリケーションには、64 ビットの互換性のあるオペレーティング システムが必要です。
 > * PDF ファイルをプレビューするには、Windows 10 の Microsoft Edge (公開されている最新のバージョン)、もしくは Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン) などの最新のブラウザを使用することをお勧めします。
 >   ネットワーク要件
-> * Dynamics 365 Talent は、待機時間が 250 ～ 300 ミリ秒 (ms) 以下のネットワーク用に設計されています。 これは、ブラウザー クライアントから Talent をホストする Microsoft Azure データ センターまでの待機時間のことです。 [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test") でネットワーク待機時間をテストすることをお勧めします。
+> * Dynamics 365 Talent は、待機時間が 250 ～ 300 ミリ秒 (ms) 以下のネットワーク用に設計されています。 これは、ブラウザー クライアントから Talent をホストする Microsoft Azure データ センターまでの待機時間のことです。 [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test") にてネットワークの待機時間をテストすることをお勧めします。
 > * Talent に対する帯域幅の要件は、シナリオによって異なります。 最も一般的なシナリオでは、毎秒 50 キロバイト (KBps) 以上の帯域幅が必要です。
 > 
 > [!WARNING]
@@ -54,7 +54,7 @@ Microsoft Dynamics 365 Talent は、指定されたオペレーティング シ�
 
 ## <a name="supported-microsoft-office-applications"></a>サポートされる Microsoft Office アプリケーション
 
-* Microsoft Excel と Word のアドインを実行するには、Windows または Mac 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要件の詳細については、[Office 統合トラブルシューティング](../dev-itpro/office-integration/office-integration-troubleshooting.md "Office 統合トラブルシューティング") を参照してください。
+* Microsoft Excel と Word のアドインを実行するには、Windows または Mac 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要件の詳細については、[Office 統合トラブルシューティング](../dev-itpro/office-integration/office-integration-troubleshooting.md "Office 統合のトラブルシューティング") を参照してください。
 * Excel にエクスポートまたはWord にエクスポート機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
 
 ## <a name="regional-availability-languages-and-localization"></a>地域の使用可用性、言語、およびローカライズ
@@ -66,8 +66,3 @@ Talent がサポートする国、地域、および言語に関する PDF フ�
 
 国や地域固有のカスタマイズの作成、または現在 Microsoft にサポートされていない国や地域用のソリューションの作成に関心のある開発者は、[グローバリゼーション](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region) を参照してください。
 
-## <a name="update-policy"></a>更新ポリシー
-
-Talent はクラウドの提供としてサービスされます。 Talent の更新は、Microsoft によって連続的かつ自動的に適用されます。
-
-更新プログラムは一定の調子でリリースされ、すべての環境で行われます。 Talent は、[Microsoft Support Lifecycle ポリシー](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle") に従ってサポートされています。ここでは、製品サポートの使用可能性における一貫した予測可能なガイドラインを提供します。

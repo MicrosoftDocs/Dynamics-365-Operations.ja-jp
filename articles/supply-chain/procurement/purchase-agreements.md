@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248936"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813365"
 ---
 # <a name="purchase-agreements"></a>購買契約
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 この記事は、購買契約書に関する情報を提供します。 購買契約とは、長期にわたって複数の発注書を使用して指定された数量または金額を購入することを組織に確約する契約です。 この確約と引き換えに、購買担当者は特別価格と割引を受けます。 
 
@@ -80,6 +81,9 @@ ms.locfileid: "2248936"
 発注書を再作成しているときにのみ購買契約書を選択できます。 発注書が作成された後に購買契約書を選択できません。  
 発注書が間接的に作成される場合には、Supply Chain Management が適切な購買契約書を自動的に検索するかどうかを制御できます。 たとえば、自動的に計画発注書を確定したり、販売注文に基づいて発注書を作成したりするときに、この制御を行う場合があります。
 
+## <a name="matching-policy-on-purchase-agreements"></a>購買契約書の照合ポリシー
+明細行照合ポリシーは、購買契約書のヘッダーで定義できます。 この明細行照合ポリシーは、**買掛金勘定パラメーター**ページの**照合ポリシーの上書きを許可**フィールド (**価格と数量の照合**クイック タブ上) が、**会社ポリシーよりも高い**に設定されている場合、買掛金勘定パラメーター明細行照合ポリシーを遵守します。 購買契約を参照するドキュメントでは、対応する品目、品目および仕入先、またはカテゴリ購入ポリシーで特に定義されていない限り、購買契約書ヘッダーで定義された明細行照合ポリシーを使用します。
+
 ## <a name="purchase-agreements-and-intercompany-trade"></a>購買契約書と会社間取引
 会社間取引関係は、異なる法人の仕入先勘定と顧客勘定の間で作成できます。 関係者の 1 つに販売注文または発注書が作成されると、会社間注文チェーンが作成されます。 注文チェーンでは、販売注文と発注書が適切な法人で作成されます。  
 
@@ -90,12 +94,12 @@ ms.locfileid: "2248936"
 ## <a name="financial-dimensions-on-purchase-agreements"></a>購買契約書の財務分析コード
 購買契約書のドキュメント ヘッダーまたは個々の明細行に財務分析コードをコピーできます。 契約ヘッダーまたは契約明細行にある分析コードを変更する場合、変更はリリースされた注文に影響はしませんが、すべての新しい注文に反映されます。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[購買契約の作成 (タスク ガイド)](tasks/create-purchase-agreement.md)
+[購買契約書の作成](tasks/create-purchase-agreement.md)
 
-[購買契約書からの購買リリース注文の作成 (タスク ガイド)](tasks/create-purchase-release-order-purchase-agreement.md)
+[購買契約書からの購買リリース注文の作成](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

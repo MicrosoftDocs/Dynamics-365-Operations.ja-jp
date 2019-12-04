@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b1825b425f2bb2dadb8a756ffa4a82bc6ca198c2
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: ba6f7c66f3f105c600e678280f745e64c311997d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627640"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811544"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations、Enterprise Edition (2017 7 月) の新機能および変更された機能
 
@@ -57,7 +57,7 @@ ms.locfileid: "2627640"
 - 主勘定の説明
 - 会計年度期間
 
-詳細については、[元帳予算 Power BI](../../dev-itpro/analytics/ledger-budgets-power-bi.md) を参照してください。
+詳細については、[実績対予算 Power BI コンテンツ](../../dev-itpro/analytics/ledger-budgets-power-bi.md)を参照してください。
 
 ### <a name="cfo-overview-workspace"></a>CFO の概要ワークスペース
 
@@ -69,7 +69,7 @@ CFO やアカウント マネージャーは、CFO 概要ワークスペース�
 
 **データ検証チェックリスト** ワークスペースを使用して、会社、エリア、人員に対してデータ検証プロセスの追跡ができます。 チェックリストは新規実装中、更新後、または移行後に使用できます。 **データ検証チェックリスト** ワークスペースのビューに応じて、データ検証プロジェクトに対するすべてのタスクおよび状態表示することができます。
 
-詳細については、「[データ検証ワークスペース](../../dev-itpro/user-interface/data-validation-workspace.md)」を参照してください。
+詳細については、[データ検証チェックリスト ワークスペース](../../dev-itpro/user-interface/data-validation-workspace.md)を参照してください。
 
 ### <a name="delete-a-main-account-and-dimension-value"></a>主勘定とディメンション値を削除する
 
@@ -190,7 +190,7 @@ CFO やアカウント マネージャーは、CFO 概要ワークスペース�
 
 ### <a name="financial-dimensions-in-power-bi"></a>Power BI の財務分析コード
 
-財務パフォーマンス コンテンツ パックの財務分析コードが、財務データの分析に使用できるようになりました。 詳細については、「[財務パフォーマンス Power BI](../../dev-itpro/analytics/financial-performance-power-bi-content-pack.md)」を参照してください。
+財務パフォーマンス コンテンツ パックの財務分析コードが、財務データの分析に使用できるようになりました。 詳細については、[財務パフォーマンス PowerBI.com ソリューション](../../dev-itpro/analytics/financial-performance-power-bi-content-pack.md)を参照してください。
 
 ### <a name="financial-report-generation"></a>財務諸表の生成
 
@@ -468,7 +468,7 @@ Finance and Operations により提供される柔軟性の高い総合的な分
 - 採用にかかる費用
 - 申請者のステータス
 
-詳細については、[Power BI コンテンツ](../../dev-itpro/analytics/power-bi-home-page.md) を参照してください。
+詳細については、[Power BI コンテンツのホーム ページ](../../dev-itpro/analytics/power-bi-home-page.md)を参照してください。
 
 ## <a name="cash-flow-forecasting-power-bi"></a>キャッシュ フローの予測 Power BI
 
@@ -545,7 +545,7 @@ Microsoft Power BI の購買先支出分析コンテンツ パックは購買部
 
 購買支出分析 Power BI コンテンツ パックは、Lifecycle Services (LCS) アセット ライブラリ経由で、Dynamics 365 for Finance and Operations の埋め込みレポートとして使用できます。
 
-詳細については、[Power BI の購買コンテンツ パック](../../dev-itpro/analytics/purchase-content-pack-for-power-bi.md) を参照してください。
+詳細については、[購買と支出の分析 Power BI コンテンツ](../../dev-itpro/analytics/purchase-content-pack-for-power-bi.md) を参照してください。
 
 ### <a name="purchasing-analysis-power-bi-content"></a>購買分析 Power BI コンテンツ
 
@@ -576,7 +576,7 @@ Power BI に組み込まれた包括的なレポート作成およびダッシ�
 
 販売と収益性パフォーマンスの Power BI コンテンツ パックは、Lifecycle Services (LCS) アセット ライブラリ経由で、Dynamics 365 for Finance and Operations の埋め込みレポートとして使用できます。
 
-詳細については、[販売と収益性パフォーマンス Power BI コンテンツ パック](../../dev-itpro/analytics/sales-profitability-performance-content-pack.md) を参照してください。
+詳細については、[販売と収益性パフォーマンス Power BI コンテンツ](../../dev-itpro/analytics/sales-profitability-performance-content-pack.md) を参照してください。
 
 ### <a name="vendor-payment-analysis-power-bi"></a>仕入先支払解析 Power BI
 
@@ -694,17 +694,17 @@ Finance and Operations では、最新の状態にして継続的なイノベー
 
 詳細については、次のトピックを参照してください。
 
-- [AX 2012 から Dynamics 365 for Finance and Operations へ更新](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)
-- [分析: アップグレード アナライザーを使用した移行作業の計画](../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md)
-- [分析: コードのアップグレードの工数見積](../../dev-itpro/migration-upgrade/analyze-code-upgrade.md)
-- [分析: サンドボックス環境の配置](../../dev-itpro/migration-upgrade/analysis-sandbox.md)
-- [アップグレード: 開発環境でのデータ アップグレード](../../dev-itpro/migration-upgrade/prepare-data-upgrade.md)
-- [更新: AX 2012 データ更新タスク](../../dev-itpro/migration-upgrade/data-upgrade-2012.md)
-- [アップグレード: サンドボックス環境でのデータ アップグレード](../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md)
-- [検証: アップグレード プロセス後に完了するタスク](../../dev-itpro/migration-upgrade/app-validation-process.md)
-- [検証: 切替テスト](../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md)
-- [検証: 機能テスト](../../dev-itpro/migration-upgrade/upgrade-functional-validation.md)
-- [検証: Go-Live の準備](../../dev-itpro/migration-upgrade/upgrade-go-live-prep.md)
+- [AX 2012 から Finance and Operations へのアップグレード](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)
+- [AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画](../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md)
+- [AX 2012 からのアップグレード - コードのアップグレード サービスを使用した工数見積](../../dev-itpro/migration-upgrade/analyze-code-upgrade.md)
+- [AX 2012 からのアップグレード: 分析のためのデモ環境の展開](../../dev-itpro/migration-upgrade/analysis-sandbox.md)
+- [AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト](../../dev-itpro/migration-upgrade/prepare-data-upgrade.md)
+- [AX 2012 からのアップグレード - 開発環境でのデータ アップグレード](../../dev-itpro/migration-upgrade/data-upgrade-2012.md)
+- [AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード](../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md)
+- [AX 2012 からのアップグレード - アップグレード後のタスク](../../dev-itpro/migration-upgrade/app-validation-process.md)
+- [AX 2012 からのアップグレード - 切替テスト (切替モック)](../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md)
+- [AX 2012 からのアップグレード - 機能テスト合格](../../dev-itpro/migration-upgrade/upgrade-functional-validation.md)
+- [AX 2012 からのアップグレード - Go-Live の準備](../../dev-itpro/migration-upgrade/upgrade-go-live-prep.md)
 
 ## <a name="project-management--accounting"></a>プロジェクト管理 \| 会計
 
@@ -952,7 +952,7 @@ Dynamics 365 for Finance and Operations では、クラスター ピッキング
 
 **Common Data Service の機能を使用してデータへ簡単にアクセス**
 
-このソリューションは Azure Public Cloud の力を活用し、組み合わせたデータは Common Data Service を介して利用可能になります。 これにより、ビジネス ユーザーは、Power Apps、Power BI を使用して統一された Sales and Operations データにアクセスし、視覚化し、共有し、変更したり、さまざまなビジネス プロセスにあらかじめ定義されたテンプレートを使用してフローを使用してワークフローの自動化を作成できます。 これにより、Power BI ダッシュボードを使用すると、2 つのシステム間でビジネス プロセス情報をより正確に把握できるようになります。
+このソリューションは Azure Public Cloud の力を活用し、組み合わせたデータは Common Data Service を介して利用可能になります。 これにより、ビジネス ユーザーは、Power Apps、Power Apps、Power BI を使用して統一された Sales and Operations データにアクセスし、視覚化し、共有し、変更したり、さまざまなビジネス プロセスにあらかじめ定義されたテンプレートを使用してフローを使用してワークフローの自動化を作成できます。 これにより、Power BI ダッシュボードを使用すると、2 つのシステム間でビジネス プロセス情報をより正確に把握できるようになります。
 
 **迅速な実装**
 

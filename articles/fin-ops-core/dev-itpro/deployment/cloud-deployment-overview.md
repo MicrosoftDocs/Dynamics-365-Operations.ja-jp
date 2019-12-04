@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: f9c84950c788dfa4c60cb754d013f9f93ee5909c
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: f152d0f5dd6d65d69992db278f19997e555a1875
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536932"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770963"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
 [!include [banner](../includes/banner.md)]
  
-Finance and Operations アプリをクラウドに展開するために Microsoft と共に作業するには、展開先の環境およびサブスクリプションについて、だれがどのタスクを実行することができるのか、また管理する必要があるデータおよびカスタマイズについて理解している必要があります。 配置と実装の高速化に役立つ Full Microsoft FastTrack for Dynamics 365 に登録することをお勧めします。このプログラムは、より迅速なビジネス価値の実現を支援するトレーニングとコンサルティングを提供します。 詳細については、[Microsoft FastTrack for Dynamics 365 の概要](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md) を参照してください。 代わりに Essentials FastTrack プログラムの使用を選択すると、実装プロジェクトの管理に役立つ Lifecycle Services (LCS) の実装プロジェクト方法を使用します。 
+Finance and Operations アプリをクラウドに展開するために Microsoft と共に作業するには、展開先の環境およびサブスクリプションについて、だれがどのタスクを実行することができるのか、また管理する必要があるデータおよびカスタマイズについて理解している必要があります。 配置と実装の高速化に役立つ Full Microsoft FastTrack for Dynamics 365 に登録することをお勧めします。このプログラムは、より迅速なビジネス価値の実現を支援するトレーニングとコンサルティングを提供します。 詳細については、 [Microsoft FastTrack](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md) を参照してください。 代わりに Essentials FastTrack プログラムの使用を選択すると、実装プロジェクトの管理に役立つ Lifecycle Services (LCS) の実装プロジェクト方法を使用します。 
 
 ## <a name="customer-lifecycle-subscriptions-and-deployment-topologies"></a>顧客のライフ サイクル、サブスクリプション、および展開のトポロジ
 Microsoft は、すべての顧客がすべてのクラウド配置に対して次と類似するライフサイクルに従うため、各フェーズで別の環境トポロジが必要になると想定しています。 
@@ -104,7 +104,7 @@ Windows Remoting (WinRM) はすべての環境で無効です。 Azure ポータ
 > WinRM を有効にするための例外は、Microsoft が管理する環境では許可されません。 
 
 ## <a name="availability"></a>在庫状態
-Finance and Operations アプリの保証稼働時間は 99.9％ です。 計画的なダウンタイムは月 1 回発生し、8 時間以内に終了します。 ダウンタイム中に完了した作業は必ずしも 8 時間かかるとは限らないため、お客様の環境がダウンすると予想される時間を常にお知らせします。 詳細については、[サポート オプション](../lifecycle-services/lcs-support.md) を参照してください。
+Finance and Operations アプリの保証稼働時間は 99.9％ です。 計画的なダウンタイムは月 1 回発生し、8 時間以内に終了します。 ダウンタイム中に完了した作業は必ずしも 8 時間かかるとは限らないため、お客様の環境がダウンすると予想される時間を常にお知らせします。 詳細については、 [Finance and Operations アプリ または Lifecycle Services (LCS) のサポート情報ー](../lifecycle-services/lcs-support.md) を参照してください。
 
 ### <a name="high-availability-features"></a>高可用性機能
 サービスの可用性を確保するため、すべての運用環境はデフォルトの Azure 高可用性 (HA) 機能を使用して保護されています。 HA 機能はデータ センター内の単一のノードの失敗により引き起こされるダウンタイムを回避する方法を提供し、DR 機能はデータ センター全体に広く影響を及ぼす機能停止を防止します。 単一障害点イベントを防止するために、Azure 使用可能性セットが使用されます。 Azure 可用性セットの詳細については、[Windows VM のAzure 可用性セット ガイドライン](/azure/virtual-machines/windows/infrastructure-availability-sets-guidelines) を参照してください。
@@ -129,13 +129,13 @@ Dynamics Lifecycle Services (LCS) を使用して、他の Microsoft Azure デ�
 
 ### <a name="how-do-i-access-a-development-instance"></a>開発インスタンスにどのようにアクセスしますか。
 
-開発インスタンスへのアクセス、オンプレミス開発 VM の構成、および開発者と管理者の構成設定を見つける方法については、[インスタンスへのアクセス](../dev-tools/access-instances.md)をご覧ください。
+開発インスタンスへのアクセス、オンプレミス開発 VM の構成、および開発者と管理者の構成設定を見つける方法については、 [開発環境の展開とアクセス](../dev-tools/access-instances.md) を参照してください。
 
 ### <a name="how-do-i-deploy-a-demo-environment"></a>デモ環境をどのように展開しますか
 デモ環境には、Microsoft のデモ データのみが含まれています。 デモ環境を使用して既定のフィーチャーと機能を参照することができます。 詳細については、「[デモ環境の配置](deploy-demo-environment.md)」を参照してください。
 
 ### <a name="how-do-i-move-my-customizations-between-environments"></a>環境間でカスタマイズを移動するにはどうすればよいですか。
-カスタマイズを開発環境からサンドボックスまたは実稼働環境に移行するには、[[ランタイム環境に適用するためにモデルの展開可能パッケージを作成する](../deployment/create-apply-deployable-package.md)] を参照してください。
+カスタマイズを開発からサンドボックスまたは実稼動環境に移行する方法については、 [配置可能なモデルのパッケージの作成](../deployment/create-apply-deployable-package.md) を参照してください。
 
 ### <a name="can-i-request-a-copy-of-my-production-database"></a>生産データベースのコピーを要求できますか。
 顧客は、2 層サンド ボックス環境にインストールされている、生産データベースのコピーを要求できます。 この要求は DSE によって完了されます。

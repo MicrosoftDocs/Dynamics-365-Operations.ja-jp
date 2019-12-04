@@ -3,7 +3,7 @@ title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 11/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c615c3cd9c70090b05b212e659e34484769d4a75
-ms.sourcegitcommit: aca7527330e0a6011c42e07c7e50ec309dc953a6
+ms.openlocfilehash: 14651bbaaf761afdbd17ddb8a89cb6ae6845b119
+ms.sourcegitcommit: 9267608347c9781fb4ba70f1384ca24da69c716d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "2567111"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "2810017"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド)
 
@@ -126,6 +126,10 @@ Office ストアへの戻しが必要な場合、標準値は次のとおりで�
 ### <a name="what-is-the-cell-limit-for-the-excel-add-in"></a>Excel アドインのセル制限は何ですか。
 
 既定の Excel アドインのセル制限は、Excel アドインが適度に高速なマシン上で処理できる上限の約半分になります。 マシンの速度は制限です。 問題が発生した場合は、セル制限を小さくし、そして / または、フィルターを調整してデータ セットを小さくする必要があります。 一般的な回避策として、フィルターを使用してデータを一度にもっと小さく管理することができます。
+
+### <a name="how-do-i-make-an-entity-available-in-the-excel-add-in-andor-as-an-open-in-excel-option"></a>エンティティを Excel アドインまたは Excel で開くオプションとして使用できるようにするにはどうすればよいですか?
+
+エンティティが "IsPublic = Yes" としてマークされており、固有の PublicEntityName と PublicCollectionName の値がある場合は、ODataサービス経由で使用できるようになります。 (できればGoogle Chromeで) 環境の $metadata フィード を調べることによって、同じ PublicEntityName と PublicCollectionName の値を持つ既存のエンティティがないことを確認します: https://*SomeFullEnvironmentURL*.dynamics.com/data/$metadata
 
 ## <a name="troubleshooting-issues"></a>問題のトラブルシューティング
 

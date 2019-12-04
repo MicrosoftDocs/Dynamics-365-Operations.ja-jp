@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e5e795ca6f7831ecd3fa28be9782f0b287eea6e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eef77a5d81d12ec92eea86b1dd9902d9e3d80b33
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190008"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812366"
 ---
 # <a name="workflow-system-overview"></a>ワークフロー システムの概要
 
@@ -57,10 +57,10 @@ ms.locfileid: "2190008"
 
 ## <a name="workflow-content"></a>ワークフロー コンテンツ
 
-+ [ワークフロー アーキテクチャ](workflow-system-architecture.md)
++ [ワークフロー システムのアーキテクチャ](workflow-system-architecture.md)
 + [ワークフロー要素](workflow-elements.md)
-+ [ワークフロー アクション](workflow-actions.md)
-+ [ワークフローの作成](create-workflow.md)
++ [ワークフローの承認プロセスでのアクション](workflow-actions.md)
++ [ワークフローの作成の概要](create-workflow.md)
 + [ワークフロー プロパティのコンフィギュレーション](configure-workflow-properties.md)
 + [ワークフローでの手動タスクのコンフィギュレーション](configure-manual-task-workflow.md)
 + [ワークフローでの自動化タスクのコンフィギュレーション](configure-automated-task-workflow.md)
@@ -69,6 +69,6 @@ ms.locfileid: "2190008"
 + [ワークフローでの手動決定のコンフィギュレーション](configure-manual-decision-workflow.md)
 + [ワークフローでの条件付き意思決定のコンフィギュレーション](configure-conditional-decision-workflow.md)
 + [ワークフローでの並列活動のコンフィギュレーション](configure-parallel-activity-workflow.md)
-+ [ワークフローでの並列分岐コンフィギュレーション](configure-parallel-branch-workflow.md)
++ [ワークフロー内の並列分岐のコンフィギュレーション](configure-parallel-branch-workflow.md)
 + [品目ワークフローのコンフィギュレーション](configure-line-item-workflow.md)
-+ [ワークフローに関してよく寄せられる質問](workflow-FAQ.md)
++ [ワークフローに関するよく寄せられる質問](workflow-FAQ.md)

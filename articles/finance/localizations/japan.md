@@ -15,12 +15,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9928f53d89da98f184c508297ba9ae6cce354565
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 28c308a549004bc931ce6f3cf3dfad6c3cea90b6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175792"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773398"
 ---
 # <a name="japan-overview"></a>日本の概要
 
@@ -37,16 +37,15 @@ ms.locfileid: "2175792"
 -  [資産除去責務がある固定資産の取得](tasks/acquire-fixed-asset-asset-retirement-obligations.md)
 -  [資産除去債務見積の調整](tasks/adjustment-asset-retirement-obligation-estimate.md)
 -  [資産グループへの共有資産とのれんの帳簿価額の配賦](tasks/allocate-carrying-amount.md)
--  [固定資産の配賦ルールに関するよく寄せられる質問](apac-jpn-allocation-rules-fixed-assets.md)
 -  [帳簿の資産耐用年数期間中の減価償却方法の変更](tasks/change-depreciation-method-during-asset-life-book.md)
 -  [単一資産の資産耐用年数期間中の減価償却方法の変更](tasks/change-depreciation-method-during-asset-life-one-asset.md)
 -  [増加償却パラメーターおよび転記プロファイルのコンフィギュレーション](tasks/accelerated-depreciation-posting-profiles.md)
--  [割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション](tasks/consolidated-invoice-parameters-setup-accounts-payable.md)
+-  [月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定](tasks/consolidated-invoice-parameters-setup-accounts-payable.md)
 -  [資産除去責務の転記および市場割引率のための主勘定のコンフィギュレーション](tasks/configure-main-accounts-asset-retirement.md)
 -  [割増償却を使用する固定資産の作成](tasks/create-fixed-asset-additional-depreciation.md)
 -  [特別償却プロファイルのある固定資産の作成](tasks/create-fixed-asset-special-depreciation-profile.md)
+-  [加速減価償却プロファイルを作成し、帳簿に割り当てる](tasks/create-accelerated-depreciation-profile-assign-it-book.md)
 -  [増加償却ドキュメントの作成および使用状況データの入力](tasks/create-accelerated-depreciation-document-enter-usage-data.md)
--  [増加償却プロファイルの作成および帳簿への割り当て](tasks/create-accelerated-depreciation-profile-assign-it-book.md)
 -  [政府助成金の圧縮記帳ドキュメントの作成および割り当て](tasks/create-assign-reduction-document.md)
 -  [設備グループの作成および割り当て](tasks/create-assign-equipment-group.md)
 -  [認識テストの作成および確認](tasks/create-confirm-recognition-test.md)
@@ -54,16 +53,17 @@ ms.locfileid: "2175792"
 -  [均等償却を使用した一括比例配分減価償却資産の作成](tasks/create-lump-sum-depreciation-assets-equally-divided-method.md)
 -  [資産のアイドル期間の定義および減価償却プロセスの検証](tasks/define-asset-idle-period-validate-depreciation-process.md)
 -  [資産除去責務の支払利子の減価償却および見越計上](tasks/depreciate-accrue-interest-expense.md)
--  [圧縮記帳が転記されている固定資産の減価償却](tasks/depreciation-fixed-assets-reduction-entry-posted.md)
--  [減価償却 FAQ](apac-jpn-fixed-asset-depreciation.md)
+-  [圧縮記帳の転記が存在する固定資産の減価償却](tasks/depreciation-fixed-assets-reduction-entry-posted.md)
 -  [圧縮記帳のある固定資産の処分](tasks/dispose-fixed-asset-reduction-entry.md)
 -  [償却率表の入力および減価償却プロファイルへの関連付け](tasks/enter-depreciation-rate-schedule.md)
 -  [均等償却方法](apac-jpn-equally-divided-depreciation-method.md)
 -  [減価償却税申告のフォーム 26](tasks/jp-00027-form-26-depreciable-tax-declaration.md)
--  [消費税申告の生成](tasks/japan-consumption-tax-report.md)
--  [資産グループ (CGU) の減損会計](apac-jpn-impairment-accounting-cash-generating-unit.md)
--  [減損会計](apac-jpn-impairment-accounting-fixed-assets.md)
--  [資産除去責務関連トランザクションの照会](tasks/inquiries-asset-retirement-obligation.md)
+-  [固定資産配賦ルール](apac-jpn-allocation-rules-fixed-assets.md)
+-  [日本の固定資産減価償却のよく寄せられる質問](apac-jpn-fixed-asset-depreciation.md)
+-  [キャッシュ生成単位の固定資産減損会計](apac-jpn-impairment-accounting-cash-generating-unit.md)
+-  [日本消費税レポートの生成](tasks/japan-consumption-tax-report.md)
+-  [固定資産の減損会計](apac-jpn-impairment-accounting-fixed-assets.md)
+-  [資産除去責務に関連するトランザクションの照会](tasks/inquiries-asset-retirement-obligation.md)
 -  [損金の固定資産マスター データ ファイルの管理](tasks/maintain-fixed-asset-master-data-files-deductible-expenses.md)
 -  [個別資産の減損インジケーターの管理](tasks/maintain-impairment-indicators-individual-assets.md)
 -  [償却超過額/償却不足額の定期決済](tasks/periodic-settlement-over-under-depreciation.md)
@@ -74,11 +74,11 @@ ms.locfileid: "2175792"
 -  [資産グループの減損損失の提案と転記](tasks/propose-post-impairment-amount-cash-generating-unit.md)
 -  [特別償却の提案](tasks/propose-special-depreciation.md)
 -  [認識テストの実行と個別資産の減損損失の計算](tasks/run-recognition-test-calculate.md)
--  [資産除去債務 (ARO) の設定](apac-jpn-asset-retirement-obligation-fixed-assets.md)
+-  [日本の固定資産の資産償却責務を設定します。](apac-jpn-asset-retirement-obligation-fixed-assets.md)
 -  [資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力](tasks/set-up-asset-retirement-obligation.md)
 -  [月次締め請求書の設定](tasks/set-up-consolidated-invoices.md)
+-  [固定資産の圧縮記帳の設定](apac-jpn-reduction-entry-fixed-assets.md)
 -  [減損会計の共通パラメーターおよび転記プロファイルの設定](tasks/impairment-accounting.md)
--  [圧縮記帳の設定](apac-jpn-reduction-entry-fixed-assets.md)
 -  [固定資産の組み立て一覧の使用](tasks/use-assemble-list-fixed-asset.md)
 -  [固定資産の分解一覧の使用](tasks/use-disassemble-list-fixed-assets.md)
 
@@ -97,34 +97,33 @@ ms.locfileid: "2175792"
 -  [支払仕訳帳を使用した仕入先月次締め請求書の決済](tasks/settle-vendor-consolidated-invoices-payment-journal.md)
 -  [決済トランザクションを使用した仕入先月次締め請求書の決済](tasks/settle-vendor-consolidated-invoices-settle-transactions.md)
 -  [月次締め請求書の対象とする顧客および販売注文の設定](tasks/set-up-customer-sales-order-target-consolidated-invoice.md)
--  [月次締め請求書の対象とする仕入先マスターおよび発注書の設定](tasks/vendor-master-po.md)
+-  [月次締め請求書の対象にする仕入先マスターおよび発注書の設定](tasks/vendor-master-po.md)
 
-## <a name="payments"></a>支払利息
+## <a name="payments"></a>支払
 -  [JBA 支払ファイル形式の有効化](tasks/jba-payment-file-format.md)
--  [JBA 形式の EFT 支払ファイルの生成](tasks/eft-payment-file-jba-format.md)
 -  [支払手数料の生成および転記](tasks/post-payment-fee.md)
--  [JBA ファイル形式の顧客支払のインポート](tasks/import-customer-payment-jba-file-format.md)
+-  [JBA 形式で EFT 支払ファイルを生成](tasks/eft-payment-file-jba-format.md)
+-  [JBA のファイル形式の顧客支払のインポート](tasks/import-customer-payment-jba-file-format.md)
 -  [仕訳帳の支払手数料の照会](tasks/inquiries-payment-fee-journal.md)
 -  [受取手形の裏書による仕入先への支払](apac-jpn-endorse-bill-of-exchange.md)
 -  [顧客の受取手形の裏書による仕入先トランザクションの支払](tasks/pay-vendor-transaction.md)
 -  [裏書済受取手形の取消](tasks/reverse-endorsed-bill-exchange.md)
--  [顧客受取手形の裏書による日本の支払の設定](tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
--  [日本の支払手数料の設定](tasks/setup-payment-fee-japan.md)
 -  [裏書済受取手形の決済](tasks/settle-endorsed-bill-exchange.md)
+-  [顧客の為替手形の裏書きによって日本の支払を設定します](tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
+-  [日本の支払手数料の設定](tasks/setup-payment-fee-japan.md)
 
 
-
-## <a name="taxes"></a>税申告
+## <a name="taxes"></a>税金
 -  [損金の照会](tasks/inquiry-deductible-expenses.md)
--  [累進的源泉徴収税の計算](apac-jpn-progressive-withholding-tax-calculation.md)
--  [日本の消費税申告の設定](tasks/setup-japan-consumption-tax-report.md)
+-  [累進的源泉徴収税](apac-jpn-progressive-withholding-tax-calculation.md)
 -  [複数の転記階層の損金算入額のマスター データの設定](tasks/set-up-master-data-inclusion.md)
+-  [日本の消費税レポートの設定](tasks/setup-japan-consumption-tax-report.md)
 
 ## <a name="system-administration"></a>システム管理
 -  [郵便番号のインポート](apac-jpn-import-postal-codes.md) 
 
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 - [電子申告の概要](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)

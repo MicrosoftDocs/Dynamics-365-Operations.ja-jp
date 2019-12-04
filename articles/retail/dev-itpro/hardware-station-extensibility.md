@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e543b256cfcb6c4ed31a56c497d65d4dee403a24
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 6596579b374c4153db385457fee37860ef6d36ac
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833145"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812326"
 ---
 # <a name="hardware-station-extensibility"></a>Hardware Station 拡張性
 
@@ -43,7 +43,7 @@ Retail Hardware Station は、プリンター、キャッシュ ドロワー、�
 [![HWS-Shared](./media/hws-shared-300x224.png)](./media/hws-shared.png)
 
 ## <a name="retail-hardware-station-setup"></a>Retail Hardware Station の設定
-開始する前に、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](../retail-hardware-station-configuration-installation.md)の情報を使用してハードウェア ステーションをインストールし、ハードウェアがどのようなものでインストールがどのようにされているかを知ることができます。
+開始する前に、 [Retail ハードウェア ステーションのコンフィギュレーションとインストール](../retail-hardware-station-configuration-installation.md) の情報を使用してハードウェア ステーションをインストールし、ハードウェアがどのようなものでインストールがどのようにされているかを知ることができます。
 
 ## <a name="retail-hardware-station-architecture"></a>Retail Hardware Station アーキテクチャ
 ハードウェア ステーションは、ハードウェア ステーション アプリケーション プログラミング インターフェイス (API) 用の Web API を公開します。 新しいデバイス (たとえば、現金自動支払機) の新しいコントローラーを実装するか、または既存のデバイス タイプ (たとえば、新しいオーディオ ジャック磁気ストライプ リーダー (MSR) の実装) の既存のコント ローラーを上書きするかのいずれかによって、ハードウェア ステーションを拡張できます。

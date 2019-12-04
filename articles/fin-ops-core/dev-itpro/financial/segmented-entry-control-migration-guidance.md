@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ccdcbeef63afde1f1e8578d66fe40e69cbe16702
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a0a4bfb3a9c36641b36ba1961cb6536f79e1fee8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183300"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812106"
 ---
 # <a name="migration-guidance-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールに関する移行ガイダンス
 
@@ -30,17 +30,26 @@ ms.locfileid: "2183300"
 
 このトピックでは、セグメント化エントリ コントロールを Microsoft Dynamics AX 2012 のパターンから Microsoft Dynamics AX の新しいパターンに移行するプロセスについて説明します。
 
-新しい設計の目標は、コントロールの実装をカプセル化し、コントロールをサポートするクラスとやり取りするフォームを必要としないことです。 したがって、Microsoft Dynamics AX で、<em>すべてのフォームは、**セグメント化されたエントリ</em>* コントロール インスタンス<em>のアプリケーション プログラミング インターフェイス (API) とのみ対話する必要があります。それらは、コントローラー クラス (**LedgerDimensionAccountController</em>* や <strong>DimensionDynamicAccountController</strong> など) と直接対話してはなりません。 コントローラー上で以前に操作または呼び出された任意のプロパティは、コントロール上で呼び出される必要があります。 <strong>メモ :</strong>
+新しい設計の目標は、コントロールの実装をカプセル化し、コントロールをサポートするクラスとやり取りするフォームを必要としないことです。 したがって、Microsoft Dynamics AX で、<em> すべてのフォームは、**セグメント化されたエントリ** コントロール インスタンスのアプリケーション プログラミング インターフェイス (API) とのみ対話する必要があります。それらは、コントローラー クラス (**LedgerDimensionAccountController** や **DimensionDynamicAccountController** など)</em> と直接対話してはなりません。 コントローラー上で以前に操作または呼び出された任意のプロパティは、コントロール上で呼び出される必要があります。 
+
+**メモ :**
 
 -   一部の API は、コントローラーとコントロールで命名方法が違います。 次のテーブルにこれらの API の一覧を示します。
-    **コントローラー メソッド (旧)**
-    **コントロール メソッド (新)** parmDate parmControlDate parmFilterLedgerPostingType parmPostingType parmDimensionAccountStorageUsage parmDimensionAccountStorageUsageType
+
+    | コントローラ メソッド (旧) | コントロール メソッド (新) |
+    |-------------------------|--------------------|
+    | parmDate | parmControlDate | 
+    | parmFilterLedgerPostingType | parmPostingType| 
+    | parmDimensionAccountStorageUsage | parmDimensionAccountStorageUsageType | 
+    
 -   **例**
     -   **以前:** controller.parmDate(systemDateGet())
     -   **以後:** LedgerAccount.parmControlDate(systemDateGet());
 
-    この例では、**コントローラー** &gt; **LedgerDimensionAccountController** インスタンスと **LedgerAccount** &gt; 新しい**セグメント化エントリ** コントロールのインスタンス
--   コントロールやデータ フィールドでオーバーライドされたメソッドでは、コード アップグレード ルールが、コントローラーのメソッドの呼び出しを、特定のコントローラーを使用していた各コントロール インスタンスのメソッドの呼び出しに置き換えます。 **例**
+    この例では、**コントローラー** &gt; **LedgerDimensionAccountController** インスタンスと **LedgerAccount** &gt; 新規**セグメント化エントリ** コントロールのインスタンス
+-   コントロールやデータ フィールドでオーバーライドされたメソッドでは、コード アップグレード ルールが、コントローラーのメソッドの呼び出しを、特定のコントローラーを使用していた各コントロール インスタンスのメソッドの呼び出しに置き換えます。 
+
+-   **例**
     -   **以前:**
 
             Public void jumpRef()
@@ -62,103 +71,57 @@ ms.locfileid: "2183300"
 -   **parmTaxCode** が削除されました。 交換はありません。
 
 ## <a name="properties"></a>プロパティ
-**セグメント化エントリ**コントロールのカスタム プロパティは、**コントローラー**の下にあります。 次のスクリーン ショットは、例を示します。 [![111](./media/111.png)](./media/111.png) すべてのプロパティがすべての**コント ローラー**クラス タイプに適用されるわけではありません。 選択したコントローラー クラスに適用されないプロパティは無効になります。 次のテーブルは、それぞれのプロパティに関する詳細を示します。
+**セグメント化エントリ**コントロールのカスタム プロパティは、**コントローラー**の下にあります。 次のスクリーン ショットは、例を示します。 
 
-**プロパティ**
+[![111](./media/111.png)](./media/111.png) 
 
-**有効な値**
+すべてのプロパティがすべての **コントローラー** クラス タイプに適用されるわけではありません。 選択したコントローラー クラスに適用されないプロパティは無効になります。 次のテーブルは、それぞれのプロパティに関する詳細を示します。
 
-**用途**
+| プロパティ           | 有効な値      | 用途           |
+|-------------------------|--------------------|--------------------|
+| 勘定タイプ フィールド | データ ソースからのフィールド。 | 使用されるアカウントの種類を決定します。 通常、複数セグメントの勘定科目から、Cust、Vend、Bank、Project などの他のックアップ テーブルの単一セグメント値への仕訳入力に使用されます。 | 
+| コントローラー クラス | 6 つのコントローラー クラスのうちの 1 つです。 たとえば LedgerDimensionDefaultAccountController です。 | セグメント化されたエントリ コントロールの動作およびパターンを決定します。 このプロパティの詳細については以下で説明します。 | 
+| 財務勘定を含む | NoYes | 財務勘定である主勘定が有効であるかどうかを決定します。 | 
+| 勘定合計を含む | NoYes | タイプが "合計" の主勘定が有効であるかどうかを判断します。 | 
+| 既定の勘定です。 | TrueFalse | 動的アカウントで、アカウントが既定または完全アカウントであるべきかどうかを決定します。 | 
+| 主勘定セグメントのロック | NoYes | 主勘定セグメントがロックされているかどうかをコントロールします。 通常は仕訳帳や構成に基づく配分に使用されます。 | 
+| 転記タイプ | LedgerPostingType 列挙の値。 | 主勘定が検証され、そのアカウントで使用される転記タイプが許可されているかどうかを確認されます。 | 
+| 手動入力のブロック状態の検証 | NoYes | 分析コードの「手動入力のブロック」ステータスを優先するかどうかを決定します。 | 
 
-勘定タイプ フィールド
-
-データ ソースからのフィールド。
-
-使用されるアカウントの種類を決定します。 通常、複数セグメントの勘定科目から、Cust、Vend、Bank、Project などの他のックアップ テーブルの単一セグメント値への仕訳入力に使用されます。
-
-コントローラー クラス
-
-6 つのコントローラー クラスのうちの 1 つです。 たとえば LedgerDimensionDefaultAccountController。
-
-セグメント化されたエントリ コントロールの動作およびパターンを決定します。 このプロパティの詳細については以下で説明します。
-
-財務勘定を含む
-
-NoYes
-
-財務勘定である主勘定が有効であるかどうかを決定します。
-
-勘定合計を含む
-
-NoYes
-
-タイプが "合計" の主勘定が有効であるかどうかを判断します。
-
-既定の勘定です。
-
-TrueFalse
-
-動的アカウントで、アカウントが既定または完全アカウントであるべきかどうかを決定します。
-
-主勘定セグメントのロック
-
-NoYes
-
-主勘定セグメントがロックされているかどうかをコントロールします。 通常は仕訳帳や構成に基づく配分に使用されます。
-
-転記タイプ
-
-LedgerPostingType 列挙の値。
-
-主勘定が検証され、そのアカウントで使用される転記タイプが許可されているかどうかを確認されます。
-
-手動入力のブロック状態の検証
-
-NoYes
-
-分析コードの「手動入力のブロック」ステータスを優先するかどうかを決定します。
 
 ## <a name="controller-class-property"></a>コントローラー クラス プロパティ
 次のテーブルは、それぞれのコントローラーに関する詳細を示します。
 
-**コントローラー**
-
-**詳細**
-
-BudgetLedgerDimension
-
-このコントローラーは、セグメント化された入力コントロールのデータ入力の予算に基づくサポートを提供します。 このコント ローラーを使用するときは、勘定構造をセグメント化エントリ コントロールに提供する必要があります。
-
-BudgetPlanningLedgerDimension
-
-このコントローラーは、セグメント化された入力コントロールのデータ入力の予算計画に基づくサポートを提供します。 このコント ローラーを使用するときは、勘定構造をセグメント化エントリ コントロールに提供する必要があります。
-
-DimensionDynamicAccount
-
-このコントローラーは、セグメント化された入力コントロールの複数のアカウント タイプのサポートを提供します。
-
-LedgerDimensionAccountAlias
-
-このコントローラーは、セグメント化された入力コントロールのアカウント エイリアスのサポートを提供します。
-
-LedgerDimensionAccount
-
-このコントローラーは、セグメント化された入力コントロールの複数のセグメントのデータ入力のサポートを提供します。
-
-LedgerDimensionDefaultAccount
-
-このコントローラーは、セグメント化された入力コントロールの既定のアカウントのサポートを提供します。
+| コントローラー           | 詳細情報      | 
+|-------------------------|--------------------|
+| BudgetLedgerDimension | このコントローラーは、セグメント化された入力コントロールのデータ入力の予算に基づくサポートを提供します。 このコント ローラーを使用するときは、勘定構造をセグメント化エントリ コントロールに提供する必要があります。 |
+| BudgetPlanningLedgerDimension | このコントローラーは、セグメント化された入力コントロールのデータ入力の予算計画に基づくサポートを提供します。 このコント ローラーを使用するときは、勘定構造をセグメント化エントリ コントロールに提供する必要があります。 |
+| DimensionDynamicAccount | このコントローラーは、セグメント化された入力コントロールの複数のアカウント タイプのサポートを提供します。 |
+| LedgerDimensionAccountAlias | このコントローラーは、セグメント化された入力コントロールのアカウント エイリアスのサポートを提供します。 |
+| LedgerDimensionAccount | このコントローラーは、セグメント化された入力コントロールの複数のセグメントのデータ入力のサポートを提供します。 |
+| LedgerDimensionDefaultAccount | このコントローラーは、セグメント化された入力コントロールの既定のアカウントのサポートを提供します。 |
 
 ## <a name="migration-steps"></a>移行ステップ
 ### <a name="step-1"></a>ステップ１
 
 #### <a name="ax-2012"></a>AX 2012
 
-**SegmentedEntry** は任意のコントロールの横にあるタイプとして表示され、**SegmentedEntryControl** と変更します。 [![SegmentMigrate01](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
+**SegmentedEntry** は任意のコントロールの横にあるタイプとして表示され、**SegmentedEntryControl** と変更します。 
+
+[![SegmentMigrate01](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-簡単な方法は古いコントロールの名前に「\_旧」を追加し、新しいコントロール (コントロールの元の名前がある必要があります) を付け加え、すべての設定を移行した後、古いコントロールを削除します。 **注記:** コントロールを参照するテストおよび他のコードが破損しないようにするには、新しいコントロールが古いコントロールと同じ名前であることを確認します。 新しいコントロールを追加するには、**Segmented Entry** コントロールを含む親コントロールを右クリックし、**New** &gt; **SegmentedEntryControl** を選択します。 [![SegmentMigrate02](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) 次のスクリーンショットは、新しいコントロールの外観を示しています。 [![SegmentMigrate03](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
+簡単な方法は古いコントロールの名前に「\_旧」を追加し、新しいコントロール (コントロールの元の名前がある必要があります) を付け加え、すべての設定を移行した後、古いコントロールを削除します。 
+
+> [!NOTE] 
+> コントロールを参照するテストおよび他のコードが破損しないようにするには、新しいコントロールが古いコントロールと同じ名前であることを確認します。 新しいコントロールを追加するには、**Segmented Entry** コントロールを含む親コントロールを右クリックし、**New** &gt; **SegmentedEntryControl** を選択します。 
+
+[![SegmentMigrate02](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) 
+
+次のスクリーンショットは、新しいコントロールの外観を示しています。 
+
+[![SegmentMigrate03](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
 
 ### <a name="step-2"></a>ステップ２
 
@@ -525,7 +488,8 @@ LedgerDimensionDefaultAccount
         }
     }
 
-**注記:** **gotFocus()** メソッドからすべてのコードを削除したら、そのメソッドを削除できます。
+> [!NOTE] 
+> **gotFocus()** メソッドからすべてのコードを削除したら、そのメソッドを削除できます。
 
 ### <a name="step-14"></a>ステップ 14
 
@@ -543,7 +507,12 @@ LedgerDimensionDefaultAccount
 -   **参照フィールド**
 -   **コントローラー クラス**
 
-[![SegmentMigrate04](./media/segmentmigrate04.png)](./media/segmentmigrate04.png) [![SegmentMigrate05](./media/segmentmigrate05.png)](./media/segmentmigrate05.png) **注記:** コントロールが動作するためにはコントローラー クラスが必要です。 したがって、**Controller Class** プロパティが設定されていないと、ランタイム エラーがスローされます。
+[![SegmentMigrate04](./media/segmentmigrate04.png)](./media/segmentmigrate04.png) 
+
+[![SegmentMigrate05](./media/segmentmigrate05.png)](./media/segmentmigrate05.png) 
+
+> [!NOTE]
+> コントロールが機能するには、コントローラクラスが必要です。 したがって、**Controller Class** プロパティが設定されていないと、ランタイム エラーがスローされます。
 
 ### <a name="step-15"></a>ステップ 15
 
@@ -559,7 +528,8 @@ LedgerDimensionDefaultAccount
 
     TmpLedgerJournalSplitLines_LedgerAccount.setDimensionSpecifiers(defaultDimensionSpecifiers, false);
 
-**注記:** 分析コードの指定子のマップに何かを追加してからコントロールに送ることができます。 新しいマップをここで作成することもできます。 (同様のロジックに関しては、**LedgerJournalEngine** クラス内の **onSegmentChangedForPrimaryAccount** メソッドを参照してください。)
+> [!NOTE]
+> 分析コードの指定子のマップに何かを追加してからコントロールに送ることができます。 新しいマップをここで作成することもできます。 (同様のロジックに関しては、**LedgerJournalEngine** クラス内の **onSegmentChangedForPrimaryAccount** メソッドを参照してください。)
 
 ### <a name="step-16"></a>ステップ 16
 
@@ -583,7 +553,11 @@ LedgerDimensionDefaultAccount
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-これは、コントロールの**転記タイプ**プロパティです。 **PostingType** プロパティを設定する必要があるコントロールは、**parmControl()** 呼び出しを見て派生したマッピングの詳細から判別できます。 [![SegmentMigrate06](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) これらのプロパティは、コントロール インスタンスで **parm** メソッドを介してコードで設定することもできます。 次に例を示します。
+これは、コントロールの**転記タイプ**プロパティです。 **PostingType** プロパティを設定する必要があるコントロールは、**parmControl()** 呼び出しを見て派生したマッピングの詳細から判別できます。 
+
+[![SegmentMigrate06](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) 
+
+これらのプロパティは、コントロール インスタンスで **parm** メソッドを介してコードで設定することもできます。 次に例を示します。
 
     ClearingAccount.parmPostingType(LedgerPostingType::VendSettlement);
 
@@ -591,7 +565,9 @@ LedgerDimensionDefaultAccount
 
 #### <a name="ax-2012"></a>AX 2012
 
-元帳分析コードのデータ ソース フィールドで **resolveReference()** をオーバーライドします。 [![SegmentMigrate07](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)
+元帳分析コードのデータ ソース フィールドで **resolveReference()** をオーバーライドします。 
+
+[![SegmentMigrate07](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
@@ -645,12 +621,16 @@ LedgerDimensionDefaultAccount
 
 この機能を実装するには、2 つのメソッドがあります。 これらのメソッドは相互に排他的なため、状況に応じてそれらのメソッドのうち 1 つのみを使用してください。
 
--   **セグメント化されたエントリー**コントロールについては、**プロパティ**ダイアログ ボックスで、**勘定タイプ フィールド**プロパティを勘定タイプを提供するデータ ソース フィールドに設定します。 これが推奨されるメソッドです。 **注記:** **super()** 呼び出しが、**勘定タイプ フィールド** プロパティにバインドされているフィールドの **modified()** メソッドから削除されている場合、このメソッドは機能しません。 **LedgerJournalTransDaily** などのいくつかの仕訳帳フォームで、この問題が確認されました。 このような場合、**super()** コールバックを **modified()** メソッドに追加するか、2 つ目のメソッドを使用します。
+-   **セグメント化されたエントリー**コントロールについては、**プロパティ**ダイアログ ボックスで、**勘定タイプ フィールド**プロパティを勘定タイプを提供するデータ ソース フィールドに設定します。 これが推奨されるメソッドです。 
+
+    > [!NOTE]
+    > **super()** 呼び出しが、**口座タイプ フィールド** プロパティにバインドされているフィールドの **modified()** メソッドから削除されている場合、このメソッドは機能しません。 **LedgerJournalTransDaily** などのいくつかの仕訳帳フォームで、この問題が確認されました。 このような場合、**super()** コールバックを **modified()** メソッドに追加するか、2 つ目のメソッドを使用します。
 -   コントロールで **parmAccountTypeEnumValue()** メソッドを呼び出すことにより、勘定タイプを手動で設定します。 次に例を示します。
 
         LedgerJournalTrans_AccountNum.parmAccountTypeEnumValue(enum2int(ledgerJournalTrans.AccountType));
 
-    **注記:** **parmAccountTypeEnumValue()** への呼び出しは、勘定タイプを提供するフィールドの、データソースの **active()** メソッド、および **modified()** メソッドの両方に入力する必要があります。
+    > [!NOTE] 
+    > **parmAccountTypeEnumValue()** への呼び出しは、勘定タイプを提供するフィールドの、データソースの **active()** メソッド、および **modified()** メソッドの両方に入力する必要があります。
 
 ### <a name="step-23"></a>ステップ 23
 
@@ -674,7 +654,7 @@ LedgerDimensionDefaultAccount
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-ほとんどの場合に必要がなくなったため、このコード行を削除します。 この線を削除する前に、**LedgerCOA** 値がその情報から派生するため、データ領域 ID がパラメーターとしてコントローラーに正しく渡されていることを確認してください。 データ領域 ID が渡されない場合は、**parmCurrentLedgerCOA(â€¦)** を **parmDataAreaId(â€¦)** で交換し、通常は **curext()** または会社のアカウント管理のために範囲を制御する別のテーブル フィールドである適切な **SelectableDataArea** 値を渡します。 フォームにデータ領域のコンテキストはありませんが、現在の **LedgerCOA** 値のみがある場合、既定のアカウント コント ローラーだけで動作する必要があります。 企業には無関係ですが、特定の勘定科目表 (COA) (**MainAccount** および **Allocations** など) にスコープされているフォームがいくつかあります。 そのような場合、**parmCurrentLedgerCOA** が、既定のアカウント コントローラー タイプ セットを持つ**セグメント化エントリ** コントロール インスタンスで呼び出される必要があります。
+ほとんどの場合に必要がなくなったため、このコード行を削除します。 この線を削除する前に、**LedgerCOA** 値がその情報から派生するため、データ領域 ID がパラメーターとしてコントローラーに正しく渡されていることを確認してください。 データ領域 ID が渡されない場合は、**parmCurrentLedgerCOA()** を **parmDataAreaId()** で交換し、通常は **curext()** または会社のアカウント管理のために範囲を制御する別のテーブル フィールドである適切な **SelectableDataArea** 値を渡します。 フォームにデータ領域のコンテキストはありませんが、現在の **LedgerCOA** 値のみがある場合、既定のアカウント コント ローラーだけで動作する必要があります。 企業には無関係ですが、特定の勘定科目表 (COA) (**MainAccount** および **Allocations** など) にスコープされているフォームがいくつかあります。 そのような場合、**parmCurrentLedgerCOA** が、既定のアカウント コントローラー タイプ セットを持つ**セグメント化エントリ** コントロール インスタンスで呼び出される必要があります。
 
 ### <a name="step-25"></a>ステップ 25
 
@@ -686,7 +666,10 @@ LedgerDimensionDefaultAccount
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-このコード行は不要になり、**セグメント化されたエントリ**コントロールのプロパティを使用して直接設定する必要があります。 **注記:** フレームワークのバグのため、これを明示的に設定しないと、以前の動作では、構築中に暗黙的に**はい**が割り当てられていましたが、勘定分析コードの既定のアカウント コントローラーに**いいえ**が割り当てられます。 この操作は、プロパティとして手動で設定する必要があります。 または、**ダイアログ**クラスへの、**parm** メソッドがまだ明示的に呼び出されるはずです。
+このコード行は不要になり、**セグメント化されたエントリ**コントロールのプロパティを使用して直接設定する必要があります。 
+
+> [!NOTE]
+> フレームワークのバグのため、これを明示的に設定しないと、以前の動作では、構築中に暗黙的に **はい** が割り当てられていましたが、勘定分析コードの既定のアカウント コントローラーに **いいえ** が割り当てられます。 この操作は、プロパティとして手動で設定する必要があります。 または、**ダイアログ**クラスへの、**parm** メソッドがまだ明示的に呼び出されるはずです。
 
 ### <a name="step-26"></a>ステップ 26
 
@@ -782,7 +765,10 @@ LedgerDimensionDefaultAccount
 
 ### <a name="migrating-a-segmented-entry-control-on-a-dialog"></a>ダイアログ上のセグメント化エントリ コントロールの移行
 
-ダイアログ上の新しい**セグメント化されたエントリ** コントロールの取得パターンは Dynamics AX で変更されています。 コントローラー クラス API とのやり取りではなく、**SegmentedEntryControlBuild** クラスとやり取りしてダイアログと SEC をリンクする必要があります。 このセクションでは、異なるコントローラー タイプのダイアログで SEC を使用するためのコード パターンを示します。 **注記:** Dynamics AX ではヘルプ テキストが不要になるため、ダイアログ フィールドにヘルプ テキストを設定する必要はありません。
+ダイアログ上の新しい**セグメント化されたエントリ** コントロールの取得パターンは Dynamics AX で変更されています。 コントローラー クラス API とのやり取りではなく、**SegmentedEntryControlBuild** クラスとやり取りしてダイアログと SEC をリンクする必要があります。 このセクションでは、異なるコントローラー タイプのダイアログで SEC を使用するためのコード パターンを示します。 
+
+> [!NOTE] 
+> Dynamics  AX ではヘルプ テキストが不要になるため、ダイアログ フィールドにヘルプ テキストを設定する必要はありません。
 
 -   **動的アカウント:**
     -   **以前:**
@@ -905,14 +891,14 @@ LedgerDimensionDefaultAccount
     -   **予算計画** コントローラーを用いて、使用する勘定構造を指定する必要があります。 **Dialog** クラスは、ユーザーが勘定構造を選択し (SEC の外部で)、選択した勘定構造を SEC で設定する方法を実装する必要があります。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[セグメント化されたエントリ コントロールのダイアログのサポート](segmented-entry-control-dialog-support.md)
+[ダイアログのセグメント化されたエントリ コントロールのサポート](segmented-entry-control-dialog-support.md)
 
-[セグメント化されたエントリ コントロールのメタデータ詳細](segmented-entry-control-metadata-specification.md)
+[セグメント化されたエントリ コントロールのデザイン時メタデータ](segmented-entry-control-metadata-specification.md)
 
-[セグメント化されたエントリ コントロールの Parm メソッド詳細](segmented-entry-control-parm-method-specification.md)
+[セグメント化されたエントリ コントロールの Parm メソッド](segmented-entry-control-parm-method-specification.md)
 
 [セグメント化されたエントリ コントロールの移行](segmented-entry-control-conversion.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 674e3ca8a5b282a3a7522b92633972cb7dd88a7b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eeaf0e5b0eadabc97a3e22a45668465e85ff6528
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183393"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771458"
 ---
 # <a name="configure-the-electronic-reporting-er-framework"></a>電子申告 (ER) フレームワークの構成
 
@@ -76,7 +76,7 @@ ER を設定する前に、ドキュメント管理で必要なドキュメン�
 
 **回答:** Microsoft プロバイダーは、Microsoft が設計および管理している ER コンフィギュレーションをマークするために使用されます。 Microsoft は、今後、構成の新しいバージョンをリリースすることを考えてています。 Microsoft プロバイダーを **有効** とマークしないことをお勧めします。 それ以外の場合、構成を更新できます。 (たとえば、コンテンツを変更して新しいバージョンを登録することができます。) これらのアップデートにより、Microsoft がコンフィギュレーションの新しいバージョンを提供するときに、今後問題が発生します。これらの新しいバージョンをインポートして採用する必要があります。 代わりに、会社の新しい ER プロバイダーを登録し、ER 構成の管理に使用します。 Microsoft 構成を再利用するには、派生コピーのベースとして選択します。 Microsoftによって提供される変更を組み込むには、構成が新しいバージョンの Microsoft 構成に使用可能になったときに、その構成をリベースします。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-- [電子申告の概要](general-electronic-reporting.md)
-- [電子申告の送信先](electronic-reporting-destinations.md)
+- [電子申告 (ER) の概要](general-electronic-reporting.md)
+- [電子申告 (ER) の送信先](electronic-reporting-destinations.md)

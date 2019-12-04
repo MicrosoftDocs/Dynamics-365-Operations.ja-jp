@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f77c299cd4c1fed0cd3c12867709f6760b22e10
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6ae74557ea5bf45de68b9bc781f826fa6081247
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191569"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812109"
 ---
 # <a name="uptake-of-dimension-entry-controls"></a>分析コード エントリ コントロールの取得
 
@@ -30,10 +30,11 @@ ms.locfileid: "2191569"
 
 分析コード エントリ コントロールおよび関連するコントローラー クラスについて説明します。
 
-<a name="general-approach"></a>一般的なアプローチ
-----------------
+## <a name="general-approach"></a>一般的なアプローチ
 
-設計の目標は、コントロールの実装をカプセル化し、コントロールをサポートするクラスとやり取りするフォームを必要としないことです。 この設計に合わせて、LedgerDimensionEntryController、LedgerDefaultDimensionEntryController などのように、**すべてのフォームは直接コントローラー クラスではなく、分析コードのエントリ コントロール インスタンス API のみと対話する必要があります**。操作されたプロパティおよびコントローラーで呼び出されたメソッドは、コントロールで呼び出される必要があります。 **注記:**
+設計の目標は、コントロールの実装をカプセル化し、コントロールをサポートするクラスとやり取りするフォームを必要としないことです。 この設計に合わせて、LedgerDimensionEntryController、LedgerDefaultDimensionEntryController などのように、**すべてのフォームは直接コントローラー クラスではなく、分析コードのエントリ コントロール インスタンス API のみと対話する必要があります**。操作されたプロパティおよびコントローラーで呼び出されたメソッドは、コントロールで呼び出される必要があります。 
+
+**メモ :**
 
 -   アップグレード スクリプトは、constructInGroupWithValues() メソッドおよび constructInTabWithValues() メソッドを使用して作成された分析コード エントリ コントロールのみを処理します。 他のコントロールは、手動でアップグレードする必要があります。
 -   アップグレード スクリプトは、ヘルパー メソッドのパラメーターとして送信された分析コード エントリ コントロールを処理しません。 このコードは、手動でアップグレードする必要があります。
@@ -44,7 +45,9 @@ ms.locfileid: "2191569"
 [![1](./media/1.png)](./media/1.png)
 
 ## <a name="properties"></a>プロパティ
-分析コード エントリ コントロールのカスタム プロパティは、**コントローラー** グループの下にあります。 [![Capture1](./media/capture1.png)](./media/capture1.png)
+分析コード エントリ コントロールのカスタム プロパティは、**コントローラー** グループの下にあります。 
+
+[![Capture1](./media/capture1.png)](./media/capture1.png)
 
 #### <a name="details-on-the-properties"></a>プロパティの詳細
 
@@ -73,7 +76,11 @@ ms.locfileid: "2191569"
 | InventSiteSMAItemDimensionValueSet             | このコントローラーは、在庫ディメンション リンク設定によって要求される動作の分析コード エントリ コントロールのデータ入力をサポートします。                                                                                                                                                                           |
 | InventSiteTmpLedgerBaseLinkedDimensionValueSet | このコントローラーは、在庫ディメンション リンク設定によって要求される動作の分析コード エントリ コントロールのデータ入力をサポートします。 このコントローラーは、特に TmpLedgerBase テーブルの DefaultDimension フィールドで動作します。                                                                            |
 
-いくつかの分析コード入力コントロールには、コントローラー プロパティが設定されていない可能性があります。 この場合、コントローラーはコントロールの値データ フィールドの EDT から推測されます。 一連の分析コード エントリ コントロールの特定のプロパティを以下に示します。 これらのプロパティは、上記の一般的なアプローチのセクション (DimensionEntryControlHeader) で選択した、分析コード入力コントロールの PurchTable フォームのプロパティです。 この分析コード エントリ コントロールは、PurchTableのTable テーブルの DefaultDimension フィールドを使用しています。 PurchTable の DefaultDimension フィールドの拡張データ型プロパティは、LedgerDefaultDimensionValueSet (以下を参照) に設定されます。 実行時に、この EDT は LedgerDefaultDimensionEntryController にマップされます。 したがって、この場合 DimensionEntryControlHeader コントロールは LedgerDefaultDimensionEntryController を使用します。 次の例は、EDT とそれがマップされているコントローラーを示しています。 [![3](./media/3.png)](./media/3.png) [![4](./media/4.png)](./media/4.png)
+いくつかの分析コード入力コントロールには、コントローラー プロパティが設定されていない可能性があります。 この場合、コントローラーはコントロールの値データ フィールドの EDT から推測されます。 一連の分析コード エントリ コントロールの特定のプロパティを以下に示します。 これらのプロパティは、上記の一般的なアプローチのセクション (DimensionEntryControlHeader) で選択した、分析コード入力コントロールの PurchTable フォームのプロパティです。 この分析コード エントリ コントロールは、PurchTableのTable テーブルの DefaultDimension フィールドを使用しています。 PurchTable の DefaultDimension フィールドの拡張データ型プロパティは、LedgerDefaultDimensionValueSet (以下を参照) に設定されます。 実行時に、この EDT は LedgerDefaultDimensionEntryController にマップされます。 したがって、この場合 DimensionEntryControlHeader コントロールは LedgerDefaultDimensionEntryController を使用します。 次の例は、EDT とそれがマップされているコントローラーを示しています。 
+
+[![3](./media/3.png)](./media/3.png) 
+
+[![4](./media/4.png)](./media/4.png)
 
 #### <a name="extended-data-types-and-the-controllers-they-are-mapped-to"></a>拡張データ型およびマップされるコントローラー
 
@@ -96,12 +103,18 @@ Replace this based on the migration guidance. */
 DimensionEntryControl.reactivate();</code></pre>
 
 ### <a name="finance-and-operations"></a>Finance and Operations 
-reactivate メソッドは、分析コード エントリ コントロールを現在の設定でリフレッシュします。 このメソッドは、会社または表示された分析コード リストが変更された場合にのみ、コントロールを更新します。 この呼び出しは、これらのどちらも以前に変更されていない場合に削除できます。 それ以外の場合は、呼び出しはそのままにします。 reactivate() の直前で parmCompany() が呼び出され、それが reactivate() より前に呼び出された唯一の DEC API であり、そのメソッドがデータソースの active() 中に呼び出された場合、最適化を手動で行うことでパフォーマンスを向上させ、コードの取り込みを減らすことができます。
-<p>1) データ ソースのアクティブ プロセス中に、parmCompany() および reactivate() 呼び出しを削除します。</p>
-<p>2) 最初のユーザーとフォームとのやりとりの前に呼び出されるフォーム init()、run()、datasource init()、または同様のメソッドでは、次のコード行を追加します。</p>
-<pre><code>DimensionEntryControl.parmCompanyReference(
-    fieldStr([myTable], [myCompanyContextField]);</code></pre>
-この変更により、DEC はアクティブなレコードが変更されたときに更新される会社フィールド参照を自動的に見つけ出し、それに応じてディメンションのリストを更新できます。 <strong>注記:</strong> これは、parmDisplayedDimensionSet() の使用と組み合わせないでください。そうすると、分析コードの一覧が予想外のものになることがあります。 会社の選択フィールドの変更されたメソッドなど、他のすべての場所で、データ ソースがその時点で読み取られるプロセスではないため、会社内の変更をすぐに反映するように parmCompany() を呼び出す必要があります。
+reactivate メソッドは、分析コード エントリ コントロールを現在の設定でリフレッシュします。 このメソッドは、会社または表示された分析コード リストが変更された場合にのみ、コントロールを更新します。 この呼び出しは、これらのどちらも以前に変更されていない場合に削除できます。 それ以外の場合は、呼び出しはそのままにします。 reactivate() の直前で parmCompany() が呼び出され、それが reactivate() より前に呼び出された唯一の DEC API であり、そのメソッドがデータソースの active() 中に呼び出された場合、最適化を手動で行うことでパフォーマンスを向上させ、コードの取り込みを削減することができます。
+
+1.  データ ソースのアクティブ プロセス中に、parmCompany() および reactivate() 呼び出しを削除します。
+2.  最初のユーザーとフォームとのやりとりの前に呼び出されるフォーム init()、run()、datasource init()、または同様のメソッドでは、次のコード行を追加します。
+
+    <pre><code>DimensionEntryControl.parmCompanyReference(
+        fieldStr([myTable], [myCompanyContextField]);</code></pre>
+    
+    この変更により、DEC はアクティブなレコードが変更されたときに更新される会社フィールド参照を自動的に見つけ出し、それに応じてディメンションのリストを更新できます。 
+
+> [!NOTE] 
+> これを parmDisplayedDimensionSet() の使用と組み合わせないでください。そうすると、分析コードの一覧が想定外のものになることがあります。 会社の選択フィールドの変更されたメソッドなど、他のすべての場所で、データ ソースがその時点で読み取られるプロセスではないため、会社内の変更をすぐに反映するように parmCompany() を呼び出す必要があります。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
 <pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
@@ -112,7 +125,9 @@ DimensionEntryControl.setEditability(true, 0);</code></pre>
 特定の編集可能なディメンション セットが必要な場合は、この呼び出しを次のように置き換えます。
 <pre><code>DimensionEntryControl.parmEditableDimensionSet(
     editableDimensionSet);</code></pre>
-<strong>注記</strong>: editableDimensionSet パラメーターは、タイプ DimensionEnumeration です。
+    
+> [!NOTE] 
+> editableDimensionSet パラメーターのタイプは、 DimensionEnumeration です。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012 
 <pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
@@ -175,9 +190,11 @@ DimensionEntryControlHeader.updateValues(
 <pre><code>DimensionEntryControlHeader.allowEdit(
     NoYesUnchanged::No);
 DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
-<strong>注記:</strong> updateValues メソッド呼び出しの最初のパラメーターが NoYesUnchanged::Unchanged の場合、allowEdit の新しい呼び出しは必要ありません。 同様に、updateValues メソッドの 2 番目のパラメーターの呼び出しが false の場合、loadAttributeValueSet への呼び出しは必要ありません。
 
-## <a name="methods-to-potentially-remove"></a>**削除する可能性のあるメソッド**
+> [!NOTE] 
+updateValues メソッド 呼び出しの最初の パラメーター が NoYesUnchangedUnchanged::の場合は、allowEdit の新しい呼び出しは必要ありません。 同様に、updateValues メソッドの 2 番目のパラメーターの呼び出しが false の場合、loadAttributeValueSet への呼び出しは必要ありません。
+
+## <a name="methods-to-potentially-remove"></a>削除する可能性のあるメソッド
 分析コード エントリ コントロールを保持するデータソースまたは tabpage/グループの残りのメソッドは、カスタム ロジックがない場合、削除することができます。 次のテーブルは、削除する必要があるカスタマイズのないメソッドの例を示しています。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -241,7 +258,7 @@ DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
 ### Finance and Operations 
 この方法は分析コード エントリ コントロールを保持する TabPage またはグループになります。 カスタム ロジックがない場合は、メソッドを削除することができます。
 
-## <a name="compile-errors"></a>**コンパイル エラー**
+## <a name="compile-errors"></a>コンパイル エラー
 このセクションでは、取り残される可能性のある一般的なコンパイル エラーに対処する方法について説明します。
 
 
@@ -282,11 +299,10 @@ parmDimensionEntryControlHeader(
 
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>追加リソース
 
-[分析コード エントリ コントロールのチュートリアル](dimension-entry-control-migration.md)
+[既定の分析コード コントロールの分析コード エントリ コントロールへの移行](dimension-entry-control-migration.md)
 
-[分析コード エントリ コントロール ダイアログのサポート](dimension-entry-control-dialog-support.md)
+[ダイアログの分析コード エントリ コントロールのサポート](dimension-entry-control-dialog-support.md)
 
 

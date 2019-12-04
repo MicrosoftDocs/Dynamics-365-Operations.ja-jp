@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fb88e9bdc06dbfd3bc78fc36005f1771216e2ec2
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: 391908b1a133ee0720a63e610d51b412b1edd5b6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2572677"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770965"
 ---
 # <a name="database-movement-operations-home-page"></a>データベース移動操作ホーム ページ
 
@@ -44,7 +44,7 @@ ms.locfileid: "2572677"
 
 * [トレーニング用の更新](dbmovement-scenario-general-refresh.md)
 * [生産データベースのコピーのデバッグ](dbmovement-scenario-debugdiag.md)
-* [標準ユーザー受け入れテスト (UAT) データベースのコピーのエクスポート](dbmovement-scenario-exportuat.md)
+* [標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート](dbmovement-scenario-exportuat.md)
 * [ゴールデン コンフィギュレーション プロモーション](dbmovement-scenario-goldenconfig.md)
 * [破壊試験](dbmovement-scenario-destructivetests.md)
 

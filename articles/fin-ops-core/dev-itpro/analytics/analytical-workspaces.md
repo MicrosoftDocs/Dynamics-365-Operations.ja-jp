@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 76564c440d52f7eae4faa704cf9010c7754c3751
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 4e466e6b1bbec0915b6fdb9b86d3b5cbb45364ad
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536873"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771613"
 ---
 # <a name="analytical-workspaces"></a>分析ワークスペース
 [!include[banner](../includes/banner.md)]
@@ -34,15 +34,15 @@ ms.locfileid: "2536873"
 - [原価管理 Power BI コンテンツ](cost-management-content-pack.md)
 - [与信および回収管理 Power BI コンテンツ](../../../finance/accounts-receivable/credit-collections-power-bi.md)
 - [従業員の育成 Power BI コンテンツ](employee-development-PBI.md) 
-- [財務インサイト Power BI コンテンツ](financial-insights.md)
-- [財務パフォーマンス Power BI コンテンツ](financial-performance-power-bi-content-pack.md)
-- [固定資産管理 Power BI コンテンツ](../../../finance/fixed-assets/Fixed-asset-management-workspace.md)
+- [財務インサイト](financial-insights.md)
+- [財務パフォーマンス PowerBI.com ソリューション](financial-performance-power-bi-content-pack.md)
+- [固定資産管理ワークスペース](../../../finance/fixed-assets/Fixed-asset-management-workspace.md)
 - [学習 Power BI コンテンツ](learning-power-bi.md)
 - [プラクティス マネージャー Power BI コンテンツ](practice-manager-power-bi.md)
 - [生産パフォーマンス Power BI コンテンツ](production-performance-power-bi.md)
 - [購買と支出の分析 Power BI コンテンツ](purchase-content-pack-for-power-bi.md) 
 - [採用 Power BI コンテンツ](recruiting-analysis-power-bi-content-pack.md) 
 - [販売と収益性のパフォーマンス Power BI コンテンツ](sales-profitability-performance-content-pack.md)
-- [仕入先支払 Power BI コンテンツ](../../../finance/accounts-payable/Vendor-payments-workspace.md)
+- [仕入先支払ワークスペース](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [倉庫のパフォーマンス Power BI コンテンツ](warehouse-power-bi-content.md)
 - [要員指標 Power BI コンテンツ](workforce-analysis-power-bi-content-pack.md)

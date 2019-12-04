@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4deba271912d3495ac08cd6a65c2b2f9c6a04850
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 471c719a8e6de0ebe6fcdad0ae222453db841c87
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188582"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772102"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Excel の予算計画テンプレート
 
@@ -31,7 +31,7 @@ ms.locfileid: "2188582"
 
 このトピックでは、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。
 
-このトピックでは、標準デモ データ セットと管理者ユーザー ログインを使用して予算計画に使用する Excel テンプレートを作成する方法を示します。 予算計画に関する詳細については、「[予算計画の概要](budget-planning-overview-configuration.md)」を参照してください。 「[予算計画 101](budget-plan.md)」チュートリアルに従って、基本モジュールのコンフィギュレーションと使用の原則について参照することもできます。
+このトピックでは、標準デモ データ セットと管理者ユーザー ログインを使用して予算計画に使用する Excel テンプレートを作成する方法を示します。 予算計画に関する詳細については、[予算計画の概要](budget-planning-overview-configuration.md)を参照してください。 [予算計画](budget-plan.md)チュートリアルに従って、基本モジュールのコンフィギュレーションと使用の原則について参照することもできます。
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>予算計画ドキュメント レイアウトを使用したワークシートの生成
 
@@ -57,23 +57,17 @@ ms.locfileid: "2188582"
 
 **ワークシートで利用可能**列が True になっている場合、Excel テンプレートには予算計画ドキュメント レイアウトのすべての要素が含まれます。 重複する要素は、Excel テンプレートで許可されません。 たとえば、レイアウトに要求 Q1、要求 Q2、要求 Q3、要求 Q4 の列、4 つすべての四半期の列の合計を表す合計要求列が含まれている場合、その四半期列または合計列は Excel テンプレートで使用できます。 Excel ファイルは、テーブルのデータが期限切れおよび不正確になることがあるため、更新時に重複する列を更新することはできません。
 
-[![例](./media/bpt4-1024x615.png)](./media/bpt4.png)
-
 > [!NOTE] 
 > Excel を使用した予算計画データの表示および編集で起こる可能性のある問題を回避するには、同じユーザーが、Microsoft Dynamics 365 Finance および Microsoft Dynamics Office アドインのデータ コネクタの両方にログインする必要があります。
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>予算計画ドキュメント テンプレートへのヘッダーの追加
 ヘッダー情報を追加するには、Excel ファイルの一番上の行を選択し、空の行を挿入します。 **データ コネクタ**の**デザイン**をクリックして Excel ファイルにヘッダー フィールドを追加します。
 
-[![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
-
 **デザイン**タブで、**追加**フィールドをクリックしてから、**BudgetPlanHeader** をエンティティ データ ソースとして選択します。
-
-[![bpt6](./media/bpt6-1024x615.png)](./media/bpt6.png)
 
 Excel ファイルの挿入位置にカーソルを合わせます。 **ラベルの追加**をクリックして、フィールド ラベルを選択した場所に追加します。 **値の追加**を選択して、選択した場所に値フィールドを追加します。 **完了**をクリックしてデザイナーを閉じます。
 
-## <a name="bpt7mediabpt7pngmediabpt7png"></a>[![bpt7](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7pngmediabpt7png"></a>[![値の追加を選択](./media/bpt7.png)](./media/bpt7.png)
 
 <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>予算計画ドキュメント テンプレート テーブルへの計算された列の追加
 --------------------------------------------------------------
@@ -82,11 +76,11 @@ Excel ファイルの挿入位置にカーソルを合わせます。 **ラベ�
 
 **データ コネクタ**の**デザイン**をクリックしてテーブルに列を追加します。 **BudgetPlanWorkshee** データ ソースの横にある**編集**をクリックして、列の追加を開始します。
 
-[![bpt8](./media/bpt8-1024x301.png)](./media/bpt8.png) 
+[![列の追加を開始](./media/bpt8-1024x301.png)](./media/bpt8.png) 
 
 選択したフィールド グループに、テンプレートで使用できる列が表示されます。 **式** をクリックして新しい列を追加します。 新しい列に名前を付けてから、式を **式** フィールドに貼り付けます。 **更新**をクリックして列を挿入します。
 
-[![bpt12](./media/bpt12-1024x565.png)](./media/bpt12.png)
+[![列の追加と挿入](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
 > 式を定義するには、式をスプレッドシートで作成し、**デザイン**ウィンドウにコピーします。 Finance and Operations のバインドされたテーブルは、通常「AXTable1」と呼ばれます。 たとえば、スプレッドシートの要求 Q1 : 要求 Q4 の列を集計するには、式 = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\] となります。
@@ -95,11 +89,11 @@ Excel ファイルの挿入位置にカーソルを合わせます。 **ラベ�
 
 Excel ファイルを保存して閉じます。 **レイアウト**で、**テンプレート &gt; アップロード**をクリックし、予算計画に使用する保存した Excel テンプレートをアップロードします。 
 
-[![bpt10](./media/bpt10-1024x352.png)](./media/bpt10.png) 
+[![Excel テンプレートのアップロード](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 
 **レイアウト**スライダーを閉じます。 **予算計画**ドキュメントで、**ワークシート**をクリックして Excel でドキュメントを表示して編集します。 調整された Excel テンプレートがこの予算計画ワークシートの作成に使用され、計算された列が前の手順で定義された式を使用して更新されることに注意してください。 
 
-[![bpt11](./media/bpt111-1024x431.png)](./media/bpt111.png)
+[![Excel でのドキュメントの表示と編集](./media/bpt111-1024x431.png)](./media/bpt111.png)
 
 ## <a name="tips--tricks-for-creating-budget-plan-templates"></a>予算計画テンプレートを作成するためのヒントとトリック
 ### <a name="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template"></a>予算計画テンプレートに追加のデータ ソースを追加して使用することはできますか。
@@ -112,29 +106,27 @@ Excel ファイルを保存して閉じます。 **レイアウト**で、**テ�
 
 はい、**データ コネクタ**オプションを開いて、他のユーザーから**デザイン**オプションを非表示にできます。
 
-[![bpt13](./media/bpt13-1024x565.png)](./media/bpt13.png)
+[![データ コネクタ オプションを開く](./media/bpt13-1024x565.png)](./media/bpt13.png)
 
 **データ コネクタ オプション**を展開して、**デザインの有効化**チェック ボックスをオフにします。 これで、**デザイン**オプションを**データ コネクタ**から非表示にできます。
 
-[![bpt14](./media/bpt14-1024x592.png)](./media/bpt14.png)
+[![データ コネクタからデザイン オプションを非表示にする](./media/bpt14-1024x592.png)](./media/bpt14.png)
 
 ### <a name="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data"></a>ユーザーがデータを使用する際に、誤ってデータ コネクタを閉じないようにできますか。
 
 テンプレートをロックしてユーザーが閉じないようにすることをお勧めします。 ロックをオンにするには、**データ コネクタ**をクリックすると、右上に矢印が表示されます。 
 
-[![bpt15](./media/bpt15-1024x285.png)](./media/bpt15.png) 
+[![ロックをオンにする](./media/bpt15-1024x285.png)](./media/bpt15.png) 
 
 追加メニューの矢印をクリックします。 **ロック**を選択します。
 
-### <a name="bpt16mediabpt16-1024x614pngmediabpt16png"></a>[![bpt16](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16-1024x614pngmediabpt16png"></a>[![ロックを選択する](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>予算計画テンプレートでセルの書式、色、条件付き書式、グラフなど Excel の他の機能を使用できますか。
 
 はい、Excel の標準機能のほとんどが、予算計画テンプレートで機能します。 ユーザーに色コードを使用して読み取り専用と編集可能列を区別することをお勧めします。 条件付き書式は、予算の問題のある領域を強調表示するために使用できます。 列合計は、テーブルの Excel の標準式を使用して簡単に表示できます。
 
 また、予算データの追加のグループ化やビジュアル化のためにピボット テーブルおよびグラフを作成して使用することもできます。 **データ**タブの**接続**グループで、**すべて更新**をクリックしてから、**接続のプロパティ**をクリックします。 **使用**タブをクリックします。**更新**で、**ファイルを開いたときにデータを更新**チェック ボックスを選択します。 
-
-[![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
 
 
 

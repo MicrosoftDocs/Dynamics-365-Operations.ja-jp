@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 93ba63f9e92ca546c3417480d21aee100ecb4d02
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: d2326e0381779c0a4ab2261a2f30bc4fae300801
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627576"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770935"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -69,7 +69,7 @@ Finance + Operations アプリケーションは、次の 3 つの主要なコ�
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
-Finance + Operations のビットは、Microsoft Dynamics Lifecycle Services (LCS) を通じて配布されます。 配置する前に、[エンタープライズ契約](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) チャンネルを通じてライセンス キーを購入し、LCS でオンプレミス プロジェクトを設定します。 LCS からのみ配置を開始することができます。 LCS でオンプレミス プロジェクトを設定する方法の詳細については、[Lifecycle Services でのオンプレミス プロジェクトの作成](../lifecycle-services/lbd-create-lcs-on-prem-project.md) を参照してください。
+Finance + Operations のビットは、Microsoft Dynamics Lifecycle Services (LCS) を通じて配布されます。 配置する前に、[エンタープライズ契約](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) チャンネルを通じてライセンス キーを購入し、LCS でオンプレミス プロジェクトを設定します。 LCS からのみ配置を開始することができます。 LCS でオンプレミス プロジェクトを設定する方法の詳細については、[Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定](../lifecycle-services/lbd-create-lcs-on-prem-project.md) を参照してください。
 
 ## <a name="authentication"></a>認証
 
@@ -105,11 +105,11 @@ VMWare を使用している場合は、次の Web ページに記載されて�
 - ストレージ用の Server Message Block (SMB) バージョン 3 のファイル共有
 - オプション: Microsoft Office Server 2017
 
-詳細については、[システム要件](../../fin-ops/get-started/system-requirements-on-prem.md)を参照してください。
+詳細については、[オンプレミス展開のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md) を参照してください。
 
 ### <a name="hardware-layout"></a>ハードウェア レイアウト
 
-[オンプレミス環境のハードウェア サイジング](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md) で推奨されるサイジングに基づいて、インフラストラクチャと Service Fabric クラスターを計画します。 Service Fabric クラスターを計画する方法の詳細については、[Service Fabric のスタンドアロン クラスター展開の計画と準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) を参照してください。
+[オンプレミス環境のハードウェア サイジング要件](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md) で推奨されるサイジングに基づいて、インフラストラクチャと Service Fabric Cluster を計画します。 Service Fabric クラスターを計画する方法の詳細については、[Service Fabric のスタンドアロン クラスター展開の計画と準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) を参照してください。
 
 次のテーブルは、ハードウェア レイアウトの例を示しています。 この例は、設定を説明するためにこのトピック全体で使用されています。 次の手順で指定されているマシン名と IP アドレスを、ご使用の環境のマシンの名前と IP アドレスに置き換える必要があります。
 
@@ -905,6 +905,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 5. **ホスト インフラストラクチャ設定** タブで、エージェント インストーラーをダウンロードします。
 
     ![[ホスト インフラストラクチャ設定] タブで、エージェント インストーラー ボタンをダウンロードする](./media/OPSetup_07_DownloadAgentInstaller.png)
+    
 6. zip ファイルがブロックされていないことを確認します。 ファイルを右クリックし、**プロパティ** を選択します。 ダイアログ ボックスで**ブロック解除**を選択します。
 7. **OrchestratorType** タイプの Service Fabric ノードの 1 つでエージェント インストーラーを解凍します。
 8. **構成エージェント** タブで、コンフィギュレーションの設定を入力します。 必要な値を取得するには、そのマシンと構成ファイルにアクセスできる任意のマシンで次のスクリプトを実行します。
@@ -955,9 +956,9 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 ![配置](./media/Deploy.png)
 
 3. 既存のプラットフォーム更新プログラム 8 またはプラットフォーム更新プログラム 11 を展開する場合: 
-    - ローカル エージェントを更新します。 詳細については、[ローカル エージェントの更新](../lifecycle-services/update-local-agent.md)を参照してください。
+    - ローカル エージェントを更新します。 詳細については、[ローカル エージェントの更新](../lifecycle-services/update-local-agent.md) を参照してください。
     - LCS からローカル エージェントを検証します。
-    - [環境の再構成](../lifecycle-services/reconfigure-environment.md) の手順を実行しながらプラットフォーム更新プログラム 12 を導入します。
+    - [環境を再構成して新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md) の手順を実行している間に、プラットフォーム更新 12 を配置します。
 4. LCS は準備フェーズ中に環境の Service Fabric アプリケーション パッケージを組み立てます。 配置を開始するローカル エージェントにメッセージを送信します。 下記のように、**準備中** ステータスが表示されます。
 
 ![準備中](./media/Preparing.png)
@@ -976,7 +977,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 ![失敗](./media/Failed.png)
 
-再構成する方法の詳細については、[環境の再構成](../lifecycle-services/reconfigure-environment.md) トピックを参照してください。 次の図は、正常な配置を示します。
+再構成の方法の詳細については、[環境を再構成して、新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md) のトピックを参照してください。 次の図は、正常な配置を示します。
 ![配置済み](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Finance + Operations 環境への接続
@@ -984,12 +985,12 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 ## <a name="additional-resources"></a>追加リソース
 - [オンプレミス配置への更新プログラムの適用](apply-updates-on-premises.md)
-- [オンプレミス配置の再配置](redeploy-on-prem.md)
+- [オンプレミス環境の再配置](redeploy-on-prem.md)
 - [ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md)
 - [電子申告 (ER) コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 - [オンプレミス配置でのドキュメントの生成、発行、印刷](../analytics/printing-capabilities-on-premises.md)
-- [オンプレミス環境用リバース プロキシの構成](onprem-reverseproxy.md)
-- [テクニカル サポートの設定](../lifecycle-services/support-experience.md)
+- [オンプレミス環境でのプロキシのコンフィギュレーション](onprem-reverseproxy.md)
+- [Finance and Operations アプリの技術サポートの設定](../lifecycle-services/support-experience.md)
 - [クライアントのインターネット接続](../user-interface/client-disconnected.md)
 
 ## <a name="known-issues"></a>既知の問題

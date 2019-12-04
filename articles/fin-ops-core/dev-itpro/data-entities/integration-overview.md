@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c961358dd2f9349d41c122ce2561a8cb9776842
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 085f4e3036208b4d261b2b137d96d6f3799407ff
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191536"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769626"
 ---
 # <a name="choose-a-data-integration-importexport-strategy"></a>データ統合方法 (インポート/エクスポート) の選択
 
@@ -37,14 +37,14 @@ ms.locfileid: "2191536"
 
 | パターン                       | ドキュメント |
 |-------------------------------|---------------|
-| OData                         | [OData](odata.md) |
-| バッチ データ API                | [定期統合](recurring-integrations.md)<br>[データ パッケージ API](data-management-api.md) |
-| 顧客サービス                | [顧客サービス](custom-services.md) |
-| 外部 Web サービスの消費 | [外部 Web サービスの使用](consume-external-web-service.md) |
-| Excel 統合             | [Office 統合](../office-integration/office-integration.md) |
+| OData                         | [データ プロトコル (OData) を開く](odata.md) |
+| バッチ データ API                | [定期統合](recurring-integrations.md)<br>[データ管理パッケージ REST API](data-management-api.md) |
+| 顧客サービス                | [顧客サービスの開発](custom-services.md) |
+| 外部 Web サービスの消費 | [外部 Web サービスの消費](consume-external-web-service.md) |
+| Excel 統合             | [Office 統合の概要](../office-integration/office-integration.md) |
 
 > [!NOTE]
-> オンプレミス配置の場合、唯一サポートされる API は[データ パッケージ API](data-management-api.md) です。 これは、7.2、platform update 12 ビルド 7.0.4709.41184 で現在利用可能です。
+> オンプレミス配置の場合、唯一サポートされる API は [データ管理パッケージ REST API](data-management-api.md) です。 これは、7.2、platform update 12 ビルド 7.0.4709.41184 で現在利用可能です。
 
 ## <a name="synchronous-vs-asynchronous-integration-patterns"></a>同期および非同期の統合パターン
 
@@ -257,7 +257,7 @@ Finance and Operations:
 
 ## <a name="typical-scenarios-and-patterns-that-call-external-web-services"></a>外部の Web サービスを呼び出す一般的なシナリオとパターン
 
-通常、アプリケーションはオンプレミスまたは別の SaaS プロバイダーによってホストされている外部 Web サービスを呼び出します。 この場合、アプリケーションは統合クライアントとして機能します。 統合クライアントを作成するときは、他のアプリケーションの統合クライアントを作成するときと同じベスト プラクティスおよびガイドラインのセットに従ってください。 単純な例として、[外部 Web サービスの使用](consume-external-web-service.md) を参照してください。
+通常、アプリケーションはオンプレミスまたは別の SaaS プロバイダーによってホストされている外部 Web サービスを呼び出します。 この場合、アプリケーションは統合クライアントとして機能します。 統合クライアントを作成するときは、他のアプリケーションの統合クライアントを作成するときと同じベスト プラクティスおよびガイドラインのセットに従ってください。 単純な例として、 [外部 Web サービスの使用](consume-external-web-service.md) を参照してください。
 
 > [!IMPORTANT]
 > セキュリティ要件のため、運用およびサンドボックス環境では、トランスポート層セキュリティ (TLS) 1.2 以降を使用するセキュリティ保護された通信のみがサポートされます。 つまり、アプリケーションが呼び出すターゲットの Web サービス エンドポイントは、TLS 1.2 以降をサポートする必要があります。 ターゲット サービス エンドポイントがこの要件を満たしていない場合、呼び出しは失敗します。 例外エラー メッセージは、次のメッセージのようになります。

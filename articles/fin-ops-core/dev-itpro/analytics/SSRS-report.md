@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 3961691ff283e089f6f5840d8a9c634eb61ab83f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cadd69447a730a7e51b655d9ad5cdc0d928c8616
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174583"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771646"
 ---
 # <a name="sql-server-reporting-services-ssrs-reports-that-are-available"></a>使用可能な SQL Server Reporting Services (SSRS) レポート
 
@@ -36,7 +36,7 @@ ms.locfileid: "2174583"
 - アプリケーション ページやその他のレポートへドリルダウン ナビゲーション可能なパラメーター化されたビュー。
 - 地方自治体が規制するビジネス慣行に準拠した正確なドキュメントの作成に使用します。
 
-詳細については、[次世代の申告ソリューションの作成](create-nextgen-reporting-solutions.md) を参照してください。
+詳細については、[レポート ソリューションの作成](create-nextgen-reporting-solutions.md) を参照してください。
 
 ## <a name="to-view-the-report"></a>レポートを表示するには
 [SQL Server Reporting Services レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、利用可能な各レポートがリストされています。 レポートには、各レポートで使用されるデータ セットと、各レポートで使用可能なフィルターおよびフィールドが表示されます。

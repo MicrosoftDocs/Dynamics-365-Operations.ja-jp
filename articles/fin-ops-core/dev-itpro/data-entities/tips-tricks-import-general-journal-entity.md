@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 167afa70bfa35b966081709f1587d61d401d318f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 23a4cff85bb5c9d119f9ec47e8421aa1964a3d4f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184350"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769613"
 ---
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
 
@@ -57,7 +57,7 @@ ms.locfileid: "2184350"
 
 ### <a name="voucher-number"></a>伝票番号
 
-- 一般仕訳エンティティの **セット ベースのプロセス** 設定を使用する場合、伝票番号をインポートされたファイルで指定する必要があります。 伝票が分散されていない場合でも、一般仕訳帳内のすべてのトランザクションには、インポートしたファイルで指定された伝票番号が割り当てられます。 セット ベースのプロセスを使用し、なお、伝票番号に対して定義されている番号順序を使用する場合は、2016 年 2 月のリリースで修正プログラムが提供されています。 修正プログラムの番号は 3170316 で、Lifecycle Services (LCS) からダウンロードできます。 詳細については、 [Lifecycle Services から修正プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md) を参照してください。
+- 一般仕訳エンティティの **セット ベースのプロセス** 設定を使用する場合、伝票番号をインポートされたファイルで指定する必要があります。 伝票が分散されていない場合でも、一般仕訳帳内のすべてのトランザクションには、インポートしたファイルで指定された伝票番号が割り当てられます。 セット ベースのプロセスを使用し、なお、伝票番号に対して定義されている番号順序を使用する場合は、2016 年 2 月のリリースで修正プログラムが提供されています。 修正プログラムの番号は 3170316 で、Lifecycle Services (LCS) からダウンロードできます。 詳細については、[Lifecycle Services (LCS) から更新プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md) を参照してください。
 
     - この機能を有効にするには、インポートに使用される仕訳帳名で、**転記時の番号配賦** を **はい** に設定します。
     - 伝票番号は、インポートしたファイルで定義する必要があります。 ただし、この番号は一時的なもので、仕訳帳が転記されるときに伝票番号で上書きされます。 一時伝票番号で、仕訳帳の明細行が正しくグループ化されていることを確認する必要があります。 たとえば、転記の際に一時的な伝票番号が 1 の 3 つの明細行があるとします。 3 つの明細行すべての一時的な伝票番号は、番号順序の次の番号で上書きされます。 これら 3 つの明細行がバランス済エントリではない場合、伝票は転記されていません。 次に、一時的な伝票番号が 2 の行が見つかった場合は、この番号は、番号順序の次の伝票番号で上書きされます。

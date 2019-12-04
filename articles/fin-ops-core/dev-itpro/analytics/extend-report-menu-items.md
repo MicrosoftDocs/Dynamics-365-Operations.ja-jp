@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 8c156de5aaeb9537a9f22e0cc33197381a19fc3c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 24fe64cbd4d2e4787a61fa6478ffa1f8fe7af3ef
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183401"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771155"
 ---
 # <a name="extend-report-menu-items-to-redirect-user-navigation"></a>レポート メニューの項目を拡張してユーザーナビゲーションをリダイレクトします。
 
@@ -46,7 +46,7 @@ ms.locfileid: "2183401"
 
 [![fleet-workspace-customer-list](./media/fleet-workspace-customer-list.png)](./media/fleet-workspace-customer-list.png)
 
-1. **アプリケーション カスタマイズの新しいモデルを作成します。** 拡張モデルに関する詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md) を参照してください。
+1. **アプリケーション カスタマイズの新しいモデルを作成します。** 拡張モデルに関する詳細については、 [拡張機能およびオーバーレイによるカスタマイズ](../extensibility/customization-overlayering-extensions.md) を参照してください。
 2. **Microsoft Visual Studioで新しいプロジェクトを作成し、** **カスタム レポートを追加します。** また、すべてのソリューション コンポーネントを追加します。 これらのコンポーネントには、RDP クラスまたはソース クエリ、コントローラー クラス、UI ビルダー (ある場合) が含まれます。
 3. **レポートにアクセスするために使用するメニュー項目の拡張機能を作成します。** この例では、出力メニュー項目は **FMCustomerListReport** と名前が付けられています。 メニュー項目の構造を使用して、アプリケーションで公開されているメニュー項目の名前を見つけます。 次の図は、アプリケーション エクスプローラーでのアクションを示しています。
 

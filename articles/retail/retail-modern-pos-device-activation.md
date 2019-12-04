@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 08221cbe97c87bbc20ab61cc0ad333e06bd160ef
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: bb977043e9d2240e81c904d2a4ba88409fb6dc2d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025066"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811179"
 ---
 # <a name="configure-install-and-activate-retail-modern-pos-mpos"></a>Retail Modern POS (MPOS) のコンフィギュレーション、インストール、有効化
 
@@ -113,7 +113,7 @@ ms.locfileid: "2025066"
 
 オンプレミス環境で使用する Retail Modern POS をインストールする場合は、次のようにコマンド ラインからインストーラーを起動する必要があります。
 
-ModernPosSetupOffline.exe -UseAdfsAuthentication
+    ModernPosSetupOffline.exe -UseAdfsAuthentication
 
 Retail Modern POS インストーラーは、まず関連付けられているファイルを抽出し、インストールを開始します。
 
@@ -199,7 +199,7 @@ Retail Modern POS インストーラーは、まず関連付けられている�
     > [!NOTE]
     > **外部識別子** フィールドは空のままです。 この動作は予期されています。 したがって、これは無視できます。
 
-この手順は、Retail Cloud POS または Retail Modern POS を有効化する前に完了する必要があります。 詳細については、[本社からの Retail アカウントとデバイスの管理](set-up-activation-accounts-validate-devices-hq.md) を参照してください。
+この手順は、Retail Cloud POS または Retail Modern POS を有効化する前に完了する必要があります。 詳細については、[ Retail 有効化アカウントの管理とデバイスの検証](set-up-activation-accounts-validate-devices-hq.md) を参照してください。
 
 ### <a name="run-the-validate-devices-for-activation-check"></a>有効化チェックのためにデバイス検証を実行
 
@@ -318,6 +318,6 @@ Retail Modern POS インストーラーは、まず関連付けられている�
 
 **ソリューション:** この問題は、Retail Modern POS が同じコンピュータへのネットワーク コール (つまり、それ自体の呼び出し) を行うことができないために発生します。 この問題を緩和するには、同じコンピュータに対して通信できるように AppContainer ループバック例外を有効にする必要があります。 Retail Modern POS のこのループバックを有効にするのにさまざまなアプリケーションが役立ちます。 ループバックの詳細については、[ループバックの有効化およびネットワーク分離のトラブルシューティングの方法](https://msdn.microsoft.com/library/windows/apps/hh780593.aspx) を参照してください。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[POS のレイアウト デザイナーのインストール](install-pos-layout-designer.md)
+[Retail 販売時点管理 (POS) のレイアウト デザイナーのインストール](install-pos-layout-designer.md)

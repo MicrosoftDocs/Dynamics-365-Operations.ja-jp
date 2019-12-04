@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b65a4cd7de7a5e50f7c0d9d43f7ee96dfbe18376
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4f084326c6e4a809d82990c58150a39408d04a4d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183166"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812048"
 ---
 # <a name="solve-dependencies-among-models-by-using-delegates-during-code-migration"></a>コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 
@@ -33,7 +33,7 @@ ms.locfileid: "2183166"
 <a name="overview"></a>概要
 --------
 
-Finance and Operations は、各モデルが個別のパッケージにある、複数のモデルに分割されます。 主要な 3 つのモデルは、アプリケーション プラットフォーム、アプリケーション基盤、アプリケーション スイートです。 モデル分割を使用して、階層が作成されました。ここで上位のモデルは依存関係を持つことができ、下位のモデル内の要素にアクセスできますが、上位のモデルにはアクセスできません。 たとえば、この設定では、アプリケーション スイートはその要素、アプリケーション基盤の要素およびアプリケーション プラットフォームの要素にフル アクセスできます。 アプリケーション基準は、独自の要素とアプリケーション プラットフォームの要素にアクセスできます。 最後に、アプリケーション プラットフォームは独自の要素にのみアクセスできます。 モデルとパッケージについては、[モデル](../dev-tools/models.md) を参照してください。
+Finance and Operations は、各モデルが個別のパッケージにある、複数のモデルに分割されます。 主要な 3 つのモデルは、アプリケーション プラットフォーム、アプリケーション基盤、アプリケーション スイートです。 モデル分割を使用して、階層が作成されました。ここで上位のモデルは依存関係を持つことができ、下位のモデル内の要素にアクセスできますが、上位のモデルにはアクセスできません。 たとえば、この設定では、アプリケーション スイートはその要素、アプリケーション基盤の要素およびアプリケーション プラットフォームの要素にフル アクセスできます。 アプリケーション基準は、独自の要素とアプリケーション プラットフォームの要素にアクセスできます。 最後に、アプリケーション プラットフォームは独自の要素にのみアクセスできます。 モデルとパッケージについては、 [モデル と パッケージ](../dev-tools/models.md) を参照してください。
 
 [![Del1](./media/del1.jpg)](./media/del1.jpg) 
 
@@ -138,7 +138,7 @@ SubscribesTo キーワードを使用して、applyDiscountDelegateHandler メ�
 -   クラス参照
 -   SubscribesTo 参照
 
-[メタデータ検索と Visual Studio](../dev-tools/metadata-search-visual-studio.md) ページで説明されているメタデータ検索ツールは、デリゲート、またはそのハンドラーを検索するための優れた方法です。 Visual Studio で、<strong>Dynamics 365 **&gt; **メタデータ検索</strong>に移動してメタデータ検索ツールを開きます。 
+[メタデータ検索と Visual Studio](../dev-tools/metadata-search-visual-studio.md) ページで説明されているメタデータ検索ツールは、デリゲート、またはそのハンドラーを検索するための優れた方法です。 Visual Studio で、 **Dynamics 365 &gt; メタデータ検索** に移動してメタデータ検索ツールを開きます。 
 
 [![Del15](./media/del15.png)](./media/del15.png) 
 

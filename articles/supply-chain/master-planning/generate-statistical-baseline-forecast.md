@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ce8c1e7a3a4533516d8f2e2b0af46633e4c7667
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c0d9b8708df413118d6e1c1dbe788ce4f6ed5b2f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250740"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815183"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>統計ベースライン予測の生成
 
@@ -56,7 +56,7 @@ ms.locfileid: "2250740"
 
 **ベースライン予測開始日** - **開始日** フィールドは、過去の日付に設定できます。 つまり、過去の需要予測を生成できます。 これはユーザーが予測サービス パラメーターを調整でき、過去に生成した統計予測を実際の履歴需要と一致できるため便利です。 ユーザーは、将来の統計ベースライン予測を生成する場合に、これらのパラメータの設定を使用できます。 
 
-**手動調整を需要予測に転送** のチェック ボックスがオンの場合、新しい ベースライン予測に以前の需要予測繰り返しの手動調整を自動的に適用できます。 チェック ボックスがオフの場合、手動調整がベースライン予測に追加されませんが、削除もされません。 予測の手動調整は、予測のインポート時に **ベースライン需要予測に対して行われた手動調整の保存** のチェックボックスを オフにした場合にのみ、削除することができます。 手動調整は認証時に保存されます。 したがって、ユーザーが予測の手動調整を行い、Supply Chain Management で予測を承認しない場合は変更が失われます。 手動調整に関する詳細、および動作については、「[調整された予測の承認](authorize-adjusted-forecast.md)」を参照してください。 
+**手動調整を需要予測に転送** のチェック ボックスがオンの場合、新しい ベースライン予測に以前の需要予測繰り返しの手動調整を自動的に適用できます。 チェック ボックスがオフの場合、手動調整がベースライン予測に追加されませんが、削除もされません。 予測の手動調整は、予測のインポート時に **ベースライン需要予測に対して行われた手動調整の保存** のチェックボックスを オフにした場合にのみ、削除することができます。 手動調整は認証時に保存されます。 したがって、ユーザーが予測の手動調整を行い、Supply Chain Management で予測を承認しない場合は変更が失われます。 手動調整に関する詳細、および動作については、[調整された需要予測の承認](authorize-adjusted-forecast.md) を参照してください。 
 
 需要予測の生成には、ユーザーが生成された予測を識別できるように、名前とコメントをつけられます。 これらの値は、**統計ベースライン予測の生成履歴** ページの予測生成の履歴に表示されます。 
 
@@ -75,6 +75,6 @@ ms.locfileid: "2250740"
 
 - [需要予測の設定](demand-forecasting-setup.md)
 
-- [ベースライン予測の手動調整の実施](manual-adjustments-baseline-forecast.md)
+- [ベースライン予測に対して手動調整を行う](manual-adjustments-baseline-forecast.md)
 
-- [調整された予測の承認](authorize-adjusted-forecast.md)
+- [調整された需要予測の承認](authorize-adjusted-forecast.md)

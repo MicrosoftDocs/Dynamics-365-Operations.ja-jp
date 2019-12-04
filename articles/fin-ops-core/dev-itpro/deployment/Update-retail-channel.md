@@ -1,9 +1,9 @@
 ---
-title: クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
+title: Retail Cloud Scale Unit への更新プログラムと拡張機能の適用
 description: このトピックでは、クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 09/03/2019
+ms.date: 11/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,33 +15,33 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 9ca7a814982aaac462a298082b2ca04cec65a0a9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 893703c9c0a84619fc6d492c2dff89458f0eea12
+ms.sourcegitcommit: 9bc94ef205aab58cea4a6a4453434e7ed2f3eb9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183409"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2774386"
 ---
-# <a name="apply-updates-and-extensions-to-cloud-hosted-retail-channel-components"></a>クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
+# <a name="apply-updates-and-extensions-to-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit への更新プログラムと拡張機能の適用
 
 [!include[banner](../includes/banner.md)]
 
-アプリケーション バージョン 8.1.2 以降でレベル 2 サンドボックスまたは運用環境を更新し、クラウドで Retail チャンル コンポーネントの短縮ダウンタイム更新を有効にした場合は、Retail チャネル コンポーネントも更新する必要があります。 このトピックでは、クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。
+アプリケーション バージョン 8.1.2.x 以降でレベル 2 サンドボックスまたは運用環境を更新し、Retail Cloud Scale Unit を初期化した場合は、Retail チャネル コンポーネントも更新する必要があります。 このトピックでは、Retail Cloud Scale Unit に更新と拡張を適用する方法について説明します。
 
-Retail チャネル コンポーネントの更新は累積的です。 つまり、適用する更新すべてに、以前のリリースされたすべての変更がが含まれます。 Retail の配置可能パッケージを適用することも累積的なプロセスであり、拡張機能の以前に配置されたバージョンが置き換えられます。
+Retail Cloud Scale Unitの更新は累積的です。 つまり、適用する更新すべてに、以前のリリースされたすべての変更がが含まれます。 Retail の拡張の配置可能パッケージを適用することも累積的なプロセスであり、拡張機能の以前に配置されたバージョンが置き換えられます。
 
 ## <a name="prerequisites"></a>必要条件
 
 続行する前に、まず更新および拡張機能 (該当する場合) を環境に適用する必要があります。 詳細については、[クラウド環境への更新プログラムの適用](apply-deployable-package-system.md)を参照してください。
 
-クラウドでホストされている Retail チャネル コンポーネントを更新するには、以下を行います。
+Retail Cloud Scale Unit を更新するには、それぞれ Retail Cloud Scale Unit に対して次の手順を実行します。
 
 1. **環境の詳細** ページで、**環境機能 > Retail** に移動します。
 2. **Retail 配置設定** ページで、**更新** を選択します。
 3. 選択パネルで、更新先のバージョンを選択します。
 4. 同時に、拡張機能を適用することもできます。 
 
-クラウドでホストされている Retail チャネルに拡張機能を適用するには、次の操作を行います。
+拡張機能を a Retail Cloud Scale Unit に適用するには、次の手順を実行します。
 
 1. **Retail 配置設定** ページで、**拡張機能の適用** を選択します。
 2. 選択パネルで、適用する拡張機能を選択します。

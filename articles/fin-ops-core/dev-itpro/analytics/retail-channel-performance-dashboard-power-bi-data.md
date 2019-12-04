@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f783211f1d1c855fcadaa182539e7ea1dd90849b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e5270495c6e3d4da0a1da0adc7a7e8d031e47448
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183450"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772476"
 ---
 # <a name="retail-channel-performance-powerbicom-solution"></a>小売チャネルの実績 PowerBI.com ソリューション
 
@@ -42,14 +42,14 @@ Retail チャンネル パフォーマンス PowerBI.com ソリューション�
 
 ## <a name="connect-the-retail-channel-performance-powerbicom-solution-to-a-dynamicsax-data-source"></a>Retail チャネルの実績 PowerBI.com ソリューションを Dynamics AX データ ソースに接続します。
 1. https://www.powerbi.com に移動し、**サインイン**をクリックします。 アカウントがない場合は、サインアップし、新しい Power B を無料でプレビューできます。
-2. サインインするには、Power BI アカウントを持つ Microsoft Office 365 アカウントを入力します。
+2. サインインするには、Power BI アカウントを持つ Microsoft Office 365 アカウントを入力します。
 3. ワークスペースが表示されたら、左のナビゲーション ウィンドウの下部にある**データの取得**をクリックします。
 4. **サービス** セクションで、**取得**をクリックします。
 5. スクロールするか検索して **Microsoft Dynamics AX Retail channel performance** を見つけ、**今すぐ入手**をクリックします。
 6. 次の形式に Dynamics AX の URL を入力します。`https://<tenant>.cloudax.dynamics.com` (例えば、`https://YourAOSTenant.cloudax.dynamics.com`) です。 次に、**Next** をクリックして Dynamics AX データ ストレージからこの Power BI ダッシュボードにデータをプルします。
 7. 認証方法として **oAuth2** を選択し、**署名する** をクリックします。
 8. サインインするには、Dynamics AX 環境にアクセスするアクセス許可を持つ Office 365 のアカウントを入力します。
-9. データが Dynamics AX から Power BI に正常に引き込まれた後、左のナビゲーション ウィンドウで**Retail channel performance** ダッシュボードをクリックして、Power BI の個人の**Retail channel performance dashboard**を表示することができます。
+9. データが Dynamics AX から Power BI に正常に引き込まれた後、左のナビゲーション ウィンドウで**小売チャネルの実績** ダッシュボードをクリックして、Power BI の個人の**小売チャンネル パフォーマンス ダッシュボード**を表示することができます。
 
     [![小売チャンネル パフォーマンス ダッシュボード](./media/rcmpbidashboard-1024x679.png)](./media/rcmpbidashboard.png)
 
@@ -97,6 +97,6 @@ Dynamics AX データ エンティティおよび集約データ エンティテ
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Power BI 統合](power-bi-integration.md)
+[Power BI 統合を通して利用可能な機能とサービス](power-bi-integration.md)
 
-[ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md)
+[ワークスペース用に Power BI 統合を構成する](configure-power-bi-integration.md)

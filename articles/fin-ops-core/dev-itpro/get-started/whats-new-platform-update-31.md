@@ -3,7 +3,7 @@ title: Finance and Operations アプリのプラットフォーム更新プロ�
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 でプレビューされる機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 11/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,21 +15,27 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 2020-10-31
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Platform update 31
-ms.openlocfilehash: 38d4d40499a5df697107366124de0a47efb76e3b
-ms.sourcegitcommit: 654aaff001402397009148dad51f39af7e0cc114
+ms.openlocfilehash: 29860abd70d7c077e594e9e98bf295dcb51f744d
+ms.sourcegitcommit: 22904808753f5b19d5eed71c943586f1cc60db26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "2672997"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "2805510"
 ---
 # <a name="preview-features-in-platform-update-31-for-finance-and-operations-apps-january-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の機能のプレビュー
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 の新機能または変更されたプレビュー機能について説明します。 このバージョンのビルド番号は 7.0.5457 です。 一般提供開始日は 2020 年 1 月ですが、新機能は 2019 年 10 月の初期リリースで使用できます。 プラットフォーム更新プログラム 31 の詳細については [追加リソース](whats-new-platform-update-31.md#additional-resources) を参照してください。
+このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 の新機能または変更されたプレビュー機能について説明します。 このバージョンには 7.0.5457 のビルド番号が含まれており、次のように使用できます。
+
+- プレビューリリースは 2019 年 10 月です。
+- Ga (自動更新) は 2019 年 11 月です。
+- 自動更新は 2020 年 1 月です。
+
+プラットフォーム更新プログラム 31 の詳細については [追加リソース](whats-new-platform-update-31.md#additional-resources) を参照してください。
 
 ## <a name="turn-on-the-new-preview-grid-control-through-feature-management"></a>機能管理を通じて、新しい (プレビュー) グリッド コントロールをオンにする
 以前は、「&debug=reactGrid」を環境 URL に追加することによって、新しいグリッド コントロールは使用可能になりました。 プラットフォーム 更新プログラム 31 では、新しいグリッド コントロールは、機能管理ワークスペースを使用する的確な環境に対して有効にすることができるようになりました (フライトを有効にする方法に関する指示については、次のステップを参照してください)。 新しいグリッド コントロールに関する詳細については、[ユーザーの生産性 - 新しいグリッド](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid) を参照してください。
@@ -88,6 +94,8 @@ Excel アドインに複数の認証および承認の機能拡張があり、�
 ## <a name="skipautoorderby-api"></a>skipAutoOrderBy API
 ORDER BY 句を含めないよう明示的に指定することにより、AX クエリ オブジェクトを使用している場合、カーネルによって主キーが ORDER BY 句に追加されます。 この API は ORDER BY 句をスキップし、クエリには追加されません。 詳細については、[Q クラス](../dev-ref/q-classes.md) を参照してください。
 
+## <a name="batch-framework-contention-reduction"></a>バッチ フレームワークの競合軽減
+バッチフレームワークテーブルでの負荷の高いブロッキングと競合を軽減するために、パフォーマンスが強化されました。 この修正プログラムは、バッチタスクの選択とバッチジョブの完了時に競合が発生している現在の顧客環境を対象にしています。 この機能に関連する機能的な変更はありません。 この機能は、機能管理で有効にできます。
 
 ## <a name="additional-resources"></a>追加リソース
 

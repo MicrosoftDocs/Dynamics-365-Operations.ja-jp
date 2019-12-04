@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef67b2c70259000ec4039bd088e5ca21830c3176
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1a4914b0d828ae4c2e9406d6de66c21a216a75fe
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183433"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769742"
 ---
 # <a name="data-entities-overview"></a>データ エンティティの概要
 
@@ -139,7 +139,7 @@ ms.locfileid: "2183433"
 
 #### <a name="building-an-entity-by-using-a-wizard"></a>ウィザードを使用したエンティティの構築
 
-エンティティをビルドする最も簡単な方法は、ウィザードを使用することです。 このウィザードでは、ルート データ ソースを選択して他の関連するデー タソースに展開し、エンティティのフィールドを選択できます。 ウィザードを開始するには、**データ エンティティ** タイプの新しい項目をプロジェクトに追加します。 エンティティを構築するウィザードを使用するためのステップ バイ ステップの手順については、[データ エンティティの構築と消費](build-consuming-data-entities.md) を参照してください。 次のテーブルに、ウィザードでエンティティに設定したプロパティに関する情報を示します。
+エンティティをビルドする最も簡単な方法は、ウィザードを使用することです。 このウィザードでは、ルート データ ソースを選択して他の関連するデー タソースに展開し、エンティティのフィールドを選択できます。 ウィザードを開始するには、**データ エンティティ** タイプの新しい項目をプロジェクトに追加します。 ウィザードを使用してエンティティを構築する手順については、 [データ エンティティの構築と使用](build-consuming-data-entities.md) を参照してください。 次のテーブルに、ウィザードでエンティティに設定したプロパティに関する情報を示します。
 
 | プロパティ                            | 説明 |
 |-------------------------------------|-------------|

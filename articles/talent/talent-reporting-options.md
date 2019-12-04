@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 50342c847200d015a66c6f22007070bb26c6caef
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: ecbeb03b535f19131ddc6649d005702876bab65c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009355"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772968"
 ---
 # <a name="reporting-options-in-talent"></a>Talent のレポート オプション
 
@@ -42,7 +42,7 @@ ms.locfileid: "2009355"
 
 **ソリューション**
 
-- Common Data Service にフローする Core HR データは、Power BI Desktop に PowerApps Common Data Service コネクタ経由でレポートできます。 Common Data Service には Core HR データのサブセットが含まれていることに注意してください。 Power BI およびダッシュ ボードの詳細については、[PowerApps Common Data Service を使用した Power BI レポートおよびダッシュ ボードの作成](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi) を参照してください。
+- Common Data Service にフローする Core HR データは、Power BI Desktop に Power Apps Common Data Service コネクタ経由でレポートできます。 Common Data Service には Core HR データのサブセットが含まれていることに注意してください。 Power BI およびダッシュ ボードの詳細については、[Power Apps Common Data Service を使用した Power BI レポートおよびダッシュ ボードの作成](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi) を参照してください。
 - 電子申告 (ER) は、一部の Talent レポートで利用できます。 顧客主導のカスタマイズは、ER コンフィギュレーション オプション経由で実行できます。
 - データは、Microsoft Office 統合によって Talent が提供するさまざまなデータ エンティティを使用して、Microsoft Excel や Microsoft Word にエクスポートできます。
 

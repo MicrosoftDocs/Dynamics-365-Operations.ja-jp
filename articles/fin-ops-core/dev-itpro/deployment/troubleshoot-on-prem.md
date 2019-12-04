@@ -3,7 +3,7 @@ title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 25d0cb05670bd7baca22873d1d5cdc06831eb90c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8b86a5bfc17284d613fd9ba3c57be99533a48fd0
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191625"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770934"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -706,65 +706,7 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
 --- End of inner exception stack trace ---
  ```
 
- **解決策**: 
-   1. 配置前スクリプトと配置後スクリプトの実行をコンフィギュレーションします。 詳細については、[ローカル エージェントの配置前スクリプトと配置後スクリプト](../lifecycle-services/pre-post-scripts.md) を参照してください。
-   2. 次のコードを Predeployment.ps1 に追加します。
-
-        ```powershell
-            $agentShare = '<Agent-share path>'  # E.g '\\LBDContosoShare\agent''
-            Write-Output "AgentShare is set to $agentShare"
-            & $agentShare\scripts\TSG_UpdateFRDeployerConfig.ps1 -agentShare $agentShare
-        ```
-   3. Predeployment.ps1 と同じフォルダーに、次の内容の TSG_UpdateFRDeployerConfig スクリプトを作成します。
-
-        ```powershell
-            param (
-                [Parameter(Mandatory=$true)]
-                [string]
-                $agentShare = ''
-            )
-
-            $frConfig = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\Apps\FR\Deployment\FinancialReportingDeployer.exe.Config |
-                Select-Object -First 1 -Expand FullName
-
-            if( -not $frConfig)
-            {
-                Write-Output "Unable to find FinancialReportingDeployer.exe.Config"
-                return
-            }
-            Write-Output "Found config: $frConfig"
-
-            [xml]$xml = get-content $frConfig
-            $nodeList = $xml.GetElementsByTagName("loadFromRemoteSources")
-
-            if($nodeList.Count -eq 0)
-            {
-                # Create the node 
-                $newNode = $xml.CreateNode("element","loadFromRemoteSources","")
-                $newNode.SetAttribute("enabled","true")
-                # Find the parent
-                $nodeList = $xml.GetElementsByTagName("runtime")
-                $runtimeNode = $nodeList[0]
-                $runtimeNode.AppendChild($newNode)
-
-                # Save doc
-                $xml.save($frConfig)
-                Write-Output "Inserted new node: "$newNode.Name
-            }
-            else
-            {
-                $node = $nodeList[0]
-                $attribute = $node.Attributes.GetNamedItem("enabled")
-                if($attribute.Value -eq "true")
-                {
-                    Write-Output "Node already exists: "$node.Name
-                }
-                else
-                {
-                    Write-Output "Node already exists but attribute is incorrect: " $attribute.Name "is" $attribute.Value
-                }
-            }
-        ```
+**解決策**: TSG\_UpdateFRDeployerConfig.ps1 を使用します。 詳細については、[TSG_UpdateFRDeployerConfig.ps1](onprem-tsg-implementations.md#frdeployer)を参照してください。
 
 ### <a name="unable-to-deploy-financial-reporting-service"></a>財務報告サービスを配置できません
 
@@ -1170,7 +1112,7 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
 問題を確認し、欠落している依存関係を見つけるには、イベント ビューアーで、**アプリケーションとサービス**を開き、**Microsoft** \> **Dynamics** \> **AX-SetupModuleEvents** の順で移動して、見つからないモジュールのあるイベントを表示します。 たとえば、一般的に見つからないモジュールの 1 つは、ApplicationFoundationFormAdaptor です。
 
-この問題を修正してパッケージを正常に適用するには、依存モジュールを追加するか、依存モジュールが必要なモジュールを削除します。 依存するモジュールを追加するには、パッケージをビルドするときに依存関係を含める必要があります。 モジュールを削除するには、ModelUtil.exe を使用してモジュールを削除できます。 詳細については、「[モデルのエクスポートとインポート](../dev-tools/models-export-import.md)」を参照してください。
+この問題を修正してパッケージを正常に適用するには、依存モジュールを追加するか、依存モジュールが必要なモジュールを削除します。 依存するモジュールを追加するには、パッケージをビルドするときに依存関係を含める必要があります。 モジュールを削除するには、ModelUtil.exe を使用してモジュールを削除できます。 詳細については、 [モデルのエクスポートとインポート](../dev-tools/models-export-import.md) を参照してください。
 
 ### <a name="package-deployment-works-in-a-one-box-environment-but-not-in-the-sandbox-environment"></a>パッケージの展開がワン ボックス環境で機能するが、サンドボックス環境で機能しない
 
@@ -1460,3 +1402,20 @@ LCSにてサービス操作を行うと次のエラーが表示されること�
 
 > [!NOTE]
 > サービス パック2のインストールが必要し、累積的な更新を追加または修正プログラムをインストールする必要がないです。
+
+## <a name="SysClassRunner"></a>SysClassRunner は正常に実行されません
+
+**問題:** プラットフォーム更新プログラム 29 の SysClassRunner をプラットフォーム更新プログラム 31 を使用して実行しようとすると、次の例外が発生します。
+
+```stacktrace 
+Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationExeption ---> 
+System.TypeInitializationException: The type inititlaizer for 'Microsoft.Dynamics.Ax.Metadata.XppCompiler.CompilerTracer' threw an exception. ---> 
+System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS' threw an exception. ---> 
+System.IO.FileLoedAxception: Could not load file or assembly 'Microsoft.Diagnostics.Tracing.TraceEvent, Version=2.0.43.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 
+The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) at Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS.cctor() 
+--- End of inner exception stack trace ---
+```
+
+**理由:** ランタイムとアプリケーションとの間に .dll の不一致があります。
+
+**解決策** : TSG\_SysClassRunner.ps1 を使用します。 詳細については、[TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner)を参照してください。

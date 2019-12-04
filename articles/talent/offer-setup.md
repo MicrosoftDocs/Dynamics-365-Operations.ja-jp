@@ -1,5 +1,5 @@
 ---
-title: オファー管理の設定
+title: Attract でのオファー管理の設定
 description: このトピックでは、Microsoft Dynamics 365 Talent でのオファーの設定方法について説明します。
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010847"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832725"
 ---
-# <a name="set-up-offer-management"></a>オファー管理の設定 
+# <a name="set-up-offer-management-in-attract"></a>Attract でのオファー管理の設定
 
 [!include [banner](includes/banner.md)]
 
@@ -206,4 +206,4 @@ Attract 管理者によって設定可能なオファー作成プロセスの部
     - ESign - これは、すぐに使用できる既定のオプションで、ユーザーは名前とイニシャルを入力してオファーに署名することができます。
 
 
-オファー作成プロセスの詳細については、[作成、承認、および署名](./creating-offers.md)を参照してください。
+オファー作成プロセスの詳細については、[オファーの作成、承認、および署名](./creating-offers.md) を参照してください。

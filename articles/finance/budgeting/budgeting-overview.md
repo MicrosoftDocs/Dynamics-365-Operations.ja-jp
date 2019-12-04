@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c6a9e4dd3f3182c98a9f5491b07f8687c21e5c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 531fd219cc2db79e01a277c72eba66fb8a9b8bbd
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184074"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772654"
 ---
 # <a name="budgeting-home-page"></a>予算作成用のホーム ページ
 
@@ -42,12 +42,12 @@ ms.locfileid: "2184074"
 
 最後に、非常に成熟した組織は、従業員が組織の目標について教育されている組織文化を確立し、「出張の代わりにオンライン ミーティングを検討する」ようなポリシーを通じてこれらの目標に従う可能性があります。 アプリケーションには、会社の管理がハード コントロール (予算を超過する転記ができません) またはソフト コントロール (ユーザーが利用可能な予算資源を超えると警告されますが、続行方法を決めることができます) のいずれかを選択できる予算管理フレームワークが含まれます。 最後に、ローリング予測を使用できます。 ローリング予測は、予算対実績の定期的な比較であり、会社が予算との比較においてどの程度効果的に運営されているかを定義するために使用します。 ローリング予測はトレンドの特定にも使用されます。 Finance and Operations では、ローリング予測は、最初の計画活動として予算計画ドキュメント経由でサポートされます。 ローリング予測は、次回の予算サイクルの計画と並列して実行できます。
 
--   [基本予算作成: 概要およびコンフィギュレーション](basic-budgeting-overview-configuration.md)
--   [予算管理: 概要およびコンフィギュレーション](budget-control-overview-configuration.md)
--   [予算計画: 概要およびコンフィギュレーション](budget-planning-overview-configuration.md)
+-   [予算作成の概要](basic-budgeting-overview-configuration.md)
+-   [予算管理の概要](budget-control-overview-configuration.md)
+-   [予算計画の概要](budget-planning-overview-configuration.md)
 -   [職位予測](position-forecasting.md)
 -   [予算計画妥当性ドキュメント](budget-planning-justification-docs.md)
--   [Microsoft Excel の予算計画テンプレート](budget-planning-excel-templates.md)
+-   [Excel の予算計画テンプレート](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>予算作成ツール
 [![予算作成ツール](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 

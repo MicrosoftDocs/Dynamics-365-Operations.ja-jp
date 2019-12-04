@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aa71946e7e4e3472b1ffd5bbb420a5b10c95ea14
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 1131051c262c67e4bdcd83f5343170c16d160eab
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570598"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811130"
 ---
 # <a name="retail-point-of-sale-pos-device-activation"></a>小売販売時点管理 (POS) デバイスのライセンス認証
 
@@ -61,7 +61,7 @@ ms.locfileid: "2570598"
     ![POS ウィザード (ページを開始する前に)](./media/p24.png)
 
 3.  Cloud POS または Modern POS を起動します。
-4.  AAD 資格情報を使用してサインインします。 AAD アカウントが既にマッピングされている必要があります。 手順については、[Retail Modern POS セルフ サービスとデバイスのライセンス認証](../retail-modern-pos-device-activation.md) を参照してください。 クラウド POS で、サーバー URL は、アドレス バーに自動的に入力されます。 Modern POS で、サーバー URL をコピーし貼り付ける必要があります。
+4.  AAD 資格情報を使用してサインインします。 AAD アカウントが既にマッピングされている必要があります。 手順については、 [Configure, install, and activate Retail Modern POS (MPOS) の構成、インストール、およびアクティベーション](../retail-modern-pos-device-activation.md).を参照してください。 クラウド POS で、サーバー URL は、アドレス バーに自動的に入力されます。 Modern POS で、サーバー URL をコピーし貼り付ける必要があります。
 
     [![POS ウィザード、サーバー URL ページの追加](./media/p18.png)](./media/p18.png)
 
@@ -72,7 +72,8 @@ ms.locfileid: "2570598"
 
 7.  適切なレジスターとデバイスを選択します。 
 
-    **注記:** このデバイスは**保留中**、**非有効化**、または**有効化**とすることができます。 または、Retail HQ **デバイスをストアからレジスターに関連付ける**設定を有効にする場合は、関連付けられているデバイスを持たないレジスターの一覧を表示する可能性があります。 
+    > [!NOTE]
+    > このデバイスは **保留中**、**非有効化**、または **有効化** とすることができます。 または、Retail HQ **デバイスをストアからレジスターに関連付ける**設定を有効にする場合は、関連付けられているデバイスを持たないレジスターの一覧を表示する可能性があります。 
 
     [![POS ウィザード、レジスターおよびデバイス ページの選択](./media/p22.png)](./media/p22.png)
 

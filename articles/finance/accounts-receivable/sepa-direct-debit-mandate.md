@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45cabc7d263299763b6ee457063c96cdf384eeeb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: aba265e69bde9a9c194147d6ee6a806e9b2bd7c2
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189019"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772125"
 ---
 # <a name="set-up-sepa-direct-debit-mandate"></a>SEPA の口座引落の委任状の設定
 
@@ -48,9 +48,9 @@ ms.locfileid: "2189019"
 -   オプション: 顧客のそれぞれに複数の委任状があると予測される場合、**期間** フィールドで **請求書**を選択します。 各請求書ごとの個別の支払を作成し、支払ごとに各請求書に指定された委任状が使用されます。
 -   口座引落の委任状を使用して支払を作成するには、**委任状の要求** オプションを選択します。 **委任状の要求** オプションは、**支払タイプ** フィールドで **電子支払** を選択している場合にのみ使用できます。
 
-その他のリソース
+追加リソース
 
-[口座引落の概要](sepa-direct-debit-overview.md) 
+[単一ユーロ支払地域 (SEPA) 口座引落の概要](sepa-direct-debit-overview.md) 
 
 [顧客の口座引落の委任状の作成](tasks/create-direct-debit-mandate-customer.md) 
 

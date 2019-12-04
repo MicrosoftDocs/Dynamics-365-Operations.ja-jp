@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d90e3c3dbbc6eaf40a3b45897b1f7810e5efd9e9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fdf3b3e9c78a1645b1b927906548e77b27b1639e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191702"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772345"
 ---
 # <a name="code-editor-features"></a>コード エディター機能
 
@@ -44,11 +44,11 @@ ms.locfileid: "2191702"
 
 ![opendesigner](./media/opendesigner.jpg)
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[開発者ホーム ページ](developer-home-page.md)
+[開発およびカスタマイズのホーム ページ](developer-home-page.md)
 
-[開発ツールの概要](development-tools-overview.md)
+[Visual Studioの開発ツール](development-tools-overview.md)
 
 
 

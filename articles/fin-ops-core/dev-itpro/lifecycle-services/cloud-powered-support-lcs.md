@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5bddf1b26ce46e6a60414f4db36c81ab5c943f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c8e908264901eda9be312caf98e97c043b64f4de
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183219"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812153"
 ---
 # <a name="manage-the-support-experiences-for-finance-and-operations-apps"></a>Finance and Operations アプリのサポート エクスペリエンスの管理 
 
 [!include [banner](../includes/banner.md)]
 
-サポート ツールを使用するには、あらかじめ Lifecycle Services (LCS) でプロジェクトを作成して、環境にシステム診断プログラムをインストールして実行する必要があります。 詳細については、[システム診断 (Lifecycle Services, LCS)](ax-2012/system-diagnostics-lcs.md) を参照してください。
+サポート ツールを使用するには、あらかじめ Lifecycle Services (LCS) でプロジェクトを作成して、環境にシステム診断プログラムをインストールして実行する必要があります。 詳細については、 [Lifecycle Services (LCS) の システム診断](ax-2012/system-diagnostics-lcs.md) を参照してください。
 
 ## <a name="open-a-new-incident"></a>新しいインシデントを開く
 1. LCS にて、サポート インシデントを提出するプロジェクトに移動します。 
@@ -135,7 +135,7 @@ PartnerSourceビジネス センター アカウントが見つからない場�
 ![ソフトウェア保証プラン](media/cd8f65a32c30722ea687dfbc5cc30874.png)
    
 ## <a name="report-production-outage"></a>稼働停止のレポート
-プロダクション環境の品質が低下または使用不可能になった際に、Microsoft サポートに迅速に問題を効果的にエスカレーションするには、 [Report a production outage](report-production-outage.md) をご確認ください。
+プロダクション環境の品質が低下または使用不可能になった際に、Microsoft サポートに迅速に問題を効果的にエスカレーションするには、 [稼働停止をレポート](report-production-outage.md) をご確認ください。
 
 ## <a name="phone-support"></a>電話サポート
 [新しいインシデントを開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident) の手順に従ってサポートに連絡することをお勧めします。 LCS で新しいインシデントを開けない場合は、次のいずれかのオプションで電話サポートを受けることができます:

@@ -1,9 +1,9 @@
 ---
 title: ゴールデン コンフィギュレーション プロモーション
-description: このトピックでは、Finance and Operations アプリケーションのゴールデン コンフィギュレーション プロモーションについて説明します。
+description: このトピックでは、Finance and Operations の ゴールデン コンフィギュレーション プロモーション について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: fa028114501bbbbaf937ba7251d9595335bd684e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 75eddfb4b4195b960bc03bc5fab5d0c8be0bdd9a
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249074"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824507"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 
@@ -165,7 +165,7 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
 2. **サービス要求** ページで、**追加** を選択し、**サンドボックスから実稼働環境** を選択します。
 3. **サンドボックスから実稼働環境** ダイアログ ボックスで、次の手順に従います。
 
-    1. **環境名**フィールドで、実稼動環境を選択します。
+    1. **ソース環境名称** フィールドで、データベースのコピー元のサンドボックス環境を選択します。
     2. **ダウンタイム開始日を優先** および **ダウンタイム終了日を優先** フィールドを設定します。 サイクル終了日は、サイクル開始日の少なくとも 1 時間後でなければなりません。 要求を実行するためのリソースが確保されるようにするには、推奨ダウンタイム ウィンドウの少なくとも 24 時間前にリクエストを送信してください。
     3. 下部にあるチェック ボックスをオンにして、条項に同意します。
 

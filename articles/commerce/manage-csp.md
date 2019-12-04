@@ -6,7 +6,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 50f3ad942d5899614828dae0a0dd6d9f539c34fa
-ms.sourcegitcommit: 1febba80b5a5f089d8f9c6929e07a356daa3aa86
+ms.openlocfilehash: 3fc3f06920e00f0e554e5dd25b1a2728f7270133
+ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2655152"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2698039"
 ---
 # <a name="manage-content-security-policy-csp"></a>Content Security Policy (CSP) の管理
 

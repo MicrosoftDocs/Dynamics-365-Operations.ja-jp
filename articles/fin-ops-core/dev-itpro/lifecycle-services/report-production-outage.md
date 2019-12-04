@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 827458937860cdef69a0ce98553cc2c30915219b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 12e108722cd3457ab16b265bec739f9df96df709
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183190"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812151"
 ---
 # <a name="report-a-production-outage"></a>稼働停止のレポート
 
@@ -54,9 +54,13 @@ Lifecycle Services (LCS) には、**レポート生産停止**と呼ばれる機
 
 1. LCS プロジェクトにログインします。  
 2. ハンバーガー メニューから**サポート**をクリックします。 
+
   ![サポートをクリック](media/click-support.png)
+  
 3. **Microsoft に送信**タブで、**稼働停止のレポート**をクリックします。
+
   ![サポートをクリック](media/report-production-outage.png)
+  
 4. プロダクションの停止を確認し、ドロップダウン リストから停止シナリオを選択してから、**続行**をクリックします。
 5. 停止に関するタイトルと詳細を追加して、**次**をクリックします。
 6. 連絡先の情報を入力し、**次へ** をクリックします。

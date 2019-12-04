@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent のプレビュー機能にアクセス
+title: 機能の管理
 description: このトピックでは、管理者が Microsoft Dynamics 365 Talent のプレビュー機能を有効にできる方法について説明し、プレビューで現在有効な機能を一覧表示します。
 author: tracykeya
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 0f9a83aeea3942d3c56d32956f79490c91565e9e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551606"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833303"
 ---
-# <a name="access-preview-features-in-microsoft-dynamics-365-talent"></a>Microsoft Dynamics 365 Talent のプレビュー機能にアクセス
+# <a name="manage-features"></a>機能の管理
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent の人事管理サービス (HCM) 機能の継続的なロールアウトの一環として、お客様にできるだけ早く新しい機能を体験していただきたいと思います。 管理者はそれぞれの環境でプレビュー機能を表示し使用することができます。 これらの機能は、一般的な使用可能性の準備がほぼ整い、および徹底したテストを経ています。 一般提供にリリースする前に、顧客フィードバックおよび検証の最終ラウンドを探しています。
 
@@ -117,6 +117,6 @@ Microsoft Dynamics 365 Talent の人事管理サービス (HCM) 機能の継続�
 ## <a name="see-also"></a>参照
 
 - [Talent アプリの試みまたは購入](https://dynamics.microsoft.com/talent/overview/)
-- [新機能](./whats-new.md)
-- [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Talent に関するサポートの利用](./talent-support.md)
+- [Dynamics 365 Talent の新機能および変更された機能](./whats-new.md)
+- [リリース計画](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft Dynamics 365 Talent に関するサポートの利用](./talent-support.md)

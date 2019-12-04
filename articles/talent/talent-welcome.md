@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: edc2f59752a32b9cd20902d0b7a1edfe3ba4d15b
-ms.sourcegitcommit: ff160a9f9879f3ec015ffef11fbc8b7c1b84a59d
+ms.openlocfilehash: 841ef8f2b7c319e0a6b3a9ce9a9e4959e70aa8cd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552953"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812767"
 ---
 # <a name="welcome-to-dynamics-365-talent"></a>Dynamics 365 Talent へようこそ
 
@@ -53,10 +53,10 @@ Talentを使用して、次のタスクを実行できます。
 Talentで作業をするときは、部門、職務、職位などの要素を使用して、組織の構成方法を決定します。 これらの要素は、構成する基本要素に含まれます。 個々の従業員は、職務に関連付けられている職位に割り当てられます。
 
 -   [部門、職務、職位を使用した従業員の編成](departments-jobs-positions.md)
--   [会社固有の HR パラメーターの設定](set-up-company-specific-hr-parameters.md)
--   [法人間の HR パラメーターの設定](set-up-hr-parameters-across-legal-entities.md) 
+-   [会社固有の人事管理 (HR) パラメーターの設定](set-up-company-specific-hr-parameters.md)
+-   [法人間の人事管理 (HR) パラメーターの設定](set-up-hr-parameters-across-legal-entities.md) 
 -   [個人のアクションに関するよく寄せられる質問](personnel-actions-faq.md)
--   [休暇の概要](leave-absence-overview.md)
+-   [休暇および欠勤の管理](leave-absence-overview.md)
 -   [How to use Dynamics 365 Talent: Leave and Absence (ビデオ)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [How to manage personnel in Dynamics 365 Talent (ビデオ)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
@@ -64,8 +64,8 @@ Talentで作業をするときは、部門、職務、職位などの要素を�
 
 Talent に含まれている Attract アプリは、組織が必要とするスキルを持った候補者を特定し、面接して、採用するのに役立ちます。 採用後は、新しい従業員が組織の一員となるうえで Onboard アプリが役立ちます。Onboard アプリでは、期待内容の正確な設定、初期段階で必要な情報の提供、同僚との交流、新しいロールでの成功に向けた準備を行うことができます。  
 
-- [Attract の概要](attract-overview.md)
-- [Onboard の概要](create-onboarding-experience.md)
+- [Microsoft Dynamics 365 Talent - Attract の特徴と機能](attract-overview.md)
+- [Onboard の使用を開始する](create-onboarding-experience.md)
 
 ## <a name="retain-and-motivate-employees"></a>従業員の雇用維持と動機付け
 
@@ -83,16 +83,16 @@ Talent に含まれている Attract アプリは、組織が必要とするス�
 
 -   [パフォーマンス管理](performance-management-overview.md)
 -   [要員のスキルとビジネス ニーズの調整](skills.md)
--   [コースを通じたトレーニングの管理](courses.md)
+-   [トレーニング コースの設定](courses.md)
 -   [How to manage employee development in Dynamics 365 Talent (ビデオ)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>福利厚生の作成と維持
 
 賃金、給与、賞与といった従業員への報酬のほかに、健康保険、退職後の計画などの福利厚生プログラムを作成できます。 また、貸与プログラムなど、会社が従業員にコンピューターや電話などのアイテムを貸与する福利厚生を管理することもできます。
 
--   [福利厚生プログラムの管理](manage-benefit-program.md)
+-   [福利厚生プログラムの定義および管理](manage-benefit-program.md)
 -   [給付金の適格性ポリシー](benefit-eligibility-policies.md)
--   [作業者への貸与品目の管理](loan-items.md)
+-   [作業者へ貸与された品目の管理マネージド](loan-items.md)
 -   [How to manage employee benefits in Dynamics 365 Talent (ビデオ)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>職場の安全性とコンプライアンスの管理
@@ -108,5 +108,5 @@ Talentは、アメリカ障害者法 (Americans with Disabilities Act)、移民�
 
 -   [アンケート](questionnaires.md)
 -   [アンケートのデザイン](design-questionnaires.md)
--   [アンケートの配布と記入](distribute-questionnaires.md)
+-   [アンケートの配布とスケジューリング](distribute-questionnaires.md)
 -   [アンケート結果の表示と評価](evaluate-questionnaire-results.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a7db93e1877034051b6add4c11ddfe7cd7d17e0b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 575b27de845d931c990b1d19254b5218fa6e4199
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187915"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770853"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>分析コードの作成と分析コード メンバーのインポート
 
@@ -44,11 +44,10 @@ ms.locfileid: "2187915"
 原価会計にデータをインポートすると、組織のすべてのレベルでマネージャーに洞察を提供するさまざまな分析視点を構築するためにそのデータを使用することができます。 以下のトピックでは、分析コードの作成および分析コード メンバーのインポートに関する情報を提供します。 
 
 -  [原価要素分析コード](cost-elements.md)
--  [原価要素の作成 (タスク ガイド)](./tasks/create-cost-elements.md)
+-  [原価要素の作成](./tasks/create-cost-elements.md)
 -  [原価オブジェクト分析コード](cost-objects.md)
--  [原価要素の作成 (タスク ガイド)](./tasks/create-cost-objects.md)
 -  [分析コード メンバーの共通セットに対する原価要素分析コード メンバーのマップ](map-cost-elements-dimension-members.md)
--  [原価要素分析コードのマップ (タスク ガイド)](./tasks/map-cost-element-dimension.md)
+-  [原価要素分析コードのマップ](./tasks/map-cost-element-dimension.md)
 -  [統計分析コード メンバーと統計測定プロバイダー テンプレート](statistical-measure-provider-template.md)
 
 

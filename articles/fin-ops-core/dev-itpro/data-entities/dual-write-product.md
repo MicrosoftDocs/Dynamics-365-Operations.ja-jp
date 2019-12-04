@@ -19,24 +19,22 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9dc26e0e50c0b77555d09e4a50b846c80b1d5760
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: bcc2c3d2530153a225a94fa0fb3cc990abbf65b4
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249331"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769732"
 ---
 # <a name="unified-product-experience"></a>製品の統合エクスペリエンス
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview](../includes/preview-banner.md)]
-
-ビジネス エコシステムが Finance、Supply Chain Management、Sales などの Dynamics 365 アプリケーションで構成されている場合、製品データを調達するためにこれらのアプリケーションを使用するのが自然な方法です。 これは、アプリケーションによって、高度な価格決定の概念と正確な手持在庫のデータを補完する堅牢な製品インフラストラクチャを提供するためです。 製品データを調達するために外部の製品ライフサイクル管理 (PLM) システムを使用するお客様は、Finance and Operations アプリから他の Dynamics 365 アプリに製品をチャネル化できます。 製品の統合エクスペリエンスによって Common Data Service に統合された製品データ モデルがもたらされるため、Power Platform ユーザーを含むすべてのアプリケーション ユーザーが、Finance and Operations アプリからの豊富な製品データを利用することができます。
+ビジネス エコシステムが Finance、Supply Chain Management、Sales などの Dynamics 365 アプリケーションで構成されている場合、企業では通常、製品データを調達するためにこれらのアプリケーションが使用されます。 これは、アプリケーションによって、高度な価格決定の概念と正確な手持在庫のデータを補完する堅牢な製品インフラストラクチャを提供するためです。 製品データを調達するために外部の製品ライフサイクル管理 (PLM) システムを使用する企業では、Finance and Operations アプリから他の Dynamics 365 アプリに製品をチャネル化できます。 製品の統合エクスペリエンスによって Common Data Service に統合された製品データ モデルがもたらされるため、Power Platform ユーザーを含むすべてのアプリケーション ユーザーが、Finance and Operations アプリからの豊富な製品データを利用することができます。
 
 Sales の製品データ モデルを次に示します。
 
-![Sales の製品データ モデル](media/dual-write-product-4.jpg)
+![CE の製品データ モデル](media/dual-write-product-4.jpg)
 
 Finance and Operations アプリの製品データ モデルを次に示します。
 
@@ -46,38 +44,38 @@ Finance and Operations アプリの製品データ モデルを次に示しま�
 
 ![Dynamics 365 アプリの製品データ モデル](media/dual-write-products-6.jpg)
 
-製品のデュアル書き込みエンティティ マップは、データを一方向にのみフローするように設計されており、Finance and Operations アプリから Common Data Service へのほぼリアルタイムのエクスペリエンスを実現します。 ただし、製品のインフラストラクチャは開かれており、必要に応じて双方向で使用できるようになっています。 ユーザーは自己責任でカスタマイズできますが、Microsoft では、この方法を推奨していません。
+製品のデュアル書き込みエンティティ マップは、データを一方向にのみ、Finance and Operations アプリから Common Data Service にほぼリアルタイムでフローするように設計されています。 ただし、製品のインフラストラクチャは開かれており、必要に応じて双方向で使用できるようになっています。 ユーザーは自己責任でカスタマイズできますが、Microsoft では、この方法を推奨していません。
 
 ## <a name="templates"></a>テンプレート
 
 製品情報には、製品分析コードや追跡、保管分析コードなど、製品とその定義に関連するすべての情報が含まれます。 次の表が示すように、製品と関連する情報を同期するためにエンティティ マップのコレクションが作成されます。
 
-Finance and Operations | その他の Dynamics 365 アプリ
------------------------|--------------------------------
-リリース済製品 V2 | msdyn\_sharedproductdetails
-特徴的製品をリリースした CDS | 品目
-バーコードで識別される製品番号 | msdyn\_productbarcodes
+Finance and Operations | その他の Dynamics 365 アプリ | 説明
+-----------------------|--------------------------------|---
+リリース済製品 V2 | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails** エンティティには、製品を定義する Finance and Operations アプリのフィールドが含まれます。これには、製品の財務情報と管理情報が含まれています。 次の表に、このマッピングを示します。
+Common Data Service リリース済特徴的製品 | 品目 | **製品**エンティティには、製品を定義するフィールドが含まれます。 これには、個々の製品 (製品サブタイプの製品) と製品バリアントが含まれます。 次の表に、このマッピングを示します。
+バーコードで識別される製品番号 | msdyn\_productbarcodes | 製品のバーコードは、製品を一意に識別するために使用されます。
 既定の注文設定 | msdyn\_productdefaultordersettings
-製品固有の既定の注文設定 | msdyn_productspecificdefaultordersettings
-製品分析コード グループ | msdyn\_productdimensiongroups
-保管分析コード グループ | msdyn\_productstoragedimensiongroups
-追跡用分析コード グループ | msdyn\_producttrackingdimensiongroups
+製品固有の既定の注文設定 | msdyn_productdefaultordersettings
+製品分析コード グループ | msdyn\_productdimensiongroups | 製品を定義する製品分析コードが定義されている製品分析コード グループ。 
+保管分析コード グループ | msdyn\_productstoragedimensiongroups | 製品保管分析コード グループは、倉庫における製品の配置を定義するために使用される方法を表します。
+追跡用分析コード グループ | msdyn\_producttrackingdimensiongroups | 製品追跡用分析コード グループは、在庫の製品を追跡するために使用される方法を表します。
 色 | msdyn\_productcolors
 サイズ | msdyn\_productsizes
 スタイル | msdyn\_productsytles
 コンフィギュレーション | msdyn\_productconfigurations
-製品マスターの色 | msdyn_sharedproductcolors
-製品マスターのサイズ | msdyn_sharedproductsizes
-製品マスターのスタイル | msdyn_sharedproductstyles
-製品マスターのコンフィギュレーション | msdyn_sharedproductconfigurations
-すべての製品 | msdyn_globalproducts
+製品マスターの色 | msdyn_sharedproductcolors | **共有製品の色**エンティティは、特定の製品マスターに対して設定できる色を示します。 この概念は、データの整合性を保つために Common Data Service に移行されます。
+製品マスターのサイズ | msdyn_sharedproductsizes | **共有製品のサイズ**エンティティは、特定の製品マスターに対して設定できるサイズを示します。 この概念は、データの整合性を保つために Common Data Service に移行されます。
+製品マスターのスタイル | msdyn_sharedproductstyles | **共有製品のスタイル**エンティティは、特定の製品マスターに対して設定できるスタイルを示します。 この概念は、データの整合性を保つために Common Data Service に移行されます。
+製品マスターのコンフィギュレーション | msdyn_sharedproductconfigurations | **共有製品のコンフィギュレーション**エンティティは、特定の製品マスターに対して設定できるコンフィギュレーションを示します。 この概念は、データの整合性を保つために Common Data Service に移行されます。
+すべての製品 | msdyn_globalproducts | すべての製品エンティティには、Finance and Operations アプリで使用可能なすべての製品 (リリース済製品と非リリース製品の両方) が含まれます。
 単位 | uoms
 単位換算 | msdyn_ unitofmeasureconversions
 製品固有の測定単位換算 | msdyn_productspecificunitofmeasureconversion
-サイト | msdyn\_operationalsites
-倉庫 | msdyn\_inventwarehouses
-
-[!include [symbols](../includes/dual-write-symbols.md)]
+製品カテゴリ | msdyn_productcategories | 各製品カテゴリおよびその構造と特性に関する情報は、製品カテゴリ エンティティに含まれています。 
+製品カテゴリ階層 | msdyn_productcategoryhierarhies | 製品階層を使用して製品を分類またはグループ化します。カテゴリ階層は、製品カテゴリ階層エンティティを使用して、Common Data Service で使用できます。 
+製品カテゴリ階層ロール | msdyn_productcategoryhierarchies | 製品階層は、D365 Finance and Operations のさまざまなロールに対して使用できます。 各ロールで使用するカテゴリを指定します。製品カテゴリのロール エンティティは、次のマッピングで使用されます。 
+製品カテゴリの割り当て | msdyn_productcategoryassignments | 製品をカテゴリに割り当てるには、製品カテゴリの割り当てエンティティを使用できます。
 
 ## <a name="integration-of-products"></a>製品の統合
 
@@ -93,151 +91,17 @@ Finance and Operations | その他の Dynamics 365 アプリ
 
 デュアル書き込み機能が有効になっている場合、Finance and Operations のアプリが他の Dynamics 365 アプリに**下書き**状態で同期されます。 同期の内容は、同じ通貨の最初の価格表に追加されます。 これは、同期の内容が、製品が Finance and Operations アプリでリリースされている法人の通貨と一致する Dynamics 365 アプリの最初の価格表に追加されるという意味です。 
 
-製品を**有効**状態と同期して、販売注文の見積書で直接使用できるようにするには、例として、次の設定を選択する必要があります。**システム > 管理 > システム管理 > システム設定 > 販売**で、**有効な状態で製品を作成 = はい**を選択します。 
+既定では、Finance and Operations アプリの製品は、**下書き**状態で他の Dynamics 365 アプリに同期されます。 製品を**有効**状態と同期して、販売注文の見積書で直接使用できるようにするには、例として、次の設定を選択する必要があります。**システム > 管理 > システム管理 > システム設定 > 販売**タブで、**有効な状態で製品を作成 = はい**を選択します。 
 
-### <a name="cds-released-distinct-products-to-product"></a>CDS リリース済の特徴的製品から製品へ
+製品の同期は、Finance and Operations アプリから Common Data Service に対して実行されることに注意してください。 つまり、製品エンティティのフィールドの値は Common Data Service で変更できますが、同期がトリガーされるときに (Finance and Operations アプリで製品フィールドが変更されるとき)、Common Data Service の値が上書きされます。 
 
-**製品**エンティティには、製品を定義するフィールドが含まれます。 これには、個々の製品 (製品サブタイプの製品) と製品バリアントが含まれます。 次の表に、このマッピングを示します。
+[!include [symbols](../includes/dual-write-symbols.md)]
 
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-PRODUCTNUMBER | >> | productnumber
-PRODUCTNAME | >> | name
-PRODUCTDESCRIPTION | >> | 説明
-ITEMNUMBER | >> | msdyn_itemnumber
-CURRENCYCODE | >> | transactioncurrencyid.isocurrencycode
-SALESUNITSYMBOL | >> | defaultuomid.msdyn_symbol
-SALESPRICE | >> | 価格
-UNITCOST | >> | currentcost
-PRODUCTTYPE | >> | producttypecode
-SALESUNITDECIMALPRECISION | >> | quantitydecimal
-ISCATCHWEIGHTPRODUCT | >> | msdyn_iscatchweight
-PRODUCTCOLORID | >> | msdyn_productcolor.msdyn_productcolorname
-PRODUCTCONFIGURATIONID | >> | msdyn_productconfiguration.msdyn_productconfiguration
-PRODUCTSIZEID | >> | msdyn_productsize.msdyn_productsize
-PRODUCTSTYLEID | >> | msdyn_productstyle.msdyn_productstyle
+[!include [products](dual-write/EcoResReleasedDistinctProductCDSEntity-products.md)]
 
-### <a name="released-products-v2-to-msdyn_sharedproductdetails"></a>リリース済製品 V2 から msdyn\_sharedproductdetails へ
+[!include [product details](dual-write/EcoResReleasedProductV2-msdyn-sharedproductdetails.md)]
 
-**msdyn\_sharedproductdetails** エンティティには、製品を定義する Finance and Operations アプリのフィールドが含まれます。これには、製品の財務情報と管理情報が含まれています。 次の表に、このマッピングを示します。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-PRODUCTNUMBER | > | msdyn_globalproduct.msdyn_productnumber
-INTRASTATCHARGEPERCENTAGE | > | msdyn_intrastatchargepercentage
-ITEMNUMBER | >> | msdyn_itemnumber
-APPROXIMATESALESTAXPERCENTAGE | > | msdyn_approximatesalestaxpercentage
-BESTBEFOREPERIODDAYS | > | msdyn_bestbeforeperioddays
-CARRYINGCOSTABCCODE | >> | msdyn_carryingcostabccode
-CONSTANTSCRAPQUANTITY | > | msdyn_constantscrapquantity
-COSTCHARGESQUANTITY | > | msdyn_costchargesquantity
-DEFAULTRECEIVINGQUANTITY | > | msdyn_defaultreceivingquantity
-FIXEDPURCHASEPRICECHARGES | > | msdyn_fixedpurchasepricecharges
-FIXEDSALESPRICECHARGES | > | msdyn_fixedsalespricecharges
-GROSSDEPTH | > | msdyn_grossdepth
-GROSSPRODUCTHEIGHT | > | msdyn_grossproductheight
-GROSSPRODUCTWIDTH | > | msdyn_grossproductwidth
-INVENTORYUNITSYMBOL | > | msdyn_inventoryunitsymbol.msdyn_symbol
-ISDISCOUNTPOSREGISTRATIONPROHIBITED | >> | msdyn_isdiscountposregistrationprohibited
-ISEXEMPTFROMAUTOMATICNOTIFICATIONANDCANCELLATION | >> | msdyn_exemptautomaticnotificationcancel
-ISINSTALLMENTELIGIBLE | >> | msdyn_isinstallmenteligible
-ISINTERCOMPANYPURCHASEUSAGEBLOCKED | >> | msdyn_isintercompanypurchaseusageblocked
-ISINTERCOMPANYSALESUSAGEBLOCKED | >> | msdyn_isintercompanysalesusageblocked
-ISMANUALDISCOUNTPOSREGISTRATIONPROHIBITED | >> | msdyn_ismanualdiscposregistrationprohibited
-ISPHANTOM | >> | msdyn_isphantom
-ISPOSREGISTRATIONBLOCKED | >> | msdyn_isposregistrationblocked
-ISPOSREGISTRATIONQUANTITYNEGATIVE | >> | msdyn_isposregistrationquantitynegative
-ISPURCHASEPRICEAUTOMATICALLYUPDATED | >> | msdyn_ispurchasepriceautomaticallyupdated
-ISPURCHASEPRICEINCLUDINGCHARGES | >> | msdyn_ispurchasepriceincludingcharges
-ISSALESWITHHOLDINGTAXCALCULATED | >> | msdyn_issaleswithholdingtaxcalculated
-ISRESTRICTEDFORCOUPONS | >> | msdyn_isrestrictedforcoupons
-ISSALESPRICEADJUSTMENTALLOWED | >> | msdyn_issalespriceadjustmentallowed
-ISSALESPRICEINCLUDINGCHARGES | >> | msdyn_issalespriceincludingcharges
-ISSCALEPRODUCT | >> | msdyn_isscaleproduct
-ISSHIPALONEENABLED | >> | msdyn_isshipaloneenabled
-ISUNITCOSTPRODUCTVARIANTSPECIFIC | >> | msdyn_isunitcostproductvariantspecific
-ISVARIANTSHELFLABELSPRINTINGENABLED | >> | msdyn_isvariantshelflabelsprintingenabled
-ISZEROPRICEPOSREGISTRATIONALLOWED | >> | msdyn_iszeropriceposregistrationallowed
-KEYINPRICEREQUIREMENTSATPOSREGISTER | >> | msdyn_keyinpricerequirementsatposregister
-KEYINQUANTITYREQUIREMENTSATPOSREGISTER | >> | msdyn_keyinquantityrequirementsatposregister
-MARGINABCCODE | >> | msdyn_marginabccode
-MAXIMUMPICKQUANTITY | > | msdyn_maximumpickquantity
-MUSTKEYINCOMMENTATPOSREGISTER | >> | msdyn_mustkeyincommentatposregister
-NECESSARYPRODUCTIONWORKINGTIMESCHEDULINGPROPERTYID | > | msdyn_necessaryproductionworkingtimeschedulingp
-NETPRODUCTWEIGHT | > | msdyn_netproductweight
-PACKINGDUTYQUANTITY | > | msdyn_packingdutyquantity
-POSREGISTRATIONACTIVATIONDATE | > | msdyn_posregistrationactivationdate
-POSREGISTRATIONBLOCKEDDATE | > | msdyn_posregistrationblockeddate
-POSREGISTRATIONPLANNEDBLOCKEDDATE | > | msdyn_posregistrationplannedblockeddate
-POTENCYBASEATTIBUTETARGETVALUE | > | msdyn_potencybaseattibutetargetvalue
-POTENCYBASEATTRIBUTEVALUEENTRYEVENT | >> | msdyn_potencybaseattributevalueentryevent
-PRODUCTTYPE | >> | msdyn_producttype
-PRODUCTIONCONSUMPTIONDENSITYCONVERSIONFACTOR | > | msdyn_productionconsumptiondensityconversion
-PRODUCTIONCONSUMPTIONDEPTHCONVERSIONFACTOR | > | msdyn_productionconsumptiondepthconversion
-PRODUCTIONCONSUMPTIONHEIGHTCONVERSIONFACTOR | > | msdyn_productionconsumptionheightconversion
-PRODUCTIONCONSUMPTIONWIDTHCONVERSIONFACTOR | > | msdyn_productionconsumptionwidthconversion
-PRODUCTVOLUME | > | msdyn_productvolume
-PURCHASECHARGESQUANTITY | > | msdyn_purchasechargesquantity
-PURCHASEOVERDELIVERYPERCENTAGE | > | msdyn_purchaseoverdeliverypercentage
-PURCHASEPRICE | > | msdyn_purchaseprice
-PURCHASEPRICEDATE | > | msdyn_purchasepricedate
-PURCHASEPRICINGPRECISION | > | msdyn_purchasepricingprecision
-PURCHASEUNDERDELIVERYPERCENTAGE | > | msdyn_purchaseunderdeliverypercentage
-RAWMATERIALPICKINGPRINCIPLE | >> | msdyn_rawmaterialpickingprinciple
-SALESCHARGESQUANTITY | > | msdyn_saleschargesquantity
-SALESOVERDELIVERYPERCENTAGE | > | msdyn_salesoverdeliverypercentage
-SALESPRICE | > | msdyn_salesprice
-SALESPRICECALCULATIONCHARGESPERCENTAGE | > | msdyn_salespricecalculationchargespercentage
-SALESPRICECALCULATIONCONTRIBUTIONRATIO | > | msdyn_salespricecalculationcontributionratio
-SALESPRICECALCULATIONMODEL | >> | msdyn_salespricecalculationmodel
-SALESPRICEDATE | > | msdyn_salespricedate
-SALESPRICINGPRECISION | > | msdyn_salespricingprecision
-SALESUNDERDELIVERYPERCENTAGE | > | msdyn_salesunderdeliverypercentage
-SALESUNITSYMBOL | > | msdyn_salesunitsymbol.msdyn_symbol
-SCALEINDICATOR | >> | msdyn_scaleindicator
-SELLSTARTDATE | > | msdyn_sellstartdate
-SHELFADVICEPERIODDAYS | > | msdyn_shelfadviceperioddays
-SHELFLIFEPERIODDAYS | > | msdyn_shelflifeperioddays
-SHIPSTARTDATE | > | msdyn_shipstartdate
-TAREPRODUCTWEIGHT | > | msdyn_tareproductweight
-TRANSFERORDEROVERDELIVERYPERCENTAGE | > | msdyn_transferorderoverdeliverypercentage
-TRANSFERORDERUNDERDELIVERYPERCENTAGE | > | msdyn_transferorderunderdeliverypercentage
-UNITCOST | > | msdyn_unitcost
-UNITCOSTDATE | > | msdyn_unitcostdate
-UNITCOSTQUANTITY | > | msdyn_unitcostquantity
-VARIABLESCRAPPERCENTAGE | > | msdyn_variablescrappercentage
-WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE1 | > | msdyn_warehousemobiledevicedescriptionline1
-WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE2 | > | msdyn_warehousemobiledevicedescriptionline2
-WILLINVENTORYISSUEAUTOMATICALLYREPORTASFINISHED | >> | msdyn_willinventoryissueautoreportasfinished
-WILLINVENTORYRECEIPTIGNOREFLUSHINGPRINCIPLE | >> | msdyn_willinventoryreceiptignoreflushing
-WILLPICKINGWORKBENCHAPPLYBOXINGLOGIC | >> | msdyn_willpickingworkbenchapplyboxinglogic
-WILLTOTALPURCHASEDISCOUNTCALCULATIONINCLUDEPRODUCT | >> | msdyn_willtotalpurchdiscountcalcincludeproduct
-WILLTOTALSALESDISCOUNTCALCULATIONINCLUDEPRODUCT | >> | msdyn_willtotalsalesdiscountcalcincludeproduct
-WILLWORKCENTERPICKINGALLOWNEGATIVEINVENTORY | >> | msdyn_willworkcenterpickingallownegativeinvent
-YIELDPERCENTAGE | > | msdyn_yieldpercentage
-ISUNITCOSTAUTOMATICALLYUPDATED | >> | msdyn_isunitcostautomaticallyupdated
-PURCHASEUNITSYMBOL | > | msdyn_purchaseunitsymbol.msdyn_symbol
-PURCHASEPRICEQUANTITY | > | msdyn_purchasepricequantity
-ISUNITCOSTINCLUDINGCHARGES | >> | msdyn_isunitcostincludingcharges
-FIXEDCOSTCHARGES | >> | msdyn_fixedcostcharges
-MINIMUMCATCHWEIGHTQUANTITY | >> | msdyn_minimumcatchweightquantity
-MAXIMUMCATCHWEIGHTQUANTITY | >> | msdyn_maximumcatchweightquantity
-ALTERNATIVEITEMNUMBER | >> | msdyn_alternativeitemnumber.msdyn_itemnumber
-BOMUNITSYMBOL | >> | msdyn_bomunitsymbol.msdyn_symbol
-CATCHWEIGHTUNITSYMBOL | >> | msdyn_catchweightunitsymbol.msdyn_symbol
-COMPARISONPRICEBASEUNITSYMBOL | >> | msdyn_comparisonpricebaseunitsymbol.msdyn_symbol
-PRIMARYVENDORACCOUNTNUMBER | >> | msdyn_vendorid.msdyn_vendoraccountnumber
-ISCATCHWEIGHTPRODUCT | >> | msdyn_iscatchweight
-PRODUCTDIMENSIONGROUPNAME | >> | msdyn_productdimensiongroupid.msdyn_groupname
-
-## <a name="all-product-to-msdyn_global-products"></a>すべての製品から msdyn_global 製品へ
-
-すべての製品エンティティには、Finance and Operations アプリで使用可能なすべての製品 (リリース済製品と非リリース製品の両方) が含まれます。 これらの製品は、次のマッピングを使用して Common Data Service で使用可能です。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-PRODUCTNAME | >> | msdyn_productname
-PRODUCTNUMBER | >> | msdyn_productnumber
+[!include [global products](dual-write/EcoResEveryProductEntity-msdyn-globalproducts.md)]
 
 ## <a name="product-dimensions"></a>製品分析コード 
 
@@ -245,227 +109,35 @@ PRODUCTNUMBER | >> | msdyn_productnumber
 
 ![製品のデータ モデル](media/dual-write-product-2.PNG)
 
-### <a name="colors"></a>色
+[!include [product colors](dual-write/EcoResProductColorEntity-msdyn-productcolor.md)]
 
-有効な色は、次のマッピングを通して、Common Data Service で使用できます。
+[!include [product sizes](dual-write/EcoResProductSizeEntity-msdyn-productsizes.md)]
 
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-COLORID | \>\> | msdyn\_productcolorname
+[!include [product sizes](dual-write/EcoResProductStyleEntity-msdyn-productstyles.md)]
 
-### <a name="sizes"></a>サイズ
-
-有効なサイズは、次のマッピングを通して、Common Data Service で使用できます。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-SIZEID | \>\> | msdyn\_productsize
-
-### <a name="styles"></a>スタイル
-
-有効なスタイルは、次のマッピングを通して、Common Data Service で使用できます。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-STYLEID | \>\> | msdyn\_productstyle
-
-### <a name="configurations"></a>コンフィギュレーション
-
-有効なコンフィギュレーションは、次のマッピングを通して、Common Data Service で使用できます。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-CONFIGURATIONID | \>\> | msdyn\_name
+[!include [product sizes](dual-write/EcoResProductConfigurationsEntity-msdyn-productconfigurations.md)]
 
 1 つの製品に異なる製品分析コードが含まれている場合 (たとえば、製品マスターのサイズや色が製品分析コードと同じである場合)、個々の特徴的製品 (つまり、各製品バリアント) は、それらの製品分析コードの組み合わせとして定義されます。 たとえば、製品番号 B0001 は、XS サイズの黒い T シャツで、製品番号 B0002 は S サイズの黒い T シャツです。 この場合、製品分析コードの既存の組み合わせが定義されています。 たとえば、前の例の T シャツは、XS サイズの黒、S サイズの黒、M サイズの黒、L サイズの黒にすることができますが、XL サイズの黒にすることはできません。 つまり、製品マスターが実行できる製品分析コードは指定されており、これらの値に基づいてバリアントをリリースできます。
 
 製品マスターで実行できる製品分析コードを追跡するために、各製品分析コードに対して次のエンティティが Common Data Serviceがに作成され、マッピングされます。 詳細については、「[製品情報の概要](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-information)」を参照してください。
 
-### <a name="shared-product-color"></a>共有製品の色
+[!include [product colors](dual-write/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 
-**共有製品の色**エンティティは、特定の製品マスターに対して設定できる色を示します。 この概念は、データの整合性を保つために Common Data Service に移行されます。 次の表に、このマッピングを示します。
+[!include [product sizes](dual-write/EcoResProductMasterSize-msdyn-sharedproductsizes.md)]
 
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-PRODUCTCOLORID | \>\> | msdyn\_productcolorid.msdyn\_productcolorname
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailid.msdyn\_itemnumber
-REPLENISHMENTWEIGHT | \>\> | msdyn\_replenishmentweight
-DISPLAYSEQUENCENUMBER | \>\> | msdyn\_retaildisplayorder
+[!include [product styles](dual-write/EcoResProductMasterStyleEntity-msdyn-sharedproductstyles.md)]
 
-### <a name="shared-product-size"></a>共有製品のサイズ
+[!include [product configurations](dual-write/EcoResProductMasterConfigurationEntity-msdyn-sharedproductconfigurations.md)]
 
-**共有製品のサイズ**エンティティは、特定の製品マスターに対して設定できるサイズを示します。 この概念は、データの整合性を保つために Common Data Service に移行されます。 次の表に、このマッピングを示します。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailid.msdyn\_itemnumber
-PRODUCTSIZEID | \>\> | msdyn\_productsizeid.msdyn\_productsize
-REPLENISHMENTWEIGHT | \>\> | msdyn\_replenishmentweight
-DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
-
-### <a name="shared-product-style"></a>共有製品のスタイル
-
-**共有製品のスタイル**エンティティは、特定の製品マスターに対して設定できるスタイルを示します。 この概念は、データの整合性を保つために Common Data Service に移行されます。 次の表に、このマッピングを示します。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailsid.msdyn\_itemnumber
-PRODUCTSTYLEID | \>\> | msdyn\_productstyleintegration
-PRODUCTSTYLEID | \>\> | msdyn\_productstyleid.msdyn\_productstyle
-REPLENISHMENTWEIGHT | \>\> | msdyn\_replenishmentweight
-DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
-
-### <a name="shared-product-configuration"></a>共有製品のコンフィギュレーション
-
-**共有製品のコンフィギュレーション**エンティティは、特定の製品マスターに対して設定できるコンフィギュレーションを示します。 この概念は、データの整合性を保つために Common Data Service に移行されます。 次の表に、このマッピングを示します。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-CONTAINERUNITSYMBOL | \>\> | msdyn\_containerunitsymbol
-PRODUCTCONFIGURATIONID | \>\> | msdyn\_productconfigurationid.msdyn\_productconfiguration
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailid.msdyn\_itemnumber
-REPLENISHMENTWEIGHT | \>\> | msdyn\_replenishmentweight
-DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
-
-## <a name="product-number-identifier-bar-codes"></a>製品番号 ID のバーコード
-
-製品のバーコードは、製品を一意に識別するために使用されます。 次のマッピングを使用して、これらの製品バーコードを Common Data Service で使用できるようにします。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-PRODUCTNUMBER | \> | msdyn\_productnumberid.productnumber
-BARCODE | \> | msdyn\_name
-BARCODE | \> | msdyn\_barcode
-PRODUCTQUANTITY | \> | msdyn\_productquantity
-PRODUCTDESCRIPTION | \> | msdyn\_productdescription
-BARCODESETUPID | \> | msdyn\_barcodesetupid
-PRODUCTQUANTITYUNITSYMBOL | \> | msdyn\_unitofmeasureid.name
-ISDEFAULTSCANNEDBARCODE | \>\> | msdyn\_isdefaultscannedbarcode
-ISDEFAULTPRINTEDBARCODE | \>\> | msdyn\_isdefaultprintedbarcode
-ISDEFAULTDISPLAYEDBARCODE | \>\> | msdyn\_isdefaultdisplayedbarcode
+[!include [product bar codes](dual-write/EcoResProductNumberIdentifiedBarcode-msdyn-productbarcodes.md)]
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>既定の注文設定と製品固有の既定の注文設定
 
-既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 これらの情報は、既定の注文設定と製品固有の既定の注文設定エンティティを使用して CDS で提供されます。 機能の詳細については、「[既定の注文設定ページ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/default-order-settings)」を参照してください。
+既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 この情報は、既定の注文設定と製品固有の既定の注文設定エンティティを使用して Common Data Service で提供されます。 機能の詳細については、[既定の注文設定トピック](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/default-order-settings) を参照してください。
 
-### <a name="default-order-settings"></a>既定の注文設定
+[!include [product sizes](dual-write/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 
-次のマッピングを使用して、既定の注文設定を Common Data Service で使用できるようにします。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-INVENTWAREHOUSEID | = | msdyn_inventorywarehouse.msdyn_warehouseidentifier
-INVENTORYSITEID | = | msdyn_inventorysite.msdyn_siteid
-INVENTORYATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_inventoryatpdelayeddemandoffsetdays
-INVENTORYATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_inventoryatpdelayedsupplyoffsetdays
-ITEMNUMBER | = | msdyn_itemnumber.msdyn_itemnumber
-INVENTORYATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_inventoryatpbackwarddemandtimefencedays
-INVENTORYATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_inventoryatpbackwardsupplytimefencedays
-INVENTORYATPTIMEFENCEDAYS | = | msdyn_inventoryatptimefencedays
-MAXIMUMINVENTORYORDERQUANTITY | = | msdyn_maximuminventoryorderquantity
-MAXIMUMPROCUREMENTORDERQUANTITY | = | msdyn_maximumprocurementorderquantity
-MAXIMUMSALESORDERQUANTITY | = | msdyn_maximumsalesorderquantity
-MINIMUMINVENTORYORDERQUANTITY | = | msdyn_minimuminventoryorderquantity
-MINIMUMPROCUREMENTORDERQUANTITY | = | msdyn_minimumprocurementorderquantity
-MINIMUMSALESORDERQUANTITY | = | msdyn_minimumsalesorderquantity
-STANDARDINVENTORYORDERQUANTITY | = | msdyn_standardinventoryorderquantity
-STANDARDPROCUREMENTORDERQUANTITY | = | msdyn_standardprocurementorderquantity
-STANDARDSALESORDERQUANTITY | = | msdyn_standardsalesorderquantity
-INVENTORYLEADTIMEDAYS | = | msdyn_inventoryleadtimedays
-INVENTORYQUANTITYMULTIPLES | = | msdyn_inventoryquantitymultiples
-PROCUREMENTQUANTITYMULTIPLES | = | msdyn_procurementquantitymultiples
-SALESQUANTITYMULTIPLES | = | msdyn_salesquantitymultiples
-PROCUREMENTSITEID | = | msdyn_procurementsite.msdyn_siteid
-PROCUREMENTLEADTIMEDAYS | = | msdyn_procurementleadtimedays
-SALESSITEID | = | msdyn_salessite.msdyn_siteid
-SALESATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_salesatpdelayeddemandoffsetdays
-SALESATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_salesatpdelayedsupplyoffsetdays
-SALESATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_salesatpbackwarddemandtimefencedays
-SALESATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_salesatpbackwardsupplytimefencedays
-SALESATPTIMEFENCEDAYS | = | msdyn_salesatptimefencedays
-SALESLEADTIMEDAYS | = | msdyn_salesleadtimedays
-PROCUREMENTWAREHOUSEID | = | msdyn_procurementwarehouse.msdyn_warehouseidentifier
-SALESWAREHOUSEID | = | msdyn_saleswarehouse.msdyn_warehouseidentifier
-AREINVENTORYORDERPROMISINGDEFAULTSOVERRIDDEN | >< | msdyn_areinventoryorderdefaultsoverridden
-INVENTORYORDERPROMISINGMETHOD | >< | msdyn_inventoryorderpromisingmethod
-ISINVENTORYATPINCLUDINGPLANNEDORDERS | >< | msdyn_isinventoryatpincludingplannedorders
-ISINVENTORYUSINGWORKINGDAYS | >< | msdyn_isinventoryusingworkingdays
-ISINVENTORYSITEMANDATORY | >< | msdyn_isinventorysitemandatory
-ISINVENTORYPROCESSINGSTOPPED | >< | msdyn_isinventoryprocessingstopped
-ISPROCUREMENTUSINGWORKINGDAYS | >< | msdyn_isprocurementusingworkingdays
-ISPROCUREMENTSITEMANDATORY | >< | msdyn_isprocurementsitemandatory
-ISPROCUREMENTPROCESSINGSTOPPED | >< | msdyn_isprocurementprocessingstopped
-ARESALESORDERPROMISINGDEFAULTSOVERRIDDEN | >< | msdyn_aresalesorderdefaultsoverridden
-SALESORDERPROMISINGMETHOD | >< | msdyn_salesorderpromisingmethod
-ISSALESATPINCLUDINGPLANNEDORDERS | >< | msdyn_issalesatpincludingplannedorders
-ISSALESSITEMANDATORY | >< | msdyn_issalessitemandatory
-ISSALESLEADTIMEOVERRIDDEN | >< | msdyn_issalesleadtimeoverridden
-ISSALESPROCESSINGSTOPPED | >< | msdyn_issalesprocessingstopped
-ISINVENTORYWAREHOUSEMANDATORY | >< | msdyn_isinventorywarehousemandatory
-ISPROCUREMENTWAREHOUSEMANDATORY | >< | msdyn_isprocurementwarehousemandatory
-ISSALESWAREHOUSEMANDATORY | >< | msdyn_issaleswarehousemandatory
-
-### <a name="product-specific-default-order-settings"></a>製品固有の既定の注文設定
-
-次のマッピングを使用して、製品固有の既定の注文設定を Common Data Service で使用できるようにします。
-
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-INVENTORYWAREHOUSEID | = | msdyn_inventorywarehouse.msdyn_warehouseidentifier
-INVENTORYSITEID | = | msdyn_inventorysite.msdyn_siteid
-INVENTORYATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_inventoryatpdelayeddemandoffsetdays
-INVENTORYATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_inventoryatpdelayedsupplyoffsetdays
-ITEMNUMBER | = | msdyn_itemnumber.msdyn_itemnumber
-INVENTORYATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_inventoryatpbackwarddemandtimefencedays
-INVENTORYATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_inventoryatpbackwardsupplytimefencedays
-INVENTORYATPTIMEFENCEDAYS | = | msdyn_inventoryatptimefencedays
-MAXIMUMINVENTORYORDERQUANTITY | = | msdyn_maximuminventoryorderquantity
-MAXIMUMPROCUREMENTORDERQUANTITY | = | msdyn_maximumprocurementorderquantity
-MAXIMUMSALESORDERQUANTITY | = | msdyn_maximumsalesorderquantity
-MINIMUMINVENTORYORDERQUANTITY | = | msdyn_minimuminventoryorderquantity
-MINIMUMPROCUREMENTORDERQUANTITY | = | msdyn_minimumprocurementorderquantity
-MINIMUMSALESORDERQUANTITY | = | msdyn_minimumsalesorderquantity
-STANDARDINVENTORYORDERQUANTITY | = | msdyn_standardinventoryorderquantity
-STANDARDPROCUREMENTORDERQUANTITY | = | msdyn_standardprocurementorderquantity
-STANDARDSALESORDERQUANTITY | = | msdyn_standardsalesorderquantity
-INVENTORYLEADTIMEDAYS | = | msdyn_inventoryleadtimedays
-INVENTORYQUANTITYMULTIPLES | = | msdyn_inventoryquantitymultiples
-PROCUREMENTQUANTITYMULTIPLES | = | msdyn_procurementquantitymultiples
-SALESQUANTITYMULTIPLES | = | msdyn_salesquantitymultiples
-PROCUREMENTSITEID | = | msdyn_procurementsite.msdyn_siteid
-PROCUREMENTLEADTIMEDAYS | = | msdyn_procurementleadtimedays
-SALESSITEID | = | msdyn_salessite.msdyn_siteid
-SALESATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_salesatpdelayeddemandoffsetdays
-SALESATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_salesatpdelayedsupplyoffsetdays
-SALESATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_salesatpbackwarddemandtimefencedays
-SALESATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_salesatpbackwardsupplytimefencedays
-SALESATPTIMEFENCEDAYS | = | msdyn_salesatptimefencedays
-SALESLEADTIMEDAYS | = | msdyn_salesleadtimedays
-PROCUREMENTWAREHOUSEID | = | msdyn_procurementwarehouse.msdyn_warehouseidentifier
-SALESWAREHOUSEID | = | msdyn_saleswarehouse.msdyn_warehouseidentifier
-AREINVENTORYDEFAULTORDERSETTINGSOVERRIDDEN | >< | msdyn_areinventoryorderdefaultsoverridden
-INVENTORYORDERPROMISINGMETHOD | >< | msdyn_inventoryorderpromisingmethod
-ISINVENTORYATPINCLUDINGPLANNEDORDERS | >< | msdyn_isinventoryatpincludingplannedorders
-ISINVENTORYUSINGWORKINGDAYS | >< | msdyn_isinventoryusingworkingdays
-ISINVENTORYSITEMANDATORY | >< | msdyn_isinventorysitemandatory
-ISINVENTORYPROCESSINGSTOPPED | >< | msdyn_isinventoryprocessingstopped
-ISPROCUREMENTUSINGWORKINGDAYS | >< | msdyn_isprocurementusingworkingdays
-ISPROCUREMENTSITEMANDATORY | >< | msdyn_isprocurementsitemandatory
-ISPROCUREMENTPROCESSINGSTOPPED | >< | msdyn_isprocurementprocessingstopped
-ARESALESDEFAULTORDERSETTINGSOVERRIDDEN | >< | msdyn_aresalesorderdefaultsoverridden
-SALESORDERPROMISINGMETHOD | >< | msdyn_salesorderpromisingmethod
-ISSALESATPINCLUDINGPLANNEDORDERS | >< | msdyn_issalesatpincludingplannedorders
-ISSALESSITEMANDATORY | >< | msdyn_issalessitemandatory
-ISSALESLEADTIMEOVERRIDDEN | >< | msdyn_issalesleadtimeoverridden
-ISSALESPROCESSINGSTOPPED | >< | msdyn_issalesprocessingstopped
-ISINVENTORYWAREHOUSEMANDATORY | >< | msdyn_isinventorywarehousemandatory
-ISPROCUREMENTWAREHOUSEMANDATORY | >< | msdyn_isprocurementwarehousemandatory
-ISSALESWAREHOUSEMANDATORY | >< | msdyn_issaleswarehousemandatory
-OPERATIONALSITEID | = | msdyn_operationalsite.msdyn_siteid
-PRODUCTCOLORID | = | msdyn_productcolor.msdyn_productcolorname
-PRODUCTCONFIGURATIONID | = | msdyn_productconfiguration.msdyn_productconfiguration
-PRODUCTSIZEID | = | msdyn_productsize.msdyn_productsize
-PRODUCTSTYLEID | = | msdyn_productstyle.msdyn_productstyle
+[!include [product sizes](dual-write/InventProductSpecificOrderSettingsV2Entity-msdyn-productspecificdefaultordersetting.md)]
 
 ## <a name="unit-of-measure-and-unit-of-measure-conversions"></a>測定単位と測定単位の換算
 
@@ -473,136 +145,80 @@ PRODUCTSTYLEID | = | msdyn_productstyle.msdyn_productstyle
 
 ![製品のデータ モデル](media/dual-write-product-3.PNG)
 
-測定単位の概念は、Finance and Operations アプリとその他の Dynamics 365 アプリの間で統合されています。 Finance and Operations アプリの各単位クラスでは、単位グループは、単位クラスに属している単位を含む Dynamics 365 アプリに作成されます。 また、既定の基本単位は、すべての単位グループに対して作成されます。 
+測定単位の概念は、Finance and Operations アプリとその他の Dynamics 365 アプリの間で統合されています。 Finance and Operations アプリの各単位クラスでは、単位グループは、単位クラスに属している単位を含む Dynamics 365 アプリで作成されます。 また、既定の基本単位は、すべての単位グループに対して作成されます。 
 
-### <a name="unit-of-measure"></a>計量単位
+[!include [unit of measure](dual-write/UnitOfMeasureEntity-uom.md)]
 
-次のマッピングを使用して、Finance and Operations アプリの測定単位を Common Data Service で利用できるようにします。
+[!include [unit of measure conversions](dual-write/UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md)]
 
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-UNITSYMBOL | >> | msdyn_symbol
-UNITCLASS | >> | msdyn_externalunitclassname
-DECIMALPRECISION | >> | msdyn_decimalprecision
-ISBASEUNIT | >> | msdyn_isbaseunit
-ISSYSTEMUNIT | >> | msdyn_issystemunit
-SYSTEMOFUNITS | >> | msdyn_systemofunits
-UNITSYMBOL | >> | name
-UNITDESCRIPTION | >> | msdyn_description
+[!include [product specific unit of measure conversions](dual-write/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
 
-### <a name="unit-of-measure-conversions"></a>測定単位の換算
+## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-common-data-service"></a>Finance and Operations と Common Data Service の間で一致する単位データの初期同期
 
-次のマッピングを使用して、Finance and Operations アプリの測定単位の換算を Common Data Service で利用できるようにします。
+### <a name="initial-synchronization-of-units"></a>単位の初期同期
 
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-DENOMINATOR | = | msdyn_denominator
-NUMERATOR | = | msdyn_numerator
-FACTOR | = | msdyn_factor
-INNEROFFSET | = | msdyn_inneroffset
-OUTEROFFSET | = | msdyn_outeroffset
-ROUNDING | >< | msdyn_rounding
-TOUNITSYMBOL | = | msdyn_tounit.msdyn_symbol
-FROMUNITSYMBOL | = | msdyn_fromunit.msdyn_symbol
+デュアル書き込みが有効になっている場合、Finance and Operations アプリの単位は、他の Dynamics 365 アプリに同期されます。 Common Data Service の Finance and Operations アプリから同期された単位グループには、"外部で管理されている" ことを示すフラグが設定されています。
 
-### <a name="product-specific-unit-of-measure-conversions"></a>製品固有の測定単位換算
+### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Finance and Operations および他の Dynamics 365 アプリの単位と単位クラス/グループのデータの照合
 
-次のマッピングを使用して、Finance and Operations アプリの製品固有の測定単位換算を Common Data Service で利用できるようにします。
+まず、単位の統合キーが msdyn_symbol であることに注意する必要があります。 したがって、この値は、Common Data Service または他の Dynamics 365 アプリで一意である必要があります。 他の Dynamics 365 アプリでは、単位の一意性を定義する "単位グループID" と "名前" のペアであるため、Finance and Operations アプリと Common Data Service の間で単位データを一致させるためのさまざまなシナリオを検討する必要があります。
 
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-DENOMINATOR | = | msdyn_denominator
-NUMERATOR | = | msdyn_numerator
-FACTOR | = | msdyn_factor
-FROMUNITSYMBOL | = | msdyn_fromunit.msdyn_symbol
-TOUNITSYMBOL | = | msdyn_tounit.msdyn_symbol
-PRODUCTNUMBER | = | msdyn_globalproduct.msdyn_productnumber
-INNEROFFSET | = | msdyn_inneroffset
-OUTEROFFSET | = | msdyn_outeroffset
-ROUNDING | >< | msdyn_rounding
+Finance and Operations アプリやその他の Dynamics 365 アプリで一致/重複する単位の場合:
+
++ **単位は、Finance and Operations アプリ内の関連付けられている単位クラスに対応する他の Dynamics 365 アプリの単位グループに属します**。 この場合、他の Dynamics 365 アプリの msdyn_symbol フィールドには、Finance and Operations アプリの単位記号を入力する必要があります。 したがって、データが照合されると、その単位グループは、他の Dynamics 365 アプリでは "外部管理" として設定されます。
++ **単位は、Finance and Operations アプリの関連付けられた単位クラスに対応していない他の Dynamics 365 アプリの単位グループに属しています (他の Dynamics 365 アプリにある単位クラスの Finance and Operations アプリに既存の単位クラスはありません)。** この場合、msdyn_symbol にはランダムな文字列を入力する必要があります。 この値は、他の Dynamics 365 アプリで一意である必要があります。
+
+Finance and Operations の単位および単位クラスで、他の Dynamics 365 アプリに存在しない場合:
+
+Finance and Operations アプリの単位グループをデュアル書き込みの一部とし、それに対応する単位を他の Dynamics 365 アプリと Common Data Service に作成して同期し、この単位グループを "外部管理" として設定します。 追加のブートストラップ作業は不要です。
+
+他の Dynamics 365 アプリの単位で、Finance and Operations アプリに存在しない場合:
+
+すべての単位で msdyn_symbol のフィールドを入力する必要があります。 単位は、対応する単位クラス (存在する場合) の Finance and Operations アプリでいつでも作成できます。 単位クラスが存在しない場合は、まず、他の Dynamics 365 アプリ単位グループに一致する単位クラスを作成する必要があります (ただし、列挙型を拡張する場合は、拡張機能を使用する場合を除き、Finance and Operations アプリで単位クラスを作成することはできません)。 これにより、単位を作成できます。 Finance and Operations アプリの単位記号は、その単位に対して他の Dynamics 365 アプリで以前に指定された msdyn_symbol である必要があります。
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>製品ポリシー: 分析コード、追跡、保管グループ
 
 製品ポリシーは、在庫内で製品とその特性を定義するために使用される一連のポリシーです。 製品分析コード グループ、製品追跡分析コード グループ、および保管分析コード グループが製品ポリシーとして指定されている場合があります。 
 
-### <a name="product-dimension-group"></a>製品分析コード グループ
+[!include [product dimension group](dual-write/EcoResProductDimensionGroup-msdyn-productdimensiongroups.md)]
 
-製品を定義する製品分析コードが定義されている製品分析コード グループ。 有効な 4 つの製品分析コード グループは、サイズ、色、スタイル、コンフィギュレーションです。 製品は、次のマッピングを使用して Common Data Service で利用できます。 
+[!include [product tracking dimension group](dual-write/EcoResTrackingDimensionGroup-msdyn-producttrackingdimensiongroups.md)]
 
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-WILLSALESPRICESEARCHUSEPRODUCTSTYLE | >< | msdyn_willsalespricesearchuseproductstyle
-WILLPURCHASEPRICESEARCHUSEPRODUCTSIZE | >< | msdyn_willpurchasepricesearchuseproductsize
-WILLSALESPRICESEARCHUSEPRODUCTCONFIGURATION | >< | msdyn_willsalespricesearchuseprodconfig
-WILLSALESPRICESEARCHUSEPRODUCTCOLOR | >< | msdyn_willsalespricesearchuseproductcolor
-WILLPURCHASEPRICESEARCHUSEPRODUCTSTYLE | >< | msdyn_willpurchasepricesearchuseproductstyle
-WILLPURCHASEPRICESEARCHUSEPRODUCTCONFIGURATION | >< | msdyn_willpurchpricesearchuseprodconfig
-WILLPURCHASEPRICESEARCHUSEPRODUCTCOLOR | >< | msdyn_willpurchpricesearchuseproductcolor
-ISPRODUCTSTYLEACTIVE | >< | msdyn_isproductstyleactive
-ISPRODUCTSIZEACTIVE | >< | msdyn_isproductsizeactive
-ISPRODUCTCONFIGURATIONACTIVE | >< | msdyn_isproductconfigurationactive
-ISPRODUCTCOLORACTIVE | >< | msdyn_isproductcoloractive
-GROUPNAME | = | msdyn_groupname
-GROUPDESCRIPTION | = | msdyn_groupdescription
-PRODUCTVARIANTNOMENCLATURENAME | = | msdyn_productvariantnomenclaturename
-WILLSALESPRICESEARCHUSEPRODUCTSIZE | >< | msdyn_willsalespricesearchuseproductsize
+[!include [product storage dimension group](dual-write/EcoResStorageDimensionGroup-msdyn-productstoragedimensiongroups.md)]
 
-### <a name="product-tracking-dimension-group"></a>製品追跡用分析コード グループ
+## <a name="product-hierarchies"></a>製品階層
 
-製品追跡用分析コード グループは、在庫の製品を追跡するために使用される方法を表します。 これらのグループは、次のマッピングを使用して Common Data Service で利用可能です。 
+[!include [product category hierarchy](dual-write/EcoResProductCategoryHierarchyEntity-msdyn-productcategoryhierarchy.md)]
 
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-SERIALNUMBERCAPTURINGOPERATION | >< | msdyn_serialnumbercapturingoperation
-GROUPNAME | = | msdyn_groupname
-GROUPDESCRIPTION | = | msdyn_groupdescription
-ISSERIALNUMBERENABLEDFORPRODUCTIONCONSUMPTIONPROCESS | >< | msdyn_issnenabledforpcprocess
-ISSERIALNUMBERCONTROLENABLED | >< | msdyn_isserialnumbercontrolenabled
-ISSERIALNUMBERENABLEDFORSALESPROCESS | >< | msdyn_isserialnumberenabledforsalesprocess
-ISSERIALNUMBERACTIVE | >< | msdyn_isserialnumberactive
-ISSALESPRICEBYSERIALNUMBER | >< | msdyn_issalespricebyserialnumber
-ISSALESPRICEBYBATCHNUMBER | >< | msdyn_issalespricebybatchnumber
-ISPURCHASEPRICEBYSERIALNUMBER | >< | msdyn_ispurchasepricebyserialnumber
-ISPURCHASEPRICEBYBATCHNUMBER | >< | msdyn_ispurchasepricebybatchnumber
-ISPRIMARYSTOCKINGENABLEDFORSERIALNUMBER | >< | msdyn_isprimarystockingenabledforsn
-ISPRIMARYSTOCKINGENABLEDFORBATCHNUMBER | >< | msdyn_isprimarystockingenabledforbn
-ISPHYSICALINVENTORYENABLEDFORSERIALNUMBER | >< | msdyn_isphysicalinventoryenabledforsn
-ISPHYSICALINVENTORYENABLEDFORBATCHNUMBER | >< | msdyn_isphysicalinventoryenabledforbn
-ISFINANCIALINVENTORYENABLEDFORSERIALNUMBER | >< | msdyn_isfinancialinventoryenabledforsn
-ISFINANCIALINVENTORYENABLEDFORBATCHNUMBER | >< | msdyn_isfinancialinventoryenabledforbn
-ISCOVERAGEPLANENABLEDFORSERIALNUMBER | >< | msdyn_iscoverageplanenabledforserialnumber
-ISCOVERAGEPLANENABLEDFORBATCHNUMBER | >< | msdyn_iscoverageplanenabledforbatchnumber
-ISBLANKRECEIPTALLOWEDFORSERIALNUMBER | >< | msdyn_isblankreceiptallowedforserialnumber
-ISBLANKRECEIPTALLOWEDFORBATCHNUMBER | >< | msdyn_isblankreceiptallowedforbatchnumber
-ISBLANKISSUEALLOWEDFORSERIALNUMBER | >< | msdyn_isblankissueallowedforserialnumber
-ISBLANKISSUEALLOWEDFORBATCHNUMBER | >< | msdyn_isblankissueallowedforbatchnumber
-ISBATCHNUMBERACTIVE | >< | msdyn_isbatchnumberactive
-ISINVENTORYOWNERACTIVE | >< | msdyn_isinventoryowneractive
+[!include [product category](dual-write/EcoResProductCategoryEntity-msdyn-productcategory.md)]
 
-### <a name="product-storage-dimension-group"></a>製品保管分析コード グループ
+[!include [product category assignments](dual-write/EcoResProductCategoryAssignmentEntity-msdyn-productcategoryassignment.md)]
 
-製品保管分析コード グループは、倉庫における製品の配置を定義するために使用される方法を表します。 これらのグループは、次のマッピングを使用して Common Data Service で利用可能です。 
+[!include [product category role](dual-write/EcoResProductCategoryHierarchyRoleEntity-msdyn-productcategoryhierarchyrole.md)]
 
-ソース フィールド | タイプのマッピング | 出力先フィールド
----|---|---
-WILLSALESPRICESEARCHUSEWAREHOUSE | >< | msdyn_willsalespricesearchusewarehouse
-WILLSALESPRICESEARCHUSESITE | >< | msdyn_willsalespricesearchusesite
-WILLSALESPRICESEARCHUSEINVENTORYSTATUS | >< | msdyn_willsalespricesearchuseinventorystatus
-WILLPURCHASEPRICESEARCHUSEWAREHOUSE | >< | msdyn_willpurchasepricesearchusewarehouse
-WILLPURCHASEPRICESEARCHUSESITE | >< | msdyn_willpurchasepricesearchusesite
-WILLPURCHASEPRICESEARCHUSEINVENTORYSTATUS | >< | msdyn_willpurchpricesearchuseinventstatus
-WILLCOVERAGEPLANNINGUSEWAREHOUSE | >< | msdyn_willcoverageplanusewarehouse
-WILLCOVERAGEPLANNINGUSELOCATION | >< | msdyn_iscoverageplanenabledforlocation
-WILLCOVERAGEPLANNINGUSEINVENTORYSTATUS | >< | msdyn_willcoverageplanuseinventorystatus
-AREADVANCEDWAREHOUSEMANAGEMENTPROCESSESENABLED | >< | msdyn_areadvancedwmprocessesenabled
-ISWAREHOUSEPRIMARYSTORAGEDIMENSION | >< | msdyn_iswarehouseprimarystoragedimension
-ISWAREHOUSEMANDATORY | >< | msdyn_iswarehousemandatory
-ISPHYSICALINVENTORYENABLEDFORWAREHOUSE | >< | msdyn_isphysicalinventoryenabledforwarehouse
-ISPHYSICALINVENTORYENABLEDFORLOCATION | >< | msdyn_isphysicalinventoryenabledforlocation
-ISLOCATIONACTIVE | >< | msdyn_islocationactive
-ISFINANCIALINVENTORYENABLEDFORWAREHOUSE | >< | msdyn_isfinancialinventoryenabledforwarehouse
-GROUPNAME | = | msdyn_groupname
-GROUPDESCRIPTION | = | msdyn_groupdescription
-ISBLANKRECEIPTALLOWEDFORLOCATION | >< | msdyn_isblankreceiptallowedforlocation
-ISBLANKISSUEALLOWEDFORLOCATION | >< | msdyn_isblankissueallowedforlocation
 
+## <a name="integration-key-for-products"></a>製品の統合キー 
+
+Dynamics 365 for Finance and Operations と Common Data Service の製品との間で製品を一意に識別するために、統合キーが使用されます。 製品では、**(productnumber)** は Common Data Service の製品を識別する固有のキーです。 これは、次の連結によって構成されます **(会社、msdyn_productnumber)**。 **会社**は Finance and Operations の法人エンティティを示し、**msdyn_productnumber** は Finance and Operations の特定の製品の製品番号を示します。 
+
+他の Dynamics 365 アプリのユーザーについては、この製品は UI の **msdyn_productnumber** で識別されます (フィールドのラベルが**製品番号**であることに注意してください)。 製品フォームでは、会社と msydn_productnumber の両方が表示されます。 ただし、製品の固有キーである (productnumber) フィールドは表示されません。 
+
+アプリが Common Data Service の上に構築されている場合、(productnumber) の使用 (つまり、固有の製品 ID で統合キーとして使用し、msdyn_productnumber ではない) には特別な注意が必要です。最後のものは一意ではないためです。 
+
+## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>製品の初期同期と、Common Data Service から Finance and Operations へのデータの移行
+
+### <a name="initial-synchronization-of-products"></a>製品の初期同期 
+
+デュアル書き込みが有効になっている場合、Dynamics 365 Finance and Operations の製品は Common Data Service および他の Dynamics 365 アプリに同期されます。 デュアル書き込みの前に Common Data Service および他の Dynamics 365 アプリで作成された製品は、Finance and Operations の製品データに更新および照合されません。
+
+### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Finance and Operations および他の Dynamics 365 アプリの製品データの照合
+
+Finance and Operations、Common Data Service および他の Dynamics 365 アプリで同じ製品が保持 (重複/一致) されている場合、デュアル書き込みを有効にすると、Finance and Operations の製品が同期され、同じ製品の重複したレコードが Common Data Service に表示されます。
+以前の状況を回避するために、他の Dynamics 365 アプリが Finance and Operations と重複/一致する製品を所有している場合、二重書き込みを有効にする管理者は、製品の同期が行われる前に**会社** (例: "USMF") および **msdyn_productnumber** (例: "1234:Black:S") のフィールドをブートストラップする必要があります。 つまり、Common Data Service の製品のこの 2 つのフィールドには、製品をその製品番号と照合する必要がある Finance and Operations の各会社を入力する必要があります。 
+
+次に、同期が有効になって実行されると、Finance and Operations の製品が Common Data Service および他の Dynamics 365 アプリの一致する製品と同期されます。 これは、特徴的製品と製品バリアントの両方に適用できます。 
+
+
+### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Dynamics 365 アプリから Finance and Operations への製品データの移行
+
+他の Dynamics 365 アプリに Finance and Operations に存在しない製品がある場合、管理者はまず **EcoResReleasedProductCreationV2Entity** を使用して、その製品を Finance and Operations にインポートできます。 次に、上記の説明に従って、Finance and Operations および他の Dynamics 365 アプリの製品データを照合します。 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66c05ee2990402971b11200d9e6760ba9f8d78f4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: eb8d0b118ff5382432336443c0957ce8d81bddef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249062"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812045"
 ---
 # <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコードの移行の準備
 
@@ -44,13 +44,15 @@ ms.locfileid: "2249062"
 ## <a name="overview-of-the-code-migration-process"></a>コード移行プロセスの概要
 ### <a name="model-split"></a>分割されたモデル
 
-Finance and Operations アプリケーションは、いくつかのパッケージ、つまりアセンブリに分割されます (プラットフォーム パッケージ)
+Finance and Operations アプリケーションは、次のいくつかのパッケージ、またはアセンブリに分割されます: 
+
+**プラットフォームパッケージ**
 
 -   アプリケーション プラットフォーム
 -   アプリケーション基準
 -   Test Essentials
 
-アプリケーション パッケージ
+**アプリケーション パッケージ**
 
 -   Application Suite
 -   他のアプリケーション パッケージ
@@ -68,16 +70,16 @@ LCS コードのアップグレード サービスは、Dynamics AX 2012 R3 モ�
 -   TODO を使って手動で修正する内容を開発者に知らせる移行ルールを実行します。
 -   アップグレードされたソリューションを Azure DevOps プロジェクトに自動的にチェックインします。
 
-コード アップグレード サービスを設定および実行する方法については、[[Lifecycle Services でコード アップグレード サービスを構成および実行する](../lifecycle-services/configure-execute-code-upgrade.md)] を参照してください。
+コード アップグレード サービスを設定および実行する方法については、[[Lifecycle Services (LCS) でコード アップグレード サービスを構成および実行する](../lifecycle-services/configure-execute-code-upgrade.md)] を参照してください。
 
 ### <a name="manual-migration-steps"></a>手動での移行の手順
 
 LCS コード アップグレード サービス構成のコードをアップグレードした後、開発者の VM と Azure DevOps にアップグレードされたコード ブランチに接続します。
 
--   [開発者向け VM を構成する](../dev-tools/configure-developer-vm.md)
--   [Azure DevOps のコンフィギュレーション](configure-vso-solution.md)
+-   [1 ボックス開発環境のコンフィギュレーション](../dev-tools/configure-developer-vm.md)
+-   [コード移動中の Azure DevOps マッピングのコンフィギュレーション](configure-vso-solution.md)
 
-コードのアップグレード サービスは、コードをコンパイルするために開くことができる Visual Studio ソリューションを提供します。 競合を含むすべての要素向けの**コード マージ**ソリューションと、すべてのアップグレードされた要素向けの**アップグレード**ソリューション。 通常、以下の順序でコンパイル エラーを修正して、アプリケーションをコンパイルできます。 順序はパッケージの依存関係のグラフに基づいて決定され、グラフの中で最も低いパッケージから開始されます。 パッケージの依存関係を調べるには、[[モデル](../dev-tools/models.md)] を参照してください。 標準的な注文は、Application Platform、Application Foundation、Directory など、Application Suite です。 各アップグレードされたモデル対象:
+コードのアップグレード サービスは、コードをコンパイルするために開くことができる Visual Studio ソリューションを提供します。 競合を含むすべての要素向けの**コード マージ**ソリューションと、すべてのアップグレードされた要素向けの**アップグレード**ソリューション。 通常、以下の順序でコンパイル エラーを修正して、アプリケーションをコンパイルできます。 順序はパッケージの依存関係のグラフに基づいて決定され、グラフの中で最も低いパッケージから開始されます。 パッケージの依存関係を調べるには、[モデルおよびパッケージ](../dev-tools/models.md) を参照してください。 標準的な注文は、Application Platform、Application Foundation、Directory など、Application Suite です。 各アップグレードされたモデル対象:
 
 -   マージの競合を修正します。
 -   モデルの分割 (パッケージ全体の参照) に関連するコンパイル エラーを修正します。
@@ -88,7 +90,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
         -   ディレクトリ モデル内のメソッドは、アプリケーション スイート パッケージ内のテーブルを参照しています。
         -   ディレクトリ パッケージ内のフォームは、アプリケーション スイート パッケージ内のデータ ソースを参照しています。
     -   モデル要素またはビジネス ロジックを上位のパッケージに移動することによって、これらの依存関係に対応するようにコードをリファクターする必要があります。
-    -   [移行の委任](delegates-migration.md) は、委任を使用してこれらの問題のいくつかを解決する方法を説明しています。
+    -   [コードの移行中にデリゲートを使用してモデル間の依存関係を解決する](delegates-migration.md) は、これらの問題を解決する方法について説明します。
 -   コンパイル エラーを修正します。
 
 すべてのコンパイル エラーを解決した後は、すべてのパッケージがコンパイルされます。 次に、次のタスクを完了する必要があります。
@@ -107,7 +109,11 @@ LCS コード アップグレード サービス構成のコードをアップ�
 1.  Visual Studio で、**Dynamics 365 &gt; オプション &gt; ベスト プラクティス**をクリックします。
 2.  **モデル** ドロップダウン メニューで、**アプリケーション スイート**を選択します (作業しているすべてのモデルで繰り返します)
 
-これらのルールは、ソリューションの移行中に「オン」に設定する必要があります。 この設定は、AxRuleSet フォルダー内の XML ファイルによって実行されます。 たとえば、C:\\Packages\\ApplicationSuite\\Foundation\\AxRuleSet の下にある、アプリケーション スイート xml ファイル、BPRules.xml を参照してください。 [![bpupgraderules](./media/bpupgraderules.png)](./media/bpupgraderules.png) 移行を完了するには、すべての移行固有のベストプラクティスルールを修正する必要があります。 エラーは警告としてエラー リストに表示されます。 エラー一覧には、コンパイラの警告やベスト プラクティスのエラーが表示されます。 ベスト プラクティスのエラーには接頭語として **BP** のテキストが付けられます。 たとえば、**BPErrorFormControlPatternUnspecified**。
+これらのルールは、ソリューションの移行中に「オン」に設定する必要があります。 この設定は、AxRuleSet フォルダー内の XML ファイルによって実行されます。 たとえば、C:\\Packages\\ApplicationSuite\\Foundation\\AxRuleSet の下にある、アプリケーション スイート xml ファイル、BPRules.xml を参照してください。 
+
+[![bpupgraderules](./media/bpupgraderules.png)](./media/bpupgraderules.png) 
+
+移行を完了するには、すべての移行固有のベスト プラクティス ルールを修正する必要があります。 エラーは警告としてエラー リストに表示されます。 エラー一覧には、コンパイラの警告やベスト プラクティスのエラーが表示されます。 ベスト プラクティスのエラーには接頭語として **BP** のテキストが付けられます。 たとえば、**BPErrorFormControlPatternUnspecified**。
 
 ## <a name="debugging"></a>デバッグ
 既定では、Finance and Operations は作業中のファイルのデバッグ環境を最適化します。 結果として、プロジェクトに含まれていないファイル (F11) にステップ インすると、 PDB が読み込まれず、コードをデバッグできなくなります。 この問題を回避するには、<strong>Dynamics 365 **&gt;**オプション</strong>&gt;<strong>デバッグ</strong> をクリックしてプロジェクトのデバッグ設定を変更します。 <strong>ソリューション内の項目に対してのみシンボルを読み込む</strong> チェックボックスが選択されていないことを確認します。 このオプションは、デバッガの速度を大幅に向上させるため、既定で選択されています。 Intellitrace をオフにしたい場合、別のデバッグ設定をします。 Intellitrace はアプリケーションの完全な実行履歴を収集します。 デバッグ時に IDE で多くのノイズが作成されます。 Intellitrace をオフにするには、<strong>オプション</strong>&gt;<strong>IntelliTrace</strong>&gt;<strong>IntelliTrace を有効にする</strong> をクリックしてチェック ボックスをオフにし、<strong>OK</strong> をクリックします。 Intellitrace は Visual Studio の Enterprise 版でのみ使用できることに注意してください。  
@@ -115,7 +121,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
 ## <a name="address-code-migration-tasks"></a>アドレス コード移行タスク
 メタデータを Finance and Operations に移行するとき、複数の自動アップグレード スクリプトが実行されます。 開発者が手動で移行タスクを完了する必要がある場合、行う内容とベスト プラクティス (BP) が追加されました。
 
--   TO DO には */\* TODO: (コード アップグレード)* の接頭語が付いており、コード移行の一部として修正する必要があります。
+-   TO DO には `/* TODO: (Code Upgrade)` の接頭語が付いており、コード移行の一部として修正する必要があります。
 -   BP 移行固有のルールはコード移行の一環として修正される必要があります。
 
 以下のこの例では、**PurchCommitment\_PSN** フォームを使用して、ナビゲーションを修正する移行タスクについて説明します。 具体的には、重複するボタンおよびアクション ウィンドウ TODO などの例が表示されます。
@@ -130,7 +136,9 @@ LCS コード アップグレード サービス構成のコードをアップ�
 6.  注記: このフォームは、フランスのデモ データ会社 FRSI に配置されます。
 7.  **Ctrl+F5** キーを押してフォームを表示します。
 
-フォームは完成しているように見えますが、移行を完了するために必要なコード移行タスクがあります。 [![i](./media/i1.png)](./media/i1.png)
+フォームは完成しているように見えますが、移行を完了するために必要なコード移行タスクがあります。 
+
+[![i](./media/i1.png)](./media/i1.png)
 
 ### <a name="navigation-migration-tasks"></a>ナビゲーション移行タスク
 
@@ -154,9 +162,13 @@ Finance and Operations では、次の主要なアクションはシステム定
 -   コードを削除するか移動します。
 -   アプリケーション コード内の冗長なコントロールを削除します。
 
-**注記**: 以下のセクションでは、システム定義ボタンを複製するモデル化されたボタンのコードを移行および変更する方法の例を示します。 ただし、実際には、この記事で行われたのと同様の変更を加える前に、シナリオに関してコードをまず評価して、それがまだ必要かどうかを決定する必要があります。 最初に、システム定義の削除ボタンと重複する、DeleteCmdButton に対する TODO を修正します。
+> [!NOTE]
+> 以下のセクションでは、システム定義ボタンを複製するモデル化されたボタンのコードを移行および変更する方法の例を示します。 ただし、実際には、この記事で行われたのと同様の変更を加える前に、シナリオに関してコードをまず評価して、それがまだ必要かどうかを決定する必要があります。 最初に、システム定義の削除ボタンと重複する、DeleteCmdButton に対する TODO を修正します。
 
-1.  Visual Studio で、次に示す "TODO" を検索して、"TODO.[![k](./media/k1.png)](./media/k1.png)" をダブルクリックします。
+1.  Visual Studio では、次に示す TODO を検索して、TODO をダブルクリックします。
+
+    [![k](./media/k1.png)](./media/k1.png)
+
 2.  以下に示すように、TODO とコード行を置き換えます。
     -   システム定義の **削除** ボタンの状態は、firstmaster データソースの AllowDelete プロパティによって制御されます。 AllowDelete を false に設定することにより、キーボード ショートカットが使用されている場合に削除タスクは実行されません。
 
@@ -165,11 +177,17 @@ Finance and Operations では、次の主要なアクションはシステム定
             deleteCmdButton.enabled(purchCommitmentHeader && purchCommitmentHeader.canDelete());
             PurchCommitmentHeader_DS.allowDelete(purchCommitmentHeader && purchCommitmentHeader.canDelete());
 
-3.  エディターで、DeleteCmdButton を探してフォーム デザインから削除します。 [![l](./media/l1.png)](./media/l1.png)
+3.  エディターで、DeleteCmdButton を探してフォーム デザインから削除します。 
+
+    [![l](./media/l1.png)](./media/l1.png)
+
 4.  **Ctrl+S** キーを押してフォームを保存します。
     -   次に、システム編集ボタンと重複する EditCmdButton に焦点を当てて、このボタンに関連付けられた 2 つの "仕事" の処理とこのボタンの削除を行います。
 
-5.  Visual Studio で、次に示す "TODO" を検索して、"TODO.[![m](./media/m1.png)](./media/m1.png)" をダブルクリックします。
+5.  Visual Studio では、次に示す TODO を検索して、TODO をダブルクリックします。
+
+    [![m](./media/m1.png)](./media/m1.png)
+
 6.  **編集**ボタンの表示はフォームの表示/編集モードで制御されるため、このコードを変更してプロパティを設定する必要があります。 次の図に示すように、TODO とコード行を置き換えます。
 
         /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: EditCmdButton */
@@ -185,7 +203,10 @@ Finance and Operations では、次の主要なアクションはシステム定
 
         }
 
-7.   ボタンの他の TODO をダブルクリックします。[![n](./media/n1.png)](./media/n1.png)
+7.  このボタンのその他の TODO をダブルクリックします。
+
+    [![n](./media/n1.png)](./media/n1.png)
+
 8.  モデル化された**編集**ボタンでコードを検査します。 このロジックは、フォームの task() メソッドに移動する必要があります。
 
         [Control("CommandButton")]
@@ -254,7 +275,10 @@ Finance and Operations では、次の主要なアクションはシステム定
                 return ret;
             }
 
-11. エディターで、**EditCmdButton** を探してフォーム デザインから削除します。 [![o](./media/o1.png)](./media/o1.png)
+11. エディターで、**EditCmdButton** を探してフォーム デザインから削除します。 
+
+    [![o](./media/o1.png)](./media/o1.png)
+
 12. **Ctrl+S** キーを押してフォームを保存します。
 13. **Ctrl+F5** キーを押してフォームを表示します。 **確約**タブの**削除**および**編集**ボタンが削除されたことを確認します。
 
@@ -269,14 +293,23 @@ Finance and Operations では、X++ は完全に中間言語 (IL) ベースで�
 4.  プロジェクトに cosDimCheckBoxController クラスを追加します。
 5.  プロジェクトのリビルドします。
 6.  **Ctrl+F5** キーを押してフォームを実行します。
-7.  フォームを実行するときに、次のような例外が発生することに注意してください。[![u](./media/u1.png)](./media/u1.png)
+7.  フォームを実行するときに、次のような例外が発生することに注意してください。
+
+    [![u](./media/u1.png)](./media/u1.png)
+
 8.  cosDimCheckBoxController クラスを右クリックし、**コードの表示** を選択します。
 9.  cosDimCheckBoxController::getBuildControl() にブレークポイントを設定します。
 10. **F5** キーを押します。
     -   ブレークポイントをヒットします。 これがキャスティング エラーが発生する場所です。 キャスト エラーの理由は、型のコントロールを返そうとしているためです。FormBuildCheckboxControl とオブジェクトは FormBuildStringControl を想定しています。
 
-11. buildcontrol をポイントしてタイプを表示し、相違点に注目します。[![v](./media/v1.png)](./media/v1.png)
-12. **F10** キーを押して例外をヒットします。[![w](./media/w2.png)](./media/w2.png)
+11. buildcontrol をポイントしてタイプを表示し、相違点に注目します。
+
+    [![v](./media/v1.png)](./media/v1.png)
+
+12. **F10** キーを押して例外をヒットします。
+
+    [![w](./media/w2.png)](./media/w2.png)
+
 13. デバッグを停止します。
 14. 例外を修正するには、メソッド宣言を FormBuildStringControl から FormBuildCheckBoxControl に変更します。
 
@@ -285,13 +318,13 @@ Finance and Operations では、X++ は完全に中間言語 (IL) ベースで�
 
 15. プロジェクトをリビルドして、**Ctrl+F5** を押します。 キャスト エラーが解決されたため、フォームが正常に開きます。
 
-[![a](./media/a-1024x576.png)](./media/a.png)
+    [![a](./media/a-1024x576.png)](./media/a.png)
 
 ## <a name="migrating-context-menus-and-mouse-double-click-code"></a>コンテキスト メニューとマウス ダブルクリック コードの移行
 コンテキスト メニューとマウスのダブルクリック アクションを処理する Dynamics AX 2012 コードを移行するには、このトピックを参照してください。
 
--   [コンテキスト メニュー](code-migration-context-menus.md)
--   [マウスをダブルクリックします](code-migration-double-click.md)
+-   [コードの移行 - コンテキスト メニュー コード](code-migration-context-menus.md)
+-   [コードの移行 - マウス ダブルクリック ロジック](code-migration-double-click.md)
 
 
 

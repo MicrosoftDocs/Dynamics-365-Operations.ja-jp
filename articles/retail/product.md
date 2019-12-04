@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c78fc1f2f1bb08d01828a8b71ad5d3c16ad31b86
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 98c84e987c40adf136d0240117f7b0f119bf2f59
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278386"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811120"
 ---
 # <a name="product-recommendations-on-pos"></a>POS の製品推奨事項
 
@@ -40,13 +40,13 @@ ms.locfileid: "2278386"
 
 1. **製品の詳細** ページ:
 
-    - • 店舗スタッフが、異なるチャネル間で以前のトランザクションを調べるときに**製品の詳細** ページを参照する場合、推薦サービスは、一緒に購入される可能性が高い追加アイテムを提案します。
+    - 店舗スタッフが、異なるチャネル間で以前のトランザクションを調べるときに**製品の詳細** ページを参照する場合、推奨サービスは、一緒に購入される可能性が高い追加アイテムを提案します。
 
     [![製品詳細ページの推奨事項](./media/proddetails.png)](./media/proddetails.png)
 
 2. **トランザクション** ページ:
 
-    - • 推奨エンジンは、一緒に頻繁に購入されるバスケット内の品目の一覧全体に基づいて、品目を提案します。
+    - 推奨エンジンは、一緒に頻繁に購入されるバスケット内の品目の一覧全体に基づいて、品目を提案します。
 
     > [!NOTE]
     > **トランザクション** ページに推奨事項を表示するには、小売業者は Dynamics 365 for Retail の画面レイアウトを更新する必要があります。 **推奨事項** コントロールは、**トランザクション** ページにドロップする必要があります。
@@ -69,10 +69,12 @@ ms.locfileid: "2278386"
 
 - **小売パラメーター** \> **推奨事項リスト** \> **製品推奨事項の無効化**に移動し、**グローバル構成ジョブ \[9999\]** を実行します。 
 - **画面レイアウト デザイナー** を使用して **推奨事項コントロール** をトランザクション画面に追加した場合、それも削除してください。
-- 他にご質問がある場合は、[推奨事項に関するよく寄せられる質問](../commerce/faq-recommendations.md)を参照してください。
+- 他にご質問がある場合は、[製品推奨事項に関するよく寄せられる質問](../commerce/faq-recommendations.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
-[POS デバイスのトランザクション ページに推奨事項コントロールを追加する](add-recommendations-control-pos-screen.md)
+[POS デバイスのトランザクション画面への推奨事項コントロールの追加](add-recommendations-control-pos-screen.md)
+
 [製品推奨事項の概要](../commerce/product-recommendations.md)
+
 [製品推奨事項の有効化](../commerce/enable-product-recommendations.md) 

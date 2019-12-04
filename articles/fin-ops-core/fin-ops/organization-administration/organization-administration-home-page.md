@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36784311294f80f56f680cd6d14cc989b629ba12
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b1b519d116a55c255cf90d9478ee1714de90264
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178747"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811332"
 ---
 # <a name="organization-administration-home-page"></a>組織管理ホーム ページ
 
@@ -46,7 +46,7 @@ ms.locfileid: "2178747"
 
 組織と組織階層を設定する前に、組織をシミュレーションする方法を確認してください。 組織モデルは、実装と業務プロセスに重要な影響を与えます。
 
-- [組織と組織階層](organizations-organizational-hierarchies.md)
+- [組織と組織階層の概要](organizations-organizational-hierarchies.md)
 - [組織階層の計画](plan-organizational-hierarchy.md)
 - [組織階層の作成](tasks/create-organization-hierarchy.md) (タスク ガイド)
 - [法人の作成](tasks/create-legal-entity.md) (タスク ガイド)
@@ -58,8 +58,8 @@ ms.locfileid: "2178747"
 
 グローバル アドレス帳を作成すると、必要に応じて組織の各会社別または事業品目別のアドレス帳など追加のアドレス帳を作成できます。
 
-- [グローバル アドレス帳](overview-global-address-book.md)
-- [グローバル アドレス帳および追加のアドレス帳の構成方法を計画する](plan-configuration-global-address-book-additional-address-books.md)
+- [グローバル アドレス帳の概要](overview-global-address-book.md)
+- [グローバル アドレス帳およびその他のアドレス帳の計画](plan-configuration-global-address-book-additional-address-books.md)
 - [グローバル アドレス帳の構成](tasks/configure-global-address-book.md)
 - [アドレス帳に関するよく寄せられる質問](qa-address-books.md)
 
@@ -67,10 +67,10 @@ ms.locfileid: "2178747"
 
 ワークフローは、個々のワークフローまたは業務プロセスを作成できるシステムです。 ワークフローを作成する場合、タスクを完了し、決定を下し、ドキュメントを承認するユーザーを示すことによって、システムにおけるドキュメントの流れ (移動) を指定します。
 
-- [ワークフローの概要](overview-workflow-system.md)
+- [ワークフロー システムの概要](overview-workflow-system.md)
 - [ワークフロー要素](workflow-elements.md)
-- [ワークフロー アクション](workflow-actions.md)
-- [ワークフローの作成](create-workflow.md)
+- [ワークフローの承認プロセスでのアクション](workflow-actions.md)
+- [ワークフローの作成の概要](create-workflow.md)
 
 ## <a name="electronic-signatures"></a>電子署名
 
@@ -86,13 +86,13 @@ ms.locfileid: "2178747"
 ケースの計画、追跡、および分析を行うことで、同様の問題に使用できる効率的な解決策を作成できます。 たとえば、顧客サービス担当者または一般人事担当者がケースを作成することで、より効率的なケースを対処したり解決するのに役立つ情報をナレッジ記事で検索できるようになります。
 
 - [ケース管理の概要](cases.md)
-- [ケース セキュリティ、プロセス、およびカテゴリのコンフィギュレーション](plan-case-management.md)
+- [ケース カテゴリ セキュリティの計画、ケース プロセス、およびケース カテゴリ](plan-case-management.md)
 
 ## <a name="record-templates"></a>レコード テンプレート
 
 レコード テンプレートでは、レコードをもっと迅速に作成することができます。 よく使用されるフィールド値を新しいレコードごとに明示的に入力する必要をなくなるようにする、レコード テンプレートを作成できます。
 
-- [レコード テンプレート](record-templates.md)
+- [レコード テンプレートの概要](record-templates.md)
 - [データ入力を容易にするレコード テンプレートの作成](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (タスク ガイド)
 - [レコード テンプレートを使用した新しいレコードの作成](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (タスク ガイド)
 

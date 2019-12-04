@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8a8494bdefcf11dc331be18bfe02e0df1e39d602
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 2652458a5fea9e46b8b68d3b197d2ccb1385731d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626250"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811749"
 ---
 # <a name="manually-created-work-orders"></a>手動で作成された作業指示書
 
@@ -70,7 +70,7 @@ ms.locfileid: "2626250"
 
 - **すべての作業指示書**リスト ページの詳細表示で、**作業指示書のメンテナンス作業**クイック タブで明細行を追加することにより、作業指示書に複数の資産を追加することができます。 資産で、資産に対して選択されている資産タイプに定義されているメンテナンス作業タイプのみを選択することができます。  
 
-- 作業指示書で資産を既に使用した後に、資産サービス レベルまたは資産の重要度を変更した場合、作業指示書のサービス レベルまたは重要度はそれに応じて更新されません。 サービス レベルと重要度の詳細については[資産サービスレベル](../setup-for-objects/object-priorities.md) および[資産の重要度](../setup-for-objects/object-criticalities.md) を参照してください。
+- 作業指示書で資産を既に使用した後に、資産サービス レベルまたは資産の重要度を変更した場合、作業指示書のサービス レベルまたは重要度はそれに応じて更新されません。 サービス レベルと重要度の詳細については、[資産サービス レベル](../setup-for-objects/object-priorities.md) および[資産の重要度タイプ](../setup-for-objects/object-criticalities.md) を参照してください。
 
 - 作業指示書の重要度は、作業指示書ジョブが作業指示書に追加または削除されるたびに再計算されます。
 

@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7134dc49c0e767d3bc4dc32e4feeb0e83a168e86
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 930c744ff2a28451d4267f060867b4b6474d45e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190928"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811581"
 ---
 # <a name="new-or-updated-task-guides-may-2016"></a>新規または更新されたタスク ガイド (2016 年 5 月)
 
@@ -32,7 +32,7 @@ ms.locfileid: "2190928"
 
 ## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 5 月 - すべての言語)
 
-APQC 統合ライブラリ (2016 年 5 月) には、Microsoft Dynamics AX 2016 年 5 月更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 APQC 統合ライブラリ (2016 年 2 月) でリリースされたローカライズ版のタスク ガイドは、このライブラリで使用可能です。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
+APQC 統合ライブラリ (2016 年 5 月) には、Microsoft Dynamics AX 2016 年 5 月更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 APQC 統合ライブラリ (2016 年 2 月) でリリースされたローカライズ版のタスク ガイドは、このライブラリで使用可能です。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、[ヘルプ システム](help-overview.md) を参照してください。
 
 > [!NOTE]
 > ビジネス プロセス モデラー (BPM) 行のタイトルの横にあるアスタリスク (\*) は、そのビジネス プロセスのタスク ガイドは Dynamics AX 2016 年 5 月更新のために作成されたことを示しており、Microsoft Dynamics AX の以前のバージョンではサポートされていません。

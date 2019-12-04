@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: e30d333f1d6144bdae824e7b2cf6d815b461e0ba
-ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
+ms.openlocfilehash: 40571ea9c47456250bd2bcb7f2c9959525c4aac1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564953"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811614"
 ---
 # <a name="move-environments-between-data-centers"></a>データ センター間で環境を移動する
 
@@ -67,12 +67,12 @@ Microsoft により同じデータ センターですべての環境を維持す
     4. この環境が削除された後、**構成**を選択し、環境を再配置します。
     5. **地理/場所**フィールドで、使用するデータ センターを選択します。
     6. 環境が再配置された後は、コード パッケージを適用します。
-    7. 再配置された環境がビルド環境として使用されている場合は、[継続的ビルドとテストの自動化を使用した配置](../../dev-itpro/perf-test/continuous-build-test-automation.md)に記載されている必要なコンフィギュレーションを完了します。
+    7. 再配置された環境がビルド環境として使用されている場合は、 [継続的なビルドとテストの自動化をサポートする環境を配置して使用](../../dev-itpro/perf-test/continuous-build-test-automation.md) に記載されている必要なコンフィギュレーションを完了します。
     8. データを復元します。
 
 > [!NOTE]
 > - サンド ボックス環境では、Azure BLOB ストレージに格納されているファイルの移動はサポートされていません。
-> - 小売顧客は、移動後に小売コンポーネントが正常に機能するため追加の手順が必要であることに注意する必要があります。 詳細については、[データ管理](../../dev-itpro/data-entities/data-entities-data-packages.md)を参照してください。
+> - 小売顧客は、移動後に小売コンポーネントが正常に機能するため追加の手順が必要であることに注意する必要があります。 詳細については、 [データ管理の概要](../../dev-itpro/data-entities/data-entities-data-packages.md) を参照してください。
 
 ## <a name="move-production-environments"></a>実稼働環境の移動
 

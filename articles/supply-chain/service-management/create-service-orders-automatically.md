@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee68190b117b974ff4131f5d2237d138cac1fda3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7d91ccc6a3ebaff220c8a876944b90d910399660
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552279"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814032"
 ---
 # <a name="create-service-orders-automatically"></a>サービス注文の自動作成    
 
@@ -60,7 +60,7 @@ ms.locfileid: "1552279"
 
 2.  **選択**をクリックして、サービス注文の作成に使用する基準を追加または削除するための選択を行います。
 
-3.  **OK** をクリックします。
+3.  **OK**をクリックします。
 
 ## <a name="see-also"></a>参照
 

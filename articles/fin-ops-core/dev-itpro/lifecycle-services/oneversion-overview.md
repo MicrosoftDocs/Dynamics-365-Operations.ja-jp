@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 9a3ddc97307ae4fc94cf6fdf0509cd72c3f3d5a2
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 3fe81c82c06a911c0e245d4058e46e58d49b76d1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578304"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812053"
 ---
 # <a name="one-version-service-updates-overview"></a>1 つのバージョンのサービス更新の概要
 
@@ -51,7 +51,7 @@ ms.locfileid: "2578304"
 
 ## <a name="notice"></a>通知
 
-[リリース ノート](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/) を、今後の計画や何が変化しているのか理解するのを助けるためにできます。 最大で 3 か月前から次の新機能について学ぶことができます。 [新機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) のトピックでは特定の月の更新プログラムに関する詳細を提供します。
+[リリース プラン](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/) は、事前に計画を立て、変更点を理解するのに役立ちます。 最大で 3 か月前から次の新機能について学ぶことができます。 [新機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) のトピックでは特定の月の更新プログラムに関する詳細を提供します。
 
 さらに、通知電子メールが 5 日前に送信され、次の図に示すように更新の直前に通知が LCS に表示されます。
 
@@ -69,7 +69,7 @@ ms.locfileid: "2578304"
 
 ## <a name="validate"></a>検証
 
-UAT 環境で更新が完了したら、基本的なビジネス プロセス テストを実行して環境を検証できます。 次の図に示すように、この作業量をサポートするビジネス プロセス テスト用のコードなし自動化テスト ツールを利用できます。 詳細については [タスク記録および BPM を使用して、ユーザー承認テスト ライブラリを作成する](using-task-guides-and-bpm-to-create-user-acceptance-tests.md) を参照してください。 
+UAT 環境で更新が完了したら、基本的なビジネス プロセス テストを実行して環境を検証できます。 次の図に示すように、この作業量をサポートするビジネス プロセス テスト用のコードなし自動化テスト ツールを利用できます。 詳細については、 [ユーザー受け入れテストの作成と自動化](using-task-guides-and-bpm-to-create-user-acceptance-tests.md) を参照してください。 
 
 [![Regression Suite Automation Tool](./media/TestAutomation.png)](./media/TestAutomation.png)
 

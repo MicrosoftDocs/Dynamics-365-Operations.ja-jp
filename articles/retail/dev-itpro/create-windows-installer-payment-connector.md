@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 26f95754bba0823888891f5c08bfd5a54bf494a9
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: 1bd2673b9ceb34e46ad1049c743df2ebdc1175f6
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833081"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811182"
 ---
 # <a name="create-windows-installers-for-payment-connectors"></a>支払コネクタ用の Windows インストーラーの作成
 
@@ -30,7 +30,7 @@ ms.locfileid: "1833081"
 
 このトピックでは、支払コネクタの Windows インストーラーを作成する方法を説明します。 このトピックは、支払いコネクタをパッケージ化する方法を説明するために、MasterCard や Visa などの支払コネクタ プロバイダで作業する開発者を対象にしています。支払コネクタは特定顧客向けに作業する実装パートナーと共有できます。 
 
-開発環境で支払いコネクタを実装してテストした後、生産の配置のため小売業者 IT プロフェッショナルに支払コネクタまたは付加価値再販業者 (VAR) を転送するインストーラーを作成する必要があります。 詳細については、[支払ターミナルと支払の統合](end-to-end-payment-extension.md)を参照してください。
+開発環境で支払いコネクタを実装してテストした後、生産の配置のため小売業者 IT プロフェッショナルに支払コネクタまたは付加価値再販業者 (VAR) を転送するインストーラーを作成する必要があります。 詳細については、[支払ターミナルのためのエンド・ツー・エンドの支払統合を作成する](end-to-end-payment-extension.md) を参照してください。
 
 ## <a name="windows-installer"></a>Windows インストーラー
 Microsoft Windows インストーラー (MSI) は、Microsoft Windows 用のアプリケーションおよび構成サービスです。 支払コネクタを配置するために必要なすべてのファイルが含まれるインストーラーを作成する必要があります。 インストーラー自体は支払コネクタを配置しません。 指定したフォルダーにコネクタ ファイルを解凍してコピーするだけです。 このトピックの次のセクションでは、そのフォルダーの内容を定義します。 インストールを続行する前に顧客がユーザー契約の受け入れを要求するように、インストーラーを構成することができます。 また、インストーラーに対して優先する形式を選択することができます。 たとえば、.exe ファイルを持つことができます。

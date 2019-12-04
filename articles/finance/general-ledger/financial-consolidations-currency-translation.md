@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7b6b3cced92920ef5a253ca15793f26f244475fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186604"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771848"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>財務連結および通貨換算の概要
 
@@ -91,7 +91,7 @@ ms.locfileid: "2186604"
 ![追加連結勘定ページ上のマッピング](./media/additional-consolidation-accounts.png "追加連結勘定ページ上のマッピング")
 
 ## <a name="consolidating-online"></a>オンラインで連結する
-オンライン連結の詳細を入力する方法については、[オンラインで連結](./consolidate-online.md)を参照してください。
+オンライン連結の詳細を入力する方法については、[オンライン財務連結](./consolidate-online.md)を参照してください。
 
 ## <a name="managing-consolidation-transactions"></a>連結トランザクションの管理
 連結の結果を表示するには、複数のオプションがあります:

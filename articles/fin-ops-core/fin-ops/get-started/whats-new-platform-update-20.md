@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 18, Platform update 19, Platform 20
-ms.openlocfilehash: e629739cac660efdd466074928f43e77e220e53d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 74495d33c7932b4062f291efdec2ee9e858e5780
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180494"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811420"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-20-september-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 (2018 年 9 月) の新機能および変更された機能
 
@@ -121,7 +121,7 @@ Finance and Operations の一部のルックアップは、*非置き換え*で�
 
 ## <a name="chain-of-command-on-nested-types"></a>入れ子にされた型のコマンド チェーン
 
-今回のリリースでは、データ ソースやコントロールを含む、フォーム内の入れ子になった型でコマンド チェーンを有効にしました。 これにより、フォームに関連する幅広い拡張シナリオでコマンド チェーンを使用できるようになります。 詳細については、[プラットフォーム更新 16 以降ではフォームで入れ子になったクラス メソッドをラップ可能](../../dev-itpro/extensibility/method-wrapping-coc.md#methods-on-types-nested-within-forms-can-be-wrapped-in-platform-update-16-and-later)を参照してください。 プラットフォーム更新 16 以降ではフォーム内で入れ子になったタイプのメソッドをラップできます。
+今回のリリースでは、データ ソースやコントロールを含む、フォーム内の入れ子になった型でコマンド チェーンを有効にしました。 これにより、フォームに関連する幅広い拡張シナリオでコマンド チェーンを使用できるようになります。 詳細については、[クラスの拡張機能: メソッドのラッピングとコマンド チェーン](../../dev-itpro/extensibility/method-wrapping-coc.md#methods-on-types-nested-within-forms-can-be-wrapped-in-platform-update-16-and-later)を参照してください。 プラットフォーム更新 16 以降ではフォーム内で入れ子になったタイプのメソッドをラップできます。
 
 ## <a name="change-form-patterns-to-custom-using-form-extensions"></a>フォームの拡張機能を使用してフォーム パターンをカスタムに変更する
 
@@ -197,7 +197,7 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスクの自�
 
 プラットフォーム更新 20 より前では、バッチ ジョブを管理するシステム管理者や IT 管理者セキュリティ ロールにユーザーを割り当てる必要がありました。 プラットフォーム更新 20 のリリースには、より対象を絞り込んだロール、バッチ マネージャーがあります。 このセキュリティ ロールでは、ユーザーはバッチ ジョブをコピーする、ジョブを実行するユーザーを変更する、ジョブを実行できる時間範囲を指定するアクセス許可を持ちます。 バッチ管理セキュリティ特権は、バッチ管理者セキュリティ ロールの一部です。これにより、ユーザーはアド ホック バッチ ジョブを作成して、他のユーザーに権限を付与できます。
 
-詳細については、「[バッチ管理者ロール](../../dev-itpro/sysadmin/runby.md)」を参照してください。
+詳細については、[バッチ管理者のセキュリティ ロール](../../dev-itpro/sysadmin/runby.md) を参照してください。
 
 ## <a name="copy-batch-job"></a>バッチ ジョブのコピー
 

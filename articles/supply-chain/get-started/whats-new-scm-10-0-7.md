@@ -3,7 +3,7 @@ title: Dynamics 365 Supply Chain Management 10.0.7 の機能のプレビュー (
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.7 の新機能または変更された機能について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 10/24/2019
+ms.date: 11/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,19 +17,25 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: a4427dd0b82fe78a8f79226a7886dac9266924ab
-ms.sourcegitcommit: 381ea71cf22898587ca6af4700b51ad1b4d1a397
+ms.openlocfilehash: 67e3e2d9cd628c82408986a630cb295d48c4433a
+ms.sourcegitcommit: 22904808753f5b19d5eed71c943586f1cc60db26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "2660871"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "2805508"
 ---
 # <a name="preview-features-in-dynamics-365-supply-chain-management-1007-january-2020"></a>Dynamics 365 Supply Chain Management 10.0.7 の機能のプレビュー (2020 年 1 月)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management 10.0.7 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.283 です。 一般提供開始日は 2020 年 1 月ですが、新機能は 10 月の初期リリースで使用できます。 バージョン 10.0.7 の詳細については [追加リソース](whats-new-scm-10-0-7.md#additional-resources) を参照してください。
+このトピックでは、Microsoft Dynamics 365 Supply Chain Management 10.0.7 の新機能または変更された機能について説明します。 このバージョンには 10.0.283 のビルド番号が含まれており、次のように使用できます。
+
+- プレビューリリースは 2019 年 10 月です。
+- Ga (自動更新) は 2019 年 11 月です。
+- 自動更新は 2020 年 1 月です。 
+
+バージョン 10.0.7 の詳細については [追加リソース](whats-new-scm-10-0-7.md#additional-resources) を参照してください。
 
 ## <a name="feature-management-enhancements"></a>機能管理の拡張
 機能管理を使用すると、既定ですべての新機能を有効にできます。それには機能を有効にするための確認と、まだ有効になっていないすべての機能を有効にすることが必要です。 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5db954d8847c252bee1c8e50acae546852ae9b94
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 9d12a4d48aa369884804c2a0bce9834534b1bec6
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026236"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832864"
 ---
 # <a name="extensibility-in-attract"></a>Attract での拡張性
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 Talent は、Common Data Service 上に構築され、Microsoft Power Platform および Common Data Service が提供する機能を使用してさまざまな方法で拡張できます。 したがって、Microsoft PowerApps および Microsoft Flow を使用して、システムをコンフィギュレーションおよびカスタマイズできます。 Microsoft Power BI を使用して、人々に関する追加の分析を取得することもできます。 さらに、PowerApps および Web コンテンツ (iframe) 活動などの新しいカスタム活動は、採用プロセスをこれまで以上に適応しやすくします。 これらの活動を使用することにより、採用プロセスをビジネス ニーズとプロセスに合わせることができ、採用チームと候補者の両方にシームレスでカスタマイズされた経験があることを確認できます。
+Microsoft Dynamics 365 Talent は、Common Data Service 上に構築され、Microsoft Power Platform および Common Data Service が提供する機能を使用してさまざまな方法で拡張できます。 したがって、Microsoft Power Apps および Microsoft Power Automate を使用して、システムをコンフィギュレーションおよびカスタマイズできます。 Microsoft Power BI を使用して、人々に関する追加の分析を取得することもできます。 さらに、Power Apps および Web コンテンツ (iframe) 活動などの新しいカスタム活動は、採用プロセスをこれまで以上に適応しやすくします。 これらの活動を使用することにより、採用プロセスをビジネス ニーズとプロセスに合わせることができ、採用チームと候補者の両方にシームレスでカスタマイズされた経験があることを確認できます。
 
 ## <a name="extending-option-sets-in-attract"></a>Attract のオプション セットの拡張
 
@@ -40,7 +40,7 @@ Microsoft Dynamics 365 Talent は、Common Data Service 上に構築され、Mic
 
 下の一覧は、**不採用理由**フィールドと業務に固有の値を更新する手順です。  
 
-1. **不採用理由**オプション セットを拡張するには、[PowerApps 管理 Web サイト](https://admin.powerapps.com) に移動します。
+1. **不採用理由**オプション セットを拡張するには、[Power Apps 管理 Web サイト](https://admin.powerapps.com) に移動します。
 2. アカウントにサインインするよう求められる可能性があります。 Dynamics365 や Office365 にサインインするために使用する userID およびパスワードの資格情報を指定し、**次へ**をクリックします。
 3. **環境**タブで管理する環境を選択し、ダブルクリックして**詳細**タブにアクセスします。
 4. **詳細**タブで **Dynamics 365 管理センター**を選択します。
@@ -58,15 +58,15 @@ Microsoft Dynamics 365 Talent は、Common Data Service 上に構築され、Mic
 
 Attract からのすべてのデータは Common Data Service に存在するため、Microsoft Power Platform からのツールを使用して Attract に固有のビジネス ニーズを組み込むことができます。
 
-### <a name="powerapps"></a>PowerApps
+### <a name="power-apps"></a>Power Apps
 
-PowerApps を使用して、Attract データに接続し、Microsoft Excel の式のような式を使用してロジックを追加するアプリを簡単に構築できます。 PowerApps を使用して構築するアプリは、Web、Apple iOS、Google Android デバイスで実行できます。
+Power Apps を使用して、Attract データに接続し、Microsoft Excel の式のような式を使用してロジックを追加するアプリを簡単に構築できます。 Power Apps を使用して構築するアプリは、Web、Apple iOS、Google Android デバイスで実行できます。
 
-たとえば、履歴書をスキャンして候補者を Attract の位置にフィードする軽量アプリを構築することで、採用者にとって大学のキャリアフェアを簡単にすることができます。 または、組織のコンプライアンスのニーズを満たすのに役立つアプリを構築できます。 PowerApps およびアプリの構築にそれを使用する方法の詳細については、[Common Data Service へのデータの統合](https://docs.microsoft.com/powerapps) を参照してください。
+たとえば、履歴書をスキャンして候補者を Attract の位置にフィードする軽量アプリを構築することで、採用者にとって大学のキャリアフェアを簡単にすることができます。 または、組織のコンプライアンスのニーズを満たすのに役立つアプリを構築できます。 Power Apps およびアプリの構築にそれを使用する方法の詳細については、[Common Data Service へのデータの統合](https://docs.microsoft.com/powerapps) を参照してください。
 
-### <a name="microsoft-flow"></a>Microsoft Flow 
+### <a name="microsoft-power-automate"></a>Microsoft Power Automate 
 
-Microsoft Flow を使用して、Attract データの上で実行するワークフローを自動作成できます。 コードの書き込みなしで、数百の人気のアプリおよびサービスに簡単に接続できます。 Common Data Service Attract ジョブ、候補者、アプリケーション エンティティとやりとりするフローを構築することで、さまざまな活動を自動化できます。 たとえば、候補者がオファーを受け入れると、オンボード チームに通知を送信でき、または Twitter にニュースが発表されます。 フローの詳細については、[Microsoft Flow の開発者ドキュメント](https://docs.microsoft.com/flow/) を参照してください。
+Microsoft Power Automate を使用して、Attract データの上で実行するワークフローを自動作成できます。 コードの書き込みなしで、数百の人気のアプリおよびサービスに簡単に接続できます。 Common Data Service Attract ジョブ、候補者、アプリケーション エンティティとやりとりするフローを構築することで、さまざまな活動を自動化できます。 たとえば、候補者がオファーを受け入れると、オンボード チームに通知を送信でき、または Twitter にニュースが発表されます。 フローの詳細については、[Microsoft Power Automate ドキュメント](https://docs.microsoft.com/flow/) を参照してください。
 
 ### <a name="power-bi"></a>Power BI
 
@@ -74,18 +74,18 @@ Power BI を使用すると、Attract データへのより深い洞察を与え
 
 ### <a name="custom-activities"></a>カスタム活動 
 
-職務プロセス テンプレートのレベルで、または新しいジョブを作成している間に、PowerApps アプリおよび Web コンテンツ (iframe) 活動などのカスタム活動を追加できます。 これらの活動を使用すると、採用プロセスをカスタマイズしたり、組織に固有のビジネス ロジックを Attract にもたらすことができます。
+職務プロセス テンプレートのレベルで、または新しいジョブを作成している間に、Power Apps アプリおよび Web コンテンツ (iframe) 活動などのカスタム活動を追加できます。 これらの活動を使用すると、採用プロセスをカスタマイズしたり、組織に固有のビジネス ロジックを Attract にもたらすことができます。
 
-#### <a name="powerapps-activity"></a>PowerApps 活動 
+#### <a name="power-apps-activity"></a>Power Apps 活動 
 
-PowerApps 活動では、職務または職務プロセス テンプレートの作成者が採用フローを PowerApps アプリに埋め込むことができます。 アプリを作成し公開した後、活動コンフィギュレーションで、アプリ ID を入力できます。 PowerApps アプリを使用すると、Common Data Service へのデータの読み取りおよび書き込みができます。 アプリがフローするようにリンクもできます。 たとえば、採用担当者が電話面接の実施中に、フォームに入力するために使用するアプリがあります。 この場合、申請者が職務アプリ プロセスでさらに進めることができるかどうかを評価するフローにアプリをリンクできます。 このタイプの活動は、採用チームのメンバーでのみ表示できます。 PowerApps 活動をコンフィギュレーションする方法の詳細については、[Attract での活動](./activities-attract.md) を参照してください。
+Power Apps 活動では、職務または職務プロセス テンプレートの作成者が採用フローを Power Apps アプリに埋め込むことができます。 アプリを作成し公開した後、活動コンフィギュレーションで、アプリ ID を入力できます。 Power Apps アプリを使用すると、Common Data Service へのデータの読み取りおよび書き込みができます。 アプリがフローするようにリンクもできます。 たとえば、採用担当者が電話面接の実施中に、フォームに入力するために使用するアプリがあります。 この場合、申請者が職務アプリ プロセスでさらに進めることができるかどうかを評価するフローにアプリをリンクできます。 このタイプの活動は、採用チームのメンバーでのみ表示できます。 Power Apps 活動をコンフィギュレーションする方法の詳細については、[採用プロセスの活動](./activities-attract.md) を参照してください。
 
 > [!NOTE]
-> PowerApps 活動は、包括採用アドオンでのみ使用できます。
+> Power Apps 活動は、包括採用アドオンでのみ使用できます。
 
 #### <a name="web-content-iframe-activity"></a>Web コンテンツ (iframe) 活動
 
-Web コンテンツ (iframe) 活動を使用して、採用プロセスまたは候補者のポータルに構築したカスタム Web ソリューションを組み込むことができます。 Common Data Service から直接データの読み取りおよび書き込みができます。 フローをトリガーし、または Microsoft Azure 機能を利用できるように、ソリューションをカスタマイズすることもできます。 Web コンテンツ活動をコンフィギュレーションする方法の詳細については、[Attract での活動](./activities-attract.md) を参照してください。
+Web コンテンツ (iframe) 活動を使用して、採用プロセスまたは候補者のポータルに構築したカスタム Web ソリューションを組み込むことができます。 Common Data Service から直接データの読み取りおよび書き込みができます。 フローをトリガーし、または Microsoft Azure 機能を利用できるように、ソリューションをカスタマイズすることもできます。 Web コンテンツ活動をコンフィギュレーションする方法の詳細については、[採用プロセスの活動](./activities-attract.md) を参照してください。
 
 > [!NOTE]
 > Web コンテンツ活動は、包括採用アドオンでのみ使用できます。

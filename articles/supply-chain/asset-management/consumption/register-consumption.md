@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 3d23375ec7ebe9b43c2d2e3e376e26c348131bd3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653326"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812263"
 ---
 # <a name="register-consumption"></a>消費の登録
 
@@ -33,7 +33,7 @@ ms.locfileid: "2653326"
 
 ワーク オーダーでメンテナンス作業が完了したら、次のステップで、消費を登録して仕訳帳を転記します。 時間、品目、および経費のいずれかの消費タイプで登録を行うことができます。 さまざまな消費タイプが、**ワーク オーダー仕訳帳**ページに登録および転記されます。 **資産管理**における仕訳帳の設定は、**プロジェクト管理および会計**モジュールで時間、品目、および経費の、個別の仕訳帳を作成および転記するために使用されます。
 
-ある場合には、作業指示書の予測明細行を追加または削除できる場合があります。 ワーク オーダーのライフサイクル状態の設定、関連するプロジェクト タイプ、およびプロジェクト タイプに関連するステージ ルールにより、仕訳帳明細行を追加または編集できるかどうかが決まります。 ワーク オーダーのライフサイクル状態と、関連するプロジェクト ステージの詳細については、[プロジェクト管理および会計への統合](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md)を参照してください。
+ある場合には、作業指示書の予測明細行を追加または削除できる場合があります。 ワーク オーダーのライフサイクル状態の設定、関連するプロジェクト タイプ、およびプロジェクト タイプに関連するステージ ルールにより、仕訳帳明細行を追加または編集できるかどうかが決まります。 作業指示書ライフサイクルの状態と関連するプロジェクト ステージの詳細については、[予測、作業指示書、およびプロジェクト](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md) を参照してください。
 
 >[!NOTE]
 >ワーク オーダーのライフサイクル状態での仕訳帳の自動転記を設定することができます。 詳細については、[ワーク オーダーのライフサイクル状態](../setup-for-work-orders/work-order-lifecycle-states.md)を参照してください。

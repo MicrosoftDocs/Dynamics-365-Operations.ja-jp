@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bd76fc771c370d8d769a97d3b33003f632717f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174193"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771520"
 ---
 # <a name="cost-management-power-bi-content"></a>原価管理 Power BI コンテンツ
 
@@ -37,7 +37,7 @@ ms.locfileid: "2174193"
 > [!NOTE]
 > このトピックで説明する**原価管理** Power BI コンテンツは、Dynamics 365 Finance and Operations 8.0 に適用されます。
 > 
-> AppSource サイトで利用可能な**原価管理** Power BI コンテンツ パックの使用は推奨されていません。 非推奨に関しての詳細については [AppSource で利用可能な Power BI コンテンツ パック](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) を参照してください。
+> AppSource サイトで利用可能な**原価管理** Power BI コンテンツ パックの使用は推奨されていません。 この廃止の詳細については、[Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)を参照してください。
 
 この Power BI コンテンツは、在庫のパフォーマンスを監視し、原価の流れを視覚化するのに役立つカテゴリ化された形式を提供します。 回転資本率、在庫を保持している日数、精度、「ABC分類」などの経営洞察力を、望ましい集計レベル (会社、品目、品目グループ、またはサイト) で得ることができます。 利用可能になった情報は、財務諸表の詳細な補足情報として使用できます。
 

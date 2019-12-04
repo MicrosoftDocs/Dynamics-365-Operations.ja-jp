@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: e82d85e22a1a55a92d6565585b315aee7b90b1ff
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0af43faa977e08326b8f7aee390eda92632a649f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249343"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769986"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 
@@ -46,7 +46,7 @@ Microsoft Dynamics AX の 2016 年 2 月のリリースでは、データ エン
 さらに、Power BI サービスにデータがキャッシュされないため、データが環境から離れることはありません。
 
 ## <a name="stage-aggregate-measurements-in-entity-store"></a>エンティティ格納における集計測定のステージング
-集計測定は分析シナリオのためにモデル化されたスター スキーマです。 2016 年 2 月のリリースでは、リアルタイムなメモリ内集計の測定が有効になりました。 リアルタイムの集計測定を使用することにより、データのリアルタイム操作に対応する埋め込みチャートおよび主要業績評価指標 (KPI) を有効にすることができます。 詳細については、[メモリ内リアルタイム集計モデルによる SSAS キューブの置換](../migration-upgrade/in-memory-real-time-aggregate-models.md) を参照してください。 リアルタイム集計測定は、インメモリの非クラスター化縦棒ストア インデックス (NCCI) の技術を活用します。 リアルタイムの集計の測定で作成されたビジュアルおよび集計計算に数秒以内のトランザクションが反映されます。 プラットフォーム更新プログラム 1 (2016 年 5 月) のリリースでは、エンティティ格納でステージングできる集計測定を有効にしました。 エンティティ ストアで実施された集計測定は、Power BI を使用して大量のデータを調べる必要がある、ほぼリアルタイムの分析シナリオで使用できます。 開発者は、[モデリングおよび集計データを使用して](model-aggregate-data.md) 集計の測定でリアルタイム分析をモデル化する方法について学びました。 プラットフォーム更新プログラム 1 (2016 年 5 月) のリリースでは、エンティティ格納でステージングできる集計測定をモデル化する機能も追加しました。 Microsoft Visual Studio で、**StagedEntityStore** を集計の測定の用途プロパティとして指定します。 この新しいプロパティは、2016 年 5 月で追加されました。 以前は、**InMemoryRealTime** は用途プロパティとして使用できました。
+集計測定は分析シナリオのためにモデル化されたスター スキーマです。 2016 年 2 月のリリースでは、リアルタイムなメモリ内集計の測定が有効になりました。 リアルタイムの集計測定を使用することにより、データのリアルタイム操作に対応する埋め込みチャートおよび主要業績評価指標 (KPI) を有効にすることができます。 詳細については、 [Analysis Services キューブから集計モデルへの移行](../migration-upgrade/in-memory-real-time-aggregate-models.md) を参照してください。 リアルタイム集計測定は、インメモリの非クラスター化縦棒ストア インデックス (NCCI) の技術を活用します。 リアルタイムの集計の測定で作成されたビジュアルおよび集計計算に数秒以内のトランザクションが反映されます。 プラットフォーム更新プログラム 1 (2016 年 5 月) のリリースでは、エンティティ格納でステージングできる集計測定を有効にしました。 エンティティ ストアで実施された集計測定は、Power BI を使用して大量のデータを調べる必要がある、ほぼリアルタイムの分析シナリオで使用できます。 開発者として、 [集計データのモデリング](model-aggregate-data.md) でリアルタイム分析の集計測定をモデル化する方法について確認することができます。 プラットフォーム更新プログラム 1 (2016 年 5 月) のリリースでは、エンティティ格納でステージングできる集計測定をモデル化する機能も追加しました。 Microsoft Visual Studio で、**StagedEntityStore** を集計の測定の用途プロパティとして指定します。 この新しいプロパティは、2016 年 5 月で追加されました。 以前は、**InMemoryRealTime** は用途プロパティとして使用できました。
 
 ![Visual Studio にある新しい StagedEntityStore の使用プロパティ](media/new-usage-property-in-VS.png)
 

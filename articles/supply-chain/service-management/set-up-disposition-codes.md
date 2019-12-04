@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e21854825019a73dc8d7bf5a3ee18d508123f72
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: a85f804344abec37d85e1ce15f064c8a0b901546
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743192"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813112"
 ---
 # <a name="set-up-disposition-codes"></a>廃棄コードを設定します 
 
@@ -46,7 +46,7 @@ ms.locfileid: "1743192"
 
 ## <a name="see-also"></a>参照
 
-[廃棄コードおよび返品理由コード](disposition-and-return-reason-codes.md)
+[顧客からの返品の概要](disposition-and-return-reason-codes.md)
 
 [廃棄コード (フォーム)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 

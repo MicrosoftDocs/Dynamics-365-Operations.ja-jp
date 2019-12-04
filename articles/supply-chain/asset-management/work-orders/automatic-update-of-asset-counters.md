@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d51b9a7684e460d555632c3896e9dd8a4e10d92c
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 005b04bd4c3476356f30ba8e97564f83307a64c7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626181"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811752"
 ---
 # <a name="automatic-update-of-asset-counters"></a>資産カウンターの自動更新
 
@@ -43,16 +43,16 @@ ms.locfileid: "2626181"
 
 2. **開始日**フィールドで、自動更新の開始日を選択します。
 
->[!NOTE]
->このフィールドの日付は、**工順トランザクション** (**生産管理** > **照会およびレポート** > **生産** > **工順トランザクション** > **現物日付**フィールド) からの "仕掛品" の日付です。
+    >[!NOTE]
+    >このフィールドの日付は、**工順トランザクション** (**生産管理** > **照会およびレポート** > **生産** > **工順トランザクション** > **現物日付**フィールド) からの "仕掛品" の日付です。
 
 3. **対象に含めるレコード** クイック タブでは、自動更新のための特定の資産、資産タイプ、またはリソースを選択できます。 **フィルター**を選択して、関連する選択を行います。
 
 4. **バックグラウンドで実行**クイック タブでは、必要に応じて自動更新をバッチ ジョブとして設定できます。
 
-次の図は、**資産カウンターの更新**ダイアログの例を示しています。
+    次の図は、**資産カウンターの更新**ダイアログの例を示しています。
 
-![図 1](media/12-work-orders.png)
+    ![図 1](media/12-work-orders.png)
 
 5. **OK** を選択します。 
 

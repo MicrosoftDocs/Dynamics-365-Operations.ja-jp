@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6da9447386e8e56e20507d985ebcdbfce934debd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181614"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771447"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>電子申告を使用したテストの自動化
 
@@ -44,8 +44,8 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 機能パワー ユーザーは、ソース コードを記述することなく、ユーザーの受け入れと統合のテストを作成することができます。
 
 - ER ベースライン機能を使用して、生成されたドキュメントをマスター コピーと比較します。 詳細については、[生成されたレポート結果を追跡し、ベースライン値と比較する](er-trace-reports-compare-baseline.md)を参照してください。
-- タスク レコーダーを使用してテスト ケースを記録し、ベースライン評価を含めます。 詳細については、[タスク レコーダー](../user-interface/task-recorder.md)を参照してください。
-- 必要なテスト シナリオのテスト ケースをグループ化します。 詳細については [タスク記録および BPM を使用して、ユーザー承認テスト ライブラリを作成する](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md) を参照してください。
+- タスク レコーダーを使用してテスト ケースを記録し、ベースライン評価を含めます。 詳細については、[タスク レコーダーのリソース](../user-interface/task-recorder.md) を参照してください。
+- 必要なテスト シナリオのテスト ケースをグループ化します。 詳細については、 [ユーザー受け入れテストの作成と自動化](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md) を参照してください。
 
     - LCS でビジネス プロセス モデル (BPM) を使用して、ユーザー受け入れテスト用のライブラリを作成します。
     - BPM テスト ライブラリを使用して、Microsoft Azure DevOps サービス (Azure DevOps) でテスト計画とテスト スイートを作成します。
@@ -59,10 +59,10 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 
 このトピックのタスクを完了する前に、以下の前提条件を完了する必要があります。
 
-- テストの自動化をサポートするトポロジを配置します。 **システム管理者**ロールは、このトポロジのインスタンスへのアクセスが必要です。 このトポロジには、この例で使用するデモデータを含める必要があります。 詳細については、[継続的ビルドとテストの自動化をサポートするトポロジの配置](../perf-test/continuous-build-test-automation.md)を参照してください。
+- テストの自動化をサポートするトポロジを配置します。 **システム管理者**ロールは、このトポロジのインスタンスへのアクセスが必要です。 このトポロジには、この例で使用するデモデータを含める必要があります。 詳細については、[継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md) を参照してください。
 - ユーザー受け入れと統合テストを自動的に実行するには、使用しているトポロジに RSAT をインストールし、適切な方法でコンフィギュレーションする必要があります。 RSAT をインストールして構成する方法および Finance and Operations アプリと Azure DevOps と連携するように構成する方法の詳細については、[Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357) を参照してください。 このツールを使用するための前提条件に注意してください。 以下の図は、RSAT の設定の一例を表しています。 青い四角形は、Azure DevOpsへのアクセスを指定するパラメーターを囲みます。 緑色の四角形は、インスタンスへのアクセスを指定するパラメーターを囲みます。
 
-    ![RSAT の設定](media/GER-Configure.png "RSAT の設定ダイアログ ボックスのスクリーンショット")
+    ![RSAT 設定](media/GER-Configure.png "RSAT の設定ダイアログ ボックスのスクリーンショット")
 
 - 正しい実行順序を保証するためにスイートでテスト ケースを整理し、さらにレポート作成および調査のためにテスト実行のログを収集するには、配置されたトポロジから Azure DevOps にアクセスできる必要があります。
 - このトピックの例を完了するには、[RSAT テストの ER 使用方法](https://go.microsoft.com/fwlink/?linkid=874684)をダウンロードしてください。 この zip ファイルには、次のタスク ガイドが含まれています。
@@ -81,7 +81,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
     - **支払 モデル マッピング 1611** ER モデル マッピング コンフィギュレーション
     - **BACS (英国)** ER 形式のコンフィギュレーション
 
-    ![電子申告コンフィギュレーション](media/GER-Configurations.png "電子申告のコンフィギュレーション ページのスクリーンショット")
+    ![電子申告コンフィギュレーション](media/GER-Configurations.png "電子申告のンフィギュレーション ページのスクリーンショット")
 
 3. イギリスで国/地域のコンテキストを持つ **GBSI** デモ データの会社を選択してください。
 4. 買掛金勘定パラメーターのコンフィギュレーション
@@ -93,7 +93,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
         1. **ファイル形式**のクイック タブで、**一般的なエクスポート形式**のオプションを**はい**に設定します。
         2. **書式設定のコンフィギュレーションのエクスポート** フィールドで、**BACS (英国)** を選択します。
 
-    ![支払方法のページ](media/GER-APParameters.png "支払方法のページのスクリーンショット")
+    ![支払方法のページ](media/GER-APParameters.png "支払方法ページのスクリーンショット")
 
     > [!NOTE]
     > カスタマイズをサポートするために作成された、この ER 形式の派生バージョンがある場合は、**電子**支払方法でこのコンフィギュレーションを選択できます。
@@ -103,7 +103,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
     1. **買掛金勘定 \> 支払 \> 支払仕訳帳**の順に移動します。
     2. 支払仕訳帳が転記されていないことを確認してください。
 
-        ![支払仕訳帳ページ](media/GER-APJournal.png "支払仕訳帳ページのスクリーンショット")
+        ![支払仕訳帳のページ](media/GER-APJournal.png "支払仕訳帳ページのスクリーンショット")
 
     3. **明細行**を選択し、次の情報を含む行を入力します。
 
@@ -116,7 +116,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
         | 相手勘定      | GBSI OPER       |
         | 支払方法   | 電子      |
 
-    ![仕入先支払ページ](media/GER-APJournalLines.png "仕入先支払ページのスクリーンショット")
+    ![仕入先支払のページ](media/GER-APJournalLines.png "仕入先支払ページのスクリーンショット")
 
 ## <a name="prepare-the-er-framework-to-test-vendor-payment-processing"></a>ER フレームワークを準備して仕入先支払処理をテストします。
 
@@ -125,7 +125,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 1. **組織管理 \> 電子申告 \> 電子申告パラメーター**の順に移動します。
 2. **添付ファイル** タブの**ベースライン** フィールドで、ドキュメント管理 (DM) フレームワークが DM 添付ファイルとしてベースライン機能に関連するドキュメントを保持するために使用するドキュメント タイプとして**ファイル**を選択します。
 
-    ![電子申告パラメーター ページ](media/GER-ERParameters.png "電子申告パラメーター ページのスクリーンショット")
+    ![電子申告のパラメーター ページ](media/GER-ERParameters.png "電子申告パラメーター ページのスクリーンショット")
 
 ### <a name="generate-baseline-copies-of-vendor-paymentrelated-documents"></a>仕入先支払に関連するドキュメントのベースライン コピーの生成
 
@@ -142,7 +142,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
     - **ファイル** テキスト形式の支払ファイル
     - **ERVendOutPaymControlReport** XLSX 形式の管理レポート ファイル
 
-    ![展開されたファイル](media/GER-APJournalProcessed.png " Windows エクスプローラーで展開されたファイルのスクリーンショット")
+    ![展開されたファイル](media/GER-APJournalProcessed.png "Windows エクスプローラーで展開されたファイル名のスクリーンショット")
 
 ### <a name="turn-on-the-er-baseline-feature"></a>ER ベースライン機能の有効化
 
@@ -199,7 +199,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
     4. **ファイル名マスク** フィールドに**\*.XLSX**と入力して、**.xslx**ファイル名拡張子を持つ**ERVendOutPaymControlReport** 形式コンポーネントの出力のみに、このベースラインを適用します。
     5. **ベースライン** フィールドで**支払 XLSX 管理レポート**を選択して、このベースラインが生成された出力との比較に使用できるようにします。
 
-    ![コンフィギュレーション ページのベースライン クイックタブ](media/GER-BaselineRules.png "コンフィギュレーション ページのベースライン クイックタブのスクリーンショット")
+    ![構成ページのベースライン クイック タブ](media/GER-BaselineRules.png "コンフィギュレーション ページのベースライン クイック タブのスクリーンショット")
 
 ## <a name="record-tests-to-validate-vendor-payment-processing"></a>仕入先支払処理を検証するテストの記録
 
@@ -229,15 +229,15 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 
 1. 処理された支払明細行の状態を**なし**に設定します。
 
-    ![タスク記録手順 3 から 4](media/GER-Recording1Review1.png " タスク記録手順 3 から 4 のスクリーンショット")
+    ![タスク記録手順 3 から 4](media/GER-Recording1Review1.png "タスク記録手順 3 から 4 のスクリーンショット")
 
 2. **デバッグモードで実行** ER ユーザーパラメーターをオンにします。
 
-    ![タスク記録手順 9 から 10](media/GER-Recording1Review2.png " タスク記録手順 9 から 10 のスクリーンショット")
+    ![タスク記録手順 9 から 10](media/GER-Recording1Review2.png "タスク記録手順 9 から 10 のスクリーンショット")
 
 3. 生成されたファイルとベースラインとの比較の結果を含む ER デバッグ ログをクリーンアップします。
 
-    ![タスク記録手順 13 から 15](media/GER-Recording1Review3.png " タスク記録手順 13 から 15 のスクリーンショット")
+    ![タスク記録手順 13 から 15](media/GER-Recording1Review3.png "タスク記録手順 13 から 15 のスクリーンショット")
 
 ### <a name="record-the-steps-to-test-vendor-payment-processing"></a>仕入先支払処理をテストする手順の記録
 
@@ -256,7 +256,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 1. 仕入先支払の処理を開始します。
 2. 適切なランタイム パラメーターを選択し、管理レポートの生成をオンにします。
 
-    ![タスク記録手順 3 から 8](media/GER-Recording2Review1.png " タスク記録手順 3 から 8 のスクリーンショット")
+    ![タスク記録手順 3 から 8](media/GER-Recording2Review1.png "タスク記録手順 3 から 8 のスクリーンショット")
 
 3. ER デバッグ ログにアクセスして、生成された出力を対応するベースラインと比較した結果を記録します。
 
@@ -270,7 +270,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 
     次の図は、記録された検証手順がタスク記録でどのように表示されるかを示しています。
 
-    ![タスク記録手順 13 および 15](media/GER-Recording2Review2.png " タスク記録手順 13 および 15 のスクリーンショット")
+    ![タスク記録手順 13 および 15](media/GER-Recording2Review2.png "タスク記録手順 13 および 15 のスクリーンショット")
 
 ## <a name="add-the-recorded-tests-to-azure-devops"></a>記録されたテストを Azure DevOps に追加する
 
@@ -374,10 +374,10 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [タスク レコーダー](../user-interface/task-recorder.md)
+- [タスク レコーダー リソース](../user-interface/task-recorder.md)
 - [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357)
-- [タスク記録および BPM を使用して、ユーザー承認テスト ライブラリを作成する](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
-- [継続的ビルドとテストの自動化をサポートするトポロジの配置](../perf-test/continuous-build-test-automation.md)
-- [生成されたレポート結果を追跡し、それらを ER ベースライン値と比較する](er-trace-reports-compare-baseline.md)
-- [その形式の新しい基準バージョンを採用して ER 形式をアップグレードする](tasks/er-upgrade-format.md)
-- [Lifecycle Services からの ER コンフィギュレーションのインポート](tasks/er-import-configuration-lifecycle-services.md)
+- [ユーザー受け入れテストの作成と自動化](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
+- [継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md)
+- [生成されたレポート結果を追跡し、ベースライン値と比較する](er-trace-reports-compare-baseline.md)
+- [ER 形式の新しい基準バージョンを採用してその形式をアップグレードする](tasks/er-upgrade-format.md)
+- [Lifecycle Services からのコンフィギュレーションの ER インポート](tasks/er-import-configuration-lifecycle-services.md)

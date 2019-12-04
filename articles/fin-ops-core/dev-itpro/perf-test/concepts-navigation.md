@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: c47272f47a38a0e78bd14897e9bfe9873a1e6af6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0667ba4e3ff5e48404d5fa9e5f24a6e9c1d899ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183095"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812040"
 ---
 # <a name="navigation-concepts"></a>ナビゲーション概念
 
@@ -30,7 +30,7 @@ ms.locfileid: "2183095"
 
 [!include [banner](../includes/preview-banner.md)]
 
-テスト データの生成メソッドの発見可能性を単純化するために、一連のナビゲーション オブジェクトが導入されました。 生成メソッドの詳細は [テスト データ生成メソッド](test-data-methods.md) を参照してください。
+テスト データの生成メソッドの発見可能性を単純化するために、一連のナビゲーション オブジェクトが導入されました。 生成メソッドの詳細は [テスト データのメソッド](test-data-methods.md) を参照してください。
 
 ナビゲーションはルート オブジェクトから開始し、モジュールを指定して、そしてエンティティはテスト データ メソッドと一緒に指定する必要があります。
 

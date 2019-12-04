@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2fe51ec19b3be55cd98fb61e5e6b3ef79726495
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: ca7d02825a32340ef14f0c425e574aeb490e0a27
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658881"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812039"
 ---
 # <a name="create-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスの作成
 
@@ -226,6 +226,7 @@ Excel で開くエクスペリエンスに明示的なボタンを追加でき�
         }
 
 次の図は、**総勘定元帳** &gt; **仕訳帳** &gt; **一般仕訳帳** フォームを強調表示された **Excel で明細行を開く**ボタンと共に示しています。 
+
 [![Excel ボタンで開いた明細行を強調表示]](./media/off101i.png)](./media/off101i.png)
 
 作成された Open in Excel オプションとテンプレートの Open in Excel オプションをプログラムで追加するには、ExportToExcelIGeneratedCustomExport および ExportToExcelITemplateCustomExport インターフェイスを実装して、Open in Excel オプションを追加します。 これにより、エンティティまたはテンプレートがルート データ ソースと同じテーブルを持たないフォームにオプションを追加できます。 この機能を使用する場合の例としてはデータソースのないフォーム、フォーム パーツのコレクションのみを含む可能性があります。 次の例では、**FMRental** フォームに、生成されたテンプレートと ExcelのOpen in Excel オプションをプログラムによって追加します。
@@ -376,7 +377,7 @@ Excel データ コネクタでリレーションシップ ルックアップを
   - 認証されたユーザーには、ルックアップの対象となるエンティティにアクセスするためのアクセス許可がありません。
 
 ## <a name="how-do-dimensions-work"></a>分析コードはどのように機能しますか。
-データ エンティティに分析コード メタデータを設定する最も簡単な方法は、データ エンティティ作成ウィザードを使用することで、これにより、分析コード フレームワークが必要とするものとまったく同じプライベート リレーションシップおよび公開表示値フィールドが自動的に作成されます。 分析コードの設定をカスタマイズする場合は、「[分析コードの概要](../financial/dimensions-overview.md)」を参照します。 ルックアップは非元帳分析コードに対してのみ自動的に生成されます。 カスタム分析コードは現在サポートされていません。 勘定分析コード (MainAccount、Department、CostCenter など) のルックアップを有効にする場合は、DimensionCombationEntity および DimensionSetEntity フィールドのリレーションシップの作成に関するガイダンスについては、「[分析コードの概要](../financial/dimensions-overview.md)」を参照します。 これらのリレーションシップが存在するときは、Excel データ コネクタに、リレーションシップ ルックアップが表示されます。 Excel Data Connector は、表示値を直接編集したり、別の列にある表示値の各属性を編集したりという、2 つのタイプの分析コード データ入力をサポートしています。 表示値の列と個々の属性の列の両方を連結した場合、両方を編集して、個別に公開できます。 表示値と個々の属性の両方を同じ行で編集した場合、個々の属性の変更は表示値の変更を上書きします。
+データ エンティティに分析コード メタデータを設定する最も簡単な方法は、データ エンティティ作成ウィザードを使用することで、これにより、分析コード フレームワークが必要とするものとまったく同じプライベート リレーションシップおよび公開表示値フィールドが自動的に作成されます。 分析コードの設定をカスタマイズする場合は、 [Excel テンプレートへの分析コードの追加](../financial/dimensions-overview.md) を参照します。 ルックアップは非元帳分析コードに対してのみ自動的に生成されます。 カスタム分析コードは現在サポートされていません。 勘定分析コード (MainAccount、Department、CostCenter など) のルックアップを有効にする場合は、DimensionCombationEntity および DimensionSetEntity フィールドのリレーションシップの作成に関するガイダンスについては、 [Excel テンプレートへの分析コードの追加](../financial/dimensions-overview.md) を参照します。 これらのリレーションシップが存在するときは、Excel データ コネクタに、リレーションシップ ルックアップが表示されます。 Excel Data Connector は、表示値を直接編集したり、別の列にある表示値の各属性を編集したりという、2 つのタイプの分析コード データ入力をサポートしています。 表示値の列と個々の属性の列の両方を連結した場合、両方を編集して、個別に公開できます。 表示値と個々の属性の両方を同じ行で編集した場合、個々の属性の変更は表示値の変更を上書きします。
 
 ## <a name="how-do-i-create-formula-table-columns"></a>フォーミュラ テーブル列をどのように作成しますか。
 テーブルに式が必要な場合は、式の列を追加します。 テーブル バインドのフィールド選択ページで、[選択済のフィールド] リストの上にある **式** ボタンをクリックして、新しい式列を追加します。 式のラベルと値は、選択したフィールド リストのすぐ下のフィールドに入力されます。 新しい式の列を追加すると、値を空白のままにして、**更新**をクリックします。 フィールドがテーブルに追加されると、Excel の標準機能を使用して数式を作成し、数式をコピーして数式列の値フィールドに貼り付けます。 式を定義するときは、テーブルに複数の行が存在することを確認してください。そうでない場合、Excel が提供する式は、該当する行ではなく、すべての行を対象としている場合があります。 現在の行だけを指定するには、アット マーク (@) が必要です。 たとえば、すべての行に対する 4 つの列の合計「=SUM(Table1\[\[ColumnA\]:\[ColumnD\]\])」と現在の行の 4 つの列の合計「=SUM (Table1\[@\[ColumnA\]:\[ColumnD\]\])」。
@@ -395,11 +396,15 @@ Excel データ コネクタでリレーションシップ ルックアップを
 1.  置き換える必要のある DataEntity.Name については、DataEntity.PublicEntityName を決定し、たとえば FMCustomerEntity を FleetCustomer に置き換えます。
 2.  影響を受けるテンプレートを検索します。
 3.  テンプレートのファイル拡張子を .xlsx から .zip に変更します。
+
     [![ダイアログ ボックス名を変更](./media/off101m.png)](./media/off101m.png)
+    
 4.  変更するファイルは、2015-05-25-FleetCustomersWithLocations.zipxlwebextensionswebextension2.xml など、xlwebextensions ディレクトリ内の webextension\*.xml ファイルのいずれかになります。
 5.  ファイルを開き、適切な場所であることを確認します。
 6.  FMCustomerEntity などの、DataEntity.Name を検索します。
+
     [![DataEntity.Name を検索](./media/off101n.png)](./media/off101n.png)
+    
 7.  ZIP ファイルを抽出します。
 8.  webextension xml ファイルを開きます。
 9.  DataEntity.Name を対応する DataEntity.PublicEntityName に置き換えます。

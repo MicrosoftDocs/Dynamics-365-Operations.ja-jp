@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
-ms.openlocfilehash: 227b5afa074d8dc246de13ef4f5e190d547b0db3
-ms.sourcegitcommit: 0dd8d0510214f92936a9dd214b404c5c8103587b
+ms.openlocfilehash: 263163ebf293a9431d0e96a006a693c59cec92a9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2419140"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812456"
 ---
 # <a name="whats-new-or-changed-in-platform-update-29-for-finance-and-operations-apps-october-2019"></a>Finance and Operations アプリのプラットフォーム更新プログラム 29 (2019 年 10 月) の新機能および変更された機能
 
@@ -55,7 +55,7 @@ ms.locfileid: "2419140"
 ## <a name="visual-refresh-of-the-web-client-to-align-with-the-fluent-design-language"></a>Fluent Design言語に合わせたWeb クライアントのビジュアル更新
 Dynamics 365アプリ全体の取り組みの一環として、Web クライアントのビジュアル更新に向けて段階的に取り組んでおり、コントロールとページを Microsoft Fluent Design言語とより密接に連携させています。 プラットフォーム 更新プログラム 29 には、変更の初期セットが含まれています。 詳細については、リリース計画の [Fluent Design言語に合わせたWeb クライアントのビジュアル更新](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language) トピックを参照してください。
 
-この変更の一部として、ダッシュボードのワークスペース タイルに新しいビジュアル スタイルが追加されました。 標準ワークスペース タイルに視覚的に配置されるワークスペース タイル用の画像作成に関する更新済ガイダンスを使用するには、[ワークスペース タイル用のアイコンの作成](../../dev-itpro/user-interface/create-icons-workspace-tiles.md) を参照してください。
+この変更の一部として、ダッシュボードのワークスペース タイルに新しいビジュアル スタイルが追加されました。 視覚的に配置されるワークスペース タイルの画像の作成に関する更新されたガイダンスについては、[ワークスペース タイル用のアイコンの作成](../../dev-itpro/user-interface/create-icons-workspace-tiles.md)を参照してください。
 
 ##  <a name="saved-views-preview"></a>保存されたビュー (プレビュー)
 保存されたビュープがプレビューで使用できるようになりました。 この機能は、個人用設定サブシステムの大幅な拡張機能であり、ユーザーは、ページごとに複数の名前を付けた個人用設定セットを持つことができます。 リストページでは、これらのビューにフィルターを含めることもできます。 ビューはセキュリティ ロールに対して公開できるので、個人用設定の管理もビューを使用することで大幅に簡単になります。 開発者環境でこの機能を有効にする方法の詳細については、 [保存されたビュー](saved-views.md) を参照してください。 また、 [保存されたビューを十分に活用するフォームの作成](../../dev-itpro/user-interface/understanding-saved-views.md) トピックも参照してください。 このプレビュー機能は、一般に使用可能になるまで進化し変更し続けることに注意してください。 
@@ -106,11 +106,11 @@ X++ ソース コード エディターには、現在、Visual Studio の CodeL
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックでは、削除済みまたは非推奨の機能について説明します。
+[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックでは、削除済みまたは非推奨の機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。

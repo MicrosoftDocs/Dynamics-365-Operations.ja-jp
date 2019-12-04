@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00e1956950154051d4a916a013c2200029772e37
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd57b702220374ef5ac48e1af7c42827a21e7517
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547104"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813596"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>製品コンフィギュレーション モデルの計算についてよく寄せられる質問
 
@@ -37,7 +37,7 @@ ms.locfileid: "1547104"
 ## <a name="what-is-a-calculation"></a>計算とは
 計算とは、製品コンフィギュレーション モデルで使用できる要素のことです。 計算は、製品をコンフィギュレーションする際に、小数を使用した値の計算を可能にして、制約を補完します。 さらに、計算には、制約よりも多くの演算子を使用できます。  
 
-制約と同様に、計算は、製品コンフィギュレーション モデルの特定のコンポーネントに関連付けられ、別のコンポーネントが再利用することも共有することもできません。 計算と制約の重要な違いの 1 つは、計算は必須 (単一方向) で、制約は宣言です (双方向)。 制約に関する詳細については、「[式の制約およびテーブル制約](expression-constraints-table-constraints-product-configuration-models.md)」を参照してください。  
+制約と同様に、計算は、製品コンフィギュレーション モデルの特定のコンポーネントに関連付けられ、別のコンポーネントが再利用することも共有することもできません。 計算と制約の重要な違いの 1 つは、計算は必須 (単一方向) で、制約は宣言です (双方向)。 制約の詳細については、[製品コンフィギュレーション モデルにおける式の制約およびテーブル制約](expression-constraints-table-constraints-product-configuration-models.md)を参照してください。  
 
 計算は、ターゲット属性と計算式で構成されます。
 
@@ -88,7 +88,7 @@ ms.locfileid: "1547104"
 計算の入力値を削除すると、ターゲット属性の値も削除されます。
 
 ## <a name="why-do-i-receive-an-error-message-that-says-that-my-model-is-in-contradiction"></a>自分のモデルが矛盾しているというエラー メッセージが表示される理由は
-このメッセージは、計算にエラーがあるか、または矛盾が 1 つ以上の制約に存在する場合に表示されます。 制約での矛盾の詳細については、「[式の制約およびテーブル制約](expression-constraints-table-constraints-product-configuration-models.md)」を参照してください。 次に、計算でエラーが発生する状況を示します。
+このメッセージは、計算にエラーがあるか、または矛盾が 1 つ以上の制約に存在する場合に表示されます。 制約での矛盾の詳細については、[製品コンフィギュレーション モデルにおける式の制約およびテーブル制約](expression-constraints-table-constraints-product-configuration-models.md)を参照してください。 次に、計算でエラーが発生する状況を示します。
 
 -   値を 0 (ゼロ) で割る。
 -   次の 2 つの要素間に不一致が存在する。

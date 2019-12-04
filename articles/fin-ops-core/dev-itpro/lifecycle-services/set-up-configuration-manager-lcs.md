@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 3fd550e065683aa46f4f774a8c1d3ce4c098e9a1
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 3816bed58a74d886b59c3863b61047813c455d21
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627566"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812124"
 ---
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 
@@ -88,7 +88,7 @@ ms.locfileid: "2627566"
 > [!IMPORTANT]
 > プロジェクトおよび環境のシステム診断のローカル コンポーネントを既にインストールしている場合、**プログラムの追加と削除**を使用し、アンインストールする必要があります。 検出されたインスタンスの数にかかわらず、環境ごとに 1 つの Microsoft Dynamics AX Application Object Server (AOS) だけが、コンフィギュレーションの管理と共に使用されます。
 
-1.  システム診断のローカル コンポーネントをインストールします。 詳細については、[システム診断のインストールと実行 (Lifecycle Services)](./ax-2012/install-run-system-diagnostics-lcs.md) を参照してください。 重要: この beta リリースでは、システム診断のサービス アカウントを AX 2012 R3 の sysadmin ロールに追加する必要があります。
+1.  システム診断のローカル コンポーネントをインストールします。 詳細については、[システム診断のインストールと実行](./ax-2012/install-run-system-diagnostics-lcs.md) を参照してください。 重要: この beta リリースでは、システム診断のサービス アカウントを AX 2012 R3 の sysadmin ロールに追加する必要があります。
 2.  **開始** &gt; **Microsoft Dynamics AX Lifecycle Services 診断サービス検索の順にクリックします**。
 3.  **環境の検出**ウィンドウに、環境の名前と Microsoft SQL Server のインスタンスとデータベースの完全修飾名を入力します。 その後、[環境を検出] をクリックします。
 4.  探索を完了した後、**コンフィギュレーション管理 (ベータ)** セクションに値を入力し、**保存**をクリックして、**アップロード環境**をクリックします。
@@ -129,7 +129,7 @@ ms.locfileid: "2627566"
 5.  構成のインポート先の環境で、この手順を繰り返します。
 
 ## <a name="next-steps"></a>次のステップ
-この環境は、設定をコピーして管理するための準備が整いました。 詳細については、[コンフィギュレーションのコピー (Lifecycle Services、LCS)](copy-configuration-lcs.md) を参照してください。
+この環境は、設定をコピーして管理するための準備が整いました。 詳細については、[構成マネージャーを使用して構成をコピーする](copy-configuration-lcs.md) を参照してください。
 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2dd3f6014c1733ab29bdb2f4b253399db638078
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f8d6353f4fa70657b80c80dd17186fae5b1939a7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175795"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772881"
 ---
 # <a name="fixed-asset-impairment-accounting-on-cash-generating-units-for-japan"></a>日本のキャッシュ生成単位の固定資産減損会計
 
@@ -54,7 +54,7 @@ ms.locfileid: "2175795"
 ## <a name="reports-and-other-required-operations"></a>レポートおよびその他の必要な工程
 ユーザーは**減損レポートおよびトランザクション**照会ページを使用して、減損トランザクションに関する詳細情報を取得できます。 会社の税務申告の調整など特定の工程が、減損の転記後に必要です。 ユーザーは、これらの工程を手動で計算して転記する必要があります。
 
-## <a name="additional-resources"></a>その他のリソース
-- [固定資産の減損会計](apac-jpn-impairment-accounting-fixed-assets.md)
+## <a name="additional-resources"></a>追加リソース
+- [日本の固定資産の減損会計](apac-jpn-impairment-accounting-fixed-assets.md)
 - [資産グループの減損損失の提案と転記](./tasks/propose-post-impairment-amount-cash-generating-unit.md)
 

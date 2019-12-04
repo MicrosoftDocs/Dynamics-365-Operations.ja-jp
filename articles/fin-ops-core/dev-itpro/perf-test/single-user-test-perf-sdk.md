@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c1f727dea408c0853a380c09d293a085b4c2864
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0118bd43b0aee14d8e2a635a4250d7450f068761
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191807"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811949"
 ---
 # <a name="single-user-testing-with-task-recorder-and-the-performance-sdk"></a>タスクレコーダーおよびパフォーマンスSDKを使用したシングルユーザーテスト
 
@@ -40,7 +40,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 
 ## <a name="use-task-recorder-to-define-and-record-an-end-to-end-business-scenario"></a>タスクレコーダーを使用してエンドツーエンドの業務シナリオを定義し、記録します。
 
-シングルユーザーテストを実行する前に、業務チームと協力してエンドツーエンドのシナリオを定義した上で、タスクレコーダーを使用して各シナリオのステップを記録することを強く推奨します。 タスク の記録方法についての詳細は、 [タスク レコーダー](../user-interface/task-recorder.md)を参照してください。 テストを行うべきシナリオは、顧客の業務要件によって異なります。 このトピックでは、「販売注文の作成および確認」を行うサンプルシナリオを使用します。
+シングルユーザーテストを実行する前に、業務チームと協力してエンドツーエンドのシナリオを定義した上で、タスクレコーダーを使用して各シナリオのステップを記録することを強く推奨します。 タスク記録の作成方法についての詳細は、[タスク レコーダー リソース](../user-interface/task-recorder.md)を参照してください。 テストを行うべきシナリオは、顧客の業務要件によって異なります。 このトピックでは、「販売注文の作成および確認」を行うサンプルシナリオを使用します。
 
 1. 財務担当者ペルソナとしてサインインします。
 2. タスクレコーダー を有効にして、次の情報を含む販売注文の作成と確認を行います。
@@ -124,4 +124,4 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-パフォーマンス SDK を使用したシングルユーザーまたはマルチユーザー テストの詳細は [トラブルシューティング ガイド](troubleshoot-perf-sdk-user-testing.md) を参照してください。
+パフォーマンス SDK を使用するシングル ユーザーまたはマルチ ユーザーのテストの詳細については、[パフォーマンス SDK によるシングルユーザーまたはマルチユーザーのテストに関するトラブルシューティングガイド](troubleshoot-perf-sdk-user-testing.md) を参照してください。

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a1fac239524d4873a782e6a3d177a573a382d0f6
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 55853418eacd179b7bb50b7e4385300bdcb27abe
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552044"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812905"
 ---
 # <a name="create-an-onboarding-template-by-using-dynamics-365-talent---onboard"></a>Dynamics 365 Talent - Onboard を使用した研修テンプレートの作成
 
@@ -59,6 +59,6 @@ Microsoft Dynamics 365 Talent: Onboard には、できるだけ早く研修用�
 ### <a name="see-also"></a>参照
 
 - [Onboard アプリを試すか購入する](https://dynamics.microsoft.com/talent/onboard/)
-- [新機能](./whats-new.md)
-- [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index)
-- [サポートの利用](./talent-support.md)
+- [Dynamics 365 Talent の新機能および変更された機能](./whats-new.md)
+- [リリース計画](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft Dynamics 365 Talent に関するサポートの利用](./talent-support.md)

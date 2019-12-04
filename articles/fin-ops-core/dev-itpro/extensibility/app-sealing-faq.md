@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 948481502fc69487f5608055c9e28be83cc82f99
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8dd567bb57cd302474fd19a8d4ec8671d4dd7326
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183334"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772343"
 ---
 # <a name="extensibility-faq"></a>拡張性 FAQ
 
@@ -56,7 +56,7 @@ Yammer で Operations Extensibility グループに対するアクセスを取�
 
 ## <a name="what-is-microsoft-working-on-to-support-this-move"></a>この動きをサポートするために Microsoft は何に取り組んでいますか ?
 
-製品チームは、製品の拡張性を向上させるためにいくつかの分野に取り組んでいます。 この作業には、広範な影響を与えるプラットフォームの変更から、追加フック ポイントを提供するリファクタリングされたアプリケーション コードまでさまざまなものがあります。 詳細については、Operations Extensibility Yammer グループおよび製品のリリース ノートを参照してください。
+製品チームは、製品の拡張性を向上させるためにいくつかの分野に取り組んでいます。 この作業には、広範な影響を与えるプラットフォームの変更から、追加フック ポイントを提供するリファクタリングされたアプリケーション コードまでさまざまなものがあります。 詳細については、Operations Extensibility Yammer グループおよび製品のリリース プランを参照してください。
 
 ## <a name="after-the-application-is-sealed-what-should-customers-do-in-a-critical-situation-if-they-must-make-a-quick-change"></a>アプリケーションをシールした後、すばやく変更する必要がある場合、顧客は、重要な状態で何をすべきでしょうか?
 

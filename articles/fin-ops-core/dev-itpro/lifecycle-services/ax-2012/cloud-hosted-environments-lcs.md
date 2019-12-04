@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b6e009e60100d32e3e96fa9d63fbfc447bf3dcf9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 93d54a0c8d36b1e089212b6f5715c7ab8689891b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183267"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811707"
 ---
 # <a name="cloud-hosted-environments-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のクラウド ホスト環境
 
@@ -30,7 +30,7 @@ ms.locfileid: "2183267"
 
 Microsoft Dynamics Lifecycle Services では、クラウド ホスト環境は、Microsoft Azure 上に Microsoft Dynamics AX 環境を配置するツールです。
 
-クラウド ホスト環境ツールを使用するとき、デモまたは開発者/テスト環境などの、配置する Microsoft Dynamics AX 環境のタイプを選択する必要があります。 この選択に基づいて、クラウド ホスト環境ツールは Azure の仮想マシンの適切な番号を提供します。 これらの仮想マシンには、 Microsoft Dynamics AX コンポーネント (および前もって必要な物すべて) がインストール済みです。 Azure 上に Microsoft Dynamics AX 環境を配置する方法の詳しい手順については、[Lifecycle Services (LCS) を使用して Azure 上に Microsoft Dynamics AX 2012 R3 を配置する](deploy-2012-r3-azure-lcs.md) を参照してください。
+クラウド ホスト環境ツールを使用するとき、デモまたは開発者/テスト環境などの、配置する Microsoft Dynamics AX 環境のタイプを選択する必要があります。 この選択に基づいて、クラウド ホスト環境ツールは Azure の仮想マシンの適切な番号を提供します。 これらの仮想マシンには、 Microsoft Dynamics AX コンポーネント (および前もって必要な物すべて) がインストール済みです。 Azure 上に Microsoft Dynamics AX 環境を配置する方法の詳しい手順については、 [Lifecycle Services (LCS) を使用して Azure 上に AX 2012 R3 を配置する](deploy-2012-r3-azure-lcs.md)を参照してください。
 
 > [!NOTE]
 > Dynamics AX 2012 R3 は、オンプレミスにも配置できます。 詳細については [Microsoft Dynamics AX 2012 のインストール](https://technet.microsoft.com/library/dd362138.aspx) のトピックを参照してください。

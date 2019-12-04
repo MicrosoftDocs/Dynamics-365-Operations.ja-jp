@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 19729cfd6bfd074c335612a06285bccf425333a4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8c4118565ba65700e2073e2f981caf80fa738d94
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182787"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772514"
 ---
 # <a name="report-designer-interface"></a>レポート デザイナー インターフェイス
 
@@ -223,8 +223,8 @@ ms.locfileid: "2182787"
 | [![レポート ビューアー ボタン](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Report Viewer を起動し、生成されたレポートの最新バージョンを表示します。 少なくとも 1 つのレポートが生成されていれば、このボタンをレポート定義から使用できます。 |
 | [![レポート生成ボタン](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | 有効なレポート定義からレポートを生成します。 このボタンはレポート定義から使用できます。 |
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[財務報告](financial-reporting-intro.md)
+[財務諸表](financial-reporting-intro.md)
 
 [財務諸表の生成](generate-financial-report.md)

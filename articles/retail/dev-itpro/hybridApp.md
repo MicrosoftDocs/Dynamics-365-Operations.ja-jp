@@ -3,7 +3,7 @@ title: Android および iOS での POS ハイブリッド アプリのセット
 description: このトピックでは、Android および iOS で POS ハイブリッド アプリをセットアップする方法を説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/29/2019
+ms.date: 11/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 28b4785d35f0e6bf05d504a35b1b77a252a6e305
-ms.sourcegitcommit: 27a98a7a0f1d2623f5236a88066f483def30889c
+ms.openlocfilehash: a39223dd040d866aca825cca6a079391670d9555
+ms.sourcegitcommit: c53b652eb4bfda26671c8c82d20618a217ba03f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833059"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832444"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
@@ -56,7 +56,7 @@ Xamarin をインストールした後は、最新の安定バージョンに更
       
 2.  Retail SDK フォルダーで、SampleExtensions\HybridApp\Android\solution を開きます。 エミュレーターを使用して構築および展開し、すべて正常に表示されていることを確認します。
   
-3.  「[Android 用 Visual Studio エミュレーター](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Emulator for Android 用 Visual Studio エミュレーター")」または Android 用のエミュレーターを使用して POS ハイブリッド アプリを起動し、Retail サーバー URL を入力して保存します。
+3.  [Android 用 Visual Studio エミュレーター](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Android 用の Visual Studio エミュレーター") または Android 用のエミュレーターを使用して、POS ハイブリッド アプリを起動し、Retail サーバー URL を入力して、保存します。
   
 4.  ログインして、デバイスをアクティブにすることができます。
 
@@ -114,9 +114,12 @@ iOS で Xamarin をインストールに関する詳しい手順については�
 
 支払コネクタを設定するには、 [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration) に記載されている標準の設定手順に従ってください。 モダンPOSまたはIISハードウェアステーションコンフィギュレーションの更新という名称のセクションは省略します。
 
-初期状態では、 Android アプリはePOS-Printに対応しているEpsonプリンターと通信します。 このインターフェイスを有効にするには、Epsonプリンターをネットワークに接続します。 このパラメータは、ブラウザーを介したwebインターフェイスを使うことで、Epsonネットワークプリンターへのアクセスを可能としなります。 通常、このwebインターフェイスには、webブラウザーを開いて http://と入力することによってアクセスできます。 ePOS-Printの設定詳細については、Epsonが提供しているれている資料を参照してください。 
+初期状態では、 Android アプリは Epson ePOS-Print プロトコルに対応している Epson ネットワークプリンターと通信します。 このインターフェイスを有効にするには、Epsonプリンターをネットワークに接続します。 ePOS-Print は、ユーザーがブラウザーから Epson ネットワーク プリンターにアクセスできる Web インターフェイスを通して有効になります。 通常、この Web インターフェイスには、 Web ブラウザーを開いて http://<printer IP address> と入力することでアクセスできます。 プリンターの IP アドレスは、ネットワークに接続し、電源をオフまたはオンにすることによって取得できます。 ネットワーク IP アドレス が取得されると、そのプリンターの IP アドレスを表示する受信確認が印刷されます。 ePOS-Printの設定詳細については、Epsonが提供しているれている資料を参照してください。 
       
 EpsonプリンターにてePOS-印刷を有効にした後で、プリンターの電源を切り、再度電源を入れます。 デバイスがオンラインに接続した際に、デバイスのIPアドレスが表示されたレポートが印刷されている必要があります。 デバイスのIPアドレスを控え、Dynamics 365の POSレジスター フォーム へと移動します。 設定中の登録内容を選択し、開いて編集します。 リボン上の **レジスタ** タブにて、 **ハードウェア** という名称の小見出しから **IPアドレスの構成**  というアクションを参照してください。 このアクションにて、特定のレジスターで使用されるプリンターのIPアドレスと指定します。 プリンターの **IPアドレス** フィールドが使用できない場合は、レジスターに割り当てられているハードウェアプロファイルをチェックして、プリンタタイプが **ネットワーク** に設定されていることを確認します。 標準設定上ではEpsonプリンターにポートは必要ありません。
+
+**10.0.8 の新機能** - ドロワー キック (dk) ポート経由で Epson ネットワーク プリンターに接続されたキャッシュ ドロワーがサポートされるようになりました。 ネットワーク対応の Epson プリンターに接続されているキャッシュ ドロワーを使用するには、上記の手順に従ってプリンターを構成します。 ハードウェア プロファイルで キャッシュ ドロワーを 'ネットワーク' タイプに設定します。 ハードウェア プロファイルが割り当てられているレジスターまたはハードウェア ステーションに移動し、 **IP アドレスのコンフィギュレーション** 機能を使用して、プリンターに対してコンフィギュレーションされているアドレスと同じであるキャッシュドロワーの IP アドレスを設定します。
+
 
 ### <a name="sharing-peripherals-using-built-in-peripheral-support"></a>内蔵周辺機器サポートを使用した周辺機器の共有
 

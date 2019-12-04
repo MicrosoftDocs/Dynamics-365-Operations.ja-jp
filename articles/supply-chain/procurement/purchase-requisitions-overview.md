@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e571f5c83affa56c230e1f597e219eb60973225
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 1bfec4660d9e6b0898cf81e1f1fdd2e4c1fdcaef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248883"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815345"
 ---
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 
@@ -191,10 +191,10 @@ ms.locfileid: "2248883"
 5.  連結機会の連結要求明細行または購買要求明細行の発注書を作成します。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[消費の要求の作成 (タスク ガイド)](tasks/create-requisition-consumption.md)
+[消費要求の作成](tasks/create-requisition-consumption.md)
 
 [購買要求ワークフロー](purchase-requisitions-workflow.md)
 

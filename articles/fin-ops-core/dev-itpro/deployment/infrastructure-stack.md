@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: f397d2ca661a3916bde68e336fec4770c2770e31
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 783ab21e453c85bc6251e10849d6341613cfe926
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191586"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770959"
 ---
 # <a name="self-service-deployment-overview"></a>セルフサービス配置の概要
 
@@ -38,13 +38,13 @@ ms.locfileid: "2191586"
 
 セルフ サービス機能を使用する顧客は、LCS エクスペリエンスにおいて次の変更が見られます。 
 
-- 配置はセルフ サービスであり、平均 30 分以内に完了することができます。 配置のリード タイムや待機時間はなくなります。 いつ配置するかを制御し、環境が展開されていることを確認できます。 このエクスペリエンスは、現在のエクスペリエンスと同じです。 詳細については、[配置に関するよく寄せられる質問](deploymentFAQ.md)を参照してください。
+- 配置はセルフ サービスであり、平均 30 分以内に完了することができます。 配置のリード タイムや待機時間はなくなります。 いつ配置するかを制御し、環境が展開されていることを確認できます。 このエクスペリエンスは、現在のエクスペリエンスと同じです。 詳細については、 [セルフサービス配置の FAQ](deploymentFAQ.md) を参照してください。
 
    ![配置設定](media/deployment-settings.png)
 
 - レベル 2 以上のサンドボックス環境へのリモート デスクトップ アクセスがなくなります。 リモート デスクトップ アクセスが必要なすべての操作は、セルフ サービス アクションとして使用可能になりました。 次の図に、環境の **メンテナンス** \> **データベース メニュー オプションの移動** における操作の一部を示します。 詳細については、[配置のメンテナンス操作](maintenanceoperationsguide-newinfrastructure.md)を参照してください。
 
-> [重要] リモート デスクトップ アクセスは、セルフ サービス展開を使用して配置された環境にのみ制限されます。 既存の環境または既存の顧客に変更はありません。 
+    > [重要] リモート デスクトップ アクセスは、セルフ サービス展開を使用して配置された環境にのみ制限されます。 既存の環境または既存の顧客に変更はありません。 
 
    ![セルフ サービス アクション](media/Self-service-actions.png)
 

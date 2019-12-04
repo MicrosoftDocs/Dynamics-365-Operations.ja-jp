@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 0f4c68acfe021e736c259e91a40ce7d43d401246
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552005"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812882"
 ---
 # <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Dynamics 365 Talent - Onboard で研修用ガイドとテンプレートの編集
 
@@ -124,7 +124,7 @@ Microsoft Dynamics 365 Talent: Onboard で研修用ガイドまたはテンプ�
 
     - YouTube ビデオを追加するには、**YouTube** 項目を編集領域にドラッグし、活動の名前と説明を入力して、YouTube ビデオの URL を入力します。
     - Sway プレゼンテーションまたはニュースレターを追加するには、**Sway** 項目を編集領域にドラッグし、活動の名前と説明を入力して、Sway プレゼンテーションまたはニュースレターの埋め込み URL を入力します。
-    - PowerApps アプリを追加するには、**PowerApps** 項目を編集領域にドラッグし、活動の名前と説明を入力して、PowerApps アプリを選択するか、または PowerApps アプリ ID を入力します。
+    - Microsoft Power Apps アプリを追加するには、**Power Apps** 項目を編集領域にドラッグし、活動の名前と説明を入力して、Power Apps アプリを選択するか、または Power Apps アプリ ID を入力します。
     - Microsoft Stream ビデオを追加するには、**Microsoft Stream** 項目を編集領域にドラッグし、活動の名前と説明を入力して、Microsoft Stream ビデオの URL を入力します。
     - Microsoft Forms フォームを追加するには、**Microsoft Forms** 項目を編集領域にドラッグし、活動の名前と説明を入力し、Microsoft Forms フォームの URL を入力して、画面領域のサイズを指定します。
     - Web コンテンツを含む iframe を追加するには、**Web コンテンツ (iframe)** 項目を編集領域にドラッグし、活動の名前と説明を入力し、Web コンテンツの URL を入力して、画面領域のサイズを指定します。
@@ -186,6 +186,6 @@ Microsoft Dynamics 365 Talent: Onboard で研修用ガイドまたはテンプ�
 ### <a name="see-also"></a>参照
 
 - [Onboard アプリを試すか購入する](https://dynamics.microsoft.com/talent/onboard/)
-- [新機能](./whats-new.md)
-- [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index)
-- [サポートの利用](./talent-support.md)
+- [Dynamics 365 Talent の新機能および変更された機能](./whats-new.md)
+- [リリース計画](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft Dynamics 365 Talent に関するサポートの利用](./talent-support.md)

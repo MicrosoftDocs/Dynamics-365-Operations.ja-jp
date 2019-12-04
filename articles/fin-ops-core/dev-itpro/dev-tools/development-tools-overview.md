@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76a4c8d985396747c35b94e3a3ea4421b642b3cd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e7cf678a342377974648065bf2f53be1b880f814
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191690"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812027"
 ---
 # <a name="development-tools-in-visual-studio"></a>Visual Studio の開発ツール
 
@@ -39,7 +39,7 @@ Visual Studio で、モデル ストアはアプリケーション エクスプ�
 ![アプリケーション エクスプローラー](media/1_devotoolsconcept.png)
 
 ### <a name="the-project-template"></a>プロジェクト テンプレート
-単純なアプリケーションであっても、そのモデルには多数の要素を含めることができます。 モデルに使用する要素を整理および管理するために、**業務プロジェクト** テンプレートが Visual Studio に追加されました。 このプロジェクトを使用して、モデル要素の設計、作成、およびをテストをします。 1 つの Visual Studio ソリューション内に複数のプロジェクトがあることが一般的です。次の図は、Visual Studio ソリューションの 3 つのプロジェクトを示しています。 詳細については、[プロジェクト](projects.md) を参照してください。
+単純なアプリケーションであっても、そのモデルには多数の要素を含めることができます。 モデルに使用する要素を整理および管理するために、**業務プロジェクト** テンプレートが Visual Studio に追加されました。 このプロジェクトを使用して、モデル要素の設計、作成、およびをテストをします。 1 つの Visual Studio ソリューション内に複数のプロジェクトがあることが一般的です。次の図は、Visual Studio ソリューションの 3 つのプロジェクトを示しています。 詳細については、 [Visual Studioの Finance and Operations プロジェクトタイプ](projects.md) を参照してください。
 
 ![ソリューション エクスプローラー](media/2_devotoolsconcept.png)
 
@@ -49,7 +49,7 @@ Visual Studio のツールには、アプリケーション内の要素の種類
 ![要素デザイナー](media/3_devotoolsconcept.png)
 
 ### <a name="code-editor"></a>コード エディター
-X++ コードは、Visual Studio 用のコード エディターに書き込まれます。 開発者がコード エディターに期待する標準機能がサポートされています。 たとえば、コードのセクションは折りたたみ可能です。 IntelliSense は、コードを書き込みまたは変更するガイダンスを提供します。 詳細については、[コード エディター](code-editor.md) を参照してください。
+X++ コードは、Visual Studio 用のコード エディターに書き込まれます。 開発者がコード エディターに期待する標準機能がサポートされています。 たとえば、コードのセクションは折りたたみ可能です。 IntelliSense は、コードを書き込みまたは変更するガイダンスを提供します。 詳細については、 [コード エディター機能](code-editor.md) を参照してください。
 
 ![コード エディター](media/4_devotoolsconcept.png)
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d722988121a46a354c50001de90cc0d7f48af40
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 143886e342e1c901a7cf2b87ef6deec7dc1515fe
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183163"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812047"
 ---
 # <a name="install-metadata-hotfixes-in-development-environments"></a>開発環境でのメタデータの修正プログラムのインストール
 
@@ -33,10 +33,12 @@ ms.locfileid: "2183163"
 メタデータ修正プログラムのパッケージには、開発環境でのモデル要素 (XML ファイル) への変更 (メタデータまたは X++ ソース コード) が含まれています。 修正プログラムは、新しいモデルの要素を含めることもできます。 メタデータ修正プログラムのパッケージは、SCDP ファイルの形式です。 この記事では、メタデータ修正プログラム パッケージのインストール プロセスについて説明し、同じプロジェクトで作業している他の開発者とパッケージを共有する方法について説明します。
 
 ## <a name="overall-flow"></a>全体的な流れ
-次の図は、全体的なフローを示しています。 [![メタデータ修正プログラムのパッケージをインストールするためのプロセス](./media/configureinstallhotfix-1.png)](./media/configureinstallhotfix-1.png)
+次の図は、全体的なフローを示しています。 
+
+[![メタデータ修正プログラムのパッケージをインストールするためのプロセス](./media/configureinstallhotfix-1.png)](./media/configureinstallhotfix-1.png)
 
 ## <a name="download-the-hotfix-from-lcs"></a>修正プログラムを LCS からダウンロード
-修正プログラムをダウンロードする方法の詳細については、[Lifecycle Services から修正プログラムのダウンロード](download-hotfix-lcs.md) を参照してください。 ZIP ファイルをダウンロードした後は、そこから SCDP メタデータの修正プログラム パッケージを抽出し、ローカル フォルダーに保存できます。
+修正プログラムをダウンロードする方法の詳細については、 [Lifecycle Services (LCS) から更新プログラムのダウンロード](download-hotfix-lcs.md) を参照してください。 ZIP ファイルをダウンロードした後は、そこから SCDP メタデータの修正プログラム パッケージを抽出し、ローカル フォルダーに保存できます。
 
 ## <a name="install-the-hotfix"></a>修正プログラムのインストール
 ### <a name="before-you-begin"></a>準備
@@ -89,7 +91,9 @@ Azure DevOps/TFS パラメーターを使用して、パッケージによって
 
     /tfsworkspacepath=[Path of the local workspace, usually equal to the metadatastorepath]
 
-インストール コマンドが呼び出されると、パッケージのインストール プロセスが開始されます。 インストール プロセスの一環として、メタデータ ストア フォルダ内の一部の XML ファイルはそれ自体の修正で加えられた変更を反映するように更新されます。 Azure DevOps または TFS を使用している場合、これらのファイルがチーム エクスプローラーの**保留中の変更**ウィンドウに含まれた変更のリストに追加されます。 [![保留中の変更ウィンドウに含まれている変更の一覧](./media/configureinstallhotfix-2.png)](./media/configureinstallhotfix-2.png)
+インストール コマンドが呼び出されると、パッケージのインストール プロセスが開始されます。 インストール プロセスの一環として、メタデータ ストア フォルダ内の一部の XML ファイルはそれ自体の修正で加えられた変更を反映するように更新されます。 Azure DevOps または TFS を使用している場合、これらのファイルがチーム エクスプローラーの**保留中の変更**ウィンドウに含まれた変更のリストに追加されます。 
+
+[![保留中の変更ウィンドウに含まれている変更の一覧](./media/configureinstallhotfix-2.png)](./media/configureinstallhotfix-2.png)
 
 ## <a name="resolve-conflicts-that-are-generated-by-the-installation-of-the-hotfix"></a>修正プログラムのインストールによって生成された競合を解決
 場合によっては、メタデータ修正プログラム パッケージに、上位モデルでカスタマイズされていたオブジェクトへの変更が含まれています。 この場合、インストール プロセスは修正プログラムのインストール後に解決する必要がある競合を自動的に生成します。 開発ツールを使用すると、競合しているすべての品目をグループ化するプロジェクトを作成することができます。 たとえば、VendTable フォームをカスタマイズするアプリケーション スイート パッケージに VAR レイヤー モデルがあり、SYS レイヤ モデルで VendTable フォームを変更する修正プログラムをインストールする場合、VAR レイヤ モデルで競合が発生する可能性があります。
@@ -116,5 +120,5 @@ Azure DevOps/TFS パラメーターを使用して、パッケージによって
 この記事で記載されているように、修正プログラムが開発 VM でインストールされた後、再インストール、競合の解決、同じ Azure DevOps プロジェクトに接続されている他の開発 VMでの検証をする必要はありません。 同じ Azure DevOps プロジェクトに接続されている開発者とテスターは、ローカル VM に変更を同期させてビルドするだけで済みます。
 
 ## <a name="deploy"></a>配置
-開発環境にメタデータの修正プログラムを適用した後、競合を解決し、変更を検証したら、配置可能パッケージを作成しテスト環境またはサンドボックス環境に変更する必要があります。 ビルドとテストの自動化にビルド インスタンスを使用すると、ビルド プロセスによって配置可能なパッケージが自動的に作成されます。 詳細については、[配置可能パッケージの作成および適用](../deployment/create-apply-deployable-package.md) を参照してください。
+開発環境にメタデータの修正プログラムを適用した後、競合を解決し、変更を検証したら、配置可能パッケージを作成しテスト環境またはサンドボックス環境に変更する必要があります。 ビルドとテストの自動化にビルド インスタンスを使用すると、ビルド プロセスによって配置可能なパッケージが自動的に作成されます。 詳細については、[配置可能パッケージの作成](../deployment/create-apply-deployable-package.md)を参照してください。
 

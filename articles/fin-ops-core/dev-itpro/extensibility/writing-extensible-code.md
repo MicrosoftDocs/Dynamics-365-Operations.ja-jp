@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: a944232ae1741fe099d651f3974d97409f8e0a2d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 10c75d91ec00d44fdeecb69a84d9d60188bb033c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183310"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812019"
 ---
 # <a name="write-extensible-code"></a>拡張可能なコードの書き込み
 
@@ -93,9 +93,9 @@ X++ では、すべての保護されたパブリック メソッドが拡張ポ
 + [拡張可能な列挙](extensible-enums.md)
 + [委任](extensible-code-delegates.md)
 + [テーブル](extensible-tables.md)
-+ [メソッドの拡張属性](extensibility-attributes.md)
++ [メソッドを拡張可能にする属性](extensibility-attributes.md)
 
-## <a name="breaking-changes"></a>重大な変更
+## <a name="breaking-changes"></a>変更の分割
 ソリューションを拡張可能にすると、後で拡張ポイントを壊さずに済むことにもなります。 詳細については、[重大な変更](breaking-changes.md)を参照してください。
 
 ## <a name="external-resources"></a>外部リソース

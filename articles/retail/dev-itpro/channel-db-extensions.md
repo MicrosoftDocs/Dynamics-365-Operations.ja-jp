@@ -3,7 +3,7 @@ title: チャネル データベース 拡張機能
 description: このトピックでは、チャネル データベースを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/26/2019
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: dfeaa7e962f34f6b7524b380d013b9614f1ae8f0
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: bbb9a349cc3e75f08e6727f6e5e1f476c9d021ba
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250358"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824509"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -113,7 +113,9 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 ```
 
 ## <a name="adding-extensions"></a>拡張機能の追加
-1. すべての拡張機能テーブルは **UserRole** および **DeployExtensibilityRole** にアクセス許可を付与する必要があります。
+
+1. すべての拡張テーブルの列には、NOT NULL の制約を適用する必要があります。 更新の過程で、列の値が空白で更新され、NULL の値が正しく処理されない場合は、 CRT でランタイムの例外処理が発生する可能性があります。
+2. すべての拡張機能テーブルは **UserRole** および **DeployExtensibilityRole** にアクセス許可を付与する必要があります。
 
     ```sql
     GRANT EXECUTE ON [ext].[EXTTABLENAME] TO [DeployExtensibilityRole];
@@ -122,15 +124,15 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
         GO
     ```
 
-2. テーブルが HQ から受信するデータを送信する場合、**DataSyncUsersRole** アクセス許可を付与します。
+3. テーブルが HQ からデータを送受信する場合は、 **DataSyncUsersRole** のアクセス許可を付与します。
 
     ```sql
     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
     GO
     ```
 
-3. 拡張テーブルを作成し、HQ にデータを同期させる場合は、拡張テーブルに親テーブルの主な列を含めます。
-4. たとえば、**ContosoRetailTransactionTable** など、常にテーブルに接頭語を付けると、他のパートナー/ISV カスタマイズとの競合を回避できます。
+4. 拡張テーブルを作成し、HQ にデータを同期させる場合は、拡張テーブルに親テーブルの主となる列を含めます。
+5. たとえば、 **ContosoRetailTransactionTable** などのように、常にテーブルに接頭語を付けると、他のカスタマイズとの競合を回避できます。
 
 ## <a name="attributes"></a>属性
 

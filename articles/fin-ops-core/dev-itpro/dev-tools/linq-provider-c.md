@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 834cc81e67f4d45928689c47472e62f99fb6aa65
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fdf13d37028b669f6dd61779ef8970429ad7f3f9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191664"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811716"
 ---
 # <a name="language-integrated-query-linq-provider-for-c"></a>C# の統合言語クエリ (LINQ) プロバイダー
 
@@ -162,12 +162,12 @@ LINQ によって提供されるモデルでは、クエリをサブクエリで
 
 LINQ クエリは、CRUD 操作に対して適用できます。 ただし、レコードの更新、削除、挿入のモデルはセット ベース操作の式には役に立ちません。 現在、セットベース操作に変換される LINQ モデルに追加する拡張機能に取り組んできます。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[プログラミング言語のサポート](programming-language-support.md)
+[X++ と X++ コンパイラの変更](programming-language-support.md)
 
-[技術概念ガイド](developer-home-page.md)
+[開発およびカスタマイズのホーム ページ](developer-home-page.md)
 
 
 

@@ -3,7 +3,7 @@ title: Retail Server の顧客およびコンシューマー API
 description: このトピックでは、さまざまな役割で利用可能であり、さまざまなクライアントが使用できる API の概要について説明します 中心は、顧客フェーシング アプリケーション クライアントと e コマース クライアントについてです。
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3dfb1f604e7e6d7756a7680b35b1b4eb49a6643c
-ms.sourcegitcommit: ba71ac65109be7ed1413b09b9424b5e44162f5b8
+ms.openlocfilehash: cb9025c7c516fcb687919cb74f07fdea38551590
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1787270"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770222"
 ---
 # <a name="retail-server-customer-and-consumer-apis"></a>Retail Server の顧客およびコンシューマー API
 
@@ -59,6 +59,8 @@ Retail サーバー (Retail プロキシ経由) へのすべての要求リク�
 | API | パラメーター | 戻り値 | 対応している商取引上の役割 | 説明                |
 |-----|-----------|--------------|--------------------------|----------------------------|
 | GetOrderShipmentsHistory    | accountNumber  string型、QueryResultSettings queryResultSettings | PageResult\<OrderShipments\>       | 従業員、顧客、アプリケーション | 顧客からの注文の出荷履歴を取得します。  |
+| CreateEntity | 顧客 | 顧客 |従業員、匿名、アプリケーション | 顧客を作成します。|
+| UpdateEntity | 文字列キー、顧客の更新 | 顧客 |従業員、顧客、アプリケーション | 顧客を更新します。|
 | GetOrderHistory             | accountNumber  string型、QueryResultSettings queryResultSettings           | PageResult\<SalesOrder\>           | 従業員、顧客、アプリケーション | 一群の販売注文を返します。                           |
 | 検索                      | CustomerSearchCriteria customerSearchCriteria, QueryResultSettings queryResultSettings    | PageResult\<GlobalCustomer\>       | 従業員、アプリケーション         | 顧客を検索します                                        |
 | GetPurchaseHistory          | accountNumber  string型、QueryResultSettings queryResultSettings      | PageResult\<PurchaseHistory\>      | 従業員、顧客、アプリケーション | 顧客の購入履歴を取得します。                           |
@@ -395,6 +397,10 @@ Retail サーバー (Retail プロキシ経由) へのすべての要求リク�
 | GetUnitsOfMeasure                 | recordId long型, QueryResultSettings queryResultSettings                                                                                                                                                                                                                      | PageResult\<UnitOfMeasure\>            | 従業員、顧客、匿名、アプリケーション               | 指定した製品の測定単位を取得します。                                                                                    |
 | GetChannel- ProductAttributes       | QueryResultSettings queryResultSettings                                                                                                                                                                                                                                     | PageResult\<AttributeProduct\>         | 従業員、顧客、匿名、アプリケーション               | チャネル製品属性を取得します。                                                                                                      |
 | GetProductRatings                 | IEnumerable\<long型\> productIds, QueryResultSettings 設定                                                                                                                                                                                                            | PageResult\<ProductRating\>            | 従業員、顧客、匿名、アプリケーション              | 製品識別子に基づく製品評価を取得します。                                                                        |
+| GetEstimatedAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | ProductWarehouseInventoryInformation  | 従業員、顧客、匿名、アプリケーション               | 検索基準に基づいて、製品の在庫状況を予測します。                                                                                               |
+| GetEstimatedProductWarehouseAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | IEnumerable\<ProductWarehouse\>                 | 従業員、顧客、匿名、アプリケーション               | 特定の製品倉庫のペアに対して、予想される製品の在庫状況を取得します。                                                                                               |
+
+
 
 ## <a name="sales-orders-fulfillment-controller"></a>販売注文履行 コントロール
 

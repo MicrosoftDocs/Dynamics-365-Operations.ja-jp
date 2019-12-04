@@ -16,12 +16,12 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 92d405d3ccc54b2b7ade56eef4149288132a9455
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: da3d8396186ae94bc7de376c12566d23d9f81c3e
+ms.sourcegitcommit: 56ed9fff3137363967975439ee9207491a1a1b51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552339"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832434"
 ---
 # <a name="extend-tax-engine-configurations"></a>税エンジン コンフィギュレーションの拡張 
 
@@ -46,7 +46,7 @@ ms.locfileid: "2552339"
 |BCD| 基本関税|
 
 ## <a name="prerequisites"></a>必要条件
-シナリオ例の作成に取りかかる前に、次の作業を完了させてください。 [LCSから GTE び設定内容をインポートする](tax-engine-import-configuration.md)
+シナリオ例の作成に取りかかる前に、次の作業を完了させてください。 [税エンジン インポート コンフィギュレーション](tax-engine-import-configuration.md)
 
 ### <a name="add-a-configuration-provider-and-make-it-the-active-provider"></a>コンフィギュレーション プロバイダーを追加し、アクティブなプロバイダーとする。
 1. **組織管理** > **ワークスペース** > **電子申告**の順に移動します。
@@ -140,55 +140,52 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 
 ![連邦直轄領の GTE 拡張](media/gte-extension-union-territory-form-info.png)
 
-2. 連邦直轄領内のイントラスタット取引の税エンジン モデル フィールドを追加します。 
-    1. AOT で、**クラス** > **TaxableDocRowDataProviderExtensionLine** を開き、連邦直轄領内のイントラスタット取引の ```const str``` を追加します。
+2. 連邦直轄領内のイントラスタット取引の税エンジン モデル フィールドを追加します。
 
-```
-public class TaxableDocRowDataProviderExtensionLine extends TaxableDocumentRowDataProviderExtension
-{
-    public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
-```
+   1. モデル アプリケーション スイートの新しいプロジェクトを作成し、新しいクラスである TaxableDocRowDPExtLineSubscriberSample を追加します。 取引が連邦直轄領内のイントラスタット取引かどうかを判断し、フラグを GTE に渡すための以下のロジックを実装します。
+   
+            public class TaxableDocRowDPExtLineSubscriberSample
+            {
+                public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
 
-3. 取引が連邦直轄領内のイントラスタット取引かどうかを判断するためのロジックを実装します。 たとえば、**TaxableDocRowDataProviderExtensionLine** クラスに新しい方法を追加し、その方法でロジックを実装します。
+                [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine),               delegateStr(TaxableDocRowDataProviderExtensionLine, initExtensionFieldsForLine))]
+                public static void initExtensionFieldsForLine(TaxableDocumentValidFields _validFields)
+                {
+                _validFields.add(IsIntraStateInUnionTerritory, Types::Enum, enumNum(NoYes));
+                }
 
-```
-private NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
-{
-    boolean                     isIntraStateWithUnionTerritory = NoYes::No;
-    LogisticsPostalAddress      partyAddress;
-    LogisticsPostalAddress      taxAddress;
-    LogisticsAddressState       partyState;
-    SalesPurchJournalLine       documentLineMap;
-    TaxModelTaxable_IN          taxModelTaxable;
-    documentLineMap = SalesPurchJournalLine::findRecId(_lineObj.getTransactionLineTableId(), _lineObj.getTransactionLineRecordId());
-    taxModelTaxable = TaxModelDocLineFactory_IN::newTaxModelDocLine(documentLineMap);
-    partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();
-    taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();
-    if (partyAddress && taxAddress
-        && partyAddress.CountryRegionId == taxAddress.CountryRegionId
-        && partyAddress.State != ''
-        && taxAddress.State != ''
-        && partyAddress.State == taxAddress.State)
-    {
-        partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
-        isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
-    }
-    return  isIntraStateWithUnionTerritory;
-}
-```
-4. TaxableDocRowDataProviderExtensionLine.fillInExtensionFields() にて GTE へとフラグを渡します
+                [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine), delegateStr(TaxableDocRowDataProviderExtensionLine, fillInExtensionFieldsForLine))]
+                public static void fillInExtensionFieldsForLine(TaxableDocumentLineObject _lineObj)
+                {
+                _lineObj.setFieldValue(IsIntraStateInUnionTerritory, TaxableDocRowDPExtLineSubscriberSample::IsIntraStateWithUnionTerritory(_lineObj), enumNum(NoYes));
+                }
 
-```
-_lineObj.setFieldValue(IsIntraStateInUnionTerritory, this.IsIntraStateWithUnionTerritory(_lineObj));
-```
+                private static NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
+                {
+                  boolean                     isIntraStateWithUnionTerritory = NoYes::No;
+                  LogisticsPostalAddress      partyAddress;
+                  LogisticsPostalAddress      taxAddress;
+                  LogisticsAddressState       partyState;
+                  SalesPurchJournalLine       documentLineMap;                  TaxModelTaxable_IN          taxModelTaxable;
+                  documentLineMap = SalesPurchJournalLine::findRecId(_lineObj.getTransactionLineTableId(), _lineObj.getTransactionLineRecordId());
+                  taxModelTaxable = TaxModelDocLineFactory_IN::newTaxModelDocLine(documentLineMap);
+                  partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();
+                  taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();
+                  if (partyAddress && taxAddress
+                      && partyAddress.CountryRegionId == taxAddress.CountryRegionId
+                      && partyAddress.State != ''
+                      && taxAddress.State != ''
+                      && partyAddress.State == taxAddress.State)
+                  {
+                      partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
+                          isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
+                  }
+                  return isIntraStateWithUnionTerritory;
+                }
 
-5. TaxableDocumentRowDataProviderLine に、新しいフィールドを追加します。 initValidFields ()
+            }
 
-```
-validFields.add(TaxableDocRowDataProviderExtensionLine::IsIntraStateInUnionTerritory, Types::Enum, enumNum(NoYes));
-```
-
-6. デザイナーでのデータ連結を実行します。
+3. デザイナーでのデータ連結を実行します。
    1. **課税対象ドキュメント (インド Contoso)** コンフィギュレーションに移動し、**デザイナー**をクリックします。
 
       ![税コンフィギュレーション デザイナー](media/gte-extension-tax-configuration-designer.png)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 039b5d7ace19fa93e6db4920153f4a1a67519c85
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d5bae90cf7c8f11fa5409014023d36cc68ae1bd0
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178690"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770876"
 ---
 # <a name="position-forecasting"></a>職位予測
 
@@ -33,7 +33,7 @@ ms.locfileid: "2178690"
 
 ## <a name="position-forecasting-in-budget-planning"></a>予算計画の予測職位
 
-[![グラフィック トップ](./media/graphic-top.png)](./media/graphic-top.png) 
+[![職位予測のコンポーネント](./media/graphic-top.png)](./media/graphic-top.png) 
 
 予測職位は、職位の経費について正確な予算金額を提供する 3 つの主要なコンポーネントを使用します。 これらの金額は予算計算のため予算計画にまとめることができます。 
 
@@ -45,14 +45,14 @@ ms.locfileid: "2178690"
 
 ### <a name="position-forecasting-processes"></a>予測職位プロセス
 
-[![グラフィック 1 b](./media/graphic1b.png)](./media/graphic1b.png) 
+[![職位予測プロセスの図](./media/graphic1b.png)](./media/graphic1b.png) 
 
 予測職位の一般的なプロセスでは、最初に設定コンポーネント (予算原価要素および報酬グループ) を作成します。 既存の職位に基づいて、予測職位が生成されます。 次いで、調整を行うことができます。 たとえば、職位を追加または終了したり、支払レートや福利厚生コストを変更したり、賃金増加を追加したりできます。 予測職位の複数のバージョンを作成して、さまざまな予算作成シナリオでの比較を容易に行えます。 次に、予算計画に予測職位を含め、予測職位からのコストを予算計画ラインとしてまとめることができます。
 
 予算計画が修正されると、追加の予測職位のバージョンを作成できます。 これらの新しいバージョンは、リビジョンの基礎となります。
 
 ## <a name="position-forecasting-setup"></a>予測職位設定
-[![グラフィック 2](./media/graphic2-1024x327.png)](./media/graphic2.png)
+[![設定を強調表示した図](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### <a name="budget-cost-elements"></a>予算原価要素
 
@@ -89,7 +89,7 @@ Jodi は、マネージャーが給付金額を変更しないことを希望し
 報酬のグループで選択された所得原価要素は、基準賃金や任意のステップ昇給を含む、グループ内の予測職位の所得を作成するときに使用します。 **固定報酬プラン** フィールドは、人事管理で報酬グループを固定報酬プランに関連付けます。 この関連付けによって、予測職位に作業者の固定報酬情報を割り当て、より正確な予算計画を作成できます。 報酬グループの報酬グリッド構造 (レベルおよびステップ) が固定報酬プランの構造に一致する必要があることに注意してください。 それ以外の場合は、システムは報酬グループ、および固定報酬プランを正しく関連付けることはできません。
 
 ## <a name="creating-forecast-positions"></a>予測職位の作成
-[![グラフィック 3](./media/graphic3-1024x327.png)](./media/graphic3.png)
+[![「予測職位の作成」を強調表示した図](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>既存の職位の予測職位の作成
 
@@ -105,7 +105,7 @@ Jodi は、マネージャーが給付金額を変更しないことを希望し
 
 **報酬グループを割り当てる** オプションの設定は、**予算原価要素の割り当て** 設定よりも優先されます。 この 2 つの設定は同時に使用できます。 
 
-[![グラフィック 4](./media/graphic4.png)](./media/graphic4.png) 
+[![「報酬グループを割り当てる」グラフ](./media/graphic4.png)](./media/graphic4.png) 
 
 別のオプションは、記念日の日付を割り当てることです。 割り当てられた作業者の選択した日付 (調整済開始日、作業者の開始日、雇用開始日、または勤続日数) は予測職位の記念日として設定され、情報用として、また昇給を生成する際に使用されます。
 
@@ -118,7 +118,7 @@ Jodi は、マネージャーが給付金額を変更しないことを希望し
 全く新しい予測職位を作成することもできます。 既存のジョブを選択し、予算計画プロセスおよび予算計画シナリオも選択します。 追加したいその他の詳細を追加できます。 この場合も、同時に人事管理で新しい職位が作成されます。
 
 ## <a name="working-with-forecast-positions"></a>予測職位の使用
-[![グラフィック 5](./media/graphic5-1024x327.png)](./media/graphic5.png)
+[![「予測職位の変更」を強調表示した図](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### <a name="multiple-versions-of-a-forecast-position"></a>予測職位の複数のバージョン
 
@@ -174,7 +174,7 @@ Jodi は、マネージャーが給付金額を変更しないことを希望し
 
 ## <a name="bringing-forecast-positions-into-budget-plans"></a>予算計画に予測職位を含める
 
-[![グラフィック 6](./media/graphic6-1024x327.png)](./media/graphic6.png)
+[![「予算計画に追加」を強調表示した図](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 予測ポジションを作成および変更する目的は、予算プランに追加して、予算プランに最も正確な予算額を含めることです。 予算計画に予測職位を追加する 2 つの方法があります。 予算計画の生成プロセスか選択プロセスを使用できます。
 

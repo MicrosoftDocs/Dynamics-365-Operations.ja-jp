@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: c4f9d4ff66f999953e0ecfd1f39a9cd501e0b77a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 702fa39f9e31aaae9b6283616ca7a4edd26f0bde
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183438"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772423"
 ---
 # <a name="configuration-data-projects"></a>コンフィギュレーション データ プロジェクト
 
@@ -49,7 +49,7 @@ ms.locfileid: "2183438"
 
 このトピックの残りの部分では、**データ管理**ワークスペースについて説明し、データ構成プロジェクト用にシステムを設定する方法について説明します。
 
-コンフィギュレーション テンプレートを設定する場合は、[コンフィギュレーション データ テンプレート](configuration-data-templates.md)を参照します。 構成データ プロジェクトを作成して実行する準備ができている場合は、[会社間コンフィギュレーション データをコピーする](copy-configuration.md)を参照します。
+コンフィギュレーション テンプレートを設定する場合は、[コンフィギュレーション データ テンプレート](configuration-data-templates.md)を参照します。 構成データ プロジェクトの作および成実行の準備ができている場合は、 [会社間または法人間での構成データのコピー](copy-configuration.md) を参照してください。
 
 ## <a name="data-management-workspace-overview"></a>データ管理ワークスペースの概要
 **データ管理** ワークスペースは、データ管理の重要なタスクへのアクセスを提供します。 また、プロジェクトおよびプロジェクト実行タスクに関する情報も提供します。

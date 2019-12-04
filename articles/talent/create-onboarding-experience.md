@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8c11186ff3f95a7f1e00f9e42d7b78f5a68957b0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008131"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813940"
 ---
 # <a name="get-started-with-onboard"></a>Onboard の使用を開始する
 
@@ -35,17 +35,17 @@ Onboard では、新規採用者を歓迎し、組織への参加を楽しみに
 
 Onboard アプリを取得して使用する方法については、次のトピックを参照してください。
 
-- [Onboard アプリを入手する](./onboard-get-app.md)
-- [研修ガイドの作成](./onboard-create-guide.md)
-- [研修テンプレートの作成](./onboard-create-template.md)
-- [研修用ガイドとテンプレートの編集](./onboard-edit-guides-templates.md)
-- [他の投稿者とコンテンツを共有する](./onboard-share-template.md)
-- [タスクと研修中の従業員の状態の表示](./onboard-view-status.md)
-- [Onboard での採用チームの作成](./onboard-create-team.md)
+- [Dynamics 365 Talent を入手する - Onboard app](./onboard-get-app.md)
+- [Dynamics 365 Talent - Onboard を使用した研修用ガイドの作成と送信](./onboard-create-guide.md)
+- [Dynamics 365 Talent - Onboard を使用した研修テンプレートの作成](./onboard-create-template.md)
+- [Dynamics 365 Talent - Onboard での研修用ガイドとテンプレートの編集](./onboard-edit-guides-templates.md)
+- [Dynamics 365 Talent - Onboard で他の投稿者とコンテンツを共有する](./onboard-share-template.md)
+- [研修中の従業員の状態とタスクの表示](./onboard-view-status.md)
+- [Dynamics 365 Talent - Onboard を使用した採用チームの作成](./onboard-create-team.md)
 
 ## <a name="see-also"></a>参照
 
 - [Onboard アプリを試すか購入する](https://dynamics.microsoft.com/talent/onboard/)
-- [新機能](./whats-new.md)
-- [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index)
-- [サポートの利用](./talent-support.md)
+- [Dynamics 365 Talent の新機能および変更された機能](./whats-new.md)
+- [リリース計画](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft Dynamics 365 Talent に関するサポートの利用](./talent-support.md)

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 905902e52febb3ba4832f9e765191a613aa90936
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 1c120fafe77a00e340335acd36c4aa3902e8194a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023461"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812325"
 ---
 # <a name="implement-retail-projects"></a>実装 Retail プロジェクト
 
@@ -38,4 +38,4 @@ Retail 機能を含む Finance and Operations アプリの実装に焦点をあ�
 
 [Retail プロジェクトのコードと環境の更新](./updating-environments.md)
 
-[テストおよびパフォーマンス](./retail-implementation-testing-performance.md)
+[テストおよびパフォーマンスに関する問題](./retail-implementation-testing-performance.md)

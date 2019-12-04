@@ -15,12 +15,12 @@ ms.custom: 197063
 ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: a24472d1c4fc2a929c7958d6aea8a65c79575809
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7dd92aa3cf1c5a1589f1e2bfb0c0d2d3053db775
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183275"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812076"
 ---
 # <a name="add-methodologies-to-solutions"></a>ソリューションへの方法論の追加
 
@@ -73,4 +73,4 @@ ms.locfileid: "2183275"
 <a name="additional-resources"></a>追加リソース
 --------
 
-[AppSource のアプリを公開](lcs-solutions-app-source.md)
+[AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)

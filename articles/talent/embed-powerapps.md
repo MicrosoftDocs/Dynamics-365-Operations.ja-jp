@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 - Core HR への PowerApps アプリの埋め込み
-description: このトピックでは、PowerApps メニュー項目がシステム管理モジュールから消えてしまう問題を解決する方法について説明します。
+title: Dynamics 365 - Core HR への Power Apps アプリの埋め込み
+description: このトピックでは、Microsoft Power Apps メニュー項目がシステム管理モジュールから消えてしまう問題を解決する方法について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,41 +17,41 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b510c10ebfcf4939eb2e1297972d27aa1812ae5a
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 6d1b7f1dd71e6bcbf10c4d91fe33e9494b041a2c
+ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551006"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "2830212"
 ---
-# <a name="embed-powerapps-apps-in-dynamics-365---core-hr"></a>Dynamics 365 - Core HR への PowerApps アプリの埋め込み
+# <a name="embed-power-apps-apps-in-dynamics-365---core-hr"></a>Dynamics 365 - Core HR への Power Apps アプリの埋め込み
 
 [!include [banner](includes/banner.md)]
 
 **問題点**
 
-**PowerApps** メニュー項目が**システム管理**モジュールから消えました。
+**Power Apps** メニュー項目が**システム管理**モジュールから消えました。
 
 **原因**
 
-ユーザー インターフェイス (UI) のデザインが変更され、Microsoft PowerApps が標準の個人用設定モデルに含まれるようになりました。
+ユーザー インターフェイス (UI) のデザインが変更され、Microsoft Power Apps が標準の個人用設定モデルに含まれるようになりました。
 
 **解像度**
 
-PowerApps アプリが埋め込まれる方法が変更されました。 PowerApps アプリは個人用設定モデルによって追加されます。 PowerApps アプリは、Microsoft Dynamics 365 Talent のほとんどすべてのページに追加できます。
+Power Apps が埋め込まれる方法が変更されました。 Power Apps は個人用設定モデルによって追加されます。 Power Apps は、Microsoft Dynamics 365 Talent のほとんどすべてのページに追加できます。
 
-PowerApps アプリを Talent に埋め込む方法の詳細については、[PowerApps アプリの埋め込み](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps)を参照してください。
+Power Apps を Talent に埋め込む方法の詳細については、[Microsoft Power Apps の埋め込み](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps)を参照してください。
 
-変更前にアプリを埋め込んだ PowerApps の顧客は、新しいモデルにアップグレードする必要があります。
+変更前にアプリを埋め込んだ Power Apps の顧客は、新しいモデルにアップグレードする必要があります。
 
-**PowerApps** ボタンは、Talent のほとんどすべてのページの右上隅にあります。 このボタンを使用して、PowerApps アプリを挿入することができます。
+**Power Apps** ボタンは、Talent のほとんどすべてのページの右上隅にあります。 このボタンを使用して、Power Apps を挿入することができます。
 
 次に例を示します。
 
 1. **人事管理\>リンク\>作業者\>従業員**に移動します。
-2. **PowerApps** ボタンを選択してから、**PowerApp の挿入**を選択します。
+2. **Power Apps** ボタンを選択してから、**PowerApp の挿入**を選択します。
 
-    ![PowerApps ボタン](media/png.png)
+    ![Power Apps ボタン](media/png.png)
 
 3. **PowerApp の挿入**ダイアログ ボックスのフィールドを完了します。
 
@@ -67,4 +67,4 @@ PowerApps アプリを Talent に埋め込む方法の詳細については、[P
 
 2. ツール バーで、**挿入\>PowerApp** を選択します。
 
-    ![個人用設定ツール バーを使用して PowerApps アプリを挿入する](media/powerapp-bar.png)
+    ![個人用設定ツール バーを使用して Power Apps アプリを挿入する](media/powerapp-bar.png)

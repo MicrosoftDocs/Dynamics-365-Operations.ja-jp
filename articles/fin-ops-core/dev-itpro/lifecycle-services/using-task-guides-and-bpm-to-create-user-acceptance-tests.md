@@ -17,26 +17,22 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 6e25756ad6ca0b935133501c32a2e6c8508b2cb6
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 4dfcb49bb255a13ac1a9f5845a8151ea07668ba6
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553106"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812049"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
 [!include [banner](../includes/banner.md)]
 
 タスク レコーダーおよびビジネス プロセス モデラー (BPM) を使用して、ユーザー承認テスト ライブラリを作成することができます。 タスク レコーダーは、テスト ケースを記録し、BPM を使用して業務プロセス別に整理する強力なツールです。 Microsoft パートナーは、BPM を使用して LCS および LCS ソリューション経由で顧客にテスト ライブラリを配布することができます。 顧客の場合、BPM を使用し、さまざまなプロジェクトおよびチーム間でテスト ライブラリを作成して配布します。
+
 BPM は Azure DevOps (旧 Visual Studio Team Services) と同期することができるので、Azure DevOps プロジェクトでテスト ケース (テスト ステップを含む) を自動的に作成できます。 その後、Azure DevOps は、対象となるテスト計画およびテスト スイートを作成して、テストの実行を管理し、結果を調査できるテスト構成およびテスト管理ツールとして動作できます。  
 
 このトピックでは、手動テストまたは自動テストに使用する承認テスト スイートを作成および実行するプロセスについて説明します。
-
-
-
-
-
 
 
 ## <a name="create-a-scenario-acceptance-testing-bpm-library"></a>シナリオ承認テスト BPM ライブラリの作成
@@ -60,14 +56,14 @@ BPMライブラリを作成した後は、タスク レコーダーを使用し�
 2. 記録中に使用する会社を選択します。
 3. **設定** > **タスク レコーダー**に移動します。
 
-![タスク レコーダーの選択](./media/select_task_recorder.PNG "タスク レコーダーの選択")
+    ![タスク レコーダーの選択](./media/select_task_recorder.PNG "タスク レコーダーの選択。")。
 
 4. **新しい記録の作成**をクリックします。
 5. コンフィギュレーション名を入力し、**開始**をクリックします。 記録は、**開始** をクリックすると開始されます。
 6. 記録が完了したら、タスク レコーダー ウィンドウで、**停止** をクリックします。
 7. 添付された BPM にタスク記録を保存するには、**Lifecycle Services に保存** をクリックします。
 
-![タスク レコーダー オプション](./media/task_recorder_options.PNG "タスク レコーダー オプション")
+    ![タスク レコーダー オプション](./media/task_recorder_options.PNG "タスク レコーダー オプション")
 
 8. 記録を保存するライブラリを選択し、**保存** をクリックします。 それ以外の場合、**ディスクに保存** を選択し、次のセクション「BPM に AXTR ファイルをアップロードする」の手順に従います。
 
@@ -82,11 +78,11 @@ BPMライブラリを作成した後は、タスク レコーダーを使用し�
 2. **作成と編集**をクリックして、明細行内で、タスク記録をアップロードするプロセスを特定し選択します。
 3. 右ウィンドウで**アップロード**をクリックします。 
 
-![AXTR 1 のアップロード](./media/upload_axtr_1.PNG "AXTR 1 のアップロード")
+    ![AXTR 1 のアップロード:](./media/upload_axtr_1.PNG "AXTR 1 のアップロード:")
 
 4. **参照**をクリックして、アップロードするファイルを検索して選択し、次に**アップロード**をクリックします。
 
-![AXTR 2 のアップロード](./media/upload_axtr_2.PNG "AXTR 2 のアップロード")
+    ![AXTR 2 のアップロード:](./media/upload_axtr_2.PNG "AXTR 2 のアップロード:")
 
 #### <a name="save-an-existing-task-recording-to-bpm"></a>既存のタスク記録を BPM を保存
 1. 既存のタスクの記録を添付するには、クライアントにサインインします。
@@ -112,24 +108,24 @@ BPMライブラリを作成した後は、タスク レコーダーを使用し�
 承認テスト BPM ライブラリを一度選択すると、Azure DevOps と同期してテスト計画およびテスト スイートを作成します。
 
 ### <a name="sync-with-azure-devops"></a>Azure DevOps との同期
-Azure DevOps プロジェクトと BPM ライブラリを同期します。 詳細については、「[LCS プロジェクトのコンフィギュレーションおよび LCS に接続](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-azure-devops)」を参照してください。 
+Azure DevOps プロジェクトと BPM ライブラリを同期します。 詳細については、[BPM ライブラリの Azure DevOps との同期について](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-azure-devops) を参照してください。 
 
 コンフィギュレーションが完了した後、Azure DevOps プロジェクトと BPM ライブラリを同期します。
 1. **業務プロセス ライブラリ**ページで、同期するライブラリのタイルの省略記号ボタン (...) を選択し、**Azure DevOps 同期**を選択します。
 
-![VSTS Sync1](./media/vsts_sync_1.png "VSTS Sync1")
+    ![VSTS Sync1](./media/vsts_sync_1.png "VSTS Sync1")
 
 また、BPM ライブラリ内のツールバーから Azure DevOps 同期を開始することができます。 省略記号ボタン (...) を選択し、**Azure DevOps の同期** を選択します。
 
-![VSTS Sync2](./media/vsts_sync_2.png "VSTS Sync2")
+    ![VSTS Sync2](./media/vsts_sync_2.png "VSTS Sync2")
 
 2. Azure DevOps の同期が完了した後、省略記号ボタン (…) を選択し、**テスト ケースの同期**を選択します。
 
-![テスト ケースの同期](./media/sync_test_case.PNG "テスト ケースの同期")
+    ![テスト ケースの同期](./media/sync_test_case.PNG "テスト ケースの同期")
 
 3. このステップが完了したら、タスク記録は Azure DevOps のテスト ケースになり、**要件** タブの下にリンクが表示されます。 
 
-![テスト ケースの表示](./media/view_test_case.PNG "テスト ケースの表示")
+    ![テスト ケースの表示](./media/view_test_case.PNG "テスト ケースの表示")
 
 
 テスト ステップに加えて、タスクを記録する XML ファイルが Azure DevOps テスト ケースに付属します。 テストの実行を自動化する場合、このファイルを必要とします。 
@@ -144,11 +140,11 @@ Azure DevOps プロジェクトと BPM ライブラリを同期します。 詳�
 5. **既存の追加**をクリックし、**LCS:Test Cases** タグを照会します。
 6. **実行** > **テスト ケースの追加**の順にクリックします。
 
-![テスト ケースの追加](./media/add_test_cases.PNG "テスト ケースの追加")
+    ![テスト ケースの追加](./media/add_test_cases.PNG "テスト ケースの追加")
  
 7. 詳細と関連付けられている XML ファイルを表示するには、テスト ケースを選択します。   
 
-![テスト ケースの詳細](./media/test_case_details.PNG "テスト ケースの詳細")
+    ![テスト ケースの詳細](./media/test_case_details.PNG "テスト ケースの詳細")
 
  >[!NOTE]
  > この例は、すべてのテスト ケースが追加された 1 つの包括的受入れテスト スイートを作成する方法を示しています。 代わりに、同じテスト計画下にさまざまなテスト スイートを作成し、カスタム クエリを使用してテスト スイートに特定のテスト ケースを追加する必要があります。 テスト ケースは、1 つ以上のテスト スイートに属することができます。
@@ -170,18 +166,18 @@ Finance and Operations のプラットフォームは、タスク記録に基づ
 
 開発者は、**ビルドおよびテスト**環境のビルドおよびテスト自動化機能を使用できます。 詳細については、[継続的な配信ホーム ページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
 
-機能パワー ユーザーは、**Regression Suite Automation Tool** を使ってテスト ケースの実行を自動化できます。 詳細については、[ツールをダウンロードする](https://www.microsoft.com/download/details.aspx?id=57357) および [Regression Suite Automation Tool](../perf-test/rsat/rsat-overview.md) を参照してください。
+機能パワー ユーザーは、**Regression Suite Automation Tool** を使ってテスト ケースの実行を自動化できます。 詳細について[ツールのダウンロード](https://www.microsoft.com/download/details.aspx?id=57357)と[Regression Suite Automation Tool](../perf-test/rsat/rsat-overview.md)を参照してください。
 
 Regression Suite Automation Toolの詳細については、次の情報を参照してください。
 
-- [- 第 1 部: Regression Suite Automation Tool -- 背景と設定](https://infopedia.eventbuilder.com/event?eventid=j5m3w4&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [第 1 部: Regression Suite Automation Tool -- バックグラウンド & セットアップ](https://infopedia.eventbuilder.com/event?eventid=j5m3w4&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [- 第 2 部: Regression Suite Automation Tool -- ライフサイクル デモのテスト](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
--  [Regression Suite Automation Tool ドキュメント](../perf-test/rsat/rsat-overview.md)
+- [Regression Suite Automation Tool](../perf-test/rsat/rsat-overview.md)
  
 実習で使用する手順については、次のトピックを参照してください。
 
-- [Regression Suite Automation Toolの設定およびインストール](../../fin-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
-- [Regression Suite Automation Toolの使用](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md)
+- [Regression Suite Automation Tool の設定およびインストール チュートリアル](../../fin-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
+- [Regression Suite Automation Tool チュートリアルの使用](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md)
 
 #### <a name="investigate-test-runs"></a>テストの実行を調査します
 自動実行が完了したら、Azure DevOps ツール バーで**テスト > 実行** (または **テスト計画 > 実行**) を選択し、テストの実行を調査すします。 テスト ケース失敗およびエラーを調査するために必要なテスト実行を選択します。 Azure DevOps のテスト スイートにアクセスして、テスト ケースに関連する最新の結果を確認することもできます。
