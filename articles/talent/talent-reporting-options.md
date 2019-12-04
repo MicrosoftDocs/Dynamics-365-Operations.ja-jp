@@ -17,35 +17,35 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 50342c847200d015a66c6f22007070bb26c6caef
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: ecbeb03b535f19131ddc6649d005702876bab65c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009355"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772968"
 ---
-# <a name="reporting-options-in-talent"></a><span data-ttu-id="52320-103">Talent のレポート オプション</span><span class="sxs-lookup"><span data-stu-id="52320-103">Reporting options in Talent</span></span>
+# <a name="reporting-options-in-talent"></a><span data-ttu-id="a1b85-103">Talent のレポート オプション</span><span class="sxs-lookup"><span data-stu-id="a1b85-103">Reporting options in Talent</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="52320-104">**環境の詳細**</span><span class="sxs-lookup"><span data-stu-id="52320-104">**Environment details**</span></span>
+<span data-ttu-id="a1b85-104">**環境の詳細**</span><span class="sxs-lookup"><span data-stu-id="a1b85-104">**Environment details**</span></span>
 
-<span data-ttu-id="52320-105">この問題は、すべての環境に適用されます。</span><span class="sxs-lookup"><span data-stu-id="52320-105">This issue applies to all environments.</span></span>
+<span data-ttu-id="a1b85-105">この問題は、すべての環境に適用されます。</span><span class="sxs-lookup"><span data-stu-id="a1b85-105">This issue applies to all environments.</span></span>
 
-<span data-ttu-id="52320-106">**現象**</span><span class="sxs-lookup"><span data-stu-id="52320-106">**Symptom**</span></span>
+<span data-ttu-id="a1b85-106">**現象**</span><span class="sxs-lookup"><span data-stu-id="a1b85-106">**Symptom**</span></span>
 
-<span data-ttu-id="52320-107">顧客は Microsoft Dynamics 365 Talent のレポートをカスタマイズしたり、新しいレポートを作成したいと考えています。</span><span class="sxs-lookup"><span data-stu-id="52320-107">The customer wants to customize Microsoft Dynamics 365 Talent reports or create new reports.</span></span>
+<span data-ttu-id="a1b85-107">顧客は Microsoft Dynamics 365 Talent のレポートをカスタマイズしたり、新しいレポートを作成したいと考えています。</span><span class="sxs-lookup"><span data-stu-id="a1b85-107">The customer wants to customize Microsoft Dynamics 365 Talent reports or create new reports.</span></span>
 
-<span data-ttu-id="52320-108">**払出**</span><span class="sxs-lookup"><span data-stu-id="52320-108">**Issue**</span></span>
+<span data-ttu-id="a1b85-108">**払出**</span><span class="sxs-lookup"><span data-stu-id="a1b85-108">**Issue**</span></span>
 
-<span data-ttu-id="52320-109">ユーザーは、埋め込み Microsoft Power BI レポートをカスタマイズすることはできません。</span><span class="sxs-lookup"><span data-stu-id="52320-109">The user can't customize the embedded Microsoft Power BI reports.</span></span>
+<span data-ttu-id="a1b85-109">ユーザーは、埋め込み Microsoft Power BI レポートをカスタマイズすることはできません。</span><span class="sxs-lookup"><span data-stu-id="a1b85-109">The user can't customize the embedded Microsoft Power BI reports.</span></span>
 
-<span data-ttu-id="52320-110">**ソリューション**</span><span class="sxs-lookup"><span data-stu-id="52320-110">**Solution**</span></span>
+<span data-ttu-id="a1b85-110">**ソリューション**</span><span class="sxs-lookup"><span data-stu-id="a1b85-110">**Solution**</span></span>
 
-- <span data-ttu-id="52320-111">Common Data Service にフローする Core HR データは、Power BI Desktop に PowerApps Common Data Service コネクタ経由でレポートできます。</span><span class="sxs-lookup"><span data-stu-id="52320-111">The Core HR data that flows to Common Data Service can be reported on via the PowerApps Common Data Service connector to Power BI Desktop.</span></span> <span data-ttu-id="52320-112">Common Data Service には Core HR データのサブセットが含まれていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="52320-112">Note that Common Data Service contains a subset of Core HR data.</span></span> <span data-ttu-id="52320-113">Power BI およびダッシュ ボードの詳細については、[PowerApps Common Data Service を使用した Power BI レポートおよびダッシュ ボードの作成](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="52320-113">For more information about Power BI and dashboards, see [Create Power BI reports and dashboards with PowerApps Common Data Service](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi).</span></span>
-- <span data-ttu-id="52320-114">電子申告 (ER) は、一部の Talent レポートで利用できます。</span><span class="sxs-lookup"><span data-stu-id="52320-114">Electronic reporting (ER) is available for some reports in Talent.</span></span> <span data-ttu-id="52320-115">顧客主導のカスタマイズは、ER コンフィギュレーション オプション経由で実行できます。</span><span class="sxs-lookup"><span data-stu-id="52320-115">Customer-driven customizations can be done via the ER configuration options.</span></span>
-- <span data-ttu-id="52320-116">データは、Microsoft Office 統合によって Talent が提供するさまざまなデータ エンティティを使用して、Microsoft Excel や Microsoft Word にエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="52320-116">Data can be exported to Microsoft Excel or Microsoft Word by using the various data entities that Talent provides through the Microsoft Office integration.</span></span>
+- <span data-ttu-id="a1b85-111">Common Data Service にフローする Core HR データは、Power BI Desktop に Power Apps Common Data Service コネクタ経由でレポートできます。</span><span class="sxs-lookup"><span data-stu-id="a1b85-111">The Core HR data that flows to Common Data Service can be reported on via the Power Apps Common Data Service connector to Power BI Desktop.</span></span> <span data-ttu-id="a1b85-112">Common Data Service には Core HR データのサブセットが含まれていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a1b85-112">Note that Common Data Service contains a subset of Core HR data.</span></span> <span data-ttu-id="a1b85-113">Power BI およびダッシュ ボードの詳細については、[Power Apps Common Data Service を使用した Power BI レポートおよびダッシュ ボードの作成](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a1b85-113">For more information about Power BI and dashboards, see [Create Power BI reports and dashboards with Power Apps Common Data Service](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi).</span></span>
+- <span data-ttu-id="a1b85-114">電子申告 (ER) は、一部の Talent レポートで利用できます。</span><span class="sxs-lookup"><span data-stu-id="a1b85-114">Electronic reporting (ER) is available for some reports in Talent.</span></span> <span data-ttu-id="a1b85-115">顧客主導のカスタマイズは、ER コンフィギュレーション オプション経由で実行できます。</span><span class="sxs-lookup"><span data-stu-id="a1b85-115">Customer-driven customizations can be done via the ER configuration options.</span></span>
+- <span data-ttu-id="a1b85-116">データは、Microsoft Office 統合によって Talent が提供するさまざまなデータ エンティティを使用して、Microsoft Excel や Microsoft Word にエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="a1b85-116">Data can be exported to Microsoft Excel or Microsoft Word by using the various data entities that Talent provides through the Microsoft Office integration.</span></span>
 
-<span data-ttu-id="52320-117">**長期のソリューション**</span><span class="sxs-lookup"><span data-stu-id="52320-117">**Long-term solution**</span></span>
+<span data-ttu-id="a1b85-117">**長期のソリューション**</span><span class="sxs-lookup"><span data-stu-id="a1b85-117">**Long-term solution**</span></span>
 
-<span data-ttu-id="52320-118">追加の Power BI オプションが利用可能になり、さらに多くのデータとエンティティが Common Data Service の一部になります。</span><span class="sxs-lookup"><span data-stu-id="52320-118">Additional Power BI options will be available, and more data and entities will be part of Common Data Service.</span></span>
+<span data-ttu-id="a1b85-118">追加の Power BI オプションが利用可能になり、さらに多くのデータとエンティティが Common Data Service の一部になります。</span><span class="sxs-lookup"><span data-stu-id="a1b85-118">Additional Power BI options will be available, and more data and entities will be part of Common Data Service.</span></span>
