@@ -37,7 +37,7 @@ Retail ハイブリッド アプリは、[Xamarin](https://docs.microsoft.com/xa
 ## <a name="development-tools"></a>開発ツール
 Retail ハイブリッド アプリは、Android および iOS スマートフォン プラットフォームをサポートします。 このアプリは、Xamarin を使用して構築されています。つまり、開発用コンピューターには Xamarin をインストールする必要があります。 iOS アプリをビルドするには、Xamarin がインストールされている Mac が必要です。 Microsoft Windows を実行しているコンピューターで Android および iOS の両方に対して開発を行うことができますが、Mac を使用して iOS プラットフォームのビルドを完了する必要があります。 Mac が共有チーム リソースである場合、ビルド処理のためだけ Mac を使用する場合があります。 開発に使用するすべてのコンピューターに、Retail ソフトウェアの開発キット (Retail SDK) をコピーする必要があります。 Retail SDK は、「[Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)」を使用してプロビジョニングされるすべての開発者 VM で使用できます。
 
-Xamarin の詳細については、[ドXamarin のドキュメント](https://docs.microsoft.com/xamarin/)を参照してください。
+Xamarin の詳細については、[Xamarin のドキュメント](https://docs.microsoft.com/xamarin/)を参照してください。
 
 ## <a name="set-up-and-install-xamarin-on-windows"></a>Windows での Xamarin のセットアップとインストール
 
