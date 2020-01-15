@@ -62,7 +62,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: 新機能および変更された機能
               items:
-                - name: Supply Chain Management のバージョン 10.0.7 のプレビュー機能 (2019 年 12 月)
+                - name: Supply Chain Management バージョン 10.0.7 (2019 年 12 月)
                   href: get-started/whats-new-scm-10-0-7.md
                 - name: Supply Chain Management 10.0.6 (2019 年 11 月)
                   href: get-started/whats-new-scm-10-0-6.md
@@ -70,10 +70,6 @@
                   items:
                     - name: Finance and Operations ホーム ページの新機能および変更された機能
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Finance and Operations アプリ 10.0.5 (2019 年 10 月)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Finance and Operations 10.0.4 (2019 年 7 月)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 'Finance and Operations, Enterprise Edition 7.3'
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 削除済みまたは非推奨の機能
@@ -264,7 +260,7 @@
                 - name: 発注書に基づいた資産の作成
                   href: asset-management/objects/create-objects-based-on-purchase-orders.md
                 - name: 資産 BOM
-                  href: /asset-management/objects/object-bom.md
+                  href: asset-management/objects/object-bom.md
                 - name: 資産イベント履歴
                   href: asset-management/objects/object-timeline.md
                 - name: 資産ビュー
@@ -592,7 +588,7 @@
                 - name: 製造オーダーの原価分析
                   href: cost-management/production-order-cost-analysis.md
                 - name: 製造オーダーの原価見積
-                  href: /cost-management/production-order-cost-estimation.md
+                  href: cost-management/production-order-cost-estimation.md
                 - name: 製造オーダーの現在の仕掛品ステータスの表示
                   href: cost-management/tasks/view-current-wip-status-production-order.md
                 - name: 製造オーダーの有効原価、見積原価、実現原価を比較
@@ -1099,6 +1095,8 @@
                   href: master-planning/safety-stock-replenishment.md
                 - name: 遅延
                   href: master-planning/delays.md
+                - name: マスター プラン ジョブのキャンセル
+                  href: master-planning/cancel-master-planning-job.md
                 - name: 展開のトレースを使用する
                   href: master-planning/trace-explosion.md
                 - name: アクション メッセージ
@@ -1515,6 +1513,8 @@
                   href: pim/uom-conversion-per-product-variant.md
                 - name: 1 つの会社に対するリリース済製品の作成
                   href: pim/tasks/create-released-product-single-company.md
+                - name: データ エンティティの使用
+                  href: pim/data-entities.md
                 - name: 製品ライフサイクルの状態
                   items:
                     - name: 製品ライフサイクル状態の概要
@@ -2349,6 +2349,10 @@
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                 - name: 例外処理のために倉庫作業をキャンセル
                   href: warehousing/cancel-warehouse-work.md
+                - name: システム主導のクラスター ピッキング
+                  href: warehousing/system-directed-cluster-pick.md
+                - name: ピッキング行のグループ化
+                  href: warehousing/pick-line-grouping.md
             - name: 在庫棚卸
               items:
                 - name: 在庫棚卸の理由コード
