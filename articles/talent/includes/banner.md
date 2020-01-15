@@ -1,1 +1,2 @@
-
+> [!IMPORTANT]
+> <span data-ttu-id="7f483-101">Dynamics 365 Talent: Attract およびオンボード アプリは廃止されます。</span><span class="sxs-lookup"><span data-stu-id="7f483-101">Dynamics 365 Talent: Attract and Onboard apps are being retired.</span></span> <span data-ttu-id="7f483-102">詳細については、[Dynamics 365 Talent: Attract およびオンボード アプリの廃止](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f483-102">Learn more at [Retiring Dynamics 365 Talent: Attract and Onboard apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps).</span></span>

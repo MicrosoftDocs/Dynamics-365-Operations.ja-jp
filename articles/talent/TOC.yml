@@ -8,6 +8,12 @@
         - name: Talent の新機能および変更された機能
           href: whats-new.md
           items:
+            - name: 2019 年 12 月 17 日
+              href: whats-new-talent-december-17-2019.md
+            - name: 2019 年 12 月 12 日
+              href: whats-new-talent-december-12-2019.md
+            - name: 2019 年 12 月 3 日
+              href: whats-new-talent-december-3-2019.md
             - name: 2019 年 11 月 19 日
               href: whats-new-talent-november-19-2019.md
             - name: 2019 年 11 月 12 日
@@ -26,16 +32,16 @@
               href: whats-new-talent-september-17-2019.md
             - name: 2019 年 9 月 10 日
               href: whats-new-talent-september-12-2019.md
-            - name: 2019 年 8 月 27 日
-              href: whats-new-talent-august-28-2019.md
-            - name: 2019 年 8 月 22 日
-              href: whats-new-talent-august-21-2019.md
-            - name: 2019 年 8 月 13 日
-              href: whats-new-talent-august-15-2019.md
-            - name: 2019 年 8 月 6 日
-              href: whats-new-talent-august-7-2019.md
             - name: 新機能アーカイブ 2019
               items:
+                - name: 2019 年 8 月 27 日
+                  href: whats-new-talent-august-28-2019.md
+                - name: 2019 年 8 月 22 日
+                  href: whats-new-talent-august-21-2019.md
+                - name: 2019 年 8 月 13 日
+                  href: whats-new-talent-august-15-2019.md
+                - name: 2019 年 8 月 6 日
+                  href: whats-new-talent-august-7-2019.md
                 - name: 2019 年 7 月 30 日
                   href: whats-new-talent-july-31-2019.md
                 - name: 2019 年 7 月 23 日
@@ -134,32 +140,28 @@
           href: hr-copy-instance.md
         - name: Talent 環境の削除
           href: remove-talent-environment.md
-        - name: Onboard アプリのプロビジョニング
+        - name: 機能の管理
+          href: access-preview-feature.md
+        - name: オンボード プロビジョニング
           href: modular-app-tech-faq.md
-        - name: PowerApps アプリの埋め込み
+        - name: Power Apps アプリの埋め込み
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Core HR および Common Data Service
+        - name: Common Data Service の Core HR エンティティ
           href: CoreHREntities.md
         - name: Talent に関するサポートの利用
           href: talent-support.md
     - name: Attract による組織のスタッフ配置
       items:
-        - name: Attract のどのバージョンですか。
+        - name: Attract のバージョンの選択
           href: attract-comprehensive-hiring.md
         - name: Attract の機能
           href: attract-overview.md
-        - name: よく寄せられる質問
-          items:
-            - name: LinkedIn の統合に関するよく寄せられる質問
-              href: attract-linkedin-faq.md
         - name: システム設定のコンフィギュレーション
           items:
             - name: 会社情報のコンフィギュレーション
               href: admin-settings-attract.md
             - name: ユーザーのアクセス許可の設定
               href: security-attract.md
-            - name: 機能の管理
-              href: access-preview-feature.md
             - name: キャリア サイトの設定
               href: career-site.md
             - name: Broadbean との統合を有効にする
@@ -168,13 +170,15 @@
               href: attract-configure-email-settings.md
             - name: LinkedIn 統合の設定
               href: attract-admin-linkedin.md
+            - name: LinkedIn の統合に関するよく寄せられる質問
+              href: attract-linkedin-faq.md
         - name: 採用プロセスの作成
           items:
-            - name: プロセス テンプレートの作成
+            - name: 採用プロセス テンプレートの作成
               href: process-templates-attract.md
-            - name: 採用プロセスの活動
+            - name: 採用プロセスへの活動の追加
               href: activities-attract.md
-            - name: 電子メール テンプレート
+            - name: 電子メール テンプレートの作成
               href: email-templates.md
             - name: 分析レポートの使用
               href: analytic-reports.md
@@ -197,10 +201,10 @@
             - name: 候補者のソースの追跡
               href: source-tracking.md
             - name: インテリジェントな推奨
-              href: Intelligent-Recommendations.md
+              href: intelligent-recommendations.md
         - name: 面接の設定
           items:
-            - name: 面接のスケジューリングおよびフィードバック
+            - name: 面接のスケジュール
               href: interview-scheduling-feedback.md
         - name: オファーの作成
           items:
@@ -433,7 +437,7 @@
       items:
         - name: ワークスペースの埋め込み Power BI
           href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: PowerApps と Microsoft Flow を使用した Talent の拡張 - シナリオ例
+        - name: Power Apps および Power Automate を使用した Talent の拡張
           href: extensibility-examples.md
         - name: モバイル アプリ
           items:
@@ -443,8 +447,6 @@
                   href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: 自分のチーム モバイル ワークスペース
                   href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: モバイル ワークスペースの公開
-              href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: 採用データの変更の追跡
           href: process-auditing.md
         - name: Attract での拡張性
